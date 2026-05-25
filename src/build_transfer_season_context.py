@@ -36,7 +36,8 @@ def _load_json(path: Path) -> dict | list | None:
 
 
 def _title(name: str) -> str:
-    return " ".join(w.capitalize() for w in name.lower().split())
+    lowered = name.replace("İ", "i").replace("I", "ı").lower()
+    return " ".join(word.capitalize() for word in lowered.split())
 
 
 def _mv_str(eur: int | None) -> str:
@@ -247,7 +248,7 @@ def _signals_section(signals: list[dict]) -> str:
         from_club = _title(s.get("from_club") or "?")
         to_club = _title(s.get("to_club") or "?")
         mv = s.get("tm_market_value_eur") or s.get("market_value_eur")
-        mv_html = f"<span style='color:#fbbf24;font-weight:600'>{_mv_str(mv)}</span>" if mv else ""
+        mv_html = f"      <span style='color:#fbbf24;font-weight:600'>{_mv_str(mv)}</span>\n" if mv else ""
         status = s.get("verification_status", "REVIEW_REQUIRED")
         status_label = {
             "OFFICIAL": "RESMİ",
@@ -271,8 +272,7 @@ def _signals_section(signals: list[dict]) -> str:
   <div style='display:flex;justify-content:space-between;align-items:flex-start'>
     <div>
       <span style='color:#e2e8f0;font-weight:600;font-size:14px'>{player}</span>
-      {mv_html}
-    </div>
+{mv_html}    </div>
     <span style='background:{conf_color}22;color:{conf_color};border-radius:4px;padding:2px 8px;font-size:11px;font-weight:600'>{status_label}</span>
   </div>
   <div style='color:#94a3b8;font-size:12px;margin-top:6px'>

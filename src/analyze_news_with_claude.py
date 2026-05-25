@@ -213,30 +213,36 @@ def rule_based_analyze(article: dict, player_index: dict) -> dict:
         name = player.get("name", "")
         if not name or len(name) < 4:
             continue
-        # İlk isim + soyisim kombinasyonunu dene
-        parts = name.split()
-        if len(parts) >= 2:
-            # Soyisim (son parça) metin içinde geçiyor mu?
+        match = None
+        match_names = _unique_in_order(
+            [candidate for candidate in [name, player.get("tm_name"), player.get("tm_profile_full_name")] if candidate]
+        )
+        for candidate_name in match_names:
+            parts = candidate_name.split()
+            if len(parts) < 2:
+                continue
             last = normalize_name(parts[-1])
-            if len(last) >= 4 and last in normalized_text:
-                # İlk isim de geçiyorsa HIGH, sadece soyisim MEDIUM
-                first = normalize_name(parts[0])
-                if first in normalized_text:
-                    conf = "HIGH"
-                    full = name
-                else:
-                    conf = "MEDIUM"
-                    full = name
-                mentioned_players.append({
-                    "name": full,
-                    "normalized": norm_name,
-                    "current_club": player.get("club"),
-                    "age": player.get("age"),
-                    "tm_market_value_eur": player.get("tm_market_value_eur"),
-                    "tff_external_id": player.get("external_id"),
-                    "confidence": conf,
-                    "matched_in_title": last in normalized_title and first in normalized_title,
-                })
+            first = normalize_name(parts[0])
+            if len(last) < 4 or last not in normalized_text:
+                continue
+            candidate_match = {
+                "confidence": "HIGH" if first in normalized_text else "MEDIUM",
+                "matched_in_title": last in normalized_title and first in normalized_title,
+            }
+            if match is None or candidate_match["matched_in_title"]:
+                match = candidate_match
+            if candidate_match["matched_in_title"]:
+                break
+        if match:
+            mentioned_players.append({
+                "name": name,
+                "normalized": norm_name,
+                "current_club": player.get("club"),
+                "age": player.get("age"),
+                "tm_market_value_eur": player.get("tm_market_value_eur"),
+                "tff_external_id": player.get("external_id"),
+                **match,
+            })
 
     # Deduplicate players
     seen_norms = set()
@@ -271,6 +277,9 @@ def rule_based_analyze(article: dict, player_index: dict) -> dict:
                     elif official_team and signal_type == "signing":
                         from_club = None if _same_club(p.get("current_club"), official_team) else p.get("current_club")
                         to_club = official_team
+                    elif official_team and signal_type == "departure":
+                        from_club = official_team
+                        to_club = None
                     else:
                         from_club = p.get("current_club")
                         to_club = _distinct_target_club(from_club, candidate_clubs)

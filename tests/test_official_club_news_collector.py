@@ -40,6 +40,21 @@ class OfficialClubNewsCollectorTests(unittest.TestCase):
         self.assertEqual(article["published_at"], "2026-05-25T10:00:00+03:00")
         self.assertIn("transfer", article["categories"])
 
+    @patch("src.collect_official_club_news.requests.get")
+    def test_category_listing_is_not_counted_as_announcement(self, request_get):
+        response = Mock()
+        response.text = "<html><h1>Transfer Haberleri</h1><p>Transfer haberleri listesi</p></html>"
+        response.raise_for_status.return_value = None
+        request_get.return_value = response
+
+        article = fetch_article(
+            {"team": "A", "name": "A Resmi", "url": "https://club.test"},
+            "Transfer Haberleri",
+            "https://club.test/transfer",
+        )
+
+        self.assertIsNone(article)
+
     @patch("src.collect_official_club_news.fetch_source")
     def test_source_failure_is_kept_in_coverage_snapshot(self, fetch_source):
         fetch_source.side_effect = [([], []), RuntimeError("site unavailable")]

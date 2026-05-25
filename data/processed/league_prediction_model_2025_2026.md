@@ -1,28 +1,28 @@
 # Lig Geneli Poisson/Elo MVP Backtest
 
 - Test edilen maç: 258
-- Doğru tahmin: 131 (%51)
+- Doğru tahmin: 133 (%52)
 - Gerçek dağılım: {'home': 111, 'draw': 76, 'away': 71}
-- Tahmin dağılımı: {'home': 142, 'away': 99, 'draw': 17}
+- Tahmin dağılımı: {'draw': 64, 'home': 118, 'away': 76}
 - Ortalama en yüksek olasılık: 0.487
 - Brier skoru: 0.607
 - Log loss: 1.015
-- Güven kırılımı: {'HIGH': {'matches': 84, 'accuracy': 0.619}, 'MEDIUM': {'matches': 92, 'accuracy': 0.511}, 'LOW': {'matches': 82, 'accuracy': 0.39}}
+- Güven kırılımı: {'HIGH': {'matches': 84, 'accuracy': 0.619}, 'MEDIUM': {'matches': 92, 'accuracy': 0.489}, 'LOW': {'matches': 82, 'accuracy': 0.439}}
 
 ## Son 40 Tahmin
 
-- 19.04.2026 - 14:30 | KASIMPAŞA A.Ş. - CORENDON ALANYASPOR | skor 1-0 | tahmin=Ev gerçek=Ev doğru=True | xG 1.47-1.36 | skor=1-1 | güven=LOW | risk=xG farkı dar, taraf tahmini düşük güven
+- 19.04.2026 - 14:30 | KASIMPAŞA A.Ş. - CORENDON ALANYASPOR | skor 1-0 | tahmin=X gerçek=Ev doğru=False | xG 1.47-1.36 | skor=1-1 | güven=LOW | risk=xG farkı dar, taraf tahmini düşük güven
 - 19.04.2026 - 17:00 | SAMSUNSPOR A.Ş. - BEŞİKTAŞ A.Ş. | skor 2-1 | tahmin=Dep gerçek=Ev doğru=False | xG 1.31-1.77 | skor=1-1 | güven=MEDIUM | risk=-
 - 19.04.2026 - 20:00 | TRABZONSPOR A.Ş. - RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ | skor 1-1 | tahmin=Ev gerçek=X doğru=False | xG 1.84-1.35 | skor=1-1 | güven=MEDIUM | risk=-
-- 20.04.2026 - 20:00 | GAZİANTEP FUTBOL KULÜBÜ A.Ş. - ZECORNER KAYSERİSPOR | skor 3-0 | tahmin=Ev gerçek=Ev doğru=True | xG 1.38-1.14 | skor=1-1 | güven=LOW | risk=xG farkı dar, taraf tahmini düşük güven, yüksek kart hakemi
+- 20.04.2026 - 20:00 | GAZİANTEP FUTBOL KULÜBÜ A.Ş. - ZECORNER KAYSERİSPOR | skor 3-0 | tahmin=X gerçek=Ev doğru=False | xG 1.38-1.14 | skor=1-1 | güven=LOW | risk=xG farkı dar, taraf tahmini düşük güven, yüksek kart hakemi
 - 24.04.2026 - 20:00 | RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ - KASIMPAŞA A.Ş. | skor 4-0 | tahmin=Ev gerçek=Ev doğru=True | xG 1.69-1.09 | skor=1-1 | güven=MEDIUM | risk=favori xG israfı
 - 25.04.2026 - 14:30 | İKAS EYÜPSPOR - GAZİANTEP FUTBOL KULÜBÜ A.Ş. | skor 3-0 | tahmin=Dep gerçek=Ev doğru=False | xG 1.04-1.39 | skor=1-1 | güven=MEDIUM | risk=-
 - 25.04.2026 - 17:00 | ZECORNER KAYSERİSPOR - ÇAYKUR RİZESPOR A.Ş. | skor 2-0 | tahmin=Dep gerçek=Ev doğru=False | xG 1.03-1.66 | skor=1-1 | güven=HIGH | risk=yüksek kart hakemi
 - 25.04.2026 - 20:00 | GÖZTEPE A.Ş. - HESAP.COM ANTALYASPOR | skor 2-0 | tahmin=Ev gerçek=Ev doğru=True | xG 1.94-1.15 | skor=1-1 | güven=HIGH | risk=favori xG israfı
-- 26.04.2026 - 14:30 | GENÇLERBİRLİĞİ - KOCAELİSPOR | skor 1-0 | tahmin=Dep gerçek=Ev doğru=False | xG 0.96-1.23 | skor=0-1 | güven=LOW | risk=beraberlik olasılığı canlı, taraf tahmini düşük güven, favori xG israfı
+- 26.04.2026 - 14:30 | GENÇLERBİRLİĞİ - KOCAELİSPOR | skor 1-0 | tahmin=X gerçek=Ev doğru=False | xG 0.96-1.23 | skor=0-1 | güven=LOW | risk=beraberlik olasılığı canlı, taraf tahmini düşük güven, favori xG israfı
 - 26.04.2026 - 20:00 | GALATASARAY A.Ş. - FENERBAHÇE A.Ş. | skor 3-0 | tahmin=Ev gerçek=Ev doğru=True | xG 1.59-1.53 | skor=1-1 | güven=LOW | risk=xG farkı dar, taraf tahmini düşük güven
-- 27.04.2026 - 17:00 | CORENDON ALANYASPOR - SAMSUNSPOR A.Ş. | skor 2-3 | tahmin=Ev gerçek=Dep doğru=False | xG 1.39-1.35 | skor=1-1 | güven=LOW | risk=xG farkı dar, taraf tahmini düşük güven
-- 27.04.2026 - 20:00 | TÜMOSAN KONYASPOR - TRABZONSPOR A.Ş. | skor 2-1 | tahmin=Ev gerçek=Ev doğru=True | xG 1.49-1.48 | skor=1-1 | güven=LOW | risk=xG farkı dar, taraf tahmini düşük güven
+- 27.04.2026 - 17:00 | CORENDON ALANYASPOR - SAMSUNSPOR A.Ş. | skor 2-3 | tahmin=X gerçek=Dep doğru=False | xG 1.39-1.35 | skor=1-1 | güven=LOW | risk=xG farkı dar, taraf tahmini düşük güven
+- 27.04.2026 - 20:00 | TÜMOSAN KONYASPOR - TRABZONSPOR A.Ş. | skor 2-1 | tahmin=X gerçek=Ev doğru=False | xG 1.49-1.48 | skor=1-1 | güven=LOW | risk=xG farkı dar, taraf tahmini düşük güven
 - 27.04.2026 - 20:00 | BEŞİKTAŞ A.Ş. - MISIRLI.COM.TR FATİH KARAGÜMRÜK | skor 0-0 | tahmin=Ev gerçek=X doğru=False | xG 1.8-0.92 | skor=1-0 | güven=HIGH | risk=-
 - 1.05.2026 - 17:00 | ÇAYKUR RİZESPOR A.Ş. - TÜMOSAN KONYASPOR | skor 3-2 | tahmin=Ev gerçek=Ev doğru=True | xG 1.55-1.52 | skor=1-1 | güven=LOW | risk=xG farkı dar, taraf tahmini düşük güven
 - 1.05.2026 - 20:00 | GAZİANTEP FUTBOL KULÜBÜ A.Ş. - BEŞİKTAŞ A.Ş. | skor 0-2 | tahmin=Dep gerçek=Dep doğru=True | xG 1.32-1.5 | skor=1-1 | güven=LOW | risk=xG farkı dar, taraf tahmini düşük güven
@@ -33,11 +33,11 @@
 - 3.05.2026 - 20:00 | HESAP.COM ANTALYASPOR - CORENDON ALANYASPOR | skor 0-0 | tahmin=Dep gerçek=X doğru=False | xG 1.24-1.49 | skor=1-1 | güven=MEDIUM | risk=taraf tahmini düşük güven, yüksek kart hakemi
 - 3.05.2026 - 20:00 | MISIRLI.COM.TR FATİH KARAGÜMRÜK - GENÇLERBİRLİĞİ | skor 1-0 | tahmin=Ev gerçek=Ev doğru=True | xG 1.37-0.86 | skor=1-0 | güven=MEDIUM | risk=beraberlik olasılığı canlı
 - 3.05.2026 - 20:00 | KASIMPAŞA A.Ş. - KOCAELİSPOR | skor 1-1 | tahmin=X gerçek=X doğru=True | xG 1.23-1.06 | skor=1-1 | güven=LOW | risk=xG farkı dar, beraberlik olasılığı canlı, taraf tahmini düşük güven, yüksek kart hakemi
-- 9.05.2026 - 20:00 | GENÇLERBİRLİĞİ - KASIMPAŞA A.Ş. | skor 3-2 | tahmin=Dep gerçek=Ev doğru=False | xG 1.04-1.29 | skor=1-1 | güven=LOW | risk=beraberlik olasılığı canlı, taraf tahmini düşük güven
+- 9.05.2026 - 20:00 | GENÇLERBİRLİĞİ - KASIMPAŞA A.Ş. | skor 3-2 | tahmin=X gerçek=Ev doğru=False | xG 1.04-1.29 | skor=1-1 | güven=LOW | risk=beraberlik olasılığı canlı, taraf tahmini düşük güven
 - 9.05.2026 - 20:00 | GALATASARAY A.Ş. - HESAP.COM ANTALYASPOR | skor 4-2 | tahmin=Ev gerçek=Ev doğru=True | xG 2.26-0.93 | skor=2-0 | güven=HIGH | risk=-
-- 9.05.2026 - 20:00 | BEŞİKTAŞ A.Ş. - TRABZONSPOR A.Ş. | skor 1-2 | tahmin=Ev gerçek=Dep doğru=False | xG 1.49-1.37 | skor=1-1 | güven=LOW | risk=xG farkı dar, taraf tahmini düşük güven
+- 9.05.2026 - 20:00 | BEŞİKTAŞ A.Ş. - TRABZONSPOR A.Ş. | skor 1-2 | tahmin=X gerçek=Dep doğru=False | xG 1.49-1.37 | skor=1-1 | güven=LOW | risk=xG farkı dar, taraf tahmini düşük güven
 - 9.05.2026 - 20:00 | RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ - SAMSUNSPOR A.Ş. | skor 3-0 | tahmin=Ev gerçek=Ev doğru=True | xG 1.73-1.55 | skor=1-1 | güven=LOW | risk=xG farkı dar, taraf tahmini düşük güven, yüksek kart hakemi
-- 9.05.2026 - 20:00 | KOCAELİSPOR - MISIRLI.COM.TR FATİH KARAGÜMRÜK | skor 0-1 | tahmin=Ev gerçek=Dep doğru=False | xG 1.26-1.07 | skor=1-1 | güven=LOW | risk=xG farkı dar, beraberlik olasılığı canlı, taraf tahmini düşük güven, favori xG israfı
+- 9.05.2026 - 20:00 | KOCAELİSPOR - MISIRLI.COM.TR FATİH KARAGÜMRÜK | skor 0-1 | tahmin=X gerçek=Dep doğru=False | xG 1.26-1.07 | skor=1-1 | güven=LOW | risk=xG farkı dar, beraberlik olasılığı canlı, taraf tahmini düşük güven, favori xG israfı
 - 9.05.2026 - 20:00 | GÖZTEPE A.Ş. - GAZİANTEP FUTBOL KULÜBÜ A.Ş. | skor 2-1 | tahmin=Ev gerçek=Ev doğru=True | xG 1.96-1.31 | skor=1-1 | güven=HIGH | risk=-
 - 9.05.2026 - 20:00 | TÜMOSAN KONYASPOR - FENERBAHÇE A.Ş. | skor 0-3 | tahmin=Dep gerçek=Dep doğru=True | xG 1.68-1.74 | skor=1-1 | güven=LOW | risk=xG farkı dar, taraf tahmini düşük güven, yüksek kart hakemi
 - 9.05.2026 - 20:00 | İKAS EYÜPSPOR - ÇAYKUR RİZESPOR A.Ş. | skor 4-0 | tahmin=Dep gerçek=Ev doğru=False | xG 1.22-1.52 | skor=1-1 | güven=MEDIUM | risk=-
@@ -50,4 +50,4 @@
 - 17.05.2026 - 20:00 | FENERBAHÇE A.Ş. - İKAS EYÜPSPOR | skor 3-3 | tahmin=Ev gerçek=X doğru=False | xG 2.13-1.07 | skor=2-1 | güven=HIGH | risk=-
 - 17.05.2026 - 20:00 | KASIMPAŞA A.Ş. - GALATASARAY A.Ş. | skor 1-0 | tahmin=Dep gerçek=Ev doğru=False | xG 1.2-2.05 | skor=1-2 | güven=HIGH | risk=-
 - 17.05.2026 - 20:00 | TRABZONSPOR A.Ş. - GENÇLERBİRLİĞİ | skor 0-3 | tahmin=Ev gerçek=Dep doğru=False | xG 1.79-0.87 | skor=1-0 | güven=HIGH | risk=yüksek kart hakemi
-- 17.05.2026 - 20:00 | HESAP.COM ANTALYASPOR - KOCAELİSPOR | skor 1-0 | tahmin=Dep gerçek=Ev doğru=False | xG 1.26-1.34 | skor=1-1 | güven=LOW | risk=xG farkı dar, taraf tahmini düşük güven, favori xG israfı
+- 17.05.2026 - 20:00 | HESAP.COM ANTALYASPOR - KOCAELİSPOR | skor 1-0 | tahmin=X gerçek=Ev doğru=False | xG 1.26-1.34 | skor=1-1 | güven=LOW | risk=xG farkı dar, taraf tahmini düşük güven, favori xG israfı

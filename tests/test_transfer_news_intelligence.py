@@ -122,6 +122,55 @@ class TransferIntelligenceTests(unittest.TestCase):
         self.assertEqual(row["verification_status"], "OFFICIAL")
         self.assertTrue(row["model_use"])
 
+    def test_transfermarkt_short_name_matches_official_announcement(self):
+        source = {
+            "title": "Büyük camiamıza hoş geldin Dan Agyei!",
+            "summary": "",
+            "source_type": "official_club",
+            "account_type": "official",
+            "related_team": "KOCAELİSPOR",
+            "categories": ["transfer"],
+        }
+        player_index = {
+            "DANIEL EBENEZER KWASI AGYEI": {
+                "name": "DANIEL EBENEZER KWASI AGYEI",
+                "tm_name": "Dan Agyei",
+                "club": "KOCAELİSPOR",
+            },
+        }
+
+        result = rule_based_analyze(source, player_index)
+
+        self.assertEqual(result["transfer_rumors"][0]["player_name"], "DANIEL EBENEZER KWASI AGYEI")
+        self.assertEqual(result["transfer_rumors"][0]["to_club"], "KOCAELİSPOR")
+
+    def test_official_departure_without_destination_remains_review_required(self):
+        source = {
+            "article_id": "thanks",
+            "title": "TEŞEKKÜRLER SİNAN OSMANOĞLU",
+            "summary": "",
+            "source_name": "Gençlerbirliği Resmi Web",
+            "source_type": "official_club",
+            "account_type": "official",
+            "related_team": "GENÇLERBİRLİĞİ S.K.",
+            "link": "https://club.test/thanks",
+            "published_at": "2026-01-07T10:00:00+03:00",
+            "categories": ["transfer"],
+            "super_lig_relevant": True,
+            "analyzed": True,
+        }
+        player_index = {
+            "SINAN OSMANOGLU": {"name": "SİNAN OSMANOĞLU", "club": "ARCA ÇORUM FK"},
+        }
+        source["claude_analysis"] = rule_based_analyze(source, player_index)
+
+        row = build_intelligence([source], player_index)["transfers"][0]
+
+        self.assertEqual(row["from_club"], "GENÇLERBİRLİĞİ S.K.")
+        self.assertIsNone(row["to_club"])
+        self.assertEqual(row["verification_status"], "REVIEW_REQUIRED")
+        self.assertFalse(row["model_use"])
+
     def test_same_current_and_target_team_requires_review(self):
         transfer = {
             "player_name": "Ali Örnek",

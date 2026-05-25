@@ -50,6 +50,7 @@ SIGNAL_TERMS = (
     "kadro dışı",
 )
 NON_FOOTBALL_ANNOUNCEMENT_TERMS = ("sponsor", "reklam", "stadyum isim hakkı")
+GENERIC_LISTING_TITLES = {"TRANSFER HABERLERI"}
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (compatible; metric11-official-news/0.1; football research)",
     "Accept-Language": "tr-TR,tr;q=0.9",
@@ -191,6 +192,8 @@ def fetch_article(source: dict, listing_title: str, link: str, timeout_seconds: 
     text = f"{title} {detail_text}".lower()
     if any(term in title.lower() for term in NON_FOOTBALL_ANNOUNCEMENT_TERMS):
         return None
+    if normalize_title(title) in GENERIC_LISTING_TITLES:
+        return None
     categories = detect_categories(text)
     if categories == ["general"]:
         return None
@@ -212,6 +215,11 @@ def fetch_article(source: dict, listing_title: str, link: str, timeout_seconds: 
         "analyzed": False,
         "claude_analysis": None,
     }
+
+
+def normalize_title(title: str) -> str:
+    replacements = str.maketrans("çğıöşüÇĞİÖŞÜ", "cgiosuCGIOSU")
+    return re.sub(r"[^A-Z0-9 ]+", " ", title.translate(replacements).upper()).strip()
 
 
 def extract_date(text: str) -> str | None:

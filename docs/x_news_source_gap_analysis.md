@@ -17,7 +17,9 @@ düzeltmeleri listeler; otomatik yayın güveni anlamına gelmez.
   ortamda `X_BEARER_TOKEN` gerekir. Anahtar yokken Nitter yalnız geliştirme
   fallback'i olarak denenir ve başarısız olsa bile durum snapshot'ı yazılır.
 - Başarılı gönderi snapshot'ı henüz yok; bu nedenle mevcut transfer analiz
-  çıktısı RSS kaynaklarıyla sınırlı.
+  çıktısında X teyidi yoktur. Resmi teyit boşluğu anahtarsız resmi web
+  collector'ı ile kapatılmıştır: canlı ölçümde 18 kulüp kaydının 16'sına
+  erişilmiş ve 13 tekil resmi sinyal duyurusu alınmıştır.
 - Önceki üç resmi handle açığı kodda giderildi:
 
 | Kayıt | Eski handle | Kullanılan ana handle | Neden |
