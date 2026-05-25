@@ -65,6 +65,10 @@
 - Haber/sakat-cezalı başarılı kaynak: 2
 - Haber/sakat-cezalı sinyal: 3
 - Haber/sakat-cezalı yapılandırılmış oyuncu: 13
+- RSS haber kaydı: 210
+- Haber analizine alınan içerik: 58
+- Transfer haber iddiası: 8 | resmi=0, çoklu kaynak=0, söylenti=0, inceleme gerekli=8
+- X gönderi snapshot'ı: 0 | başarılı hesap=0 | kaynak=x_api | durum=MISSING_CREDENTIALS
 - API-Football 2024 başarılı endpoint: 7
 - API-Football 2024 fikstür: 342
 - API-Football 2024 takım: 19
@@ -85,6 +89,8 @@
 - TFF oyuncu profilleri / public='Resmi federasyon oyuncu profili' (SCRAPING, risk=MEDIUM, license=VERIFY_TERMS): İşlenen lig profil havuzu 691 profil; lig snapshot içi eşleşme ayrıca ölçülür
 - Transfermarkt kadro sayfası / public='Piyasa değeri ve kadro profili' (SCRAPING, risk=HIGH, license=VERIFY_TERMS_BEFORE_COMMERCIAL_USE): Süper Lig 2025/26: 18 kulüp kadrosu, pozisyon ve piyasa değeri
 - Oyuncu uygunluk sinyalleri / public='Model türetilmiş uygunluk sinyali' (DERIVED+MANUAL, risk=MEDIUM, license=DERIVED_FROM_INTERNAL_DATA_AND_MANUAL_VERIFICATION): Beşiktaş 2025/26 kart cezası çıkarımı + manuel sakat/cezalı override dosyası
+- Türk spor haber RSS akışı / public='Güncel spor haber bağlamı' (RSS_NEWS, risk=MEDIUM, license=VERIFY_TERMS_AND_QUOTE_LIMITS): 210 ham haber; 58 ilgili analiz; 8 transfer iddiası
+- X resmi kulüp ve futbol haber hesapları / public='Resmi kulüp ve sosyal haber duyuruları' (X_SOCIAL_SIGNAL, risk=MEDIUM, license=PLATFORM_TERMS_AND_DISPLAY_REQUIREMENTS): Collector çalıştı (x_api/MISSING_CREDENTIALS); kullanılabilir gönderi snapshot'ı yok
 - FM/FIFA tarzı oyuncu attribute kaynakları / public='Oyuncu attribute ve potansiyel veri seti' (OPEN_DATASET_OR_VERIFIED_EXPORT, risk=LOW_TO_HIGH_BY_LICENSE, license=SOURCE_SPECIFIC): 4 aday kaynak kaydı; normalize import varsa 0 oyuncu
 - API-Football Süper Lig snapshot / public='Dış futbol API doğrulama ve geçmiş sezon zenginleştirme' (API, risk=MEDIUM, license=API_PLAN_LIMITED): 2024 sezonu ücretsiz planda erişilebilir; 2025 sezonu plan kısıtı nedeniyle boş dönüyor; derin snapshot rate-limit kontrollü çalışır
 
@@ -96,7 +102,7 @@
 
 ## Var Olan Alanlar
 
-team, match_date, score, venue, referee, var, lineup, bench, cards, goals, goal_minute, goal_type, player_tff_id, birth_date, age, nationality, contract_start, contract_end, player_position, position_group, market_value, automatic_suspension_signal, manual_injury_override, manual_suspension_override, external_current_ability, external_potential_ability, role_fit_score, estimated_physical_load_km_range, fm_role_archetype, overall_fm_fit_score, api_football_historical_fixtures, api_football_top_scorers, api_football_cards, api_football_squads, api_football_injury_history_signal, api_football_player_season_stats, player_alias_canonical_name, cross_source_match_score, transfermarkt_match_review_category, transfermarkt_in_scope_match_rate, recommended_scoreline, top_scoreline_scenarios, recommended_model_action, lineup_recommendation, attacking_priority, card_caution, team_strength_score, attack_score, defense_score, form_score, venue_score, continuity_score, big_match_volatility_score, big_match_risk_level, big_match_draw_risk, coach_lineup_alignment_rate, coach_lineup_verdict, alternative_model_lineup_xg, alternative_model_lineup_scoreline, position_role_fit_score, position_confidence, scout_economy_score, source_freshness_target, team_power_score, team_scoring_window, team_conceding_window, team_weakness_hint, team_scout_blueprint_role, team_scout_blueprint_candidate_fit, scout_quality_low_confidence_queue, scout_quality_repeated_role_spread, sqlite_warehouse_table_counts, warehouse_quality_findings, profile_enrichment_priority_score, profile_enrichment_queue_rank, player_estimated_load_score, player_profile_tag, referee_tempo_label, transfer_impact_simulated_xg_delta, transfer_impact_simulated_scoreline, selected_player_what_if, news_injury_signal, news_suspension_signal, news_probable_lineup_context
+team, match_date, score, venue, referee, var, lineup, bench, cards, goals, goal_minute, goal_type, player_tff_id, birth_date, age, nationality, contract_start, contract_end, player_position, position_group, market_value, automatic_suspension_signal, manual_injury_override, manual_suspension_override, external_current_ability, external_potential_ability, role_fit_score, estimated_physical_load_km_range, fm_role_archetype, overall_fm_fit_score, api_football_historical_fixtures, api_football_top_scorers, api_football_cards, api_football_squads, api_football_injury_history_signal, api_football_player_season_stats, player_alias_canonical_name, cross_source_match_score, transfermarkt_match_review_category, transfermarkt_in_scope_match_rate, recommended_scoreline, top_scoreline_scenarios, recommended_model_action, lineup_recommendation, attacking_priority, card_caution, team_strength_score, attack_score, defense_score, form_score, venue_score, continuity_score, big_match_volatility_score, big_match_risk_level, big_match_draw_risk, coach_lineup_alignment_rate, coach_lineup_verdict, alternative_model_lineup_xg, alternative_model_lineup_scoreline, position_role_fit_score, position_confidence, scout_economy_score, source_freshness_target, team_power_score, team_scoring_window, team_conceding_window, team_weakness_hint, team_scout_blueprint_role, team_scout_blueprint_candidate_fit, scout_quality_low_confidence_queue, scout_quality_repeated_role_spread, sqlite_warehouse_table_counts, warehouse_quality_findings, profile_enrichment_priority_score, profile_enrichment_queue_rank, player_estimated_load_score, player_profile_tag, referee_tempo_label, transfer_impact_simulated_xg_delta, transfer_impact_simulated_scoreline, selected_player_what_if, news_injury_signal, news_suspension_signal, news_probable_lineup_context, news_transfer_claim, news_transfer_verification_status, news_transfer_evidence_sources, official_social_announcement_signal
 
 ## Eksik Kritik Alanlar
 
@@ -135,4 +141,5 @@ team, match_date, score, venue, referee, var, lineup, bench, cards, goals, goal_
 - profile_enrichment_queue: MVP_READY_PRIORITY_COLLECTION_QUEUE
 - source_watchlist: MVP_READY_DAILY_REFRESH_PLAN
 - news_context: CONNECTED_LOW_TO_MEDIUM_CONFIDENCE
+- transfer_news_intelligence: RSS_CONNECTED_X_PENDING_SNAPSHOT_REVIEW_GATED
 - api_football: CONNECTED_2024_HISTORY_PLAN_LIMITED_2025

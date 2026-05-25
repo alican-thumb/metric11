@@ -75,6 +75,38 @@
       ]
     },
     {
+      "name": "Türk spor haber RSS akışı",
+      "public_label": "Güncel spor haber bağlamı",
+      "type": "RSS_NEWS",
+      "risk": "MEDIUM",
+      "license_status": "VERIFY_TERMS_AND_QUOTE_LIMITS",
+      "display_policy": "SHOW_LINK_AND_DERIVED_SIGNAL_ONLY",
+      "coverage": "210 ham haber; 58 ilgili analiz; 8 transfer iddiası",
+      "fields": [
+        "başlık",
+        "kaynak",
+        "yayın zamanı",
+        "transfer iddiası",
+        "kaynak teyit durumu"
+      ]
+    },
+    {
+      "name": "X resmi kulüp ve futbol haber hesapları",
+      "public_label": "Resmi kulüp ve sosyal haber duyuruları",
+      "type": "X_SOCIAL_SIGNAL",
+      "risk": "MEDIUM",
+      "license_status": "PLATFORM_TERMS_AND_DISPLAY_REQUIREMENTS",
+      "display_policy": "SHOW_LINK_AND_DERIVED_SIGNAL_ONLY",
+      "coverage": "Collector çalıştı (x_api/MISSING_CREDENTIALS); kullanılabilir gönderi snapshot'ı yok",
+      "fields": [
+        "hesap türü",
+        "gönderi kimliği",
+        "resmi teyit",
+        "transfer iddiası",
+        "bağlantı"
+      ]
+    },
+    {
       "name": "FM/FIFA tarzı oyuncu attribute kaynakları",
       "public_label": "Oyuncu attribute ve potansiyel veri seti",
       "type": "OPEN_DATASET_OR_VERIFIED_EXPORT",
@@ -187,6 +219,19 @@
     "news_context_sources_ok": 2,
     "news_context_signals": 3,
     "news_context_structured_unavailability": 13,
+    "news_rss_articles": 210,
+    "news_intelligence_articles": 58,
+    "news_transfer_claims": 8,
+    "news_transfer_status_counts": {
+      "OFFICIAL": 0,
+      "CORROBORATED": 0,
+      "RUMOR": 0,
+      "REVIEW_REQUIRED": 8
+    },
+    "news_twitter_posts": 0,
+    "news_twitter_successful_accounts": 0,
+    "news_twitter_provider": "x_api",
+    "news_twitter_status": "MISSING_CREDENTIALS",
     "api_football_2024_successful_endpoints": 7,
     "api_football_2024_fixtures": 342,
     "api_football_2024_teams": 19,
@@ -286,7 +331,11 @@
     "selected_player_what_if",
     "news_injury_signal",
     "news_suspension_signal",
-    "news_probable_lineup_context"
+    "news_probable_lineup_context",
+    "news_transfer_claim",
+    "news_transfer_verification_status",
+    "news_transfer_evidence_sources",
+    "official_social_announcement_signal"
   ],
   "missing_fields": [
     "preferred_foot",
@@ -323,6 +372,7 @@
     "profile_enrichment_queue": "MVP_READY_PRIORITY_COLLECTION_QUEUE",
     "source_watchlist": "MVP_READY_DAILY_REFRESH_PLAN",
     "news_context": "CONNECTED_LOW_TO_MEDIUM_CONFIDENCE",
+    "transfer_news_intelligence": "RSS_CONNECTED_X_PENDING_SNAPSHOT_REVIEW_GATED",
     "api_football": "CONNECTED_2024_HISTORY_PLAN_LIMITED_2025"
   },
   "source_display_policy": {
