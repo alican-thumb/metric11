@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import json
+from datetime import datetime, timezone
 from html import escape
 from pathlib import Path
 
@@ -72,11 +73,27 @@ def _build_for_team(slug: str, team_name: str, goal_backtest_path_str: str, inde
         preview = json.loads(p.read_text(encoding="utf-8"))
         previews.append(preview)
 
-    output_path.write_text(build_html(index_payload["summary"], previews, goal_backtest, team_name), encoding="utf-8")
+    today = datetime.now(timezone.utc).date()
+    has_upcoming = any(
+        _parse_match_date(p.get("match", {}).get("date", "")) is not None
+        and _parse_match_date(p.get("match", {}).get("date", "")) > today  # type: ignore[operator]
+        for p in previews
+    )
+    output_path.write_text(
+        build_html(index_payload["summary"], previews, goal_backtest, team_name, is_off_season=not has_upcoming),
+        encoding="utf-8",
+    )
     print(output_path)
 
 
-def build_html(summary: dict, previews: list[dict], goal_backtest: dict, team_name: str = "Beşiktaş") -> str:
+def _parse_match_date(date_str: str):
+    try:
+        return datetime.strptime(date_str.split(" - ")[0].strip(), "%d.%m.%Y").date()
+    except ValueError:
+        return None
+
+
+def build_html(summary: dict, previews: list[dict], goal_backtest: dict, team_name: str = "Beşiktaş", is_off_season: bool = False) -> str:
     data_json = (
         json.dumps({"summary": summary, "goal_backtest": goal_backtest, "previews": previews}, ensure_ascii=False)
         .replace("<", "\\u003c")
@@ -336,6 +353,7 @@ def build_html(summary: dict, previews: list[dict], goal_backtest: dict, team_na
     </div>
   </header>
   <main>
+    {"" if not is_off_season else """<div style="background:#1e3a5f;border-left:4px solid #60a5fa;border-radius:8px;padding:14px 20px;margin-bottom:20px;color:#e0f2fe;font-size:14px;line-height:1.6;"><strong style="color:#93c5fd;">Sezon arası</strong> — 2025/26 sezonu tamamlandı. Geçmiş maç analizleri ve tahmin arşivi aşağıda incelenebilir. 2026/27 fikstürü açıklandığında tahminler otomatik olarak güncellenir.</div>"""}
     <div class="toolbar">
       <select id="matchSelect" aria-label="Maç seç">{options}</select>
       <div class="metric"><span>Üretilen rapor</span><strong>{summary.get("generated_reports", 0)}</strong></div>

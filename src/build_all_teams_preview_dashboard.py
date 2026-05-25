@@ -123,6 +123,9 @@ def build_html(team_data: list[dict]) -> str:
   <div class="header-inner"><h1>Süper Lig maç merkezi</h1>
   <div class="sub">{SEASON_LABEL} sezonu · tüm takımların kronolojik maç raporları · ham model başlangıç ölçümü</div></div>
 </div>
+<div style="background:#1e3a5f;border-bottom:1px solid #1e40af;padding:12px clamp(12px,3vw,32px);color:#bfdbfe;font-size:13px;">
+  <strong style="color:#93c5fd;">Sezon arası ·</strong> 2025/26 lig sezonu tamamlandı. Arşiv maç raporları aktif, yeni tahminler 2026/27 fikstürü açıklanınca otomatik başlayacak. Yaz transfer analizi için <a href="transfer_season_context_2025_2026.html" style="color:#60a5fa;">Transfer Bağlamı</a> ve <a href="transfer_recommendation_report_2025_2026.html" style="color:#60a5fa;">Öneri Raporu</a>'nu incele.
+</div>
 <div class="summary-bar">
   <div class="pill"><div class="val">{len(team_data)}</div><div class="lbl">Takım</div></div>
   <div class="pill"><div class="val">{total_reports}</div><div class="lbl">Toplam Rapor</div></div>
