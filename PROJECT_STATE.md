@@ -258,6 +258,17 @@ Parse edilen alanlar:
 - HTML raporu yeni "Yaş Eğrisi" tab'ı ile genişledi: 5 bracket kartı + değer düşüş risk tablosu + genç fırsat tablosu.
 - `build_report()` artık `age_curve` alanını da JSON'a ekliyor.
 
+## 2026-05-25 _fmt_date() Çok Format Desteği (Session 3 — devam)
+
+### Tarih Parse Genişletmesi (build_live_feed.py)
+- `_fmt_date()` fonksiyonu şu formatları destekliyor:
+  - `21.5.2026` — TFF/Türk tarih formatı (mevcut)
+  - `2026-05-24T14:30:00Z` — ISO 8601 + Z suffix
+  - `2026-05-24T14:30:00+00:00` — ISO 8601 + offset
+  - `2026-05-24` — Yalnızca tarih
+  - `Sat, 24 May 2026 10:00:00 +0000` — RFC 2822 (Google News RSS formatı)
+- Tüm formatlar test edildi; None girişi boş string döndürüyor.
+
 ### Dashboardlar
 
 Statik HTML olarak iki demo üretildi:
