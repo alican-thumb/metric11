@@ -16,12 +16,16 @@
   :root{--bg:#f3f5f4;--panel:#fff;--ink:#132018;--muted:#627067;--line:#d7ded9;--dark:#091810;--green:#116447;--lime:#cde94e}
   *{box-sizing:border-box;margin:0;padding:0}
   body{font-family:Inter,'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--ink)}
-  .topbar{min-height:62px;padding:0 clamp(14px,3vw,32px);display:flex;align-items:center;justify-content:space-between;gap:18px;background:var(--dark)}
-  .brand{display:flex;align-items:center;gap:10px;color:white;text-decoration:none;font-size:18px;font-weight:800}
-  .brand b{width:29px;height:29px;border-radius:7px;display:grid;place-items:center;color:var(--dark);background:var(--lime);font-size:14px}
-  .topnav{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+  .topbar{min-height:58px;padding:0 clamp(14px,3vw,32px);display:flex;align-items:center;justify-content:space-between;gap:18px;background:var(--dark);border-bottom:2px solid #1a3023}
+  .brand{display:flex;align-items:center;gap:10px;color:white;text-decoration:none;font-size:18px;font-weight:800;letter-spacing:-0.2px}
+  .brand:visited,.brand:active,.brand:hover{color:white}
+  .brand b{width:28px;height:28px;border-radius:6px;display:grid;place-items:center;color:var(--dark);background:var(--lime);font-size:14px;font-weight:900}
+  .brand .slbl{color:#6b7c72;font-size:11px;font-weight:500;border-left:1px solid #2a3d30;padding-left:8px;margin-left:2px}
+  .topnav{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
   .topnav::-webkit-scrollbar{display:none}
-  .topnav a{white-space:nowrap;color:#d5ded8;padding:9px 10px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600}
+  .topnav a{white-space:nowrap;color:#8fa89a;padding:8px 11px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600;transition:background .15s,color .15s}
+  .topnav a:visited{color:#8fa89a}
+  .topnav a:hover{background:#162b20;color:white}
   .topnav a.active{background:#162b20;color:white}
   .window-banner{padding:10px clamp(14px,3vw,32px);color:#d1fae5;font-size:13px;display:flex;align-items:center;gap:10px}
   .window-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;animation:pulse 2s infinite}
@@ -39,9 +43,9 @@
 </head>
 <body>
 <div class="topbar">
-  <a class="brand" href="gundem_2025_2026.html"><b>11</b> metric11</a>
+  <a class="brand" href="/"><b>11</b> metric11<span class="slbl">S&#xfc;per Lig 2025-2026</span></a>
   <nav class="topnav">
-    <a class="active" href="gundem_2025_2026.html">Gündem</a>
+    <a class="active" href="/">G&#xfc;ndem</a>
     <a href="transfer_tracker_2025_2026.html">Transferler</a>
     <a href="all_teams_preview_dashboard_2025_2026.html">Maç Önü</a>
     <a href="transfer_recommendation_report_2025_2026.html">Scout</a>
@@ -50,7 +54,7 @@
 </div>
 <div class="window-banner" style="background:linear-gradient(90deg,#1e3a5f,#0f2a4a);border-bottom:1px solid #1e40af">
   <div class="window-dot" style="background:#60a5fa"></div>
-  <span>Transfer penceresi <strong>6 g&#xfc;n sonra</strong> a&#x15f;&#x131;l&#x131;yor (1 Haziran 2026) &middot; G&#xfc;ncelleme: 25.05.2026 16:49 UTC</span>
+  <span>Transfer penceresi <strong>6 g&#xfc;n sonra</strong> a&#x15f;&#x131;l&#x131;yor (1 Haziran 2026) &middot; G&#xfc;ncelleme: 25.05.2026 16:58 UTC</span>
 </div>
 <div class="main">
   <div>
@@ -90,15 +94,15 @@
 </div><div style="padding:12px 0;border-bottom:1px solid var(--line);display:flex;gap:12px;align-items:flex-start">
   <div style="flex:1;min-width:0"><a href="https://www.sabah.com.tr/spor/futbol/2026/05/25/nicolo-zaniolo-udineseye-veda-etti" target="_blank" style="color:var(--ink);text-decoration:none;line-height:1.4">Nicolo Zaniolo Udinese’ye veda etti!</a><div style="margin-top:4px;display:flex;gap:6px;align-items:center"><span style='font-size:10px;padding:1px 6px;border-radius:3px;font-weight:700;color:#2563eb;background:#dbeafe'>Basın</span><span style="font-size:11px;color:var(--muted)">Sabah Spor</span></div></div>
 </div><div style="padding:12px 0;border-bottom:1px solid var(--line);display:flex;gap:12px;align-items:flex-start">
-  <div style="flex:1;min-width:0"><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxPRU1Ec3BvdDM1X29PaU14dVBMeUlnbzZoTG9FUXBrY3E4T2tOV21FRGpqSmJYU0trTTg3czM1LWxxZjFyT2FCcHJnbC1rYWRsSlkxbUtIdWhxaVkteTlxS2xEQ2FlSEk0d01iaVNJNzh2S2J4LVRzeWdzMmZfUDJWM08tRGZVLUJLU3dsWjNEZlg4U2NiZXo00gGWAUFVX3lxTE8tY0FxMXZPTWVDbU5tbk9IS0JJaGpWRTlnemhub0YwNEZnNHNNY3ZmMmxxV0JtWF96NXNsNUdHeWZCdlVZYXk2QlF2WmkyTUdxQlUyN1NYSHdEOHlnTmc2aHVJRmU3SDRvamliVVl3LXhHelQ2bVRGVkFWUHl3aUh6SWk4ZzFIVlFOS0FtOWVVdGkta3BFQQ?oc=5" target="_blank" style="color:var(--ink);text-decoration:none;line-height:1.4">Galatasaray&#x27;dan Bertuğ Yıldırım transferi için takas + para formülü - Haberler</a><div style="margin-top:4px;display:flex;gap:6px;align-items:center"><span style='font-size:10px;padding:1px 6px;border-radius:3px;font-weight:700;color:#2563eb;background:#dbeafe'>Google News</span><span style="font-size:11px;color:var(--muted)">Haberler</span></div></div>
+  <div style="flex:1;min-width:0"><a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxON1FOTFE0MEVocGR6N003ZTBqM3QwV2lEdFUtUWFidkV1ZTkzS3VjMWJlbmdwY2VUM0tvNWV1U1k0d3lwSnJxa0E3bjNSOXFPVjJDRTdTUUxGUWVLOXYwa3g2S2tzOWpXcG1fT24waEk4VThWb1JEQ1hkS0RVMVVqZ2dhN3hESWdXWW1Dcmt0cWUyb2Y20gGTAUFVX3lxTFBiemlPSXFHOUQ2TFBWMkZNWEJRaVdXTUtPUm1EY1J5b21Dc3kzczBNSlhxa1ZVaVBfWHU3WmVEQUV1bm50cFZ1SFFXbkxlMHhrTXFiT081RkN0N2tBQUt5VnRvV2RyRkpPeHN0aTJnRm50M01tc3pmRTdCWjR1YWNZRWIzbUNiU2V6eUt1dmZjMEVfRQ?oc=5" target="_blank" style="color:var(--ink);text-decoration:none;line-height:1.4">Karşıyaka&#x27;ya Fenerbahçe&#x27;den 3 transfer birden - Son Dakika</a><div style="margin-top:4px;display:flex;gap:6px;align-items:center"><span style='font-size:10px;padding:1px 6px;border-radius:3px;font-weight:700;color:#2563eb;background:#dbeafe'>Google News</span><span style="font-size:11px;color:var(--muted)">Son Dakika</span></div></div>
+</div><div style="padding:12px 0;border-bottom:1px solid var(--line);display:flex;gap:12px;align-items:flex-start">
+  <div style="flex:1;min-width:0"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxOQUthWmRTNms1LXdiRmtRN2dLZTFyeEFQMXc2MEtXX0otNTVxLV9iaFl5XzZWRFkzWkc5WG5rOXg5RVZteE96SFpYSG1YY1RvWjVRMDZtankxcnUtZURGRG1ZbmlJRjV1cllOV2RRaDZQRzJNeThYSUczZU92Tml3bWFrUmNtZm51dXRpdnRCUDJmU2JYalNFU0tUZHhyNndtNjhUWWZfSnhLcU5PajFn?oc=5" target="_blank" style="color:var(--ink);text-decoration:none;line-height:1.4">Beşiktaş&#x27;tan teknik direktör iddiaları için açıklama! &#x27;İtibar etmeyin&#x27; - Fanatik</a><div style="margin-top:4px;display:flex;gap:6px;align-items:center"><span style='font-size:10px;padding:1px 6px;border-radius:3px;font-weight:700;color:#2563eb;background:#dbeafe'>Google News</span><span style="font-size:11px;color:var(--muted)">Fanatik</span></div></div>
+</div><div style="padding:12px 0;border-bottom:1px solid var(--line);display:flex;gap:12px;align-items:flex-start">
+  <div style="flex:1;min-width:0"><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxQUVZaSFN5bmc1U2JhSk1YWF9rdzNmRzdqbTNuakdqMkdLYjNVVmxzUUh2ZVRZeW80enY1eHJnakNQNm5xZkdtSDJidkFvZmhhREpma0kwUnU3bDJkb3RaZ0RLS1BjMW53YUVaUENSVXc4a1J1OFpaZy1Gcl9ia2ZpQkdHSlhZTmhoejBBdjI2TFdEWFRSNURR0gGWAUFVX3lxTE5oZ3F2Wkt4Wms1QklJTFBZWXhWWVBNMUNlTW14alI1U09xRlk1amFZQlNRNkEyV3lDZkVIblZJZ2ZPU3JfYTJ6OWxrSHhQN3BHTEVjZS01UXJuYl9wQ1dXUUZCWHBPcGRydjFMc2pLdUpZS1RCbWhUNjlPek90NjRQMEJTeDNUcVhlTHZmYUEwejRoQjRWQQ?oc=5" target="_blank" style="color:var(--ink);text-decoration:none;line-height:1.4">Galatasaray&#x27;dan Bertuğ Yıldırım transferi için takas + para formülü - Son Dakika</a><div style="margin-top:4px;display:flex;gap:6px;align-items:center"><span style='font-size:10px;padding:1px 6px;border-radius:3px;font-weight:700;color:#2563eb;background:#dbeafe'>Google News</span><span style="font-size:11px;color:var(--muted)">Son Dakika</span></div></div>
+</div><div style="padding:12px 0;border-bottom:1px solid var(--line);display:flex;gap:12px;align-items:flex-start">
+  <div style="flex:1;min-width:0"><a href="https://news.google.com/rss/articles/CBMigwFBVV95cUxObC1lUXhUd3FQLWFnVUhqOWdvczBlVEdYeTFPZXhXOUpuT0lHZHZlOEpUZmpwaTBpVllScC0tWU85Y2xKTTdDdS1adUxyRk5iR3lZT0hGUWlmdHB5SE5iWVh3dEx6SFluZDd5ZzhvU3RvN0pMTVN3V2dibFdnQ2dCaFMtWdIBhgFBVV95cUxPVTdjWnR4dUQzclpONUJ2R2dqS1IybVBZQzBKenJOaEZLOF90TlViV3FhNzZWeG1PNExDVC1XcnYzZGZ2MUQ5QjRkYmpDSm1Ybmh0QmpNMGhFNWxrM2J0X24taUFndnp1VXBIcVFkaFpIYVgyNGFaOVRoNkVEUDRESkRLUS10UQ?oc=5" target="_blank" style="color:var(--ink);text-decoration:none;line-height:1.4">Beşiktaş&#x27;tan teknik direktör açıklaması! - Sporx.com</a><div style="margin-top:4px;display:flex;gap:6px;align-items:center"><span style='font-size:10px;padding:1px 6px;border-radius:3px;font-weight:700;color:#2563eb;background:#dbeafe'>Google News</span><span style="font-size:11px;color:var(--muted)">Sporx.com</span></div></div>
 </div><div style="padding:12px 0;border-bottom:1px solid var(--line);display:flex;gap:12px;align-items:flex-start">
   <div style="flex:1;min-width:0"><a href="https://www.sabah.com.tr/spor/futbol/2026/05/25/trabzonsporda-440-gunluk-yeniden-dogus" target="_blank" style="color:var(--ink);text-decoration:none;line-height:1.4">Trabzonspor&#x27;da 440 günlük yeniden doğuş</a><div style="margin-top:4px;display:flex;gap:6px;align-items:center"><span style='font-size:10px;padding:1px 6px;border-radius:3px;font-weight:700;color:#2563eb;background:#dbeafe'>Basın</span><span style="font-size:11px;color:var(--muted)">Sabah Spor</span></div></div>
-</div><div style="padding:12px 0;border-bottom:1px solid var(--line);display:flex;gap:12px;align-items:flex-start">
-  <div style="flex:1;min-width:0"><a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxQM2RaY3lFcjQtUWlrZEotejdodTBXZHdVX3hJcWh0d1E5SWFOcDZTYjE0LWpJU2RzRV9lUnNwSDdhS001NmNLMWJCM1pKM3JVbjAxYWVrd3FCZmk2c2h6YnFPMlVKVEk2dVdIRGtjUV9iNFlmZGo0cHZnd0ZOa2dzRVdEdld5OVVaTlBZcWc0c2xRbHIwMjEzTTd5dEhZYTRfbG4xVk92d1BaU2ozQmVrag?oc=5" target="_blank" style="color:var(--ink);text-decoration:none;line-height:1.4">Fenerbahçe ve Galatasaray, Milan&#x27;ın yıldızı için transfer savaşında! - Fanatik</a><div style="margin-top:4px;display:flex;gap:6px;align-items:center"><span style='font-size:10px;padding:1px 6px;border-radius:3px;font-weight:700;color:#2563eb;background:#dbeafe'>Google News</span><span style="font-size:11px;color:var(--muted)">Fanatik</span></div></div>
-</div><div style="padding:12px 0;border-bottom:1px solid var(--line);display:flex;gap:12px;align-items:flex-start">
-  <div style="flex:1;min-width:0"><a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxPdlUxbW5VYlRnV0FXa1hZZkgtallHTWUxRE1jTDE1WnRGQlBYLVJ4VUdOSTJObW5ONE1Gckd6M296bTZxUDF6bDBwejVPTFp5c1pya1lxUWJzdGc3VHpYcU51LTBCbndjN3hYRnY1OVdoVHNZcEQyY0s1WVNUOEluM3lR0gGHAUFVX3lxTE5BMmJka2V5R3VmNndsOV9YRzhEcTJKZWFlYVJ0Q1NHTWxYNDZjMDhTa3dQbHJqbmxMRTFhclpjaVVSRW9ESGN4WlkyTEkwUEpReFRyejRyTjJ0bkRIbXd6Zk9kcUNmRHBSaDdpRklfVWZidzFrZjQ0ZWI0aGVSSTk5TXBqLTdaVQ?oc=5" target="_blank" style="color:var(--ink);text-decoration:none;line-height:1.4">Trabzonspor’un Devre Arası Transferi Değerini Katladı! - HaberTS</a><div style="margin-top:4px;display:flex;gap:6px;align-items:center"><span style='font-size:10px;padding:1px 6px;border-radius:3px;font-weight:700;color:#2563eb;background:#dbeafe'>Google News</span><span style="font-size:11px;color:var(--muted)">HaberTS</span></div></div>
-</div><div style="padding:12px 0;border-bottom:1px solid var(--line);display:flex;gap:12px;align-items:flex-start">
-  <div style="flex:1;min-width:0"><a href="https://news.google.com/rss/articles/CBMizwFBVV95cUxNb3NmR1NWSldmeVhic3ZyVXJvTXQtdV9xMm5qR0JTZ3FYVm1fWndpVVpzTkE5N3UzUlBCVWFhTjRMYWtTSkhBX05OTWFwY2J1cjFNd3FNUTBqZlBRbkNsMzg4YnBfbDJFdDdlM0JMT1J6dWUwWE00UWVqQjBEQVNIcVJkbktkRk5vLWVZeVZtQmJnc1BCbzViNnNTbWlRMDVtNW9ubVNIRzNzbUM3bW56NnJnSzVqVm9KWk9rUlJERFUzRkR5c2ZURjdUYzVmMEk?oc=5" target="_blank" style="color:var(--ink);text-decoration:none;line-height:1.4">Galatasaray Victor Osimhen&#x27;in alternatifini erkenden belirledi! Çalışmalar başladı - Fanatik</a><div style="margin-top:4px;display:flex;gap:6px;align-items:center"><span style='font-size:10px;padding:1px 6px;border-radius:3px;font-weight:700;color:#2563eb;background:#dbeafe'>Google News</span><span style="font-size:11px;color:var(--muted)">Fanatik</span></div></div>
 </div>
       <a class="see-more" href="news_intelligence_dashboard_2025_2026.html">Tüm haberleri gör →</a>
     </div>
@@ -139,7 +143,6 @@
       <div style="display:flex;flex-direction:column;gap:7px">
         <a href="transfer_season_context_2025_2026.html" style="color:var(--green);text-decoration:none">→ Serbest kalacak oyuncular</a>
         <a href="transfer_recommendation_report_2025_2026.html" style="color:var(--green);text-decoration:none">→ Takım transfer önerileri</a>
-        <a href="source_performance_2025_2026.html" style="color:var(--green);text-decoration:none">→ Erken haber kaynak skoru</a>
         <a href="all_teams_preview_dashboard_2025_2026.html" style="color:var(--green);text-decoration:none">→ Maç önü arşivi (2025/26)</a>
         <a href="football_command_center_2025_2026.html" style="color:var(--green);text-decoration:none">→ Komuta merkezi</a>
         <a href="football_intelligence_home.html" style="color:var(--green);text-decoration:none">→ Tüm araçlar</a>

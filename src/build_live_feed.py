@@ -162,12 +162,16 @@ def build_html() -> str:
   :root{{--bg:#f3f5f4;--panel:#fff;--ink:#132018;--muted:#627067;--line:#d7ded9;--dark:#091810;--green:#116447;--lime:#cde94e}}
   *{{box-sizing:border-box;margin:0;padding:0}}
   body{{font-family:Inter,'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--ink)}}
-  .topbar{{min-height:62px;padding:0 clamp(14px,3vw,32px);display:flex;align-items:center;justify-content:space-between;gap:18px;background:var(--dark)}}
-  .brand{{display:flex;align-items:center;gap:10px;color:white;text-decoration:none;font-size:18px;font-weight:800}}
-  .brand b{{width:29px;height:29px;border-radius:7px;display:grid;place-items:center;color:var(--dark);background:var(--lime);font-size:14px}}
-  .topnav{{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}}
+  .topbar{{min-height:58px;padding:0 clamp(14px,3vw,32px);display:flex;align-items:center;justify-content:space-between;gap:18px;background:var(--dark);border-bottom:2px solid #1a3023}}
+  .brand{{display:flex;align-items:center;gap:10px;color:white;text-decoration:none;font-size:18px;font-weight:800;letter-spacing:-0.2px}}
+  .brand:visited,.brand:active,.brand:hover{{color:white}}
+  .brand b{{width:28px;height:28px;border-radius:6px;display:grid;place-items:center;color:var(--dark);background:var(--lime);font-size:14px;font-weight:900}}
+  .brand .slbl{{color:#6b7c72;font-size:11px;font-weight:500;border-left:1px solid #2a3d30;padding-left:8px;margin-left:2px}}
+  .topnav{{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}}
   .topnav::-webkit-scrollbar{{display:none}}
-  .topnav a{{white-space:nowrap;color:#d5ded8;padding:9px 10px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600}}
+  .topnav a{{white-space:nowrap;color:#8fa89a;padding:8px 11px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600;transition:background .15s,color .15s}}
+  .topnav a:visited{{color:#8fa89a}}
+  .topnav a:hover{{background:#162b20;color:white}}
   .topnav a.active{{background:#162b20;color:white}}
   .window-banner{{padding:10px clamp(14px,3vw,32px);color:#d1fae5;font-size:13px;display:flex;align-items:center;gap:10px}}
   .window-dot{{width:8px;height:8px;border-radius:50%;flex-shrink:0;animation:pulse 2s infinite}}
@@ -185,9 +189,9 @@ def build_html() -> str:
 </head>
 <body>
 <div class="topbar">
-  <a class="brand" href="gundem_{SEASON}.html"><b>11</b> metric11</a>
+  <a class="brand" href="/"><b>11</b> metric11<span class="slbl">S&#xfc;per Lig {SEASON_LABEL}</span></a>
   <nav class="topnav">
-    <a class="active" href="gundem_{SEASON}.html">Gündem</a>
+    <a class="active" href="/">G&#xfc;ndem</a>
     <a href="transfer_tracker_{SEASON}.html">Transferler</a>
     <a href="all_teams_preview_dashboard_{SEASON}.html">Maç Önü</a>
     <a href="transfer_recommendation_report_{SEASON}.html">Scout</a>
@@ -225,7 +229,6 @@ def build_html() -> str:
       <div style="display:flex;flex-direction:column;gap:7px">
         <a href="transfer_season_context_{SEASON}.html" style="color:var(--green);text-decoration:none">→ Serbest kalacak oyuncular</a>
         <a href="transfer_recommendation_report_{SEASON}.html" style="color:var(--green);text-decoration:none">→ Takım transfer önerileri</a>
-        <a href="source_performance_{SEASON}.html" style="color:var(--green);text-decoration:none">→ Erken haber kaynak skoru</a>
         <a href="all_teams_preview_dashboard_{SEASON}.html" style="color:var(--green);text-decoration:none">→ Maç önü arşivi (2025/26)</a>
         <a href="football_command_center_{SEASON}.html" style="color:var(--green);text-decoration:none">→ Komuta merkezi</a>
         <a href="football_intelligence_home.html" style="color:var(--green);text-decoration:none">→ Tüm araçlar</a>

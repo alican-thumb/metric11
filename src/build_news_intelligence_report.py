@@ -144,20 +144,24 @@ def build_html(intel: dict) -> str:
   a:hover {{ text-decoration: underline; }}
   .mv-badge {{ color: #fbbf24; font-weight: 600; }}
   .empty {{ color: #475569; font-size: 0.85rem; padding: 20px 0; text-align: center; }}
-  .topbar{{min-height:54px;padding:0 clamp(12px,3vw,28px);display:flex;align-items:center;justify-content:space-between;gap:16px;background:#091810;position:sticky;top:0;z-index:10}}
-  .topbar a.brand{{display:flex;align-items:center;gap:8px;color:white;text-decoration:none;font-size:17px;font-weight:800}}
-  .topbar a.brand b{{width:26px;height:26px;border-radius:6px;display:grid;place-items:center;color:#091810;background:#cde94e;font-size:13px}}
+  .topbar{{min-height:58px;padding:0 clamp(12px,3vw,28px);display:flex;align-items:center;justify-content:space-between;gap:16px;background:#091810;position:sticky;top:0;z-index:10;border-bottom:2px solid #1a3023}}
+  .topbar a.brand{{display:flex;align-items:center;gap:10px;color:white;text-decoration:none;font-size:18px;font-weight:800;letter-spacing:-0.2px}}
+  .topbar a.brand:visited,.topbar a.brand:active,.topbar a.brand:hover{{color:white}}
+  .topbar a.brand b{{width:28px;height:28px;border-radius:6px;display:grid;place-items:center;color:#091810;background:#cde94e;font-size:14px;font-weight:900}}
+  .topbar a.brand .slbl{{color:#6b7c72;font-size:11px;font-weight:500;border-left:1px solid #2a3d30;padding-left:8px;margin-left:2px}}
   .topnav{{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}}
   .topnav::-webkit-scrollbar{{display:none}}
-  .topnav a{{white-space:nowrap;color:#d5ded8;padding:8px 10px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600}}
+  .topnav a{{white-space:nowrap;color:#8fa89a;padding:8px 11px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600;transition:background .15s,color .15s}}
+  .topnav a:visited{{color:#8fa89a}}
+  .topnav a:hover{{background:#162b20;color:white}}
   .topnav a.active{{background:#162b20;color:white}}
 </style>
 </head>
 <body>
 <div class="topbar">
-  <a class="brand" href="gundem_2025_2026.html"><b>11</b> metric11</a>
+  <a class="brand" href="/"><b>11</b> metric11<span class="slbl">S&#xfc;per Lig 2025/26</span></a>
   <nav class="topnav">
-    <a href="gundem_2025_2026.html">Gündem</a>
+    <a href="/">G&#xfc;ndem</a>
     <a href="transfer_tracker_2025_2026.html">Transferler</a>
     <a href="all_teams_preview_dashboard_2025_2026.html">Maç Önü</a>
     <a href="transfer_recommendation_report_2025_2026.html">Scout</a>

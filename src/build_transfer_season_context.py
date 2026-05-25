@@ -409,7 +409,20 @@ def main() -> None:
         "a{color:#60a5fa}table td,table th{padding:8px 4px;text-align:left}",
         "tr:hover{background:#1e293b22}</style>",
         "</head><body>",
-        "<div style='min-height:54px;padding:0 clamp(12px,3vw,28px);display:flex;align-items:center;justify-content:space-between;gap:16px;background:#091810;position:sticky;top:0;z-index:10'><a style='display:flex;align-items:center;gap:8px;color:white;text-decoration:none;font-size:17px;font-weight:800' href='gundem_2025_2026.html'><b style='width:26px;height:26px;border-radius:6px;display:grid;place-items:center;color:#091810;background:#cde94e;font-size:13px'>11</b> metric11</a><nav style='display:flex;gap:2px;overflow-x:auto;scrollbar-width:none'><a style='white-space:nowrap;color:#d5ded8;padding:8px 10px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600' href='gundem_2025_2026.html'>Gündem</a><a style='white-space:nowrap;color:#d5ded8;padding:8px 10px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600' href='transfer_tracker_2025_2026.html'>Transferler</a><a style='white-space:nowrap;color:#d5ded8;padding:8px 10px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600' href='all_teams_preview_dashboard_2025_2026.html'>Maç Önü</a><a style='white-space:nowrap;color:#d5ded8;padding:8px 10px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600' href='transfer_recommendation_report_2025_2026.html'>Scout</a><a style='white-space:nowrap;background:#162b20;color:white;padding:8px 10px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600' href='transfer_season_context_2025_2026.html'>Transfer Sezonu</a><a style='white-space:nowrap;color:#d5ded8;padding:8px 10px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600' href='football_intelligence_home.html'>Analiz</a></nav></div>",
+        "<div style='min-height:58px;padding:0 clamp(12px,3vw,28px);display:flex;align-items:center;justify-content:space-between;gap:16px;background:#091810;position:sticky;top:0;z-index:10;border-bottom:2px solid #1a3023'>"
+        "<a style='display:flex;align-items:center;gap:10px;color:white;text-decoration:none;font-size:18px;font-weight:800;letter-spacing:-0.2px' href='/'>"
+        "<b style='width:28px;height:28px;border-radius:6px;display:grid;place-items:center;color:#091810;background:#cde94e;font-size:14px;font-weight:900'>11</b>"
+        " metric11"
+        "<span style='color:#6b7c72;font-size:11px;font-weight:500;border-left:1px solid #2a3d30;padding-left:8px;margin-left:2px'>S&#xfc;per Lig 2025/26</span>"
+        "</a>"
+        "<nav style='display:flex;gap:2px;overflow-x:auto;scrollbar-width:none'>"
+        "<a style='white-space:nowrap;color:#8fa89a;padding:8px 11px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600' href='/'>G&#xfc;ndem</a>"
+        "<a style='white-space:nowrap;color:#8fa89a;padding:8px 11px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600' href='transfer_tracker_2025_2026.html'>Transferler</a>"
+        "<a style='white-space:nowrap;color:#8fa89a;padding:8px 11px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600' href='all_teams_preview_dashboard_2025_2026.html'>Ma&#xe7; &#xd6;n&#xfc;</a>"
+        "<a style='white-space:nowrap;color:#8fa89a;padding:8px 11px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600' href='transfer_recommendation_report_2025_2026.html'>Scout</a>"
+        "<a style='white-space:nowrap;background:#162b20;color:white;padding:8px 11px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600' href='transfer_season_context_2025_2026.html'>Transfer Sezonu</a>"
+        "<a style='white-space:nowrap;color:#8fa89a;padding:8px 11px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600' href='football_intelligence_home.html'>Analiz</a>"
+        "</nav></div>",
         "<div style='max-width:1100px;margin:0 auto'>",
         _header_section(),
         _summary_bar(free_agents, final_year, signals, promotions),

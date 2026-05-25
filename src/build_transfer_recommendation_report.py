@@ -483,12 +483,16 @@ def build_html(report: dict) -> str:
 <style>
   * {{ box-sizing: border-box; margin: 0; padding: 0; }}
   body {{ font-family: Inter, 'Segoe UI', Arial, sans-serif; background: #07150e; color: #e2e8f0; min-height: 100vh; }}
-  .topbar {{ min-height:62px; padding:0 clamp(14px,3vw,32px); display:flex; align-items:center; justify-content:space-between; gap:18px; background:#091810; border-bottom:1px solid #203328; }}
-  .brand {{ display:flex; align-items:center; gap:10px; color:#fff; text-decoration:none; font-size:18px; font-weight:800; }}
-  .brand b {{ width:29px; height:29px; border-radius:7px; display:grid; place-items:center; color:#091810; background:#cde94e; font-size:14px; }}
-  .topnav {{ display:flex; gap:4px; overflow-x:auto; overflow-y:hidden; -webkit-overflow-scrolling:touch; scrollbar-width:none; }}
+  .topbar {{ min-height:58px; padding:0 clamp(14px,3vw,32px); display:flex; align-items:center; justify-content:space-between; gap:18px; background:#091810; border-bottom:2px solid #1a3023; }}
+  .brand {{ display:flex; align-items:center; gap:10px; color:#fff; text-decoration:none; font-size:18px; font-weight:800; letter-spacing:-0.2px; }}
+  .brand:visited,.brand:active,.brand:hover {{ color:#fff; }}
+  .brand b {{ width:28px; height:28px; border-radius:6px; display:grid; place-items:center; color:#091810; background:#cde94e; font-size:14px; font-weight:900; }}
+  .brand .slbl {{ color:#6b7c72; font-size:11px; font-weight:500; border-left:1px solid #2a3d30; padding-left:8px; margin-left:2px; }}
+  .topnav {{ display:flex; gap:2px; overflow-x:auto; overflow-y:hidden; -webkit-overflow-scrolling:touch; scrollbar-width:none; }}
   .topnav::-webkit-scrollbar {{ display:none; }}
-  .topnav a {{ color:#d5ded8; text-decoration:none; font-size:13px; font-weight:600; white-space:nowrap; flex-shrink:0; padding:9px 10px; border-radius:6px; }}
+  .topnav a {{ color:#8fa89a; text-decoration:none; font-size:13px; font-weight:600; white-space:nowrap; flex-shrink:0; padding:8px 11px; border-radius:6px; transition:background .15s,color .15s; }}
+  .topnav a:visited {{ color:#8fa89a; }}
+  .topnav a:hover {{ background:#162b20; color:#fff; }}
   .topnav a.active {{ background:#162b20; color:#fff; }}
   .header {{ background:#102419; border-bottom:3px solid #116447; padding:24px clamp(14px,3vw,32px); }}
   .header h1 {{ font-size: 1.6rem; font-weight: 700; color: #f8fafc; }}
@@ -545,8 +549,8 @@ def build_html(report: dict) -> str:
 </head>
 <body>
 <div class="topbar">
-  <a class="brand" href="gundem_2025_2026.html"><b>11</b> metric11</a>
-  <nav class="topnav"><a href="gundem_2025_2026.html">Gündem</a><a href="transfer_tracker_2025_2026.html">Transferler</a><a href="all_teams_preview_dashboard_2025_2026.html">Maç Önü</a><a class="active" href="transfer_recommendation_report_2025_2026.html">Scout</a><a href="football_intelligence_home.html">Analiz</a></nav>
+  <a class="brand" href="/"><b>11</b> metric11<span class="slbl">S&#xfc;per Lig 2025/26</span></a>
+  <nav class="topnav"><a href="/">G&#xfc;ndem</a><a href="transfer_tracker_2025_2026.html">Transferler</a><a href="all_teams_preview_dashboard_2025_2026.html">Ma&#xe7; &#xd6;n&#xfc;</a><a class="active" href="transfer_recommendation_report_2025_2026.html">Scout</a><a href="football_intelligence_home.html">Analiz</a></nav>
 </div>
 <div class="header">
   <h1>Scout ve transfer merkezi</h1>

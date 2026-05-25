@@ -143,14 +143,14 @@ def build_html(summary: dict, previews: list[dict], goal_backtest: dict, team_na
       position: sticky;
       top: 0;
       z-index: 5;
-      min-height: 62px;
+      min-height: 58px;
       padding: 0 clamp(14px, 3vw, 32px);
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 18px;
       background: var(--dark);
-      border-bottom: 1px solid #203328;
+      border-bottom: 2px solid #1a3023;
     }}
     .brand {{
       display: flex;
@@ -160,29 +160,36 @@ def build_html(summary: dict, previews: list[dict], goal_backtest: dict, team_na
       text-decoration: none;
       font-weight: 800;
       font-size: 18px;
+      letter-spacing: -0.2px;
     }}
+    .brand:visited,.brand:active,.brand:hover {{ color: white; }}
     .brand b {{
       display: grid;
       place-items: center;
-      width: 29px;
-      height: 29px;
-      border-radius: 7px;
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
       color: var(--dark);
       background: var(--lime);
       font-size: 14px;
+      font-weight: 900;
     }}
-    .topnav {{ display: flex; gap: 4px; overflow-x: auto; overflow-y: hidden; -webkit-overflow-scrolling: touch; scrollbar-width: none; }}
+    .brand .slbl {{ color:#6b7c72; font-size:11px; font-weight:500; border-left:1px solid #2a3d30; padding-left:8px; margin-left:2px; }}
+    .topnav {{ display: flex; gap: 2px; overflow-x: auto; overflow-y: hidden; -webkit-overflow-scrolling: touch; scrollbar-width: none; }}
     .topnav::-webkit-scrollbar {{ display: none; }}
     .topnav a {{
       white-space: nowrap;
       flex-shrink: 0;
-      color: #d5ded8;
-      padding: 9px 10px;
+      color: #8fa89a;
+      padding: 8px 11px;
       border-radius: 6px;
       text-decoration: none;
       font-size: 13px;
       font-weight: 600;
+      transition: background .15s, color .15s;
     }}
+    .topnav a:visited {{ color: #8fa89a; }}
+    .topnav a:hover {{ background: #162b20; color: white; }}
     .topnav a.active {{ background: #162b20; color: white; }}
     header {{
       background: #102419;
@@ -344,9 +351,9 @@ def build_html(summary: dict, previews: list[dict], goal_backtest: dict, team_na
 </head>
 <body>
   <div class="topbar">
-    <a class="brand" href="gundem_2025_2026.html"><b>11</b> metric11</a>
+    <a class="brand" href="/"><b>11</b> metric11<span class="slbl">S&#xfc;per Lig 2025/26</span></a>
     <nav class="topnav">
-      <a href="gundem_2025_2026.html">Gündem</a>
+      <a href="/">G&#xfc;ndem</a>
       <a href="transfer_tracker_2025_2026.html">Transferler</a>
       <a class="active" href="all_teams_preview_dashboard_2025_2026.html">Maç Önü</a>
       <a href="transfer_recommendation_report_2025_2026.html">Scout</a>

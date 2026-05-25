@@ -15,12 +15,16 @@
   :root { --bg:#f3f5f4; --panel:#fff; --ink:#132018; --muted:#627067; --line:#d7ded9; --dark:#091810; --green:#116447; --lime:#cde94e; --red:#bd2936; --amber:#aa6b00; --blue:#22618c; }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: Inter, 'Segoe UI', Arial, sans-serif; background:var(--bg); color:var(--ink); }
-  .topbar { min-height:62px; padding:0 clamp(14px,3vw,32px); display:flex; align-items:center; justify-content:space-between; gap:18px; background:var(--dark); color:white; }
-  .brand { display:flex; align-items:center; gap:10px; color:white; text-decoration:none; font-size:18px; font-weight:800; }
-  .brand b { width:29px; height:29px; border-radius:7px; display:grid; place-items:center; color:var(--dark); background:var(--lime); font-size:14px; }
-  .topnav { display:flex; gap:4px; overflow-x:auto; overflow-y:hidden; -webkit-overflow-scrolling:touch; scrollbar-width:none; }
+  .topbar { min-height:58px; padding:0 clamp(14px,3vw,32px); display:flex; align-items:center; justify-content:space-between; gap:18px; background:var(--dark); color:white; border-bottom:2px solid #1a3023; }
+  .brand { display:flex; align-items:center; gap:10px; color:white; text-decoration:none; font-size:18px; font-weight:800; letter-spacing:-0.2px; }
+  .brand:visited,.brand:active,.brand:hover { color:white; }
+  .brand b { width:28px; height:28px; border-radius:6px; display:grid; place-items:center; color:var(--dark); background:var(--lime); font-size:14px; font-weight:900; }
+  .brand .slbl { color:#6b7c72; font-size:11px; font-weight:500; border-left:1px solid #2a3d30; padding-left:8px; margin-left:2px; }
+  .topnav { display:flex; gap:2px; overflow-x:auto; overflow-y:hidden; -webkit-overflow-scrolling:touch; scrollbar-width:none; }
   .topnav::-webkit-scrollbar { display:none; }
-  .topnav a { white-space:nowrap; flex-shrink:0; color:#d5ded8; padding:9px 10px; border-radius:6px; text-decoration:none; font-size:13px; font-weight:600; }
+  .topnav a { white-space:nowrap; flex-shrink:0; color:#8fa89a; padding:8px 11px; border-radius:6px; text-decoration:none; font-size:13px; font-weight:600; transition:background .15s,color .15s; }
+  .topnav a:visited { color:#8fa89a; }
+  .topnav a:hover { background:#162b20; color:white; }
   .topnav a.active { background:#162b20; color:white; }
   .header { background:#102419; border-bottom:3px solid var(--green); padding:24px clamp(14px,3vw,32px); }
   .header-inner { max-width:1400px; margin:0 auto; }
@@ -64,8 +68,8 @@
 </head>
 <body>
 <div class="topbar">
-  <a class="brand" href="gundem_2025_2026.html"><b>11</b> metric11</a>
-  <nav class="topnav"><a href="gundem_2025_2026.html">Gündem</a><a href="transfer_tracker_2025_2026.html">Transferler</a><a class="active" href="all_teams_preview_dashboard_2025_2026.html">Maç Önü</a><a href="transfer_recommendation_report_2025_2026.html">Scout</a><a href="football_intelligence_home.html">Analiz</a></nav>
+  <a class="brand" href="/"><b>11</b> metric11<span class="slbl">S&#xfc;per Lig 2025/26</span></a>
+  <nav class="topnav"><a href="/">G&#xfc;ndem</a><a href="transfer_tracker_2025_2026.html">Transferler</a><a class="active" href="all_teams_preview_dashboard_2025_2026.html">Ma&#xe7; &#xd6;n&#xfc;</a><a href="transfer_recommendation_report_2025_2026.html">Scout</a><a href="football_intelligence_home.html">Analiz</a></nav>
 </div>
 <div class="header">
   <div class="header-inner"><h1>Süper Lig maç merkezi</h1>
