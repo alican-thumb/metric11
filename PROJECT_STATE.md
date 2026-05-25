@@ -1,6 +1,6 @@
 # Futbol İstihbarat Platformu - Proje Durumu
 
-Son güncelleme: 2026-05-25
+Son güncelleme: 2026-05-25 (session 2)
 
 ## Amaç
 
@@ -1320,3 +1320,69 @@ Bir sonraki oturumda önce `PROJECT_STATE.md` okunmalı. Ardından öncelik:
 - Mevcut olgunlaşmış örneklerde medya, Telegram ve açık muhabir atfı kanal özetleri teyide dönüşmemiş sinyalleri yanlış-alarm vekili olarak gösterir; bu oran kesin yanlış haber kararı değildir.
 - Kaynak performansı ürün ekranına uygun bir yüzey olmadığı için HTML paneli kaldırıldı. İç çıktılar `data/processed/source_performance_2025_2026.{json,md}` ve `source_claim_history_2025_2026.json` olarak günlük pipeline içinde tutulur; ürün ana sayfası, komuta merkezi ve gündem ekranı bu iç rapora link vermez.
 - Doğrulama: `python -m compileall -q src tests`, `python -m unittest discover -s tests -p 'test_*.py'` ve `git diff --check` başarılı; birim test paketi `36/36` geçer.
+
+## 2026-05-25 (Session 2) — Site Kalitesi, Nav Tutarlılığı, Analiz Odağı
+
+### Transfer Penceresi 3-State Banner
+
+- `src/build_live_feed.py`: `WINDOW_OPEN_DATE = 2026-06-01`, `WINDOW_CLOSE_DATE = 2026-09-01` tanımlandı.
+- `_window_state()` fonksiyonu 3 durum döndürür: `countdown` (mavi, geri sayım) → `open` (yeşil, kaç gün kaldı) → `closed` (gri).
+- Banner rengi ve nokta rengi inline style olarak dinamik üretiliyor; her GitHub Actions çalışmasında otomatik geçiş yaşanacak.
+- Şu anki durum (2026-05-25): "Transfer penceresi 6 gün sonra açılıyor" — mavi banner.
+
+### Header/Nav Kalite Düzeltmeleri (Tüm Sayfalar)
+
+- Tarayıcının varsayılan mor (`:visited`) ve kırmızı (`:active`) link renklerini ezmek için tüm sayfalara `.brand:visited, .brand:active { color: white }` ve `nav a:visited { color: #8fa89a }` kuralları eklendi.
+- Logo ve "Gündem" nav linkleri `href="gundem_2025_2026.html"` → `href="/"` olarak güncellendi (URL temiz kalıyor).
+- Topbar yüksekliği 62px → 58px; `border-bottom: 2px solid #1a3023` ile görsel ayırıcı eklendi.
+- Nav link rengi `#d5ded8` → `#8fa89a` (daha dengeli kontrast); hover/active durumu `#162b20` arka plan + beyaz yazı.
+- Logo yanına `| Süper Lig 2025/26` sezon etiketi eklendi — tüm sayfalarda tutarlı.
+- Etkilenen kaynak dosyalar: `html_utils.py`, `build_live_feed.py`, `build_dashboard.py`, `build_all_teams_preview_dashboard.py`, `build_news_intelligence_report.py`, `build_transfer_season_context.py`, `build_transfer_recommendation_report.py`, `build_transfer_tracker.py`, `build_command_center.py`, `build_product_home.py`.
+
+### Beşiktaş Odaklı İçeriklerin Kaldırılması
+
+- `build_product_home.py` hero bölümündeki "Beşiktaş maç odası" butonu kaldırıldı; yerine "Maç Önü Arşivi" (18 takım, `all_teams_preview_dashboard`) geldi.
+- "Beşiktaş Maç Önü Zeka Paneli" kartı → "Tüm Takım Maç Önü Arşivi" olarak genelleştirildi.
+- `build_product_home.py` artık `index.html` üretmiyor (vercel.json rewrite yeterli). Eski `data/processed/index.html` git'ten silindi.
+- `football_command_center` header'ındaki "Beşiktaş maç önü raporları" metni henüz güncellenmedi (düşük öncelik).
+
+### Nav Standardizasyonu (5-Item Sabit Nav)
+
+- Denetim sonucu: `transfer_tracker` ve `football_command_center` kaçmış; `#d5ded8` rengi, 62px yükseklik, `gundem_2025_2026.html` logosu vardı.
+- `build_transfer_tracker.py` ve `build_command_center.py` güncellendi: 58px, `#8fa89a`, `/` logo, season etiket.
+- `news_intelligence_dashboard`: "Haberler" extra nav item kaldırıldı; active = Gündem (haberler Gündem'in alt sayfası).
+- `transfer_season_context`: "Transfer Sezonu" extra nav item kaldırıldı; active = Transferler.
+- Tüm 8 ana sayfa artık aynı 5-item nav kullanıyor: Gündem → Transferler → Maç Önü → Scout → Analiz.
+
+### Haber Tarih Filtresi
+
+- `collect_news_google.py`: `MAX_AGE_DAYS = 14`; collector seviyesinde 14 günden eski haberler drop ediliyor.
+- `collect_news_telegram.py`: Aynı `MAX_AGE_DAYS = 14` filtresi eklendi.
+- `analyze_news_with_claude.py`: `recent_articles` listesi 14 gün cutoff ile ek filtreleniyor.
+- Motivasyon: 9 aylık Kayseri haberi gibi çok eski içeriklerin gündem sayfasına sızması engellendi.
+
+### Haber Kartlarına Yaş Etiketi
+
+- `build_live_feed.py`: `_fmt_date()` fonksiyonu eklendi.
+- Her haber kartında sağda "2sa", "dün", "4g önce", "az önce" formatında yaş etiketi gösteriliyor.
+- Türkçe tarih formatı (ör. "21.5.2026") ile ISO 8601 formatı her ikisi de destekleniyor.
+
+### Analiz Odaklı Ana Sayfa Yeniden Yapısı
+
+- Ürün kimliği: haber sitesi değil, analiz/tahmin/transfer öneri platformu.
+- `build_live_feed.py` layout değişti:
+  - **Sol sütun**: Transferler paneli üste (öne çıktı) → altında "Haber Sinyalleri" (12'den 6'ya indirildi, ikincil konum).
+  - **Sağ sütun**: Kategorili "Analiz Platformu" paneli — "Transfer & Kadro" / "Maç & Tahmin" / "Tüm Araçlar" başlıkları.
+- "Son Haberler" → "Haber Sinyalleri" olarak yeniden adlandırıldı (haberler veri sinyali, ürün değil).
+
+### Diğer
+
+- `.env.template` commit edildi: `API_FOOTBALL_KEY`, `ANTHROPIC_API_KEY`, `X_BEARER_TOKEN` vb. boş şablon; gerçek key içermiyor.
+- `transfer_tracker_2025_2026.json` uncommitted: yalnız `generated_at` timestamp farkı, pipeline bir sonraki çalışmasında güncellenecek.
+
+### Eksikler / Sıradaki
+
+- `football_command_center` header metni hâlâ Beşiktaş'a özgü (düşük öncelik).
+- Secondary/utility sayfalar (14 adet: `fm_style_scout`, `league_intelligence`, `position_scout_matrix` vb.) topbar yok — ileriki adımda eklenebilir.
+- Transfer penceresi "açık" modu 1 Haziran'da otomatik devreye girecek; manuel test yapılmadı.
+- `og-image.svg` tagline güncellemesi yapılmadı (mevcut: "Maç Tahminleri · Scout · Transfer İstihbaratı").
