@@ -51,6 +51,11 @@ def build_search_queries() -> list[tuple[str, str]]:
             ("Süper Lig teknik direktör", "transfer"),
             ("Süper Lig bonservis imza", "transfer"),
             ("Süper Lig sakat cezalı", "injury"),
+            ("Yağız Sabuncuoğlu transfer", "transfer"),
+            ("Ertan Süzgün transfer", "transfer"),
+            ("Sports Digitale transfer", "transfer"),
+            ("Yakın Takip transfer", "transfer"),
+            ("Ekrem Konur Süper Lig transfer", "transfer"),
         ]
     )
     return queries
@@ -83,7 +88,7 @@ def _parse_entry(entry: object, query: str, category: str) -> dict | None:
     article_id = hashlib.md5(link.encode()).hexdigest()[:12]
     return {
         "article_id": article_id,
-        "source_type": "rss",
+        "source_type": "google_news",
         "source_name": source_title or "Google News",
         "source_url": link,
         "title": title,

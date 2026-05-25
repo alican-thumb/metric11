@@ -536,6 +536,7 @@ def build_intelligence(articles: list[dict], player_index: dict) -> dict:
             "source": a["source_name"],
             "source_type": a.get("source_type", "rss"),
             "account_type": a.get("account_type"),
+            "query": a.get("query"),
             "source_tier": _source_tier(a),
             "published_at": a.get("published_at"),
             "summary_tr": ca.get("summary_tr", a.get("summary", ""))[:200],
@@ -651,6 +652,9 @@ def _build_transfer_claim(rows: list[dict]) -> dict:
         {
             "source": row.get("source"),
             "source_tier": row.get("source_tier"),
+            "source_type": row.get("source_type"),
+            "account_type": row.get("account_type"),
+            "query": row.get("query"),
             "title": row.get("title"),
             "link": row.get("link"),
             "published_at": row.get("published_at"),

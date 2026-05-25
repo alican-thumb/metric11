@@ -19,6 +19,7 @@ WINDOW_DATE = datetime(2026, 6, 1, tzinfo=timezone.utc)
 SOURCE_COLORS = {
     "official_club": ("#16a34a", "#dcfce7", "Resmi Kulüp"),
     "rss":           ("#2563eb", "#dbeafe", "Basın"),
+    "google_news":   ("#2563eb", "#dbeafe", "Google News"),
     "twitter":       ("#7c3aed", "#ede9fe", "Twitter"),
     "telegram":      ("#0e7490", "#cffafe", "Telegram"),
     "official":      ("#16a34a", "#dcfce7", "Resmi"),
@@ -199,6 +200,7 @@ def build_html() -> str:
       <div style="display:flex;flex-direction:column;gap:7px">
         <a href="transfer_season_context_{SEASON}.html" style="color:var(--green);text-decoration:none">→ Serbest kalacak oyuncular</a>
         <a href="transfer_recommendation_report_{SEASON}.html" style="color:var(--green);text-decoration:none">→ Takım transfer önerileri</a>
+        <a href="source_performance_{SEASON}.html" style="color:var(--green);text-decoration:none">→ Erken haber kaynak skoru</a>
         <a href="all_teams_preview_dashboard_{SEASON}.html" style="color:var(--green);text-decoration:none">→ Maç önü arşivi (2025/26)</a>
         <a href="football_command_center_{SEASON}.html" style="color:var(--green);text-decoration:none">→ Komuta merkezi</a>
         <a href="football_intelligence_home.html" style="color:var(--green);text-decoration:none">→ Tüm araçlar</a>
@@ -214,13 +216,6 @@ def build_html() -> str:
 def main() -> None:
     html = build_html()
     OUTPUT_HTML.write_text(html, encoding="utf-8")
-    # index.html'i gündem sayfasına yönlendir
-    redirect = PROCESSED_DIR / "index.html"
-    redirect.write_text(f"""<!DOCTYPE html>
-<html><head><meta charset="UTF-8">
-<meta http-equiv="refresh" content="0;url=gundem_{SEASON}.html">
-<title>metric11</title></head>
-<body><a href="gundem_{SEASON}.html">Yükleniyor…</a></body></html>""", encoding="utf-8")
     print(OUTPUT_HTML)
 
 

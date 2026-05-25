@@ -244,6 +244,7 @@ def build_html(payload: dict) -> str:
       <a href="position_scout_matrix_2025_2026.html">Pozisyon Scout</a>
       <a href="api_football_super_lig_deep_2024_analysis.html">Dış Derin Veri</a>
       <a href="source_watchlist_2025_2026.html">Kaynak Radarı</a>
+      <a href="source_performance_2025_2026.html">Kaynak Performansı</a>
       <a href="player_alias_quality_2025_2026.html">Alias Kalitesi</a>
       <a href="besiktas_team_needs_2025_2026_dashboard.html">Takım İhtiyacı</a>
       <a href="data_catalog_2025_2026.html">Veri Kataloğu</a>
