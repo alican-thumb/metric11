@@ -14,7 +14,6 @@ TEAM_DISPLAY_NAMES: dict[str, str] = {
     "fenerbahce": "Fenerbahçe",
     "trabzonspor": "Trabzonspor",
     "basaksehir": "Başakşehir",
-    "alanyaspor": "Alanyaspor",
     "samsunspor": "Samsunspor",
     "goztepe": "Göztepe",
     "konyaspor": "Konyaspor",
@@ -24,9 +23,10 @@ TEAM_DISPLAY_NAMES: dict[str, str] = {
     "kocaelispor": "Kocaelispor",
     "eyupspor": "Eyüpspor",
     "genclerbirligi": "Gençlerbirliği",
-    "karagumruk": "Karagümrük",
-    "antalyaspor": "Antalyaspor",
     "kayserispor": "Kayserispor",
+    "corumfk": "Çorum FK",
+    "erzurumspor": "Erzurumspor FK",
+    "amed": "Amed SFK",
 }
 
 

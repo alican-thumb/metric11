@@ -15,7 +15,6 @@ ALL_TEAMS = [
     "FENERBAHÇE A.Ş.",
     "TRABZONSPOR A.Ş.",
     "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ",
-    "CORENDON ALANYASPOR",
     "SAMSUNSPOR A.Ş.",
     "GÖZTEPE A.Ş.",
     "TÜMOSAN KONYASPOR",
@@ -25,9 +24,10 @@ ALL_TEAMS = [
     "KOCAELİSPOR",
     "İKAS EYÜPSPOR",
     "GENÇLERBİRLİĞİ",
-    "MISIRLI.COM.TR FATİH KARAGÜMRÜK",
-    "HESAP.COM ANTALYASPOR",
     "ZECORNER KAYSERİSPOR",
+    "ÇORUM FK",
+    "ERZURUMSPOR FK",
+    "AMED SFK",
 ]
 
 
@@ -41,7 +41,6 @@ _TEAM_SLUGS: dict[str, str] = {
     "FENERBAHÇE A.Ş.": "fenerbahce",
     "TRABZONSPOR A.Ş.": "trabzonspor",
     "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ": "basaksehir",
-    "CORENDON ALANYASPOR": "alanyaspor",
     "SAMSUNSPOR A.Ş.": "samsunspor",
     "GÖZTEPE A.Ş.": "goztepe",
     "TÜMOSAN KONYASPOR": "konyaspor",
@@ -51,9 +50,10 @@ _TEAM_SLUGS: dict[str, str] = {
     "KOCAELİSPOR": "kocaelispor",
     "İKAS EYÜPSPOR": "eyupspor",
     "GENÇLERBİRLİĞİ": "genclerbirligi",
-    "MISIRLI.COM.TR FATİH KARAGÜMRÜK": "karagumruk",
-    "HESAP.COM ANTALYASPOR": "antalyaspor",
     "ZECORNER KAYSERİSPOR": "kayserispor",
+    "ÇORUM FK": "corumfk",
+    "ERZURUMSPOR FK": "erzurumspor",
+    "AMED SFK": "amed",
 }
 
 
