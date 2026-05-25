@@ -262,13 +262,9 @@ def build_html() -> str:
         <a href="transfer_tracker_{SEASON}.html" style="color:var(--green);text-decoration:none">&#x2192; Transfer takip listesi</a>
       </div>
       <div style="font-size:10px;font-weight:700;color:var(--muted);letter-spacing:.06em;margin-bottom:6px;text-transform:uppercase">Ma&#xe7; &amp; Tahmin</div>
-      <div style="display:flex;flex-direction:column;gap:7px;margin-bottom:14px">
-        <a href="all_teams_preview_dashboard_{SEASON}.html" style="color:var(--green);text-decoration:none;font-weight:600">&#x2192; Ma&#xe7; &#xf6;n&#xfc; ar&#x15f;ivi (18 tak&#x131;m)</a>
-        <a href="football_command_center_{SEASON}.html" style="color:var(--green);text-decoration:none">&#x2192; Analiz merkezi</a>
-      </div>
-      <div style="font-size:10px;font-weight:700;color:var(--muted);letter-spacing:.06em;margin-bottom:6px;text-transform:uppercase">T&#xfc;m Ara&#xe7;lar</div>
       <div style="display:flex;flex-direction:column;gap:7px">
-        <a href="football_intelligence_home.html" style="color:var(--green);text-decoration:none">&#x2192; Platform ana sayfas&#x131;</a>
+        <a href="all_teams_preview_dashboard_{SEASON}.html" style="color:var(--green);text-decoration:none;font-weight:600">&#x2192; Ma&#xe7; &#xf6;n&#xfc; ar&#x15f;ivi (18 tak&#x131;m)</a>
+        <a href="football_intelligence_home.html" style="color:var(--green);text-decoration:none">&#x2192; T&#xfc;m analiz ara&#xe7;lar&#x131;</a>
       </div>
     </div>
   </div>
