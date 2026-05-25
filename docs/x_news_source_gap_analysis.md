@@ -11,25 +11,26 @@ düzeltmeleri listeler; otomatik yayın güveni anlamına gelmez.
 
 ## Mevcut Durum
 
-- `src/collect_news_twitter.py` içinde 12 hesap tanımlı, ancak çalışma
-  alanında üretilmiş `news_twitter_latest_2025_2026.json` snapshot'ı yok.
-- Resmi kulüp kapsamı yalnız dört takım için tanımlı; 18 takımlı ürün
-  kapsamında 14 resmi kulüp hesabı eksik.
-- Mevcut üç resmi kayıt düzeltilmeli:
+- `src/collect_news_twitter.py` içinde 30 hesap tanımlı: 18 resmi kulüp,
+  TFF/lig, medya ve transfer sinyal hesapları.
+- Çalışma alanında üretilmiş `news_twitter_latest_2025_2026.json` snapshot'ı
+  henüz yok; bu nedenle mevcut transfer analiz çıktısı RSS kaynaklarıyla
+  sınırlı.
+- Önceki üç resmi handle açığı kodda giderildi:
 
-| Kayıt | Mevcut handle | Kullanılacak ana handle | Neden |
+| Kayıt | Eski handle | Kullanılan ana handle | Neden |
 |---|---|---|---|
 | Beşiktaş | `@bjkcom` | [`@Besiktas`](https://x.com/Besiktas) | Resmi ana X hesabı budur. |
 | Galatasaray | `@galatasaray` | [`@GalatasaraySK`](https://x.com/GalatasaraySK) | Mevcut handle İngilizce hesap; Türkçe resmi duyuru için ana hesap izlenmeli. |
 | TFF | `@TFForg` | [`@TFF_Org`](https://x.com/TFF_Org) | Kodda handle yazımı resmi hesapla uyuşmuyor. |
 
-## Öncelik A: Eksik Resmi Kulüp Hesapları
+## Öncelik A: Yapılandırılmış Resmi Kulüp Hesapları
 
 Bu kaynaklar resmi duyuru olduğu için kadro dışı/sakatlık, maç kadrosu,
 ceza, resmi transfer, teknik direktör ve sözleşme olaylarında en yüksek
 güvenli haber katmanıdır.
 
-| Takım | Eklenecek X hesabı | Durum | Alınabilecek veri |
+| Takım | X hesabı | Durum | Alınabilecek veri |
 |---|---|---|---|
 | RAMS Başakşehir | [`@ibfk2014`](https://x.com/ibfk2014) | Doğrulandı | İlk 11, kadro, sakat/cezalı açıklaması, transfer/imza, teknik ekip |
 | Corendon Alanyaspor | [`@Alanyaspor`](https://x.com/Alanyaspor) | Doğrulandı | Kadro, sakatlık, transfer, maç duyurusu |
@@ -46,14 +47,14 @@ güvenli haber katmanıdır.
 | Hesap.com Antalyaspor | [`@Antalyaspor`](https://x.com/Antalyaspor) | Doğrulandı | Kadro, sakatlık, transfer |
 | Zecorner Kayserispor | [`@KayserisporFK`](https://x.com/KayserisporFK) | Canlı profil doğrulaması gerekli | Kadro, oyuncu değişimi, gol/maç akışı, transfer |
 
-## Öncelik B: Eksik Lig ve Haber Kaynakları
+## Öncelik B: Yapılandırılmış Lig ve Haber Kaynakları
 
 | Kaynak | X hesabı | Projede durum | Kullanım | Güven kuralı |
 |---|---|---|---|---|
-| Trendyol Süper Lig | [`@superlig`](https://x.com/superlig) | Eksik, eklemeden önce canlı doğrula | Fikstür, haftalık program, resmi lig duyurusu | TFF ile çapraz doğrula |
-| TRT Spor | [`@trtspor`](https://x.com/trtspor) | Eksik | Son dakika sakatlık/transfer/kulüp açıklaması yayılımı | Haber sinyali; resmi hesapla onaylanmadan availability uygulanmaz |
-| Sports Digitale | [`@SportsDigitale`](https://x.com/SportsDigitale) | Eksik | Transfer anlaşmaları, kart cezası, kadro gelişmeleri | İkincil sinyal; resmi/TFF doğrulaması gerekir |
-| Yağız Sabuncuoğlu | [`@yagosabuncuoglu`](https://x.com/yagosabuncuoglu) | Eksik | Transfer ve kadro dışı/sakatlık erken uyarısı | Rumor/lead olarak saklanır; doğrudan model girdisi olmaz |
+| Trendyol Süper Lig | [`@superlig`](https://x.com/superlig) | Collector'da tanımlı, snapshot bekliyor | Fikstür, haftalık program, resmi lig duyurusu | TFF ile çapraz doğrula |
+| TRT Spor | [`@trtspor`](https://x.com/trtspor) | Collector'da tanımlı, snapshot bekliyor | Son dakika sakatlık/transfer/kulüp açıklaması yayılımı | Haber sinyali; resmi hesapla onaylanmadan availability uygulanmaz |
+| Sports Digitale | [`@SportsDigitale`](https://x.com/SportsDigitale) | Collector'da tanımlı, snapshot bekliyor | Transfer anlaşmaları, kart cezası, kadro gelişmeleri | İkincil sinyal; resmi/TFF doğrulaması gerekir |
+| Yağız Sabuncuoğlu | [`@yagosabuncuoglu`](https://x.com/yagosabuncuoglu) | Collector'da tanımlı, snapshot bekliyor | Transfer ve kadro dışı/sakatlık erken uyarısı | Rumor/lead olarak saklanır; doğrudan model girdisi olmaz |
 
 Mevcut collector'da bulunan `@beINSPORTS_TR`, `@fanatikgazetesi`,
 `@hurspor`, `@fotomacgazetesi`, `@transfermarkt_TR`, `@YakinTakip` ve
@@ -89,11 +90,11 @@ araması için recent search kullanılmalıdır.
 
 ## Uygulama Sırası
 
-1. Yanlış mevcut resmi handle'ları düzelt ve 14 eksik kulüp hesabını
-   `official_team` grubu olarak ekle.
+1. Yapılandırılmış X hesaplarında ilk başarılı snapshot'ı üret ve hesap
+   erişim/handle doğrulama raporunu kaydet.
 2. TFF ve resmi kulüp kaynaklarıyla availability şemasını tüm 18 takıma aç.
-3. `@trtspor`, `@SportsDigitale` ve `@yagosabuncuoglu` kaynaklarını
-   `secondary_signal` olarak ekle; model etkisini engelle.
+3. `@trtspor`, `@SportsDigitale` ve `@yagosabuncuoglu` kaynaklarından gelen
+   verinin yalnız `secondary_signal` olarak kaldığını testle güvenceye al.
 4. Nitter tabanlı denemeyi geliştirme fallback'i olarak ayır; üretimde X API
    kimlik/doğrulama ve saklama politikasını uygula.
 5. Kaynak bazlı kapsama raporu üret: hesap erişim başarısı, bulunan resmi

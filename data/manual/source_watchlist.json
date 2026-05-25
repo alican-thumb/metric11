@@ -60,6 +60,32 @@
       "use_cases": ["availability_manual_review", "lineup_context", "transfer_window_context", "narrative_analysis"]
     },
     {
+      "name": "Turkish sports RSS news feeds",
+      "category": "news_and_transfer_context",
+      "url": "https://www.hurriyet.com.tr/rss/spor",
+      "method": "rss_collector",
+      "status": "connected_snapshot_2026_05_25",
+      "risk": "medium",
+      "license_status": "verify_terms_and_quote_limits",
+      "freshness_target": "daily_transfer_window",
+      "analysis_weight": "context_only",
+      "fields": ["headline", "summary", "published_at", "source", "transfer_claim", "injury_claim", "club_mention"],
+      "use_cases": ["transfer_rumor_radar", "news_intelligence", "manual_review_queue", "corroboration"]
+    },
+    {
+      "name": "X official clubs and football news accounts",
+      "category": "official_and_secondary_social_signal",
+      "url": "https://x.com/",
+      "method": "x_collector_pending_stable_access",
+      "status": "collector_configured_pending_snapshot",
+      "risk": "medium",
+      "license_status": "platform_terms_and_display_requirements",
+      "freshness_target": "daily_transfer_window",
+      "analysis_weight": "context_only",
+      "fields": ["post_id", "account_type", "published_at", "official_announcement", "transfer_claim", "injury_claim", "club_mention"],
+      "use_cases": ["official_transfer_confirmation", "transfer_rumor_radar", "availability_review", "corroboration"]
+    },
+    {
       "name": "API-Football",
       "category": "external_api",
       "url": "https://www.api-football.com/",

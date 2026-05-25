@@ -166,8 +166,10 @@ def _parse_entry(entry, account: dict) -> dict | None:
     if not title:
         return None
 
-    # Nitter links point to nitter; convert back to twitter.com
-    twitter_link = link.replace(NITTER_INSTANCES[0], "https://twitter.com") if link else ""
+    # Nitter links point to the selected mirror; publish the original X link.
+    twitter_link = link
+    for instance in NITTER_INSTANCES:
+        twitter_link = twitter_link.replace(instance, "https://x.com")
 
     published_at = None
     if hasattr(entry, "published"):
@@ -187,7 +189,9 @@ def _parse_entry(entry, account: dict) -> dict | None:
     if not categories:
         categories.append("general")
 
-    relevant = any(team in text for team in SUPER_LIG_TEAMS)
+    # A club's official post is relevant even when it only names a signing
+    # and does not repeat the club name in the post text.
+    relevant = bool(account.get("team")) or any(team in text for team in SUPER_LIG_TEAMS)
 
     article_id = hashlib.md5(link.encode()).hexdigest()[:12]
     return {

@@ -74,6 +74,7 @@ def build_html(intel: dict) -> str:
     suspension_rows = _build_suspension_rows(intel.get("suspensions", []))
     news_feed = _build_news_feed(intel.get("recent_articles", []))
     promo_count = intel.get("promotion_signals", 0)
+    transfer_status = intel.get("transfer_status_counts", {})
 
     total = intel.get("total_articles", 0)
     analyzed = intel.get("analyzed_articles", 0)
@@ -128,12 +129,15 @@ def build_html(intel: dict) -> str:
 <body>
 <div class="header">
   <h1>📰 Haber İstihbaratı — Süper Lig {SEASON_LABEL}</h1>
-  <div class="sub">Claude AI analizi · {analyzed}/{total} makale analiz edildi · {gen_at} UTC</div>
+  <div class="sub">Haber sinyal analizi · {analyzed}/{total} içerik analiz edildi · {gen_at} UTC</div>
 </div>
 <div class="summary-bar">
   <div class="pill"><div class="val">{total}</div><div class="lbl">Toplam Makale</div></div>
   <div class="pill"><div class="val">{analyzed}</div><div class="lbl">Analiz Edilen</div></div>
-  <div class="pill"><div class="val" style="color:#22c55e">{intel.get('transfer_signals',0)}</div><div class="lbl">Transfer Sinyali</div></div>
+  <div class="pill"><div class="val" style="color:#22c55e">{intel.get('transfer_signals',0)}</div><div class="lbl">Transfer İddiası</div></div>
+  <div class="pill"><div class="val" style="color:#16a34a">{transfer_status.get('OFFICIAL',0)}</div><div class="lbl">Resmi Teyit</div></div>
+  <div class="pill"><div class="val" style="color:#f59e0b">{transfer_status.get('CORROBORATED',0)}</div><div class="lbl">Çoklu Kaynak</div></div>
+  <div class="pill"><div class="val" style="color:#94a3b8">{transfer_status.get('REVIEW_REQUIRED',0)}</div><div class="lbl">İnceleme Gerekli</div></div>
   <div class="pill"><div class="val" style="color:#ef4444">{intel.get('injury_signals',0)}</div><div class="lbl">Sakat Sinyali</div></div>
   <div class="pill"><div class="val" style="color:#f59e0b">{intel.get('suspension_signals',0)}</div><div class="lbl">Cezalı Sinyali</div></div>
   <div class="pill"><div class="val">{intel.get('player_mentions',0)}</div><div class="lbl">Oyuncu Haberi</div></div>
@@ -158,7 +162,7 @@ def build_html(intel: dict) -> str:
     {f'''<table>
       <thead><tr>
         <th>Oyuncu</th><th>Gönderen</th><th>Alan</th><th>Tip</th>
-        <th>Bedel / Değer</th><th>Güven</th><th>Kaynak</th><th>Tarih</th>
+        <th>Bedel / Değer</th><th>Durum</th><th>Kaynak</th><th>Yorum</th><th>Tarih</th>
       </tr></thead>
       <tbody>{transfer_rows}</tbody>
     </table>''' if transfer_rows else '<div class="empty">Transfer sinyali bulunamadı.</div>'}
@@ -212,7 +216,19 @@ def _build_transfer_rows(transfers: list[dict]) -> str:
         return ""
     rows = ""
     for t in transfers[:40]:
-        conf = t.get("confidence", "LOW")
+        status = t.get("verification_status", "REVIEW_REQUIRED")
+        conf = {
+            "OFFICIAL": "HIGH",
+            "CORROBORATED": "MEDIUM",
+            "RUMOR": "LOW",
+            "REVIEW_REQUIRED": "LOW",
+        }.get(status, "LOW")
+        status_label = {
+            "OFFICIAL": "RESMİ",
+            "CORROBORATED": "ÇOKLU KAYNAK",
+            "RUMOR": "SÖYLENTİ",
+            "REVIEW_REQUIRED": "İNCELE",
+        }.get(status, status)
         fee = ""
         if t.get("fee_eur_million"):
             fee = f"€{t['fee_eur_million']}M"
@@ -222,15 +238,22 @@ def _build_transfer_rows(transfers: list[dict]) -> str:
             fee = "Serbest" if t.get("transfer_type") == "free" else "Bilinmiyor"
         mv = t.get("tm_market_value_eur")
         mv_str = f" <span class='mv-badge'>€{mv/1_000_000:.1f}M</span>" if mv else ""
+        sources = t.get("sources") or [t.get("source", "?")]
+        source_text = ", ".join(sources[:2]) + (f" +{len(sources) - 2}" if len(sources) > 2 else "")
+        link = (t.get("evidence") or [{}])[0].get("link") or t.get("link", "#")
+        player = t.get("player_name") or "Belirsiz oyuncu"
+        from_club = t.get("from_club") or "Belirsiz"
+        to_club = t.get("to_club") or "Belirsiz"
         rows += (
             f"<tr>"
-            f"<td><strong>{t.get('player_name','')}</strong>{mv_str}</td>"
-            f"<td style='color:#94a3b8'>{t.get('from_club','?')}</td>"
-            f"<td style='color:#22c55e;font-weight:600'>{t.get('to_club','?')}</td>"
+            f"<td><strong>{player}</strong>{mv_str}</td>"
+            f"<td style='color:#94a3b8'>{from_club}</td>"
+            f"<td style='color:#22c55e;font-weight:600'>{to_club}</td>"
             f"<td><span class='tag'>{t.get('transfer_type','?')}</span></td>"
             f"<td>{fee}</td>"
-            f"<td><span class='badge {_conf_class(conf)}'>{conf}</span></td>"
-            f"<td><a href='{t.get('link','#')}' target='_blank'>{t.get('source','?')[:15]}</a></td>"
+            f"<td><span class='badge {_conf_class(conf)}'>{status_label}</span></td>"
+            f"<td><a href='{link}' target='_blank'>{source_text}</a></td>"
+            f"<td style='color:#94a3b8;max-width:260px'>{t.get('interpretation','')}</td>"
             f"<td style='color:#64748b'>{_format_date(t.get('published_at'))}</td>"
             f"</tr>"
         )

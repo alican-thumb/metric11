@@ -180,6 +180,7 @@ def rule_based_analyze(article: dict, player_index: dict) -> dict:
     title = article.get("title", "")
     summary = article.get("summary", "") or article.get("full_text", "")[:500]
     text = f"{title} {summary}".lower()
+    title_text = title.lower()
     text_orig = f"{title} {summary}"
 
     news_types = list(article.get("categories", []))
@@ -195,6 +196,10 @@ def rule_based_analyze(article: dict, player_index: dict) -> dict:
     for club, pattern in CLUB_PATTERNS.items():
         if re.search(pattern, text, re.IGNORECASE):
             mentioned_clubs.append(club)
+    title_clubs = [
+        club for club, pattern in CLUB_PATTERNS.items()
+        if re.search(pattern, title_text, re.IGNORECASE)
+    ]
 
     # Oyuncu tespiti — veritabanı üzerinden
     mentioned_players = []
@@ -224,6 +229,7 @@ def rule_based_analyze(article: dict, player_index: dict) -> dict:
                     "tm_market_value_eur": player.get("tm_market_value_eur"),
                     "tff_external_id": player.get("external_id"),
                     "confidence": conf,
+                    "matched_in_title": last in title_text and first in title_text,
                 })
 
     # Deduplicate players
@@ -238,14 +244,13 @@ def rule_based_analyze(article: dict, player_index: dict) -> dict:
         if re.search(pattern, text, re.IGNORECASE):
             if "transfer" not in news_types:
                 news_types.append("transfer")
-            # Hedef kulüp çıkarımı
-            to_club = None
-            for club in mentioned_clubs:
-                if not any(p.get("current_club", "").startswith(club) for p in players[:1]):
-                    to_club = club
-                    break
-            for p in players[:2]:
+            transfer_players = [player for player in players if player.get("matched_in_title")]
+            candidate_clubs = list(title_clubs)
+            if article.get("account_type") == "official" and article.get("related_team"):
+                candidate_clubs.append(article["related_team"])
+            for p in transfer_players[:2]:
                 if p.get("confidence") in ("HIGH", "MEDIUM"):
+                    to_club = _distinct_target_club(p.get("current_club"), candidate_clubs)
                     transfer_rumors.append({
                         "player_name": p["name"],
                         "from_club": p.get("current_club"),
@@ -255,15 +260,18 @@ def rule_based_analyze(article: dict, player_index: dict) -> dict:
                         "signal_type": signal_type,
                         "confidence": p["confidence"],
                         "tm_market_value_eur": p.get("tm_market_value_eur"),
+                        "direction_quality": "TARGET_IDENTIFIED" if to_club else "TARGET_UNRESOLVED",
                     })
-            if not players and mentioned_clubs:
+            if not transfer_players and candidate_clubs:
+                to_club = candidate_clubs[-1] if len(candidate_clubs) > 1 else candidate_clubs[0]
                 transfer_rumors.append({
                     "player_name": None,
-                    "from_club": mentioned_clubs[0] if len(mentioned_clubs) > 1 else None,
-                    "to_club": mentioned_clubs[-1] if mentioned_clubs else None,
+                    "from_club": candidate_clubs[0] if len(candidate_clubs) > 1 else None,
+                    "to_club": to_club,
                     "signal_type": signal_type,
                     "window": _detect_window(text),
                     "confidence": "LOW",
+                    "direction_quality": "PLAYER_UNRESOLVED",
                 })
             break
 
@@ -359,6 +367,28 @@ def _extract_team_name(text: str) -> str | None:
     return None
 
 
+def _club_key(name: str | None) -> str:
+    key = normalize_name(name)
+    for suffix in (" A S", " FUTBOL KULUBU", " S K", " FK"):
+        key = key.replace(suffix, "")
+    return key.strip()
+
+
+def _same_club(left: str | None, right: str | None) -> bool:
+    left_key = _club_key(left)
+    right_key = _club_key(right)
+    if not left_key or not right_key:
+        return False
+    return left_key == right_key or left_key.startswith(f"{right_key} ") or right_key.startswith(f"{left_key} ")
+
+
+def _distinct_target_club(current_club: str | None, candidates: list[str]) -> str | None:
+    for club in candidates:
+        if club and not _same_club(current_club, club):
+            return club
+    return None
+
+
 def _claude_enhance(client, article: dict) -> dict | None:
     """Claude API ile kural tabanlı analizi zenginleştirir."""
     SYSTEM = "Sen Türk futbol analistsin. Haber özetini JSON olarak çıkar. Sadece JSON döndür."
@@ -432,7 +462,7 @@ def _build_player_index() -> dict[str, dict]:
 
 
 def build_intelligence(articles: list[dict], player_index: dict) -> dict:
-    transfers, injuries, suspensions, promotions, player_news = [], [], [], [], []
+    transfer_mentions, injuries, suspensions, promotions, player_news = [], [], [], [], []
 
     for a in articles:
         ca = a.get("claude_analysis") or {}
@@ -442,13 +472,15 @@ def build_intelligence(articles: list[dict], player_index: dict) -> dict:
             "link": a["link"],
             "source": a["source_name"],
             "source_type": a.get("source_type", "rss"),
+            "account_type": a.get("account_type"),
+            "source_tier": _source_tier(a),
             "published_at": a.get("published_at"),
             "summary_tr": ca.get("summary_tr", a.get("summary", ""))[:200],
         }
 
         for tr in ca.get("transfer_rumors", []):
             if tr.get("player_name") or tr.get("to_club"):
-                transfers.append({**tr, **meta})
+                transfer_mentions.append({**tr, **meta})
         for inj in ca.get("injuries", []):
             injuries.append({**inj, **meta})
         for sus in ca.get("suspensions", []):
@@ -459,9 +491,8 @@ def build_intelligence(articles: list[dict], player_index: dict) -> dict:
             if p.get("name"):
                 player_news.append({**p, **meta})
 
-    # Güven sıralama
+    transfers = _aggregate_transfer_mentions(transfer_mentions)
     conf_ord = {"HIGH": 0, "MEDIUM": 1, "LOW": 2}
-    transfers.sort(key=lambda x: conf_ord.get(x.get("confidence", "LOW"), 2))
     injuries.sort(key=lambda x: conf_ord.get(x.get("confidence", "LOW"), 2))
 
     recent = sorted(
@@ -476,6 +507,8 @@ def build_intelligence(articles: list[dict], player_index: dict) -> dict:
         "total_articles": len(articles),
         "analyzed_articles": len([a for a in articles if a.get("analyzed")]),
         "transfer_signals": len(transfers),
+        "raw_transfer_mentions": len(transfer_mentions),
+        "transfer_status_counts": _status_counts(transfers),
         "injury_signals": len(injuries),
         "suspension_signals": len(suspensions),
         "promotion_signals": len(promotions),
@@ -502,6 +535,104 @@ def build_intelligence(articles: list[dict], player_index: dict) -> dict:
             for a in recent[:80]
         ],
     }
+
+
+def _source_tier(article: dict) -> str:
+    if article.get("source_type") == "twitter":
+        return {
+            "official": "OFFICIAL",
+            "secondary_signal": "SECONDARY",
+            "transfer_news": "SECONDARY",
+            "media": "MEDIA",
+        }.get(article.get("account_type"), "SECONDARY")
+    if article.get("source_name") == "Anadolu Ajansı Spor":
+        return "AGENCY"
+    return "MEDIA"
+
+
+def _aggregate_transfer_mentions(mentions: list[dict]) -> list[dict]:
+    grouped: dict[tuple[str, str, str, str], list[dict]] = {}
+    for mention in mentions:
+        normalized = dict(mention)
+        if _same_club(normalized.get("from_club"), normalized.get("to_club")):
+            normalized["to_club"] = None
+            normalized["direction_quality"] = "TARGET_MATCHES_CURRENT_CLUB"
+        player_key = normalize_name(normalized.get("player_name")) or f"ARTICLE:{normalized.get('article_id')}"
+        key = (
+            player_key,
+            _club_key(normalized.get("from_club")),
+            _club_key(normalized.get("to_club")),
+            normalized.get("signal_type") or "unknown",
+        )
+        grouped.setdefault(key, []).append(normalized)
+
+    claims = [_build_transfer_claim(rows) for rows in grouped.values()]
+    status_order = {"OFFICIAL": 0, "CORROBORATED": 1, "RUMOR": 2, "REVIEW_REQUIRED": 3}
+    claims.sort(key=lambda row: row.get("published_at") or "", reverse=True)
+    claims.sort(key=lambda row: status_order.get(row["verification_status"], 9))
+    return claims
+
+
+def _build_transfer_claim(rows: list[dict]) -> dict:
+    rows = sorted(rows, key=lambda row: row.get("published_at") or "", reverse=True)
+    head = dict(rows[0])
+    distinct_sources = list(dict.fromkeys(row.get("source", "?") for row in rows))
+    evidence = [
+        {
+            "source": row.get("source"),
+            "source_tier": row.get("source_tier"),
+            "title": row.get("title"),
+            "link": row.get("link"),
+            "published_at": row.get("published_at"),
+        }
+        for row in rows
+    ]
+    official = any(row.get("source_tier") == "OFFICIAL" for row in rows)
+    has_direction = bool(head.get("player_name") and head.get("to_club"))
+
+    if not has_direction:
+        status = "REVIEW_REQUIRED"
+        interpretation = "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez."
+    elif official:
+        status = "OFFICIAL"
+        interpretation = "Resmi hesap duyurusu bulundu; işlem resmi transfer bağlamında izlenebilir."
+    elif len(distinct_sources) >= 2:
+        status = "CORROBORATED"
+        interpretation = "Birden fazla kaynak aynı yönlü iddiayı taşıyor; resmi açıklama beklenir."
+    else:
+        status = "RUMOR"
+        interpretation = "Tek kaynaklı transfer iddiası; yalnız transfer radarında izlenir."
+
+    status_confidence = {
+        "OFFICIAL": "HIGH",
+        "CORROBORATED": "MEDIUM",
+        "RUMOR": "LOW",
+        "REVIEW_REQUIRED": "LOW",
+    }
+    head.update(
+        {
+            "entity_confidence": max(
+                (row.get("confidence", "LOW") for row in rows),
+                key={"LOW": 0, "MEDIUM": 1, "HIGH": 2}.get,
+            ),
+            "confidence": status_confidence[status],
+            "verification_status": status,
+            "interpretation": interpretation,
+            "source_count": len(distinct_sources),
+            "sources": distinct_sources,
+            "evidence": evidence,
+            "model_use": status == "OFFICIAL",
+        }
+    )
+    return head
+
+
+def _status_counts(transfers: list[dict]) -> dict[str, int]:
+    counts = {"OFFICIAL": 0, "CORROBORATED": 0, "RUMOR": 0, "REVIEW_REQUIRED": 0}
+    for row in transfers:
+        status = row.get("verification_status", "REVIEW_REQUIRED")
+        counts[status] = counts.get(status, 0) + 1
+    return counts
 
 
 if __name__ == "__main__":

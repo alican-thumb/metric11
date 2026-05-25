@@ -146,7 +146,7 @@ def _summary_bar(free_agents: list, final_year: list, signals: list, promotions:
     pills = [
         ("🔓", len(free_agents), "Serbest Kalacak", "#ef4444"),
         ("⏳", len(final_year), "Son Yıl Kontrat", "#f59e0b"),
-        ("📡", len(signals), "Transfer Sinyali", "#3b82f6"),
+        ("📡", len(signals), "Haber İddiası", "#3b82f6"),
         ("⬆", len(promotions), "Lig Hareketi", "#a78bfa"),
         ("💰", mv_label, "Toplam Değer", "#10b981"),
     ]
@@ -243,16 +243,29 @@ def _signals_section(signals: list[dict]) -> str:
 
     cards = ""
     for s in signals[:20]:
-        player = _title(s.get("player", "?"))
+        player = _title(s.get("player_name") or "?")
         from_club = _title(s.get("from_club") or "?")
         to_club = _title(s.get("to_club") or "?")
-        mv = s.get("market_value_eur")
+        mv = s.get("tm_market_value_eur") or s.get("market_value_eur")
         mv_html = f"<span style='color:#fbbf24;font-weight:600'>{_mv_str(mv)}</span>" if mv else ""
-        confidence = s.get("confidence", "medium")
-        conf_color = {"high": "#10b981", "medium": "#f59e0b", "low": "#6b7280"}.get(confidence, "#6b7280")
+        status = s.get("verification_status", "REVIEW_REQUIRED")
+        status_label = {
+            "OFFICIAL": "RESMİ",
+            "CORROBORATED": "ÇOKLU KAYNAK",
+            "RUMOR": "SÖYLENTİ",
+            "REVIEW_REQUIRED": "İNCELE",
+        }.get(status, status)
+        conf_color = {
+            "OFFICIAL": "#10b981",
+            "CORROBORATED": "#f59e0b",
+            "RUMOR": "#3b82f6",
+            "REVIEW_REQUIRED": "#6b7280",
+        }.get(status, "#6b7280")
         sources = s.get("sources") or []
-        source_count = len(sources)
+        source_count = s.get("source_count", len(sources))
+        source_text = ", ".join(sources[:3]) if sources else s.get("source", "?")
         window = s.get("window") or "?"
+        interpretation = s.get("interpretation", "")
         cards += f"""
 <div style='background:#1e293b;border-radius:8px;padding:14px 16px;margin-bottom:10px;border-left:3px solid {conf_color}'>
   <div style='display:flex;justify-content:space-between;align-items:flex-start'>
@@ -260,7 +273,7 @@ def _signals_section(signals: list[dict]) -> str:
       <span style='color:#e2e8f0;font-weight:600;font-size:14px'>{player}</span>
       {mv_html}
     </div>
-    <span style='background:{conf_color}22;color:{conf_color};border-radius:4px;padding:2px 8px;font-size:11px;font-weight:600'>{confidence.upper()}</span>
+    <span style='background:{conf_color}22;color:{conf_color};border-radius:4px;padding:2px 8px;font-size:11px;font-weight:600'>{status_label}</span>
   </div>
   <div style='color:#94a3b8;font-size:12px;margin-top:6px'>
     <span style='color:#64748b'>{from_club}</span>
@@ -269,9 +282,12 @@ def _signals_section(signals: list[dict]) -> str:
     <span style='color:#475569;margin-left:10px'>· Pencere: {window}</span>
     <span style='color:#475569;margin-left:10px'>· {source_count} kaynak</span>
   </div>
+  <div style='color:#94a3b8;font-size:12px;margin-top:7px'>{interpretation}</div>
+  <div style='color:#64748b;font-size:11px;margin-top:5px'>Kaynak: {source_text}</div>
 </div>"""
 
-    return _section_title("📡 Transfer Sinyalleri", f"{len(signals)} aktif sinyal") + cards
+    note = "<p style='color:#94a3b8;font-size:12px;margin:-8px 0 14px'>Haber iddiaları scout öneri skorunu veya maç modelini resmi teyit olmadan değiştirmez.</p>"
+    return _section_title("📡 Transfer Haber İddiaları", f"{len(signals)} izlenen kayıt") + note + cards
 
 
 def _promotions_section(promotions: list[dict]) -> str:
@@ -343,6 +359,10 @@ def _window_timeline_section() -> str:
 # JSON output
 # --------------------------------------------------------------------------- #
 def _build_json_payload(free_agents: list, final_year: list, signals: list, promotions: list) -> dict:
+    status_counts = {
+        status: sum(1 for row in signals if row.get("verification_status") == status)
+        for status in ("OFFICIAL", "CORROBORATED", "RUMOR", "REVIEW_REQUIRED")
+    }
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "season": SEASON,
@@ -350,6 +370,7 @@ def _build_json_payload(free_agents: list, final_year: list, signals: list, prom
             "free_agents_count": len(free_agents),
             "final_year_count": len(final_year),
             "transfer_signals_count": len(signals),
+            "transfer_status_counts": status_counts,
             "promotion_events_count": len(promotions),
             "free_agent_total_market_value_eur": sum(p.get("market_value_eur") or 0 for p in free_agents),
         },
