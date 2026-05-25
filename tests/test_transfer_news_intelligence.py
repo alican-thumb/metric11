@@ -94,6 +94,34 @@ class TransferIntelligenceTests(unittest.TestCase):
         self.assertEqual(result["transfers"][0]["verification_status"], "OFFICIAL")
         self.assertTrue(result["transfers"][0]["model_use"])
 
+    def test_official_outbound_web_announcement_extracts_destination(self):
+        source = {
+            "article_id": "bjk-muci",
+            "title": "Ernest Muçi, Trabzonspor'a Transfer Oldu",
+            "summary": "",
+            "source_name": "Beşiktaş Resmi Web",
+            "source_type": "official_club",
+            "account_type": "official",
+            "related_team": "BEŞİKTAŞ A.Ş.",
+            "link": "https://bjk.test/ernest-muci",
+            "published_at": "2026-05-20T10:00:00+03:00",
+            "categories": ["transfer"],
+            "super_lig_relevant": True,
+            "analyzed": True,
+        }
+        player_index = {
+            "ERNEST MUCI": {"name": "ERNEST MUÇİ", "club": "TRABZONSPOR A.Ş."},
+        }
+        source["claude_analysis"] = rule_based_analyze(source, player_index)
+
+        result = build_intelligence([source], player_index)
+        row = result["transfers"][0]
+
+        self.assertEqual(row["from_club"], "BEŞİKTAŞ A.Ş.")
+        self.assertEqual(row["to_club"], "Trabzonspor")
+        self.assertEqual(row["verification_status"], "OFFICIAL")
+        self.assertTrue(row["model_use"])
+
     def test_same_current_and_target_team_requires_review(self):
         transfer = {
             "player_name": "Ali Örnek",

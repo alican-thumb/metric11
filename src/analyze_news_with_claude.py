@@ -20,6 +20,8 @@ from src.normalization import normalize_name
 # ── Türkçe sinyal kalıpları ───────────────────────────────────────────────
 
 TRANSFER_PATTERNS = [
+    (r"transfer\s+(?:oldu|edildi|etti|gerçekleşti)", "official_transfer"),
+    (r"hoş\s+geldin|hos\s+geldin", "signing"),
     (r"transfer\s+(?:için\s+)?görüşm", "transfer_negotiation"),
     (r"bonservis(?:\s+bedeli)?", "transfer_fee"),
     (r"imzala(?:dı|yacak|yor)", "signing"),
@@ -251,10 +253,27 @@ def rule_based_analyze(article: dict, player_index: dict) -> dict:
                 candidate_clubs.append(article["related_team"])
             for p in transfer_players[:2]:
                 if p.get("confidence") in ("HIGH", "MEDIUM"):
-                    to_club = _distinct_target_club(p.get("current_club"), candidate_clubs)
+                    official_team = article.get("related_team") if article.get("account_type") == "official" else None
+                    if official_team and signal_type == "official_transfer":
+                        explicit_other = next(
+                            (club for club in title_clubs if not _same_club(club, official_team)),
+                            None,
+                        )
+                        if explicit_other and re.search(r"transfer\s+(?:oldu|edildi|gerçekleşti)", text):
+                            from_club = official_team
+                            to_club = explicit_other
+                        else:
+                            from_club = None if _same_club(p.get("current_club"), official_team) else p.get("current_club")
+                            to_club = official_team
+                    elif official_team and signal_type == "signing":
+                        from_club = None if _same_club(p.get("current_club"), official_team) else p.get("current_club")
+                        to_club = official_team
+                    else:
+                        from_club = p.get("current_club")
+                        to_club = _distinct_target_club(from_club, candidate_clubs)
                     transfer_rumors.append({
                         "player_name": p["name"],
-                        "from_club": p.get("current_club"),
+                        "from_club": from_club,
                         "to_club": to_club,
                         "transfer_type": "loan" if "kiralık" in text else "permanent",
                         "window": _detect_window(text),

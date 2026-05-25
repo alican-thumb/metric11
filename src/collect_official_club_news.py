@@ -36,13 +36,16 @@ SIGNAL_TERMS = (
     "tesekkur",
     "teşekkür",
     "sakat",
-    "sağlık",
+    "sağlık durumu",
+    "sağlık raporu",
     "ameliyat",
     "operasyon",
-    "ceza",
+    "kart cezas",
     "cezalı",
-    "kadro",
+    "kadroda yok",
+    "kadro dışı",
 )
+NON_FOOTBALL_ANNOUNCEMENT_TERMS = ("sponsor", "reklam", "stadyum isim hakkı")
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (compatible; metric11-official-news/0.1; football research)",
     "Accept-Language": "tr-TR,tr;q=0.9",
@@ -178,6 +181,8 @@ def fetch_article(source: dict, listing_title: str, link: str, timeout_seconds: 
         tag.decompose()
     detail_text = " ".join((soup.get_text(" ", strip=True) or "").split())[:3000]
     text = f"{title} {detail_text}".lower()
+    if any(term in title.lower() for term in NON_FOOTBALL_ANNOUNCEMENT_TERMS):
+        return None
     categories = detect_categories(text)
     if categories == ["general"]:
         return None
