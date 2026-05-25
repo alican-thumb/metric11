@@ -1,6 +1,6 @@
 # Futbol İstihbarat Platformu - Proje Durumu
 
-Son güncelleme: 2026-05-25 (session 2)
+Son güncelleme: 2026-05-25 (session 3)
 
 ## Amaç
 
@@ -202,6 +202,30 @@ Parse edilen alanlar:
 - Admin sayfası hash koruma güvencesi eklendi: `ADMIN_CREDENTIALS_HASH` env var yokken mevcut `admin.html` korunuyor, üzerine yazılmıyor.
 - 2025/26 sezonu bitti — tüm maç önü dashboard'larına otomatik "sezon arası" banner eklendi; 2026/27 fikstürü açılınca banner JS tarih tespiti ile kaybolacak.
 - 2026/27 Süper Lig kadrosu güncellendi: küme düşenler (Karagümrük, Antalyaspor, Kayserispor) çıkarıldı; yükselen takımlar (Çorum FK, Erzurumspor FK, Amed SFK) TM ID'leriyle sisteme eklendi. 4 dosya güncellendi: `generate_preview_batch.py`, `build_dashboard.py`, `transfermarkt_super_lig_clubs.json`, `build_transfer_season_context.py`.
+
+## 2026-05-25 Site UI & İçerik İyileştirmeleri (Session 3)
+
+### Ana Sayfa Yeniden Yapılandırma (build_live_feed.py)
+- Transfer penceresi 3-durumlu banner eklendi: **Geri Sayım** (1 Haziran öncesi) → **Açık** (yeşil, kaç gün kaldı) → **Kapandı** (gri). `_window_state()` fonksiyonu ve `WINDOW_OPEN_DATE = 2026-06-01`, `WINDOW_CLOSE_DATE = 2026-09-01` sabitleri.
+- Ana sayfa layout yeniden yapılandırıldı: Sol sütun = Transferler (üstte, birincil ürün) + Haber Sinyalleri (altta, 6 madde). Sağ sütun = "Analiz Platformu" (kategorilere ayrılmış bağlantılar). Ürün kimliği haber değil analiz/scout olarak öne çıkarıldı.
+- "Son Haberler" → "Haber Sinyalleri" olarak yeniden adlandırıldı; "Analiz merkezi" butonu `football_intelligence_home.html`'e yönlendirildi.
+
+### Navigasyon Standardizasyonu (tüm build dosyaları)
+- 8 ana sayfanın tamamında 5-madde nav standardize edildi: Gündem · Transferler · Analizler · Scout · Maç Önü.
+- Nav CSS standart değerleri: 58px topbar yüksekliği, `#091810` arka plan, `#8fa89a` pasif link rengi, `#162b20` aktif arka plan.
+- Logo/marka href'leri `/gundem_2025_2026.html` → `/` olarak düzeltildi (tüm dosyalarda).
+- Tarayıcı varsayılan `:visited` (mor) ve `:active` (kırmızı) override sorunu giderildi: `.brand` ve `nav a` için explicit `:visited`, `:active`, `:hover` kuralları eklendi.
+- Beşiktaş-özel "Maç Odası" butonu `build_product_home.py`'dan kaldırıldı; `index.html` üretimi durduruldu; `data/processed/index.html` git'ten silindi.
+
+### Haber Kalitesi İyileştirmeleri
+- `collect_news_google.py`, `collect_news_telegram.py`, `analyze_news_with_claude.py` içinde `MAX_AGE_DAYS = 14` filtresi eklendi; 14 günden eski haberler toplanmıyor ve analize girmiyor.
+- Haber kartlarına yaş etiketi eklendi: "2sa", "dün", "4g önce" formatında `_fmt_date()` fonksiyonu.
+- `build_news_intelligence_report.py` nav: fazla "Haberler" 6. nav maddesi kaldırıldı; aktif item Gündem olarak ayarlandı.
+
+### HTML Entity Düzeltmesi (9 build dosyası)
+- `&#x131;`→`ı`, `&#x15f;`→`ş`, `&#xfc;`→`ü`, `&#xf6;`→`ö`, `&#xe7;`→`ç`, `&#x11f;`→`ğ` ve diğer tüm Türkçe/özel karakter entity'leri native UTF-8 ile değiştirildi.
+- Etkilenen dosyalar: `build_all_teams_preview_dashboard.py`, `build_command_center.py`, `build_dashboard.py`, `build_live_feed.py`, `build_news_intelligence_report.py`, `build_product_home.py`, `build_transfer_recommendation_report.py`, `build_transfer_season_context.py`, `build_transfer_tracker.py`.
+- Entity replacement sonrası oluşan kelime hatası düzeltildi: "aşık" → "açık", "aşılıyor" → "açılıyor" (`_window_state()` transfer banner metni).
 
 ### Dashboardlar
 
