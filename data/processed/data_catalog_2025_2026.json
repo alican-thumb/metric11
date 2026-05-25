@@ -81,7 +81,7 @@
       "risk": "MEDIUM",
       "license_status": "VERIFY_TERMS_AND_QUOTE_LIMITS",
       "display_policy": "SHOW_LINK_AND_DERIVED_SIGNAL_ONLY",
-      "coverage": "210 ham haber; 58 ilgili analiz; 8 transfer iddiası",
+      "coverage": "210 ham haber; 71 ilgili analiz; 18 transfer iddiası",
       "fields": [
         "başlık",
         "kaynak",
@@ -97,7 +97,7 @@
       "risk": "LOW_MEDIUM",
       "license_status": "VERIFY_TERMS_AND_LINK_DERIVED_DISPLAY",
       "display_policy": "SHOW_LINK_AND_DERIVED_SIGNAL_ONLY",
-      "coverage": "18 resmi kulüp sitesi yapılandırıldı; snapshot henüz yok",
+      "coverage": "13 duyuru; 16/18 kulüp sitesi erişilebilir; durum=PARTIAL_SUCCESS",
       "fields": [
         "kulüp",
         "duyuru başlığı",
@@ -236,17 +236,17 @@
     "news_context_signals": 3,
     "news_context_structured_unavailability": 13,
     "news_rss_articles": 210,
-    "news_official_articles": 0,
-    "news_official_successful_sources": 0,
+    "news_official_articles": 13,
+    "news_official_successful_sources": 16,
     "news_official_configured_sources": 18,
-    "news_official_status": "NO_SNAPSHOT",
-    "news_intelligence_articles": 58,
-    "news_transfer_claims": 8,
+    "news_official_status": "PARTIAL_SUCCESS",
+    "news_intelligence_articles": 71,
+    "news_transfer_claims": 18,
     "news_transfer_status_counts": {
-      "OFFICIAL": 0,
+      "OFFICIAL": 3,
       "CORROBORATED": 0,
       "RUMOR": 0,
-      "REVIEW_REQUIRED": 8
+      "REVIEW_REQUIRED": 15
     },
     "news_twitter_posts": 0,
     "news_twitter_successful_accounts": 0,
