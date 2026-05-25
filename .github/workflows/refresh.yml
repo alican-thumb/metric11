@@ -1,6 +1,7 @@
 name: metric11 dashboard refresh
 
 on:
+  workflow_dispatch:
   schedule:
     # Her 6 saatte bir: 00:15, 06:15, 12:15, 18:15 UTC
     # Haber akışı + dashboard yenileme, network scraper yok (~5 dk)
