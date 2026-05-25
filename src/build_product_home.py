@@ -208,8 +208,15 @@ def build_html() -> str:
             f"{alias_quality.get('alias_players', 0)} alias",
         ),
     ]
-    featured_cards = "".join(cards[:4])
-    module_cards = "".join(cards[4:])
+
+    # Kullanıcıya gösterilen kartlar (ilk 4 featured)
+    user_cards = cards[:15]
+    # Sadece yönetici/analist erişimi — ana sayfada görünmez
+    admin_cards = cards[15:]
+
+    featured_cards = "".join(user_cards[:4])
+    module_cards = "".join(user_cards[4:])
+    admin_section = "".join(admin_cards)
 
     return f"""<!doctype html>
 <html lang="tr">
@@ -315,37 +322,25 @@ def build_html() -> str:
   <main>
     <div class="section-title"><h2>Öne çıkan deneyimler</h2><p>Futbolseverin ilk gireceği dört alan</p></div>
     <div class="featured">{featured_cards}</div>
-    <div class="section-title"><h2>Sezon durumu</h2><p>Ölçümler test ve veri kapsamını anlatır</p></div>
+    <div class="section-title"><h2>Sezon rakamları</h2><p>2025-26 sezonu verisinden</p></div>
     <div class="metrics">
+      {metric("Tahmin doğruluğu", f"%{round((prediction_validation.get('unique_league_fixtures_raw_baseline', {}).get('accuracy') or 0) * 100)}")}
       {metric("Maç önü raporu", preview_summary.get("generated_reports", 0))}
-      {metric("BJK ekran kontrolü", f"%{round(match_summary.get('accuracy', 0) * 100)}")}
-      {metric("Büyük maç riski", big_match_report.get("high_or_medium_risk_count", 0))}
-      {metric("Gol adayı ilk 5", f"%{round(goal_summary.get('top_5_hit_rate', 0) * 100)}")}
-      {metric("Lig ham tabanı", f"%{round((prediction_validation.get('unique_league_fixtures_raw_baseline', {}).get('accuracy') or 0) * 100)}")}
-      {metric("Lig değer kapsamı", f"{league_market.get('covered_matches', 0)} / {league_market.get('league_model_matches', 0)}")}
-      {metric("Eksik sinyali", availability.get("auto_suspension_entries", 0) + availability.get("manual_entries", 0))}
-      {metric("Scout kalite kuyruğu", scout_quality.get("low_confidence_blueprint_links", 0))}
-      {metric("TM lig içi eşleşme", f"%{round(transfermarkt_review.get('in_scope_match_rate', 0) * 100, 1)}")}
-      {metric("TM yüksek kullanım açığı", transfermarkt_review.get("review_tier_counts", {}).get("HIGH_USAGE_UNRESOLVED", 0))}
-      {metric("Scout eşleşme bloku", transfermarkt_review.get("scout_blocking_unmatched", 0))}
-      {metric("Veri kalite skoru", data_quality.get("score", 0))}
+      {metric("Büyük maç uyarısı", big_match_report.get("high_or_medium_risk_count", 0))}
+      {metric("Gol adayı isabeti", f"%{round(goal_summary.get('top_5_hit_rate', 0) * 100)}")}
+      {metric("Transfer önerisi", transfer_report.get('total_candidate_suggestions', 0))}
+      {metric("Serbest kalacak oyuncu", transfer_season.get('summary', {}).get('free_agents_count', 0))}
+      {metric("Eksik oyuncu sinyali", availability.get("auto_suspension_entries", 0) + availability.get("manual_entries", 0))}
+      {metric("Scout profili", enriched_scout.get("profiled_players", 0))}
     </div>
+    <div class="section-title"><h2>Tüm araçlar</h2><p>Tahmin, scout, transfer ve haber modülleri</p></div>
+    <div class="cards">{module_cards}</div>
     <details>
-      <summary>Veri kapsamı ve altyapı ölçümlerini göster</summary>
-      <div class="detail-metrics">
-        {metric("Scout profili", enriched_scout.get("profiled_players", 0))}
-        {metric("Pozisyon rolü", position_matrix.get("roles", 0))}
-        {metric("API endpoint", api_football_2024.get("successful_endpoints", 0))}
-        {metric("API 2024 fikstür", data_catalog.get("api_football_2024_fixtures", 0))}
-        {metric("API derin havuz", data_catalog.get("api_football_2024_deep_combined_player_pool", 0))}
-        {metric("Alias kaydı", data_catalog.get("player_alias_entries", 0))}
-        {metric("Lig oyuncusu", league_intelligence.get("players", 0))}
-        {metric("Scout blueprint", team_blueprints.get("candidate_links", 0))}
-        {metric("Ambar satırı", sum(warehouse_quality.get("table_counts", {}).values()))}
+      <summary>Sistem ve veri kalitesi araçları</summary>
+      <div style="padding:0 0 14px;">
+        <div class="cards">{admin_section}</div>
       </div>
     </details>
-    <div class="section-title"><h2>Tüm analiz araçları</h2><p>Model denetimi, scout ve veri ekranları</p></div>
-    <div class="cards">{module_cards}</div>
     <div class="split">
       <section>
         <h2>Ürün Gerçekliği</h2>

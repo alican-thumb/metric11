@@ -365,14 +365,16 @@ def build_markdown(payload: dict[str, Any]) -> str:
         "| Alan | Metrik | Değer | Durum | Öncelik | Öneri |",
         "|---|---|---:|---|---|---|",
     ]
+    _status_tr = {"PASS": "✓", "WATCH": "⚠ İzle", "FAIL": "✗ Sorun"}
+    _priority_tr = {"HIGH": "Yüksek", "MEDIUM": "Orta", "LOW": "Düşük"}
     for check in payload["checks"]:
         lines.append(
             "| {area} | {metric} | {value} | {status} | {priority} | {recommendation} |".format(
                 area=check["area"],
                 metric=check["metric"],
                 value=format_value(check["value"]),
-                status=check["status"],
-                priority=check["priority"],
+                status=_status_tr.get(check["status"], check["status"]),
+                priority=_priority_tr.get(check["priority"], check["priority"]),
                 recommendation=check["recommendation"],
             )
         )
@@ -380,9 +382,8 @@ def build_markdown(payload: dict[str, Any]) -> str:
     lines.extend(["", "## Öncelikli Aksiyonlar", ""])
     if payload["priorities"]:
         for item in payload["priorities"]:
-            lines.append(
-                f"- {item['priority']} | {item['area']} / {item['metric']}: {item['recommendation']}"
-            )
+            priority_tr = {"HIGH": "Yüksek öncelik", "MEDIUM": "Orta öncelik", "LOW": "Düşük öncelik"}.get(item["priority"], item["priority"])
+            lines.append(f"- **{priority_tr}** — {item['area']} / {item['metric']}: {item['recommendation']}")
     else:
         lines.append("- Kritik takip maddesi yok.")
 

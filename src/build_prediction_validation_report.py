@@ -148,8 +148,10 @@ def build_markdown(payload: dict) -> str:
         "## Kalite Kapıları",
         "",
     ]
+    _status_icon = {"PASS": "✓", "WARN": "⚠", "FAIL": "✗"}
     for gate in payload["quality_gates"]:
-        lines.append(f"- {gate['status']}: {gate['name']} - {gate['description']}")
+        icon = _status_icon.get(gate["status"], gate["status"])
+        lines.append(f"- {icon} {gate['name']} — {gate['description']}")
     lines.extend(
         [
             "",

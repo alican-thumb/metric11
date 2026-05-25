@@ -63,88 +63,88 @@
 <td>coverage</td>
 <td>season_match_rows</td>
 <td>306</td>
-<td>PASS</td>
-<td>LOW</td>
+<td>✓</td>
+<td>Düşük</td>
 <td>Sezon kapsamı 306 maç civarında kalmalı; düşüş olursa collector/parser kontrol edilmeli.</td>
 </tr>
 <tr>
 <td>coverage</td>
 <td>matches_missing_referee</td>
 <td>0</td>
-<td>PASS</td>
-<td>LOW</td>
+<td>✓</td>
+<td>Düşük</td>
 <td>Hakem eksikleri kart ve büyük maç risk modelini doğrudan zayıflatır.</td>
 </tr>
 <tr>
 <td>player_profiles</td>
 <td>players_missing_age_profile</td>
 <td>missing=0, total=691, missing_pct=0.0</td>
-<td>PASS</td>
-<td>LOW</td>
+<td>✓</td>
+<td>Düşük</td>
 <td>Yaş/profil kapsamı scout ve kontrat fırsatı skorunun temel girdisi.</td>
 </tr>
 <tr>
 <td>player_profiles</td>
 <td>tff_transfermarkt_in_scope_match_rate_pct</td>
 <td>matched=498, in_scope=626, pct=79.6</td>
-<td>WATCH</td>
-<td>HIGH</td>
+<td>⚠ İzle</td>
+<td>Yüksek</td>
 <td>Snapshot kapsamındaki eşleşmeyen oyuncular alias/transfer inceleme kuyruğunda doğrulanmadan piyasa değeri veya pozisyon olarak kullanılmamalı.</td>
 </tr>
 <tr>
 <td>scouting</td>
 <td>unmatched_players_blocking_scout_review</td>
 <td>0</td>
-<td>PASS</td>
-<td>LOW</td>
+<td>✓</td>
+<td>Düşük</td>
 <td>Scout kuyruğunu bloke eden oyuncular için aynı kulüp Transfermarkt adı veya resmi profil doğrulanmalı; doğrulanmadan rol önerisi yayınlanmamalı.</td>
 </tr>
 <tr>
 <td>model</td>
 <td>besiktas_display_prediction_accuracy_pct</td>
 <td>correct=19, total=29, pct=65.5</td>
-<td>WATCH</td>
-<td>HIGH</td>
+<td>⚠ İzle</td>
+<td>Yüksek</td>
 <td>Ekran ayarı aynı sezonda geliştirildi; yeni sezon veya ayrılmış sezonda sabit kurallarla doğrulanmadan genel başarı iddiası yapılmamalı.</td>
 </tr>
 <tr>
 <td>model</td>
 <td>draw_recall_pct</td>
 <td>draw_predicted=2, draw_total=9, pct=22.2</td>
-<td>WATCH</td>
-<td>HIGH</td>
+<td>⚠ İzle</td>
+<td>Yüksek</td>
 <td>Beraberlik sadece çok yüksek risk ve dar olasılık farkında ekran tahminine çekilmeli; diğer durumlarda korumalı senaryo dili kullanılmalı.</td>
 </tr>
 <tr>
 <td>calibration</td>
 <td>wrong_predictions_with_high_confidence_pct</td>
 <td>wrong_high_confidence=1, wrong_total=10, pct=10.0</td>
-<td>PASS</td>
-<td>MEDIUM</td>
+<td>✓</td>
+<td>Orta</td>
 <td>Yüksek güvenli hatalarda xG farkı, büyük maç ve beraberlik risk bayrakları güveni aşağı çekmeli.</td>
 </tr>
 <tr>
 <td>goal_candidates</td>
 <td>top_5_hit_pct</td>
 <td>hits=20, matches=26, pct=76.9</td>
-<td>WATCH</td>
-<td>MEDIUM</td>
+<td>⚠ İzle</td>
+<td>Orta</td>
 <td>Aday tipleri ayrı backtest edilmeli: primary, penaltı, duran top/defans ve yedek etki.</td>
 </tr>
 <tr>
 <td>goal_candidates</td>
 <td>top_8_hit_pct</td>
 <td>hits=22, matches=26, pct=84.6</td>
-<td>WATCH</td>
-<td>MEDIUM</td>
+<td>⚠ İzle</td>
+<td>Orta</td>
 <td>Aday tipleri ayrı backtest edilmeli: primary, penaltı, duran top/defans ve yedek etki.</td>
 </tr>
 <tr>
 <td>scouting</td>
 <td>low_position_confidence_pct</td>
 <td>low_confidence=0, total=275, pct=0.0</td>
-<td>PASS</td>
-<td>MEDIUM</td>
+<td>✓</td>
+<td>Orta</td>
 <td>Düşük güvenli scout adayları doğrudan pozisyon, boy, ayak ve aksiyon verisiyle zenginleştirilmeli.</td>
 </tr>
 </tbody></table>
@@ -152,11 +152,11 @@
 <h2>Öncelikli Aksiyonlar</h2>
 
 <ul>
-<li>HIGH | model / besiktas_display_prediction_accuracy_pct: Ekran ayarı aynı sezonda geliştirildi; yeni sezon veya ayrılmış sezonda sabit kurallarla doğrulanmadan genel başarı iddiası yapılmamalı.</li>
-<li>HIGH | model / draw_recall_pct: Beraberlik sadece çok yüksek risk ve dar olasılık farkında ekran tahminine çekilmeli; diğer durumlarda korumalı senaryo dili kullanılmalı.</li>
-<li>HIGH | player_profiles / tff_transfermarkt_in_scope_match_rate_pct: Snapshot kapsamındaki eşleşmeyen oyuncular alias/transfer inceleme kuyruğunda doğrulanmadan piyasa değeri veya pozisyon olarak kullanılmamalı.</li>
-<li>MEDIUM | goal_candidates / top_5_hit_pct: Aday tipleri ayrı backtest edilmeli: primary, penaltı, duran top/defans ve yedek etki.</li>
-<li>MEDIUM | goal_candidates / top_8_hit_pct: Aday tipleri ayrı backtest edilmeli: primary, penaltı, duran top/defans ve yedek etki.</li>
+<li><strong>Yüksek öncelik</strong> — model / besiktas_display_prediction_accuracy_pct: Ekran ayarı aynı sezonda geliştirildi; yeni sezon veya ayrılmış sezonda sabit kurallarla doğrulanmadan genel başarı iddiası yapılmamalı.</li>
+<li><strong>Yüksek öncelik</strong> — model / draw_recall_pct: Beraberlik sadece çok yüksek risk ve dar olasılık farkında ekran tahminine çekilmeli; diğer durumlarda korumalı senaryo dili kullanılmalı.</li>
+<li><strong>Yüksek öncelik</strong> — player_profiles / tff_transfermarkt_in_scope_match_rate_pct: Snapshot kapsamındaki eşleşmeyen oyuncular alias/transfer inceleme kuyruğunda doğrulanmadan piyasa değeri veya pozisyon olarak kullanılmamalı.</li>
+<li><strong>Orta öncelik</strong> — goal_candidates / top_5_hit_pct: Aday tipleri ayrı backtest edilmeli: primary, penaltı, duran top/defans ve yedek etki.</li>
+<li><strong>Orta öncelik</strong> — goal_candidates / top_8_hit_pct: Aday tipleri ayrı backtest edilmeli: primary, penaltı, duran top/defans ve yedek etki.</li>
 </ul>
 
 <h2>Tahmin Karışıklık Matrisi</h2>
