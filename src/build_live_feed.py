@@ -170,7 +170,7 @@ def build_html() -> str:
     _state, banner_css, dot_css, window_msg = _window_state()
 
     now_str = datetime.now(timezone.utc).strftime("%d.%m.%Y %H:%M UTC")
-    articles_html = "".join(_article_html(a) for a in articles) or "<p style='color:var(--muted);padding:16px 0'>Henüz makale yok.</p>"
+    articles_html = "".join(_article_html(a) for a in articles[:6]) or "<p style='color:var(--muted);padding:16px 0'>Henüz sinyal yok.</p>"
     transfers_html = "".join(_transfer_html(t) for t in transfers_show) or "<p style='color:var(--muted);padding:16px 0'>Henüz transfer kaydı yok.</p>"
 
     return f"""<!DOCTYPE html>
@@ -237,30 +237,38 @@ def build_html() -> str:
       {_pill(str(official_count), "Resmi Transfer", "#16a34a")}
       {_pill(str(signals_count), "Transfer Sinyali", "#d97706")}
       {_pill(str(free_agents), "Serbest Kalacak", "#2563eb")}
-      {_pill(str(final_year), "Son Yıl Kontrat", "#7c3aed")}
+      {_pill(str(final_year), "Son Y&#x131;l Kontrat", "#7c3aed")}
     </div>
     <div class="panel">
-      <h2>Son Haberler</h2>
-      <div class="sub">{len(articles)} haber · Basın + Kulüp Siteleri + Sosyal Sinyaller</div>
+      <h2>Transferler</h2>
+      <div class="sub">Resmi &middot; Do&#x11f;rulanm&#x131;&#x15f; &middot; TM Onayl&#x131;</div>
+      {transfers_html}
+      <a class="see-more" href="transfer_tracker_{SEASON}.html">T&#xfc;m transfer takibine git &#x2192;</a>
+    </div>
+    <div class="panel" style="margin-top:16px">
+      <h2>Haber Sinyalleri</h2>
+      <div class="sub">Son 14 g&#xfc;n &middot; Bas&#x131;n + Resmi Kul&#xfc;p + Google News</div>
       {articles_html}
-      <a class="see-more" href="news_intelligence_dashboard_{SEASON}.html">Tüm haberleri gör →</a>
+      <a class="see-more" href="news_intelligence_dashboard_{SEASON}.html">Detayl&#x131; haber analizi &#x2192;</a>
     </div>
   </div>
   <div style="display:flex;flex-direction:column;gap:16px">
-    <div class="panel">
-      <h2>Transferler</h2>
-      <div class="sub">Resmi · Doğrulanmış · TM Onaylı</div>
-      {transfers_html}
-      <a class="see-more" href="transfer_tracker_{SEASON}.html">Transfer takibine git →</a>
-    </div>
     <div class="panel" style="font-size:13px">
-      <h2 style="margin-bottom:12px">Araçlar</h2>
+      <h2 style="margin-bottom:14px">Analiz Platformu</h2>
+      <div style="font-size:10px;font-weight:700;color:var(--muted);letter-spacing:.06em;margin-bottom:6px;text-transform:uppercase">Transfer &amp; Kadro</div>
+      <div style="display:flex;flex-direction:column;gap:7px;margin-bottom:14px">
+        <a href="transfer_recommendation_report_{SEASON}.html" style="color:var(--green);text-decoration:none;font-weight:600">&#x2192; Tak&#x131;m transfer &#xf6;nerileri</a>
+        <a href="transfer_season_context_{SEASON}.html" style="color:var(--green);text-decoration:none">&#x2192; Serbest kalacak oyuncular</a>
+        <a href="transfer_tracker_{SEASON}.html" style="color:var(--green);text-decoration:none">&#x2192; Transfer takip listesi</a>
+      </div>
+      <div style="font-size:10px;font-weight:700;color:var(--muted);letter-spacing:.06em;margin-bottom:6px;text-transform:uppercase">Ma&#xe7; &amp; Tahmin</div>
+      <div style="display:flex;flex-direction:column;gap:7px;margin-bottom:14px">
+        <a href="all_teams_preview_dashboard_{SEASON}.html" style="color:var(--green);text-decoration:none;font-weight:600">&#x2192; Ma&#xe7; &#xf6;n&#xfc; ar&#x15f;ivi (18 tak&#x131;m)</a>
+        <a href="football_command_center_{SEASON}.html" style="color:var(--green);text-decoration:none">&#x2192; Analiz merkezi</a>
+      </div>
+      <div style="font-size:10px;font-weight:700;color:var(--muted);letter-spacing:.06em;margin-bottom:6px;text-transform:uppercase">T&#xfc;m Ara&#xe7;lar</div>
       <div style="display:flex;flex-direction:column;gap:7px">
-        <a href="transfer_season_context_{SEASON}.html" style="color:var(--green);text-decoration:none">→ Serbest kalacak oyuncular</a>
-        <a href="transfer_recommendation_report_{SEASON}.html" style="color:var(--green);text-decoration:none">→ Takım transfer önerileri</a>
-        <a href="all_teams_preview_dashboard_{SEASON}.html" style="color:var(--green);text-decoration:none">→ Maç önü arşivi (2025/26)</a>
-        <a href="football_command_center_{SEASON}.html" style="color:var(--green);text-decoration:none">→ Komuta merkezi</a>
-        <a href="football_intelligence_home.html" style="color:var(--green);text-decoration:none">→ Tüm araçlar</a>
+        <a href="football_intelligence_home.html" style="color:var(--green);text-decoration:none">&#x2192; Platform ana sayfas&#x131;</a>
       </div>
     </div>
   </div>

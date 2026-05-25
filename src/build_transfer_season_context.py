@@ -417,10 +417,9 @@ def main() -> None:
         "</a>"
         "<nav style='display:flex;gap:2px;overflow-x:auto;scrollbar-width:none'>"
         "<a style='white-space:nowrap;color:#8fa89a;padding:8px 11px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600' href='/'>G&#xfc;ndem</a>"
-        "<a style='white-space:nowrap;color:#8fa89a;padding:8px 11px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600' href='transfer_tracker_2025_2026.html'>Transferler</a>"
+        "<a style='white-space:nowrap;background:#162b20;color:white;padding:8px 11px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600' href='transfer_tracker_2025_2026.html'>Transferler</a>"
         "<a style='white-space:nowrap;color:#8fa89a;padding:8px 11px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600' href='all_teams_preview_dashboard_2025_2026.html'>Ma&#xe7; &#xd6;n&#xfc;</a>"
         "<a style='white-space:nowrap;color:#8fa89a;padding:8px 11px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600' href='transfer_recommendation_report_2025_2026.html'>Scout</a>"
-        "<a style='white-space:nowrap;background:#162b20;color:white;padding:8px 11px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600' href='transfer_season_context_2025_2026.html'>Transfer Sezonu</a>"
         "<a style='white-space:nowrap;color:#8fa89a;padding:8px 11px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600' href='football_intelligence_home.html'>Analiz</a>"
         "</nav></div>",
         "<div style='max-width:1100px;margin:0 auto'>",
