@@ -208,6 +208,7 @@ def build_html(payload: dict) -> str:
       <a href="besiktas_2025_2026_dashboard_chronological.html">Maç Önü</a>
       <a href="transfer_recommendation_report_2025_2026.html">Scout</a>
       <a href="all_teams_preview_dashboard_2025_2026.html">Lig</a>
+      <a href="system_status.html">Durum</a>
     </nav>
   </div>
   <header>
@@ -307,6 +308,7 @@ def build_html(payload: dict) -> str:
       <section><h2>Zayıf Gol Adayı Kuyruğu</h2><table><thead><tr><th>Oyuncu</th><th>Tip</th><th>Top 5</th><th>İsabet</th><th>Aksiyon</th></tr></thead><tbody>{weak_goal_rows}</tbody></table></section>
     </div>
   </main>
+  <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
 """

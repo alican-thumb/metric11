@@ -49,6 +49,7 @@ _NAV = (
     '<a href="besiktas_2025_2026_dashboard_chronological.html">Maç Önü</a>'
     '<a href="transfer_recommendation_report_2025_2026.html">Scout</a>'
     '<a href="all_teams_preview_dashboard_2025_2026.html">Lig</a>'
+    '<a href="system_status.html">Durum</a>'
     '</nav>'
     '</div>'
 )
@@ -70,6 +71,7 @@ def page_html(title: str, body_html: str) -> str:
         f'    <a class="back-link" href="football_intelligence_home.html">Ana sayfaya dön</a>\n'
         f"    {body_html}\n"
         "  </div>\n"
+        '  <script defer src="/_vercel/insights/script.js"></script>\n'
         "</body>\n"
         "</html>"
     )

@@ -7,25 +7,25 @@
 
 | Alan | Metrik | Değer | Durum | Öncelik | Öneri |
 |---|---|---:|---|---|---|
-| coverage | season_match_rows | 306 | PASS | LOW | Sezon kapsamı 306 maç civarında kalmalı; düşüş olursa collector/parser kontrol edilmeli. |
-| coverage | matches_missing_referee | 0 | PASS | LOW | Hakem eksikleri kart ve büyük maç risk modelini doğrudan zayıflatır. |
-| player_profiles | players_missing_age_profile | missing=0, total=691, missing_pct=0.0 | PASS | LOW | Yaş/profil kapsamı scout ve kontrat fırsatı skorunun temel girdisi. |
-| player_profiles | tff_transfermarkt_in_scope_match_rate_pct | matched=498, in_scope=626, pct=79.6 | WATCH | HIGH | Snapshot kapsamındaki eşleşmeyen oyuncular alias/transfer inceleme kuyruğunda doğrulanmadan piyasa değeri veya pozisyon olarak kullanılmamalı. |
-| scouting | unmatched_players_blocking_scout_review | 0 | PASS | LOW | Scout kuyruğunu bloke eden oyuncular için aynı kulüp Transfermarkt adı veya resmi profil doğrulanmalı; doğrulanmadan rol önerisi yayınlanmamalı. |
-| model | besiktas_display_prediction_accuracy_pct | correct=19, total=29, pct=65.5 | WATCH | HIGH | Ekran ayarı aynı sezonda geliştirildi; yeni sezon veya ayrılmış sezonda sabit kurallarla doğrulanmadan genel başarı iddiası yapılmamalı. |
-| model | draw_recall_pct | draw_predicted=2, draw_total=9, pct=22.2 | WATCH | HIGH | Beraberlik sadece çok yüksek risk ve dar olasılık farkında ekran tahminine çekilmeli; diğer durumlarda korumalı senaryo dili kullanılmalı. |
-| calibration | wrong_predictions_with_high_confidence_pct | wrong_high_confidence=1, wrong_total=10, pct=10.0 | PASS | MEDIUM | Yüksek güvenli hatalarda xG farkı, büyük maç ve beraberlik risk bayrakları güveni aşağı çekmeli. |
-| goal_candidates | top_5_hit_pct | hits=20, matches=26, pct=76.9 | WATCH | MEDIUM | Aday tipleri ayrı backtest edilmeli: primary, penaltı, duran top/defans ve yedek etki. |
-| goal_candidates | top_8_hit_pct | hits=22, matches=26, pct=84.6 | WATCH | MEDIUM | Aday tipleri ayrı backtest edilmeli: primary, penaltı, duran top/defans ve yedek etki. |
-| scouting | low_position_confidence_pct | low_confidence=0, total=275, pct=0.0 | PASS | MEDIUM | Düşük güvenli scout adayları doğrudan pozisyon, boy, ayak ve aksiyon verisiyle zenginleştirilmeli. |
+| coverage | season_match_rows | 306 | ✓ | Düşük | Sezon kapsamı 306 maç civarında kalmalı; düşüş olursa collector/parser kontrol edilmeli. |
+| coverage | matches_missing_referee | 0 | ✓ | Düşük | Hakem eksikleri kart ve büyük maç risk modelini doğrudan zayıflatır. |
+| player_profiles | players_missing_age_profile | missing=0, total=691, missing_pct=0.0 | ✓ | Düşük | Yaş/profil kapsamı scout ve kontrat fırsatı skorunun temel girdisi. |
+| player_profiles | tff_transfermarkt_in_scope_match_rate_pct | matched=498, in_scope=626, pct=79.6 | ⚠ İzle | Yüksek | Snapshot kapsamındaki eşleşmeyen oyuncular alias/transfer inceleme kuyruğunda doğrulanmadan piyasa değeri veya pozisyon olarak kullanılmamalı. |
+| scouting | unmatched_players_blocking_scout_review | 0 | ✓ | Düşük | Scout kuyruğunu bloke eden oyuncular için aynı kulüp Transfermarkt adı veya resmi profil doğrulanmalı; doğrulanmadan rol önerisi yayınlanmamalı. |
+| model | besiktas_display_prediction_accuracy_pct | correct=19, total=29, pct=65.5 | ⚠ İzle | Yüksek | Ekran ayarı aynı sezonda geliştirildi; yeni sezon veya ayrılmış sezonda sabit kurallarla doğrulanmadan genel başarı iddiası yapılmamalı. |
+| model | draw_recall_pct | draw_predicted=2, draw_total=9, pct=22.2 | ⚠ İzle | Yüksek | Beraberlik sadece çok yüksek risk ve dar olasılık farkında ekran tahminine çekilmeli; diğer durumlarda korumalı senaryo dili kullanılmalı. |
+| calibration | wrong_predictions_with_high_confidence_pct | wrong_high_confidence=1, wrong_total=10, pct=10.0 | ✓ | Orta | Yüksek güvenli hatalarda xG farkı, büyük maç ve beraberlik risk bayrakları güveni aşağı çekmeli. |
+| goal_candidates | top_5_hit_pct | hits=20, matches=26, pct=76.9 | ⚠ İzle | Orta | Aday tipleri ayrı backtest edilmeli: primary, penaltı, duran top/defans ve yedek etki. |
+| goal_candidates | top_8_hit_pct | hits=22, matches=26, pct=84.6 | ⚠ İzle | Orta | Aday tipleri ayrı backtest edilmeli: primary, penaltı, duran top/defans ve yedek etki. |
+| scouting | low_position_confidence_pct | low_confidence=0, total=275, pct=0.0 | ✓ | Orta | Düşük güvenli scout adayları doğrudan pozisyon, boy, ayak ve aksiyon verisiyle zenginleştirilmeli. |
 
 ## Öncelikli Aksiyonlar
 
-- HIGH | model / besiktas_display_prediction_accuracy_pct: Ekran ayarı aynı sezonda geliştirildi; yeni sezon veya ayrılmış sezonda sabit kurallarla doğrulanmadan genel başarı iddiası yapılmamalı.
-- HIGH | model / draw_recall_pct: Beraberlik sadece çok yüksek risk ve dar olasılık farkında ekran tahminine çekilmeli; diğer durumlarda korumalı senaryo dili kullanılmalı.
-- HIGH | player_profiles / tff_transfermarkt_in_scope_match_rate_pct: Snapshot kapsamındaki eşleşmeyen oyuncular alias/transfer inceleme kuyruğunda doğrulanmadan piyasa değeri veya pozisyon olarak kullanılmamalı.
-- MEDIUM | goal_candidates / top_5_hit_pct: Aday tipleri ayrı backtest edilmeli: primary, penaltı, duran top/defans ve yedek etki.
-- MEDIUM | goal_candidates / top_8_hit_pct: Aday tipleri ayrı backtest edilmeli: primary, penaltı, duran top/defans ve yedek etki.
+- **Yüksek öncelik** — model / besiktas_display_prediction_accuracy_pct: Ekran ayarı aynı sezonda geliştirildi; yeni sezon veya ayrılmış sezonda sabit kurallarla doğrulanmadan genel başarı iddiası yapılmamalı.
+- **Yüksek öncelik** — model / draw_recall_pct: Beraberlik sadece çok yüksek risk ve dar olasılık farkında ekran tahminine çekilmeli; diğer durumlarda korumalı senaryo dili kullanılmalı.
+- **Yüksek öncelik** — player_profiles / tff_transfermarkt_in_scope_match_rate_pct: Snapshot kapsamındaki eşleşmeyen oyuncular alias/transfer inceleme kuyruğunda doğrulanmadan piyasa değeri veya pozisyon olarak kullanılmamalı.
+- **Orta öncelik** — goal_candidates / top_5_hit_pct: Aday tipleri ayrı backtest edilmeli: primary, penaltı, duran top/defans ve yedek etki.
+- **Orta öncelik** — goal_candidates / top_8_hit_pct: Aday tipleri ayrı backtest edilmeli: primary, penaltı, duran top/defans ve yedek etki.
 
 ## Tahmin Karışıklık Matrisi
 

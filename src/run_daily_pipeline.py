@@ -54,6 +54,7 @@ DEFAULT_COMMANDS = [
     ["python", "-m", "src.build_news_intelligence_report"],
     ["python", "-m", "src.build_command_center"],
     ["python", "-m", "src.build_product_home"],
+    ["python", "-m", "src.build_status_page"],
 ]
 
 NETWORK_COMMANDS = [

@@ -17,9 +17,9 @@
 
 ## Kalite Kapıları
 
-- PASS: Takım dışı kalibrasyon engeli - Beşiktaş için ayarlanmış ekran düzeltmesi diğer takımlarda uygulanmaz.
-- PASS: Bağımsız doğrulama - Sezon ortası (hafta 18+) walk-forward OOS testi eklendi: %53.6 doğruluk, HIGH güven %60.4. oos_validation raporu güncel.
-- PASS: Yayın dili - Lig-geneli raporda hedef takım ve rakip isimleri tahmin etiketine doğru yazılır.
+- ✓ Takım dışı kalibrasyon engeli — Beşiktaş için ayarlanmış ekran düzeltmesi diğer takımlarda uygulanmaz.
+- ✓ Bağımsız doğrulama — Sezon ortası (hafta 18+) walk-forward OOS testi eklendi: %53.6 doğruluk, HIGH güven %60.4. oos_validation raporu güncel.
+- ✓ Yayın dili — Lig-geneli raporda hedef takım ve rakip isimleri tahmin etiketine doğru yazılır.
 
 ## Sonraki Doğrulama
 
