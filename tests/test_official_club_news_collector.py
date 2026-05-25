@@ -1,10 +1,26 @@
+import json
 import unittest
+from pathlib import Path
 from unittest.mock import Mock, patch
 
 from src.collect_official_club_news import collect_sources, extract_candidate_links, fetch_article
 
 
 class OfficialClubNewsCollectorTests(unittest.TestCase):
+    def test_active_source_coverage_matches_current_league_clubs(self):
+        root = Path(__file__).resolve().parents[1]
+        sources = json.loads((root / "data/manual/official_club_news_sources.json").read_text(encoding="utf-8"))[
+            "sources"
+        ]
+        clubs = json.loads((root / "data/manual/transfermarkt_super_lig_clubs.json").read_text(encoding="utf-8"))[
+            "clubs"
+        ]
+
+        active_source_teams = {source["team"] for source in sources if source.get("current_league", True)}
+        current_club_teams = {club["team_name"] for club in clubs}
+
+        self.assertEqual(active_source_teams, current_club_teams)
+
     def test_extract_candidate_links_keeps_only_official_signal_links(self):
         html = """
         <a href="/haber/transfer-imza">Yeni transferimiz imzayı attı</a>
@@ -67,6 +83,8 @@ class OfficialClubNewsCollectorTests(unittest.TestCase):
 
         self.assertEqual(payload["collection_status"], "PARTIAL_SUCCESS")
         self.assertEqual(payload["successful_sources"], 1)
+        self.assertEqual(payload["current_league_sources"], 2)
+        self.assertEqual(payload["successful_current_league_sources"], 1)
         self.assertIn("site unavailable", payload["sources"][1]["error"])
 
 

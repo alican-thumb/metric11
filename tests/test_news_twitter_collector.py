@@ -6,7 +6,7 @@ from types import SimpleNamespace
 from unittest.mock import patch
 
 import src.collect_news_twitter as twitter_collector
-from src.collect_news_twitter import _parse_api_post, _parse_entry
+from src.collect_news_twitter import _build_payload, _parse_api_post, _parse_entry
 
 
 class TwitterCollectorTests(unittest.TestCase):
@@ -72,7 +72,20 @@ class TwitterCollectorTests(unittest.TestCase):
         self.assertEqual(payload["collection_status"], "MISSING_CREDENTIALS")
         self.assertEqual(payload["provider"], "x_api")
         self.assertEqual(payload["official_club_accounts"], 18)
+        self.assertEqual(payload["monitored_official_club_accounts"], 19)
         self.assertEqual(payload["total_tweets"], 0)
+
+    def test_secondary_team_accounts_are_not_official_club_coverage(self):
+        payload = _build_payload(
+            provider="x_api",
+            tweets=[],
+            accounts=[],
+            collection_status="MISSING_CREDENTIALS",
+            provider_error="missing",
+        )
+
+        self.assertEqual(payload["official_club_accounts"], 18)
+        self.assertLess(payload["official_club_accounts"], payload["configured_accounts"])
 
 
 if __name__ == "__main__":

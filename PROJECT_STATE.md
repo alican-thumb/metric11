@@ -1246,12 +1246,12 @@ Bir sonraki oturumda önce `PROJECT_STATE.md` okunmalı. Ardından öncelik:
 
 ## 2026-05-25 Haber Pipeline ve Transfer Sezonu Bağlam Raporu
 
-- RSS haber toplayıcısı eklendi (`src/collect_news_rss.py`): 6 Türk spor kaynağından 210+ makale/çalıştırma.
-- Twitter/X toplayıcısı genişletildi (`src/collect_news_twitter.py`): 18 resmi kulüp dahil 30 hesabı izler; `X_BEARER_TOKEN` varsa resmi X API v2 kullanıcı timeline'ını, yoksa yalnız geliştirme fallback'i olarak Nitter RSS'i kullanır.
-- Anahtar gerektirmeyen resmi kulüp duyuru collector'ı eklendi (`src/collect_official_club_news.py`): 18 Süper Lig kulübünün resmi web haber girişlerini tarar, erişim hatalarını kapsam metriğinde saklar ve resmi duyuruları doğrudan transfer teyit kapısına verir. X artık resmi teyidin zorunlu bağımlılığı değildir.
-- Resmi web collector canlı doğrulaması: `16/18` kulüp sitesine erişildi ve gürültü filtrelemesinden sonra `13` tekil duyuru snapshot'a alındı. Galatasaray TLS sertifika doğrulaması, Eyüpspor ise bu çalışma ortamındaki DNS çözümleme hatası nedeniyle açık hata kaydı olarak tutulur.
-- X collector erişim başarısız olsa bile durum snapshot'ı üretir. Mevcut yerel çıktı `x_api/MISSING_CREDENTIALS`: `0/30` başarılı hesap ve `0` gönderi; resmi sosyal teyit henüz haber analizine girmiyor.
-- Transfer haberleri kaynak teyit kapısından geçer: güncel `210` RSS kaydı ile `13` resmi web duyurusundan ilgili `71` içerik analiz edildi; `18` iddianın `3` adedi resmi, `15` adedi inceleme gerektirir. Yalnız yönü belirlenen resmi `Ernest Muçi`, `Dan Agyei` ve `Laszlo Benes` duyuruları model kullanımına açılır.
+- RSS haber toplayıcısı (`src/collect_news_rss.py`) güncel kodda `15` Türk spor kaynağı yapılandırır.
+- Twitter/X toplayıcısı genişletildi (`src/collect_news_twitter.py`): `45` hesabı izler; bunların `18` adedi aktif 2026/27 lig kulübünün resmi hesabı, Karagümrük dahil `19` resmi kulüp hesabı transfer-geçiş izleme kapsamındadır. `X_BEARER_TOKEN` varsa resmi X API v2 kullanıcı timeline'ını, yoksa durum snapshot'ını üretir.
+- Anahtar gerektirmeyen resmi kulüp duyuru collector'ı eklendi (`src/collect_official_club_news.py`): aktif 2026/27 lig kapsamındaki `18` resmi web kaynağına ek olarak düşen üç kulübü transfer-geçiş izlemesinde korur (`21` yapılandırılmış kaynak). X artık resmi teyidin zorunlu bağımlılığı değildir.
+- Resmi web collector canlı doğrulaması: toplam `19/21`, aktif lig kapsamı `16/18` site erişimi ve gürültü filtresi sonrası `18` tekil duyuru. Galatasaray TLS sertifika doğrulaması ve Eyüpspor DNS çözümleme hatası açık hata kaydı olarak tutulur.
+- X collector erişim başarısız olsa bile durum snapshot'ı üretir. Güncel yerel çıktı `x_api/MISSING_CREDENTIALS`: `0/45` başarılı hesap ve `0` gönderi; underground/sosyal haber katmanı henüz analiz için canlı veri üretmiyor.
+- Transfer haberleri kaynak teyit kapısından geçer: resmi kaynak snapshot'ı yenilendikten sonra `76` ilgili içerik analiz edildi; `19` transfer sinyalinin `3` adedi resmi, `16` adedi inceleme gerektirir. Yalnız yönü belirlenen resmi `Ernest Muçi`, `Dan Agyei` ve `Laszlo Benes` duyuruları model kullanımına açılır.
 - Haber analiz motoru yeniden yazıldı (`src/analyze_news_with_claude.py`): API anahtarı gerektirmeyen kural-tabanlı Türkçe NER sistemi; transfer/sakat/cezalı/yükseliş/sözleşme regex kalıpları, 691 oyuncu veritabanıyla eşleşme. Claude Haiku isteğe bağlı iyileştirici olarak eklendi.
 - Haber istihbarat raporu (`src/build_news_intelligence_report.py`) 4 sekmeye genişletildi: Haber Akışı, Transfer Radar, Sakat/Cezalı, Lig Değişiklikleri. Çorumspor ve diğer yükselen takımlar için yükseliş sinyali tespiti eklendi.
 - Transfer Sezonu Bağlam Raporu eklendi (`src/build_transfer_season_context.py`): 261 sözleşmesi biten oyuncu (€429M toplam değer, Barış Alper Yılmaz €30M önde), 180 son yıl adayı, yükselen takım analizi, transfer penceresi takvimi. Günlük pipeline'a eklendi.
@@ -1281,12 +1281,20 @@ Bir sonraki oturumda önce `PROJECT_STATE.md` okunmalı. Ardından öncelik:
 
 ### Haber Ağı
 
-- RSS kaynakları 8 → 16: NTV Spor, Sporx, Fanatik, Fotomaç, CNN Türk Spor, TRT Spor, Goal.com TR eklendi.
+- RSS kaynakları 8 → 15: NTV Spor, Sporx, Fanatik, Fotomaç, CNN Türk Spor, TRT Spor, Goal.com TR eklendi.
 - Twitter hesapları 30 → 45: transfer_news (ertansuzgun, yusufgunaydn, EkremKonur, FabrizioRomano), analytics (TaktikSehri, kutubolgesi, PassHatasiii, OptaJoe), official (CorumFK1925, ErzurumsporFK, Amedspor), secondary_signal (GizemKaya__, GercekBJK, AmputeFutbol, WebdikBesiktas, KaraKartalBlog), media (HaberKartali).
 - Türkçe ve İngilizce anahtar kelimeler genişletildi (teknik direktör, resmileşti, here we go, signs, deal vb.).
-- GitHub Actions `news-refresh.yml` eklendi: 02:15, 08:15, 14:15, 20:15 UTC → haber yenileme ~2 saatte bir.
+- GitHub Actions `news-refresh.yml` eklendi: 02:15, 08:15, 14:15, 20:15 UTC haber yenileme; günlük full pipeline ayrıca 04:00 UTC'de ağ kaynaklarını yeniler.
 - `detect_squad_changes.py` eklendi: günlük Transfermarkt kadro snapshot'ı alır, değişiklikleri (gelen/giden) karşılaştırır; çıktı `tm_squad_changes_2025_2026.json`.
 - `build_transfer_tracker.py` eklendi: news_intelligence + TM kadro değişikliklerini birleştirerek transfer_tracker HTML ve JSON üretir.
+
+### 2026-05-25 Kapsam ve Pipeline Düzeltmeleri
+
+- `build_transfer_season_context.py` içindeki HTML kapanış string sözdizimi hatası giderildi; ağsız günlük üretim zinciri `47/47` başarılı doğrulandı.
+- X kapsam metriği yalnız aktif ligdeki resmi kulüp hesaplarını sayacak şekilde ayrıştırıldı; ikincil kulüp hesapları resmi kapsamı şişirmiyor. Toplam resmi kulüp izleme sayısı ayrı metrikte korunuyor.
+- Resmi web kaynak yapılandırmasına Çorum FK, Erzurumspor FK ve Amed SFK eklendi. Karagümrük, Antalyaspor ve Kayserispor geçmiş resmi transfer teyitlerini kaybetmemek için `current_league: false` geçiş kaynağı olarak tutuldu.
+- `news-refresh.yml` analiz hatasını `|| true` ile gizlemeyi bıraktı; istihbarat analizi başarısızsa yayımlama zinciri de başarısız sayılacak.
+- Doğrulama: `python -m compileall -q src tests` başarılı; birim test paketi `20/20` başarılı.
 
 ### Gündem Sayfası (Ana Sayfa)
 

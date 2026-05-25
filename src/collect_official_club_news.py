@@ -84,6 +84,7 @@ def collect_sources(sources: list[dict], max_items: int, delay_seconds: float, t
             "team": source["team"],
             "name": source["name"],
             "url": source["url"],
+            "current_league": source.get("current_league", True),
             "fetched": 0,
             "warnings": [],
             "error": None,
@@ -104,6 +105,8 @@ def collect_sources(sources: list[dict], max_items: int, delay_seconds: float, t
     articles = deduplicate(all_articles)
     articles.sort(key=lambda article: article.get("published_at") or "", reverse=True)
     accessible = sum(1 for stat in source_stats if not stat["error"])
+    current_sources = [stat for stat in source_stats if stat["current_league"]]
+    accessible_current = sum(1 for stat in current_sources if not stat["error"])
     status = "SUCCESS" if accessible == len(sources) else ("PARTIAL_SUCCESS" if accessible else "FAILED")
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -112,6 +115,8 @@ def collect_sources(sources: list[dict], max_items: int, delay_seconds: float, t
         "collection_status": status,
         "configured_sources": len(sources),
         "successful_sources": accessible,
+        "current_league_sources": len(current_sources),
+        "successful_current_league_sources": accessible_current,
         "total_articles": len(articles),
         "sources": source_stats,
         "articles": articles,

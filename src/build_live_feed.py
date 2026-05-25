@@ -20,6 +20,7 @@ SOURCE_COLORS = {
     "official_club": ("#16a34a", "#dcfce7", "Resmi Kulüp"),
     "rss":           ("#2563eb", "#dbeafe", "Basın"),
     "twitter":       ("#7c3aed", "#ede9fe", "Twitter"),
+    "telegram":      ("#0e7490", "#cffafe", "Telegram"),
     "official":      ("#16a34a", "#dcfce7", "Resmi"),
 }
 
@@ -181,7 +182,7 @@ def build_html() -> str:
     </div>
     <div class="panel">
       <h2>Son Haberler</h2>
-      <div class="sub">{len(articles)} makale · RSS + Kulüp Siteleri + Twitter</div>
+      <div class="sub">{len(articles)} haber · Basın + Kulüp Siteleri + Sosyal Sinyaller</div>
       {articles_html}
       <a class="see-more" href="news_intelligence_dashboard_{SEASON}.html">Tüm haberleri gör →</a>
     </div>

@@ -94,6 +94,25 @@ class TransferIntelligenceTests(unittest.TestCase):
         self.assertEqual(result["transfers"][0]["verification_status"], "OFFICIAL")
         self.assertTrue(result["transfers"][0]["model_use"])
 
+    def test_two_unscored_telegram_signals_remain_rumors(self):
+        transfer = {
+            "player_name": "Ali Örnek",
+            "from_club": "ALANYASPOR",
+            "to_club": "BEŞİKTAŞ A.Ş.",
+            "signal_type": "offer",
+            "confidence": "HIGH",
+        }
+        result = build_intelligence(
+            [
+                article("tg-a", "Transfer Haber", transfer, source_type="telegram", account_type="secondary_signal"),
+                article("tg-b", "Kulüp Haberleri", transfer, source_type="telegram", account_type="secondary_signal"),
+            ],
+            {},
+        )
+
+        self.assertEqual(result["transfers"][0]["verification_status"], "RUMOR")
+        self.assertFalse(result["transfers"][0]["model_use"])
+
     def test_official_outbound_web_announcement_extracts_destination(self):
         source = {
             "article_id": "bjk-muci",

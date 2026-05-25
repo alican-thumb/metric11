@@ -36,18 +36,24 @@ TWITTER_ACCOUNTS = [
     {"handle": "GalatasaraySK", "name": "Galatasaray Resmi", "team": "GALATASARAY A.Ş.", "type": "official"},
     {"handle": "Fenerbahce", "name": "Fenerbahçe Resmi", "team": "FENERBAHÇE A.Ş.", "type": "official"},
     {"handle": "trabzonspor", "name": "Trabzonspor Resmi", "team": "TRABZONSPOR A.Ş.", "type": "official"},
-    {"handle": "ibfk2014", "name": "RAMS Başakşehir Resmi", "team": "RAMS BAŞAKŞEHİR F.K.", "type": "official"},
+    {"handle": "ibfk2014", "name": "RAMS Başakşehir Resmi", "team": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ", "type": "official"},
     {"handle": "Alanyaspor", "name": "Corendon Alanyaspor Resmi", "team": "CORENDON ALANYASPOR", "type": "official"},
-    {"handle": "Samsunspor", "name": "Samsunspor Resmi", "team": "SAMSUNSPOR", "type": "official"},
-    {"handle": "Goztepe", "name": "Göztepe Resmi", "team": "GÖZTEPE", "type": "official"},
+    {"handle": "Samsunspor", "name": "Samsunspor Resmi", "team": "SAMSUNSPOR A.Ş.", "type": "official"},
+    {"handle": "Goztepe", "name": "Göztepe Resmi", "team": "GÖZTEPE A.Ş.", "type": "official"},
     {"handle": "konyaspor", "name": "TÜMOSAN Konyaspor Resmi", "team": "TÜMOSAN KONYASPOR", "type": "official"},
-    {"handle": "CRizesporAS", "name": "Çaykur Rizespor Resmi", "team": "ÇAYKUR RİZESPOR", "type": "official"},
-    {"handle": "gaziantepfk", "name": "Gaziantep FK Resmi", "team": "GAZİANTEP FK", "type": "official"},
-    {"handle": "kasimpasa", "name": "Kasımpaşa Resmi", "team": "KASIMPAŞA S.K.", "type": "official"},
+    {"handle": "CRizesporAS", "name": "Çaykur Rizespor Resmi", "team": "ÇAYKUR RİZESPOR A.Ş.", "type": "official"},
+    {"handle": "gaziantepfk", "name": "Gaziantep FK Resmi", "team": "GAZİANTEP FUTBOL KULÜBÜ A.Ş.", "type": "official"},
+    {"handle": "kasimpasa", "name": "Kasımpaşa Resmi", "team": "KASIMPAŞA A.Ş.", "type": "official"},
     {"handle": "Kocaelispor", "name": "Kocaelispor Resmi", "team": "KOCAELİSPOR", "type": "official"},
     {"handle": "eyupsporkulubu", "name": "ikas Eyüpspor Resmi", "team": "İKAS EYÜPSPOR", "type": "official"},
-    {"handle": "kirmizikara", "name": "Gençlerbirliği Resmi", "team": "GENÇLERBİRLİĞİ S.K.", "type": "official"},
-    {"handle": "karagumruk_sk", "name": "Fatih Karagümrük Resmi", "team": "FATİH KARAGÜMRÜK", "type": "official"},
+    {"handle": "kirmizikara", "name": "Gençlerbirliği Resmi", "team": "GENÇLERBİRLİĞİ", "type": "official"},
+    {
+        "handle": "karagumruk_sk",
+        "name": "Fatih Karagümrük Resmi",
+        "team": "FATİH KARAGÜMRÜK",
+        "type": "official",
+        "current_league": False,
+    },
     # 2026/27 yeni takımlar
     {"handle": "CorumFK1925", "name": "Çorum FK Resmi", "team": "ÇORUM FK", "type": "official"},
     {"handle": "ErzurumsporFK", "name": "Erzurumspor FK Resmi", "team": "ERZURUMSPOR FK", "type": "official"},
@@ -87,7 +93,7 @@ TWITTER_ACCOUNTS = [
 ]
 
 SUPER_LIG_TEAMS = {
-    # 2025/26 takımları
+    # 2026/27 aktif takımları
     "beşiktaş", "besiktas", "galatasaray", "fenerbahçe", "fenerbahce",
     "trabzonspor", "başakşehir", "basaksehir", "alanyaspor", "samsunspor",
     "göztepe", "goztepe", "konyaspor", "rizespor", "gaziantep",
@@ -388,7 +394,14 @@ def _build_payload(
         "collection_status": collection_status,
         "provider_error": provider_error,
         "configured_accounts": len(TWITTER_ACCOUNTS),
-        "official_club_accounts": sum(1 for account in TWITTER_ACCOUNTS if account.get("team")),
+        "official_club_accounts": sum(
+            1
+            for account in TWITTER_ACCOUNTS
+            if account["type"] == "official" and account.get("team") and account.get("current_league", True)
+        ),
+        "monitored_official_club_accounts": sum(
+            1 for account in TWITTER_ACCOUNTS if account["type"] == "official" and account.get("team")
+        ),
         "successful_accounts": sum(1 for account in accounts if not account.get("error")),
         "total_tweets": len(tweets),
         "accounts": accounts,
