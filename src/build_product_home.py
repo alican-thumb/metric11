@@ -16,8 +16,6 @@ def main() -> None:
     output = Path(args.output)
     html = build_html()
     output.write_text(html, encoding="utf-8")
-    index = output.parent / "index.html"
-    index.write_text(html, encoding="utf-8")
     print(output)
 
 
@@ -57,12 +55,6 @@ def build_html() -> str:
             "Tahmin performansı, Beşiktaş maç önü arşivi, gol adayları, FM scout ve takım ihtiyacını tek ekranda toplar.",
             "football_command_center_2025_2026.html",
             "tek ekran",
-        ),
-        panel_card(
-            "Beşiktaş Maç Önü Zeka Paneli",
-            "Form, skor senaryoları, kadro tercihi, sakat/cezalı uygunluk sinyali, kart riski, gol adayları, model kontrolü ve anlatılı maç önü raporu.",
-            "besiktas_2025_2026_dashboard_chronological.html",
-            f"{preview_summary.get('generated_reports', 0)} rapor",
         ),
         panel_card(
             "Tüm Takım Maç Önü Arşivi",
@@ -246,14 +238,17 @@ def build_html() -> str:
     }}
     * {{ box-sizing:border-box; }}
     body {{ margin:0; font-family:Inter, "Segoe UI", Arial, sans-serif; background:var(--bg); color:var(--ink); }}
-    .topbar {{ position:sticky; top:0; z-index:5; display:flex; align-items:center; justify-content:space-between; gap:20px; min-height:64px; padding:0 clamp(16px,4vw,42px); background:var(--dark); color:white; border-bottom:1px solid #203328; }}
-    .brand {{ display:flex; gap:11px; align-items:center; font-weight:800; font-size:19px; }}
-    .brand-mark {{ width:30px; height:30px; display:grid; place-items:center; border-radius:7px; color:var(--dark); background:var(--lime); font-size:15px; }}
-    .season {{ color:#a7b3ab; font-size:12px; font-weight:500; margin-left:4px; }}
-    nav {{ display:flex; gap:4px; flex-wrap:nowrap; overflow-x:auto; overflow-y:hidden; justify-content:flex-end; -webkit-overflow-scrolling:touch; scrollbar-width:none; }}
+    .topbar {{ position:sticky; top:0; z-index:5; display:flex; align-items:center; justify-content:space-between; gap:20px; min-height:58px; padding:0 clamp(16px,4vw,42px); background:var(--dark); color:white; border-bottom:2px solid #1a3023; }}
+    .brand {{ display:flex; gap:10px; align-items:center; font-weight:800; font-size:18px; color:white; text-decoration:none; letter-spacing:-0.2px; }}
+    .brand:visited,.brand:active,.brand:hover {{ color:white; }}
+    .brand-mark {{ width:28px; height:28px; display:grid; place-items:center; border-radius:6px; color:var(--dark); background:var(--lime); font-size:14px; font-weight:900; }}
+    .season {{ color:#6b7c72; font-size:11px; font-weight:500; margin-left:2px; border-left:1px solid #2a3d30; padding-left:8px; }}
+    nav {{ display:flex; gap:2px; flex-wrap:nowrap; overflow-x:auto; overflow-y:hidden; justify-content:flex-end; -webkit-overflow-scrolling:touch; scrollbar-width:none; }}
     nav::-webkit-scrollbar {{ display:none; }}
-    nav a {{ color:#d5ded8; text-decoration:none; font-size:13px; font-weight:600; padding:9px 10px; border-radius:6px; white-space:nowrap; flex-shrink:0; }}
-    nav a:hover, nav a.active {{ background:#162b20; color:white; }}
+    nav a {{ color:#8fa89a; text-decoration:none; font-size:13px; font-weight:600; padding:8px 11px; border-radius:6px; white-space:nowrap; flex-shrink:0; transition:background .15s,color .15s; }}
+    nav a:visited {{ color:#8fa89a; }}
+    nav a:hover {{ background:#162b20; color:white; }}
+    nav a.active {{ background:#162b20; color:white; }}
     header {{ background:#102419; color:white; padding:28px clamp(16px,4vw,42px) 25px; border-bottom:3px solid var(--green); }}
     .matchroom {{ max-width:1360px; margin:0 auto; display:grid; grid-template-columns:minmax(320px,1.05fr) minmax(400px,.95fr); align-items:end; gap:28px; }}
     .overline {{ color:var(--lime); font-size:12px; text-transform:uppercase; font-weight:700; margin-bottom:11px; }}
@@ -304,11 +299,11 @@ def build_html() -> str:
 </head>
 <body>
   <div class="topbar">
-    <a class="brand" href="gundem_2025_2026.html"><span class="brand-mark">11</span> metric11 <span class="season">Süper Lig 2025/26</span></a>
+    <a class="brand" href="/"><span class="brand-mark">11</span> metric11 <span class="season">S&#xfc;per Lig 2025/26</span></a>
     <nav>
-      <a href="gundem_2025_2026.html">Gündem</a>
+      <a href="/">G&#xfc;ndem</a>
       <a href="transfer_tracker_2025_2026.html">Transferler</a>
-      <a href="all_teams_preview_dashboard_2025_2026.html">Maç Önü</a>
+      <a href="all_teams_preview_dashboard_2025_2026.html">Ma&#xe7; &#xd6;n&#xfc;</a>
       <a href="transfer_recommendation_report_2025_2026.html">Scout</a>
       <a class="active" href="football_intelligence_home.html">Analiz</a>
     </nav>
@@ -316,11 +311,11 @@ def build_html() -> str:
   <header>
     <div class="matchroom">
       <div>
-        <div class="overline">Maç günü merkezi</div>
-        <h1>Maçı oku. Kadroyu tartış. Oyuncuyu keşfet.</h1>
-        <p>Skor senaryoları, gol adayları, eksik oyuncu etkisi ve transfer seçenekleri tek sezon veri akışında izleniyor.</p>
+        <div class="overline">S&#xfc;per Lig 2025/26 &mdash; Veri platformu</div>
+        <h1>Ma&#xe7;&#x131; oku. Kadroyu tart&#x131;&#x15f;. Oyuncuyu ke&#x15f;fet.</h1>
+        <p>18 tak&#x131;m i&#xe7;in skor senaryolar&#x131;, gol adaylar&#x131;, scout profilleri ve transfer istihbarat&#x131; tek sezon veri ak&#x131;&#x15f;&#x131;nda izleniyor.</p>
         <div class="hero-actions">
-          <a class="primary" href="besiktas_2025_2026_dashboard_chronological.html">Beşiktaş maç odası</a>
+          <a class="primary" href="all_teams_preview_dashboard_2025_2026.html">Ma&#xe7; &#xd6;n&#xfc; Ar&#x15f;ivi</a>
           <a class="secondary" href="football_command_center_2025_2026.html">Analiz merkezi</a>
         </div>
       </div>
