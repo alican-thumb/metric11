@@ -205,6 +205,26 @@ class TransferIntelligenceTests(unittest.TestCase):
         self.assertIsNone(row["to_club"])
         self.assertFalse(row["model_use"])
 
+    def test_sponsored_and_short_club_names_are_the_same_destination(self):
+        cases = [
+            ("ÇAYKUR RİZESPOR A.Ş.", "Rizespor"),
+            ("RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ", "Başakşehir"),
+            ("İKAS EYÜPSPOR", "Eyüpspor"),
+        ]
+        for current_club, destination in cases:
+            with self.subTest(current_club=current_club):
+                transfer = {
+                    "player_name": "Ali Örnek",
+                    "from_club": current_club,
+                    "to_club": destination,
+                    "signal_type": "offer",
+                    "confidence": "HIGH",
+                }
+                row = build_intelligence([article("same-club", "Hürriyet Spor", transfer)], {})["transfers"][0]
+
+                self.assertEqual(row["verification_status"], "REVIEW_REQUIRED")
+                self.assertIsNone(row["to_club"])
+
 
 if __name__ == "__main__":
     unittest.main()

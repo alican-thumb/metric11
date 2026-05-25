@@ -413,6 +413,16 @@ def _club_key(name: str | None) -> str:
     key = normalize_name(name)
     for suffix in (" A S", " FUTBOL KULUBU", " S K", " FK"):
         key = key.replace(suffix, "")
+    for marker, canonical in (
+        ("BASAKSEHIR", "BASAKSEHIR"),
+        ("ALANYASPOR", "ALANYASPOR"),
+        ("KONYASPOR", "KONYASPOR"),
+        ("RIZESPOR", "RIZESPOR"),
+        ("EYUPSPOR", "EYUPSPOR"),
+        ("GENCLERBIRLIGI", "GENCLERBIRLIGI"),
+    ):
+        if marker in key:
+            return canonical
     return key.strip()
 
 
