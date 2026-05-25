@@ -23,11 +23,24 @@ def main() -> None:
     if input_path.exists():
         intel = json.loads(input_path.read_text(encoding="utf-8"))
     else:
-        # Fallback: build basic intel from raw RSS without Claude analysis
-        rss_path = Path(args.rss_fallback)
-        if not rss_path.exists():
-            raise SystemExit(f"Ne istihbarat dosyası ne de RSS dosyası bulunamadı.")
-        intel = _build_basic_intel_from_rss(json.loads(rss_path.read_text(encoding="utf-8")))
+        # Fallback: tüm ham kaynaklardan temel intel üret (RSS + Google + Telegram)
+        all_articles: list[dict] = []
+        for fname in [
+            f"news_rss_latest_{SEASON}.json",
+            f"news_google_latest_{SEASON}.json",
+            f"news_telegram_latest_{SEASON}.json",
+            f"news_official_clubs_latest_{SEASON}.json",
+        ]:
+            p = PROCESSED_DIR / fname
+            if p.exists():
+                payload = json.loads(p.read_text(encoding="utf-8"))
+                all_articles.extend(payload.get("articles", []))
+        if not all_articles:
+            rss_path = Path(args.rss_fallback)
+            if not rss_path.exists():
+                raise SystemExit("Ne istihbarat dosyasi ne de ham kaynak dosyasi bulunamadi.")
+            all_articles = json.loads(rss_path.read_text(encoding="utf-8")).get("articles", [])
+        intel = _build_basic_intel_from_rss({"articles": all_articles})
 
     html = build_html(intel)
     Path(args.output).write_text(html, encoding="utf-8")

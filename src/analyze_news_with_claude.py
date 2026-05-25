@@ -102,6 +102,8 @@ def main() -> None:
     parser.add_argument("--input", default=str(PROCESSED_DIR / f"news_rss_latest_{SEASON}.json"))
     parser.add_argument("--twitter-input", default=str(PROCESSED_DIR / f"news_twitter_latest_{SEASON}.json"))
     parser.add_argument("--official-input", default=str(PROCESSED_DIR / f"news_official_clubs_latest_{SEASON}.json"))
+    parser.add_argument("--google-input", default=str(PROCESSED_DIR / f"news_google_latest_{SEASON}.json"))
+    parser.add_argument("--telegram-input", default=str(PROCESSED_DIR / f"news_telegram_latest_{SEASON}.json"))
     parser.add_argument("--output-prefix", default=f"news_intelligence_{SEASON}")
     parser.add_argument("--limit", type=int, default=0)
     parser.add_argument("--skip-analyzed", action="store_true", default=True)
@@ -129,8 +131,11 @@ def main() -> None:
     else:
         print("Claude API: devre dışı (kural tabanlı analiz)")
 
-    # Tüm kaynakları birleştir (RSS + X + resmi kulüp web duyuruları)
-    articles = _load_articles(args.input, args.twitter_input, args.official_input)
+    # Tüm kaynakları birleştir (RSS + Google News + Telegram + resmi kulüp web duyuruları)
+    articles = _load_articles(
+        args.input, args.twitter_input, args.official_input,
+        args.google_input, args.telegram_input,
+    )
 
     if args.only_relevant:
         articles = [a for a in articles if a.get("super_lig_relevant")]
@@ -460,23 +465,28 @@ def _merge_analyses(rule_result: dict, claude_result: dict) -> dict:
     return merged
 
 
-def _load_articles(rss_path_str: str, twitter_path_str: str, official_path_str: str | None = None) -> list[dict]:
+def _load_articles(
+    rss_path_str: str,
+    twitter_path_str: str,
+    official_path_str: str | None = None,
+    google_path_str: str | None = None,
+    telegram_path_str: str | None = None,
+) -> list[dict]:
     articles = []
-    rss_path = Path(rss_path_str)
-    if rss_path.exists():
-        payload = json.loads(rss_path.read_text(encoding="utf-8"))
-        articles.extend(payload.get("articles", []))
 
-    twitter_path = Path(twitter_path_str)
-    if twitter_path.exists():
-        payload = json.loads(twitter_path.read_text(encoding="utf-8"))
-        articles.extend(payload.get("tweets", []))
+    def _extend(path_str: str | None, key: str = "articles") -> None:
+        if not path_str:
+            return
+        p = Path(path_str)
+        if p.exists():
+            payload = json.loads(p.read_text(encoding="utf-8"))
+            articles.extend(payload.get(key, []))
 
-    if official_path_str:
-        official_path = Path(official_path_str)
-        if official_path.exists():
-            payload = json.loads(official_path.read_text(encoding="utf-8"))
-            articles.extend(payload.get("articles", []))
+    _extend(rss_path_str, "articles")
+    _extend(twitter_path_str, "tweets")
+    _extend(official_path_str, "articles")
+    _extend(google_path_str, "articles")
+    _extend(telegram_path_str, "articles")
 
     return articles
 
@@ -590,6 +600,8 @@ def _source_tier(article: dict) -> str:
             "transfer_news": "SECONDARY",
             "media": "MEDIA",
         }.get(article.get("account_type"), "SECONDARY")
+    if article.get("source_type") == "telegram":
+        return "SECONDARY"
     if article.get("source_name") == "Anadolu Ajansı Spor":
         return "AGENCY"
     return "MEDIA"
@@ -622,6 +634,9 @@ def _build_transfer_claim(rows: list[dict]) -> dict:
     rows = sorted(rows, key=lambda row: row.get("published_at") or "", reverse=True)
     head = dict(rows[0])
     distinct_sources = list(dict.fromkeys(row.get("source", "?") for row in rows))
+    trusted_sources = {
+        row.get("source", "?") for row in rows if row.get("source_tier") in {"MEDIA", "AGENCY"}
+    }
     evidence = [
         {
             "source": row.get("source"),
@@ -641,7 +656,7 @@ def _build_transfer_claim(rows: list[dict]) -> dict:
     elif official:
         status = "OFFICIAL"
         interpretation = "Resmi kulüp kanalı duyurusu bulundu; işlem resmi transfer bağlamında izlenebilir."
-    elif len(distinct_sources) >= 2:
+    elif len(trusted_sources) >= 2:
         status = "CORROBORATED"
         interpretation = "Birden fazla kaynak aynı yönlü iddiayı taşıyor; resmi açıklama beklenir."
     else:

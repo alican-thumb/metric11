@@ -42,7 +42,7 @@ def _title(name: str) -> str:
 
 def _mv_str(eur: int | None) -> str:
     if not eur:
-        return "—"
+        return "&mdash;"
     if eur >= 1_000_000:
         return f"€{eur / 1_000_000:.1f}M"
     return f"€{eur // 1000}K"
@@ -136,14 +136,14 @@ def _header_section() -> str:
     return f"""
 <div style='background:linear-gradient(135deg,#1e3a5f,#0f172a);border-radius:12px;padding:24px 32px;margin-bottom:24px;'>
   <h1 style='color:#f1f5f9;margin:0 0 8px 0;font-size:24px;'>Transfer Sezonu Bağlam Raporu</h1>
-  <p style='color:#94a3b8;margin:0;font-size:13px;'>{SEASON_LABEL} · Yaz Penceresi: {WINDOW_OPEN} – {WINDOW_CLOSE} · Güncelleme: {now}</p>
+  <p style='color:#94a3b8;margin:0;font-size:13px;'>{SEASON_LABEL} · Yaz Penceresi: {WINDOW_OPEN} &ndash; {WINDOW_CLOSE} · Güncelleme: {now}</p>
 </div>
 """
 
 
 def _summary_bar(free_agents: list, final_year: list, signals: list, promotions: list) -> str:
     total_mv = sum(p.get("market_value_eur") or 0 for p in free_agents)
-    mv_label = f"€{total_mv / 1_000_000:.0f}M" if total_mv >= 1_000_000 else "—"
+    mv_label = f"€{total_mv / 1_000_000:.0f}M" if total_mv >= 1_000_000 else "&mdash;"
     pills = [
         ("🔓", len(free_agents), "Serbest Kalacak", "#ef4444"),
         ("⏳", len(final_year), "Son Yıl Kontrat", "#f59e0b"),
@@ -218,7 +218,7 @@ def _free_agents_section(free_agents: list[dict]) -> str:
 </div>"""
 
     return (
-        _section_title("🔓 Serbest Kalacak Oyuncular", f"Yaz 2026 – {len(free_agents)} oyuncu")
+        _section_title("🔓 Serbest Kalacak Oyuncular", f"Yaz 2026 &ndash; {len(free_agents)} oyuncu")
         + explanation
         + f"<div style='display:flex;gap:12px;flex-wrap:wrap;margin-bottom:20px'>{team_blocks}</div>"
         + _player_table(free_agents, limit=25)
@@ -232,7 +232,7 @@ def _final_year_section(final_year: list[dict]) -> str:
   serbest kalacaklar. Kulüpler genellikle son yılda değer kaybı yaşamamak için satmayı tercih eder.
 </div>"""
     return (
-        _section_title("⏳ Son Yıl Kontratı", f"2027 sonu – {len(final_year)} oyuncu")
+        _section_title("⏳ Son Yıl Kontratı", f"2027 sonu &ndash; {len(final_year)} oyuncu")
         + explanation
         + _player_table(final_year, limit=30)
     )
@@ -396,7 +396,7 @@ def main() -> None:
 
     html_parts = [
         "<!DOCTYPE html><html lang='tr'><head><meta charset='utf-8'>",
-        f"<title>Transfer Sezonu Bağlam – {SEASON_LABEL}</title>",
+        f"<title>Transfer Sezonu Bağlam &ndash; {SEASON_LABEL}</title>",
         "<style>*{box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;",
         "background:#0f172a;color:#e2e8f0;margin:0;padding:20px}",
         "a{color:#60a5fa}table td,table th{padding:8px 4px;text-align:left}",
@@ -409,9 +409,9 @@ def main() -> None:
         _final_year_section(final_year),
         _signals_section(signals),
         _promotions_section(promotions),
-        "</div>
-  <script defer src="/_vercel/insights/script.js"></script>
-</body></html>",
+        "</div>",
+        "  <script defer src=\"/_vercel/insights/script.js\"></script>",
+        "</body></html>",
     ]
 
     OUTPUT_HTML.write_text("".join(html_parts), encoding="utf-8")

@@ -1,11 +1,10 @@
-name: metric11 haber yenileme (2 saatte bir)
+name: metric11 haber yenileme (gunde 4 kez)
 
 on:
   workflow_dispatch:
   schedule:
-    # refresh.yml aralarını doldurur: 02:15, 08:15, 14:15, 20:15 UTC
-    # refresh.yml: 00:15, 06:15, 12:15, 18:15 | daily-pipeline: 04:00
-    # Sonuç: haber güncellemesi ~2 saatte bir
+    # Haber toplama: 02:15, 08:15, 14:15, 20:15 UTC.
+    # daily-pipeline ayrıca 04:00 UTC'de ağ kaynaklarını yeniler.
     - cron: "15 2,8,14,20 * * *"
 
 permissions:
@@ -36,13 +35,15 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
           python -m src.collect_news_rss
+          python -m src.collect_news_google
+          python -m src.collect_news_telegram
           python -m src.collect_official_club_news
 
       - name: Haber raporlarını güncelle
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
-          python -m src.analyze_news_with_claude --only-relevant || true
+          python -m src.analyze_news_with_claude --only-relevant
           python -m src.build_news_intelligence_report
           python -m src.build_transfer_tracker
           python -m src.build_live_feed

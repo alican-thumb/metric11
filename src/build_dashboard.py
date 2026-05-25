@@ -353,7 +353,7 @@ def build_html(summary: dict, previews: list[dict], goal_backtest: dict, team_na
     </div>
   </header>
   <main>
-    {"" if not is_off_season else """<div style="background:#1e3a5f;border-left:4px solid #60a5fa;border-radius:8px;padding:14px 20px;margin-bottom:20px;color:#e0f2fe;font-size:14px;line-height:1.6;"><strong style="color:#93c5fd;">Sezon arası</strong> — 2025/26 sezonu tamamlandı. Geçmiş maç analizleri ve tahmin arşivi aşağıda incelenebilir. 2026/27 fikstürü açıklandığında tahminler otomatik olarak güncellenir.</div>"""}
+    {"" if not is_off_season else """<div style="background:#1e3a5f;border-left:4px solid #60a5fa;border-radius:8px;padding:14px 20px;margin-bottom:20px;color:#e0f2fe;font-size:14px;line-height:1.6;"><strong style="color:#93c5fd;">Sezon arası</strong> &mdash; 2025/26 sezonu tamamlandı. Geçmiş maç analizleri ve tahmin arşivi aşağıda incelenebilir. 2026/27 fikstürü açıklandığında tahminler otomatik olarak güncellenir.</div>"""}
     <div class="toolbar">
       <select id="matchSelect" aria-label="Maç seç">{options}</select>
       <div class="metric"><span>Üretilen rapor</span><strong>{summary.get("generated_reports", 0)}</strong></div>
@@ -618,7 +618,7 @@ def build_html(summary: dict, previews: list[dict], goal_backtest: dict, team_na
         ['Gerçek 11 skoru', coachAudit.actual_lineup_score ?? 'Yok'],
         ['Model 11 skoru', coachAudit.recommended_lineup_score ?? 'Yok'],
         ['Alternatif gol beklentisi', coachAudit.alternative_xg_for != null ? `${{prob.expected_goals_for}}-${{prob.expected_goals_against}} -> ${{coachAudit.alternative_xg_for}}-${{coachAudit.alternative_xg_against}}` : 'Yok'],
-        ['Modelde olup gerçek 11’de olmayan', (coachAudit.omitted_core_players || []).join(', ') || 'Yok'],
+        ['Modelde olup gerçek 11'de olmayan', (coachAudit.omitted_core_players || []).join(', ') || 'Yok'],
         ['Tartışmalı tercihler', questionable || 'Belirgin sinyal yok'],
       ].map(row => `<tr><td>${{esc(row[0])}}</td><td>${{esc(row[1])}}</td></tr>`).join('');
       document.getElementById('scorelines').innerHTML = (prob.top_scorelines || []).slice(0, 6).map(item =>
