@@ -101,6 +101,9 @@ def build_html(d: dict) -> str:
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sistem Durumu — metric11</title>
+  <meta name="description" content="Pipeline sağlığı, veri tazeliği ve ziyaretçi analitiği.">
+  <meta name="theme-color" content="#091810">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <style>
     :root {{
       --bg:#f3f5f4;--panel:#fff;--ink:#132018;--muted:#627067;--line:#d7ded9;

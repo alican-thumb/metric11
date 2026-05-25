@@ -55,14 +55,24 @@ _NAV = (
 )
 
 
-def page_html(title: str, body_html: str) -> str:
+def page_html(title: str, body_html: str, description: str = "Süper Lig maç tahminleri, scout analizleri ve transfer istihbaratı — metric11.") -> str:
+    _t = escape(title)
+    _d = escape(description)
     return (
         "<!doctype html>\n"
         '<html lang="tr">\n'
         "<head>\n"
         '  <meta charset="utf-8">\n'
         '  <meta name="viewport" content="width=device-width, initial-scale=1">\n'
-        f"  <title>{escape(title)} — metric11</title>\n"
+        f"  <title>{_t} — metric11</title>\n"
+        f'  <meta name="description" content="{_d}">\n'
+        f'  <meta property="og:title" content="{_t} — metric11">\n'
+        f'  <meta property="og:description" content="{_d}">\n'
+        '  <meta property="og:image" content="/og-image.svg">\n'
+        '  <meta property="og:type" content="website">\n'
+        '  <meta name="twitter:card" content="summary_large_image">\n'
+        '  <meta name="theme-color" content="#091810">\n'
+        '  <link rel="icon" href="favicon.svg" type="image/svg+xml">\n'
         f"  <style>{_CSS}  </style>\n"
         "</head>\n"
         "<body>\n"

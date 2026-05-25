@@ -118,7 +118,7 @@ def _load_intel() -> dict | None:
 def _extract_transfer_signals(intel: dict | None) -> list[dict]:
     if not intel:
         return []
-    return intel.get("transfer_rumors", [])
+    return intel.get("transfers", intel.get("transfer_rumors", []))
 
 
 def _extract_promotions(intel: dict | None) -> list[dict]:

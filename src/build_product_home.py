@@ -223,7 +223,15 @@ def build_html() -> str:
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Futbol İstihbarat Platformu</title>
+  <title>metric11 — Süper Lig Futbol İstihbaratı</title>
+  <meta name="description" content="Süper Lig maç tahminleri, gol adayları, scout analizleri ve transfer istihbaratı. 18 takım, gerçek veri.">
+  <meta property="og:title" content="metric11 — Süper Lig Futbol İstihbaratı">
+  <meta property="og:description" content="Süper Lig maç tahminleri, gol adayları, scout analizleri ve transfer istihbaratı. 18 takım, gerçek veri.">
+  <meta property="og:image" content="/og-image.svg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#091810">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <style>
     :root {{
       --bg:#f3f5f4; --panel:#fff; --ink:#132018; --muted:#627067; --line:#d7ded9;
