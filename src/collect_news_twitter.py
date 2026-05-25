@@ -27,17 +27,39 @@ NITTER_INSTANCES = [
 
 # Türk futbolu için takip edilecek hesaplar
 TWITTER_ACCOUNTS = [
-    {"handle": "bjkcom", "name": "Beşiktaş Resmi", "team": "BEŞİKTAŞ A.Ş.", "type": "official"},
-    {"handle": "galatasaray", "name": "Galatasaray Resmi", "team": "GALATASARAY A.Ş.", "type": "official"},
+    # --- Resmi kulüp hesapları ---
+    {"handle": "Besiktas", "name": "Beşiktaş Resmi", "team": "BEŞİKTAŞ A.Ş.", "type": "official"},
+    {"handle": "GalatasaraySK", "name": "Galatasaray Resmi", "team": "GALATASARAY A.Ş.", "type": "official"},
     {"handle": "Fenerbahce", "name": "Fenerbahçe Resmi", "team": "FENERBAHÇE A.Ş.", "type": "official"},
     {"handle": "trabzonspor", "name": "Trabzonspor Resmi", "team": "TRABZONSPOR A.Ş.", "type": "official"},
-    {"handle": "TFForg", "name": "TFF Resmi", "team": None, "type": "official"},
+    {"handle": "ibfk2014", "name": "RAMS Başakşehir Resmi", "team": "RAMS BAŞAKŞEHİR F.K.", "type": "official"},
+    {"handle": "Alanyaspor", "name": "Corendon Alanyaspor Resmi", "team": "CORENDON ALANYASPOR", "type": "official"},
+    {"handle": "Samsunspor", "name": "Samsunspor Resmi", "team": "SAMSUNSPOR", "type": "official"},
+    {"handle": "Goztepe", "name": "Göztepe Resmi", "team": "GÖZTEPE", "type": "official"},
+    {"handle": "konyaspor", "name": "TÜMOSAN Konyaspor Resmi", "team": "TÜMOSAN KONYASPOR", "type": "official"},
+    {"handle": "CRizesporAS", "name": "Çaykur Rizespor Resmi", "team": "ÇAYKUR RİZESPOR", "type": "official"},
+    {"handle": "gaziantepfk", "name": "Gaziantep FK Resmi", "team": "GAZİANTEP FK", "type": "official"},
+    {"handle": "kasimpasa", "name": "Kasımpaşa Resmi", "team": "KASIMPAŞA S.K.", "type": "official"},
+    {"handle": "Kocaelispor", "name": "Kocaelispor Resmi", "team": "KOCAELİSPOR", "type": "official"},
+    {"handle": "eyupsporkulubu", "name": "ikas Eyüpspor Resmi", "team": "İKAS EYÜPSPOR", "type": "official"},
+    {"handle": "kirmizikara", "name": "Gençlerbirliği Resmi", "team": "GENÇLERBİRLİĞİ S.K.", "type": "official"},
+    {"handle": "karagumruk_sk", "name": "Fatih Karagümrük Resmi", "team": "FATİH KARAGÜMRÜK", "type": "official"},
+    {"handle": "Antalyaspor", "name": "Hesap.com Antalyaspor Resmi", "team": "HESAP.COM ANTALYASPOR", "type": "official"},
+    {"handle": "KayserisporFK", "name": "Zecorner Kayserispor Resmi", "team": "ZECORNER KAYSERİSPOR", "type": "official"},
+    # --- Resmi lig / federasyon ---
+    {"handle": "TFF_Org", "name": "TFF Resmi", "team": None, "type": "official"},
+    {"handle": "superlig", "name": "Trendyol Süper Lig", "team": None, "type": "official"},
+    # --- Medya ---
     {"handle": "fanatikgazetesi", "name": "Fanatik", "team": None, "type": "media"},
     {"handle": "hurspor", "name": "Hürriyet Spor", "team": None, "type": "media"},
     {"handle": "fotomacgazetesi", "name": "Fotomaç", "team": None, "type": "media"},
     {"handle": "BeINSPORTS_TR", "name": "beIN Sports TR", "team": None, "type": "media"},
+    {"handle": "trtspor", "name": "TRT Spor", "team": None, "type": "media"},
+    {"handle": "SportsDigitale", "name": "Sports Digitale", "team": None, "type": "secondary_signal"},
+    # --- Transfer / muhabir ---
     {"handle": "YakinTakip", "name": "Yakın Takip (Transfer)", "team": None, "type": "transfer_news"},
     {"handle": "transfermarkt_TR", "name": "Transfermarkt TR", "team": None, "type": "transfer_news"},
+    {"handle": "yagosabuncuoglu", "name": "Yağız Sabuncuoğlu", "team": None, "type": "secondary_signal"},
     {"handle": "TurkishFootball", "name": "Turkish Football", "team": None, "type": "media"},
 ]
 
@@ -115,7 +137,7 @@ def main() -> None:
 def _find_working_nitter() -> str | None:
     for instance in NITTER_INSTANCES:
         try:
-            r = requests.get(f"{instance}/bjkcom/rss", timeout=8)
+            r = requests.get(f"{instance}/Besiktas/rss", timeout=8)
             if r.status_code == 200 and "<rss" in r.text[:200]:
                 return instance
         except Exception:  # noqa: BLE001
