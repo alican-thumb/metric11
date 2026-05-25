@@ -10,8 +10,9 @@
   .topbar { min-height:62px; padding:0 clamp(14px,3vw,32px); display:flex; align-items:center; justify-content:space-between; gap:18px; background:#091810; border-bottom:1px solid #203328; }
   .brand { display:flex; align-items:center; gap:10px; color:#fff; text-decoration:none; font-size:18px; font-weight:800; }
   .brand b { width:29px; height:29px; border-radius:7px; display:grid; place-items:center; color:#091810; background:#cde94e; font-size:14px; }
-  .topnav { display:flex; gap:5px; overflow-x:auto; }
-  .topnav a { color:#d5ded8; text-decoration:none; font-size:13px; font-weight:600; white-space:nowrap; padding:10px 11px; border-radius:6px; }
+  .topnav { display:flex; gap:4px; overflow-x:auto; overflow-y:hidden; -webkit-overflow-scrolling:touch; scrollbar-width:none; }
+  .topnav::-webkit-scrollbar { display:none; }
+  .topnav a { color:#d5ded8; text-decoration:none; font-size:13px; font-weight:600; white-space:nowrap; flex-shrink:0; padding:9px 10px; border-radius:6px; }
   .topnav a.active { background:#162b20; color:#fff; }
   .header { background:#102419; border-bottom:3px solid #116447; padding:24px clamp(14px,3vw,32px); }
   .header h1 { font-size: 1.6rem; font-weight: 700; color: #f8fafc; }
@@ -63,7 +64,7 @@
   .filter-input { background: #1e293b; border: 1px solid #334155; border-radius: 6px; padding: 8px 14px; color: #e2e8f0; font-size: 0.85rem; outline: none; min-width: 200px; }
   .filter-input:focus { border-color:#cde94e; }
   @media (max-width:900px) { .summary-bar { grid-template-columns:repeat(3,minmax(0,1fr)); } }
-  @media (max-width:600px) { .topbar { flex-direction:column; align-items:flex-start; padding:12px; } .topnav { width:100%; } .summary-bar { grid-template-columns:repeat(2,minmax(0,1fr)); } .team-grid { grid-template-columns:1fr; } .content { padding:14px 12px 32px; } }
+  @media (max-width:600px) { .topbar { flex-direction:column; align-items:stretch; padding:11px 12px 0; gap:0; min-height:unset; } .brand { padding-bottom:8px; } .topnav { border-top:1px solid #1e3228; padding:7px 0 9px; justify-content:flex-start; } .summary-bar { grid-template-columns:repeat(2,minmax(0,1fr)); } .team-grid { grid-template-columns:1fr; } .content { padding:14px 12px 32px; } }
 </style>
 </head>
 <body>

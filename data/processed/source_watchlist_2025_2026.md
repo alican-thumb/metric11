@@ -1,8 +1,8 @@
 # Veri Kaynak İzleme Listesi
 
 - Güncelleme: 2026-05-25
-- Kaynak sayısı: 13
-- Bağlı/yarı bağlı kaynak: 5
+- Kaynak sayısı: 14
+- Bağlı/yarı bağlı kaynak: 6
 - Planlanan/araştırılacak kaynak: 5
 - Analizde yüksek ağırlıklı kaynak: 3
 
@@ -20,6 +20,7 @@
 - beIN SPORTS / LigTV news and match context (news_context): durum=planned, risk=medium, güncellik=daily, ağırlık=context_only, alanlar=injury_news, suspension_news, transfer_news, manager_quotes, probable_lineups
 - Turkish sports RSS news feeds (news_and_transfer_context): durum=connected_snapshot_2026_05_25, risk=medium, güncellik=daily_transfer_window, ağırlık=context_only, alanlar=headline, summary, published_at, source, transfer_claim, injury_claim, club_mention
 - X official clubs and football news accounts (official_and_secondary_social_signal): durum=collector_ready_requires_x_bearer_token_or_fallback_snapshot, risk=medium, güncellik=daily_transfer_window, ağırlık=context_only, alanlar=post_id, account_type, published_at, official_announcement, transfer_claim, injury_claim, club_mention
+- Süper Lig official club website announcements (official_club_news): durum=collector_connected_18_clubs_no_credentials, risk=low_medium, güncellik=daily_transfer_window, ağırlık=official_confirmation, alanlar=club, headline, published_at, official_transfer_announcement, injury_announcement, link
 - API-Football (external_api): durum=connected_2024_plan_limited_2025, risk=medium, güncellik=daily_if_plan_allows, ağırlık=validation_and_enrichment, alanlar=fixtures, standings, squads, player_stats, top_scorers, cards, injuries
 - football-data.org (external_api): durum=collector_available_needs_key_and_competition_mapping, risk=low_medium, güncellik=daily, ağırlık=supporting, alanlar=matches, standings, teams, scorers
 - Football-Data.co.uk (historical_results_and_odds): durum=collector_available, risk=low_medium, güncellik=weekly, ağırlık=model_training, alanlar=historical_results, odds, shots_if_available, cards_if_available
@@ -35,6 +36,7 @@
 - Transfermarkt squad pages: weekly_and_transfer_window_daily_subject_to_terms / team_needs, market_value, position_mapping, transfer_window_tracking
 - API-Football: daily_if_plan_allows / external_validation, player_quality_signal, injury_history, scout_enrichment
 - Süper Lig and club forums/social news: daily_transfer_window / scout_watchlist_ideas, rumor_context, manual_review_queue
+- Süper Lig official club website announcements: daily_transfer_window / official_transfer_confirmation, availability_review, corroboration
 - Turkish sports RSS news feeds: daily_transfer_window / transfer_rumor_radar, news_intelligence, manual_review_queue, corroboration
 - X official clubs and football news accounts: daily_transfer_window / official_transfer_confirmation, transfer_rumor_radar, availability_review, corroboration
 - beIN SPORTS / LigTV news and match context: daily / availability_manual_review, lineup_context, transfer_window_context, narrative_analysis

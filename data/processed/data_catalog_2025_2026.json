@@ -91,6 +91,22 @@
       ]
     },
     {
+      "name": "Süper Lig resmi kulüp web duyuruları",
+      "public_label": "Resmi kulüp duyuruları",
+      "type": "OFFICIAL_CLUB_NEWS",
+      "risk": "LOW_MEDIUM",
+      "license_status": "VERIFY_TERMS_AND_LINK_DERIVED_DISPLAY",
+      "display_policy": "SHOW_LINK_AND_DERIVED_SIGNAL_ONLY",
+      "coverage": "18 resmi kulüp sitesi yapılandırıldı; snapshot henüz yok",
+      "fields": [
+        "kulüp",
+        "duyuru başlığı",
+        "yayın zamanı",
+        "resmi transfer teyidi",
+        "bağlantı"
+      ]
+    },
+    {
       "name": "X resmi kulüp ve futbol haber hesapları",
       "public_label": "Resmi kulüp ve sosyal haber duyuruları",
       "type": "X_SOCIAL_SIGNAL",
@@ -214,12 +230,16 @@
     "warehouse_quality_findings": 6,
     "profile_enrichment_queue": 0,
     "profile_enrichment_missing_candidates": 0,
-    "source_watchlist_sources": 13,
-    "source_watchlist_daily_sources": 9,
+    "source_watchlist_sources": 14,
+    "source_watchlist_daily_sources": 10,
     "news_context_sources_ok": 2,
     "news_context_signals": 3,
     "news_context_structured_unavailability": 13,
     "news_rss_articles": 210,
+    "news_official_articles": 0,
+    "news_official_successful_sources": 0,
+    "news_official_configured_sources": 18,
+    "news_official_status": "NO_SNAPSHOT",
     "news_intelligence_articles": 58,
     "news_transfer_claims": 8,
     "news_transfer_status_counts": {
@@ -335,7 +355,8 @@
     "news_transfer_claim",
     "news_transfer_verification_status",
     "news_transfer_evidence_sources",
-    "official_social_announcement_signal"
+    "official_social_announcement_signal",
+    "official_club_web_announcement_signal"
   ],
   "missing_fields": [
     "preferred_foot",
@@ -372,7 +393,7 @@
     "profile_enrichment_queue": "MVP_READY_PRIORITY_COLLECTION_QUEUE",
     "source_watchlist": "MVP_READY_DAILY_REFRESH_PLAN",
     "news_context": "CONNECTED_LOW_TO_MEDIUM_CONFIDENCE",
-    "transfer_news_intelligence": "RSS_CONNECTED_X_PENDING_SNAPSHOT_REVIEW_GATED",
+    "transfer_news_intelligence": "RSS_CONNECTED_OFFICIAL_CLUB_WEB_CONNECTED_X_OPTIONAL_REVIEW_GATED",
     "api_football": "CONNECTED_2024_HISTORY_PLAN_LIMITED_2025"
   },
   "source_display_policy": {
