@@ -94,6 +94,7 @@ NETWORK_COMMANDS = [
         "--skip-existing",
         "--delay-seconds", "1",
     ],
+    ["python", "-m", "src.detect_squad_changes"],
     ["python", "-m", "src.collect_news_context"],
     ["python", "-m", "src.collect_news_rss"],
     ["python", "-m", "src.collect_official_club_news"],

@@ -16,10 +16,11 @@ OUTPUT_HTML = PROCESSED_DIR / f"transfer_tracker_{SEASON}.html"
 OUTPUT_JSON = PROCESSED_DIR / f"transfer_tracker_{SEASON}.json"
 
 STATUS_META: dict[str, tuple[str, str, str]] = {
-    "OFFICIAL":       ("RESMİ",     "#16a34a", "#dcfce7"),
+    "OFFICIAL":       ("RESMİ",      "#16a34a", "#dcfce7"),
     "CORROBORATED":   ("DOĞRULANDI", "#2563eb", "#dbeafe"),
-    "RUMOR":          ("SÖYLENTI",  "#d97706", "#fef3c7"),
-    "REVIEW_REQUIRED":("İNCELEMEDE","#6b7280", "#f1f5f9"),
+    "TM_CONFIRMED":   ("TM ONAYDI",  "#7c3aed", "#ede9fe"),
+    "RUMOR":          ("SÖYLENTI",   "#d97706", "#fef3c7"),
+    "REVIEW_REQUIRED":("İNCELEMEDE", "#6b7280", "#f1f5f9"),
 }
 
 WINDOW_OPEN  = "1 Haziran 2026"
@@ -47,6 +48,30 @@ def _load_signals() -> list[dict]:
         return []
     data = json.loads(path.read_text(encoding="utf-8"))
     return data.get("transfers", data.get("transfer_signals", []))
+
+
+def _load_tm_signals() -> list[dict]:
+    """TM kadro dedektöründen gelen onaylı hareketleri haber sinyali formatına çevir."""
+    path = PROCESSED_DIR / f"tm_squad_changes_{SEASON}.json"
+    if not path.exists():
+        return []
+    data = json.loads(path.read_text(encoding="utf-8"))
+    if data.get("status") == "baseline_only":
+        return []
+    signals = []
+    for a in data.get("arrivals", []):
+        signals.append({
+            "player_name": a.get("player_name"),
+            "from_club": a.get("from_team"),
+            "to_club": a.get("to_team"),
+            "transfer_type": "permanent",
+            "verification_status": "TM_CONFIRMED",
+            "tm_market_value_eur": a.get("market_value_eur"),
+            "source": "Transfermarkt Kadro",
+            "title": f"{a.get('player_name')} — TM kadro hareketi",
+            "link": a.get("profile_url", ""),
+        })
+    return signals
 
 
 def _enrich(signals: list[dict]) -> list[dict]:
@@ -228,7 +253,23 @@ function filterRows(q) {{
 
 
 def main() -> None:
-    signals_raw = _load_signals()
+    signals_raw = _load_signals() + _load_tm_signals()
+    # TM sinyalleriyle haber sinyallerini birleştir; aynı oyuncu için TM olanı tercih et
+    seen: dict[str, int] = {}
+    deduped = []
+    for s in signals_raw:
+        key = (s.get("player_name") or "").upper().strip()
+        if not key:
+            deduped.append(s)
+            continue
+        if key in seen:
+            existing = deduped[seen[key]]
+            if s.get("verification_status") in ("TM_CONFIRMED", "OFFICIAL", "CORROBORATED"):
+                deduped[seen[key]] = s
+        else:
+            seen[key] = len(deduped)
+            deduped.append(s)
+    signals_raw = deduped
     signals = _enrich(signals_raw)
     summary = _build_summary(signals)
 
