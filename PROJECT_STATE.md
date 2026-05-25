@@ -227,6 +227,28 @@ Parse edilen alanlar:
 - Etkilenen dosyalar: `build_all_teams_preview_dashboard.py`, `build_command_center.py`, `build_dashboard.py`, `build_live_feed.py`, `build_news_intelligence_report.py`, `build_product_home.py`, `build_transfer_recommendation_report.py`, `build_transfer_season_context.py`, `build_transfer_tracker.py`.
 - Entity replacement sonrası oluşan kelime hatası düzeltildi: "aşık" → "açık", "aşılıyor" → "açılıyor" (`_window_state()` transfer banner metni).
 
+## 2026-05-25 Haber Kalitesi İyileştirmeleri (Session 3 — devam)
+
+### Telegram Kanal Genişletmesi (collect_news_telegram.py)
+- Toplam kanal sayısı 6'dan 11'e çıktı. Eklenen kanallar: `sporxhaber`, `futbolhaber`, `transferturkiye`, `superligtransfer`, `basaksehirhaberleri`.
+- Kanallar "Transfer/genel sinyal" ve "Kulüp bazlı" kategorileri altında yorumlandı.
+
+### Kaynak Güvenilirlik Skoru (build_live_feed.py)
+- `SOURCE_TRUST` sözlüğü eklendi: `official_club`=10, `rss`=7, `google_news`=6, `twitter`=5, `telegram`=4.
+- `_article_html()` trust skoru ≥6 ise koyu renk (var(--ink)), <6 ise soluk renk (#627067) kullanıyor; düşük güvenli kaynaklar görsel olarak ayrışıyor.
+
+### Yinelenen Haber Tespiti (build_live_feed.py)
+- `_deduplicate_articles()` fonksiyonu eklendi: başlık kelime örtüşmesi ≥3 olan haberler gruplandırılıyor.
+- Her grupta en yüksek trust skorlu kaynak öne çıkıyor; birden fazla kaynak varsa "N kaynak" etiketi gösteriliyor.
+- `build_html()` artık ham 18 haber yerine deduplicate edilmiş 6 grubu gösteriyor.
+
+### Analiz Platformu Link Durumu (build_live_feed.py)
+- `_ana_link()` helper fonksiyonu: PROCESSED_DIR'de dosya var mı kontrol eder; yoksa pasif stil (cursor:not-allowed, muted renk) gösterir, varsa aktif yeşil link.
+- Sağ panel linklerinin tamamı bu fonksiyondan geçiyor.
+
+### Mobil CSS Genişletmesi (build_live_feed.py)
+- `@media(max-width:600px)`: `pills` 2 sütunlu grid, `panel` ve `main` padding sıkıştırıldı. Küçük ekranlarda daha kompakt görünüm.
+
 ### Dashboardlar
 
 Statik HTML olarak iki demo üretildi:
