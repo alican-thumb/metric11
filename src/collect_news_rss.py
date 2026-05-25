@@ -67,6 +67,48 @@ RSS_SOURCES = [
         "language": "tr",
         "category": "general",
     },
+    {
+        "name": "NTV Spor",
+        "url": "https://www.ntvspor.net/rss",
+        "language": "tr",
+        "category": "general",
+    },
+    {
+        "name": "Sporx",
+        "url": "https://www.sporx.com/rss",
+        "language": "tr",
+        "category": "general",
+    },
+    {
+        "name": "Fanatik",
+        "url": "https://www.fanatik.com.tr/rss/spor",
+        "language": "tr",
+        "category": "general",
+    },
+    {
+        "name": "Fotomaç",
+        "url": "https://www.fotomac.com.tr/rss/spor",
+        "language": "tr",
+        "category": "general",
+    },
+    {
+        "name": "CNN Türk Spor",
+        "url": "https://www.cnnturk.com/feed/rss/spor/news",
+        "language": "tr",
+        "category": "general",
+    },
+    {
+        "name": "TRT Spor",
+        "url": "https://www.trtspor.com.tr/rss.xml",
+        "language": "tr",
+        "category": "general",
+    },
+    {
+        "name": "Goal.com TR",
+        "url": "https://www.goal.com/tr/feeds/news?fmt=rss",
+        "language": "tr",
+        "category": "transfer",
+    },
 ]
 
 SUPER_LIG_TEAMS = {
@@ -74,12 +116,25 @@ SUPER_LIG_TEAMS = {
     "trabzonspor", "başakşehir", "basaksehir", "alanyaspor", "samsunspor",
     "göztepe", "goztepe", "konyaspor", "rizespor", "gaziantep",
     "kasımpaşa", "kasimpasa", "kocaelispor", "eyüpspor", "eyupspor",
-    "gençlerbirliği", "genclerbirligi", "karagümrük", "karagumruk",
-    "antalyaspor", "kayserispor",
+    "gençlerbirliği", "genclerbirligi",
+    # 2026/27 yeni takımlar
+    "çorum", "çorum fk", "corum fk", "corumfk",
+    "erzurumspor",
+    "amed", "amedspor", "amed sfk",
+    # düşen takımlar (transfer haberleri için tutuldu)
+    "karagümrük", "karagumruk", "antalyaspor", "kayserispor",
 }
 
-TRANSFER_KEYWORDS = {"transfer", "bonservis", "anlaşma", "imza", "bağlantı", "teklif", "istiyor", "peşinde", "ayrılıyor", "geliyor"}
-INJURY_KEYWORDS = {"sakat", "sakatlık", "yaralanma", "ameliyat", "tedavi", "antrenman dışı", "eksik"}
+TRANSFER_KEYWORDS = {
+    # Türkçe
+    "transfer", "bonservis", "anlaşma", "imza", "bağlantı", "teklif",
+    "istiyor", "peşinde", "ayrılıyor", "geliyor", "resmileşti",
+    "teknik direktör", "hoca", "antrenör", "menajeri",
+    # İngilizce (Goal.com TR, uluslararası kaynaklar için)
+    "signs", "signed", "deal", "joins", "loan", "fee", "contract",
+    "agreement", "manager", "coach", "here we go",
+}
+INJURY_KEYWORDS = {"sakat", "sakatlık", "yaralanma", "ameliyat", "tedavi", "antrenman dışı", "eksik", "injured", "injury"}
 SUSPENSION_KEYWORDS = {"cezalı", "ceza", "kart", "diskalifiye", "men"}
 LINEUP_KEYWORDS = {"kadro", "ilk 11", "muhtemel", "oynayacak", "oynamayacak", "forma"}
 
