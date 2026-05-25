@@ -1,0 +1,53 @@
+{
+  "season": "2025-2026",
+  "public_sources": [
+    {
+      "label": "Resmi federasyon maç verisi",
+      "type": "SCRAPING",
+      "risk": "MEDIUM",
+      "display_policy": "INTERNAL_SOURCE_PUBLIC_CATEGORY",
+      "coverage": "Süper Lig 306 maç"
+    },
+    {
+      "label": "Resmi federasyon oyuncu profili",
+      "type": "SCRAPING",
+      "risk": "MEDIUM",
+      "display_policy": "INTERNAL_SOURCE_PUBLIC_CATEGORY",
+      "coverage": "Beşiktaş 46 oyuncu + scout kısa liste 25 oyuncu"
+    },
+    {
+      "label": "Piyasa değeri ve kadro profili",
+      "type": "SCRAPING",
+      "risk": "HIGH",
+      "display_policy": "INTERNAL_SOURCE_PUBLIC_CATEGORY",
+      "coverage": "Beşiktaş 2025/26 kadro: pozisyon ve piyasa değeri"
+    },
+    {
+      "label": "Model türetilmiş uygunluk sinyali",
+      "type": "DERIVED+MANUAL",
+      "risk": "MEDIUM",
+      "display_policy": "PUBLIC_DERIVED_SIGNAL_ALLOWED",
+      "coverage": "Beşiktaş 2025/26 kart cezası çıkarımı + manuel sakat/cezalı override dosyası"
+    },
+    {
+      "label": "Oyuncu attribute ve potansiyel veri seti",
+      "type": "OPEN_DATASET_OR_VERIFIED_EXPORT",
+      "risk": "LOW_TO_HIGH_BY_LICENSE",
+      "display_policy": "SHOW_ONLY_IF_LICENSE_ALLOWED",
+      "coverage": "4 aday kaynak kaydı; normalize import varsa 0 oyuncu"
+    },
+    {
+      "label": "Dış futbol API doğrulama ve geçmiş sezon zenginleştirme",
+      "type": "API",
+      "risk": "MEDIUM",
+      "display_policy": "INTERNAL_SOURCE_PUBLIC_CATEGORY",
+      "coverage": "2024 sezonu ücretsiz planda erişilebilir; 2025 sezonu plan kısıtı nedeniyle boş dönüyor"
+    }
+  ],
+  "policy": {
+    "internal_rule": "Her veri kaynağı içeride gerçek ad, lisans durumu, risk ve güven etiketiyle tutulur.",
+    "public_rule": "Kullanıcıya yalnızca izinli kaynak adı veya genel kaynak kategorisi gösterilir; lisans/izin sorunu olan veri ticari ürüne alınmaz.",
+    "blocked_rule": "Kaynağı gizleyerek lisans, robots, kullanım şartı veya telif riskini aşma yöntemi kullanılmaz."
+  },
+  "note": "Bu dosya kullanıcı arayüzünde gösterilebilir kategori özetidir. İç veri kataloğu gerçek kaynak ve lisans takibini ayrıca tutar."
+}

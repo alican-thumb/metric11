@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SQLite Veri Ambarı Kalitesi — metric11</title>
+  <style>
+    :root {
+      --bg:#f3f5f4; --panel:#fff; --ink:#132018; --muted:#627067; --line:#d7ded9;
+      --red:#bd2936; --green:#116447; --lime:#cde94e; --blue:#22618c; --dark:#091810; --soft:#e8eee9;
+    }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Inter,"Segoe UI",Arial,sans-serif; background:var(--bg); color:var(--ink); }
+    .topbar { position:sticky; top:0; z-index:5; display:flex; align-items:center; justify-content:space-between; gap:20px; min-height:64px; padding:0 clamp(16px,4vw,42px); background:var(--dark); color:white; border-bottom:1px solid #203328; }
+    .brand { display:flex; gap:11px; align-items:center; font-weight:800; font-size:19px; }
+    .brand-mark { width:30px; height:30px; display:grid; place-items:center; border-radius:7px; color:var(--dark); background:var(--lime); font-size:15px; }
+    .season { color:#a7b3ab; font-size:12px; font-weight:500; margin-left:4px; }
+    nav { display:flex; gap:5px; flex-wrap:wrap; justify-content:flex-end; }
+    nav a { color:#d5ded8; text-decoration:none; font-size:13px; font-weight:600; padding:10px 11px; border-radius:6px; }
+    nav a:hover { background:#162b20; color:white; }
+    .back-link { display:inline-flex; align-items:center; gap:6px; color:var(--green); text-decoration:none; font-size:13px; font-weight:600; margin-bottom:18px; }
+    .back-link::before { content:"←"; }
+    .report-wrap { max-width:960px; margin:0 auto; padding:32px clamp(14px,3vw,32px) 60px; }
+    .report-wrap h1 { font-size:28px; margin:0 0 6px; line-height:1.15; }
+    .report-wrap h2 { font-size:19px; margin:28px 0 10px; padding-bottom:6px; border-bottom:1px solid var(--line); }
+    .report-wrap h3 { font-size:15px; margin:20px 0 8px; color:var(--muted); font-weight:700; }
+    .report-wrap p { line-height:1.65; margin:0 0 12px; font-size:14px; }
+    .report-wrap ul { padding-left:20px; margin:0 0 14px; }
+    .report-wrap li { line-height:1.65; font-size:14px; margin-bottom:4px; }
+    .report-wrap code { background:var(--soft); padding:1px 5px; border-radius:3px; font-size:12px; font-family:monospace; }
+    .report-wrap em { font-style:italic; color:var(--muted); }
+    .report-wrap strong { font-weight:700; }
+    .md-table { width:100%; border-collapse:collapse; margin:0 0 18px; font-size:13px; overflow-x:auto; display:block; }
+    .md-table th { background:var(--soft); font-weight:700; text-align:left; padding:7px 10px; border:1px solid var(--line); white-space:nowrap; }
+    .md-table td { padding:6px 10px; border:1px solid var(--line); }
+    .md-table tr:nth-child(even) td { background:#f8faf9; }
+    @media (max-width:680px) { .topbar { position:static; align-items:flex-start; flex-direction:column; padding:13px 16px; } nav { width:100%; overflow-x:auto; flex-wrap:nowrap; } }
+    @media (max-width:600px) { .md-table th,.md-table td { padding:5px 6px; font-size:11px; } }
+  </style>
+</head>
+<body>
+  <div class="topbar"><div class="brand"><span class="brand-mark">11</span> metric11 <span class="season">Süper Lig 2025/26</span></div><nav><a href="football_intelligence_home.html">Merkez</a><a href="football_command_center_2025_2026.html">Analiz</a><a href="besiktas_2025_2026_dashboard_chronological.html">Maç Önü</a><a href="transfer_recommendation_report_2025_2026.html">Scout</a><a href="all_teams_preview_dashboard_2025_2026.html">Lig</a></nav></div>
+  <div class="report-wrap">
+    <a class="back-link" href="football_intelligence_home.html">Ana sayfaya dön</a>
+    <h1>Metric11 SQLite Veri Ambarı Kalite Raporu</h1>
+
+<ul>
+<li>Dosya: <code>/Users/alicanakyol/Documents/analiz/data/processed/metric11_warehouse.sqlite</code></li>
+</ul>
+
+<h2>Tablo Sayıları</h2>
+
+<ul>
+<li>data_quality_findings: 6</li>
+<li>data_sources: 5</li>
+<li>goal_candidates: 298</li>
+<li>match_cards: 1428</li>
+<li>match_goals: 812</li>
+<li>match_lineups: 12732</li>
+<li>match_predictions: 29</li>
+<li>matches: 306</li>
+<li>player_profiles: 691</li>
+<li>players: 691</li>
+<li>referee_profiles: 29</li>
+<li>referees: 29</li>
+<li>team_profiles: 18</li>
+<li>team_scout_blueprints: 275</li>
+<li>teams: 18</li>
+</ul>
+
+<h2>Hazır Görünümler</h2>
+
+<ul>
+<li>v_besiktas_scout_blueprint</li>
+<li>v_player_load_leaders</li>
+<li>v_referee_card_risk</li>
+<li>v_team_power_ranking</li>
+</ul>
+
+<h2>Kalite Bulguları</h2>
+
+<ul>
+<li>LOW / matches: Warehouse match rows loaded = 306 -&gt; Bu sayı sezon kapsamıyla tutarlı kalmalı.</li>
+<li>LOW / referees: Matches missing main referee = 0 -&gt; Eksikse TFF parser veya kaynak değişimi kontrol edilmeli.</li>
+<li>LOW / players: Players without age/profile enrichment = 0 -&gt; TFF/Transfermarkt/API profil toplama kapsamı genişletilmeli.</li>
+<li>LOW / scouting: Blueprint candidates with low proxy position confidence = 0 -&gt; Doğrudan pozisyon, boy, ayak ve aksiyon verisiyle güçlendirilmeli.</li>
+<li>MEDIUM / predictions: Beşiktaş match prediction accuracy percent = 65 -&gt; Daha fazla sezon, sakatlık ve odds baseline ile kalibre edilmeli.</li>
+<li>LOW / goal_candidates: Goal candidate rows loaded = 298 -&gt; Top 8/10 performansı ürün için güçlü sinyal.</li>
+</ul>
+
+<h2>Örnek Sorgu Çıktıları</h2>
+
+<h3>top_team_power</h3>
+<ul>
+<li>{&#x27;team_name&#x27;: &#x27;GALATASARAY A.Ş.&#x27;, &#x27;overall_power_score&#x27;: 84.4, &#x27;points_per_match&#x27;: 2.26}</li>
+<li>{&#x27;team_name&#x27;: &#x27;FENERBAHÇE A.Ş.&#x27;, &#x27;overall_power_score&#x27;: 76.5, &#x27;points_per_match&#x27;: 2.18}</li>
+<li>{&#x27;team_name&#x27;: &#x27;RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ&#x27;, &#x27;overall_power_score&#x27;: 73.3, &#x27;points_per_match&#x27;: 1.68}</li>
+<li>{&#x27;team_name&#x27;: &#x27;TRABZONSPOR A.Ş.&#x27;, &#x27;overall_power_score&#x27;: 68.6, &#x27;points_per_match&#x27;: 2.03}</li>
+<li>{&#x27;team_name&#x27;: &#x27;BEŞİKTAŞ A.Ş.&#x27;, &#x27;overall_power_score&#x27;: 62.5, &#x27;points_per_match&#x27;: 1.76}</li>
+</ul>
+
+<h3>besiktas_blueprint</h3>
+<ul>
+<li>{&#x27;role_label&#x27;: &#x27;Bek / çift yönlü koridor&#x27;, &#x27;candidate_name&#x27;: &#x27;KENNETH IMMANUEL PAAL&#x27;, &#x27;candidate_team&#x27;: &#x27;HESAP.COM ANTALYASPOR&#x27;, &#x27;fit_score&#x27;: 119.9, &#x27;position_confidence&#x27;: &#x27;MEDIUM_DERIVED_ROLE&#x27;}</li>
+<li>{&#x27;role_label&#x27;: &#x27;Bek / çift yönlü koridor&#x27;, &#x27;candidate_name&#x27;: &#x27;YHOAN MANY ANDZOUANA&#x27;, &#x27;candidate_team&#x27;: &#x27;TÜMOSAN KONYASPOR&#x27;, &#x27;fit_score&#x27;: 110.2, &#x27;position_confidence&#x27;: &#x27;MEDIUM_DERIVED_ROLE&#x27;}</li>
+<li>{&#x27;role_label&#x27;: &#x27;Bek / çift yönlü koridor&#x27;, &#x27;candidate_name&#x27;: &#x27;ROLAND SALLAI&#x27;, &#x27;candidate_team&#x27;: &#x27;GALATASARAY A.Ş.&#x27;, &#x27;fit_score&#x27;: 101.9, &#x27;position_confidence&#x27;: &#x27;MEDIUM_DERIVED_ROLE&#x27;}</li>
+<li>{&#x27;role_label&#x27;: &#x27;Bek / çift yönlü koridor&#x27;, &#x27;candidate_name&#x27;: &#x27;RUAN PEREIRA DUARTE&#x27;, &#x27;candidate_team&#x27;: &#x27;CORENDON ALANYASPOR&#x27;, &#x27;fit_score&#x27;: 100.9, &#x27;position_confidence&#x27;: &#x27;MEDIUM_DERIVED_ROLE&#x27;}</li>
+<li>{&#x27;role_label&#x27;: &#x27;Bek / çift yönlü koridor&#x27;, &#x27;candidate_name&#x27;: &#x27;WAGNER FABRICIO CARDOSO DE PINA&#x27;, &#x27;candidate_team&#x27;: &#x27;TRABZONSPOR A.Ş.&#x27;, &#x27;fit_score&#x27;: 97.3, &#x27;position_confidence&#x27;: &#x27;MEDIUM_EXTERNAL&#x27;}</li>
+<li>{&#x27;role_label&#x27;: &#x27;Sol açık / çizgi kırıcı&#x27;, &#x27;candidate_name&#x27;: &#x27;YUNUS AKGÜN&#x27;, &#x27;candidate_team&#x27;: &#x27;GALATASARAY A.Ş.&#x27;, &#x27;fit_score&#x27;: 115.39, &#x27;position_confidence&#x27;: &#x27;MEDIUM_EXTERNAL&#x27;}</li>
+<li>{&#x27;role_label&#x27;: &#x27;Sol açık / çizgi kırıcı&#x27;, &#x27;candidate_name&#x27;: &#x27;BARIŞ ALPER YILMAZ&#x27;, &#x27;candidate_team&#x27;: &#x27;GALATASARAY A.Ş.&#x27;, &#x27;fit_score&#x27;: 110.15, &#x27;position_confidence&#x27;: &#x27;MEDIUM_EXTERNAL&#x27;}</li>
+<li>{&#x27;role_label&#x27;: &#x27;Sol açık / çizgi kırıcı&#x27;, &#x27;candidate_name&#x27;: &#x27;KAZEEM ADEREMI J. OLAIGBE&#x27;, &#x27;candidate_team&#x27;: &#x27;TRABZONSPOR A.Ş.&#x27;, &#x27;fit_score&#x27;: 107.33, &#x27;position_confidence&#x27;: &#x27;MEDIUM_EXTERNAL&#x27;}</li>
+<li>{&#x27;role_label&#x27;: &#x27;Sol açık / çizgi kırıcı&#x27;, &#x27;candidate_name&#x27;: &#x27;GÖKTAN GÜRPÜZ&#x27;, &#x27;candidate_team&#x27;: &#x27;GENÇLERBİRLİĞİ&#x27;, &#x27;fit_score&#x27;: 106.0, &#x27;position_confidence&#x27;: &#x27;MEDIUM_EXTERNAL&#x27;}</li>
+<li>{&#x27;role_label&#x27;: &#x27;Sol açık / çizgi kırıcı&#x27;, &#x27;candidate_name&#x27;: &#x27;DORGELES NENE&#x27;, &#x27;candidate_team&#x27;: &#x27;FENERBAHÇE A.Ş.&#x27;, &#x27;fit_score&#x27;: 105.52, &#x27;position_confidence&#x27;: &#x27;MEDIUM_EXTERNAL&#x27;}</li>
+</ul>
+
+<h3>card_heavy_referees</h3>
+<ul>
+<li>{&#x27;referee_name&#x27;: &#x27;FATİH TOKAİL&#x27;, &#x27;cards_per_match&#x27;: 9.0, &#x27;tempo_label&#x27;: &#x27;KARTLI&#x27;}</li>
+<li>{&#x27;referee_name&#x27;: &#x27;ERDEM MERTOĞLU&#x27;, &#x27;cards_per_match&#x27;: 6.67, &#x27;tempo_label&#x27;: &#x27;KARTLI&#x27;}</li>
+<li>{&#x27;referee_name&#x27;: &#x27;GÜRCAN HASOVA&#x27;, &#x27;cards_per_match&#x27;: 6.17, &#x27;tempo_label&#x27;: &#x27;KARTLI&#x27;}</li>
+<li>{&#x27;referee_name&#x27;: &#x27;KADİR SAĞLAM&#x27;, &#x27;cards_per_match&#x27;: 5.93, &#x27;tempo_label&#x27;: &#x27;KARTLI&#x27;}</li>
+<li>{&#x27;referee_name&#x27;: &#x27;ARDA KARDEŞLER&#x27;, &#x27;cards_per_match&#x27;: 5.67, &#x27;tempo_label&#x27;: &#x27;KARTLI&#x27;}</li>
+</ul>
+
+  </div>
+</body>
+</html>

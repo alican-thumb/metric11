@@ -1,0 +1,247 @@
+# Maç Önü Raporu: BEŞİKTAŞ A.Ş. - TRABZONSPOR A.Ş.
+
+
+
+- Maç ID: `283844`
+
+- Tarih: 9.05.2026 - 20:00
+
+- Hakem: OĞUZHAN ÇAKIR
+
+- Büyük maç: True
+
+- Veri penceresi: 32 önceki maç
+
+- Not: Bu rapor test amaçlıdır; gerçek sonuç 1-2 olarak sonradan biliniyor ama hesaplamada kullanılmadı.
+
+
+
+## Olasılık Sinyali
+
+
+
+- Beşiktaş kazanır: %43
+
+- Beraberlik: %26
+
+- Rakip kazanır: %30
+
+- Beklenen gol: 1.71 - 1.43
+
+- En olası skor: 1-1 (%11)
+
+- Model aksiyonu: Korumalı taraf tahmini
+
+- Kart sinyali: HIGH (3.56 BJK kart beklentisi)
+
+- Eksik oyuncu sinyali: 0
+
+- Beraberlik risk katmanı: HIGH (xG farkı dar, takım gücü dengede, son formda beraberlik eğilimi, büyük maç denge etkisi)
+
+- Korumalı tahmin aksiyonu: Korumalı taraf tahmini (risk HIGH, skor 89)
+
+- Büyük maç profili: HIGH (taraf güvenini düşür, kart ve beraberlik senaryosunu öne çıkar)
+
+- Güven: LOW
+
+
+
+## Takım Gücü Katmanı
+
+
+
+- Beşiktaş güç skoru: 60.8/100 (atak 60.4, savunma 55.4, süreklilik 86.0)
+
+- Rakip güç skoru: 62.7/100 (atak 63.3, savunma 55.6, süreklilik 86.0)
+
+- Güç farkı: -1.9
+
+- Beşiktaş çekirdek oyuncu sayısı: 11 | Rakip çekirdek oyuncu sayısı: 11
+
+
+
+## Olası 11 Sinyali
+
+
+
+- ISHOLA JUNIOR  OLAITAN: son pencere ilk 11=8, yedek=0
+
+- ERSİN DESTANOĞLU: son pencere ilk 11=7, yedek=0
+
+- HYEONGYU OH: son pencere ilk 11=7, yedek=1
+
+- ORKUN KÖKÇÜ: son pencere ilk 11=7, yedek=1
+
+- RIDVAN YILMAZ: son pencere ilk 11=7, yedek=0
+
+- BADOBRE EMMANUEL ELYSEE DJEDJE AGBADOU: son pencere ilk 11=6, yedek=2
+
+- KRİSTJAN ASLLANİ: son pencere ilk 11=6, yedek=2
+
+- MICHAEL AMIR  MURILLO BERMUDEZ: son pencere ilk 11=6, yedek=1
+
+- ONYINYE WILFRED NDIDI: son pencere ilk 11=5, yedek=1
+
+- FELIX OHIS UDUOKHAI: son pencere ilk 11=5, yedek=3
+
+- VACLAV CERNY: son pencere ilk 11=4, yedek=4
+
+
+
+## Kadro Tercih Önerisi
+
+
+
+- Plan: Önde baskı ve skor arama
+
+- Çekirdek 11 sinyali: ORKUN KÖKÇÜ, HYEONGYU OH, KRİSTJAN ASLLANİ, CENGİZ ÜNDER, ISHOLA JUNIOR  OLAITAN, ERSİN DESTANOĞLU, RIDVAN YILMAZ, BADOBRE EMMANUEL ELYSEE DJEDJE AGBADOU
+
+- Hücum önceliği: ORKUN KÖKÇÜ, HYEONGYU OH, JOAO PEDRO FERREIRA DA SILVA
+
+- Disiplin uyarısı: EMİRHAN TOPÇU | kart/ilk11=1.0 | Erken kart görürse tempo düşür veya değişiklik planla.
+
+- Disiplin uyarısı: MICHAEL AMIR  MURILLO BERMUDEZ | kart/ilk11=0.5 | Erken kart görürse tempo düşür veya değişiklik planla.
+
+
+
+## Teknik Direktör Kadro Denetimi
+
+
+
+- Karar etiketi: KISMEN_TARTIŞMALI
+
+- Gerçek 11 / model 11 uyumu: %98
+
+- Gerçek 11 skoru: 103.21 | Model 11 skoru: 105.65
+
+- Alternatif xG: 1.71-1.43 -> 1.73-1.43
+
+- Alternatif en olası skor: 1-1 (%10)
+
+- Model çekirdek 11: ORKUN KÖKÇÜ, HYEONGYU OH, KRİSTJAN ASLLANİ, CENGİZ ÜNDER, ISHOLA JUNIOR  OLAITAN, ERSİN DESTANOĞLU, RIDVAN YILMAZ, BADOBRE EMMANUEL ELYSEE DJEDJE AGBADOU
+
+- Gerçek ilk 11'de olmayan model oyuncuları: CENGİZ ÜNDER
+
+- Tartışmalı tercih: belirgin sinyal yok.
+
+
+
+## Skor Senaryoları
+
+
+
+- 1-1: %11
+
+- 2-1: %9
+
+- 1-2: %8
+
+- 1-0: %7
+
+- 2-2: %6
+
+- 2-0: %6
+
+
+
+## Transfer Etki Simülasyonu
+
+
+
+- Not: Bu senaryo oyuncunun gerçekten oynayacağı, uyum sağlayacağı veya transfer edilebileceği anlamına gelmez; rol-fit skorundan türetilmiş düşük/orta güvenli etki simülasyonudur.
+
+- KACPER SZYMON KOZLOWSKI (GAZİANTEP FUTBOL KULÜBÜ A.Ş. / Sol açık / çizgi kırıcı): xG 1.71-1.43 -> 1.98-1.41, BJK kazanma %51, skor 1-1 (%9), etki=MEDIUM_IMPACT, rol-fit=120.91, güven=LOW_DERIVED. Al-sat değeri yüksek aday; doğru maaş/bonservis bandında ekonomik upside sağlar.
+
+- BARIŞ ALPER YILMAZ (GALATASARAY A.Ş. / Sol açık / çizgi kırıcı): xG 1.71-1.43 -> 2.1-1.4, BJK kazanma %54, skor 2-1 (%9), etki=MEDIUM_IMPACT, rol-fit=118.89, güven=MEDIUM_EXTERNAL. Sözleşme fırsatı nedeniyle düşük bonservis veya serbest kalma pazarlığı izlenmeli.
+
+- JUAN SANTOS DA SILVA (GÖZTEPE A.Ş. / Sol açık / çizgi kırıcı): xG 1.71-1.43 -> 1.99-1.41, BJK kazanma %51, skor 1-1 (%9), etki=MEDIUM_IMPACT, rol-fit=115.91, güven=LOW_DERIVED. Sportif katkı ve maliyet dengesi ayrıca piyasa değeriyle doğrulanmalı.
+
+- YUNUS AKGÜN (GALATASARAY A.Ş. / Sol açık / çizgi kırıcı): xG 1.71-1.43 -> 2.05-1.41, BJK kazanma %52, skor 2-1 (%9), etki=MEDIUM_IMPACT, rol-fit=115.39, güven=MEDIUM_EXTERNAL. Sözleşme fırsatı nedeniyle düşük bonservis veya serbest kalma pazarlığı izlenmeli.
+
+- ERNEST MUÇİ (TRABZONSPOR A.Ş. / Sol açık / çizgi kırıcı): xG 1.71-1.43 -> 1.95-1.42, BJK kazanma %50, skor 1-1 (%10), etki=MEDIUM_IMPACT, rol-fit=115.17, güven=LOW_DERIVED. Sözleşme fırsatı nedeniyle düşük bonservis veya serbest kalma pazarlığı izlenmeli.
+
+- LASZLO BENES (ZECORNER KAYSERİSPOR / Sol açık / çizgi kırıcı): xG 1.71-1.43 -> 1.97-1.41, BJK kazanma %51, skor 1-1 (%10), etki=MEDIUM_IMPACT, rol-fit=107.02, güven=LOW_DERIVED. Sözleşme fırsatı nedeniyle düşük bonservis veya serbest kalma pazarlığı izlenmeli.
+
+
+
+## Kart Riski
+
+
+
+- EMİRHAN TOPÇU: kart=2, ilk 11=2, kart/ilk 11=1.0, büyük maç kart=0
+
+- MICHAEL AMIR  MURILLO BERMUDEZ: kart=3, ilk 11=6, kart/ilk 11=0.5, büyük maç kart=1
+
+- RIDVAN YILMAZ: kart=3, ilk 11=7, kart/ilk 11=0.43, büyük maç kart=1
+
+- ONYINYE WILFRED NDIDI: kart=2, ilk 11=5, kart/ilk 11=0.4, büyük maç kart=1
+
+- BADOBRE EMMANUEL ELYSEE DJEDJE AGBADOU: kart=2, ilk 11=6, kart/ilk 11=0.33, büyük maç kart=1
+
+- CENGİZ ÜNDER: kart=1, ilk 11=3, kart/ilk 11=0.33, büyük maç kart=1
+
+- ERSİN DESTANOĞLU: kart=2, ilk 11=7, kart/ilk 11=0.29, büyük maç kart=1
+
+- ORKUN KÖKÇÜ: kart=1, ilk 11=7, kart/ilk 11=0.14, büyük maç kart=1
+
+
+
+## Gol Adayları
+
+
+
+- ORKUN KÖKÇÜ: skor=20.79, sezon gol=7, son pencere gol=3, ilk 11=7, rakip savunma çarpanı=1.0 / gerçek golcü
+
+- HYEONGYU OH: skor=19.64, sezon gol=6, son pencere gol=3, ilk 11=7, rakip savunma çarpanı=1.0
+
+- JOAO PEDRO FERREIRA DA SILVA: skor=11.5, sezon gol=4, son pencere gol=1, ilk 11=2, rakip savunma çarpanı=1.0
+
+- KRİSTJAN ASLLANİ: skor=11.22, sezon gol=2, son pencere gol=2, ilk 11=6, rakip savunma çarpanı=1.0
+
+- CENGİZ ÜNDER: skor=8.97, sezon gol=5, son pencere gol=0, ilk 11=3, rakip savunma çarpanı=1.0
+
+- ISHOLA JUNIOR  OLAITAN: skor=8.36, sezon gol=2, son pencere gol=1, ilk 11=8, rakip savunma çarpanı=1.0
+
+- VACLAV CERNY: skor=7.88, sezon gol=4, son pencere gol=0, ilk 11=4, rakip savunma çarpanı=1.0
+
+- EL BILAL TOURE: skor=7.46, sezon gol=5, son pencere gol=0, ilk 11=2, rakip savunma çarpanı=1.0
+
+
+
+## Eksik / Uygunluk Sinyali
+
+
+
+- Bu maç için eksik oyuncu sinyali yok.
+
+
+
+## Anlatılı Analiz
+
+
+
+BEŞİKTAŞ A.Ş. bu karşılaşmaya son 5 maçta 2 galibiyet, 1 beraberlik ve 2 mağlubiyetlik formla geliyor. Bu pencere içinde maç başı 1.4 gol üretip 1.0 gol yedi. Eşleşme tipi: büyük maç/derbi seviyesi.
+
+Takım gücü katmanı BEŞİKTAŞ A.Ş. için 60.8/100, TRABZONSPOR A.Ş. için 62.7/100 skor üretiyor; güç farkı -1.9 puan ve maç dengede okunuyor. Bu skor puan/maç, gol farkı, son form, iç-dış saha performansı ve kadro sürekliliğinden türetildi.
+
+Bu sezon TRABZONSPOR A.Ş. ile önceki eşleşme verisi var: 1 maçta Beşiktaş maç başı 3.0 gol ve 6.0 kart ortalaması üretti. Bu yüzden raporda hem skor hem kart tarafı önceki eşleşme etkisiyle ayarlandı.
+
+Rakibin son 5 maçlık genel formu modele ayrı eklendi: maç başı 1.2 gol atıp 1.2 gol yiyor. Skor tahmini artık sadece Beşiktaş formuna değil, rakibin hücum/savunma profilinin birleşimine göre hesaplanıyor.
+
+Rakibin son 8 maçlık savunma formu gol adayı modeline eklendi: maç başı 0.88 gol yiyor, %25 clean sheet oranı var. Gol adayı skor çarpanı 1.0.
+
+Hakem profili kart tarafında anlamlı bir sinyal veriyor: OĞUZHAN ÇAKIR bu sezon önceki 18 Beşiktaş maçında toplam maç başı 3.83 kart, Beşiktaş'a maç başı 1.78 kart ortalamasıyla öne çıkıyor.
+
+Olası 11 sinyalinde son dönemde öne çıkan isimler: ISHOLA JUNIOR  OLAITAN, ERSİN DESTANOĞLU, HYEONGYU OH, ORKUN KÖKÇÜ, RIDVAN YILMAZ, BADOBRE EMMANUEL ELYSEE DJEDJE AGBADOU. Kart riski tarafında ise son 8 maç penceresinde EMİRHAN TOPÇU, MICHAEL AMIR  MURILLO BERMUDEZ, RIDVAN YILMAZ, ONYINYE WILFRED NDIDI dikkat çekiyor.
+
+Gol adayı sinyalinde öne çıkan isimler: ORKUN KÖKÇÜ, HYEONGYU OH, JOAO PEDRO FERREIRA DA SILVA, KRİSTJAN ASLLANİ. Bu skor son gol formu, sezon içi gol sayısı ve son dönemde ilk 11 başlama sıklığından türetildi. Test sonucunda gerçek Beşiktaş golcüleri: ORKUN KÖKÇÜ.
+
+Skor dağılımında en olası senaryolar: 1-1 (%11), 2-1 (%9), 1-2 (%8). Model aksiyonu: Korumalı taraf tahmini; önerilen ana skor 1-1.
+
+Kadro tercih önerisi: Önde baskı ve skor arama. Hücum önceliği ORKUN KÖKÇÜ, HYEONGYU OH, JOAO PEDRO FERREIRA DA SILVA. Disiplin yönetimi gereken oyuncular: EMİRHAN TOPÇU, MICHAEL AMIR  MURILLO BERMUDEZ.
+
+Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %98 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.71-1.43 yerine 1.73-1.43 bandına gelebilirdi.
+
+Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Sol açık / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.71-1.43 bandından 1.98-1.41 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %51 olurdu.
+
+MVP olasılık motoru Beşiktaş galibiyetini %43, beraberliği %26, rakip galibiyetini %30 olarak işaretliyor. Gol beklentisi 1.71-1.43; kart sinyali HIGH.

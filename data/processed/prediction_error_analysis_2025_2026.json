@@ -1,0 +1,509 @@
+{
+  "summary": {
+    "match_rows": 29,
+    "match_correct": 19,
+    "match_accuracy": 0.655,
+    "match_misses": 10,
+    "goal_rows": 26,
+    "goal_top3_misses": 10,
+    "goal_top5_misses": 6,
+    "goal_top8_misses": 4,
+    "goal_top10_misses": 3,
+    "miss_types": {
+      "missed_draw": 7,
+      "big_match_miss": 1,
+      "overrated_opponent": 2,
+      "overconfident_miss": 5,
+      "overrated_besiktas": 7
+    }
+  },
+  "critical_misses": [
+    {
+      "match_id": "283623",
+      "fixture": "GALATASARAY A.Ş. - BEŞİKTAŞ A.Ş.",
+      "date": "4.10.2025 - 20:00",
+      "actual_score": "1-1",
+      "raw_predicted": "opponent_win",
+      "predicted": "opponent_win",
+      "actual": "draw",
+      "correct": false,
+      "raw_correct": false,
+      "recommended_action": "KEEP_PICK_WITH_DRAW_WARNING",
+      "prediction_adjustment": "protected_side",
+      "actionable": false,
+      "confidence_probability": 0.499,
+      "card_signal": "MEDIUM",
+      "is_big_match": true,
+      "week": 8,
+      "confidence_bucket": "LOW_MARGIN",
+      "diagnosis": "Beraberlik riski ana tahminin gerisinde kalmış."
+    },
+    {
+      "match_id": "283628",
+      "fixture": "BEŞİKTAŞ A.Ş. - GENÇLERBİRLİĞİ",
+      "date": "18.10.2025 - 17:03",
+      "actual_score": "1-2",
+      "raw_predicted": "target_win",
+      "predicted": "target_win",
+      "actual": "opponent_win",
+      "correct": false,
+      "raw_correct": false,
+      "recommended_action": "taraf_eğilimi",
+      "prediction_adjustment": "none",
+      "actionable": true,
+      "confidence_probability": 0.559,
+      "card_signal": "MEDIUM",
+      "is_big_match": false,
+      "week": 9,
+      "confidence_bucket": "OVERCONFIDENT",
+      "diagnosis": "Beşiktaş form veya güç sinyali fazla pozitif ağırlık almış."
+    },
+    {
+      "match_id": "283635",
+      "fixture": "KASIMPAŞA A.Ş. - BEŞİKTAŞ A.Ş.",
+      "date": "26.10.2025 - 20:00",
+      "actual_score": "1-1",
+      "raw_predicted": "target_win",
+      "predicted": "target_win",
+      "actual": "draw",
+      "correct": false,
+      "raw_correct": false,
+      "recommended_action": "taraf_eğilimi",
+      "prediction_adjustment": "none",
+      "actionable": true,
+      "confidence_probability": 0.537,
+      "card_signal": "MEDIUM",
+      "is_big_match": false,
+      "week": 10,
+      "confidence_bucket": "OVERCONFIDENT",
+      "diagnosis": "Beraberlik riski ana tahminin gerisinde kalmış."
+    },
+    {
+      "match_id": "283682",
+      "fixture": "BEŞİKTAŞ A.Ş. - GAZİANTEP FUTBOL KULÜBÜ A.Ş.",
+      "date": "8.12.2025 - 20:00",
+      "actual_score": "2-2",
+      "raw_predicted": "target_win",
+      "predicted": "target_win",
+      "actual": "draw",
+      "correct": false,
+      "raw_correct": false,
+      "recommended_action": "KEEP_PICK_WITH_DRAW_WARNING",
+      "prediction_adjustment": "protected_side",
+      "actionable": false,
+      "confidence_probability": 0.531,
+      "card_signal": "LOW",
+      "is_big_match": false,
+      "week": 15,
+      "confidence_bucket": "OVERCONFIDENT",
+      "diagnosis": "Beraberlik riski ana tahminin gerisinde kalmış."
+    },
+    {
+      "match_id": "283718",
+      "fixture": "İKAS EYÜPSPOR - BEŞİKTAŞ A.Ş.",
+      "date": "26.01.2026 - 20:00",
+      "actual_score": "2-2",
+      "raw_predicted": "target_win",
+      "predicted": "target_win",
+      "actual": "draw",
+      "correct": false,
+      "raw_correct": false,
+      "recommended_action": "taraf_eğilimi",
+      "prediction_adjustment": "none",
+      "actionable": true,
+      "confidence_probability": 0.527,
+      "card_signal": "MEDIUM",
+      "is_big_match": false,
+      "week": 19,
+      "confidence_bucket": "OVERCONFIDENT",
+      "diagnosis": "Beraberlik riski ana tahminin gerisinde kalmış."
+    },
+    {
+      "match_id": "283737",
+      "fixture": "BEŞİKTAŞ A.Ş. - CORENDON ALANYASPOR",
+      "date": "8.02.2026 - 20:00",
+      "actual_score": "2-2",
+      "raw_predicted": "target_win",
+      "predicted": "target_win",
+      "actual": "draw",
+      "correct": false,
+      "raw_correct": false,
+      "recommended_action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
+      "prediction_adjustment": "protected_side",
+      "actionable": false,
+      "confidence_probability": 0.434,
+      "card_signal": "MEDIUM",
+      "is_big_match": false,
+      "week": 21,
+      "confidence_bucket": "LOW_MARGIN",
+      "diagnosis": "Beraberlik riski ana tahminin gerisinde kalmış."
+    },
+    {
+      "match_id": "283745",
+      "fixture": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ - BEŞİKTAŞ A.Ş.",
+      "date": "15.02.2026 - 20:00",
+      "actual_score": "2-3",
+      "raw_predicted": "opponent_win",
+      "predicted": "opponent_win",
+      "actual": "target_win",
+      "correct": false,
+      "raw_correct": false,
+      "recommended_action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
+      "prediction_adjustment": "protected_side",
+      "actionable": false,
+      "confidence_probability": 0.455,
+      "card_signal": "MEDIUM",
+      "is_big_match": false,
+      "week": 22,
+      "confidence_bucket": "LOW_MARGIN",
+      "diagnosis": "Rakip güç/form sinyali fazla pozitif ağırlık almış."
+    },
+    {
+      "match_id": "283817",
+      "fixture": "SAMSUNSPOR A.Ş. - BEŞİKTAŞ A.Ş.",
+      "date": "19.04.2026 - 17:00",
+      "actual_score": "2-1",
+      "raw_predicted": "target_win",
+      "predicted": "draw",
+      "actual": "opponent_win",
+      "correct": false,
+      "raw_correct": false,
+      "recommended_action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
+      "prediction_adjustment": "high_draw_risk_override",
+      "actionable": false,
+      "confidence_probability": 0.255,
+      "card_signal": "MEDIUM",
+      "is_big_match": false,
+      "week": 30,
+      "confidence_bucket": "LOW_MARGIN",
+      "diagnosis": "Düşük marjlı hata."
+    },
+    {
+      "match_id": "283828",
+      "fixture": "BEŞİKTAŞ A.Ş. - MISIRLI.COM.TR FATİH KARAGÜMRÜK",
+      "date": "27.04.2026 - 20:00",
+      "actual_score": "0-0",
+      "raw_predicted": "target_win",
+      "predicted": "target_win",
+      "actual": "draw",
+      "correct": false,
+      "raw_correct": false,
+      "recommended_action": "senaryo_anlat",
+      "prediction_adjustment": "none",
+      "actionable": false,
+      "confidence_probability": 0.542,
+      "card_signal": "LOW",
+      "is_big_match": false,
+      "week": 31,
+      "confidence_bucket": "OVERCONFIDENT",
+      "diagnosis": "Beraberlik riski ana tahminin gerisinde kalmış."
+    },
+    {
+      "match_id": "283853",
+      "fixture": "ÇAYKUR RİZESPOR A.Ş. - BEŞİKTAŞ A.Ş.",
+      "date": "15.05.2026 - 20:00",
+      "actual_score": "2-2",
+      "raw_predicted": "target_win",
+      "predicted": "target_win",
+      "actual": "draw",
+      "correct": false,
+      "raw_correct": false,
+      "recommended_action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
+      "prediction_adjustment": "protected_side",
+      "actionable": false,
+      "confidence_probability": 0.487,
+      "card_signal": "MEDIUM",
+      "is_big_match": false,
+      "week": 34,
+      "confidence_bucket": "LOW_MARGIN",
+      "diagnosis": "Beraberlik riski ana tahminin gerisinde kalmış."
+    }
+  ],
+  "goal_misses": [
+    {
+      "match_id": "283646",
+      "fixture": "BEŞİKTAŞ A.Ş. - FENERBAHÇE A.Ş.",
+      "date": "2.11.2025 - 20:00",
+      "actual_score": "2-3",
+      "top_candidates": [
+        "RAFAEL ALEXANDRE FERNANDES FERREIRA DA SILVA",
+        "KEVIN OGHENETEGA TAMARAEBI BAKUMO ABRAHAM",
+        "CENGİZ ÜNDER",
+        "JOAO PEDRO FERREIRA DA SILVA",
+        "VACLAV CERNY"
+      ],
+      "top_8_candidates": [
+        "RAFAEL ALEXANDRE FERNANDES FERREIRA DA SILVA",
+        "KEVIN OGHENETEGA TAMARAEBI BAKUMO ABRAHAM",
+        "CENGİZ ÜNDER",
+        "JOAO PEDRO FERREIRA DA SILVA",
+        "VACLAV CERNY",
+        "ONYINYE WILFRED NDIDI",
+        "EL BILAL TOURE",
+        "DAVID JURASEK"
+      ],
+      "top_10_candidates": [
+        "RAFAEL ALEXANDRE FERNANDES FERREIRA DA SILVA",
+        "KEVIN OGHENETEGA TAMARAEBI BAKUMO ABRAHAM",
+        "CENGİZ ÜNDER",
+        "JOAO PEDRO FERREIRA DA SILVA",
+        "VACLAV CERNY",
+        "ONYINYE WILFRED NDIDI",
+        "EL BILAL TOURE",
+        "DAVID JURASEK",
+        "ORKUN KÖKÇÜ",
+        "FEHMİ MERT GÜNOK"
+      ],
+      "actual_scorers": [
+        "EL BILAL TOURE",
+        "EMİRHAN TOPÇU"
+      ],
+      "hit_top_3": false,
+      "hit_top_5": false,
+      "hit_top_8": true,
+      "hit_top_10": true,
+      "has_besiktas_goal": true
+    },
+    {
+      "match_id": "283700",
+      "fixture": "BEŞİKTAŞ A.Ş. - ÇAYKUR RİZESPOR A.Ş.",
+      "date": "20.12.2025 - 20:00",
+      "actual_score": "1-0",
+      "top_candidates": [
+        "KEVIN OGHENETEGA TAMARAEBI BAKUMO ABRAHAM",
+        "CENGİZ ÜNDER",
+        "VACLAV CERNY",
+        "JOAO PEDRO FERREIRA DA SILVA",
+        "ONYINYE WILFRED NDIDI"
+      ],
+      "top_8_candidates": [
+        "KEVIN OGHENETEGA TAMARAEBI BAKUMO ABRAHAM",
+        "CENGİZ ÜNDER",
+        "VACLAV CERNY",
+        "JOAO PEDRO FERREIRA DA SILVA",
+        "ONYINYE WILFRED NDIDI",
+        "EMİRHAN TOPÇU",
+        "TIAGO EMANUEL EMBALO DJALO",
+        "RAFAEL ALEXANDRE FERNANDES FERREIRA DA SILVA"
+      ],
+      "top_10_candidates": [
+        "KEVIN OGHENETEGA TAMARAEBI BAKUMO ABRAHAM",
+        "CENGİZ ÜNDER",
+        "VACLAV CERNY",
+        "JOAO PEDRO FERREIRA DA SILVA",
+        "ONYINYE WILFRED NDIDI",
+        "EMİRHAN TOPÇU",
+        "TIAGO EMANUEL EMBALO DJALO",
+        "RAFAEL ALEXANDRE FERNANDES FERREIRA DA SILVA",
+        "DAVID JURASEK",
+        "ERSİN DESTANOĞLU"
+      ],
+      "actual_scorers": [
+        "MILOT RASHICA"
+      ],
+      "hit_top_3": false,
+      "hit_top_5": false,
+      "hit_top_8": false,
+      "hit_top_10": false,
+      "has_besiktas_goal": true
+    },
+    {
+      "match_id": "283757",
+      "fixture": "BEŞİKTAŞ A.Ş. - GÖZTEPE A.Ş.",
+      "date": "22.02.2026 - 20:00",
+      "actual_score": "4-0",
+      "top_candidates": [
+        "ORKUN KÖKÇÜ",
+        "VACLAV CERNY",
+        "KEVIN OGHENETEGA TAMARAEBI BAKUMO ABRAHAM",
+        "EL BILAL TOURE",
+        "CENGİZ ÜNDER"
+      ],
+      "top_8_candidates": [
+        "ORKUN KÖKÇÜ",
+        "VACLAV CERNY",
+        "KEVIN OGHENETEGA TAMARAEBI BAKUMO ABRAHAM",
+        "EL BILAL TOURE",
+        "CENGİZ ÜNDER",
+        "HYEONGYU OH",
+        "MILOT RASHICA",
+        "MUSTAFA ERHAN HEKİMOĞLU"
+      ],
+      "top_10_candidates": [
+        "ORKUN KÖKÇÜ",
+        "VACLAV CERNY",
+        "KEVIN OGHENETEGA TAMARAEBI BAKUMO ABRAHAM",
+        "EL BILAL TOURE",
+        "CENGİZ ÜNDER",
+        "HYEONGYU OH",
+        "MILOT RASHICA",
+        "MUSTAFA ERHAN HEKİMOĞLU",
+        "RAFAEL ALEXANDRE FERNANDES FERREIRA DA SILVA",
+        "TIAGO EMANUEL EMBALO DJALO"
+      ],
+      "actual_scorers": [
+        "ONYINYE WILFRED NDIDI",
+        "MICHAEL AMIR  MURILLO BERMUDEZ",
+        "ISHOLA JUNIOR  OLAITAN",
+        "HYEONGYU OH"
+      ],
+      "hit_top_3": false,
+      "hit_top_5": false,
+      "hit_top_8": true,
+      "hit_top_10": true,
+      "has_besiktas_goal": true
+    },
+    {
+      "match_id": "283763",
+      "fixture": "KOCAELİSPOR - BEŞİKTAŞ A.Ş.",
+      "date": "28.02.2026 - 16:00",
+      "actual_score": "0-1",
+      "top_candidates": [
+        "VACLAV CERNY",
+        "HYEONGYU OH",
+        "KEVIN OGHENETEGA TAMARAEBI BAKUMO ABRAHAM",
+        "CENGİZ ÜNDER",
+        "EL BILAL TOURE"
+      ],
+      "top_8_candidates": [
+        "VACLAV CERNY",
+        "HYEONGYU OH",
+        "KEVIN OGHENETEGA TAMARAEBI BAKUMO ABRAHAM",
+        "CENGİZ ÜNDER",
+        "EL BILAL TOURE",
+        "MUSTAFA ERHAN HEKİMOĞLU",
+        "MILOT RASHICA",
+        "ONYINYE WILFRED NDIDI"
+      ],
+      "top_10_candidates": [
+        "VACLAV CERNY",
+        "HYEONGYU OH",
+        "KEVIN OGHENETEGA TAMARAEBI BAKUMO ABRAHAM",
+        "CENGİZ ÜNDER",
+        "EL BILAL TOURE",
+        "MUSTAFA ERHAN HEKİMOĞLU",
+        "MILOT RASHICA",
+        "ONYINYE WILFRED NDIDI",
+        "JOAO PEDRO FERREIRA DA SILVA",
+        "RAFAEL ALEXANDRE FERNANDES FERREIRA DA SILVA"
+      ],
+      "actual_scorers": [
+        "BADOBRE EMMANUEL ELYSEE DJEDJE AGBADOU"
+      ],
+      "hit_top_3": false,
+      "hit_top_5": false,
+      "hit_top_8": false,
+      "hit_top_10": false,
+      "has_besiktas_goal": true
+    },
+    {
+      "match_id": "283817",
+      "fixture": "SAMSUNSPOR A.Ş. - BEŞİKTAŞ A.Ş.",
+      "date": "19.04.2026 - 17:00",
+      "actual_score": "2-1",
+      "top_candidates": [
+        "HYEONGYU OH",
+        "ORKUN KÖKÇÜ",
+        "JOAO PEDRO FERREIRA DA SILVA",
+        "MUSTAFA ERHAN HEKİMOĞLU",
+        "CENGİZ ÜNDER"
+      ],
+      "top_8_candidates": [
+        "HYEONGYU OH",
+        "ORKUN KÖKÇÜ",
+        "JOAO PEDRO FERREIRA DA SILVA",
+        "MUSTAFA ERHAN HEKİMOĞLU",
+        "CENGİZ ÜNDER",
+        "ISHOLA JUNIOR  OLAITAN",
+        "ONYINYE WILFRED NDIDI",
+        "EL BILAL TOURE"
+      ],
+      "top_10_candidates": [
+        "HYEONGYU OH",
+        "ORKUN KÖKÇÜ",
+        "JOAO PEDRO FERREIRA DA SILVA",
+        "MUSTAFA ERHAN HEKİMOĞLU",
+        "CENGİZ ÜNDER",
+        "ISHOLA JUNIOR  OLAITAN",
+        "ONYINYE WILFRED NDIDI",
+        "EL BILAL TOURE",
+        "MICHAEL AMIR  MURILLO BERMUDEZ",
+        "MILOT RASHICA"
+      ],
+      "actual_scorers": [
+        "KRİSTJAN ASLLANİ"
+      ],
+      "hit_top_3": false,
+      "hit_top_5": false,
+      "hit_top_8": false,
+      "hit_top_10": false,
+      "has_besiktas_goal": true
+    },
+    {
+      "match_id": "283835",
+      "fixture": "GAZİANTEP FUTBOL KULÜBÜ A.Ş. - BEŞİKTAŞ A.Ş.",
+      "date": "1.05.2026 - 20:00",
+      "actual_score": "0-2",
+      "top_candidates": [
+        "ORKUN KÖKÇÜ",
+        "HYEONGYU OH",
+        "JOAO PEDRO FERREIRA DA SILVA",
+        "CENGİZ ÜNDER",
+        "EL BILAL TOURE"
+      ],
+      "top_8_candidates": [
+        "ORKUN KÖKÇÜ",
+        "HYEONGYU OH",
+        "JOAO PEDRO FERREIRA DA SILVA",
+        "CENGİZ ÜNDER",
+        "EL BILAL TOURE",
+        "MUSTAFA ERHAN HEKİMOĞLU",
+        "BADOBRE EMMANUEL ELYSEE DJEDJE AGBADOU",
+        "ONYINYE WILFRED NDIDI"
+      ],
+      "top_10_candidates": [
+        "ORKUN KÖKÇÜ",
+        "HYEONGYU OH",
+        "JOAO PEDRO FERREIRA DA SILVA",
+        "CENGİZ ÜNDER",
+        "EL BILAL TOURE",
+        "MUSTAFA ERHAN HEKİMOĞLU",
+        "BADOBRE EMMANUEL ELYSEE DJEDJE AGBADOU",
+        "ONYINYE WILFRED NDIDI",
+        "KRİSTJAN ASLLANİ",
+        "VACLAV CERNY"
+      ],
+      "actual_scorers": [
+        "TIAGO EMANUEL EMBALO DJALO",
+        "KRİSTJAN ASLLANİ"
+      ],
+      "hit_top_3": false,
+      "hit_top_5": false,
+      "hit_top_8": false,
+      "hit_top_10": true,
+      "has_besiktas_goal": true
+    }
+  ],
+  "recommendations": [
+    {
+      "priority": "HIGH",
+      "area": "Beraberlik riski",
+      "action": "Ana olasılığı bozmadan beraberlik risk katmanını UI'da daha görünür yap; xG farkı dar ve güç farkı düşük maçları 'korumalı senaryo' diye etiketle."
+    },
+    {
+      "priority": "HIGH",
+      "area": "Büyük maç modeli",
+      "action": "Derbi/büyük maçlar için ayrı katsayı eğit; hakem kart profili, önceki büyük maç oyuncu kart/gol sinyali ve kadro denetimi etkisini ayrı ölç."
+    },
+    {
+      "priority": "MEDIUM",
+      "area": "Güven kalibrasyonu",
+      "action": "Yüksek olasılık verilen ama yanlış çıkan maçlarda confidence seviyesini düşüren risk bayrakları ekle."
+    },
+    {
+      "priority": "MEDIUM",
+      "area": "Gol adayı",
+      "action": "Defans, duran top ve sonradan giren oyuncu gol olasılığı için ayrı aday havuzu üret; mevcut model ilk 11/gol formuna fazla bağlı."
+    }
+  ]
+}

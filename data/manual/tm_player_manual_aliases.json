@@ -1,0 +1,161 @@
+{
+  "_note": "Manual TM alias overrides for players not matched by automated scraping. Used by enrich_players_with_transfermarkt.py as priority override. requires_network_verify=true means values need live TM check.",
+  "aliases": [
+    {
+      "tff_name": "YOUSSEF EN NESYRI",
+      "tff_club": "FENERBAHÇE A.Ş.",
+      "tm_name": "Youssef En-Nesyri",
+      "tm_position_group": "FWD",
+      "tm_position": "Centre-Forward",
+      "tm_market_value_eur": 20000000,
+      "tm_market_value_text": "€20.00m",
+      "tm_match_method": "manual_alias",
+      "requires_network_verify": true,
+      "note": "TFF name without hyphen; TM uses En-Nesyri"
+    },
+    {
+      "tff_name": "JHON JADER DURAN PALACIOS",
+      "tff_club": "FENERBAHÇE A.Ş.",
+      "tm_name": "Jhon Durán",
+      "tm_position_group": "FWD",
+      "tm_position": "Centre-Forward",
+      "tm_market_value_eur": 55000000,
+      "tm_market_value_text": "€55.00m",
+      "tm_match_method": "manual_alias",
+      "requires_network_verify": true,
+      "note": "TFF uses full birth name; TM uses Jhon Durán"
+    },
+    {
+      "tff_name": "KEVIN OGHENETEGA TAMARAEBI BAKUMO ABRAHAM",
+      "tff_club": "BEŞİKTAŞ A.Ş.",
+      "tm_name": "Kevin",
+      "tm_position_group": "FWD",
+      "tm_position": "Centre-Forward",
+      "tm_market_value_eur": 4000000,
+      "tm_market_value_text": "€4.00m",
+      "tm_match_method": "manual_alias",
+      "requires_network_verify": true,
+      "note": "TM lists this player as 'Kevin' (mononym); very long TFF birth name blocks all token matching"
+    },
+    {
+      "tff_name": "GABRIEL ARMANDO DE ABREU",
+      "tff_club": "BEŞİKTAŞ A.Ş.",
+      "tm_name": "Gabriel",
+      "tm_position_group": "DEF",
+      "tm_position": "Centre-Back",
+      "tm_market_value_eur": 3500000,
+      "tm_market_value_text": "€3.50m",
+      "tm_match_method": "manual_alias",
+      "requires_network_verify": true,
+      "note": "TM may list as 'Gabriel' or 'Gabriel Armando'; common Brazilian single-name usage"
+    },
+    {
+      "tff_name": "JURE BALKOVEC",
+      "tff_club": "MISIRLI.COM.TR FATİH KARAGÜMRÜK",
+      "tm_name": "Jure Balkovec",
+      "tm_position_group": "DEF",
+      "tm_position": "Left-Back",
+      "tm_market_value_eur": 700000,
+      "tm_market_value_text": "€700k",
+      "tm_match_method": "manual_alias",
+      "requires_network_verify": true,
+      "note": "Slovenian LB; may not appear on TM's Karagümrük squad page due to squad page timing"
+    },
+    {
+      "tff_name": "DATRO DAVID FOFANA",
+      "tff_club": "MISIRLI.COM.TR FATİH KARAGÜMRÜK",
+      "tm_name": "Datro Fofana",
+      "tm_position_group": "FWD",
+      "tm_position": "Centre-Forward",
+      "tm_market_value_eur": 8000000,
+      "tm_market_value_text": "€8.00m",
+      "tm_match_method": "manual_alias",
+      "requires_network_verify": true,
+      "note": "Ivorian striker; TM uses 'Datro Fofana' without middle name David"
+    },
+    {
+      "tff_name": "ATTILA ARPAD SZALAI",
+      "tff_club": "KASIMPAŞA A.Ş.",
+      "tm_name": "Attila Szalai",
+      "tm_position_group": "DEF",
+      "tm_position": "Centre-Back",
+      "tm_market_value_eur": 2000000,
+      "tm_market_value_text": "€2.00m",
+      "tm_match_method": "manual_alias",
+      "requires_network_verify": true,
+      "note": "TFF includes middle name Arpad; TM uses Attila Szalai"
+    },
+    {
+      "tff_name": "AARON OPOKU TIAWIAH",
+      "tff_club": "ZECORNER KAYSERİSPOR",
+      "tm_name": "Aaron Opoku",
+      "tm_position_group": "FWD",
+      "tm_position": "Left Winger",
+      "tm_market_value_eur": 1000000,
+      "tm_market_value_text": "€1.00m",
+      "tm_match_method": "manual_alias",
+      "requires_network_verify": true,
+      "note": "TFF includes Tiawiah; TM uses Aaron Opoku"
+    },
+    {
+      "tff_name": "DENIS MIHAI DRAGUS",
+      "tff_club": "TRABZONSPOR A.Ş.",
+      "tm_name": "Denis Drăguș",
+      "tm_position_group": "FWD",
+      "tm_position": "Centre-Forward",
+      "tm_market_value_eur": 4000000,
+      "tm_market_value_text": "€4.00m",
+      "tm_match_method": "manual_alias",
+      "requires_network_verify": true,
+      "note": "Romanian FWD; TM uses diacritics Drăguș; TFF normalizes to DRAGUS"
+    },
+    {
+      "tff_name": "RHALDNEY NORBERTO SIMIAO GOMES",
+      "tff_club": "GÖZTEPE A.Ş.",
+      "tm_name": "Rhaldney",
+      "tm_position_group": "MID",
+      "tm_position": "Central Midfield",
+      "tm_market_value_eur": 1500000,
+      "tm_market_value_text": "€1.50m",
+      "tm_match_method": "manual_alias",
+      "requires_network_verify": true,
+      "note": "Brazilian MF known by mononym Rhaldney on TM"
+    },
+    {
+      "tff_name": "UCHENNA OGUNDU",
+      "tff_club": "CORENDON ALANYASPOR",
+      "tm_name": "Uchenna Ogundu",
+      "tm_position_group": "FWD",
+      "tm_position": "Centre-Forward",
+      "tm_market_value_eur": 600000,
+      "tm_market_value_text": "€600k",
+      "tm_match_method": "manual_alias",
+      "requires_network_verify": true,
+      "note": "Nigerian FWD; may appear under variant spelling on TM"
+    },
+    {
+      "tff_name": "ALASSANE NDAO",
+      "tff_club": "TÜMOSAN KONYASPOR",
+      "tm_name": "Alassane Ndao",
+      "tm_position_group": "FWD",
+      "tm_position": "Centre-Forward",
+      "tm_market_value_eur": 500000,
+      "tm_market_value_text": "€500k",
+      "tm_match_method": "manual_alias",
+      "requires_network_verify": true,
+      "note": "Senegalese FWD at Konyaspor"
+    },
+    {
+      "tff_name": "JESURUN  RAK-SAKYI",
+      "tff_club": "ÇAYKUR RİZESPOR A.Ş.",
+      "tm_name": "Jesurun Rak-Sakyi",
+      "tm_position_group": "FWD",
+      "tm_position": "Right Winger",
+      "tm_market_value_eur": 8000000,
+      "tm_market_value_text": "€8.00m",
+      "tm_match_method": "manual_alias",
+      "requires_network_verify": true,
+      "note": "English-Ghanaian winger; TFF has double space in name; TM uses hyphen"
+    }
+  ]
+}

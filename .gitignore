@@ -1,0 +1,16 @@
+.env
+.env.example
+.env.template
+.DS_Store
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+data/raw/
+# Pipeline run logs (ephemeral)
+data/processed/daily_pipeline_run_latest.*
+# SQLite binary (rebuilt by pipeline each run)
+data/processed/*.sqlite
+# Node (if Vercel CLI is used locally)
+node_modules/
+.vercel/

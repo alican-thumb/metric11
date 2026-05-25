@@ -1,0 +1,169 @@
+# Takım Scout Blueprint Raporu
+
+- Takım: 18
+- Rol aday havuzu: 9
+- Takım-rol-aday bağlantısı: 275
+- Not: Takım zafiyetleri TFF sezon verisinden türetilir; aday eşleşmeleri mevcut FM/pozisyon scout havuzundan gelir ve lisanslı/pozisyon verisi arttıkça keskinleşir.
+
+## HESAP.COM ANTALYASPOR
+
+- Güç: 28.6 | GF: 0.97 | GA: 1.62 | kart: 2.53
+- Zafiyet: savunma kırılgan, son bölüm gol yeme riski, kart baskısı, skor üretim sorunu, deplasman zayıf, hücum verimsizliği
+- Scout ipucu: Hızlı stoper, savunmacı 6 numara veya yüksek eforlu bek
+- Stoper / hava ve temas: Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 1.62. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
+- 6 numara / savunma emniyeti: Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir. Adaylar: GAİUS ABRAHAM JERED MAKOUTA, ANDRI FANNAR BALDURSSON, ANTHONY JUNIOR DENNIS
+- 8 numara / fizik motoru: Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir. Adaylar: ALEXANDRU IULIAN MAXIM, QAZIM LACI, ORKUN KÖKÇÜ
+- Santrfor / skor yükü: Skor üretim problemi için bitirici profil; mevcut gol ortalaması 0.97. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, MOHAMED LAMINE BAYO
+
+## ZECORNER KAYSERİSPOR
+
+- Güç: 24.9 | GF: 0.79 | GA: 1.82 | kart: 2.5
+- Zafiyet: savunma kırılgan, kart baskısı, skor üretim sorunu, deplasman zayıf, hücum verimsizliği
+- Scout ipucu: Hızlı stoper, savunmacı 6 numara veya yüksek eforlu bek
+- Stoper / hava ve temas: Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 1.82. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
+- 6 numara / savunma emniyeti: Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir. Adaylar: GAİUS ABRAHAM JERED MAKOUTA, ANDRI FANNAR BALDURSSON, ANTHONY JUNIOR DENNIS
+- 8 numara / fizik motoru: Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir. Adaylar: ALEXANDRU IULIAN MAXIM, QAZIM LACI, ORKUN KÖKÇÜ
+- Santrfor / skor yükü: Skor üretim problemi için bitirici profil; mevcut gol ortalaması 0.79. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, MOHAMED LAMINE BAYO
+
+## KASIMPAŞA A.Ş.
+
+- Güç: 37.3 | GF: 0.97 | GA: 1.44 | kart: 2.65
+- Zafiyet: son bölüm gol yeme riski, kart baskısı, skor üretim sorunu, deplasman zayıf, hücum verimsizliği
+- Scout ipucu: Maç sonu denge sağlayan fiziksel 8 numara veya savunmacı orta saha
+- 8 numara / fizik motoru: Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir. Adaylar: ALEXANDRU IULIAN MAXIM, QAZIM LACI, ORKUN KÖKÇÜ
+- 6 numara / savunma emniyeti: Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir. Adaylar: GAİUS ABRAHAM JERED MAKOUTA, ANTHONY JUNIOR DENNIS, MANUEL LUIS DA SILVA CAFUMANA
+- Stoper / hava ve temas: Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 1.44. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
+- Santrfor / skor yükü: Skor üretim problemi için bitirici profil; mevcut gol ortalaması 0.97. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, MOHAMED LAMINE BAYO
+
+## MISIRLI.COM.TR FATİH KARAGÜMRÜK
+
+- Güç: 40.3 | GF: 0.91 | GA: 1.59 | kart: 1.76
+- Zafiyet: savunma kırılgan, skor üretim sorunu, deplasman zayıf, hücum verimsizliği
+- Scout ipucu: Hızlı stoper, savunmacı 6 numara veya yüksek eforlu bek
+- Stoper / hava ve temas: Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 1.59. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
+- 6 numara / savunma emniyeti: Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir. Adaylar: GAİUS ABRAHAM JERED MAKOUTA, ANDRI FANNAR BALDURSSON, ANTHONY JUNIOR DENNIS
+- Santrfor / skor yükü: Skor üretim problemi için bitirici profil; mevcut gol ortalaması 0.91. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, MOHAMED LAMINE BAYO
+- Sol açık / çizgi kırıcı: Deplasman veya üretim zafiyetinde çizgi kıran/taşıyıcı hücum profili gerekir. Adaylar: YUNUS AKGÜN, BARIŞ ALPER YILMAZ, KAZEEM ADEREMI J. OLAIGBE
+
+## İKAS EYÜPSPOR
+
+- Güç: 45.0 | GF: 0.97 | GA: 1.41 | kart: 2.38
+- Zafiyet: son bölüm gol yeme riski, skor üretim sorunu, deplasman zayıf, hücum verimsizliği
+- Scout ipucu: Maç sonu denge sağlayan fiziksel 8 numara veya savunmacı orta saha
+- 8 numara / fizik motoru: Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir. Adaylar: ALEXANDRU IULIAN MAXIM, QAZIM LACI, ORKUN KÖKÇÜ
+- 6 numara / savunma emniyeti: Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir. Adaylar: GAİUS ABRAHAM JERED MAKOUTA, ANDRI FANNAR BALDURSSON, ANTHONY JUNIOR DENNIS
+- Stoper / hava ve temas: Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 1.41. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
+- Santrfor / skor yükü: Skor üretim problemi için bitirici profil; mevcut gol ortalaması 0.97. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, MOHAMED LAMINE BAYO
+
+## GAZİANTEP FUTBOL KULÜBÜ A.Ş.
+
+- Güç: 30.9 | GF: 1.26 | GA: 1.71 | kart: 2.91
+- Zafiyet: savunma kırılgan, son bölüm gol yeme riski, kart baskısı
+- Scout ipucu: Hızlı stoper, savunmacı 6 numara veya yüksek eforlu bek
+- Stoper / hava ve temas: Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 1.71. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
+- 6 numara / savunma emniyeti: Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir. Adaylar: GAİUS ABRAHAM JERED MAKOUTA, ANDRI FANNAR BALDURSSON, ANTHONY JUNIOR DENNIS
+- 8 numara / fizik motoru: Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir. Adaylar: QAZIM LACI, ORKUN KÖKÇÜ, LASZLO BENES
+
+## KOCAELİSPOR
+
+- Güç: 33.3 | GF: 0.76 | GA: 1.12 | kart: 2.38
+- Zafiyet: skor üretim sorunu, deplasman zayıf, hücum verimsizliği
+- Scout ipucu: Bireysel gol çözümü: düşük GF oranını kıracak bitirici forvet
+- Santrfor / skor yükü: Skor üretim problemi için bitirici profil; mevcut gol ortalaması 0.76. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, MOHAMED LAMINE BAYO
+- Sol açık / çizgi kırıcı: Deplasman veya üretim zafiyetinde çizgi kıran/taşıyıcı hücum profili gerekir. Adaylar: YUNUS AKGÜN, BARIŞ ALPER YILMAZ, KAZEEM ADEREMI J. OLAIGBE
+- 8 numara / fizik motoru: Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir. Adaylar: ALEXANDRU IULIAN MAXIM, QAZIM LACI, ORKUN KÖKÇÜ
+- Bek / çift yönlü koridor: Kanat savunması ve geçiş gücünü aynı anda destekleyecek çift yönlü bek profili gerekir. Adaylar: KENNETH IMMANUEL PAAL, YHOAN MANY ANDZOUANA, ROLAND SALLAI
+
+## ÇAYKUR RİZESPOR A.Ş.
+
+- Güç: 42.6 | GF: 1.35 | GA: 1.53 | kart: 2.41
+- Zafiyet: savunma kırılgan, son bölüm gol yeme riski, deplasman zayıf
+- Scout ipucu: Hızlı stoper, savunmacı 6 numara veya yüksek eforlu bek
+- Stoper / hava ve temas: Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 1.53. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
+- 6 numara / savunma emniyeti: Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir. Adaylar: GAİUS ABRAHAM JERED MAKOUTA, ANDRI FANNAR BALDURSSON, ANTHONY JUNIOR DENNIS
+- 8 numara / fizik motoru: Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir. Adaylar: ALEXANDRU IULIAN MAXIM, ORKUN KÖKÇÜ, KACPER SZYMON KOZLOWSKI
+- Sol açık / çizgi kırıcı: Deplasman veya üretim zafiyetinde çizgi kıran/taşıyıcı hücum profili gerekir. Adaylar: YUNUS AKGÜN, BARIŞ ALPER YILMAZ, KAZEEM ADEREMI J. OLAIGBE
+
+## GENÇLERBİRLİĞİ
+
+- Güç: 45.6 | GF: 1.06 | GA: 1.38 | kart: 2.12
+- Zafiyet: skor üretim sorunu, deplasman zayıf
+- Scout ipucu: Ceza sahası koşusu ve bitiricilik üreten forvet/kanat
+- Santrfor / skor yükü: Skor üretim problemi için bitirici profil; mevcut gol ortalaması 1.06. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, MOHAMED LAMINE BAYO
+- Sol açık / çizgi kırıcı: Deplasman veya üretim zafiyetinde çizgi kıran/taşıyıcı hücum profili gerekir. Adaylar: YUNUS AKGÜN, BARIŞ ALPER YILMAZ, KAZEEM ADEREMI J. OLAIGBE
+- 8 numara / fizik motoru: Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir. Adaylar: ALEXANDRU IULIAN MAXIM, QAZIM LACI, ORKUN KÖKÇÜ
+- Bek / çift yönlü koridor: Kanat savunması ve geçiş gücünü aynı anda destekleyecek çift yönlü bek profili gerekir. Adaylar: KENNETH IMMANUEL PAAL, YHOAN MANY ANDZOUANA, ROLAND SALLAI
+
+## TÜMOSAN KONYASPOR
+
+- Güç: 42.7 | GF: 1.26 | GA: 1.47 | kart: 2.56
+- Zafiyet: kart baskısı
+- Scout ipucu: Daha kontrollü ikili mücadele profili ve pasla baskı kıran orta saha
+- 6 numara / savunma emniyeti: Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir. Adaylar: GAİUS ABRAHAM JERED MAKOUTA, ANDRI FANNAR BALDURSSON, ANTHONY JUNIOR DENNIS
+- 8 numara / fizik motoru: Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir. Adaylar: ALEXANDRU IULIAN MAXIM, QAZIM LACI, ORKUN KÖKÇÜ
+
+## CORENDON ALANYASPOR
+
+- Güç: 44.1 | GF: 1.21 | GA: 1.21 | kart: 2.38
+- Zafiyet: deplasman zayıf
+- Scout ipucu: Geçiş oyunu taşıyacak fiziksel orta saha/kanat
+- 8 numara / fizik motoru: Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir. Adaylar: ALEXANDRU IULIAN MAXIM, QAZIM LACI, ORKUN KÖKÇÜ
+- Sol açık / çizgi kırıcı: Deplasman veya üretim zafiyetinde çizgi kıran/taşıyıcı hücum profili gerekir. Adaylar: YUNUS AKGÜN, BARIŞ ALPER YILMAZ, KAZEEM ADEREMI J. OLAIGBE
+- Bek / çift yönlü koridor: Kanat savunması ve geçiş gücünü aynı anda destekleyecek çift yönlü bek profili gerekir. Adaylar: KENNETH IMMANUEL PAAL, YHOAN MANY ANDZOUANA, ROLAND SALLAI
+
+## GÖZTEPE A.Ş.
+
+- Güç: 59.8 | GF: 1.24 | GA: 0.94 | kart: 2.53
+- Zafiyet: kart baskısı
+- Scout ipucu: Daha kontrollü ikili mücadele profili ve pasla baskı kıran orta saha
+- 6 numara / savunma emniyeti: Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir. Adaylar: GAİUS ABRAHAM JERED MAKOUTA, ANDRI FANNAR BALDURSSON, MANUEL LUIS DA SILVA CAFUMANA
+- 8 numara / fizik motoru: Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir. Adaylar: ALEXANDRU IULIAN MAXIM, QAZIM LACI, ORKUN KÖKÇÜ
+
+## SAMSUNSPOR A.Ş.
+
+- Güç: 60.9 | GF: 1.35 | GA: 1.32 | kart: 2.24
+- Zafiyet: son bölüm gol yeme riski
+- Scout ipucu: Maç sonu denge sağlayan fiziksel 8 numara veya savunmacı orta saha
+- 8 numara / fizik motoru: Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir. Adaylar: ALEXANDRU IULIAN MAXIM, QAZIM LACI, ORKUN KÖKÇÜ
+- 6 numara / savunma emniyeti: Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir. Adaylar: GAİUS ABRAHAM JERED MAKOUTA, ANDRI FANNAR BALDURSSON, ANTHONY JUNIOR DENNIS
+- Stoper / hava ve temas: Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 1.32. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
+
+## BEŞİKTAŞ A.Ş.
+
+- Güç: 62.5 | GF: 1.74 | GA: 1.18 | kart: 2.32
+- Zafiyet: kadro derinliği sınırlı
+- Scout ipucu: Kaliteli rotasyon: büyük maç baskısını karşılayacak kanat/bek derinliği
+- Sol açık / çizgi kırıcı: Büyük maç rotasyonunu besleyecek ve kanat derinliğini artıracak yaratıcı profil. Adaylar: YUNUS AKGÜN, BARIŞ ALPER YILMAZ, KAZEEM ADEREMI J. OLAIGBE
+- Bek / çift yönlü koridor: Koridor derinliğini artıracak, büyük maç baskısında rotasyon sağlayacak çift yönlü bek. Adaylar: KENNETH IMMANUEL PAAL, YHOAN MANY ANDZOUANA, ROLAND SALLAI
+
+## TRABZONSPOR A.Ş.
+
+- Güç: 68.6 | GF: 1.79 | GA: 1.15 | kart: 1.71
+- Zafiyet: kadro derinliği sınırlı
+- Scout ipucu: Kaliteli rotasyon: büyük maç baskısını karşılayacak kanat/bek derinliği
+- Sol açık / çizgi kırıcı: Büyük maç rotasyonunu besleyecek ve kanat derinliğini artıracak yaratıcı profil. Adaylar: YUNUS AKGÜN, BARIŞ ALPER YILMAZ, GÖKTAN GÜRPÜZ
+- Bek / çift yönlü koridor: Koridor derinliğini artıracak, büyük maç baskısında rotasyon sağlayacak çift yönlü bek. Adaylar: KENNETH IMMANUEL PAAL, YHOAN MANY ANDZOUANA, ROLAND SALLAI
+
+## RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ
+
+- Güç: 73.3 | GF: 1.71 | GA: 1.03 | kart: 2.12
+- Zafiyet: kadro derinliği sınırlı
+- Scout ipucu: Kaliteli rotasyon: büyük maç baskısını karşılayacak kanat/bek derinliği
+- Sol açık / çizgi kırıcı: Büyük maç rotasyonunu besleyecek ve kanat derinliğini artıracak yaratıcı profil. Adaylar: YUNUS AKGÜN, BARIŞ ALPER YILMAZ, KAZEEM ADEREMI J. OLAIGBE
+- Bek / çift yönlü koridor: Koridor derinliğini artıracak, büyük maç baskısında rotasyon sağlayacak çift yönlü bek. Adaylar: KENNETH IMMANUEL PAAL, YHOAN MANY ANDZOUANA, ROLAND SALLAI
+
+## FENERBAHÇE A.Ş.
+
+- Güç: 76.5 | GF: 2.26 | GA: 1.09 | kart: 2.47
+- Zafiyet: kadro derinliği sınırlı
+- Scout ipucu: Kaliteli rotasyon: büyük maç baskısını karşılayacak kanat/bek derinliği
+- Sol açık / çizgi kırıcı: Büyük maç rotasyonunu besleyecek ve kanat derinliğini artıracak yaratıcı profil. Adaylar: YUNUS AKGÜN, BARIŞ ALPER YILMAZ, KAZEEM ADEREMI J. OLAIGBE
+- Bek / çift yönlü koridor: Koridor derinliğini artıracak, büyük maç baskısında rotasyon sağlayacak çift yönlü bek. Adaylar: KENNETH IMMANUEL PAAL, YHOAN MANY ANDZOUANA, ROLAND SALLAI
+
+## GALATASARAY A.Ş.
+
+- Güç: 84.4 | GF: 2.26 | GA: 0.88 | kart: 2.03
+- Zafiyet: kadro derinliği sınırlı
+- Scout ipucu: Kaliteli rotasyon: büyük maç baskısını karşılayacak kanat/bek derinliği
+- Sol açık / çizgi kırıcı: Büyük maç rotasyonunu besleyecek ve kanat derinliğini artıracak yaratıcı profil. Adaylar: KAZEEM ADEREMI J. OLAIGBE, GÖKTAN GÜRPÜZ, DORGELES NENE
+- Bek / çift yönlü koridor: Koridor derinliğini artıracak, büyük maç baskısında rotasyon sağlayacak çift yönlü bek. Adaylar: KENNETH IMMANUEL PAAL, YHOAN MANY ANDZOUANA, RUAN PEREIRA DUARTE

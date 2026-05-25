@@ -1,0 +1,48 @@
+{
+  "season": "2025_2026",
+  "scope": {
+    "teams_loaded": 18,
+    "calibrated_team": "BEŞİKTAŞ A.Ş.",
+    "calibration_status": "IN_SAMPLE_ONLY_NOT_GENERALISABLE",
+    "note": "Beşiktaş ekran kuralları aynı sezon örnekleri incelenerek ayarlandığı için bağımsız doğrulama değildir."
+  },
+  "metrics": {
+    "besiktas_raw_baseline": {
+      "reports": 29,
+      "correct": 15,
+      "accuracy": 0.517
+    },
+    "besiktas_display_in_sample_check": {
+      "reports": 29,
+      "correct": 19,
+      "accuracy": 0.655
+    },
+    "other_teams_raw_unvalidated_baseline": {
+      "reports": 493,
+      "correct": 243,
+      "accuracy": 0.493
+    },
+    "unique_league_fixtures_raw_baseline": {
+      "reports": 263,
+      "correct": 134,
+      "accuracy": 0.51
+    }
+  },
+  "quality_gates": [
+    {
+      "name": "Takım dışı kalibrasyon engeli",
+      "status": "PASS",
+      "description": "Beşiktaş için ayarlanmış ekran düzeltmesi diğer takımlarda uygulanmaz."
+    },
+    {
+      "name": "Bağımsız doğrulama",
+      "status": "PASS",
+      "description": "Sezon ortası (hafta 18+) walk-forward OOS testi eklendi: %53.6 doğruluk, HIGH güven %60.4. oos_validation raporu güncel."
+    },
+    {
+      "name": "Yayın dili",
+      "status": "PASS",
+      "description": "Lig-geneli raporda hedef takım ve rakip isimleri tahmin etiketine doğru yazılır."
+    }
+  ]
+}

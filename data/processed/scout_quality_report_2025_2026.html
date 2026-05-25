@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Scout Kalite ve Doğrulama Raporu</title>
+  <style>
+    :root { --bg:#f4f6f8; --panel:#fff; --ink:#15181d; --muted:#667085; --line:#dce2ea; --dark:#111318; --red:#bf1f2f; --amber:#b76b00; --blue:#185ea8; --shadow:0 8px 22px rgba(18,24,32,.08); }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Inter, system-ui, sans-serif; background:var(--bg); color:var(--ink); }
+    header { background:var(--dark); color:white; padding:28px 42px; border-bottom:4px solid var(--amber); }
+    header h1 { margin:0 0 7px; font-size:32px; letter-spacing:0; }
+    header p { margin:0; color:#c9ced8; max-width:1050px; line-height:1.5; }
+    main { max-width:1420px; margin:0 auto; padding:24px; }
+    .metrics { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-bottom:18px; }
+    .metric, section { background:white; border:1px solid var(--line); border-radius:8px; box-shadow:var(--shadow); }
+    .metric { padding:15px; }
+    .metric span { display:block; color:var(--muted); font-size:12px; }
+    .metric strong { display:block; font-size:26px; margin-top:5px; }
+    section { padding:18px; margin-bottom:18px; overflow-x:auto; }
+    h2 { margin:0 0 14px; font-size:18px; }
+    table { width:100%; border-collapse:collapse; font-size:13px; min-width:850px; }
+    th,td { padding:9px 7px; border-bottom:1px solid var(--line); text-align:left; vertical-align:top; }
+    th { color:var(--muted); font-size:12px; }
+    .pill { display:inline-flex; min-height:23px; align-items:center; border-radius:999px; padding:0 8px; font-size:12px; border:1px solid #f2d09a; color:var(--amber); background:#fff7e8; }
+    @media (max-width:900px) { .metrics { grid-template-columns:1fr 1fr; } main { padding:14px; } header { padding:22px; } }
+    @media (max-width:620px) { .metrics { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Scout Kalite ve Doğrulama Raporu</h1>
+    <p>Scout adaylarının pozisyon güvenini, eksik profil alanlarını ve fazla role yayılan oyuncuları görünür yapar. Bu rapor doğrudan veri toplama önceliğidir.</p>
+  </header>
+  <main>
+    <div class="metrics">
+      <div class="metric"><span>Blueprint bağlantı</span><strong>275</strong></div>
+      <div class="metric"><span>Düşük güven</span><strong>0</strong></div>
+      <div class="metric"><span>Tekil kontrol</span><strong>0</strong></div>
+      <div class="metric"><span>3+ rol yayılımı</span><strong>0</strong></div>
+    </div>
+    <section><h2>Düşük Güven İnceleme Kuyruğu</h2><table><thead><tr><th>Oyuncu</th><th>Takım</th><th>Rol</th><th>Fit</th><th>Güven</th><th>Etkilenen</th><th>Gerekçe</th><th>Gerekli Veri</th></tr></thead><tbody></tbody></table></section>
+    <section><h2>Fazla Role Yayılan Oyuncular</h2><table><thead><tr><th>Oyuncu</th><th>Takım</th><th>Rol Sayısı</th><th>Roller</th><th>Aksiyon</th></tr></thead><tbody></tbody></table></section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Oyuncu Alias Kalite Raporu — metric11</title>
+  <style>
+    :root {
+      --bg:#f3f5f4; --panel:#fff; --ink:#132018; --muted:#627067; --line:#d7ded9;
+      --red:#bd2936; --green:#116447; --lime:#cde94e; --blue:#22618c; --dark:#091810; --soft:#e8eee9;
+    }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Inter,"Segoe UI",Arial,sans-serif; background:var(--bg); color:var(--ink); }
+    .topbar { position:sticky; top:0; z-index:5; display:flex; align-items:center; justify-content:space-between; gap:20px; min-height:64px; padding:0 clamp(16px,4vw,42px); background:var(--dark); color:white; border-bottom:1px solid #203328; }
+    .brand { display:flex; gap:11px; align-items:center; font-weight:800; font-size:19px; }
+    .brand-mark { width:30px; height:30px; display:grid; place-items:center; border-radius:7px; color:var(--dark); background:var(--lime); font-size:15px; }
+    .season { color:#a7b3ab; font-size:12px; font-weight:500; margin-left:4px; }
+    nav { display:flex; gap:5px; flex-wrap:wrap; justify-content:flex-end; }
+    nav a { color:#d5ded8; text-decoration:none; font-size:13px; font-weight:600; padding:10px 11px; border-radius:6px; }
+    nav a:hover { background:#162b20; color:white; }
+    .back-link { display:inline-flex; align-items:center; gap:6px; color:var(--green); text-decoration:none; font-size:13px; font-weight:600; margin-bottom:18px; }
+    .back-link::before { content:"←"; }
+    .report-wrap { max-width:960px; margin:0 auto; padding:32px clamp(14px,3vw,32px) 60px; }
+    .report-wrap h1 { font-size:28px; margin:0 0 6px; line-height:1.15; }
+    .report-wrap h2 { font-size:19px; margin:28px 0 10px; padding-bottom:6px; border-bottom:1px solid var(--line); }
+    .report-wrap h3 { font-size:15px; margin:20px 0 8px; color:var(--muted); font-weight:700; }
+    .report-wrap p { line-height:1.65; margin:0 0 12px; font-size:14px; }
+    .report-wrap ul { padding-left:20px; margin:0 0 14px; }
+    .report-wrap li { line-height:1.65; font-size:14px; margin-bottom:4px; }
+    .report-wrap code { background:var(--soft); padding:1px 5px; border-radius:3px; font-size:12px; font-family:monospace; }
+    .report-wrap em { font-style:italic; color:var(--muted); }
+    .report-wrap strong { font-weight:700; }
+    .md-table { width:100%; border-collapse:collapse; margin:0 0 18px; font-size:13px; overflow-x:auto; display:block; }
+    .md-table th { background:var(--soft); font-weight:700; text-align:left; padding:7px 10px; border:1px solid var(--line); white-space:nowrap; }
+    .md-table td { padding:6px 10px; border:1px solid var(--line); }
+    .md-table tr:nth-child(even) td { background:#f8faf9; }
+    @media (max-width:680px) { .topbar { position:static; align-items:flex-start; flex-direction:column; padding:13px 16px; } nav { width:100%; overflow-x:auto; flex-wrap:nowrap; } }
+    @media (max-width:600px) { .md-table th,.md-table td { padding:5px 6px; font-size:11px; } }
+  </style>
+</head>
+<body>
+  <div class="topbar"><div class="brand"><span class="brand-mark">11</span> metric11 <span class="season">Süper Lig 2025/26</span></div><nav><a href="football_intelligence_home.html">Merkez</a><a href="football_command_center_2025_2026.html">Analiz</a><a href="besiktas_2025_2026_dashboard_chronological.html">Maç Önü</a><a href="transfer_recommendation_report_2025_2026.html">Scout</a><a href="all_teams_preview_dashboard_2025_2026.html">Lig</a></nav></div>
+  <div class="report-wrap">
+    <a class="back-link" href="football_intelligence_home.html">Ana sayfaya dön</a>
+    <h1>Oyuncu Alias ve Eşleşme Kalitesi</h1>
+
+<ul>
+<li>Manuel alias oyuncusu: 28</li>
+<li>İşlenen TFF lig profil havuzu: 691</li>
+<li>Transfermarkt Süper Lig kadrosu: 18/18 kulüp, 512 oyuncu</li>
+<li>TFF Beşiktaş profili: 46</li>
+<li>TFF scout profili: 40</li>
+<li>Transfermarkt Beşiktaş oyuncusu: 28</li>
+<li>Dış API derin oyuncusu: 115</li>
+</ul>
+
+<h2>Karşılaştırmalar</h2>
+
+<ul>
+<li>league_tff_vs_transfermarkt: 498/691 eşleşme (%72)</li>
+<li>besiktas_tff_vs_transfermarkt: 28/46 eşleşme (%61)</li>
+<li>scout_tff_vs_api_deep: 7/40 eşleşme (%18)</li>
+<li>besiktas_tff_vs_api_deep: 4/46 eşleşme (%9)</li>
+</ul>
+
+<h2>Düşük Skorlu Eşleşmeler</h2>
+
+<h3>league_tff_vs_transfermarkt</h3>
+<ul>
+<li>BADOBRE EMMANUEL ELYSEE DJEDJE AGBADOU -&gt; Emmanuel Agbadou | skor=1.0 | canonical=BADOBRE EMMANUEL ELYSEE DJEDJE AGBADOU</li>
+<li>CENGİZ ÜNDER -&gt; Cengiz Ünder | skor=1.0 | canonical=CENGIZ UNDER</li>
+<li>DEVIS ESTIVEN  VASQUEZ LLACH -&gt; Devis Vásquez | skor=1.0 | canonical=DEVIS ESTIVEN VASQUEZ LLACH</li>
+<li>DEVRİM ŞAHİN -&gt; Devrim Şahin | skor=1.0 | canonical=DEVRIM SAHIN</li>
+<li>EL BILAL TOURE -&gt; El Bilal Touré | skor=1.0 | canonical=EL BILAL TOURE</li>
+<li>EMRE BİLGİN -&gt; Emre Bilgin | skor=1.0 | canonical=EMRE BILGIN</li>
+<li>EMİR YAŞAR -&gt; Emir Yaşar | skor=1.0 | canonical=EMIR YASAR</li>
+<li>EMİRHAN TOPÇU -&gt; Emirhan Topçu | skor=1.0 | canonical=EMIRHAN TOPCU</li>
+<li>ERSİN DESTANOĞLU -&gt; Ersin Destanoğlu | skor=1.0 | canonical=ERSIN DESTANOGLU</li>
+<li>FELIX OHIS UDUOKHAI -&gt; Felix Uduokhai | skor=1.0 | canonical=FELIX OHIS UDUOKHAI</li>
+</ul>
+
+<h3>besiktas_tff_vs_transfermarkt</h3>
+<ul>
+<li>FELIX OHIS UDUOKHAI -&gt; Felix Uduokhai | skor=0.9 | canonical=FELIX OHIS UDUOKHAI</li>
+<li>JOAO PEDRO FERREIRA DA SILVA -&gt; Jota Silva | skor=0.9 | canonical=JOAO PEDRO FERREIRA DA SILVA</li>
+<li>KARTAL KAYRA YILMAZ -&gt; Kartal Yılmaz | skor=0.9 | canonical=KARTAL KAYRA YILMAZ</li>
+<li>MUSTAFA ERHAN HEKİMOĞLU -&gt; Mustafa Hekimoğlu | skor=0.9 | canonical=MUSTAFA ERHAN HEKIMOGLU</li>
+<li>TIAGO EMANUEL EMBALO DJALO -&gt; Tiago Djaló | skor=0.9 | canonical=TIAGO EMANUEL EMBALO DJALO</li>
+<li>BADOBRE EMMANUEL ELYSEE DJEDJE AGBADOU -&gt; Emmanuel Agbadou | skor=1.0 | canonical=BADOBRE EMMANUEL ELYSEE DJEDJE AGBADOU</li>
+<li>CENGİZ ÜNDER -&gt; Cengiz Ünder | skor=1.0 | canonical=CENGIZ UNDER</li>
+<li>DEVIS ESTIVEN  VASQUEZ LLACH -&gt; Devis Vásquez | skor=1.0 | canonical=DEVIS ESTIVEN VASQUEZ LLACH</li>
+<li>DEVRİM ŞAHİN -&gt; Devrim Şahin | skor=1.0 | canonical=DEVRIM SAHIN</li>
+<li>EL BILAL TOURE -&gt; El Bilal Touré | skor=1.0 | canonical=EL BILAL TOURE</li>
+</ul>
+
+<h3>scout_tff_vs_api_deep</h3>
+<ul>
+<li>KACPER SZYMON KOZLOWSKI -&gt; K. Kozłowski | skor=0.9 | canonical=KACPER SZYMON KOZLOWSKI</li>
+<li>ALI SOWE -&gt; A. Sowe | skor=1.0 | canonical=ALI SOWE</li>
+<li>BARIŞ ALPER YILMAZ -&gt; B. Yılmaz | skor=1.0 | canonical=BARIS ALPER YILMAZ</li>
+<li>MARIUS MOUNDILMADJI -&gt; M. Mouandilmadji | skor=1.0 | canonical=MARIUS MOUANDILMADJI</li>
+<li>VICTOR JAMES OSIMHEN -&gt; V. Osimhen | skor=1.0 | canonical=VICTOR OSIMHEN</li>
+<li>YOUSSEF EN NESYRI -&gt; Y. En-Nesyri | skor=1.0 | canonical=YOUSSEF EN NESYRI</li>
+<li>YUNUS AKGÜN -&gt; Y. Akgün | skor=1.0 | canonical=YUNUS AKGUN</li>
+</ul>
+
+<h3>besiktas_tff_vs_api_deep</h3>
+<ul>
+<li>EMRE BİLGİN -&gt; E. Bilgin | skor=0.9 | canonical=EMRE BILGIN</li>
+<li>GÖKHAN SAZDAĞI -&gt; G. Sazdağı | skor=0.9 | canonical=GOKHAN SAZDAGI</li>
+<li>KARTAL KAYRA YILMAZ -&gt; K. Yılmaz | skor=0.9 | canonical=KARTAL KAYRA YILMAZ</li>
+<li>RAFAEL ALEXANDRE FERNANDES FERREIRA DA SILVA -&gt; Rafa | skor=0.9 | canonical=RAFAEL ALEXANDRE FERNANDES FERREIRA DA SILVA</li>
+</ul>
+
+<h2>Eşleşmeyen Sol Kaynak Oyuncuları</h2>
+
+<h3>league_tff_vs_transfermarkt</h3>
+<ul>
+<li>HALİL YERAL (ADANA 01 FUTBOL KULÜBÜ SK)</li>
+<li>ATAKAN RIDVAN ÇANKAYA (ALAGÖZ HOLDİNG IĞDIR FK)</li>
+<li>GÜRAY VURAL (ALAGÖZ HOLDİNG IĞDIR FK)</li>
+<li>MARUIS TRESOR DOH (ALAGÖZ HOLDİNG IĞDIR FK)</li>
+<li>ROBIN YALÇIN (ALAGÖZ HOLDİNG IĞDIR FK)</li>
+<li>RYAN ISAAC MENDES (ALAGÖZ HOLDİNG IĞDIR FK)</li>
+<li>ATAKAN MÜJDE (AMED SPORTİF FAALİYETLER)</li>
+<li>CEM ÜSTÜNDAĞ (AMED SPORTİF FAALİYETLER)</li>
+<li>DİLHAN DEMİR (AMED SPORTİF FAALİYETLER)</li>
+<li>OLEKSANDR SYROTA (AMED SPORTİF FAALİYETLER)</li>
+<li>TARKAN SERBEST (AMED SPORTİF FAALİYETLER)</li>
+<li>DENİZ YAŞAR (ANKARA DEMİRSPOR)</li>
+<li>AHMED ILDIZ (ARCA ÇORUM FK)</li>
+<li>DANİJEL ALEKSİC (ARCA ÇORUM FK)</li>
+<li>SERDAR GÜRLER (ARCA ÇORUM FK)</li>
+<li>SİNAN OSMANOĞLU (ARCA ÇORUM FK)</li>
+<li>THIAM MAME BABA (ARCA ÇORUM FK)</li>
+<li>MUHAMMET ONUR BAŞYİĞİT (ARKENT ARNAVUTKÖY BELEDİYESİ FUTBOL SK)</li>
+<li>DENİZ DİLMEN (ATKO GRUP PENDİKSPOR FUTBOL A.Ş.)</li>
+<li>HAMZA YİĞİT AKMAN (ATKO GRUP PENDİKSPOR FUTBOL A.Ş.)</li>
+</ul>
+
+<h3>besiktas_tff_vs_transfermarkt</h3>
+<ul>
+<li>AHMET SAMİ BİRCAN (BEŞİKTAŞ A.Ş.)</li>
+<li>ALİ PAĞDA (BEŞİKTAŞ A.Ş.)</li>
+<li>AMIR HADZIAHMETOVIC (BEŞİKTAŞ A.Ş.)</li>
+<li>ASIM EFE IŞIK (BEŞİKTAŞ A.Ş.)</li>
+<li>DAVID JURASEK (BEŞİKTAŞ A.Ş.)</li>
+<li>DEMİR EGE TIKNAZ (BEŞİKTAŞ A.Ş.)</li>
+<li>EMRECAN UZUNHAN (BEŞİKTAŞ A.Ş.)</li>
+<li>ERNEST MUÇİ (BEŞİKTAŞ A.Ş.)</li>
+<li>FEHMİ MERT GÜNOK (BEŞİKTAŞ A.Ş.)</li>
+<li>GABRIEL ARMANDO DE ABREU (BEŞİKTAŞ A.Ş.)</li>
+<li>JOAO MARIO NAVAL DA COSTA EDUARDO (BEŞİKTAŞ A.Ş.)</li>
+<li>JONAS SVENSSON (BEŞİKTAŞ A.Ş.)</li>
+<li>KENY ALEXANDER ARROYO ALVARADO (BEŞİKTAŞ A.Ş.)</li>
+<li>KEVIN OGHENETEGA TAMARAEBI BAKUMO ABRAHAM (BEŞİKTAŞ A.Ş.)</li>
+<li>RAFAEL ALEXANDRE FERNANDES FERREIRA DA SILVA (BEŞİKTAŞ A.Ş.)</li>
+<li>SERKAN EMRECAN TERZİ (BEŞİKTAŞ A.Ş.)</li>
+<li>TAYYİP TALHA SANUÇ (BEŞİKTAŞ A.Ş.)</li>
+<li>TUNA BARAN DEMİR (BEŞİKTAŞ A.Ş.)</li>
+</ul>
+
+<h3>scout_tff_vs_api_deep</h3>
+<ul>
+<li>ADRIAN DAWID BENEDYCZAK (KASIMPAŞA A.Ş.)</li>
+<li>ALEXANDER GERARD  VAN DE STREEK (HESAP.COM ANTALYASPOR)</li>
+<li>ANDERSON SOUZA CONCEIÇAO (FENERBAHÇE A.Ş.)</li>
+<li>BERTUĞ ÖZGÜR YILDIRIM (RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ)</li>
+<li>BRUNO PETKOVIC (KOCAELİSPOR)</li>
+<li>CARL JOHAN HOLSE JUSTESEN (SAMSUNSPOR A.Ş.)</li>
+<li>DAVIE SELKE (RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ)</li>
+<li>DORGELES NENE (FENERBAHÇE A.Ş.)</li>
+<li>EBERE PAUL ONUACHU (TRABZONSPOR A.Ş.)</li>
+<li>ELDOR SHOMURODOV (RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ)</li>
+<li>ERNEST MUÇİ (TRABZONSPOR A.Ş.)</li>
+<li>FELIPE AUGUSTO DA SILVA (TRABZONSPOR A.Ş.)</li>
+<li>FLORENT HADERGJONAJ (CORENDON ALANYASPOR)</li>
+<li>FRANCO DARYL TONGYA HEUBANG (GENÇLERBİRLİĞİ)</li>
+<li>GERMAN ONUGKHA (ZECORNER KAYSERİSPOR)</li>
+<li>GÜVEN YALÇIN (CORENDON ALANYASPOR)</li>
+<li>JACKSON KYANVUBU MULEKA (TÜMOSAN KONYASPOR)</li>
+<li>JUAN SANTOS DA SILVA (GÖZTEPE A.Ş.)</li>
+<li>KEVIN OGHENETEGA TAMARAEBI BAKUMO ABRAHAM (BEŞİKTAŞ A.Ş.)</li>
+<li>LASZLO BENES (ZECORNER KAYSERİSPOR)</li>
+</ul>
+
+<h3>besiktas_tff_vs_api_deep</h3>
+<ul>
+<li>AHMET SAMİ BİRCAN (BEŞİKTAŞ A.Ş.)</li>
+<li>ALİ PAĞDA (BEŞİKTAŞ A.Ş.)</li>
+<li>AMIR HADZIAHMETOVIC (BEŞİKTAŞ A.Ş.)</li>
+<li>ASIM EFE IŞIK (BEŞİKTAŞ A.Ş.)</li>
+<li>BADOBRE EMMANUEL ELYSEE DJEDJE AGBADOU (BEŞİKTAŞ A.Ş.)</li>
+<li>CENGİZ ÜNDER (BEŞİKTAŞ A.Ş.)</li>
+<li>DAVID JURASEK (BEŞİKTAŞ A.Ş.)</li>
+<li>DEMİR EGE TIKNAZ (BEŞİKTAŞ A.Ş.)</li>
+<li>DEVIS ESTIVEN  VASQUEZ LLACH (BEŞİKTAŞ A.Ş.)</li>
+<li>DEVRİM ŞAHİN (BEŞİKTAŞ A.Ş.)</li>
+<li>EL BILAL TOURE (BEŞİKTAŞ A.Ş.)</li>
+<li>EMRECAN UZUNHAN (BEŞİKTAŞ A.Ş.)</li>
+<li>EMİR YAŞAR (BEŞİKTAŞ A.Ş.)</li>
+<li>EMİRHAN TOPÇU (BEŞİKTAŞ A.Ş.)</li>
+<li>ERNEST MUÇİ (BEŞİKTAŞ A.Ş.)</li>
+<li>ERSİN DESTANOĞLU (BEŞİKTAŞ A.Ş.)</li>
+<li>FEHMİ MERT GÜNOK (BEŞİKTAŞ A.Ş.)</li>
+<li>FELIX OHIS UDUOKHAI (BEŞİKTAŞ A.Ş.)</li>
+<li>GABRIEL ARMANDO DE ABREU (BEŞİKTAŞ A.Ş.)</li>
+<li>HYEONGYU OH (BEŞİKTAŞ A.Ş.)</li>
+</ul>
+
+  </div>
+</body>
+</html>

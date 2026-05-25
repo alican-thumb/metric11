@@ -1,0 +1,53 @@
+{
+  "purpose": "FM/FIFA tarzı oyuncu attribute verilerini scout modeline kontrollü şekilde bağlamak için kaynak kaydı.",
+  "policy": {
+    "use_proprietary_fm_database": false,
+    "hide_source_to_bypass_license": false,
+    "public_display_mode": "CATEGORY_OR_ALLOWED_SOURCE_NAME",
+    "internal_tracking_required": true,
+    "allowed_for_mvp": [
+      "Lisansı açık Kaggle/GitHub attribute CSV dosyaları",
+      "Kullanıcının elle sağladığı ve kullanım hakkı olan CSV exportları",
+      "CC0/Public Domain FIFA veya European Soccer Database attribute kaynakları"
+    ],
+    "risky_sources": [
+      "Football Manager oyun dosyası dump'ları",
+      "Lisansı belirsiz FM web scraper çıktıları",
+      "Ticari kullanım izni olmayan FM database mirror'ları"
+    ]
+  },
+  "candidate_sources": [
+    {
+      "name": "Kaggle Football Manager 2023 Dataset",
+      "url": "https://www.kaggle.com/datasets/platinum22/foot-ball-manager-2023-dataset",
+      "type": "OPEN_DATASET",
+      "license_status": "VERIFY_BEFORE_COMMERCIAL_USE",
+      "risk_level": "MEDIUM",
+      "use_case": "FM tarzı current ability, potential ability, rol ve attribute kolonlarını oyuncu öneri modelinde ek sinyal olarak kullanmak."
+    },
+    {
+      "name": "fmplayer.net FM26 player database",
+      "url": "https://fmplayer.net/players",
+      "type": "WEB_VIEWER",
+      "license_status": "VERIFY_TERMS",
+      "risk_level": "HIGH",
+      "use_case": "Araştırma ve manuel doğrulama; otomatik ticari scraping için uygun varsayılmamalı."
+    },
+    {
+      "name": "Kaggle Player Attributes / European Soccer Database",
+      "url": "https://www.kaggle.com/datasets/knirantar/playerattributes",
+      "type": "OPEN_DATASET",
+      "license_status": "CC0_PUBLIC_DOMAIN",
+      "risk_level": "LOW",
+      "use_case": "FIFA tarzı teknik/fiziksel attribute kolonlarını rol-fit ve potansiyel modelini eğitmek için güvenli başlangıç verisi olarak kullanmak."
+    },
+    {
+      "name": "GitHub football-datasets / Transfermarkt datalake",
+      "url": "https://github.com/salimt/football-datasets",
+      "type": "GITHUB_DATASET",
+      "license_status": "VERIFY_REPOSITORY_LICENSE",
+      "risk_level": "MEDIUM",
+      "use_case": "Piyasa değeri, transfer geçmişi, sakatlık geçmişi ve profil zenginleştirme için aday kaynak."
+    }
+  ]
+}

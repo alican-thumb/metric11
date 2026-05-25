@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Büyük Maç Denetim Raporu — metric11</title>
+  <style>
+    :root {
+      --bg:#f3f5f4; --panel:#fff; --ink:#132018; --muted:#627067; --line:#d7ded9;
+      --red:#bd2936; --green:#116447; --lime:#cde94e; --blue:#22618c; --dark:#091810; --soft:#e8eee9;
+    }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Inter,"Segoe UI",Arial,sans-serif; background:var(--bg); color:var(--ink); }
+    .topbar { position:sticky; top:0; z-index:5; display:flex; align-items:center; justify-content:space-between; gap:20px; min-height:64px; padding:0 clamp(16px,4vw,42px); background:var(--dark); color:white; border-bottom:1px solid #203328; }
+    .brand { display:flex; gap:11px; align-items:center; font-weight:800; font-size:19px; }
+    .brand-mark { width:30px; height:30px; display:grid; place-items:center; border-radius:7px; color:var(--dark); background:var(--lime); font-size:15px; }
+    .season { color:#a7b3ab; font-size:12px; font-weight:500; margin-left:4px; }
+    nav { display:flex; gap:5px; flex-wrap:wrap; justify-content:flex-end; }
+    nav a { color:#d5ded8; text-decoration:none; font-size:13px; font-weight:600; padding:10px 11px; border-radius:6px; }
+    nav a:hover { background:#162b20; color:white; }
+    .back-link { display:inline-flex; align-items:center; gap:6px; color:var(--green); text-decoration:none; font-size:13px; font-weight:600; margin-bottom:18px; }
+    .back-link::before { content:"←"; }
+    .report-wrap { max-width:960px; margin:0 auto; padding:32px clamp(14px,3vw,32px) 60px; }
+    .report-wrap h1 { font-size:28px; margin:0 0 6px; line-height:1.15; }
+    .report-wrap h2 { font-size:19px; margin:28px 0 10px; padding-bottom:6px; border-bottom:1px solid var(--line); }
+    .report-wrap h3 { font-size:15px; margin:20px 0 8px; color:var(--muted); font-weight:700; }
+    .report-wrap p { line-height:1.65; margin:0 0 12px; font-size:14px; }
+    .report-wrap ul { padding-left:20px; margin:0 0 14px; }
+    .report-wrap li { line-height:1.65; font-size:14px; margin-bottom:4px; }
+    .report-wrap code { background:var(--soft); padding:1px 5px; border-radius:3px; font-size:12px; font-family:monospace; }
+    .report-wrap em { font-style:italic; color:var(--muted); }
+    .report-wrap strong { font-weight:700; }
+    .md-table { width:100%; border-collapse:collapse; margin:0 0 18px; font-size:13px; overflow-x:auto; display:block; }
+    .md-table th { background:var(--soft); font-weight:700; text-align:left; padding:7px 10px; border:1px solid var(--line); white-space:nowrap; }
+    .md-table td { padding:6px 10px; border:1px solid var(--line); }
+    .md-table tr:nth-child(even) td { background:#f8faf9; }
+    @media (max-width:680px) { .topbar { position:static; align-items:flex-start; flex-direction:column; padding:13px 16px; } nav { width:100%; overflow-x:auto; flex-wrap:nowrap; } }
+    @media (max-width:600px) { .md-table th,.md-table td { padding:5px 6px; font-size:11px; } }
+  </style>
+</head>
+<body>
+  <div class="topbar"><div class="brand"><span class="brand-mark">11</span> metric11 <span class="season">Süper Lig 2025/26</span></div><nav><a href="football_intelligence_home.html">Merkez</a><a href="football_command_center_2025_2026.html">Analiz</a><a href="besiktas_2025_2026_dashboard_chronological.html">Maç Önü</a><a href="transfer_recommendation_report_2025_2026.html">Scout</a><a href="all_teams_preview_dashboard_2025_2026.html">Lig</a></nav></div>
+  <div class="report-wrap">
+    <a class="back-link" href="football_intelligence_home.html">Ana sayfaya dön</a>
+    <h1>Büyük Maç / Derbi Denetim Raporu</h1>
+
+<ul>
+<li>Büyük maç sayısı: 6</li>
+<li>Doğru tahmin: 2 (%33)</li>
+<li>MEDIUM/HIGH risk işaretlenen maç: 6</li>
+<li>Risk dağılımı: {&#x27;MEDIUM&#x27;: 1, &#x27;HIGH&#x27;: 5}</li>
+<li>Hata dağılımı: {&#x27;missed_draw&#x27;: 2, &#x27;overrated_besiktas&#x27;: 2}</li>
+<li>Öğrenim: Büyük maçlar normal maç gibi okunmamalı; model taraf tahmini verse bile beraberlik, kart ve düşük fark senaryosu ayrı risk katmanı olarak gösterilmeli.</li>
+</ul>
+
+<h2>Maçlar</h2>
+
+<h3>4.10.2025 - 20:00 | GALATASARAY A.Ş. - BEŞİKTAŞ A.Ş.</h3>
+
+<ul>
+<li>Skor: 1-1 | tahmin=Rakip gerçek=X | doğru=False</li>
+<li>Olasılıklar: BJK %26, X %24, Rakip %50</li>
+<li>Büyük maç profili: MEDIUM (ana tarafı koru ama alternatif senaryoyu görünür tut)</li>
+<li>Beraberlik riski: LOW | Kart sinyali: MEDIUM</li>
+<li>Gol adayları: RAFAEL ALEXANDRE FERNANDES FERREIRA DA SILVA, KEVIN OGHENETEGA TAMARAEBI BAKUMO ABRAHAM, CENGİZ ÜNDER, JOAO PEDRO FERREIRA DA SILVA, VACLAV CERNY</li>
+</ul>
+
+<h3>2.11.2025 - 20:00 | BEŞİKTAŞ A.Ş. - FENERBAHÇE A.Ş.</h3>
+
+<ul>
+<li>Skor: 2-3 | tahmin=BJK gerçek=Rakip | doğru=False</li>
+<li>Olasılıklar: BJK %39, X %27, Rakip %34</li>
+<li>Büyük maç profili: HIGH (taraf güvenini düşür, kart ve beraberlik senaryosunu öne çıkar)</li>
+<li>Beraberlik riski: HIGH | Kart sinyali: HIGH</li>
+<li>Gol adayları: RAFAEL ALEXANDRE FERNANDES FERREIRA DA SILVA, KEVIN OGHENETEGA TAMARAEBI BAKUMO ABRAHAM, CENGİZ ÜNDER, JOAO PEDRO FERREIRA DA SILVA, VACLAV CERNY</li>
+</ul>
+
+<h3>14.12.2025 - 20:00 | TRABZONSPOR A.Ş. - BEŞİKTAŞ A.Ş.</h3>
+
+<ul>
+<li>Skor: 3-3 | tahmin=Rakip gerçek=X | doğru=False</li>
+<li>Olasılıklar: BJK %35, X %25, Rakip %40</li>
+<li>Büyük maç profili: HIGH (taraf güvenini düşür, kart ve beraberlik senaryosunu öne çıkar)</li>
+<li>Beraberlik riski: MEDIUM | Kart sinyali: MEDIUM</li>
+<li>Gol adayları: KEVIN OGHENETEGA TAMARAEBI BAKUMO ABRAHAM, EL BILAL TOURE, CENGİZ ÜNDER, JOAO PEDRO FERREIRA DA SILVA, EMİRHAN TOPÇU</li>
+</ul>
+
+<h3>7.03.2026 - 20:00 | BEŞİKTAŞ A.Ş. - GALATASARAY A.Ş.</h3>
+
+<ul>
+<li>Skor: 0-1 | tahmin=Rakip gerçek=Rakip | doğru=True</li>
+<li>Olasılıklar: BJK %34, X %25, Rakip %41</li>
+<li>Büyük maç profili: HIGH (taraf güvenini düşür, kart ve beraberlik senaryosunu öne çıkar)</li>
+<li>Beraberlik riski: MEDIUM | Kart sinyali: HIGH</li>
+<li>Gol adayları: ORKUN KÖKÇÜ, HYEONGYU OH, VACLAV CERNY, EL BILAL TOURE, CENGİZ ÜNDER</li>
+</ul>
+
+<h3>5.04.2026 - 20:00 | FENERBAHÇE A.Ş. - BEŞİKTAŞ A.Ş.</h3>
+
+<ul>
+<li>Skor: 1-0 | tahmin=Rakip gerçek=Rakip | doğru=True</li>
+<li>Olasılıklar: BJK %34, X %26, Rakip %40</li>
+<li>Büyük maç profili: HIGH (taraf güvenini düşür, kart ve beraberlik senaryosunu öne çıkar)</li>
+<li>Beraberlik riski: HIGH | Kart sinyali: MEDIUM</li>
+<li>Gol adayları: ORKUN KÖKÇÜ, HYEONGYU OH, VACLAV CERNY, JOAO PEDRO FERREIRA DA SILVA, CENGİZ ÜNDER</li>
+</ul>
+
+<h3>9.05.2026 - 20:00 | BEŞİKTAŞ A.Ş. - TRABZONSPOR A.Ş.</h3>
+
+<ul>
+<li>Skor: 1-2 | tahmin=BJK gerçek=Rakip | doğru=False</li>
+<li>Olasılıklar: BJK %43, X %26, Rakip %30</li>
+<li>Büyük maç profili: HIGH (taraf güvenini düşür, kart ve beraberlik senaryosunu öne çıkar)</li>
+<li>Beraberlik riski: HIGH | Kart sinyali: HIGH</li>
+<li>Gol adayları: ORKUN KÖKÇÜ, HYEONGYU OH, JOAO PEDRO FERREIRA DA SILVA, KRİSTJAN ASLLANİ, CENGİZ ÜNDER</li>
+</ul>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Futbol Komuta Merkezi 2025-2026</title>
+  <style>
+    :root { --bg:#f3f5f4; --panel:#fff; --ink:#132018; --muted:#627067; --line:#d7ded9; --dark:#091810; --red:#bd2936; --amber:#b76b00; --green:#116447; --lime:#cde94e; --blue:#22618c; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Inter, "Segoe UI", Arial, sans-serif; background:var(--bg); color:var(--ink); }
+    .topbar { position:sticky; top:0; z-index:5; min-height:62px; padding:0 clamp(14px,3vw,32px); display:flex; align-items:center; justify-content:space-between; gap:18px; background:var(--dark); color:white; border-bottom:1px solid #203328; }
+    .brand { display:flex; align-items:center; gap:10px; color:white; text-decoration:none; font-weight:800; font-size:18px; }
+    .brand b { display:grid; place-items:center; width:29px; height:29px; border-radius:7px; background:var(--lime); color:var(--dark); font-size:14px; }
+    .topnav { display:flex; gap:5px; overflow-x:auto; }
+    .topnav a { white-space:nowrap; color:#d5ded8; padding:10px 11px; border-radius:6px; text-decoration:none; font-size:13px; font-weight:600; }
+    .topnav a.active { background:#162b20; color:white; }
+    header { background:#102419; color:white; padding:25px clamp(14px,3vw,32px); border-bottom:3px solid var(--green); }
+    header > div { max-width:1420px; margin:0 auto; }
+    header h1 { margin:0 0 7px; font-size:35px; letter-spacing:0; }
+    header p { margin:0; color:#c1cec5; max-width:1100px; line-height:1.5; font-size:14px; }
+    main { max-width:1420px; margin:0 auto; padding:20px clamp(12px,2.5vw,24px) 40px; }
+    .metrics { display:grid; grid-template-columns:repeat(8,minmax(0,1fr)); gap:10px; margin-bottom:18px; }
+    .metric, section, details { background:var(--panel); border:1px solid var(--line); border-radius:8px; }
+    .metric { padding:13px 12px; min-height:76px; }
+    .metric span { display:block; color:var(--muted); font-size:11px; line-height:1.3; }
+    .metric strong { display:block; font-size:22px; margin-top:7px; }
+    .grid { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+    section { padding:17px; margin-bottom:16px; overflow-x:auto; }
+    h2 { margin:0 0 14px; font-size:17px; }
+    table { width:100%; border-collapse:collapse; font-size:13px; }
+    .wide table { min-width:970px; }
+    th,td { padding:9px 7px; border-bottom:1px solid var(--line); text-align:left; vertical-align:top; }
+    th { color:var(--muted); font-size:12px; }
+    .pill { display:inline-flex; min-height:23px; align-items:center; border-radius:999px; padding:0 8px; font-size:12px; border:1px solid var(--line); }
+    .high { color:var(--red); background:#fff0f2; border-color:#efb7bf; }
+    .medium { color:var(--amber); background:#fff7e8; border-color:#f2d09a; }
+    .low { color:var(--green); background:#edf9f3; border-color:#b9dfcd; }
+    .role { color:var(--blue); background:#edf5ff; border-color:#bbd7f5; }
+    .links { display:flex; gap:7px; overflow-x:auto; margin-bottom:18px; padding-bottom:4px; }
+    .links a { display:inline-flex; align-items:center; min-height:36px; padding:0 12px; border:1px solid var(--line); border-radius:6px; color:var(--ink); background:white; white-space:nowrap; text-decoration:none; font-size:13px; font-weight:600; }
+    details { margin-bottom:18px; overflow:hidden; }
+    summary { cursor:pointer; padding:13px 15px; font-size:14px; font-weight:700; list-style:none; }
+    summary::-webkit-details-marker { display:none; }
+    .metrics.more { padding:0 12px 12px; margin:0; }
+    @media (max-width:1100px) { .metrics { grid-template-columns:repeat(4,1fr); } .grid { grid-template-columns:1fr; } }
+    @media (max-width:680px) { .topbar { position:static; flex-direction:column; align-items:flex-start; padding:12px; } .topnav { width:100%; } header h1 { font-size:27px; } .metrics { grid-template-columns:repeat(2,minmax(0,1fr)); } main { padding:12px; } header { padding:20px 14px; } table { font-size:12px; } section { padding:13px; } }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <a class="brand" href="football_intelligence_home.html"><b>11</b> metric11</a>
+    <nav class="topnav">
+      <a href="football_intelligence_home.html">Merkez</a>
+      <a class="active" href="football_command_center_2025_2026.html">Analiz</a>
+      <a href="besiktas_2025_2026_dashboard_chronological.html">Maç Önü</a>
+      <a href="transfer_recommendation_report_2025_2026.html">Scout</a>
+      <a href="all_teams_preview_dashboard_2025_2026.html">Lig</a>
+    </nav>
+  </div>
+  <header>
+    <div><h1>Analiz merkezi</h1>
+    <p>Beşiktaş maç önü raporları, tahmin kontrolü, gol adayı performansı ve scout kararlarını aynı operasyon yüzünde incele.</p></div>
+  </header>
+  <main>
+    <div class="links">
+      <a href="besiktas_2025_2026_dashboard_chronological.html">Maç Önü Paneli</a>
+      <a href="prediction_backtest_dashboard_2025_2026.html">Tahmin Backtest</a>
+      <a href="all_teams_preview_dashboard_2025_2026.html">Tüm Takım Maç Önü</a>
+      <a href="league_market_value_audit_2025_2026.html">Lig Değer Audit</a>
+      <a href="prediction_validation_report_2025_2026.html">Tahmin Doğrulama</a>
+      <a href="oos_validation_2025_2026.html">OOS Validasyon</a>
+      <a href="big_match_report_2025_2026.html">Büyük Maç Raporu</a>
+      <a href="fm_style_scout_program_2025_2026.html">FM Scout</a>
+      <a href="league_intelligence_2025_2026.html">Lig İstihbaratı</a>
+      <a href="team_scout_blueprints_2025_2026.html">Takım Blueprint</a>
+      <a href="transfer_recommendation_report_2025_2026.html">Transfer Raporu</a>
+      <a href="transfer_season_context_2025_2026.html">Transfer Sezonu</a>
+      <a href="news_intelligence_dashboard_2025_2026.html">Haber İstihbaratı</a>
+      <a href="scout_quality_report_2025_2026.html">Scout Kalite</a>
+      <a href="transfermarkt_match_review_queue_2025_2026.html">TM Eşleşme Kuyruğu</a>
+      <a href="metric11_warehouse_quality.html">Veri Ambarı</a>
+      <a href="data_quality_scorecard_2025_2026.html">Kalite Skoru</a>
+      <a href="position_scout_matrix_2025_2026.html">Pozisyon Scout</a>
+      <a href="api_football_super_lig_deep_2024_analysis.html">Dış Derin Veri</a>
+      <a href="source_watchlist_2025_2026.html">Kaynak Radarı</a>
+      <a href="player_alias_quality_2025_2026.html">Alias Kalitesi</a>
+      <a href="besiktas_team_needs_2025_2026_dashboard.html">Takım İhtiyacı</a>
+      <a href="data_catalog_2025_2026.html">Veri Kataloğu</a>
+    </div>
+    <div class="metrics">
+      <div class="metric"><span>Maç önü raporu</span><strong>29</strong></div>
+      <div class="metric"><span>BJK ekran kontrolü</span><strong>%66</strong></div>
+      <div class="metric"><span>Lig ham ölçümü</span><strong>%51</strong></div>
+      <div class="metric"><span>Lig değer kapsamı</span><strong>258 / 258</strong></div>
+      <div class="metric"><span>Büyük maç uyarısı</span><strong>6</strong></div>
+      <div class="metric"><span>Golcü listesi isabeti</span><strong>%77</strong></div>
+      <div class="metric"><span>Scout kontrol kuyruğu</span><strong>0</strong></div>
+      <div class="metric"><span>Veri kalite skoru</span><strong>84.1</strong></div>
+    </div>
+    <details>
+      <summary>Ek model ve veri ölçümlerini göster</summary>
+      <div class="metrics more">
+      <div class="metric"><span>Ham tahmine göre artış</span><strong>+14 puan</strong></div>
+      <div class="metric"><span>Değer tabanı</span><strong>%51</strong></div>
+      <div class="metric"><span>Emin olunan maçlar</span><strong>%62</strong></div>
+      <div class="metric"><span>FM scout adayı</span><strong>691</strong></div>
+      <div class="metric"><span>Lig oyuncu profili</span><strong>691</strong></div>
+      <div class="metric"><span>Takım-oyuncu eşleşmesi</span><strong>275</strong></div>
+      <div class="metric"><span>TM lig içi eşleşme</span><strong>%79.6</strong></div>
+      <div class="metric"><span>TM yüksek kullanım açığı</span><strong>13</strong></div>
+      <div class="metric"><span>Scout bloke eden eşleşme</span><strong>0</strong></div>
+      <div class="metric"><span>Beraberlik uyarısı</span><strong>162</strong></div>
+      <div class="metric"><span>Beraberlik yakalama</span><strong>%70</strong></div>
+      <div class="metric"><span>Uyarı isabeti</span><strong>%33</strong></div>
+      <div class="metric"><span>BJK temkinli tahmin</span><strong>21</strong></div>
+      <div class="metric"><span>BJK beraberlik uyarısı</span><strong>%29</strong></div>
+      <div class="metric"><span>Ters taraf hatası</span><strong>3</strong></div>
+      <div class="metric"><span>Rakip değer kapsama</span><strong>3 / 3</strong></div>
+      <div class="metric"><span>Odds/veri boşluğu</span><strong>3</strong></div>
+      <div class="metric"><span>Kaçan beraberlik</span><strong>23</strong></div>
+      <div class="metric"><span>Golcü segment isabeti</span><strong>%70</strong></div>
+      <div class="metric"><span>Ambar satırı</span><strong>17367</strong></div>
+      <div class="metric"><span>Pozisyon rolü</span><strong>7</strong></div>
+      </div>
+    </details>
+    <section class="wide">
+      <h2>Son Beşiktaş Maç Önü Raporları</h2>
+      <table><thead><tr><th>Maç</th><th>Tarih</th><th>Kazanma Olasılığı</th><th>Ekran Tahmini</th><th>Skor</th><th>Gol Beklentisi</th><th>Kart</th><th>Eksik</th><th>Gol Adayı İlk 3</th></tr></thead><tbody><tr><td>BEŞİKTAŞ A.Ş. - KASIMPAŞA A.Ş.</td><td>19.03.2026 - 20:00</td><td>BJK %52 / X %25 / Rakip %23</td><td>BEŞİKTAŞ A.Ş. kazanır</td><td>1-1</td><td>1.72 - 1.02</td><td><span class="pill medium">Orta</span></td><td>0</td><td>ORKUN KÖKÇÜ, HYEONGYU OH, CENGİZ ÜNDER</td></tr><tr><td>FENERBAHÇE A.Ş. - BEŞİKTAŞ A.Ş.</td><td>5.04.2026 - 20:00</td><td>BJK %34 / X %26 / Rakip %40</td><td>FENERBAHÇE A.Ş. kazanır</td><td>1-1</td><td>1.41 - 1.7</td><td><span class="pill medium">Orta</span></td><td>0</td><td>ORKUN KÖKÇÜ, HYEONGYU OH, VACLAV CERNY</td></tr><tr><td>BEŞİKTAŞ A.Ş. - HESAP.COM ANTALYASPOR</td><td>10.04.2026 - 20:00</td><td>BJK %51 / X %25 / Rakip %24</td><td>BEŞİKTAŞ A.Ş. kazanır</td><td>1-0</td><td>1.66 - 1.0</td><td><span class="pill medium">Orta</span></td><td>1</td><td>ORKUN KÖKÇÜ, HYEONGYU OH, MUSTAFA ERHAN HEKİMOĞLU</td></tr><tr><td>SAMSUNSPOR A.Ş. - BEŞİKTAŞ A.Ş.</td><td>19.04.2026 - 17:00</td><td>BJK %40 / X %26 / Rakip %34</td><td>Beraberlik</td><td>1-1</td><td>1.54 - 1.53</td><td><span class="pill medium">Orta</span></td><td>1</td><td>HYEONGYU OH, ORKUN KÖKÇÜ, JOAO PEDRO FERREIRA DA SILVA</td></tr><tr><td>BEŞİKTAŞ A.Ş. - MISIRLI.COM.TR FATİH KARAGÜMRÜK</td><td>27.04.2026 - 20:00</td><td>BJK %54 / X %24 / Rakip %22</td><td>BEŞİKTAŞ A.Ş. kazanır</td><td>1-0</td><td>1.81 - 0.98</td><td><span class="pill low">Düşük</span></td><td>2</td><td>HYEONGYU OH, ORKUN KÖKÇÜ, JOAO PEDRO FERREIRA DA SILVA</td></tr><tr><td>GAZİANTEP FUTBOL KULÜBÜ A.Ş. - BEŞİKTAŞ A.Ş.</td><td>1.05.2026 - 20:00</td><td>BJK %45 / X %25 / Rakip %30</td><td>BEŞİKTAŞ A.Ş. kazanır</td><td>1-1</td><td>1.69 - 1.39</td><td><span class="pill high">Yüksek</span></td><td>1</td><td>ORKUN KÖKÇÜ, HYEONGYU OH, JOAO PEDRO FERREIRA DA SILVA</td></tr><tr><td>BEŞİKTAŞ A.Ş. - TRABZONSPOR A.Ş.</td><td>9.05.2026 - 20:00</td><td>BJK %43 / X %26 / Rakip %30</td><td>TRABZONSPOR A.Ş. kazanır</td><td>1-1</td><td>1.71 - 1.43</td><td><span class="pill high">Yüksek</span></td><td>0</td><td>ORKUN KÖKÇÜ, HYEONGYU OH, JOAO PEDRO FERREIRA DA SILVA</td></tr><tr><td>ÇAYKUR RİZESPOR A.Ş. - BEŞİKTAŞ A.Ş.</td><td>15.05.2026 - 20:00</td><td>BJK %49 / X %25 / Rakip %27</td><td>BEŞİKTAŞ A.Ş. kazanır</td><td>1-1</td><td>1.77 - 1.24</td><td><span class="pill medium">Orta</span></td><td>0</td><td>ORKUN KÖKÇÜ, HYEONGYU OH, JOAO PEDRO FERREIRA DA SILVA</td></tr></tbody></table>
+    </section>
+    <div class="grid">
+      <section><h2>Takım İhtiyaçları</h2><table><thead><tr><th>Öncelik</th><th>İhtiyaç</th><th>Gerekçe</th></tr></thead><tbody><tr><td><span class="pill high">HIGH</span></td><td>Sözleşme riski olan düzenli oyuncular için yenileme veya ikame planı</td><td>CENGİZ ÜNDER, EL BILAL TOURE, ERSİN DESTANOĞLU, FELIX OHIS UDUOKHAI, GABRIEL ARMANDO DE ABREU</td></tr><tr><td><span class="pill medium">MEDIUM</span></td><td>Savunma hattında sözleşme riski için alternatif plan</td><td>FELIX OHIS UDUOKHAI, GÖKHAN SAZDAĞI</td></tr><tr><td><span class="pill medium">MEDIUM</span></td><td>Orta Saha hattında sözleşme riski için alternatif plan</td><td>KRİSTJAN ASLLANİ, ORKUN KÖKÇÜ</td></tr><tr><td><span class="pill medium">MEDIUM</span></td><td>Hücum hattında sözleşme riski için alternatif plan</td><td>CENGİZ ÜNDER, EL BILAL TOURE, MILOT RASHICA</td></tr><tr><td><span class="pill medium">MEDIUM</span></td><td>Pozisyon verisiyle tamamlanacak hedef scout havuzu</td><td>TFF profilleri yaş/sözleşme veriyor ancak mevki vermiyor; Transfermarkt/TFF kulüp sayfası veya başka açık kaynakla pozisyon eşleştirme gerekiyor.</td></tr></tbody></table></section>
+      <section><h2>Kadro Gerçekliği</h2><table><tbody>
+        <tr><th>Oyuncu profili</th><td>46</td></tr>
+        <tr><th>Transfermarkt eşleşme</th><td>27</td></tr>
+        <tr><th>Ortalama yaş</th><td>25.7</td></tr>
+        <tr><th>13 ayda bitecek sözleşme</th><td>25</td></tr>
+        <tr><th>Toplam piyasa değeri</th><td>€166,000,000</td></tr>
+      </tbody></table></section>
+    </div>
+    <div class="grid">
+      <section><h2>FM Scout: Hemen Skor Katkısı</h2><table><thead><tr><th>Oyuncu</th><th>Rol</th><th>Fit</th><th>Yaş</th><th>Gol</th><th>Yük</th></tr></thead><tbody><tr><td>ELDOR SHOMURODOV<br><span class="muted">RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ</span></td><td><span class="pill role">Bitirici / skor yükü</span></td><td>126.95</td><td>30</td><td>22</td><td>9.6-11.1</td></tr><tr><td>EBERE PAUL ONUACHU<br><span class="muted">TRABZONSPOR A.Ş.</span></td><td><span class="pill role">Bitirici / skor yükü</span></td><td>108.34</td><td>31</td><td>22</td><td>9.9-11.4</td></tr><tr><td>ANDERSON SOUZA CONCEIÇAO<br><span class="muted">FENERBAHÇE A.Ş.</span></td><td><span class="pill role">Bitirici / skor yükü</span></td><td>103.21</td><td>32</td><td>19</td><td>9.6-11.1</td></tr><tr><td>MOHAMED LAMINE BAYO<br><span class="muted">GAZİANTEP FUTBOL KULÜBÜ A.Ş.</span></td><td><span class="pill role">Bitirici / skor yükü</span></td><td>104.21</td><td>27</td><td>15</td><td>9.7-11.2</td></tr><tr><td>VICTOR JAMES OSIMHEN<br><span class="muted">GALATASARAY A.Ş.</span></td><td><span class="pill role">Bitirici / skor yükü</span></td><td>87.14</td><td>27</td><td>15</td><td>9.2-10.7</td></tr><tr><td>FELIPE AUGUSTO DA SILVA<br><span class="muted">TRABZONSPOR A.Ş.</span></td><td><span class="pill role">Bitirici / skor yükü</span></td><td>98.74</td><td>22</td><td>13</td><td>9.8-11.3</td></tr></tbody></table></section>
+      <section><h2>FM Scout: Fizik Motoru</h2><table><thead><tr><th>Oyuncu</th><th>Rol</th><th>Fit</th><th>Yaş</th><th>Gol</th><th>Yük</th></tr></thead><tbody><tr><td>MIGUEL FILIPE NUNES CARDOSO<br><span class="muted">ZECORNER KAYSERİSPOR</span></td><td><span class="pill role">Fizik motoru / tempo oyuncusu</span></td><td>61.36</td><td>31</td><td>2</td><td>10.1-11.6</td></tr><tr><td>MOHAMMED AMIN CHERNI<br><span class="muted">GÖZTEPE A.Ş.</span></td><td><span class="pill role">Genç değer / gelişim</span></td><td>60.97</td><td>24</td><td>0</td><td>9.9-11.4</td></tr><tr><td>RİCK VAN DRONGELEN<br><span class="muted">SAMSUNSPOR A.Ş.</span></td><td><span class="pill role">Fizik motoru / tempo oyuncusu</span></td><td>62.53</td><td>27</td><td>2</td><td>10.1-11.6</td></tr><tr><td>NUNO MIGUEL REIS LIMA<br><span class="muted">CORENDON ALANYASPOR</span></td><td><span class="pill role">Fizik motoru / tempo oyuncusu</span></td><td>63.83</td><td>25</td><td>1</td><td>10.2-11.7</td></tr><tr><td>MATEUSZ LIS<br><span class="muted">GÖZTEPE A.Ş.</span></td><td><span class="pill role">Düşük riskli düzenli oyuncu</span></td><td>56.2</td><td>29</td><td>0</td><td>10.0-11.5</td></tr><tr><td>MUHAMMED ŞENGEZER<br><span class="muted">RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ</span></td><td><span class="pill role">Düşük riskli düzenli oyuncu</span></td><td>58.07</td><td>29</td><td>0</td><td>9.9-11.4</td></tr></tbody></table></section>
+      <section><h2>FM Scout: Genç / Resale</h2><table><thead><tr><th>Oyuncu</th><th>Rol</th><th>Fit</th><th>Yaş</th><th>Gol</th><th>Yük</th></tr></thead><tbody><tr><td>FELIPE AUGUSTO DA SILVA<br><span class="muted">TRABZONSPOR A.Ş.</span></td><td><span class="pill role">Bitirici / skor yükü</span></td><td>98.74</td><td>22</td><td>13</td><td>9.8-11.3</td></tr><tr><td>JUAN SANTOS DA SILVA<br><span class="muted">GÖZTEPE A.Ş.</span></td><td><span class="pill role">Genç değer / gelişim</span></td><td>92.88</td><td>24</td><td>11</td><td>9.9-11.4</td></tr><tr><td>KACPER SZYMON KOZLOWSKI<br><span class="muted">GAZİANTEP FUTBOL KULÜBÜ A.Ş.</span></td><td><span class="pill role">Genç değer / gelişim</span></td><td>83.56</td><td>22</td><td>6</td><td>10.2-11.7</td></tr><tr><td>ELDOR SHOMURODOV<br><span class="muted">RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ</span></td><td><span class="pill role">Bitirici / skor yükü</span></td><td>126.95</td><td>30</td><td>22</td><td>9.6-11.1</td></tr><tr><td>MOHAMED LAMINE BAYO<br><span class="muted">GAZİANTEP FUTBOL KULÜBÜ A.Ş.</span></td><td><span class="pill role">Bitirici / skor yükü</span></td><td>104.21</td><td>27</td><td>15</td><td>9.7-11.2</td></tr><tr><td>ERNEST MUÇİ<br><span class="muted">TRABZONSPOR A.Ş.</span></td><td><span class="pill role">Rotasyon fırsatı</span></td><td>88.26</td><td>25</td><td>11</td><td>9.3-10.8</td></tr></tbody></table></section>
+      <section><h2>Pozisyon Bazlı Scout İlk Sinyaller</h2><table><thead><tr><th>Rol</th><th>Aday</th><th>Fit</th><th>Güven</th><th>Neden</th></tr></thead><tbody><tr><td>Sol açık / çizgi kırıcı</td><td>YUNUS AKGÜN<br><span class="muted">GALATASARAY A.Ş.</span></td><td>115.39</td><td><span class="pill role">MEDIUM_EXTERNAL</span></td><td>Rol okuması: Right Winger (MEDIUM_EXTERNAL). İlk 11 23, gol 7, kart 1. Tahmini yük 9.8-11.3 km. Tempo ve tekrar koşu ihtiyacı olan rolde fiziksel yük proxy&#x27;si öne çıkarıldı. Sözleş</td></tr><tr><td>Sol açık / çizgi kırıcı</td><td>BARIŞ ALPER YILMAZ<br><span class="muted">GALATASARAY A.Ş.</span></td><td>110.15</td><td><span class="pill role">MEDIUM_EXTERNAL</span></td><td>Rol okuması: Left Winger (MEDIUM_EXTERNAL). İlk 11 27, gol 8, kart 7. Tahmini yük 10.2-11.7 km. Tempo ve tekrar koşu ihtiyacı olan rolde fiziksel yük proxy&#x27;si öne çıkarıldı. Sözleş</td></tr><tr><td>Santrfor / skor yükü</td><td>ELDOR SHOMURODOV<br><span class="muted">RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ</span></td><td>191.82</td><td><span class="pill role">MEDIUM_EXTERNAL</span></td><td>Rol okuması: Centre-Forward (MEDIUM_EXTERNAL). İlk 11 34, gol 22, kart 0. Tahmini yük 9.6-11.1 km. Sözleşme fırsatı HIGH seviyesinde.</td></tr><tr><td>Santrfor / skor yükü</td><td>EBERE PAUL ONUACHU<br><span class="muted">TRABZONSPOR A.Ş.</span></td><td>167.4</td><td><span class="pill role">MEDIUM_EXTERNAL</span></td><td>Rol okuması: Centre-Forward (MEDIUM_EXTERNAL). İlk 11 28, gol 22, kart 6. Tahmini yük 9.9-11.4 km.</td></tr><tr><td>8 numara / fizik motoru</td><td>KACPER SZYMON KOZLOWSKI<br><span class="muted">GAZİANTEP FUTBOL KULÜBÜ A.Ş.</span></td><td>123.8</td><td><span class="pill role">MEDIUM_EXTERNAL</span></td><td>Rol okuması: Attacking Midfield (MEDIUM_EXTERNAL). İlk 11 30, gol 6, kart 6. Tahmini yük 10.2-11.7 km. Tempo ve tekrar koşu ihtiyacı olan rolde fiziksel yük proxy&#x27;si öne çıkarıldı.</td></tr><tr><td>8 numara / fizik motoru</td><td>ANTHONY JUNIOR DENNIS<br><span class="muted">GÖZTEPE A.Ş.</span></td><td>122.1</td><td><span class="pill role">MEDIUM_EXTERNAL</span></td><td>Rol okuması: Defensive Midfield (MEDIUM_EXTERNAL). İlk 11 29, gol 3, kart 9. Tahmini yük 10.3-11.8 km. Tempo ve tekrar koşu ihtiyacı olan rolde fiziksel yük proxy&#x27;si öne çıkarıldı.</td></tr><tr><td>6 numara / savunma emniyeti</td><td>ANTHONY JUNIOR DENNIS<br><span class="muted">GÖZTEPE A.Ş.</span></td><td>111.7</td><td><span class="pill role">MEDIUM_EXTERNAL</span></td><td>Rol okuması: Defensive Midfield (MEDIUM_EXTERNAL). İlk 11 29, gol 3, kart 9. Tahmini yük 10.3-11.8 km. Sözleşme fırsatı MEDIUM seviyesinde. Genç değer/resale sinyali güçlü.</td></tr><tr><td>6 numara / savunma emniyeti</td><td>ORKUN KÖKÇÜ<br><span class="muted">BEŞİKTAŞ A.Ş.</span></td><td>109.78</td><td><span class="pill role">MEDIUM_EXTERNAL</span></td><td>Rol okuması: Central Midfield (MEDIUM_EXTERNAL). İlk 11 29, gol 8, kart 7. Tahmini yük 10.2-11.7 km. Sözleşme fırsatı HIGH seviyesinde.</td></tr></tbody></table></section>
+    </div>
+    <section><h2>Modelin Öğrenmesi Gerekenler</h2><table><thead><tr><th>Maç</th><th>Skor</th><th>Tahmin</th><th>Gerçek</th><th>Güven</th></tr></thead><tbody><tr><td>MISIRLI.COM.TR FATİH KARAGÜMRÜK - FENERBAHÇE A.Ş.</td><td>2-0</td><td>Dep</td><td>Ev</td><td><span class="pill high">Yüksek</span></td></tr><tr><td>RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ - HESAP.COM ANTALYASPOR</td><td>0-0</td><td>Ev</td><td>X</td><td><span class="pill high">Yüksek</span></td></tr><tr><td>GALATASARAY A.Ş. - KOCAELİSPOR</td><td>1-1</td><td>Ev</td><td>X</td><td><span class="pill high">Yüksek</span></td></tr><tr><td>ZECORNER KAYSERİSPOR - ÇAYKUR RİZESPOR A.Ş.</td><td>2-0</td><td>Dep</td><td>Ev</td><td><span class="pill high">Yüksek</span></td></tr><tr><td>BEŞİKTAŞ A.Ş. - MISIRLI.COM.TR FATİH KARAGÜMRÜK</td><td>0-0</td><td>Ev</td><td>X</td><td><span class="pill high">Yüksek</span></td></tr><tr><td>FENERBAHÇE A.Ş. - İKAS EYÜPSPOR</td><td>3-3</td><td>Ev</td><td>X</td><td><span class="pill high">Yüksek</span></td></tr><tr><td>KASIMPAŞA A.Ş. - GALATASARAY A.Ş.</td><td>1-0</td><td>Dep</td><td>Ev</td><td><span class="pill high">Yüksek</span></td></tr><tr><td>TRABZONSPOR A.Ş. - GENÇLERBİRLİĞİ</td><td>0-3</td><td>Ev</td><td>Dep</td><td><span class="pill high">Yüksek</span></td></tr></tbody></table></section>
+    <section><h2>Beraberlik Risk Katmanı</h2><table><thead><tr><th>Maç</th><th>Skor</th><th>Tahmin</th><th>Gerçek</th><th>Risk</th><th>Aksiyon</th></tr></thead><tbody><tr><td>TÜMOSAN KONYASPOR - FENERBAHÇE A.Ş.</td><td>0-3</td><td>Dep</td><td>Dep</td><td><span class="pill high">Yüksek / 85</span></td><td>Korumalı taraf tahmini</td></tr><tr><td>İKAS EYÜPSPOR - ÇAYKUR RİZESPOR A.Ş.</td><td>4-0</td><td>Dep</td><td>Ev</td><td><span class="pill high">Yüksek / 46</span></td><td>Korumalı taraf tahmini</td></tr><tr><td>ÇAYKUR RİZESPOR A.Ş. - BEŞİKTAŞ A.Ş.</td><td>2-2</td><td>Dep</td><td>X</td><td><span class="pill high">Yüksek / 42</span></td><td>Korumalı taraf tahmini</td></tr><tr><td>MISIRLI.COM.TR FATİH KARAGÜMRÜK - CORENDON ALANYASPOR</td><td>2-1</td><td>X</td><td>Ev</td><td><span class="pill high">Yüksek / 100</span></td><td>Korumalı taraf tahmini</td></tr><tr><td>GAZİANTEP FUTBOL KULÜBÜ A.Ş. - RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ</td><td>1-2</td><td>Dep</td><td>Dep</td><td><span class="pill high">Yüksek / 36</span></td><td>Korumalı taraf tahmini</td></tr><tr><td>SAMSUNSPOR A.Ş. - GÖZTEPE A.Ş.</td><td>3-0</td><td>Dep</td><td>Ev</td><td><span class="pill high">Yüksek / 70</span></td><td>Korumalı taraf tahmini</td></tr><tr><td>ZECORNER KAYSERİSPOR - TÜMOSAN KONYASPOR</td><td>2-1</td><td>Dep</td><td>Ev</td><td><span class="pill high">Yüksek / 36</span></td><td>Korumalı taraf tahmini</td></tr><tr><td>HESAP.COM ANTALYASPOR - KOCAELİSPOR</td><td>1-0</td><td>Dep</td><td>Ev</td><td><span class="pill high">Yüksek / 100</span></td><td>Korumalı taraf tahmini</td></tr></tbody></table></section>
+    <section><h2>Kaçan Beraberlikler</h2><table><thead><tr><th>Maç</th><th>Skor</th><th>Tahmin</th><th>Gerçek</th><th>Risk</th><th>Aksiyon</th></tr></thead><tbody><tr><td>FENERBAHÇE A.Ş. - KASIMPAŞA A.Ş.</td><td>1-1</td><td>Ev</td><td>X</td><td><span class="pill low">Düşük / 0</span></td><td>Ana tahmini koru</td></tr><tr><td>GÖZTEPE A.Ş. - İKAS EYÜPSPOR</td><td>0-0</td><td>Ev</td><td>X</td><td><span class="pill low">Düşük / 6</span></td><td>Ana tahmini koru</td></tr><tr><td>HESAP.COM ANTALYASPOR - FENERBAHÇE A.Ş.</td><td>2-2</td><td>Dep</td><td>X</td><td><span class="pill low">Düşük / 0</span></td><td>Ana tahmini koru</td></tr><tr><td>RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ - HESAP.COM ANTALYASPOR</td><td>0-0</td><td>Ev</td><td>X</td><td><span class="pill low">Düşük / 0</span></td><td>Ana tahmini koru</td></tr><tr><td>CORENDON ALANYASPOR - TRABZONSPOR A.Ş.</td><td>1-1</td><td>Dep</td><td>X</td><td><span class="pill low">Düşük / 21</span></td><td>Ana tahmini koru</td></tr><tr><td>GALATASARAY A.Ş. - KOCAELİSPOR</td><td>1-1</td><td>Ev</td><td>X</td><td><span class="pill low">Düşük / 0</span></td><td>Ana tahmini koru</td></tr><tr><td>BEŞİKTAŞ A.Ş. - MISIRLI.COM.TR FATİH KARAGÜMRÜK</td><td>0-0</td><td>Ev</td><td>X</td><td><span class="pill low">Düşük / 0</span></td><td>Ana tahmini koru</td></tr><tr><td>FENERBAHÇE A.Ş. - İKAS EYÜPSPOR</td><td>3-3</td><td>Ev</td><td>X</td><td><span class="pill low">Düşük / 0</span></td><td>Ana tahmini koru</td></tr></tbody></table></section>
+    <section><h2>Beşiktaş Korumalı Aksiyon Backtesti</h2><table><thead><tr><th>Maç</th><th>Skor</th><th>Tahmin</th><th>Gerçek</th><th>Risk</th><th>Aksiyon</th></tr></thead><tbody><tr><td>GENÇLERBİRLİĞİ - BEŞİKTAŞ A.Ş.</td><td>0-2</td><td>BJK</td><td>BJK</td><td><span class="pill high">Yüksek / 39</span></td><td>Korumalı taraf tahmini</td></tr><tr><td>BEŞİKTAŞ A.Ş. - KASIMPAŞA A.Ş.</td><td>2-1</td><td>BJK</td><td>BJK</td><td><span class="pill medium">Orta / 27</span></td><td>Beraberlik uyarılı tahmin</td></tr><tr><td>FENERBAHÇE A.Ş. - BEŞİKTAŞ A.Ş.</td><td>1-0</td><td>Rakip</td><td>Rakip</td><td><span class="pill high">Yüksek / 100</span></td><td>Korumalı taraf tahmini</td></tr><tr><td>BEŞİKTAŞ A.Ş. - HESAP.COM ANTALYASPOR</td><td>4-2</td><td>BJK</td><td>BJK</td><td><span class="pill medium">Orta / 34</span></td><td>Beraberlik uyarılı tahmin</td></tr><tr><td>SAMSUNSPOR A.Ş. - BEŞİKTAŞ A.Ş.</td><td>2-1</td><td>X</td><td>Rakip</td><td><span class="pill high">Yüksek / 97</span></td><td>Korumalı taraf tahmini</td></tr><tr><td>GAZİANTEP FUTBOL KULÜBÜ A.Ş. - BEŞİKTAŞ A.Ş.</td><td>0-2</td><td>BJK</td><td>BJK</td><td><span class="pill high">Yüksek / 68</span></td><td>Korumalı taraf tahmini</td></tr><tr><td>BEŞİKTAŞ A.Ş. - TRABZONSPOR A.Ş.</td><td>1-2</td><td>Rakip</td><td>Rakip</td><td><span class="pill high">Yüksek / 89</span></td><td>Korumalı taraf tahmini</td></tr><tr><td>ÇAYKUR RİZESPOR A.Ş. - BEŞİKTAŞ A.Ş.</td><td>2-2</td><td>BJK</td><td>X</td><td><span class="pill high">Yüksek / 36</span></td><td>Korumalı taraf tahmini</td></tr></tbody></table></section>
+    <section><h2>Yanlış Taraf Denetimi</h2><table><thead><tr><th>Maç</th><th>Skor</th><th>Tahmin</th><th>Gerçek</th><th>xG Edge</th><th>Market Edge</th><th>Veri Boşluğu</th></tr></thead><tbody><tr><td>BEŞİKTAŞ A.Ş. - GENÇLERBİRLİĞİ</td><td>1-2</td><td>BJK</td><td>Rakip</td><td>0.93</td><td>€149.75m</td><td>odds_baseline_missing, official_injury_feed_missing, confirmed_lineup_quality_missing</td></tr><tr><td>RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ - BEŞİKTAŞ A.Ş.</td><td>2-3</td><td>Rakip</td><td>BJK</td><td>-0.59</td><td>€102.9m</td><td>odds_baseline_missing, official_injury_feed_missing, confirmed_lineup_quality_missing</td></tr><tr><td>SAMSUNSPOR A.Ş. - BEŞİKTAŞ A.Ş.</td><td>2-1</td><td>X</td><td>Rakip</td><td>0.01</td><td>€119.9m</td><td>odds_baseline_missing, official_injury_feed_missing, confirmed_lineup_quality_missing</td></tr></tbody></table></section>
+    <section><h2>Korumalı Beşiktaş Tahminleri</h2><table><thead><tr><th>Maç</th><th>Tarih</th><th>Ana Tahmin</th><th>Risk</th><th>Aksiyon</th><th>Skor</th></tr></thead><tbody><tr><td>BEŞİKTAŞ A.Ş. - KASIMPAŞA A.Ş.</td><td>19.03.2026 - 20:00</td><td>Beşiktaş</td><td><span class="pill medium">Orta / 27</span></td><td>Beraberlik uyarılı tahmin</td><td>1-1</td></tr><tr><td>FENERBAHÇE A.Ş. - BEŞİKTAŞ A.Ş.</td><td>5.04.2026 - 20:00</td><td>Rakip</td><td><span class="pill high">Yüksek / 100</span></td><td>Korumalı taraf tahmini</td><td>1-1</td></tr><tr><td>BEŞİKTAŞ A.Ş. - HESAP.COM ANTALYASPOR</td><td>10.04.2026 - 20:00</td><td>Beşiktaş</td><td><span class="pill medium">Orta / 34</span></td><td>Beraberlik uyarılı tahmin</td><td>1-0</td></tr><tr><td>SAMSUNSPOR A.Ş. - BEŞİKTAŞ A.Ş.</td><td>19.04.2026 - 17:00</td><td>Beşiktaş</td><td><span class="pill high">Yüksek / 97</span></td><td>Korumalı taraf tahmini</td><td>1-1</td></tr><tr><td>GAZİANTEP FUTBOL KULÜBÜ A.Ş. - BEŞİKTAŞ A.Ş.</td><td>1.05.2026 - 20:00</td><td>Beşiktaş</td><td><span class="pill high">Yüksek / 68</span></td><td>Korumalı taraf tahmini</td><td>1-1</td></tr><tr><td>BEŞİKTAŞ A.Ş. - TRABZONSPOR A.Ş.</td><td>9.05.2026 - 20:00</td><td>Beşiktaş</td><td><span class="pill high">Yüksek / 89</span></td><td>Korumalı taraf tahmini</td><td>1-1</td></tr><tr><td>ÇAYKUR RİZESPOR A.Ş. - BEŞİKTAŞ A.Ş.</td><td>15.05.2026 - 20:00</td><td>Beşiktaş</td><td><span class="pill high">Yüksek / 36</span></td><td>Korumalı taraf tahmini</td><td>1-1</td></tr></tbody></table></section>
+    <div class="grid">
+      <section><h2>Gol Adayı Segmentleri</h2><table><thead><tr><th>Segment</th><th>Aday</th><th>Maç Hit</th><th>Top 5 Hit</th><th>Ortalama Rank</th></tr></thead><tbody><tr><td><span class="pill role">unknown</span></td><td>8</td><td>%100.0</td><td>%100.0</td><td>4.5</td></tr><tr><td><span class="pill role">primary</span></td><td>262</td><td>%75.9</td><td>%65.5</td><td>5.45</td></tr><tr><td><span class="pill role">impact_sub</span></td><td>162</td><td>%62.1</td><td>%51.7</td><td>4.56</td></tr><tr><td><span class="pill role">set_piece_defender</span></td><td>25</td><td>%0.0</td><td>%0.0</td><td>8.16</td></tr></tbody></table></section>
+      <section><h2>Zayıf Gol Adayı Kuyruğu</h2><table><thead><tr><th>Oyuncu</th><th>Tip</th><th>Top 5</th><th>İsabet</th><th>Aksiyon</th></tr></thead><tbody></tbody></table></section>
+    </div>
+  </main>
+</body>
+</html>

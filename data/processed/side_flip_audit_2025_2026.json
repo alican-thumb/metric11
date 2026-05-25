@@ -1,0 +1,394 @@
+{
+  "summary": {
+    "side_flip_count": 3,
+    "protected_side_flip_count": 2,
+    "unprotected_side_flip_count": 1,
+    "target_overrated_count": 1,
+    "opponent_overrated_count": 1,
+    "big_match_side_flip_count": 0,
+    "high_draw_risk_side_flip_count": 2,
+    "opponent_market_value_covered": 3,
+    "avg_market_value_edge_million_eur": 124.18,
+    "missing_data_gap_counts": {
+      "odds_baseline_missing": 3,
+      "official_injury_feed_missing": 3,
+      "confirmed_lineup_quality_missing": 3,
+      "no_matchday_availability_signal": 2
+    },
+    "signal_tag_counts": {
+      "target_side_overrated": 1,
+      "model_xg_edge_overtrusted": 1,
+      "market_value_edge_supports_target": 1,
+      "opponent_side_overrated": 1,
+      "high_draw_risk_but_decisive_result": 2,
+      "low_confidence_wrong_side": 2,
+      "opponent_xg_edge_overtrusted": 1,
+      "narrow_xg_decisive_result": 1,
+      "availability_signal_present": 1
+    }
+  },
+  "rows": [
+    {
+      "match_id": "283628",
+      "week": 9,
+      "date": "18.10.2025 - 17:03",
+      "fixture": "BEŞİKTAŞ A.Ş. - GENÇLERBİRLİĞİ",
+      "actual_score": "1-2",
+      "predicted": "target_win",
+      "actual": "opponent_win",
+      "correct": false,
+      "action": "KEEP_MAIN_PICK",
+      "action_label": "Ana tahmini koru",
+      "protected": false,
+      "actual_draw": false,
+      "side_pick_correct": false,
+      "side_pick_wrong": true,
+      "draw_probability": 0.236,
+      "confidence_probability": 0.559,
+      "confidence": "MEDIUM",
+      "is_big_match": false,
+      "draw_risk_score": 10,
+      "draw_risk_level": "LOW",
+      "draw_risk_reasons": [
+        "draw_scoreline_top_two",
+        "strength_edge_narrow",
+        "medium_confidence_side_pick",
+        "strong_side_probability_penalty"
+      ],
+      "failure_tags": [
+        "target_side_overrated"
+      ],
+      "opponent": "GENÇLERBİRLİĞİ",
+      "home_away": "home",
+      "expected_goals_for": 1.91,
+      "expected_goals_against": 0.98,
+      "xg_edge": 0.93,
+      "strength_edge": 0.136,
+      "target_market_value_eur": 176000000,
+      "opponent_market_value_eur": 26250000,
+      "market_value_edge_million_eur": 149.75,
+      "market_value_source_url": "https://www.transfermarkt.com/genclerbirligi-ankara/kader/verein/820/saison_id/2025",
+      "availability_missing_count": 0,
+      "unavailable_players": [],
+      "card_signal": "MEDIUM",
+      "recommended_scoreline": "1-0",
+      "signal_tags": [
+        "target_side_overrated",
+        "model_xg_edge_overtrusted",
+        "market_value_edge_supports_target"
+      ],
+      "data_gaps": [
+        "odds_baseline_missing",
+        "official_injury_feed_missing",
+        "confirmed_lineup_quality_missing",
+        "no_matchday_availability_signal"
+      ]
+    },
+    {
+      "match_id": "283745",
+      "week": 22,
+      "date": "15.02.2026 - 20:00",
+      "fixture": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ - BEŞİKTAŞ A.Ş.",
+      "actual_score": "2-3",
+      "predicted": "opponent_win",
+      "actual": "target_win",
+      "correct": false,
+      "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
+      "action_label": "Korumalı taraf tahmini",
+      "protected": true,
+      "actual_draw": false,
+      "side_pick_correct": false,
+      "side_pick_wrong": true,
+      "draw_probability": 0.239,
+      "confidence_probability": 0.455,
+      "confidence": "LOW",
+      "is_big_match": false,
+      "draw_risk_score": 49,
+      "draw_risk_level": "HIGH",
+      "draw_risk_reasons": [
+        "top_draw_scoreline",
+        "probability_margin_watch",
+        "strength_edge_very_narrow",
+        "low_confidence_side_pick",
+        "draw_calibration_medium"
+      ],
+      "failure_tags": [
+        "opponent_side_overrated",
+        "high_draw_risk_but_decisive_result",
+        "low_confidence_wrong_side"
+      ],
+      "opponent": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ",
+      "home_away": "away",
+      "expected_goals_for": 1.35,
+      "expected_goals_against": 1.94,
+      "xg_edge": -0.59,
+      "strength_edge": -0.034,
+      "target_market_value_eur": 176000000,
+      "opponent_market_value_eur": 73100000,
+      "market_value_edge_million_eur": 102.9,
+      "market_value_source_url": "https://www.transfermarkt.com/istanbul-basaksehir-fk/kader/verein/6890/saison_id/2025",
+      "availability_missing_count": 0,
+      "unavailable_players": [],
+      "card_signal": "MEDIUM",
+      "recommended_scoreline": "1-1",
+      "signal_tags": [
+        "opponent_side_overrated",
+        "high_draw_risk_but_decisive_result",
+        "low_confidence_wrong_side",
+        "opponent_xg_edge_overtrusted"
+      ],
+      "data_gaps": [
+        "odds_baseline_missing",
+        "official_injury_feed_missing",
+        "confirmed_lineup_quality_missing",
+        "no_matchday_availability_signal"
+      ]
+    },
+    {
+      "match_id": "283817",
+      "week": 30,
+      "date": "19.04.2026 - 17:00",
+      "fixture": "SAMSUNSPOR A.Ş. - BEŞİKTAŞ A.Ş.",
+      "actual_score": "2-1",
+      "predicted": "draw",
+      "actual": "opponent_win",
+      "correct": false,
+      "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
+      "action_label": "Korumalı taraf tahmini",
+      "protected": true,
+      "actual_draw": false,
+      "side_pick_correct": false,
+      "side_pick_wrong": true,
+      "draw_probability": 0.255,
+      "confidence_probability": 0.255,
+      "confidence": "LOW",
+      "is_big_match": false,
+      "draw_risk_score": 97,
+      "draw_risk_level": "HIGH",
+      "draw_risk_reasons": [
+        "draw_probability_watch",
+        "xg_margin_very_narrow",
+        "top_draw_scoreline",
+        "probability_margin_very_narrow",
+        "strength_edge_very_narrow",
+        "low_confidence_side_pick",
+        "draw_calibration_medium"
+      ],
+      "failure_tags": [
+        "high_draw_risk_but_decisive_result",
+        "narrow_xg_decisive_result",
+        "low_confidence_wrong_side"
+      ],
+      "opponent": "SAMSUNSPOR A.Ş.",
+      "home_away": "away",
+      "expected_goals_for": 1.54,
+      "expected_goals_against": 1.53,
+      "xg_edge": 0.01,
+      "strength_edge": 0.097,
+      "target_market_value_eur": 176000000,
+      "opponent_market_value_eur": 56100000,
+      "market_value_edge_million_eur": 119.9,
+      "market_value_source_url": "https://www.transfermarkt.com/samsunspor/kader/verein/152/saison_id/2025",
+      "availability_missing_count": 1,
+      "unavailable_players": [
+        "EMİRHAN TOPÇU"
+      ],
+      "card_signal": "MEDIUM",
+      "recommended_scoreline": "1-1",
+      "signal_tags": [
+        "high_draw_risk_but_decisive_result",
+        "narrow_xg_decisive_result",
+        "low_confidence_wrong_side",
+        "availability_signal_present"
+      ],
+      "data_gaps": [
+        "odds_baseline_missing",
+        "official_injury_feed_missing",
+        "confirmed_lineup_quality_missing"
+      ]
+    }
+  ],
+  "protected_side_flips": [
+    {
+      "match_id": "283745",
+      "week": 22,
+      "date": "15.02.2026 - 20:00",
+      "fixture": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ - BEŞİKTAŞ A.Ş.",
+      "actual_score": "2-3",
+      "predicted": "opponent_win",
+      "actual": "target_win",
+      "correct": false,
+      "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
+      "action_label": "Korumalı taraf tahmini",
+      "protected": true,
+      "actual_draw": false,
+      "side_pick_correct": false,
+      "side_pick_wrong": true,
+      "draw_probability": 0.239,
+      "confidence_probability": 0.455,
+      "confidence": "LOW",
+      "is_big_match": false,
+      "draw_risk_score": 49,
+      "draw_risk_level": "HIGH",
+      "draw_risk_reasons": [
+        "top_draw_scoreline",
+        "probability_margin_watch",
+        "strength_edge_very_narrow",
+        "low_confidence_side_pick",
+        "draw_calibration_medium"
+      ],
+      "failure_tags": [
+        "opponent_side_overrated",
+        "high_draw_risk_but_decisive_result",
+        "low_confidence_wrong_side"
+      ],
+      "opponent": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ",
+      "home_away": "away",
+      "expected_goals_for": 1.35,
+      "expected_goals_against": 1.94,
+      "xg_edge": -0.59,
+      "strength_edge": -0.034,
+      "target_market_value_eur": 176000000,
+      "opponent_market_value_eur": 73100000,
+      "market_value_edge_million_eur": 102.9,
+      "market_value_source_url": "https://www.transfermarkt.com/istanbul-basaksehir-fk/kader/verein/6890/saison_id/2025",
+      "availability_missing_count": 0,
+      "unavailable_players": [],
+      "card_signal": "MEDIUM",
+      "recommended_scoreline": "1-1",
+      "signal_tags": [
+        "opponent_side_overrated",
+        "high_draw_risk_but_decisive_result",
+        "low_confidence_wrong_side",
+        "opponent_xg_edge_overtrusted"
+      ],
+      "data_gaps": [
+        "odds_baseline_missing",
+        "official_injury_feed_missing",
+        "confirmed_lineup_quality_missing",
+        "no_matchday_availability_signal"
+      ]
+    },
+    {
+      "match_id": "283817",
+      "week": 30,
+      "date": "19.04.2026 - 17:00",
+      "fixture": "SAMSUNSPOR A.Ş. - BEŞİKTAŞ A.Ş.",
+      "actual_score": "2-1",
+      "predicted": "draw",
+      "actual": "opponent_win",
+      "correct": false,
+      "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
+      "action_label": "Korumalı taraf tahmini",
+      "protected": true,
+      "actual_draw": false,
+      "side_pick_correct": false,
+      "side_pick_wrong": true,
+      "draw_probability": 0.255,
+      "confidence_probability": 0.255,
+      "confidence": "LOW",
+      "is_big_match": false,
+      "draw_risk_score": 97,
+      "draw_risk_level": "HIGH",
+      "draw_risk_reasons": [
+        "draw_probability_watch",
+        "xg_margin_very_narrow",
+        "top_draw_scoreline",
+        "probability_margin_very_narrow",
+        "strength_edge_very_narrow",
+        "low_confidence_side_pick",
+        "draw_calibration_medium"
+      ],
+      "failure_tags": [
+        "high_draw_risk_but_decisive_result",
+        "narrow_xg_decisive_result",
+        "low_confidence_wrong_side"
+      ],
+      "opponent": "SAMSUNSPOR A.Ş.",
+      "home_away": "away",
+      "expected_goals_for": 1.54,
+      "expected_goals_against": 1.53,
+      "xg_edge": 0.01,
+      "strength_edge": 0.097,
+      "target_market_value_eur": 176000000,
+      "opponent_market_value_eur": 56100000,
+      "market_value_edge_million_eur": 119.9,
+      "market_value_source_url": "https://www.transfermarkt.com/samsunspor/kader/verein/152/saison_id/2025",
+      "availability_missing_count": 1,
+      "unavailable_players": [
+        "EMİRHAN TOPÇU"
+      ],
+      "card_signal": "MEDIUM",
+      "recommended_scoreline": "1-1",
+      "signal_tags": [
+        "high_draw_risk_but_decisive_result",
+        "narrow_xg_decisive_result",
+        "low_confidence_wrong_side",
+        "availability_signal_present"
+      ],
+      "data_gaps": [
+        "odds_baseline_missing",
+        "official_injury_feed_missing",
+        "confirmed_lineup_quality_missing"
+      ]
+    }
+  ],
+  "unprotected_side_flips": [
+    {
+      "match_id": "283628",
+      "week": 9,
+      "date": "18.10.2025 - 17:03",
+      "fixture": "BEŞİKTAŞ A.Ş. - GENÇLERBİRLİĞİ",
+      "actual_score": "1-2",
+      "predicted": "target_win",
+      "actual": "opponent_win",
+      "correct": false,
+      "action": "KEEP_MAIN_PICK",
+      "action_label": "Ana tahmini koru",
+      "protected": false,
+      "actual_draw": false,
+      "side_pick_correct": false,
+      "side_pick_wrong": true,
+      "draw_probability": 0.236,
+      "confidence_probability": 0.559,
+      "confidence": "MEDIUM",
+      "is_big_match": false,
+      "draw_risk_score": 10,
+      "draw_risk_level": "LOW",
+      "draw_risk_reasons": [
+        "draw_scoreline_top_two",
+        "strength_edge_narrow",
+        "medium_confidence_side_pick",
+        "strong_side_probability_penalty"
+      ],
+      "failure_tags": [
+        "target_side_overrated"
+      ],
+      "opponent": "GENÇLERBİRLİĞİ",
+      "home_away": "home",
+      "expected_goals_for": 1.91,
+      "expected_goals_against": 0.98,
+      "xg_edge": 0.93,
+      "strength_edge": 0.136,
+      "target_market_value_eur": 176000000,
+      "opponent_market_value_eur": 26250000,
+      "market_value_edge_million_eur": 149.75,
+      "market_value_source_url": "https://www.transfermarkt.com/genclerbirligi-ankara/kader/verein/820/saison_id/2025",
+      "availability_missing_count": 0,
+      "unavailable_players": [],
+      "card_signal": "MEDIUM",
+      "recommended_scoreline": "1-0",
+      "signal_tags": [
+        "target_side_overrated",
+        "model_xg_edge_overtrusted",
+        "market_value_edge_supports_target"
+      ],
+      "data_gaps": [
+        "odds_baseline_missing",
+        "official_injury_feed_missing",
+        "confirmed_lineup_quality_missing",
+        "no_matchday_availability_signal"
+      ]
+    }
+  ]
+}

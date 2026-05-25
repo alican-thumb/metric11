@@ -1,0 +1,70 @@
+name: metric11 daily pipeline
+
+on:
+  workflow_dispatch:
+    inputs:
+      include_network:
+        description: "Run network collectors as well"
+        required: false
+        default: "false"
+        type: choice
+        options:
+          - "false"
+          - "true"
+  schedule:
+    - cron: "15 4 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  build-data-and-dashboards:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run non-network analytics pipeline
+        if: ${{ github.event.inputs.include_network != 'true' }}
+        env:
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+          FOOTBALL_DATA_KEY: ${{ secrets.FOOTBALL_DATA_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python -m src.run_daily_pipeline
+
+      - name: Run full network analytics pipeline
+        if: ${{ github.event.inputs.include_network == 'true' }}
+        env:
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+          FOOTBALL_DATA_KEY: ${{ secrets.FOOTBALL_DATA_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python -m src.run_daily_pipeline --include-network
+
+      - name: Commit and push generated outputs
+        run: |
+          git config --global user.email "pipeline@metric11.app"
+          git config --global user.name "metric11 pipeline"
+          git add data/processed/
+          git diff --staged --quiet && echo "No changes to commit" || \
+            git commit -m "chore: pipeline outputs $(date -u +%Y-%m-%dT%H:%M:%SZ) [skip ci]"
+          git push origin main
+
+      - name: Upload processed outputs
+        uses: actions/upload-artifact@v4
+        with:
+          name: metric11-processed-data
+          path: |
+            data/processed/**/*.json
+            data/processed/**/*.md
+            data/processed/**/*.html
