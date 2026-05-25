@@ -337,7 +337,7 @@ def rule_based_analyze(article: dict, player_index: dict) -> dict:
             break
 
     return {
-        "news_types": list(set(news_types)) or ["general"],
+        "news_types": _unique_in_order(news_types) or ["general"],
         "super_lig_relevant": bool(mentioned_clubs or mentioned_players),
         "mentioned_clubs": mentioned_clubs,
         "players": players[:5],
@@ -348,7 +348,7 @@ def rule_based_analyze(article: dict, player_index: dict) -> dict:
         "contracts": contracts[:3],
         "analysis_method": "rule_based",
         "summary_tr": "",
-        "tags": list(set(mentioned_clubs + news_types))[:8],
+        "tags": _unique_in_order(mentioned_clubs + news_types, limit=8),
     }
 
 
@@ -365,6 +365,11 @@ def _extract_team_name(text: str) -> str | None:
         if re.search(pattern, text, re.IGNORECASE):
             return club
     return None
+
+
+def _unique_in_order(values: list[str], limit: int | None = None) -> list[str]:
+    unique = list(dict.fromkeys(values))
+    return unique[:limit] if limit is not None else unique
 
 
 def _club_key(name: str | None) -> str:
@@ -418,7 +423,7 @@ def _merge_analyses(rule_result: dict, claude_result: dict) -> dict:
     if claude_result.get("summary_tr"):
         merged["summary_tr"] = claude_result["summary_tr"]
     if claude_result.get("tags"):
-        merged["tags"] = list(set(merged.get("tags", []) + claude_result.get("tags", [])))[:10]
+        merged["tags"] = _unique_in_order(merged.get("tags", []) + claude_result.get("tags", []), limit=10)
     merged["analysis_method"] = "rule_based+claude"
     return merged
 

@@ -23,6 +23,7 @@ SEASON_LABEL = "2025-2026"
 class Settings:
     api_football_key: str | None
     football_data_key: str | None
+    x_bearer_token: str | None
     tff_sample_match_ids: list[str]
 
 
@@ -37,6 +38,7 @@ def load_settings() -> Settings:
     return Settings(
         api_football_key=os.getenv("API_FOOTBALL_KEY") or None,
         football_data_key=os.getenv("FOOTBALL_DATA_KEY") or None,
+        x_bearer_token=os.getenv("X_BEARER_TOKEN") or None,
         tff_sample_match_ids=[item.strip() for item in match_ids.split(",") if item.strip()],
     )
 

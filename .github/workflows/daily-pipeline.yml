@@ -42,6 +42,8 @@ jobs:
           API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
           FOOTBALL_DATA_KEY: ${{ secrets.FOOTBALL_DATA_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+          ADMIN_CREDENTIALS_HASH: ${{ secrets.ADMIN_CREDENTIALS_HASH }}
         run: python -m src.run_daily_pipeline --include-network
 
       - name: Run pipeline (network yok)
@@ -50,6 +52,7 @@ jobs:
           API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
           FOOTBALL_DATA_KEY: ${{ secrets.FOOTBALL_DATA_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ADMIN_CREDENTIALS_HASH: ${{ secrets.ADMIN_CREDENTIALS_HASH }}
         run: python -m src.run_daily_pipeline
 
       - name: Commit and push generated outputs

@@ -344,13 +344,6 @@ def build_html() -> str:
     </div>
     <div class="section-title"><h2>Tüm araçlar</h2><p>Tahmin, scout, transfer ve haber modülleri</p></div>
     <div class="cards">{module_cards}</div>
-    <details>
-      <summary>Sistem ve veri kalitesi araçları</summary>
-      <div style="padding:0 0 14px;">
-        <div class="cards">{admin_section}</div>
-        <div style="padding:0 14px 4px;"><a href="system_status.html" style="font-size:13px;color:var(--green);font-weight:600;">Pipeline Durum Sayfası →</a></div>
-      </div>
-    </details>
     <div class="split">
       <section>
         <h2>Ürün Gerçekliği</h2>

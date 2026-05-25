@@ -30,6 +30,7 @@ jobs:
       - name: Rebuild dashboards
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ADMIN_CREDENTIALS_HASH: ${{ secrets.ADMIN_CREDENTIALS_HASH }}
         run: python -m src.run_daily_pipeline
 
       - name: Commit and push

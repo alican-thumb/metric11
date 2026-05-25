@@ -54,6 +54,8 @@ def build_status() -> dict:
             "total_articles": news.get("total_articles", 0),
             "analyzed": news.get("analyzed_articles", 0),
             "transfer_signals": news.get("transfer_signals", 0),
+            "official_transfers": news.get("transfer_status_counts", {}).get("OFFICIAL", 0),
+            "review_transfers": news.get("transfer_status_counts", {}).get("REVIEW_REQUIRED", 0),
             "injury_signals": news.get("injury_signals", 0),
             "last_updated": _fmt_date(news.get("generated_at")),
         },
@@ -112,8 +114,8 @@ def build_html(d: dict) -> str:
     *{{box-sizing:border-box;}}
     body{{margin:0;font-family:Inter,"Segoe UI",Arial,sans-serif;background:var(--bg);color:var(--ink);}}
     .topbar{{position:sticky;top:0;z-index:5;display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:64px;padding:0 clamp(16px,4vw,42px);background:var(--dark);color:white;border-bottom:1px solid #203328;}}
-    .brand{{display:flex;gap:11px;align-items:center;font-weight:800;font-size:19px;}}
-    .brand-mark{{width:30px;height:30px;display:grid;place-items:center;border-radius:7px;color:var(--dark);background:var(--lime);font-size:15px;}}
+    .brand{{display:flex;gap:11px;align-items:center;font-weight:800;font-size:19px;color:white;text-decoration:none;flex-shrink:0;}}
+    .brand-mark{{width:30px;height:30px;display:grid;place-items:center;border-radius:7px;color:var(--dark);background:var(--lime);font-size:15px;flex-shrink:0;}}
     .season{{color:#a7b3ab;font-size:12px;font-weight:500;margin-left:4px;}}
     nav{{display:flex;gap:4px;flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;justify-content:flex-end;-webkit-overflow-scrolling:touch;scrollbar-width:none;}}
     nav::-webkit-scrollbar{{display:none;}}
@@ -143,7 +145,7 @@ def build_html(d: dict) -> str:
 </head>
 <body>
   <div class="topbar">
-    <div class="brand"><span class="brand-mark">11</span> metric11 <span class="season">Süper Lig 2025/26</span></div>
+    <a class="brand" href="football_intelligence_home.html"><span class="brand-mark">11</span> metric11 <span class="season">Süper Lig 2025/26</span></a>
     <nav>
       <a href="football_intelligence_home.html">Merkez</a>
       <a href="football_command_center_2025_2026.html">Analiz</a>
@@ -186,8 +188,9 @@ def build_html(d: dict) -> str:
         <div class="big-num">{news["total_articles"]}</div>
         <div class="big-label">makale</div>
         <div style="height:10px;"></div>
-        <div class="row"><span class="row-label">Claude analizi</span><span class="row-value">{news["analyzed"]}</span></div>
-        <div class="row"><span class="row-label">Transfer sinyali</span><span class="row-value">{news["transfer_signals"]}</span></div>
+        <div class="row"><span class="row-label">Analiz edilen</span><span class="row-value">{news["analyzed"]}</span></div>
+        <div class="row"><span class="row-label">Transfer iddiası</span><span class="row-value">{news["transfer_signals"]}</span></div>
+        <div class="row"><span class="row-label">Resmi / inceleme gerekli</span><span class="row-value">{news["official_transfers"]} / {news["review_transfers"]}</span></div>
         <div class="row"><span class="row-label">Sakatlık sinyali</span><span class="row-value">{news["injury_signals"]}</span></div>
         <div class="row"><span class="row-label">Son güncelleme</span><span class="row-value">{escape(news["last_updated"])}</span></div>
       </div>

@@ -56,6 +56,9 @@ def build_catalog() -> dict:
     profile_queue = load_json(PROCESSED_DIR / "player_profile_enrichment_queue_2025_2026.json", {})
     source_watchlist = load_json(ROOT_DIR / "data/manual/source_watchlist.json", {})
     news_context = load_json(PROCESSED_DIR / "news_context_snapshot_2025_2026.json", {})
+    news_intelligence = load_json(PROCESSED_DIR / "news_intelligence_2025_2026.json", {})
+    news_rss = load_json(PROCESSED_DIR / "news_rss_latest_2025_2026.json", {})
+    news_twitter = load_json(PROCESSED_DIR / "news_twitter_latest_2025_2026.json", {})
     api_football_2024 = load_json(PROCESSED_DIR / "api_football_super_lig_snapshot_2024.json", {})
     api_football_2025 = load_json(PROCESSED_DIR / "api_football_super_lig_snapshot_2025.json", {})
     api_football_analysis = load_json(PROCESSED_DIR / "api_football_super_lig_2024_analysis.json", {})
@@ -67,6 +70,22 @@ def build_catalog() -> dict:
         for team in ALL_TEAMS
     ]
     tm_matched_profiles = sum(1 for player in enriched_profiles if player.get("tm_id"))
+    twitter_posts = news_twitter.get("total_tweets", 0)
+    twitter_successful_accounts = sum(1 for account in news_twitter.get("accounts", []) if not account.get("error"))
+    twitter_provider = news_twitter.get("provider", "not_run")
+    twitter_status = news_twitter.get("collection_status", "NO_SNAPSHOT")
+    if twitter_posts:
+        twitter_coverage = (
+            f"{twitter_posts} gönderi snapshot'ı; {twitter_successful_accounts} hesap başarılı; "
+            f"kaynak={twitter_provider}"
+        )
+    elif news_twitter:
+        twitter_coverage = (
+            f"Collector çalıştı ({twitter_provider}/{twitter_status}); "
+            "kullanılabilir gönderi snapshot'ı yok"
+        )
+    else:
+        twitter_coverage = "Collector yapılandırıldı; başarılı snapshot henüz yok"
 
     teams = set()
     players = set()
@@ -132,6 +151,30 @@ def build_catalog() -> dict:
                 "display_policy": "PUBLIC_DERIVED_SIGNAL_ALLOWED",
                 "coverage": "Beşiktaş 2025/26 kart cezası çıkarımı + manuel sakat/cezalı override dosyası",
                 "fields": ["maç", "oyuncu", "durum", "neden", "güven", "kaynak", "tahmine dahil/dışla"],
+            },
+            {
+                "name": "Türk spor haber RSS akışı",
+                "public_label": "Güncel spor haber bağlamı",
+                "type": "RSS_NEWS",
+                "risk": "MEDIUM",
+                "license_status": "VERIFY_TERMS_AND_QUOTE_LIMITS",
+                "display_policy": "SHOW_LINK_AND_DERIVED_SIGNAL_ONLY",
+                "coverage": (
+                    f"{news_rss.get('total_articles', 0)} ham haber; "
+                    f"{news_intelligence.get('analyzed_articles', 0)} ilgili analiz; "
+                    f"{news_intelligence.get('transfer_signals', 0)} transfer iddiası"
+                ),
+                "fields": ["başlık", "kaynak", "yayın zamanı", "transfer iddiası", "kaynak teyit durumu"],
+            },
+            {
+                "name": "X resmi kulüp ve futbol haber hesapları",
+                "public_label": "Resmi kulüp ve sosyal haber duyuruları",
+                "type": "X_SOCIAL_SIGNAL",
+                "risk": "MEDIUM",
+                "license_status": "PLATFORM_TERMS_AND_DISPLAY_REQUIREMENTS",
+                "display_policy": "SHOW_LINK_AND_DERIVED_SIGNAL_ONLY",
+                "coverage": twitter_coverage,
+                "fields": ["hesap türü", "gönderi kimliği", "resmi teyit", "transfer iddiası", "bağlantı"],
             },
             {
                 "name": "FM/FIFA tarzı oyuncu attribute kaynakları",
@@ -230,6 +273,14 @@ def build_catalog() -> dict:
             "news_context_sources_ok": news_context.get("ok_count", 0),
             "news_context_signals": news_context.get("summary", {}).get("signals", 0),
             "news_context_structured_unavailability": len(news_context.get("team_unavailability", [])),
+            "news_rss_articles": news_rss.get("total_articles", 0),
+            "news_intelligence_articles": news_intelligence.get("analyzed_articles", 0),
+            "news_transfer_claims": news_intelligence.get("transfer_signals", 0),
+            "news_transfer_status_counts": news_intelligence.get("transfer_status_counts", {}),
+            "news_twitter_posts": twitter_posts,
+            "news_twitter_successful_accounts": twitter_successful_accounts,
+            "news_twitter_provider": twitter_provider,
+            "news_twitter_status": twitter_status,
             "api_football_2024_successful_endpoints": api_football_2024.get("summary", {}).get("successful_endpoints", 0),
             "api_football_2024_fixtures": endpoint_count(api_football_2024, "fixtures"),
             "api_football_2024_teams": endpoint_count(api_football_2024, "teams"),
@@ -271,6 +322,8 @@ def build_catalog() -> dict:
             "player_estimated_load_score", "player_profile_tag", "referee_tempo_label",
             "transfer_impact_simulated_xg_delta", "transfer_impact_simulated_scoreline", "selected_player_what_if",
             "news_injury_signal", "news_suspension_signal", "news_probable_lineup_context",
+            "news_transfer_claim", "news_transfer_verification_status", "news_transfer_evidence_sources",
+            "official_social_announcement_signal",
         ],
         "missing_fields": [
             "preferred_foot",
@@ -307,6 +360,7 @@ def build_catalog() -> dict:
             "profile_enrichment_queue": "MVP_READY_PRIORITY_COLLECTION_QUEUE",
             "source_watchlist": "MVP_READY_DAILY_REFRESH_PLAN",
             "news_context": "CONNECTED_LOW_TO_MEDIUM_CONFIDENCE",
+            "transfer_news_intelligence": "RSS_CONNECTED_X_PENDING_SNAPSHOT_REVIEW_GATED",
             "api_football": "CONNECTED_2024_HISTORY_PLAN_LIMITED_2025",
         },
         "source_display_policy": {
@@ -332,6 +386,7 @@ def endpoint_count(snapshot: dict, label: str) -> int:
 
 def build_markdown(catalog: dict) -> str:
     coverage = catalog["coverage"]
+    transfer_status = coverage.get("news_transfer_status_counts", {})
     lines = [
         "# Veri Kataloğu ve Kapsam Raporu",
         "",
@@ -400,6 +455,20 @@ def build_markdown(catalog: dict) -> str:
         f"- Haber/sakat-cezalı başarılı kaynak: {coverage['news_context_sources_ok']}",
         f"- Haber/sakat-cezalı sinyal: {coverage['news_context_signals']}",
         f"- Haber/sakat-cezalı yapılandırılmış oyuncu: {coverage['news_context_structured_unavailability']}",
+        f"- RSS haber kaydı: {coverage['news_rss_articles']}",
+        f"- Haber analizine alınan içerik: {coverage['news_intelligence_articles']}",
+        (
+            f"- Transfer haber iddiası: {coverage['news_transfer_claims']} | "
+            f"resmi={transfer_status.get('OFFICIAL', 0)}, "
+            f"çoklu kaynak={transfer_status.get('CORROBORATED', 0)}, "
+            f"söylenti={transfer_status.get('RUMOR', 0)}, "
+            f"inceleme gerekli={transfer_status.get('REVIEW_REQUIRED', 0)}"
+        ),
+        (
+            f"- X gönderi snapshot'ı: {coverage['news_twitter_posts']} | "
+            f"başarılı hesap={coverage['news_twitter_successful_accounts']} | "
+            f"kaynak={coverage['news_twitter_provider']} | durum={coverage['news_twitter_status']}"
+        ),
         f"- API-Football 2024 başarılı endpoint: {coverage['api_football_2024_successful_endpoints']}",
         f"- API-Football 2024 fikstür: {coverage['api_football_2024_fixtures']}",
         f"- API-Football 2024 takım: {coverage['api_football_2024_teams']}",
