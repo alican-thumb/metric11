@@ -208,13 +208,13 @@ def build_html(payload: dict) -> str:
 </head>
 <body>
   <div class="topbar">
-    <a class="brand" href="football_intelligence_home.html"><b>11</b> metric11</a>
+    <a class="brand" href="gundem_2025_2026.html"><b>11</b> metric11</a>
     <nav class="topnav">
-      <a href="football_intelligence_home.html">Merkez</a>
-      <a class="active" href="football_command_center_2025_2026.html">Analiz</a>
-      <a href="besiktas_2025_2026_dashboard_chronological.html">Maç Önü</a>
+      <a href="gundem_2025_2026.html">Gündem</a>
+      <a href="transfer_tracker_2025_2026.html">Transferler</a>
+      <a href="all_teams_preview_dashboard_2025_2026.html">Maç Önü</a>
       <a href="transfer_recommendation_report_2025_2026.html">Scout</a>
-      <a href="all_teams_preview_dashboard_2025_2026.html">Lig</a>
+      <a class="active" href="football_intelligence_home.html">Analiz</a>
     </nav>
   </div>
   <header>

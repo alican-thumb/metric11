@@ -109,7 +109,14 @@ def build_html(summary: dict, previews: list[dict], goal_backtest: dict, team_na
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{escape(team_name)} 2025/26 Maç Önü</title>
+  <title>{escape(team_name)} Maç Önü — Süper Lig 2025/26 | metric11</title>
+  <meta name="description" content="{escape(team_name)} 2025/26 sezonu maç önü analizleri: olasılıklar, gol adayları ve kadro sinyali — metric11.">
+  <meta property="og:title" content="{escape(team_name)} Maç Önü — metric11">
+  <meta property="og:description" content="{escape(team_name)} 2025/26 sezonu maç önü analizleri: olasılıklar, gol adayları ve kadro sinyali.">
+  <meta property="og:image" content="/og-image.svg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <style>
     :root {{
       --bg: #f3f5f4;
@@ -337,13 +344,13 @@ def build_html(summary: dict, previews: list[dict], goal_backtest: dict, team_na
 </head>
 <body>
   <div class="topbar">
-    <a class="brand" href="football_intelligence_home.html"><b>11</b> metric11</a>
+    <a class="brand" href="gundem_2025_2026.html"><b>11</b> metric11</a>
     <nav class="topnav">
-      <a href="football_intelligence_home.html">Merkez</a>
-      <a href="football_command_center_2025_2026.html">Analiz</a>
+      <a href="gundem_2025_2026.html">Gündem</a>
+      <a href="transfer_tracker_2025_2026.html">Transferler</a>
       <a class="active" href="all_teams_preview_dashboard_2025_2026.html">Maç Önü</a>
       <a href="transfer_recommendation_report_2025_2026.html">Scout</a>
-      <a href="all_teams_preview_dashboard_2025_2026.html">Lig</a>
+      <a href="football_intelligence_home.html">Analiz</a>
     </nav>
   </div>
   <header>

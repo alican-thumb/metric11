@@ -132,7 +132,15 @@ def build_html() -> str:
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Gündem — Süper Lig {SEASON_LABEL}</title>
+<title>Gündem — Süper Lig {SEASON_LABEL} | metric11</title>
+<meta name="description" content="Süper Lig transfer haberleri, sakat-cezalı listesi ve güncel transfer takibi. Tüm kaynaklar tek sayfada — metric11.">
+<meta property="og:title" content="Gündem — Süper Lig {SEASON_LABEL} | metric11">
+<meta property="og:description" content="Süper Lig transfer haberleri, sakat-cezalı listesi ve güncel transfer takibi.">
+<meta property="og:image" content="/og-image.svg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://metric11.com/">
 <style>
   :root{{--bg:#f3f5f4;--panel:#fff;--ink:#132018;--muted:#627067;--line:#d7ded9;--dark:#091810;--green:#116447;--lime:#cde94e}}
   *{{box-sizing:border-box;margin:0;padding:0}}

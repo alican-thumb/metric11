@@ -62,7 +62,14 @@ def build_html(team_data: list[dict]) -> str:
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Süper Lig {SEASON_LABEL} Maç Önü Arşivi — Tüm Takımlar</title>
+<title>Maç Önü Arşivi — Süper Lig {SEASON_LABEL} | metric11</title>
+<meta name="description" content="Süper Lig tüm takımlarının maç önü analizleri: olasılıklar, gol adayları, kadro sinyali ve hakem etkisi — metric11.">
+<meta property="og:title" content="Maç Önü Arşivi — Süper Lig {SEASON_LABEL} | metric11">
+<meta property="og:description" content="Süper Lig tüm takımlarının maç önü analizleri: olasılıklar, gol adayları, kadro sinyali ve hakem etkisi.">
+<meta property="og:image" content="/og-image.svg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <style>
   :root {{ --bg:#f3f5f4; --panel:#fff; --ink:#132018; --muted:#627067; --line:#d7ded9; --dark:#091810; --green:#116447; --lime:#cde94e; --red:#bd2936; --amber:#aa6b00; --blue:#22618c; }}
   * {{ box-sizing: border-box; margin: 0; padding: 0; }}
@@ -116,8 +123,8 @@ def build_html(team_data: list[dict]) -> str:
 </head>
 <body>
 <div class="topbar">
-  <a class="brand" href="football_intelligence_home.html"><b>11</b> metric11</a>
-  <nav class="topnav"><a href="football_intelligence_home.html">Merkez</a><a href="football_command_center_2025_2026.html">Analiz</a><a href="besiktas_2025_2026_dashboard_chronological.html">Maç Önü</a><a href="transfer_recommendation_report_2025_2026.html">Scout</a><a class="active" href="all_teams_preview_dashboard_2025_2026.html">Lig</a></nav>
+  <a class="brand" href="gundem_2025_2026.html"><b>11</b> metric11</a>
+  <nav class="topnav"><a href="gundem_2025_2026.html">Gündem</a><a href="transfer_tracker_2025_2026.html">Transferler</a><a class="active" href="all_teams_preview_dashboard_2025_2026.html">Maç Önü</a><a href="transfer_recommendation_report_2025_2026.html">Scout</a><a href="football_intelligence_home.html">Analiz</a></nav>
 </div>
 <div class="header">
   <div class="header-inner"><h1>Süper Lig maç merkezi</h1>

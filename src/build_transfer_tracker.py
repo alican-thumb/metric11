@@ -163,7 +163,14 @@ def build_html(signals: list[dict], summary: dict) -> str:
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Transfer Takip — {SEASON_LABEL}</title>
+<title>Transfer Takip — Süper Lig {SEASON_LABEL} | metric11</title>
+<meta name="description" content="Süper Lig yaz transfer penceresi takibi: resmi transferler, teyitli iddialar ve TM kadro değişiklikleri — metric11.">
+<meta property="og:title" content="Transfer Takip — Süper Lig {SEASON_LABEL} | metric11">
+<meta property="og:description" content="Süper Lig yaz transfer penceresi takibi: resmi transferler, teyitli iddialar ve TM kadro değişiklikleri.">
+<meta property="og:image" content="/og-image.svg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <style>
   :root{{--bg:#f3f5f4;--panel:#fff;--ink:#132018;--muted:#627067;--line:#d7ded9;--dark:#091810;--green:#116447;--lime:#cde94e}}
   *{{box-sizing:border-box;margin:0;padding:0}}

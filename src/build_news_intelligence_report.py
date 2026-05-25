@@ -98,7 +98,14 @@ def build_html(intel: dict) -> str:
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Haber İstihbaratı {SEASON_LABEL}</title>
+<title>Haber İstihbaratı — Süper Lig {SEASON_LABEL} | metric11</title>
+<meta name="description" content="Süper Lig güncel haberleri: transfer iddiaları, sakat listesi, ceza kararları ve resmi açıklamalar — metric11.">
+<meta property="og:title" content="Haber İstihbaratı — Süper Lig {SEASON_LABEL} | metric11">
+<meta property="og:description" content="Süper Lig güncel haberleri: transfer iddiaları, sakat listesi, ceza kararları ve resmi açıklamalar.">
+<meta property="og:image" content="/og-image.svg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <style>
   * {{ box-sizing: border-box; margin: 0; padding: 0; }}
   body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f172a; color: #e2e8f0; }}
@@ -137,9 +144,27 @@ def build_html(intel: dict) -> str:
   a:hover {{ text-decoration: underline; }}
   .mv-badge {{ color: #fbbf24; font-weight: 600; }}
   .empty {{ color: #475569; font-size: 0.85rem; padding: 20px 0; text-align: center; }}
+  .topbar{{min-height:54px;padding:0 clamp(12px,3vw,28px);display:flex;align-items:center;justify-content:space-between;gap:16px;background:#091810;position:sticky;top:0;z-index:10}}
+  .topbar a.brand{{display:flex;align-items:center;gap:8px;color:white;text-decoration:none;font-size:17px;font-weight:800}}
+  .topbar a.brand b{{width:26px;height:26px;border-radius:6px;display:grid;place-items:center;color:#091810;background:#cde94e;font-size:13px}}
+  .topnav{{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}}
+  .topnav::-webkit-scrollbar{{display:none}}
+  .topnav a{{white-space:nowrap;color:#d5ded8;padding:8px 10px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600}}
+  .topnav a.active{{background:#162b20;color:white}}
 </style>
 </head>
 <body>
+<div class="topbar">
+  <a class="brand" href="gundem_2025_2026.html"><b>11</b> metric11</a>
+  <nav class="topnav">
+    <a href="gundem_2025_2026.html">Gündem</a>
+    <a href="transfer_tracker_2025_2026.html">Transferler</a>
+    <a href="all_teams_preview_dashboard_2025_2026.html">Maç Önü</a>
+    <a href="transfer_recommendation_report_2025_2026.html">Scout</a>
+    <a class="active" href="news_intelligence_dashboard_2025_2026.html">Haberler</a>
+    <a href="football_intelligence_home.html">Analiz</a>
+  </nav>
+</div>
 <div class="header">
   <h1>📰 Haber İstihbaratı — Süper Lig {SEASON_LABEL}</h1>
   <div class="sub">Haber sinyal analizi · {analyzed}/{total} içerik analiz edildi · {gen_at} UTC</div>
