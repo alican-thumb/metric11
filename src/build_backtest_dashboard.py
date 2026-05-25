@@ -167,6 +167,7 @@ def build_html(
       {weak_candidate_table(weak_goal_candidates)}
     </section>
   </main>
+  <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
 """

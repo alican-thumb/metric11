@@ -449,6 +449,7 @@ def build_html(payload: dict) -> str:
     </div>
     <div class="cards">{cards}</div>
   </main>
+  <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
 """

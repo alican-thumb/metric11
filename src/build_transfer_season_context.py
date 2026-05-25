@@ -409,7 +409,9 @@ def main() -> None:
         _final_year_section(final_year),
         _signals_section(signals),
         _promotions_section(promotions),
-        "</div></body></html>",
+        "</div>
+  <script defer src="/_vercel/insights/script.js"></script>
+</body></html>",
     ]
 
     OUTPUT_HTML.write_text("".join(html_parts), encoding="utf-8")

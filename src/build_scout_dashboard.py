@@ -66,6 +66,7 @@ def build_html(metrics: dict) -> str:
     <section><h2>Golcü Listesi</h2><table><thead><tr><th>Oyuncu</th><th>Takım</th><th>Gol</th><th>İlk 11</th><th>Gol/İlk 11</th><th>Bitiricilik</th></tr></thead><tbody>{scorer_rows}</tbody></table></section>
     <section><h2>Sert Hakemler</h2><table><thead><tr><th>Hakem</th><th>Maç</th><th>Kart/M</th><th>Gol/M</th></tr></thead><tbody>{ref_rows}</tbody></table></section>
   </main>
+  <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
 """

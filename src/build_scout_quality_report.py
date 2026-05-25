@@ -238,6 +238,7 @@ def build_html(payload: dict) -> str:
     <section><h2>Düşük Güven İnceleme Kuyruğu</h2><table><thead><tr><th>Oyuncu</th><th>Takım</th><th>Rol</th><th>Fit</th><th>Güven</th><th>Etkilenen</th><th>Gerekçe</th><th>Gerekli Veri</th></tr></thead><tbody>{low_rows}</tbody></table></section>
     <section><h2>Fazla Role Yayılan Oyuncular</h2><table><thead><tr><th>Oyuncu</th><th>Takım</th><th>Rol Sayısı</th><th>Roller</th><th>Aksiyon</th></tr></thead><tbody>{repeated_rows}</tbody></table></section>
   </main>
+  <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
 """

@@ -75,6 +75,7 @@ def build_html(payload: dict) -> str:
     <section><h2>Genç Değer</h2>{table(young_rows)}</section>
     <section><h2>Sözleşme Fırsatları</h2>{table(contract_rows)}</section>
   </main>
+  <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
 """

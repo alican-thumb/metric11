@@ -281,6 +281,7 @@ def build_html(payload: dict) -> str:
     <section><h2>Takım İhtiyaç Özeti</h2><table><thead><tr><th>Öncelik</th><th>İhtiyaç</th><th>Gerekçe</th></tr></thead><tbody>{needs}</tbody></table></section>
     {buckets}
   </main>
+  <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
 """

@@ -116,6 +116,7 @@ def build_html(report: dict) -> str:
       </div>
     </div>
   </main>
+  <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
 """

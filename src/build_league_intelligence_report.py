@@ -427,6 +427,7 @@ def build_html(payload: dict) -> str:
     </div>
     <section><h2>Takım Zafiyetleri ve Scout İpucu</h2>{weakness_table(payload["team_weaknesses"])}</section>
   </main>
+  <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
 """

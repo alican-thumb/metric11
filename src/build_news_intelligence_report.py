@@ -193,6 +193,7 @@ function filterFeed() {{
   }});
 }}
 </script>
+  <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>"""
 

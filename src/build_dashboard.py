@@ -592,6 +592,7 @@ def build_html(summary: dict, previews: list[dict], goal_backtest: dict) -> str:
     select.addEventListener('change', event => render(Number(event.target.value)));
     render(0);
   </script>
+  <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
 """

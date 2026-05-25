@@ -115,6 +115,7 @@ def build_html(payload: dict) -> str:
     <section><h2>Günlük Öncelik</h2>{source_table(daily)}</section>
     <section><h2>Tüm Kaynaklar</h2>{source_table(rows)}</section>
   </main>
+  <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
 """
