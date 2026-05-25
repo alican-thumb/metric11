@@ -20,6 +20,10 @@ ADMIN_HASH = os.getenv("ADMIN_CREDENTIALS_HASH", "")
 
 def main() -> None:
     out = PROCESSED_DIR / "admin.html"
+    # Hash env var yoksa mevcut dosyayı koru — lokal çalışmada CI hash'i kaybolmasın
+    if not ADMIN_HASH and out.exists():
+        print(f"ADMIN_CREDENTIALS_HASH eksik, mevcut {out} korunuyor.")
+        return
     out.write_text(_build_html(), encoding="utf-8")
     print(out)
 

@@ -84,7 +84,7 @@
       <span class="login-mark">11</span>
       <div><div class="login-title">metric11</div><div class="login-sub">Yönetici Girişi</div></div>
     </div>
-    <div class="setup-msg">⚠ ADMIN_CREDENTIALS_HASH yapılandırılmamış.<br>Terminalde şu komutu çalıştır ve çıktıyı .env ile GitHub Secrets'a ekle:<br><code>python -c "import hashlib; print(hashlib.sha256('email:sifre'.encode()).hexdigest())"</code></div>
+    <div class="field"><label>E-posta</label><input type="email" id="admin-email" placeholder="ornek@mail.com" autocomplete="email"></div><div class="field"><label>Parola</label><input type="password" id="admin-password" placeholder="••••••••" autocomplete="current-password"></div><button class="login-btn" onclick="checkAuth()">Giriş Yap</button><div class="login-error" id="auth-error">E-posta veya parola hatalı.</div>
   </div>
 </div>
 
@@ -106,7 +106,7 @@
 
   <div class="wrap">
     <div class="page-title">Yönetici Paneli</div>
-    <div class="page-sub">Son güncelleme: 25.05.2026 12:46 UTC</div>
+    <div class="page-sub">Son güncelleme: 25.05.2026 13:19 UTC</div>
 
     <div class="pills">
       <div class="pill">
@@ -194,7 +194,7 @@
 </div>
 
 <script>
-const HASH = "";
+const HASH = "6f9cb6b069600a77ba56b4e34290073ad4c056e2b2ffc1d7bb2692e3eeb04e5a";
 
 async function sha256(text) {
   const enc = new TextEncoder();
