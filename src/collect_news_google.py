@@ -19,6 +19,19 @@ import requests
 from src.config import PROCESSED_DIR, RAW_DIR, ROOT_DIR, SEASON
 
 GOOGLE_NEWS_BASE = "https://news.google.com/rss/search"
+MAX_AGE_DAYS = 14
+
+
+def _is_recent(published_at: str | None) -> bool:
+    if not published_at:
+        return True
+    try:
+        pub = datetime.fromisoformat(published_at)
+        if pub.tzinfo is None:
+            pub = pub.replace(tzinfo=timezone.utc)
+        return (datetime.now(timezone.utc) - pub).days <= MAX_AGE_DAYS
+    except Exception:
+        return True
 
 TEAM_QUERY_NAMES = {
     "BEŞİKTAŞ A.Ş.": "Beşiktaş",
@@ -113,7 +126,7 @@ def fetch_query(query: str, category: str, max_items: int) -> list[dict]:
     results = []
     for entry in feed.entries[:max_items]:
         parsed = _parse_entry(entry, query, category)
-        if parsed:
+        if parsed and _is_recent(parsed.get("published_at")):
             results.append(parsed)
     return results
 

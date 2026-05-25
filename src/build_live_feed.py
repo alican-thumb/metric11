@@ -78,23 +78,52 @@ def _transfer_badge(status: str) -> str:
     return f"<span style='font-size:10px;padding:1px 6px;border-radius:3px;font-weight:700;color:{color};background:{bg}'>{escape(label)}</span>"
 
 
+def _fmt_date(published_at: str | None) -> str:
+    if not published_at:
+        return ""
+    try:
+        raw = published_at.strip()
+        if "." in raw[:5]:
+            from datetime import date
+            parts = raw.split(" ")[0].split(".")
+            d, m, y = int(parts[0]), int(parts[1]), int(parts[2])
+            dt = datetime(y, m, d, tzinfo=timezone.utc)
+        else:
+            dt = datetime.fromisoformat(raw.replace("Z", "+00:00"))
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=timezone.utc)
+        diff = datetime.now(timezone.utc) - dt
+        if diff.days < 0:
+            return ""
+        if diff.days == 0:
+            h = diff.seconds // 3600
+            return f"{h}sa" if h else "az önce"
+        if diff.days == 1:
+            return "dün"
+        return f"{diff.days}g önce"
+    except Exception:
+        return ""
+
+
 def _article_html(a: dict) -> str:
     title = escape(a.get("title", "")[:120])
     link  = escape(a.get("link", "") or "")
     src   = a.get("source", "")
     stype = a.get("source_type", "rss")
     cat   = a.get("category", "")
+    age   = _fmt_date(a.get("published_at"))
     tag   = ""
     if cat == "transfer":
-        tag = "<span style='font-size:10px;color:#d97706;font-weight:700'>⟳ TRANSFER</span> "
+        tag = "<span style='font-size:10px;color:#d97706;font-weight:700'>&#x27f3; TRANSFER</span> "
     elif cat == "injury":
-        tag = "<span style='font-size:10px;color:#dc2626;font-weight:700'>⚕ SAKAT</span> "
+        tag = "<span style='font-size:10px;color:#dc2626;font-weight:700'>&#x2695; SAKAT</span> "
     elif cat == "suspension":
-        tag = "<span style='font-size:10px;color:#9333ea;font-weight:700'>🟥 CEZA</span> "
+        tag = "<span style='font-size:10px;color:#9333ea;font-weight:700'>&#x1f7e5; CEZA</span> "
 
+    age_html = f"<span style='font-size:11px;color:var(--muted);margin-left:auto'>{escape(age)}</span>" if age else ""
     anchor = f'<a href="{link}" target="_blank" style="color:var(--ink);text-decoration:none;line-height:1.4">{tag}{title}</a>' if link else f"{tag}{title}"
-    return f"""<div style="padding:12px 0;border-bottom:1px solid var(--line);display:flex;gap:12px;align-items:flex-start">
-  <div style="flex:1;min-width:0">{anchor}<div style="margin-top:4px;display:flex;gap:6px;align-items:center">{_source_badge(stype)}<span style="font-size:11px;color:var(--muted)">{escape(src)}</span></div></div>
+    return f"""<div style="padding:12px 0;border-bottom:1px solid var(--line)">
+  {anchor}<div style="margin-top:4px;display:flex;gap:6px;align-items:center">{_source_badge(stype)}<span style="font-size:11px;color:var(--muted)">{escape(src)}</span>{age_html}</div>
 </div>"""
 
 

@@ -575,8 +575,26 @@ def build_intelligence(articles: list[dict], player_index: dict) -> dict:
     conf_ord = {"HIGH": 0, "MEDIUM": 1, "LOW": 2}
     injuries.sort(key=lambda x: conf_ord.get(x.get("confidence", "LOW"), 2))
 
+    cutoff = (datetime.now(timezone.utc).replace(hour=0, minute=0, second=0, microsecond=0)
+              .isoformat().replace("+00:00", "Z"))
+    cutoff_dt = datetime.now(timezone.utc).replace(hour=0, minute=0, second=0, microsecond=0)
+
+    def _within_14_days(a: dict) -> bool:
+        pub = a.get("published_at")
+        if not pub:
+            return True
+        try:
+            t = datetime.fromisoformat(pub.replace("Z", "+00:00"))
+            if t.tzinfo is None:
+                t = t.replace(tzinfo=timezone.utc)
+            return (cutoff_dt - t).days <= 14
+        except Exception:
+            return True
+
     recent = sorted(
-        [a for a in articles if a.get("super_lig_relevant") or a.get("source_type") == "twitter"],
+        [a for a in articles
+         if (a.get("super_lig_relevant") or a.get("source_type") == "twitter")
+         and _within_14_days(a)],
         key=lambda a: a.get("published_at") or "",
         reverse=True,
     )

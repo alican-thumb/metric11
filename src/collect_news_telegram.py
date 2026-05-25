@@ -18,6 +18,20 @@ from bs4 import BeautifulSoup
 
 from src.config import PROCESSED_DIR, RAW_DIR, SEASON
 
+MAX_AGE_DAYS = 14
+
+
+def _is_recent(published_at: str | None) -> bool:
+    if not published_at:
+        return True
+    try:
+        pub = datetime.fromisoformat(published_at)
+        if pub.tzinfo is None:
+            pub = pub.replace(tzinfo=timezone.utc)
+        return (datetime.now(timezone.utc) - pub).days <= MAX_AGE_DAYS
+    except Exception:
+        return True
+
 TELEGRAM_CHANNELS = [
     {"handle": "transferhaber", "name": "Transfer Haber", "type": "secondary_signal"},
     {"handle": "besiktashaberleri", "name": "Beşiktaş Haberleri", "team": "BEŞİKTAŞ A.Ş.", "type": "secondary_signal"},
@@ -104,7 +118,7 @@ def fetch_channel(channel: dict, max_items: int) -> list[dict]:
     articles = []
     for div in msg_divs:
         parsed = _parse_message(div, channel)
-        if parsed:
+        if parsed and _is_recent(parsed.get("published_at")):
             articles.append(parsed)
     return articles
 
