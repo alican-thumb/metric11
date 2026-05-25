@@ -1269,3 +1269,31 @@ Bir sonraki oturumda önce `PROJECT_STATE.md` okunmalı. Ardından öncelik:
 - `src/preview/probability.py` güncellendi: kaba `missing_count * 0.05` yerine squad_xg_adjustment kullanılıyor (yoksa eski fallback devreye giriyor).
 - `src/build_player_availability.py` güncellendi: news_intelligence_2025_2026.json'dan sakat/cezalı sinyaller de çekiliyor; iki kaynak name+status üzerinden dedup ediliyor.
 - Test sonucu: Orkun Kökçü cezalı → impact=REGULAR, squad adj=-0.12, beklenen gol 1.71→1.26.
+
+## 2026-05-25 Haber Ağı Genişletmesi ve Gündem Fan Sayfası
+
+### Sezon Sonu ve 2026/27 Kadro
+
+- Sezon arası banner: `build_dashboard.py` ve `build_all_teams_preview_dashboard.py` tüm maçlar geçmişte kaldığında otomatik blue banner gösteriyor; 2026/27 fikstür yüklenince kaybolacak.
+- Küme düşenler: Karagümrük, Antalyaspor, Kayserispor.
+- Yükselen takımlar: Çorum FK (TM: corum-fk/37951), Erzurumspor FK (TM: erzurumspor-fk/39722), Amed SFK (TM: amed-sk/12382). Alanyaspor elde kaldı.
+- 4 dosyada (generate_preview_batch, build_dashboard, build_transfer_season_context, transfermarkt_super_lig_clubs.json) güncellendi. Sezon_id "2026"'ya çevrildi.
+
+### Haber Ağı
+
+- RSS kaynakları 8 → 16: NTV Spor, Sporx, Fanatik, Fotomaç, CNN Türk Spor, TRT Spor, Goal.com TR eklendi.
+- Twitter hesapları 30 → 45: transfer_news (ertansuzgun, yusufgunaydn, EkremKonur, FabrizioRomano), analytics (TaktikSehri, kutubolgesi, PassHatasiii, OptaJoe), official (CorumFK1925, ErzurumsporFK, Amedspor), secondary_signal (GizemKaya__, GercekBJK, AmputeFutbol, WebdikBesiktas, KaraKartalBlog), media (HaberKartali).
+- Türkçe ve İngilizce anahtar kelimeler genişletildi (teknik direktör, resmileşti, here we go, signs, deal vb.).
+- GitHub Actions `news-refresh.yml` eklendi: 02:15, 08:15, 14:15, 20:15 UTC → haber yenileme ~2 saatte bir.
+- `detect_squad_changes.py` eklendi: günlük Transfermarkt kadro snapshot'ı alır, değişiklikleri (gelen/giden) karşılaştırır; çıktı `tm_squad_changes_2025_2026.json`.
+- `build_transfer_tracker.py` eklendi: news_intelligence + TM kadro değişikliklerini birleştirerek transfer_tracker HTML ve JSON üretir.
+
+### Gündem Sayfası (Ana Sayfa)
+
+- `src/build_live_feed.py` eklendi: `gundem_2025_2026.html` üretir.
+  - Transfer penceresi geri sayım banner (animasyonlu).
+  - 4 özet pill: resmi transferler, sinyal sayısı, serbest kalacak, son yıl kontrat.
+  - 2 sütun: sol=son 12 haber (kategori etiketleri: TRANSFER/SAKAT/CEZA), sağ=teyitli transferler + araçlar.
+  - `index.html` artık gündem sayfasına yönlendiriyor.
+- `html_utils.py` ve `build_transfer_tracker.py` navı güncellendi: Gündem ilk sıraya taşındı.
+- Pipeline ve `news-refresh.yml`'e eklendi.
