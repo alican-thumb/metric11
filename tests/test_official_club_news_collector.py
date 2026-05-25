@@ -71,6 +71,24 @@ class OfficialClubNewsCollectorTests(unittest.TestCase):
 
         self.assertIsNone(article)
 
+    @patch("src.collect_official_club_news.requests.get")
+    def test_official_article_reads_structured_meta_publication_time(self, request_get):
+        response = Mock()
+        response.text = """
+        <html><head><meta property="article:published_time" content="2026-05-24T18:45:00+03:00"></head>
+        <h1>Ali Ornek transferi tamamlandı</h1><p>Ali Ornek ile sözleşme imzalandı.</p></html>
+        """
+        response.raise_for_status.return_value = None
+        request_get.return_value = response
+
+        article = fetch_article(
+            {"team": "A", "name": "A Resmi", "url": "https://club.test"},
+            "",
+            "https://club.test/haber/ali-ornek",
+        )
+
+        self.assertEqual(article["published_at"], "2026-05-24T18:45:00+03:00")
+
     @patch("src.collect_official_club_news.fetch_source")
     def test_source_failure_is_kept_in_coverage_snapshot(self, fetch_source):
         fetch_source.side_effect = [([], []), RuntimeError("site unavailable")]
@@ -86,6 +104,23 @@ class OfficialClubNewsCollectorTests(unittest.TestCase):
         self.assertEqual(payload["current_league_sources"], 2)
         self.assertEqual(payload["successful_current_league_sources"], 1)
         self.assertIn("site unavailable", payload["sources"][1]["error"])
+
+    @patch("src.collect_official_club_news.fetch_source")
+    def test_new_official_article_records_first_observed_time(self, fetch_source):
+        fetch_source.return_value = (
+            [
+                {
+                    "article_id": "official-1",
+                    "published_at": None,
+                    "title": "Transfer duyurusu",
+                }
+            ],
+            [],
+        )
+
+        payload = collect_sources([{"team": "A", "name": "A Resmi", "url": "https://a.test"}], 10, 0)
+
+        self.assertIsNotNone(payload["articles"][0]["first_observed_at"])
 
 
 if __name__ == "__main__":

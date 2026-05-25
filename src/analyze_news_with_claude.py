@@ -286,8 +286,15 @@ def rule_based_analyze(article: dict, player_index: dict) -> dict:
                         from_club = official_team
                         to_club = None
                     else:
-                        from_club = p.get("current_club")
-                        to_club = _distinct_target_club(from_club, candidate_clubs)
+                        explicit_target = _explicit_media_signing_target(signal_type, title_text, title_clubs)
+                        if explicit_target:
+                            from_club = (
+                                None if _same_club(p.get("current_club"), explicit_target) else p.get("current_club")
+                            )
+                            to_club = explicit_target
+                        else:
+                            from_club = p.get("current_club")
+                            to_club = _distinct_target_club(from_club, candidate_clubs)
                     transfer_rumors.append({
                         "player_name": p["name"],
                         "from_club": from_club,
@@ -441,6 +448,14 @@ def _distinct_target_club(current_club: str | None, candidates: list[str]) -> st
     return None
 
 
+def _explicit_media_signing_target(signal_type: str, title: str, title_clubs: list[str]) -> str | None:
+    if signal_type not in {"official_transfer", "signing", "deal_close"} or len(title_clubs) != 1:
+        return None
+    if not re.search(r"anlaşm(?:a sağlandı|aya vardı)|imzala(?:dı|yacak|yor)|transfer\s+(?:oldu|edildi|etti)", title):
+        return None
+    return title_clubs[0]
+
+
 def _claude_enhance(client, article: dict) -> dict | None:
     """Claude API ile kural tabanlı analizi zenginleştirir."""
     SYSTEM = "Sen Türk futbol analistsin. Haber özetini JSON olarak çıkar. Sadece JSON döndür."
@@ -539,6 +554,7 @@ def build_intelligence(articles: list[dict], player_index: dict) -> dict:
             "query": a.get("query"),
             "source_tier": _source_tier(a),
             "published_at": a.get("published_at"),
+            "first_observed_at": a.get("first_observed_at"),
             "summary_tr": ca.get("summary_tr", a.get("summary", ""))[:200],
         }
 
@@ -658,6 +674,7 @@ def _build_transfer_claim(rows: list[dict]) -> dict:
             "title": row.get("title"),
             "link": row.get("link"),
             "published_at": row.get("published_at"),
+            "first_observed_at": row.get("first_observed_at"),
         }
         for row in rows
     ]

@@ -108,8 +108,11 @@ def collect_sources(sources: list[dict], max_items: int, delay_seconds: float, t
     current_sources = [stat for stat in source_stats if stat["current_league"]]
     accessible_current = sum(1 for stat in current_sources if not stat["error"])
     status = "SUCCESS" if accessible == len(sources) else ("PARTIAL_SUCCESS" if accessible else "FAILED")
+    generated_at = datetime.now(timezone.utc).isoformat()
+    for article in articles:
+        article.setdefault("first_observed_at", generated_at)
     return {
-        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "generated_at": generated_at,
         "season": SEASON,
         "source_type": "official_club",
         "collection_status": status,
@@ -189,8 +192,7 @@ def fetch_article(source: dict, listing_title: str, link: str, timeout_seconds: 
     soup = BeautifulSoup(response.text, "html.parser")
     title_node = soup.find("h1") or soup.find("title")
     title = listing_title or (title_node.get_text(" ", strip=True) if title_node else link)
-    time_node = soup.select_one("time[datetime]")
-    published_at = time_node.get("datetime") if time_node else None
+    published_at = extract_structured_date(soup)
     for tag in soup(["script", "style", "nav", "header", "footer", "aside"]):
         tag.decompose()
     detail_text = " ".join((soup.get_text(" ", strip=True) or "").split())[:3000]
@@ -235,16 +237,68 @@ def extract_date(text: str) -> str | None:
     return f"{year}-{month}-{day}T{hour}:{minute}:00+03:00"
 
 
+def extract_structured_date(soup: BeautifulSoup) -> str | None:
+    time_node = soup.select_one("time[datetime]")
+    if time_node and time_node.get("datetime"):
+        return time_node.get("datetime")
+    for selector in (
+        "meta[property='article:published_time']",
+        "meta[name='article:published_time']",
+        "meta[name='datePublished']",
+        "meta[itemprop='datePublished']",
+        "meta[name='publish-date']",
+    ):
+        node = soup.select_one(selector)
+        if node and node.get("content"):
+            return node.get("content")
+    for node in soup.select("script[type='application/ld+json']"):
+        try:
+            value = _jsonld_date(json.loads(node.string or node.get_text()))
+        except (TypeError, ValueError, json.JSONDecodeError):
+            continue
+        if value:
+            return value
+    return None
+
+
+def _jsonld_date(value) -> str | None:
+    if isinstance(value, dict):
+        if value.get("datePublished"):
+            return str(value["datePublished"])
+        for nested in value.values():
+            result = _jsonld_date(nested)
+            if result:
+                return result
+    if isinstance(value, list):
+        for nested in value:
+            result = _jsonld_date(nested)
+            if result:
+                return result
+    return None
+
+
 def deduplicate(articles: list[dict]) -> list[dict]:
     return list({article["article_id"]: article for article in articles}.values())
 
 
 def write_snapshot(payload: dict, output_prefix: str) -> Path:
-    content = json.dumps(payload, ensure_ascii=False, indent=2)
     raw_dir = RAW_DIR / "news_official_clubs"
     raw_dir.mkdir(parents=True, exist_ok=True)
-    (raw_dir / f"{output_prefix}.json").write_text(content, encoding="utf-8")
     processed_path = PROCESSED_DIR / f"{output_prefix}.json"
+    previous = {}
+    if processed_path.exists():
+        prior_payload = json.loads(processed_path.read_text(encoding="utf-8"))
+        previous = {
+            article.get("article_id"): article.get("first_observed_at")
+            for article in prior_payload.get("articles", [])
+            if article.get("article_id") and article.get("first_observed_at")
+        }
+    for article in payload.get("articles", []):
+        article["first_observed_at"] = (
+            previous.get(article.get("article_id")) or article.get("first_observed_at") or payload.get("generated_at")
+        )
+    content = json.dumps(payload, ensure_ascii=False, indent=2)
+    (raw_dir / f"{output_prefix}.json").write_text(content, encoding="utf-8")
     processed_path.write_text(content, encoding="utf-8")
     return processed_path
 

@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -10,12 +11,10 @@ from src.analyze_news_with_claude import _club_key
 from src.collect_news_telegram import TELEGRAM_CHANNELS
 from src.collect_news_twitter import TWITTER_ACCOUNTS
 from src.config import PROCESSED_DIR, SEASON
-from src.html_utils import md_to_html, page_html
 from src.normalization import normalize_name
 
 OUTPUT_JSON = PROCESSED_DIR / f"source_performance_{SEASON}.json"
 OUTPUT_MD = PROCESSED_DIR / f"source_performance_{SEASON}.md"
-OUTPUT_HTML = PROCESSED_DIR / f"source_performance_{SEASON}.html"
 HISTORY_JSON = PROCESSED_DIR / f"source_claim_history_{SEASON}.json"
 MATURITY_DAYS = 14
 TRACKED_X_TYPES = {"transfer_news", "secondary_signal"}
@@ -23,8 +22,15 @@ REPORTER_WATCH_QUERIES = {
     "Yağız Sabuncuoğlu": "Yağız Sabuncuoğlu transfer",
     "Ertan Süzgün": "Ertan Süzgün transfer",
     "Sports Digitale": "Sports Digitale transfer",
-    "Yakın Takip": "Yakın Takip transfer",
+    "Yusuf Günaydın": "Yusuf Günaydın transfer",
     "Ekrem Konur": "Ekrem Konur Süper Lig transfer",
+}
+REPORTER_ATTRIBUTION_PATTERNS = {
+    "Yağız Sabuncuoğlu": (r"\bYA[GĞ]IZ SABUNCUO[GĞ]LU\b", r"^\s*SABUNCUO[GĞ]LU\s*:"),
+    "Ertan Süzgün": (r"\bERTAN S[ÜU]ZG[ÜU]N\b",),
+    "Sports Digitale": (r"\bSPORTS D[Iİ]G[Iİ]TALE\b",),
+    "Yusuf Günaydın": (r"\bYUSUF G[ÜU]NAYDIN\b",),
+    "Ekrem Konur": (r"\bEKREM KONUR\b",),
 }
 
 
@@ -48,11 +54,7 @@ def main() -> None:
     HISTORY_JSON.write_text(json.dumps(history, ensure_ascii=False, indent=2), encoding="utf-8")
     OUTPUT_JSON.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     OUTPUT_MD.write_text(markdown, encoding="utf-8")
-    OUTPUT_HTML.write_text(
-        page_html("Erken Haber Kaynak Performansı", md_to_html(markdown)),
-        encoding="utf-8",
-    )
-    print(f"Kaynak performansı: {payload['summary']['observed_sources']} gözlenen kaynak | {OUTPUT_HTML}")
+    print(f"Kaynak performansı: {payload['summary']['observed_sources']} gözlenen kaynak | {OUTPUT_JSON}")
 
 
 def _load(path: Path) -> dict:
@@ -90,6 +92,7 @@ def _empty_row(source: str, source_tier: str, source_type: str | None = None) ->
         "scoreable_claims": 0,
         "official_conversions": 0,
         "lead_hours": [],
+        "first_seen_lead_hours": [],
         "lead_time_unavailable": 0,
         "matured_unconfirmed": 0,
         "pending_claims": 0,
@@ -112,8 +115,11 @@ def build_report(
     generated = _timestamp(intelligence.get("generated_at"))
     reference_time = now or generated or datetime.now(timezone.utc)
     history = history or {}
-    official_events: dict[str, datetime | None] = {
-        row["event_key"]: _timestamp(row.get("official_at"))
+    official_events: dict[str, dict[str, datetime | None]] = {
+        row["event_key"]: {
+            "published_at": _timestamp(row.get("official_at")),
+            "first_observed_at": _timestamp(row.get("official_first_observed_at")),
+        }
         for row in history.get("official_events", [])
         if row.get("event_key")
     }
@@ -128,11 +134,21 @@ def build_report(
             for evidence in claim.get("evidence", [])
             if evidence.get("source_tier") == "OFFICIAL"
         ]
+        observed_times = [
+            _timestamp(evidence.get("first_observed_at"))
+            for evidence in claim.get("evidence", [])
+            if evidence.get("source_tier") == "OFFICIAL"
+        ]
         known_times = [item for item in times if item]
-        current_time = min(known_times) if known_times else None
-        official_events[key] = current_time or official_events.get(key)
+        known_observed = [item for item in observed_times if item]
+        event = official_events.setdefault(key, {"published_at": None, "first_observed_at": None})
+        if known_times:
+            event["published_at"] = _earliest(event["published_at"], min(known_times))
+        if known_observed:
+            event["first_observed_at"] = _earliest(event["first_observed_at"], min(known_observed))
     official_total = len(official_events)
-    official_with_time = sum(1 for value in official_events.values() if value)
+    official_with_time = sum(1 for event in official_events.values() if event["published_at"])
+    official_with_first_seen = sum(1 for event in official_events.values() if event["first_observed_at"])
 
     observations = {
         _observation_id(row): row for row in history.get("observations", []) if row.get("source")
@@ -150,15 +166,25 @@ def build_report(
                 "player_name": claim.get("player_name"),
                 "to_club": claim.get("to_club"),
                 "published_at": evidence.get("published_at"),
+                "first_observed_at": evidence.get("first_observed_at"),
                 "title": evidence.get("title"),
                 "link": evidence.get("link"),
             }
-            observation_id = _observation_id(observation)
-            previous = observations.get(observation_id)
-            if not previous or (_timestamp(observation.get("published_at")) or reference_time) < (
-                _timestamp(previous.get("published_at")) or reference_time
-            ):
-                observations[observation_id] = observation
+            _retain_observation(observations, observation, reference_time)
+            attributed_reporter = _attributed_reporter(evidence.get("title"))
+            if attributed_reporter:
+                _retain_observation(
+                    observations,
+                    {
+                        **observation,
+                        "source": attributed_reporter,
+                        "publisher": observation["source"],
+                        "source_tier": "ATTRIBUTED_MEDIA",
+                        "source_type": "attributed_media",
+                        "attribution_type": "MEDIA_REPUBLICATION",
+                    },
+                    reference_time,
+                )
 
     rows: dict[str, dict] = {}
     for observation in observations.values():
@@ -176,9 +202,14 @@ def build_report(
         published = _timestamp(observation.get("published_at"))
         if key in official_events:
             row["official_conversions"] += 1
-            official_time = official_events[key]
+            official_time = official_events[key]["published_at"]
+            first_seen_time = official_events[key]["first_observed_at"]
             if published and official_time and published <= official_time:
                 row["lead_hours"].append(round((official_time - published).total_seconds() / 3600, 1))
+            elif published and first_seen_time and published <= first_seen_time:
+                row["first_seen_lead_hours"].append(
+                    round((first_seen_time - published).total_seconds() / 3600, 1)
+                )
             else:
                 row["lead_time_unavailable"] += 1
         elif published and reference_time - published >= timedelta(days=maturity_days):
@@ -208,6 +239,7 @@ def build_report(
     source_rows.sort(key=lambda row: (row["score"] is None, -(row["score"] or 0), -row["observations"], row["source"]))
     provider_rows = _provider_measurements(source_rows, google or {}, telegram_status, twitter_status)
     scored = [row for row in source_rows if row["score"] is not None]
+    source_by_name = {row["source"]: row for row in source_rows}
     google_queries = {row.get("query"): row for row in (google or {}).get("queries", [])}
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -217,9 +249,11 @@ def build_report(
             "transfer_signals": intelligence.get("transfer_signals", 0),
             "official_events": official_total,
             "official_events_with_timestamp": official_with_time,
+            "official_events_with_first_observed_timestamp": official_with_first_seen,
             "observed_sources": sum(1 for row in source_rows if row["observations"]),
             "scored_sources": len(scored),
             "measured_lead_times": sum(len(row["lead_hours"]) for row in source_rows),
+            "first_seen_lead_times": sum(len(row["first_seen_lead_hours"]) for row in source_rows),
             "tracked_x_sources_waiting": sum(1 for row in source_rows if row["status"] == "X_DATA_UNAVAILABLE"),
             "retained_claim_observations": len(observations),
         },
@@ -248,15 +282,25 @@ def build_report(
                 "google_query": query,
                 "indexed_results": google_queries.get(query, {}).get("fetched", 0),
                 "query_error": google_queries.get(query, {}).get("error"),
-                "performance_status": "ATTRIBUTION_PENDING",
+                "attributed_observations": source_by_name.get(name, {}).get("observations", 0),
+                "scoreable_claims": source_by_name.get(name, {}).get("scoreable_claims", 0),
+                "performance_status": (
+                    source_by_name[name]["status"] if source_by_name.get(name, {}).get("observations") else "ATTRIBUTION_PENDING"
+                ),
             }
             for name, query in REPORTER_WATCH_QUERIES.items()
         ],
         "_history": {
             "generated_at": datetime.now(timezone.utc).isoformat(),
             "official_events": [
-                {"event_key": key, "official_at": value.isoformat() if value else None}
-                for key, value in official_events.items()
+                {
+                    "event_key": key,
+                    "official_at": event["published_at"].isoformat() if event["published_at"] else None,
+                    "official_first_observed_at": (
+                        event["first_observed_at"].isoformat() if event["first_observed_at"] else None
+                    ),
+                }
+                for key, event in official_events.items()
             ],
             "observations": list(observations.values()),
         },
@@ -266,6 +310,7 @@ def build_report(
 def _provider_measurements(source_rows: list[dict], google: dict, telegram_status: str, twitter_status: str) -> list[dict]:
     labels = {
         "media": "Google News / medya",
+        "attributed_media": "Muhabire atıflı medya",
         "telegram": "Telegram",
         "twitter": "X",
     }
@@ -288,6 +333,7 @@ def _provider_measurements(source_rows: list[dict], google: dict, telegram_statu
         ):
             row[key] += source[key]
         row["lead_hours"].extend(source["lead_hours"])
+        row["first_seen_lead_hours"].extend(source["first_seen_lead_hours"])
     if not aggregated["media"]["observations"] and google.get("total_articles"):
         aggregated["media"]["status"] = "NO_TRANSFER_CLAIMS"
     if not aggregated["telegram"]["observations"]:
@@ -301,17 +347,42 @@ def _provider_measurements(source_rows: list[dict], google: dict, telegram_statu
     return [_finalize_row(row) for row in aggregated.values()]
 
 
+def _earliest(existing: datetime | None, incoming: datetime) -> datetime:
+    return min(existing, incoming) if existing else incoming
+
+
+def _retain_observation(observations: dict[str, dict], observation: dict, reference_time: datetime) -> None:
+    observation_id = _observation_id(observation)
+    previous = observations.get(observation_id)
+    earlier = (_timestamp(observation.get("published_at")) or reference_time) < (
+        _timestamp((previous or {}).get("published_at")) or reference_time
+    )
+    more_resolved = previous and not previous.get("event_key") and observation.get("event_key")
+    if not previous or earlier or more_resolved:
+        observations[observation_id] = observation
+
+
+def _attributed_reporter(title: str | None) -> str | None:
+    value = (title or "").upper()
+    for reporter, patterns in REPORTER_ATTRIBUTION_PATTERNS.items():
+        if any(re.search(pattern, value) for pattern in patterns):
+            return reporter
+    return None
+
+
 def _observation_id(row: dict) -> str:
     return "|".join(
         str(value or "")
-        for value in (row.get("source"), row.get("event_key"), row.get("link"), row.get("title"))
+        for value in (row.get("source"), row.get("player_name"), row.get("link"), row.get("title"))
     )
 
 
 def _finalize_row(row: dict) -> dict:
     completed = row["official_conversions"] + row["matured_unconfirmed"]
     lead = row["lead_hours"]
+    bounded_lead = row["first_seen_lead_hours"]
     row["average_lead_hours"] = round(sum(lead) / len(lead), 1) if lead else None
+    row["average_first_seen_lead_hours"] = round(sum(bounded_lead) / len(bounded_lead), 1) if bounded_lead else None
     row["official_conversion_rate_pct"] = (
         round(100 * row["official_conversions"] / row["scoreable_claims"], 1) if row["scoreable_claims"] else None
     )
@@ -322,7 +393,7 @@ def _finalize_row(row: dict) -> dict:
         precision = row["official_conversions"] / completed
         lead_bonus = min((row["average_lead_hours"] or 0) / 72, 1) * 20
         row["score"] = round(precision * 80 + lead_bonus, 1)
-        row["status"] = "MEASURED" if lead else "PARTIAL_MEASUREMENT"
+        row["status"] = "MEASURED" if lead else ("FIRST_SEEN_BOUND" if bounded_lead else "PARTIAL_MEASUREMENT")
     elif row["observations"]:
         row["status"] = "OBSERVING"
     return row
@@ -337,8 +408,10 @@ def build_markdown(payload: dict) -> str:
         f"- Transfer sinyali: {summary['transfer_signals']}",
         f"- Resmi olaya dönüşen transfer: {summary['official_events']}",
         f"- Yayın zamanı bulunan resmi teyit: {summary['official_events_with_timestamp']}/{summary['official_events']}",
+        f"- İlk görülme zamanı bulunan resmi teyit: {summary['official_events_with_first_observed_timestamp']}/{summary['official_events']}",
         f"- Ölçülen kaynak: {summary['scored_sources']} / gözlenen kaynak: {summary['observed_sources']}",
         f"- Hesaplanabilir erken haber süresi: {summary['measured_lead_times']}",
+        f"- İlk görülmeye göre üst-sınır süre: {summary['first_seen_lead_times']}",
         f"- X verisi bekleyen izlenen kaynak: {summary['tracked_x_sources_waiting']}",
         f"- Defterde korunan ilk iddia gözlemi: {summary['retained_claim_observations']}",
         "",
@@ -350,17 +423,18 @@ def build_markdown(payload: dict) -> str:
         "",
         "## Kanal Ölçümü",
         "",
-        "| Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | Vekil Yanlış Alarm | Skor | Durum |",
-        "|---|---:|---:|---:|---:|---:|---:|---|",
+        "| Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |",
+        "|---|---:|---:|---:|---:|---:|---:|---:|---|",
     ]
     for row in payload["provider_measurements"]:
         lines.append(
-            "| {source} | {observations} | {scoreable} | {confirmed} | {lead} | {false_alarm} | {score} | {status} |".format(
+            "| {source} | {observations} | {scoreable} | {confirmed} | {lead} | {bounded} | {false_alarm} | {score} | {status} |".format(
                 source=row["source"],
                 observations=row["observations"],
                 scoreable=row["scoreable_claims"],
                 confirmed=row["official_conversions"],
                 lead=_display(row["average_lead_hours"]),
+                bounded=_display(row["average_first_seen_lead_hours"]),
                 false_alarm=_percent(row["false_alarm_proxy_pct"]),
                 score=_display(row["score"]),
                 status=row["status"],
@@ -370,35 +444,39 @@ def build_markdown(payload: dict) -> str:
         "",
         "## Muhabir İzleme",
         "",
-        "- Google News muhabir sorgusu, erken bulgu aramasıdır; haber başlığı veya kanıt kaydı muhabire açık atıf taşımadan isabet skoruna yazılmaz.",
+        "- Google News muhabir sorgusu erken bulgu aramasıdır; yalnız başlıkta açık muhabir atfı taşıyan transfer iddiaları `MEDIA_REPUBLICATION` gözlemi olarak yazılır.",
         "",
-        "| Muhabir / Ağ | Google Arama Bulgusu | Skor Durumu |",
-        "|---|---:|---|",
+        "| Muhabir / Ağ | Google Arama Bulgusu | Atıflı Gözlem | Ölçülebilir İddia | Skor Durumu |",
+        "|---|---:|---:|---:|---|",
     ])
     for row in payload["reporter_watch"]:
-        lines.append(f"| {row['name']} | {row['indexed_results']} | {row['performance_status']} |")
+        lines.append(
+            f"| {row['name']} | {row['indexed_results']} | {row['attributed_observations']} | "
+            f"{row['scoreable_claims']} | {row['performance_status']} |"
+        )
     lines.extend([
         "",
         "## Skorlama Notu",
         "",
         f"- Resmi teyide dönüşüm, aynı oyuncu ve hedef kulüp için resmi kulüp duyurusu bulunduğunda sayılır.",
-        f"- Erken haber saati yalnız hem ilk sinyal hem resmi duyuru zamanı varsa hesaplanır.",
+        f"- Erken haber saati yalnız hem ilk sinyal hem resmi duyuru yayın zamanı varsa kesin olarak hesaplanır; resmi yayın saati yoksa ilk görülen an ayrı üst-sınır metriğidir.",
         f"- Yanlış alarm vekili, {payload['maturity_days']} günden eski olup resmi teyide dönüşmemiş yönü belirli iddiadır; kesin yanlış bilgi hükmü değildir.",
         "",
         "## Kaynaklar",
         "",
-        "| Kaynak | Katman | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | Vekil Yanlış Alarm | Skor | Durum |",
-        "|---|---:|---:|---:|---:|---:|---:|---:|---|",
+        "| Kaynak | Katman | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |",
+        "|---|---:|---:|---:|---:|---:|---:|---:|---:|---|",
     ])
     for row in payload["sources"]:
         lines.append(
-            "| {source} | {tier} | {observations} | {scoreable} | {confirmed} | {lead} | {false_alarm} | {score} | {status} |".format(
+            "| {source} | {tier} | {observations} | {scoreable} | {confirmed} | {lead} | {bounded} | {false_alarm} | {score} | {status} |".format(
                 source=str(row["source"]).replace("|", "/"),
                 tier=row["source_tier"],
                 observations=row["observations"],
                 scoreable=row["scoreable_claims"],
                 confirmed=row["official_conversions"],
                 lead=_display(row["average_lead_hours"]),
+                bounded=_display(row["average_first_seen_lead_hours"]),
                 false_alarm=_percent(row["false_alarm_proxy_pct"]),
                 score=_display(row["score"]),
                 status=row["status"],

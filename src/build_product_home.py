@@ -48,7 +48,6 @@ def build_html() -> str:
     news_intel = load_json(PROCESSED_DIR / f"news_intelligence_{SEASON}.json")
     transfer_season = load_json(PROCESSED_DIR / f"transfer_season_context_{SEASON}.json") or {}
     transfer_tracker = load_json(PROCESSED_DIR / f"transfer_tracker_{SEASON}.json") or {}
-    source_performance = load_json(PROCESSED_DIR / f"source_performance_{SEASON}.json") or {}
     prediction_validation = load_json(PROCESSED_DIR / "prediction_validation_report_2025_2026.json").get("metrics", {})
     all_teams_total = _count_all_teams_reports()
 
@@ -124,12 +123,6 @@ def build_html() -> str:
             "Yaz 2026 transfer penceresi canlı takibi: resmi transferler, doğrulanan iddialar ve inceleme bekleyen sinyaller takım bazlı izleniyor.",
             f"transfer_tracker_{SEASON}.html",
             f"{transfer_tracker.get('summary', {}).get('official_count', 0)} resmi · {transfer_tracker.get('summary', {}).get('total_signals', 0)} toplam sinyal",
-        ),
-        panel_card(
-            "Erken Haber Kaynak Skoru",
-            "Google News, Telegram ve izlenen muhabirlerin transfer iddialarını resmi teyide dönüşüm, gecikme ve olgunlaşmış teyitsiz sinyal oranıyla ölçer.",
-            f"source_performance_{SEASON}.html",
-            f"{source_performance.get('summary', {}).get('scored_sources', 0)} ölçülen kaynak",
         ),
         panel_card(
             "Transfer Sezonu Bağlam Raporu",

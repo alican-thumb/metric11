@@ -54,7 +54,7 @@ def build_search_queries() -> list[tuple[str, str]]:
             ("Yağız Sabuncuoğlu transfer", "transfer"),
             ("Ertan Süzgün transfer", "transfer"),
             ("Sports Digitale transfer", "transfer"),
-            ("Yakın Takip transfer", "transfer"),
+            ("Yusuf Günaydın transfer", "transfer"),
             ("Ekrem Konur Süper Lig transfer", "transfer"),
         ]
     )

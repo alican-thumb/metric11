@@ -4,7 +4,7 @@ from datetime import datetime, timezone
 from src.build_source_performance_report import build_report
 
 
-def evidence(source, tier, published_at, source_type="google_news"):
+def evidence(source, tier, published_at, source_type="google_news", **extra):
     return {
         "source": source,
         "source_tier": tier,
@@ -12,6 +12,7 @@ def evidence(source, tier, published_at, source_type="google_news"):
         "published_at": published_at,
         "title": "Transfer haberi",
         "link": "https://example.test/story",
+        **extra,
     }
 
 
@@ -146,6 +147,118 @@ class SourcePerformanceReportTests(unittest.TestCase):
 
         self.assertEqual(result["summary"]["official_events"], 1)
         self.assertEqual(result["summary"]["official_events_with_timestamp"], 1)
+
+    def test_explicit_reporter_attribution_creates_separate_media_observation(self):
+        intel = {
+            "generated_at": "2026-05-25T12:00:00+00:00",
+            "transfer_signals": 1,
+            "transfers": [
+                claim(
+                    "Ali Örnek",
+                    "Fenerbahçe",
+                    "RUMOR",
+                    [
+                        evidence(
+                            "Diken",
+                            "MEDIA",
+                            "2026-05-10T08:00:00+00:00",
+                            title="Sabuncuoğlu: Fenerbahçe Ali Örnek transferinde anlaşmaya vardı - Diken",
+                        )
+                    ],
+                )
+            ],
+        }
+
+        result = build_report(intel, now=datetime(2026, 5, 25, tzinfo=timezone.utc))
+        reporter = next(item for item in result["sources"] if item["source"] == "Yağız Sabuncuoğlu")
+        watch = next(item for item in result["reporter_watch"] if item["name"] == "Yağız Sabuncuoğlu")
+
+        self.assertEqual(reporter["source_type"], "attributed_media")
+        self.assertEqual(reporter["observations"], 1)
+        self.assertEqual(watch["attributed_observations"], 1)
+        self.assertNotEqual(watch["performance_status"], "ATTRIBUTION_PENDING")
+        self.assertFalse(any(item["name"] == "Yakın Takip" for item in result["reporter_watch"]))
+        self.assertTrue(any(item["name"] == "Yusuf Günaydın" for item in result["reporter_watch"]))
+
+    def test_official_first_observed_time_is_reported_as_bound_not_exact_lead(self):
+        intel = {
+            "generated_at": "2026-05-25T12:00:00+00:00",
+            "transfer_signals": 2,
+            "transfers": [
+                claim(
+                    "Ali Örnek",
+                    "Beşiktaş",
+                    "OFFICIAL",
+                    [
+                        evidence(
+                            "Beşiktaş Resmi Web",
+                            "OFFICIAL",
+                            None,
+                            "official_club",
+                            first_observed_at="2026-05-10T12:00:00+00:00",
+                        )
+                    ],
+                ),
+                claim(
+                    "Ali Örnek",
+                    "Beşiktaş",
+                    "RUMOR",
+                    [evidence("Haber Muhabiri", "MEDIA", "2026-05-10T08:00:00+00:00")],
+                ),
+            ],
+        }
+
+        result = build_report(intel)
+        row = next(item for item in result["sources"] if item["source"] == "Haber Muhabiri")
+
+        self.assertEqual(result["summary"]["official_events_with_timestamp"], 0)
+        self.assertEqual(result["summary"]["official_events_with_first_observed_timestamp"], 1)
+        self.assertEqual(row["average_lead_hours"], None)
+        self.assertEqual(row["average_first_seen_lead_hours"], 4.0)
+        self.assertEqual(row["status"], "FIRST_SEEN_BOUND")
+
+    def test_improved_direction_replaces_old_observation_instead_of_double_counting(self):
+        history = {
+            "observations": [
+                {
+                    "source": "Yağız Sabuncuoğlu",
+                    "source_tier": "ATTRIBUTED_MEDIA",
+                    "source_type": "attributed_media",
+                    "event_key": None,
+                    "player_name": "Ali Örnek",
+                    "to_club": None,
+                    "published_at": "2026-05-01T10:00:00+00:00",
+                    "title": "Sabuncuoğlu: Fenerbahçe Ali Örnek transferinde anlaşmaya vardı",
+                    "link": "https://example.test/claim",
+                }
+            ]
+        }
+        intel = {
+            "generated_at": "2026-05-25T12:00:00+00:00",
+            "transfer_signals": 1,
+            "transfers": [
+                claim(
+                    "Ali Örnek",
+                    "Fenerbahçe",
+                    "RUMOR",
+                    [
+                        evidence(
+                            "Diken",
+                            "MEDIA",
+                            "2026-05-01T10:00:00+00:00",
+                            title="Sabuncuoğlu: Fenerbahçe Ali Örnek transferinde anlaşmaya vardı",
+                            link="https://example.test/claim",
+                        )
+                    ],
+                )
+            ],
+        }
+
+        result = build_report(intel, history=history)
+        reporter = next(item for item in result["sources"] if item["source"] == "Yağız Sabuncuoğlu")
+
+        self.assertEqual(reporter["observations"], 1)
+        self.assertEqual(reporter["scoreable_claims"], 1)
 
 
 if __name__ == "__main__":

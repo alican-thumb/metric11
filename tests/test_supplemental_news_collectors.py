@@ -12,6 +12,8 @@ class SupplementalNewsCollectorTests(unittest.TestCase):
         self.assertIn("Çorum FK transfer", club_queries)
         self.assertIn("Erzurumspor FK transfer", club_queries)
         self.assertIn("Amedspor transfer", club_queries)
+        self.assertIn("Yusuf Günaydın transfer", club_queries)
+        self.assertNotIn("Yakın Takip transfer", club_queries)
         self.assertGreaterEqual(len(club_queries), 18)
 
     def test_telegram_team_channel_is_secondary_signal(self):

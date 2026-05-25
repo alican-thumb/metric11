@@ -225,6 +225,21 @@ class TransferIntelligenceTests(unittest.TestCase):
                 self.assertEqual(row["verification_status"], "REVIEW_REQUIRED")
                 self.assertIsNone(row["to_club"])
 
+    def test_media_signing_headline_keeps_explicit_destination_despite_current_squad(self):
+        source = {
+            "title": "Sabuncuoğlu: Fenerbahçe Matteo Guendouzi transferinde anlaşmaya vardı",
+            "summary": "",
+            "categories": ["transfer"],
+        }
+        player_index = {
+            "MATTEO GUENDOUZI": {"name": "Matteo Guendouzi", "club": "FENERBAHÇE A.Ş."},
+        }
+
+        row = rule_based_analyze(source, player_index)["transfer_rumors"][0]
+
+        self.assertEqual(row["to_club"], "Fenerbahçe")
+        self.assertIsNone(row["from_club"])
+
 
 if __name__ == "__main__":
     unittest.main()
