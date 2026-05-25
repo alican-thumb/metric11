@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Beşiktaş 2025-2026 Maç Önü Zeka Paneli</title>
+  <title>Beşiktaş 2025/26 Maç Önü</title>
   <style>
     :root {
       --bg: #f3f5f4;
@@ -235,7 +235,7 @@
     <nav class="topnav">
       <a href="football_intelligence_home.html">Merkez</a>
       <a href="football_command_center_2025_2026.html">Analiz</a>
-      <a class="active" href="besiktas_2025_2026_dashboard_chronological.html">Maç Önü</a>
+      <a class="active" href="all_teams_preview_dashboard_2025_2026.html">Maç Önü</a>
       <a href="transfer_recommendation_report_2025_2026.html">Scout</a>
       <a href="all_teams_preview_dashboard_2025_2026.html">Lig</a>
     </nav>
@@ -371,7 +371,7 @@
         <section>
           <h2>Transfer Etki Simülasyonu</h2>
           <table>
-            <thead><tr><th>Oyuncu</th><th>Rol</th><th>Gol Etkisi</th><th>Yeni Skor</th><th>BJK %</th></tr></thead>
+            <thead><tr><th>Oyuncu</th><th>Rol</th><th>Gol Etkisi</th><th>Yeni Skor</th><th>Takım %</th></tr></thead>
             <tbody id="transferImpact"></tbody>
           </table>
         </section>
@@ -406,7 +406,7 @@
     const pct = value => `%${Math.round(value * 100)}`;
     const setBar = (id, value) => document.getElementById(id).style.setProperty('--w', `${Math.round(value * 100)}%`);
     const esc = value => String(value ?? '').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;', "'": '&#39;'}[ch]));
-    const labels = { target: 'Beşiktaş', draw: 'Beraberlik', opponent: 'Rakip' };
+    const labels = { target: "Be\u015fikta\u015f", draw: 'Beraberlik', opponent: 'Rakip' };
     const actionLabels = {
       PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO: 'Korumalı taraf tahmini',
       KEEP_PICK_WITH_DRAW_WARNING: 'Beraberlik uyarılı tahmin',

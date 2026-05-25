@@ -201,11 +201,12 @@ def _build_ranking_rows(team_data: list[dict]) -> str:
         acc_color = _acc_color(acc)
         bar_w = round(acc * 100)
         slug = t["slug"]
-        index_link = f"previews_{slug}_{SEASON}_chronological/index.md"
+        dashboard_link = f"{slug}_{SEASON}_dashboard_chronological.html"
+        archive_link = f"previews_{slug}_{SEASON}_chronological/index.md"
         rows += (
             f"<tr data-team='{t['team'].lower()}'>"
             f"<td style='color:#627067;font-weight:600'>{rank}</td>"
-            f"<td style='font-weight:600;color:#132018'>{t['team']}</td>"
+            f"<td style='font-weight:600;color:#132018'><a href='{dashboard_link}' style='color:inherit;text-decoration:none'>{t['team']}</a></td>"
             f"<td>{s.get('generated_reports', 0)}</td>"
             f"<td>{s.get('big_match_reports', 0)}</td>"
             f"<td style='color:#bd2936'>{s.get('high_card_signal_reports', 0)}</td>"
@@ -215,7 +216,7 @@ def _build_ranking_rows(team_data: list[dict]) -> str:
             f"<div class='acc-bar'><div class='acc-fill' style='width:{bar_w}%;background:{acc_color}'></div></div>"
             f"</div>"
             f"</td>"
-            f"<td><a href='{index_link}'>arşiv →</a></td>"
+            f"<td><a href='{dashboard_link}'>panel →</a> <a href='{archive_link}' style='margin-left:8px;color:#627067'>arşiv</a></td>"
             f"</tr>"
         )
     return rows

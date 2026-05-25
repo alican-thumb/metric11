@@ -5,33 +5,78 @@ import json
 from html import escape
 from pathlib import Path
 
-from src.config import PROCESSED_DIR
+from src.config import PROCESSED_DIR, SEASON
+
+TEAM_DISPLAY_NAMES: dict[str, str] = {
+    "besiktas": "Beşiktaş",
+    "galatasaray": "Galatasaray",
+    "fenerbahce": "Fenerbahçe",
+    "trabzonspor": "Trabzonspor",
+    "basaksehir": "Başakşehir",
+    "alanyaspor": "Alanyaspor",
+    "samsunspor": "Samsunspor",
+    "goztepe": "Göztepe",
+    "konyaspor": "Konyaspor",
+    "rizespor": "Rizespor",
+    "gaziantep": "Gaziantep FK",
+    "kasimpasa": "Kasımpaşa",
+    "kocaelispor": "Kocaelispor",
+    "eyupspor": "Eyüpspor",
+    "genclerbirligi": "Gençlerbirliği",
+    "karagumruk": "Karagümrük",
+    "antalyaspor": "Antalyaspor",
+    "kayserispor": "Kayserispor",
+}
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Mac onu raporlari icin statik HTML dashboard uretir.")
-    parser.add_argument("--index", default=str(PROCESSED_DIR / "previews_besiktas_2025_2026_chronological" / "index.json"))
+    parser.add_argument("--team-slug", default="besiktas")
+    parser.add_argument("--team-name", default=None)
+    parser.add_argument("--index", default=None)
     parser.add_argument("--goal-backtest", default=str(PROCESSED_DIR / "goal_candidate_backtest_2025_2026.json"))
-    parser.add_argument("--output", default=str(PROCESSED_DIR / "besiktas_2025_2026_dashboard_chronological.html"))
+    parser.add_argument("--output", default=None)
+    parser.add_argument("--all-teams", action="store_true", help="Tüm 18 takım için dashboard üret")
     args = parser.parse_args()
 
-    index_path = Path(args.index)
+    if args.all_teams:
+        for slug, name in TEAM_DISPLAY_NAMES.items():
+            _build_for_team(slug, name, args.goal_backtest)
+    else:
+        slug = args.team_slug
+        name = args.team_name or TEAM_DISPLAY_NAMES.get(slug, slug.title())
+        _build_for_team(slug, name, args.goal_backtest, args.index, args.output)
+
+
+def _build_for_team(slug: str, team_name: str, goal_backtest_path_str: str, index_path_str: str | None = None, output_path_str: str | None = None) -> None:
+    index_path = Path(index_path_str) if index_path_str else PROCESSED_DIR / f"previews_{slug}_{SEASON}_chronological" / "index.json"
+    output_path = Path(output_path_str) if output_path_str else PROCESSED_DIR / f"{slug}_{SEASON}_dashboard_chronological.html"
+
+    if not index_path.exists():
+        print(f"Atlandı ({team_name}): {index_path} bulunamadı")
+        return
+
     index_payload = json.loads(index_path.read_text(encoding="utf-8"))
     goal_backtest = {}
-    goal_backtest_path = Path(args.goal_backtest)
+    goal_backtest_path = Path(goal_backtest_path_str)
     if goal_backtest_path.exists():
         goal_backtest = json.loads(goal_backtest_path.read_text(encoding="utf-8")).get("summary", {})
     previews = []
     for report in index_payload["reports"]:
-        preview = json.loads(Path(report["json_path"]).read_text(encoding="utf-8"))
+        # json_path may be an absolute CI path; resolve relative to index dir
+        p = Path(report["json_path"])
+        if not p.exists():
+            p = index_path.parent / p.name
+        if not p.exists():
+            continue
+        preview = json.loads(p.read_text(encoding="utf-8"))
         previews.append(preview)
 
-    output_path = Path(args.output)
-    output_path.write_text(build_html(index_payload["summary"], previews, goal_backtest), encoding="utf-8")
+    output_path.write_text(build_html(index_payload["summary"], previews, goal_backtest, team_name), encoding="utf-8")
     print(output_path)
 
 
-def build_html(summary: dict, previews: list[dict], goal_backtest: dict) -> str:
+def build_html(summary: dict, previews: list[dict], goal_backtest: dict, team_name: str = "Beşiktaş") -> str:
     data_json = (
         json.dumps({"summary": summary, "goal_backtest": goal_backtest, "previews": previews}, ensure_ascii=False)
         .replace("<", "\\u003c")
@@ -47,7 +92,7 @@ def build_html(summary: dict, previews: list[dict], goal_backtest: dict) -> str:
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Beşiktaş 2025-2026 Maç Önü Zeka Paneli</title>
+  <title>{escape(team_name)} 2025/26 Maç Önü</title>
   <style>
     :root {{
       --bg: #f3f5f4;
@@ -279,14 +324,14 @@ def build_html(summary: dict, previews: list[dict], goal_backtest: dict) -> str:
     <nav class="topnav">
       <a href="football_intelligence_home.html">Merkez</a>
       <a href="football_command_center_2025_2026.html">Analiz</a>
-      <a class="active" href="besiktas_2025_2026_dashboard_chronological.html">Maç Önü</a>
+      <a class="active" href="all_teams_preview_dashboard_2025_2026.html">Maç Önü</a>
       <a href="transfer_recommendation_report_2025_2026.html">Scout</a>
       <a href="all_teams_preview_dashboard_2025_2026.html">Lig</a>
     </nav>
   </div>
   <header>
     <div>
-      <h1>Beşiktaş maç odası</h1>
+      <h1>{escape(team_name)} maç odası</h1>
       <p>2025/26 sezonu: maç seç, olasılıkları, gol adaylarını, kadro kararını ve eksik oyuncu etkisini birlikte incele.</p>
     </div>
   </header>
@@ -306,7 +351,7 @@ def build_html(summary: dict, previews: list[dict], goal_backtest: dict) -> str:
             <span id="fixtureMeta"></span>
           </div>
           <div class="prob-grid">
-            <div class="prob"><label>Beşiktaş kazanır</label><b id="pWin"></b><div class="bar"><i id="pWinBar"></i></div></div>
+            <div class="prob"><label>{escape(team_name)} kazanır</label><b id="pWin"></b><div class="bar"><i id="pWinBar"></i></div></div>
             <div class="prob"><label>Beraberlik</label><b id="pDraw"></b><div class="bar"><i id="pDrawBar"></i></div></div>
             <div class="prob"><label>Rakip kazanır</label><b id="pLose"></b><div class="bar"><i id="pLoseBar"></i></div></div>
           </div>
@@ -344,7 +389,7 @@ def build_html(summary: dict, previews: list[dict], goal_backtest: dict) -> str:
           <p><span class="muted">Beraberlik riski:</span> <strong id="drawRisk"></strong></p>
           <p><span class="muted">Büyük maç profili:</span> <strong id="bigMatchProfile"></strong></p>
           <p><span class="muted">Kart sinyali:</span> <span id="cardSignal" class="pill"></span></p>
-          <p><span class="muted">Beşiktaş kart beklentisi:</span> <strong id="cardExpectation"></strong></p>
+          <p><span class="muted">{escape(team_name)} kart beklentisi:</span> <strong id="cardExpectation"></strong></p>
           <p><span class="muted">Güven:</span> <strong id="confidence"></strong></p>
         </section>
         <section>
@@ -365,7 +410,7 @@ def build_html(summary: dict, previews: list[dict], goal_backtest: dict) -> str:
         <section>
           <h2>Takım Gücü Katmanı</h2>
           <table>
-            <thead><tr><th>Başlık</th><th>Beşiktaş</th><th>Rakip</th></tr></thead>
+            <thead><tr><th>Başlık</th><th>{escape(team_name)}</th><th>Rakip</th></tr></thead>
             <tbody id="teamStrength"></tbody>
           </table>
         </section>
@@ -387,7 +432,7 @@ def build_html(summary: dict, previews: list[dict], goal_backtest: dict) -> str:
         <section>
           <h2>Transfer Etki Simülasyonu</h2>
           <table>
-            <thead><tr><th>Oyuncu</th><th>Rol</th><th>Gol Etkisi</th><th>Yeni Skor</th><th>BJK %</th></tr></thead>
+            <thead><tr><th>Oyuncu</th><th>Rol</th><th>Gol Etkisi</th><th>Yeni Skor</th><th>Takım %</th></tr></thead>
             <tbody id="transferImpact"></tbody>
           </table>
         </section>
@@ -422,7 +467,7 @@ def build_html(summary: dict, previews: list[dict], goal_backtest: dict) -> str:
     const pct = value => `%${{Math.round(value * 100)}}`;
     const setBar = (id, value) => document.getElementById(id).style.setProperty('--w', `${{Math.round(value * 100)}}%`);
     const esc = value => String(value ?? '').replace(/[&<>"']/g, ch => ({{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;', "'": '&#39;'}}[ch]));
-    const labels = {{ target: 'Beşiktaş', draw: 'Beraberlik', opponent: 'Rakip' }};
+    const labels = {{ target: {json.dumps(team_name)}, draw: 'Beraberlik', opponent: 'Rakip' }};
     const actionLabels = {{
       PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO: 'Korumalı taraf tahmini',
       KEEP_PICK_WITH_DRAW_WARNING: 'Beraberlik uyarılı tahmin',

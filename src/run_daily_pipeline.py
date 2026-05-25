@@ -45,7 +45,7 @@ DEFAULT_COMMANDS = [
     ["python", "-m", "src.build_goal_candidate_segment_backtest"],
     ["python", "-m", "src.build_data_quality_scorecard"],
     ["python", "-m", "src.build_data_catalog"],
-    ["python", "-m", "src.build_dashboard"],
+    ["python", "-m", "src.build_dashboard", "--all-teams"],
     ["python", "-m", "src.build_backtest_dashboard"],
     ["python", "-m", "src.build_team_needs_dashboard"],
     ["python", "-m", "src.build_enriched_scout_dashboard"],
