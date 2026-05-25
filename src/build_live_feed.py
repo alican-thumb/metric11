@@ -93,11 +93,18 @@ def _fmt_date(published_at: str | None) -> str:
         return ""
     try:
         raw = published_at.strip()
-        if "." in raw[:5]:
-            from datetime import date
+        # Format: "21.5.2026" veya "21.5.2026 14:30"
+        if raw and raw[0].isdigit() and "." in raw[:6] and not raw.startswith("202"):
             parts = raw.split(" ")[0].split(".")
             d, m, y = int(parts[0]), int(parts[1]), int(parts[2])
             dt = datetime(y, m, d, tzinfo=timezone.utc)
+        # Format: RFC 2822 "Sat, 24 May 2026 ..."
+        elif "," in raw[:4]:
+            from email.utils import parsedate_to_datetime
+            dt = parsedate_to_datetime(raw)
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=timezone.utc)
+        # Format: ISO 8601 "2026-05-24T14:30:00Z" veya "2026-05-24"
         else:
             dt = datetime.fromisoformat(raw.replace("Z", "+00:00"))
             if dt.tzinfo is None:
