@@ -93,15 +93,17 @@ yapılmaz.
 
 ## Uygulama Sırası
 
-1. `X_BEARER_TOKEN` ve kontrollü okuma bütçesi tanımlanarak yapılandırılmış X
-   hesaplarında ilk başarılı snapshot'ı üret; hesap erişim/handle doğrulama
-   durumu snapshot içinde saklanır.
-2. TFF ve resmi kulüp kaynaklarıyla availability şemasını tüm 18 takıma aç.
-3. `@trtspor`, `@SportsDigitale` ve `@yagosabuncuoglu` kaynaklarından gelen
+1. Anahtar gerektirmeyen `src.collect_official_club_news` collector'ı ile
+   18 kulübün resmi web duyurularını günlük tara; erişim kapsamını ve resmi
+   transfer teyitlerini snapshot içinde sakla.
+2. Opsiyonel sosyal hız/zenginleştirme gerektiğinde `X_BEARER_TOKEN` ve
+   kontrollü okuma bütçesiyle X hesaplarında snapshot üret.
+3. TFF ve resmi kulüp kaynaklarıyla availability şemasını tüm 18 takıma aç.
+4. `@trtspor`, `@SportsDigitale` ve `@yagosabuncuoglu` kaynaklarından gelen
    verinin yalnız `secondary_signal` olarak kaldığını testle güvenceye al.
-4. Nitter geliştirme fallback'i olarak ayrıldı; ilk gerçek X API snapshot'ı
+5. Nitter geliştirme fallback'i olarak ayrıldı; ilk gerçek X API snapshot'ı
    sonrasında saklama ve display politikasını gerçek veriyle denetle.
-5. Kaynak bazlı kapsama raporu üret: hesap erişim başarısı, bulunan resmi
+6. Kaynak bazlı kapsama raporu üret: hesap erişim başarısı, bulunan resmi
    sakat/ceza sinyali, doğrulanan transfer ve çözülmeyen haber kuyruğu.
 
 ## Doğrulama Kaynakları

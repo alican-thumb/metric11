@@ -139,6 +139,12 @@ post okumaları kullanıma göre ücretlendirilebilir; token yalnız kontrollü
 günlük çalıştırmada tanımlanmalıdır. Token yoksa Nitter geliştirme fallback'i
 denenir ve başarısızlık da snapshot durum bilgisi olarak kaydedilir.
 
+Resmi teyit için anahtarsız birincil yol
+`python -m src.collect_official_club_news` komutudur. Bu collector Süper Lig'deki
+18 kulübün resmi haber sayfasını tarar, erişemediği kaynağı kapsam metriğinde
+gösterir ve resmi transfer duyurularını analiz kapısına taşır. X token'ı bu
+yolun çalışması için gerekli değildir.
+
 ## Onemli Paneller
 
 - `data/processed/besiktas_2025_2026_dashboard_chronological.html`

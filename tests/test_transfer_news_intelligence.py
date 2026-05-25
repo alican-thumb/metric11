@@ -78,6 +78,22 @@ class TransferIntelligenceTests(unittest.TestCase):
         self.assertEqual(result["transfers"][0]["verification_status"], "OFFICIAL")
         self.assertTrue(result["transfers"][0]["model_use"])
 
+    def test_official_club_website_announcement_is_official(self):
+        transfer = {
+            "player_name": "Ali Örnek",
+            "from_club": "ALANYASPOR",
+            "to_club": "BEŞİKTAŞ A.Ş.",
+            "signal_type": "signing",
+            "confidence": "HIGH",
+        }
+        result = build_intelligence(
+            [article("club-web", "Beşiktaş Resmi Web", transfer, source_type="official_club", account_type="official")],
+            {},
+        )
+
+        self.assertEqual(result["transfers"][0]["verification_status"], "OFFICIAL")
+        self.assertTrue(result["transfers"][0]["model_use"])
+
     def test_same_current_and_target_team_requires_review(self):
         transfer = {
             "player_name": "Ali Örnek",

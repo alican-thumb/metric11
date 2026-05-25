@@ -33,6 +33,15 @@ class DataCatalogNewsSourceTests(unittest.TestCase):
                 },
             },
         )
+        self.write_processed(
+            "news_official_clubs_latest_2025_2026.json",
+            {
+                "collection_status": "PARTIAL_SUCCESS",
+                "configured_sources": 18,
+                "successful_sources": 10,
+                "total_articles": 22,
+            },
+        )
 
     def tearDown(self):
         data_catalog.PROCESSED_DIR = self.original_processed_dir
@@ -51,12 +60,18 @@ class DataCatalogNewsSourceTests(unittest.TestCase):
         markdown = data_catalog.build_markdown(catalog)
 
         self.assertIn("210 ham haber; 58 ilgili analiz; 8 transfer iddiası", sources["RSS_NEWS"]["coverage"])
+        self.assertEqual(
+            sources["OFFICIAL_CLUB_NEWS"]["coverage"],
+            "22 duyuru; 10/18 kulüp sitesi erişilebilir; durum=PARTIAL_SUCCESS",
+        )
+        self.assertEqual(catalog["coverage"]["news_official_articles"], 22)
         self.assertIn("başarılı snapshot henüz yok", sources["X_SOCIAL_SIGNAL"]["coverage"])
         self.assertEqual(catalog["coverage"]["news_twitter_posts"], 0)
         self.assertIn(
             "Transfer haber iddiası: 8 | resmi=0, çoklu kaynak=0, söylenti=0, inceleme gerekli=8",
             markdown,
         )
+        self.assertIn("Resmi kulüp web duyurusu: 22 | erişilebilir site=10/18 | durum=PARTIAL_SUCCESS", markdown)
 
     def test_empty_twitter_collection_does_not_imply_confirmation_data(self):
         self.write_processed(

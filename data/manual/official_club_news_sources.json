@@ -13,22 +13,52 @@
         }
       ]
     },
-    {"team": "GALATASARAY A.Ş.", "name": "Galatasaray Resmi Web", "url": "https://www.galatasaray.org/haber/futbol"},
+    {"team": "GALATASARAY A.Ş.", "name": "Galatasaray Resmi Web", "url": "https://www.galatasaray.org/haberler/futbol/43?q=DUYURU"},
     {"team": "FENERBAHÇE A.Ş.", "name": "Fenerbahçe Resmi Web", "url": "https://www.fenerbahce.org/haberler/futbol"},
     {"team": "TRABZONSPOR A.Ş.", "name": "Trabzonspor Resmi Web", "url": "https://www.trabzonspor.org.tr/haberler?team=trabzonspor"},
     {"team": "RAMS BAŞAKŞEHİR F.K.", "name": "Başakşehir Resmi Web", "url": "https://ibfk.com.tr/haberler"},
     {"team": "CORENDON ALANYASPOR", "name": "Alanyaspor Resmi Web", "url": "https://www.alanyaspor.org.tr/Haberler"},
-    {"team": "SAMSUNSPOR", "name": "Samsunspor Resmi Web", "url": "https://www.samsunspor.org.tr/haberler"},
+    {"team": "SAMSUNSPOR", "name": "Samsunspor Resmi Web", "url": "https://www.samsunspor.org.tr/"},
     {"team": "GÖZTEPE", "name": "Göztepe Resmi Web", "url": "https://www.goztepe.org.tr/Haberler"},
-    {"team": "TÜMOSAN KONYASPOR", "name": "Konyaspor Resmi Web", "url": "https://www.konyaspor.org.tr/Haberler"},
-    {"team": "ÇAYKUR RİZESPOR", "name": "Çaykur Rizespor Resmi Web", "url": "https://www.caykurrizespor.org.tr/Haberler"},
+    {
+      "team": "TÜMOSAN KONYASPOR",
+      "name": "Konyaspor Resmi Web",
+      "url": "https://www.konyaspor.org.tr/",
+      "seed_urls": [
+        {
+          "title": "Eren Cemali Yağmur'a imza töreni düzenledik",
+          "url": "https://www.konyaspor.org.tr/Haber/eren-cemali-yagmura-imza-toreni-duzenledik/11000"
+        }
+      ]
+    },
+    {"team": "ÇAYKUR RİZESPOR", "name": "Çaykur Rizespor Resmi Web", "url": "https://www.caykurrizespor.org.tr/index.php"},
     {"team": "GAZİANTEP FK", "name": "Gaziantep FK Resmi Web", "url": "https://www.gaziantepfk.org/haberler"},
     {"team": "KASIMPAŞA S.K.", "name": "Kasımpaşa Resmi Web", "url": "https://www.kasimpasa.com.tr/tr/haberler"},
     {"team": "KOCAELİSPOR", "name": "Kocaelispor Resmi Web", "url": "https://www.kocaelispor.com.tr/haberler"},
     {"team": "İKAS EYÜPSPOR", "name": "Eyüpspor Resmi Web", "url": "https://www.eyupspor.org.tr/haberler"},
     {"team": "GENÇLERBİRLİĞİ S.K.", "name": "Gençlerbirliği Resmi Web", "url": "https://genclerbirligi.org.tr/haberler"},
-    {"team": "FATİH KARAGÜMRÜK", "name": "Fatih Karagümrük Resmi Web", "url": "https://www.karagumruk.com/haberler"},
-    {"team": "HESAP.COM ANTALYASPOR", "name": "Antalyaspor Resmi Web", "url": "https://www.antalyaspor.com.tr/tr/haberler"},
-    {"team": "ZECORNER KAYSERİSPOR", "name": "Kayserispor Resmi Web", "url": "https://www.kayserispor.org.tr/haberler"}
+    {"team": "FATİH KARAGÜMRÜK", "name": "Fatih Karagümrük Resmi Web", "url": "https://www.karagumruk.com/"},
+    {
+      "team": "HESAP.COM ANTALYASPOR",
+      "name": "Antalyaspor Resmi Web",
+      "url": "https://www.antalyaspor.com.tr/",
+      "seed_urls": [
+        {
+          "title": "Antalyaspor'umuzda Tanıtım ve İmza Töreni Yapıldı",
+          "url": "https://www.antalyaspor.com.tr/tr/futbol-haberleri/antalyasporumuzda-tanitim-ve-imza-toreni-yapildi.html"
+        }
+      ]
+    },
+    {
+      "team": "ZECORNER KAYSERİSPOR",
+      "name": "Kayserispor Resmi Web",
+      "url": "https://kayserispor.org.tr/",
+      "seed_urls": [
+        {
+          "title": "Kayserispor, Laszlo Benes'i transfer etti",
+          "url": "https://mail.kayserispor.org/public/index.php/transferler/kayserispor--laszlo-benes-i-transfer-etti"
+        }
+      ]
+    }
   ]
 }

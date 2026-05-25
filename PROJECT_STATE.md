@@ -1239,6 +1239,7 @@ Bir sonraki oturumda önce `PROJECT_STATE.md` okunmalı. Ardından öncelik:
 
 - RSS haber toplayıcısı eklendi (`src/collect_news_rss.py`): 6 Türk spor kaynağından 210+ makale/çalıştırma.
 - Twitter/X toplayıcısı genişletildi (`src/collect_news_twitter.py`): 18 resmi kulüp dahil 30 hesabı izler; `X_BEARER_TOKEN` varsa resmi X API v2 kullanıcı timeline'ını, yoksa yalnız geliştirme fallback'i olarak Nitter RSS'i kullanır.
+- Anahtar gerektirmeyen resmi kulüp duyuru collector'ı eklendi (`src/collect_official_club_news.py`): 18 Süper Lig kulübünün resmi web haber girişlerini tarar, erişim hatalarını kapsam metriğinde saklar ve resmi duyuruları doğrudan transfer teyit kapısına verir. X artık resmi teyidin zorunlu bağımlılığı değildir.
 - X collector erişim başarısız olsa bile durum snapshot'ı üretir. Mevcut yerel çıktı `x_api/MISSING_CREDENTIALS`: `0/30` başarılı hesap ve `0` gönderi; resmi sosyal teyit henüz haber analizine girmiyor.
 - Transfer haberleri kaynak teyit kapısından geçer: güncel 210 RSS kaydından analiz edilen 58 içerikte 8 iddia bulunur; `0` resmi, `0` çoklu kaynak, `8` inceleme gerekli ve teyitsiz kayıtların hiçbiri model/scout kararına aktarılmaz.
 - Haber analiz motoru yeniden yazıldı (`src/analyze_news_with_claude.py`): API anahtarı gerektirmeyen kural-tabanlı Türkçe NER sistemi; transfer/sakat/cezalı/yükseliş/sözleşme regex kalıpları, 691 oyuncu veritabanıyla eşleşme. Claude Haiku isteğe bağlı iyileştirici olarak eklendi.

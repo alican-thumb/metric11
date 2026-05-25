@@ -77,12 +77,14 @@ def collect_sources(sources: list[dict], max_items: int, delay_seconds: float, t
             "name": source["name"],
             "url": source["url"],
             "fetched": 0,
+            "warnings": [],
             "error": None,
         }
         try:
-            articles = fetch_source(source, max_items, timeout_seconds)
+            articles, warnings = fetch_source(source, max_items, timeout_seconds)
             all_articles.extend(articles)
             stat["fetched"] = len(articles)
+            stat["warnings"] = warnings
             print(f"  {source['name']}: {len(articles)} duyuru")
         except Exception as exc:  # noqa: BLE001
             stat["error"] = str(exc)[:180]
@@ -108,25 +110,39 @@ def collect_sources(sources: list[dict], max_items: int, delay_seconds: float, t
     }
 
 
-def fetch_source(source: dict, max_items: int, timeout_seconds: float = 8) -> list[dict]:
-    response = requests.get(source["url"], headers=HEADERS, timeout=timeout_seconds)
-    response.raise_for_status()
-    candidates = extract_candidate_links(response.text, source["url"])
+def fetch_source(source: dict, max_items: int, timeout_seconds: float = 8) -> tuple[list[dict], list[str]]:
+    warnings = []
     candidates = [
         (seed.get("title", ""), seed["url"])
         for seed in source.get("seed_urls", [])
         if seed.get("url")
-    ] + candidates
+    ]
+    listing_accessible = False
+    try:
+        response = requests.get(source["url"], headers=HEADERS, timeout=timeout_seconds)
+        response.raise_for_status()
+        listing_accessible = True
+        candidates.extend(extract_candidate_links(response.text, source["url"]))
+    except Exception as exc:  # noqa: BLE001
+        warnings.append(f"listing: {str(exc)[:120]}")
+
     articles = []
+    detail_accessible = False
     seen_links = set()
     for title, link in candidates:
         if link in seen_links or len(articles) >= max_items:
             continue
         seen_links.add(link)
-        article = fetch_article(source, title, link, timeout_seconds)
-        if article:
-            articles.append(article)
-    return articles
+        try:
+            article = fetch_article(source, title, link, timeout_seconds)
+            detail_accessible = True
+            if article:
+                articles.append(article)
+        except Exception as exc:  # noqa: BLE001
+            warnings.append(f"article {link}: {str(exc)[:120]}")
+    if not listing_accessible and not detail_accessible:
+        raise RuntimeError("; ".join(warnings) or "resmi kaynak erişilemedi")
+    return articles, warnings
 
 
 def extract_candidate_links(html: str, base_url: str) -> list[tuple[str, str]]:
