@@ -275,7 +275,6 @@ def build_html(summary: dict, previews: list[dict], goal_backtest: dict) -> str:
       <a class="active" href="besiktas_2025_2026_dashboard_chronological.html">Maç Önü</a>
       <a href="transfer_recommendation_report_2025_2026.html">Scout</a>
       <a href="all_teams_preview_dashboard_2025_2026.html">Lig</a>
-      <a href="system_status.html">Durum</a>
     </nav>
   </div>
   <header>

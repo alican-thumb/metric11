@@ -113,13 +113,13 @@ def build_html() -> str:
         ),
         panel_card(
             "Haber İstihbaratı",
-            "Türk spor basınından otomatik haber akışı. Transfer dedikoduları, sakat/cezalı sinyalleri ve kadro haberleri Claude AI ile yapılandırılıp oyuncu ve takım verisine bağlanır.",
+            "Türk spor basınından otomatik haber akışı. Transfer iddiaları, sakat/cezalı sinyalleri ve kadro haberleri kaynak güveniyle sınıflandırılıp oyuncu ve takım verisine bağlanır.",
             f"news_intelligence_dashboard_{SEASON}.html",
-            f"{news_intel.get('total_articles', 0)} makale · {news_intel.get('transfer_signals', 0)} transfer sinyali",
+            f"{news_intel.get('total_articles', 0)} makale · {news_intel.get('transfer_signals', 0)} haber iddiası",
         ),
         panel_card(
             "Transfer Sezonu Bağlam Raporu",
-            "Yaz 2026 transfer penceresine hazırlık: sözleşmesi biten yüksek değerli oyuncular, son yıl kontrat adayları, yükselen takım ihtiyaçları ve aktif transfer sinyalleri.",
+            "Yaz 2026 transfer penceresine hazırlık: sözleşmesi biten oyuncular, son yıl kontrat adayları ve resmi teyit bekleyen transfer haber iddiaları.",
             f"transfer_season_context_{SEASON}.html",
             f"{transfer_season.get('summary', {}).get('free_agents_count', 0)} serbest kalacak · {transfer_season.get('summary', {}).get('final_year_count', 0)} son yıl",
         ),
@@ -304,7 +304,6 @@ def build_html() -> str:
       <a href="besiktas_2025_2026_dashboard_chronological.html">Maç Önü</a>
       <a href="transfer_recommendation_report_2025_2026.html">Scout</a>
       <a href="all_teams_preview_dashboard_2025_2026.html">Lig</a>
-      <a href="system_status.html">Durum</a>
     </nav>
   </div>
   <header>
@@ -349,6 +348,7 @@ def build_html() -> str:
       <summary>Sistem ve veri kalitesi araçları</summary>
       <div style="padding:0 0 14px;">
         <div class="cards">{admin_section}</div>
+        <div style="padding:0 14px 4px;"><a href="system_status.html" style="font-size:13px;color:var(--green);font-weight:600;">Pipeline Durum Sayfası →</a></div>
       </div>
     </details>
     <div class="split">
