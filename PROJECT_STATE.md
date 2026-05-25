@@ -1308,3 +1308,15 @@ Bir sonraki oturumda önce `PROJECT_STATE.md` okunmalı. Ardından öncelik:
   - `index.html` artık gündem sayfasına yönlendiriyor.
 - `html_utils.py` ve `build_transfer_tracker.py` navı güncellendi: Gündem ilk sıraya taşındı.
 - Pipeline ve `news-refresh.yml`'e eklendi.
+
+## 2026-05-25 Erken Haber Kaynak Performansı
+
+- `src/build_source_performance_report.py` eklendi. Rapor, yönü belirli transfer iddialarını resmi kulüp duyurularıyla eşleyerek kaynak bazında resmiye dönüşüm, ölçülebilen erken yayın süresi ve `14` gün sonra halen teyitsiz kalan iddialar için yanlış-alarm vekili üretir.
+- `data/processed/source_claim_history_2025_2026.json` kalıcı ilk-sinyal defteridir. Güncel haber snapshot'ında kaybolan resmi olay veya erken iddia geçmişten silinmez; sonraki resmi teyit geldiğinde ilk görüldüğü zamanla eşleştirilebilir.
+- Google News kapsamı `18` aktif lig takımı, `3` genel konu ve `5` muhabir/underground izleme sorgusu olmak üzere `26/26` başarılı sorguya, `381` habere çıktı. Yağız Sabuncuoğlu, Ertan Süzgün, Sports Digitale, Yakın Takip ve Ekrem Konur sorguları ayrı ayrı `15` arama bulgusu üretti.
+- Muhabir sorguları yalnız keşif sinyalidir: Google sonuçlarında açık kaynak atfı bulunmadan haber bir muhabirin başarı veya yanlış alarm skoruna yazılmaz. X snapshot'ı halen `MISSING_CREDENTIALS` ve `0` gönderi olduğundan Yağız Sabuncuoğlu ile Ertan Süzgün raporda `X_DATA_UNAVAILABLE` olarak görünür.
+- Son performans çıktısı: `54` transfer sinyali, tarihçe defterinde korunan `3` resmi olay, `25` gözlenen kaynak, `46` korunan ilk iddia gözlemi ve `2` skorlanabilen kaynak. Kanal görünümü medya katmanında `44`, Telegram'da `2`, X'te `0` iddia gözlemi tutar.
+- Resmi web duyurularındaki üç olayın hiçbirinde ayrıştırılabilir yayın saati bulunmadığından ölçülebilir erken-haber süresi şimdilik `0`dır. Saat verisi olmayan resmi teyit için tahmini saat üretilmez.
+- Mevcut olgunlaşmış örneklerde Google News/medya ve Telegram kanal özetleri `%100` yanlış-alarm vekili gösterir; bu oran kesin yanlış haber kararı değil, `14` günden eski ve henüz resmi teyide dönüşmemiş yönü belirli iddiaların ölçümüdür.
+- Çıktılar: `data/processed/source_performance_2025_2026.{json,md,html}`. Rapor günlük pipeline ve haber yenileme workflow'una bağlıdır; ürün ana sayfası, komuta merkezi ve gündem ekranı rapora erişim verir.
+- Doğrulama: `python -m compileall -q src tests`, `python -m unittest discover -s tests -p 'test_*.py'` ve `git diff --check` başarılı; birim test paketi `30/30` geçer.
