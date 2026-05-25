@@ -34,8 +34,8 @@ jobs:
 
       - name: Commit and push
         run: |
-          git config --global user.email "pipeline@metric11.app"
-          git config --global user.name "metric11 pipeline"
+          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+          git config --global user.name "${{ github.actor }}"
           git add data/processed/
           git diff --staged --quiet && echo "No changes" || \
             git commit -m "chore: refresh $(date -u +%Y-%m-%dT%H:%M:%SZ) [skip ci]"
