@@ -49,7 +49,7 @@ def _window_state() -> tuple[str, str, str, str]:
             "closed",
             "background:linear-gradient(90deg,#374151,#1f2937);border-bottom:1px solid #4b5563",
             "background:#9ca3af",
-            "<strong>Transfer penceresi kapandı</strong> — 2025/26 sezonu transferleri tamamland&#x131;",
+            "<strong>Transfer penceresi kapandı</strong> — 2025/26 sezonu transferleri tamamlandı",
         )
     if now >= WINDOW_OPEN_DATE:
         days_left = (WINDOW_CLOSE_DATE - now).days
@@ -57,14 +57,14 @@ def _window_state() -> tuple[str, str, str, str]:
             "open",
             "background:linear-gradient(90deg,#14532d,#166534);border-bottom:1px solid #16a34a",
             "background:#4ade80",
-            f"<strong>Transfer penceresi a&#x15f;&#x131;k</strong> &#x2014; {days_left} g&#xfc;n kald&#x131; (1 Haz &ndash; 31 A&#x11f;u 2026)",
+            f"<strong>Transfer penceresi açık</strong> — {days_left} gün kaldı (1 Haz – 31 Ağu 2026)",
         )
     days_left = (WINDOW_OPEN_DATE - now).days
     return (
         "countdown",
         "background:linear-gradient(90deg,#1e3a5f,#0f2a4a);border-bottom:1px solid #1e40af",
         "background:#60a5fa",
-        f"Transfer penceresi <strong>{days_left} g&#xfc;n sonra</strong> a&#x15f;&#x131;l&#x131;yor (1 Haziran 2026)",
+        f"Transfer penceresi <strong>{days_left} gün sonra</strong> açılıyor (1 Haziran 2026)",
     )
 
 
@@ -114,11 +114,11 @@ def _article_html(a: dict) -> str:
     age   = _fmt_date(a.get("published_at"))
     tag   = ""
     if cat == "transfer":
-        tag = "<span style='font-size:10px;color:#d97706;font-weight:700'>&#x27f3; TRANSFER</span> "
+        tag = "<span style='font-size:10px;color:#d97706;font-weight:700'>⟳ TRANSFER</span> "
     elif cat == "injury":
-        tag = "<span style='font-size:10px;color:#dc2626;font-weight:700'>&#x2695; SAKAT</span> "
+        tag = "<span style='font-size:10px;color:#dc2626;font-weight:700'>⚕ SAKAT</span> "
     elif cat == "suspension":
-        tag = "<span style='font-size:10px;color:#9333ea;font-weight:700'>&#x1f7e5; CEZA</span> "
+        tag = "<span style='font-size:10px;color:#9333ea;font-weight:700'>🟥 CEZA</span> "
 
     age_html = f"<span style='font-size:11px;color:var(--muted);margin-left:auto'>{escape(age)}</span>" if age else ""
     anchor = f'<a href="{link}" target="_blank" style="color:var(--ink);text-decoration:none;line-height:1.4">{tag}{title}</a>' if link else f"{tag}{title}"
@@ -218,9 +218,9 @@ def build_html() -> str:
 </head>
 <body>
 <div class="topbar">
-  <a class="brand" href="/"><b>11</b> metric11<span class="slbl">S&#xfc;per Lig {SEASON_LABEL}</span></a>
+  <a class="brand" href="/"><b>11</b> metric11<span class="slbl">Süper Lig {SEASON_LABEL}</span></a>
   <nav class="topnav">
-    <a class="active" href="/">G&#xfc;ndem</a>
+    <a class="active" href="/">Gündem</a>
     <a href="transfer_tracker_{SEASON}.html">Transferler</a>
     <a href="all_teams_preview_dashboard_{SEASON}.html">Maç Önü</a>
     <a href="transfer_recommendation_report_{SEASON}.html">Scout</a>
@@ -229,7 +229,7 @@ def build_html() -> str:
 </div>
 <div class="window-banner" style="{banner_css}">
   <div class="window-dot" style="{dot_css}"></div>
-  <span>{window_msg} &middot; G&#xfc;ncelleme: {now_str}</span>
+  <span>{window_msg} · Güncelleme: {now_str}</span>
 </div>
 <div class="main">
   <div>
@@ -237,19 +237,19 @@ def build_html() -> str:
       {_pill(str(official_count), "Resmi Transfer", "#16a34a")}
       {_pill(str(signals_count), "Transfer Sinyali", "#d97706")}
       {_pill(str(free_agents), "Serbest Kalacak", "#2563eb")}
-      {_pill(str(final_year), "Son Y&#x131;l Kontrat", "#7c3aed")}
+      {_pill(str(final_year), "Son Yıl Kontrat", "#7c3aed")}
     </div>
     <div class="panel">
       <h2>Transferler</h2>
-      <div class="sub">Resmi &middot; Do&#x11f;rulanm&#x131;&#x15f; &middot; TM Onayl&#x131;</div>
+      <div class="sub">Resmi · Doğrulanmış · TM Onaylı</div>
       {transfers_html}
-      <a class="see-more" href="transfer_tracker_{SEASON}.html">T&#xfc;m transfer takibine git &#x2192;</a>
+      <a class="see-more" href="transfer_tracker_{SEASON}.html">Tüm transfer takibine git →</a>
     </div>
     <div class="panel" style="margin-top:16px">
       <h2>Haber Sinyalleri</h2>
-      <div class="sub">Son 14 g&#xfc;n &middot; Bas&#x131;n + Resmi Kul&#xfc;p + Google News</div>
+      <div class="sub">Son 14 gün · Basın + Resmi Kulüp + Google News</div>
       {articles_html}
-      <a class="see-more" href="news_intelligence_dashboard_{SEASON}.html">Detayl&#x131; haber analizi &#x2192;</a>
+      <a class="see-more" href="news_intelligence_dashboard_{SEASON}.html">Detaylı haber analizi →</a>
     </div>
   </div>
   <div style="display:flex;flex-direction:column;gap:16px">
@@ -257,14 +257,14 @@ def build_html() -> str:
       <h2 style="margin-bottom:14px">Analiz Platformu</h2>
       <div style="font-size:10px;font-weight:700;color:var(--muted);letter-spacing:.06em;margin-bottom:6px;text-transform:uppercase">Transfer &amp; Kadro</div>
       <div style="display:flex;flex-direction:column;gap:7px;margin-bottom:14px">
-        <a href="transfer_recommendation_report_{SEASON}.html" style="color:var(--green);text-decoration:none;font-weight:600">&#x2192; Tak&#x131;m transfer &#xf6;nerileri</a>
-        <a href="transfer_season_context_{SEASON}.html" style="color:var(--green);text-decoration:none">&#x2192; Serbest kalacak oyuncular</a>
-        <a href="transfer_tracker_{SEASON}.html" style="color:var(--green);text-decoration:none">&#x2192; Transfer takip listesi</a>
+        <a href="transfer_recommendation_report_{SEASON}.html" style="color:var(--green);text-decoration:none;font-weight:600">→ Takım transfer önerileri</a>
+        <a href="transfer_season_context_{SEASON}.html" style="color:var(--green);text-decoration:none">→ Serbest kalacak oyuncular</a>
+        <a href="transfer_tracker_{SEASON}.html" style="color:var(--green);text-decoration:none">→ Transfer takip listesi</a>
       </div>
-      <div style="font-size:10px;font-weight:700;color:var(--muted);letter-spacing:.06em;margin-bottom:6px;text-transform:uppercase">Ma&#xe7; &amp; Tahmin</div>
+      <div style="font-size:10px;font-weight:700;color:var(--muted);letter-spacing:.06em;margin-bottom:6px;text-transform:uppercase">Maç &amp; Tahmin</div>
       <div style="display:flex;flex-direction:column;gap:7px">
-        <a href="all_teams_preview_dashboard_{SEASON}.html" style="color:var(--green);text-decoration:none;font-weight:600">&#x2192; Ma&#xe7; &#xf6;n&#xfc; ar&#x15f;ivi (18 tak&#x131;m)</a>
-        <a href="football_intelligence_home.html" style="color:var(--green);text-decoration:none">&#x2192; T&#xfc;m analiz ara&#xe7;lar&#x131;</a>
+        <a href="all_teams_preview_dashboard_{SEASON}.html" style="color:var(--green);text-decoration:none;font-weight:600">→ Maç önü arşivi (18 takım)</a>
+        <a href="football_intelligence_home.html" style="color:var(--green);text-decoration:none">→ Tüm analiz araçları</a>
       </div>
     </div>
   </div>

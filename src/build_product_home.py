@@ -299,11 +299,11 @@ def build_html() -> str:
 </head>
 <body>
   <div class="topbar">
-    <a class="brand" href="/"><span class="brand-mark">11</span> metric11 <span class="season">S&#xfc;per Lig 2025/26</span></a>
+    <a class="brand" href="/"><span class="brand-mark">11</span> metric11 <span class="season">Süper Lig 2025/26</span></a>
     <nav>
-      <a href="/">G&#xfc;ndem</a>
+      <a href="/">Gündem</a>
       <a href="transfer_tracker_2025_2026.html">Transferler</a>
-      <a href="all_teams_preview_dashboard_2025_2026.html">Ma&#xe7; &#xd6;n&#xfc;</a>
+      <a href="all_teams_preview_dashboard_2025_2026.html">Maç Önü</a>
       <a href="transfer_recommendation_report_2025_2026.html">Scout</a>
       <a class="active" href="football_intelligence_home.html">Analiz</a>
     </nav>
@@ -311,11 +311,11 @@ def build_html() -> str:
   <header>
     <div class="matchroom">
       <div>
-        <div class="overline">S&#xfc;per Lig 2025/26 &mdash; Veri platformu</div>
-        <h1>Ma&#xe7;&#x131; oku. Kadroyu tart&#x131;&#x15f;. Oyuncuyu ke&#x15f;fet.</h1>
-        <p>18 tak&#x131;m i&#xe7;in skor senaryolar&#x131;, gol adaylar&#x131;, scout profilleri ve transfer istihbarat&#x131; tek sezon veri ak&#x131;&#x15f;&#x131;nda izleniyor.</p>
+        <div class="overline">Süper Lig 2025/26 &mdash; Veri platformu</div>
+        <h1>Maçı oku. Kadroyu tartış. Oyuncuyu keşfet.</h1>
+        <p>18 takım için skor senaryoları, gol adayları, scout profilleri ve transfer istihbaratı tek sezon veri akışında izleniyor.</p>
         <div class="hero-actions">
-          <a class="primary" href="all_teams_preview_dashboard_2025_2026.html">Ma&#xe7; &#xd6;n&#xfc; Ar&#x15f;ivi</a>
+          <a class="primary" href="all_teams_preview_dashboard_2025_2026.html">Maç Önü Arşivi</a>
           <a class="secondary" href="football_command_center_2025_2026.html">Analiz merkezi</a>
         </div>
       </div>

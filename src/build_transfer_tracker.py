@@ -208,9 +208,9 @@ def build_html(signals: list[dict], summary: dict) -> str:
 </head>
 <body>
 <div class="topbar">
-  <a class="brand" href="/"><b>11</b> metric11<span class="slbl">S&#xfc;per Lig {SEASON_LABEL}</span></a>
+  <a class="brand" href="/"><b>11</b> metric11<span class="slbl">Süper Lig {SEASON_LABEL}</span></a>
   <nav class="topnav">
-    <a href="/">G&#xfc;ndem</a>
+    <a href="/">Gündem</a>
     <a class="active" href="transfer_tracker_{SEASON}.html">Transferler</a>
     <a href="all_teams_preview_dashboard_{SEASON}.html">Maç Önü</a>
     <a href="transfer_recommendation_report_{SEASON}.html">Scout</a>
