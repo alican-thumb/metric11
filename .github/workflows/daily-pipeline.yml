@@ -1,24 +1,25 @@
-name: metric11 daily pipeline
+name: metric11 full network pipeline
 
 on:
   workflow_dispatch:
     inputs:
       include_network:
-        description: "Run network collectors as well"
+        description: "Run network collectors (TFF, Transfermarkt, haberler)"
         required: false
-        default: "false"
+        default: "true"
         type: choice
         options:
-          - "false"
           - "true"
+          - "false"
   schedule:
-    - cron: "15 4 * * *"
+    # Her gece 04:00 UTC — TFF + Transfermarkt + haberler + dashboard (~30-45 dk)
+    - cron: "0 4 * * *"
 
 permissions:
   contents: write
 
 jobs:
-  build-data-and-dashboards:
+  full-pipeline:
     runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:
@@ -35,21 +36,21 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run non-network analytics pipeline
-        if: ${{ github.event.inputs.include_network != 'true' }}
-        env:
-          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
-          FOOTBALL_DATA_KEY: ${{ secrets.FOOTBALL_DATA_KEY }}
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: python -m src.run_daily_pipeline
-
-      - name: Run full network analytics pipeline
-        if: ${{ github.event.inputs.include_network == 'true' }}
+      - name: Run pipeline (network dahil)
+        if: ${{ github.event_name == 'schedule' || github.event.inputs.include_network == 'true' }}
         env:
           API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
           FOOTBALL_DATA_KEY: ${{ secrets.FOOTBALL_DATA_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python -m src.run_daily_pipeline --include-network
+
+      - name: Run pipeline (network yok)
+        if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.include_network == 'false' }}
+        env:
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+          FOOTBALL_DATA_KEY: ${{ secrets.FOOTBALL_DATA_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python -m src.run_daily_pipeline
 
       - name: Commit and push generated outputs
         run: |
@@ -57,7 +58,7 @@ jobs:
           git config --global user.name "metric11 pipeline"
           git add data/processed/
           git diff --staged --quiet && echo "No changes to commit" || \
-            git commit -m "chore: pipeline outputs $(date -u +%Y-%m-%dT%H:%M:%SZ) [skip ci]"
+            git commit -m "chore: full pipeline $(date -u +%Y-%m-%dT%H:%M:%SZ) [skip ci]"
           git push origin main
 
       - name: Upload processed outputs
