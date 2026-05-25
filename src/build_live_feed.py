@@ -14,7 +14,8 @@ from src.config import PROCESSED_DIR, SEASON, SEASON_LABEL
 
 OUTPUT_HTML = PROCESSED_DIR / f"gundem_{SEASON}.html"
 
-WINDOW_DATE = datetime(2026, 6, 1, tzinfo=timezone.utc)
+WINDOW_OPEN_DATE  = datetime(2026, 6, 1, tzinfo=timezone.utc)
+WINDOW_CLOSE_DATE = datetime(2026, 9, 1, tzinfo=timezone.utc)
 
 SOURCE_COLORS = {
     "official_club": ("#16a34a", "#dcfce7", "Resmi Kulüp"),
@@ -40,10 +41,31 @@ def _load(path: Path) -> dict | list:
     return {}
 
 
-def _days_to_window() -> int:
+def _window_state() -> tuple[str, str, str, str]:
+    """Returns (state, banner_css, dot_css, message) for transfer window."""
     now = datetime.now(timezone.utc)
-    delta = (WINDOW_DATE - now).days
-    return max(delta, 0)
+    if now >= WINDOW_CLOSE_DATE:
+        return (
+            "closed",
+            "background:linear-gradient(90deg,#374151,#1f2937);border-bottom:1px solid #4b5563",
+            "background:#9ca3af",
+            "<strong>Transfer penceresi kapandı</strong> — 2025/26 sezonu transferleri tamamland&#x131;",
+        )
+    if now >= WINDOW_OPEN_DATE:
+        days_left = (WINDOW_CLOSE_DATE - now).days
+        return (
+            "open",
+            "background:linear-gradient(90deg,#14532d,#166534);border-bottom:1px solid #16a34a",
+            "background:#4ade80",
+            f"<strong>Transfer penceresi a&#x15f;&#x131;k</strong> &#x2014; {days_left} g&#xfc;n kald&#x131; (1 Haz &ndash; 31 A&#x11f;u 2026)",
+        )
+    days_left = (WINDOW_OPEN_DATE - now).days
+    return (
+        "countdown",
+        "background:linear-gradient(90deg,#1e3a5f,#0f2a4a);border-bottom:1px solid #1e40af",
+        "background:#60a5fa",
+        f"Transfer penceresi <strong>{days_left} g&#xfc;n sonra</strong> a&#x15f;&#x131;l&#x131;yor (1 Haziran 2026)",
+    )
 
 
 def _source_badge(source_type: str) -> str:
@@ -116,12 +138,7 @@ def build_html() -> str:
     tracker_summary = tracker.get("summary", {}) if isinstance(tracker, dict) else {}
     official_count = tracker_summary.get("official_count", 0)
 
-    days_left = _days_to_window()
-    window_msg = (
-        f"Transfer penceresi <strong>{days_left} gün sonra</strong> açılıyor (1 Haziran 2026)"
-        if days_left > 0 else
-        "<strong>Transfer penceresi açık</strong> — 1 Haz – 31 Ağu 2026"
-    )
+    _state, banner_css, dot_css, window_msg = _window_state()
 
     now_str = datetime.now(timezone.utc).strftime("%d.%m.%Y %H:%M UTC")
     articles_html = "".join(_article_html(a) for a in articles) or "<p style='color:var(--muted);padding:16px 0'>Henüz makale yok.</p>"
@@ -152,8 +169,8 @@ def build_html() -> str:
   .topnav::-webkit-scrollbar{{display:none}}
   .topnav a{{white-space:nowrap;color:#d5ded8;padding:9px 10px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600}}
   .topnav a.active{{background:#162b20;color:white}}
-  .window-banner{{background:linear-gradient(90deg,#1e3a5f,#0f2a4a);padding:10px clamp(14px,3vw,32px);color:#bfdbfe;font-size:13px;border-bottom:1px solid #1e40af;display:flex;align-items:center;gap:10px}}
-  .window-dot{{width:8px;height:8px;border-radius:50%;background:#60a5fa;flex-shrink:0;animation:pulse 2s infinite}}
+  .window-banner{{padding:10px clamp(14px,3vw,32px);color:#d1fae5;font-size:13px;display:flex;align-items:center;gap:10px}}
+  .window-dot{{width:8px;height:8px;border-radius:50%;flex-shrink:0;animation:pulse 2s infinite}}
   @keyframes pulse{{0%,100%{{opacity:1}}50%{{opacity:.4}}}}
   .main{{max-width:1200px;margin:0 auto;padding:20px clamp(12px,3vw,32px) 50px;display:grid;grid-template-columns:1fr 360px;gap:24px}}
   .panel{{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 20px}}
@@ -177,9 +194,9 @@ def build_html() -> str:
     <a href="football_intelligence_home.html">Analiz</a>
   </nav>
 </div>
-<div class="window-banner">
-  <div class="window-dot"></div>
-  <span>{window_msg} · Güncelleme: {now_str}</span>
+<div class="window-banner" style="{banner_css}">
+  <div class="window-dot" style="{dot_css}"></div>
+  <span>{window_msg} &middot; G&#xfc;ncelleme: {now_str}</span>
 </div>
 <div class="main">
   <div>
