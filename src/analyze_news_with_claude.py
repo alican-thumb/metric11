@@ -29,7 +29,8 @@ TRANSFER_PATTERNS = [
     (r"teklif(?:\s+geldi|\s+yaptı|\s+sundu)", "offer"),
     (r"serbest\s+(?:bırakıldı|kalıyor|kalacak)", "free_agent"),
     (r"(?:ilgileniyor|peşinde|gözüne kestirdi)", "interest"),
-    (r"ayrıl(?:ıyor|acak|dı|mak istiyor)", "departure"),
+    (r"ayrıl(?:ıyor|acak|dı(?:lar)?\b|mak istiyor)", "departure"),
+    (r"teşekkür(?:ler|\s+ederiz)", "departure"),
     (r"kiralandı|kiralık\s+(?:olarak\s+)?(?:gitti|geliyor|transfer)", "loan"),
     (r"süper\s+lig['']?e\s+(?:geliyor|transfer|dönüyor)", "super_lig_arrival"),
 ]
@@ -185,6 +186,8 @@ def rule_based_analyze(article: dict, player_index: dict) -> dict:
     text = f"{title} {summary}".lower()
     title_text = title.lower()
     text_orig = f"{title} {summary}"
+    normalized_text = normalize_name(text_orig)
+    normalized_title = normalize_name(title)
 
     news_types = list(article.get("categories", []))
     players = []
@@ -214,11 +217,11 @@ def rule_based_analyze(article: dict, player_index: dict) -> dict:
         parts = name.split()
         if len(parts) >= 2:
             # Soyisim (son parça) metin içinde geçiyor mu?
-            last = parts[-1].lower()
-            if len(last) >= 4 and last in text:
+            last = normalize_name(parts[-1])
+            if len(last) >= 4 and last in normalized_text:
                 # İlk isim de geçiyorsa HIGH, sadece soyisim MEDIUM
-                first = parts[0].lower()
-                if first in text:
+                first = normalize_name(parts[0])
+                if first in normalized_text:
                     conf = "HIGH"
                     full = name
                 else:
@@ -232,7 +235,7 @@ def rule_based_analyze(article: dict, player_index: dict) -> dict:
                     "tm_market_value_eur": player.get("tm_market_value_eur"),
                     "tff_external_id": player.get("external_id"),
                     "confidence": conf,
-                    "matched_in_title": last in title_text and first in title_text,
+                    "matched_in_title": last in normalized_title and first in normalized_title,
                 })
 
     # Deduplicate players

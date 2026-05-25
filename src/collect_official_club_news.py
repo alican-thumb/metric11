@@ -25,14 +25,18 @@ DEFAULT_SOURCE_PATH = ROOT_DIR / "data/manual/official_club_news_sources.json"
 SIGNAL_TERMS = (
     "transfer",
     "imza",
-    "anlaş",
+    "anlaşma sağ",
+    "anlaşmaya var",
     "hos geldin",
     "hoş geldin",
     "kamuoyuna",
     "sözleş",
     "kiralık",
     "geçici",
-    "ayrıl",
+    "takımdan ayrıl",
+    "kulübümüzden ayrıl",
+    "yollarımız ayrıl",
+    "veda",
     "tesekkur",
     "teşekkür",
     "sakat",
@@ -170,7 +174,11 @@ def extract_candidate_links(html: str, base_url: str) -> list[tuple[str, str]]:
 
 
 def fetch_article(source: dict, listing_title: str, link: str, timeout_seconds: float = 8) -> dict | None:
-    response = requests.get(link, headers=HEADERS, timeout=timeout_seconds)
+    response = requests.get(
+        link,
+        headers={**HEADERS, "Referer": source["url"]},
+        timeout=timeout_seconds,
+    )
     response.raise_for_status()
     soup = BeautifulSoup(response.text, "html.parser")
     title_node = soup.find("h1") or soup.find("title")

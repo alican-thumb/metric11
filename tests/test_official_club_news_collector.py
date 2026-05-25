@@ -8,6 +8,7 @@ class OfficialClubNewsCollectorTests(unittest.TestCase):
     def test_extract_candidate_links_keeps_only_official_signal_links(self):
         html = """
         <a href="/haber/transfer-imza">Yeni transferimiz imzayı attı</a>
+        <a href="/haber/mac">Karşılaşmadan golsüz beraberlikle ayrıldık</a>
         <a href="/haber/antrenman">Takım antrenmanı tamamladı</a>
         <a href="https://other.test/haber/transfer">Transfer haberi</a>
         """
