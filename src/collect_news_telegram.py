@@ -33,12 +33,19 @@ def _is_recent(published_at: str | None) -> bool:
         return True
 
 TELEGRAM_CHANNELS = [
+    # Transfer / genel sinyal kanalları
     {"handle": "transferhaber", "name": "Transfer Haber", "type": "secondary_signal"},
+    {"handle": "superligson", "name": "Süper Lig Son Dakika", "type": "secondary_signal"},
+    {"handle": "sporxhaber", "name": "Sporx Haber", "type": "secondary_signal"},
+    {"handle": "futbolhaber", "name": "Futbol Haber", "type": "secondary_signal"},
+    {"handle": "transferturkiye", "name": "Transfer Türkiye", "type": "secondary_signal"},
+    {"handle": "superligtransfer", "name": "Süper Lig Transfer", "type": "secondary_signal"},
+    # Kulüp bazlı kanallar
     {"handle": "besiktashaberleri", "name": "Beşiktaş Haberleri", "team": "BEŞİKTAŞ A.Ş.", "type": "secondary_signal"},
     {"handle": "fenerbahcehaberleri", "name": "Fenerbahçe Haberleri", "team": "FENERBAHÇE A.Ş.", "type": "secondary_signal"},
     {"handle": "galatasarayhaberleri", "name": "Galatasaray Haberleri", "team": "GALATASARAY A.Ş.", "type": "secondary_signal"},
     {"handle": "trabzonsporhaberleri", "name": "Trabzonspor Haberleri", "team": "TRABZONSPOR A.Ş.", "type": "secondary_signal"},
-    {"handle": "superligson", "name": "Süper Lig Son Dakika", "type": "secondary_signal"},
+    {"handle": "basaksehirhaberleri", "name": "Başakşehir Haberleri", "team": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ", "type": "secondary_signal"},
 ]
 
 TRANSFER_KW = {

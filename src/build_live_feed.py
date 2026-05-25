@@ -26,6 +26,16 @@ SOURCE_COLORS = {
     "official":      ("#16a34a", "#dcfce7", "Resmi"),
 }
 
+# 1-10 güven skoru: 10=resmi kulüp, 7=ana medya RSS, 5=sosyal medya, 3=bilinmeyen
+SOURCE_TRUST: dict[str, int] = {
+    "official_club": 10,
+    "official":      10,
+    "rss":           7,
+    "google_news":   6,
+    "twitter":       5,
+    "telegram":      4,
+}
+
 TRANSFER_STATUS = {
     "OFFICIAL":        ("#16a34a", "#dcfce7", "RESMİ"),
     "CORROBORATED":    ("#2563eb", "#dbeafe", "DOĞRULANDI"),
@@ -105,14 +115,16 @@ def _fmt_date(published_at: str | None) -> str:
         return ""
 
 
-def _article_html(a: dict) -> str:
+def _article_html(a: dict, source_count: int = 1) -> str:
     title = escape(a.get("title", "")[:120])
     link  = escape(a.get("link", "") or "")
     src   = a.get("source", "")
     stype = a.get("source_type", "rss")
     cat   = a.get("category", "")
     age   = _fmt_date(a.get("published_at"))
-    tag   = ""
+    trust = SOURCE_TRUST.get(stype, 5)
+
+    tag = ""
     if cat == "transfer":
         tag = "<span style='font-size:10px;color:#d97706;font-weight:700'>⟳ TRANSFER</span> "
     elif cat == "injury":
@@ -120,10 +132,12 @@ def _article_html(a: dict) -> str:
     elif cat == "suspension":
         tag = "<span style='font-size:10px;color:#9333ea;font-weight:700'>🟥 CEZA</span> "
 
+    title_color = "var(--ink)" if trust >= 6 else "#627067"
     age_html = f"<span style='font-size:11px;color:var(--muted);margin-left:auto'>{escape(age)}</span>" if age else ""
-    anchor = f'<a href="{link}" target="_blank" style="color:var(--ink);text-decoration:none;line-height:1.4">{tag}{title}</a>' if link else f"{tag}{title}"
+    anchor = f'<a href="{link}" target="_blank" style="color:{title_color};text-decoration:none;line-height:1.4">{tag}{title}</a>' if link else f"<span style='color:{title_color}'>{tag}{title}</span>"
+    multi_html = f"<span style='font-size:10px;color:#7c3aed;font-weight:600;margin-left:4px'>{source_count} kaynak</span>" if source_count > 1 else ""
     return f"""<div style="padding:12px 0;border-bottom:1px solid var(--line)">
-  {anchor}<div style="margin-top:4px;display:flex;gap:6px;align-items:center">{_source_badge(stype)}<span style="font-size:11px;color:var(--muted)">{escape(src)}</span>{age_html}</div>
+  {anchor}{multi_html}<div style="margin-top:4px;display:flex;gap:6px;align-items:center">{_source_badge(stype)}<span style="font-size:11px;color:var(--muted)">{escape(src)}</span>{age_html}</div>
 </div>"""
 
 
@@ -149,12 +163,57 @@ def _pill(val: str, label: str, color: str = "var(--green)") -> str:
 </div>"""
 
 
+def _deduplicate_articles(articles: list[dict]) -> list[tuple[dict, int]]:
+    """Başlık benzerliğine göre haberleri grupla. (en iyi haber, kaynak sayısı) döner."""
+    STOP = {"ve", "ile", "de", "da", "bir", "bu", "için", "the", "a", "in", "of", "to"}
+    MIN_MATCH = 3
+
+    def keywords(title: str) -> set[str]:
+        words = title.lower().split()
+        return {w for w in words if len(w) > 3 and w not in STOP}
+
+    groups: list[list[int]] = []
+    used = set()
+
+    for i, a in enumerate(articles):
+        if i in used:
+            continue
+        kw_i = keywords(a.get("title", ""))
+        group = [i]
+        for j, b in enumerate(articles):
+            if j <= i or j in used:
+                continue
+            kw_j = keywords(b.get("title", ""))
+            if len(kw_i & kw_j) >= MIN_MATCH:
+                group.append(j)
+                used.add(j)
+        used.add(i)
+        groups.append(group)
+
+    result = []
+    for group in groups:
+        best = max(group, key=lambda idx: SOURCE_TRUST.get(articles[idx].get("source_type", ""), 5))
+        result.append((articles[best], len(group)))
+    return result
+
+
+def _ana_link(href: str, label: str, bold: bool = False) -> str:
+    exists = (PROCESSED_DIR / href).exists()
+    if exists:
+        weight = "font-weight:600;" if bold else ""
+        return f'<a href="{escape(href)}" style="color:var(--green);text-decoration:none;{weight}">→ {escape(label)}</a>'
+    return f'<span style="color:var(--muted);cursor:not-allowed" title="Henüz oluşturulmadı">→ {escape(label)}</span>'
+
+
 def build_html() -> str:
     intel    = _load(PROCESSED_DIR / f"news_intelligence_{SEASON}.json")
     tracker  = _load(PROCESSED_DIR / f"transfer_tracker_{SEASON}.json")
     ctx      = _load(PROCESSED_DIR / f"transfer_season_context_{SEASON}.json")
 
-    articles = (intel.get("recent_articles") or [])[:12]
+    raw_articles = (intel.get("recent_articles") or [])[:18]
+    deduped = _deduplicate_articles(raw_articles)
+    articles_with_count = deduped[:6]
+
     transfers_all = tracker.get("transfers", [])
     transfers_show = [t for t in transfers_all if t.get("status") in ("OFFICIAL", "CORROBORATED", "TM_CONFIRMED")][:8]
     if len(transfers_show) < 4:
@@ -170,7 +229,7 @@ def build_html() -> str:
     _state, banner_css, dot_css, window_msg = _window_state()
 
     now_str = datetime.now(timezone.utc).strftime("%d.%m.%Y %H:%M UTC")
-    articles_html = "".join(_article_html(a) for a in articles[:6]) or "<p style='color:var(--muted);padding:16px 0'>Henüz sinyal yok.</p>"
+    articles_html = "".join(_article_html(a, cnt) for a, cnt in articles_with_count) or "<p style='color:var(--muted);padding:16px 0'>Henüz sinyal yok.</p>"
     transfers_html = "".join(_transfer_html(t) for t in transfers_show) or "<p style='color:var(--muted);padding:16px 0'>Henüz transfer kaydı yok.</p>"
 
     return f"""<!DOCTYPE html>
@@ -213,7 +272,14 @@ def build_html() -> str:
   .see-more{{display:block;text-align:center;padding:10px;font-size:12px;color:var(--green);font-weight:600;text-decoration:none;border-top:1px solid var(--line);margin-top:8px}}
   .see-more:hover{{text-decoration:underline}}
   @media(max-width:860px){{.main{{grid-template-columns:1fr}}}}
-  @media(max-width:600px){{.topbar{{flex-direction:column;align-items:stretch;padding:11px 12px 0;gap:0;min-height:unset}}.brand{{padding-bottom:8px}}.topnav{{border-top:1px solid #1e3228;padding:7px 0 9px}}}}
+  @media(max-width:600px){{
+    .topbar{{flex-direction:column;align-items:stretch;padding:11px 12px 0;gap:0;min-height:unset}}
+    .brand{{padding-bottom:8px}}
+    .topnav{{border-top:1px solid #1e3228;padding:7px 0 9px}}
+    .pills{{display:grid;grid-template-columns:1fr 1fr;gap:8px}}
+    .panel{{padding:14px 14px}}
+    .main{{padding:12px 10px 40px}}
+  }}
 </style>
 </head>
 <body>
@@ -257,14 +323,14 @@ def build_html() -> str:
       <h2 style="margin-bottom:14px">Analiz Platformu</h2>
       <div style="font-size:10px;font-weight:700;color:var(--muted);letter-spacing:.06em;margin-bottom:6px;text-transform:uppercase">Transfer &amp; Kadro</div>
       <div style="display:flex;flex-direction:column;gap:7px;margin-bottom:14px">
-        <a href="transfer_recommendation_report_{SEASON}.html" style="color:var(--green);text-decoration:none;font-weight:600">→ Takım transfer önerileri</a>
-        <a href="transfer_season_context_{SEASON}.html" style="color:var(--green);text-decoration:none">→ Serbest kalacak oyuncular</a>
-        <a href="transfer_tracker_{SEASON}.html" style="color:var(--green);text-decoration:none">→ Transfer takip listesi</a>
+        {_ana_link(f"transfer_recommendation_report_{SEASON}.html", "Takım transfer önerileri", bold=True)}
+        {_ana_link(f"transfer_season_context_{SEASON}.html", "Serbest kalacak oyuncular")}
+        {_ana_link(f"transfer_tracker_{SEASON}.html", "Transfer takip listesi")}
       </div>
       <div style="font-size:10px;font-weight:700;color:var(--muted);letter-spacing:.06em;margin-bottom:6px;text-transform:uppercase">Maç &amp; Tahmin</div>
       <div style="display:flex;flex-direction:column;gap:7px">
-        <a href="all_teams_preview_dashboard_{SEASON}.html" style="color:var(--green);text-decoration:none;font-weight:600">→ Maç önü arşivi (18 takım)</a>
-        <a href="football_intelligence_home.html" style="color:var(--green);text-decoration:none">→ Tüm analiz araçları</a>
+        {_ana_link(f"all_teams_preview_dashboard_{SEASON}.html", "Maç önü arşivi (18 takım)", bold=True)}
+        {_ana_link("football_intelligence_home.html", "Tüm analiz araçları")}
       </div>
     </div>
   </div>
