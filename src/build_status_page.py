@@ -115,8 +115,9 @@ def build_html(d: dict) -> str:
     .brand{{display:flex;gap:11px;align-items:center;font-weight:800;font-size:19px;}}
     .brand-mark{{width:30px;height:30px;display:grid;place-items:center;border-radius:7px;color:var(--dark);background:var(--lime);font-size:15px;}}
     .season{{color:#a7b3ab;font-size:12px;font-weight:500;margin-left:4px;}}
-    nav{{display:flex;gap:5px;flex-wrap:wrap;justify-content:flex-end;}}
-    nav a{{color:#d5ded8;text-decoration:none;font-size:13px;font-weight:600;padding:10px 11px;border-radius:6px;}}
+    nav{{display:flex;gap:4px;flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;justify-content:flex-end;-webkit-overflow-scrolling:touch;scrollbar-width:none;}}
+    nav::-webkit-scrollbar{{display:none;}}
+    nav a{{color:#d5ded8;text-decoration:none;font-size:13px;font-weight:600;padding:9px 10px;border-radius:6px;white-space:nowrap;flex-shrink:0;}}
     nav a:hover,nav a.active{{background:#162b20;color:white;}}
     .wrap{{max-width:1100px;margin:0 auto;padding:32px clamp(14px,3vw,32px) 60px;}}
     h1{{font-size:26px;margin:0 0 4px;}}
@@ -137,6 +138,7 @@ def build_html(d: dict) -> str:
     .ext-link:hover{{background:var(--soft);}}
     .ext-links{{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px;}}
     @media(max-width:700px){{.grid3,.grid2{{grid-template-columns:1fr;}}}}
+    @media(max-width:680px){{.topbar{{position:static;flex-direction:column;align-items:stretch;padding:11px 16px 0;gap:0;min-height:unset;}}.brand{{padding-bottom:8px;}}.season{{display:none;}}nav{{justify-content:flex-start;border-top:1px solid #1e3228;padding:7px 0 9px;}}}}
   </style>
 </head>
 <body>
@@ -149,6 +151,7 @@ def build_html(d: dict) -> str:
       <a href="transfer_recommendation_report_2025_2026.html">Scout</a>
       <a href="all_teams_preview_dashboard_2025_2026.html">Lig</a>
       <a class="active" href="system_status.html">Durum</a>
+
     </nav>
   </div>
 

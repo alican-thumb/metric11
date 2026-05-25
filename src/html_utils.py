@@ -16,8 +16,9 @@ _CSS = """
     .brand { display:flex; gap:11px; align-items:center; font-weight:800; font-size:19px; }
     .brand-mark { width:30px; height:30px; display:grid; place-items:center; border-radius:7px; color:var(--dark); background:var(--lime); font-size:15px; }
     .season { color:#a7b3ab; font-size:12px; font-weight:500; margin-left:4px; }
-    nav { display:flex; gap:5px; flex-wrap:wrap; justify-content:flex-end; }
-    nav a { color:#d5ded8; text-decoration:none; font-size:13px; font-weight:600; padding:10px 11px; border-radius:6px; }
+    nav { display:flex; gap:4px; flex-wrap:nowrap; overflow-x:auto; overflow-y:hidden; justify-content:flex-end; -webkit-overflow-scrolling:touch; scrollbar-width:none; }
+    nav::-webkit-scrollbar { display:none; }
+    nav a { color:#d5ded8; text-decoration:none; font-size:13px; font-weight:600; padding:9px 10px; border-radius:6px; white-space:nowrap; flex-shrink:0; }
     nav a:hover { background:#162b20; color:white; }
     .back-link { display:inline-flex; align-items:center; gap:6px; color:var(--green); text-decoration:none; font-size:13px; font-weight:600; margin-bottom:18px; }
     .back-link::before { content:"←"; }
@@ -35,7 +36,7 @@ _CSS = """
     .md-table th { background:var(--soft); font-weight:700; text-align:left; padding:7px 10px; border:1px solid var(--line); white-space:nowrap; }
     .md-table td { padding:6px 10px; border:1px solid var(--line); }
     .md-table tr:nth-child(even) td { background:#f8faf9; }
-    @media (max-width:680px) { .topbar { position:static; align-items:flex-start; flex-direction:column; padding:13px 16px; } nav { width:100%; overflow-x:auto; flex-wrap:nowrap; } }
+    @media (max-width:680px) { .topbar { position:static; flex-direction:column; align-items:stretch; padding:11px 16px 0; gap:0; min-height:unset; } .brand { padding-bottom:8px; } .season { display:none; } nav { justify-content:flex-start; border-top:1px solid #1e3228; padding:7px 0 9px; } .report-wrap h1 { font-size:22px; } }
     @media (max-width:600px) { .md-table th,.md-table td { padding:5px 6px; font-size:11px; } }
 """
 

@@ -102,11 +102,13 @@ def build_html(summary: dict, previews: list[dict], goal_backtest: dict) -> str:
       background: var(--lime);
       font-size: 14px;
     }}
-    .topnav {{ display: flex; gap: 5px; overflow-x: auto; }}
+    .topnav {{ display: flex; gap: 4px; overflow-x: auto; overflow-y: hidden; -webkit-overflow-scrolling: touch; scrollbar-width: none; }}
+    .topnav::-webkit-scrollbar {{ display: none; }}
     .topnav a {{
       white-space: nowrap;
+      flex-shrink: 0;
       color: #d5ded8;
-      padding: 10px 11px;
+      padding: 9px 10px;
       border-radius: 6px;
       text-decoration: none;
       font-size: 13px;
@@ -252,8 +254,9 @@ def build_html(summary: dict, previews: list[dict], goal_backtest: dict) -> str:
       .toolbar select {{ grid-column: 1 / -1; }}
     }}
     @media (max-width: 680px) {{
-      .topbar {{ position: static; flex-direction: column; align-items: flex-start; padding: 12px; }}
-      .topnav {{ width: 100%; }}
+      .topbar {{ position: static; flex-direction: column; align-items: stretch; padding: 11px 12px 0; gap: 0; min-height: unset; }}
+      .brand {{ padding-bottom: 8px; }}
+      .topnav {{ border-top: 1px solid #1e3228; padding: 7px 0 9px; justify-content: flex-start; }}
       header {{ padding: 20px 14px; }}
       header h1 {{ font-size: 27px; }}
       .fixture strong {{ font-size: 23px; }}
@@ -272,6 +275,7 @@ def build_html(summary: dict, previews: list[dict], goal_backtest: dict) -> str:
       <a class="active" href="besiktas_2025_2026_dashboard_chronological.html">Maç Önü</a>
       <a href="transfer_recommendation_report_2025_2026.html">Scout</a>
       <a href="all_teams_preview_dashboard_2025_2026.html">Lig</a>
+      <a href="system_status.html">Durum</a>
     </nav>
   </div>
   <header>

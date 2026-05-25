@@ -243,8 +243,9 @@ def build_html() -> str:
     .brand {{ display:flex; gap:11px; align-items:center; font-weight:800; font-size:19px; }}
     .brand-mark {{ width:30px; height:30px; display:grid; place-items:center; border-radius:7px; color:var(--dark); background:var(--lime); font-size:15px; }}
     .season {{ color:#a7b3ab; font-size:12px; font-weight:500; margin-left:4px; }}
-    nav {{ display:flex; gap:5px; flex-wrap:wrap; justify-content:flex-end; }}
-    nav a {{ color:#d5ded8; text-decoration:none; font-size:13px; font-weight:600; padding:10px 11px; border-radius:6px; }}
+    nav {{ display:flex; gap:4px; flex-wrap:nowrap; overflow-x:auto; overflow-y:hidden; justify-content:flex-end; -webkit-overflow-scrolling:touch; scrollbar-width:none; }}
+    nav::-webkit-scrollbar {{ display:none; }}
+    nav a {{ color:#d5ded8; text-decoration:none; font-size:13px; font-weight:600; padding:9px 10px; border-radius:6px; white-space:nowrap; flex-shrink:0; }}
     nav a:hover, nav a.active {{ background:#162b20; color:white; }}
     header {{ background:#102419; color:white; padding:28px clamp(16px,4vw,42px) 25px; border-bottom:3px solid var(--green); }}
     .matchroom {{ max-width:1360px; margin:0 auto; display:grid; grid-template-columns:minmax(320px,1.05fr) minmax(400px,.95fr); align-items:end; gap:28px; }}
@@ -290,8 +291,8 @@ def build_html() -> str:
     summary::-webkit-details-marker {{ display:none; }}
     .detail-metrics {{ display:grid; grid-template-columns:repeat(5,1fr); gap:10px; padding:0 14px 14px; }}
     @media (max-width:1120px) {{ .matchroom {{ grid-template-columns:1fr; }} .metrics {{ grid-template-columns:repeat(4,1fr); }} .featured {{ grid-template-columns:repeat(2,1fr); }} .cards {{ grid-template-columns:repeat(2,1fr); }} .detail-metrics {{ grid-template-columns:repeat(3,1fr); }} }}
-    @media (max-width:680px) {{ .topbar {{ position:static; align-items:flex-start; flex-direction:column; padding:13px 16px; }} nav {{ width:100%; overflow-x:auto; flex-wrap:nowrap; }} header {{ padding:22px 16px; }} header h1 {{ font-size:30px; }} .board-grid, .metrics, .featured, .cards, .detail-metrics, .split {{ grid-template-columns:repeat(2,minmax(0,1fr)); }} main {{ padding:15px 12px 34px; }} .card {{ min-height:auto; }} .section-title {{ align-items:start; flex-direction:column; }} }}
-    @media (max-width:430px) {{ .board-grid, .featured, .cards, .detail-metrics, .split {{ grid-template-columns:1fr; }} .metrics {{ grid-template-columns:repeat(2,minmax(0,1fr)); }} }}
+    @media (max-width:680px) {{ .topbar {{ position:static; flex-direction:column; align-items:stretch; padding:11px 16px 0; gap:0; min-height:unset; }} .brand {{ padding-bottom:8px; }} .season {{ display:none; }} nav {{ justify-content:flex-start; border-top:1px solid #1e3228; padding:7px 0 9px; }} header {{ padding:22px 16px; }} header h1 {{ font-size:28px; }} .board-grid, .metrics, .featured, .cards, .detail-metrics, .split {{ grid-template-columns:repeat(2,minmax(0,1fr)); }} main {{ padding:15px 12px 34px; }} .card {{ min-height:auto; }} .section-title {{ align-items:start; flex-direction:column; }} }}
+    @media (max-width:430px) {{ .board-grid, .featured, .cards, .detail-metrics, .split {{ grid-template-columns:1fr; }} .metrics {{ grid-template-columns:repeat(2,minmax(0,1fr)); }} header h1 {{ font-size:24px; }} }}
   </style>
 </head>
 <body>

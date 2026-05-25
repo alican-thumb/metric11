@@ -170,8 +170,9 @@ def build_html(payload: dict) -> str:
     .topbar {{ position:sticky; top:0; z-index:5; min-height:62px; padding:0 clamp(14px,3vw,32px); display:flex; align-items:center; justify-content:space-between; gap:18px; background:var(--dark); color:white; border-bottom:1px solid #203328; }}
     .brand {{ display:flex; align-items:center; gap:10px; color:white; text-decoration:none; font-weight:800; font-size:18px; }}
     .brand b {{ display:grid; place-items:center; width:29px; height:29px; border-radius:7px; background:var(--lime); color:var(--dark); font-size:14px; }}
-    .topnav {{ display:flex; gap:5px; overflow-x:auto; }}
-    .topnav a {{ white-space:nowrap; color:#d5ded8; padding:10px 11px; border-radius:6px; text-decoration:none; font-size:13px; font-weight:600; }}
+    .topnav {{ display:flex; gap:4px; overflow-x:auto; overflow-y:hidden; -webkit-overflow-scrolling:touch; scrollbar-width:none; }}
+    .topnav::-webkit-scrollbar {{ display:none; }}
+    .topnav a {{ white-space:nowrap; flex-shrink:0; color:#d5ded8; padding:9px 10px; border-radius:6px; text-decoration:none; font-size:13px; font-weight:600; }}
     .topnav a.active {{ background:#162b20; color:white; }}
     header {{ background:#102419; color:white; padding:25px clamp(14px,3vw,32px); border-bottom:3px solid var(--green); }}
     header > div {{ max-width:1420px; margin:0 auto; }}
@@ -202,7 +203,7 @@ def build_html(payload: dict) -> str:
     summary::-webkit-details-marker {{ display:none; }}
     .metrics.more {{ padding:0 12px 12px; margin:0; }}
     @media (max-width:1100px) {{ .metrics {{ grid-template-columns:repeat(4,1fr); }} .grid {{ grid-template-columns:1fr; }} }}
-    @media (max-width:680px) {{ .topbar {{ position:static; flex-direction:column; align-items:flex-start; padding:12px; }} .topnav {{ width:100%; }} header h1 {{ font-size:27px; }} .metrics {{ grid-template-columns:repeat(2,minmax(0,1fr)); }} main {{ padding:12px; }} header {{ padding:20px 14px; }} table {{ font-size:12px; }} section {{ padding:13px; }} }}
+    @media (max-width:680px) {{ .topbar {{ position:static; flex-direction:column; align-items:stretch; padding:11px 12px 0; gap:0; min-height:unset; }} .brand {{ padding-bottom:8px; }} .season {{ display:none; }} .topnav {{ border-top:1px solid #1e3228; padding:7px 0 9px; justify-content:flex-start; }} header h1 {{ font-size:27px; }} .metrics {{ grid-template-columns:repeat(2,minmax(0,1fr)); }} main {{ padding:12px; }} header {{ padding:20px 14px; }} table {{ font-size:12px; }} section {{ padding:13px; }} }}
   </style>
 </head>
 <body>
