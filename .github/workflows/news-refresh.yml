@@ -1,0 +1,59 @@
+name: metric11 haber yenileme (2 saatte bir)
+
+on:
+  workflow_dispatch:
+  schedule:
+    # refresh.yml aralarını doldurur: 02:15, 08:15, 14:15, 20:15 UTC
+    # refresh.yml: 00:15, 06:15, 12:15, 18:15 | daily-pipeline: 04:00
+    # Sonuç: haber güncellemesi ~2 saatte bir
+    - cron: "15 2,8,14,20 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  news-refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Haber topla
+        env:
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          python -m src.collect_news_rss
+          python -m src.collect_news_twitter
+          python -m src.collect_official_club_news
+
+      - name: Haber raporlarını güncelle
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          python -m src.analyze_news_with_claude --only-relevant || true
+          python -m src.build_news_intelligence_report
+          python -m src.build_transfer_tracker
+          python -m src.build_status_page
+
+      - name: Commit and push
+        run: |
+          git config --global user.email "257049215+alican-thumb@users.noreply.github.com"
+          git config --global user.name "alican-thumb"
+          git add data/processed/
+          git diff --staged --quiet && echo "No changes" || \
+            git commit -m "chore: haber yenileme $(date -u +%Y-%m-%dT%H:%M:%SZ) [skip ci]"
+          git push origin main

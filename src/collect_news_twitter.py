@@ -48,8 +48,10 @@ TWITTER_ACCOUNTS = [
     {"handle": "eyupsporkulubu", "name": "ikas Eyüpspor Resmi", "team": "İKAS EYÜPSPOR", "type": "official"},
     {"handle": "kirmizikara", "name": "Gençlerbirliği Resmi", "team": "GENÇLERBİRLİĞİ S.K.", "type": "official"},
     {"handle": "karagumruk_sk", "name": "Fatih Karagümrük Resmi", "team": "FATİH KARAGÜMRÜK", "type": "official"},
-    {"handle": "Antalyaspor", "name": "Hesap.com Antalyaspor Resmi", "team": "HESAP.COM ANTALYASPOR", "type": "official"},
-    {"handle": "KayserisporFK", "name": "Zecorner Kayserispor Resmi", "team": "ZECORNER KAYSERİSPOR", "type": "official"},
+    # 2026/27 yeni takımlar
+    {"handle": "CorumFK1925", "name": "Çorum FK Resmi", "team": "ÇORUM FK", "type": "official"},
+    {"handle": "ErzurumsporFK", "name": "Erzurumspor FK Resmi", "team": "ERZURUMSPOR FK", "type": "official"},
+    {"handle": "Amedspor", "name": "Amed SFK Resmi", "team": "AMED SFK", "type": "official"},
     # --- Resmi lig / federasyon ---
     {"handle": "TFF_Org", "name": "TFF Resmi", "team": None, "type": "official"},
     {"handle": "superlig", "name": "Trendyol Süper Lig", "team": None, "type": "official"},
@@ -60,27 +62,53 @@ TWITTER_ACCOUNTS = [
     {"handle": "BeINSPORTS_TR", "name": "beIN Sports TR", "team": None, "type": "media"},
     {"handle": "trtspor", "name": "TRT Spor", "team": None, "type": "media"},
     {"handle": "SportsDigitale", "name": "Sports Digitale", "team": None, "type": "secondary_signal"},
-    # --- Transfer / muhabir ---
+    {"handle": "HaberKartali", "name": "Haber Kartalı", "team": None, "type": "media"},
+    # --- Transfer muhabirleri (TR) ---
     {"handle": "YakinTakip", "name": "Yakın Takip (Transfer)", "team": None, "type": "transfer_news"},
     {"handle": "transfermarkt_TR", "name": "Transfermarkt TR", "team": None, "type": "transfer_news"},
-    {"handle": "yagosabuncuoglu", "name": "Yağız Sabuncuoğlu", "team": None, "type": "secondary_signal"},
-    {"handle": "TurkishFootball", "name": "Turkish Football", "team": None, "type": "media"},
+    {"handle": "yagosabuncuoglu", "name": "Yağız Sabuncuoğlu", "team": None, "type": "transfer_news"},
+    {"handle": "ertansuzgun", "name": "Ertan Süzgün (Transfer #1)", "team": None, "type": "transfer_news"},
+    {"handle": "yusufgunaydn", "name": "Yusuf Günaydın (Altyapı/Scout)", "team": None, "type": "transfer_news"},
+    {"handle": "EkremKonur", "name": "Ekrem Konur (Int. Transfer)", "team": None, "type": "transfer_news"},
+    # --- Transfer muhabirleri (global) ---
+    {"handle": "FabrizioRomano", "name": "Fabrizio Romano (Global Transfer)", "team": None, "type": "transfer_news"},
+    {"handle": "TurkishFootball", "name": "Turkish Football (EN)", "team": None, "type": "media"},
+    # --- Kulüp/lig muhabirleri ---
+    {"handle": "GizemKaya__", "name": "Gizem Kaya (Süper Lig)", "team": None, "type": "secondary_signal"},
+    {"handle": "GercekBJK", "name": "Gerçek BJK", "team": "BEŞİKTAŞ A.Ş.", "type": "secondary_signal"},
+    {"handle": "AmputeFutbol", "name": "Ampute Futbol (Kadro/Sakat)", "team": None, "type": "secondary_signal"},
+    {"handle": "WebdikBesiktas", "name": "Webdik Beşiktaş (Veri/BJK)", "team": "BEŞİKTAŞ A.Ş.", "type": "secondary_signal"},
+    {"handle": "KaraKartalBlog", "name": "Kara Kartal Blog (BJK Analiz)", "team": "BEŞİKTAŞ A.Ş.", "type": "secondary_signal"},
+    # --- Taktik / analiz ---
+    {"handle": "TaktikSehri", "name": "Taktik Şehri", "team": None, "type": "analytics"},
+    {"handle": "kutubolgesi", "name": "Kutu Bölgesi (Taktik)", "team": None, "type": "analytics"},
+    {"handle": "PassHatasiii", "name": "Pass Hatası (Veri Analiz)", "team": None, "type": "analytics"},
+    {"handle": "OptaJoe", "name": "Opta Joe (Global Veri)", "team": None, "type": "analytics"},
 ]
 
 SUPER_LIG_TEAMS = {
+    # 2025/26 takımları
     "beşiktaş", "besiktas", "galatasaray", "fenerbahçe", "fenerbahce",
     "trabzonspor", "başakşehir", "basaksehir", "alanyaspor", "samsunspor",
     "göztepe", "goztepe", "konyaspor", "rizespor", "gaziantep",
     "kasımpaşa", "kasimpasa", "kocaelispor", "eyüpspor", "eyupspor",
-    "gençlerbirliği", "genclerbirligi", "karagümrük", "karagumruk",
-    "antalyaspor", "kayserispor",
-    # 2026-2027 promosyon adayları
-    "çorumspor", "corumspor", "adanaspor", "sakaryaspor", "bodrumspor",
-    "manisaspor", "erzurumspor", "altay", "altinordu",
+    "gençlerbirliği", "genclerbirligi",
+    # 2026/27 yeni takımlar
+    "çorum", "corumfk", "çorum fk", "corum fk",
+    "erzurumspor",
+    "amed", "amedspor", "amed sfk",
 }
 
-TRANSFER_KW = {"transfer", "bonservis", "anlaşma", "imza", "teklif", "istiyor", "ayrılıyor", "geliyor", "görüşme"}
-INJURY_KW = {"sakat", "sakatlık", "yaralanma", "ameliyat", "tedavi"}
+TRANSFER_KW = {
+    # Türkçe
+    "transfer", "bonservis", "anlaşma", "imza", "teklif", "istiyor",
+    "ayrılıyor", "geliyor", "görüşme", "resmileşti", "açıklandı",
+    "teknik direktör", "hoca", "antrenör",
+    # İngilizce (Fabrizio Romano, EkremKonur, global hesaplar için)
+    "signs", "signed", "deal", "joins", "loan", "fee", "contract",
+    "agreement", "done", "here we go", "manager", "coach",
+}
+INJURY_KW = {"sakat", "sakatlık", "yaralanma", "ameliyat", "tedavi", "injured", "injury", "out"}
 PROMOTION_KW = {"çıktı", "yükseldi", "şampiyon", "playoff", "süper lig'e", "1. lig", "tff 1"}
 
 
