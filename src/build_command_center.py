@@ -233,6 +233,7 @@ def build_html(payload: dict) -> str:
       <a href="fm_style_scout_program_2025_2026.html">FM Scout</a>
       <a href="league_intelligence_2025_2026.html">Lig İstihbaratı</a>
       <a href="team_scout_blueprints_2025_2026.html">Takım Blueprint</a>
+      <a href="transfer_tracker_2025_2026.html">Transfer Takip</a>
       <a href="transfer_recommendation_report_2025_2026.html">Transfer Raporu</a>
       <a href="transfer_season_context_2025_2026.html">Transfer Sezonu</a>
       <a href="news_intelligence_dashboard_2025_2026.html">Haber İstihbaratı</a>

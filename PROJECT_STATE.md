@@ -1,6 +1,6 @@
 # Futbol İstihbarat Platformu - Proje Durumu
 
-Son güncelleme: 2026-05-25 (Vercel deploy hazırlığı: html_utils, 9 builder HTML çıktısı, index.html, vercel.json, GitHub Actions auto-commit)
+Son güncelleme: 2026-05-25
 
 ## Amaç
 
@@ -193,6 +193,15 @@ Parse edilen alanlar:
 - 13 yüksek kullanımlı eşleşmemiş oyuncu için `data/manual/tm_player_manual_aliases.json` eklendi (Balkovec, Abraham, Szalai, Opoku, Dragus, Rhaldney, Ogundu, En-Nesyri, Ndao, Rak-Sakyi, de Abreu, Fofana, Durán). TM kapsam %62→%74, lig snapshot %81.6.
 - OOS validasyon modülü eklendi: `src/build_oos_validation.py` walk-forward kronolojik split, hafta 1-17 ısınma + hafta 18-34 bağımsız test. OOS ikinci yarı %53.6, HIGH güven %60.4.
 - Maç günü kadro sinyali eklendi: `src/preview/squad.py` oyuncu önem skoru, `squad_xg_adjustment()` eksik oyuncu xG düzeltmesi. Motor, olasılık ve uygunluk modülleri güncellendi; Sofascore xG yerine oyuncu bazlı etki kullanılıyor.
+- Draw kalibrasyonu güçlendirildi: `draw_calibrated_prediction()` fonksiyonuna `strength_edge` bazlı denge katsayısı eklendi (DRAW_BOOST_SCALE=0.12, DRAW_PRED_MIN_PROB=0.26, DRAW_PRED_MAX_GAP=0.14). Beraberlik recall %8'den %29'a çıktı, genel doğruluk %50.8→%51.6.
+- Tüm 18 takım için maç önü dashboard üretimi parametre haline getirildi: `build_dashboard.py --all-teams` tek komutla 18 takım HTML üretiyor; TEAM_DISPLAY_NAMES dict'i ve takım bazlı başlıklar/etiketler eklendi.
+- Vercel Analytics script'i tüm 33 HTML sayfasına eklendi (`/_vercel/insights/script.js`).
+- GitHub Actions'a `FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true` eklendi (Node 20 deprecation uyarısı giderildi).
+- X (Twitter) Bearer Token eklendi: `collect_news_twitter.py` 30 hesap (18 kulüp + TFF + medya) takip ediyor; `X_BEARER_TOKEN` GitHub Secret olarak ayarlandı.
+- Resmi kulüp haber scraper'ı eklendi: `src/collect_official_club_news.py` 18 resmi kulüp sitesini credential gerektirmeden tarıyor.
+- Admin sayfası hash koruma güvencesi eklendi: `ADMIN_CREDENTIALS_HASH` env var yokken mevcut `admin.html` korunuyor, üzerine yazılmıyor.
+- 2025/26 sezonu bitti — tüm maç önü dashboard'larına otomatik "sezon arası" banner eklendi; 2026/27 fikstürü açılınca banner JS tarih tespiti ile kaybolacak.
+- 2026/27 Süper Lig kadrosu güncellendi: küme düşenler (Karagümrük, Antalyaspor, Kayserispor) çıkarıldı; yükselen takımlar (Çorum FK, Erzurumspor FK, Amed SFK) TM ID'leriyle sisteme eklendi. 4 dosya güncellendi: `generate_preview_batch.py`, `build_dashboard.py`, `transfermarkt_super_lig_clubs.json`, `build_transfer_season_context.py`.
 
 ### Dashboardlar
 

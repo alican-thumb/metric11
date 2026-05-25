@@ -47,6 +47,7 @@ def build_html() -> str:
     transfer_report = load_json(PROCESSED_DIR / "transfer_recommendation_report_2025_2026.json").get("summary", {})
     news_intel = load_json(PROCESSED_DIR / f"news_intelligence_{SEASON}.json")
     transfer_season = load_json(PROCESSED_DIR / f"transfer_season_context_{SEASON}.json") or {}
+    transfer_tracker = load_json(PROCESSED_DIR / f"transfer_tracker_{SEASON}.json") or {}
     prediction_validation = load_json(PROCESSED_DIR / "prediction_validation_report_2025_2026.json").get("metrics", {})
     all_teams_total = _count_all_teams_reports()
 
@@ -116,6 +117,12 @@ def build_html() -> str:
             "Türk spor basınından otomatik haber akışı. Transfer iddiaları, sakat/cezalı sinyalleri ve kadro haberleri kaynak güveniyle sınıflandırılıp oyuncu ve takım verisine bağlanır.",
             f"news_intelligence_dashboard_{SEASON}.html",
             f"{news_intel.get('total_articles', 0)} makale · {news_intel.get('transfer_signals', 0)} haber iddiası",
+        ),
+        panel_card(
+            "Transfer Takip",
+            "Yaz 2026 transfer penceresi canlı takibi: resmi transferler, doğrulanan iddialar ve inceleme bekleyen sinyaller takım bazlı izleniyor.",
+            f"transfer_tracker_{SEASON}.html",
+            f"{transfer_tracker.get('summary', {}).get('official_count', 0)} resmi · {transfer_tracker.get('summary', {}).get('total_signals', 0)} toplam sinyal",
         ),
         panel_card(
             "Transfer Sezonu Bağlam Raporu",
