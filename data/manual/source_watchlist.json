@@ -86,6 +86,19 @@
       "use_cases": ["official_transfer_confirmation", "transfer_rumor_radar", "availability_review", "corroboration"]
     },
     {
+      "name": "Süper Lig official club website announcements",
+      "category": "official_club_news",
+      "url": "data/manual/official_club_news_sources.json",
+      "method": "official_website_collector",
+      "status": "collector_connected_18_clubs_no_credentials",
+      "risk": "low_medium",
+      "license_status": "verify_terms_and_show_link_derived_signal_only",
+      "freshness_target": "daily_transfer_window",
+      "analysis_weight": "official_confirmation",
+      "fields": ["club", "headline", "published_at", "official_transfer_announcement", "injury_announcement", "link"],
+      "use_cases": ["official_transfer_confirmation", "availability_review", "corroboration"]
+    },
+    {
       "name": "API-Football",
       "category": "external_api",
       "url": "https://www.api-football.com/",

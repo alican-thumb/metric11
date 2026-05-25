@@ -49,6 +49,7 @@ def _build_html() -> str:
     league = _load(PROCESSED_DIR / f"tff_super_lig_enriched_{SEASON}.json") or []
     model = _load(PROCESSED_DIR / f"league_prediction_model_{SEASON}.json") or {}
     dq = _load(PROCESSED_DIR / f"data_quality_scorecard_{SEASON}.json") or {}
+    official = _load(PROCESSED_DIR / f"news_official_clubs_latest_{SEASON}.json") or {}
     twitter = _load(PROCESSED_DIR / f"news_twitter_latest_{SEASON}.json") or {}
 
     matches = league if isinstance(league, list) else []
@@ -67,6 +68,10 @@ def _build_html() -> str:
     tw_status = escape(twitter.get("collection_status", "NO_SNAPSHOT"))
     tw_success = twitter.get("successful_accounts", 0)
     tw_gen = escape(_fmt(twitter.get("generated_at")))
+    official_total = official.get("total_articles", 0)
+    official_success = official.get("successful_sources", 0)
+    official_configured = official.get("configured_sources", 18)
+    official_status = escape(official.get("collection_status", "NO_SNAPSHOT"))
 
     # Twitter tablo satırları
     tw_rows = ""
@@ -278,6 +283,10 @@ def _build_html() -> str:
         <div class="pill-lbl">Veri kalite skoru</div>
       </div>
       <div class="pill">
+        <div class="pill-val" style="color:#22c55e">{official_total}</div>
+        <div class="pill-lbl">Resmi web duyurusu</div>
+      </div>
+      <div class="pill">
         <div class="pill-val" style="color:#a78bfa">{tw_total}</div>
         <div class="pill-lbl">X gönderisi</div>
       </div>
@@ -297,6 +306,7 @@ def _build_html() -> str:
         <div class="rrow"><span class="rrow-lbl">Skorlu maç</span><span class="rrow-val">{len(scored)}</span></div>
         <div class="rrow"><span class="rrow-lbl">Tahmin kaydı</span><span class="rrow-val">{len(model.get("rows", []))}</span></div>
         <div class="rrow"><span class="rrow-lbl">Haber / Analiz</span><span class="rrow-val">{news.get("analyzed_articles", 0)} / {news.get("total_articles", 0)}</span></div>
+        <div class="rrow"><span class="rrow-lbl">Resmi web taraması</span><span class="rrow-val">{official_total} duyuru · {official_success}/{official_configured} site · {official_status}</span></div>
         <div class="rrow"><span class="rrow-lbl">Haber son güncelleme</span><span class="rrow-val">{escape(_fmt(news.get("generated_at")))}</span></div>
       </div>
     </div>

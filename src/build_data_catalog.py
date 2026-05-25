@@ -58,6 +58,7 @@ def build_catalog() -> dict:
     news_context = load_json(PROCESSED_DIR / "news_context_snapshot_2025_2026.json", {})
     news_intelligence = load_json(PROCESSED_DIR / "news_intelligence_2025_2026.json", {})
     news_rss = load_json(PROCESSED_DIR / "news_rss_latest_2025_2026.json", {})
+    news_official = load_json(PROCESSED_DIR / "news_official_clubs_latest_2025_2026.json", {})
     news_twitter = load_json(PROCESSED_DIR / "news_twitter_latest_2025_2026.json", {})
     api_football_2024 = load_json(PROCESSED_DIR / "api_football_super_lig_snapshot_2024.json", {})
     api_football_2025 = load_json(PROCESSED_DIR / "api_football_super_lig_snapshot_2025.json", {})
@@ -74,6 +75,16 @@ def build_catalog() -> dict:
     twitter_successful_accounts = sum(1 for account in news_twitter.get("accounts", []) if not account.get("error"))
     twitter_provider = news_twitter.get("provider", "not_run")
     twitter_status = news_twitter.get("collection_status", "NO_SNAPSHOT")
+    official_articles = news_official.get("total_articles", 0)
+    official_sources = news_official.get("successful_sources", 0)
+    official_configured = news_official.get("configured_sources", 18)
+    official_status = news_official.get("collection_status", "NO_SNAPSHOT")
+    official_coverage = (
+        f"{official_articles} duyuru; {official_sources}/{official_configured} kulüp sitesi erişilebilir; "
+        f"durum={official_status}"
+        if news_official
+        else "18 resmi kulüp sitesi yapılandırıldı; snapshot henüz yok"
+    )
     if twitter_posts:
         twitter_coverage = (
             f"{twitter_posts} gönderi snapshot'ı; {twitter_successful_accounts} hesap başarılı; "
@@ -165,6 +176,16 @@ def build_catalog() -> dict:
                     f"{news_intelligence.get('transfer_signals', 0)} transfer iddiası"
                 ),
                 "fields": ["başlık", "kaynak", "yayın zamanı", "transfer iddiası", "kaynak teyit durumu"],
+            },
+            {
+                "name": "Süper Lig resmi kulüp web duyuruları",
+                "public_label": "Resmi kulüp duyuruları",
+                "type": "OFFICIAL_CLUB_NEWS",
+                "risk": "LOW_MEDIUM",
+                "license_status": "VERIFY_TERMS_AND_LINK_DERIVED_DISPLAY",
+                "display_policy": "SHOW_LINK_AND_DERIVED_SIGNAL_ONLY",
+                "coverage": official_coverage,
+                "fields": ["kulüp", "duyuru başlığı", "yayın zamanı", "resmi transfer teyidi", "bağlantı"],
             },
             {
                 "name": "X resmi kulüp ve futbol haber hesapları",
@@ -274,6 +295,10 @@ def build_catalog() -> dict:
             "news_context_signals": news_context.get("summary", {}).get("signals", 0),
             "news_context_structured_unavailability": len(news_context.get("team_unavailability", [])),
             "news_rss_articles": news_rss.get("total_articles", 0),
+            "news_official_articles": official_articles,
+            "news_official_successful_sources": official_sources,
+            "news_official_configured_sources": official_configured,
+            "news_official_status": official_status,
             "news_intelligence_articles": news_intelligence.get("analyzed_articles", 0),
             "news_transfer_claims": news_intelligence.get("transfer_signals", 0),
             "news_transfer_status_counts": news_intelligence.get("transfer_status_counts", {}),
@@ -323,7 +348,7 @@ def build_catalog() -> dict:
             "transfer_impact_simulated_xg_delta", "transfer_impact_simulated_scoreline", "selected_player_what_if",
             "news_injury_signal", "news_suspension_signal", "news_probable_lineup_context",
             "news_transfer_claim", "news_transfer_verification_status", "news_transfer_evidence_sources",
-            "official_social_announcement_signal",
+            "official_social_announcement_signal", "official_club_web_announcement_signal",
         ],
         "missing_fields": [
             "preferred_foot",
@@ -360,7 +385,7 @@ def build_catalog() -> dict:
             "profile_enrichment_queue": "MVP_READY_PRIORITY_COLLECTION_QUEUE",
             "source_watchlist": "MVP_READY_DAILY_REFRESH_PLAN",
             "news_context": "CONNECTED_LOW_TO_MEDIUM_CONFIDENCE",
-            "transfer_news_intelligence": "RSS_CONNECTED_X_PENDING_SNAPSHOT_REVIEW_GATED",
+            "transfer_news_intelligence": "RSS_CONNECTED_OFFICIAL_CLUB_WEB_CONNECTED_X_OPTIONAL_REVIEW_GATED",
             "api_football": "CONNECTED_2024_HISTORY_PLAN_LIMITED_2025",
         },
         "source_display_policy": {
@@ -456,6 +481,11 @@ def build_markdown(catalog: dict) -> str:
         f"- Haber/sakat-cezalı sinyal: {coverage['news_context_signals']}",
         f"- Haber/sakat-cezalı yapılandırılmış oyuncu: {coverage['news_context_structured_unavailability']}",
         f"- RSS haber kaydı: {coverage['news_rss_articles']}",
+        (
+            f"- Resmi kulüp web duyurusu: {coverage['news_official_articles']} | "
+            f"erişilebilir site={coverage['news_official_successful_sources']}/"
+            f"{coverage['news_official_configured_sources']} | durum={coverage['news_official_status']}"
+        ),
         f"- Haber analizine alınan içerik: {coverage['news_intelligence_articles']}",
         (
             f"- Transfer haber iddiası: {coverage['news_transfer_claims']} | "
