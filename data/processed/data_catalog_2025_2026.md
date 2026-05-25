@@ -60,8 +60,8 @@
 - SQLite veri kalite bulgusu: 6
 - Profil zenginleştirme kuyruğu: 0
 - Profil zenginleştirme eksik aday: 0
-- İzlenen veri kaynağı: 11
-- Günlük izlenecek kaynak: 7
+- İzlenen veri kaynağı: 13
+- Günlük izlenecek kaynak: 9
 - Haber/sakat-cezalı başarılı kaynak: 2
 - Haber/sakat-cezalı sinyal: 3
 - Haber/sakat-cezalı yapılandırılmış oyuncu: 13
