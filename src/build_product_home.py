@@ -329,9 +329,9 @@ def build_html() -> str:
     </div>
   </header>
   <main>
-    <div class="section-title"><h2>Öne çıkan deneyimler</h2><p>Futbolseverin ilk gireceği dört alan</p></div>
+    <div class="section-title"><h2>Öne çıkan deneyimler</h2></div>
     <div class="featured">{featured_cards}</div>
-    <div class="section-title"><h2>Sezon rakamları</h2><p>2025-26 sezonu verisinden</p></div>
+    <div class="section-title"><h2>Sezon rakamları</h2></div>
     <div class="metrics">
       {metric("Tahmin doğruluğu", f"%{round((prediction_validation.get('unique_league_fixtures_raw_baseline', {}).get('accuracy') or 0) * 100)}")}
       {metric("Maç önü raporu", preview_summary.get("generated_reports", 0))}
@@ -342,27 +342,8 @@ def build_html() -> str:
       {metric("Eksik oyuncu sinyali", availability.get("auto_suspension_entries", 0) + availability.get("manual_entries", 0))}
       {metric("Scout profili", enriched_scout.get("profiled_players", 0))}
     </div>
-    <div class="section-title"><h2>Tüm araçlar</h2><p>Tahmin, scout, transfer ve haber modülleri</p></div>
+    <div class="section-title"><h2>Tüm araçlar</h2></div>
     <div class="cards">{module_cards}</div>
-    <div class="split">
-      <section>
-        <h2>Ürün Gerçekliği</h2>
-        <ul>
-          <li>Maç sonucu modeli lig genelinde %{round(league_summary.get('accuracy', 0) * 100)}, Beşiktaş maç önü arşivinde %{round(match_summary.get('accuracy', 0) * 100)} doğrulukta; ürün dili olasılık, güven ve senaryo üzerinden ilerler.</li>
-          <li>Taraf eğilimi verilen Beşiktaş maçlarında isabet %{round(match_summary.get('actionable_accuracy', 0) * 100)}; zayıf sinyalli maçlar artık senaryo anlatımı olarak işaretlenir.</li>
-          <li>Gol adayı motoru Top 5 içinde %{round(goal_summary.get('top_5_hit_rate', 0) * 100)} isabet verdi; bu modül ürün tarafında daha güçlü.</li>
-          <li>FM scout programı rol bazlı aday, tahmini fiziksel yük ve sözleşme fırsatı üretir.</li>
-        </ul>
-      </section>
-      <section>
-        <h2>Veri Omurgası</h2>
-        <ul>
-          <li>TFF 2025-2026: {data_catalog.get('matches', 0)} maç, {data_catalog.get('goals', 0)} gol, {data_catalog.get('cards', 0)} kart.</li>
-          <li>Transfermarkt: {data_catalog.get('transfermarkt_league_clubs', 0)}/18 kulüp, {data_catalog.get('transfermarkt_league_players', 0)} oyuncu ve €{data_catalog.get('transfermarkt_league_market_value_total_eur', 0):,} lig piyasa değeri katmanı.</li>
-          <li>API-Football: 2024 geçmiş sezon snapshot ve derin kadro/sakatlık katmanı bağlı; 2025 plan kısıtı nedeniyle ana sezon TFF ile yürür.</li>
-        </ul>
-      </section>
-    </div>
   </main>
   <script defer src="/_vercel/insights/script.js"></script>
 </body>

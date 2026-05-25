@@ -1238,7 +1238,9 @@ Bir sonraki oturumda önce `PROJECT_STATE.md` okunmalı. Ardından öncelik:
 ## 2026-05-25 Haber Pipeline ve Transfer Sezonu Bağlam Raporu
 
 - RSS haber toplayıcısı eklendi (`src/collect_news_rss.py`): 6 Türk spor kaynağından 210+ makale/çalıştırma.
-- Twitter/X toplayıcısı eklendi (`src/collect_news_twitter.py`): 12 Türk futbol hesabını Nitter RSS ile takip eder; yedek instance listesi ve zarif başarısızlık desteği.
+- Twitter/X toplayıcısı genişletildi (`src/collect_news_twitter.py`): 18 resmi kulüp dahil 30 hesabı izler; `X_BEARER_TOKEN` varsa resmi X API v2 kullanıcı timeline'ını, yoksa yalnız geliştirme fallback'i olarak Nitter RSS'i kullanır.
+- X collector erişim başarısız olsa bile durum snapshot'ı üretir. Mevcut yerel çıktı `x_api/MISSING_CREDENTIALS`: `0/30` başarılı hesap ve `0` gönderi; resmi sosyal teyit henüz haber analizine girmiyor.
+- Transfer haberleri kaynak teyit kapısından geçer: güncel 210 RSS kaydından analiz edilen 58 içerikte 8 iddia bulunur; `0` resmi, `0` çoklu kaynak, `8` inceleme gerekli ve teyitsiz kayıtların hiçbiri model/scout kararına aktarılmaz.
 - Haber analiz motoru yeniden yazıldı (`src/analyze_news_with_claude.py`): API anahtarı gerektirmeyen kural-tabanlı Türkçe NER sistemi; transfer/sakat/cezalı/yükseliş/sözleşme regex kalıpları, 691 oyuncu veritabanıyla eşleşme. Claude Haiku isteğe bağlı iyileştirici olarak eklendi.
 - Haber istihbarat raporu (`src/build_news_intelligence_report.py`) 4 sekmeye genişletildi: Haber Akışı, Transfer Radar, Sakat/Cezalı, Lig Değişiklikleri. Çorumspor ve diğer yükselen takımlar için yükseliş sinyali tespiti eklendi.
 - Transfer Sezonu Bağlam Raporu eklendi (`src/build_transfer_season_context.py`): 261 sözleşmesi biten oyuncu (€429M toplam değer, Barış Alper Yılmaz €30M önde), 180 son yıl adayı, yükselen takım analizi, transfer penceresi takvimi. Günlük pipeline'a eklendi.

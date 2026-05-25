@@ -13,9 +13,11 @@ düzeltmeleri listeler; otomatik yayın güveni anlamına gelmez.
 
 - `src/collect_news_twitter.py` içinde 30 hesap tanımlı: 18 resmi kulüp,
   TFF/lig, medya ve transfer sinyal hesapları.
-- Çalışma alanında üretilmiş `news_twitter_latest_2025_2026.json` snapshot'ı
-  henüz yok; bu nedenle mevcut transfer analiz çıktısı RSS kaynaklarıyla
-  sınırlı.
+- Collector resmi X API v2 kullanıcı timeline yolunu destekliyor; bunun için
+  ortamda `X_BEARER_TOKEN` gerekir. Anahtar yokken Nitter yalnız geliştirme
+  fallback'i olarak denenir ve başarısız olsa bile durum snapshot'ı yazılır.
+- Başarılı gönderi snapshot'ı henüz yok; bu nedenle mevcut transfer analiz
+  çıktısı RSS kaynaklarıyla sınırlı.
 - Önceki üç resmi handle açığı kodda giderildi:
 
 | Kayıt | Eski handle | Kullanılan ana handle | Neden |
@@ -73,11 +75,12 @@ Mevcut collector'da bulunan `@beINSPORTS_TR`, `@fanatikgazetesi`,
 
 ## Toplama Yöntemi ve Yayın Kuralı
 
-Mevcut collector Nitter RSS instance'larına bağlıdır; bu yapı üretim için
-kararlı veya yetkilendirilmiş ana veri yolu kabul edilmemeli. Üretim
-entegrasyonu için X API kullanıcı gönderileri endpoint'i
-`GET /2/users/:id/tweets` ile resmi hesap timeline'ları, son yedi günlük konu
-araması için recent search kullanılmalıdır.
+Collector artık üretim yolunda X API kullanıcı gönderileri endpoint'ini
+`GET /2/users/:id/tweets` kullanır ve hesapları `GET /2/users/by` ile çözer.
+Nitter RSS kararlı veya yetkilendirilmiş ana veri yolu değildir; sadece
+geliştirme fallback'i olarak korunur. X API post okumaları kullanıma göre
+ücretlendirildiği için anahtar ve kredi/bütçe olmadan otomatik API çağrısı
+yapılmaz.
 
 - Ham saklama: post kimliği, hesap kimliği, metin, oluşturma zamanı, kaynak
   URL'i ve çıkarılmış sinyal; medya dosyası kopyalanmamalı.
@@ -90,13 +93,14 @@ araması için recent search kullanılmalıdır.
 
 ## Uygulama Sırası
 
-1. Yapılandırılmış X hesaplarında ilk başarılı snapshot'ı üret ve hesap
-   erişim/handle doğrulama raporunu kaydet.
+1. `X_BEARER_TOKEN` ve kontrollü okuma bütçesi tanımlanarak yapılandırılmış X
+   hesaplarında ilk başarılı snapshot'ı üret; hesap erişim/handle doğrulama
+   durumu snapshot içinde saklanır.
 2. TFF ve resmi kulüp kaynaklarıyla availability şemasını tüm 18 takıma aç.
 3. `@trtspor`, `@SportsDigitale` ve `@yagosabuncuoglu` kaynaklarından gelen
    verinin yalnız `secondary_signal` olarak kaldığını testle güvenceye al.
-4. Nitter tabanlı denemeyi geliştirme fallback'i olarak ayır; üretimde X API
-   kimlik/doğrulama ve saklama politikasını uygula.
+4. Nitter geliştirme fallback'i olarak ayrıldı; ilk gerçek X API snapshot'ı
+   sonrasında saklama ve display politikasını gerçek veriyle denetle.
 5. Kaynak bazlı kapsama raporu üret: hesap erişim başarısı, bulunan resmi
    sakat/ceza sinyali, doğrulanan transfer ve çözülmeyen haber kuyruğu.
 
@@ -115,6 +119,7 @@ araması için recent search kullanılmalıdır.
   [Sports Digitale](https://x.com/SportsDigitale/status/2040856569106051321).
 - API ve kullanım politikası:
   [X API user timelines](https://docs.x.com/x-api/posts/timelines/introduction),
+  [X API pricing](https://docs.x.com/x-api/getting-started/pricing),
   [X API recent search](https://docs.x.com/x-api/posts/search/introduction),
   [X Developer Policy](https://docs.x.com/developer-terms/policy),
   [X display requirements](https://docs.x.com/developer-terms/display-requirements).

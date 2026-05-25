@@ -100,6 +100,7 @@ Gerekli secret'lar:
 
 - `API_FOOTBALL_KEY`
 - `FOOTBALL_DATA_KEY`
+- `X_BEARER_TOKEN` (resmi X timeline okuması; X API kullanım maliyeti/bütçesi kontrol edilerek tanımlanır)
 
 Vercel tarafında en temiz akış:
 

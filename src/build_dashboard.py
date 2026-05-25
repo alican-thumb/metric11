@@ -170,7 +170,7 @@ def build_html(summary: dict, previews: list[dict], goal_backtest: dict) -> str:
     }}
     .grid {{
       display: grid;
-      grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+      grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
       gap: 16px;
     }}
     section {{
@@ -257,12 +257,19 @@ def build_html(summary: dict, previews: list[dict], goal_backtest: dict) -> str:
       .topbar {{ position: static; flex-direction: column; align-items: stretch; padding: 11px 12px 0; gap: 0; min-height: unset; }}
       .brand {{ padding-bottom: 8px; }}
       .topnav {{ border-top: 1px solid #1e3228; padding: 7px 0 9px; justify-content: flex-start; }}
-      header {{ padding: 20px 14px; }}
-      header h1 {{ font-size: 27px; }}
-      .fixture strong {{ font-size: 23px; }}
-      main {{ padding: 12px 12px 30px; }}
-      section {{ padding: 13px; }}
-      table {{ min-width: 360px; font-size: 12px; }}
+      header {{ padding: 18px 14px; }}
+      header h1 {{ font-size: 22px; }}
+      .fixture strong {{ font-size: 21px; }}
+      .prob b {{ font-size: 22px; }}
+      main {{ padding: 10px 10px 30px; }}
+      section {{ padding: 12px; }}
+      table {{ min-width: 320px; font-size: 12px; }}
+      .toolbar {{ grid-template-columns: 1fr; }}
+      .toolbar select {{ grid-column: auto; }}
+    }}
+    @media (max-width: 430px) {{
+      header h1 {{ font-size: 18px; }}
+      .prob-grid {{ grid-template-columns: 1fr 1fr; }}
     }}
   </style>
 </head>

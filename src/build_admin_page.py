@@ -75,7 +75,7 @@ def _build_html() -> str:
             err = acc.get("error")
             fetched = acc.get("fetched", 0)
             sc = "#ef4444" if err else "#22c55e"
-            st = f"Hata: {escape(str(err)[:70])}" if err else f"{fetched} tweet"
+            st = f"Hata: {escape(str(err)[:70])}" if err else f"{fetched} gönderi"
             tw_rows += (
                 f"<tr>"
                 f"<td>@{escape(acc['handle'])}</td>"

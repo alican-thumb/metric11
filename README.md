@@ -22,6 +22,7 @@ Paylasilabilir sablon `.env.template` dosyasindadir. Anahtarlar yerelde `.env` v
 ```bash
 API_FOOTBALL_KEY=...
 FOOTBALL_DATA_KEY=...
+X_BEARER_TOKEN=...
 ```
 
 ## Veri Kesif Calistirma
@@ -131,6 +132,12 @@ python -m src.build_product_home
 ```
 
 `data_catalog_2025_2026` iç kaynak/lisans/risk takibi içindir. `public_source_summary_2025_2026` ise kullanıcı arayüzünde gösterilebilir genel kaynak kategorilerini üretir. Kaynak gizleyerek lisans veya kullanım şartı riski aşılmaya çalışılmaz.
+
+Transfer haber takibi için `python -m src.collect_news_twitter` çalıştırıldığında
+`X_BEARER_TOKEN` varsa resmi X API v2 kullanıcı timeline'ları okunur. X API
+post okumaları kullanıma göre ücretlendirilebilir; token yalnız kontrollü
+günlük çalıştırmada tanımlanmalıdır. Token yoksa Nitter geliştirme fallback'i
+denenir ve başarısızlık da snapshot durum bilgisi olarak kaydedilir.
 
 ## Onemli Paneller
 

@@ -21,6 +21,15 @@ def article(article_id, source, transfer, source_type="rss", account_type=None):
 
 
 class TransferIntelligenceTests(unittest.TestCase):
+    def test_tags_keep_stable_input_order_without_duplicates(self):
+        result = rule_based_analyze(
+            {"title": "Özel haber", "summary": "", "categories": ["second", "first", "second"]},
+            {},
+        )
+
+        self.assertEqual(result["news_types"], ["second", "first"])
+        self.assertEqual(result["tags"], ["second", "first"])
+
     def test_transfer_does_not_assign_player_only_seen_in_summary(self):
         source = {
             "title": "Galatasaray yeni yıldız için transfer görüşmesinde",
