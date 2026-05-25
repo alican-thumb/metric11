@@ -249,6 +249,15 @@ Parse edilen alanlar:
 ### Mobil CSS Genişletmesi (build_live_feed.py)
 - `@media(max-width:600px)`: `pills` 2 sütunlu grid, `panel` ve `main` padding sıkıştırıldı. Küçük ekranlarda daha kompakt görünüm.
 
+## 2026-05-25 Yaş Eğrisi Analizi (Session 3 — devam)
+
+### Scout Raporu Yaş Eğrisi Tab'ı (build_transfer_recommendation_report.py)
+- `build_age_curve_analysis()` fonksiyonu eklendi: tüm blueprint aday havuzundan yaş bracketi dağılımı (U21/U24/U27/U30/30+), bracket başına ortalama piyasa değeri ve sözleşme riski sayısı hesaplanıyor.
+- **Değer düşüş riski**: 30+ yaş, piyasa değeri ≥€1M ve kısa sözleşmeli oyuncular listeleniyor — değer penceresi kapanmadan satış/uzatma kararı alınması için uyarı.
+- **Genç değer fırsatı**: U23 + expiring sözleşmeli oyuncular — düşük bonusla edinme fırsatı.
+- HTML raporu yeni "Yaş Eğrisi" tab'ı ile genişledi: 5 bracket kartı + değer düşüş risk tablosu + genç fırsat tablosu.
+- `build_report()` artık `age_curve` alanını da JSON'a ekliyor.
+
 ### Dashboardlar
 
 Statik HTML olarak iki demo üretildi:
