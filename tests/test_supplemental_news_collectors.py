@@ -48,6 +48,9 @@ class _Node:
     def get(self, name: str):
         return self.attrs.get(name)
 
+    def __getitem__(self, name: str):
+        return self.attrs[name]
+
 
 if __name__ == "__main__":
     unittest.main()
