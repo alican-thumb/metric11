@@ -54,8 +54,8 @@ jobs:
 
       - name: Commit and push generated outputs
         run: |
-          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
-          git config --global user.name "${{ github.actor }}"
+          git config --global user.email "alican-thumb@users.noreply.github.com"
+          git config --global user.name "alican-thumb"
           git add data/processed/
           git diff --staged --quiet && echo "No changes to commit" || \
             git commit -m "chore: full pipeline $(date -u +%Y-%m-%dT%H:%M:%SZ) [skip ci]"
