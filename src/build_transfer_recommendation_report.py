@@ -69,6 +69,7 @@ def build_report(blueprints_data: dict, top_roles: int, top_candidates: int) -> 
     team_reports.sort(key=lambda t: -t["priority_score"])
     market_alerts = build_market_alerts(blueprints)
     priority_ranking = build_priority_ranking(team_reports)
+    age_curve = build_age_curve_analysis(blueprints)
     total_recommendations = sum(
         len(r["candidates"]) for t in team_reports for r in t["recommendations"]
     )
@@ -87,6 +88,7 @@ def build_report(blueprints_data: dict, top_roles: int, top_candidates: int) -> 
         "team_reports": team_reports,
         "market_alerts": market_alerts,
         "priority_ranking": priority_ranking,
+        "age_curve": age_curve,
     }
 
 
@@ -317,6 +319,91 @@ def _team_priority_score(blueprint: dict) -> float:
     return round((3.0 - ppm) * 15 + (ga - 1.0) * 10 + (2.0 - gf) * 8 + weakness_count * 5, 1)
 
 
+def build_age_curve_analysis(blueprints: list[dict]) -> dict:
+    """Tüm adaylardan yaş eğrisi ve değer düşüş riski analizi üretir."""
+    seen: dict[str, dict] = {}
+    for bp in blueprints:
+        for rp in bp.get("role_plans", []):
+            for c in rp.get("top_candidates", []):
+                pid = c.get("player_id") or c.get("name")
+                if pid and pid not in seen:
+                    seen[pid] = c
+
+    all_candidates = list(seen.values())
+
+    brackets = {"U21": [], "U24": [], "U27": [], "U30": [], "30+": []}
+    for c in all_candidates:
+        age = c.get("age") or 0
+        if age <= 21:
+            brackets["U21"].append(c)
+        elif age <= 24:
+            brackets["U24"].append(c)
+        elif age <= 27:
+            brackets["U27"].append(c)
+        elif age <= 30:
+            brackets["U30"].append(c)
+        else:
+            brackets["30+"].append(c)
+
+    # Değer düşüş riski: 30+ yaş, market değeri var, kısa sözleşme
+    value_cliff = sorted(
+        [
+            c for c in all_candidates
+            if (c.get("age") or 0) >= 30
+            and (c.get("market_value_eur") or 0) >= 1_000_000
+            and c.get("contract_risk") in ("EXPIRING_SOON", "ONE_YEAR_WINDOW")
+        ],
+        key=lambda c: -(c.get("market_value_eur") or 0),
+    )[:10]
+
+    # Genç değer fırsatı: U23, yüksek fit, expiring
+    young_value = sorted(
+        [
+            c for c in all_candidates
+            if (c.get("age") or 99) <= 23
+            and c.get("contract_risk") in ("EXPIRING_SOON", "ONE_YEAR_WINDOW")
+        ],
+        key=lambda c: -(c.get("fit_score") or 0),
+    )[:10]
+
+    def _bracket_summary(bracket_list: list[dict]) -> dict:
+        if not bracket_list:
+            return {"count": 0, "avg_value_m": 0.0, "expiring_count": 0}
+        vals = [c.get("market_value_eur") or 0 for c in bracket_list]
+        expiring = sum(1 for c in bracket_list if c.get("contract_risk") in ("EXPIRING_SOON", "ONE_YEAR_WINDOW"))
+        return {
+            "count": len(bracket_list),
+            "avg_value_m": round(sum(vals) / len(vals) / 1_000_000, 2),
+            "expiring_count": expiring,
+        }
+
+    return {
+        "brackets": {k: _bracket_summary(v) for k, v in brackets.items()},
+        "value_cliff_risk": [
+            {
+                "name": c.get("name", ""),
+                "team": c.get("team", ""),
+                "age": c.get("age"),
+                "contract_risk": c.get("contract_risk"),
+                "contract_months_left": c.get("contract_months_left"),
+                "market_value_eur": c.get("market_value_eur"),
+            }
+            for c in value_cliff
+        ],
+        "young_value_opportunities": [
+            {
+                "name": c.get("name", ""),
+                "team": c.get("team", ""),
+                "age": c.get("age"),
+                "contract_risk": c.get("contract_risk"),
+                "fit_score": c.get("fit_score"),
+                "market_value_eur": c.get("market_value_eur"),
+            }
+            for c in young_value
+        ],
+    }
+
+
 def build_market_alerts(blueprints: list[dict]) -> dict:
     seen: dict[str, dict] = {}
     for bp in blueprints:
@@ -433,6 +520,7 @@ def build_html(report: dict) -> str:
 
     team_cards_html = _build_team_cards(report["team_reports"])
     ranking_table_html = _build_ranking_table(report["priority_ranking"])
+    age_curve_html = _build_age_curve_html(report["age_curve"])
 
     def market_table(candidates: list[dict], title: str) -> str:
         rows = ""
@@ -568,6 +656,7 @@ def build_html(report: dict) -> str:
   <div class="tab active" onclick="showTab('ranking',this)">Lig Sıralaması</div>
   <div class="tab" onclick="showTab('teams',this)">Takım Planları</div>
   <div class="tab" onclick="showTab('market',this)">Market Alarmları</div>
+  <div class="tab" onclick="showTab('agecurve',this)">Yaş Eğrisi</div>
 </div>
 <div class="content">
   <div id="ranking" class="section active">
@@ -585,6 +674,9 @@ def build_html(report: dict) -> str:
     {free_agent_table}
     {negotiation_table}
     {young_table}
+  </div>
+  <div id="agecurve" class="section">
+    {age_curve_html}
   </div>
 </div>
 <script>
@@ -718,6 +810,71 @@ def _build_ranking_table(ranking: list[dict]) -> str:
         "</tr></thead>"
         f"<tbody>{rows}</tbody>"
         "</table></div>"
+    )
+
+
+def _build_age_curve_html(age_curve: dict) -> str:
+    brackets = age_curve.get("brackets", {})
+    cliff = age_curve.get("value_cliff_risk", [])
+    young = age_curve.get("young_value_opportunities", [])
+
+    BRACKET_ORDER = ["U21", "U24", "U27", "U30", "30+"]
+    BRACKET_COLORS = {"U21": "#22c55e", "U24": "#84cc16", "U27": "#eab308", "U30": "#f97316", "30+": "#ef4444"}
+
+    bracket_cards = ""
+    for b in BRACKET_ORDER:
+        info = brackets.get(b, {})
+        color = BRACKET_COLORS[b]
+        bracket_cards += (
+            f"<div style='background:#0f172a;border:1px solid #1e293b;border-radius:8px;padding:14px 18px;flex:1;min-width:110px;text-align:center'>"
+            f"<div style='font-size:20px;font-weight:700;color:{color}'>{info.get('count', 0)}</div>"
+            f"<div style='font-size:12px;color:#64748b;margin:2px 0'>{b}</div>"
+            f"<div style='font-size:11px;color:#94a3b8'>ort. €{info.get('avg_value_m', 0):.1f}M</div>"
+            f"<div style='font-size:10px;color:#d97706'>{info.get('expiring_count', 0)} sözleşme riski</div>"
+            f"</div>"
+        )
+
+    def _cliff_row(c: dict) -> str:
+        mv = c.get("market_value_eur") or 0
+        mv_str = f"€{mv / 1_000_000:.1f}M" if mv >= 1_000_000 else f"€{mv // 1000}K"
+        risk_color = "#dc2626" if c.get("contract_risk") == "EXPIRING_SOON" else "#d97706"
+        return (
+            f"<tr><td><strong style='color:#f1f5f9'>{c['name']}</strong></td>"
+            f"<td style='color:#94a3b8'>{c['team']}</td>"
+            f"<td style='color:#f97316'>{c['age']}</td>"
+            f"<td style='color:{risk_color};font-weight:600'>{c.get('contract_months_left','')}ay</td>"
+            f"<td style='color:#fbbf24'>{mv_str}</td></tr>"
+        )
+
+    def _young_row(c: dict) -> str:
+        mv = c.get("market_value_eur") or 0
+        mv_str = f"€{mv / 1_000_000:.1f}M" if mv >= 1_000_000 else (f"€{mv // 1000}K" if mv else "—")
+        risk_label = "Serbest" if c.get("contract_risk") == "EXPIRING_SOON" else "1 yıl"
+        return (
+            f"<tr><td><strong style='color:#f1f5f9'>{c['name']}</strong></td>"
+            f"<td style='color:#94a3b8'>{c['team']}</td>"
+            f"<td style='color:#22c55e'>{c['age']}</td>"
+            f"<td style='color:#16a34a;font-weight:600'>{risk_label}</td>"
+            f"<td style='color:#fbbf24'>{mv_str}</td></tr>"
+        )
+
+    cliff_rows = "".join(_cliff_row(c) for c in cliff) or "<tr><td colspan='5' style='color:#64748b;padding:12px'>Veri yok</td></tr>"
+    young_rows = "".join(_young_row(c) for c in young) or "<tr><td colspan='5' style='color:#64748b;padding:12px'>Veri yok</td></tr>"
+    tbl_header = "<thead><tr><th>Oyuncu</th><th>Takım</th><th>Yaş</th><th>Sözleşme</th><th>Piyasa Değeri</th></tr></thead>"
+
+    return (
+        "<h2 style='color:#f1f5f9;margin-bottom:8px'>Yaş Eğrisi Analizi</h2>"
+        "<p style='color:#64748b;font-size:0.82rem;margin-bottom:20px'>"
+        "Lig genelindeki aday havuzunun yaş dağılımı, değer düşüş riski ve genç fırsat profili.</p>"
+        f"<div style='display:flex;gap:10px;flex-wrap:wrap;margin-bottom:28px'>{bracket_cards}</div>"
+        "<h3 style='color:#ef4444;margin-bottom:10px'>Değer Düşüş Riski (30+ Yaş + Kısa Sözleşme)</h3>"
+        "<p style='color:#64748b;font-size:0.8rem;margin-bottom:12px'>Piyasa değeri yüksek ancak sözleşmesi biten veya 1 yıl kalan 30+ yaş oyuncular — değer penceresi kapanmadan satış veya uzatma kararı verilmeli.</p>"
+        "<div class='table-wrap' style='margin-bottom:28px'><table class='market-table'>"
+        f"{tbl_header}<tbody>{cliff_rows}</tbody></table></div>"
+        "<h3 style='color:#22c55e;margin-bottom:10px'>Genç Değer Fırsatları (23 Yaş Altı + Expiring)</h3>"
+        "<p style='color:#64748b;font-size:0.8rem;margin-bottom:12px'>Sözleşmesi biten veya 1 yıl kalan U23 oyuncular — düşük bonusla edinme fırsatı.</p>"
+        "<div class='table-wrap'><table class='market-table'>"
+        f"{tbl_header}<tbody>{young_rows}</tbody></table></div>"
     )
 
 
