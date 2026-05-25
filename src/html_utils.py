@@ -43,13 +43,13 @@ _CSS = """
 
 _NAV = (
     '<div class="topbar">'
-    '<a class="brand" href="football_intelligence_home.html"><span class="brand-mark">11</span> metric11 <span class="season">Süper Lig 2025/26</span></a>'
+    '<a class="brand" href="gundem_2025_2026.html"><span class="brand-mark">11</span> metric11 <span class="season">Süper Lig 2025/26</span></a>'
     '<nav>'
-    '<a href="football_intelligence_home.html">Merkez</a>'
-    '<a href="football_command_center_2025_2026.html">Analiz</a>'
-    '<a href="besiktas_2025_2026_dashboard_chronological.html">Maç Önü</a>'
+    '<a href="gundem_2025_2026.html">Gündem</a>'
+    '<a href="transfer_tracker_2025_2026.html">Transferler</a>'
+    '<a href="all_teams_preview_dashboard_2025_2026.html">Maç Önü</a>'
     '<a href="transfer_recommendation_report_2025_2026.html">Scout</a>'
-    '<a href="all_teams_preview_dashboard_2025_2026.html">Lig</a>'
+    '<a href="football_intelligence_home.html">Analiz</a>'
     '</nav>'
     '</div>'
 )
@@ -78,7 +78,7 @@ def page_html(title: str, body_html: str, description: str = "Süper Lig maç ta
         "<body>\n"
         f"  {_NAV}\n"
         '  <div class="report-wrap">\n'
-        f'    <a class="back-link" href="football_intelligence_home.html">Ana sayfaya dön</a>\n'
+        f'    <a class="back-link" href="gundem_2025_2026.html">Ana sayfaya dön</a>\n'
         f"    {body_html}\n"
         "  </div>\n"
         '  <script defer src="/_vercel/insights/script.js"></script>\n'

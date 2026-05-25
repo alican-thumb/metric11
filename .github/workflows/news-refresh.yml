@@ -47,6 +47,7 @@ jobs:
           python -m src.analyze_news_with_claude --only-relevant || true
           python -m src.build_news_intelligence_report
           python -m src.build_transfer_tracker
+          python -m src.build_live_feed
           python -m src.build_status_page
 
       - name: Commit and push

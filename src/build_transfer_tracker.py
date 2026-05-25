@@ -197,13 +197,13 @@ def build_html(signals: list[dict], summary: dict) -> str:
 </head>
 <body>
 <div class="topbar">
-  <a class="brand" href="football_intelligence_home.html"><b>11</b> metric11</a>
+  <a class="brand" href="gundem_{SEASON}.html"><b>11</b> metric11</a>
   <nav class="topnav">
-    <a href="football_intelligence_home.html">Merkez</a>
-    <a href="football_command_center_2025_2026.html">Analiz</a>
-    <a href="all_teams_preview_dashboard_2025_2026.html">Maç Önü</a>
-    <a href="transfer_recommendation_report_2025_2026.html">Scout</a>
-    <a class="active" href="transfer_tracker_{SEASON}.html">Transfer</a>
+    <a href="gundem_{SEASON}.html">Gündem</a>
+    <a class="active" href="transfer_tracker_{SEASON}.html">Transferler</a>
+    <a href="all_teams_preview_dashboard_{SEASON}.html">Maç Önü</a>
+    <a href="transfer_recommendation_report_{SEASON}.html">Scout</a>
+    <a href="football_intelligence_home.html">Analiz</a>
   </nav>
 </div>
 <div class="header">
