@@ -33,11 +33,9 @@ jobs:
 
       - name: Haber topla
         env:
-          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
           python -m src.collect_news_rss
-          python -m src.collect_news_twitter
           python -m src.collect_official_club_news
 
       - name: Haber raporlarını güncelle
