@@ -1,6 +1,6 @@
 # Futbol İstihbarat Platformu - Proje Durumu
 
-Son güncelleme: 2026-05-26 (session 5)
+Son güncelleme: 2026-05-26 (session 6)
 
 ## Amaç
 
@@ -1515,3 +1515,19 @@ Bir sonraki oturumda önce `PROJECT_STATE.md` okunmalı. Ardından öncelik:
 - API anahtarı bulunmayan X collector günlük `NETWORK_COMMANDS` zincirinden çıkarıldı; modül isteğe bağlı kullanım için korunur. Canlı transfer metni artık X sinyalini yalnız erişim yapılandırıldığında değerlendirildiği biçimde ifade eder.
 - Manuel Transfermarkt alias eşlemeleri doğrulanmış snapshot eşleşmesiyle karıştırılmadan ayrıca izlenir: `498` doğrulanmış eşleşme, ağ teyidi bekleyen `13` manuel eşleme ve lig içi manuel dahil kullanılabilir kapsama `%81.6`. Manuel eşlemeler çözülmemiş yüksek kullanım kuyruğunu yapay biçimde büyütmez.
 - Regresyon kapsamı `tests/test_transfermarkt_match_review_queue.py` ve `tests/test_season_boundaries.py` ile genişletildi. Doğrulama: `.venv/bin/python -m compileall -q src tests` ve `.venv/bin/python -m unittest discover -s tests -p 'test_*.py'` başarılı (`44/44`).
+
+## 2026-05-26 RSS Kaynak Temizliği (Session 6)
+
+- `collect_news_rss.py` RSS kaynak listesi 15→9 kaynağa indirildi. 5 kaynak 404 döndürüyor, 1 kaynak (NTV Spor) HTML sayfa döndürüyor (feedparser 0 entry): Sporx, Fanatik, Fotomaç, TRT Spor, Goal.com TR, NTV Spor kaldırıldı.
+- URL düzeltmeleri: Aksam `/rss/spor`→`/rss/rss.asp`, Posta `/rss/spor`→`/rss`, Haberturk `/rss` (genel)→`/rss/spor.xml` (spor özel, 30 entry).
+- Kalan 9 çalışan kaynak: Hürriyet, Milliyet, Sabah, Haberturk Spor, AA Spor, Takvim, Aksam, Posta, CNN Türk.
+
+## 2026-05-26 Transfer Sezonu Modu ve Diğer İyileştirmeler (Session 5)
+
+- `build_live_feed.py`: Transfer penceresi 3-durumlu banner eklendi; `_is_transfer_season` bayrağıyla ana sayfa layout'u dinamik olarak transfer sezonu moduna geçiyor. Transfer sezonu paneli (serbest kalacak, son yıl kontrat, transfer sinyali, piyasa değeri metrik grid'i) ve Analiz Platformu transfer/scout linkleri aktifleşiyor.
+- `build_dashboard.py`: Python 3.11 uyumlu `off_season_banner` değişkeni, "Sezon arısı" yazım hatası düzeltmesi.
+- `src/model_league_predictions.py`: `DRAW_PRED_MAX_GAP` 0.14→0.18; beraberlik recall %28.9→%40.8, genel doğruluk %51.6→%50.4.
+- `src/build_oos_validation.py`: `draw_calibrated_prediction` çağrısına eksik `strength_edge` parametresi eklendi; backtest ile ana model tutarsızlığı giderildi.
+- OG Image: `data/processed/og-image.png` üretildi (1200×630 Pillow PNG). Tüm 10 HTML builder dosyasında `og:image` SVG→PNG ve göreceli→mutlak URL (`https://metric11.com/og-image.png`); Twitter/X kart önizlemesi düzeltildi.
+- `collect_news_telegram.py`: Aktif olmayan 4 kanal kaldırıldı (superligson, futbolhaber, superligtransfer, basaksehirhaberleri); aktif kanal sayısı 11→7.
+- Secondary page topbarlar: `build_fm_style_scout_program.py`, `build_league_intelligence_report.py`, `build_position_scout_matrix.py`, `build_enriched_scout_dashboard.py`, `build_team_needs_dashboard.py` — 5 dosyaya standart sticky metric11 topbar eklendi.

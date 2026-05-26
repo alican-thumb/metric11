@@ -264,6 +264,10 @@ def build_html() -> str:
     official_count = tracker_summary.get("official_count", 0)
 
     _state, banner_css, dot_css, window_msg = _window_state()
+    _is_transfer_season = _state in ("countdown", "open")
+
+    mv_eur = ctx_summary.get("free_agent_total_market_value_eur", 0)
+    mv_str = f"€{mv_eur / 1_000_000:.0f}M" if mv_eur >= 1_000_000 else ""
 
     now_str = datetime.now(timezone.utc).strftime("%d.%m.%Y %H:%M UTC")
     articles_html = "".join(_article_html(a, cnt, player) for a, cnt, player in articles_with_count) or "<p style='color:var(--muted);padding:16px 0'>Henüz sinyal yok.</p>"
@@ -326,7 +330,7 @@ def build_html() -> str:
   <nav class="topnav">
     <a class="active" href="/">Gündem</a>
     <a href="transfer_tracker_{SEASON}.html">Transferler</a>
-    <a href="all_teams_preview_dashboard_{SEASON}.html">Maç Önü</a>
+    <a href="all_teams_preview_dashboard_{SEASON}.html">{"Arşiv" if _is_transfer_season else "Maç Önü"}</a>
     <a href="transfer_recommendation_report_{SEASON}.html">Scout</a>
     <a href="football_intelligence_home.html">Analiz</a>
   </nav>
@@ -357,17 +361,43 @@ def build_html() -> str:
     </div>
   </div>
   <div style="display:flex;flex-direction:column;gap:16px">
+    {"" if not _is_transfer_season else f"""<div class="panel" style="border-top:3px solid var(--lime);font-size:13px">
+      <div style="font-size:10px;font-weight:700;color:var(--lime);letter-spacing:.06em;margin-bottom:10px;text-transform:uppercase">Transfer Sezonu 2026-2027</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px">
+        <div style="background:#0f2318;border-radius:6px;padding:10px 12px">
+          <div style="font-size:22px;font-weight:800;color:white">{free_agents}</div>
+          <div style="color:#8fa89a;font-size:11px;margin-top:2px">Serbest Kalacak</div>
+        </div>
+        <div style="background:#0f2318;border-radius:6px;padding:10px 12px">
+          <div style="font-size:22px;font-weight:800;color:white">{final_year}</div>
+          <div style="color:#8fa89a;font-size:11px;margin-top:2px">Son Yıl Kontrat</div>
+        </div>
+        <div style="background:#0f2318;border-radius:6px;padding:10px 12px">
+          <div style="font-size:22px;font-weight:800;color:white">{signals_count}</div>
+          <div style="color:#8fa89a;font-size:11px;margin-top:2px">Transfer Sinyali</div>
+        </div>
+        <div style="background:#0f2318;border-radius:6px;padding:10px 12px">
+          <div style="font-size:18px;font-weight:800;color:white">{mv_str}</div>
+          <div style="color:#8fa89a;font-size:11px;margin-top:2px">Serbest Piyasa Değeri</div>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:7px">
+        {_ana_link(f"transfer_recommendation_report_{SEASON}.html", "Takım transfer önerileri →", bold=True)}
+        {_ana_link(f"transfer_season_context_{SEASON}.html", "Serbest kalacak oyuncular →")}
+      </div>
+    </div>"""}
     <div class="panel" style="font-size:13px">
       <h2 style="margin-bottom:14px">Analiz Platformu</h2>
-      <div style="font-size:10px;font-weight:700;color:var(--muted);letter-spacing:.06em;margin-bottom:6px;text-transform:uppercase">Transfer &amp; Kadro</div>
+      {"" if _is_transfer_season else f"""<div style="font-size:10px;font-weight:700;color:var(--muted);letter-spacing:.06em;margin-bottom:6px;text-transform:uppercase">Transfer &amp; Kadro</div>
       <div style="display:flex;flex-direction:column;gap:7px;margin-bottom:14px">
         {_ana_link(f"transfer_recommendation_report_{SEASON}.html", "Takım transfer önerileri", bold=True)}
         {_ana_link(f"transfer_season_context_{SEASON}.html", "Serbest kalacak oyuncular")}
         {_ana_link(f"transfer_tracker_{SEASON}.html", "Transfer takip listesi")}
-      </div>
-      <div style="font-size:10px;font-weight:700;color:var(--muted);letter-spacing:.06em;margin-bottom:6px;text-transform:uppercase">Maç &amp; Tahmin</div>
+      </div>"""}
+      <div style="font-size:10px;font-weight:700;color:var(--muted);letter-spacing:.06em;margin-bottom:6px;text-transform:uppercase">{"Sezon Arşivi" if _is_transfer_season else "Maç &amp; Tahmin"}</div>
       <div style="display:flex;flex-direction:column;gap:7px">
-        {_ana_link(f"all_teams_preview_dashboard_{SEASON}.html", "Maç önü arşivi (18 takım)", bold=True)}
+        {_ana_link(f"all_teams_preview_dashboard_{SEASON}.html", "Maç önü arşivi (18 takım)", bold=not _is_transfer_season)}
+        {_ana_link(f"transfer_tracker_{SEASON}.html", "Transfer takip listesi") if _is_transfer_season else ""}
         {_ana_link("football_intelligence_home.html", "Tüm analiz araçları")}
       </div>
     </div>

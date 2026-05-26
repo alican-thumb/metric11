@@ -41,7 +41,7 @@ RSS_SOURCES = [
     },
     {
         "name": "Haberturk Spor",
-        "url": "https://www.haberturk.com/rss",
+        "url": "https://www.haberturk.com/rss/spor.xml",
         "language": "tr",
         "category": "general",
     },
@@ -59,37 +59,13 @@ RSS_SOURCES = [
     },
     {
         "name": "Aksam Spor",
-        "url": "https://www.aksam.com.tr/rss/spor",
+        "url": "https://www.aksam.com.tr/rss/rss.asp",
         "language": "tr",
         "category": "general",
     },
     {
         "name": "Posta Spor",
-        "url": "https://www.posta.com.tr/rss/spor",
-        "language": "tr",
-        "category": "general",
-    },
-    {
-        "name": "NTV Spor",
-        "url": "https://www.ntvspor.net/rss",
-        "language": "tr",
-        "category": "general",
-    },
-    {
-        "name": "Sporx",
-        "url": "https://www.sporx.com/rss",
-        "language": "tr",
-        "category": "general",
-    },
-    {
-        "name": "Fanatik",
-        "url": "https://www.fanatik.com.tr/rss/spor",
-        "language": "tr",
-        "category": "general",
-    },
-    {
-        "name": "Fotomaç",
-        "url": "https://www.fotomac.com.tr/rss/spor",
+        "url": "https://www.posta.com.tr/rss",
         "language": "tr",
         "category": "general",
     },
@@ -98,18 +74,6 @@ RSS_SOURCES = [
         "url": "https://www.cnnturk.com/feed/rss/spor/news",
         "language": "tr",
         "category": "general",
-    },
-    {
-        "name": "TRT Spor",
-        "url": "https://www.trtspor.com.tr/rss.xml",
-        "language": "tr",
-        "category": "general",
-    },
-    {
-        "name": "Goal.com TR",
-        "url": "https://www.goal.com/tr/feeds/news?fmt=rss",
-        "language": "tr",
-        "category": "transfer",
     },
 ]
 
