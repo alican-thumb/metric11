@@ -1,6 +1,6 @@
 # Futbol İstihbarat Platformu - Proje Durumu
 
-Son güncelleme: 2026-05-25 (session 3)
+Son güncelleme: 2026-05-26 (session 4)
 
 ## Amaç
 
@@ -1140,6 +1140,22 @@ python -m src.simulate_player_match_impact --preview data/processed/previews_bes
 5. AI destekli hikayeli analiz üretimi.
 6. Tüm takımlar için maç önü raporları.
 7. Football Manager tarzı scout/transfer öneri ekranı. ✓ (build_transfer_recommendation_report.py — 2026-05-24)
+
+## 2026-05-26 Codex Entegrasyonu ve Haber Güvenilirliği (Session 4)
+
+### Codex Değişiklikleri Doğrulandı
+- `src/config.py`: `TRANSFER_WATCH_SEASON = "2026_2027"` ve `TRANSFER_WATCH_SEASON_LABEL = "2026-2027"` sabitleri eklendi. Tamamlanan analiz sezonu (2025-2026) ile aktif transfer izleme sezonu ayrıştırıldı.
+- `build_live_feed.py`, `build_transfer_tracker.py`, `build_news_intelligence_report.py`: Başlık ve meta etiketleri `TRANSFER_WATCH_SEASON_LABEL` kullanıyor — site "Süper Lig 2026-2027" olarak gösteriliyor.
+- `src/detect_squad_changes.py`: Transfermarkt kadro snapshot karşılaştırması ile otomatik transfer dedektörü. Her çalışmada önceki snapshot ile fark alır.
+- `src/build_transfermarkt_match_review_queue.py`: TFF-TM eşleşme kuyruğu üretici modülü eklendi.
+- `run_daily_pipeline.py`: `detect_squad_changes` ve `collect_transfermarkt_league_squads --season-id 2026` pipeline'a eklendi.
+- 8 yeni test eklendi (`tests/test_season_boundaries.py`, `tests/test_transfermarkt_match_review_queue.py`) — 8/8 PASS.
+- Tüm kritik build modülleri test edildi: 7/7 hatasız çalışıyor.
+
+### Haber Güncelleme Sorunu ve Çözümü
+- **Sorun**: `news-refresh.yml` 02:15 UTC scheduled run bugün çalışmadı (GitHub Actions schedule atlama davranışı).
+- **Anlık çözüm**: Haberler local çekildi (31 bugün makalesi), Vercel'e deploy edildi.
+- **Kalıcı çözüm**: `refresh.yml`'e haber toplama fallback adımları eklendi — 6 saatlik refresh (00:15, 06:15, 12:15, 18:15 UTC) artık RSS + Google News + resmi kulüp haberlerini de çekiyor.
 
 ## Çalıştırma Komutları
 
