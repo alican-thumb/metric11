@@ -1345,7 +1345,7 @@ Bir sonraki oturumda önce `PROJECT_STATE.md` okunmalı. Ardından öncelik:
 ### Canlı Çıkış Öncesi Kalan
 
 1. Kalan 115 rotasyon-kullanımlı eşleşmeyenin tamamlanması (öncelik düşük, scout blocking 0).
-2. Beraberlik tahmin sorunu: model hiç beraberlik tahmin etmiyor (%0 draw accuracy); kalibrasyon veya ayrı draw sinyali eklenmeli.
+2. ✅ Beraberlik tahmin sorunu giderildi: DRAW_PRED_MAX_GAP 0.14→0.18, OOS draw recall %7.9→%40.8 (31/76). build_oos_validation.py strength_edge eksikliği düzeltildi.
 3. Manual alias network verify: 13 alias `requires_network_verify=true`; değerler knowledge-based, TM'den doğrulanmalı.
 
 ## 2026-05-25 Responsive Arayüz Yenilemesi
