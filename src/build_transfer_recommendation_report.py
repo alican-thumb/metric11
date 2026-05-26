@@ -172,9 +172,10 @@ def score_candidate(candidate: dict, role_plan: dict, team_ctx: dict) -> dict:
     performance = min(50, goals * 3.5 + starts * 0.6)
     age_score = _age_score(age)
     fit_norm = min(40, fit / 5)
+    formation_fit = _formation_fit_score(role_plan.get("role_key", ""), candidate.get("verified_position"))
 
     transfer_score = round(
-        urgency * 0.35 + performance * 0.30 + age_score * 0.15 + fit_norm * 0.20,
+        urgency * 0.30 + performance * 0.28 + age_score * 0.14 + fit_norm * 0.18 + (formation_fit / 100 * 40) * 0.10,
         1,
     )
 
@@ -202,6 +203,7 @@ def score_candidate(candidate: dict, role_plan: dict, team_ctx: dict) -> dict:
         "cost_tier": cost_tier,
         "position_confidence": candidate.get("position_confidence", ""),
         "verified_position": candidate.get("verified_position"),
+        "formation_fit": formation_fit,
         "market_value_eur": candidate.get("market_value_eur"),
         "market_value_text": candidate.get("market_value_text"),
         "tm_id": candidate.get("tm_id"),
@@ -212,6 +214,78 @@ def score_candidate(candidate: dict, role_plan: dict, team_ctx: dict) -> dict:
     if candidate.get("preferred_foot"):
         result["preferred_foot"] = candidate["preferred_foot"]
     return result
+
+
+_FORMATION_FIT: dict[str, dict[str, int]] = {
+    # rol_key → pozisyon_anahtar_kelime → uyum_skoru (0-100)
+    # Türkçe (TFF) + İngilizce (Transfermarkt) pozisyon adları
+    "CB_DOMINANT": {
+        "stoper": 100, "centre-back": 100, "center-back": 100,
+        "merkez": 60, "central": 50,
+        "bek": 40, "back": 35,
+        "orta": 20, "kanat": 10, "forvet": 5, "forward": 5,
+    },
+    "CM_ENGINE": {
+        "orta saha": 100, "central midfield": 100, "attacking midfield": 90,
+        "merkez": 90,
+        "kanat": 50, "winger": 45,
+        "forvet": 30, "forward": 25,
+        "bek": 20, "back": 15, "stoper": 10,
+    },
+    "DM_SECURITY": {
+        "defensif": 100, "defensive midfield": 100, "holding": 90,
+        "orta saha": 80, "central midfield": 70, "merkez": 70,
+        "stoper": 40, "centre-back": 35,
+        "bek": 30, "back": 25,
+    },
+    "ST_SCORER": {
+        "forvet": 100, "santrfor": 100, "centre-forward": 100, "striker": 100,
+        "kanat": 60, "winger": 55, "second striker": 80,
+        "orta": 30, "midfield": 20,
+    },
+    "LW_CREATOR": {
+        "kanat": 100, "sol kanat": 100, "winger": 100, "left winger": 100, "right winger": 90,
+        "forvet": 70, "forward": 65,
+        "orta": 50, "midfield": 45,
+        "bek": 20, "wing-back": 40,
+    },
+    "FB_TWO_WAY": {
+        "bek": 100, "back": 100, "left-back": 100, "right-back": 100, "wing-back": 90,
+        "kanat": 60, "winger": 50,
+        "orta": 30, "midfield": 25,
+        "stoper": 20, "centre-back": 15,
+    },
+    "GK_STABILITY": {
+        "kaleci": 100, "goalkeeper": 100,
+    },
+    "LOW_RISK_REGULAR": {
+        "orta saha": 80, "midfield": 80, "central midfield": 80,
+        "kanat": 70, "winger": 70,
+        "forvet": 70, "forward": 70,
+        "bek": 70, "back": 70,
+        "stoper": 70, "centre-back": 70,
+    },
+    "RESALE_VALUE": {
+        "forvet": 90, "forward": 90, "centre-forward": 90,
+        "kanat": 90, "winger": 90,
+        "orta saha": 80, "midfield": 80,
+        "stoper": 70, "centre-back": 70,
+        "bek": 70, "back": 70,
+    },
+}
+
+
+def _formation_fit_score(role_key: str, verified_position: str | None) -> int:
+    """Rol ihtiyacı × oyuncu pozisyonu → 0-100 formasyon uyum skoru."""
+    if not verified_position:
+        return 50  # bilinmiyor — nötr
+    pos_lower = verified_position.lower()
+    fit_map = _FORMATION_FIT.get(role_key, {})
+    best = 0
+    for keyword, score in fit_map.items():
+        if keyword in pos_lower:
+            best = max(best, score)
+    return best if best else 35  # pozisyon var ama eşleşmedi — düşük uyum
 
 
 def _age_score(age: int) -> float:
@@ -735,7 +809,7 @@ def _build_team_cards(team_reports: list[dict]) -> str:
                     f"<div class='cand-meta'>{c['current_team']} · {c['age']}y · {c.get('nationality','')} · "
                     f"{c['goals']} gol / {c['starts']} maç / {c['cards']} kart{extra_meta} · "
                     f"skor {c['transfer_score']} {resale_icon}"
-                    f"{_market_value_inline(c)}</div>"
+                    f"{_market_value_inline(c)}{_formation_fit_inline(c)}</div>"
                     f"<div class='cand-narrative'>{c['narrative']}</div>"
                     f"<div class='cand-contract'>{c['transfer_window_label']}</div>"
                     f"</div>"
@@ -772,6 +846,19 @@ def _market_value_inline(candidate: dict) -> str:
     else:
         text = f"€{val // 1000}K"
     return f" · <span style='color:#fbbf24;font-weight:600'>{text}</span>"
+
+
+def _formation_fit_inline(candidate: dict) -> str:
+    fit = candidate.get("formation_fit")
+    if fit is None:
+        return ""
+    if fit >= 80:
+        color, label = "#16a34a", "formasyon uyumu yüksek"
+    elif fit >= 50:
+        color, label = "#d97706", "formasyon uyumu orta"
+    else:
+        color, label = "#dc2626", "formasyon uyumu düşük"
+    return f" · <span style='color:{color};font-size:0.8em' title='{label} ({fit}/100)'>⬡{fit}</span>"
 
 
 def _build_ranking_table(ranking: list[dict]) -> str:

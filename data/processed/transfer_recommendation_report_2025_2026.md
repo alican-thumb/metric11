@@ -66,27 +66,27 @@ Bu liste sözleşme izlemesidir; takım/rol uygunluğu ayrıca doğrulanmış ö
 Zayıf nokta: savunma kırılgan, son bölüm gol yeme riski, kart baskısı, skor üretim sorunu, deplasman zayıf, hücum verimsizliği
 
 **Stoper / hava ve temas** — Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 1.62.
-  1. HELITON JORGE  TITO DOS SANTOS (GÖZTEPE A.Ş.) | 30y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 26.8
+  1. HELITON JORGE  TITO DOS SANTOS (GÖZTEPE A.Ş.) | 30y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 27.8
      → Savunma kırılgan (maç başına 1.62 gol yedi) - Stoper / hava ve temas ihtiyacı net. Santos: 32 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  2. FIDAN ALITI (CORENDON ALANYASPOR) | 32y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 25.6
+  2. FIDAN ALITI (CORENDON ALANYASPOR) | 32y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 26.6
      → Savunma kırılgan (maç başına 1.62 gol yedi) - Stoper / hava ve temas ihtiyacı net. Aliti: 30 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 32 yaş — deneyim katkısı, kısa dönem çözüm.
-  3. NUNO MIGUEL REIS LIMA (CORENDON ALANYASPOR) | 25y | 1 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 24.3
+  3. NUNO MIGUEL REIS LIMA (CORENDON ALANYASPOR) | 25y | 1 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 25.8
      → Savunma kırılgan (maç başına 1.62 gol yedi) - Stoper / hava ve temas ihtiyacı net. Lima: 1 gol, 32 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
 
 **6 numara / savunma emniyeti** — Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir.
-  1. FRANCO DARYL TONGYA HEUBANG (NATURA DÜNYASI GENÇLERBİRLİĞİ) | 24y | 6 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 27.5
-     → Savunma kırılgan (maç başına 1.62 gol yedi) - 6 numara / savunma emniyeti ihtiyacı net. Heubang: 6 gol, 27 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
-  2. ANTHONY JUNIOR DENNIS (GÖZTEPE A.Ş.) | 21y | 3 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 26.8
+  1. ANTHONY JUNIOR DENNIS (GÖZTEPE A.Ş.) | 21y | 3 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 28.2
      → Savunma kırılgan (maç başına 1.62 gol yedi) - 6 numara / savunma emniyeti ihtiyacı net. Dennis: 3 gol, 29 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere. 21 yaş, uzun vadeli yatırım profili.
-  3. MANUEL LUIS DA SILVA CAFUMANA (KOCAELİSPOR) | 27y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 25.6
+  2. FRANCO DARYL TONGYA HEUBANG (NATURA DÜNYASI GENÇLERBİRLİĞİ) | 24y | 6 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 27.7
+     → Savunma kırılgan (maç başına 1.62 gol yedi) - 6 numara / savunma emniyeti ihtiyacı net. Heubang: 6 gol, 27 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
+  3. MANUEL LUIS DA SILVA CAFUMANA (KOCAELİSPOR) | 27y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 26.6
      → Savunma kırılgan (maç başına 1.62 gol yedi) - 6 numara / savunma emniyeti ihtiyacı net. Cafumana: 25 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
 
 **8 numara / fizik motoru** — Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir.
-  1. ORKUN KÖKÇÜ (BEŞİKTAŞ A.Ş.) | 25y | 8 gol | SERBEST TRANSFER FIRSATI | FREE | skor 35.7
+  1. ORKUN KÖKÇÜ (BEŞİKTAŞ A.Ş.) | 25y | 8 gol | SERBEST TRANSFER FIRSATI | FREE | skor 36.0
      → Gol üretimi zayıf (maç başına 0.97 gol attı) - 8 numara / fizik motoru pozisyonunda yaratıcılık gerekiyor. Kökçü: 8 gol, 29 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  2. LASZLO BENES (ZECORNER KAYSERİSPOR) | 28y | 7 gol | SERBEST TRANSFER FIRSATI | FREE | skor 32.6
+  2. LASZLO BENES (ZECORNER KAYSERİSPOR) | 28y | 7 gol | SERBEST TRANSFER FIRSATI | FREE | skor 33.2
      → Gol üretimi zayıf (maç başına 0.97 gol attı) - 8 numara / fizik motoru pozisyonunda yaratıcılık gerekiyor. Benes: 7 gol, 29 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  3. ALEXANDRU IULIAN MAXIM (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 35y | 5 gol | SERBEST TRANSFER FIRSATI | FREE | skor 30.5
+  3. ALEXANDRU IULIAN MAXIM (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 35y | 5 gol | SERBEST TRANSFER FIRSATI | FREE | skor 30.9
      → Gol üretimi zayıf (maç başına 0.97 gol attı) - 8 numara / fizik motoru pozisyonunda yaratıcılık gerekiyor. Maxim: 5 gol, 32 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 35 yaş — deneyim katkısı, kısa dönem çözüm.
 
 ### ZECORNER KAYSERİSPOR  [ACİL]
@@ -95,27 +95,27 @@ Zayıf nokta: savunma kırılgan, son bölüm gol yeme riski, kart baskısı, sk
 Zayıf nokta: savunma kırılgan, kart baskısı, skor üretim sorunu, deplasman zayıf, hücum verimsizliği
 
 **Stoper / hava ve temas** — Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 1.82.
-  1. HELITON JORGE  TITO DOS SANTOS (GÖZTEPE A.Ş.) | 30y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 26.8
+  1. HELITON JORGE  TITO DOS SANTOS (GÖZTEPE A.Ş.) | 30y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 27.8
      → Savunma kırılgan (maç başına 1.82 gol yedi) - Stoper / hava ve temas ihtiyacı net. Santos: 32 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  2. FIDAN ALITI (CORENDON ALANYASPOR) | 32y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 25.6
+  2. FIDAN ALITI (CORENDON ALANYASPOR) | 32y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 26.6
      → Savunma kırılgan (maç başına 1.82 gol yedi) - Stoper / hava ve temas ihtiyacı net. Aliti: 30 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 32 yaş — deneyim katkısı, kısa dönem çözüm.
-  3. NUNO MIGUEL REIS LIMA (CORENDON ALANYASPOR) | 25y | 1 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 24.3
+  3. NUNO MIGUEL REIS LIMA (CORENDON ALANYASPOR) | 25y | 1 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 25.8
      → Savunma kırılgan (maç başına 1.82 gol yedi) - Stoper / hava ve temas ihtiyacı net. Lima: 1 gol, 32 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
 
 **6 numara / savunma emniyeti** — Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir.
-  1. SONER DİKMEN (HESAP.COM ANTALYASPOR) | 32y | 4 gol | SERBEST TRANSFER FIRSATI | FREE | skor 27.9
-     → Savunma kırılgan (maç başına 1.82 gol yedi) - 6 numara / savunma emniyeti ihtiyacı net. Di̇kmen: 4 gol, 25 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 32 yaş — deneyim katkısı, kısa dönem çözüm.
-  2. ANTHONY JUNIOR DENNIS (GÖZTEPE A.Ş.) | 21y | 3 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 26.8
+  1. ANTHONY JUNIOR DENNIS (GÖZTEPE A.Ş.) | 21y | 3 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 28.2
      → Savunma kırılgan (maç başına 1.82 gol yedi) - 6 numara / savunma emniyeti ihtiyacı net. Dennis: 3 gol, 29 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere. 21 yaş, uzun vadeli yatırım profili.
-  3. MANUEL LUIS DA SILVA CAFUMANA (KOCAELİSPOR) | 27y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 25.6
+  2. SONER DİKMEN (HESAP.COM ANTALYASPOR) | 32y | 4 gol | SERBEST TRANSFER FIRSATI | FREE | skor 27.6
+     → Savunma kırılgan (maç başına 1.82 gol yedi) - 6 numara / savunma emniyeti ihtiyacı net. Di̇kmen: 4 gol, 25 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 32 yaş — deneyim katkısı, kısa dönem çözüm.
+  3. MANUEL LUIS DA SILVA CAFUMANA (KOCAELİSPOR) | 27y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 26.6
      → Savunma kırılgan (maç başına 1.82 gol yedi) - 6 numara / savunma emniyeti ihtiyacı net. Cafumana: 25 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
 
 **8 numara / fizik motoru** — Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir.
-  1. ORKUN KÖKÇÜ (BEŞİKTAŞ A.Ş.) | 25y | 8 gol | SERBEST TRANSFER FIRSATI | FREE | skor 35.7
+  1. ORKUN KÖKÇÜ (BEŞİKTAŞ A.Ş.) | 25y | 8 gol | SERBEST TRANSFER FIRSATI | FREE | skor 36.0
      → Gol üretimi zayıf (maç başına 0.79 gol attı) - 8 numara / fizik motoru pozisyonunda yaratıcılık gerekiyor. Kökçü: 8 gol, 29 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  2. ALEXANDRU IULIAN MAXIM (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 35y | 5 gol | SERBEST TRANSFER FIRSATI | FREE | skor 30.5
+  2. ALEXANDRU IULIAN MAXIM (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 35y | 5 gol | SERBEST TRANSFER FIRSATI | FREE | skor 30.9
      → Gol üretimi zayıf (maç başına 0.79 gol attı) - 8 numara / fizik motoru pozisyonunda yaratıcılık gerekiyor. Maxim: 5 gol, 32 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 35 yaş — deneyim katkısı, kısa dönem çözüm.
-  3. KACPER SZYMON KOZLOWSKI (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 22y | 6 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 29.3
+  3. KACPER SZYMON KOZLOWSKI (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 22y | 6 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 30.1
      → Gol üretimi zayıf (maç başına 0.79 gol attı) - 8 numara / fizik motoru pozisyonunda yaratıcılık gerekiyor. Kozlowski: 6 gol, 30 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere. 22 yaş, uzun vadeli yatırım profili.
 
 ### KASIMPAŞA A.Ş.  [ACİL]
@@ -124,27 +124,27 @@ Zayıf nokta: savunma kırılgan, kart baskısı, skor üretim sorunu, deplasman
 Zayıf nokta: son bölüm gol yeme riski, kart baskısı, skor üretim sorunu, deplasman zayıf, hücum verimsizliği
 
 **8 numara / fizik motoru** — Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir.
-  1. ORKUN KÖKÇÜ (BEŞİKTAŞ A.Ş.) | 25y | 8 gol | SERBEST TRANSFER FIRSATI | FREE | skor 35.7
+  1. ORKUN KÖKÇÜ (BEŞİKTAŞ A.Ş.) | 25y | 8 gol | SERBEST TRANSFER FIRSATI | FREE | skor 36.0
      → Gol üretimi zayıf (maç başına 0.97 gol attı) - 8 numara / fizik motoru pozisyonunda yaratıcılık gerekiyor. Kökçü: 8 gol, 29 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  2. LASZLO BENES (ZECORNER KAYSERİSPOR) | 28y | 7 gol | SERBEST TRANSFER FIRSATI | FREE | skor 32.6
+  2. LASZLO BENES (ZECORNER KAYSERİSPOR) | 28y | 7 gol | SERBEST TRANSFER FIRSATI | FREE | skor 33.2
      → Gol üretimi zayıf (maç başına 0.97 gol attı) - 8 numara / fizik motoru pozisyonunda yaratıcılık gerekiyor. Benes: 7 gol, 29 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  3. ALEXANDRU IULIAN MAXIM (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 35y | 5 gol | SERBEST TRANSFER FIRSATI | FREE | skor 30.5
+  3. ALEXANDRU IULIAN MAXIM (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 35y | 5 gol | SERBEST TRANSFER FIRSATI | FREE | skor 30.9
      → Gol üretimi zayıf (maç başına 0.97 gol attı) - 8 numara / fizik motoru pozisyonunda yaratıcılık gerekiyor. Maxim: 5 gol, 32 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 35 yaş — deneyim katkısı, kısa dönem çözüm.
 
 **6 numara / savunma emniyeti** — Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir.
-  1. SONER DİKMEN (HESAP.COM ANTALYASPOR) | 32y | 4 gol | SERBEST TRANSFER FIRSATI | FREE | skor 27.9
-     → Gol üretimi zayıf (maç başına 0.97 gol attı) - 6 numara / savunma emniyeti pozisyonunda yaratıcılık gerekiyor. Di̇kmen: 4 gol, 25 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 32 yaş — deneyim katkısı, kısa dönem çözüm.
-  2. FRANCO DARYL TONGYA HEUBANG (NATURA DÜNYASI GENÇLERBİRLİĞİ) | 24y | 6 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 27.5
-     → Gol üretimi zayıf (maç başına 0.97 gol attı) - 6 numara / savunma emniyeti pozisyonunda yaratıcılık gerekiyor. Heubang: 6 gol, 27 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
-  3. ANTHONY JUNIOR DENNIS (GÖZTEPE A.Ş.) | 21y | 3 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 26.8
+  1. ANTHONY JUNIOR DENNIS (GÖZTEPE A.Ş.) | 21y | 3 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 28.2
      → Gol üretimi zayıf (maç başına 0.97 gol attı) - 6 numara / savunma emniyeti pozisyonunda yaratıcılık gerekiyor. Dennis: 3 gol, 29 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere. 21 yaş, uzun vadeli yatırım profili.
+  2. FRANCO DARYL TONGYA HEUBANG (NATURA DÜNYASI GENÇLERBİRLİĞİ) | 24y | 6 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 27.7
+     → Gol üretimi zayıf (maç başına 0.97 gol attı) - 6 numara / savunma emniyeti pozisyonunda yaratıcılık gerekiyor. Heubang: 6 gol, 27 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
+  3. SONER DİKMEN (HESAP.COM ANTALYASPOR) | 32y | 4 gol | SERBEST TRANSFER FIRSATI | FREE | skor 27.6
+     → Gol üretimi zayıf (maç başına 0.97 gol attı) - 6 numara / savunma emniyeti pozisyonunda yaratıcılık gerekiyor. Di̇kmen: 4 gol, 25 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 32 yaş — deneyim katkısı, kısa dönem çözüm.
 
 **Stoper / hava ve temas** — Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 1.44.
-  1. HELITON JORGE  TITO DOS SANTOS (GÖZTEPE A.Ş.) | 30y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 26.8
+  1. HELITON JORGE  TITO DOS SANTOS (GÖZTEPE A.Ş.) | 30y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 27.8
      → Gol üretimi zayıf (maç başına 0.97 gol attı) - Stoper / hava ve temas pozisyonunda yaratıcılık gerekiyor. Santos: 32 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  2. FIDAN ALITI (CORENDON ALANYASPOR) | 32y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 25.6
+  2. FIDAN ALITI (CORENDON ALANYASPOR) | 32y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 26.6
      → Gol üretimi zayıf (maç başına 0.97 gol attı) - Stoper / hava ve temas pozisyonunda yaratıcılık gerekiyor. Aliti: 30 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 32 yaş — deneyim katkısı, kısa dönem çözüm.
-  3. NUNO MIGUEL REIS LIMA (CORENDON ALANYASPOR) | 25y | 1 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 24.3
+  3. NUNO MIGUEL REIS LIMA (CORENDON ALANYASPOR) | 25y | 1 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 25.8
      → Gol üretimi zayıf (maç başına 0.97 gol attı) - Stoper / hava ve temas pozisyonunda yaratıcılık gerekiyor. Lima: 1 gol, 32 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
 
 ### MISIRLI.COM.TR FATİH KARAGÜMRÜK  [ACİL]
@@ -153,28 +153,28 @@ Zayıf nokta: son bölüm gol yeme riski, kart baskısı, skor üretim sorunu, d
 Zayıf nokta: savunma kırılgan, skor üretim sorunu, deplasman zayıf, hücum verimsizliği
 
 **Stoper / hava ve temas** — Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 1.59.
-  1. HELITON JORGE  TITO DOS SANTOS (GÖZTEPE A.Ş.) | 30y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 26.8
+  1. HELITON JORGE  TITO DOS SANTOS (GÖZTEPE A.Ş.) | 30y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 27.8
      → Savunma kırılgan (maç başına 1.59 gol yedi) - Stoper / hava ve temas ihtiyacı net. Santos: 32 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  2. FIDAN ALITI (CORENDON ALANYASPOR) | 32y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 25.6
+  2. FIDAN ALITI (CORENDON ALANYASPOR) | 32y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 26.6
      → Savunma kırılgan (maç başına 1.59 gol yedi) - Stoper / hava ve temas ihtiyacı net. Aliti: 30 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 32 yaş — deneyim katkısı, kısa dönem çözüm.
-  3. NUNO MIGUEL REIS LIMA (CORENDON ALANYASPOR) | 25y | 1 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 24.3
+  3. NUNO MIGUEL REIS LIMA (CORENDON ALANYASPOR) | 25y | 1 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 25.8
      → Savunma kırılgan (maç başına 1.59 gol yedi) - Stoper / hava ve temas ihtiyacı net. Lima: 1 gol, 32 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
 
 **6 numara / savunma emniyeti** — Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir.
-  1. SONER DİKMEN (HESAP.COM ANTALYASPOR) | 32y | 4 gol | SERBEST TRANSFER FIRSATI | FREE | skor 27.9
-     → Savunma kırılgan (maç başına 1.59 gol yedi) - 6 numara / savunma emniyeti ihtiyacı net. Di̇kmen: 4 gol, 25 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 32 yaş — deneyim katkısı, kısa dönem çözüm.
-  2. ANTHONY JUNIOR DENNIS (GÖZTEPE A.Ş.) | 21y | 3 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 26.8
+  1. ANTHONY JUNIOR DENNIS (GÖZTEPE A.Ş.) | 21y | 3 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 28.2
      → Savunma kırılgan (maç başına 1.59 gol yedi) - 6 numara / savunma emniyeti ihtiyacı net. Dennis: 3 gol, 29 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere. 21 yaş, uzun vadeli yatırım profili.
-  3. MANUEL LUIS DA SILVA CAFUMANA (KOCAELİSPOR) | 27y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 25.6
+  2. SONER DİKMEN (HESAP.COM ANTALYASPOR) | 32y | 4 gol | SERBEST TRANSFER FIRSATI | FREE | skor 27.6
+     → Savunma kırılgan (maç başına 1.59 gol yedi) - 6 numara / savunma emniyeti ihtiyacı net. Di̇kmen: 4 gol, 25 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 32 yaş — deneyim katkısı, kısa dönem çözüm.
+  3. MANUEL LUIS DA SILVA CAFUMANA (KOCAELİSPOR) | 27y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 26.6
      → Savunma kırılgan (maç başına 1.59 gol yedi) - 6 numara / savunma emniyeti ihtiyacı net. Cafumana: 25 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
 
 **Santrfor / skor yükü** — Skor üretim problemi için bitirici profil; mevcut gol ortalaması 0.91.
-  1. FELIPE AUGUSTO DA SILVA (TRABZONSPOR A.Ş.) | 22y | 13 gol | PREMİUM TRANSFER | HIGH | skor 25.6
+  1. FELIPE AUGUSTO DA SILVA (TRABZONSPOR A.Ş.) | 22y | 13 gol | PREMİUM TRANSFER | HIGH | skor 27.6
      → Gol üretimi zayıf (maç başına 0.91 gol attı) - Santrfor / skor yükü pozisyonunda yaratıcılık gerekiyor. Silva: 13 gol, 26 maç. Uzun sözleşme — yüksek bonusu göze almalı. 22 yaş, uzun vadeli yatırım profili.
-  2. ELDOR SHOMURODOV (RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ) | 30y | 22 gol | PREMİUM TRANSFER | MEDIUM | skor 24.2
-     → Gol üretimi zayıf (maç başına 0.91 gol attı) - Santrfor / skor yükü pozisyonunda yaratıcılık gerekiyor. Shomurodov: 22 gol, 34 maç. Uzun sözleşme — yüksek bonusu göze almalı.
-  3. MOHAMED LAMINE BAYO (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 27y | 15 gol | PREMİUM TRANSFER | MEDIUM | skor 24.2
+  2. MOHAMED LAMINE BAYO (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 27y | 15 gol | PREMİUM TRANSFER | MEDIUM | skor 26.3
      → Gol üretimi zayıf (maç başına 0.91 gol attı) - Santrfor / skor yükü pozisyonunda yaratıcılık gerekiyor. Bayo: 15 gol, 28 maç. Uzun sözleşme — yüksek bonusu göze almalı.
+  3. ELDOR SHOMURODOV (RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ) | 30y | 22 gol | PREMİUM TRANSFER | MEDIUM | skor 26.2
+     → Gol üretimi zayıf (maç başına 0.91 gol attı) - Santrfor / skor yükü pozisyonunda yaratıcılık gerekiyor. Shomurodov: 22 gol, 34 maç. Uzun sözleşme — yüksek bonusu göze almalı.
 
 ### İKAS EYÜPSPOR  [ACİL]
 *0.97 puan/maç | maç başına 0.97 attı | maç başına 1.41 yedi*
@@ -182,27 +182,27 @@ Zayıf nokta: savunma kırılgan, skor üretim sorunu, deplasman zayıf, hücum 
 Zayıf nokta: son bölüm gol yeme riski, skor üretim sorunu, deplasman zayıf, hücum verimsizliği
 
 **8 numara / fizik motoru** — Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir.
-  1. ORKUN KÖKÇÜ (BEŞİKTAŞ A.Ş.) | 25y | 8 gol | SERBEST TRANSFER FIRSATI | FREE | skor 35.7
+  1. ORKUN KÖKÇÜ (BEŞİKTAŞ A.Ş.) | 25y | 8 gol | SERBEST TRANSFER FIRSATI | FREE | skor 36.0
      → Gol üretimi zayıf (maç başına 0.97 gol attı) - 8 numara / fizik motoru pozisyonunda yaratıcılık gerekiyor. Kökçü: 8 gol, 29 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  2. LASZLO BENES (ZECORNER KAYSERİSPOR) | 28y | 7 gol | SERBEST TRANSFER FIRSATI | FREE | skor 32.6
+  2. LASZLO BENES (ZECORNER KAYSERİSPOR) | 28y | 7 gol | SERBEST TRANSFER FIRSATI | FREE | skor 33.2
      → Gol üretimi zayıf (maç başına 0.97 gol attı) - 8 numara / fizik motoru pozisyonunda yaratıcılık gerekiyor. Benes: 7 gol, 29 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  3. ALEXANDRU IULIAN MAXIM (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 35y | 5 gol | SERBEST TRANSFER FIRSATI | FREE | skor 30.5
+  3. ALEXANDRU IULIAN MAXIM (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 35y | 5 gol | SERBEST TRANSFER FIRSATI | FREE | skor 30.9
      → Gol üretimi zayıf (maç başına 0.97 gol attı) - 8 numara / fizik motoru pozisyonunda yaratıcılık gerekiyor. Maxim: 5 gol, 32 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 35 yaş — deneyim katkısı, kısa dönem çözüm.
 
 **6 numara / savunma emniyeti** — Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir.
-  1. SONER DİKMEN (HESAP.COM ANTALYASPOR) | 32y | 4 gol | SERBEST TRANSFER FIRSATI | FREE | skor 27.9
-     → Gol üretimi zayıf (maç başına 0.97 gol attı) - 6 numara / savunma emniyeti pozisyonunda yaratıcılık gerekiyor. Di̇kmen: 4 gol, 25 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 32 yaş — deneyim katkısı, kısa dönem çözüm.
-  2. ANTHONY JUNIOR DENNIS (GÖZTEPE A.Ş.) | 21y | 3 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 26.8
+  1. ANTHONY JUNIOR DENNIS (GÖZTEPE A.Ş.) | 21y | 3 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 28.2
      → Gol üretimi zayıf (maç başına 0.97 gol attı) - 6 numara / savunma emniyeti pozisyonunda yaratıcılık gerekiyor. Dennis: 3 gol, 29 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere. 21 yaş, uzun vadeli yatırım profili.
-  3. MANUEL LUIS DA SILVA CAFUMANA (KOCAELİSPOR) | 27y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 25.6
+  2. SONER DİKMEN (HESAP.COM ANTALYASPOR) | 32y | 4 gol | SERBEST TRANSFER FIRSATI | FREE | skor 27.6
+     → Gol üretimi zayıf (maç başına 0.97 gol attı) - 6 numara / savunma emniyeti pozisyonunda yaratıcılık gerekiyor. Di̇kmen: 4 gol, 25 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 32 yaş — deneyim katkısı, kısa dönem çözüm.
+  3. MANUEL LUIS DA SILVA CAFUMANA (KOCAELİSPOR) | 27y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 26.6
      → Gol üretimi zayıf (maç başına 0.97 gol attı) - 6 numara / savunma emniyeti pozisyonunda yaratıcılık gerekiyor. Cafumana: 25 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
 
 **Stoper / hava ve temas** — Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 1.41.
-  1. HELITON JORGE  TITO DOS SANTOS (GÖZTEPE A.Ş.) | 30y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 26.8
+  1. HELITON JORGE  TITO DOS SANTOS (GÖZTEPE A.Ş.) | 30y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 27.8
      → Gol üretimi zayıf (maç başına 0.97 gol attı) - Stoper / hava ve temas pozisyonunda yaratıcılık gerekiyor. Santos: 32 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  2. FIDAN ALITI (CORENDON ALANYASPOR) | 32y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 25.6
+  2. FIDAN ALITI (CORENDON ALANYASPOR) | 32y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 26.6
      → Gol üretimi zayıf (maç başına 0.97 gol attı) - Stoper / hava ve temas pozisyonunda yaratıcılık gerekiyor. Aliti: 30 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 32 yaş — deneyim katkısı, kısa dönem çözüm.
-  3. NUNO MIGUEL REIS LIMA (CORENDON ALANYASPOR) | 25y | 1 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 24.3
+  3. NUNO MIGUEL REIS LIMA (CORENDON ALANYASPOR) | 25y | 1 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 25.8
      → Gol üretimi zayıf (maç başına 0.97 gol attı) - Stoper / hava ve temas pozisyonunda yaratıcılık gerekiyor. Lima: 1 gol, 32 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
 
 ### GAZİANTEP FUTBOL KULÜBÜ A.Ş.  [ACİL]
@@ -211,27 +211,27 @@ Zayıf nokta: son bölüm gol yeme riski, skor üretim sorunu, deplasman zayıf,
 Zayıf nokta: savunma kırılgan, son bölüm gol yeme riski, kart baskısı
 
 **Stoper / hava ve temas** — Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 1.71.
-  1. HELITON JORGE  TITO DOS SANTOS (GÖZTEPE A.Ş.) | 30y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 26.8
+  1. HELITON JORGE  TITO DOS SANTOS (GÖZTEPE A.Ş.) | 30y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 27.8
      → Savunma kırılgan (maç başına 1.71 gol yedi) - Stoper / hava ve temas ihtiyacı net. Santos: 32 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  2. FIDAN ALITI (CORENDON ALANYASPOR) | 32y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 25.6
+  2. FIDAN ALITI (CORENDON ALANYASPOR) | 32y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 26.6
      → Savunma kırılgan (maç başına 1.71 gol yedi) - Stoper / hava ve temas ihtiyacı net. Aliti: 30 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 32 yaş — deneyim katkısı, kısa dönem çözüm.
-  3. NUNO MIGUEL REIS LIMA (CORENDON ALANYASPOR) | 25y | 1 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 24.3
+  3. NUNO MIGUEL REIS LIMA (CORENDON ALANYASPOR) | 25y | 1 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 25.8
      → Savunma kırılgan (maç başına 1.71 gol yedi) - Stoper / hava ve temas ihtiyacı net. Lima: 1 gol, 32 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
 
 **6 numara / savunma emniyeti** — Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir.
-  1. SONER DİKMEN (HESAP.COM ANTALYASPOR) | 32y | 4 gol | SERBEST TRANSFER FIRSATI | FREE | skor 27.9
-     → Savunma kırılgan (maç başına 1.71 gol yedi) - 6 numara / savunma emniyeti ihtiyacı net. Di̇kmen: 4 gol, 25 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 32 yaş — deneyim katkısı, kısa dönem çözüm.
-  2. ANTHONY JUNIOR DENNIS (GÖZTEPE A.Ş.) | 21y | 3 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 26.8
+  1. ANTHONY JUNIOR DENNIS (GÖZTEPE A.Ş.) | 21y | 3 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 28.2
      → Savunma kırılgan (maç başına 1.71 gol yedi) - 6 numara / savunma emniyeti ihtiyacı net. Dennis: 3 gol, 29 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere. 21 yaş, uzun vadeli yatırım profili.
-  3. MANUEL LUIS DA SILVA CAFUMANA (KOCAELİSPOR) | 27y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 25.6
+  2. SONER DİKMEN (HESAP.COM ANTALYASPOR) | 32y | 4 gol | SERBEST TRANSFER FIRSATI | FREE | skor 27.6
+     → Savunma kırılgan (maç başına 1.71 gol yedi) - 6 numara / savunma emniyeti ihtiyacı net. Di̇kmen: 4 gol, 25 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 32 yaş — deneyim katkısı, kısa dönem çözüm.
+  3. MANUEL LUIS DA SILVA CAFUMANA (KOCAELİSPOR) | 27y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 26.6
      → Savunma kırılgan (maç başına 1.71 gol yedi) - 6 numara / savunma emniyeti ihtiyacı net. Cafumana: 25 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
 
 **8 numara / fizik motoru** — Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir.
-  1. ORKUN KÖKÇÜ (BEŞİKTAŞ A.Ş.) | 25y | 8 gol | SERBEST TRANSFER FIRSATI | FREE | skor 35.7
+  1. ORKUN KÖKÇÜ (BEŞİKTAŞ A.Ş.) | 25y | 8 gol | SERBEST TRANSFER FIRSATI | FREE | skor 36.0
      → Savunma kırılgan sorunu var; 8 numara / fizik motoru bu açığı kapatacak. Kökçü: 8 gol, 29 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  2. LASZLO BENES (ZECORNER KAYSERİSPOR) | 28y | 7 gol | SERBEST TRANSFER FIRSATI | FREE | skor 32.6
+  2. LASZLO BENES (ZECORNER KAYSERİSPOR) | 28y | 7 gol | SERBEST TRANSFER FIRSATI | FREE | skor 33.2
      → Savunma kırılgan sorunu var; 8 numara / fizik motoru bu açığı kapatacak. Benes: 7 gol, 29 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  3. FRANCO DARYL TONGYA HEUBANG (NATURA DÜNYASI GENÇLERBİRLİĞİ) | 24y | 6 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 27.5
+  3. FRANCO DARYL TONGYA HEUBANG (NATURA DÜNYASI GENÇLERBİRLİĞİ) | 24y | 6 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 28.9
      → Savunma kırılgan sorunu var; 8 numara / fizik motoru bu açığı kapatacak. Heubang: 6 gol, 27 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
 
 ### KOCAELİSPOR  [YÜKSEK]
@@ -240,27 +240,27 @@ Zayıf nokta: savunma kırılgan, son bölüm gol yeme riski, kart baskısı
 Zayıf nokta: skor üretim sorunu, deplasman zayıf, hücum verimsizliği
 
 **Santrfor / skor yükü** — Skor üretim problemi için bitirici profil; mevcut gol ortalaması 0.76.
-  1. FELIPE AUGUSTO DA SILVA (TRABZONSPOR A.Ş.) | 22y | 13 gol | PREMİUM TRANSFER | HIGH | skor 25.6
+  1. FELIPE AUGUSTO DA SILVA (TRABZONSPOR A.Ş.) | 22y | 13 gol | PREMİUM TRANSFER | HIGH | skor 27.6
      → Gol üretimi zayıf (maç başına 0.76 gol attı) - Santrfor / skor yükü pozisyonunda yaratıcılık gerekiyor. Silva: 13 gol, 26 maç. Uzun sözleşme — yüksek bonusu göze almalı. 22 yaş, uzun vadeli yatırım profili.
-  2. ELDOR SHOMURODOV (RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ) | 30y | 22 gol | PREMİUM TRANSFER | MEDIUM | skor 24.2
-     → Gol üretimi zayıf (maç başına 0.76 gol attı) - Santrfor / skor yükü pozisyonunda yaratıcılık gerekiyor. Shomurodov: 22 gol, 34 maç. Uzun sözleşme — yüksek bonusu göze almalı.
-  3. MOHAMED LAMINE BAYO (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 27y | 15 gol | PREMİUM TRANSFER | MEDIUM | skor 24.2
+  2. MOHAMED LAMINE BAYO (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 27y | 15 gol | PREMİUM TRANSFER | MEDIUM | skor 26.3
      → Gol üretimi zayıf (maç başına 0.76 gol attı) - Santrfor / skor yükü pozisyonunda yaratıcılık gerekiyor. Bayo: 15 gol, 28 maç. Uzun sözleşme — yüksek bonusu göze almalı.
+  3. ELDOR SHOMURODOV (RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ) | 30y | 22 gol | PREMİUM TRANSFER | MEDIUM | skor 26.2
+     → Gol üretimi zayıf (maç başına 0.76 gol attı) - Santrfor / skor yükü pozisyonunda yaratıcılık gerekiyor. Shomurodov: 22 gol, 34 maç. Uzun sözleşme — yüksek bonusu göze almalı.
 
 **Sol açık / çizgi kırıcı** — Deplasman veya üretim zafiyetinde çizgi kıran/taşıyıcı hücum profili gerekir.
-  1. DORGELES NENE (FENERBAHÇE A.Ş.) | 23y | 10 gol | PREMİUM TRANSFER | HIGH | skor 22.3
+  1. DORGELES NENE (FENERBAHÇE A.Ş.) | 23y | 10 gol | PREMİUM TRANSFER | HIGH | skor 24.5
      → Gol üretimi zayıf (maç başına 0.76 gol attı) - Sol açık / çizgi kırıcı pozisyonunda yaratıcılık gerekiyor. Nene: 10 gol, 16 maçta sahada. Uzun sözleşme — yüksek bonusu göze almalı. 23 yaş, uzun vadeli yatırım profili.
-  2. BARIŞ ALPER YILMAZ (GALATASARAY A.Ş.) | 26y | 8 gol | PREMİUM TRANSFER | MEDIUM | skor 20.5
+  2. BARIŞ ALPER YILMAZ (GALATASARAY A.Ş.) | 26y | 8 gol | PREMİUM TRANSFER | MEDIUM | skor 22.9
      → Gol üretimi zayıf (maç başına 0.76 gol attı) - Sol açık / çizgi kırıcı pozisyonunda yaratıcılık gerekiyor. Yilmaz: 8 gol, 27 maç. Uzun sözleşme — yüksek bonusu göze almalı.
-  3. YUNUS AKGÜN (GALATASARAY A.Ş.) | 25y | 7 gol | PREMİUM TRANSFER | MEDIUM | skor 19.9
+  3. YUNUS AKGÜN (GALATASARAY A.Ş.) | 25y | 7 gol | PREMİUM TRANSFER | MEDIUM | skor 22.3
      → Gol üretimi zayıf (maç başına 0.76 gol attı) - Sol açık / çizgi kırıcı pozisyonunda yaratıcılık gerekiyor. Akgün: 7 gol, 23 maç. Uzun sözleşme — yüksek bonusu göze almalı.
 
 **8 numara / fizik motoru** — Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir.
-  1. ORKUN KÖKÇÜ (BEŞİKTAŞ A.Ş.) | 25y | 8 gol | SERBEST TRANSFER FIRSATI | FREE | skor 35.7
+  1. ORKUN KÖKÇÜ (BEŞİKTAŞ A.Ş.) | 25y | 8 gol | SERBEST TRANSFER FIRSATI | FREE | skor 36.0
      → Gol üretimi zayıf (maç başına 0.76 gol attı) - 8 numara / fizik motoru pozisyonunda yaratıcılık gerekiyor. Kökçü: 8 gol, 29 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  2. LASZLO BENES (ZECORNER KAYSERİSPOR) | 28y | 7 gol | SERBEST TRANSFER FIRSATI | FREE | skor 32.6
+  2. LASZLO BENES (ZECORNER KAYSERİSPOR) | 28y | 7 gol | SERBEST TRANSFER FIRSATI | FREE | skor 33.2
      → Gol üretimi zayıf (maç başına 0.76 gol attı) - 8 numara / fizik motoru pozisyonunda yaratıcılık gerekiyor. Benes: 7 gol, 29 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  3. ALEXANDRU IULIAN MAXIM (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 35y | 5 gol | SERBEST TRANSFER FIRSATI | FREE | skor 30.5
+  3. ALEXANDRU IULIAN MAXIM (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 35y | 5 gol | SERBEST TRANSFER FIRSATI | FREE | skor 30.9
      → Gol üretimi zayıf (maç başına 0.76 gol attı) - 8 numara / fizik motoru pozisyonunda yaratıcılık gerekiyor. Maxim: 5 gol, 32 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 35 yaş — deneyim katkısı, kısa dönem çözüm.
 
 ### ÇAYKUR RİZESPOR A.Ş.  [YÜKSEK]
@@ -269,27 +269,27 @@ Zayıf nokta: skor üretim sorunu, deplasman zayıf, hücum verimsizliği
 Zayıf nokta: savunma kırılgan, son bölüm gol yeme riski, deplasman zayıf
 
 **Stoper / hava ve temas** — Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 1.53.
-  1. HELITON JORGE  TITO DOS SANTOS (GÖZTEPE A.Ş.) | 30y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 26.8
+  1. HELITON JORGE  TITO DOS SANTOS (GÖZTEPE A.Ş.) | 30y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 27.8
      → Savunma kırılgan (maç başına 1.53 gol yedi) - Stoper / hava ve temas ihtiyacı net. Santos: 32 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  2. FIDAN ALITI (CORENDON ALANYASPOR) | 32y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 25.6
+  2. FIDAN ALITI (CORENDON ALANYASPOR) | 32y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 26.6
      → Savunma kırılgan (maç başına 1.53 gol yedi) - Stoper / hava ve temas ihtiyacı net. Aliti: 30 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 32 yaş — deneyim katkısı, kısa dönem çözüm.
-  3. NUNO MIGUEL REIS LIMA (CORENDON ALANYASPOR) | 25y | 1 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 24.3
+  3. NUNO MIGUEL REIS LIMA (CORENDON ALANYASPOR) | 25y | 1 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 25.8
      → Savunma kırılgan (maç başına 1.53 gol yedi) - Stoper / hava ve temas ihtiyacı net. Lima: 1 gol, 32 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
 
 **6 numara / savunma emniyeti** — Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir.
-  1. SONER DİKMEN (HESAP.COM ANTALYASPOR) | 32y | 4 gol | SERBEST TRANSFER FIRSATI | FREE | skor 27.9
-     → Savunma kırılgan (maç başına 1.53 gol yedi) - 6 numara / savunma emniyeti ihtiyacı net. Di̇kmen: 4 gol, 25 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 32 yaş — deneyim katkısı, kısa dönem çözüm.
-  2. ANTHONY JUNIOR DENNIS (GÖZTEPE A.Ş.) | 21y | 3 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 26.8
+  1. ANTHONY JUNIOR DENNIS (GÖZTEPE A.Ş.) | 21y | 3 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 28.2
      → Savunma kırılgan (maç başına 1.53 gol yedi) - 6 numara / savunma emniyeti ihtiyacı net. Dennis: 3 gol, 29 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere. 21 yaş, uzun vadeli yatırım profili.
-  3. MANUEL LUIS DA SILVA CAFUMANA (KOCAELİSPOR) | 27y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 25.6
+  2. SONER DİKMEN (HESAP.COM ANTALYASPOR) | 32y | 4 gol | SERBEST TRANSFER FIRSATI | FREE | skor 27.6
+     → Savunma kırılgan (maç başına 1.53 gol yedi) - 6 numara / savunma emniyeti ihtiyacı net. Di̇kmen: 4 gol, 25 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 32 yaş — deneyim katkısı, kısa dönem çözüm.
+  3. MANUEL LUIS DA SILVA CAFUMANA (KOCAELİSPOR) | 27y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 26.6
      → Savunma kırılgan (maç başına 1.53 gol yedi) - 6 numara / savunma emniyeti ihtiyacı net. Cafumana: 25 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
 
 **8 numara / fizik motoru** — Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir.
-  1. ORKUN KÖKÇÜ (BEŞİKTAŞ A.Ş.) | 25y | 8 gol | SERBEST TRANSFER FIRSATI | FREE | skor 35.7
+  1. ORKUN KÖKÇÜ (BEŞİKTAŞ A.Ş.) | 25y | 8 gol | SERBEST TRANSFER FIRSATI | FREE | skor 36.0
      → Savunma kırılgan sorunu var; 8 numara / fizik motoru bu açığı kapatacak. Kökçü: 8 gol, 29 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  2. LASZLO BENES (ZECORNER KAYSERİSPOR) | 28y | 7 gol | SERBEST TRANSFER FIRSATI | FREE | skor 32.6
+  2. LASZLO BENES (ZECORNER KAYSERİSPOR) | 28y | 7 gol | SERBEST TRANSFER FIRSATI | FREE | skor 33.2
      → Savunma kırılgan sorunu var; 8 numara / fizik motoru bu açığı kapatacak. Benes: 7 gol, 29 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  3. ALEXANDRU IULIAN MAXIM (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 35y | 5 gol | SERBEST TRANSFER FIRSATI | FREE | skor 30.5
+  3. ALEXANDRU IULIAN MAXIM (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 35y | 5 gol | SERBEST TRANSFER FIRSATI | FREE | skor 30.9
      → Savunma kırılgan sorunu var; 8 numara / fizik motoru bu açığı kapatacak. Maxim: 5 gol, 32 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 35 yaş — deneyim katkısı, kısa dönem çözüm.
 
 ### GENÇLERBİRLİĞİ  [YÜKSEK]
@@ -298,27 +298,27 @@ Zayıf nokta: savunma kırılgan, son bölüm gol yeme riski, deplasman zayıf
 Zayıf nokta: skor üretim sorunu, deplasman zayıf
 
 **Santrfor / skor yükü** — Skor üretim problemi için bitirici profil; mevcut gol ortalaması 1.06.
-  1. FELIPE AUGUSTO DA SILVA (TRABZONSPOR A.Ş.) | 22y | 13 gol | PREMİUM TRANSFER | HIGH | skor 25.6
+  1. FELIPE AUGUSTO DA SILVA (TRABZONSPOR A.Ş.) | 22y | 13 gol | PREMİUM TRANSFER | HIGH | skor 27.6
      → Skor üretim sorunu sorunu var; Santrfor / skor yükü bu açığı kapatacak. Silva: 13 gol, 26 maç. Uzun sözleşme — yüksek bonusu göze almalı. 22 yaş, uzun vadeli yatırım profili.
-  2. ELDOR SHOMURODOV (RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ) | 30y | 22 gol | PREMİUM TRANSFER | MEDIUM | skor 24.2
-     → Skor üretim sorunu sorunu var; Santrfor / skor yükü bu açığı kapatacak. Shomurodov: 22 gol, 34 maç. Uzun sözleşme — yüksek bonusu göze almalı.
-  3. MOHAMED LAMINE BAYO (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 27y | 15 gol | PREMİUM TRANSFER | MEDIUM | skor 24.2
+  2. MOHAMED LAMINE BAYO (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 27y | 15 gol | PREMİUM TRANSFER | MEDIUM | skor 26.3
      → Skor üretim sorunu sorunu var; Santrfor / skor yükü bu açığı kapatacak. Bayo: 15 gol, 28 maç. Uzun sözleşme — yüksek bonusu göze almalı.
+  3. ELDOR SHOMURODOV (RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ) | 30y | 22 gol | PREMİUM TRANSFER | MEDIUM | skor 26.2
+     → Skor üretim sorunu sorunu var; Santrfor / skor yükü bu açığı kapatacak. Shomurodov: 22 gol, 34 maç. Uzun sözleşme — yüksek bonusu göze almalı.
 
 **Sol açık / çizgi kırıcı** — Deplasman veya üretim zafiyetinde çizgi kıran/taşıyıcı hücum profili gerekir.
-  1. DORGELES NENE (FENERBAHÇE A.Ş.) | 23y | 10 gol | PREMİUM TRANSFER | HIGH | skor 22.3
+  1. DORGELES NENE (FENERBAHÇE A.Ş.) | 23y | 10 gol | PREMİUM TRANSFER | HIGH | skor 24.5
      → Skor üretim sorunu sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Nene: 10 gol, 16 maçta sahada. Uzun sözleşme — yüksek bonusu göze almalı. 23 yaş, uzun vadeli yatırım profili.
-  2. BARIŞ ALPER YILMAZ (GALATASARAY A.Ş.) | 26y | 8 gol | PREMİUM TRANSFER | MEDIUM | skor 20.5
+  2. BARIŞ ALPER YILMAZ (GALATASARAY A.Ş.) | 26y | 8 gol | PREMİUM TRANSFER | MEDIUM | skor 22.9
      → Skor üretim sorunu sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Yilmaz: 8 gol, 27 maç. Uzun sözleşme — yüksek bonusu göze almalı.
-  3. YUNUS AKGÜN (GALATASARAY A.Ş.) | 25y | 7 gol | PREMİUM TRANSFER | MEDIUM | skor 19.9
+  3. YUNUS AKGÜN (GALATASARAY A.Ş.) | 25y | 7 gol | PREMİUM TRANSFER | MEDIUM | skor 22.3
      → Skor üretim sorunu sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Akgün: 7 gol, 23 maç. Uzun sözleşme — yüksek bonusu göze almalı.
 
 **8 numara / fizik motoru** — Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir.
-  1. ORKUN KÖKÇÜ (BEŞİKTAŞ A.Ş.) | 25y | 8 gol | SERBEST TRANSFER FIRSATI | FREE | skor 35.7
+  1. ORKUN KÖKÇÜ (BEŞİKTAŞ A.Ş.) | 25y | 8 gol | SERBEST TRANSFER FIRSATI | FREE | skor 36.0
      → Skor üretim sorunu sorunu var; 8 numara / fizik motoru bu açığı kapatacak. Kökçü: 8 gol, 29 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  2. LASZLO BENES (ZECORNER KAYSERİSPOR) | 28y | 7 gol | SERBEST TRANSFER FIRSATI | FREE | skor 32.6
+  2. LASZLO BENES (ZECORNER KAYSERİSPOR) | 28y | 7 gol | SERBEST TRANSFER FIRSATI | FREE | skor 33.2
      → Skor üretim sorunu sorunu var; 8 numara / fizik motoru bu açığı kapatacak. Benes: 7 gol, 29 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  3. ALEXANDRU IULIAN MAXIM (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 35y | 5 gol | SERBEST TRANSFER FIRSATI | FREE | skor 30.5
+  3. ALEXANDRU IULIAN MAXIM (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 35y | 5 gol | SERBEST TRANSFER FIRSATI | FREE | skor 30.9
      → Skor üretim sorunu sorunu var; 8 numara / fizik motoru bu açığı kapatacak. Maxim: 5 gol, 32 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 35 yaş — deneyim katkısı, kısa dönem çözüm.
 
 ### TÜMOSAN KONYASPOR  [YÜKSEK]
@@ -327,19 +327,19 @@ Zayıf nokta: skor üretim sorunu, deplasman zayıf
 Zayıf nokta: kart baskısı
 
 **6 numara / savunma emniyeti** — Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir.
-  1. SONER DİKMEN (HESAP.COM ANTALYASPOR) | 32y | 4 gol | SERBEST TRANSFER FIRSATI | FREE | skor 27.9
-     → Kart baskısı sorunu var; 6 numara / savunma emniyeti bu açığı kapatacak. Di̇kmen: 4 gol, 25 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 32 yaş — deneyim katkısı, kısa dönem çözüm.
-  2. ANTHONY JUNIOR DENNIS (GÖZTEPE A.Ş.) | 21y | 3 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 26.8
+  1. ANTHONY JUNIOR DENNIS (GÖZTEPE A.Ş.) | 21y | 3 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 28.2
      → Kart baskısı sorunu var; 6 numara / savunma emniyeti bu açığı kapatacak. Dennis: 3 gol, 29 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere. 21 yaş, uzun vadeli yatırım profili.
-  3. MANUEL LUIS DA SILVA CAFUMANA (KOCAELİSPOR) | 27y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 25.6
+  2. SONER DİKMEN (HESAP.COM ANTALYASPOR) | 32y | 4 gol | SERBEST TRANSFER FIRSATI | FREE | skor 27.6
+     → Kart baskısı sorunu var; 6 numara / savunma emniyeti bu açığı kapatacak. Di̇kmen: 4 gol, 25 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 32 yaş — deneyim katkısı, kısa dönem çözüm.
+  3. MANUEL LUIS DA SILVA CAFUMANA (KOCAELİSPOR) | 27y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 26.6
      → Kart baskısı sorunu var; 6 numara / savunma emniyeti bu açığı kapatacak. Cafumana: 25 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
 
 **8 numara / fizik motoru** — Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir.
-  1. ORKUN KÖKÇÜ (BEŞİKTAŞ A.Ş.) | 25y | 8 gol | SERBEST TRANSFER FIRSATI | FREE | skor 35.7
+  1. ORKUN KÖKÇÜ (BEŞİKTAŞ A.Ş.) | 25y | 8 gol | SERBEST TRANSFER FIRSATI | FREE | skor 36.0
      → Kart baskısı sorunu var; 8 numara / fizik motoru bu açığı kapatacak. Kökçü: 8 gol, 29 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  2. LASZLO BENES (ZECORNER KAYSERİSPOR) | 28y | 7 gol | SERBEST TRANSFER FIRSATI | FREE | skor 32.6
+  2. LASZLO BENES (ZECORNER KAYSERİSPOR) | 28y | 7 gol | SERBEST TRANSFER FIRSATI | FREE | skor 33.2
      → Kart baskısı sorunu var; 8 numara / fizik motoru bu açığı kapatacak. Benes: 7 gol, 29 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  3. ALEXANDRU IULIAN MAXIM (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 35y | 5 gol | SERBEST TRANSFER FIRSATI | FREE | skor 30.5
+  3. ALEXANDRU IULIAN MAXIM (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 35y | 5 gol | SERBEST TRANSFER FIRSATI | FREE | skor 30.9
      → Kart baskısı sorunu var; 8 numara / fizik motoru bu açığı kapatacak. Maxim: 5 gol, 32 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 35 yaş — deneyim katkısı, kısa dönem çözüm.
 
 ### CORENDON ALANYASPOR  [YÜKSEK]
@@ -348,27 +348,27 @@ Zayıf nokta: kart baskısı
 Zayıf nokta: deplasman zayıf
 
 **8 numara / fizik motoru** — Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir.
-  1. ORKUN KÖKÇÜ (BEŞİKTAŞ A.Ş.) | 25y | 8 gol | SERBEST TRANSFER FIRSATI | FREE | skor 35.7
+  1. ORKUN KÖKÇÜ (BEŞİKTAŞ A.Ş.) | 25y | 8 gol | SERBEST TRANSFER FIRSATI | FREE | skor 36.0
      → Deplasman zayıf sorunu var; 8 numara / fizik motoru bu açığı kapatacak. Kökçü: 8 gol, 29 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  2. LASZLO BENES (ZECORNER KAYSERİSPOR) | 28y | 7 gol | SERBEST TRANSFER FIRSATI | FREE | skor 32.6
+  2. LASZLO BENES (ZECORNER KAYSERİSPOR) | 28y | 7 gol | SERBEST TRANSFER FIRSATI | FREE | skor 33.2
      → Deplasman zayıf sorunu var; 8 numara / fizik motoru bu açığı kapatacak. Benes: 7 gol, 29 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  3. ALEXANDRU IULIAN MAXIM (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 35y | 5 gol | SERBEST TRANSFER FIRSATI | FREE | skor 30.5
+  3. ALEXANDRU IULIAN MAXIM (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 35y | 5 gol | SERBEST TRANSFER FIRSATI | FREE | skor 30.9
      → Deplasman zayıf sorunu var; 8 numara / fizik motoru bu açığı kapatacak. Maxim: 5 gol, 32 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 35 yaş — deneyim katkısı, kısa dönem çözüm.
 
 **Sol açık / çizgi kırıcı** — Deplasman veya üretim zafiyetinde çizgi kıran/taşıyıcı hücum profili gerekir.
-  1. DORGELES NENE (FENERBAHÇE A.Ş.) | 23y | 10 gol | PREMİUM TRANSFER | HIGH | skor 22.3
+  1. DORGELES NENE (FENERBAHÇE A.Ş.) | 23y | 10 gol | PREMİUM TRANSFER | HIGH | skor 24.5
      → Deplasman zayıf sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Nene: 10 gol, 16 maçta sahada. Uzun sözleşme — yüksek bonusu göze almalı. 23 yaş, uzun vadeli yatırım profili.
-  2. BARIŞ ALPER YILMAZ (GALATASARAY A.Ş.) | 26y | 8 gol | PREMİUM TRANSFER | MEDIUM | skor 20.5
+  2. BARIŞ ALPER YILMAZ (GALATASARAY A.Ş.) | 26y | 8 gol | PREMİUM TRANSFER | MEDIUM | skor 22.9
      → Deplasman zayıf sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Yilmaz: 8 gol, 27 maç. Uzun sözleşme — yüksek bonusu göze almalı.
-  3. YUNUS AKGÜN (GALATASARAY A.Ş.) | 25y | 7 gol | PREMİUM TRANSFER | MEDIUM | skor 19.9
+  3. YUNUS AKGÜN (GALATASARAY A.Ş.) | 25y | 7 gol | PREMİUM TRANSFER | MEDIUM | skor 22.3
      → Deplasman zayıf sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Akgün: 7 gol, 23 maç. Uzun sözleşme — yüksek bonusu göze almalı.
 
 **Bek / çift yönlü koridor** — Kanat savunması ve geçiş gücünü aynı anda destekleyecek çift yönlü bek profili gerekir.
-  1. ZEKİ YAVRU (SAMSUNSPOR A.Ş.) | 34y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 22.4
+  1. ZEKİ YAVRU (SAMSUNSPOR A.Ş.) | 34y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 23.7
      → Deplasman zayıf sorunu var; Bek / çift yönlü koridor bu açığı kapatacak. Yavru: 25 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 34 yaş — deneyim katkısı, kısa dönem çözüm.
-  2. YHOAN MANY ANDZOUANA (TÜMOSAN KONYASPOR) | 29y | 2 gol | PREMİUM TRANSFER | MEDIUM | skor 13.8
+  2. YHOAN MANY ANDZOUANA (TÜMOSAN KONYASPOR) | 29y | 2 gol | PREMİUM TRANSFER | MEDIUM | skor 16.7
      → Deplasman zayıf sorunu var; Bek / çift yönlü koridor bu açığı kapatacak. Andzouana: 2 gol, 29 maç. Uzun sözleşme — yüksek bonusu göze almalı.
-  3. WAGNER FABRICIO CARDOSO DE PINA (TRABZONSPOR A.Ş.) | 23y | 0 gol | PREMİUM TRANSFER | HIGH | skor 13.6
+  3. WAGNER FABRICIO CARDOSO DE PINA (TRABZONSPOR A.Ş.) | 23y | 0 gol | PREMİUM TRANSFER | HIGH | skor 16.5
      → Deplasman zayıf sorunu var; Bek / çift yönlü koridor bu açığı kapatacak. Pina: 28 maç. Uzun sözleşme — yüksek bonusu göze almalı. 23 yaş, uzun vadeli yatırım profili.
 
 ### SAMSUNSPOR A.Ş.  [YÜKSEK]
@@ -377,27 +377,27 @@ Zayıf nokta: deplasman zayıf
 Zayıf nokta: son bölüm gol yeme riski
 
 **8 numara / fizik motoru** — Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir.
-  1. ORKUN KÖKÇÜ (BEŞİKTAŞ A.Ş.) | 25y | 8 gol | SERBEST TRANSFER FIRSATI | FREE | skor 35.7
+  1. ORKUN KÖKÇÜ (BEŞİKTAŞ A.Ş.) | 25y | 8 gol | SERBEST TRANSFER FIRSATI | FREE | skor 36.0
      → Son bölüm gol yeme riski sorunu var; 8 numara / fizik motoru bu açığı kapatacak. Kökçü: 8 gol, 29 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  2. LASZLO BENES (ZECORNER KAYSERİSPOR) | 28y | 7 gol | SERBEST TRANSFER FIRSATI | FREE | skor 32.6
+  2. LASZLO BENES (ZECORNER KAYSERİSPOR) | 28y | 7 gol | SERBEST TRANSFER FIRSATI | FREE | skor 33.2
      → Son bölüm gol yeme riski sorunu var; 8 numara / fizik motoru bu açığı kapatacak. Benes: 7 gol, 29 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  3. ALEXANDRU IULIAN MAXIM (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 35y | 5 gol | SERBEST TRANSFER FIRSATI | FREE | skor 30.5
+  3. ALEXANDRU IULIAN MAXIM (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 35y | 5 gol | SERBEST TRANSFER FIRSATI | FREE | skor 30.9
      → Son bölüm gol yeme riski sorunu var; 8 numara / fizik motoru bu açığı kapatacak. Maxim: 5 gol, 32 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 35 yaş — deneyim katkısı, kısa dönem çözüm.
 
 **6 numara / savunma emniyeti** — Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir.
-  1. SONER DİKMEN (HESAP.COM ANTALYASPOR) | 32y | 4 gol | SERBEST TRANSFER FIRSATI | FREE | skor 27.9
-     → Son bölüm gol yeme riski sorunu var; 6 numara / savunma emniyeti bu açığı kapatacak. Di̇kmen: 4 gol, 25 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 32 yaş — deneyim katkısı, kısa dönem çözüm.
-  2. ANTHONY JUNIOR DENNIS (GÖZTEPE A.Ş.) | 21y | 3 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 26.8
+  1. ANTHONY JUNIOR DENNIS (GÖZTEPE A.Ş.) | 21y | 3 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 28.2
      → Son bölüm gol yeme riski sorunu var; 6 numara / savunma emniyeti bu açığı kapatacak. Dennis: 3 gol, 29 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere. 21 yaş, uzun vadeli yatırım profili.
-  3. MANUEL LUIS DA SILVA CAFUMANA (KOCAELİSPOR) | 27y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 25.6
+  2. SONER DİKMEN (HESAP.COM ANTALYASPOR) | 32y | 4 gol | SERBEST TRANSFER FIRSATI | FREE | skor 27.6
+     → Son bölüm gol yeme riski sorunu var; 6 numara / savunma emniyeti bu açığı kapatacak. Di̇kmen: 4 gol, 25 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 32 yaş — deneyim katkısı, kısa dönem çözüm.
+  3. MANUEL LUIS DA SILVA CAFUMANA (KOCAELİSPOR) | 27y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 26.6
      → Son bölüm gol yeme riski sorunu var; 6 numara / savunma emniyeti bu açığı kapatacak. Cafumana: 25 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
 
 **Stoper / hava ve temas** — Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 1.32.
-  1. HELITON JORGE  TITO DOS SANTOS (GÖZTEPE A.Ş.) | 30y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 26.8
+  1. HELITON JORGE  TITO DOS SANTOS (GÖZTEPE A.Ş.) | 30y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 27.8
      → Son bölüm gol yeme riski sorunu var; Stoper / hava ve temas bu açığı kapatacak. Santos: 32 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  2. FIDAN ALITI (CORENDON ALANYASPOR) | 32y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 25.6
+  2. FIDAN ALITI (CORENDON ALANYASPOR) | 32y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 26.6
      → Son bölüm gol yeme riski sorunu var; Stoper / hava ve temas bu açığı kapatacak. Aliti: 30 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 32 yaş — deneyim katkısı, kısa dönem çözüm.
-  3. NUNO MIGUEL REIS LIMA (CORENDON ALANYASPOR) | 25y | 1 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 24.3
+  3. NUNO MIGUEL REIS LIMA (CORENDON ALANYASPOR) | 25y | 1 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 25.8
      → Son bölüm gol yeme riski sorunu var; Stoper / hava ve temas bu açığı kapatacak. Lima: 1 gol, 32 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
 
 ### GÖZTEPE A.Ş.  [NORMAL]
@@ -406,19 +406,19 @@ Zayıf nokta: son bölüm gol yeme riski
 Zayıf nokta: kart baskısı
 
 **6 numara / savunma emniyeti** — Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir.
-  1. SONER DİKMEN (HESAP.COM ANTALYASPOR) | 32y | 4 gol | SERBEST TRANSFER FIRSATI | FREE | skor 27.9
-     → Kart baskısı sorunu var; 6 numara / savunma emniyeti bu açığı kapatacak. Di̇kmen: 4 gol, 25 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 32 yaş — deneyim katkısı, kısa dönem çözüm.
-  2. FRANCO DARYL TONGYA HEUBANG (NATURA DÜNYASI GENÇLERBİRLİĞİ) | 24y | 6 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 27.5
+  1. FRANCO DARYL TONGYA HEUBANG (NATURA DÜNYASI GENÇLERBİRLİĞİ) | 24y | 6 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 27.7
      → Kart baskısı sorunu var; 6 numara / savunma emniyeti bu açığı kapatacak. Heubang: 6 gol, 27 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
-  3. MANUEL LUIS DA SILVA CAFUMANA (KOCAELİSPOR) | 27y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 25.6
+  2. SONER DİKMEN (HESAP.COM ANTALYASPOR) | 32y | 4 gol | SERBEST TRANSFER FIRSATI | FREE | skor 27.6
+     → Kart baskısı sorunu var; 6 numara / savunma emniyeti bu açığı kapatacak. Di̇kmen: 4 gol, 25 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 32 yaş — deneyim katkısı, kısa dönem çözüm.
+  3. MANUEL LUIS DA SILVA CAFUMANA (KOCAELİSPOR) | 27y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 26.6
      → Kart baskısı sorunu var; 6 numara / savunma emniyeti bu açığı kapatacak. Cafumana: 25 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
 
 **8 numara / fizik motoru** — Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir.
-  1. ORKUN KÖKÇÜ (BEŞİKTAŞ A.Ş.) | 25y | 8 gol | SERBEST TRANSFER FIRSATI | FREE | skor 35.7
+  1. ORKUN KÖKÇÜ (BEŞİKTAŞ A.Ş.) | 25y | 8 gol | SERBEST TRANSFER FIRSATI | FREE | skor 36.0
      → Kart baskısı sorunu var; 8 numara / fizik motoru bu açığı kapatacak. Kökçü: 8 gol, 29 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  2. LASZLO BENES (ZECORNER KAYSERİSPOR) | 28y | 7 gol | SERBEST TRANSFER FIRSATI | FREE | skor 32.6
+  2. LASZLO BENES (ZECORNER KAYSERİSPOR) | 28y | 7 gol | SERBEST TRANSFER FIRSATI | FREE | skor 33.2
      → Kart baskısı sorunu var; 8 numara / fizik motoru bu açığı kapatacak. Benes: 7 gol, 29 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  3. ALEXANDRU IULIAN MAXIM (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 35y | 5 gol | SERBEST TRANSFER FIRSATI | FREE | skor 30.5
+  3. ALEXANDRU IULIAN MAXIM (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 35y | 5 gol | SERBEST TRANSFER FIRSATI | FREE | skor 30.9
      → Kart baskısı sorunu var; 8 numara / fizik motoru bu açığı kapatacak. Maxim: 5 gol, 32 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 35 yaş — deneyim katkısı, kısa dönem çözüm.
 
 ### BEŞİKTAŞ A.Ş.  [NORMAL]
@@ -427,20 +427,20 @@ Zayıf nokta: kart baskısı
 Zayıf nokta: kadro derinliği sınırlı
 
 **Sol açık / çizgi kırıcı** — Büyük maç rotasyonunu besleyecek ve kanat derinliğini artıracak yaratıcı profil.
-  1. DORGELES NENE (FENERBAHÇE A.Ş.) | 23y | 10 gol | PREMİUM TRANSFER | HIGH | skor 22.3
+  1. DORGELES NENE (FENERBAHÇE A.Ş.) | 23y | 10 gol | PREMİUM TRANSFER | HIGH | skor 24.5
      → Kadro derinliği sınırlı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Nene: 10 gol, 16 maçta sahada. Uzun sözleşme — yüksek bonusu göze almalı. 23 yaş, uzun vadeli yatırım profili.
-  2. BARIŞ ALPER YILMAZ (GALATASARAY A.Ş.) | 26y | 8 gol | PREMİUM TRANSFER | MEDIUM | skor 20.5
+  2. BARIŞ ALPER YILMAZ (GALATASARAY A.Ş.) | 26y | 8 gol | PREMİUM TRANSFER | MEDIUM | skor 22.9
      → Kadro derinliği sınırlı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Yilmaz: 8 gol, 27 maç. Uzun sözleşme — yüksek bonusu göze almalı.
-  3. YUNUS AKGÜN (GALATASARAY A.Ş.) | 25y | 7 gol | PREMİUM TRANSFER | MEDIUM | skor 19.9
+  3. YUNUS AKGÜN (GALATASARAY A.Ş.) | 25y | 7 gol | PREMİUM TRANSFER | MEDIUM | skor 22.3
      → Kadro derinliği sınırlı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Akgün: 7 gol, 23 maç. Uzun sözleşme — yüksek bonusu göze almalı.
 
 **Bek / çift yönlü koridor** — Koridor derinliğini artıracak, büyük maç baskısında rotasyon sağlayacak çift yönlü bek.
-  1. RUAN PEREIRA DUARTE (CORENDON ALANYASPOR) | 21y | 1 gol | PREMİUM TRANSFER | HIGH | skor 15.0
-     → Kadro derinliği sınırlı sorunu var; Bek / çift yönlü koridor bu açığı kapatacak. Duarte: 1 gol, 26 maç. Uzun sözleşme — yüksek bonusu göze almalı. 21 yaş, uzun vadeli yatırım profili.
-  2. YHOAN MANY ANDZOUANA (TÜMOSAN KONYASPOR) | 29y | 2 gol | PREMİUM TRANSFER | MEDIUM | skor 13.8
+  1. YHOAN MANY ANDZOUANA (TÜMOSAN KONYASPOR) | 29y | 2 gol | PREMİUM TRANSFER | MEDIUM | skor 16.7
      → Kadro derinliği sınırlı sorunu var; Bek / çift yönlü koridor bu açığı kapatacak. Andzouana: 2 gol, 29 maç. Uzun sözleşme — yüksek bonusu göze almalı.
-  3. WAGNER FABRICIO CARDOSO DE PINA (TRABZONSPOR A.Ş.) | 23y | 0 gol | PREMİUM TRANSFER | HIGH | skor 13.6
+  2. WAGNER FABRICIO CARDOSO DE PINA (TRABZONSPOR A.Ş.) | 23y | 0 gol | PREMİUM TRANSFER | HIGH | skor 16.5
      → Kadro derinliği sınırlı sorunu var; Bek / çift yönlü koridor bu açığı kapatacak. Pina: 28 maç. Uzun sözleşme — yüksek bonusu göze almalı. 23 yaş, uzun vadeli yatırım profili.
+  3. KENNETH IMMANUEL PAAL (HESAP.COM ANTALYASPOR) | 28y | 0 gol | PREMİUM TRANSFER | MEDIUM | skor 15.6
+     → Kadro derinliği sınırlı sorunu var; Bek / çift yönlü koridor bu açığı kapatacak. Paal: 32 maç. Uzun sözleşme — yüksek bonusu göze almalı.
 
 ### RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ  [NORMAL]
 *1.68 puan/maç | maç başına 1.71 attı | maç başına 1.03 yedi*
@@ -448,20 +448,20 @@ Zayıf nokta: kadro derinliği sınırlı
 Zayıf nokta: kadro derinliği sınırlı
 
 **Sol açık / çizgi kırıcı** — Büyük maç rotasyonunu besleyecek ve kanat derinliğini artıracak yaratıcı profil.
-  1. DORGELES NENE (FENERBAHÇE A.Ş.) | 23y | 10 gol | PREMİUM TRANSFER | HIGH | skor 22.3
+  1. DORGELES NENE (FENERBAHÇE A.Ş.) | 23y | 10 gol | PREMİUM TRANSFER | HIGH | skor 24.5
      → Kadro derinliği sınırlı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Nene: 10 gol, 16 maçta sahada. Uzun sözleşme — yüksek bonusu göze almalı. 23 yaş, uzun vadeli yatırım profili.
-  2. BARIŞ ALPER YILMAZ (GALATASARAY A.Ş.) | 26y | 8 gol | PREMİUM TRANSFER | MEDIUM | skor 20.5
+  2. BARIŞ ALPER YILMAZ (GALATASARAY A.Ş.) | 26y | 8 gol | PREMİUM TRANSFER | MEDIUM | skor 22.9
      → Kadro derinliği sınırlı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Yilmaz: 8 gol, 27 maç. Uzun sözleşme — yüksek bonusu göze almalı.
-  3. YUNUS AKGÜN (GALATASARAY A.Ş.) | 25y | 7 gol | PREMİUM TRANSFER | MEDIUM | skor 19.9
+  3. YUNUS AKGÜN (GALATASARAY A.Ş.) | 25y | 7 gol | PREMİUM TRANSFER | MEDIUM | skor 22.3
      → Kadro derinliği sınırlı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Akgün: 7 gol, 23 maç. Uzun sözleşme — yüksek bonusu göze almalı.
 
 **Bek / çift yönlü koridor** — Koridor derinliğini artıracak, büyük maç baskısında rotasyon sağlayacak çift yönlü bek.
-  1. RUAN PEREIRA DUARTE (CORENDON ALANYASPOR) | 21y | 1 gol | PREMİUM TRANSFER | HIGH | skor 15.0
-     → Kadro derinliği sınırlı sorunu var; Bek / çift yönlü koridor bu açığı kapatacak. Duarte: 1 gol, 26 maç. Uzun sözleşme — yüksek bonusu göze almalı. 21 yaş, uzun vadeli yatırım profili.
-  2. YHOAN MANY ANDZOUANA (TÜMOSAN KONYASPOR) | 29y | 2 gol | PREMİUM TRANSFER | MEDIUM | skor 13.8
+  1. YHOAN MANY ANDZOUANA (TÜMOSAN KONYASPOR) | 29y | 2 gol | PREMİUM TRANSFER | MEDIUM | skor 16.7
      → Kadro derinliği sınırlı sorunu var; Bek / çift yönlü koridor bu açığı kapatacak. Andzouana: 2 gol, 29 maç. Uzun sözleşme — yüksek bonusu göze almalı.
-  3. WAGNER FABRICIO CARDOSO DE PINA (TRABZONSPOR A.Ş.) | 23y | 0 gol | PREMİUM TRANSFER | HIGH | skor 13.6
+  2. WAGNER FABRICIO CARDOSO DE PINA (TRABZONSPOR A.Ş.) | 23y | 0 gol | PREMİUM TRANSFER | HIGH | skor 16.5
      → Kadro derinliği sınırlı sorunu var; Bek / çift yönlü koridor bu açığı kapatacak. Pina: 28 maç. Uzun sözleşme — yüksek bonusu göze almalı. 23 yaş, uzun vadeli yatırım profili.
+  3. KENNETH IMMANUEL PAAL (HESAP.COM ANTALYASPOR) | 28y | 0 gol | PREMİUM TRANSFER | MEDIUM | skor 15.6
+     → Kadro derinliği sınırlı sorunu var; Bek / çift yönlü koridor bu açığı kapatacak. Paal: 32 maç. Uzun sözleşme — yüksek bonusu göze almalı.
 
 ### TRABZONSPOR A.Ş.  [NORMAL]
 *2.03 puan/maç | maç başına 1.79 attı | maç başına 1.15 yedi*
@@ -469,20 +469,20 @@ Zayıf nokta: kadro derinliği sınırlı
 Zayıf nokta: kadro derinliği sınırlı
 
 **Sol açık / çizgi kırıcı** — Büyük maç rotasyonunu besleyecek ve kanat derinliğini artıracak yaratıcı profil.
-  1. DORGELES NENE (FENERBAHÇE A.Ş.) | 23y | 10 gol | PREMİUM TRANSFER | HIGH | skor 22.3
+  1. DORGELES NENE (FENERBAHÇE A.Ş.) | 23y | 10 gol | PREMİUM TRANSFER | HIGH | skor 24.5
      → Kadro derinliği sınırlı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Nene: 10 gol, 16 maçta sahada. Uzun sözleşme — yüksek bonusu göze almalı. 23 yaş, uzun vadeli yatırım profili.
-  2. BARIŞ ALPER YILMAZ (GALATASARAY A.Ş.) | 26y | 8 gol | PREMİUM TRANSFER | MEDIUM | skor 20.5
+  2. BARIŞ ALPER YILMAZ (GALATASARAY A.Ş.) | 26y | 8 gol | PREMİUM TRANSFER | MEDIUM | skor 22.9
      → Kadro derinliği sınırlı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Yilmaz: 8 gol, 27 maç. Uzun sözleşme — yüksek bonusu göze almalı.
-  3. YUNUS AKGÜN (GALATASARAY A.Ş.) | 25y | 7 gol | PREMİUM TRANSFER | MEDIUM | skor 19.9
+  3. YUNUS AKGÜN (GALATASARAY A.Ş.) | 25y | 7 gol | PREMİUM TRANSFER | MEDIUM | skor 22.3
      → Kadro derinliği sınırlı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Akgün: 7 gol, 23 maç. Uzun sözleşme — yüksek bonusu göze almalı.
 
 **Bek / çift yönlü koridor** — Koridor derinliğini artıracak, büyük maç baskısında rotasyon sağlayacak çift yönlü bek.
-  1. ZEKİ YAVRU (SAMSUNSPOR A.Ş.) | 34y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 22.4
+  1. ZEKİ YAVRU (SAMSUNSPOR A.Ş.) | 34y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 23.7
      → Kadro derinliği sınırlı sorunu var; Bek / çift yönlü koridor bu açığı kapatacak. Yavru: 25 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 34 yaş — deneyim katkısı, kısa dönem çözüm.
-  2. RUAN PEREIRA DUARTE (CORENDON ALANYASPOR) | 21y | 1 gol | PREMİUM TRANSFER | HIGH | skor 15.0
-     → Kadro derinliği sınırlı sorunu var; Bek / çift yönlü koridor bu açığı kapatacak. Duarte: 1 gol, 26 maç. Uzun sözleşme — yüksek bonusu göze almalı. 21 yaş, uzun vadeli yatırım profili.
-  3. YHOAN MANY ANDZOUANA (TÜMOSAN KONYASPOR) | 29y | 2 gol | PREMİUM TRANSFER | MEDIUM | skor 13.8
+  2. YHOAN MANY ANDZOUANA (TÜMOSAN KONYASPOR) | 29y | 2 gol | PREMİUM TRANSFER | MEDIUM | skor 16.7
      → Kadro derinliği sınırlı sorunu var; Bek / çift yönlü koridor bu açığı kapatacak. Andzouana: 2 gol, 29 maç. Uzun sözleşme — yüksek bonusu göze almalı.
+  3. KENNETH IMMANUEL PAAL (HESAP.COM ANTALYASPOR) | 28y | 0 gol | PREMİUM TRANSFER | MEDIUM | skor 15.6
+     → Kadro derinliği sınırlı sorunu var; Bek / çift yönlü koridor bu açığı kapatacak. Paal: 32 maç. Uzun sözleşme — yüksek bonusu göze almalı.
 
 ### FENERBAHÇE A.Ş.  [STABİL]
 *2.18 puan/maç | maç başına 2.26 attı | maç başına 1.09 yedi*
@@ -490,20 +490,20 @@ Zayıf nokta: kadro derinliği sınırlı
 Zayıf nokta: kadro derinliği sınırlı
 
 **Sol açık / çizgi kırıcı** — Büyük maç rotasyonunu besleyecek ve kanat derinliğini artıracak yaratıcı profil.
-  1. BARIŞ ALPER YILMAZ (GALATASARAY A.Ş.) | 26y | 8 gol | PREMİUM TRANSFER | MEDIUM | skor 20.5
+  1. BARIŞ ALPER YILMAZ (GALATASARAY A.Ş.) | 26y | 8 gol | PREMİUM TRANSFER | MEDIUM | skor 22.9
      → Kadro derinliği sınırlı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Yilmaz: 8 gol, 27 maç. Uzun sözleşme — yüksek bonusu göze almalı.
-  2. YUNUS AKGÜN (GALATASARAY A.Ş.) | 25y | 7 gol | PREMİUM TRANSFER | MEDIUM | skor 19.9
+  2. YUNUS AKGÜN (GALATASARAY A.Ş.) | 25y | 7 gol | PREMİUM TRANSFER | MEDIUM | skor 22.3
      → Kadro derinliği sınırlı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Akgün: 7 gol, 23 maç. Uzun sözleşme — yüksek bonusu göze almalı.
-  3. KAZEEM ADEREMI J. OLAIGBE (TRABZONSPOR A.Ş.) | 23y | 0 gol | PREMİUM TRANSFER | HIGH | skor 13.6
+  3. KAZEEM ADEREMI J. OLAIGBE (TRABZONSPOR A.Ş.) | 23y | 0 gol | PREMİUM TRANSFER | HIGH | skor 16.5
      → Kadro derinliği sınırlı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Olaigbe: 26 maç. Uzun sözleşme — yüksek bonusu göze almalı. 23 yaş, uzun vadeli yatırım profili.
 
 **Bek / çift yönlü koridor** — Koridor derinliğini artıracak, büyük maç baskısında rotasyon sağlayacak çift yönlü bek.
-  1. RUAN PEREIRA DUARTE (CORENDON ALANYASPOR) | 21y | 1 gol | PREMİUM TRANSFER | HIGH | skor 15.0
-     → Kadro derinliği sınırlı sorunu var; Bek / çift yönlü koridor bu açığı kapatacak. Duarte: 1 gol, 26 maç. Uzun sözleşme — yüksek bonusu göze almalı. 21 yaş, uzun vadeli yatırım profili.
-  2. YHOAN MANY ANDZOUANA (TÜMOSAN KONYASPOR) | 29y | 2 gol | PREMİUM TRANSFER | MEDIUM | skor 13.8
+  1. YHOAN MANY ANDZOUANA (TÜMOSAN KONYASPOR) | 29y | 2 gol | PREMİUM TRANSFER | MEDIUM | skor 16.7
      → Kadro derinliği sınırlı sorunu var; Bek / çift yönlü koridor bu açığı kapatacak. Andzouana: 2 gol, 29 maç. Uzun sözleşme — yüksek bonusu göze almalı.
-  3. WAGNER FABRICIO CARDOSO DE PINA (TRABZONSPOR A.Ş.) | 23y | 0 gol | PREMİUM TRANSFER | HIGH | skor 13.6
+  2. WAGNER FABRICIO CARDOSO DE PINA (TRABZONSPOR A.Ş.) | 23y | 0 gol | PREMİUM TRANSFER | HIGH | skor 16.5
      → Kadro derinliği sınırlı sorunu var; Bek / çift yönlü koridor bu açığı kapatacak. Pina: 28 maç. Uzun sözleşme — yüksek bonusu göze almalı. 23 yaş, uzun vadeli yatırım profili.
+  3. KENNETH IMMANUEL PAAL (HESAP.COM ANTALYASPOR) | 28y | 0 gol | PREMİUM TRANSFER | MEDIUM | skor 15.6
+     → Kadro derinliği sınırlı sorunu var; Bek / çift yönlü koridor bu açığı kapatacak. Paal: 32 maç. Uzun sözleşme — yüksek bonusu göze almalı.
 
 ### GALATASARAY A.Ş.  [STABİL]
 *2.26 puan/maç | maç başına 2.26 attı | maç başına 0.88 yedi*
@@ -511,17 +511,17 @@ Zayıf nokta: kadro derinliği sınırlı
 Zayıf nokta: kadro derinliği sınırlı
 
 **Sol açık / çizgi kırıcı** — Büyük maç rotasyonunu besleyecek ve kanat derinliğini artıracak yaratıcı profil.
-  1. DORGELES NENE (FENERBAHÇE A.Ş.) | 23y | 10 gol | PREMİUM TRANSFER | HIGH | skor 22.3
+  1. DORGELES NENE (FENERBAHÇE A.Ş.) | 23y | 10 gol | PREMİUM TRANSFER | HIGH | skor 24.5
      → Kadro derinliği sınırlı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Nene: 10 gol, 16 maçta sahada. Uzun sözleşme — yüksek bonusu göze almalı. 23 yaş, uzun vadeli yatırım profili.
-  2. ANTHONY TİTE EMMANUEL MUSABA (SAMSUNSPOR A.Ş.) | 25y | 5 gol | PREMİUM TRANSFER | MEDIUM | skor 17.0
+  2. ANTHONY TİTE EMMANUEL MUSABA (SAMSUNSPOR A.Ş.) | 25y | 5 gol | PREMİUM TRANSFER | MEDIUM | skor 19.7
      → Kadro derinliği sınırlı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Musaba: 5 gol, 24 maç. Uzun sözleşme — yüksek bonusu göze almalı.
-  3. KAZEEM ADEREMI J. OLAIGBE (TRABZONSPOR A.Ş.) | 23y | 0 gol | PREMİUM TRANSFER | HIGH | skor 13.6
+  3. KAZEEM ADEREMI J. OLAIGBE (TRABZONSPOR A.Ş.) | 23y | 0 gol | PREMİUM TRANSFER | HIGH | skor 16.5
      → Kadro derinliği sınırlı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Olaigbe: 26 maç. Uzun sözleşme — yüksek bonusu göze almalı. 23 yaş, uzun vadeli yatırım profili.
 
 **Bek / çift yönlü koridor** — Koridor derinliğini artıracak, büyük maç baskısında rotasyon sağlayacak çift yönlü bek.
-  1. ZEKİ YAVRU (SAMSUNSPOR A.Ş.) | 34y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 22.4
+  1. ZEKİ YAVRU (SAMSUNSPOR A.Ş.) | 34y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 23.7
      → Kadro derinliği sınırlı sorunu var; Bek / çift yönlü koridor bu açığı kapatacak. Yavru: 25 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 34 yaş — deneyim katkısı, kısa dönem çözüm.
-  2. RUAN PEREIRA DUARTE (CORENDON ALANYASPOR) | 21y | 1 gol | PREMİUM TRANSFER | HIGH | skor 15.0
-     → Kadro derinliği sınırlı sorunu var; Bek / çift yönlü koridor bu açığı kapatacak. Duarte: 1 gol, 26 maç. Uzun sözleşme — yüksek bonusu göze almalı. 21 yaş, uzun vadeli yatırım profili.
-  3. YHOAN MANY ANDZOUANA (TÜMOSAN KONYASPOR) | 29y | 2 gol | PREMİUM TRANSFER | MEDIUM | skor 13.8
+  2. YHOAN MANY ANDZOUANA (TÜMOSAN KONYASPOR) | 29y | 2 gol | PREMİUM TRANSFER | MEDIUM | skor 16.7
      → Kadro derinliği sınırlı sorunu var; Bek / çift yönlü koridor bu açığı kapatacak. Andzouana: 2 gol, 29 maç. Uzun sözleşme — yüksek bonusu göze almalı.
+  3. WAGNER FABRICIO CARDOSO DE PINA (TRABZONSPOR A.Ş.) | 23y | 0 gol | PREMİUM TRANSFER | HIGH | skor 16.5
+     → Kadro derinliği sınırlı sorunu var; Bek / çift yönlü koridor bu açığı kapatacak. Pina: 28 maç. Uzun sözleşme — yüksek bonusu göze almalı. 23 yaş, uzun vadeli yatırım profili.

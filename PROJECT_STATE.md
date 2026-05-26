@@ -1,6 +1,6 @@
 # Futbol İstihbarat Platformu - Proje Durumu
 
-Son güncelleme: 2026-05-26 (session 4)
+Son güncelleme: 2026-05-26 (session 5)
 
 ## Amaç
 
@@ -1140,6 +1140,22 @@ python -m src.simulate_player_match_impact --preview data/processed/previews_bes
 5. AI destekli hikayeli analiz üretimi.
 6. Tüm takımlar için maç önü raporları.
 7. Football Manager tarzı scout/transfer öneri ekranı. ✓ (build_transfer_recommendation_report.py — 2026-05-24)
+
+## 2026-05-26 Oyuncu-Haber Eşleştirme ve Formasyonel Uyum (Session 4)
+
+### Oyuncu-Haber Eşleştirme (build_live_feed.py)
+- `_build_player_index()`: transfer listesinden soyad bazlı arama sözlüğü üretir.
+- `_detect_player()`: haber başlığında geçen ilk bilinen oyuncu adını tespit eder.
+- Haber kartlarında eşleşen oyuncu sarı badge ile gösteriliyor (`👤 Oyuncu Adı`).
+
+### Formasyonel Uyum Skoru (build_transfer_recommendation_report.py)
+- `_FORMATION_FIT` matrisi: 9 rol (CB_DOMINANT, CM_ENGINE, DM_SECURITY, ST_SCORER, LW_CREATOR, FB_TWO_WAY, GK_STABILITY, LOW_RISK_REGULAR, RESALE_VALUE) → pozisyon anahtar kelimesi → uyum skoru (0-100).
+- Hem Türkçe (TFF) hem İngilizce (Transfermarkt) pozisyon adları destekleniyor.
+- `_formation_fit_score()`: rol × pozisyon → 0-100 skoru üretir (bilinmiyorsa 50 nötr, eşleşmezse 35 düşük uyum).
+- `score_candidate()`: `formation_fit` hesaplanıyor ve transfer_score'a %10 ağırlıkla katılıyor.
+- `result` dict'ine `"formation_fit"` alanı eklendi.
+- `_formation_fit_inline()`: HTML kart içinde ⬡ sembolü + renk (yeşil≥80, turuncu≥50, kırmızı<50) olarak gösteriliyor.
+- Test dağılımı: Centre-Back → CB_DOMINANT = 100, Defensive Midfield → DM_SECURITY = 100, Central Midfield → DM_SECURITY = 70.
 
 ## 2026-05-26 Codex Entegrasyonu ve Haber Güvenilirliği (Session 4)
 
