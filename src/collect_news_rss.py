@@ -8,7 +8,7 @@ import argparse
 import hashlib
 import json
 import time
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 
@@ -17,6 +17,8 @@ import requests
 from bs4 import BeautifulSoup
 
 from src.config import PROCESSED_DIR, RAW_DIR, SEASON
+
+MAX_AGE_DAYS = 14
 
 RSS_SOURCES = [
     {
@@ -199,9 +201,22 @@ def fetch_source(source: dict, max_items: int, fetch_fulltext: bool) -> list[dic
     articles = []
     for entry in feed.entries[:max_items]:
         article = parse_entry(entry, source, fetch_fulltext, headers)
-        if article:
+        if article and _is_recent(article.get("published_at")):
             articles.append(article)
     return articles
+
+
+def _is_recent(published_at: str | None, now: datetime | None = None) -> bool:
+    if not published_at:
+        return True
+    try:
+        timestamp = datetime.fromisoformat(published_at.replace("Z", "+00:00"))
+    except ValueError:
+        return True
+    if timestamp.tzinfo is None:
+        timestamp = timestamp.replace(tzinfo=timezone.utc)
+    reference_time = now or datetime.now(timezone.utc)
+    return timestamp.astimezone(timezone.utc) >= reference_time - timedelta(days=MAX_AGE_DAYS)
 
 
 def parse_entry(entry, source: dict, fetch_fulltext: bool, headers: dict) -> dict | None:

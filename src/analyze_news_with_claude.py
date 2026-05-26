@@ -11,11 +11,13 @@ import json
 import os
 import re
 import time
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from src.config import PROCESSED_DIR, SEASON
 from src.normalization import normalize_name
+
+LIVE_NEWS_MAX_AGE_DAYS = 14
 
 # ── Türkçe sinyal kalıpları ───────────────────────────────────────────────
 
@@ -539,6 +541,34 @@ def _build_player_index() -> dict[str, dict]:
     return players
 
 
+def _published_at(value: str | None) -> datetime | None:
+    if not value:
+        return None
+    try:
+        timestamp = datetime.fromisoformat(value.replace("Z", "+00:00"))
+    except ValueError:
+        timestamp = None
+        for date_format in ("%d.%m.%Y %H:%M:%S", "%d.%m.%Y"):
+            try:
+                timestamp = datetime.strptime(value, date_format).replace(tzinfo=timezone.utc)
+                break
+            except ValueError:
+                continue
+        if timestamp is None:
+            return None
+    if timestamp.tzinfo is None:
+        timestamp = timestamp.replace(tzinfo=timezone.utc)
+    return timestamp.astimezone(timezone.utc)
+
+
+def _is_recent_live_item(item: dict, now: datetime | None = None) -> bool:
+    published = _published_at(item.get("published_at"))
+    if published is None:
+        return False
+    reference_time = now or datetime.now(timezone.utc)
+    return published >= reference_time - timedelta(days=LIVE_NEWS_MAX_AGE_DAYS)
+
+
 def build_intelligence(articles: list[dict], player_index: dict) -> dict:
     transfer_mentions, injuries, suspensions, promotions, player_news = [], [], [], [], []
 
@@ -571,30 +601,18 @@ def build_intelligence(articles: list[dict], player_index: dict) -> dict:
             if p.get("name"):
                 player_news.append({**p, **meta})
 
-    transfers = _aggregate_transfer_mentions(transfer_mentions)
+    live_transfer_mentions = [mention for mention in transfer_mentions if _is_recent_live_item(mention)]
+    historical_transfer_mentions = [mention for mention in transfer_mentions if not _is_recent_live_item(mention)]
+    transfers = _aggregate_transfer_mentions(live_transfer_mentions)
+    historical_transfers = _aggregate_transfer_mentions(historical_transfer_mentions)
+    archived_transfer_signals = len(_aggregate_transfer_mentions(transfer_mentions))
     conf_ord = {"HIGH": 0, "MEDIUM": 1, "LOW": 2}
     injuries.sort(key=lambda x: conf_ord.get(x.get("confidence", "LOW"), 2))
-
-    cutoff = (datetime.now(timezone.utc).replace(hour=0, minute=0, second=0, microsecond=0)
-              .isoformat().replace("+00:00", "Z"))
-    cutoff_dt = datetime.now(timezone.utc).replace(hour=0, minute=0, second=0, microsecond=0)
-
-    def _within_14_days(a: dict) -> bool:
-        pub = a.get("published_at")
-        if not pub:
-            return True
-        try:
-            t = datetime.fromisoformat(pub.replace("Z", "+00:00"))
-            if t.tzinfo is None:
-                t = t.replace(tzinfo=timezone.utc)
-            return (cutoff_dt - t).days <= 14
-        except Exception:
-            return True
 
     recent = sorted(
         [a for a in articles
          if (a.get("super_lig_relevant") or a.get("source_type") == "twitter")
-         and _within_14_days(a)],
+         and _is_recent_live_item(a)],
         key=lambda a: a.get("published_at") or "",
         reverse=True,
     )
@@ -606,12 +624,15 @@ def build_intelligence(articles: list[dict], player_index: dict) -> dict:
         "analyzed_articles": len([a for a in articles if a.get("analyzed")]),
         "transfer_signals": len(transfers),
         "raw_transfer_mentions": len(transfer_mentions),
+        "archived_transfer_signals": archived_transfer_signals,
+        "stale_transfer_mentions_excluded": len(historical_transfer_mentions),
         "transfer_status_counts": _status_counts(transfers),
         "injury_signals": len(injuries),
         "suspension_signals": len(suspensions),
         "promotion_signals": len(promotions),
         "player_mentions": len(player_news),
         "transfers": transfers[:50],
+        "historical_transfer_claims": historical_transfers[:100],
         "injuries": injuries[:30],
         "suspensions": suspensions[:30],
         "promotions": promotions[:20],

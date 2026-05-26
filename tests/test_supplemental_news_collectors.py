@@ -1,7 +1,9 @@
 import unittest
+from datetime import datetime, timezone
 from types import SimpleNamespace
 
 from src.collect_news_google import SEARCH_QUERIES
+from src.collect_news_rss import _is_recent as rss_is_recent
 from src.collect_news_telegram import _parse_message
 
 
@@ -37,6 +39,12 @@ class SupplementalNewsCollectorTests(unittest.TestCase):
 
         self.assertEqual(result["account_type"], "secondary_signal")
         self.assertEqual(result["source_type"], "telegram")
+
+    def test_rss_freshness_filter_rejects_old_articles(self):
+        now = datetime(2026, 5, 26, tzinfo=timezone.utc)
+
+        self.assertFalse(rss_is_recent("2025-08-16T20:51:53+03:00", now=now))
+        self.assertTrue(rss_is_recent("2026-05-25T10:00:00+03:00", now=now))
 
 
 class _Node:

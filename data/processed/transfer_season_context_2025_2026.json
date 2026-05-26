@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-05-26T06:16:34.560687+00:00",
+  "generated_at": "2026-05-26T06:30:36.735755+00:00",
   "season": "2025_2026",
   "summary": {
     "free_agents_count": 261,
     "final_year_count": 180,
-    "transfer_signals_count": 32,
+    "transfer_signals_count": 26,
     "transfer_status_counts": {
-      "OFFICIAL": 1,
+      "OFFICIAL": 0,
       "CORROBORATED": 0,
       "RUMOR": 1,
-      "REVIEW_REQUIRED": 30
+      "REVIEW_REQUIRED": 25
     },
     "promotion_events_count": 2,
     "free_agent_total_market_value_eur": 506050000
@@ -459,49 +459,6 @@
     }
   ],
   "transfer_signals": [
-    {
-      "player_name": "LASZLO BENES",
-      "from_club": null,
-      "to_club": "ZECORNER KAYSERİSPOR",
-      "transfer_type": "permanent",
-      "window": "summer_2026",
-      "signal_type": "official_transfer",
-      "confidence": "HIGH",
-      "tm_market_value_eur": 2500000,
-      "direction_quality": "TARGET_IDENTIFIED",
-      "article_id": "fdf0eceb9b79",
-      "title": "Kayserispor, Laszlo Benes'i transfer etti",
-      "link": "https://mail.kayserispor.org/public/index.php/transferler/kayserispor--laszlo-benes-i-transfer-etti",
-      "source": "Kayserispor Resmi Web",
-      "source_type": "official_club",
-      "account_type": "official",
-      "query": null,
-      "source_tier": "OFFICIAL",
-      "published_at": "2025-08-16T20:51:53+03:00",
-      "first_observed_at": "2026-05-25T16:53:58.184437+00:00",
-      "summary_tr": "",
-      "entity_confidence": "HIGH",
-      "verification_status": "OFFICIAL",
-      "interpretation": "Resmi kulüp kanalı duyurusu bulundu; işlem resmi transfer bağlamında izlenebilir.",
-      "source_count": 1,
-      "sources": [
-        "Kayserispor Resmi Web"
-      ],
-      "evidence": [
-        {
-          "source": "Kayserispor Resmi Web",
-          "source_tier": "OFFICIAL",
-          "source_type": "official_club",
-          "account_type": "official",
-          "query": null,
-          "title": "Kayserispor, Laszlo Benes'i transfer etti",
-          "link": "https://mail.kayserispor.org/public/index.php/transferler/kayserispor--laszlo-benes-i-transfer-etti",
-          "published_at": "2025-08-16T20:51:53+03:00",
-          "first_observed_at": "2026-05-25T16:53:58.184437+00:00"
-        }
-      ],
-      "model_use": true
-    },
     {
       "player_name": "BERTUĞ ÖZGÜR YILDIRIM",
       "from_club": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ",
@@ -1542,47 +1499,6 @@
       "model_use": false
     },
     {
-      "player_name": null,
-      "from_club": null,
-      "to_club": "ÇORUM FK",
-      "signal_type": "loan",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "78f25e0bee9b",
-      "title": "Transfer Duyurusu!",
-      "link": "https://corumfk.com.tr/haber/transfer-duyurusu",
-      "source": "Çorum FK Resmi Web",
-      "source_type": "official_club",
-      "account_type": "official",
-      "query": null,
-      "source_tier": "OFFICIAL",
-      "published_at": "2025-09-13T12:00:00+03:00",
-      "first_observed_at": "2026-05-25T16:53:58.184437+00:00",
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Çorum FK Resmi Web"
-      ],
-      "evidence": [
-        {
-          "source": "Çorum FK Resmi Web",
-          "source_tier": "OFFICIAL",
-          "source_type": "official_club",
-          "account_type": "official",
-          "query": null,
-          "title": "Transfer Duyurusu!",
-          "link": "https://corumfk.com.tr/haber/transfer-duyurusu",
-          "published_at": "2025-09-13T12:00:00+03:00",
-          "first_observed_at": "2026-05-25T16:53:58.184437+00:00"
-        }
-      ],
-      "model_use": false
-    },
-    {
       "player_name": "LEONARDO CAMPOS DUARTE DA SILVA",
       "from_club": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ",
       "to_club": null,
@@ -1620,172 +1536,6 @@
           "title": "TEŞEKKÜRLER LEO DUARTE",
           "link": "https://ibfk.com.tr/haberler/tesekkurler-leo-duarte",
           "published_at": "18.5.2026 13:24:07",
-          "first_observed_at": "2026-05-25T16:53:58.184437+00:00"
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": null,
-      "to_club": "GENÇLERBİRLİĞİ",
-      "signal_type": "signing",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "f5c1980c35bf",
-      "title": "Evine Hoş Geldin Metin Diyadin | 5 MAYIS 2026",
-      "link": "https://genclerbirligi.org.tr/haberler/evine-hos-geldin-metin-diyadin-5-mayis-2026",
-      "source": "Gençlerbirliği Resmi Web",
-      "source_type": "official_club",
-      "account_type": "official",
-      "query": null,
-      "source_tier": "OFFICIAL",
-      "published_at": null,
-      "first_observed_at": "2026-05-25T16:53:58.184437+00:00",
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Gençlerbirliği Resmi Web"
-      ],
-      "evidence": [
-        {
-          "source": "Gençlerbirliği Resmi Web",
-          "source_tier": "OFFICIAL",
-          "source_type": "official_club",
-          "account_type": "official",
-          "query": null,
-          "title": "Evine Hoş Geldin Metin Diyadin | 5 MAYIS 2026",
-          "link": "https://genclerbirligi.org.tr/haberler/evine-hos-geldin-metin-diyadin-5-mayis-2026",
-          "published_at": null,
-          "first_observed_at": "2026-05-25T16:53:58.184437+00:00"
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": null,
-      "to_club": "GENÇLERBİRLİĞİ",
-      "signal_type": "departure",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "da5adf01e5f5",
-      "title": "TEŞEKKÜRLER VOLKAN DEMİREL | 4 MAYIS 2026",
-      "link": "https://genclerbirligi.org.tr/haberler/tesekkurler-volkan-demirel-4-mayis-2026",
-      "source": "Gençlerbirliği Resmi Web",
-      "source_type": "official_club",
-      "account_type": "official",
-      "query": null,
-      "source_tier": "OFFICIAL",
-      "published_at": null,
-      "first_observed_at": "2026-05-25T16:53:58.184437+00:00",
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Gençlerbirliği Resmi Web"
-      ],
-      "evidence": [
-        {
-          "source": "Gençlerbirliği Resmi Web",
-          "source_tier": "OFFICIAL",
-          "source_type": "official_club",
-          "account_type": "official",
-          "query": null,
-          "title": "TEŞEKKÜRLER VOLKAN DEMİREL | 4 MAYIS 2026",
-          "link": "https://genclerbirligi.org.tr/haberler/tesekkurler-volkan-demirel-4-mayis-2026",
-          "published_at": null,
-          "first_observed_at": "2026-05-25T16:53:58.184437+00:00"
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": null,
-      "to_club": "GENÇLERBİRLİĞİ",
-      "signal_type": "signing",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "61da548fa96a",
-      "title": "Hoş Geldin Levent Şahin",
-      "link": "https://genclerbirligi.org.tr/haberler/hos-geldin-levent-sahin",
-      "source": "Gençlerbirliği Resmi Web",
-      "source_type": "official_club",
-      "account_type": "official",
-      "query": null,
-      "source_tier": "OFFICIAL",
-      "published_at": null,
-      "first_observed_at": "2026-05-25T16:53:58.184437+00:00",
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Gençlerbirliği Resmi Web"
-      ],
-      "evidence": [
-        {
-          "source": "Gençlerbirliği Resmi Web",
-          "source_tier": "OFFICIAL",
-          "source_type": "official_club",
-          "account_type": "official",
-          "query": null,
-          "title": "Hoş Geldin Levent Şahin",
-          "link": "https://genclerbirligi.org.tr/haberler/hos-geldin-levent-sahin",
-          "published_at": null,
-          "first_observed_at": "2026-05-25T16:53:58.184437+00:00"
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": "SİNAN OSMANOĞLU",
-      "from_club": "GENÇLERBİRLİĞİ",
-      "to_club": null,
-      "transfer_type": "permanent",
-      "window": "winter_2027",
-      "signal_type": "departure",
-      "confidence": "LOW",
-      "tm_market_value_eur": null,
-      "direction_quality": "TARGET_UNRESOLVED",
-      "article_id": "b21bedee9333",
-      "title": "TEŞEKKÜRLER SİNAN OSMANOĞLU | 07 Ocak 2026",
-      "link": "https://genclerbirligi.org.tr/haberler/tesekkurler-sinan-osmanoglu-07-ocak-2026",
-      "source": "Gençlerbirliği Resmi Web",
-      "source_type": "official_club",
-      "account_type": "official",
-      "query": null,
-      "source_tier": "OFFICIAL",
-      "published_at": null,
-      "first_observed_at": "2026-05-25T16:53:58.184437+00:00",
-      "summary_tr": "",
-      "entity_confidence": "HIGH",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Gençlerbirliği Resmi Web"
-      ],
-      "evidence": [
-        {
-          "source": "Gençlerbirliği Resmi Web",
-          "source_tier": "OFFICIAL",
-          "source_type": "official_club",
-          "account_type": "official",
-          "query": null,
-          "title": "TEŞEKKÜRLER SİNAN OSMANOĞLU | 07 Ocak 2026",
-          "link": "https://genclerbirligi.org.tr/haberler/tesekkurler-sinan-osmanoglu-07-ocak-2026",
-          "published_at": null,
           "first_observed_at": "2026-05-25T16:53:58.184437+00:00"
         }
       ],

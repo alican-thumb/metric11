@@ -148,6 +148,25 @@ class SourcePerformanceReportTests(unittest.TestCase):
         self.assertEqual(result["summary"]["official_events"], 1)
         self.assertEqual(result["summary"]["official_events_with_timestamp"], 1)
 
+    def test_archived_official_claim_remains_available_to_performance_scoring(self):
+        archived_official = claim(
+            "Laszlo Benes",
+            "Kayserispor",
+            "OFFICIAL",
+            [evidence("Kayserispor Resmi Web", "OFFICIAL", "2025-08-16T20:51:53+03:00", "official_club")],
+        )
+        result = build_report(
+            {
+                "generated_at": "2026-05-26T12:00:00+00:00",
+                "transfer_signals": 0,
+                "transfers": [],
+                "historical_transfer_claims": [archived_official],
+            }
+        )
+
+        self.assertEqual(result["summary"]["transfer_signals"], 0)
+        self.assertEqual(result["summary"]["official_events"], 1)
+
     def test_explicit_reporter_attribution_creates_separate_media_observation(self):
         intel = {
             "generated_at": "2026-05-25T12:00:00+00:00",

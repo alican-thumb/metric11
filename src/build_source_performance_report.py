@@ -123,7 +123,13 @@ def build_report(
         for row in history.get("official_events", [])
         if row.get("event_key")
     }
-    for claim in intelligence.get("transfers", []):
+    transfer_claims = intelligence.get("transfer_claim_archive")
+    if transfer_claims is None:
+        transfer_claims = [
+            *intelligence.get("transfers", []),
+            *intelligence.get("historical_transfer_claims", []),
+        ]
+    for claim in transfer_claims:
         if claim.get("verification_status") != "OFFICIAL":
             continue
         key = _event_key(claim)
@@ -153,7 +159,7 @@ def build_report(
     observations = {
         _observation_id(row): row for row in history.get("observations", []) if row.get("source")
     }
-    for claim in intelligence.get("transfers", []):
+    for claim in transfer_claims:
         key = _event_key(claim)
         for evidence in claim.get("evidence", []):
             if evidence.get("source_tier") == "OFFICIAL":

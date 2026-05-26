@@ -1,6 +1,7 @@
 import unittest
+from datetime import datetime, timezone
 
-from src.analyze_news_with_claude import build_intelligence, rule_based_analyze
+from src.analyze_news_with_claude import _is_recent_live_item, build_intelligence, rule_based_analyze
 
 
 def article(article_id, source, transfer, source_type="rss", account_type=None):
@@ -11,7 +12,7 @@ def article(article_id, source, transfer, source_type="rss", account_type=None):
         "source_name": source,
         "source_type": source_type,
         "account_type": account_type,
-        "published_at": "2026-05-25T10:00:00+00:00",
+        "published_at": datetime.now(timezone.utc).isoformat(),
         "summary": "",
         "categories": ["transfer"],
         "super_lig_relevant": True,
@@ -94,6 +95,32 @@ class TransferIntelligenceTests(unittest.TestCase):
         self.assertEqual(result["transfers"][0]["verification_status"], "OFFICIAL")
         self.assertTrue(result["transfers"][0]["model_use"])
 
+    def test_stale_official_announcement_is_archived_but_not_a_live_signal(self):
+        transfer = {
+            "player_name": "Laszlo Benes",
+            "from_club": None,
+            "to_club": "KAYSERİSPOR",
+            "signal_type": "signing",
+            "confidence": "HIGH",
+        }
+        stale = article("old-club-web", "Kayserispor Resmi Web", transfer, source_type="official_club", account_type="official")
+        stale["published_at"] = "2025-08-16T20:51:53+03:00"
+
+        result = build_intelligence([stale], {})
+
+        self.assertEqual(result["transfer_signals"], 0)
+        self.assertEqual(result["stale_transfer_mentions_excluded"], 1)
+        self.assertEqual(result["transfers"], [])
+        self.assertEqual(result["historical_transfer_claims"][0]["verification_status"], "OFFICIAL")
+
+    def test_turkish_formatted_recent_timestamp_is_kept_live(self):
+        self.assertTrue(
+            _is_recent_live_item(
+                {"published_at": "18.5.2026 13:24:07"},
+                now=datetime(2026, 5, 26, tzinfo=timezone.utc),
+            )
+        )
+
     def test_two_unscored_telegram_signals_remain_rumors(self):
         transfer = {
             "player_name": "Ali Örnek",
@@ -123,7 +150,7 @@ class TransferIntelligenceTests(unittest.TestCase):
             "account_type": "official",
             "related_team": "BEŞİKTAŞ A.Ş.",
             "link": "https://bjk.test/ernest-muci",
-            "published_at": "2026-05-20T10:00:00+03:00",
+            "published_at": datetime.now(timezone.utc).isoformat(),
             "categories": ["transfer"],
             "super_lig_relevant": True,
             "analyzed": True,
@@ -173,7 +200,7 @@ class TransferIntelligenceTests(unittest.TestCase):
             "account_type": "official",
             "related_team": "GENÇLERBİRLİĞİ S.K.",
             "link": "https://club.test/thanks",
-            "published_at": "2026-01-07T10:00:00+03:00",
+            "published_at": datetime.now(timezone.utc).isoformat(),
             "categories": ["transfer"],
             "super_lig_relevant": True,
             "analyzed": True,
