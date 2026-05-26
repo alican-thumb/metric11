@@ -107,7 +107,7 @@ def build_html(summary: dict, previews: list[dict], goal_backtest: dict, team_na
     off_season_banner = (
         '<div style="background:#1e3a5f;border-left:4px solid #60a5fa;border-radius:8px;padding:14px 20px;'
         'margin-bottom:20px;color:#e0f2fe;font-size:14px;line-height:1.6;">'
-        '<strong style="color:#93c5fd;">Sezon arısı</strong> &mdash; 2025/26 sezonu tamamlandı. '
+        '<strong style="color:#93c5fd;">Sezon arası</strong> &mdash; 2025/26 sezonu tamamlandı. '
         'Geçmiş maç analizleri ve tahmin arşivi aşağıda incelenebilir. '
         '2026/27 fikstürü açıklandığında tahminler otomatik olarak güncellenir.</div>'
     ) if is_off_season else ""
