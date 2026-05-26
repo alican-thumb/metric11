@@ -9,6 +9,8 @@ from src.config import PROCESSED_DIR, SEASON
 from src.generate_match_preview import build_markdown, build_preview, write_preview
 from src.normalization import normalize_matches
 
+# Teams represented in the historical match input for SEASON (2025/26).
+# Promoted 2026/27 clubs belong in live transfer tracking until match data exists.
 ALL_TEAMS = [
     "BEŞİKTAŞ A.Ş.",
     "GALATASARAY A.Ş.",
@@ -25,9 +27,9 @@ ALL_TEAMS = [
     "KOCAELİSPOR",
     "İKAS EYÜPSPOR",
     "GENÇLERBİRLİĞİ",
-    "ÇORUM FK",
-    "ERZURUMSPOR FK",
-    "AMED SFK",
+    "MISIRLI.COM.TR FATİH KARAGÜMRÜK",
+    "HESAP.COM ANTALYASPOR",
+    "ZECORNER KAYSERİSPOR",
 ]
 
 
@@ -51,6 +53,9 @@ _TEAM_SLUGS: dict[str, str] = {
     "KOCAELİSPOR": "kocaelispor",
     "İKAS EYÜPSPOR": "eyupspor",
     "GENÇLERBİRLİĞİ": "genclerbirligi",
+    "MISIRLI.COM.TR FATİH KARAGÜMRÜK": "karagumruk",
+    "HESAP.COM ANTALYASPOR": "antalyaspor",
+    "ZECORNER KAYSERİSPOR": "kayserispor",
     "ÇORUM FK": "corumfk",
     "ERZURUMSPOR FK": "erzurumspor",
     "AMED SFK": "amed",

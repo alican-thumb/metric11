@@ -6,7 +6,7 @@ from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
-from src.config import PROCESSED_DIR, SEASON, SEASON_LABEL
+from src.config import PROCESSED_DIR, SEASON, TRANSFER_WATCH_SEASON_LABEL
 
 # --------------------------------------------------------------------------- #
 # constants
@@ -136,7 +136,7 @@ def _header_section() -> str:
     return f"""
 <div style='background:linear-gradient(135deg,#1e3a5f,#0f172a);border-radius:12px;padding:24px 32px;margin-bottom:24px;'>
   <h1 style='color:#f1f5f9;margin:0 0 8px 0;font-size:24px;'>Transfer Sezonu Bağlam Raporu</h1>
-  <p style='color:#94a3b8;margin:0;font-size:13px;'>{SEASON_LABEL} · Yaz Penceresi: {WINDOW_OPEN} – {WINDOW_CLOSE} · Güncelleme: {now}</p>
+  <p style='color:#94a3b8;margin:0;font-size:13px;'>{TRANSFER_WATCH_SEASON_LABEL} · Yaz Penceresi: {WINDOW_OPEN} – {WINDOW_CLOSE} · Güncelleme: {now}</p>
 </div>
 """
 
@@ -397,8 +397,8 @@ def main() -> None:
     html_parts = [
         "<!DOCTYPE html><html lang='tr'><head><meta charset='utf-8'>",
         "<meta name='viewport' content='width=device-width,initial-scale=1'>",
-        f"<title>Transfer Sezonu – Süper Lig {SEASON_LABEL} | metric11</title>",
-        f"<meta name='description' content='Süper Lig {SEASON_LABEL} transfer sezonu: sözleşmesi bitenler, serbest kalacaklar, yükselen takım ihtiyaçları ve transfer penceresi takvimi &mdash; metric11.'>",
+        f"<title>Transfer Sezonu – Süper Lig {TRANSFER_WATCH_SEASON_LABEL} | metric11</title>",
+        f"<meta name='description' content='Süper Lig {TRANSFER_WATCH_SEASON_LABEL} transfer sezonu: sözleşmesi bitenler, serbest kalacaklar, yükselen takım ihtiyaçları ve transfer penceresi takvimi &mdash; metric11.'>",
         "<meta property='og:title' content='Transfer Sezonu &mdash; metric11'>",
         "<meta property='og:description' content='Süper Lig transfer sezonu: sözleşmesi bitenler, serbest kalacaklar ve pencere takvimi.'>",
         "<meta property='og:image' content='/og-image.svg'>",
@@ -413,7 +413,7 @@ def main() -> None:
         "<a style='display:flex;align-items:center;gap:10px;color:white;text-decoration:none;font-size:18px;font-weight:800;letter-spacing:-0.2px' href='/'>"
         "<b style='width:28px;height:28px;border-radius:6px;display:grid;place-items:center;color:#091810;background:#cde94e;font-size:14px;font-weight:900'>11</b>"
         " metric11"
-        "<span style='color:#6b7c72;font-size:11px;font-weight:500;border-left:1px solid #2a3d30;padding-left:8px;margin-left:2px'>Süper Lig 2025/26</span>"
+        f"<span style='color:#6b7c72;font-size:11px;font-weight:500;border-left:1px solid #2a3d30;padding-left:8px;margin-left:2px'>Süper Lig {TRANSFER_WATCH_SEASON_LABEL}</span>"
         "</a>"
         "<nav style='display:flex;gap:2px;overflow-x:auto;scrollbar-width:none'>"
         "<a style='white-space:nowrap;color:#8fa89a;padding:8px 11px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600' href='/'>Gündem</a>"

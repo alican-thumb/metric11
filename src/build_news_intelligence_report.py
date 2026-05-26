@@ -9,7 +9,7 @@ import json
 from datetime import datetime, timezone
 from pathlib import Path
 
-from src.config import PROCESSED_DIR, SEASON, SEASON_LABEL
+from src.config import PROCESSED_DIR, SEASON, TRANSFER_WATCH_SEASON_LABEL
 
 
 def main() -> None:
@@ -98,9 +98,9 @@ def build_html(intel: dict) -> str:
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Haber İstihbaratı — Süper Lig {SEASON_LABEL} | metric11</title>
+<title>Haber İstihbaratı — Süper Lig {TRANSFER_WATCH_SEASON_LABEL} | metric11</title>
 <meta name="description" content="Süper Lig güncel haberleri: transfer iddiaları, sakat listesi, ceza kararları ve resmi açıklamalar — metric11.">
-<meta property="og:title" content="Haber İstihbaratı — Süper Lig {SEASON_LABEL} | metric11">
+<meta property="og:title" content="Haber İstihbaratı — Süper Lig {TRANSFER_WATCH_SEASON_LABEL} | metric11">
 <meta property="og:description" content="Süper Lig güncel haberleri: transfer iddiaları, sakat listesi, ceza kararları ve resmi açıklamalar.">
 <meta property="og:image" content="/og-image.svg">
 <meta property="og:type" content="website">
@@ -159,7 +159,7 @@ def build_html(intel: dict) -> str:
 </head>
 <body>
 <div class="topbar">
-  <a class="brand" href="/"><b>11</b> metric11<span class="slbl">Süper Lig 2025/26</span></a>
+  <a class="brand" href="/"><b>11</b> metric11<span class="slbl">Süper Lig {TRANSFER_WATCH_SEASON_LABEL}</span></a>
   <nav class="topnav">
     <a class="active" href="/">Gündem</a>
     <a href="transfer_tracker_2025_2026.html">Transferler</a>
@@ -169,7 +169,7 @@ def build_html(intel: dict) -> str:
   </nav>
 </div>
 <div class="header">
-  <h1>📰 Haber İstihbaratı — Süper Lig {SEASON_LABEL}</h1>
+  <h1>📰 Haber İstihbaratı — Süper Lig {TRANSFER_WATCH_SEASON_LABEL}</h1>
   <div class="sub">Haber sinyal analizi · {analyzed}/{total} içerik analiz edildi · {gen_at} UTC</div>
 </div>
 <div class="summary-bar">

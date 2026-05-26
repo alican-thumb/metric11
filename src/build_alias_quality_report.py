@@ -79,17 +79,35 @@ def compare_enriched_profiles(profiles: list[dict]) -> dict:
         for item in profiles
         if item.get("tm_id")
     ]
+    manual_mapped = [
+        {
+            "left_name": item.get("name"),
+            "right_name": item.get("tm_name") or item.get("name"),
+            "left_team": item.get("club"),
+            "right_team": item.get("tm_team_name"),
+            "requires_network_verify": item.get("tm_requires_network_verify", False),
+        }
+        for item in profiles
+        if not item.get("tm_id") and item.get("tm_match_method") == "manual_alias" and item.get("tm_name")
+    ]
     unmatched = [
         {"name": item.get("name"), "team": item.get("club"), "id": item.get("external_id")}
         for item in profiles
-        if not item.get("tm_id")
+        if not item.get("tm_id") and item.get("tm_match_method") != "manual_alias"
     ]
     return {
         "left_count": len(profiles),
         "right_count": 0,
         "matched": len(matches),
         "match_rate": round(len(matches) / len(profiles), 3) if profiles else 0,
+        "manual_mapped": len(manual_mapped),
+        "manual_pending_network_verification": sum(
+            1 for item in manual_mapped if item["requires_network_verify"]
+        ),
+        "operationally_mapped": len(matches) + len(manual_mapped),
+        "operational_mapping_rate": round((len(matches) + len(manual_mapped)) / len(profiles), 3) if profiles else 0,
         "matches": matches,
+        "manual_mappings": manual_mapped,
         "unmatched_left": unmatched,
     }
 
@@ -196,6 +214,14 @@ def build_markdown(payload: dict) -> str:
             f"- {name}: {comparison['matched']}/{comparison['left_count']} eşleşme "
             f"(%{round(comparison['match_rate'] * 100)})"
         )
+        if name == "league_tff_vs_transfermarkt":
+            lines.append(
+                f"  - Manuel eşleme: {comparison.get('manual_mapped', 0)} "
+                f"(ağ teyidi bekleyen={comparison.get('manual_pending_network_verification', 0)}); "
+                f"kullanılabilir eşleme %{round(comparison.get('operational_mapping_rate', 0) * 100)}"
+            )
+        if name == "besiktas_tff_vs_transfermarkt":
+            lines.append("  - Ham tekil kaynak karşılaştırmasıdır; operasyonel manuel eşlemeler lig karşılaştırmasında izlenir.")
     lines.extend(["", "## Düşük Skorlu Eşleşmeler", ""])
     for name, comparison in payload["comparisons"].items():
         lines.append(f"### {name}")

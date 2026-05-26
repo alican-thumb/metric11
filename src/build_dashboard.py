@@ -24,9 +24,9 @@ TEAM_DISPLAY_NAMES: dict[str, str] = {
     "kocaelispor": "Kocaelispor",
     "eyupspor": "Eyüpspor",
     "genclerbirligi": "Gençlerbirliği",
-    "corumfk": "Çorum FK",
-    "erzurumspor": "Erzurumspor FK",
-    "amed": "Amed SFK",
+    "karagumruk": "Fatih Karagümrük",
+    "antalyaspor": "Antalyaspor",
+    "kayserispor": "Kayserispor",
 }
 
 

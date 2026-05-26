@@ -10,7 +10,12 @@ from datetime import datetime, timezone
 from html import escape
 from pathlib import Path
 
-from src.config import PROCESSED_DIR, SEASON, SEASON_LABEL
+from src.config import (
+    PROCESSED_DIR,
+    SEASON,
+    TRANSFER_WATCH_SEASON,
+    TRANSFER_WATCH_SEASON_LABEL,
+)
 
 OUTPUT_HTML = PROCESSED_DIR / f"transfer_tracker_{SEASON}.html"
 OUTPUT_JSON = PROCESSED_DIR / f"transfer_tracker_{SEASON}.json"
@@ -18,7 +23,7 @@ OUTPUT_JSON = PROCESSED_DIR / f"transfer_tracker_{SEASON}.json"
 STATUS_META: dict[str, tuple[str, str, str]] = {
     "OFFICIAL":       ("RESMİ",      "#16a34a", "#dcfce7"),
     "CORROBORATED":   ("DOĞRULANDI", "#2563eb", "#dbeafe"),
-    "TM_CONFIRMED":   ("TM ONAYDI",  "#7c3aed", "#ede9fe"),
+    "TM_CONFIRMED":   ("TM KADRO",   "#7c3aed", "#ede9fe"),
     "RUMOR":          ("SÖYLENTI",   "#d97706", "#fef3c7"),
     "REVIEW_REQUIRED":("İNCELEMEDE", "#6b7280", "#f1f5f9"),
 }
@@ -51,9 +56,13 @@ def _load_signals() -> list[dict]:
 
 
 def _load_tm_signals() -> list[dict]:
-    """TM kadro dedektöründen gelen onaylı hareketleri haber sinyali formatına çevir."""
-    path = PROCESSED_DIR / f"tm_squad_changes_{SEASON}.json"
-    if not path.exists():
+    """TM kadro dedektöründen gelen hareket sinyallerini haber sinyali formatına çevir."""
+    paths = [
+        PROCESSED_DIR / f"tm_squad_changes_{TRANSFER_WATCH_SEASON}.json",
+        PROCESSED_DIR / f"tm_squad_changes_{SEASON}.json",
+    ]
+    path = next((candidate for candidate in paths if candidate.exists()), None)
+    if path is None:
         return []
     data = json.loads(path.read_text(encoding="utf-8"))
     if data.get("status") == "baseline_only":
@@ -163,9 +172,9 @@ def build_html(signals: list[dict], summary: dict) -> str:
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Transfer Takip — Süper Lig {SEASON_LABEL} | metric11</title>
+<title>Transfer Takip — Süper Lig {TRANSFER_WATCH_SEASON_LABEL} | metric11</title>
 <meta name="description" content="Süper Lig yaz transfer penceresi takibi: resmi transferler, teyitli iddialar ve TM kadro değişiklikleri — metric11.">
-<meta property="og:title" content="Transfer Takip — Süper Lig {SEASON_LABEL} | metric11">
+<meta property="og:title" content="Transfer Takip — Süper Lig {TRANSFER_WATCH_SEASON_LABEL} | metric11">
 <meta property="og:description" content="Süper Lig yaz transfer penceresi takibi: resmi transferler, teyitli iddialar ve TM kadro değişiklikleri.">
 <meta property="og:image" content="/og-image.svg">
 <meta property="og:type" content="website">
@@ -208,7 +217,7 @@ def build_html(signals: list[dict], summary: dict) -> str:
 </head>
 <body>
 <div class="topbar">
-  <a class="brand" href="/"><b>11</b> metric11<span class="slbl">Süper Lig {SEASON_LABEL}</span></a>
+  <a class="brand" href="/"><b>11</b> metric11<span class="slbl">Süper Lig {TRANSFER_WATCH_SEASON_LABEL}</span></a>
   <nav class="topnav">
     <a href="/">Gündem</a>
     <a class="active" href="transfer_tracker_{SEASON}.html">Transferler</a>
@@ -218,7 +227,7 @@ def build_html(signals: list[dict], summary: dict) -> str:
   </nav>
 </div>
 <div class="header">
-  <h1>Transfer Takip — {SEASON_LABEL}</h1>
+  <h1>Transfer Takip — {TRANSFER_WATCH_SEASON_LABEL}</h1>
   <div class="sub">Yaz penceresi: {WINDOW_OPEN} – {WINDOW_CLOSE} · {summary['total_signals']} sinyal · Güncelleme: {now}</div>
 </div>
 <div class="stat-bar">
@@ -227,7 +236,8 @@ def build_html(signals: list[dict], summary: dict) -> str:
 </div>
 <main>
   <div class="info-box">
-    <strong>Veri kaynakları:</strong> Resmi kulüp siteleri, RSS haber akışları ve X (Twitter) hesapları otomatik taranmaktadır.
+    <strong>Veri kaynakları:</strong> Resmi kulüp siteleri ile erişilebilir RSS/medya akışları otomatik taranır.
+    X sinyali yalnız yapılandırılmış erişim bulunduğunda değerlendirilir.
     Durum <strong>RESMİ</strong> = kulüp resmi kanalından, <strong>DOĞRULANDI</strong> = birden fazla güvenilir kaynak,
     <strong>SÖYLENTI</strong> = tek kaynak/medya iddiası, <strong>İNCELEMEDE</strong> = otomatik eşleştirme gerekiyor.
     Pipeline günde 5 kez çalışır; yeni haberler otomatik eklenir.
@@ -287,6 +297,7 @@ def main() -> None:
     payload = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "season": SEASON,
+        "transfer_watch_season": TRANSFER_WATCH_SEASON,
         "summary": summary,
         "transfers": signals,
     }

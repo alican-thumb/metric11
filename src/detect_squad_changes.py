@@ -5,6 +5,7 @@ Takımlar arası oyuncu geçişlerini (varış/ayrılış) otomatik tespit eder.
 """
 from __future__ import annotations
 
+import argparse
 import json
 from datetime import datetime, timezone
 from pathlib import Path
@@ -38,17 +39,17 @@ def _load_squads(path: Path) -> dict[str, dict]:
     return result
 
 
-def _save_snapshot(current_data: dict) -> Path:
+def _save_snapshot(current_data: dict, snapshot_dir: Path) -> Path:
     """Bugünün snapshot'ını arşivle; aynı gün varsa üzerine yaz."""
-    SNAPSHOT_DIR.mkdir(parents=True, exist_ok=True)
+    snapshot_dir.mkdir(parents=True, exist_ok=True)
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    snap_path = SNAPSHOT_DIR / f"{today}.json"
+    snap_path = snapshot_dir / f"{today}.json"
     snap_path.write_text(json.dumps(current_data, ensure_ascii=False), encoding="utf-8")
     return snap_path
 
 
-def _latest_previous_snapshot(today_str: str) -> Path | None:
-    snaps = sorted(SNAPSHOT_DIR.glob("*.json"))
+def _latest_previous_snapshot(today_str: str, snapshot_dir: Path) -> Path | None:
+    snaps = sorted(snapshot_dir.glob("*.json"))
     for s in reversed(snaps):
         if s.stem < today_str:
             return s
@@ -127,40 +128,51 @@ def _compare(prev: dict[str, dict], curr: dict[str, dict]) -> tuple[list, list]:
 
 
 def main() -> None:
-    if not SQUAD_FILE.exists():
-        print(f"Kadro dosyası bulunamadı: {SQUAD_FILE}")
+    parser = argparse.ArgumentParser(description="Transfermarkt kadro snapshot farklarını üretir.")
+    parser.add_argument("--squad-file", default=str(SQUAD_FILE))
+    parser.add_argument("--snapshot-dir", default=str(SNAPSHOT_DIR))
+    parser.add_argument("--output", default=str(OUTPUT_JSON))
+    parser.add_argument("--season", default=SEASON)
+    args = parser.parse_args()
+
+    squad_file = Path(args.squad_file)
+    snapshot_dir = Path(args.snapshot_dir)
+    output_json = Path(args.output)
+
+    if not squad_file.exists():
+        print(f"Kadro dosyası bulunamadı: {squad_file}")
         return
 
-    current_data = json.loads(SQUAD_FILE.read_text(encoding="utf-8"))
+    current_data = json.loads(squad_file.read_text(encoding="utf-8"))
     today_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
-    snap_path = _save_snapshot(current_data)
-    prev_snap = _latest_previous_snapshot(today_str)
+    snap_path = _save_snapshot(current_data, snapshot_dir)
+    prev_snap = _latest_previous_snapshot(today_str, snapshot_dir)
 
     if prev_snap is None:
         print(f"İlk snapshot kaydedildi: {snap_path.name} — karşılaştırmak için bir sonraki çalışmayı bekle.")
         payload = {
             "generated_at": datetime.now(timezone.utc).isoformat(),
-            "season": SEASON,
+            "season": args.season,
             "status": "baseline_only",
             "snapshots_compared": [today_str, None],
             "arrivals": [],
             "departures": [],
             "summary": {"arrivals": 0, "departures": 0, "transfers": 0},
         }
-        OUTPUT_JSON.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+        output_json.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
         return
 
     prev_data = json.loads(prev_snap.read_text(encoding="utf-8"))
     prev_squads = _load_squads(Path(prev_snap))
-    curr_squads = _load_squads(SQUAD_FILE)
+    curr_squads = _load_squads(squad_file)
 
     arrivals, departures = _compare(prev_squads, curr_squads)
     transfers = [a for a in arrivals if a.get("from_team")]
 
     payload = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "season": SEASON,
+        "season": args.season,
         "status": "compared",
         "snapshots_compared": [prev_snap.stem, today_str],
         "arrivals": arrivals,
@@ -172,7 +184,7 @@ def main() -> None:
             "high_value_moves": len([a for a in arrivals if (a.get("market_value_eur") or 0) >= 5_000_000]),
         },
     }
-    OUTPUT_JSON.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    output_json.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
 
     print(
         f"✓ Karşılaştırma: {prev_snap.stem} → {today_str} | "

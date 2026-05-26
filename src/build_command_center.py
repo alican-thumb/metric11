@@ -271,7 +271,8 @@ def build_html(payload: dict) -> str:
       {metric("FM scout adayı", fm_summary.get("candidate_count", 0))}
       {metric("Lig oyuncu profili", league_intelligence_summary.get("players", 0))}
       {metric("Takım-oyuncu eşleşmesi", team_blueprint_summary.get("candidate_links", 0))}
-      {metric("TM lig içi eşleşme", f"%{round(transfermarkt_review_summary.get('in_scope_match_rate', 0) * 100, 1)}")}
+      {metric("TM doğrulanmış eşleşme", f"%{round(transfermarkt_review_summary.get('in_scope_match_rate', 0) * 100, 1)}")}
+      {metric("TM manuel teyit bekliyor", transfermarkt_review_summary.get("manual_alias_pending_network_verification", 0))}
       {metric("TM yüksek kullanım açığı", transfermarkt_review_summary.get("review_tier_counts", {}).get("HIGH_USAGE_UNRESOLVED", 0))}
       {metric("Scout bloke eden eşleşme", transfermarkt_review_summary.get("scout_blocking_unmatched", 0))}
       {metric("Beraberlik uyarısı", draw_risk_summary.get("medium_plus_flags", 0))}

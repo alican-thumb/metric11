@@ -18,6 +18,11 @@ PROCESSED_DIR = DATA_DIR / "processed"
 SEASON = "2025_2026"
 SEASON_LABEL = "2025-2026"
 
+# Current transfer-window monitoring is newer than the completed analytical season.
+# Keep its snapshots separate so network refreshes cannot overwrite model inputs.
+TRANSFER_WATCH_SEASON = "2026_2027"
+TRANSFER_WATCH_SEASON_LABEL = "2026-2027"
+
 
 @dataclass(frozen=True)
 class Settings:

@@ -10,7 +10,7 @@ from datetime import datetime, timezone
 from html import escape
 from pathlib import Path
 
-from src.config import PROCESSED_DIR, SEASON, SEASON_LABEL
+from src.config import PROCESSED_DIR, SEASON, TRANSFER_WATCH_SEASON_LABEL
 
 OUTPUT_HTML = PROCESSED_DIR / f"gundem_{SEASON}.html"
 
@@ -39,7 +39,7 @@ SOURCE_TRUST: dict[str, int] = {
 TRANSFER_STATUS = {
     "OFFICIAL":        ("#16a34a", "#dcfce7", "RESMİ"),
     "CORROBORATED":    ("#2563eb", "#dbeafe", "DOĞRULANDI"),
-    "TM_CONFIRMED":    ("#7c3aed", "#ede9fe", "TM ONAYDI"),
+    "TM_CONFIRMED":    ("#7c3aed", "#ede9fe", "TM KADRO"),
     "RUMOR":           ("#d97706", "#fef3c7", "SÖYLENTI"),
     "REVIEW_REQUIRED": ("#6b7280", "#f1f5f9", "İNCELEMEDE"),
 }
@@ -59,7 +59,7 @@ def _window_state() -> tuple[str, str, str, str]:
             "closed",
             "background:linear-gradient(90deg,#374151,#1f2937);border-bottom:1px solid #4b5563",
             "background:#9ca3af",
-            "<strong>Transfer penceresi kapandı</strong> — 2025/26 sezonu transferleri tamamlandı",
+            f"<strong>Transfer penceresi kapandı</strong> — {TRANSFER_WATCH_SEASON_LABEL} sezonu transferleri tamamlandı",
         )
     if now >= WINDOW_OPEN_DATE:
         days_left = (WINDOW_CLOSE_DATE - now).days
@@ -244,9 +244,9 @@ def build_html() -> str:
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Gündem — Süper Lig {SEASON_LABEL} | metric11</title>
+<title>Gündem — Süper Lig {TRANSFER_WATCH_SEASON_LABEL} | metric11</title>
 <meta name="description" content="Süper Lig transfer haberleri, sakat-cezalı listesi ve güncel transfer takibi. Tüm kaynaklar tek sayfada — metric11.">
-<meta property="og:title" content="Gündem — Süper Lig {SEASON_LABEL} | metric11">
+<meta property="og:title" content="Gündem — Süper Lig {TRANSFER_WATCH_SEASON_LABEL} | metric11">
 <meta property="og:description" content="Süper Lig transfer haberleri, sakat-cezalı listesi ve güncel transfer takibi.">
 <meta property="og:image" content="/og-image.svg">
 <meta property="og:type" content="website">
@@ -291,7 +291,7 @@ def build_html() -> str:
 </head>
 <body>
 <div class="topbar">
-  <a class="brand" href="/"><b>11</b> metric11<span class="slbl">Süper Lig {SEASON_LABEL}</span></a>
+  <a class="brand" href="/"><b>11</b> metric11<span class="slbl">Süper Lig {TRANSFER_WATCH_SEASON_LABEL}</span></a>
   <nav class="topnav">
     <a class="active" href="/">Gündem</a>
     <a href="transfer_tracker_{SEASON}.html">Transferler</a>

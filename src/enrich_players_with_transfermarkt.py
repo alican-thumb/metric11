@@ -161,16 +161,19 @@ def main() -> None:
 
     total = len(tff_players)
     in_scope = sum(1 for player in tff_players if normalize_team_name(player.get("club")) in tm_by_club)
-    matched = match_full + match_profile_full_name + match_last + match_manual
+    verified_matches = match_full + match_profile_full_name + match_last
+    operational_matches = verified_matches + match_manual
     print(f"TFF oyuncu: {total}")
     print(f"  Snapshot kapsamındaki TFF oyuncu: {in_scope}")
     print(f"  Kulüp içi canonical eşleşme: {match_full}")
     print(f"  Kulüp içi profil tam-ad eşleşme: {match_profile_full_name}")
     print(f"  Kulüp içi token eşleşme: {match_last}")
-    print(f"  Manuel alias eşleşme: {match_manual}")
+    print(f"  Manuel alias eşleme (ağ teyidi bekler): {match_manual}")
     print(f"  Eşleşmedi: {no_match}")
-    print(f"  Tüm profil kapsamı: %{round(matched / total * 100, 1) if total else 0}")
-    print(f"  Lig snapshot içi kapsama: %{round(matched / in_scope * 100, 1) if in_scope else 0}")
+    print(f"  Doğrulanmış snapshot kapsamı: %{round(verified_matches / total * 100, 1) if total else 0}")
+    print(f"  Operasyonel eşleme kapsamı: %{round(operational_matches / total * 100, 1) if total else 0}")
+    print(f"  Lig snapshot içi doğrulanmış kapsama: %{round(verified_matches / in_scope * 100, 1) if in_scope else 0}")
+    print(f"  Lig snapshot içi operasyonel kapsama: %{round(operational_matches / in_scope * 100, 1) if in_scope else 0}")
 
     Path(args.output).write_text(json.dumps(enriched, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"Çıktı: {args.output}")
@@ -230,6 +233,10 @@ def _write_markdown_summary(
 ) -> None:
     total = len(enriched)
     matched = [p for p in enriched if p.get("tm_id")]
+    manual_mapped = [
+        p for p in enriched
+        if not p.get("tm_id") and p.get("tm_match_method") == "manual_alias" and p.get("tm_name")
+    ]
     in_scope = [p for p in enriched if normalize_team_name(p.get("club")) in snapshot_clubs]
     valued = [p for p in matched if p.get("tm_market_value_eur")]
     top10 = sorted(valued, key=lambda p: p["tm_market_value_eur"], reverse=True)[:10]
@@ -242,9 +249,11 @@ def _write_markdown_summary(
         f"- Kulüp içi canonical eşleşme: {match_full}",
         f"- Kulüp içi profil tam-ad eşleşme: {match_profile_full_name}",
         f"- Kulüp içi token eşleşme: {match_last}",
+        f"- Manuel eşleme (ağ teyidi bekleyen): {len(manual_mapped)}",
         f"- Eşleşmedi: {no_match}",
-        f"- Tüm profil kapsamı: %{round(len(matched) / total * 100, 1) if total else 0}",
-        f"- Lig snapshot içi kapsama: %{round(len(matched) / len(in_scope) * 100, 1) if in_scope else 0}",
+        f"- Doğrulanmış tüm profil kapsamı: %{round(len(matched) / total * 100, 1) if total else 0}",
+        f"- Doğrulanmış lig snapshot içi kapsama: %{round(len(matched) / len(in_scope) * 100, 1) if in_scope else 0}",
+        f"- Manuel eşleme dahil kullanılabilir lig snapshot içi kapsama: %{round((len(matched) + len(manual_mapped)) / len(in_scope) * 100, 1) if in_scope else 0}",
         "",
         "## En Yüksek Piyasa Değeri (Eşleşen Oyuncular)",
         "",
@@ -258,7 +267,9 @@ def _write_markdown_summary(
             f"Pozisyon: {p.get('tm_position') or '?'}"
         )
 
-    no_match_players = [p for p in enriched if not p.get("tm_id")]
+    no_match_players = [
+        p for p in enriched if not p.get("tm_id") and p.get("tm_match_method") != "manual_alias"
+    ]
     if no_match_players:
         lines.extend(["", "## Eşleşmeyen Oyuncular (İlk 20)", ""])
         for p in no_match_players[:20]:

@@ -1452,3 +1452,13 @@ Bir sonraki oturumda önce `PROJECT_STATE.md` okunmalı. Ardından öncelik:
 - Secondary/utility sayfalar (14 adet: `fm_style_scout`, `league_intelligence`, `position_scout_matrix` vb.) topbar yok — ileriki adımda eklenebilir.
 - Transfer penceresi "açık" modu 1 Haziran'da otomatik devreye girecek; manuel test yapılmadı.
 - `og-image.svg` tagline güncellemesi yapılmadı (mevcut: "Maç Tahminleri · Scout · Transfer İstihbaratı").
+
+## 2026-05-26 Codex - Sezon Sınırı ve Transfermarkt Eşleme Güveni
+
+- Tarihsel analiz sezonu (`2025_2026`) ile canlı transfer izleme sezonu (`2026_2027`) ayrıldı. `config.py` içinde `TRANSFER_WATCH_SEASON` tanımlandı; Haziran-Ağustos 2026 canlı haber/transfer yüzeyleri artık `2026-2027` etiketi gösterir.
+- `generate_preview_batch.py` ve `build_dashboard.py`, beslendikleri 2025/26 maç arşivinin gerçek 18 takım kadrosunda tutuldu. Böylece tüm takım maç önü kapsamı yeniden `522` rapor / `18` takım olarak üretildi; 2026/27 yükselenleri tarihsel maç raporuna veri yokken karıştırılmaz.
+- Günlük TM ağ toplaması aktif kadroyu artık `transfermarkt_super_lig_squads_2026_2027.json` dosyasına yazar. `detect_squad_changes.py` parametreli hale getirildi ve 2026/27 snapshot klasörü/çıktısı ayrıldı; tarihsel 2025/26 TM snapshot'ının üstüne yazma riski kapatıldı.
+- `build_transfer_tracker.py`, aktif `tm_squad_changes_2026_2027.json` çıktısını önceleyip mevcut tarihsel dosyaya geriye uyumlu fallback yapar. TM kadro tespiti ekranda resmi transfer gibi değil `TM KADRO` sinyali olarak gösterilir.
+- API anahtarı bulunmayan X collector günlük `NETWORK_COMMANDS` zincirinden çıkarıldı; modül isteğe bağlı kullanım için korunur. Canlı transfer metni artık X sinyalini yalnız erişim yapılandırıldığında değerlendirildiği biçimde ifade eder.
+- Manuel Transfermarkt alias eşlemeleri doğrulanmış snapshot eşleşmesiyle karıştırılmadan ayrıca izlenir: `498` doğrulanmış eşleşme, ağ teyidi bekleyen `13` manuel eşleme ve lig içi manuel dahil kullanılabilir kapsama `%81.6`. Manuel eşlemeler çözülmemiş yüksek kullanım kuyruğunu yapay biçimde büyütmez.
+- Regresyon kapsamı `tests/test_transfermarkt_match_review_queue.py` ve `tests/test_season_boundaries.py` ile genişletildi. Doğrulama: `.venv/bin/python -m compileall -q src tests` ve `.venv/bin/python -m unittest discover -s tests -p 'test_*.py'` başarılı (`44/44`).

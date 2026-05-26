@@ -61,9 +61,23 @@ def build_queue(profiles: list[dict], tm_payload: dict, scout_quality: dict, lea
         for item in league_intelligence.get("player_profiles", [])
         if item.get("player_id")
     }
-    matched = [profile for profile in profiles if profile.get("tm_id")]
-    unmatched = [profile for profile in profiles if not profile.get("tm_id")]
+    matched = [profile for profile in profiles if is_verified_match(profile)]
+    manual_mapped = [profile for profile in profiles if is_manual_mapping(profile)]
+    unmatched = [profile for profile in profiles if not is_verified_match(profile) and not is_manual_mapping(profile)]
     queue = [classify(profile, clubs, all_candidates, scout_ids, activity_by_id) for profile in unmatched]
+    manual_verification_queue = [
+        manual_verification_row(profile, activity_by_id)
+        for profile in manual_mapped
+        if profile.get("tm_requires_network_verify", False)
+    ]
+    manual_verification_queue.sort(
+        key=lambda item: (
+            item["priority_rank"],
+            -item["season_activity"]["starts"],
+            item["tff_club"],
+            item["tff_name"],
+        )
+    )
     tier_rank = {"SCOUT_BLOCKING": 0, "HIGH_USAGE_UNRESOLVED": 1, "ROTATION_USAGE_UNRESOLVED": 2, "OUT_OF_SNAPSHOT": 3}
     queue.sort(
         key=lambda item: (
@@ -77,6 +91,9 @@ def build_queue(profiles: list[dict], tm_payload: dict, scout_quality: dict, lea
     categories = Counter(item["category"] for item in queue)
     review_tiers = Counter(item["review_tier"] for item in queue)
     in_scope = [profile for profile in profiles if (normalize_team_name(profile.get("club")) or "") in clubs]
+    in_scope_mapped = [
+        profile for profile in in_scope if is_verified_match(profile) or is_manual_mapping(profile)
+    ]
     team_coverage = build_team_coverage(profiles, clubs, queue)
     return {
         "summary": {
@@ -85,16 +102,27 @@ def build_queue(profiles: list[dict], tm_payload: dict, scout_quality: dict, lea
             "tm_players": tm_payload.get("summary", {}).get("players", 0),
             "snapshot_in_scope_tff_profiles": len(in_scope),
             "matched_profiles": len(matched),
+            "verified_matched_profiles": len(matched),
+            "manual_alias_mapped_profiles": len(manual_mapped),
+            "manual_alias_pending_network_verification": len(manual_verification_queue),
+            "operationally_mapped_profiles": len(matched) + len(manual_mapped),
+            "operational_in_scope_mapped_profiles": len(in_scope_mapped),
             "unmatched_profiles": len(unmatched),
             "overall_match_rate": rate(len(matched), len(profiles)),
             "in_scope_match_rate": rate(len(matched), len(in_scope)),
+            "operational_mapping_rate": rate(len(matched) + len(manual_mapped), len(profiles)),
+            "operational_in_scope_mapping_rate": rate(len(in_scope_mapped), len(in_scope)),
             "scout_blocking_unmatched": sum(1 for item in queue if item["blocks_scout_review"]),
             "category_counts": dict(categories),
             "review_tier_counts": dict(review_tiers),
-            "rule": "Adaylar yalnız inceleme içindir; manuel alias onayı olmadan enrichment alanına yazılmaz.",
+            "rule": (
+                "Doğrulanmış kapsama yalnız snapshot eşleşmesi girer; manuel alias kullanımı "
+                "ayrı izlenir ve ağ teyidi tamamlanana kadar doğrulanmış sayılmaz."
+            ),
         },
         "team_coverage": team_coverage,
         "priority_queue": queue,
+        "manual_verification_queue": manual_verification_queue,
         "scout_blocking_queue": [item for item in queue if item["blocks_scout_review"]],
     }
 
@@ -107,19 +135,62 @@ def build_team_coverage(profiles: list[dict], clubs: dict[str, dict], queue: lis
     for club_name in sorted(clubs):
         team_profiles = [item for item in profiles if normalize_team_name(item.get("club")) == club_name]
         unmatched = unmatched_by_team.get(club_name, [])
-        matched = sum(1 for item in team_profiles if item.get("tm_id"))
+        matched = sum(1 for item in team_profiles if is_verified_match(item))
+        manual_mapped = sum(1 for item in team_profiles if is_manual_mapping(item))
         rows.append(
             {
                 "team": club_name,
                 "tff_profiles": len(team_profiles),
                 "tm_players": len(clubs[club_name].get("players", [])),
                 "matched_profiles": matched,
+                "manual_alias_mapped_profiles": manual_mapped,
                 "unmatched_profiles": len(unmatched),
                 "match_rate": rate(matched, len(team_profiles)),
+                "operational_mapping_rate": rate(matched + manual_mapped, len(team_profiles)),
                 "categories": dict(Counter(item["category"] for item in unmatched)),
             }
         )
     return rows
+
+
+def is_verified_match(profile: dict) -> bool:
+    return bool(profile.get("tm_id"))
+
+
+def is_manual_mapping(profile: dict) -> bool:
+    return (
+        not is_verified_match(profile)
+        and profile.get("tm_match_method") == "manual_alias"
+        and bool(profile.get("tm_name"))
+    )
+
+
+def manual_verification_row(profile: dict, activity_by_id: dict[str, dict]) -> dict:
+    player_id = str(profile.get("external_id") or "")
+    activity = activity_by_id.get(player_id, {})
+    season_activity = {
+        "starts": activity.get("starts", 0),
+        "squad_inclusions": activity.get("squad_inclusions", 0),
+        "goals": activity.get("goals", 0),
+    }
+    high_usage = season_activity["starts"] >= 10 or season_activity["goals"] >= 3
+    return {
+        "player_id": player_id,
+        "tff_name": profile.get("name"),
+        "tff_club": normalize_team_name(profile.get("club")),
+        "category": "MANUAL_ALIAS_PENDING_NETWORK_VERIFY",
+        "priority_rank": 1 if high_usage else 2,
+        "blocks_scout_review": False,
+        "review_tier": "MANUAL_VERIFY_HIGH_USAGE" if high_usage else "MANUAL_VERIFY",
+        "season_activity": season_activity,
+        "candidate": {
+            "tm_name": profile.get("tm_name"),
+            "tm_team_name": profile.get("tm_team_name") or profile.get("club"),
+            "score": 1.0,
+            "common_tokens": [],
+        },
+        "action": "Manuel eşleme operasyonda kullanılıyor; Transfermarkt profil bağlantısı ile ağ teyidi bekleniyor.",
+    }
 
 
 def classify(
@@ -262,10 +333,13 @@ def build_markdown(payload: dict) -> str:
         f"- TFF profil: {summary['tff_profiles']}",
         f"- Transfermarkt snapshot: {summary['tm_clubs']}/18 kulüp, {summary['tm_players']} oyuncu",
         f"- Snapshot kapsamındaki TFF profil: {summary['snapshot_in_scope_tff_profiles']}",
-        f"- Eşleşen profil: {summary['matched_profiles']}",
-        f"- Eşleşmeyen profil: {summary['unmatched_profiles']}",
-        f"- Genel eşleşme oranı: %{round(summary['overall_match_rate'] * 100, 1)}",
-        f"- Snapshot içi eşleşme oranı: %{round(summary['in_scope_match_rate'] * 100, 1)}",
+        f"- Doğrulanmış snapshot eşleşmesi: {summary['verified_matched_profiles']}",
+        f"- Manuel eşleme ile kullanılan profil: {summary['manual_alias_mapped_profiles']}",
+        f"- Ağ teyidi bekleyen manuel eşleme: {summary['manual_alias_pending_network_verification']}",
+        f"- Çözülmemiş profil: {summary['unmatched_profiles']}",
+        f"- Doğrulanmış genel eşleşme oranı: %{round(summary['overall_match_rate'] * 100, 1)}",
+        f"- Doğrulanmış snapshot içi eşleşme oranı: %{round(summary['in_scope_match_rate'] * 100, 1)}",
+        f"- Manuel eşleme dahil kullanılabilir snapshot içi kapsama: %{round(summary['operational_in_scope_mapping_rate'] * 100, 1)}",
         f"- Scout incelemesini bloke eden eşleşmeyen oyuncu: {summary['scout_blocking_unmatched']}",
         f"- Sınıf dağılımı: {summary['category_counts']}",
         f"- Kullanım önceliği dağılımı: {summary['review_tier_counts']}",
@@ -276,13 +350,17 @@ def build_markdown(payload: dict) -> str:
     ]
     for item in payload["scout_blocking_queue"]:
         lines.append(render_row(item))
+    lines.extend(["", "## Manuel Eşleme Ağ Teyidi Bekleyenler", ""])
+    for item in payload["manual_verification_queue"]:
+        lines.append(render_row(item))
     lines.extend(["", "## 18 Takım Kapsama Tablosu", ""])
-    lines.append("| Takım | TFF Profil | TM Kadro | Eşleşen | Eşleşmeyen | Oran |")
-    lines.append("|---|---:|---:|---:|---:|---:|")
+    lines.append("| Takım | TFF Profil | TM Kadro | Doğrulanmış | Manuel | Açık | Doğrulanmış Oran | Kullanılabilir Oran |")
+    lines.append("|---|---:|---:|---:|---:|---:|---:|---:|")
     for item in payload["team_coverage"]:
         lines.append(
             f"| {item['team']} | {item['tff_profiles']} | {item['tm_players']} | "
-            f"{item['matched_profiles']} | {item['unmatched_profiles']} | %{round(item['match_rate'] * 100, 1)} |"
+            f"{item['matched_profiles']} | {item['manual_alias_mapped_profiles']} | {item['unmatched_profiles']} | "
+            f"%{round(item['match_rate'] * 100, 1)} | %{round(item['operational_mapping_rate'] * 100, 1)} |"
         )
     lines.extend(["", "## Tüm Eşleşmeyen Kayıtlar (Takım Bazında)", ""])
     queue_by_team: dict[str, list[dict]] = defaultdict(list)

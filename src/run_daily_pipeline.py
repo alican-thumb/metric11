@@ -89,6 +89,8 @@ NETWORK_COMMANDS = [
     [
         "python", "-m", "src.collect_transfermarkt_league_squads",
         "--clubs", "data/manual/transfermarkt_super_lig_clubs.json",
+        "--season-id", "2026",
+        "--output-prefix", "transfermarkt_super_lig_squads_2026_2027",
         "--delay-seconds", "6",
     ],
     [
@@ -96,13 +98,18 @@ NETWORK_COMMANDS = [
         "--skip-existing",
         "--delay-seconds", "1",
     ],
-    ["python", "-m", "src.detect_squad_changes"],
+    [
+        "python", "-m", "src.detect_squad_changes",
+        "--squad-file", "data/processed/transfermarkt_super_lig_squads_2026_2027.json",
+        "--snapshot-dir", "data/raw/transfermarkt/squad_snapshots_2026_2027",
+        "--output", "data/processed/tm_squad_changes_2026_2027.json",
+        "--season", "2026_2027",
+    ],
     ["python", "-m", "src.collect_news_context"],
     ["python", "-m", "src.collect_news_rss"],
     ["python", "-m", "src.collect_news_google"],
     ["python", "-m", "src.collect_news_telegram"],
     ["python", "-m", "src.collect_official_club_news"],
-    ["python", "-m", "src.collect_news_twitter"],
     ["python", "-m", "src.analyze_news_with_claude", "--only-relevant"],
 ]
 

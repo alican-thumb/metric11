@@ -13,6 +13,7 @@
 - league_tff_vs_transfermarkt: 498/691 eşleşme (%72)
   - Manuel eşleme: 13 (ağ teyidi bekleyen=13); kullanılabilir eşleme %74
 - besiktas_tff_vs_transfermarkt: 28/46 eşleşme (%61)
+  - Ham tekil kaynak karşılaştırmasıdır; operasyonel manuel eşlemeler lig karşılaştırmasında izlenir.
 - scout_tff_vs_api_deep: 7/40 eşleşme (%18)
 - besiktas_tff_vs_api_deep: 4/46 eşleşme (%9)
 

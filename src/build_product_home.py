@@ -138,7 +138,10 @@ def build_html() -> str:
             "Transfermarkt Eşleşme Kuyruğu",
             "Lig snapshot kapsamındaki TFF oyuncu eşleşmelerini ve scout yayınına engel olan doğrulama açıklarını listeler.",
             "transfermarkt_match_review_queue_2025_2026.html",
-            f"{transfermarkt_review.get('review_tier_counts', {}).get('HIGH_USAGE_UNRESOLVED', 0)} yüksek kullanım açığı",
+            (
+                f"{transfermarkt_review.get('manual_alias_pending_network_verification', 0)} manuel teyit / "
+                f"{transfermarkt_review.get('review_tier_counts', {}).get('HIGH_USAGE_UNRESOLVED', 0)} açık"
+            ),
         ),
         panel_card(
             "Zenginleştirilmiş Scout Paneli",

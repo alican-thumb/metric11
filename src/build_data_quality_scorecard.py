@@ -59,6 +59,7 @@ def build_scorecard(conn: sqlite3.Connection, warehouse: Path) -> dict[str, Any]
         referee_check(conn),
         player_profile_check(conn),
         transfermarkt_mapping_check(),
+        transfermarkt_manual_verification_check(),
         transfermarkt_scout_blocker_check(),
         prediction_accuracy_check(conn),
         draw_recall_check(conn),
@@ -201,6 +202,25 @@ def transfermarkt_scout_blocker_check() -> Check | None:
         status=status,
         priority="HIGH" if blocked else "LOW",
         recommendation="Scout kuyruğunu bloke eden oyuncular için aynı kulüp Transfermarkt adı veya resmi profil doğrulanmalı; doğrulanmadan rol önerisi yayınlanmamalı.",
+    )
+
+
+def transfermarkt_manual_verification_check() -> Check | None:
+    payload = load_optional_json(PROCESSED_DIR / "transfermarkt_match_review_queue_2025_2026.json")
+    if not payload:
+        return None
+    pending = payload.get("summary", {}).get("manual_alias_pending_network_verification", 0)
+    status = "PASS" if pending == 0 else "WATCH"
+    return Check(
+        area="player_profiles",
+        metric="manual_alias_pending_network_verification",
+        value=pending,
+        status=status,
+        priority="HIGH" if pending else "LOW",
+        recommendation=(
+            "Operasyonda kullanılan manuel pozisyon ve piyasa değeri eşlemeleri "
+            "Transfermarkt profil bağlantısıyla doğrulanana kadar teyit bekliyor olarak gösterilmeli."
+        ),
     )
 
 

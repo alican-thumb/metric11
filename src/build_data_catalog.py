@@ -71,6 +71,10 @@ def build_catalog() -> dict:
         for team in ALL_TEAMS
     ]
     tm_matched_profiles = sum(1 for player in enriched_profiles if player.get("tm_id"))
+    tm_manual_mapped_profiles = sum(
+        1 for player in enriched_profiles
+        if not player.get("tm_id") and player.get("tm_match_method") == "manual_alias" and player.get("tm_name")
+    )
     twitter_posts = news_twitter.get("total_tweets", 0)
     twitter_successful_accounts = sum(1 for account in news_twitter.get("accounts", []) if not account.get("error"))
     twitter_provider = news_twitter.get("provider", "not_run")
@@ -241,8 +245,14 @@ def build_catalog() -> dict:
             "tff_tm_enriched_profiles": len(enriched_profiles),
             "tff_tm_matched_profiles": tm_matched_profiles,
             "tff_tm_match_rate": round(tm_matched_profiles / len(enriched_profiles), 3) if enriched_profiles else 0,
+            "tff_tm_manual_mapped_profiles": tm_manual_mapped_profiles,
+            "tff_tm_operationally_mapped_profiles": transfermarkt_review.get("summary", {}).get(
+                "operational_in_scope_mapped_profiles", tm_matched_profiles + tm_manual_mapped_profiles
+            ),
             "tff_tm_snapshot_in_scope_profiles": transfermarkt_review.get("summary", {}).get("snapshot_in_scope_tff_profiles", 0),
             "tff_tm_in_scope_match_rate": transfermarkt_review.get("summary", {}).get("in_scope_match_rate", 0),
+            "tff_tm_operational_in_scope_mapping_rate": transfermarkt_review.get("summary", {}).get("operational_in_scope_mapping_rate", 0),
+            "tff_tm_manual_pending_network_verification": transfermarkt_review.get("summary", {}).get("manual_alias_pending_network_verification", 0),
             "tff_tm_unmatched_profiles": transfermarkt_review.get("summary", {}).get("unmatched_profiles", 0),
             "tff_tm_scout_blocking_unmatched": transfermarkt_review.get("summary", {}).get("scout_blocking_unmatched", 0),
             "tff_tm_high_usage_unresolved": transfermarkt_review.get("summary", {}).get("review_tier_counts", {}).get("HIGH_USAGE_UNRESOLVED", 0),
@@ -432,9 +442,11 @@ def build_markdown(catalog: dict) -> str:
         f"- Transfermarkt Süper Lig oyuncusu: {coverage['transfermarkt_league_players']}",
         f"- Transfermarkt Süper Lig toplam değer: €{coverage['transfermarkt_league_market_value_total_eur']:,}",
         f"- Transfermarkt oyuncu profil detayı/tam adı: {coverage['transfermarkt_profile_details_collected']}/{coverage['transfermarkt_profile_full_names']}",
-        f"- TFF / Transfermarkt zenginleşen profil: {coverage['tff_tm_matched_profiles']}/{coverage['tff_tm_enriched_profiles']} (%{round(coverage['tff_tm_match_rate'] * 100)})",
-        f"- TFF / Transfermarkt lig snapshot içi kapsama: {coverage['tff_tm_matched_profiles']}/{coverage['tff_tm_snapshot_in_scope_profiles']} (%{round(coverage['tff_tm_in_scope_match_rate'] * 100, 1)})",
-        f"- TFF / Transfermarkt inceleme kuyruğu: {coverage['tff_tm_unmatched_profiles']} profil; scout bloke eden {coverage['tff_tm_scout_blocking_unmatched']}",
+        f"- TFF / Transfermarkt doğrulanmış snapshot eşleşmesi: {coverage['tff_tm_matched_profiles']}/{coverage['tff_tm_enriched_profiles']} (%{round(coverage['tff_tm_match_rate'] * 100)})",
+        f"- TFF / Transfermarkt doğrulanmış lig snapshot içi kapsama: {coverage['tff_tm_matched_profiles']}/{coverage['tff_tm_snapshot_in_scope_profiles']} (%{round(coverage['tff_tm_in_scope_match_rate'] * 100, 1)})",
+        f"- TFF / Transfermarkt manuel eşleme: {coverage['tff_tm_manual_mapped_profiles']} profil; ağ teyidi bekleyen {coverage['tff_tm_manual_pending_network_verification']}",
+        f"- TFF / Transfermarkt manuel dahil kullanılabilir lig içi kapsama: {coverage['tff_tm_operationally_mapped_profiles']}/{coverage['tff_tm_snapshot_in_scope_profiles']} (%{round(coverage['tff_tm_operational_in_scope_mapping_rate'] * 100, 1)})",
+        f"- TFF / Transfermarkt çözülmemiş kuyruğu: {coverage['tff_tm_unmatched_profiles']} profil; scout bloke eden {coverage['tff_tm_scout_blocking_unmatched']}",
         f"- TFF / Transfermarkt yüksek kullanımlı çözülmemiş: {coverage['tff_tm_high_usage_unresolved']} profil",
         f"- Beşiktaş maç önü raporu: {coverage['besiktas_previews']}",
         f"- Tüm takım maç önü raporu: {coverage['all_teams_preview_reports']} ({coverage['all_teams_preview_teams']} takım)",
