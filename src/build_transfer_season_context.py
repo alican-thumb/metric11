@@ -3,7 +3,7 @@ from __future__ import annotations
 
 import json
 from collections import defaultdict
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 from pathlib import Path
 
 from src.config import PROCESSED_DIR, SEASON, TRANSFER_WATCH_SEASON_LABEL
@@ -24,6 +24,8 @@ FINAL_YEAR_CUTOFF = "2027-12"
 
 WINDOW_OPEN = "1 Haziran 2026"
 WINDOW_CLOSE = "31 Ağustos 2026"
+WINDOW_OPEN_DATE = date(2026, 6, 1)
+WINDOW_CLOSE_DATE = date(2026, 9, 1)
 
 
 # --------------------------------------------------------------------------- #
@@ -159,6 +161,76 @@ def _summary_bar(free_agents: list, final_year: list, signals: list, promotions:
         for icon, v, lbl, c in pills
     )
     return f"<div style='display:flex;gap:12px;flex-wrap:wrap;margin-bottom:24px'>{cells}</div>"
+
+
+def _countdown_banner() -> str:
+    today = date.today()
+    if today < WINDOW_OPEN_DATE:
+        days = (WINDOW_OPEN_DATE - today).days
+        label = f"{days} gün" if days > 1 else "Yarın"
+        msg = f"<strong style='color:#cde94e'>{label}</strong> içinde açılıyor"
+        bg, border = "#0d2b1a", "#cde94e"
+        icon = "⏰"
+    elif today <= WINDOW_CLOSE_DATE:
+        days = (WINDOW_CLOSE_DATE - today).days
+        msg = f"<strong style='color:#10b981'>Transfer penceresi açık</strong> · <span style='color:#94a3b8'>{days} gün kaldı</span>"
+        bg, border = "#0d2b1a", "#10b981"
+        icon = "✅"
+    else:
+        msg = "<strong style='color:#64748b'>Transfer penceresi kapandı</strong>"
+        bg, border = "#1e293b", "#475569"
+        icon = "🔒"
+    return (
+        f"<div style='background:{bg};border:1px solid {border};border-radius:10px;"
+        f"padding:14px 20px;margin-bottom:20px;display:flex;align-items:center;gap:12px;font-size:14px'>"
+        f"<span style='font-size:20px'>{icon}</span>"
+        f"<div>{msg} · <span style='color:#64748b;font-size:13px'>Pencere: {WINDOW_OPEN} – {WINDOW_CLOSE}</span></div>"
+        f"</div>"
+    )
+
+
+def _position_breakdown_section(free_agents: list[dict]) -> str:
+    groups: dict[str, list] = {"GK": [], "DEF": [], "MID": [], "FWD": []}
+    for p in free_agents:
+        g = p.get("position_group") or ""
+        if g in groups:
+            groups[g].append(p)
+
+    cols = ""
+    for pos, players in groups.items():
+        label = POSITION_LABELS[pos]
+        colors = {"GK": "#f59e0b", "DEF": "#3b82f6", "MID": "#10b981", "FWD": "#ef4444"}
+        color = colors[pos]
+        rows = ""
+        for p in players[:6]:
+            mv = _mv_str(p.get("market_value_eur"))
+            age = p.get("age") or "?"
+            url = p.get("tm_profile_url")
+            name = p["name"]
+            name_html = f"<a href='{url}' target='_blank' style='color:#60a5fa;text-decoration:none'>{name}</a>" if url else name
+            rows += (
+                f"<div style='display:flex;justify-content:space-between;align-items:center;"
+                f"padding:6px 0;border-bottom:1px solid #0f172a;font-size:12px'>"
+                f"<div style='color:#e2e8f0'>{name_html}"
+                f"<span style='color:#64748b;font-size:11px;margin-left:6px'>{age}</span></div>"
+                f"<div style='color:#fbbf24;font-weight:600;white-space:nowrap'>{mv}</div>"
+                f"</div>"
+            )
+        total_mv = sum(p.get("market_value_eur") or 0 for p in players)
+        cols += (
+            f"<div style='background:#1e293b;border-radius:10px;padding:16px;flex:1;min-width:200px;border-top:3px solid {color}'>"
+            f"<div style='color:{color};font-size:11px;font-weight:700;letter-spacing:.5px;margin-bottom:4px'>{label.upper()}</div>"
+            f"<div style='display:flex;justify-content:space-between;margin-bottom:12px'>"
+            f"<span style='color:#e2e8f0;font-size:20px;font-weight:700'>{len(players)}</span>"
+            f"<span style='color:#94a3b8;font-size:12px;align-self:flex-end'>{_mv_str(total_mv)}</span>"
+            f"</div>"
+            f"{rows}"
+            f"</div>"
+        )
+    return (
+        _section_title("📊 Pozisyon Bazlı Özet", "Serbest kalacak oyuncular — pozisyona göre")
+        + f"<div style='display:flex;gap:12px;flex-wrap:wrap;margin-bottom:24px'>{cols}</div>"
+    )
 
 
 def _section_title(title: str, subtitle: str = "") -> str:
@@ -425,7 +497,9 @@ def main() -> None:
         "</nav></div>",
         "<div style='max-width:1100px;margin:0 auto'>",
         _header_section(),
+        _countdown_banner(),
         _summary_bar(free_agents, final_year, signals, promotions),
+        _position_breakdown_section(free_agents),
         _window_timeline_section(),
         _free_agents_section(free_agents),
         _final_year_section(final_year),

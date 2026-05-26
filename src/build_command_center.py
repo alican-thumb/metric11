@@ -223,7 +223,7 @@ def build_html(payload: dict) -> str:
   </div>
   <header>
     <div><h1>Analiz merkezi</h1>
-    <p>Beşiktaş maç önü raporları, tahmin kontrolü, gol adayı performansı ve scout kararlarını aynı operasyon yüzünde incele.</p></div>
+    <p>Süper Lig tahmin kontrolü, gol adayı performansı, transfer radar ve scout kararlarını aynı operasyon yüzünde incele.</p></div>
   </header>
   <main>
     <div class="links">
