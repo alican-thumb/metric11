@@ -1495,8 +1495,8 @@ Bir sonraki oturumda önce `PROJECT_STATE.md` okunmalı. Ardından öncelik:
 ### Eksikler / Sıradaki
 
 - `football_command_center` header metni hâlâ Beşiktaş'a özgü (düşük öncelik).
-- Secondary/utility sayfalar (14 adet: `fm_style_scout`, `league_intelligence`, `position_scout_matrix` vb.) topbar yok — ileriki adımda eklenebilir.
-- Transfer penceresi "açık" modu 1 Haziran'da otomatik devreye girecek; manuel test yapılmadı.
+- ✅ Secondary/utility sayfalar topbar eklendi: `fm_style_scout`, `league_intelligence`, `position_scout_matrix`, `enriched_scout_dashboard`, `team_needs_dashboard` artık sticky metric11 navigasyonuna sahip.
+- ✅ Transfer penceresi mantığı doğrulandı: 1 Haziran 2026'da otomatik "açık" moda geçiyor, 1 Eylül'de kapanıyor.
 - `og-image.svg` tagline güncellemesi yapılmadı (mevcut: "Maç Tahminleri · Scout · Transfer İstihbaratı").
 
 ## 2026-05-26 Codex - Sezon Sınırı ve Transfermarkt Eşleme Güveni
