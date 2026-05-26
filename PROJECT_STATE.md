@@ -1,6 +1,6 @@
 # Futbol İstihbarat Platformu - Proje Durumu
 
-Son güncelleme: 2026-05-26 (session 6)
+Son güncelleme: 2026-05-26 (session 7)
 
 ## Amaç
 
@@ -202,6 +202,35 @@ Parse edilen alanlar:
 - Admin sayfası hash koruma güvencesi eklendi: `ADMIN_CREDENTIALS_HASH` env var yokken mevcut `admin.html` korunuyor, üzerine yazılmıyor.
 - 2025/26 sezonu bitti — tüm maç önü dashboard'larına otomatik "sezon arası" banner eklendi; 2026/27 fikstürü açılınca banner JS tarih tespiti ile kaybolacak.
 - 2026/27 Süper Lig kadrosu güncellendi: küme düşenler (Karagümrük, Antalyaspor, Kayserispor) çıkarıldı; yükselen takımlar (Çorum FK, Erzurumspor FK, Amed SFK) TM ID'leriyle sisteme eklendi. 4 dosya güncellendi: `generate_preview_batch.py`, `build_dashboard.py`, `transfermarkt_super_lig_clubs.json`, `build_transfer_season_context.py`.
+
+## 2026-05-26 Transfer Sezonu Öneriler & Nav Tutarsızlığı (Session 7)
+
+### RSS Kaynak Temizliği (collect_news_rss.py)
+- 6 ölü kaynak kaldırıldı: Sporx, Fanatik, Fotomaç, TRT Spor, Goal.com TR, NTV Spor (404 veya 0 entry).
+- 3 URL düzeltmesi: Haberturk `/rss` → `/rss/spor.xml`, Aksam `/rss/spor` → `/rss/rss.asp`, Posta `/rss/spor` → `/rss`.
+- 15 kaynak → 9 çalışan kaynak.
+
+### Nav Tutarsızlığı Giderme (html_utils.py + 7 build dosyası)
+- `html_utils.py`: `_is_transfer_season()`, `preview_nav_label()` eklendi; `_NAV` sabiti kaldırılıp `_build_nav(active)` dinamik fonksiyonuna geçildi.
+- `page_html()` imzasına `active_nav` parametresi eklendi.
+- 7 inline-nav build dosyasında "Maç Önü" → `preview_nav_label()` ile dinamik hale getirildi. Transfer sezonunda tüm sayfalarda "Arşiv" gösteriliyor.
+
+### Analiz Sayfası Transfer Sezonu Modları (build_product_home.py)
+- Header overline, H1 ve CTA butonu transfer sezonunda değişiyor.
+- Öne çıkan kartlar transfer sezonunda yeniden sıralanıyor: Transfer araçları önce, maç önü arşivi sona.
+
+### Komuta Merkezi Başlık İyileştirmesi (build_command_center.py)
+- "Beşiktaş maç önü raporları..." → "Süper Lig tahmin kontrolü..." olarak güncellendi; artık lig genelini yansıtıyor.
+
+### Transfer Sezonu Bağlam Sayfası İyileştirmeleri (build_transfer_season_context.py)
+- Geri sayım banner eklendi: "X gün içinde açılıyor" / "Açık, X gün kaldı" / "Kapandı".
+- Pozisyon kırılım bölümü eklendi: 261 serbest ajan GK/DEF/MID/FWD 4 sütunda gösteriliyor.
+
+### Scout Öneri Sistemi Genişletmesi (build_league_intelligence_report.py + build_team_scout_blueprints.py)
+- **GK_STABILITY rolü eklendi**: `ROLE_MAP`'e "savunma kırılgan" → GK_STABILITY bağlandı; `league_proxy_roles()` kaleci heuristiği (≥20 maç, 0 gol, ≤2 kart); `role_reason()` GK case.
+- **"düşük şut baskısı" zafiyeti**: GF 1.0–1.3 ve failed_to_score ≥ 7 eşiğiyle yeni zafiyet tipi. Gaziantep ve Gençlerbirliği tetikledi. Scout ipucu: "Hareketli kanat veya ikinci forvet".
+- **Yeni lig takımları şablonu**: Çorum FK, Erzurumspor FK, Amed SFK — lig verisi olmadığı için template blueprint: GK_STABILITY, CB_DOMINANT, ST_SCORER, DM_SECURITY önerileri.
+- Kayserispor transfer önerilerinde GK artık ilk sırada. 3 terfi takımı scout raporunda görünüyor.
 
 ## 2026-05-25 Site UI & İçerik İyileştirmeleri (Session 3)
 
