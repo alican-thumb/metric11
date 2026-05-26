@@ -6,6 +6,7 @@ from html import escape
 from pathlib import Path
 
 from src.config import PROCESSED_DIR
+from src.html_utils import _build_nav
 
 
 def main() -> None:
@@ -71,16 +72,33 @@ def build_html(
     match_rows = match_backtest.get("rows", [])[-40:]
     weak_goal_candidates = segment_backtest.get("weak_candidates", [])[:20]
 
+    nav = _build_nav("Analiz")
     return f"""<!doctype html>
 <html lang="tr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tahmin Backtest Paneli</title>
+  <title>Tahmin Backtest Paneli — metric11</title>
+  <meta name="theme-color" content="#091810">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <style>
     body {{ margin:0; font-family: Inter, system-ui, sans-serif; background:#f3f5f7; color:#15181d; }}
-    header {{ background:#10151f; color:#fff; padding:26px 38px; border-bottom:4px solid #1f9d55; }}
+    .topbar {{ position:sticky; top:0; z-index:5; display:flex; align-items:center; justify-content:space-between; gap:20px; min-height:58px; padding:0 clamp(16px,4vw,42px); background:#091810; color:white; border-bottom:2px solid #1a3023; }}
+    .brand {{ display:flex; gap:10px; align-items:center; font-weight:800; font-size:18px; color:white; text-decoration:none; flex-shrink:0; letter-spacing:-0.2px; }}
+    .brand:visited,.brand:active,.brand:hover {{ color:white; }}
+    .brand-mark {{ width:28px; height:28px; display:grid; place-items:center; border-radius:6px; color:#091810; background:#cde94e; font-size:14px; font-weight:900; flex-shrink:0; }}
+    .season {{ color:#6b7c72; font-size:11px; font-weight:500; margin-left:2px; border-left:1px solid #2a3d30; padding-left:8px; }}
+    nav {{ display:flex; gap:2px; flex-wrap:nowrap; overflow-x:auto; justify-content:flex-end; scrollbar-width:none; }}
+    nav::-webkit-scrollbar {{ display:none; }}
+    nav a {{ color:#8fa89a; text-decoration:none; font-size:13px; font-weight:600; padding:8px 11px; border-radius:6px; white-space:nowrap; transition:background .15s,color .15s; }}
+    nav a:visited {{ color:#8fa89a; }}
+    nav a:hover {{ background:#162b20; color:white; }}
+    nav a.active {{ background:#162b20; color:white; }}
+    .page-header {{ background:#10151f; color:#fff; padding:26px 38px; border-bottom:4px solid #1f9d55; }}
+    .back-link {{ display:inline-flex; align-items:center; gap:6px; color:#4ade80; text-decoration:none; font-size:13px; font-weight:600; margin-bottom:10px; }}
+    .back-link::before {{ content:"←"; }}
     main {{ max-width:1320px; margin:0 auto; padding:24px; }}
+    @media (max-width:680px) {{ .topbar {{ position:static; flex-direction:column; align-items:stretch; padding:11px 16px 0; gap:0; min-height:unset; }} .brand {{ padding-bottom:8px; }} .season {{ display:none; }} nav {{ justify-content:flex-start; border-top:1px solid #1e3228; padding:7px 0 9px; }} }}
     .grid {{ display:grid; grid-template-columns:repeat(4, 1fr); gap:14px; margin-bottom:18px; }}
     .metric, section {{ background:white; border:1px solid #dde3ea; border-radius:8px; box-shadow:0 8px 20px rgba(18,24,32,.07); }}
     .metric {{ padding:16px; }}
@@ -98,10 +116,12 @@ def build_html(
   </style>
 </head>
 <body>
-  <header>
+  {nav}
+  <div class="page-header">
+    <a class="back-link" href="/">Ana sayfaya dön</a>
     <h1>Tahmin Backtest Paneli</h1>
     <p>Lig geneli Poisson/Elo modelinin ve Beşiktaş gol adayı motorunun geçmiş maç performansı.</p>
-  </header>
+  </div>
   <main>
     <div class="grid">
       {metric("BJK ekran tahmini", f"%{round(match_summary.get('accuracy', 0) * 100)}", f"{match_summary.get('correct', 0)} / {match_summary.get('report_count', 0)} maç")}

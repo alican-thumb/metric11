@@ -7,6 +7,7 @@ from html import escape
 from pathlib import Path
 
 from src.config import PROCESSED_DIR
+from src.html_utils import _build_nav, preview_nav_label
 
 
 ROLE_MAP = {
@@ -443,19 +444,40 @@ def build_markdown(payload: dict) -> str:
 
 def build_html(payload: dict) -> str:
     cards = "".join(blueprint_card(item) for item in payload["blueprints"])
+    nav = _build_nav("Scout")
     return f"""<!doctype html>
 <html lang="tr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Takım Scout Blueprint Raporu</title>
+  <title>Takım Scout Blueprint Raporu — metric11</title>
+  <meta name="description" content="Süper Lig takım zafiyetleri ve scout ihtiyaç analizi — metric11.">
+  <meta property="og:title" content="Takım Scout Blueprint Raporu — metric11">
+  <meta property="og:image" content="https://metric11.com/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://metric11.com/og-image.png">
+  <meta name="theme-color" content="#091810">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <style>
-    :root {{ --bg:#f4f6f8; --panel:#fff; --ink:#15181d; --muted:#667085; --line:#dce2ea; --dark:#111318; --red:#bf1f2f; --green:#137a4b; --blue:#185ea8; --shadow:0 8px 22px rgba(18,24,32,.08); }}
+    :root {{ --bg:#f4f6f8; --panel:#fff; --ink:#15181d; --muted:#667085; --line:#dce2ea; --dark:#091810; --red:#bf1f2f; --green:#137a4b; --blue:#185ea8; --lime:#cde94e; --shadow:0 8px 22px rgba(18,24,32,.08); }}
     * {{ box-sizing:border-box; }}
-    body {{ margin:0; font-family:Inter, system-ui, sans-serif; background:var(--bg); color:var(--ink); }}
-    header {{ background:var(--dark); color:white; padding:28px 42px; border-bottom:4px solid var(--blue); }}
-    header h1 {{ margin:0 0 7px; font-size:32px; letter-spacing:0; }}
-    header p {{ margin:0; color:#c9ced8; max-width:1040px; line-height:1.5; }}
+    body {{ margin:0; font-family:Inter,"Segoe UI",Arial,sans-serif; background:var(--bg); color:var(--ink); }}
+    .topbar {{ position:sticky; top:0; z-index:5; display:flex; align-items:center; justify-content:space-between; gap:20px; min-height:58px; padding:0 clamp(16px,4vw,42px); background:var(--dark); color:white; border-bottom:2px solid #1a3023; }}
+    .brand {{ display:flex; gap:10px; align-items:center; font-weight:800; font-size:18px; color:white; text-decoration:none; flex-shrink:0; letter-spacing:-0.2px; }}
+    .brand:visited,.brand:active,.brand:hover {{ color:white; }}
+    .brand-mark {{ width:28px; height:28px; display:grid; place-items:center; border-radius:6px; color:var(--dark); background:var(--lime); font-size:14px; font-weight:900; flex-shrink:0; }}
+    .season {{ color:#6b7c72; font-size:11px; font-weight:500; margin-left:2px; border-left:1px solid #2a3d30; padding-left:8px; }}
+    nav {{ display:flex; gap:2px; flex-wrap:nowrap; overflow-x:auto; justify-content:flex-end; scrollbar-width:none; }}
+    nav::-webkit-scrollbar {{ display:none; }}
+    nav a {{ color:#8fa89a; text-decoration:none; font-size:13px; font-weight:600; padding:8px 11px; border-radius:6px; white-space:nowrap; transition:background .15s,color .15s; }}
+    nav a:visited {{ color:#8fa89a; }}
+    nav a:hover {{ background:#162b20; color:white; }}
+    nav a.active {{ background:#162b20; color:white; }}
+    .page-header {{ padding:28px clamp(16px,4vw,42px) 18px; background:var(--bg); border-bottom:1px solid var(--line); }}
+    .page-header h1 {{ margin:0 0 6px; font-size:26px; font-weight:800; }}
+    .page-header p {{ margin:0; color:var(--muted); font-size:14px; }}
+    .back-link {{ display:inline-flex; align-items:center; gap:6px; color:var(--green); text-decoration:none; font-size:13px; font-weight:600; margin-bottom:10px; }}
+    .back-link::before {{ content:"←"; }}
     main {{ max-width:1420px; margin:0 auto; padding:24px; }}
     .metrics {{ display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-bottom:18px; }}
     .metric, .team-card {{ background:white; border:1px solid var(--line); border-radius:8px; box-shadow:var(--shadow); }}
@@ -475,14 +497,17 @@ def build_html(payload: dict) -> str:
     th {{ color:var(--muted); }}
     .pill {{ display:inline-flex; min-height:22px; align-items:center; border-radius:999px; padding:0 8px; font-size:12px; background:#edf5ff; color:var(--blue); border:1px solid #bbd7f5; }}
     @media (max-width:980px) {{ .cards {{ grid-template-columns:1fr; }} .metrics {{ grid-template-columns:1fr 1fr; }} }}
-    @media (max-width:620px) {{ main {{ padding:14px; }} header {{ padding:22px; }} .metrics {{ grid-template-columns:1fr; }} .role {{ overflow-x:auto; }} table {{ min-width:560px; }} }}
+    @media (max-width:680px) {{ .topbar {{ position:static; flex-direction:column; align-items:stretch; padding:11px 16px 0; gap:0; min-height:unset; }} .brand {{ padding-bottom:8px; }} .season {{ display:none; }} nav {{ justify-content:flex-start; border-top:1px solid #1e3228; padding:7px 0 9px; }} }}
+    @media (max-width:620px) {{ main {{ padding:14px; }} .metrics {{ grid-template-columns:1fr; }} .role {{ overflow-x:auto; }} table {{ min-width:560px; }} }}
   </style>
 </head>
 <body>
-  <header>
+  {nav}
+  <div class="page-header">
+    <a class="back-link" href="/">Ana sayfaya dön</a>
     <h1>Takım Scout Blueprint Raporu</h1>
     <p>Lig istihbaratındaki takım zafiyetlerini scout rol ihtiyacına çevirir ve mevcut aday havuzundan takım dışı öneriler üretir.</p>
-  </header>
+  </div>
   <main>
     <div class="metrics">
       {metric("Takım", payload["summary"]["teams"])}
