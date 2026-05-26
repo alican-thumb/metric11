@@ -122,7 +122,7 @@ def _fmt_date(published_at: str | None) -> str:
         return ""
 
 
-def _article_html(a: dict, source_count: int = 1) -> str:
+def _article_html(a: dict, source_count: int = 1, player_name: str | None = None) -> str:
     title = escape(a.get("title", "")[:120])
     link  = escape(a.get("link", "") or "")
     src   = a.get("source", "")
@@ -143,8 +143,9 @@ def _article_html(a: dict, source_count: int = 1) -> str:
     age_html = f"<span style='font-size:11px;color:var(--muted);margin-left:auto'>{escape(age)}</span>" if age else ""
     anchor = f'<a href="{link}" target="_blank" style="color:{title_color};text-decoration:none;line-height:1.4">{tag}{title}</a>' if link else f"<span style='color:{title_color}'>{tag}{title}</span>"
     multi_html = f"<span style='font-size:10px;color:#7c3aed;font-weight:600;margin-left:4px'>{source_count} kaynak</span>" if source_count > 1 else ""
+    player_html = f"<span style='font-size:10px;padding:1px 6px;border-radius:3px;background:#fef3c7;color:#92400e;font-weight:600;margin-left:4px'>👤 {escape(player_name)}</span>" if player_name else ""
     return f"""<div style="padding:12px 0;border-bottom:1px solid var(--line)">
-  {anchor}{multi_html}<div style="margin-top:4px;display:flex;gap:6px;align-items:center">{_source_badge(stype)}<span style="font-size:11px;color:var(--muted)">{escape(src)}</span>{age_html}</div>
+  {anchor}{multi_html}{player_html}<div style="margin-top:4px;display:flex;gap:6px;align-items:center">{_source_badge(stype)}<span style="font-size:11px;color:var(--muted)">{escape(src)}</span>{age_html}</div>
 </div>"""
 
 
@@ -204,6 +205,31 @@ def _deduplicate_articles(articles: list[dict]) -> list[tuple[dict, int]]:
     return result
 
 
+def _build_player_index(transfers: list[dict]) -> dict[str, str]:
+    """Transfer listesinden oyuncu adı → tam ad eşlem tablosu üretir (soyad bazlı)."""
+    index: dict[str, str] = {}
+    for t in transfers:
+        full = t.get("player", "").strip()
+        if not full:
+            continue
+        parts = full.split()
+        for part in parts:
+            if len(part) >= 4:
+                index[part.lower()] = full
+        if len(parts) >= 2:
+            index[parts[-1].lower()] = full  # soyad
+    return index
+
+
+def _detect_player(title: str, player_index: dict[str, str]) -> str | None:
+    """Haber başlığında geçen ilk bilinen oyuncu adını döner."""
+    title_lower = title.lower()
+    for token, full_name in player_index.items():
+        if token in title_lower:
+            return full_name
+    return None
+
+
 def _ana_link(href: str, label: str, bold: bool = False) -> str:
     exists = (PROCESSED_DIR / href).exists()
     if exists:
@@ -217,11 +243,15 @@ def build_html() -> str:
     tracker  = _load(PROCESSED_DIR / f"transfer_tracker_{SEASON}.json")
     ctx      = _load(PROCESSED_DIR / f"transfer_season_context_{SEASON}.json")
 
+    transfers_all = tracker.get("transfers", [])
+    player_index = _build_player_index(transfers_all)
+
     raw_articles = (intel.get("recent_articles") or [])[:18]
     deduped = _deduplicate_articles(raw_articles)
-    articles_with_count = deduped[:6]
-
-    transfers_all = tracker.get("transfers", [])
+    articles_with_count = [
+        (a, cnt, _detect_player(a.get("title", ""), player_index))
+        for a, cnt in deduped[:6]
+    ]
     transfers_show = [t for t in transfers_all if t.get("status") in ("OFFICIAL", "CORROBORATED", "TM_CONFIRMED")][:8]
     if len(transfers_show) < 4:
         transfers_show = transfers_all[:8]
@@ -236,7 +266,7 @@ def build_html() -> str:
     _state, banner_css, dot_css, window_msg = _window_state()
 
     now_str = datetime.now(timezone.utc).strftime("%d.%m.%Y %H:%M UTC")
-    articles_html = "".join(_article_html(a, cnt) for a, cnt in articles_with_count) or "<p style='color:var(--muted);padding:16px 0'>Henüz sinyal yok.</p>"
+    articles_html = "".join(_article_html(a, cnt, player) for a, cnt, player in articles_with_count) or "<p style='color:var(--muted);padding:16px 0'>Henüz sinyal yok.</p>"
     transfers_html = "".join(_transfer_html(t) for t in transfers_show) or "<p style='color:var(--muted);padding:16px 0'>Henüz transfer kaydı yok.</p>"
 
     return f"""<!DOCTYPE html>
