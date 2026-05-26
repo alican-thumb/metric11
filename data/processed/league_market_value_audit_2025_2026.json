@@ -14,13 +14,13 @@
     "covered_matches": 258,
     "coverage_rate": 1.0,
     "missing_teams": [],
-    "model_accuracy": 0.508,
+    "model_accuracy": 0.504,
     "reporting_baseline_accuracy": 0.512,
     "reporting_baseline_draw_recall": 0.105,
-    "model_market_disagreements": 67,
-    "model_accuracy_on_disagreements": 0.328,
-    "market_accuracy_on_disagreements": 0.343,
-    "high_market_edge_model_misses": 54,
+    "model_market_disagreements": 99,
+    "model_accuracy_on_disagreements": 0.354,
+    "market_accuracy_on_disagreements": 0.374,
+    "high_market_edge_model_misses": 61,
     "diagnostic_best_band": 0.1,
     "diagnostic_best_accuracy": 0.519
   },
@@ -95,18 +95,18 @@
       "team": "BEŞİKTAŞ A.Ş.",
       "market_value_eur": 176000000,
       "matches": 29,
-      "model_correct": 16,
+      "model_correct": 15,
       "market_correct": 17,
-      "model_accuracy": 0.552,
+      "model_accuracy": 0.517,
       "market_accuracy": 0.586
     },
     {
       "team": "CORENDON ALANYASPOR",
       "market_value_eur": 33800000,
       "matches": 28,
-      "model_correct": 9,
+      "model_correct": 13,
       "market_correct": 11,
-      "model_accuracy": 0.321,
+      "model_accuracy": 0.464,
       "market_accuracy": 0.393
     },
     {
@@ -131,54 +131,54 @@
       "team": "GAZİANTEP FUTBOL KULÜBÜ A.Ş.",
       "market_value_eur": 29800000,
       "matches": 29,
-      "model_correct": 15,
+      "model_correct": 18,
       "market_correct": 14,
-      "model_accuracy": 0.517,
+      "model_accuracy": 0.621,
       "market_accuracy": 0.483
     },
     {
       "team": "GENÇLERBİRLİĞİ",
       "market_value_eur": 26250000,
       "matches": 29,
-      "model_correct": 14,
+      "model_correct": 16,
       "market_correct": 14,
-      "model_accuracy": 0.483,
+      "model_accuracy": 0.552,
       "market_accuracy": 0.483
     },
     {
       "team": "GÖZTEPE A.Ş.",
       "market_value_eur": 65750000,
       "matches": 28,
-      "model_correct": 13,
+      "model_correct": 15,
       "market_correct": 13,
-      "model_accuracy": 0.464,
+      "model_accuracy": 0.536,
       "market_accuracy": 0.464
     },
     {
       "team": "HESAP.COM ANTALYASPOR",
       "market_value_eur": 19450000,
       "matches": 28,
-      "model_correct": 11,
+      "model_correct": 12,
       "market_correct": 15,
-      "model_accuracy": 0.393,
+      "model_accuracy": 0.429,
       "market_accuracy": 0.536
     },
     {
       "team": "KASIMPAŞA A.Ş.",
       "market_value_eur": 30800000,
       "matches": 29,
-      "model_correct": 13,
+      "model_correct": 9,
       "market_correct": 12,
-      "model_accuracy": 0.448,
+      "model_accuracy": 0.31,
       "market_accuracy": 0.414
     },
     {
       "team": "KOCAELİSPOR",
       "market_value_eur": 24150000,
       "matches": 28,
-      "model_correct": 13,
+      "model_correct": 8,
       "market_correct": 11,
-      "model_accuracy": 0.464,
+      "model_accuracy": 0.286,
       "market_accuracy": 0.393
     },
     {
@@ -194,45 +194,45 @@
       "team": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ",
       "market_value_eur": 73100000,
       "matches": 29,
-      "model_correct": 18,
+      "model_correct": 17,
       "market_correct": 19,
-      "model_accuracy": 0.621,
+      "model_accuracy": 0.586,
       "market_accuracy": 0.655
     },
     {
       "team": "SAMSUNSPOR A.Ş.",
       "market_value_eur": 56100000,
       "matches": 29,
-      "model_correct": 14,
+      "model_correct": 15,
       "market_correct": 13,
-      "model_accuracy": 0.483,
+      "model_accuracy": 0.517,
       "market_accuracy": 0.448
     },
     {
       "team": "TRABZONSPOR A.Ş.",
       "market_value_eur": 129550000,
       "matches": 29,
-      "model_correct": 16,
+      "model_correct": 13,
       "market_correct": 16,
-      "model_accuracy": 0.552,
+      "model_accuracy": 0.448,
       "market_accuracy": 0.552
     },
     {
       "team": "TÜMOSAN KONYASPOR",
       "market_value_eur": 39300000,
       "matches": 29,
-      "model_correct": 16,
+      "model_correct": 18,
       "market_correct": 13,
-      "model_accuracy": 0.552,
+      "model_accuracy": 0.621,
       "market_accuracy": 0.448
     },
     {
       "team": "ZECORNER KAYSERİSPOR",
       "market_value_eur": 24750000,
       "matches": 28,
-      "model_correct": 16,
+      "model_correct": 15,
       "market_correct": 15,
-      "model_accuracy": 0.571,
+      "model_accuracy": 0.536,
       "market_accuracy": 0.536
     },
     {
@@ -248,13 +248,315 @@
       "team": "İKAS EYÜPSPOR",
       "market_value_eur": 17150000,
       "matches": 29,
-      "model_correct": 11,
+      "model_correct": 9,
       "market_correct": 13,
-      "model_accuracy": 0.379,
+      "model_accuracy": 0.31,
       "market_accuracy": 0.448
     }
   ],
   "largest_disagreements": [
+    {
+      "match_id": "283612",
+      "date": "27.09.2025 - 20:00",
+      "home": "MISIRLI.COM.TR FATİH KARAGÜMRÜK",
+      "away": "TRABZONSPOR A.Ş.",
+      "score": "3-4",
+      "raw_predicted": "away",
+      "predicted": "draw",
+      "actual": "away",
+      "correct": false,
+      "confidence": "MEDIUM",
+      "risk_flags": [
+        "beraberlik olasılığı canlı"
+      ],
+      "main_referee": "MEHMET TÜRKMEN",
+      "expected_home_goals": 0.87,
+      "expected_away_goals": 1.32,
+      "top_scorelines": [
+        {
+          "score": "0-1",
+          "home_goals": 0,
+          "away_goals": 1,
+          "probability": 0.147
+        },
+        {
+          "score": "1-1",
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.128
+        },
+        {
+          "score": "0-0",
+          "home_goals": 0,
+          "away_goals": 0,
+          "probability": 0.111
+        },
+        {
+          "score": "0-2",
+          "home_goals": 0,
+          "away_goals": 2,
+          "probability": 0.097
+        },
+        {
+          "score": "1-0",
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.097
+        }
+      ],
+      "recommended_scoreline": {
+        "score": "0-1",
+        "home_goals": 0,
+        "away_goals": 1,
+        "probability": 0.147
+      },
+      "home_win_probability": 0.247,
+      "draw_probability": 0.282,
+      "away_win_probability": 0.471,
+      "home_elo": 1445.5,
+      "away_elo": 1520.8,
+      "home_points_per_match": 0.5,
+      "away_points_per_match": 1.83,
+      "strength_edge": -0.587,
+      "home_xg_efficiency": 1.078,
+      "away_xg_efficiency": 1.26,
+      "referee_adj": 0.0,
+      "referee_cards_per_match": null,
+      "referee_goals_per_match": null,
+      "home_market_value_eur": 15700000,
+      "away_market_value_eur": 129550000,
+      "market_edge_million_eur": -113.85,
+      "market_log_edge": -2.1104,
+      "market_prediction": "away",
+      "market_correct": true
+    },
+    {
+      "match_id": "283835",
+      "date": "1.05.2026 - 20:00",
+      "home": "GAZİANTEP FUTBOL KULÜBÜ A.Ş.",
+      "away": "BEŞİKTAŞ A.Ş.",
+      "score": "0-2",
+      "raw_predicted": "away",
+      "predicted": "draw",
+      "actual": "away",
+      "correct": false,
+      "confidence": "LOW",
+      "risk_flags": [
+        "xG farkı dar",
+        "taraf tahmini düşük güven"
+      ],
+      "main_referee": "ABDULLAH BUĞRA TAŞKINSOY",
+      "expected_home_goals": 1.32,
+      "expected_away_goals": 1.5,
+      "top_scorelines": [
+        {
+          "score": "1-1",
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.118
+        },
+        {
+          "score": "0-1",
+          "home_goals": 0,
+          "away_goals": 1,
+          "probability": 0.089
+        },
+        {
+          "score": "1-2",
+          "home_goals": 1,
+          "away_goals": 2,
+          "probability": 0.089
+        },
+        {
+          "score": "1-0",
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.078
+        },
+        {
+          "score": "2-1",
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.078
+        }
+      ],
+      "recommended_scoreline": {
+        "score": "1-1",
+        "home_goals": 1,
+        "away_goals": 1,
+        "probability": 0.118
+      },
+      "home_win_probability": 0.334,
+      "draw_probability": 0.25,
+      "away_win_probability": 0.416,
+      "home_elo": 1450.3,
+      "away_elo": 1577.7,
+      "home_points_per_match": 1.12,
+      "away_points_per_match": 1.62,
+      "strength_edge": -0.2,
+      "home_xg_efficiency": 0.923,
+      "away_xg_efficiency": 1.325,
+      "referee_adj": 0.0,
+      "referee_cards_per_match": null,
+      "referee_goals_per_match": null,
+      "home_market_value_eur": 29800000,
+      "away_market_value_eur": 176000000,
+      "market_edge_million_eur": -146.2,
+      "market_log_edge": -1.776,
+      "market_prediction": "away",
+      "market_correct": true
+    },
+    {
+      "match_id": "283709",
+      "date": "18.01.2026 - 17:00",
+      "home": "KOCAELİSPOR",
+      "away": "TRABZONSPOR A.Ş.",
+      "score": "1-2",
+      "raw_predicted": "away",
+      "predicted": "draw",
+      "actual": "away",
+      "correct": false,
+      "confidence": "LOW",
+      "risk_flags": [
+        "xG farkı dar",
+        "taraf tahmini düşük güven"
+      ],
+      "main_referee": "ADNAN DENİZ KAYATEPE",
+      "expected_home_goals": 1.39,
+      "expected_away_goals": 1.41,
+      "top_scorelines": [
+        {
+          "score": "1-1",
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.119
+        },
+        {
+          "score": "0-1",
+          "home_goals": 0,
+          "away_goals": 1,
+          "probability": 0.086
+        },
+        {
+          "score": "1-0",
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.085
+        },
+        {
+          "score": "1-2",
+          "home_goals": 1,
+          "away_goals": 2,
+          "probability": 0.084
+        },
+        {
+          "score": "2-1",
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.083
+        }
+      ],
+      "recommended_scoreline": {
+        "score": "1-1",
+        "home_goals": 1,
+        "away_goals": 1,
+        "probability": 0.119
+      },
+      "home_win_probability": 0.368,
+      "draw_probability": 0.253,
+      "away_win_probability": 0.379,
+      "home_elo": 1507.1,
+      "away_elo": 1581.5,
+      "home_points_per_match": 1.88,
+      "away_points_per_match": 1.88,
+      "strength_edge": -0.02,
+      "home_xg_efficiency": 1.167,
+      "away_xg_efficiency": 0.817,
+      "referee_adj": -0.015,
+      "referee_cards_per_match": 4.7,
+      "referee_goals_per_match": 2.3,
+      "home_market_value_eur": 24150000,
+      "away_market_value_eur": 129550000,
+      "market_edge_million_eur": -105.4,
+      "market_log_edge": -1.6798,
+      "market_prediction": "away",
+      "market_correct": true
+    },
+    {
+      "match_id": "283601",
+      "date": "20.09.2025 - 20:00",
+      "home": "TRABZONSPOR A.Ş.",
+      "away": "GAZİANTEP FUTBOL KULÜBÜ A.Ş.",
+      "score": "1-1",
+      "raw_predicted": "home",
+      "predicted": "draw",
+      "actual": "draw",
+      "correct": true,
+      "confidence": "MEDIUM",
+      "risk_flags": [
+        "taraf tahmini düşük güven"
+      ],
+      "main_referee": "ARDA KARDEŞLER",
+      "expected_home_goals": 1.41,
+      "expected_away_goals": 1.14,
+      "top_scorelines": [
+        {
+          "score": "1-1",
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.125
+        },
+        {
+          "score": "1-0",
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.11
+        },
+        {
+          "score": "0-1",
+          "home_goals": 0,
+          "away_goals": 1,
+          "probability": 0.089
+        },
+        {
+          "score": "2-1",
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.089
+        },
+        {
+          "score": "0-0",
+          "home_goals": 0,
+          "away_goals": 0,
+          "probability": 0.078
+        }
+      ],
+      "recommended_scoreline": {
+        "score": "1-1",
+        "home_goals": 1,
+        "away_goals": 1,
+        "probability": 0.125
+      },
+      "home_win_probability": 0.433,
+      "draw_probability": 0.264,
+      "away_win_probability": 0.304,
+      "home_elo": 1523.4,
+      "away_elo": 1506.8,
+      "home_points_per_match": 2.0,
+      "away_points_per_match": 1.8,
+      "strength_edge": 0.176,
+      "home_xg_efficiency": 1.17,
+      "away_xg_efficiency": 0.926,
+      "referee_adj": 0.0,
+      "referee_cards_per_match": null,
+      "referee_goals_per_match": null,
+      "home_market_value_eur": 129550000,
+      "away_market_value_eur": 29800000,
+      "market_edge_million_eur": 99.75,
+      "market_log_edge": 1.4696,
+      "market_prediction": "home",
+      "market_correct": false
+    },
     {
       "match_id": "283636",
       "date": "26.10.2025 - 14:30",
@@ -417,9 +719,9 @@
       "away": "TRABZONSPOR A.Ş.",
       "score": "2-1",
       "raw_predicted": "home",
-      "predicted": "home",
+      "predicted": "draw",
       "actual": "home",
-      "correct": true,
+      "correct": false,
       "confidence": "LOW",
       "risk_flags": [
         "xG farkı dar",
@@ -485,6 +787,230 @@
       "market_log_edge": -1.1928,
       "market_prediction": "away",
       "market_correct": false
+    },
+    {
+      "match_id": "283809",
+      "date": "13.04.2026 - 20:00",
+      "home": "İKAS EYÜPSPOR",
+      "away": "SAMSUNSPOR A.Ş.",
+      "score": "1-2",
+      "raw_predicted": "away",
+      "predicted": "draw",
+      "actual": "away",
+      "correct": false,
+      "confidence": "MEDIUM",
+      "risk_flags": [
+        "taraf tahmini düşük güven"
+      ],
+      "main_referee": "YASİN KOL",
+      "expected_home_goals": 1.1,
+      "expected_away_goals": 1.39,
+      "top_scorelines": [
+        {
+          "score": "1-1",
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.127
+        },
+        {
+          "score": "0-1",
+          "home_goals": 0,
+          "away_goals": 1,
+          "probability": 0.115
+        },
+        {
+          "score": "1-0",
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.092
+        },
+        {
+          "score": "1-2",
+          "home_goals": 1,
+          "away_goals": 2,
+          "probability": 0.088
+        },
+        {
+          "score": "0-0",
+          "home_goals": 0,
+          "away_goals": 0,
+          "probability": 0.083
+        }
+      ],
+      "recommended_scoreline": {
+        "score": "1-1",
+        "home_goals": 1,
+        "away_goals": 1,
+        "probability": 0.127
+      },
+      "home_win_probability": 0.299,
+      "draw_probability": 0.268,
+      "away_win_probability": 0.434,
+      "home_elo": 1399.3,
+      "away_elo": 1471.8,
+      "home_points_per_match": 0.5,
+      "away_points_per_match": 0.75,
+      "strength_edge": -0.1,
+      "home_xg_efficiency": 1.61,
+      "away_xg_efficiency": 1.279,
+      "referee_adj": -0.036,
+      "referee_cards_per_match": 5.35,
+      "referee_goals_per_match": 2.06,
+      "home_market_value_eur": 17150000,
+      "away_market_value_eur": 56100000,
+      "market_edge_million_eur": -38.95,
+      "market_log_edge": -1.1851,
+      "market_prediction": "away",
+      "market_correct": true
+    },
+    {
+      "match_id": "283633",
+      "date": "18.10.2025 - 17:00",
+      "home": "ÇAYKUR RİZESPOR A.Ş.",
+      "away": "TRABZONSPOR A.Ş.",
+      "score": "1-2",
+      "raw_predicted": "away",
+      "predicted": "draw",
+      "actual": "away",
+      "correct": false,
+      "confidence": "LOW",
+      "risk_flags": [
+        "xG farkı dar",
+        "taraf tahmini düşük güven"
+      ],
+      "main_referee": "HALİL UMUT MELER",
+      "expected_home_goals": 1.29,
+      "expected_away_goals": 1.48,
+      "top_scorelines": [
+        {
+          "score": "1-1",
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.12
+        },
+        {
+          "score": "0-1",
+          "home_goals": 0,
+          "away_goals": 1,
+          "probability": 0.093
+        },
+        {
+          "score": "1-2",
+          "home_goals": 1,
+          "away_goals": 2,
+          "probability": 0.089
+        },
+        {
+          "score": "1-0",
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.081
+        },
+        {
+          "score": "2-1",
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.077
+        }
+      ],
+      "recommended_scoreline": {
+        "score": "1-1",
+        "home_goals": 1,
+        "away_goals": 1,
+        "probability": 0.12
+      },
+      "home_win_probability": 0.33,
+      "draw_probability": 0.253,
+      "away_win_probability": 0.417,
+      "home_elo": 1489.5,
+      "away_elo": 1545.1,
+      "home_points_per_match": 1.14,
+      "away_points_per_match": 2.12,
+      "strength_edge": -0.421,
+      "home_xg_efficiency": 0.979,
+      "away_xg_efficiency": 0.919,
+      "referee_adj": 0.0,
+      "referee_cards_per_match": null,
+      "referee_goals_per_match": null,
+      "home_market_value_eur": 39750000,
+      "away_market_value_eur": 129550000,
+      "market_edge_million_eur": -89.8,
+      "market_log_edge": -1.1815,
+      "market_prediction": "away",
+      "market_correct": true
+    },
+    {
+      "match_id": "283648",
+      "date": "31.10.2025 - 20:00",
+      "home": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ",
+      "away": "KOCAELİSPOR",
+      "score": "1-0",
+      "raw_predicted": "home",
+      "predicted": "draw",
+      "actual": "home",
+      "correct": false,
+      "confidence": "MEDIUM",
+      "risk_flags": [],
+      "main_referee": "BATUHAN KOLAK",
+      "expected_home_goals": 1.53,
+      "expected_away_goals": 1.12,
+      "top_scorelines": [
+        {
+          "score": "1-1",
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.121
+        },
+        {
+          "score": "1-0",
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.109
+        },
+        {
+          "score": "2-1",
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.093
+        },
+        {
+          "score": "2-0",
+          "home_goals": 2,
+          "away_goals": 0,
+          "probability": 0.083
+        },
+        {
+          "score": "0-1",
+          "home_goals": 0,
+          "away_goals": 1,
+          "probability": 0.079
+        }
+      ],
+      "recommended_scoreline": {
+        "score": "1-1",
+        "home_goals": 1,
+        "away_goals": 1,
+        "probability": 0.121
+      },
+      "home_win_probability": 0.467,
+      "draw_probability": 0.255,
+      "away_win_probability": 0.278,
+      "home_elo": 1491.4,
+      "away_elo": 1484.3,
+      "home_points_per_match": 1.0,
+      "away_points_per_match": 1.38,
+      "strength_edge": -0.01,
+      "home_xg_efficiency": 1.093,
+      "away_xg_efficiency": 0.674,
+      "referee_adj": 0.023,
+      "referee_cards_per_match": 4.75,
+      "referee_goals_per_match": 3.25,
+      "home_market_value_eur": 73100000,
+      "away_market_value_eur": 24150000,
+      "market_edge_million_eur": 48.95,
+      "market_log_edge": 1.1075,
+      "market_prediction": "home",
+      "market_correct": true
     },
     {
       "match_id": "283746",
@@ -564,15 +1090,166 @@
       "market_correct": false
     },
     {
+      "match_id": "283660",
+      "date": "7.11.2025 - 20:00",
+      "home": "GENÇLERBİRLİĞİ",
+      "away": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ",
+      "score": "2-1",
+      "raw_predicted": "away",
+      "predicted": "draw",
+      "actual": "home",
+      "correct": false,
+      "confidence": "MEDIUM",
+      "risk_flags": [
+        "taraf tahmini düşük güven"
+      ],
+      "main_referee": "DİRENÇ TONUSLUOĞLU",
+      "expected_home_goals": 1.16,
+      "expected_away_goals": 1.44,
+      "top_scorelines": [
+        {
+          "score": "1-1",
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.124
+        },
+        {
+          "score": "0-1",
+          "home_goals": 0,
+          "away_goals": 1,
+          "probability": 0.107
+        },
+        {
+          "score": "1-2",
+          "home_goals": 1,
+          "away_goals": 2,
+          "probability": 0.089
+        },
+        {
+          "score": "1-0",
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.086
+        },
+        {
+          "score": "0-2",
+          "home_goals": 0,
+          "away_goals": 2,
+          "probability": 0.077
+        }
+      ],
+      "recommended_scoreline": {
+        "score": "1-1",
+        "home_goals": 1,
+        "away_goals": 1,
+        "probability": 0.124
+      },
+      "home_win_probability": 0.304,
+      "draw_probability": 0.261,
+      "away_win_probability": 0.435,
+      "home_elo": 1446.8,
+      "away_elo": 1502.2,
+      "home_points_per_match": 1.0,
+      "away_points_per_match": 1.38,
+      "strength_edge": -0.23,
+      "home_xg_efficiency": 0.964,
+      "away_xg_efficiency": 1.194,
+      "referee_adj": 0.0,
+      "referee_cards_per_match": null,
+      "referee_goals_per_match": null,
+      "home_market_value_eur": 26250000,
+      "away_market_value_eur": 73100000,
+      "market_edge_million_eur": -46.85,
+      "market_log_edge": -1.0242,
+      "market_prediction": "away",
+      "market_correct": false
+    },
+    {
+      "match_id": "283820",
+      "date": "18.04.2026 - 17:00",
+      "home": "KOCAELİSPOR",
+      "away": "GÖZTEPE A.Ş.",
+      "score": "1-1",
+      "raw_predicted": "away",
+      "predicted": "draw",
+      "actual": "draw",
+      "correct": true,
+      "confidence": "LOW",
+      "risk_flags": [
+        "taraf tahmini düşük güven",
+        "favori xG israfı"
+      ],
+      "main_referee": "ALİ YILMAZ",
+      "expected_home_goals": 1.19,
+      "expected_away_goals": 1.44,
+      "top_scorelines": [
+        {
+          "score": "1-1",
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.123
+        },
+        {
+          "score": "0-1",
+          "home_goals": 0,
+          "away_goals": 1,
+          "probability": 0.104
+        },
+        {
+          "score": "1-2",
+          "home_goals": 1,
+          "away_goals": 2,
+          "probability": 0.089
+        },
+        {
+          "score": "1-0",
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.086
+        },
+        {
+          "score": "0-2",
+          "home_goals": 0,
+          "away_goals": 2,
+          "probability": 0.075
+        }
+      ],
+      "recommended_scoreline": {
+        "score": "1-1",
+        "home_goals": 1,
+        "away_goals": 1,
+        "probability": 0.123
+      },
+      "home_win_probability": 0.312,
+      "draw_probability": 0.26,
+      "away_win_probability": 0.429,
+      "home_elo": 1474.0,
+      "away_elo": 1535.3,
+      "home_points_per_match": 1.0,
+      "away_points_per_match": 0.88,
+      "strength_edge": 0.03,
+      "home_xg_efficiency": 1.278,
+      "away_xg_efficiency": 1.602,
+      "referee_adj": -0.007,
+      "referee_cards_per_match": 4.42,
+      "referee_goals_per_match": 2.37,
+      "home_market_value_eur": 24150000,
+      "away_market_value_eur": 65750000,
+      "market_edge_million_eur": -41.6,
+      "market_log_edge": -1.0016,
+      "market_prediction": "away",
+      "market_correct": false
+    },
+    {
       "match_id": "283804",
       "date": "5.04.2026 - 14:30",
       "home": "MISIRLI.COM.TR FATİH KARAGÜMRÜK",
       "away": "ÇAYKUR RİZESPOR A.Ş.",
       "score": "2-1",
       "raw_predicted": "home",
-      "predicted": "home",
+      "predicted": "draw",
       "actual": "home",
-      "correct": true,
+      "correct": false,
       "confidence": "LOW",
       "risk_flags": [
         "xG farkı dar",
@@ -791,6 +1468,83 @@
       "market_correct": true
     },
     {
+      "match_id": "283671",
+      "date": "29.11.2025 - 20:00",
+      "home": "KASIMPAŞA A.Ş.",
+      "away": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ",
+      "score": "1-3",
+      "raw_predicted": "away",
+      "predicted": "draw",
+      "actual": "away",
+      "correct": false,
+      "confidence": "LOW",
+      "risk_flags": [
+        "xG farkı dar",
+        "taraf tahmini düşük güven",
+        "yüksek kart hakemi"
+      ],
+      "main_referee": "ATİLLA KARAOĞLAN",
+      "expected_home_goals": 1.36,
+      "expected_away_goals": 1.57,
+      "top_scorelines": [
+        {
+          "score": "1-1",
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.114
+        },
+        {
+          "score": "1-2",
+          "home_goals": 1,
+          "away_goals": 2,
+          "probability": 0.089
+        },
+        {
+          "score": "0-1",
+          "home_goals": 0,
+          "away_goals": 1,
+          "probability": 0.084
+        },
+        {
+          "score": "2-1",
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.078
+        },
+        {
+          "score": "1-0",
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.073
+        }
+      ],
+      "recommended_scoreline": {
+        "score": "1-1",
+        "home_goals": 1,
+        "away_goals": 1,
+        "probability": 0.114
+      },
+      "home_win_probability": 0.332,
+      "draw_probability": 0.245,
+      "away_win_probability": 0.423,
+      "home_elo": 1469.3,
+      "away_elo": 1476.2,
+      "home_points_per_match": 1.12,
+      "away_points_per_match": 0.88,
+      "strength_edge": 0.0,
+      "home_xg_efficiency": 0.761,
+      "away_xg_efficiency": 1.211,
+      "referee_adj": -0.025,
+      "referee_cards_per_match": 5.86,
+      "referee_goals_per_match": 2.57,
+      "home_market_value_eur": 30800000,
+      "away_market_value_eur": 73100000,
+      "market_edge_million_eur": -42.3,
+      "market_log_edge": -0.8643,
+      "market_prediction": "away",
+      "market_correct": true
+    },
+    {
       "match_id": "283724",
       "date": "24.01.2026 - 17:00",
       "home": "SAMSUNSPOR A.Ş.",
@@ -875,7 +1629,7 @@
       "away": "İKAS EYÜPSPOR",
       "score": "3-0",
       "raw_predicted": "away",
-      "predicted": "away",
+      "predicted": "draw",
       "actual": "home",
       "correct": false,
       "confidence": "LOW",
@@ -946,838 +1700,77 @@
       "market_correct": true
     },
     {
-      "match_id": "283694",
-      "date": "14.12.2025 - 14:30",
-      "home": "GAZİANTEP FUTBOL KULÜBÜ A.Ş.",
-      "away": "GÖZTEPE A.Ş.",
-      "score": "0-1",
-      "raw_predicted": "home",
-      "predicted": "home",
-      "actual": "away",
-      "correct": false,
-      "confidence": "LOW",
-      "risk_flags": [
-        "xG farkı dar",
-        "taraf tahmini düşük güven"
-      ],
-      "main_referee": "CİHAN AYDIN",
-      "expected_home_goals": 1.52,
-      "expected_away_goals": 1.35,
-      "top_scorelines": [
-        {
-          "score": "1-1",
-          "home_goals": 1,
-          "away_goals": 1,
-          "probability": 0.116
-        },
-        {
-          "score": "2-1",
-          "home_goals": 2,
-          "away_goals": 1,
-          "probability": 0.088
-        },
-        {
-          "score": "1-0",
-          "home_goals": 1,
-          "away_goals": 0,
-          "probability": 0.086
-        },
-        {
-          "score": "1-2",
-          "home_goals": 1,
-          "away_goals": 2,
-          "probability": 0.079
-        },
-        {
-          "score": "0-1",
-          "home_goals": 0,
-          "away_goals": 1,
-          "probability": 0.076
-        }
-      ],
-      "recommended_scoreline": {
-        "score": "1-1",
-        "home_goals": 1,
-        "away_goals": 1,
-        "probability": 0.116
-      },
-      "home_win_probability": 0.414,
-      "draw_probability": 0.248,
-      "away_win_probability": 0.338,
-      "home_elo": 1510.8,
-      "away_elo": 1545.4,
-      "home_points_per_match": 1.5,
-      "away_points_per_match": 1.62,
-      "strength_edge": -0.03,
-      "home_xg_efficiency": 0.992,
-      "away_xg_efficiency": 1.164,
-      "referee_adj": 0.0,
-      "referee_cards_per_match": 3.2,
-      "referee_goals_per_match": 2.0,
-      "home_market_value_eur": 29800000,
-      "away_market_value_eur": 65750000,
-      "market_edge_million_eur": -35.95,
-      "market_log_edge": -0.7914,
-      "market_prediction": "away",
-      "market_correct": true
-    },
-    {
-      "match_id": "283854",
-      "date": "16.05.2026 - 17:00",
-      "home": "MISIRLI.COM.TR FATİH KARAGÜMRÜK",
-      "away": "CORENDON ALANYASPOR",
-      "score": "2-1",
+      "match_id": "283849",
+      "date": "9.05.2026 - 20:00",
+      "home": "İKAS EYÜPSPOR",
+      "away": "ÇAYKUR RİZESPOR A.Ş.",
+      "score": "4-0",
       "raw_predicted": "away",
       "predicted": "draw",
       "actual": "home",
       "correct": false,
-      "confidence": "LOW",
-      "risk_flags": [
-        "xG farkı dar",
-        "beraberlik olasılığı canlı",
-        "taraf tahmini düşük güven"
-      ],
-      "main_referee": "OĞUZHAN AKSU",
-      "expected_home_goals": 1.14,
-      "expected_away_goals": 1.22,
+      "confidence": "MEDIUM",
+      "risk_flags": [],
+      "main_referee": "HALİL UMUT MELER",
+      "expected_home_goals": 1.22,
+      "expected_away_goals": 1.52,
       "top_scorelines": [
         {
           "score": "1-1",
           "home_goals": 1,
           "away_goals": 1,
-          "probability": 0.131
+          "probability": 0.12
         },
         {
           "score": "0-1",
           "home_goals": 0,
           "away_goals": 1,
-          "probability": 0.115
-        },
-        {
-          "score": "1-0",
-          "home_goals": 1,
-          "away_goals": 0,
-          "probability": 0.107
-        },
-        {
-          "score": "0-0",
-          "home_goals": 0,
-          "away_goals": 0,
-          "probability": 0.094
+          "probability": 0.098
         },
         {
           "score": "1-2",
           "home_goals": 1,
           "away_goals": 2,
-          "probability": 0.08
-        }
-      ],
-      "recommended_scoreline": {
-        "score": "1-1",
-        "home_goals": 1,
-        "away_goals": 1,
-        "probability": 0.131
-      },
-      "home_win_probability": 0.342,
-      "draw_probability": 0.279,
-      "away_win_probability": 0.38,
-      "home_elo": 1414.8,
-      "away_elo": 1469.7,
-      "home_points_per_match": 1.62,
-      "away_points_per_match": 1.25,
-      "strength_edge": -0.01,
-      "home_xg_efficiency": 1.049,
-      "away_xg_efficiency": 0.509,
-      "referee_adj": -0.008,
-      "referee_cards_per_match": 3.09,
-      "referee_goals_per_match": 1.73,
-      "home_market_value_eur": 15700000,
-      "away_market_value_eur": 33800000,
-      "market_edge_million_eur": -18.1,
-      "market_log_edge": -0.7668,
-      "market_prediction": "away",
-      "market_correct": false
-    },
-    {
-      "match_id": "283710",
-      "date": "18.01.2026 - 17:00",
-      "home": "GENÇLERBİRLİĞİ",
-      "away": "SAMSUNSPOR A.Ş.",
-      "score": "1-1",
-      "raw_predicted": "home",
-      "predicted": "home",
-      "actual": "draw",
-      "correct": false,
-      "confidence": "LOW",
-      "risk_flags": [
-        "xG farkı dar",
-        "taraf tahmini düşük güven"
-      ],
-      "main_referee": "KADİR SAĞLAM",
-      "expected_home_goals": 1.48,
-      "expected_away_goals": 1.43,
-      "top_scorelines": [
-        {
-          "score": "1-1",
-          "home_goals": 1,
-          "away_goals": 1,
-          "probability": 0.115
-        },
-        {
-          "score": "2-1",
-          "home_goals": 2,
-          "away_goals": 1,
-          "probability": 0.085
-        },
-        {
-          "score": "1-2",
-          "home_goals": 1,
-          "away_goals": 2,
-          "probability": 0.082
-        },
-        {
-          "score": "1-0",
-          "home_goals": 1,
-          "away_goals": 0,
-          "probability": 0.081
-        },
-        {
-          "score": "0-1",
-          "home_goals": 0,
-          "away_goals": 1,
-          "probability": 0.078
-        }
-      ],
-      "recommended_scoreline": {
-        "score": "1-1",
-        "home_goals": 1,
-        "away_goals": 1,
-        "probability": 0.115
-      },
-      "home_win_probability": 0.389,
-      "draw_probability": 0.247,
-      "away_win_probability": 0.364,
-      "home_elo": 1474.3,
-      "away_elo": 1510.5,
-      "home_points_per_match": 1.25,
-      "away_points_per_match": 1.12,
-      "strength_edge": 0.09,
-      "home_xg_efficiency": 0.936,
-      "away_xg_efficiency": 1.306,
-      "referee_adj": -0.009,
-      "referee_cards_per_match": 5.38,
-      "referee_goals_per_match": 2.75,
-      "home_market_value_eur": 26250000,
-      "away_market_value_eur": 56100000,
-      "market_edge_million_eur": -29.85,
-      "market_log_edge": -0.7595,
-      "market_prediction": "away",
-      "market_correct": false
-    },
-    {
-      "match_id": "283618",
-      "date": "3.10.2025 - 20:00",
-      "home": "HESAP.COM ANTALYASPOR",
-      "away": "ÇAYKUR RİZESPOR A.Ş.",
-      "score": "2-5",
-      "raw_predicted": "home",
-      "predicted": "home",
-      "actual": "away",
-      "correct": false,
-      "confidence": "LOW",
-      "risk_flags": [
-        "xG farkı dar",
-        "beraberlik olasılığı canlı",
-        "taraf tahmini düşük güven"
-      ],
-      "main_referee": "OZAN ERGÜN",
-      "expected_home_goals": 1.26,
-      "expected_away_goals": 1.07,
-      "top_scorelines": [
-        {
-          "score": "1-1",
-          "home_goals": 1,
-          "away_goals": 1,
-          "probability": 0.131
-        },
-        {
-          "score": "1-0",
-          "home_goals": 1,
-          "away_goals": 0,
-          "probability": 0.123
-        },
-        {
-          "score": "0-1",
-          "home_goals": 0,
-          "away_goals": 1,
-          "probability": 0.104
-        },
-        {
-          "score": "0-0",
-          "home_goals": 0,
-          "away_goals": 0,
-          "probability": 0.097
-        },
-        {
-          "score": "2-1",
-          "home_goals": 2,
-          "away_goals": 1,
-          "probability": 0.083
-        }
-      ],
-      "recommended_scoreline": {
-        "score": "1-1",
-        "home_goals": 1,
-        "away_goals": 1,
-        "probability": 0.131
-      },
-      "home_win_probability": 0.406,
-      "draw_probability": 0.28,
-      "away_win_probability": 0.314,
-      "home_elo": 1500.1,
-      "away_elo": 1469.0,
-      "home_points_per_match": 1.43,
-      "away_points_per_match": 0.83,
-      "strength_edge": 0.253,
-      "home_xg_efficiency": 0.844,
-      "away_xg_efficiency": 1.73,
-      "referee_adj": 0.0,
-      "referee_cards_per_match": null,
-      "referee_goals_per_match": null,
-      "home_market_value_eur": 19450000,
-      "away_market_value_eur": 39750000,
-      "market_edge_million_eur": -20.3,
-      "market_log_edge": -0.7148,
-      "market_prediction": "away",
-      "market_correct": true
-    },
-    {
-      "match_id": "283609",
-      "date": "28.09.2025 - 17:00",
-      "home": "TÜMOSAN KONYASPOR",
-      "away": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ",
-      "score": "2-1",
-      "raw_predicted": "home",
-      "predicted": "home",
-      "actual": "home",
-      "correct": true,
-      "confidence": "MEDIUM",
-      "risk_flags": [],
-      "main_referee": "OĞUZHAN ÇAKIR",
-      "expected_home_goals": 1.54,
-      "expected_away_goals": 1.11,
-      "top_scorelines": [
-        {
-          "score": "1-1",
-          "home_goals": 1,
-          "away_goals": 1,
-          "probability": 0.121
-        },
-        {
-          "score": "1-0",
-          "home_goals": 1,
-          "away_goals": 0,
-          "probability": 0.109
-        },
-        {
-          "score": "2-1",
-          "home_goals": 2,
-          "away_goals": 1,
-          "probability": 0.093
-        },
-        {
-          "score": "2-0",
-          "home_goals": 2,
-          "away_goals": 0,
-          "probability": 0.084
-        },
-        {
-          "score": "0-1",
-          "home_goals": 0,
-          "away_goals": 1,
-          "probability": 0.079
-        }
-      ],
-      "recommended_scoreline": {
-        "score": "1-1",
-        "home_goals": 1,
-        "away_goals": 1,
-        "probability": 0.121
-      },
-      "home_win_probability": 0.473,
-      "draw_probability": 0.254,
-      "away_win_probability": 0.273,
-      "home_elo": 1506.1,
-      "away_elo": 1499.7,
-      "home_points_per_match": 1.4,
-      "away_points_per_match": 1.2,
-      "strength_edge": 0.112,
-      "home_xg_efficiency": 0.708,
-      "away_xg_efficiency": 0.828,
-      "referee_adj": 0.0,
-      "referee_cards_per_match": null,
-      "referee_goals_per_match": null,
-      "home_market_value_eur": 39300000,
-      "away_market_value_eur": 73100000,
-      "market_edge_million_eur": -33.8,
-      "market_log_edge": -0.6206,
-      "market_prediction": "away",
-      "market_correct": false
-    },
-    {
-      "match_id": "283579",
-      "date": "22.10.2025 - 20:00",
-      "home": "ÇAYKUR RİZESPOR A.Ş.",
-      "away": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ",
-      "score": "0-0",
-      "raw_predicted": "home",
-      "predicted": "home",
-      "actual": "draw",
-      "correct": false,
-      "confidence": "MEDIUM",
-      "risk_flags": [],
-      "main_referee": "ALİ YILMAZ",
-      "expected_home_goals": 1.46,
-      "expected_away_goals": 1.06,
-      "top_scorelines": [
-        {
-          "score": "1-1",
-          "home_goals": 1,
-          "away_goals": 1,
-          "probability": 0.124
-        },
-        {
-          "score": "1-0",
-          "home_goals": 1,
-          "away_goals": 0,
-          "probability": 0.117
-        },
-        {
-          "score": "2-1",
-          "home_goals": 2,
-          "away_goals": 1,
           "probability": 0.091
         },
         {
-          "score": "2-0",
-          "home_goals": 2,
-          "away_goals": 0,
-          "probability": 0.086
-        },
-        {
-          "score": "0-1",
-          "home_goals": 0,
-          "away_goals": 1,
-          "probability": 0.085
-        }
-      ],
-      "recommended_scoreline": {
-        "score": "1-1",
-        "home_goals": 1,
-        "away_goals": 1,
-        "probability": 0.124
-      },
-      "home_win_probability": 0.464,
-      "draw_probability": 0.262,
-      "away_win_probability": 0.274,
-      "home_elo": 1475.9,
-      "away_elo": 1468.3,
-      "home_points_per_match": 1.0,
-      "away_points_per_match": 0.75,
-      "strength_edge": 0.04,
-      "home_xg_efficiency": 1.15,
-      "away_xg_efficiency": 1.203,
-      "referee_adj": -0.028,
-      "referee_cards_per_match": 5.17,
-      "referee_goals_per_match": 2.17,
-      "home_market_value_eur": 39750000,
-      "away_market_value_eur": 73100000,
-      "market_edge_million_eur": -33.35,
-      "market_log_edge": -0.6092,
-      "market_prediction": "away",
-      "market_correct": false
-    },
-    {
-      "match_id": "283728",
-      "date": "30.01.2026 - 20:00",
-      "home": "KASIMPAŞA A.Ş.",
-      "away": "SAMSUNSPOR A.Ş.",
-      "score": "0-1",
-      "raw_predicted": "away",
-      "predicted": "draw",
-      "actual": "away",
-      "correct": false,
-      "confidence": "LOW",
-      "risk_flags": [
-        "xG farkı dar",
-        "beraberlik olasılığı canlı",
-        "taraf tahmini düşük güven",
-        "favori xG israfı"
-      ],
-      "main_referee": "ÇAĞDAŞ ALTAY",
-      "expected_home_goals": 0.98,
-      "expected_away_goals": 1.18,
-      "top_scorelines": [
-        {
-          "score": "0-1",
-          "home_goals": 0,
-          "away_goals": 1,
-          "probability": 0.135
-        },
-        {
-          "score": "1-1",
-          "home_goals": 1,
-          "away_goals": 1,
-          "probability": 0.133
-        },
-        {
-          "score": "0-0",
-          "home_goals": 0,
-          "away_goals": 0,
-          "probability": 0.115
-        },
-        {
           "score": "1-0",
           "home_goals": 1,
           "away_goals": 0,
-          "probability": 0.113
+          "probability": 0.079
         },
         {
           "score": "0-2",
           "home_goals": 0,
           "away_goals": 2,
-          "probability": 0.08
+          "probability": 0.075
         }
       ],
       "recommended_scoreline": {
-        "score": "0-1",
-        "home_goals": 0,
+        "score": "1-1",
+        "home_goals": 1,
         "away_goals": 1,
-        "probability": 0.135
+        "probability": 0.12
       },
       "home_win_probability": 0.305,
-      "draw_probability": 0.292,
-      "away_win_probability": 0.403,
-      "home_elo": 1438.0,
-      "away_elo": 1508.7,
-      "home_points_per_match": 0.75,
-      "away_points_per_match": 0.88,
-      "strength_edge": -0.09,
-      "home_xg_efficiency": 1.392,
-      "away_xg_efficiency": 1.413,
-      "referee_adj": 0.058,
-      "referee_cards_per_match": 2.86,
-      "referee_goals_per_match": 3.29,
-      "home_market_value_eur": 30800000,
-      "away_market_value_eur": 56100000,
-      "market_edge_million_eur": -25.3,
-      "market_log_edge": -0.5996,
-      "market_prediction": "away",
-      "market_correct": true
-    },
-    {
-      "match_id": "283666",
-      "date": "24.11.2025 - 20:00",
-      "home": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ",
-      "away": "TRABZONSPOR A.Ş.",
-      "score": "3-4",
-      "raw_predicted": "home",
-      "predicted": "home",
-      "actual": "away",
-      "correct": false,
-      "confidence": "LOW",
-      "risk_flags": [
-        "xG farkı dar",
-        "taraf tahmini düşük güven",
-        "favori xG israfı"
-      ],
-      "main_referee": "HALİL UMUT MELER",
-      "expected_home_goals": 1.5,
-      "expected_away_goals": 1.45,
-      "top_scorelines": [
-        {
-          "score": "1-1",
-          "home_goals": 1,
-          "away_goals": 1,
-          "probability": 0.114
-        },
-        {
-          "score": "2-1",
-          "home_goals": 2,
-          "away_goals": 1,
-          "probability": 0.086
-        },
-        {
-          "score": "1-2",
-          "home_goals": 1,
-          "away_goals": 2,
-          "probability": 0.082
-        },
-        {
-          "score": "1-0",
-          "home_goals": 1,
-          "away_goals": 0,
-          "probability": 0.079
-        },
-        {
-          "score": "0-1",
-          "home_goals": 0,
-          "away_goals": 1,
-          "probability": 0.076
-        }
-      ],
-      "recommended_scoreline": {
-        "score": "1-1",
-        "home_goals": 1,
-        "away_goals": 1,
-        "probability": 0.114
-      },
-      "home_win_probability": 0.39,
-      "draw_probability": 0.245,
-      "away_win_probability": 0.365,
-      "home_elo": 1489.0,
-      "away_elo": 1566.6,
-      "home_points_per_match": 1.0,
-      "away_points_per_match": 1.88,
-      "strength_edge": -0.33,
-      "home_xg_efficiency": 1.462,
-      "away_xg_efficiency": 0.789,
-      "referee_adj": -0.012,
-      "referee_cards_per_match": 4.8,
-      "referee_goals_per_match": 2.4,
-      "home_market_value_eur": 73100000,
-      "away_market_value_eur": 129550000,
-      "market_edge_million_eur": -56.45,
-      "market_log_edge": -0.5722,
-      "market_prediction": "away",
-      "market_correct": true
-    },
-    {
-      "match_id": "283840",
-      "date": "3.05.2026 - 20:00",
-      "home": "MISIRLI.COM.TR FATİH KARAGÜMRÜK",
-      "away": "GENÇLERBİRLİĞİ",
-      "score": "1-0",
-      "raw_predicted": "home",
-      "predicted": "home",
-      "actual": "home",
-      "correct": true,
-      "confidence": "MEDIUM",
-      "risk_flags": [
-        "beraberlik olasılığı canlı"
-      ],
-      "main_referee": "OĞUZHAN ÇAKIR",
-      "expected_home_goals": 1.37,
-      "expected_away_goals": 0.86,
-      "top_scorelines": [
-        {
-          "score": "1-0",
-          "home_goals": 1,
-          "away_goals": 0,
-          "probability": 0.147
-        },
-        {
-          "score": "1-1",
-          "home_goals": 1,
-          "away_goals": 1,
-          "probability": 0.127
-        },
-        {
-          "score": "0-0",
-          "home_goals": 0,
-          "away_goals": 0,
-          "probability": 0.108
-        },
-        {
-          "score": "2-0",
-          "home_goals": 2,
-          "away_goals": 0,
-          "probability": 0.101
-        },
-        {
-          "score": "0-1",
-          "home_goals": 0,
-          "away_goals": 1,
-          "probability": 0.093
-        }
-      ],
-      "recommended_scoreline": {
-        "score": "1-0",
-        "home_goals": 1,
-        "away_goals": 0,
-        "probability": 0.147
-      },
-      "home_win_probability": 0.487,
-      "draw_probability": 0.277,
-      "away_win_probability": 0.236,
-      "home_elo": 1384.4,
-      "away_elo": 1415.6,
-      "home_points_per_match": 1.0,
-      "away_points_per_match": 0.62,
-      "strength_edge": 0.17,
-      "home_xg_efficiency": 1.136,
-      "away_xg_efficiency": 2.59,
-      "referee_adj": -0.003,
-      "referee_cards_per_match": 3.82,
-      "referee_goals_per_match": 2.18,
-      "home_market_value_eur": 15700000,
-      "away_market_value_eur": 26250000,
-      "market_edge_million_eur": -10.55,
-      "market_log_edge": -0.514,
+      "draw_probability": 0.253,
+      "away_win_probability": 0.443,
+      "home_elo": 1420.5,
+      "away_elo": 1498.2,
+      "home_points_per_match": 0.88,
+      "away_points_per_match": 1.62,
+      "strength_edge": -0.28,
+      "home_xg_efficiency": 0.953,
+      "away_xg_efficiency": 0.945,
+      "referee_adj": 0.015,
+      "referee_cards_per_match": 4.5,
+      "referee_goals_per_match": 2.94,
+      "home_market_value_eur": 17150000,
+      "away_market_value_eur": 39750000,
+      "market_edge_million_eur": -22.6,
+      "market_log_edge": -0.8406,
       "market_prediction": "away",
       "market_correct": false
-    },
-    {
-      "match_id": "283827",
-      "date": "27.04.2026 - 17:00",
-      "home": "CORENDON ALANYASPOR",
-      "away": "SAMSUNSPOR A.Ş.",
-      "score": "2-3",
-      "raw_predicted": "home",
-      "predicted": "home",
-      "actual": "away",
-      "correct": false,
-      "confidence": "LOW",
-      "risk_flags": [
-        "xG farkı dar",
-        "taraf tahmini düşük güven"
-      ],
-      "main_referee": "OZAN ERGÜN",
-      "expected_home_goals": 1.39,
-      "expected_away_goals": 1.35,
-      "top_scorelines": [
-        {
-          "score": "1-1",
-          "home_goals": 1,
-          "away_goals": 1,
-          "probability": 0.121
-        },
-        {
-          "score": "1-0",
-          "home_goals": 1,
-          "away_goals": 0,
-          "probability": 0.09
-        },
-        {
-          "score": "0-1",
-          "home_goals": 0,
-          "away_goals": 1,
-          "probability": 0.087
-        },
-        {
-          "score": "2-1",
-          "home_goals": 2,
-          "away_goals": 1,
-          "probability": 0.084
-        },
-        {
-          "score": "1-2",
-          "home_goals": 1,
-          "away_goals": 2,
-          "probability": 0.082
-        }
-      ],
-      "recommended_scoreline": {
-        "score": "1-1",
-        "home_goals": 1,
-        "away_goals": 1,
-        "probability": 0.121
-      },
-      "home_win_probability": 0.381,
-      "draw_probability": 0.256,
-      "away_win_probability": 0.363,
-      "home_elo": 1474.3,
-      "away_elo": 1500.4,
-      "home_points_per_match": 0.88,
-      "away_points_per_match": 1.5,
-      "strength_edge": -0.11,
-      "home_xg_efficiency": 0.598,
-      "away_xg_efficiency": 0.882,
-      "referee_adj": 0.025,
-      "referee_cards_per_match": 5.08,
-      "referee_goals_per_match": 3.46,
-      "home_market_value_eur": 33800000,
-      "away_market_value_eur": 56100000,
-      "market_edge_million_eur": -22.3,
-      "market_log_edge": -0.5067,
-      "market_prediction": "away",
-      "market_correct": true
-    },
-    {
-      "match_id": "283760",
-      "date": "20.02.2026 - 20:00",
-      "home": "ÇAYKUR RİZESPOR A.Ş.",
-      "away": "KOCAELİSPOR",
-      "score": "2-0",
-      "raw_predicted": "away",
-      "predicted": "away",
-      "actual": "home",
-      "correct": false,
-      "confidence": "LOW",
-      "risk_flags": [
-        "xG farkı dar",
-        "taraf tahmini düşük güven"
-      ],
-      "main_referee": "MEHMET TÜRKMEN",
-      "expected_home_goals": 1.31,
-      "expected_away_goals": 1.41,
-      "top_scorelines": [
-        {
-          "score": "1-1",
-          "home_goals": 1,
-          "away_goals": 1,
-          "probability": 0.122
-        },
-        {
-          "score": "0-1",
-          "home_goals": 0,
-          "away_goals": 1,
-          "probability": 0.093
-        },
-        {
-          "score": "1-0",
-          "home_goals": 1,
-          "away_goals": 0,
-          "probability": 0.087
-        },
-        {
-          "score": "1-2",
-          "home_goals": 1,
-          "away_goals": 2,
-          "probability": 0.086
-        },
-        {
-          "score": "2-1",
-          "home_goals": 2,
-          "away_goals": 1,
-          "probability": 0.08
-        }
-      ],
-      "recommended_scoreline": {
-        "score": "1-1",
-        "home_goals": 1,
-        "away_goals": 1,
-        "probability": 0.122
-      },
-      "home_win_probability": 0.35,
-      "draw_probability": 0.257,
-      "away_win_probability": 0.393,
-      "home_elo": 1451.5,
-      "away_elo": 1511.3,
-      "home_points_per_match": 0.88,
-      "away_points_per_match": 1.5,
-      "strength_edge": -0.25,
-      "home_xg_efficiency": 0.992,
-      "away_xg_efficiency": 1.061,
-      "referee_adj": 0.08,
-      "referee_cards_per_match": 3.2,
-      "referee_goals_per_match": 4.0,
-      "home_market_value_eur": 39750000,
-      "away_market_value_eur": 24150000,
-      "market_edge_million_eur": 15.6,
-      "market_log_edge": 0.4983,
-      "market_prediction": "home",
-      "market_correct": true
     }
   ],
   "high_market_edge_model_misses": [
@@ -2135,7 +2128,7 @@
       "away_points_per_match": 2.5,
       "strength_edge": -0.68,
       "home_xg_efficiency": 0.828,
-      "away_xg_efficiency": 0.744,
+      "away_xg_efficiency": 0.745,
       "referee_adj": -0.001,
       "referee_cards_per_match": 4.4,
       "referee_goals_per_match": 2.5,
@@ -2514,6 +2507,81 @@
       "market_correct": false
     },
     {
+      "match_id": "283612",
+      "date": "27.09.2025 - 20:00",
+      "home": "MISIRLI.COM.TR FATİH KARAGÜMRÜK",
+      "away": "TRABZONSPOR A.Ş.",
+      "score": "3-4",
+      "raw_predicted": "away",
+      "predicted": "draw",
+      "actual": "away",
+      "correct": false,
+      "confidence": "MEDIUM",
+      "risk_flags": [
+        "beraberlik olasılığı canlı"
+      ],
+      "main_referee": "MEHMET TÜRKMEN",
+      "expected_home_goals": 0.87,
+      "expected_away_goals": 1.32,
+      "top_scorelines": [
+        {
+          "score": "0-1",
+          "home_goals": 0,
+          "away_goals": 1,
+          "probability": 0.147
+        },
+        {
+          "score": "1-1",
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.128
+        },
+        {
+          "score": "0-0",
+          "home_goals": 0,
+          "away_goals": 0,
+          "probability": 0.111
+        },
+        {
+          "score": "0-2",
+          "home_goals": 0,
+          "away_goals": 2,
+          "probability": 0.097
+        },
+        {
+          "score": "1-0",
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.097
+        }
+      ],
+      "recommended_scoreline": {
+        "score": "0-1",
+        "home_goals": 0,
+        "away_goals": 1,
+        "probability": 0.147
+      },
+      "home_win_probability": 0.247,
+      "draw_probability": 0.282,
+      "away_win_probability": 0.471,
+      "home_elo": 1445.5,
+      "away_elo": 1520.8,
+      "home_points_per_match": 0.5,
+      "away_points_per_match": 1.83,
+      "strength_edge": -0.587,
+      "home_xg_efficiency": 1.078,
+      "away_xg_efficiency": 1.26,
+      "referee_adj": 0.0,
+      "referee_cards_per_match": null,
+      "referee_goals_per_match": null,
+      "home_market_value_eur": 15700000,
+      "away_market_value_eur": 129550000,
+      "market_edge_million_eur": -113.85,
+      "market_log_edge": -2.1104,
+      "market_prediction": "away",
+      "market_correct": true
+    },
+    {
       "match_id": "283599",
       "date": "21.09.2025 - 20:00",
       "home": "KASIMPAŞA A.Ş.",
@@ -2574,7 +2642,7 @@
       "home_points_per_match": 0.8,
       "away_points_per_match": 2.2,
       "strength_edge": -0.56,
-      "home_xg_efficiency": 1.192,
+      "home_xg_efficiency": 1.193,
       "away_xg_efficiency": 1.25,
       "referee_adj": 0.0,
       "referee_cards_per_match": null,
@@ -3025,6 +3093,82 @@
       "market_correct": false
     },
     {
+      "match_id": "283835",
+      "date": "1.05.2026 - 20:00",
+      "home": "GAZİANTEP FUTBOL KULÜBÜ A.Ş.",
+      "away": "BEŞİKTAŞ A.Ş.",
+      "score": "0-2",
+      "raw_predicted": "away",
+      "predicted": "draw",
+      "actual": "away",
+      "correct": false,
+      "confidence": "LOW",
+      "risk_flags": [
+        "xG farkı dar",
+        "taraf tahmini düşük güven"
+      ],
+      "main_referee": "ABDULLAH BUĞRA TAŞKINSOY",
+      "expected_home_goals": 1.32,
+      "expected_away_goals": 1.5,
+      "top_scorelines": [
+        {
+          "score": "1-1",
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.118
+        },
+        {
+          "score": "0-1",
+          "home_goals": 0,
+          "away_goals": 1,
+          "probability": 0.089
+        },
+        {
+          "score": "1-2",
+          "home_goals": 1,
+          "away_goals": 2,
+          "probability": 0.089
+        },
+        {
+          "score": "1-0",
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.078
+        },
+        {
+          "score": "2-1",
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.078
+        }
+      ],
+      "recommended_scoreline": {
+        "score": "1-1",
+        "home_goals": 1,
+        "away_goals": 1,
+        "probability": 0.118
+      },
+      "home_win_probability": 0.334,
+      "draw_probability": 0.25,
+      "away_win_probability": 0.416,
+      "home_elo": 1450.3,
+      "away_elo": 1577.7,
+      "home_points_per_match": 1.12,
+      "away_points_per_match": 1.62,
+      "strength_edge": -0.2,
+      "home_xg_efficiency": 0.923,
+      "away_xg_efficiency": 1.325,
+      "referee_adj": 0.0,
+      "referee_cards_per_match": null,
+      "referee_goals_per_match": null,
+      "home_market_value_eur": 29800000,
+      "away_market_value_eur": 176000000,
+      "market_edge_million_eur": -146.2,
+      "market_log_edge": -1.776,
+      "market_prediction": "away",
+      "market_correct": true
+    },
+    {
       "match_id": "283635",
       "date": "26.10.2025 - 20:00",
       "home": "KASIMPAŞA A.Ş.",
@@ -3098,6 +3242,82 @@
       "market_log_edge": -1.743,
       "market_prediction": "away",
       "market_correct": false
+    },
+    {
+      "match_id": "283709",
+      "date": "18.01.2026 - 17:00",
+      "home": "KOCAELİSPOR",
+      "away": "TRABZONSPOR A.Ş.",
+      "score": "1-2",
+      "raw_predicted": "away",
+      "predicted": "draw",
+      "actual": "away",
+      "correct": false,
+      "confidence": "LOW",
+      "risk_flags": [
+        "xG farkı dar",
+        "taraf tahmini düşük güven"
+      ],
+      "main_referee": "ADNAN DENİZ KAYATEPE",
+      "expected_home_goals": 1.39,
+      "expected_away_goals": 1.41,
+      "top_scorelines": [
+        {
+          "score": "1-1",
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.119
+        },
+        {
+          "score": "0-1",
+          "home_goals": 0,
+          "away_goals": 1,
+          "probability": 0.086
+        },
+        {
+          "score": "1-0",
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.085
+        },
+        {
+          "score": "1-2",
+          "home_goals": 1,
+          "away_goals": 2,
+          "probability": 0.084
+        },
+        {
+          "score": "2-1",
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.083
+        }
+      ],
+      "recommended_scoreline": {
+        "score": "1-1",
+        "home_goals": 1,
+        "away_goals": 1,
+        "probability": 0.119
+      },
+      "home_win_probability": 0.368,
+      "draw_probability": 0.253,
+      "away_win_probability": 0.379,
+      "home_elo": 1507.1,
+      "away_elo": 1581.5,
+      "home_points_per_match": 1.88,
+      "away_points_per_match": 1.88,
+      "strength_edge": -0.02,
+      "home_xg_efficiency": 1.167,
+      "away_xg_efficiency": 0.817,
+      "referee_adj": -0.015,
+      "referee_cards_per_match": 4.7,
+      "referee_goals_per_match": 2.3,
+      "home_market_value_eur": 24150000,
+      "away_market_value_eur": 129550000,
+      "market_edge_million_eur": -105.4,
+      "market_log_edge": -1.6798,
+      "market_prediction": "away",
+      "market_correct": true
     },
     {
       "match_id": "283737",
@@ -3391,81 +3611,6 @@
       "market_edge_million_eur": -136.25,
       "market_log_edge": -1.4879,
       "market_prediction": "away",
-      "market_correct": false
-    },
-    {
-      "match_id": "283601",
-      "date": "20.09.2025 - 20:00",
-      "home": "TRABZONSPOR A.Ş.",
-      "away": "GAZİANTEP FUTBOL KULÜBÜ A.Ş.",
-      "score": "1-1",
-      "raw_predicted": "home",
-      "predicted": "home",
-      "actual": "draw",
-      "correct": false,
-      "confidence": "MEDIUM",
-      "risk_flags": [
-        "taraf tahmini düşük güven"
-      ],
-      "main_referee": "ARDA KARDEŞLER",
-      "expected_home_goals": 1.41,
-      "expected_away_goals": 1.14,
-      "top_scorelines": [
-        {
-          "score": "1-1",
-          "home_goals": 1,
-          "away_goals": 1,
-          "probability": 0.125
-        },
-        {
-          "score": "1-0",
-          "home_goals": 1,
-          "away_goals": 0,
-          "probability": 0.11
-        },
-        {
-          "score": "0-1",
-          "home_goals": 0,
-          "away_goals": 1,
-          "probability": 0.089
-        },
-        {
-          "score": "2-1",
-          "home_goals": 2,
-          "away_goals": 1,
-          "probability": 0.089
-        },
-        {
-          "score": "0-0",
-          "home_goals": 0,
-          "away_goals": 0,
-          "probability": 0.078
-        }
-      ],
-      "recommended_scoreline": {
-        "score": "1-1",
-        "home_goals": 1,
-        "away_goals": 1,
-        "probability": 0.125
-      },
-      "home_win_probability": 0.433,
-      "draw_probability": 0.264,
-      "away_win_probability": 0.304,
-      "home_elo": 1523.4,
-      "away_elo": 1506.8,
-      "home_points_per_match": 2.0,
-      "away_points_per_match": 1.8,
-      "strength_edge": 0.176,
-      "home_xg_efficiency": 1.17,
-      "away_xg_efficiency": 0.926,
-      "referee_adj": 0.0,
-      "referee_cards_per_match": null,
-      "referee_goals_per_match": null,
-      "home_market_value_eur": 129550000,
-      "away_market_value_eur": 29800000,
-      "market_edge_million_eur": 99.75,
-      "market_log_edge": 1.4696,
-      "market_prediction": "home",
       "market_correct": false
     },
     {
@@ -4058,6 +4203,82 @@
       "market_correct": false
     },
     {
+      "match_id": "283826",
+      "date": "27.04.2026 - 20:00",
+      "home": "TÜMOSAN KONYASPOR",
+      "away": "TRABZONSPOR A.Ş.",
+      "score": "2-1",
+      "raw_predicted": "home",
+      "predicted": "draw",
+      "actual": "home",
+      "correct": false,
+      "confidence": "LOW",
+      "risk_flags": [
+        "xG farkı dar",
+        "taraf tahmini düşük güven"
+      ],
+      "main_referee": "HALİL UMUT MELER",
+      "expected_home_goals": 1.49,
+      "expected_away_goals": 1.48,
+      "top_scorelines": [
+        {
+          "score": "1-1",
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.113
+        },
+        {
+          "score": "1-2",
+          "home_goals": 1,
+          "away_goals": 2,
+          "probability": 0.084
+        },
+        {
+          "score": "2-1",
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.084
+        },
+        {
+          "score": "1-0",
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.077
+        },
+        {
+          "score": "0-1",
+          "home_goals": 0,
+          "away_goals": 1,
+          "probability": 0.076
+        }
+      ],
+      "recommended_scoreline": {
+        "score": "1-1",
+        "home_goals": 1,
+        "away_goals": 1,
+        "probability": 0.113
+      },
+      "home_win_probability": 0.381,
+      "draw_probability": 0.245,
+      "away_win_probability": 0.375,
+      "home_elo": 1497.2,
+      "away_elo": 1642.3,
+      "home_points_per_match": 2.12,
+      "away_points_per_match": 2.5,
+      "strength_edge": -0.11,
+      "home_xg_efficiency": 1.078,
+      "away_xg_efficiency": 0.954,
+      "referee_adj": 0.014,
+      "referee_cards_per_match": 4.53,
+      "referee_goals_per_match": 2.93,
+      "home_market_value_eur": 39300000,
+      "away_market_value_eur": 129550000,
+      "market_edge_million_eur": -90.25,
+      "market_log_edge": -1.1928,
+      "market_prediction": "away",
+      "market_correct": false
+    },
+    {
       "match_id": "283684",
       "date": "6.12.2025 - 20:00",
       "home": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ",
@@ -4129,6 +4350,157 @@
       "market_log_edge": -1.1921,
       "market_prediction": "away",
       "market_correct": false
+    },
+    {
+      "match_id": "283809",
+      "date": "13.04.2026 - 20:00",
+      "home": "İKAS EYÜPSPOR",
+      "away": "SAMSUNSPOR A.Ş.",
+      "score": "1-2",
+      "raw_predicted": "away",
+      "predicted": "draw",
+      "actual": "away",
+      "correct": false,
+      "confidence": "MEDIUM",
+      "risk_flags": [
+        "taraf tahmini düşük güven"
+      ],
+      "main_referee": "YASİN KOL",
+      "expected_home_goals": 1.1,
+      "expected_away_goals": 1.39,
+      "top_scorelines": [
+        {
+          "score": "1-1",
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.127
+        },
+        {
+          "score": "0-1",
+          "home_goals": 0,
+          "away_goals": 1,
+          "probability": 0.115
+        },
+        {
+          "score": "1-0",
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.092
+        },
+        {
+          "score": "1-2",
+          "home_goals": 1,
+          "away_goals": 2,
+          "probability": 0.088
+        },
+        {
+          "score": "0-0",
+          "home_goals": 0,
+          "away_goals": 0,
+          "probability": 0.083
+        }
+      ],
+      "recommended_scoreline": {
+        "score": "1-1",
+        "home_goals": 1,
+        "away_goals": 1,
+        "probability": 0.127
+      },
+      "home_win_probability": 0.299,
+      "draw_probability": 0.268,
+      "away_win_probability": 0.434,
+      "home_elo": 1399.3,
+      "away_elo": 1471.8,
+      "home_points_per_match": 0.5,
+      "away_points_per_match": 0.75,
+      "strength_edge": -0.1,
+      "home_xg_efficiency": 1.61,
+      "away_xg_efficiency": 1.279,
+      "referee_adj": -0.036,
+      "referee_cards_per_match": 5.35,
+      "referee_goals_per_match": 2.06,
+      "home_market_value_eur": 17150000,
+      "away_market_value_eur": 56100000,
+      "market_edge_million_eur": -38.95,
+      "market_log_edge": -1.1851,
+      "market_prediction": "away",
+      "market_correct": true
+    },
+    {
+      "match_id": "283633",
+      "date": "18.10.2025 - 17:00",
+      "home": "ÇAYKUR RİZESPOR A.Ş.",
+      "away": "TRABZONSPOR A.Ş.",
+      "score": "1-2",
+      "raw_predicted": "away",
+      "predicted": "draw",
+      "actual": "away",
+      "correct": false,
+      "confidence": "LOW",
+      "risk_flags": [
+        "xG farkı dar",
+        "taraf tahmini düşük güven"
+      ],
+      "main_referee": "HALİL UMUT MELER",
+      "expected_home_goals": 1.29,
+      "expected_away_goals": 1.48,
+      "top_scorelines": [
+        {
+          "score": "1-1",
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.12
+        },
+        {
+          "score": "0-1",
+          "home_goals": 0,
+          "away_goals": 1,
+          "probability": 0.093
+        },
+        {
+          "score": "1-2",
+          "home_goals": 1,
+          "away_goals": 2,
+          "probability": 0.089
+        },
+        {
+          "score": "1-0",
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.081
+        },
+        {
+          "score": "2-1",
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.077
+        }
+      ],
+      "recommended_scoreline": {
+        "score": "1-1",
+        "home_goals": 1,
+        "away_goals": 1,
+        "probability": 0.12
+      },
+      "home_win_probability": 0.33,
+      "draw_probability": 0.253,
+      "away_win_probability": 0.417,
+      "home_elo": 1489.5,
+      "away_elo": 1545.1,
+      "home_points_per_match": 1.14,
+      "away_points_per_match": 2.12,
+      "strength_edge": -0.421,
+      "home_xg_efficiency": 0.979,
+      "away_xg_efficiency": 0.919,
+      "referee_adj": 0.0,
+      "referee_cards_per_match": null,
+      "referee_goals_per_match": null,
+      "home_market_value_eur": 39750000,
+      "away_market_value_eur": 129550000,
+      "market_edge_million_eur": -89.8,
+      "market_log_edge": -1.1815,
+      "market_prediction": "away",
+      "market_correct": true
     },
     {
       "match_id": "283664",
@@ -4277,6 +4649,79 @@
       "market_log_edge": -1.1433,
       "market_prediction": "away",
       "market_correct": false
+    },
+    {
+      "match_id": "283648",
+      "date": "31.10.2025 - 20:00",
+      "home": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ",
+      "away": "KOCAELİSPOR",
+      "score": "1-0",
+      "raw_predicted": "home",
+      "predicted": "draw",
+      "actual": "home",
+      "correct": false,
+      "confidence": "MEDIUM",
+      "risk_flags": [],
+      "main_referee": "BATUHAN KOLAK",
+      "expected_home_goals": 1.53,
+      "expected_away_goals": 1.12,
+      "top_scorelines": [
+        {
+          "score": "1-1",
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.121
+        },
+        {
+          "score": "1-0",
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.109
+        },
+        {
+          "score": "2-1",
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.093
+        },
+        {
+          "score": "2-0",
+          "home_goals": 2,
+          "away_goals": 0,
+          "probability": 0.083
+        },
+        {
+          "score": "0-1",
+          "home_goals": 0,
+          "away_goals": 1,
+          "probability": 0.079
+        }
+      ],
+      "recommended_scoreline": {
+        "score": "1-1",
+        "home_goals": 1,
+        "away_goals": 1,
+        "probability": 0.121
+      },
+      "home_win_probability": 0.467,
+      "draw_probability": 0.255,
+      "away_win_probability": 0.278,
+      "home_elo": 1491.4,
+      "away_elo": 1484.3,
+      "home_points_per_match": 1.0,
+      "away_points_per_match": 1.38,
+      "strength_edge": -0.01,
+      "home_xg_efficiency": 1.093,
+      "away_xg_efficiency": 0.674,
+      "referee_adj": 0.023,
+      "referee_cards_per_match": 4.75,
+      "referee_goals_per_match": 3.25,
+      "home_market_value_eur": 73100000,
+      "away_market_value_eur": 24150000,
+      "market_edge_million_eur": 48.95,
+      "market_log_edge": 1.1075,
+      "market_prediction": "home",
+      "market_correct": true
     },
     {
       "match_id": "283801",
@@ -4435,7 +4880,7 @@
       "away": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ",
       "score": "2-1",
       "raw_predicted": "away",
-      "predicted": "away",
+      "predicted": "draw",
       "actual": "home",
       "correct": false,
       "confidence": "MEDIUM",
@@ -4574,82 +5019,6 @@
       "market_edge_million_eur": 41.6,
       "market_log_edge": 1.0016,
       "market_prediction": "home",
-      "market_correct": false
-    },
-    {
-      "match_id": "283820",
-      "date": "18.04.2026 - 17:00",
-      "home": "KOCAELİSPOR",
-      "away": "GÖZTEPE A.Ş.",
-      "score": "1-1",
-      "raw_predicted": "away",
-      "predicted": "away",
-      "actual": "draw",
-      "correct": false,
-      "confidence": "LOW",
-      "risk_flags": [
-        "taraf tahmini düşük güven",
-        "favori xG israfı"
-      ],
-      "main_referee": "ALİ YILMAZ",
-      "expected_home_goals": 1.19,
-      "expected_away_goals": 1.44,
-      "top_scorelines": [
-        {
-          "score": "1-1",
-          "home_goals": 1,
-          "away_goals": 1,
-          "probability": 0.123
-        },
-        {
-          "score": "0-1",
-          "home_goals": 0,
-          "away_goals": 1,
-          "probability": 0.104
-        },
-        {
-          "score": "1-2",
-          "home_goals": 1,
-          "away_goals": 2,
-          "probability": 0.089
-        },
-        {
-          "score": "1-0",
-          "home_goals": 1,
-          "away_goals": 0,
-          "probability": 0.086
-        },
-        {
-          "score": "0-2",
-          "home_goals": 0,
-          "away_goals": 2,
-          "probability": 0.075
-        }
-      ],
-      "recommended_scoreline": {
-        "score": "1-1",
-        "home_goals": 1,
-        "away_goals": 1,
-        "probability": 0.123
-      },
-      "home_win_probability": 0.312,
-      "draw_probability": 0.26,
-      "away_win_probability": 0.429,
-      "home_elo": 1474.0,
-      "away_elo": 1535.3,
-      "home_points_per_match": 1.0,
-      "away_points_per_match": 0.88,
-      "strength_edge": 0.03,
-      "home_xg_efficiency": 1.278,
-      "away_xg_efficiency": 1.602,
-      "referee_adj": -0.007,
-      "referee_cards_per_match": 4.42,
-      "referee_goals_per_match": 2.37,
-      "home_market_value_eur": 24150000,
-      "away_market_value_eur": 65750000,
-      "market_edge_million_eur": -41.6,
-      "market_log_edge": -1.0016,
-      "market_prediction": "away",
       "market_correct": false
     },
     {
@@ -4871,6 +5240,82 @@
       "away_market_value_eur": 336650000,
       "market_edge_million_eur": -207.1,
       "market_log_edge": -0.955,
+      "market_prediction": "away",
+      "market_correct": false
+    },
+    {
+      "match_id": "283804",
+      "date": "5.04.2026 - 14:30",
+      "home": "MISIRLI.COM.TR FATİH KARAGÜMRÜK",
+      "away": "ÇAYKUR RİZESPOR A.Ş.",
+      "score": "2-1",
+      "raw_predicted": "home",
+      "predicted": "draw",
+      "actual": "home",
+      "correct": false,
+      "confidence": "LOW",
+      "risk_flags": [
+        "xG farkı dar",
+        "taraf tahmini düşük güven"
+      ],
+      "main_referee": "YİĞİT ARSLAN",
+      "expected_home_goals": 1.28,
+      "expected_away_goals": 1.26,
+      "top_scorelines": [
+        {
+          "score": "1-1",
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.127
+        },
+        {
+          "score": "1-0",
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.101
+        },
+        {
+          "score": "0-1",
+          "home_goals": 0,
+          "away_goals": 1,
+          "probability": 0.099
+        },
+        {
+          "score": "2-1",
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.081
+        },
+        {
+          "score": "1-2",
+          "home_goals": 1,
+          "away_goals": 2,
+          "probability": 0.08
+        }
+      ],
+      "recommended_scoreline": {
+        "score": "1-1",
+        "home_goals": 1,
+        "away_goals": 1,
+        "probability": 0.127
+      },
+      "home_win_probability": 0.371,
+      "draw_probability": 0.268,
+      "away_win_probability": 0.361,
+      "home_elo": 1388.2,
+      "away_elo": 1486.7,
+      "home_points_per_match": 1.0,
+      "away_points_per_match": 1.5,
+      "strength_edge": -0.2,
+      "home_xg_efficiency": 1.175,
+      "away_xg_efficiency": 0.803,
+      "referee_adj": -0.001,
+      "referee_cards_per_match": 4.86,
+      "referee_goals_per_match": 2.71,
+      "home_market_value_eur": 15700000,
+      "away_market_value_eur": 39750000,
+      "market_edge_million_eur": -24.05,
+      "market_log_edge": -0.9289,
       "market_prediction": "away",
       "market_correct": false
     },
@@ -5102,13 +5547,90 @@
       "market_correct": true
     },
     {
+      "match_id": "283671",
+      "date": "29.11.2025 - 20:00",
+      "home": "KASIMPAŞA A.Ş.",
+      "away": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ",
+      "score": "1-3",
+      "raw_predicted": "away",
+      "predicted": "draw",
+      "actual": "away",
+      "correct": false,
+      "confidence": "LOW",
+      "risk_flags": [
+        "xG farkı dar",
+        "taraf tahmini düşük güven",
+        "yüksek kart hakemi"
+      ],
+      "main_referee": "ATİLLA KARAOĞLAN",
+      "expected_home_goals": 1.36,
+      "expected_away_goals": 1.57,
+      "top_scorelines": [
+        {
+          "score": "1-1",
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.114
+        },
+        {
+          "score": "1-2",
+          "home_goals": 1,
+          "away_goals": 2,
+          "probability": 0.089
+        },
+        {
+          "score": "0-1",
+          "home_goals": 0,
+          "away_goals": 1,
+          "probability": 0.084
+        },
+        {
+          "score": "2-1",
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.078
+        },
+        {
+          "score": "1-0",
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.073
+        }
+      ],
+      "recommended_scoreline": {
+        "score": "1-1",
+        "home_goals": 1,
+        "away_goals": 1,
+        "probability": 0.114
+      },
+      "home_win_probability": 0.332,
+      "draw_probability": 0.245,
+      "away_win_probability": 0.423,
+      "home_elo": 1469.3,
+      "away_elo": 1476.2,
+      "home_points_per_match": 1.12,
+      "away_points_per_match": 0.88,
+      "strength_edge": 0.0,
+      "home_xg_efficiency": 0.761,
+      "away_xg_efficiency": 1.211,
+      "referee_adj": -0.025,
+      "referee_cards_per_match": 5.86,
+      "referee_goals_per_match": 2.57,
+      "home_market_value_eur": 30800000,
+      "away_market_value_eur": 73100000,
+      "market_edge_million_eur": -42.3,
+      "market_log_edge": -0.8643,
+      "market_prediction": "away",
+      "market_correct": true
+    },
+    {
       "match_id": "283696",
       "date": "13.12.2025 - 14:30",
       "home": "ÇAYKUR RİZESPOR A.Ş.",
       "away": "İKAS EYÜPSPOR",
       "score": "3-0",
       "raw_predicted": "away",
-      "predicted": "away",
+      "predicted": "draw",
       "actual": "home",
       "correct": false,
       "confidence": "LOW",
@@ -5185,7 +5707,7 @@
       "away": "ÇAYKUR RİZESPOR A.Ş.",
       "score": "4-0",
       "raw_predicted": "away",
-      "predicted": "away",
+      "predicted": "draw",
       "actual": "home",
       "correct": false,
       "confidence": "MEDIUM",
@@ -5252,81 +5774,80 @@
       "market_correct": false
     },
     {
-      "match_id": "283707",
-      "date": "19.01.2026 - 17:00",
-      "home": "TÜMOSAN KONYASPOR",
-      "away": "İKAS EYÜPSPOR",
-      "score": "1-1",
+      "match_id": "283787",
+      "date": "15.03.2026 - 20:00",
+      "home": "SAMSUNSPOR A.Ş.",
+      "away": "ZECORNER KAYSERİSPOR",
+      "score": "2-1",
       "raw_predicted": "home",
-      "predicted": "home",
-      "actual": "draw",
+      "predicted": "draw",
+      "actual": "home",
       "correct": false,
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "risk_flags": [
-        "xG farkı dar",
-        "taraf tahmini düşük güven",
+        "beraberlik olasılığı canlı",
         "favori xG israfı"
       ],
-      "main_referee": "ÖMER FARUK TURTAY",
-      "expected_home_goals": 1.41,
-      "expected_away_goals": 1.31,
+      "main_referee": "ADNAN DENİZ KAYATEPE",
+      "expected_home_goals": 1.39,
+      "expected_away_goals": 0.93,
       "top_scorelines": [
-        {
-          "score": "1-1",
-          "home_goals": 1,
-          "away_goals": 1,
-          "probability": 0.122
-        },
         {
           "score": "1-0",
           "home_goals": 1,
           "away_goals": 0,
-          "probability": 0.093
+          "probability": 0.136
+        },
+        {
+          "score": "1-1",
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.127
+        },
+        {
+          "score": "0-0",
+          "home_goals": 0,
+          "away_goals": 0,
+          "probability": 0.098
+        },
+        {
+          "score": "2-0",
+          "home_goals": 2,
+          "away_goals": 0,
+          "probability": 0.095
         },
         {
           "score": "0-1",
           "home_goals": 0,
           "away_goals": 1,
-          "probability": 0.086
-        },
-        {
-          "score": "2-1",
-          "home_goals": 2,
-          "away_goals": 1,
-          "probability": 0.086
-        },
-        {
-          "score": "1-2",
-          "home_goals": 1,
-          "away_goals": 2,
-          "probability": 0.08
+          "probability": 0.092
         }
       ],
       "recommended_scoreline": {
-        "score": "1-1",
+        "score": "1-0",
         "home_goals": 1,
-        "away_goals": 1,
-        "probability": 0.122
+        "away_goals": 0,
+        "probability": 0.136
       },
-      "home_win_probability": 0.395,
-      "draw_probability": 0.257,
-      "away_win_probability": 0.348,
-      "home_elo": 1443.9,
-      "away_elo": 1421.0,
-      "home_points_per_match": 0.75,
+      "home_win_probability": 0.475,
+      "draw_probability": 0.273,
+      "away_win_probability": 0.252,
+      "home_elo": 1479.8,
+      "away_elo": 1419.8,
+      "home_points_per_match": 0.88,
       "away_points_per_match": 0.62,
-      "strength_edge": 0.03,
-      "home_xg_efficiency": 1.47,
-      "away_xg_efficiency": 2.527,
-      "referee_adj": 0.0,
-      "referee_cards_per_match": null,
-      "referee_goals_per_match": null,
-      "home_market_value_eur": 39300000,
-      "away_market_value_eur": 17150000,
-      "market_edge_million_eur": 22.15,
-      "market_log_edge": 0.8292,
+      "strength_edge": 0.16,
+      "home_xg_efficiency": 1.526,
+      "away_xg_efficiency": 3.12,
+      "referee_adj": -0.001,
+      "referee_cards_per_match": 4.71,
+      "referee_goals_per_match": 2.64,
+      "home_market_value_eur": 56100000,
+      "away_market_value_eur": 24750000,
+      "market_edge_million_eur": 31.35,
+      "market_log_edge": 0.8183,
       "market_prediction": "home",
-      "market_correct": false
+      "market_correct": true
     },
     {
       "match_id": "283694",
@@ -5335,7 +5856,7 @@
       "away": "GÖZTEPE A.Ş.",
       "score": "0-1",
       "raw_predicted": "home",
-      "predicted": "home",
+      "predicted": "draw",
       "actual": "away",
       "correct": false,
       "confidence": "LOW",
@@ -5482,102 +6003,34 @@
       "market_correct": false
     },
     {
-      "match_id": "283710",
-      "date": "18.01.2026 - 17:00",
-      "home": "GENÇLERBİRLİĞİ",
-      "away": "SAMSUNSPOR A.Ş.",
-      "score": "1-1",
-      "raw_predicted": "home",
-      "predicted": "home",
-      "actual": "draw",
+      "match_id": "283653",
+      "date": "8.11.2025 - 20:00",
+      "home": "KASIMPAŞA A.Ş.",
+      "away": "GÖZTEPE A.Ş.",
+      "score": "0-2",
+      "raw_predicted": "away",
+      "predicted": "draw",
+      "actual": "away",
       "correct": false,
-      "confidence": "LOW",
+      "confidence": "MEDIUM",
       "risk_flags": [
-        "xG farkı dar",
-        "taraf tahmini düşük güven"
+        "beraberlik olasılığı canlı",
+        "taraf tahmini düşük güven",
+        "favori xG israfı"
       ],
-      "main_referee": "KADİR SAĞLAM",
-      "expected_home_goals": 1.48,
-      "expected_away_goals": 1.43,
+      "main_referee": "ÖMER TOLGA GÜLDİBİ",
+      "expected_home_goals": 1.07,
+      "expected_away_goals": 1.34,
       "top_scorelines": [
         {
           "score": "1-1",
           "home_goals": 1,
           "away_goals": 1,
-          "probability": 0.115
-        },
-        {
-          "score": "2-1",
-          "home_goals": 2,
-          "away_goals": 1,
-          "probability": 0.085
-        },
-        {
-          "score": "1-2",
-          "home_goals": 1,
-          "away_goals": 2,
-          "probability": 0.082
-        },
-        {
-          "score": "1-0",
-          "home_goals": 1,
-          "away_goals": 0,
-          "probability": 0.081
+          "probability": 0.129
         },
         {
           "score": "0-1",
           "home_goals": 0,
-          "away_goals": 1,
-          "probability": 0.078
-        }
-      ],
-      "recommended_scoreline": {
-        "score": "1-1",
-        "home_goals": 1,
-        "away_goals": 1,
-        "probability": 0.115
-      },
-      "home_win_probability": 0.389,
-      "draw_probability": 0.247,
-      "away_win_probability": 0.364,
-      "home_elo": 1474.3,
-      "away_elo": 1510.5,
-      "home_points_per_match": 1.25,
-      "away_points_per_match": 1.12,
-      "strength_edge": 0.09,
-      "home_xg_efficiency": 0.936,
-      "away_xg_efficiency": 1.306,
-      "referee_adj": -0.009,
-      "referee_cards_per_match": 5.38,
-      "referee_goals_per_match": 2.75,
-      "home_market_value_eur": 26250000,
-      "away_market_value_eur": 56100000,
-      "market_edge_million_eur": -29.85,
-      "market_log_edge": -0.7595,
-      "market_prediction": "away",
-      "market_correct": false
-    },
-    {
-      "match_id": "283806",
-      "date": "12.04.2026 - 17:00",
-      "home": "GÖZTEPE A.Ş.",
-      "away": "KASIMPAŞA A.Ş.",
-      "score": "3-3",
-      "raw_predicted": "home",
-      "predicted": "home",
-      "actual": "draw",
-      "correct": false,
-      "confidence": "MEDIUM",
-      "risk_flags": [
-        "favori xG israfı"
-      ],
-      "main_referee": "ÇAĞDAŞ ALTAY",
-      "expected_home_goals": 1.5,
-      "expected_away_goals": 1.19,
-      "top_scorelines": [
-        {
-          "score": "1-1",
-          "home_goals": 1,
           "away_goals": 1,
           "probability": 0.121
         },
@@ -5585,52 +6038,46 @@
           "score": "1-0",
           "home_goals": 1,
           "away_goals": 0,
-          "probability": 0.102
+          "probability": 0.096
         },
         {
-          "score": "2-1",
-          "home_goals": 2,
-          "away_goals": 1,
-          "probability": 0.091
-        },
-        {
-          "score": "0-1",
+          "score": "0-0",
           "home_goals": 0,
-          "away_goals": 1,
-          "probability": 0.081
+          "away_goals": 0,
+          "probability": 0.09
         },
         {
-          "score": "2-0",
-          "home_goals": 2,
-          "away_goals": 0,
-          "probability": 0.076
+          "score": "1-2",
+          "home_goals": 1,
+          "away_goals": 2,
+          "probability": 0.086
         }
       ],
       "recommended_scoreline": {
         "score": "1-1",
         "home_goals": 1,
         "away_goals": 1,
-        "probability": 0.121
+        "probability": 0.129
       },
-      "home_win_probability": 0.443,
-      "draw_probability": 0.255,
-      "away_win_probability": 0.301,
-      "home_elo": 1540.5,
-      "away_elo": 1437.4,
-      "home_points_per_match": 0.88,
-      "away_points_per_match": 1.38,
-      "strength_edge": -0.2,
-      "home_xg_efficiency": 2.018,
-      "away_xg_efficiency": 0.907,
-      "referee_adj": 0.053,
-      "referee_cards_per_match": 2.73,
-      "referee_goals_per_match": 3.09,
-      "home_market_value_eur": 65750000,
-      "away_market_value_eur": 30800000,
-      "market_edge_million_eur": 34.95,
-      "market_log_edge": 0.7583,
-      "market_prediction": "home",
-      "market_correct": false
+      "home_win_probability": 0.297,
+      "draw_probability": 0.273,
+      "away_win_probability": 0.43,
+      "home_elo": 1465.9,
+      "away_elo": 1537.8,
+      "home_points_per_match": 1.25,
+      "away_points_per_match": 1.5,
+      "strength_edge": -0.12,
+      "home_xg_efficiency": 0.853,
+      "away_xg_efficiency": 1.374,
+      "referee_adj": 0.0,
+      "referee_cards_per_match": null,
+      "referee_goals_per_match": null,
+      "home_market_value_eur": 30800000,
+      "away_market_value_eur": 65750000,
+      "market_edge_million_eur": -34.95,
+      "market_log_edge": -0.7583,
+      "market_prediction": "away",
+      "market_correct": true
     },
     {
       "match_id": "283618",
@@ -5639,7 +6086,7 @@
       "away": "ÇAYKUR RİZESPOR A.Ş.",
       "score": "2-5",
       "raw_predicted": "home",
-      "predicted": "home",
+      "predicted": "draw",
       "actual": "away",
       "correct": false,
       "confidence": "LOW",
@@ -5707,6 +6154,79 @@
       "market_edge_million_eur": -20.3,
       "market_log_edge": -0.7148,
       "market_prediction": "away",
+      "market_correct": true
+    },
+    {
+      "match_id": "283771",
+      "date": "8.03.2026 - 13:30",
+      "home": "ÇAYKUR RİZESPOR A.Ş.",
+      "away": "HESAP.COM ANTALYASPOR",
+      "score": "1-0",
+      "raw_predicted": "home",
+      "predicted": "draw",
+      "actual": "home",
+      "correct": false,
+      "confidence": "MEDIUM",
+      "risk_flags": [],
+      "main_referee": "OĞUZHAN AKSU",
+      "expected_home_goals": 1.47,
+      "expected_away_goals": 1.09,
+      "top_scorelines": [
+        {
+          "score": "1-1",
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.124
+        },
+        {
+          "score": "1-0",
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.114
+        },
+        {
+          "score": "2-1",
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.091
+        },
+        {
+          "score": "0-1",
+          "home_goals": 0,
+          "away_goals": 1,
+          "probability": 0.084
+        },
+        {
+          "score": "2-0",
+          "home_goals": 2,
+          "away_goals": 0,
+          "probability": 0.084
+        }
+      ],
+      "recommended_scoreline": {
+        "score": "1-1",
+        "home_goals": 1,
+        "away_goals": 1,
+        "probability": 0.124
+      },
+      "home_win_probability": 0.46,
+      "draw_probability": 0.261,
+      "away_win_probability": 0.28,
+      "home_elo": 1484.0,
+      "away_elo": 1437.7,
+      "home_points_per_match": 1.12,
+      "away_points_per_match": 1.12,
+      "strength_edge": -0.02,
+      "home_xg_efficiency": 0.736,
+      "away_xg_efficiency": 0.674,
+      "referee_adj": -0.011,
+      "referee_cards_per_match": 2.57,
+      "referee_goals_per_match": 1.43,
+      "home_market_value_eur": 39750000,
+      "away_market_value_eur": 19450000,
+      "market_edge_million_eur": 20.3,
+      "market_log_edge": 0.7148,
+      "market_prediction": "home",
       "market_correct": true
     },
     {

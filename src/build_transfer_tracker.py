@@ -16,6 +16,7 @@ from src.config import (
     TRANSFER_WATCH_SEASON,
     TRANSFER_WATCH_SEASON_LABEL,
 )
+from src.html_utils import preview_nav_label
 
 OUTPUT_HTML = PROCESSED_DIR / f"transfer_tracker_{SEASON}.html"
 OUTPUT_JSON = PROCESSED_DIR / f"transfer_tracker_{SEASON}.json"
@@ -222,7 +223,7 @@ def build_html(signals: list[dict], summary: dict) -> str:
   <nav class="topnav">
     <a href="/">Gündem</a>
     <a class="active" href="transfer_tracker_{SEASON}.html">Transferler</a>
-    <a href="all_teams_preview_dashboard_{SEASON}.html">Maç Önü</a>
+    <a href="all_teams_preview_dashboard_{SEASON}.html">{preview_nav_label()}</a>
     <a href="transfer_recommendation_report_{SEASON}.html">Scout</a>
     <a href="football_intelligence_home.html">Analiz</a>
   </nav>

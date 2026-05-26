@@ -2,7 +2,25 @@
 from __future__ import annotations
 
 import re
+from datetime import date
 from html import escape
+
+_SEASON_END = date(2026, 5, 18)
+_WINDOW_CLOSE = date(2026, 9, 1)
+
+
+def _is_transfer_season() -> bool:
+    today = date.today()
+    return _SEASON_END <= today < _WINDOW_CLOSE
+
+
+def _preview_label() -> str:
+    return "Ar&#x15f;iv" if _is_transfer_season() else "Ma&#xe7; &#xd6;n&#xfc;"
+
+
+def preview_nav_label() -> str:
+    """Return the correct nav label for the preview/archive link based on season."""
+    return "Arşiv" if _is_transfer_season() else "Maç Önü"
 
 
 _CSS = """
@@ -44,25 +62,32 @@ _CSS = """
 """
 
 
-_NAV = (
-    '<div class="topbar">'
-    '<a class="brand" href="/">'
-    '<span class="brand-mark">11</span>'
-    ' metric11'
-    '<span class="season">S&#xfc;per Lig 2025/26</span>'
-    '</a>'
-    '<nav>'
-    '<a href="/">G&#xfc;ndem</a>'
-    '<a href="transfer_tracker_2025_2026.html">Transferler</a>'
-    '<a href="all_teams_preview_dashboard_2025_2026.html">Ma&#xe7; &#xd6;n&#xfc;</a>'
-    '<a href="transfer_recommendation_report_2025_2026.html">Scout</a>'
-    '<a href="football_intelligence_home.html">Analiz</a>'
-    '</nav>'
-    '</div>'
-)
+def _build_nav(active: str = "") -> str:
+    links = [
+        ("G&#xfc;ndem", "/"),
+        ("Transferler", "transfer_tracker_2025_2026.html"),
+        (_preview_label(), "all_teams_preview_dashboard_2025_2026.html"),
+        ("Scout", "transfer_recommendation_report_2025_2026.html"),
+        ("Analiz", "football_intelligence_home.html"),
+    ]
+    items = "".join(
+        f'<a href="{href}" class="active">{label}</a>' if label == active or href == active
+        else f'<a href="{href}">{label}</a>'
+        for label, href in links
+    )
+    return (
+        '<div class="topbar">'
+        '<a class="brand" href="/">'
+        '<span class="brand-mark">11</span>'
+        ' metric11'
+        '<span class="season">S&#xfc;per Lig 2025/26</span>'
+        '</a>'
+        f'<nav>{items}</nav>'
+        '</div>'
+    )
 
 
-def page_html(title: str, body_html: str, description: str = "Süper Lig maç tahminleri, scout analizleri ve transfer istihbaratı — metric11.") -> str:
+def page_html(title: str, body_html: str, description: str = "Süper Lig maç tahminleri, scout analizleri ve transfer istihbaratı — metric11.", active_nav: str = "Analiz") -> str:
     _t = escape(title)
     _d = escape(description)
     return (
@@ -84,7 +109,7 @@ def page_html(title: str, body_html: str, description: str = "Süper Lig maç ta
         f"  <style>{_CSS}  </style>\n"
         "</head>\n"
         "<body>\n"
-        f"  {_NAV}\n"
+        f"  {_build_nav(active_nav)}\n"
         '  <div class="report-wrap">\n'
         f'    <a class="back-link" href="/">Ana sayfaya d&#xf6;n</a>\n'
         f"    {body_html}\n"

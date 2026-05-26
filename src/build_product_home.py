@@ -5,7 +5,17 @@ import json
 from html import escape
 from pathlib import Path
 
+from datetime import date
+
 from src.config import PROCESSED_DIR, SEASON
+
+_SEASON_END = date(2026, 5, 18)
+_WINDOW_CLOSE = date(2026, 9, 1)
+
+
+def _is_transfer_season() -> bool:
+    today = date.today()
+    return _SEASON_END <= today < _WINDOW_CLOSE
 
 
 def main() -> None:
@@ -211,10 +221,17 @@ def build_html() -> str:
         ),
     ]
 
-    # Kullanıcıya gösterilen kartlar (ilk 4 featured)
-    user_cards = cards[:15]
-    # Sadece yönetici/analist erişimi — ana sayfada görünmez
-    admin_cards = cards[15:]
+    # Transfer sezonunda transfer araçları öne çıkar
+    if _is_transfer_season():
+        transfer_titles = {"Transfer Sezonu Bağlam Raporu", "Transfer Takip", "Transfer Tavsiye Raporu", "Futbol Komuta Merkezi"}
+        transfer_cards = [c for c in cards if any(t in c for t in transfer_titles)]
+        other_cards = [c for c in cards if not any(t in c for t in transfer_titles)]
+        ordered = transfer_cards + other_cards
+    else:
+        ordered = cards
+
+    user_cards = ordered[:15]
+    admin_cards = ordered[15:]
 
     featured_cards = "".join(user_cards[:4])
     module_cards = "".join(user_cards[4:])
@@ -307,7 +324,7 @@ def build_html() -> str:
     <nav>
       <a href="/">Gündem</a>
       <a href="transfer_tracker_2025_2026.html">Transferler</a>
-      <a href="all_teams_preview_dashboard_2025_2026.html">Maç Önü</a>
+      <a href="all_teams_preview_dashboard_2025_2026.html">{"Arşiv" if _is_transfer_season() else "Maç Önü"}</a>
       <a href="transfer_recommendation_report_2025_2026.html">Scout</a>
       <a class="active" href="football_intelligence_home.html">Analiz</a>
     </nav>
@@ -315,11 +332,11 @@ def build_html() -> str:
   <header>
     <div class="matchroom">
       <div>
-        <div class="overline">Süper Lig 2025/26 &mdash; Veri platformu</div>
-        <h1>Maçı oku. Kadroyu tartış. Oyuncuyu keşfet.</h1>
-        <p>18 takım için skor senaryoları, gol adayları, scout profilleri ve transfer istihbaratı tek sezon veri akışında izleniyor.</p>
+        <div class="overline">Süper Lig {"2026/27 &mdash; Transfer sezonu" if _is_transfer_season() else "2025/26 &mdash; Veri platformu"}</div>
+        <h1>{"Oyuncuyu değerlendir. Kadroyu kur. Transferi takip et." if _is_transfer_season() else "Maçı oku. Kadroyu tartış. Oyuncuyu keşfet."}</h1>
+        <p>{"261 serbest kalacak oyuncu, 180 son yıl kontrat. Transfer penceresi 1 Haziran'da açılıyor." if _is_transfer_season() else "18 takım için skor senaryoları, gol adayları, scout profilleri ve transfer istihbaratı tek sezon veri akışında izleniyor."}</p>
         <div class="hero-actions">
-          <a class="primary" href="all_teams_preview_dashboard_2025_2026.html">Maç Önü Arşivi</a>
+          <a class="primary" href="transfer_season_context_2025_2026.html">{"Transfer Sezonu Raporu" if _is_transfer_season() else "Maç Önü Arşivi"}</a>
           <a class="secondary" href="football_command_center_2025_2026.html">Analiz merkezi</a>
         </div>
       </div>

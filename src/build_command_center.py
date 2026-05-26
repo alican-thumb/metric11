@@ -6,6 +6,7 @@ from html import escape
 from pathlib import Path
 
 from src.config import PROCESSED_DIR
+from src.html_utils import preview_nav_label
 
 
 def main() -> None:
@@ -216,7 +217,7 @@ def build_html(payload: dict) -> str:
     <nav class="topnav">
       <a href="/">Gündem</a>
       <a href="transfer_tracker_2025_2026.html">Transferler</a>
-      <a href="all_teams_preview_dashboard_2025_2026.html">Maç Önü</a>
+      <a href="all_teams_preview_dashboard_2025_2026.html">{preview_nav_label()}</a>
       <a href="transfer_recommendation_report_2025_2026.html">Scout</a>
       <a class="active" href="football_intelligence_home.html">Analiz</a>
     </nav>

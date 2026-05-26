@@ -31,7 +31,7 @@
 - Olasılıklar: BJK %35, X %25, Rakip %40
 - Büyük maç profili: HIGH (taraf güvenini düşür, kart ve beraberlik senaryosunu öne çıkar)
 - Beraberlik riski: MEDIUM | Kart sinyali: MEDIUM
-- Gol adayları: KEVIN OGHENETEGA TAMARAEBI BAKUMO ABRAHAM, EL BILAL TOURE, CENGİZ ÜNDER, JOAO PEDRO FERREIRA DA SILVA, DAVID JURASEK
+- Gol adayları: KEVIN OGHENETEGA TAMARAEBI BAKUMO ABRAHAM, EL BILAL TOURE, CENGİZ ÜNDER, JOAO PEDRO FERREIRA DA SILVA, EMİRHAN TOPÇU
 
 ### 7.03.2026 - 20:00 | BEŞİKTAŞ A.Ş. - GALATASARAY A.Ş.
 
@@ -47,7 +47,7 @@
 - Olasılıklar: BJK %34, X %26, Rakip %40
 - Büyük maç profili: HIGH (taraf güvenini düşür, kart ve beraberlik senaryosunu öne çıkar)
 - Beraberlik riski: HIGH | Kart sinyali: MEDIUM
-- Gol adayları: ORKUN KÖKÇÜ, HYEONGYU OH, VACLAV CERNY, ISHOLA JUNIOR  OLAITAN, JOAO PEDRO FERREIRA DA SILVA
+- Gol adayları: ORKUN KÖKÇÜ, HYEONGYU OH, VACLAV CERNY, JOAO PEDRO FERREIRA DA SILVA, CENGİZ ÜNDER
 
 ### 9.05.2026 - 20:00 | BEŞİKTAŞ A.Ş. - TRABZONSPOR A.Ş.
 

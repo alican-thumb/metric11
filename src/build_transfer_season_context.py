@@ -24,6 +24,7 @@ FINAL_YEAR_CUTOFF = "2027-12"
 
 WINDOW_OPEN = "1 Haziran 2026"
 WINDOW_CLOSE = "31 Ağustos 2026"
+SEASON_END_DATE = date(2026, 5, 18)
 WINDOW_OPEN_DATE = date(2026, 6, 1)
 WINDOW_CLOSE_DATE = date(2026, 9, 1)
 
@@ -165,7 +166,7 @@ def _summary_bar(free_agents: list, final_year: list, signals: list, promotions:
 
 def _countdown_banner() -> str:
     today = date.today()
-    if today < WINDOW_OPEN_DATE:
+    if SEASON_END_DATE <= today < WINDOW_OPEN_DATE:
         days = (WINDOW_OPEN_DATE - today).days
         label = f"{days} gün" if days > 1 else "Yarın"
         msg = f"<strong style='color:#cde94e'>{label}</strong> içinde açılıyor"
