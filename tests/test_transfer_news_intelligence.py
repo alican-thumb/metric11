@@ -267,6 +267,85 @@ class TransferIntelligenceTests(unittest.TestCase):
         self.assertEqual(row["to_club"], "Fenerbahçe")
         self.assertIsNone(row["from_club"])
 
+    def test_explicit_external_player_transfer_headline_builds_directional_rumor(self):
+        source = {
+            "title": "Eldar Şomurodov Başakşehir'e transfer oldu - Turkmenportal.com",
+            "summary": "",
+            "categories": ["transfer"],
+        }
+
+        rumor = rule_based_analyze(source, {})["transfer_rumors"][0]
+
+        self.assertEqual(rumor["player_name"], "Eldar Şomurodov")
+        self.assertEqual(rumor["to_club"], "Başakşehir")
+        self.assertEqual(rumor["direction_quality"], "HEADLINE_EXPLICIT_DIRECTION")
+
+    def test_anonymous_outbound_headline_does_not_claim_arrival_to_departing_club(self):
+        source = {
+            "article_id": "unnamed-departure",
+            "title": "Galatasaray'da ayrılık! Trendyol 1. Lig ekibine transfer oldu",
+            "summary": "",
+            "source_name": "Haber Kaynağı",
+            "source_type": "rss",
+            "link": "https://example.test/unnamed-departure",
+            "published_at": datetime.now(timezone.utc).isoformat(),
+            "categories": ["transfer"],
+            "super_lig_relevant": True,
+            "analyzed": True,
+        }
+
+        source["claude_analysis"] = rule_based_analyze(source, {})
+        rumor = source["claude_analysis"]["transfer_rumors"][0]
+        claim = build_intelligence([source], {})["transfers"][0]
+
+        self.assertEqual(rumor["from_club"], "Galatasaray")
+        self.assertIsNone(rumor["to_club"])
+        self.assertEqual(claim["from_club"], "Galatasaray")
+        self.assertEqual(claim["verification_status"], "REVIEW_REQUIRED")
+
+    def test_same_publisher_republication_does_not_create_corroboration(self):
+        transfer_a = {
+            "player_name": "Ali Örnek",
+            "from_club": "ALANYASPOR",
+            "to_club": "GALATASARAY A.Ş.",
+            "signal_type": "offer",
+            "confidence": "HIGH",
+        }
+        transfer_b = {**transfer_a, "signal_type": "transfer_fee"}
+
+        result = build_intelligence(
+            [
+                article("rss-copy", "Hürriyet Spor", transfer_a, source_type="rss"),
+                article("google-copy", "Hürriyet", transfer_b, source_type="google_news"),
+            ],
+            {},
+        )
+
+        self.assertEqual(result["transfer_signals"], 1)
+        self.assertEqual(result["transfers"][0]["verification_status"], "RUMOR")
+        self.assertEqual(result["transfers"][0]["source_count"], 1)
+        self.assertEqual(len(result["transfers"][0]["evidence"]), 2)
+
+    def test_anonymous_same_headline_republication_collapses_to_one_claim(self):
+        transfer_a = {
+            "player_name": None,
+            "from_club": None,
+            "to_club": "GALATASARAY A.Ş.",
+            "signal_type": "transfer_fee",
+            "confidence": "LOW",
+        }
+        transfer_b = {**transfer_a, "signal_type": "departure"}
+        rss = article("rss-story", "Hürriyet Spor", transfer_a, source_type="rss")
+        google = article("google-story", "Hürriyet", transfer_b, source_type="google_news")
+        rss["title"] = "Galatasaray'da Can Uzun operasyonu başladı! Milli futbolcunun transferi için dev bütçe ayrıldı"
+        google["title"] = f"{rss['title']} - Hürriyet"
+
+        result = build_intelligence([rss, google], {})
+
+        self.assertEqual(result["transfer_signals"], 1)
+        self.assertEqual(result["transfers"][0]["source_count"], 1)
+        self.assertEqual(len(result["transfers"][0]["evidence"]), 2)
+
 
 if __name__ == "__main__":
     unittest.main()

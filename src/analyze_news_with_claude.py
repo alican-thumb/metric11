@@ -309,16 +309,34 @@ def rule_based_analyze(article: dict, player_index: dict) -> dict:
                         "direction_quality": "TARGET_IDENTIFIED" if to_club else "TARGET_UNRESOLVED",
                     })
             if not transfer_players and candidate_clubs:
-                to_club = candidate_clubs[-1] if len(candidate_clubs) > 1 else candidate_clubs[0]
-                transfer_rumors.append({
-                    "player_name": None,
-                    "from_club": candidate_clubs[0] if len(candidate_clubs) > 1 else None,
-                    "to_club": to_club,
-                    "signal_type": signal_type,
-                    "window": _detect_window(text),
-                    "confidence": "LOW",
-                    "direction_quality": "PLAYER_UNRESOLVED",
-                })
+                direct_player, direct_target = _explicit_direct_transfer_parties(
+                    signal_type, title, title_clubs
+                )
+                if direct_player and direct_target:
+                    transfer_rumors.append({
+                        "player_name": direct_player,
+                        "from_club": None,
+                        "to_club": direct_target,
+                        "signal_type": signal_type,
+                        "window": _detect_window(text),
+                        "confidence": "MEDIUM",
+                        "direction_quality": "HEADLINE_EXPLICIT_DIRECTION",
+                    })
+                else:
+                    only_club = candidate_clubs[0] if len(candidate_clubs) == 1 else None
+                    outbound = bool(only_club and _headline_indicates_outbound(title, only_club))
+                    to_club = None if outbound else candidate_clubs[-1]
+                    transfer_rumors.append({
+                        "player_name": None,
+                        "from_club": only_club if outbound else (
+                            candidate_clubs[0] if len(candidate_clubs) > 1 else None
+                        ),
+                        "to_club": to_club,
+                        "signal_type": signal_type,
+                        "window": _detect_window(text),
+                        "confidence": "LOW",
+                        "direction_quality": "PLAYER_UNRESOLVED",
+                    })
             break
 
     # Sakat sinyalleri
@@ -458,6 +476,45 @@ def _explicit_media_signing_target(signal_type: str, title: str, title_clubs: li
     return title_clubs[0]
 
 
+def _explicit_direct_transfer_parties(
+    signal_type: str, title: str, title_clubs: list[str]
+) -> tuple[str | None, str | None]:
+    if signal_type != "official_transfer" or len(title_clubs) != 1:
+        return None, None
+    target = title_clubs[0]
+    club_pattern = CLUB_PATTERNS[target]
+    match = re.search(
+        rf"^\s*(?P<player>[\wÇĞİÖŞÜçğıöşü.' -]{{4,70}}?)(?:,\s*|\s+)"
+        rf"(?:{club_pattern})['’]?[ae]\s+transfer\s+(?:oldu|edildi|gerçekleşti)",
+        title,
+        re.IGNORECASE,
+    )
+    if not match:
+        return None, None
+    player = " ".join(match.group("player").strip(" ,-").split())
+    if len(player.split()) < 2 or any(_same_club(player, club) for club in CLUB_PATTERNS):
+        return None, None
+    return player, target
+
+
+def _headline_indicates_outbound(title: str, club: str) -> bool:
+    club_pattern = CLUB_PATTERNS.get(club)
+    if not club_pattern:
+        return False
+    return bool(
+        re.search(
+            rf"(?:{club_pattern})['’]?(?:dan|den|tan|ten)\b[^.!?]*\btransfer\b",
+            title,
+            re.IGNORECASE,
+        )
+        or re.search(
+            rf"(?:{club_pattern})['’]?(?:da|de|ta|te)\s+ayrılık",
+            title,
+            re.IGNORECASE,
+        )
+    )
+
+
 def _claude_enhance(client, article: dict) -> dict | None:
     """Claude API ile kural tabanlı analizi zenginleştirir."""
     SYSTEM = "Sen Türk futbol analistsin. Haber özetini JSON olarak çıkar. Sadece JSON döndür."
@@ -589,7 +646,7 @@ def build_intelligence(articles: list[dict], player_index: dict) -> dict:
         }
 
         for tr in ca.get("transfer_rumors", []):
-            if tr.get("player_name") or tr.get("to_club"):
+            if tr.get("player_name") or tr.get("from_club") or tr.get("to_club"):
                 transfer_mentions.append({**tr, **meta})
         for inj in ca.get("injuries", []):
             injuries.append({**inj, **meta})
@@ -680,12 +737,16 @@ def _aggregate_transfer_mentions(mentions: list[dict]) -> list[dict]:
         if _same_club(normalized.get("from_club"), normalized.get("to_club")):
             normalized["to_club"] = None
             normalized["direction_quality"] = "TARGET_MATCHES_CURRENT_CLUB"
-        player_key = normalize_name(normalized.get("player_name")) or f"ARTICLE:{normalized.get('article_id')}"
+        player_key = normalize_name(normalized.get("player_name")) or "PLAYER_UNRESOLVED"
+        if normalized.get("player_name") and normalized.get("to_club"):
+            event_key = "DIRECTIONAL_EVENT"
+        else:
+            event_key = f"STORY:{_headline_key(normalized.get('title')) or normalized.get('article_id')}"
         key = (
             player_key,
             _club_key(normalized.get("from_club")),
             _club_key(normalized.get("to_club")),
-            normalized.get("signal_type") or "unknown",
+            event_key,
         )
         grouped.setdefault(key, []).append(normalized)
 
@@ -700,9 +761,8 @@ def _build_transfer_claim(rows: list[dict]) -> dict:
     rows = sorted(rows, key=lambda row: row.get("published_at") or "", reverse=True)
     head = dict(rows[0])
     distinct_sources = list(dict.fromkeys(row.get("source", "?") for row in rows))
-    trusted_sources = {
-        row.get("source", "?") for row in rows if row.get("source_tier") in {"MEDIA", "AGENCY"}
-    }
+    trusted_sources = {_source_identity(row) for row in rows if row.get("source_tier") in {"MEDIA", "AGENCY"}}
+    independent_sources = {_source_identity(row) for row in rows}
     evidence = [
         {
             "source": row.get("source"),
@@ -748,13 +808,36 @@ def _build_transfer_claim(rows: list[dict]) -> dict:
             "confidence": status_confidence[status],
             "verification_status": status,
             "interpretation": interpretation,
-            "source_count": len(distinct_sources),
+            "source_count": len(independent_sources),
             "sources": distinct_sources,
             "evidence": evidence,
             "model_use": status == "OFFICIAL",
         }
     )
     return head
+
+
+def _headline_key(title: str | None) -> str:
+    if not title:
+        return ""
+    without_publisher = re.sub(r"\s+-\s+[^-]{2,40}$", "", title.strip())
+    return normalize_name(without_publisher)
+
+
+def _publisher_key(source: str) -> str:
+    key = normalize_name(source)
+    for suffix in (" SPOR", " COM TR", " COM"):
+        if key.endswith(suffix):
+            key = key[:-len(suffix)].strip()
+    return key
+
+
+def _source_identity(row: dict) -> str:
+    source = row.get("source", "?")
+    tier = row.get("source_tier", "MEDIA")
+    if tier in {"MEDIA", "AGENCY"}:
+        return f"{tier}:{_publisher_key(source)}"
+    return f"{tier}:{normalize_name(source)}"
 
 
 def _status_counts(transfers: list[dict]) -> dict[str, int]:

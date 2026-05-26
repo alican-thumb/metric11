@@ -279,6 +279,44 @@ class SourcePerformanceReportTests(unittest.TestCase):
         self.assertEqual(reporter["observations"], 1)
         self.assertEqual(reporter["scoreable_claims"], 1)
 
+    def test_same_media_publisher_channels_are_one_performance_observation(self):
+        intel = {
+            "generated_at": "2026-05-25T12:00:00+00:00",
+            "transfer_signals": 1,
+            "transfers": [
+                claim(
+                    "Ali Örnek",
+                    "Galatasaray",
+                    "RUMOR",
+                    [
+                        evidence(
+                            "Hürriyet Spor",
+                            "MEDIA",
+                            "2026-05-10T07:00:00+00:00",
+                            "rss",
+                            title="Galatasaray Ali Örnek transferi için teklifte bulundu",
+                            link="https://example.test/rss-copy",
+                        ),
+                        evidence(
+                            "Hürriyet",
+                            "MEDIA",
+                            "2026-05-10T07:00:00+00:00",
+                            "google_news",
+                            title="Galatasaray Ali Örnek transferi için teklifte bulundu - Hürriyet",
+                            link="https://example.test/google-copy",
+                        ),
+                    ],
+                )
+            ],
+        }
+
+        result = build_report(intel, now=datetime(2026, 5, 25, tzinfo=timezone.utc))
+        rows = {item["source"]: item for item in result["sources"]}
+
+        self.assertNotIn("Hürriyet Spor", rows)
+        self.assertEqual(rows["Hürriyet"]["observations"], 1)
+        self.assertEqual(rows["Hürriyet"]["scoreable_claims"], 1)
+
 
 if __name__ == "__main__":
     unittest.main()

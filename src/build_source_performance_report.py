@@ -32,6 +32,12 @@ REPORTER_ATTRIBUTION_PATTERNS = {
     "Yusuf Günaydın": (r"\bYUSUF G[ÜU]NAYDIN\b",),
     "Ekrem Konur": (r"\bEKREM KONUR\b",),
 }
+MEDIA_SOURCE_ALIASES = {
+    "Hürriyet Spor": "Hürriyet",
+    "Milliyet Spor": "Milliyet",
+    "Sabah Spor": "Sabah",
+    "Takvim Spor": "Takvim",
+}
 
 
 def main() -> None:
@@ -156,15 +162,16 @@ def build_report(
     official_with_time = sum(1 for event in official_events.values() if event["published_at"])
     official_with_first_seen = sum(1 for event in official_events.values() if event["first_observed_at"])
 
-    observations = {
-        _observation_id(row): row for row in history.get("observations", []) if row.get("source")
-    }
+    observations: dict[str, dict] = {}
+    for row in history.get("observations", []):
+        if row.get("source"):
+            _retain_observation(observations, _canonicalize_observation(row), reference_time)
     for claim in transfer_claims:
         key = _event_key(claim)
         for evidence in claim.get("evidence", []):
             if evidence.get("source_tier") == "OFFICIAL":
                 continue
-            observation = {
+            observation = _canonicalize_observation({
                 "source": evidence.get("source") or "Bilinmeyen kaynak",
                 "source_tier": evidence.get("source_tier", "MEDIA"),
                 "source_type": evidence.get("source_type"),
@@ -175,7 +182,7 @@ def build_report(
                 "first_observed_at": evidence.get("first_observed_at"),
                 "title": evidence.get("title"),
                 "link": evidence.get("link"),
-            }
+            })
             _retain_observation(observations, observation, reference_time)
             attributed_reporter = _attributed_reporter(evidence.get("title"))
             if attributed_reporter:
@@ -359,13 +366,28 @@ def _earliest(existing: datetime | None, incoming: datetime) -> datetime:
 
 def _retain_observation(observations: dict[str, dict], observation: dict, reference_time: datetime) -> None:
     observation_id = _observation_id(observation)
+    previous_id = observation_id
     previous = observations.get(observation_id)
+    unresolved_id = _unresolved_observation_id(observation)
+    if not previous and observation.get("event_key"):
+        previous_id = unresolved_id
+        previous = observations.get(unresolved_id)
     earlier = (_timestamp(observation.get("published_at")) or reference_time) < (
         _timestamp((previous or {}).get("published_at")) or reference_time
     )
     more_resolved = previous and not previous.get("event_key") and observation.get("event_key")
     if not previous or earlier or more_resolved:
+        if previous_id != observation_id:
+            observations.pop(previous_id, None)
         observations[observation_id] = observation
+
+
+def _canonicalize_observation(observation: dict) -> dict:
+    if observation.get("source_tier") != "MEDIA":
+        return observation
+    source = observation.get("source")
+    canonical = MEDIA_SOURCE_ALIASES.get(source, source)
+    return {**observation, "source": canonical}
 
 
 def _attributed_reporter(title: str | None) -> str | None:
@@ -377,9 +399,16 @@ def _attributed_reporter(title: str | None) -> str | None:
 
 
 def _observation_id(row: dict) -> str:
+    if row.get("event_key"):
+        return "|".join(str(value or "") for value in (row.get("source"), row.get("event_key")))
+    return _unresolved_observation_id(row)
+
+
+def _unresolved_observation_id(row: dict) -> str:
+    headline = re.sub(r"\s+-\s+[^-]{2,40}$", "", row.get("title") or "")
     return "|".join(
         str(value or "")
-        for value in (row.get("source"), row.get("player_name"), row.get("link"), row.get("title"))
+        for value in (row.get("source"), row.get("player_name"), normalize_name(headline))
     )
 
 

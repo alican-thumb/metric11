@@ -1141,6 +1141,15 @@ python -m src.simulate_player_match_impact --preview data/processed/previews_bes
 6. Tüm takımlar için maç önü raporları.
 7. Football Manager tarzı scout/transfer öneri ekranı. ✓ (build_transfer_recommendation_report.py — 2026-05-24)
 
+## 2026-05-26 Codex - Canlı Transfer İddiası Tekilleştirme
+
+- `src/analyze_news_with_claude.py` içinde güncel transfer iddiaları olay düzeyinde gruplanır: aynı oyuncu-hedef yönü farklı sinyal türleriyle tekrar sayılmaz; başlığı aynı RSS/Google yayın tekrarları tek iddiada kanıt olarak tutulur.
+- Aynı yayıncının `Hürriyet Spor` / `Hürriyet` gibi kanal adları bağımsız teyit sayısını şişirmez; ayrı yayıncı teyidi olmadan söylenti `CORROBORATED` seviyesine yükselmez.
+- `src/build_source_performance_report.py` aynı kanonik yayıncı kimliğini tarihçe ve skorlamada da kullanır; aynı olayın RSS/Google tekrarları erken-haber performans gözlemini çift saymaz.
+- Açık yön taşıyan dış oyuncu başlığı (`Eldar Şomurodov Başakşehir'e transfer oldu`) oyuncu veritabanında yer almasa da yönlü `RUMOR` olarak çözümlenir. `Galatasaray'da ayrılık` benzeri anonim gidiş başlıkları geliş transferi gibi yazılmaz, `REVIEW_REQUIRED` olarak korunur.
+- Güncel snapshot sonucu: `32` ham transfer mention'ından `23` tekil canlı iddia; `2` yönlü söylenti ve `21` inceleme kaydı. Önceki güncellik filtresinin bastırdığı `6` eski/tarihsiz mention tarihsel alanda kalmaya devam eder.
+- Doğrulama: `.venv/bin/python -m unittest discover -s tests`, `.venv/bin/python -m compileall -q src tests` ve `git diff --check` başarılı (`53/53` test).
+
 ## 2026-05-26 Oyuncu-Haber Eşleştirme ve Formasyonel Uyum (Session 4)
 
 ### Oyuncu-Haber Eşleştirme (build_live_feed.py)
