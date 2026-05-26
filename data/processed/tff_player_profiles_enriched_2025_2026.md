@@ -5,9 +5,11 @@
 - Kulüp içi canonical eşleşme: 317
 - Kulüp içi profil tam-ad eşleşme: 155
 - Kulüp içi token eşleşme: 26
+- Manuel eşleme (ağ teyidi bekleyen): 13
 - Eşleşmedi: 180
-- Tüm profil kapsamı: %72.1
-- Lig snapshot içi kapsama: %79.6
+- Doğrulanmış tüm profil kapsamı: %72.1
+- Doğrulanmış lig snapshot içi kapsama: %79.6
+- Manuel eşleme dahil kullanılabilir lig snapshot içi kapsama: %81.6
 
 ## En Yüksek Piyasa Değeri (Eşleşen Oyuncular)
 

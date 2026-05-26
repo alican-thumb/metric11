@@ -5,20 +5,26 @@
     "tm_players": 512,
     "snapshot_in_scope_tff_profiles": 626,
     "matched_profiles": 498,
-    "unmatched_profiles": 193,
+    "verified_matched_profiles": 498,
+    "manual_alias_mapped_profiles": 13,
+    "manual_alias_pending_network_verification": 13,
+    "operationally_mapped_profiles": 511,
+    "operational_in_scope_mapped_profiles": 511,
+    "unmatched_profiles": 180,
     "overall_match_rate": 0.721,
     "in_scope_match_rate": 0.796,
+    "operational_mapping_rate": 0.74,
+    "operational_in_scope_mapping_rate": 0.816,
     "scout_blocking_unmatched": 0,
     "category_counts": {
-      "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 128,
+      "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 115,
       "OUT_OF_SNAPSHOT_CLUB": 65
     },
     "review_tier_counts": {
-      "HIGH_USAGE_UNRESOLVED": 13,
       "ROTATION_USAGE_UNRESOLVED": 115,
       "OUT_OF_SNAPSHOT": 65
     },
-    "rule": "Adaylar yalnız inceleme içindir; manuel alias onayı olmadan enrichment alanına yazılmaz."
+    "rule": "Doğrulanmış kapsama yalnız snapshot eşleşmesi girer; manuel alias kullanımı ayrı izlenir ve ağ teyidi tamamlanana kadar doğrulanmış sayılmaz."
   },
   "team_coverage": [
     {
@@ -26,10 +32,12 @@
       "tff_profiles": 41,
       "tm_players": 28,
       "matched_profiles": 30,
-      "unmatched_profiles": 11,
+      "manual_alias_mapped_profiles": 2,
+      "unmatched_profiles": 9,
       "match_rate": 0.732,
+      "operational_mapping_rate": 0.78,
       "categories": {
-        "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 11
+        "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 9
       }
     },
     {
@@ -37,10 +45,12 @@
       "tff_profiles": 33,
       "tm_players": 26,
       "matched_profiles": 26,
-      "unmatched_profiles": 7,
+      "manual_alias_mapped_profiles": 1,
+      "unmatched_profiles": 6,
       "match_rate": 0.788,
+      "operational_mapping_rate": 0.818,
       "categories": {
-        "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 7
+        "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 6
       }
     },
     {
@@ -48,10 +58,12 @@
       "tff_profiles": 38,
       "tm_players": 28,
       "matched_profiles": 26,
-      "unmatched_profiles": 12,
+      "manual_alias_mapped_profiles": 2,
+      "unmatched_profiles": 10,
       "match_rate": 0.684,
+      "operational_mapping_rate": 0.737,
       "categories": {
-        "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 12
+        "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 10
       }
     },
     {
@@ -59,8 +71,10 @@
       "tff_profiles": 39,
       "tm_players": 29,
       "matched_profiles": 28,
+      "manual_alias_mapped_profiles": 0,
       "unmatched_profiles": 11,
       "match_rate": 0.718,
+      "operational_mapping_rate": 0.718,
       "categories": {
         "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 11
       }
@@ -70,8 +84,10 @@
       "tff_profiles": 33,
       "tm_players": 26,
       "matched_profiles": 25,
+      "manual_alias_mapped_profiles": 0,
       "unmatched_profiles": 8,
       "match_rate": 0.758,
+      "operational_mapping_rate": 0.758,
       "categories": {
         "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 8
       }
@@ -81,8 +97,10 @@
       "tff_profiles": 34,
       "tm_players": 33,
       "matched_profiles": 29,
+      "manual_alias_mapped_profiles": 0,
       "unmatched_profiles": 5,
       "match_rate": 0.853,
+      "operational_mapping_rate": 0.853,
       "categories": {
         "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 5
       }
@@ -92,10 +110,12 @@
       "tff_profiles": 30,
       "tm_players": 27,
       "matched_profiles": 24,
-      "unmatched_profiles": 6,
+      "manual_alias_mapped_profiles": 1,
+      "unmatched_profiles": 5,
       "match_rate": 0.8,
+      "operational_mapping_rate": 0.833,
       "categories": {
-        "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 6
+        "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 5
       }
     },
     {
@@ -103,8 +123,10 @@
       "tff_profiles": 29,
       "tm_players": 28,
       "matched_profiles": 28,
+      "manual_alias_mapped_profiles": 0,
       "unmatched_profiles": 1,
       "match_rate": 0.966,
+      "operational_mapping_rate": 0.966,
       "categories": {
         "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 1
       }
@@ -114,10 +136,12 @@
       "tff_profiles": 35,
       "tm_players": 31,
       "matched_profiles": 31,
-      "unmatched_profiles": 4,
+      "manual_alias_mapped_profiles": 1,
+      "unmatched_profiles": 3,
       "match_rate": 0.886,
+      "operational_mapping_rate": 0.914,
       "categories": {
-        "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 4
+        "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 3
       }
     },
     {
@@ -125,8 +149,10 @@
       "tff_profiles": 29,
       "tm_players": 25,
       "matched_profiles": 25,
+      "manual_alias_mapped_profiles": 0,
       "unmatched_profiles": 4,
       "match_rate": 0.862,
+      "operational_mapping_rate": 0.862,
       "categories": {
         "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 4
       }
@@ -136,10 +162,12 @@
       "tff_profiles": 38,
       "tm_players": 30,
       "matched_profiles": 30,
-      "unmatched_profiles": 8,
+      "manual_alias_mapped_profiles": 2,
+      "unmatched_profiles": 6,
       "match_rate": 0.789,
+      "operational_mapping_rate": 0.842,
       "categories": {
-        "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 8
+        "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 6
       }
     },
     {
@@ -147,8 +175,10 @@
       "tff_profiles": 28,
       "tm_players": 28,
       "matched_profiles": 28,
+      "manual_alias_mapped_profiles": 0,
       "unmatched_profiles": 0,
       "match_rate": 1.0,
+      "operational_mapping_rate": 1.0,
       "categories": {}
     },
     {
@@ -156,8 +186,10 @@
       "tff_profiles": 34,
       "tm_players": 34,
       "matched_profiles": 30,
+      "manual_alias_mapped_profiles": 0,
       "unmatched_profiles": 4,
       "match_rate": 0.882,
+      "operational_mapping_rate": 0.882,
       "categories": {
         "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 4
       }
@@ -167,10 +199,12 @@
       "tff_profiles": 35,
       "tm_players": 27,
       "matched_profiles": 26,
-      "unmatched_profiles": 9,
+      "manual_alias_mapped_profiles": 1,
+      "unmatched_profiles": 8,
       "match_rate": 0.743,
+      "operational_mapping_rate": 0.771,
       "categories": {
-        "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 9
+        "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 8
       }
     },
     {
@@ -178,10 +212,12 @@
       "tff_profiles": 43,
       "tm_players": 30,
       "matched_profiles": 30,
-      "unmatched_profiles": 13,
+      "manual_alias_mapped_profiles": 1,
+      "unmatched_profiles": 12,
       "match_rate": 0.698,
+      "operational_mapping_rate": 0.721,
       "categories": {
-        "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 13
+        "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 12
       }
     },
     {
@@ -189,10 +225,12 @@
       "tff_profiles": 39,
       "tm_players": 30,
       "matched_profiles": 30,
-      "unmatched_profiles": 9,
+      "manual_alias_mapped_profiles": 1,
+      "unmatched_profiles": 8,
       "match_rate": 0.769,
+      "operational_mapping_rate": 0.795,
       "categories": {
-        "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 9
+        "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 8
       }
     },
     {
@@ -200,10 +238,12 @@
       "tff_profiles": 32,
       "tm_players": 25,
       "matched_profiles": 25,
-      "unmatched_profiles": 7,
+      "manual_alias_mapped_profiles": 1,
+      "unmatched_profiles": 6,
       "match_rate": 0.781,
+      "operational_mapping_rate": 0.812,
       "categories": {
-        "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 7
+        "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 6
       }
     },
     {
@@ -211,222 +251,16 @@
       "tff_profiles": 36,
       "tm_players": 27,
       "matched_profiles": 27,
+      "manual_alias_mapped_profiles": 0,
       "unmatched_profiles": 9,
       "match_rate": 0.75,
+      "operational_mapping_rate": 0.75,
       "categories": {
         "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 9
       }
     }
   ],
   "priority_queue": [
-    {
-      "player_id": "2292664",
-      "tff_name": "JURE BALKOVEC",
-      "tff_club": "MISIRLI.COM.TR FATİH KARAGÜMRÜK",
-      "category": "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT",
-      "priority_rank": 4,
-      "blocks_scout_review": false,
-      "review_tier": "HIGH_USAGE_UNRESOLVED",
-      "season_activity": {
-        "starts": 17,
-        "squad_inclusions": 17,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir."
-    },
-    {
-      "player_id": "2820578",
-      "tff_name": "KEVIN OGHENETEGA TAMARAEBI BAKUMO ABRAHAM",
-      "tff_club": "BEŞİKTAŞ A.Ş.",
-      "category": "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT",
-      "priority_rank": 4,
-      "blocks_scout_review": false,
-      "review_tier": "HIGH_USAGE_UNRESOLVED",
-      "season_activity": {
-        "starts": 15,
-        "squad_inclusions": 18,
-        "goals": 7
-      },
-      "candidate": null,
-      "action": "Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir."
-    },
-    {
-      "player_id": "2293316",
-      "tff_name": "ATTILA ARPAD SZALAI",
-      "tff_club": "KASIMPAŞA A.Ş.",
-      "category": "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT",
-      "priority_rank": 4,
-      "blocks_scout_review": false,
-      "review_tier": "HIGH_USAGE_UNRESOLVED",
-      "season_activity": {
-        "starts": 14,
-        "squad_inclusions": 17,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir."
-    },
-    {
-      "player_id": "2820881",
-      "tff_name": "AARON OPOKU TIAWIAH",
-      "tff_club": "ZECORNER KAYSERİSPOR",
-      "category": "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT",
-      "priority_rank": 4,
-      "blocks_scout_review": false,
-      "review_tier": "HIGH_USAGE_UNRESOLVED",
-      "season_activity": {
-        "starts": 14,
-        "squad_inclusions": 19,
-        "goals": 1
-      },
-      "candidate": null,
-      "action": "Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir."
-    },
-    {
-      "player_id": "2560856",
-      "tff_name": "DENIS MIHAI DRAGUS",
-      "tff_club": "TRABZONSPOR A.Ş.",
-      "category": "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT",
-      "priority_rank": 4,
-      "blocks_scout_review": false,
-      "review_tier": "HIGH_USAGE_UNRESOLVED",
-      "season_activity": {
-        "starts": 13,
-        "squad_inclusions": 24,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir."
-    },
-    {
-      "player_id": "2820764",
-      "tff_name": "RHALDNEY NORBERTO SIMIAO GOMES",
-      "tff_club": "GÖZTEPE A.Ş.",
-      "category": "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT",
-      "priority_rank": 4,
-      "blocks_scout_review": false,
-      "review_tier": "HIGH_USAGE_UNRESOLVED",
-      "season_activity": {
-        "starts": 12,
-        "squad_inclusions": 19,
-        "goals": 1
-      },
-      "candidate": null,
-      "action": "Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir."
-    },
-    {
-      "player_id": "2688447",
-      "tff_name": "UCHENNA OGUNDU",
-      "tff_club": "CORENDON ALANYASPOR",
-      "category": "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT",
-      "priority_rank": 4,
-      "blocks_scout_review": false,
-      "review_tier": "HIGH_USAGE_UNRESOLVED",
-      "season_activity": {
-        "starts": 11,
-        "squad_inclusions": 18,
-        "goals": 2
-      },
-      "candidate": null,
-      "action": "Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir."
-    },
-    {
-      "player_id": "2685585",
-      "tff_name": "YOUSSEF EN NESYRI",
-      "tff_club": "FENERBAHÇE A.Ş.",
-      "category": "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT",
-      "priority_rank": 4,
-      "blocks_scout_review": false,
-      "review_tier": "HIGH_USAGE_UNRESOLVED",
-      "season_activity": {
-        "starts": 11,
-        "squad_inclusions": 17,
-        "goals": 7
-      },
-      "candidate": null,
-      "action": "Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir."
-    },
-    {
-      "player_id": "2268876",
-      "tff_name": "ALASSANE NDAO",
-      "tff_club": "TÜMOSAN KONYASPOR",
-      "category": "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT",
-      "priority_rank": 4,
-      "blocks_scout_review": false,
-      "review_tier": "HIGH_USAGE_UNRESOLVED",
-      "season_activity": {
-        "starts": 11,
-        "squad_inclusions": 12,
-        "goals": 2
-      },
-      "candidate": null,
-      "action": "Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir."
-    },
-    {
-      "player_id": "2828311",
-      "tff_name": "JESURUN  RAK-SAKYI",
-      "tff_club": "ÇAYKUR RİZESPOR A.Ş.",
-      "category": "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT",
-      "priority_rank": 4,
-      "blocks_scout_review": false,
-      "review_tier": "HIGH_USAGE_UNRESOLVED",
-      "season_activity": {
-        "starts": 11,
-        "squad_inclusions": 12,
-        "goals": 4
-      },
-      "candidate": null,
-      "action": "Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir."
-    },
-    {
-      "player_id": "2685268",
-      "tff_name": "GABRIEL ARMANDO DE ABREU",
-      "tff_club": "BEŞİKTAŞ A.Ş.",
-      "category": "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT",
-      "priority_rank": 4,
-      "blocks_scout_review": false,
-      "review_tier": "HIGH_USAGE_UNRESOLVED",
-      "season_activity": {
-        "starts": 10,
-        "squad_inclusions": 16,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir."
-    },
-    {
-      "player_id": "2698093",
-      "tff_name": "DATRO DAVID FOFANA",
-      "tff_club": "MISIRLI.COM.TR FATİH KARAGÜMRÜK",
-      "category": "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT",
-      "priority_rank": 4,
-      "blocks_scout_review": false,
-      "review_tier": "HIGH_USAGE_UNRESOLVED",
-      "season_activity": {
-        "starts": 10,
-        "squad_inclusions": 13,
-        "goals": 6
-      },
-      "candidate": null,
-      "action": "Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir."
-    },
-    {
-      "player_id": "2820652",
-      "tff_name": "JHON JADER DURAN PALACIOS",
-      "tff_club": "FENERBAHÇE A.Ş.",
-      "category": "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT",
-      "priority_rank": 4,
-      "blocks_scout_review": false,
-      "review_tier": "HIGH_USAGE_UNRESOLVED",
-      "season_activity": {
-        "starts": 6,
-        "squad_inclusions": 12,
-        "goals": 3
-      },
-      "candidate": null,
-      "action": "Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir."
-    },
     {
       "player_id": "2820579",
       "tff_name": "DAVID JURASEK",
@@ -3374,6 +3208,281 @@
       },
       "candidate": null,
       "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
+    }
+  ],
+  "manual_verification_queue": [
+    {
+      "player_id": "2292664",
+      "tff_name": "JURE BALKOVEC",
+      "tff_club": "MISIRLI.COM.TR FATİH KARAGÜMRÜK",
+      "category": "MANUAL_ALIAS_PENDING_NETWORK_VERIFY",
+      "priority_rank": 1,
+      "blocks_scout_review": false,
+      "review_tier": "MANUAL_VERIFY_HIGH_USAGE",
+      "season_activity": {
+        "starts": 17,
+        "squad_inclusions": 17,
+        "goals": 0
+      },
+      "candidate": {
+        "tm_name": "Jure Balkovec",
+        "tm_team_name": "MISIRLI.COM.TR FATİH KARAGÜMRÜK",
+        "score": 1.0,
+        "common_tokens": []
+      },
+      "action": "Manuel eşleme operasyonda kullanılıyor; Transfermarkt profil bağlantısı ile ağ teyidi bekleniyor."
+    },
+    {
+      "player_id": "2820578",
+      "tff_name": "KEVIN OGHENETEGA TAMARAEBI BAKUMO ABRAHAM",
+      "tff_club": "BEŞİKTAŞ A.Ş.",
+      "category": "MANUAL_ALIAS_PENDING_NETWORK_VERIFY",
+      "priority_rank": 1,
+      "blocks_scout_review": false,
+      "review_tier": "MANUAL_VERIFY_HIGH_USAGE",
+      "season_activity": {
+        "starts": 15,
+        "squad_inclusions": 18,
+        "goals": 7
+      },
+      "candidate": {
+        "tm_name": "Kevin",
+        "tm_team_name": "BEŞİKTAŞ A.Ş.",
+        "score": 1.0,
+        "common_tokens": []
+      },
+      "action": "Manuel eşleme operasyonda kullanılıyor; Transfermarkt profil bağlantısı ile ağ teyidi bekleniyor."
+    },
+    {
+      "player_id": "2293316",
+      "tff_name": "ATTILA ARPAD SZALAI",
+      "tff_club": "KASIMPAŞA A.Ş.",
+      "category": "MANUAL_ALIAS_PENDING_NETWORK_VERIFY",
+      "priority_rank": 1,
+      "blocks_scout_review": false,
+      "review_tier": "MANUAL_VERIFY_HIGH_USAGE",
+      "season_activity": {
+        "starts": 14,
+        "squad_inclusions": 17,
+        "goals": 0
+      },
+      "candidate": {
+        "tm_name": "Attila Szalai",
+        "tm_team_name": "KASIMPAŞA A.Ş.",
+        "score": 1.0,
+        "common_tokens": []
+      },
+      "action": "Manuel eşleme operasyonda kullanılıyor; Transfermarkt profil bağlantısı ile ağ teyidi bekleniyor."
+    },
+    {
+      "player_id": "2820881",
+      "tff_name": "AARON OPOKU TIAWIAH",
+      "tff_club": "ZECORNER KAYSERİSPOR",
+      "category": "MANUAL_ALIAS_PENDING_NETWORK_VERIFY",
+      "priority_rank": 1,
+      "blocks_scout_review": false,
+      "review_tier": "MANUAL_VERIFY_HIGH_USAGE",
+      "season_activity": {
+        "starts": 14,
+        "squad_inclusions": 19,
+        "goals": 1
+      },
+      "candidate": {
+        "tm_name": "Aaron Opoku",
+        "tm_team_name": "ZECORNER KAYSERİSPOR",
+        "score": 1.0,
+        "common_tokens": []
+      },
+      "action": "Manuel eşleme operasyonda kullanılıyor; Transfermarkt profil bağlantısı ile ağ teyidi bekleniyor."
+    },
+    {
+      "player_id": "2560856",
+      "tff_name": "DENIS MIHAI DRAGUS",
+      "tff_club": "TRABZONSPOR A.Ş.",
+      "category": "MANUAL_ALIAS_PENDING_NETWORK_VERIFY",
+      "priority_rank": 1,
+      "blocks_scout_review": false,
+      "review_tier": "MANUAL_VERIFY_HIGH_USAGE",
+      "season_activity": {
+        "starts": 13,
+        "squad_inclusions": 24,
+        "goals": 0
+      },
+      "candidate": {
+        "tm_name": "Denis Drăguș",
+        "tm_team_name": "TRABZONSPOR A.Ş.",
+        "score": 1.0,
+        "common_tokens": []
+      },
+      "action": "Manuel eşleme operasyonda kullanılıyor; Transfermarkt profil bağlantısı ile ağ teyidi bekleniyor."
+    },
+    {
+      "player_id": "2820764",
+      "tff_name": "RHALDNEY NORBERTO SIMIAO GOMES",
+      "tff_club": "GÖZTEPE A.Ş.",
+      "category": "MANUAL_ALIAS_PENDING_NETWORK_VERIFY",
+      "priority_rank": 1,
+      "blocks_scout_review": false,
+      "review_tier": "MANUAL_VERIFY_HIGH_USAGE",
+      "season_activity": {
+        "starts": 12,
+        "squad_inclusions": 19,
+        "goals": 1
+      },
+      "candidate": {
+        "tm_name": "Rhaldney",
+        "tm_team_name": "GÖZTEPE A.Ş.",
+        "score": 1.0,
+        "common_tokens": []
+      },
+      "action": "Manuel eşleme operasyonda kullanılıyor; Transfermarkt profil bağlantısı ile ağ teyidi bekleniyor."
+    },
+    {
+      "player_id": "2688447",
+      "tff_name": "UCHENNA OGUNDU",
+      "tff_club": "CORENDON ALANYASPOR",
+      "category": "MANUAL_ALIAS_PENDING_NETWORK_VERIFY",
+      "priority_rank": 1,
+      "blocks_scout_review": false,
+      "review_tier": "MANUAL_VERIFY_HIGH_USAGE",
+      "season_activity": {
+        "starts": 11,
+        "squad_inclusions": 18,
+        "goals": 2
+      },
+      "candidate": {
+        "tm_name": "Uchenna Ogundu",
+        "tm_team_name": "CORENDON ALANYASPOR",
+        "score": 1.0,
+        "common_tokens": []
+      },
+      "action": "Manuel eşleme operasyonda kullanılıyor; Transfermarkt profil bağlantısı ile ağ teyidi bekleniyor."
+    },
+    {
+      "player_id": "2685585",
+      "tff_name": "YOUSSEF EN NESYRI",
+      "tff_club": "FENERBAHÇE A.Ş.",
+      "category": "MANUAL_ALIAS_PENDING_NETWORK_VERIFY",
+      "priority_rank": 1,
+      "blocks_scout_review": false,
+      "review_tier": "MANUAL_VERIFY_HIGH_USAGE",
+      "season_activity": {
+        "starts": 11,
+        "squad_inclusions": 17,
+        "goals": 7
+      },
+      "candidate": {
+        "tm_name": "Youssef En-Nesyri",
+        "tm_team_name": "FENERBAHÇE A.Ş.",
+        "score": 1.0,
+        "common_tokens": []
+      },
+      "action": "Manuel eşleme operasyonda kullanılıyor; Transfermarkt profil bağlantısı ile ağ teyidi bekleniyor."
+    },
+    {
+      "player_id": "2268876",
+      "tff_name": "ALASSANE NDAO",
+      "tff_club": "TÜMOSAN KONYASPOR",
+      "category": "MANUAL_ALIAS_PENDING_NETWORK_VERIFY",
+      "priority_rank": 1,
+      "blocks_scout_review": false,
+      "review_tier": "MANUAL_VERIFY_HIGH_USAGE",
+      "season_activity": {
+        "starts": 11,
+        "squad_inclusions": 12,
+        "goals": 2
+      },
+      "candidate": {
+        "tm_name": "Alassane Ndao",
+        "tm_team_name": "TÜMOSAN KONYASPOR",
+        "score": 1.0,
+        "common_tokens": []
+      },
+      "action": "Manuel eşleme operasyonda kullanılıyor; Transfermarkt profil bağlantısı ile ağ teyidi bekleniyor."
+    },
+    {
+      "player_id": "2828311",
+      "tff_name": "JESURUN  RAK-SAKYI",
+      "tff_club": "ÇAYKUR RİZESPOR A.Ş.",
+      "category": "MANUAL_ALIAS_PENDING_NETWORK_VERIFY",
+      "priority_rank": 1,
+      "blocks_scout_review": false,
+      "review_tier": "MANUAL_VERIFY_HIGH_USAGE",
+      "season_activity": {
+        "starts": 11,
+        "squad_inclusions": 12,
+        "goals": 4
+      },
+      "candidate": {
+        "tm_name": "Jesurun Rak-Sakyi",
+        "tm_team_name": "ÇAYKUR RİZESPOR A.Ş.",
+        "score": 1.0,
+        "common_tokens": []
+      },
+      "action": "Manuel eşleme operasyonda kullanılıyor; Transfermarkt profil bağlantısı ile ağ teyidi bekleniyor."
+    },
+    {
+      "player_id": "2685268",
+      "tff_name": "GABRIEL ARMANDO DE ABREU",
+      "tff_club": "BEŞİKTAŞ A.Ş.",
+      "category": "MANUAL_ALIAS_PENDING_NETWORK_VERIFY",
+      "priority_rank": 1,
+      "blocks_scout_review": false,
+      "review_tier": "MANUAL_VERIFY_HIGH_USAGE",
+      "season_activity": {
+        "starts": 10,
+        "squad_inclusions": 16,
+        "goals": 0
+      },
+      "candidate": {
+        "tm_name": "Gabriel",
+        "tm_team_name": "BEŞİKTAŞ A.Ş.",
+        "score": 1.0,
+        "common_tokens": []
+      },
+      "action": "Manuel eşleme operasyonda kullanılıyor; Transfermarkt profil bağlantısı ile ağ teyidi bekleniyor."
+    },
+    {
+      "player_id": "2698093",
+      "tff_name": "DATRO DAVID FOFANA",
+      "tff_club": "MISIRLI.COM.TR FATİH KARAGÜMRÜK",
+      "category": "MANUAL_ALIAS_PENDING_NETWORK_VERIFY",
+      "priority_rank": 1,
+      "blocks_scout_review": false,
+      "review_tier": "MANUAL_VERIFY_HIGH_USAGE",
+      "season_activity": {
+        "starts": 10,
+        "squad_inclusions": 13,
+        "goals": 6
+      },
+      "candidate": {
+        "tm_name": "Datro Fofana",
+        "tm_team_name": "MISIRLI.COM.TR FATİH KARAGÜMRÜK",
+        "score": 1.0,
+        "common_tokens": []
+      },
+      "action": "Manuel eşleme operasyonda kullanılıyor; Transfermarkt profil bağlantısı ile ağ teyidi bekleniyor."
+    },
+    {
+      "player_id": "2820652",
+      "tff_name": "JHON JADER DURAN PALACIOS",
+      "tff_club": "FENERBAHÇE A.Ş.",
+      "category": "MANUAL_ALIAS_PENDING_NETWORK_VERIFY",
+      "priority_rank": 1,
+      "blocks_scout_review": false,
+      "review_tier": "MANUAL_VERIFY_HIGH_USAGE",
+      "season_activity": {
+        "starts": 6,
+        "squad_inclusions": 12,
+        "goals": 3
+      },
+      "candidate": {
+        "tm_name": "Jhon Durán",
+        "tm_team_name": "FENERBAHÇE A.Ş.",
+        "score": 1.0,
+        "common_tokens": []
+      },
+      "action": "Manuel eşleme operasyonda kullanılıyor; Transfermarkt profil bağlantısı ile ağ teyidi bekleniyor."
     }
   ],
   "scout_blocking_queue": []

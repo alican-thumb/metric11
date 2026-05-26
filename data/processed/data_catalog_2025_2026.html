@@ -19,14 +19,17 @@
     }
     * { box-sizing:border-box; }
     body { margin:0; font-family:Inter,"Segoe UI",Arial,sans-serif; background:var(--bg); color:var(--ink); }
-    .topbar { position:sticky; top:0; z-index:5; display:flex; align-items:center; justify-content:space-between; gap:20px; min-height:64px; padding:0 clamp(16px,4vw,42px); background:var(--dark); color:white; border-bottom:1px solid #203328; }
-    .brand { display:flex; gap:11px; align-items:center; font-weight:800; font-size:19px; color:white; text-decoration:none; flex-shrink:0; }
-    .brand-mark { width:30px; height:30px; display:grid; place-items:center; border-radius:7px; color:var(--dark); background:var(--lime); font-size:15px; flex-shrink:0; }
-    .season { color:#a7b3ab; font-size:12px; font-weight:500; margin-left:4px; }
-    nav { display:flex; gap:4px; flex-wrap:nowrap; overflow-x:auto; overflow-y:hidden; justify-content:flex-end; -webkit-overflow-scrolling:touch; scrollbar-width:none; }
+    .topbar { position:sticky; top:0; z-index:5; display:flex; align-items:center; justify-content:space-between; gap:20px; min-height:58px; padding:0 clamp(16px,4vw,42px); background:var(--dark); color:white; border-bottom:2px solid #1a3023; }
+    .brand { display:flex; gap:10px; align-items:center; font-weight:800; font-size:18px; color:white; text-decoration:none; flex-shrink:0; letter-spacing:-0.2px; }
+    .brand:visited,.brand:active,.brand:hover { color:white; }
+    .brand-mark { width:28px; height:28px; display:grid; place-items:center; border-radius:6px; color:var(--dark); background:var(--lime); font-size:14px; font-weight:900; flex-shrink:0; }
+    .season { color:#6b7c72; font-size:11px; font-weight:500; margin-left:2px; border-left:1px solid #2a3d30; padding-left:8px; }
+    nav { display:flex; gap:2px; flex-wrap:nowrap; overflow-x:auto; overflow-y:hidden; justify-content:flex-end; -webkit-overflow-scrolling:touch; scrollbar-width:none; }
     nav::-webkit-scrollbar { display:none; }
-    nav a { color:#d5ded8; text-decoration:none; font-size:13px; font-weight:600; padding:9px 10px; border-radius:6px; white-space:nowrap; flex-shrink:0; }
+    nav a { color:#8fa89a; text-decoration:none; font-size:13px; font-weight:600; padding:8px 11px; border-radius:6px; white-space:nowrap; flex-shrink:0; transition:background .15s,color .15s; }
+    nav a:visited { color:#8fa89a; }
     nav a:hover { background:#162b20; color:white; }
+    nav a.active { background:#162b20; color:white; }
     .back-link { display:inline-flex; align-items:center; gap:6px; color:var(--green); text-decoration:none; font-size:13px; font-weight:600; margin-bottom:18px; }
     .back-link::before { content:"←"; }
     .report-wrap { max-width:960px; margin:0 auto; padding:32px clamp(14px,3vw,32px) 60px; }
@@ -48,9 +51,9 @@
   </style>
 </head>
 <body>
-  <div class="topbar"><a class="brand" href="football_intelligence_home.html"><span class="brand-mark">11</span> metric11 <span class="season">Süper Lig 2025/26</span></a><nav><a href="football_intelligence_home.html">Merkez</a><a href="football_command_center_2025_2026.html">Analiz</a><a href="besiktas_2025_2026_dashboard_chronological.html">Maç Önü</a><a href="transfer_recommendation_report_2025_2026.html">Scout</a><a href="all_teams_preview_dashboard_2025_2026.html">Lig</a></nav></div>
+  <div class="topbar"><a class="brand" href="/"><span class="brand-mark">11</span> metric11<span class="season">S&#xfc;per Lig 2025/26</span></a><nav><a href="/">G&#xfc;ndem</a><a href="transfer_tracker_2025_2026.html">Transferler</a><a href="all_teams_preview_dashboard_2025_2026.html">Ma&#xe7; &#xd6;n&#xfc;</a><a href="transfer_recommendation_report_2025_2026.html">Scout</a><a href="football_intelligence_home.html">Analiz</a></nav></div>
   <div class="report-wrap">
-    <a class="back-link" href="football_intelligence_home.html">Ana sayfaya dön</a>
+    <a class="back-link" href="/">Ana sayfaya d&#xf6;n</a>
     <h1>Veri Kataloğu ve Kapsam Raporu</h1>
 
 <ul>
@@ -71,12 +74,14 @@
 <li>Transfermarkt Süper Lig oyuncusu: 512</li>
 <li>Transfermarkt Süper Lig toplam değer: €1,378,850,000</li>
 <li>Transfermarkt oyuncu profil detayı/tam adı: 512/277</li>
-<li>TFF / Transfermarkt zenginleşen profil: 498/691 (%72)</li>
-<li>TFF / Transfermarkt lig snapshot içi kapsama: 498/626 (%79.6)</li>
-<li>TFF / Transfermarkt inceleme kuyruğu: 193 profil; scout bloke eden 0</li>
-<li>TFF / Transfermarkt yüksek kullanımlı çözülmemiş: 13 profil</li>
+<li>TFF / Transfermarkt doğrulanmış snapshot eşleşmesi: 498/691 (%72)</li>
+<li>TFF / Transfermarkt doğrulanmış lig snapshot içi kapsama: 498/626 (%79.6)</li>
+<li>TFF / Transfermarkt manuel eşleme: 13 profil; ağ teyidi bekleyen 13</li>
+<li>TFF / Transfermarkt manuel dahil kullanılabilir lig içi kapsama: 511/626 (%81.6)</li>
+<li>TFF / Transfermarkt çözülmemiş kuyruğu: 180 profil; scout bloke eden 0</li>
+<li>TFF / Transfermarkt yüksek kullanımlı çözülmemiş: 0 profil</li>
 <li>Beşiktaş maç önü raporu: 29</li>
-<li>Tüm takım maç önü raporu: 522 (18 takım)</li>
+<li>Tüm takım maç önü raporu: 435 (15 takım)</li>
 <li>Gol adayı Top 3: %62</li>
 <li>Gol adayı Top 5: %77</li>
 <li>Gol adayı Top 8: %85</li>
@@ -88,7 +93,7 @@
 <li>Büyük maç MEDIUM/HIGH risk işareti: 6</li>
 <li>Tahmin hata analizi kaçan maç: 10</li>
 <li>Tahmin hata analizi kaçan beraberlik: 7</li>
-<li>Lig tahmin doğruluğu: %51</li>
+<li>Lig tahmin doğruluğu: %52</li>
 <li>Lig piyasa değeri audit kapsamı: 258 maç</li>
 <li>Lig piyasa değeri baseline doğruluğu: %51</li>
 <li>Oyuncu uygunluk maç kapsamı: 34</li>
@@ -119,10 +124,10 @@
 <li>Haber/sakat-cezalı başarılı kaynak: 2</li>
 <li>Haber/sakat-cezalı sinyal: 3</li>
 <li>Haber/sakat-cezalı yapılandırılmış oyuncu: 13</li>
-<li>RSS haber kaydı: 210</li>
-<li>Resmi kulüp web duyurusu: 13 | erişilebilir site=16/18 | durum=PARTIAL_SUCCESS</li>
-<li>Haber analizine alınan içerik: 71</li>
-<li>Transfer haber iddiası: 18 | resmi=3, çoklu kaynak=0, söylenti=0, inceleme gerekli=15</li>
+<li>RSS haber kaydı: 245</li>
+<li>Resmi kulüp web duyurusu: 16 | erişilebilir site=17/21 | durum=PARTIAL_SUCCESS</li>
+<li>Haber analizine alınan içerik: 251</li>
+<li>Transfer haber iddiası: 29 | resmi=2, çoklu kaynak=0, söylenti=1, inceleme gerekli=26</li>
 <li>X gönderi snapshot&#x27;ı: 0 | başarılı hesap=0 | kaynak=x_api | durum=MISSING_CREDENTIALS</li>
 <li>API-Football 2024 başarılı endpoint: 7</li>
 <li>API-Football 2024 fikstür: 342</li>
@@ -146,8 +151,8 @@
 <li>TFF oyuncu profilleri / public=&#x27;Resmi federasyon oyuncu profili&#x27; (SCRAPING, risk=MEDIUM, license=VERIFY_TERMS): İşlenen lig profil havuzu 691 profil; lig snapshot içi eşleşme ayrıca ölçülür</li>
 <li>Transfermarkt kadro sayfası / public=&#x27;Piyasa değeri ve kadro profili&#x27; (SCRAPING, risk=HIGH, license=VERIFY_TERMS_BEFORE_COMMERCIAL_USE): Süper Lig 2025/26: 18 kulüp kadrosu, pozisyon ve piyasa değeri</li>
 <li>Oyuncu uygunluk sinyalleri / public=&#x27;Model türetilmiş uygunluk sinyali&#x27; (DERIVED+MANUAL, risk=MEDIUM, license=DERIVED_FROM_INTERNAL_DATA_AND_MANUAL_VERIFICATION): Beşiktaş 2025/26 kart cezası çıkarımı + manuel sakat/cezalı override dosyası</li>
-<li>Türk spor haber RSS akışı / public=&#x27;Güncel spor haber bağlamı&#x27; (RSS_NEWS, risk=MEDIUM, license=VERIFY_TERMS_AND_QUOTE_LIMITS): 210 ham haber; 71 ilgili analiz; 18 transfer iddiası</li>
-<li>Süper Lig resmi kulüp web duyuruları / public=&#x27;Resmi kulüp duyuruları&#x27; (OFFICIAL_CLUB_NEWS, risk=LOW_MEDIUM, license=VERIFY_TERMS_AND_LINK_DERIVED_DISPLAY): 13 duyuru; 16/18 kulüp sitesi erişilebilir; durum=PARTIAL_SUCCESS</li>
+<li>Türk spor haber RSS akışı / public=&#x27;Güncel spor haber bağlamı&#x27; (RSS_NEWS, risk=MEDIUM, license=VERIFY_TERMS_AND_QUOTE_LIMITS): 245 ham haber; 251 ilgili analiz; 29 transfer iddiası</li>
+<li>Süper Lig resmi kulüp web duyuruları / public=&#x27;Resmi kulüp duyuruları&#x27; (OFFICIAL_CLUB_NEWS, risk=LOW_MEDIUM, license=VERIFY_TERMS_AND_LINK_DERIVED_DISPLAY): 16 duyuru; 17/21 kulüp sitesi erişilebilir; durum=PARTIAL_SUCCESS</li>
 <li>X resmi kulüp ve futbol haber hesapları / public=&#x27;Resmi kulüp ve sosyal haber duyuruları&#x27; (X_SOCIAL_SIGNAL, risk=MEDIUM, license=PLATFORM_TERMS_AND_DISPLAY_REQUIREMENTS): Collector çalıştı (x_api/MISSING_CREDENTIALS); kullanılabilir gönderi snapshot&#x27;ı yok</li>
 <li>FM/FIFA tarzı oyuncu attribute kaynakları / public=&#x27;Oyuncu attribute ve potansiyel veri seti&#x27; (OPEN_DATASET_OR_VERIFIED_EXPORT, risk=LOW_TO_HIGH_BY_LICENSE, license=SOURCE_SPECIFIC): 4 aday kaynak kaydı; normalize import varsa 0 oyuncu</li>
 <li>API-Football Süper Lig snapshot / public=&#x27;Dış futbol API doğrulama ve geçmiş sezon zenginleştirme&#x27; (API, risk=MEDIUM, license=API_PLAN_LIMITED): 2024 sezonu ücretsiz planda erişilebilir; 2025 sezonu plan kısıtı nedeniyle boş dönüyor; derin snapshot rate-limit kontrollü çalışır</li>

@@ -3,40 +3,59 @@
 - TFF profil: 691
 - Transfermarkt snapshot: 18/18 kulüp, 512 oyuncu
 - Snapshot kapsamındaki TFF profil: 626
-- Eşleşen profil: 498
-- Eşleşmeyen profil: 193
-- Genel eşleşme oranı: %72.1
-- Snapshot içi eşleşme oranı: %79.6
+- Doğrulanmış snapshot eşleşmesi: 498
+- Manuel eşleme ile kullanılan profil: 13
+- Ağ teyidi bekleyen manuel eşleme: 13
+- Çözülmemiş profil: 180
+- Doğrulanmış genel eşleşme oranı: %72.1
+- Doğrulanmış snapshot içi eşleşme oranı: %79.6
+- Manuel eşleme dahil kullanılabilir snapshot içi kapsama: %81.6
 - Scout incelemesini bloke eden eşleşmeyen oyuncu: 0
-- Sınıf dağılımı: {'NO_RELIABLE_CANDIDATE_IN_SNAPSHOT': 128, 'OUT_OF_SNAPSHOT_CLUB': 65}
-- Kullanım önceliği dağılımı: {'HIGH_USAGE_UNRESOLVED': 13, 'ROTATION_USAGE_UNRESOLVED': 115, 'OUT_OF_SNAPSHOT': 65}
-- Kural: Adaylar yalnız inceleme içindir; manuel alias onayı olmadan enrichment alanına yazılmaz.
+- Sınıf dağılımı: {'NO_RELIABLE_CANDIDATE_IN_SNAPSHOT': 115, 'OUT_OF_SNAPSHOT_CLUB': 65}
+- Kullanım önceliği dağılımı: {'ROTATION_USAGE_UNRESOLVED': 115, 'OUT_OF_SNAPSHOT': 65}
+- Kural: Doğrulanmış kapsama yalnız snapshot eşleşmesi girer; manuel alias kullanımı ayrı izlenir ve ağ teyidi tamamlanana kadar doğrulanmış sayılmaz.
 
 ## Scout Bloke Eden Kuyruk
 
 
+## Manuel Eşleme Ağ Teyidi Bekleyenler
+
+- JURE BALKOVEC (MISIRLI.COM.TR FATİH KARAGÜMRÜK): sınıf=MANUAL_ALIAS_PENDING_NETWORK_VERIFY, öncelik=MANUAL_VERIFY_HIGH_USAGE, ilk11=17, gol=0, scout_blok=False, aday=Jure Balkovec (MISIRLI.COM.TR FATİH KARAGÜMRÜK, skor=1.0, ortak=-). Manuel eşleme operasyonda kullanılıyor; Transfermarkt profil bağlantısı ile ağ teyidi bekleniyor.
+- KEVIN OGHENETEGA TAMARAEBI BAKUMO ABRAHAM (BEŞİKTAŞ A.Ş.): sınıf=MANUAL_ALIAS_PENDING_NETWORK_VERIFY, öncelik=MANUAL_VERIFY_HIGH_USAGE, ilk11=15, gol=7, scout_blok=False, aday=Kevin (BEŞİKTAŞ A.Ş., skor=1.0, ortak=-). Manuel eşleme operasyonda kullanılıyor; Transfermarkt profil bağlantısı ile ağ teyidi bekleniyor.
+- ATTILA ARPAD SZALAI (KASIMPAŞA A.Ş.): sınıf=MANUAL_ALIAS_PENDING_NETWORK_VERIFY, öncelik=MANUAL_VERIFY_HIGH_USAGE, ilk11=14, gol=0, scout_blok=False, aday=Attila Szalai (KASIMPAŞA A.Ş., skor=1.0, ortak=-). Manuel eşleme operasyonda kullanılıyor; Transfermarkt profil bağlantısı ile ağ teyidi bekleniyor.
+- AARON OPOKU TIAWIAH (ZECORNER KAYSERİSPOR): sınıf=MANUAL_ALIAS_PENDING_NETWORK_VERIFY, öncelik=MANUAL_VERIFY_HIGH_USAGE, ilk11=14, gol=1, scout_blok=False, aday=Aaron Opoku (ZECORNER KAYSERİSPOR, skor=1.0, ortak=-). Manuel eşleme operasyonda kullanılıyor; Transfermarkt profil bağlantısı ile ağ teyidi bekleniyor.
+- DENIS MIHAI DRAGUS (TRABZONSPOR A.Ş.): sınıf=MANUAL_ALIAS_PENDING_NETWORK_VERIFY, öncelik=MANUAL_VERIFY_HIGH_USAGE, ilk11=13, gol=0, scout_blok=False, aday=Denis Drăguș (TRABZONSPOR A.Ş., skor=1.0, ortak=-). Manuel eşleme operasyonda kullanılıyor; Transfermarkt profil bağlantısı ile ağ teyidi bekleniyor.
+- RHALDNEY NORBERTO SIMIAO GOMES (GÖZTEPE A.Ş.): sınıf=MANUAL_ALIAS_PENDING_NETWORK_VERIFY, öncelik=MANUAL_VERIFY_HIGH_USAGE, ilk11=12, gol=1, scout_blok=False, aday=Rhaldney (GÖZTEPE A.Ş., skor=1.0, ortak=-). Manuel eşleme operasyonda kullanılıyor; Transfermarkt profil bağlantısı ile ağ teyidi bekleniyor.
+- UCHENNA OGUNDU (CORENDON ALANYASPOR): sınıf=MANUAL_ALIAS_PENDING_NETWORK_VERIFY, öncelik=MANUAL_VERIFY_HIGH_USAGE, ilk11=11, gol=2, scout_blok=False, aday=Uchenna Ogundu (CORENDON ALANYASPOR, skor=1.0, ortak=-). Manuel eşleme operasyonda kullanılıyor; Transfermarkt profil bağlantısı ile ağ teyidi bekleniyor.
+- YOUSSEF EN NESYRI (FENERBAHÇE A.Ş.): sınıf=MANUAL_ALIAS_PENDING_NETWORK_VERIFY, öncelik=MANUAL_VERIFY_HIGH_USAGE, ilk11=11, gol=7, scout_blok=False, aday=Youssef En-Nesyri (FENERBAHÇE A.Ş., skor=1.0, ortak=-). Manuel eşleme operasyonda kullanılıyor; Transfermarkt profil bağlantısı ile ağ teyidi bekleniyor.
+- ALASSANE NDAO (TÜMOSAN KONYASPOR): sınıf=MANUAL_ALIAS_PENDING_NETWORK_VERIFY, öncelik=MANUAL_VERIFY_HIGH_USAGE, ilk11=11, gol=2, scout_blok=False, aday=Alassane Ndao (TÜMOSAN KONYASPOR, skor=1.0, ortak=-). Manuel eşleme operasyonda kullanılıyor; Transfermarkt profil bağlantısı ile ağ teyidi bekleniyor.
+- JESURUN  RAK-SAKYI (ÇAYKUR RİZESPOR A.Ş.): sınıf=MANUAL_ALIAS_PENDING_NETWORK_VERIFY, öncelik=MANUAL_VERIFY_HIGH_USAGE, ilk11=11, gol=4, scout_blok=False, aday=Jesurun Rak-Sakyi (ÇAYKUR RİZESPOR A.Ş., skor=1.0, ortak=-). Manuel eşleme operasyonda kullanılıyor; Transfermarkt profil bağlantısı ile ağ teyidi bekleniyor.
+- GABRIEL ARMANDO DE ABREU (BEŞİKTAŞ A.Ş.): sınıf=MANUAL_ALIAS_PENDING_NETWORK_VERIFY, öncelik=MANUAL_VERIFY_HIGH_USAGE, ilk11=10, gol=0, scout_blok=False, aday=Gabriel (BEŞİKTAŞ A.Ş., skor=1.0, ortak=-). Manuel eşleme operasyonda kullanılıyor; Transfermarkt profil bağlantısı ile ağ teyidi bekleniyor.
+- DATRO DAVID FOFANA (MISIRLI.COM.TR FATİH KARAGÜMRÜK): sınıf=MANUAL_ALIAS_PENDING_NETWORK_VERIFY, öncelik=MANUAL_VERIFY_HIGH_USAGE, ilk11=10, gol=6, scout_blok=False, aday=Datro Fofana (MISIRLI.COM.TR FATİH KARAGÜMRÜK, skor=1.0, ortak=-). Manuel eşleme operasyonda kullanılıyor; Transfermarkt profil bağlantısı ile ağ teyidi bekleniyor.
+- JHON JADER DURAN PALACIOS (FENERBAHÇE A.Ş.): sınıf=MANUAL_ALIAS_PENDING_NETWORK_VERIFY, öncelik=MANUAL_VERIFY_HIGH_USAGE, ilk11=6, gol=3, scout_blok=False, aday=Jhon Durán (FENERBAHÇE A.Ş., skor=1.0, ortak=-). Manuel eşleme operasyonda kullanılıyor; Transfermarkt profil bağlantısı ile ağ teyidi bekleniyor.
+
 ## 18 Takım Kapsama Tablosu
 
-| Takım | TFF Profil | TM Kadro | Eşleşen | Eşleşmeyen | Oran |
-|---|---:|---:|---:|---:|---:|
-| BEŞİKTAŞ A.Ş. | 41 | 28 | 30 | 11 | %73.2 |
-| CORENDON ALANYASPOR | 33 | 26 | 26 | 7 | %78.8 |
-| FENERBAHÇE A.Ş. | 38 | 28 | 26 | 12 | %68.4 |
-| GALATASARAY A.Ş. | 39 | 29 | 28 | 11 | %71.8 |
-| GAZİANTEP FUTBOL KULÜBÜ A.Ş. | 33 | 26 | 25 | 8 | %75.8 |
-| GENÇLERBİRLİĞİ | 34 | 33 | 29 | 5 | %85.3 |
-| GÖZTEPE A.Ş. | 30 | 27 | 24 | 6 | %80.0 |
-| HESAP.COM ANTALYASPOR | 29 | 28 | 28 | 1 | %96.6 |
-| KASIMPAŞA A.Ş. | 35 | 31 | 31 | 4 | %88.6 |
-| KOCAELİSPOR | 29 | 25 | 25 | 4 | %86.2 |
-| MISIRLI.COM.TR FATİH KARAGÜMRÜK | 38 | 30 | 30 | 8 | %78.9 |
-| RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ | 28 | 28 | 28 | 0 | %100.0 |
-| SAMSUNSPOR A.Ş. | 34 | 34 | 30 | 4 | %88.2 |
-| TRABZONSPOR A.Ş. | 35 | 27 | 26 | 9 | %74.3 |
-| TÜMOSAN KONYASPOR | 43 | 30 | 30 | 13 | %69.8 |
-| ZECORNER KAYSERİSPOR | 39 | 30 | 30 | 9 | %76.9 |
-| ÇAYKUR RİZESPOR A.Ş. | 32 | 25 | 25 | 7 | %78.1 |
-| İKAS EYÜPSPOR | 36 | 27 | 27 | 9 | %75.0 |
+| Takım | TFF Profil | TM Kadro | Doğrulanmış | Manuel | Açık | Doğrulanmış Oran | Kullanılabilir Oran |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| BEŞİKTAŞ A.Ş. | 41 | 28 | 30 | 2 | 9 | %73.2 | %78.0 |
+| CORENDON ALANYASPOR | 33 | 26 | 26 | 1 | 6 | %78.8 | %81.8 |
+| FENERBAHÇE A.Ş. | 38 | 28 | 26 | 2 | 10 | %68.4 | %73.7 |
+| GALATASARAY A.Ş. | 39 | 29 | 28 | 0 | 11 | %71.8 | %71.8 |
+| GAZİANTEP FUTBOL KULÜBÜ A.Ş. | 33 | 26 | 25 | 0 | 8 | %75.8 | %75.8 |
+| GENÇLERBİRLİĞİ | 34 | 33 | 29 | 0 | 5 | %85.3 | %85.3 |
+| GÖZTEPE A.Ş. | 30 | 27 | 24 | 1 | 5 | %80.0 | %83.3 |
+| HESAP.COM ANTALYASPOR | 29 | 28 | 28 | 0 | 1 | %96.6 | %96.6 |
+| KASIMPAŞA A.Ş. | 35 | 31 | 31 | 1 | 3 | %88.6 | %91.4 |
+| KOCAELİSPOR | 29 | 25 | 25 | 0 | 4 | %86.2 | %86.2 |
+| MISIRLI.COM.TR FATİH KARAGÜMRÜK | 38 | 30 | 30 | 2 | 6 | %78.9 | %84.2 |
+| RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ | 28 | 28 | 28 | 0 | 0 | %100.0 | %100.0 |
+| SAMSUNSPOR A.Ş. | 34 | 34 | 30 | 0 | 4 | %88.2 | %88.2 |
+| TRABZONSPOR A.Ş. | 35 | 27 | 26 | 1 | 8 | %74.3 | %77.1 |
+| TÜMOSAN KONYASPOR | 43 | 30 | 30 | 1 | 12 | %69.8 | %72.1 |
+| ZECORNER KAYSERİSPOR | 39 | 30 | 30 | 1 | 8 | %76.9 | %79.5 |
+| ÇAYKUR RİZESPOR A.Ş. | 32 | 25 | 25 | 1 | 6 | %78.1 | %81.2 |
+| İKAS EYÜPSPOR | 36 | 27 | 27 | 0 | 9 | %75.0 | %75.0 |
 
 ## Tüm Eşleşmeyen Kayıtlar (Takım Bazında)
 
@@ -88,8 +107,6 @@
 
 ### BEŞİKTAŞ A.Ş.
 
-- KEVIN OGHENETEGA TAMARAEBI BAKUMO ABRAHAM (BEŞİKTAŞ A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=15, gol=7, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
-- GABRIEL ARMANDO DE ABREU (BEŞİKTAŞ A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=10, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - DAVID JURASEK (BEŞİKTAŞ A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=7, gol=1, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - JONAS SVENSSON (BEŞİKTAŞ A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=4, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - DEMİR EGE TIKNAZ (BEŞİKTAŞ A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=2, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
@@ -112,7 +129,6 @@
 
 ### CORENDON ALANYASPOR
 
-- UCHENNA OGUNDU (CORENDON ALANYASPOR): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=11, gol=2, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - ANDRAZ SPORAR (CORENDON ALANYASPOR): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=2, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - HÜSEYİN ŞEN (CORENDON ALANYASPOR): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - MAHMUT CAN KARA (CORENDON ALANYASPOR): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
@@ -135,8 +151,6 @@
 
 ### FENERBAHÇE A.Ş.
 
-- YOUSSEF EN NESYRI (FENERBAHÇE A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=11, gol=7, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
-- JHON JADER DURAN PALACIOS (FENERBAHÇE A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=6, gol=3, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - SEBASTIAN SZYMANSKI (FENERBAHÇE A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=4, gol=1, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - DOMINIK LIVAKOVIC (FENERBAHÇE A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=1, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - SOFYAN AMRABAT (FENERBAHÇE A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=1, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
@@ -187,7 +201,6 @@
 
 ### GÖZTEPE A.Ş.
 
-- RHALDNEY NORBERTO SIMIAO GOMES (GÖZTEPE A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=12, gol=1, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - GUILERME LUIZ OLIVEIRA DA SILVA (GÖZTEPE A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=2, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - EMERSONN CORREIRA DA SILVA (GÖZTEPE A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=1, gol=1, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - IBRAHIM MOHAMMED ABDALLAH SABRA (GÖZTEPE A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=1, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
@@ -204,7 +217,6 @@
 
 ### KASIMPAŞA A.Ş.
 
-- ATTILA ARPAD SZALAI (KASIMPAŞA A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=14, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - JHON JAIRO (KASIMPAŞA A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=6, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - EMİRHAN YİĞİT (KASIMPAŞA A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - LORET SADIKU (KASIMPAŞA A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
@@ -235,8 +247,6 @@
 
 ### MISIRLI.COM.TR FATİH KARAGÜMRÜK
 
-- JURE BALKOVEC (MISIRLI.COM.TR FATİH KARAGÜMRÜK): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=17, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
-- DATRO DAVID FOFANA (MISIRLI.COM.TR FATİH KARAGÜMRÜK): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=10, gol=6, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - ENZO PABLO ROCO ROCO (MISIRLI.COM.TR FATİH KARAGÜMRÜK): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=7, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - ANDRE ANTHONY GRAY (MISIRLI.COM.TR FATİH KARAGÜMRÜK): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=6, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - NIKOLOZ UGREKHELIDZE (MISIRLI.COM.TR FATİH KARAGÜMRÜK): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=2, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
@@ -280,7 +290,6 @@
 
 ### TRABZONSPOR A.Ş.
 
-- DENIS MIHAI DRAGUS (TRABZONSPOR A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=13, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - SERDAR SAATÇI (TRABZONSPOR A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=2, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - DANYLO SIKAN (TRABZONSPOR A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=1, gol=1, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - BATISTA ADELINO MENDY (TRABZONSPOR A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
@@ -292,7 +301,6 @@
 
 ### TÜMOSAN KONYASPOR
 
-- ALASSANE NDAO (TÜMOSAN KONYASPOR): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=11, gol=2, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - PEDRO HENRIQUE OLIVEIRA DOS SANTOS (TÜMOSAN KONYASPOR): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=6, gol=1, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - ATA YANIK (TÜMOSAN KONYASPOR): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=1, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - AHMET KUSAY DAĞDEVİR (TÜMOSAN KONYASPOR): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
@@ -316,7 +324,6 @@
 
 ### ZECORNER KAYSERİSPOR
 
-- AARON OPOKU TIAWIAH (ZECORNER KAYSERİSPOR): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=14, gol=1, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - GIDEON AMANKWAH JUNG (ZECORNER KAYSERİSPOR): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=4, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - YAW ACKAH (ZECORNER KAYSERİSPOR): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=2, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - ALI KARIMI (ZECORNER KAYSERİSPOR): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
@@ -332,7 +339,6 @@
 
 ### ÇAYKUR RİZESPOR A.Ş.
 
-- JESURUN  RAK-SAKYI (ÇAYKUR RİZESPOR A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=11, gol=4, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - VACLAV JURECKA (ÇAYKUR RİZESPOR A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=5, gol=1, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - BAYRAM BERK ÇAPOĞLU (ÇAYKUR RİZESPOR A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - EMİR BORA ÇOBAN (ÇAYKUR RİZESPOR A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=Emir Ortakaya (ÇAYKUR RİZESPOR A.Ş., skor=0.643, ortak=EMIR). Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
