@@ -386,7 +386,16 @@ def build_html(payload: dict) -> str:
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Süper Lig İstihbarat Raporu</title>
+  <title>Süper Lig İstihbarat Raporu — metric11</title>
+  <meta name="description" content="Süper Lig 2025-2026 takım gücü, oyuncu profili, hakem analizi ve transfer istihbaratı — metric11.">
+  <meta property="og:title" content="Süper Lig İstihbarat Raporu — metric11">
+  <meta property="og:description" content="Süper Lig 2025-2026 takım gücü, oyuncu profili, hakem analizi ve transfer istihbaratı.">
+  <meta property="og:image" content="https://metric11.com/og_league_intelligence.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://metric11.com/og_league_intelligence.png">
+  <meta name="theme-color" content="#091810">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <style>
     :root {{ --bg:#f4f6f8; --panel:#fff; --ink:#15181d; --muted:#667085; --line:#dce2ea; --dark:#111318; --red:#bf1f2f; --green:#137a4b; --blue:#185ea8; --shadow:0 8px 22px rgba(18,24,32,.08); }}
     * {{ box-sizing:border-box; }}
@@ -417,6 +426,9 @@ def build_html(payload: dict) -> str:
     nav::-webkit-scrollbar{{display:none;}}
     nav a{{color:#8fa89a;text-decoration:none;font-size:13px;font-weight:600;padding:8px 10px;border-radius:6px;white-space:nowrap;}}
     nav a:hover,nav a.active{{background:#162b20;color:white;}}
+    .x-share {{ display:inline-flex; align-items:center; gap:8px; background:#000; color:#fff; text-decoration:none; font-size:14px; font-weight:700; padding:10px 18px; border-radius:8px; transition:background .15s; }}
+    .x-share:hover {{ background:#1a1a1a; }}
+    .share-bar {{ padding:16px 0 8px; border-top:1px solid #dce2ea; margin-top:24px; }}
   </style>
 </head>
 <body>
@@ -449,6 +461,9 @@ def build_html(payload: dict) -> str:
       <section><h2>Hakem Tempo Profili</h2>{referee_table(payload["referee_profiles"])}</section>
     </div>
     <section><h2>Takım Zafiyetleri ve Scout İpucu</h2>{weakness_table(payload["team_weaknesses"])}</section>
+    <div class="share-bar">
+      <a class="x-share" href="https://twitter.com/intent/tweet?text=S%C3%BCper%20Lig%20g%C3%BC%C3%A7%20s%C4%B1ralamas%C4%B1%20ve%20tak%C4%B1m%20analizi%20%F0%9F%93%8A%20306%20ma%C3%A7%2C%2018%20tak%C4%B1m%2C%20ger%C3%A7ek%20veri%3A&url=https%3A%2F%2Fmetric11.com%2Fleague_intelligence_2025_2026.html" target="_blank" rel="noopener">&#x1D54F; Paylaş</a>
+    </div>
   </main>
   <script defer src="/_vercel/insights/script.js"></script>
 </body>

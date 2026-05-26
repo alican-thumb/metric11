@@ -639,10 +639,10 @@ def build_html(report: dict) -> str:
 <meta name="description" content="Süper Lig takımlarına pozisyon bazlı transfer önerileri: piyasa değeri, sözleşme durumu ve performans analizi — metric11.">
 <meta property="og:title" content="Scout Raporu — Süper Lig {SEASON_LABEL} | metric11">
 <meta property="og:description" content="Süper Lig takımlarına pozisyon bazlı transfer önerileri: piyasa değeri, sözleşme durumu ve performans analizi.">
-<meta property="og:image" content="https://metric11.com/og-image.png">
+<meta property="og:image" content="https://metric11.com/og_transfer_recommendation.png">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://metric11.com/og-image.png">
+  <meta name="twitter:image" content="https://metric11.com/og_transfer_recommendation.png">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <style>
   * {{ box-sizing: border-box; margin: 0; padding: 0; }}
@@ -709,6 +709,9 @@ def build_html(report: dict) -> str:
   .filter-input:focus {{ border-color:#cde94e; }}
   @media (max-width:900px) {{ .summary-bar {{ grid-template-columns:repeat(3,minmax(0,1fr)); }} }}
   @media (max-width:600px) {{ .topbar {{ flex-direction:column; align-items:stretch; padding:11px 12px 0; gap:0; min-height:unset; }} .brand {{ padding-bottom:8px; }} .topnav {{ border-top:1px solid #1e3228; padding:7px 0 9px; justify-content:flex-start; }} .summary-bar {{ grid-template-columns:repeat(2,minmax(0,1fr)); }} .team-grid {{ grid-template-columns:1fr; }} .content {{ padding:14px 12px 32px; }} }}
+  .x-share {{ display:inline-flex; align-items:center; gap:8px; background:#000; color:#fff; text-decoration:none; font-size:14px; font-weight:700; padding:10px 18px; border-radius:8px; transition:background .15s; }}
+  .x-share:hover {{ background:#1a1a1a; }}
+  .share-bar {{ padding:16px 0 8px; border-top:1px solid #334155; margin-top:24px; }}
 </style>
 </head>
 <body>
@@ -753,6 +756,9 @@ def build_html(report: dict) -> str:
   </div>
   <div id="agecurve" class="section">
     {age_curve_html}
+  </div>
+  <div class="share-bar">
+    <a class="x-share" href="https://twitter.com/intent/tweet?text=S%C3%BCper%20Lig%20transfer%20radar%20%F0%9F%94%8D%20Hangi%20tak%C4%B1m%20kime%20ihtiya%C3%A7%20duyuyor%3F%20Veri%20destekli%20scout%20%C3%B6nerileri%3A&url=https%3A%2F%2Fmetric11.com%2Ftransfer_recommendation_report_2025_2026.html" target="_blank" rel="noopener">&#x1D54F; Paylaş</a>
   </div>
 </div>
 <script>

@@ -453,9 +453,9 @@ def build_html(payload: dict) -> str:
   <title>Takım Scout Blueprint Raporu — metric11</title>
   <meta name="description" content="Süper Lig takım zafiyetleri ve scout ihtiyaç analizi — metric11.">
   <meta property="og:title" content="Takım Scout Blueprint Raporu — metric11">
-  <meta property="og:image" content="https://metric11.com/og-image.png">
+  <meta property="og:image" content="https://metric11.com/og_blueprints.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://metric11.com/og-image.png">
+  <meta name="twitter:image" content="https://metric11.com/og_blueprints.png">
   <meta name="theme-color" content="#091810">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <style>
@@ -499,6 +499,9 @@ def build_html(payload: dict) -> str:
     @media (max-width:980px) {{ .cards {{ grid-template-columns:1fr; }} .metrics {{ grid-template-columns:1fr 1fr; }} }}
     @media (max-width:680px) {{ .topbar {{ position:static; flex-direction:column; align-items:stretch; padding:11px 16px 0; gap:0; min-height:unset; }} .brand {{ padding-bottom:8px; }} .season {{ display:none; }} nav {{ justify-content:flex-start; border-top:1px solid #1e3228; padding:7px 0 9px; }} }}
     @media (max-width:620px) {{ main {{ padding:14px; }} .metrics {{ grid-template-columns:1fr; }} .role {{ overflow-x:auto; }} table {{ min-width:560px; }} }}
+    .x-share {{ display:inline-flex; align-items:center; gap:8px; background:#000; color:#fff; text-decoration:none; font-size:14px; font-weight:700; padding:10px 18px; border-radius:8px; transition:background .15s; }}
+    .x-share:hover {{ background:#1a1a1a; }}
+    .share-bar {{ padding:16px 0 8px; border-top:1px solid var(--line); margin-top:24px; }}
   </style>
 </head>
 <body>
@@ -515,6 +518,9 @@ def build_html(payload: dict) -> str:
       {metric("Aday bağlantısı", payload["summary"]["candidate_links"])}
     </div>
     <div class="cards">{cards}</div>
+    <div class="share-bar">
+      <a class="x-share" href="https://twitter.com/intent/tweet?text=S%C3%BCper%20Lig%27de%20kimin%20neye%20ihtiyac%C4%B1%20var%3F%20%E2%9A%BD%2018%20tak%C4%B1m%C4%B1n%20transfer%20%C3%B6ncelikleri%20ve%20aday%20analizi%20%E2%80%94%20veri%20odakl%C4%B1%20scout%20raporu%3A&url=https%3A%2F%2Fmetric11.com%2Fteam_scout_blueprints_2025_2026.html" target="_blank" rel="noopener">&#x1D54F; Paylaş</a>
+    </div>
   </main>
   <script defer src="/_vercel/insights/script.js"></script>
 </body>

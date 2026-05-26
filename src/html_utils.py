@@ -59,6 +59,10 @@ _CSS = """
     .md-table tr:nth-child(even) td { background:#f8faf9; }
     @media (max-width:680px) { .topbar { position:static; flex-direction:column; align-items:stretch; padding:11px 16px 0; gap:0; min-height:unset; } .brand { padding-bottom:8px; } .season { display:none; } nav { justify-content:flex-start; border-top:1px solid #1e3228; padding:7px 0 9px; } .report-wrap h1 { font-size:22px; } }
     @media (max-width:600px) { .md-table th,.md-table td { padding:5px 6px; font-size:11px; } }
+    .x-share { display:inline-flex; align-items:center; gap:8px; background:#000; color:#fff; text-decoration:none; font-size:14px; font-weight:700; padding:10px 18px; border-radius:8px; transition:background .15s; }
+    .x-share:hover { background:#1a1a1a; }
+    .x-share:visited { color:#fff; }
+    .share-bar { padding:16px 0 8px; border-top:1px solid var(--line); margin-top:24px; }
 """
 
 
@@ -87,9 +91,10 @@ def _build_nav(active: str = "") -> str:
     )
 
 
-def page_html(title: str, body_html: str, description: str = "Süper Lig maç tahminleri, scout analizleri ve transfer istihbaratı — metric11.", active_nav: str = "Analiz") -> str:
+def page_html(title: str, body_html: str, description: str = "Süper Lig maç tahminleri, scout analizleri ve transfer istihbaratı — metric11.", active_nav: str = "Analiz", og_image: str = "og-image.png") -> str:
     _t = escape(title)
     _d = escape(description)
+    _og = f"https://metric11.com/{og_image}"
     return (
         "<!doctype html>\n"
         '<html lang="tr">\n'
@@ -100,10 +105,10 @@ def page_html(title: str, body_html: str, description: str = "Süper Lig maç ta
         f'  <meta name="description" content="{_d}">\n'
         f'  <meta property="og:title" content="{_t} — metric11">\n'
         f'  <meta property="og:description" content="{_d}">\n'
-        '  <meta property="og:image" content="https://metric11.com/og-image.png">\n'
+        f'  <meta property="og:image" content="{_og}">\n'
         '  <meta property="og:type" content="website">\n'
         '  <meta name="twitter:card" content="summary_large_image">\n'
-        '  <meta name="twitter:image" content="https://metric11.com/og-image.png">\n'
+        f'  <meta name="twitter:image" content="{_og}">\n'
         '  <meta name="theme-color" content="#091810">\n'
         '  <link rel="icon" href="favicon.svg" type="image/svg+xml">\n'
         f"  <style>{_CSS}  </style>\n"
@@ -117,6 +122,21 @@ def page_html(title: str, body_html: str, description: str = "Süper Lig maç ta
         '  <script defer src="/_vercel/insights/script.js"></script>\n'
         "</body>\n"
         "</html>"
+    )
+
+
+def _share_button(url: str, tweet_text: str) -> str:
+    """Return HTML for a Twitter/X share button."""
+    from urllib.parse import quote
+    encoded_text = quote(tweet_text)
+    encoded_url = quote(url)
+    href = f"https://twitter.com/intent/tweet?text={encoded_text}&url={encoded_url}"
+    return (
+        '<div class="share-bar">'
+        f'<a class="x-share" href="{href}" target="_blank" rel="noopener">'
+        '&#x1D54F; Paylaş'
+        '</a>'
+        '</div>'
     )
 
 
