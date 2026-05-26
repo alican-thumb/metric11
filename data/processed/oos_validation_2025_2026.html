@@ -19,14 +19,17 @@
     }
     * { box-sizing:border-box; }
     body { margin:0; font-family:Inter,"Segoe UI",Arial,sans-serif; background:var(--bg); color:var(--ink); }
-    .topbar { position:sticky; top:0; z-index:5; display:flex; align-items:center; justify-content:space-between; gap:20px; min-height:64px; padding:0 clamp(16px,4vw,42px); background:var(--dark); color:white; border-bottom:1px solid #203328; }
-    .brand { display:flex; gap:11px; align-items:center; font-weight:800; font-size:19px; color:white; text-decoration:none; flex-shrink:0; }
-    .brand-mark { width:30px; height:30px; display:grid; place-items:center; border-radius:7px; color:var(--dark); background:var(--lime); font-size:15px; flex-shrink:0; }
-    .season { color:#a7b3ab; font-size:12px; font-weight:500; margin-left:4px; }
-    nav { display:flex; gap:4px; flex-wrap:nowrap; overflow-x:auto; overflow-y:hidden; justify-content:flex-end; -webkit-overflow-scrolling:touch; scrollbar-width:none; }
+    .topbar { position:sticky; top:0; z-index:5; display:flex; align-items:center; justify-content:space-between; gap:20px; min-height:58px; padding:0 clamp(16px,4vw,42px); background:var(--dark); color:white; border-bottom:2px solid #1a3023; }
+    .brand { display:flex; gap:10px; align-items:center; font-weight:800; font-size:18px; color:white; text-decoration:none; flex-shrink:0; letter-spacing:-0.2px; }
+    .brand:visited,.brand:active,.brand:hover { color:white; }
+    .brand-mark { width:28px; height:28px; display:grid; place-items:center; border-radius:6px; color:var(--dark); background:var(--lime); font-size:14px; font-weight:900; flex-shrink:0; }
+    .season { color:#6b7c72; font-size:11px; font-weight:500; margin-left:2px; border-left:1px solid #2a3d30; padding-left:8px; }
+    nav { display:flex; gap:2px; flex-wrap:nowrap; overflow-x:auto; overflow-y:hidden; justify-content:flex-end; -webkit-overflow-scrolling:touch; scrollbar-width:none; }
     nav::-webkit-scrollbar { display:none; }
-    nav a { color:#d5ded8; text-decoration:none; font-size:13px; font-weight:600; padding:9px 10px; border-radius:6px; white-space:nowrap; flex-shrink:0; }
+    nav a { color:#8fa89a; text-decoration:none; font-size:13px; font-weight:600; padding:8px 11px; border-radius:6px; white-space:nowrap; flex-shrink:0; transition:background .15s,color .15s; }
+    nav a:visited { color:#8fa89a; }
     nav a:hover { background:#162b20; color:white; }
+    nav a.active { background:#162b20; color:white; }
     .back-link { display:inline-flex; align-items:center; gap:6px; color:var(--green); text-decoration:none; font-size:13px; font-weight:600; margin-bottom:18px; }
     .back-link::before { content:"←"; }
     .report-wrap { max-width:960px; margin:0 auto; padding:32px clamp(14px,3vw,32px) 60px; }
@@ -48,9 +51,9 @@
   </style>
 </head>
 <body>
-  <div class="topbar"><a class="brand" href="football_intelligence_home.html"><span class="brand-mark">11</span> metric11 <span class="season">Süper Lig 2025/26</span></a><nav><a href="football_intelligence_home.html">Merkez</a><a href="football_command_center_2025_2026.html">Analiz</a><a href="besiktas_2025_2026_dashboard_chronological.html">Maç Önü</a><a href="transfer_recommendation_report_2025_2026.html">Scout</a><a href="all_teams_preview_dashboard_2025_2026.html">Lig</a></nav></div>
+  <div class="topbar"><a class="brand" href="/"><span class="brand-mark">11</span> metric11<span class="season">S&#xfc;per Lig 2025/26</span></a><nav><a href="/">G&#xfc;ndem</a><a href="transfer_tracker_2025_2026.html">Transferler</a><a href="all_teams_preview_dashboard_2025_2026.html">Ma&#xe7; &#xd6;n&#xfc;</a><a href="transfer_recommendation_report_2025_2026.html">Scout</a><a href="football_intelligence_home.html">Analiz</a></nav></div>
   <div class="report-wrap">
-    <a class="back-link" href="football_intelligence_home.html">Ana sayfaya dön</a>
+    <a class="back-link" href="/">Ana sayfaya d&#xf6;n</a>
     <h1>Out-of-Sample Validasyon Raporu — 2025-2026</h1>
 
 <p>Split: Hafta 1-17 birikimli tarih, Hafta 18+ bağımsız test.</p>
@@ -66,19 +69,19 @@
 </tr></thead><tbody>
 <tr>
 <td>Tüm sezon</td>
-<td>%50.8 (131/258)</td>
+<td>%50.4 (130/258)</td>
 <td>0.607</td>
 <td>1.015</td>
 </tr>
 <tr>
 <td>İlk yarı (hafta 1-17)</td>
-<td>%46.7 (49/105)</td>
+<td>%50.5 (53/105)</td>
 <td>0.614</td>
 <td>1.028</td>
 </tr>
 <tr>
 <td><strong>İkinci yarı OOS (hafta 18-34)</strong></td>
-<td><strong>%53.6 (82/153)</strong></td>
+<td><strong>%50.3 (77/153)</strong></td>
 <td>0.602</td>
 <td>1.007</td>
 </tr>
@@ -98,12 +101,12 @@
 </tr>
 <tr>
 <td>MEDIUM</td>
-<td>%51.1 (47/92)</td>
+<td>%48.9 (45/92)</td>
 <td>Brier: 0.625</td>
 </tr>
 <tr>
 <td>LOW</td>
-<td>%39.0 (32/82)</td>
+<td>%40.2 (33/82)</td>
 <td>Brier: 0.665</td>
 </tr>
 </tbody></table>
@@ -122,12 +125,12 @@
 </tr>
 <tr>
 <td>MEDIUM</td>
-<td>%56.6 (30/53)</td>
+<td>%50.9 (27/53)</td>
 <td>Brier: 0.597</td>
 </tr>
 <tr>
 <td>LOW</td>
-<td>%44.2 (23/52)</td>
+<td>%40.4 (21/52)</td>
 <td>Brier: 0.657</td>
 </tr>
 </tbody></table>
@@ -140,15 +143,15 @@
 </tr></thead><tbody>
 <tr>
 <td>Ev sahibi kazandı</td>
-<td>%69.4 (77/111)</td>
+<td>%55.9 (62/111)</td>
 </tr>
 <tr>
 <td>Beraberlik</td>
-<td>%7.9 (6/76)</td>
+<td>%40.8 (31/76)</td>
 </tr>
 <tr>
 <td>Deplasman kazandı</td>
-<td>%67.6 (48/71)</td>
+<td>%52.1 (37/71)</td>
 </tr>
 </tbody></table>
 
@@ -161,27 +164,27 @@
 </tr></thead><tbody>
 <tr>
 <td>25</td>
-<td>%50.3</td>
+<td>%53.7</td>
 <td>177</td>
 </tr>
 <tr>
 <td>26</td>
-<td>%50.5</td>
+<td>%52.7</td>
 <td>186</td>
 </tr>
 <tr>
 <td>27</td>
-<td>%51.8</td>
+<td>%52.8</td>
 <td>195</td>
 </tr>
 <tr>
 <td>28</td>
-<td>%51.5</td>
+<td>%52.0</td>
 <td>204</td>
 </tr>
 <tr>
 <td>29</td>
-<td>%52.1</td>
+<td>%52.6</td>
 <td>213</td>
 </tr>
 <tr>
@@ -191,22 +194,22 @@
 </tr>
 <tr>
 <td>31</td>
-<td>%51.5</td>
+<td>%51.1</td>
 <td>231</td>
 </tr>
 <tr>
 <td>32</td>
-<td>%52.1</td>
+<td>%51.7</td>
 <td>240</td>
 </tr>
 <tr>
 <td>33</td>
-<td>%52.2</td>
+<td>%51.8</td>
 <td>249</td>
 </tr>
 <tr>
 <td>34</td>
-<td>%50.8</td>
+<td>%50.4</td>
 <td>258</td>
 </tr>
 </tbody></table>
@@ -221,27 +224,27 @@
 <tr>
 <td>Tüm sezon doğruluk</td>
 <td>%51.2 (132/258)</td>
-<td>%50.8 (131/258)</td>
+<td>%50.4 (130/258)</td>
 </tr>
 <tr>
 <td>OOS ikinci yarı doğruluk</td>
 <td>%53.6 (82/153)</td>
-<td>%53.6 (82/153)</td>
+<td>%50.3 (77/153)</td>
 </tr>
 <tr>
 <td>Beraberlik doğruluğu (tüm sezon)</td>
 <td>%0.0 (0/76)</td>
-<td>%7.9 (6/76)</td>
+<td>%40.8 (31/76)</td>
 </tr>
 <tr>
 <td>Ev sahibi doğruluğu</td>
 <td>%73.0 (81/111)</td>
-<td>%69.4 (77/111)</td>
+<td>%55.9 (62/111)</td>
 </tr>
 <tr>
 <td>Deplasman doğruluğu</td>
 <td>%71.8 (51/71)</td>
-<td>%67.6 (48/71)</td>
+<td>%52.1 (37/71)</td>
 </tr>
 </tbody></table>
 
@@ -251,7 +254,7 @@
 <li>Tüm sezon doğruluğu walk-forward kronolojik tahmindir; gelecek sonuçlar o anda görülmüyor.</li>
 <li>Hafta 18+ (ikinci yarı OOS) gerçek bağımsız test penceresine en yakın ölçüm.</li>
 <li>Hiperparametreler (K faktör, blend oranı) bu sezon verisine göre ayarlanmadı; genel futbol pratiğine dayanıyor.</li>
-<li>Draw kalibrasyon eşikleri: min draw_p=0.27, max gap=0.12 (draw_calibrated_prediction).</li>
+<li>Draw kalibrasyon eşikleri: min draw_p=0.26, max gap=0.18, boost=0.12 (draw_calibrated_prediction).</li>
 <li>Canlı kullanım için: HIGH güven → güvenilir sinyal, LOW güven → bilgi amaçlı.</li>
 </ul>
   </div>

@@ -34,7 +34,7 @@ LEAGUE_AVG_GOALS = 2.65
 MIN_REFEREE_MATCHES = 4
 
 DRAW_PRED_MIN_PROB = 0.26   # draw olasılığı bu eşiğin altındaysa beraberlik tahmin edilmez
-DRAW_PRED_MAX_GAP = 0.14    # en iyi yönsel tahmin ile draw arasındaki maksimum fark
+DRAW_PRED_MAX_GAP = 0.18    # en iyi yönsel tahmin ile draw arasındaki maksimum fark (0.14→0.18: recall %29→%41)
 DRAW_BOOST_SCALE = 0.12     # dengeli maçlarda draw olasılığına uygulanacak boost katsayısı
 
 

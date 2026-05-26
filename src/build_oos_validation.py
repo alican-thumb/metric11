@@ -16,6 +16,9 @@ from pathlib import Path
 from src.config import PROCESSED_DIR, SEASON
 from src.html_utils import md_to_html, page_html
 from src.model_league_predictions import (
+    DRAW_BOOST_SCALE,
+    DRAW_PRED_MAX_GAP,
+    DRAW_PRED_MIN_PROB,
     actual_result,
     confidence_label,
     draw_calibrated_prediction,
@@ -81,7 +84,7 @@ def run_walk_forward(matches: list[dict]) -> tuple[list[dict], dict[int, list[di
             draw_p = pred["draw_probability"]
             away_p = pred["away_win_probability"]
             raw_predicted = max({"home": home_p, "draw": draw_p, "away": away_p}, key=lambda k: {"home": home_p, "draw": draw_p, "away": away_p}[k])
-            predicted = draw_calibrated_prediction(home_p, draw_p, away_p)
+            predicted = draw_calibrated_prediction(home_p, draw_p, away_p, pred.get("strength_edge", 0.0))
             row = {
                 "match_id": m["external_id"],
                 "week": week,
@@ -278,7 +281,7 @@ def build_markdown(payload: dict) -> str:
         "- Tüm sezon doğruluğu walk-forward kronolojik tahmindir; gelecek sonuçlar o anda görülmüyor.",
         f"- Hafta {payload['split_week']+1}+ (ikinci yarı OOS) gerçek bağımsız test penceresine en yakın ölçüm.",
         "- Hiperparametreler (K faktör, blend oranı) bu sezon verisine göre ayarlanmadı; genel futbol pratiğine dayanıyor.",
-        "- Draw kalibrasyon eşikleri: min draw_p=0.27, max gap=0.12 (draw_calibrated_prediction).",
+        f"- Draw kalibrasyon eşikleri: min draw_p={DRAW_PRED_MIN_PROB}, max gap={DRAW_PRED_MAX_GAP}, boost={DRAW_BOOST_SCALE} (draw_calibrated_prediction).",
         "- Canlı kullanım için: HIGH güven → güvenilir sinyal, LOW güven → bilgi amaçlı.",
     ])
     return "\n".join(lines)
