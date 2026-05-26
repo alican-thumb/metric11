@@ -30,6 +30,18 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Haber topla (news-refresh fallback)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          python -m src.collect_news_rss
+          python -m src.collect_news_google
+          python -m src.collect_official_club_news
+          python -m src.analyze_news_with_claude --only-relevant
+          python -m src.build_news_intelligence_report
+          python -m src.build_transfer_tracker
+          python -m src.build_live_feed
+
       - name: Rebuild dashboards
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
