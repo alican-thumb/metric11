@@ -280,6 +280,54 @@ class TransferIntelligenceTests(unittest.TestCase):
         self.assertEqual(rumor["to_club"], "Başakşehir")
         self.assertEqual(rumor["direction_quality"], "HEADLINE_EXPLICIT_DIRECTION")
 
+    def test_targeted_operation_headline_extracts_external_player_and_target(self):
+        source = {
+            "title": "Galatasaray'da Can Uzun operasyonu başladı! Milli futbolcunun transferi için dev bütçe ayrıldı",
+            "summary": "",
+            "categories": ["transfer"],
+        }
+
+        rumor = rule_based_analyze(source, {})["transfer_rumors"][0]
+
+        self.assertEqual(rumor["player_name"], "Can Uzun")
+        self.assertEqual(rumor["to_club"], "Galatasaray")
+        self.assertEqual(rumor["signal_type"], "interest")
+
+    def test_allocated_budget_is_not_a_departure_signal(self):
+        source = {
+            "title": "Galatasaray Can Uzun için dev bütçe ayrıldı",
+            "summary": "",
+            "categories": ["transfer"],
+        }
+
+        result = rule_based_analyze(source, {})
+
+        self.assertEqual(result["transfer_rumors"], [])
+
+    def test_targeted_bomb_headline_extracts_external_player_and_target(self):
+        source = {
+            "title": "Fenerbahçe'den Mohamed Salah bombası! Prensipte anlaşma sağlandı",
+            "summary": "",
+            "categories": ["transfer"],
+        }
+
+        rumor = rule_based_analyze(source, {})["transfer_rumors"][0]
+
+        self.assertEqual(rumor["player_name"], "Mohamed Salah")
+        self.assertEqual(rumor["to_club"], "Fenerbahçe")
+
+    def test_fee_headline_extracts_external_player_and_target(self):
+        source = {
+            "title": "Parayı veren Alexander Sörloth'u alır! Fenerbahçe'ye bonservis müjdesi",
+            "summary": "",
+            "categories": ["transfer"],
+        }
+
+        rumor = rule_based_analyze(source, {})["transfer_rumors"][0]
+
+        self.assertEqual(rumor["player_name"], "Alexander Sörloth")
+        self.assertEqual(rumor["to_club"], "Fenerbahçe")
+
     def test_anonymous_outbound_headline_does_not_claim_arrival_to_departing_club(self):
         source = {
             "article_id": "unnamed-departure",

@@ -261,6 +261,8 @@ def rule_based_analyze(article: dict, player_index: dict) -> dict:
     # Transfer sinyalleri
     for pattern, signal_type in TRANSFER_PATTERNS:
         if re.search(pattern, text, re.IGNORECASE):
+            if signal_type == "departure" and re.search(r"\b(?:bütçe|kaynak|kontenjan)\s+ayrıldı\b", text):
+                continue
             if "transfer" not in news_types:
                 news_types.append("transfer")
             transfer_players = [player for player in players if player.get("matched_in_title")]
@@ -312,6 +314,8 @@ def rule_based_analyze(article: dict, player_index: dict) -> dict:
                 direct_player, direct_target = _explicit_direct_transfer_parties(
                     signal_type, title, title_clubs
                 )
+                if not direct_player:
+                    direct_player, direct_target = _explicit_targeted_rumor_parties(title, title_clubs)
                 if direct_player and direct_target:
                     transfer_rumors.append({
                         "player_name": direct_player,
@@ -338,6 +342,19 @@ def rule_based_analyze(article: dict, player_index: dict) -> dict:
                         "direction_quality": "PLAYER_UNRESOLVED",
                     })
             break
+
+    if not transfer_rumors and "transfer" in news_types:
+        direct_player, direct_target = _explicit_targeted_rumor_parties(title, title_clubs)
+        if direct_player and direct_target:
+            transfer_rumors.append({
+                "player_name": direct_player,
+                "from_club": None,
+                "to_club": direct_target,
+                "signal_type": "interest",
+                "window": _detect_window(text),
+                "confidence": "MEDIUM",
+                "direction_quality": "HEADLINE_EXPLICIT_DIRECTION",
+            })
 
     # Sakat sinyalleri
     for pattern, inj_type in INJURY_PATTERNS:
@@ -495,6 +512,27 @@ def _explicit_direct_transfer_parties(
     if len(player.split()) < 2 or any(_same_club(player, club) for club in CLUB_PATTERNS):
         return None, None
     return player, target
+
+
+def _explicit_targeted_rumor_parties(title: str, title_clubs: list[str]) -> tuple[str | None, str | None]:
+    if len(title_clubs) != 1:
+        return None, None
+    target = title_clubs[0]
+    club_pattern = CLUB_PATTERNS[target]
+    person = r"(?P<player>[A-ZÇĞİÖŞÜ][A-Za-zÇĞİÖŞÜçğıöşü.'-]+(?:\s+[A-ZÇĞİÖŞÜ][A-Za-zÇĞİÖŞÜçğıöşü.'-]+){1,3})"
+    fee_person = r"(?P<player>[A-ZÇĞİÖŞÜ][A-Za-zÇĞİÖŞÜçğıöşü.'-]+(?:\s+[A-ZÇĞİÖŞÜ][A-Za-zÇĞİÖŞÜçğıöşü.'-]+){1,2})"
+    patterns = [
+        rf"(?:{club_pattern})['’]?(?:da|de|ta|te)\s+{person}\s+operasyonu\b",
+        rf"(?:{club_pattern})['’]?(?:dan|den|tan|ten)\s+{person}\s+bombası\b",
+        rf"{person}['’]?(?:ın|in|un|ün)\s+(?:{club_pattern})['’]?(?:ya|ye|a|e)\s+transfer",
+        rf"parayı\s+veren\s+{fee_person}['’]?(?:u|ü|ı|i)\s+alır[.!?]?\s*"
+        rf"(?:{club_pattern})['’]?(?:ya|ye|a|e)\s+bonservis",
+    ]
+    for pattern in patterns:
+        match = re.search(pattern, title, re.IGNORECASE)
+        if match:
+            return " ".join(match.group("player").strip(" ,-'’").split()), target
+    return None, None
 
 
 def _headline_indicates_outbound(title: str, club: str) -> bool:

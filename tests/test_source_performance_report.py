@@ -97,7 +97,7 @@ class SourcePerformanceReportTests(unittest.TestCase):
         rows = {item["source"]: item for item in result["sources"]}
         channel = next(item for item in result["provider_measurements"] if item["source"] == "Telegram")
 
-        self.assertEqual(rows["Süper Lig Son Dakika"]["status"], "NO_TRANSFER_CLAIMS")
+        self.assertEqual(rows["Transfer Haber"]["status"], "NO_TRANSFER_CLAIMS")
         self.assertEqual(channel["status"], "NO_TRANSFER_CLAIMS")
 
     def test_retained_early_claim_converts_after_official_announcement_arrives(self):

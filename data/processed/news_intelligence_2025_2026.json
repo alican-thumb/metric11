@@ -1,23 +1,129 @@
 {
-  "generated_at": "2026-05-26T06:50:03.102522+00:00",
+  "generated_at": "2026-05-26T14:36:18.161433+00:00",
   "season": "2025_2026",
   "total_articles": 261,
   "analyzed_articles": 261,
   "transfer_signals": 23,
-  "raw_transfer_mentions": 32,
+  "raw_transfer_mentions": 33,
   "archived_transfer_signals": 29,
   "stale_transfer_mentions_excluded": 6,
   "transfer_status_counts": {
     "OFFICIAL": 0,
-    "CORROBORATED": 0,
-    "RUMOR": 2,
-    "REVIEW_REQUIRED": 21
+    "CORROBORATED": 1,
+    "RUMOR": 4,
+    "REVIEW_REQUIRED": 18
   },
   "injury_signals": 2,
   "suspension_signals": 0,
   "promotion_signals": 2,
   "player_mentions": 472,
   "transfers": [
+    {
+      "player_name": "Mohamed Salah",
+      "from_club": null,
+      "to_club": "Fenerbahçe",
+      "signal_type": "deal_close",
+      "window": "summer_2026",
+      "confidence": "MEDIUM",
+      "direction_quality": "HEADLINE_EXPLICIT_DIRECTION",
+      "article_id": "c52e1ebd106f",
+      "title": "Fenerbahçe'den Mohamed Salah bombası! Prensipte anlaşma sağlandı, işte maaşı - Milliyet",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNcndRNzJYa2c4TUtMYkkyZlEycEhSSGtoTy1GdFpTbXNSSVdpdnd6azE2SmdZRkhlUzV3THZlNDFXZmRLTWQ3YnBQbC13WjlnLUYtZmtFY3FDM3VfdEt0NnVxVnJXNmJwR0dLYmV1SmlDZHV6ejlXcnQwS3JxQzlPdkdrRktrRkF5SnhVWVN1d1BIRWw3M1p2UG5QUDZWcGhXM1lhLUhYNGxUS1d0enZvb3BORy1YbkE?oc=5",
+      "source": "Milliyet",
+      "source_type": "google_news",
+      "account_type": null,
+      "query": "Fenerbahçe transfer",
+      "source_tier": "MEDIA",
+      "published_at": "2026-05-25T09:00:41+00:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "MEDIUM",
+      "verification_status": "CORROBORATED",
+      "interpretation": "Birden fazla kaynak aynı yönlü iddiayı taşıyor; resmi açıklama beklenir.",
+      "source_count": 2,
+      "sources": [
+        "Milliyet",
+        "Takvim Spor"
+      ],
+      "evidence": [
+        {
+          "source": "Milliyet",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Fenerbahçe transfer",
+          "title": "Fenerbahçe'den Mohamed Salah bombası! Prensipte anlaşma sağlandı, işte maaşı - Milliyet",
+          "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNcndRNzJYa2c4TUtMYkkyZlEycEhSSGtoTy1GdFpTbXNSSVdpdnd6azE2SmdZRkhlUzV3THZlNDFXZmRLTWQ3YnBQbC13WjlnLUYtZmtFY3FDM3VfdEt0NnVxVnJXNmJwR0dLYmV1SmlDZHV6ejlXcnQwS3JxQzlPdkdrRktrRkF5SnhVWVN1d1BIRWw3M1p2UG5QUDZWcGhXM1lhLUhYNGxUS1d0enZvb3BORy1YbkE?oc=5",
+          "published_at": "2026-05-25T09:00:41+00:00",
+          "first_observed_at": null
+        },
+        {
+          "source": "Takvim Spor",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Mohamed Salah'ın Fenerbahçe'ye transferini açıkladılar: Türkiye'ye sıcak bakıyor",
+          "link": "https://www.takvim.com.tr/fenerbahce/2026/05/22/mohamed-salahin-fenerbahceye-transferini-acikladilar-turkiyeye-sicak-bakiyor",
+          "published_at": "2026-05-22T19:08:27+03:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": "Can Uzun",
+      "from_club": null,
+      "to_club": "Galatasaray",
+      "signal_type": "transfer_fee",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "HEADLINE_EXPLICIT_DIRECTION",
+      "article_id": "69ba2515f904",
+      "title": "Galatasaray'da Can Uzun operasyonu başladı! Milli futbolcunun transferi için dev bütçe ayrıldı",
+      "link": "https://www.hurriyet.com.tr/sporarena/galatasarayda-can-uzun-operasyonu-basladi-milli-futbolcunun-transferi-icin-dev-butce-ayrildi-43184556",
+      "source": "Hürriyet Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-05-26T05:08:00+00:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "MEDIUM",
+      "verification_status": "RUMOR",
+      "interpretation": "Tek kaynaklı transfer iddiası; yalnız transfer radarında izlenir.",
+      "source_count": 1,
+      "sources": [
+        "Hürriyet Spor",
+        "Hürriyet"
+      ],
+      "evidence": [
+        {
+          "source": "Hürriyet Spor",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Galatasaray'da Can Uzun operasyonu başladı! Milli futbolcunun transferi için dev bütçe ayrıldı",
+          "link": "https://www.hurriyet.com.tr/sporarena/galatasarayda-can-uzun-operasyonu-basladi-milli-futbolcunun-transferi-icin-dev-butce-ayrildi-43184556",
+          "published_at": "2026-05-26T05:08:00+00:00",
+          "first_observed_at": null
+        },
+        {
+          "source": "Hürriyet",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Galatasaray transfer",
+          "title": "Galatasaray'da Can Uzun operasyonu başladı! Milli futbolcunun transferi için dev bütçe ayrıldı - Hürriyet",
+          "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQTVZzcHVjMVZWRnlSMU02VEdPSmUwVHVJWDFEVnQzMEpjT0x1WVVWaWQ2Q1FsNVpGTGEzMWJaQVdITGM5MkZZcktia1VKb1lpWWctOHROY3g3bEZQNTAtVVBCYkZHM2FCclUwMGItcXpjUzkzY1pjb2hJclFEbEdmTHdaWnNyTEUydXlGSzZNMENMcHFzSDFaNW15X2k1aEk1a2hJZ0d6anM5RVZUM1ZJQk1vdkFPZDJYU0ZzWjRlcDNaTGkzRW54QmtoWVNqWnFpbjZiY2N3?oc=5",
+          "published_at": "2026-05-26T05:08:00+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
     {
       "player_name": "Eldar Şomurodov",
       "from_club": null,
@@ -54,6 +160,47 @@
           "title": "Eldar Şomurodov Başakşehir’e transfer oldu - Turkmenportal.com",
           "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxObWhub1kyY25PSTdKbUJDS3dPaG5laDF3a2pzbU9FOTYxZm5DcVlYV181SkRXQmFqTjZMUW1mbWZ6XzBzTGZxM3NEZ0VKZ1ZjUS04eGhYMk5PdXJ2Yy1yZWpGUUxzOThoajRHTWd5Nm12U0NiNC11S09VMFBZVm9WVWVCcnFTN2sydEI3b1UwUUJ3TWNwN1lOTDVPcjF3SWdNWEdxR2JyX2w5VkZIY1I4dk1XUkhPX2dVdmRiLXRB?oc=5",
           "published_at": "2026-05-25T21:03:24+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": "Alexander Sörloth",
+      "from_club": null,
+      "to_club": "Fenerbahçe",
+      "signal_type": "transfer_fee",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "HEADLINE_EXPLICIT_DIRECTION",
+      "article_id": "7c21045f8fef",
+      "title": "Parayı veren Alexander Sörloth'u alır! Fenerbahçe'ye bonservis müjdesi",
+      "link": "https://www.takvim.com.tr/fenerbahce/2026/05/23/parayi-veren-alexander-sorlothu-alir-fenerbahceye-bonservis-mujdesi",
+      "source": "Takvim Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-05-23T15:01:25+03:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "MEDIUM",
+      "verification_status": "RUMOR",
+      "interpretation": "Tek kaynaklı transfer iddiası; yalnız transfer radarında izlenir.",
+      "source_count": 1,
+      "sources": [
+        "Takvim Spor"
+      ],
+      "evidence": [
+        {
+          "source": "Takvim Spor",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Parayı veren Alexander Sörloth'u alır! Fenerbahçe'ye bonservis müjdesi",
+          "link": "https://www.takvim.com.tr/fenerbahce/2026/05/23/parayi-veren-alexander-sorlothu-alir-fenerbahceye-bonservis-mujdesi",
+          "published_at": "2026-05-23T15:01:25+03:00",
           "first_observed_at": null
         }
       ],
@@ -138,59 +285,6 @@
           "title": "Galatasaray'da ayrılık kapıda: Premier Lig ekibine 'evet' dedi!",
           "link": "https://www.hurriyet.com.tr/sporarena/galatasarayda-ayrilik-kapida-premier-lig-devine-evet-dedi-43184567",
           "published_at": "2026-05-26T05:30:00+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": null,
-      "to_club": "Galatasaray",
-      "signal_type": "transfer_fee",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "69ba2515f904",
-      "title": "Galatasaray'da Can Uzun operasyonu başladı! Milli futbolcunun transferi için dev bütçe ayrıldı",
-      "link": "https://www.hurriyet.com.tr/sporarena/galatasarayda-can-uzun-operasyonu-basladi-milli-futbolcunun-transferi-icin-dev-butce-ayrildi-43184556",
-      "source": "Hürriyet Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-05-26T05:08:00+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Hürriyet Spor",
-        "Hürriyet"
-      ],
-      "evidence": [
-        {
-          "source": "Hürriyet Spor",
-          "source_tier": "MEDIA",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "Galatasaray'da Can Uzun operasyonu başladı! Milli futbolcunun transferi için dev bütçe ayrıldı",
-          "link": "https://www.hurriyet.com.tr/sporarena/galatasarayda-can-uzun-operasyonu-basladi-milli-futbolcunun-transferi-icin-dev-butce-ayrildi-43184556",
-          "published_at": "2026-05-26T05:08:00+00:00",
-          "first_observed_at": null
-        },
-        {
-          "source": "Hürriyet",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Galatasaray transfer",
-          "title": "Galatasaray'da Can Uzun operasyonu başladı! Milli futbolcunun transferi için dev bütçe ayrıldı - Hürriyet",
-          "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQTVZzcHVjMVZWRnlSMU02VEdPSmUwVHVJWDFEVnQzMEpjT0x1WVVWaWQ2Q1FsNVpGTGEzMWJaQVdITGM5MkZZcktia1VKb1lpWWctOHROY3g3bEZQNTAtVVBCYkZHM2FCclUwMGItcXpjUzkzY1pjb2hJclFEbEdmTHdaWnNyTEUydXlGSzZNMENMcHFzSDFaNW15X2k1aEk1a2hJZ0d6anM5RVZUM1ZJQk1vdkFPZDJYU0ZzWjRlcDNaTGkzRW54QmtoWVNqWnFpbjZiY2N3?oc=5",
-          "published_at": "2026-05-26T05:08:00+00:00",
           "first_observed_at": null
         }
       ],
@@ -421,47 +515,6 @@
           "title": "Trabzonspor’da yabancı operasyonu başladı! Oulai için beklenti 35 milyon euro",
           "link": "https://www.takvim.com.tr/trabzonspor/2026/05/25/trabzonsporda-yabanci-operasyonu-basladi-oulai-icin-beklenti-35-milyon-euro",
           "published_at": "2026-05-25T11:30:57+03:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": null,
-      "to_club": "Fenerbahçe",
-      "signal_type": "deal_close",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "c52e1ebd106f",
-      "title": "Fenerbahçe'den Mohamed Salah bombası! Prensipte anlaşma sağlandı, işte maaşı - Milliyet",
-      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNcndRNzJYa2c4TUtMYkkyZlEycEhSSGtoTy1GdFpTbXNSSVdpdnd6azE2SmdZRkhlUzV3THZlNDFXZmRLTWQ3YnBQbC13WjlnLUYtZmtFY3FDM3VfdEt0NnVxVnJXNmJwR0dLYmV1SmlDZHV6ejlXcnQwS3JxQzlPdkdrRktrRkF5SnhVWVN1d1BIRWw3M1p2UG5QUDZWcGhXM1lhLUhYNGxUS1d0enZvb3BORy1YbkE?oc=5",
-      "source": "Milliyet",
-      "source_type": "google_news",
-      "account_type": null,
-      "query": "Fenerbahçe transfer",
-      "source_tier": "MEDIA",
-      "published_at": "2026-05-25T09:00:41+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Milliyet"
-      ],
-      "evidence": [
-        {
-          "source": "Milliyet",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Fenerbahçe transfer",
-          "title": "Fenerbahçe'den Mohamed Salah bombası! Prensipte anlaşma sağlandı, işte maaşı - Milliyet",
-          "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNcndRNzJYa2c4TUtMYkkyZlEycEhSSGtoTy1GdFpTbXNSSVdpdnd6azE2SmdZRkhlUzV3THZlNDFXZmRLTWQ3YnBQbC13WjlnLUYtZmtFY3FDM3VfdEt0NnVxVnJXNmJwR0dLYmV1SmlDZHV6ejlXcnQwS3JxQzlPdkdrRktrRkF5SnhVWVN1d1BIRWw3M1p2UG5QUDZWcGhXM1lhLUhYNGxUS1d0enZvb3BORy1YbkE?oc=5",
-          "published_at": "2026-05-25T09:00:41+00:00",
           "first_observed_at": null
         }
       ],
@@ -796,47 +849,6 @@
           "title": "Trabzonspor Edin Vişça ve Anthony Nwakaeme'ye veda etti! Gözyaşlarıyla ayrıldılar",
           "link": "https://www.takvim.com.tr/trabzonspor/2026/05/23/trabzonspor-edin-viscaya-veda-etti-gozyaslariyla-ayrildi",
           "published_at": "2026-05-23T20:35:23+03:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": null,
-      "to_club": "Fenerbahçe",
-      "signal_type": "transfer_fee",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "7c21045f8fef",
-      "title": "Parayı veren Alexander Sörloth'u alır! Fenerbahçe'ye bonservis müjdesi",
-      "link": "https://www.takvim.com.tr/fenerbahce/2026/05/23/parayi-veren-alexander-sorlothu-alir-fenerbahceye-bonservis-mujdesi",
-      "source": "Takvim Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-05-23T15:01:25+03:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Takvim Spor"
-      ],
-      "evidence": [
-        {
-          "source": "Takvim Spor",
-          "source_tier": "MEDIA",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "Parayı veren Alexander Sörloth'u alır! Fenerbahçe'ye bonservis müjdesi",
-          "link": "https://www.takvim.com.tr/fenerbahce/2026/05/23/parayi-veren-alexander-sorlothu-alir-fenerbahceye-bonservis-mujdesi",
-          "published_at": "2026-05-23T15:01:25+03:00",
           "first_observed_at": null
         }
       ],
