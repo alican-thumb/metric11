@@ -48,13 +48,13 @@
 
 ## Takım Zafiyetleri ve Scout İpucu
 
-- HESAP.COM ANTALYASPOR: savunma kırılgan, son bölüm gol yeme riski, kart baskısı, skor üretim sorunu, deplasman zayıf, hücum verimsizliği -> Hızlı stoper, savunmacı 6 numara veya yüksek eforlu bek
+- HESAP.COM ANTALYASPOR: savunma kırılgan, son bölüm gol yeme riski, kart baskısı, skor üretim sorunu, deplasman zayıf, hücum verimsizliği -> Güvenilir kaleci, hızlı stoper veya savunmacı 6 numara — GA ortalaması kritik eşiğin üstünde
 - KASIMPAŞA A.Ş.: son bölüm gol yeme riski, kart baskısı, skor üretim sorunu, deplasman zayıf, hücum verimsizliği -> Maç sonu denge sağlayan fiziksel 8 numara veya savunmacı orta saha
-- ZECORNER KAYSERİSPOR: savunma kırılgan, kart baskısı, skor üretim sorunu, deplasman zayıf, hücum verimsizliği -> Hızlı stoper, savunmacı 6 numara veya yüksek eforlu bek
+- ZECORNER KAYSERİSPOR: savunma kırılgan, kart baskısı, skor üretim sorunu, deplasman zayıf, hücum verimsizliği -> Güvenilir kaleci, hızlı stoper veya savunmacı 6 numara — GA ortalaması kritik eşiğin üstünde
+- GAZİANTEP FUTBOL KULÜBÜ A.Ş.: savunma kırılgan, son bölüm gol yeme riski, kart baskısı, düşük şut baskısı -> Güvenilir kaleci, hızlı stoper veya savunmacı 6 numara — GA ortalaması kritik eşiğin üstünde
 - İKAS EYÜPSPOR: son bölüm gol yeme riski, skor üretim sorunu, deplasman zayıf, hücum verimsizliği -> Maç sonu denge sağlayan fiziksel 8 numara veya savunmacı orta saha
-- MISIRLI.COM.TR FATİH KARAGÜMRÜK: savunma kırılgan, skor üretim sorunu, deplasman zayıf, hücum verimsizliği -> Hızlı stoper, savunmacı 6 numara veya yüksek eforlu bek
-- ÇAYKUR RİZESPOR A.Ş.: savunma kırılgan, son bölüm gol yeme riski, deplasman zayıf -> Hızlı stoper, savunmacı 6 numara veya yüksek eforlu bek
+- MISIRLI.COM.TR FATİH KARAGÜMRÜK: savunma kırılgan, skor üretim sorunu, deplasman zayıf, hücum verimsizliği -> Güvenilir kaleci, hızlı stoper veya savunmacı 6 numara — GA ortalaması kritik eşiğin üstünde
+- ÇAYKUR RİZESPOR A.Ş.: savunma kırılgan, son bölüm gol yeme riski, deplasman zayıf -> Güvenilir kaleci, hızlı stoper veya savunmacı 6 numara — GA ortalaması kritik eşiğin üstünde
 - KOCAELİSPOR: skor üretim sorunu, deplasman zayıf, hücum verimsizliği -> Bireysel gol çözümü: düşük GF oranını kıracak bitirici forvet
-- GAZİANTEP FUTBOL KULÜBÜ A.Ş.: savunma kırılgan, son bölüm gol yeme riski, kart baskısı -> Hızlı stoper, savunmacı 6 numara veya yüksek eforlu bek
-- GENÇLERBİRLİĞİ: skor üretim sorunu, deplasman zayıf -> Ceza sahası koşusu ve bitiricilik üreten forvet/kanat
-- GALATASARAY A.Ş.: kadro derinliği sınırlı -> Kaliteli rotasyon: büyük maç baskısını karşılayacak kanat/bek derinliği
+- GENÇLERBİRLİĞİ: skor üretim sorunu, deplasman zayıf, düşük şut baskısı -> Ceza sahası koşusu ve bitiricilik üreten forvet/kanat
+- GÖZTEPE A.Ş.: kart baskısı, düşük şut baskısı -> Daha kontrollü ikili mücadele profili ve pasla baskı kıran orta saha

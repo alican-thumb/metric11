@@ -248,6 +248,8 @@ def build_weakness_rows(matches: list[dict], team_rows: list[dict]) -> list[dict
             weaknesses.append("deplasman zayıf")
         if profile["goals_for_per_match"] < 1.0:
             weaknesses.append("hücum verimsizliği")
+        if 1.0 <= profile["goals_for_per_match"] < 1.3 and profile["failed_to_score"] >= 7:
+            weaknesses.append("düşük şut baskısı")
         if not weaknesses and profile["points_per_match"] >= 1.5 and profile["goals_against_per_match"] <= 1.2:
             weaknesses.append("kadro derinliği sınırlı")
         rows.append(
@@ -263,7 +265,7 @@ def build_weakness_rows(matches: list[dict], team_rows: list[dict]) -> list[dict
 
 def scout_need_hint(profile: dict, weaknesses: list[str]) -> str:
     if "savunma kırılgan" in weaknesses:
-        return "Hızlı stoper, savunmacı 6 numara veya yüksek eforlu bek"
+        return "Güvenilir kaleci, hızlı stoper veya savunmacı 6 numara — GA ortalaması kritik eşiğin üstünde"
     if "son bölüm gol yeme riski" in weaknesses:
         return "Maç sonu denge sağlayan fiziksel 8 numara veya savunmacı orta saha"
     if "hücum verimsizliği" in weaknesses:
@@ -276,6 +278,8 @@ def scout_need_hint(profile: dict, weaknesses: list[str]) -> str:
         return "Geçiş oyunu taşıyacak fiziksel orta saha/kanat"
     if "kadro derinliği sınırlı" in weaknesses:
         return "Kaliteli rotasyon: büyük maç baskısını karşılayacak kanat/bek derinliği"
+    if "düşük şut baskısı" in weaknesses:
+        return "Hareketli kanat veya ikinci forvet — şut üretimi ve ceza sahası baskısı için"
     return "Mevcut omurgayı derinleştirecek genç rotasyon"
 
 

@@ -11,12 +11,14 @@ from src.config import PROCESSED_DIR
 
 ROLE_MAP = {
     "skor üretim sorunu": ["ST_SCORER", "LW_CREATOR"],
-    "savunma kırılgan": ["CB_DOMINANT", "DM_SECURITY"],
-    "son bölüm gol yeme riski": ["CM_ENGINE", "DM_SECURITY", "CB_DOMINANT"],
+    "savunma kırılgan": ["GK_STABILITY", "CB_DOMINANT", "DM_SECURITY"],
+    "son bölüm gol yeme riski": ["GK_STABILITY", "CM_ENGINE", "DM_SECURITY", "CB_DOMINANT"],
     "kart baskısı": ["DM_SECURITY", "CM_ENGINE"],
     "deplasman zayıf": ["CM_ENGINE", "LW_CREATOR", "FB_TWO_WAY"],
     "hücum verimsizliği": ["ST_SCORER", "LW_CREATOR"],
+    "düşük şut baskısı": ["LW_CREATOR", "ST_SCORER"],
     "kadro derinliği sınırlı": ["LW_CREATOR", "FB_TWO_WAY"],
+    "yeni lig takımı": ["GK_STABILITY", "CB_DOMINANT", "ST_SCORER", "DM_SECURITY"],
     "belirgin zayıflık yok": ["LOW_RISK_REGULAR", "RESALE_VALUE"],
 }
 
@@ -148,6 +150,41 @@ def build_payload(
                 "role_plans": role_plans,
             }
         )
+    # Yükselen takımlar: sezon verisi yok, ihtiyaç tahmini template'den
+    promoted_teams = {"ÇORUM FK", "ERZURUMSPOR FK", "AMED SFK"}
+    existing_teams = {b["team"] for b in blueprints}
+    for promo_team in promoted_teams:
+        if promo_team not in existing_teams:
+            promo_weakness = "yeni lig takımı"
+            required_roles = roles_for_weaknesses([promo_weakness])
+            role_plans = []
+            for role_key in required_roles[:4]:
+                candidates = [
+                    c for c in role_candidates.get(role_key, [])
+                    if c.get("team") not in promoted_teams and candidate_matches_role(c, role_key)
+                ][:5]
+                role_plans.append({
+                    "role_key": role_key,
+                    "role_label": ROLE_LABELS.get(role_key, role_key),
+                    "reason": f"Süper Lig'e yeni çıkan takım; {ROLE_LABELS.get(role_key, role_key)} pozisyonunda deneyimli takviye kritik.",
+                    "top_candidates": candidates,
+                })
+            blueprints.append({
+                "team": promo_team,
+                "overall_power_score": None,
+                "points_per_match": None,
+                "goals_for_per_match": None,
+                "goals_against_per_match": None,
+                "cards_for_per_match": None,
+                "main_scoring_window": None,
+                "main_conceding_window": None,
+                "weakness_count": 4,
+                "weaknesses": [promo_weakness],
+                "scout_need_hint": "Süper Lig deneyimli kaleci, stoper ve santrfor takviyesi — serbest ajan ve kiralık öncelikli.",
+                "required_roles": required_roles,
+                "role_plans": role_plans,
+            })
+
     blueprints.sort(key=lambda item: (item["weakness_count"], -(item.get("overall_power_score") or 0)), reverse=True)
     return {
         "summary": {
@@ -226,6 +263,9 @@ def league_proxy_roles(player: dict) -> list[tuple[str, float]]:
         roles.append(("CM_ENGINE", load + starts * 1.2 + min(18, cards * 1.5)))
     if starts >= 20 and goals <= 5 and 3 <= cards <= 9 and not defensive_dominant:
         roles.append(("FB_TWO_WAY", load + starts * 1.1 + max(0, 8 - goals)))
+    # GK proxy: çok maç oynadı, hiç gol atmadı, çok az kart — pozisyon filtresi candidate_matches_role'da uygulanır
+    if starts >= 20 and goals == 0 and cards <= 2:
+        roles.append(("GK_STABILITY", load + starts * 2.0))
     return [(role_key, round(max(0, score), 2)) for role_key, score in roles if score >= 70]
 
 
@@ -360,6 +400,8 @@ def role_reason(role_key: str, weaknesses: list[str], profile: dict) -> str:
         return "Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir."
     if role_key == "DM_SECURITY":
         return "Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir."
+    if role_key == "GK_STABILITY":
+        return f"Savunma kırılganlığında kaleci istikrarı önceliği; GA ortalaması {profile.get('goals_against_per_match')} — güvenilir kaleci pozisyonu kritik."
     if role_key == "CB_DOMINANT":
         return f"Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA {profile.get('goals_against_per_match')}."
     if role_key == "FB_TWO_WAY":
