@@ -229,8 +229,10 @@ Parse edilen alanlar:
 
 ## 2026-05-25 Haber Kalitesi İyileştirmeleri (Session 3 — devam)
 
-### Telegram Kanal Genişletmesi (collect_news_telegram.py)
-- Toplam kanal sayısı 6'dan 11'e çıktı. Eklenen kanallar: `sporxhaber`, `futbolhaber`, `transferturkiye`, `superligtransfer`, `basaksehirhaberleri`.
+### Telegram Kanal Genişletmesi ve Erişilebilirlik Testi (collect_news_telegram.py)
+- Toplam kanal sayısı 6'dan 7'ye çıktı (11 denendi, 4 kaldırıldı).
+- Test sonuçları: `superligson`, `futbolhaber`, `superligtransfer`, `basaksehirhaberleri` public preview kapalı/aktif değil — bu 4 kanal kaldırıldı (her çalışmada 12 sn boşuna bekleme önlendi).
+- Aktif kanallar: `transferhaber` (20), `sporxhaber` (7), `transferturkiye` (5), `besiktashaberleri` (20), `fenerbahcehaberleri` (4), `galatasarayhaberleri` (5), `trabzonsporhaberleri` (2).
 - Kanallar "Transfer/genel sinyal" ve "Kulüp bazlı" kategorileri altında yorumlandı.
 
 ### Kaynak Güvenilirlik Skoru (build_live_feed.py)
