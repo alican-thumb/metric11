@@ -1151,8 +1151,9 @@ python -m src.simulate_player_match_impact --preview data/processed/previews_bes
 - Açık yön taşıyan dış oyuncu başlığı (`Eldar Şomurodov Başakşehir'e transfer oldu`) oyuncu veritabanında yer almasa da yönlü `RUMOR` olarak çözümlenir. `Galatasaray'da ayrılık` benzeri anonim gidiş başlıkları geliş transferi gibi yazılmaz, `REVIEW_REQUIRED` olarak korunur.
 - Hedef kulübü açıkça geçen dış oyuncu manşetleri (`Can Uzun` operasyonu, `Mohamed Salah` bombası, `Alexander Sörloth` bonservis haberi) veritabanında oyuncu kaydı bulunmasa da yönlü söylentiye çevrilir; yalnız açık isim-hedef ilişkisi olan başlıklarda uygulanır.
 - `Bütçe ayrıldı` ifadesi artık oyuncu ayrılığı sinyali sayılmaz; aynı başlıktaki doğrulanabilir transfer ilgisi korunurken yanlış gidiş yönü engellenir.
+- `Kulüp'te bir ayrılık daha`, `isimle yollar ayrılıyor` ve `transfer için ayrılacaklar` biçimindeki anonim ayrılık başlıkları, oyuncu tahmini yapılmadan kulüpten çıkış yönünde tutulur.
 - Güncel snapshot sonucu: `33` ham transfer mention'ından `23` tekil canlı iddia; `1` çoklu kaynaklı iddia, `4` yönlü söylenti ve `18` inceleme kaydı. Önceki güncellik filtresinin bastırdığı `6` eski/tarihsiz mention tarihsel alanda kalmaya devam eder.
-- Doğrulama: `.venv/bin/python -m unittest discover -s tests`, `.venv/bin/python -m compileall -q src tests` ve `git diff --check` başarılı (`57/57` test).
+- Doğrulama: `.venv/bin/python -m unittest discover -s tests`, `.venv/bin/python -m compileall -q src tests` ve `git diff --check` başarılı (`58/58` test).
 
 ## 2026-05-26 Oyuncu-Haber Eşleştirme ve Formasyonel Uyum (Session 4)
 

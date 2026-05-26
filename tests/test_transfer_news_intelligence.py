@@ -351,6 +351,22 @@ class TransferIntelligenceTests(unittest.TestCase):
         self.assertEqual(claim["from_club"], "Galatasaray")
         self.assertEqual(claim["verification_status"], "REVIEW_REQUIRED")
 
+    def test_anonymous_internal_departure_wording_is_outbound(self):
+        headlines = [
+            ("Galatasaray'da Dursun Özbek'ten transfer kararı! 2 isimle yollar ayrılıyor", "Galatasaray"),
+            ("Trabzonspor'da bir ayrılık daha! Görev tamamlandı sözleriyle gitti", "Trabzonspor"),
+            ("Trabzonspor'da dev revizyon! Transfer için ayrılacaklar belli oldu", "Trabzonspor"),
+        ]
+
+        for title, club in headlines:
+            with self.subTest(title=title):
+                rumor = rule_based_analyze(
+                    {"title": title, "summary": "Oyuncu takımdan ayrılacak.", "categories": ["transfer"]},
+                    {},
+                )["transfer_rumors"][0]
+                self.assertEqual(rumor["from_club"], club)
+                self.assertIsNone(rumor["to_club"])
+
     def test_same_publisher_republication_does_not_create_corroboration(self):
         transfer_a = {
             "player_name": "Ali Örnek",

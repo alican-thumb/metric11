@@ -539,6 +539,7 @@ def _headline_indicates_outbound(title: str, club: str) -> bool:
     club_pattern = CLUB_PATTERNS.get(club)
     if not club_pattern:
         return False
+    locative_club = rf"(?:{club_pattern})['’]?(?:da|de|ta|te)\b"
     return bool(
         re.search(
             rf"(?:{club_pattern})['’]?(?:dan|den|tan|ten)\b[^.!?]*\btransfer\b",
@@ -546,9 +547,18 @@ def _headline_indicates_outbound(title: str, club: str) -> bool:
             re.IGNORECASE,
         )
         or re.search(
-            rf"(?:{club_pattern})['’]?(?:da|de|ta|te)\s+ayrılık",
+            rf"{locative_club}\s+ayrılık",
             title,
             re.IGNORECASE,
+        )
+        or (
+            re.search(locative_club, title, re.IGNORECASE)
+            and re.search(
+                r"\b(?:bir\s+ayrılık\s+daha|(?:\d+\s+)?isimle\s+yollar\s+ayrılıyor|"
+                r"transfer\s+için\s+ayrılacaklar)\b",
+                title,
+                re.IGNORECASE,
+            )
         )
     )
 

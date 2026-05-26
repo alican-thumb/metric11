@@ -369,9 +369,27 @@ def build_html(payload: dict) -> str:
     .pill {{ display:inline-flex; min-height:23px; align-items:center; border-radius:999px; padding:0 8px; font-size:12px; border:1px solid #bbd7f5; color:var(--blue); background:#edf5ff; }}
     @media (max-width:900px) {{ .metrics {{ grid-template-columns:1fr 1fr; }} main {{ padding:14px; }} header {{ padding:22px; }} table {{ font-size:12px; }} }}
     @media (max-width:620px) {{ .metrics {{ grid-template-columns:1fr; }} }}
+    .topbar{{position:sticky;top:0;z-index:5;display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:52px;padding:0 clamp(16px,4vw,42px);background:#111318;color:white;border-bottom:2px solid #1a3023;}}
+    .brand{{display:flex;gap:8px;align-items:center;font-weight:800;font-size:17px;color:white;text-decoration:none;}}
+    .brand:visited,.brand:hover{{color:white;}}
+    .brand-mark{{width:26px;height:26px;display:grid;place-items:center;border-radius:5px;color:#111318;background:#a3e635;font-size:13px;font-weight:900;}}
+    nav{{display:flex;gap:2px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;}}
+    nav::-webkit-scrollbar{{display:none;}}
+    nav a{{color:#8fa89a;text-decoration:none;font-size:13px;font-weight:600;padding:8px 10px;border-radius:6px;white-space:nowrap;}}
+    nav a:hover,nav a.active{{background:#162b20;color:white;}}
   </style>
 </head>
 <body>
+  <div class="topbar">
+    <a class="brand" href="/"><span class="brand-mark">11</span> metric11</a>
+    <nav>
+      <a href="/">Gündem</a>
+      <a href="transfer_tracker_2025_2026.html">Transferler</a>
+      <a href="all_teams_preview_dashboard_2025_2026.html">Maç Önü</a>
+      <a class="active" href="transfer_recommendation_report_2025_2026.html">Scout</a>
+      <a href="football_intelligence_home.html">Analiz</a>
+    </nav>
+  </div>
   <header>
     <h1>{escape(payload['team'])} Pozisyon Bazlı Scout Matrisi</h1>
     <p>Her rol için adaylar takım ihtiyacı, yaş, sözleşme fırsatı, tahmini fiziksel yük, gol/ilk 11/kart profili ve dış veri sinyaliyle puanlanır.</p>
