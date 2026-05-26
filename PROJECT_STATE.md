@@ -1531,3 +1531,11 @@ Bir sonraki oturumda önce `PROJECT_STATE.md` okunmalı. Ardından öncelik:
 - OG Image: `data/processed/og-image.png` üretildi (1200×630 Pillow PNG). Tüm 10 HTML builder dosyasında `og:image` SVG→PNG ve göreceli→mutlak URL (`https://metric11.com/og-image.png`); Twitter/X kart önizlemesi düzeltildi.
 - `collect_news_telegram.py`: Aktif olmayan 4 kanal kaldırıldı (superligson, futbolhaber, superligtransfer, basaksehirhaberleri); aktif kanal sayısı 11→7.
 - Secondary page topbarlar: `build_fm_style_scout_program.py`, `build_league_intelligence_report.py`, `build_position_scout_matrix.py`, `build_enriched_scout_dashboard.py`, `build_team_needs_dashboard.py` — 5 dosyaya standart sticky metric11 topbar eklendi.
+
+## 2026-05-26 Site Geneli Nav Tutarlılığı (Session 6 — devam)
+
+- `html_utils.py`: `_is_transfer_season()` (18 Mayıs–1 Eylül 2026 arası True), `preview_nav_label()` (public) ve `_build_nav(active)` fonksiyonları eklendi. `page_html()` artık `active_nav` parametresi alıyor ve dinamik nav üretiyor.
+- `build_product_home.py` (Analiz sayfası): Transfer sezonunda header "Oyuncuyu değerlendir. Kadroyu kur. Transferi takip et." / "Transfer Sezonu Raporu" CTA; featured card'lar transfer araçlarını (Transfer Sezonu Bağlam, Transfer Takip, Transfer Tavsiye, Komuta Merkezi) öne çıkarıyor. Nav "Arşiv" etiketiyle güncellendi.
+- 7 inline-nav dosyasına `preview_nav_label()` import edildi: `build_news_intelligence_report.py`, `build_all_teams_preview_dashboard.py`, `build_transfer_recommendation_report.py`, `build_transfer_tracker.py`, `build_command_center.py`, `build_dashboard.py`, `build_league_intelligence_report.py`.
+- Tüm site (54 HTML, 18 takım dashboard dahil) rebuild edildi; her sayfada nav "Arşiv" etiketiyle tutarlı.
+- Command center header "Beşiktaş maç önü raporları" → "Süper Lig tahmin kontrolü, gol adayı performansı, transfer radar ve scout kararları" olarak güncellendi.
