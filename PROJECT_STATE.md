@@ -1152,8 +1152,9 @@ python -m src.simulate_player_match_impact --preview data/processed/previews_bes
 - Hedef kulübü açıkça geçen dış oyuncu manşetleri (`Can Uzun` operasyonu, `Mohamed Salah` bombası, `Alexander Sörloth` bonservis haberi) veritabanında oyuncu kaydı bulunmasa da yönlü söylentiye çevrilir; yalnız açık isim-hedef ilişkisi olan başlıklarda uygulanır.
 - `Bütçe ayrıldı` ifadesi artık oyuncu ayrılığı sinyali sayılmaz; aynı başlıktaki doğrulanabilir transfer ilgisi korunurken yanlış gidiş yönü engellenir.
 - `Kulüp'te bir ayrılık daha`, `isimle yollar ayrılıyor` ve `transfer için ayrılacaklar` biçimindeki anonim ayrılık başlıkları, oyuncu tahmini yapılmadan kulüpten çıkış yönünde tutulur.
-- Güncel snapshot sonucu: `33` ham transfer mention'ından `23` tekil canlı iddia; `1` çoklu kaynaklı iddia, `4` yönlü söylenti ve `18` inceleme kaydı. Önceki güncellik filtresinin bastırdığı `6` eski/tarihsiz mention tarihsel alanda kalmaya devam eder.
-- Doğrulama: `.venv/bin/python -m unittest discover -s tests`, `.venv/bin/python -m compileall -q src tests` ve `git diff --check` başarılı (`58/58` test).
+- Kadrodaki oyuncunun tekil soyadı başlıkta ve kendi kulübüyle birlikte geçiyorsa güvenli biçimde mevcut oyuncuya bağlanır: `Oulai` bonservis haberi anonim Trabzonspor gelişi yerine hedefi bilinmeyen Trabzonspor çıkış iddiası olur. Aynı oyuncu ve aynı çıkış kulübüne ait hedefi belirsiz kanıtlar tek olayda birleşir.
+- Güncel snapshot sonucu: `33` ham transfer mention'ından `22` tekil canlı iddia; `1` çoklu kaynaklı iddia, `4` yönlü söylenti ve `17` inceleme kaydı. Önceki güncellik filtresinin bastırdığı `6` eski/tarihsiz mention tarihsel alanda kalmaya devam eder.
+- Doğrulama: `.venv/bin/python -m unittest discover -s tests`, `.venv/bin/python -m compileall -q src tests` ve `git diff --check` başarılı (`61/61` test).
 
 ## 2026-05-26 Oyuncu-Haber Eşleştirme ve Formasyonel Uyum (Session 4)
 

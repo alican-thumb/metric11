@@ -328,6 +328,43 @@ class TransferIntelligenceTests(unittest.TestCase):
         self.assertEqual(rumor["player_name"], "Alexander Sörloth")
         self.assertEqual(rumor["to_club"], "Fenerbahçe")
 
+    def test_unique_current_club_surname_identifies_outbound_player(self):
+        source = {
+            "title": "Trabzonspor'da yabancı operasyonu başladı! Oulai için beklenti 35 milyon euro",
+            "summary": "Bonservis bedeli konuşuluyor.",
+            "categories": ["transfer"],
+        }
+        player_index = {
+            "CHRIST RAVYNEL INAO OULAI": {
+                "name": "CHRIST RAVYNEL INAO OULAI",
+                "club": "TRABZONSPOR A.Ş.",
+            },
+        }
+
+        rumor = rule_based_analyze(source, player_index)["transfer_rumors"][0]
+
+        self.assertEqual(rumor["player_name"], "CHRIST RAVYNEL INAO OULAI")
+        self.assertEqual(rumor["from_club"], "TRABZONSPOR A.Ş.")
+        self.assertIsNone(rumor["to_club"])
+
+    def test_surname_only_does_not_identify_player_for_other_club_headline(self):
+        source = {
+            "title": "Fenerbahçe Oulai için bonservis bedeli hazırladı",
+            "summary": "",
+            "categories": ["transfer"],
+        }
+        player_index = {
+            "CHRIST RAVYNEL INAO OULAI": {
+                "name": "CHRIST RAVYNEL INAO OULAI",
+                "club": "TRABZONSPOR A.Ş.",
+            },
+        }
+
+        rumor = rule_based_analyze(source, player_index)["transfer_rumors"][0]
+
+        self.assertIsNone(rumor["player_name"])
+        self.assertEqual(rumor["to_club"], "Fenerbahçe")
+
     def test_anonymous_outbound_headline_does_not_claim_arrival_to_departing_club(self):
         source = {
             "article_id": "unnamed-departure",
@@ -388,6 +425,29 @@ class TransferIntelligenceTests(unittest.TestCase):
         self.assertEqual(result["transfer_signals"], 1)
         self.assertEqual(result["transfers"][0]["verification_status"], "RUMOR")
         self.assertEqual(result["transfers"][0]["source_count"], 1)
+        self.assertEqual(len(result["transfers"][0]["evidence"]), 2)
+
+    def test_directional_outbound_claims_merge_without_known_destination(self):
+        transfer_fee = {
+            "player_name": "Christ Inao Oulai",
+            "from_club": "TRABZONSPOR A.Ş.",
+            "to_club": None,
+            "signal_type": "transfer_fee",
+            "confidence": "MEDIUM",
+        }
+        offer = {**transfer_fee, "signal_type": "offer"}
+
+        result = build_intelligence(
+            [
+                article("fee-claim", "Takvim Spor", transfer_fee),
+                article("offer-claim", "Takvim Spor", offer),
+            ],
+            {},
+        )
+
+        self.assertEqual(result["transfer_signals"], 1)
+        self.assertEqual(result["transfers"][0]["from_club"], "TRABZONSPOR A.Ş.")
+        self.assertIsNone(result["transfers"][0]["to_club"])
         self.assertEqual(len(result["transfers"][0]["evidence"]), 2)
 
     def test_anonymous_same_headline_republication_collapses_to_one_claim(self):

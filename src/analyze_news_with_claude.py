@@ -232,9 +232,11 @@ def rule_based_analyze(article: dict, player_index: dict) -> dict:
             first = normalize_name(parts[0])
             if len(last) < 4 or last not in normalized_text:
                 continue
+            surname_in_title = bool(re.search(rf"\b{re.escape(last)}\b", normalized_title))
             candidate_match = {
                 "confidence": "HIGH" if first in normalized_text else "MEDIUM",
-                "matched_in_title": last in normalized_title and first in normalized_title,
+                "matched_in_title": surname_in_title and first in normalized_title,
+                "_surname_in_title": surname_in_title,
             }
             if match is None or candidate_match["matched_in_title"]:
                 match = candidate_match
@@ -266,6 +268,14 @@ def rule_based_analyze(article: dict, player_index: dict) -> dict:
             if "transfer" not in news_types:
                 news_types.append("transfer")
             transfer_players = [player for player in players if player.get("matched_in_title")]
+            if not transfer_players:
+                current_club_surname_players = [
+                    player for player in players
+                    if player.get("_surname_in_title")
+                    and any(_same_club(player.get("current_club"), club) for club in title_clubs)
+                ]
+                if len(current_club_surname_players) == 1:
+                    transfer_players = current_club_surname_players
             candidate_clubs = list(title_clubs)
             if article.get("account_type") == "official" and article.get("related_team"):
                 candidate_clubs.append(article["related_team"])
@@ -421,7 +431,10 @@ def rule_based_analyze(article: dict, player_index: dict) -> dict:
         "news_types": _unique_in_order(news_types) or ["general"],
         "super_lig_relevant": bool(mentioned_clubs or mentioned_players),
         "mentioned_clubs": mentioned_clubs,
-        "players": players[:5],
+        "players": [
+            {key: value for key, value in player.items() if key != "_surname_in_title"}
+            for player in players[:5]
+        ],
         "transfer_rumors": transfer_rumors[:3],
         "injuries": injuries[:3],
         "suspensions": suspensions[:3],
@@ -786,7 +799,9 @@ def _aggregate_transfer_mentions(mentions: list[dict]) -> list[dict]:
             normalized["to_club"] = None
             normalized["direction_quality"] = "TARGET_MATCHES_CURRENT_CLUB"
         player_key = normalize_name(normalized.get("player_name")) or "PLAYER_UNRESOLVED"
-        if normalized.get("player_name") and normalized.get("to_club"):
+        if normalized.get("player_name") and (
+            normalized.get("from_club") or normalized.get("to_club")
+        ):
             event_key = "DIRECTIONAL_EVENT"
         else:
             event_key = f"STORY:{_headline_key(normalized.get('title')) or normalized.get('article_id')}"
