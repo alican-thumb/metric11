@@ -1500,6 +1500,12 @@ Bir sonraki oturumda önce `PROJECT_STATE.md` okunmalı. Ardından öncelik:
 - ✅ Transfer penceresi mantığı doğrulandı: 1 Haziran 2026'da otomatik "açık" moda geçiyor, 1 Eylül'de kapanıyor.
 - `og-image.svg` tagline güncellemesi yapılmadı (mevcut: "Maç Tahminleri · Scout · Transfer İstihbaratı").
 
+## 2026-05-26 Pipeline Kararlılık Düzeltmeleri (Session 5)
+
+- `build_dashboard.py`: Python 3.11 f-string triple-quote (`"""` inside `f"""`) uyumsuzluğu giderildi. `off_season_banner` değişkenine taşındı. GitHub Actions 3.11 kullanıyor; bu desen Python 3.12+'da çalışır.
+- `refresh.yml`: `git pull --rebase` → `git pull -X ours` değiştirildi. Codex ve runner aynı anda `data/processed/` dosyalarına yazdığında artık rebase çakışması yaşanmıyor; taze build edilen dosyalar her zaman kazanıyor.
+- Son 3 schedule çalışması failure idi (25.05 19:57, 26.05 04:32, 26.05 10:17); 26.05 14:51 çalışması `build_dashboard` ve `news` adımlarını geçti, push çakışmasında battı. Bu commit sonrası pipeline stabil olmalı.
+
 ## 2026-05-26 Codex - Sezon Sınırı ve Transfermarkt Eşleme Güveni
 
 - Tarihsel analiz sezonu (`2025_2026`) ile canlı transfer izleme sezonu (`2026_2027`) ayrıldı. `config.py` içinde `TRANSFER_WATCH_SEASON` tanımlandı; Haziran-Ağustos 2026 canlı haber/transfer yüzeyleri artık `2026-2027` etiketi gösterir.
