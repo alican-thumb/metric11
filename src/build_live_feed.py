@@ -278,9 +278,10 @@ def build_html() -> str:
 <meta name="description" content="Süper Lig transfer haberleri, sakat-cezalı listesi ve güncel transfer takibi. Tüm kaynaklar tek sayfada — metric11.">
 <meta property="og:title" content="Gündem — Süper Lig {TRANSFER_WATCH_SEASON_LABEL} | metric11">
 <meta property="og:description" content="Süper Lig transfer haberleri, sakat-cezalı listesi ve güncel transfer takibi.">
-<meta property="og:image" content="/og-image.svg">
+<meta property="og:image" content="https://metric11.com/og-image.png">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://metric11.com/og-image.png">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="canonical" href="https://metric11.com/">
 <style>

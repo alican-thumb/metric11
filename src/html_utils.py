@@ -75,9 +75,10 @@ def page_html(title: str, body_html: str, description: str = "Süper Lig maç ta
         f'  <meta name="description" content="{_d}">\n'
         f'  <meta property="og:title" content="{_t} — metric11">\n'
         f'  <meta property="og:description" content="{_d}">\n'
-        '  <meta property="og:image" content="/og-image.svg">\n'
+        '  <meta property="og:image" content="https://metric11.com/og-image.png">\n'
         '  <meta property="og:type" content="website">\n'
         '  <meta name="twitter:card" content="summary_large_image">\n'
+        '  <meta name="twitter:image" content="https://metric11.com/og-image.png">\n'
         '  <meta name="theme-color" content="#091810">\n'
         '  <link rel="icon" href="favicon.svg" type="image/svg+xml">\n'
         f"  <style>{_CSS}  </style>\n"

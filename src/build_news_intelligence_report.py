@@ -102,9 +102,10 @@ def build_html(intel: dict) -> str:
 <meta name="description" content="Süper Lig güncel haberleri: transfer iddiaları, sakat listesi, ceza kararları ve resmi açıklamalar — metric11.">
 <meta property="og:title" content="Haber İstihbaratı — Süper Lig {TRANSFER_WATCH_SEASON_LABEL} | metric11">
 <meta property="og:description" content="Süper Lig güncel haberleri: transfer iddiaları, sakat listesi, ceza kararları ve resmi açıklamalar.">
-<meta property="og:image" content="/og-image.svg">
+<meta property="og:image" content="https://metric11.com/og-image.png">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://metric11.com/og-image.png">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <style>
   * {{ box-sizing: border-box; margin: 0; padding: 0; }}

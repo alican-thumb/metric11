@@ -120,9 +120,10 @@ def build_html(summary: dict, previews: list[dict], goal_backtest: dict, team_na
   <meta name="description" content="{escape(team_name)} 2025/26 sezonu maç önü analizleri: olasılıklar, gol adayları ve kadro sinyali — metric11.">
   <meta property="og:title" content="{escape(team_name)} Maç Önü — metric11">
   <meta property="og:description" content="{escape(team_name)} 2025/26 sezonu maç önü analizleri: olasılıklar, gol adayları ve kadro sinyali.">
-  <meta property="og:image" content="/og-image.svg">
+  <meta property="og:image" content="https://metric11.com/og-image.png">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://metric11.com/og-image.png">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <style>
     :root {{

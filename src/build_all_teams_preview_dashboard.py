@@ -66,9 +66,10 @@ def build_html(team_data: list[dict]) -> str:
 <meta name="description" content="Süper Lig tüm takımlarının maç önü analizleri: olasılıklar, gol adayları, kadro sinyali ve hakem etkisi — metric11.">
 <meta property="og:title" content="Maç Önü Arşivi — Süper Lig {SEASON_LABEL} | metric11">
 <meta property="og:description" content="Süper Lig tüm takımlarının maç önü analizleri: olasılıklar, gol adayları, kadro sinyali ve hakem etkisi.">
-<meta property="og:image" content="/og-image.svg">
+<meta property="og:image" content="https://metric11.com/og-image.png">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://metric11.com/og-image.png">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <style>
   :root {{ --bg:#f3f5f4; --panel:#fff; --ink:#132018; --muted:#627067; --line:#d7ded9; --dark:#091810; --green:#116447; --lime:#cde94e; --red:#bd2936; --amber:#aa6b00; --blue:#22618c; }}

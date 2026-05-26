@@ -160,7 +160,7 @@ def build_html(payload: dict) -> str:
   <title>Analiz Merkezi — metric11</title>
   <meta name="description" content="Tahmin performansı, maç önü arşivi, gol adayları ve scout kararları tek ekranda.">
   <meta property="og:title" content="Analiz Merkezi — metric11">
-  <meta property="og:image" content="/og-image.svg">
+  <meta property="og:image" content="https://metric11.com/og-image.png">
   <meta name="theme-color" content="#091810">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <style>

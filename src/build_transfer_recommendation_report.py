@@ -638,9 +638,10 @@ def build_html(report: dict) -> str:
 <meta name="description" content="Süper Lig takımlarına pozisyon bazlı transfer önerileri: piyasa değeri, sözleşme durumu ve performans analizi — metric11.">
 <meta property="og:title" content="Scout Raporu — Süper Lig {SEASON_LABEL} | metric11">
 <meta property="og:description" content="Süper Lig takımlarına pozisyon bazlı transfer önerileri: piyasa değeri, sözleşme durumu ve performans analizi.">
-<meta property="og:image" content="/og-image.svg">
+<meta property="og:image" content="https://metric11.com/og-image.png">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://metric11.com/og-image.png">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <style>
   * {{ box-sizing: border-box; margin: 0; padding: 0; }}
