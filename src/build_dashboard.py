@@ -9,6 +9,158 @@ from pathlib import Path
 from src.config import PROCESSED_DIR, SEASON
 from src.html_utils import preview_nav_label
 
+TRANSFER_SEASON_START = datetime(2026, 5, 18, tzinfo=timezone.utc)
+TRANSFER_SEASON_END   = datetime(2026, 9, 1, tzinfo=timezone.utc)
+
+# Slug → transfer sinyallerindeki kulüp adı eşleştirmesi
+SLUG_TO_TRANSFER_NAME: dict[str, str] = {
+    "besiktas": "Beşiktaş",
+    "galatasaray": "Galatasaray",
+    "fenerbahce": "Fenerbahçe",
+    "trabzonspor": "Trabzonspor",
+    "basaksehir": "Başakşehir",
+    "alanyaspor": "Alanyaspor",
+    "samsunspor": "Samsunspor",
+    "goztepe": "Göztepe",
+    "konyaspor": "Konyaspor",
+    "rizespor": "Rizespor",
+    "gaziantep": "Gaziantep FK",
+    "kasimpasa": "Kasımpaşa",
+    "kocaelispor": "Kocaelispor",
+    "eyupspor": "Eyüpspor",
+    "genclerbirligi": "Gençlerbirliği",
+    "karagumruk": "Fatih Karagümrük",
+    "antalyaspor": "Antalyaspor",
+    "kayserispor": "Kayserispor",
+}
+
+TFF_CLUB_FRAGMENTS: dict[str, str] = {
+    "besiktas": "BEŞİKTAŞ",
+    "galatasaray": "GALATASARAY",
+    "fenerbahce": "FENERBAHÇE",
+    "trabzonspor": "TRABZONSPOR",
+    "basaksehir": "BAŞAKŞEHİR",
+    "alanyaspor": "ALANYA",
+    "samsunspor": "SAMSUN",
+    "goztepe": "GÖZTEPE",
+    "konyaspor": "KONYA",
+    "rizespor": "RİZE",
+    "gaziantep": "GAZİANTEP",
+    "kasimpasa": "KASIMPAŞA",
+    "kocaelispor": "KOCAELİ",
+    "eyupspor": "EYÜP",
+    "genclerbirligi": "GENÇLERBİRLİĞİ",
+    "karagumruk": "KARAGÜMRÜK",
+    "antalyaspor": "ANTALYA",
+    "kayserispor": "KAYSERİ",
+}
+
+
+def _is_transfer_season() -> bool:
+    now = datetime.now(timezone.utc)
+    return TRANSFER_SEASON_START <= now <= TRANSFER_SEASON_END
+
+
+def _load_json(path: Path) -> dict:
+    return json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
+
+
+def _mv(eur: int | None) -> str:
+    if not eur:
+        return ""
+    if eur >= 1_000_000:
+        return f" · €{eur / 1_000_000:.1f}M"
+    return f" · €{eur // 1000}K"
+
+
+def _transfer_window_section(slug: str, team_display: str) -> str:
+    transfer_name = SLUG_TO_TRANSFER_NAME.get(slug, team_display)
+    tff_fragment = TFF_CLUB_FRAGMENTS.get(slug, team_display.upper())
+
+    # Transfer sinyalleri
+    intel = _load_json(PROCESSED_DIR / f"news_intelligence_{SEASON}.json")
+    all_signals = intel.get("transfers", [])
+    team_signals = [
+        s for s in all_signals
+        if (s.get("to_club") or "").lower() == transfer_name.lower()
+        or (s.get("from_club") or "").lower() == transfer_name.lower()
+    ]
+
+    # Sözleşme bitenler (transfer_season_context)
+    ctx = _load_json(PROCESSED_DIR / f"transfer_season_context_{SEASON}.json")
+    free_agents = [
+        p for p in ctx.get("free_agents_top20", [])
+        if tff_fragment in (p.get("team") or "").upper()
+    ]
+    final_year = [
+        p for p in ctx.get("final_year_top20", [])
+        if tff_fragment in (p.get("team") or "").upper()
+    ]
+
+    if not team_signals and not free_agents and not final_year:
+        return ""
+
+    rows_html = ""
+    STATUS_COLOR = {
+        "OFFICIAL": ("#16a34a", "#dcfce7", "RESMİ"),
+        "CORROBORATED": ("#2563eb", "#dbeafe", "DOĞRULANDI"),
+        "RUMOR": ("#d97706", "#fef3c7", "SÖYLENTI"),
+        "REVIEW_REQUIRED": ("#6b7280", "#f1f5f9", "TAKİPTE"),
+    }
+    for s in team_signals[:6]:
+        player = escape(s.get("player_name") or "?")
+        to_c   = escape(s.get("to_club") or "—")
+        frm    = escape(s.get("from_club") or "—")
+        vs     = f"{frm} → {to_c}"
+        st     = s.get("verification_status") or "REVIEW_REQUIRED"
+        col, bg, lbl = STATUS_COLOR.get(st, ("#6b7280", "#f1f5f9", st))
+        mv     = _mv(s.get("tm_market_value_eur"))
+        title  = escape((s.get("title") or "")[:70])
+        link   = s.get("link", "")
+        link_tag = f'<a href="{escape(link)}" target="_blank" style="color:#116447;font-size:11px;display:block;margin-top:3px">{title}</a>' if link else ""
+        rows_html += f"""<div style="padding:10px 0;border-bottom:1px solid #e8eeed">
+  <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+    <strong style="font-size:14px">{player}</strong>
+    <span style="font-size:11px;color:#627067">{vs}{mv}</span>
+    <span style="font-size:10px;padding:1px 7px;border-radius:4px;font-weight:700;color:{col};background:{bg}">{lbl}</span>
+  </div>
+  {link_tag}
+</div>"""
+
+    expiry_html = ""
+    if free_agents or final_year:
+        expiry_rows = ""
+        for p in free_agents[:4]:
+            name = escape(p.get("name") or "?")
+            mv2  = _mv(p.get("market_value_eur"))
+            expiry_rows += f'<div style="padding:5px 0;border-bottom:1px solid #e8eeed;font-size:13px"><strong>{name}</strong><span style="color:#bd2936;font-size:11px;margin-left:6px">Sözleşme bitiyor{mv2}</span></div>'
+        for p in final_year[:3]:
+            name = escape(p.get("name") or "?")
+            mv2  = _mv(p.get("market_value_eur"))
+            expiry_rows += f'<div style="padding:5px 0;border-bottom:1px solid #e8eeed;font-size:13px"><strong>{name}</strong><span style="color:#d97706;font-size:11px;margin-left:6px">Son yıl{mv2}</span></div>'
+        if expiry_rows:
+            expiry_html = f"""<div style="margin-top:16px">
+  <div style="font-size:12px;font-weight:700;color:#627067;text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px">Sözleşme Durumu</div>
+  {expiry_rows}
+</div>"""
+
+    signals_block = f"""<div style="margin-bottom:4px">
+  <div style="font-size:12px;font-weight:700;color:#627067;text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px">Transfer Sinyalleri ({len(team_signals)})</div>
+  {rows_html if rows_html else '<p style="color:#627067;font-size:13px">Henüz sinyal yok.</p>'}
+</div>""" if team_signals else ""
+
+    return f"""<div style="background:#fff;border:1px solid #d7ded9;border-radius:12px;padding:20px 24px;margin-bottom:20px">
+  <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;flex-wrap:wrap;gap:8px">
+    <div>
+      <span style="font-size:12px;font-weight:700;color:#116447;text-transform:uppercase;letter-spacing:.05em">Transfer Penceresi</span>
+      <h3 style="margin:4px 0 0;font-size:17px;color:#132018">{escape(team_display)} — Yaz 2026</h3>
+    </div>
+    <a href="transfer_tracker_{SEASON}.html" style="font-size:12px;color:#116447;font-weight:600;text-decoration:none">Tüm transfer radarı →</a>
+  </div>
+  {signals_block}
+  {expiry_html}
+</div>"""
+
 TEAM_DISPLAY_NAMES: dict[str, str] = {
     "besiktas": "Beşiktaş",
     "galatasaray": "Galatasaray",
@@ -81,7 +233,7 @@ def _build_for_team(slug: str, team_name: str, goal_backtest_path_str: str, inde
         for p in previews
     )
     output_path.write_text(
-        build_html(index_payload["summary"], previews, goal_backtest, team_name, is_off_season=not has_upcoming),
+        build_html(index_payload["summary"], previews, goal_backtest, team_name, is_off_season=not has_upcoming, team_slug=slug),
         encoding="utf-8",
     )
     print(output_path)
@@ -94,7 +246,7 @@ def _parse_match_date(date_str: str):
         return None
 
 
-def build_html(summary: dict, previews: list[dict], goal_backtest: dict, team_name: str = "Beşiktaş", is_off_season: bool = False) -> str:
+def build_html(summary: dict, previews: list[dict], goal_backtest: dict, team_name: str = "Beşiktaş", is_off_season: bool = False, team_slug: str = "besiktas") -> str:
     data_json = (
         json.dumps({"summary": summary, "goal_backtest": goal_backtest, "previews": previews}, ensure_ascii=False)
         .replace("<", "\\u003c")
@@ -106,12 +258,13 @@ def build_html(summary: dict, previews: list[dict], goal_backtest: dict, team_na
         for idx, p in enumerate(previews)
     )
     off_season_banner = (
-        '<div style="background:#1e3a5f;border-left:4px solid #60a5fa;border-radius:8px;padding:14px 20px;'
-        'margin-bottom:20px;color:#e0f2fe;font-size:14px;line-height:1.6;">'
-        '<strong style="color:#93c5fd;">Sezon arası</strong> &mdash; 2025/26 sezonu tamamlandı. '
+        '<div style="background:#e8f5ee;border-left:4px solid #116447;border-radius:8px;padding:14px 20px;'
+        'margin-bottom:20px;color:#132018;font-size:14px;line-height:1.6;">'
+        '<strong style="color:#116447;">Sezon arası</strong> &mdash; 2025/26 sezonu tamamlandı. '
         'Geçmiş maç analizleri ve tahmin arşivi aşağıda incelenebilir. '
         '2026/27 fikstürü açıklandığında tahminler otomatik olarak güncellenir.</div>'
     ) if is_off_season else ""
+    transfer_section = _transfer_window_section(team_slug, team_name) if _is_transfer_season() else ""
     return f"""<!doctype html>
 <html lang="tr">
 <head>
@@ -376,6 +529,7 @@ def build_html(summary: dict, previews: list[dict], goal_backtest: dict, team_na
     </div>
   </header>
   <main>
+    {transfer_section}
     {off_season_banner}
     <div class="toolbar">
       <select id="matchSelect" aria-label="Maç seç">{options}</select>
