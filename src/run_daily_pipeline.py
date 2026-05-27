@@ -110,6 +110,7 @@ NETWORK_COMMANDS = [
     ["python", "-m", "src.collect_news_rss"],
     ["python", "-m", "src.collect_news_google"],
     ["python", "-m", "src.collect_news_telegram"],
+    ["python", "-m", "src.collect_news_twitter"],
     ["python", "-m", "src.collect_official_club_news"],
     ["python", "-m", "src.analyze_news_with_claude", "--only-relevant"],
 ]

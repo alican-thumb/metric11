@@ -34,10 +34,12 @@ jobs:
         continue-on-error: true
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
         run: |
           python -m src.collect_news_rss || true
           python -m src.collect_news_google || true
           python -m src.collect_news_telegram || true
+          python -m src.collect_news_twitter || true
           python -m src.collect_official_club_news || true
 
       - name: Haber raporlarını güncelle
