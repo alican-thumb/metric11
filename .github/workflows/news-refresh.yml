@@ -50,7 +50,9 @@ jobs:
           python -m src.build_news_intelligence_report || true
           python -m src.build_source_performance_report || true
           python -m src.build_transfer_tracker || true
+          python -m src.build_transfer_season_context || true
           python -m src.build_live_feed || true
+          python -m src.build_product_home || true
           python -m src.build_status_page || true
           python -m src.build_admin_page || true
 
