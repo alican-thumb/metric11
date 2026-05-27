@@ -1,11 +1,11 @@
-name: metric11 haber yenileme (gunde 4 kez)
+name: metric11 haber yenileme (gunde 6 kez)
 
 on:
   workflow_dispatch:
   schedule:
-    # Haber toplama: 02:15, 08:15, 14:15, 20:15 UTC.
-    # daily-pipeline ayrıca 04:00 UTC'de ağ kaynaklarını yeniler.
-    - cron: "15 2,8,14,20 * * *"
+    # Haber toplama: 02:15, 06:15, 10:15, 14:15, 18:15, 22:15 UTC (her 4 saatte bir).
+    # daily-pipeline 04:00 UTC'de tam ağ yenilemesi yapar — 06:15 onu takip eder.
+    - cron: "15 2,6,10,14,18,22 * * *"
 
 permissions:
   contents: write
