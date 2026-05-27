@@ -64,11 +64,17 @@ def build_search_queries() -> list[tuple[str, str]]:
             ("Süper Lig teknik direktör", "transfer"),
             ("Süper Lig bonservis imza", "transfer"),
             ("Süper Lig sakat cezalı", "injury"),
+            ("Süper Lig transfer 2026", "transfer"),
+            ("Türk futbol transfer son dakika", "transfer"),
+            # Gazeteci sorguları
             ("Yağız Sabuncuoğlu transfer", "transfer"),
             ("Ertan Süzgün transfer", "transfer"),
             ("Sports Digitale transfer", "transfer"),
             ("Yusuf Günaydın transfer", "transfer"),
             ("Ekrem Konur Süper Lig transfer", "transfer"),
+            ("Sinan Engin transfer haberleri", "transfer"),
+            # Teknik direktör sorguları (sezon sonu dönemi)
+            ("Süper Lig yeni teknik direktör 2026", "transfer"),
         ]
     )
     return queries

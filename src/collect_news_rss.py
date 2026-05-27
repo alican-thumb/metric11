@@ -75,6 +75,12 @@ RSS_SOURCES = [
         "language": "tr",
         "category": "general",
     },
+    {
+        "name": "Fotomaç",
+        "url": "https://www.fotomac.com.tr/rss/anasayfa.xml",
+        "language": "tr",
+        "category": "general",
+    },
 ]
 
 SUPER_LIG_TEAMS = {
