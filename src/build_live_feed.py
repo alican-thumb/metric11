@@ -127,16 +127,16 @@ def _article_html(a: dict, source_count: int = 1, player_name: str | None = None
     link  = escape(a.get("link", "") or "")
     src   = a.get("source", "")
     stype = a.get("source_type", "rss")
-    cat   = a.get("category", "")
+    cats  = a.get("categories") or ([a.get("category")] if a.get("category") else [])
     age   = _fmt_date(a.get("published_at"))
     trust = SOURCE_TRUST.get(stype, 5)
 
     tag = ""
-    if cat == "transfer":
+    if "transfer" in cats:
         tag = "<span style='font-size:10px;color:#d97706;font-weight:700'>⟳ TRANSFER</span> "
-    elif cat == "injury":
+    elif "injury" in cats:
         tag = "<span style='font-size:10px;color:#dc2626;font-weight:700'>⚕ SAKAT</span> "
-    elif cat == "suspension":
+    elif "suspension" in cats:
         tag = "<span style='font-size:10px;color:#9333ea;font-weight:700'>🟥 CEZA</span> "
 
     title_color = "var(--ink)" if trust >= 6 else "#627067"
@@ -222,10 +222,12 @@ def _build_player_index(transfers: list[dict]) -> dict[str, str]:
 
 
 def _detect_player(title: str, player_index: dict[str, str]) -> str | None:
-    """Haber başlığında geçen ilk bilinen oyuncu adını döner."""
+    """Haber başlığında geçen ilk bilinen oyuncu adını döner (kelime sınırı kontrolü ile)."""
+    import re
     title_lower = title.lower()
+    title_words = set(re.findall(r"[a-züöşıçğ]{4,}", title_lower))
     for token, full_name in player_index.items():
-        if token in title_lower:
+        if token in title_words:
             return full_name
     return None
 
