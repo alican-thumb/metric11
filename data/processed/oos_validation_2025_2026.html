@@ -49,6 +49,10 @@
     .md-table tr:nth-child(even) td { background:#f8faf9; }
     @media (max-width:680px) { .topbar { position:static; flex-direction:column; align-items:stretch; padding:11px 16px 0; gap:0; min-height:unset; } .brand { padding-bottom:8px; } .season { display:none; } nav { justify-content:flex-start; border-top:1px solid #1e3228; padding:7px 0 9px; } .report-wrap h1 { font-size:22px; } }
     @media (max-width:600px) { .md-table th,.md-table td { padding:5px 6px; font-size:11px; } }
+    .x-share { display:inline-flex; align-items:center; gap:8px; background:#000; color:#fff; text-decoration:none; font-size:14px; font-weight:700; padding:10px 18px; border-radius:8px; transition:background .15s; }
+    .x-share:hover { background:#1a1a1a; }
+    .x-share:visited { color:#fff; }
+    .share-bar { padding:16px 0 8px; border-top:1px solid var(--line); margin-top:24px; }
   </style>
 </head>
 <body>
@@ -70,21 +74,21 @@
 </tr></thead><tbody>
 <tr>
 <td>Tüm sezon</td>
-<td>%50.4 (130/258)</td>
-<td>0.607</td>
-<td>1.015</td>
+<td>%46.1 (119/258)</td>
+<td>0.615</td>
+<td>1.027</td>
 </tr>
 <tr>
 <td>İlk yarı (hafta 1-17)</td>
-<td>%50.5 (53/105)</td>
-<td>0.614</td>
-<td>1.028</td>
+<td>%46.7 (49/105)</td>
+<td>0.617</td>
+<td>1.031</td>
 </tr>
 <tr>
 <td><strong>İkinci yarı OOS (hafta 18-34)</strong></td>
-<td><strong>%50.3 (77/153)</strong></td>
-<td>0.602</td>
-<td>1.007</td>
+<td><strong>%45.8 (70/153)</strong></td>
+<td>0.614</td>
+<td>1.024</td>
 </tr>
 </tbody></table>
 
@@ -97,18 +101,18 @@
 </tr></thead><tbody>
 <tr>
 <td>HIGH</td>
-<td>%61.9 (52/84)</td>
-<td>Brier: 0.53</td>
+<td>%59.6 (62/104)</td>
+<td>Brier: 0.549</td>
 </tr>
 <tr>
 <td>MEDIUM</td>
-<td>%48.9 (45/92)</td>
-<td>Brier: 0.625</td>
+<td>%37.9 (33/87)</td>
+<td>Brier: 0.664</td>
 </tr>
 <tr>
 <td>LOW</td>
-<td>%40.2 (33/82)</td>
-<td>Brier: 0.665</td>
+<td>%35.8 (24/67)</td>
+<td>Brier: 0.656</td>
 </tr>
 </tbody></table>
 
@@ -121,18 +125,18 @@
 </tr></thead><tbody>
 <tr>
 <td>HIGH</td>
-<td>%60.4 (29/48)</td>
-<td>Brier: 0.547</td>
+<td>%58.7 (37/63)</td>
+<td>Brier: 0.561</td>
 </tr>
 <tr>
 <td>MEDIUM</td>
-<td>%50.9 (27/53)</td>
-<td>Brier: 0.597</td>
+<td>%37.5 (18/48)</td>
+<td>Brier: 0.659</td>
 </tr>
 <tr>
 <td>LOW</td>
-<td>%40.4 (21/52)</td>
-<td>Brier: 0.657</td>
+<td>%35.7 (15/42)</td>
+<td>Brier: 0.642</td>
 </tr>
 </tbody></table>
 
@@ -144,15 +148,15 @@
 </tr></thead><tbody>
 <tr>
 <td>Ev sahibi kazandı</td>
-<td>%55.9 (62/111)</td>
+<td>%53.2 (59/111)</td>
 </tr>
 <tr>
 <td>Beraberlik</td>
-<td>%40.8 (31/76)</td>
+<td>%31.6 (24/76)</td>
 </tr>
 <tr>
 <td>Deplasman kazandı</td>
-<td>%52.1 (37/71)</td>
+<td>%50.7 (36/71)</td>
 </tr>
 </tbody></table>
 
@@ -165,52 +169,52 @@
 </tr></thead><tbody>
 <tr>
 <td>25</td>
-<td>%53.7</td>
+<td>%49.7</td>
 <td>177</td>
 </tr>
 <tr>
 <td>26</td>
-<td>%52.7</td>
+<td>%49.5</td>
 <td>186</td>
 </tr>
 <tr>
 <td>27</td>
-<td>%52.8</td>
+<td>%49.7</td>
 <td>195</td>
 </tr>
 <tr>
 <td>28</td>
-<td>%52.0</td>
+<td>%48.5</td>
 <td>204</td>
 </tr>
 <tr>
 <td>29</td>
-<td>%52.6</td>
+<td>%48.8</td>
 <td>213</td>
 </tr>
 <tr>
 <td>30</td>
-<td>%51.8</td>
+<td>%48.2</td>
 <td>222</td>
 </tr>
 <tr>
 <td>31</td>
-<td>%51.1</td>
+<td>%47.6</td>
 <td>231</td>
 </tr>
 <tr>
 <td>32</td>
-<td>%51.7</td>
+<td>%47.1</td>
 <td>240</td>
 </tr>
 <tr>
 <td>33</td>
-<td>%51.8</td>
+<td>%47.0</td>
 <td>249</td>
 </tr>
 <tr>
 <td>34</td>
-<td>%50.4</td>
+<td>%46.1</td>
 <td>258</td>
 </tr>
 </tbody></table>
@@ -224,28 +228,28 @@
 </tr></thead><tbody>
 <tr>
 <td>Tüm sezon doğruluk</td>
-<td>%51.2 (132/258)</td>
 <td>%50.4 (130/258)</td>
+<td>%46.1 (119/258)</td>
 </tr>
 <tr>
 <td>OOS ikinci yarı doğruluk</td>
-<td>%53.6 (82/153)</td>
-<td>%50.3 (77/153)</td>
+<td>%51.6 (79/153)</td>
+<td>%45.8 (70/153)</td>
 </tr>
 <tr>
 <td>Beraberlik doğruluğu (tüm sezon)</td>
 <td>%0.0 (0/76)</td>
-<td>%40.8 (31/76)</td>
+<td>%31.6 (24/76)</td>
 </tr>
 <tr>
 <td>Ev sahibi doğruluğu</td>
 <td>%73.0 (81/111)</td>
-<td>%55.9 (62/111)</td>
+<td>%53.2 (59/111)</td>
 </tr>
 <tr>
 <td>Deplasman doğruluğu</td>
-<td>%71.8 (51/71)</td>
-<td>%52.1 (37/71)</td>
+<td>%69.0 (49/71)</td>
+<td>%50.7 (36/71)</td>
 </tr>
 </tbody></table>
 

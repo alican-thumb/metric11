@@ -1,6 +1,6 @@
 # Metric11 SQLite Veri Ambarı Kalite Raporu
 
-- Dosya: `/Users/alicanakyol/Documents/analiz/data/processed/metric11_warehouse.sqlite`
+- Dosya: `/home/runner/work/metric11/metric11/data/processed/metric11_warehouse.sqlite`
 
 ## Tablo Sayıları
 
@@ -17,7 +17,7 @@
 - referee_profiles: 29
 - referees: 29
 - team_profiles: 18
-- team_scout_blueprints: 275
+- team_scout_blueprints: 370
 - teams: 18
 
 ## Hazır Görünümler
@@ -33,7 +33,7 @@
 - LOW / referees: Matches missing main referee = 0 -> Eksikse TFF parser veya kaynak değişimi kontrol edilmeli.
 - LOW / players: Players without age/profile enrichment = 0 -> TFF/Transfermarkt/API profil toplama kapsamı genişletilmeli.
 - LOW / scouting: Blueprint candidates with low proxy position confidence = 0 -> Doğrudan pozisyon, boy, ayak ve aksiyon verisiyle güçlendirilmeli.
-- MEDIUM / predictions: Beşiktaş match prediction accuracy percent = 65 -> Daha fazla sezon, sakatlık ve odds baseline ile kalibre edilmeli.
+- MEDIUM / predictions: Beşiktaş match prediction accuracy percent = 55 -> Daha fazla sezon, sakatlık ve odds baseline ile kalibre edilmeli.
 - LOW / goal_candidates: Goal candidate rows loaded = 298 -> Top 8/10 performansı ürün için güçlü sinyal.
 
 ## Örnek Sorgu Çıktıları

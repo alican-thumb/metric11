@@ -1,7 +1,7 @@
 # Veri Kalite ve İstatistik Scorecard
 
-- Ambar: `/Users/alicanakyol/Documents/analiz/data/processed/metric11_warehouse.sqlite`
-- Genel skor: 82.5/100
+- Ambar: `/home/runner/work/metric11/metric11/data/processed/metric11_warehouse.sqlite`
+- Genel skor: 79.2/100
 
 ## Kontroller
 
@@ -13,12 +13,12 @@
 | player_profiles | tff_transfermarkt_in_scope_match_rate_pct | matched=498, in_scope=626, pct=79.6 | ⚠ İzle | Yüksek | Snapshot kapsamındaki eşleşmeyen oyuncular alias/transfer inceleme kuyruğunda doğrulanmadan piyasa değeri veya pozisyon olarak kullanılmamalı. |
 | player_profiles | manual_alias_pending_network_verification | 13 | ⚠ İzle | Yüksek | Operasyonda kullanılan manuel pozisyon ve piyasa değeri eşlemeleri Transfermarkt profil bağlantısıyla doğrulanana kadar teyit bekliyor olarak gösterilmeli. |
 | scouting | unmatched_players_blocking_scout_review | 0 | ✓ | Düşük | Scout kuyruğunu bloke eden oyuncular için aynı kulüp Transfermarkt adı veya resmi profil doğrulanmalı; doğrulanmadan rol önerisi yayınlanmamalı. |
-| model | besiktas_display_prediction_accuracy_pct | correct=19, total=29, pct=65.5 | ⚠ İzle | Yüksek | Ekran ayarı aynı sezonda geliştirildi; yeni sezon veya ayrılmış sezonda sabit kurallarla doğrulanmadan genel başarı iddiası yapılmamalı. |
-| model | draw_recall_pct | draw_predicted=2, draw_total=9, pct=22.2 | ⚠ İzle | Yüksek | Beraberlik sadece çok yüksek risk ve dar olasılık farkında ekran tahminine çekilmeli; diğer durumlarda korumalı senaryo dili kullanılmalı. |
-| calibration | wrong_predictions_with_high_confidence_pct | wrong_high_confidence=1, wrong_total=10, pct=10.0 | ✓ | Orta | Yüksek güvenli hatalarda xG farkı, büyük maç ve beraberlik risk bayrakları güveni aşağı çekmeli. |
+| model | besiktas_display_prediction_accuracy_pct | correct=16, total=29, pct=55.2 | ⚠ İzle | Yüksek | Ekran ayarı aynı sezonda geliştirildi; yeni sezon veya ayrılmış sezonda sabit kurallarla doğrulanmadan genel başarı iddiası yapılmamalı. |
+| model | draw_recall_pct | draw_predicted=1, draw_total=9, pct=11.1 | ✗ Sorun | Yüksek | Beraberlik sadece çok yüksek risk ve dar olasılık farkında ekran tahminine çekilmeli; diğer durumlarda korumalı senaryo dili kullanılmalı. |
+| calibration | wrong_predictions_with_high_confidence_pct | wrong_high_confidence=3, wrong_total=13, pct=23.1 | ✓ | Orta | Yüksek güvenli hatalarda xG farkı, büyük maç ve beraberlik risk bayrakları güveni aşağı çekmeli. |
 | goal_candidates | top_5_hit_pct | hits=20, matches=26, pct=76.9 | ⚠ İzle | Orta | Aday tipleri ayrı backtest edilmeli: primary, penaltı, duran top/defans ve yedek etki. |
 | goal_candidates | top_8_hit_pct | hits=22, matches=26, pct=84.6 | ⚠ İzle | Orta | Aday tipleri ayrı backtest edilmeli: primary, penaltı, duran top/defans ve yedek etki. |
-| scouting | low_position_confidence_pct | low_confidence=0, total=275, pct=0.0 | ✓ | Orta | Düşük güvenli scout adayları doğrudan pozisyon, boy, ayak ve aksiyon verisiyle zenginleştirilmeli. |
+| scouting | low_position_confidence_pct | low_confidence=0, total=370, pct=0.0 | ✓ | Orta | Düşük güvenli scout adayları doğrudan pozisyon, boy, ayak ve aksiyon verisiyle zenginleştirilmeli. |
 
 ## Öncelikli Aksiyonlar
 
@@ -31,28 +31,29 @@
 
 ## Tahmin Karışıklık Matrisi
 
-- tahmin=draw gerçek=draw: 2 maç
+- tahmin=draw gerçek=draw: 1 maç
 - tahmin=draw gerçek=opponent_win: 1 maç
-- tahmin=opponent_win gerçek=draw: 1 maç
-- tahmin=opponent_win gerçek=opponent_win: 4 maç
+- tahmin=draw gerçek=target_win: 1 maç
+- tahmin=opponent_win gerçek=draw: 2 maç
+- tahmin=opponent_win gerçek=opponent_win: 3 maç
 - tahmin=opponent_win gerçek=target_win: 1 maç
 - tahmin=target_win gerçek=draw: 6 maç
-- tahmin=target_win gerçek=opponent_win: 1 maç
-- tahmin=target_win gerçek=target_win: 13 maç
+- tahmin=target_win gerçek=opponent_win: 2 maç
+- tahmin=target_win gerçek=target_win: 12 maç
 
 ## Gol Adayı Segmentleri
 
 - primary+impact_sub: 134 satır, 19 isabet satırı, %14.2
-- primary: 103 satır, 11 isabet satırı, %10.7
-- impact_sub: 28 satır, 4 isabet satırı, %14.3
-- primary+set_piece_defender: 25 satır, 0 isabet satırı, %0.0
+- primary: 106 satır, 12 isabet satırı, %11.3
+- impact_sub: 26 satır, 4 isabet satırı, %15.4
+- primary+set_piece_defender: 24 satır, 0 isabet satırı, %0.0
 - unknown: 8 satır, 2 isabet satırı, %25.0
 
 ## Scout Pozisyon Güveni
 
-- MEDIUM_DERIVED_ROLE: 182
-- MEDIUM_EXTERNAL: 65
-- HIGH_EXTERNAL_PROFILE: 28
+- MEDIUM_DERIVED_ROLE: 255
+- MEDIUM_EXTERNAL: 79
+- HIGH_EXTERNAL_PROFILE: 36
 
 ## Tablo Kapsamı
 
@@ -69,5 +70,5 @@
 - referee_profiles: 29
 - referees: 29
 - team_profiles: 18
-- team_scout_blueprints: 275
+- team_scout_blueprints: 370
 - teams: 18

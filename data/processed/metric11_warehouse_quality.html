@@ -49,6 +49,10 @@
     .md-table tr:nth-child(even) td { background:#f8faf9; }
     @media (max-width:680px) { .topbar { position:static; flex-direction:column; align-items:stretch; padding:11px 16px 0; gap:0; min-height:unset; } .brand { padding-bottom:8px; } .season { display:none; } nav { justify-content:flex-start; border-top:1px solid #1e3228; padding:7px 0 9px; } .report-wrap h1 { font-size:22px; } }
     @media (max-width:600px) { .md-table th,.md-table td { padding:5px 6px; font-size:11px; } }
+    .x-share { display:inline-flex; align-items:center; gap:8px; background:#000; color:#fff; text-decoration:none; font-size:14px; font-weight:700; padding:10px 18px; border-radius:8px; transition:background .15s; }
+    .x-share:hover { background:#1a1a1a; }
+    .x-share:visited { color:#fff; }
+    .share-bar { padding:16px 0 8px; border-top:1px solid var(--line); margin-top:24px; }
   </style>
 </head>
 <body>
@@ -58,7 +62,7 @@
     <h1>Metric11 SQLite Veri Ambarı Kalite Raporu</h1>
 
 <ul>
-<li>Dosya: <code>/Users/alicanakyol/Documents/analiz/data/processed/metric11_warehouse.sqlite</code></li>
+<li>Dosya: <code>/home/runner/work/metric11/metric11/data/processed/metric11_warehouse.sqlite</code></li>
 </ul>
 
 <h2>Tablo Sayıları</h2>
@@ -77,7 +81,7 @@
 <li>referee_profiles: 29</li>
 <li>referees: 29</li>
 <li>team_profiles: 18</li>
-<li>team_scout_blueprints: 275</li>
+<li>team_scout_blueprints: 370</li>
 <li>teams: 18</li>
 </ul>
 
@@ -97,7 +101,7 @@
 <li>LOW / referees: Matches missing main referee = 0 -&gt; Eksikse TFF parser veya kaynak değişimi kontrol edilmeli.</li>
 <li>LOW / players: Players without age/profile enrichment = 0 -&gt; TFF/Transfermarkt/API profil toplama kapsamı genişletilmeli.</li>
 <li>LOW / scouting: Blueprint candidates with low proxy position confidence = 0 -&gt; Doğrudan pozisyon, boy, ayak ve aksiyon verisiyle güçlendirilmeli.</li>
-<li>MEDIUM / predictions: Beşiktaş match prediction accuracy percent = 65 -&gt; Daha fazla sezon, sakatlık ve odds baseline ile kalibre edilmeli.</li>
+<li>MEDIUM / predictions: Beşiktaş match prediction accuracy percent = 55 -&gt; Daha fazla sezon, sakatlık ve odds baseline ile kalibre edilmeli.</li>
 <li>LOW / goal_candidates: Goal candidate rows loaded = 298 -&gt; Top 8/10 performansı ürün için güçlü sinyal.</li>
 </ul>
 

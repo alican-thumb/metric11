@@ -7,7 +7,7 @@
 - Parse edilen ilk 11 oyuncu kaydı: 748
 - Parse edilen yedek oyuncu kaydı: 671
 - Parse edilen kart olayı: 180
-- İşlenmiş maç detayları: `/Users/alicanakyol/Documents/analiz/data/processed/tff_besiktas_2025_2026_matches.json`
+- İşlenmiş maç detayları: `/home/runner/work/metric11/metric11/data/processed/tff_besiktas_2025_2026_matches.json`
 
 ## Maçlar
 

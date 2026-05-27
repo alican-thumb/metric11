@@ -49,6 +49,10 @@
     .md-table tr:nth-child(even) td { background:#f8faf9; }
     @media (max-width:680px) { .topbar { position:static; flex-direction:column; align-items:stretch; padding:11px 16px 0; gap:0; min-height:unset; } .brand { padding-bottom:8px; } .season { display:none; } nav { justify-content:flex-start; border-top:1px solid #1e3228; padding:7px 0 9px; } .report-wrap h1 { font-size:22px; } }
     @media (max-width:600px) { .md-table th,.md-table td { padding:5px 6px; font-size:11px; } }
+    .x-share { display:inline-flex; align-items:center; gap:8px; background:#000; color:#fff; text-decoration:none; font-size:14px; font-weight:700; padding:10px 18px; border-radius:8px; transition:background .15s; }
+    .x-share:hover { background:#1a1a1a; }
+    .x-share:visited { color:#fff; }
+    .share-bar { padding:16px 0 8px; border-top:1px solid var(--line); margin-top:24px; }
   </style>
 </head>
 <body>
@@ -59,10 +63,10 @@
 
 <ul>
 <li>Büyük maç sayısı: 6</li>
-<li>Doğru tahmin: 2 (%33)</li>
+<li>Doğru tahmin: 3 (%50)</li>
 <li>MEDIUM/HIGH risk işaretlenen maç: 6</li>
-<li>Risk dağılımı: {&#x27;MEDIUM&#x27;: 1, &#x27;HIGH&#x27;: 5}</li>
-<li>Hata dağılımı: {&#x27;missed_draw&#x27;: 2, &#x27;overrated_besiktas&#x27;: 2}</li>
+<li>Risk dağılımı: {&#x27;MEDIUM&#x27;: 3, &#x27;HIGH&#x27;: 3}</li>
+<li>Hata dağılımı: {&#x27;missed_draw&#x27;: 2, &#x27;overrated_besiktas&#x27;: 1}</li>
 <li>Öğrenim: Büyük maçlar normal maç gibi okunmamalı; model taraf tahmini verse bile beraberlik, kart ve düşük fark senaryosu ayrı risk katmanı olarak gösterilmeli.</li>
 </ul>
 
@@ -72,7 +76,7 @@
 
 <ul>
 <li>Skor: 1-1 | tahmin=Rakip gerçek=X | doğru=False</li>
-<li>Olasılıklar: BJK %26, X %24, Rakip %50</li>
+<li>Olasılıklar: BJK %20, X %22, Rakip %58</li>
 <li>Büyük maç profili: MEDIUM (ana tarafı koru ama alternatif senaryoyu görünür tut)</li>
 <li>Beraberlik riski: LOW | Kart sinyali: MEDIUM</li>
 <li>Gol adayları: RAFAEL ALEXANDRE FERNANDES FERREIRA DA SILVA, KEVIN OGHENETEGA TAMARAEBI BAKUMO ABRAHAM, CENGİZ ÜNDER, JOAO PEDRO FERREIRA DA SILVA, VACLAV CERNY</li>
@@ -81,8 +85,8 @@
 <h3>2.11.2025 - 20:00 | BEŞİKTAŞ A.Ş. - FENERBAHÇE A.Ş.</h3>
 
 <ul>
-<li>Skor: 2-3 | tahmin=BJK gerçek=Rakip | doğru=False</li>
-<li>Olasılıklar: BJK %39, X %27, Rakip %34</li>
+<li>Skor: 2-3 | tahmin=Rakip gerçek=Rakip | doğru=True</li>
+<li>Olasılıklar: BJK %32, X %27, Rakip %40</li>
 <li>Büyük maç profili: HIGH (taraf güvenini düşür, kart ve beraberlik senaryosunu öne çıkar)</li>
 <li>Beraberlik riski: HIGH | Kart sinyali: HIGH</li>
 <li>Gol adayları: RAFAEL ALEXANDRE FERNANDES FERREIRA DA SILVA, KEVIN OGHENETEGA TAMARAEBI BAKUMO ABRAHAM, CENGİZ ÜNDER, JOAO PEDRO FERREIRA DA SILVA, VACLAV CERNY</li>
@@ -92,19 +96,19 @@
 
 <ul>
 <li>Skor: 3-3 | tahmin=Rakip gerçek=X | doğru=False</li>
-<li>Olasılıklar: BJK %35, X %25, Rakip %40</li>
-<li>Büyük maç profili: HIGH (taraf güvenini düşür, kart ve beraberlik senaryosunu öne çıkar)</li>
-<li>Beraberlik riski: MEDIUM | Kart sinyali: MEDIUM</li>
-<li>Gol adayları: KEVIN OGHENETEGA TAMARAEBI BAKUMO ABRAHAM, EL BILAL TOURE, CENGİZ ÜNDER, JOAO PEDRO FERREIRA DA SILVA, EMİRHAN TOPÇU</li>
+<li>Olasılıklar: BJK %32, X %25, Rakip %43</li>
+<li>Büyük maç profili: MEDIUM (ana tarafı koru ama alternatif senaryoyu görünür tut)</li>
+<li>Beraberlik riski: LOW | Kart sinyali: MEDIUM</li>
+<li>Gol adayları: KEVIN OGHENETEGA TAMARAEBI BAKUMO ABRAHAM, EL BILAL TOURE, CENGİZ ÜNDER, JOAO PEDRO FERREIRA DA SILVA, DAVID JURASEK</li>
 </ul>
 
 <h3>7.03.2026 - 20:00 | BEŞİKTAŞ A.Ş. - GALATASARAY A.Ş.</h3>
 
 <ul>
 <li>Skor: 0-1 | tahmin=Rakip gerçek=Rakip | doğru=True</li>
-<li>Olasılıklar: BJK %34, X %25, Rakip %41</li>
-<li>Büyük maç profili: HIGH (taraf güvenini düşür, kart ve beraberlik senaryosunu öne çıkar)</li>
-<li>Beraberlik riski: MEDIUM | Kart sinyali: HIGH</li>
+<li>Olasılıklar: BJK %31, X %24, Rakip %45</li>
+<li>Büyük maç profili: MEDIUM (ana tarafı koru ama alternatif senaryoyu görünür tut)</li>
+<li>Beraberlik riski: LOW | Kart sinyali: HIGH</li>
 <li>Gol adayları: ORKUN KÖKÇÜ, HYEONGYU OH, VACLAV CERNY, EL BILAL TOURE, CENGİZ ÜNDER</li>
 </ul>
 
@@ -112,17 +116,17 @@
 
 <ul>
 <li>Skor: 1-0 | tahmin=Rakip gerçek=Rakip | doğru=True</li>
-<li>Olasılıklar: BJK %34, X %26, Rakip %40</li>
+<li>Olasılıklar: BJK %37, X %26, Rakip %37</li>
 <li>Büyük maç profili: HIGH (taraf güvenini düşür, kart ve beraberlik senaryosunu öne çıkar)</li>
 <li>Beraberlik riski: HIGH | Kart sinyali: MEDIUM</li>
-<li>Gol adayları: ORKUN KÖKÇÜ, HYEONGYU OH, VACLAV CERNY, JOAO PEDRO FERREIRA DA SILVA, CENGİZ ÜNDER</li>
+<li>Gol adayları: ORKUN KÖKÇÜ, HYEONGYU OH, VACLAV CERNY, ISHOLA JUNIOR  OLAITAN, JOAO PEDRO FERREIRA DA SILVA</li>
 </ul>
 
 <h3>9.05.2026 - 20:00 | BEŞİKTAŞ A.Ş. - TRABZONSPOR A.Ş.</h3>
 
 <ul>
 <li>Skor: 1-2 | tahmin=BJK gerçek=Rakip | doğru=False</li>
-<li>Olasılıklar: BJK %43, X %26, Rakip %30</li>
+<li>Olasılıklar: BJK %44, X %27, Rakip %30</li>
 <li>Büyük maç profili: HIGH (taraf güvenini düşür, kart ve beraberlik senaryosunu öne çıkar)</li>
 <li>Beraberlik riski: HIGH | Kart sinyali: HIGH</li>
 <li>Gol adayları: ORKUN KÖKÇÜ, HYEONGYU OH, JOAO PEDRO FERREIRA DA SILVA, KRİSTJAN ASLLANİ, CENGİZ ÜNDER</li>

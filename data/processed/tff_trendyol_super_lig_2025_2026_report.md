@@ -6,7 +6,7 @@
 - Parse edilen yedek oyuncu kaydi: 6000
 - Parse edilen kart olayi: 1428
 - Parse edilen gol olayi: 812
-- Islenmis mac detaylari: `/Users/alicanakyol/Documents/analiz/data/processed/tff_trendyol_super_lig_2025_2026_matches.json`
+- Islenmis mac detaylari: `/home/runner/work/metric11/metric11/data/processed/tff_trendyol_super_lig_2025_2026_matches.json`
 
 ## Hata Olanlar
 

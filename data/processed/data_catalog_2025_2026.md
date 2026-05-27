@@ -29,14 +29,14 @@
 - Gol adayı Top 5: %77
 - Gol adayı Top 8: %85
 - Gol adayı Top 10: %88
-- Beşiktaş maç önü sonuç tahmini: %66
-- Beşiktaş taraf eğilimi isabeti: %57
-- Beşiktaş büyük maç tahmini: %83
+- Beşiktaş maç önü sonuç tahmini: %55
+- Beşiktaş taraf eğilimi isabeti: %56
+- Beşiktaş büyük maç tahmini: %50
 - Büyük maç risk raporu: 6 maç
 - Büyük maç MEDIUM/HIGH risk işareti: 6
-- Tahmin hata analizi kaçan maç: 10
-- Tahmin hata analizi kaçan beraberlik: 7
-- Lig tahmin doğruluğu: %50
+- Tahmin hata analizi kaçan maç: 13
+- Tahmin hata analizi kaçan beraberlik: 8
+- Lig tahmin doğruluğu: %46
 - Lig piyasa değeri audit kapsamı: 258 maç
 - Lig piyasa değeri baseline doğruluğu: %51
 - Oyuncu uygunluk maç kapsamı: 34
@@ -52,13 +52,13 @@
 - Lig istihbarat takım profili: 18
 - Lig istihbarat oyuncu profili: 691
 - Lig istihbarat hakem profili: 29
-- Takım scout blueprint: 18 takım
-- Takım scout aday bağlantısı: 275
+- Takım scout blueprint: 21 takım
+- Takım scout aday bağlantısı: 370
 - Scout düşük güven inceleme kuyruğu: 0
 - Scout tekil düşük güven oyuncu-rol: 0
 - Scout fazla role yayılan oyuncu: 0
 - SQLite veri ambarı tablo sayısı: 15
-- SQLite veri ambarı toplam satır: 17367
+- SQLite veri ambarı toplam satır: 17462
 - SQLite veri kalite bulgusu: 6
 - Profil zenginleştirme kuyruğu: 0
 - Profil zenginleştirme eksik aday: 0
@@ -67,10 +67,10 @@
 - Haber/sakat-cezalı başarılı kaynak: 2
 - Haber/sakat-cezalı sinyal: 3
 - Haber/sakat-cezalı yapılandırılmış oyuncu: 13
-- RSS haber kaydı: 245
-- Resmi kulüp web duyurusu: 14 | erişilebilir site=16/21 | durum=PARTIAL_SUCCESS
-- Haber analizine alınan içerik: 261
-- Transfer haber iddiası: 22 | resmi=0, çoklu kaynak=1, söylenti=4, inceleme gerekli=17
+- RSS haber kaydı: 239
+- Resmi kulüp web duyurusu: 16 | erişilebilir site=17/21 | durum=PARTIAL_SUCCESS
+- Haber analizine alınan içerik: 286
+- Transfer haber iddiası: 28 | resmi=0, çoklu kaynak=0, söylenti=6, inceleme gerekli=22
 - X gönderi snapshot'ı: 0 | başarılı hesap=0 | kaynak=x_api | durum=MISSING_CREDENTIALS
 - API-Football 2024 başarılı endpoint: 7
 - API-Football 2024 fikstür: 342
@@ -92,8 +92,8 @@
 - TFF oyuncu profilleri / public='Resmi federasyon oyuncu profili' (SCRAPING, risk=MEDIUM, license=VERIFY_TERMS): İşlenen lig profil havuzu 691 profil; lig snapshot içi eşleşme ayrıca ölçülür
 - Transfermarkt kadro sayfası / public='Piyasa değeri ve kadro profili' (SCRAPING, risk=HIGH, license=VERIFY_TERMS_BEFORE_COMMERCIAL_USE): Süper Lig 2025/26: 18 kulüp kadrosu, pozisyon ve piyasa değeri
 - Oyuncu uygunluk sinyalleri / public='Model türetilmiş uygunluk sinyali' (DERIVED+MANUAL, risk=MEDIUM, license=DERIVED_FROM_INTERNAL_DATA_AND_MANUAL_VERIFICATION): Beşiktaş 2025/26 kart cezası çıkarımı + manuel sakat/cezalı override dosyası
-- Türk spor haber RSS akışı / public='Güncel spor haber bağlamı' (RSS_NEWS, risk=MEDIUM, license=VERIFY_TERMS_AND_QUOTE_LIMITS): 245 ham haber; 261 ilgili analiz; 22 transfer iddiası
-- Süper Lig resmi kulüp web duyuruları / public='Resmi kulüp duyuruları' (OFFICIAL_CLUB_NEWS, risk=LOW_MEDIUM, license=VERIFY_TERMS_AND_LINK_DERIVED_DISPLAY): 14 duyuru; 16/21 kulüp sitesi erişilebilir; durum=PARTIAL_SUCCESS
+- Türk spor haber RSS akışı / public='Güncel spor haber bağlamı' (RSS_NEWS, risk=MEDIUM, license=VERIFY_TERMS_AND_QUOTE_LIMITS): 239 ham haber; 286 ilgili analiz; 28 transfer iddiası
+- Süper Lig resmi kulüp web duyuruları / public='Resmi kulüp duyuruları' (OFFICIAL_CLUB_NEWS, risk=LOW_MEDIUM, license=VERIFY_TERMS_AND_LINK_DERIVED_DISPLAY): 16 duyuru; 17/21 kulüp sitesi erişilebilir; durum=PARTIAL_SUCCESS
 - X resmi kulüp ve futbol haber hesapları / public='Resmi kulüp ve sosyal haber duyuruları' (X_SOCIAL_SIGNAL, risk=MEDIUM, license=PLATFORM_TERMS_AND_DISPLAY_REQUIREMENTS): Collector çalıştı (x_api/MISSING_CREDENTIALS); kullanılabilir gönderi snapshot'ı yok
 - FM/FIFA tarzı oyuncu attribute kaynakları / public='Oyuncu attribute ve potansiyel veri seti' (OPEN_DATASET_OR_VERIFIED_EXPORT, risk=LOW_TO_HIGH_BY_LICENSE, license=SOURCE_SPECIFIC): 4 aday kaynak kaydı; normalize import varsa 0 oyuncu
 - API-Football Süper Lig snapshot / public='Dış futbol API doğrulama ve geçmiş sezon zenginleştirme' (API, risk=MEDIUM, license=API_PLAN_LIMITED): 2024 sezonu ücretsiz planda erişilebilir; 2025 sezonu plan kısıtı nedeniyle boş dönüyor; derin snapshot rate-limit kontrollü çalışır

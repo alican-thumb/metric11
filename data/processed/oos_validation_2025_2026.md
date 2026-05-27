@@ -7,58 +7,58 @@ _Not: Walk-forward kronolojik backtest. Her tahmin yalnızca önceki maçların 
 
 | Dönem | Doğruluk | Brier | Log Loss |
 |---|---:|---:|---:|
-| Tüm sezon | %50.4 (130/258) | 0.607 | 1.015 |
-| İlk yarı (hafta 1-17) | %50.5 (53/105) | 0.614 | 1.028 |
-| **İkinci yarı OOS (hafta 18-34)** | **%50.3 (77/153)** | 0.602 | 1.007 |
+| Tüm sezon | %46.1 (119/258) | 0.615 | 1.027 |
+| İlk yarı (hafta 1-17) | %46.7 (49/105) | 0.617 | 1.031 |
+| **İkinci yarı OOS (hafta 18-34)** | **%45.8 (70/153)** | 0.614 | 1.024 |
 
 ## Güven Seviyesi Kırılımı (Tüm Sezon)
 
 | Güven | Doğruluk | |
 |---|---:|---|
-| HIGH | %61.9 (52/84) | Brier: 0.53 |
-| MEDIUM | %48.9 (45/92) | Brier: 0.625 |
-| LOW | %40.2 (33/82) | Brier: 0.665 |
+| HIGH | %59.6 (62/104) | Brier: 0.549 |
+| MEDIUM | %37.9 (33/87) | Brier: 0.664 |
+| LOW | %35.8 (24/67) | Brier: 0.656 |
 
 ## Güven Seviyesi Kırılımı (OOS — İkinci Yarı)
 
 | Güven | Doğruluk | |
 |---|---:|---|
-| HIGH | %60.4 (29/48) | Brier: 0.547 |
-| MEDIUM | %50.9 (27/53) | Brier: 0.597 |
-| LOW | %40.4 (21/52) | Brier: 0.657 |
+| HIGH | %58.7 (37/63) | Brier: 0.561 |
+| MEDIUM | %37.5 (18/48) | Brier: 0.659 |
+| LOW | %35.7 (15/42) | Brier: 0.642 |
 
 ## Sonuç Tipi Kırılımı (Tüm Sezon)
 
 | Gerçek Sonuç | Model Doğruluğu |
 |---|---:|
-| Ev sahibi kazandı | %55.9 (62/111) |
-| Beraberlik | %40.8 (31/76) |
-| Deplasman kazandı | %52.1 (37/71) |
+| Ev sahibi kazandı | %53.2 (59/111) |
+| Beraberlik | %31.6 (24/76) |
+| Deplasman kazandı | %50.7 (36/71) |
 
 ## Kümülatif Doğruluk (son 10 hafta)
 
 | Hafta | Kümülatif Doğruluk | Maç |
 |---:|---:|---:|
-| 25 | %53.7 | 177 |
-| 26 | %52.7 | 186 |
-| 27 | %52.8 | 195 |
-| 28 | %52.0 | 204 |
-| 29 | %52.6 | 213 |
-| 30 | %51.8 | 222 |
-| 31 | %51.1 | 231 |
-| 32 | %51.7 | 240 |
-| 33 | %51.8 | 249 |
-| 34 | %50.4 | 258 |
+| 25 | %49.7 | 177 |
+| 26 | %49.5 | 186 |
+| 27 | %49.7 | 195 |
+| 28 | %48.5 | 204 |
+| 29 | %48.8 | 213 |
+| 30 | %48.2 | 222 |
+| 31 | %47.6 | 231 |
+| 32 | %47.1 | 240 |
+| 33 | %47.0 | 249 |
+| 34 | %46.1 | 258 |
 
 ## Draw Kalibrasyon Karşılaştırması
 
 | | Ham argmax | Kalibre |
 |---|---:|---:|
-| Tüm sezon doğruluk | %51.2 (132/258) | %50.4 (130/258) |
-| OOS ikinci yarı doğruluk | %53.6 (82/153) | %50.3 (77/153) |
-| Beraberlik doğruluğu (tüm sezon) | %0.0 (0/76) | %40.8 (31/76) |
-| Ev sahibi doğruluğu | %73.0 (81/111) | %55.9 (62/111) |
-| Deplasman doğruluğu | %71.8 (51/71) | %52.1 (37/71) |
+| Tüm sezon doğruluk | %50.4 (130/258) | %46.1 (119/258) |
+| OOS ikinci yarı doğruluk | %51.6 (79/153) | %45.8 (70/153) |
+| Beraberlik doğruluğu (tüm sezon) | %0.0 (0/76) | %31.6 (24/76) |
+| Ev sahibi doğruluğu | %73.0 (81/111) | %53.2 (59/111) |
+| Deplasman doğruluğu | %69.0 (49/71) | %50.7 (36/71) |
 
 ## Yorumlama
 
