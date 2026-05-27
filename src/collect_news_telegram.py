@@ -33,26 +33,16 @@ def _is_recent(published_at: str | None) -> bool:
         return True
 
 TELEGRAM_CHANNELS = [
-    # Transfer / genel sinyal kanalları (public preview açık olanlar)
+    # Transfer / genel sinyal kanalları (t.me/s/ public preview doğrulandı)
     {"handle": "transferhaber", "name": "Transfer Haber", "type": "secondary_signal"},
     {"handle": "sporxhaber", "name": "Sporx Haber", "type": "secondary_signal"},
     {"handle": "transferturkiye", "name": "Transfer Türkiye", "type": "secondary_signal"},
-    {"handle": "superligson", "name": "Süper Lig Son", "type": "secondary_signal"},
-    {"handle": "futbolhaber", "name": "Futbol Haber TR", "type": "secondary_signal"},
-    {"handle": "transferson", "name": "Transfer Son Dakika", "type": "secondary_signal"},
-    {"handle": "turkiyefutbol", "name": "Türkiye Futbol", "type": "secondary_signal"},
-    {"handle": "spordakika", "name": "Spor Dakika", "type": "secondary_signal"},
     {"handle": "sportransfer", "name": "Spor Transfer", "type": "secondary_signal"},
-    {"handle": "futbolborsasi", "name": "Futbol Borsası", "type": "secondary_signal"},
-    # Kulüp bazlı kanallar
+    # Kulüp bazlı kanallar (public preview doğrulandı)
     {"handle": "besiktashaberleri", "name": "Beşiktaş Haberleri", "team": "BEŞİKTAŞ A.Ş.", "type": "secondary_signal"},
     {"handle": "fenerbahcehaberleri", "name": "Fenerbahçe Haberleri", "team": "FENERBAHÇE A.Ş.", "type": "secondary_signal"},
     {"handle": "galatasarayhaberleri", "name": "Galatasaray Haberleri", "team": "GALATASARAY A.Ş.", "type": "secondary_signal"},
     {"handle": "trabzonsporhaberleri", "name": "Trabzonspor Haberleri", "team": "TRABZONSPOR A.Ş.", "type": "secondary_signal"},
-    {"handle": "samsunsporklubu", "name": "Samsunspor Haberleri", "team": "SAMSUNSPOR A.Ş.", "type": "secondary_signal"},
-    {"handle": "goztepehaber", "name": "Göztepe Haberleri", "team": "GÖZTEPE A.Ş.", "type": "secondary_signal"},
-    {"handle": "gaziantepfkhaber", "name": "Gaziantep FK Haberleri", "team": "GAZİANTEP FUTBOL KULÜBÜ A.Ş.", "type": "secondary_signal"},
-    {"handle": "kasimpasahaber", "name": "Kasımpaşa Haberleri", "team": "KASIMPAŞA A.Ş.", "type": "secondary_signal"},
 ]
 
 TRANSFER_KW = {
