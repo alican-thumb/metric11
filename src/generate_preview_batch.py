@@ -12,6 +12,7 @@ from src.normalization import normalize_matches
 # Teams represented in the historical match input for SEASON (2025/26).
 # Promoted 2026/27 clubs belong in live transfer tracking until match data exists.
 ALL_TEAMS = [
+    # 2025/26 sezonu takımları (arşiv verileri mevcut)
     "BEŞİKTAŞ A.Ş.",
     "GALATASARAY A.Ş.",
     "FENERBAHÇE A.Ş.",
@@ -30,6 +31,10 @@ ALL_TEAMS = [
     "MISIRLI.COM.TR FATİH KARAGÜMRÜK",
     "HESAP.COM ANTALYASPOR",
     "ZECORNER KAYSERİSPOR",
+    # 2026/27 yükselen takımlar
+    "ÇORUM FK",
+    "ERZURUMSPOR FK",
+    "AMED SFK",
 ]
 
 

@@ -32,6 +32,10 @@ SLUG_TO_TRANSFER_NAME: dict[str, str] = {
     "karagumruk": "Fatih Karagümrük",
     "antalyaspor": "Antalyaspor",
     "kayserispor": "Kayserispor",
+    # 2026/27 yükselen takımlar
+    "corumfk": "Çorum FK",
+    "erzurumspor": "Erzurumspor FK",
+    "amed": "Amedspor",
 }
 
 TFF_CLUB_FRAGMENTS: dict[str, str] = {
@@ -53,6 +57,9 @@ TFF_CLUB_FRAGMENTS: dict[str, str] = {
     "karagumruk": "KARAGÜMRÜK",
     "antalyaspor": "ANTALYA",
     "kayserispor": "KAYSERİ",
+    "corumfk": "ÇORUM",
+    "erzurumspor": "ERZURUM",
+    "amed": "AMED",
 }
 
 
@@ -180,6 +187,10 @@ TEAM_DISPLAY_NAMES: dict[str, str] = {
     "karagumruk": "Fatih Karagümrük",
     "antalyaspor": "Antalyaspor",
     "kayserispor": "Kayserispor",
+    # 2026/27 yükselen takımlar
+    "corumfk": "Çorum FK",
+    "erzurumspor": "Erzurumspor FK",
+    "amed": "Amedspor",
 }
 
 
@@ -265,15 +276,23 @@ def build_html(summary: dict, previews: list[dict], goal_backtest: dict, team_na
         '2026/27 fikstürü açıklandığında tahminler otomatik olarak güncellenir.</div>'
     ) if is_off_season else ""
     transfer_section = _transfer_window_section(team_slug, team_name) if _is_transfer_season() else ""
+
+    _transfer_mode = is_off_season and _is_transfer_season()
+    _page_title = f"{escape(team_name)} Transfer Odası — Yaz 2026 | metric11" if _transfer_mode else f"{escape(team_name)} Maç Önü — Süper Lig 2025/26 | metric11"
+    _og_title   = f"{escape(team_name)} Transfer Odası — metric11" if _transfer_mode else f"{escape(team_name)} Maç Önü — metric11"
+    _meta_desc  = f"{escape(team_name)} yaz 2026 transfer radarı: sözleşme durumları, transfer sinyalleri ve 2025/26 sezon arşivi — metric11." if _transfer_mode else f"{escape(team_name)} 2025/26 sezonu maç önü analizleri: olasılıklar, gol adayları ve kadro sinyali — metric11."
+    _h1         = f"{escape(team_name)} transfer odası" if _transfer_mode else f"{escape(team_name)} maç odası"
+    _subtext    = "Yaz 2026 transfer penceresi: kadro sinyalleri, sözleşme bitenler ve 2025/26 sezon arşivi." if _transfer_mode else "2025/26 sezonu: maç seç, olasılıkları, gol adaylarını, kadro kararını ve eksik oyuncu etkisini birlikte incele."
+
     return f"""<!doctype html>
 <html lang="tr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{escape(team_name)} Maç Önü — Süper Lig 2025/26 | metric11</title>
-  <meta name="description" content="{escape(team_name)} 2025/26 sezonu maç önü analizleri: olasılıklar, gol adayları ve kadro sinyali — metric11.">
-  <meta property="og:title" content="{escape(team_name)} Maç Önü — metric11">
-  <meta property="og:description" content="{escape(team_name)} 2025/26 sezonu maç önü analizleri: olasılıklar, gol adayları ve kadro sinyali.">
+  <title>{_page_title}</title>
+  <meta name="description" content="{_meta_desc}">
+  <meta property="og:title" content="{_og_title}">
+  <meta property="og:description" content="{_meta_desc}">
   <meta property="og:image" content="https://metric11.com/og-image.png">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
@@ -524,8 +543,8 @@ def build_html(summary: dict, previews: list[dict], goal_backtest: dict, team_na
   </div>
   <header>
     <div>
-      <h1>{escape(team_name)} maç odası</h1>
-      <p>2025/26 sezonu: maç seç, olasılıkları, gol adaylarını, kadro kararını ve eksik oyuncu etkisini birlikte incele.</p>
+      <h1>{_h1}</h1>
+      <p>{_subtext}</p>
     </div>
   </header>
   <main>
