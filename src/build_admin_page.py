@@ -131,6 +131,24 @@ def _build_html() -> str:
         for name, href in admin_tools
     )
 
+    # Başarısız pipeline komutları
+    failed_rows = [r for r in pipeline.get("rows", []) if r.get("returncode", 0) != 0]
+    if failed_rows:
+        fail_cards = "".join(
+            f"""<div style='margin-bottom:10px;background:#0a1008;border:1px solid #2d1515;border-left:3px solid #ef4444;border-radius:6px;padding:12px 14px'>
+  <div style='font-size:12px;font-weight:700;color:#ef4444;margin-bottom:6px'>{escape(" ".join(r["command"]))}</div>
+  <pre style='font-size:11px;color:#94a3b8;white-space:pre-wrap;word-break:break-word;margin:0;max-height:120px;overflow-y:auto'>{escape(r.get("stderr_tail","")[-600:] or r.get("stdout_tail","")[-600:] or "—")}</pre>
+</div>"""
+            for r in failed_rows
+        )
+        pipeline_fail_section = f"""
+    <div class="card" style="margin-bottom:20px;border-color:#3d1515">
+      <div class="card-title" style="color:#ef4444">⚠ Pipeline Hataları — {len(failed_rows)} başarısız komut</div>
+      {fail_cards}
+    </div>"""
+    else:
+        pipeline_fail_section = ""
+
     gen_at = escape(datetime.now(timezone.utc).strftime("%d.%m.%Y %H:%M UTC"))
     hash_js = json.dumps(ADMIN_HASH)
 
@@ -314,6 +332,8 @@ def _build_html() -> str:
         <div class="rrow"><span class="rrow-lbl">Haber son güncelleme</span><span class="rrow-val">{escape(_fmt(news.get("generated_at")))}</span></div>
       </div>
     </div>
+
+    {pipeline_fail_section}
 
     <div class="card" style="margin-bottom:20px">
       <div class="card-title">Ziyaretçi Analitiği</div>

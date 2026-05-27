@@ -203,6 +203,43 @@ Parse edilen alanlar:
 - 2025/26 sezonu bitti — tüm maç önü dashboard'larına otomatik "sezon arası" banner eklendi; 2026/27 fikstürü açılınca banner JS tarih tespiti ile kaybolacak.
 - 2026/27 Süper Lig kadrosu güncellendi: küme düşenler (Karagümrük, Antalyaspor, Kayserispor) çıkarıldı; yükselen takımlar (Çorum FK, Erzurumspor FK, Amed SFK) TM ID'leriyle sisteme eklendi. 4 dosya güncellendi: `generate_preview_batch.py`, `build_dashboard.py`, `transfermarkt_super_lig_clubs.json`, `build_transfer_season_context.py`.
 
+## 2026-05-27 Tema Genişleme & Ağ Büyütme (Session 9)
+
+### Transfer Sezonu Bağlam Sayfası Tema Dönüşümü (build_transfer_season_context.py)
+- Tüm mavi dark theme (`#0f172a`, `#1e293b`, `#334155`, `#94a3b8`, `#60a5fa`, `#64748b`, `#3b82f6`, `#e2e8f0`, `#fbbf24`) site yeşil temasına dönüştürüldü.
+- Gövde: `background:#f3f5f4;color:#132018` (light theme).
+- Kartlar: `background:#1e293b` → `background:#fff;border:1px solid #d7ded9`.
+- Muted text: `#94a3b8/#64748b` → `#627067`. Link rengi `#60a5fa` → `#116447`.
+- Pozisyon kartlarında DEF rengi `#3b82f6` → `#116447` (yeşil). MID `#10b981` → `#0d9488`.
+- Summary pill bg: `#1e293b` → `#0f2018` (koyu yeşil, site nav tonunda).
+- Sinyaller: oklar `#60a5fa` → `#116447`. RUMOR status `#3b82f6` → `#8fa89a`.
+- Timeline: `background:#1e293b` → `background:#fff;border:1px solid #d7ded9`.
+- Explanation box'lar: renk-kodlu light bg (kırmızı için `#fef2f2`, amber için `#fffbeb`, mor için `#f3f0ff`).
+
+### Telegram Kanal Genişlemesi (collect_news_telegram.py)
+- 7 → 18 kanal (11 yeni kanal eklendi).
+- Yeni genel transfer kanalları: superligson, futbolhaber, transferson, turkiyefutbol, spordakika, sportransfer, futbolborsasi.
+- Yeni kulüp kanalları: samsunsporklubu, goztepehaber, gaziantepfkhaber, kasimpasahaber.
+- Başarısız kanallar pipeline'da graceful fail ile işleniyor.
+
+### Twitter Hesap Genişlemesi (collect_news_twitter.py)
+- ~40 → 62 hesap (+22 yeni).
+- Yeni medya: NTVSpor, sabah_spor, Milliyet_Spor, aksam_spor, CNNTURKspor, SkySpor_TR.
+- Yeni transfer muhabirleri: Sansal_Buyuk, hamitsalih, ugurtuncay, NicoSchira, transfermarkt (global), GizemKaya__ transfer kategorisine taşındı.
+- Yeni kulüp muhabirleri: GShaberleri, FBhaberleri, TShaberleri1907.
+- Yeni veri/analiz: StatsBombIQ, FBref, SofaScore, WhoScored.
+
+## 2026-05-26 Transfer Tracker Tema & UX Düzeltmesi (Session 8)
+
+### Transfer Tracker Yeniden Tasarımı (build_transfer_tracker.py)
+- Header gradient mavi (`#1e3a5f, #0f172a, #3b82f6`) → site yeşili (`var(--dark), #1a3023`) olarak değiştirildi.
+- Stat pill arka planı `#1e293b` → `#0f2018` (koyu yeşil); muted renk `#94a3b8` → `#8fa89a` (yeşil ton).
+- Info-box `#eff6ff/blue` → `#e8f5ee/yeşil` olarak değiştirildi.
+- `og:image` ve `twitter:image` `og-image.png` → `og_home.png` olarak düzeltildi.
+- `STATUS_META` "İNCELEMEDE" → "TAKİPTE" olarak değiştirildi; info-box metni güncellendi.
+- `player == "?"` olan sinyaller ana tablodan ayrıldı: "Takip Edilen Haberler" alt bölümüne taşındı; haber başlığı + kaynak + tarih gösteriyor. Ana tablo yalnızca adı bilinen oyuncu sinyallerini içeriyor.
+- 𝕏 Paylaş butonu eklendi: tweetde "X resmi, Y sinyal" özetiyle `twitter.com/intent/tweet` linki.
+
 ## 2026-05-26 Transfer Sezonu Öneriler & Nav Tutarsızlığı (Session 7)
 
 ### RSS Kaynak Temizliği (collect_news_rss.py)

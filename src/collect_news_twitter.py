@@ -67,6 +67,12 @@ TWITTER_ACCOUNTS = [
     {"handle": "fotomacgazetesi", "name": "Fotomaç", "team": None, "type": "media"},
     {"handle": "BeINSPORTS_TR", "name": "beIN Sports TR", "team": None, "type": "media"},
     {"handle": "trtspor", "name": "TRT Spor", "team": None, "type": "media"},
+    {"handle": "NTVSpor", "name": "NTV Spor", "team": None, "type": "media"},
+    {"handle": "sabah_spor", "name": "Sabah Spor", "team": None, "type": "media"},
+    {"handle": "Milliyet_Spor", "name": "Milliyet Spor", "team": None, "type": "media"},
+    {"handle": "aksam_spor", "name": "Akşam Spor", "team": None, "type": "media"},
+    {"handle": "CNNTURKspor", "name": "CNN Türk Spor", "team": None, "type": "media"},
+    {"handle": "SkySpor_TR", "name": "Sky Spor TR", "team": None, "type": "media"},
     {"handle": "SportsDigitale", "name": "Sports Digitale", "team": None, "type": "secondary_signal"},
     {"handle": "HaberKartali", "name": "Haber Kartalı", "team": None, "type": "media"},
     # --- Transfer muhabirleri (TR) ---
@@ -76,20 +82,31 @@ TWITTER_ACCOUNTS = [
     {"handle": "ertansuzgun", "name": "Ertan Süzgün (Transfer #1)", "team": None, "type": "transfer_news"},
     {"handle": "yusufgunaydn", "name": "Yusuf Günaydın (Altyapı/Scout)", "team": None, "type": "transfer_news"},
     {"handle": "EkremKonur", "name": "Ekrem Konur (Int. Transfer)", "team": None, "type": "transfer_news"},
-    # --- Transfer muhabirleri (global) ---
+    {"handle": "GizemKaya__", "name": "Gizem Kaya (Süper Lig)", "team": None, "type": "transfer_news"},
+    {"handle": "Sansal_Buyuk", "name": "Şansal Büyük (Transfer)", "team": None, "type": "transfer_news"},
+    {"handle": "hamitsalih", "name": "Hamit Salih (Transfer)", "team": None, "type": "transfer_news"},
+    {"handle": "ugurtuncay", "name": "Uğur Tunçay (Galatasaray)", "team": "GALATASARAY A.Ş.", "type": "transfer_news"},
+    # --- Transfer muhabirleri (global / TR-kapsam) ---
     {"handle": "FabrizioRomano", "name": "Fabrizio Romano (Global Transfer)", "team": None, "type": "transfer_news"},
+    {"handle": "NicoSchira", "name": "Nicolo Schira (İtalya/TR Transfer)", "team": None, "type": "transfer_news"},
     {"handle": "TurkishFootball", "name": "Turkish Football (EN)", "team": None, "type": "media"},
-    # --- Kulüp/lig muhabirleri ---
-    {"handle": "GizemKaya__", "name": "Gizem Kaya (Süper Lig)", "team": None, "type": "secondary_signal"},
+    {"handle": "transfermarkt", "name": "Transfermarkt Global", "team": None, "type": "transfer_news"},
+    # --- Kulüp muhabirleri ---
     {"handle": "GercekBJK", "name": "Gerçek BJK", "team": "BEŞİKTAŞ A.Ş.", "type": "secondary_signal"},
-    {"handle": "AmputeFutbol", "name": "Ampute Futbol (Kadro/Sakat)", "team": None, "type": "secondary_signal"},
     {"handle": "WebdikBesiktas", "name": "Webdik Beşiktaş (Veri/BJK)", "team": "BEŞİKTAŞ A.Ş.", "type": "secondary_signal"},
     {"handle": "KaraKartalBlog", "name": "Kara Kartal Blog (BJK Analiz)", "team": "BEŞİKTAŞ A.Ş.", "type": "secondary_signal"},
-    # --- Taktik / analiz ---
+    {"handle": "GShaberleri", "name": "GS Haberleri", "team": "GALATASARAY A.Ş.", "type": "secondary_signal"},
+    {"handle": "FBhaberleri", "name": "FB Haberleri", "team": "FENERBAHÇE A.Ş.", "type": "secondary_signal"},
+    {"handle": "TShaberleri1907", "name": "TS Haberleri", "team": "TRABZONSPOR A.Ş.", "type": "secondary_signal"},
+    # --- Taktik / analiz / veri ---
     {"handle": "TaktikSehri", "name": "Taktik Şehri", "team": None, "type": "analytics"},
     {"handle": "kutubolgesi", "name": "Kutu Bölgesi (Taktik)", "team": None, "type": "analytics"},
     {"handle": "PassHatasiii", "name": "Pass Hatası (Veri Analiz)", "team": None, "type": "analytics"},
     {"handle": "OptaJoe", "name": "Opta Joe (Global Veri)", "team": None, "type": "analytics"},
+    {"handle": "StatsBombIQ", "name": "StatsBomb (Veri)", "team": None, "type": "analytics"},
+    {"handle": "FBref", "name": "FBref (Veri)", "team": None, "type": "analytics"},
+    {"handle": "SofaScore", "name": "SofaScore", "team": None, "type": "analytics"},
+    {"handle": "WhoScored", "name": "WhoScored", "team": None, "type": "analytics"},
 ]
 
 SUPER_LIG_TEAMS = {

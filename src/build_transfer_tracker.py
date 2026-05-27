@@ -26,7 +26,7 @@ STATUS_META: dict[str, tuple[str, str, str]] = {
     "CORROBORATED":   ("DOĞRULANDI", "#2563eb", "#dbeafe"),
     "TM_CONFIRMED":   ("TM KADRO",   "#7c3aed", "#ede9fe"),
     "RUMOR":          ("SÖYLENTI",   "#d97706", "#fef3c7"),
-    "REVIEW_REQUIRED":("İNCELEMEDE", "#6b7280", "#f1f5f9"),
+    "REVIEW_REQUIRED":("TAKİPTE",    "#6b7280", "#f1f5f9"),
 }
 
 WINDOW_OPEN  = "1 Haziran 2026"
@@ -156,15 +156,43 @@ def _row_html(s: dict) -> str:
 </tr>"""
 
 
-def build_html(signals: list[dict], summary: dict) -> str:
-    now = datetime.now(timezone.utc).strftime("%d.%m.%Y %H:%M")
-    rows = "\n".join(_row_html(s) for s in signals) if signals else "<tr><td colspan='8' style='padding:24px;text-align:center;color:var(--muted)'>Henüz kayıtlı transfer yok</td></tr>"
+def _news_section_html(unnamed: list[dict]) -> str:
+    if not unnamed:
+        return ""
+    items = "".join(
+        f"""<div style="padding:10px 0;border-bottom:1px solid var(--line)">
+  <a href="{escape(s.get('link','')or'#')}" target="_blank" rel="noopener"
+     style="color:var(--ink);font-size:13px;font-weight:600;text-decoration:none;line-height:1.4">
+    {escape((s.get('title') or s.get('source') or '—')[:120])}
+  </a>
+  <div style="font-size:11px;color:var(--muted);margin-top:3px">{escape(s.get('source',''))} · {escape(s.get('published_at','')[:10] or '—')}</div>
+</div>"""
+        for s in unnamed
+    )
+    return f"""
+<section style="background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:18px;margin-top:24px">
+  <h2 style="font-size:16px;font-weight:700;margin:0 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line)">
+    Takip Edilen Haberler <span style="font-weight:400;color:var(--muted);font-size:13px">({len(unnamed)} haber — oyuncu adı henüz doğrulanmadı)</span>
+  </h2>
+  {items}
+</section>"""
 
+
+def build_html(signals: list[dict], summary: dict) -> str:
+    from urllib.parse import quote
+    now = datetime.now(timezone.utc).strftime("%d.%m.%Y %H:%M")
+    named   = [s for s in signals if s["player"] != "?"]
+    unnamed = [s for s in signals if s["player"] == "?"]
+    rows = "\n".join(_row_html(s) for s in named) if named else "<tr><td colspan='8' style='padding:24px;text-align:center;color:var(--muted)'>Henüz kayıtlı transfer yok</td></tr>"
+    share_text = quote(
+        f"Süper Lig transfer radarı: {summary['official_count']} resmi, "
+        f"{summary['total_signals']} sinyal takipte — metric11.com"
+    )
     total_mv_label = _mv(summary["total_value_eur"])
     stat_pills = "".join(
-        f"""<div style="background:#1e293b;border-radius:10px;padding:14px 20px;text-align:center;min-width:110px;flex:1">
-  <div style="font-size:22px;font-weight:700;color:{STATUS_META.get(k, ('','#f1f5f9',''))[1] or '#f1f5f9'}">{v}</div>
-  <div style="font-size:11px;color:#94a3b8;margin-top:2px">{STATUS_META.get(k,('?','',''))[0]}</div>
+        f"""<div style="background:#0f2018;border-radius:10px;padding:14px 20px;text-align:center;min-width:110px;flex:1">
+  <div style="font-size:22px;font-weight:700;color:{STATUS_META.get(k, ('','#cde94e',''))[1] or '#cde94e'}">{v}</div>
+  <div style="font-size:11px;color:#8fa89a;margin-top:2px">{STATUS_META.get(k,('?','',''))[0]}</div>
 </div>"""
         for k, v in sorted(summary["by_status"].items())
     )
@@ -177,10 +205,10 @@ def build_html(signals: list[dict], summary: dict) -> str:
 <meta name="description" content="Süper Lig yaz transfer penceresi takibi: resmi transferler, teyitli iddialar ve TM kadro değişiklikleri — metric11.">
 <meta property="og:title" content="Transfer Takip — Süper Lig {TRANSFER_WATCH_SEASON_LABEL} | metric11">
 <meta property="og:description" content="Süper Lig yaz transfer penceresi takibi: resmi transferler, teyitli iddialar ve TM kadro değişiklikleri.">
-<meta property="og:image" content="https://metric11.com/og-image.png">
+<meta property="og:image" content="https://metric11.com/og_home.png">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://metric11.com/og-image.png">
+<meta name="twitter:image" content="https://metric11.com/og_home.png">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <style>
   :root{{--bg:#f3f5f4;--panel:#fff;--ink:#132018;--muted:#627067;--line:#d7ded9;--dark:#091810;--green:#116447;--lime:#cde94e}}
@@ -197,9 +225,9 @@ def build_html(signals: list[dict], summary: dict) -> str:
   .topnav a:visited{{color:#8fa89a}}
   .topnav a:hover{{background:#162b20;color:white}}
   .topnav a.active{{background:#162b20;color:white}}
-  .header{{background:linear-gradient(135deg,#1e3a5f,#0f172a);border-bottom:3px solid #3b82f6;padding:24px clamp(14px,3vw,32px)}}
+  .header{{background:var(--dark);border-bottom:3px solid #1a3023;padding:24px clamp(14px,3vw,32px)}}
   .header h1{{font-size:28px;font-weight:700;color:white;margin-bottom:6px}}
-  .header .sub{{color:#94a3b8;font-size:13px}}
+  .header .sub{{color:#8fa89a;font-size:13px}}
   .stat-bar{{display:flex;gap:12px;padding:18px clamp(12px,3vw,32px);flex-wrap:wrap;max-width:1400px;margin:0 auto}}
   .stat-mv{{background:linear-gradient(135deg,#064e3b,#065f46);border-radius:10px;padding:14px 20px;text-align:center;min-width:140px;flex:1}}
   .stat-mv .v{{font-size:22px;font-weight:700;color:#34d399}}
@@ -213,7 +241,7 @@ def build_html(signals: list[dict], summary: dict) -> str:
   th{{background:#eef2ef;padding:11px 14px;text-align:left;color:var(--muted);font-weight:600;border-bottom:1px solid var(--line);white-space:nowrap}}
   td{{padding:11px 14px;border-bottom:1px solid #edf1ee;vertical-align:middle}}
   tr:hover td{{background:#f7faf7}}
-  .info-box{{background:#eff6ff;border:1px solid #bfdbfe;border-radius:8px;padding:14px 18px;margin-bottom:20px;font-size:13px;color:#1e40af;line-height:1.6}}
+  .info-box{{background:#e8f5ee;border:1px solid #a7c9b3;border-radius:8px;padding:14px 18px;margin-bottom:20px;font-size:13px;color:#116447;line-height:1.6}}
   @media(max-width:600px){{.topbar{{flex-direction:column;align-items:stretch;padding:11px 12px 0;gap:0;min-height:unset}}.brand{{padding-bottom:8px}}.topnav{{border-top:1px solid #1e3228;padding:7px 0 9px}}}}
 </style>
 </head>
@@ -241,12 +269,12 @@ def build_html(signals: list[dict], summary: dict) -> str:
     <strong>Veri kaynakları:</strong> Resmi kulüp siteleri ile erişilebilir RSS/medya akışları otomatik taranır.
     X sinyali yalnız yapılandırılmış erişim bulunduğunda değerlendirilir.
     Durum <strong>RESMİ</strong> = kulüp resmi kanalından, <strong>DOĞRULANDI</strong> = birden fazla güvenilir kaynak,
-    <strong>SÖYLENTI</strong> = tek kaynak/medya iddiası, <strong>İNCELEMEDE</strong> = otomatik eşleştirme gerekiyor.
+    <strong>SÖYLENTI</strong> = tek kaynak/medya iddiası, <strong>TAKİPTE</strong> = oyuncu adı doğrulanmayı bekliyor.
     Pipeline günde 5 kez çalışır; yeni haberler otomatik eklenir.
   </div>
   <div class="filter-bar">
     <input class="filter-input" id="filterInput" placeholder="Oyuncu veya kulüp ara…" oninput="filterRows(this.value)">
-    <span style="font-size:13px;color:var(--muted)">{summary['total_signals']} kayıt</span>
+    <span style="font-size:13px;color:var(--muted)">{len(named)} kayıt</span>
   </div>
   <div class="table-wrap">
     <table id="transferTable">
@@ -257,9 +285,16 @@ def build_html(signals: list[dict], summary: dict) -> str:
       <tbody id="tbody">{rows}</tbody>
     </table>
   </div>
-  <div style="margin-top:24px;display:flex;gap:14px;flex-wrap:wrap">
+  {_news_section_html(unnamed)}
+  <div style="margin-top:24px;padding-top:16px;border-top:1px solid var(--line);display:flex;gap:14px;flex-wrap:wrap;align-items:center">
     <a href="transfer_season_context_{SEASON}.html" style="color:var(--green);font-size:13px;font-weight:600">→ Serbest Kalacak Oyuncular &amp; Sözleşme Analizi</a>
     <a href="transfer_recommendation_report_{SEASON}.html" style="color:var(--green);font-size:13px;font-weight:600">→ Takım Bazlı Transfer Önerileri</a>
+  </div>
+  <div style="margin-top:16px">
+    <a class="x-share" href="https://twitter.com/intent/tweet?text={share_text}&url=https%3A%2F%2Fmetric11.com%2Ftransfer_tracker_{SEASON}.html" target="_blank" rel="noopener"
+       style="display:inline-flex;align-items:center;gap:8px;background:#000;color:#fff;text-decoration:none;font-size:14px;font-weight:700;padding:10px 18px;border-radius:8px">
+      𝕏 Paylaş
+    </a>
   </div>
 </main>
 <script>

@@ -40,6 +40,7 @@ jobs:
 
       - name: Run pipeline (network dahil)
         if: ${{ github.event_name == 'schedule' || github.event.inputs.include_network == 'true' }}
+        continue-on-error: true
         env:
           API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
           FOOTBALL_DATA_KEY: ${{ secrets.FOOTBALL_DATA_KEY }}
@@ -50,6 +51,7 @@ jobs:
 
       - name: Run pipeline (network yok)
         if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.include_network == 'false' }}
+        continue-on-error: true
         env:
           API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
           FOOTBALL_DATA_KEY: ${{ secrets.FOOTBALL_DATA_KEY }}
@@ -58,6 +60,7 @@ jobs:
         run: python -m src.run_daily_pipeline
 
       - name: Commit and push generated outputs
+        if: always()
         run: |
           git config --global user.email "257049215+alican-thumb@users.noreply.github.com"
           git config --global user.name "alican-thumb"
@@ -68,6 +71,7 @@ jobs:
           git push origin main
 
       - name: Upload processed outputs
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: metric11-processed-data
