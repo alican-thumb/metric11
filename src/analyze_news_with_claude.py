@@ -727,11 +727,12 @@ def build_intelligence(articles: list[dict], player_index: dict) -> dict:
     conf_ord = {"HIGH": 0, "MEDIUM": 1, "LOW": 2}
     injuries.sort(key=lambda x: conf_ord.get(x.get("confidence", "LOW"), 2))
 
+    _dt_min = datetime.min.replace(tzinfo=timezone.utc)
     recent = sorted(
         [a for a in articles
          if (a.get("super_lig_relevant") or a.get("source_type") == "twitter")
          and _is_recent_live_item(a)],
-        key=lambda a: a.get("published_at") or "",
+        key=lambda a: _published_at(a.get("published_at")) or _dt_min,
         reverse=True,
     )
 
@@ -815,13 +816,15 @@ def _aggregate_transfer_mentions(mentions: list[dict]) -> list[dict]:
 
     claims = [_build_transfer_claim(rows) for rows in grouped.values()]
     status_order = {"OFFICIAL": 0, "CORROBORATED": 1, "RUMOR": 2, "REVIEW_REQUIRED": 3}
-    claims.sort(key=lambda row: row.get("published_at") or "", reverse=True)
+    _dt_min = datetime.min.replace(tzinfo=timezone.utc)
+    claims.sort(key=lambda row: _published_at(row.get("published_at")) or _dt_min, reverse=True)
     claims.sort(key=lambda row: status_order.get(row["verification_status"], 9))
     return claims
 
 
 def _build_transfer_claim(rows: list[dict]) -> dict:
-    rows = sorted(rows, key=lambda row: row.get("published_at") or "", reverse=True)
+    _dt_min = datetime.min.replace(tzinfo=timezone.utc)
+    rows = sorted(rows, key=lambda row: _published_at(row.get("published_at")) or _dt_min, reverse=True)
     head = dict(rows[0])
     distinct_sources = list(dict.fromkeys(row.get("source", "?") for row in rows))
     trusted_sources = {_source_identity(row) for row in rows if row.get("source_tier") in {"MEDIA", "AGENCY"}}

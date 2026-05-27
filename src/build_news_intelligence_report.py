@@ -52,7 +52,22 @@ def _build_basic_intel_from_rss(rss_payload: dict) -> dict:
     """Claude analizi olmadan ham RSS verilerinden temel istihbarat yapısı üretir."""
     articles = rss_payload.get("articles", [])
     relevant = [a for a in articles if a.get("super_lig_relevant")]
-    recent = sorted(relevant or articles, key=lambda a: a.get("published_at") or "", reverse=True)
+    def _parse_dt(s: str | None) -> datetime:
+        if not s:
+            return datetime.min.replace(tzinfo=timezone.utc)
+        try:
+            dt = datetime.fromisoformat(s.replace("Z", "+00:00"))
+            return dt if dt.tzinfo else dt.replace(tzinfo=timezone.utc)
+        except ValueError:
+            pass
+        for fmt in ("%d.%m.%Y %H:%M:%S", "%d.%m.%Y"):
+            try:
+                return datetime.strptime(s, fmt).replace(tzinfo=timezone.utc)
+            except ValueError:
+                continue
+        return datetime.min.replace(tzinfo=timezone.utc)
+
+    recent = sorted(relevant or articles, key=lambda a: _parse_dt(a.get("published_at")), reverse=True)
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "season": SEASON,
