@@ -531,18 +531,6 @@
         "recent_cards": 1
       },
       {
-        "player_id": "2820847",
-        "name": "ISHOLA JUNIOR  OLAITAN",
-        "goal_threat_score": 11.86,
-        "candidate_type": "primary",
-        "recent_starts": 8,
-        "season_goals_before_match": 2,
-        "recent_goals": 2,
-        "big_match_goals_before_match": 0,
-        "opponent_defense_multiplier": 1.0,
-        "actual_scorer": false
-      },
-      {
         "player_id": "1979668",
         "name": "MUSTAFA ERHAN HEKİMOĞLU",
         "goal_threat_score": 10.4,
@@ -592,6 +580,23 @@
         "recent_cards": 0,
         "opponent_defense_multiplier": 1.0,
         "actual_scorer": true
+      },
+      {
+        "player_id": "2820847",
+        "name": "ISHOLA JUNIOR  OLAITAN",
+        "goal_threat_score": 8.06,
+        "candidate_type": "primary",
+        "recent_starts": 8,
+        "season_goals_before_match": 2,
+        "recent_goals": 2,
+        "big_match_goals_before_match": 0,
+        "opponent_defense_multiplier": 1.0,
+        "actual_scorer": false,
+        "quality_adjustment": {
+          "multiplier": 0.68,
+          "reason": "Top 5 sıralama etkisini düşür veya aday tipini yeniden kontrol et.",
+          "source": "goal_candidate_segment_backtest"
+        }
       },
       {
         "player_id": "2822113",
@@ -807,9 +812,9 @@
     "core_starters": [
       "ORKUN KÖKÇÜ",
       "HYEONGYU OH",
-      "ISHOLA JUNIOR  OLAITAN",
       "ERSİN DESTANOĞLU",
       "BADOBRE EMMANUEL ELYSEE DJEDJE AGBADOU",
+      "ISHOLA JUNIOR  OLAITAN",
       "VACLAV CERNY",
       "RIDVAN YILMAZ",
       "KRİSTJAN ASLLANİ"
@@ -817,7 +822,7 @@
     "attacking_priority": [
       "ORKUN KÖKÇÜ",
       "HYEONGYU OH",
-      "ISHOLA JUNIOR  OLAITAN"
+      "MUSTAFA ERHAN HEKİMOĞLU"
     ],
     "card_caution": [
       {
@@ -832,9 +837,9 @@
   },
   "coach_lineup_audit": {
     "verdict": "KISMEN_TARTIŞMALI",
-    "actual_lineup_score": 89.56,
-    "recommended_lineup_score": 112.22,
-    "alignment_rate": 0.798,
+    "actual_lineup_score": 80.85,
+    "recommended_lineup_score": 103.51,
+    "alignment_rate": 0.781,
     "actual_starters": [
       "ERSİN DESTANOĞLU",
       "HYEONGYU OH",
@@ -851,9 +856,9 @@
     "model_core_starters": [
       "ORKUN KÖKÇÜ",
       "HYEONGYU OH",
-      "ISHOLA JUNIOR  OLAITAN",
       "ERSİN DESTANOĞLU",
       "BADOBRE EMMANUEL ELYSEE DJEDJE AGBADOU",
+      "ISHOLA JUNIOR  OLAITAN",
       "VACLAV CERNY",
       "RIDVAN YILMAZ",
       "KRİSTJAN ASLLANİ"
@@ -863,7 +868,9 @@
       "VACLAV CERNY",
       "KRİSTJAN ASLLANİ"
     ],
-    "omitted_attacking_priority": [],
+    "omitted_attacking_priority": [
+      "MUSTAFA ERHAN HEKİMOĞLU"
+    ],
     "questionable_starters": [
       {
         "name": "KARTAL KAYRA YILMAZ",
@@ -904,20 +911,20 @@
         "current_team": "GALATASARAY A.Ş.",
         "target_role": "Sol açık / çizgi kırıcı",
         "role_key": "LW_CREATOR",
-        "role_fit_score": 115.39,
+        "role_fit_score": 116.95,
         "position_confidence": "MEDIUM_EXTERNAL",
         "age": 25,
         "economy_score": 22.0,
         "current_expected_goals_for": 1.52,
         "current_expected_goals_against": 0.9,
-        "simulated_expected_goals_for": 1.86,
+        "simulated_expected_goals_for": 1.87,
         "simulated_expected_goals_against": 0.88,
-        "xg_for_delta": 0.34,
+        "xg_for_delta": 0.35,
         "xg_against_delta": 0.02,
-        "goal_edge_delta": 0.36,
-        "simulated_target_win_probability": 0.604,
-        "simulated_draw_probability": 0.222,
-        "simulated_opponent_win_probability": 0.173,
+        "goal_edge_delta": 0.37,
+        "simulated_target_win_probability": 0.607,
+        "simulated_draw_probability": 0.221,
+        "simulated_opponent_win_probability": 0.172,
         "simulated_scoreline": {
           "target_goals": 1,
           "opponent_goals": 0,
@@ -933,7 +940,7 @@
         "current_team": "GALATASARAY A.Ş.",
         "target_role": "Sol açık / çizgi kırıcı",
         "role_key": "LW_CREATOR",
-        "role_fit_score": 110.15,
+        "role_fit_score": 111.7,
         "position_confidence": "MEDIUM_EXTERNAL",
         "age": 26,
         "economy_score": 18.0,
@@ -962,7 +969,7 @@
         "current_team": "TRABZONSPOR A.Ş.",
         "target_role": "Sol açık / çizgi kırıcı",
         "role_key": "LW_CREATOR",
-        "role_fit_score": 107.33,
+        "role_fit_score": 109.06,
         "position_confidence": "MEDIUM_EXTERNAL",
         "age": 23,
         "economy_score": 32.0,
@@ -991,7 +998,7 @@
         "current_team": "GENÇLERBİRLİĞİ",
         "target_role": "Sol açık / çizgi kırıcı",
         "role_key": "LW_CREATOR",
-        "role_fit_score": 106.0,
+        "role_fit_score": 107.73,
         "position_confidence": "MEDIUM_EXTERNAL",
         "age": 23,
         "economy_score": 32.0,
@@ -1020,7 +1027,7 @@
         "current_team": "FENERBAHÇE A.Ş.",
         "target_role": "Sol açık / çizgi kırıcı",
         "role_key": "LW_CREATOR",
-        "role_fit_score": 105.52,
+        "role_fit_score": 107.33,
         "position_confidence": "MEDIUM_EXTERNAL",
         "age": 23,
         "economy_score": 22.0,
@@ -1049,7 +1056,7 @@
         "current_team": "MISIRLI.COM.TR FATİH KARAGÜMRÜK",
         "target_role": "Sol açık / çizgi kırıcı",
         "role_key": "LW_CREATOR",
-        "role_fit_score": 96.44,
+        "role_fit_score": 98.73,
         "position_confidence": "MEDIUM_EXTERNAL",
         "age": 20,
         "economy_score": 32.0,
@@ -1084,11 +1091,11 @@
     "Eksik oyuncu sinyali modele dahil edildi: ONYINYE WILFRED NDIDI. Bu oyuncular olası 11 ve gol adayı listesinden çıkarıldı; skor beklentisi düşük güvenle aşağı ayarlandı.",
     "Hakem profili kart tarafında anlamlı bir sinyal veriyor: ADNAN DENİZ KAYATEPE bu sezon önceki 15 Beşiktaş maçında toplam maç başı 4.47 kart, Beşiktaş'a maç başı 2.4 kart ortalamasıyla öne çıkıyor.",
     "Olası 11 sinyalinde son dönemde öne çıkan isimler: ERSİN DESTANOĞLU, HYEONGYU OH, BADOBRE EMMANUEL ELYSEE DJEDJE AGBADOU, ISHOLA JUNIOR  OLAITAN, VACLAV CERNY, RIDVAN YILMAZ. Kart riski tarafında ise son 8 maç penceresinde CENGİZ ÜNDER, MICHAEL AMIR  MURILLO BERMUDEZ, ONYINYE WILFRED NDIDI, BADOBRE EMMANUEL ELYSEE DJEDJE AGBADOU dikkat çekiyor.",
-    "Gol adayı sinyalinde öne çıkan isimler: ORKUN KÖKÇÜ, HYEONGYU OH, ISHOLA JUNIOR  OLAITAN, MUSTAFA ERHAN HEKİMOĞLU. Bu skor son gol formu, sezon içi gol sayısı ve son dönemde ilk 11 başlama sıklığından türetildi. Test sonucunda gerçek Beşiktaş golcüleri: ORKUN KÖKÇÜ, JOAO PEDRO FERREIRA DA SILVA, HYEONGYU OH, HYEONGYU OH.",
+    "Gol adayı sinyalinde öne çıkan isimler: ORKUN KÖKÇÜ, HYEONGYU OH, MUSTAFA ERHAN HEKİMOĞLU, CENGİZ ÜNDER. Bu skor son gol formu, sezon içi gol sayısı ve son dönemde ilk 11 başlama sıklığından türetildi. Test sonucunda gerçek Beşiktaş golcüleri: ORKUN KÖKÇÜ, JOAO PEDRO FERREIRA DA SILVA, HYEONGYU OH, HYEONGYU OH.",
     "Skor dağılımında en olası senaryolar: 1-0 (%14), 1-1 (%12), 2-0 (%10). Model aksiyonu: Beraberlik uyarılı tahmin; önerilen ana skor 1-0.",
-    "Kadro tercih önerisi: Önde baskı ve skor arama. Hücum önceliği ORKUN KÖKÇÜ, HYEONGYU OH, ISHOLA JUNIOR  OLAITAN. Disiplin yönetimi gereken oyuncular: CENGİZ ÜNDER.",
-    "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %80 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.52-0.9 yerine 1.75-0.9 bandına gelebilirdi.",
-    "Transfer etki simülasyonunda örnek aday YUNUS AKGÜN (Sol açık / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.52-0.9 bandından 1.86-0.88 bandına taşırdı. Bu senaryoda en olası skor 1-0 ve kazanma olasılığı %60 olurdu.",
+    "Kadro tercih önerisi: Önde baskı ve skor arama. Hücum önceliği ORKUN KÖKÇÜ, HYEONGYU OH, MUSTAFA ERHAN HEKİMOĞLU. Disiplin yönetimi gereken oyuncular: CENGİZ ÜNDER.",
+    "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %78 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.52-0.9 yerine 1.75-0.9 bandına gelebilirdi.",
+    "Transfer etki simülasyonunda örnek aday YUNUS AKGÜN (Sol açık / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.52-0.9 bandından 1.87-0.88 bandına taşırdı. Bu senaryoda en olası skor 1-0 ve kazanma olasılığı %61 olurdu.",
     "MVP olasılık motoru Beşiktaş galibiyetini %50, beraberliği %26, rakip galibiyetini %23 olarak işaretliyor. Gol beklentisi 1.52-0.9; kart sinyali MEDIUM."
   ]
 }

@@ -137,10 +137,10 @@ Zayıf nokta: son bölüm gol yeme riski, kart baskısı, skor üretim sorunu, d
 **8 numara / fizik motoru** — Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir.
   1. ORKUN KÖKÇÜ (BEŞİKTAŞ A.Ş.) | 25y | 8 gol | SERBEST TRANSFER FIRSATI | FREE | skor 36.0
      → Gol üretimi zayıf (maç başına 0.97 gol attı) - 8 numara / fizik motoru pozisyonunda yaratıcılık gerekiyor. Kökçü: 8 gol, 29 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  2. LASZLO BENES (ZECORNER KAYSERİSPOR) | 28y | 7 gol | SERBEST TRANSFER FIRSATI | FREE | skor 33.2
-     → Gol üretimi zayıf (maç başına 0.97 gol attı) - 8 numara / fizik motoru pozisyonunda yaratıcılık gerekiyor. Benes: 7 gol, 29 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  3. ALEXANDRU IULIAN MAXIM (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 35y | 5 gol | SERBEST TRANSFER FIRSATI | FREE | skor 30.9
+  2. ALEXANDRU IULIAN MAXIM (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 35y | 5 gol | SERBEST TRANSFER FIRSATI | FREE | skor 30.9
      → Gol üretimi zayıf (maç başına 0.97 gol attı) - 8 numara / fizik motoru pozisyonunda yaratıcılık gerekiyor. Maxim: 5 gol, 32 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 35 yaş — deneyim katkısı, kısa dönem çözüm.
+  3. KACPER SZYMON KOZLOWSKI (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 22y | 6 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 30.1
+     → Gol üretimi zayıf (maç başına 0.97 gol attı) - 8 numara / fizik motoru pozisyonunda yaratıcılık gerekiyor. Kozlowski: 6 gol, 30 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere. 22 yaş, uzun vadeli yatırım profili.
 
 **6 numara / savunma emniyeti** — Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir.
   1. ANTHONY JUNIOR DENNIS (GÖZTEPE A.Ş.) | 21y | 3 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 28.2
@@ -195,10 +195,10 @@ Zayıf nokta: son bölüm gol yeme riski, skor üretim sorunu, deplasman zayıf,
 **8 numara / fizik motoru** — Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir.
   1. ORKUN KÖKÇÜ (BEŞİKTAŞ A.Ş.) | 25y | 8 gol | SERBEST TRANSFER FIRSATI | FREE | skor 36.0
      → Gol üretimi zayıf (maç başına 0.97 gol attı) - 8 numara / fizik motoru pozisyonunda yaratıcılık gerekiyor. Kökçü: 8 gol, 29 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  2. LASZLO BENES (ZECORNER KAYSERİSPOR) | 28y | 7 gol | SERBEST TRANSFER FIRSATI | FREE | skor 33.2
-     → Gol üretimi zayıf (maç başına 0.97 gol attı) - 8 numara / fizik motoru pozisyonunda yaratıcılık gerekiyor. Benes: 7 gol, 29 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  3. ALEXANDRU IULIAN MAXIM (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 35y | 5 gol | SERBEST TRANSFER FIRSATI | FREE | skor 30.9
+  2. ALEXANDRU IULIAN MAXIM (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 35y | 5 gol | SERBEST TRANSFER FIRSATI | FREE | skor 30.9
      → Gol üretimi zayıf (maç başına 0.97 gol attı) - 8 numara / fizik motoru pozisyonunda yaratıcılık gerekiyor. Maxim: 5 gol, 32 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 35 yaş — deneyim katkısı, kısa dönem çözüm.
+  3. KACPER SZYMON KOZLOWSKI (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 22y | 6 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 30.1
+     → Gol üretimi zayıf (maç başına 0.97 gol attı) - 8 numara / fizik motoru pozisyonunda yaratıcılık gerekiyor. Kozlowski: 6 gol, 30 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere. 22 yaş, uzun vadeli yatırım profili.
 
 **6 numara / savunma emniyeti** — Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir.
   1. ANTHONY JUNIOR DENNIS (GÖZTEPE A.Ş.) | 21y | 3 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 28.2
@@ -243,28 +243,28 @@ Zayıf nokta: savunma kırılgan, son bölüm gol yeme riski, kart baskısı, d�
 Zayıf nokta: skor üretim sorunu, deplasman zayıf, düşük şut baskısı
 
 **Santrfor / skor yükü** — Skor üretim problemi için bitirici profil; mevcut gol ortalaması 1.06.
-  1. FELIPE AUGUSTO DA SILVA (TRABZONSPOR A.Ş.) | 22y | 13 gol | PREMİUM TRANSFER | HIGH | skor 27.6
+  1. FELIPE AUGUSTO DA SILVA (TRABZONSPOR A.Ş.) | 22y | 13 gol | PREMİUM TRANSFER | HIGH | skor 27.7
      → Skor üretim sorunu sorunu var; Santrfor / skor yükü bu açığı kapatacak. Silva: 13 gol, 26 maç. Uzun sözleşme — yüksek bonusu göze almalı. 22 yaş, uzun vadeli yatırım profili.
-  2. MOHAMED LAMINE BAYO (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 27y | 15 gol | PREMİUM TRANSFER | MEDIUM | skor 26.3
-     → Skor üretim sorunu sorunu var; Santrfor / skor yükü bu açığı kapatacak. Bayo: 15 gol, 28 maç. Uzun sözleşme — yüksek bonusu göze almalı.
-  3. ELDOR SHOMURODOV (RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ) | 30y | 22 gol | PREMİUM TRANSFER | MEDIUM | skor 26.2
+  2. ELDOR SHOMURODOV (RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ) | 30y | 22 gol | PREMİUM TRANSFER | MEDIUM | skor 26.3
      → Skor üretim sorunu sorunu var; Santrfor / skor yükü bu açığı kapatacak. Shomurodov: 22 gol, 34 maç. Uzun sözleşme — yüksek bonusu göze almalı.
+  3. MOHAMED LAMINE BAYO (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 27y | 15 gol | PREMİUM TRANSFER | MEDIUM | skor 26.3
+     → Skor üretim sorunu sorunu var; Santrfor / skor yükü bu açığı kapatacak. Bayo: 15 gol, 28 maç. Uzun sözleşme — yüksek bonusu göze almalı.
 
 **Sol açık / çizgi kırıcı** — Deplasman veya üretim zafiyetinde çizgi kıran/taşıyıcı hücum profili gerekir.
-  1. DORGELES NENE (FENERBAHÇE A.Ş.) | 23y | 10 gol | PREMİUM TRANSFER | HIGH | skor 24.5
+  1. DORGELES NENE (FENERBAHÇE A.Ş.) | 23y | 10 gol | PREMİUM TRANSFER | HIGH | skor 24.6
      → Skor üretim sorunu sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Nene: 10 gol, 16 maçta sahada. Uzun sözleşme — yüksek bonusu göze almalı. 23 yaş, uzun vadeli yatırım profili.
-  2. BARIŞ ALPER YILMAZ (GALATASARAY A.Ş.) | 26y | 8 gol | PREMİUM TRANSFER | MEDIUM | skor 22.9
+  2. BARIŞ ALPER YILMAZ (GALATASARAY A.Ş.) | 26y | 8 gol | PREMİUM TRANSFER | MEDIUM | skor 23.0
      → Skor üretim sorunu sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Yilmaz: 8 gol, 27 maç. Uzun sözleşme — yüksek bonusu göze almalı.
-  3. YUNUS AKGÜN (GALATASARAY A.Ş.) | 25y | 7 gol | PREMİUM TRANSFER | MEDIUM | skor 22.3
+  3. YUNUS AKGÜN (GALATASARAY A.Ş.) | 25y | 7 gol | PREMİUM TRANSFER | MEDIUM | skor 22.4
      → Skor üretim sorunu sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Akgün: 7 gol, 23 maç. Uzun sözleşme — yüksek bonusu göze almalı.
 
 **8 numara / fizik motoru** — Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir.
   1. ORKUN KÖKÇÜ (BEŞİKTAŞ A.Ş.) | 25y | 8 gol | SERBEST TRANSFER FIRSATI | FREE | skor 36.0
      → Skor üretim sorunu sorunu var; 8 numara / fizik motoru bu açığı kapatacak. Kökçü: 8 gol, 29 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  2. LASZLO BENES (ZECORNER KAYSERİSPOR) | 28y | 7 gol | SERBEST TRANSFER FIRSATI | FREE | skor 33.2
-     → Skor üretim sorunu sorunu var; 8 numara / fizik motoru bu açığı kapatacak. Benes: 7 gol, 29 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  3. ALEXANDRU IULIAN MAXIM (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 35y | 5 gol | SERBEST TRANSFER FIRSATI | FREE | skor 30.9
+  2. ALEXANDRU IULIAN MAXIM (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 35y | 5 gol | SERBEST TRANSFER FIRSATI | FREE | skor 30.9
      → Skor üretim sorunu sorunu var; 8 numara / fizik motoru bu açığı kapatacak. Maxim: 5 gol, 32 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 35 yaş — deneyim katkısı, kısa dönem çözüm.
+  3. KACPER SZYMON KOZLOWSKI (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 22y | 6 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 30.1
+     → Skor üretim sorunu sorunu var; 8 numara / fizik motoru bu açığı kapatacak. Kozlowski: 6 gol, 30 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere. 22 yaş, uzun vadeli yatırım profili.
 
 ### KOCAELİSPOR  [YÜKSEK]
 *1.09 puan/maç | maç başına 0.76 attı | maç başına 1.12 yedi*
@@ -272,28 +272,28 @@ Zayıf nokta: skor üretim sorunu, deplasman zayıf, düşük şut baskısı
 Zayıf nokta: skor üretim sorunu, deplasman zayıf, hücum verimsizliği
 
 **Santrfor / skor yükü** — Skor üretim problemi için bitirici profil; mevcut gol ortalaması 0.76.
-  1. FELIPE AUGUSTO DA SILVA (TRABZONSPOR A.Ş.) | 22y | 13 gol | PREMİUM TRANSFER | HIGH | skor 27.6
+  1. FELIPE AUGUSTO DA SILVA (TRABZONSPOR A.Ş.) | 22y | 13 gol | PREMİUM TRANSFER | HIGH | skor 27.7
      → Gol üretimi zayıf (maç başına 0.76 gol attı) - Santrfor / skor yükü pozisyonunda yaratıcılık gerekiyor. Silva: 13 gol, 26 maç. Uzun sözleşme — yüksek bonusu göze almalı. 22 yaş, uzun vadeli yatırım profili.
-  2. MOHAMED LAMINE BAYO (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 27y | 15 gol | PREMİUM TRANSFER | MEDIUM | skor 26.3
-     → Gol üretimi zayıf (maç başına 0.76 gol attı) - Santrfor / skor yükü pozisyonunda yaratıcılık gerekiyor. Bayo: 15 gol, 28 maç. Uzun sözleşme — yüksek bonusu göze almalı.
-  3. ELDOR SHOMURODOV (RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ) | 30y | 22 gol | PREMİUM TRANSFER | MEDIUM | skor 26.2
+  2. ELDOR SHOMURODOV (RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ) | 30y | 22 gol | PREMİUM TRANSFER | MEDIUM | skor 26.3
      → Gol üretimi zayıf (maç başına 0.76 gol attı) - Santrfor / skor yükü pozisyonunda yaratıcılık gerekiyor. Shomurodov: 22 gol, 34 maç. Uzun sözleşme — yüksek bonusu göze almalı.
+  3. MOHAMED LAMINE BAYO (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 27y | 15 gol | PREMİUM TRANSFER | MEDIUM | skor 26.3
+     → Gol üretimi zayıf (maç başına 0.76 gol attı) - Santrfor / skor yükü pozisyonunda yaratıcılık gerekiyor. Bayo: 15 gol, 28 maç. Uzun sözleşme — yüksek bonusu göze almalı.
 
 **Sol açık / çizgi kırıcı** — Deplasman veya üretim zafiyetinde çizgi kıran/taşıyıcı hücum profili gerekir.
-  1. DORGELES NENE (FENERBAHÇE A.Ş.) | 23y | 10 gol | PREMİUM TRANSFER | HIGH | skor 24.5
+  1. DORGELES NENE (FENERBAHÇE A.Ş.) | 23y | 10 gol | PREMİUM TRANSFER | HIGH | skor 24.6
      → Gol üretimi zayıf (maç başına 0.76 gol attı) - Sol açık / çizgi kırıcı pozisyonunda yaratıcılık gerekiyor. Nene: 10 gol, 16 maçta sahada. Uzun sözleşme — yüksek bonusu göze almalı. 23 yaş, uzun vadeli yatırım profili.
-  2. BARIŞ ALPER YILMAZ (GALATASARAY A.Ş.) | 26y | 8 gol | PREMİUM TRANSFER | MEDIUM | skor 22.9
+  2. BARIŞ ALPER YILMAZ (GALATASARAY A.Ş.) | 26y | 8 gol | PREMİUM TRANSFER | MEDIUM | skor 23.0
      → Gol üretimi zayıf (maç başına 0.76 gol attı) - Sol açık / çizgi kırıcı pozisyonunda yaratıcılık gerekiyor. Yilmaz: 8 gol, 27 maç. Uzun sözleşme — yüksek bonusu göze almalı.
-  3. YUNUS AKGÜN (GALATASARAY A.Ş.) | 25y | 7 gol | PREMİUM TRANSFER | MEDIUM | skor 22.3
+  3. YUNUS AKGÜN (GALATASARAY A.Ş.) | 25y | 7 gol | PREMİUM TRANSFER | MEDIUM | skor 22.4
      → Gol üretimi zayıf (maç başına 0.76 gol attı) - Sol açık / çizgi kırıcı pozisyonunda yaratıcılık gerekiyor. Akgün: 7 gol, 23 maç. Uzun sözleşme — yüksek bonusu göze almalı.
 
 **8 numara / fizik motoru** — Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir.
   1. ORKUN KÖKÇÜ (BEŞİKTAŞ A.Ş.) | 25y | 8 gol | SERBEST TRANSFER FIRSATI | FREE | skor 36.0
      → Gol üretimi zayıf (maç başına 0.76 gol attı) - 8 numara / fizik motoru pozisyonunda yaratıcılık gerekiyor. Kökçü: 8 gol, 29 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  2. LASZLO BENES (ZECORNER KAYSERİSPOR) | 28y | 7 gol | SERBEST TRANSFER FIRSATI | FREE | skor 33.2
-     → Gol üretimi zayıf (maç başına 0.76 gol attı) - 8 numara / fizik motoru pozisyonunda yaratıcılık gerekiyor. Benes: 7 gol, 29 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  3. ALEXANDRU IULIAN MAXIM (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 35y | 5 gol | SERBEST TRANSFER FIRSATI | FREE | skor 30.9
+  2. ALEXANDRU IULIAN MAXIM (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 35y | 5 gol | SERBEST TRANSFER FIRSATI | FREE | skor 30.9
      → Gol üretimi zayıf (maç başına 0.76 gol attı) - 8 numara / fizik motoru pozisyonunda yaratıcılık gerekiyor. Maxim: 5 gol, 32 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 35 yaş — deneyim katkısı, kısa dönem çözüm.
+  3. KACPER SZYMON KOZLOWSKI (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 22y | 6 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 30.1
+     → Gol üretimi zayıf (maç başına 0.76 gol attı) - 8 numara / fizik motoru pozisyonunda yaratıcılık gerekiyor. Kozlowski: 6 gol, 30 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere. 22 yaş, uzun vadeli yatırım profili.
 
 ### ÇAYKUR RİZESPOR A.Ş.  [YÜKSEK]
 *1.21 puan/maç | maç başına 1.35 attı | maç başına 1.53 yedi*
@@ -340,17 +340,17 @@ Zayıf nokta: kart baskısı, düşük şut baskısı
 **8 numara / fizik motoru** — Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir.
   1. ORKUN KÖKÇÜ (BEŞİKTAŞ A.Ş.) | 25y | 8 gol | SERBEST TRANSFER FIRSATI | FREE | skor 36.0
      → Kart baskısı sorunu var; 8 numara / fizik motoru bu açığı kapatacak. Kökçü: 8 gol, 29 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  2. LASZLO BENES (ZECORNER KAYSERİSPOR) | 28y | 7 gol | SERBEST TRANSFER FIRSATI | FREE | skor 33.2
-     → Kart baskısı sorunu var; 8 numara / fizik motoru bu açığı kapatacak. Benes: 7 gol, 29 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  3. ALEXANDRU IULIAN MAXIM (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 35y | 5 gol | SERBEST TRANSFER FIRSATI | FREE | skor 30.9
+  2. ALEXANDRU IULIAN MAXIM (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 35y | 5 gol | SERBEST TRANSFER FIRSATI | FREE | skor 30.9
      → Kart baskısı sorunu var; 8 numara / fizik motoru bu açığı kapatacak. Maxim: 5 gol, 32 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 35 yaş — deneyim katkısı, kısa dönem çözüm.
+  3. KACPER SZYMON KOZLOWSKI (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 22y | 6 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 30.1
+     → Kart baskısı sorunu var; 8 numara / fizik motoru bu açığı kapatacak. Kozlowski: 6 gol, 30 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere. 22 yaş, uzun vadeli yatırım profili.
 
 **Sol açık / çizgi kırıcı** — Deplasman veya üretim zafiyetinde çizgi kıran/taşıyıcı hücum profili gerekir.
-  1. DORGELES NENE (FENERBAHÇE A.Ş.) | 23y | 10 gol | PREMİUM TRANSFER | HIGH | skor 24.5
+  1. DORGELES NENE (FENERBAHÇE A.Ş.) | 23y | 10 gol | PREMİUM TRANSFER | HIGH | skor 24.6
      → Kart baskısı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Nene: 10 gol, 16 maçta sahada. Uzun sözleşme — yüksek bonusu göze almalı. 23 yaş, uzun vadeli yatırım profili.
-  2. BARIŞ ALPER YILMAZ (GALATASARAY A.Ş.) | 26y | 8 gol | PREMİUM TRANSFER | MEDIUM | skor 22.9
+  2. BARIŞ ALPER YILMAZ (GALATASARAY A.Ş.) | 26y | 8 gol | PREMİUM TRANSFER | MEDIUM | skor 23.0
      → Kart baskısı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Yilmaz: 8 gol, 27 maç. Uzun sözleşme — yüksek bonusu göze almalı.
-  3. YUNUS AKGÜN (GALATASARAY A.Ş.) | 25y | 7 gol | PREMİUM TRANSFER | MEDIUM | skor 22.3
+  3. YUNUS AKGÜN (GALATASARAY A.Ş.) | 25y | 7 gol | PREMİUM TRANSFER | MEDIUM | skor 22.4
      → Kart baskısı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Akgün: 7 gol, 23 maç. Uzun sözleşme — yüksek bonusu göze almalı.
 
 ### CORENDON ALANYASPOR  [YÜKSEK]
@@ -361,17 +361,17 @@ Zayıf nokta: deplasman zayıf, düşük şut baskısı
 **8 numara / fizik motoru** — Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir.
   1. ORKUN KÖKÇÜ (BEŞİKTAŞ A.Ş.) | 25y | 8 gol | SERBEST TRANSFER FIRSATI | FREE | skor 36.0
      → Deplasman zayıf sorunu var; 8 numara / fizik motoru bu açığı kapatacak. Kökçü: 8 gol, 29 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  2. LASZLO BENES (ZECORNER KAYSERİSPOR) | 28y | 7 gol | SERBEST TRANSFER FIRSATI | FREE | skor 33.2
-     → Deplasman zayıf sorunu var; 8 numara / fizik motoru bu açığı kapatacak. Benes: 7 gol, 29 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  3. ALEXANDRU IULIAN MAXIM (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 35y | 5 gol | SERBEST TRANSFER FIRSATI | FREE | skor 30.9
+  2. ALEXANDRU IULIAN MAXIM (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 35y | 5 gol | SERBEST TRANSFER FIRSATI | FREE | skor 30.9
      → Deplasman zayıf sorunu var; 8 numara / fizik motoru bu açığı kapatacak. Maxim: 5 gol, 32 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 35 yaş — deneyim katkısı, kısa dönem çözüm.
+  3. KACPER SZYMON KOZLOWSKI (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 22y | 6 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 30.1
+     → Deplasman zayıf sorunu var; 8 numara / fizik motoru bu açığı kapatacak. Kozlowski: 6 gol, 30 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere. 22 yaş, uzun vadeli yatırım profili.
 
 **Sol açık / çizgi kırıcı** — Deplasman veya üretim zafiyetinde çizgi kıran/taşıyıcı hücum profili gerekir.
-  1. DORGELES NENE (FENERBAHÇE A.Ş.) | 23y | 10 gol | PREMİUM TRANSFER | HIGH | skor 24.5
+  1. DORGELES NENE (FENERBAHÇE A.Ş.) | 23y | 10 gol | PREMİUM TRANSFER | HIGH | skor 24.6
      → Deplasman zayıf sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Nene: 10 gol, 16 maçta sahada. Uzun sözleşme — yüksek bonusu göze almalı. 23 yaş, uzun vadeli yatırım profili.
-  2. BARIŞ ALPER YILMAZ (GALATASARAY A.Ş.) | 26y | 8 gol | PREMİUM TRANSFER | MEDIUM | skor 22.9
+  2. BARIŞ ALPER YILMAZ (GALATASARAY A.Ş.) | 26y | 8 gol | PREMİUM TRANSFER | MEDIUM | skor 23.0
      → Deplasman zayıf sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Yilmaz: 8 gol, 27 maç. Uzun sözleşme — yüksek bonusu göze almalı.
-  3. YUNUS AKGÜN (GALATASARAY A.Ş.) | 25y | 7 gol | PREMİUM TRANSFER | MEDIUM | skor 22.3
+  3. YUNUS AKGÜN (GALATASARAY A.Ş.) | 25y | 7 gol | PREMİUM TRANSFER | MEDIUM | skor 22.4
      → Deplasman zayıf sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Akgün: 7 gol, 23 maç. Uzun sözleşme — yüksek bonusu göze almalı.
 
 **Bek / çift yönlü koridor** — Kanat savunması ve geçiş gücünü aynı anda destekleyecek çift yönlü bek profili gerekir.
@@ -404,12 +404,12 @@ Zayıf nokta: yeni lig takımı
      → Gol üretimi zayıf (maç başına 1.0 gol attı) - Stoper / hava ve temas pozisyonunda yaratıcılık gerekiyor. Lima: 1 gol, 32 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
 
 **Santrfor / skor yükü** — Süper Lig'e yeni çıkan takım; Santrfor / skor yükü pozisyonunda deneyimli takviye kritik.
-  1. FELIPE AUGUSTO DA SILVA (TRABZONSPOR A.Ş.) | 22y | 13 gol | PREMİUM TRANSFER | HIGH | skor 27.6
+  1. FELIPE AUGUSTO DA SILVA (TRABZONSPOR A.Ş.) | 22y | 13 gol | PREMİUM TRANSFER | HIGH | skor 27.7
      → Gol üretimi zayıf (maç başına 1.0 gol attı) - Santrfor / skor yükü pozisyonunda yaratıcılık gerekiyor. Silva: 13 gol, 26 maç. Uzun sözleşme — yüksek bonusu göze almalı. 22 yaş, uzun vadeli yatırım profili.
-  2. MOHAMED LAMINE BAYO (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 27y | 15 gol | PREMİUM TRANSFER | MEDIUM | skor 26.3
-     → Gol üretimi zayıf (maç başına 1.0 gol attı) - Santrfor / skor yükü pozisyonunda yaratıcılık gerekiyor. Bayo: 15 gol, 28 maç. Uzun sözleşme — yüksek bonusu göze almalı.
-  3. ELDOR SHOMURODOV (RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ) | 30y | 22 gol | PREMİUM TRANSFER | MEDIUM | skor 26.2
+  2. ELDOR SHOMURODOV (RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ) | 30y | 22 gol | PREMİUM TRANSFER | MEDIUM | skor 26.3
      → Gol üretimi zayıf (maç başına 1.0 gol attı) - Santrfor / skor yükü pozisyonunda yaratıcılık gerekiyor. Shomurodov: 22 gol, 34 maç. Uzun sözleşme — yüksek bonusu göze almalı.
+  3. MOHAMED LAMINE BAYO (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 27y | 15 gol | PREMİUM TRANSFER | MEDIUM | skor 26.3
+     → Gol üretimi zayıf (maç başına 1.0 gol attı) - Santrfor / skor yükü pozisyonunda yaratıcılık gerekiyor. Bayo: 15 gol, 28 maç. Uzun sözleşme — yüksek bonusu göze almalı.
 
 ### ERZURUMSPOR FK  [YÜKSEK]
 *None puan/maç | maç başına None attı | maç başına None yedi*
@@ -433,12 +433,12 @@ Zayıf nokta: yeni lig takımı
      → Gol üretimi zayıf (maç başına 1.0 gol attı) - Stoper / hava ve temas pozisyonunda yaratıcılık gerekiyor. Lima: 1 gol, 32 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
 
 **Santrfor / skor yükü** — Süper Lig'e yeni çıkan takım; Santrfor / skor yükü pozisyonunda deneyimli takviye kritik.
-  1. FELIPE AUGUSTO DA SILVA (TRABZONSPOR A.Ş.) | 22y | 13 gol | PREMİUM TRANSFER | HIGH | skor 27.6
+  1. FELIPE AUGUSTO DA SILVA (TRABZONSPOR A.Ş.) | 22y | 13 gol | PREMİUM TRANSFER | HIGH | skor 27.7
      → Gol üretimi zayıf (maç başına 1.0 gol attı) - Santrfor / skor yükü pozisyonunda yaratıcılık gerekiyor. Silva: 13 gol, 26 maç. Uzun sözleşme — yüksek bonusu göze almalı. 22 yaş, uzun vadeli yatırım profili.
-  2. MOHAMED LAMINE BAYO (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 27y | 15 gol | PREMİUM TRANSFER | MEDIUM | skor 26.3
-     → Gol üretimi zayıf (maç başına 1.0 gol attı) - Santrfor / skor yükü pozisyonunda yaratıcılık gerekiyor. Bayo: 15 gol, 28 maç. Uzun sözleşme — yüksek bonusu göze almalı.
-  3. ELDOR SHOMURODOV (RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ) | 30y | 22 gol | PREMİUM TRANSFER | MEDIUM | skor 26.2
+  2. ELDOR SHOMURODOV (RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ) | 30y | 22 gol | PREMİUM TRANSFER | MEDIUM | skor 26.3
      → Gol üretimi zayıf (maç başına 1.0 gol attı) - Santrfor / skor yükü pozisyonunda yaratıcılık gerekiyor. Shomurodov: 22 gol, 34 maç. Uzun sözleşme — yüksek bonusu göze almalı.
+  3. MOHAMED LAMINE BAYO (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 27y | 15 gol | PREMİUM TRANSFER | MEDIUM | skor 26.3
+     → Gol üretimi zayıf (maç başına 1.0 gol attı) - Santrfor / skor yükü pozisyonunda yaratıcılık gerekiyor. Bayo: 15 gol, 28 maç. Uzun sözleşme — yüksek bonusu göze almalı.
 
 ### AMED SFK  [YÜKSEK]
 *None puan/maç | maç başına None attı | maç başına None yedi*
@@ -462,12 +462,12 @@ Zayıf nokta: yeni lig takımı
      → Gol üretimi zayıf (maç başına 1.0 gol attı) - Stoper / hava ve temas pozisyonunda yaratıcılık gerekiyor. Lima: 1 gol, 32 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
 
 **Santrfor / skor yükü** — Süper Lig'e yeni çıkan takım; Santrfor / skor yükü pozisyonunda deneyimli takviye kritik.
-  1. FELIPE AUGUSTO DA SILVA (TRABZONSPOR A.Ş.) | 22y | 13 gol | PREMİUM TRANSFER | HIGH | skor 27.6
+  1. FELIPE AUGUSTO DA SILVA (TRABZONSPOR A.Ş.) | 22y | 13 gol | PREMİUM TRANSFER | HIGH | skor 27.7
      → Gol üretimi zayıf (maç başına 1.0 gol attı) - Santrfor / skor yükü pozisyonunda yaratıcılık gerekiyor. Silva: 13 gol, 26 maç. Uzun sözleşme — yüksek bonusu göze almalı. 22 yaş, uzun vadeli yatırım profili.
-  2. MOHAMED LAMINE BAYO (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 27y | 15 gol | PREMİUM TRANSFER | MEDIUM | skor 26.3
-     → Gol üretimi zayıf (maç başına 1.0 gol attı) - Santrfor / skor yükü pozisyonunda yaratıcılık gerekiyor. Bayo: 15 gol, 28 maç. Uzun sözleşme — yüksek bonusu göze almalı.
-  3. ELDOR SHOMURODOV (RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ) | 30y | 22 gol | PREMİUM TRANSFER | MEDIUM | skor 26.2
+  2. ELDOR SHOMURODOV (RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ) | 30y | 22 gol | PREMİUM TRANSFER | MEDIUM | skor 26.3
      → Gol üretimi zayıf (maç başına 1.0 gol attı) - Santrfor / skor yükü pozisyonunda yaratıcılık gerekiyor. Shomurodov: 22 gol, 34 maç. Uzun sözleşme — yüksek bonusu göze almalı.
+  3. MOHAMED LAMINE BAYO (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 27y | 15 gol | PREMİUM TRANSFER | MEDIUM | skor 26.3
+     → Gol üretimi zayıf (maç başına 1.0 gol attı) - Santrfor / skor yükü pozisyonunda yaratıcılık gerekiyor. Bayo: 15 gol, 28 maç. Uzun sözleşme — yüksek bonusu göze almalı.
 
 ### GÖZTEPE A.Ş.  [YÜKSEK]
 *1.62 puan/maç | maç başına 1.24 attı | maç başına 0.94 yedi*
@@ -491,11 +491,11 @@ Zayıf nokta: kart baskısı, düşük şut baskısı
      → Kart baskısı sorunu var; 8 numara / fizik motoru bu açığı kapatacak. Maxim: 5 gol, 32 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 35 yaş — deneyim katkısı, kısa dönem çözüm.
 
 **Sol açık / çizgi kırıcı** — Deplasman veya üretim zafiyetinde çizgi kıran/taşıyıcı hücum profili gerekir.
-  1. DORGELES NENE (FENERBAHÇE A.Ş.) | 23y | 10 gol | PREMİUM TRANSFER | HIGH | skor 24.5
+  1. DORGELES NENE (FENERBAHÇE A.Ş.) | 23y | 10 gol | PREMİUM TRANSFER | HIGH | skor 24.6
      → Kart baskısı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Nene: 10 gol, 16 maçta sahada. Uzun sözleşme — yüksek bonusu göze almalı. 23 yaş, uzun vadeli yatırım profili.
-  2. BARIŞ ALPER YILMAZ (GALATASARAY A.Ş.) | 26y | 8 gol | PREMİUM TRANSFER | MEDIUM | skor 22.9
+  2. BARIŞ ALPER YILMAZ (GALATASARAY A.Ş.) | 26y | 8 gol | PREMİUM TRANSFER | MEDIUM | skor 23.0
      → Kart baskısı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Yilmaz: 8 gol, 27 maç. Uzun sözleşme — yüksek bonusu göze almalı.
-  3. YUNUS AKGÜN (GALATASARAY A.Ş.) | 25y | 7 gol | PREMİUM TRANSFER | MEDIUM | skor 22.3
+  3. YUNUS AKGÜN (GALATASARAY A.Ş.) | 25y | 7 gol | PREMİUM TRANSFER | MEDIUM | skor 22.4
      → Kart baskısı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Akgün: 7 gol, 23 maç. Uzun sözleşme — yüksek bonusu göze almalı.
 
 ### SAMSUNSPOR A.Ş.  [YÜKSEK]
@@ -514,10 +514,10 @@ Zayıf nokta: son bölüm gol yeme riski
 **8 numara / fizik motoru** — Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir.
   1. ORKUN KÖKÇÜ (BEŞİKTAŞ A.Ş.) | 25y | 8 gol | SERBEST TRANSFER FIRSATI | FREE | skor 36.0
      → Son bölüm gol yeme riski sorunu var; 8 numara / fizik motoru bu açığı kapatacak. Kökçü: 8 gol, 29 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  2. LASZLO BENES (ZECORNER KAYSERİSPOR) | 28y | 7 gol | SERBEST TRANSFER FIRSATI | FREE | skor 33.2
-     → Son bölüm gol yeme riski sorunu var; 8 numara / fizik motoru bu açığı kapatacak. Benes: 7 gol, 29 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  3. ALEXANDRU IULIAN MAXIM (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 35y | 5 gol | SERBEST TRANSFER FIRSATI | FREE | skor 30.9
+  2. ALEXANDRU IULIAN MAXIM (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 35y | 5 gol | SERBEST TRANSFER FIRSATI | FREE | skor 30.9
      → Son bölüm gol yeme riski sorunu var; 8 numara / fizik motoru bu açığı kapatacak. Maxim: 5 gol, 32 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 35 yaş — deneyim katkısı, kısa dönem çözüm.
+  3. KACPER SZYMON KOZLOWSKI (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 22y | 6 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 30.1
+     → Son bölüm gol yeme riski sorunu var; 8 numara / fizik motoru bu açığı kapatacak. Kozlowski: 6 gol, 30 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere. 22 yaş, uzun vadeli yatırım profili.
 
 **6 numara / savunma emniyeti** — Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir.
   1. ANTHONY JUNIOR DENNIS (GÖZTEPE A.Ş.) | 21y | 3 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 28.2
@@ -533,11 +533,11 @@ Zayıf nokta: son bölüm gol yeme riski
 Zayıf nokta: kadro derinliği sınırlı
 
 **Sol açık / çizgi kırıcı** — Büyük maç rotasyonunu besleyecek ve kanat derinliğini artıracak yaratıcı profil.
-  1. DORGELES NENE (FENERBAHÇE A.Ş.) | 23y | 10 gol | PREMİUM TRANSFER | HIGH | skor 24.5
+  1. DORGELES NENE (FENERBAHÇE A.Ş.) | 23y | 10 gol | PREMİUM TRANSFER | HIGH | skor 24.6
      → Kadro derinliği sınırlı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Nene: 10 gol, 16 maçta sahada. Uzun sözleşme — yüksek bonusu göze almalı. 23 yaş, uzun vadeli yatırım profili.
-  2. BARIŞ ALPER YILMAZ (GALATASARAY A.Ş.) | 26y | 8 gol | PREMİUM TRANSFER | MEDIUM | skor 22.9
+  2. BARIŞ ALPER YILMAZ (GALATASARAY A.Ş.) | 26y | 8 gol | PREMİUM TRANSFER | MEDIUM | skor 23.0
      → Kadro derinliği sınırlı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Yilmaz: 8 gol, 27 maç. Uzun sözleşme — yüksek bonusu göze almalı.
-  3. YUNUS AKGÜN (GALATASARAY A.Ş.) | 25y | 7 gol | PREMİUM TRANSFER | MEDIUM | skor 22.3
+  3. YUNUS AKGÜN (GALATASARAY A.Ş.) | 25y | 7 gol | PREMİUM TRANSFER | MEDIUM | skor 22.4
      → Kadro derinliği sınırlı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Akgün: 7 gol, 23 maç. Uzun sözleşme — yüksek bonusu göze almalı.
 
 **Bek / çift yönlü koridor** — Koridor derinliğini artıracak, büyük maç baskısında rotasyon sağlayacak çift yönlü bek.
@@ -554,11 +554,11 @@ Zayıf nokta: kadro derinliği sınırlı
 Zayıf nokta: kadro derinliği sınırlı
 
 **Sol açık / çizgi kırıcı** — Büyük maç rotasyonunu besleyecek ve kanat derinliğini artıracak yaratıcı profil.
-  1. DORGELES NENE (FENERBAHÇE A.Ş.) | 23y | 10 gol | PREMİUM TRANSFER | HIGH | skor 24.5
+  1. DORGELES NENE (FENERBAHÇE A.Ş.) | 23y | 10 gol | PREMİUM TRANSFER | HIGH | skor 24.6
      → Kadro derinliği sınırlı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Nene: 10 gol, 16 maçta sahada. Uzun sözleşme — yüksek bonusu göze almalı. 23 yaş, uzun vadeli yatırım profili.
-  2. BARIŞ ALPER YILMAZ (GALATASARAY A.Ş.) | 26y | 8 gol | PREMİUM TRANSFER | MEDIUM | skor 22.9
+  2. BARIŞ ALPER YILMAZ (GALATASARAY A.Ş.) | 26y | 8 gol | PREMİUM TRANSFER | MEDIUM | skor 23.0
      → Kadro derinliği sınırlı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Yilmaz: 8 gol, 27 maç. Uzun sözleşme — yüksek bonusu göze almalı.
-  3. YUNUS AKGÜN (GALATASARAY A.Ş.) | 25y | 7 gol | PREMİUM TRANSFER | MEDIUM | skor 22.3
+  3. YUNUS AKGÜN (GALATASARAY A.Ş.) | 25y | 7 gol | PREMİUM TRANSFER | MEDIUM | skor 22.4
      → Kadro derinliği sınırlı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Akgün: 7 gol, 23 maç. Uzun sözleşme — yüksek bonusu göze almalı.
 
 **Bek / çift yönlü koridor** — Koridor derinliğini artıracak, büyük maç baskısında rotasyon sağlayacak çift yönlü bek.
@@ -575,11 +575,11 @@ Zayıf nokta: kadro derinliği sınırlı
 Zayıf nokta: kadro derinliği sınırlı
 
 **Sol açık / çizgi kırıcı** — Büyük maç rotasyonunu besleyecek ve kanat derinliğini artıracak yaratıcı profil.
-  1. DORGELES NENE (FENERBAHÇE A.Ş.) | 23y | 10 gol | PREMİUM TRANSFER | HIGH | skor 24.5
+  1. DORGELES NENE (FENERBAHÇE A.Ş.) | 23y | 10 gol | PREMİUM TRANSFER | HIGH | skor 24.6
      → Kadro derinliği sınırlı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Nene: 10 gol, 16 maçta sahada. Uzun sözleşme — yüksek bonusu göze almalı. 23 yaş, uzun vadeli yatırım profili.
-  2. BARIŞ ALPER YILMAZ (GALATASARAY A.Ş.) | 26y | 8 gol | PREMİUM TRANSFER | MEDIUM | skor 22.9
+  2. BARIŞ ALPER YILMAZ (GALATASARAY A.Ş.) | 26y | 8 gol | PREMİUM TRANSFER | MEDIUM | skor 23.0
      → Kadro derinliği sınırlı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Yilmaz: 8 gol, 27 maç. Uzun sözleşme — yüksek bonusu göze almalı.
-  3. YUNUS AKGÜN (GALATASARAY A.Ş.) | 25y | 7 gol | PREMİUM TRANSFER | MEDIUM | skor 22.3
+  3. YUNUS AKGÜN (GALATASARAY A.Ş.) | 25y | 7 gol | PREMİUM TRANSFER | MEDIUM | skor 22.4
      → Kadro derinliği sınırlı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Akgün: 7 gol, 23 maç. Uzun sözleşme — yüksek bonusu göze almalı.
 
 **Bek / çift yönlü koridor** — Koridor derinliğini artıracak, büyük maç baskısında rotasyon sağlayacak çift yönlü bek.
@@ -596,11 +596,11 @@ Zayıf nokta: kadro derinliği sınırlı
 Zayıf nokta: kadro derinliği sınırlı
 
 **Sol açık / çizgi kırıcı** — Büyük maç rotasyonunu besleyecek ve kanat derinliğini artıracak yaratıcı profil.
-  1. BARIŞ ALPER YILMAZ (GALATASARAY A.Ş.) | 26y | 8 gol | PREMİUM TRANSFER | MEDIUM | skor 22.9
+  1. BARIŞ ALPER YILMAZ (GALATASARAY A.Ş.) | 26y | 8 gol | PREMİUM TRANSFER | MEDIUM | skor 23.0
      → Kadro derinliği sınırlı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Yilmaz: 8 gol, 27 maç. Uzun sözleşme — yüksek bonusu göze almalı.
-  2. YUNUS AKGÜN (GALATASARAY A.Ş.) | 25y | 7 gol | PREMİUM TRANSFER | MEDIUM | skor 22.3
+  2. YUNUS AKGÜN (GALATASARAY A.Ş.) | 25y | 7 gol | PREMİUM TRANSFER | MEDIUM | skor 22.4
      → Kadro derinliği sınırlı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Akgün: 7 gol, 23 maç. Uzun sözleşme — yüksek bonusu göze almalı.
-  3. KAZEEM ADEREMI J. OLAIGBE (TRABZONSPOR A.Ş.) | 23y | 0 gol | PREMİUM TRANSFER | HIGH | skor 16.5
+  3. KAZEEM ADEREMI J. OLAIGBE (TRABZONSPOR A.Ş.) | 23y | 0 gol | PREMİUM TRANSFER | HIGH | skor 16.6
      → Kadro derinliği sınırlı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Olaigbe: 26 maç. Uzun sözleşme — yüksek bonusu göze almalı. 23 yaş, uzun vadeli yatırım profili.
 
 **Bek / çift yönlü koridor** — Koridor derinliğini artıracak, büyük maç baskısında rotasyon sağlayacak çift yönlü bek.
@@ -617,11 +617,11 @@ Zayıf nokta: kadro derinliği sınırlı
 Zayıf nokta: kadro derinliği sınırlı
 
 **Sol açık / çizgi kırıcı** — Büyük maç rotasyonunu besleyecek ve kanat derinliğini artıracak yaratıcı profil.
-  1. DORGELES NENE (FENERBAHÇE A.Ş.) | 23y | 10 gol | PREMİUM TRANSFER | HIGH | skor 24.5
+  1. DORGELES NENE (FENERBAHÇE A.Ş.) | 23y | 10 gol | PREMİUM TRANSFER | HIGH | skor 24.6
      → Kadro derinliği sınırlı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Nene: 10 gol, 16 maçta sahada. Uzun sözleşme — yüksek bonusu göze almalı. 23 yaş, uzun vadeli yatırım profili.
-  2. ANTHONY TİTE EMMANUEL MUSABA (SAMSUNSPOR A.Ş.) | 25y | 5 gol | PREMİUM TRANSFER | MEDIUM | skor 19.7
+  2. ANTHONY TİTE EMMANUEL MUSABA (SAMSUNSPOR A.Ş.) | 25y | 5 gol | PREMİUM TRANSFER | MEDIUM | skor 19.8
      → Kadro derinliği sınırlı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Musaba: 5 gol, 24 maç. Uzun sözleşme — yüksek bonusu göze almalı.
-  3. KAZEEM ADEREMI J. OLAIGBE (TRABZONSPOR A.Ş.) | 23y | 0 gol | PREMİUM TRANSFER | HIGH | skor 16.5
+  3. KAZEEM ADEREMI J. OLAIGBE (TRABZONSPOR A.Ş.) | 23y | 0 gol | PREMİUM TRANSFER | HIGH | skor 16.6
      → Kadro derinliği sınırlı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Olaigbe: 26 maç. Uzun sözleşme — yüksek bonusu göze almalı. 23 yaş, uzun vadeli yatırım profili.
 
 **Bek / çift yönlü koridor** — Koridor derinliğini artıracak, büyük maç baskısında rotasyon sağlayacak çift yönlü bek.
