@@ -222,57 +222,255 @@ def build_markdown(payload: dict) -> str:
     return "\n".join(lines)
 
 
+_SCORE_FIELDS = [
+    ("immediate_scorer_score",    "Gol Katkısı"),
+    ("physical_engine_score",     "Fizik Motoru"),
+    ("resale_value_score",        "Resale Değeri"),
+    ("contract_opportunity_score","Kontrakt Fırsatı"),
+    ("low_risk_regular_score",    "Güvenilirlik"),
+]
+
+_BUCKET_META = {
+    "immediate_scorer":    ("⚽ Gol",      "immediate_scorer_score"),
+    "physical_engine":     ("💪 Fizik",    "physical_engine_score"),
+    "resale_value":        ("📈 Resale",   "resale_value_score"),
+    "contract_opportunity":("🤝 Kontrakt", "contract_opportunity_score"),
+    "low_risk_regular":    ("🛡 Düzenli",  "low_risk_regular_score"),
+}
+
+_ARCHETYPE_COLOR = {
+    "Bitirici / skor yükü":             ("--arc-red",    "#fff0f2", "#bf1f2f"),
+    "Genç değer / gelişim":             ("--arc-blue",   "#edf5ff", "#185ea8"),
+    "Fizik motoru / tempo oyuncusu":    ("--arc-orange", "#fff6ed", "#b84f00"),
+    "Sertlik ve temas profili":         ("--arc-slate",  "#f1f3f5", "#374151"),
+    "Düşük riskli düzenli oyuncu":      ("--arc-green",  "#edf9f3", "#137a4b"),
+    "Rotasyon fırsatı":                 ("--arc-gray",   "#f4f6f8", "#667085"),
+}
+
+
+def _score_maxes(candidates: list[dict]) -> dict:
+    return {
+        field: max((c.get(field) or 0 for c in candidates), default=1) or 1
+        for field, _ in _SCORE_FIELDS
+    }
+
+
+def _norm(value: float, mx: float) -> int:
+    return min(100, max(0, round(value / mx * 100)))
+
+
+def _bar_color(pct: int) -> str:
+    if pct >= 78:
+        return "#137a4b"
+    if pct >= 55:
+        return "#0d9488"
+    if pct >= 35:
+        return "#b76b00"
+    return "#adb5bd"
+
+
+def _contract_badge(player: dict) -> str:
+    risk = player.get("contract_risk", "")
+    months = player.get("contract_months_left")
+    end = player.get("contract_end", "")
+    label = end[:7] if end else "?"
+    if risk == "HIGH":
+        return f'<span class="cbadge cbadge-high">⚠ {escape(label)}</span>'
+    if risk == "MEDIUM":
+        return f'<span class="cbadge cbadge-med">⌛ {escape(label)}</span>'
+    if months and months <= 24:
+        return f'<span class="cbadge cbadge-low">📅 {escape(label)}</span>'
+    return f'<span class="cbadge cbadge-ok">📅 {escape(label)}</span>'
+
+
+def _value_chip(player: dict) -> str:
+    txt = player.get("tm_market_value_text") or ""
+    if not txt or txt == "-":
+        return ""
+    url = player.get("tm_profile_url") or ""
+    inner = f'<a href="{escape(url)}" target="_blank" rel="noopener" class="val-link">{escape(txt)}</a>' if url else escape(txt)
+    return f'<span class="val-chip">{inner}</span>'
+
+
+def _archetype_badge(archetype: str) -> str:
+    _, bg, color = _ARCHETYPE_COLOR.get(archetype, ("", "#f4f6f8", "#667085"))
+    return (
+        f'<span class="arc-badge" style="background:{bg};color:{color};border-color:{color}22">'
+        f'{escape(archetype)}</span>'
+    )
+
+
+def _player_card(player: dict, active_field: str, maxes: dict) -> str:
+    name = escape(player.get("name") or "")
+    team = escape(player.get("team") or "")
+    age = player.get("age") or "?"
+    nat = escape(player.get("nationality") or "")
+    goals = player.get("goals", 0)
+    starts = player.get("starts", 0)
+    cards = player.get("cards", 0)
+    load_lo = player.get("estimated_physical_load_km_min", 0)
+    load_hi = player.get("estimated_physical_load_km_max", 0)
+    archetype = player.get("archetype", "Rotasyon fırsatı")
+    active_pct = _norm(player.get(active_field) or 0, maxes[active_field])
+
+    bars = ""
+    for field, label in _SCORE_FIELDS:
+        pct = _norm(player.get(field) or 0, maxes[field])
+        clr = _bar_color(pct)
+        is_active = "bar-active" if field == active_field else ""
+        bars += (
+            f'<div class="attr-row {is_active}">'
+            f'<span class="attr-lbl">{escape(label)}</span>'
+            f'<div class="bar-track"><div class="bar-fill" style="width:{pct}%;background:{clr}"></div></div>'
+            f'<span class="attr-val" style="color:{clr}">{pct}</span>'
+            f'</div>'
+        )
+
+    contract_html = _contract_badge(player)
+    value_html = _value_chip(player)
+    arc_html = _archetype_badge(archetype)
+    ring_color = _bar_color(active_pct)
+
+    return f"""<div class="pcard" style="--ring:{ring_color}">
+  <div class="pcard-top">
+    <div>
+      <div class="pcard-name">{name}</div>
+      <div class="pcard-meta">{team} · {age}y · {nat}</div>
+    </div>
+    <div class="pcard-score" style="color:{ring_color};border-color:{ring_color}22;background:{ring_color}11">{active_pct}</div>
+  </div>
+  {arc_html}
+  <div class="attrs">{bars}</div>
+  <div class="pcard-stats">
+    <span>⚽ <strong>{goals}</strong></span>
+    <span>▶ <strong>{starts}</strong></span>
+    <span>🟨 <strong>{cards}</strong></span>
+    <span>🏃 <strong>{load_lo}–{load_hi}km</strong></span>
+  </div>
+  <div class="pcard-footer">{contract_html}{value_html}</div>
+</div>"""
+
+
 def build_html(payload: dict) -> str:
-    buckets = "".join(bucket_section(key, title, payload["role_buckets"][key]) for key, title in (
-        ("immediate_scorer", "Hemen Skor Katkısı"),
-        ("physical_engine", "Fizik Motoru"),
-        ("resale_value", "Genç / Resale Değeri"),
-        ("contract_opportunity", "Sözleşme Fırsatı"),
-        ("low_risk_regular", "Düşük Riskli Düzenli Oyuncu"),
-    ))
-    needs = "".join(
+    all_candidates = payload["all_candidates"]
+    maxes = _score_maxes(all_candidates)
+    external_matched = sum(1 for c in all_candidates if c.get("external_api_signal", {}).get("matched"))
+
+    tab_btns = ""
+    tab_panels = ""
+    for i, (key, (label, score_field)) in enumerate(_BUCKET_META.items()):
+        players = payload["role_buckets"][key][:12]
+        cards = "".join(_player_card(p, score_field, maxes) for p in players)
+        active_cls = " active" if i == 0 else ""
+        tab_btns += f'<button class="tab{active_cls}" data-tab="{key}">{label}</button>'
+        tab_panels += f'<div class="tab-panel{active_cls}" id="tab-{key}"><div class="cards-grid">{cards}</div></div>'
+
+    needs_rows = "".join(
         f"<tr><td><span class=\"pill {priority_class(item['priority'])}\">{escape(item['priority'])}</span></td>"
         f"<td>{escape(item['need'])}</td><td>{escape(item['reason'])}</td></tr>"
         for item in payload["team_needs"][:8]
     )
+
     return f"""<!doctype html>
 <html lang="tr">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{escape(payload['team'])} FM Tarzı Scout Programı</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{escape(payload['team'])} Scout Programı — metric11</title>
   <style>
-    :root {{ --bg:#f4f6f8; --panel:#fff; --ink:#15181d; --muted:#667085; --line:#dce2ea; --dark:#111318; --red:#bf1f2f; --amber:#b76b00; --green:#137a4b; --blue:#185ea8; --shadow:0 8px 22px rgba(18,24,32,.08); }}
-    * {{ box-sizing:border-box; }}
-    body {{ margin:0; font-family:Inter, system-ui, sans-serif; background:var(--bg); color:var(--ink); }}
-    header {{ background:var(--dark); color:white; padding:28px 42px; border-bottom:4px solid var(--green); }}
-    header h1 {{ margin:0 0 7px; font-size:32px; letter-spacing:0; }}
-    header p {{ margin:0; color:#c9ced8; max-width:980px; line-height:1.5; }}
-    main {{ max-width:1360px; margin:0 auto; padding:24px; }}
-    .metrics {{ display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-bottom:18px; }}
-    .metric, section {{ background:var(--panel); border:1px solid var(--line); border-radius:8px; box-shadow:var(--shadow); }}
-    .metric {{ padding:15px; }}
-    .metric span {{ display:block; color:var(--muted); font-size:12px; }}
-    .metric strong {{ display:block; font-size:28px; margin-top:5px; }}
-    section {{ padding:18px; margin-bottom:18px; }}
-    h2 {{ margin:0 0 14px; font-size:18px; }}
-    table {{ width:100%; border-collapse:collapse; font-size:14px; }}
-    th,td {{ padding:9px 7px; border-bottom:1px solid var(--line); text-align:left; vertical-align:top; }}
-    th {{ color:var(--muted); font-size:12px; }}
-    .pill {{ display:inline-flex; min-height:24px; align-items:center; border-radius:999px; padding:0 9px; font-size:12px; border:1px solid var(--line); }}
-    .high {{ color:var(--red); background:#fff0f2; border-color:#efb7bf; }}
-    .medium {{ color:var(--amber); background:#fff7e8; border-color:#f2d09a; }}
-    .low {{ color:var(--green); background:#edf9f3; border-color:#b9dfcd; }}
-    .role {{ color:var(--blue); background:#edf5ff; border-color:#bbd7f5; }}
-    @media (max-width:900px) {{ .metrics {{ grid-template-columns:1fr; }} main {{ padding:14px; }} header {{ padding:22px; }} table {{ font-size:12px; }} }}
-    .topbar{{position:sticky;top:0;z-index:5;display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:52px;padding:0 clamp(16px,4vw,42px);background:#111318;color:white;border-bottom:2px solid #1a3023;}}
+    :root{{--bg:#f3f5f4;--panel:#fff;--ink:#132018;--muted:#627067;--line:#d7ded9;--dark:#091810;--green:#116447;--teal:#0d9488;--shadow:0 4px 16px rgba(9,24,16,.07);}}
+    *{{box-sizing:border-box;margin:0;padding:0;}}
+    body{{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--ink);}}
+
+    /* topbar */
+    .topbar{{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:58px;padding:0 clamp(14px,4vw,40px);background:#091810;border-bottom:2px solid #1a3023;}}
     .brand{{display:flex;gap:8px;align-items:center;font-weight:800;font-size:17px;color:white;text-decoration:none;}}
-    .brand:visited,.brand:hover{{color:white;}}
-    .brand-mark{{width:26px;height:26px;display:grid;place-items:center;border-radius:5px;color:#111318;background:#a3e635;font-size:13px;font-weight:900;}}
-    nav{{display:flex;gap:2px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;}}
+    .brand:visited,.brand:active,.brand:hover{{color:white;}}
+    .brand-mark{{width:26px;height:26px;display:grid;place-items:center;border-radius:5px;color:#091810;background:#a3e635;font-size:13px;font-weight:900;}}
+    nav{{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;}}
     nav::-webkit-scrollbar{{display:none;}}
     nav a{{color:#8fa89a;text-decoration:none;font-size:13px;font-weight:600;padding:8px 10px;border-radius:6px;white-space:nowrap;}}
+    nav a:visited{{color:#8fa89a;}}
     nav a:hover,nav a.active{{background:#162b20;color:white;}}
+
+    /* header */
+    header{{background:var(--dark);color:white;padding:26px clamp(16px,4vw,40px) 22px;border-bottom:4px solid var(--green);}}
+    header h1{{font-size:clamp(22px,3vw,30px);font-weight:800;letter-spacing:-.5px;margin-bottom:6px;}}
+    header p{{color:#8fa89a;font-size:14px;max-width:780px;line-height:1.55;}}
+
+    /* layout */
+    main{{max-width:1380px;margin:0 auto;padding:20px clamp(12px,3vw,28px) 40px;}}
+
+    /* summary pills */
+    .summary-bar{{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px;}}
+    .s-pill{{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:10px 16px;display:flex;flex-direction:column;gap:2px;min-width:120px;box-shadow:var(--shadow);}}
+    .s-pill span{{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;}}
+    .s-pill strong{{font-size:24px;font-weight:800;color:var(--ink);}}
+
+    /* needs table */
+    .needs-section{{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin-bottom:22px;box-shadow:var(--shadow);}}
+    .needs-section h2{{font-size:15px;font-weight:700;margin-bottom:12px;}}
+    table{{width:100%;border-collapse:collapse;font-size:13px;}}
+    th,td{{padding:8px 6px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;}}
+    th{{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.05em;}}
+    .pill{{display:inline-flex;align-items:center;border-radius:999px;padding:2px 9px;font-size:11px;font-weight:600;border:1px solid;}}
+    .high{{color:#bf1f2f;background:#fff0f2;border-color:#efb7bf;}}
+    .medium{{color:#b76b00;background:#fff7e8;border-color:#f2d09a;}}
+    .low{{color:var(--green);background:#edf9f3;border-color:#b9dfcd;}}
+
+    /* tabs */
+    .tab-bar{{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;margin-bottom:16px;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:5px;box-shadow:var(--shadow);}}
+    .tab-bar::-webkit-scrollbar{{display:none;}}
+    .tab{{flex-shrink:0;background:none;border:none;cursor:pointer;font-family:inherit;font-size:13px;font-weight:600;color:var(--muted);padding:8px 16px;border-radius:7px;transition:all .15s;}}
+    .tab.active{{background:#0f2018;color:white;}}
+    .tab:hover:not(.active){{background:#e8ede9;color:var(--ink);}}
+
+    /* tab panels */
+    .tab-panel{{display:none;}}
+    .tab-panel.active{{display:block;}}
+
+    /* cards grid */
+    .cards-grid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;}}
+
+    /* player card */
+    .pcard{{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:10px;border-top:3px solid var(--ring,var(--green));transition:box-shadow .15s;}}
+    .pcard:hover{{box-shadow:0 8px 28px rgba(9,24,16,.13);}}
+    .pcard-top{{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;}}
+    .pcard-name{{font-size:14px;font-weight:800;color:var(--ink);line-height:1.3;letter-spacing:-.2px;}}
+    .pcard-meta{{font-size:12px;color:var(--muted);margin-top:2px;}}
+    .pcard-score{{flex-shrink:0;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;font-size:16px;font-weight:900;border:2px solid;}}
+
+    /* archetype badge */
+    .arc-badge{{display:inline-flex;align-items:center;border-radius:6px;padding:3px 8px;font-size:11px;font-weight:700;border:1px solid;letter-spacing:.02em;width:fit-content;}}
+
+    /* attribute bars */
+    .attrs{{display:flex;flex-direction:column;gap:5px;}}
+    .attr-row{{display:grid;grid-template-columns:90px 1fr 28px;align-items:center;gap:6px;opacity:.65;transition:opacity .1s;}}
+    .attr-row.bar-active{{opacity:1;}}
+    .attr-lbl{{font-size:11px;color:var(--muted);font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}}
+    .bar-track{{height:7px;background:#e8ede9;border-radius:99px;overflow:hidden;}}
+    .bar-fill{{height:100%;border-radius:99px;transition:width .3s;}}
+    .attr-val{{font-size:12px;font-weight:800;text-align:right;}}
+
+    /* quick stats */
+    .pcard-stats{{display:flex;gap:10px;flex-wrap:wrap;padding:8px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-size:12px;color:var(--muted);}}
+    .pcard-stats strong{{color:var(--ink);}}
+
+    /* footer */
+    .pcard-footer{{display:flex;align-items:center;gap:8px;flex-wrap:wrap;}}
+    .cbadge{{font-size:11px;font-weight:700;padding:3px 8px;border-radius:6px;border:1px solid;}}
+    .cbadge-high{{color:#bf1f2f;background:#fff0f2;border-color:#efb7bf;}}
+    .cbadge-med{{color:#b76b00;background:#fff7e8;border-color:#f2d09a;}}
+    .cbadge-low{{color:#0d9488;background:#f0fdfc;border-color:#99e6e0;}}
+    .cbadge-ok{{color:var(--muted);background:#f4f6f8;border-color:var(--line);}}
+    .val-chip{{font-size:11px;font-weight:700;color:var(--green);background:#edf9f3;border:1px solid #b9dfcd;padding:3px 8px;border-radius:6px;}}
+    .val-link{{color:inherit;text-decoration:none;}}
+    .val-link:hover{{text-decoration:underline;}}
+
+    @media(max-width:640px){{
+      .cards-grid{{grid-template-columns:1fr;}}
+      .summary-bar .s-pill{{min-width:90px;}}
+    }}
   </style>
 </head>
 <body>
@@ -286,61 +484,54 @@ def build_html(payload: dict) -> str:
       <a href="football_intelligence_home.html">Analiz</a>
     </nav>
   </div>
+
   <header>
-    <h1>{escape(payload['team'])} FM Tarzı Scout Programı</h1>
-    <p>Rol bazlı aday listesi: skor katkısı, fizik motoru, genç/resale değer, sözleşme fırsatı ve düşük riskli düzenli oyuncu. Fiziksel yük değerleri olay verisinden türetilmiş tahmini aralıktır.</p>
+    <h1>{escape(payload['team'])} — Scout Programı</h1>
+    <p>Rol bazlı FM tarzı aday listesi · Attribute barları lig içi aday havuzuna göre normalize edilmiştir · Fiziksel yük olay verisinden türetilmiş tahmin aralığıdır</p>
   </header>
+
   <main>
-    <div class="metrics">
-      {metric("Aday", payload["summary"]["candidate_count"])}
-      {metric("Yüksek ihtiyaç", payload["summary"]["high_priority_needs"])}
-      {metric("Rol listesi", payload["summary"]["role_buckets"])}
+    <div class="summary-bar">
+      {_s_pill("Aday", payload["summary"]["candidate_count"])}
+      {_s_pill("Yüksek ihtiyaç", payload["summary"]["high_priority_needs"])}
+      {_s_pill("Rol listesi", payload["summary"]["role_buckets"])}
+      {_s_pill("Dış API eşleşmesi", external_matched)}
     </div>
-    <section><h2>Takım İhtiyaç Özeti</h2><table><thead><tr><th>Öncelik</th><th>İhtiyaç</th><th>Gerekçe</th></tr></thead><tbody>{needs}</tbody></table></section>
-    {buckets}
+
+    <div class="needs-section">
+      <h2>Takım İhtiyaç Özeti</h2>
+      <table><thead><tr><th>Öncelik</th><th>İhtiyaç</th><th>Gerekçe</th></tr></thead>
+      <tbody>{needs_rows}</tbody></table>
+    </div>
+
+    <div class="tab-bar">{tab_btns}</div>
+    {tab_panels}
   </main>
+
+  <script>
+    document.querySelectorAll('.tab').forEach(btn => {{
+      btn.addEventListener('click', () => {{
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+        btn.classList.add('active');
+        document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+      }});
+    }});
+  </script>
   <script defer src="/_vercel/insights/script.js"></script>
 </body>
-</html>
-"""
+</html>"""
 
 
-def metric(label: str, value) -> str:
-    return f'<div class="metric"><span>{escape(str(label))}</span><strong>{escape(str(value))}</strong></div>'
-
-
-def bucket_section(key: str, title: str, players: list[dict]) -> str:
-    rows = "".join(player_row(player, key) for player in players[:12])
-    return (
-        f"<section><h2>{escape(title)}</h2><table><thead><tr><th>Oyuncu</th><th>Takım</th><th>Rol</th>"
-        f"<th>Fit</th><th>Rol Skoru</th><th>Dış API</th><th>Yaş</th><th>Gol</th><th>İlk 11</th><th>Yük km</th><th>Öneri</th></tr></thead>"
-        f"<tbody>{rows}</tbody></table></section>"
-    )
-
-
-def player_row(player: dict, bucket: str) -> str:
-    score_field = {
-        "immediate_scorer": "immediate_scorer_score",
-        "physical_engine": "physical_engine_score",
-        "resale_value": "resale_value_score",
-        "contract_opportunity": "contract_opportunity_score",
-        "low_risk_regular": "low_risk_regular_score",
-    }[bucket]
-    load = f"{player['estimated_physical_load_km_min']}-{player['estimated_physical_load_km_max']}"
-    return (
-        f"<tr><td>{escape(player['name'])}</td><td>{escape(player.get('team') or '')}</td>"
-        f"<td><span class=\"pill role\">{escape(player['archetype'])}</span></td>"
-        f"<td>{player['overall_fm_fit_score']}</td><td>{player[score_field]}</td><td>{player.get('external_quality_score', 0)}</td>"
-        f"<td>{escape(str(player.get('age') or ''))}</td><td>{player['goals']}</td><td>{player['starts']}</td>"
-        f"<td>{load}</td><td>{escape(player['recommendation'])}</td></tr>"
-    )
+def _s_pill(label: str, value) -> str:
+    return f'<div class="s-pill"><span>{escape(str(label))}</span><strong>{escape(str(value))}</strong></div>'
 
 
 def priority_class(priority: str) -> str:
-    value = priority.lower()
-    if value == "high":
+    v = priority.lower()
+    if v == "high":
         return "high"
-    if value == "medium":
+    if v == "medium":
         return "medium"
     return "low"
 
