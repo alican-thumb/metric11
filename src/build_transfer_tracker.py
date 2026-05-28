@@ -265,13 +265,6 @@ def build_html(signals: list[dict], summary: dict) -> str:
   <div class="stat-mv"><div class="v">{total_mv_label}</div><div class="l">Toplam Teyitli Değer</div></div>
 </div>
 <main>
-  <div class="info-box">
-    <strong>Veri kaynakları:</strong> Resmi kulüp siteleri ile erişilebilir RSS/medya akışları otomatik taranır.
-    X sinyali yalnız yapılandırılmış erişim bulunduğunda değerlendirilir.
-    Durum <strong>RESMİ</strong> = kulüp resmi kanalından, <strong>DOĞRULANDI</strong> = birden fazla güvenilir kaynak,
-    <strong>SÖYLENTI</strong> = tek kaynak/medya iddiası, <strong>TAKİPTE</strong> = oyuncu adı doğrulanmayı bekliyor.
-    Pipeline günde 5 kez çalışır; yeni haberler otomatik eklenir.
-  </div>
   <div class="filter-bar">
     <input class="filter-input" id="filterInput" placeholder="Oyuncu veya kulüp ara…" oninput="filterRows(this.value)">
     <span style="font-size:13px;color:var(--muted)">{len(named)} kayıt</span>

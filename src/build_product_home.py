@@ -43,7 +43,6 @@ def build_html() -> str:
     league_intelligence = load_json(PROCESSED_DIR / "league_intelligence_2025_2026.json").get("summary", {})
     team_blueprints = load_json(PROCESSED_DIR / "team_scout_blueprints_2025_2026.json").get("summary", {})
     scout_quality = load_json(PROCESSED_DIR / "scout_quality_report_2025_2026.json").get("summary", {})
-    transfermarkt_review = load_json(PROCESSED_DIR / "transfermarkt_match_review_queue_2025_2026.json").get("summary", {})
     data_quality = load_json(PROCESSED_DIR / "data_quality_scorecard_2025_2026.json")
     warehouse_quality = load_json(PROCESSED_DIR / "metric11_warehouse_quality.json")
     data_catalog = load_json(PROCESSED_DIR / "data_catalog_2025_2026.json").get("coverage", {})
@@ -56,7 +55,6 @@ def build_html() -> str:
     news_intel = load_json(PROCESSED_DIR / f"news_intelligence_{SEASON}.json")
     transfer_season = load_json(PROCESSED_DIR / f"transfer_season_context_{SEASON}.json") or {}
     transfer_tracker = load_json(PROCESSED_DIR / f"transfer_tracker_{SEASON}.json") or {}
-    prediction_validation = load_json(PROCESSED_DIR / "prediction_validation_report_2025_2026.json").get("metrics", {})
     all_teams_total = _count_all_teams_reports()
 
     cards = [
@@ -73,22 +71,10 @@ def build_html() -> str:
             f"{all_teams_total} rapor / 18 takım",
         ),
         panel_card(
-            "Tahmin Backtest Paneli",
-            "Lig geneli Poisson/Elo modelinin doğru/yanlış, güven ve 18 takım piyasa değeri benchmark kırılımı.",
-            "prediction_backtest_dashboard_2025_2026.html",
-            f"%{round(league_summary.get('accuracy', 0) * 100)} sonuç doğruluğu",
-        ),
-        panel_card(
             "Lig Piyasa Değeri Denetimi",
             "18 takımın kadro değerlerini lig modeliyle retrospektif karşılaştırır; üretim tahmini olarak kullanılmaz.",
             "league_market_value_audit_2025_2026.html",
             f"{league_market.get('covered_matches', 0)} maç kapsamı",
-        ),
-        panel_card(
-            "Tahmin Doğrulama Raporu",
-            "Beşiktaş üzerinde ayarlanmış ekran kontrolünü, lig-geneli ham ölçümden ayırır ve bağımsız test açığını gösterir.",
-            "prediction_validation_report_2025_2026.html",
-            f"%{round((prediction_validation.get('unique_league_fixtures_raw_baseline', {}).get('accuracy') or 0) * 100)} ham lig tabanı",
         ),
         panel_card(
             "Büyük Maç Denetim Raporu",
@@ -113,6 +99,12 @@ def build_html() -> str:
             "Lig zafiyetlerini rol ihtiyacına çevirir ve her takım için mevcut aday havuzundan oyuncu bağlantısı kurar.",
             "team_scout_blueprints_2025_2026.html",
             f"{team_blueprints.get('candidate_links', 0)} bağlantı",
+        ),
+        panel_card(
+            "FM Scout Programı",
+            "691 oyuncuya Football Manager tarzı 1-20 attribute barları: bitiricilik, pas, müdahale, hız, kondisyon ve daha fazlası. FM2023 verisi eşleşen oyuncularda gerçek değerler gösterilir.",
+            "fm_style_scout_program_2025_2026.html",
+            f"{fm_scout.get('candidate_count', 0)} aday",
         ),
         panel_card(
             "Haber İstihbaratı",
@@ -145,25 +137,10 @@ def build_html() -> str:
             f"{scout_quality.get('low_confidence_blueprint_links', 0)} kontrol",
         ),
         panel_card(
-            "Transfermarkt Eşleşme Kuyruğu",
-            "Lig snapshot kapsamındaki TFF oyuncu eşleşmelerini ve scout yayınına engel olan doğrulama açıklarını listeler.",
-            "transfermarkt_match_review_queue_2025_2026.html",
-            (
-                f"{transfermarkt_review.get('manual_alias_pending_network_verification', 0)} manuel teyit / "
-                f"{transfermarkt_review.get('review_tier_counts', {}).get('HIGH_USAGE_UNRESOLVED', 0)} açık"
-            ),
-        ),
-        panel_card(
             "Zenginleştirilmiş Scout Paneli",
             "Lig oyuncu havuzuna yaş, sözleşme riski, fırsat skoru, resale ve opsiyonel FM/FIFA tarzı attribute sinyali eklendi.",
             "league_scouting_enriched_2025_2026_dashboard.html",
             f"{enriched_scout.get('profiled_players', 0)} profilli oyuncu",
-        ),
-        panel_card(
-            "FM Tarzı Scout Programı",
-            "Oyuncuları skor katkısı, fizik motoru, genç/resale değer, sözleşme fırsatı ve düşük riskli düzenli oyuncu rollerine ayırır.",
-            "fm_style_scout_program_2025_2026.html",
-            f"{fm_scout.get('candidate_count', 0)} aday",
         ),
         panel_card(
             "Pozisyon Bazlı Scout Matrisi",
@@ -343,7 +320,7 @@ def build_html() -> str:
       <div class="scoreboard">
         <div class="scoreboard-head"><span>Model sağlık panosu</span><span class="live">Güncel veri seti</span></div>
         <div class="board-grid">
-          <div><span>Lig ham ölçümü</span><strong>%{round((prediction_validation.get('unique_league_fixtures_raw_baseline', {}).get('accuracy') or 0) * 100)}</strong></div>
+          <div><span>Lig ham ölçümü</span><strong>%{round(league_summary.get('accuracy', 0) * 100)}</strong></div>
           <div><span>Gol adayı ilk 5</span><strong>%{round(goal_summary.get('top_5_hit_rate', 0) * 100)}</strong></div>
           <div><span>Onaylı scout önerisi</span><strong>{transfer_report.get('total_candidate_suggestions', 0)}</strong></div>
           <div><span>Veri sağlık skoru</span><strong>{data_quality.get('score', 0)}</strong></div>
@@ -356,7 +333,7 @@ def build_html() -> str:
     <div class="featured">{featured_cards}</div>
     <div class="section-title"><h2>Sezon rakamları</h2></div>
     <div class="metrics">
-      {metric("Tahmin doğruluğu", f"%{round((prediction_validation.get('unique_league_fixtures_raw_baseline', {}).get('accuracy') or 0) * 100)}")}
+      {metric("Tahmin doğruluğu", f"%{round(league_summary.get('accuracy', 0) * 100)}")}
       {metric("Maç önü raporu", preview_summary.get("generated_reports", 0))}
       {metric("Büyük maç uyarısı", big_match_report.get("high_or_medium_risk_count", 0))}
       {metric("Gol adayı isabeti", f"%{round(goal_summary.get('top_5_hit_rate', 0) * 100)}")}

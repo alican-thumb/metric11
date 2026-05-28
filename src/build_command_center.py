@@ -229,10 +229,8 @@ def build_html(payload: dict) -> str:
   <main>
     <div class="links">
       <a href="besiktas_2025_2026_dashboard_chronological.html">Maç Önü Paneli</a>
-      <a href="prediction_backtest_dashboard_2025_2026.html">Tahmin Backtest</a>
       <a href="all_teams_preview_dashboard_2025_2026.html">Tüm Takım Maç Önü</a>
       <a href="league_market_value_audit_2025_2026.html">Lig Değer Audit</a>
-      <a href="prediction_validation_report_2025_2026.html">Tahmin Doğrulama</a>
       <a href="oos_validation_2025_2026.html">OOS Validasyon</a>
       <a href="big_match_report_2025_2026.html">Büyük Maç Raporu</a>
       <a href="fm_style_scout_program_2025_2026.html">FM Scout</a>
@@ -243,7 +241,6 @@ def build_html(payload: dict) -> str:
       <a href="transfer_season_context_2025_2026.html">Transfer Sezonu</a>
       <a href="news_intelligence_dashboard_2025_2026.html">Haber İstihbaratı</a>
       <a href="scout_quality_report_2025_2026.html">Scout Kalite</a>
-      <a href="transfermarkt_match_review_queue_2025_2026.html">TM Eşleşme Kuyruğu</a>
       <a href="metric11_warehouse_quality.html">Veri Ambarı</a>
       <a href="data_quality_scorecard_2025_2026.html">Kalite Skoru</a>
       <a href="position_scout_matrix_2025_2026.html">Pozisyon Scout</a>
