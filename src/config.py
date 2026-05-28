@@ -18,6 +18,9 @@ PROCESSED_DIR = DATA_DIR / "processed"
 SEASON = "2025_2026"
 SEASON_LABEL = "2025-2026"
 
+CONTACT_EMAIL = "hello@metric11.com"
+SITE_URL = "https://metric11.com"
+
 # Current transfer-window monitoring is newer than the completed analytical season.
 # Keep its snapshots separate so network refreshes cannot overwrite model inputs.
 TRANSFER_WATCH_SEASON = "2026_2027"

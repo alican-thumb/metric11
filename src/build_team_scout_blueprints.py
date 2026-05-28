@@ -522,6 +522,9 @@ def build_html(payload: dict) -> str:
       <a class="x-share" href="https://twitter.com/intent/tweet?text=S%C3%BCper%20Lig%27de%20kimin%20neye%20ihtiyac%C4%B1%20var%3F%20%E2%9A%BD%2018%20tak%C4%B1m%C4%B1n%20transfer%20%C3%B6ncelikleri%20ve%20aday%20analizi%20%E2%80%94%20veri%20odakl%C4%B1%20scout%20raporu%3A&url=https%3A%2F%2Fmetric11.com%2Fteam_scout_blueprints_2025_2026.html" target="_blank" rel="noopener">&#x1D54F; Paylaş</a>
     </div>
   </main>
+  <footer style="text-align:center;padding:40px 16px 28px;color:#8a9e92;font-size:12px;border-top:1px solid #e2e8e4;margin-top:48px;">
+    metric11 &middot; <a href="mailto:hello@metric11.com" style="color:#8a9e92;text-decoration:none;border-bottom:1px solid #c5d4ca;">hello@metric11.com</a>
+  </footer>
   <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>

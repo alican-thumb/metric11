@@ -465,6 +465,9 @@ def build_html(payload: dict) -> str:
       <a class="x-share" href="https://twitter.com/intent/tweet?text=S%C3%BCper%20Lig%20g%C3%BC%C3%A7%20s%C4%B1ralamas%C4%B1%20ve%20tak%C4%B1m%20analizi%20%F0%9F%93%8A%20306%20ma%C3%A7%2C%2018%20tak%C4%B1m%2C%20ger%C3%A7ek%20veri%3A&url=https%3A%2F%2Fmetric11.com%2Fleague_intelligence_2025_2026.html" target="_blank" rel="noopener">&#x1D54F; Paylaş</a>
     </div>
   </main>
+  <footer style="text-align:center;padding:40px 16px 28px;color:#8a9e92;font-size:12px;border-top:1px solid #e2e8e4;margin-top:48px;">
+    metric11 &middot; <a href="mailto:hello@metric11.com" style="color:#8a9e92;text-decoration:none;border-bottom:1px solid #c5d4ca;">hello@metric11.com</a>
+  </footer>
   <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
