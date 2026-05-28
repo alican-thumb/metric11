@@ -567,6 +567,23 @@
         "actual_scorer": false
       },
       {
+        "player_id": "2820847",
+        "name": "ISHOLA JUNIOR  OLAITAN",
+        "goal_threat_score": 5.24,
+        "candidate_type": "primary+impact_sub",
+        "recent_starts": 1,
+        "season_goals_before_match": 1,
+        "recent_goals": 0,
+        "big_match_goals_before_match": 0,
+        "opponent_defense_multiplier": 1.0,
+        "actual_scorer": false,
+        "header_goals_before_match": 0,
+        "penalty_goals_before_match": 0,
+        "recent_bench": 6,
+        "cards_before_match": 1,
+        "recent_cards": 0
+      },
+      {
         "player_id": "2685818",
         "name": "MALCOM NARCISSE BOKELE MPUTU",
         "goal_threat_score": 4.24,
@@ -599,28 +616,6 @@
         "recent_bench": 4,
         "cards_before_match": 1,
         "recent_cards": 1
-      },
-      {
-        "player_id": "2820847",
-        "name": "ISHOLA JUNIOR  OLAITAN",
-        "goal_threat_score": 3.56,
-        "candidate_type": "primary+impact_sub",
-        "recent_starts": 1,
-        "season_goals_before_match": 1,
-        "recent_goals": 0,
-        "big_match_goals_before_match": 0,
-        "opponent_defense_multiplier": 1.0,
-        "actual_scorer": false,
-        "header_goals_before_match": 0,
-        "penalty_goals_before_match": 0,
-        "recent_bench": 6,
-        "cards_before_match": 1,
-        "recent_cards": 0,
-        "quality_adjustment": {
-          "multiplier": 0.68,
-          "reason": "Top 5 sıralama etkisini düşür veya aday tipini yeniden kontrol et.",
-          "source": "goal_candidate_segment_backtest"
-        }
       },
       {
         "player_id": "2294118",
@@ -805,9 +800,9 @@
   },
   "coach_lineup_audit": {
     "verdict": "KISMEN_TARTIŞMALI",
-    "actual_lineup_score": 103.67,
+    "actual_lineup_score": 104.43,
     "recommended_lineup_score": 109.38,
-    "alignment_rate": 0.948,
+    "alignment_rate": 0.955,
     "actual_starters": [
       "MATEUSZ LIS",
       "ARDA OKAN KURTULAN",
@@ -840,10 +835,10 @@
         "name": "ISHOLA JUNIOR  OLAITAN",
         "reason": "Model çekirdek 11 veya hücum önceliğinde değil; son pencere ilk 11/gol tehdidi düşük.",
         "recent_starts": 0,
-        "goal_threat_score": 3.56
+        "goal_threat_score": 5.24
       }
     ],
-    "alternative_xg_for": 1.78,
+    "alternative_xg_for": 1.77,
     "alternative_xg_against": 0.81,
     "alternative_scoreline": {
       "target_goals": 1,
@@ -1045,7 +1040,7 @@
     "Gol adayı sinyalinde öne çıkan isimler: JUAN SANTOS DA SILVA, ARDA OKAN KURTULAN, ANTHONY JUNIOR DENNIS, EFKAN BEKİROĞLU. Bu skor son gol formu, sezon içi gol sayısı ve son dönemde ilk 11 başlama sıklığından türetildi. Test sonucunda gerçek Beşiktaş golcüleri: NOVATUS DISMAS  MIROSHI, ARDA OKAN KURTULAN, EFKAN BEKİROĞLU.",
     "Skor dağılımında en olası senaryolar: 1-0 (%14), 2-0 (%12), 1-1 (%11). Model aksiyonu: Taraf eğilimi; önerilen ana skor 1-0.",
     "Kadro tercih önerisi: Önde baskı ve skor arama. Hücum önceliği JUAN SANTOS DA SILVA, ARDA OKAN KURTULAN, ANTHONY JUNIOR DENNIS. Disiplin yönetimi gereken oyuncular: RUAN GREGORIO TEIXEIRA, NOVATUS DISMAS  MIROSHI.",
-    "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %95 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.72-0.81 yerine 1.78-0.81 bandına gelebilirdi.",
+    "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %96 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.72-0.81 yerine 1.77-0.81 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday YUNUS AKGÜN (Sol açık / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.72-0.81 bandından 2.06-0.79 bandına taşırdı. Bu senaryoda en olası skor 2-0 ve kazanma olasılığı %67 olurdu.",
     "MVP olasılık motoru Beşiktaş galibiyetini %56, beraberliği %25, rakip galibiyetini %20 olarak işaretliyor. Gol beklentisi 1.72-0.81; kart sinyali MEDIUM."
   ]
