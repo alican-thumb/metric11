@@ -86,6 +86,9 @@ def build_html(metrics: dict) -> str:
     <section><h2>Golcü Listesi</h2><table><thead><tr><th>Oyuncu</th><th>Takım</th><th>Gol</th><th>İlk 11</th><th>Gol/İlk 11</th><th>Bitiricilik</th></tr></thead><tbody>{scorer_rows}</tbody></table></section>
     <section><h2>Sert Hakemler</h2><table><thead><tr><th>Hakem</th><th>Maç</th><th>Kart/M</th><th>Gol/M</th></tr></thead><tbody>{ref_rows}</tbody></table></section>
   </main>
+  <footer style="text-align:center;padding:40px 16px 28px;color:#8a9e92;font-size:12px;border-top:1px solid #e2e8e4;margin-top:48px;">
+    metric11 &middot; <a href="mailto:hello@metric11.com" style="color:#8a9e92;text-decoration:none;border-bottom:1px solid #c5d4ca;">hello@metric11.com</a>
+  </footer>
   <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>

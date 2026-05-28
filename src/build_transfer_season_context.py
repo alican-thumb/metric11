@@ -511,6 +511,7 @@ def main() -> None:
         _promotions_section(promotions),
         "<div class='share-bar'><a class='x-share' href='https://twitter.com/intent/tweet?text=Transfer%20penceresi%20a%C3%A7%C4%B1l%C4%B1yor%20%F0%9F%94%94%20261%20serbest%20ajan%2C%20%E2%82%AC506M%20piyasa%20de%C4%9Feri.%20S%C3%BCper%20Lig%20transfer%20sezonu%20analizi%3A&url=https%3A%2F%2Fmetric11.com%2Ftransfer_season_context_2025_2026.html' target='_blank' rel='noopener'>&#x1D54F; Paylaş</a></div>",
         "</div>",
+        "  <footer style=\"text-align:center;padding:40px 16px 28px;color:#8a9e92;font-size:12px;border-top:1px solid #e2e8e4;margin-top:48px;\">metric11 &middot; <a href=\"mailto:hello@metric11.com\" style=\"color:#8a9e92;text-decoration:none;border-bottom:1px solid #c5d4ca;\">hello@metric11.com</a></footer>",
         "  <script defer src=\"/_vercel/insights/script.js\"></script>",
         "</body></html>",
     ]

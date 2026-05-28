@@ -119,6 +119,7 @@ def page_html(title: str, body_html: str, description: str = "Süper Lig maç ta
         f'    <a class="back-link" href="/">Ana sayfaya d&#xf6;n</a>\n'
         f"    {body_html}\n"
         "  </div>\n"
+        '  <footer style="text-align:center;padding:40px 16px 28px;color:#8a9e92;font-size:12px;border-top:1px solid #e2e8e4;margin-top:48px;">metric11 &middot; <a href="mailto:hello@metric11.com" style="color:#8a9e92;text-decoration:none;border-bottom:1px solid #c5d4ca;">hello@metric11.com</a></footer>\n'
         '  <script defer src="/_vercel/insights/script.js"></script>\n'
         "</body>\n"
         "</html>"
