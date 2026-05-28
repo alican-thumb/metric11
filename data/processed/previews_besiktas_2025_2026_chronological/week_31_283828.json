@@ -353,12 +353,12 @@
     ],
     "suspended_count": 2,
     "injured_count": 0,
-    "squad_xg_adjustment": -0.05,
+    "squad_xg_adjustment": -0.0,
     "squad_adjustment_breakdown": [
       {
         "player_id": "1523763",
         "name": "ERSİN DESTANOĞLU",
-        "xg_penalty": 0.05,
+        "xg_penalty": 0.0,
         "start_rate": 0.8
       }
     ]
@@ -551,6 +551,18 @@
         "recent_cards": 0
       },
       {
+        "player_id": "2820847",
+        "name": "ISHOLA JUNIOR  OLAITAN",
+        "goal_threat_score": 11.86,
+        "candidate_type": "primary",
+        "recent_starts": 8,
+        "season_goals_before_match": 2,
+        "recent_goals": 2,
+        "big_match_goals_before_match": 0,
+        "opponent_defense_multiplier": 1.0,
+        "actual_scorer": false
+      },
+      {
         "player_id": "1087749",
         "name": "CENGİZ ÜNDER",
         "goal_threat_score": 8.97,
@@ -566,23 +578,6 @@
         "recent_bench": 5,
         "cards_before_match": 2,
         "recent_cards": 1
-      },
-      {
-        "player_id": "2820847",
-        "name": "ISHOLA JUNIOR  OLAITAN",
-        "goal_threat_score": 8.06,
-        "candidate_type": "primary",
-        "recent_starts": 8,
-        "season_goals_before_match": 2,
-        "recent_goals": 2,
-        "big_match_goals_before_match": 0,
-        "opponent_defense_multiplier": 1.0,
-        "actual_scorer": false,
-        "quality_adjustment": {
-          "multiplier": 0.68,
-          "reason": "Top 5 sıralama etkisini düşür veya aday tipini yeniden kontrol et.",
-          "source": "goal_candidate_segment_backtest"
-        }
       },
       {
         "player_id": "2820920",
@@ -682,58 +677,58 @@
     "note": "Gol adayi skoru TFF gol/ilk 11 gecmisi, son form, rakip savunma, duran top/defans, yedek etki ve segment backtest kalite sinyallerinden turetilen MVP sinyalidir."
   },
   "probabilities": {
-    "target_win_probability": 0.559,
-    "draw_probability": 0.24,
-    "opponent_win_probability": 0.201,
-    "expected_goals_for": 1.82,
+    "target_win_probability": 0.567,
+    "draw_probability": 0.237,
+    "opponent_win_probability": 0.196,
+    "expected_goals_for": 1.87,
     "expected_goals_against": 0.9,
     "top_scorelines": [
       {
         "target_goals": 1,
         "opponent_goals": 0,
         "score": "1-0",
-        "probability": 0.12
+        "probability": 0.117
       },
       {
         "target_goals": 2,
         "opponent_goals": 0,
         "score": "2-0",
-        "probability": 0.109
+        "probability": 0.11
       },
       {
         "target_goals": 1,
         "opponent_goals": 1,
         "score": "1-1",
-        "probability": 0.108
+        "probability": 0.105
       },
       {
         "target_goals": 2,
         "opponent_goals": 1,
         "score": "2-1",
-        "probability": 0.098
-      },
-      {
-        "target_goals": 0,
-        "opponent_goals": 0,
-        "score": "0-0",
-        "probability": 0.066
+        "probability": 0.099
       },
       {
         "target_goals": 3,
         "opponent_goals": 0,
         "score": "3-0",
-        "probability": 0.066
+        "probability": 0.068
+      },
+      {
+        "target_goals": 0,
+        "opponent_goals": 0,
+        "score": "0-0",
+        "probability": 0.063
       }
     ],
     "recommended_scoreline": {
       "target_goals": 1,
       "opponent_goals": 0,
       "score": "1-0",
-      "probability": 0.12
+      "probability": 0.117
     },
     "recommended_call": {
       "result": "target_win",
-      "probability": 0.559,
+      "probability": 0.567,
       "scoreline": "1-0",
       "action": "senaryo_anlat",
       "action_label": "Senaryo anlat",
@@ -742,8 +737,8 @@
     "display_prediction": {
       "raw_result": "target_win",
       "final_result": "target_win",
-      "probability": 0.559,
-      "margin": 0.318,
+      "probability": 0.567,
+      "margin": 0.33,
       "adjustment": "none",
       "label": "BEŞİKTAŞ A.Ş. kazanır",
       "raw_label": "BEŞİKTAŞ A.Ş. kazanır",
@@ -788,8 +783,8 @@
     "core_starters": [
       "HYEONGYU OH",
       "ORKUN KÖKÇÜ",
-      "CENGİZ ÜNDER",
       "ISHOLA JUNIOR  OLAITAN",
+      "CENGİZ ÜNDER",
       "RIDVAN YILMAZ",
       "BADOBRE EMMANUEL ELYSEE DJEDJE AGBADOU",
       "KRİSTJAN ASLLANİ",
@@ -819,9 +814,9 @@
   },
   "coach_lineup_audit": {
     "verdict": "KISMEN_TARTIŞMALI",
-    "actual_lineup_score": 92.85,
-    "recommended_lineup_score": 106.66,
-    "alignment_rate": 0.871,
+    "actual_lineup_score": 94.56,
+    "recommended_lineup_score": 108.37,
+    "alignment_rate": 0.873,
     "actual_starters": [
       "DEVIS ESTIVEN  VASQUEZ LLACH",
       "ONYINYE WILFRED NDIDI",
@@ -838,8 +833,8 @@
     "model_core_starters": [
       "HYEONGYU OH",
       "ORKUN KÖKÇÜ",
-      "CENGİZ ÜNDER",
       "ISHOLA JUNIOR  OLAITAN",
+      "CENGİZ ÜNDER",
       "RIDVAN YILMAZ",
       "BADOBRE EMMANUEL ELYSEE DJEDJE AGBADOU",
       "KRİSTJAN ASLLANİ",
@@ -872,13 +867,13 @@
         "goal_threat_score": 0
       }
     ],
-    "alternative_xg_for": 1.96,
+    "alternative_xg_for": 2.01,
     "alternative_xg_against": 0.9,
     "alternative_scoreline": {
-      "target_goals": 1,
+      "target_goals": 2,
       "opponent_goals": 0,
-      "score": "1-0",
-      "probability": 0.112
+      "score": "2-0",
+      "probability": 0.11
     },
     "note": "Bu denetim gerçek maçtan önceki kullanım/gol/kart sinyaliyle çalışır; teknik direktörün antrenman, sakatlık ve taktik bilgisine sahip değildir."
   },
@@ -888,177 +883,177 @@
     "note": "Bu senaryo oyuncunun gerçekten oynayacağı, uyum sağlayacağı veya transfer edilebileceği anlamına gelmez; rol-fit skorundan türetilmiş düşük/orta güvenli etki simülasyonudur.",
     "candidates": [
       {
-        "player_name": "JESURUN  RAK-SAKYI",
-        "current_team": "ÇAYKUR RİZESPOR A.Ş.",
+        "player_name": "YUNUS AKGÜN",
+        "current_team": "GALATASARAY A.Ş.",
         "target_role": "Sol açık / çizgi kırıcı",
         "role_key": "LW_CREATOR",
-        "role_fit_score": 91.8,
+        "role_fit_score": 115.39,
         "position_confidence": "MEDIUM_EXTERNAL",
-        "age": 23,
-        "economy_score": 32.0,
-        "current_expected_goals_for": 1.82,
+        "age": 25,
+        "economy_score": 22.0,
+        "current_expected_goals_for": 1.87,
         "current_expected_goals_against": 0.9,
-        "simulated_expected_goals_for": 1.96,
-        "simulated_expected_goals_against": 0.9,
-        "xg_for_delta": 0.14,
-        "xg_against_delta": 0.0,
-        "goal_edge_delta": 0.14,
-        "simulated_target_win_probability": 0.621,
-        "simulated_draw_probability": 0.213,
-        "simulated_opponent_win_probability": 0.166,
-        "simulated_scoreline": {
-          "target_goals": 1,
-          "opponent_goals": 0,
-          "score": "1-0",
-          "probability": 0.112
-        },
-        "impact_label": "LOW_POSITIVE",
-        "why": "Rol okuması: Right Winger (MEDIUM_EXTERNAL). İlk 11 11, gol 4, kart 1. Tahmini yük 8.7-10.2 km. Tempo ve tekrar koşu ihtiyacı olan rolde fiziksel yük proxy'si öne çıkarıldı. Sözleşme fırsatı HIGH seviyesinde. Genç değer/resale sinyali güçlü.",
-        "commercial_note": "Al-sat değeri yüksek aday; doğru maaş/bonservis bandında ekonomik upside sağlar."
-      },
-      {
-        "player_name": "AARON OPOKU TIAWIAH",
-        "current_team": "ZECORNER KAYSERİSPOR",
-        "target_role": "Sol açık / çizgi kırıcı",
-        "role_key": "LW_CREATOR",
-        "role_fit_score": 57.26,
-        "position_confidence": "MEDIUM_EXTERNAL",
-        "age": 27,
-        "economy_score": 14.0,
-        "current_expected_goals_for": 1.82,
-        "current_expected_goals_against": 0.9,
-        "simulated_expected_goals_for": 1.93,
-        "simulated_expected_goals_against": 0.9,
-        "xg_for_delta": 0.11,
-        "xg_against_delta": 0.0,
-        "goal_edge_delta": 0.11,
-        "simulated_target_win_probability": 0.615,
-        "simulated_draw_probability": 0.216,
-        "simulated_opponent_win_probability": 0.17,
-        "simulated_scoreline": {
-          "target_goals": 1,
-          "opponent_goals": 0,
-          "score": "1-0",
-          "probability": 0.114
-        },
-        "impact_label": "LOW_POSITIVE",
-        "why": "Rol okuması: Left Winger (MEDIUM_EXTERNAL). İlk 11 14, gol 1, kart 3. Tahmini yük 9.0-10.5 km. Tempo ve tekrar koşu ihtiyacı olan rolde fiziksel yük proxy'si öne çıkarıldı. Sözleşme fırsatı MEDIUM seviyesinde.",
-        "commercial_note": "Sportif katkı ve maliyet dengesi ayrıca piyasa değeriyle doğrulanmalı."
-      },
-      {
-        "player_name": "DATRO DAVID FOFANA",
-        "current_team": "MISIRLI.COM.TR FATİH KARAGÜMRÜK",
-        "target_role": "Santrfor / skor yükü",
-        "role_key": "ST_SCORER",
-        "role_fit_score": 102.41,
-        "position_confidence": "MEDIUM_EXTERNAL",
-        "age": 23,
-        "economy_score": 32.0,
-        "current_expected_goals_for": 1.82,
-        "current_expected_goals_against": 0.9,
-        "simulated_expected_goals_for": 2.02,
-        "simulated_expected_goals_against": 0.9,
-        "xg_for_delta": 0.2,
-        "xg_against_delta": 0.0,
-        "goal_edge_delta": 0.2,
-        "simulated_target_win_probability": 0.634,
-        "simulated_draw_probability": 0.207,
-        "simulated_opponent_win_probability": 0.16,
+        "simulated_expected_goals_for": 2.21,
+        "simulated_expected_goals_against": 0.88,
+        "xg_for_delta": 0.34,
+        "xg_against_delta": 0.02,
+        "goal_edge_delta": 0.36,
+        "simulated_target_win_probability": 0.676,
+        "simulated_draw_probability": 0.188,
+        "simulated_opponent_win_probability": 0.137,
         "simulated_scoreline": {
           "target_goals": 2,
           "opponent_goals": 0,
           "score": "2-0",
-          "probability": 0.11
+          "probability": 0.111
         },
-        "impact_label": "LOW_POSITIVE",
-        "why": "Rol okuması: Centre-Forward (MEDIUM_EXTERNAL). İlk 11 10, gol 6, kart 0. Tahmini yük 8.6-10.1 km. Sözleşme fırsatı HIGH seviyesinde. Genç değer/resale sinyali güçlü.",
-        "commercial_note": "Al-sat değeri yüksek aday; doğru maaş/bonservis bandında ekonomik upside sağlar."
-      },
-      {
-        "player_name": "YOUSSEF EN NESYRI",
-        "current_team": "FENERBAHÇE A.Ş.",
-        "target_role": "Santrfor / skor yükü",
-        "role_key": "ST_SCORER",
-        "role_fit_score": 88.71,
-        "position_confidence": "MEDIUM_EXTERNAL",
-        "age": 28,
-        "economy_score": 8.0,
-        "current_expected_goals_for": 1.82,
-        "current_expected_goals_against": 0.9,
-        "simulated_expected_goals_for": 2.01,
-        "simulated_expected_goals_against": 0.9,
-        "xg_for_delta": 0.19,
-        "xg_against_delta": 0.0,
-        "goal_edge_delta": 0.19,
-        "simulated_target_win_probability": 0.631,
-        "simulated_draw_probability": 0.208,
-        "simulated_opponent_win_probability": 0.161,
-        "simulated_scoreline": {
-          "target_goals": 2,
-          "opponent_goals": 0,
-          "score": "2-0",
-          "probability": 0.11
-        },
-        "impact_label": "LOW_POSITIVE",
-        "why": "Rol okuması: Centre-Forward (MEDIUM_EXTERNAL). İlk 11 11, gol 7, kart 1. Tahmini yük 8.8-10.3 km.",
-        "commercial_note": "Sportif katkı ve maliyet dengesi ayrıca piyasa değeriyle doğrulanmalı."
-      },
-      {
-        "player_name": "JHON JADER DURAN PALACIOS",
-        "current_team": "FENERBAHÇE A.Ş.",
-        "target_role": "Santrfor / skor yükü",
-        "role_key": "ST_SCORER",
-        "role_fit_score": 70.47,
-        "position_confidence": "MEDIUM_EXTERNAL",
-        "age": 22,
-        "economy_score": 26.0,
-        "current_expected_goals_for": 1.82,
-        "current_expected_goals_against": 0.9,
-        "simulated_expected_goals_for": 1.97,
-        "simulated_expected_goals_against": 0.9,
-        "xg_for_delta": 0.15,
-        "xg_against_delta": 0.0,
-        "goal_edge_delta": 0.15,
-        "simulated_target_win_probability": 0.623,
-        "simulated_draw_probability": 0.212,
-        "simulated_opponent_win_probability": 0.165,
-        "simulated_scoreline": {
-          "target_goals": 1,
-          "opponent_goals": 0,
-          "score": "1-0",
-          "probability": 0.112
-        },
-        "impact_label": "LOW_POSITIVE",
-        "why": "Rol okuması: Centre-Forward (MEDIUM_EXTERNAL). İlk 11 6, gol 3, kart 2. Tahmini yük 8.6-10.1 km. Sözleşme fırsatı HIGH seviyesinde.",
+        "impact_label": "MEDIUM_IMPACT",
+        "why": "Rol okuması: Right Winger (MEDIUM_EXTERNAL). İlk 11 23, gol 7, kart 1. Tahmini yük 9.8-11.3 km. Tempo ve tekrar koşu ihtiyacı olan rolde fiziksel yük proxy'si öne çıkarıldı. Sözleşme fırsatı HIGH seviyesinde.",
         "commercial_note": "Sözleşme fırsatı nedeniyle düşük bonservis veya serbest kalma pazarlığı izlenmeli."
       },
       {
-        "player_name": "UCHENNA OGUNDU",
-        "current_team": "CORENDON ALANYASPOR",
-        "target_role": "Santrfor / skor yükü",
-        "role_key": "ST_SCORER",
-        "role_fit_score": 62.94,
+        "player_name": "BARIŞ ALPER YILMAZ",
+        "current_team": "GALATASARAY A.Ş.",
+        "target_role": "Sol açık / çizgi kırıcı",
+        "role_key": "LW_CREATOR",
+        "role_fit_score": 110.15,
         "position_confidence": "MEDIUM_EXTERNAL",
-        "age": 20,
-        "economy_score": 22.0,
-        "current_expected_goals_for": 1.82,
+        "age": 26,
+        "economy_score": 18.0,
+        "current_expected_goals_for": 1.87,
         "current_expected_goals_against": 0.9,
-        "simulated_expected_goals_for": 1.96,
-        "simulated_expected_goals_against": 0.9,
-        "xg_for_delta": 0.14,
-        "xg_against_delta": 0.0,
-        "goal_edge_delta": 0.14,
-        "simulated_target_win_probability": 0.621,
-        "simulated_draw_probability": 0.213,
-        "simulated_opponent_win_probability": 0.166,
+        "simulated_expected_goals_for": 2.25,
+        "simulated_expected_goals_against": 0.87,
+        "xg_for_delta": 0.38,
+        "xg_against_delta": 0.03,
+        "goal_edge_delta": 0.41,
+        "simulated_target_win_probability": 0.685,
+        "simulated_draw_probability": 0.184,
+        "simulated_opponent_win_probability": 0.131,
         "simulated_scoreline": {
-          "target_goals": 1,
+          "target_goals": 2,
           "opponent_goals": 0,
-          "score": "1-0",
+          "score": "2-0",
           "probability": 0.112
         },
+        "impact_label": "MEDIUM_IMPACT",
+        "why": "Rol okuması: Left Winger (MEDIUM_EXTERNAL). İlk 11 27, gol 8, kart 7. Tahmini yük 10.2-11.7 km. Tempo ve tekrar koşu ihtiyacı olan rolde fiziksel yük proxy'si öne çıkarıldı. Sözleşme fırsatı HIGH seviyesinde.",
+        "commercial_note": "Sözleşme fırsatı nedeniyle düşük bonservis veya serbest kalma pazarlığı izlenmeli."
+      },
+      {
+        "player_name": "KAZEEM ADEREMI J. OLAIGBE",
+        "current_team": "TRABZONSPOR A.Ş.",
+        "target_role": "Sol açık / çizgi kırıcı",
+        "role_key": "LW_CREATOR",
+        "role_fit_score": 107.33,
+        "position_confidence": "MEDIUM_EXTERNAL",
+        "age": 23,
+        "economy_score": 32.0,
+        "current_expected_goals_for": 1.87,
+        "current_expected_goals_against": 0.9,
+        "simulated_expected_goals_for": 2.18,
+        "simulated_expected_goals_against": 0.87,
+        "xg_for_delta": 0.31,
+        "xg_against_delta": 0.03,
+        "goal_edge_delta": 0.34,
+        "simulated_target_win_probability": 0.672,
+        "simulated_draw_probability": 0.19,
+        "simulated_opponent_win_probability": 0.137,
+        "simulated_scoreline": {
+          "target_goals": 2,
+          "opponent_goals": 0,
+          "score": "2-0",
+          "probability": 0.113
+        },
+        "impact_label": "MEDIUM_IMPACT",
+        "why": "Rol okuması: Left Winger (MEDIUM_EXTERNAL). İlk 11 26, gol 0, kart 1. Tahmini yük 10.0-11.5 km. Tempo ve tekrar koşu ihtiyacı olan rolde fiziksel yük proxy'si öne çıkarıldı. Sözleşme fırsatı HIGH seviyesinde. Genç değer/resale sinyali güçlü.",
+        "commercial_note": "Al-sat değeri yüksek aday; doğru maaş/bonservis bandında ekonomik upside sağlar."
+      },
+      {
+        "player_name": "GÖKTAN GÜRPÜZ",
+        "current_team": "GENÇLERBİRLİĞİ",
+        "target_role": "Sol açık / çizgi kırıcı",
+        "role_key": "LW_CREATOR",
+        "role_fit_score": 106.0,
+        "position_confidence": "MEDIUM_EXTERNAL",
+        "age": 23,
+        "economy_score": 32.0,
+        "current_expected_goals_for": 1.87,
+        "current_expected_goals_against": 0.9,
+        "simulated_expected_goals_for": 2.18,
+        "simulated_expected_goals_against": 0.87,
+        "xg_for_delta": 0.31,
+        "xg_against_delta": 0.03,
+        "goal_edge_delta": 0.34,
+        "simulated_target_win_probability": 0.672,
+        "simulated_draw_probability": 0.19,
+        "simulated_opponent_win_probability": 0.137,
+        "simulated_scoreline": {
+          "target_goals": 2,
+          "opponent_goals": 0,
+          "score": "2-0",
+          "probability": 0.113
+        },
+        "impact_label": "MEDIUM_IMPACT",
+        "why": "Rol okuması: Right Winger (MEDIUM_EXTERNAL). İlk 11 25, gol 0, kart 2. Tahmini yük 10.0-11.5 km. Tempo ve tekrar koşu ihtiyacı olan rolde fiziksel yük proxy'si öne çıkarıldı. Sözleşme fırsatı HIGH seviyesinde. Genç değer/resale sinyali güçlü.",
+        "commercial_note": "Al-sat değeri yüksek aday; doğru maaş/bonservis bandında ekonomik upside sağlar."
+      },
+      {
+        "player_name": "DORGELES NENE",
+        "current_team": "FENERBAHÇE A.Ş.",
+        "target_role": "Sol açık / çizgi kırıcı",
+        "role_key": "LW_CREATOR",
+        "role_fit_score": 105.52,
+        "position_confidence": "MEDIUM_EXTERNAL",
+        "age": 23,
+        "economy_score": 22.0,
+        "current_expected_goals_for": 1.87,
+        "current_expected_goals_against": 0.9,
+        "simulated_expected_goals_for": 2.09,
+        "simulated_expected_goals_against": 0.9,
+        "xg_for_delta": 0.22,
+        "xg_against_delta": 0.0,
+        "goal_edge_delta": 0.22,
+        "simulated_target_win_probability": 0.648,
+        "simulated_draw_probability": 0.2,
+        "simulated_opponent_win_probability": 0.152,
+        "simulated_scoreline": {
+          "target_goals": 2,
+          "opponent_goals": 0,
+          "score": "2-0",
+          "probability": 0.11
+        },
         "impact_label": "LOW_POSITIVE",
-        "why": "Rol okuması: Centre-Forward (MEDIUM_EXTERNAL). İlk 11 11, gol 2, kart 3. Tahmini yük 8.9-10.4 km. Genç değer/resale sinyali güçlü.",
+        "why": "Rol okuması: Right Winger (MEDIUM_EXTERNAL). İlk 11 16, gol 10, kart 3. Tahmini yük 9.0-10.5 km. Tempo ve tekrar koşu ihtiyacı olan rolde fiziksel yük proxy'si öne çıkarıldı. Genç değer/resale sinyali güçlü.",
+        "commercial_note": "Al-sat değeri yüksek aday; doğru maaş/bonservis bandında ekonomik upside sağlar."
+      },
+      {
+        "player_name": "BARIŞ JAKOB KALAYCI",
+        "current_team": "MISIRLI.COM.TR FATİH KARAGÜMRÜK",
+        "target_role": "Sol açık / çizgi kırıcı",
+        "role_key": "LW_CREATOR",
+        "role_fit_score": 96.44,
+        "position_confidence": "MEDIUM_EXTERNAL",
+        "age": 20,
+        "economy_score": 32.0,
+        "current_expected_goals_for": 1.87,
+        "current_expected_goals_against": 0.9,
+        "simulated_expected_goals_for": 2.05,
+        "simulated_expected_goals_against": 0.89,
+        "xg_for_delta": 0.18,
+        "xg_against_delta": 0.01,
+        "goal_edge_delta": 0.19,
+        "simulated_target_win_probability": 0.642,
+        "simulated_draw_probability": 0.204,
+        "simulated_opponent_win_probability": 0.154,
+        "simulated_scoreline": {
+          "target_goals": 2,
+          "opponent_goals": 0,
+          "score": "2-0",
+          "probability": 0.111
+        },
+        "impact_label": "LOW_POSITIVE",
+        "why": "Rol okuması: Left Winger (MEDIUM_EXTERNAL). İlk 11 15, gol 1, kart 4. Tahmini yük 9.8-11.3 km. Tempo ve tekrar koşu ihtiyacı olan rolde fiziksel yük proxy'si öne çıkarıldı. Sözleşme fırsatı HIGH seviyesinde. Genç değer/resale sinyali güçlü.",
         "commercial_note": "Al-sat değeri yüksek aday; doğru maaş/bonservis bandında ekonomik upside sağlar."
       }
     ]
@@ -1072,11 +1067,11 @@
     "Eksik oyuncu sinyali modele dahil edildi: ERSİN DESTANOĞLU, MICHAEL AMIR  MURILLO BERMUDEZ. Bu oyuncular olası 11 ve gol adayı listesinden çıkarıldı; skor beklentisi düşük güvenle aşağı ayarlandı.",
     "Hakem profili kart tarafında anlamlı bir sinyal veriyor: BATUHAN KOLAK bu sezon önceki 13 Beşiktaş maçında toplam maç başı 5.0 kart, Beşiktaş'a maç başı 2.08 kart ortalamasıyla öne çıkıyor.",
     "Olası 11 sinyalinde son dönemde öne çıkan isimler: HYEONGYU OH, ISHOLA JUNIOR  OLAITAN, RIDVAN YILMAZ, ORKUN KÖKÇÜ, BADOBRE EMMANUEL ELYSEE DJEDJE AGBADOU, KRİSTJAN ASLLANİ. Kart riski tarafında ise son 8 maç penceresinde ONYINYE WILFRED NDIDI, EMİRHAN TOPÇU, RIDVAN YILMAZ, MICHAEL AMIR  MURILLO BERMUDEZ dikkat çekiyor.",
-    "Gol adayı sinyalinde öne çıkan isimler: HYEONGYU OH, ORKUN KÖKÇÜ, JOAO PEDRO FERREIRA DA SILVA, CENGİZ ÜNDER. Bu skor son gol formu, sezon içi gol sayısı ve son dönemde ilk 11 başlama sıklığından türetildi.",
-    "Skor dağılımında en olası senaryolar: 1-0 (%12), 2-0 (%11), 1-1 (%11). Model aksiyonu: Senaryo anlat; önerilen ana skor 1-0.",
+    "Gol adayı sinyalinde öne çıkan isimler: HYEONGYU OH, ORKUN KÖKÇÜ, JOAO PEDRO FERREIRA DA SILVA, ISHOLA JUNIOR  OLAITAN. Bu skor son gol formu, sezon içi gol sayısı ve son dönemde ilk 11 başlama sıklığından türetildi.",
+    "Skor dağılımında en olası senaryolar: 1-0 (%12), 2-0 (%11), 1-1 (%10). Model aksiyonu: Senaryo anlat; önerilen ana skor 1-0.",
     "Kadro tercih önerisi: Önde baskı ve skor arama. Hücum önceliği HYEONGYU OH, ORKUN KÖKÇÜ, JOAO PEDRO FERREIRA DA SILVA. Disiplin yönetimi gereken oyuncular: ONYINYE WILFRED NDIDI, EMİRHAN TOPÇU.",
-    "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %87 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.82-0.9 yerine 1.96-0.9 bandına gelebilirdi.",
-    "Transfer etki simülasyonunda örnek aday JESURUN  RAK-SAKYI (Sol açık / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.82-0.9 bandından 1.96-0.9 bandına taşırdı. Bu senaryoda en olası skor 1-0 ve kazanma olasılığı %62 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %56, beraberliği %24, rakip galibiyetini %20 olarak işaretliyor. Gol beklentisi 1.82-0.9; kart sinyali LOW."
+    "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %87 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.87-0.9 yerine 2.01-0.9 bandına gelebilirdi.",
+    "Transfer etki simülasyonunda örnek aday YUNUS AKGÜN (Sol açık / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.87-0.9 bandından 2.21-0.88 bandına taşırdı. Bu senaryoda en olası skor 2-0 ve kazanma olasılığı %68 olurdu.",
+    "MVP olasılık motoru Beşiktaş galibiyetini %57, beraberliği %24, rakip galibiyetini %20 olarak işaretliyor. Gol beklentisi 1.87-0.9; kart sinyali LOW."
   ]
 }
