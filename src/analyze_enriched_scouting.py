@@ -14,6 +14,8 @@ def main() -> None:
     parser.add_argument("--scout", default=str(PROCESSED_DIR / "league_scouting_2025_2026_normalized.json"))
     parser.add_argument("--profiles", default=str(PROCESSED_DIR / "tff_player_profiles_enriched_2025_2026.json"))
     parser.add_argument("--attributes", default=str(PROCESSED_DIR / "player_attribute_dataset_normalized.json"))
+    parser.add_argument("--attributes-fm23", default=str(PROCESSED_DIR / "player_attribute_dataset_fm2023_normalized.json"))
+    parser.add_argument("--attributes-derived", default=str(PROCESSED_DIR / "player_attribute_dataset_fm_derived_2025_2026.json"))
     parser.add_argument("--external-api", default=str(PROCESSED_DIR / "api_football_super_lig_deep_2024_analysis.json"))
     parser.add_argument("--output-prefix", default="league_scouting_enriched_2025_2026")
     args = parser.parse_args()
@@ -21,8 +23,10 @@ def main() -> None:
     scout = json.loads(Path(args.scout).read_text(encoding="utf-8"))
     profiles = json.loads(Path(args.profiles).read_text(encoding="utf-8"))
     attributes = load_attributes(Path(args.attributes))
+    attributes_fm23 = load_attributes(Path(args.attributes_fm23))
+    attributes_derived = load_attributes(Path(args.attributes_derived))
     external_api = load_external_api(Path(args.external_api))
-    payload = build_payload(scout, profiles, attributes, external_api)
+    payload = build_payload(scout, profiles, attributes, external_api, attributes_fm23, attributes_derived)
 
     json_path = PROCESSED_DIR / f"{args.output_prefix}.json"
     md_path = PROCESSED_DIR / f"{args.output_prefix}.md"
@@ -31,13 +35,16 @@ def main() -> None:
     print(md_path.read_text(encoding="utf-8"))
 
 
-def build_payload(scout: dict, profiles: list[dict], attributes: dict | None = None, external_api: dict | None = None) -> dict:
+def build_payload(scout: dict, profiles: list[dict], attributes: dict | None = None, external_api: dict | None = None,
+                  attributes_fm23: dict | None = None, attributes_derived: dict | None = None) -> dict:
     profile_by_id = {str(profile["external_id"]): profile for profile in profiles}
     attribute_by_name = {
         canonical_player_name(item["name_normalized"]): item
         for item in (attributes or {}).get("players", [])
         if item.get("name_normalized")
     }
+    fm23_by_name, fm23_by_surname = _build_fm23_index(attributes_fm23)
+    derived_by_name = _build_derived_index(attributes_derived)
     external_players = (external_api or {}).get("player_attribute_pool", [])
     enriched = []
     for player in scout.get("player_pool", scout["scout_shortlist"]):
@@ -45,6 +52,8 @@ def build_payload(scout: dict, profiles: list[dict], attributes: dict | None = N
         if not profile:
             continue
         attribute = attribute_by_name.get(canonical_player_name(player["name"]))
+        fm23_match = _find_fm23(player["name"], fm23_by_name, fm23_by_surname)
+        derived_match = derived_by_name.get(canonical_player_name(player["name"]))
         external_match = best_external_match(player, external_players)
         enriched.append(
             {
@@ -63,6 +72,8 @@ def build_payload(scout: dict, profiles: list[dict], attributes: dict | None = N
                 "contract_risk": contract_risk(profile.get("contract_months_left")),
                 "resale_signal": resale_signal(profile.get("age"), player.get("starts", 0), player.get("goals", 0)),
                 "attribute_signal": summarize_attribute(attribute),
+                "fm23_signal": summarize_fm23(fm23_match),
+                "derived_signal": summarize_derived(derived_match),
                 "external_api_signal": summarize_external_api(external_match),
                 "opportunity_score": opportunity_score(profile, player, attribute, external_match),
             }
@@ -75,6 +86,8 @@ def build_payload(scout: dict, profiles: list[dict], attributes: dict | None = N
             "contract_risk_players": sum(1 for item in enriched if item["contract_risk"] in {"HIGH", "MEDIUM"}),
             "attribute_source": (attributes or {}).get("source", {}).get("name"),
             "attribute_matched_players": sum(1 for item in enriched if item.get("attribute_signal", {}).get("matched")),
+            "fm23_matched_players": sum(1 for item in enriched if item.get("fm23_signal", {}).get("matched")),
+            "derived_matched_players": sum(1 for item in enriched if item.get("derived_signal", {}).get("matched")),
             "external_api_source": (external_api or {}).get("source", {}).get("source"),
             "external_api_matched_players": sum(1 for item in enriched if item.get("external_api_signal", {}).get("matched")),
         },
@@ -85,6 +98,70 @@ def build_payload(scout: dict, profiles: list[dict], attributes: dict | None = N
             key=lambda item: (item.get("contract_months_left") if item.get("contract_months_left") is not None else 999, -item["scout_value_score"]),
         )[:12],
     }
+
+
+def _build_derived_index(attributes_derived: dict | None) -> dict:
+    if not attributes_derived:
+        return {}
+    result: dict[str, dict] = {}
+    for item in attributes_derived.get("players", []):
+        name = item.get("name_normalized") or item.get("Name") or item.get("name")
+        if not name:
+            continue
+        key = canonical_player_name(name)
+        # normalise the derived item to lowercase keys for summarize_derived
+        normalized = {
+            "name": name,
+            "name_normalized": normalize_name(name),
+            "current_ability": item.get("current_ability") or item.get("Current Ability"),
+            "potential_ability": item.get("potential_ability") or item.get("Potential Ability"),
+            "raw_attributes": {
+                k.lower().replace(" ", "_"): v
+                for k, v in item.items()
+                if k not in ("Name", "Club", "Age", "Position", "Current Ability", "Potential Ability", "_external_matched")
+                and v not in (None, "")
+            },
+        }
+        result[key] = normalized
+    return result
+
+
+def _build_fm23_index(attributes_fm23: dict | None) -> tuple[dict, dict]:
+    """Returns (exact_name_map, surname_map). Surname map stores list to handle collisions."""
+    if not attributes_fm23:
+        return {}, {}
+    by_name: dict[str, dict] = {}
+    by_surname: dict[str, list[dict]] = {}
+    for item in attributes_fm23.get("players", []):
+        if not item.get("name_normalized"):
+            continue
+        key = canonical_player_name(item["name_normalized"])
+        by_name[key] = item
+        tokens = key.split()
+        if tokens:
+            surname = tokens[-1]
+            by_surname.setdefault(surname, []).append(item)
+    return by_name, by_surname
+
+
+def _find_fm23(player_name: str, by_name: dict, by_surname: dict) -> dict | None:
+    key = canonical_player_name(player_name)
+    if key in by_name:
+        return by_name[key]
+    tokens = key.split()
+    if not tokens:
+        return None
+    surname = tokens[-1]
+    candidates = by_surname.get(surname, [])
+    if len(candidates) == 1:
+        return candidates[0]
+    if len(candidates) > 1 and len(tokens) >= 2:
+        first = tokens[0]
+        for c in candidates:
+            c_tokens = canonical_player_name(c.get("name_normalized", "")).split()
+            if c_tokens and c_tokens[0][:1] == first[:1]:
+                return c
+    return None
 
 
 def contract_risk(months_left: int | None) -> str:
@@ -152,6 +229,37 @@ def role_fit_score(attribute: dict) -> float | None:
     if not numbers:
         return None
     return round(sum(numbers) / len(numbers), 2)
+
+
+def summarize_fm23(item: dict | None) -> dict:
+    if not item:
+        return {"matched": False}
+    return {
+        "matched": True,
+        "source_name": "FM2023",
+        "name": item.get("name"),
+        "team": item.get("team"),
+        "current_ability": item.get("current_ability"),
+        "potential_ability": item.get("potential_ability"),
+        "growth_room": item.get("growth_room"),
+        "physical_score": item.get("physical_score"),
+        "mental_score": item.get("mental_score"),
+        "technical_score": item.get("technical_score"),
+        "raw_attributes": item.get("raw_attributes"),
+    }
+
+
+def summarize_derived(item: dict | None) -> dict:
+    if not item:
+        return {"matched": False}
+    raw = item.get("raw_attributes") or {}
+    return {
+        "matched": True,
+        "source_name": "Türetilmiş",
+        "current_ability": item.get("current_ability"),
+        "potential_ability": item.get("potential_ability"),
+        "raw_attributes": raw,
+    }
 
 
 def summarize_external_api(player: dict | None) -> dict:

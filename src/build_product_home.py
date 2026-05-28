@@ -34,6 +34,8 @@ def build_html() -> str:
     goal_summary = load_json(PROCESSED_DIR / "goal_candidate_backtest_2025_2026.json").get("summary", {})
     match_summary = load_json(PROCESSED_DIR / "match_prediction_backtest_2025_2026.json").get("summary", {})
     league_summary = load_json(PROCESSED_DIR / "league_prediction_model_2025_2026.json").get("summary", {})
+    _pv_metrics = load_json(PROCESSED_DIR / "prediction_validation_report_2025_2026.json").get("metrics", {})
+    league_accuracy = round((_pv_metrics.get("unique_league_fixtures_raw_baseline", {}).get("accuracy") or league_summary.get("accuracy") or 0) * 100)
     league_market = load_json(PROCESSED_DIR / "league_market_value_audit_2025_2026.json").get("summary", {})
     team_needs = load_json(PROCESSED_DIR / "besiktas_team_needs_2025_2026.json").get("summary", {})
     enriched_scout = load_json(PROCESSED_DIR / "league_scouting_enriched_2025_2026.json").get("summary", {})
@@ -320,7 +322,7 @@ def build_html() -> str:
       <div class="scoreboard">
         <div class="scoreboard-head"><span>Model sağlık panosu</span><span class="live">Güncel veri seti</span></div>
         <div class="board-grid">
-          <div><span>Lig ham ölçümü</span><strong>%{round(league_summary.get('accuracy', 0) * 100)}</strong></div>
+          <div><span>Lig ham ölçümü</span><strong>%{league_accuracy}</strong></div>
           <div><span>Gol adayı ilk 5</span><strong>%{round(goal_summary.get('top_5_hit_rate', 0) * 100)}</strong></div>
           <div><span>Onaylı scout önerisi</span><strong>{transfer_report.get('total_candidate_suggestions', 0)}</strong></div>
           <div><span>Veri sağlık skoru</span><strong>{data_quality.get('score', 0)}</strong></div>
@@ -333,7 +335,7 @@ def build_html() -> str:
     <div class="featured">{featured_cards}</div>
     <div class="section-title"><h2>Sezon rakamları</h2></div>
     <div class="metrics">
-      {metric("Tahmin doğruluğu", f"%{round(league_summary.get('accuracy', 0) * 100)}")}
+      {metric("Tahmin doğruluğu", f"%{league_accuracy}")}
       {metric("Maç önü raporu", preview_summary.get("generated_reports", 0))}
       {metric("Büyük maç uyarısı", big_match_report.get("high_or_medium_risk_count", 0))}
       {metric("Gol adayı isabeti", f"%{round(goal_summary.get('top_5_hit_rate', 0) * 100)}")}

@@ -301,16 +301,21 @@ def _archetype_badge(archetype: str) -> str:
 
 
 _POS_ATTRS = {
-    "FWD": ["finishing", "technique", "positioning", "decisions", "pace", "stamina"],
-    "MID": ["passing", "decisions", "technique", "vision", "work_rate", "stamina"],
-    "DEF": ["tackling", "decisions", "positioning", "stamina", "pace", "work_rate"],
-    "GK":  ["decisions", "positioning", "stamina", "work_rate", "technique", "teamwork"],
+    "FWD": ["finishing", "technique", "positioning", "decisions", "composure", "dribbling", "pace", "stamina"],
+    "MID": ["passing", "decisions", "technique", "vision", "first_touch", "anticipation", "work_rate", "stamina"],
+    "DEF": ["tackling", "marking", "decisions", "positioning", "concentration", "stamina", "pace", "strength"],
+    "GK":  ["decisions", "positioning", "stamina", "work_rate", "concentration", "teamwork"],
 }
 _ATTR_LABELS = {
     "finishing": "Bitiricilik", "technique": "Teknik", "positioning": "Pozisyon",
     "decisions": "Karar Verme", "pace": "Hız", "stamina": "Kondisyon",
     "passing": "Pas", "vision": "Vizyon", "work_rate": "Çalışma Temposu",
     "tackling": "Müdahale", "teamwork": "Takım Oyunu", "acceleration": "İvme",
+    "dribbling": "Dribling", "first_touch": "İlk Dokunuş", "composure": "Soğukkanlılık",
+    "concentration": "Konsantrasyon", "anticipation": "Öngörü", "marking": "Markaj",
+    "strength": "Fiziksel Güç", "heading": "Kafa Vuruşu", "long_shots": "Uzak Şut",
+    "crossing": "Orta", "flair": "Yaratıcılık", "agility": "Çeviklik",
+    "balance": "Denge", "natural_fitness": "Doğal Form",
 }
 
 
@@ -336,11 +341,27 @@ def _player_card(player: dict, active_field: str, maxes: dict) -> str:
     load_hi = player.get("estimated_physical_load_km_max", 0)
     archetype = player.get("archetype", "Rotasyon fırsatı")
 
+    fm23_sig = player.get("fm23_signal") or {}
+    derived_sig = player.get("derived_signal") or {}
     attr_sig = player.get("attribute_signal") or {}
-    raw = attr_sig.get("raw_attributes") or {}
-    ca = attr_sig.get("current_ability")
-    pa = attr_sig.get("potential_ability")
     pos_grp = (player.get("tm_position_group") or "MID").upper()
+
+    # Prefer FM23 (richer attrs), fall back to derived, then legacy attribute_signal
+    if fm23_sig.get("matched"):
+        raw = fm23_sig.get("raw_attributes") or {}
+        ca = fm23_sig.get("current_ability")
+        pa = fm23_sig.get("potential_ability")
+        attr_source = "FM23"
+    elif derived_sig.get("matched"):
+        raw = derived_sig.get("raw_attributes") or {}
+        ca = derived_sig.get("current_ability")
+        pa = derived_sig.get("potential_ability")
+        attr_source = "Türetilmiş"
+    else:
+        raw = attr_sig.get("raw_attributes") or {}
+        ca = attr_sig.get("current_ability")
+        pa = attr_sig.get("potential_ability")
+        attr_source = None
 
     # --- attribute barları ---
     if raw:
@@ -368,6 +389,7 @@ def _player_card(player: dict, active_field: str, maxes: dict) -> str:
             f'<span class="pa-chip">PA {int(pa)}</span>'
             if pa and pa > (ca or 0) + 2 else ""
         )
+        src_badge = f'<span class="src-badge src-{attr_source.lower().replace("ü","u").replace("ş","s").replace("ı","i")}">{attr_source}</span>' if attr_source else ""
     else:
         # fallback: proxy skorlar
         active_pct = _norm(player.get(active_field) or 0, maxes[active_field])
@@ -386,6 +408,7 @@ def _player_card(player: dict, active_field: str, maxes: dict) -> str:
         score_label = str(active_pct)
         ring_color = _bar_color(active_pct)
         pa_html = ""
+        src_badge = ""
 
     contract_html = _contract_badge(player)
     value_html = _value_chip(player)
@@ -399,7 +422,7 @@ def _player_card(player: dict, active_field: str, maxes: dict) -> str:
     </div>
     <div class="pcard-score" style="color:{ring_color};border-color:{ring_color}33;background:{ring_color}12">{score_label}</div>
   </div>
-  <div class="arc-row">{arc_html}{pa_html}</div>
+  <div class="arc-row">{arc_html}{pa_html}{src_badge}</div>
   <div class="attrs">{bars}</div>
   <div class="pcard-stats">
     <span>⚽ <strong>{goals}</strong></span>
@@ -446,7 +469,7 @@ def build_html(payload: dict) -> str:
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>{escape(payload['team'])} Scout Programı — metric11</title>
+  <title>FM Scout Programı — metric11</title>
   <style>
     :root{{--bg:#f3f5f4;--panel:#fff;--ink:#132018;--muted:#627067;--line:#d7ded9;--dark:#091810;--green:#116447;--teal:#0d9488;--shadow:0 4px 16px rgba(9,24,16,.07);}}
     *{{box-sizing:border-box;margin:0;padding:0;}}
@@ -538,6 +561,9 @@ def build_html(payload: dict) -> str:
     .val-link:hover{{text-decoration:underline;}}
     .arc-row{{display:flex;align-items:center;gap:6px;flex-wrap:wrap;}}
     .pa-chip{{font-size:11px;font-weight:700;color:#185ea8;background:#edf5ff;border:1px solid #bbd7f5;padding:3px 8px;border-radius:6px;}}
+    .src-badge{{font-size:10px;font-weight:600;padding:2px 7px;border-radius:4px;}}
+    .src-fm23{{color:#6b3fa0;background:#f3eeff;border:1px solid #d4b8f0;}}
+    .src-turetilmis{{color:#555;background:#f0f0f0;border:1px solid #ccc;}}
 
     @media(max-width:640px){{
       .cards-grid{{grid-template-columns:1fr;}}
@@ -558,8 +584,8 @@ def build_html(payload: dict) -> str:
   </div>
 
   <header>
-    <h1>{escape(payload['team'])} — Scout Programı</h1>
-    <p>Rol bazlı FM tarzı aday listesi · Attribute barları lig içi aday havuzuna göre normalize edilmiştir · Fiziksel yük olay verisinden türetilmiş tahmin aralığıdır</p>
+    <h1>FM Scout Programı</h1>
+    <p>691 Süper Lig oyuncusu rol kategorilerine ayrıldı · Her kategoride top 12 aday · {escape(payload['team'])} pozisyon ihtiyaçları baz alındı · FM2023 eşleşen oyuncularda gerçek 1-20 attribute barları</p>
   </header>
 
   <main>

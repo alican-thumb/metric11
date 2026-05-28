@@ -18,7 +18,7 @@ FIELD_ALIASES = {
     "potential_ability": ["pa", "potential_ability", "Potential Ability", "PotentialAbility", "potential", "Potential"],
     "market_value": ["value", "Value", "market_value", "market_value_eur"],
     "wage": ["wage", "Wage"],
-    "pace": ["pace", "Pace", "acceleration", "Acceleration"],
+    "pace": ["pace", "Pace"],
     "acceleration": ["acceleration", "Acceleration", "accel"],
     "stamina": ["stamina", "Stamina"],
     "work_rate": ["work_rate", "Work Rate", "workrate", "Workrate"],
@@ -26,10 +26,26 @@ FIELD_ALIASES = {
     "finishing": ["finishing", "Finishing"],
     "passing": ["passing", "Passing", "short_passing", "ShortPassing", "Short Passing"],
     "tackling": ["tackling", "Tackling", "standing_tackle", "StandingTackle"],
-    "positioning": ["positioning", "Positioning"],
-    "decisions": ["decisions", "Decisions"],
+    "positioning": ["positioning", "Positioning", "Off The Ball"],
+    "decisions": ["decisions", "Decisions", "Decision"],
     "technique": ["technique", "Technique"],
     "vision": ["vision", "Vision"],
+    # FM2023 extended attributes
+    "dribbling": ["dribbling", "Dribbling"],
+    "first_touch": ["first_touch", "First Touch"],
+    "heading": ["heading", "Heading"],
+    "long_shots": ["long_shots", "Long Shots"],
+    "crossing": ["crossing", "Crossing"],
+    "marking": ["marking", "Marking"],
+    "composure": ["composure", "Composure"],
+    "concentration": ["concentration", "Concentration"],
+    "anticipation": ["anticipation", "Anticipation"],
+    "flair": ["flair", "Flair"],
+    "strength": ["strength", "Strength"],
+    "agility": ["agility", "Agility"],
+    "balance": ["balance", "Balance"],
+    "jumping": ["jumping", "Jumping Reach"],
+    "natural_fitness": ["natural_fitness", "Natural Fitness"],
 }
 
 
@@ -99,9 +115,18 @@ def normalize_row(row: dict) -> dict:
     name = str(item.get("name") or "").strip()
     current_ability = to_float(item.get("current_ability"))
     potential_ability = to_float(item.get("potential_ability"))
-    physical_score = average_present([item.get("pace"), item.get("acceleration"), item.get("stamina"), item.get("work_rate")])
-    mental_score = average_present([item.get("teamwork"), item.get("positioning"), item.get("decisions"), item.get("vision")])
-    technical_score = average_present([item.get("finishing"), item.get("passing"), item.get("tackling"), item.get("technique")])
+    physical_score = average_present([
+        item.get("pace"), item.get("acceleration"), item.get("stamina"),
+        item.get("strength"), item.get("agility"), item.get("natural_fitness"),
+    ])
+    mental_score = average_present([
+        item.get("teamwork"), item.get("positioning"), item.get("decisions"),
+        item.get("vision"), item.get("anticipation"), item.get("concentration"), item.get("composure"),
+    ])
+    technical_score = average_present([
+        item.get("finishing"), item.get("passing"), item.get("tackling"),
+        item.get("technique"), item.get("dribbling"), item.get("first_touch"),
+    ])
 
     return {
         "name": name,
@@ -122,18 +147,13 @@ def normalize_row(row: dict) -> dict:
         "raw_attributes": {
             key: to_float(item.get(key))
             for key in (
-                "pace",
-                "acceleration",
-                "stamina",
-                "work_rate",
-                "teamwork",
-                "finishing",
-                "passing",
-                "tackling",
-                "positioning",
-                "decisions",
-                "technique",
-                "vision",
+                "pace", "acceleration", "stamina", "work_rate",
+                "teamwork", "finishing", "passing", "tackling",
+                "positioning", "decisions", "technique", "vision",
+                "dribbling", "first_touch", "heading", "long_shots",
+                "crossing", "marking", "composure", "concentration",
+                "anticipation", "flair", "strength", "agility",
+                "balance", "jumping", "natural_fitness",
             )
             if item.get(key) not in (None, "")
         },
