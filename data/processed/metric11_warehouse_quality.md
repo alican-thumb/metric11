@@ -50,12 +50,12 @@
 - {'role_label': 'Bek / çift yönlü koridor', 'candidate_name': 'YHOAN MANY ANDZOUANA', 'candidate_team': 'TÜMOSAN KONYASPOR', 'fit_score': 110.2, 'position_confidence': 'MEDIUM_DERIVED_ROLE'}
 - {'role_label': 'Bek / çift yönlü koridor', 'candidate_name': 'ROLAND SALLAI', 'candidate_team': 'GALATASARAY A.Ş.', 'fit_score': 101.9, 'position_confidence': 'MEDIUM_DERIVED_ROLE'}
 - {'role_label': 'Bek / çift yönlü koridor', 'candidate_name': 'RUAN PEREIRA DUARTE', 'candidate_team': 'CORENDON ALANYASPOR', 'fit_score': 100.9, 'position_confidence': 'MEDIUM_DERIVED_ROLE'}
-- {'role_label': 'Bek / çift yönlü koridor', 'candidate_name': 'WAGNER FABRICIO CARDOSO DE PINA', 'candidate_team': 'TRABZONSPOR A.Ş.', 'fit_score': 97.3, 'position_confidence': 'MEDIUM_EXTERNAL'}
-- {'role_label': 'Sol açık / çizgi kırıcı', 'candidate_name': 'YUNUS AKGÜN', 'candidate_team': 'GALATASARAY A.Ş.', 'fit_score': 115.39, 'position_confidence': 'MEDIUM_EXTERNAL'}
-- {'role_label': 'Sol açık / çizgi kırıcı', 'candidate_name': 'BARIŞ ALPER YILMAZ', 'candidate_team': 'GALATASARAY A.Ş.', 'fit_score': 110.15, 'position_confidence': 'MEDIUM_EXTERNAL'}
-- {'role_label': 'Sol açık / çizgi kırıcı', 'candidate_name': 'KAZEEM ADEREMI J. OLAIGBE', 'candidate_team': 'TRABZONSPOR A.Ş.', 'fit_score': 107.33, 'position_confidence': 'MEDIUM_EXTERNAL'}
-- {'role_label': 'Sol açık / çizgi kırıcı', 'candidate_name': 'GÖKTAN GÜRPÜZ', 'candidate_team': 'GENÇLERBİRLİĞİ', 'fit_score': 106.0, 'position_confidence': 'MEDIUM_EXTERNAL'}
-- {'role_label': 'Sol açık / çizgi kırıcı', 'candidate_name': 'DORGELES NENE', 'candidate_team': 'FENERBAHÇE A.Ş.', 'fit_score': 105.52, 'position_confidence': 'MEDIUM_EXTERNAL'}
+- {'role_label': 'Bek / çift yönlü koridor', 'candidate_name': 'WAGNER FABRICIO CARDOSO DE PINA', 'candidate_team': 'TRABZONSPOR A.Ş.', 'fit_score': 99.03, 'position_confidence': 'MEDIUM_EXTERNAL'}
+- {'role_label': 'Sol açık / çizgi kırıcı', 'candidate_name': 'YUNUS AKGÜN', 'candidate_team': 'GALATASARAY A.Ş.', 'fit_score': 116.95, 'position_confidence': 'MEDIUM_EXTERNAL'}
+- {'role_label': 'Sol açık / çizgi kırıcı', 'candidate_name': 'BARIŞ ALPER YILMAZ', 'candidate_team': 'GALATASARAY A.Ş.', 'fit_score': 111.7, 'position_confidence': 'MEDIUM_EXTERNAL'}
+- {'role_label': 'Sol açık / çizgi kırıcı', 'candidate_name': 'KAZEEM ADEREMI J. OLAIGBE', 'candidate_team': 'TRABZONSPOR A.Ş.', 'fit_score': 109.06, 'position_confidence': 'MEDIUM_EXTERNAL'}
+- {'role_label': 'Sol açık / çizgi kırıcı', 'candidate_name': 'GÖKTAN GÜRPÜZ', 'candidate_team': 'GENÇLERBİRLİĞİ', 'fit_score': 107.73, 'position_confidence': 'MEDIUM_EXTERNAL'}
+- {'role_label': 'Sol açık / çizgi kırıcı', 'candidate_name': 'DORGELES NENE', 'candidate_team': 'FENERBAHÇE A.Ş.', 'fit_score': 107.33, 'position_confidence': 'MEDIUM_EXTERNAL'}
 
 ### card_heavy_referees
 - {'referee_name': 'FATİH TOKAİL', 'cards_per_match': 9.0, 'tempo_label': 'KARTLI'}
