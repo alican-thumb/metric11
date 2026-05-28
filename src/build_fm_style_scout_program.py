@@ -300,6 +300,30 @@ def _archetype_badge(archetype: str) -> str:
     )
 
 
+_POS_ATTRS = {
+    "FWD": ["finishing", "technique", "positioning", "decisions", "pace", "stamina"],
+    "MID": ["passing", "decisions", "technique", "vision", "work_rate", "stamina"],
+    "DEF": ["tackling", "decisions", "positioning", "stamina", "pace", "work_rate"],
+    "GK":  ["decisions", "positioning", "stamina", "work_rate", "technique", "teamwork"],
+}
+_ATTR_LABELS = {
+    "finishing": "Bitiricilik", "technique": "Teknik", "positioning": "Pozisyon",
+    "decisions": "Karar Verme", "pace": "Hız", "stamina": "Kondisyon",
+    "passing": "Pas", "vision": "Vizyon", "work_rate": "Çalışma Temposu",
+    "tackling": "Müdahale", "teamwork": "Takım Oyunu", "acceleration": "İvme",
+}
+
+
+def _ca_color(ca: int) -> str:
+    if ca >= 125:
+        return "#137a4b"
+    if ca >= 112:
+        return "#0d9488"
+    if ca >= 100:
+        return "#b76b00"
+    return "#adb5bd"
+
+
 def _player_card(player: dict, active_field: str, maxes: dict) -> str:
     name = escape(player.get("name") or "")
     team = escape(player.get("team") or "")
@@ -311,25 +335,61 @@ def _player_card(player: dict, active_field: str, maxes: dict) -> str:
     load_lo = player.get("estimated_physical_load_km_min", 0)
     load_hi = player.get("estimated_physical_load_km_max", 0)
     archetype = player.get("archetype", "Rotasyon fırsatı")
-    active_pct = _norm(player.get(active_field) or 0, maxes[active_field])
 
-    bars = ""
-    for field, label in _SCORE_FIELDS:
-        pct = _norm(player.get(field) or 0, maxes[field])
-        clr = _bar_color(pct)
-        is_active = "bar-active" if field == active_field else ""
-        bars += (
-            f'<div class="attr-row {is_active}">'
-            f'<span class="attr-lbl">{escape(label)}</span>'
-            f'<div class="bar-track"><div class="bar-fill" style="width:{pct}%;background:{clr}"></div></div>'
-            f'<span class="attr-val" style="color:{clr}">{pct}</span>'
-            f'</div>'
+    attr_sig = player.get("attribute_signal") or {}
+    raw = attr_sig.get("raw_attributes") or {}
+    ca = attr_sig.get("current_ability")
+    pa = attr_sig.get("potential_ability")
+    pos_grp = (player.get("tm_position_group") or "MID").upper()
+
+    # --- attribute barları ---
+    if raw:
+        attr_keys = _POS_ATTRS.get(pos_grp, _POS_ATTRS["MID"])
+        bars = ""
+        for key in attr_keys:
+            val = raw.get(key)
+            if val is None:
+                continue
+            val_int = int(round(val))
+            pct = round(val / 20 * 100)
+            clr = _attr_color(val_int)
+            bars += (
+                f'<div class="attr-row bar-active">'
+                f'<span class="attr-lbl">{escape(_ATTR_LABELS.get(key, key))}</span>'
+                f'<div class="bar-track">'
+                f'<div class="bar-fill" style="width:{pct}%;background:{clr}"></div>'
+                f'</div>'
+                f'<span class="attr-val" style="color:{clr}">{val_int}</span>'
+                f'</div>'
+            )
+        score_label = str(int(ca)) if ca else "?"
+        ring_color = _ca_color(int(ca) if ca else 90)
+        pa_html = (
+            f'<span class="pa-chip">PA {int(pa)}</span>'
+            if pa and pa > (ca or 0) + 2 else ""
         )
+    else:
+        # fallback: proxy skorlar
+        active_pct = _norm(player.get(active_field) or 0, maxes[active_field])
+        bars = ""
+        for field, label in _SCORE_FIELDS:
+            pct = _norm(player.get(field) or 0, maxes[field])
+            clr = _bar_color(pct)
+            is_active = "bar-active" if field == active_field else ""
+            bars += (
+                f'<div class="attr-row {is_active}">'
+                f'<span class="attr-lbl">{escape(label)}</span>'
+                f'<div class="bar-track"><div class="bar-fill" style="width:{pct}%;background:{clr}"></div></div>'
+                f'<span class="attr-val" style="color:{clr}">{pct}</span>'
+                f'</div>'
+            )
+        score_label = str(active_pct)
+        ring_color = _bar_color(active_pct)
+        pa_html = ""
 
     contract_html = _contract_badge(player)
     value_html = _value_chip(player)
     arc_html = _archetype_badge(archetype)
-    ring_color = _bar_color(active_pct)
 
     return f"""<div class="pcard" style="--ring:{ring_color}">
   <div class="pcard-top">
@@ -337,9 +397,9 @@ def _player_card(player: dict, active_field: str, maxes: dict) -> str:
       <div class="pcard-name">{name}</div>
       <div class="pcard-meta">{team} · {age}y · {nat}</div>
     </div>
-    <div class="pcard-score" style="color:{ring_color};border-color:{ring_color}22;background:{ring_color}11">{active_pct}</div>
+    <div class="pcard-score" style="color:{ring_color};border-color:{ring_color}33;background:{ring_color}12">{score_label}</div>
   </div>
-  {arc_html}
+  <div class="arc-row">{arc_html}{pa_html}</div>
   <div class="attrs">{bars}</div>
   <div class="pcard-stats">
     <span>⚽ <strong>{goals}</strong></span>
@@ -349,6 +409,16 @@ def _player_card(player: dict, active_field: str, maxes: dict) -> str:
   </div>
   <div class="pcard-footer">{contract_html}{value_html}</div>
 </div>"""
+
+
+def _attr_color(val: int) -> str:
+    if val >= 16:
+        return "#137a4b"
+    if val >= 13:
+        return "#0d9488"
+    if val >= 10:
+        return "#b76b00"
+    return "#adb5bd"
 
 
 def build_html(payload: dict) -> str:
@@ -466,6 +536,8 @@ def build_html(payload: dict) -> str:
     .val-chip{{font-size:11px;font-weight:700;color:var(--green);background:#edf9f3;border:1px solid #b9dfcd;padding:3px 8px;border-radius:6px;}}
     .val-link{{color:inherit;text-decoration:none;}}
     .val-link:hover{{text-decoration:underline;}}
+    .arc-row{{display:flex;align-items:center;gap:6px;flex-wrap:wrap;}}
+    .pa-chip{{font-size:11px;font-weight:700;color:#185ea8;background:#edf5ff;border:1px solid #bbd7f5;padding:3px 8px;border-radius:6px;}}
 
     @media(max-width:640px){{
       .cards-grid{{grid-template-columns:1fr;}}

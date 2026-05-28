@@ -138,6 +138,7 @@ def summarize_attribute(attribute: dict | None) -> dict:
         "mental_score": attribute.get("mental_score"),
         "technical_score": attribute.get("technical_score"),
         "role_fit_score": role_fit,
+        "raw_attributes": attribute.get("raw_attributes"),
     }
 
 
