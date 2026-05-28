@@ -203,6 +203,15 @@ Parse edilen alanlar:
 - 2025/26 sezonu bitti — tüm maç önü dashboard'larına otomatik "sezon arası" banner eklendi; 2026/27 fikstürü açılınca banner JS tarih tespiti ile kaybolacak.
 - 2026/27 Süper Lig kadrosu güncellendi: küme düşenler (Karagümrük, Antalyaspor, Kayserispor) çıkarıldı; yükselen takımlar (Çorum FK, Erzurumspor FK, Amed SFK) TM ID'leriyle sisteme eklendi. 4 dosya güncellendi: `generate_preview_batch.py`, `build_dashboard.py`, `transfermarkt_super_lig_clubs.json`, `build_transfer_season_context.py`.
 
+## 2026-05-28 Yükselen Takım TM Verisi (Session 10)
+
+- Çorum FK (37951), Erzurumspor FK (39722), Amed SFK (12382) için Transfermarkt 2025 sezonu kadrosu toplandı: 28 + 30 + 25 = 83 oyuncu, toplam ~€29M piyasa değeri.
+- Not: TM 2026/27 sezonu kadrosu henüz boş (sezon açılmadı); 2025 (1. Lig) kadrosu alındı.
+- Ham HTML `data/raw/transfermarkt/promoted_clubs_2026_2027/` altına kaydedildi.
+- `transfermarkt_super_lig_squads_2025_2026.json` 18 → 21 kulübe çıktı (küme düşen 3 + yükselen 3).
+- `enrich_players_with_transfermarkt.py` yeniden çalıştırıldı: operasyonel eşleme %74.0'a yükseldi.
+- Transfer tavsiye raporu ve scout blueprint'leri yeniden üretildi; 3 yeni takım template rol planları (GK_STABILITY, CB_DOMINANT, ST_SCORER, DM_SECURITY) ve aday listeleriyle dahil edildi.
+
 ## 2026-05-27 Tema Genişleme & Ağ Büyütme (Session 9)
 
 ### Transfer Sezonu Bağlam Sayfası Tema Dönüşümü (build_transfer_season_context.py)
