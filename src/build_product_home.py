@@ -37,13 +37,11 @@ def build_html() -> str:
     _pv_metrics = load_json(PROCESSED_DIR / "prediction_validation_report_2025_2026.json").get("metrics", {})
     league_accuracy = round((_pv_metrics.get("unique_league_fixtures_raw_baseline", {}).get("accuracy") or league_summary.get("accuracy") or 0) * 100)
     league_market = load_json(PROCESSED_DIR / "league_market_value_audit_2025_2026.json").get("summary", {})
-    enriched_scout = load_json(PROCESSED_DIR / "league_scouting_enriched_2025_2026.json").get("summary", {})
     fm_scout = load_json(PROCESSED_DIR / "fm_style_scout_program_2025_2026.json").get("summary", {})
     position_matrix = load_json(PROCESSED_DIR / "position_scout_matrix_2025_2026.json").get("summary", {})
     big_match_report = load_json(PROCESSED_DIR / "big_match_report_2025_2026.json").get("summary", {})
     league_intelligence = load_json(PROCESSED_DIR / "league_intelligence_2025_2026.json").get("summary", {})
     team_blueprints = load_json(PROCESSED_DIR / "team_scout_blueprints_2025_2026.json").get("summary", {})
-    scout_quality = load_json(PROCESSED_DIR / "scout_quality_report_2025_2026.json").get("summary", {})
     data_quality = load_json(PROCESSED_DIR / "data_quality_scorecard_2025_2026.json")
     warehouse_quality = load_json(PROCESSED_DIR / "metric11_warehouse_quality.json")
     data_catalog = load_json(PROCESSED_DIR / "data_catalog_2025_2026.json").get("coverage", {})
@@ -82,12 +80,6 @@ def build_html() -> str:
             "Derbi ve büyük maçlarda taraf tahmini, gerçek sonuç, beraberlik riski, kart sinyali ve gol adayı kalitesini ayrı kontrol eder.",
             "big_match_report_2025_2026.html",
             f"{big_match_report.get('high_or_medium_risk_count', 0)} riskli maç",
-        ),
-        panel_card(
-            "Süper Lig Scout Paneli",
-            "TFF maç performansından takım güçleri, golcüler, scout kısa listesi ve hakem profilleri.",
-            "league_scouting_2025_2026_normalized_dashboard.html",
-            "18 takım",
         ),
         panel_card(
             "Süper Lig İstihbarat Raporu",
@@ -130,12 +122,6 @@ def build_html() -> str:
             "18 takım için yalnızca pozisyonu dış profille eşleşmiş rol önerileri; serbest transfer ve genç yetenek izleme listeleri.",
             "transfer_recommendation_report_2025_2026.html",
             f"{transfer_report.get('total_candidate_suggestions', 0)} öneri",
-        ),
-        panel_card(
-            "Zenginleştirilmiş Scout Paneli",
-            "Lig oyuncu havuzuna yaş, sözleşme riski, fırsat skoru, resale ve opsiyonel FM/FIFA tarzı attribute sinyali eklendi.",
-            "league_scouting_enriched_2025_2026_dashboard.html",
-            f"{enriched_scout.get('profiled_players', 0)} profilli oyuncu",
         ),
         panel_card(
             "Pozisyon Bazlı Scout Matrisi",
@@ -329,7 +315,6 @@ def build_html() -> str:
       {metric("Transfer önerisi", transfer_report.get('total_candidate_suggestions', 0))}
       {metric("Serbest kalacak oyuncu", transfer_season.get('summary', {}).get('free_agents_count', 0))}
       {metric("Eksik oyuncu sinyali", availability.get("auto_suspension_entries", 0) + availability.get("manual_entries", 0))}
-      {metric("Scout profili", enriched_scout.get("profiled_players", 0))}
     </div>
     <div class="section-title"><h2>Tüm araçlar</h2></div>
     <div class="cards">{module_cards}</div>
