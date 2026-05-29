@@ -18,6 +18,7 @@ DEFAULT_COMMANDS = [
     ["python", "-m", "src.analyze_league_scouting", "--output-prefix", "league_scouting_2025_2026_normalized"],
     ["python", "-m", "src.analyze_team_needs"],
     ["python", "-m", "src.analyze_enriched_scouting"],
+    ["python", "-m", "src.generate_fm_attributes_from_stats"],
     ["python", "-m", "src.build_fm_style_scout_program"],
     ["python", "-m", "src.build_position_scout_matrix"],
     ["python", "-m", "src.build_league_intelligence_report"],

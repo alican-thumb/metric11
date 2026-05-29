@@ -10,6 +10,8 @@ from datetime import datetime, timezone
 from html import escape
 from pathlib import Path
 
+from datetime import date
+
 from src.config import (
     PROCESSED_DIR,
     SEASON,
@@ -31,6 +33,19 @@ STATUS_META: dict[str, tuple[str, str, str]] = {
 
 WINDOW_OPEN  = "1 Haziran 2026"
 WINDOW_CLOSE = "31 Ağustos 2026"
+_WINDOW_OPEN_DATE  = date(2026, 6, 1)
+_WINDOW_CLOSE_DATE = date(2026, 9, 1)
+
+
+def _window_badge() -> str:
+    today = date.today()
+    if today < _WINDOW_OPEN_DATE:
+        days = (_WINDOW_OPEN_DATE - today).days
+        label = f"{days} gün sonra açılıyor" if days > 1 else "Yarın açılıyor"
+        return f'<span style="background:#fef3c7;color:#92400e;border:1px solid #fcd34d;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;">{label}</span>'
+    if today < _WINDOW_CLOSE_DATE:
+        return '<span style="background:#dcfce7;color:#14532d;border:1px solid #86efac;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;">● Pencere Açık</span>'
+    return '<span style="background:#f1f5f9;color:#475569;border:1px solid #cbd5e1;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;">Pencere Kapandı</span>'
 
 
 def _mv(eur: int | None) -> str:
@@ -257,7 +272,7 @@ def build_html(signals: list[dict], summary: dict) -> str:
   </nav>
 </div>
 <div class="header">
-  <h1>Transfer Takip — {TRANSFER_WATCH_SEASON_LABEL}</h1>
+  <h1>Transfer Takip — {TRANSFER_WATCH_SEASON_LABEL} {_window_badge()}</h1>
   <div class="sub">Yaz penceresi: {WINDOW_OPEN} – {WINDOW_CLOSE} · {summary['total_signals']} sinyal · Güncelleme: {now}</div>
 </div>
 <div class="stat-bar">
