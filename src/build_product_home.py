@@ -37,7 +37,6 @@ def build_html() -> str:
     _pv_metrics = load_json(PROCESSED_DIR / "prediction_validation_report_2025_2026.json").get("metrics", {})
     league_accuracy = round((_pv_metrics.get("unique_league_fixtures_raw_baseline", {}).get("accuracy") or league_summary.get("accuracy") or 0) * 100)
     league_market = load_json(PROCESSED_DIR / "league_market_value_audit_2025_2026.json").get("summary", {})
-    team_needs = load_json(PROCESSED_DIR / "besiktas_team_needs_2025_2026.json").get("summary", {})
     enriched_scout = load_json(PROCESSED_DIR / "league_scouting_enriched_2025_2026.json").get("summary", {})
     fm_scout = load_json(PROCESSED_DIR / "fm_style_scout_program_2025_2026.json").get("summary", {})
     position_matrix = load_json(PROCESSED_DIR / "position_scout_matrix_2025_2026.json").get("summary", {})
@@ -143,12 +142,6 @@ def build_html() -> str:
             "Sol açık, santrfor, 8 numara, 6 numara, bek, stoper ve kaleci rolleri için adayları takım ihtiyacı ve ekonomik fırsatla eşleştirir.",
             "position_scout_matrix_2025_2026.html",
             f"{position_matrix.get('roles', 0)} rol",
-        ),
-        panel_card(
-            "Beşiktaş Takım İhtiyaç Paneli",
-            "Kadro yaşı, sözleşme riski, genç varlıklar, gol yükü ve ihtiyaç sinyalleri.",
-            "besiktas_team_needs_2025_2026_dashboard.html",
-            f"{team_needs.get('players', 0)} oyuncu",
         ),
         panel_card(
             "Veri Kataloğu",

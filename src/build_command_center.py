@@ -28,7 +28,6 @@ def build_payload() -> dict:
     league_market_audit = load_json(PROCESSED_DIR / "league_market_value_audit_2025_2026.json")
     fm_scout = load_json(PROCESSED_DIR / "fm_style_scout_program_2025_2026.json")
     position_matrix = load_json(PROCESSED_DIR / "position_scout_matrix_2025_2026.json")
-    team_needs = load_json(PROCESSED_DIR / "besiktas_team_needs_2025_2026.json")
     availability = load_json(PROCESSED_DIR / "player_availability_besiktas_2025_2026.json")
     data_catalog = load_json(PROCESSED_DIR / "data_catalog_2025_2026.json")
     big_match_report = load_json(PROCESSED_DIR / "big_match_report_2025_2026.json")
@@ -79,7 +78,6 @@ def build_payload() -> dict:
         "segment_backtest": segment_backtest,
         "fm_scout": fm_scout,
         "position_matrix": position_matrix,
-        "team_needs": team_needs,
         "availability": availability,
         "data_coverage": data_catalog.get("coverage", {}),
         "big_match_summary": big_match_report.get("summary", {}),
@@ -117,7 +115,6 @@ def build_html(payload: dict) -> str:
     match_backtest_summary = payload["match_backtest_summary"]
     fm_summary = payload["fm_scout"].get("summary", {})
     position_summary = payload["position_matrix"].get("summary", {})
-    team_summary = payload["team_needs"].get("summary", {})
     availability_summary = payload["availability"].get("summary", {})
     big_match_summary = payload["big_match_summary"]
     league_intelligence_summary = payload["league_intelligence_summary"]
@@ -135,11 +132,6 @@ def build_html(payload: dict) -> str:
 
     recent_previews = "".join(preview_row(item) for item in payload["recent_previews"])
     protected_preview_rows = "".join(protected_preview_row(item) for item in payload["protected_previews"])
-    needs = "".join(
-        f"<tr><td><span class=\"pill {priority_class(item['priority'])}\">{escape(item['priority'])}</span></td>"
-        f"<td>{escape(item['need'])}</td><td>{escape(item['reason'])}</td></tr>"
-        for item in payload["team_needs"].get("needs", [])[:6]
-    )
     scorer_rows = candidate_rows(payload["fm_scout"].get("role_buckets", {}).get("immediate_scorer", [])[:6])
     engine_rows = candidate_rows(payload["fm_scout"].get("role_buckets", {}).get("physical_engine", [])[:6])
     resale_rows = candidate_rows(payload["fm_scout"].get("role_buckets", {}).get("resale_value", [])[:6])
@@ -246,7 +238,6 @@ def build_html(payload: dict) -> str:
       <a href="api_football_super_lig_deep_2024_analysis.html">Dış Derin Veri</a>
       <a href="source_watchlist_2025_2026.html">Kaynak Radarı</a>
       <a href="player_alias_quality_2025_2026.html">Alias Kalitesi</a>
-      <a href="besiktas_team_needs_2025_2026_dashboard.html">Takım İhtiyacı</a>
       <a href="data_catalog_2025_2026.html">Veri Kataloğu</a>
     </div>
     <div class="metrics">
@@ -289,16 +280,6 @@ def build_html(payload: dict) -> str:
       <h2>Son Beşiktaş Maç Önü Raporları</h2>
       <table><thead><tr><th>Maç</th><th>Tarih</th><th>Kazanma Olasılığı</th><th>Ekran Tahmini</th><th>Skor</th><th>Gol Beklentisi</th><th>Kart</th><th>Eksik</th><th>Gol Adayı İlk 3</th></tr></thead><tbody>{recent_previews}</tbody></table>
     </section>
-    <div class="grid">
-      <section><h2>Takım İhtiyaçları</h2><table><thead><tr><th>Öncelik</th><th>İhtiyaç</th><th>Gerekçe</th></tr></thead><tbody>{needs}</tbody></table></section>
-      <section><h2>Kadro Gerçekliği</h2><table><tbody>
-        <tr><th>Oyuncu profili</th><td>{team_summary.get("players", 0)}</td></tr>
-        <tr><th>Transfermarkt eşleşme</th><td>{team_summary.get("transfermarkt_matched_players", 0)}</td></tr>
-        <tr><th>Ortalama yaş</th><td>{team_summary.get("avg_age")}</td></tr>
-        <tr><th>13 ayda bitecek sözleşme</th><td>{team_summary.get("contract_expiring_13_months")}</td></tr>
-        <tr><th>Toplam piyasa değeri</th><td>€{team_summary.get("market_value_total_eur", 0):,}</td></tr>
-      </tbody></table></section>
-    </div>
     <div class="grid">
       <section><h2>FM Scout: Hemen Skor Katkısı</h2>{candidate_table(scorer_rows)}</section>
       <section><h2>FM Scout: Fizik Motoru</h2>{candidate_table(engine_rows)}</section>
