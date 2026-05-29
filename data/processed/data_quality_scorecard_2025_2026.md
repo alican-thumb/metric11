@@ -10,7 +10,7 @@
 | coverage | season_match_rows | 306 | ✓ | Düşük | Sezon kapsamı 306 maç civarında kalmalı; düşüş olursa collector/parser kontrol edilmeli. |
 | coverage | matches_missing_referee | 0 | ✓ | Düşük | Hakem eksikleri kart ve büyük maç risk modelini doğrudan zayıflatır. |
 | player_profiles | players_missing_age_profile | missing=0, total=691, missing_pct=0.0 | ✓ | Düşük | Yaş/profil kapsamı scout ve kontrat fırsatı skorunun temel girdisi. |
-| player_profiles | tff_transfermarkt_in_scope_match_rate_pct | matched=498, in_scope=626, pct=79.6 | ⚠ İzle | Yüksek | Snapshot kapsamındaki eşleşmeyen oyuncular alias/transfer inceleme kuyruğunda doğrulanmadan piyasa değeri veya pozisyon olarak kullanılmamalı. |
+| player_profiles | tff_transfermarkt_in_scope_match_rate_pct | matched=410, in_scope=520, pct=78.8 | ⚠ İzle | Yüksek | Snapshot kapsamındaki eşleşmeyen oyuncular alias/transfer inceleme kuyruğunda doğrulanmadan piyasa değeri veya pozisyon olarak kullanılmamalı. |
 | player_profiles | manual_alias_pending_network_verification | 13 | ⚠ İzle | Yüksek | Operasyonda kullanılan manuel pozisyon ve piyasa değeri eşlemeleri Transfermarkt profil bağlantısıyla doğrulanana kadar teyit bekliyor olarak gösterilmeli. |
 | scouting | unmatched_players_blocking_scout_review | 0 | ✓ | Düşük | Scout kuyruğunu bloke eden oyuncular için aynı kulüp Transfermarkt adı veya resmi profil doğrulanmalı; doğrulanmadan rol önerisi yayınlanmamalı. |
 | model | besiktas_display_prediction_accuracy_pct | correct=16, total=29, pct=55.2 | ⚠ İzle | Yüksek | Ekran ayarı aynı sezonda geliştirildi; yeni sezon veya ayrılmış sezonda sabit kurallarla doğrulanmadan genel başarı iddiası yapılmamalı. |
@@ -44,15 +44,15 @@
 ## Gol Adayı Segmentleri
 
 - primary+impact_sub: 134 satır, 19 isabet satırı, %14.2
-- primary: 106 satır, 12 isabet satırı, %11.3
-- impact_sub: 26 satır, 4 isabet satırı, %15.4
-- primary+set_piece_defender: 24 satır, 0 isabet satırı, %0.0
+- primary: 103 satır, 11 isabet satırı, %10.7
+- impact_sub: 28 satır, 4 isabet satırı, %14.3
+- primary+set_piece_defender: 25 satır, 0 isabet satırı, %0.0
 - unknown: 8 satır, 2 isabet satırı, %25.0
 
 ## Scout Pozisyon Güveni
 
-- MEDIUM_DERIVED_ROLE: 245
-- MEDIUM_EXTERNAL: 89
+- MEDIUM_DERIVED_ROLE: 242
+- MEDIUM_EXTERNAL: 92
 - HIGH_EXTERNAL_PROFILE: 36
 
 ## Tablo Kapsamı

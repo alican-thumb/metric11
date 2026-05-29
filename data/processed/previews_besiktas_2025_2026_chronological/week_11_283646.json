@@ -575,7 +575,7 @@
       {
         "player_id": "2820579",
         "name": "DAVID JURASEK",
-        "goal_threat_score": 5.19,
+        "goal_threat_score": 4.05,
         "candidate_type": "primary+impact_sub",
         "recent_starts": 5,
         "season_goals_before_match": 1,
@@ -587,7 +587,12 @@
         "penalty_goals_before_match": 0,
         "recent_bench": 3,
         "cards_before_match": 0,
-        "recent_cards": 0
+        "recent_cards": 0,
+        "quality_adjustment": {
+          "multiplier": 0.78,
+          "reason": "Top 5 sıralama etkisini düşür veya aday tipini yeniden kontrol et.",
+          "source": "goal_candidate_segment_backtest"
+        }
       },
       {
         "player_id": "2217597",
@@ -1030,33 +1035,33 @@
         "commercial_note": "Al-sat değeri yüksek aday; doğru maaş/bonservis bandında ekonomik upside sağlar."
       },
       {
-        "player_name": "BARIŞ JAKOB KALAYCI",
-        "current_team": "MISIRLI.COM.TR FATİH KARAGÜMRÜK",
+        "player_name": "ANTHONY TİTE EMMANUEL MUSABA",
+        "current_team": "SAMSUNSPOR A.Ş.",
         "target_role": "Sol açık / çizgi kırıcı",
         "role_key": "LW_CREATOR",
-        "role_fit_score": 98.73,
+        "role_fit_score": 94.55,
         "position_confidence": "MEDIUM_EXTERNAL",
-        "age": 20,
-        "economy_score": 32.0,
+        "age": 25,
+        "economy_score": 12.0,
         "current_expected_goals_for": 1.18,
         "current_expected_goals_against": 1.5,
-        "simulated_expected_goals_for": 1.36,
-        "simulated_expected_goals_against": 1.49,
-        "xg_for_delta": 0.18,
-        "xg_against_delta": 0.01,
-        "goal_edge_delta": 0.19,
-        "simulated_target_win_probability": 0.346,
-        "simulated_draw_probability": 0.25,
-        "simulated_opponent_win_probability": 0.404,
+        "simulated_expected_goals_for": 1.5,
+        "simulated_expected_goals_against": 1.47,
+        "xg_for_delta": 0.32,
+        "xg_against_delta": 0.03,
+        "goal_edge_delta": 0.35,
+        "simulated_target_win_probability": 0.384,
+        "simulated_draw_probability": 0.244,
+        "simulated_opponent_win_probability": 0.371,
         "simulated_scoreline": {
           "target_goals": 1,
           "opponent_goals": 1,
           "score": "1-1",
-          "probability": 0.117
+          "probability": 0.113
         },
-        "impact_label": "LOW_POSITIVE",
-        "why": "Rol okuması: Left Winger (MEDIUM_EXTERNAL). İlk 11 15, gol 1, kart 4. Tahmini yük 9.8-11.3 km. Tempo ve tekrar koşu ihtiyacı olan rolde fiziksel yük proxy'si öne çıkarıldı. Sözleşme fırsatı HIGH seviyesinde. Genç değer/resale sinyali güçlü.",
-        "commercial_note": "Al-sat değeri yüksek aday; doğru maaş/bonservis bandında ekonomik upside sağlar."
+        "impact_label": "MEDIUM_IMPACT",
+        "why": "Rol okuması: Left Winger (MEDIUM_EXTERNAL). İlk 11 24, gol 5, kart 4. Tahmini yük 10.0-11.5 km. Tempo ve tekrar koşu ihtiyacı olan rolde fiziksel yük proxy'si öne çıkarıldı.",
+        "commercial_note": "Sportif katkı ve maliyet dengesi ayrıca piyasa değeriyle doğrulanmalı."
       }
     ]
   },
