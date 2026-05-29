@@ -1,6 +1,6 @@
 # Erken Haber Kaynak Performansı
 
-- Transfer sinyali: 26
+- Transfer sinyali: 28
 - Resmi olaya dönüşen transfer: 3
 - Yayın zamanı bulunan resmi teyit: 1/3
 - İlk görülme zamanı bulunan resmi teyit: 3/3
@@ -8,11 +8,11 @@
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 0
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 125
+- Defterde korunan ilk iddia gözlemi: 129
 
 ## Kanal Kapsamı
 
-- Google News: 161 haber, 30/30 başarılı sorgu.
+- Google News: 169 haber, 30/30 başarılı sorgu.
 - Telegram: 6 mesaj, 8/8 erişilebilir kanal.
 - X: durum=MISSING_CREDENTIALS, gönderi=0, yapılandırılmış hesap=45.
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 122 | 18 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Google News / medya | 126 | 18 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -54,9 +54,9 @@
 | Beşiktaş Haberleri | SECONDARY | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Diken | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Yağız Sabuncuoğlu | ATTRIBUTED_MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
-| Takvim | MEDIA | 19 | 2 | 0 | — | — | — | — | OBSERVING |
+| Takvim | MEDIA | 20 | 2 | 0 | — | — | — | — | OBSERVING |
+| Fotomaç | MEDIA | 8 | 2 | 0 | — | — | — | — | OBSERVING |
 | Aksam Spor | MEDIA | 6 | 0 | 0 | — | — | — | — | OBSERVING |
-| Fotomaç | MEDIA | 6 | 2 | 0 | — | — | — | — | OBSERVING |
 | NTVSpor | MEDIA | 5 | 0 | 0 | — | — | — | — | OBSERVING |
 | FOTOMAÇ | MEDIA | 3 | 1 | 0 | — | — | — | — | OBSERVING |
 | Haber 7 | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
@@ -70,6 +70,7 @@
 | Halk TV | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Nefes Gazetesi | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Turkmenportal.com | MEDIA | 2 | 1 | 0 | — | — | — | — | OBSERVING |
+| Yeniçağ Gazetesi | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Ajansspor | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Anadolu Ajansı | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Fotospor | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
@@ -86,7 +87,6 @@
 | Transfermarkt | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Türkiye Gazetesi | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Yeni Asır | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
-| Yeniçağ Gazetesi | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | politikam.com | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | @EkremKonur | SECONDARY | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
 | @FBhaberleri | SECONDARY | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
