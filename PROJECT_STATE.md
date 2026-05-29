@@ -1,6 +1,6 @@
 # Futbol İstihbarat Platformu - Proje Durumu
 
-Son güncelleme: 2026-05-26 (session 7)
+Son güncelleme: 2026-05-29 (session 8)
 
 ## Amaç
 
@@ -1620,3 +1620,11 @@ Bir sonraki oturumda önce `PROJECT_STATE.md` okunmalı. Ardından öncelik:
 - 7 inline-nav dosyasına `preview_nav_label()` import edildi: `build_news_intelligence_report.py`, `build_all_teams_preview_dashboard.py`, `build_transfer_recommendation_report.py`, `build_transfer_tracker.py`, `build_command_center.py`, `build_dashboard.py`, `build_league_intelligence_report.py`.
 - Tüm site (54 HTML, 18 takım dashboard dahil) rebuild edildi; her sayfada nav "Arşiv" etiketiyle tutarlı.
 - Command center header "Beşiktaş maç önü raporları" → "Süper Lig tahmin kontrolü, gol adayı performansı, transfer radar ve scout kararları" olarak güncellendi.
+
+## 2026-05-29 FM Scout Multi-Team + Global Havuz + Scout Sayfaları (Session 8)
+
+- `import_player_attribute_dataset.py`: `_pos_*` FM2023 pozisyon sütun alanları eklendi (GK, DL, DC, DR, WBL, WBR, DM, ML, MC, MR, AML, AMC, AMR); `_derive_position_group()` fonksiyonu eklendi; FM2023 normalize verisi yeniden üretildi — 8452 oyuncu, 4 pozisyon grubu (FWD/MID/DEF/GK), hiç None yok.
+- `build_fm_style_scout_program.py`: Beşiktaş'a özgü bağımlılık kaldırıldı; `--needs` argümanı kaldırıldı. 691 SL oyuncusu JS tarafında takım filtresi + 5 rol bucket seçimi ile render edilir (top 24). 2038 FM23 global aday (CA≥130, Türk SL takımları hariç) pozisyon seçiciyle ayrı modda gösterilir. Kaynak badge: FM23 (mor), Türetilmiş (gri), Global (turuncu).
+- `build_position_scout_matrix.py`: `all_candidates` → `sl_candidates` güncellendi; Beşiktaş'a özgü ROLE_REQUIREMENTS `reason` alanları lig geneli hale getirildi; `--needs` ve `team_need_boost` bağımlılığı kaldırıldı; takım dropdown JS filtresi eklendi; her satırda `data-team` attribute ile seçilen takım oyuncuları gizleniyor; 18 takım, 7 rol, 140 rol-aday eşleşmesi.
+- Scheduled routine: 1 Haziran 2026 06:00 UTC — TM 2026/27 kadro çekme rutini doğrulandı (trig_01A7S3rVBjvWfi3X61XkAtck).
+- `transfer_recommendation_report` ve `enriched_scout_dashboard` zaten tüm 18 takımı kapsıyor; değişiklik gerekmedi.

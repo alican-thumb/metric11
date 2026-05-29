@@ -14,7 +14,7 @@ ROLE_REQUIREMENTS = {
         "position_group": "FWD",
         "verified_positions": ["Left Winger", "Right Winger", "Attacking Midfield"],
         "need_tags": ["kanat", "hücum", "yaratıcılık", "sol"],
-        "reason": "Beşiktaş için kanat üretimi ve açık alan tehdidi aranacak rol.",
+        "reason": "Kanat üretimi ve açık alan tehdidi için süper lig aday havuzu.",
     },
     "ST_SCORER": {
         "label": "Santrfor / skor yükü",
@@ -64,13 +64,11 @@ ROLE_REQUIREMENTS = {
 def main() -> None:
     parser = argparse.ArgumentParser(description="Pozisyon bazlı scout matrisi ve takım ihtiyacı eşleşmesi üretir.")
     parser.add_argument("--scout", default=str(PROCESSED_DIR / "fm_style_scout_program_2025_2026.json"))
-    parser.add_argument("--needs", default=str(PROCESSED_DIR / "besiktas_team_needs_2025_2026.json"))
     parser.add_argument("--output-prefix", default="position_scout_matrix_2025_2026")
     args = parser.parse_args()
 
     scout = json.loads(Path(args.scout).read_text(encoding="utf-8"))
-    needs = json.loads(Path(args.needs).read_text(encoding="utf-8"))
-    payload = build_payload(scout, needs)
+    payload = build_payload(scout)
 
     json_path = PROCESSED_DIR / f"{args.output_prefix}.json"
     md_path = PROCESSED_DIR / f"{args.output_prefix}.md"
@@ -81,31 +79,30 @@ def main() -> None:
     print(md_path.read_text(encoding="utf-8"))
 
 
-def build_payload(scout: dict, needs: dict) -> dict:
-    candidates = scout.get("all_candidates", [])
+def build_payload(scout: dict) -> dict:
+    candidates = scout.get("sl_candidates", []) or scout.get("all_candidates", [])
+    team_names = scout.get("team_names", sorted(set(c.get("team", "") for c in candidates if c.get("team"))))
     role_lists = {}
     for role_key, role in ROLE_REQUIREMENTS.items():
         ranked = []
         for candidate in candidates:
             if not candidate_matches_verified_role(candidate, role):
                 continue
-            item = score_candidate_for_role(candidate, role_key, role, needs)
+            item = score_candidate_for_role(candidate, role_key, role)
             if item["role_fit_score"] >= min_role_threshold(role_key):
                 ranked.append(item)
         ranked.sort(key=lambda item: item["role_fit_score"], reverse=True)
-        role_lists[role_key] = ranked[:12]
+        role_lists[role_key] = ranked[:20]
 
-    needs_summary = summarize_needs(needs)
     return {
-        "team": needs.get("team"),
         "summary": {
             "candidate_count": len(candidates),
             "roles": len(ROLE_REQUIREMENTS),
             "matched_role_candidates": sum(len(items) for items in role_lists.values()),
-            "high_priority_needs": needs_summary["high_priority_needs"],
-            "model_note": "Pozisyon matrisi 691 oyuncunun tamamını tarar; yayınlanan rol adayları Transfermarkt pozisyonu allowlist ile doğrulanan oyunculardır. Skor sıralamasında gol/ilk 11/kart/fizik/yas/sozlesme proxy sinyalleri kullanılır.",
+            "team_count": len(team_names),
+            "model_note": "Pozisyon matrisi 691 oyuncunun tamamını tarar; yayınlanan rol adayları Transfermarkt pozisyonu allowlist ile doğrulanan oyunculardır.",
         },
-        "team_need_summary": needs_summary,
+        "team_names": team_names,
         "roles": [
             {
                 "role_key": role_key,
@@ -117,17 +114,6 @@ def build_payload(scout: dict, needs: dict) -> dict:
     }
 
 
-def summarize_needs(needs: dict) -> dict:
-    position_plan = needs.get("position_action_plan", [])
-    high_groups = [item["position_group"] for item in position_plan if item.get("priority") == "HIGH"]
-    medium_groups = [item["position_group"] for item in position_plan if item.get("priority") == "MEDIUM"]
-    return {
-        "high_priority_needs": len(high_groups),
-        "high_groups": high_groups,
-        "medium_groups": medium_groups,
-        "position_action_plan": position_plan,
-    }
-
 
 def candidate_matches_verified_role(candidate: dict, role: dict) -> bool:
     verified_position = candidate.get("tm_position")
@@ -135,7 +121,7 @@ def candidate_matches_verified_role(candidate: dict, role: dict) -> bool:
     return bool(verified_position and (not allowed_positions or verified_position in allowed_positions))
 
 
-def score_candidate_for_role(candidate: dict, role_key: str, role: dict, needs: dict) -> dict:
+def score_candidate_for_role(candidate: dict, role_key: str, role: dict) -> dict:
     inferred_group, inferred_role, confidence = infer_candidate_position(candidate)
     group_match = 1.0 if inferred_group == role["position_group"] else 0.18 if inferred_group == "UNKNOWN" else 0.08
     base = candidate.get("overall_fm_fit_score", 0) * 0.42
@@ -147,7 +133,7 @@ def score_candidate_for_role(candidate: dict, role_key: str, role: dict, needs: 
     external = candidate.get("external_api_signal", {})
     external_role = external.get("external_role_score") or 0
     role_specific = role_specific_score(role_key, candidate, goals, starts, cards, age, load_max, external_role)
-    need_boost = team_need_boost(role["position_group"], needs)
+    need_boost = 2.0
     economy = economy_score(candidate)
     risk_penalty = risk_penalty_score(candidate)
     score = (base + role_specific + need_boost + economy - risk_penalty) * group_match
@@ -231,16 +217,6 @@ def min_role_threshold(role_key: str) -> float:
     return 35.0
 
 
-def team_need_boost(position_group: str, needs: dict) -> float:
-    for item in needs.get("position_action_plan", []):
-        if item.get("position_group") != position_group:
-            continue
-        if item.get("priority") == "HIGH":
-            return 14.0
-        if item.get("priority") == "MEDIUM":
-            return 8.0
-    return 2.0
-
 
 def economy_score(candidate: dict) -> float:
     age = candidate.get("age") or 30
@@ -318,12 +294,12 @@ def commercial_note(candidate: dict) -> str:
 
 def build_markdown(payload: dict) -> str:
     lines = [
-        f"# {payload['team']} Pozisyon Bazlı Scout Matrisi",
+        "# Süper Lig Pozisyon Bazlı Scout Matrisi",
         "",
         f"- Aday oyuncu: {payload['summary']['candidate_count']}",
         f"- Rol sayısı: {payload['summary']['roles']}",
         f"- Rol-aday eşleşmesi: {payload['summary']['matched_role_candidates']}",
-        f"- Yüksek öncelikli takım ihtiyacı: {payload['summary']['high_priority_needs']}",
+        f"- Takım: {payload['summary']['team_count']}",
         f"- Not: {payload['summary']['model_note']}",
         "",
     ]
@@ -341,12 +317,13 @@ def build_markdown(payload: dict) -> str:
 
 def build_html(payload: dict) -> str:
     sections = "".join(role_section(role) for role in payload["roles"])
+    team_names_json = json.dumps(payload["team_names"], ensure_ascii=False)
     return f"""<!doctype html>
 <html lang="tr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{escape(payload['team'])} Pozisyon Bazlı Scout Matrisi</title>
+  <title>Pozisyon Scout Matrisi — Süper Lig | metric11</title>
   <style>
     :root {{ --bg:#f4f6f8; --panel:#fff; --ink:#14171c; --muted:#667085; --line:#dce2ea; --dark:#111318; --green:#137a4b; --blue:#185ea8; --amber:#b76b00; --shadow:0 8px 22px rgba(18,24,32,.08); }}
     * {{ box-sizing:border-box; }}
@@ -355,6 +332,10 @@ def build_html(payload: dict) -> str:
     header h1 {{ margin:0 0 7px; font-size:32px; letter-spacing:0; }}
     header p {{ margin:0; color:#c9ced8; max-width:1040px; line-height:1.5; }}
     main {{ max-width:1420px; margin:0 auto; padding:24px; }}
+    .ctrl-bar {{ display:flex; align-items:center; gap:12px; flex-wrap:wrap; margin-bottom:18px; padding:12px 14px; background:var(--panel); border:1px solid var(--line); border-radius:8px; box-shadow:var(--shadow); }}
+    .ctrl-bar label {{ font-size:13px; font-weight:600; color:var(--muted); }}
+    .ctrl-bar select {{ font-family:inherit; font-size:13px; font-weight:600; color:var(--ink); background:var(--panel); border:1px solid var(--line); border-radius:7px; padding:7px 12px; cursor:pointer; outline:none; }}
+    .ctrl-bar select:focus {{ border-color:#0d9488; }}
     .metrics {{ display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-bottom:18px; }}
     .metric, section {{ background:var(--panel); border:1px solid var(--line); border-radius:8px; box-shadow:var(--shadow); }}
     .metric {{ padding:15px; }}
@@ -367,6 +348,7 @@ def build_html(payload: dict) -> str:
     th,td {{ padding:9px 7px; border-bottom:1px solid var(--line); text-align:left; vertical-align:top; }}
     th {{ color:var(--muted); font-size:12px; }}
     .pill {{ display:inline-flex; min-height:23px; align-items:center; border-radius:999px; padding:0 8px; font-size:12px; border:1px solid #bbd7f5; color:var(--blue); background:#edf5ff; }}
+    tr.hidden {{ display:none; }}
     @media (max-width:900px) {{ .metrics {{ grid-template-columns:1fr 1fr; }} main {{ padding:14px; }} header {{ padding:22px; }} table {{ font-size:12px; }} }}
     @media (max-width:620px) {{ .metrics {{ grid-template-columns:1fr; }} }}
     .topbar{{position:sticky;top:0;z-index:5;display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:52px;padding:0 clamp(16px,4vw,42px);background:#111318;color:white;border-bottom:2px solid #1a3023;}}
@@ -391,21 +373,44 @@ def build_html(payload: dict) -> str:
     </nav>
   </div>
   <header>
-    <h1>{escape(payload['team'])} Pozisyon Bazlı Scout Matrisi</h1>
-    <p>Her rol için adaylar takım ihtiyacı, yaş, sözleşme fırsatı, tahmini fiziksel yük, gol/ilk 11/kart profili ve dış veri sinyaliyle puanlanır.</p>
+    <h1>Pozisyon Scout Matrisi — Süper Lig</h1>
+    <p>Her rol için adaylar yaş, sözleşme fırsatı, tahmini fiziksel yük, gol/ilk 11/kart profili ve dış veri sinyaliyle puanlanır. Takım seçerek kendi kadronuzdaki oyuncuları filtreleyin.</p>
   </header>
   <main>
+    <div class="ctrl-bar">
+      <label for="team-select">Scouting takımı:</label>
+      <select id="team-select" onchange="filterByTeam()">
+        <option value="">Tüm Takımlar</option>
+      </select>
+      <span style="font-size:12px;color:var(--muted)" id="filter-note">Seçilen takımın oyuncuları gizlenir.</span>
+    </div>
     <div class="metrics">
       {metric("Aday", payload["summary"]["candidate_count"])}
       {metric("Rol", payload["summary"]["roles"])}
       {metric("Rol-aday", payload["summary"]["matched_role_candidates"])}
-      {metric("Yüksek ihtiyaç", payload["summary"]["high_priority_needs"])}
+      {metric("Takım", payload["summary"]["team_count"])}
     </div>
     {sections}
   </main>
   <footer style="text-align:center;padding:40px 16px 28px;color:#8a9e92;font-size:12px;border-top:1px solid #e2e8e4;margin-top:48px;">
     metric11 &middot; <a href="mailto:hello@metric11.com" style="color:#8a9e92;text-decoration:none;border-bottom:1px solid #c5d4ca;">hello@metric11.com</a>
   </footer>
+  <script>
+  const TEAM_NAMES = {team_names_json};
+  TEAM_NAMES.forEach(t => {{
+    const opt = document.createElement('option');
+    opt.value = t; opt.textContent = t;
+    document.getElementById('team-select').appendChild(opt);
+  }});
+  function filterByTeam() {{
+    const selected = document.getElementById('team-select').value;
+    document.querySelectorAll('tr[data-team]').forEach(row => {{
+      row.classList.toggle('hidden', selected !== '' && row.dataset.team === selected);
+    }});
+    const note = document.getElementById('filter-note');
+    note.textContent = selected ? selected + ' oyuncuları gizlendi.' : 'Seçilen takımın oyuncuları gizlenir.';
+  }}
+  </script>
   <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
@@ -424,8 +429,9 @@ def role_section(role: dict) -> str:
 
 def candidate_row(candidate: dict) -> str:
     load = f"{candidate.get('estimated_physical_load_km_min')}-{candidate.get('estimated_physical_load_km_max')}"
+    team = candidate.get('team') or ''
     return (
-        f"<tr><td>{escape(candidate.get('name', ''))}</td><td>{escape(candidate.get('team') or '')}</td>"
+        f"<tr data-team=\"{escape(team)}\"><td>{escape(candidate.get('name', ''))}</td><td>{escape(team)}</td>"
         f"<td>{candidate['role_fit_score']}</td><td><span class=\"pill\">{escape(candidate['inferred_role'])}</span></td>"
         f"<td>{escape(candidate['position_confidence'])}</td><td>{escape(str(candidate.get('age') or ''))}</td>"
         f"<td>{candidate.get('goals', 0)}</td><td>{candidate.get('starts', 0)}</td><td>{load}</td>"
