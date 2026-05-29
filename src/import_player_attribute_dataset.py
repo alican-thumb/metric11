@@ -30,6 +30,20 @@ FIELD_ALIASES = {
     "decisions": ["decisions", "Decisions", "Decision"],
     "technique": ["technique", "Technique"],
     "vision": ["vision", "Vision"],
+    # FM2023 position ratings (used only for position_group derivation)
+    "_pos_gk":  ["GK"],
+    "_pos_dl":  ["DL"],
+    "_pos_dc":  ["DC"],
+    "_pos_dr":  ["DR"],
+    "_pos_wbl": ["WBL"],
+    "_pos_wbr": ["WBR"],
+    "_pos_dm":  ["DM"],
+    "_pos_ml":  ["ML"],
+    "_pos_mc":  ["MC"],
+    "_pos_mr":  ["MR"],
+    "_pos_aml": ["AML"],
+    "_pos_amc": ["AMC"],
+    "_pos_amr": ["AMR"],
     # FM2023 extended attributes
     "dribbling": ["dribbling", "Dribbling"],
     "first_touch": ["first_touch", "First Touch"],
@@ -128,12 +142,15 @@ def normalize_row(row: dict) -> dict:
         item.get("technique"), item.get("dribbling"), item.get("first_touch"),
     ])
 
+    position_group = _derive_position_group(item)
+
     return {
         "name": name,
         "name_normalized": normalize_name(name),
         "team": clean_text(item.get("team")),
         "age": to_int(item.get("age")),
         "position": clean_text(item.get("position")),
+        "position_group": position_group,
         "current_ability": current_ability,
         "potential_ability": potential_ability,
         "growth_room": round(potential_ability - current_ability, 2)
@@ -158,6 +175,32 @@ def normalize_row(row: dict) -> dict:
             if item.get(key) not in (None, "")
         },
     }
+
+
+def _derive_position_group(item: dict) -> str | None:
+    gk  = to_float(item.get("_pos_gk"))  or 0
+    def_ = max(
+        to_float(item.get("_pos_dc")) or 0,
+        to_float(item.get("_pos_dl")) or 0,
+        to_float(item.get("_pos_dr")) or 0,
+        to_float(item.get("_pos_wbl")) or 0,
+        to_float(item.get("_pos_wbr")) or 0,
+    )
+    mid = max(
+        to_float(item.get("_pos_dm")) or 0,
+        to_float(item.get("_pos_ml")) or 0,
+        to_float(item.get("_pos_mc")) or 0,
+        to_float(item.get("_pos_mr")) or 0,
+    )
+    fwd = max(
+        to_float(item.get("_pos_aml")) or 0,
+        to_float(item.get("_pos_amc")) or 0,
+        to_float(item.get("_pos_amr")) or 0,
+    )
+    if all(v == 0 for v in (gk, def_, mid, fwd)):
+        return None
+    best = max((gk, "GK"), (def_, "DEF"), (mid, "MID"), (fwd, "FWD"), key=lambda x: x[0])
+    return best[1]
 
 
 def get_value(row: dict, aliases: list[str]):

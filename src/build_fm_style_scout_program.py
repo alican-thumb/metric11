@@ -7,58 +7,77 @@ from pathlib import Path
 
 from src.config import PROCESSED_DIR
 
+# FM2023 Turkish Super Lig clubs (exclude from global pool to avoid double-counting)
+_TURKISH_FM23_TEAMS = {
+    "Galatasaray A.Ş.", "Trabzonspor A.Ş.", "Konyaspor", "Kayserispor",
+    "Sivasspor", "Gaziantep Futbol Kulübü A.Ş.", "Antalyaspor", "Alanyaspor",
+    "Rizespor A.Ş.", "Hatayspor",
+}
+
+_GLOBAL_CA_MIN = 130
+
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="FM tarzı scout programı: rol, fiziksel yük, fırsat ve takım ihtiyacı önerileri üretir.")
+    parser = argparse.ArgumentParser()
     parser.add_argument("--scout", default=str(PROCESSED_DIR / "league_scouting_enriched_2025_2026.json"))
-    parser.add_argument("--needs", default=str(PROCESSED_DIR / "besiktas_team_needs_2025_2026.json"))
+    parser.add_argument("--fm23", default=str(PROCESSED_DIR / "player_attribute_dataset_fm2023_normalized.json"))
     parser.add_argument("--output-prefix", default="fm_style_scout_program_2025_2026")
     args = parser.parse_args()
 
     scout = json.loads(Path(args.scout).read_text(encoding="utf-8"))
-    needs = json.loads(Path(args.needs).read_text(encoding="utf-8"))
-    payload = build_payload(scout, needs)
+    fm23_data = json.loads(Path(args.fm23).read_text(encoding="utf-8"))
 
-    json_path = PROCESSED_DIR / f"{args.output_prefix}.json"
-    md_path = PROCESSED_DIR / f"{args.output_prefix}.md"
-    html_path = PROCESSED_DIR / f"{args.output_prefix}.html"
-    json_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-    md_path.write_text(build_markdown(payload), encoding="utf-8")
-    html_path.write_text(build_html(payload), encoding="utf-8")
-    print(md_path.read_text(encoding="utf-8"))
+    sl_candidates = [enrich_candidate(p) for p in scout.get("enriched_shortlist", [])]
+    global_pool = _build_global_pool(fm23_data)
+    team_names = sorted(set(c["team"] for c in sl_candidates))
 
-
-def build_payload(scout: dict, needs: dict) -> dict:
-    candidates = []
-    for player in scout.get("enriched_shortlist", []):
-        candidate = enrich_candidate(player)
-        candidates.append(candidate)
-
-    role_buckets = {
-        "immediate_scorer": top_by(candidates, "immediate_scorer_score"),
-        "physical_engine": top_by(candidates, "physical_engine_score"),
-        "resale_value": top_by(candidates, "resale_value_score"),
-        "contract_opportunity": top_by(candidates, "contract_opportunity_score"),
-        "low_risk_regular": top_by(candidates, "low_risk_regular_score"),
-    }
-    return {
-        "team": needs.get("team"),
+    payload = {
         "summary": {
-            "candidate_count": len(candidates),
-            "high_priority_needs": sum(1 for item in needs.get("needs", []) if item.get("priority") == "HIGH"),
-            "role_buckets": len(role_buckets),
-            "model_note": "MVP rol motoru; TFF maç kullanımı, gol, kart, yaş, sözleşme ve varsa attribute sinyalinden türetilir.",
+            "sl_candidates": len(sl_candidates),
+            "global_pool": len(global_pool),
+            "fm23_matched": sum(1 for c in sl_candidates if (c.get("fm23_signal") or {}).get("matched")),
+            "teams": len(team_names),
+            "global_ca_min": _GLOBAL_CA_MIN,
         },
-        "team_needs": needs.get("needs", []),
-        "position_action_plan": needs.get("position_action_plan", []),
-        "role_buckets": role_buckets,
-        "all_candidates": sorted(candidates, key=lambda item: item["overall_fm_fit_score"], reverse=True),
+        "sl_candidates": sl_candidates,
+        "global_pool": global_pool,
+        "team_names": team_names,
     }
+
+    prefix = args.output_prefix
+    (PROCESSED_DIR / f"{prefix}.json").write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    html = build_html(payload)
+    (PROCESSED_DIR / f"{prefix}.html").write_text(html, encoding="utf-8")
+    print(f"SL: {len(sl_candidates)} oyuncu, Global: {len(global_pool)} oyuncu, HTML yazıldı.")
+
+
+def _build_global_pool(fm23_data: dict) -> list[dict]:
+    pool = []
+    for p in fm23_data.get("players", []):
+        ca = p.get("current_ability") or 0
+        team = p.get("team") or ""
+        if ca < _GLOBAL_CA_MIN:
+            continue
+        if team in _TURKISH_FM23_TEAMS:
+            continue
+        pool.append({
+            "name": p.get("name") or "",
+            "team": team,
+            "age": p.get("age"),
+            "position": p.get("position") or "",
+            "position_group": p.get("position_group") or "MID",
+            "current_ability": ca,
+            "potential_ability": p.get("potential_ability"),
+            "growth_room": p.get("growth_room"),
+            "raw_attributes": p.get("raw_attributes") or {},
+        })
+    pool.sort(key=lambda x: x["current_ability"], reverse=True)
+    return pool
 
 
 def enrich_candidate(player: dict) -> dict:
-    attribute = player.get("attribute_signal", {})
-    external = player.get("external_api_signal", {})
+    attribute = player.get("attribute_signal") or {}
+    external = player.get("external_api_signal") or {}
     starts = player.get("starts", 0)
     goals = player.get("goals", 0)
     cards = player.get("cards", 0)
@@ -85,29 +104,24 @@ def enrich_candidate(player: dict) -> dict:
     resale_value = age_bonus + goals * 2.4 + starts * 0.9 + growth * 0.3 + potential * 0.06 + external_quality * 0.18 - resale_age_penalty
     contract_opportunity = contract_bonus + opportunity * 0.5 + scout_value * 0.2 + external_quality * 0.15
     low_risk_regular = starts * 2.4 + player.get("availability_score", 0) * 0.45 + external_quality * 0.12 - cards * 2.0
-
     overall = (
-        immediate_scorer * 0.25
-        + physical_engine * 0.18
-        + resale_value * 0.22
-        + contract_opportunity * 0.22
-        + low_risk_regular * 0.13
+        immediate_scorer * 0.25 + physical_engine * 0.18
+        + resale_value * 0.22 + contract_opportunity * 0.22 + low_risk_regular * 0.13
     )
-    return {
-        **player,
+
+    result = {k: v for k, v in player.items()}
+    result.update({
         "archetype": archetype,
         "estimated_physical_load_km_min": physical_min,
         "estimated_physical_load_km_max": physical_max,
-        "physical_load_confidence": "LOW_DERIVED",
         "immediate_scorer_score": round(immediate_scorer, 2),
         "physical_engine_score": round(physical_engine, 2),
         "resale_value_score": round(resale_value, 2),
         "contract_opportunity_score": round(contract_opportunity, 2),
         "low_risk_regular_score": round(low_risk_regular, 2),
         "overall_fm_fit_score": round(overall, 2),
-        "external_quality_score": round(external_quality, 2),
-        "recommendation": recommendation_text(player, archetype, physical_min, physical_max),
-    }
+    })
+    return result
 
 
 def external_defensive_bonus(external: dict) -> float:
@@ -165,304 +179,11 @@ def contract_opportunity_bonus(player: dict) -> float:
     return 2
 
 
-def recommendation_text(player: dict, archetype: str, physical_min: float, physical_max: float) -> str:
-    external = player.get("external_api_signal", {})
-    parts = [
-        f"{archetype} profili.",
-        f"Model tahmini fiziksel yük {physical_min}-{physical_max} km bandında.",
-    ]
-    if external.get("matched"):
-        parts.append(
-            f"2024 dış API sinyali: rating {external.get('rating') or 'yok'}, rol skoru {external.get('external_role_score') or 'yok'}."
-        )
-    if player.get("contract_risk") in {"HIGH", "MEDIUM"}:
-        parts.append(f"Sözleşme fırsatı {player['contract_risk']} seviyesinde.")
-    if player.get("resale_signal") == "HIGH":
-        parts.append("Resale potansiyeli yüksek.")
-    if player.get("goals", 0) >= 10:
-        parts.append("Skor katkısı lig içi scout havuzunda öne çıkıyor.")
-    return " ".join(parts)
-
-
-def top_by(candidates: list[dict], field: str, limit: int = 12) -> list[dict]:
-    return sorted(candidates, key=lambda item: item[field], reverse=True)[:limit]
-
-
-def build_markdown(payload: dict) -> str:
-    lines = [
-        f"# {payload['team']} FM Tarzı Scout Programı",
-        "",
-        f"- Aday oyuncu: {payload['summary']['candidate_count']}",
-        f"- Yüksek öncelikli ihtiyaç: {payload['summary']['high_priority_needs']}",
-        f"- Not: {payload['summary']['model_note']}",
-        f"- Dış API eşleşmesi: {sum(1 for item in payload['all_candidates'] if item.get('external_api_signal', {}).get('matched'))}",
-        "",
-        "## Takım İhtiyaç Özeti",
-        "",
-    ]
-    for need in payload["team_needs"][:8]:
-        lines.append(f"- {need['priority']}: {need['need']} — {need['reason']}")
-    labels = {
-        "immediate_scorer": "Hemen Skor Katkısı",
-        "physical_engine": "Fizik Motoru",
-        "resale_value": "Genç / Resale Değeri",
-        "contract_opportunity": "Sözleşme Fırsatı",
-        "low_risk_regular": "Düşük Riskli Düzenli Oyuncu",
-    }
-    for bucket, title in labels.items():
-        lines.extend(["", f"## {title}", ""])
-        for player in payload["role_buckets"][bucket][:8]:
-            lines.append(
-                f"- {player['name']} ({player['team']}): fit={player['overall_fm_fit_score']}, "
-                f"rol={player['archetype']}, yaş={player.get('age')}, gol={player['goals']}, ilk11={player['starts']}, "
-                f"yük={player['estimated_physical_load_km_min']}-{player['estimated_physical_load_km_max']} km, "
-                f"dış-api={player.get('external_quality_score', 0)}, "
-                f"öneri={player['recommendation']}"
-            )
-    return "\n".join(lines)
-
-
-_SCORE_FIELDS = [
-    ("immediate_scorer_score",    "Gol Katkısı"),
-    ("physical_engine_score",     "Fizik Motoru"),
-    ("resale_value_score",        "Resale Değeri"),
-    ("contract_opportunity_score","Kontrakt Fırsatı"),
-    ("low_risk_regular_score",    "Güvenilirlik"),
-]
-
-_BUCKET_META = {
-    "immediate_scorer":    ("⚽ Gol",      "immediate_scorer_score"),
-    "physical_engine":     ("💪 Fizik",    "physical_engine_score"),
-    "resale_value":        ("📈 Resale",   "resale_value_score"),
-    "contract_opportunity":("🤝 Kontrakt", "contract_opportunity_score"),
-    "low_risk_regular":    ("🛡 Düzenli",  "low_risk_regular_score"),
-}
-
-_ARCHETYPE_COLOR = {
-    "Bitirici / skor yükü":             ("--arc-red",    "#fff0f2", "#bf1f2f"),
-    "Genç değer / gelişim":             ("--arc-blue",   "#edf5ff", "#185ea8"),
-    "Fizik motoru / tempo oyuncusu":    ("--arc-orange", "#fff6ed", "#b84f00"),
-    "Sertlik ve temas profili":         ("--arc-slate",  "#f1f3f5", "#374151"),
-    "Düşük riskli düzenli oyuncu":      ("--arc-green",  "#edf9f3", "#137a4b"),
-    "Rotasyon fırsatı":                 ("--arc-gray",   "#f4f6f8", "#667085"),
-}
-
-
-def _score_maxes(candidates: list[dict]) -> dict:
-    return {
-        field: max((c.get(field) or 0 for c in candidates), default=1) or 1
-        for field, _ in _SCORE_FIELDS
-    }
-
-
-def _norm(value: float, mx: float) -> int:
-    return min(100, max(0, round(value / mx * 100)))
-
-
-def _bar_color(pct: int) -> str:
-    if pct >= 78:
-        return "#137a4b"
-    if pct >= 55:
-        return "#0d9488"
-    if pct >= 35:
-        return "#b76b00"
-    return "#adb5bd"
-
-
-def _contract_badge(player: dict) -> str:
-    risk = player.get("contract_risk", "")
-    months = player.get("contract_months_left")
-    end = player.get("contract_end", "")
-    label = end[:7] if end else "?"
-    if risk == "HIGH":
-        return f'<span class="cbadge cbadge-high">⚠ {escape(label)}</span>'
-    if risk == "MEDIUM":
-        return f'<span class="cbadge cbadge-med">⌛ {escape(label)}</span>'
-    if months and months <= 24:
-        return f'<span class="cbadge cbadge-low">📅 {escape(label)}</span>'
-    return f'<span class="cbadge cbadge-ok">📅 {escape(label)}</span>'
-
-
-def _value_chip(player: dict) -> str:
-    txt = player.get("tm_market_value_text") or ""
-    if not txt or txt == "-":
-        return ""
-    url = player.get("tm_profile_url") or ""
-    inner = f'<a href="{escape(url)}" target="_blank" rel="noopener" class="val-link">{escape(txt)}</a>' if url else escape(txt)
-    return f'<span class="val-chip">{inner}</span>'
-
-
-def _archetype_badge(archetype: str) -> str:
-    _, bg, color = _ARCHETYPE_COLOR.get(archetype, ("", "#f4f6f8", "#667085"))
-    return (
-        f'<span class="arc-badge" style="background:{bg};color:{color};border-color:{color}22">'
-        f'{escape(archetype)}</span>'
-    )
-
-
-_POS_ATTRS = {
-    "FWD": ["finishing", "technique", "positioning", "decisions", "composure", "dribbling", "pace", "stamina"],
-    "MID": ["passing", "decisions", "technique", "vision", "first_touch", "anticipation", "work_rate", "stamina"],
-    "DEF": ["tackling", "marking", "decisions", "positioning", "concentration", "stamina", "pace", "strength"],
-    "GK":  ["decisions", "positioning", "stamina", "work_rate", "concentration", "teamwork"],
-}
-_ATTR_LABELS = {
-    "finishing": "Bitiricilik", "technique": "Teknik", "positioning": "Pozisyon",
-    "decisions": "Karar Verme", "pace": "Hız", "stamina": "Kondisyon",
-    "passing": "Pas", "vision": "Vizyon", "work_rate": "Çalışma Temposu",
-    "tackling": "Müdahale", "teamwork": "Takım Oyunu", "acceleration": "İvme",
-    "dribbling": "Dribling", "first_touch": "İlk Dokunuş", "composure": "Soğukkanlılık",
-    "concentration": "Konsantrasyon", "anticipation": "Öngörü", "marking": "Markaj",
-    "strength": "Fiziksel Güç", "heading": "Kafa Vuruşu", "long_shots": "Uzak Şut",
-    "crossing": "Orta", "flair": "Yaratıcılık", "agility": "Çeviklik",
-    "balance": "Denge", "natural_fitness": "Doğal Form",
-}
-
-
-def _ca_color(ca: int) -> str:
-    if ca >= 125:
-        return "#137a4b"
-    if ca >= 112:
-        return "#0d9488"
-    if ca >= 100:
-        return "#b76b00"
-    return "#adb5bd"
-
-
-def _player_card(player: dict, active_field: str, maxes: dict) -> str:
-    name = escape(player.get("name") or "")
-    team = escape(player.get("team") or "")
-    age = player.get("age") or "?"
-    nat = escape(player.get("nationality") or "")
-    goals = player.get("goals", 0)
-    starts = player.get("starts", 0)
-    cards = player.get("cards", 0)
-    load_lo = player.get("estimated_physical_load_km_min", 0)
-    load_hi = player.get("estimated_physical_load_km_max", 0)
-    archetype = player.get("archetype", "Rotasyon fırsatı")
-
-    fm23_sig = player.get("fm23_signal") or {}
-    derived_sig = player.get("derived_signal") or {}
-    attr_sig = player.get("attribute_signal") or {}
-    pos_grp = (player.get("tm_position_group") or "MID").upper()
-
-    # Prefer FM23 (richer attrs), fall back to derived, then legacy attribute_signal
-    if fm23_sig.get("matched"):
-        raw = fm23_sig.get("raw_attributes") or {}
-        ca = fm23_sig.get("current_ability")
-        pa = fm23_sig.get("potential_ability")
-        attr_source = "FM23"
-    elif derived_sig.get("matched"):
-        raw = derived_sig.get("raw_attributes") or {}
-        ca = derived_sig.get("current_ability")
-        pa = derived_sig.get("potential_ability")
-        attr_source = "Türetilmiş"
-    else:
-        raw = attr_sig.get("raw_attributes") or {}
-        ca = attr_sig.get("current_ability")
-        pa = attr_sig.get("potential_ability")
-        attr_source = None
-
-    # --- attribute barları ---
-    if raw:
-        attr_keys = _POS_ATTRS.get(pos_grp, _POS_ATTRS["MID"])
-        bars = ""
-        for key in attr_keys:
-            val = raw.get(key)
-            if val is None:
-                continue
-            val_int = int(round(val))
-            pct = round(val / 20 * 100)
-            clr = _attr_color(val_int)
-            bars += (
-                f'<div class="attr-row bar-active">'
-                f'<span class="attr-lbl">{escape(_ATTR_LABELS.get(key, key))}</span>'
-                f'<div class="bar-track">'
-                f'<div class="bar-fill" style="width:{pct}%;background:{clr}"></div>'
-                f'</div>'
-                f'<span class="attr-val" style="color:{clr}">{val_int}</span>'
-                f'</div>'
-            )
-        score_label = str(int(ca)) if ca else "?"
-        ring_color = _ca_color(int(ca) if ca else 90)
-        pa_html = (
-            f'<span class="pa-chip">PA {int(pa)}</span>'
-            if pa and pa > (ca or 0) + 2 else ""
-        )
-        src_badge = f'<span class="src-badge src-{attr_source.lower().replace("ü","u").replace("ş","s").replace("ı","i")}">{attr_source}</span>' if attr_source else ""
-    else:
-        # fallback: proxy skorlar
-        active_pct = _norm(player.get(active_field) or 0, maxes[active_field])
-        bars = ""
-        for field, label in _SCORE_FIELDS:
-            pct = _norm(player.get(field) or 0, maxes[field])
-            clr = _bar_color(pct)
-            is_active = "bar-active" if field == active_field else ""
-            bars += (
-                f'<div class="attr-row {is_active}">'
-                f'<span class="attr-lbl">{escape(label)}</span>'
-                f'<div class="bar-track"><div class="bar-fill" style="width:{pct}%;background:{clr}"></div></div>'
-                f'<span class="attr-val" style="color:{clr}">{pct}</span>'
-                f'</div>'
-            )
-        score_label = str(active_pct)
-        ring_color = _bar_color(active_pct)
-        pa_html = ""
-        src_badge = ""
-
-    contract_html = _contract_badge(player)
-    value_html = _value_chip(player)
-    arc_html = _archetype_badge(archetype)
-
-    return f"""<div class="pcard" style="--ring:{ring_color}">
-  <div class="pcard-top">
-    <div>
-      <div class="pcard-name">{name}</div>
-      <div class="pcard-meta">{team} · {age}y · {nat}</div>
-    </div>
-    <div class="pcard-score" style="color:{ring_color};border-color:{ring_color}33;background:{ring_color}12">{score_label}</div>
-  </div>
-  <div class="arc-row">{arc_html}{pa_html}{src_badge}</div>
-  <div class="attrs">{bars}</div>
-  <div class="pcard-stats">
-    <span>⚽ <strong>{goals}</strong></span>
-    <span>▶ <strong>{starts}</strong></span>
-    <span>🟨 <strong>{cards}</strong></span>
-    <span>🏃 <strong>{load_lo}–{load_hi}km</strong></span>
-  </div>
-  <div class="pcard-footer">{contract_html}{value_html}</div>
-</div>"""
-
-
-def _attr_color(val: int) -> str:
-    if val >= 16:
-        return "#137a4b"
-    if val >= 13:
-        return "#0d9488"
-    if val >= 10:
-        return "#b76b00"
-    return "#adb5bd"
-
-
 def build_html(payload: dict) -> str:
-    all_candidates = payload["all_candidates"]
-    maxes = _score_maxes(all_candidates)
-    external_matched = sum(1 for c in all_candidates if c.get("external_api_signal", {}).get("matched"))
-
-    tab_btns = ""
-    tab_panels = ""
-    for i, (key, (label, score_field)) in enumerate(_BUCKET_META.items()):
-        players = payload["role_buckets"][key][:12]
-        cards = "".join(_player_card(p, score_field, maxes) for p in players)
-        active_cls = " active" if i == 0 else ""
-        tab_btns += f'<button class="tab{active_cls}" data-tab="{key}">{label}</button>'
-        tab_panels += f'<div class="tab-panel{active_cls}" id="tab-{key}"><div class="cards-grid">{cards}</div></div>'
-
-    needs_rows = "".join(
-        f"<tr><td><span class=\"pill {priority_class(item['priority'])}\">{escape(item['priority'])}</span></td>"
-        f"<td>{escape(item['need'])}</td><td>{escape(item['reason'])}</td></tr>"
-        for item in payload["team_needs"][:8]
-    )
+    summary = payload["summary"]
+    sl_json = json.dumps(payload["sl_candidates"], ensure_ascii=False)
+    global_json = json.dumps(payload["global_pool"], ensure_ascii=False)
+    team_names_json = json.dumps(payload["team_names"], ensure_ascii=False)
 
     return f"""<!doctype html>
 <html lang="tr">
@@ -474,8 +195,6 @@ def build_html(payload: dict) -> str:
     :root{{--bg:#f3f5f4;--panel:#fff;--ink:#132018;--muted:#627067;--line:#d7ded9;--dark:#091810;--green:#116447;--teal:#0d9488;--shadow:0 4px 16px rgba(9,24,16,.07);}}
     *{{box-sizing:border-box;margin:0;padding:0;}}
     body{{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--ink);}}
-
-    /* topbar */
     .topbar{{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:58px;padding:0 clamp(14px,4vw,40px);background:#091810;border-bottom:2px solid #1a3023;}}
     .brand{{display:flex;gap:8px;align-items:center;font-weight:800;font-size:17px;color:white;text-decoration:none;}}
     .brand:visited,.brand:active,.brand:hover{{color:white;}}
@@ -486,46 +205,33 @@ def build_html(payload: dict) -> str:
     nav a:visited{{color:#8fa89a;}}
     nav a:hover,nav a.active{{background:#162b20;color:white;}}
 
-    /* header */
     header{{background:var(--dark);color:white;padding:26px clamp(16px,4vw,40px) 22px;border-bottom:4px solid var(--green);}}
     header h1{{font-size:clamp(22px,3vw,30px);font-weight:800;letter-spacing:-.5px;margin-bottom:6px;}}
     header p{{color:#8fa89a;font-size:14px;max-width:780px;line-height:1.55;}}
 
-    /* layout */
     main{{max-width:1380px;margin:0 auto;padding:20px clamp(12px,3vw,28px) 40px;}}
 
-    /* summary pills */
     .summary-bar{{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px;}}
     .s-pill{{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:10px 16px;display:flex;flex-direction:column;gap:2px;min-width:120px;box-shadow:var(--shadow);}}
     .s-pill span{{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;}}
     .s-pill strong{{font-size:24px;font-weight:800;color:var(--ink);}}
 
-    /* needs table */
-    .needs-section{{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin-bottom:22px;box-shadow:var(--shadow);}}
-    .needs-section h2{{font-size:15px;font-weight:700;margin-bottom:12px;}}
-    table{{width:100%;border-collapse:collapse;font-size:13px;}}
-    th,td{{padding:8px 6px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;}}
-    th{{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.05em;}}
-    .pill{{display:inline-flex;align-items:center;border-radius:999px;padding:2px 9px;font-size:11px;font-weight:600;border:1px solid;}}
-    .high{{color:#bf1f2f;background:#fff0f2;border-color:#efb7bf;}}
-    .medium{{color:#b76b00;background:#fff7e8;border-color:#f2d09a;}}
-    .low{{color:var(--green);background:#edf9f3;border-color:#b9dfcd;}}
+    .ctrl-bar{{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:18px;padding:12px 14px;background:var(--panel);border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow);}}
+    .mode-btn{{background:none;border:1px solid var(--line);cursor:pointer;font-family:inherit;font-size:13px;font-weight:700;color:var(--muted);padding:7px 16px;border-radius:7px;transition:all .15s;}}
+    .mode-btn.active{{background:#0f2018;color:white;border-color:#0f2018;}}
+    .mode-btn:hover:not(.active){{background:#e8ede9;color:var(--ink);}}
+    select{{font-family:inherit;font-size:13px;font-weight:600;color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:7px;padding:7px 12px;cursor:pointer;outline:none;}}
+    select:focus{{border-color:#0d9488;}}
+    .ctrl-sep{{color:var(--line);}}
 
-    /* tabs */
     .tab-bar{{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;margin-bottom:16px;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:5px;box-shadow:var(--shadow);}}
     .tab-bar::-webkit-scrollbar{{display:none;}}
     .tab{{flex-shrink:0;background:none;border:none;cursor:pointer;font-family:inherit;font-size:13px;font-weight:600;color:var(--muted);padding:8px 16px;border-radius:7px;transition:all .15s;}}
     .tab.active{{background:#0f2018;color:white;}}
     .tab:hover:not(.active){{background:#e8ede9;color:var(--ink);}}
 
-    /* tab panels */
-    .tab-panel{{display:none;}}
-    .tab-panel.active{{display:block;}}
-
-    /* cards grid */
     .cards-grid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;}}
 
-    /* player card */
     .pcard{{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:10px;border-top:3px solid var(--ring,var(--green));transition:box-shadow .15s;}}
     .pcard:hover{{box-shadow:0 8px 28px rgba(9,24,16,.13);}}
     .pcard-top{{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;}}
@@ -533,23 +239,23 @@ def build_html(payload: dict) -> str:
     .pcard-meta{{font-size:12px;color:var(--muted);margin-top:2px;}}
     .pcard-score{{flex-shrink:0;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;font-size:16px;font-weight:900;border:2px solid;}}
 
-    /* archetype badge */
     .arc-badge{{display:inline-flex;align-items:center;border-radius:6px;padding:3px 8px;font-size:11px;font-weight:700;border:1px solid;letter-spacing:.02em;width:fit-content;}}
+    .arc-row{{display:flex;align-items:center;gap:6px;flex-wrap:wrap;}}
+    .pa-chip{{font-size:11px;font-weight:700;color:#185ea8;background:#edf5ff;border:1px solid #bbd7f5;padding:3px 8px;border-radius:6px;}}
+    .src-badge{{font-size:10px;font-weight:600;padding:2px 7px;border-radius:4px;}}
+    .src-fm23{{color:#6b3fa0;background:#f3eeff;border:1px solid #d4b8f0;}}
+    .src-global{{color:#b84f00;background:#fff6ed;border:1px solid #f5c58a;}}
+    .src-turetilmis{{color:#555;background:#f0f0f0;border:1px solid #ccc;}}
 
-    /* attribute bars */
     .attrs{{display:flex;flex-direction:column;gap:5px;}}
-    .attr-row{{display:grid;grid-template-columns:90px 1fr 28px;align-items:center;gap:6px;opacity:.65;transition:opacity .1s;}}
-    .attr-row.bar-active{{opacity:1;}}
+    .attr-row{{display:grid;grid-template-columns:90px 1fr 28px;align-items:center;gap:6px;}}
     .attr-lbl{{font-size:11px;color:var(--muted);font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}}
     .bar-track{{height:7px;background:#e8ede9;border-radius:99px;overflow:hidden;}}
-    .bar-fill{{height:100%;border-radius:99px;transition:width .3s;}}
+    .bar-fill{{height:100%;border-radius:99px;}}
     .attr-val{{font-size:12px;font-weight:800;text-align:right;}}
 
-    /* quick stats */
     .pcard-stats{{display:flex;gap:10px;flex-wrap:wrap;padding:8px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-size:12px;color:var(--muted);}}
     .pcard-stats strong{{color:var(--ink);}}
-
-    /* footer */
     .pcard-footer{{display:flex;align-items:center;gap:8px;flex-wrap:wrap;}}
     .cbadge{{font-size:11px;font-weight:700;padding:3px 8px;border-radius:6px;border:1px solid;}}
     .cbadge-high{{color:#bf1f2f;background:#fff0f2;border-color:#efb7bf;}}
@@ -559,15 +265,11 @@ def build_html(payload: dict) -> str:
     .val-chip{{font-size:11px;font-weight:700;color:var(--green);background:#edf9f3;border:1px solid #b9dfcd;padding:3px 8px;border-radius:6px;}}
     .val-link{{color:inherit;text-decoration:none;}}
     .val-link:hover{{text-decoration:underline;}}
-    .arc-row{{display:flex;align-items:center;gap:6px;flex-wrap:wrap;}}
-    .pa-chip{{font-size:11px;font-weight:700;color:#185ea8;background:#edf5ff;border:1px solid #bbd7f5;padding:3px 8px;border-radius:6px;}}
-    .src-badge{{font-size:10px;font-weight:600;padding:2px 7px;border-radius:4px;}}
-    .src-fm23{{color:#6b3fa0;background:#f3eeff;border:1px solid #d4b8f0;}}
-    .src-turetilmis{{color:#555;background:#f0f0f0;border:1px solid #ccc;}}
 
+    .empty{{padding:40px;text-align:center;color:var(--muted);font-size:14px;}}
     @media(max-width:640px){{
       .cards-grid{{grid-template-columns:1fr;}}
-      .summary-bar .s-pill{{min-width:90px;}}
+      .ctrl-bar{{flex-direction:column;align-items:flex-start;}}
     }}
   </style>
 </head>
@@ -578,63 +280,268 @@ def build_html(payload: dict) -> str:
       <a href="/">Gündem</a>
       <a href="transfer_tracker_2025_2026.html">Transferler</a>
       <a href="all_teams_preview_dashboard_2025_2026.html">Maç Önü</a>
-      <a class="active" href="transfer_recommendation_report_2025_2026.html">Scout</a>
+      <a class="active" href="fm_style_scout_program_2025_2026.html">Scout</a>
       <a href="football_intelligence_home.html">Analiz</a>
     </nav>
   </div>
 
   <header>
     <h1>FM Scout Programı</h1>
-    <p>691 Süper Lig oyuncusu rol kategorilerine ayrıldı · Her kategoride top 12 aday · {escape(payload['team'])} pozisyon ihtiyaçları baz alındı · FM2023 eşleşen oyuncularda gerçek 1-20 attribute barları</p>
+    <p>
+      {summary['sl_candidates']} Süper Lig oyuncusu · {summary['global_pool']} global aday (CA ≥ {summary['global_ca_min']}) ·
+      {summary['fm23_matched']} SL oyuncusunda FM23 gerçek attribute barları
+    </p>
   </header>
 
   <main>
     <div class="summary-bar">
-      {_s_pill("Aday", payload["summary"]["candidate_count"])}
-      {_s_pill("Yüksek ihtiyaç", payload["summary"]["high_priority_needs"])}
-      {_s_pill("Rol listesi", payload["summary"]["role_buckets"])}
-      {_s_pill("Dış API eşleşmesi", external_matched)}
+      <div class="s-pill"><span>Süper Lig</span><strong>{summary['sl_candidates']}</strong></div>
+      <div class="s-pill"><span>Global Havuz</span><strong>{summary['global_pool']}</strong></div>
+      <div class="s-pill"><span>FM23 Eşleşmesi</span><strong>{summary['fm23_matched']}</strong></div>
+      <div class="s-pill"><span>Takım</span><strong>{summary['teams']}</strong></div>
     </div>
 
-    <div class="needs-section">
-      <h2>Takım İhtiyaç Özeti</h2>
-      <table><thead><tr><th>Öncelik</th><th>İhtiyaç</th><th>Gerekçe</th></tr></thead>
-      <tbody>{needs_rows}</tbody></table>
+    <div class="ctrl-bar">
+      <button class="mode-btn active" id="btn-sl" onclick="setMode('sl')">🇹🇷 Süper Lig</button>
+      <button class="mode-btn" id="btn-global" onclick="setMode('global')">🌍 Global Havuz</button>
+      <span class="ctrl-sep">|</span>
+      <div id="sl-controls" style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;">
+        <select id="team-select" onchange="render()">
+          <option value="">Tüm Takımlar (691)</option>
+        </select>
+        <select id="bucket-select" onchange="render()">
+          <option value="immediate_scorer_score">⚽ Gol Katkısı</option>
+          <option value="physical_engine_score">💪 Fizik Motoru</option>
+          <option value="resale_value_score">📈 Resale Değeri</option>
+          <option value="contract_opportunity_score">🤝 Kontrakt Fırsatı</option>
+          <option value="low_risk_regular_score">🛡 Güvenilirlik</option>
+        </select>
+      </div>
+      <div id="global-controls" style="display:none;gap:10px;align-items:center;flex-wrap:wrap;">
+        <select id="pos-select" onchange="render()">
+          <option value="">Tüm Pozisyonlar</option>
+          <option value="FWD">⚽ Forvet (FWD)</option>
+          <option value="MID">🔄 Orta Saha (MID)</option>
+          <option value="DEF">🛡 Defans (DEF)</option>
+          <option value="GK">🧤 Kaleci (GK)</option>
+        </select>
+      </div>
     </div>
 
-    <div class="tab-bar">{tab_btns}</div>
-    {tab_panels}
+    <div id="cards-area" class="cards-grid"></div>
   </main>
 
-  <script>
-    document.querySelectorAll('.tab').forEach(btn => {{
-      btn.addEventListener('click', () => {{
-        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-        document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
-        btn.classList.add('active');
-        document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
-      }});
-    }});
-  </script>
   <footer style="text-align:center;padding:40px 16px 28px;color:#8a9e92;font-size:12px;border-top:1px solid #e2e8e4;margin-top:48px;">
     metric11 &middot; <a href="mailto:hello@metric11.com" style="color:#8a9e92;text-decoration:none;border-bottom:1px solid #c5d4ca;">hello@metric11.com</a>
   </footer>
+
+  <script>
+  const SL = {sl_json};
+  const GLOBAL = {global_json};
+  const TEAM_NAMES = {team_names_json};
+
+  const POS_ATTRS = {{
+    FWD: ['finishing','technique','positioning','decisions','composure','dribbling','pace','stamina'],
+    MID: ['passing','decisions','technique','vision','first_touch','anticipation','work_rate','stamina'],
+    DEF: ['tackling','marking','decisions','positioning','concentration','stamina','pace','strength'],
+    GK:  ['decisions','positioning','stamina','work_rate','concentration','teamwork'],
+  }};
+  const ATTR_LABELS = {{
+    finishing:'Bitiricilik',technique:'Teknik',positioning:'Pozisyon',decisions:'Karar Verme',
+    pace:'Hız',stamina:'Kondisyon',passing:'Pas',vision:'Vizyon',work_rate:'Çalışma Temposu',
+    tackling:'Müdahale',teamwork:'Takım Oyunu',acceleration:'İvme',dribbling:'Dribling',
+    first_touch:'İlk Dokunuş',composure:'Soğukkanlılık',concentration:'Konsantrasyon',
+    anticipation:'Öngörü',marking:'Markaj',strength:'Fiziksel Güç',heading:'Kafa Vuruşu',
+    long_shots:'Uzak Şut',crossing:'Orta',flair:'Yaratıcılık',agility:'Çeviklik',
+    balance:'Denge',natural_fitness:'Doğal Form',
+  }};
+  const ARCHETYPE_COLORS = {{
+    'Bitirici / skor yükü':          ['#fff0f2','#bf1f2f'],
+    'Genç değer / gelişim':          ['#edf5ff','#185ea8'],
+    'Fizik motoru / tempo oyuncusu': ['#fff6ed','#b84f00'],
+    'Sertlik ve temas profili':      ['#f1f3f5','#374151'],
+    'Düşük riskli düzenli oyuncu':   ['#edf9f3','#137a4b'],
+    'Rotasyon fırsatı':              ['#f4f6f8','#667085'],
+  }};
+
+  let currentMode = 'sl';
+
+  // Populate team dropdown
+  TEAM_NAMES.forEach(t => {{
+    const opt = document.createElement('option');
+    opt.value = t; opt.textContent = t;
+    document.getElementById('team-select').appendChild(opt);
+  }});
+
+  function setMode(mode) {{
+    currentMode = mode;
+    document.getElementById('btn-sl').classList.toggle('active', mode === 'sl');
+    document.getElementById('btn-global').classList.toggle('active', mode === 'global');
+    document.getElementById('sl-controls').style.display = mode === 'sl' ? 'flex' : 'none';
+    document.getElementById('global-controls').style.display = mode === 'global' ? 'flex' : 'none';
+    render();
+  }}
+
+  function attrColor(v) {{
+    if (v >= 16) return '#137a4b';
+    if (v >= 13) return '#0d9488';
+    if (v >= 10) return '#b76b00';
+    return '#adb5bd';
+  }}
+  function caColor(ca) {{
+    if (ca >= 160) return '#137a4b';
+    if (ca >= 140) return '#0d9488';
+    if (ca >= 130) return '#b76b00';
+    return '#adb5bd';
+  }}
+  function esc(s) {{
+    return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }}
+
+  function arcBadge(arch) {{
+    const [bg,color] = ARCHETYPE_COLORS[arch]||['#f4f6f8','#667085'];
+    return `<span class="arc-badge" style="background:${{bg}};color:${{color}};border-color:${{color}}22">${{esc(arch)}}</span>`;
+  }}
+
+  function attrBars(raw, posGroup) {{
+    const keys = POS_ATTRS[posGroup] || POS_ATTRS.MID;
+    let html = '';
+    for (const key of keys) {{
+      const val = raw[key];
+      if (val == null) continue;
+      const v = Math.round(val);
+      const pct = Math.round(val / 20 * 100);
+      const clr = attrColor(v);
+      html += `<div class="attr-row"><span class="attr-lbl">${{esc(ATTR_LABELS[key]||key)}}</span><div class="bar-track"><div class="bar-fill" style="width:${{pct}}%;background:${{clr}}"></div></div><span class="attr-val" style="color:${{clr}}">${{v}}</span></div>`;
+    }}
+    return html;
+  }}
+
+  function renderSLCard(p) {{
+    const fm23 = p.fm23_signal||{{}};
+    const derived = p.derived_signal||{{}};
+    const attr = p.attribute_signal||{{}};
+    const posGrp = (p.tm_position_group||'MID').toUpperCase();
+
+    let raw, ca, pa, srcLabel, srcClass;
+    if (fm23.matched) {{
+      raw = fm23.raw_attributes||{{}}; ca = fm23.current_ability; pa = fm23.potential_ability;
+      srcLabel = 'FM23'; srcClass = 'src-fm23';
+    }} else if (derived.matched) {{
+      raw = derived.raw_attributes||{{}}; ca = derived.current_ability; pa = derived.potential_ability;
+      srcLabel = 'Türetilmiş'; srcClass = 'src-turetilmis';
+    }} else {{
+      raw = attr.raw_attributes||{{}}; ca = attr.current_ability; pa = attr.potential_ability;
+      srcLabel = null; srcClass = '';
+    }}
+
+    const scoreField = document.getElementById('bucket-select').value;
+    const scoreVal = p[scoreField]||0;
+    const allScores = SL.map(x=>x[scoreField]||0);
+    const maxScore = Math.max(...allScores) || 1;
+    const pct = Math.min(100, Math.round(scoreVal/maxScore*100));
+    function barColor(pc) {{
+      if (pc>=78) return '#137a4b';
+      if (pc>=55) return '#0d9488';
+      if (pc>=35) return '#b76b00';
+      return '#adb5bd';
+    }}
+
+    let barsHtml, scoreLabel, ringColor;
+    if (Object.keys(raw).length > 0) {{
+      barsHtml = attrBars(raw, posGrp);
+      scoreLabel = ca ? String(Math.round(ca)) : '?';
+      ringColor = ca ? caColor(Math.round(ca)) : '#adb5bd';
+    }} else {{
+      const SCORE_FIELDS = [
+        ['immediate_scorer_score','Gol Katkısı'],['physical_engine_score','Fizik Motoru'],
+        ['resale_value_score','Resale Değeri'],['contract_opportunity_score','Kontrakt Fırsatı'],
+        ['low_risk_regular_score','Güvenilirlik']
+      ];
+      barsHtml = SCORE_FIELDS.map(([f,lbl]) => {{
+        const v = p[f]||0;
+        const mx = Math.max(...SL.map(x=>x[f]||0))||1;
+        const pc = Math.min(100,Math.round(v/mx*100));
+        const clr = barColor(pc);
+        const active = f===scoreField?' style="opacity:1"':'';
+        return `<div class="attr-row"${{active}}><span class="attr-lbl">${{esc(lbl)}}</span><div class="bar-track"><div class="bar-fill" style="width:${{pc}}%;background:${{clr}}"></div></div><span class="attr-val" style="color:${{clr}}">${{pc}}</span></div>`;
+      }}).join('');
+      scoreLabel = String(pct);
+      ringColor = barColor(pct);
+    }}
+
+    const paChip = (pa && ca && pa > ca + 2) ? `<span class="pa-chip">PA ${{Math.round(pa)}}</span>` : '';
+    const srcBadge = srcLabel ? `<span class="src-badge ${{srcClass}}">${{srcLabel}}</span>` : '';
+    const risk = p.contract_risk||'';
+    const end = (p.contract_end||'').slice(0,7)||'?';
+    let cbadge;
+    if (risk==='HIGH') cbadge=`<span class="cbadge cbadge-high">⚠ ${{esc(end)}}</span>`;
+    else if (risk==='MEDIUM') cbadge=`<span class="cbadge cbadge-med">⌛ ${{esc(end)}}</span>`;
+    else if (p.contract_months_left&&p.contract_months_left<=24) cbadge=`<span class="cbadge cbadge-low">📅 ${{esc(end)}}</span>`;
+    else cbadge=`<span class="cbadge cbadge-ok">📅 ${{esc(end)}}</span>`;
+    const valTxt = p.tm_market_value_text||'';
+    const valUrl = p.tm_profile_url||'';
+    const valChip = valTxt && valTxt!=='-' ? `<span class="val-chip">${{valUrl?`<a href="${{esc(valUrl)}}" target="_blank" rel="noopener" class="val-link">${{esc(valTxt)}}</a>`:esc(valTxt)}}</span>` : '';
+
+    const loMin = p.estimated_physical_load_km_min||0;
+    const loMax = p.estimated_physical_load_km_max||0;
+
+    return `<div class="pcard" style="--ring:${{ringColor}}">
+  <div class="pcard-top">
+    <div><div class="pcard-name">${{esc(p.name||'')}}</div><div class="pcard-meta">${{esc(p.team||'')}} · ${{p.age||'?'}}y · ${{esc(p.nationality||'')}}</div></div>
+    <div class="pcard-score" style="color:${{ringColor}};border-color:${{ringColor}}33;background:${{ringColor}}12">${{scoreLabel}}</div>
+  </div>
+  <div class="arc-row">${{arcBadge(p.archetype||'Rotasyon fırsatı')}}${{paChip}}${{srcBadge}}</div>
+  <div class="attrs">${{barsHtml}}</div>
+  <div class="pcard-stats"><span>⚽ <strong>${{p.goals||0}}</strong></span><span>▶ <strong>${{p.starts||0}}</strong></span><span>🟨 <strong>${{p.cards||0}}</strong></span><span>🏃 <strong>${{loMin}}–${{loMax}}km</strong></span></div>
+  <div class="pcard-footer">${{cbadge}}${{valChip}}</div>
+</div>`;
+  }}
+
+  function renderGlobalCard(p) {{
+    const ca = p.current_ability||0;
+    const pa = p.potential_ability;
+    const raw = p.raw_attributes||{{}};
+    const posGrp = p.position_group||'MID';
+    const ringColor = caColor(ca);
+    const barsHtml = attrBars(raw, posGrp);
+    const paChip = (pa && pa > ca+2) ? `<span class="pa-chip">PA ${{Math.round(pa)}}</span>` : '';
+    const growthChip = (p.growth_room && p.growth_room > 5) ? `<span class="pa-chip">+${{Math.round(p.growth_room)}}</span>` : '';
+
+    return `<div class="pcard" style="--ring:${{ringColor}}">
+  <div class="pcard-top">
+    <div><div class="pcard-name">${{esc(p.name||'')}}</div><div class="pcard-meta">${{esc(p.team||'')}} · ${{p.age||'?'}}y · ${{esc(p.position||'')}}</div></div>
+    <div class="pcard-score" style="color:${{ringColor}};border-color:${{ringColor}}33;background:${{ringColor}}12">${{Math.round(ca)}}</div>
+  </div>
+  <div class="arc-row"><span class="arc-badge" style="background:#f4f6f8;color:#374151;border-color:#37415122">CA ${{Math.round(ca)}}</span>${{paChip}}${{growthChip}}<span class="src-badge src-global">FM23 Global</span></div>
+  <div class="attrs">${{barsHtml}}</div>
+  <div class="pcard-stats"><span>📊 CA <strong>${{Math.round(ca)}}</strong></span><span>🎯 PA <strong>${{pa?Math.round(pa):'?'}}</strong></span><span>🔢 ${{esc(posGrp)}}</span></div>
+</div>`;
+  }}
+
+  function render() {{
+    const area = document.getElementById('cards-area');
+    if (currentMode === 'sl') {{
+      const teamFilter = document.getElementById('team-select').value;
+      const scoreField = document.getElementById('bucket-select').value;
+      let players = teamFilter ? SL.filter(p => p.team !== teamFilter) : SL;
+      players = [...players].sort((a,b) => (b[scoreField]||0)-(a[scoreField]||0)).slice(0,24);
+      if (!players.length) {{ area.innerHTML='<div class="empty">Aday bulunamadı.</div>'; return; }}
+      area.innerHTML = players.map(renderSLCard).join('');
+    }} else {{
+      const posFilter = document.getElementById('pos-select').value;
+      let players = posFilter ? GLOBAL.filter(p => p.position_group === posFilter) : GLOBAL;
+      players = players.slice(0, 24);
+      if (!players.length) {{ area.innerHTML='<div class="empty">Aday bulunamadı.</div>'; return; }}
+      area.innerHTML = players.map(renderGlobalCard).join('');
+    }}
+  }}
+
+  render();
+  </script>
   <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>"""
-
-
-def _s_pill(label: str, value) -> str:
-    return f'<div class="s-pill"><span>{escape(str(label))}</span><strong>{escape(str(value))}</strong></div>'
-
-
-def priority_class(priority: str) -> str:
-    v = priority.lower()
-    if v == "high":
-        return "high"
-    if v == "medium":
-        return "medium"
-    return "low"
 
 
 if __name__ == "__main__":
