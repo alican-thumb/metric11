@@ -240,7 +240,6 @@ def build_html(payload: dict) -> str:
       <a href="transfer_recommendation_report_2025_2026.html">Transfer Raporu</a>
       <a href="transfer_season_context_2025_2026.html">Transfer Sezonu</a>
       <a href="news_intelligence_dashboard_2025_2026.html">Haber İstihbaratı</a>
-      <a href="scout_quality_report_2025_2026.html">Scout Kalite</a>
       <a href="metric11_warehouse_quality.html">Veri Ambarı</a>
       <a href="data_quality_scorecard_2025_2026.html">Kalite Skoru</a>
       <a href="position_scout_matrix_2025_2026.html">Pozisyon Scout</a>
@@ -257,7 +256,6 @@ def build_html(payload: dict) -> str:
       {metric("Lig değer kapsamı", f"{league_market.get('covered_matches', 0)} / {league_market.get('league_model_matches', 0)}")}
       {metric("Büyük maç uyarısı", big_match_summary.get("high_or_medium_risk_count", 0))}
       {metric("Golcü listesi isabeti", f"%{round(goal.get('top_5_hit_rate', 0) * 100)}")}
-      {metric("Scout kontrol kuyruğu", scout_quality_summary.get("low_confidence_blueprint_links", 0))}
       {metric("Veri kalite skoru", data_quality.get("score", 0))}
     </div>
     <details>

@@ -150,9 +150,14 @@ def _article_html(a: dict, source_count: int = 1, player_name: str | None = None
 
 
 def _transfer_html(t: dict) -> str:
-    player = escape(t.get("player", "?"))
-    frm    = escape(t.get("from_club") or "—")
-    to     = escape(t.get("to_club") or "—")
+    raw_player = t.get("player") or ""
+    if not raw_player or raw_player == "?":
+        return ""
+    player = escape(raw_player)
+    _frm = t.get("from_club") or ""
+    _to  = t.get("to_club") or ""
+    frm  = escape(_frm if _frm and _frm != "?" else "—")
+    to   = escape(_to  if _to  and _to  != "?" else "—")
     mv     = escape(t.get("market_value_text", "—"))
     status = t.get("status", "REVIEW_REQUIRED")
     link   = t.get("link", "")
@@ -209,7 +214,7 @@ def _build_player_index(transfers: list[dict]) -> dict[str, str]:
     """Transfer listesinden oyuncu adı → tam ad eşlem tablosu üretir (soyad bazlı)."""
     index: dict[str, str] = {}
     for t in transfers:
-        full = t.get("player", "").strip()
+        full = (t.get("player") or "").strip()
         if not full:
             continue
         parts = full.split()

@@ -133,12 +133,6 @@ def build_html() -> str:
             f"{transfer_report.get('total_candidate_suggestions', 0)} öneri",
         ),
         panel_card(
-            "Scout Kalite Denetimi",
-            "Düşük pozisyon güvenli adayları, fazla role yayılan oyuncuları ve doğrulanması gereken veri alanlarını inceleme kuyruğuna alır.",
-            "scout_quality_report_2025_2026.html",
-            f"{scout_quality.get('low_confidence_blueprint_links', 0)} kontrol",
-        ),
-        panel_card(
             "Zenginleştirilmiş Scout Paneli",
             "Lig oyuncu havuzuna yaş, sözleşme riski, fırsat skoru, resale ve opsiyonel FM/FIFA tarzı attribute sinyali eklendi.",
             "league_scouting_enriched_2025_2026_dashboard.html",

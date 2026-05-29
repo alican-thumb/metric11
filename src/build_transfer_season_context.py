@@ -38,7 +38,9 @@ def _load_json(path: Path) -> dict | list | None:
     return None
 
 
-def _title(name: str) -> str:
+def _title(name: str | None) -> str | None:
+    if not name:
+        return None
     lowered = name.replace("İ", "i").replace("I", "ı").lower()
     return " ".join(word.capitalize() for word in lowered.split())
 
@@ -317,9 +319,12 @@ def _signals_section(signals: list[dict]) -> str:
 
     cards = ""
     for s in signals[:20]:
-        player = _title(s.get("player_name") or "?")
-        from_club = _title(s.get("from_club") or "?")
-        to_club = _title(s.get("to_club") or "?")
+        raw_player = s.get("player_name")
+        if not raw_player:
+            continue
+        player = _title(raw_player)
+        from_club = _title(s.get("from_club")) or "—"
+        to_club = _title(s.get("to_club")) or "—"
         mv = s.get("tm_market_value_eur") or s.get("market_value_eur")
         mv_html = f"      <span style='color:#116447;font-weight:600'>{_mv_str(mv)}</span>\n" if mv else ""
         status = s.get("verification_status", "REVIEW_REQUIRED")
@@ -337,8 +342,9 @@ def _signals_section(signals: list[dict]) -> str:
         }.get(status, "#627067")
         sources = s.get("sources") or []
         source_count = s.get("source_count", len(sources))
-        source_text = ", ".join(sources[:3]) if sources else s.get("source", "?")
-        window = s.get("window") or "?"
+        source_text = ", ".join(sources[:3]) if sources else (s.get("source") or "—")
+        _win = s.get("window") or ""
+        window = {"summer_2026": "Yaz 2026", "winter_2026": "Kış 2026"}.get(_win, _win or "—")
         interpretation = s.get("interpretation", "")
         cards += f"""
 <div style='background:#fff;border:1px solid #d7ded9;border-radius:8px;padding:14px 16px;margin-bottom:10px;border-left:3px solid {conf_color}'>
@@ -499,7 +505,7 @@ def main() -> None:
         "<a style='white-space:nowrap;color:#8fa89a;padding:8px 11px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600' href='transfer_recommendation_report_2025_2026.html'>Scout</a>"
         "<a style='white-space:nowrap;color:#8fa89a;padding:8px 11px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600' href='football_intelligence_home.html'>Analiz</a>"
         "</nav></div>",
-        "<div style='max-width:1100px;margin:24px auto'>",
+        "<div style='max-width:1100px;margin:24px auto;padding:0 clamp(12px,3vw,28px)'>",
         _header_section(),
         _countdown_banner(),
         _summary_bar(free_agents, final_year, signals, promotions),

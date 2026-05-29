@@ -56,9 +56,9 @@ def _mv(eur: int | None) -> str:
     return f"€{eur // 1000}K"
 
 
-def _title(name: str | None) -> str:
+def _title(name: str | None) -> str | None:
     if not name:
-        return "?"
+        return None
     low = name.replace("İ", "i").replace("I", "ı").lower()
     return " ".join(w.capitalize() for w in low.split())
 
@@ -148,9 +148,9 @@ def _build_summary(signals: list[dict]) -> dict:
 def _row_html(s: dict) -> str:
     label, color, bg = STATUS_META[s["status"]]
     mv = escape(s["market_value_text"])
-    player = escape(s["player"])
-    frm    = escape(s["from_club"])
-    to     = escape(s["to_club"])
+    player = escape(s["player"] or "—")
+    frm    = escape(s["from_club"] or "—")
+    to     = escape(s["to_club"] or "—")
     tt     = "Kalıcı" if s["transfer_type"] == "permanent" else "Kiralık"
     link   = s.get("link", "")
     title  = escape(s.get("title", "") or s["player"])
@@ -196,8 +196,8 @@ def _news_section_html(unnamed: list[dict]) -> str:
 def build_html(signals: list[dict], summary: dict) -> str:
     from urllib.parse import quote
     now = datetime.now(timezone.utc).strftime("%d.%m.%Y %H:%M")
-    named   = [s for s in signals if s["player"] != "?"]
-    unnamed = [s for s in signals if s["player"] == "?"]
+    named   = [s for s in signals if s.get("player")]
+    unnamed = [s for s in signals if not s.get("player")]
     rows = "\n".join(_row_html(s) for s in named) if named else "<tr><td colspan='8' style='padding:24px;text-align:center;color:var(--muted)'>Henüz kayıtlı transfer yok</td></tr>"
     share_text = quote(
         f"Süper Lig transfer radarı: {summary['official_count']} resmi, "
