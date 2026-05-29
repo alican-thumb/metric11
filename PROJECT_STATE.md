@@ -1621,6 +1621,21 @@ Bir sonraki oturumda önce `PROJECT_STATE.md` okunmalı. Ardından öncelik:
 - Tüm site (54 HTML, 18 takım dashboard dahil) rebuild edildi; her sayfada nav "Arşiv" etiketiyle tutarlı.
 - Command center header "Beşiktaş maç önü raporları" → "Süper Lig tahmin kontrolü, gol adayı performansı, transfer radar ve scout kararları" olarak güncellendi.
 
+## 2026-05-29 Bug Temizleme & Gereksiz Sayfa Kaldırma (Session 11)
+
+### "?" Görünen ve Tıklanamayan Alanlar Giderildi
+- `build_transfer_tracker.py`: `_title(None)` crash fix — `None` guard eklendi; `from_club/to_club` None ise `"—"` gösteriliyor.
+- `build_live_feed.py`: `t.get("player", "")` → `(t.get("player") or "")` ile `None.strip()` hatası giderildi; `_transfer_html` oyuncu adı boş veya "?" ise satırı atlar.
+- `build_transfer_season_context.py`: `_title(name: str)` → `_title(name: str | None) -> str | None`; `player_name` None olan sinyaller sinyal listesinden atlanıyor; `from_club/to_club` None ise `"—"` gösteriliyor.
+
+### Scout Kalite Denetimi Sayfası Kaldırıldı
+- `build_product_home.py` ve `build_command_center.py`'den "Scout Kalite Denetimi" panel ve nav linki silindi — sayfa içeriği zaten boştu (0 sinyal).
+
+### Beşiktaş Takım İhtiyaç Paneli Kaldırıldı
+- `besiktas_team_needs_2025_2026_dashboard.html` product home, command center nav ve tüm veri yüklemelerinden temizlendi — 102 satır, JSON bozuk, içerik boştu.
+- `build_command_center.py`'deki "Takım İhtiyaçları" ve "Kadro Gerçekliği" HTML bölümleri silindi.
+- Bağımlı değişkenler kaldırıldı: `team_needs`, `team_summary`, `needs` değişkenleri temizlendi.
+
 ## 2026-05-29 FM Scout Multi-Team + Global Havuz + Scout Sayfaları (Session 8)
 
 - `import_player_attribute_dataset.py`: `_pos_*` FM2023 pozisyon sütun alanları eklendi (GK, DL, DC, DR, WBL, WBR, DM, ML, MC, MR, AML, AMC, AMR); `_derive_position_group()` fonksiyonu eklendi; FM2023 normalize verisi yeniden üretildi — 8452 oyuncu, 4 pozisyon grubu (FWD/MID/DEF/GK), hiç None yok.
