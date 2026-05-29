@@ -46,11 +46,11 @@
 - {'team_name': 'BEŞİKTAŞ A.Ş.', 'overall_power_score': 62.5, 'points_per_match': 1.76}
 
 ### besiktas_blueprint
-- {'role_label': 'Bek / çift yönlü koridor', 'candidate_name': 'KENNETH IMMANUEL PAAL', 'candidate_team': 'HESAP.COM ANTALYASPOR', 'fit_score': 119.9, 'position_confidence': 'MEDIUM_DERIVED_ROLE'}
 - {'role_label': 'Bek / çift yönlü koridor', 'candidate_name': 'YHOAN MANY ANDZOUANA', 'candidate_team': 'TÜMOSAN KONYASPOR', 'fit_score': 110.2, 'position_confidence': 'MEDIUM_DERIVED_ROLE'}
 - {'role_label': 'Bek / çift yönlü koridor', 'candidate_name': 'ROLAND SALLAI', 'candidate_team': 'GALATASARAY A.Ş.', 'fit_score': 101.9, 'position_confidence': 'MEDIUM_DERIVED_ROLE'}
 - {'role_label': 'Bek / çift yönlü koridor', 'candidate_name': 'RUAN PEREIRA DUARTE', 'candidate_team': 'CORENDON ALANYASPOR', 'fit_score': 100.9, 'position_confidence': 'MEDIUM_DERIVED_ROLE'}
 - {'role_label': 'Bek / çift yönlü koridor', 'candidate_name': 'WAGNER FABRICIO CARDOSO DE PINA', 'candidate_team': 'TRABZONSPOR A.Ş.', 'fit_score': 99.03, 'position_confidence': 'MEDIUM_EXTERNAL'}
+- {'role_label': 'Bek / çift yönlü koridor', 'candidate_name': 'ZEKİ YAVRU', 'candidate_team': 'SAMSUNSPOR A.Ş.', 'fit_score': 97.2, 'position_confidence': 'MEDIUM_DERIVED_ROLE'}
 - {'role_label': 'Sol açık / çizgi kırıcı', 'candidate_name': 'YUNUS AKGÜN', 'candidate_team': 'GALATASARAY A.Ş.', 'fit_score': 116.95, 'position_confidence': 'MEDIUM_EXTERNAL'}
 - {'role_label': 'Sol açık / çizgi kırıcı', 'candidate_name': 'BARIŞ ALPER YILMAZ', 'candidate_team': 'GALATASARAY A.Ş.', 'fit_score': 111.7, 'position_confidence': 'MEDIUM_EXTERNAL'}
 - {'role_label': 'Sol açık / çizgi kırıcı', 'candidate_name': 'KAZEEM ADEREMI J. OLAIGBE', 'candidate_team': 'TRABZONSPOR A.Ş.', 'fit_score': 109.06, 'position_confidence': 'MEDIUM_EXTERNAL'}
