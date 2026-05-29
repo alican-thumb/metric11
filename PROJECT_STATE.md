@@ -1,6 +1,6 @@
 # Futbol İstihbarat Platformu - Proje Durumu
 
-Son güncelleme: 2026-05-29 (session 8)
+Son güncelleme: 2026-05-29 (session 11)
 
 ## Amaç
 
@@ -1620,6 +1620,27 @@ Bir sonraki oturumda önce `PROJECT_STATE.md` okunmalı. Ardından öncelik:
 - 7 inline-nav dosyasına `preview_nav_label()` import edildi: `build_news_intelligence_report.py`, `build_all_teams_preview_dashboard.py`, `build_transfer_recommendation_report.py`, `build_transfer_tracker.py`, `build_command_center.py`, `build_dashboard.py`, `build_league_intelligence_report.py`.
 - Tüm site (54 HTML, 18 takım dashboard dahil) rebuild edildi; her sayfada nav "Arşiv" etiketiyle tutarlı.
 - Command center header "Beşiktaş maç önü raporları" → "Süper Lig tahmin kontrolü, gol adayı performansı, transfer radar ve scout kararları" olarak güncellendi.
+
+## 2026-05-29 Site Sayfa Temizleme — Boş & Orphan Sayfalar (Session 11 devam)
+
+### Kaldırılan Sayfalar (9 adet)
+**Bağlı ama boş/eski:**
+- `league_scouting_2025_2026_normalized_dashboard.html` — hiçbir builder tarafından üretilmiyor, stale
+- `league_scouting_enriched_2025_2026_dashboard.html` — FM Scout programı kapsamı karşılıyor
+- `api_football_super_lig_deep_2024_analysis.html` — 2024 sezonu eski dış API snapshot
+
+**Orphan (hiçbir entry point'ten bağlı değil):**
+- `league_scouting_2025_2026_dashboard.html` — enriched versiyonunun eski hali
+- `api_football_super_lig_2024_analysis.html` — deep versiyonunun eski hali
+- `scout_quality_report_2025_2026.html` — nav'dan zaten çıkarılmıştı, HTML dosyası silindi
+- `prediction_validation_report_2025_2026.html` — iç araç, orphan
+- `system_status.html` — iç araç, orphan
+- `besiktas_team_needs_2025_2026_dashboard.html` — önceki oturumdan kalan
+
+**Kaynak temizliği:**
+- `build_product_home.py`: `enriched_scout` ve `scout_quality` JSON yüklemeleri kaldırıldı
+- `build_command_center.py`: "Dış Derin Veri" nav linki kaldırıldı
+- Sitede artık tüm bağlı sayfalar aktif veri içeriyor; boş veya stale sayfa kalmadı
 
 ## 2026-05-29 Bug Temizleme & Gereksiz Sayfa Kaldırma (Session 11)
 
