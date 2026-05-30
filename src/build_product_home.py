@@ -45,8 +45,6 @@ def build_html() -> str:
     data_quality = load_json(PROCESSED_DIR / "data_quality_scorecard_2025_2026.json")
     availability = load_json(PROCESSED_DIR / "player_availability_besiktas_2025_2026.json").get("summary", {})
     api_football_2024 = load_json(PROCESSED_DIR / "api_football_super_lig_snapshot_2024.json").get("summary", {})
-    api_analysis = load_json(PROCESSED_DIR / "api_football_super_lig_2024_analysis.json").get("summary", {})
-    api_deep = load_json(PROCESSED_DIR / "api_football_super_lig_deep_2024_analysis.json").get("summary", {})
     alias_quality = load_json(PROCESSED_DIR / "player_alias_quality_2025_2026.json").get("summary", {})
     transfer_report = load_json(PROCESSED_DIR / "transfer_recommendation_report_2025_2026.json").get("summary", {})
     news_intel = load_json(PROCESSED_DIR / f"news_intelligence_{SEASON}.json")
@@ -126,24 +124,6 @@ def build_html() -> str:
             "Sol açık, santrfor, 8 numara, 6 numara, bek, stoper ve kaleci rolleri için adayları takım ihtiyacı ve ekonomik fırsatla eşleştirir.",
             "position_scout_matrix_2025_2026.html",
             f"{position_matrix.get('roles', 0)} rol",
-        ),
-        panel_card(
-            "Veri Kaynak İzleme Listesi",
-            "TFF, Transfermarkt, beIN SPORTS/LigTV, API, açık veri, forum ve GitHub kaynaklarını risk/güncellik ritmiyle takip eder.",
-            "source_watchlist_2025_2026.html",
-            "kaynak radarı",
-        ),
-        panel_card(
-            "Dış API Veri Paneli",
-            "API-Football 2024 sezonundan puan durumu, fikstür, oyuncu rating, şut, pas, duel, asist ve kart sinyalleri.",
-            "api_football_super_lig_2024_analysis.html",
-            f"{api_analysis.get('fixtures', 0)} fikstür",
-        ),
-        panel_card(
-            "Dış API Derin Veri Paneli",
-            "2024 kadro havuzu, oyuncu sezon istatistikleri ve geçmiş sakatlık sinyalleriyle scout doğrulama katmanı.",
-            "api_football_super_lig_deep_2024_analysis.html",
-            f"{api_deep.get('combined_player_pool', 0)} oyuncu",
         ),
         panel_card(
             "Oyuncu Alias Kalite Raporu",

@@ -122,8 +122,6 @@ def _build_html() -> str:
         ("Tahmin Backtest", f"prediction_backtest_dashboard_{SEASON}.html"),
         ("OOS Validasyon", f"oos_validation_{SEASON}.html"),
         ("Büyük Maç Raporu", f"big_match_report_{SEASON}.html"),
-        ("Dış API Veri (2024)", "api_football_super_lig_2024_analysis.html"),
-        ("Dış API Derin Veri", "api_football_super_lig_deep_2024_analysis.html"),
         ("Pipeline Durum", "system_status.html"),
     ]
     tool_links = "".join(
