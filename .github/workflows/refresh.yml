@@ -33,7 +33,11 @@ jobs:
       - name: Haber topla (news-refresh fallback)
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          FOOTBALL_DATA_KEY: ${{ secrets.FOOTBALL_DATA_KEY }}
         run: |
+          python -m src.collect_worldcup_fixtures
+          python -m src.analyze_worldcup_predictions
+          python -m src.build_worldcup_predictions
           python -m src.collect_news_rss
           python -m src.collect_news_google
           python -m src.collect_official_club_news

@@ -141,12 +141,8 @@ def main() -> None:
     settings = load_settings()
     key = settings.football_data_key
     if not key:
-        print(
-            "HATA: FOOTBALL_DATA_KEY bulunamadı. "
-            ".env dosyasına FOOTBALL_DATA_KEY=<token> ekleyin.",
-            file=sys.stderr,
-        )
-        sys.exit(1)
+        print("UYARI: FOOTBALL_DATA_KEY eksik, worldcup fixture toplama atlandı.", file=sys.stderr)
+        sys.exit(0)
 
     teams_map = fetch_teams(key)
     time.sleep(1)

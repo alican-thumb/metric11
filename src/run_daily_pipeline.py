@@ -58,7 +58,10 @@ DEFAULT_COMMANDS = [
     ["python", "-m", "src.build_og_images"],
     ["python", "-m", "src.build_live_feed"],
     ["python", "-m", "src.build_command_center"],
+    ["python", "-m", "src.analyze_worldcup_predictions"],
+    ["python", "-m", "src.build_worldcup_predictions"],
     ["python", "-m", "src.build_product_home"],
+    ["python", "-m", "src.build_sitemap"],
     ["python", "-m", "src.build_status_page"],
     ["python", "-m", "src.build_admin_page"],
 ]
@@ -107,6 +110,7 @@ NETWORK_COMMANDS = [
         "--output", "data/processed/tm_squad_changes_2025_2026.json",
         "--season", "2025_2026",
     ],
+    ["python", "-m", "src.collect_worldcup_fixtures"],
     ["python", "-m", "src.collect_news_context"],
     ["python", "-m", "src.collect_news_rss"],
     ["python", "-m", "src.collect_news_google"],
