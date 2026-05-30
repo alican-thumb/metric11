@@ -69,6 +69,7 @@ _CSS = """
 def _build_nav(active: str = "") -> str:
     links = [
         ("G&#xfc;ndem", "/"),
+        ("Tahminler", "worldcup_2026_predictions.html"),
         ("Transferler", "transfer_tracker_2025_2026.html"),
         (_preview_label(), "all_teams_preview_dashboard_2025_2026.html"),
         ("Scout", "transfer_recommendation_report_2025_2026.html"),

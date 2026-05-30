@@ -54,6 +54,12 @@ def build_html() -> str:
 
     cards = [
         panel_card(
+            "FIFA Dünya Kupası 2026 Tahminleri",
+            "48 takım, 104 maç. Skor tahmini, sonuç olasılıkları, gol ve kart beklentisi — veri odaklı analizle.",
+            "worldcup_2026_predictions.html",
+            "11 Haz – 19 Tem 2026",
+        ),
+        panel_card(
             "Futbol Komuta Merkezi",
             "Tahmin performansı, Beşiktaş maç önü arşivi, gol adayları, FM scout ve takım ihtiyacını tek ekranda toplar.",
             "football_command_center_2025_2026.html",
