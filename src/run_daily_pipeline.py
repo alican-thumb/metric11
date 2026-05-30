@@ -111,6 +111,7 @@ NETWORK_COMMANDS = [
         "--season", "2025_2026",
     ],
     ["python", "-m", "src.collect_worldcup_fixtures"],
+    ["python", "-m", "src.collect_national_team_form"],
     ["python", "-m", "src.collect_news_context"],
     ["python", "-m", "src.collect_news_rss"],
     ["python", "-m", "src.collect_news_google"],
