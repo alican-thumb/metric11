@@ -268,12 +268,19 @@ def main() -> None:
     data = json.loads(fixtures_path.read_text(encoding="utf-8"))
     matches: list[dict] = data.get("matches", [])
 
-    print(f"{len(matches)} maç analiz ediliyor…", flush=True)
+    # Sadece grup aşaması (matchday 1-3) — eleme aşamasında takımlar henüz belli değil
+    group_matches = [
+        m for m in matches
+        if m.get("matchday") and m.get("matchday") > 0
+        and m.get("home", {}).get("name")
+        and m.get("away", {}).get("name")
+    ]
+    print(f"{len(group_matches)} grup aşaması maçı analiz ediliyor…", flush=True)
 
     matchday_predictions: dict[str, list] = {}
-    for match in matches:
+    for match in group_matches:
         prediction = analyze_match(match)
-        md_key = str(match.get("matchday") or "0")
+        md_key = str(match.get("matchday"))
         matchday_predictions.setdefault(md_key, []).append(prediction)
 
     # Her matchday içinde tarihe göre sırala

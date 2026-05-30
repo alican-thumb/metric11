@@ -647,7 +647,7 @@ def _build_matchday_section(md_key: str, predictions: list[dict]) -> str:
 def _build_tabs(md_keys: list[str]) -> str:
     btns = "".join(
         f'<button class="tab-btn" data-tab="{escape(k)}" onclick="showMatchday(\'{escape(k)}\')">'
-        f"Hafta {escape(k)}</button>"
+        f"{escape(k)}. Hafta</button>"
         for k in md_keys
     )
     return (
@@ -680,11 +680,12 @@ def build_page(predictions_data: dict) -> str:
     matchday_preds: dict[str, list] = predictions_data.get("matchday_predictions", {})
     generated_at = predictions_data.get("generated_at", "")
 
-    # Matchday anahtarlarını sayısal sıraya göre sırala
-    md_keys = sorted(matchday_preds.keys(), key=lambda x: int(x) if x.isdigit() else 999)
+    # Matchday anahtarlarını sayısal sıraya göre sırala, matchday 0 (eleme) dahil etme
+    md_keys = sorted(
+        [k for k in matchday_preds.keys() if k.isdigit() and int(k) > 0],
+        key=lambda x: int(x)
+    )
 
-    # Sadece GROUP_STAGE veya erken aşamaları al (matchday 1-3 tipik grup aşaması)
-    # Tüm matchday'leri göster
     tabs_html = _build_tabs(md_keys)
     sections_html = "\n".join(
         _build_matchday_section(k, matchday_preds[k]) for k in md_keys
