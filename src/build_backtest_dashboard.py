@@ -79,6 +79,13 @@ def build_html(
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tahmin Backtest Paneli — metric11</title>
+  <meta name="description" content="Süper Lig maç ve gol tahminlerinin geçmiş sezon backtest analizi: doğruluk oranları, hata dağılımı ve model kalibrasyonu — metric11.">
+  <meta property="og:title" content="Tahmin Backtest Paneli — metric11">
+  <meta property="og:description" content="Süper Lig maç ve gol tahminlerinin geçmiş sezon backtest analizi — metric11.">
+  <meta property="og:image" content="https://metric11.com/og-image.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://metric11.com/og-image.png">
   <meta name="theme-color" content="#091810">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <style>

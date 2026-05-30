@@ -91,10 +91,11 @@ def _build_nav(active: str = "") -> str:
     )
 
 
-def page_html(title: str, body_html: str, description: str = "Süper Lig maç tahminleri, scout analizleri ve transfer istihbaratı — metric11.", active_nav: str = "Analiz", og_image: str = "og-image.png") -> str:
+def page_html(title: str, body_html: str, description: str = "Süper Lig maç tahminleri, scout analizleri ve transfer istihbaratı — metric11.", active_nav: str = "Analiz", og_image: str = "og-image.png", noindex: bool = False) -> str:
     _t = escape(title)
     _d = escape(description)
     _og = f"https://metric11.com/{og_image}"
+    _robots = '  <meta name="robots" content="noindex,nofollow">\n' if noindex else ""
     return (
         "<!doctype html>\n"
         '<html lang="tr">\n'
@@ -110,6 +111,7 @@ def page_html(title: str, body_html: str, description: str = "Süper Lig maç ta
         '  <meta name="twitter:card" content="summary_large_image">\n'
         f'  <meta name="twitter:image" content="{_og}">\n'
         '  <meta name="theme-color" content="#091810">\n'
+        f"{_robots}"
         '  <link rel="icon" href="favicon.svg" type="image/svg+xml">\n'
         f"  <style>{_CSS}  </style>\n"
         "</head>\n"

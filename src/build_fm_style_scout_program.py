@@ -191,6 +191,15 @@ def build_html(payload: dict) -> str:
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>FM Scout Programı — metric11</title>
+  <meta name="description" content="Süper Lig 2025-2026 scouting programı: 691 oyuncu için Football Manager tarzı attribute barları, takım ihtiyacı eşleşmesi — metric11.">
+  <meta property="og:title" content="FM Scout Programı — metric11">
+  <meta property="og:description" content="Süper Lig 2025-2026 scouting programı: 691 oyuncu için Football Manager tarzı attribute barları — metric11.">
+  <meta property="og:image" content="https://metric11.com/og-image.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://metric11.com/og-image.png">
+  <meta name="theme-color" content="#091810">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <style>
     :root{{--bg:#f3f5f4;--panel:#fff;--ink:#132018;--muted:#627067;--line:#d7ded9;--dark:#091810;--green:#116447;--teal:#0d9488;--shadow:0 4px 16px rgba(9,24,16,.07);}}
     *{{box-sizing:border-box;margin:0;padding:0;}}

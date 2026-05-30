@@ -70,7 +70,10 @@ def build_html(payload: dict) -> str:
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Veri Kaynak İzleme Listesi</title>
+  <title>Veri Kaynak İzleme Listesi — metric11</title>
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#091810">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <style>
     :root {{ --bg:#f4f6f8; --panel:#fff; --ink:#14171c; --muted:#667085; --line:#dce2ea; --dark:#111318; --red:#bf1f2f; --amber:#b76b00; --green:#137a4b; --blue:#185ea8; --shadow:0 8px 22px rgba(18,24,32,.08); }}
     * {{ box-sizing:border-box; }}

@@ -47,7 +47,7 @@ def main() -> None:
     json_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     md_path.write_text(md, encoding="utf-8")
     html_path = PROCESSED_DIR / f"{args.output_prefix}.html"
-    html_path.write_text(page_html("Veri Kalite Scorecard", md_to_html(md)), encoding="utf-8")
+    html_path.write_text(page_html("Veri Kalite Scorecard", md_to_html(md), noindex=True), encoding="utf-8")
     print(md)
 
 

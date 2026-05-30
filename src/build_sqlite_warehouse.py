@@ -32,7 +32,7 @@ def main() -> None:
         report_json.write_text(json.dumps(quality, ensure_ascii=False, indent=2), encoding="utf-8")
         report_md.write_text(md, encoding="utf-8")
         report_html = PROCESSED_DIR / f"{args.report_prefix}.html"
-        report_html.write_text(page_html("SQLite Veri Ambarı Kalitesi", md_to_html(md)), encoding="utf-8")
+        report_html.write_text(page_html("SQLite Veri Ambarı Kalitesi", md_to_html(md), noindex=True), encoding="utf-8")
         print(md)
     finally:
         conn.close()

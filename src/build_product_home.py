@@ -43,8 +43,6 @@ def build_html() -> str:
     league_intelligence = load_json(PROCESSED_DIR / "league_intelligence_2025_2026.json").get("summary", {})
     team_blueprints = load_json(PROCESSED_DIR / "team_scout_blueprints_2025_2026.json").get("summary", {})
     data_quality = load_json(PROCESSED_DIR / "data_quality_scorecard_2025_2026.json")
-    warehouse_quality = load_json(PROCESSED_DIR / "metric11_warehouse_quality.json")
-    data_catalog = load_json(PROCESSED_DIR / "data_catalog_2025_2026.json").get("coverage", {})
     availability = load_json(PROCESSED_DIR / "player_availability_besiktas_2025_2026.json").get("summary", {})
     api_football_2024 = load_json(PROCESSED_DIR / "api_football_super_lig_snapshot_2024.json").get("summary", {})
     api_analysis = load_json(PROCESSED_DIR / "api_football_super_lig_2024_analysis.json").get("summary", {})
@@ -128,24 +126,6 @@ def build_html() -> str:
             "Sol açık, santrfor, 8 numara, 6 numara, bek, stoper ve kaleci rolleri için adayları takım ihtiyacı ve ekonomik fırsatla eşleştirir.",
             "position_scout_matrix_2025_2026.html",
             f"{position_matrix.get('roles', 0)} rol",
-        ),
-        panel_card(
-            "Veri Kataloğu",
-            "Toplanan veri kapsamı, kaynak riski, eksik kritik alanlar ve ürün hazırlık durumu.",
-            "data_catalog_2025_2026.html",
-            f"{data_catalog.get('matches', 0)} maç",
-        ),
-        panel_card(
-            "Veri Kalite Scorecard",
-            "Kapsam, oyuncu profili, tahmin doğruluğu, beraberlik yakalama, gol adayı ve scout pozisyon güveni için sağlık kartı.",
-            "data_quality_scorecard_2025_2026.html",
-            f"{data_quality.get('score', 0)}/100",
-        ),
-        panel_card(
-            "SQLite Veri Ambarı",
-            "Maç, takım, oyuncu, hakem, tahmin, gol adayı ve scout blueprint tablolarını tek sorgulanabilir dosyada toplar.",
-            "metric11_warehouse_quality.html",
-            f"{sum(warehouse_quality.get('table_counts', {}).values())} satır",
         ),
         panel_card(
             "Veri Kaynak İzleme Listesi",
