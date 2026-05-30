@@ -541,6 +541,23 @@
         "recent_cards": 0
       },
       {
+        "player_id": "2820847",
+        "name": "ISHOLA JUNIOR  OLAITAN",
+        "goal_threat_score": 5.56,
+        "candidate_type": "primary+impact_sub",
+        "recent_starts": 1,
+        "season_goals_before_match": 1,
+        "recent_goals": 0,
+        "big_match_goals_before_match": 0,
+        "opponent_defense_multiplier": 1.22,
+        "actual_scorer": false,
+        "header_goals_before_match": 0,
+        "penalty_goals_before_match": 0,
+        "recent_bench": 5,
+        "cards_before_match": 1,
+        "recent_cards": 1
+      },
+      {
         "player_id": "2498398",
         "name": "ANTHONY JUNIOR DENNIS",
         "goal_threat_score": 5.54,
@@ -585,28 +602,6 @@
         "recent_bench": 0,
         "cards_before_match": 1,
         "recent_cards": 1
-      },
-      {
-        "player_id": "2820847",
-        "name": "ISHOLA JUNIOR  OLAITAN",
-        "goal_threat_score": 3.78,
-        "candidate_type": "primary+impact_sub",
-        "recent_starts": 1,
-        "season_goals_before_match": 1,
-        "recent_goals": 0,
-        "big_match_goals_before_match": 0,
-        "opponent_defense_multiplier": 1.22,
-        "actual_scorer": false,
-        "header_goals_before_match": 0,
-        "penalty_goals_before_match": 0,
-        "recent_bench": 5,
-        "cards_before_match": 1,
-        "recent_cards": 1,
-        "quality_adjustment": {
-          "multiplier": 0.68,
-          "reason": "Top 5 sıralama etkisini düşür veya aday tipini yeniden kontrol et.",
-          "source": "goal_candidate_segment_backtest"
-        }
       },
       {
         "player_id": "2294118",
@@ -779,11 +774,11 @@
       "JUAN SANTOS DA SILVA",
       "EFKAN BEKİROĞLU",
       "RHALDNEY NORBERTO SIMIAO GOMES",
-      "ANTHONY JUNIOR DENNIS",
       "MATEUSZ LIS",
       "HELITON JORGE  TITO DOS SANTOS",
       "MOHAMMED AMIN CHERNI",
-      "JANDERSON  DE CARVALHO COSTA"
+      "JANDERSON  DE CARVALHO COSTA",
+      "ARDA OKAN KURTULAN"
     ],
     "attacking_priority": [
       "JUAN SANTOS DA SILVA",
@@ -812,8 +807,8 @@
   "coach_lineup_audit": {
     "verdict": "KISMEN_TARTIŞMALI",
     "actual_lineup_score": 90.03,
-    "recommended_lineup_score": 101.27,
-    "alignment_rate": 0.889,
+    "recommended_lineup_score": 98.77,
+    "alignment_rate": 0.911,
     "actual_starters": [
       "MATEUSZ LIS",
       "ARDA OKAN KURTULAN",
@@ -831,11 +826,11 @@
       "JUAN SANTOS DA SILVA",
       "EFKAN BEKİROĞLU",
       "RHALDNEY NORBERTO SIMIAO GOMES",
-      "ANTHONY JUNIOR DENNIS",
       "MATEUSZ LIS",
       "HELITON JORGE  TITO DOS SANTOS",
       "MOHAMMED AMIN CHERNI",
-      "JANDERSON  DE CARVALHO COSTA"
+      "JANDERSON  DE CARVALHO COSTA",
+      "ARDA OKAN KURTULAN"
     ],
     "omitted_core_players": [
       "RHALDNEY NORBERTO SIMIAO GOMES"
@@ -851,13 +846,13 @@
         "goal_threat_score": 0
       }
     ],
-    "alternative_xg_for": 1.37,
+    "alternative_xg_for": 1.35,
     "alternative_xg_against": 0.86,
     "alternative_scoreline": {
       "target_goals": 1,
       "opponent_goals": 0,
       "score": "1-0",
-      "probability": 0.147
+      "probability": 0.148
     },
     "note": "Bu denetim gerçek maçtan önceki kullanım/gol/kart sinyaliyle çalışır; teknik direktörün antrenman, sakatlık ve taktik bilgisine sahip değildir."
   },
@@ -1053,7 +1048,7 @@
     "Gol adayı sinyalinde öne çıkan isimler: JUAN SANTOS DA SILVA, EFKAN BEKİROĞLU, IBRAHIM MOHAMMED ABDALLAH SABRA, RHALDNEY NORBERTO SIMIAO GOMES. Bu skor son gol formu, sezon içi gol sayısı ve son dönemde ilk 11 başlama sıklığından türetildi. Test sonucunda gerçek Beşiktaş golcüleri: TAHA ALTIKARDEŞ, JUAN SANTOS DA SILVA.",
     "Skor dağılımında en olası senaryolar: 1-0 (%15), 1-1 (%13), 0-0 (%12). Model aksiyonu: Korumalı taraf tahmini; önerilen ana skor 1-0.",
     "Kadro tercih önerisi: Önde baskı ve skor arama. Hücum önceliği JUAN SANTOS DA SILVA, EFKAN BEKİROĞLU, IBRAHIM MOHAMMED ABDALLAH SABRA. Disiplin yönetimi gereken oyuncular: ISHOLA JUNIOR  OLAITAN, RUAN GREGORIO TEIXEIRA, FURKAN BAYIR.",
-    "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %89 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.26-0.86 yerine 1.37-0.86 bandına gelebilirdi.",
+    "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %91 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.26-0.86 yerine 1.35-0.86 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday YUNUS AKGÜN (Sol açık / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.26-0.86 bandından 1.59-0.84 bandına taşırdı. Bu senaryoda en olası skor 1-0 ve kazanma olasılığı %55 olurdu.",
     "MVP olasılık motoru Beşiktaş galibiyetini %46, beraberliği %28, rakip galibiyetini %26 olarak işaretliyor. Gol beklentisi 1.26-0.86; kart sinyali MEDIUM."
   ]
