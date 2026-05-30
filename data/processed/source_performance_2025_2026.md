@@ -1,6 +1,6 @@
 # Erken Haber Kaynak Performansı
 
-- Transfer sinyali: 19
+- Transfer sinyali: 21
 - Resmi olaya dönüşen transfer: 3
 - Yayın zamanı bulunan resmi teyit: 1/3
 - İlk görülme zamanı bulunan resmi teyit: 3/3
@@ -8,11 +8,11 @@
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 0
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 138
+- Defterde korunan ilk iddia gözlemi: 141
 
 ## Kanal Kapsamı
 
-- Google News: 164 haber, 30/30 başarılı sorgu.
+- Google News: 157 haber, 30/30 başarılı sorgu.
 - Telegram: 6 mesaj, 8/8 erişilebilir kanal.
 - X: durum=MISSING_CREDENTIALS, gönderi=0, yapılandırılmış hesap=45.
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 135 | 19 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Google News / medya | 138 | 20 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -58,13 +58,13 @@
 | Fotomaç | MEDIA | 11 | 2 | 0 | — | — | — | — | OBSERVING |
 | NTVSpor | MEDIA | 7 | 1 | 0 | — | — | — | — | OBSERVING |
 | Aksam Spor | MEDIA | 6 | 0 | 0 | — | — | — | — | OBSERVING |
-| beinsports.com.tr | MEDIA | 4 | 0 | 0 | — | — | — | — | OBSERVING |
-| FOTOMAÇ | MEDIA | 3 | 1 | 0 | — | — | — | — | OBSERVING |
+| beinsports.com.tr | MEDIA | 5 | 0 | 0 | — | — | — | — | OBSERVING |
+| FOTOMAÇ | MEDIA | 4 | 1 | 0 | — | — | — | — | OBSERVING |
+| A SPOR | MEDIA | 3 | 2 | 0 | — | — | — | — | OBSERVING |
 | Haber 7 | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
 | Haberturk Spor | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
 | Taka Gazete | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
 | Yeniçağ Gazetesi | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
-| A SPOR | MEDIA | 2 | 1 | 0 | — | — | — | — | OBSERVING |
 | CNN Türk Spor | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Cumhuriyet | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | GZT | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
