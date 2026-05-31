@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-31T15:43:02.565554+00:00",
+  "generated_at": "2026-05-31T19:43:20.353384+00:00",
   "season": "2025_2026",
   "maturity_days": 14,
   "summary": {
-    "transfer_signals": 33,
+    "transfer_signals": 31,
     "official_events": 3,
     "official_events_with_timestamp": 1,
     "official_events_with_first_observed_timestamp": 3,
@@ -12,11 +12,11 @@
     "measured_lead_times": 0,
     "first_seen_lead_times": 0,
     "tracked_x_sources_waiting": 20,
-    "retained_claim_observations": 187
+    "retained_claim_observations": 188
   },
   "provider_coverage": {
     "google_news": {
-      "articles": 175,
+      "articles": 173,
       "queries": 30,
       "successful_queries": 30
     },
@@ -36,7 +36,7 @@
       "source": "Google News / medya",
       "source_tier": "CHANNEL",
       "source_type": "media",
-      "observations": 184,
+      "observations": 185,
       "scoreable_claims": 22,
       "official_conversions": 0,
       "lead_hours": [],
@@ -44,7 +44,7 @@
       "lead_time_unavailable": 0,
       "matured_unconfirmed": 6,
       "pending_claims": 16,
-      "unresolved_claims": 162,
+      "unresolved_claims": 163,
       "status": "PARTIAL_MEASUREMENT",
       "score": 0.0,
       "average_lead_hours": null,
@@ -395,6 +395,26 @@
       "false_alarm_proxy_pct": null
     },
     {
+      "source": "GZT",
+      "source_tier": "MEDIA",
+      "source_type": null,
+      "observations": 4,
+      "scoreable_claims": 0,
+      "official_conversions": 0,
+      "lead_hours": [],
+      "first_seen_lead_hours": [],
+      "lead_time_unavailable": 0,
+      "matured_unconfirmed": 0,
+      "pending_claims": 0,
+      "unresolved_claims": 4,
+      "status": "OBSERVING",
+      "score": null,
+      "average_lead_hours": null,
+      "average_first_seen_lead_hours": null,
+      "official_conversion_rate_pct": null,
+      "false_alarm_proxy_pct": null
+    },
+    {
       "source": "Sabah",
       "source_tier": "MEDIA",
       "source_type": "rss",
@@ -427,26 +447,6 @@
       "matured_unconfirmed": 0,
       "pending_claims": 0,
       "unresolved_claims": 4,
-      "status": "OBSERVING",
-      "score": null,
-      "average_lead_hours": null,
-      "average_first_seen_lead_hours": null,
-      "official_conversion_rate_pct": null,
-      "false_alarm_proxy_pct": null
-    },
-    {
-      "source": "GZT",
-      "source_tier": "MEDIA",
-      "source_type": null,
-      "observations": 3,
-      "scoreable_claims": 0,
-      "official_conversions": 0,
-      "lead_hours": [],
-      "first_seen_lead_hours": [],
-      "lead_time_unavailable": 0,
-      "matured_unconfirmed": 0,
-      "pending_claims": 0,
-      "unresolved_claims": 3,
       "status": "OBSERVING",
       "score": null,
       "average_lead_hours": null,
