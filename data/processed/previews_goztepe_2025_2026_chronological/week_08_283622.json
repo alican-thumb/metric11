@@ -553,18 +553,6 @@
         "actual_scorer": true
       },
       {
-        "player_id": "2820847",
-        "name": "ISHOLA JUNIOR  OLAITAN",
-        "goal_threat_score": 6.57,
-        "candidate_type": "primary",
-        "recent_starts": 6,
-        "season_goals_before_match": 1,
-        "recent_goals": 1,
-        "big_match_goals_before_match": 0,
-        "opponent_defense_multiplier": 1.0,
-        "actual_scorer": false
-      },
-      {
         "player_id": "2761005",
         "name": "EMERSONN CORREIRA DA SILVA",
         "goal_threat_score": 5.43,
@@ -580,6 +568,23 @@
         "recent_bench": 2,
         "cards_before_match": 0,
         "recent_cards": 0
+      },
+      {
+        "player_id": "2820847",
+        "name": "ISHOLA JUNIOR  OLAITAN",
+        "goal_threat_score": 4.47,
+        "candidate_type": "primary",
+        "recent_starts": 6,
+        "season_goals_before_match": 1,
+        "recent_goals": 1,
+        "big_match_goals_before_match": 0,
+        "opponent_defense_multiplier": 1.0,
+        "actual_scorer": false,
+        "quality_adjustment": {
+          "multiplier": 0.68,
+          "reason": "Top 5 sıralama etkisini düşür veya aday tipini yeniden kontrol et.",
+          "source": "goal_candidate_segment_backtest"
+        }
       },
       {
         "player_id": "2294118",
@@ -760,7 +765,7 @@
   },
   "coach_lineup_audit": {
     "verdict": "TARTIŞMALI",
-    "actual_lineup_score": 85.87,
+    "actual_lineup_score": 85.88,
     "recommended_lineup_score": 83.92,
     "alignment_rate": 1.023,
     "actual_starters": [

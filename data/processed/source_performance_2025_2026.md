@@ -8,11 +8,11 @@
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 0
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 183
+- Defterde korunan ilk iddia gözlemi: 186
 
 ## Kanal Kapsamı
 
-- Google News: 172 haber, 30/30 başarılı sorgu.
+- Google News: 173 haber, 30/30 başarılı sorgu.
 - Telegram: 6 mesaj, 8/8 erişilebilir kanal.
 - X: durum=MISSING_CREDENTIALS, gönderi=0, yapılandırılmış hesap=45.
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 180 | 22 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Google News / medya | 183 | 22 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -55,17 +55,17 @@
 | Diken | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Yağız Sabuncuoğlu | ATTRIBUTED_MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Takvim | MEDIA | 28 | 2 | 0 | — | — | — | — | OBSERVING |
-| Fotomaç | MEDIA | 22 | 3 | 0 | — | — | — | — | OBSERVING |
+| Fotomaç | MEDIA | 23 | 3 | 0 | — | — | — | — | OBSERVING |
+| NTVSpor | MEDIA | 11 | 1 | 0 | — | — | — | — | OBSERVING |
 | Aksam Spor | MEDIA | 10 | 0 | 0 | — | — | — | — | OBSERVING |
-| NTVSpor | MEDIA | 10 | 1 | 0 | — | — | — | — | OBSERVING |
 | A SPOR | MEDIA | 7 | 2 | 0 | — | — | — | — | OBSERVING |
 | FOTOMAÇ | MEDIA | 6 | 1 | 0 | — | — | — | — | OBSERVING |
 | beinsports.com.tr | MEDIA | 5 | 0 | 0 | — | — | — | — | OBSERVING |
+| Sabah | MEDIA | 4 | 0 | 0 | — | — | — | — | OBSERVING |
 | Taka Gazete | MEDIA | 4 | 0 | 0 | — | — | — | — | OBSERVING |
 | GZT | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
 | Haber 7 | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
 | Haberturk Spor | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
-| Sabah | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
 | Yeniçağ Gazetesi | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
 | CNN Türk Spor | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Cumhuriyet | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
