@@ -5,7 +5,7 @@
 - Bu koşuda istenen profil: 507
 - Toplanan profil: 595
 - Tam ad bulunan profil: 301
-- Başarısız profil: 1
+- Başarısız profil: 0
 - Risk: HIGH
 - Lisans durumu: VERIFY_TERMS_BEFORE_COMMERCIAL_USE
 
