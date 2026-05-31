@@ -1,6 +1,6 @@
 # Erken Haber Kaynak Performansı
 
-- Transfer sinyali: 28
+- Transfer sinyali: 27
 - Resmi olaya dönüşen transfer: 3
 - Yayın zamanı bulunan resmi teyit: 1/3
 - İlk görülme zamanı bulunan resmi teyit: 3/3
@@ -8,11 +8,11 @@
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 0
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 170
+- Defterde korunan ilk iddia gözlemi: 172
 
 ## Kanal Kapsamı
 
-- Google News: 172 haber, 30/30 başarılı sorgu.
+- Google News: 175 haber, 30/30 başarılı sorgu.
 - Telegram: 6 mesaj, 8/8 erişilebilir kanal.
 - X: durum=MISSING_CREDENTIALS, gönderi=0, yapılandırılmış hesap=45.
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 167 | 20 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Google News / medya | 169 | 20 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -47,7 +47,7 @@
 
 | Kaynak | Katman | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---|
-| Hürriyet | MEDIA | 20 | 3 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Hürriyet | MEDIA | 21 | 3 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Milliyet | MEDIA | 13 | 3 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Fanatik | MEDIA | 6 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Mackolik.com | MEDIA | 3 | 2 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
@@ -59,7 +59,7 @@
 | Aksam Spor | MEDIA | 10 | 0 | 0 | — | — | — | — | OBSERVING |
 | NTVSpor | MEDIA | 8 | 1 | 0 | — | — | — | — | OBSERVING |
 | A SPOR | MEDIA | 6 | 2 | 0 | — | — | — | — | OBSERVING |
-| FOTOMAÇ | MEDIA | 5 | 1 | 0 | — | — | — | — | OBSERVING |
+| FOTOMAÇ | MEDIA | 6 | 1 | 0 | — | — | — | — | OBSERVING |
 | beinsports.com.tr | MEDIA | 5 | 0 | 0 | — | — | — | — | OBSERVING |
 | Taka Gazete | MEDIA | 4 | 0 | 0 | — | — | — | — | OBSERVING |
 | GZT | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
