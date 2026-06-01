@@ -1,6 +1,6 @@
 # Erken Haber Kaynak Performansı
 
-- Transfer sinyali: 31
+- Transfer sinyali: 28
 - Resmi olaya dönüşen transfer: 3
 - Yayın zamanı bulunan resmi teyit: 1/3
 - İlk görülme zamanı bulunan resmi teyit: 3/3
@@ -8,7 +8,7 @@
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 0
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 190
+- Defterde korunan ilk iddia gözlemi: 193
 
 ## Kanal Kapsamı
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 187 | 22 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Google News / medya | 190 | 22 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -55,13 +55,13 @@
 | Diken | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Yağız Sabuncuoğlu | ATTRIBUTED_MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Takvim | MEDIA | 29 | 2 | 0 | — | — | — | — | OBSERVING |
-| Fotomaç | MEDIA | 23 | 3 | 0 | — | — | — | — | OBSERVING |
+| Fotomaç | MEDIA | 24 | 3 | 0 | — | — | — | — | OBSERVING |
 | NTVSpor | MEDIA | 11 | 1 | 0 | — | — | — | — | OBSERVING |
 | Aksam Spor | MEDIA | 10 | 0 | 0 | — | — | — | — | OBSERVING |
+| FOTOMAÇ | MEDIA | 8 | 1 | 0 | — | — | — | — | OBSERVING |
 | A SPOR | MEDIA | 7 | 2 | 0 | — | — | — | — | OBSERVING |
-| FOTOMAÇ | MEDIA | 7 | 1 | 0 | — | — | — | — | OBSERVING |
+| GZT | MEDIA | 5 | 0 | 0 | — | — | — | — | OBSERVING |
 | beinsports.com.tr | MEDIA | 5 | 0 | 0 | — | — | — | — | OBSERVING |
-| GZT | MEDIA | 4 | 0 | 0 | — | — | — | — | OBSERVING |
 | Sabah | MEDIA | 4 | 0 | 0 | — | — | — | — | OBSERVING |
 | Taka Gazete | MEDIA | 4 | 0 | 0 | — | — | — | — | OBSERVING |
 | Haber 7 | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
