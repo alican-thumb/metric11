@@ -5,9 +5,9 @@
 - Toplanan kulüp: 18
 - Atlanan kulüp: 0
 - Oyuncu: 507
-- Toplam piyasa değeri: €1,348,025,000
-- Ortalama piyasa değeri: €2,862,049
-- Pozisyon grupları: {'GK': 62, 'DEF': 163, 'MID': 146, 'FWD': 136, 'UNKNOWN': 0}
+- Toplam piyasa değeri: €1,350,600,000
+- Ortalama piyasa değeri: €2,867,516
+- Pozisyon grupları: {'GK': 62, 'DEF': 163, 'MID': 147, 'FWD': 135, 'UNKNOWN': 0}
 
 ## Kulüpler
 
@@ -27,8 +27,8 @@
 - İKAS EYÜPSPOR: oyuncu=27, değer=€17,150,000, verified=True, url=https://www.transfermarkt.com/eyupspor/kader/verein/7160/saison_id/2025
 - GENÇLERBİRLİĞİ: oyuncu=33, değer=€26,250,000, verified=True, url=https://www.transfermarkt.com/genclerbirligi-ankara/kader/verein/820/saison_id/2025
 - ÇORUM FK: oyuncu=28, değer=€8,650,000, verified=True, url=https://www.transfermarkt.com/corum-fk/kader/verein/37951/saison_id/2025
-- ERZURUMSPOR FK: oyuncu=30, değer=€9,925,000, verified=True, url=https://www.transfermarkt.com/erzurumspor-fk/kader/verein/39722/saison_id/2025
-- AMED SFK: oyuncu=25, değer=€10,500,000, verified=True, url=https://www.transfermarkt.com/amed-sk/kader/verein/12382/saison_id/2025
+- ERZURUMSPOR FK: oyuncu=30, değer=€12,425,000, verified=True, url=https://www.transfermarkt.com/erzurumspor-fk/kader/verein/39722/saison_id/2025
+- AMED SFK: oyuncu=25, değer=€10,575,000, verified=True, url=https://www.transfermarkt.com/amed-sk/kader/verein/12382/saison_id/2025
 
 ## Beşiktaş Tekil Rapor Formatı
 
