@@ -54,8 +54,8 @@
 - {'role_label': 'Sol açık / çizgi kırıcı', 'candidate_name': 'YUNUS AKGÜN', 'candidate_team': 'GALATASARAY A.Ş.', 'fit_score': 104.95, 'position_confidence': 'MEDIUM_EXTERNAL'}
 - {'role_label': 'Sol açık / çizgi kırıcı', 'candidate_name': 'BARIŞ ALPER YILMAZ', 'candidate_team': 'GALATASARAY A.Ş.', 'fit_score': 99.7, 'position_confidence': 'MEDIUM_EXTERNAL'}
 - {'role_label': 'Sol açık / çizgi kırıcı', 'candidate_name': 'KAZEEM ADEREMI J. OLAIGBE', 'candidate_team': 'TRABZONSPOR A.Ş.', 'fit_score': 97.06, 'position_confidence': 'MEDIUM_EXTERNAL'}
-- {'role_label': 'Sol açık / çizgi kırıcı', 'candidate_name': 'GÖKTAN GÜRPÜZ', 'candidate_team': 'GENÇLERBİRLİĞİ', 'fit_score': 95.73, 'position_confidence': 'MEDIUM_EXTERNAL'}
 - {'role_label': 'Sol açık / çizgi kırıcı', 'candidate_name': 'DORGELES NENE', 'candidate_team': 'FENERBAHÇE A.Ş.', 'fit_score': 95.33, 'position_confidence': 'MEDIUM_EXTERNAL'}
+- {'role_label': 'Sol açık / çizgi kırıcı', 'candidate_name': 'ANTHONY TİTE EMMANUEL MUSABA', 'candidate_team': 'SAMSUNSPOR A.Ş.', 'fit_score': 82.55, 'position_confidence': 'MEDIUM_EXTERNAL'}
 
 ### card_heavy_referees
 - {'referee_name': 'FATİH TOKAİL', 'cards_per_match': 9.0, 'tempo_label': 'KARTLI'}

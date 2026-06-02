@@ -592,21 +592,9 @@
         "actual_scorer": false
       },
       {
-        "player_id": "2824343",
-        "name": "VACLAV CERNY",
-        "goal_threat_score": 8.02,
-        "candidate_type": "primary",
-        "recent_starts": 6,
-        "season_goals_before_match": 1,
-        "recent_goals": 1,
-        "big_match_goals_before_match": 0,
-        "opponent_defense_multiplier": 1.22,
-        "actual_scorer": false
-      },
-      {
         "player_id": "2820579",
         "name": "DAVID JURASEK",
-        "goal_threat_score": 6.48,
+        "goal_threat_score": 8.31,
         "candidate_type": "primary+impact_sub",
         "recent_starts": 4,
         "season_goals_before_match": 1,
@@ -618,12 +606,19 @@
         "penalty_goals_before_match": 0,
         "recent_bench": 4,
         "cards_before_match": 0,
-        "recent_cards": 0,
-        "quality_adjustment": {
-          "multiplier": 0.78,
-          "reason": "Top 5 sıralama etkisini düşür veya aday tipini yeniden kontrol et.",
-          "source": "goal_candidate_segment_backtest"
-        }
+        "recent_cards": 0
+      },
+      {
+        "player_id": "2824343",
+        "name": "VACLAV CERNY",
+        "goal_threat_score": 8.02,
+        "candidate_type": "primary",
+        "recent_starts": 6,
+        "season_goals_before_match": 1,
+        "recent_goals": 1,
+        "big_match_goals_before_match": 0,
+        "opponent_defense_multiplier": 1.22,
+        "actual_scorer": false
       },
       {
         "player_id": "773485",
@@ -998,35 +993,6 @@
         "commercial_note": "Al-sat değeri yüksek aday; doğru maaş/bonservis bandında ekonomik upside sağlar."
       },
       {
-        "player_name": "GÖKTAN GÜRPÜZ",
-        "current_team": "GENÇLERBİRLİĞİ",
-        "target_role": "Sol açık / çizgi kırıcı",
-        "role_key": "LW_CREATOR",
-        "role_fit_score": 95.73,
-        "position_confidence": "MEDIUM_EXTERNAL",
-        "age": 23,
-        "economy_score": 32.0,
-        "current_expected_goals_for": 1.7,
-        "current_expected_goals_against": 1.26,
-        "simulated_expected_goals_for": 1.99,
-        "simulated_expected_goals_against": 1.23,
-        "xg_for_delta": 0.29,
-        "xg_against_delta": 0.03,
-        "goal_edge_delta": 0.32,
-        "simulated_target_win_probability": 0.55,
-        "simulated_draw_probability": 0.217,
-        "simulated_opponent_win_probability": 0.233,
-        "simulated_scoreline": {
-          "target_goals": 1,
-          "opponent_goals": 1,
-          "score": "1-1",
-          "probability": 0.098
-        },
-        "impact_label": "MEDIUM_IMPACT",
-        "why": "Rol okuması: Right Winger (MEDIUM_EXTERNAL). İlk 11 25, gol 0, kart 2. Tahmini yük 10.0-11.5 km. Tempo ve tekrar koşu ihtiyacı olan rolde fiziksel yük proxy'si öne çıkarıldı. Sözleşme fırsatı HIGH seviyesinde. Genç değer/resale sinyali güçlü.",
-        "commercial_note": "Al-sat değeri yüksek aday; doğru maaş/bonservis bandında ekonomik upside sağlar."
-      },
-      {
         "player_name": "DORGELES NENE",
         "current_team": "FENERBAHÇE A.Ş.",
         "target_role": "Sol açık / çizgi kırıcı",
@@ -1083,6 +1049,35 @@
         "impact_label": "MEDIUM_IMPACT",
         "why": "Rol okuması: Left Winger (MEDIUM_EXTERNAL). İlk 11 24, gol 5, kart 4. Tahmini yük 10.0-11.5 km. Tempo ve tekrar koşu ihtiyacı olan rolde fiziksel yük proxy'si öne çıkarıldı.",
         "commercial_note": "Sportif katkı ve maliyet dengesi ayrıca piyasa değeriyle doğrulanmalı."
+      },
+      {
+        "player_name": "JESURUN  RAK-SAKYI",
+        "current_team": "ÇAYKUR RİZESPOR A.Ş.",
+        "target_role": "Sol açık / çizgi kırıcı",
+        "role_key": "LW_CREATOR",
+        "role_fit_score": 81.51,
+        "position_confidence": "MEDIUM_EXTERNAL",
+        "age": 23,
+        "economy_score": 32.0,
+        "current_expected_goals_for": 1.7,
+        "current_expected_goals_against": 1.26,
+        "simulated_expected_goals_for": 1.83,
+        "simulated_expected_goals_against": 1.26,
+        "xg_for_delta": 0.13,
+        "xg_against_delta": 0.0,
+        "goal_edge_delta": 0.13,
+        "simulated_target_win_probability": 0.507,
+        "simulated_draw_probability": 0.229,
+        "simulated_opponent_win_probability": 0.264,
+        "simulated_scoreline": {
+          "target_goals": 1,
+          "opponent_goals": 1,
+          "score": "1-1",
+          "probability": 0.105
+        },
+        "impact_label": "LOW_POSITIVE",
+        "why": "Rol okuması: Right Winger (MEDIUM_EXTERNAL). İlk 11 11, gol 4, kart 1. Tahmini yük 8.7-10.2 km. Tempo ve tekrar koşu ihtiyacı olan rolde fiziksel yük proxy'si öne çıkarıldı. Sözleşme fırsatı HIGH seviyesinde. Genç değer/resale sinyali güçlü.",
+        "commercial_note": "Al-sat değeri yüksek aday; doğru maaş/bonservis bandında ekonomik upside sağlar."
       }
     ]
   },

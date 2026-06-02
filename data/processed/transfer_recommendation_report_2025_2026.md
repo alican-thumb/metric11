@@ -620,10 +620,10 @@ Zayıf nokta: kadro derinliği sınırlı
 **Sol açık / çizgi kırıcı** — Büyük maç rotasyonunu besleyecek ve kanat derinliğini artıracak yaratıcı profil.
   1. DORGELES NENE (FENERBAHÇE A.Ş.) | 23y | 10 gol | PREMİUM TRANSFER | HIGH | skor 24.2
      → Kadro derinliği sınırlı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Nene: 10 gol, 16 maçta sahada. Uzun sözleşme — yüksek bonusu göze almalı. 23 yaş, uzun vadeli yatırım profili.
-  2. ANTHONY TİTE EMMANUEL MUSABA (SAMSUNSPOR A.Ş.) | 25y | 5 gol | PREMİUM TRANSFER | MEDIUM | skor 19.3
+  2. MUHAMMED KEREM AKTÜRKOĞLU (FENERBAHÇE A.Ş.) | 27y | 8 gol | PREMİUM TRANSFER | MEDIUM | skor 21.4
+     → Kadro derinliği sınırlı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Aktürkoğlu: 8 gol, 24 maç. Uzun sözleşme — yüksek bonusu göze almalı.
+  3. ANTHONY TİTE EMMANUEL MUSABA (SAMSUNSPOR A.Ş.) | 25y | 5 gol | PREMİUM TRANSFER | MEDIUM | skor 19.3
      → Kadro derinliği sınırlı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Musaba: 5 gol, 24 maç. Uzun sözleşme — yüksek bonusu göze almalı.
-  3. JESURUN  RAK-SAKYI (ÇAYKUR RİZESPOR A.Ş.) | 23y | 4 gol | PREMİUM TRANSFER | HIGH | skor 17.0
-     → Kadro derinliği sınırlı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Rak-sakyi: 4 gol, 11 maçta sahada. Uzun sözleşme — yüksek bonusu göze almalı. 23 yaş, uzun vadeli yatırım profili.
 
 **Bek / çift yönlü koridor** — Koridor derinliğini artıracak, büyük maç baskısında rotasyon sağlayacak çift yönlü bek.
   1. ZEKİ YAVRU (SAMSUNSPOR A.Ş.) | 34y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 23.7

@@ -3,7 +3,7 @@
 - Sezon: 2025-2026
 - Transfermarkt kulüp kapsamı: 18/18
 - Kadro oyuncusu: 507
-- Toplam piyasa değeri: €1,348,025,000
+- Toplam piyasa değeri: €1,350,600,000
 - Maç kapsamı: 177/258 (%69)
 - Lig modeli doğruluğu: %46
 - Sabit draw-band 0.20 piyasa değeri baseline doğruluğu: %50

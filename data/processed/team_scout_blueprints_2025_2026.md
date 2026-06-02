@@ -178,7 +178,7 @@
 - Güç: 68.6 | GF: 1.79 | GA: 1.15 | kart: 1.71
 - Zafiyet: kadro derinliği sınırlı
 - Scout ipucu: Kaliteli rotasyon: büyük maç baskısını karşılayacak kanat/bek derinliği
-- Sol açık / çizgi kırıcı: Büyük maç rotasyonunu besleyecek ve kanat derinliğini artıracak yaratıcı profil. Adaylar: YUNUS AKGÜN, BARIŞ ALPER YILMAZ, GÖKTAN GÜRPÜZ
+- Sol açık / çizgi kırıcı: Büyük maç rotasyonunu besleyecek ve kanat derinliğini artıracak yaratıcı profil. Adaylar: YUNUS AKGÜN, BARIŞ ALPER YILMAZ, DORGELES NENE
 - Bek / çift yönlü koridor: Koridor derinliğini artıracak, büyük maç baskısında rotasyon sağlayacak çift yönlü bek. Adaylar: YHOAN MANY ANDZOUANA, ROLAND SALLAI, RUAN PEREIRA DUARTE
 
 ## RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ
@@ -202,5 +202,5 @@
 - Güç: 84.4 | GF: 2.26 | GA: 0.88 | kart: 2.03
 - Zafiyet: kadro derinliği sınırlı
 - Scout ipucu: Kaliteli rotasyon: büyük maç baskısını karşılayacak kanat/bek derinliği
-- Sol açık / çizgi kırıcı: Büyük maç rotasyonunu besleyecek ve kanat derinliğini artıracak yaratıcı profil. Adaylar: KAZEEM ADEREMI J. OLAIGBE, GÖKTAN GÜRPÜZ, DORGELES NENE
+- Sol açık / çizgi kırıcı: Büyük maç rotasyonunu besleyecek ve kanat derinliğini artıracak yaratıcı profil. Adaylar: KAZEEM ADEREMI J. OLAIGBE, DORGELES NENE, ANTHONY TİTE EMMANUEL MUSABA
 - Bek / çift yönlü koridor: Koridor derinliğini artıracak, büyük maç baskısında rotasyon sağlayacak çift yönlü bek. Adaylar: YHOAN MANY ANDZOUANA, RUAN PEREIRA DUARTE, ZEKİ YAVRU
