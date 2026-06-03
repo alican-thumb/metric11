@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-06-03T07:09:12.931257+00:00",
+  "generated_at": "2026-06-03T11:25:49.118756+00:00",
   "season": "2025_2026",
   "summary": {
     "free_agents_count": 261,
     "final_year_count": 180,
-    "transfer_signals_count": 33,
+    "transfer_signals_count": 18,
     "transfer_status_counts": {
       "OFFICIAL": 0,
-      "CORROBORATED": 1,
-      "RUMOR": 4,
-      "REVIEW_REQUIRED": 28
+      "CORROBORATED": 2,
+      "RUMOR": 1,
+      "REVIEW_REQUIRED": 15
     },
     "promotion_events_count": 1,
     "free_agent_total_market_value_eur": 475250000
@@ -460,6 +460,61 @@
   ],
   "transfer_signals": [
     {
+      "player_name": "UĞUR KAAN YILDIZ",
+      "from_club": "GÖZTEPE A.Ş.",
+      "to_club": "Kocaelispor",
+      "transfer_type": "permanent",
+      "window": "summer_2026",
+      "signal_type": "signing",
+      "confidence": "MEDIUM",
+      "tm_market_value_eur": 600000,
+      "direction_quality": "TARGET_IDENTIFIED",
+      "article_id": "4ba2dbc91d10",
+      "title": "Kocaelispor, Göztepe'de sözleşme uzatılmayan Uğur Kaan Yıldız'ı kadrosuna kattı",
+      "link": "https://www.cnnturk.com/spor/futbol/kocaelispor-goztepede-sozlesme-uzatilmayan-ugur-kaan-yildizi-kadrosuna-katti-3426639",
+      "source": "CNN Türk Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-03T11:02:23+00:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "HIGH",
+      "verification_status": "CORROBORATED",
+      "interpretation": "Birden fazla kaynak aynı yönlü iddiayı taşıyor; resmi açıklama beklenir.",
+      "source_count": 2,
+      "sources": [
+        "CNN Türk Spor",
+        "Ajansspor"
+      ],
+      "evidence": [
+        {
+          "source": "CNN Türk Spor",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Kocaelispor, Göztepe'de sözleşme uzatılmayan Uğur Kaan Yıldız'ı kadrosuna kattı",
+          "link": "https://www.cnnturk.com/spor/futbol/kocaelispor-goztepede-sozlesme-uzatilmayan-ugur-kaan-yildizi-kadrosuna-katti-3426639",
+          "published_at": "2026-06-03T11:02:23+00:00",
+          "first_observed_at": null
+        },
+        {
+          "source": "Ajansspor",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Göztepe transfer",
+          "title": "Göztepe’den ayrılan Uğur Kaan Yıldız, Kocaelispor’a transfer oldu - Ajansspor",
+          "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOQlRlLTNKVDhQZ05vcjhoV3dfaFZCa0pULWk5N1VqM24xTGU1ZFU2eWljcG1rTmkyNU00OGpJcjhEMURtSnZkc3laZXlJXzZjZlYxWk5QQVlPVVJxa1dENXRhb0lwY1dRMkc1cmpIVHVSTWVYTW9RSHE3aS0zTVZ2bndXUW0zNHVXXzhWV2JOLUNtZk90TGpfd0dMNDJsUQ?oc=5",
+          "published_at": "2026-06-03T08:11:04+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
       "player_name": "BERTUĞ ÖZGÜR YILDIRIM",
       "from_club": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ",
       "to_club": "Galatasaray",
@@ -515,141 +570,6 @@
       "model_use": false
     },
     {
-      "player_name": "Rafael Leao",
-      "from_club": null,
-      "to_club": "Galatasaray",
-      "signal_type": "interest",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "HEADLINE_EXPLICIT_DIRECTION",
-      "article_id": "a44a94f1cce8",
-      "title": "Galatasaray'dan Rafael Leao bombası! İtalyan gazeteci transfer müjdesini verdi",
-      "link": "https://www.fotomac.com.tr/galatasaray/2026/06/03/galatasaraydan-rafael-leao-bombasi-italyan-gazeteci-transfer-mujdesini-verdi",
-      "source": "Fotomaç",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-03T06:50:12+03:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "MEDIUM",
-      "verification_status": "RUMOR",
-      "interpretation": "Tek kaynaklı transfer iddiası; yalnız transfer radarında izlenir.",
-      "source_count": 1,
-      "sources": [
-        "Fotomaç",
-        "FOTOMAÇ"
-      ],
-      "evidence": [
-        {
-          "source": "Fotomaç",
-          "source_tier": "MEDIA",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "Galatasaray'dan Rafael Leao bombası! İtalyan gazeteci transfer müjdesini verdi",
-          "link": "https://www.fotomac.com.tr/galatasaray/2026/06/03/galatasaraydan-rafael-leao-bombasi-italyan-gazeteci-transfer-mujdesini-verdi",
-          "published_at": "2026-06-03T06:50:12+03:00",
-          "first_observed_at": null
-        },
-        {
-          "source": "FOTOMAÇ",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Galatasaray transfer",
-          "title": "Galatasaray’dan Rafael Leao bombası! İtalyan gazeteci transfer müjdesini verdi - FOTOMAÇ",
-          "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxONHRHdVZMaEE1VFlfajJyUmppanpfUzY2Q3ZidW56Q2xLUGgzNHRjejZjeU5SYVF4OHhBMFNmZXp4VzJLMndscmVBT1Q3ZWxidWh6LVBmLVlRWmVHT3FkTW1QTkNqaWJ1VEdwa19KVURkZ0dMS2VuQ0xrY1NLdWU0eXBOSmZGRzlDeU91S3FEXzVqZXJDNW9UUlZCNWF4NzhsMHdRZVN4cDFEdWR0STFoWGdLZFFaeHZucjE0U3BsbUhkRTlZ?oc=5",
-          "published_at": "2026-06-03T03:50:12+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": "transferde Ibrahima Konate",
-      "from_club": null,
-      "to_club": "Galatasaray",
-      "signal_type": "interest",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "HEADLINE_EXPLICIT_DIRECTION",
-      "article_id": "a7b2aedeb784",
-      "title": "Galatasaray'dan transferde Ibrahima Konate bombası!",
-      "link": "https://www.fotomac.com.tr/galatasaray/2026/06/02/galatasaraydan-transferde-ibrahima-konate-bombasi",
-      "source": "Fotomaç",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-03T06:50:12+03:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "MEDIUM",
-      "verification_status": "RUMOR",
-      "interpretation": "Tek kaynaklı transfer iddiası; yalnız transfer radarında izlenir.",
-      "source_count": 1,
-      "sources": [
-        "Fotomaç"
-      ],
-      "evidence": [
-        {
-          "source": "Fotomaç",
-          "source_tier": "MEDIA",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "Galatasaray'dan transferde Ibrahima Konate bombası!",
-          "link": "https://www.fotomac.com.tr/galatasaray/2026/06/02/galatasaraydan-transferde-ibrahima-konate-bombasi",
-          "published_at": "2026-06-03T06:50:12+03:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": "Bertuğ Yıldırım",
-      "from_club": null,
-      "to_club": "Galatasaray",
-      "signal_type": "interest",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "HEADLINE_EXPLICIT_DIRECTION",
-      "article_id": "f8820e580860",
-      "title": "Bertuğ Yıldırım'ın Galatasaray'a transfer olmak için çok kritik bir şartı var - Haberler",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQZ0xPWTBGdkdlUVFKOHNaYXZJWk5fdmpJb3U3eVFTeWUzYWZDSTFZSWpQZF84Z19sUDA2QXZwb0JTN3dqOENwbm0yXzdHZklzeURxUDlObkV1b2c3RE9hMnJDWDFsRmRuZE05S1RxQ05KeGdjc1RfUnRHaTF1eHpod0I0cDVvbWFObGVjWTRmUTVkRXJWVTJv0gGWAUFVX3lxTFBTOTlMUTFQdXE2aHZKRVJ0TEJuUjV6bHprbVdTUzBaOXFCV1ZvYkxhM0xsbEljbndobmZLQmw1OWVvZW9BblE1bzU5cWFOdF9SN3JlSVZ0c1lNdmZwTVNvUXJGVF9OMEJoY3dxQmpKZFdlN1M2Sk9qZHE2bjMzczFVcXFPRjhLTjI4YmtGUEQtMTNGQ1lkQQ?oc=5",
-      "source": "Haberler",
-      "source_type": "google_news",
-      "account_type": null,
-      "query": "Galatasaray transfer",
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-02T19:51:36+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "MEDIUM",
-      "verification_status": "RUMOR",
-      "interpretation": "Tek kaynaklı transfer iddiası; yalnız transfer radarında izlenir.",
-      "source_count": 1,
-      "sources": [
-        "Haberler"
-      ],
-      "evidence": [
-        {
-          "source": "Haberler",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Galatasaray transfer",
-          "title": "Bertuğ Yıldırım'ın Galatasaray'a transfer olmak için çok kritik bir şartı var - Haberler",
-          "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQZ0xPWTBGdkdlUVFKOHNaYXZJWk5fdmpJb3U3eVFTeWUzYWZDSTFZSWpQZF84Z19sUDA2QXZwb0JTN3dqOENwbm0yXzdHZklzeURxUDlObkV1b2c3RE9hMnJDWDFsRmRuZE05S1RxQ05KeGdjc1RfUnRHaTF1eHpod0I0cDVvbWFObGVjWTRmUTVkRXJWVTJv0gGWAUFVX3lxTFBTOTlMUTFQdXE2aHZKRVJ0TEJuUjV6bHprbVdTUzBaOXFCV1ZvYkxhM0xsbEljbndobmZLQmw1OWVvZW9BblE1bzU5cWFOdF9SN3JlSVZ0c1lNdmZwTVNvUXJGVF9OMEJoY3dxQmpKZFdlN1M2Sk9qZHE2bjMzczFVcXFPRjhLTjI4YmtGUEQtMTNGQ1lkQQ?oc=5",
-          "published_at": "2026-06-02T19:51:36+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
       "player_name": "Lewandowski ve Conte",
       "from_club": null,
       "to_club": "Fenerbahçe",
@@ -698,15 +618,15 @@
       "window": "summer_2026",
       "confidence": "LOW",
       "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "0ee023a654d2",
-      "title": "Trabzonspor Sidny Cabral Transferinde Benfica İle Anlaşmaya Vardı - Taka Gazete",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOWWlIU3VRRWlDM2FMR2NlZmdEN3ZtXy1LT0NxVnFvQl9Gd214VEhGMjBxSmFaSTNaVkhXMVp4TENNMzBCRlp3Nk5nTkN6WEpFdVc1V29BX0xGb3RiczFBVC1IZF84akxocllxUURnbEZCVXVGektwYmdzci1TZzFjRzNZbVBzSy1XVWN5VUk4VjhCb0p2LWFMSUJ2ONIBoAFBVV95cUxNYzlBdVZyZWZKeUxOLTEwUkJ3QTVxWjk0Z0o2Nm5PVGM3dXVCeGwyY2llOG5CdzAybndRMTZTYkk5aC1KTnpLbTUzMDNfaU16VzZsNmRrMjZiejdVek5lM05FUENLdGtkMW1KMEdXSFJqQlhuU0d6WXNmbGM1MEthbS1iaTNXT1h4bGp3SkdWbVJNaFUzUUtTN0g4LUFTSWhJ?oc=5",
-      "source": "Taka Gazete",
-      "source_type": "google_news",
+      "article_id": "11248437ace5",
+      "title": "Trabzonspor'a Portekizli kanat!",
+      "link": "https://www.haberturk.com/trabzonspor-a-portekizli-kanat-noah-saviolo-3889004-spor",
+      "source": "Haberturk Spor",
+      "source_type": "rss",
       "account_type": null,
-      "query": "Trabzonspor transfer",
+      "query": null,
       "source_tier": "MEDIA",
-      "published_at": "2026-06-03T05:20:00+00:00",
+      "published_at": "2026-06-03T10:48:03+00:00",
       "first_observed_at": null,
       "summary_tr": "",
       "entity_confidence": "LOW",
@@ -714,143 +634,18 @@
       "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
       "source_count": 1,
       "sources": [
-        "Taka Gazete"
+        "Haberturk Spor"
       ],
       "evidence": [
         {
-          "source": "Taka Gazete",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Trabzonspor transfer",
-          "title": "Trabzonspor Sidny Cabral Transferinde Benfica İle Anlaşmaya Vardı - Taka Gazete",
-          "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOWWlIU3VRRWlDM2FMR2NlZmdEN3ZtXy1LT0NxVnFvQl9Gd214VEhGMjBxSmFaSTNaVkhXMVp4TENNMzBCRlp3Nk5nTkN6WEpFdVc1V29BX0xGb3RiczFBVC1IZF84akxocllxUURnbEZCVXVGektwYmdzci1TZzFjRzNZbVBzSy1XVWN5VUk4VjhCb0p2LWFMSUJ2ONIBoAFBVV95cUxNYzlBdVZyZWZKeUxOLTEwUkJ3QTVxWjk0Z0o2Nm5PVGM3dXVCeGwyY2llOG5CdzAybndRMTZTYkk5aC1KTnpLbTUzMDNfaU16VzZsNmRrMjZiejdVek5lM05FUENLdGtkMW1KMEdXSFJqQlhuU0d6WXNmbGM1MEthbS1iaTNXT1h4bGp3SkdWbVJNaFUzUUtTN0g4LUFTSWhJ?oc=5",
-          "published_at": "2026-06-03T05:20:00+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": null,
-      "to_club": "Galatasaray",
-      "signal_type": "interest",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "6f1b72ea7479",
-      "title": "Galatasaray'a İngiliz yıldızın peşinde! Türkiye'den talipleri de var",
-      "link": "https://www.fotomac.com.tr/galatasaray/2026/06/03/rowe-iddiasi",
-      "source": "Fotomaç",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-03T06:50:12+03:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Fotomaç"
-      ],
-      "evidence": [
-        {
-          "source": "Fotomaç",
+          "source": "Haberturk Spor",
           "source_tier": "MEDIA",
           "source_type": "rss",
           "account_type": null,
           "query": null,
-          "title": "Galatasaray'a İngiliz yıldızın peşinde! Türkiye'den talipleri de var",
-          "link": "https://www.fotomac.com.tr/galatasaray/2026/06/03/rowe-iddiasi",
-          "published_at": "2026-06-03T06:50:12+03:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": "YASİN ÖZCAN",
-      "from_club": "BEŞİKTAŞ A.Ş.",
-      "to_club": null,
-      "transfer_type": "permanent",
-      "window": "summer_2026",
-      "signal_type": "transfer_fee",
-      "confidence": "LOW",
-      "tm_market_value_eur": 5000000,
-      "direction_quality": "TARGET_UNRESOLVED",
-      "article_id": "cba9c7d027f2",
-      "title": "Beşiktaş'ın Salih Özcan hedefi! Süper Lig'de oynamak istiyor",
-      "link": "https://www.fotomac.com.tr/besiktas/2026/06/03/besiktasin-salih-ozcan-hedefi-super-ligde-oynamak-istiyor",
-      "source": "Fotomaç",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-03T06:50:12+03:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "HIGH",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Fotomaç"
-      ],
-      "evidence": [
-        {
-          "source": "Fotomaç",
-          "source_tier": "MEDIA",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "Beşiktaş'ın Salih Özcan hedefi! Süper Lig'de oynamak istiyor",
-          "link": "https://www.fotomac.com.tr/besiktas/2026/06/03/besiktasin-salih-ozcan-hedefi-super-ligde-oynamak-istiyor",
-          "published_at": "2026-06-03T06:50:12+03:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": null,
-      "to_club": "Fenerbahçe",
-      "signal_type": "deal_close",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "b1412fbcdf80",
-      "title": "Lewandowski adım adım Fenerbahçe'ye! Başkan Adayı Hakan Safi prensipte anlaştı",
-      "link": "https://www.fotomac.com.tr/fenerbahce/2026/06/02/lewandowski-adim-adim-fenerbahceye-baskan-adayi-hakan-safi-prensipte-anlasti",
-      "source": "Fotomaç",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-03T06:50:12+03:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Fotomaç"
-      ],
-      "evidence": [
-        {
-          "source": "Fotomaç",
-          "source_tier": "MEDIA",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "Lewandowski adım adım Fenerbahçe'ye! Başkan Adayı Hakan Safi prensipte anlaştı",
-          "link": "https://www.fotomac.com.tr/fenerbahce/2026/06/02/lewandowski-adim-adim-fenerbahceye-baskan-adayi-hakan-safi-prensipte-anlasti",
-          "published_at": "2026-06-03T06:50:12+03:00",
+          "title": "Trabzonspor'a Portekizli kanat!",
+          "link": "https://www.haberturk.com/trabzonspor-a-portekizli-kanat-noah-saviolo-3889004-spor",
+          "published_at": "2026-06-03T10:48:03+00:00",
           "first_observed_at": null
         }
       ],
@@ -860,19 +655,19 @@
       "player_name": null,
       "from_club": null,
       "to_club": "Trabzonspor",
-      "signal_type": "signing",
+      "signal_type": "transfer_fee",
       "window": "summer_2026",
       "confidence": "LOW",
       "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "a9f88da63353",
-      "title": "Sidny Cabral Trabzonspor'da! İşte geliş tarihi",
-      "link": "https://www.fotomac.com.tr/trabzonspor/2026/06/02/sidny-cabral-trabzonsporda-iste-gelis-tarihi",
-      "source": "Fotomaç",
+      "article_id": "37a51ce80153",
+      "title": "Trabzonspor Noah Saviolo transferinde sona yaklaştı! Geleceğe dev yatırım",
+      "link": "https://www.takvim.com.tr/trabzonspor/2026/06/03/trabzonspor-noah-saviolo-transferinde-sona-yaklasti-gelecege-dev-yatirim",
+      "source": "Takvim Spor",
       "source_type": "rss",
       "account_type": null,
       "query": null,
       "source_tier": "MEDIA",
-      "published_at": "2026-06-03T06:50:12+03:00",
+      "published_at": "2026-06-03T12:36:35+03:00",
       "first_observed_at": null,
       "summary_tr": "",
       "entity_confidence": "LOW",
@@ -880,73 +675,18 @@
       "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
       "source_count": 1,
       "sources": [
-        "Fotomaç"
-      ],
-      "evidence": [
-        {
-          "source": "Fotomaç",
-          "source_tier": "MEDIA",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "Sidny Cabral Trabzonspor'da! İşte geliş tarihi",
-          "link": "https://www.fotomac.com.tr/trabzonspor/2026/06/02/sidny-cabral-trabzonsporda-iste-gelis-tarihi",
-          "published_at": "2026-06-03T06:50:12+03:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": "VICTOR JAMES OSIMHEN",
-      "from_club": "GALATASARAY A.Ş.",
-      "to_club": null,
-      "transfer_type": "permanent",
-      "window": "summer_2026",
-      "signal_type": "departure",
-      "confidence": "LOW",
-      "tm_market_value_eur": 75000000,
-      "direction_quality": "TARGET_UNRESOLVED",
-      "article_id": "93bc624ec693",
-      "title": "Osimhen Galatasaray'dan ayrılacak mı? Transferde yeni gelişme",
-      "link": "https://www.fotomac.com.tr/galatasaray/2026/06/02/osimhen-kaliyor",
-      "source": "Fotomaç",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-03T06:50:12+03:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "HIGH",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 2,
-      "sources": [
-        "Fotomaç",
         "Takvim Spor"
       ],
       "evidence": [
-        {
-          "source": "Fotomaç",
-          "source_tier": "MEDIA",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "Osimhen Galatasaray'dan ayrılacak mı? Transferde yeni gelişme",
-          "link": "https://www.fotomac.com.tr/galatasaray/2026/06/02/osimhen-kaliyor",
-          "published_at": "2026-06-03T06:50:12+03:00",
-          "first_observed_at": null
-        },
         {
           "source": "Takvim Spor",
           "source_tier": "MEDIA",
           "source_type": "rss",
           "account_type": null,
           "query": null,
-          "title": "Dudak uçuklatan bonservis: Galatasaray'da Osimhen kararı! Kapıyı çalan yandı",
-          "link": "https://www.takvim.com.tr/galatasaray/2026/06/02/dudak-ucuklatan-bonservis-galatasarayda-osimhen-karari-kapiyi-calan-yandi",
-          "published_at": "2026-06-02T09:53:39+03:00",
+          "title": "Trabzonspor Noah Saviolo transferinde sona yaklaştı! Geleceğe dev yatırım",
+          "link": "https://www.takvim.com.tr/trabzonspor/2026/06/03/trabzonspor-noah-saviolo-transferinde-sona-yaklasti-gelecege-dev-yatirim",
+          "published_at": "2026-06-03T12:36:35+03:00",
           "first_observed_at": null
         }
       ],
@@ -955,145 +695,20 @@
     {
       "player_name": null,
       "from_club": null,
-      "to_club": "Beşiktaş",
-      "signal_type": "offer",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "808fe808b9e5",
-      "title": "TRANSFER HABERİ - Beşiktaş'ın Trossard teklifi ortaya çıktı!",
-      "link": "https://www.fotomac.com.tr/besiktas/2026/06/02/transfer-haberi-besiktasin-trossard-teklifi-ortaya-cikti",
-      "source": "Fotomaç",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-03T06:50:12+03:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Fotomaç"
-      ],
-      "evidence": [
-        {
-          "source": "Fotomaç",
-          "source_tier": "MEDIA",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "TRANSFER HABERİ - Beşiktaş'ın Trossard teklifi ortaya çıktı!",
-          "link": "https://www.fotomac.com.tr/besiktas/2026/06/02/transfer-haberi-besiktasin-trossard-teklifi-ortaya-cikti",
-          "published_at": "2026-06-03T06:50:12+03:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": null,
-      "to_club": "Trabzonspor",
-      "signal_type": "transfer_fee",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "fad5b7b66f21",
-      "title": "Trabzonspor'dan Tsygankov pazarlığı! Bonservisi o rakama indirmek istiyorlar",
-      "link": "https://www.fotomac.com.tr/trabzonspor/2026/06/02/trabzonspordan-tsygankov-pazarligi-bonservisi-o-rakama-indirmek-istiyorlar",
-      "source": "Fotomaç",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-03T06:50:12+03:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Fotomaç"
-      ],
-      "evidence": [
-        {
-          "source": "Fotomaç",
-          "source_tier": "MEDIA",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "Trabzonspor'dan Tsygankov pazarlığı! Bonservisi o rakama indirmek istiyorlar",
-          "link": "https://www.fotomac.com.tr/trabzonspor/2026/06/02/trabzonspordan-tsygankov-pazarligi-bonservisi-o-rakama-indirmek-istiyorlar",
-          "published_at": "2026-06-03T06:50:12+03:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": "UĞUR KAAN YILDIZ",
-      "from_club": "GÖZTEPE A.Ş.",
-      "to_club": null,
-      "transfer_type": "permanent",
-      "window": "summer_2026",
-      "signal_type": "departure",
-      "confidence": "LOW",
-      "tm_market_value_eur": 600000,
-      "direction_quality": "TARGET_UNRESOLVED",
-      "article_id": "02777afecf3a",
-      "title": "Göztepe'de Uğur Kaan Yıldız ile yollar ayrıldı",
-      "link": "https://www.sabah.com.tr/spor/futbol/2026/06/02/goztepede-ugur-kaan-yildiz-ile-yollar-ayrildi",
-      "source": "Sabah Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-02T21:56:40+03:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "HIGH",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Sabah Spor"
-      ],
-      "evidence": [
-        {
-          "source": "Sabah Spor",
-          "source_tier": "MEDIA",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "Göztepe'de Uğur Kaan Yıldız ile yollar ayrıldı",
-          "link": "https://www.sabah.com.tr/spor/futbol/2026/06/02/goztepede-ugur-kaan-yildiz-ile-yollar-ayrildi",
-          "published_at": "2026-06-02T21:56:40+03:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": null,
-      "to_club": "Beşiktaş",
+      "to_club": "Kocaelispor",
       "signal_type": "official_transfer",
       "window": "summer_2026",
       "confidence": "LOW",
       "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "06873d2a9e05",
-      "title": "Beşiktaş Kadın Voleybol Takımı, Jolien Knollema'yı transfer etti - Sabah",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNdzhtUGNTdjhwWWVvUGRIYVNaWUJzb0xQR0h2WTRGT0tyOXJzR1lna1NxeUt6YTN2X3lJZ0hnYUoyNlRaNWVhYklCR2hud3FnSmlCREplRUgwTldMOEtmeTBtMzFfSEM2dXJsYUU3ZEJMcEkzeE5qSG10alV6UTRGU2RxaXNqdWFDSFFWLWc2ZUdhSENEU3J3QXFNTjRZMTRzbnZZM0xvNjVtZXBNSjRzbG9ib1A0QdIBuAFBVV95cUxORFlsaEVmeUpoaXlrYlduT0w1LUY2ZGliOHRYczk1VkhyN01CeEk1V0tkd0h2V1VNa2RGQ25fckRNNFd1N18wTkZQUVFTMS03SmFlOWdidFZwamZ2YXNQUGJLb3B5RlZmVkk3RFFlemR2S0cwWjlhWjlvRFlpbi1RRDM3T2tqN1ZaeGlZUzNOcVFXd1I0UTNHZTMyQXVKR2FmVXpDbEs2QjVNbnJXeU9MOWJoTm9MMV8z?oc=5",
-      "source": "Sabah",
+      "article_id": "6bbc46463e1c",
+      "title": "Kocaelispor’da ilk transfer gerçekleşti - Özgür Kocaeli",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQRlpIWWt2Sm9ZOGRxSzFDdE1TTnRMbE90Rm5mSVk0SXNQS3ZjVUM3c1VxVlN2c2xDTXRoOXozQy05amF1TFdHUWl2NEJzdVVjRjJkcUJ4akREOTVUNVFBbXZTcmVDSGlOOVkxMS1RMXg2QWFmU3VTbl9td3FheWxpNmJrWkhpaGNpN2stZEp30gGTAUFVX3lxTE5mRU5qWWRlTHBqQUZWUnpRNEdjVkJ2TFhZX1VJTzJWZzlVWExlMFVRTGY0Z2pZd1Z6U2doN0IwcHNRWHJfTEhXVk5LbjJxT1hxYUdmdGJKR3pSZFZ4d292T09iV0JIX01vUE9zcDRwTkpVTnZveC0yOTlJM0xVbUhGeFVpdXk1UVRTb1lCVGFmZlhnbw?oc=5",
+      "source": "Özgür Kocaeli",
       "source_type": "google_news",
       "account_type": null,
-      "query": "Beşiktaş transfer",
+      "query": "Göztepe transfer",
       "source_tier": "MEDIA",
-      "published_at": "2026-06-02T15:19:20+00:00",
+      "published_at": "2026-06-03T07:35:00+00:00",
       "first_observed_at": null,
       "summary_tr": "",
       "entity_confidence": "LOW",
@@ -1101,18 +716,18 @@
       "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
       "source_count": 1,
       "sources": [
-        "Sabah"
+        "Özgür Kocaeli"
       ],
       "evidence": [
         {
-          "source": "Sabah",
+          "source": "Özgür Kocaeli",
           "source_tier": "MEDIA",
           "source_type": "google_news",
           "account_type": null,
-          "query": "Beşiktaş transfer",
-          "title": "Beşiktaş Kadın Voleybol Takımı, Jolien Knollema'yı transfer etti - Sabah",
-          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNdzhtUGNTdjhwWWVvUGRIYVNaWUJzb0xQR0h2WTRGT0tyOXJzR1lna1NxeUt6YTN2X3lJZ0hnYUoyNlRaNWVhYklCR2hud3FnSmlCREplRUgwTldMOEtmeTBtMzFfSEM2dXJsYUU3ZEJMcEkzeE5qSG10alV6UTRGU2RxaXNqdWFDSFFWLWc2ZUdhSENEU3J3QXFNTjRZMTRzbnZZM0xvNjVtZXBNSjRzbG9ib1A0QdIBuAFBVV95cUxORFlsaEVmeUpoaXlrYlduT0w1LUY2ZGliOHRYczk1VkhyN01CeEk1V0tkd0h2V1VNa2RGQ25fckRNNFd1N18wTkZQUVFTMS03SmFlOWdidFZwamZ2YXNQUGJLb3B5RlZmVkk3RFFlemR2S0cwWjlhWjlvRFlpbi1RRDM3T2tqN1ZaeGlZUzNOcVFXd1I0UTNHZTMyQXVKR2FmVXpDbEs2QjVNbnJXeU9MOWJoTm9MMV8z?oc=5",
-          "published_at": "2026-06-02T15:19:20+00:00",
+          "query": "Göztepe transfer",
+          "title": "Kocaelispor’da ilk transfer gerçekleşti - Özgür Kocaeli",
+          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQRlpIWWt2Sm9ZOGRxSzFDdE1TTnRMbE90Rm5mSVk0SXNQS3ZjVUM3c1VxVlN2c2xDTXRoOXozQy05amF1TFdHUWl2NEJzdVVjRjJkcUJ4akREOTVUNVFBbXZTcmVDSGlOOVkxMS1RMXg2QWFmU3VTbl9td3FheWxpNmJrWkhpaGNpN2stZEp30gGTAUFVX3lxTE5mRU5qWWRlTHBqQUZWUnpRNEdjVkJ2TFhZX1VJTzJWZzlVWExlMFVRTGY0Z2pZd1Z6U2doN0IwcHNRWHJfTEhXVk5LbjJxT1hxYUdmdGJKR3pSZFZ4d292T09iV0JIX01vUE9zcDRwTkpVTnZveC0yOTlJM0xVbUhGeFVpdXk1UVRTb1lCVGFmZlhnbw?oc=5",
+          "published_at": "2026-06-03T07:35:00+00:00",
           "first_observed_at": null
         }
       ],
@@ -1154,47 +769,6 @@
           "title": "Göztepe Anna Astashina'yı transfer etti - Fanatik",
           "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5oVTBTR2FDS1pfNGJtV29oTnl3YnVIbDNGdUFuUDNOX3FZdG0tRXF6aVBPNEpKTDlCWm9nbkFReE1QZUJxbURwcU1yeEZoa2RHNFlmVHBaYW90djRtWGlUeUQwNUE1LUdESlRBMkFfdFJDLU52eWtoRjMxOGhVZw?oc=5",
           "published_at": "2026-06-02T14:39:43+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": null,
-      "to_club": "Trabzonspor",
-      "signal_type": "official_transfer",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "661e8603c339",
-      "title": "Trabzonspor, Tecrübeli Forveti Transfer Etti - Eurohoops",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPZ2FuNXBQU3FPemdWOUZkaHlzTjJnd3VSMjBheWh3R2pYc2FDbk93TTlIb1RsbnRRakktZVBUX0k5UHZabGtmLVE2Y3NQTm9iZ2lWOHRiVkFBZVBlZnZRM2U3Y2xkbkpxX1YzU0xnb3VIbUhOXzBtakZJOXRjZEtEMzZId3NFT2xLR3RyejVR?oc=5",
-      "source": "Eurohoops",
-      "source_type": "google_news",
-      "account_type": null,
-      "query": "Trabzonspor transfer",
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-02T14:27:00+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Eurohoops"
-      ],
-      "evidence": [
-        {
-          "source": "Eurohoops",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Trabzonspor transfer",
-          "title": "Trabzonspor, Tecrübeli Forveti Transfer Etti - Eurohoops",
-          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPZ2FuNXBQU3FPemdWOUZkaHlzTjJnd3VSMjBheWh3R2pYc2FDbk93TTlIb1RsbnRRakktZVBUX0k5UHZabGtmLVE2Y3NQTm9iZ2lWOHRiVkFBZVBlZnZRM2U3Y2xkbkpxX1YzU0xnb3VIbUhOXzBtakZJOXRjZEtEMzZId3NFT2xLR3RyejVR?oc=5",
-          "published_at": "2026-06-02T14:27:00+00:00",
           "first_observed_at": null
         }
       ],
@@ -1249,51 +823,10 @@
       "window": "summer_2026",
       "confidence": "LOW",
       "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "229ad4f8f995",
-      "title": "Göztepe Voleybol, Rus pasör Anna Astashina'yı transfer etti - Ege Alternatif",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPa0JBZzlVNUdiTmFTQngzekNpeEhQSGJncUlscHpablpyWUhVTy1ibHJ3TkVYcGpkWjRsWFowOGR1RWNlU2ZpVGV6NVNzY3hqX1p5QWxuLWZjdkFta2NLaElqV2lCR19taUdBS1NjSnhGQXppeDU1MDVLSVhyRkZLbDIzbFFUOWtyR1VGc251Z2NsVW1VRTZQVXJfaVFDX3JMQXpF?oc=5",
-      "source": "Ege Alternatif",
-      "source_type": "google_news",
-      "account_type": null,
-      "query": "Göztepe transfer",
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-02T13:37:25+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Ege Alternatif"
-      ],
-      "evidence": [
-        {
-          "source": "Ege Alternatif",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Göztepe transfer",
-          "title": "Göztepe Voleybol, Rus pasör Anna Astashina'yı transfer etti - Ege Alternatif",
-          "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPa0JBZzlVNUdiTmFTQngzekNpeEhQSGJncUlscHpablpyWUhVTy1ibHJ3TkVYcGpkWjRsWFowOGR1RWNlU2ZpVGV6NVNzY3hqX1p5QWxuLWZjdkFta2NLaElqV2lCR19taUdBS1NjSnhGQXppeDU1MDVLSVhyRkZLbDIzbFFUOWtyR1VGc251Z2NsVW1VRTZQVXJfaVFDX3JMQXpF?oc=5",
-          "published_at": "2026-06-02T13:37:25+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": null,
-      "to_club": "Göztepe",
-      "signal_type": "official_transfer",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
       "article_id": "036ed5e9ff8f",
-      "title": "Göztepe Voleybol, Anna Astashina'yı Transfer Etti - sondakika.com",
+      "title": "Göztepe Voleybol, Anna Astashina'yı Transfer Etti - SonDakika",
       "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPOF9Fb3lWa0JSeGlYRDJ2dVVDeWRGcFFobDNjSmp4VGp6OUMzVlh0WVU3ZTg4Y05uZ1U1SmhRY0xnR25ld2h2U2JUR3pyUDRWdm8wZkM4RXVCZlpxOHdNaVhOb0FLSmx4Z0pLRUJHaWdMSFd6SG9aODQ5eTNzRkJkX293RS14MzV6bjlJM05wZ2lmZnFjZ1hPZHcwb9IBmgFBVV95cUxOcGhlYmo4Y2xxSjdDOU5nY2hyNmpjNVVoZzFkRF9IRzVJMVFWVTl0cTByYWk0dnZ2MU1pN1pGalZWbmdKeG82ejhsdFV5NVpJWGVxYXBPZWd2WTNENl9taFktUWt2a05nV0Npa093cU1uX0tNNUVyam11U25lZVlyM2ZpLThfMkRNQUQxWTU3N0YyX0pZOHFTZ2ZB?oc=5",
-      "source": "sondakika.com",
+      "source": "SonDakika",
       "source_type": "google_news",
       "account_type": null,
       "query": "Göztepe transfer",
@@ -1306,59 +839,18 @@
       "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
       "source_count": 1,
       "sources": [
-        "sondakika.com"
+        "SonDakika"
       ],
       "evidence": [
         {
-          "source": "sondakika.com",
+          "source": "SonDakika",
           "source_tier": "MEDIA",
           "source_type": "google_news",
           "account_type": null,
           "query": "Göztepe transfer",
-          "title": "Göztepe Voleybol, Anna Astashina'yı Transfer Etti - sondakika.com",
+          "title": "Göztepe Voleybol, Anna Astashina'yı Transfer Etti - SonDakika",
           "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPOF9Fb3lWa0JSeGlYRDJ2dVVDeWRGcFFobDNjSmp4VGp6OUMzVlh0WVU3ZTg4Y05uZ1U1SmhRY0xnR25ld2h2U2JUR3pyUDRWdm8wZkM4RXVCZlpxOHdNaVhOb0FLSmx4Z0pLRUJHaWdMSFd6SG9aODQ5eTNzRkJkX293RS14MzV6bjlJM05wZ2lmZnFjZ1hPZHcwb9IBmgFBVV95cUxOcGhlYmo4Y2xxSjdDOU5nY2hyNmpjNVVoZzFkRF9IRzVJMVFWVTl0cTByYWk0dnZ2MU1pN1pGalZWbmdKeG82ejhsdFV5NVpJWGVxYXBPZWd2WTNENl9taFktUWt2a05nV0Npa093cU1uX0tNNUVyam11U25lZVlyM2ZpLThfMkRNQUQxWTU3N0YyX0pZOHFTZ2ZB?oc=5",
           "published_at": "2026-06-02T13:27:04+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": null,
-      "to_club": "Göztepe",
-      "signal_type": "official_transfer",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "1a49b7e20467",
-      "title": "Göztepe Kadın Voleybol Takımı, Rus voleybolcu Anna Astashina'yı transfer etti - Habertürk",
-      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOZlhNMXozdzZQb1lnaElJUTFNbnhianRhQTZURVE1bGx1dG9zaWZfNUktTkJieDZzLWctaGhOcVNKWlVYNEtEdTRSZFRmeGZmOU16YXBFcTlpNWluODIySGd3ZDk4ZmxDNHd1bTBiTFRWRGg1MDhNNXFuNUJkRjhqOVQ1ZVZ4dE8tRks0eU9Pbzc5NmVTejRmVUJUM3RHLVlPWHVlaS14UXRwVldib1RScElQTlprRDRNazlmM1VGSUxnd2tIaDBPQ2YwZnljWHJ1aEdmV0xvUEQ?oc=5",
-      "source": "Habertürk",
-      "source_type": "google_news",
-      "account_type": null,
-      "query": "Göztepe transfer",
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-02T13:12:34+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Habertürk"
-      ],
-      "evidence": [
-        {
-          "source": "Habertürk",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Göztepe transfer",
-          "title": "Göztepe Kadın Voleybol Takımı, Rus voleybolcu Anna Astashina'yı transfer etti - Habertürk",
-          "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOZlhNMXozdzZQb1lnaElJUTFNbnhianRhQTZURVE1bGx1dG9zaWZfNUktTkJieDZzLWctaGhOcVNKWlVYNEtEdTRSZFRmeGZmOU16YXBFcTlpNWluODIySGd3ZDk4ZmxDNHd1bTBiTFRWRGg1MDhNNXFuNUJkRjhqOVQ1ZVZ4dE8tRks0eU9Pbzc5NmVTejRmVUJUM3RHLVlPWHVlaS14UXRwVldib1RScElQTlprRDRNazlmM1VGSUxnd2tIaDBPQ2YwZnljWHJ1aEdmV0xvUEQ?oc=5",
-          "published_at": "2026-06-02T13:12:34+00:00",
           "first_observed_at": null
         }
       ],
@@ -1400,49 +892,6 @@
           "title": "Tedesco'nun yeni adresi belli oldu! Fenerbahçe sonrası Bologna",
           "link": "https://www.takvim.com.tr/spor/2026/06/02/tedesconun-yeni-adresi-belli-oldu-fenerbahce-sonrasi-bologna",
           "published_at": "2026-06-02T15:37:46+03:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": "MARCO ASENSIO WILLEMSEN",
-      "from_club": "FENERBAHÇE A.Ş.",
-      "to_club": null,
-      "transfer_type": "permanent",
-      "window": "summer_2026",
-      "signal_type": "transfer_fee",
-      "confidence": "LOW",
-      "tm_market_value_eur": 15000000,
-      "direction_quality": "TARGET_UNRESOLVED",
-      "article_id": "ef91c9180344",
-      "title": "Fenerbahçe'de Marco Asensio gelişmesi! Eski kulübü onu istiyor! Bonservis beklentisi belli oldu - A SPOR",
-      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNRTl6cmlfRWlPSjU3NkZNanVjZy1aaFdlM0JOTVpmcHdlUGhLV2o2YmpmUXBwd3ExOXU1T1VNQThEX1g2ME81YjRtb3Z4M3pubUFyRTZycVFuVHNENnFRUWxXV1JqTDg2SU9jcUlGVTBtNnVuOFVVTS14S2R5aF9HM0RJSU1rTVJ3WllDUWMySFQyYW5tdWdQY0o2YmhsZTBQRUcxdXJ5MDVIMDhxdkw4cXhtR054QW9kanN5S9IBwgFBVV95cUxNMUlZN29uNjZ2RUVXcFRya0FFVFpfMHRFbFctX0tRek9tOWNTODRXb25MWkJyb3d3S0lUaWFmSG9hZHdlRlZ5OEwtaUI3S0cwMG1iam5zemZzOFc3b29xOUhhTzZXaTJTcVBfZWxFbkNUWFROUGVLQmQzUkpUY2g2cU5aaTBhSzhYUWFRN24tWGdGVG5Kc2Z5ZVgzcU1nTGxYWFFGVEV1azNaQlAtTFJXWGtjZGlrX3U4ZndZeEJZMlpKUQ?oc=5",
-      "source": "A SPOR",
-      "source_type": "google_news",
-      "account_type": null,
-      "query": "Fenerbahçe transfer",
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-02T10:58:27+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "HIGH",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "A SPOR"
-      ],
-      "evidence": [
-        {
-          "source": "A SPOR",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Fenerbahçe transfer",
-          "title": "Fenerbahçe'de Marco Asensio gelişmesi! Eski kulübü onu istiyor! Bonservis beklentisi belli oldu - A SPOR",
-          "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNRTl6cmlfRWlPSjU3NkZNanVjZy1aaFdlM0JOTVpmcHdlUGhLV2o2YmpmUXBwd3ExOXU1T1VNQThEX1g2ME81YjRtb3Z4M3pubUFyRTZycVFuVHNENnFRUWxXV1JqTDg2SU9jcUlGVTBtNnVuOFVVTS14S2R5aF9HM0RJSU1rTVJ3WllDUWMySFQyYW5tdWdQY0o2YmhsZTBQRUcxdXJ5MDVIMDhxdkw4cXhtR054QW9kanN5S9IBwgFBVV95cUxNMUlZN29uNjZ2RUVXcFRya0FFVFpfMHRFbFctX0tRek9tOWNTODRXb25MWkJyb3d3S0lUaWFmSG9hZHdlRlZ5OEwtaUI3S0cwMG1iam5zemZzOFc3b29xOUhhTzZXaTJTcVBfZWxFbkNUWFROUGVLQmQzUkpUY2g2cU5aaTBhSzhYUWFRN24tWGdGVG5Kc2Z5ZVgzcU1nTGxYWFFGVEV1azNaQlAtTFJXWGtjZGlrX3U4ZndZeEJZMlpKUQ?oc=5",
-          "published_at": "2026-06-02T10:58:27+00:00",
           "first_observed_at": null
         }
       ],
@@ -1494,47 +943,6 @@
     {
       "player_name": null,
       "from_club": null,
-      "to_club": "Fenerbahçe",
-      "signal_type": "offer",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "ae5f01e37257",
-      "title": "Hakan Safi'nin Conte'ye yaptığı teklif ortaya çıktı! Suudi kulüpleri de Fenerbahçe'ye rakip",
-      "link": "https://www.hurriyet.com.tr/sporarena/hakan-safinin-conteye-yaptigi-teklif-ortaya-cikti-suudi-kulupleri-de-fenerbahceye-rakip-43190324",
-      "source": "Hürriyet Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-02T07:49:00+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Hürriyet Spor"
-      ],
-      "evidence": [
-        {
-          "source": "Hürriyet Spor",
-          "source_tier": "MEDIA",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "Hakan Safi'nin Conte'ye yaptığı teklif ortaya çıktı! Suudi kulüpleri de Fenerbahçe'ye rakip",
-          "link": "https://www.hurriyet.com.tr/sporarena/hakan-safinin-conteye-yaptigi-teklif-ortaya-cikti-suudi-kulupleri-de-fenerbahceye-rakip-43190324",
-          "published_at": "2026-06-02T07:49:00+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": null,
       "to_club": "Galatasaray",
       "signal_type": "transfer_negotiation",
       "window": "summer_2026",
@@ -1568,6 +976,61 @@
           "title": "Galatasaray'da transfer görüşmesi tıkandı! Şart belli oldu - Hürriyet",
           "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPUzJPcTNwdDliTlI0enl5UTF6QXlDaVE4a0xER1ptS3NzeFRLWXFZQ01GdlFQYTNqSGJNVmpMLXU0LTh3QXotR2FDeU1qQWJKT3JWeXdmVmFCenhhNldmTVBtUUlkZ2lHMXFkQW9wSWFzWjFHeE5Tbkw0YjBoQTBzSGJpN090NHlEMW9FdzhENW1hTE5ENzhWWXlzdGc0N2JjblNpWTVn?oc=5",
           "published_at": "2026-06-02T07:26:00+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": "VICTOR JAMES OSIMHEN",
+      "from_club": "GALATASARAY A.Ş.",
+      "to_club": null,
+      "transfer_type": "permanent",
+      "window": "summer_2026",
+      "signal_type": "transfer_fee",
+      "confidence": "LOW",
+      "tm_market_value_eur": 75000000,
+      "direction_quality": "TARGET_UNRESOLVED",
+      "article_id": "a32d1d8a3f3a",
+      "title": "Dudak uçuklatan bonservis: Galatasaray'da Osimhen kararı! Kapıyı çalan yandı",
+      "link": "https://www.takvim.com.tr/galatasaray/2026/06/02/dudak-ucuklatan-bonservis-galatasarayda-osimhen-karari-kapiyi-calan-yandi",
+      "source": "Takvim Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-02T09:53:39+03:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "HIGH",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 2,
+      "sources": [
+        "Takvim Spor",
+        "FOTOMAÇ"
+      ],
+      "evidence": [
+        {
+          "source": "Takvim Spor",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Dudak uçuklatan bonservis: Galatasaray'da Osimhen kararı! Kapıyı çalan yandı",
+          "link": "https://www.takvim.com.tr/galatasaray/2026/06/02/dudak-ucuklatan-bonservis-galatasarayda-osimhen-karari-kapiyi-calan-yandi",
+          "published_at": "2026-06-02T09:53:39+03:00",
+          "first_observed_at": null
+        },
+        {
+          "source": "FOTOMAÇ",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Galatasaray transfer",
+          "title": "Osimhen Galatasaray’dan ayrılacak mı? Transferde yeni gelişme - FOTOMAÇ",
+          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBhUHlLbkVUa3JZcldZQ1ktbWFTTUhyWC1SemlUUDFYZEtWUExBdm56eFhqQXJWWl80d09VbFJEZHotN1JsQUFGbklfQWpmTTNYaWt1bjlVTWZabVg1SC04aWRWRWpyVzJuZURxZ1ZUYzhRZVU?oc=5",
+          "published_at": "2026-06-02T03:50:15+00:00",
           "first_observed_at": null
         }
       ],
@@ -1775,88 +1238,6 @@
           "title": "Fenerbahçe'de Serhou Guirassy transferi tamam! 2 aday da anlaştı",
           "link": "https://www.takvim.com.tr/fenerbahce/2026/06/01/fenerbahcede-serhou-guirassy-transferi-tamam-2-aday-da-anlasti",
           "published_at": "2026-06-01T10:28:39+03:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": null,
-      "to_club": "Kocaelispor",
-      "signal_type": "interest",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "c0c9a1a10832",
-      "title": "Kocaelispor savunmaya takviye peşinde! Togolu stoper için temaslar sürüyor - Çağdaş Kocaeli Gazetesi",
-      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOZlRvMkV2ODB6XzE3dVpjakR1dFBtR05LMWwzSlg3NFBsMTRyNGhsZnJSbS0zYW1rMkxCSVc4Vm1hOWFhUVlscXo1VDZxZlNUQVJ4Q3hnaVBrTi1kc0gtLW9HNGxwREIyb0RQQzV5alZfS1RxVXk4cjEtNDkzaWZIMFBSUzFfbU8ydUVYeDFIRFdVenVXMl80cWlfTmJ2Zi1CYzBnaUR5R3FPLW5JUXktSXUtc1BQUS1PajgybNIBwgFBVV95cUxOY0UyNk1OS0VaN1h3RVZCN1l0SUptVDE0X2Q1NnBrci0zSHRNRVNZcm96Z2VIdG92R3VvSW5RcDBmcVp4VWlnVnE5dW9Sd2NMal9fYXNjRkhYeEZYeS1aellaN044WkxVOXktbW16RVRuZ0h2VnJIOEhRVEhZQlJ4N0JMVDgxUFRzSUVRZWZkNmIxa25VSE1tQU9lSlVfUVc2TUczTlRNakNZTDdUZ1hiaUhjdm83eEl3eXdxSHlrd1Mwdw?oc=5",
-      "source": "Çağdaş Kocaeli Gazetesi",
-      "source_type": "google_news",
-      "account_type": null,
-      "query": "Kocaelispor transfer",
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-01T06:53:00+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Çağdaş Kocaeli Gazetesi"
-      ],
-      "evidence": [
-        {
-          "source": "Çağdaş Kocaeli Gazetesi",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Kocaelispor transfer",
-          "title": "Kocaelispor savunmaya takviye peşinde! Togolu stoper için temaslar sürüyor - Çağdaş Kocaeli Gazetesi",
-          "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOZlRvMkV2ODB6XzE3dVpjakR1dFBtR05LMWwzSlg3NFBsMTRyNGhsZnJSbS0zYW1rMkxCSVc4Vm1hOWFhUVlscXo1VDZxZlNUQVJ4Q3hnaVBrTi1kc0gtLW9HNGxwREIyb0RQQzV5alZfS1RxVXk4cjEtNDkzaWZIMFBSUzFfbU8ydUVYeDFIRFdVenVXMl80cWlfTmJ2Zi1CYzBnaUR5R3FPLW5JUXktSXUtc1BQUS1PajgybNIBwgFBVV95cUxOY0UyNk1OS0VaN1h3RVZCN1l0SUptVDE0X2Q1NnBrci0zSHRNRVNZcm96Z2VIdG92R3VvSW5RcDBmcVp4VWlnVnE5dW9Sd2NMal9fYXNjRkhYeEZYeS1aellaN044WkxVOXktbW16RVRuZ0h2VnJIOEhRVEhZQlJ4N0JMVDgxUFRzSUVRZWZkNmIxa25VSE1tQU9lSlVfUVc2TUczTlRNakNZTDdUZ1hiaUhjdm83eEl3eXdxSHlrd1Mwdw?oc=5",
-          "published_at": "2026-06-01T06:53:00+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": "Galatasaray",
-      "to_club": "Göztepe",
-      "signal_type": "transfer_fee",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "37189d621719",
-      "title": "Galatasaray ve Göztepe, görüşmelere başladı! Bonservisi belli oldu - Hürriyet",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQWWlhWDZJZTBiSEhqb2UxQjBRSFBvcHREcElrdGNMcHdwZ3J5alozeHRlTW15S0s4WUlPNWpHamx0RElTcTRzaUpEOU14Yl9FMFNCVndzMTVSb085cmtkWFBPdTNJWHl1RS03SDRWQ2xkMjZINXFkdEJiSy00dC1LRGoxaGNHZzFCcUZJRzlsMXY5YTIzbXdoakhJTUNtWjFSRV9pNW9PUV9mNTlkOHJuVQ?oc=5",
-      "source": "Hürriyet",
-      "source_type": "google_news",
-      "account_type": null,
-      "query": "Göztepe transfer",
-      "source_tier": "MEDIA",
-      "published_at": "2026-05-29T12:40:43+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Hürriyet"
-      ],
-      "evidence": [
-        {
-          "source": "Hürriyet",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Göztepe transfer",
-          "title": "Galatasaray ve Göztepe, görüşmelere başladı! Bonservisi belli oldu - Hürriyet",
-          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQWWlhWDZJZTBiSEhqb2UxQjBRSFBvcHREcElrdGNMcHdwZ3J5alozeHRlTW15S0s4WUlPNWpHamx0RElTcTRzaUpEOU14Yl9FMFNCVndzMTVSb085cmtkWFBPdTNJWHl1RS03SDRWQ2xkMjZINXFkdEJiSy00dC1LRGoxaGNHZzFCcUZJRzlsMXY5YTIzbXdoakhJTUNtWjFSRV9pNW9PUV9mNTlkOHJuVQ?oc=5",
-          "published_at": "2026-05-29T12:40:43+00:00",
           "first_observed_at": null
         }
       ],
