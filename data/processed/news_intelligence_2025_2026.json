@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-06-03T15:04:18.809419+00:00",
+  "generated_at": "2026-06-03T17:18:30.481587+00:00",
   "season": "2025_2026",
-  "total_articles": 343,
-  "analyzed_articles": 343,
-  "transfer_signals": 29,
-  "raw_transfer_mentions": 43,
-  "archived_transfer_signals": 36,
+  "total_articles": 320,
+  "analyzed_articles": 320,
+  "transfer_signals": 31,
+  "raw_transfer_mentions": 48,
+  "archived_transfer_signals": 38,
   "stale_transfer_mentions_excluded": 7,
   "transfer_status_counts": {
     "OFFICIAL": 0,
     "CORROBORATED": 2,
     "RUMOR": 4,
-    "REVIEW_REQUIRED": 23
+    "REVIEW_REQUIRED": 25
   },
   "injury_signals": 4,
   "suspension_signals": 0,
   "promotion_signals": 1,
-  "player_mentions": 601,
+  "player_mentions": 569,
   "transfers": [
     {
       "player_name": "UĞUR KAAN YILDIZ",
@@ -42,11 +42,12 @@
       "entity_confidence": "HIGH",
       "verification_status": "CORROBORATED",
       "interpretation": "Birden fazla kaynak aynı yönlü iddiayı taşıyor; resmi açıklama beklenir.",
-      "source_count": 3,
+      "source_count": 4,
       "sources": [
         "SonDakika",
         "Mersin Haber",
-        "CNN Türk Spor"
+        "CNN Türk Spor",
+        "Ajansspor"
       ],
       "evidence": [
         {
@@ -80,6 +81,17 @@
           "title": "Kocaelispor, Göztepe'de sözleşme uzatılmayan Uğur Kaan Yıldız'ı kadrosuna kattı",
           "link": "https://www.cnnturk.com/spor/futbol/kocaelispor-goztepede-sozlesme-uzatilmayan-ugur-kaan-yildizi-kadrosuna-katti-3426639",
           "published_at": "2026-06-03T11:02:23+00:00",
+          "first_observed_at": null
+        },
+        {
+          "source": "Ajansspor",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Göztepe transfer",
+          "title": "Göztepe’den ayrılan Uğur Kaan Yıldız, Kocaelispor’a transfer oldu - Ajansspor",
+          "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOQlRlLTNKVDhQZ05vcjhoV3dfaFZCa0pULWk5N1VqM24xTGU1ZFU2eWljcG1rTmkyNU00OGpJcjhEMURtSnZkc3laZXlJXzZjZlYxWk5QQVlPVVJxa1dENXRhb0lwY1dRMkc1cmpIVHVSTWVYTW9RSHE3aS0zTVZ2bndXUW0zNHVXXzhWV2JOLUNtZk90TGpfd0dMNDJsUQ?oc=5",
+          "published_at": "2026-06-03T08:11:04+00:00",
           "first_observed_at": null
         }
       ],
@@ -135,6 +147,49 @@
           "title": "Başakşehir, Galatasaray'ın istediği Bertuğ Yıldırım'ın bonservisini belirledi - Hürriyet",
           "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQcjNNNnZ1NWpoelBLWXQyYl95V09HYjJEaXRQQ3pjeEphNTItZ3l5aTMzcm4wOGJub0pkeU9KY1Qta0FwcUN4TzBOR2ZVXzFyaXM2RFB4NmlsMmVpYVJjZmxXQ1F6UXBXS1dHVGgzd0VkT0pkb3B1SG4zSGtfYXZWNjhVb0F3b0QtQnJTcEctWXFVb2NTZ1lXOFh3QXBlY2FQYnJiUm5BVTFSaFpWZEtra1JUUzZrTHFBaHpWSVNR?oc=5",
           "published_at": "2026-05-21T07:00:00+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": "OLEKSANDR ZUBKOV",
+      "from_club": null,
+      "to_club": "Trabzonspor",
+      "transfer_type": "permanent",
+      "window": "summer_2026",
+      "signal_type": "official_transfer",
+      "confidence": "LOW",
+      "tm_market_value_eur": 6000000,
+      "direction_quality": "TARGET_IDENTIFIED",
+      "article_id": "3b0fdd03837c",
+      "title": "Trabzonspor'da Oleksandr Zubkov AEK'ya transfer oldu! - A SPOR",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOanZmNTV0NURkVEdqWlJzcjdfQko1Z0Y3Q1JCVHp6TDFSbUdjNHlpNzJUZWN3Y0VKWTJqNTEzc2JTaUlFUk83Tl8xQkg3LTRKSWg2ZDV5Vnk2R2p4bTBscE9fS0w3LU1WVGhUTC12T1N1azBCZ3Bydy1IbUNWdW9VaUpJU2pGelNLSmdPbU12TTMwM0NBZlBDbEtxYnhrT3PSAaQBQVVfeXFMT1RLT2NXcEZydW5JbHg1X21JZkVPUXdaRE51X016eGNWRUJFRmJfNWpuT3QzdDFNUjRrSVdJei0yWWpHQk5NUFpnN0FGWWFaODdxTll6VnUxWExLakdKcm9uOG44TlV0NHR6Vy1yY2lEMVNYcFlnLWd4VkxMSUt6RE5WRFNpaFV4cVFxTjZtYS1wT0RtMHM0Mk8zUm5sMHVoUjVuMVo?oc=5",
+      "source": "A SPOR",
+      "source_type": "google_news",
+      "account_type": null,
+      "query": "Trabzonspor transfer",
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-03T13:04:17+00:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "HIGH",
+      "verification_status": "RUMOR",
+      "interpretation": "Tek kaynaklı transfer iddiası; yalnız transfer radarında izlenir.",
+      "source_count": 1,
+      "sources": [
+        "A SPOR"
+      ],
+      "evidence": [
+        {
+          "source": "A SPOR",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Trabzonspor transfer",
+          "title": "Trabzonspor'da Oleksandr Zubkov AEK'ya transfer oldu! - A SPOR",
+          "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOanZmNTV0NURkVEdqWlJzcjdfQko1Z0Y3Q1JCVHp6TDFSbUdjNHlpNzJUZWN3Y0VKWTJqNTEzc2JTaUlFUk83Tl8xQkg3LTRKSWg2ZDV5Vnk2R2p4bTBscE9fS0w3LU1WVGhUTC12T1N1azBCZ3Bydy1IbUNWdW9VaUpJU2pGelNLSmdPbU12TTMwM0NBZlBDbEtxYnhrT3PSAaQBQVVfeXFMT1RLT2NXcEZydW5JbHg1X21JZkVPUXdaRE51X016eGNWRUJFRmJfNWpuT3QzdDFNUjRrSVdJei0yWWpHQk5NUFpnN0FGWWFaODdxTll6VnUxWExLakdKcm9uOG44TlV0NHR6Vy1yY2lEMVNYcFlnLWd4VkxMSUt6RE5WRFNpaFV4cVFxTjZtYS1wT0RtMHM0Mk8zUm5sMHVoUjVuMVo?oc=5",
+          "published_at": "2026-06-03T13:04:17+00:00",
           "first_observed_at": null
         }
       ],
@@ -264,41 +319,53 @@
       "model_use": false
     },
     {
-      "player_name": "Lewandowski ve Conte",
+      "player_name": null,
       "from_club": null,
-      "to_club": "Fenerbahçe",
-      "signal_type": "interest",
+      "to_club": "Göztepe",
+      "signal_type": "transfer_fee",
       "window": "summer_2026",
       "confidence": "LOW",
-      "direction_quality": "HEADLINE_EXPLICIT_DIRECTION",
-      "article_id": "b1245ce1d51f",
-      "title": "Fenerbahçe'den Lewandowski ve Conte bombası!",
-      "link": "https://www.haberturk.com/fenerbahce-den-lewandowski-ve-conte-bombasi-iki-teklifi-de-duyurdular-3888709-spor",
-      "source": "Haberturk Spor",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "dd279778e5a8",
+      "title": "Göztepe kalecisi Lis, Lech Poznan yolcusu!",
+      "link": "https://www.hurriyet.com.tr/sporarena/goztepe-kalecisi-lis-lech-poznan-yolcusu-43192363",
+      "source": "Hürriyet Spor",
       "source_type": "rss",
       "account_type": null,
       "query": null,
       "source_tier": "MEDIA",
-      "published_at": "2026-06-02T15:24:55+00:00",
+      "published_at": "2026-06-03T17:00:32+00:00",
       "first_observed_at": null,
       "summary_tr": "",
-      "entity_confidence": "MEDIUM",
-      "verification_status": "RUMOR",
-      "interpretation": "Tek kaynaklı transfer iddiası; yalnız transfer radarında izlenir.",
-      "source_count": 1,
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 2,
       "sources": [
-        "Haberturk Spor"
+        "Hürriyet Spor",
+        "Sabah Spor"
       ],
       "evidence": [
         {
-          "source": "Haberturk Spor",
+          "source": "Hürriyet Spor",
           "source_tier": "MEDIA",
           "source_type": "rss",
           "account_type": null,
           "query": null,
-          "title": "Fenerbahçe'den Lewandowski ve Conte bombası!",
-          "link": "https://www.haberturk.com/fenerbahce-den-lewandowski-ve-conte-bombasi-iki-teklifi-de-duyurdular-3888709-spor",
-          "published_at": "2026-06-02T15:24:55+00:00",
+          "title": "Göztepe kalecisi Lis, Lech Poznan yolcusu!",
+          "link": "https://www.hurriyet.com.tr/sporarena/goztepe-kalecisi-lis-lech-poznan-yolcusu-43192363",
+          "published_at": "2026-06-03T17:00:32+00:00",
+          "first_observed_at": null
+        },
+        {
+          "source": "Sabah Spor",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Göztepe kalecisi Lis, Lech Poznan yolcusu",
+          "link": "https://www.sabah.com.tr/spor/futbol/2026/06/03/goztepe-kalecisi-lis-lech-poznan-yolcusu",
+          "published_at": "2026-06-03T17:56:37+03:00",
           "first_observed_at": null
         }
       ],
@@ -307,20 +374,20 @@
     {
       "player_name": null,
       "from_club": null,
-      "to_club": "Kocaelispor",
-      "signal_type": "official_transfer",
+      "to_club": "Galatasaray",
+      "signal_type": "transfer_fee",
       "window": "summer_2026",
       "confidence": "LOW",
       "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "6bbc46463e1c",
-      "title": "Kocaelispor’da ilk transfer gerçekleşti - Özgür Kocaeli",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQRlpIWWt2Sm9ZOGRxSzFDdE1TTnRMbE90Rm5mSVk0SXNQS3ZjVUM3c1VxVlN2c2xDTXRoOXozQy05amF1TFdHUWl2NEJzdVVjRjJkcUJ4akREOTVUNVFBbXZTcmVDSGlOOVkxMS1RMXg2QWFmU3VTbl9td3FheWxpNmJrWkhpaGNpN2stZEp30gGTAUFVX3lxTE5mRU5qWWRlTHBqQUZWUnpRNEdjVkJ2TFhZX1VJTzJWZzlVWExlMFVRTGY0Z2pZd1Z6U2doN0IwcHNRWHJfTEhXVk5LbjJxT1hxYUdmdGJKR3pSZFZ4d292T09iV0JIX01vUE9zcDRwTkpVTnZveC0yOTlJM0xVbUhGeFVpdXk1UVRTb1lCVGFmZlhnbw?oc=5",
-      "source": "Özgür Kocaeli",
-      "source_type": "google_news",
+      "article_id": "e4c6d4cb97f4",
+      "title": "Galatasaray'dan Rafael Leão bombası: Dev teklif ortaya çıktı!",
+      "link": "https://www.hurriyet.com.tr/sporarena/galatasaraydan-rafael-leao-bombasi-dev-teklif-ortaya-cikti-43192347",
+      "source": "Hürriyet Spor",
+      "source_type": "rss",
       "account_type": null,
-      "query": "Göztepe transfer",
+      "query": null,
       "source_tier": "MEDIA",
-      "published_at": "2026-06-03T13:26:30+00:00",
+      "published_at": "2026-06-03T16:50:01+00:00",
       "first_observed_at": null,
       "summary_tr": "",
       "entity_confidence": "LOW",
@@ -328,18 +395,61 @@
       "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
       "source_count": 1,
       "sources": [
-        "Özgür Kocaeli"
+        "Hürriyet Spor"
       ],
       "evidence": [
         {
-          "source": "Özgür Kocaeli",
+          "source": "Hürriyet Spor",
           "source_tier": "MEDIA",
-          "source_type": "google_news",
+          "source_type": "rss",
           "account_type": null,
-          "query": "Göztepe transfer",
-          "title": "Kocaelispor’da ilk transfer gerçekleşti - Özgür Kocaeli",
-          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQRlpIWWt2Sm9ZOGRxSzFDdE1TTnRMbE90Rm5mSVk0SXNQS3ZjVUM3c1VxVlN2c2xDTXRoOXozQy05amF1TFdHUWl2NEJzdVVjRjJkcUJ4akREOTVUNVFBbXZTcmVDSGlOOVkxMS1RMXg2QWFmU3VTbl9td3FheWxpNmJrWkhpaGNpN2stZEp30gGTAUFVX3lxTE5mRU5qWWRlTHBqQUZWUnpRNEdjVkJ2TFhZX1VJTzJWZzlVWExlMFVRTGY0Z2pZd1Z6U2doN0IwcHNRWHJfTEhXVk5LbjJxT1hxYUdmdGJKR3pSZFZ4d292T09iV0JIX01vUE9zcDRwTkpVTnZveC0yOTlJM0xVbUhGeFVpdXk1UVRTb1lCVGFmZlhnbw?oc=5",
-          "published_at": "2026-06-03T13:26:30+00:00",
+          "query": null,
+          "title": "Galatasaray'dan Rafael Leão bombası: Dev teklif ortaya çıktı!",
+          "link": "https://www.hurriyet.com.tr/sporarena/galatasaraydan-rafael-leao-bombasi-dev-teklif-ortaya-cikti-43192347",
+          "published_at": "2026-06-03T16:50:01+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": "UĞURCAN ÇAKIR",
+      "from_club": "GALATASARAY A.Ş.",
+      "to_club": null,
+      "transfer_type": "permanent",
+      "window": "summer_2026",
+      "signal_type": "transfer_fee",
+      "confidence": "LOW",
+      "tm_market_value_eur": 15000000,
+      "direction_quality": "TARGET_UNRESOLVED",
+      "article_id": "7499fd1a2fae",
+      "title": "Galatasaray'a dev piyango! Uğurcan Çakır için temasa geçtiler",
+      "link": "https://www.aksam.com.tr/sporplus/galatasaraya-dev-piyango-ugurcan-cakir-icin-temasa-gectiler/haber-1672031",
+      "source": "Aksam Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-03T18:25:00+03:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "HIGH",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Aksam Spor"
+      ],
+      "evidence": [
+        {
+          "source": "Aksam Spor",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Galatasaray'a dev piyango! Uğurcan Çakır için temasa geçtiler",
+          "link": "https://www.aksam.com.tr/sporplus/galatasaraya-dev-piyango-ugurcan-cakir-icin-temasa-gectiler/haber-1672031",
+          "published_at": "2026-06-03T18:25:00+03:00",
           "first_observed_at": null
         }
       ],
@@ -373,8 +483,8 @@
       "sources": [
         "Yeni Şafak",
         "Takvim Spor",
+        "Haberler",
         "Hürriyet Spor",
-        "Sabah Spor",
         "CNN Türk Spor"
       ],
       "evidence": [
@@ -401,6 +511,17 @@
           "first_observed_at": null
         },
         {
+          "source": "Haberler",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Trabzonspor transfer",
+          "title": "Trabzonspor'da Zubkov ile yollar ayrıldı - Haberler",
+          "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPcFpNVmpVYU12SUg5Skt0NjNnQWpfMWZOVGU3bUpZaXdCVTdNMnE4eGFlaFN5U0F3c0FpYjRSdGRGWnhZaXJrRlhZYThLV3htRm5BVW5tRElEZFlwR3otdEF3aU93RHVUZ19nSmxSYW5JTHcyWmRHZ0VlNDktOFhBR3ItWjBNRlVrVjB2N2ZsRdIBjgFBVV95cUxNcDl0Z1p4cTBBLUI2ZktneEJBa2dDV3lRT2U1ZWM2cFZEeWpCOU1CQWJGQjdhSUxabzVidFFMenJiZ1V2X0d3ZUtDdGEtZGdLUkNEeGJRd3JhOTRTVFY4MFR1ZlBrZVBZdEt5VUlHdzZManRleE94MnpEUGlySWh2TXE4Vjl1dy1haGlYVVZ3?oc=5",
+          "published_at": "2026-06-03T13:08:11+00:00",
+          "first_observed_at": null
+        },
+        {
           "source": "Hürriyet Spor",
           "source_tier": "MEDIA",
           "source_type": "rss",
@@ -409,17 +530,6 @@
           "title": "Trabzonspor'da Oleksandr Zubkov ile yollar ayrıldı!",
           "link": "https://www.hurriyet.com.tr/sporarena/trabzonsporda-oleksandr-zubkov-ile-yollar-ayrildi-43192076",
           "published_at": "2026-06-03T13:08:00+00:00",
-          "first_observed_at": null
-        },
-        {
-          "source": "Sabah Spor",
-          "source_tier": "MEDIA",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "SON DAKİKA | Trabzonspor'da Zubkov ile yollar ayrıldı",
-          "link": "https://www.sabah.com.tr/spor/futbol/2026/06/03/son-dakika-trabzonsporda-zubkov-ile-yollar-ayrildi",
-          "published_at": "2026-06-03T16:02:40+03:00",
           "first_observed_at": null
         },
         {
@@ -522,47 +632,6 @@
     },
     {
       "player_name": null,
-      "from_club": null,
-      "to_club": "Trabzonspor",
-      "signal_type": "deal_close",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "11248437ace5",
-      "title": "Trabzonspor'a Portekizli kanat!",
-      "link": "https://www.haberturk.com/trabzonspor-a-portekizli-kanat-noah-saviolo-3889004-spor",
-      "source": "Haberturk Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-03T10:48:03+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Haberturk Spor"
-      ],
-      "evidence": [
-        {
-          "source": "Haberturk Spor",
-          "source_tier": "MEDIA",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "Trabzonspor'a Portekizli kanat!",
-          "link": "https://www.haberturk.com/trabzonspor-a-portekizli-kanat-noah-saviolo-3889004-spor",
-          "published_at": "2026-06-03T10:48:03+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
       "from_club": "Fenerbahçe",
       "to_club": "Kocaelispor",
       "signal_type": "official_transfer",
@@ -575,7 +644,7 @@
       "source": "Halk TV",
       "source_type": "google_news",
       "account_type": null,
-      "query": "Fenerbahçe transfer",
+      "query": "Göztepe transfer",
       "source_tier": "MEDIA",
       "published_at": "2026-06-03T10:45:30+00:00",
       "first_observed_at": null,
@@ -593,7 +662,7 @@
           "source_tier": "MEDIA",
           "source_type": "google_news",
           "account_type": null,
-          "query": "Fenerbahçe transfer",
+          "query": "Göztepe transfer",
           "title": "Kocaelispor fırsatı kaçırmadı: Fenerbahçe'nin eski futbolcusunu transfer etti - Halk TV",
           "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOdjNKNFR0bnhscy1RMWROQXgyRnlldnlyV1Fjc1lZOFFWc2RTaTFNUFZjbXQ2LXMxekV0TDR1ekp1a0J1OUhFMENQbGpFYlB1cmhOT2Vuc21yemY2WmtnelByM3BaaTdsVlQyLV9RQ1doRFhrYVJPMzVCM0VvcmFmRkc0VHhpWTVuWlFtZFdxLURaUHhfU0FoLTJNTVZnVTBfcXZHNVhmY2k5dHhsTGV6Wg?oc=5",
           "published_at": "2026-06-03T10:45:30+00:00",
@@ -644,6 +713,61 @@
       "model_use": false
     },
     {
+      "player_name": "VICTOR JAMES OSIMHEN",
+      "from_club": "GALATASARAY A.Ş.",
+      "to_club": null,
+      "transfer_type": "permanent",
+      "window": "summer_2026",
+      "signal_type": "transfer_fee",
+      "confidence": "LOW",
+      "tm_market_value_eur": 75000000,
+      "direction_quality": "TARGET_UNRESOLVED",
+      "article_id": "d6545ccf6b51",
+      "title": "Avrupa devleri Victor Osimhen'in peşini bırakmıyor! Galatasaray'dan dev bonservisi beklentisi - Milliyet",
+      "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPbU5qYXktQUpxWXRsQ0NkX3ZIOFlyRnBJaHlORHhCb09VTjhBU1E2R3lDeXZLbS15bURjS1Brc0gzanp6V1pyS29HaEJGNW1SUU4zUnFHeVMwUWFDekVSQUF4OTdiTEMyU2NhYV8xRG5DUWdqbDBTS3VVVmpJMXNvTVBJUzl0VWQtUEtHNl9PMGtGYnNsTDF6YlJPSGc2WnRWTGVWeFNwM0gyRWZDcFRnUWhOcFhGSElpNnJZOW1JQzRPSEplbFlqbS1BTzJ6QQ?oc=5",
+      "source": "Milliyet",
+      "source_type": "google_news",
+      "account_type": null,
+      "query": "Galatasaray transfer",
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-03T09:51:00+00:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "HIGH",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 2,
+      "sources": [
+        "Milliyet",
+        "Takvim Spor"
+      ],
+      "evidence": [
+        {
+          "source": "Milliyet",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Galatasaray transfer",
+          "title": "Avrupa devleri Victor Osimhen'in peşini bırakmıyor! Galatasaray'dan dev bonservisi beklentisi - Milliyet",
+          "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPbU5qYXktQUpxWXRsQ0NkX3ZIOFlyRnBJaHlORHhCb09VTjhBU1E2R3lDeXZLbS15bURjS1Brc0gzanp6V1pyS29HaEJGNW1SUU4zUnFHeVMwUWFDekVSQUF4OTdiTEMyU2NhYV8xRG5DUWdqbDBTS3VVVmpJMXNvTVBJUzl0VWQtUEtHNl9PMGtGYnNsTDF6YlJPSGc2WnRWTGVWeFNwM0gyRWZDcFRnUWhOcFhGSElpNnJZOW1JQzRPSEplbFlqbS1BTzJ6QQ?oc=5",
+          "published_at": "2026-06-03T09:51:00+00:00",
+          "first_observed_at": null
+        },
+        {
+          "source": "Takvim Spor",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Dudak uçuklatan bonservis: Galatasaray'da Osimhen kararı! Kapıyı çalan yandı",
+          "link": "https://www.takvim.com.tr/galatasaray/2026/06/02/dudak-ucuklatan-bonservis-galatasarayda-osimhen-karari-kapiyi-calan-yandi",
+          "published_at": "2026-06-02T09:53:39+03:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
       "player_name": null,
       "from_club": null,
       "to_club": "Trabzonspor",
@@ -679,6 +803,47 @@
           "title": "Trabzonspor Noah Saviolo transferinde sona yaklaştı! Geleceğe dev yatırım",
           "link": "https://www.takvim.com.tr/trabzonspor/2026/06/03/trabzonspor-noah-saviolo-transferinde-sona-yaklasti-gelecege-dev-yatirim",
           "published_at": "2026-06-03T12:36:35+03:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": null,
+      "from_club": null,
+      "to_club": "Kocaelispor",
+      "signal_type": "official_transfer",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "6bbc46463e1c",
+      "title": "Kocaelispor’da ilk transfer gerçekleşti - Özgür Kocaeli",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQRlpIWWt2Sm9ZOGRxSzFDdE1TTnRMbE90Rm5mSVk0SXNQS3ZjVUM3c1VxVlN2c2xDTXRoOXozQy05amF1TFdHUWl2NEJzdVVjRjJkcUJ4akREOTVUNVFBbXZTcmVDSGlOOVkxMS1RMXg2QWFmU3VTbl9td3FheWxpNmJrWkhpaGNpN2stZEp30gGTAUFVX3lxTE5mRU5qWWRlTHBqQUZWUnpRNEdjVkJ2TFhZX1VJTzJWZzlVWExlMFVRTGY0Z2pZd1Z6U2doN0IwcHNRWHJfTEhXVk5LbjJxT1hxYUdmdGJKR3pSZFZ4d292T09iV0JIX01vUE9zcDRwTkpVTnZveC0yOTlJM0xVbUhGeFVpdXk1UVRTb1lCVGFmZlhnbw?oc=5",
+      "source": "Özgür Kocaeli",
+      "source_type": "google_news",
+      "account_type": null,
+      "query": "Göztepe transfer",
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-03T07:35:00+00:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Özgür Kocaeli"
+      ],
+      "evidence": [
+        {
+          "source": "Özgür Kocaeli",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Göztepe transfer",
+          "title": "Kocaelispor’da ilk transfer gerçekleşti - Özgür Kocaeli",
+          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQRlpIWWt2Sm9ZOGRxSzFDdE1TTnRMbE90Rm5mSVk0SXNQS3ZjVUM3c1VxVlN2c2xDTXRoOXozQy05amF1TFdHUWl2NEJzdVVjRjJkcUJ4akREOTVUNVFBbXZTcmVDSGlOOVkxMS1RMXg2QWFmU3VTbl9td3FheWxpNmJrWkhpaGNpN2stZEp30gGTAUFVX3lxTE5mRU5qWWRlTHBqQUZWUnpRNEdjVkJ2TFhZX1VJTzJWZzlVWExlMFVRTGY0Z2pZd1Z6U2doN0IwcHNRWHJfTEhXVk5LbjJxT1hxYUdmdGJKR3pSZFZ4d292T09iV0JIX01vUE9zcDRwTkpVTnZveC0yOTlJM0xVbUhGeFVpdXk1UVRTb1lCVGFmZlhnbw?oc=5",
+          "published_at": "2026-06-03T07:35:00+00:00",
           "first_observed_at": null
         }
       ],
@@ -935,6 +1100,47 @@
     {
       "player_name": null,
       "from_club": null,
+      "to_club": "Trabzonspor",
+      "signal_type": "official_transfer",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "661e8603c339",
+      "title": "Trabzonspor, Tecrübeli Forveti Transfer Etti - Eurohoops",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPZ2FuNXBQU3FPemdWOUZkaHlzTjJnd3VSMjBheWh3R2pYc2FDbk93TTlIb1RsbnRRakktZVBUX0k5UHZabGtmLVE2Y3NQTm9iZ2lWOHRiVkFBZVBlZnZRM2U3Y2xkbkpxX1YzU0xnb3VIbUhOXzBtakZJOXRjZEtEMzZId3NFT2xLR3RyejVR?oc=5",
+      "source": "Eurohoops",
+      "source_type": "google_news",
+      "account_type": null,
+      "query": "Trabzonspor transfer",
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-02T14:27:00+00:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Eurohoops"
+      ],
+      "evidence": [
+        {
+          "source": "Eurohoops",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Trabzonspor transfer",
+          "title": "Trabzonspor, Tecrübeli Forveti Transfer Etti - Eurohoops",
+          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPZ2FuNXBQU3FPemdWOUZkaHlzTjJnd3VSMjBheWh3R2pYc2FDbk93TTlIb1RsbnRRakktZVBUX0k5UHZabGtmLVE2Y3NQTm9iZ2lWOHRiVkFBZVBlZnZRM2U3Y2xkbkpxX1YzU0xnb3VIbUhOXzBtakZJOXRjZEtEMzZId3NFT2xLR3RyejVR?oc=5",
+          "published_at": "2026-06-02T14:27:00+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": null,
+      "from_club": null,
       "to_club": "Fenerbahçe",
       "signal_type": "signing",
       "window": "summer_2026",
@@ -1091,90 +1297,6 @@
           "title": "Galatasaray'da transfer görüşmesi tıkandı! Şart belli oldu - Hürriyet",
           "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPUzJPcTNwdDliTlI0enl5UTF6QXlDaVE4a0xER1ptS3NzeFRLWXFZQ01GdlFQYTNqSGJNVmpMLXU0LTh3QXotR2FDeU1qQWJKT3JWeXdmVmFCenhhNldmTVBtUUlkZ2lHMXFkQW9wSWFzWjFHeE5Tbkw0YjBoQTBzSGJpN090NHlEMW9FdzhENW1hTE5ENzhWWXlzdGc0N2JjblNpWTVn?oc=5",
           "published_at": "2026-06-02T07:26:00+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": "VICTOR JAMES OSIMHEN",
-      "from_club": "GALATASARAY A.Ş.",
-      "to_club": null,
-      "transfer_type": "permanent",
-      "window": "summer_2026",
-      "signal_type": "transfer_fee",
-      "confidence": "LOW",
-      "tm_market_value_eur": 75000000,
-      "direction_quality": "TARGET_UNRESOLVED",
-      "article_id": "a32d1d8a3f3a",
-      "title": "Dudak uçuklatan bonservis: Galatasaray'da Osimhen kararı! Kapıyı çalan yandı",
-      "link": "https://www.takvim.com.tr/galatasaray/2026/06/02/dudak-ucuklatan-bonservis-galatasarayda-osimhen-karari-kapiyi-calan-yandi",
-      "source": "Takvim Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-02T09:53:39+03:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "HIGH",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Takvim Spor"
-      ],
-      "evidence": [
-        {
-          "source": "Takvim Spor",
-          "source_tier": "MEDIA",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "Dudak uçuklatan bonservis: Galatasaray'da Osimhen kararı! Kapıyı çalan yandı",
-          "link": "https://www.takvim.com.tr/galatasaray/2026/06/02/dudak-ucuklatan-bonservis-galatasarayda-osimhen-karari-kapiyi-calan-yandi",
-          "published_at": "2026-06-02T09:53:39+03:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": "Galatasaray",
-      "to_club": null,
-      "signal_type": "departure",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "5022e4f397be",
-      "title": "Anlaşma sağlanmışken gözden çıkarıldı! Galatasaray'dan ayrılıyor | Transfer hattı - NTVSpor",
-      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNWE1kcE1vZUtqaUZkSkxKNGttZjYxZnJncWp4SV9fRm9mRVVTN212T1k4MEtGVHZSSGNYX01TNU51U0RlX2g3c085NE1QbHdpcmpDWlhZdW8yYzAyWmJYbFVMRTNjSktiQ2c3WnFiRUM2RWExbU9MZ1YxTW9LX29VeHpiNUJjSTJIbEx0ZGE0Z2tsWjdBSlRJRjkxemt6N2dCMXQ2ZkVVYjZjX0EyRHozNEdfUjVHc3VQSjZIN9IBwgFBVV95cUxPbVBoTk9nVGFuVnRYTy1KSXpCNkt3ZVJTV2d6Vm5IOHhzOVI4R19WR1lWSGo5S2JwUUE1OEMxZkZZc25zSllLZDVSZWpnQWNCcGFNMlp6YWlJQXVPbjJhOUxzbG1RNkF5bmxuWWFJY01XY2NVaUNiOHRNTUJ4MUh1aDRyZnhXMVd5NlVHdjR5RlRvX3FSdUY0OVBDMWZmamZaa2FyR09EalNyZDI5czgtSE4xNURhbUFVSDA5YnBMT0RTZw?oc=5",
-      "source": "NTVSpor",
-      "source_type": "google_news",
-      "account_type": null,
-      "query": "Galatasaray transfer",
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-02T06:36:48+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "NTVSpor"
-      ],
-      "evidence": [
-        {
-          "source": "NTVSpor",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Galatasaray transfer",
-          "title": "Anlaşma sağlanmışken gözden çıkarıldı! Galatasaray'dan ayrılıyor | Transfer hattı - NTVSpor",
-          "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNWE1kcE1vZUtqaUZkSkxKNGttZjYxZnJncWp4SV9fRm9mRVVTN212T1k4MEtGVHZSSGNYX01TNU51U0RlX2g3c085NE1QbHdpcmpDWlhZdW8yYzAyWmJYbFVMRTNjSktiQ2c3WnFiRUM2RWExbU9MZ1YxTW9LX29VeHpiNUJjSTJIbEx0ZGE0Z2tsWjdBSlRJRjkxemt6N2dCMXQ2ZkVVYjZjX0EyRHozNEdfUjVHc3VQSjZIN9IBwgFBVV95cUxPbVBoTk9nVGFuVnRYTy1KSXpCNkt3ZVJTV2d6Vm5IOHhzOVI4R19WR1lWSGo5S2JwUUE1OEMxZkZZc25zSllLZDVSZWpnQWNCcGFNMlp6YWlJQXVPbjJhOUxzbG1RNkF5bmxuWWFJY01XY2NVaUNiOHRNTUJ4MUh1aDRyZnhXMVd5NlVHdjR5RlRvX3FSdUY0OVBDMWZmamZaa2FyR09EalNyZDI5czgtSE4xNURhbUFVSDA5YnBMT0RTZw?oc=5",
-          "published_at": "2026-06-02T06:36:48+00:00",
           "first_observed_at": null
         }
       ],
@@ -1707,6 +1829,405 @@
       "tff_external_id": "1911098",
       "confidence": "MEDIUM",
       "matched_in_title": false,
+      "article_id": "8c47621de338",
+      "title": "Hakan Safi'den Luis Suarez harekatı! Transferi duyurdular",
+      "link": "https://www.aksam.com.tr/spor/hakan-safiden-luis-suarez-harekati-transferi-duyurdular/haber-1672040",
+      "source": "Aksam Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-03T20:08:00+03:00",
+      "first_observed_at": null,
+      "summary_tr": ""
+    },
+    {
+      "name": "VEYSEL SARI",
+      "normalized": "VEYSEL SARI",
+      "current_club": "HESAP.COM ANTALYASPOR",
+      "age": 37,
+      "tm_market_value_eur": null,
+      "tff_external_id": "683521",
+      "confidence": "MEDIUM",
+      "matched_in_title": false,
+      "article_id": "8c47621de338",
+      "title": "Hakan Safi'den Luis Suarez harekatı! Transferi duyurdular",
+      "link": "https://www.aksam.com.tr/spor/hakan-safiden-luis-suarez-harekati-transferi-duyurdular/haber-1672040",
+      "source": "Aksam Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-03T20:08:00+03:00",
+      "first_observed_at": null,
+      "summary_tr": ""
+    },
+    {
+      "name": "YUSUF SARI",
+      "normalized": "YUSUF SARI",
+      "current_club": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ",
+      "age": 27,
+      "tm_market_value_eur": 4000000,
+      "tff_external_id": "2089857",
+      "confidence": "MEDIUM",
+      "matched_in_title": false,
+      "article_id": "8c47621de338",
+      "title": "Hakan Safi'den Luis Suarez harekatı! Transferi duyurdular",
+      "link": "https://www.aksam.com.tr/spor/hakan-safiden-luis-suarez-harekati-transferi-duyurdular/haber-1672040",
+      "source": "Aksam Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-03T20:08:00+03:00",
+      "first_observed_at": null,
+      "summary_tr": ""
+    },
+    {
+      "name": "QAZIM LACI",
+      "normalized": "QAZIM LACI",
+      "current_club": "ÇAYKUR RİZESPOR A.Ş.",
+      "age": 30,
+      "tm_market_value_eur": 2800000,
+      "tff_external_id": "2820768",
+      "confidence": "MEDIUM",
+      "matched_in_title": false,
+      "article_id": "8c47621de338",
+      "title": "Hakan Safi'den Luis Suarez harekatı! Transferi duyurdular",
+      "link": "https://www.aksam.com.tr/spor/hakan-safiden-luis-suarez-harekati-transferi-duyurdular/haber-1672040",
+      "source": "Aksam Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-03T20:08:00+03:00",
+      "first_observed_at": null,
+      "summary_tr": ""
+    },
+    {
+      "name": "EFE DOĞAN",
+      "normalized": "EFE DOGAN",
+      "current_club": "ÇAYKUR RİZESPOR A.Ş.",
+      "age": 21,
+      "tm_market_value_eur": 150000,
+      "tff_external_id": "1764300",
+      "confidence": "MEDIUM",
+      "matched_in_title": false,
+      "article_id": "ac45a7b1dcba",
+      "title": "Gaziantep FK için Ömer Erdoğan iddiası!",
+      "link": "https://www.sabah.com.tr/spor/futbol/2026/06/03/gaziantep-fk-icin-omer-erdogan-iddiasi",
+      "source": "Sabah Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-03T19:21:46+03:00",
+      "first_observed_at": null,
+      "summary_tr": ""
+    },
+    {
+      "name": "EREN DOĞAN",
+      "normalized": "EREN DOGAN",
+      "current_club": "TÜMOSAN KONYASPOR",
+      "age": 17,
+      "tm_market_value_eur": null,
+      "tff_external_id": "2142359",
+      "confidence": "MEDIUM",
+      "matched_in_title": false,
+      "article_id": "ac45a7b1dcba",
+      "title": "Gaziantep FK için Ömer Erdoğan iddiası!",
+      "link": "https://www.sabah.com.tr/spor/futbol/2026/06/03/gaziantep-fk-icin-omer-erdogan-iddiasi",
+      "source": "Sabah Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-03T19:21:46+03:00",
+      "first_observed_at": null,
+      "summary_tr": ""
+    },
+    {
+      "name": "RIBEIRO DIAS CARLOS MIGUEL",
+      "normalized": "RIBEIRO DIAS CARLOS MIGUEL",
+      "current_club": "KASIMPAŞA A.Ş.",
+      "age": 33,
+      "tm_market_value_eur": 250000,
+      "tff_external_id": "2685696",
+      "confidence": "MEDIUM",
+      "matched_in_title": false,
+      "article_id": "ac45a7b1dcba",
+      "title": "Gaziantep FK için Ömer Erdoğan iddiası!",
+      "link": "https://www.sabah.com.tr/spor/futbol/2026/06/03/gaziantep-fk-icin-omer-erdogan-iddiasi",
+      "source": "Sabah Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-03T19:21:46+03:00",
+      "first_observed_at": null,
+      "summary_tr": ""
+    },
+    {
+      "name": "METEHAN MİMAROĞLU",
+      "normalized": "METEHAN MIMAROGLU",
+      "current_club": "NATURA DÜNYASI GENÇLERBİRLİĞİ",
+      "age": 31,
+      "tm_market_value_eur": 400000,
+      "tff_external_id": "913017",
+      "confidence": "HIGH",
+      "matched_in_title": true,
+      "article_id": "43d426a11656",
+      "title": "Trabzonspor, Metehan Mimaroğlu ile anlaştı!",
+      "link": "https://www.sabah.com.tr/spor/futbol/2026/06/03/trabzonspor-metehan-mimaroglu-ile-anlasti",
+      "source": "Sabah Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-03T19:11:04+03:00",
+      "first_observed_at": null,
+      "summary_tr": ""
+    },
+    {
+      "name": "AHMED ILDIZ",
+      "normalized": "AHMED ILDIZ",
+      "current_club": "ARCA ÇORUM FK",
+      "age": 29,
+      "tm_market_value_eur": null,
+      "tff_external_id": "1928323",
+      "confidence": "MEDIUM",
+      "matched_in_title": false,
+      "article_id": "7499fd1a2fae",
+      "title": "Galatasaray'a dev piyango! Uğurcan Çakır için temasa geçtiler",
+      "link": "https://www.aksam.com.tr/sporplus/galatasaraya-dev-piyango-ugurcan-cakir-icin-temasa-gectiler/haber-1672031",
+      "source": "Aksam Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-03T18:25:00+03:00",
+      "first_observed_at": null,
+      "summary_tr": ""
+    },
+    {
+      "name": "GABRIEL DAVI  GOMES SARA",
+      "normalized": "GABRIEL DAVI GOMES SARA",
+      "current_club": "GALATASARAY A.Ş.",
+      "age": 26,
+      "tm_market_value_eur": 27000000,
+      "tff_external_id": "2685640",
+      "confidence": "MEDIUM",
+      "matched_in_title": false,
+      "article_id": "7499fd1a2fae",
+      "title": "Galatasaray'a dev piyango! Uğurcan Çakır için temasa geçtiler",
+      "link": "https://www.aksam.com.tr/sporplus/galatasaraya-dev-piyango-ugurcan-cakir-icin-temasa-gectiler/haber-1672031",
+      "source": "Aksam Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-03T18:25:00+03:00",
+      "first_observed_at": null,
+      "summary_tr": ""
+    },
+    {
+      "name": "UĞUR KAAN YILDIZ",
+      "normalized": "UGUR KAAN YILDIZ",
+      "current_club": "GÖZTEPE A.Ş.",
+      "age": 23,
+      "tm_market_value_eur": 600000,
+      "tff_external_id": "1555402",
+      "confidence": "HIGH",
+      "matched_in_title": false,
+      "article_id": "7499fd1a2fae",
+      "title": "Galatasaray'a dev piyango! Uğurcan Çakır için temasa geçtiler",
+      "link": "https://www.aksam.com.tr/sporplus/galatasaraya-dev-piyango-ugurcan-cakir-icin-temasa-gectiler/haber-1672031",
+      "source": "Aksam Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-03T18:25:00+03:00",
+      "first_observed_at": null,
+      "summary_tr": ""
+    },
+    {
+      "name": "UĞURCAN ÇAKIR",
+      "normalized": "UGURCAN CAKIR",
+      "current_club": "GALATASARAY A.Ş.",
+      "age": 30,
+      "tm_market_value_eur": 15000000,
+      "tff_external_id": "1136213",
+      "confidence": "HIGH",
+      "matched_in_title": true,
+      "article_id": "7499fd1a2fae",
+      "title": "Galatasaray'a dev piyango! Uğurcan Çakır için temasa geçtiler",
+      "link": "https://www.aksam.com.tr/sporplus/galatasaraya-dev-piyango-ugurcan-cakir-icin-temasa-gectiler/haber-1672031",
+      "source": "Aksam Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-03T18:25:00+03:00",
+      "first_observed_at": null,
+      "summary_tr": ""
+    },
+    {
+      "name": "VEYSEL SARI",
+      "normalized": "VEYSEL SARI",
+      "current_club": "HESAP.COM ANTALYASPOR",
+      "age": 37,
+      "tm_market_value_eur": null,
+      "tff_external_id": "683521",
+      "confidence": "MEDIUM",
+      "matched_in_title": false,
+      "article_id": "7499fd1a2fae",
+      "title": "Galatasaray'a dev piyango! Uğurcan Çakır için temasa geçtiler",
+      "link": "https://www.aksam.com.tr/sporplus/galatasaraya-dev-piyango-ugurcan-cakir-icin-temasa-gectiler/haber-1672031",
+      "source": "Aksam Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-03T18:25:00+03:00",
+      "first_observed_at": null,
+      "summary_tr": ""
+    },
+    {
+      "name": "ARDA KAYA",
+      "normalized": "ARDA KAYA",
+      "current_club": "ZECORNER KAYSERİSPOR",
+      "age": 20,
+      "tm_market_value_eur": null,
+      "tff_external_id": "1832318",
+      "confidence": "MEDIUM",
+      "matched_in_title": false,
+      "article_id": "0c9f5292bf9b",
+      "title": "Beşiktaş Kulübü, eski başkanlarından Mehmet Üstünkaya'yı andı",
+      "link": "https://www.fotomac.com.tr/besiktas/2026/06/03/besiktas-kulubu-eski-baskanlarindan-mehmet-ustunkayayi-andi",
+      "source": "Fotomaç",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-03T18:10:52+03:00",
+      "first_observed_at": null,
+      "summary_tr": ""
+    },
+    {
+      "name": "BORAN BAŞKAN",
+      "normalized": "BORAN BASKAN",
+      "current_club": "TRABZONSPOR A.Ş.",
+      "age": 20,
+      "tm_market_value_eur": 100000,
+      "tff_external_id": "1911098",
+      "confidence": "MEDIUM",
+      "matched_in_title": false,
+      "article_id": "0c9f5292bf9b",
+      "title": "Beşiktaş Kulübü, eski başkanlarından Mehmet Üstünkaya'yı andı",
+      "link": "https://www.fotomac.com.tr/besiktas/2026/06/03/besiktas-kulubu-eski-baskanlarindan-mehmet-ustunkayayi-andi",
+      "source": "Fotomaç",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-03T18:10:52+03:00",
+      "first_observed_at": null,
+      "summary_tr": ""
+    },
+    {
+      "name": "EFE YİĞİT ÜSTÜN",
+      "normalized": "EFE YIGIT USTUN",
+      "current_club": "SAMSUNSPOR A.Ş.",
+      "age": 18,
+      "tm_market_value_eur": null,
+      "tff_external_id": "2065382",
+      "confidence": "MEDIUM",
+      "matched_in_title": false,
+      "article_id": "0c9f5292bf9b",
+      "title": "Beşiktaş Kulübü, eski başkanlarından Mehmet Üstünkaya'yı andı",
+      "link": "https://www.fotomac.com.tr/besiktas/2026/06/03/besiktas-kulubu-eski-baskanlarindan-mehmet-ustunkayayi-andi",
+      "source": "Fotomaç",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-03T18:10:52+03:00",
+      "first_observed_at": null,
+      "summary_tr": ""
+    },
+    {
+      "name": "İBRAHİM KAYA",
+      "normalized": "IBRAHIM KAYA",
+      "current_club": "CORENDON ALANYASPOR",
+      "age": 25,
+      "tm_market_value_eur": 1500000,
+      "tff_external_id": "1546895",
+      "confidence": "MEDIUM",
+      "matched_in_title": false,
+      "article_id": "0c9f5292bf9b",
+      "title": "Beşiktaş Kulübü, eski başkanlarından Mehmet Üstünkaya'yı andı",
+      "link": "https://www.fotomac.com.tr/besiktas/2026/06/03/besiktas-kulubu-eski-baskanlarindan-mehmet-ustunkayayi-andi",
+      "source": "Fotomaç",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-03T18:10:52+03:00",
+      "first_observed_at": null,
+      "summary_tr": ""
+    },
+    {
+      "name": "VEYSEL SARI",
+      "normalized": "VEYSEL SARI",
+      "current_club": "HESAP.COM ANTALYASPOR",
+      "age": 37,
+      "tm_market_value_eur": null,
+      "tff_external_id": "683521",
+      "confidence": "MEDIUM",
+      "matched_in_title": false,
+      "article_id": "4701b5fd44bb",
+      "title": "Göztepe kalecisi Lis, Lech Poznan yolcusu",
+      "link": "https://www.sabah.com.tr/spor/futbol/2026/06/03/goztepe-kalecisi-lis-lech-poznan-yolcusu",
+      "source": "Sabah Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-03T17:56:37+03:00",
+      "first_observed_at": null,
+      "summary_tr": ""
+    },
+    {
+      "name": "YUSUF SARI",
+      "normalized": "YUSUF SARI",
+      "current_club": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ",
+      "age": 27,
+      "tm_market_value_eur": 4000000,
+      "tff_external_id": "2089857",
+      "confidence": "MEDIUM",
+      "matched_in_title": false,
+      "article_id": "4701b5fd44bb",
+      "title": "Göztepe kalecisi Lis, Lech Poznan yolcusu",
+      "link": "https://www.sabah.com.tr/spor/futbol/2026/06/03/goztepe-kalecisi-lis-lech-poznan-yolcusu",
+      "source": "Sabah Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-03T17:56:37+03:00",
+      "first_observed_at": null,
+      "summary_tr": ""
+    },
+    {
+      "name": "BORAN BAŞKAN",
+      "normalized": "BORAN BASKAN",
+      "current_club": "TRABZONSPOR A.Ş.",
+      "age": 20,
+      "tm_market_value_eur": 100000,
+      "tff_external_id": "1911098",
+      "confidence": "MEDIUM",
+      "matched_in_title": false,
       "article_id": "2f1150a7ed73",
       "title": "120. yıla özel tasarım! Fenerbahçe yeni sezon formalarını tanıttı",
       "link": "https://www.aksam.com.tr/spor/120-yila-ozel-tasarim-fenerbahce-yeni-sezon-formalarini-tanitti/haber-1672021",
@@ -1783,23 +2304,296 @@
       "summary_tr": ""
     },
     {
-      "name": "MAHMUT CAN KARA",
-      "normalized": "MAHMUT CAN KARA",
-      "current_club": "CORENDON ALANYASPOR",
-      "age": 20,
-      "tm_market_value_eur": null,
-      "tff_external_id": "1914151",
+      "name": "EFE DOĞAN",
+      "normalized": "EFE DOGAN",
+      "current_club": "ÇAYKUR RİZESPOR A.Ş.",
+      "age": 21,
+      "tm_market_value_eur": 150000,
+      "tff_external_id": "1764300",
       "confidence": "MEDIUM",
       "matched_in_title": false,
-      "article_id": "faa2b9517b6a",
-      "title": "Fatih Karagümrük: Emre Mor iddiaları gerçek değil",
-      "link": "https://www.aksam.com.tr/spor/fatih-karagumruk-emre-mor-iddialari-gercek-degil/haber-1672011",
-      "source": "Aksam Spor",
+      "article_id": "be0ed981fa86",
+      "title": "Gaziantep FK’da Ömer Erdoğan sesleri!",
+      "link": "https://www.hurriyet.com.tr/sporarena/gaziantep-fkda-omer-erdogan-sesleri-43192364",
+      "source": "Hürriyet Spor",
       "source_type": "rss",
       "account_type": null,
       "query": null,
       "source_tier": "MEDIA",
-      "published_at": "2026-06-03T17:00:00+03:00",
+      "published_at": "2026-06-03T17:02:00+00:00",
+      "first_observed_at": null,
+      "summary_tr": ""
+    },
+    {
+      "name": "EREN DOĞAN",
+      "normalized": "EREN DOGAN",
+      "current_club": "TÜMOSAN KONYASPOR",
+      "age": 17,
+      "tm_market_value_eur": null,
+      "tff_external_id": "2142359",
+      "confidence": "MEDIUM",
+      "matched_in_title": false,
+      "article_id": "be0ed981fa86",
+      "title": "Gaziantep FK’da Ömer Erdoğan sesleri!",
+      "link": "https://www.hurriyet.com.tr/sporarena/gaziantep-fkda-omer-erdogan-sesleri-43192364",
+      "source": "Hürriyet Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-03T17:02:00+00:00",
+      "first_observed_at": null,
+      "summary_tr": ""
+    },
+    {
+      "name": "VEYSEL SARI",
+      "normalized": "VEYSEL SARI",
+      "current_club": "HESAP.COM ANTALYASPOR",
+      "age": 37,
+      "tm_market_value_eur": null,
+      "tff_external_id": "683521",
+      "confidence": "MEDIUM",
+      "matched_in_title": false,
+      "article_id": "dd279778e5a8",
+      "title": "Göztepe kalecisi Lis, Lech Poznan yolcusu!",
+      "link": "https://www.hurriyet.com.tr/sporarena/goztepe-kalecisi-lis-lech-poznan-yolcusu-43192363",
+      "source": "Hürriyet Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-03T17:00:32+00:00",
+      "first_observed_at": null,
+      "summary_tr": ""
+    },
+    {
+      "name": "YUSUF SARI",
+      "normalized": "YUSUF SARI",
+      "current_club": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ",
+      "age": 27,
+      "tm_market_value_eur": 4000000,
+      "tff_external_id": "2089857",
+      "confidence": "MEDIUM",
+      "matched_in_title": false,
+      "article_id": "dd279778e5a8",
+      "title": "Göztepe kalecisi Lis, Lech Poznan yolcusu!",
+      "link": "https://www.hurriyet.com.tr/sporarena/goztepe-kalecisi-lis-lech-poznan-yolcusu-43192363",
+      "source": "Hürriyet Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-03T17:00:32+00:00",
+      "first_observed_at": null,
+      "summary_tr": ""
+    },
+    {
+      "name": "AHMED ILDIZ",
+      "normalized": "AHMED ILDIZ",
+      "current_club": "ARCA ÇORUM FK",
+      "age": 29,
+      "tm_market_value_eur": null,
+      "tff_external_id": "1928323",
+      "confidence": "MEDIUM",
+      "matched_in_title": false,
+      "article_id": "e4c6d4cb97f4",
+      "title": "Galatasaray'dan Rafael Leão bombası: Dev teklif ortaya çıktı!",
+      "link": "https://www.hurriyet.com.tr/sporarena/galatasaraydan-rafael-leao-bombasi-dev-teklif-ortaya-cikti-43192347",
+      "source": "Hürriyet Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-03T16:50:01+00:00",
+      "first_observed_at": null,
+      "summary_tr": ""
+    },
+    {
+      "name": "GABRIEL DAVI  GOMES SARA",
+      "normalized": "GABRIEL DAVI GOMES SARA",
+      "current_club": "GALATASARAY A.Ş.",
+      "age": 26,
+      "tm_market_value_eur": 27000000,
+      "tff_external_id": "2685640",
+      "confidence": "MEDIUM",
+      "matched_in_title": false,
+      "article_id": "e4c6d4cb97f4",
+      "title": "Galatasaray'dan Rafael Leão bombası: Dev teklif ortaya çıktı!",
+      "link": "https://www.hurriyet.com.tr/sporarena/galatasaraydan-rafael-leao-bombasi-dev-teklif-ortaya-cikti-43192347",
+      "source": "Hürriyet Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-03T16:50:01+00:00",
+      "first_observed_at": null,
+      "summary_tr": ""
+    },
+    {
+      "name": "UĞUR KAAN YILDIZ",
+      "normalized": "UGUR KAAN YILDIZ",
+      "current_club": "GÖZTEPE A.Ş.",
+      "age": 23,
+      "tm_market_value_eur": 600000,
+      "tff_external_id": "1555402",
+      "confidence": "MEDIUM",
+      "matched_in_title": false,
+      "article_id": "e4c6d4cb97f4",
+      "title": "Galatasaray'dan Rafael Leão bombası: Dev teklif ortaya çıktı!",
+      "link": "https://www.hurriyet.com.tr/sporarena/galatasaraydan-rafael-leao-bombasi-dev-teklif-ortaya-cikti-43192347",
+      "source": "Hürriyet Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-03T16:50:01+00:00",
+      "first_observed_at": null,
+      "summary_tr": ""
+    },
+    {
+      "name": "VEYSEL SARI",
+      "normalized": "VEYSEL SARI",
+      "current_club": "HESAP.COM ANTALYASPOR",
+      "age": 37,
+      "tm_market_value_eur": null,
+      "tff_external_id": "683521",
+      "confidence": "MEDIUM",
+      "matched_in_title": false,
+      "article_id": "e4c6d4cb97f4",
+      "title": "Galatasaray'dan Rafael Leão bombası: Dev teklif ortaya çıktı!",
+      "link": "https://www.hurriyet.com.tr/sporarena/galatasaraydan-rafael-leao-bombasi-dev-teklif-ortaya-cikti-43192347",
+      "source": "Hürriyet Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-03T16:50:01+00:00",
+      "first_observed_at": null,
+      "summary_tr": ""
+    },
+    {
+      "name": "YUSUF SARI",
+      "normalized": "YUSUF SARI",
+      "current_club": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ",
+      "age": 27,
+      "tm_market_value_eur": 4000000,
+      "tff_external_id": "2089857",
+      "confidence": "MEDIUM",
+      "matched_in_title": false,
+      "article_id": "e4c6d4cb97f4",
+      "title": "Galatasaray'dan Rafael Leão bombası: Dev teklif ortaya çıktı!",
+      "link": "https://www.hurriyet.com.tr/sporarena/galatasaraydan-rafael-leao-bombasi-dev-teklif-ortaya-cikti-43192347",
+      "source": "Hürriyet Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-03T16:50:01+00:00",
+      "first_observed_at": null,
+      "summary_tr": ""
+    },
+    {
+      "name": "BORAN BAŞKAN",
+      "normalized": "BORAN BASKAN",
+      "current_club": "TRABZONSPOR A.Ş.",
+      "age": 20,
+      "tm_market_value_eur": 100000,
+      "tff_external_id": "1911098",
+      "confidence": "MEDIUM",
+      "matched_in_title": false,
+      "article_id": "9ed6626021da",
+      "title": "Bakan Kacır, Gaziantep'te temel atma törenine katıldı! 'Fabrika sayısını 11 binden 61 bine yükselttik'",
+      "link": "https://www.milliyet.com.tr/gundem/bakan-kacir-gaziantepte-fabrika-sayisini-11-binden-61-bine-yukselttik-7598983",
+      "source": "Milliyet Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-03T16:25:38+00:00",
+      "first_observed_at": null,
+      "summary_tr": ""
+    },
+    {
+      "name": "CELİL YÜKSEL",
+      "normalized": "CELIL YUKSEL",
+      "current_club": "SAMSUNSPOR A.Ş.",
+      "age": 28,
+      "tm_market_value_eur": 800000,
+      "tff_external_id": "1040716",
+      "confidence": "MEDIUM",
+      "matched_in_title": false,
+      "article_id": "9ed6626021da",
+      "title": "Bakan Kacır, Gaziantep'te temel atma törenine katıldı! 'Fabrika sayısını 11 binden 61 bine yükselttik'",
+      "link": "https://www.milliyet.com.tr/gundem/bakan-kacir-gaziantepte-fabrika-sayisini-11-binden-61-bine-yukselttik-7598983",
+      "source": "Milliyet Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-03T16:25:38+00:00",
+      "first_observed_at": null,
+      "summary_tr": ""
+    },
+    {
+      "name": "EFE DOĞAN",
+      "normalized": "EFE DOGAN",
+      "current_club": "ÇAYKUR RİZESPOR A.Ş.",
+      "age": 21,
+      "tm_market_value_eur": 150000,
+      "tff_external_id": "1764300",
+      "confidence": "MEDIUM",
+      "matched_in_title": false,
+      "article_id": "9ed6626021da",
+      "title": "Bakan Kacır, Gaziantep'te temel atma törenine katıldı! 'Fabrika sayısını 11 binden 61 bine yükselttik'",
+      "link": "https://www.milliyet.com.tr/gundem/bakan-kacir-gaziantepte-fabrika-sayisini-11-binden-61-bine-yukselttik-7598983",
+      "source": "Milliyet Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-03T16:25:38+00:00",
+      "first_observed_at": null,
+      "summary_tr": ""
+    },
+    {
+      "name": "EREN DOĞAN",
+      "normalized": "EREN DOGAN",
+      "current_club": "TÜMOSAN KONYASPOR",
+      "age": 17,
+      "tm_market_value_eur": null,
+      "tff_external_id": "2142359",
+      "confidence": "MEDIUM",
+      "matched_in_title": false,
+      "article_id": "9ed6626021da",
+      "title": "Bakan Kacır, Gaziantep'te temel atma törenine katıldı! 'Fabrika sayısını 11 binden 61 bine yükselttik'",
+      "link": "https://www.milliyet.com.tr/gundem/bakan-kacir-gaziantepte-fabrika-sayisini-11-binden-61-bine-yukselttik-7598983",
+      "source": "Milliyet Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-03T16:25:38+00:00",
+      "first_observed_at": null,
+      "summary_tr": ""
+    },
+    {
+      "name": "YUSUF HASAN TEMEL",
+      "normalized": "YUSUF HASAN TEMEL",
+      "current_club": "NATURA DÜNYASI GENÇLERBİRLİĞİ",
+      "age": 18,
+      "tm_market_value_eur": null,
+      "tff_external_id": "2018629",
+      "confidence": "MEDIUM",
+      "matched_in_title": false,
+      "article_id": "9ed6626021da",
+      "title": "Bakan Kacır, Gaziantep'te temel atma törenine katıldı! 'Fabrika sayısını 11 binden 61 bine yükselttik'",
+      "link": "https://www.milliyet.com.tr/gundem/bakan-kacir-gaziantepte-fabrika-sayisini-11-binden-61-bine-yukselttik-7598983",
+      "source": "Milliyet Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-03T16:25:38+00:00",
       "first_observed_at": null,
       "summary_tr": ""
     },
@@ -2014,27 +2808,6 @@
       "summary_tr": ""
     },
     {
-      "name": "OLEKSANDR ZUBKOV",
-      "normalized": "OLEKSANDR ZUBKOV",
-      "current_club": "TRABZONSPOR A.Ş.",
-      "age": 29,
-      "tm_market_value_eur": 6000000,
-      "tff_external_id": "2768048",
-      "confidence": "HIGH",
-      "matched_in_title": false,
-      "article_id": "ed227082dda9",
-      "title": "SON DAKİKA | Trabzonspor'da Zubkov ile yollar ayrıldı",
-      "link": "https://www.sabah.com.tr/spor/futbol/2026/06/03/son-dakika-trabzonsporda-zubkov-ile-yollar-ayrildi",
-      "source": "Sabah Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-03T16:02:40+03:00",
-      "first_observed_at": null,
-      "summary_tr": ""
-    },
-    {
       "name": "AHMET DOĞAN YILDIRIM",
       "normalized": "AHMET DOGAN YILDIRIM",
       "current_club": "TRABZONSPOR A.Ş.",
@@ -2140,111 +2913,6 @@
       "summary_tr": ""
     },
     {
-      "name": "ABDURRAHİM DURSUN",
-      "normalized": "ABDURRAHIM DURSUN",
-      "current_club": "NATURA DÜNYASI GENÇLERBİRLİĞİ",
-      "age": 27,
-      "tm_market_value_eur": 250000,
-      "tff_external_id": "1316684",
-      "confidence": "MEDIUM",
-      "matched_in_title": false,
-      "article_id": "6d4ecf3dcc30",
-      "title": "Galatasaray Kulübünde şubelerin görev dağılımı belli oldu",
-      "link": "https://www.sabah.com.tr/spor/futbol/2026/06/03/galatasaray-kulubunde-subelerin-gorev-dagilimi-belli-oldu",
-      "source": "Sabah Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-03T15:35:51+03:00",
-      "first_observed_at": null,
-      "summary_tr": ""
-    },
-    {
-      "name": "BORAN BAŞKAN",
-      "normalized": "BORAN BASKAN",
-      "current_club": "TRABZONSPOR A.Ş.",
-      "age": 20,
-      "tm_market_value_eur": 100000,
-      "tff_external_id": "1911098",
-      "confidence": "MEDIUM",
-      "matched_in_title": false,
-      "article_id": "6d4ecf3dcc30",
-      "title": "Galatasaray Kulübünde şubelerin görev dağılımı belli oldu",
-      "link": "https://www.sabah.com.tr/spor/futbol/2026/06/03/galatasaray-kulubunde-subelerin-gorev-dagilimi-belli-oldu",
-      "source": "Sabah Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-03T15:35:51+03:00",
-      "first_observed_at": null,
-      "summary_tr": ""
-    },
-    {
-      "name": "GABRIEL DAVI  GOMES SARA",
-      "normalized": "GABRIEL DAVI GOMES SARA",
-      "current_club": "GALATASARAY A.Ş.",
-      "age": 26,
-      "tm_market_value_eur": 27000000,
-      "tff_external_id": "2685640",
-      "confidence": "MEDIUM",
-      "matched_in_title": false,
-      "article_id": "6d4ecf3dcc30",
-      "title": "Galatasaray Kulübünde şubelerin görev dağılımı belli oldu",
-      "link": "https://www.sabah.com.tr/spor/futbol/2026/06/03/galatasaray-kulubunde-subelerin-gorev-dagilimi-belli-oldu",
-      "source": "Sabah Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-03T15:35:51+03:00",
-      "first_observed_at": null,
-      "summary_tr": ""
-    },
-    {
-      "name": "MEHMET ERAY ÖZBEK",
-      "normalized": "MEHMET ERAY OZBEK",
-      "current_club": "ZECORNER KAYSERİSPOR",
-      "age": 23,
-      "tm_market_value_eur": null,
-      "tff_external_id": "1695464",
-      "confidence": "MEDIUM",
-      "matched_in_title": false,
-      "article_id": "6d4ecf3dcc30",
-      "title": "Galatasaray Kulübünde şubelerin görev dağılımı belli oldu",
-      "link": "https://www.sabah.com.tr/spor/futbol/2026/06/03/galatasaray-kulubunde-subelerin-gorev-dagilimi-belli-oldu",
-      "source": "Sabah Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-03T15:35:51+03:00",
-      "first_observed_at": null,
-      "summary_tr": ""
-    },
-    {
-      "name": "SERDAR DURSUN",
-      "normalized": "SERDAR DURSUN",
-      "current_club": "KOCAELİSPOR",
-      "age": 34,
-      "tm_market_value_eur": 250000,
-      "tff_external_id": "1432128",
-      "confidence": "MEDIUM",
-      "matched_in_title": false,
-      "article_id": "6d4ecf3dcc30",
-      "title": "Galatasaray Kulübünde şubelerin görev dağılımı belli oldu",
-      "link": "https://www.sabah.com.tr/spor/futbol/2026/06/03/galatasaray-kulubunde-subelerin-gorev-dagilimi-belli-oldu",
-      "source": "Sabah Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-03T15:35:51+03:00",
-      "first_observed_at": null,
-      "summary_tr": ""
-    },
-    {
       "name": "ARDA YILMAZ",
       "normalized": "ARDA YILMAZ",
       "current_club": "GALATASARAY A.Ş.",
@@ -2346,27 +3014,6 @@
       "query": null,
       "source_tier": "MEDIA",
       "published_at": "2026-06-03T15:35:08+03:00",
-      "first_observed_at": null,
-      "summary_tr": ""
-    },
-    {
-      "name": "MUZAFFER UTKU ERİŞ",
-      "normalized": "MUZAFFER UTKU ERIS",
-      "current_club": "BATMAN PETROL SPOR A.Ş.",
-      "age": 19,
-      "tm_market_value_eur": null,
-      "tff_external_id": "1839351",
-      "confidence": "MEDIUM",
-      "matched_in_title": false,
-      "article_id": "edbb09db39bd",
-      "title": "Kayserispor'un \"liglerin tesciline itirazına\" ret",
-      "link": "https://www.sabah.com.tr/spor/futbol/2026/06/03/kayserisporun-liglerin-tesciline-itirazina-ret",
-      "source": "Sabah Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-03T15:12:00+03:00",
       "first_observed_at": null,
       "summary_tr": ""
     },
@@ -2518,237 +3165,6 @@
       "summary_tr": ""
     },
     {
-      "name": "EFE YİĞİT ÜSTÜN",
-      "normalized": "EFE YIGIT USTUN",
-      "current_club": "SAMSUNSPOR A.Ş.",
-      "age": 18,
-      "tm_market_value_eur": null,
-      "tff_external_id": "2065382",
-      "confidence": "MEDIUM",
-      "matched_in_title": false,
-      "article_id": "dcb521587281",
-      "title": "Başak cinayetinin sanıklarından kan donduran ifadeler! 'Babam üstüne oturdu, bıçaklamaya başladı'",
-      "link": "https://www.milliyet.com.tr/gundem/basak-cinayetinin-saniklarindan-kan-donduran-ifadeler-babam-ustune-oturdu-bicaklamaya-basladi-7598913",
-      "source": "Milliyet Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-03T14:46:09+00:00",
-      "first_observed_at": null,
-      "summary_tr": ""
-    },
-    {
-      "name": "JHON JADER DURAN PALACIOS",
-      "normalized": "JHON JADER DURAN PALACIOS",
-      "current_club": "FENERBAHÇE A.Ş.",
-      "age": 22,
-      "tm_market_value_eur": 55000000,
-      "tff_external_id": "2820652",
-      "confidence": "MEDIUM",
-      "matched_in_title": false,
-      "article_id": "dcb521587281",
-      "title": "Başak cinayetinin sanıklarından kan donduran ifadeler! 'Babam üstüne oturdu, bıçaklamaya başladı'",
-      "link": "https://www.milliyet.com.tr/gundem/basak-cinayetinin-saniklarindan-kan-donduran-ifadeler-babam-ustune-oturdu-bicaklamaya-basladi-7598913",
-      "source": "Milliyet Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-03T14:46:09+00:00",
-      "first_observed_at": null,
-      "summary_tr": ""
-    },
-    {
-      "name": "MAHMUT CAN KARA",
-      "normalized": "MAHMUT CAN KARA",
-      "current_club": "CORENDON ALANYASPOR",
-      "age": 20,
-      "tm_market_value_eur": null,
-      "tff_external_id": "1914151",
-      "confidence": "MEDIUM",
-      "matched_in_title": false,
-      "article_id": "dcb521587281",
-      "title": "Başak cinayetinin sanıklarından kan donduran ifadeler! 'Babam üstüne oturdu, bıçaklamaya başladı'",
-      "link": "https://www.milliyet.com.tr/gundem/basak-cinayetinin-saniklarindan-kan-donduran-ifadeler-babam-ustune-oturdu-bicaklamaya-basladi-7598913",
-      "source": "Milliyet Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-03T14:46:09+00:00",
-      "first_observed_at": null,
-      "summary_tr": ""
-    },
-    {
-      "name": "MESCHACK ELIA LINA",
-      "normalized": "MESCHACK ELIA LINA",
-      "current_club": "CORENDON ALANYASPOR",
-      "age": 28,
-      "tm_market_value_eur": 1500000,
-      "tff_external_id": "2827370",
-      "confidence": "MEDIUM",
-      "matched_in_title": false,
-      "article_id": "dcb521587281",
-      "title": "Başak cinayetinin sanıklarından kan donduran ifadeler! 'Babam üstüne oturdu, bıçaklamaya başladı'",
-      "link": "https://www.milliyet.com.tr/gundem/basak-cinayetinin-saniklarindan-kan-donduran-ifadeler-babam-ustune-oturdu-bicaklamaya-basladi-7598913",
-      "source": "Milliyet Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-03T14:46:09+00:00",
-      "first_observed_at": null,
-      "summary_tr": ""
-    },
-    {
-      "name": "THIAM MAME BABA",
-      "normalized": "THIAM MAME BABA",
-      "current_club": "ARCA ÇORUM FK",
-      "age": 33,
-      "tm_market_value_eur": null,
-      "tff_external_id": "2213372",
-      "confidence": "MEDIUM",
-      "matched_in_title": false,
-      "article_id": "dcb521587281",
-      "title": "Başak cinayetinin sanıklarından kan donduran ifadeler! 'Babam üstüne oturdu, bıçaklamaya başladı'",
-      "link": "https://www.milliyet.com.tr/gundem/basak-cinayetinin-saniklarindan-kan-donduran-ifadeler-babam-ustune-oturdu-bicaklamaya-basladi-7598913",
-      "source": "Milliyet Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-03T14:46:09+00:00",
-      "first_observed_at": null,
-      "summary_tr": ""
-    },
-    {
-      "name": "EGE ARAÇ",
-      "normalized": "EGE ARAC",
-      "current_club": "GALATASARAY A.Ş.",
-      "age": 19,
-      "tm_market_value_eur": null,
-      "tff_external_id": "1944301",
-      "confidence": "MEDIUM",
-      "matched_in_title": false,
-      "article_id": "e12cd31382ed",
-      "title": "Aralarında husumet bulunan iki aile cenazade karşılaştı! 'Bu nasıl çatışma? Yat, yat, yat...'",
-      "link": "https://www.milliyet.com.tr/gundem/aralarinda-husumet-bulunan-iki-aile-cenazade-karsilasti-bu-nasil-catisma-yat-yat-yat-7598915",
-      "source": "Milliyet Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-03T14:42:38+00:00",
-      "first_observed_at": null,
-      "summary_tr": ""
-    },
-    {
-      "name": "MAHMUT CAN KARA",
-      "normalized": "MAHMUT CAN KARA",
-      "current_club": "CORENDON ALANYASPOR",
-      "age": 20,
-      "tm_market_value_eur": null,
-      "tff_external_id": "1914151",
-      "confidence": "MEDIUM",
-      "matched_in_title": false,
-      "article_id": "68e47cdfed81",
-      "title": "Kuveyt'ten İran kararı! İki diplomatı 'istenmeyen kişi' ilan ettiler",
-      "link": "https://www.milliyet.com.tr/dunya/kuveytten-iran-karari-iki-diplomati-istenmeyen-kisi-ilan-ettiler-7598910",
-      "source": "Milliyet Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-03T14:04:23+00:00",
-      "first_observed_at": null,
-      "summary_tr": ""
-    },
-    {
-      "name": "MESCHACK ELIA LINA",
-      "normalized": "MESCHACK ELIA LINA",
-      "current_club": "CORENDON ALANYASPOR",
-      "age": 28,
-      "tm_market_value_eur": 1500000,
-      "tff_external_id": "2827370",
-      "confidence": "MEDIUM",
-      "matched_in_title": false,
-      "article_id": "68e47cdfed81",
-      "title": "Kuveyt'ten İran kararı! İki diplomatı 'istenmeyen kişi' ilan ettiler",
-      "link": "https://www.milliyet.com.tr/dunya/kuveytten-iran-karari-iki-diplomati-istenmeyen-kisi-ilan-ettiler-7598910",
-      "source": "Milliyet Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-03T14:04:23+00:00",
-      "first_observed_at": null,
-      "summary_tr": ""
-    },
-    {
-      "name": "NUNO MIGUEL REIS LIMA",
-      "normalized": "NUNO MIGUEL REIS LIMA",
-      "current_club": "CORENDON ALANYASPOR",
-      "age": 25,
-      "tm_market_value_eur": 2000000,
-      "tff_external_id": "2561880",
-      "confidence": "MEDIUM",
-      "matched_in_title": false,
-      "article_id": "68e47cdfed81",
-      "title": "Kuveyt'ten İran kararı! İki diplomatı 'istenmeyen kişi' ilan ettiler",
-      "link": "https://www.milliyet.com.tr/dunya/kuveytten-iran-karari-iki-diplomati-istenmeyen-kisi-ilan-ettiler-7598910",
-      "source": "Milliyet Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-03T14:04:23+00:00",
-      "first_observed_at": null,
-      "summary_tr": ""
-    },
-    {
-      "name": "YAKUP AYAN",
-      "normalized": "YAKUP AYAN",
-      "current_club": "ÇAYKUR RİZESPOR A.Ş.",
-      "age": 18,
-      "tm_market_value_eur": null,
-      "tff_external_id": "2286089",
-      "confidence": "MEDIUM",
-      "matched_in_title": false,
-      "article_id": "68e47cdfed81",
-      "title": "Kuveyt'ten İran kararı! İki diplomatı 'istenmeyen kişi' ilan ettiler",
-      "link": "https://www.milliyet.com.tr/dunya/kuveytten-iran-karari-iki-diplomati-istenmeyen-kisi-ilan-ettiler-7598910",
-      "source": "Milliyet Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-03T14:04:23+00:00",
-      "first_observed_at": null,
-      "summary_tr": ""
-    },
-    {
-      "name": "MAHMUT CAN KARA",
-      "normalized": "MAHMUT CAN KARA",
-      "current_club": "CORENDON ALANYASPOR",
-      "age": 20,
-      "tm_market_value_eur": null,
-      "tff_external_id": "1914151",
-      "confidence": "MEDIUM",
-      "matched_in_title": false,
-      "article_id": "bed01c139886",
-      "title": "Karagümrük'ten Emre Mor açıklaması!",
-      "link": "https://www.haberturk.com/fatih-karagumruk-ten-emre-mor-aciklamasi-3889084-spor",
-      "source": "Haberturk Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-03T13:53:02+00:00",
-      "first_observed_at": null,
-      "summary_tr": ""
-    },
-    {
       "name": "TAŞKIN İLTER",
       "normalized": "TASKIN ILTER",
       "current_club": "İKAS EYÜPSPOR",
@@ -2808,111 +3224,6 @@
       "query": null,
       "source_tier": "MEDIA",
       "published_at": "2026-06-03T13:28:30+03:00",
-      "first_observed_at": null,
-      "summary_tr": ""
-    },
-    {
-      "name": "EBRAR YİĞİT AYDIN",
-      "normalized": "EBRAR YIGIT AYDIN",
-      "current_club": "NATURA DÜNYASI GENÇLERBİRLİĞİ",
-      "age": 25,
-      "tm_market_value_eur": 50000,
-      "tff_external_id": "1431626",
-      "confidence": "MEDIUM",
-      "matched_in_title": false,
-      "article_id": "39767689df0a",
-      "title": "Trabzonspor ayrılığı açıkladı!",
-      "link": "https://www.haberturk.com/trabzonspor-da-oleksandr-zubkov-aek-ya-transfer-oldu-3889070-spor",
-      "source": "Haberturk Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-03T13:19:42+00:00",
-      "first_observed_at": null,
-      "summary_tr": ""
-    },
-    {
-      "name": "EGEMEN AYDIN",
-      "normalized": "EGEMEN AYDIN",
-      "current_club": "TÜMOSAN KONYASPOR",
-      "age": 19,
-      "tm_market_value_eur": 50000,
-      "tff_external_id": "1924104",
-      "confidence": "MEDIUM",
-      "matched_in_title": false,
-      "article_id": "39767689df0a",
-      "title": "Trabzonspor ayrılığı açıkladı!",
-      "link": "https://www.haberturk.com/trabzonspor-da-oleksandr-zubkov-aek-ya-transfer-oldu-3889070-spor",
-      "source": "Haberturk Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-03T13:19:42+00:00",
-      "first_observed_at": null,
-      "summary_tr": ""
-    },
-    {
-      "name": "EYÜP AYDIN",
-      "normalized": "EYUP AYDIN",
-      "current_club": "KASIMPAŞA A.Ş.",
-      "age": 21,
-      "tm_market_value_eur": 800000,
-      "tff_external_id": "2563050",
-      "confidence": "MEDIUM",
-      "matched_in_title": false,
-      "article_id": "39767689df0a",
-      "title": "Trabzonspor ayrılığı açıkladı!",
-      "link": "https://www.haberturk.com/trabzonspor-da-oleksandr-zubkov-aek-ya-transfer-oldu-3889070-spor",
-      "source": "Haberturk Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-03T13:19:42+00:00",
-      "first_observed_at": null,
-      "summary_tr": ""
-    },
-    {
-      "name": "OLEKSANDR ZUBKOV",
-      "normalized": "OLEKSANDR ZUBKOV",
-      "current_club": "TRABZONSPOR A.Ş.",
-      "age": 29,
-      "tm_market_value_eur": 6000000,
-      "tff_external_id": "2768048",
-      "confidence": "HIGH",
-      "matched_in_title": false,
-      "article_id": "39767689df0a",
-      "title": "Trabzonspor ayrılığı açıkladı!",
-      "link": "https://www.haberturk.com/trabzonspor-da-oleksandr-zubkov-aek-ya-transfer-oldu-3889070-spor",
-      "source": "Haberturk Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-03T13:19:42+00:00",
-      "first_observed_at": null,
-      "summary_tr": ""
-    },
-    {
-      "name": "OĞUZ AYDIN",
-      "normalized": "OGUZ AYDIN",
-      "current_club": "FENERBAHÇE A.Ş.",
-      "age": 25,
-      "tm_market_value_eur": 7000000,
-      "tff_external_id": "1884156",
-      "confidence": "MEDIUM",
-      "matched_in_title": false,
-      "article_id": "39767689df0a",
-      "title": "Trabzonspor ayrılığı açıkladı!",
-      "link": "https://www.haberturk.com/trabzonspor-da-oleksandr-zubkov-aek-ya-transfer-oldu-3889070-spor",
-      "source": "Haberturk Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-03T13:19:42+00:00",
       "first_observed_at": null,
       "summary_tr": ""
     },
@@ -3022,111 +3333,6 @@
       "summary_tr": ""
     },
     {
-      "name": "ABDURRAHİM DURSUN",
-      "normalized": "ABDURRAHIM DURSUN",
-      "current_club": "NATURA DÜNYASI GENÇLERBİRLİĞİ",
-      "age": 27,
-      "tm_market_value_eur": 250000,
-      "tff_external_id": "1316684",
-      "confidence": "MEDIUM",
-      "matched_in_title": false,
-      "article_id": "1209f5afdb7c",
-      "title": "G.Saray'da görev dağılımı belli oldu",
-      "link": "https://www.haberturk.com/galatasaray-da-subelerin-gorev-dagilimi-belli-oldu-3889042-spor",
-      "source": "Haberturk Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-03T12:10:16+00:00",
-      "first_observed_at": null,
-      "summary_tr": ""
-    },
-    {
-      "name": "BORAN BAŞKAN",
-      "normalized": "BORAN BASKAN",
-      "current_club": "TRABZONSPOR A.Ş.",
-      "age": 20,
-      "tm_market_value_eur": 100000,
-      "tff_external_id": "1911098",
-      "confidence": "MEDIUM",
-      "matched_in_title": false,
-      "article_id": "1209f5afdb7c",
-      "title": "G.Saray'da görev dağılımı belli oldu",
-      "link": "https://www.haberturk.com/galatasaray-da-subelerin-gorev-dagilimi-belli-oldu-3889042-spor",
-      "source": "Haberturk Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-03T12:10:16+00:00",
-      "first_observed_at": null,
-      "summary_tr": ""
-    },
-    {
-      "name": "GABRIEL DAVI  GOMES SARA",
-      "normalized": "GABRIEL DAVI GOMES SARA",
-      "current_club": "GALATASARAY A.Ş.",
-      "age": 26,
-      "tm_market_value_eur": 27000000,
-      "tff_external_id": "2685640",
-      "confidence": "MEDIUM",
-      "matched_in_title": false,
-      "article_id": "1209f5afdb7c",
-      "title": "G.Saray'da görev dağılımı belli oldu",
-      "link": "https://www.haberturk.com/galatasaray-da-subelerin-gorev-dagilimi-belli-oldu-3889042-spor",
-      "source": "Haberturk Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-03T12:10:16+00:00",
-      "first_observed_at": null,
-      "summary_tr": ""
-    },
-    {
-      "name": "MEHMET ERAY ÖZBEK",
-      "normalized": "MEHMET ERAY OZBEK",
-      "current_club": "ZECORNER KAYSERİSPOR",
-      "age": 23,
-      "tm_market_value_eur": null,
-      "tff_external_id": "1695464",
-      "confidence": "MEDIUM",
-      "matched_in_title": false,
-      "article_id": "1209f5afdb7c",
-      "title": "G.Saray'da görev dağılımı belli oldu",
-      "link": "https://www.haberturk.com/galatasaray-da-subelerin-gorev-dagilimi-belli-oldu-3889042-spor",
-      "source": "Haberturk Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-03T12:10:16+00:00",
-      "first_observed_at": null,
-      "summary_tr": ""
-    },
-    {
-      "name": "SERDAR DURSUN",
-      "normalized": "SERDAR DURSUN",
-      "current_club": "KOCAELİSPOR",
-      "age": 34,
-      "tm_market_value_eur": 250000,
-      "tff_external_id": "1432128",
-      "confidence": "MEDIUM",
-      "matched_in_title": false,
-      "article_id": "1209f5afdb7c",
-      "title": "G.Saray'da görev dağılımı belli oldu",
-      "link": "https://www.haberturk.com/galatasaray-da-subelerin-gorev-dagilimi-belli-oldu-3889042-spor",
-      "source": "Haberturk Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-03T12:10:16+00:00",
-      "first_observed_at": null,
-      "summary_tr": ""
-    },
-    {
       "name": "DAVINSON SANCHEZ MINA",
       "normalized": "DAVINSON SANCHEZ MINA",
       "current_club": "GALATASARAY A.Ş.",
@@ -3228,27 +3434,6 @@
       "query": null,
       "source_tier": "MEDIA",
       "published_at": "2026-06-03T11:57:10+00:00",
-      "first_observed_at": null,
-      "summary_tr": ""
-    },
-    {
-      "name": "YAKUP AYAN",
-      "normalized": "YAKUP AYAN",
-      "current_club": "ÇAYKUR RİZESPOR A.Ş.",
-      "age": 18,
-      "tm_market_value_eur": null,
-      "tff_external_id": "2286089",
-      "confidence": "MEDIUM",
-      "matched_in_title": false,
-      "article_id": "bcf43f94426e",
-      "title": "Trabzonspor'un yeni transferi İstanbul'da!",
-      "link": "https://www.haberturk.com/trabzonspor-un-yeni-transferi-sidny-cabral-istanbul-da-3889039-spor",
-      "source": "Haberturk Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-03T11:49:45+00:00",
       "first_observed_at": null,
       "summary_tr": ""
     },
@@ -3442,27 +3627,6 @@
       "summary_tr": ""
     },
     {
-      "name": "MUZAFFER UTKU ERİŞ",
-      "normalized": "MUZAFFER UTKU ERIS",
-      "current_club": "BATMAN PETROL SPOR A.Ş.",
-      "age": 19,
-      "tm_market_value_eur": null,
-      "tff_external_id": "1839351",
-      "confidence": "MEDIUM",
-      "matched_in_title": false,
-      "article_id": "aa784af15707",
-      "title": "TFF'den Kayserispor'un itirazına ret!",
-      "link": "https://www.haberturk.com/tff-den-kayserispor-un-itirazina-ret-3889030-spor",
-      "source": "Haberturk Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-03T11:29:27+00:00",
-      "first_observed_at": null,
-      "summary_tr": ""
-    },
-    {
       "name": "AHMED ILDIZ",
       "normalized": "AHMED ILDIZ",
       "current_club": "ARCA ÇORUM FK",
@@ -3755,51 +3919,512 @@
       "published_at": "2026-06-03T10:35:31+03:00",
       "first_observed_at": null,
       "summary_tr": ""
-    },
-    {
-      "name": "AHMED ILDIZ",
-      "normalized": "AHMED ILDIZ",
-      "current_club": "ARCA ÇORUM FK",
-      "age": 29,
-      "tm_market_value_eur": null,
-      "tff_external_id": "1928323",
-      "confidence": "MEDIUM",
-      "matched_in_title": false,
-      "article_id": "d19f336c0c88",
-      "title": "Fenerbahçe'ye kötü haber: Asensio’ya İspanya kancası! Teklife sıcak bakıyor",
-      "link": "https://www.takvim.com.tr/fenerbahce/2026/06/03/asensioya-ispanya-kancasi-teklife-sicak-bakiyor",
-      "source": "Takvim Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-03T10:31:05+03:00",
-      "first_observed_at": null,
-      "summary_tr": ""
-    },
-    {
-      "name": "UĞUR KAAN YILDIZ",
-      "normalized": "UGUR KAAN YILDIZ",
-      "current_club": "GÖZTEPE A.Ş.",
-      "age": 23,
-      "tm_market_value_eur": 600000,
-      "tff_external_id": "1555402",
-      "confidence": "MEDIUM",
-      "matched_in_title": false,
-      "article_id": "d19f336c0c88",
-      "title": "Fenerbahçe'ye kötü haber: Asensio’ya İspanya kancası! Teklife sıcak bakıyor",
-      "link": "https://www.takvim.com.tr/fenerbahce/2026/06/03/asensioya-ispanya-kancasi-teklife-sicak-bakiyor",
-      "source": "Takvim Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-03T10:31:05+03:00",
-      "first_observed_at": null,
-      "summary_tr": ""
     }
   ],
   "recent_articles": [
+    {
+      "article_id": "8c47621de338",
+      "title": "Hakan Safi'den Luis Suarez harekatı! Transferi duyurdular",
+      "link": "https://www.aksam.com.tr/spor/hakan-safiden-luis-suarez-harekati-transferi-duyurdular/haber-1672040",
+      "source": "Aksam Spor",
+      "source_type": "rss",
+      "published_at": "2026-06-03T20:08:00+03:00",
+      "categories": [
+        "transfer"
+      ],
+      "super_lig_relevant": true,
+      "summary_tr": "",
+      "tags": [
+        "Fenerbahçe",
+        "transfer"
+      ],
+      "mentioned_clubs": [
+        "Fenerbahçe"
+      ]
+    },
+    {
+      "article_id": "be0ed981fa86",
+      "title": "Gaziantep FK’da Ömer Erdoğan sesleri!",
+      "link": "https://www.hurriyet.com.tr/sporarena/gaziantep-fkda-omer-erdogan-sesleri-43192364",
+      "source": "Hürriyet Spor",
+      "source_type": "rss",
+      "published_at": "2026-06-03T17:02:00+00:00",
+      "categories": [
+        "transfer"
+      ],
+      "super_lig_relevant": true,
+      "summary_tr": "",
+      "tags": [
+        "Gaziantep FK",
+        "transfer"
+      ],
+      "mentioned_clubs": [
+        "Gaziantep FK"
+      ]
+    },
+    {
+      "article_id": "80b7b08f2c90",
+      "title": "Gaziantep FK’da Ömer Erdoğan sesleri! - Hürriyet",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQcF84VnRQSHV1Q1NDOUlIN1VzVjNRTk5COHRnYU1VTUtFUkxVLW5NMkhQRUYyRDh3LVdYcllQb1Q3LS0tTXRhajRHaWJ1c1V4dkhSWHNpY2NlVjZfRl8tMHlvVm9aZUxySmNmOUxWNGNLZC05eXdyRVFqYjVteWFnbVYxNl9uWGVHLVE?oc=5",
+      "source": "Hürriyet",
+      "source_type": "google_news",
+      "published_at": "2026-06-03T17:02:00+00:00",
+      "categories": [
+        "transfer"
+      ],
+      "super_lig_relevant": true,
+      "summary_tr": "",
+      "tags": [
+        "Gaziantep FK",
+        "transfer"
+      ],
+      "mentioned_clubs": [
+        "Gaziantep FK"
+      ]
+    },
+    {
+      "article_id": "dd279778e5a8",
+      "title": "Göztepe kalecisi Lis, Lech Poznan yolcusu!",
+      "link": "https://www.hurriyet.com.tr/sporarena/goztepe-kalecisi-lis-lech-poznan-yolcusu-43192363",
+      "source": "Hürriyet Spor",
+      "source_type": "rss",
+      "published_at": "2026-06-03T17:00:32+00:00",
+      "categories": [
+        "transfer",
+        "lineup"
+      ],
+      "super_lig_relevant": true,
+      "summary_tr": "",
+      "tags": [
+        "Galatasaray",
+        "Göztepe",
+        "transfer",
+        "lineup"
+      ],
+      "mentioned_clubs": [
+        "Galatasaray",
+        "Göztepe"
+      ]
+    },
+    {
+      "article_id": "e4c6d4cb97f4",
+      "title": "Galatasaray'dan Rafael Leão bombası: Dev teklif ortaya çıktı!",
+      "link": "https://www.hurriyet.com.tr/sporarena/galatasaraydan-rafael-leao-bombasi-dev-teklif-ortaya-cikti-43192347",
+      "source": "Hürriyet Spor",
+      "source_type": "rss",
+      "published_at": "2026-06-03T16:50:01+00:00",
+      "categories": [
+        "transfer"
+      ],
+      "super_lig_relevant": true,
+      "summary_tr": "",
+      "tags": [
+        "Galatasaray",
+        "transfer"
+      ],
+      "mentioned_clubs": [
+        "Galatasaray"
+      ]
+    },
+    {
+      "article_id": "8ae17216ed91",
+      "title": "Galatasaray'dan Rafael Leão bombası: Dev teklif ortaya çıktı! - Hürriyet",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxObjJNaExuLUh5YmwzUFFGSXJWMnhUUjkxeGxsSFBfWnRGZEFQeVNRVE85Z1cyeW5JZVNyQ2pIX1hWRU9UUzV3dGpCdV9PT01pRFBqQzd1Z2JkdEFzN2U3NlY1djlKc1FUemRmWjlSMEg4ZHhHeUZnT1d1cUphdWEzb1pFMlJWbVp5ZlloSmZvbWEzREZrUHhtNnZEWEJ5ZWtkSFRyTUhGNzI?oc=5",
+      "source": "Hürriyet",
+      "source_type": "google_news",
+      "published_at": "2026-06-03T16:50:01+00:00",
+      "categories": [
+        "transfer"
+      ],
+      "super_lig_relevant": true,
+      "summary_tr": "",
+      "tags": [
+        "Galatasaray",
+        "transfer"
+      ],
+      "mentioned_clubs": [
+        "Galatasaray"
+      ]
+    },
+    {
+      "article_id": "c1c446c3ba85",
+      "title": "Kamuoyuna Duyuru",
+      "link": "https://www.konyaspor.org.tr/haber/kamuoyuna-duyuru37929",
+      "source": "Konyaspor Resmi Web",
+      "source_type": "official_club",
+      "published_at": "2026-06-03T19:48:00+03:00",
+      "categories": [
+        "transfer",
+        "lineup"
+      ],
+      "super_lig_relevant": true,
+      "summary_tr": "",
+      "tags": [
+        "Konyaspor",
+        "transfer",
+        "lineup"
+      ],
+      "mentioned_clubs": [
+        "Konyaspor"
+      ]
+    },
+    {
+      "article_id": "85120afc2853",
+      "title": "Ömer Erdoğan ismi 3 kulübün gündeminde: Süper Lig ekibi devrede - NTVSpor",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNcFhCZUFDMm1KZWlpcktrLUpOYzJYX2JjUVdtNEdPcVRIQTR2ZW9FUTdTbmF0ZzJkUVc5MEVsYWloM2dzU3hDbmdDUndIcWpTMG9QamRWZ0ZsdmRtOFpsV2RpbXVUSGFJNDE5ME91U2NwSXJyUXVpaWU1b0lGSUU1Q25MS3Q1ZnByVUtqT2FabWZ2VlR6bllveG40ZWFNT2oxcFRHOV9DRTHSAa4BQVVfeXFMUHpFOVJGbVNSM1BUbFkzN29SLS13aGNySzlSRUVNZndYUFZ3UTFqeXJPQ0NuOXUzQkhObHVEdzJuQ29abHd4NkRkNEhIV1ZocGtjQlJvU1FvM0twaHZiRF84N0NjSUVfTjB1azZQdU9IZGZ4SG9qZS1DVndDMXRXZkVHOERsYmI4a0VteUlvNk5od2pwVFFRbUt4bEM0eS12Sy1vZHJoRjlOUGRsVFJ3?oc=5",
+      "source": "NTVSpor",
+      "source_type": "google_news",
+      "published_at": "2026-06-03T16:45:26+00:00",
+      "categories": [
+        "transfer"
+      ],
+      "super_lig_relevant": true,
+      "summary_tr": "",
+      "tags": [
+        "transfer"
+      ],
+      "mentioned_clubs": []
+    },
+    {
+      "article_id": "069ee0184bf2",
+      "title": "CANLI | Luis Suarez'de işlem tamam! Fenerbahçe'ye gol makinesi - Fanatik",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQVHhVVDN2OWFmRmk1SDRwM3dmeDlXWEowUGxzMER4Z251aHJrb3ppZHdETUE3REViejVnZlhVSkkyQUNEWHR0NVE4Z0tjTS0xM2RtQ2NydE5OdXJVUE5jMm9tcXRxUUhqZm13R2wxQVVKNTNKZUdsWTdHN3VQVU9FNUFGZTV0QzJnZXByUmlNTVpoN0JXVUN0TFA0encwa3RQSWc?oc=5",
+      "source": "Fanatik",
+      "source_type": "google_news",
+      "published_at": "2026-06-03T16:45:00+00:00",
+      "categories": [
+        "transfer"
+      ],
+      "super_lig_relevant": true,
+      "summary_tr": "",
+      "tags": [
+        "Fenerbahçe",
+        "transfer"
+      ],
+      "mentioned_clubs": [
+        "Fenerbahçe"
+      ]
+    },
+    {
+      "article_id": "0d8c25d1468c",
+      "title": "Gaziantep FK'da teknik adam krizi: Radoi gidiyor, gözler o isme çevrildi - Yeni Birlik Gazetesi",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPd05mM2JBb3poODUtR2c4TTRub2NvNGlBelBqODFTb2NZenRUdmpEdHUzeDlFQVZQblJsbjhYSmJFaWcxX0VnWFlWbFFFTzR3WG5iMXR1MlMwY0FYM1hhSFNSZ2RnR19WTXdjVWIwQVNIMXFCWENaaEc0M2NFOHUyb0NRd1c3WEJDbUYxbDRPXzZhbUZSUFhJdk1wTHNmYnNzZUh4ZTdDTFJkb244djJTblRuaw?oc=5",
+      "source": "Yeni Birlik Gazetesi",
+      "source_type": "google_news",
+      "published_at": "2026-06-03T16:28:33+00:00",
+      "categories": [
+        "transfer"
+      ],
+      "super_lig_relevant": true,
+      "summary_tr": "",
+      "tags": [
+        "Gaziantep FK",
+        "transfer"
+      ],
+      "mentioned_clubs": [
+        "Gaziantep FK"
+      ]
+    },
+    {
+      "article_id": "e045c5be61a2",
+      "title": "Trabzonspor Metehan Mimaroğlu Transferinde Mutlu Sona Ulaştı - HaberTS",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOakNmTmFsSmNBX2FNdjUxa1dQLThyOVR6UVJfREhVc19tcFVWLTM0Yms3RkRmTTA5VGFOem1SczBBNHpnbklmQlMyaVZZSWxsd0FqVWdjNUhsWDUxOWZRZDBOVTFYQzlhMGpoYm42NmhqLXAzV0lrTVlCN3dROTNpMUQzZXRfM25td1UtQ9IBkgFBVV95cUxQcEZXQWdsN2VHUkRKdzAzVmtJWFJYeWx6ZDR6MVdDS0thMG1yV2lKOEN3dURaTUd0YnE0X3dubGJOYm5OU05UcjZhMEVRV0NSc3hhX0p0eUtkNnBlTHNadFlYTmhEX3FtSlFJWHMzUlhEMHpxNkxWbXo1TUlhYWVMU2h4NUJrNXdEbUs0QmxSSHBLQQ?oc=5",
+      "source": "HaberTS",
+      "source_type": "google_news",
+      "published_at": "2026-06-03T16:27:00+00:00",
+      "categories": [
+        "transfer"
+      ],
+      "super_lig_relevant": true,
+      "summary_tr": "",
+      "tags": [
+        "Trabzonspor",
+        "transfer"
+      ],
+      "mentioned_clubs": [
+        "Trabzonspor"
+      ]
+    },
+    {
+      "article_id": "9ed6626021da",
+      "title": "Bakan Kacır, Gaziantep'te temel atma törenine katıldı! 'Fabrika sayısını 11 binden 61 bine yükselttik'",
+      "link": "https://www.milliyet.com.tr/gundem/bakan-kacir-gaziantepte-fabrika-sayisini-11-binden-61-bine-yukselttik-7598983",
+      "source": "Milliyet Spor",
+      "source_type": "rss",
+      "published_at": "2026-06-03T16:25:38+00:00",
+      "categories": [
+        "general"
+      ],
+      "super_lig_relevant": true,
+      "summary_tr": "",
+      "tags": [
+        "general"
+      ],
+      "mentioned_clubs": []
+    },
+    {
+      "article_id": "ac45a7b1dcba",
+      "title": "Gaziantep FK için Ömer Erdoğan iddiası!",
+      "link": "https://www.sabah.com.tr/spor/futbol/2026/06/03/gaziantep-fk-icin-omer-erdogan-iddiasi",
+      "source": "Sabah Spor",
+      "source_type": "rss",
+      "published_at": "2026-06-03T19:21:46+03:00",
+      "categories": [
+        "transfer"
+      ],
+      "super_lig_relevant": true,
+      "summary_tr": "",
+      "tags": [
+        "Gaziantep FK",
+        "transfer"
+      ],
+      "mentioned_clubs": [
+        "Gaziantep FK"
+      ]
+    },
+    {
+      "article_id": "21e9348c1631",
+      "title": "Bahçeşehir Koleji'nde Caleb Homesley şoku!",
+      "link": "https://www.sabah.com.tr/spor/basketbol/2026/06/03/bahcesehir-kolejinde-caleb-homesley-soku",
+      "source": "Sabah Spor",
+      "source_type": "rss",
+      "published_at": "2026-06-03T19:19:52+03:00",
+      "categories": [
+        "injury"
+      ],
+      "super_lig_relevant": true,
+      "summary_tr": "",
+      "tags": [
+        "Beşiktaş",
+        "injury"
+      ],
+      "mentioned_clubs": [
+        "Beşiktaş"
+      ]
+    },
+    {
+      "article_id": "43d426a11656",
+      "title": "Trabzonspor, Metehan Mimaroğlu ile anlaştı!",
+      "link": "https://www.sabah.com.tr/spor/futbol/2026/06/03/trabzonspor-metehan-mimaroglu-ile-anlasti",
+      "source": "Sabah Spor",
+      "source_type": "rss",
+      "published_at": "2026-06-03T19:11:04+03:00",
+      "categories": [
+        "transfer",
+        "lineup"
+      ],
+      "super_lig_relevant": true,
+      "summary_tr": "",
+      "tags": [
+        "Trabzonspor",
+        "Gençlerbirliği",
+        "transfer",
+        "lineup"
+      ],
+      "mentioned_clubs": [
+        "Trabzonspor",
+        "Gençlerbirliği"
+      ]
+    },
+    {
+      "article_id": "b3b181d6ff89",
+      "title": "Trabzonspor sözleşmesini fesheden Süper Lig yıldızını havada kaptı - Yeniçağ Gazetesi",
+      "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOME8xbzJZX1VqNm5NMUJkTjBqUjM1ckpMMTVlVlNCX1h4TWFNNmFHeHRYNDRfXzN5WmVXU3N5Y1kzcWZjWTd3Y0pWb0N6NU1NaGlkR2NTTmM4MV93TTgxbzJ0d195XzZWakJoaGhMeGEwbjJ2b3Q2MlhTZUhzZzkyVzFnVHQtU2x5NmFBSTI0MXQ1clAxQ3RrVnBkdTRWZnZmYnBxNHhJNlBpMEhSRWxhNTRSb0N4SkZudUpyN21iMEtsNlhBNER4Tm1OdEM3QlVIYk8wNlczbjBtWG8?oc=5",
+      "source": "Yeniçağ Gazetesi",
+      "source_type": "google_news",
+      "published_at": "2026-06-03T16:11:00+00:00",
+      "categories": [
+        "transfer"
+      ],
+      "super_lig_relevant": true,
+      "summary_tr": "",
+      "tags": [
+        "Trabzonspor",
+        "transfer"
+      ],
+      "mentioned_clubs": [
+        "Trabzonspor"
+      ]
+    },
+    {
+      "article_id": "3bdc7adc1a7d",
+      "title": "Amedspor’da Ferdi Kadıoğlu Kulisleri! Sürpriz İddia Taraftarı Heyecanlandırdı - Tıbbiye Bülteni",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQdy1KSmNaSFEweElwSjdCdmk0NEFZeG9qaV81YkN1TTlVcWh2dG8zZXZETXdNTXIzQy04UmxYVkZQbzlPdDh3a3FkV012U2V6eWprVDBwbGdWVE9GY2hRckdXZ3dUWW5tYjJoX3BlTnhXc0hNYzhBX2VBOGgxaU9OdFBRaHBBd1h0X1F3V0o5LW9LSGJUa0k2ZjAybU1XbmFoY1BzbtIBqgFBVV95cUxOV3I3eTFFZ3BCNjZ5MFhFdm0tUDJxWHYtdUNNaHlwaVJUZE5IajNCLVVBV04xaHZ4TlRBOGpGWjFTMnRMaGtRXzRvVWVQUlRvajhMRXZBTTZfX1hNbEJ2QktaXzllVHNaYUZxa1dhMnJPSlVvOXFTR2Rub1QwdEpkZlg2Y0UzSzc5ZkxmbzlsVVJHdmZ1U0QwWE5rRi1sUWlfNWVYcTgtXzI2QQ?oc=5",
+      "source": "Tıbbiye Bülteni",
+      "source_type": "google_news",
+      "published_at": "2026-06-03T16:09:00+00:00",
+      "categories": [
+        "transfer"
+      ],
+      "super_lig_relevant": true,
+      "summary_tr": "",
+      "tags": [
+        "transfer"
+      ],
+      "mentioned_clubs": []
+    },
+    {
+      "article_id": "f079f11fe022",
+      "title": "Konyaspor'dan basın açıklaması: Spekülasyonlara dikkat! - konyayenigun.com",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNcXZuRmtnWTNZeUt6blVBUWRMTjlMUWhtMmZZYjBBYVR2OWdPZHU1TWZoYjU1d00xOFFaR0JPaUxQWGpSaWJZZm50MFdEX0JOVDFpYzkxRVhELVhGRDdyWmRjaGJNeHdhbk1CNnA5WVJXOERPdF9WbGNacGpWY1k2Zl9fZUJxMVZkLVY00gGQAUFVX3lxTFAwbXo4cDUwakV3alJnbk1vbXN1LWtIdV9oSXptUDlzdkktYUwtenF1Z0FqVDhTRUVac2hrcm5la3EyVFZQQVZ2T3Fqd08xU3gyc0dyb2dJXzNNRTBKNExVSXNiM1Y0REQ1d2hwajBGUmVfS01JbUVfejVMRlpUdElsOGtCTnE4ZjJUbG1mMTIxcA?oc=5",
+      "source": "konyayenigun.com",
+      "source_type": "google_news",
+      "published_at": "2026-06-03T16:03:00+00:00",
+      "categories": [
+        "transfer"
+      ],
+      "super_lig_relevant": true,
+      "summary_tr": "",
+      "tags": [
+        "Konyaspor",
+        "transfer"
+      ],
+      "mentioned_clubs": [
+        "Konyaspor"
+      ]
+    },
+    {
+      "article_id": "28d8518eee5f",
+      "title": "Konyaspor'dan transfer açıklaması - Konya Postası Gazetesi",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOZlUwaG1Ca2dPNWRzSEpBd2NYcVlFOUZEektXdmptTW9IRWVIVl9nZF9aYjdjX3RNdlY5TVhhckdBUjlzbkVlN2tDcVRmeWQ2R05oUXBTWWJLS05nLVVHU0c4RWhEUmtkOVZCbjY5Uk9wYV9oY2M2RmZYS19rb2dJelgyRQ?oc=5",
+      "source": "Konya Postası Gazetesi",
+      "source_type": "google_news",
+      "published_at": "2026-06-03T16:00:00+00:00",
+      "categories": [
+        "transfer"
+      ],
+      "super_lig_relevant": true,
+      "summary_tr": "",
+      "tags": [
+        "Konyaspor",
+        "transfer"
+      ],
+      "mentioned_clubs": [
+        "Konyaspor"
+      ]
+    },
+    {
+      "article_id": "5edfcf6f7a85",
+      "title": "Trabzonspor, Metehan Mimaroğlu ile anlaştı! - Sporx.com",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNUHc2TGh1NllneFd0TzlYc2JYT2lrNllLbG9tZlVob0xObjgzWi1BUFktN0poUmNnOWs4VEpwMVVZa3NsTVBpYWJmN2NaNGV4b1Z5b3FreklDQTVWbG9HcHpLSUZfcnRab25XTUdPc0pVTmt3M1UzMWRLMldNUGd0RmFjeHNQd9IBiAFBVV95cUxQWVN5Um82Y1pjNWZHdTRhcnhqWmNTMEVVMjFUUktuM0RhVlJ1OFRiRzhPbU5GLUZ6aTBKNEVqY2RUWnFxNXU4Q1NyQXIyNEFxNE5oaFFIT0I0RmwtY3BUUDdLZkF4SE5hVWxTVGZhaDdfRGw4SGFXWGZ4RzIyNmxtbVRtT2dYQmNZ?oc=5",
+      "source": "Sporx.com",
+      "source_type": "google_news",
+      "published_at": "2026-06-03T15:57:00+00:00",
+      "categories": [
+        "transfer"
+      ],
+      "super_lig_relevant": true,
+      "summary_tr": "",
+      "tags": [
+        "Trabzonspor",
+        "transfer"
+      ],
+      "mentioned_clubs": [
+        "Trabzonspor"
+      ]
+    },
+    {
+      "article_id": "3e9cc902730a",
+      "title": "Konyaspor'dan transferle ilgili kritik açıklama - Konya Yeni Haber",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNaERkRGJMSEo0d1hqaWlpX1R2Qmk3MklDMl9IZFpsdG11cE0wb25DRjhKSFlBeGFWRlJlbnktMjdXYXBZcUJsLXZyYUU4TWk1cU1aWGRjVWtZWkhtR181QnJ0RklLcFVZWlRLT0FEd043UmJGU1dJNkdzdnhvaElaZWtIY3ZoeWJQNzNnWjR3?oc=5",
+      "source": "Konya Yeni Haber",
+      "source_type": "google_news",
+      "published_at": "2026-06-03T15:43:02+00:00",
+      "categories": [
+        "transfer"
+      ],
+      "super_lig_relevant": true,
+      "summary_tr": "",
+      "tags": [
+        "Konyaspor",
+        "transfer"
+      ],
+      "mentioned_clubs": [
+        "Konyaspor"
+      ]
+    },
+    {
+      "article_id": "94904ee49f8c",
+      "title": "Galatasaray'dan Rafael Leao girişimi! Maaş teklifi belli oldu - beinsports.com.tr",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQWGhpZVZUakxrckp5OWdmTkRaZnl4VF9Wa1Y0NkNsR3BjSno2YWNXQUNENi1PUkJ2RTRWZWI2b21YSDhaNno2a1EtQ1E1NTM5SUttcXVhOFgwZE1LWjRLZ1lxVW5Jak4wNmtjRlFNc3pkdWtnVkFjSVlEaWtXVW5uWEptWml1VngzNWpkRHhHRy1HQ3VSQ0E?oc=5",
+      "source": "beinsports.com.tr",
+      "source_type": "google_news",
+      "published_at": "2026-06-03T15:41:09+00:00",
+      "categories": [
+        "transfer"
+      ],
+      "super_lig_relevant": true,
+      "summary_tr": "",
+      "tags": [
+        "Galatasaray",
+        "transfer"
+      ],
+      "mentioned_clubs": [
+        "Galatasaray"
+      ]
+    },
+    {
+      "article_id": "218f6a1e4932",
+      "title": "Konyaspor'da transfer zirvesi: Yönetim ve İlhan Palut kadro planlamasını görüştü - Konhaber.com",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNaU9YbVJrdkFFLW11XzN4T1dsczZFMXNVcmRhQU5kSXd4YUJjZGtWb1Z2SUFYZURJd2RyX3BNRWx0WnVGcjRKWmVfVUdBbDBiWDJ0QmstNTY3TklKb0NvcTUxZ2xGNzFWQmE0WVlGT0RRbW5YYllTd19fV1B1Yng3TnZFbnI1cTZPUFFsMnp3bDlXS0JkWS04Rk13LXg0b0FHZDdOcUpMeGFjalYxNDZIQ05CNHJNYXk5N2c?oc=5",
+      "source": "Konhaber.com",
+      "source_type": "google_news",
+      "published_at": "2026-06-03T15:38:00+00:00",
+      "categories": [
+        "transfer"
+      ],
+      "super_lig_relevant": true,
+      "summary_tr": "",
+      "tags": [
+        "Konyaspor",
+        "transfer"
+      ],
+      "mentioned_clubs": [
+        "Konyaspor"
+      ]
+    },
+    {
+      "article_id": "7499fd1a2fae",
+      "title": "Galatasaray'a dev piyango! Uğurcan Çakır için temasa geçtiler",
+      "link": "https://www.aksam.com.tr/sporplus/galatasaraya-dev-piyango-ugurcan-cakir-icin-temasa-gectiler/haber-1672031",
+      "source": "Aksam Spor",
+      "source_type": "rss",
+      "published_at": "2026-06-03T18:25:00+03:00",
+      "categories": [
+        "transfer",
+        "lineup"
+      ],
+      "super_lig_relevant": true,
+      "summary_tr": "",
+      "tags": [
+        "Galatasaray",
+        "transfer",
+        "lineup"
+      ],
+      "mentioned_clubs": [
+        "Galatasaray"
+      ]
+    },
+    {
+      "article_id": "0c9f5292bf9b",
+      "title": "Beşiktaş Kulübü, eski başkanlarından Mehmet Üstünkaya'yı andı",
+      "link": "https://www.fotomac.com.tr/besiktas/2026/06/03/besiktas-kulubu-eski-baskanlarindan-mehmet-ustunkayayi-andi",
+      "source": "Fotomaç",
+      "source_type": "rss",
+      "published_at": "2026-06-03T18:10:52+03:00",
+      "categories": [
+        "general"
+      ],
+      "super_lig_relevant": true,
+      "summary_tr": "",
+      "tags": [
+        "Beşiktaş",
+        "general"
+      ],
+      "mentioned_clubs": [
+        "Beşiktaş"
+      ]
+    },
     {
       "article_id": "691c98696139",
       "title": "Kayserispor'un tescil itirazına TFF'den yanıt çıktı",
@@ -3818,6 +4443,53 @@
       ],
       "mentioned_clubs": [
         "Kayserispor"
+      ]
+    },
+    {
+      "article_id": "3553239b91ea",
+      "title": "Ve yeniden Jorge Jesus dönemi! 1 yıllık sözleşme imzalandı",
+      "link": "https://www.aksam.com.tr/sporplus/ve-yeniden-jorge-jesus-donemi-1-yillik-sozlesme-imzalandi/haber-1672030",
+      "source": "Aksam Spor",
+      "source_type": "rss",
+      "published_at": "2026-06-03T18:01:00+03:00",
+      "categories": [
+        "transfer"
+      ],
+      "super_lig_relevant": true,
+      "summary_tr": "",
+      "tags": [
+        "Beşiktaş",
+        "Fenerbahçe",
+        "transfer",
+        "contract"
+      ],
+      "mentioned_clubs": [
+        "Beşiktaş",
+        "Fenerbahçe"
+      ]
+    },
+    {
+      "article_id": "4701b5fd44bb",
+      "title": "Göztepe kalecisi Lis, Lech Poznan yolcusu",
+      "link": "https://www.sabah.com.tr/spor/futbol/2026/06/03/goztepe-kalecisi-lis-lech-poznan-yolcusu",
+      "source": "Sabah Spor",
+      "source_type": "rss",
+      "published_at": "2026-06-03T17:56:37+03:00",
+      "categories": [
+        "transfer",
+        "lineup"
+      ],
+      "super_lig_relevant": true,
+      "summary_tr": "",
+      "tags": [
+        "Galatasaray",
+        "Göztepe",
+        "transfer",
+        "lineup"
+      ],
+      "mentioned_clubs": [
+        "Galatasaray",
+        "Göztepe"
       ]
     },
     {
@@ -3855,55 +4527,24 @@
       "mentioned_clubs": []
     },
     {
-      "article_id": "2890bd720198",
-      "title": "Amed'de Serkan Reçber dönemi",
-      "link": "https://www.haberturk.com/amed-de-sportif-direktorluge-serkan-recber-getirildi-3889096-spor",
-      "source": "Haberturk Spor",
-      "source_type": "rss",
-      "published_at": "2026-06-03T14:49:36+00:00",
+      "article_id": "f6c7fe2ee2bb",
+      "title": "Süper Lig'de sürpriz imza! Beşiktaş'tan ayrılan Serkan Reçber'in yeni durağı belli oldu - Haber 7",
+      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPbkN0UEVvaV9VT2lmdXdlX1FfNGYxR1ZZam5mQXM4MzRQV19KcDJtQjZoMEhxS1h3cFBPNjUyNnRmMEJTWlpsTXNFcTltZHpRenQ2R19yX091QVF6OS1pVlJoOVl5cnRheE8tTEZMZ1hzbjVIeXo3ZktJUnVfbzEzMHdHanZwXzFVV3VnNWx6bFlRQjU0THQ0S3lSSHM5ZXhNNnUyN2Q4TTNBeUhESzJSbWowS1ZxU3htU3ptWkJ4NGVxMmtuMkNDeGh5NFR5WVlwd3fSAdIBQVVfeXFMT25DdFBFb2lfVU9pZnV3ZV9RXzRmMUdWWWpuZkFzODM0UFdfSnAybUI2aDBIcUtYd3BQTzY1MjZ0ZjBCU1pabE1zRXE5bWR6UXp0Nkdfcl9PdUFRejktaVZSaDlZeXJ0YXhPLUxGTGdYc241SHl6N2ZLSVJ1X28xMzB3R2p2cF8xVVd1ZzVsemxZUUI1NEx0NEt5UkhzOWV4TTZ1MjdkOE0zQXlIREsyUm1qMEtWcVN4bVN6bVpCeDRlcTJrbjJDQ3hoeTRUeVlZcHd3?oc=5",
+      "source": "Haber 7",
+      "source_type": "google_news",
+      "published_at": "2026-06-03T14:43:00+00:00",
       "categories": [
         "transfer"
       ],
       "super_lig_relevant": true,
       "summary_tr": "",
       "tags": [
+        "Beşiktaş",
         "transfer"
       ],
-      "mentioned_clubs": []
-    },
-    {
-      "article_id": "dcb521587281",
-      "title": "Başak cinayetinin sanıklarından kan donduran ifadeler! 'Babam üstüne oturdu, bıçaklamaya başladı'",
-      "link": "https://www.milliyet.com.tr/gundem/basak-cinayetinin-saniklarindan-kan-donduran-ifadeler-babam-ustune-oturdu-bicaklamaya-basladi-7598913",
-      "source": "Milliyet Spor",
-      "source_type": "rss",
-      "published_at": "2026-06-03T14:46:09+00:00",
-      "categories": [
-        "suspension"
-      ],
-      "super_lig_relevant": true,
-      "summary_tr": "",
-      "tags": [
-        "suspension"
-      ],
-      "mentioned_clubs": []
-    },
-    {
-      "article_id": "e12cd31382ed",
-      "title": "Aralarında husumet bulunan iki aile cenazade karşılaştı! 'Bu nasıl çatışma? Yat, yat, yat...'",
-      "link": "https://www.milliyet.com.tr/gundem/aralarinda-husumet-bulunan-iki-aile-cenazade-karsilasti-bu-nasil-catisma-yat-yat-yat-7598915",
-      "source": "Milliyet Spor",
-      "source_type": "rss",
-      "published_at": "2026-06-03T14:42:38+00:00",
-      "categories": [
-        "general"
-      ],
-      "super_lig_relevant": true,
-      "summary_tr": "",
-      "tags": [
-        "general"
-      ],
-      "mentioned_clubs": []
+      "mentioned_clubs": [
+        "Beşiktaş"
+      ]
     },
     {
       "article_id": "11f5c27cc9ef",
@@ -3923,6 +4564,26 @@
       ],
       "mentioned_clubs": [
         "Beşiktaş"
+      ]
+    },
+    {
+      "article_id": "a50c7a77faeb",
+      "title": "TRABZONSPOR’DAN RAKİPLERİ ÇILDIRTACAK TRANSFER HAMLESİ! DÜNYA YILDIZI GELİRSE YER YERİNDEN OYNAR! - Karadeniz Gazetesi",
+      "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPNWJKQWZZWm9LZC1HRDJJeU1kYjlWVXZuM1pUbENNRFd0MlNWSzBTcmlEUGh6aFlQMkFLWC05Qk1JS2VDdkdxZ1hEXzFmWnpTM1NnVGlncWlyRjRkVzhaZkVicXV4M192amJTWHhLdWg1VzVWNkhCeFdfTkdxMHRwZ252VGJpaWE3YlJUcXl4dDdFQVBYa2NxZVZqSUV2ekNwWmRCN3RYU24wN3d6RnNNQzRnandTemFFMlhZUGdSWHVKUkdhUnpMYnB4VFJUREdBWnZWeE96TlBMRFVv?oc=5",
+      "source": "Karadeniz Gazetesi",
+      "source_type": "google_news",
+      "published_at": "2026-06-03T14:42:00+00:00",
+      "categories": [
+        "transfer"
+      ],
+      "super_lig_relevant": true,
+      "summary_tr": "",
+      "tags": [
+        "Trabzonspor",
+        "transfer"
+      ],
+      "mentioned_clubs": [
+        "Trabzonspor"
       ]
     },
     {
@@ -4025,9 +4686,9 @@
       ]
     },
     {
-      "article_id": "8bc452e356d0",
-      "title": "Trabzonspor Zubkov'un AEK'e transferini açıkladı! - Trabzonspor - Mynet",
-      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOMER2azJXU2N6MXFNb056LVhET1pDZWh5SkpKRzFYV2N4YkUxdmZkMW5SdlNBRDRtLUd6ZmY2RnhBdVFpd1gyUEs2TUZJLW1tUVE2dHVXamJaX3pUOGZOWkN1TGpQWGVIbzlYQlBWeUJzdGtDaHhlTk1IQVBaNUhjM2U5eDR2LUNqNE5jc9IBjwFBVV95cUxOYmx4ZnhWMW1pNE9BWHI4cWVqOHYwNjMxSjdPS3I1T3NBeENQb05SN2tvRXBfTm1xYkpiREhiSGZKd1FDdDAzNEpWT0p4SlViZ2lIN1BqVVdKRW5ETGZKNzF6emwzMjZjUVdLcTl1TXByRkpDZlAyMk9ScndXQTdNLW5fcnBuMVV1NmlXV0ZfMA?oc=5",
+      "article_id": "5494c0606d35",
+      "title": "Trabzonspor Zubkov'un AEK'e transferini açıkladı! - Mynet",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOMER2azJXU2N6MXFNb056LVhET1pDZWh5SkpKRzFYV2N4YkUxdmZkMW5SdlNBRDRtLUd6ZmY2RnhBdVFpd1gyUEs2TUZJLW1tUVE2dHVXamJaX3pUOGZOWkN1TGpQWGVIbzlYQlBWeUJzdGtDaHhlTk1IQVBaNUhjM2U5eDR2LUNqNE5jcw?oc=5",
       "source": "Mynet",
       "source_type": "google_news",
       "published_at": "2026-06-03T14:04:49+00:00",
@@ -4042,45 +4703,6 @@
       ],
       "mentioned_clubs": [
         "Trabzonspor"
-      ]
-    },
-    {
-      "article_id": "68e47cdfed81",
-      "title": "Kuveyt'ten İran kararı! İki diplomatı 'istenmeyen kişi' ilan ettiler",
-      "link": "https://www.milliyet.com.tr/dunya/kuveytten-iran-karari-iki-diplomati-istenmeyen-kisi-ilan-ettiler-7598910",
-      "source": "Milliyet Spor",
-      "source_type": "rss",
-      "published_at": "2026-06-03T14:04:23+00:00",
-      "categories": [
-        "general"
-      ],
-      "super_lig_relevant": true,
-      "summary_tr": "",
-      "tags": [
-        "general"
-      ],
-      "mentioned_clubs": []
-    },
-    {
-      "article_id": "faa2b9517b6a",
-      "title": "Fatih Karagümrük: Emre Mor iddiaları gerçek değil",
-      "link": "https://www.aksam.com.tr/spor/fatih-karagumruk-emre-mor-iddialari-gercek-degil/haber-1672011",
-      "source": "Aksam Spor",
-      "source_type": "rss",
-      "published_at": "2026-06-03T17:00:00+03:00",
-      "categories": [
-        "transfer"
-      ],
-      "super_lig_relevant": true,
-      "summary_tr": "",
-      "tags": [
-        "Fenerbahçe",
-        "Karagümrük",
-        "transfer"
-      ],
-      "mentioned_clubs": [
-        "Fenerbahçe",
-        "Karagümrük"
       ]
     },
     {
@@ -4124,23 +4746,23 @@
       ]
     },
     {
-      "article_id": "bed01c139886",
-      "title": "Karagümrük'ten Emre Mor açıklaması!",
-      "link": "https://www.haberturk.com/fatih-karagumruk-ten-emre-mor-aciklamasi-3889084-spor",
-      "source": "Haberturk Spor",
-      "source_type": "rss",
-      "published_at": "2026-06-03T13:53:02+00:00",
+      "article_id": "19275df6f5c8",
+      "title": "Trabzonspor Genç Forvet İle Transfer Temaslarına Başladı - HaberTS",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQUHBpdlV3eVdMT3FjN0JxblRvNGQxbF84SlUwWWhlMkNzOTNRQUxISHBTcndRVnRNQVc3T0txMF9zSWhrZ0ZFVzA2Q3VjUTVNeWdZTjZHMXN6MG5WZGxSRWhDbERERHIwZDVSQXJmVWF3SDg2dXE4c0RfUFBOdlRWNlVSWFd5ajjSAYwBQVVfeXFMUGxFRUpWT05aWkNCMENwZDdfam1uZmt0TTIxYVFBa3BaYXE1UHNwQ2toNUdTZ0pyOGxYM1UtTkZQM05jOTJQeVk2UmUzV3hkV2dEcUJzTUZaVkZ0XzNnaW42eVBqSmNGekhERGhvNlpUQi1RRFRTNWw2dVZZN2tWaE1HZm56bnNvT1liV2I?oc=5",
+      "source": "HaberTS",
+      "source_type": "google_news",
+      "published_at": "2026-06-03T13:40:00+00:00",
       "categories": [
         "transfer"
       ],
       "super_lig_relevant": true,
       "summary_tr": "",
       "tags": [
-        "Karagümrük",
+        "Trabzonspor",
         "transfer"
       ],
       "mentioned_clubs": [
-        "Karagümrük"
+        "Trabzonspor"
       ]
     },
     {
@@ -4186,54 +4808,12 @@
       ]
     },
     {
-      "article_id": "6bbc46463e1c",
-      "title": "Kocaelispor’da ilk transfer gerçekleşti - Özgür Kocaeli",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQRlpIWWt2Sm9ZOGRxSzFDdE1TTnRMbE90Rm5mSVk0SXNQS3ZjVUM3c1VxVlN2c2xDTXRoOXozQy05amF1TFdHUWl2NEJzdVVjRjJkcUJ4akREOTVUNVFBbXZTcmVDSGlOOVkxMS1RMXg2QWFmU3VTbl9td3FheWxpNmJrWkhpaGNpN2stZEp30gGTAUFVX3lxTE5mRU5qWWRlTHBqQUZWUnpRNEdjVkJ2TFhZX1VJTzJWZzlVWExlMFVRTGY0Z2pZd1Z6U2doN0IwcHNRWHJfTEhXVk5LbjJxT1hxYUdmdGJKR3pSZFZ4d292T09iV0JIX01vUE9zcDRwTkpVTnZveC0yOTlJM0xVbUhGeFVpdXk1UVRTb1lCVGFmZlhnbw?oc=5",
-      "source": "Özgür Kocaeli",
+      "article_id": "5ddb62174739",
+      "title": "Troy Caupain, Trabzonspor’a imza attı! 2. transfer... - Ajansspor",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPcHVXX1gwRWdzTzNYZmt0SEszVGphZkxwWGxwWkREUHhyUllta0dTaTBmZ2VMcmNBa19vQ21lVmNhRmJ3aldwbFdFQlo1S1NPZURzTW9TYmVmc0lWSjVrM2xoNklfZFVwbzBfLUJDVTd0MHI0ZGgwU3BGWHVfOU9VM0J6cTVUX3lU?oc=5",
+      "source": "Ajansspor",
       "source_type": "google_news",
-      "published_at": "2026-06-03T13:26:30+00:00",
-      "categories": [
-        "transfer"
-      ],
-      "super_lig_relevant": true,
-      "summary_tr": "",
-      "tags": [
-        "Kocaelispor",
-        "transfer"
-      ],
-      "mentioned_clubs": [
-        "Kocaelispor"
-      ]
-    },
-    {
-      "article_id": "96e823882068",
-      "title": "Ersun Yanal'dan Dünya Kupası sözleri!",
-      "link": "https://www.haberturk.com/ersun-yanal-dan-dunya-kupasi-sozleri-3889072-spor",
-      "source": "Haberturk Spor",
-      "source_type": "rss",
-      "published_at": "2026-06-03T13:26:23+00:00",
-      "categories": [
-        "transfer",
-        "injury"
-      ],
-      "super_lig_relevant": true,
-      "summary_tr": "",
-      "tags": [
-        "Fenerbahçe",
-        "transfer",
-        "injury"
-      ],
-      "mentioned_clubs": [
-        "Fenerbahçe"
-      ]
-    },
-    {
-      "article_id": "39767689df0a",
-      "title": "Trabzonspor ayrılığı açıkladı!",
-      "link": "https://www.haberturk.com/trabzonspor-da-oleksandr-zubkov-aek-ya-transfer-oldu-3889070-spor",
-      "source": "Haberturk Spor",
-      "source_type": "rss",
-      "published_at": "2026-06-03T13:19:42+00:00",
+      "published_at": "2026-06-03T13:21:17+00:00",
       "categories": [
         "transfer"
       ],
@@ -4354,12 +4934,12 @@
       ]
     },
     {
-      "article_id": "a510a71a6267",
-      "title": "Trabzonspor transferde gaza bastı! Roma'ya transfer çalımı: İş imzaya kaldı - Haber 7",
-      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPd1JOaEZVdUdVUUp0TFh5SkVqa241SS1fYVVReUZaSzFYQWk1S1BhcVlWTGZ4UFRKOWFLSlIyM2hrSWhxMDE0ejd2ZWsyLVNBNlVaUmlXQmxfNm15dnVENDk1OFJWUU1hNHBOVG9yM0w4SnFJRHpGdGFPM0JWX191N3ZldjNmbGtlMGU0Ri1ZNlFQR1NVNG5HaDR2eUhMZ0xTWHhsUVdxM1NrNDNPQ2FaSWF4aDIyZjZjSUpDajRhSdIBxgFBVV95cUxPNGVIUTJDSlZsYVNySHV4aWRJYzNyS3ZQVWFNaVFLZ09YTmhmS0RweFVoSUl2dWVJYWZlNUJBTjBPSW9yMmVfQmZUd1JJUHZnaHRwQ1M4RVRFTEZMbGlRSHloTVNLMFAteGZmRWQybU00TUFKdEVEcmxLSURNXzRUazRyYllaWUlZRDNDeUlXMFRBTXZpTWVWeFI1eHFLN0daVUFrZm9FME1XQnNCWF9HVFktNjVoZlZ0N3BraDNocGh4cnl2TUE?oc=5",
-      "source": "Haber 7",
+      "article_id": "f4086d636c40",
+      "title": "Trabzonspor'da Zubkov ile yollar ayrıldı - Haberler",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPcFpNVmpVYU12SUg5Skt0NjNnQWpfMWZOVGU3bUpZaXdCVTdNMnE4eGFlaFN5U0F3c0FpYjRSdGRGWnhZaXJrRlhZYThLV3htRm5BVW5tRElEZFlwR3otdEF3aU93RHVUZ19nSmxSYW5JTHcyWmRHZ0VlNDktOFhBR3ItWjBNRlVrVjB2N2ZsRdIBjgFBVV95cUxNcDl0Z1p4cTBBLUI2ZktneEJBa2dDV3lRT2U1ZWM2cFZEeWpCOU1CQWJGQjdhSUxabzVidFFMenJiZ1V2X0d3ZUtDdGEtZGdLUkNEeGJRd3JhOTRTVFY4MFR1ZlBrZVBZdEt5VUlHdzZManRleE94MnpEUGlySWh2TXE4Vjl1dy1haGlYVVZ3?oc=5",
+      "source": "Haberler",
       "source_type": "google_news",
-      "published_at": "2026-06-03T13:09:00+00:00",
+      "published_at": "2026-06-03T13:08:11+00:00",
       "categories": [
         "transfer"
       ],
@@ -4456,12 +5036,12 @@
       ]
     },
     {
-      "article_id": "650d3746b522",
-      "title": "Trabzonspor'da ayrılık açıklandı!",
-      "link": "https://www.fotomac.com.tr/trabzonspor/2026/06/03/trabzonsporda-ayrilik-aciklandi",
-      "source": "Fotomaç",
-      "source_type": "rss",
-      "published_at": "2026-06-03T16:04:00+03:00",
+      "article_id": "3b0fdd03837c",
+      "title": "Trabzonspor'da Oleksandr Zubkov AEK'ya transfer oldu! - A SPOR",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOanZmNTV0NURkVEdqWlJzcjdfQko1Z0Y3Q1JCVHp6TDFSbUdjNHlpNzJUZWN3Y0VKWTJqNTEzc2JTaUlFUk83Tl8xQkg3LTRKSWg2ZDV5Vnk2R2p4bTBscE9fS0w3LU1WVGhUTC12T1N1azBCZ3Bydy1IbUNWdW9VaUpJU2pGelNLSmdPbU12TTMwM0NBZlBDbEtxYnhrT3PSAaQBQVVfeXFMT1RLT2NXcEZydW5JbHg1X21JZkVPUXdaRE51X016eGNWRUJFRmJfNWpuT3QzdDFNUjRrSVdJei0yWWpHQk5NUFpnN0FGWWFaODdxTll6VnUxWExLakdKcm9uOG44TlV0NHR6Vy1yY2lEMVNYcFlnLWd4VkxMSUt6RE5WRFNpaFV4cVFxTjZtYS1wT0RtMHM0Mk8zUm5sMHVoUjVuMVo?oc=5",
+      "source": "A SPOR",
+      "source_type": "google_news",
+      "published_at": "2026-06-03T13:04:17+00:00",
       "categories": [
         "transfer"
       ],
@@ -4476,12 +5056,12 @@
       ]
     },
     {
-      "article_id": "ed227082dda9",
-      "title": "SON DAKİKA | Trabzonspor'da Zubkov ile yollar ayrıldı",
-      "link": "https://www.sabah.com.tr/spor/futbol/2026/06/03/son-dakika-trabzonsporda-zubkov-ile-yollar-ayrildi",
-      "source": "Sabah Spor",
+      "article_id": "650d3746b522",
+      "title": "Trabzonspor'da ayrılık açıklandı!",
+      "link": "https://www.fotomac.com.tr/trabzonspor/2026/06/03/trabzonsporda-ayrilik-aciklandi",
+      "source": "Fotomaç",
       "source_type": "rss",
-      "published_at": "2026-06-03T16:02:40+03:00",
+      "published_at": "2026-06-03T16:04:00+03:00",
       "categories": [
         "transfer"
       ],
@@ -4575,26 +5155,6 @@
       ]
     },
     {
-      "article_id": "c9cefcd0d198",
-      "title": "Bologna'ya imza atmıştı: Tedesco'nun ilk transfer isteği Fenerbahçe'den - Cumhuriyet",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPSVJscWVmTkRyclp1X01PdGlmUk9TTUxsUmF6SVF1WFdYRURoMThRR0kzUjItd1k0Uzdlb1JQUWZSUUhCWmdzRXRqUlpiSkxsaU5UbVA1dGR2bWVLV1NPbjUtYjZFMzlUal9abXpieElnN2pnOUl2ZWxFa3E3Vlp1RllzNmJncVVIVjZRdDNEWTQtQXlEX1dfU3FzWkdiUGVhMnhhT3Q2Wk5PNnptTzhWd3hQcw?oc=5",
-      "source": "Cumhuriyet",
-      "source_type": "google_news",
-      "published_at": "2026-06-03T12:56:00+00:00",
-      "categories": [
-        "transfer"
-      ],
-      "super_lig_relevant": true,
-      "summary_tr": "",
-      "tags": [
-        "Fenerbahçe",
-        "transfer"
-      ],
-      "mentioned_clubs": [
-        "Fenerbahçe"
-      ]
-    },
-    {
       "article_id": "842597c9af09",
       "title": "Conte, Fenerbahçe'ye cevabını verdi! Sürpriz iddia",
       "link": "https://www.hurriyet.com.tr/sporarena/conte-fenerbahceye-cevabini-verdi-surpriz-iddia-43192030",
@@ -4612,48 +5172,6 @@
       ],
       "mentioned_clubs": [
         "Fenerbahçe"
-      ]
-    },
-    {
-      "article_id": "8d33f13e4697",
-      "title": "Ersun Yanal'ın 2026 Dünya Kupası'nda A Milli Takım'a güveni tam!",
-      "link": "https://www.sabah.com.tr/spor/futbol/2026/06/03/ersun-yanalin-2026-dunya-kupasinda-a-milli-takima-guveni-tam",
-      "source": "Sabah Spor",
-      "source_type": "rss",
-      "published_at": "2026-06-03T15:39:32+03:00",
-      "categories": [
-        "transfer",
-        "injury"
-      ],
-      "super_lig_relevant": true,
-      "summary_tr": "",
-      "tags": [
-        "Fenerbahçe",
-        "transfer",
-        "injury"
-      ],
-      "mentioned_clubs": [
-        "Fenerbahçe"
-      ]
-    },
-    {
-      "article_id": "6d4ecf3dcc30",
-      "title": "Galatasaray Kulübünde şubelerin görev dağılımı belli oldu",
-      "link": "https://www.sabah.com.tr/spor/futbol/2026/06/03/galatasaray-kulubunde-subelerin-gorev-dagilimi-belli-oldu",
-      "source": "Sabah Spor",
-      "source_type": "rss",
-      "published_at": "2026-06-03T15:35:51+03:00",
-      "categories": [
-        "general"
-      ],
-      "super_lig_relevant": true,
-      "summary_tr": "",
-      "tags": [
-        "Galatasaray",
-        "general"
-      ],
-      "mentioned_clubs": [
-        "Galatasaray"
       ]
     },
     {
@@ -4751,26 +5269,6 @@
       ]
     },
     {
-      "article_id": "e195b4b571ab",
-      "title": "Trabzonspor'un yeni transferi Sidny Cabral İstanbul'da! - Hürriyet",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNV0stSEJ6R2dLNHdFNkxfdUhkYV90amZmOEkyT0IyVXpLbnpQbkl5LXhodmphYUpzcFNBdmx1V0hfQ3VxSlhTcHctdGlhUS01Nnlhc0dicDltMmJPQndUUnJRM0kzN3dSSFFwYmJYQmpvM0h0cndmS1ZTTlNNb0l0NkY4UDBUNFZnZkJaWFhtc1BZMFpVMDl3UHh6TUp3dkNF?oc=5",
-      "source": "Hürriyet",
-      "source_type": "google_news",
-      "published_at": "2026-06-03T12:18:13+00:00",
-      "categories": [
-        "transfer"
-      ],
-      "super_lig_relevant": true,
-      "summary_tr": "",
-      "tags": [
-        "Trabzonspor",
-        "transfer"
-      ],
-      "mentioned_clubs": [
-        "Trabzonspor"
-      ]
-    },
-    {
       "article_id": "a67d8dcaa391",
       "title": "Tedesco, ilk transferini Fenerbahçe'den istedi!",
       "link": "https://www.hurriyet.com.tr/sporarena/tedesco-ilk-transferini-fenerbahceden-istedi-43191916",
@@ -4793,43 +5291,23 @@
       ]
     },
     {
-      "article_id": "edbb09db39bd",
-      "title": "Kayserispor'un \"liglerin tesciline itirazına\" ret",
-      "link": "https://www.sabah.com.tr/spor/futbol/2026/06/03/kayserisporun-liglerin-tesciline-itirazina-ret",
-      "source": "Sabah Spor",
-      "source_type": "rss",
-      "published_at": "2026-06-03T15:12:00+03:00",
+      "article_id": "dfabe624bc22",
+      "title": "Tedesco, ilk transferini Fenerbahçe'den istedi! - Hürriyet",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQVG10MW54cXhKNFREYUpyVVJ3SEVFNkp0Y09qenRvVmdYLUNhWUFBdXhuZzJDSS1XWlZuRWxTa1RyRzVmTy1JV3pfbzQwRFhJai02ejgzZWJTc0RMUllUMkQ3SHNaSXZtYTctY0FGUE9KZ1R4RHlwMko1aFlPb3pySTZ3NnhzaV9acVhQUzlWa2RoTTNYUEE?oc=5",
+      "source": "Hürriyet",
+      "source_type": "google_news",
+      "published_at": "2026-06-03T12:12:53+00:00",
       "categories": [
-        "general"
+        "transfer"
       ],
       "super_lig_relevant": true,
       "summary_tr": "",
       "tags": [
-        "Kayserispor",
-        "general"
+        "Fenerbahçe",
+        "transfer"
       ],
       "mentioned_clubs": [
-        "Kayserispor"
-      ]
-    },
-    {
-      "article_id": "1209f5afdb7c",
-      "title": "G.Saray'da görev dağılımı belli oldu",
-      "link": "https://www.haberturk.com/galatasaray-da-subelerin-gorev-dagilimi-belli-oldu-3889042-spor",
-      "source": "Haberturk Spor",
-      "source_type": "rss",
-      "published_at": "2026-06-03T12:10:16+00:00",
-      "categories": [
-        "general"
-      ],
-      "super_lig_relevant": true,
-      "summary_tr": "",
-      "tags": [
-        "Galatasaray",
-        "general"
-      ],
-      "mentioned_clubs": [
-        "Galatasaray"
+        "Fenerbahçe"
       ]
     },
     {
@@ -4855,23 +5333,6 @@
         "Trabzonspor",
         "Konyaspor"
       ]
-    },
-    {
-      "article_id": "098c87fcdba5",
-      "title": "Icardi için River Plate’ten transfer iddialarına yanıt! - Ajansspor",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOMEktVC14aU41cjdfZ2tYT3FxcW56M3gxQmtxdS00QUJDd1p2TjR2bHpIenZzZzRNNW05ZmlYeEJGejZ2NmVaUndER2hOUmJJd1VPVmxSNnhUanVIWGJmRDM2cFhDQmlFR2NEUDJiMDFsVThBMHBJajVIZmhIMENQam1RSm5penhIREowNVRfZ0xmdw?oc=5",
-      "source": "Ajansspor",
-      "source_type": "google_news",
-      "published_at": "2026-06-03T12:05:35+00:00",
-      "categories": [
-        "transfer"
-      ],
-      "super_lig_relevant": true,
-      "summary_tr": "",
-      "tags": [
-        "transfer"
-      ],
-      "mentioned_clubs": []
     },
     {
       "article_id": "0550b0112248",
@@ -4999,48 +5460,6 @@
       ]
     },
     {
-      "article_id": "efc0f725a8f0",
-      "title": "Milli golcü Deniz Gül, Galatasaray'a transfer olmak istiyor! - Galatasaray (GS) Haberleri - Mynet",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQeFpWczBqTjJLTWFYV0l2a1BjenpBdUFoanh2SnUtVmpHRE9BVDhRbnlVUllhb3hCRnhwRTJhS2c0Nnp6LUtPeW5icnVBeFNZSDRDUk56RnBRMnFrbGFoRjBlempGM295M1UwTWNlME1NaE16WWpuM285RlpMT2NuN01qTEY0VFpodm12SWZNaU5pbU94b01IeTdR0gGcAUFVX3lxTE5GMnROdXllQld3dEV6SzdQazZyM0Nza3dlS0VLNUhoT3hzSnZLcUV3QXBSN2N2X3FqdTY4Nl84VHczaDV3dmF2cU40anJ2T2lRY1ZrRjIxa0ZuYWxBYU5xeXQ2SWRTZkJqblE4c2JWNmRuV3c3Nm5JeGpocHpVSXJrMVZXQVJkbGZzYTRLTlVVcnQyaVFuX1p3WTl1WQ?oc=5",
-      "source": "Mynet",
-      "source_type": "google_news",
-      "published_at": "2026-06-03T11:50:14+00:00",
-      "categories": [
-        "transfer"
-      ],
-      "super_lig_relevant": true,
-      "summary_tr": "",
-      "tags": [
-        "Galatasaray",
-        "transfer"
-      ],
-      "mentioned_clubs": [
-        "Galatasaray"
-      ]
-    },
-    {
-      "article_id": "bcf43f94426e",
-      "title": "Trabzonspor'un yeni transferi İstanbul'da!",
-      "link": "https://www.haberturk.com/trabzonspor-un-yeni-transferi-sidny-cabral-istanbul-da-3889039-spor",
-      "source": "Haberturk Spor",
-      "source_type": "rss",
-      "published_at": "2026-06-03T11:49:45+00:00",
-      "categories": [
-        "transfer",
-        "lineup"
-      ],
-      "super_lig_relevant": true,
-      "summary_tr": "",
-      "tags": [
-        "Trabzonspor",
-        "transfer",
-        "lineup"
-      ],
-      "mentioned_clubs": [
-        "Trabzonspor"
-      ]
-    },
-    {
       "article_id": "4206d0fa67d5",
       "title": "Göztepe'den ilk transfer! - Ege'de Sonsöz",
       "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1LVDZiMEo4cW5SQTNLNl96VVpNSTE0YVpQMUhiQzJPTDZyT1M2WmxGSG9HVGNFanY0QkdZNnRaaTZfQzFsX29lVXpaVk5FUUhUeTZoQ1lGZ0k3aUxEUEhtWdIBZkFVX3lxTE8wampoTktXUHl2ejBSNzFoZHIzSE1QVkJ4LVloV29yQWl6ZkhManJ1NnRXZWd0MXJZTmEtcklXU2gweXNhZ1VWMldwWElwbWxIQkZCaWZPZm5WU24tREdQMGtNUmVhUQ?oc=5",
@@ -5081,286 +5500,12 @@
       ]
     },
     {
-      "article_id": "03b114f02137",
-      "title": "PFDK'dan Konyaspor ve Trabzonspor'a ceza!",
-      "link": "https://www.haberturk.com/pfdk-dan-konyaspor-ve-trabzonspor-a-para-cezasi-3889033-spor",
-      "source": "Haberturk Spor",
-      "source_type": "rss",
-      "published_at": "2026-06-03T11:31:55+00:00",
-      "categories": [
-        "suspension"
-      ],
-      "super_lig_relevant": true,
-      "summary_tr": "",
-      "tags": [
-        "Trabzonspor",
-        "Konyaspor",
-        "suspension"
-      ],
-      "mentioned_clubs": [
-        "Trabzonspor",
-        "Konyaspor"
-      ]
-    },
-    {
-      "article_id": "aa784af15707",
-      "title": "TFF'den Kayserispor'un itirazına ret!",
-      "link": "https://www.haberturk.com/tff-den-kayserispor-un-itirazina-ret-3889030-spor",
-      "source": "Haberturk Spor",
-      "source_type": "rss",
-      "published_at": "2026-06-03T11:29:27+00:00",
-      "categories": [
-        "general"
-      ],
-      "super_lig_relevant": true,
-      "summary_tr": "",
-      "tags": [
-        "Kayserispor",
-        "general"
-      ],
-      "mentioned_clubs": [
-        "Kayserispor"
-      ]
-    },
-    {
-      "article_id": "625ad0617ff1",
-      "title": "Süper Lig ne zaman başlayacak? 2026-2027 Süper Lig yeni sezon takvimi - Cumhuriyet",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOYXRaNllPN2RneVhfelQ5bkZLVnY1WG91WUliX1ZsaHJKZk5ZbkZMdjZlbDllNkhZcEZPc2RvUU1IVWtNVjktZDItVGdVZ3hPcm55VjlKYVJiXzhXVlhyazhJUDRKclNrNWh5MlA2SmtUUjlPTjVDVXVjdzh3blc0SmxOY0lKUWVPcC1sOGxhTlZJRXExRzVnajQ5cG0xWTFobm1mQ1JweV92cTJSRzBhTw?oc=5",
-      "source": "Cumhuriyet",
+      "article_id": "58b0952c0d77",
+      "title": "Ve Jhon Duran'dan transfer açıklaması! Galatasaray iddialarına olay cevap: Eğer şimdi söylersem... - Fanatik",
+      "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOTkx2ZV9lbGJyTGs0ekFJWHpQNzBLOWg1eVJVQ2dmS2FIZFVxWFRpZU1qaFAwSV9URWdFc1padzdXYmw3SWxoM2lhVkZvSjJJdEdyUGNxblJSZkhyVzVyQ2kweWhXdC16V1lkU19uWVIyYWlud1FkYWxvaGJRenp2T1QwdzJOeElTejR1NWZwUEZiWEFnUEhMWXlZMTJmT1J6Snh6VmNpVXlxRWdmTHRWZUYtY1ZxMU1hRk92TENVVTBCdnoyRzZsN0FzSVpYQWp2bFZ4dUNWaEtiNXBWYzNV?oc=5",
+      "source": "Fanatik",
       "source_type": "google_news",
-      "published_at": "2026-06-03T11:19:00+00:00",
-      "categories": [
-        "transfer"
-      ],
-      "super_lig_relevant": true,
-      "summary_tr": "",
-      "tags": [
-        "transfer"
-      ],
-      "mentioned_clubs": []
-    },
-    {
-      "article_id": "a1d405e2bb36",
-      "title": "Sinclair Armstrong, Süper Lig yolunda! Prensip anlaşmasına vardı...",
-      "link": "https://www.cnnturk.com/spor/futbol/sinclair-armstrong-super-lig-yolunda-prensip-anlasmasina-vardi-3426641",
-      "source": "CNN Türk Spor",
-      "source_type": "rss",
-      "published_at": "2026-06-03T11:05:20+00:00",
-      "categories": [
-        "transfer",
-        "lineup"
-      ],
-      "super_lig_relevant": true,
-      "summary_tr": "",
-      "tags": [
-        "Göztepe",
-        "transfer",
-        "lineup"
-      ],
-      "mentioned_clubs": [
-        "Göztepe"
-      ]
-    },
-    {
-      "article_id": "38176571a52e",
-      "title": "Trabzonspor, Noah Saviolo transferinde sona yaklaştı - 11,5 milyon euroluk hamle - Transfermarkt",
-      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNYy1jbFZ6Mm5iZVBrU240Y1NOUlJQeEJIT1g3NDZjcDJBSjNfZDQzdkVSNlVZaVBWblV3QV9KLWgyNUF1cVpjM25JR2ZOeVltUGcza2JCcHFCVm95b2I5cVRWWFZ0S0NrTHdTaGxMa01NVUNoR1VLZTVtWlpEWmMyT2J4S0FvVk1aR3FhQWs2SmwzMm5PV0huODA5UjRtZHZKS3RucXpfTlhXRjRUSU50Nmw3S0wtMkJmOTZ4UFFjRDk4ckFRMkE?oc=5",
-      "source": "Transfermarkt",
-      "source_type": "google_news",
-      "published_at": "2026-06-03T11:03:22+00:00",
-      "categories": [
-        "transfer"
-      ],
-      "super_lig_relevant": true,
-      "summary_tr": "",
-      "tags": [
-        "Trabzonspor",
-        "transfer"
-      ],
-      "mentioned_clubs": [
-        "Trabzonspor"
-      ]
-    },
-    {
-      "article_id": "4ba2dbc91d10",
-      "title": "Kocaelispor, Göztepe'de sözleşme uzatılmayan Uğur Kaan Yıldız'ı kadrosuna kattı",
-      "link": "https://www.cnnturk.com/spor/futbol/kocaelispor-goztepede-sozlesme-uzatilmayan-ugur-kaan-yildizi-kadrosuna-katti-3426639",
-      "source": "CNN Türk Spor",
-      "source_type": "rss",
-      "published_at": "2026-06-03T11:02:23+00:00",
-      "categories": [
-        "transfer",
-        "lineup"
-      ],
-      "super_lig_relevant": true,
-      "summary_tr": "",
-      "tags": [
-        "Göztepe",
-        "Kocaelispor",
-        "transfer",
-        "lineup",
-        "contract"
-      ],
-      "mentioned_clubs": [
-        "Göztepe",
-        "Kocaelispor"
-      ]
-    },
-    {
-      "article_id": "91966a93cfb5",
-      "title": "Trabzonspor'un yeni transferi Sidny Cabral İstanbul'da! 4 yıllık anlaşma",
-      "link": "https://www.takvim.com.tr/trabzonspor/2026/06/03/trabzonsporun-yeni-transferi-sidny-cabral-istanbulda",
-      "source": "Takvim Spor",
-      "source_type": "rss",
-      "published_at": "2026-06-03T13:55:32+03:00",
-      "categories": [
-        "transfer",
-        "lineup"
-      ],
-      "super_lig_relevant": true,
-      "summary_tr": "",
-      "tags": [
-        "Trabzonspor",
-        "transfer",
-        "lineup"
-      ],
-      "mentioned_clubs": [
-        "Trabzonspor"
-      ]
-    },
-    {
-      "article_id": "7ec3a4f3fc07",
-      "title": "Trabzonspor'un Transfer Teklifi Sonrası Yüksekten Uçtular - HaberTS",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQTy1BcmM4TUdSZDRGV2hBWV9wUEVmMG5fOEVpeDlaLWFKWVR0X2o5RHpVdlhGMkM0cVFocFNjX3NZeUVwZk5HZS1YTUFtR0lyUnM4c1l1QXlQU0pITFdWN1F1aUdGZnNxcnFpU3pPLWdOMDNVTjBGb2h4ejNNNHAtblIxQlFmZmfSAYwBQVVfeXFMT3p3YW5Pamx5cm04Y1dOTllHaTFpcDVKSFQ5RzNpOFYzY1g1ZnhUUkxvYjVVZTN4TXd0akp1emU4UmFjWXdmYmExS0NWSmVUMGVSVnktTk1fenY2SzIwd1o1ZEp1WmxpOERYdkFDRTZsOFF0eF9fV2VzdlBjcFN0UEt2SzhSWmRRTTk0OEY?oc=5",
-      "source": "HaberTS",
-      "source_type": "google_news",
-      "published_at": "2026-06-03T10:50:00+00:00",
-      "categories": [
-        "transfer"
-      ],
-      "super_lig_relevant": true,
-      "summary_tr": "",
-      "tags": [
-        "Trabzonspor",
-        "transfer"
-      ],
-      "mentioned_clubs": [
-        "Trabzonspor"
-      ]
-    },
-    {
-      "article_id": "11248437ace5",
-      "title": "Trabzonspor'a Portekizli kanat!",
-      "link": "https://www.haberturk.com/trabzonspor-a-portekizli-kanat-noah-saviolo-3889004-spor",
-      "source": "Haberturk Spor",
-      "source_type": "rss",
-      "published_at": "2026-06-03T10:48:03+00:00",
-      "categories": [
-        "transfer",
-        "lineup"
-      ],
-      "super_lig_relevant": true,
-      "summary_tr": "",
-      "tags": [
-        "Trabzonspor",
-        "transfer",
-        "lineup"
-      ],
-      "mentioned_clubs": [
-        "Trabzonspor"
-      ]
-    },
-    {
-      "article_id": "46d67393e3b8",
-      "title": "Kocaelispor fırsatı kaçırmadı: Fenerbahçe'nin eski futbolcusunu transfer etti - Halk TV",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOdjNKNFR0bnhscy1RMWROQXgyRnlldnlyV1Fjc1lZOFFWc2RTaTFNUFZjbXQ2LXMxekV0TDR1ekp1a0J1OUhFMENQbGpFYlB1cmhOT2Vuc21yemY2WmtnelByM3BaaTdsVlQyLV9RQ1doRFhrYVJPMzVCM0VvcmFmRkc0VHhpWTVuWlFtZFdxLURaUHhfU0FoLTJNTVZnVTBfcXZHNVhmY2k5dHhsTGV6Wg?oc=5",
-      "source": "Halk TV",
-      "source_type": "google_news",
-      "published_at": "2026-06-03T10:45:30+00:00",
-      "categories": [
-        "transfer"
-      ],
-      "super_lig_relevant": true,
-      "summary_tr": "",
-      "tags": [
-        "Fenerbahçe",
-        "Kocaelispor",
-        "transfer"
-      ],
-      "mentioned_clubs": [
-        "Fenerbahçe",
-        "Kocaelispor"
-      ]
-    },
-    {
-      "article_id": "d7327c3f07fc",
-      "title": "Kocaelispor imzayı attırdı - Fotospor",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNM01HVVFONkFsendET2hzQWRlSkR0TkhZOTVvWVVPMGo0ckhmelpRU1RKeGc4d1pwUHcxQ29NXzhhSHdidDZkV3puTG9DSU9MMExobWU5bjdjRHE2MUZSTmkyeUxNa0h0SXlfb0tqSHZLdjhhUmdjNXZYMGh3T0dVUmpWUFFZQTNQcjIybDNn0gGOAUFVX3lxTE0zTUdVUU42QWx6d0RPaHNBZGVKRHROSFk5NW9ZVU8wajRySGZ6WlFTVEp4Zzh3WnBQdzFDb01fOGFId2J0NmRXem5Mb0NJT0wwTGhtZTluN2NEcTYxRlJOaTJ5TE1rSHRJeV9vS2pIdkt2OGFSZ2M1dlgwaHdPR1VSalZQUVlBM1ByMjJsM2c?oc=5",
-      "source": "Fotospor",
-      "source_type": "google_news",
-      "published_at": "2026-06-03T10:42:00+00:00",
-      "categories": [
-        "transfer"
-      ],
-      "super_lig_relevant": true,
-      "summary_tr": "",
-      "tags": [
-        "Kocaelispor",
-        "transfer"
-      ],
-      "mentioned_clubs": [
-        "Kocaelispor"
-      ]
-    },
-    {
-      "article_id": "9198015b592c",
-      "title": "Trabzonspor'un yeni transferi Cabral İstanbul'da!",
-      "link": "https://www.sabah.com.tr/spor/futbol/2026/06/03/trabzonsporun-yeni-transferi-cabral-istanbulda",
-      "source": "Sabah Spor",
-      "source_type": "rss",
-      "published_at": "2026-06-03T13:37:10+03:00",
-      "categories": [
-        "transfer",
-        "lineup"
-      ],
-      "super_lig_relevant": true,
-      "summary_tr": "",
-      "tags": [
-        "Trabzonspor",
-        "transfer",
-        "lineup"
-      ],
-      "mentioned_clubs": [
-        "Trabzonspor"
-      ]
-    },
-    {
-      "article_id": "aaa63e83f911",
-      "title": "Italiano’da kritik temas! Beşiktaş’ın gündemindeki isimden olumlu yanıt",
-      "link": "https://www.takvim.com.tr/besiktas/2026/06/03/italianoda-kritik-temas-besiktasin-gundemindeki-isimden-olumlu-yanit",
-      "source": "Takvim Spor",
-      "source_type": "rss",
-      "published_at": "2026-06-03T13:28:30+03:00",
-      "categories": [
-        "transfer"
-      ],
-      "super_lig_relevant": true,
-      "summary_tr": "",
-      "tags": [
-        "Beşiktaş",
-        "transfer"
-      ],
-      "mentioned_clubs": [
-        "Beşiktaş"
-      ]
-    },
-    {
-      "article_id": "a5c80af4e406",
-      "title": "Fenerbahçe'de Aziz Yıldırım'dan transfer şov! Galatasaray'ın istediği Van Dijk için devreye girdi - Fenerbahçe - Mynet",
-      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNNHF2bDVhS3QtTEUxbURBTmtYeTZONjhXZGdJU29qdnlnUW5EWTdZcENqaFoxT3lueFVCUWFicnRrMUJhMnlISl9rN1E0U1hsZVJaUjd3SnBNdGNkT3ItcXJDZ0pUbGNWMGU4anBlcFA4cXBmY0hEMUNaUXhyYk5RN21RVW5seDU2LXVyUEpkbmRTUGh6bjRCdi1TcHlEbzEzendNaldnT3BTbGpkQkxmQ0NBaTE1OUozOWdZTmNCTUZ1TzlDVjd2OG52WHPSAc8BQVVfeXFMT3poN0dzdVJuY0YxMkgxTFFZYzJUUElFMDRoX0EwcldCRHNvY2FBc0dzZ3BkamFiQnV2bDhtRGs5YTlONnRySHRVN3UtLW1qNFhLYUdtcE1WTFg1Vm5LMDZ1MU1ZaUNnOVNqalctX0h1ckdza0FuWHZ1NXpQeDRZOW1BeVlaVWl4OFNWSFpiYjZzYTRWTzNDeUFUcndNcGgyMFBsRWstQmUxOUttWjZsTnRVeURqYjNyR1lMNkdJcnNfMTdaQ2Z4XzVQWGVETUZR?oc=5",
-      "source": "Mynet",
-      "source_type": "google_news",
-      "published_at": "2026-06-03T10:28:29+00:00",
+      "published_at": "2026-06-03T11:42:00+00:00",
       "categories": [
         "transfer"
       ],
@@ -5368,52 +5513,30 @@
       "summary_tr": "",
       "tags": [
         "Galatasaray",
+        "transfer"
+      ],
+      "mentioned_clubs": [
+        "Galatasaray"
+      ]
+    },
+    {
+      "article_id": "aff4902ef59e",
+      "title": "Tedesco'nun ilk transferi Fenerbahçe'den - Sözcü Gazetesi",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9NTHhSdHlsWU9uX21ybVoxb1RTWjRHMjRhckNnZ2I3b0VGRjA1MGhQXzJ1YzhQaGdSX3hHM1V2c0c2eXZPTEQ1N1poc0NkakFtTktLU2ttam5WaGtFbHBTNXZfZ0VkUVhGRTZtdURvekwwdWNuV1VwYmRWOFByUQ?oc=5",
+      "source": "Sözcü Gazetesi",
+      "source_type": "google_news",
+      "published_at": "2026-06-03T11:22:00+00:00",
+      "categories": [
+        "transfer"
+      ],
+      "super_lig_relevant": true,
+      "summary_tr": "",
+      "tags": [
         "Fenerbahçe",
         "transfer"
       ],
       "mentioned_clubs": [
-        "Galatasaray",
         "Fenerbahçe"
-      ]
-    },
-    {
-      "article_id": "e8619ec0549d",
-      "title": "Trabzonspor'un yeni transferi Sidny Cabral İstanbul'da!",
-      "link": "https://www.fotomac.com.tr/trabzonspor/2026/06/03/trabzonsporun-yeni-transferi-sidny-cabral-istanbulda",
-      "source": "Fotomaç",
-      "source_type": "rss",
-      "published_at": "2026-06-03T13:25:50+03:00",
-      "categories": [
-        "transfer"
-      ],
-      "super_lig_relevant": true,
-      "summary_tr": "",
-      "tags": [
-        "Trabzonspor",
-        "transfer"
-      ],
-      "mentioned_clubs": [
-        "Trabzonspor"
-      ]
-    },
-    {
-      "article_id": "066a91ce3732",
-      "title": "Trabzonspor'un yeni transferi Sidny Cabral İstanbul'da! - FOTOMAÇ",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPb0xsTFNuOGl6RnU3MExiT0NwUVZkS0xvNG5ySHhENk9OLVhmT3Y4THliRXNxR0w0LUhpQTdvVkxXN1ZDVDVlUjAyZkstOFZVcXltdHFlLXhZb1VxSjJYRTcydEUzWkYwcmd2Q05aRGlZSXhqNkpkTUtmNjdwYW1aWDhvc2NwMFVQaWdESmoxUkVPb2gzUWNVUUNWUFdaY3d2RERHd9IBqgFBVV95cUxNWVJwcjZ2MHpiN1BMR2JwOW5iSWs3UWZHRWNxTWdkanRSX2dYcVBBbGxBcTdhZkFaSGNTSlNrRGtCeGpNT0N2NWZoRVA5RU45M1JTTU1XODI2WWdMOVU4eThpWDg5WHEtaTJSU0ZUeXpqODNPaGlVeVFwNGRlcHZBT255eUVMeDNCcDA1QXBDQ0pZTTVla3VrbF9VSmtkdGFSZFI4SXYyZmN2QQ?oc=5",
-      "source": "FOTOMAÇ",
-      "source_type": "google_news",
-      "published_at": "2026-06-03T10:25:50+00:00",
-      "categories": [
-        "transfer"
-      ],
-      "super_lig_relevant": true,
-      "summary_tr": "",
-      "tags": [
-        "Trabzonspor",
-        "transfer"
-      ],
-      "mentioned_clubs": [
-        "Trabzonspor"
       ]
     }
   ]
