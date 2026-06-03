@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-02T21:26:42.914517+00:00",
+  "generated_at": "2026-06-03T00:04:31.933969+00:00",
   "season": "2025_2026",
   "maturity_days": 14,
   "summary": {
-    "transfer_signals": 31,
+    "transfer_signals": 34,
     "official_events": 3,
     "official_events_with_timestamp": 1,
     "official_events_with_first_observed_timestamp": 3,
@@ -12,11 +12,11 @@
     "measured_lead_times": 0,
     "first_seen_lead_times": 0,
     "tracked_x_sources_waiting": 20,
-    "retained_claim_observations": 263
+    "retained_claim_observations": 264
   },
   "provider_coverage": {
     "google_news": {
-      "articles": 198,
+      "articles": 192,
       "queries": 30,
       "successful_queries": 30
     },
@@ -36,7 +36,7 @@
       "source": "Google News / medya",
       "source_tier": "CHANNEL",
       "source_type": "media",
-      "observations": 260,
+      "observations": 261,
       "scoreable_claims": 31,
       "official_conversions": 0,
       "lead_hours": [],
@@ -44,7 +44,7 @@
       "lead_time_unavailable": 0,
       "matured_unconfirmed": 6,
       "pending_claims": 25,
-      "unresolved_claims": 229,
+      "unresolved_claims": 230,
       "status": "PARTIAL_MEASUREMENT",
       "score": 0.0,
       "average_lead_hours": null,
@@ -615,6 +615,26 @@
       "false_alarm_proxy_pct": null
     },
     {
+      "source": "Haberler",
+      "source_tier": "MEDIA",
+      "source_type": "google_news",
+      "observations": 2,
+      "scoreable_claims": 1,
+      "official_conversions": 0,
+      "lead_hours": [],
+      "first_seen_lead_hours": [],
+      "lead_time_unavailable": 0,
+      "matured_unconfirmed": 0,
+      "pending_claims": 1,
+      "unresolved_claims": 1,
+      "status": "OBSERVING",
+      "score": null,
+      "average_lead_hours": null,
+      "average_first_seen_lead_hours": null,
+      "official_conversion_rate_pct": 0.0,
+      "false_alarm_proxy_pct": null
+    },
+    {
       "source": "Habertürk",
       "source_tier": "MEDIA",
       "source_type": null,
@@ -872,26 +892,6 @@
       "average_lead_hours": null,
       "average_first_seen_lead_hours": null,
       "official_conversion_rate_pct": null,
-      "false_alarm_proxy_pct": null
-    },
-    {
-      "source": "Haberler",
-      "source_tier": "MEDIA",
-      "source_type": "google_news",
-      "observations": 1,
-      "scoreable_claims": 1,
-      "official_conversions": 0,
-      "lead_hours": [],
-      "first_seen_lead_hours": [],
-      "lead_time_unavailable": 0,
-      "matured_unconfirmed": 0,
-      "pending_claims": 1,
-      "unresolved_claims": 0,
-      "status": "OBSERVING",
-      "score": null,
-      "average_lead_hours": null,
-      "average_first_seen_lead_hours": null,
-      "official_conversion_rate_pct": 0.0,
       "false_alarm_proxy_pct": null
     },
     {
@@ -1717,7 +1717,7 @@
     {
       "name": "Sports Digitale",
       "google_query": "Sports Digitale transfer",
-      "indexed_results": 2,
+      "indexed_results": 1,
       "query_error": null,
       "attributed_observations": 0,
       "scoreable_claims": 0,
