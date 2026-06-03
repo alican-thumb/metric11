@@ -7,7 +7,7 @@
 - Oyuncu: 507
 - Toplam piyasa değeri: €1,350,600,000
 - Ortalama piyasa değeri: €2,867,516
-- Pozisyon grupları: {'GK': 62, 'DEF': 163, 'MID': 147, 'FWD': 135, 'UNKNOWN': 0}
+- Pozisyon grupları: {'GK': 62, 'DEF': 164, 'MID': 146, 'FWD': 135, 'UNKNOWN': 0}
 
 ## Kulüpler
 
