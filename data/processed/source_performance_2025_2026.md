@@ -1,6 +1,6 @@
 # Erken Haber Kaynak Performansı
 
-- Transfer sinyali: 31
+- Transfer sinyali: 30
 - Resmi olaya dönüşen transfer: 3
 - Yayın zamanı bulunan resmi teyit: 1/3
 - İlk görülme zamanı bulunan resmi teyit: 3/3
@@ -8,7 +8,7 @@
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 0
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 300
+- Defterde korunan ilk iddia gözlemi: 302
 
 ## Kanal Kapsamı
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 297 | 41 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Google News / medya | 299 | 41 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -56,8 +56,8 @@
 | Yağız Sabuncuoğlu | ATTRIBUTED_MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Fotomaç | MEDIA | 42 | 8 | 0 | — | — | — | — | OBSERVING |
 | Takvim | MEDIA | 39 | 4 | 0 | — | — | — | — | OBSERVING |
+| NTVSpor | MEDIA | 16 | 1 | 0 | — | — | — | — | OBSERVING |
 | Aksam Spor | MEDIA | 15 | 0 | 0 | — | — | — | — | OBSERVING |
-| NTVSpor | MEDIA | 15 | 1 | 0 | — | — | — | — | OBSERVING |
 | Sabah | MEDIA | 13 | 0 | 0 | — | — | — | — | OBSERVING |
 | A SPOR | MEDIA | 11 | 4 | 0 | — | — | — | — | OBSERVING |
 | FOTOMAÇ | MEDIA | 11 | 2 | 0 | — | — | — | — | OBSERVING |
@@ -76,6 +76,7 @@
 | Yeniçağ Gazetesi | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
 | Cumhuriyet | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Eurohoops | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
+| HaberTS | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Sporx.com | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Transfermarkt | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Turkmenportal.com | MEDIA | 2 | 1 | 0 | — | — | — | — | OBSERVING |
@@ -87,7 +88,6 @@
 | Gazete Vatan | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Gunebakış | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Haber61 | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
-| HaberTS | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Karadeniz Gazetesi | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | Konya Yeni Haber | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Mersin Haber | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
