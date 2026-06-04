@@ -2,7 +2,7 @@
 
 - Manuel alias oyuncusu: 28
 - İşlenen TFF lig profil havuzu: 691
-- Transfermarkt Süper Lig kadrosu: 18/18 kulüp, 507 oyuncu
+- Transfermarkt Süper Lig kadrosu: 18/18 kulüp, 506 oyuncu
 - TFF Beşiktaş profili: 46
 - TFF scout profili: 40
 - Transfermarkt Beşiktaş oyuncusu: 28

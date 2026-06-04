@@ -4,10 +4,10 @@
 - Lisans durumu: VERIFY_TERMS_BEFORE_COMMERCIAL_USE
 - Toplanan kulüp: 18
 - Atlanan kulüp: 0
-- Oyuncu: 507
-- Toplam piyasa değeri: €1,350,600,000
-- Ortalama piyasa değeri: €2,867,516
-- Pozisyon grupları: {'GK': 62, 'DEF': 164, 'MID': 146, 'FWD': 135, 'UNKNOWN': 0}
+- Oyuncu: 506
+- Toplam piyasa değeri: €1,350,575,000
+- Ortalama piyasa değeri: €2,873,564
+- Pozisyon grupları: {'GK': 62, 'DEF': 165, 'MID': 145, 'FWD': 134, 'UNKNOWN': 0}
 
 ## Kulüpler
 
@@ -26,7 +26,7 @@
 - KOCAELİSPOR: oyuncu=25, değer=€24,150,000, verified=True, url=https://www.transfermarkt.com/kocaelispor/kader/verein/120/saison_id/2025
 - İKAS EYÜPSPOR: oyuncu=27, değer=€17,150,000, verified=True, url=https://www.transfermarkt.com/eyupspor/kader/verein/7160/saison_id/2025
 - GENÇLERBİRLİĞİ: oyuncu=33, değer=€26,250,000, verified=True, url=https://www.transfermarkt.com/genclerbirligi-ankara/kader/verein/820/saison_id/2025
-- ÇORUM FK: oyuncu=28, değer=€8,650,000, verified=True, url=https://www.transfermarkt.com/corum-fk/kader/verein/37951/saison_id/2025
+- ÇORUM FK: oyuncu=27, değer=€8,625,000, verified=True, url=https://www.transfermarkt.com/corum-fk/kader/verein/37951/saison_id/2025
 - ERZURUMSPOR FK: oyuncu=30, değer=€12,425,000, verified=True, url=https://www.transfermarkt.com/erzurumspor-fk/kader/verein/39722/saison_id/2025
 - AMED SFK: oyuncu=25, değer=€10,575,000, verified=True, url=https://www.transfermarkt.com/amed-sk/kader/verein/12382/saison_id/2025
 

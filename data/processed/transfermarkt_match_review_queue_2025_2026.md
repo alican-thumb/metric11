@@ -1,7 +1,7 @@
 # Transfermarkt Oyuncu Eşleşme İnceleme Kuyruğu
 
 - TFF profil: 691
-- Transfermarkt snapshot: 18/18 kulüp, 507 oyuncu
+- Transfermarkt snapshot: 18/18 kulüp, 506 oyuncu
 - Snapshot kapsamındaki TFF profil: 520
 - Doğrulanmış snapshot eşleşmesi: 410
 - Manuel eşleme ile kullanılan profil: 13
@@ -54,7 +54,7 @@
 | TRABZONSPOR A.Ş. | 35 | 27 | 26 | 1 | 8 | %74.3 | %77.1 |
 | TÜMOSAN KONYASPOR | 43 | 30 | 30 | 1 | 12 | %69.8 | %72.1 |
 | ÇAYKUR RİZESPOR A.Ş. | 32 | 25 | 25 | 1 | 6 | %78.1 | %81.2 |
-| ÇORUM FK | 0 | 28 | 0 | 0 | 0 | %0 | %0 |
+| ÇORUM FK | 0 | 27 | 0 | 0 | 0 | %0 | %0 |
 | İKAS EYÜPSPOR | 36 | 27 | 27 | 0 | 9 | %75.0 | %75.0 |
 
 ## Tüm Eşleşmeyen Kayıtlar (Takım Bazında)

@@ -1,10 +1,10 @@
 # Transfermarkt Lig Geneli Oyuncu Profil Tam-Ad Katmanı
 
 - Kadro kulübü: 18/18
-- Kadro oyuncusu: 507
-- Bu koşuda istenen profil: 507
+- Kadro oyuncusu: 506
+- Bu koşuda istenen profil: 506
 - Toplanan profil: 595
-- Tam ad bulunan profil: 301
+- Tam ad bulunan profil: 300
 - Başarısız profil: 0
 - Risk: HIGH
 - Lisans durumu: VERIFY_TERMS_BEFORE_COMMERCIAL_USE
@@ -22,7 +22,7 @@
 - GÖZTEPE A.Ş.: profil=27, tam_ad=17
 - HESAP.COM ANTALYASPOR: profil=28, tam_ad=15
 - KASIMPAŞA A.Ş.: profil=31, tam_ad=13
-- KOCAELİSPOR: profil=25, tam_ad=12
+- KOCAELİSPOR: profil=25, tam_ad=11
 - MISIRLI.COM.TR FATİH KARAGÜMRÜK: profil=30, tam_ad=14
 - RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ: profil=28, tam_ad=20
 - SAMSUNSPOR A.Ş.: profil=34, tam_ad=12
