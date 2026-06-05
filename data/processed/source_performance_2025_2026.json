@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-05T15:31:13.851291+00:00",
+  "generated_at": "2026-06-05T16:41:41.932135+00:00",
   "season": "2025_2026",
   "maturity_days": 14,
   "summary": {
@@ -8,15 +8,15 @@
     "official_events_with_timestamp": 1,
     "official_events_with_first_observed_timestamp": 3,
     "observed_sources": 61,
-    "scored_sources": 7,
+    "scored_sources": 8,
     "measured_lead_times": 0,
     "first_seen_lead_times": 0,
     "tracked_x_sources_waiting": 20,
-    "retained_claim_observations": 360
+    "retained_claim_observations": 362
   },
   "provider_coverage": {
     "google_news": {
-      "articles": 197,
+      "articles": 175,
       "queries": 30,
       "successful_queries": 30
     },
@@ -36,15 +36,15 @@
       "source": "Google News / medya",
       "source_tier": "CHANNEL",
       "source_type": "media",
-      "observations": 357,
+      "observations": 359,
       "scoreable_claims": 45,
       "official_conversions": 0,
       "lead_hours": [],
       "first_seen_lead_hours": [],
       "lead_time_unavailable": 0,
-      "matured_unconfirmed": 7,
-      "pending_claims": 38,
-      "unresolved_claims": 312,
+      "matured_unconfirmed": 8,
+      "pending_claims": 37,
+      "unresolved_claims": 314,
       "status": "PARTIAL_MEASUREMENT",
       "score": 0.0,
       "average_lead_hours": null,
@@ -114,6 +114,26 @@
     }
   ],
   "sources": [
+    {
+      "source": "Takvim",
+      "source_tier": "MEDIA",
+      "source_type": null,
+      "observations": 44,
+      "scoreable_claims": 4,
+      "official_conversions": 0,
+      "lead_hours": [],
+      "first_seen_lead_hours": [],
+      "lead_time_unavailable": 0,
+      "matured_unconfirmed": 1,
+      "pending_claims": 3,
+      "unresolved_claims": 40,
+      "status": "PARTIAL_MEASUREMENT",
+      "score": 0.0,
+      "average_lead_hours": null,
+      "average_first_seen_lead_hours": null,
+      "official_conversion_rate_pct": 0.0,
+      "false_alarm_proxy_pct": 100.0
+    },
     {
       "source": "Hürriyet",
       "source_tier": "MEDIA",
@@ -275,30 +295,10 @@
       "false_alarm_proxy_pct": null
     },
     {
-      "source": "Takvim",
-      "source_tier": "MEDIA",
-      "source_type": null,
-      "observations": 43,
-      "scoreable_claims": 4,
-      "official_conversions": 0,
-      "lead_hours": [],
-      "first_seen_lead_hours": [],
-      "lead_time_unavailable": 0,
-      "matured_unconfirmed": 0,
-      "pending_claims": 4,
-      "unresolved_claims": 39,
-      "status": "OBSERVING",
-      "score": null,
-      "average_lead_hours": null,
-      "average_first_seen_lead_hours": null,
-      "official_conversion_rate_pct": 0.0,
-      "false_alarm_proxy_pct": null
-    },
-    {
       "source": "Aksam Spor",
       "source_tier": "MEDIA",
       "source_type": "rss",
-      "observations": 20,
+      "observations": 21,
       "scoreable_claims": 0,
       "official_conversions": 0,
       "lead_hours": [],
@@ -306,7 +306,7 @@
       "lead_time_unavailable": 0,
       "matured_unconfirmed": 0,
       "pending_claims": 0,
-      "unresolved_claims": 20,
+      "unresolved_claims": 21,
       "status": "OBSERVING",
       "score": null,
       "average_lead_hours": null,
@@ -1886,7 +1886,7 @@
     {
       "name": "Yusuf Günaydın",
       "google_query": "Yusuf Günaydın transfer",
-      "indexed_results": 0,
+      "indexed_results": 1,
       "query_error": null,
       "attributed_observations": 0,
       "scoreable_claims": 0,
