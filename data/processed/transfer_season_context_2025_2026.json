@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-06-05T06:47:03.932946+00:00",
+  "generated_at": "2026-06-05T08:29:26.088788+00:00",
   "season": "2025_2026",
   "summary": {
     "free_agents_count": 261,
     "final_year_count": 180,
-    "transfer_signals_count": 28,
+    "transfer_signals_count": 35,
     "transfer_status_counts": {
       "OFFICIAL": 0,
       "CORROBORATED": 1,
-      "RUMOR": 0,
-      "REVIEW_REQUIRED": 27
+      "RUMOR": 1,
+      "REVIEW_REQUIRED": 33
     },
     "promotion_events_count": 0,
     "free_agent_total_market_value_eur": 475250000
@@ -515,22 +515,65 @@
       "model_use": false
     },
     {
+      "player_name": "SERHAT ÖZTAŞDELEN",
+      "from_club": "KOCAELİSPOR",
+      "to_club": "Beşiktaş",
+      "transfer_type": "permanent",
+      "window": "summer_2026",
+      "signal_type": "deal_close",
+      "confidence": "LOW",
+      "tm_market_value_eur": 600000,
+      "direction_quality": "TARGET_IDENTIFIED",
+      "article_id": "327f0bf1c604",
+      "title": "Beşiktaş'ta kaleye yerli takviyesi! Serhat Öztaşdelen için anlaşma sağlandı",
+      "link": "https://www.fotomac.com.tr/besiktas/2026/06/04/besiktasta-kaleye-yerli-takviyesi-serhat-oztasdelen-icin-anlasma-saglandi",
+      "source": "Fotomaç",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-05T06:50:12+03:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "HIGH",
+      "verification_status": "RUMOR",
+      "interpretation": "Tek kaynaklı transfer iddiası; yalnız transfer radarında izlenir.",
+      "source_count": 1,
+      "sources": [
+        "Fotomaç"
+      ],
+      "evidence": [
+        {
+          "source": "Fotomaç",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Beşiktaş'ta kaleye yerli takviyesi! Serhat Öztaşdelen için anlaşma sağlandı",
+          "link": "https://www.fotomac.com.tr/besiktas/2026/06/04/besiktasta-kaleye-yerli-takviyesi-serhat-oztasdelen-icin-anlasma-saglandi",
+          "published_at": "2026-06-05T06:50:12+03:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
       "player_name": null,
       "from_club": null,
-      "to_club": "Galatasaray",
-      "signal_type": "transfer_fee",
+      "to_club": "Beşiktaş",
+      "signal_type": "interest",
       "window": "summer_2026",
       "confidence": "LOW",
       "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "e15a30cda742",
-      "title": "Galatasaray, milli yıldızı alıyor! İşte bonservisi - Hürriyet",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPd0RiM01QTEdpM3RXZzRadGdfLUFGeWFDbzJ5WTRYcllFRlZIblNvb0ZSNFNsVU9vb205eFk1MEZEaXNVYWhrOFBHLWVsX1dXemdtZ0RlS216N0pLU0hJWlNOQUxrSnVySW9nNlgxM3B4eC0zTlFKQm04eFRqMlNsVG1FNWx6ZmdiclVKTXAtY2FNWVl2ZDV1ZjJRdw?oc=5",
-      "source": "Hürriyet",
-      "source_type": "google_news",
+      "article_id": "cd0311a47c46",
+      "title": "Beşiktaş'ta Vincenzo Italiano dönemi! İstanbul'a geliyor",
+      "link": "https://www.cnnturk.com/spor/futbol/besiktasta-vincenzo-italiano-donemi-istanbula-geliyor-3427263",
+      "source": "CNN Türk Spor",
+      "source_type": "rss",
       "account_type": null,
-      "query": "Galatasaray transfer",
+      "query": null,
       "source_tier": "MEDIA",
-      "published_at": "2026-06-05T05:10:54+00:00",
+      "published_at": "2026-06-05T10:42:09+00:00",
       "first_observed_at": null,
       "summary_tr": "",
       "entity_confidence": "LOW",
@@ -538,30 +581,61 @@
       "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
       "source_count": 1,
       "sources": [
-        "Hürriyet",
-        "Hürriyet Spor"
+        "CNN Türk Spor"
       ],
       "evidence": [
         {
-          "source": "Hürriyet",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Galatasaray transfer",
-          "title": "Galatasaray, milli yıldızı alıyor! İşte bonservisi - Hürriyet",
-          "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPd0RiM01QTEdpM3RXZzRadGdfLUFGeWFDbzJ5WTRYcllFRlZIblNvb0ZSNFNsVU9vb205eFk1MEZEaXNVYWhrOFBHLWVsX1dXemdtZ0RlS216N0pLU0hJWlNOQUxrSnVySW9nNlgxM3B4eC0zTlFKQm04eFRqMlNsVG1FNWx6ZmdiclVKTXAtY2FNWVl2ZDV1ZjJRdw?oc=5",
-          "published_at": "2026-06-05T05:10:54+00:00",
-          "first_observed_at": null
-        },
-        {
-          "source": "Hürriyet Spor",
+          "source": "CNN Türk Spor",
           "source_tier": "MEDIA",
           "source_type": "rss",
           "account_type": null,
           "query": null,
-          "title": "Galatasaray, milli yıldızı alıyor! İşte bonservisi",
-          "link": "https://www.hurriyet.com.tr/sporarena/galatasaray-milli-yildizi-aliyor-iste-bonservisi-43193713",
-          "published_at": "2026-06-05T04:00:00+00:00",
+          "title": "Beşiktaş'ta Vincenzo Italiano dönemi! İstanbul'a geliyor",
+          "link": "https://www.cnnturk.com/spor/futbol/besiktasta-vincenzo-italiano-donemi-istanbula-geliyor-3427263",
+          "published_at": "2026-06-05T10:42:09+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": "SOFYAN AMRABAT",
+      "from_club": "FENERBAHÇE A.Ş.",
+      "to_club": null,
+      "transfer_type": "loan",
+      "window": "summer_2026",
+      "signal_type": "loan",
+      "confidence": "LOW",
+      "tm_market_value_eur": null,
+      "direction_quality": "TARGET_UNRESOLVED",
+      "article_id": "5b2e819ca34e",
+      "title": "Fenerbahçe'de Sofyan Amrabat gelişmesi! Yönetime bildirdi",
+      "link": "https://www.fotomac.com.tr/fenerbahce/2026/06/05/fenerbahcede-sofyan-amrabat-gelismesi-yonetime-bildirdi",
+      "source": "Fotomaç",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-05T09:13:55+03:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "HIGH",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Fotomaç"
+      ],
+      "evidence": [
+        {
+          "source": "Fotomaç",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Fenerbahçe'de Sofyan Amrabat gelişmesi! Yönetime bildirdi",
+          "link": "https://www.fotomac.com.tr/fenerbahce/2026/06/05/fenerbahcede-sofyan-amrabat-gelismesi-yonetime-bildirdi",
+          "published_at": "2026-06-05T09:13:55+03:00",
           "first_observed_at": null
         }
       ],
@@ -644,6 +718,264 @@
           "title": "Fenerbahçe final, Anadolu Efes umut peşinde!",
           "link": "https://www.hurriyet.com.tr/sporarena/fenerbahce-final-anadolu-efes-umut-pesinde-43193715",
           "published_at": "2026-06-05T04:00:00+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": null,
+      "from_club": null,
+      "to_club": "Galatasaray",
+      "signal_type": "transfer_fee",
+      "window": "winter_2027",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "88bb055a7a2d",
+      "title": "Galatasaray, milli yıldızı alıyor! İşte bonservisi",
+      "link": "https://www.hurriyet.com.tr/sporarena/galatasaray-milli-yildizi-aliyor-iste-bonservisi-43193713",
+      "source": "Hürriyet Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-05T04:00:00+00:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Hürriyet Spor",
+        "Hürriyet"
+      ],
+      "evidence": [
+        {
+          "source": "Hürriyet Spor",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Galatasaray, milli yıldızı alıyor! İşte bonservisi",
+          "link": "https://www.hurriyet.com.tr/sporarena/galatasaray-milli-yildizi-aliyor-iste-bonservisi-43193713",
+          "published_at": "2026-06-05T04:00:00+00:00",
+          "first_observed_at": null
+        },
+        {
+          "source": "Hürriyet",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Galatasaray transfer",
+          "title": "Galatasaray, milli yıldızı alıyor! İşte bonservisi - Hürriyet",
+          "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPd0RiM01QTEdpM3RXZzRadGdfLUFGeWFDbzJ5WTRYcllFRlZIblNvb0ZSNFNsVU9vb205eFk1MEZEaXNVYWhrOFBHLWVsX1dXemdtZ0RlS216N0pLU0hJWlNOQUxrSnVySW9nNlgxM3B4eC0zTlFKQm04eFRqMlNsVG1FNWx6ZmdiclVKTXAtY2FNWVl2ZDV1ZjJRdw?oc=5",
+          "published_at": "2026-06-05T04:00:00+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": null,
+      "from_club": null,
+      "to_club": "Galatasaray",
+      "signal_type": "transfer_fee",
+      "window": "winter_2027",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "5bf8f5d03c49",
+      "title": "Rafael Leao transferinde mutlu son! Galatasaray o rakama anlaştı",
+      "link": "https://www.fotomac.com.tr/galatasaray/2026/06/05/rafael-leao-transferinde-mutlu-son-galatasaray-o-rakama-anlasti",
+      "source": "Fotomaç",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-05T06:50:12+03:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Fotomaç"
+      ],
+      "evidence": [
+        {
+          "source": "Fotomaç",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Rafael Leao transferinde mutlu son! Galatasaray o rakama anlaştı",
+          "link": "https://www.fotomac.com.tr/galatasaray/2026/06/05/rafael-leao-transferinde-mutlu-son-galatasaray-o-rakama-anlasti",
+          "published_at": "2026-06-05T06:50:12+03:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": null,
+      "from_club": null,
+      "to_club": "Fenerbahçe",
+      "signal_type": "transfer_fee",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "94183ff0ba93",
+      "title": "Fenerbahçe'de 100 milyon euro'luk çılgınlık!",
+      "link": "https://www.fotomac.com.tr/fenerbahce/2026/06/05/fenerbahcede-100-milyon-euroluk-cilginlik",
+      "source": "Fotomaç",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-05T06:50:12+03:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Fotomaç"
+      ],
+      "evidence": [
+        {
+          "source": "Fotomaç",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Fenerbahçe'de 100 milyon euro'luk çılgınlık!",
+          "link": "https://www.fotomac.com.tr/fenerbahce/2026/06/05/fenerbahcede-100-milyon-euroluk-cilginlik",
+          "published_at": "2026-06-05T06:50:12+03:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": null,
+      "from_club": null,
+      "to_club": "Fenerbahçe",
+      "signal_type": "interest",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "560a379ef28d",
+      "title": "Aziz Yıldırım golcüsünü buldu! İşte Fenerbahçe'nin peşindeki yıldız",
+      "link": "https://www.fotomac.com.tr/fenerbahce/2026/06/05/aziz-yildirim-golcusunu-buldu-iste-fenerbahcenin-pesindeki-yildiz",
+      "source": "Fotomaç",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-05T06:50:12+03:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Fotomaç"
+      ],
+      "evidence": [
+        {
+          "source": "Fotomaç",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Aziz Yıldırım golcüsünü buldu! İşte Fenerbahçe'nin peşindeki yıldız",
+          "link": "https://www.fotomac.com.tr/fenerbahce/2026/06/05/aziz-yildirim-golcusunu-buldu-iste-fenerbahcenin-pesindeki-yildiz",
+          "published_at": "2026-06-05T06:50:12+03:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": null,
+      "from_club": null,
+      "to_club": "Beşiktaş",
+      "signal_type": "transfer_fee",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "efdd81cd87ac",
+      "title": "Beşiktaş'ta Jose Sa takibi! Bonservis ödemeden...",
+      "link": "https://www.fotomac.com.tr/besiktas/2026/06/05/besiktasta-jose-sa-takibi-bonservis-odemeden",
+      "source": "Fotomaç",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-05T06:50:12+03:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Fotomaç"
+      ],
+      "evidence": [
+        {
+          "source": "Fotomaç",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Beşiktaş'ta Jose Sa takibi! Bonservis ödemeden...",
+          "link": "https://www.fotomac.com.tr/besiktas/2026/06/05/besiktasta-jose-sa-takibi-bonservis-odemeden",
+          "published_at": "2026-06-05T06:50:12+03:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": null,
+      "from_club": null,
+      "to_club": "Galatasaray",
+      "signal_type": "interest",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "35e8297e4be1",
+      "title": "Galatasaray milli yıldızların peşinde! Transferde gençlik aşısı",
+      "link": "https://www.fotomac.com.tr/galatasaray/2026/06/04/galatasaray-milli-yildizlarin-pesinde-transferde-genclik-asisi",
+      "source": "Fotomaç",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-05T06:50:12+03:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Fotomaç"
+      ],
+      "evidence": [
+        {
+          "source": "Fotomaç",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Galatasaray milli yıldızların peşinde! Transferde gençlik aşısı",
+          "link": "https://www.fotomac.com.tr/galatasaray/2026/06/04/galatasaray-milli-yildizlarin-pesinde-transferde-genclik-asisi",
+          "published_at": "2026-06-05T06:50:12+03:00",
           "first_observed_at": null
         }
       ],
@@ -850,17 +1182,6 @@
           "query": "Kocaelispor transfer",
           "title": "Kocaeli, Uğur Kaan Yıldız’ı transfer etti - Çorum Haber Gazetesi",
           "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9UTnNIWWllYy1YWFRQUXo5Mk5JWVdIRmlfUVpqbldFazlpdVVsX252dWNzRDFjLU1oalQwdGRHNXBLNW9OVUptNnZGWmV6NEh6S01OWmVIRkZTZDhGcGZsOGpSRTdCak1ZcHlHc0hjdnctNTZ50gF6QVVfeXFMTzllY0lVT2pRRlNMcDB5djBtdlhOdkNHMF9aZUJOU0xqNkdjNUgxZUV1Wkdob0xYaVJfSk5OOVBpemVnQkEzQ3FhZGhPaTJnYy1vbndLM2xwejhtV2M5TmM5V2dXMVF1UFFIS1dROVN3T1ptb3Bkc2U5MkE?oc=5",
-          "published_at": "2026-06-04T14:35:00+00:00",
-          "first_observed_at": null
-        },
-        {
-          "source": "Çorum Haber Gazetesi",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Çorum FK transfer",
-          "title": "Kocaeli, Uğur Kaan Yıldız’ı transfer etti - Çorum Haber Gazetesi",
-          "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE85ZWNJVU9qUUZTTHAweXYwbXZYTnZDRzBfWmVCTlNMajZHYzVIMWVFdVpHaG9MWGlSX0pOTjlQaXplZ0JBM0NxYWRoT2kyZ2Mtb253SzNscHo4bVdjOU5jOVdnVzFRdVBRSEtXUTlTd09abW9wZHNlOTJB0gF6QVVfeXFMTzllY0lVT2pRRlNMcDB5djBtdlhOdkNHMF9aZUJOU0xqNkdjNUgxZUV1Wkdob0xYaVJfSk5OOVBpemVnQkEzQ3FhZGhPaTJnYy1vbndLM2xwejhtV2M5TmM5V2dXMVF1UFFIS1dROVN3T1ptb3Bkc2U5MkE?oc=5",
           "published_at": "2026-06-04T14:35:00+00:00",
           "first_observed_at": null
         }
@@ -1184,7 +1505,7 @@
       "source": "GZT",
       "source_type": "google_news",
       "account_type": null,
-      "query": "Trabzonspor transfer",
+      "query": "Konyaspor transfer",
       "source_tier": "MEDIA",
       "published_at": "2026-06-04T08:47:34+00:00",
       "first_observed_at": null,
@@ -1202,7 +1523,7 @@
           "source_tier": "MEDIA",
           "source_type": "google_news",
           "account_type": null,
-          "query": "Trabzonspor transfer",
+          "query": "Konyaspor transfer",
           "title": "Trabzonspor, Süper Lig'in tecrübeli yıldızına teklif yaptı: Trabzonspor transfer haberleri - GZT",
           "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxONEpnaUFNeTVMZzNjN1pRYlBaVlp0YzN3cmsyTGxCMkZBemdmRXBzZkRlQUN2c2tWTEFPYnZzRjZManZ1NkQ0cGlNaHBxR2ZhN2htdkpiM3RiRi1VcmJpdGpDTUhldXRBeTdMTm4xN2Q5VmVldVlWdHVTSm9EOG4xd0Fyd19UdWE4bzlyc3lXa3VVSFBKQzE4R0V0YWh2d05RMFZLMVI1bW5kYzhoNzZ0STdxOGdoVUpmek92Nw?oc=5",
           "published_at": "2026-06-04T08:47:34+00:00",
@@ -1247,47 +1568,6 @@
           "title": "Samsunspor'un eski yıldızı 2. Lig takımına transfer oldu - Gazete Vatan",
           "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOZ3VYQmRGUGVOdVFfclFxX3ZVMThCZngwOFJ4WUo1M25Ya2NyaHUxVnBrTlVTODRYa25mSFNOY3BKTHpRTWtzTVFxcW5PYzREbGNhOUxfdG5rd1h6a2xhc012UXA1Qll0RHdXSTN4X0hrWHRWZGVWQUplUVRhdG9NWEdua0YzeWpwZ3RTN2MyeUctX1VZU1J5ZU9rZmFwdWZzcjZ5RXBna01uQQ?oc=5",
           "published_at": "2026-06-04T07:57:03+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": null,
-      "to_club": "Samsunspor",
-      "signal_type": "interest",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "02fcdcc39e20",
-      "title": "Samsunspor, Danimarkalı genç yeteneğin peşinde, 29 MAÇTA 16 GOL - Samsun Haber",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNOG9ZM3NiMFVmSmhoM09LWnFjR0t2aUpGQ0gwVWlDTkFOMWJDaHRxeVlud0NfQ2IzNnFBRDlVTlF0b09CRlVXekhhbGszajFsMkQ4NFRXbmZhak1SUjdib0JWeGZMeU1iLW5jeXpaQnBnUmdjNFJ0V1JxZkphNEExbmpza2taSzVPUmt1NHhMTEhmOU3SAZgBQVVfeXFMTWJaOGJ4STdNdDQyVXQwUWpwX0xzSk9aaFk0dmdBQlpGcVo2VGJ4M21fT1I3ZlJGa25fMmNCNm5BRHlySGkwUHZHaGlmalVlcDcxS1dJMUM5NWQ0TjhndkFqQjdDOXVNRmZSQ1RkNmZOaVhjbUxTaUR4ZVpyUFA5dTBnTEFzUVBaTm5CODZhWEhhU0l5RWpZWWY?oc=5",
-      "source": "Samsun Haber",
-      "source_type": "google_news",
-      "account_type": null,
-      "query": "Samsunspor transfer",
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-04T06:47:00+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Samsun Haber"
-      ],
-      "evidence": [
-        {
-          "source": "Samsun Haber",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Samsunspor transfer",
-          "title": "Samsunspor, Danimarkalı genç yeteneğin peşinde, 29 MAÇTA 16 GOL - Samsun Haber",
-          "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNOG9ZM3NiMFVmSmhoM09LWnFjR0t2aUpGQ0gwVWlDTkFOMWJDaHRxeVlud0NfQ2IzNnFBRDlVTlF0b09CRlVXekhhbGszajFsMkQ4NFRXbmZhak1SUjdib0JWeGZMeU1iLW5jeXpaQnBnUmdjNFJ0V1JxZkphNEExbmpza2taSzVPUmt1NHhMTEhmOU3SAZgBQVVfeXFMTWJaOGJ4STdNdDQyVXQwUWpwX0xzSk9aaFk0dmdBQlpGcVo2VGJ4M21fT1I3ZlJGa25fMmNCNm5BRHlySGkwUHZHaGlmalVlcDcxS1dJMUM5NWQ0TjhndkFqQjdDOXVNRmZSQ1RkNmZOaVhjbUxTaUR4ZVpyUFA5dTBnTEFzUVBaTm5CODZhWEhhU0l5RWpZWWY?oc=5",
-          "published_at": "2026-06-04T06:47:00+00:00",
           "first_observed_at": null
         }
       ],

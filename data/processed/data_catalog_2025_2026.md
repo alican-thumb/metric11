@@ -67,10 +67,10 @@
 - Haber/sakat-cezalı başarılı kaynak: 2
 - Haber/sakat-cezalı sinyal: 3
 - Haber/sakat-cezalı yapılandırılmış oyuncu: 13
-- RSS haber kaydı: 210
+- RSS haber kaydı: 259
 - Resmi kulüp web duyurusu: 18 | erişilebilir site=17/21 | durum=PARTIAL_SUCCESS
-- Haber analizine alınan içerik: 322
-- Transfer haber iddiası: 30 | resmi=0, çoklu kaynak=1, söylenti=1, inceleme gerekli=28
+- Haber analizine alınan içerik: 355
+- Transfer haber iddiası: 35 | resmi=0, çoklu kaynak=1, söylenti=1, inceleme gerekli=33
 - X gönderi snapshot'ı: 0 | başarılı hesap=0 | kaynak=x_api | durum=MISSING_CREDENTIALS
 - API-Football 2024 başarılı endpoint: 7
 - API-Football 2024 fikstür: 342
@@ -92,7 +92,7 @@
 - TFF oyuncu profilleri / public='Resmi federasyon oyuncu profili' (SCRAPING, risk=MEDIUM, license=VERIFY_TERMS): İşlenen lig profil havuzu 691 profil; lig snapshot içi eşleşme ayrıca ölçülür
 - Transfermarkt kadro sayfası / public='Piyasa değeri ve kadro profili' (SCRAPING, risk=HIGH, license=VERIFY_TERMS_BEFORE_COMMERCIAL_USE): Süper Lig 2025/26: 18 kulüp kadrosu, pozisyon ve piyasa değeri
 - Oyuncu uygunluk sinyalleri / public='Model türetilmiş uygunluk sinyali' (DERIVED+MANUAL, risk=MEDIUM, license=DERIVED_FROM_INTERNAL_DATA_AND_MANUAL_VERIFICATION): Beşiktaş 2025/26 kart cezası çıkarımı + manuel sakat/cezalı override dosyası
-- Türk spor haber RSS akışı / public='Güncel spor haber bağlamı' (RSS_NEWS, risk=MEDIUM, license=VERIFY_TERMS_AND_QUOTE_LIMITS): 210 ham haber; 322 ilgili analiz; 30 transfer iddiası
+- Türk spor haber RSS akışı / public='Güncel spor haber bağlamı' (RSS_NEWS, risk=MEDIUM, license=VERIFY_TERMS_AND_QUOTE_LIMITS): 259 ham haber; 355 ilgili analiz; 35 transfer iddiası
 - Süper Lig resmi kulüp web duyuruları / public='Resmi kulüp duyuruları' (OFFICIAL_CLUB_NEWS, risk=LOW_MEDIUM, license=VERIFY_TERMS_AND_LINK_DERIVED_DISPLAY): 18 duyuru; 17/21 kulüp sitesi erişilebilir; durum=PARTIAL_SUCCESS
 - X resmi kulüp ve futbol haber hesapları / public='Resmi kulüp ve sosyal haber duyuruları' (X_SOCIAL_SIGNAL, risk=MEDIUM, license=PLATFORM_TERMS_AND_DISPLAY_REQUIREMENTS): Collector çalıştı (x_api/MISSING_CREDENTIALS); kullanılabilir gönderi snapshot'ı yok
 - FM/FIFA tarzı oyuncu attribute kaynakları / public='Oyuncu attribute ve potansiyel veri seti' (OPEN_DATASET_OR_VERIFIED_EXPORT, risk=LOW_TO_HIGH_BY_LICENSE, license=SOURCE_SPECIFIC): 4 aday kaynak kaydı; normalize import varsa 691 oyuncu
