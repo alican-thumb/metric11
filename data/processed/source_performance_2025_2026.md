@@ -1,6 +1,6 @@
 # Erken Haber Kaynak Performansı
 
-- Transfer sinyali: 44
+- Transfer sinyali: 42
 - Resmi olaya dönüşen transfer: 3
 - Yayın zamanı bulunan resmi teyit: 1/3
 - İlk görülme zamanı bulunan resmi teyit: 3/3
@@ -8,7 +8,7 @@
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 0
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 392
+- Defterde korunan ilk iddia gözlemi: 393
 
 ## Kanal Kapsamı
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 389 | 49 | 1 | — | — | %88.9 | 8.9 | PARTIAL_MEASUREMENT |
+| Google News / medya | 390 | 49 | 1 | — | — | %88.9 | 8.9 | PARTIAL_MEASUREMENT |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -62,8 +62,8 @@
 | NTVSpor | MEDIA | 18 | 1 | 0 | — | — | — | — | OBSERVING |
 | A SPOR | MEDIA | 12 | 4 | 0 | — | — | — | — | OBSERVING |
 | FOTOMAÇ | MEDIA | 12 | 2 | 0 | — | — | — | — | OBSERVING |
+| GZT | MEDIA | 9 | 0 | 0 | — | — | — | — | OBSERVING |
 | Ajansspor | MEDIA | 8 | 3 | 0 | — | — | — | — | OBSERVING |
-| GZT | MEDIA | 8 | 0 | 0 | — | — | — | — | OBSERVING |
 | Haberturk Spor | MEDIA | 8 | 1 | 0 | — | — | — | — | OBSERVING |
 | beinsports.com.tr | MEDIA | 7 | 0 | 0 | — | — | — | — | OBSERVING |
 | Taka Gazete | MEDIA | 6 | 0 | 0 | — | — | — | — | OBSERVING |

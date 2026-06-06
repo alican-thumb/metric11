@@ -4,7 +4,7 @@
 - Kadro oyuncusu: 506
 - Bu koşuda istenen profil: 506
 - Toplanan profil: 595
-- Tam ad bulunan profil: 300
+- Tam ad bulunan profil: 299
 - Başarısız profil: 0
 - Risk: HIGH
 - Lisans durumu: VERIFY_TERMS_BEFORE_COMMERCIAL_USE
@@ -27,7 +27,7 @@
 - RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ: profil=28, tam_ad=20
 - SAMSUNSPOR A.Ş.: profil=34, tam_ad=12
 - TRABZONSPOR A.Ş.: profil=27, tam_ad=18
-- TÜMOSAN KONYASPOR: profil=30, tam_ad=20
+- TÜMOSAN KONYASPOR: profil=30, tam_ad=19
 - ZECORNER KAYSERİSPOR: profil=30, tam_ad=17
 - ÇAYKUR RİZESPOR A.Ş.: profil=25, tam_ad=12
 - ÇORUM FK: profil=28, tam_ad=10
