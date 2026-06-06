@@ -1,6 +1,6 @@
 # Erken Haber Kaynak Performansı
 
-- Transfer sinyali: 44
+- Transfer sinyali: 48
 - Resmi olaya dönüşen transfer: 3
 - Yayın zamanı bulunan resmi teyit: 1/3
 - İlk görülme zamanı bulunan resmi teyit: 3/3
@@ -8,11 +8,11 @@
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 0
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 397
+- Defterde korunan ilk iddia gözlemi: 403
 
 ## Kanal Kapsamı
 
-- Google News: 199 haber, 30/30 başarılı sorgu.
+- Google News: 211 haber, 30/30 başarılı sorgu.
 - Telegram: 6 mesaj, 8/8 erişilebilir kanal.
 - X: durum=MISSING_CREDENTIALS, gönderi=0, yapılandırılmış hesap=45.
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 394 | 50 | 1 | — | — | %88.9 | 8.9 | PARTIAL_MEASUREMENT |
+| Google News / medya | 400 | 51 | 1 | — | — | %88.9 | 8.9 | PARTIAL_MEASUREMENT |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -32,7 +32,7 @@
 | Muhabir / Ağ | Google Arama Bulgusu | Atıflı Gözlem | Ölçülebilir İddia | Skor Durumu |
 |---|---:|---:|---:|---|
 | Yağız Sabuncuoğlu | 0 | 1 | 1 | PARTIAL_MEASUREMENT |
-| Ertan Süzgün | 2 | 0 | 0 | ATTRIBUTION_PENDING |
+| Ertan Süzgün | 1 | 0 | 0 | ATTRIBUTION_PENDING |
 | Sports Digitale | 0 | 0 | 0 | ATTRIBUTION_PENDING |
 | Yusuf Günaydın | 0 | 0 | 0 | ATTRIBUTION_PENDING |
 | Ekrem Konur | 0 | 0 | 0 | ATTRIBUTION_PENDING |
@@ -47,8 +47,8 @@
 
 | Kaynak | Katman | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---|
-| CNN Türk Spor | MEDIA | 7 | 2 | 1 | — | — | %0.0 | 80.0 | PARTIAL_MEASUREMENT |
-| Takvim | MEDIA | 48 | 4 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| CNN Türk Spor | MEDIA | 8 | 2 | 1 | — | — | %0.0 | 80.0 | PARTIAL_MEASUREMENT |
+| Takvim | MEDIA | 49 | 4 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Hürriyet | MEDIA | 43 | 3 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Milliyet | MEDIA | 19 | 3 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Fanatik | MEDIA | 15 | 4 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
@@ -58,19 +58,19 @@
 | Yağız Sabuncuoğlu | ATTRIBUTED_MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Fotomaç | MEDIA | 52 | 9 | 0 | — | — | — | — | OBSERVING |
 | Aksam Spor | MEDIA | 23 | 0 | 0 | — | — | — | — | OBSERVING |
-| NTVSpor | MEDIA | 19 | 2 | 0 | — | — | — | — | OBSERVING |
+| NTVSpor | MEDIA | 20 | 3 | 0 | — | — | — | — | OBSERVING |
 | Sabah | MEDIA | 19 | 0 | 0 | — | — | — | — | OBSERVING |
 | A SPOR | MEDIA | 12 | 4 | 0 | — | — | — | — | OBSERVING |
 | FOTOMAÇ | MEDIA | 12 | 2 | 0 | — | — | — | — | OBSERVING |
+| Ajansspor | MEDIA | 9 | 3 | 0 | — | — | — | — | OBSERVING |
 | GZT | MEDIA | 9 | 0 | 0 | — | — | — | — | OBSERVING |
-| Ajansspor | MEDIA | 8 | 3 | 0 | — | — | — | — | OBSERVING |
 | Haberturk Spor | MEDIA | 8 | 1 | 0 | — | — | — | — | OBSERVING |
+| Son Dakika | MEDIA | 7 | 1 | 0 | — | — | — | — | OBSERVING |
 | beinsports.com.tr | MEDIA | 7 | 0 | 0 | — | — | — | — | OBSERVING |
-| Son Dakika | MEDIA | 6 | 1 | 0 | — | — | — | — | OBSERVING |
 | Taka Gazete | MEDIA | 6 | 0 | 0 | — | — | — | — | OBSERVING |
+| Anadolu Ajansı Spor | AGENCY | 5 | 0 | 0 | — | — | — | — | OBSERVING |
 | Haberler | MEDIA | 5 | 1 | 0 | — | — | — | — | OBSERVING |
 | SonDakika | MEDIA | 5 | 1 | 0 | — | — | — | — | OBSERVING |
-| Anadolu Ajansı Spor | AGENCY | 4 | 0 | 0 | — | — | — | — | OBSERVING |
 | Haber 7 | MEDIA | 4 | 0 | 0 | — | — | — | — | OBSERVING |
 | Yeniçağ Gazetesi | MEDIA | 4 | 0 | 0 | — | — | — | — | OBSERVING |
 | HaberTS | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
