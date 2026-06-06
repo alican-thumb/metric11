@@ -1,6 +1,6 @@
 # Erken Haber Kaynak Performansı
 
-- Transfer sinyali: 36
+- Transfer sinyali: 39
 - Resmi olaya dönüşen transfer: 3
 - Yayın zamanı bulunan resmi teyit: 1/3
 - İlk görülme zamanı bulunan resmi teyit: 3/3
@@ -8,11 +8,11 @@
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 0
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 404
+- Defterde korunan ilk iddia gözlemi: 405
 
 ## Kanal Kapsamı
 
-- Google News: 202 haber, 30/30 başarılı sorgu.
+- Google News: 217 haber, 30/30 başarılı sorgu.
 - Telegram: 6 mesaj, 8/8 erişilebilir kanal.
 - X: durum=MISSING_CREDENTIALS, gönderi=0, yapılandırılmış hesap=45.
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 401 | 51 | 1 | — | — | %90.0 | 8.0 | PARTIAL_MEASUREMENT |
+| Google News / medya | 402 | 51 | 1 | — | — | %90.0 | 8.0 | PARTIAL_MEASUREMENT |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -72,9 +72,9 @@
 | Haberler | MEDIA | 5 | 1 | 0 | — | — | — | — | OBSERVING |
 | SonDakika | MEDIA | 5 | 1 | 0 | — | — | — | — | OBSERVING |
 | Haber 7 | MEDIA | 4 | 0 | 0 | — | — | — | — | OBSERVING |
+| Habertürk | MEDIA | 4 | 1 | 0 | — | — | — | — | OBSERVING |
 | Yeniçağ Gazetesi | MEDIA | 4 | 0 | 0 | — | — | — | — | OBSERVING |
 | HaberTS | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
-| Habertürk | MEDIA | 3 | 1 | 0 | — | — | — | — | OBSERVING |
 | Halk TV | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
 | Nefes Gazetesi | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
 | sondakika.com | MEDIA | 3 | 1 | 0 | — | — | — | — | OBSERVING |
