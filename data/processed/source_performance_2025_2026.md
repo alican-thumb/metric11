@@ -8,11 +8,11 @@
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 0
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 423
+- Defterde korunan ilk iddia gözlemi: 424
 
 ## Kanal Kapsamı
 
-- Google News: 209 haber, 30/30 başarılı sorgu.
+- Google News: 208 haber, 30/30 başarılı sorgu.
 - Telegram: 6 mesaj, 8/8 erişilebilir kanal.
 - X: durum=MISSING_CREDENTIALS, gönderi=0, yapılandırılmış hesap=45.
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 420 | 53 | 1 | — | — | %90.0 | 8.0 | PARTIAL_MEASUREMENT |
+| Google News / medya | 421 | 54 | 1 | — | — | %90.0 | 8.0 | PARTIAL_MEASUREMENT |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -32,7 +32,7 @@
 | Muhabir / Ağ | Google Arama Bulgusu | Atıflı Gözlem | Ölçülebilir İddia | Skor Durumu |
 |---|---:|---:|---:|---|
 | Yağız Sabuncuoğlu | 1 | 1 | 1 | PARTIAL_MEASUREMENT |
-| Ertan Süzgün | 3 | 0 | 0 | ATTRIBUTION_PENDING |
+| Ertan Süzgün | 2 | 0 | 0 | ATTRIBUTION_PENDING |
 | Sports Digitale | 0 | 0 | 0 | ATTRIBUTION_PENDING |
 | Yusuf Günaydın | 0 | 0 | 0 | ATTRIBUTION_PENDING |
 | Ekrem Konur | 0 | 0 | 0 | ATTRIBUTION_PENDING |
@@ -58,7 +58,7 @@
 | Yağız Sabuncuoğlu | ATTRIBUTED_MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Fotomaç | MEDIA | 55 | 9 | 0 | — | — | — | — | OBSERVING |
 | Aksam Spor | MEDIA | 23 | 0 | 0 | — | — | — | — | OBSERVING |
-| Sabah | MEDIA | 22 | 0 | 0 | — | — | — | — | OBSERVING |
+| Sabah | MEDIA | 23 | 1 | 0 | — | — | — | — | OBSERVING |
 | NTVSpor | MEDIA | 21 | 3 | 0 | — | — | — | — | OBSERVING |
 | A SPOR | MEDIA | 12 | 4 | 0 | — | — | — | — | OBSERVING |
 | FOTOMAÇ | MEDIA | 12 | 2 | 0 | — | — | — | — | OBSERVING |

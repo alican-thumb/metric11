@@ -35,16 +35,6 @@
 - 6 numara / savunma emniyeti: Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir. Adaylar: aday havuzu zayıf
 - Stoper / hava ve temas: Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 1.44. Adaylar: aday havuzu zayıf
 
-## ERZURUMSPOR FK
-
-- Güç: None | GF: None | GA: None | kart: None
-- Zafiyet: yeni lig takımı
-- Scout ipucu: Süper Lig deneyimli kaleci, stoper ve santrfor takviyesi — serbest ajan ve kiralık öncelikli.
-- Kaleci / istikrar: Süper Lig'e yeni çıkan takım; Kaleci / istikrar pozisyonunda deneyimli takviye kritik. Adaylar: aday havuzu zayıf
-- Stoper / hava ve temas: Süper Lig'e yeni çıkan takım; Stoper / hava ve temas pozisyonunda deneyimli takviye kritik. Adaylar: ATTILA ARPAD SZALAI
-- Santrfor / skor yükü: Süper Lig'e yeni çıkan takım; Santrfor / skor yükü pozisyonunda deneyimli takviye kritik. Adaylar: DATRO DAVID FOFANA, YOUSSEF EN NESYRI, KEVIN OGHENETEGA TAMARAEBI BAKUMO ABRAHAM
-- 6 numara / savunma emniyeti: Süper Lig'e yeni çıkan takım; 6 numara / savunma emniyeti pozisyonunda deneyimli takviye kritik. Adaylar: aday havuzu zayıf
-
 ## AMED SFK
 
 - Güç: None | GF: None | GA: None | kart: None
@@ -56,6 +46,16 @@
 - 6 numara / savunma emniyeti: Süper Lig'e yeni çıkan takım; 6 numara / savunma emniyeti pozisyonunda deneyimli takviye kritik. Adaylar: aday havuzu zayıf
 
 ## ÇORUM FK
+
+- Güç: None | GF: None | GA: None | kart: None
+- Zafiyet: yeni lig takımı
+- Scout ipucu: Süper Lig deneyimli kaleci, stoper ve santrfor takviyesi — serbest ajan ve kiralık öncelikli.
+- Kaleci / istikrar: Süper Lig'e yeni çıkan takım; Kaleci / istikrar pozisyonunda deneyimli takviye kritik. Adaylar: aday havuzu zayıf
+- Stoper / hava ve temas: Süper Lig'e yeni çıkan takım; Stoper / hava ve temas pozisyonunda deneyimli takviye kritik. Adaylar: ATTILA ARPAD SZALAI
+- Santrfor / skor yükü: Süper Lig'e yeni çıkan takım; Santrfor / skor yükü pozisyonunda deneyimli takviye kritik. Adaylar: DATRO DAVID FOFANA, YOUSSEF EN NESYRI, KEVIN OGHENETEGA TAMARAEBI BAKUMO ABRAHAM
+- 6 numara / savunma emniyeti: Süper Lig'e yeni çıkan takım; 6 numara / savunma emniyeti pozisyonunda deneyimli takviye kritik. Adaylar: aday havuzu zayıf
+
+## ERZURUMSPOR FK
 
 - Güç: None | GF: None | GA: None | kart: None
 - Zafiyet: yeni lig takımı
