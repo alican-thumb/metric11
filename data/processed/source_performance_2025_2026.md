@@ -1,6 +1,6 @@
 # Erken Haber Kaynak Performansı
 
-- Transfer sinyali: 36
+- Transfer sinyali: 35
 - Resmi olaya dönüşen transfer: 3
 - Yayın zamanı bulunan resmi teyit: 1/3
 - İlk görülme zamanı bulunan resmi teyit: 3/3
@@ -8,11 +8,11 @@
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 0
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 416
+- Defterde korunan ilk iddia gözlemi: 417
 
 ## Kanal Kapsamı
 
-- Google News: 207 haber, 30/30 başarılı sorgu.
+- Google News: 195 haber, 30/30 başarılı sorgu.
 - Telegram: 6 mesaj, 8/8 erişilebilir kanal.
 - X: durum=MISSING_CREDENTIALS, gönderi=0, yapılandırılmış hesap=45.
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 413 | 53 | 1 | — | — | %90.0 | 8.0 | PARTIAL_MEASUREMENT |
+| Google News / medya | 414 | 53 | 1 | — | — | %90.0 | 8.0 | PARTIAL_MEASUREMENT |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -33,7 +33,7 @@
 |---|---:|---:|---:|---|
 | Yağız Sabuncuoğlu | 1 | 1 | 1 | PARTIAL_MEASUREMENT |
 | Ertan Süzgün | 2 | 0 | 0 | ATTRIBUTION_PENDING |
-| Sports Digitale | 0 | 0 | 0 | ATTRIBUTION_PENDING |
+| Sports Digitale | 1 | 0 | 0 | ATTRIBUTION_PENDING |
 | Yusuf Günaydın | 0 | 0 | 0 | ATTRIBUTION_PENDING |
 | Ekrem Konur | 0 | 0 | 0 | ATTRIBUTION_PENDING |
 
@@ -82,6 +82,7 @@
 | Eurohoops | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Gazete Vatan | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Haber61 | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
+| Mersin Haber | MEDIA | 2 | 1 | 0 | — | — | — | — | OBSERVING |
 | Samsun Haber | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Sporx.com | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Transfermarkt | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
@@ -96,7 +97,6 @@
 | Gunebakış | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Karadeniz Gazetesi | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | Konya Yeni Haber | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
-| Mersin Haber | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | Mynet | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | NTV Haber | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | STAR - Haberler | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
