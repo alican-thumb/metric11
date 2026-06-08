@@ -1,18 +1,18 @@
 # Erken Haber Kaynak Performansı
 
-- Transfer sinyali: 28
+- Transfer sinyali: 30
 - Resmi olaya dönüşen transfer: 3
 - Yayın zamanı bulunan resmi teyit: 1/3
 - İlk görülme zamanı bulunan resmi teyit: 3/3
-- Ölçülen kaynak: 9 / gözlenen kaynak: 68
+- Ölçülen kaynak: 10 / gözlenen kaynak: 69
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 0
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 456
+- Defterde korunan ilk iddia gözlemi: 459
 
 ## Kanal Kapsamı
 
-- Google News: 207 haber, 30/30 başarılı sorgu.
+- Google News: 200 haber, 30/30 başarılı sorgu.
 - Telegram: 6 mesaj, 8/8 erişilebilir kanal.
 - X: durum=MISSING_CREDENTIALS, gönderi=0, yapılandırılmış hesap=45.
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 453 | 56 | 1 | — | — | %90.9 | 7.3 | PARTIAL_MEASUREMENT |
+| Google News / medya | 456 | 57 | 1 | — | — | %91.7 | 6.7 | PARTIAL_MEASUREMENT |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -32,8 +32,8 @@
 | Muhabir / Ağ | Google Arama Bulgusu | Atıflı Gözlem | Ölçülebilir İddia | Skor Durumu |
 |---|---:|---:|---:|---|
 | Yağız Sabuncuoğlu | 1 | 1 | 1 | PARTIAL_MEASUREMENT |
-| Ertan Süzgün | 3 | 0 | 0 | ATTRIBUTION_PENDING |
-| Sports Digitale | 1 | 0 | 0 | ATTRIBUTION_PENDING |
+| Ertan Süzgün | 2 | 0 | 0 | ATTRIBUTION_PENDING |
+| Sports Digitale | 0 | 0 | 0 | ATTRIBUTION_PENDING |
 | Yusuf Günaydın | 0 | 0 | 0 | ATTRIBUTION_PENDING |
 | Ekrem Konur | 0 | 0 | 0 | ATTRIBUTION_PENDING |
 
@@ -54,6 +54,7 @@
 | Fanatik | MEDIA | 16 | 4 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Mackolik.com | MEDIA | 3 | 2 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Diken | MEDIA | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Turkmenportal.com | MEDIA | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Beşiktaş Haberleri | SECONDARY | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Yağız Sabuncuoğlu | ATTRIBUTED_MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Fotomaç | MEDIA | 58 | 9 | 0 | — | — | — | — | OBSERVING |
@@ -67,10 +68,10 @@
 | GZT | MEDIA | 9 | 0 | 0 | — | — | — | — | OBSERVING |
 | Son Dakika | MEDIA | 8 | 1 | 0 | — | — | — | — | OBSERVING |
 | beinsports.com.tr | MEDIA | 8 | 0 | 0 | — | — | — | — | OBSERVING |
+| SonDakika | MEDIA | 7 | 1 | 0 | — | — | — | — | OBSERVING |
 | Anadolu Ajansı Spor | AGENCY | 6 | 0 | 0 | — | — | — | — | OBSERVING |
 | Haberler | MEDIA | 6 | 1 | 0 | — | — | — | — | OBSERVING |
 | Taka Gazete | MEDIA | 6 | 0 | 0 | — | — | — | — | OBSERVING |
-| SonDakika | MEDIA | 5 | 1 | 0 | — | — | — | — | OBSERVING |
 | Haber 7 | MEDIA | 4 | 0 | 0 | — | — | — | — | OBSERVING |
 | HaberTS | MEDIA | 4 | 0 | 0 | — | — | — | — | OBSERVING |
 | Habertürk | MEDIA | 4 | 1 | 0 | — | — | — | — | OBSERVING |
@@ -86,7 +87,6 @@
 | Mersin Haber | MEDIA | 2 | 1 | 0 | — | — | — | — | OBSERVING |
 | Samsun Haber | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Sporx.com | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
-| Turkmenportal.com | MEDIA | 2 | 1 | 0 | — | — | — | — | OBSERVING |
 | Yeni Şafak | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Çağdaş Kocaeli Gazetesi | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Afyon Türkeli Gazetesi | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
@@ -104,6 +104,7 @@
 | Konya Yeni Haber | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Mynet | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | NTV Haber | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
+| Orta Çizgi | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | STAR - Haberler | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | T24 | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Transfer Haber | SECONDARY | 1 | 0 | 0 | — | — | — | — | OBSERVING |
