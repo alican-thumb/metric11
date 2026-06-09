@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-06-09T20:23:47.595768+00:00",
+  "generated_at": "2026-06-09T23:44:37.760791+00:00",
   "season": "2025_2026",
   "maturity_days": 14,
   "summary": {
-    "transfer_signals": 29,
+    "transfer_signals": 22,
     "official_events": 3,
     "official_events_with_timestamp": 1,
     "official_events_with_first_observed_timestamp": 3,
-    "observed_sources": 74,
+    "observed_sources": 75,
     "scored_sources": 10,
     "measured_lead_times": 0,
     "first_seen_lead_times": 0,
     "tracked_x_sources_waiting": 20,
-    "retained_claim_observations": 500
+    "retained_claim_observations": 501
   },
   "provider_coverage": {
     "google_news": {
-      "articles": 207,
+      "articles": 203,
       "queries": 30,
       "successful_queries": 30
     },
@@ -36,7 +36,7 @@
       "source": "Google News / medya",
       "source_tier": "CHANNEL",
       "source_type": "media",
-      "observations": 497,
+      "observations": 498,
       "scoreable_claims": 60,
       "official_conversions": 1,
       "lead_hours": [],
@@ -44,7 +44,7 @@
       "lead_time_unavailable": 1,
       "matured_unconfirmed": 12,
       "pending_claims": 47,
-      "unresolved_claims": 437,
+      "unresolved_claims": 438,
       "status": "PARTIAL_MEASUREMENT",
       "score": 6.2,
       "average_lead_hours": null,
@@ -1175,6 +1175,26 @@
       "false_alarm_proxy_pct": null
     },
     {
+      "source": "Goal.com",
+      "source_tier": "MEDIA",
+      "source_type": "google_news",
+      "observations": 1,
+      "scoreable_claims": 0,
+      "official_conversions": 0,
+      "lead_hours": [],
+      "first_seen_lead_hours": [],
+      "lead_time_unavailable": 0,
+      "matured_unconfirmed": 0,
+      "pending_claims": 0,
+      "unresolved_claims": 1,
+      "status": "OBSERVING",
+      "score": null,
+      "average_lead_hours": null,
+      "average_first_seen_lead_hours": null,
+      "official_conversion_rate_pct": null,
+      "false_alarm_proxy_pct": null
+    },
+    {
       "source": "Gunebakış",
       "source_tier": "MEDIA",
       "source_type": "google_news",
@@ -2137,7 +2157,7 @@
     {
       "name": "Sports Digitale",
       "google_query": "Sports Digitale transfer",
-      "indexed_results": 2,
+      "indexed_results": 0,
       "query_error": null,
       "attributed_observations": 0,
       "scoreable_claims": 0,
