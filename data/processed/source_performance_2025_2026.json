@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-08T23:26:20.601987+00:00",
+  "generated_at": "2026-06-09T04:26:56.540790+00:00",
   "season": "2025_2026",
   "maturity_days": 14,
   "summary": {
-    "transfer_signals": 30,
+    "transfer_signals": 24,
     "official_events": 3,
     "official_events_with_timestamp": 1,
     "official_events_with_first_observed_timestamp": 3,
@@ -12,11 +12,11 @@
     "measured_lead_times": 0,
     "first_seen_lead_times": 0,
     "tracked_x_sources_waiting": 20,
-    "retained_claim_observations": 459
+    "retained_claim_observations": 460
   },
   "provider_coverage": {
     "google_news": {
-      "articles": 200,
+      "articles": 206,
       "queries": 30,
       "successful_queries": 30
     },
@@ -36,20 +36,20 @@
       "source": "Google News / medya",
       "source_tier": "CHANNEL",
       "source_type": "media",
-      "observations": 456,
-      "scoreable_claims": 57,
+      "observations": 457,
+      "scoreable_claims": 58,
       "official_conversions": 1,
       "lead_hours": [],
       "first_seen_lead_hours": [],
       "lead_time_unavailable": 1,
       "matured_unconfirmed": 11,
-      "pending_claims": 45,
+      "pending_claims": 46,
       "unresolved_claims": 399,
       "status": "PARTIAL_MEASUREMENT",
       "score": 6.7,
       "average_lead_hours": null,
       "average_first_seen_lead_hours": null,
-      "official_conversion_rate_pct": 1.8,
+      "official_conversion_rate_pct": 1.7,
       "false_alarm_proxy_pct": 91.7
     },
     {
@@ -415,6 +415,26 @@
       "false_alarm_proxy_pct": null
     },
     {
+      "source": "FOTOMAÇ",
+      "source_tier": "MEDIA",
+      "source_type": "google_news",
+      "observations": 13,
+      "scoreable_claims": 3,
+      "official_conversions": 0,
+      "lead_hours": [],
+      "first_seen_lead_hours": [],
+      "lead_time_unavailable": 0,
+      "matured_unconfirmed": 0,
+      "pending_claims": 3,
+      "unresolved_claims": 10,
+      "status": "OBSERVING",
+      "score": null,
+      "average_lead_hours": null,
+      "average_first_seen_lead_hours": null,
+      "official_conversion_rate_pct": 0.0,
+      "false_alarm_proxy_pct": null
+    },
+    {
       "source": "Haberturk Spor",
       "source_tier": "MEDIA",
       "source_type": "rss",
@@ -427,26 +447,6 @@
       "matured_unconfirmed": 0,
       "pending_claims": 1,
       "unresolved_claims": 12,
-      "status": "OBSERVING",
-      "score": null,
-      "average_lead_hours": null,
-      "average_first_seen_lead_hours": null,
-      "official_conversion_rate_pct": 0.0,
-      "false_alarm_proxy_pct": null
-    },
-    {
-      "source": "FOTOMAÇ",
-      "source_tier": "MEDIA",
-      "source_type": "google_news",
-      "observations": 12,
-      "scoreable_claims": 2,
-      "official_conversions": 0,
-      "lead_hours": [],
-      "first_seen_lead_hours": [],
-      "lead_time_unavailable": 0,
-      "matured_unconfirmed": 0,
-      "pending_claims": 2,
-      "unresolved_claims": 10,
       "status": "OBSERVING",
       "score": null,
       "average_lead_hours": null,
@@ -2028,7 +2028,7 @@
     {
       "name": "Ertan Süzgün",
       "google_query": "Ertan Süzgün transfer",
-      "indexed_results": 2,
+      "indexed_results": 3,
       "query_error": null,
       "attributed_observations": 0,
       "scoreable_claims": 0,
