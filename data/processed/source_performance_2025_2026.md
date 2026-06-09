@@ -1,18 +1,18 @@
 # Erken Haber Kaynak Performansı
 
-- Transfer sinyali: 24
+- Transfer sinyali: 28
 - Resmi olaya dönüşen transfer: 3
 - Yayın zamanı bulunan resmi teyit: 1/3
 - İlk görülme zamanı bulunan resmi teyit: 3/3
-- Ölçülen kaynak: 10 / gözlenen kaynak: 69
+- Ölçülen kaynak: 10 / gözlenen kaynak: 70
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 0
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 460
+- Defterde korunan ilk iddia gözlemi: 463
 
 ## Kanal Kapsamı
 
-- Google News: 206 haber, 30/30 başarılı sorgu.
+- Google News: 196 haber, 30/30 başarılı sorgu.
 - Telegram: 6 mesaj, 8/8 erişilebilir kanal.
 - X: durum=MISSING_CREDENTIALS, gönderi=0, yapılandırılmış hesap=45.
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 457 | 58 | 1 | — | — | %91.7 | 6.7 | PARTIAL_MEASUREMENT |
+| Google News / medya | 460 | 60 | 1 | — | — | %92.3 | 6.2 | PARTIAL_MEASUREMENT |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -33,7 +33,7 @@
 |---|---:|---:|---:|---|
 | Yağız Sabuncuoğlu | 1 | 1 | 1 | PARTIAL_MEASUREMENT |
 | Ertan Süzgün | 3 | 0 | 0 | ATTRIBUTION_PENDING |
-| Sports Digitale | 0 | 0 | 0 | ATTRIBUTION_PENDING |
+| Sports Digitale | 2 | 0 | 0 | ATTRIBUTION_PENDING |
 | Yusuf Günaydın | 0 | 0 | 0 | ATTRIBUTION_PENDING |
 | Ekrem Konur | 0 | 0 | 0 | ATTRIBUTION_PENDING |
 
@@ -57,7 +57,7 @@
 | Turkmenportal.com | MEDIA | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Beşiktaş Haberleri | SECONDARY | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Yağız Sabuncuoğlu | ATTRIBUTED_MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
-| Fotomaç | MEDIA | 58 | 9 | 0 | — | — | — | — | OBSERVING |
+| Fotomaç | MEDIA | 60 | 10 | 0 | — | — | — | — | OBSERVING |
 | Sabah | MEDIA | 27 | 1 | 0 | — | — | — | — | OBSERVING |
 | Aksam Spor | MEDIA | 25 | 0 | 0 | — | — | — | — | OBSERVING |
 | NTVSpor | MEDIA | 21 | 3 | 0 | — | — | — | — | OBSERVING |
@@ -101,6 +101,7 @@
 | Gazete Gerçek | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Gunebakış | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Karadeniz Gazetesi | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
+| Kocaeli Barış Gazetesi | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | Konya Yeni Haber | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Mynet | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | NTV Haber | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
