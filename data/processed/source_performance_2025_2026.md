@@ -1,18 +1,18 @@
 # Erken Haber Kaynak Performansı
 
-- Transfer sinyali: 30
+- Transfer sinyali: 29
 - Resmi olaya dönüşen transfer: 3
 - Yayın zamanı bulunan resmi teyit: 1/3
 - İlk görülme zamanı bulunan resmi teyit: 3/3
-- Ölçülen kaynak: 10 / gözlenen kaynak: 73
+- Ölçülen kaynak: 10 / gözlenen kaynak: 74
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 0
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 494
+- Defterde korunan ilk iddia gözlemi: 500
 
 ## Kanal Kapsamı
 
-- Google News: 208 haber, 30/30 başarılı sorgu.
+- Google News: 207 haber, 30/30 başarılı sorgu.
 - Telegram: 6 mesaj, 8/8 erişilebilir kanal.
 - X: durum=MISSING_CREDENTIALS, gönderi=0, yapılandırılmış hesap=45.
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 491 | 60 | 1 | — | — | %92.3 | 6.2 | PARTIAL_MEASUREMENT |
+| Google News / medya | 497 | 60 | 1 | — | — | %92.3 | 6.2 | PARTIAL_MEASUREMENT |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -33,7 +33,7 @@
 |---|---:|---:|---:|---|
 | Yağız Sabuncuoğlu | 1 | 1 | 1 | PARTIAL_MEASUREMENT |
 | Ertan Süzgün | 3 | 0 | 0 | ATTRIBUTION_PENDING |
-| Sports Digitale | 0 | 0 | 0 | ATTRIBUTION_PENDING |
+| Sports Digitale | 2 | 0 | 0 | ATTRIBUTION_PENDING |
 | Yusuf Günaydın | 0 | 0 | 0 | ATTRIBUTION_PENDING |
 | Ekrem Konur | 0 | 0 | 0 | ATTRIBUTION_PENDING |
 
@@ -47,7 +47,7 @@
 
 | Kaynak | Katman | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---|
-| CNN Türk Spor | MEDIA | 10 | 2 | 1 | — | — | %0.0 | 80.0 | PARTIAL_MEASUREMENT |
+| CNN Türk Spor | MEDIA | 11 | 2 | 1 | — | — | %0.0 | 80.0 | PARTIAL_MEASUREMENT |
 | Takvim | MEDIA | 53 | 4 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Hürriyet | MEDIA | 50 | 4 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Milliyet | MEDIA | 26 | 4 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
@@ -57,7 +57,7 @@
 | Turkmenportal.com | MEDIA | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Beşiktaş Haberleri | SECONDARY | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Yağız Sabuncuoğlu | ATTRIBUTED_MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
-| Fotomaç | MEDIA | 64 | 10 | 0 | — | — | — | — | OBSERVING |
+| Fotomaç | MEDIA | 66 | 10 | 0 | — | — | — | — | OBSERVING |
 | Sabah | MEDIA | 32 | 1 | 0 | — | — | — | — | OBSERVING |
 | Aksam Spor | MEDIA | 26 | 0 | 0 | — | — | — | — | OBSERVING |
 | NTVSpor | MEDIA | 21 | 3 | 0 | — | — | — | — | OBSERVING |
@@ -67,10 +67,10 @@
 | Ajansspor | MEDIA | 9 | 3 | 0 | — | — | — | — | OBSERVING |
 | GZT | MEDIA | 9 | 0 | 0 | — | — | — | — | OBSERVING |
 | Son Dakika | MEDIA | 9 | 1 | 0 | — | — | — | — | OBSERVING |
+| SonDakika | MEDIA | 8 | 1 | 0 | — | — | — | — | OBSERVING |
 | beinsports.com.tr | MEDIA | 8 | 0 | 0 | — | — | — | — | OBSERVING |
+| Anadolu Ajansı Spor | AGENCY | 7 | 0 | 0 | — | — | — | — | OBSERVING |
 | Haberler | MEDIA | 7 | 1 | 0 | — | — | — | — | OBSERVING |
-| SonDakika | MEDIA | 7 | 1 | 0 | — | — | — | — | OBSERVING |
-| Anadolu Ajansı Spor | AGENCY | 6 | 0 | 0 | — | — | — | — | OBSERVING |
 | Taka Gazete | MEDIA | 6 | 0 | 0 | — | — | — | — | OBSERVING |
 | Habertürk | MEDIA | 5 | 1 | 0 | — | — | — | — | OBSERVING |
 | Yeniçağ Gazetesi | MEDIA | 5 | 0 | 0 | — | — | — | — | OBSERVING |
@@ -113,6 +113,7 @@
 | T24 | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Transfer Haber | SECONDARY | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Türkiye Gazetesi | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
+| Ulusal Kanal | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Vietnam.vn | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | Yeni Asır | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | politikam.com | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
