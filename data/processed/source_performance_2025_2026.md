@@ -1,6 +1,6 @@
 # Erken Haber Kaynak Performansı
 
-- Transfer sinyali: 32
+- Transfer sinyali: 23
 - Resmi olaya dönüşen transfer: 3
 - Yayın zamanı bulunan resmi teyit: 1/3
 - İlk görülme zamanı bulunan resmi teyit: 3/3
@@ -8,11 +8,11 @@
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 0
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 528
+- Defterde korunan ilk iddia gözlemi: 532
 
 ## Kanal Kapsamı
 
-- Google News: 208 haber, 30/30 başarılı sorgu.
+- Google News: 210 haber, 30/30 başarılı sorgu.
 - Telegram: 6 mesaj, 8/8 erişilebilir kanal.
 - X: durum=MISSING_CREDENTIALS, gönderi=0, yapılandırılmış hesap=45.
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 525 | 63 | 1 | — | — | %92.9 | 5.7 | PARTIAL_MEASUREMENT |
+| Google News / medya | 529 | 63 | 1 | — | — | %92.9 | 5.7 | PARTIAL_MEASUREMENT |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -61,18 +61,18 @@
 | Fotomaç | MEDIA | 68 | 10 | 0 | — | — | — | — | OBSERVING |
 | Sabah | MEDIA | 33 | 1 | 0 | — | — | — | — | OBSERVING |
 | Aksam Spor | MEDIA | 28 | 2 | 0 | — | — | — | — | OBSERVING |
-| NTVSpor | MEDIA | 21 | 3 | 0 | — | — | — | — | OBSERVING |
-| Haberturk Spor | MEDIA | 18 | 1 | 0 | — | — | — | — | OBSERVING |
+| NTVSpor | MEDIA | 22 | 3 | 0 | — | — | — | — | OBSERVING |
+| Haberturk Spor | MEDIA | 19 | 1 | 0 | — | — | — | — | OBSERVING |
 | A SPOR | MEDIA | 15 | 4 | 0 | — | — | — | — | OBSERVING |
 | GZT | MEDIA | 10 | 0 | 0 | — | — | — | — | OBSERVING |
 | Ajansspor | MEDIA | 9 | 3 | 0 | — | — | — | — | OBSERVING |
 | Son Dakika | MEDIA | 9 | 1 | 0 | — | — | — | — | OBSERVING |
 | SonDakika | MEDIA | 9 | 1 | 0 | — | — | — | — | OBSERVING |
+| Haberler | MEDIA | 8 | 1 | 0 | — | — | — | — | OBSERVING |
 | beinsports.com.tr | MEDIA | 8 | 0 | 0 | — | — | — | — | OBSERVING |
 | Anadolu Ajansı Spor | AGENCY | 7 | 0 | 0 | — | — | — | — | OBSERVING |
-| Haberler | MEDIA | 7 | 1 | 0 | — | — | — | — | OBSERVING |
+| Habertürk | MEDIA | 6 | 1 | 0 | — | — | — | — | OBSERVING |
 | Taka Gazete | MEDIA | 6 | 0 | 0 | — | — | — | — | OBSERVING |
-| Habertürk | MEDIA | 5 | 1 | 0 | — | — | — | — | OBSERVING |
 | Yeniçağ Gazetesi | MEDIA | 5 | 0 | 0 | — | — | — | — | OBSERVING |
 | Haber 7 | MEDIA | 4 | 0 | 0 | — | — | — | — | OBSERVING |
 | HaberTS | MEDIA | 4 | 0 | 0 | — | — | — | — | OBSERVING |
