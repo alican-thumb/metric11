@@ -1,18 +1,18 @@
 # Erken Haber Kaynak Performansı
 
-- Transfer sinyali: 23
+- Transfer sinyali: 22
 - Resmi olaya dönüşen transfer: 3
 - Yayın zamanı bulunan resmi teyit: 1/3
 - İlk görülme zamanı bulunan resmi teyit: 3/3
-- Ölçülen kaynak: 11 / gözlenen kaynak: 77
+- Ölçülen kaynak: 11 / gözlenen kaynak: 78
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 0
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 532
+- Defterde korunan ilk iddia gözlemi: 535
 
 ## Kanal Kapsamı
 
-- Google News: 210 haber, 30/30 başarılı sorgu.
+- Google News: 219 haber, 30/30 başarılı sorgu.
 - Telegram: 6 mesaj, 8/8 erişilebilir kanal.
 - X: durum=MISSING_CREDENTIALS, gönderi=0, yapılandırılmış hesap=45.
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 529 | 63 | 1 | — | — | %92.9 | 5.7 | PARTIAL_MEASUREMENT |
+| Google News / medya | 532 | 63 | 1 | — | — | %92.9 | 5.7 | PARTIAL_MEASUREMENT |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -58,12 +58,12 @@
 | Turkmenportal.com | MEDIA | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Beşiktaş Haberleri | SECONDARY | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Yağız Sabuncuoğlu | ATTRIBUTED_MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
-| Fotomaç | MEDIA | 68 | 10 | 0 | — | — | — | — | OBSERVING |
+| Fotomaç | MEDIA | 69 | 10 | 0 | — | — | — | — | OBSERVING |
 | Sabah | MEDIA | 33 | 1 | 0 | — | — | — | — | OBSERVING |
 | Aksam Spor | MEDIA | 28 | 2 | 0 | — | — | — | — | OBSERVING |
 | NTVSpor | MEDIA | 22 | 3 | 0 | — | — | — | — | OBSERVING |
 | Haberturk Spor | MEDIA | 19 | 1 | 0 | — | — | — | — | OBSERVING |
-| A SPOR | MEDIA | 15 | 4 | 0 | — | — | — | — | OBSERVING |
+| A SPOR | MEDIA | 16 | 4 | 0 | — | — | — | — | OBSERVING |
 | GZT | MEDIA | 10 | 0 | 0 | — | — | — | — | OBSERVING |
 | Ajansspor | MEDIA | 9 | 3 | 0 | — | — | — | — | OBSERVING |
 | Son Dakika | MEDIA | 9 | 1 | 0 | — | — | — | — | OBSERVING |
@@ -117,6 +117,7 @@
 | Türkiye Gazetesi | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Ulusal Kanal | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Vietnam.vn | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
+| Yeni Alanya | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Yeni Asır | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Yeni Çağrı Gazetesi | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | politikam.com | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |

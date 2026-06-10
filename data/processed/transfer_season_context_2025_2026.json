@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-06-10T20:48:04.094532+00:00",
+  "generated_at": "2026-06-10T23:52:04.697780+00:00",
   "season": "2025_2026",
   "summary": {
     "free_agents_count": 261,
     "final_year_count": 180,
-    "transfer_signals_count": 23,
+    "transfer_signals_count": 22,
     "transfer_status_counts": {
       "OFFICIAL": 0,
       "CORROBORATED": 0,
       "RUMOR": 2,
-      "REVIEW_REQUIRED": 21
+      "REVIEW_REQUIRED": 20
     },
     "promotion_events_count": 1,
     "free_agent_total_market_value_eur": 475250000
@@ -548,6 +548,47 @@
     {
       "player_name": null,
       "from_club": null,
+      "to_club": "Beşiktaş",
+      "signal_type": "departure",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "7a0b56a030ee",
+      "title": "Beşiktaş Gain sahasında Bahçeşehir'i yenerek final serisine adını yazdırdı!",
+      "link": "https://www.fotomac.com.tr/besiktas/2026/06/10/besiktas-gain-sahasinda-bahcesehiri-yenerek-final-serisine-adini-yazdirdi",
+      "source": "Fotomaç",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-10T22:03:24+03:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Fotomaç"
+      ],
+      "evidence": [
+        {
+          "source": "Fotomaç",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Beşiktaş Gain sahasında Bahçeşehir'i yenerek final serisine adını yazdırdı!",
+          "link": "https://www.fotomac.com.tr/besiktas/2026/06/10/besiktas-gain-sahasinda-bahcesehiri-yenerek-final-serisine-adini-yazdirdi",
+          "published_at": "2026-06-10T22:03:24+03:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": null,
+      "from_club": null,
       "to_club": "Kasımpaşa",
       "signal_type": "official_transfer",
       "window": "summer_2026",
@@ -567,10 +608,11 @@
       "entity_confidence": "LOW",
       "verification_status": "REVIEW_REQUIRED",
       "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 2,
+      "source_count": 3,
       "sources": [
         "Haberturk Spor",
         "Habertürk",
+        "A SPOR",
         "Haberler"
       ],
       "evidence": [
@@ -594,6 +636,17 @@
           "title": "Kasımpaşa, Elson Mendes'i transfer etti - Habertürk",
           "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNSU1Zd0E1NzVpZko4X3prNXRIa2I0ME9fNkg3bmlOYzJHVnMzMjVPX1pic0hNVXVWNjRtOVJtUlJLMEpPbDBLNkt5V2xPVmRrbERfSk1FY2tYbUhwQ0tHeFlwU2dkMDJ2ZGVSN1pxZEZzRXRjcThOY1pYejRTRFFpeU1YYw?oc=5",
           "published_at": "2026-06-10T17:32:42+00:00",
+          "first_observed_at": null
+        },
+        {
+          "source": "A SPOR",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Kasımpaşa transfer",
+          "title": "Kasımpaşa, Elson Mendes'i transfer etti - A SPOR",
+          "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQT2VvSHZzRTlEdGcxVnNKbjZWSUd3N1FSdTlsRXNNNDA5Rkp3SVNXNnFnVFl0X19GeXJLZHhUUlg2QnhvX0ZSMUxZUWM1QnRObFZkQkFBcThRdXRaVVBPajVYc1E4VFpBMVZ3bXFxTkNxTzlIdVNxN1piRGtHeDgxc05BeURTZXpBSXIyQ3hJSEnSAZABQVVfeXFMUE9lb0h2c0U5RHRnMVZzSm42VklHdzdRUnU5bEVzTTQwOUZKd0lTVzZxZ1RZdF9fRnlyS2R4VFJYNkJ4b19GUjFMWVFjNUJ0TmxWZEJBQXE4UXV0WlVQT2o1WHNROFRaQTFWd21xcU5DcU85SHVTcTdaYkRrR3g4MXNOQXlEU2V6QUlyMkN4SUhJ?oc=5",
+          "published_at": "2026-06-10T17:28:24+00:00",
           "first_observed_at": null
         },
         {
@@ -689,6 +742,47 @@
           "title": "Kocaelispor’da Gökhan Değirmenci ile yollar ayrıldı",
           "link": "https://www.haberturk.com/kocaelisporda-gokhan-degirmenci-ile-yollar-ayrildi-3890773-spor",
           "published_at": "2026-06-10T16:07:58+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": null,
+      "from_club": "Galatasaray",
+      "to_club": "Trabzonspor",
+      "signal_type": "interest",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "439427dec9c6",
+      "title": "Galatasaray ve Trabzonspor Aynı İsmin Peşinde - Yeni Alanya",
+      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE4wRmtkWER6eV9sdmpSY2VwSUNUd3ZTR1A1UXRwU18ycm1yWlNDMElKYmthcWF0dDBDdlpMVDdIaEdGWEdtSUx4NlB2ay1RQWl0blFqdDVZQjF3WEZFMFBWLUw1Rm9VZE93dFdXbGFTMzBvQzltc2JwZHRJam7SAYIBQVVfeXFMTmctUGw5UEIteTBITzBjSi1WQXB1bkFnSlNKODF5aUxBUlBFX0FzTXlPSzAxamdEUVFQMDNLbmNIcThEUjRGX0g4RElXZF9ZbUwzZlhlV2YzRFFpTENUZGJhLXZNVmR5VS1UM09BRGxiazQ3VFhiLTlxTWlTRlgzcjQxQQ?oc=5",
+      "source": "Yeni Alanya",
+      "source_type": "google_news",
+      "account_type": null,
+      "query": "Trabzonspor transfer",
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-10T16:00:00+00:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Yeni Alanya"
+      ],
+      "evidence": [
+        {
+          "source": "Yeni Alanya",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Trabzonspor transfer",
+          "title": "Galatasaray ve Trabzonspor Aynı İsmin Peşinde - Yeni Alanya",
+          "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE4wRmtkWER6eV9sdmpSY2VwSUNUd3ZTR1A1UXRwU18ycm1yWlNDMElKYmthcWF0dDBDdlpMVDdIaEdGWEdtSUx4NlB2ay1RQWl0blFqdDVZQjF3WEZFMFBWLUw1Rm9VZE93dFdXbGFTMzBvQzltc2JwZHRJam7SAYIBQVVfeXFMTmctUGw5UEIteTBITzBjSi1WQXB1bkFnSlNKODF5aUxBUlBFX0FzTXlPSzAxamdEUVFQMDNLbmNIcThEUjRGX0g4RElXZF9ZbUwzZlhlV2YzRFFpTENUZGJhLXZNVmR5VS1UM09BRGxiazQ3VFhiLTlxTWlTRlgzcjQxQQ?oc=5",
+          "published_at": "2026-06-10T16:00:00+00:00",
           "first_observed_at": null
         }
       ],
@@ -882,7 +976,8 @@
       "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
       "source_count": 1,
       "sources": [
-        "CNN Türk Spor"
+        "CNN Türk Spor",
+        "CNN Türk"
       ],
       "evidence": [
         {
@@ -895,46 +990,16 @@
           "link": "https://www.cnnturk.com/spor/futbol/arda-turanin-shakhtari-fenerbahcenin-eski-futbolcusunu-transfer-etti-3429109",
           "published_at": "2026-06-10T11:47:11+00:00",
           "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": null,
-      "to_club": "Fenerbahçe",
-      "signal_type": "official_transfer",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "548ac679f35a",
-      "title": "Arda Turan Fenerbahçe'nin eski yıldızını transfer etti - SonDakika",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQdy1tTW0zSmYwMWRoXzBCQnUzV3BCS1hRRGRNc3AzazFfSUdyLWJyY3dhYjYyeHM2SzhwWl9jY2NKRkVjaUtZZ1pVSXFQX1dkaWlTYTFaTjNoVHJpY1NydU8zc0hZV0U3VTRaNExmX3Q4QjBkTUlaYVM5NElvXzhSaHEtM1E5eTJVQTF6SXoxbGV0M2o4YWUzcDFrb9IBmgFBVV95cUxQeHhoT25IX1FEYTd5T0ZndlloTTRJdWpobVVOUUdzc3dRdlgxVTR1Z2hmQk5teDZ4cHVCZmVnM3dsUzc1MlIyTUx2Qm9TTHVDa3RqZzdpZkpwVGFudUx5UjZqMWxRd0Zhai00Q3gwUlplRktDT1duVm9UWWUtYUhYS0VoMjY1M1g0OFhtN0xvSV9kN1BmVkJvSWlR?oc=5",
-      "source": "SonDakika",
-      "source_type": "google_news",
-      "account_type": null,
-      "query": "Fenerbahçe transfer",
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-10T11:04:39+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "SonDakika"
-      ],
-      "evidence": [
+        },
         {
-          "source": "SonDakika",
+          "source": "CNN Türk",
           "source_tier": "MEDIA",
           "source_type": "google_news",
           "account_type": null,
           "query": "Fenerbahçe transfer",
-          "title": "Arda Turan Fenerbahçe'nin eski yıldızını transfer etti - SonDakika",
-          "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQdy1tTW0zSmYwMWRoXzBCQnUzV3BCS1hRRGRNc3AzazFfSUdyLWJyY3dhYjYyeHM2SzhwWl9jY2NKRkVjaUtZZ1pVSXFQX1dkaWlTYTFaTjNoVHJpY1NydU8zc0hZV0U3VTRaNExmX3Q4QjBkTUlaYVM5NElvXzhSaHEtM1E5eTJVQTF6SXoxbGV0M2o4YWUzcDFrb9IBmgFBVV95cUxQeHhoT25IX1FEYTd5T0ZndlloTTRJdWpobVVOUUdzc3dRdlgxVTR1Z2hmQk5teDZ4cHVCZmVnM3dsUzc1MlIyTUx2Qm9TTHVDa3RqZzdpZkpwVGFudUx5UjZqMWxRd0Zhai00Q3gwUlplRktDT1duVm9UWWUtYUhYS0VoMjY1M1g0OFhtN0xvSV9kN1BmVkJvSWlR?oc=5",
-          "published_at": "2026-06-10T11:04:39+00:00",
+          "title": "Arda Turan'ın Shakhtar'ı, Fenerbahçe'nin eski futbolcusunu transfer etti - CNN Türk",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOUjBaa3h4UE5sM3BOMWp4NEVwQXRJYXA4eWRMMUw2LU0wOTI5WTBrd0JXa29heWtTdHN3em1TXzlQUWF2X0s0NjBGLWZ4U0pFbHJOM1NOaHR6S3FMejVuVVRnTFk1V1pLcDNfQlZ0cHRlVXZ2aU1XWF9OQWMxazUwVzdfWlRGSDJNa3RsZ1gxOUhnM1ZjdkRjck1Mc2R2ZnhxRUIyRGNXR1lMZW5wdjItdDBR?oc=5",
+          "published_at": "2026-06-10T08:06:00+00:00",
           "first_observed_at": null
         }
       ],
@@ -1079,88 +1144,6 @@
       "player_name": null,
       "from_club": null,
       "to_club": "Fenerbahçe",
-      "signal_type": "official_transfer",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "901cd63c134c",
-      "title": "Arda Turan, Fenerbahçeli eski ismi transfer etti! Shakhtar'dan resmi açıklama - Fanatik",
-      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxORm5Tb0pRODZkdUIzWEgxSlg4b1I4bHBlemszSEZmNUtQS1hGbWlPTUlBU0V6Y2YxQndzQ2llLW85T0VHcFh1YXcyelJENzg5WjZoV2xHTzZwMThneFRucmN0aTFLZVZySlA4ZEFJOFFCZWROS2VQai1aSjlvMXAzQXZaVXRuMkpwaXhrMzhPZDRiMHF1SEZoUmV4LVpxVVFEdkZWb050RGdSTUhBQzZYRmpTVm9UMGpjbmRNWWhpNmVLSDg?oc=5",
-      "source": "Fanatik",
-      "source_type": "google_news",
-      "account_type": null,
-      "query": "Fenerbahçe transfer",
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-10T07:45:00+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Fanatik"
-      ],
-      "evidence": [
-        {
-          "source": "Fanatik",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Fenerbahçe transfer",
-          "title": "Arda Turan, Fenerbahçeli eski ismi transfer etti! Shakhtar'dan resmi açıklama - Fanatik",
-          "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxORm5Tb0pRODZkdUIzWEgxSlg4b1I4bHBlemszSEZmNUtQS1hGbWlPTUlBU0V6Y2YxQndzQ2llLW85T0VHcFh1YXcyelJENzg5WjZoV2xHTzZwMThneFRucmN0aTFLZVZySlA4ZEFJOFFCZWROS2VQai1aSjlvMXAzQXZaVXRuMkpwaXhrMzhPZDRiMHF1SEZoUmV4LVpxVVFEdkZWb050RGdSTUhBQzZYRmpTVm9UMGpjbmRNWWhpNmVLSDg?oc=5",
-          "published_at": "2026-06-10T07:45:00+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": null,
-      "to_club": "Fenerbahçe",
-      "signal_type": "official_transfer",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "d8833cbf658a",
-      "title": "Fenerbahçe'nin eski yıldızı 1. Lig takımına transfer oldu - Gazete Vatan",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQZS1DWENXQzBuRDk5cW9jLUFTTk9aamJMaGdNS0VGV3VfNFNzbG5LTXh3MUJFQlVHRmhrVlJ1SkZqMmxrc2x1ZF85MDBXaFlOck1WSFRINk5jN1Y1dm1xbnBXYjhTMTU1c296QkpabndnRlJsXzM3b2Y0XzZLQnN2WFZ3UDB1aHFVcjRTcVhmUTZJSnBFUURGX29NcV9wOHFMVVE?oc=5",
-      "source": "Gazete Vatan",
-      "source_type": "google_news",
-      "account_type": null,
-      "query": "Fenerbahçe transfer",
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-10T06:52:23+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Gazete Vatan"
-      ],
-      "evidence": [
-        {
-          "source": "Gazete Vatan",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Fenerbahçe transfer",
-          "title": "Fenerbahçe'nin eski yıldızı 1. Lig takımına transfer oldu - Gazete Vatan",
-          "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQZS1DWENXQzBuRDk5cW9jLUFTTk9aamJMaGdNS0VGV3VfNFNzbG5LTXh3MUJFQlVHRmhrVlJ1SkZqMmxrc2x1ZF85MDBXaFlOck1WSFRINk5jN1Y1dm1xbnBXYjhTMTU1c296QkpabndnRlJsXzM3b2Y0XzZLQnN2WFZ3UDB1aHFVcjRTcVhmUTZJSnBFUURGX29NcV9wOHFMVVE?oc=5",
-          "published_at": "2026-06-10T06:52:23+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": null,
-      "to_club": "Fenerbahçe",
       "signal_type": "interest",
       "window": "summer_2026",
       "confidence": "LOW",
@@ -1193,6 +1176,49 @@
           "title": "Fenerbahçe'de 3 transfer 1 ayrılık! Kadıköy'e yıldız yağacak",
           "link": "https://www.takvim.com.tr/fenerbahce/2026/06/10/fenerbahcede-3-transfer-1-ayrilik-kadikoye-yildiz-yagacak",
           "published_at": "2026-06-10T09:33:58+03:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": "VICTOR JAMES OSIMHEN",
+      "from_club": "GALATASARAY A.Ş.",
+      "to_club": null,
+      "transfer_type": "permanent",
+      "window": "summer_2026",
+      "signal_type": "departure",
+      "confidence": "LOW",
+      "tm_market_value_eur": 75000000,
+      "direction_quality": "TARGET_UNRESOLVED",
+      "article_id": "de93be5c9237",
+      "title": "Osimhen Galatasaray'dan ayrılacak mı? Dursun Özbek açıkladı",
+      "link": "https://www.fotomac.com.tr/galatasaray/2026/06/10/osimhen-galatasaraydan-ayrilacak-mi-dursun-ozbek-acikladi",
+      "source": "Fotomaç",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-10T09:14:00+03:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "HIGH",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Fotomaç"
+      ],
+      "evidence": [
+        {
+          "source": "Fotomaç",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Osimhen Galatasaray'dan ayrılacak mı? Dursun Özbek açıkladı",
+          "link": "https://www.fotomac.com.tr/galatasaray/2026/06/10/osimhen-galatasaraydan-ayrilacak-mi-dursun-ozbek-acikladi",
+          "published_at": "2026-06-10T09:14:00+03:00",
           "first_observed_at": null
         }
       ],
@@ -1283,20 +1309,20 @@
     {
       "player_name": null,
       "from_club": null,
-      "to_club": "Galatasaray",
-      "signal_type": "transfer_fee",
+      "to_club": "Göztepe",
+      "signal_type": "transfer_negotiation",
       "window": "summer_2026",
       "confidence": "LOW",
       "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "94199cd10c23",
-      "title": "Galatasaray'dan Gedson sürprizi!",
-      "link": "https://www.haberturk.com/galatasaray-dan-gedson-fernandes-surprizi-3890366-spor",
-      "source": "Haberturk Spor",
-      "source_type": "rss",
+      "article_id": "d54ee80568fc",
+      "title": "İzmir Göztepe, Brezilya Serie A'dan Mateo Ponte ile Transfer Görüşmelerini Yapıyor - Mersin Haber",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNNHBrcmZ0NDJaaTdvWS1MT012d1RvMlhfUVFDR3E3dGptRDJzTmpkNlUxa0I0RTNPY08tdVdoQ2EtdWNxaDFDRTB5QXN6dl9ZeXBSb21mZ1dtM1pERFRlUjJ5SS04eUxaNTVLVVgyaHdfZl9iVDZUVGZITWpnbzhJWTJvMzNFVmxqeTVSZk1QTDdqRWhUOWQ5SmpDajBqVTQ0bnZyVHMzX1Fna21rT29SZmRCbTBmTnZ4TUJNUVRn0gFXQVVfeXFMTlRZNjB5ekpxLThxZ0lmZUcyZHBsMDVvRlRZbndXTTNZX1VrY2NYYmhNMmRrOEF5d05xMGFSbk9XQ2ZuVDJ0UXQ5MDBSa0pEOTJTZjVrTlJv?oc=5",
+      "source": "Mersin Haber",
+      "source_type": "google_news",
       "account_type": null,
-      "query": null,
+      "query": "Göztepe transfer",
       "source_tier": "MEDIA",
-      "published_at": "2026-06-09T07:56:58+00:00",
+      "published_at": "2026-06-09T07:39:00+00:00",
       "first_observed_at": null,
       "summary_tr": "",
       "entity_confidence": "LOW",
@@ -1304,18 +1330,18 @@
       "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
       "source_count": 1,
       "sources": [
-        "Haberturk Spor"
+        "Mersin Haber"
       ],
       "evidence": [
         {
-          "source": "Haberturk Spor",
+          "source": "Mersin Haber",
           "source_tier": "MEDIA",
-          "source_type": "rss",
+          "source_type": "google_news",
           "account_type": null,
-          "query": null,
-          "title": "Galatasaray'dan Gedson sürprizi!",
-          "link": "https://www.haberturk.com/galatasaray-dan-gedson-fernandes-surprizi-3890366-spor",
-          "published_at": "2026-06-09T07:56:58+00:00",
+          "query": "Göztepe transfer",
+          "title": "İzmir Göztepe, Brezilya Serie A'dan Mateo Ponte ile Transfer Görüşmelerini Yapıyor - Mersin Haber",
+          "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNNHBrcmZ0NDJaaTdvWS1MT012d1RvMlhfUVFDR3E3dGptRDJzTmpkNlUxa0I0RTNPY08tdVdoQ2EtdWNxaDFDRTB5QXN6dl9ZeXBSb21mZ1dtM1pERFRlUjJ5SS04eUxaNTVLVVgyaHdfZl9iVDZUVGZITWpnbzhJWTJvMzNFVmxqeTVSZk1QTDdqRWhUOWQ5SmpDajBqVTQ0bnZyVHMzX1Fna21rT29SZmRCbTBmTnZ4TUJNUVRn0gFXQVVfeXFMTlRZNjB5ekpxLThxZ0lmZUcyZHBsMDVvRlRZbndXTTNZX1VrY2NYYmhNMmRrOEF5d05xMGFSbk9XQ2ZuVDJ0UXQ5MDBSa0pEOTJTZjVrTlJv?oc=5",
+          "published_at": "2026-06-09T07:39:00+00:00",
           "first_observed_at": null
         }
       ],
@@ -1357,47 +1383,6 @@
           "title": "Trabzonspor bir transferi daha bitirdi: Noah Saviolo'nun maliyeti belli oldu",
           "link": "https://www.takvim.com.tr/trabzonspor/2026/06/08/trabzonspor-1-transferi-daha-bitirdi-noah-saviolonun-maliyeti-belli-oldu",
           "published_at": "2026-06-08T20:12:14+03:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": null,
-      "to_club": "Göztepe",
-      "signal_type": "official_transfer",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "d482c5119f8c",
-      "title": "Göztepe Kadın Voleybol Takımı, Rebecca Latham'ı transfer etti - Ege'de Sonsöz",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPNDd5Njd0NTEwMVZxdFpQTF9Cb2JOSnlLTzJkV1d6MjBBSU9Tc0ZyQ1dyX1FwNmJwMmVkSDZxdVhuS2pWYUt6VTk4ZVRwd3dkZHg5aHIyLVpSME8wSzhNeDFLdEhzcDNKcGdPSnFqN3h0NHd2MEJQMzNabXgtODQ4SkpnZmRLTG5qRzVBdllkOWTSAZYBQVVfeXFMTlk3MW9oS251b3hZWkR5RWk2dU5kYUlONVU3VXYyeGNLQWR3d0FtZFJlMFVGUDVrcklpYTNZWnhKOEdBSmliRWVHMmRsVDcxb0drRUNhMW41dS1PV3kzOXRUN0VFMHEtMTdkYmdXZXpKd2NobGZNOV92Wi1EbWx0YklSQ1JxTjZiNENFa0liYVNZNGswZGl3?oc=5",
-      "source": "Ege'de Sonsöz",
-      "source_type": "google_news",
-      "account_type": null,
-      "query": "Göztepe transfer",
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-08T15:21:00+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Ege'de Sonsöz"
-      ],
-      "evidence": [
-        {
-          "source": "Ege'de Sonsöz",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Göztepe transfer",
-          "title": "Göztepe Kadın Voleybol Takımı, Rebecca Latham'ı transfer etti - Ege'de Sonsöz",
-          "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPNDd5Njd0NTEwMVZxdFpQTF9Cb2JOSnlLTzJkV1d6MjBBSU9Tc0ZyQ1dyX1FwNmJwMmVkSDZxdVhuS2pWYUt6VTk4ZVRwd3dkZHg5aHIyLVpSME8wSzhNeDFLdEhzcDNKcGdPSnFqN3h0NHd2MEJQMzNabXgtODQ4SkpnZmRLTG5qRzVBdllkOWTSAZYBQVVfeXFMTlk3MW9oS251b3hZWkR5RWk2dU5kYUlONVU3VXYyeGNLQWR3d0FtZFJlMFVGUDVrcklpYTNZWnhKOEdBSmliRWVHMmRsVDcxb0drRUNhMW41dS1PV3kzOXRUN0VFMHEtMTdkYmdXZXpKd2NobGZNOV92Wi1EbWx0YklSQ1JxTjZiNENFa0liYVNZNGswZGl3?oc=5",
-          "published_at": "2026-06-08T15:21:00+00:00",
           "first_observed_at": null
         }
       ],
