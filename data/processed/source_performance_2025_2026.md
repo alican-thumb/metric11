@@ -1,6 +1,6 @@
 # Erken Haber Kaynak Performansı
 
-- Transfer sinyali: 23
+- Transfer sinyali: 30
 - Resmi olaya dönüşen transfer: 3
 - Yayın zamanı bulunan resmi teyit: 1/3
 - İlk görülme zamanı bulunan resmi teyit: 3/3
@@ -8,11 +8,11 @@
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 0
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 556
+- Defterde korunan ilk iddia gözlemi: 560
 
 ## Kanal Kapsamı
 
-- Google News: 199 haber, 30/30 başarılı sorgu.
+- Google News: 225 haber, 30/30 başarılı sorgu.
 - Telegram: 6 mesaj, 8/8 erişilebilir kanal.
 - X: durum=MISSING_CREDENTIALS, gönderi=0, yapılandırılmış hesap=45.
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 553 | 66 | 1 | — | — | %94.4 | 4.4 | PARTIAL_MEASUREMENT |
+| Google News / medya | 557 | 66 | 1 | — | — | %94.4 | 4.4 | PARTIAL_MEASUREMENT |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -33,7 +33,7 @@
 |---|---:|---:|---:|---|
 | Yağız Sabuncuoğlu | 1 | 1 | 1 | PARTIAL_MEASUREMENT |
 | Ertan Süzgün | 2 | 0 | 0 | ATTRIBUTION_PENDING |
-| Sports Digitale | 1 | 0 | 0 | ATTRIBUTION_PENDING |
+| Sports Digitale | 0 | 0 | 0 | ATTRIBUTION_PENDING |
 | Yusuf Günaydın | 0 | 0 | 0 | ATTRIBUTION_PENDING |
 | Ekrem Konur | 0 | 0 | 0 | ATTRIBUTION_PENDING |
 
@@ -61,15 +61,15 @@
 | Beşiktaş Haberleri | SECONDARY | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Karadeniz Gazetesi | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Yağız Sabuncuoğlu | ATTRIBUTED_MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
-| Sabah | MEDIA | 35 | 1 | 0 | — | — | — | — | OBSERVING |
-| Aksam Spor | MEDIA | 30 | 2 | 0 | — | — | — | — | OBSERVING |
-| NTVSpor | MEDIA | 23 | 3 | 0 | — | — | — | — | OBSERVING |
+| Sabah | MEDIA | 36 | 1 | 0 | — | — | — | — | OBSERVING |
+| Aksam Spor | MEDIA | 31 | 2 | 0 | — | — | — | — | OBSERVING |
+| NTVSpor | MEDIA | 24 | 3 | 0 | — | — | — | — | OBSERVING |
 | Haberturk Spor | MEDIA | 20 | 2 | 0 | — | — | — | — | OBSERVING |
 | GZT | MEDIA | 11 | 0 | 0 | — | — | — | — | OBSERVING |
 | Son Dakika | MEDIA | 10 | 1 | 0 | — | — | — | — | OBSERVING |
 | SonDakika | MEDIA | 10 | 1 | 0 | — | — | — | — | OBSERVING |
 | Ajansspor | MEDIA | 9 | 3 | 0 | — | — | — | — | OBSERVING |
-| Haberler | MEDIA | 8 | 1 | 0 | — | — | — | — | OBSERVING |
+| Haberler | MEDIA | 9 | 1 | 0 | — | — | — | — | OBSERVING |
 | beinsports.com.tr | MEDIA | 8 | 0 | 0 | — | — | — | — | OBSERVING |
 | Anadolu Ajansı Spor | AGENCY | 7 | 0 | 0 | — | — | — | — | OBSERVING |
 | Taka Gazete | MEDIA | 7 | 1 | 0 | — | — | — | — | OBSERVING |
