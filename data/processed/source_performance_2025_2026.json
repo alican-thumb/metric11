@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-11T20:37:20.678798+00:00",
+  "generated_at": "2026-06-11T23:55:27.327020+00:00",
   "season": "2025_2026",
   "maturity_days": 14,
   "summary": {
-    "transfer_signals": 25,
+    "transfer_signals": 30,
     "official_events": 3,
     "official_events_with_timestamp": 1,
     "official_events_with_first_observed_timestamp": 3,
@@ -12,11 +12,11 @@
     "measured_lead_times": 0,
     "first_seen_lead_times": 0,
     "tracked_x_sources_waiting": 20,
-    "retained_claim_observations": 565
+    "retained_claim_observations": 566
   },
   "provider_coverage": {
     "google_news": {
-      "articles": 230,
+      "articles": 228,
       "queries": 30,
       "successful_queries": 30
     },
@@ -36,14 +36,14 @@
       "source": "Google News / medya",
       "source_tier": "CHANNEL",
       "source_type": "media",
-      "observations": 562,
-      "scoreable_claims": 67,
+      "observations": 563,
+      "scoreable_claims": 68,
       "official_conversions": 1,
       "lead_hours": [],
       "first_seen_lead_hours": [],
       "lead_time_unavailable": 1,
       "matured_unconfirmed": 17,
-      "pending_claims": 49,
+      "pending_claims": 50,
       "unresolved_claims": 495,
       "status": "PARTIAL_MEASUREMENT",
       "score": 4.4,
@@ -835,6 +835,26 @@
       "false_alarm_proxy_pct": null
     },
     {
+      "source": "Yeni Alanya",
+      "source_tier": "MEDIA",
+      "source_type": "google_news",
+      "observations": 3,
+      "scoreable_claims": 2,
+      "official_conversions": 0,
+      "lead_hours": [],
+      "first_seen_lead_hours": [],
+      "lead_time_unavailable": 0,
+      "matured_unconfirmed": 0,
+      "pending_claims": 2,
+      "unresolved_claims": 1,
+      "status": "OBSERVING",
+      "score": null,
+      "average_lead_hours": null,
+      "average_first_seen_lead_hours": null,
+      "official_conversion_rate_pct": 0.0,
+      "false_alarm_proxy_pct": null
+    },
+    {
       "source": "CNN Türk",
       "source_tier": "MEDIA",
       "source_type": "google_news",
@@ -992,26 +1012,6 @@
       "average_lead_hours": null,
       "average_first_seen_lead_hours": null,
       "official_conversion_rate_pct": null,
-      "false_alarm_proxy_pct": null
-    },
-    {
-      "source": "Yeni Alanya",
-      "source_tier": "MEDIA",
-      "source_type": "google_news",
-      "observations": 2,
-      "scoreable_claims": 1,
-      "official_conversions": 0,
-      "lead_hours": [],
-      "first_seen_lead_hours": [],
-      "lead_time_unavailable": 0,
-      "matured_unconfirmed": 0,
-      "pending_claims": 1,
-      "unresolved_claims": 1,
-      "status": "OBSERVING",
-      "score": null,
-      "average_lead_hours": null,
-      "average_first_seen_lead_hours": null,
-      "official_conversion_rate_pct": 0.0,
       "false_alarm_proxy_pct": null
     },
     {
@@ -2257,7 +2257,7 @@
     {
       "name": "Sports Digitale",
       "google_query": "Sports Digitale transfer",
-      "indexed_results": 0,
+      "indexed_results": 1,
       "query_error": null,
       "attributed_observations": 0,
       "scoreable_claims": 0,

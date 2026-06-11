@@ -1,6 +1,6 @@
 # Erken Haber Kaynak Performansı
 
-- Transfer sinyali: 25
+- Transfer sinyali: 30
 - Resmi olaya dönüşen transfer: 3
 - Yayın zamanı bulunan resmi teyit: 1/3
 - İlk görülme zamanı bulunan resmi teyit: 3/3
@@ -8,11 +8,11 @@
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 0
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 565
+- Defterde korunan ilk iddia gözlemi: 566
 
 ## Kanal Kapsamı
 
-- Google News: 230 haber, 30/30 başarılı sorgu.
+- Google News: 228 haber, 30/30 başarılı sorgu.
 - Telegram: 6 mesaj, 8/8 erişilebilir kanal.
 - X: durum=MISSING_CREDENTIALS, gönderi=0, yapılandırılmış hesap=45.
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 562 | 67 | 1 | — | — | %94.4 | 4.4 | PARTIAL_MEASUREMENT |
+| Google News / medya | 563 | 68 | 1 | — | — | %94.4 | 4.4 | PARTIAL_MEASUREMENT |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -33,7 +33,7 @@
 |---|---:|---:|---:|---|
 | Yağız Sabuncuoğlu | 1 | 1 | 1 | PARTIAL_MEASUREMENT |
 | Ertan Süzgün | 3 | 0 | 0 | ATTRIBUTION_PENDING |
-| Sports Digitale | 0 | 0 | 0 | ATTRIBUTION_PENDING |
+| Sports Digitale | 1 | 0 | 0 | ATTRIBUTION_PENDING |
 | Yusuf Günaydın | 0 | 0 | 0 | ATTRIBUTION_PENDING |
 | Ekrem Konur | 0 | 0 | 0 | ATTRIBUTION_PENDING |
 
@@ -83,6 +83,7 @@
 | Mersin Haber | MEDIA | 3 | 1 | 0 | — | — | — | — | OBSERVING |
 | Nefes Gazetesi | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
 | Transfermarkt | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
+| Yeni Alanya | MEDIA | 3 | 2 | 0 | — | — | — | — | OBSERVING |
 | CNN Türk | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Cumhuriyet | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Eurohoops | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
@@ -91,7 +92,6 @@
 | NTV Haber | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Samsun Haber | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Sporx.com | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
-| Yeni Alanya | MEDIA | 2 | 1 | 0 | — | — | — | — | OBSERVING |
 | Yeni Şafak | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Çağdaş Kocaeli Gazetesi | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | 61SAAT | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
