@@ -1,6 +1,6 @@
 # Erken Haber Kaynak Performansı
 
-- Transfer sinyali: 21
+- Transfer sinyali: 20
 - Resmi olaya dönüşen transfer: 3
 - Yayın zamanı bulunan resmi teyit: 1/3
 - İlk görülme zamanı bulunan resmi teyit: 3/3
@@ -8,11 +8,11 @@
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 0
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 571
+- Defterde korunan ilk iddia gözlemi: 572
 
 ## Kanal Kapsamı
 
-- Google News: 213 haber, 30/30 başarılı sorgu.
+- Google News: 218 haber, 30/30 başarılı sorgu.
 - Telegram: 6 mesaj, 8/8 erişilebilir kanal.
 - X: durum=MISSING_CREDENTIALS, gönderi=0, yapılandırılmış hesap=45.
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 568 | 69 | 1 | — | — | %94.4 | 4.4 | PARTIAL_MEASUREMENT |
+| Google News / medya | 569 | 69 | 1 | — | — | %94.4 | 4.4 | PARTIAL_MEASUREMENT |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -32,8 +32,8 @@
 | Muhabir / Ağ | Google Arama Bulgusu | Atıflı Gözlem | Ölçülebilir İddia | Skor Durumu |
 |---|---:|---:|---:|---|
 | Yağız Sabuncuoğlu | 1 | 1 | 1 | PARTIAL_MEASUREMENT |
-| Ertan Süzgün | 3 | 0 | 0 | ATTRIBUTION_PENDING |
-| Sports Digitale | 1 | 0 | 0 | ATTRIBUTION_PENDING |
+| Ertan Süzgün | 2 | 0 | 0 | ATTRIBUTION_PENDING |
+| Sports Digitale | 0 | 0 | 0 | ATTRIBUTION_PENDING |
 | Yusuf Günaydın | 0 | 0 | 0 | ATTRIBUTION_PENDING |
 | Ekrem Konur | 0 | 0 | 0 | ATTRIBUTION_PENDING |
 
@@ -65,7 +65,7 @@
 | Aksam Spor | MEDIA | 31 | 2 | 0 | — | — | — | — | OBSERVING |
 | NTVSpor | MEDIA | 25 | 3 | 0 | — | — | — | — | OBSERVING |
 | Haberturk Spor | MEDIA | 20 | 2 | 0 | — | — | — | — | OBSERVING |
-| GZT | MEDIA | 13 | 0 | 0 | — | — | — | — | OBSERVING |
+| GZT | MEDIA | 14 | 0 | 0 | — | — | — | — | OBSERVING |
 | Son Dakika | MEDIA | 10 | 1 | 0 | — | — | — | — | OBSERVING |
 | SonDakika | MEDIA | 10 | 1 | 0 | — | — | — | — | OBSERVING |
 | Ajansspor | MEDIA | 9 | 3 | 0 | — | — | — | — | OBSERVING |
