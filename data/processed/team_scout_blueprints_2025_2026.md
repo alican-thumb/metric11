@@ -45,7 +45,7 @@
 - Santrfor / skor yükü: Süper Lig'e yeni çıkan takım; Santrfor / skor yükü pozisyonunda deneyimli takviye kritik. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, MOHAMED LAMINE BAYO
 - 6 numara / savunma emniyeti: Süper Lig'e yeni çıkan takım; 6 numara / savunma emniyeti pozisyonunda deneyimli takviye kritik. Adaylar: GAİUS ABRAHAM JERED MAKOUTA, ANDRI FANNAR BALDURSSON, ANTHONY JUNIOR DENNIS
 
-## ERZURUMSPOR FK
+## AMED SFK
 
 - Güç: None | GF: None | GA: None | kart: None
 - Zafiyet: yeni lig takımı
@@ -55,7 +55,7 @@
 - Santrfor / skor yükü: Süper Lig'e yeni çıkan takım; Santrfor / skor yükü pozisyonunda deneyimli takviye kritik. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, MOHAMED LAMINE BAYO
 - 6 numara / savunma emniyeti: Süper Lig'e yeni çıkan takım; 6 numara / savunma emniyeti pozisyonunda deneyimli takviye kritik. Adaylar: GAİUS ABRAHAM JERED MAKOUTA, ANDRI FANNAR BALDURSSON, ANTHONY JUNIOR DENNIS
 
-## AMED SFK
+## ERZURUMSPOR FK
 
 - Güç: None | GF: None | GA: None | kart: None
 - Zafiyet: yeni lig takımı
