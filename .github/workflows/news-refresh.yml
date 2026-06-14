@@ -64,5 +64,5 @@ jobs:
           git add data/processed/
           git diff --staged --quiet && echo "No changes" || \
             git commit -m "chore: haber yenileme $(date -u +%Y-%m-%dT%H:%M:%SZ) [skip ci]"
-          git pull --rebase origin main
+          git pull --no-rebase -X ours origin main
           git push origin main

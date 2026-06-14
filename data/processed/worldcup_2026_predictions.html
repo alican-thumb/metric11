@@ -407,6 +407,119 @@ footer {
 }
 footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a5f; }
 
+/* ── Sonuç durumu ── */
+.match-card.result-correct { border-color: rgba(74,222,128,.5); }
+.match-card.result-wrong   { border-color: rgba(248,113,113,.4); }
+.result-banner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 14px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .3px;
+}
+.result-banner.correct {
+  background: rgba(74,222,128,.1);
+  border-bottom: 1px solid rgba(74,222,128,.25);
+  color: #4ade80;
+}
+.result-banner.wrong {
+  background: rgba(248,113,113,.08);
+  border-bottom: 1px solid rgba(248,113,113,.2);
+  color: #f87171;
+}
+.actual-score-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+.actual-score {
+  font-size: 32px;
+  font-weight: 900;
+  color: white;
+  letter-spacing: 3px;
+  line-height: 1;
+}
+.actual-label {
+  font-size: 9px;
+  color: var(--muted);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .8px;
+}
+.pred-score-sub {
+  font-size: 11px;
+  color: #4a6b8a;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-top: 2px;
+}
+.pred-score-sub-label {
+  font-size: 9px;
+  color: #334d66;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+
+/* ── Doğruluk özeti ── */
+.accuracy-bar {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.accuracy-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.accuracy-stat .val {
+  font-size: 22px;
+  font-weight: 900;
+  color: white;
+}
+.accuracy-stat .lbl {
+  font-size: 10px;
+  color: var(--muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .6px;
+}
+.accuracy-divider {
+  width: 1px;
+  height: 36px;
+  background: var(--border);
+}
+.accuracy-track {
+  flex: 1;
+  min-width: 120px;
+}
+.accuracy-track-bar {
+  height: 8px;
+  background: rgba(255,255,255,.08);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.accuracy-track-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #4ade80, #22d3ee);
+  border-radius: 4px;
+  transition: width .5s ease;
+}
+.accuracy-track-label {
+  font-size: 11px;
+  color: var(--muted);
+}
+.accuracy-track-label strong { color: var(--ink); }
+
 /* ── Responsive ── */
 @media (max-width: 680px) {
   .topbar {
@@ -445,15 +558,39 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
   </div>
 
   <div class="tabs-wrap">
+    <div class="accuracy-bar">
+  <div class="accuracy-stat">
+    <span class="val">8</span>
+    <span class="lbl">Oynandı</span>
+  </div>
+  <div class="accuracy-divider"></div>
+  <div class="accuracy-stat">
+    <span class="val" style="color:#4ade80">4</span>
+    <span class="lbl">Doğru</span>
+  </div>
+  <div class="accuracy-divider"></div>
+  <div class="accuracy-stat">
+    <span class="val" style="color:#f87171">4</span>
+    <span class="lbl">Yanlış</span>
+  </div>
+  <div class="accuracy-divider"></div>
+  <div class="accuracy-track">
+    <div class="accuracy-track-bar">
+      <div class="accuracy-track-fill" style="width:50%"></div>
+    </div>
+    <div class="accuracy-track-label">Genel doğruluk: <strong>%50</strong></div>
+  </div>
+</div>
     <div class="tabs-label">Grup Aşaması Haftaları</div><div class="tabs" id="tabs-container"><button class="tab-btn" data-tab="1" onclick="showMatchday('1')">1. Hafta</button><button class="tab-btn" data-tab="2" onclick="showMatchday('2')">2. Hafta</button><button class="tab-btn" data-tab="3" onclick="showMatchday('3')">3. Hafta</button></div>
   </div>
 
   <div class="main-wrap">
     <div class="matchday-section" data-matchday="1"><div class="day-group"><div class="day-header">11 Haziran 2026, Perşembe</div><div class="matches-grid">
-<div class="match-card">
+<div class="match-card result-correct">
+  <div class="result-banner correct">&#10003; Tahmin Doğru</div>
   <div class="card-header">
     <span class="card-group">GROUP A</span>
-    <span>Güç: 76 - 46</span>
+    <span>G&uuml;&ccedil;: 76 - 46</span>
     <span class="card-time">22:00</span>
   </div>
   <div class="teams-row">
@@ -462,9 +599,11 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
       <span class="team-short">MEX</span>
       <span class="team-full">Mexico</span>
     </div>
-    <div class="score-center">
-      <div class="score-display">1 - 1</div>
-      <div class="score-label">tahmin</div>
+    <div class="actual-score-row">
+      <div class="actual-score">2 &ndash; 0</div>
+      <div class="actual-label">Sonuç</div>
+      <div class="pred-score-sub">1 &ndash; 1</div>
+      <div class="pred-score-sub-label">tahmin</div>
     </div>
     <div class="team-side">
       <div class="team-logo-wrap"><img src="https://crests.football-data.org/9396.svg" alt="South Africa" loading="lazy" onerror="this.style.display='none'"></div>
@@ -491,10 +630,11 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
   <div class="narrative">Dengeli bir karşılaşma bekleniyor. Mexico, son 6 maçta %33 galibiyet ve maç başı 0.47 gol ortalamasıyla geliyor. Gol beklentisi: ev 1.24 — dep 0.83. En olası skor: 1-1. Tahmini kart: ~3.2.</div>
 </div></div></div>
 <div class="day-group"><div class="day-header">12 Haziran 2026, Cuma</div><div class="matches-grid">
-<div class="match-card">
+<div class="match-card result-correct">
+  <div class="result-banner correct">&#10003; Tahmin Doğru</div>
   <div class="card-header">
     <span class="card-group">GROUP A</span>
-    <span>Güç: 72 - 49</span>
+    <span>G&uuml;&ccedil;: 72 - 49</span>
     <span class="card-time">05:00</span>
   </div>
   <div class="teams-row">
@@ -503,9 +643,11 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
       <span class="team-short">KOR</span>
       <span class="team-full">South Korea</span>
     </div>
-    <div class="score-center">
-      <div class="score-display">2 - 1</div>
-      <div class="score-label">tahmin</div>
+    <div class="actual-score-row">
+      <div class="actual-score">2 &ndash; 1</div>
+      <div class="actual-label">Sonuç</div>
+      <div class="pred-score-sub">2 &ndash; 1</div>
+      <div class="pred-score-sub-label">tahmin</div>
     </div>
     <div class="team-side">
       <div class="team-logo-wrap"><img src="https://crests.football-data.org/798.svg" alt="Czechia" loading="lazy" onerror="this.style.display='none'"></div>
@@ -532,10 +674,11 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
   <div class="narrative">Dengeli bir karşılaşma bekleniyor. South Korea, son 4 maçta %25 galibiyet ve maç başı 1.25 gol ortalamasıyla geliyor. Czechia, 3 maçta %0 galibiyet ve 1.00 gol/maç ile sahaya çıkıyor. Gol beklentisi: ev 1.66 — dep 1.30. En olası skor: 2-1. Tahmini kart: ~3.5.</div>
 </div>
 
-<div class="match-card">
+<div class="match-card result-wrong">
+  <div class="result-banner wrong">&#10007; Tahmin Yanlış</div>
   <div class="card-header">
     <span class="card-group">GROUP B</span>
-    <span>Güç: 74 - 45</span>
+    <span>G&uuml;&ccedil;: 74 - 45</span>
     <span class="card-time">22:00</span>
   </div>
   <div class="teams-row">
@@ -544,9 +687,11 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
       <span class="team-short">CAN</span>
       <span class="team-full">Canada</span>
     </div>
-    <div class="score-center">
-      <div class="score-display">1 - 1</div>
-      <div class="score-label">tahmin</div>
+    <div class="actual-score-row">
+      <div class="actual-score">1 &ndash; 1</div>
+      <div class="actual-label">Sonuç</div>
+      <div class="pred-score-sub">1 &ndash; 1</div>
+      <div class="pred-score-sub-label">tahmin</div>
     </div>
     <div class="team-side">
       <div class="team-logo-wrap"><img src="https://crests.football-data.org/bosnia.svg" alt="Bosnia-Herzegovina" loading="lazy" onerror="this.style.display='none'"></div>
@@ -573,10 +718,11 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
   <div class="narrative">Dengeli bir karşılaşma bekleniyor. Canada, son 7 maçta %14 galibiyet ve maç başı 0.39 gol ortalamasıyla geliyor. Gol beklentisi: ev 1.09 — dep 1.21. En olası skor: 1-1. Tahmini kart: ~3.2.</div>
 </div></div></div>
 <div class="day-group"><div class="day-header">13 Haziran 2026, Cumartesi</div><div class="matches-grid">
-<div class="match-card">
+<div class="match-card result-correct">
+  <div class="result-banner correct">&#10003; Tahmin Doğru</div>
   <div class="card-header">
     <span class="card-group">GROUP D</span>
-    <span>Güç: 77 - 44</span>
+    <span>G&uuml;&ccedil;: 77 - 44</span>
     <span class="card-time">04:00</span>
   </div>
   <div class="teams-row">
@@ -585,9 +731,11 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
       <span class="team-short">USA</span>
       <span class="team-full">United States</span>
     </div>
-    <div class="score-center">
-      <div class="score-display">2 - 1</div>
-      <div class="score-label">tahmin</div>
+    <div class="actual-score-row">
+      <div class="actual-score">4 &ndash; 1</div>
+      <div class="actual-label">Sonuç</div>
+      <div class="pred-score-sub">2 &ndash; 1</div>
+      <div class="pred-score-sub-label">tahmin</div>
     </div>
     <div class="team-side">
       <div class="team-logo-wrap"><img src="https://crests.football-data.org/761.svg" alt="Paraguay" loading="lazy" onerror="this.style.display='none'"></div>
@@ -614,10 +762,11 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
   <div class="narrative">Dengeli bir karşılaşma bekleniyor. United States, son 7 maçta %29 galibiyet ve maç başı 0.88 gol ortalamasıyla geliyor. Paraguay, 3 maçta %0 galibiyet ve 1.00 gol/maç ile sahaya çıkıyor. Gol beklentisi: ev 1.64 — dep 0.93. En olası skor: 2-1. Tahmini kart: ~3.2.</div>
 </div>
 
-<div class="match-card">
+<div class="match-card result-wrong">
+  <div class="result-banner wrong">&#10007; Tahmin Yanlış</div>
   <div class="card-header">
     <span class="card-group">GROUP B</span>
-    <span>Güç: 47 - 79</span>
+    <span>G&uuml;&ccedil;: 47 - 79</span>
     <span class="card-time">22:00</span>
   </div>
   <div class="teams-row">
@@ -626,9 +775,11 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
       <span class="team-short">QAT</span>
       <span class="team-full">Qatar</span>
     </div>
-    <div class="score-center">
-      <div class="score-display">1 - 2</div>
-      <div class="score-label">tahmin</div>
+    <div class="actual-score-row">
+      <div class="actual-score">1 &ndash; 1</div>
+      <div class="actual-label">Sonuç</div>
+      <div class="pred-score-sub">1 &ndash; 2</div>
+      <div class="pred-score-sub-label">tahmin</div>
     </div>
     <div class="team-side">
       <div class="team-logo-wrap"><img src="https://crests.football-data.org/788.svg" alt="Switzerland" loading="lazy" onerror="this.style.display='none'"></div>
@@ -655,10 +806,11 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
   <div class="narrative">Switzerland (deplasman) belirgin favori. Qatar, son 3 maçta %0 galibiyet ve maç başı 0.33 gol ortalamasıyla geliyor. Switzerland, 8 maçta %50 galibiyet ve 1.54 gol/maç ile sahaya çıkıyor. Gol beklentisi: ev 0.98 — dep 2.00. En olası skor: 1-2. Tahmini kart: ~3.2.</div>
 </div></div></div>
 <div class="day-group"><div class="day-header">14 Haziran 2026, Pazar</div><div class="matches-grid">
-<div class="match-card">
+<div class="match-card result-wrong">
+  <div class="result-banner wrong">&#10007; Tahmin Yanlış</div>
   <div class="card-header">
     <span class="card-group">GROUP C</span>
-    <span>Güç: 91 - 68</span>
+    <span>G&uuml;&ccedil;: 91 - 68</span>
     <span class="card-time">01:00</span>
   </div>
   <div class="teams-row">
@@ -667,9 +819,11 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
       <span class="team-short">BRA</span>
       <span class="team-full">Brazil</span>
     </div>
-    <div class="score-center">
-      <div class="score-display">2 - 1</div>
-      <div class="score-label">tahmin</div>
+    <div class="actual-score-row">
+      <div class="actual-score">1 &ndash; 1</div>
+      <div class="actual-label">Sonuç</div>
+      <div class="pred-score-sub">2 &ndash; 1</div>
+      <div class="pred-score-sub-label">tahmin</div>
     </div>
     <div class="team-side">
       <div class="team-logo-wrap"><img src="https://crests.football-data.org/morocco.svg" alt="Morocco" loading="lazy" onerror="this.style.display='none'"></div>
@@ -696,10 +850,11 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
   <div class="narrative">Dengeli bir karşılaşma bekleniyor. Brazil, son 7 maçta %57 galibiyet ve maç başı 1.71 gol ortalamasıyla geliyor. Morocco, 6 maçta %50 galibiyet ve 1.00 gol/maç ile sahaya çıkıyor. Gol beklentisi: ev 1.38 — dep 0.72. En olası skor: 2-1. Tahmini kart: ~3.5.</div>
 </div>
 
-<div class="match-card">
+<div class="match-card result-correct">
+  <div class="result-banner correct">&#10003; Tahmin Doğru</div>
   <div class="card-header">
     <span class="card-group">GROUP C</span>
-    <span>Güç: 28 - 54</span>
+    <span>G&uuml;&ccedil;: 28 - 54</span>
     <span class="card-time">04:00</span>
   </div>
   <div class="teams-row">
@@ -708,9 +863,11 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
       <span class="team-short">HAI</span>
       <span class="team-full">Haiti</span>
     </div>
-    <div class="score-center">
-      <div class="score-display">1 - 2</div>
-      <div class="score-label">tahmin</div>
+    <div class="actual-score-row">
+      <div class="actual-score">0 &ndash; 1</div>
+      <div class="actual-label">Sonuç</div>
+      <div class="pred-score-sub">1 &ndash; 2</div>
+      <div class="pred-score-sub-label">tahmin</div>
     </div>
     <div class="team-side">
       <div class="team-logo-wrap"><img src="https://crests.football-data.org/814.svg" alt="Scotland" loading="lazy" onerror="this.style.display='none'"></div>
@@ -737,10 +894,11 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
   <div class="narrative">Dengeli bir karşılaşma bekleniyor. Scotland, 3 maçta %0 galibiyet ve 0.67 gol/maç ile sahaya çıkıyor. Gol beklentisi: ev 1.25 — dep 1.55. En olası skor: 1-2. Tahmini kart: ~3.2.</div>
 </div>
 
-<div class="match-card">
+<div class="match-card result-wrong">
+  <div class="result-banner wrong">&#10007; Tahmin Yanlış</div>
   <div class="card-header">
     <span class="card-group">GROUP D</span>
-    <span>Güç: 70 - 69</span>
+    <span>G&uuml;&ccedil;: 70 - 69</span>
     <span class="card-time">07:00</span>
   </div>
   <div class="teams-row">
@@ -749,9 +907,11 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
       <span class="team-short">AUS</span>
       <span class="team-full">Australia</span>
     </div>
-    <div class="score-center">
-      <div class="score-display">1 - 1</div>
-      <div class="score-label">tahmin</div>
+    <div class="actual-score-row">
+      <div class="actual-score">2 &ndash; 0</div>
+      <div class="actual-label">Sonuç</div>
+      <div class="pred-score-sub">1 &ndash; 1</div>
+      <div class="pred-score-sub-label">tahmin</div>
     </div>
     <div class="team-side">
       <div class="team-logo-wrap"><img src="https://crests.football-data.org/803.svg" alt="Turkey" loading="lazy" onerror="this.style.display='none'"></div>
@@ -779,9 +939,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div>
 
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP E</span>
-    <span>Güç: 83 - 30</span>
+    <span>G&uuml;&ccedil;: 83 - 30</span>
     <span class="card-time">20:00</span>
   </div>
   <div class="teams-row">
@@ -820,9 +981,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div>
 
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP F</span>
-    <span>Güç: 86 - 73</span>
+    <span>G&uuml;&ccedil;: 86 - 73</span>
     <span class="card-time">23:00</span>
   </div>
   <div class="teams-row">
@@ -861,9 +1023,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div></div></div>
 <div class="day-group"><div class="day-header">15 Haziran 2026, Pazartesi</div><div class="matches-grid">
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP E</span>
-    <span>Güç: 61 - 66</span>
+    <span>G&uuml;&ccedil;: 61 - 66</span>
     <span class="card-time">02:00</span>
   </div>
   <div class="teams-row">
@@ -902,9 +1065,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div>
 
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP F</span>
-    <span>Güç: 63 - 51</span>
+    <span>G&uuml;&ccedil;: 63 - 51</span>
     <span class="card-time">05:00</span>
   </div>
   <div class="teams-row">
@@ -943,9 +1107,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div>
 
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP H</span>
-    <span>Güç: 90 - 38</span>
+    <span>G&uuml;&ccedil;: 90 - 38</span>
     <span class="card-time">19:00</span>
   </div>
   <div class="teams-row">
@@ -984,9 +1149,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div>
 
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP G</span>
-    <span>Güç: 87 - 50</span>
+    <span>G&uuml;&ccedil;: 87 - 50</span>
     <span class="card-time">22:00</span>
   </div>
   <div class="teams-row">
@@ -1025,9 +1191,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div></div></div>
 <div class="day-group"><div class="day-header">16 Haziran 2026, Salı</div><div class="matches-grid">
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP H</span>
-    <span>Güç: 55 - 84</span>
+    <span>G&uuml;&ccedil;: 55 - 84</span>
     <span class="card-time">01:00</span>
   </div>
   <div class="teams-row">
@@ -1066,9 +1233,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div>
 
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP G</span>
-    <span>Güç: 56 - 35</span>
+    <span>G&uuml;&ccedil;: 56 - 35</span>
     <span class="card-time">04:00</span>
   </div>
   <div class="teams-row">
@@ -1107,9 +1275,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div>
 
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP I</span>
-    <span>Güç: 94 - 64</span>
+    <span>G&uuml;&ccedil;: 94 - 64</span>
     <span class="card-time">22:00</span>
   </div>
   <div class="teams-row">
@@ -1148,9 +1317,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div></div></div>
 <div class="day-group"><div class="day-header">17 Haziran 2026, Çarşamba</div><div class="matches-grid">
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP I</span>
-    <span>Güç: 43 - 65</span>
+    <span>G&uuml;&ccedil;: 43 - 65</span>
     <span class="card-time">01:00</span>
   </div>
   <div class="teams-row">
@@ -1189,9 +1359,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div>
 
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP J</span>
-    <span>Güç: 96 - 42</span>
+    <span>G&uuml;&ccedil;: 96 - 42</span>
     <span class="card-time">04:00</span>
   </div>
   <div class="teams-row">
@@ -1230,9 +1401,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div>
 
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP J</span>
-    <span>Güç: 59 - 41</span>
+    <span>G&uuml;&ccedil;: 59 - 41</span>
     <span class="card-time">07:00</span>
   </div>
   <div class="teams-row">
@@ -1271,9 +1443,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div>
 
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP K</span>
-    <span>Güç: 89 - 33</span>
+    <span>G&uuml;&ccedil;: 89 - 33</span>
     <span class="card-time">20:00</span>
   </div>
   <div class="teams-row">
@@ -1312,9 +1485,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div>
 
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP L</span>
-    <span>Güç: 92 - 80</span>
+    <span>G&uuml;&ccedil;: 92 - 80</span>
     <span class="card-time">23:00</span>
   </div>
   <div class="teams-row">
@@ -1353,9 +1527,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div></div></div>
 <div class="day-group"><div class="day-header">18 Haziran 2026, Perşembe</div><div class="matches-grid">
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP L</span>
-    <span>Güç: 52 - 40</span>
+    <span>G&uuml;&ccedil;: 52 - 40</span>
     <span class="card-time">02:00</span>
   </div>
   <div class="teams-row">
@@ -1394,9 +1569,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div>
 
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP K</span>
-    <span>Güç: 37 - 81</span>
+    <span>G&uuml;&ccedil;: 37 - 81</span>
     <span class="card-time">05:00</span>
   </div>
   <div class="teams-row">
@@ -1435,9 +1611,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div></div></div></div>
 <div class="matchday-section" data-matchday="2"><div class="day-group"><div class="day-header">18 Haziran 2026, Perşembe</div><div class="matches-grid">
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP A</span>
-    <span>Güç: 49 - 46</span>
+    <span>G&uuml;&ccedil;: 49 - 46</span>
     <span class="card-time">19:00</span>
   </div>
   <div class="teams-row">
@@ -1476,9 +1653,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div>
 
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP B</span>
-    <span>Güç: 79 - 45</span>
+    <span>G&uuml;&ccedil;: 79 - 45</span>
     <span class="card-time">22:00</span>
   </div>
   <div class="teams-row">
@@ -1517,9 +1695,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div></div></div>
 <div class="day-group"><div class="day-header">19 Haziran 2026, Cuma</div><div class="matches-grid">
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP B</span>
-    <span>Güç: 74 - 47</span>
+    <span>G&uuml;&ccedil;: 74 - 47</span>
     <span class="card-time">01:00</span>
   </div>
   <div class="teams-row">
@@ -1558,9 +1737,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div>
 
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP A</span>
-    <span>Güç: 76 - 72</span>
+    <span>G&uuml;&ccedil;: 76 - 72</span>
     <span class="card-time">04:00</span>
   </div>
   <div class="teams-row">
@@ -1599,9 +1779,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div>
 
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP D</span>
-    <span>Güç: 77 - 70</span>
+    <span>G&uuml;&ccedil;: 77 - 70</span>
     <span class="card-time">22:00</span>
   </div>
   <div class="teams-row">
@@ -1640,9 +1821,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div></div></div>
 <div class="day-group"><div class="day-header">20 Haziran 2026, Cumartesi</div><div class="matches-grid">
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP C</span>
-    <span>Güç: 54 - 68</span>
+    <span>G&uuml;&ccedil;: 54 - 68</span>
     <span class="card-time">01:00</span>
   </div>
   <div class="teams-row">
@@ -1681,9 +1863,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div>
 
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP C</span>
-    <span>Güç: 91 - 28</span>
+    <span>G&uuml;&ccedil;: 91 - 28</span>
     <span class="card-time">03:30</span>
   </div>
   <div class="teams-row">
@@ -1722,9 +1905,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div>
 
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP D</span>
-    <span>Güç: 69 - 44</span>
+    <span>G&uuml;&ccedil;: 69 - 44</span>
     <span class="card-time">06:00</span>
   </div>
   <div class="teams-row">
@@ -1763,9 +1947,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div>
 
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP F</span>
-    <span>Güç: 86 - 63</span>
+    <span>G&uuml;&ccedil;: 86 - 63</span>
     <span class="card-time">20:00</span>
   </div>
   <div class="teams-row">
@@ -1804,9 +1989,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div>
 
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP E</span>
-    <span>Güç: 83 - 61</span>
+    <span>G&uuml;&ccedil;: 83 - 61</span>
     <span class="card-time">23:00</span>
   </div>
   <div class="teams-row">
@@ -1845,9 +2031,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div></div></div>
 <div class="day-group"><div class="day-header">21 Haziran 2026, Pazar</div><div class="matches-grid">
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP E</span>
-    <span>Güç: 66 - 30</span>
+    <span>G&uuml;&ccedil;: 66 - 30</span>
     <span class="card-time">03:00</span>
   </div>
   <div class="teams-row">
@@ -1886,9 +2073,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div>
 
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP F</span>
-    <span>Güç: 51 - 73</span>
+    <span>G&uuml;&ccedil;: 51 - 73</span>
     <span class="card-time">07:00</span>
   </div>
   <div class="teams-row">
@@ -1927,9 +2115,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div>
 
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP H</span>
-    <span>Güç: 90 - 55</span>
+    <span>G&uuml;&ccedil;: 90 - 55</span>
     <span class="card-time">19:00</span>
   </div>
   <div class="teams-row">
@@ -1968,9 +2157,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div>
 
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP G</span>
-    <span>Güç: 87 - 56</span>
+    <span>G&uuml;&ccedil;: 87 - 56</span>
     <span class="card-time">22:00</span>
   </div>
   <div class="teams-row">
@@ -2009,9 +2199,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div></div></div>
 <div class="day-group"><div class="day-header">22 Haziran 2026, Pazartesi</div><div class="matches-grid">
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP H</span>
-    <span>Güç: 84 - 38</span>
+    <span>G&uuml;&ccedil;: 84 - 38</span>
     <span class="card-time">01:00</span>
   </div>
   <div class="teams-row">
@@ -2050,9 +2241,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div>
 
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP G</span>
-    <span>Güç: 35 - 50</span>
+    <span>G&uuml;&ccedil;: 35 - 50</span>
     <span class="card-time">04:00</span>
   </div>
   <div class="teams-row">
@@ -2091,9 +2283,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div>
 
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP J</span>
-    <span>Güç: 96 - 59</span>
+    <span>G&uuml;&ccedil;: 96 - 59</span>
     <span class="card-time">20:00</span>
   </div>
   <div class="teams-row">
@@ -2132,9 +2325,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div></div></div>
 <div class="day-group"><div class="day-header">23 Haziran 2026, Salı</div><div class="matches-grid">
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP I</span>
-    <span>Güç: 94 - 43</span>
+    <span>G&uuml;&ccedil;: 94 - 43</span>
     <span class="card-time">00:00</span>
   </div>
   <div class="teams-row">
@@ -2173,9 +2367,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div>
 
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP I</span>
-    <span>Güç: 65 - 64</span>
+    <span>G&uuml;&ccedil;: 65 - 64</span>
     <span class="card-time">03:00</span>
   </div>
   <div class="teams-row">
@@ -2214,9 +2409,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div>
 
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP J</span>
-    <span>Güç: 41 - 42</span>
+    <span>G&uuml;&ccedil;: 41 - 42</span>
     <span class="card-time">06:00</span>
   </div>
   <div class="teams-row">
@@ -2255,9 +2451,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div>
 
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP K</span>
-    <span>Güç: 89 - 37</span>
+    <span>G&uuml;&ccedil;: 89 - 37</span>
     <span class="card-time">20:00</span>
   </div>
   <div class="teams-row">
@@ -2296,9 +2493,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div>
 
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP L</span>
-    <span>Güç: 92 - 52</span>
+    <span>G&uuml;&ccedil;: 92 - 52</span>
     <span class="card-time">23:00</span>
   </div>
   <div class="teams-row">
@@ -2337,9 +2535,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div></div></div>
 <div class="day-group"><div class="day-header">24 Haziran 2026, Çarşamba</div><div class="matches-grid">
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP L</span>
-    <span>Güç: 40 - 80</span>
+    <span>G&uuml;&ccedil;: 40 - 80</span>
     <span class="card-time">02:00</span>
   </div>
   <div class="teams-row">
@@ -2378,9 +2577,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div>
 
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP K</span>
-    <span>Güç: 81 - 33</span>
+    <span>G&uuml;&ccedil;: 81 - 33</span>
     <span class="card-time">05:00</span>
   </div>
   <div class="teams-row">
@@ -2419,9 +2619,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div></div></div></div>
 <div class="matchday-section" data-matchday="3"><div class="day-group"><div class="day-header">24 Haziran 2026, Çarşamba</div><div class="matches-grid">
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP B</span>
-    <span>Güç: 79 - 74</span>
+    <span>G&uuml;&ccedil;: 79 - 74</span>
     <span class="card-time">22:00</span>
   </div>
   <div class="teams-row">
@@ -2460,9 +2661,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div>
 
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP B</span>
-    <span>Güç: 45 - 47</span>
+    <span>G&uuml;&ccedil;: 45 - 47</span>
     <span class="card-time">22:00</span>
   </div>
   <div class="teams-row">
@@ -2501,9 +2703,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div></div></div>
 <div class="day-group"><div class="day-header">25 Haziran 2026, Perşembe</div><div class="matches-grid">
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP C</span>
-    <span>Güç: 68 - 28</span>
+    <span>G&uuml;&ccedil;: 68 - 28</span>
     <span class="card-time">01:00</span>
   </div>
   <div class="teams-row">
@@ -2542,9 +2745,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div>
 
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP C</span>
-    <span>Güç: 54 - 91</span>
+    <span>G&uuml;&ccedil;: 54 - 91</span>
     <span class="card-time">01:00</span>
   </div>
   <div class="teams-row">
@@ -2583,9 +2787,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div>
 
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP A</span>
-    <span>Güç: 49 - 76</span>
+    <span>G&uuml;&ccedil;: 49 - 76</span>
     <span class="card-time">04:00</span>
   </div>
   <div class="teams-row">
@@ -2624,9 +2829,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div>
 
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP A</span>
-    <span>Güç: 46 - 72</span>
+    <span>G&uuml;&ccedil;: 46 - 72</span>
     <span class="card-time">04:00</span>
   </div>
   <div class="teams-row">
@@ -2665,9 +2871,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div>
 
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP E</span>
-    <span>Güç: 66 - 83</span>
+    <span>G&uuml;&ccedil;: 66 - 83</span>
     <span class="card-time">23:00</span>
   </div>
   <div class="teams-row">
@@ -2706,9 +2913,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div>
 
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP E</span>
-    <span>Güç: 30 - 61</span>
+    <span>G&uuml;&ccedil;: 30 - 61</span>
     <span class="card-time">23:00</span>
   </div>
   <div class="teams-row">
@@ -2747,9 +2955,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div></div></div>
 <div class="day-group"><div class="day-header">26 Haziran 2026, Cuma</div><div class="matches-grid">
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP F</span>
-    <span>Güç: 51 - 86</span>
+    <span>G&uuml;&ccedil;: 51 - 86</span>
     <span class="card-time">02:00</span>
   </div>
   <div class="teams-row">
@@ -2788,9 +2997,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div>
 
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP F</span>
-    <span>Güç: 73 - 63</span>
+    <span>G&uuml;&ccedil;: 73 - 63</span>
     <span class="card-time">02:00</span>
   </div>
   <div class="teams-row">
@@ -2829,9 +3039,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div>
 
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP D</span>
-    <span>Güç: 69 - 77</span>
+    <span>G&uuml;&ccedil;: 69 - 77</span>
     <span class="card-time">05:00</span>
   </div>
   <div class="teams-row">
@@ -2870,9 +3081,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div>
 
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP D</span>
-    <span>Güç: 44 - 70</span>
+    <span>G&uuml;&ccedil;: 44 - 70</span>
     <span class="card-time">05:00</span>
   </div>
   <div class="teams-row">
@@ -2911,9 +3123,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div>
 
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP I</span>
-    <span>Güç: 65 - 94</span>
+    <span>G&uuml;&ccedil;: 65 - 94</span>
     <span class="card-time">22:00</span>
   </div>
   <div class="teams-row">
@@ -2952,9 +3165,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div>
 
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP I</span>
-    <span>Güç: 64 - 43</span>
+    <span>G&uuml;&ccedil;: 64 - 43</span>
     <span class="card-time">22:00</span>
   </div>
   <div class="teams-row">
@@ -2993,9 +3207,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div></div></div>
 <div class="day-group"><div class="day-header">27 Haziran 2026, Cumartesi</div><div class="matches-grid">
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP H</span>
-    <span>Güç: 84 - 90</span>
+    <span>G&uuml;&ccedil;: 84 - 90</span>
     <span class="card-time">03:00</span>
   </div>
   <div class="teams-row">
@@ -3034,9 +3249,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div>
 
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP H</span>
-    <span>Güç: 38 - 55</span>
+    <span>G&uuml;&ccedil;: 38 - 55</span>
     <span class="card-time">03:00</span>
   </div>
   <div class="teams-row">
@@ -3075,9 +3291,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div>
 
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP G</span>
-    <span>Güç: 35 - 87</span>
+    <span>G&uuml;&ccedil;: 35 - 87</span>
     <span class="card-time">06:00</span>
   </div>
   <div class="teams-row">
@@ -3116,9 +3333,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div>
 
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP G</span>
-    <span>Güç: 50 - 56</span>
+    <span>G&uuml;&ccedil;: 50 - 56</span>
     <span class="card-time">06:00</span>
   </div>
   <div class="teams-row">
@@ -3157,9 +3375,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div></div></div>
 <div class="day-group"><div class="day-header">28 Haziran 2026, Pazar</div><div class="matches-grid">
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP L</span>
-    <span>Güç: 40 - 92</span>
+    <span>G&uuml;&ccedil;: 40 - 92</span>
     <span class="card-time">00:00</span>
   </div>
   <div class="teams-row">
@@ -3198,9 +3417,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div>
 
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP L</span>
-    <span>Güç: 80 - 52</span>
+    <span>G&uuml;&ccedil;: 80 - 52</span>
     <span class="card-time">00:00</span>
   </div>
   <div class="teams-row">
@@ -3239,9 +3459,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div>
 
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP K</span>
-    <span>Güç: 81 - 89</span>
+    <span>G&uuml;&ccedil;: 81 - 89</span>
     <span class="card-time">02:30</span>
   </div>
   <div class="teams-row">
@@ -3280,9 +3501,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div>
 
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP K</span>
-    <span>Güç: 33 - 37</span>
+    <span>G&uuml;&ccedil;: 33 - 37</span>
     <span class="card-time">02:30</span>
   </div>
   <div class="teams-row">
@@ -3321,9 +3543,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div>
 
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP J</span>
-    <span>Güç: 41 - 96</span>
+    <span>G&uuml;&ccedil;: 41 - 96</span>
     <span class="card-time">05:00</span>
   </div>
   <div class="teams-row">
@@ -3362,9 +3585,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 </div>
 
 <div class="match-card">
+  
   <div class="card-header">
     <span class="card-group">GROUP J</span>
-    <span>Güç: 42 - 59</span>
+    <span>G&uuml;&ccedil;: 42 - 59</span>
     <span class="card-time">05:00</span>
   </div>
   <div class="teams-row">
@@ -3405,7 +3629,7 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 
   <footer>
     metric11 &middot; <a href="mailto:hello@metric11.com">hello@metric11.com</a>
-    &nbsp;&middot;&nbsp; Son g&uuml;ncelleme: 14.06.2026 17:30
+    &nbsp;&middot;&nbsp; Son g&uuml;ncelleme: 14.06.2026 19:54
   </footer>
 
   

@@ -10,6 +10,68 @@ from pathlib import Path
 from src.config import PROCESSED_DIR, ensure_data_dirs
 
 # ---------------------------------------------------------------------------
+# Fixture sonuçlarını yükle
+# ---------------------------------------------------------------------------
+
+def _load_fixture_results() -> dict[tuple[str, str], dict]:
+    """Fixture dosyasından (home_name, away_name) → fixture dict haritası döner."""
+    path = PROCESSED_DIR / "worldcup_2026_fixtures.json"
+    if not path.exists():
+        return {}
+    data = json.loads(path.read_text(encoding="utf-8"))
+    result: dict[tuple[str, str], dict] = {}
+    for m in data.get("matches", []):
+        h = m.get("home", {}).get("name", "")
+        a = m.get("away", {}).get("name", "")
+        if h and a:
+            result[(h, a)] = m
+    return result
+
+
+def _enrich_with_result(prediction: dict, fixtures: dict[tuple[str, str], dict]) -> dict:
+    """Tahmine fixture sonucunu ekler. Maç oynanmamışsa pending döner."""
+    home_name = prediction["home"]["name"]
+    away_name = prediction["away"]["name"]
+    fixture = fixtures.get((home_name, away_name))
+
+    if fixture is None or fixture.get("status") != "FINISHED":
+        prediction["actual_score"] = None
+        prediction["prediction_outcome"] = "pending"
+        return prediction
+
+    score = fixture.get("score", {})
+    actual_h = score.get("home")
+    actual_a = score.get("away")
+    prediction["actual_score"] = {"home": actual_h, "away": actual_a}
+
+    pred = prediction["prediction"]
+    hw = pred.get("home_win", 0)
+    dr = pred.get("draw", 0)
+    aw = pred.get("away_win", 0)
+    best = max(hw, dr, aw)
+
+    if actual_h is None or actual_a is None:
+        prediction["prediction_outcome"] = "pending"
+        return prediction
+
+    if actual_h > actual_a:
+        actual_outcome = "home"
+    elif actual_h == actual_a:
+        actual_outcome = "draw"
+    else:
+        actual_outcome = "away"
+
+    if best == hw:
+        predicted_outcome = "home"
+    elif best == dr:
+        predicted_outcome = "draw"
+    else:
+        predicted_outcome = "away"
+
+    prediction["prediction_outcome"] = "correct" if predicted_outcome == actual_outcome else "wrong"
+    return prediction
+
+# ---------------------------------------------------------------------------
 # Form verisi yükle (Euro 2024, Copa América, AFCON, Asian Cup, WC 2022)
 # ---------------------------------------------------------------------------
 
@@ -285,19 +347,36 @@ def main() -> None:
     print(f"Form verisi: {form_count} takım (baseline att={_BASELINE_ATT:.3f} def={_BASELINE_DEF:.3f})")
     print(f"{len(group_matches)} grup aşaması maçı analiz ediliyor…", flush=True)
 
+    fixtures = _load_fixture_results()
+    print(f"Fixture sonuçları: {sum(1 for f in fixtures.values() if f.get('status') == 'FINISHED')} maç tamamlandı", flush=True)
+
     matchday_predictions: dict[str, list] = {}
     for match in group_matches:
         prediction = analyze_match(match)
+        prediction = _enrich_with_result(prediction, fixtures)
         md_key = str(match.get("matchday"))
         matchday_predictions.setdefault(md_key, []).append(prediction)
 
     for md_key in matchday_predictions:
         matchday_predictions[md_key].sort(key=lambda m: m.get("utc_date", ""))
 
+    # Genel doğruluk istatistikleri
+    all_preds = [p for plist in matchday_predictions.values() for p in plist]
+    finished = [p for p in all_preds if p["prediction_outcome"] != "pending"]
+    correct = [p for p in finished if p["prediction_outcome"] == "correct"]
+    accuracy_stats = {
+        "finished": len(finished),
+        "correct": len(correct),
+        "wrong": len(finished) - len(correct),
+        "accuracy_pct": round(len(correct) / len(finished) * 100, 1) if finished else None,
+    }
+    print(f"Doğruluk: {len(correct)}/{len(finished)} ({accuracy_stats['accuracy_pct']}%)", flush=True)
+
     payload = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "total_matches": len(matches),
         "form_teams_used": form_count,
+        "accuracy_stats": accuracy_stats,
         "matchday_predictions": matchday_predictions,
     }
 

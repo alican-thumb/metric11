@@ -407,6 +407,119 @@ footer {
 }
 footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a5f; }
 
+/* ── Sonuç durumu ── */
+.match-card.result-correct { border-color: rgba(74,222,128,.5); }
+.match-card.result-wrong   { border-color: rgba(248,113,113,.4); }
+.result-banner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 14px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .3px;
+}
+.result-banner.correct {
+  background: rgba(74,222,128,.1);
+  border-bottom: 1px solid rgba(74,222,128,.25);
+  color: #4ade80;
+}
+.result-banner.wrong {
+  background: rgba(248,113,113,.08);
+  border-bottom: 1px solid rgba(248,113,113,.2);
+  color: #f87171;
+}
+.actual-score-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+.actual-score {
+  font-size: 32px;
+  font-weight: 900;
+  color: white;
+  letter-spacing: 3px;
+  line-height: 1;
+}
+.actual-label {
+  font-size: 9px;
+  color: var(--muted);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .8px;
+}
+.pred-score-sub {
+  font-size: 11px;
+  color: #4a6b8a;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-top: 2px;
+}
+.pred-score-sub-label {
+  font-size: 9px;
+  color: #334d66;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+
+/* ── Doğruluk özeti ── */
+.accuracy-bar {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.accuracy-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.accuracy-stat .val {
+  font-size: 22px;
+  font-weight: 900;
+  color: white;
+}
+.accuracy-stat .lbl {
+  font-size: 10px;
+  color: var(--muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .6px;
+}
+.accuracy-divider {
+  width: 1px;
+  height: 36px;
+  background: var(--border);
+}
+.accuracy-track {
+  flex: 1;
+  min-width: 120px;
+}
+.accuracy-track-bar {
+  height: 8px;
+  background: rgba(255,255,255,.08);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.accuracy-track-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #4ade80, #22d3ee);
+  border-radius: 4px;
+  transition: width .5s ease;
+}
+.accuracy-track-label {
+  font-size: 11px;
+  color: var(--muted);
+}
+.accuracy-track-label strong { color: var(--ink); }
+
 /* ── Responsive ── */
 @media (max-width: 680px) {
   .topbar {
@@ -536,10 +649,15 @@ def _match_card_html(pred: dict) -> str:
     home_short = escape(home.get("short", home.get("name", "")[:3].upper()))
     away_short = escape(away.get("short", away.get("name", "")[:3].upper()))
 
-    # Skorlar
+    # Tahmin skoru
     pred_score = prediction.get("predicted_score", {})
-    score_h = pred_score.get("home", "?")
-    score_a = pred_score.get("away", "?")
+    pred_h = pred_score.get("home", "?")
+    pred_a = pred_score.get("away", "?")
+
+    # Gerçek sonuç
+    actual_score = pred.get("actual_score")
+    outcome = pred.get("prediction_outcome", "pending")
+    is_finished = outcome != "pending"
 
     # Olasılıklar
     hw = prediction.get("home_win", 0.0)
@@ -561,15 +679,45 @@ def _match_card_html(pred: dict) -> str:
 
     # Narrative
     narrative = escape(prediction.get("narrative", ""))
-
     home_str = home.get("strength", 50)
     away_str = away.get("strength", 50)
 
+    # Kart CSS sınıfı
+    card_class = ""
+    if outcome == "correct":
+        card_class = " result-correct"
+    elif outcome == "wrong":
+        card_class = " result-wrong"
+
+    # Sonuç banner
+    result_banner_html = ""
+    if outcome == "correct":
+        result_banner_html = '<div class="result-banner correct">&#10003; Tahmin Doğru</div>'
+    elif outcome == "wrong":
+        result_banner_html = '<div class="result-banner wrong">&#10007; Tahmin Yanlış</div>'
+
+    # Skor alanı: oynandıysa gerçek skoru büyük göster
+    if is_finished and actual_score is not None:
+        ah = actual_score.get("home", "?")
+        aa = actual_score.get("away", "?")
+        score_center_html = f"""<div class="actual-score-row">
+      <div class="actual-score">{ah} &ndash; {aa}</div>
+      <div class="actual-label">Sonuç</div>
+      <div class="pred-score-sub">{pred_h} &ndash; {pred_a}</div>
+      <div class="pred-score-sub-label">tahmin</div>
+    </div>"""
+    else:
+        score_center_html = f"""<div class="score-center">
+      <div class="score-display">{pred_h} - {pred_a}</div>
+      <div class="score-label">tahmin</div>
+    </div>"""
+
     return f"""
-<div class="match-card">
+<div class="match-card{card_class}">
+  {result_banner_html}
   <div class="card-header">
     <span class="card-group">{escape(group_display)}</span>
-    <span>Güç: {home_str} - {away_str}</span>
+    <span>G&uuml;&ccedil;: {home_str} - {away_str}</span>
     <span class="card-time">{escape(time_str)}</span>
   </div>
   <div class="teams-row">
@@ -578,10 +726,7 @@ def _match_card_html(pred: dict) -> str:
       <span class="team-short">{home_short}</span>
       <span class="team-full">{home_name}</span>
     </div>
-    <div class="score-center">
-      <div class="score-display">{score_h} - {score_a}</div>
-      <div class="score-label">tahmin</div>
-    </div>
+    {score_center_html}
     <div class="team-side">
       {_logo_html(away.get("crest", ""), away.get("name", ""))}
       <span class="team-short">{away_short}</span>
@@ -676,9 +821,45 @@ document.addEventListener('DOMContentLoaded', function() {
 """
 
 
+def _build_accuracy_bar(stats: dict) -> str:
+    finished = stats.get("finished", 0)
+    correct = stats.get("correct", 0)
+    wrong = stats.get("wrong", 0)
+    pct = stats.get("accuracy_pct")
+    if finished == 0:
+        return ""
+    pct_val = pct if pct is not None else 0
+    fill_w = int(round(pct_val))
+    pct_str = f"%{pct_val:.0f}" if pct is not None else "—"
+    return f"""<div class="accuracy-bar">
+  <div class="accuracy-stat">
+    <span class="val">{finished}</span>
+    <span class="lbl">Oynandı</span>
+  </div>
+  <div class="accuracy-divider"></div>
+  <div class="accuracy-stat">
+    <span class="val" style="color:#4ade80">{correct}</span>
+    <span class="lbl">Doğru</span>
+  </div>
+  <div class="accuracy-divider"></div>
+  <div class="accuracy-stat">
+    <span class="val" style="color:#f87171">{wrong}</span>
+    <span class="lbl">Yanlış</span>
+  </div>
+  <div class="accuracy-divider"></div>
+  <div class="accuracy-track">
+    <div class="accuracy-track-bar">
+      <div class="accuracy-track-fill" style="width:{fill_w}%"></div>
+    </div>
+    <div class="accuracy-track-label">Genel doğruluk: <strong>{pct_str}</strong></div>
+  </div>
+</div>"""
+
+
 def build_page(predictions_data: dict) -> str:
     matchday_preds: dict[str, list] = predictions_data.get("matchday_predictions", {})
     generated_at = predictions_data.get("generated_at", "")
+    accuracy_stats = predictions_data.get("accuracy_stats", {})
 
     # Matchday anahtarlarını sayısal sıraya göre sırala, matchday 0 (eleme) dahil etme
     md_keys = sorted(
@@ -686,6 +867,7 @@ def build_page(predictions_data: dict) -> str:
         key=lambda x: int(x)
     )
 
+    accuracy_html = _build_accuracy_bar(accuracy_stats)
     tabs_html = _build_tabs(md_keys)
     sections_html = "\n".join(
         _build_matchday_section(k, matchday_preds[k]) for k in md_keys
@@ -728,6 +910,7 @@ def build_page(predictions_data: dict) -> str:
   </div>
 
   <div class="tabs-wrap">
+    {accuracy_html}
     {tabs_html}
   </div>
 
