@@ -1,6 +1,6 @@
 # Erken Haber Kaynak Performansı
 
-- Transfer sinyali: 33
+- Transfer sinyali: 29
 - Resmi olaya dönüşen transfer: 3
 - Yayın zamanı bulunan resmi teyit: 1/3
 - İlk görülme zamanı bulunan resmi teyit: 3/3
@@ -8,11 +8,11 @@
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 0
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 634
+- Defterde korunan ilk iddia gözlemi: 635
 
 ## Kanal Kapsamı
 
-- Google News: 214 haber, 30/30 başarılı sorgu.
+- Google News: 211 haber, 30/30 başarılı sorgu.
 - Telegram: 6 mesaj, 8/8 erişilebilir kanal.
 - X: durum=MISSING_CREDENTIALS, gönderi=0, yapılandırılmış hesap=45.
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 631 | 75 | 1 | — | — | %95.7 | 3.5 | PARTIAL_MEASUREMENT |
+| Google News / medya | 632 | 76 | 1 | — | — | %95.7 | 3.5 | PARTIAL_MEASUREMENT |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -69,10 +69,10 @@
 | SonDakika | MEDIA | 13 | 2 | 0 | — | — | — | — | OBSERVING |
 | Son Dakika | MEDIA | 12 | 1 | 0 | — | — | — | — | OBSERVING |
 | Ajansspor | MEDIA | 11 | 4 | 0 | — | — | — | — | OBSERVING |
+| Taka Gazete | MEDIA | 10 | 3 | 0 | — | — | — | — | OBSERVING |
 | beinsports.com.tr | MEDIA | 10 | 0 | 0 | — | — | — | — | OBSERVING |
 | Haberler | MEDIA | 9 | 1 | 0 | — | — | — | — | OBSERVING |
 | Habertürk | MEDIA | 9 | 1 | 0 | — | — | — | — | OBSERVING |
-| Taka Gazete | MEDIA | 9 | 2 | 0 | — | — | — | — | OBSERVING |
 | Anadolu Ajansı Spor | AGENCY | 7 | 0 | 0 | — | — | — | — | OBSERVING |
 | Haber 7 | MEDIA | 7 | 0 | 0 | — | — | — | — | OBSERVING |
 | Yeniçağ Gazetesi | MEDIA | 7 | 1 | 0 | — | — | — | — | OBSERVING |
