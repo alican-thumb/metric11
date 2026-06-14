@@ -34,7 +34,7 @@ TRANSFER_PATTERNS = [
     (r"ayrıl(?:ıyor|acak|dı(?:lar)?\b|mak istiyor)", "departure"),
     (r"teşekkür(?:ler|\s+ederiz)", "departure"),
     (r"kiralandı|kiralık\s+(?:olarak\s+)?(?:gitti|geliyor|transfer)", "loan"),
-    (r"süper\s+lig['']?e\s+(?:geliyor|transfer|dönüyor)", "super_lig_arrival"),
+    (r"süper\s+lig[''']?e\s+(?:geliyor|transfer|dönüyor)", "super_lig_arrival"),
 ]
 
 INJURY_PATTERNS = [
@@ -56,11 +56,11 @@ SUSPENSION_PATTERNS = [
 ]
 
 PROMOTION_PATTERNS = [
-    (r"süper\s+lig['']?e\s+(?:çıktı|yükseldi|çıkma|klasman)", "promoted"),
+    (r"süper\s+lig[''']?e\s+(?:çıktı|yükseldi|çıkma|klasman)", "promoted"),
     (r"(?:tff\s+1\.\s+lig|birinci\s+lig)\s+(?:şampiyon|birinci)", "first_division_champion"),
     (r"playoff(?:'ı|\s+kazandı|\s+finali)", "playoff_win"),
     (r"küme\s+düş(?:tü|ücek|me)", "relegated"),
-    (r"1\.\s+lig['']?e\s+(?:düştü|indi|gitti)", "relegated"),
+    (r"1\.\s+lig[''']?e\s+(?:düştü|indi|gitti)", "relegated"),
 ]
 
 CONTRACT_PATTERNS = [
@@ -532,19 +532,35 @@ def _explicit_targeted_rumor_parties(title: str, title_clubs: list[str]) -> tupl
         return None, None
     target = title_clubs[0]
     club_pattern = CLUB_PATTERNS[target]
-    person = r"(?P<player>[A-ZÇĞİÖŞÜ][A-Za-zÇĞİÖŞÜçğıöşü.'-]+(?:\s+[A-ZÇĞİÖŞÜ][A-Za-zÇĞİÖŞÜçğıöşü.'-]+){1,3})"
-    fee_person = r"(?P<player>[A-ZÇĞİÖŞÜ][A-Za-zÇĞİÖŞÜçğıöşü.'-]+(?:\s+[A-ZÇĞİÖŞÜ][A-Za-zÇĞİÖŞÜçğıöşü.'-]+){1,2})"
+    # Apostrof bracket class - chr(0x27) = U+0027, literal yazilmaz (editor bozar)
+    _aq = "[" + chr(0x27) + "\u2018\u2019]"
+    _nc = "A-Za-z\u00c7\u011e\u0130\u00d6\u015e\u00dc\u00e7\u011f\u0131\u00f6\u015f\u00fc." + chr(0x27) + "\u2018\u2019-"
+    _up = "A-Z\u00c7\u011e\u0130\u00d6\u015e\u00dc"  # uppercase Turkce
+    # (?-i:) ile buyuk harf zorunlu - re.IGNORECASE yanh pozitif uretmesini onler
+    person     = f"(?-i:(?P<player>[{_up}][{_nc}]+(?:\\s+[{_up}][{_nc}]+){{1,3}}))"
+    any_person = f"(?-i:(?P<player>[{_up}][{_nc}]+(?:\\s+[{_up}][{_nc}]+){{0,3}}))"
+    fee_person = f"(?-i:(?P<player>[{_up}][{_nc}]+(?:\\s+[{_up}][{_nc}]+){{1,2}}))"
     patterns = [
-        rf"(?:{club_pattern})['’]?(?:da|de|ta|te)\s+{person}\s+operasyonu\b",
-        rf"(?:{club_pattern})['’]?(?:dan|den|tan|ten)\s+{person}\s+bombası\b",
-        rf"{person}['’]?(?:ın|in|un|ün)\s+(?:{club_pattern})['’]?(?:ya|ye|a|e)\s+transfer",
-        rf"parayı\s+veren\s+{fee_person}['’]?(?:u|ü|ı|i)\s+alır[.!?]?\s*"
-        rf"(?:{club_pattern})['’]?(?:ya|ye|a|e)\s+bonservis",
+        f"(?:{club_pattern}){_aq}?(?:da|de|ta|te)\\s+{person}\\s+operasyonu\\b",
+        f"(?:{club_pattern}){_aq}?(?:dan|den|tan|ten)\\s+{person}\\s+bombas\u0131\\b",
+        f"{person}{_aq}?(?:\u0131n|in|un|\u00fcn)\\s+(?:{club_pattern}){_aq}?(?:ya|ye|a|e)\\s+transfer",
+        f"paray\u0131\\s+veren\\s+{fee_person}{_aq}?(?:u|\u00fc|\u0131|i)\\s+al\u0131r[.!?]?\\s*(?:{club_pattern}){_aq}?(?:ya|ye|a|e)\\s+bonservis",
+        f"(?:{club_pattern}){_aq}?(?:\u0131n|in|un|\u00fcn)\\s+(?:\\w+\\s+)?hedefi\\s*[:\\s]\\s*{any_person}",
+        f"(?:{club_pattern}){_aq}?(?:da|de|ta|te)\\s+{person}\\s+(?:s\u00fcrprizi|hamlesi|ata\u011f\u0131|transferi)\\b",
+        f"(?:{club_pattern}){_aq}?(?:ya|ye|a|e)\\s+{any_person}\\s+(?:transferi|bombas\u0131|hamlesi|s\u00fcrprizi)\\b",
+        f"{person}\\s+(?:{club_pattern}){_aq}?(?:ya|ye|a|e)\\s+(?:geliyor|imzal\u0131yor|imzalad\u0131)\\b",
+        f"(?:{club_pattern}){_aq}?,?\\s+{person}{_aq}?(?:i|\u0131|u|\u00fc|yi|y\u0131|yu|y\u00fc)\\s+transfer\\s+(?:etti|ald\u0131|yapt\u0131)\\b",
+        f"(?:{club_pattern}){_aq}?,?\\s+{person}{_aq}?(?:i|\u0131|u|\u00fc|yi|y\u0131|yu|y\u00fc)\\s+(?:kadrosuna\\s+(?:katt\u0131|dahil)|resmile\u015ftirdi)\\b",
     ]
+    _apos_re = "[" + chr(0x27) + "\u2018\u2019]"
     for pattern in patterns:
         match = re.search(pattern, title, re.IGNORECASE)
         if match:
-            return " ".join(match.group("player").strip(" ,-'’").split()), target
+            raw = match.group("player").strip()
+            player = re.sub(_apos_re + r"\w*$", "", raw).strip()
+            player = " ".join(player.split())
+            if len(player) >= 3 and not any(_same_club(player, c) for c in CLUB_PATTERNS):
+                return player, target
     return None, None
 
 
@@ -577,17 +593,24 @@ def _headline_indicates_outbound(title: str, club: str) -> bool:
 
 
 def _claude_enhance(client, article: dict) -> dict | None:
-    """Claude API ile kural tabanlı analizi zenginleştirir."""
-    SYSTEM = "Sen Türk futbol analistsin. Haber özetini JSON olarak çıkar. Sadece JSON döndür."
+    """Claude API ile kural tabanlı analizi zenginleştirir; oyuncu adı ve kulüp çıkarımı dahil."""
+    SYSTEM = "Sen Türk futbol analistsin. Haber başlığından yapılandırılmış veri çıkar. Sadece JSON döndür, açıklama ekleme."
     PROMPT = f"""Başlık: {article.get('title','')[:200]}
-Özet: {article.get('summary','')[:400]}
+Özet: {article.get('summary','')[:300]}
 
-JSON döndür (boşsa [] veya null):
-{{"summary_tr": "1 cümle özet Türkçe", "tags": ["takım/konu etiketleri"], "confidence_boost": "HIGH|MEDIUM|LOW"}}"""
+JSON döndür (değer belirsizse null):
+{{
+  "summary_tr": "1 cümle özet Türkçe",
+  "tags": ["takım/konu etiketleri maks 5"],
+  "player_name": "Haberin ana konusu oyuncunun tam adı (tek kişi, en net olan) veya null",
+  "from_club": "Oyuncunun ayrıldığı/mevcut kulübü veya null",
+  "to_club": "Oyuncunun gittiği/hedef kulübü veya null",
+  "confidence_boost": "HIGH|MEDIUM|LOW"
+}}"""
 
     try:
         msg = client.messages.create(
-            model="claude-haiku-4-5-20251001", max_tokens=256,
+            model="claude-haiku-4-5-20251001", max_tokens=300,
             system=SYSTEM, messages=[{"role": "user", "content": PROMPT}]
         )
         raw = msg.content[0].text.strip()
@@ -606,6 +629,21 @@ def _merge_analyses(rule_result: dict, claude_result: dict) -> dict:
         merged["summary_tr"] = claude_result["summary_tr"]
     if claude_result.get("tags"):
         merged["tags"] = _unique_in_order(merged.get("tags", []) + claude_result.get("tags", []), limit=10)
+
+    # Claude'dan oyuncu adı geldiyse, kural tabanlı sistemin çözemediği rumorlara uygula
+    claude_player = (claude_result.get("player_name") or "").strip() or None
+    claude_to = (claude_result.get("to_club") or "").strip() or None
+    claude_from = (claude_result.get("from_club") or "").strip() or None
+    if claude_player:
+        for rumor in merged.get("transfer_rumors", []):
+            if not rumor.get("player_name") and rumor.get("direction_quality") == "PLAYER_UNRESOLVED":
+                rumor["player_name"] = claude_player
+                rumor["direction_quality"] = "CLAUDE_EXTRACTED"
+                if claude_to and not rumor.get("to_club"):
+                    rumor["to_club"] = claude_to
+                if claude_from and not rumor.get("from_club"):
+                    rumor["from_club"] = claude_from
+
     merged["analysis_method"] = "rule_based+claude"
     return merged
 
