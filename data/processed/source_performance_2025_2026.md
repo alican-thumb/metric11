@@ -8,11 +8,11 @@
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 0
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 667
+- Defterde korunan ilk iddia gözlemi: 669
 
 ## Kanal Kapsamı
 
-- Google News: 213 haber, 30/30 başarılı sorgu.
+- Google News: 209 haber, 30/30 başarılı sorgu.
 - Telegram: 6 mesaj, 8/8 erişilebilir kanal.
 - X: durum=MISSING_CREDENTIALS, gönderi=0, yapılandırılmış hesap=45.
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 664 | 86 | 1 | — | — | %95.8 | 3.3 | PARTIAL_MEASUREMENT |
+| Google News / medya | 666 | 87 | 1 | — | — | %95.8 | 3.3 | PARTIAL_MEASUREMENT |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -49,7 +49,7 @@
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---|
 | CNN Türk Spor | MEDIA | 18 | 4 | 1 | — | — | %0.0 | 80.0 | PARTIAL_MEASUREMENT |
 | Fotomaç | MEDIA | 85 | 12 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
-| Hürriyet | MEDIA | 61 | 5 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Hürriyet | MEDIA | 62 | 5 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Takvim | MEDIA | 58 | 4 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Milliyet | MEDIA | 31 | 4 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | NTVSpor | MEDIA | 25 | 3 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
@@ -73,8 +73,8 @@
 | beinsports.com.tr | MEDIA | 11 | 0 | 0 | — | — | — | — | OBSERVING |
 | Taka Gazete | MEDIA | 10 | 3 | 0 | — | — | — | — | OBSERVING |
 | Haberler | MEDIA | 9 | 1 | 0 | — | — | — | — | OBSERVING |
+| Gazete Vatan | MEDIA | 8 | 1 | 0 | — | — | — | — | OBSERVING |
 | Anadolu Ajansı Spor | AGENCY | 7 | 0 | 0 | — | — | — | — | OBSERVING |
-| Gazete Vatan | MEDIA | 7 | 0 | 0 | — | — | — | — | OBSERVING |
 | Haber 7 | MEDIA | 7 | 0 | 0 | — | — | — | — | OBSERVING |
 | Sporx.com | MEDIA | 7 | 2 | 0 | — | — | — | — | OBSERVING |
 | Yeniçağ Gazetesi | MEDIA | 7 | 1 | 0 | — | — | — | — | OBSERVING |
