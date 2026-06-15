@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-15T07:39:29.482245+00:00",
+  "generated_at": "2026-06-15T10:17:51.484363+00:00",
   "season": "2025_2026",
   "source_type": "official_club",
   "collection_status": "PARTIAL_SUCCESS",
   "configured_sources": 21,
-  "successful_sources": 14,
+  "successful_sources": 15,
   "current_league_sources": 18,
-  "successful_current_league_sources": 12,
-  "total_articles": 12,
+  "successful_current_league_sources": 13,
+  "total_articles": 14,
   "sources": [
     {
       "team": "BEŞİKTAŞ A.Ş.",
@@ -135,16 +135,16 @@
       "current_league": true,
       "fetched": 0,
       "warnings": [],
-      "error": "listing: HTTPSConnectionPool(host='eyupspor.org.tr', port=443): Read timed out. (read timeout=8)"
+      "error": null
     },
     {
       "team": "GENÇLERBİRLİĞİ",
       "name": "Gençlerbirliği Resmi Web",
       "url": "https://genclerbirligi.org.tr/haberler",
       "current_league": true,
-      "fetched": 0,
+      "fetched": 5,
       "warnings": [],
-      "error": "listing: HTTPSConnectionPool(host='genclerbirligi.org.tr', port=443): Read timed out."
+      "error": null
     },
     {
       "team": "FATİH KARAGÜMRÜK",
@@ -153,7 +153,7 @@
       "current_league": false,
       "fetched": 0,
       "warnings": [],
-      "error": null
+      "error": "listing: 415 Client Error: Unsupported Media Type for url: https://www.karagumruk.com/"
     },
     {
       "team": "HESAP.COM ANTALYASPOR",
@@ -169,9 +169,11 @@
       "name": "Kayserispor Resmi Web",
       "url": "https://kayserispor.org.tr/",
       "current_league": false,
-      "fetched": 0,
-      "warnings": [],
-      "error": "listing: HTTPSConnectionPool(host='kayserispor.org.tr', port=443): Read timed out. (read timeout=8); article https://mail.kayserispor.org/public/index.php/transferler/kayserispor--"
+      "fetched": 1,
+      "warnings": [
+        "listing: HTTPSConnectionPool(host='kayserispor.org.tr', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVe"
+      ],
+      "error": null
     },
     {
       "team": "ÇORUM FK",
@@ -187,9 +189,9 @@
       "name": "Erzurumspor FK Resmi Web",
       "url": "https://erzurumsporfk.org/",
       "current_league": true,
-      "fetched": 4,
+      "fetched": 0,
       "warnings": [],
-      "error": null
+      "error": "listing: 415 Client Error: Unsupported Media Type for url: https://erzurumsporfk.org/"
     },
     {
       "team": "AMED SFK",
@@ -265,88 +267,6 @@
       "first_observed_at": "2026-06-09T20:23:19.424613+00:00"
     },
     {
-      "article_id": "f7da059c9928",
-      "source_type": "official_club",
-      "source_name": "Erzurumspor FK Resmi Web",
-      "account_type": "official",
-      "related_team": "ERZURUMSPOR FK",
-      "source_url": "https://erzurumsporfk.org/",
-      "title": "Matija Orbanic ve Yakup Kırtay’ın Sağlık Durumu Hakkında Bilgilendirme",
-      "link": "https://erzurumsporfk.org/2026/04/14/matija-orbanic-ve-yakup-kirtayin-saglik-durumu-hakkinda-bilgilendirme/",
-      "summary": "Matija Orbanic ve Yakup Kırtay’ın Sağlık Durumu Hakkında Bilgilendirme – Erzurumspor Futbol Kulübü Resmi Web Sitesi Skip to content Basın Açıklamaları BİLGİ Kulüp haberleri Sağlık Raporu 14 Nisan 2026 ERZURUMSPOR FK Boluspor maçında sakatlanarak oyuna devam edemeyen oyuncularımızdan Matija Orbanic’in sağ omzunda çıkık tespit edilmiş, omzu sabitlenerek hastaneye kaldırılmış ve uygulanan müdahale ile eklem yerine yerleştirilmiştir. Yapılan detaylı MR tetkikleri sonucunda; omuz ve dirsek çevresi kaslarda orta derecede zorlanma ve kanama ile eklem kapsüllerinde ödem tespit edilmiştir. Oyuncumuzun ",
-      "full_text": "Matija Orbanic ve Yakup Kırtay’ın Sağlık Durumu Hakkında Bilgilendirme – Erzurumspor Futbol Kulübü Resmi Web Sitesi Skip to content Basın Açıklamaları BİLGİ Kulüp haberleri Sağlık Raporu 14 Nisan 2026 ERZURUMSPOR FK Boluspor maçında sakatlanarak oyuna devam edemeyen oyuncularımızdan Matija Orbanic’in sağ omzunda çıkık tespit edilmiş, omzu sabitlenerek hastaneye kaldırılmış ve uygulanan müdahale ile eklem yerine yerleştirilmiştir. Yapılan detaylı MR tetkikleri sonucunda; omuz ve dirsek çevresi kaslarda orta derecede zorlanma ve kanama ile eklem kapsüllerinde ödem tespit edilmiştir. Oyuncumuzun tedavisinin ileri aşamaları sağlık ekibimiz tarafından planlanmaktadır. Yakup Kırtay’ın ise sol uyluk arka kas grubunda (biceps femoris ve semitendinosus) orta derecede zorlanma ve kanama tespit edilmiş olup, tedavisine sağlık ekibimiz tarafından başlanmıştır. Sipay Bodrum FK maçı hazırlıklarımız başladı. Bunları da sevebilirsiniz Heyelandan etkilenen tüm vatandaşlarımıza geçmiş olsun.. 22 Temmuz 2021 ERZURUMSPOR FK İtalya’da Dünya Şampiyonu olan EBB Gençlik Spor Kulübü Kick Boks sporcusu.. 27 Ekim 2021 ERZURUMSPOR FK Kamuoyunun Bilgisine | 14 Aralık 2020 ERZURUMSPOR FK",
-      "published_at": "2026-04-14T18:43:29+03:00",
-      "categories": [
-        "injury"
-      ],
-      "super_lig_relevant": true,
-      "analyzed": false,
-      "claude_analysis": null,
-      "first_observed_at": "2026-06-14T16:00:51.718800+00:00"
-    },
-    {
-      "article_id": "de303ed8aa17",
-      "source_type": "official_club",
-      "source_name": "Erzurumspor FK Resmi Web",
-      "account_type": "official",
-      "related_team": "ERZURUMSPOR FK",
-      "source_url": "https://erzurumsporfk.org/",
-      "title": "Sağlık Raporu",
-      "link": "https://erzurumsporfk.org/category/basin-aciklamalari/saglik-raporu/",
-      "summary": "Sağlık Raporu – Erzurumspor Futbol Kulübü Resmi Web Sitesi Skip to content Basın Açıklamaları BİLGİ Kulüp haberleri Sağlık Raporu 14 Nisan 2026 ERZURUMSPOR FK Boluspor maçında sakatlanarak oyuna devam edemeyen oyuncularımızdan Matija Orbanic’in sağ omzunda çıkık tespit edilmiş, omzu sabitlenerek hastaneye kaldırılmış ve uygulanan Read More Basın Açıklamaları BİLGİ Kulüp haberleri Sağlık Raporu 6 Nisan 2026 ERZURUMSPOR FK Alagöz Holding Iğdır FK karşılaşmasının 46. dakikasında yaşadığı pozisyon sonrası oyuna devam edemeyen futbolcumuz Safa Akgün’ün yapılan detaylı MR tetkikleri Read More Basın ",
-      "full_text": "Sağlık Raporu – Erzurumspor Futbol Kulübü Resmi Web Sitesi Skip to content Basın Açıklamaları BİLGİ Kulüp haberleri Sağlık Raporu 14 Nisan 2026 ERZURUMSPOR FK Boluspor maçında sakatlanarak oyuna devam edemeyen oyuncularımızdan Matija Orbanic’in sağ omzunda çıkık tespit edilmiş, omzu sabitlenerek hastaneye kaldırılmış ve uygulanan Read More Basın Açıklamaları BİLGİ Kulüp haberleri Sağlık Raporu 6 Nisan 2026 ERZURUMSPOR FK Alagöz Holding Iğdır FK karşılaşmasının 46. dakikasında yaşadığı pozisyon sonrası oyuna devam edemeyen futbolcumuz Safa Akgün’ün yapılan detaylı MR tetkikleri Read More Basın Açıklamaları Kulüp haberleri Sağlık Raporu 26 Eylül 2025 ERZURUMSPOR FK Futbolcumuz, Furkan Özhan‘ın Adana Demirspor maçı sonrasında yapılan detaylı MR tetkik incelemesi sonucu sağ diz iç yan bağlarında (MCL) zorlanma Read More Basın Açıklamaları BİLGİ Kulüp haberleri Sağlık Raporu 1 Nisan 2025 ERZURUMSPOR FK Oyuncumuz Celal Hanalp’ın antrenmanda sakatlanması üzerine çekilen detaylı MR tetkik incelemesi sonucu, ‘’sağ bacak alt adele, gastrocnemius kası musculotendinoz bileşkesinde Read More Basın Açıklamaları BİLGİ Kulüp haberleri Sağlık Raporu 28 Şubat 2025 ERZURUMSPOR FK Trendyol 1. Lig’in 25. Haftası’nda karşılaştığımız Esenler Erokspor maçında sakatlanarak oyuna devam edemeyen futbolcumuz, Sefa Akgün’ün yapılan detaylı MR ve Read More Basın Açıklamaları Kulüp haberleri Sağlık Raporu 30 Aralık 2024 ERZURUMSPOR FK Trendyol 1. Lig’in 17. Haftası’nda karşılaştığımız Sakaryaspor maçının 39. dakikasında sakatlanarak oyundan çıkan Celal Hanalp‘ın yapılan MR tetkik incelemesi sonucu Read More Basın Açıklamaları Kulüp haberleri Sağlık Raporu 14 Aralık 2024 ERZURUMSPOR FK Hafta içi yapılan antrenmanda talihsiz bir pozisyon sonucu sakatlanan oyuncumuz, Giovanni Crociata’nın yapılan MR tektik sonucunda ‘’sağ arka adele, hamstring Read More Basın Açıklamaları BİLGİ Sağlık Raporu 8 Aralık 2024 ERZURUMSPOR FK Adanaspor maçında sakatlanarak oyuna devam edemeyen futbolcularımız, Eren Tozlu ve Mustafa Yumlu’nun bugün gerçekleştirilen MR tetkik sonuçlarına göre; Eren Tozlu’nun Read More Kulüp haberleri Sağlık Raporu 24 Ağustos 2024 ERZURUMSPOR FK Sağlık ekibimizden açıklama; Trendyol 1. Lig’in 3. Haftası’nda deplasmanda karşılaştığımız Kocaelispor maçının 43. dakikasında ayağına aldığı darbe nedeniyle sakatlanarak oyundan Read More Sağlık Raporu 27 Şubat 2024 ERZURUMSPOR FK Trendyol 1. Lig’in 24. Haftası’nda karşılaştığımız Boluspor maçında sakatlanan futbolcumuz, Mustafa Akbaş’ın yapılan tetkikler sonucunda Sol hamstrin kas grubu, biceps Read More ← Önceki",
-      "published_at": "2026-04-14T18:43:29+03:00",
-      "categories": [
-        "injury"
-      ],
-      "super_lig_relevant": true,
-      "analyzed": false,
-      "claude_analysis": null,
-      "first_observed_at": "2026-06-14T16:00:51.718800+00:00"
-    },
-    {
-      "article_id": "97e7b87311ba",
-      "source_type": "official_club",
-      "source_name": "Erzurumspor FK Resmi Web",
-      "account_type": "official",
-      "related_team": "ERZURUMSPOR FK",
-      "source_url": "https://erzurumsporfk.org/",
-      "title": "Sefa Akgün’ün Sağlık Durumu Hakkında Bilgilendirme",
-      "link": "https://erzurumsporfk.org/2026/04/06/sefa-akgunun-saglik-durumu-hakkinda-bilgilendirme/",
-      "summary": "Sefa Akgün’ün Sağlık Durumu Hakkında Bilgilendirme – Erzurumspor Futbol Kulübü Resmi Web Sitesi Skip to content Basın Açıklamaları BİLGİ Kulüp haberleri Sağlık Raporu 6 Nisan 2026 ERZURUMSPOR FK Alagöz Holding Iğdır FK karşılaşmasının 46. dakikasında yaşadığı pozisyon sonrası oyuna devam edemeyen futbolcumuz Safa Akgün’ün yapılan detaylı MR tetkikleri sonucunda; sağ uyluk quadriceps kas grubu içerisinde yer alan rectus femoris kasının distal bölümünde orta derecede zorlanma ve buna bağlı kanama tespit edilmiştir. Oyuncumuzun tedavisine sağlık ekibimiz tarafından başlanmıştır. İstanbulspor maçı",
-      "full_text": "Sefa Akgün’ün Sağlık Durumu Hakkında Bilgilendirme – Erzurumspor Futbol Kulübü Resmi Web Sitesi Skip to content Basın Açıklamaları BİLGİ Kulüp haberleri Sağlık Raporu 6 Nisan 2026 ERZURUMSPOR FK Alagöz Holding Iğdır FK karşılaşmasının 46. dakikasında yaşadığı pozisyon sonrası oyuna devam edemeyen futbolcumuz Safa Akgün’ün yapılan detaylı MR tetkikleri sonucunda; sağ uyluk quadriceps kas grubu içerisinde yer alan rectus femoris kasının distal bölümünde orta derecede zorlanma ve buna bağlı kanama tespit edilmiştir. Oyuncumuzun tedavisine sağlık ekibimiz tarafından başlanmıştır. İstanbulspor maçı hazırlıklarımız sürüyor. Takımımız, İstanbulspor maçı hazırlıklarını sürdürüyor. Bunları da sevebilirsiniz Haftalık Basın Toplantısı Hakkında | 31 Temmuz 2023 ERZURUMSPOR FK Teknik Direktörümüz Mehmet Özdilek’in maç sonu açıklamaları… 13 Eylül 2020 ERZURUMSPOR FK KINAMA 4 Eylül 2018 ERZURUMSPOR FK",
-      "published_at": "2026-04-06T20:10:43+03:00",
-      "categories": [
-        "transfer",
-        "injury"
-      ],
-      "super_lig_relevant": true,
-      "analyzed": false,
-      "claude_analysis": null,
-      "first_observed_at": "2026-06-14T16:00:51.718800+00:00"
-    },
-    {
-      "article_id": "2ae0ca4ce0c3",
-      "source_type": "official_club",
-      "source_name": "Erzurumspor FK Resmi Web",
-      "account_type": "official",
-      "related_team": "ERZURUMSPOR FK",
-      "source_url": "https://erzurumsporfk.org/",
-      "title": "Altyapımızdan Evren Çelik, Ali Şahin ve Yiğit Baran Karaoğlan’la Resmi Sözleşme İmzaladık",
-      "link": "https://erzurumsporfk.org/2025/11/05/altyapimizdan-evren-celik-ali-sahin-ve-yigit-baran-karaoglan-resmi-sozlesme-imzaladik/",
-      "summary": "Altyapımızdan Evren Çelik, Ali Şahin ve Yiğit Baran Karaoğlan’la Resmi Sözleşme İmzaladık – Erzurumspor Futbol Kulübü Resmi Web Sitesi Skip to content BİLGİ Kulüp haberleri Transfer Haberleri 5 Kasım 2025 ERZURUMSPOR FK Altyapımızdan, 2007 doğumlu iki genç kalecimiz Evren Çelik ve Ali Şahin ile 2006 doğumlu genç stoperimiz Yiğit Baran Karaoğlan, profesyonel sözleşmeye imza attı. Kulüp Başkanımız Ahmet Dal, yaptığı açıklamada şu ifadelere yer verdi: “Daha önce birçok kez vurguladım; Erzurumspor olarak yalnız bugünü değil, yarınlarımızı da inşa ediyoruz. Bu noktada altyapıya verdiğimiz önem, kul",
-      "full_text": "Altyapımızdan Evren Çelik, Ali Şahin ve Yiğit Baran Karaoğlan’la Resmi Sözleşme İmzaladık – Erzurumspor Futbol Kulübü Resmi Web Sitesi Skip to content BİLGİ Kulüp haberleri Transfer Haberleri 5 Kasım 2025 ERZURUMSPOR FK Altyapımızdan, 2007 doğumlu iki genç kalecimiz Evren Çelik ve Ali Şahin ile 2006 doğumlu genç stoperimiz Yiğit Baran Karaoğlan, profesyonel sözleşmeye imza attı. Kulüp Başkanımız Ahmet Dal, yaptığı açıklamada şu ifadelere yer verdi: “Daha önce birçok kez vurguladım; Erzurumspor olarak yalnız bugünü değil, yarınlarımızı da inşa ediyoruz. Bu noktada altyapıya verdiğimiz önem, kulübümüzün geleceğinin teminatı niteliğinde. Gençlerimize futbolun her alanında fırsat sunmayı, onları doğru eğitimle ve doğru değerlerle yetiştirmeyi hedefliyoruz.’’ Hem camiamıza hem de bu genç kardeşlerimize hayırlı olsun. Erzurumsporumuz, Esenler Erokspor maçı hazırlıklarına devam ediyor. Esenler Erokspor maçı hazırlıklarımız sürüyor. Bunları da sevebilirsiniz Haftalık Basın Toplantısı Hakkında | 31 Temmuz 2023 ERZURUMSPOR FK Geçmiş Olsun Mustafa Akbaş 24 Ağustos 2024 ERZURUMSPOR FK Basın mensuplarımızla kahvaltıda bir araya gelerek.. 11 Haziran 2020 ERZURUMSPOR FK",
-      "published_at": "2025-11-05T17:30:48+03:00",
-      "categories": [
-        "transfer",
-        "suspension"
-      ],
-      "super_lig_relevant": true,
-      "analyzed": false,
-      "claude_analysis": null,
-      "first_observed_at": "2026-06-14T16:00:51.718800+00:00"
-    },
-    {
       "article_id": "9c93da71e481",
       "source_type": "official_club",
       "source_name": "Antalyaspor Resmi Web",
@@ -390,6 +310,27 @@
       "first_observed_at": "2026-06-09T16:49:05.970702+00:00"
     },
     {
+      "article_id": "fdf0eceb9b79",
+      "source_type": "official_club",
+      "source_name": "Kayserispor Resmi Web",
+      "account_type": "official",
+      "related_team": "ZECORNER KAYSERİSPOR",
+      "source_url": "https://kayserispor.org.tr/",
+      "title": "Kayserispor, Laszlo Benes'i transfer etti",
+      "link": "https://mail.kayserispor.org/public/index.php/transferler/kayserispor--laszlo-benes-i-transfer-etti",
+      "summary": "Kayserispor, Laszlo Benes'i transfer etti | KAYSERİSPOR.ORG   Anasayfa article Haberler format_list_numbered Liste storage Testler poll Anketler ondemand_video Videolar sports_soccer 2023-2024 article Haberler sports_soccer 2023-2024 Copyright © 2026 KAYSERİSPOR.ORG. Tüm Hakları Saklıdır.  Kayserispor, Laszlo Benes'i transfer etti Transferler Kayserispor, Laszlo Benes'i transfer etti 9 ay önce oluşturuldu. — 1 saniye önce güncellendi Kayserispor, Union Berlin'den Laszlo Benes'i renklerine bağladı. Kayserispor , orta saha kurgusuna takviyede bulundu. Sarı-kırmızılılar, Union Berlin forması g",
+      "full_text": "Kayserispor, Laszlo Benes'i transfer etti | KAYSERİSPOR.ORG   Anasayfa article Haberler format_list_numbered Liste storage Testler poll Anketler ondemand_video Videolar sports_soccer 2023-2024 article Haberler sports_soccer 2023-2024 Copyright © 2026 KAYSERİSPOR.ORG. Tüm Hakları Saklıdır.  Kayserispor, Laszlo Benes'i transfer etti Transferler Kayserispor, Laszlo Benes'i transfer etti 9 ay önce oluşturuldu. — 1 saniye önce güncellendi Kayserispor, Union Berlin'den Laszlo Benes'i renklerine bağladı. Kayserispor , orta saha kurgusuna takviyede bulundu. Sarı-kırmızılılar, Union Berlin forması giyen 27 yaşındaki Slovak futbolcu Laszlo Benes ile anlaşma sağladı. Laszlo Benes'in kiralık olarak takıma dahil edildiği belirtildi. Anlaşmada satın alma opsiyonu maddesinin yer aldığı aktarıldı. Kayserispor'dan yapılan açıklamada şu ifadeler kullanıldı: \"Kulübümüz, FC Union Berlin forması giyen Laszlo Benes'in, satın alma opsiyonu kulübümüzde olmak üzere 1 yıllığına kiralık olarak kadromuza katılması konusunda hem kulübüyle hem de oyuncuyla anlaşmaya varmıştır.\" Laszlo Benes Kayserispor Union Berlin Bu İçeriğe Tepki Ver (en fazla 3 tepki) 2 Beğendim 0 Beğenmedim Facebook Yorumları Bugünün En iyileri 20  Kayserispor'un Geride Kalan 59 Sezonda İlk Hafta Maç İstatistikleri 20  Kayserispor 2024-2025 Futbolcuların Diğer İstatistikleri. 20  2025-2026 Sezonu Süper Lig Takım Harcama Limitleri Belirlendi 20  2025-2026 Sezonu Hakem Listesi Açıklandı! 20  Nurettin Açıkalın \"Bu saatten sonra gelse dahi almayız\" 20  Samsunspor-Kayserispor Maçının Günü ve Saati Belli Oldu. 20  Kayserispor ve bir Cardoso Hikayesi-Üstün Tuncel 20  2024-2025 Süper Lig: Kayserispor 3-1 Antalyaspor 20  2024-2025 Süper Lig: Alanyaspor 1-1 Kayserispor (Maç Özetleri) 20  2024-2025 Süper Lig: Alanyaspor 1-1 Kayserispor Topluğumuza bağlan Facebook üzerinde takip et X üzerinde takip et Youtube üzerinde abone ol Instagram üzerinde takip et Pinterest üzerinde bize katıl Tumblr üzerinde takip et Flickr üzerinde takip et Linkedin üzerinde takip et Telegram üzerinde takip et Tiktok üzerinde takip et Whatsapp üzerinde takip et OK üzerinde takip et VK üzerinde takip et RSS üzerinde takip et ",
+      "published_at": "2025-08-16T20:51:53+03:00",
+      "categories": [
+        "transfer",
+        "lineup"
+      ],
+      "super_lig_relevant": true,
+      "analyzed": false,
+      "claude_analysis": null,
+      "first_observed_at": "2026-06-15T10:17:51.484363+00:00"
+    },
+    {
       "article_id": "94dddca0b08f",
       "source_type": "official_club",
       "source_name": "Başakşehir Resmi Web",
@@ -409,6 +350,114 @@
       "analyzed": false,
       "claude_analysis": null,
       "first_observed_at": "2026-06-07T04:57:52.087984+00:00"
+    },
+    {
+      "article_id": "53c4aa9d76d4",
+      "source_type": "official_club",
+      "source_name": "Gençlerbirliği Resmi Web",
+      "account_type": "official",
+      "related_team": "GENÇLERBİRLİĞİ",
+      "source_url": "https://genclerbirligi.org.tr/haberler",
+      "title": "Başkent Sporunun Geleceği İçin Kulübümüz ile ABB Arasında İş Birliği Protokolü İmzalandı | 11 HAZİRAN 2026",
+      "link": "https://genclerbirligi.org.tr/haberler/baskent-sporunun-gelecegi-icin-kulubumuz-ile-abb-arasinda-is-birligi-protokolu-imzalandi-11-haziran-2026",
+      "summary": "Gençlerbirliği Spor Kulübü Gençlerbirliği Var Ol Daima Bizi Takip Edin: ✕ Gençlerbirliği Var Ol Daima Sosyal Medya Hesaplarımızı Takip Edin! Kulübümüz Tarihimiz Kurullar Yönetim Kurulu Onursal Başkan Tüzüğümüz Basın Kiti Medya Merkezi Foto Galeri Video Merkezi Haberler İletişim Futbol A Takım Futbolcular Teknik Ekip Teknik Ekip İdari Ekip Scout Ekimiz Yardımcı Ekip Sağlık Ekibi Branşlar Bocce Bowling Eskrim Kickboks Voleybol Yüzme Haberler Haberler Gençlerbirliği Sportif A.Ş. Kırmızı Kara Store Gençlerbirliği - Haberler ve Duyurular Başkent Sporunun Geleceği İçin Kulübümüz ile ABB Arasında İş ",
+      "full_text": "Gençlerbirliği Spor Kulübü Gençlerbirliği Var Ol Daima Bizi Takip Edin: ✕ Gençlerbirliği Var Ol Daima Sosyal Medya Hesaplarımızı Takip Edin! Kulübümüz Tarihimiz Kurullar Yönetim Kurulu Onursal Başkan Tüzüğümüz Basın Kiti Medya Merkezi Foto Galeri Video Merkezi Haberler İletişim Futbol A Takım Futbolcular Teknik Ekip Teknik Ekip İdari Ekip Scout Ekimiz Yardımcı Ekip Sağlık Ekibi Branşlar Bocce Bowling Eskrim Kickboks Voleybol Yüzme Haberler Haberler Gençlerbirliği Sportif A.Ş. Kırmızı Kara Store Gençlerbirliği - Haberler ve Duyurular Başkent Sporunun Geleceği İçin Kulübümüz ile ABB Arasında İş Birliği Protokolü İmzalandı | 11 HAZİRAN 2026 Gençlerbirliği Var Ol Daima 11.06.2026 Haberler ve Duyurular Başkent Sporunun Geleceği İçin Kulübümüz ile ABB Arasında İş Birliği Protokolü İmzalandı | 11 HAZİRAN 2026 Ankara futbolunun ve başkent sporunun gelişimine katkı sağlamak amacıyla; Kulübümüz, MKE Ankaragücü ve Ankara Büyükşehir Belediyesi (ABB) arasında önemli bir iş birliği protokolüne imza atıldı. Protokol, ABB Meclisi’nin amatör şubeleri desteklemek adına aldığı maddi yardım kararının ardından resmiyet kazandı. Başkanımız Haydar Arda Çakmak, MKE Ankaragücü Kulübü Başkanı İlhami Alparslan ve Ankara Büyükşehir Belediyesi Gençlik ve Spor Hizmetleri Dairesi Başkanı Doç. Dr. Serkan Yorgancılar, Genç Akademi Ulus’ta düzenlenen organizasyonda geleceğin sporcu adayı öğrencilerle bir araya geldi. İmza törenine Stadyumdan Sorumlu Yönetim Kurulu Üyemiz Okan Can Çevik ve Denetleme Kurulu Üyemiz Nurettin Özbek de katıldı. Ankara Büyükşehir Belediye Meclisi'nin amatör şubelerde kullanılmak üzere kulüplere maddi destek verilmesi yönündeki örnek kararının hemen akabinde, altyapıları güçlendirmek ve genç sporcuların gelişimine kalıcı katkı sağlamak amacıyla hazırlanan iş birliği protokolü resmen hayata geçirildi. “BİZLER GELİP GEÇİCİYİZ; HER ŞEY ANKARALILAR İÇİN” İş birliği protokolünde konuşan Başkanımız Haydar Arda Çakmak şunları söyledi: \"Öncelikle bu güzel organizasyon için çok teşekkür ederim. MKE Ankaragücü Başkanı Sayın İlhami Alparslan’ın da belirttiği gibi Ankara Büyükşehir Belediye Başkanımıza ve meclis üyelerimizin hepsine tek tek şükranlarımı sunuyorum. MKE Ankaragücü ve Gençlerbirliği'nin amatör takımları, Ankara'nın en önemli değerlerindendir. Bizler, başkentin gençleri için çalışıyor ve onları birer sporcu olarak yetiştirmeyi amaçlıyoruz. İnşallah bu yardımlar sayesinde kulüplerimize daha güçlü altyapılar ve modern tesisler kazandıracağız. Şunu özellikle vurgulamak isterim: Gençlerbirliği ve MKE Ankaragücü, Ankara'nın markalarıdır. Biz Süper Lig'deyiz; inşallah MKE Ankaragücü de en kısa sürede Süper Lig'e yükselecek ve Ankara'yı orada temsil edecektir. Bu iki takım her zaman en üst liglerde yer almak ve Ankara'yı layığıyla temsil etmek zorundadır. Bizim de yegâne amacımız, Gençlerbirliği'ni hak ettiği daha iyi yerlere getirmektir. İnşallah önümüzdeki sezon daha güçlü bir kadro kuracak, daha iyi bir takım yaratacağız. Sonuçta bizler gelip geçiciyiz; her",
+      "published_at": null,
+      "categories": [
+        "transfer",
+        "suspension",
+        "lineup"
+      ],
+      "super_lig_relevant": true,
+      "analyzed": false,
+      "claude_analysis": null,
+      "first_observed_at": "2026-06-15T10:17:51.484363+00:00"
+    },
+    {
+      "article_id": "f5c1980c35bf",
+      "source_type": "official_club",
+      "source_name": "Gençlerbirliği Resmi Web",
+      "account_type": "official",
+      "related_team": "GENÇLERBİRLİĞİ",
+      "source_url": "https://genclerbirligi.org.tr/haberler",
+      "title": "Evine Hoş Geldin Metin Diyadin | 5 MAYIS 2026",
+      "link": "https://genclerbirligi.org.tr/haberler/evine-hos-geldin-metin-diyadin-5-mayis-2026",
+      "summary": "Gençlerbirliği Spor Kulübü Gençlerbirliği Var Ol Daima Bizi Takip Edin: ✕ Gençlerbirliği Var Ol Daima Sosyal Medya Hesaplarımızı Takip Edin! Kulübümüz Tarihimiz Kurullar Yönetim Kurulu Onursal Başkan Tüzüğümüz Basın Kiti Medya Merkezi Foto Galeri Video Merkezi Haberler İletişim Futbol A Takım Futbolcular Teknik Ekip Teknik Ekip İdari Ekip Scout Ekimiz Yardımcı Ekip Sağlık Ekibi Branşlar Bocce Bowling Eskrim Kickboks Voleybol Yüzme Haberler Haberler Gençlerbirliği Sportif A.Ş. Kırmızı Kara Store Gençlerbirliği - Haberler ve Duyurular Evine Hoş Geldin Metin Diyadin | 5 MAYIS 2026 Gençlerbirliği ",
+      "full_text": "Gençlerbirliği Spor Kulübü Gençlerbirliği Var Ol Daima Bizi Takip Edin: ✕ Gençlerbirliği Var Ol Daima Sosyal Medya Hesaplarımızı Takip Edin! Kulübümüz Tarihimiz Kurullar Yönetim Kurulu Onursal Başkan Tüzüğümüz Basın Kiti Medya Merkezi Foto Galeri Video Merkezi Haberler İletişim Futbol A Takım Futbolcular Teknik Ekip Teknik Ekip İdari Ekip Scout Ekimiz Yardımcı Ekip Sağlık Ekibi Branşlar Bocce Bowling Eskrim Kickboks Voleybol Yüzme Haberler Haberler Gençlerbirliği Sportif A.Ş. Kırmızı Kara Store Gençlerbirliği - Haberler ve Duyurular Evine Hoş Geldin Metin Diyadin | 5 MAYIS 2026 Gençlerbirliği Var Ol Daima 05.05.2026 Haberler ve Duyurular Evine Hoş Geldin Metin Diyadin | 5 MAYIS 2026 Kulübümüz, Profesyonel Futbol A Takım teknik direktörlük görevi için camiamızın öz evladı Metin Diyadin ile yeniden anlaşmaya vardı. Kırmızı-kara formamızı yıllarca gururla terleten, sahadaki duruşu ve karakteriyle camiamızın unutulmazları arasına giren Metin Diyadin, birikimi ve aidiyet duygusuyla yeniden ait olduğu yerde, evinde! Teknik Direktörümüz Metin Diyadin ve ekibine \"Evine hoş geldin\" diyor, bu birlikteliğin hem hocamız hem de asırlık çınarımız için başarılarla dolu yeni bir dönemin başlangıcı olmasını temenni ediyoruz. Gençlerbirliği Spor Kulübü İlgili Diğer Haberler 11.06.2026 Başkanımız Haydar Arda Çakmak ve yönetim kurulu üyelerimizden TUSAŞ’a ziyaret | 11 HAZİRAN 2026 Devamı 11.06.2026 Başkent Sporunun Geleceği İçin Kulübümüz ile ABB Arasında İş Birliği Protokolü İmzalandı | 11 HAZİRAN 2026 Devamı 05.06.2026 Finansal sıkıntılar büyük ölçüde çözüldü | 05 HAZİRAN 2026 Devamı 04.06.2026 2026-2027 Sezonu Kombine Biletleri Sahipleriyle Buluşuyor | 04 HAZİRAN 2026 Devamı 24.05.2026 Turnuvanın Galibi Belirlendi | 24 MAYIS 2026 Devamı 21.05.2026 Camiamız, Pilav Günü’nde Bir Araya Geldi | 21 MAYIS 2026 Devamı 20.05.2026 Ankara Cumhuriyet Başsavcısı Gökhan Karaköse’den Kulübümüze Ziyaret | 20 MAYIS 2026 Devamı 19.05.2026 TEBRİKLER RICARDO VELHO | 19 MAYIS 2026 Devamı 08.05.2026 Ankara İl Emniyet Müdürü Maksut Yüksek’e \"Hayırlı Olsun\" Ziyareti | 8 MAYIS 2026 Devamı 04.05.2026 TEŞEKKÜRLER VOLKAN DEMİREL | 4 MAYIS 2026 Devamı 20.04.2026 Yönetimimizden Bakan Yardımcısı Demiralp’e Ziyaret | 20 NİSAN 2026 Devamı 08.04.2026 Ekibimiz Yemekte Bir Araya Geldi | 08 NİSAN 2026 Devamı Copyright © Gençlerbirliği Spor Kulübü Resmi Web Sayfası Web Tasarım : Web Studio Web sitemizde, deneyiminizi iyileştirmek ve hizmetlerimizi daha verimli hale getirmek için çerezler kullanıyoruz. Çerezler; siteyi nasıl kullandığınızı anlamamıza, tercihlerinizi hatırlamamıza ve size daha kişisel bir deneyim sunmamıza yardımcı olur. Sitemizi kullanmaya devam ederek çerez kullanımını kabul etmiş oluyorsunuz. Dilerseniz tarayıcı ayarlarınızdan çerezleri yönetebilir veya devre dışı bırakabilirsiniz. Çerez Politikamızı İnceleyiniz Tümünü Reddet Tümünü Kabul Et × GENÇLERBİRLİĞİ Arama Yapın Gençlerbirliği Var Ol Daima × Kırmızı Kara Store Yayında! Hemen ziyaret edin! Devamı GENÇLERBİRLİĞİ",
+      "published_at": null,
+      "categories": [
+        "transfer",
+        "suspension",
+        "lineup"
+      ],
+      "super_lig_relevant": true,
+      "analyzed": false,
+      "claude_analysis": null,
+      "first_observed_at": "2026-06-15T10:17:51.484363+00:00"
+    },
+    {
+      "article_id": "da5adf01e5f5",
+      "source_type": "official_club",
+      "source_name": "Gençlerbirliği Resmi Web",
+      "account_type": "official",
+      "related_team": "GENÇLERBİRLİĞİ",
+      "source_url": "https://genclerbirligi.org.tr/haberler",
+      "title": "TEŞEKKÜRLER VOLKAN DEMİREL | 4 MAYIS 2026",
+      "link": "https://genclerbirligi.org.tr/haberler/tesekkurler-volkan-demirel-4-mayis-2026",
+      "summary": "Gençlerbirliği Spor Kulübü Gençlerbirliği Var Ol Daima Bizi Takip Edin: ✕ Gençlerbirliği Var Ol Daima Sosyal Medya Hesaplarımızı Takip Edin! Kulübümüz Tarihimiz Kurullar Yönetim Kurulu Onursal Başkan Tüzüğümüz Basın Kiti Medya Merkezi Foto Galeri Video Merkezi Haberler İletişim Futbol A Takım Futbolcular Teknik Ekip Teknik Ekip İdari Ekip Scout Ekimiz Yardımcı Ekip Sağlık Ekibi Branşlar Bocce Bowling Eskrim Kickboks Voleybol Yüzme Haberler Haberler Gençlerbirliği Sportif A.Ş. Kırmızı Kara Store Gençlerbirliği - Haberler ve Duyurular TEŞEKKÜRLER VOLKAN DEMİREL | 4 MAYIS 2026 Gençlerbirliği Var ",
+      "full_text": "Gençlerbirliği Spor Kulübü Gençlerbirliği Var Ol Daima Bizi Takip Edin: ✕ Gençlerbirliği Var Ol Daima Sosyal Medya Hesaplarımızı Takip Edin! Kulübümüz Tarihimiz Kurullar Yönetim Kurulu Onursal Başkan Tüzüğümüz Basın Kiti Medya Merkezi Foto Galeri Video Merkezi Haberler İletişim Futbol A Takım Futbolcular Teknik Ekip Teknik Ekip İdari Ekip Scout Ekimiz Yardımcı Ekip Sağlık Ekibi Branşlar Bocce Bowling Eskrim Kickboks Voleybol Yüzme Haberler Haberler Gençlerbirliği Sportif A.Ş. Kırmızı Kara Store Gençlerbirliği - Haberler ve Duyurular TEŞEKKÜRLER VOLKAN DEMİREL | 4 MAYIS 2026 Gençlerbirliği Var Ol Daima 04.05.2026 Haberler ve Duyurular TEŞEKKÜRLER VOLKAN DEMİREL | 4 MAYIS 2026 Gençlerbirliği Spor Kulübü Yönetim Kurulu kararımız ve kendisiyle yapılan görüşmeler neticesinde Teknik Direktörümüz Volkan Demirel’le yollarımız ayrılmıştır. Sayın Demirel ve teknik ekibine, görev süreleri boyunca kulübümüze sağladıkları katkılar için teşekkür eder, bundan sonraki kariyerlerinde başarılar dileriz. Gençlerbirliği Spor Kulübü İlgili Diğer Haberler 11.06.2026 Başkanımız Haydar Arda Çakmak ve yönetim kurulu üyelerimizden TUSAŞ’a ziyaret | 11 HAZİRAN 2026 Devamı 11.06.2026 Başkent Sporunun Geleceği İçin Kulübümüz ile ABB Arasında İş Birliği Protokolü İmzalandı | 11 HAZİRAN 2026 Devamı 05.06.2026 Finansal sıkıntılar büyük ölçüde çözüldü | 05 HAZİRAN 2026 Devamı 04.06.2026 2026-2027 Sezonu Kombine Biletleri Sahipleriyle Buluşuyor | 04 HAZİRAN 2026 Devamı 24.05.2026 Turnuvanın Galibi Belirlendi | 24 MAYIS 2026 Devamı 21.05.2026 Camiamız, Pilav Günü’nde Bir Araya Geldi | 21 MAYIS 2026 Devamı 20.05.2026 Ankara Cumhuriyet Başsavcısı Gökhan Karaköse’den Kulübümüze Ziyaret | 20 MAYIS 2026 Devamı 19.05.2026 TEBRİKLER RICARDO VELHO | 19 MAYIS 2026 Devamı 08.05.2026 Ankara İl Emniyet Müdürü Maksut Yüksek’e \"Hayırlı Olsun\" Ziyareti | 8 MAYIS 2026 Devamı 05.05.2026 Evine Hoş Geldin Metin Diyadin | 5 MAYIS 2026 Devamı 20.04.2026 Yönetimimizden Bakan Yardımcısı Demiralp’e Ziyaret | 20 NİSAN 2026 Devamı 08.04.2026 Ekibimiz Yemekte Bir Araya Geldi | 08 NİSAN 2026 Devamı Copyright © Gençlerbirliği Spor Kulübü Resmi Web Sayfası Web Tasarım : Web Studio Web sitemizde, deneyiminizi iyileştirmek ve hizmetlerimizi daha verimli hale getirmek için çerezler kullanıyoruz. Çerezler; siteyi nasıl kullandığınızı anlamamıza, tercihlerinizi hatırlamamıza ve size daha kişisel bir deneyim sunmamıza yardımcı olur. Sitemizi kullanmaya devam ederek çerez kullanımını kabul etmiş oluyorsunuz. Dilerseniz tarayıcı ayarlarınızdan çerezleri yönetebilir veya devre dışı bırakabilirsiniz. Çerez Politikamızı İnceleyiniz Tümünü Reddet Tümünü Kabul Et × GENÇLERBİRLİĞİ Arama Yapın Gençlerbirliği Var Ol Daima × Kırmızı Kara Store Yayında! Hemen ziyaret edin! Devamı GENÇLERBİRLİĞİ",
+      "published_at": null,
+      "categories": [
+        "transfer",
+        "suspension"
+      ],
+      "super_lig_relevant": true,
+      "analyzed": false,
+      "claude_analysis": null,
+      "first_observed_at": "2026-06-15T10:17:51.484363+00:00"
+    },
+    {
+      "article_id": "61da548fa96a",
+      "source_type": "official_club",
+      "source_name": "Gençlerbirliği Resmi Web",
+      "account_type": "official",
+      "related_team": "GENÇLERBİRLİĞİ",
+      "source_url": "https://genclerbirligi.org.tr/haberler",
+      "title": "Hoş Geldin Levent Şahin",
+      "link": "https://genclerbirligi.org.tr/haberler/hos-geldin-levent-sahin",
+      "summary": "Gençlerbirliği Spor Kulübü Gençlerbirliği Var Ol Daima Bizi Takip Edin: ✕ Gençlerbirliği Var Ol Daima Sosyal Medya Hesaplarımızı Takip Edin! Kulübümüz Tarihimiz Kurullar Yönetim Kurulu Onursal Başkan Tüzüğümüz Basın Kiti Medya Merkezi Foto Galeri Video Merkezi Haberler İletişim Futbol A Takım Futbolcular Teknik Ekip Teknik Ekip İdari Ekip Scout Ekimiz Yardımcı Ekip Sağlık Ekibi Branşlar Bocce Bowling Eskrim Kickboks Voleybol Yüzme Haberler Haberler Gençlerbirliği Sportif A.Ş. Kırmızı Kara Store Gençlerbirliği - Haberler ve Duyurular Hoş Geldin Levent Şahin Gençlerbirliği Var Ol Daima 16.02.202",
+      "full_text": "Gençlerbirliği Spor Kulübü Gençlerbirliği Var Ol Daima Bizi Takip Edin: ✕ Gençlerbirliği Var Ol Daima Sosyal Medya Hesaplarımızı Takip Edin! Kulübümüz Tarihimiz Kurullar Yönetim Kurulu Onursal Başkan Tüzüğümüz Basın Kiti Medya Merkezi Foto Galeri Video Merkezi Haberler İletişim Futbol A Takım Futbolcular Teknik Ekip Teknik Ekip İdari Ekip Scout Ekimiz Yardımcı Ekip Sağlık Ekibi Branşlar Bocce Bowling Eskrim Kickboks Voleybol Yüzme Haberler Haberler Gençlerbirliği Sportif A.Ş. Kırmızı Kara Store Gençlerbirliği - Haberler ve Duyurular Hoş Geldin Levent Şahin Gençlerbirliği Var Ol Daima 16.02.2026 Haberler ve Duyurular Hoş Geldin Levent Şahin Teknik Direktörümüz Levent Şahin ve ekibine hoş geldin diyor, yeni görevlerinde başarılar diliyoruz. İlgili Diğer Haberler 11.06.2026 Başkanımız Haydar Arda Çakmak ve yönetim kurulu üyelerimizden TUSAŞ’a ziyaret | 11 HAZİRAN 2026 Devamı 11.06.2026 Başkent Sporunun Geleceği İçin Kulübümüz ile ABB Arasında İş Birliği Protokolü İmzalandı | 11 HAZİRAN 2026 Devamı 05.06.2026 Finansal sıkıntılar büyük ölçüde çözüldü | 05 HAZİRAN 2026 Devamı 04.06.2026 2026-2027 Sezonu Kombine Biletleri Sahipleriyle Buluşuyor | 04 HAZİRAN 2026 Devamı 24.05.2026 Turnuvanın Galibi Belirlendi | 24 MAYIS 2026 Devamı 21.05.2026 Camiamız, Pilav Günü’nde Bir Araya Geldi | 21 MAYIS 2026 Devamı 20.05.2026 Ankara Cumhuriyet Başsavcısı Gökhan Karaköse’den Kulübümüze Ziyaret | 20 MAYIS 2026 Devamı 19.05.2026 TEBRİKLER RICARDO VELHO | 19 MAYIS 2026 Devamı 08.05.2026 Ankara İl Emniyet Müdürü Maksut Yüksek’e \"Hayırlı Olsun\" Ziyareti | 8 MAYIS 2026 Devamı 05.05.2026 Evine Hoş Geldin Metin Diyadin | 5 MAYIS 2026 Devamı 04.05.2026 TEŞEKKÜRLER VOLKAN DEMİREL | 4 MAYIS 2026 Devamı 20.04.2026 Yönetimimizden Bakan Yardımcısı Demiralp’e Ziyaret | 20 NİSAN 2026 Devamı Copyright © Gençlerbirliği Spor Kulübü Resmi Web Sayfası Web Tasarım : Web Studio Web sitemizde, deneyiminizi iyileştirmek ve hizmetlerimizi daha verimli hale getirmek için çerezler kullanıyoruz. Çerezler; siteyi nasıl kullandığınızı anlamamıza, tercihlerinizi hatırlamamıza ve size daha kişisel bir deneyim sunmamıza yardımcı olur. Sitemizi kullanmaya devam ederek çerez kullanımını kabul etmiş oluyorsunuz. Dilerseniz tarayıcı ayarlarınızdan çerezleri yönetebilir veya devre dışı bırakabilirsiniz. Çerez Politikamızı İnceleyiniz Tümünü Reddet Tümünü Kabul Et × GENÇLERBİRLİĞİ Arama Yapın Gençlerbirliği Var Ol Daima × Kırmızı Kara Store Yayında! Hemen ziyaret edin! Devamı GENÇLERBİRLİĞİ",
+      "published_at": null,
+      "categories": [
+        "transfer",
+        "suspension"
+      ],
+      "super_lig_relevant": true,
+      "analyzed": false,
+      "claude_analysis": null,
+      "first_observed_at": "2026-06-15T10:17:51.484363+00:00"
+    },
+    {
+      "article_id": "d5c629e29260",
+      "source_type": "official_club",
+      "source_name": "Gençlerbirliği Resmi Web",
+      "account_type": "official",
+      "related_team": "GENÇLERBİRLİĞİ",
+      "source_url": "https://genclerbirligi.org.tr/haberler",
+      "title": "Seyfi Toprak Kıskanç ile Profesyonel Sözleşme İmzalandı",
+      "link": "https://genclerbirligi.org.tr/haberler/seyfi-toprak-kiskanc-ile-profesyonel-sozlesme-imzalandi",
+      "summary": "Gençlerbirliği Spor Kulübü Gençlerbirliği Var Ol Daima Bizi Takip Edin: ✕ Gençlerbirliği Var Ol Daima Sosyal Medya Hesaplarımızı Takip Edin! Kulübümüz Tarihimiz Kurullar Yönetim Kurulu Onursal Başkan Tüzüğümüz Basın Kiti Medya Merkezi Foto Galeri Video Merkezi Haberler İletişim Futbol A Takım Futbolcular Teknik Ekip Teknik Ekip İdari Ekip Scout Ekimiz Yardımcı Ekip Sağlık Ekibi Branşlar Bocce Bowling Eskrim Kickboks Voleybol Yüzme Haberler Haberler Gençlerbirliği Sportif A.Ş. Kırmızı Kara Store Gençlerbirliği - Altyapı Seyfi Toprak Kıskanç ile Profesyonel Sözleşme İmzalandı Gençlerbirliği Var ",
+      "full_text": "Gençlerbirliği Spor Kulübü Gençlerbirliği Var Ol Daima Bizi Takip Edin: ✕ Gençlerbirliği Var Ol Daima Sosyal Medya Hesaplarımızı Takip Edin! Kulübümüz Tarihimiz Kurullar Yönetim Kurulu Onursal Başkan Tüzüğümüz Basın Kiti Medya Merkezi Foto Galeri Video Merkezi Haberler İletişim Futbol A Takım Futbolcular Teknik Ekip Teknik Ekip İdari Ekip Scout Ekimiz Yardımcı Ekip Sağlık Ekibi Branşlar Bocce Bowling Eskrim Kickboks Voleybol Yüzme Haberler Haberler Gençlerbirliği Sportif A.Ş. Kırmızı Kara Store Gençlerbirliği - Altyapı Seyfi Toprak Kıskanç ile Profesyonel Sözleşme İmzalandı Gençlerbirliği Var Ol Daima 30.07.2025 Altyapı Seyfi Toprak Kıskanç ile Profesyonel Sözleşme İmzalandı Gençlerbirliği, futbol akademisi oyuncularından Seyfi Toprak Kıskanç ile 2+1 yıllık profesyonel sözleşme imzaladı. Beştepe İlhan Cavcav Tesisleri’nde düzenlenen imza törenine Sportif Direktör Ali Ekber Düzgün ve Gençlik Gelişim Programı Sorumlusu Mehmet Kürşad Koca da katıldı. Profesyonel sözleşmeye imza atan Seyfi Toprak Kıskanç’a hayırlı olsun diyor, kırmızı-kara forma altında nice başarılar elde etmesini temenni ediyoruz. İlgili Diğer Haberler 30.07.2025 Gençlerbirliği Kadın Futbol Takımı’ndan U15 Kız Millî Takımı’na 3 İsim Devamı 27.07.2025 Gençlerbirliği Sportif A.Ş.’den Bilgilendirme Devamı 23.04.2025 Gençlerbirliği U17: 1 – Beşiktaş A.Ş. U17: 1 Devamı 23.04.2025 Gençlerbirliği U19: 3 – Kırıkkale FK Spor Kulübü U19: 0 Devamı 17.04.2025 Gençlerbirliği U19: 1 – GMG Kastamonuspor U19: 0 Devamı 09.04.2025 Gençlerbirliği U14: 2 – GMG Kastamonuspor U14: 0 Devamı 09.04.2025 Gençlerbirliği U15: 6 – GMG Kastamonuspor U15: 1 Devamı 09.04.2025 Gençlerbirliği U17: 2 – Bursaspor U17: 2 Devamı 28.03.2025 Gençlerbirliği U19: 2 – Çankaya Spor Kulübü U19: 0 Devamı 27.03.2025 Gençlerbirliği U14: 2 – Etimesgut Spor Kulübü U14: 0 Devamı 27.03.2025 Gençlerbirliği U15: 2 – Etimesgut Spor Kulübü U15: 0 Devamı 14.03.2025 GENÇLERBİRLİĞİ U19: 4 – AHLATCI ÇORUM FK U19: 1 Devamı Copyright © Gençlerbirliği Spor Kulübü Resmi Web Sayfası Web Tasarım : Web Studio Web sitemizde, deneyiminizi iyileştirmek ve hizmetlerimizi daha verimli hale getirmek için çerezler kullanıyoruz. Çerezler; siteyi nasıl kullandığınızı anlamamıza, tercihlerinizi hatırlamamıza ve size daha kişisel bir deneyim sunmamıza yardımcı olur. Sitemizi kullanmaya devam ederek çerez kullanımını kabul etmiş oluyorsunuz. Dilerseniz tarayıcı ayarlarınızdan çerezleri yönetebilir veya devre dışı bırakabilirsiniz. Çerez Politikamızı İnceleyiniz Tümünü Reddet Tümünü Kabul Et × GENÇLERBİRLİĞİ Arama Yapın Gençlerbirliği Var Ol Daima × Kırmızı Kara Store Yayında! Hemen ziyaret edin! Devamı GENÇLERBİRLİĞİ",
+      "published_at": null,
+      "categories": [
+        "transfer",
+        "suspension",
+        "lineup"
+      ],
+      "super_lig_relevant": true,
+      "analyzed": false,
+      "claude_analysis": null,
+      "first_observed_at": "2026-06-15T10:17:51.484363+00:00"
     },
     {
       "article_id": "8f5b7fbe5d6b",
@@ -440,8 +489,8 @@
       "source_url": "https://www.amedspor.com.tr/",
       "title": "İdari Kadro İdari ve operasyonel kadro",
       "link": "https://www.amedspor.com.tr/club/management?category=idari_kadro",
-      "summary": "İdari Kadro Ana İçeriğe Geç Erişilebilirlik Sesli Okuma Oku Duraklat Durdur Hız: 1x Yazı Boyutu A- Normal A+ Satır Aralığı Normal Geniş Çok Geniş Görünüm Seçenekleri Yüksek Kontrast Disleksi Dostu Yazı Tipi Geniş Harf Aralığı Varsayılana Sıfırla Okunuyor... [email protected] +90 412 504 2021 TR KU EN İdari Kadro Amedspor'u yöneten deneyimli kadrolarımız 7 Toplam Üye Fotoğraf Yok Genel Müdür Genel Müdür Yunus Çelik Fotoğraf Yok Muhasebe Muhasebe Nurcan Yiğit Akpolat Fotoğraf Yok Avukat Avukat Şıvan Pamuk Fotoğraf Yok Akreditasyon Akreditasyon Hasan Toraman Fotoğraf Yok İdari Personel İdari Pers",
-      "full_text": "İdari Kadro Ana İçeriğe Geç Erişilebilirlik Sesli Okuma Oku Duraklat Durdur Hız: 1x Yazı Boyutu A- Normal A+ Satır Aralığı Normal Geniş Çok Geniş Görünüm Seçenekleri Yüksek Kontrast Disleksi Dostu Yazı Tipi Geniş Harf Aralığı Varsayılana Sıfırla Okunuyor... [email protected] +90 412 504 2021 TR KU EN İdari Kadro Amedspor'u yöneten deneyimli kadrolarımız 7 Toplam Üye Fotoğraf Yok Genel Müdür Genel Müdür Yunus Çelik Fotoğraf Yok Muhasebe Muhasebe Nurcan Yiğit Akpolat Fotoğraf Yok Avukat Avukat Şıvan Pamuk Fotoğraf Yok Akreditasyon Akreditasyon Hasan Toraman Fotoğraf Yok İdari Personel İdari Personel Kaya Fidan Fotoğraf Yok Tercüman Tercüman Taylan Okan İşçi Fotoğraf Yok Tercüman Tercüman Raperin Ergül Tüm Kategorilere Dön Amedspor Ailesine Katıl Kulübümüzü destekleyerek bu büyük ailenin bir parçası olabilirsiniz. Bağış Yap İletişim BAĞIŞ YAP",
+      "summary": "İdari Kadro Ana İçeriğe Geç Erişilebilirlik Sesli Okuma Oku Duraklat Durdur Hız: 1x Yazı Boyutu A- Normal A+ Satır Aralığı Normal Geniş Çok Geniş Görünüm Seçenekleri Yüksek Kontrast Disleksi Dostu Yazı Tipi Geniş Harf Aralığı Varsayılana Sıfırla Okunuyor... [email protected] +90 412 504 2021 TR KU EN İdari Kadro Amedspor'u yöneten deneyimli kadrolarımız 13 Toplam Üye Fotoğraf Yok Genel Müdür Genel Müdür Yunus Çelik Fotoğraf Yok Muhasebe Muhasebe Nurcan Yiğit Akpolat Fotoğraf Yok Avukat Avukat Şıvan Pamuk Fotoğraf Yok Akreditasyon Sorumlusu Akreditasyon Sorumlusu Hasan Toraman Fotoğraf Yok İdar",
+      "full_text": "İdari Kadro Ana İçeriğe Geç Erişilebilirlik Sesli Okuma Oku Duraklat Durdur Hız: 1x Yazı Boyutu A- Normal A+ Satır Aralığı Normal Geniş Çok Geniş Görünüm Seçenekleri Yüksek Kontrast Disleksi Dostu Yazı Tipi Geniş Harf Aralığı Varsayılana Sıfırla Okunuyor... [email protected] +90 412 504 2021 TR KU EN İdari Kadro Amedspor'u yöneten deneyimli kadrolarımız 13 Toplam Üye Fotoğraf Yok Genel Müdür Genel Müdür Yunus Çelik Fotoğraf Yok Muhasebe Muhasebe Nurcan Yiğit Akpolat Fotoğraf Yok Avukat Avukat Şıvan Pamuk Fotoğraf Yok Akreditasyon Sorumlusu Akreditasyon Sorumlusu Hasan Toraman Fotoğraf Yok İdari Sorumlu İdari Sorumlu Kaya Fidan Fotoğraf Yok Tercüman Tercüman Taylan Okan İşçi Fotoğraf Yok Tercüman Tercüman Raperin Ergül Fotoğraf Yok Malzeme Sorumlusu Malzeme Sorumlusu Emin Beklen Fotoğraf Yok Malzeme Sorumlusu Malzeme Sorumlusu Süleyman Fidan Fotoğraf Yok Çim Saha Görevlisi Çim Saha Görevlisi Ensari Çokur Fotoğraf Yok Çim Saha Görevlisi Çim Saha Görevlisi Ahmet Büyükkılıç Fotoğraf Yok Şoför Şoför Ayhan Surkentli Fotoğraf Yok Şoför Şoför Orhan Malkoç Tüm Kategorilere Dön Amedspor Ailesine Katıl Kulübümüzü destekleyerek bu büyük ailenin bir parçası olabilirsiniz. Bağış Yap İletişim BAĞIŞ YAP",
       "published_at": null,
       "categories": [
         "lineup"
