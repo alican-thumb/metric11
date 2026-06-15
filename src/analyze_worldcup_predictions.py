@@ -44,12 +44,6 @@ def _enrich_with_result(prediction: dict, fixtures: dict[tuple[str, str], dict])
     actual_a = score.get("away")
     prediction["actual_score"] = {"home": actual_h, "away": actual_a}
 
-    pred = prediction["prediction"]
-    hw = pred.get("home_win", 0)
-    dr = pred.get("draw", 0)
-    aw = pred.get("away_win", 0)
-    best = max(hw, dr, aw)
-
     if actual_h is None or actual_a is None:
         prediction["prediction_outcome"] = "pending"
         return prediction
@@ -61,12 +55,25 @@ def _enrich_with_result(prediction: dict, fixtures: dict[tuple[str, str], dict])
     else:
         actual_outcome = "away"
 
-    if best == hw:
-        predicted_outcome = "home"
-    elif best == dr:
-        predicted_outcome = "draw"
+    pred_score = prediction["prediction"].get("predicted_score", {})
+    ps_h = pred_score.get("home")
+    ps_a = pred_score.get("away")
+    if ps_h is not None and ps_a is not None:
+        if ps_h > ps_a:
+            predicted_outcome = "home"
+        elif ps_h == ps_a:
+            predicted_outcome = "draw"
+        else:
+            predicted_outcome = "away"
     else:
-        predicted_outcome = "away"
+        pred = prediction["prediction"]
+        best = max(pred.get("home_win", 0), pred.get("draw", 0), pred.get("away_win", 0))
+        if best == pred.get("home_win", 0):
+            predicted_outcome = "home"
+        elif best == pred.get("draw", 0):
+            predicted_outcome = "draw"
+        else:
+            predicted_outcome = "away"
 
     prediction["prediction_outcome"] = "correct" if predicted_outcome == actual_outcome else "wrong"
     return prediction
