@@ -12,6 +12,10 @@ from src.config import PROCESSED_DIR, ensure_data_dirs
 # ---------------------------------------------------------------------------
 # Fixture sonuçlarını yükle
 # ---------------------------------------------------------------------------
+# Beraberlik kalibrasyonu: WC grup aşamasında gerçek beraberlik oranı (~%30-33)
+# Poisson modeli bağımsız gol dağılımı kullandığından beraberliği ~%22-24 veriyor.
+# Bu faktör draw olasılığını artırır, ev/deplasman'dan orantılı düşürür.
+DRAW_CALIBRATION = 1.15
 
 def _load_fixture_results() -> dict[tuple[str, str], dict]:
     """Fixture dosyasından (home_name, away_name) → fixture dict haritası döner."""
@@ -91,6 +95,54 @@ def _load_form() -> dict[str, dict]:
     return {}
 
 TEAM_FORM: dict[str, dict] = _load_form()
+
+
+def _update_form_with_wc2026(form: dict[str, dict]) -> dict[str, dict]:
+    """Oynanan WC 2026 maçlarını form datasına ekler (yüksek ağırlıkla)."""
+    fix_path = PROCESSED_DIR / "worldcup_2026_fixtures.json"
+    if not fix_path.exists():
+        return form
+    data = json.loads(fix_path.read_text(encoding="utf-8"))
+    form = {k: dict(v) for k, v in form.items()}  # shallow copy
+
+    for m in data.get("matches", []):
+        if m.get("status") != "FINISHED":
+            continue
+        score = m.get("score", {})
+        gh = score.get("home")
+        ga = score.get("away")
+        if gh is None or ga is None:
+            continue
+        home_name = m.get("home", {}).get("name", "")
+        away_name = m.get("away", {}).get("name", "")
+        wc_weight = 2.0  # WC maçı çift ağırlık taşır
+
+        for team, gf, g_ag in [(home_name, gh, ga), (away_name, ga, gh)]:
+            if not team:
+                continue
+            won = 1 if gf > g_ag else 0
+            if team not in form:
+                form[team] = {"matches": 0, "wins": 0, "w_gf_per_match": gf, "w_ga_per_match": g_ag, "win_rate": won}
+            else:
+                f = form[team]
+                old_m = f.get("matches", 1)
+                old_w = f.get("wins", round(f.get("win_rate", 0) * old_m))
+                new_m = old_m + wc_weight
+                new_w = old_w + won * wc_weight
+                new_gf = (f.get("w_gf_per_match", gf) * old_m + gf * wc_weight) / new_m
+                new_ga = (f.get("w_ga_per_match", g_ag) * old_m + g_ag * wc_weight) / new_m
+                form[team] = {
+                    **f,
+                    "matches": new_m,
+                    "wins": new_w,
+                    "win_rate": new_w / new_m,
+                    "w_gf_per_match": round(new_gf, 3),
+                    "w_ga_per_match": round(new_ga, 3),
+                }
+    return form
+
+
+TEAM_FORM = _update_form_with_wc2026(TEAM_FORM)
 
 # Form verisinden baseline hesapla (ağırlıklı ortalama)
 def _compute_baseline() -> tuple[float, float]:
@@ -183,7 +235,7 @@ def _pmf(lam: float, k: int) -> float:
 
 
 def _win_draw_loss(lam_h: float, lam_a: float, max_g: int = 9) -> tuple[float, float, float]:
-    """Poisson dağılımından kazanma/beraberlik/kaybetme olasılığı."""
+    """Poisson dağılımından kazanma/beraberlik/kaybetme olasılığı; beraberlik kalibrasyonu uygulanır."""
     ph = pd = pa = 0.0
     for h in range(max_g + 1):
         for a in range(max_g + 1):
@@ -194,17 +246,30 @@ def _win_draw_loss(lam_h: float, lam_a: float, max_g: int = 9) -> tuple[float, f
                 pd += p
             else:
                 pa += p
-    total = ph + pd + pa
-    return round(ph / total, 3), round(pd / total, 3), round(pa / total, 3)
+    # Beraberlik kalibrasyonu: WC grup aşamasında Poisson draw'ı küçümsüyor
+    pd_cal = pd * DRAW_CALIBRATION
+    excess = pd_cal - pd
+    total_win = ph + pa
+    if total_win > 0:
+        ph -= excess * (ph / total_win)
+        pa -= excess * (pa / total_win)
+    total = ph + pd_cal + pa
+    return round(ph / total, 3), round(pd_cal / total, 3), round(pa / total, 3)
 
 
-def _score_prediction(lam_h: float, lam_a: float, hw: float, aw: float) -> tuple[int, int]:
+def _score_prediction(lam_h: float, lam_a: float, hw: float, dr: float, aw: float) -> tuple[int, int]:
     h = max(0, round(lam_h))
     a = max(0, round(lam_a))
-    if hw > 0.50 and h <= a:
+    best = max(hw, dr, aw)
+    if best == hw and h <= a:
         h = a + 1
-    elif aw > 0.50 and a <= h:
+    elif best == aw and a <= h:
         a = h + 1
+    elif best == dr and h != a:
+        if h > a:
+            a = h
+        else:
+            h = a
     return h, a
 
 
@@ -291,7 +356,7 @@ def analyze_match(match: dict) -> dict:
     lam_a = max(0.4, round(lam_a, 3))
 
     hw, dr, aw = _win_draw_loss(lam_h, lam_a)
-    pred_h, pred_a = _score_prediction(lam_h, lam_a, hw, aw)
+    pred_h, pred_a = _score_prediction(lam_h, lam_a, hw, dr, aw)
     over_25 = _goals_over_2_5(lam_h, lam_a)
     cards = _expected_cards(home_name, away_name)
     narr = _narrative(home_name, away_name, lam_h, lam_a, hw, aw, cards, pred_h, pred_a, home_form, away_form)

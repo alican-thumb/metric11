@@ -527,6 +527,69 @@ def _explicit_direct_transfer_parties(
     return player, target
 
 
+_MEDIA_STOPWORDS = {
+    "habertürk", "haberturk", "gazete", "vatan", "ntvspor", "ntv", "takvim",
+    "eurohoops", "beinsports", "asspor", "aspor", "sporx", "fanatik",
+    "milliyet", "sabah", "hurriyet", "hürriyet", "cumhuriyet", "sozcu",
+    "sözcü", "bein", "trt", "cnn", "fox", "star", "show", "manşet", "gazeta",
+    "ajans", "haber", "spor", "dakika", "flash", "flaş", "akdeniz", "merhaba",
+    "son", "breaking", "europa", "eurosport", "goal", "transfermarkt", "sporbit",
+}
+
+
+def _is_media_name(name: str) -> bool:
+    words = name.lower().split()
+    return all(w in _MEDIA_STOPWORDS for w in words)
+
+
+def _extract_player_from_title_with_club(title: str, club: str) -> str | None:
+    """Tek bir kulüp bağlamıyla başlıktan oyuncu adı çıkarır (clubs=[] ama to_club biliniyor)."""
+    if club not in CLUB_PATTERNS:
+        return None
+    club_pattern = CLUB_PATTERNS[club]
+    # Başlığın sondaki " - Kaynak" kısmını temizle
+    clean_title = re.sub(r"\s*[-–]\s*[A-ZÇĞİÖŞÜa-zçğışöşü ]{3,30}$", "", title).strip()
+    _aq = "[" + chr(0x27) + "‘’]"
+    # Aksan karakterleri dahil geniş Latin seti
+    _nc = r"A-Za-zÀ-ÖØ-öø-ÿÇĞİÖŞÜçğıöşü." + chr(0x27) + "‘’-"
+    _up = r"A-ZÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞŸÇĞIŞÖÜ".replace("çğışöü", "")
+    _up = "A-ZÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞŸÇĞŞÜ".replace("çğşü", "") + "ÇĞŞÜ"
+
+    any_person = f"(?-i:(?P<player>[{_up}][{_nc}]+(?:\\s+[{_up}][{_nc}]+){{0,3}}))"
+    person = f"(?-i:(?P<player>[{_up}][{_nc}]+(?:\\s+[{_up}][{_nc}]+){{1,3}}))"
+    patterns = [
+        # "operasyonu: Matias Soulé" — colon, requires ≥2 words to avoid single-word media names
+        r":\s*" + f"(?-i:(?P<player>[{_up}][{_nc}]+(?:\\s+[{_up}][{_nc}]+){{1,3}}))" + r"(?:\s*[-–]|$|!|\?)",
+        # "gözü Brahim Diaz’da"
+        r"\bgözü\s+" + any_person + _aq + r"?(?:da|de|ta|te)\b",
+        # "X’a talip" — Janderson’a talip
+        any_person + _aq + r"?(?:a|e|ya|ye)\s+talip\b",
+        # "Armstrong’u Transfer Etti"
+        any_person + _aq + r"?(?:u|ü|ı|i|yu|yü|yı|yi)\s+[Tt]ransfer\s+[Ee]tti\b",
+        # "santrfor Kenan Kurtovic’i transfer etti"
+        r"(?:santrfor|forvet|stoper|kaleci|kanat)\s+" + person + _aq + r"?(?:i|ı|u|ü|yi|yı|yu|yü)\s+transfer",
+        # "X imzaladı" after club
+        r"(?:" + club_pattern + r")[^!?]{0,50}\b" + person + r"\s+imzaladı\b",
+        # club + X’i transfer etti
+        r"(?:" + club_pattern + r")" + _aq + r"?,?(?:[^,!?]{0,30})\b" + any_person + _aq + r"?(?:u|ü|ı|i|yu|yü|yı|yi)\s+[Tt]ransfer\s+[Ee]tti\b",
+    ]
+    _apos_re = "[" + chr(0x27) + "‘’]"
+    for pattern in patterns:
+        try:
+            m = re.search(pattern, clean_title, re.IGNORECASE)
+            if m:
+                raw = m.group("player").strip()
+                player = re.sub(_apos_re + r"\w*$", "", raw).strip()
+                player = " ".join(player.split())
+                if (len(player) >= 3
+                        and not any(_same_club(player, c) for c in CLUB_PATTERNS)
+                        and not _is_media_name(player)):
+                    return player
+        except re.error:
+            continue
+    return None
+
+
 def _explicit_targeted_rumor_parties(title: str, title_clubs: list[str]) -> tuple[str | None, str | None]:
     if len(title_clubs) != 1:
         return None, None
@@ -551,6 +614,16 @@ def _explicit_targeted_rumor_parties(title: str, title_clubs: list[str]) -> tupl
         f"{person}\\s+(?:{club_pattern}){_aq}?(?:ya|ye|a|e)\\s+(?:geliyor|imzal\u0131yor|imzalad\u0131)\\b",
         f"(?:{club_pattern}){_aq}?,?\\s+{person}{_aq}?(?:i|\u0131|u|\u00fc|yi|y\u0131|yu|y\u00fc)\\s+transfer\\s+(?:etti|ald\u0131|yapt\u0131)\\b",
         f"(?:{club_pattern}){_aq}?,?\\s+{person}{_aq}?(?:i|\u0131|u|\u00fc|yi|y\u0131|yu|y\u00fc)\\s+(?:kadrosuna\\s+(?:katt\u0131|dahil)|resmile\u015ftirdi)\\b",
+        # "g\u00f6z\u00fc X'da/de" \u2014 Fenerbah\u00e7e'nin g\u00f6z\u00fc Brahim Diaz'da
+        f"(?:{club_pattern}){_aq}?(?:\u0131n|in|un|\u00fcn)\\s+g\u00f6z\u00fc\\s+{any_person}{_aq}?(?:da|de|ta|te)\\b",
+        # "X'a talip" \u2014 Janderson'a talip \u00e7\u0131kt\u0131
+        f"{any_person}{_aq}?(?:a|e|ya|ye)\\s+talip\\b",
+        # "operasyonu: X" \u2014 b\u00fcy\u00fck transfer operasyonu: Matias Soul\u00e9
+        f"(?:{club_pattern})[^:]*:\\s*{any_person}(?:\\s*[-\u2013]|$|!|\\?)",
+        # "X'[u\u00fci\u0131] Transfer Etti/Ald\u0131/Yapt\u0131" preceded by club
+        f"(?:{club_pattern}){_aq}?,?(?:[^,!?]{{0,30}})\\b{any_person}{_aq}?(?:u|\u00fc|\u0131|i|yu|y\u00fc|y\u0131|yi)\\s+[Tt]ransfer\\s+[Ee]tti\\b",
+        # "X imzalad\u0131" preceded by club
+        f"(?:{club_pattern})[^!?]{{0,40}}\\b{person}\\s+imzalad\u0131\\b",
     ]
     _apos_re = "[" + chr(0x27) + "\u2018\u2019]"
     for pattern in patterns:
