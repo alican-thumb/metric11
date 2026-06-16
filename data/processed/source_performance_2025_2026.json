@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-06-16T21:21:51.723831+00:00",
+  "generated_at": "2026-06-16T23:49:39.699154+00:00",
   "season": "2025_2026",
   "maturity_days": 14,
   "summary": {
-    "transfer_signals": 47,
+    "transfer_signals": 36,
     "official_events": 3,
     "official_events_with_timestamp": 1,
     "official_events_with_first_observed_timestamp": 3,
-    "observed_sources": 89,
+    "observed_sources": 90,
     "scored_sources": 19,
     "measured_lead_times": 0,
     "first_seen_lead_times": 0,
     "tracked_x_sources_waiting": 20,
-    "retained_claim_observations": 749
+    "retained_claim_observations": 750
   },
   "provider_coverage": {
     "google_news": {
-      "articles": 224,
+      "articles": 225,
       "queries": 30,
       "successful_queries": 30
     },
@@ -36,7 +36,7 @@
       "source": "Google News / medya",
       "source_tier": "CHANNEL",
       "source_type": "media",
-      "observations": 746,
+      "observations": 747,
       "scoreable_claims": 114,
       "official_conversions": 1,
       "lead_hours": [],
@@ -44,7 +44,7 @@
       "lead_time_unavailable": 1,
       "matured_unconfirmed": 31,
       "pending_claims": 82,
-      "unresolved_claims": 632,
+      "unresolved_claims": 633,
       "status": "PARTIAL_MEASUREMENT",
       "score": 2.5,
       "average_lead_hours": null,
@@ -1875,6 +1875,26 @@
       "false_alarm_proxy_pct": null
     },
     {
+      "source": "İlkses Gazetesi",
+      "source_tier": "MEDIA",
+      "source_type": "google_news",
+      "observations": 1,
+      "scoreable_claims": 0,
+      "official_conversions": 0,
+      "lead_hours": [],
+      "first_seen_lead_hours": [],
+      "lead_time_unavailable": 0,
+      "matured_unconfirmed": 0,
+      "pending_claims": 0,
+      "unresolved_claims": 1,
+      "status": "OBSERVING",
+      "score": null,
+      "average_lead_hours": null,
+      "average_first_seen_lead_hours": null,
+      "official_conversion_rate_pct": null,
+      "false_alarm_proxy_pct": null
+    },
+    {
       "source": "İstanbul Ticaret Gazetesi",
       "source_tier": "MEDIA",
       "source_type": "google_news",
@@ -2428,7 +2448,7 @@
     {
       "name": "Ertan Süzgün",
       "google_query": "Ertan Süzgün transfer",
-      "indexed_results": 2,
+      "indexed_results": 1,
       "query_error": null,
       "attributed_observations": 0,
       "scoreable_claims": 0,
