@@ -1,18 +1,18 @@
 # Erken Haber Kaynak Performansı
 
-- Transfer sinyali: 43
+- Transfer sinyali: 38
 - Resmi olaya dönüşen transfer: 3
 - Yayın zamanı bulunan resmi teyit: 1/3
 - İlk görülme zamanı bulunan resmi teyit: 3/3
-- Ölçülen kaynak: 19 / gözlenen kaynak: 92
+- Ölçülen kaynak: 24 / gözlenen kaynak: 92
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 0
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 766
+- Defterde korunan ilk iddia gözlemi: 767
 
 ## Kanal Kapsamı
 
-- Google News: 226 haber, 30/30 başarılı sorgu.
+- Google News: 208 haber, 30/30 başarılı sorgu.
 - Telegram: 6 mesaj, 8/8 erişilebilir kanal.
 - X: durum=MISSING_CREDENTIALS, gönderi=0, yapılandırılmış hesap=45.
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 763 | 117 | 1 | — | — | %97.3 | 2.2 | PARTIAL_MEASUREMENT |
+| Google News / medya | 764 | 117 | 1 | — | — | %97.7 | 1.9 | PARTIAL_MEASUREMENT |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -57,9 +57,14 @@
 | A SPOR | MEDIA | 26 | 5 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | FOTOMAÇ | MEDIA | 21 | 4 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Fanatik | MEDIA | 21 | 6 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| SonDakika | MEDIA | 17 | 4 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Son Dakika | MEDIA | 16 | 3 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Habertürk | MEDIA | 13 | 3 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Ajansspor | MEDIA | 11 | 4 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Haberler | MEDIA | 10 | 2 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Mackolik.com | MEDIA | 5 | 3 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Mersin Haber | MEDIA | 4 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| sondakika.com | MEDIA | 4 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Diken | MEDIA | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Turkmenportal.com | MEDIA | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Beşiktaş Haberleri | SECONDARY | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
@@ -67,11 +72,8 @@
 | Karadeniz Gazetesi | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Yağız Sabuncuoğlu | ATTRIBUTED_MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Sabah | MEDIA | 53 | 4 | 0 | — | — | — | — | OBSERVING |
-| Aksam Spor | MEDIA | 42 | 2 | 0 | — | — | — | — | OBSERVING |
+| Aksam Spor | MEDIA | 43 | 2 | 0 | — | — | — | — | OBSERVING |
 | GZT | MEDIA | 17 | 0 | 0 | — | — | — | — | OBSERVING |
-| SonDakika | MEDIA | 17 | 4 | 0 | — | — | — | — | OBSERVING |
-| Son Dakika | MEDIA | 16 | 3 | 0 | — | — | — | — | OBSERVING |
-| Habertürk | MEDIA | 13 | 3 | 0 | — | — | — | — | OBSERVING |
 | beinsports.com.tr | MEDIA | 13 | 1 | 0 | — | — | — | — | OBSERVING |
 | Taka Gazete | MEDIA | 11 | 4 | 0 | — | — | — | — | OBSERVING |
 | Sporx.com | MEDIA | 10 | 5 | 0 | — | — | — | — | OBSERVING |
@@ -84,8 +86,6 @@
 | Halk TV | MEDIA | 5 | 0 | 0 | — | — | — | — | OBSERVING |
 | CNN Türk | MEDIA | 4 | 0 | 0 | — | — | — | — | OBSERVING |
 | Eurohoops | MEDIA | 4 | 0 | 0 | — | — | — | — | OBSERVING |
-| Mersin Haber | MEDIA | 4 | 1 | 0 | — | — | — | — | OBSERVING |
-| sondakika.com | MEDIA | 4 | 1 | 0 | — | — | — | — | OBSERVING |
 | Mynet | MEDIA | 3 | 1 | 0 | — | — | — | — | OBSERVING |
 | Nefes Gazetesi | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
 | Yeni Alanya | MEDIA | 3 | 2 | 0 | — | — | — | — | OBSERVING |
