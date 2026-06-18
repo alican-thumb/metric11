@@ -1,6 +1,6 @@
 # Erken Haber Kaynak Performansı
 
-- Transfer sinyali: 31
+- Transfer sinyali: 32
 - Resmi olaya dönüşen transfer: 3
 - Yayın zamanı bulunan resmi teyit: 1/3
 - İlk görülme zamanı bulunan resmi teyit: 3/3
@@ -8,11 +8,11 @@
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 0
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 774
+- Defterde korunan ilk iddia gözlemi: 779
 
 ## Kanal Kapsamı
 
-- Google News: 200 haber, 30/30 başarılı sorgu.
+- Google News: 215 haber, 30/30 başarılı sorgu.
 - Telegram: 6 mesaj, 8/8 erişilebilir kanal.
 - X: durum=MISSING_CREDENTIALS, gönderi=0, yapılandırılmış hesap=45.
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 771 | 118 | 1 | — | — | %97.9 | 1.7 | PARTIAL_MEASUREMENT |
+| Google News / medya | 776 | 119 | 1 | — | — | %97.9 | 1.7 | PARTIAL_MEASUREMENT |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -47,14 +47,14 @@
 
 | Kaynak | Katman | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---|
-| CNN Türk Spor | MEDIA | 21 | 5 | 1 | — | — | %50.0 | 40.0 | PARTIAL_MEASUREMENT |
+| CNN Türk Spor | MEDIA | 22 | 5 | 1 | — | — | %50.0 | 40.0 | PARTIAL_MEASUREMENT |
 | Fotomaç | MEDIA | 98 | 16 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Hürriyet | MEDIA | 68 | 6 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Takvim | MEDIA | 61 | 4 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
-| Milliyet | MEDIA | 33 | 5 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Milliyet | MEDIA | 34 | 5 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | NTVSpor | MEDIA | 29 | 4 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Haberturk Spor | MEDIA | 28 | 2 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
-| A SPOR | MEDIA | 26 | 5 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| A SPOR | MEDIA | 27 | 5 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | FOTOMAÇ | MEDIA | 21 | 4 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Fanatik | MEDIA | 21 | 6 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | SonDakika | MEDIA | 17 | 4 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
@@ -76,8 +76,8 @@
 | Aksam Spor | MEDIA | 43 | 2 | 0 | — | — | — | — | OBSERVING |
 | GZT | MEDIA | 17 | 0 | 0 | — | — | — | — | OBSERVING |
 | beinsports.com.tr | MEDIA | 13 | 1 | 0 | — | — | — | — | OBSERVING |
+| Sporx.com | MEDIA | 11 | 6 | 0 | — | — | — | — | OBSERVING |
 | Taka Gazete | MEDIA | 11 | 4 | 0 | — | — | — | — | OBSERVING |
-| Sporx.com | MEDIA | 10 | 5 | 0 | — | — | — | — | OBSERVING |
 | Gazete Vatan | MEDIA | 9 | 1 | 0 | — | — | — | — | OBSERVING |
 | Anadolu Ajansı Spor | AGENCY | 8 | 0 | 0 | — | — | — | — | OBSERVING |
 | Haber 7 | MEDIA | 8 | 0 | 0 | — | — | — | — | OBSERVING |
@@ -94,6 +94,7 @@
 | 61SAAT | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Alanya Postası | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Cumhuriyet | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
+| Fotospor | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Gazete Gerçek | MEDIA | 2 | 1 | 0 | — | — | — | — | OBSERVING |
 | Haber61 | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Konya Yeni Haber | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
@@ -111,7 +112,6 @@
 | Ege Alternatif | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Ege'de Sonsöz | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Ensonhaber | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
-| Fotospor | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Gaziantep Oluşum Gazetesi | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Gerçek İzmir | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Goal.com | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
