@@ -23,8 +23,8 @@
 | 9 | ÇAYKUR RİZESPOR A.Ş. | YÜKSEK | 52.4 | 1.21 | 1.35 | 1.53 | Stoper / hava ve temas |
 | 10 | TÜMOSAN KONYASPOR | YÜKSEK | 47.9 | 1.18 | 1.26 | 1.47 | Sol açık / çizgi kırıcı |
 | 11 | CORENDON ALANYASPOR | YÜKSEK | 47.1 | 1.09 | 1.21 | 1.21 | Sol açık / çizgi kırıcı |
-| 12 | ÇORUM FK | YÜKSEK | 44.0 | None | None | None | Stoper / hava ve temas |
-| 13 | AMED SFK | YÜKSEK | 44.0 | None | None | None | Stoper / hava ve temas |
+| 12 | AMED SFK | YÜKSEK | 44.0 | None | None | None | Stoper / hava ve temas |
+| 13 | ÇORUM FK | YÜKSEK | 44.0 | None | None | None | Stoper / hava ve temas |
 | 14 | ERZURUMSPOR FK | YÜKSEK | 44.0 | None | None | None | Stoper / hava ve temas |
 | 15 | GÖZTEPE A.Ş. | YÜKSEK | 36.2 | 1.62 | 1.24 | 0.94 | Sol açık / çizgi kırıcı |
 | 16 | SAMSUNSPOR A.Ş. | YÜKSEK | 35.9 | 1.5 | 1.35 | 1.32 | — |
@@ -145,7 +145,7 @@ Zayıf nokta: deplasman zayıf, düşük şut baskısı
   1. JESURUN  RAK-SAKYI (ÇAYKUR RİZESPOR A.Ş.) | 23y | 4 gol | PREMİUM TRANSFER | HIGH | skor 17.0
      → Deplasman zayıf sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Rak-sakyi: 4 gol, 11 maçta sahada. Uzun sözleşme — yüksek bonusu göze almalı. 23 yaş, uzun vadeli yatırım profili.
 
-### ÇORUM FK  [YÜKSEK]
+### AMED SFK  [YÜKSEK]
 *None puan/maç | maç başına None attı | maç başına None yedi*
 
 Zayıf nokta: yeni lig takımı
@@ -162,7 +162,7 @@ Zayıf nokta: yeni lig takımı
   3. YOUSSEF EN NESYRI (FENERBAHÇE A.Ş.) | 28y | 7 gol | PREMİUM TRANSFER | MEDIUM | skor 17.4
      → Gol üretimi zayıf (maç başına 1.0 gol attı) - Santrfor / skor yükü pozisyonunda yaratıcılık gerekiyor. Nesyri: 7 gol, 11 maçta sahada. Uzun sözleşme — yüksek bonusu göze almalı.
 
-### AMED SFK  [YÜKSEK]
+### ÇORUM FK  [YÜKSEK]
 *None puan/maç | maç başına None attı | maç başına None yedi*
 
 Zayıf nokta: yeni lig takımı
