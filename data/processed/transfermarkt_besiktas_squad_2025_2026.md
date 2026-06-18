@@ -13,7 +13,7 @@
 - Devis Vásquez: Goalkeeper (GK), yaş=28, sözleşme=30/06/2026, değer=€1.50m
 - Emre Bilgin: Goalkeeper (GK), yaş=22, sözleşme=30/06/2027, değer=€400k
 - Emir Yaşar: Goalkeeper (GK), yaş=20, sözleşme=30/06/2028, değer=€100k
-- Emmanuel Agbadou: Centre-Back (DEF), yaş=28, sözleşme=30/06/2030, değer=€16.00m
+- Emmanuel Agbadou: Centre-Back (DEF), yaş=29, sözleşme=30/06/2030, değer=€16.00m
 - Tiago Djaló: Centre-Back (DEF), yaş=26, sözleşme=30/06/2028, değer=€7.00m
 - Emirhan Topçu: Centre-Back (DEF), yaş=25, sözleşme=30/06/2028, değer=€7.00m
 - Yasin Özcan: Centre-Back (DEF), yaş=20, sözleşme=27/01/2027, değer=€5.00m
