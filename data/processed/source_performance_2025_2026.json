@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-06-19T00:02:30.207633+00:00",
+  "generated_at": "2026-06-19T05:26:04.725330+00:00",
   "season": "2025_2026",
   "maturity_days": 14,
   "summary": {
-    "transfer_signals": 35,
+    "transfer_signals": 32,
     "official_events": 3,
     "official_events_with_timestamp": 1,
     "official_events_with_first_observed_timestamp": 3,
-    "observed_sources": 93,
+    "observed_sources": 94,
     "scored_sources": 25,
     "measured_lead_times": 0,
     "first_seen_lead_times": 0,
     "tracked_x_sources_waiting": 20,
-    "retained_claim_observations": 797
+    "retained_claim_observations": 799
   },
   "provider_coverage": {
     "google_news": {
-      "articles": 236,
+      "articles": 234,
       "queries": 30,
       "successful_queries": 30
     },
@@ -36,14 +36,14 @@
       "source": "Google News / medya",
       "source_tier": "CHANNEL",
       "source_type": "media",
-      "observations": 794,
-      "scoreable_claims": 124,
+      "observations": 796,
+      "scoreable_claims": 126,
       "official_conversions": 1,
       "lead_hours": [],
       "first_seen_lead_hours": [],
       "lead_time_unavailable": 1,
       "matured_unconfirmed": 46,
-      "pending_claims": 77,
+      "pending_claims": 79,
       "unresolved_claims": 670,
       "status": "PARTIAL_MEASUREMENT",
       "score": 1.7,
@@ -1192,6 +1192,26 @@
       "average_lead_hours": null,
       "average_first_seen_lead_hours": null,
       "official_conversion_rate_pct": null,
+      "false_alarm_proxy_pct": null
+    },
+    {
+      "source": "Sporx",
+      "source_tier": "MEDIA",
+      "source_type": "google_news",
+      "observations": 2,
+      "scoreable_claims": 2,
+      "official_conversions": 0,
+      "lead_hours": [],
+      "first_seen_lead_hours": [],
+      "lead_time_unavailable": 0,
+      "matured_unconfirmed": 0,
+      "pending_claims": 2,
+      "unresolved_claims": 0,
+      "status": "OBSERVING",
+      "score": null,
+      "average_lead_hours": null,
+      "average_first_seen_lead_hours": null,
+      "official_conversion_rate_pct": 0.0,
       "false_alarm_proxy_pct": null
     },
     {
