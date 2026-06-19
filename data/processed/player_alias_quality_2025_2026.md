@@ -2,7 +2,7 @@
 
 - Manuel alias oyuncusu: 28
 - İşlenen TFF lig profil havuzu: 691
-- Transfermarkt Süper Lig kadrosu: 18/18 kulüp, 506 oyuncu
+- Transfermarkt Süper Lig kadrosu: 0/18 kulüp, 0 oyuncu
 - TFF Beşiktaş profili: 46
 - TFF scout profili: 40
 - Transfermarkt Beşiktaş oyuncusu: 28
@@ -10,8 +10,8 @@
 
 ## Karşılaştırmalar
 
-- league_tff_vs_transfermarkt: 410/691 eşleşme (%59)
-  - Manuel eşleme: 13 (ağ teyidi bekleyen=13); kullanılabilir eşleme %61
+- league_tff_vs_transfermarkt: 0/691 eşleşme (%0)
+  - Manuel eşleme: 13 (ağ teyidi bekleyen=13); kullanılabilir eşleme %2
 - besiktas_tff_vs_transfermarkt: 28/46 eşleşme (%61)
   - Ham tekil kaynak karşılaştırmasıdır; operasyonel manuel eşlemeler lig karşılaştırmasında izlenir.
 - scout_tff_vs_api_deep: 7/40 eşleşme (%18)
@@ -20,16 +20,6 @@
 ## Düşük Skorlu Eşleşmeler
 
 ### league_tff_vs_transfermarkt
-- BADOBRE EMMANUEL ELYSEE DJEDJE AGBADOU -> Emmanuel Agbadou | skor=1.0 | canonical=BADOBRE EMMANUEL ELYSEE DJEDJE AGBADOU
-- CENGİZ ÜNDER -> Cengiz Ünder | skor=1.0 | canonical=CENGIZ UNDER
-- DEVIS ESTIVEN  VASQUEZ LLACH -> Devis Vásquez | skor=1.0 | canonical=DEVIS ESTIVEN VASQUEZ LLACH
-- DEVRİM ŞAHİN -> Devrim Şahin | skor=1.0 | canonical=DEVRIM SAHIN
-- EL BILAL TOURE -> El Bilal Touré | skor=1.0 | canonical=EL BILAL TOURE
-- EMRE BİLGİN -> Emre Bilgin | skor=1.0 | canonical=EMRE BILGIN
-- EMİR YAŞAR -> Emir Yaşar | skor=1.0 | canonical=EMIR YASAR
-- EMİRHAN TOPÇU -> Emirhan Topçu | skor=1.0 | canonical=EMIRHAN TOPCU
-- ERSİN DESTANOĞLU -> Ersin Destanoğlu | skor=1.0 | canonical=ERSIN DESTANOGLU
-- FELIX OHIS UDUOKHAI -> Felix Uduokhai | skor=1.0 | canonical=FELIX OHIS UDUOKHAI
 
 ### besiktas_tff_vs_transfermarkt
 - FELIX OHIS UDUOKHAI -> Felix Uduokhai | skor=0.9 | canonical=FELIX OHIS UDUOKHAI

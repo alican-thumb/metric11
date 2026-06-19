@@ -1,6 +1,6 @@
 # Haber / Sakat-Cezalı Bağlam Snapshot
 
-- Oluşturma: 2026-06-17T08:58:53.172228+00:00
+- Oluşturma: 2026-06-19T09:04:06.203510+00:00
 - Kaynak: 2
 - Başarılı: 2
 - Sinyal: 3
