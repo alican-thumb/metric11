@@ -1,18 +1,18 @@
 # Erken Haber Kaynak Performansı
 
-- Transfer sinyali: 32
+- Transfer sinyali: 37
 - Resmi olaya dönüşen transfer: 3
 - Yayın zamanı bulunan resmi teyit: 1/3
 - İlk görülme zamanı bulunan resmi teyit: 3/3
-- Ölçülen kaynak: 25 / gözlenen kaynak: 94
+- Ölçülen kaynak: 25 / gözlenen kaynak: 95
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 0
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 799
+- Defterde korunan ilk iddia gözlemi: 806
 
 ## Kanal Kapsamı
 
-- Google News: 234 haber, 30/30 başarılı sorgu.
+- Google News: 219 haber, 30/30 başarılı sorgu.
 - Telegram: 6 mesaj, 8/8 erişilebilir kanal.
 - X: durum=MISSING_CREDENTIALS, gönderi=0, yapılandırılmış hesap=45.
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 796 | 126 | 1 | — | — | %97.9 | 1.7 | PARTIAL_MEASUREMENT |
+| Google News / medya | 803 | 126 | 1 | — | — | %97.9 | 1.7 | PARTIAL_MEASUREMENT |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -31,7 +31,7 @@
 
 | Muhabir / Ağ | Google Arama Bulgusu | Atıflı Gözlem | Ölçülebilir İddia | Skor Durumu |
 |---|---:|---:|---:|---|
-| Yağız Sabuncuoğlu | 1 | 1 | 1 | PARTIAL_MEASUREMENT |
+| Yağız Sabuncuoğlu | 0 | 1 | 1 | PARTIAL_MEASUREMENT |
 | Ertan Süzgün | 3 | 0 | 0 | ATTRIBUTION_PENDING |
 | Sports Digitale | 0 | 0 | 0 | ATTRIBUTION_PENDING |
 | Yusuf Günaydın | 1 | 0 | 0 | ATTRIBUTION_PENDING |
@@ -48,12 +48,12 @@
 | Kaynak | Katman | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---|
 | CNN Türk Spor | MEDIA | 22 | 5 | 1 | — | — | %50.0 | 40.0 | PARTIAL_MEASUREMENT |
-| Fotomaç | MEDIA | 100 | 17 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Fotomaç | MEDIA | 103 | 17 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Hürriyet | MEDIA | 70 | 6 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Takvim | MEDIA | 62 | 4 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Milliyet | MEDIA | 35 | 5 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| NTVSpor | MEDIA | 30 | 4 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Haberturk Spor | MEDIA | 29 | 2 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
-| NTVSpor | MEDIA | 29 | 4 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | A SPOR | MEDIA | 28 | 5 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Fanatik | MEDIA | 22 | 6 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | FOTOMAÇ | MEDIA | 21 | 4 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
@@ -72,11 +72,11 @@
 | Evrensel.net | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Karadeniz Gazetesi | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Yağız Sabuncuoğlu | ATTRIBUTED_MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
-| Sabah | MEDIA | 53 | 4 | 0 | — | — | — | — | OBSERVING |
+| Sabah | MEDIA | 54 | 4 | 0 | — | — | — | — | OBSERVING |
 | Aksam Spor | MEDIA | 44 | 2 | 0 | — | — | — | — | OBSERVING |
 | GZT | MEDIA | 17 | 0 | 0 | — | — | — | — | OBSERVING |
+| Taka Gazete | MEDIA | 13 | 5 | 0 | — | — | — | — | OBSERVING |
 | beinsports.com.tr | MEDIA | 13 | 1 | 0 | — | — | — | — | OBSERVING |
-| Taka Gazete | MEDIA | 12 | 5 | 0 | — | — | — | — | OBSERVING |
 | Sporx.com | MEDIA | 11 | 6 | 0 | — | — | — | — | OBSERVING |
 | Anadolu Ajansı Spor | AGENCY | 9 | 0 | 0 | — | — | — | — | OBSERVING |
 | Gazete Vatan | MEDIA | 9 | 1 | 0 | — | — | — | — | OBSERVING |
@@ -111,6 +111,7 @@
 | Akdeniz Manşet Gazetesi | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Anadolu Ajansı | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Anadolu'da Bugün | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
+| Anadolu'da Bugün Gazetesi | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | BBC | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | Ege Alternatif | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Ege'de Sonsöz | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
