@@ -1,18 +1,18 @@
 # Erken Haber Kaynak Performansı
 
-- Transfer sinyali: 38
+- Transfer sinyali: 40
 - Resmi olaya dönüşen transfer: 3
 - Yayın zamanı bulunan resmi teyit: 1/3
 - İlk görülme zamanı bulunan resmi teyit: 3/3
-- Ölçülen kaynak: 25 / gözlenen kaynak: 95
+- Ölçülen kaynak: 25 / gözlenen kaynak: 96
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 0
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 814
+- Defterde korunan ilk iddia gözlemi: 818
 
 ## Kanal Kapsamı
 
-- Google News: 219 haber, 30/30 başarılı sorgu.
+- Google News: 234 haber, 30/30 başarılı sorgu.
 - Telegram: 6 mesaj, 8/8 erişilebilir kanal.
 - X: durum=MISSING_CREDENTIALS, gönderi=0, yapılandırılmış hesap=45.
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 811 | 127 | 1 | — | — | %97.9 | 1.7 | PARTIAL_MEASUREMENT |
+| Google News / medya | 815 | 129 | 1 | — | — | %97.9 | 1.7 | PARTIAL_MEASUREMENT |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -32,8 +32,8 @@
 | Muhabir / Ağ | Google Arama Bulgusu | Atıflı Gözlem | Ölçülebilir İddia | Skor Durumu |
 |---|---:|---:|---:|---|
 | Yağız Sabuncuoğlu | 0 | 1 | 1 | PARTIAL_MEASUREMENT |
-| Ertan Süzgün | 1 | 0 | 0 | ATTRIBUTION_PENDING |
-| Sports Digitale | 1 | 0 | 0 | ATTRIBUTION_PENDING |
+| Ertan Süzgün | 3 | 0 | 0 | ATTRIBUTION_PENDING |
+| Sports Digitale | 0 | 0 | 0 | ATTRIBUTION_PENDING |
 | Yusuf Günaydın | 1 | 0 | 0 | ATTRIBUTION_PENDING |
 | Ekrem Konur | 0 | 0 | 0 | ATTRIBUTION_PENDING |
 
@@ -48,7 +48,7 @@
 | Kaynak | Katman | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---|
 | CNN Türk Spor | MEDIA | 22 | 5 | 1 | — | — | %50.0 | 40.0 | PARTIAL_MEASUREMENT |
-| Fotomaç | MEDIA | 106 | 17 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Fotomaç | MEDIA | 107 | 17 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Hürriyet | MEDIA | 71 | 6 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Takvim | MEDIA | 62 | 4 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Milliyet | MEDIA | 35 | 5 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
@@ -75,8 +75,8 @@
 | Sabah | MEDIA | 55 | 4 | 0 | — | — | — | — | OBSERVING |
 | Aksam Spor | MEDIA | 44 | 2 | 0 | — | — | — | — | OBSERVING |
 | GZT | MEDIA | 18 | 0 | 0 | — | — | — | — | OBSERVING |
+| beinsports.com.tr | MEDIA | 14 | 1 | 0 | — | — | — | — | OBSERVING |
 | Taka Gazete | MEDIA | 13 | 5 | 0 | — | — | — | — | OBSERVING |
-| beinsports.com.tr | MEDIA | 13 | 1 | 0 | — | — | — | — | OBSERVING |
 | Sporx.com | MEDIA | 11 | 6 | 0 | — | — | — | — | OBSERVING |
 | Anadolu Ajansı Spor | AGENCY | 9 | 0 | 0 | — | — | — | — | OBSERVING |
 | Gazete Vatan | MEDIA | 9 | 1 | 0 | — | — | — | — | OBSERVING |
@@ -86,8 +86,8 @@
 | Halk TV | MEDIA | 5 | 0 | 0 | — | — | — | — | OBSERVING |
 | CNN Türk | MEDIA | 4 | 0 | 0 | — | — | — | — | OBSERVING |
 | Eurohoops | MEDIA | 4 | 0 | 0 | — | — | — | — | OBSERVING |
+| Konya Yeni Haber | MEDIA | 4 | 1 | 0 | — | — | — | — | OBSERVING |
 | Fotospor | MEDIA | 3 | 1 | 0 | — | — | — | — | OBSERVING |
-| Konya Yeni Haber | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
 | Mynet | MEDIA | 3 | 1 | 0 | — | — | — | — | OBSERVING |
 | Nefes Gazetesi | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
 | Yeni Alanya | MEDIA | 3 | 2 | 0 | — | — | — | — | OBSERVING |
@@ -125,6 +125,7 @@
 | IHA | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Kocaeli Barış Gazetesi | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | Konya Postası Gazetesi | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
+| Malta Haber | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | Merhaba Gazetesi | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Orta Çizgi | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | Patronlar Dünyası | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
