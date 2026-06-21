@@ -8,11 +8,11 @@
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 0
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 867
+- Defterde korunan ilk iddia gözlemi: 869
 
 ## Kanal Kapsamı
 
-- Google News: 217 haber, 30/30 başarılı sorgu.
+- Google News: 219 haber, 30/30 başarılı sorgu.
 - Telegram: 6 mesaj, 8/8 erişilebilir kanal.
 - X: durum=MISSING_CREDENTIALS, gönderi=0, yapılandırılmış hesap=45.
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 864 | 147 | 1 | — | — | %98.2 | 1.5 | PARTIAL_MEASUREMENT |
+| Google News / medya | 866 | 148 | 1 | — | — | %98.2 | 1.5 | PARTIAL_MEASUREMENT |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -47,7 +47,7 @@
 
 | Kaynak | Katman | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---|
-| CNN Türk Spor | MEDIA | 24 | 5 | 1 | — | — | %50.0 | 40.0 | PARTIAL_MEASUREMENT |
+| CNN Türk Spor | MEDIA | 25 | 6 | 1 | — | — | %50.0 | 40.0 | PARTIAL_MEASUREMENT |
 | Fotomaç | MEDIA | 112 | 18 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Hürriyet | MEDIA | 72 | 6 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Takvim | MEDIA | 62 | 4 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
@@ -78,8 +78,8 @@
 | Aksam Spor | MEDIA | 48 | 2 | 0 | — | — | — | — | OBSERVING |
 | GZT | MEDIA | 18 | 0 | 0 | — | — | — | — | OBSERVING |
 | Taka Gazete | MEDIA | 17 | 8 | 0 | — | — | — | — | OBSERVING |
+| beinsports.com.tr | MEDIA | 15 | 1 | 0 | — | — | — | — | OBSERVING |
 | Sporx.com | MEDIA | 14 | 9 | 0 | — | — | — | — | OBSERVING |
-| beinsports.com.tr | MEDIA | 14 | 1 | 0 | — | — | — | — | OBSERVING |
 | Anadolu Ajansı Spor | AGENCY | 11 | 0 | 0 | — | — | — | — | OBSERVING |
 | Gazete Vatan | MEDIA | 10 | 1 | 0 | — | — | — | — | OBSERVING |
 | Haber 7 | MEDIA | 9 | 0 | 0 | — | — | — | — | OBSERVING |
