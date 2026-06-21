@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-20T23:38:49.039547+00:00",
+  "generated_at": "2026-06-21T05:20:08.362561+00:00",
   "season": "2025_2026",
   "maturity_days": 14,
   "summary": {
@@ -8,7 +8,7 @@
     "official_events_with_timestamp": 1,
     "official_events_with_first_observed_timestamp": 3,
     "observed_sources": 100,
-    "scored_sources": 27,
+    "scored_sources": 28,
     "measured_lead_times": 0,
     "first_seen_lead_times": 0,
     "tracked_x_sources_waiting": 20,
@@ -16,7 +16,7 @@
   },
   "provider_coverage": {
     "google_news": {
-      "articles": 208,
+      "articles": 217,
       "queries": 30,
       "successful_queries": 30
     },
@@ -42,15 +42,15 @@
       "lead_hours": [],
       "first_seen_lead_hours": [],
       "lead_time_unavailable": 1,
-      "matured_unconfirmed": 52,
-      "pending_claims": 91,
+      "matured_unconfirmed": 54,
+      "pending_claims": 89,
       "unresolved_claims": 713,
       "status": "PARTIAL_MEASUREMENT",
       "score": 1.5,
       "average_lead_hours": null,
       "average_first_seen_lead_hours": null,
       "official_conversion_rate_pct": 0.7,
-      "false_alarm_proxy_pct": 98.1
+      "false_alarm_proxy_pct": 98.2
     },
     {
       "source": "Muhabire atıflı medya",
@@ -195,6 +195,26 @@
       "false_alarm_proxy_pct": 100.0
     },
     {
+      "source": "Sabah",
+      "source_tier": "MEDIA",
+      "source_type": "rss",
+      "observations": 56,
+      "scoreable_claims": 4,
+      "official_conversions": 0,
+      "lead_hours": [],
+      "first_seen_lead_hours": [],
+      "lead_time_unavailable": 0,
+      "matured_unconfirmed": 1,
+      "pending_claims": 3,
+      "unresolved_claims": 52,
+      "status": "PARTIAL_MEASUREMENT",
+      "score": 0.0,
+      "average_lead_hours": null,
+      "average_first_seen_lead_hours": null,
+      "official_conversion_rate_pct": 0.0,
+      "false_alarm_proxy_pct": 100.0
+    },
+    {
       "source": "Milliyet",
       "source_tier": "MEDIA",
       "source_type": null,
@@ -204,8 +224,8 @@
       "lead_hours": [],
       "first_seen_lead_hours": [],
       "lead_time_unavailable": 0,
-      "matured_unconfirmed": 3,
-      "pending_claims": 2,
+      "matured_unconfirmed": 4,
+      "pending_claims": 1,
       "unresolved_claims": 30,
       "status": "PARTIAL_MEASUREMENT",
       "score": 0.0,
@@ -653,26 +673,6 @@
       "average_first_seen_lead_hours": null,
       "official_conversion_rate_pct": 0.0,
       "false_alarm_proxy_pct": 100.0
-    },
-    {
-      "source": "Sabah",
-      "source_tier": "MEDIA",
-      "source_type": "rss",
-      "observations": 56,
-      "scoreable_claims": 4,
-      "official_conversions": 0,
-      "lead_hours": [],
-      "first_seen_lead_hours": [],
-      "lead_time_unavailable": 0,
-      "matured_unconfirmed": 0,
-      "pending_claims": 4,
-      "unresolved_claims": 52,
-      "status": "OBSERVING",
-      "score": null,
-      "average_lead_hours": null,
-      "average_first_seen_lead_hours": null,
-      "official_conversion_rate_pct": 0.0,
-      "false_alarm_proxy_pct": null
     },
     {
       "source": "Aksam Spor",
