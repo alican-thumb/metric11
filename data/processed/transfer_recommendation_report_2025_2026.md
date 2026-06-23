@@ -23,9 +23,9 @@
 | 9 | ÇAYKUR RİZESPOR A.Ş. | YÜKSEK | 52.4 | 1.21 | 1.35 | 1.53 | Kaleci / istikrar |
 | 10 | TÜMOSAN KONYASPOR | YÜKSEK | 47.9 | 1.18 | 1.26 | 1.47 | 6 numara / savunma emniyeti |
 | 11 | CORENDON ALANYASPOR | YÜKSEK | 47.1 | 1.09 | 1.21 | 1.21 | 8 numara / fizik motoru |
-| 12 | ÇORUM FK | YÜKSEK | 44.0 | None | None | None | Kaleci / istikrar |
-| 13 | ERZURUMSPOR FK | YÜKSEK | 44.0 | None | None | None | Kaleci / istikrar |
-| 14 | AMED SFK | YÜKSEK | 44.0 | None | None | None | Kaleci / istikrar |
+| 12 | AMED SFK | YÜKSEK | 44.0 | None | None | None | Kaleci / istikrar |
+| 13 | ÇORUM FK | YÜKSEK | 44.0 | None | None | None | Kaleci / istikrar |
+| 14 | ERZURUMSPOR FK | YÜKSEK | 44.0 | None | None | None | Kaleci / istikrar |
 | 15 | GÖZTEPE A.Ş. | YÜKSEK | 36.2 | 1.62 | 1.24 | 0.94 | 6 numara / savunma emniyeti |
 | 16 | SAMSUNSPOR A.Ş. | YÜKSEK | 35.9 | 1.5 | 1.35 | 1.32 | Kaleci / istikrar |
 | 17 | BEŞİKTAŞ A.Ş. | NORMAL | 27.5 | 1.76 | 1.74 | 1.18 | Sol açık / çizgi kırıcı |
@@ -383,6 +383,35 @@ Zayıf nokta: deplasman zayıf, düşük şut baskısı
   3. WAGNER FABRICIO CARDOSO DE PINA (TRABZONSPOR A.Ş.) | 23y | 0 gol | PREMİUM TRANSFER | HIGH | skor 16.1
      → Deplasman zayıf sorunu var; Bek / çift yönlü koridor bu açığı kapatacak. Pina: 28 maç. Uzun sözleşme — yüksek bonusu göze almalı. 23 yaş, uzun vadeli yatırım profili.
 
+### AMED SFK  [YÜKSEK]
+*None puan/maç | maç başına None attı | maç başına None yedi*
+
+Zayıf nokta: yeni lig takımı
+
+**Kaleci / istikrar** — Süper Lig'e yeni çıkan takım; Kaleci / istikrar pozisyonunda deneyimli takviye kritik.
+  1. MARIO RICARDO DA SILVA VELHO (NATURA DÜNYASI GENÇLERBİRLİĞİ) | 27y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 25.1
+     → Gol üretimi zayıf (maç başına 1.0 gol attı) - Kaleci / istikrar pozisyonunda yaratıcılık gerekiyor. Velho: 23 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
+  2. YAHIA FOFANA (ÇAYKUR RİZESPOR A.Ş.) | 25y | 0 gol | PREMİUM TRANSFER | MEDIUM | skor 16.2
+     → Gol üretimi zayıf (maç başına 1.0 gol attı) - Kaleci / istikrar pozisyonunda yaratıcılık gerekiyor. Fofana: 27 maç. Uzun sözleşme — yüksek bonusu göze almalı.
+  3. ERSİN DESTANOĞLU (BEŞİKTAŞ A.Ş.) | 25y | 0 gol | PREMİUM TRANSFER | MEDIUM | skor 14.1
+     → Gol üretimi zayıf (maç başına 1.0 gol attı) - Kaleci / istikrar pozisyonunda yaratıcılık gerekiyor. Destanoğlu: 25 maç. Uzun sözleşme — yüksek bonusu göze almalı.
+
+**Stoper / hava ve temas** — Süper Lig'e yeni çıkan takım; Stoper / hava ve temas pozisyonunda deneyimli takviye kritik.
+  1. SAMET AKAYDİN (ÇAYKUR RİZESPOR A.Ş.) | 32y | 3 gol | SERBEST TRANSFER FIRSATI | FREE | skor 29.2
+     → Gol üretimi zayıf (maç başına 1.0 gol attı) - Stoper / hava ve temas pozisyonunda yaratıcılık gerekiyor. Akaydi̇n: 3 gol, 29 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 32 yaş — deneyim katkısı, kısa dönem çözüm.
+  2. HELITON JORGE  TITO DOS SANTOS (GÖZTEPE A.Ş.) | 30y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 27.8
+     → Gol üretimi zayıf (maç başına 1.0 gol attı) - Stoper / hava ve temas pozisyonunda yaratıcılık gerekiyor. Santos: 32 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
+  3. MALCOM NARCISSE BOKELE MPUTU (GÖZTEPE A.Ş.) | 26y | 3 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 26.5
+     → Gol üretimi zayıf (maç başına 1.0 gol attı) - Stoper / hava ve temas pozisyonunda yaratıcılık gerekiyor. Mputu: 3 gol, 30 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
+
+**Santrfor / skor yükü** — Süper Lig'e yeni çıkan takım; Santrfor / skor yükü pozisyonunda deneyimli takviye kritik.
+  1. FELIPE AUGUSTO DA SILVA (TRABZONSPOR A.Ş.) | 22y | 13 gol | PREMİUM TRANSFER | HIGH | skor 27.3
+     → Gol üretimi zayıf (maç başına 1.0 gol attı) - Santrfor / skor yükü pozisyonunda yaratıcılık gerekiyor. Silva: 13 gol, 26 maç. Uzun sözleşme — yüksek bonusu göze almalı. 22 yaş, uzun vadeli yatırım profili.
+  2. MOHAMED LAMINE BAYO (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 27y | 15 gol | PREMİUM TRANSFER | MEDIUM | skor 25.9
+     → Gol üretimi zayıf (maç başına 1.0 gol attı) - Santrfor / skor yükü pozisyonunda yaratıcılık gerekiyor. Bayo: 15 gol, 28 maç. Uzun sözleşme — yüksek bonusu göze almalı.
+  3. JUAN SANTOS DA SILVA (GÖZTEPE A.Ş.) | 24y | 11 gol | PREMİUM TRANSFER | MEDIUM | skor 25.7
+     → Gol üretimi zayıf (maç başına 1.0 gol attı) - Santrfor / skor yükü pozisyonunda yaratıcılık gerekiyor. Silva: 11 gol, 30 maç. Uzun sözleşme — yüksek bonusu göze almalı.
+
 ### ÇORUM FK  [YÜKSEK]
 *None puan/maç | maç başına None attı | maç başına None yedi*
 
@@ -413,35 +442,6 @@ Zayıf nokta: yeni lig takımı
      → Gol üretimi zayıf (maç başına 1.0 gol attı) - Santrfor / skor yükü pozisyonunda yaratıcılık gerekiyor. Silva: 11 gol, 30 maç. Uzun sözleşme — yüksek bonusu göze almalı.
 
 ### ERZURUMSPOR FK  [YÜKSEK]
-*None puan/maç | maç başına None attı | maç başına None yedi*
-
-Zayıf nokta: yeni lig takımı
-
-**Kaleci / istikrar** — Süper Lig'e yeni çıkan takım; Kaleci / istikrar pozisyonunda deneyimli takviye kritik.
-  1. MARIO RICARDO DA SILVA VELHO (NATURA DÜNYASI GENÇLERBİRLİĞİ) | 27y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 25.1
-     → Gol üretimi zayıf (maç başına 1.0 gol attı) - Kaleci / istikrar pozisyonunda yaratıcılık gerekiyor. Velho: 23 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  2. YAHIA FOFANA (ÇAYKUR RİZESPOR A.Ş.) | 25y | 0 gol | PREMİUM TRANSFER | MEDIUM | skor 16.2
-     → Gol üretimi zayıf (maç başına 1.0 gol attı) - Kaleci / istikrar pozisyonunda yaratıcılık gerekiyor. Fofana: 27 maç. Uzun sözleşme — yüksek bonusu göze almalı.
-  3. ERSİN DESTANOĞLU (BEŞİKTAŞ A.Ş.) | 25y | 0 gol | PREMİUM TRANSFER | MEDIUM | skor 14.1
-     → Gol üretimi zayıf (maç başına 1.0 gol attı) - Kaleci / istikrar pozisyonunda yaratıcılık gerekiyor. Destanoğlu: 25 maç. Uzun sözleşme — yüksek bonusu göze almalı.
-
-**Stoper / hava ve temas** — Süper Lig'e yeni çıkan takım; Stoper / hava ve temas pozisyonunda deneyimli takviye kritik.
-  1. SAMET AKAYDİN (ÇAYKUR RİZESPOR A.Ş.) | 32y | 3 gol | SERBEST TRANSFER FIRSATI | FREE | skor 29.2
-     → Gol üretimi zayıf (maç başına 1.0 gol attı) - Stoper / hava ve temas pozisyonunda yaratıcılık gerekiyor. Akaydi̇n: 3 gol, 29 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 32 yaş — deneyim katkısı, kısa dönem çözüm.
-  2. HELITON JORGE  TITO DOS SANTOS (GÖZTEPE A.Ş.) | 30y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 27.8
-     → Gol üretimi zayıf (maç başına 1.0 gol attı) - Stoper / hava ve temas pozisyonunda yaratıcılık gerekiyor. Santos: 32 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  3. MALCOM NARCISSE BOKELE MPUTU (GÖZTEPE A.Ş.) | 26y | 3 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 26.5
-     → Gol üretimi zayıf (maç başına 1.0 gol attı) - Stoper / hava ve temas pozisyonunda yaratıcılık gerekiyor. Mputu: 3 gol, 30 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
-
-**Santrfor / skor yükü** — Süper Lig'e yeni çıkan takım; Santrfor / skor yükü pozisyonunda deneyimli takviye kritik.
-  1. FELIPE AUGUSTO DA SILVA (TRABZONSPOR A.Ş.) | 22y | 13 gol | PREMİUM TRANSFER | HIGH | skor 27.3
-     → Gol üretimi zayıf (maç başına 1.0 gol attı) - Santrfor / skor yükü pozisyonunda yaratıcılık gerekiyor. Silva: 13 gol, 26 maç. Uzun sözleşme — yüksek bonusu göze almalı. 22 yaş, uzun vadeli yatırım profili.
-  2. MOHAMED LAMINE BAYO (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 27y | 15 gol | PREMİUM TRANSFER | MEDIUM | skor 25.9
-     → Gol üretimi zayıf (maç başına 1.0 gol attı) - Santrfor / skor yükü pozisyonunda yaratıcılık gerekiyor. Bayo: 15 gol, 28 maç. Uzun sözleşme — yüksek bonusu göze almalı.
-  3. JUAN SANTOS DA SILVA (GÖZTEPE A.Ş.) | 24y | 11 gol | PREMİUM TRANSFER | MEDIUM | skor 25.7
-     → Gol üretimi zayıf (maç başına 1.0 gol attı) - Santrfor / skor yükü pozisyonunda yaratıcılık gerekiyor. Silva: 11 gol, 30 maç. Uzun sözleşme — yüksek bonusu göze almalı.
-
-### AMED SFK  [YÜKSEK]
 *None puan/maç | maç başına None attı | maç başına None yedi*
 
 Zayıf nokta: yeni lig takımı
