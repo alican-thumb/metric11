@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-23T20:24:39.612306+00:00",
+  "generated_at": "2026-06-23T23:23:59.221761+00:00",
   "season": "2025_2026",
   "maturity_days": 14,
   "summary": {
-    "transfer_signals": 46,
+    "transfer_signals": 44,
     "official_events": 3,
     "official_events_with_timestamp": 1,
     "official_events_with_first_observed_timestamp": 3,
@@ -12,11 +12,11 @@
     "measured_lead_times": 0,
     "first_seen_lead_times": 0,
     "tracked_x_sources_waiting": 20,
-    "retained_claim_observations": 978
+    "retained_claim_observations": 979
   },
   "provider_coverage": {
     "google_news": {
-      "articles": 213,
+      "articles": 216,
       "queries": 30,
       "successful_queries": 30
     },
@@ -36,7 +36,7 @@
       "source": "Google News / medya",
       "source_tier": "CHANNEL",
       "source_type": "media",
-      "observations": 975,
+      "observations": 976,
       "scoreable_claims": 186,
       "official_conversions": 1,
       "lead_hours": [],
@@ -44,7 +44,7 @@
       "lead_time_unavailable": 1,
       "matured_unconfirmed": 61,
       "pending_claims": 124,
-      "unresolved_claims": 789,
+      "unresolved_claims": 790,
       "status": "PARTIAL_MEASUREMENT",
       "score": 1.3,
       "average_lead_hours": null,
@@ -515,6 +515,26 @@
       "false_alarm_proxy_pct": 100.0
     },
     {
+      "source": "Orta Çizgi",
+      "source_tier": "MEDIA",
+      "source_type": "google_news",
+      "observations": 3,
+      "scoreable_claims": 2,
+      "official_conversions": 0,
+      "lead_hours": [],
+      "first_seen_lead_hours": [],
+      "lead_time_unavailable": 0,
+      "matured_unconfirmed": 1,
+      "pending_claims": 1,
+      "unresolved_claims": 1,
+      "status": "PARTIAL_MEASUREMENT",
+      "score": 0.0,
+      "average_lead_hours": null,
+      "average_first_seen_lead_hours": null,
+      "official_conversion_rate_pct": 0.0,
+      "false_alarm_proxy_pct": 100.0
+    },
+    {
       "source": "Diken",
       "source_tier": "MEDIA",
       "source_type": "google_news",
@@ -587,26 +607,6 @@
       "matured_unconfirmed": 1,
       "pending_claims": 0,
       "unresolved_claims": 1,
-      "status": "PARTIAL_MEASUREMENT",
-      "score": 0.0,
-      "average_lead_hours": null,
-      "average_first_seen_lead_hours": null,
-      "official_conversion_rate_pct": 0.0,
-      "false_alarm_proxy_pct": 100.0
-    },
-    {
-      "source": "Orta Çizgi",
-      "source_tier": "MEDIA",
-      "source_type": "google_news",
-      "observations": 2,
-      "scoreable_claims": 2,
-      "official_conversions": 0,
-      "lead_hours": [],
-      "first_seen_lead_hours": [],
-      "lead_time_unavailable": 0,
-      "matured_unconfirmed": 1,
-      "pending_claims": 1,
-      "unresolved_claims": 0,
       "status": "PARTIAL_MEASUREMENT",
       "score": 0.0,
       "average_lead_hours": null,
