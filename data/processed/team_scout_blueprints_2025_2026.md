@@ -45,7 +45,7 @@
 - Santrfor / skor yükü: Süper Lig'e yeni çıkan takım; Santrfor / skor yükü pozisyonunda deneyimli takviye kritik. Adaylar: EBERE PAUL ONUACHU, MOHAMED LAMINE BAYO, FELIPE AUGUSTO DA SILVA
 - 6 numara / savunma emniyeti: Süper Lig'e yeni çıkan takım; 6 numara / savunma emniyeti pozisyonunda deneyimli takviye kritik. Adaylar: ANDRI FANNAR BALDURSSON, ANTHONY JUNIOR DENNIS, MANUEL LUIS DA SILVA CAFUMANA
 
-## ÇORUM FK
+## ERZURUMSPOR FK
 
 - Güç: None | GF: None | GA: None | kart: None
 - Zafiyet: yeni lig takımı
@@ -55,7 +55,7 @@
 - Santrfor / skor yükü: Süper Lig'e yeni çıkan takım; Santrfor / skor yükü pozisyonunda deneyimli takviye kritik. Adaylar: EBERE PAUL ONUACHU, MOHAMED LAMINE BAYO, FELIPE AUGUSTO DA SILVA
 - 6 numara / savunma emniyeti: Süper Lig'e yeni çıkan takım; 6 numara / savunma emniyeti pozisyonunda deneyimli takviye kritik. Adaylar: ANDRI FANNAR BALDURSSON, ANTHONY JUNIOR DENNIS, MANUEL LUIS DA SILVA CAFUMANA
 
-## ERZURUMSPOR FK
+## ÇORUM FK
 
 - Güç: None | GF: None | GA: None | kart: None
 - Zafiyet: yeni lig takımı

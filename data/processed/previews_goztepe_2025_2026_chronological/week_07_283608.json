@@ -517,6 +517,18 @@
         "actual_scorer": false
       },
       {
+        "player_id": "2820847",
+        "name": "ISHOLA JUNIOR  OLAITAN",
+        "goal_threat_score": 8.02,
+        "candidate_type": "primary",
+        "recent_starts": 6,
+        "season_goals_before_match": 1,
+        "recent_goals": 1,
+        "big_match_goals_before_match": 0,
+        "opponent_defense_multiplier": 1.22,
+        "actual_scorer": false
+      },
+      {
         "player_id": "2685818",
         "name": "MALCOM NARCISSE BOKELE MPUTU",
         "goal_threat_score": 8.02,
@@ -568,23 +580,6 @@
         "recent_bench": 2,
         "cards_before_match": 0,
         "recent_cards": 0
-      },
-      {
-        "player_id": "2820847",
-        "name": "ISHOLA JUNIOR  OLAITAN",
-        "goal_threat_score": 5.45,
-        "candidate_type": "primary",
-        "recent_starts": 6,
-        "season_goals_before_match": 1,
-        "recent_goals": 1,
-        "big_match_goals_before_match": 0,
-        "opponent_defense_multiplier": 1.22,
-        "actual_scorer": false,
-        "quality_adjustment": {
-          "multiplier": 0.68,
-          "reason": "Top 5 sıralama etkisini düşür veya aday tipini yeniden kontrol et.",
-          "source": "goal_candidate_segment_backtest"
-        }
       },
       {
         "player_id": "2294118",
@@ -730,12 +725,12 @@
     "core_starters": [
       "ANTHONY JUNIOR DENNIS",
       "RHALDNEY NORBERTO SIMIAO GOMES",
-      "MALCOM NARCISSE BOKELE MPUTU",
+      "ISHOLA JUNIOR  OLAITAN",
       "MATEUSZ LIS",
       "ARDA OKAN KURTULAN",
       "HELITON JORGE  TITO DOS SANTOS",
-      "ISHOLA JUNIOR  OLAITAN",
-      "MOHAMMED AMIN CHERNI"
+      "MOHAMMED AMIN CHERNI",
+      "MALCOM NARCISSE BOKELE MPUTU"
     ],
     "attacking_priority": [
       "ANTHONY JUNIOR DENNIS",
@@ -764,8 +759,8 @@
   "coach_lineup_audit": {
     "verdict": "KISMEN_TARTIŞMALI",
     "actual_lineup_score": 92.32,
-    "recommended_lineup_score": 84.91,
-    "alignment_rate": 1.087,
+    "recommended_lineup_score": 86.06,
+    "alignment_rate": 1.073,
     "actual_starters": [
       "MATEUSZ LIS",
       "ARDA OKAN KURTULAN",
@@ -782,12 +777,12 @@
     "model_core_starters": [
       "ANTHONY JUNIOR DENNIS",
       "RHALDNEY NORBERTO SIMIAO GOMES",
-      "MALCOM NARCISSE BOKELE MPUTU",
+      "ISHOLA JUNIOR  OLAITAN",
       "MATEUSZ LIS",
       "ARDA OKAN KURTULAN",
       "HELITON JORGE  TITO DOS SANTOS",
-      "ISHOLA JUNIOR  OLAITAN",
-      "MOHAMMED AMIN CHERNI"
+      "MOHAMMED AMIN CHERNI",
+      "MALCOM NARCISSE BOKELE MPUTU"
     ],
     "omitted_core_players": [
       "ISHOLA JUNIOR  OLAITAN"
@@ -1005,7 +1000,7 @@
     "Gol adayı sinyalinde öne çıkan isimler: ANTHONY JUNIOR DENNIS, EFKAN BEKİROĞLU, IBRAHIM MOHAMMED ABDALLAH SABRA, RHALDNEY NORBERTO SIMIAO GOMES. Bu skor son gol formu, sezon içi gol sayısı ve son dönemde ilk 11 başlama sıklığından türetildi.",
     "Skor dağılımında en olası senaryolar: 1-0 (%20), 0-0 (%15), 2-0 (%13). Model aksiyonu: Beraberlik uyarılı tahmin; önerilen ana skor 1-0.",
     "Kadro tercih önerisi: Önde baskı ve skor arama. Hücum önceliği ANTHONY JUNIOR DENNIS, EFKAN BEKİROĞLU, IBRAHIM MOHAMMED ABDALLAH SABRA. Disiplin yönetimi gereken oyuncular: ARDA OKAN KURTULAN, ALLAN GODOI SANTOS, FURKAN BAYIR.",
-    "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %109 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.33-0.56 yerine 1.33-0.56 bandına gelebilirdi.",
+    "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %107 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.33-0.56 yerine 1.33-0.56 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday YUNUS AKGÜN (Sol açık / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.33-0.56 bandından 1.66-0.54 bandına taşırdı. Bu senaryoda en olası skor 1-0 ve kazanma olasılığı %65 olurdu.",
     "MVP olasılık motoru Beşiktaş galibiyetini %54, beraberliği %28, rakip galibiyetini %19 olarak işaretliyor. Gol beklentisi 1.33-0.56; kart sinyali MEDIUM."
   ]
