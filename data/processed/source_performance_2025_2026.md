@@ -82,13 +82,14 @@
 | Kocaeli Barış Gazetesi | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Vietnam.vn | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Yağız Sabuncuoğlu | ATTRIBUTED_MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Taka Gazete | MEDIA | 22 | 13 | 0 | — | — | — | — | OBSERVING |
 | GZT | MEDIA | 21 | 0 | 0 | — | — | — | — | OBSERVING |
 | Taka Gazete | MEDIA | 21 | 12 | 0 | — | — | — | — | OBSERVING |
 | beinsports.com.tr | MEDIA | 15 | 1 | 0 | — | — | — | — | OBSERVING |
 | Anadolu Ajansı Spor | AGENCY | 12 | 1 | 0 | — | — | — | — | OBSERVING |
 | Yeniçağ Gazetesi | MEDIA | 12 | 2 | 0 | — | — | — | — | OBSERVING |
 | Gazete Vatan | MEDIA | 10 | 1 | 0 | — | — | — | — | OBSERVING |
-| Haber 7 | MEDIA | 9 | 0 | 0 | — | — | — | — | OBSERVING |
+| Haber 7 | MEDIA | 10 | 0 | 0 | — | — | — | — | OBSERVING |
 | HaberTS | MEDIA | 9 | 5 | 0 | — | — | — | — | OBSERVING |
 | Eurohoops | MEDIA | 6 | 2 | 0 | — | — | — | — | OBSERVING |
 | Halk TV | MEDIA | 6 | 0 | 0 | — | — | — | — | OBSERVING |
