@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-06-24T04:36:58.598769+00:00",
+  "generated_at": "2026-06-24T06:18:23.296486+00:00",
   "season": "2025_2026",
   "summary": {
     "free_agents_count": 261,
     "final_year_count": 180,
-    "transfer_signals_count": 36,
+    "transfer_signals_count": 42,
     "transfer_status_counts": {
       "OFFICIAL": 0,
       "CORROBORATED": 3,
-      "RUMOR": 12,
-      "REVIEW_REQUIRED": 21
+      "RUMOR": 13,
+      "REVIEW_REQUIRED": 26
     },
-    "promotion_events_count": 0,
+    "promotion_events_count": 1,
     "free_agent_total_market_value_eur": 443450000
   },
   "free_agents_top20": [
@@ -460,6 +460,73 @@
   ],
   "transfer_signals": [
     {
+      "player_name": "ONURCAN PİRİ",
+      "from_club": "ZECORNER KAYSERİSPOR",
+      "to_club": "Kocaelispor",
+      "transfer_type": "permanent",
+      "window": "summer_2026",
+      "signal_type": "signing",
+      "confidence": "MEDIUM",
+      "tm_market_value_eur": null,
+      "direction_quality": "TARGET_IDENTIFIED",
+      "article_id": "19f499144950",
+      "title": "Kocaelispor Onurcan Piri ile sözleşme imzaladı!",
+      "link": "https://www.fotomac.com.tr/kocaelispor/2026/06/23/kocaelispor-onurcan-piri-ile-sozlesme-imzaladi",
+      "source": "Fotomaç",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-23T23:38:29+03:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "HIGH",
+      "verification_status": "CORROBORATED",
+      "interpretation": "Birden fazla kaynak aynı yönlü iddiayı taşıyor; resmi açıklama beklenir.",
+      "source_count": 3,
+      "sources": [
+        "Fotomaç",
+        "Son Dakika",
+        "Yeniçağ Gazetesi"
+      ],
+      "evidence": [
+        {
+          "source": "Fotomaç",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Kocaelispor Onurcan Piri ile sözleşme imzaladı!",
+          "link": "https://www.fotomac.com.tr/kocaelispor/2026/06/23/kocaelispor-onurcan-piri-ile-sozlesme-imzaladi",
+          "published_at": "2026-06-23T23:38:29+03:00",
+          "first_observed_at": null
+        },
+        {
+          "source": "Son Dakika",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Kocaelispor transfer",
+          "title": "Kocaelispor, Onurcan Piri'yi Transfer Etti - Son Dakika",
+          "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQWFN0dVRZdldVaVBYVnpXYXhQZ2lfcHZGaVdGLUNRbE5hVDNKNEVhNDlEZkJkVVNWU0NJb2tiU1BuZUZON0xDTDVBNV9zMzdDTG5mMlBuQ1YxRTlYeDFiT1drTmtOdHJTV2N3cURFVWlzSTFYZmVkcHNmQnI2VVNqcWJFVzNLNmVhMVhicklVTlHSAZABQVVfeXFMUFhTdHVUWXZXVWlQWFZ6V2F4UGdpX3B2RmlXRi1DUWxOYVQzSjRFYTQ5RGZCZFVTVlNDSW9rYlNQbmVGTjdMQ0w1QTVfczM3Q0xuZjJQbkNWMUU5WHgxYk9Xa05rTnRyU1djd3FERVVpc0kxWGZlZHBzZkJyNlVTanFiRVczSzZlYTFYYnJJVU5R?oc=5",
+          "published_at": "2026-06-23T14:33:14+00:00",
+          "first_observed_at": null
+        },
+        {
+          "source": "Yeniçağ Gazetesi",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Kocaelispor transfer",
+          "title": "Kocaelispor, kaleci Onurcan Piri'yi transfer etti - Yeniçağ Gazetesi",
+          "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNSGRiMndnVmoyTm1vamkzRWtrTFNNZ3NVaF9OQVRXVTNUaWRCOFd0VHlIZUxwYU01U3haZjZPaEZpM3BoWjJyeko0X2dkLVhZSHp2M0dEelp1SnJ6dndWMFkzR25WaFl5d0IzVHBxQ0szcDJsSHNtQmNpNFA3bWNxMEpSTG1nVm1oQ29CSHlpRE5FSS03bHI0?oc=5",
+          "published_at": "2026-06-23T14:22:00+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
       "player_name": "EDIN VISCA",
       "from_club": "TRABZONSPOR A.Ş.",
       "to_club": "Başakşehir",
@@ -509,61 +576,6 @@
           "title": "Edin Visca yeniden Başakşehir'de!",
           "link": "https://www.haberturk.com/edin-visca-yeniden-basaksehir-de-3893653-spor",
           "published_at": "2026-06-23T13:59:32+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": "ONURCAN PİRİ",
-      "from_club": "ZECORNER KAYSERİSPOR",
-      "to_club": "Kocaelispor",
-      "transfer_type": "permanent",
-      "window": "summer_2026",
-      "signal_type": "official_transfer",
-      "confidence": "MEDIUM",
-      "tm_market_value_eur": null,
-      "direction_quality": "TARGET_IDENTIFIED",
-      "article_id": "2b0e22581ff2",
-      "title": "Kocaelispor, Onurcan Piri'yi Transfer Etti - Son Dakika",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQWFN0dVRZdldVaVBYVnpXYXhQZ2lfcHZGaVdGLUNRbE5hVDNKNEVhNDlEZkJkVVNWU0NJb2tiU1BuZUZON0xDTDVBNV9zMzdDTG5mMlBuQ1YxRTlYeDFiT1drTmtOdHJTV2N3cURFVWlzSTFYZmVkcHNmQnI2VVNqcWJFVzNLNmVhMVhicklVTlHSAZABQVVfeXFMUFhTdHVUWXZXVWlQWFZ6V2F4UGdpX3B2RmlXRi1DUWxOYVQzSjRFYTQ5RGZCZFVTVlNDSW9rYlNQbmVGTjdMQ0w1QTVfczM3Q0xuZjJQbkNWMUU5WHgxYk9Xa05rTnRyU1djd3FERVVpc0kxWGZlZHBzZkJyNlVTanFiRVczSzZlYTFYYnJJVU5R?oc=5",
-      "source": "Son Dakika",
-      "source_type": "google_news",
-      "account_type": null,
-      "query": "Kocaelispor transfer",
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-23T14:33:14+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "HIGH",
-      "verification_status": "CORROBORATED",
-      "interpretation": "Birden fazla kaynak aynı yönlü iddiayı taşıyor; resmi açıklama beklenir.",
-      "source_count": 2,
-      "sources": [
-        "Son Dakika",
-        "Yeniçağ Gazetesi"
-      ],
-      "evidence": [
-        {
-          "source": "Son Dakika",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Kocaelispor transfer",
-          "title": "Kocaelispor, Onurcan Piri'yi Transfer Etti - Son Dakika",
-          "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQWFN0dVRZdldVaVBYVnpXYXhQZ2lfcHZGaVdGLUNRbE5hVDNKNEVhNDlEZkJkVVNWU0NJb2tiU1BuZUZON0xDTDVBNV9zMzdDTG5mMlBuQ1YxRTlYeDFiT1drTmtOdHJTV2N3cURFVWlzSTFYZmVkcHNmQnI2VVNqcWJFVzNLNmVhMVhicklVTlHSAZABQVVfeXFMUFhTdHVUWXZXVWlQWFZ6V2F4UGdpX3B2RmlXRi1DUWxOYVQzSjRFYTQ5RGZCZFVTVlNDSW9rYlNQbmVGTjdMQ0w1QTVfczM3Q0xuZjJQbkNWMUU5WHgxYk9Xa05rTnRyU1djd3FERVVpc0kxWGZlZHBzZkJyNlVTanFiRVczSzZlYTFYYnJJVU5R?oc=5",
-          "published_at": "2026-06-23T14:33:14+00:00",
-          "first_observed_at": null
-        },
-        {
-          "source": "Yeniçağ Gazetesi",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Kocaelispor transfer",
-          "title": "Kocaelispor, kaleci Onurcan Piri'yi transfer etti - Yeniçağ Gazetesi",
-          "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNSGRiMndnVmoyTm1vamkzRWtrTFNNZ3NVaF9OQVRXVTNUaWRCOFd0VHlIZUxwYU01U3haZjZPaEZpM3BoWjJyeko0X2dkLVhZSHp2M0dEelp1SnJ6dndWMFkzR25WaFl5d0IzVHBxQ0szcDJsSHNtQmNpNFA3bWNxMEpSTG1nVm1oQ29CSHlpRE5FSS03bHI0?oc=5",
-          "published_at": "2026-06-23T14:22:00+00:00",
           "first_observed_at": null
         }
       ],
@@ -629,6 +641,88 @@
           "title": "Kasımpaşa, 19 yaşındaki santrfor Kenan Kurtovic'i transfer etti - NTVSpor",
           "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNTWdka01YaXBZLTJUeFZUNWVJTXFJalR1SUVuYWV6YXg2c0R0cVB3TFJXUzc5UVM3TUdIbjZMZUVtdzU3V2hzTjR3ZkpIT0pkMGdXZnl0Q25NOTBzNnZUbTVLb2JfN2h0OVlsREZ0S0ZrUGxPZVV1ZnhfWTFUMTBtRjhvRlZicElRSms0RHd4UDhmQ193Sk9fWmJTQUxrX0N10gGmAUFVX3lxTFBnblFsWGVCRVZHczFJV2s5VjJGMG5PTmFPbkpvakRpLWVyRWdZV3FtSmhhcVVrejVnX3diTlR6d0FQYWxybFZ6U08tUXhSZ0V1SkY3Y09scGkxcTcwaVB4cG01WmkwcHdSU2ZlNU9Wb0pickk4OWZsUWlXWGVJX0VCQk5QbFJWRzgwOVJvNXFmSnBJZTliczRnaUtlMC1EQUs4bG1PbEE?oc=5",
           "published_at": "2026-06-11T07:00:00+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": "Davitashvili",
+      "from_club": null,
+      "to_club": "Beşiktaş",
+      "signal_type": "interest",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "HEADLINE_EXPLICIT_DIRECTION",
+      "article_id": "4a2938f91460",
+      "title": "Beşiktaş'ta kanat transferi için pazarlık hazırlığı: Davitashvili - Sporx.com",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPWTF4VGRPZF9CWVREcVVZdi11N0o4THVoYmQ1a0EwQ3VPM0lWMmwtU1VvNlpNWFNVelpidTFMUG1ETmdreTlYbDhGUk9fN0VQd3hGc3pqQTNSVFBQamtiX1FYMXZaUmdERXFXVHV2ZHA5N3hjUFJZUTFFSEw1aEduX1FVQTFnT0FKbTQwV3VxREJLXzRPQjlDRkxWUzR2blA4bDFKS9IBpwFBVV95cUxQLXA3czJjZHJoVXE3ZnNFdkZ2MHlUUUlXN3F1ZWh5MUd6WnpLQUNfZ3g3TEtBazZqZDFaeGZYZVdUbktiQWdZdUhHMHREN0pIYUxHUU1FRnBnN3FGQ3FnVkx4Rl9HY0NfWWtDcDJHdnhDQ2hDUHkweEpvZVJfN3pIbVAzcVpDWnFDdFVyMTRFRVJSZHRkamZYMW43SDRHbndxNHM5RUhGTQ?oc=5",
+      "source": "Sporx.com",
+      "source_type": "google_news",
+      "account_type": null,
+      "query": "Beşiktaş transfer",
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-24T05:44:00+00:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "MEDIUM",
+      "verification_status": "RUMOR",
+      "interpretation": "Tek kaynaklı transfer iddiası; yalnız transfer radarında izlenir.",
+      "source_count": 1,
+      "sources": [
+        "Sporx.com"
+      ],
+      "evidence": [
+        {
+          "source": "Sporx.com",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Beşiktaş transfer",
+          "title": "Beşiktaş'ta kanat transferi için pazarlık hazırlığı: Davitashvili - Sporx.com",
+          "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPWTF4VGRPZF9CWVREcVVZdi11N0o4THVoYmQ1a0EwQ3VPM0lWMmwtU1VvNlpNWFNVelpidTFMUG1ETmdreTlYbDhGUk9fN0VQd3hGc3pqQTNSVFBQamtiX1FYMXZaUmdERXFXVHV2ZHA5N3hjUFJZUTFFSEw1aEduX1FVQTFnT0FKbTQwV3VxREJLXzRPQjlDRkxWUzR2blA4bDFKS9IBpwFBVV95cUxQLXA3czJjZHJoVXE3ZnNFdkZ2MHlUUUlXN3F1ZWh5MUd6WnpLQUNfZ3g3TEtBazZqZDFaeGZYZVdUbktiQWdZdUhHMHREN0pIYUxHUU1FRnBnN3FGQ3FnVkx4Rl9HY0NfWWtDcDJHdnhDQ2hDUHkweEpvZVJfN3pIbVAzcVpDWnFDdFVyMTRFRVJSZHRkamZYMW43SDRHbndxNHM5RUhGTQ?oc=5",
+          "published_at": "2026-06-24T05:44:00+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": "İbrahim Maza",
+      "from_club": null,
+      "to_club": "Galatasaray",
+      "signal_type": "interest",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "HEADLINE_EXPLICIT_DIRECTION",
+      "article_id": "7790bd5e6d4e",
+      "title": "Galatasaray'dan İbrahim Maza bombası! Transferde dev rakipler",
+      "link": "https://www.fotomac.com.tr/galatasaray/2026/06/23/maza-harekati",
+      "source": "Fotomaç",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-23T23:39:06+03:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "MEDIUM",
+      "verification_status": "RUMOR",
+      "interpretation": "Tek kaynaklı transfer iddiası; yalnız transfer radarında izlenir.",
+      "source_count": 1,
+      "sources": [
+        "Fotomaç"
+      ],
+      "evidence": [
+        {
+          "source": "Fotomaç",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Galatasaray'dan İbrahim Maza bombası! Transferde dev rakipler",
+          "link": "https://www.fotomac.com.tr/galatasaray/2026/06/23/maza-harekati",
+          "published_at": "2026-06-23T23:39:06+03:00",
           "first_observed_at": null
         }
       ],
@@ -730,7 +824,7 @@
       "source": "Sporx.com",
       "source_type": "google_news",
       "account_type": null,
-      "query": "Galatasaray transfer",
+      "query": "Göztepe transfer",
       "source_tier": "MEDIA",
       "published_at": "2026-06-23T08:04:00+00:00",
       "first_observed_at": null,
@@ -748,7 +842,7 @@
           "source_tier": "MEDIA",
           "source_type": "google_news",
           "account_type": null,
-          "query": "Galatasaray transfer",
+          "query": "Göztepe transfer",
           "title": "Galatasaray'da öncelikli hedef: Arda Okan Kurtulan! - Sporx.com",
           "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNMjFpUDlDanZKaThvdEJjMk54VDBTbDhrczFkdGJTX1BLU3ZtUV9kd3Etc2NmS2NYMkN6NFNMb3JDVWpHUXlKZnZ0NVBKblJvOE1qNmJnS3pGbkktZE9tcEVOdzdsZTFtT09xSU0zU3Mza2F1a2IydVV5NEF0LXVMcVVWTGpHYkVlX3JabHlKS0PSAZMBQVVfeXFMTkJlaU1ZZjVyX2o2dkVOODVDNmZtYVplSUZkUFljTllhLWlvODdpTWFKakxYUVhzRWlBUTdZa1k2Z3lfUGJpMmo3ZU93dENvNVM0VFdlSkhYVVZHQ3ktSWtmc295d2hZVVhBdm1XVlUtUENRaGQ5cGpjdjJ4bFFfRW9yRG1SdXkxclZNVEthQWZxQXBJ?oc=5",
           "published_at": "2026-06-23T08:04:00+00:00",
@@ -838,47 +932,6 @@
           "title": "Onurcan Piri, Kayserispor’dan ayrıldı",
           "link": "https://www.cnnturk.com/spor/futbol/onurcan-piri-kayserispordan-ayrildi-3433964",
           "published_at": "2026-06-22T18:26:12+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": "Anna Prasolova",
-      "from_club": null,
-      "to_club": "Göztepe",
-      "signal_type": "official_transfer",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "HEADLINE_EXPLICIT_DIRECTION",
-      "article_id": "e779d3e82f16",
-      "title": "Göztepe, Anna Prasolova'yı transfer etti - Ensonhaber",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE80c2dWUUt3Nl9rcV9DdEV5cWJsOWVzYzBQc2sycVRUVG5KWk9weHJ1a3NzbEdtTDRfR2o4WUdjY05wQkNSTlhCX0lldXdFZGEzQ29pXzZHOGNTa2VpV29DdEZWMGJHRmxnZXlESmJMVEZDb3BMY1RzYnRXajNDNU0?oc=5",
-      "source": "Ensonhaber",
-      "source_type": "google_news",
-      "account_type": null,
-      "query": "Göztepe transfer",
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-22T15:35:00+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "MEDIUM",
-      "verification_status": "RUMOR",
-      "interpretation": "Tek kaynaklı transfer iddiası; yalnız transfer radarında izlenir.",
-      "source_count": 1,
-      "sources": [
-        "Ensonhaber"
-      ],
-      "evidence": [
-        {
-          "source": "Ensonhaber",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Göztepe transfer",
-          "title": "Göztepe, Anna Prasolova'yı transfer etti - Ensonhaber",
-          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE80c2dWUUt3Nl9rcV9DdEV5cWJsOWVzYzBQc2sycVRUVG5KWk9weHJ1a3NzbEdtTDRfR2o4WUdjY05wQkNSTlhCX0lldXdFZGEzQ29pXzZHOGNTa2VpV29DdEZWMGJHRmxnZXlESmJMVEZDb3BMY1RzYnRXajNDNU0?oc=5",
-          "published_at": "2026-06-22T15:35:00+00:00",
           "first_observed_at": null
         }
       ],
@@ -1176,6 +1229,213 @@
       "model_use": false
     },
     {
+      "player_name": null,
+      "from_club": null,
+      "to_club": "Beşiktaş",
+      "signal_type": "departure",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "83ef69019f7d",
+      "title": "Beşiktaş'ta 1 ayrılık, 3 transfer! Canlı yayında bir bir açıkladı",
+      "link": "https://www.fotomac.com.tr/video-haber/videoizle/besiktasta-1ayrilik-3-transfer-canli-yayinda-bir-bir-acikladi",
+      "source": "Fotomaç",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-23T23:39:12+03:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Fotomaç"
+      ],
+      "evidence": [
+        {
+          "source": "Fotomaç",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Beşiktaş'ta 1 ayrılık, 3 transfer! Canlı yayında bir bir açıkladı",
+          "link": "https://www.fotomac.com.tr/video-haber/videoizle/besiktasta-1ayrilik-3-transfer-canli-yayinda-bir-bir-acikladi",
+          "published_at": "2026-06-23T23:39:12+03:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": null,
+      "from_club": null,
+      "to_club": "Fenerbahçe",
+      "signal_type": "transfer_fee",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "0c9453eb1d51",
+      "title": "Fenerbahçe'ye sambacı stoper! Bonservis bedeli ortaya çıktı",
+      "link": "https://www.fotomac.com.tr/fenerbahce/2026/06/23/fenerbahceye-sambaci-stoper-bonservis-bedeli-ortaya-cikti",
+      "source": "Fotomaç",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-23T23:39:00+03:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Fotomaç"
+      ],
+      "evidence": [
+        {
+          "source": "Fotomaç",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Fenerbahçe'ye sambacı stoper! Bonservis bedeli ortaya çıktı",
+          "link": "https://www.fotomac.com.tr/fenerbahce/2026/06/23/fenerbahceye-sambaci-stoper-bonservis-bedeli-ortaya-cikti",
+          "published_at": "2026-06-23T23:39:00+03:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": null,
+      "from_club": null,
+      "to_club": "Trabzonspor",
+      "signal_type": "transfer_negotiation",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "ec77a327a2d7",
+      "title": "Trabzonspor'dan Wilson bombası! Transfer görüşmesi başladı",
+      "link": "https://www.fotomac.com.tr/trabzonspor/2026/06/23/trabzonspordan-wilson-bombasi-transfer-gorusmesi-basladi",
+      "source": "Fotomaç",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-23T23:38:42+03:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Fotomaç"
+      ],
+      "evidence": [
+        {
+          "source": "Fotomaç",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Trabzonspor'dan Wilson bombası! Transfer görüşmesi başladı",
+          "link": "https://www.fotomac.com.tr/trabzonspor/2026/06/23/trabzonspordan-wilson-bombasi-transfer-gorusmesi-basladi",
+          "published_at": "2026-06-23T23:38:42+03:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": null,
+      "from_club": null,
+      "to_club": "Beşiktaş",
+      "signal_type": "transfer_fee",
+      "window": "winter_2027",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "15a2b8b610cb",
+      "title": "Beşiktaş'tan kanada Viking! Andreas Skov Olsen...",
+      "link": "https://www.fotomac.com.tr/besiktas/2026/06/23/besiktastan-kanada-viking-andreas-skov-olsen",
+      "source": "Fotomaç",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-23T23:38:39+03:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Fotomaç"
+      ],
+      "evidence": [
+        {
+          "source": "Fotomaç",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Beşiktaş'tan kanada Viking! Andreas Skov Olsen...",
+          "link": "https://www.fotomac.com.tr/besiktas/2026/06/23/besiktastan-kanada-viking-andreas-skov-olsen",
+          "published_at": "2026-06-23T23:38:39+03:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": "MUSTAFA ERHAN HEKİMOĞLU",
+      "from_club": "BEŞİKTAŞ A.Ş.",
+      "to_club": null,
+      "transfer_type": "permanent",
+      "window": "summer_2026",
+      "signal_type": "departure",
+      "confidence": "LOW",
+      "tm_market_value_eur": 5000000,
+      "direction_quality": "TARGET_UNRESOLVED",
+      "article_id": "45769b987222",
+      "title": "Beşiktaş transfer haberleri: Rashica, Ndidi ve Mustafa Erhan Hekimoğlu takımdan ayrılacak mı? | SPOR HABERLERİ - GZT",
+      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQYUhVNmk4ajJ6a3ZRS3hzMlU1QlJCMVhMeDdIb0NPSDFJc2M0R2p0ZF96MV9xWG0zb0J5MnpuWkh6LU1lY1dQTjl3cW9hSjdtUmg5dUFCc3dhWkVOZzRscGVfS2VRelRON0RjTVhRRG9Tc29neHB0bVotd21sUV9YZVc5YmtPRlBEMDdyVnM3U2RCZDZXWXd2azgzTHdBaVdWVDBOdTJQSnk3aUJ6eXRkd09EcWFGRERYX004ZEVVYWpsdWlZTC02aGIwbTdFNUNWUXdsOA?oc=5",
+      "source": "GZT",
+      "source_type": "google_news",
+      "account_type": null,
+      "query": "Beşiktaş transfer",
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-23T13:47:53+00:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "HIGH",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "GZT"
+      ],
+      "evidence": [
+        {
+          "source": "GZT",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Beşiktaş transfer",
+          "title": "Beşiktaş transfer haberleri: Rashica, Ndidi ve Mustafa Erhan Hekimoğlu takımdan ayrılacak mı? | SPOR HABERLERİ - GZT",
+          "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQYUhVNmk4ajJ6a3ZRS3hzMlU1QlJCMVhMeDdIb0NPSDFJc2M0R2p0ZF96MV9xWG0zb0J5MnpuWkh6LU1lY1dQTjl3cW9hSjdtUmg5dUFCc3dhWkVOZzRscGVfS2VRelRON0RjTVhRRG9Tc29neHB0bVotd21sUV9YZVc5YmtPRlBEMDdyVnM3U2RCZDZXWXd2azgzTHdBaVdWVDBOdTJQSnk3aUJ6eXRkd09EcWFGRERYX004ZEVVYWpsdWlZTC02aGIwbTdFNUNWUXdsOA?oc=5",
+          "published_at": "2026-06-23T13:47:53+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
       "player_name": "MARKO JEVTOVIC",
       "from_club": "TÜMOSAN KONYASPOR",
       "to_club": null,
@@ -1407,61 +1667,6 @@
       "model_use": false
     },
     {
-      "player_name": "CHRIST RAVYNEL INAO OULAI",
-      "from_club": "TRABZONSPOR A.Ş.",
-      "to_club": null,
-      "transfer_type": "permanent",
-      "window": "summer_2026",
-      "signal_type": "transfer_fee",
-      "confidence": "LOW",
-      "tm_market_value_eur": 23000000,
-      "direction_quality": "TARGET_UNRESOLVED",
-      "article_id": "12636f3d0a40",
-      "title": "Oulai Trabzonspor'dan ayrılacak mı? Trabzonspor Christ Inao Oulai için istediği bonservisi belirledi | Transfer Haberleri - GZT",
-      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOX0N3SUlKdWJfLVhWMkRMS3h0OEVYd0hqdFQxU0lYb2VEMW9GUnZkMkVCbjBNS2lkOEpDQnRkSjNvb2kyV1k4OWRWMUw0eFlXNzJLdVY5QW9MRVI2dDJLV21uSHo5UjBvbklxX2JmZV9pWF9PV1JzM2otdjhhZ0x1dzFHMWoxVm1kZXpGTGpZMV9oRDVpd0FjU3NIaHB0dGxIRF9BS3gwb0I3Y2RJLXVwNnREa3VkbWJhZU1sbWJkNlNhX2pJRERCZC1jSThac2Utby1OZTBNVk14Vy1JV0d5V0hseGc?oc=5",
-      "source": "GZT",
-      "source_type": "google_news",
-      "account_type": null,
-      "query": "Trabzonspor transfer",
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-23T11:47:56+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "HIGH",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 2,
-      "sources": [
-        "GZT",
-        "NTVSpor"
-      ],
-      "evidence": [
-        {
-          "source": "GZT",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Trabzonspor transfer",
-          "title": "Oulai Trabzonspor'dan ayrılacak mı? Trabzonspor Christ Inao Oulai için istediği bonservisi belirledi | Transfer Haberleri - GZT",
-          "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOX0N3SUlKdWJfLVhWMkRMS3h0OEVYd0hqdFQxU0lYb2VEMW9GUnZkMkVCbjBNS2lkOEpDQnRkSjNvb2kyV1k4OWRWMUw0eFlXNzJLdVY5QW9MRVI2dDJLV21uSHo5UjBvbklxX2JmZV9pWF9PV1JzM2otdjhhZ0x1dzFHMWoxVm1kZXpGTGpZMV9oRDVpd0FjU3NIaHB0dGxIRF9BS3gwb0I3Y2RJLXVwNnREa3VkbWJhZU1sbWJkNlNhX2pJRERCZC1jSThac2Utby1OZTBNVk14Vy1JV0d5V0hseGc?oc=5",
-          "published_at": "2026-06-23T11:47:56+00:00",
-          "first_observed_at": null
-        },
-        {
-          "source": "NTVSpor",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Trabzonspor transfer",
-          "title": "Oulai için Türk futbolunda eşi benzeri görülmemiş akılalmaz bonservis! Trabzonspor'dan karar çıktı - NTVSpor",
-          "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPSVlJMlp3UnZKNnNfZmx2TFNyN2JiM1cwVldUa2tIemZHbXhUaHFEcTE1SGRaV1ZmamFqRkR5dXMtUWZHX1BHTjctUFdFNTZsVkIzTFNOMGRBMGRuU2NmNUpTZGVZWExSWUFNSi1wRi1BUHRiVmozWkk2SXRHNm9LYi1NZlNJcHI5LVF3MVVzeWhxal82WFFGWDA2cVgtSTNQTHJDNm1ZSGJpY0Z1bmFranpsV2ZwTGRnTERYc0dMWlBzSzNyR1ZCMEdkNVR2dE1Xc1A0UG530gHbAUFVX3lxTE4wcUEyN0NtYUd3ZUdBdVVSNnVyenl3TFhBLTNCcDhxN2RLcm1oTmtqM0hjalBWNG9CMWFYczVaRW5RV1Y0cDZBVklKYzg1NTJvR2hfZE5SSnRNWmJ4ZHpSYjByOERTOFJBb3hSYnhOeUI3dFF3T3R4NHVSNjVFcXplODJfTUl3YU00bk1oWlBMS0lWbFZaem9OeXpDSVpTWVFERVplZDhORFBZSnBhSVZTeWFyeXFkajFnUHJzVnYxeEdPdHNQVk1jRDh3bjVWU1F1Z1BLV2dGTFZPSQ?oc=5",
-          "published_at": "2026-06-23T06:17:58+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
       "player_name": null,
       "from_club": "Beşiktaş",
       "to_club": null,
@@ -1667,41 +1872,43 @@
       "model_use": false
     },
     {
-      "player_name": null,
-      "from_club": null,
-      "to_club": "Göztepe",
-      "signal_type": "deal_close",
+      "player_name": "CHRIST RAVYNEL INAO OULAI",
+      "from_club": "TRABZONSPOR A.Ş.",
+      "to_club": null,
+      "transfer_type": "permanent",
       "window": "summer_2026",
+      "signal_type": "transfer_fee",
       "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "4242b5c642b8",
-      "title": "Göztepe, Jeh’in kiralık transferi için Partizan ile anlaşmaya vardı - İlkses Gazetesi",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPUWRrR0RRY2FJV1JUNzFTRXRjWVphaFZoNFNualVaVnIzUzlheG44dzhZandHX0JESE1Sb0o2N3liNktlcmZNd1J1Qk5FSy1pcGxLWWZud25JZmhuSm10ckcwMGlfS2h2cm0wdkpWc1BPNmgxU0J0QlRXRkd0TlNsajVkWDFsUmdSUUxDTmNXUFFua0NhWHA0QUVtbktGeHNYSnfSAacBQVVfeXFMTVo0MDZIOVFDNzlwWUVVZnR5VU9BOG9FN05qeWowZTItZktiX09jUjM5WmZFMWU2NnZGek9VblJwUV81Q0s2WXowUksxOVBjNk9ISF9Qc001WC1JMGlZTkxXV3FIbFowT1A2VkI4cTZtd0dJbXFyMEg1UVE0RFhVUjhSNVg0dkdZSy1CYl9SdU5pS041SHEyY01OQXVXZWU5Szh4MHBUdVU?oc=5",
-      "source": "İlkses Gazetesi",
+      "tm_market_value_eur": 23000000,
+      "direction_quality": "TARGET_UNRESOLVED",
+      "article_id": "265bc92515e1",
+      "title": "Oulai için Türk futbolunda eşi benzeri görülmemiş akılalmaz bonservis! Trabzonspor'dan karar çıktı - NTVSpor",
+      "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPSVlJMlp3UnZKNnNfZmx2TFNyN2JiM1cwVldUa2tIemZHbXhUaHFEcTE1SGRaV1ZmamFqRkR5dXMtUWZHX1BHTjctUFdFNTZsVkIzTFNOMGRBMGRuU2NmNUpTZGVZWExSWUFNSi1wRi1BUHRiVmozWkk2SXRHNm9LYi1NZlNJcHI5LVF3MVVzeWhxal82WFFGWDA2cVgtSTNQTHJDNm1ZSGJpY0Z1bmFranpsV2ZwTGRnTERYc0dMWlBzSzNyR1ZCMEdkNVR2dE1Xc1A0UG530gHbAUFVX3lxTE4wcUEyN0NtYUd3ZUdBdVVSNnVyenl3TFhBLTNCcDhxN2RLcm1oTmtqM0hjalBWNG9CMWFYczVaRW5RV1Y0cDZBVklKYzg1NTJvR2hfZE5SSnRNWmJ4ZHpSYjByOERTOFJBb3hSYnhOeUI3dFF3T3R4NHVSNjVFcXplODJfTUl3YU00bk1oWlBMS0lWbFZaem9OeXpDSVpTWVFERVplZDhORFBZSnBhSVZTeWFyeXFkajFnUHJzVnYxeEdPdHNQVk1jRDh3bjVWU1F1Z1BLV2dGTFZPSQ?oc=5",
+      "source": "NTVSpor",
       "source_type": "google_news",
       "account_type": null,
-      "query": "Göztepe transfer",
+      "query": "Trabzonspor transfer",
       "source_tier": "MEDIA",
-      "published_at": "2026-06-23T08:12:57+00:00",
+      "published_at": "2026-06-23T06:17:58+00:00",
       "first_observed_at": null,
       "summary_tr": "",
-      "entity_confidence": "LOW",
+      "entity_confidence": "MEDIUM",
       "verification_status": "REVIEW_REQUIRED",
       "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
       "source_count": 1,
       "sources": [
-        "İlkses Gazetesi"
+        "NTVSpor"
       ],
       "evidence": [
         {
-          "source": "İlkses Gazetesi",
+          "source": "NTVSpor",
           "source_tier": "MEDIA",
           "source_type": "google_news",
           "account_type": null,
-          "query": "Göztepe transfer",
-          "title": "Göztepe, Jeh’in kiralık transferi için Partizan ile anlaşmaya vardı - İlkses Gazetesi",
-          "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPUWRrR0RRY2FJV1JUNzFTRXRjWVphaFZoNFNualVaVnIzUzlheG44dzhZandHX0JESE1Sb0o2N3liNktlcmZNd1J1Qk5FSy1pcGxLWWZud25JZmhuSm10ckcwMGlfS2h2cm0wdkpWc1BPNmgxU0J0QlRXRkd0TlNsajVkWDFsUmdSUUxDTmNXUFFua0NhWHA0QUVtbktGeHNYSnfSAacBQVVfeXFMTVo0MDZIOVFDNzlwWUVVZnR5VU9BOG9FN05qeWowZTItZktiX09jUjM5WmZFMWU2NnZGek9VblJwUV81Q0s2WXowUksxOVBjNk9ISF9Qc001WC1JMGlZTkxXV3FIbFowT1A2VkI4cTZtd0dJbXFyMEg1UVE0RFhVUjhSNVg0dkdZSy1CYl9SdU5pS041SHEyY01OQXVXZWU5Szh4MHBUdVU?oc=5",
-          "published_at": "2026-06-23T08:12:57+00:00",
+          "query": "Trabzonspor transfer",
+          "title": "Oulai için Türk futbolunda eşi benzeri görülmemiş akılalmaz bonservis! Trabzonspor'dan karar çıktı - NTVSpor",
+          "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPSVlJMlp3UnZKNnNfZmx2TFNyN2JiM1cwVldUa2tIemZHbXhUaHFEcTE1SGRaV1ZmamFqRkR5dXMtUWZHX1BHTjctUFdFNTZsVkIzTFNOMGRBMGRuU2NmNUpTZGVZWExSWUFNSi1wRi1BUHRiVmozWkk2SXRHNm9LYi1NZlNJcHI5LVF3MVVzeWhxal82WFFGWDA2cVgtSTNQTHJDNm1ZSGJpY0Z1bmFranpsV2ZwTGRnTERYc0dMWlBzSzNyR1ZCMEdkNVR2dE1Xc1A0UG530gHbAUFVX3lxTE4wcUEyN0NtYUd3ZUdBdVVSNnVyenl3TFhBLTNCcDhxN2RLcm1oTmtqM0hjalBWNG9CMWFYczVaRW5RV1Y0cDZBVklKYzg1NTJvR2hfZE5SSnRNWmJ4ZHpSYjByOERTOFJBb3hSYnhOeUI3dFF3T3R4NHVSNjVFcXplODJfTUl3YU00bk1oWlBMS0lWbFZaem9OeXpDSVpTWVFERVplZDhORFBZSnBhSVZTeWFyeXFkajFnUHJzVnYxeEdPdHNQVk1jRDh3bjVWU1F1Z1BLV2dGTFZPSQ?oc=5",
+          "published_at": "2026-06-23T06:17:58+00:00",
           "first_observed_at": null
         }
       ],
@@ -1989,6 +2196,49 @@
           "title": "Kocaelispor, transfer görüşmelerinin durdurulduğunu açıkladı! - beinsports.com.tr",
           "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOUWdQLWJXcmF6X2V1TGh0Q254ck9Ua0Zvb2dybVBxZ3E4VWZfLUE3YXRGdmFrQUtHZndiV3ZMTmNIQXZPNjBIM3RaTkFKbGR6dTdIMk4tNlhScl9DTGx3TjBlbUxfNWh5Ym9wUk9yS1hWUDJGX3lVS251UDNnaUlLM014RkJKTHo2YkZyVlpZYXZPYUd2LWc?oc=5",
           "published_at": "2026-06-17T09:57:01+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": "KACPER SZYMON KOZLOWSKI",
+      "from_club": "GAZİANTEP FUTBOL KULÜBÜ A.Ş.",
+      "to_club": null,
+      "transfer_type": "permanent",
+      "window": "summer_2026",
+      "signal_type": "interest",
+      "confidence": "LOW",
+      "tm_market_value_eur": 6000000,
+      "direction_quality": "TARGET_UNRESOLVED",
+      "article_id": "76a3c056e22b",
+      "title": "Venezia, Gaziantep FK'nın yıldızı Kacper Kozlowski'nin peşinde - Yeni durağı Serie A olabilir - Transfermarkt",
+      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNcDN5U2dKR1dkM25aMUFTZkg3RjFqSklhMXdSc0NPLU5vM240eERnQWRRZ29qYXI1OFhWMDU3Z1Y3Q05KRlFjMEgyUTJ3Q0pEeHVKMDJ4LTRKSVZVM3ZGdnlOV0lSLVZRRlc4OTVpYTJVWElPU3lrMGFzWFg2aFZrekVqQmJRaG9EaFIySmFrSjlLbnZhVlFCUzNIRHlZa19Ecm5Xb2tIX01PTXBibEFQVVhZaUtFbDlyY1o3OTNpbDRJYXpPSkRyanNoMHpfN1B6ZmNTeg?oc=5",
+      "source": "Transfermarkt",
+      "source_type": "google_news",
+      "account_type": null,
+      "query": "Gaziantep FK transfer",
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-16T14:40:49+00:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "HIGH",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Transfermarkt"
+      ],
+      "evidence": [
+        {
+          "source": "Transfermarkt",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Gaziantep FK transfer",
+          "title": "Venezia, Gaziantep FK'nın yıldızı Kacper Kozlowski'nin peşinde - Yeni durağı Serie A olabilir - Transfermarkt",
+          "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNcDN5U2dKR1dkM25aMUFTZkg3RjFqSklhMXdSc0NPLU5vM240eERnQWRRZ29qYXI1OFhWMDU3Z1Y3Q05KRlFjMEgyUTJ3Q0pEeHVKMDJ4LTRKSVZVM3ZGdnlOV0lSLVZRRlc4OTVpYTJVWElPU3lrMGFzWFg2aFZrekVqQmJRaG9EaFIySmFrSjlLbnZhVlFCUzNIRHlZa19Ecm5Xb2tIX01PTXBibEFQVVhZaUtFbDlyY1o3OTNpbDRJYXpPSkRyanNoMHpfN1B6ZmNTeg?oc=5",
+          "published_at": "2026-06-16T14:40:49+00:00",
           "first_observed_at": null
         }
       ],
