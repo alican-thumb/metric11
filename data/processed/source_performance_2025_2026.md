@@ -1,18 +1,18 @@
 # Erken Haber Kaynak Performansı
 
-- Transfer sinyali: 42
+- Transfer sinyali: 31
 - Resmi olaya dönüşen transfer: 3
 - Yayın zamanı bulunan resmi teyit: 1/3
 - İlk görülme zamanı bulunan resmi teyit: 3/3
-- Ölçülen kaynak: 32 / gözlenen kaynak: 107
+- Ölçülen kaynak: 32 / gözlenen kaynak: 108
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 0
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 983
+- Defterde korunan ilk iddia gözlemi: 986
 
 ## Kanal Kapsamı
 
-- Google News: 217 haber, 30/30 başarılı sorgu.
+- Google News: 222 haber, 30/30 başarılı sorgu.
 - Telegram: 6 mesaj, 8/8 erişilebilir kanal.
 - X: durum=MISSING_CREDENTIALS, gönderi=0, yapılandırılmış hesap=45.
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 980 | 187 | 1 | — | — | %98.4 | 1.3 | PARTIAL_MEASUREMENT |
+| Google News / medya | 983 | 188 | 1 | — | — | %98.4 | 1.3 | PARTIAL_MEASUREMENT |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -50,7 +50,7 @@
 | CNN Türk Spor | MEDIA | 31 | 8 | 1 | — | — | %50.0 | 40.0 | PARTIAL_MEASUREMENT |
 | Fotomaç | MEDIA | 129 | 21 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Hürriyet | MEDIA | 81 | 6 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
-| Sabah | MEDIA | 66 | 6 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Sabah | MEDIA | 67 | 7 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Takvim | MEDIA | 64 | 4 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Milliyet | MEDIA | 39 | 5 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Haberturk Spor | MEDIA | 38 | 3 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
@@ -94,9 +94,9 @@
 | Sporx | MEDIA | 5 | 4 | 0 | — | — | — | — | OBSERVING |
 | CNN Türk | MEDIA | 4 | 0 | 0 | — | — | — | — | OBSERVING |
 | Konya Yeni Haber | MEDIA | 4 | 1 | 0 | — | — | — | — | OBSERVING |
+| Mynet | MEDIA | 4 | 1 | 0 | — | — | — | — | OBSERVING |
 | Fotospor | MEDIA | 3 | 1 | 0 | — | — | — | — | OBSERVING |
 | Haber61 | MEDIA | 3 | 1 | 0 | — | — | — | — | OBSERVING |
-| Mynet | MEDIA | 3 | 1 | 0 | — | — | — | — | OBSERVING |
 | Nefes Gazetesi | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
 | T24 | MEDIA | 3 | 1 | 0 | — | — | — | — | OBSERVING |
 | Türkiye Gazetesi | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
@@ -146,6 +146,7 @@
 | Ulusal Kanal | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Yeni Asır | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Yeni Çağrı Gazetesi | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
+| Yenigün Gazetesi | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | alanyaturk.com | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | birgun.net | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | bolgegundemi.com | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
