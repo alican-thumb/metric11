@@ -2,12 +2,12 @@
 
 - Risk: HIGH
 - Lisans durumu: VERIFY_TERMS_BEFORE_COMMERCIAL_USE
-- Toplanan kulüp: 16
-- Atlanan kulüp: 2
-- Oyuncu: 452
-- Toplam piyasa değeri: €1,243,675,000
-- Ortalama piyasa değeri: €2,975,299
-- Pozisyon grupları: {'GK': 56, 'DEF': 152, 'MID': 121, 'FWD': 123, 'UNKNOWN': 0}
+- Toplanan kulüp: 18
+- Atlanan kulüp: 0
+- Oyuncu: 506
+- Toplam piyasa değeri: €1,350,575,000
+- Ortalama piyasa değeri: €2,873,564
+- Pozisyon grupları: {'GK': 62, 'DEF': 166, 'MID': 142, 'FWD': 136, 'UNKNOWN': 0}
 
 ## Kulüpler
 
@@ -15,6 +15,8 @@
 - GALATASARAY A.Ş.: oyuncu=29, değer=€336,650,000, verified=True, url=https://www.transfermarkt.com/galatasaray-istanbul/kader/verein/141/saison_id/2025
 - FENERBAHÇE A.Ş.: oyuncu=28, değer=€240,800,000, verified=True, url=https://www.transfermarkt.com/fenerbahce-istanbul/kader/verein/36/saison_id/2025
 - TRABZONSPOR A.Ş.: oyuncu=27, değer=€129,550,000, verified=True, url=https://www.transfermarkt.com/trabzonspor/kader/verein/449/saison_id/2025
+- RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ: oyuncu=28, değer=€73,100,000, verified=True, url=https://www.transfermarkt.com/istanbul-basaksehir-fk/kader/verein/6890/saison_id/2025
+- CORENDON ALANYASPOR: oyuncu=26, değer=€33,800,000, verified=True, url=https://www.transfermarkt.com/alanyaspor/kader/verein/11282/saison_id/2025
 - SAMSUNSPOR A.Ş.: oyuncu=34, değer=€56,100,000, verified=True, url=https://www.transfermarkt.com/samsunspor/kader/verein/152/saison_id/2025
 - GÖZTEPE A.Ş.: oyuncu=27, değer=€65,750,000, verified=True, url=https://www.transfermarkt.com/goztepe/kader/verein/1467/saison_id/2025
 - TÜMOSAN KONYASPOR: oyuncu=30, değer=€39,300,000, verified=True, url=https://www.transfermarkt.com/konyaspor/kader/verein/2293/saison_id/2025
@@ -27,11 +29,6 @@
 - ÇORUM FK: oyuncu=27, değer=€8,625,000, verified=True, url=https://www.transfermarkt.com/corum-fk/kader/verein/37951/saison_id/2025
 - ERZURUMSPOR FK: oyuncu=30, değer=€12,425,000, verified=True, url=https://www.transfermarkt.com/erzurumspor-fk/kader/verein/39722/saison_id/2025
 - AMED SFK: oyuncu=25, değer=€10,575,000, verified=True, url=https://www.transfermarkt.com/amed-sk/kader/verein/12382/saison_id/2025
-
-## Atlananlar
-
-- RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ: fetch_failed: HTTPSConnectionPool(host='www.transfermarkt.com', port=443): Read timed out. (read timeout=30)
-- CORENDON ALANYASPOR: fetch_failed: 504 Server Error: Gateway Time-out for url: https://www.transfermarkt.com/alanyaspor/kader/verein/11282/saison_id/2025
 
 ## Beşiktaş Tekil Rapor Formatı
 
