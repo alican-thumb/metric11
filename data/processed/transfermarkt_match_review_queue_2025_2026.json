@@ -2,26 +2,26 @@
   "summary": {
     "tff_profiles": 691,
     "tm_clubs": 18,
-    "tm_players": 506,
+    "tm_players": 504,
     "snapshot_in_scope_tff_profiles": 520,
-    "matched_profiles": 410,
-    "verified_matched_profiles": 410,
+    "matched_profiles": 408,
+    "verified_matched_profiles": 408,
     "manual_alias_mapped_profiles": 13,
     "manual_alias_pending_network_verification": 13,
-    "operationally_mapped_profiles": 423,
-    "operational_in_scope_mapped_profiles": 420,
-    "unmatched_profiles": 268,
-    "overall_match_rate": 0.593,
-    "in_scope_match_rate": 0.788,
-    "operational_mapping_rate": 0.612,
-    "operational_in_scope_mapping_rate": 0.808,
+    "operationally_mapped_profiles": 421,
+    "operational_in_scope_mapped_profiles": 418,
+    "unmatched_profiles": 270,
+    "overall_match_rate": 0.59,
+    "in_scope_match_rate": 0.785,
+    "operational_mapping_rate": 0.609,
+    "operational_in_scope_mapping_rate": 0.804,
     "scout_blocking_unmatched": 0,
     "category_counts": {
-      "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 100,
+      "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 102,
       "OUT_OF_SNAPSHOT_CLUB": 168
     },
     "review_tier_counts": {
-      "ROTATION_USAGE_UNRESOLVED": 100,
+      "ROTATION_USAGE_UNRESOLVED": 102,
       "OUT_OF_SNAPSHOT": 168
     },
     "rule": "Doğrulanmış kapsama yalnız snapshot eşleşmesi girer; manuel alias kullanımı ayrı izlenir ve ağ teyidi tamamlanana kadar doğrulanmış sayılmaz."
@@ -206,14 +206,14 @@
     {
       "team": "TÜMOSAN KONYASPOR",
       "tff_profiles": 43,
-      "tm_players": 30,
-      "matched_profiles": 30,
+      "tm_players": 28,
+      "matched_profiles": 28,
       "manual_alias_mapped_profiles": 1,
-      "unmatched_profiles": 12,
-      "match_rate": 0.698,
-      "operational_mapping_rate": 0.721,
+      "unmatched_profiles": 14,
+      "match_rate": 0.651,
+      "operational_mapping_rate": 0.674,
       "categories": {
-        "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 12
+        "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 14
       }
     },
     {
@@ -666,6 +666,38 @@
       "season_activity": {
         "starts": 1,
         "squad_inclusions": 2,
+        "goals": 0
+      },
+      "candidate": null,
+      "action": "Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir."
+    },
+    {
+      "player_id": "2828176",
+      "tff_name": "EREN CEMALİ YAĞMUR",
+      "tff_club": "TÜMOSAN KONYASPOR",
+      "category": "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT",
+      "priority_rank": 4,
+      "blocks_scout_review": false,
+      "review_tier": "ROTATION_USAGE_UNRESOLVED",
+      "season_activity": {
+        "starts": 1,
+        "squad_inclusions": 4,
+        "goals": 1
+      },
+      "candidate": null,
+      "action": "Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir."
+    },
+    {
+      "player_id": "2820850",
+      "tff_name": "MARIUS STEFANESCU",
+      "tff_club": "TÜMOSAN KONYASPOR",
+      "category": "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT",
+      "priority_rank": 4,
+      "blocks_scout_review": false,
+      "review_tier": "ROTATION_USAGE_UNRESOLVED",
+      "season_activity": {
+        "starts": 1,
+        "squad_inclusions": 17,
         "goals": 0
       },
       "candidate": null,

@@ -1,18 +1,18 @@
 # Transfermarkt Oyuncu Eşleşme İnceleme Kuyruğu
 
 - TFF profil: 691
-- Transfermarkt snapshot: 18/18 kulüp, 506 oyuncu
+- Transfermarkt snapshot: 18/18 kulüp, 504 oyuncu
 - Snapshot kapsamındaki TFF profil: 520
-- Doğrulanmış snapshot eşleşmesi: 410
+- Doğrulanmış snapshot eşleşmesi: 408
 - Manuel eşleme ile kullanılan profil: 13
 - Ağ teyidi bekleyen manuel eşleme: 13
-- Çözülmemiş profil: 268
-- Doğrulanmış genel eşleşme oranı: %59.3
-- Doğrulanmış snapshot içi eşleşme oranı: %78.8
-- Manuel eşleme dahil kullanılabilir snapshot içi kapsama: %80.8
+- Çözülmemiş profil: 270
+- Doğrulanmış genel eşleşme oranı: %59.0
+- Doğrulanmış snapshot içi eşleşme oranı: %78.5
+- Manuel eşleme dahil kullanılabilir snapshot içi kapsama: %80.4
 - Scout incelemesini bloke eden eşleşmeyen oyuncu: 0
-- Sınıf dağılımı: {'NO_RELIABLE_CANDIDATE_IN_SNAPSHOT': 100, 'OUT_OF_SNAPSHOT_CLUB': 168}
-- Kullanım önceliği dağılımı: {'ROTATION_USAGE_UNRESOLVED': 100, 'OUT_OF_SNAPSHOT': 168}
+- Sınıf dağılımı: {'NO_RELIABLE_CANDIDATE_IN_SNAPSHOT': 102, 'OUT_OF_SNAPSHOT_CLUB': 168}
+- Kullanım önceliği dağılımı: {'ROTATION_USAGE_UNRESOLVED': 102, 'OUT_OF_SNAPSHOT': 168}
 - Kural: Doğrulanmış kapsama yalnız snapshot eşleşmesi girer; manuel alias kullanımı ayrı izlenir ve ağ teyidi tamamlanana kadar doğrulanmış sayılmaz.
 
 ## Scout Bloke Eden Kuyruk
@@ -52,7 +52,7 @@
 | RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ | 28 | 28 | 28 | 0 | 0 | %100.0 | %100.0 |
 | SAMSUNSPOR A.Ş. | 34 | 34 | 30 | 0 | 4 | %88.2 | %88.2 |
 | TRABZONSPOR A.Ş. | 35 | 27 | 26 | 1 | 8 | %74.3 | %77.1 |
-| TÜMOSAN KONYASPOR | 43 | 30 | 30 | 1 | 12 | %69.8 | %72.1 |
+| TÜMOSAN KONYASPOR | 43 | 28 | 28 | 1 | 14 | %65.1 | %67.4 |
 | ÇAYKUR RİZESPOR A.Ş. | 32 | 25 | 25 | 1 | 6 | %78.1 | %81.2 |
 | ÇORUM FK | 0 | 27 | 0 | 0 | 0 | %0 | %0 |
 | İKAS EYÜPSPOR | 36 | 27 | 27 | 0 | 9 | %75.0 | %75.0 |
@@ -361,6 +361,8 @@
 
 - PEDRO HENRIQUE OLIVEIRA DOS SANTOS (TÜMOSAN KONYASPOR): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=6, gol=1, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - ATA YANIK (TÜMOSAN KONYASPOR): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=1, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
+- EREN CEMALİ YAĞMUR (TÜMOSAN KONYASPOR): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=1, gol=1, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
+- MARIUS STEFANESCU (TÜMOSAN KONYASPOR): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=1, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - AHMET KUSAY DAĞDEVİR (TÜMOSAN KONYASPOR): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - AHMET TIRPANCI (TÜMOSAN KONYASPOR): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - BERKE ÖZÇELİK (TÜMOSAN KONYASPOR): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.

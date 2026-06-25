@@ -1,8 +1,8 @@
 # Transfermarkt Lig Geneli Oyuncu Profil Tam-Ad Katmanı
 
-- Kadro kulübü: 16/18
-- Kadro oyuncusu: 452
-- Bu koşuda istenen profil: 452
+- Kadro kulübü: 18/18
+- Kadro oyuncusu: 504
+- Bu koşuda istenen profil: 504
 - Toplanan profil: 595
 - Tam ad bulunan profil: 298
 - Başarısız profil: 0

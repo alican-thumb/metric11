@@ -4,10 +4,10 @@
 - Lisans durumu: VERIFY_TERMS_BEFORE_COMMERCIAL_USE
 - Toplanan kulüp: 18
 - Atlanan kulüp: 0
-- Oyuncu: 506
-- Toplam piyasa değeri: €1,350,575,000
-- Ortalama piyasa değeri: €2,873,564
-- Pozisyon grupları: {'GK': 62, 'DEF': 166, 'MID': 142, 'FWD': 136, 'UNKNOWN': 0}
+- Oyuncu: 504
+- Toplam piyasa değeri: €1,350,025,000
+- Ortalama piyasa değeri: €2,884,669
+- Pozisyon grupları: {'GK': 62, 'DEF': 166, 'MID': 142, 'FWD': 134, 'UNKNOWN': 0}
 
 ## Kulüpler
 
@@ -19,7 +19,7 @@
 - CORENDON ALANYASPOR: oyuncu=26, değer=€33,800,000, verified=True, url=https://www.transfermarkt.com/alanyaspor/kader/verein/11282/saison_id/2025
 - SAMSUNSPOR A.Ş.: oyuncu=34, değer=€56,100,000, verified=True, url=https://www.transfermarkt.com/samsunspor/kader/verein/152/saison_id/2025
 - GÖZTEPE A.Ş.: oyuncu=27, değer=€65,750,000, verified=True, url=https://www.transfermarkt.com/goztepe/kader/verein/1467/saison_id/2025
-- TÜMOSAN KONYASPOR: oyuncu=30, değer=€39,300,000, verified=True, url=https://www.transfermarkt.com/konyaspor/kader/verein/2293/saison_id/2025
+- TÜMOSAN KONYASPOR: oyuncu=28, değer=€38,750,000, verified=True, url=https://www.transfermarkt.com/konyaspor/kader/verein/2293/saison_id/2025
 - ÇAYKUR RİZESPOR A.Ş.: oyuncu=25, değer=€39,750,000, verified=True, url=https://www.transfermarkt.com/caykur-rizespor/kader/verein/126/saison_id/2025
 - GAZİANTEP FUTBOL KULÜBÜ A.Ş.: oyuncu=26, değer=€29,800,000, verified=True, url=https://www.transfermarkt.com/gaziantep-fk/kader/verein/2832/saison_id/2025
 - KASIMPAŞA A.Ş.: oyuncu=31, değer=€30,800,000, verified=True, url=https://www.transfermarkt.com/kasimpasa/kader/verein/10484/saison_id/2025
