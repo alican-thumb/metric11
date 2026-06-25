@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-06-25T15:13:42.394757+00:00",
+  "generated_at": "2026-06-25T16:38:54.255122+00:00",
   "season": "2025_2026",
   "summary": {
     "free_agents_count": 261,
     "final_year_count": 180,
-    "transfer_signals_count": 31,
+    "transfer_signals_count": 33,
     "transfer_status_counts": {
       "OFFICIAL": 0,
-      "CORROBORATED": 2,
-      "RUMOR": 9,
-      "REVIEW_REQUIRED": 20
+      "CORROBORATED": 3,
+      "RUMOR": 7,
+      "REVIEW_REQUIRED": 23
     },
     "promotion_events_count": 0,
     "free_agent_total_market_value_eur": 475250000
@@ -460,6 +460,59 @@
   ],
   "transfer_signals": [
     {
+      "player_name": "Karbownik",
+      "from_club": null,
+      "to_club": "Başakşehir",
+      "signal_type": "official_transfer",
+      "window": "summer_2026",
+      "confidence": "MEDIUM",
+      "direction_quality": "HEADLINE_EXPLICIT_DIRECTION",
+      "article_id": "7427a94da016",
+      "title": "Başakşehir, sol bek Michal Karbownik'i transfer etti - Internet Haber",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPWm43Njg0RlE2N2g4d1B3dEJjUHBqZmEtOExyYUU5eW9pYloySzRGYWtFd0dNNEJpbW45QTd5TWdLRTJtc2JSNDkyVVdMbjYtOUhOdWxrUTNfd3BiQ1lVWVYzYXlzVkJhX2NhckJUbXFmQjN3eE5aTFptT0NjeTQ5TVBnVWE4YU5JWTF5NmF3YWZzaDN5M04xYQ?oc=5",
+      "source": "Internet Haber",
+      "source_type": "google_news",
+      "account_type": null,
+      "query": "Başakşehir transfer",
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-22T13:23:00+00:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "MEDIUM",
+      "verification_status": "CORROBORATED",
+      "interpretation": "Birden fazla kaynak aynı yönlü iddiayı taşıyor; resmi açıklama beklenir.",
+      "source_count": 2,
+      "sources": [
+        "Internet Haber",
+        "T24"
+      ],
+      "evidence": [
+        {
+          "source": "Internet Haber",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Başakşehir transfer",
+          "title": "Başakşehir, sol bek Michal Karbownik'i transfer etti - Internet Haber",
+          "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPWm43Njg0RlE2N2g4d1B3dEJjUHBqZmEtOExyYUU5eW9pYloySzRGYWtFd0dNNEJpbW45QTd5TWdLRTJtc2JSNDkyVVdMbjYtOUhOdWxrUTNfd3BiQ1lVWVYzYXlzVkJhX2NhckJUbXFmQjN3eE5aTFptT0NjeTQ5TVBnVWE4YU5JWTF5NmF3YWZzaDN5M04xYQ?oc=5",
+          "published_at": "2026-06-22T13:23:00+00:00",
+          "first_observed_at": null
+        },
+        {
+          "source": "T24",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Başakşehir transfer",
+          "title": "İstanbul Başakşehir, sol bek Michal Karbownik'i transfer etti - T24",
+          "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNN3VWaHZleThTMkU3Vm1rOVI1ZHhRLUxycUFqUXVqR3VpUUp0T2VpQ3hRZndEbTNyekNkOGh1LXRKeW00cEdPcTg0TTNiZmVDWHQxdFRObTUzMW5JazJCdmZoRkw2ZGdEZVZhWXFld2twbVpUOGkxdm5zbHIxT2pmbl9LSGdZUDJHZGl5SEdEQjNsRTM3Rkt5Tw?oc=5",
+          "published_at": "2026-06-22T13:14:00+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
       "player_name": "Matei Ilie",
       "from_club": null,
       "to_club": "Kasımpaşa",
@@ -607,22 +660,22 @@
       "model_use": false
     },
     {
-      "player_name": "Aziz Yıldırım Devrede",
+      "player_name": "Brahim Diaz",
       "from_club": null,
       "to_club": "Fenerbahçe",
       "signal_type": "interest",
       "window": "summer_2026",
       "confidence": "LOW",
       "direction_quality": "HEADLINE_EXPLICIT_DIRECTION",
-      "article_id": "b395f2f572d2",
-      "title": "CANLI Fenerbahçe Transfer Haberleri: Aziz Yıldırım Devrede! Yeni Golcü Kim Olacak? Avrupadan Forvet Geliyor - CNN Türk",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQcXk1RkExWDN6ZERYSjJWYkJDSUV5YXVmZWQ4Z1k0eGlVb2JhYkJrWFNROFZUZWZhUFBnVDk4cTVyLVhrR29xazFhMXBOZXR2ZjZ3MTU4UFU5NVJLdjhFZjJFUWlDbTV1cTNBMTFpSnUyZl9VUVhFYW45WFBtVFFDZExLc2Q0WDAxeGs1R29Jb05OZUtnazhMX0J0Rjh1ZXNiRUR1MnVuWktoZw?oc=5",
-      "source": "CNN Türk",
-      "source_type": "google_news",
+      "article_id": "7f7c744e8aa7",
+      "title": "Fenerbahçe'den Brahim Diaz bombası! Babasıyla görüşüldü",
+      "link": "https://www.fotomac.com.tr/fenerbahce/2026/06/24/fenerbahceden-brahim-diaz-bombasi-babasiyla-gorusuldu",
+      "source": "Fotomaç",
+      "source_type": "rss",
       "account_type": null,
-      "query": "Fenerbahçe transfer",
+      "query": null,
       "source_tier": "MEDIA",
-      "published_at": "2026-06-25T08:16:47+00:00",
+      "published_at": "2026-06-25T01:05:44+03:00",
       "first_observed_at": null,
       "summary_tr": "",
       "entity_confidence": "MEDIUM",
@@ -630,18 +683,18 @@
       "interpretation": "Tek kaynaklı transfer iddiası; yalnız transfer radarında izlenir.",
       "source_count": 1,
       "sources": [
-        "CNN Türk"
+        "Fotomaç"
       ],
       "evidence": [
         {
-          "source": "CNN Türk",
+          "source": "Fotomaç",
           "source_tier": "MEDIA",
-          "source_type": "google_news",
+          "source_type": "rss",
           "account_type": null,
-          "query": "Fenerbahçe transfer",
-          "title": "CANLI Fenerbahçe Transfer Haberleri: Aziz Yıldırım Devrede! Yeni Golcü Kim Olacak? Avrupadan Forvet Geliyor - CNN Türk",
-          "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQcXk1RkExWDN6ZERYSjJWYkJDSUV5YXVmZWQ4Z1k0eGlVb2JhYkJrWFNROFZUZWZhUFBnVDk4cTVyLVhrR29xazFhMXBOZXR2ZjZ3MTU4UFU5NVJLdjhFZjJFUWlDbTV1cTNBMTFpSnUyZl9VUVhFYW45WFBtVFFDZExLc2Q0WDAxeGs1R29Jb05OZUtnazhMX0J0Rjh1ZXNiRUR1MnVuWktoZw?oc=5",
-          "published_at": "2026-06-25T08:16:47+00:00",
+          "query": null,
+          "title": "Fenerbahçe'den Brahim Diaz bombası! Babasıyla görüşüldü",
+          "link": "https://www.fotomac.com.tr/fenerbahce/2026/06/24/fenerbahceden-brahim-diaz-bombasi-babasiyla-gorusuldu",
+          "published_at": "2026-06-25T01:05:44+03:00",
           "first_observed_at": null
         }
       ],
@@ -816,88 +869,6 @@
       "model_use": false
     },
     {
-      "player_name": "Anna Prasolova",
-      "from_club": null,
-      "to_club": "Göztepe",
-      "signal_type": "official_transfer",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "HEADLINE_EXPLICIT_DIRECTION",
-      "article_id": "e779d3e82f16",
-      "title": "Göztepe, Anna Prasolova'yı transfer etti - Ensonhaber",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE80c2dWUUt3Nl9rcV9DdEV5cWJsOWVzYzBQc2sycVRUVG5KWk9weHJ1a3NzbEdtTDRfR2o4WUdjY05wQkNSTlhCX0lldXdFZGEzQ29pXzZHOGNTa2VpV29DdEZWMGJHRmxnZXlESmJMVEZDb3BMY1RzYnRXajNDNU0?oc=5",
-      "source": "Ensonhaber",
-      "source_type": "google_news",
-      "account_type": null,
-      "query": "Göztepe transfer",
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-22T15:35:00+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "MEDIUM",
-      "verification_status": "RUMOR",
-      "interpretation": "Tek kaynaklı transfer iddiası; yalnız transfer radarında izlenir.",
-      "source_count": 1,
-      "sources": [
-        "Ensonhaber"
-      ],
-      "evidence": [
-        {
-          "source": "Ensonhaber",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Göztepe transfer",
-          "title": "Göztepe, Anna Prasolova'yı transfer etti - Ensonhaber",
-          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE80c2dWUUt3Nl9rcV9DdEV5cWJsOWVzYzBQc2sycVRUVG5KWk9weHJ1a3NzbEdtTDRfR2o4WUdjY05wQkNSTlhCX0lldXdFZGEzQ29pXzZHOGNTa2VpV29DdEZWMGJHRmxnZXlESmJMVEZDb3BMY1RzYnRXajNDNU0?oc=5",
-          "published_at": "2026-06-22T15:35:00+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": "Karbownik",
-      "from_club": null,
-      "to_club": "Başakşehir",
-      "signal_type": "official_transfer",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "HEADLINE_EXPLICIT_DIRECTION",
-      "article_id": "7427a94da016",
-      "title": "Başakşehir, sol bek Michal Karbownik'i transfer etti - Internet Haber",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPWm43Njg0RlE2N2g4d1B3dEJjUHBqZmEtOExyYUU5eW9pYloySzRGYWtFd0dNNEJpbW45QTd5TWdLRTJtc2JSNDkyVVdMbjYtOUhOdWxrUTNfd3BiQ1lVWVYzYXlzVkJhX2NhckJUbXFmQjN3eE5aTFptT0NjeTQ5TVBnVWE4YU5JWTF5NmF3YWZzaDN5M04xYQ?oc=5",
-      "source": "Internet Haber",
-      "source_type": "google_news",
-      "account_type": null,
-      "query": "Başakşehir transfer",
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-22T13:23:00+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "MEDIUM",
-      "verification_status": "RUMOR",
-      "interpretation": "Tek kaynaklı transfer iddiası; yalnız transfer radarında izlenir.",
-      "source_count": 1,
-      "sources": [
-        "Internet Haber"
-      ],
-      "evidence": [
-        {
-          "source": "Internet Haber",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Başakşehir transfer",
-          "title": "Başakşehir, sol bek Michal Karbownik'i transfer etti - Internet Haber",
-          "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPWm43Njg0RlE2N2g4d1B3dEJjUHBqZmEtOExyYUU5eW9pYloySzRGYWtFd0dNNEJpbW45QTd5TWdLRTJtc2JSNDkyVVdMbjYtOUhOdWxrUTNfd3BiQ1lVWVYzYXlzVkJhX2NhckJUbXFmQjN3eE5aTFptT0NjeTQ5TVBnVWE4YU5JWTF5NmF3YWZzaDN5M04xYQ?oc=5",
-          "published_at": "2026-06-22T13:23:00+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
       "player_name": "HRVOJE SMOLCIC",
       "from_club": null,
       "to_club": "Kocaelispor",
@@ -935,6 +906,129 @@
           "title": "Kocaelispor'un yıldızıydı: Smolcic Çorum FK'ye transfer oldu - Odatv",
           "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPZ0N6UERDcU1CRWVvQ1R2T1FFb090UWpJaTFSZV85ZmhVLTNJRlJCY3VacXJaUWlwQXVYbWpJWkVhQmtHb05QYktkQmlSQkZZTnVQa1JfTTRJQ3VRZk96UU5aMGdIbUI5M3I4ZzJ5eWFZU1V6VDNlS1Vwem04aHhXVkkzdUJTc3VqX1NhSWk1TC1fX2RDUGRHUjgtRnBVeWFiQmY4?oc=5",
           "published_at": "2026-06-22T08:14:47+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": null,
+      "from_club": null,
+      "to_club": "Gençlerbirliği",
+      "signal_type": "departure",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "c5ec8bde53ea",
+      "title": "Abdullah Şahindere, Gençlerbirliği'nden ayrıldı!",
+      "link": "https://www.sabah.com.tr/spor/futbol/2026/06/25/abdullah-sahindere-genclerbirliginden-ayrildi",
+      "source": "Sabah Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-25T19:08:07+03:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Sabah Spor"
+      ],
+      "evidence": [
+        {
+          "source": "Sabah Spor",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Abdullah Şahindere, Gençlerbirliği'nden ayrıldı!",
+          "link": "https://www.sabah.com.tr/spor/futbol/2026/06/25/abdullah-sahindere-genclerbirliginden-ayrildi",
+          "published_at": "2026-06-25T19:08:07+03:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": null,
+      "from_club": null,
+      "to_club": "Trabzonspor",
+      "signal_type": "official_transfer",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "bb95bf3f278f",
+      "title": "Trabzonspor Basketbol Takımı Notae transferini açıkladı!",
+      "link": "https://www.fotomac.com.tr/basketbol/2026/06/25/trabzonspor-basketbol-takimi-notae-transferini-acikladi",
+      "source": "Fotomaç",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-25T18:27:30+03:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Fotomaç"
+      ],
+      "evidence": [
+        {
+          "source": "Fotomaç",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Trabzonspor Basketbol Takımı Notae transferini açıkladı!",
+          "link": "https://www.fotomac.com.tr/basketbol/2026/06/25/trabzonspor-basketbol-takimi-notae-transferini-acikladi",
+          "published_at": "2026-06-25T18:27:30+03:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": null,
+      "from_club": null,
+      "to_club": "Fenerbahçe",
+      "signal_type": "departure",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "32583bda8323",
+      "title": "Fenerbahçe Beko, 4 isimle yollarını ayırdı",
+      "link": "https://www.fotomac.com.tr/basketbol/2026/06/25/fenerbahce-beko-4-isimle-yollarini-ayirdi",
+      "source": "Fotomaç",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-25T17:13:51+03:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Fotomaç"
+      ],
+      "evidence": [
+        {
+          "source": "Fotomaç",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Fenerbahçe Beko, 4 isimle yollarını ayırdı",
+          "link": "https://www.fotomac.com.tr/basketbol/2026/06/25/fenerbahce-beko-4-isimle-yollarini-ayirdi",
+          "published_at": "2026-06-25T17:13:51+03:00",
           "first_observed_at": null
         }
       ],
@@ -989,15 +1083,15 @@
       "window": "summer_2026",
       "confidence": "LOW",
       "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "d847ac80034a",
-      "title": "Galatasaray Erkek Basketbol Takımı’nda 3 oyuncuyla yollar ayrıldı",
-      "link": "https://www.sabah.com.tr/spor/basketbol/2026/06/25/galatasaray-erkek-basketbol-takiminda-3-oyuncuyla-yollar-ayrildi",
-      "source": "Sabah Spor",
+      "article_id": "abff7a631107",
+      "title": "Galatasaray Erkek Basketbol'da 3 oyuncuyla yollar ayrıldı",
+      "link": "https://www.fotomac.com.tr/basketbol/2026/06/25/galatasaray-erkek-basketbolda-3-oyuncuyla-yollar-ayrildi",
+      "source": "Fotomaç",
       "source_type": "rss",
       "account_type": null,
       "query": null,
       "source_tier": "MEDIA",
-      "published_at": "2026-06-25T16:29:58+03:00",
+      "published_at": "2026-06-25T17:03:49+03:00",
       "first_observed_at": null,
       "summary_tr": "",
       "entity_confidence": "LOW",
@@ -1005,59 +1099,18 @@
       "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
       "source_count": 1,
       "sources": [
-        "Sabah Spor"
+        "Fotomaç"
       ],
       "evidence": [
         {
-          "source": "Sabah Spor",
+          "source": "Fotomaç",
           "source_tier": "MEDIA",
           "source_type": "rss",
           "account_type": null,
           "query": null,
-          "title": "Galatasaray Erkek Basketbol Takımı’nda 3 oyuncuyla yollar ayrıldı",
-          "link": "https://www.sabah.com.tr/spor/basketbol/2026/06/25/galatasaray-erkek-basketbol-takiminda-3-oyuncuyla-yollar-ayrildi",
-          "published_at": "2026-06-25T16:29:58+03:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": null,
-      "to_club": "Fenerbahçe",
-      "signal_type": "departure",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "61bba7870bf7",
-      "title": "Fenerbahçe Erkek Basketbol Takımı'nda 4 ayrılık birden!",
-      "link": "https://www.sabah.com.tr/spor/basketbol/2026/06/25/fenerbahce-erkek-basketbol-takiminda-4-ayrilik-birden",
-      "source": "Sabah Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-25T16:28:46+03:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Sabah Spor"
-      ],
-      "evidence": [
-        {
-          "source": "Sabah Spor",
-          "source_tier": "MEDIA",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "Fenerbahçe Erkek Basketbol Takımı'nda 4 ayrılık birden!",
-          "link": "https://www.sabah.com.tr/spor/basketbol/2026/06/25/fenerbahce-erkek-basketbol-takiminda-4-ayrilik-birden",
-          "published_at": "2026-06-25T16:28:46+03:00",
+          "title": "Galatasaray Erkek Basketbol'da 3 oyuncuyla yollar ayrıldı",
+          "link": "https://www.fotomac.com.tr/basketbol/2026/06/25/galatasaray-erkek-basketbolda-3-oyuncuyla-yollar-ayrildi",
+          "published_at": "2026-06-25T17:03:49+03:00",
           "first_observed_at": null
         }
       ],
@@ -1400,6 +1453,47 @@
     {
       "player_name": null,
       "from_club": null,
+      "to_club": "Beşiktaş",
+      "signal_type": "official_transfer",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "8b5be1b1fe0e",
+      "title": "Beşiktaş'ın eski futbolcusu 3. Lig ekibine transfer oldu - Haber 7",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNWUoyYkJZQ3pPazNMYmZ6MDJxS2lTUTFZZzJhVlhQdnlwWk5jSThRUDhpcUQxMUQyUHEtWmlFU3VuQ1pRbTdMZ05FRkdVNFZMYTBRUnFFVHhIdnpSc2wxQTZES1RvU2RLZ1NiMG9vSnV5MDRHY0F0MGJmN2tMMzVTaXJxd0ZaUU5qTXhtbWo4eWVxbzZXNTl3Y0Q1UkdET2VISGRj0gGqAUFVX3lxTE1hcGxGOW1JZGJzU0drcWdEZVczOWVuM0xnUWlPOVd5aUo3c3RIemdUQi1kTXJXMnB5bXRRQ1k2NEpnM2gyeTg5eGZualJtRkgxZUwzQjJHWDZYaUpJd3RtWmFQVG5hdDcwS0xuWkFjcUtGbm1xc2lzamhtNlhyZEQzRDc5TkZHT1hwY3lCQXhhZ2VtclVHenUyckUyUHN1UWptblRsRHFXcU13?oc=5",
+      "source": "Haber 7",
+      "source_type": "google_news",
+      "account_type": null,
+      "query": "Beşiktaş transfer",
+      "source_tier": "MEDIA",
+      "published_at": "2026-06-24T16:02:00+00:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Haber 7"
+      ],
+      "evidence": [
+        {
+          "source": "Haber 7",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Beşiktaş transfer",
+          "title": "Beşiktaş'ın eski futbolcusu 3. Lig ekibine transfer oldu - Haber 7",
+          "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNWUoyYkJZQ3pPazNMYmZ6MDJxS2lTUTFZZzJhVlhQdnlwWk5jSThRUDhpcUQxMUQyUHEtWmlFU3VuQ1pRbTdMZ05FRkdVNFZMYTBRUnFFVHhIdnpSc2wxQTZES1RvU2RLZ1NiMG9vSnV5MDRHY0F0MGJmN2tMMzVTaXJxd0ZaUU5qTXhtbWo4eWVxbzZXNTl3Y0Q1UkdET2VISGRj0gGqAUFVX3lxTE1hcGxGOW1JZGJzU0drcWdEZVczOWVuM0xnUWlPOVd5aUo3c3RIemdUQi1kTXJXMnB5bXRRQ1k2NEpnM2gyeTg5eGZualJtRkgxZUwzQjJHWDZYaUpJd3RtWmFQVG5hdDcwS0xuWkFjcUtGbm1xc2lzamhtNlhyZEQzRDc5TkZHT1hwY3lCQXhhZ2VtclVHenUyckUyUHN1UWptblRsRHFXcU13?oc=5",
+          "published_at": "2026-06-24T16:02:00+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": null,
+      "from_club": null,
       "to_club": "Fenerbahçe",
       "signal_type": "signing",
       "window": "summer_2026",
@@ -1525,40 +1619,40 @@
     {
       "player_name": null,
       "from_club": null,
-      "to_club": "Göztepe",
-      "signal_type": "transfer_fee",
+      "to_club": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ",
+      "signal_type": "signing",
       "window": "summer_2026",
       "confidence": "LOW",
       "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "8e61cc641962",
-      "title": "Arda Okan cep yakıyor: Göztepe'nin istediği bonservis bedeli belli oldu - Yeniçağ Gazetesi",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNTk90TXBSa0l2TmN3dnJtMGhpWUxMOVVLX0dTZFJMMVY2c3BHNlhZMVR2WGhVY3RZbzNSNmw1OVhjVW9zZXh5LXREWVNhR1pRVTh2bnFScE9nbDU3Tkt2OUR4YmdpNlNteUwtM1dPbmFaNHdpdER1alNVYjhFNGh0VkZlQXhUOEdCMFo5MG1QV0F5MDEzb3BrT1NPZ2RNRnR1VUdxM2g3ZGR0MUZYMkRNcDBTbDM?oc=5",
-      "source": "Yeniçağ Gazetesi",
-      "source_type": "google_news",
-      "account_type": null,
-      "query": "Göztepe transfer",
-      "source_tier": "MEDIA",
-      "published_at": "2026-06-22T13:57:26+00:00",
-      "first_observed_at": null,
+      "article_id": "67972efe5716",
+      "title": "Kulübümüz, son olarak Hertha BSC’de forma giyen Polonyalı Michal Karbownik ile 3 yıllık anlaşma sağladı.",
+      "link": "https://ibfk.com.tr/haberler/hos-geldin-michal-karbownik",
+      "source": "Başakşehir Resmi Web",
+      "source_type": "official_club",
+      "account_type": "official",
+      "query": null,
+      "source_tier": "OFFICIAL",
+      "published_at": "22.6.2026 15:54:05",
+      "first_observed_at": "2026-06-25T16:38:49.858606+00:00",
       "summary_tr": "",
       "entity_confidence": "LOW",
       "verification_status": "REVIEW_REQUIRED",
       "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
       "source_count": 1,
       "sources": [
-        "Yeniçağ Gazetesi"
+        "Başakşehir Resmi Web"
       ],
       "evidence": [
         {
-          "source": "Yeniçağ Gazetesi",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Göztepe transfer",
-          "title": "Arda Okan cep yakıyor: Göztepe'nin istediği bonservis bedeli belli oldu - Yeniçağ Gazetesi",
-          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNTk90TXBSa0l2TmN3dnJtMGhpWUxMOVVLX0dTZFJMMVY2c3BHNlhZMVR2WGhVY3RZbzNSNmw1OVhjVW9zZXh5LXREWVNhR1pRVTh2bnFScE9nbDU3Tkt2OUR4YmdpNlNteUwtM1dPbmFaNHdpdER1alNVYjhFNGh0VkZlQXhUOEdCMFo5MG1QV0F5MDEzb3BrT1NPZ2RNRnR1VUdxM2g3ZGR0MUZYMkRNcDBTbDM?oc=5",
-          "published_at": "2026-06-22T13:57:26+00:00",
-          "first_observed_at": null
+          "source": "Başakşehir Resmi Web",
+          "source_tier": "OFFICIAL",
+          "source_type": "official_club",
+          "account_type": "official",
+          "query": null,
+          "title": "Kulübümüz, son olarak Hertha BSC’de forma giyen Polonyalı Michal Karbownik ile 3 yıllık anlaşma sağladı.",
+          "link": "https://ibfk.com.tr/haberler/hos-geldin-michal-karbownik",
+          "published_at": "22.6.2026 15:54:05",
+          "first_observed_at": "2026-06-25T16:38:49.858606+00:00"
         }
       ],
       "model_use": false
@@ -1571,9 +1665,9 @@
       "window": "summer_2026",
       "confidence": "LOW",
       "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "4a9760e0f92f",
+      "article_id": "24ac1dc0d73d",
       "title": "Başakşehir FK, Michal Karbownik'i Transfer Etti - Son Dakika",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPTEdyeW5Nc2JyMGhNd2EzSWp0dTlHdGVRU1JvNlhlTHA2TTZKY29SbnJoeHNkOFhMVUhwR1BzdDJuUHdfREExd0RYMW5LNGlrN3ViTEFJNjJiLXJaelYxREFUTGNGdmV5SEpnV1hTNTAyazIwWU5kZG5SOUpIeVRJU242ckxURXZmY2NKUV91d1N6M21wX1RJ0gGXAUFVX3lxTE9MR3J5bk1zYnIwaE13YTNJanR1OUd0ZVFTUm82WGVMcDZNNkpjb1Jucmh4c2Q4WExVSHBHUHN0Mm5Qd19EQTF3RFgxbks0aWs3dWJMQUk2MmItclp6VjFEQVRMY0Z2ZXlISmdXWFM1MDJrMjBZTmRkblI5Skh5VElTbjZyTFRFdmZjY0pRX3V3U3ozbXBfVEk?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNWWFseElESy1DaEMtdzhwQzliZDV0UDdaM2l3Mk1iSTRnT2p1TlhyQUpZNFpDbE9GSHhNRkp5SWhkN2dCNm96NXU0T18zdWxsTVlmMFBVcXhRRzQ0Y0NVTHNoSkFDTjEwenloQ0ttRjIwdWF1bVdhc0E3OVVEVzFxMnhJWlVHOWI3dWRMeXl4dk9fblpPaGFqR9IBlwFBVV95cUxPTEdyeW5Nc2JyMGhNd2EzSWp0dTlHdGVRU1JvNlhlTHA2TTZKY29SbnJoeHNkOFhMVUhwR1BzdDJuUHdfREExd0RYMW5LNGlrN3ViTEFJNjJiLXJaelYxREFUTGNGdmV5SEpnV1hTNTAyazIwWU5kZG5SOUpIeVRJU242ckxURXZmY2NKUV91d1N6M21wX1RJ?oc=5",
       "source": "Son Dakika",
       "source_type": "google_news",
       "account_type": null,
@@ -1597,7 +1691,7 @@
           "account_type": null,
           "query": "Başakşehir transfer",
           "title": "Başakşehir FK, Michal Karbownik'i Transfer Etti - Son Dakika",
-          "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPTEdyeW5Nc2JyMGhNd2EzSWp0dTlHdGVRU1JvNlhlTHA2TTZKY29SbnJoeHNkOFhMVUhwR1BzdDJuUHdfREExd0RYMW5LNGlrN3ViTEFJNjJiLXJaelYxREFUTGNGdmV5SEpnV1hTNTAyazIwWU5kZG5SOUpIeVRJU242ckxURXZmY2NKUV91d1N6M21wX1RJ0gGXAUFVX3lxTE9MR3J5bk1zYnIwaE13YTNJanR1OUd0ZVFTUm82WGVMcDZNNkpjb1Jucmh4c2Q4WExVSHBHUHN0Mm5Qd19EQTF3RFgxbks0aWs3dWJMQUk2MmItclp6VjFEQVRMY0Z2ZXlISmdXWFM1MDJrMjBZTmRkblI5Skh5VElTbjZyTFRFdmZjY0pRX3V3U3ozbXBfVEk?oc=5",
+          "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNWWFseElESy1DaEMtdzhwQzliZDV0UDdaM2l3Mk1iSTRnT2p1TlhyQUpZNFpDbE9GSHhNRkp5SWhkN2dCNm96NXU0T18zdWxsTVlmMFBVcXhRRzQ0Y0NVTHNoSkFDTjEwenloQ0ttRjIwdWF1bVdhc0E3OVVEVzFxMnhJWlVHOWI3dWRMeXl4dk9fblpPaGFqR9IBlwFBVV95cUxPTEdyeW5Nc2JyMGhNd2EzSWp0dTlHdGVRU1JvNlhlTHA2TTZKY29SbnJoeHNkOFhMVUhwR1BzdDJuUHdfREExd0RYMW5LNGlrN3ViTEFJNjJiLXJaelYxREFUTGNGdmV5SEpnV1hTNTAyazIwWU5kZG5SOUpIeVRJU242ckxURXZmY2NKUV91d1N6M21wX1RJ?oc=5",
           "published_at": "2026-06-22T13:28:32+00:00",
           "first_observed_at": null
         }
