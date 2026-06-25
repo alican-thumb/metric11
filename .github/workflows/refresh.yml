@@ -34,6 +34,8 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           FOOTBALL_DATA_KEY: ${{ secrets.FOOTBALL_DATA_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
         run: |
           python -m src.collect_worldcup_fixtures
           python -m src.analyze_worldcup_predictions
@@ -45,6 +47,7 @@ jobs:
           python -m src.build_news_intelligence_report
           python -m src.build_transfer_tracker
           python -m src.build_live_feed
+          python -m src.notify_telegram
 
       - name: Rebuild dashboards
         env:
