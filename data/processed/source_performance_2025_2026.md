@@ -91,6 +91,7 @@
 | Haber 7 | MEDIA | 10 | 0 | 0 | — | — | — | — | OBSERVING |
 | HaberTS | MEDIA | 9 | 5 | 0 | — | — | — | — | OBSERVING |
 | Halk TV | MEDIA | 7 | 1 | 0 | — | — | — | — | OBSERVING |
+| Sporx | MEDIA | 7 | 5 | 0 | — | — | — | — | OBSERVING |
 | Eurohoops | MEDIA | 6 | 2 | 0 | — | — | — | — | OBSERVING |
 | CNN Türk | MEDIA | 5 | 1 | 0 | — | — | — | — | OBSERVING |
 | Sporx | MEDIA | 5 | 4 | 0 | — | — | — | — | OBSERVING |
