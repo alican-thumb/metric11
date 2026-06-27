@@ -23,36 +23,74 @@ OUTPUT_PATH   = PROCESSED_DIR / "european_predictions_2026_2027.json"
 # Kaynak: UEFA club coefficients. Lig ortalaması ≈ 30.
 # ──────────────────────────────────────────────────────────
 _CLUB_STRENGTH: dict[str, float] = {
-    # Tier 1 (80-100)
-    "Manchester City":       95, "Real Madrid":          98,
-    "Bayern Munich":         92, "Liverpool":            88,
-    "Arsenal":               86, "Barcelona":            85,
-    "Paris Saint-Germain":   84, "Borussia Dortmund":    80,
-    "Atlético de Madrid":    82, "Juventus":             75,
-    "Inter Milan":           83, "AC Milan":             76,
-    "Chelsea":               78, "Manchester United":    72,
-    "Napoli":                74, "Porto":                70,
-    "Benfica":               68, "Bayer 04 Leverkusen":  85,
-    "Atalanta":              78, "RB Leipzig":           76,
-    "Aston Villa":           72, "Feyenoord":            66,
-    # Tier 2 (55-70)
-    "Sporting CP":           65, "Sevilla FC":           60,
-    "BSC Young Boys":        52, "Crvena zvezda":        55,
-    "GNK Dinamo Zagreb":     50, "Galatasaray":          62,
-    "Fenerbahçe":            60, "Beşiktaş":             52,
-    "Trabzonspor":           48, "Başakşehir":           45,
-    "Club Brugge":           60, "PSV Eindhoven":        65,
-    "Celtic":                58, "Rangers":              55,
-    "FC Shakhtar Donetsk":   58, "FC Salzburg":          62,
-    "Girona FC":             62, "Real Sociedad":        60,
-    "Sturm Graz":            50, "Slavia Praha":         52,
-    "Sparta Praha":          54,
+    # Tier 1 — Elite (88-100)
+    "Real Madrid":           98, "Manchester City":      96,
+    "Bayern Munich":         93, "Liverpool":            90,
+    "Arsenal":               87, "Barcelona":            86,
+    "Paris Saint-Germain":   85, "Inter Milan":          84,
+    "Bayer 04 Leverkusen":   86, "Borussia Dortmund":    81,
+    "Atlético de Madrid":    83, "Atalanta":             80,
+    # Tier 2 — Strong (70-85)
+    "Chelsea":               79, "Manchester United":    73,
+    "Juventus":              76, "AC Milan":             77,
+    "Napoli":                75, "RB Leipzig":           77,
+    "Aston Villa":           74, "Real Betis":           68,
+    "Porto":                 71, "Benfica":              70,
+    "Sporting CP":           67, "PSV Eindhoven":        68,
+    "Feyenoord":             67, "Lazio":                65,
+    "Roma":                  67, "Monaco":               64,
+    "Villarreal CF":         65, "Real Sociedad":        62,
+    "Sevilla FC":            61, "Marseille":            66,
+    "Girona FC":             64, "Lille OSC":            67,
+    # Tier 3 — Competitive (50-67)
+    "Galatasaray":           64, "Fenerbahçe":           62,
+    "Beşiktaş":              54, "Trabzonspor":          50,
+    "Başakşehir":            46, "Kasımpaşa":            40,
+    "Club Brugge":           62, "Anderlecht":           52,
+    "Celtic":                60, "Rangers":              57,
+    "FC Salzburg":           64, "Sturm Graz":           52,
+    "FC Shakhtar Donetsk":   60, "Dynamo Kyiv":          48,
+    "Crvena zvezda":         57, "Partizan":             45,
+    "GNK Dinamo Zagreb":     52, "Hajduk Split":         44,
+    "Slavia Praha":          54, "Sparta Praha":         56,
+    "BSC Young Boys":        53, "FC Basel":             50,
+    "Ajax":                  68, "Utrecht":              48,
+    "Eintracht Frankfurt":   70, "Wolfsburg":            60,
+    "Hoffenheim":            58, "Leverkusen":           86,
+    "VfB Stuttgart":         72, "SC Freiburg":          62,
+    "Valencia CF":           60, "Athletic Club":        65,
+    "Celta de Vigo":         55, "Getafe CF":            52,
+    "Nice":                  62, "Lens":                 60,
+    "Rennes":                57, "Toulouse FC":          52,
+    "Bologna FC":            64, "Torino FC":            55,
+    "Udinese Calcio":        48, "Sassuolo":             50,
+    "Hellas Verona":         46, "Genoa CFC":            48,
+    "PAOK FC":               55, "Olympiakos CF":        52,
+    "Panathinaikos":         48, "AEK Athens FC":        50,
+    "Legia Warszawa":        48, "Rakow Czestochowa":    46,
+    "Rapid Wien":            50, "Austria Wien":         44,
+    "HJK Helsinki":          42, "FK RFS":               38,
+    "Shamrock Rovers":       40, "FC Midtjylland":       56,
+    "FC Copenhagen":         58, "Rosenborg BK":         46,
+    "Malmö FF":              54, "IFK Göteborg":         48,
+    "Ferencváros":           54, "MTK Budapest":         42,
+    "APOEL FC":              44, "Maccabi Tel Aviv":     50,
+    "Lincoln Red Imps":      32, "Hammarby IF":          50,
+    "FC Lorient":            54, "Stade Brestois 29":    58,
+    "RC Lens":               61, "Stade de Reims":       55,
+    "Viktoria Plzen":        52, "FK Jablonec":          40,
+    "Sheriff Tiraspol":      48, "FC Astana":            42,
+    "Ludogorets Razgrad":    46, "CSKA Sofia":           40,
+    "Paços de Ferreira":     40, "Braga":                62,
+    "Vitória SC":            50, "Boavista":             46,
+    "Lech Poznan":           52, "Wisla Krakow":         44,
+    "AIK":                   48, "BK Häcken":            46,
 }
 
-_DEFAULT_STRENGTH = 45.0
-_HOME_ADVANTAGE   = 1.12   # ev avantajı faktörü
-_BASE_GOALS       = 1.35   # lig bazı gol/maç (UCL ortalaması)
-_DRAW_CALIBRATION = 1.05   # Poisson draw düzeltmesi
+_DEFAULT_STRENGTH = 48.0
+_HOME_ADVANTAGE   = 1.08   # UCL/UEL nötr saha oranı (Wembley, San Siro, vs.)
+_BASE_GOALS       = 1.42   # UCL 2023-25 ortalama gol/takım/maç
+_DRAW_CALIBRATION = 1.18   # UCL grup aşaması gerçek draw oranı ~%26 (Poisson ~%22)
 _MAX_GOALS        = 8
 
 

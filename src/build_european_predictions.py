@@ -393,7 +393,23 @@ def build_page(data: dict) -> str:
 
     # Sections
     today_html = _build_today_section(comps)
-    sections_html = "\n".join(_build_comp_section(code, comp) for code, comp in comps.items())
+    if comps:
+        sections_html = "\n".join(_build_comp_section(code, comp) for code, comp in comps.items())
+    else:
+        sections_html = """
+<div style="text-align:center;padding:60px 20px;color:var(--muted);">
+  <div style="font-size:48px;margin-bottom:16px">⚽</div>
+  <div style="font-size:18px;font-weight:700;color:var(--ink);margin-bottom:10px">2026-27 Sezonu Hazırlanıyor</div>
+  <div style="font-size:13px;max-width:440px;margin:0 auto;line-height:1.7">
+    UEFA Şampiyonlar Ligi, Avrupa Ligi ve Konferans Ligi 2026-27 fikstürü henüz açıklanmadı.
+    Nitelendirme turları Temmuz başında başlayacak. Maçlar belli oldukça tahminler günlük güncellenir.
+  </div>
+  <div style="margin-top:24px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+    <div style="background:var(--panel);border:1px solid rgba(245,158,11,.3);border-radius:8px;padding:12px 20px;font-size:12px;font-weight:700;color:#f59e0b">🏆 Şampiyonlar Ligi</div>
+    <div style="background:var(--panel);border:1px solid rgba(249,115,22,.3);border-radius:8px;padding:12px 20px;font-size:12px;font-weight:700;color:#f97316">🟠 Avrupa Ligi</div>
+    <div style="background:var(--panel);border:1px solid rgba(34,197,94,.3);border-radius:8px;padding:12px 20px;font-size:12px;font-weight:700;color:#22c55e">🟢 Konferans Ligi</div>
+  </div>
+</div>"""
 
     return f"""<!doctype html>
 <html lang="tr">
