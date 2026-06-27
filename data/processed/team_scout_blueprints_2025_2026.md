@@ -35,7 +35,7 @@
 - 6 numara / savunma emniyeti: Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir. Adaylar: aday havuzu zayıf
 - Stoper / hava ve temas: Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 1.44. Adaylar: aday havuzu zayıf
 
-## AMED SFK
+## ERZURUMSPOR FK
 
 - Güç: None | GF: None | GA: None | kart: None
 - Zafiyet: yeni lig takımı
@@ -55,7 +55,7 @@
 - Santrfor / skor yükü: Süper Lig'e yeni çıkan takım; Santrfor / skor yükü pozisyonunda deneyimli takviye kritik. Adaylar: DATRO DAVID FOFANA, YOUSSEF EN NESYRI, KEVIN OGHENETEGA TAMARAEBI BAKUMO ABRAHAM
 - 6 numara / savunma emniyeti: Süper Lig'e yeni çıkan takım; 6 numara / savunma emniyeti pozisyonunda deneyimli takviye kritik. Adaylar: aday havuzu zayıf
 
-## ERZURUMSPOR FK
+## AMED SFK
 
 - Güç: None | GF: None | GA: None | kart: None
 - Zafiyet: yeni lig takımı
