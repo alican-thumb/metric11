@@ -520,6 +520,69 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 }
 .accuracy-track-label strong { color: var(--ink); }
 
+/* ── Bugünkü Maçlar ── */
+.today-section {
+  max-width: 1100px;
+  margin: 24px auto 0;
+  padding: 0 clamp(12px, 3vw, 32px);
+}
+.today-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #f59e0b;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  margin-bottom: 14px;
+}
+.today-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #f59e0b;
+  animation: pulse 2s infinite;
+}
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.35} }
+.today-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 12px;
+  margin-bottom: 8px;
+}
+.today-card {
+  background: rgba(245,158,11,.07);
+  border: 1px solid rgba(245,158,11,.28);
+  border-radius: 10px;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.today-time {
+  font-size: 21px;
+  font-weight: 800;
+  color: #f59e0b;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+.today-teams {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.today-team { font-size: 13px; font-weight: 700; color: white; }
+.today-vs { font-size: 11px; color: var(--muted); }
+.today-pred {
+  font-size: 22px;
+  font-weight: 900;
+  color: white;
+  letter-spacing: 3px;
+  line-height: 1;
+}
+.today-probs { display: flex; gap: 10px; font-size: 12px; font-weight: 600; }
+.today-group { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; }
+
 /* ── Responsive ── */
 @media (max-width: 680px) {
   .topbar {
@@ -801,24 +864,77 @@ def _build_tabs(md_keys: list[str]) -> str:
     )
 
 
-_JS = """
-<script>
-function showMatchday(md) {
-  document.querySelectorAll('.matchday-section').forEach(function(el) {
+def _build_today_section(today_matches: list[dict]) -> str:
+    """Bugün oynanacak maçları özet panel olarak gösterir."""
+    upcoming = [m for m in today_matches if m.get("prediction_outcome") == "pending"]
+    if not upcoming:
+        return ""
+    upcoming_sorted = sorted(upcoming, key=lambda m: m.get("utc_date", ""))
+    cards = []
+    for m in upcoming_sorted:
+        home_name = escape(m.get("home", {}).get("name", ""))
+        away_name = escape(m.get("away", {}).get("name", ""))
+        dt = _parse_utc(m.get("utc_date", ""))
+        time_str = escape(_format_time(dt) if dt else "--:--")
+        pred = m.get("prediction", {})
+        pred_score = pred.get("predicted_score", {})
+        ph = pred_score.get("home", "?")
+        pa = pred_score.get("away", "?")
+        hw = int(round(pred.get("home_win", 0) * 100))
+        dr = int(round(pred.get("draw", 0) * 100))
+        aw = int(round(pred.get("away_win", 0) * 100))
+        group = escape(m.get("group", "").replace("_", " "))
+        cards.append(
+            f'<div class="today-card">'
+            f'<div class="today-time">{time_str}</div>'
+            f'<div class="today-teams">'
+            f'<span class="today-team">{home_name}</span>'
+            f'<span class="today-vs">vs</span>'
+            f'<span class="today-team">{away_name}</span>'
+            f'</div>'
+            f'<div class="today-pred">{ph} &ndash; {pa}</div>'
+            f'<div class="today-probs">'
+            f'<span style="color:#4ade80">1 %{hw}</span>'
+            f'<span style="color:#94a3b8">X %{dr}</span>'
+            f'<span style="color:#f87171">2 %{aw}</span>'
+            f'</div>'
+            f'<div class="today-group">{group}</div>'
+            f'</div>'
+        )
+    cards_html = "\n".join(cards)
+    count = len(upcoming)
+    return (
+        f'<div class="today-section">'
+        f'<div class="today-header">'
+        f'<span class="today-dot"></span>'
+        f'Bugün {count} Maç &mdash; Tahminlerimiz'
+        f'</div>'
+        f'<div class="today-grid">{cards_html}</div>'
+        f'</div>'
+    )
+
+
+def _build_js(today_md: str) -> str:
+    return f"""<script>
+function showMatchday(md) {{
+  document.querySelectorAll('.matchday-section').forEach(function(el) {{
     el.classList.remove('visible');
-  });
+  }});
   var target = document.querySelector('.matchday-section[data-matchday="' + md + '"]');
   if (target) target.classList.add('visible');
-  document.querySelectorAll('.tab-btn').forEach(function(btn) {
+  document.querySelectorAll('.tab-btn').forEach(function(btn) {{
     btn.classList.toggle('active', btn.dataset.tab === md);
-  });
-}
-document.addEventListener('DOMContentLoaded', function() {
-  var first = document.querySelector('.tab-btn');
+  }});
+}}
+document.addEventListener('DOMContentLoaded', function() {{
+  var todayMd = {json.dumps(today_md)};
+  var btn = todayMd
+    ? document.querySelector('.tab-btn[data-tab="' + todayMd + '"]')
+    : null;
+  var first = btn || document.querySelector('.tab-btn');
   if (first) showMatchday(first.dataset.tab);
-});
-</script>
-"""
+}});
+</script>"""
 
 
 def _build_accuracy_bar(stats: dict) -> str:
@@ -867,7 +983,19 @@ def build_page(predictions_data: dict) -> str:
         key=lambda x: int(x)
     )
 
+    # Bugünkü maçları bul (UTC tarihine göre)
+    today_utc = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    today_matches: list[dict] = []
+    today_md = ""
+    for k, matches in matchday_preds.items():
+        for m in matches:
+            if m.get("utc_date", "")[:10] == today_utc:
+                today_matches.append(m)
+                if not today_md:
+                    today_md = k
+
     accuracy_html = _build_accuracy_bar(accuracy_stats)
+    today_html = _build_today_section(today_matches)
     tabs_html = _build_tabs(md_keys)
     sections_html = "\n".join(
         _build_matchday_section(k, matchday_preds[k]) for k in md_keys
@@ -919,6 +1047,8 @@ def build_page(predictions_data: dict) -> str:
     <p class="hero-dates">11 Haziran — 19 Temmuz 2026</p>
   </div>
 
+  {today_html}
+
   <div class="tabs-wrap">
     {accuracy_html}
     {tabs_html}
@@ -933,7 +1063,7 @@ def build_page(predictions_data: dict) -> str:
     &nbsp;&middot;&nbsp; Son g&uuml;ncelleme: {escape(gen_str)}
   </footer>
 
-  {_JS}
+  {_build_js(today_md)}
   <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>"""
