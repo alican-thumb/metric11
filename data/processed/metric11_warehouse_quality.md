@@ -17,7 +17,7 @@
 - referee_profiles: 29
 - referees: 29
 - team_profiles: 18
-- team_scout_blueprints: 370
+- team_scout_blueprints: 63
 - teams: 18
 
 ## Hazır Görünümler
@@ -46,16 +46,7 @@
 - {'team_name': 'BEŞİKTAŞ A.Ş.', 'overall_power_score': 62.5, 'points_per_match': 1.76}
 
 ### besiktas_blueprint
-- {'role_label': 'Bek / çift yönlü koridor', 'candidate_name': 'YHOAN MANY ANDZOUANA', 'candidate_team': 'TÜMOSAN KONYASPOR', 'fit_score': 110.2, 'position_confidence': 'MEDIUM_DERIVED_ROLE'}
-- {'role_label': 'Bek / çift yönlü koridor', 'candidate_name': 'ROLAND SALLAI', 'candidate_team': 'GALATASARAY A.Ş.', 'fit_score': 101.9, 'position_confidence': 'MEDIUM_DERIVED_ROLE'}
-- {'role_label': 'Bek / çift yönlü koridor', 'candidate_name': 'RUAN PEREIRA DUARTE', 'candidate_team': 'CORENDON ALANYASPOR', 'fit_score': 100.9, 'position_confidence': 'MEDIUM_DERIVED_ROLE'}
-- {'role_label': 'Bek / çift yönlü koridor', 'candidate_name': 'ZEKİ YAVRU', 'candidate_team': 'SAMSUNSPOR A.Ş.', 'fit_score': 97.2, 'position_confidence': 'MEDIUM_DERIVED_ROLE'}
-- {'role_label': 'Bek / çift yönlü koridor', 'candidate_name': 'WAGNER FABRICIO CARDOSO DE PINA', 'candidate_team': 'TRABZONSPOR A.Ş.', 'fit_score': 87.03, 'position_confidence': 'MEDIUM_EXTERNAL'}
-- {'role_label': 'Sol açık / çizgi kırıcı', 'candidate_name': 'YUNUS AKGÜN', 'candidate_team': 'GALATASARAY A.Ş.', 'fit_score': 104.95, 'position_confidence': 'MEDIUM_EXTERNAL'}
-- {'role_label': 'Sol açık / çizgi kırıcı', 'candidate_name': 'BARIŞ ALPER YILMAZ', 'candidate_team': 'GALATASARAY A.Ş.', 'fit_score': 99.7, 'position_confidence': 'MEDIUM_EXTERNAL'}
-- {'role_label': 'Sol açık / çizgi kırıcı', 'candidate_name': 'KAZEEM ADEREMI J. OLAIGBE', 'candidate_team': 'TRABZONSPOR A.Ş.', 'fit_score': 97.06, 'position_confidence': 'MEDIUM_EXTERNAL'}
-- {'role_label': 'Sol açık / çizgi kırıcı', 'candidate_name': 'DORGELES NENE', 'candidate_team': 'FENERBAHÇE A.Ş.', 'fit_score': 95.33, 'position_confidence': 'MEDIUM_EXTERNAL'}
-- {'role_label': 'Sol açık / çizgi kırıcı', 'candidate_name': 'ANTHONY TİTE EMMANUEL MUSABA', 'candidate_team': 'SAMSUNSPOR A.Ş.', 'fit_score': 82.55, 'position_confidence': 'MEDIUM_EXTERNAL'}
+- {'role_label': 'Sol açık / çizgi kırıcı', 'candidate_name': 'JESURUN  RAK-SAKYI', 'candidate_team': 'ÇAYKUR RİZESPOR A.Ş.', 'fit_score': 81.51, 'position_confidence': 'MEDIUM_EXTERNAL'}
 
 ### card_heavy_referees
 - {'referee_name': 'FATİH TOKAİL', 'cards_per_match': 9.0, 'tempo_label': 'KARTLI'}
