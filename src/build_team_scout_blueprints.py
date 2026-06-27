@@ -199,11 +199,25 @@ def build_payload(
 
 
 def candidate_matches_role(candidate: dict, role_key: str) -> bool:
+    # If candidate already validated by position_scout_matrix for this role, trust it
+    if candidate.get("role_key") == role_key:
+        return True
+    # Exact TM position match
     allowed_positions = ROLE_POSITION_ALLOWLIST.get(role_key)
-    verified_position = candidate.get("verified_position")
     if not allowed_positions:
         return True
-    return bool(verified_position and verified_position in allowed_positions)
+    verified_position = candidate.get("verified_position")
+    if verified_position and verified_position in allowed_positions:
+        return True
+    # Inferred group fallback (from new position scout matrix)
+    inferred_group = candidate.get("inferred_group") or candidate.get("position_group")
+    role_group_map = {
+        "ST_SCORER": "FWD", "LW_CREATOR": "FWD",
+        "CM_ENGINE": "MID", "DM_SECURITY": "MID",
+        "FB_TWO_WAY": "DEF", "CB_DOMINANT": "DEF",
+        "GK_STABILITY": "GK",
+    }
+    return bool(inferred_group and inferred_group == role_group_map.get(role_key))
 
 
 def build_role_candidate_index(
@@ -331,6 +345,8 @@ def simplify_candidate(candidate: dict, fit_score: float, role_key: str) -> dict
         "nationality": candidate.get("nationality"),
         "contract_months_left": candidate.get("contract_months_left"),
         "verified_position": candidate.get("verified_position") or candidate.get("position") or candidate.get("tm_position"),
+        "inferred_group": candidate.get("inferred_group"),
+        "position_group": candidate.get("position_group"),
         "height_cm": candidate.get("height_cm"),
         "preferred_foot": candidate.get("preferred_foot"),
         "position_source": candidate.get("position_source") or ("transfermarkt" if candidate.get("tm_position") else None),
@@ -344,9 +360,10 @@ def simplify_candidate(candidate: dict, fit_score: float, role_key: str) -> dict
         "resale_signal": candidate.get("resale_signal"),
         "contract_risk": candidate.get("contract_risk"),
         "position_confidence": candidate.get("position_confidence", candidate.get("physical_load_confidence")),
-        "market_value_eur": candidate.get("tm_market_value_eur"),
-        "market_value_text": candidate.get("tm_market_value_text"),
+        "market_value_eur": candidate.get("tm_market_value_eur") or candidate.get("market_value_eur"),
+        "market_value_text": candidate.get("tm_market_value_text") or candidate.get("market_value_text"),
         "tm_id": candidate.get("tm_id"),
+        "tm_profile_url": candidate.get("tm_profile_url"),
         "commercial_note": candidate.get("commercial_note") or candidate.get("recommendation"),
     }
 
@@ -442,134 +459,175 @@ def build_markdown(payload: dict) -> str:
     return "\n".join(lines)
 
 
+_DARK_NAV = """<div class="topbar">
+  <a class="brand" href="/"><b>11</b> metric11</a>
+  <nav>
+    <a href="/">Gündem</a>
+    <a href="transfer_tracker_2025_2026.html">Transferler</a>
+    <a href="all_teams_preview_dashboard_2025_2026.html">Maç Önü</a>
+    <a class="active" href="team_scout_blueprints_2025_2026.html">Takım Blueprint</a>
+    <a href="position_scout_matrix_2025_2026.html">Pozisyon Matrisi</a>
+    <a href="league_scouting_enriched_2025_2026_dashboard.html">Scout Havuzu</a>
+    <a href="transfer_recommendation_report_2025_2026.html">Öneriler</a>
+    <a href="football_intelligence_home.html">Analiz</a>
+    <a href="worldcup_2026_predictions.html">🌍 WC 2026</a>
+    <a href="european_predictions_2026_2027.html">⚽ Avrupa</a>
+  </nav>
+</div>"""
+
+
 def build_html(payload: dict) -> str:
     cards = "".join(blueprint_card(item) for item in payload["blueprints"])
-    nav = _build_nav("Scout")
+    summary = payload["summary"]
     return f"""<!doctype html>
 <html lang="tr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Takım Scout Blueprint Raporu — metric11</title>
-  <meta name="description" content="Süper Lig takım zafiyetleri ve scout ihtiyaç analizi — metric11.">
+  <title>Takım Scout Blueprint Raporu 2026-2027 | metric11</title>
+  <meta name="description" content="Süper Lig takım zafiyetleri ve 2026-27 transfer öncelikleri — metric11.">
   <meta property="og:title" content="Takım Scout Blueprint Raporu — metric11">
   <meta property="og:image" content="https://metric11.com/og_blueprints.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://metric11.com/og_blueprints.png">
-  <meta name="theme-color" content="#091810">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#09111f">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <style>
-    :root {{ --bg:#f4f6f8; --panel:#fff; --ink:#15181d; --muted:#667085; --line:#dce2ea; --dark:#091810; --red:#bf1f2f; --green:#137a4b; --blue:#185ea8; --lime:#cde94e; --shadow:0 8px 22px rgba(18,24,32,.08); }}
-    * {{ box-sizing:border-box; }}
-    body {{ margin:0; font-family:Inter,"Segoe UI",Arial,sans-serif; background:var(--bg); color:var(--ink); }}
-    .topbar {{ position:sticky; top:0; z-index:5; display:flex; align-items:center; justify-content:space-between; gap:20px; min-height:58px; padding:0 clamp(16px,4vw,42px); background:var(--dark); color:white; border-bottom:2px solid #1a3023; }}
-    .brand {{ display:flex; gap:10px; align-items:center; font-weight:800; font-size:18px; color:white; text-decoration:none; flex-shrink:0; letter-spacing:-0.2px; }}
-    .brand:visited,.brand:active,.brand:hover {{ color:white; }}
-    .brand-mark {{ width:28px; height:28px; display:grid; place-items:center; border-radius:6px; color:var(--dark); background:var(--lime); font-size:14px; font-weight:900; flex-shrink:0; }}
-    .season {{ color:#6b7c72; font-size:11px; font-weight:500; margin-left:2px; border-left:1px solid #2a3d30; padding-left:8px; }}
-    nav {{ display:flex; gap:2px; flex-wrap:nowrap; overflow-x:auto; justify-content:flex-end; scrollbar-width:none; }}
-    nav::-webkit-scrollbar {{ display:none; }}
-    nav a {{ color:#8fa89a; text-decoration:none; font-size:13px; font-weight:600; padding:8px 11px; border-radius:6px; white-space:nowrap; transition:background .15s,color .15s; }}
-    nav a:visited {{ color:#8fa89a; }}
-    nav a:hover {{ background:#162b20; color:white; }}
-    nav a.active {{ background:#162b20; color:white; }}
-    .page-header {{ padding:28px clamp(16px,4vw,42px) 18px; background:var(--bg); border-bottom:1px solid var(--line); }}
-    .page-header h1 {{ margin:0 0 6px; font-size:26px; font-weight:800; }}
-    .page-header p {{ margin:0; color:var(--muted); font-size:14px; }}
-    .back-link {{ display:inline-flex; align-items:center; gap:6px; color:var(--green); text-decoration:none; font-size:13px; font-weight:600; margin-bottom:10px; }}
-    .back-link::before {{ content:"←"; }}
-    main {{ max-width:1420px; margin:0 auto; padding:24px; }}
-    .metrics {{ display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-bottom:18px; }}
-    .metric, .team-card {{ background:white; border:1px solid var(--line); border-radius:8px; box-shadow:var(--shadow); }}
-    .metric {{ padding:15px; }}
-    .metric span {{ display:block; color:var(--muted); font-size:12px; }}
-    .metric strong {{ display:block; font-size:26px; margin-top:5px; }}
-    .cards {{ display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }}
-    .team-card {{ padding:18px; }}
-    .team-card h2 {{ margin:0 0 8px; font-size:19px; }}
-    .sub {{ color:var(--muted); font-size:13px; line-height:1.45; margin:0 0 12px; }}
-    .roles {{ display:grid; grid-template-columns:1fr; gap:10px; }}
-    .role {{ border:1px solid var(--line); border-radius:8px; padding:12px; background:#fbfcfe; }}
-    .role h3 {{ margin:0 0 6px; font-size:15px; }}
-    .role p {{ margin:0 0 8px; color:#424852; font-size:13px; line-height:1.45; }}
-    table {{ width:100%; border-collapse:collapse; font-size:12px; }}
-    th,td {{ padding:7px 5px; border-bottom:1px solid var(--line); text-align:left; vertical-align:top; }}
-    th {{ color:var(--muted); }}
-    .pill {{ display:inline-flex; min-height:22px; align-items:center; border-radius:999px; padding:0 8px; font-size:12px; background:#edf5ff; color:var(--blue); border:1px solid #bbd7f5; }}
-    @media (max-width:980px) {{ .cards {{ grid-template-columns:1fr; }} .metrics {{ grid-template-columns:1fr 1fr; }} }}
-    @media (max-width:680px) {{ .topbar {{ position:static; flex-direction:column; align-items:stretch; padding:11px 16px 0; gap:0; min-height:unset; }} .brand {{ padding-bottom:8px; }} .season {{ display:none; }} nav {{ justify-content:flex-start; border-top:1px solid #1e3228; padding:7px 0 9px; }} }}
-    @media (max-width:620px) {{ main {{ padding:14px; }} .metrics {{ grid-template-columns:1fr; }} .role {{ overflow-x:auto; }} table {{ min-width:560px; }} }}
-    .x-share {{ display:inline-flex; align-items:center; gap:8px; background:#000; color:#fff; text-decoration:none; font-size:14px; font-weight:700; padding:10px 18px; border-radius:8px; transition:background .15s; }}
-    .x-share:hover {{ background:#1a1a1a; }}
-    .share-bar {{ padding:16px 0 8px; border-top:1px solid var(--line); margin-top:24px; }}
+    :root{{--bg:#09111f;--panel:#0e1929;--panel2:#13223a;--ink:#e2e8f0;--muted:#64748b;--border:#1e3a5f;}}
+    *{{box-sizing:border-box;margin:0;padding:0}}
+    body{{font-family:Inter,"Segoe UI",Arial,sans-serif;background:var(--bg);color:var(--ink);min-height:100vh}}
+    .topbar{{min-height:54px;padding:0 clamp(12px,3vw,32px);display:flex;align-items:center;justify-content:space-between;gap:16px;background:#060e1d;border-bottom:2px solid #1a3023}}
+    .brand{{display:flex;align-items:center;gap:9px;color:white;text-decoration:none;font-size:17px;font-weight:800}}
+    .brand:visited,.brand:hover{{color:white}}
+    .brand b{{width:26px;height:26px;border-radius:5px;display:grid;place-items:center;background:#cde94e;color:#060e1d;font-size:13px;font-weight:900}}
+    nav{{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}}
+    nav::-webkit-scrollbar{{display:none}}
+    nav a{{white-space:nowrap;color:#64748b;padding:7px 10px;border-radius:6px;text-decoration:none;font-size:12px;font-weight:600;transition:.15s}}
+    nav a:visited{{color:#64748b}}
+    nav a:hover,nav a.active{{background:#0f2030;color:white}}
+    .hero{{background:linear-gradient(160deg,#0a1929,#060e1d);padding:24px clamp(12px,3vw,32px) 20px;border-bottom:1px solid var(--border)}}
+    .hero h1{{font-size:clamp(18px,3vw,24px);font-weight:800;margin-bottom:6px}}
+    .hero p{{font-size:13px;color:var(--muted)}}
+    .stat-bar{{display:flex;gap:10px;padding:14px clamp(12px,3vw,32px);flex-wrap:wrap;border-bottom:1px solid var(--border)}}
+    .stat-chip{{background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:9px 14px;text-align:center;min-width:90px}}
+    .stat-chip .v{{font-size:18px;font-weight:800}}
+    .stat-chip .l{{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-top:2px}}
+    main{{padding:16px clamp(12px,3vw,32px) 60px}}
+    .cards-grid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(420px,1fr));gap:14px}}
+    .team-card{{background:var(--panel);border:1px solid var(--border);border-radius:10px;overflow:hidden}}
+    .team-header{{padding:14px 16px;border-bottom:1px solid var(--border)}}
+    .team-header h2{{font-size:15px;font-weight:700;margin-bottom:4px}}
+    .team-meta{{font-size:12px;color:var(--muted)}}
+    .team-hint{{font-size:11px;color:#f59e0b;margin-top:3px}}
+    .roles{{display:flex;flex-direction:column;gap:0}}
+    .role{{border-top:1px solid rgba(30,58,95,.4);padding:12px 16px}}
+    .role h3{{font-size:13px;font-weight:700;margin-bottom:4px;color:#60a5fa}}
+    .role p{{font-size:12px;color:var(--muted);margin-bottom:8px;line-height:1.4}}
+    table{{width:100%;border-collapse:collapse;font-size:11px}}
+    th{{color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.4px;padding:5px 6px;border-bottom:1px solid var(--border)}}
+    td{{padding:6px 6px;border-bottom:1px solid rgba(30,58,95,.3);vertical-align:middle}}
+    .fit-badge{{font-size:10px;font-weight:700;color:#60a5fa}}
+    .mv-chip{{color:#f59e0b;font-weight:700}}
+    .contract-high{{color:#f87171}}
+    .contract-med{{color:#f59e0b}}
+    .empty-msg{{font-size:12px;color:var(--muted);padding:8px 0}}
+    @media(max-width:600px){{.cards-grid{{grid-template-columns:1fr}}}}
   </style>
 </head>
 <body>
-  {nav}
-  <div class="page-header">
-    <a class="back-link" href="/">Ana sayfaya dön</a>
-    <h1>Takım Scout Blueprint Raporu</h1>
-    <p>Lig istihbaratındaki takım zafiyetlerini scout rol ihtiyacına çevirir ve mevcut aday havuzundan takım dışı öneriler üretir.</p>
-  </div>
-  <main>
-    <div class="metrics">
-      {metric("Takım", payload["summary"]["teams"])}
-      {metric("Rol havuzu", payload["summary"]["role_candidate_buckets"])}
-      {metric("Aday bağlantısı", payload["summary"]["candidate_links"])}
-    </div>
-    <div class="cards">{cards}</div>
-    <div class="share-bar">
-      <a class="x-share" href="https://twitter.com/intent/tweet?text=S%C3%BCper%20Lig%27de%20kimin%20neye%20ihtiyac%C4%B1%20var%3F%20%E2%9A%BD%2018%20tak%C4%B1m%C4%B1n%20transfer%20%C3%B6ncelikleri%20ve%20aday%20analizi%20%E2%80%94%20veri%20odakl%C4%B1%20scout%20raporu%3A&url=https%3A%2F%2Fmetric11.com%2Fteam_scout_blueprints_2025_2026.html" target="_blank" rel="noopener">&#x1D54F; Paylaş</a>
-    </div>
-  </main>
-  <footer style="text-align:center;padding:40px 16px 28px;color:#8a9e92;font-size:12px;border-top:1px solid #e2e8e4;margin-top:48px;">
-    metric11 &middot; <a href="mailto:hello@metric11.com" style="color:#8a9e92;text-decoration:none;border-bottom:1px solid #c5d4ca;">hello@metric11.com</a>
-  </footer>
-  <script defer src="/_vercel/insights/script.js"></script>
+{_DARK_NAV}
+<div class="hero">
+  <h1>Takım Scout Blueprint Raporu <span style="color:#cde94e">2026-2027</span></h1>
+  <p>Lig verisi bazlı takım zafiyetleri → 2026-27 transfer penceresi için rol öncelikleri ve aday eşleşmesi</p>
+</div>
+<div class="stat-bar">
+  <div class="stat-chip"><div class="v">{summary["teams"]}</div><div class="l">Takım</div></div>
+  <div class="stat-chip"><div class="v">{summary["role_candidate_buckets"]}</div><div class="l">Rol Havuzu</div></div>
+  <div class="stat-chip"><div class="v">{summary["candidate_links"]}</div><div class="l">Aday Bağlantısı</div></div>
+</div>
+<main>
+  <div class="cards-grid">{cards}</div>
+</main>
+<footer style="text-align:center;padding:40px 16px 28px;color:var(--muted);font-size:12px;border-top:1px solid var(--border);margin-top:24px">
+  metric11 &middot; <a href="mailto:hello@metric11.com" style="color:var(--muted);text-decoration:none">hello@metric11.com</a>
+</footer>
+<script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
 """
 
 
-def metric(label: str, value) -> str:
-    return f'<div class="metric"><span>{escape(str(label))}</span><strong>{escape(str(value))}</strong></div>'
-
-
 def blueprint_card(item: dict) -> str:
     roles = "".join(role_block(plan) for plan in item["role_plans"])
+    pwr = item.get("overall_power_score")
+    gf = item.get("goals_for_per_match")
+    ga = item.get("goals_against_per_match")
+    meta_parts = []
+    if pwr is not None:
+        meta_parts.append(f"Güç {pwr}")
+    if gf is not None:
+        meta_parts.append(f"GF {gf}")
+    if ga is not None:
+        meta_parts.append(f"GA {ga}")
+    meta_parts.append(f"Zafiyet: {escape(', '.join(item['weaknesses']))}")
     return (
-        f'<article class="team-card"><h2>{escape(item["team"])}</h2>'
-        f'<p class="sub">Güç {escape(str(item.get("overall_power_score")))} | GF {escape(str(item.get("goals_for_per_match")))} | '
-        f'GA {escape(str(item.get("goals_against_per_match")))} | Zafiyet: {escape(", ".join(item["weaknesses"]))}</p>'
-        f'<p class="sub">Scout ipucu: {escape(item.get("scout_need_hint") or "")}</p>'
-        f'<div class="roles">{roles}</div></article>'
+        f'<div class="team-card">'
+        f'<div class="team-header">'
+        f'<h2>{escape(item["team"])}</h2>'
+        f'<div class="team-meta">{" | ".join(meta_parts)}</div>'
+        f'<div class="team-hint">{escape(item.get("scout_need_hint") or "")}</div>'
+        f'</div>'
+        f'<div class="roles">{roles}</div>'
+        f'</div>'
     )
 
 
 def role_block(plan: dict) -> str:
     rows = "".join(candidate_row(candidate) for candidate in plan["top_candidates"][:4])
     if not rows:
-        rows = '<tr><td colspan="5">Aday havuzu zayıf; pozisyon verisi artırılmalı.</td></tr>'
+        empty = '<div class="empty-msg">Aday verisi yetersiz — pozisyon havuzu genişledikçe dolacak.</div>'
+        return (
+            f'<div class="role"><h3>{escape(plan["role_label"])}</h3>'
+            f'<p>{escape(plan["reason"])}</p>{empty}</div>'
+        )
     return (
-        f'<section class="role"><h3>{escape(plan["role_label"])}</h3><p>{escape(plan["reason"])}</p>'
-        '<table><thead><tr><th>Oyuncu</th><th>Takım</th><th>Yaş</th><th>Söz.</th><th>Poz.</th><th>Fit</th><th>Yük</th></tr></thead>'
-        f'<tbody>{rows}</tbody></table></section>'
+        f'<div class="role"><h3>{escape(plan["role_label"])}</h3>'
+        f'<p>{escape(plan["reason"])}</p>'
+        f'<table><thead><tr><th>Oyuncu</th><th>Takım</th><th>Yaş</th><th>TM Değeri</th><th>Fit</th></tr></thead>'
+        f'<tbody>{rows}</tbody></table></div>'
     )
 
 
+def _mv_str(eur) -> str:
+    if not eur:
+        return "—"
+    if eur >= 1_000_000:
+        return f"€{eur/1_000_000:.1f}M"
+    if eur >= 1_000:
+        return f"€{eur//1000}K"
+    return f"€{eur}"
+
+
 def candidate_row(candidate: dict) -> str:
-    load_min = candidate.get("estimated_physical_load_km_min")
-    load_max = candidate.get("estimated_physical_load_km_max")
-    load = f"{load_min}-{load_max}" if load_min is not None and load_max is not None else "-"
-    contract = candidate.get("contract_months_left")
-    contract_text = f"{contract} ay" if contract is not None else "-"
-    position = candidate.get("verified_position") or "-"
+    mv = _mv_str(candidate.get("market_value_eur") or candidate.get("tm_market_value_eur"))
+    fit = candidate.get("fit_score") or 0
+    risk = candidate.get("contract_risk") or ""
+    risk_class = "contract-high" if risk in {"HIGH", "EXPIRING_SOON"} else ("contract-med" if risk in {"MEDIUM", "ONE_YEAR_WINDOW", "FINAL_YEAR"} else "")
+    tm_url = candidate.get("tm_profile_url") or ""
+    name = escape(candidate.get("name") or "")
+    name_html = (
+        f'<a href="{escape(tm_url)}" target="_blank" rel="noopener" '
+        f'style="color:var(--ink);text-decoration:none;border-bottom:1px dotted var(--border)">{name}</a>'
+        if tm_url else name
+    )
     return (
-        f'<tr><td>{escape(candidate.get("name") or "")}</td><td>{escape(candidate.get("team") or "")}</td>'
-        f'<td>{escape(str(candidate.get("age") or ""))}</td><td>{escape(contract_text)}</td>'
-        f'<td>{escape(position)}</td>'
-        f'<td><span class="pill">{escape(str(candidate.get("fit_score") or ""))}</span></td>'
-        f'<td>{escape(load)}</td></tr>'
+        f'<tr>'
+        f'<td style="font-weight:600">{name_html}</td>'
+        f'<td style="color:var(--muted);font-size:10px">{escape(candidate.get("team") or "")}</td>'
+        f'<td class="{risk_class}">{escape(str(candidate.get("age") or "—"))}</td>'
+        f'<td class="mv-chip">{mv}</td>'
+        f'<td><span class="fit-badge">{fit:.1f}</span></td>'
+        f'</tr>'
     )
 
 
