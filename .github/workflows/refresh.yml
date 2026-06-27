@@ -41,6 +41,9 @@ jobs:
           python -m src.collect_worldcup_fixtures || true
           python -m src.analyze_worldcup_predictions || true
           python -m src.build_worldcup_predictions || true
+          python -m src.collect_european_fixtures || true
+          python -m src.analyze_european_predictions || true
+          python -m src.build_european_predictions || true
           python -m src.collect_news_rss || true
           python -m src.collect_news_google || true
           python -m src.collect_official_club_news || true

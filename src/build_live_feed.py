@@ -378,6 +378,7 @@ def build_html() -> str:
     <a href="transfer_recommendation_report_{SEASON}.html">Scout</a>
     <a href="football_intelligence_home.html">Analiz</a>
     <a href="worldcup_2026_predictions.html">🌍 WC 2026</a>
+    <a href="european_predictions_2026_2027.html">⚽ Avrupa</a>
   </nav>
 </div>
 <div class="window-banner" style="{banner_css}">

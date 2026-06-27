@@ -11,6 +11,7 @@ BASE_URL = "https://metric11.com"
 _PUBLIC_PAGES = [
     ("gundem_2025_2026.html", 1.0, "daily"),
     ("worldcup_2026_predictions.html", 1.0, "daily"),
+    ("european_predictions_2026_2027.html", 1.0, "daily"),
     ("football_intelligence_home.html", 0.9, "weekly"),
     ("all_teams_preview_dashboard_2025_2026.html", 0.9, "weekly"),
     (f"transfer_tracker_{SEASON}.html", 0.9, "daily"),
