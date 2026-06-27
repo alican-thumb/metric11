@@ -1,16 +1,45 @@
 # Scout Kalite ve Doğrulama Raporu
 
-- Blueprint aday bağlantısı: 63
-- Düşük güvenli blueprint bağlantısı: 0
-- Tekil düşük güvenli oyuncu-rol: 0
+- Blueprint aday bağlantısı: 370
+- Düşük güvenli blueprint bağlantısı: 275
+- Tekil düşük güvenli oyuncu-rol: 29
 - Yaş/sözleşme eksiği olan bağlantı: 0
 - 3+ role yayılan oyuncu: 0
-- Pozisyon matrisi adayı: 7
-- Blueprint güven dağılımı: {'MEDIUM_EXTERNAL': 63}
-- Pozisyon matrisi güven dağılımı: {'MEDIUM_EXTERNAL': 7}
-- Sonraki öncelik: Düşük güvenli yayın adayı kalmadı; sıradaki doğrulama TFF/Transfermarkt eşleşmeyen yüksek kullanımlı oyuncu kuyruğudur.
+- Pozisyon matrisi adayı: 91
+- Blueprint güven dağılımı: {'LOW_POSITION_UNVERIFIED': 275, 'HIGH_EXTERNAL_PROFILE': 37, 'MEDIUM': 46, 'HIGH': 10, 'DERIVED': 2}
+- Pozisyon matrisi güven dağılımı: {'DERIVED': 63, 'MEDIUM': 24, 'HIGH': 4}
+- Sonraki öncelik: Kalan düşük güvenli adaylar için Transfermarkt/API/manuel pozisyon-biyometri eşleşmesi ve rol çakışması azaltma.
 
 ## Düşük Güven İnceleme Kuyruğu
 
+- HELITON JORGE  TITO DOS SANTOS (GÖZTEPE A.Ş.): takım=GÖZTEPE A.Ş., rol=Stoper / hava ve temas, fit=165.8, güven=LOW_POSITION_UNVERIFIED, etkilenen takım=11, ihtiyaç=pozisyon, boy, ayak. Oyuncu profili mevcut ancak role uygun pozisyon dış kaynakla eşleşmemiş; yayın önerisi olarak kullanılmaz.
+- JAYDEN QUINN OOSTERWOLDE (FENERBAHÇE A.Ş.): takım=FENERBAHÇE A.Ş., rol=Stoper / hava ve temas, fit=160.3, güven=LOW_POSITION_UNVERIFIED, etkilenen takım=11, ihtiyaç=pozisyon, boy, ayak. Oyuncu profili mevcut ancak role uygun pozisyon dış kaynakla eşleşmemiş; yayın önerisi olarak kullanılmaz.
+- JEROME OPOKU (RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ): takım=RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ, rol=Stoper / hava ve temas, fit=157.7, güven=LOW_POSITION_UNVERIFIED, etkilenen takım=11, ihtiyaç=pozisyon, boy, ayak. Oyuncu profili mevcut ancak role uygun pozisyon dış kaynakla eşleşmemiş; yayın önerisi olarak kullanılmaz.
+- PEDRO MIGUEL DE ALMEIDA LOPES PEREIRA (NATURA DÜNYASI GENÇLERBİRLİĞİ): takım=NATURA DÜNYASI GENÇLERBİRLİĞİ, rol=Stoper / hava ve temas, fit=155.7, güven=LOW_POSITION_UNVERIFIED, etkilenen takım=11, ihtiyaç=pozisyon, boy, ayak. Oyuncu profili mevcut ancak role uygun pozisyon dış kaynakla eşleşmemiş; yayın önerisi olarak kullanılmaz.
+- HELITON JORGE  TITO DOS SANTOS (GÖZTEPE A.Ş.): takım=GÖZTEPE A.Ş., rol=6 numara / savunma emniyeti, fit=154.9, güven=LOW_POSITION_UNVERIFIED, etkilenen takım=12, ihtiyaç=pozisyon, boy, ayak. Oyuncu profili mevcut ancak role uygun pozisyon dış kaynakla eşleşmemiş; yayın önerisi olarak kullanılmaz.
+- FIDAN ALITI (CORENDON ALANYASPOR): takım=CORENDON ALANYASPOR, rol=Stoper / hava ve temas, fit=154.0, güven=LOW_POSITION_UNVERIFIED, etkilenen takım=11, ihtiyaç=pozisyon, boy, ayak. Oyuncu profili mevcut ancak role uygun pozisyon dış kaynakla eşleşmemiş; yayın önerisi olarak kullanılmaz.
+- JAYDEN QUINN OOSTERWOLDE (FENERBAHÇE A.Ş.): takım=FENERBAHÇE A.Ş., rol=6 numara / savunma emniyeti, fit=149.0, güven=LOW_POSITION_UNVERIFIED, etkilenen takım=13, ihtiyaç=pozisyon, boy, ayak. Oyuncu profili mevcut ancak role uygun pozisyon dış kaynakla eşleşmemiş; yayın önerisi olarak kullanılmaz.
+- JEROME OPOKU (RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ): takım=RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ, rol=6 numara / savunma emniyeti, fit=148.0, güven=LOW_POSITION_UNVERIFIED, etkilenen takım=13, ihtiyaç=pozisyon, boy, ayak. Oyuncu profili mevcut ancak role uygun pozisyon dış kaynakla eşleşmemiş; yayın önerisi olarak kullanılmaz.
+- PEDRO MIGUEL DE ALMEIDA LOPES PEREIRA (NATURA DÜNYASI GENÇLERBİRLİĞİ): takım=NATURA DÜNYASI GENÇLERBİRLİĞİ, rol=6 numara / savunma emniyeti, fit=145.1, güven=LOW_POSITION_UNVERIFIED, etkilenen takım=13, ihtiyaç=pozisyon, boy, ayak. Oyuncu profili mevcut ancak role uygun pozisyon dış kaynakla eşleşmemiş; yayın önerisi olarak kullanılmaz.
+- MOHAMMED AMIN CHERNI (GÖZTEPE A.Ş.): takım=GÖZTEPE A.Ş., rol=Kaleci / istikrar, fit=144.2, güven=LOW_POSITION_UNVERIFIED, etkilenen takım=11, ihtiyaç=pozisyon, boy, ayak. Oyuncu profili mevcut ancak role uygun pozisyon dış kaynakla eşleşmemiş; yayın önerisi olarak kullanılmaz.
+- FIDAN ALITI (CORENDON ALANYASPOR): takım=CORENDON ALANYASPOR, rol=6 numara / savunma emniyeti, fit=144.0, güven=LOW_POSITION_UNVERIFIED, etkilenen takım=13, ihtiyaç=pozisyon, boy, ayak. Oyuncu profili mevcut ancak role uygun pozisyon dış kaynakla eşleşmemiş; yayın önerisi olarak kullanılmaz.
+- NUNO MIGUEL REIS LIMA (CORENDON ALANYASPOR): takım=CORENDON ALANYASPOR, rol=6 numara / savunma emniyeti, fit=143.4, güven=LOW_POSITION_UNVERIFIED, etkilenen takım=1, ihtiyaç=pozisyon, boy, ayak. Oyuncu profili mevcut ancak role uygun pozisyon dış kaynakla eşleşmemiş; yayın önerisi olarak kullanılmaz.
+- MUHAMMED ŞENGEZER (RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ): takım=RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ, rol=Kaleci / istikrar, fit=140.0, güven=LOW_POSITION_UNVERIFIED, etkilenen takım=11, ihtiyaç=pozisyon, boy, ayak. Oyuncu profili mevcut ancak role uygun pozisyon dış kaynakla eşleşmemiş; yayın önerisi olarak kullanılmaz.
+- ALEXANDRU IULIAN MAXIM (GAZİANTEP FUTBOL KULÜBÜ A.Ş.): takım=GAZİANTEP FUTBOL KULÜBÜ A.Ş., rol=8 numara / fizik motoru, fit=138.4, güven=LOW_POSITION_UNVERIFIED, etkilenen takım=11, ihtiyaç=pozisyon, boy, ayak. Oyuncu profili mevcut ancak role uygun pozisyon dış kaynakla eşleşmemiş; yayın önerisi olarak kullanılmaz.
+- JANDERSON  DE CARVALHO COSTA (GÖZTEPE A.Ş.): takım=GÖZTEPE A.Ş., rol=8 numara / fizik motoru, fit=136.7, güven=LOW_POSITION_UNVERIFIED, etkilenen takım=11, ihtiyaç=pozisyon, boy, ayak. Oyuncu profili mevcut ancak role uygun pozisyon dış kaynakla eşleşmemiş; yayın önerisi olarak kullanılmaz.
+- QAZIM LACI (ÇAYKUR RİZESPOR A.Ş.): takım=ÇAYKUR RİZESPOR A.Ş., rol=8 numara / fizik motoru, fit=135.9, güven=LOW_POSITION_UNVERIFIED, etkilenen takım=11, ihtiyaç=pozisyon, boy, ayak. Oyuncu profili mevcut ancak role uygun pozisyon dış kaynakla eşleşmemiş; yayın önerisi olarak kullanılmaz.
+- ORKUN KÖKÇÜ (BEŞİKTAŞ A.Ş.): takım=BEŞİKTAŞ A.Ş., rol=8 numara / fizik motoru, fit=133.7, güven=LOW_POSITION_UNVERIFIED, etkilenen takım=12, ihtiyaç=pozisyon, boy, ayak. Oyuncu profili mevcut ancak role uygun pozisyon dış kaynakla eşleşmemiş; yayın önerisi olarak kullanılmaz.
+- KACPER SZYMON KOZLOWSKI (GAZİANTEP FUTBOL KULÜBÜ A.Ş.): takım=GAZİANTEP FUTBOL KULÜBÜ A.Ş., rol=8 numara / fizik motoru, fit=130.5, güven=LOW_POSITION_UNVERIFIED, etkilenen takım=11, ihtiyaç=pozisyon, boy, ayak. Oyuncu profili mevcut ancak role uygun pozisyon dış kaynakla eşleşmemiş; yayın önerisi olarak kullanılmaz.
+- ALEXANDRU IULIAN MAXIM (GAZİANTEP FUTBOL KULÜBÜ A.Ş.): takım=GAZİANTEP FUTBOL KULÜBÜ A.Ş., rol=Bek / çift yönlü koridor, fit=127.7, güven=LOW_POSITION_UNVERIFIED, etkilenen takım=8, ihtiyaç=pozisyon, boy, ayak. Oyuncu profili mevcut ancak role uygun pozisyon dış kaynakla eşleşmemiş; yayın önerisi olarak kullanılmaz.
+- BARIŞ ALPER YILMAZ (GALATASARAY A.Ş.): takım=GALATASARAY A.Ş., rol=8 numara / fizik motoru, fit=127.6, güven=LOW_POSITION_UNVERIFIED, etkilenen takım=3, ihtiyaç=pozisyon, boy, ayak. Oyuncu profili mevcut ancak role uygun pozisyon dış kaynakla eşleşmemiş; yayın önerisi olarak kullanılmaz.
+- MATEUSZ LIS (GÖZTEPE A.Ş.): takım=GÖZTEPE A.Ş., rol=Bek / çift yönlü koridor, fit=124.4, güven=LOW_POSITION_UNVERIFIED, etkilenen takım=8, ihtiyaç=pozisyon, boy, ayak. Oyuncu profili mevcut ancak role uygun pozisyon dış kaynakla eşleşmemiş; yayın önerisi olarak kullanılmaz.
+- LASZLO BENES (ZECORNER KAYSERİSPOR): takım=ZECORNER KAYSERİSPOR, rol=8 numara / fizik motoru, fit=123.8, güven=LOW_POSITION_UNVERIFIED, etkilenen takım=1, ihtiyaç=pozisyon, boy, ayak. Oyuncu profili mevcut ancak role uygun pozisyon dış kaynakla eşleşmemiş; yayın önerisi olarak kullanılmaz.
+- ANDREAS GIANNIOTIS (KASIMPAŞA A.Ş.): takım=KASIMPAŞA A.Ş., rol=Bek / çift yönlü koridor, fit=123.3, güven=LOW_POSITION_UNVERIFIED, etkilenen takım=8, ihtiyaç=pozisyon, boy, ayak. Oyuncu profili mevcut ancak role uygun pozisyon dış kaynakla eşleşmemiş; yayın önerisi olarak kullanılmaz.
+- ANFERNEE JAMAL DIJKSTEEL (KOCAELİSPOR): takım=KOCAELİSPOR, rol=Kaleci / istikrar, fit=122.5, güven=LOW_POSITION_UNVERIFIED, etkilenen takım=11, ihtiyaç=pozisyon, boy, ayak. Oyuncu profili mevcut ancak role uygun pozisyon dış kaynakla eşleşmemiş; yayın önerisi olarak kullanılmaz.
+- KENNETH IMMANUEL PAAL (HESAP.COM ANTALYASPOR): takım=HESAP.COM ANTALYASPOR, rol=Bek / çift yönlü koridor, fit=119.9, güven=LOW_POSITION_UNVERIFIED, etkilenen takım=8, ihtiyaç=pozisyon, boy, ayak. Oyuncu profili mevcut ancak role uygun pozisyon dış kaynakla eşleşmemiş; yayın önerisi olarak kullanılmaz.
+- IVO  GRBIC (MISIRLI.COM.TR FATİH KARAGÜMRÜK): takım=MISIRLI.COM.TR FATİH KARAGÜMRÜK, rol=Bek / çift yönlü koridor, fit=117.8, güven=LOW_POSITION_UNVERIFIED, etkilenen takım=8, ihtiyaç=pozisyon, boy, ayak. Oyuncu profili mevcut ancak role uygun pozisyon dış kaynakla eşleşmemiş; yayın önerisi olarak kullanılmaz.
+- YAHIA FOFANA (ÇAYKUR RİZESPOR A.Ş.): takım=ÇAYKUR RİZESPOR A.Ş., rol=Kaleci / istikrar, fit=116.6, güven=LOW_POSITION_UNVERIFIED, etkilenen takım=10, ihtiyaç=pozisyon, boy, ayak. Oyuncu profili mevcut ancak role uygun pozisyon dış kaynakla eşleşmemiş; yayın önerisi olarak kullanılmaz.
+- BERKAY ÖZCAN (MISIRLI.COM.TR FATİH KARAGÜMRÜK): takım=MISIRLI.COM.TR FATİH KARAGÜMRÜK, rol=Kaleci / istikrar, fit=113.1, güven=LOW_POSITION_UNVERIFIED, etkilenen takım=10, ihtiyaç=pozisyon, boy, ayak. Oyuncu profili mevcut ancak role uygun pozisyon dış kaynakla eşleşmemiş; yayın önerisi olarak kullanılmaz.
+- KAZEEM ADEREMI J. OLAIGBE (TÜMOSAN KONYASPOR): takım=TÜMOSAN KONYASPOR, rol=Kaleci / istikrar, fit=112.7, güven=LOW_POSITION_UNVERIFIED, etkilenen takım=2, ihtiyaç=pozisyon, boy, ayak. Oyuncu profili mevcut ancak role uygun pozisyon dış kaynakla eşleşmemiş; yayın önerisi olarak kullanılmaz.
 
 ## Fazla Role Yayılan Oyuncular
