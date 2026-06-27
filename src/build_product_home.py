@@ -52,7 +52,18 @@ def build_html() -> str:
     transfer_tracker = load_json(PROCESSED_DIR / f"transfer_tracker_{SEASON}.json") or {}
     all_teams_total = _count_all_teams_reports()
 
+    european_pred = load_json(PROCESSED_DIR / "european_predictions_2026_2027.json")
+    eu_comps = european_pred.get("competitions", {})
+    eu_total_matches = sum(len(c.get("predictions", [])) for c in eu_comps.values())
+    eu_finished = sum(c.get("accuracy", {}).get("finished", 0) for c in eu_comps.values())
+
     cards = [
+        panel_card(
+            "⚽ Avrupa Kupası Tahminleri 2026-27",
+            "UEFA Şampiyonlar Ligi, Avrupa Ligi ve Konferans Ligi maç tahminleri. Fenerbahçe, Galatasaray, Beşiktaş takibi.",
+            "european_predictions_2026_2027.html",
+            f"{eu_total_matches} maç · {eu_finished} oynandı" if eu_total_matches else "Sezon Temmuz'da başlıyor",
+        ),
         panel_card(
             "FIFA Dünya Kupası 2026 Tahminleri",
             "48 takım, 104 maç. Skor tahmini, sonuç olasılıkları, gol ve kart beklentisi — veri odaklı analizle.",

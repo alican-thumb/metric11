@@ -408,6 +408,26 @@ def build_html() -> str:
   </div>
   <div style="display:flex;flex-direction:column;gap:16px">
     {transfer_sidebar_html}
+    <div class="panel" style="font-size:13px;background:#09111f;border-color:#1e3a5f">
+      <div style="font-size:10px;font-weight:700;color:#f59e0b;letter-spacing:.06em;margin-bottom:10px;text-transform:uppercase">⚽ Avrupa Kupası 2026-27</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-bottom:12px">
+        <a href="european_predictions_2026_2027.html" style="display:flex;flex-direction:column;align-items:center;justify-content:center;background:#0e1929;border:1px solid rgba(245,158,11,.3);border-radius:7px;padding:10px 6px;text-decoration:none;gap:3px">
+          <span style="font-size:16px">🏆</span>
+          <span style="font-size:11px;font-weight:700;color:#f59e0b">UCL</span>
+        </a>
+        <a href="european_predictions_2026_2027.html" style="display:flex;flex-direction:column;align-items:center;justify-content:center;background:#0e1929;border:1px solid rgba(249,115,22,.3);border-radius:7px;padding:10px 6px;text-decoration:none;gap:3px">
+          <span style="font-size:16px">🟠</span>
+          <span style="font-size:11px;font-weight:700;color:#f97316">UEL / UECL</span>
+        </a>
+      </div>
+      <a href="european_predictions_2026_2027.html" style="display:block;text-align:center;padding:8px;background:rgba(245,158,11,.08);border:1px solid rgba(245,158,11,.2);border-radius:7px;color:#f59e0b;font-size:12px;font-weight:700;text-decoration:none">Avrupa Tahminlerine Git →</a>
+      <div style="margin-top:10px;padding-top:10px;border-top:1px solid #1e3a5f">
+        <a href="worldcup_2026_predictions.html" style="display:flex;align-items:center;justify-content:space-between;text-decoration:none;color:#64748b;font-size:12px">
+          <span>🌍 WC 2026 Tahminleri</span>
+          <span style="color:#4ade80;font-weight:700">→</span>
+        </a>
+      </div>
+    </div>
     <div class="panel" style="font-size:13px">
       <h2 style="margin-bottom:14px">Analiz Platformu</h2>
       {analysis_transfer_links_html}
