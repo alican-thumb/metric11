@@ -543,6 +543,18 @@
         "recent_cards": 0
       },
       {
+        "player_id": "2820847",
+        "name": "ISHOLA JUNIOR  OLAITAN",
+        "goal_threat_score": 12.12,
+        "candidate_type": "primary",
+        "recent_starts": 6,
+        "season_goals_before_match": 2,
+        "recent_goals": 2,
+        "big_match_goals_before_match": 0,
+        "opponent_defense_multiplier": 1.08,
+        "actual_scorer": false
+      },
+      {
         "player_id": "2824343",
         "name": "VACLAV CERNY",
         "goal_threat_score": 11.51,
@@ -587,23 +599,6 @@
         "recent_bench": 7,
         "cards_before_match": 1,
         "recent_cards": 0
-      },
-      {
-        "player_id": "2820847",
-        "name": "ISHOLA JUNIOR  OLAITAN",
-        "goal_threat_score": 8.24,
-        "candidate_type": "primary",
-        "recent_starts": 6,
-        "season_goals_before_match": 2,
-        "recent_goals": 2,
-        "big_match_goals_before_match": 0,
-        "opponent_defense_multiplier": 1.08,
-        "actual_scorer": false,
-        "quality_adjustment": {
-          "multiplier": 0.68,
-          "reason": "Top 5 sıralama etkisini düşür veya aday tipini yeniden kontrol et.",
-          "source": "goal_candidate_segment_backtest"
-        }
       },
       {
         "player_id": "2822113",
@@ -790,11 +785,11 @@
       "ORKUN KÖKÇÜ",
       "HYEONGYU OH",
       "CENGİZ ÜNDER",
+      "ISHOLA JUNIOR  OLAITAN",
       "VACLAV CERNY",
       "ERSİN DESTANOĞLU",
       "RIDVAN YILMAZ",
-      "BADOBRE EMMANUEL ELYSEE DJEDJE AGBADOU",
-      "ISHOLA JUNIOR  OLAITAN"
+      "BADOBRE EMMANUEL ELYSEE DJEDJE AGBADOU"
     ],
     "attacking_priority": [
       "ORKUN KÖKÇÜ",
@@ -822,9 +817,9 @@
   },
   "coach_lineup_audit": {
     "verdict": "KISMEN_TARTIŞMALI",
-    "actual_lineup_score": 99.55,
-    "recommended_lineup_score": 118.35,
-    "alignment_rate": 0.841,
+    "actual_lineup_score": 101.3,
+    "recommended_lineup_score": 120.09,
+    "alignment_rate": 0.843,
     "actual_starters": [
       "ERSİN DESTANOĞLU",
       "ONYINYE WILFRED NDIDI",
@@ -842,11 +837,11 @@
       "ORKUN KÖKÇÜ",
       "HYEONGYU OH",
       "CENGİZ ÜNDER",
+      "ISHOLA JUNIOR  OLAITAN",
       "VACLAV CERNY",
       "ERSİN DESTANOĞLU",
       "RIDVAN YILMAZ",
-      "BADOBRE EMMANUEL ELYSEE DJEDJE AGBADOU",
-      "ISHOLA JUNIOR  OLAITAN"
+      "BADOBRE EMMANUEL ELYSEE DJEDJE AGBADOU"
     ],
     "omitted_core_players": [
       "CENGİZ ÜNDER"
@@ -1061,7 +1056,7 @@
     "Rakibin son 8 maçlık savunma formu gol adayı modeline eklendi: maç başı 1.5 gol yiyor, %12 clean sheet oranı var. Gol adayı skor çarpanı 1.08.",
     "Hakem profili kart tarafında anlamlı bir sinyal veriyor: BATUHAN KOLAK bu sezon önceki 10 Beşiktaş maçında toplam maç başı 4.6 kart, Beşiktaş'a maç başı 1.8 kart ortalamasıyla öne çıkıyor.",
     "Olası 11 sinyalinde son dönemde öne çıkan isimler: ERSİN DESTANOĞLU, VACLAV CERNY, RIDVAN YILMAZ, ORKUN KÖKÇÜ, HYEONGYU OH, BADOBRE EMMANUEL ELYSEE DJEDJE AGBADOU. Kart riski tarafında ise son 8 maç penceresinde SALİH UÇAN, MUSTAFA ERHAN HEKİMOĞLU, EL BILAL TOURE, MICHAEL AMIR  MURILLO BERMUDEZ dikkat çekiyor.",
-    "Gol adayı sinyalinde öne çıkan isimler: ORKUN KÖKÇÜ, HYEONGYU OH, CENGİZ ÜNDER, VACLAV CERNY. Bu skor son gol formu, sezon içi gol sayısı ve son dönemde ilk 11 başlama sıklığından türetildi. Test sonucunda gerçek Beşiktaş golcüleri: HYEONGYU OH, ORKUN KÖKÇÜ.",
+    "Gol adayı sinyalinde öne çıkan isimler: ORKUN KÖKÇÜ, HYEONGYU OH, CENGİZ ÜNDER, ISHOLA JUNIOR  OLAITAN. Bu skor son gol formu, sezon içi gol sayısı ve son dönemde ilk 11 başlama sıklığından türetildi. Test sonucunda gerçek Beşiktaş golcüleri: HYEONGYU OH, ORKUN KÖKÇÜ.",
     "Skor dağılımında en olası senaryolar: 1-0 (%12), 2-0 (%11), 1-1 (%11). Model aksiyonu: Taraf eğilimi; önerilen ana skor 1-0.",
     "Kadro tercih önerisi: Önde baskı ve skor arama. Hücum önceliği ORKUN KÖKÇÜ, HYEONGYU OH, CENGİZ ÜNDER. Disiplin yönetimi gereken oyuncular: SALİH UÇAN, MUSTAFA ERHAN HEKİMOĞLU, EL BILAL TOURE.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %84 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.84-0.89 yerine 2.03-0.89 bandına gelebilirdi.",
