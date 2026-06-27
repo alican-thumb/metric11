@@ -9,7 +9,7 @@ import argparse
 import json
 from pathlib import Path
 
-from src.config import PROCESSED_DIR, SEASON, SEASON_LABEL
+from src.config import PROCESSED_DIR, SEASON, SEASON_LABEL, TRANSFER_WATCH_SEASON_LABEL
 from src.build_team_scout_blueprints import candidate_matches_role
 from src.html_utils import preview_nav_label
 
@@ -75,7 +75,8 @@ def build_report(blueprints_data: dict, top_roles: int, top_candidates: int) -> 
         len(r["candidates"]) for t in team_reports for r in t["recommendations"]
     )
     return {
-        "season": "2025/26",
+        "season": TRANSFER_WATCH_SEASON_LABEL,
+        "data_season": SEASON_LABEL,
         "generated_for": "transfer_window",
         "summary": {
             "teams_analyzed": len(team_reports),
@@ -635,9 +636,9 @@ def build_html(report: dict) -> str:
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Scout Raporu — Süper Lig {SEASON_LABEL} | metric11</title>
-<meta name="description" content="Süper Lig takımlarına pozisyon bazlı transfer önerileri: piyasa değeri, sözleşme durumu ve performans analizi — metric11.">
-<meta property="og:title" content="Scout Raporu — Süper Lig {SEASON_LABEL} | metric11">
+<title>Transfer Scout Raporu {TRANSFER_WATCH_SEASON_LABEL} — Süper Lig | metric11</title>
+<meta name="description" content="Süper Lig 2026-27 sezonu için pozisyon bazlı transfer önerileri: piyasa değeri, sözleşme durumu ve performans analizi — metric11.">
+<meta property="og:title" content="Transfer Scout Raporu {TRANSFER_WATCH_SEASON_LABEL} — Süper Lig | metric11">
 <meta property="og:description" content="Süper Lig takımlarına pozisyon bazlı transfer önerileri: piyasa değeri, sözleşme durumu ve performans analizi.">
 <meta property="og:image" content="https://metric11.com/og_transfer_recommendation.png">
 <meta property="og:type" content="website">
@@ -722,8 +723,8 @@ def build_html(report: dict) -> str:
     <a href="european_predictions_2026_2027.html">⚽ Avrupa</a></nav>
 </div>
 <div class="header">
-  <h1>Scout ve transfer merkezi</h1>
-  <div class="subtitle">Süper Lig 2025/26 · takım ihtiyaçları · sözleşme pencereleri · pozisyonu doğrulanmış aday önerileri</div>
+  <h1>Scout &amp; Transfer Merkezi <span style="color:#cde94e;font-size:0.9em">{TRANSFER_WATCH_SEASON_LABEL}</span></h1>
+  <div class="subtitle">{SEASON_LABEL} sezon verisi bazlı · 2026-27 transfer penceresi planlaması · pozisyonu doğrulanmış aday önerileri · günlük güncellenir</div>
 </div>
 <div class="summary-bar">
   <div class="stat-pill"><div class="val">{s['teams_analyzed']}</div><div class="lbl">Takım</div></div>

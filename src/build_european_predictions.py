@@ -269,6 +269,69 @@ def _match_card(m: dict, comp_color: str) -> str:
     )
 
 
+def _build_preseason_content() -> str:
+    """Fixture verisi gelmeden önce gösterilecek bilgilendirici ön-sezon içeriği."""
+    timeline = [
+        ("Haz 24 – Tem 1", "UCL 1. Nitelendirme Turu", "#f59e0b", "🏆"),
+        ("Tem 8 – Tem 15", "UCL 2. Nitelendirme Turu", "#f59e0b", "🏆"),
+        ("Tem 22 – Tem 29", "UCL 3. Nitelendirme Turu · UEL 2. Tur başlangıcı", "#f59e0b", "🏆🟠"),
+        ("Ağu 5 – Ağu 12", "UCL Play-off · UEL Play-off · UECL Play-off", "#e0a020", "⚔️"),
+        ("Eyl 17, 2026", "UCL / UEL / UECL Lig Fazı Başlangıcı", "#4ade80", "🚀"),
+        ("Oca 2027", "Lig Fazı Son Haftaları", "#60a5fa", "📊"),
+        ("Şub – Mar 2027", "Eleme (Play-off + Son 16)", "#a78bfa", "🏅"),
+        ("May 31, 2027", "UCL Finali — Münih", "#f59e0b", "🏆"),
+    ]
+    rows = "".join(
+        f"""<div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid #1e3a5f">
+          <div style="min-width:120px;font-size:11px;color:var(--muted);padding-top:2px">{date}</div>
+          <div style="font-size:12px;font-weight:600;color:var(--ink)">{emoji} {label}</div>
+        </div>"""
+        for date, label, color, emoji in timeline
+    )
+
+    turkish_clubs = [
+        ("Galatasaray",  "UCL Lig Fazı",       "#f59e0b", "Şampiyonlar Ligi doğrudan katılım"),
+        ("Fenerbahçe",   "UCL Play-off",        "#f59e0b", "Şampiyonlar Ligi play-off turu"),
+        ("Beşiktaş",     "UEL Lig Fazı",        "#f97316", "Avrupa Ligi lig fazı"),
+        ("Trabzonspor",  "UECL Nitelendirme",   "#22c55e", "Konferans Ligi nitelendirme"),
+        ("Başakşehir",   "Belirsiz",            "#64748b", "Lig sıralamasına göre değişebilir"),
+    ]
+    club_cards = "".join(
+        f"""<div style="background:var(--panel2);border:1px solid var(--border);border-radius:8px;padding:12px 14px">
+          <div style="font-size:13px;font-weight:700;color:white;margin-bottom:4px">{name}</div>
+          <div style="font-size:11px;font-weight:700;color:{color};margin-bottom:3px">{comp}</div>
+          <div style="font-size:11px;color:var(--muted)">{note}</div>
+        </div>"""
+        for name, comp, color, note in turkish_clubs
+    )
+
+    return f"""
+<div style="max-width:800px;margin:0 auto;padding:20px 0">
+  <div style="background:rgba(245,158,11,.06);border:1px solid rgba(245,158,11,.2);border-radius:12px;padding:20px 24px;margin-bottom:24px">
+    <div style="font-size:11px;font-weight:700;color:#f59e0b;letter-spacing:1.2px;text-transform:uppercase;margin-bottom:4px">⏳ Fixture verisi bekleniyor</div>
+    <div style="font-size:14px;color:var(--ink);line-height:1.6">
+      UCL 1. Nitelendirme Turu maçları başladı. Tahminler <strong>günlük 4 kez</strong> güncellenir —
+      fixture verisi API'den geldiğinde bu sayfa otomatik dolacak.
+    </div>
+  </div>
+
+  <div style="margin-bottom:28px">
+    <div style="font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:14px">📅 2026-27 UEFA Takvimi</div>
+    {rows}
+  </div>
+
+  <div>
+    <div style="font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:14px">🇹🇷 Türk Kulüpler (Tahmini)</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px">
+      {club_cards}
+    </div>
+    <div style="font-size:11px;color:var(--muted);margin-top:10px">
+      * Katılım bilgileri tahminidir, UEFA kura çekimi ve play-off sonuçlarına göre kesinleşir.
+    </div>
+  </div>
+</div>"""
+
+
 def _build_today_section(all_comps: dict) -> str:
     today_utc = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     today_matches = []
@@ -396,20 +459,7 @@ def build_page(data: dict) -> str:
     if comps:
         sections_html = "\n".join(_build_comp_section(code, comp) for code, comp in comps.items())
     else:
-        sections_html = """
-<div style="text-align:center;padding:60px 20px;color:var(--muted);">
-  <div style="font-size:48px;margin-bottom:16px">⚽</div>
-  <div style="font-size:18px;font-weight:700;color:var(--ink);margin-bottom:10px">2026-27 Sezonu Hazırlanıyor</div>
-  <div style="font-size:13px;max-width:440px;margin:0 auto;line-height:1.7">
-    UEFA Şampiyonlar Ligi, Avrupa Ligi ve Konferans Ligi 2026-27 fikstürü henüz açıklanmadı.
-    Nitelendirme turları Temmuz başında başlayacak. Maçlar belli oldukça tahminler günlük güncellenir.
-  </div>
-  <div style="margin-top:24px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
-    <div style="background:var(--panel);border:1px solid rgba(245,158,11,.3);border-radius:8px;padding:12px 20px;font-size:12px;font-weight:700;color:#f59e0b">🏆 Şampiyonlar Ligi</div>
-    <div style="background:var(--panel);border:1px solid rgba(249,115,22,.3);border-radius:8px;padding:12px 20px;font-size:12px;font-weight:700;color:#f97316">🟠 Avrupa Ligi</div>
-    <div style="background:var(--panel);border:1px solid rgba(34,197,94,.3);border-radius:8px;padding:12px 20px;font-size:12px;font-weight:700;color:#22c55e">🟢 Konferans Ligi</div>
-  </div>
-</div>"""
+        sections_html = _build_preseason_content()
 
     return f"""<!doctype html>
 <html lang="tr">

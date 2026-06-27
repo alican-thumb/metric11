@@ -141,17 +141,72 @@ footer a { color:#1e3a5f; }
   <div class="main">
     
     
-<div style="text-align:center;padding:60px 20px;color:var(--muted);">
-  <div style="font-size:48px;margin-bottom:16px">⚽</div>
-  <div style="font-size:18px;font-weight:700;color:var(--ink);margin-bottom:10px">2026-27 Sezonu Hazırlanıyor</div>
-  <div style="font-size:13px;max-width:440px;margin:0 auto;line-height:1.7">
-    UEFA Şampiyonlar Ligi, Avrupa Ligi ve Konferans Ligi 2026-27 fikstürü henüz açıklanmadı.
-    Nitelendirme turları Temmuz başında başlayacak. Maçlar belli oldukça tahminler günlük güncellenir.
+<div style="max-width:800px;margin:0 auto;padding:20px 0">
+  <div style="background:rgba(245,158,11,.06);border:1px solid rgba(245,158,11,.2);border-radius:12px;padding:20px 24px;margin-bottom:24px">
+    <div style="font-size:11px;font-weight:700;color:#f59e0b;letter-spacing:1.2px;text-transform:uppercase;margin-bottom:4px">⏳ Fixture verisi bekleniyor</div>
+    <div style="font-size:14px;color:var(--ink);line-height:1.6">
+      UCL 1. Nitelendirme Turu maçları başladı. Tahminler <strong>günlük 4 kez</strong> güncellenir —
+      fixture verisi API'den geldiğinde bu sayfa otomatik dolacak.
+    </div>
   </div>
-  <div style="margin-top:24px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
-    <div style="background:var(--panel);border:1px solid rgba(245,158,11,.3);border-radius:8px;padding:12px 20px;font-size:12px;font-weight:700;color:#f59e0b">🏆 Şampiyonlar Ligi</div>
-    <div style="background:var(--panel);border:1px solid rgba(249,115,22,.3);border-radius:8px;padding:12px 20px;font-size:12px;font-weight:700;color:#f97316">🟠 Avrupa Ligi</div>
-    <div style="background:var(--panel);border:1px solid rgba(34,197,94,.3);border-radius:8px;padding:12px 20px;font-size:12px;font-weight:700;color:#22c55e">🟢 Konferans Ligi</div>
+
+  <div style="margin-bottom:28px">
+    <div style="font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:14px">📅 2026-27 UEFA Takvimi</div>
+    <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid #1e3a5f">
+          <div style="min-width:120px;font-size:11px;color:var(--muted);padding-top:2px">Haz 24 – Tem 1</div>
+          <div style="font-size:12px;font-weight:600;color:var(--ink)">🏆 UCL 1. Nitelendirme Turu</div>
+        </div><div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid #1e3a5f">
+          <div style="min-width:120px;font-size:11px;color:var(--muted);padding-top:2px">Tem 8 – Tem 15</div>
+          <div style="font-size:12px;font-weight:600;color:var(--ink)">🏆 UCL 2. Nitelendirme Turu</div>
+        </div><div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid #1e3a5f">
+          <div style="min-width:120px;font-size:11px;color:var(--muted);padding-top:2px">Tem 22 – Tem 29</div>
+          <div style="font-size:12px;font-weight:600;color:var(--ink)">🏆🟠 UCL 3. Nitelendirme Turu · UEL 2. Tur başlangıcı</div>
+        </div><div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid #1e3a5f">
+          <div style="min-width:120px;font-size:11px;color:var(--muted);padding-top:2px">Ağu 5 – Ağu 12</div>
+          <div style="font-size:12px;font-weight:600;color:var(--ink)">⚔️ UCL Play-off · UEL Play-off · UECL Play-off</div>
+        </div><div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid #1e3a5f">
+          <div style="min-width:120px;font-size:11px;color:var(--muted);padding-top:2px">Eyl 17, 2026</div>
+          <div style="font-size:12px;font-weight:600;color:var(--ink)">🚀 UCL / UEL / UECL Lig Fazı Başlangıcı</div>
+        </div><div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid #1e3a5f">
+          <div style="min-width:120px;font-size:11px;color:var(--muted);padding-top:2px">Oca 2027</div>
+          <div style="font-size:12px;font-weight:600;color:var(--ink)">📊 Lig Fazı Son Haftaları</div>
+        </div><div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid #1e3a5f">
+          <div style="min-width:120px;font-size:11px;color:var(--muted);padding-top:2px">Şub – Mar 2027</div>
+          <div style="font-size:12px;font-weight:600;color:var(--ink)">🏅 Eleme (Play-off + Son 16)</div>
+        </div><div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid #1e3a5f">
+          <div style="min-width:120px;font-size:11px;color:var(--muted);padding-top:2px">May 31, 2027</div>
+          <div style="font-size:12px;font-weight:600;color:var(--ink)">🏆 UCL Finali — Münih</div>
+        </div>
+  </div>
+
+  <div>
+    <div style="font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:14px">🇹🇷 Türk Kulüpler (Tahmini)</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px">
+      <div style="background:var(--panel2);border:1px solid var(--border);border-radius:8px;padding:12px 14px">
+          <div style="font-size:13px;font-weight:700;color:white;margin-bottom:4px">Galatasaray</div>
+          <div style="font-size:11px;font-weight:700;color:#f59e0b;margin-bottom:3px">UCL Lig Fazı</div>
+          <div style="font-size:11px;color:var(--muted)">Şampiyonlar Ligi doğrudan katılım</div>
+        </div><div style="background:var(--panel2);border:1px solid var(--border);border-radius:8px;padding:12px 14px">
+          <div style="font-size:13px;font-weight:700;color:white;margin-bottom:4px">Fenerbahçe</div>
+          <div style="font-size:11px;font-weight:700;color:#f59e0b;margin-bottom:3px">UCL Play-off</div>
+          <div style="font-size:11px;color:var(--muted)">Şampiyonlar Ligi play-off turu</div>
+        </div><div style="background:var(--panel2);border:1px solid var(--border);border-radius:8px;padding:12px 14px">
+          <div style="font-size:13px;font-weight:700;color:white;margin-bottom:4px">Beşiktaş</div>
+          <div style="font-size:11px;font-weight:700;color:#f97316;margin-bottom:3px">UEL Lig Fazı</div>
+          <div style="font-size:11px;color:var(--muted)">Avrupa Ligi lig fazı</div>
+        </div><div style="background:var(--panel2);border:1px solid var(--border);border-radius:8px;padding:12px 14px">
+          <div style="font-size:13px;font-weight:700;color:white;margin-bottom:4px">Trabzonspor</div>
+          <div style="font-size:11px;font-weight:700;color:#22c55e;margin-bottom:3px">UECL Nitelendirme</div>
+          <div style="font-size:11px;color:var(--muted)">Konferans Ligi nitelendirme</div>
+        </div><div style="background:var(--panel2);border:1px solid var(--border);border-radius:8px;padding:12px 14px">
+          <div style="font-size:13px;font-weight:700;color:white;margin-bottom:4px">Başakşehir</div>
+          <div style="font-size:11px;font-weight:700;color:#64748b;margin-bottom:3px">Belirsiz</div>
+          <div style="font-size:11px;color:var(--muted)">Lig sıralamasına göre değişebilir</div>
+        </div>
+    </div>
+    <div style="font-size:11px;color:var(--muted);margin-top:10px">
+      * Katılım bilgileri tahminidir, UEFA kura çekimi ve play-off sonuçlarına göre kesinleşir.
+    </div>
   </div>
 </div>
   </div>
