@@ -272,8 +272,14 @@ def main() -> None:
     ensure_data_dirs()
 
     if not FIXTURES_PATH.exists():
-        print(f"HATA: {FIXTURES_PATH} bulunamadı. Önce collect_european_fixtures çalıştırın.")
-        sys.exit(1)
+        print(f"UYARI: {FIXTURES_PATH} bulunamadı — boş tahmin dosyası oluşturuluyor.")
+        payload = {
+            "generated_at": datetime.now(timezone.utc).isoformat(),
+            "season": "2026-2027",
+            "competitions": {},
+        }
+        OUTPUT_PATH.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+        return
 
     data = json.loads(FIXTURES_PATH.read_text(encoding="utf-8"))
     competitions = data.get("competitions", {})
