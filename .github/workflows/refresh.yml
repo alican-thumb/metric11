@@ -31,32 +31,35 @@ jobs:
           pip install -r requirements.txt
 
       - name: Haber topla (news-refresh fallback)
+        continue-on-error: true
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           FOOTBALL_DATA_KEY: ${{ secrets.FOOTBALL_DATA_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
         run: |
-          python -m src.collect_worldcup_fixtures
-          python -m src.analyze_worldcup_predictions
-          python -m src.build_worldcup_predictions
-          python -m src.collect_news_rss
-          python -m src.collect_news_google
-          python -m src.collect_official_club_news
-          python -m src.analyze_news_with_claude --only-relevant
-          python -m src.build_news_intelligence_report
-          python -m src.build_transfer_tracker
-          python -m src.build_live_feed
-          python -m src.notify_telegram
+          python -m src.collect_worldcup_fixtures || true
+          python -m src.analyze_worldcup_predictions || true
+          python -m src.build_worldcup_predictions || true
+          python -m src.collect_news_rss || true
+          python -m src.collect_news_google || true
+          python -m src.collect_official_club_news || true
+          python -m src.analyze_news_with_claude --only-relevant || true
+          python -m src.build_news_intelligence_report || true
+          python -m src.build_transfer_tracker || true
+          python -m src.build_live_feed || true
+          python -m src.notify_telegram || true
 
       - name: Rebuild dashboards
+        continue-on-error: true
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           ADMIN_CREDENTIALS_HASH: ${{ secrets.ADMIN_CREDENTIALS_HASH }}
           X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
-        run: python -m src.run_daily_pipeline
+        run: python -m src.run_daily_pipeline || true
 
       - name: Commit and push
+        if: always()
         run: |
           git config --global user.email "257049215+alican-thumb@users.noreply.github.com"
           git config --global user.name "alican-thumb"

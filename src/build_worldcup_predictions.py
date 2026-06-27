@@ -887,16 +887,26 @@ def build_page(predictions_data: dict) -> str:
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>FIFA D&uuml;nya Kupas&#x131; 2026 Tahminleri | metric11</title>
-  <meta name="description" content="FIFA D&uuml;nya Kupas&#x131; 2026 ma&ccedil; tahminleri, skor &ouml;ng&ouml;r&uuml;leri ve istatistiksel analizler — metric11.">
-  <meta property="og:title" content="FIFA D&uuml;nya Kupas&#x131; 2026 Tahminleri | metric11">
-  <meta property="og:description" content="104 ma&ccedil; i&ccedil;in istatistiksel tahminler, kazanma olas&#x131;l&#x131;klar&#x131; ve skor &ouml;ng&ouml;r&uuml;leri.">
+  <title>Dünya Kupası 2026 Maç Tahminleri ve Skor Öngörüleri | metric11</title>
+  <meta name="description" content="FIFA Dünya Kupası 2026 — 104 maç için istatistiksel tahminler, skor öngörüleri, kazanma olasılıkları. Günlük güncellenen WC 2026 analiz platformu.">
+  <meta property="og:title" content="Dünya Kupası 2026 Maç Tahminleri | metric11">
+  <meta property="og:description" content="104 maç için istatistiksel tahminler, kazanma olasılıkları ve skor öngörüleri. Her gün güncelleniyor.">
   <meta property="og:image" content="https://metric11.com/og-image.png">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://metric11.com/og-image.png">
   <meta name="theme-color" content="#0a1628">
+  <meta property="og:url" content="https://metric11.com/worldcup_2026_predictions.html">
+  <link rel="canonical" href="https://metric11.com/worldcup_2026_predictions.html">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <script type="application/ld+json">{{
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "FIFA Dünya Kupası 2026 Tahminleri",
+    "description": "104 maç için istatistiksel tahminler, kazanma olasılıkları ve skor öngörüleri.",
+    "url": "https://metric11.com/worldcup_2026_predictions.html",
+    "publisher": {{"@type": "Organization", "name": "metric11", "url": "https://metric11.com"}}
+  }}</script>
   <style>{_CSS}</style>
 </head>
 <body>

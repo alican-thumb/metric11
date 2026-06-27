@@ -245,6 +245,7 @@ def build_html() -> str:
       <a href="all_teams_preview_dashboard_2025_2026.html">{"Arşiv" if _is_transfer_season() else "Maç Önü"}</a>
       <a href="transfer_recommendation_report_2025_2026.html">Scout</a>
       <a class="active" href="football_intelligence_home.html">Analiz</a>
+    <a href="worldcup_2026_predictions.html">🌍 WC 2026</a>
     </nav>
   </div>
   <header>

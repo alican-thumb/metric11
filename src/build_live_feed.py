@@ -321,8 +321,17 @@ def build_html() -> str:
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://metric11.com/og-image.png">
+<meta property="og:url" content="https://metric11.com/">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="canonical" href="https://metric11.com/">
+<script type="application/ld+json">{{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "metric11",
+  "url": "https://metric11.com",
+  "description": "Süper Lig istatistik, transfer takibi ve futbol analiz platformu.",
+  "inLanguage": "tr"
+}}</script>
 <style>
   :root{{--bg:#f3f5f4;--panel:#fff;--ink:#132018;--muted:#627067;--line:#d7ded9;--dark:#091810;--green:#116447;--lime:#cde94e}}
   *{{box-sizing:border-box;margin:0;padding:0}}
@@ -368,6 +377,7 @@ def build_html() -> str:
     <a href="all_teams_preview_dashboard_{SEASON}.html">{"Arşiv" if _is_transfer_season else "Maç Önü"}</a>
     <a href="transfer_recommendation_report_{SEASON}.html">Scout</a>
     <a href="football_intelligence_home.html">Analiz</a>
+    <a href="worldcup_2026_predictions.html">🌍 WC 2026</a>
   </nav>
 </div>
 <div class="window-banner" style="{banner_css}">

@@ -539,6 +539,7 @@ def build_html(summary: dict, previews: list[dict], goal_backtest: dict, team_na
       <a class="active" href="all_teams_preview_dashboard_2025_2026.html">{preview_nav_label()}</a>
       <a href="transfer_recommendation_report_2025_2026.html">Scout</a>
       <a href="football_intelligence_home.html">Analiz</a>
+    <a href="worldcup_2026_predictions.html">🌍 WC 2026</a>
     </nav>
   </div>
   <header>

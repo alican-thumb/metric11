@@ -130,7 +130,8 @@ def build_html(team_data: list[dict]) -> str:
 <body>
 <div class="topbar">
   <a class="brand" href="/"><b>11</b> metric11<span class="slbl">Süper Lig 2025/26</span></a>
-  <nav class="topnav"><a href="/">Gündem</a><a href="transfer_tracker_2025_2026.html">Transferler</a><a class="active" href="all_teams_preview_dashboard_2025_2026.html">{preview_nav_label()}</a><a href="transfer_recommendation_report_2025_2026.html">Scout</a><a href="football_intelligence_home.html">Analiz</a></nav>
+  <nav class="topnav"><a href="/">Gündem</a><a href="transfer_tracker_2025_2026.html">Transferler</a><a class="active" href="all_teams_preview_dashboard_2025_2026.html">{preview_nav_label()}</a><a href="transfer_recommendation_report_2025_2026.html">Scout</a><a href="football_intelligence_home.html">Analiz</a>
+    <a href="worldcup_2026_predictions.html">🌍 WC 2026</a></nav>
 </div>
 <div class="header">
   <div class="header-inner"><h1>Süper Lig maç merkezi</h1>
