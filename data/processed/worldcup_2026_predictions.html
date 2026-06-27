@@ -593,6 +593,93 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 .today-probs { display: flex; gap: 10px; font-size: 12px; font-weight: 600; }
 .today-group { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; }
 
+/* ── Knockout section ── */
+.ko-section { display: none; }
+.ko-section.visible { display: block; }
+.ko-stage { margin-bottom: 36px; }
+.ko-stage-title {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.ko-stage-title::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+.ko-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 10px;
+}
+.ko-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 13px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.ko-card.ko-finished { border-color: rgba(74,222,128,.35); }
+.ko-card.ko-pending  { border-color: rgba(245,158,11,.25); }
+.ko-date {
+  font-size: 11px;
+  color: var(--muted);
+  font-weight: 500;
+}
+.ko-teams {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.ko-team {
+  flex: 1;
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+}
+.ko-team.tbd { color: #3a5a7a; font-style: italic; }
+.ko-team.away-team { text-align: right; }
+.ko-score {
+  font-size: 20px;
+  font-weight: 900;
+  color: white;
+  letter-spacing: 3px;
+  text-align: center;
+  min-width: 52px;
+}
+.ko-score.result { color: #4ade80; }
+.ko-score.predicted { color: #f59e0b; font-size: 16px; }
+.ko-probs {
+  display: flex;
+  gap: 8px;
+  font-size: 11px;
+  font-weight: 600;
+}
+.ko-tbd-badge {
+  font-size: 11px;
+  color: #3a5a7a;
+  font-style: italic;
+  text-align: center;
+}
+.ko-result-tag {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+  align-self: flex-start;
+}
+.ko-result-tag.correct { background: rgba(74,222,128,.15); color: #4ade80; }
+.ko-result-tag.wrong   { background: rgba(248,113,113,.1); color: #f87171; }
+
 /* ── Responsive ── */
 @media (max-width: 680px) {
   .topbar {
@@ -659,7 +746,7 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
     <div class="accuracy-track-label">Genel doğruluk: <strong>%64</strong></div>
   </div>
 </div>
-    <div class="tabs-label">Grup Aşaması Haftaları</div><div class="tabs" id="tabs-container"><button class="tab-btn" data-tab="1" onclick="showMatchday('1')">1. Hafta</button><button class="tab-btn" data-tab="2" onclick="showMatchday('2')">2. Hafta</button><button class="tab-btn" data-tab="3" onclick="showMatchday('3')">3. Hafta</button></div>
+    <div class="tabs-label">Grup Aşaması Haftaları &amp; Eleme</div><div class="tabs" id="tabs-container"><button class="tab-btn" data-tab="1" onclick="showMatchday('1')">1. Hafta</button><button class="tab-btn" data-tab="2" onclick="showMatchday('2')">2. Hafta</button><button class="tab-btn" data-tab="3" onclick="showMatchday('3')">3. Hafta</button><button class="tab-btn" data-tab="knockout" onclick="showMatchday('knockout')">🏆 Eleme</button></div>
   </div>
 
   <div class="main-wrap">
@@ -3819,11 +3906,43 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
   </div>
   <div class="narrative">Dengeli bir karşılaşma bekleniyor. Austria, 8.0 maçta %50 galibiyet ve 1.62 gol/maç ile sahaya çıkıyor. Gol beklentisi: ev 1.25 — dep 1.79. En olası skor: 1-2. Tahmini kart: ~3.5.</div>
 </div></div></div></div>
+    <div class="ko-section matchday-section" data-matchday="knockout"><div class="ko-stage"><div class="ko-stage-title">Tur 32 — 1 Temmuz&#x27;dan itibaren</div><div class="ko-grid"><div class="ko-card"><div class="ko-date">28 Haziran, 22:00</div><div class="ko-teams"><span class="ko-team tbd">TBD</span><div class="ko-score" style="color:#2a4a6a">? – ?</div><span class="ko-team away-team tbd">TBD</span></div><div class="ko-tbd-badge">Takımlar henüz belli değil</div></div>
+<div class="ko-card"><div class="ko-date">29 Haziran, 20:00</div><div class="ko-teams"><span class="ko-team tbd">TBD</span><div class="ko-score" style="color:#2a4a6a">? – ?</div><span class="ko-team away-team tbd">TBD</span></div><div class="ko-tbd-badge">Takımlar henüz belli değil</div></div>
+<div class="ko-card"><div class="ko-date">29 Haziran, 23:30</div><div class="ko-teams"><span class="ko-team tbd">TBD</span><div class="ko-score" style="color:#2a4a6a">? – ?</div><span class="ko-team away-team tbd">TBD</span></div><div class="ko-tbd-badge">Takımlar henüz belli değil</div></div>
+<div class="ko-card"><div class="ko-date">30 Haziran, 04:00</div><div class="ko-teams"><span class="ko-team tbd">TBD</span><div class="ko-score" style="color:#2a4a6a">? – ?</div><span class="ko-team away-team tbd">TBD</span></div><div class="ko-tbd-badge">Takımlar henüz belli değil</div></div>
+<div class="ko-card"><div class="ko-date">30 Haziran, 20:00</div><div class="ko-teams"><span class="ko-team tbd">TBD</span><div class="ko-score" style="color:#2a4a6a">? – ?</div><span class="ko-team away-team tbd">TBD</span></div><div class="ko-tbd-badge">Takımlar henüz belli değil</div></div>
+<div class="ko-card"><div class="ko-date">1 Temmuz, 00:00</div><div class="ko-teams"><span class="ko-team tbd">TBD</span><div class="ko-score" style="color:#2a4a6a">? – ?</div><span class="ko-team away-team tbd">TBD</span></div><div class="ko-tbd-badge">Takımlar henüz belli değil</div></div>
+<div class="ko-card"><div class="ko-date">1 Temmuz, 04:00</div><div class="ko-teams"><span class="ko-team tbd">TBD</span><div class="ko-score" style="color:#2a4a6a">? – ?</div><span class="ko-team away-team tbd">TBD</span></div><div class="ko-tbd-badge">Takımlar henüz belli değil</div></div>
+<div class="ko-card"><div class="ko-date">1 Temmuz, 19:00</div><div class="ko-teams"><span class="ko-team tbd">TBD</span><div class="ko-score" style="color:#2a4a6a">? – ?</div><span class="ko-team away-team tbd">TBD</span></div><div class="ko-tbd-badge">Takımlar henüz belli değil</div></div>
+<div class="ko-card"><div class="ko-date">1 Temmuz, 23:00</div><div class="ko-teams"><span class="ko-team tbd">TBD</span><div class="ko-score" style="color:#2a4a6a">? – ?</div><span class="ko-team away-team tbd">TBD</span></div><div class="ko-tbd-badge">Takımlar henüz belli değil</div></div>
+<div class="ko-card"><div class="ko-date">2 Temmuz, 03:00</div><div class="ko-teams"><span class="ko-team tbd">TBD</span><div class="ko-score" style="color:#2a4a6a">? – ?</div><span class="ko-team away-team tbd">TBD</span></div><div class="ko-tbd-badge">Takımlar henüz belli değil</div></div>
+<div class="ko-card"><div class="ko-date">2 Temmuz, 22:00</div><div class="ko-teams"><span class="ko-team tbd">TBD</span><div class="ko-score" style="color:#2a4a6a">? – ?</div><span class="ko-team away-team tbd">TBD</span></div><div class="ko-tbd-badge">Takımlar henüz belli değil</div></div>
+<div class="ko-card"><div class="ko-date">3 Temmuz, 02:00</div><div class="ko-teams"><span class="ko-team tbd">TBD</span><div class="ko-score" style="color:#2a4a6a">? – ?</div><span class="ko-team away-team tbd">TBD</span></div><div class="ko-tbd-badge">Takımlar henüz belli değil</div></div>
+<div class="ko-card"><div class="ko-date">3 Temmuz, 06:00</div><div class="ko-teams"><span class="ko-team tbd">TBD</span><div class="ko-score" style="color:#2a4a6a">? – ?</div><span class="ko-team away-team tbd">TBD</span></div><div class="ko-tbd-badge">Takımlar henüz belli değil</div></div>
+<div class="ko-card"><div class="ko-date">3 Temmuz, 21:00</div><div class="ko-teams"><span class="ko-team tbd">TBD</span><div class="ko-score" style="color:#2a4a6a">? – ?</div><span class="ko-team away-team tbd">TBD</span></div><div class="ko-tbd-badge">Takımlar henüz belli değil</div></div>
+<div class="ko-card"><div class="ko-date">4 Temmuz, 01:00</div><div class="ko-teams"><span class="ko-team tbd">TBD</span><div class="ko-score" style="color:#2a4a6a">? – ?</div><span class="ko-team away-team tbd">TBD</span></div><div class="ko-tbd-badge">Takımlar henüz belli değil</div></div>
+<div class="ko-card"><div class="ko-date">4 Temmuz, 04:30</div><div class="ko-teams"><span class="ko-team tbd">TBD</span><div class="ko-score" style="color:#2a4a6a">? – ?</div><span class="ko-team away-team tbd">TBD</span></div><div class="ko-tbd-badge">Takımlar henüz belli değil</div></div></div></div>
+<div class="ko-stage"><div class="ko-stage-title">Son 16 — 6 Temmuz&#x27;dan itibaren</div><div class="ko-grid"><div class="ko-card"><div class="ko-date">4 Temmuz, 20:00</div><div class="ko-teams"><span class="ko-team tbd">TBD</span><div class="ko-score" style="color:#2a4a6a">? – ?</div><span class="ko-team away-team tbd">TBD</span></div><div class="ko-tbd-badge">Takımlar henüz belli değil</div></div>
+<div class="ko-card"><div class="ko-date">5 Temmuz, 00:00</div><div class="ko-teams"><span class="ko-team tbd">TBD</span><div class="ko-score" style="color:#2a4a6a">? – ?</div><span class="ko-team away-team tbd">TBD</span></div><div class="ko-tbd-badge">Takımlar henüz belli değil</div></div>
+<div class="ko-card"><div class="ko-date">5 Temmuz, 23:00</div><div class="ko-teams"><span class="ko-team tbd">TBD</span><div class="ko-score" style="color:#2a4a6a">? – ?</div><span class="ko-team away-team tbd">TBD</span></div><div class="ko-tbd-badge">Takımlar henüz belli değil</div></div>
+<div class="ko-card"><div class="ko-date">6 Temmuz, 03:00</div><div class="ko-teams"><span class="ko-team tbd">TBD</span><div class="ko-score" style="color:#2a4a6a">? – ?</div><span class="ko-team away-team tbd">TBD</span></div><div class="ko-tbd-badge">Takımlar henüz belli değil</div></div>
+<div class="ko-card"><div class="ko-date">6 Temmuz, 22:00</div><div class="ko-teams"><span class="ko-team tbd">TBD</span><div class="ko-score" style="color:#2a4a6a">? – ?</div><span class="ko-team away-team tbd">TBD</span></div><div class="ko-tbd-badge">Takımlar henüz belli değil</div></div>
+<div class="ko-card"><div class="ko-date">7 Temmuz, 03:00</div><div class="ko-teams"><span class="ko-team tbd">TBD</span><div class="ko-score" style="color:#2a4a6a">? – ?</div><span class="ko-team away-team tbd">TBD</span></div><div class="ko-tbd-badge">Takımlar henüz belli değil</div></div>
+<div class="ko-card"><div class="ko-date">7 Temmuz, 19:00</div><div class="ko-teams"><span class="ko-team tbd">TBD</span><div class="ko-score" style="color:#2a4a6a">? – ?</div><span class="ko-team away-team tbd">TBD</span></div><div class="ko-tbd-badge">Takımlar henüz belli değil</div></div>
+<div class="ko-card"><div class="ko-date">7 Temmuz, 23:00</div><div class="ko-teams"><span class="ko-team tbd">TBD</span><div class="ko-score" style="color:#2a4a6a">? – ?</div><span class="ko-team away-team tbd">TBD</span></div><div class="ko-tbd-badge">Takımlar henüz belli değil</div></div></div></div>
+<div class="ko-stage"><div class="ko-stage-title">Çeyrek Final — 9 Temmuz&#x27;dan itibaren</div><div class="ko-grid"><div class="ko-card"><div class="ko-date">9 Temmuz, 23:00</div><div class="ko-teams"><span class="ko-team tbd">TBD</span><div class="ko-score" style="color:#2a4a6a">? – ?</div><span class="ko-team away-team tbd">TBD</span></div><div class="ko-tbd-badge">Takımlar henüz belli değil</div></div>
+<div class="ko-card"><div class="ko-date">10 Temmuz, 22:00</div><div class="ko-teams"><span class="ko-team tbd">TBD</span><div class="ko-score" style="color:#2a4a6a">? – ?</div><span class="ko-team away-team tbd">TBD</span></div><div class="ko-tbd-badge">Takımlar henüz belli değil</div></div>
+<div class="ko-card"><div class="ko-date">12 Temmuz, 00:00</div><div class="ko-teams"><span class="ko-team tbd">TBD</span><div class="ko-score" style="color:#2a4a6a">? – ?</div><span class="ko-team away-team tbd">TBD</span></div><div class="ko-tbd-badge">Takımlar henüz belli değil</div></div>
+<div class="ko-card"><div class="ko-date">12 Temmuz, 04:00</div><div class="ko-teams"><span class="ko-team tbd">TBD</span><div class="ko-score" style="color:#2a4a6a">? – ?</div><span class="ko-team away-team tbd">TBD</span></div><div class="ko-tbd-badge">Takımlar henüz belli değil</div></div></div></div>
+<div class="ko-stage"><div class="ko-stage-title">Yarı Final — 14 Temmuz</div><div class="ko-grid"><div class="ko-card"><div class="ko-date">14 Temmuz, 22:00</div><div class="ko-teams"><span class="ko-team tbd">TBD</span><div class="ko-score" style="color:#2a4a6a">? – ?</div><span class="ko-team away-team tbd">TBD</span></div><div class="ko-tbd-badge">Takımlar henüz belli değil</div></div>
+<div class="ko-card"><div class="ko-date">15 Temmuz, 22:00</div><div class="ko-teams"><span class="ko-team tbd">TBD</span><div class="ko-score" style="color:#2a4a6a">? – ?</div><span class="ko-team away-team tbd">TBD</span></div><div class="ko-tbd-badge">Takımlar henüz belli değil</div></div></div></div>
+<div class="ko-stage"><div class="ko-stage-title">3. Yer Maçı — 18 Temmuz</div><div class="ko-grid"><div class="ko-card"><div class="ko-date">19 Temmuz, 00:00</div><div class="ko-teams"><span class="ko-team tbd">TBD</span><div class="ko-score" style="color:#2a4a6a">? – ?</div><span class="ko-team away-team tbd">TBD</span></div><div class="ko-tbd-badge">Takımlar henüz belli değil</div></div></div></div>
+<div class="ko-stage"><div class="ko-stage-title">Final — 19 Temmuz</div><div class="ko-grid"><div class="ko-card"><div class="ko-date">19 Temmuz, 22:00</div><div class="ko-teams"><span class="ko-team tbd">TBD</span><div class="ko-score" style="color:#2a4a6a">? – ?</div><span class="ko-team away-team tbd">TBD</span></div><div class="ko-tbd-badge">Takımlar henüz belli değil</div></div></div></div></div>
   </div>
 
   <footer>
     metric11 &middot; <a href="mailto:hello@metric11.com">hello@metric11.com</a>
-    &nbsp;&middot;&nbsp; Son g&uuml;ncelleme: 27.06.2026 09:53
+    &nbsp;&middot;&nbsp; Son g&uuml;ncelleme: 27.06.2026 16:27
   </footer>
 
   <script>

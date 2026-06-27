@@ -444,12 +444,74 @@ def main() -> None:
     }
     print(f"Doğruluk: {len(correct)}/{len(finished)} ({accuracy_stats['accuracy_pct']}%)", flush=True)
 
+    # Eleme aşaması maçlarını topla
+    KO_STAGES = ["LAST_32", "LAST_16", "QUARTER_FINALS", "SEMI_FINALS", "THIRD_PLACE", "FINAL"]
+    knockout_stages: dict[str, list] = {s: [] for s in KO_STAGES}
+    ko_correct = ko_wrong = 0
+    for match in matches:
+        stage = match.get("stage", "")
+        if stage not in KO_STAGES:
+            continue
+        home_name = match.get("home", {}).get("name", "")
+        away_name = match.get("away", {}).get("name", "")
+        score = match.get("score", {})
+        score_h = score.get("home")
+        score_a = score.get("away")
+        has_teams = bool(home_name and away_name)
+        has_result = score_h is not None and score_a is not None
+        entry: dict = {
+            "match_id": match.get("id"),
+            "stage": stage,
+            "utc_date": match.get("utc_date", ""),
+            "status": match.get("status", "TIMED"),
+            "home": match.get("home", {}),
+            "away": match.get("away", {}),
+            "actual_score": {"home": score_h, "away": score_a} if has_result else None,
+        }
+        if has_teams:
+            pred_entry = analyze_match(match)
+            entry["prediction"] = pred_entry["prediction"]
+            if has_result:
+                entry = _enrich_with_result(entry, {})  # type: ignore[arg-type]
+                # manuel outcome hesapla
+                if score_h > score_a:
+                    act = "home"
+                elif score_h == score_a:
+                    act = "draw"
+                else:
+                    act = "away"
+                ps = pred_entry["prediction"]["predicted_score"]
+                if ps["home"] > ps["away"]:
+                    pred_out = "home"
+                elif ps["home"] == ps["away"]:
+                    pred_out = "draw"
+                else:
+                    pred_out = "away"
+                entry["prediction_outcome"] = "correct" if pred_out == act else "wrong"
+                if entry["prediction_outcome"] == "correct":
+                    ko_correct += 1
+                else:
+                    ko_wrong += 1
+            else:
+                entry["prediction_outcome"] = "pending"
+        else:
+            entry["prediction"] = None
+            entry["prediction_outcome"] = "tbd"
+        knockout_stages[stage].append(entry)
+
+    for stage in KO_STAGES:
+        knockout_stages[stage].sort(key=lambda m: m.get("utc_date", ""))
+
+    print(f"Eleme: {sum(len(v) for v in knockout_stages.values())} maç "
+          f"({ko_correct} doğru / {ko_wrong} yanlış)", flush=True)
+
     payload = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "total_matches": len(matches),
         "form_teams_used": form_count,
         "accuracy_stats": accuracy_stats,
         "matchday_predictions": matchday_predictions,
+        "knockout_stages": knockout_stages,
     }
 
     out_path = Path(args.output)

@@ -583,6 +583,93 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 .today-probs { display: flex; gap: 10px; font-size: 12px; font-weight: 600; }
 .today-group { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; }
 
+/* ── Knockout section ── */
+.ko-section { display: none; }
+.ko-section.visible { display: block; }
+.ko-stage { margin-bottom: 36px; }
+.ko-stage-title {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.ko-stage-title::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+.ko-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 10px;
+}
+.ko-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 13px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.ko-card.ko-finished { border-color: rgba(74,222,128,.35); }
+.ko-card.ko-pending  { border-color: rgba(245,158,11,.25); }
+.ko-date {
+  font-size: 11px;
+  color: var(--muted);
+  font-weight: 500;
+}
+.ko-teams {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.ko-team {
+  flex: 1;
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+}
+.ko-team.tbd { color: #3a5a7a; font-style: italic; }
+.ko-team.away-team { text-align: right; }
+.ko-score {
+  font-size: 20px;
+  font-weight: 900;
+  color: white;
+  letter-spacing: 3px;
+  text-align: center;
+  min-width: 52px;
+}
+.ko-score.result { color: #4ade80; }
+.ko-score.predicted { color: #f59e0b; font-size: 16px; }
+.ko-probs {
+  display: flex;
+  gap: 8px;
+  font-size: 11px;
+  font-weight: 600;
+}
+.ko-tbd-badge {
+  font-size: 11px;
+  color: #3a5a7a;
+  font-style: italic;
+  text-align: center;
+}
+.ko-result-tag {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+  align-self: flex-start;
+}
+.ko-result-tag.correct { background: rgba(74,222,128,.15); color: #4ade80; }
+.ko-result-tag.wrong   { background: rgba(248,113,113,.1); color: #f87171; }
+
 /* ── Responsive ── */
 @media (max-width: 680px) {
   .topbar {
@@ -853,14 +940,118 @@ def _build_matchday_section(md_key: str, predictions: list[dict]) -> str:
 
 
 def _build_tabs(md_keys: list[str]) -> str:
-    btns = "".join(
+    group_btns = "".join(
         f'<button class="tab-btn" data-tab="{escape(k)}" onclick="showMatchday(\'{escape(k)}\')">'
         f"{escape(k)}. Hafta</button>"
         for k in md_keys
     )
+    ko_btn = '<button class="tab-btn" data-tab="knockout" onclick="showMatchday(\'knockout\')">🏆 Eleme</button>'
     return (
-        '<div class="tabs-label">Grup Aşaması Haftaları</div>'
-        f'<div class="tabs" id="tabs-container">{btns}</div>'
+        '<div class="tabs-label">Grup Aşaması Haftaları &amp; Eleme</div>'
+        f'<div class="tabs" id="tabs-container">{group_btns}{ko_btn}</div>'
+    )
+
+
+_KO_STAGE_LABELS = {
+    "LAST_32":       "Tur 32 — 1 Temmuz'dan itibaren",
+    "LAST_16":       "Son 16 — 6 Temmuz'dan itibaren",
+    "QUARTER_FINALS": "Çeyrek Final — 9 Temmuz'dan itibaren",
+    "SEMI_FINALS":   "Yarı Final — 14 Temmuz",
+    "THIRD_PLACE":   "3. Yer Maçı — 18 Temmuz",
+    "FINAL":         "Final — 19 Temmuz",
+}
+
+
+def _ko_card_html(m: dict) -> str:
+    home = m.get("home", {})
+    away = m.get("away", {})
+    home_name = home.get("name", "")
+    away_name = away.get("name", "")
+    dt = _parse_utc(m.get("utc_date", ""))
+    date_str = ""
+    if dt:
+        date_str = f"{dt.day} {_TR_MONTHS[dt.month]}, {_format_time(dt)}"
+
+    outcome = m.get("prediction_outcome", "tbd")
+    actual = m.get("actual_score")
+    pred = m.get("prediction")
+
+    card_cls = "ko-card"
+    if actual:
+        card_cls += " ko-finished"
+    elif home_name:
+        card_cls += " ko-pending"
+
+    home_cls = "ko-team" + (" tbd" if not home_name else "")
+    away_cls = "ko-team away-team" + (" tbd" if not away_name else "")
+    home_disp = escape(home_name) if home_name else "TBD"
+    away_disp = escape(away_name) if away_name else "TBD"
+
+    # Skor alanı
+    if actual:
+        score_html = f'<div class="ko-score result">{actual["home"]} – {actual["away"]}</div>'
+    elif pred:
+        ps = pred.get("predicted_score", {})
+        score_html = f'<div class="ko-score predicted">{ps.get("home","?")} – {ps.get("away","?")}</div>'
+    else:
+        score_html = '<div class="ko-score" style="color:#2a4a6a">? – ?</div>'
+
+    # Olasılıklar
+    probs_html = ""
+    if pred and not actual:
+        hw = int(round(pred.get("home_win", 0) * 100))
+        dr = int(round(pred.get("draw", 0) * 100))
+        aw = int(round(pred.get("away_win", 0) * 100))
+        probs_html = (
+            f'<div class="ko-probs">'
+            f'<span style="color:#4ade80">1 %{hw}</span>'
+            f'<span style="color:#94a3b8">X %{dr}</span>'
+            f'<span style="color:#f87171">2 %{aw}</span>'
+            f'</div>'
+        )
+
+    # Sonuç etiketi
+    result_tag = ""
+    if outcome == "correct":
+        result_tag = '<span class="ko-result-tag correct">✓ Doğru</span>'
+    elif outcome == "wrong":
+        result_tag = '<span class="ko-result-tag wrong">✗ Yanlış</span>'
+
+    tbd_note = "" if home_name else '<div class="ko-tbd-badge">Takımlar henüz belli değil</div>'
+
+    return (
+        f'<div class="{card_cls}">'
+        f'<div class="ko-date">{escape(date_str)}</div>'
+        f'<div class="ko-teams">'
+        f'<span class="{home_cls}">{home_disp}</span>'
+        f'{score_html}'
+        f'<span class="{away_cls}">{away_disp}</span>'
+        f'</div>'
+        f'{probs_html}'
+        f'{tbd_note}'
+        f'{result_tag}'
+        f'</div>'
+    )
+
+
+def _build_knockout_section(knockout_stages: dict[str, list]) -> str:
+    stage_parts = []
+    for stage_key, label in _KO_STAGE_LABELS.items():
+        matches = knockout_stages.get(stage_key, [])
+        if not matches:
+            continue
+        cards_html = "\n".join(_ko_card_html(m) for m in matches)
+        stage_parts.append(
+            f'<div class="ko-stage">'
+            f'<div class="ko-stage-title">{escape(label)}</div>'
+            f'<div class="ko-grid">{cards_html}</div>'
+            f'</div>'
+        )
+    inner = "\n".join(stage_parts)
+    return (
+        f'<div class="ko-section matchday-section" data-matchday="knockout">'
+        f'{inner}'
+        f'</div>'
     )
 
 
@@ -994,12 +1185,15 @@ def build_page(predictions_data: dict) -> str:
                 if not today_md:
                     today_md = k
 
+    knockout_stages: dict[str, list] = predictions_data.get("knockout_stages", {})
+
     accuracy_html = _build_accuracy_bar(accuracy_stats)
     today_html = _build_today_section(today_matches)
     tabs_html = _build_tabs(md_keys)
     sections_html = "\n".join(
         _build_matchday_section(k, matchday_preds[k]) for k in md_keys
     )
+    knockout_html = _build_knockout_section(knockout_stages)
 
     # Üretim zamanı
     try:
@@ -1056,6 +1250,7 @@ def build_page(predictions_data: dict) -> str:
 
   <div class="main-wrap">
     {sections_html}
+    {knockout_html}
   </div>
 
   <footer>
