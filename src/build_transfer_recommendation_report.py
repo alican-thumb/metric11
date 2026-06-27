@@ -136,9 +136,15 @@ def build_team_plan(blueprint: dict, top_roles: int, top_candidates: int) -> dic
 def published_role_candidate(candidate: dict, role_key: str) -> bool:
     if not candidate_matches_role(candidate, role_key):
         return False
-    if role_key in {"LOW_RISK_REGULAR", "RESALE_VALUE"}:
+    # Accept if: already validated by position_scout_matrix (role_key set),
+    # or has verified TM position, or has inferred group from archetype/stats
+    if candidate.get("role_key") == role_key:
         return True
-    return bool(candidate.get("verified_position"))
+    if candidate.get("verified_position"):
+        return True
+    if candidate.get("inferred_group"):
+        return True
+    return role_key in {"LOW_RISK_REGULAR", "RESALE_VALUE"}
 
 
 def build_priority_ranking(team_reports: list[dict]) -> list[dict]:
