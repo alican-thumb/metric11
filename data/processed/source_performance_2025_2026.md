@@ -1,18 +1,18 @@
 # Erken Haber Kaynak Performansı
 
-- Transfer sinyali: 46
+- Transfer sinyali: 48
 - Resmi olaya dönüşen transfer: 3
 - Yayın zamanı bulunan resmi teyit: 1/3
 - İlk görülme zamanı bulunan resmi teyit: 3/3
-- Ölçülen kaynak: 40 / gözlenen kaynak: 112
+- Ölçülen kaynak: 40 / gözlenen kaynak: 113
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 0
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 1142
+- Defterde korunan ilk iddia gözlemi: 1148
 
 ## Kanal Kapsamı
 
-- Google News: 230 haber, 30/30 başarılı sorgu.
+- Google News: 227 haber, 30/30 başarılı sorgu.
 - Telegram: 6 mesaj, 8/8 erişilebilir kanal.
 - X: durum=MISSING_CREDENTIALS, gönderi=0, yapılandırılmış hesap=45.
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 1139 | 251 | 1 | — | — | %98.9 | 0.9 | PARTIAL_MEASUREMENT |
+| Google News / medya | 1145 | 251 | 1 | — | — | %98.9 | 0.9 | PARTIAL_MEASUREMENT |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -48,7 +48,7 @@
 | Kaynak | Katman | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---|
 | CNN Türk Spor | MEDIA | 34 | 8 | 1 | — | — | %50.0 | 40.0 | PARTIAL_MEASUREMENT |
-| Fotomaç | MEDIA | 150 | 27 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Fotomaç | MEDIA | 154 | 27 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Hürriyet | MEDIA | 90 | 6 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Sabah | MEDIA | 87 | 12 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Takvim | MEDIA | 67 | 4 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
@@ -92,8 +92,8 @@
 | HaberTS | MEDIA | 13 | 8 | 0 | — | — | — | — | OBSERVING |
 | Gazete Vatan | MEDIA | 11 | 1 | 0 | — | — | — | — | OBSERVING |
 | Haber 7 | MEDIA | 11 | 0 | 0 | — | — | — | — | OBSERVING |
+| Halk TV | MEDIA | 8 | 1 | 0 | — | — | — | — | OBSERVING |
 | Eurohoops | MEDIA | 7 | 3 | 0 | — | — | — | — | OBSERVING |
-| Halk TV | MEDIA | 7 | 1 | 0 | — | — | — | — | OBSERVING |
 | CNN Türk | MEDIA | 5 | 1 | 0 | — | — | — | — | OBSERVING |
 | Fotospor | MEDIA | 4 | 2 | 0 | — | — | — | — | OBSERVING |
 | Haber61 | MEDIA | 4 | 1 | 0 | — | — | — | — | OBSERVING |
@@ -145,6 +145,7 @@
 | Samsun Son Haber | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | SuperHaber | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Sözcü Gazetesi | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
+| TGRT Haber | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Transfer Haber | SECONDARY | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Tıbbiye Bülteni | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | Ulusal Kanal | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
