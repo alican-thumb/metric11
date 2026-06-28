@@ -1,9 +1,9 @@
 # Transfermarkt Lig Geneli Oyuncu Profil Tam-Ad Katmanı
 
-- Kadro kulübü: 0/18
-- Kadro oyuncusu: 0
-- Bu koşuda istenen profil: 0
-- Toplanan profil: 595
+- Kadro kulübü: 18/18
+- Kadro oyuncusu: 505
+- Bu koşuda istenen profil: 505
+- Toplanan profil: 596
 - Tam ad bulunan profil: 298
 - Başarısız profil: 0
 - Risk: HIGH
@@ -30,5 +30,5 @@
 - TÜMOSAN KONYASPOR: profil=30, tam_ad=19
 - ZECORNER KAYSERİSPOR: profil=30, tam_ad=17
 - ÇAYKUR RİZESPOR A.Ş.: profil=25, tam_ad=12
-- ÇORUM FK: profil=28, tam_ad=10
+- ÇORUM FK: profil=29, tam_ad=10
 - İKAS EYÜPSPOR: profil=27, tam_ad=12

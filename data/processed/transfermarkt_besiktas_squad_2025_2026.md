@@ -34,6 +34,6 @@
 - Devrim Şahin: Left Winger (FWD), yaş=19, sözleşme=30/06/2028, değer=€400k
 - Vaclav Cerny: Right Winger (FWD), yaş=28, sözleşme=30/06/2028, değer=€7.00m
 - Cengiz Ünder: Right Winger (FWD), yaş=28, sözleşme=30/06/2026, değer=€4.00m
-- Milot Rashica: Right Winger (FWD), yaş=29, sözleşme=30/06/2027, değer=€3.50m
+- Milot Rashica: Right Winger (FWD), yaş=30, sözleşme=30/06/2027, değer=€3.50m
 - Hyeon-gyu Oh: Centre-Forward (FWD), yaş=25, sözleşme=30/06/2029, değer=€15.00m
 - Mustafa Hekimoğlu: Centre-Forward (FWD), yaş=19, sözleşme=30/06/2028, değer=€5.00m
