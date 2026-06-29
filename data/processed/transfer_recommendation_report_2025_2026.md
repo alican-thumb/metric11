@@ -23,9 +23,9 @@
 | 9 | ÇAYKUR RİZESPOR A.Ş. | YÜKSEK | 52.4 | 1.21 | 1.35 | 1.53 | Kaleci / istikrar |
 | 10 | TÜMOSAN KONYASPOR | YÜKSEK | 47.9 | 1.18 | 1.26 | 1.47 | 6 numara / savunma emniyeti |
 | 11 | CORENDON ALANYASPOR | YÜKSEK | 47.1 | 1.09 | 1.21 | 1.21 | 8 numara / fizik motoru |
-| 12 | ÇORUM FK | YÜKSEK | 44.0 | None | None | None | Kaleci / istikrar |
+| 12 | ERZURUMSPOR FK | YÜKSEK | 44.0 | None | None | None | Kaleci / istikrar |
 | 13 | AMED SFK | YÜKSEK | 44.0 | None | None | None | Kaleci / istikrar |
-| 14 | ERZURUMSPOR FK | YÜKSEK | 44.0 | None | None | None | Kaleci / istikrar |
+| 14 | ÇORUM FK | YÜKSEK | 44.0 | None | None | None | Kaleci / istikrar |
 | 15 | GÖZTEPE A.Ş. | YÜKSEK | 36.2 | 1.62 | 1.24 | 0.94 | 6 numara / savunma emniyeti |
 | 16 | SAMSUNSPOR A.Ş. | YÜKSEK | 35.9 | 1.5 | 1.35 | 1.32 | Kaleci / istikrar |
 | 17 | BEŞİKTAŞ A.Ş. | NORMAL | 27.5 | 1.76 | 1.74 | 1.18 | Sol açık / çizgi kırıcı |
@@ -383,7 +383,7 @@ Zayıf nokta: deplasman zayıf, düşük şut baskısı
   3. MATEUSZ LIS (GÖZTEPE A.Ş.) | 29y | 0 gol | MÜZAKERE PENCERESİ | LOW | skor 20.7
      → Deplasman zayıf sorunu var; Bek / çift yönlü koridor bu açığı kapatacak. Lis: 34 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
 
-### ÇORUM FK  [YÜKSEK]
+### ERZURUMSPOR FK  [YÜKSEK]
 *None puan/maç | maç başına None attı | maç başına None yedi*
 
 Zayıf nokta: yeni lig takımı
@@ -441,7 +441,7 @@ Zayıf nokta: yeni lig takımı
   3. EBERE PAUL ONUACHU (TRABZONSPOR A.Ş.) | 31y | 22 gol | PREMİUM TRANSFER | MEDIUM | skor 23.2
      → Gol üretimi zayıf (maç başına 1.0 gol attı) - Santrfor / skor yükü pozisyonunda yaratıcılık gerekiyor. Onuachu: 22 gol, 28 maç. Uzun sözleşme — yüksek bonusu göze almalı.
 
-### ERZURUMSPOR FK  [YÜKSEK]
+### ÇORUM FK  [YÜKSEK]
 *None puan/maç | maç başına None attı | maç başına None yedi*
 
 Zayıf nokta: yeni lig takımı
