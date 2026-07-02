@@ -2,38 +2,60 @@
 
 - Kaynak: https://www.transfermarkt.com/besiktas-jk/kader/verein/114/saison_id/2025
 - Risk: HIGH
-- Oyuncu: 28
-- Toplam piyasa değeri: €176,000,000
-- Ortalama piyasa değeri: €6,285,714
-- Pozisyon grupları: {'GK': 4, 'DEF': 9, 'MID': 7, 'FWD': 8, 'UNKNOWN': 0}
+- Oyuncu: 50
+- Toplam piyasa değeri: €273,350,000
+- Ortalama piyasa değeri: €5,942,391
+- Pozisyon grupları: {'GK': 5, 'DEF': 16, 'MID': 14, 'FWD': 15, 'UNKNOWN': 0}
 
 ## Oyuncular
 
-- Ersin Destanoğlu: Goalkeeper (GK), yaş=25, sözleşme=30/06/2026, değer=€4.00m
-- Devis Vásquez: Goalkeeper (GK), yaş=28, sözleşme=30/06/2026, değer=€1.50m
-- Emre Bilgin: Goalkeeper (GK), yaş=22, sözleşme=30/06/2027, değer=€400k
-- Emir Yaşar: Goalkeeper (GK), yaş=20, sözleşme=30/06/2028, değer=€100k
-- Emmanuel Agbadou: Centre-Back (DEF), yaş=29, sözleşme=30/06/2030, değer=€16.00m
-- Tiago Djaló: Centre-Back (DEF), yaş=26, sözleşme=30/06/2028, değer=€7.00m
-- Emirhan Topçu: Centre-Back (DEF), yaş=25, sözleşme=30/06/2028, değer=€7.00m
-- Yasin Özcan: Centre-Back (DEF), yaş=20, sözleşme=27/01/2027, değer=€5.00m
-- Felix Uduokhai: Centre-Back (DEF), yaş=28, sözleşme=30/06/2027, değer=€3.50m
-- Rıdvan Yılmaz: Left-Back (DEF), yaş=25, sözleşme=30/06/2028, değer=€5.00m
-- Amir Murillo: Right-Back (DEF), yaş=30, sözleşme=30/06/2028, değer=€7.00m
-- Taylan Bulut: Right-Back (DEF), yaş=20, sözleşme=30/06/2030, değer=€5.00m
-- Gökhan Sazdağı: Right-Back (DEF), yaş=31, sözleşme=30/06/2027, değer=€1.20m
-- Kristjan Asllani: Defensive Midfield (MID), yaş=24, sözleşme=30/06/2026, değer=€12.00m
-- Wilfred Ndidi: Defensive Midfield (MID), yaş=29, sözleşme=30/06/2028, değer=€8.00m
-- Kartal Yılmaz: Defensive Midfield (MID), yaş=25, sözleşme=30/06/2028, değer=€2.50m
-- Necip Uysal: Defensive Midfield (MID), yaş=35, sözleşme=30/06/2027, değer=€100k
-- Orkun Kökçü: Central Midfield (MID), yaş=25, sözleşme=30/06/2026, değer=€25.00m
-- Salih Uçan: Central Midfield (MID), yaş=32, sözleşme=30/06/2026, değer=€800k
-- Junior Olaitan: Attacking Midfield (MID), yaş=24, sözleşme=30/06/2029, değer=€7.00m
-- El Bilal Touré: Left Winger (FWD), yaş=24, sözleşme=30/06/2026, değer=€13.00m
-- Jota Silva: Left Winger (FWD), yaş=26, sözleşme=30/06/2026, değer=€10.00m
-- Devrim Şahin: Left Winger (FWD), yaş=19, sözleşme=30/06/2028, değer=€400k
-- Vaclav Cerny: Right Winger (FWD), yaş=28, sözleşme=30/06/2028, değer=€7.00m
-- Cengiz Ünder: Right Winger (FWD), yaş=28, sözleşme=30/06/2026, değer=€4.00m
-- Milot Rashica: Right Winger (FWD), yaş=30, sözleşme=30/06/2027, değer=€3.50m
-- Hyeon-gyu Oh: Centre-Forward (FWD), yaş=25, sözleşme=30/06/2029, değer=€15.00m
-- Mustafa Hekimoğlu: Centre-Forward (FWD), yaş=19, sözleşme=30/06/2028, değer=€5.00m
+- Ersin Destanoğlu: Goalkeeper (GK), yaş=25, sözleşme=Yok, değer=€4.00m
+- Devis Vásquez: Goalkeeper (GK), yaş=28, sözleşme=Yok, değer=€1.50m
+- Mert Günok: Goalkeeper (GK), yaş=37, sözleşme=Yok, değer=€500k
+- Emre Bilgin: Goalkeeper (GK), yaş=22, sözleşme=Yok, değer=€400k
+- Emir Yaşar: Goalkeeper (GK), yaş=20, sözleşme=Yok, değer=€100k
+- Emmanuel Agbadou: Centre-Back (DEF), yaş=29, sözleşme=Yok, değer=€16.00m
+- Tiago Djaló: Centre-Back (DEF), yaş=26, sözleşme=Yok, değer=€7.00m
+- Emirhan Topçu: Centre-Back (DEF), yaş=25, sözleşme=Yok, değer=€7.00m
+- Yasin Özcan: Centre-Back (DEF), yaş=20, sözleşme=Yok, değer=€5.00m
+- Felix Uduokhai: Centre-Back (DEF), yaş=28, sözleşme=Yok, değer=€3.50m
+- Tayyip Talha Sanuç: Centre-Back (DEF), yaş=26, sözleşme=Yok, değer=€1.50m
+- Gabriel Paulista: Centre-Back (DEF), yaş=35, sözleşme=Yok, değer=€500k
+- Emrecan Uzunhan: Centre-Back (DEF), yaş=25, sözleşme=Yok, değer=€500k
+- David Jurásek: Left-Back (DEF), yaş=25, sözleşme=Yok, değer=€5.00m
+- Rıdvan Yılmaz: Left-Back (DEF), yaş=25, sözleşme=Yok, değer=€5.00m
+- Emrecan Terzi: Left-Back (DEF), yaş=22, sözleşme=Yok, değer=€450k
+- Amir Murillo: Right-Back (DEF), yaş=30, sözleşme=Yok, değer=€7.00m
+- Taylan Bulut: Right-Back (DEF), yaş=20, sözleşme=Yok, değer=€5.00m
+- Gökhan Sazdağı: Right-Back (DEF), yaş=31, sözleşme=Yok, değer=€1.20m
+- Jonas Svensson: Right-Back (DEF), yaş=33, sözleşme=Yok, değer=€500k
+- Asım Efe Işık: Right-Back (DEF), yaş=18, sözleşme=Yok, değer=-
+- Kristjan Asllani: Defensive Midfield (MID), yaş=24, sözleşme=Yok, değer=€12.00m
+- Demir Ege Tıknaz: Defensive Midfield (MID), yaş=21, sözleşme=Yok, değer=€8.00m
+- Wilfred Ndidi: Defensive Midfield (MID), yaş=29, sözleşme=Yok, değer=€8.00m
+- Moatasem Al-Musrati: Defensive Midfield (MID), yaş=30, sözleşme=Yok, değer=€4.50m
+- Amir Hadziahmetovic: Defensive Midfield (MID), yaş=29, sözleşme=Yok, değer=€4.00m
+- Kartal Yılmaz: Defensive Midfield (MID), yaş=25, sözleşme=Yok, değer=€2.50m
+- Necip Uysal: Defensive Midfield (MID), yaş=35, sözleşme=Yok, değer=€100k
+- Orkun Kökçü: Central Midfield (MID), yaş=25, sözleşme=Yok, değer=€25.00m
+- Gedson Fernandes: Central Midfield (MID), yaş=27, sözleşme=Yok, değer=€16.00m
+- Salih Uçan: Central Midfield (MID), yaş=32, sözleşme=Yok, değer=€800k
+- Tayfur Bingöl: Central Midfield (MID), yaş=33, sözleşme=Yok, değer=€400k
+- Ernest Muci: Attacking Midfield (MID), yaş=25, sözleşme=Yok, değer=€11.00m
+- Junior Olaitan: Attacking Midfield (MID), yaş=24, sözleşme=Yok, değer=€7.00m
+- João Mário: Attacking Midfield (MID), yaş=33, sözleşme=Yok, değer=€1.50m
+- El Bilal Touré: Left Winger (FWD), yaş=24, sözleşme=Yok, değer=€13.00m
+- Jota Silva: Left Winger (FWD), yaş=26, sözleşme=Yok, değer=€10.00m
+- Devrim Şahin: Left Winger (FWD), yaş=19, sözleşme=Yok, değer=€400k
+- Ali Pağda: Left Winger (FWD), yaş=17, sözleşme=Yok, değer=-
+- Keny Arroyo: Right Winger (FWD), yaş=20, sözleşme=Yok, değer=€10.00m
+- Vaclav Cerny: Right Winger (FWD), yaş=28, sözleşme=Yok, değer=€7.00m
+- Cengiz Ünder: Right Winger (FWD), yaş=28, sözleşme=Yok, değer=€4.00m
+- Milot Rashica: Right Winger (FWD), yaş=30, sözleşme=Yok, değer=€3.50m
+- Rafa Silva: Second Striker (FWD), yaş=33, sözleşme=Yok, değer=€4.00m
+- Tammy Abraham: Centre-Forward (FWD), yaş=28, sözleşme=Yok, değer=€18.00m
+- Hyeon-gyu Oh: Centre-Forward (FWD), yaş=25, sözleşme=Yok, değer=€15.00m
+- Semih Kılıçsoy: Centre-Forward (FWD), yaş=20, sözleşme=Yok, değer=€11.00m
+- Mustafa Hekimoğlu: Centre-Forward (FWD), yaş=19, sözleşme=Yok, değer=€5.00m
+- Ahmet Sami Bircan: Centre-Forward (FWD), yaş=19, sözleşme=Yok, değer=-
+- Tuna Baran Demir: Centre-Forward (FWD), yaş=18, sözleşme=Yok, değer=-
