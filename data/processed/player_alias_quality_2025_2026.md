@@ -2,17 +2,17 @@
 
 - Manuel alias oyuncusu: 28
 - İşlenen TFF lig profil havuzu: 691
-- Transfermarkt Süper Lig kadrosu: 0/18 kulüp, 0 oyuncu
+- Transfermarkt Süper Lig kadrosu: 17/18 kulüp, 777 oyuncu
 - TFF Beşiktaş profili: 46
 - TFF scout profili: 40
-- Transfermarkt Beşiktaş oyuncusu: 28
+- Transfermarkt Beşiktaş oyuncusu: 50
 - Dış API derin oyuncusu: 115
 
 ## Karşılaştırmalar
 
-- league_tff_vs_transfermarkt: 0/691 eşleşme (%0)
-  - Manuel eşleme: 13 (ağ teyidi bekleyen=13); kullanılabilir eşleme %2
-- besiktas_tff_vs_transfermarkt: 28/46 eşleşme (%61)
+- league_tff_vs_transfermarkt: 476/691 eşleşme (%69)
+  - Manuel eşleme: 7 (ağ teyidi bekleyen=7); kullanılabilir eşleme %70
+- besiktas_tff_vs_transfermarkt: 44/46 eşleşme (%96)
   - Ham tekil kaynak karşılaştırmasıdır; operasyonel manuel eşlemeler lig karşılaştırmasında izlenir.
 - scout_tff_vs_api_deep: 7/40 eşleşme (%18)
 - besiktas_tff_vs_api_deep: 4/46 eşleşme (%9)
@@ -20,18 +20,28 @@
 ## Düşük Skorlu Eşleşmeler
 
 ### league_tff_vs_transfermarkt
+- AHMET SAMİ BİRCAN -> Ahmet Sami Bircan | skor=1.0 | canonical=AHMET SAMI BIRCAN
+- ALİ PAĞDA -> Ali Pağda | skor=1.0 | canonical=ALI PAGDA
+- AMIR HADZIAHMETOVIC -> Amir Hadziahmetovic | skor=1.0 | canonical=AMIR HADZIAHMETOVIC
+- ASIM EFE IŞIK -> Asım Efe Işık | skor=1.0 | canonical=ASIM EFE ISIK
+- BADOBRE EMMANUEL ELYSEE DJEDJE AGBADOU -> Emmanuel Agbadou | skor=1.0 | canonical=BADOBRE EMMANUEL ELYSEE DJEDJE AGBADOU
+- CENGİZ ÜNDER -> Cengiz Ünder | skor=1.0 | canonical=CENGIZ UNDER
+- DAVID JURASEK -> David Jurásek | skor=1.0 | canonical=DAVID JURASEK
+- DEMİR EGE TIKNAZ -> Demir Ege Tıknaz | skor=1.0 | canonical=DEMIR EGE TIKNAZ
+- DEVIS ESTIVEN  VASQUEZ LLACH -> Devis Vásquez | skor=1.0 | canonical=DEVIS ESTIVEN VASQUEZ LLACH
+- DEVRİM ŞAHİN -> Devrim Şahin | skor=1.0 | canonical=DEVRIM SAHIN
 
 ### besiktas_tff_vs_transfermarkt
 - FELIX OHIS UDUOKHAI -> Felix Uduokhai | skor=0.9 | canonical=FELIX OHIS UDUOKHAI
 - JOAO PEDRO FERREIRA DA SILVA -> Jota Silva | skor=0.9 | canonical=JOAO PEDRO FERREIRA DA SILVA
 - KARTAL KAYRA YILMAZ -> Kartal Yılmaz | skor=0.9 | canonical=KARTAL KAYRA YILMAZ
 - MUSTAFA ERHAN HEKİMOĞLU -> Mustafa Hekimoğlu | skor=0.9 | canonical=MUSTAFA ERHAN HEKIMOGLU
+- RAFAEL ALEXANDRE FERNANDES FERREIRA DA SILVA -> Rafa Silva | skor=0.9 | canonical=RAFAEL ALEXANDRE FERNANDES FERREIRA DA SILVA
 - TIAGO EMANUEL EMBALO DJALO -> Tiago Djaló | skor=0.9 | canonical=TIAGO EMANUEL EMBALO DJALO
-- BADOBRE EMMANUEL ELYSEE DJEDJE AGBADOU -> Emmanuel Agbadou | skor=1.0 | canonical=BADOBRE EMMANUEL ELYSEE DJEDJE AGBADOU
-- CENGİZ ÜNDER -> Cengiz Ünder | skor=1.0 | canonical=CENGIZ UNDER
-- DEVIS ESTIVEN  VASQUEZ LLACH -> Devis Vásquez | skor=1.0 | canonical=DEVIS ESTIVEN VASQUEZ LLACH
-- DEVRİM ŞAHİN -> Devrim Şahin | skor=1.0 | canonical=DEVRIM SAHIN
-- EL BILAL TOURE -> El Bilal Touré | skor=1.0 | canonical=EL BILAL TOURE
+- AHMET SAMİ BİRCAN -> Ahmet Sami Bircan | skor=1.0 | canonical=AHMET SAMI BIRCAN
+- ALİ PAĞDA -> Ali Pağda | skor=1.0 | canonical=ALI PAGDA
+- AMIR HADZIAHMETOVIC -> Amir Hadziahmetovic | skor=1.0 | canonical=AMIR HADZIAHMETOVIC
+- ASIM EFE IŞIK -> Asım Efe Işık | skor=1.0 | canonical=ASIM EFE ISIK
 
 ### scout_tff_vs_api_deep
 - KACPER SZYMON KOZLOWSKI -> K. Kozłowski | skor=0.9 | canonical=KACPER SZYMON KOZLOWSKI
@@ -73,24 +83,8 @@
 - HAMZA YİĞİT AKMAN (ATKO GRUP PENDİKSPOR FUTBOL A.Ş.)
 
 ### besiktas_tff_vs_transfermarkt
-- AHMET SAMİ BİRCAN (BEŞİKTAŞ A.Ş.)
-- ALİ PAĞDA (BEŞİKTAŞ A.Ş.)
-- AMIR HADZIAHMETOVIC (BEŞİKTAŞ A.Ş.)
-- ASIM EFE IŞIK (BEŞİKTAŞ A.Ş.)
-- DAVID JURASEK (BEŞİKTAŞ A.Ş.)
-- DEMİR EGE TIKNAZ (BEŞİKTAŞ A.Ş.)
-- EMRECAN UZUNHAN (BEŞİKTAŞ A.Ş.)
-- ERNEST MUÇİ (BEŞİKTAŞ A.Ş.)
-- FEHMİ MERT GÜNOK (BEŞİKTAŞ A.Ş.)
 - GABRIEL ARMANDO DE ABREU (BEŞİKTAŞ A.Ş.)
-- JOAO MARIO NAVAL DA COSTA EDUARDO (BEŞİKTAŞ A.Ş.)
-- JONAS SVENSSON (BEŞİKTAŞ A.Ş.)
-- KENY ALEXANDER ARROYO ALVARADO (BEŞİKTAŞ A.Ş.)
 - KEVIN OGHENETEGA TAMARAEBI BAKUMO ABRAHAM (BEŞİKTAŞ A.Ş.)
-- RAFAEL ALEXANDRE FERNANDES FERREIRA DA SILVA (BEŞİKTAŞ A.Ş.)
-- SERKAN EMRECAN TERZİ (BEŞİKTAŞ A.Ş.)
-- TAYYİP TALHA SANUÇ (BEŞİKTAŞ A.Ş.)
-- TUNA BARAN DEMİR (BEŞİKTAŞ A.Ş.)
 
 ### scout_tff_vs_api_deep
 - ADRIAN DAWID BENEDYCZAK (KASIMPAŞA A.Ş.)
