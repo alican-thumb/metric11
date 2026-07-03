@@ -2,12 +2,12 @@
 
 - Risk: HIGH
 - Lisans durumu: VERIFY_TERMS_BEFORE_COMMERCIAL_USE
-- Toplanan kulüp: 17
-- Atlanan kulüp: 1
-- Oyuncu: 777
-- Toplam piyasa değeri: €1,669,285,000
-- Ortalama piyasa değeri: €2,759,149
-- Pozisyon grupları: {'GK': 89, 'DEF': 235, 'MID': 225, 'FWD': 228, 'UNKNOWN': 0}
+- Toplanan kulüp: 18
+- Atlanan kulüp: 0
+- Oyuncu: 816
+- Toplam piyasa değeri: €1,697,785,000
+- Ortalama piyasa değeri: €2,652,789
+- Pozisyon grupları: {'GK': 92, 'DEF': 248, 'MID': 236, 'FWD': 240, 'UNKNOWN': 0}
 
 ## Kulüpler
 
@@ -23,15 +23,12 @@
 - ÇAYKUR RİZESPOR A.Ş.: oyuncu=35, değer=€48,025,000, verified=True, url=https://www.transfermarkt.com/caykur-rizespor/kader/verein/126/saison_id/2025
 - GAZİANTEP FUTBOL KULÜBÜ A.Ş.: oyuncu=45, değer=€34,850,000, verified=True, url=https://www.transfermarkt.com/gaziantep-fk/kader/verein/2832/saison_id/2025
 - KASIMPAŞA A.Ş.: oyuncu=60, değer=€34,850,000, verified=True, url=https://www.transfermarkt.com/kasimpasa/kader/verein/10484/saison_id/2025
+- KOCAELİSPOR: oyuncu=39, değer=€28,500,000, verified=True, url=https://www.transfermarkt.com/kocaelispor/kader/verein/120/saison_id/2025
 - İKAS EYÜPSPOR: oyuncu=62, değer=€39,825,000, verified=True, url=https://www.transfermarkt.com/eyupspor/kader/verein/7160/saison_id/2025
 - GENÇLERBİRLİĞİ: oyuncu=48, değer=€28,210,000, verified=True, url=https://www.transfermarkt.com/genclerbirligi-ankara/kader/verein/820/saison_id/2025
 - ÇORUM FK: oyuncu=55, değer=€10,575,000, verified=True, url=https://www.transfermarkt.com/corum-fk/kader/verein/37951/saison_id/2025
 - ERZURUMSPOR FK: oyuncu=39, değer=€13,150,000, verified=True, url=https://www.transfermarkt.com/erzurumspor-fk/kader/verein/39722/saison_id/2025
 - AMED SFK: oyuncu=50, değer=€11,900,000, verified=True, url=https://www.transfermarkt.com/amed-sk/kader/verein/12382/saison_id/2025
-
-## Atlananlar
-
-- KOCAELİSPOR: fetch_failed: 502 Server Error: Bad Gateway for url: https://www.transfermarkt.com/kocaelispor/kader/verein/120/saison_id/2025
 
 ## Beşiktaş Tekil Rapor Formatı
 
