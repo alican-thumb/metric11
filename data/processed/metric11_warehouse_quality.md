@@ -32,7 +32,7 @@
 - LOW / matches: Warehouse match rows loaded = 306 -> Bu sayı sezon kapsamıyla tutarlı kalmalı.
 - LOW / referees: Matches missing main referee = 0 -> Eksikse TFF parser veya kaynak değişimi kontrol edilmeli.
 - LOW / players: Players without age/profile enrichment = 0 -> TFF/Transfermarkt/API profil toplama kapsamı genişletilmeli.
-- MEDIUM / scouting: Blueprint candidates with low proxy position confidence = 38 -> Doğrudan pozisyon, boy, ayak ve aksiyon verisiyle güçlendirilmeli.
+- MEDIUM / scouting: Blueprint candidates with low proxy position confidence = 27 -> Doğrudan pozisyon, boy, ayak ve aksiyon verisiyle güçlendirilmeli.
 - MEDIUM / predictions: Beşiktaş match prediction accuracy percent = 55 -> Daha fazla sezon, sakatlık ve odds baseline ile kalibre edilmeli.
 - LOW / goal_candidates: Goal candidate rows loaded = 298 -> Top 8/10 performansı ürün için güçlü sinyal.
 

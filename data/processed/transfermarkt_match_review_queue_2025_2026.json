@@ -1,31 +1,31 @@
 {
   "summary": {
     "tff_profiles": 691,
-    "tm_clubs": 17,
-    "tm_players": 777,
-    "snapshot_in_scope_tff_profiles": 491,
-    "matched_profiles": 476,
-    "verified_matched_profiles": 476,
+    "tm_clubs": 18,
+    "tm_players": 816,
+    "snapshot_in_scope_tff_profiles": 520,
+    "matched_profiles": 505,
+    "verified_matched_profiles": 505,
     "manual_alias_mapped_profiles": 7,
     "manual_alias_pending_network_verification": 7,
-    "operationally_mapped_profiles": 483,
-    "operational_in_scope_mapped_profiles": 480,
-    "unmatched_profiles": 208,
-    "overall_match_rate": 0.689,
-    "in_scope_match_rate": 0.969,
-    "operational_mapping_rate": 0.699,
-    "operational_in_scope_mapping_rate": 0.978,
-    "scout_blocking_unmatched": 5,
+    "operationally_mapped_profiles": 512,
+    "operational_in_scope_mapped_profiles": 509,
+    "unmatched_profiles": 179,
+    "overall_match_rate": 0.731,
+    "in_scope_match_rate": 0.971,
+    "operational_mapping_rate": 0.741,
+    "operational_in_scope_mapping_rate": 0.979,
+    "scout_blocking_unmatched": 4,
     "category_counts": {
-      "OUT_OF_SNAPSHOT_CLUB": 197,
+      "OUT_OF_SNAPSHOT_CLUB": 168,
       "SAME_CLUB_NAME_REVIEW": 1,
       "POSSIBLE_TRANSFER_OR_CLUB_MISMATCH": 1,
       "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 9
     },
     "review_tier_counts": {
-      "SCOUT_BLOCKING": 5,
+      "SCOUT_BLOCKING": 4,
       "ROTATION_USAGE_UNRESOLVED": 11,
-      "OUT_OF_SNAPSHOT": 192
+      "OUT_OF_SNAPSHOT": 164
     },
     "rule": "Doğrulanmış kapsama yalnız snapshot eşleşmesi girer; manuel alias kullanımı ayrı izlenir ve ağ teyidi tamamlanana kadar doğrulanmış sayılmaz."
   },
@@ -151,6 +151,17 @@
       "categories": {
         "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 1
       }
+    },
+    {
+      "team": "KOCAELİSPOR",
+      "tff_profiles": 29,
+      "tm_players": 39,
+      "matched_profiles": 29,
+      "manual_alias_mapped_profiles": 0,
+      "unmatched_profiles": 0,
+      "match_rate": 1.0,
+      "operational_mapping_rate": 1.0,
+      "categories": {}
     },
     {
       "team": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ",
@@ -282,22 +293,6 @@
         "starts": 29,
         "squad_inclusions": 32,
         "goals": 7
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "2820817",
-      "tff_name": "ANFERNEE JAMAL DIJKSTEEL",
-      "tff_club": "KOCAELİSPOR",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 4,
-      "blocks_scout_review": true,
-      "review_tier": "SCOUT_BLOCKING",
-      "season_activity": {
-        "starts": 28,
-        "squad_inclusions": 34,
-        "goals": 0
       },
       "candidate": null,
       "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
@@ -600,22 +595,6 @@
       "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
     },
     {
-      "player_id": "2824649",
-      "tff_name": "HRVOJE SMOLCIC",
-      "tff_club": "KOCAELİSPOR",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 26,
-        "squad_inclusions": 27,
-        "goals": 1
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
       "player_id": "2292629",
       "tff_name": "SERGIO ANTONIO DA LUZ JUNIOR",
       "tff_club": "MISIRLI.COM.TR FATİH KARAGÜMRÜK",
@@ -664,38 +643,6 @@
       "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
     },
     {
-      "player_id": "654985",
-      "tff_name": "AHMET OĞUZ",
-      "tff_club": "KOCAELİSPOR",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 25,
-        "squad_inclusions": 29,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "2820478",
-      "tff_name": "MANUEL LUIS DA SILVA CAFUMANA",
-      "tff_club": "KOCAELİSPOR",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 25,
-        "squad_inclusions": 30,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
       "player_id": "933874",
       "tff_name": "RAMAZAN CİVELEK",
       "tff_club": "ZECORNER KAYSERİSPOR",
@@ -706,22 +653,6 @@
       "season_activity": {
         "starts": 25,
         "squad_inclusions": 31,
-        "goals": 1
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "2827672",
-      "tff_name": "HABIB ALI KEITA",
-      "tff_club": "KOCAELİSPOR",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 24,
-        "squad_inclusions": 28,
         "goals": 1
       },
       "candidate": null,
@@ -739,38 +670,6 @@
         "starts": 24,
         "squad_inclusions": 26,
         "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "2820473",
-      "tff_name": "DANIEL EBENEZER KWASI AGYEI",
-      "tff_club": "KOCAELİSPOR",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 23,
-        "squad_inclusions": 32,
-        "goals": 5
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "649160",
-      "tff_name": "TAYFUR BİNGÖL",
-      "tff_club": "KOCAELİSPOR",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 23,
-        "squad_inclusions": 30,
-        "goals": 5
       },
       "candidate": null,
       "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
@@ -888,22 +787,6 @@
       "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
     },
     {
-      "player_id": "2820495",
-      "tff_name": "MASSADIO HAIDARA",
-      "tff_club": "KOCAELİSPOR",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 21,
-        "squad_inclusions": 24,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
       "player_id": "2828106",
       "tff_name": "GERMAN ONUGKHA",
       "tff_club": "ZECORNER KAYSERİSPOR",
@@ -984,22 +867,6 @@
       "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
     },
     {
-      "player_id": "2821011",
-      "tff_name": "KAROL LINETTY",
-      "tff_club": "KOCAELİSPOR",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 19,
-        "squad_inclusions": 29,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
       "player_id": "2294786",
       "tff_name": "YOUSSEF AIT BENASSER",
       "tff_club": "ZECORNER KAYSERİSPOR",
@@ -1026,38 +893,6 @@
       "season_activity": {
         "starts": 18,
         "squad_inclusions": 19,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "2820455",
-      "tff_name": "ALEKSANDAR JOVANOVIC",
-      "tff_club": "KOCAELİSPOR",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 18,
-        "squad_inclusions": 18,
-        "goals": 1
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "2825139",
-      "tff_name": "BOTOND BALOGH",
-      "tff_club": "KOCAELİSPOR",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 18,
-        "squad_inclusions": 22,
         "goals": 0
       },
       "candidate": null,
@@ -1176,38 +1011,6 @@
       "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
     },
     {
-      "player_id": "1432128",
-      "tff_name": "SERDAR DURSUN",
-      "tff_club": "KOCAELİSPOR",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 16,
-        "squad_inclusions": 29,
-        "goals": 6
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "2820752",
-      "tff_name": "BRUNO PETKOVIC",
-      "tff_club": "KOCAELİSPOR",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 15,
-        "squad_inclusions": 19,
-        "goals": 7
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
       "player_id": "2467794",
       "tff_name": "BARIŞ JAKOB KALAYCI",
       "tff_club": "MISIRLI.COM.TR FATİH KARAGÜMRÜK",
@@ -1266,22 +1069,6 @@
       "season_activity": {
         "starts": 14,
         "squad_inclusions": 33,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "2820580",
-      "tff_name": "JOSEPH NONGE BOENDE",
-      "tff_club": "KOCAELİSPOR",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 14,
-        "squad_inclusions": 32,
         "goals": 0
       },
       "candidate": null,
@@ -1368,22 +1155,6 @@
       "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
     },
     {
-      "player_id": "2557239",
-      "tff_name": "RIGOBERTO MANUEL RIVAS VINDEL",
-      "tff_club": "KOCAELİSPOR",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 13,
-        "squad_inclusions": 26,
-        "goals": 1
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
       "player_id": "2885962",
       "tff_name": "IGOR LICHNOVSKY OSORIO",
       "tff_club": "MISIRLI.COM.TR FATİH KARAGÜMRÜK",
@@ -1410,22 +1181,6 @@
       "season_activity": {
         "starts": 12,
         "squad_inclusions": 17,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "2823787",
-      "tff_name": "DARKO CHURLINOV",
-      "tff_club": "KOCAELİSPOR",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 12,
-        "squad_inclusions": 27,
         "goals": 0
       },
       "candidate": null,
@@ -1560,38 +1315,6 @@
       "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
     },
     {
-      "player_id": "2552004",
-      "tff_name": "CAN KELEŞ",
-      "tff_club": "KOCAELİSPOR",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 9,
-        "squad_inclusions": 27,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "321331",
-      "tff_name": "GÖKHAN DEĞİRMENCİ",
-      "tff_club": "KOCAELİSPOR",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 9,
-        "squad_inclusions": 34,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
       "player_id": "2885634",
       "tff_name": "FEDOR CHALOV",
       "tff_club": "ZECORNER KAYSERİSPOR",
@@ -1635,22 +1358,6 @@
         "starts": 8,
         "squad_inclusions": 30,
         "goals": 2
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "1656775",
-      "tff_name": "SERHAT ÖZTAŞDELEN",
-      "tff_club": "KOCAELİSPOR",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 7,
-        "squad_inclusions": 16,
-        "goals": 0
       },
       "candidate": null,
       "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
@@ -1832,22 +1539,6 @@
       "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
     },
     {
-      "player_id": "2884049",
-      "tff_name": "MAHAMADOU SUSOHO SISSOHO",
-      "tff_club": "KOCAELİSPOR",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 5,
-        "squad_inclusions": 10,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
       "player_id": "1938681",
       "tff_name": "ABDULSAMET BURAK",
       "tff_club": "ZECORNER KAYSERİSPOR",
@@ -1906,22 +1597,6 @@
       "season_activity": {
         "starts": 4,
         "squad_inclusions": 21,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "1403680",
-      "tff_name": "MUHARREM CİNAN",
-      "tff_club": "KOCAELİSPOR",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 4,
-        "squad_inclusions": 30,
         "goals": 0
       },
       "candidate": null,
@@ -2050,22 +1725,6 @@
       "season_activity": {
         "starts": 3,
         "squad_inclusions": 18,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "744266",
-      "tff_name": "SAMET YALÇIN",
-      "tff_club": "KOCAELİSPOR",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 3,
-        "squad_inclusions": 30,
         "goals": 0
       },
       "candidate": null,
@@ -2371,22 +2030,6 @@
         "starts": 1,
         "squad_inclusions": 10,
         "goals": 2
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "2820833",
-      "tff_name": "MATEUSZ WIETESKA",
-      "tff_club": "KOCAELİSPOR",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 1,
-        "squad_inclusions": 1,
-        "goals": 0
       },
       "candidate": null,
       "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
@@ -2898,102 +2541,6 @@
       "season_activity": {
         "starts": 0,
         "squad_inclusions": 4,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "2294108",
-      "tff_name": "AHMET SAĞAT",
-      "tff_club": "KOCAELİSPOR",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 0,
-        "squad_inclusions": 14,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "1926586",
-      "tff_name": "ARDA ÖZYAR",
-      "tff_club": "KOCAELİSPOR",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 0,
-        "squad_inclusions": 6,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "2030549",
-      "tff_name": "DENİZ CEYLAN",
-      "tff_club": "KOCAELİSPOR",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 0,
-        "squad_inclusions": 9,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "1947884",
-      "tff_name": "ESAT YUSUF NARİN",
-      "tff_club": "KOCAELİSPOR",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 0,
-        "squad_inclusions": 4,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "1523336",
-      "tff_name": "FURKAN GEDİK",
-      "tff_club": "KOCAELİSPOR",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 0,
-        "squad_inclusions": 32,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "1985680",
-      "tff_name": "MUHAMMED EFE KÜÇÜK",
-      "tff_club": "KOCAELİSPOR",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 0,
-        "squad_inclusions": 2,
         "goals": 0
       },
       "candidate": null,
@@ -3802,22 +3349,6 @@
         "starts": 29,
         "squad_inclusions": 32,
         "goals": 7
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "2820817",
-      "tff_name": "ANFERNEE JAMAL DIJKSTEEL",
-      "tff_club": "KOCAELİSPOR",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 4,
-      "blocks_scout_review": true,
-      "review_tier": "SCOUT_BLOCKING",
-      "season_activity": {
-        "starts": 28,
-        "squad_inclusions": 34,
-        "goals": 0
       },
       "candidate": null,
       "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."

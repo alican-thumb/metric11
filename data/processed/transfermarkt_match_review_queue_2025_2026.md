@@ -1,18 +1,18 @@
 # Transfermarkt Oyuncu Eşleşme İnceleme Kuyruğu
 
 - TFF profil: 691
-- Transfermarkt snapshot: 17/18 kulüp, 777 oyuncu
-- Snapshot kapsamındaki TFF profil: 491
-- Doğrulanmış snapshot eşleşmesi: 476
+- Transfermarkt snapshot: 18/18 kulüp, 816 oyuncu
+- Snapshot kapsamındaki TFF profil: 520
+- Doğrulanmış snapshot eşleşmesi: 505
 - Manuel eşleme ile kullanılan profil: 7
 - Ağ teyidi bekleyen manuel eşleme: 7
-- Çözülmemiş profil: 208
-- Doğrulanmış genel eşleşme oranı: %68.9
-- Doğrulanmış snapshot içi eşleşme oranı: %96.9
-- Manuel eşleme dahil kullanılabilir snapshot içi kapsama: %97.8
-- Scout incelemesini bloke eden eşleşmeyen oyuncu: 5
-- Sınıf dağılımı: {'OUT_OF_SNAPSHOT_CLUB': 197, 'SAME_CLUB_NAME_REVIEW': 1, 'POSSIBLE_TRANSFER_OR_CLUB_MISMATCH': 1, 'NO_RELIABLE_CANDIDATE_IN_SNAPSHOT': 9}
-- Kullanım önceliği dağılımı: {'SCOUT_BLOCKING': 5, 'ROTATION_USAGE_UNRESOLVED': 11, 'OUT_OF_SNAPSHOT': 192}
+- Çözülmemiş profil: 179
+- Doğrulanmış genel eşleşme oranı: %73.1
+- Doğrulanmış snapshot içi eşleşme oranı: %97.1
+- Manuel eşleme dahil kullanılabilir snapshot içi kapsama: %97.9
+- Scout incelemesini bloke eden eşleşmeyen oyuncu: 4
+- Sınıf dağılımı: {'OUT_OF_SNAPSHOT_CLUB': 168, 'SAME_CLUB_NAME_REVIEW': 1, 'POSSIBLE_TRANSFER_OR_CLUB_MISMATCH': 1, 'NO_RELIABLE_CANDIDATE_IN_SNAPSHOT': 9}
+- Kullanım önceliği dağılımı: {'SCOUT_BLOCKING': 4, 'ROTATION_USAGE_UNRESOLVED': 11, 'OUT_OF_SNAPSHOT': 164}
 - Kural: Doğrulanmış kapsama yalnız snapshot eşleşmesi girer; manuel alias kullanımı ayrı izlenir ve ağ teyidi tamamlanana kadar doğrulanmış sayılmaz.
 
 ## Scout Bloke Eden Kuyruk
@@ -20,7 +20,6 @@
 - KENNETH IMMANUEL PAAL (HESAP.COM ANTALYASPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=SCOUT_BLOCKING, ilk11=32, gol=0, scout_blok=True, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 - IVO  GRBIC (MISIRLI.COM.TR FATİH KARAGÜMRÜK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=SCOUT_BLOCKING, ilk11=32, gol=0, scout_blok=True, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 - LASZLO BENES (ZECORNER KAYSERİSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=SCOUT_BLOCKING, ilk11=29, gol=7, scout_blok=True, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- ANFERNEE JAMAL DIJKSTEEL (KOCAELİSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=SCOUT_BLOCKING, ilk11=28, gol=0, scout_blok=True, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 - BERKAY ÖZCAN (MISIRLI.COM.TR FATİH KARAGÜMRÜK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=SCOUT_BLOCKING, ilk11=26, gol=0, scout_blok=True, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 
 ## Manuel Eşleme Ağ Teyidi Bekleyenler
@@ -47,6 +46,7 @@
 | GENÇLERBİRLİĞİ | 34 | 48 | 34 | 0 | 0 | %100.0 | %100.0 |
 | GÖZTEPE A.Ş. | 30 | 36 | 27 | 1 | 2 | %90.0 | %93.3 |
 | KASIMPAŞA A.Ş. | 35 | 60 | 34 | 0 | 1 | %97.1 | %97.1 |
+| KOCAELİSPOR | 29 | 39 | 29 | 0 | 0 | %100.0 | %100.0 |
 | RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ | 28 | 32 | 28 | 0 | 0 | %100.0 | %100.0 |
 | SAMSUNSPOR A.Ş. | 34 | 44 | 33 | 0 | 1 | %97.1 | %97.1 |
 | TRABZONSPOR A.Ş. | 35 | 42 | 34 | 1 | 0 | %97.1 | %100.0 |
@@ -199,38 +199,6 @@
 ### KESTEL ÇİLEK SPOR KULÜBÜ
 
 - MUHAMMET TAHA GÜNEŞ (KESTEL ÇİLEK SPOR KULÜBÜ): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-
-### KOCAELİSPOR
-
-- ANFERNEE JAMAL DIJKSTEEL (KOCAELİSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=SCOUT_BLOCKING, ilk11=28, gol=0, scout_blok=True, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- HRVOJE SMOLCIC (KOCAELİSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=26, gol=1, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- AHMET OĞUZ (KOCAELİSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=25, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- MANUEL LUIS DA SILVA CAFUMANA (KOCAELİSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=25, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- HABIB ALI KEITA (KOCAELİSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=24, gol=1, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- DANIEL EBENEZER KWASI AGYEI (KOCAELİSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=23, gol=5, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- TAYFUR BİNGÖL (KOCAELİSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=23, gol=5, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- MASSADIO HAIDARA (KOCAELİSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=21, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- KAROL LINETTY (KOCAELİSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=19, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- ALEKSANDAR JOVANOVIC (KOCAELİSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=18, gol=1, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- BOTOND BALOGH (KOCAELİSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=18, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- SERDAR DURSUN (KOCAELİSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=16, gol=6, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- BRUNO PETKOVIC (KOCAELİSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=15, gol=7, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- JOSEPH NONGE BOENDE (KOCAELİSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=14, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- RIGOBERTO MANUEL RIVAS VINDEL (KOCAELİSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=13, gol=1, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- DARKO CHURLINOV (KOCAELİSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=12, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- CAN KELEŞ (KOCAELİSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=9, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- GÖKHAN DEĞİRMENCİ (KOCAELİSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=9, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- SERHAT ÖZTAŞDELEN (KOCAELİSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=7, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- MAHAMADOU SUSOHO SISSOHO (KOCAELİSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=5, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- MUHARREM CİNAN (KOCAELİSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=4, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- SAMET YALÇIN (KOCAELİSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=3, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- MATEUSZ WIETESKA (KOCAELİSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=1, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- AHMET SAĞAT (KOCAELİSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- ARDA ÖZYAR (KOCAELİSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- DENİZ CEYLAN (KOCAELİSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- ESAT YUSUF NARİN (KOCAELİSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- FURKAN GEDİK (KOCAELİSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- MUHAMMED EFE KÜÇÜK (KOCAELİSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 
 ### KİLİS 1984 A.Ş.
 

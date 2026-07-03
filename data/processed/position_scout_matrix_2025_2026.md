@@ -48,9 +48,9 @@ _Savunma önü denge ve kart/tempo yönetimi için güvenli profil._
 - FRANCO DARYL TONGYA HEUBANG (GENÇLERBİRLİĞİ) — fit=86.45, yaş=24, gol=6, ilk11=27
 - GAİUS ABRAHAM JERED MAKOUTA (CORENDON ALANYASPOR) — fit=82.84, yaş=28, gol=1, ilk11=32
 - MELİH İBRAHİMOĞLU (TÜMOSAN KONYASPOR) — fit=82.03, yaş=25, gol=1, ilk11=27
+- HABIB ALI KEITA (KOCAELİSPOR) — fit=82.01, yaş=24, gol=1, ilk11=24
 - ANDRI FANNAR BALDURSSON (KASIMPAŞA A.Ş.) — fit=80.16, yaş=24, gol=0, ilk11=31
 - NOVATUS DISMAS  MIROSHI (GÖZTEPE A.Ş.) — fit=79.34, yaş=23, gol=2, ilk11=24
-- AYOTOMIWA SHERIF DELE BASHIRU (GENÇLERBİRLİĞİ) — fit=78.27, yaş=26, gol=0, ilk11=26
 
 ## Bek / çift yönlü koridor
 _Kanat savunması ve bindirme sürekliliği için ekonomik bek profili._
@@ -70,11 +70,11 @@ _Duran top, hava topu ve temas yoğunluğu için savunma profili._
 - ÜMİT AKDAĞ (CORENDON ALANYASPOR) — fit=88.75, yaş=22, gol=1, ilk11=30
 - NUNO MIGUEL REIS LIMA (CORENDON ALANYASPOR) — fit=78.7, yaş=25, gol=1, ilk11=32
 - MALCOM NARCISSE BOKELE MPUTU (GÖZTEPE A.Ş.) — fit=73.1, yaş=26, gol=3, ilk11=30
+- HRVOJE SMOLCIC (KOCAELİSPOR) — fit=72.37, yaş=25, gol=1, ilk11=26
 - ZAN ZUZEK (GENÇLERBİRLİĞİ) — fit=71.95, yaş=29, gol=2, ilk11=31
 - TAHA ALTIKARDEŞ (GÖZTEPE A.Ş.) — fit=71.39, yaş=22, gol=1, ilk11=15
 - JEROME OPOKU (RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ) — fit=69.31, yaş=27, gol=1, ilk11=31
-- NICHOLAS OPOKU (KASIMPAŞA A.Ş.) — fit=68.27, yaş=28, gol=0, ilk11=26
-- THALISSON KELVEN DA SILVA (GENÇLERBİRLİĞİ) — fit=67.16, yaş=28, gol=2, ilk11=28
+- BOTOND BALOGH (KOCAELİSPOR) — fit=69.2, yaş=23, gol=0, ilk11=18
 
 ## Kaleci / istikrar
 _Rotasyon ve güvenli kadro planı için kaleci profili._
