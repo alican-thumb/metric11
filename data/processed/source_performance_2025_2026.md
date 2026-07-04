@@ -103,7 +103,7 @@
 | alanyaturk.com | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | haberler.com | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | radikal.com.tr | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
-| GZT | MEDIA | 33 | 4 | 0 | — | — | — | — | OBSERVING |
+| GZT | MEDIA | 34 | 5 | 0 | — | — | — | — | OBSERVING |
 | Anadolu Ajansı Spor | AGENCY | 20 | 4 | 0 | — | — | — | — | OBSERVING |
 | Haber 7 | MEDIA | 14 | 0 | 0 | — | — | — | — | OBSERVING |
 | Halk TV | MEDIA | 11 | 1 | 0 | — | — | — | — | OBSERVING |
