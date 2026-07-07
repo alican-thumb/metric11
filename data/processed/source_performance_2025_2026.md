@@ -8,7 +8,7 @@
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 0
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 1655
+- Defterde korunan ilk iddia gözlemi: 1665
 
 ## Kanal Kapsamı
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 1652 | 419 | 1 | — | — | %99.4 | 0.5 | PARTIAL_MEASUREMENT |
+| Google News / medya | 1662 | 423 | 1 | — | — | %99.4 | 0.5 | PARTIAL_MEASUREMENT |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -33,7 +33,7 @@
 |---|---:|---:|---:|---|
 | Yağız Sabuncuoğlu | 3 | 1 | 1 | PARTIAL_MEASUREMENT |
 | Ertan Süzgün | 2 | 0 | 0 | ATTRIBUTION_PENDING |
-| Sports Digitale | 0 | 0 | 0 | ATTRIBUTION_PENDING |
+| Sports Digitale | 1 | 0 | 0 | ATTRIBUTION_PENDING |
 | Yusuf Günaydın | 1 | 0 | 0 | ATTRIBUTION_PENDING |
 | Ekrem Konur | 1 | 0 | 0 | ATTRIBUTION_PENDING |
 
@@ -47,15 +47,15 @@
 
 | Kaynak | Katman | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---|
-| CNN Türk Spor | MEDIA | 47 | 12 | 1 | — | — | %85.7 | 11.4 | PARTIAL_MEASUREMENT |
-| Fotomaç | MEDIA | 213 | 36 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| CNN Türk Spor | MEDIA | 48 | 12 | 1 | — | — | %85.7 | 11.4 | PARTIAL_MEASUREMENT |
+| Fotomaç | MEDIA | 217 | 38 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Sabah | MEDIA | 132 | 22 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
-| Hürriyet | MEDIA | 124 | 13 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Hürriyet | MEDIA | 126 | 14 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Takvim | MEDIA | 95 | 8 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
-| Aksam Spor | MEDIA | 81 | 4 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Aksam Spor | MEDIA | 82 | 4 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Haberturk Spor | MEDIA | 72 | 6 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Milliyet | MEDIA | 57 | 11 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
-| A SPOR | MEDIA | 54 | 16 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| A SPOR | MEDIA | 55 | 17 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | NTVSpor | MEDIA | 49 | 11 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Fanatik | MEDIA | 46 | 15 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Taka Gazete | MEDIA | 43 | 31 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
@@ -124,13 +124,13 @@
 | STAR - Haberler | MEDIA | 4 | 0 | 0 | — | — | — | — | OBSERVING |
 | Yeni Şafak | MEDIA | 4 | 0 | 0 | — | — | — | — | OBSERVING |
 | İhlas Haber Ajansı | MEDIA | 4 | 3 | 0 | — | — | — | — | OBSERVING |
+| 24 Saat Gazetesi Ankara | MEDIA | 3 | 1 | 0 | — | — | — | — | OBSERVING |
 | Aksiyon.com.TR | MEDIA | 3 | 1 | 0 | — | — | — | — | OBSERVING |
 | Goal.com | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
 | NTV Haber | MEDIA | 3 | 1 | 0 | — | — | — | — | OBSERVING |
 | Sözcü Gazetesi | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
 | birgun.net | MEDIA | 3 | 2 | 0 | — | — | — | — | OBSERVING |
 | 2 Mart Gazetesi | MEDIA | 2 | 2 | 0 | — | — | — | — | OBSERVING |
-| 24 Saat Gazetesi Ankara | MEDIA | 2 | 1 | 0 | — | — | — | — | OBSERVING |
 | AKŞAM | MEDIA | 2 | 1 | 0 | — | — | — | — | OBSERVING |
 | Alanya Postası | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Anadolu'da Bugün | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
