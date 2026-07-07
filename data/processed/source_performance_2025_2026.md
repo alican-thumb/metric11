@@ -12,7 +12,7 @@
 
 ## Kanal Kapsamı
 
-- Google News: 300 haber, 30/30 başarılı sorgu.
+- Google News: 295 haber, 30/30 başarılı sorgu.
 - Telegram: 6 mesaj, 8/8 erişilebilir kanal.
 - X: durum=MISSING_CREDENTIALS, gönderi=0, yapılandırılmış hesap=45.
 
@@ -34,7 +34,7 @@
 | Yağız Sabuncuoğlu | 3 | 1 | 1 | PARTIAL_MEASUREMENT |
 | Ertan Süzgün | 3 | 0 | 0 | ATTRIBUTION_PENDING |
 | Sports Digitale | 0 | 0 | 0 | ATTRIBUTION_PENDING |
-| Yusuf Günaydın | 1 | 0 | 0 | ATTRIBUTION_PENDING |
+| Yusuf Günaydın | 2 | 0 | 0 | ATTRIBUTION_PENDING |
 | Ekrem Konur | 1 | 0 | 0 | ATTRIBUTION_PENDING |
 
 ## Skorlama Notu
