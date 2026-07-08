@@ -171,6 +171,7 @@
 | Olay53.com | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | Samsun Gazetesi | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Samsun Son Haber | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
+| Saray Medya | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | SuperHaber | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | TGRT Haber | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Trabzonhaber24 | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
