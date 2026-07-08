@@ -1,18 +1,18 @@
 # Erken Haber Kaynak Performansı
 
-- Transfer sinyali: 62
+- Transfer sinyali: 65
 - Resmi olaya dönüşen transfer: 4
 - Yayın zamanı bulunan resmi teyit: 1/4
 - İlk görülme zamanı bulunan resmi teyit: 4/4
-- Ölçülen kaynak: 66 / gözlenen kaynak: 141
+- Ölçülen kaynak: 67 / gözlenen kaynak: 141
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 0
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 1783
+- Defterde korunan ilk iddia gözlemi: 1790
 
 ## Kanal Kapsamı
 
-- Google News: 301 haber, 30/30 başarılı sorgu.
+- Google News: 297 haber, 30/30 başarılı sorgu.
 - Telegram: 6 mesaj, 8/8 erişilebilir kanal.
 - X: durum=MISSING_CREDENTIALS, gönderi=0, yapılandırılmış hesap=45.
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 1780 | 462 | 1 | — | — | %99.5 | 0.4 | PARTIAL_MEASUREMENT |
+| Google News / medya | 1787 | 463 | 1 | — | — | %99.5 | 0.4 | PARTIAL_MEASUREMENT |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -47,13 +47,13 @@
 
 | Kaynak | Katman | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---|
-| CNN Türk Spor | MEDIA | 50 | 12 | 1 | — | — | %87.5 | 10.0 | PARTIAL_MEASUREMENT |
-| Fotomaç | MEDIA | 228 | 42 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| CNN Türk Spor | MEDIA | 51 | 12 | 1 | — | — | %87.5 | 10.0 | PARTIAL_MEASUREMENT |
+| Fotomaç | MEDIA | 229 | 42 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Sabah | MEDIA | 145 | 26 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
-| Hürriyet | MEDIA | 136 | 14 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Hürriyet | MEDIA | 137 | 14 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Takvim | MEDIA | 104 | 9 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Aksam Spor | MEDIA | 91 | 6 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
-| Haberturk Spor | MEDIA | 78 | 6 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Haberturk Spor | MEDIA | 79 | 6 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Milliyet | MEDIA | 62 | 12 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | A SPOR | MEDIA | 57 | 19 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | NTVSpor | MEDIA | 52 | 11 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
@@ -66,10 +66,11 @@
 | Habertürk | MEDIA | 25 | 11 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Yeniçağ Gazetesi | MEDIA | 25 | 6 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Anadolu Ajansı Spor | AGENCY | 23 | 5 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
-| beinsports.com.tr | MEDIA | 22 | 3 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| beinsports.com.tr | MEDIA | 23 | 4 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | FOTOMAÇ | MEDIA | 21 | 4 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Haberler | MEDIA | 21 | 8 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | HaberTS | MEDIA | 14 | 9 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Halk TV | MEDIA | 14 | 2 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Gazete Vatan | MEDIA | 12 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Transfermarkt | MEDIA | 12 | 4 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | sondakika.com | MEDIA | 11 | 6 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
@@ -115,20 +116,19 @@
 | radikal.com.tr | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | GZT | MEDIA | 42 | 8 | 0 | — | — | — | — | OBSERVING |
 | Haber 7 | MEDIA | 18 | 1 | 0 | — | — | — | — | OBSERVING |
-| Halk TV | MEDIA | 14 | 2 | 0 | — | — | — | — | OBSERVING |
 | Nefes Gazetesi | MEDIA | 8 | 2 | 0 | — | — | — | — | OBSERVING |
 | CNN Türk | MEDIA | 7 | 3 | 0 | — | — | — | — | OBSERVING |
 | Türkiye Gazetesi | MEDIA | 7 | 0 | 0 | — | — | — | — | OBSERVING |
 | 61SAAT | MEDIA | 5 | 1 | 0 | — | — | — | — | OBSERVING |
 | Cumhuriyet | MEDIA | 5 | 1 | 0 | — | — | — | — | OBSERVING |
 | İhlas Haber Ajansı | MEDIA | 5 | 3 | 0 | — | — | — | — | OBSERVING |
+| DHA / Demirören Haber Ajansı | MEDIA | 4 | 2 | 0 | — | — | — | — | OBSERVING |
 | IHA | MEDIA | 4 | 2 | 0 | — | — | — | — | OBSERVING |
 | STAR - Haberler | MEDIA | 4 | 0 | 0 | — | — | — | — | OBSERVING |
 | Sözcü Gazetesi | MEDIA | 4 | 0 | 0 | — | — | — | — | OBSERVING |
 | Yeni Şafak | MEDIA | 4 | 0 | 0 | — | — | — | — | OBSERVING |
 | 24 Saat Gazetesi Ankara | MEDIA | 3 | 1 | 0 | — | — | — | — | OBSERVING |
 | Aksiyon.com.TR | MEDIA | 3 | 1 | 0 | — | — | — | — | OBSERVING |
-| DHA / Demirören Haber Ajansı | MEDIA | 3 | 2 | 0 | — | — | — | — | OBSERVING |
 | Goal.com | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
 | NTV Haber | MEDIA | 3 | 1 | 0 | — | — | — | — | OBSERVING |
 | 2 Mart Gazetesi | MEDIA | 2 | 2 | 0 | — | — | — | — | OBSERVING |
@@ -140,6 +140,7 @@
 | Patronlar Dünyası | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Samsun Haber | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | samsunhaber.com | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
+| Özgür Kocaeli | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | İz Gazete | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Afyon Şehir | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Akdeniz Manşet Gazetesi | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
@@ -171,7 +172,6 @@
 | Olay53.com | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | Samsun Gazetesi | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Samsun Son Haber | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
-| Saray Medya | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | SuperHaber | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | TGRT Haber | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Trabzonhaber24 | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
@@ -187,7 +187,6 @@
 | tv100 Haber | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Çorum Haber Gazetesi | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Çorum Hakimiyet | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
-| Özgür Kocaeli | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | İstanbul Gazetesi | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | @EkremKonur | SECONDARY | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
 | @FBhaberleri | SECONDARY | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
