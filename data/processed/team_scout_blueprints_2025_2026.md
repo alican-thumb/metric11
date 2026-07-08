@@ -35,7 +35,7 @@
 - 6 numara / savunma emniyeti: Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
 - Stoper / hava ve temas: Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 1.44. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
 
-## ÇORUM FK
+## AMED SFK
 
 - Güç: None | GF: None | GA: None | kart: None
 - Zafiyet: yeni lig takımı
@@ -55,7 +55,7 @@
 - Santrfor / skor yükü: Süper Lig'e yeni çıkan takım; Santrfor / skor yükü pozisyonunda deneyimli takviye kritik. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, MOHAMED LAMINE BAYO
 - 6 numara / savunma emniyeti: Süper Lig'e yeni çıkan takım; 6 numara / savunma emniyeti pozisyonunda deneyimli takviye kritik. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
 
-## AMED SFK
+## ÇORUM FK
 
 - Güç: None | GF: None | GA: None | kart: None
 - Zafiyet: yeni lig takımı
