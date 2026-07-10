@@ -2,7 +2,7 @@
 
 - Manuel alias oyuncusu: 28
 - İşlenen TFF lig profil havuzu: 691
-- Transfermarkt Süper Lig kadrosu: 0/18 kulüp, 0 oyuncu
+- Transfermarkt Süper Lig kadrosu: 18/18 kulüp, 816 oyuncu
 - TFF Beşiktaş profili: 46
 - TFF scout profili: 40
 - Transfermarkt Beşiktaş oyuncusu: 50
@@ -10,8 +10,8 @@
 
 ## Karşılaştırmalar
 
-- league_tff_vs_transfermarkt: 0/691 eşleşme (%0)
-  - Manuel eşleme: 13 (ağ teyidi bekleyen=13); kullanılabilir eşleme %2
+- league_tff_vs_transfermarkt: 505/691 eşleşme (%73)
+  - Manuel eşleme: 7 (ağ teyidi bekleyen=7); kullanılabilir eşleme %74
 - besiktas_tff_vs_transfermarkt: 44/46 eşleşme (%96)
   - Ham tekil kaynak karşılaştırmasıdır; operasyonel manuel eşlemeler lig karşılaştırmasında izlenir.
 - scout_tff_vs_api_deep: 7/40 eşleşme (%18)
@@ -20,6 +20,16 @@
 ## Düşük Skorlu Eşleşmeler
 
 ### league_tff_vs_transfermarkt
+- AHMET SAMİ BİRCAN -> Ahmet Sami Bircan | skor=1.0 | canonical=AHMET SAMI BIRCAN
+- ALİ PAĞDA -> Ali Pağda | skor=1.0 | canonical=ALI PAGDA
+- AMIR HADZIAHMETOVIC -> Amir Hadziahmetovic | skor=1.0 | canonical=AMIR HADZIAHMETOVIC
+- ASIM EFE IŞIK -> Asım Efe Işık | skor=1.0 | canonical=ASIM EFE ISIK
+- BADOBRE EMMANUEL ELYSEE DJEDJE AGBADOU -> Emmanuel Agbadou | skor=1.0 | canonical=BADOBRE EMMANUEL ELYSEE DJEDJE AGBADOU
+- CENGİZ ÜNDER -> Cengiz Ünder | skor=1.0 | canonical=CENGIZ UNDER
+- DAVID JURASEK -> David Jurásek | skor=1.0 | canonical=DAVID JURASEK
+- DEMİR EGE TIKNAZ -> Demir Ege Tıknaz | skor=1.0 | canonical=DEMIR EGE TIKNAZ
+- DEVIS ESTIVEN  VASQUEZ LLACH -> Devis Vásquez | skor=1.0 | canonical=DEVIS ESTIVEN VASQUEZ LLACH
+- DEVRİM ŞAHİN -> Devrim Şahin | skor=1.0 | canonical=DEVRIM SAHIN
 
 ### besiktas_tff_vs_transfermarkt
 - FELIX OHIS UDUOKHAI -> Felix Uduokhai | skor=0.9 | canonical=FELIX OHIS UDUOKHAI

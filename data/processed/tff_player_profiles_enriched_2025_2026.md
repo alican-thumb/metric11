@@ -1,18 +1,28 @@
 # TFF × Transfermarkt Zenginleştirilmiş Oyuncu Profilleri — 2025-2026
 
 - Toplam TFF oyuncu: 691
-- Lig snapshot kapsamında TFF oyuncu: 0
-- Kulüp içi canonical eşleşme: 0
-- Kulüp içi profil tam-ad eşleşme: 0
-- Kulüp içi token eşleşme: 0
-- Manuel eşleme (ağ teyidi bekleyen): 13
-- Eşleşmedi: 678
-- Doğrulanmış tüm profil kapsamı: %0.0
-- Doğrulanmış lig snapshot içi kapsama: %0
-- Manuel eşleme dahil kullanılabilir lig snapshot içi kapsama: %0
+- Lig snapshot kapsamında TFF oyuncu: 520
+- Kulüp içi canonical eşleşme: 330
+- Kulüp içi profil tam-ad eşleşme: 124
+- Kulüp içi token eşleşme: 51
+- Manuel eşleme (ağ teyidi bekleyen): 7
+- Eşleşmedi: 179
+- Doğrulanmış tüm profil kapsamı: %73.1
+- Doğrulanmış lig snapshot içi kapsama: %97.1
+- Manuel eşleme dahil kullanılabilir lig snapshot içi kapsama: %98.5
 
 ## En Yüksek Piyasa Değeri (Eşleşen Oyuncular)
 
+- VICTOR JAMES OSIMHEN (GALATASARAY A.Ş.) — €75.0M | Sözleşme: 2029-06-30 | Pozisyon: Centre-Forward
+- BARIŞ ALPER YILMAZ (GALATASARAY A.Ş.) — €30.0M | Sözleşme: 2026-05-31 | Pozisyon: Left Winger
+- MATTEO ELIAS KENZO GUENDOUZI OLIE (FENERBAHÇE A.Ş.) — €27.0M | Sözleşme: 2030-06-30 | Pozisyon: Central Midfield
+- GABRIEL DAVI  GOMES SARA (GALATASARAY A.Ş.) — €27.0M | Sözleşme: 2029-06-30 | Pozisyon: Central Midfield
+- ORKUN KÖKÇÜ (BEŞİKTAŞ A.Ş.) — €25.0M | Sözleşme: 2026-06-30 | Pozisyon: Central Midfield
+- WILFRIED STEPHANE SINGO (GALATASARAY A.Ş.) — €23.0M | Sözleşme: 2030-06-30 | Pozisyon: Right-Back
+- CHRIST RAVYNEL INAO OULAI (TRABZONSPOR A.Ş.) — €23.0M | Sözleşme: 2030-06-30 | Pozisyon: Central Midfield
+- NOA NOËLL LANG (GALATASARAY A.Ş.) — €22.0M | Sözleşme: 2026-06-30 | Pozisyon: Left Winger
+- DORGELES NENE (FENERBAHÇE A.Ş.) — €20.0M | Sözleşme: 2030-06-30 | Pozisyon: Right Winger
+- JAYDEN QUINN OOSTERWOLDE (FENERBAHÇE A.Ş.) — €20.0M | Sözleşme: 2027-05-31 | Pozisyon: Centre-Back
 
 ## Eşleşmeyen Oyuncular (İlk 20)
 
