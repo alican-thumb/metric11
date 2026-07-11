@@ -35,14 +35,14 @@
 - 6 numara / savunma emniyeti: Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
 - Stoper / hava ve temas: Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 1.44. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
 
-## ERZURUMSPOR FK
+## ÇORUM FK
 
 - Güç: None | GF: None | GA: None | kart: None
 - Zafiyet: yeni lig takımı
 - Scout ipucu: Süper Lig deneyimli kaleci, stoper ve santrfor takviyesi — serbest ajan ve kiralık öncelikli.
 - Kaleci / istikrar: Süper Lig'e yeni çıkan takım; Kaleci / istikrar pozisyonunda deneyimli takviye kritik. Adaylar: MOHAMMED AMIN CHERNI, MUHAMMED ŞENGEZER, ANFERNEE JAMAL DIJKSTEEL
 - Stoper / hava ve temas: Süper Lig'e yeni çıkan takım; Stoper / hava ve temas pozisyonunda deneyimli takviye kritik. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
-- Santrfor / skor yükü: Süper Lig'e yeni çıkan takım; Santrfor / skor yükü pozisyonunda deneyimli takviye kritik. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, MOHAMED LAMINE BAYO
+- Santrfor / skor yükü: Süper Lig'e yeni çıkan takım; Santrfor / skor yükü pozisyonunda deneyimli takviye kritik. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, VICTOR JAMES OSIMHEN
 - 6 numara / savunma emniyeti: Süper Lig'e yeni çıkan takım; 6 numara / savunma emniyeti pozisyonunda deneyimli takviye kritik. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
 
 ## AMED SFK
@@ -52,17 +52,17 @@
 - Scout ipucu: Süper Lig deneyimli kaleci, stoper ve santrfor takviyesi — serbest ajan ve kiralık öncelikli.
 - Kaleci / istikrar: Süper Lig'e yeni çıkan takım; Kaleci / istikrar pozisyonunda deneyimli takviye kritik. Adaylar: MOHAMMED AMIN CHERNI, MUHAMMED ŞENGEZER, ANFERNEE JAMAL DIJKSTEEL
 - Stoper / hava ve temas: Süper Lig'e yeni çıkan takım; Stoper / hava ve temas pozisyonunda deneyimli takviye kritik. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
-- Santrfor / skor yükü: Süper Lig'e yeni çıkan takım; Santrfor / skor yükü pozisyonunda deneyimli takviye kritik. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, MOHAMED LAMINE BAYO
+- Santrfor / skor yükü: Süper Lig'e yeni çıkan takım; Santrfor / skor yükü pozisyonunda deneyimli takviye kritik. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, VICTOR JAMES OSIMHEN
 - 6 numara / savunma emniyeti: Süper Lig'e yeni çıkan takım; 6 numara / savunma emniyeti pozisyonunda deneyimli takviye kritik. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
 
-## ÇORUM FK
+## ERZURUMSPOR FK
 
 - Güç: None | GF: None | GA: None | kart: None
 - Zafiyet: yeni lig takımı
 - Scout ipucu: Süper Lig deneyimli kaleci, stoper ve santrfor takviyesi — serbest ajan ve kiralık öncelikli.
 - Kaleci / istikrar: Süper Lig'e yeni çıkan takım; Kaleci / istikrar pozisyonunda deneyimli takviye kritik. Adaylar: MOHAMMED AMIN CHERNI, MUHAMMED ŞENGEZER, ANFERNEE JAMAL DIJKSTEEL
 - Stoper / hava ve temas: Süper Lig'e yeni çıkan takım; Stoper / hava ve temas pozisyonunda deneyimli takviye kritik. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
-- Santrfor / skor yükü: Süper Lig'e yeni çıkan takım; Santrfor / skor yükü pozisyonunda deneyimli takviye kritik. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, MOHAMED LAMINE BAYO
+- Santrfor / skor yükü: Süper Lig'e yeni çıkan takım; Santrfor / skor yükü pozisyonunda deneyimli takviye kritik. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, VICTOR JAMES OSIMHEN
 - 6 numara / savunma emniyeti: Süper Lig'e yeni çıkan takım; 6 numara / savunma emniyeti pozisyonunda deneyimli takviye kritik. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
 
 ## GAZİANTEP FUTBOL KULÜBÜ A.Ş.
@@ -83,7 +83,7 @@
 - Kaleci / istikrar: Savunma kırılganlığında kaleci istikrarı önceliği; GA ortalaması 1.59 — güvenilir kaleci pozisyonu kritik. Adaylar: MOHAMMED AMIN CHERNI, MUHAMMED ŞENGEZER, ANFERNEE JAMAL DIJKSTEEL
 - Stoper / hava ve temas: Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 1.59. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
 - 6 numara / savunma emniyeti: Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
-- Santrfor / skor yükü: Skor üretim problemi için bitirici profil; mevcut gol ortalaması 0.91. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, MOHAMED LAMINE BAYO
+- Santrfor / skor yükü: Skor üretim problemi için bitirici profil; mevcut gol ortalaması 0.91. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, VICTOR JAMES OSIMHEN
 
 ## İKAS EYÜPSPOR
 
@@ -100,8 +100,8 @@
 - Güç: 33.3 | GF: 0.76 | GA: 1.12 | kart: 2.38
 - Zafiyet: skor üretim sorunu, deplasman zayıf, hücum verimsizliği
 - Scout ipucu: Bireysel gol çözümü: düşük GF oranını kıracak bitirici forvet
-- Santrfor / skor yükü: Skor üretim problemi için bitirici profil; mevcut gol ortalaması 0.76. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, MOHAMED LAMINE BAYO
-- Sol açık / çizgi kırıcı: Deplasman veya üretim zafiyetinde çizgi kıran/taşıyıcı hücum profili gerekir. Adaylar: KACPER SZYMON KOZLOWSKI, ANDERSON SOUZA CONCEIÇAO, ERNEST MUÇİ
+- Santrfor / skor yükü: Skor üretim problemi için bitirici profil; mevcut gol ortalaması 0.76. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, VICTOR JAMES OSIMHEN
+- Sol açık / çizgi kırıcı: Deplasman veya üretim zafiyetinde çizgi kıran/taşıyıcı hücum profili gerekir. Adaylar: YUNUS AKGÜN, BARIŞ ALPER YILMAZ, JESURUN  RAK-SAKYI
 - 8 numara / fizik motoru: Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir. Adaylar: ALEXANDRU IULIAN MAXIM, JANDERSON  DE CARVALHO COSTA, QAZIM LACI
 - Bek / çift yönlü koridor: Kanat savunması ve geçiş gücünü aynı anda destekleyecek çift yönlü bek profili gerekir. Adaylar: ALEXANDRU IULIAN MAXIM, MATEUSZ LIS, ANDREAS GIANNIOTIS
 
@@ -120,8 +120,8 @@
 - Güç: 45.6 | GF: 1.06 | GA: 1.38 | kart: 2.12
 - Zafiyet: skor üretim sorunu, deplasman zayıf, düşük şut baskısı
 - Scout ipucu: Ceza sahası koşusu ve bitiricilik üreten forvet/kanat
-- Santrfor / skor yükü: Skor üretim problemi için bitirici profil; mevcut gol ortalaması 1.06. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, MOHAMED LAMINE BAYO
-- Sol açık / çizgi kırıcı: Deplasman veya üretim zafiyetinde çizgi kıran/taşıyıcı hücum profili gerekir. Adaylar: KACPER SZYMON KOZLOWSKI, ANDERSON SOUZA CONCEIÇAO, ERNEST MUÇİ
+- Santrfor / skor yükü: Skor üretim problemi için bitirici profil; mevcut gol ortalaması 1.06. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, VICTOR JAMES OSIMHEN
+- Sol açık / çizgi kırıcı: Deplasman veya üretim zafiyetinde çizgi kıran/taşıyıcı hücum profili gerekir. Adaylar: YUNUS AKGÜN, BARIŞ ALPER YILMAZ, JESURUN  RAK-SAKYI
 - 8 numara / fizik motoru: Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir. Adaylar: ALEXANDRU IULIAN MAXIM, JANDERSON  DE CARVALHO COSTA, QAZIM LACI
 - Bek / çift yönlü koridor: Kanat savunması ve geçiş gücünü aynı anda destekleyecek çift yönlü bek profili gerekir. Adaylar: ALEXANDRU IULIAN MAXIM, MATEUSZ LIS, ANDREAS GIANNIOTIS
 
@@ -132,8 +132,8 @@
 - Scout ipucu: Daha kontrollü ikili mücadele profili ve pasla baskı kıran orta saha
 - 6 numara / savunma emniyeti: Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
 - 8 numara / fizik motoru: Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir. Adaylar: ALEXANDRU IULIAN MAXIM, JANDERSON  DE CARVALHO COSTA, QAZIM LACI
-- Sol açık / çizgi kırıcı: Deplasman veya üretim zafiyetinde çizgi kıran/taşıyıcı hücum profili gerekir. Adaylar: KACPER SZYMON KOZLOWSKI, ANDERSON SOUZA CONCEIÇAO, ERNEST MUÇİ
-- Santrfor / skor yükü: Skor üretim problemi için bitirici profil; mevcut gol ortalaması 1.26. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, MOHAMED LAMINE BAYO
+- Sol açık / çizgi kırıcı: Deplasman veya üretim zafiyetinde çizgi kıran/taşıyıcı hücum profili gerekir. Adaylar: YUNUS AKGÜN, BARIŞ ALPER YILMAZ, JESURUN  RAK-SAKYI
+- Santrfor / skor yükü: Skor üretim problemi için bitirici profil; mevcut gol ortalaması 1.26. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, VICTOR JAMES OSIMHEN
 
 ## CORENDON ALANYASPOR
 
@@ -141,9 +141,9 @@
 - Zafiyet: deplasman zayıf, düşük şut baskısı
 - Scout ipucu: Geçiş oyunu taşıyacak fiziksel orta saha/kanat
 - 8 numara / fizik motoru: Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir. Adaylar: ALEXANDRU IULIAN MAXIM, JANDERSON  DE CARVALHO COSTA, QAZIM LACI
-- Sol açık / çizgi kırıcı: Deplasman veya üretim zafiyetinde çizgi kıran/taşıyıcı hücum profili gerekir. Adaylar: KACPER SZYMON KOZLOWSKI, ANDERSON SOUZA CONCEIÇAO, ERNEST MUÇİ
+- Sol açık / çizgi kırıcı: Deplasman veya üretim zafiyetinde çizgi kıran/taşıyıcı hücum profili gerekir. Adaylar: YUNUS AKGÜN, BARIŞ ALPER YILMAZ, JESURUN  RAK-SAKYI
 - Bek / çift yönlü koridor: Kanat savunması ve geçiş gücünü aynı anda destekleyecek çift yönlü bek profili gerekir. Adaylar: ALEXANDRU IULIAN MAXIM, MATEUSZ LIS, ANDREAS GIANNIOTIS
-- Santrfor / skor yükü: Skor üretim problemi için bitirici profil; mevcut gol ortalaması 1.21. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, MOHAMED LAMINE BAYO
+- Santrfor / skor yükü: Skor üretim problemi için bitirici profil; mevcut gol ortalaması 1.21. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, VICTOR JAMES OSIMHEN
 
 ## GÖZTEPE A.Ş.
 
@@ -152,8 +152,8 @@
 - Scout ipucu: Daha kontrollü ikili mücadele profili ve pasla baskı kıran orta saha
 - 6 numara / savunma emniyeti: Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir. Adaylar: JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU, PEDRO MIGUEL DE ALMEIDA LOPES PEREIRA
 - 8 numara / fizik motoru: Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir. Adaylar: ALEXANDRU IULIAN MAXIM, QAZIM LACI, ORKUN KÖKÇÜ
-- Sol açık / çizgi kırıcı: Deplasman veya üretim zafiyetinde çizgi kıran/taşıyıcı hücum profili gerekir. Adaylar: KACPER SZYMON KOZLOWSKI, ANDERSON SOUZA CONCEIÇAO, ERNEST MUÇİ
-- Santrfor / skor yükü: Skor üretim problemi için bitirici profil; mevcut gol ortalaması 1.24. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, MOHAMED LAMINE BAYO
+- Sol açık / çizgi kırıcı: Deplasman veya üretim zafiyetinde çizgi kıran/taşıyıcı hücum profili gerekir. Adaylar: YUNUS AKGÜN, BARIŞ ALPER YILMAZ, JESURUN  RAK-SAKYI
+- Santrfor / skor yükü: Skor üretim problemi için bitirici profil; mevcut gol ortalaması 1.24. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, VICTOR JAMES OSIMHEN
 
 ## SAMSUNSPOR A.Ş.
 
@@ -170,7 +170,7 @@
 - Güç: 62.5 | GF: 1.74 | GA: 1.18 | kart: 2.32
 - Zafiyet: kadro derinliği sınırlı
 - Scout ipucu: Kaliteli rotasyon: büyük maç baskısını karşılayacak kanat/bek derinliği
-- Sol açık / çizgi kırıcı: Büyük maç rotasyonunu besleyecek ve kanat derinliğini artıracak yaratıcı profil. Adaylar: KACPER SZYMON KOZLOWSKI, ANDERSON SOUZA CONCEIÇAO, ERNEST MUÇİ
+- Sol açık / çizgi kırıcı: Büyük maç rotasyonunu besleyecek ve kanat derinliğini artıracak yaratıcı profil. Adaylar: YUNUS AKGÜN, BARIŞ ALPER YILMAZ, JESURUN  RAK-SAKYI
 - Bek / çift yönlü koridor: Koridor derinliğini artıracak, büyük maç baskısında rotasyon sağlayacak çift yönlü bek. Adaylar: ALEXANDRU IULIAN MAXIM, MATEUSZ LIS, ANDREAS GIANNIOTIS
 
 ## TRABZONSPOR A.Ş.
@@ -178,7 +178,7 @@
 - Güç: 68.6 | GF: 1.79 | GA: 1.15 | kart: 1.71
 - Zafiyet: kadro derinliği sınırlı
 - Scout ipucu: Kaliteli rotasyon: büyük maç baskısını karşılayacak kanat/bek derinliği
-- Sol açık / çizgi kırıcı: Büyük maç rotasyonunu besleyecek ve kanat derinliğini artıracak yaratıcı profil. Adaylar: KACPER SZYMON KOZLOWSKI, ANDERSON SOUZA CONCEIÇAO, YUNUS AKGÜN
+- Sol açık / çizgi kırıcı: Büyük maç rotasyonunu besleyecek ve kanat derinliğini artıracak yaratıcı profil. Adaylar: YUNUS AKGÜN, BARIŞ ALPER YILMAZ, JESURUN  RAK-SAKYI
 - Bek / çift yönlü koridor: Koridor derinliğini artıracak, büyük maç baskısında rotasyon sağlayacak çift yönlü bek. Adaylar: ALEXANDRU IULIAN MAXIM, MATEUSZ LIS, ANDREAS GIANNIOTIS
 
 ## RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ
@@ -186,7 +186,7 @@
 - Güç: 73.3 | GF: 1.71 | GA: 1.03 | kart: 2.12
 - Zafiyet: kadro derinliği sınırlı
 - Scout ipucu: Kaliteli rotasyon: büyük maç baskısını karşılayacak kanat/bek derinliği
-- Sol açık / çizgi kırıcı: Büyük maç rotasyonunu besleyecek ve kanat derinliğini artıracak yaratıcı profil. Adaylar: KACPER SZYMON KOZLOWSKI, ANDERSON SOUZA CONCEIÇAO, ERNEST MUÇİ
+- Sol açık / çizgi kırıcı: Büyük maç rotasyonunu besleyecek ve kanat derinliğini artıracak yaratıcı profil. Adaylar: YUNUS AKGÜN, BARIŞ ALPER YILMAZ, JESURUN  RAK-SAKYI
 - Bek / çift yönlü koridor: Koridor derinliğini artıracak, büyük maç baskısında rotasyon sağlayacak çift yönlü bek. Adaylar: ALEXANDRU IULIAN MAXIM, MATEUSZ LIS, ANDREAS GIANNIOTIS
 
 ## FENERBAHÇE A.Ş.
@@ -194,7 +194,7 @@
 - Güç: 76.5 | GF: 2.26 | GA: 1.09 | kart: 2.47
 - Zafiyet: kadro derinliği sınırlı
 - Scout ipucu: Kaliteli rotasyon: büyük maç baskısını karşılayacak kanat/bek derinliği
-- Sol açık / çizgi kırıcı: Büyük maç rotasyonunu besleyecek ve kanat derinliğini artıracak yaratıcı profil. Adaylar: KACPER SZYMON KOZLOWSKI, ERNEST MUÇİ, YUNUS AKGÜN
+- Sol açık / çizgi kırıcı: Büyük maç rotasyonunu besleyecek ve kanat derinliğini artıracak yaratıcı profil. Adaylar: YUNUS AKGÜN, BARIŞ ALPER YILMAZ, JESURUN  RAK-SAKYI
 - Bek / çift yönlü koridor: Koridor derinliğini artıracak, büyük maç baskısında rotasyon sağlayacak çift yönlü bek. Adaylar: ALEXANDRU IULIAN MAXIM, MATEUSZ LIS, ANDREAS GIANNIOTIS
 
 ## GALATASARAY A.Ş.
@@ -202,5 +202,5 @@
 - Güç: 84.4 | GF: 2.26 | GA: 0.88 | kart: 2.03
 - Zafiyet: kadro derinliği sınırlı
 - Scout ipucu: Kaliteli rotasyon: büyük maç baskısını karşılayacak kanat/bek derinliği
-- Sol açık / çizgi kırıcı: Büyük maç rotasyonunu besleyecek ve kanat derinliğini artıracak yaratıcı profil. Adaylar: KACPER SZYMON KOZLOWSKI, ANDERSON SOUZA CONCEIÇAO, ERNEST MUÇİ
+- Sol açık / çizgi kırıcı: Büyük maç rotasyonunu besleyecek ve kanat derinliğini artıracak yaratıcı profil. Adaylar: JESURUN  RAK-SAKYI, MARIUS MOUNDILMADJI, ANDERSON SOUZA CONCEIÇAO
 - Bek / çift yönlü koridor: Koridor derinliğini artıracak, büyük maç baskısında rotasyon sağlayacak çift yönlü bek. Adaylar: ALEXANDRU IULIAN MAXIM, MATEUSZ LIS, ANDREAS GIANNIOTIS
