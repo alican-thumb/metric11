@@ -1,80 +1,60 @@
 {
-  "generated_at": "2026-07-13T19:47:14.950411+00:00",
+  "generated_at": "2026-07-13T23:12:21.790439+00:00",
   "season": "2025_2026",
   "provider": "telegram_web",
-  "collection_status": "SUCCESS",
-  "successful_channels": 6,
+  "collection_status": "FAILED",
+  "successful_channels": 0,
   "total_channels": 8,
-  "total_messages": 1,
+  "total_messages": 0,
   "channels": [
     {
       "handle": "transferhaber",
       "name": "Transfer Haber",
       "fetched": 0,
-      "error": "HTTPSConnectionPool(host='t.me', port=443): Max retries exceeded with url: /s/transferhaber (Caused by NewConnectionError(\"HTTPSConnection(host='t.me', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+      "error": "HTTPSConnectionPool(host='t.me', port=443): Max retries exceeded with url: /s/transferhaber (Caused by NameResolutionError(\"HTTPSConnection(host='t.me', port=443): Failed to resolve 't.me' ([Errno -2] Name or service not known)\"))"
     },
     {
       "handle": "sporxhaber",
       "name": "Sporx Haber",
       "fetched": 0,
-      "error": "HTTPSConnectionPool(host='t.me', port=443): Max retries exceeded with url: /s/sporxhaber (Caused by NewConnectionError(\"HTTPSConnection(host='t.me', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+      "error": "HTTPSConnectionPool(host='t.me', port=443): Max retries exceeded with url: /s/sporxhaber (Caused by NameResolutionError(\"HTTPSConnection(host='t.me', port=443): Failed to resolve 't.me' ([Errno -2] Name or service not known)\"))"
     },
     {
       "handle": "transferturkiye",
       "name": "Transfer Türkiye",
       "fetched": 0,
-      "error": null
+      "error": "HTTPSConnectionPool(host='t.me', port=443): Max retries exceeded with url: /s/transferturkiye (Caused by NameResolutionError(\"HTTPSConnection(host='t.me', port=443): Failed to resolve 't.me' ([Errno -2] Name or service not known)\"))"
     },
     {
       "handle": "sportransfer",
       "name": "Spor Transfer",
       "fetched": 0,
-      "error": null
+      "error": "HTTPSConnectionPool(host='t.me', port=443): Max retries exceeded with url: /s/sportransfer (Caused by NameResolutionError(\"HTTPSConnection(host='t.me', port=443): Failed to resolve 't.me' ([Errno -2] Name or service not known)\"))"
     },
     {
       "handle": "besiktashaberleri",
       "name": "Beşiktaş Haberleri",
-      "fetched": 1,
-      "error": null
+      "fetched": 0,
+      "error": "HTTPSConnectionPool(host='t.me', port=443): Max retries exceeded with url: /s/besiktashaberleri (Caused by NameResolutionError(\"HTTPSConnection(host='t.me', port=443): Failed to resolve 't.me' ([Errno -2] Name or service not known)\"))"
     },
     {
       "handle": "fenerbahcehaberleri",
       "name": "Fenerbahçe Haberleri",
       "fetched": 0,
-      "error": null
+      "error": "HTTPSConnectionPool(host='t.me', port=443): Max retries exceeded with url: /s/fenerbahcehaberleri (Caused by NameResolutionError(\"HTTPSConnection(host='t.me', port=443): Failed to resolve 't.me' ([Errno -2] Name or service not known)\"))"
     },
     {
       "handle": "galatasarayhaberleri",
       "name": "Galatasaray Haberleri",
       "fetched": 0,
-      "error": null
+      "error": "HTTPSConnectionPool(host='t.me', port=443): Max retries exceeded with url: /s/galatasarayhaberleri (Caused by NameResolutionError(\"HTTPSConnection(host='t.me', port=443): Failed to resolve 't.me' ([Errno -2] Name or service not known)\"))"
     },
     {
       "handle": "trabzonsporhaberleri",
       "name": "Trabzonspor Haberleri",
       "fetched": 0,
-      "error": null
+      "error": "HTTPSConnectionPool(host='t.me', port=443): Max retries exceeded with url: /s/trabzonsporhaberleri (Caused by NameResolutionError(\"HTTPSConnection(host='t.me', port=443): Failed to resolve 't.me' ([Errno -2] Name or service not known)\"))"
     }
   ],
-  "articles": [
-    {
-      "article_id": "5fbfa6fa257a",
-      "source_type": "telegram",
-      "source_name": "Beşiktaş Haberleri",
-      "account_type": "secondary_signal",
-      "source_url": "https://t.me/s/besiktashaberleri",
-      "title": "Messi'nin \"que miras bobo\" lafının kamera arkası.",
-      "link": "https://t.me/besiktashaberleri/10927",
-      "summary": "Messi'nin \"que miras bobo\" lafının kamera arkası.",
-      "full_text": "",
-      "published_at": null,
-      "categories": [
-        "general"
-      ],
-      "super_lig_relevant": true,
-      "related_team": "BEŞİKTAŞ A.Ş.",
-      "analyzed": false,
-      "claude_analysis": null
-    }
-  ]
+  "articles": []
 }
