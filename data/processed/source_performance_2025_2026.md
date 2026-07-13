@@ -8,11 +8,11 @@
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 0
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 1983
+- Defterde korunan ilk iddia gözlemi: 1985
 
 ## Kanal Kapsamı
 
-- Google News: 282 haber, 30/30 başarılı sorgu.
+- Google News: 290 haber, 30/30 başarılı sorgu.
 - Telegram: 6 mesaj, 8/8 erişilebilir kanal.
 - X: durum=MISSING_CREDENTIALS, gönderi=0, yapılandırılmış hesap=45.
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 1980 | 551 | 1 | — | — | %99.6 | 0.3 | PARTIAL_MEASUREMENT |
+| Google News / medya | 1982 | 551 | 1 | — | — | %99.6 | 0.3 | PARTIAL_MEASUREMENT |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -56,7 +56,7 @@
 | Haberturk Spor | MEDIA | 88 | 7 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Milliyet | MEDIA | 66 | 14 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | A SPOR | MEDIA | 64 | 23 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
-| NTVSpor | MEDIA | 61 | 13 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| NTVSpor | MEDIA | 62 | 13 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Fanatik | MEDIA | 56 | 21 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Sporx.com | MEDIA | 52 | 39 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Taka Gazete | MEDIA | 49 | 36 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
@@ -73,8 +73,8 @@
 | HaberTS | MEDIA | 16 | 11 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Halk TV | MEDIA | 16 | 2 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Transfermarkt | MEDIA | 16 | 6 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Gazete Vatan | MEDIA | 14 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Ensonhaber | MEDIA | 13 | 7 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
-| Gazete Vatan | MEDIA | 13 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | sondakika.com | MEDIA | 12 | 7 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | T24 | MEDIA | 10 | 4 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Tıbbiye Bülteni | MEDIA | 10 | 10 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
