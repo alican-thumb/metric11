@@ -1,60 +1,175 @@
 {
-  "generated_at": "2026-07-14T11:44:29.346949+00:00",
+  "generated_at": "2026-07-14T15:43:58.856099+00:00",
   "season": "2025_2026",
   "provider": "telegram_web",
-  "collection_status": "FAILED",
-  "successful_channels": 0,
+  "collection_status": "SUCCESS",
+  "successful_channels": 8,
   "total_channels": 8,
-  "total_messages": 0,
+  "total_messages": 6,
   "channels": [
     {
       "handle": "transferhaber",
       "name": "Transfer Haber",
-      "fetched": 0,
-      "error": "HTTPSConnectionPool(host='t.me', port=443): Max retries exceeded with url: /s/transferhaber (Caused by NameResolutionError(\"HTTPSConnection(host='t.me', port=443): Failed to resolve 't.me' ([Errno -2] Name or service not known)\"))"
+      "fetched": 5,
+      "error": null
     },
     {
       "handle": "sporxhaber",
       "name": "Sporx Haber",
       "fetched": 0,
-      "error": "HTTPSConnectionPool(host='t.me', port=443): Max retries exceeded with url: /s/sporxhaber (Caused by NameResolutionError(\"HTTPSConnection(host='t.me', port=443): Failed to resolve 't.me' ([Errno -2] Name or service not known)\"))"
+      "error": null
     },
     {
       "handle": "transferturkiye",
       "name": "Transfer Türkiye",
       "fetched": 0,
-      "error": "HTTPSConnectionPool(host='t.me', port=443): Max retries exceeded with url: /s/transferturkiye (Caused by NameResolutionError(\"HTTPSConnection(host='t.me', port=443): Failed to resolve 't.me' ([Errno -2] Name or service not known)\"))"
+      "error": null
     },
     {
       "handle": "sportransfer",
       "name": "Spor Transfer",
       "fetched": 0,
-      "error": "HTTPSConnectionPool(host='t.me', port=443): Max retries exceeded with url: /s/sportransfer (Caused by NameResolutionError(\"HTTPSConnection(host='t.me', port=443): Failed to resolve 't.me' ([Errno -2] Name or service not known)\"))"
+      "error": null
     },
     {
       "handle": "besiktashaberleri",
       "name": "Beşiktaş Haberleri",
-      "fetched": 0,
-      "error": "HTTPSConnectionPool(host='t.me', port=443): Max retries exceeded with url: /s/besiktashaberleri (Caused by NameResolutionError(\"HTTPSConnection(host='t.me', port=443): Failed to resolve 't.me' ([Errno -2] Name or service not known)\"))"
+      "fetched": 1,
+      "error": null
     },
     {
       "handle": "fenerbahcehaberleri",
       "name": "Fenerbahçe Haberleri",
       "fetched": 0,
-      "error": "HTTPSConnectionPool(host='t.me', port=443): Max retries exceeded with url: /s/fenerbahcehaberleri (Caused by NameResolutionError(\"HTTPSConnection(host='t.me', port=443): Failed to resolve 't.me' ([Errno -2] Name or service not known)\"))"
+      "error": null
     },
     {
       "handle": "galatasarayhaberleri",
       "name": "Galatasaray Haberleri",
       "fetched": 0,
-      "error": "HTTPSConnectionPool(host='t.me', port=443): Max retries exceeded with url: /s/galatasarayhaberleri (Caused by NameResolutionError(\"HTTPSConnection(host='t.me', port=443): Failed to resolve 't.me' ([Errno -2] Name or service not known)\"))"
+      "error": null
     },
     {
       "handle": "trabzonsporhaberleri",
       "name": "Trabzonspor Haberleri",
       "fetched": 0,
-      "error": "HTTPSConnectionPool(host='t.me', port=443): Max retries exceeded with url: /s/trabzonsporhaberleri (Caused by NameResolutionError(\"HTTPSConnection(host='t.me', port=443): Failed to resolve 't.me' ([Errno -2] Name or service not known)\"))"
+      "error": null
     }
   ],
-  "articles": []
+  "articles": [
+    {
+      "article_id": "ca3cd950fbac",
+      "source_type": "telegram",
+      "source_name": "Transfer Haber",
+      "account_type": "secondary_signal",
+      "source_url": "https://t.me/s/transferhaber",
+      "title": "@transferhaberleri (Instagram) Barış Alper Yılmaz, röportaj verdiği sırada Torreira ve Icardi'nin şakasına maruz kalıyor.",
+      "link": "https://t.me/transferhaber/6534",
+      "summary": "@transferhaberleri (Instagram) Barış Alper Yılmaz, röportaj verdiği sırada Torreira ve Icardi'nin şakasına maruz kalıyor.",
+      "full_text": "",
+      "published_at": null,
+      "categories": [
+        "transfer"
+      ],
+      "super_lig_relevant": true,
+      "related_team": null,
+      "analyzed": false,
+      "claude_analysis": null
+    },
+    {
+      "article_id": "878c29561426",
+      "source_type": "telegram",
+      "source_name": "Transfer Haber",
+      "account_type": "secondary_signal",
+      "source_url": "https://t.me/s/transferhaber",
+      "title": "@transferhaberleri (Instagram) Göbekeres'ten 'Tombul Yaprak Vuruşu'",
+      "link": "https://t.me/transferhaber/6536",
+      "summary": "@transferhaberleri (Instagram) Göbekeres'ten 'Tombul Yaprak Vuruşu'",
+      "full_text": "",
+      "published_at": null,
+      "categories": [
+        "transfer"
+      ],
+      "super_lig_relevant": true,
+      "related_team": null,
+      "analyzed": false,
+      "claude_analysis": null
+    },
+    {
+      "article_id": "022f387b2440",
+      "source_type": "telegram",
+      "source_name": "Transfer Haber",
+      "account_type": "secondary_signal",
+      "source_url": "https://t.me/s/transferhaber",
+      "title": "@transferhaberleri (Instagram) İngiltere'de oynanan 'Amatör Lig' maçında Enfield Town kalecisi Joe Wright, kale vuruşu sırasında arkasını dönüp rakip takım taraftarına yumruk attı.",
+      "link": "https://t.me/transferhaber/6538",
+      "summary": "@transferhaberleri (Instagram) İngiltere'de oynanan 'Amatör Lig' maçında Enfield Town kalecisi Joe Wright, kale vuruşu sırasında arkasını dönüp rakip takım taraftarına yumruk attı.",
+      "full_text": "",
+      "published_at": null,
+      "categories": [
+        "transfer"
+      ],
+      "super_lig_relevant": true,
+      "related_team": null,
+      "analyzed": false,
+      "claude_analysis": null
+    },
+    {
+      "article_id": "d8af7e6f772b",
+      "source_type": "telegram",
+      "source_name": "Transfer Haber",
+      "account_type": "secondary_signal",
+      "source_url": "https://t.me/s/transferhaber",
+      "title": "@transferhaberleri (Instagram) Afrika'da Okullar arası turnuvada Senegal U15 takımı, Fas'ı 4-0 mağlup etti. Fas heyeti, Senegal'de forma giyen oyuncuların yaş olarak daha büyük oldukları yönünde şikay",
+      "link": "https://t.me/transferhaber/6547",
+      "summary": "@transferhaberleri (Instagram) Afrika'da Okullar arası turnuvada Senegal U15 takımı, Fas'ı 4-0 mağlup etti. Fas heyeti, Senegal'de forma giyen oyuncuların yaş olarak daha büyük oldukları yönünde şikayette bulundu.",
+      "full_text": "",
+      "published_at": null,
+      "categories": [
+        "transfer"
+      ],
+      "super_lig_relevant": true,
+      "related_team": null,
+      "analyzed": false,
+      "claude_analysis": null
+    },
+    {
+      "article_id": "b854c9c62523",
+      "source_type": "telegram",
+      "source_name": "Transfer Haber",
+      "account_type": "secondary_signal",
+      "source_url": "https://t.me/s/transferhaber",
+      "title": "@transferhaberleri (Instagram) Fas Ligi takımı Mas Maghrib’in stoperi Driss El Jabali, ters ayağıyla Wydad Casablanca ağlarına rabona füze gönderiyor.",
+      "link": "https://t.me/transferhaber/6550",
+      "summary": "@transferhaberleri (Instagram) Fas Ligi takımı Mas Maghrib’in stoperi Driss El Jabali, ters ayağıyla Wydad Casablanca ağlarına rabona füze gönderiyor.",
+      "full_text": "",
+      "published_at": null,
+      "categories": [
+        "transfer"
+      ],
+      "super_lig_relevant": true,
+      "related_team": null,
+      "analyzed": false,
+      "claude_analysis": null
+    },
+    {
+      "article_id": "5fbfa6fa257a",
+      "source_type": "telegram",
+      "source_name": "Beşiktaş Haberleri",
+      "account_type": "secondary_signal",
+      "source_url": "https://t.me/s/besiktashaberleri",
+      "title": "Messi'nin \"que miras bobo\" lafının kamera arkası.",
+      "link": "https://t.me/besiktashaberleri/10927",
+      "summary": "Messi'nin \"que miras bobo\" lafının kamera arkası.",
+      "full_text": "",
+      "published_at": null,
+      "categories": [
+        "general"
+      ],
+      "super_lig_relevant": true,
+      "related_team": "BEŞİKTAŞ A.Ş.",
+      "analyzed": false,
+      "claude_analysis": null
+    }
+  ]
 }
