@@ -249,6 +249,7 @@ def build_html() -> str:
     intel    = _load(PROCESSED_DIR / f"news_intelligence_{SEASON}.json")
     tracker  = _load(PROCESSED_DIR / f"transfer_tracker_{SEASON}.json")
     ctx      = _load(PROCESSED_DIR / f"transfer_season_context_{SEASON}.json")
+    eu_pulse = _load(PROCESSED_DIR / f"european_news_pulse_{SEASON}.json")
 
     transfers_all = tracker.get("transfers", [])
     player_index = _build_player_index(transfers_all)
@@ -307,6 +308,19 @@ def build_html() -> str:
         )
     else:
         analysis_transfer_links_html = ""
+
+    eu_pulse_items = eu_pulse.get("items", []) if isinstance(eu_pulse, dict) else []
+    if eu_pulse_items:
+        top = eu_pulse_items[0]
+        eu_teaser_html = (
+            '<a href="european_predictions_2026_2027.html" style="display:flex;align-items:flex-start;gap:6px;text-decoration:none;'
+            'background:rgba(74,222,128,.08);border:1px solid rgba(74,222,128,.25);border-radius:7px;padding:8px 10px;margin-bottom:10px">'
+            '<span style="width:6px;height:6px;border-radius:50%;background:#4ade80;margin-top:5px;flex-shrink:0;animation:pulse 2s infinite"></span>'
+            f'<span style="font-size:11px;color:#e2e8f0;line-height:1.4">{escape(top.get("title", ""))}</span>'
+            '</a>'
+        )
+    else:
+        eu_teaser_html = ""
 
     return f"""<!DOCTYPE html>
 <html lang="tr">
@@ -410,6 +424,7 @@ def build_html() -> str:
     {transfer_sidebar_html}
     <div class="panel" style="font-size:13px;background:#09111f;border-color:#1e3a5f">
       <div style="font-size:10px;font-weight:700;color:#f59e0b;letter-spacing:.06em;margin-bottom:10px;text-transform:uppercase">⚽ Avrupa Kupası 2026-27</div>
+      {eu_teaser_html}
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-bottom:12px">
         <a href="european_predictions_2026_2027.html" style="display:flex;flex-direction:column;align-items:center;justify-content:center;background:#0e1929;border:1px solid rgba(245,158,11,.3);border-radius:7px;padding:10px 6px;text-decoration:none;gap:3px">
           <span style="font-size:16px">🏆</span>

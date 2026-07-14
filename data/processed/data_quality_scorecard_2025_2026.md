@@ -1,7 +1,7 @@
 # Veri Kalite ve İstatistik Scorecard
 
-- Ambar: `/home/runner/work/metric11/metric11/data/processed/metric11_warehouse.sqlite`
-- Genel skor: 66.8/100
+- Ambar: `/Users/alicanakyol/Documents/analiz/data/processed/metric11_warehouse.sqlite`
+- Genel skor: 73.6/100
 
 ## Kontroller
 
@@ -17,14 +17,13 @@
 | calibration | wrong_predictions_with_high_confidence_pct | wrong_high_confidence=3, wrong_total=13, pct=23.1 | ✓ | Orta | Yüksek güvenli hatalarda xG farkı, büyük maç ve beraberlik risk bayrakları güveni aşağı çekmeli. |
 | goal_candidates | top_5_hit_pct | hits=20, matches=26, pct=76.9 | ⚠ İzle | Orta | Aday tipleri ayrı backtest edilmeli: primary, penaltı, duran top/defans ve yedek etki. |
 | goal_candidates | top_8_hit_pct | hits=22, matches=26, pct=84.6 | ⚠ İzle | Orta | Aday tipleri ayrı backtest edilmeli: primary, penaltı, duran top/defans ve yedek etki. |
-| scouting | low_position_confidence_pct | low_confidence=275, total=370, pct=74.3 | ✗ Sorun | Yüksek | Düşük güvenli scout adayları doğrudan pozisyon, boy, ayak ve aksiyon verisiyle zenginleştirilmeli. |
+| scouting | low_position_confidence_pct | low_confidence=0, total=263, pct=0.0 | ✓ | Orta | Düşük güvenli scout adayları doğrudan pozisyon, boy, ayak ve aksiyon verisiyle zenginleştirilmeli. |
 
 ## Öncelikli Aksiyonlar
 
 - **Yüksek öncelik** — model / besiktas_display_prediction_accuracy_pct: Ekran ayarı aynı sezonda geliştirildi; yeni sezon veya ayrılmış sezonda sabit kurallarla doğrulanmadan genel başarı iddiası yapılmamalı.
 - **Yüksek öncelik** — model / draw_recall_pct: Beraberlik sadece çok yüksek risk ve dar olasılık farkında ekran tahminine çekilmeli; diğer durumlarda korumalı senaryo dili kullanılmalı.
 - **Yüksek öncelik** — player_profiles / manual_alias_pending_network_verification: Operasyonda kullanılan manuel pozisyon ve piyasa değeri eşlemeleri Transfermarkt profil bağlantısıyla doğrulanana kadar teyit bekliyor olarak gösterilmeli.
-- **Yüksek öncelik** — scouting / low_position_confidence_pct: Düşük güvenli scout adayları doğrudan pozisyon, boy, ayak ve aksiyon verisiyle zenginleştirilmeli.
 - **Yüksek öncelik** — scouting / unmatched_players_blocking_scout_review: Scout kuyruğunu bloke eden oyuncular için aynı kulüp Transfermarkt adı veya resmi profil doğrulanmalı; doğrulanmadan rol önerisi yayınlanmamalı.
 - **Orta öncelik** — goal_candidates / top_5_hit_pct: Aday tipleri ayrı backtest edilmeli: primary, penaltı, duran top/defans ve yedek etki.
 - **Orta öncelik** — goal_candidates / top_8_hit_pct: Aday tipleri ayrı backtest edilmeli: primary, penaltı, duran top/defans ve yedek etki.
@@ -44,18 +43,14 @@
 ## Gol Adayı Segmentleri
 
 - primary+impact_sub: 134 satır, 19 isabet satırı, %14.2
-- primary: 103 satır, 11 isabet satırı, %10.7
-- impact_sub: 28 satır, 4 isabet satırı, %14.3
-- primary+set_piece_defender: 25 satır, 0 isabet satırı, %0.0
+- primary: 106 satır, 12 isabet satırı, %11.3
+- impact_sub: 26 satır, 4 isabet satırı, %15.4
+- primary+set_piece_defender: 24 satır, 0 isabet satırı, %0.0
 - unknown: 8 satır, 2 isabet satırı, %25.0
 
 ## Scout Pozisyon Güveni
 
-- LOW_POSITION_UNVERIFIED: 275
-- MEDIUM: 46
-- HIGH_EXTERNAL_PROFILE: 37
-- HIGH: 10
-- DERIVED: 2
+- MEDIUM_DERIVED_ROLE: 263
 
 ## Tablo Kapsamı
 
@@ -72,5 +67,5 @@
 - referee_profiles: 29
 - referees: 29
 - team_profiles: 18
-- team_scout_blueprints: 370
+- team_scout_blueprints: 263
 - teams: 18

@@ -60,6 +60,7 @@ DEFAULT_COMMANDS = [
     ["python", "-m", "src.build_command_center"],
     ["python", "-m", "src.analyze_worldcup_predictions"],
     ["python", "-m", "src.build_worldcup_predictions"],
+    ["python", "-m", "src.build_european_news_pulse"],
     ["python", "-m", "src.analyze_european_predictions"],
     ["python", "-m", "src.build_european_predictions"],
     ["python", "-m", "src.build_product_home"],

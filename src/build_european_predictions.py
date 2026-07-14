@@ -7,10 +7,11 @@ from datetime import datetime, timedelta, timezone
 from html import escape
 from pathlib import Path
 
-from src.config import PROCESSED_DIR, ensure_data_dirs
+from src.config import PROCESSED_DIR, SEASON, ensure_data_dirs
 
 INPUT_PATH  = PROCESSED_DIR / "european_predictions_2026_2027.json"
 OUTPUT_PATH = PROCESSED_DIR / "european_predictions_2026_2027.html"
+PULSE_PATH  = PROCESSED_DIR / f"european_news_pulse_{SEASON}.json"
 
 _TZ_TR = timezone(timedelta(hours=3))
 
@@ -136,6 +137,18 @@ nav a:hover,nav a.active { background:#0f2030;color:white; }
 .today-dot { width:7px;height:7px;border-radius:50%;background:#f59e0b;animation:pulse 2s infinite; }
 @keyframes pulse { 0%,100%{opacity:1}50%{opacity:.3} }
 .today-grid { display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px; }
+
+/* Pulse (haber nabzı) */
+.pulse-wrap { background:rgba(34,197,94,.05);border:1px solid rgba(34,197,94,.2);border-radius:12px;padding:18px 20px;margin-bottom:24px; }
+.pulse-lbl { font-size:11px;font-weight:700;color:#4ade80;text-transform:uppercase;letter-spacing:1.2px;margin-bottom:4px;display:flex;align-items:center;gap:8px; }
+.pulse-note { font-size:11px;color:var(--muted);margin-bottom:14px;line-height:1.5; }
+.pulse-list { display:flex;flex-direction:column;gap:8px; }
+.pulse-item { display:flex;flex-direction:column;gap:3px;padding:10px 12px;background:var(--panel);border:1px solid var(--border);border-radius:8px;text-decoration:none; }
+.pulse-item:hover { border-color:#2a4a6a; }
+.pulse-title { font-size:13px;font-weight:700;color:white; }
+.pulse-meta { font-size:10px;color:var(--muted);display:flex;gap:8px;flex-wrap:wrap; }
+.pulse-comp-tag { font-weight:700; }
+.pulse-club-tag { background:var(--panel2);padding:1px 6px;border-radius:4px; }
 
 /* Logo */
 .team-logo { width:20px;height:20px;object-fit:contain;vertical-align:middle;margin-right:5px; }
@@ -289,47 +302,67 @@ def _build_preseason_content() -> str:
         for date, label, color, emoji in timeline
     )
 
-    turkish_clubs = [
-        ("Galatasaray",  "UCL Lig Fazı",       "#f59e0b", "Şampiyonlar Ligi doğrudan katılım"),
-        ("Fenerbahçe",   "UCL Play-off",        "#f59e0b", "Şampiyonlar Ligi play-off turu"),
-        ("Beşiktaş",     "UEL Lig Fazı",        "#f97316", "Avrupa Ligi lig fazı"),
-        ("Trabzonspor",  "UECL Nitelendirme",   "#22c55e", "Konferans Ligi nitelendirme"),
-        ("Başakşehir",   "Belirsiz",            "#64748b", "Lig sıralamasına göre değişebilir"),
-    ]
-    club_cards = "".join(
-        f"""<div style="background:var(--panel2);border:1px solid var(--border);border-radius:8px;padding:12px 14px">
-          <div style="font-size:13px;font-weight:700;color:white;margin-bottom:4px">{name}</div>
-          <div style="font-size:11px;font-weight:700;color:{color};margin-bottom:3px">{comp}</div>
-          <div style="font-size:11px;color:var(--muted)">{note}</div>
-        </div>"""
-        for name, comp, color, note in turkish_clubs
-    )
-
     return f"""
 <div style="max-width:800px;margin:0 auto;padding:20px 0">
   <div style="background:rgba(245,158,11,.06);border:1px solid rgba(245,158,11,.2);border-radius:12px;padding:20px 24px;margin-bottom:24px">
     <div style="font-size:11px;font-weight:700;color:#f59e0b;letter-spacing:1.2px;text-transform:uppercase;margin-bottom:4px">⏳ Fixture verisi bekleniyor</div>
     <div style="font-size:14px;color:var(--ink);line-height:1.6">
-      UCL 1. Nitelendirme Turu maçları başladı. Tahminler <strong>günlük 4 kez</strong> güncellenir —
-      fixture verisi API'den geldiğinde bu sayfa otomatik dolacak.
+      UEFA nitelendirme turları oynanıyor; football-data.org ücretsiz planı bu turların fikstürünü
+      kapsamıyor. Aşağıdaki <strong>haber nabzı</strong> gerçek kaynaklardan derlenen güncel durumu gösterir —
+      lig fazı fikstürü API'den geldiğinde bu sayfa otomatik dolacak.
     </div>
-  </div>
-
-  <div style="margin-bottom:28px">
-    <div style="font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:14px">📅 2026-27 UEFA Takvimi</div>
-    {rows}
   </div>
 
   <div>
-    <div style="font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:14px">🇹🇷 Türk Kulüpler (Tahmini)</div>
-    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px">
-      {club_cards}
-    </div>
-    <div style="font-size:11px;color:var(--muted);margin-top:10px">
-      * Katılım bilgileri tahminidir, UEFA kura çekimi ve play-off sonuçlarına göre kesinleşir.
-    </div>
+    <div style="font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:14px">📅 2026-27 UEFA Takvimi (genel, yaklaşık)</div>
+    {rows}
   </div>
 </div>"""
+
+
+def _load_pulse() -> list[dict]:
+    if not PULSE_PATH.exists():
+        return []
+    try:
+        payload = json.loads(PULSE_PATH.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return []
+    return payload.get("items", [])
+
+
+def _build_pulse_section(items: list[dict]) -> str:
+    """football-data.org nitelendirme fikstürü sağlamadığında/eksik kaldığında haber
+    kaynaklarından derlenen gerçek, kaynaklı Avrupa kupası sinyalini gösterir."""
+    if not items:
+        return ""
+    rows = []
+    for item in items[:12]:
+        title = escape(item.get("title", ""))
+        link = escape(item.get("link", "") or "#")
+        source = escape(item.get("source", ""))
+        dt = _parse_utc(item.get("published_at", ""))
+        date_str = _fmt_date(dt) if dt else ""
+        comp = item.get("competition")
+        comp_html = (
+            f'<span class="pulse-comp-tag" style="color:{_COMP_COLOR.get(comp,"#60a5fa")}">'
+            f'{_COMP_EMOJI.get(comp,"")} {escape(comp)}</span>'
+        ) if comp else ""
+        club_tags = "".join(
+            f'<span class="pulse-club-tag">{escape(c)}</span>' for c in item.get("clubs", [])
+        )
+        rows.append(
+            f'<a class="pulse-item" href="{link}" target="_blank" rel="noopener">'
+            f'<div class="pulse-title">{title}</div>'
+            f'<div class="pulse-meta"><span>{source}</span><span>{escape(date_str)}</span>{comp_html}{club_tags}</div>'
+            f'</a>'
+        )
+    return (
+        '<div class="pulse-wrap">'
+        '<div class="pulse-lbl"><span class="today-dot"></span>⚽ Avrupa Kupası Haber Nabzı</div>'
+        '<div class="pulse-note">UEFA nitelendirme/eleme turu haberleri — gerçek kaynaklardan, günde birkaç kez güncellenir.</div>'
+        f'<div class="pulse-list">{"".join(rows)}</div>'
+        '</div>'
+    )
 
 
 def _build_today_section(all_comps: dict) -> str:
@@ -456,6 +489,7 @@ def build_page(data: dict) -> str:
 
     # Sections
     today_html = _build_today_section(comps)
+    pulse_html = _build_pulse_section(_load_pulse())
     if comps:
         sections_html = "\n".join(_build_comp_section(code, comp) for code, comp in comps.items())
     else:
@@ -507,6 +541,7 @@ def build_page(data: dict) -> str:
 
   <div class="main">
     {today_html}
+    {pulse_html}
     {sections_html}
   </div>
 

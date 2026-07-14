@@ -13,12 +13,12 @@
 - Eski scout parça profil dosyası: 40
 - Eski öncelikli profil parça dosyası: 608
 - Birleşik lig oyuncu profili: 691
-- Transfermarkt Süper Lig kulübü: 0/18
-- Transfermarkt Süper Lig oyuncusu: 0
-- Transfermarkt Süper Lig toplam değer: €0
+- Transfermarkt Süper Lig kulübü: 15/18
+- Transfermarkt Süper Lig oyuncusu: 424
+- Transfermarkt Süper Lig toplam değer: €1,318,950,000
 - Transfermarkt oyuncu profil detayı/tam adı: 596/298
-- TFF / Transfermarkt doğrulanmış snapshot eşleşmesi: 0/691 (%0)
-- TFF / Transfermarkt doğrulanmış lig snapshot içi kapsama: 0/0 (%0)
+- TFF / Transfermarkt doğrulanmış snapshot eşleşmesi: 410/691 (%59)
+- TFF / Transfermarkt doğrulanmış lig snapshot içi kapsama: 410/0 (%0)
 - TFF / Transfermarkt manuel eşleme: 13 profil; ağ teyidi bekleyen 13
 - TFF / Transfermarkt manuel dahil kullanılabilir lig içi kapsama: 0/0 (%0)
 - TFF / Transfermarkt çözülmemiş kuyruğu: 678 profil; scout bloke eden 23
@@ -37,8 +37,8 @@
 - Tahmin hata analizi kaçan maç: 13
 - Tahmin hata analizi kaçan beraberlik: 8
 - Lig tahmin doğruluğu: %46
-- Lig piyasa değeri audit kapsamı: 0 maç
-- Lig piyasa değeri baseline doğruluğu: %0
+- Lig piyasa değeri audit kapsamı: 177 maç
+- Lig piyasa değeri baseline doğruluğu: %50
 - Oyuncu uygunluk maç kapsamı: 34
 - Eksik oyuncu sinyali olan maç: 11
 - Eksik oyuncu sinyali: 14

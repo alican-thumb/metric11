@@ -16,6 +16,7 @@ def main() -> None:
     parser.add_argument("--output-prefix", default="transfermarkt_super_lig_squads_2025_2026")
     parser.add_argument("--delay-seconds", type=float, default=8.0)
     parser.add_argument("--only-verified", action="store_true", help="Sadece verified=true kulüpleri toplar.")
+    parser.add_argument("--cache-only", action="store_true", help="Ağ çağrısı yapmadan mevcut raw HTML cache dosyalarından üretir.")
     args = parser.parse_args()
 
     club_payload = json.loads(Path(args.clubs).read_text(encoding="utf-8"))
@@ -30,15 +31,37 @@ def main() -> None:
             skipped.append({**club, "reason": "missing_slug_or_id"})
             continue
         url = f"{TRANSFERMARKT_BASE}/{club['club_slug']}/kader/verein/{club['club_id']}/saison_id/{season_id}"
-        try:
-            html = fetch(url)
-        except Exception as exc:  # noqa: BLE001 - collector must keep partial progress
-            skipped.append({**club, "url": url, "reason": f"fetch_failed: {exc}"})
-            continue
         raw_path = RAW_DIR / "transfermarkt" / args.output_prefix / f"{club['club_id']}.html"
-        raw_path.parent.mkdir(parents=True, exist_ok=True)
-        raw_path.write_text(html, encoding="utf-8")
-        players = parse_squad(html)
+        if args.cache_only:
+            players = parse_cached_squad(raw_path)
+            if players:
+                source_mode = "cache_only"
+            else:
+                skipped.append({**club, "url": url, "reason": "cache_missing_or_empty"})
+                continue
+        else:
+            try:
+                html = fetch(url)
+                players = parse_squad(html)
+                if players:
+                    raw_path.parent.mkdir(parents=True, exist_ok=True)
+                    raw_path.write_text(html, encoding="utf-8")
+                    source_mode = "live"
+                else:
+                    cached_players = parse_cached_squad(raw_path)
+                    if cached_players:
+                        players = cached_players
+                        source_mode = "cache_after_empty_live"
+                    else:
+                        skipped.append({**club, "url": url, "reason": "empty_squad"})
+                        continue
+            except Exception as exc:  # noqa: BLE001 - collector must keep partial progress
+                players = parse_cached_squad(raw_path)
+                if players:
+                    source_mode = "cache_after_fetch_failed"
+                else:
+                    skipped.append({**club, "url": url, "reason": f"fetch_failed: {exc}"})
+                    continue
         collected.append(
             {
                 "team_name": club.get("team_name"),
@@ -46,6 +69,7 @@ def main() -> None:
                 "club_id": club["club_id"],
                 "verified": club.get("verified", False),
                 "url": url,
+                "source_mode": source_mode,
                 "players": players,
                 "summary": summarize(players),
             }
@@ -64,11 +88,40 @@ def main() -> None:
         "skipped": skipped,
         "summary": summarize_league(collected),
     }
+    if not collected:
+        previous = load_previous_nonempty(PROCESSED_DIR / f"{args.output_prefix}.json")
+        if previous:
+            previous["stale_reason"] = "collector_produced_no_nonempty_clubs"
+            previous["skipped_latest"] = skipped
+            payload = previous
+
     json_path = PROCESSED_DIR / f"{args.output_prefix}.json"
     md_path = PROCESSED_DIR / f"{args.output_prefix}.md"
     json_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     md_path.write_text(build_league_markdown(payload), encoding="utf-8")
     print(md_path.read_text(encoding="utf-8"))
+
+
+def parse_cached_squad(path: Path) -> list[dict]:
+    if not path.exists():
+        return []
+    try:
+        players = parse_squad(path.read_text(encoding="utf-8"))
+    except Exception:  # noqa: BLE001 - corrupt cache should not stop collection
+        return []
+    return players
+
+
+def load_previous_nonempty(path: Path) -> dict | None:
+    if not path.exists():
+        return None
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return None
+    if payload.get("summary", {}).get("players", 0) > 0:
+        return payload
+    return None
 
 
 def summarize_league(clubs: list[dict]) -> dict:
@@ -106,8 +159,12 @@ def build_league_markdown(payload: dict) -> str:
     for club in payload["clubs"]:
         lines.append(
             f"- {club['team_name']}: oyuncu={club['summary']['players']}, "
-            f"değer=€{club['summary']['market_value_total_eur']:,}, verified={club.get('verified')}, url={club['url']}"
+            f"değer=€{club['summary']['market_value_total_eur']:,}, verified={club.get('verified')}, "
+            f"mode={club.get('source_mode', 'unknown')}, url={club['url']}"
         )
+    if payload.get("stale_reason"):
+        lines.extend(["", "## Stale Koruma", ""])
+        lines.append(f"- Sebep: {payload['stale_reason']}")
     if payload["skipped"]:
         lines.extend(["", "## Atlananlar", ""])
         for item in payload["skipped"]:

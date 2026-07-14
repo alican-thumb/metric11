@@ -1664,3 +1664,165 @@ Bir sonraki oturumda önce `PROJECT_STATE.md` okunmalı. Ardından öncelik:
 - `build_position_scout_matrix.py`: `all_candidates` → `sl_candidates` güncellendi; Beşiktaş'a özgü ROLE_REQUIREMENTS `reason` alanları lig geneli hale getirildi; `--needs` ve `team_need_boost` bağımlılığı kaldırıldı; takım dropdown JS filtresi eklendi; her satırda `data-team` attribute ile seçilen takım oyuncuları gizleniyor; 18 takım, 7 rol, 140 rol-aday eşleşmesi.
 - Scheduled routine: 1 Haziran 2026 06:00 UTC — TM 2026/27 kadro çekme rutini doğrulandı (trig_01A7S3rVBjvWfi3X61XkAtck).
 - `transfer_recommendation_report` ve `enriched_scout_dashboard` zaten tüm 18 takımı kapsıyor; değişiklik gerekmedi.
+
+## 2026-07-04 Günlük Veri/Geliştirme Kontrolü
+
+- 4 Temmuz kontrolünde `data/` altında bugün üretilmiş yeni dosya bulunmadı. `data/processed` içindeki son geniş üretim hâlâ 27 Haziran 2026 tarihli görünüyor.
+- `daily_pipeline_run_latest.md` güncel pipeline durumunu yansıtmıyor; son kayıt 26 Mayıs 2026 ağsız `48/48` başarılı koşu. Bu dosya operasyon gözleminde güvenilir güncel kaynak değil.
+- `PROJECT_STATE.md` Temmuz operasyon durumunu içermiyordu; bu not sonraki agent için güncel kontrol kaydı olarak eklendi.
+- Transfermarkt genel kadro snapshotlarında regresyon devam ediyor: `transfermarkt_super_lig_squads_2025_2026.json` ve `transfermarkt_super_lig_squads_2026_2027.json` özetleri `0` kulüp / `0` oyuncu. Buna karşılık Beşiktaş özel snapshotı sağlam: `28` oyuncu, toplam `176M EUR`.
+- Scout ana havuzu mevcut: `position_scout_matrix_2025_2026.json` özetinde `691` aday, `7` rol, `91` rol eşleşmesi, `18` takım; `fm_style_scout_program_2025_2026.json` özetinde `691` Süper Lig adayı, `2038` global havuz, `269` FM23 eşleşmesi var.
+- Scout kalite raporu ana havuzu doğru yansıtmıyor: `scout_quality_report_2025_2026.json` yalnız `63` blueprint linki ve `7` pozisyon matrisi adayı gösteriyor. Bu rapor ya dar filtre okuyor ya da eski/yanlış kaynağa bağlı.
+- Tahmin kalite göstergeleri güncellenmemiş: `data_quality_scorecard` skoru `80.5`; Beşiktaş display tahmin doğruluğu `%55.2`; beraberlik recall `%11.1` FAIL; top-5 gol adayı hit `%76.9`, top-8 `%84.6`.
+- OOS validation hâlâ zayıf: ikinci yarı bağımsız doğruluk `%45.8`; HIGH güven segmenti `%58.7`, MEDIUM `%37.5`, LOW `%35.7`.
+- Kaynak izleme listesi `2026-05-25` tarihli; kaynak performansı 27 Haziran snapshotında `112` gözlenen kaynak, `40` skorlanan kaynak, `1125` claim observation gösteriyor. Transfer tracker ise `13` sinyal, `0` confirmed ile güncel teyit üretmiyor.
+- Öncelik sırası: (1) Transfermarkt genel snapshot collector regresyonu, (2) scout kalite raporunun doğru scout kaynaklarını okuması, (3) `daily_pipeline_run_latest.md` dosyasının gerçek son koşuya göre güncellenmesi, (4) beraberlik recall ve OOS doğruluk için model kalibrasyonu.
+
+## 2026-07-05 Günlük Veri/Geliştirme Kontrolü
+
+- 5 Temmuz kontrolünde `data/` altında bugün üretilmiş yeni dosya bulunmadı; `data/processed` son geniş üretimi yine 27 Haziran 2026.
+- `daily_pipeline_run_latest.md` hâlâ 26 Mayıs 2026 ağsız `48/48` başarılı koşusunda kalmış; günlük üretim sağlığını güncel göstermiyor.
+- Transfermarkt genel snapshot regresyonu devam ediyor: `transfermarkt_super_lig_squads_2025_2026.json` ve `transfermarkt_super_lig_squads_2026_2027.json` özetleri `0` kulüp / `0` oyuncu. Bu, transfer dönemi kadro güncelliği ve scout değerleme güvenini doğrudan zayıflatıyor.
+- Scout ana verisi hâlâ mevcut: `position_scout_matrix_2025_2026.json` → `691` aday, `91` rol eşleşmesi, `18` takım; `fm_style_scout_program_2025_2026.json` → `691` Süper Lig adayı, `2038` global havuz, `269` FM23 eşleşmesi.
+- `scout_quality_report_2025_2026.json` hâlâ ana havuzu eksik yansıtıyor: `63` blueprint linki ve `7` pozisyon matrisi adayı. Raporun `position_scout_matrix` ve `fm_style_scout_program` kaynaklarını kapsayacak şekilde düzeltilmesi gerekiyor.
+- Tahmin ve gol adayı metrikleri değişmedi: `data_quality_scorecard` skoru `80.5`; OOS ikinci yarı doğruluğu `%45.8`; top-5 gol adayı hit `%76.9`, top-8 `%84.6`; beraberlik recall halen `%11.1` FAIL.
+- Kaynak performansı/transfer tracker değişmedi: `112` gözlenen kaynak, `40` skorlanan kaynak, `1125` claim observation; transfer tracker `13` sinyal ve `0` confirmed.
+- Bir sonraki uygulanabilir geliştirme değişmedi: önce Transfermarkt genel snapshot collector regresyonu düzeltilmeli, ardından scout kalite raporu gerçek aday havuzunu kapsayacak şekilde yeniden hesaplanmalı.
+
+## 2026-07-06 Günlük Veri/Geliştirme Kontrolü
+
+- 6 Temmuz kontrolünde `data/` altında bugün üretilmiş yeni dosya bulunmadı; `data/processed` son geniş üretimi hâlâ 27 Haziran 2026.
+- `daily_pipeline_run_latest.md` hâlâ 26 Mayıs 2026 ağsız `48/48` başarılı koşusunda kalmış. Günlük pipeline gözlemi için bu dosya artık stale kabul edilmeli.
+- Git çalışma alanında yalnız `PROJECT_STATE.md` değişikliği var; bu değişiklik 4-6 Temmuz heartbeat kontrol notları.
+- Transfermarkt genel snapshot regresyonu üçüncü kontrolde de devam ediyor: `transfermarkt_super_lig_squads_2025_2026.json` ve `transfermarkt_super_lig_squads_2026_2027.json` → `0` kulüp / `0` oyuncu. Beşiktaş özel snapshotı hâlâ sağlam: `28` oyuncu, toplam `176M EUR`.
+- Veri deposu temel sezon kapsamı duruyor: `306` maç, `691` oyuncu, `18` takım, `1428` kart, `812` gol, `12732` lineup satırı.
+- Scout ana havuzu değişmedi: `position_scout_matrix_2025_2026.json` → `691` aday, `91` rol eşleşmesi, `18` takım; `fm_style_scout_program_2025_2026.json` → `691` Süper Lig adayı, `2038` global havuz, `269` FM23 eşleşmesi.
+- `scout_quality_report_2025_2026.json` hâlâ gerçek scout havuzunu eksik gösteriyor: `63` blueprint linki ve `7` pozisyon matrisi adayı. Raporun `position_scout_matrix`, `team_scout_blueprints` ve `fm_style_scout_program` kapsamıyla yeniden bağlanması gerekiyor.
+- Tahmin metrikleri değişmedi: `data_quality_scorecard` skoru `80.5`; OOS ikinci yarı doğruluk `%45.8`; full-season doğruluk `%46.1`; HIGH güven segmenti `%58.7` OOS / `%59.6` full-season. Beraberlik recall önceki kontrolde `%11.1` FAIL durumundaydı.
+- Gol adayı modülü aynı seviyede: top-3 hit `%61.5`, top-5 `%76.9`, top-8 `%84.6`, top-10 `%88.5`.
+- Kaynak performansı ve transfer tracker değişmedi: `112` gözlenen kaynak, `40` skorlanan kaynak, `1125` claim observation; transfer tracker `13` sinyal, `0` confirmed, `0` official.
+- Operasyonel karar: artık sadece günlük kontrol yeterli değil. Sıradaki aktif geliştirme işi olarak Transfermarkt genel snapshot collector regresyonu çözülmeli; ardından scout kalite raporu ve stale pipeline run raporu düzeltilmeli.
+
+## 2026-07-07 Günlük Veri/Geliştirme Kontrolü
+
+- 7 Temmuz kontrolünde `data/` altında bugün üretilmiş yeni dosya bulunmadı; `data/processed` son geniş üretimi hâlâ 27 Haziran 2026.
+- `daily_pipeline_run_latest.md` değişmedi: son görünen koşu 26 Mayıs 2026 ağsız `48/48` başarılı. Bu dosya güncel pipeline sağlığı için stale.
+- Git çalışma alanında yalnız `PROJECT_STATE.md` değişikliği var; bu değişiklik 4-7 Temmuz heartbeat kontrol notları.
+- Transfermarkt genel snapshot regresyonu devam ediyor: `transfermarkt_super_lig_squads_2025_2026.json` ve `transfermarkt_super_lig_squads_2026_2027.json` → `0` kulüp / `0` oyuncu.
+- Ana sezon veri deposu kapsamı değişmedi: `306` maç, `691` oyuncu, `18` takım, `1428` kart, `812` gol, `12732` lineup satırı.
+- Scout ana havuzu değişmedi: `position_scout_matrix_2025_2026.json` → `691` aday, `91` rol eşleşmesi, `18` takım; `fm_style_scout_program_2025_2026.json` → `691` Süper Lig adayı, `2038` global havuz, `269` FM23 eşleşmesi.
+- `scout_quality_report_2025_2026.json` hâlâ `63` blueprint linki ve `7` pozisyon matrisi adayı gösteriyor; gerçek scout havuzunu eksik yansıtıyor.
+- Tahmin metrikleri değişmedi: `data_quality_scorecard` skoru `80.5`; Beşiktaş display doğruluk `%55.2`; beraberlik recall `%11.1` FAIL; OOS ikinci yarı doğruluk `%45.8`; full-season doğruluk `%46.1`.
+- Gol adayı modülü değişmedi: top-3 hit `%61.5`, top-5 `%76.9`, top-8 `%84.6`, top-10 `%88.5`.
+- Kaynak performansı/transfer tracker değişmedi: `112` gözlenen kaynak, `40` skorlanan kaynak, `1125` claim observation; transfer tracker `13` sinyal, `0` confirmed, `0` official.
+- Sonuç: 4 gündür aynı blokaj izleniyor. Bir sonraki geliştirme kontrol değil aktif düzeltme olmalı: önce Transfermarkt genel snapshot collector, sonra scout kalite raporu ve pipeline run raporu.
+
+## 2026-07-08 Günlük Veri/Geliştirme Kontrolü
+
+- 8 Temmuz kontrolünde `data/` altında bugün üretilmiş yeni dosya bulunmadı; `data/processed` son geniş üretimi hâlâ 27 Haziran 2026.
+- `daily_pipeline_run_latest.md` hâlâ 26 Mayıs 2026 ağsız `48/48` başarılı koşusunda kalmış; pipeline sağlığı için güvenilir güncel gösterge değil.
+- Git çalışma alanında yalnız `PROJECT_STATE.md` değişikliği var; bu değişiklik 4-8 Temmuz heartbeat kontrol notları.
+- Transfermarkt genel snapshot regresyonu devam ediyor: `transfermarkt_super_lig_squads_2025_2026.json` ve `transfermarkt_super_lig_squads_2026_2027.json` → `0` kulüp / `0` oyuncu.
+- Ana veri kalite skoru değişmedi: `80.5`. Kapsam hâlâ `306` maç, `691` oyuncu, `18` takım; eksik hakem `0`, eksik yaş profili `0/691`.
+- Scout ana havuzu değişmedi: `position_scout_matrix_2025_2026.json` → `691` aday, `91` rol eşleşmesi, `18` takım; `fm_style_scout_program_2025_2026.json` → `691` Süper Lig adayı, `2038` global havuz, `269` FM23 eşleşmesi.
+- `scout_quality_report_2025_2026.json` hâlâ gerçek scout havuzunu eksik yansıtıyor: `63` blueprint linki ve `7` pozisyon matrisi adayı.
+- Tahmin metrikleri değişmedi: Beşiktaş display doğruluk `%55.2`; beraberlik recall `%11.1` FAIL; OOS ikinci yarı doğruluk `%45.8`; full-season doğruluk `%46.1`.
+- Gol adayı modülü değişmedi: top-3 hit `%61.5`, top-5 `%76.9`, top-8 `%84.6`, top-10 `%88.5`.
+- Kaynak performansı/transfer tracker değişmedi: `112` gözlenen kaynak, `40` skorlanan kaynak, `1125` claim observation; transfer tracker `13` sinyal, `0` confirmed, `0` official.
+- Sonuç: 5 gündür aynı blokaj izleniyor. Bir sonraki işlem günlük kontrol değil, Transfermarkt genel snapshot collector regresyonunu düzeltmek olmalı; ardından scout kalite raporu ve stale pipeline run raporu ele alınmalı.
+
+## 2026-07-09 Günlük Veri/Geliştirme Kontrolü
+
+- 9 Temmuz kontrolünde `data/` altında bugün üretilmiş yeni dosya bulunmadı; `data/processed` son geniş üretimi hâlâ 27 Haziran 2026.
+- `daily_pipeline_run_latest.md` hâlâ 26 Mayıs 2026 ağsız `48/48` başarılı koşusunda kalmış; pipeline sağlığı için stale.
+- Git çalışma alanında yalnız `PROJECT_STATE.md` değişikliği var; bu değişiklik 4-9 Temmuz heartbeat kontrol notları.
+- Transfermarkt genel snapshot regresyonu devam ediyor: `transfermarkt_super_lig_squads_2025_2026.json` ve `transfermarkt_super_lig_squads_2026_2027.json` → `0` kulüp / `0` oyuncu.
+- Ana veri kalite skoru değişmedi: `80.5`. Kapsam hâlâ `306` maç, `691` oyuncu, `18` takım; eksik hakem `0`, eksik yaş profili `0/691`.
+- Scout ana havuzu değişmedi: `position_scout_matrix_2025_2026.json` → `691` aday, `91` rol eşleşmesi, `18` takım; `fm_style_scout_program_2025_2026.json` → `691` Süper Lig adayı, `2038` global havuz, `269` FM23 eşleşmesi.
+- `scout_quality_report_2025_2026.json` hâlâ gerçek scout havuzunu eksik yansıtıyor: `63` blueprint linki ve `7` pozisyon matrisi adayı.
+- Tahmin metrikleri değişmedi: Beşiktaş display doğruluk `%55.2`; beraberlik recall `%11.1` FAIL; OOS ikinci yarı doğruluk `%45.8`; full-season doğruluk `%46.1`.
+- Gol adayı modülü değişmedi: top-3 hit `%61.5`, top-5 `%76.9`, top-8 `%84.6`, top-10 `%88.5`.
+- Kaynak performansı/transfer tracker değişmedi: `112` gözlenen kaynak, `40` skorlanan kaynak, `1125` claim observation; transfer tracker `13` sinyal, `0` confirmed, `0` official.
+- Sonuç: 6 gündür aynı blokaj izleniyor. Günlük kontrol artık yalnız durum teyidi üretiyor; asıl uygulanabilir adım Transfermarkt genel snapshot collector regresyonunu düzeltmek, ardından scout kalite raporu ve stale pipeline run raporunu ele almak.
+
+## 2026-07-10 Günlük Veri/Geliştirme Kontrolü
+
+- 10 Temmuz kontrolünde `data/` altında bugün üretilmiş yeni dosya bulunmadı; `data/processed` son geniş üretimi hâlâ 27 Haziran 2026.
+- `daily_pipeline_run_latest.md` hâlâ 26 Mayıs 2026 ağsız `48/48` başarılı koşusunda kalmış; pipeline sağlığı için stale.
+- Git çalışma alanında yalnız `PROJECT_STATE.md` değişikliği var; bu değişiklik 4-10 Temmuz heartbeat kontrol notları.
+- Transfermarkt genel snapshot regresyonu devam ediyor: `transfermarkt_super_lig_squads_2025_2026.json` ve `transfermarkt_super_lig_squads_2026_2027.json` → `0` kulüp / `0` oyuncu.
+- Ana veri kalite skoru değişmedi: `80.5`. Kapsam hâlâ `306` maç, `691` oyuncu, `18` takım; eksik hakem `0`, eksik yaş profili `0/691`.
+- Scout ana havuzu değişmedi: `position_scout_matrix_2025_2026.json` → `691` aday, `91` rol eşleşmesi, `18` takım; `fm_style_scout_program_2025_2026.json` → `691` Süper Lig adayı, `2038` global havuz, `269` FM23 eşleşmesi.
+- `scout_quality_report_2025_2026.json` hâlâ gerçek scout havuzunu eksik yansıtıyor: `63` blueprint linki ve `7` pozisyon matrisi adayı.
+- Tahmin metrikleri değişmedi: Beşiktaş display doğruluk `%55.2`; beraberlik recall `%11.1` FAIL; OOS ikinci yarı doğruluk `%45.8`; full-season doğruluk `%46.1`.
+- Gol adayı modülü değişmedi: top-3 hit `%61.5`, top-5 `%76.9`, top-8 `%84.6`, top-10 `%88.5`.
+- Kaynak performansı/transfer tracker değişmedi: `112` gözlenen kaynak, `40` skorlanan kaynak, `1125` claim observation; transfer tracker `13` sinyal, `0` confirmed, `0` official.
+- Sonuç: 7 gündür aynı blokaj izleniyor. Günlük kontrol artık yalnız durum teyidi üretiyor; asıl uygulanabilir adım Transfermarkt genel snapshot collector regresyonunu düzeltmek, ardından scout kalite raporu ve stale pipeline run raporunu ele almak.
+
+## 2026-07-11 Günlük Veri/Geliştirme Kontrolü
+
+- 11 Temmuz kontrolünde `data/` altında bugün üretilmiş yeni dosya bulunmadı; `data/processed` son geniş üretimi hâlâ 27 Haziran 2026.
+- `daily_pipeline_run_latest.md` hâlâ 26 Mayıs 2026 ağsız `48/48` başarılı koşusunda kalmış; pipeline sağlığı için stale.
+- Git çalışma alanında yalnız `PROJECT_STATE.md` değişikliği var; bu değişiklik 4-11 Temmuz heartbeat kontrol notları.
+- Transfermarkt genel snapshot regresyonu devam ediyor: `transfermarkt_super_lig_squads_2025_2026.json` ve `transfermarkt_super_lig_squads_2026_2027.json` → `0` kulüp / `0` oyuncu.
+- Ana veri kalite skoru değişmedi: `80.5`. Kapsam hâlâ `306` maç, `691` oyuncu, `18` takım; eksik hakem `0`, eksik yaş profili `0/691`.
+- Scout ana havuzu değişmedi: `position_scout_matrix_2025_2026.json` → `691` aday, `91` rol eşleşmesi, `18` takım; `fm_style_scout_program_2025_2026.json` → `691` Süper Lig adayı, `2038` global havuz, `269` FM23 eşleşmesi.
+- `scout_quality_report_2025_2026.json` hâlâ gerçek scout havuzunu eksik yansıtıyor: `63` blueprint linki ve `7` pozisyon matrisi adayı.
+- Tahmin metrikleri değişmedi: Beşiktaş display doğruluk `%55.2`; beraberlik recall `%11.1` FAIL; OOS ikinci yarı doğruluk `%45.8`; full-season doğruluk `%46.1`.
+- Gol adayı modülü değişmedi: top-3 hit `%61.5`, top-5 `%76.9`, top-8 `%84.6`, top-10 `%88.5`.
+- Kaynak performansı/transfer tracker değişmedi: `112` gözlenen kaynak, `40` skorlanan kaynak, `1125` claim observation; transfer tracker `13` sinyal, `0` confirmed, `0` official.
+- Sonuç: 8 gündür aynı blokaj izleniyor. Günlük kontrol artık yalnız durum teyidi üretiyor; asıl uygulanabilir adım Transfermarkt genel snapshot collector regresyonunu düzeltmek, ardından scout kalite raporu ve stale pipeline run raporunu ele almak.
+
+## 2026-07-12 Günlük Veri/Geliştirme Kontrolü ve TM Snapshot Düzeltmesi
+
+- 12 Temmuz kontrolünde `data/` altında bugün üretilmiş yeni dosya yoktu; `data/processed` son geniş üretimi kontrol başında hâlâ 27 Haziran 2026 görünüyordu.
+- `daily_pipeline_run_latest.md` hâlâ 26 Mayıs 2026 ağsız `48/48` başarılı koşusunda kalmış; pipeline sağlığı için stale.
+- Transfermarkt genel snapshot blokajının kök nedeni netleştirildi: `transfermarkt_super_lig_squads_2026_2027.json` içinde 18 kulübün tamamı `403 Forbidden` sebebiyle skipped. 2026/27 raw HTML dosyaları mevcut ama kulüp sayfaları `No information` döndürüyor; oyuncu tablosu yok.
+- `src/collect_transfermarkt_league_squads.py` düzeltildi:
+  - Canlı fetch başarılı ama oyuncu tablosu boşsa sağlam raw cache fallback kullanır.
+  - Canlı fetch `403` veya başka hatayla düşerse sağlam raw cache fallback kullanır.
+  - Collector hiç kulüp üretemezse önceki non-empty output varsa sıfır oyunculu snapshot ile ezmez; `stale_reason` ve `skipped_latest` yazar.
+  - Ağsız doğrulama için `--cache-only` modu eklendi.
+  - Markdown kulüp satırlarına `source_mode` eklendi (`live`, `cache_after_fetch_failed`, `cache_after_empty_live`, `cache_only`).
+- `transfermarkt_super_lig_squads_2025_2026` cache-only olarak yeniden üretildi: `15` kulüp, `424` oyuncu, toplam piyasa değeri `€1.31895B`, pozisyon dağılımı `GK 53 / DEF 134 / MID 125 / FWD 112`. Böylece 2025/26 genel snapshot `0/0` regresyonundan kurtarıldı.
+- 2025/26 snapshotında atlanan kulüpler: Çorum FK, Erzurumspor FK, Amed SFK. Sebep: bu kulüplerin 2025/26 raw cache dosyası yok; aktif 2026/27 yükselenleri oldukları için 2025/26 tarihsel kadro datasına karıştırılmamalı.
+- 2026/27 genel snapshot hâlâ `0` kulüp / `0` oyuncu. Bunun nedeni kod değil: mevcut raw/canlı sayfa tarafında 2026 sezonu için oyuncu tablosu yok. Bu dosya yapay şekilde 2025/26 datasıyla doldurulmadı.
+- Doğrulama:
+  - `.venv/bin/python -m compileall -q src/collect_transfermarkt_league_squads.py` başarılı.
+  - `.venv/bin/python -m src.collect_transfermarkt_league_squads --clubs data/manual/transfermarkt_super_lig_clubs.json --season-id 2025 --output-prefix transfermarkt_super_lig_squads_2025_2026 --cache-only --delay-seconds 0` başarılı.
+  - `tests.test_season_boundaries` ve `tests.test_transfermarkt_match_review_queue` birlikte çalıştırıldı; `3` failure var. Bunlar collector syntax/fallback hatası değil, mevcut sezon sınırı/UI beklentileriyle repo durumunun uyumsuzluğu: `ALL_TEAMS` içinde 2026/27 yükselenleri var, transfer tracker HTML beklenen X erişim metnini içermiyor, test network collector listesinde ilk TM komutu 2025/26 olarak yakalanıyor.
+- Kalan öncelikler:
+  1. 2026/27 için Transfermarkt kaynak tarafında oyuncu tablosu oluşana kadar official club/TFF/football API ve haber sinyalleriyle aktif kadro fallback katmanı kurulmalı.
+  2. `scout_quality_report_2025_2026.json` gerçek scout havuzunu hâlâ eksik gösteriyor (`63` blueprint, `7` pozisyon matrisi adayı); `position_scout_matrix` ve `fm_style_scout_program` kaynaklarıyla yeniden bağlanmalı.
+  3. `daily_pipeline_run_latest.md` stale; gerçek son pipeline koşusunu yansıtacak şekilde runner çıktısı yenilenmeli.
+
+## 2026-07-13 / 2026-07-14 Günlük Veri/Geliştirme Kontrolü ve Scout Kalite Raporu Güncellemesi
+
+- 14 Temmuz kontrolünde `data/` altında bugün üretilmiş yeni dosya bulunmadı; en yeni processed çıktılar 13 Temmuz scout kalite ve data quality scorecard dosyaları.
+- `daily_pipeline_run_latest.md` hâlâ 26 Mayıs 2026 ağsız `48/48` başarılı koşusunda kalmış; pipeline sağlık göstergesi güncel değil.
+- `scout_quality_report_2025_2026` stale durumdan yeniden üretildi. Eski rapor gerçek scout havuzunu `63` blueprint linki ve `7` pozisyon matrisi adayıyla eksik gösteriyordu.
+- Güncel scout kalite özeti: `370` blueprint aday bağlantısı, `275` düşük güvenli blueprint bağlantısı, `29` tekil düşük güvenli oyuncu-rol, `91` pozisyon matrisi adayı. Eksik yaş/sözleşme linki `0`, tekrar eden rol oyuncusu `0`.
+- Scout confidence dağılımı: `LOW_POSITION_UNVERIFIED 275`, `HIGH_EXTERNAL_PROFILE 37`, `MEDIUM 46`, `HIGH 10`, `DERIVED 2`. Pozisyon matrisi confidence dağılımı: `DERIVED 63`, `MEDIUM 24`, `HIGH 4`.
+- `data_quality_scorecard_2025_2026` yeniden üretildi; genel skor `80.5` kaldı. `low_position_confidence_pct` kontrolü güncel scout raporuna göre `total 263`, `low_confidence 0`, `pct 0.0` olarak PASS.
+- 2025/26 Transfermarkt genel snapshot korunuyor: `15` kulüp, `424` oyuncu, toplam piyasa değeri `€1.31895B`, pozisyon dağılımı `GK 53 / DEF 134 / MID 125 / FWD 112`.
+- 2026/27 Transfermarkt genel snapshot hâlâ `0` kulüp / `0` oyuncu. Kaynak tarafında oyuncu tablosu oluşmadığı için 2025/26 verisiyle yapay doldurma yapılmadı.
+- Tahmin metrikleri değişmedi: Beşiktaş display doğruluk `%55.2`, beraberlik recall `%11.1` FAIL, OOS ikinci yarı doğruluk `%45.8`, full-season doğruluk `%46.1`.
+- Gol adayı metrikleri değişmedi: top-3 `%61.5`, top-5 `%76.9`, top-8 `%84.6`, top-10 `%88.5`.
+- Kalan öncelik: 2026/27 aktif kadro fallback katmanını TFF/resmi kulüp/API/haber sinyalleriyle kurmak; ardından beraberlik recall ve genel skor tahmin modelini kalibre etmek.
+
+## 2026-07-14 (devam) — TM Snapshot Fix Push Edildi, Avrupa Haber Nabzı Eklendi
+
+- Önceki oturumdaki `src/collect_transfermarkt_league_squads.py` cache-fallback düzeltmesi hiç commit/push edilmemiş, yalnızca local working tree'de kalmıştı. Bu arada GitHub Actions (`daily-pipeline`, `refresh`, `news-refresh`) günde ~11 kez otomatik commit atmaya devam etti; local branch origin'in 210 commit gerisinde kaldı.
+- Repo `git pull --ff-only` ile senkronize edildi (fast-forward, çakışma yok — bot hiçbir zaman `PROJECT_STATE.md` veya `collect_transfermarkt_league_squads.py`'a dokunmamış).
+- Senkronizasyon sonrası kontrol: eski (düzeltilmemiş) script'in canlı TM sayfası boş oyuncu tablosu döndürdüğü her çalıştırmada genel snapshot'ı sessizce `0 kulüp/0 oyuncu` ile eziyordu — 12 Temmuz'da geri kazanılan `15 kulüp/424 oyuncu` verisi tekrar kaybolmuştu. `league_market_value_audit`'te maç kapsamı `%0`'a düşmüştü.
+- Fix şimdi commit edilip push edilecek şekilde uygulandı (`--cache-only` fallback, boş/hatalı canlı fetch'te önceki cache'e döner, tamamen boş sonuçta eski non-empty payload'ı korur + `stale_reason` yazar). `--cache-only` ile yeniden üretildi: `15` kulüp, `424` oyuncu, `€1.32B`, kapsam `GK 53/DEF 134/MID 125/FWD 112`. Atlanan 3 kulüp yine `ÇORUM FK, ERZURUMSPOR FK, AMED SFK` (2025/26 raw cache'i yok — 2026/27 yükselenleri).
+- Downstream yeniden üretildi: `enrich_players_with_transfermarkt`, `analyze_league_scouting`, `build_scout_quality_report`, `build_data_quality_scorecard`, `build_transfer_recommendation_report`, `build_league_market_value_audit`, `build_alias_quality_report`, `build_data_catalog`, `build_sqlite_warehouse`, `build_product_home`. Maç kapsamı `%0`'dan `177/258 (%69)`'a çıktı.
+- Bu fix artık kalıcı: script'e girdiği için önümüzdeki otomatik çalıştırmalarda TM canlı sayfa yine boş dönerse otomatik cache fallback devreye girecek, veriyi sıfırlamayacak.
+- Kullanıcı isteği: "transferler akın akın geliyor" (haber akışı zaten `build_transfer_tracker`/`news-refresh` ile günde 6 kez otomatik güncelleniyor — `49` sinyal, `6` doğrulanmış, gerçek örnek: Trossard Beşiktaş'a, Jonathan David Trabzonspor'a) ve "Avrupa Ligi eleme maçları başlıyor, heyecan kat, trafik çek".
+- Avrupa tarafında kök sorun: `football-data.org` ücretsiz planı UEFA nitelendirme/eleme turu fikstürünü hiç kapsamıyor — `european_fixtures_2026_2027.json` sezon boyunca `0` maç ile boş kalıyor, `european_predictions_2026_2027.html` yalnızca sabit kodlanmış, tahmini "Türk Kulüpler" tablosu (ör. "Fenerbahçe UCL Play-off") gösteriyordu ve bu tablo gerçek haberlerle çelişiyordu (gerçek haber: Fenerbahçe'nin gerçek rakibi Gornik Zabrze, 1. eleme turu rövanşı 13-14 Temmuz'da oynandı).
+- Yeni modül eklendi: `src/build_european_news_pulse.py` — zaten toplanan haber kaynaklarından (`news_rss_latest`, `news_google_latest`, `news_official_clubs_latest`, `news_telegram_latest`) UEFA nitelendirme/eleme turu sinyalini gerçek başlık+kaynak+link+tarihle çıkarıyor; uydurma fikstür/skor yok. Başlıkta kupa adı geçen veya (kulüp adı + "rövanş"/"play-off") birlikte geçen haberler alınıyor; yalnızca özet içinde geçen tesadüfi kupa övgüsü (ör. transfer haberi) gürültü olarak filtreleniyor. Çıktı: `european_news_pulse_2025_2026.json/.md` — şu an `8` ilgili haber.
+- `build_european_predictions.py`: Sabit kodlanmış "Türk Kulüpler (Tahmini)" tablosu kaldırıldı (yanlış/güncel olmayan bilgi riski taşıyordu). Yerine gerçek haber nabzı kartları (`_build_pulse_section`) her zaman üstte gösteriliyor; UEFA takvimi genel/yaklaşık olarak etiketlendi.
+- `build_live_feed.py` (ana sayfa `gundem_2025_2026.html`): Avrupa Kupası sidebar kartına en güncel gerçek nabız başlığını gösteren yanıp sönen "canlı" teaser eklendi (`eu_teaser_html`) — tıklama ile Avrupa sayfasına yönlendiriyor, gündem sayfasında heyecan/trafik amaçlı.
+- Pipeline entegrasyonu: `run_daily_pipeline.py` DEFAULT_COMMANDS'a `build_european_news_pulse` eklendi (analyze/build european_predictions'tan hemen önce); `.github/workflows/news-refresh.yml` (günde 6 kez) ve `.github/workflows/refresh.yml` (günde 4 kez) adımlarına da eklendi — `refresh.yml`'de ayrıca european_predictions rebuild'i haber toplama adımlarından SONRAYA taşındı (önceden haberlerden önce çalışıyordu, artık güncel nabız verisiyle üretiliyor).
+- Test: `pytest` — `58 passed, 3 failed` (aynı 3 pre-existing hata: `test_season_boundaries` — 2026/27 yükselen takım listesi ve X erişim metni testleri, script/fallback ile ilgisiz, önceden de kayıtlıydı).
+- Kalan öncelik: (1) 2026/27 TM genel snapshot hâlâ `0/0` (kaynak tarafında oyuncu tablosu yok, yapay doldurulmadı), (2) beraberlik recall/OOS kalibrasyonu, (3) haber nabzı kapsamı zamanla genişletilebilir (şu an yalnızca Süper Lig kulüp adlarıyla eşleşiyor; Avrupa rakip takım isimleriyle de genişletilebilir).

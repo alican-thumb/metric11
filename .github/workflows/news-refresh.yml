@@ -51,6 +51,9 @@ jobs:
           python -m src.build_source_performance_report || true
           python -m src.build_transfer_tracker || true
           python -m src.build_transfer_season_context || true
+          python -m src.build_european_news_pulse || true
+          python -m src.analyze_european_predictions || true
+          python -m src.build_european_predictions || true
           python -m src.build_live_feed || true
           python -m src.build_product_home || true
           python -m src.build_status_page || true
