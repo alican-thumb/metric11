@@ -4,10 +4,25 @@ import json
 import math
 from collections import Counter
 
+from src.normalization import normalize_name
 from src.preview.constants import ACTION_LABELS
 
 _H2H_MIN_MATCHES = 3
 _h2h_cache: dict | None = None
+
+_TRANSFER_STATUS_WEIGHT = {
+    "OFFICIAL": 1.0,
+    "CORROBORATED": 0.6,
+    "TM_CONFIRMED": 0.6,
+    "RUMOR": 0.15,
+    "REVIEW_REQUIRED": 0.1,
+}
+_TRANSFER_CONFIRMED_STATUSES = {"OFFICIAL", "CORROBORATED", "TM_CONFIRMED"}
+_TRANSFER_MIN_CONFIRMED_VALUE_EUR = 2_000_000
+_TRANSFER_EDGE_CAP = 0.15
+_TRANSFER_DEFAULT_SQUAD_VALUE_EUR = 50_000_000
+_transfer_tracker_cache: list | None = None
+_squad_value_cache: dict | None = None
 
 
 def _load_h2h_pairs() -> dict:
@@ -40,6 +55,106 @@ def head_to_head_draw_signal(team_a: str, team_b: str) -> dict:
         "matches": data["matches"],
         "draw_rate": data["draw_rate"],
         "last_meeting_date": data.get("last_meeting_date"),
+    }
+
+
+def _load_transfer_tracker() -> list:
+    global _transfer_tracker_cache
+    if _transfer_tracker_cache is None:
+        from src.config import PROCESSED_DIR, SEASON
+
+        path = PROCESSED_DIR / f"transfer_tracker_{SEASON}.json"
+        try:
+            payload = json.loads(path.read_text(encoding="utf-8"))
+            _transfer_tracker_cache = payload.get("transfers", [])
+        except (FileNotFoundError, json.JSONDecodeError):
+            _transfer_tracker_cache = []
+    return _transfer_tracker_cache
+
+
+def _load_squad_values() -> dict:
+    global _squad_value_cache
+    if _squad_value_cache is None:
+        from src.config import PROCESSED_DIR, SEASON
+
+        path = PROCESSED_DIR / f"transfermarkt_super_lig_squads_{SEASON}.json"
+        try:
+            payload = json.loads(path.read_text(encoding="utf-8"))
+            _squad_value_cache = {
+                club["team_name"]: (club.get("summary") or {}).get("market_value_total_eur")
+                for club in payload.get("clubs", [])
+            }
+        except (FileNotFoundError, json.JSONDecodeError):
+            _squad_value_cache = {}
+    return _squad_value_cache
+
+
+def _club_matches_team(team_name: str, club_name: str | None) -> bool:
+    """En az bir anlamlı (>=4 karakter) ortak token varsa aynı kulüp kabul edilir.
+
+    Transfer haberlerindeki kısa kulüp adları ("Galatasaray") ile TFF'nin resmi
+    uzun adları ("GALATASARAY A.Ş.", "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ") arasında
+    tam bir alias tablosu tutmak yerine, kasıtlı olarak gevşek ama düşük riskli
+    bir eşleme kullanılır: bu sinyal zaten düşük ağırlıklı ve `available=False`
+    ile devre dışı kalabiliyor, yanlış eşleşme riski sinyalin genel etkisini
+    aşmıyor.
+    """
+    if not club_name:
+        return False
+    team_tokens = {tok for tok in normalize_name(team_name).split() if len(tok) >= 4}
+    club_tokens = {tok for tok in normalize_name(club_name).split() if len(tok) >= 4}
+    return bool(team_tokens & club_tokens)
+
+
+def transfer_strength_edge(team_name: str) -> dict:
+    """Transfer tracker'daki gerçek transfer sinyallerinden takım gücüne küçük bir ek/çıkarım döner.
+
+    Sinyal yalnızca en az bir OFFICIAL/CORROBORATED/TM_CONFIRMED (doğrulanmış)
+    transfer varsa devreye girer — salt RUMOR/REVIEW_REQUIRED söylentileri
+    (bugünkü canlı veride hepsi bu durumda) tek başına sinyali AKTİF ETMEZ,
+    `available: False` ile tahmine hiç karışmaz. Doğrulanmış bir transfer
+    devreye girdiğinde, henüz doğrulanmamış ek söylentiler edge büyüklüğüne
+    küçük bir katkı olarak dahil edilir.
+    """
+    transfers = _load_transfer_tracker()
+    squad_values = _load_squad_values()
+    total_net_value = 0.0
+    confirmed_net_value = 0.0
+    top_moves: list[dict] = []
+    for record in transfers:
+        status = record.get("status")
+        weight = _TRANSFER_STATUS_WEIGHT.get(status, 0.0)
+        value = record.get("market_value_eur") or 0
+        if not weight or not value:
+            continue
+        is_arrival = _club_matches_team(team_name, record.get("to_club"))
+        is_departure = _club_matches_team(team_name, record.get("from_club"))
+        if not is_arrival and not is_departure:
+            continue
+        weighted_value = weight * value if is_arrival else -weight * value
+        total_net_value += weighted_value
+        if status in _TRANSFER_CONFIRMED_STATUSES:
+            confirmed_net_value += weighted_value
+        top_moves.append({
+            "player": record.get("player"),
+            "direction": "in" if is_arrival else "out",
+            "market_value_eur": value,
+            "status": status,
+        })
+
+    if abs(confirmed_net_value) < _TRANSFER_MIN_CONFIRMED_VALUE_EUR:
+        return {"available": False, "edge": 0.0, "signal_count": 0}
+
+    squad_value = squad_values.get(team_name) or _TRANSFER_DEFAULT_SQUAD_VALUE_EUR
+    relative_edge = total_net_value / max(squad_value, _TRANSFER_DEFAULT_SQUAD_VALUE_EUR)
+    edge = max(-_TRANSFER_EDGE_CAP, min(_TRANSFER_EDGE_CAP, relative_edge))
+    return {
+        "available": True,
+        "edge": round(edge, 4),
+        "signal_count": len(top_moves),
+        "confirmed_net_value_eur": round(confirmed_net_value),
+        "total_net_value_eur": round(total_net_value),
+        "top_moves": sorted(top_moves, key=lambda m: m["market_value_eur"], reverse=True)[:5],
     }
 
 

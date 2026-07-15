@@ -73,6 +73,7 @@ DEFAULT_COMMANDS = [
 NETWORK_COMMANDS = [
     ["python", "-m", "src.collect_tff_league_season"],
     ["python", "-m", "src.collect_tff_season_fixture"],
+    ["python", "-m", "src.advance_season_state"],
     ["python", "-m", "src.collect_sofascore_stats", "--skip-existing"],
     ["python", "-m", "src.collect_besiktas_season"],
     [

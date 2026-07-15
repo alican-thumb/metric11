@@ -1,10 +1,11 @@
-"""2026-27 Süper Lig fikstürü için gerçek maç tahminleri üretir (henüz oynanmamış maçlar).
+"""2026-27 Süper Lig fikstürü için gerçek maç tahminleri üretir.
 
 `src/collect_tff_season_fixture.py` ile toplanan resmi TFF fikstürünü (34 hafta, 306 maç)
-`model_league_predictions.py`'deki aynı Poisson/Elo/h2h motoruyla tahmine çevirir. Motor,
-2025-26 sezonunun tamamı işlenerek elde edilen son takım formu/Elo durumunu "başlangıç
-durumu" olarak kullanır (gelecek maçlar oynandıkça bu durum güncellenmez — statik ön
-sezon tahminidir, sezon başladıktan sonra güncellenmelidir).
+`model_league_predictions.py`'deki aynı Poisson/Elo/h2h/transfer motoruyla tahmine çevirir.
+Motor, 2025-26 sezonunun tamamı + `src/advance_season_state.py`'nin biriktirdiği 2026-27'de
+ŞİMDİYE KADAR OYNANMIŞ maçlardan hesaplanan "başlangıç durumu"nu kullanır — sezon ilerledikçe
+bu durum otomatik ilerler, statik kalmaz. Oynanmış haftalar gerçek skorla, kalan haftalar
+güncel state ile yeniden tahmin edilerek gösterilir.
 """
 from __future__ import annotations
 
@@ -18,12 +19,14 @@ from src.model_league_predictions import (
     compute_final_state,
     confidence_label,
     draw_calibrated_prediction,
+    parse_tff_datetime,
     predict_match,
 )
 from src.normalization import normalize_matches
 
 FIXTURE_PATH = PROCESSED_DIR / "tff_super_lig_fixtures_2026_2027.json"
 HISTORY_INPUT_PATH = PROCESSED_DIR / f"tff_super_lig_enriched_{SEASON}.json"
+PLAYED_2026_2027_PATH = PROCESSED_DIR / "tff_super_lig_matches_2026_2027.json"
 OUTPUT_JSON = PROCESSED_DIR / "season_fixture_predictions_2026_2027.json"
 OUTPUT_MD = PROCESSED_DIR / "season_fixture_predictions_2026_2027.md"
 OUTPUT_HTML = PROCESSED_DIR / "season_fixture_predictions_2026_2027.html"
@@ -44,17 +47,47 @@ def _history_key(fixture_team_name: str) -> str:
     return NAME_ALIASES.get(fixture_team_name, fixture_team_name)
 
 
+def _rekeyed_2026_27_matches() -> list[dict]:
+    """2026-27'de oynanan maçları (varsa) 2025-26 ile aynı takım-adı uzayına taşır.
+
+    `advance_season_state.py`'nin TFF'den çektiği zengin maç kayıtları, kulüplerin
+    GÜNCEL (2026-27) resmi adlarını kullanır. `compute_final_state` bir takımın
+    formunu/Elo'sunu isim anahtarıyla biriktirdiği için, sponsor adı değişen
+    kulüplerin (`NAME_ALIASES`) 2026-27 maçları da 2025-26 ile aynı anahtara
+    (`_history_key`) taşınmadan birleştirilirse form/Elo devamlılığı bozulur.
+    """
+    if not PLAYED_2026_2027_PATH.exists():
+        return []
+    raw_matches = normalize_matches(
+        json.loads(PLAYED_2026_2027_PATH.read_text(encoding="utf-8"))
+    )
+    rekeyed = []
+    for match in raw_matches:
+        match = dict(match)
+        home_team = dict(match["home_team"])
+        away_team = dict(match["away_team"])
+        home_team["name"] = _history_key(home_team["name"])
+        away_team["name"] = _history_key(away_team["name"])
+        match["home_team"] = home_team
+        match["away_team"] = away_team
+        rekeyed.append(match)
+    return rekeyed
+
+
 def build_predictions() -> dict:
     fixture_payload = json.loads(FIXTURE_PATH.read_text(encoding="utf-8"))
     history_matches = normalize_matches(
         json.loads(HISTORY_INPUT_PATH.read_text(encoding="utf-8"))
     )
-    history_matches.sort(key=lambda m: m["match_date"])
-    state = compute_final_state(history_matches)
+    played_2026_27 = _rekeyed_2026_27_matches()
+    all_matches = history_matches + played_2026_27
+    all_matches.sort(key=lambda m: parse_tff_datetime(m["match_date"]))
+    state = compute_final_state(all_matches)
     team_history, elo = state["team_history"], state["elo"]
 
     weeks_out = []
     new_team_matches = 0
+    played_matches = 0
     for week in fixture_payload["weeks"]:
         week_matches = []
         for m in week["matches"]:
@@ -69,6 +102,7 @@ def build_predictions() -> dict:
                 home_name, away_name, home_hist, away_hist,
                 elo.get(home_key, 1500.0), elo.get(away_key, 1500.0),
                 ref_stats=None,
+                apply_transfer_signal=True,
             )
             probs = {
                 "home": prediction["home_win_probability"],
@@ -79,12 +113,18 @@ def build_predictions() -> dict:
             predicted = draw_calibrated_prediction(
                 probs["home"], probs["draw"], probs["away"], prediction.get("strength_edge", 0.0)
             )
+            score_text = (m.get("score") or "").strip()
+            is_played = bool(score_text) and score_text != "-"
+            if is_played:
+                played_matches += 1
             week_matches.append({
                 "match_id": m["match_id"],
                 "date_time": m["date_time"],
                 "home_team": home_name,
                 "away_team": away_name,
-                "data_confidence": "LOW_NEW_TEAM" if is_new else confidence_label(prediction),
+                "is_played": is_played,
+                "actual_score": score_text if is_played else None,
+                "data_confidence": "PLAYED" if is_played else ("LOW_NEW_TEAM" if is_new else confidence_label(prediction)),
                 "raw_predicted": raw_predicted,
                 "predicted": predicted,
                 **prediction,
@@ -95,12 +135,14 @@ def build_predictions() -> dict:
         "generated_at": datetime.now().isoformat(),
         "season": "2026-2027",
         "source_note": (
-            "Tahminler 2025-26 sezonunun tamamından türetilen son takım formu/Elo durumuna "
-            "dayanır; henüz hiçbir 2026-27 maçı oynanmadığı için statik ön sezon tahminidir. "
-            "Sezon başladıkça bu sayfa gerçek sonuçlarla güncellenecektir."
+            "Tahminler 2025-26 sezonunun tamamı ve 2026-27'de şimdiye kadar oynanmış "
+            f"({played_matches} maç) sonuçlardan türetilen güncel takım formu/Elo/transfer "
+            "durumuna dayanır; sezon ilerledikçe bu sayfa her gün otomatik olarak yeniden "
+            "hesaplanır, statik bir anlık görüntü değildir."
         ),
         "total_weeks": len(weeks_out),
         "total_matches": sum(len(w["matches"]) for w in weeks_out),
+        "played_matches": played_matches,
         "new_team_matches": new_team_matches,
         "new_teams": sorted(NEW_TEAMS),
         "weeks": weeks_out,
@@ -122,6 +164,9 @@ def build_markdown(payload: dict) -> str:
         lines.append(f"## Hafta {week['week']}")
         lines.append("")
         for m in week["matches"]:
+            if m["is_played"]:
+                lines.append(f"- {m['date_time']} | {m['home_team']} {m['actual_score']} {m['away_team']} | OYNANDI")
+                continue
             lines.append(
                 f"- {m['date_time']} | {m['home_team']} - {m['away_team']} | "
                 f"tahmin={labels[m['predicted']]} (Ev %{round(m['home_win_probability']*100)} · "
@@ -186,6 +231,12 @@ footer a { color:#1e3a5f; }
 
 
 def _match_card(m: dict) -> str:
+    if m.get("is_played"):
+        return f"""<div class="match-card">
+  <div class="mc-date">{escape(_fmt_date(m['date_time']))}</div>
+  <div class="mc-teams"><span>{escape(m['home_team'])}</span><span class="vs">{escape(m['actual_score'])}</span><span>{escape(m['away_team'])}</span></div>
+  <div class="mc-pick draw" style="background:rgba(148,163,184,.14);color:#94a3b8">OYNANDI</div>
+</div>"""
     labels = {"home": "Ev Sahibi", "draw": "Beraberlik", "away": "Deplasman"}
     pick = m["predicted"]
     pick_text = labels[pick] if pick != "home" and pick != "away" else (m["home_team"] if pick == "home" else m["away_team"])

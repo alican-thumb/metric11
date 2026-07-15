@@ -9,7 +9,7 @@ from pathlib import Path
 
 from src.config import PROCESSED_DIR
 from src.normalization import normalize_matches
-from src.preview.probability import head_to_head_draw_signal
+from src.preview.probability import head_to_head_draw_signal, transfer_strength_edge
 
 
 def main() -> None:
@@ -174,7 +174,16 @@ def _referee_goal_adjustment(ref_stats: dict | None) -> float:
     return max(-0.10, min(0.10, card_effect + goal_effect))
 
 
-def predict_match(home: str, away: str, home_history: list[dict], away_history: list[dict], home_elo: float, away_elo: float, ref_stats: dict | None = None) -> dict:
+def predict_match(
+    home: str,
+    away: str,
+    home_history: list[dict],
+    away_history: list[dict],
+    home_elo: float,
+    away_elo: float,
+    ref_stats: dict | None = None,
+    apply_transfer_signal: bool = False,
+) -> dict:
     league_home_boost = 0.18
     home_gf = avg(item["goals_for"] for item in home_history)
     home_ga = avg(item["goals_against"] for item in home_history)
@@ -204,6 +213,18 @@ def predict_match(home: str, away: str, home_history: list[dict], away_history: 
     expected_home = max(0.15, (home_gf_eff * 0.58 + away_ga_eff * 0.42) + league_home_boost)
     expected_away = max(0.15, away_gf_eff * 0.58 + home_ga_eff * 0.42)
     strength_edge = ((home_ppg - away_ppg) * 0.24) + ((home_gd - away_gd) * 0.16)
+
+    # Transfer/kadro sinyali: yalnızca ileriye dönük tahminlerde (apply_transfer_signal=True,
+    # bkz. build_season_fixture_predictions.py) devreye girer. Backtest/kalibre edilmiş sistem
+    # varsayılan False ile hiç etkilenmez — bu doğrulanmamış, yeni bir sinyaldir.
+    transfer_signal = {"home": {"available": False}, "away": {"available": False}}
+    if apply_transfer_signal:
+        transfer_home = transfer_strength_edge(home)
+        transfer_away = transfer_strength_edge(away)
+        transfer_signal = {"home": transfer_home, "away": transfer_away}
+        if transfer_home.get("available") or transfer_away.get("available"):
+            strength_edge += (transfer_home.get("edge", 0.0) - transfer_away.get("edge", 0.0)) * 0.5
+
     # League-wide backtests are noisier than the Beşiktaş-focused preview model, so keep this as a
     # mild calibration signal instead of letting short-form strength dominate xG.
     expected_home += strength_edge * 0.05 + max(0, home_clean - away_clean) * 0.03 - max(0, home_blank - away_blank) * 0.04
@@ -239,6 +260,7 @@ def predict_match(home: str, away: str, home_history: list[dict], away_history: 
         "draw_probability": round(probs["draw"], 3),
         "away_win_probability": round(probs["away"], 3),
         "head_to_head": head_to_head,
+        "transfer_signal": transfer_signal,
         "home_elo": round(home_elo, 1),
         "away_elo": round(away_elo, 1),
         "home_points_per_match": round(home_ppg, 2),
