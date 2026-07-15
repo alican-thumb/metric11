@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-15T15:49:22.215409+00:00",
+  "generated_at": "2026-07-15T19:37:59.407339+00:00",
   "season": "2025_2026",
   "summary": {
     "free_agents_count": 261,
     "final_year_count": 180,
     "transfer_signals_count": 50,
     "transfer_status_counts": {
-      "OFFICIAL": 0,
+      "OFFICIAL": 1,
       "CORROBORATED": 6,
-      "RUMOR": 14,
-      "REVIEW_REQUIRED": 30
+      "RUMOR": 12,
+      "REVIEW_REQUIRED": 31
     },
     "promotion_events_count": 1,
     "free_agent_total_market_value_eur": 453300000
@@ -460,6 +460,49 @@
   ],
   "transfer_signals": [
     {
+      "player_name": "NIHAD MUJAKIC",
+      "from_club": "GAZİANTEP FUTBOL KULÜBÜ A.Ş.",
+      "to_club": "ERZURUMSPOR FK",
+      "transfer_type": "permanent",
+      "window": "summer_2026",
+      "signal_type": "signing",
+      "confidence": "HIGH",
+      "tm_market_value_eur": 1200000,
+      "direction_quality": "TARGET_IDENTIFIED",
+      "article_id": "a0726db50d1a",
+      "title": "Erzurumspor’umuza hoş geldin Nihad Mujakic",
+      "link": "https://erzurumsporfk.org/2026/07/15/erzurumsporumuza-hos-geldin-nihad-mujakic/",
+      "source": "Erzurumspor FK Resmi Web",
+      "source_type": "official_club",
+      "account_type": "official",
+      "query": null,
+      "source_tier": "OFFICIAL",
+      "published_at": "2026-07-15T22:01:20+03:00",
+      "first_observed_at": "2026-07-15T19:37:33.250717+00:00",
+      "summary_tr": "",
+      "entity_confidence": "HIGH",
+      "verification_status": "OFFICIAL",
+      "interpretation": "Resmi kulüp kanalı duyurusu bulundu; işlem resmi transfer bağlamında izlenebilir.",
+      "source_count": 1,
+      "sources": [
+        "Erzurumspor FK Resmi Web"
+      ],
+      "evidence": [
+        {
+          "source": "Erzurumspor FK Resmi Web",
+          "source_tier": "OFFICIAL",
+          "source_type": "official_club",
+          "account_type": "official",
+          "query": null,
+          "title": "Erzurumspor’umuza hoş geldin Nihad Mujakic",
+          "link": "https://erzurumsporfk.org/2026/07/15/erzurumsporumuza-hos-geldin-nihad-mujakic/",
+          "published_at": "2026-07-15T22:01:20+03:00",
+          "first_observed_at": "2026-07-15T19:37:33.250717+00:00"
+        }
+      ],
+      "model_use": true
+    },
+    {
       "player_name": "Jawad El Yamiq",
       "from_club": null,
       "to_club": "Eyüpspor",
@@ -475,19 +518,18 @@
       "account_type": null,
       "query": "Eyüpspor transfer",
       "source_tier": "MEDIA",
-      "published_at": "2026-07-15T15:04:46+00:00",
+      "published_at": "2026-07-15T15:02:00+00:00",
       "first_observed_at": null,
       "summary_tr": "",
       "entity_confidence": "MEDIUM",
       "verification_status": "CORROBORATED",
       "interpretation": "Birden fazla kaynak aynı yönlü iddiayı taşıyor; resmi açıklama beklenir.",
-      "source_count": 5,
+      "source_count": 4,
       "sources": [
         "Sporx.com",
+        "Nefes Gazetesi",
         "Son Dakika",
-        "Sabah Spor",
-        "Fotomaç",
-        "Haberler"
+        "A SPOR"
       ],
       "evidence": [
         {
@@ -498,7 +540,18 @@
           "query": "Eyüpspor transfer",
           "title": "Eyüpspor'a Faslı stoper: Jawad El Yamiq - Sporx.com",
           "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNU1dETUM2cEx2VW0zTlhBa2N3VjI4RlhjSHNaNE14ZUJCSk02eFJ0NGFZN3poUXdycVNhWjNzUTh2bW5OZHV0RG9rZndydjR1b1dVZGF6ZVRmODJmZ2NTZHdLRTY1ZlB4WTNSQ3BNREVHZFpudUYzWm9uRFo4NzRLSFV30gGEAUFVX3lxTFBnQVYxTy1fazhEdkpVNURzSkdaQW85M0RlMmM2QVNnYndCZ0I0Sl9lbUZfOGNlZnExdjNkQ3FFMHJ4c1BMbV9sZ05zeTJjcEdmekJrRm1RMHV5eWFybk1fQUVDRUdEbVRyTVVPOTlSTE1JREI1Smhjd1JVbWN3LTNDenFtWQ?oc=5",
-          "published_at": "2026-07-15T15:04:46+00:00",
+          "published_at": "2026-07-15T15:02:00+00:00",
+          "first_observed_at": null
+        },
+        {
+          "source": "Nefes Gazetesi",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Eyüpspor transfer",
+          "title": "Eyüpspor, Jawad El Yamiq'i transfer etti - Nefes Gazetesi",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFAxb2lPa1ZBbzlGSlRvaUtXaVkwQjBwLXdSenpWZVhBTFpLbzJiQkVGZ3UyTUYwU212ci1Td0FLV19VNGhXWEdhTGVhMkZCUEJtODdySi1WbUVaamNzTk1panVrSllqU2U5OHJMZUhMSDZlb2hRblVFWVE0T2JieXfSAX9BVV95cUxQMW9pT2tWQW85RkpUb2lLV2lZMEIwcC13Unp6VmVYQUxaS28yYkJFRmd1Mk1GMFNtdnItU3dBS1dfVTRoV1hHYUxlYTJGQlBCbTg3ckotVm1FWmpjc05NaWp1a0pZalNlOThyTGVITEg2ZW9oUW5VRVlRNE9iYnl3?oc=5",
+          "published_at": "2026-07-15T14:15:31+00:00",
           "first_observed_at": null
         },
         {
@@ -508,41 +561,19 @@
           "account_type": null,
           "query": "Eyüpspor transfer",
           "title": "Eyüpspor, Jawad El Yamiq'i Transfer Etti - Son Dakika",
-          "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNLWJkNXowd2tNbnV2U2U2QzN0dzBzMFN1QVJqMldmYUxDa3I4dW52QXVNOFdreXBhNXBlUzZlVEg0SWRMb25VOW80OXladEZidnVzeHNja2kxc3JTYjJ3SFVKazNHMWZPalR0ZnR2Zk05Z051U285ZXU0WFhOREl5ODE2bHBIZjBGblJlSUlmVdIBjgFBVV95cUxQLXlaR2hfOUNycDU3QklNOVllWjdWVko3SUF2LW9FZFgxX1lqcHZCdFpmWDd4WF80ZHpPVW1YQ0d1T1hRQURVQmlDZUJ3dFZxcUZfLUdDb0lXRnVEMzRZekhaS25mRHdRMzlTbTVWeU4yNUYtZE41NlVNUGZnb0ZqbVV4Si1mNFZnOHFHMU5n?oc=5",
+          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQLXlaR2hfOUNycDU3QklNOVllWjdWVko3SUF2LW9FZFgxX1lqcHZCdFpmWDd4WF80ZHpPVW1YQ0d1T1hRQURVQmlDZUJ3dFZxcUZfLUdDb0lXRnVEMzRZekhaS25mRHdRMzlTbTVWeU4yNUYtZE41NlVNUGZnb0ZqbVV4Si1mNFZnOHFHMU5n0gGOAUFVX3lxTFAteVpHaF85Q3JwNTdCSU05WWVaN1ZWSjdJQXYtb0VkWDFfWWpwdkJ0WmZYN3hYXzRkek9VbVhDR3VPWFFBRFVCaUNlQnd0VnFxRl8tR0NvSVdGdUQzNFl6SFpLbmZEd1EzOVNtNVZ5TjI1Ri1kTjU2VU1QZmdvRmptVXhKLWY0Vmc4cUcxTmc?oc=5",
           "published_at": "2026-07-15T13:53:01+00:00",
           "first_observed_at": null
         },
         {
-          "source": "Sabah Spor",
-          "source_tier": "MEDIA",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "Eyüpspor, Jawad El Yamiq'i transfer etti",
-          "link": "https://www.sabah.com.tr/spor/futbol/2026/07/15/eyupspor-jawad-el-yamiqi-transfer-etti",
-          "published_at": "2026-07-15T16:39:22+03:00",
-          "first_observed_at": null
-        },
-        {
-          "source": "Fotomaç",
+          "source": "A SPOR",
           "source_tier": "MEDIA",
           "source_type": "google_news",
           "account_type": null,
           "query": "Eyüpspor transfer",
-          "title": "Eyüpspor Jawad El Yamiq'i transfer etti! - Fotomaç",
-          "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQRGdfSmZvWlFBUFZOdXJYaERrMlVxQ3RXZFE0WThTZld3aVRfU2VlUHYycm9rN2c4X2JGY0dmZkxpX1ZBSlMxNWpHdGlXNjRTbzNhSjZTbHNCNkItSWh2d2VMT3lhT1ZMeDFiblhaY1NxQW5XVDgzWk5ObzJHVEtyaFlkd2dsSWdZWU1mT0VSa1NWeVXSAZMBQVVfeXFMUERnX0pmb1pRQVBWTnVyWGhEazJVcUN0V2RRNFk4U2ZXd2lUX1NlZVB2MnJvazdnOF9iRmNHZmZMaV9WQUpTMTVqR3RpVzY0U28zYUo2U2xzQjZCLUlodndlTE95YU9WTHgxYm5YWmNTcUFuV1Q4M1pOTm8yR1RLcmhZZHdnbElnWVlNZk9FUmtTVnlV?oc=5",
-          "published_at": "2026-07-15T13:30:27+00:00",
-          "first_observed_at": null
-        },
-        {
-          "source": "Haberler",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Eyüpspor transfer",
-          "title": "Eyüpspor, Jawad El Yamiq'i transfer etti - Haberler",
-          "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxON0NxQUJLWU96blY4LU91c284RUxnZFR4cnI2TEk5enZSVVpJSzlfY013MmFNOFpCV0VIX2JxSDhkTVlEYzJGRzRYNjZ3eW1kbF9HaVdlb1hnbjdsc0lXVHo3Q1Q2c1hBWXVrYUY1SDNpLVRDaEVnSDdlR0UxVGJ5ejFoOUkxZFhVZjlIcFdvbUFkdkRkQkRnaGJYWTVZNDjSAZ8BQVVfeXFMTjdDcUFCS1lPem5WOC1PdXNvOEVMZ2RUeHJyNkxJOXp2UlVaSUs5X2NNdzJhTThaQldFSF9icUg4ZE1ZRGMyRkc0WDY2d3ltZGxfR2lXZW9YZ243bHNJV1R6N0NUNnNYQVl1a2FGNUgzaS1UQ2hFZ0g3ZUdFMVRieXoxaDlJMWRYVWY5SHBXb21BZHZEZEJEZ2hiWFk1WTQ4?oc=5",
-          "published_at": "2026-07-15T12:56:58+00:00",
+          "title": "Eyüpspor, Jawad El Yamiq'i transfer etti - A SPOR",
+          "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQLUoxN1poUXRSdjRfYm0tdWdQOHVWSExhclVFRGtzLWNSYjlGSi1nSU1OZlBUZ0ZRRHd3TUVFUE5Oa1RjX3NMWGJpUkRNWGNrdkx5Umo2TTh1dDVVRTlWRzVnMDlJRS1jaHFGMDItZEo5ZVp1cjVhaDRJXzgybE5RZXhQcTRYdUY0cVZj0gGQAUFVX3lxTE14MXdsYnlncjZkQVRrNERQTkFNd0xwTGR5UEMxbFFCN3MzVjY5aG1HUkw1UG1NMHBYcTc4bHY0YVRPVWJ6Vmt1Rm5NUVJLaTVDUGZ5Nl8xY0d4WkE4VExJQS0telBTcmJ2ZGdSaTJMaVh3MjEyMGFYOFl5Z0NtREstZnhDNWJDNGx6MUpZUkctQQ?oc=5",
+          "published_at": "2026-07-15T13:28:21+00:00",
           "first_observed_at": null
         }
       ],
@@ -575,8 +606,8 @@
         "Hürriyet Spor",
         "Hürriyet",
         "beinsports.com.tr",
-        "Sabah Spor",
-        "Son Dakika"
+        "Sporx.com",
+        "birgun.net"
       ],
       "evidence": [
         {
@@ -613,25 +644,25 @@
           "first_observed_at": null
         },
         {
-          "source": "Sabah Spor",
-          "source_tier": "MEDIA",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "Konyaspor, Ebrima Colley'i transfer etti",
-          "link": "https://www.sabah.com.tr/spor/futbol/2026/07/15/konyaspor-ebrima-colleyi-transfer-etti",
-          "published_at": "2026-07-15T13:16:09+03:00",
-          "first_observed_at": null
-        },
-        {
-          "source": "Son Dakika",
+          "source": "Sporx.com",
           "source_tier": "MEDIA",
           "source_type": "google_news",
           "account_type": null,
           "query": "Konyaspor transfer",
-          "title": "Konyaspor, Ebrima Colley'i transfer etti - Son Dakika",
-          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNYnNFSlREVTZCZU5ZVHFpRHdaOXN0cjRMNkpTRU1oSDhONUI4TzJrZFRvRXRxOWZvTDlMLTBadkQ5TXVMYXBhMmhLemdlaG1OQlRyYk16VVdrekdMeTZSTlI5RHhhVkZ6S21ndkdWNVhVZkRVNFF2UzQ5M25WQll3cEExamp4T3A1anVrTXR30gGOAUFVX3lxTE1ic0VKVERVNkJlTllUcWlEd1o5c3RyNEw2SlNFTWhIOE41QjhPMmtkVG9FdHE5Zm9MOUwtMFp2RDlNdUxhcGEyaEt6Z2VobU5CVHJiTXpVV2t6R0x5NlJOUjlEeGFWRnpLbWd2R1Y1WFVmRFU0UXZTNDkzblZCWXdwQTFqanhPcDVqdWtNdHc?oc=5",
-          "published_at": "2026-07-15T09:29:32+00:00",
+          "title": "Konyaspor, Ebrima Colley'i transfer etti - Sporx.com",
+          "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPZ1JhY3h1VWRRVFpqOXc1cThyMnViQlVvQkE2VWFMNlBlVGFxNnVYRHJVeENjTmNpYXMtcHpwOHVJS0Z3RFg5OGlNaHdXazZfZ0IzTWpRM091dUR2blc0QnBERm1Xb2xiWHRaZXRPd2hWZEl3WklWVURsejZKQko5bmVESdIBhgFBVV95cUxQb0dLbGhYZkxOYmJoQzYyelB4dGQtOGUtdl9ZYnBoVGMxV21nMGxScjNQNkVBZkN6QlcyUGRLSUFJdlVMaTNzU2psWkFsbTFsVG43Nk42SjNNRE5PamwtcklCVHVmOEloRkYwTWJRMnJSdnFuUXRjZXhKcGVFdl9IdFN5ZUVfQQ?oc=5",
+          "published_at": "2026-07-15T09:47:00+00:00",
+          "first_observed_at": null
+        },
+        {
+          "source": "birgun.net",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Konyaspor transfer",
+          "title": "Konyaspor, Ebrima Colley'i transfer etti - birgun.net",
+          "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNbVotWG55STNWN09VOElvQTNDSVd6eE9HbG9Nb1htUi1oWGVtbFBfTTNnT01WVlBmRVlfUm9GRGNlQ2JMM3NOR01hemhWcTZsZi1GYXY0TXU1bzVUYXZqb1lxb194c0Y0bzlybWtjMkdtd1E5V0p4MHVzYWlCVHVsNQ?oc=5",
+          "published_at": "2026-07-15T09:25:00+00:00",
           "first_observed_at": null
         }
       ],
@@ -854,22 +885,22 @@
       "model_use": false
     },
     {
-      "player_name": "Eugene Omoruyi",
+      "player_name": "Phil Foden",
       "from_club": null,
-      "to_club": "Beşiktaş",
-      "signal_type": "official_transfer",
+      "to_club": "Galatasaray",
+      "signal_type": "interest",
       "window": "summer_2026",
       "confidence": "LOW",
       "direction_quality": "HEADLINE_EXPLICIT_DIRECTION",
-      "article_id": "fb404bb1143e",
-      "title": "Beşiktaş, Eugene Omoruyi'yi transfer etti!",
-      "link": "https://www.sabah.com.tr/spor/basketbol/2026/07/15/besiktas-eugene-omoruyiyi-transfer-etti",
-      "source": "Sabah Spor",
+      "article_id": "ef90f3cae3d5",
+      "title": "Galatasaray'dan Phil Foden bombası! George Gardi transfer için devrede",
+      "link": "https://www.takvim.com.tr/galeri/spor/galatasaraydan-phil-foden-hamlesi-gardi-devrede",
+      "source": "Takvim Spor",
       "source_type": "rss",
       "account_type": null,
       "query": null,
       "source_tier": "MEDIA",
-      "published_at": "2026-07-15T18:28:18+03:00",
+      "published_at": "2026-07-15T18:30:19+03:00",
       "first_observed_at": null,
       "summary_tr": "",
       "entity_confidence": "MEDIUM",
@@ -877,18 +908,18 @@
       "interpretation": "Tek kaynaklı transfer iddiası; yalnız transfer radarında izlenir.",
       "source_count": 1,
       "sources": [
-        "Sabah Spor"
+        "Takvim Spor"
       ],
       "evidence": [
         {
-          "source": "Sabah Spor",
+          "source": "Takvim Spor",
           "source_tier": "MEDIA",
           "source_type": "rss",
           "account_type": null,
           "query": null,
-          "title": "Beşiktaş, Eugene Omoruyi'yi transfer etti!",
-          "link": "https://www.sabah.com.tr/spor/basketbol/2026/07/15/besiktas-eugene-omoruyiyi-transfer-etti",
-          "published_at": "2026-07-15T18:28:18+03:00",
+          "title": "Galatasaray'dan Phil Foden bombası! George Gardi transfer için devrede",
+          "link": "https://www.takvim.com.tr/galeri/spor/galatasaraydan-phil-foden-hamlesi-gardi-devrede",
+          "published_at": "2026-07-15T18:30:19+03:00",
           "first_observed_at": null
         }
       ],
@@ -1096,88 +1127,6 @@
           "title": "Galatasaray'dan tarihi fırsat planı: Valverde - Sporx.com",
           "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQdVpwQWdLNUNFeDNxQXp6ZWFwazZSZTE5cFhxSS1KRG1wRnQ5TVh5c1loZ3FqcHVtYWxEMHNqRnZ5Q3V1a0xaZ1pZS1hBN0t3RGNHRzF1NVVsTEswbGNOcTNTT19SQVdNM1dfWktVWGhaQ0ZCSDdMSGZkU1doLUdhSTVCMFhwaUFVVkHSAYwBQVVfeXFMUFhtY3J4dGFUSlRnTEstbmktQVJEdjhobTh1b0FDOGljTVAtYjdBR2JBS0ZXLUY3QnhQQ0RNRjFldEtycVpjVFFsWUd0YVR0Mno0UmRibVgtTDNiblRvZ2gxeWdkRzlTMjFiOUJaUGpROGJ5QVV4dTIzaG1lNTMwc3BRSGNMWk1maGZmWFc?oc=5",
           "published_at": "2026-07-15T06:19:00+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": "Savunmada Çifte Transfer",
-      "from_club": null,
-      "to_club": "Trabzonspor",
-      "signal_type": "interest",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "HEADLINE_EXPLICIT_DIRECTION",
-      "article_id": "4ee5d6ad85d9",
-      "title": "Trabzonspor'da Savunmada Çifte Transfer Operasyonu! Fulham'dan Rekor Teklif, Yeni Stoper İçin Geri Sayım - Taka Gazete",
-      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPd19WLUNTY0k1bUJ1QURQeFdLa0tUZVlQWDZ5NGY3d2pPRUU2dTF2b0JiOTJHQWtXWjlEa09SNUZXa05UYUJBZ1ZidHgtckJ0UWJyeWF0M2tvaGRrNVBmVjJsa2NMUUN0NE1aVzNnSGY0U1NLZWp0aW9ObHpGMTZxelBhMlNSbkFvRk1PMEFwdEJhS2hDSFRHSk4xeWtOWlp6SDF1eXFBczZrV2VuNkhXa3c4LWNlMXVsWmM5SW93c0ZwbWFZTUhiYkRR0gHPAUFVX3lxTFBpRUdWMkxGVlRRUWFQLXhPb0VTQmlVQ3R6QnFBbmpPMkwtQ3NVTURoRjVOZktnOHN4Z0U2OVFPRFczN1FpYmhzSkx3QThhRWFYZTkxcjJXSnFidF9nTWhucXBybjhPb3RYSXJmX0docjNhWkpDOXBoQ2ZfQXBQX3FqdEJwUXFhR2tYcnZoUjF3RGUwV08wZHlMeUZaRWkzZUVMQXZMbUVobXRldG9RZmpVRmNFRzFMRkdKVjBnZ2pJVzJHdkpqTUxyYTR5Y0NlVQ?oc=5",
-      "source": "Taka Gazete",
-      "source_type": "google_news",
-      "account_type": null,
-      "query": "Trabzonspor transfer",
-      "source_tier": "MEDIA",
-      "published_at": "2026-07-15T06:18:00+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "MEDIUM",
-      "verification_status": "RUMOR",
-      "interpretation": "Tek kaynaklı transfer iddiası; yalnız transfer radarında izlenir.",
-      "source_count": 1,
-      "sources": [
-        "Taka Gazete"
-      ],
-      "evidence": [
-        {
-          "source": "Taka Gazete",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Trabzonspor transfer",
-          "title": "Trabzonspor'da Savunmada Çifte Transfer Operasyonu! Fulham'dan Rekor Teklif, Yeni Stoper İçin Geri Sayım - Taka Gazete",
-          "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPd19WLUNTY0k1bUJ1QURQeFdLa0tUZVlQWDZ5NGY3d2pPRUU2dTF2b0JiOTJHQWtXWjlEa09SNUZXa05UYUJBZ1ZidHgtckJ0UWJyeWF0M2tvaGRrNVBmVjJsa2NMUUN0NE1aVzNnSGY0U1NLZWp0aW9ObHpGMTZxelBhMlNSbkFvRk1PMEFwdEJhS2hDSFRHSk4xeWtOWlp6SDF1eXFBczZrV2VuNkhXa3c4LWNlMXVsWmM5SW93c0ZwbWFZTUhiYkRR0gHPAUFVX3lxTFBpRUdWMkxGVlRRUWFQLXhPb0VTQmlVQ3R6QnFBbmpPMkwtQ3NVTURoRjVOZktnOHN4Z0U2OVFPRFczN1FpYmhzSkx3QThhRWFYZTkxcjJXSnFidF9nTWhucXBybjhPb3RYSXJmX0docjNhWkpDOXBoQ2ZfQXBQX3FqdEJwUXFhR2tYcnZoUjF3RGUwV08wZHlMeUZaRWkzZUVMQXZMbUVobXRldG9RZmpVRmNFRzFMRkdKVjBnZ2pJVzJHdkpqTUxyYTR5Y0NlVQ?oc=5",
-          "published_at": "2026-07-15T06:18:00+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": "Horatiu Moldovan",
-      "from_club": null,
-      "to_club": "Eyüpspor",
-      "signal_type": "official_transfer",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "HEADLINE_EXPLICIT_DIRECTION",
-      "article_id": "fa37b2c474aa",
-      "title": "Eyüpspor, Horatiu Moldovan’ı transfer etti! - Sabah",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPaUNWcmtvM0pJcU15bjhPM3ZsZkJMbkRfQlpvUUFHSTZVNzZsejFITVhTZnFCUWItNnQzQ2ZBcjZ4ckUzendlSGJidUg2aTN3by1ZeHN1MmZ2ckpZeXh5QU0wb29kWFp1YTN5d1c5TGpmS0g4V0FKVksxQjJwTGJ6YTZVam1hc29LRXY5dHRWd2NGUdIBlAFBVV95cUxNb0xFZ1dxTnJYRTlxcUZmUHphNU1MR0pELUlKS2NhSkJKVnBtYlBZM2xqcmxrWVpFaFUyZVY4SmQzWlRpMTM3Y0dBWV9US3ZLRENIbWRxRDAyd3ZtOTFBOW5ZdW5pZnhpY0lEbUpyRXh5cm1jLXZXdHJsb3diVVdfVktoS2VwQVdwWFhkWkJ4U09XeVll?oc=5",
-      "source": "Sabah",
-      "source_type": "google_news",
-      "account_type": null,
-      "query": "Eyüpspor transfer",
-      "source_tier": "MEDIA",
-      "published_at": "2026-07-14T19:06:50+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "MEDIUM",
-      "verification_status": "RUMOR",
-      "interpretation": "Tek kaynaklı transfer iddiası; yalnız transfer radarında izlenir.",
-      "source_count": 1,
-      "sources": [
-        "Sabah"
-      ],
-      "evidence": [
-        {
-          "source": "Sabah",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Eyüpspor transfer",
-          "title": "Eyüpspor, Horatiu Moldovan’ı transfer etti! - Sabah",
-          "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPaUNWcmtvM0pJcU15bjhPM3ZsZkJMbkRfQlpvUUFHSTZVNzZsejFITVhTZnFCUWItNnQzQ2ZBcjZ4ckUzendlSGJidUg2aTN3by1ZeHN1MmZ2ckpZeXh5QU0wb29kWFp1YTN5d1c5TGpmS0g4V0FKVksxQjJwTGJ6YTZVam1hc29LRXY5dHRWd2NGUdIBlAFBVV95cUxNb0xFZ1dxTnJYRTlxcUZmUHphNU1MR0pELUlKS2NhSkJKVnBtYlBZM2xqcmxrWVpFaFUyZVY4SmQzWlRpMTM3Y0dBWV9US3ZLRENIbWRxRDAyd3ZtOTFBOW5ZdW5pZnhpY0lEbUpyRXh5cm1jLXZXdHJsb3diVVdfVktoS2VwQVdwWFhkWkJ4U09XeVll?oc=5",
-          "published_at": "2026-07-14T19:06:50+00:00",
           "first_observed_at": null
         }
       ],
@@ -1432,20 +1381,20 @@
     {
       "player_name": null,
       "from_club": null,
-      "to_club": "Beşiktaş",
-      "signal_type": "official_transfer",
+      "to_club": "Galatasaray",
+      "signal_type": "loan",
       "window": "summer_2026",
       "confidence": "LOW",
       "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "d6f60464bf00",
-      "title": "Beşiktaş, Eugene Omoruyi transferini açıkladı!",
-      "link": "https://www.aksam.com.tr/spor/besiktas-eugene-omoruyi-transferini-acikladi/haber-1683051",
-      "source": "Aksam Spor",
+      "article_id": "c0c75267d830",
+      "title": "TRANSFER | Lesley Ugochukwu, resmen Galatasaray’da",
+      "link": "https://www.cnnturk.com/spor/futbol/transfer-lesley-ugochukwu-resmen-galatasarayda-3443039",
+      "source": "CNN Türk Spor",
       "source_type": "rss",
       "account_type": null,
       "query": null,
       "source_tier": "MEDIA",
-      "published_at": "2026-07-15T18:29:00+03:00",
+      "published_at": "2026-07-15T21:12:31+00:00",
       "first_observed_at": null,
       "summary_tr": "",
       "entity_confidence": "LOW",
@@ -1453,18 +1402,143 @@
       "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
       "source_count": 1,
       "sources": [
-        "Aksam Spor"
+        "CNN Türk Spor"
       ],
       "evidence": [
         {
-          "source": "Aksam Spor",
+          "source": "CNN Türk Spor",
           "source_tier": "MEDIA",
           "source_type": "rss",
           "account_type": null,
           "query": null,
-          "title": "Beşiktaş, Eugene Omoruyi transferini açıkladı!",
-          "link": "https://www.aksam.com.tr/spor/besiktas-eugene-omoruyi-transferini-acikladi/haber-1683051",
-          "published_at": "2026-07-15T18:29:00+03:00",
+          "title": "TRANSFER | Lesley Ugochukwu, resmen Galatasaray’da",
+          "link": "https://www.cnnturk.com/spor/futbol/transfer-lesley-ugochukwu-resmen-galatasarayda-3443039",
+          "published_at": "2026-07-15T21:12:31+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": "NIHAD MUJAKIC",
+      "from_club": "GAZİANTEP FUTBOL KULÜBÜ A.Ş.",
+      "to_club": null,
+      "transfer_type": "permanent",
+      "window": "summer_2026",
+      "signal_type": "official_transfer",
+      "confidence": "LOW",
+      "tm_market_value_eur": 1200000,
+      "direction_quality": "TARGET_UNRESOLVED",
+      "article_id": "f5ce76e3da3a",
+      "title": "Erzurumspor FK, Nihad Mujakic'i transfer etti!",
+      "link": "https://www.sabah.com.tr/spor/futbol/2026/07/15/erzurumspor-fk-nihad-mujakici-transfer-etti",
+      "source": "Sabah Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-07-15T22:25:41+03:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "HIGH",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Sabah Spor"
+      ],
+      "evidence": [
+        {
+          "source": "Sabah Spor",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Erzurumspor FK, Nihad Mujakic'i transfer etti!",
+          "link": "https://www.sabah.com.tr/spor/futbol/2026/07/15/erzurumspor-fk-nihad-mujakici-transfer-etti",
+          "published_at": "2026-07-15T22:25:41+03:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": null,
+      "from_club": null,
+      "to_club": "Trabzonspor",
+      "signal_type": "official_transfer",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "68c585958bcc",
+      "title": "Trabzonspor’dan kaçarak gitmişti! İlerleyen yaşına rağmen Premier Lig’e transfer oldu - 61SAAT",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNVTNEVkpTdmR1V3czbjE1R0hMYmY1MVdzRDhBNHloQm8xNkFqV2p0S3dFeW1jN3Fkc2hlTXlMa3V6a0xpOTFqa185SHlFZU1tTG1tNks1MnprMG42RFdhZmU1YWUtcXNsN3RYT3I2TTdvU2xmZmF5aER5bUFpaXFBcjhpTnNiSWJyOFU0SEFaR2tLN2QyLTNGUndRdUczYnZOci1fWjI1eUQ?oc=5",
+      "source": "61SAAT",
+      "source_type": "google_news",
+      "account_type": null,
+      "query": "Trabzonspor transfer",
+      "source_tier": "MEDIA",
+      "published_at": "2026-07-15T19:00:00+00:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "61SAAT"
+      ],
+      "evidence": [
+        {
+          "source": "61SAAT",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Trabzonspor transfer",
+          "title": "Trabzonspor’dan kaçarak gitmişti! İlerleyen yaşına rağmen Premier Lig’e transfer oldu - 61SAAT",
+          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNVTNEVkpTdmR1V3czbjE1R0hMYmY1MVdzRDhBNHloQm8xNkFqV2p0S3dFeW1jN3Fkc2hlTXlMa3V6a0xpOTFqa185SHlFZU1tTG1tNks1MnprMG42RFdhZmU1YWUtcXNsN3RYT3I2TTdvU2xmZmF5aER5bUFpaXFBcjhpTnNiSWJyOFU0SEFaR2tLN2QyLTNGUndRdUczYnZOci1fWjI1eUQ?oc=5",
+          "published_at": "2026-07-15T19:00:00+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": null,
+      "from_club": null,
+      "to_club": "Trabzonspor",
+      "signal_type": "transfer_fee",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "4b4cb30a5432",
+      "title": "Trabzonspor'dan Robbie Ure sürprizi! Bonservisi belli oldu",
+      "link": "https://www.takvim.com.tr/spor/trabzonspor/2026/07/15/trabzonspordan-robbie-ure-surprizi-bonservisi-belli-oldu",
+      "source": "Takvim Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-07-15T19:28:46+03:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Takvim Spor"
+      ],
+      "evidence": [
+        {
+          "source": "Takvim Spor",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Trabzonspor'dan Robbie Ure sürprizi! Bonservisi belli oldu",
+          "link": "https://www.takvim.com.tr/spor/trabzonspor/2026/07/15/trabzonspordan-robbie-ure-surprizi-bonservisi-belli-oldu",
+          "published_at": "2026-07-15T19:28:46+03:00",
           "first_observed_at": null
         }
       ],
@@ -1474,19 +1548,19 @@
       "player_name": null,
       "from_club": null,
       "to_club": "Beşiktaş",
-      "signal_type": "offer",
+      "signal_type": "official_transfer",
       "window": "summer_2026",
       "confidence": "LOW",
       "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "1039e037a2df",
-      "title": "Beşiktaş yıldız ismin transferi için resmi teklif yaptı! - Fotomaç",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxObGFpU0ZwN0Nob08wZTlGWVNMS2d3ZHpMRXg5dWFzaThkNUZMOGktME5ZUE9jUnBsNDR1VEdib3NjTWdyeV9scUM0cktnTF82SzhHM3B2dHNtQWljTlBZRGRPU1ZueWxvZDFiNm14Z0VLaW4tWWNGUXgtcUlOZFZFVlFsaHpLUC13Nmp6NndtSjZyR3NaNVR5RXI5T0dFM0xJdVhV0gGoAUFVX3lxTE1wRjhHNmREazdBREFZWGRldndrLTVPYVpiY21aTVg1Zk5jNEExY3dxbVp3dDRKaTNKMjlxWFo5R0ozX3hyYk1falpHNWRZSmM1VnF2RWI5M1Y3VGdjYjBOVGVCQmZaTUp0YlBrdWlXZHF1aFZfUUpSVWpvNFpVX2w0d1dSaGdqYzRWRDRzcGFiMUp3VGtQaTJoYy1yeDFGTlRhMDM1MEEzRA?oc=5",
+      "article_id": "b7adfa20d185",
+      "title": "Beşiktaş Erkek Basketbol Takımı Eugene Omoruyi'yi transfer ettiğini duyurdu - Fotomaç",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPcG9SNHU1a0pMRVVuaXN3SktOVW5nTFoxZmNUNUxDMVdhZG5HQVdpVWgyUVRvVXpRN0RySktWdU1JNnRVNDctOXVhMGg4Y2VCeklEdk5MeURjSm8wcDFoMmRHTE1uWjZaRXpVeVBlWnloeDZ3T1JBZU82MG9yNng0bmRnekZiS0ZzR1FLN1pCUExWVHBfRmJyU2hjYk1Qb2VHV19qb1FlUWI5OXg0RlB1RTNsR3M1d0lGX3A5QnhB0gHDAUFVX3lxTE9XSmhiSWkzcV9SeFNDYWR1SzhuQWltUlFCVFhPNDBnaDBCMmJRNmxBZFFtNEU4UlhpV1ZNQzdXWHB4N2t6dDl5b0xORDNYM0x1VkJfNFZnWFMyV1lNNERCRE5jaDFzeTNKQUVic1kzTEdPbm55NHdtR3o5SHE5eDNMWFRIZWV0UTdpQWRzU2s5ZHhEY3pqcXZVb2xNU1pSd1NReDUyTmlQd3dsWVAtcktEU2N2M3pleDZfaERYdk12VDVmMA?oc=5",
       "source": "Fotomaç",
       "source_type": "google_news",
       "account_type": null,
       "query": "Beşiktaş transfer",
       "source_tier": "MEDIA",
-      "published_at": "2026-07-15T15:14:00+00:00",
+      "published_at": "2026-07-15T15:37:00+00:00",
       "first_observed_at": null,
       "summary_tr": "",
       "entity_confidence": "LOW",
@@ -1503,9 +1577,50 @@
           "source_type": "google_news",
           "account_type": null,
           "query": "Beşiktaş transfer",
-          "title": "Beşiktaş yıldız ismin transferi için resmi teklif yaptı! - Fotomaç",
-          "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxObGFpU0ZwN0Nob08wZTlGWVNMS2d3ZHpMRXg5dWFzaThkNUZMOGktME5ZUE9jUnBsNDR1VEdib3NjTWdyeV9scUM0cktnTF82SzhHM3B2dHNtQWljTlBZRGRPU1ZueWxvZDFiNm14Z0VLaW4tWWNGUXgtcUlOZFZFVlFsaHpLUC13Nmp6NndtSjZyR3NaNVR5RXI5T0dFM0xJdVhV0gGoAUFVX3lxTE1wRjhHNmREazdBREFZWGRldndrLTVPYVpiY21aTVg1Zk5jNEExY3dxbVp3dDRKaTNKMjlxWFo5R0ozX3hyYk1falpHNWRZSmM1VnF2RWI5M1Y3VGdjYjBOVGVCQmZaTUp0YlBrdWlXZHF1aFZfUUpSVWpvNFpVX2w0d1dSaGdqYzRWRDRzcGFiMUp3VGtQaTJoYy1yeDFGTlRhMDM1MEEzRA?oc=5",
-          "published_at": "2026-07-15T15:14:00+00:00",
+          "title": "Beşiktaş Erkek Basketbol Takımı Eugene Omoruyi'yi transfer ettiğini duyurdu - Fotomaç",
+          "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPcG9SNHU1a0pMRVVuaXN3SktOVW5nTFoxZmNUNUxDMVdhZG5HQVdpVWgyUVRvVXpRN0RySktWdU1JNnRVNDctOXVhMGg4Y2VCeklEdk5MeURjSm8wcDFoMmRHTE1uWjZaRXpVeVBlWnloeDZ3T1JBZU82MG9yNng0bmRnekZiS0ZzR1FLN1pCUExWVHBfRmJyU2hjYk1Qb2VHV19qb1FlUWI5OXg0RlB1RTNsR3M1d0lGX3A5QnhB0gHDAUFVX3lxTE9XSmhiSWkzcV9SeFNDYWR1SzhuQWltUlFCVFhPNDBnaDBCMmJRNmxBZFFtNEU4UlhpV1ZNQzdXWHB4N2t6dDl5b0xORDNYM0x1VkJfNFZnWFMyV1lNNERCRE5jaDFzeTNKQUVic1kzTEdPbm55NHdtR3o5SHE5eDNMWFRIZWV0UTdpQWRzU2s5ZHhEY3pqcXZVb2xNU1pSd1NReDUyTmlQd3dsWVAtcktEU2N2M3pleDZfaERYdk12VDVmMA?oc=5",
+          "published_at": "2026-07-15T15:37:00+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": null,
+      "from_club": null,
+      "to_club": "Samsunspor",
+      "signal_type": "deal_close",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "b8f153252160",
+      "title": "Samsunspor'da Transfer Hareketliliği: Enea Mihaj ile Anlaşma Sağlandı, Elliot Watt'ta Son Viraj - Samsun Haber",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQblJhVHF2b2JpdmZmYkVrU3lzOU1YMmp1cGd3MDl5UngyRVBNeDdBdTNfbWlZWmMyR0VaWWt1Z1VscHg1a3ZWOFZIQi1GTmRsT0dza2pqT0ZGVnhkZHZBRTdsaWIxQkpwSGVzZk14Ukt5bnhIQWtUR0tsSF9hc1ZMNHpESWZFQWJtYmQ4ci1PdXZmdFo2dElzRGl1aGF2RmFxUTZFLTU4TWJjUHBmdHYzSkJpWGYtTGFxR1M00gHAAUFVX3lxTFBqbmlQbURIanJ4NjA4NzJlNDFiNHktaVl2MlJFcVp6OEVCeDlTVzhfWTdWS1JhR3FKZWRBem1vMDJXdUZoOFI4RnFyU3pYTnRCT1VPV2swOWw1eF9lYTFUS0FlT1ZfYXgzSE1vd09JZkY1V2d3bEFBTU1Cc09iMUVYNGdVRTFhR2RzYk1vSF9sMHY2N0lhVnVJMTR2WE1kSTFrU3RpTzlmOGxPQ1d4alA0dUpBTzAzVHh1dnlHQ2tvTQ?oc=5",
+      "source": "Samsun Haber",
+      "source_type": "google_news",
+      "account_type": null,
+      "query": "Samsunspor transfer",
+      "source_tier": "MEDIA",
+      "published_at": "2026-07-15T15:00:00+00:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Samsun Haber"
+      ],
+      "evidence": [
+        {
+          "source": "Samsun Haber",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Samsunspor transfer",
+          "title": "Samsunspor'da Transfer Hareketliliği: Enea Mihaj ile Anlaşma Sağlandı, Elliot Watt'ta Son Viraj - Samsun Haber",
+          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQblJhVHF2b2JpdmZmYkVrU3lzOU1YMmp1cGd3MDl5UngyRVBNeDdBdTNfbWlZWmMyR0VaWWt1Z1VscHg1a3ZWOFZIQi1GTmRsT0dza2pqT0ZGVnhkZHZBRTdsaWIxQkpwSGVzZk14Ukt5bnhIQWtUR0tsSF9hc1ZMNHpESWZFQWJtYmQ4ci1PdXZmdFo2dElzRGl1aGF2RmFxUTZFLTU4TWJjUHBmdHYzSkJpWGYtTGFxR1M00gHAAUFVX3lxTFBqbmlQbURIanJ4NjA4NzJlNDFiNHktaVl2MlJFcVp6OEVCeDlTVzhfWTdWS1JhR3FKZWRBem1vMDJXdUZoOFI4RnFyU3pYTnRCT1VPV2swOWw1eF9lYTFUS0FlT1ZfYXgzSE1vd09JZkY1V2d3bEFBTU1Cc09iMUVYNGdVRTFhR2RzYk1vSF9sMHY2N0lhVnVJMTR2WE1kSTFrU3RpTzlmOGxPQ1d4alA0dUpBTzAzVHh1dnlHQ2tvTQ?oc=5",
+          "published_at": "2026-07-15T15:00:00+00:00",
           "first_observed_at": null
         }
       ],
@@ -1588,6 +1703,47 @@
           "title": "Samsunspor, Trabzonspor ile transfer görüşmesini açıkladı. \"İyi para gelirse vereceğiz\" - NTV Haber",
           "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQOTZUTVdPNE5sdUJCMkwtbE5QSi16TVlTM1ZrZDlrY1cxV21uNzRpaklIOEFJZWNTUmV0VGtQalAtRjEzcUZxUUVFWGt5ZEVvSVY3Q2J5VkpReDdPWlNGQWRJekk5Q3I5QkdLMG5Gb09XdzU3VkVNYl9odUw1RFNDQXJ5dGdpRmZlelpxS3ZqVGtCN21LMHhKT3NGaFNQY3FzdUJHVnpHbGEzVl9BakZnY0dpNEJQN05JX2tQTWRRdWM?oc=5",
           "published_at": "2026-07-15T13:43:35+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": null,
+      "from_club": null,
+      "to_club": "Beşiktaş",
+      "signal_type": "signing",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "eede41ec3372",
+      "title": "Beşiktaş'ta şölen! Trossard Tüpraş Stadyumu'nda imzalayacak",
+      "link": "https://www.takvim.com.tr/spor/besiktas/2026/07/15/besiktasta-solen-trossard-tupras-stadyumunda-imzalayacak",
+      "source": "Takvim Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-07-15T16:42:05+03:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Takvim Spor"
+      ],
+      "evidence": [
+        {
+          "source": "Takvim Spor",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Beşiktaş'ta şölen! Trossard Tüpraş Stadyumu'nda imzalayacak",
+          "link": "https://www.takvim.com.tr/spor/besiktas/2026/07/15/besiktasta-solen-trossard-tupras-stadyumunda-imzalayacak",
+          "published_at": "2026-07-15T16:42:05+03:00",
           "first_observed_at": null
         }
       ],
@@ -1699,12 +1855,11 @@
       "entity_confidence": "HIGH",
       "verification_status": "REVIEW_REQUIRED",
       "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 4,
+      "source_count": 3,
       "sources": [
         "Artı Gerçek",
         "Haber3",
-        "Hürriyet Spor",
-        "Sabah"
+        "Hürriyet Spor"
       ],
       "evidence": [
         {
@@ -1738,58 +1893,6 @@
           "title": "Amed Sportif Faaliyetler, Umut Meraş'ı transfer etti!",
           "link": "https://www.hurriyet.com.tr/sporarena/amed-sportif-faaliyetler-umut-merasi-transfer-etti-43240113",
           "published_at": "2026-07-14T21:21:56+00:00",
-          "first_observed_at": null
-        },
-        {
-          "source": "Sabah",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Amedspor transfer",
-          "title": "Amedspor, Umut Meraş'ı transfer etti! - Sabah",
-          "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOTFhLYXgycXBtUGNzYzAwOTVfNUp5MWtwVElMU2JuTXcyemZBVFNGM1QyZExzUWQ1RUVIMGs2bDBmR2F6OURFT3NSRzVlRVBOTzFsdFoxNjFmenVtdk01Z3dWUGNBWWF2XzBRdjY1S1lFcFVvVklqdVlJOTFjSnk5NzZuNWl2TTIyN0HSAYwBQVVfeXFMTlpmdDFXV1NReUZiaTZBemdTNUVhdURjNWRHUHRpaVlrU3JoUG94QnU4UnpIU2VjYUh6WXFiNFhqYXRNWHRmeTZ3N1JzU1lseGpOc1YxZjlTdzZ6R09XZkhuTU9iWlR5TWxSS0lVX2twN0hSM0wwUEJDa19yNGdrbmo0RHU2S3k5bGdIRTM?oc=5",
-          "published_at": "2026-07-14T20:14:21+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": null,
-      "to_club": "Fenerbahçe",
-      "signal_type": "transfer_fee",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "223afba6fbe3",
-      "title": "Mason Greenwood, Fenerbahçe'nin en pahalı transferi oldu",
-      "link": "https://www.sabah.com.tr/spor/futbol/2026/07/15/mason-greenwood-fenerbahcenin-en-pahali-transferi-oldu",
-      "source": "Sabah Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-07-15T14:38:53+03:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Sabah Spor"
-      ],
-      "evidence": [
-        {
-          "source": "Sabah Spor",
-          "source_tier": "MEDIA",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "Mason Greenwood, Fenerbahçe'nin en pahalı transferi oldu",
-          "link": "https://www.sabah.com.tr/spor/futbol/2026/07/15/mason-greenwood-fenerbahcenin-en-pahali-transferi-oldu",
-          "published_at": "2026-07-15T14:38:53+03:00",
           "first_observed_at": null
         }
       ],
@@ -1874,47 +1977,6 @@
           "title": "Beşiktaşlı Onana için üç kulüp devrede! Ayrılık kapıda",
           "link": "https://www.takvim.com.tr/spor/besiktas/2026/07/15/besiktasli-onana-icin-uc-kulup-devrede-ayrilik-kapida",
           "published_at": "2026-07-15T13:45:38+03:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": null,
-      "to_club": "Konyaspor",
-      "signal_type": "loan",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "c7d9ce85bcab",
-      "title": "Konyaspor'a Gambiyalı sol kanat: Young Boys'tan kiralandı - NTVSpor",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNQ3lJYnEzN2pLdEJfTTJxM1ZkeDhBZnVDakZNTjFNc181elVWSTMyYWJYSE1YOVZtX2JTRjhnU3E3Y0xLNGhoOV92RGlIanJFWm5IdmRMU0F3NU5telJ2bGpUSEZFUFhyMFBVWEpoSS1jYk9mVUFVQzlOTnAxQnk3WHlwX1NYdFB3ZWdnT0x0YmZGTlVldUVEdTlEb1fSAZwBQVVfeXFMTUN5SWJxMzdqS3RCX00ycTNWZHg4QWZ1Q2pGTU4xTXNfNXpVVkkzMmFiWEhNWDlWbV9iU0Y4Z1NxN2NMSzRoaDlfdkRpSGpyRVpuSHZkTFNBdzVObXpSdmxqVEhGRVBYcjBQVVhKaEktY2JPZlVBVUM5Tk5wMUJ5N1h5cF9TWHRQd2VnZ09MdGJmRk5VZXVFRHU5RG9X?oc=5",
-      "source": "NTVSpor",
-      "source_type": "google_news",
-      "account_type": null,
-      "query": "Konyaspor transfer",
-      "source_tier": "MEDIA",
-      "published_at": "2026-07-15T09:38:53+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "NTVSpor"
-      ],
-      "evidence": [
-        {
-          "source": "NTVSpor",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Konyaspor transfer",
-          "title": "Konyaspor'a Gambiyalı sol kanat: Young Boys'tan kiralandı - NTVSpor",
-          "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNQ3lJYnEzN2pLdEJfTTJxM1ZkeDhBZnVDakZNTjFNc181elVWSTMyYWJYSE1YOVZtX2JTRjhnU3E3Y0xLNGhoOV92RGlIanJFWm5IdmRMU0F3NU5telJ2bGpUSEZFUFhyMFBVWEpoSS1jYk9mVUFVQzlOTnAxQnk3WHlwX1NYdFB3ZWdnT0x0YmZGTlVldUVEdTlEb1fSAZwBQVVfeXFMTUN5SWJxMzdqS3RCX00ycTNWZHg4QWZ1Q2pGTU4xTXNfNXpVVkkzMmFiWEhNWDlWbV9iU0Y4Z1NxN2NMSzRoaDlfdkRpSGpyRVpuSHZkTFNBdzVObXpSdmxqVEhGRVBYcjBQVVhKaEktY2JPZlVBVUM5Tk5wMUJ5N1h5cF9TWHRQd2VnZ09MdGJmRk5VZXVFRHU5RG9X?oc=5",
-          "published_at": "2026-07-15T09:38:53+00:00",
           "first_observed_at": null
         }
       ],
@@ -2085,6 +2147,49 @@
       "model_use": false
     },
     {
+      "player_name": "BATISTA ADELINO MENDY",
+      "from_club": "TRABZONSPOR A.Ş.",
+      "to_club": null,
+      "transfer_type": "permanent",
+      "window": "summer_2026",
+      "signal_type": "transfer_fee",
+      "confidence": "LOW",
+      "tm_market_value_eur": null,
+      "direction_quality": "TARGET_UNRESOLVED",
+      "article_id": "9eb22b91cbfb",
+      "title": "Batista Mendy Trabzonspor'a veda ediyor! Yeni takımı ve bonservis bedeli netleşti - A SPOR",
+      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQeUd1WDNtcnZtME9hSXJaamhLOWhkdEs2NnZlNmU0OTFVVTRVdlJ6TURGZVFSWHhfRFZfYjZWckJ4VnRfRGpRdzB6cUJxR3VIWVBoOVlyTmdYWTYtT0hnemt1elp6RXVjcmV5elA5Q2d5czFWblRNbzA5cnZkUkxiazJoT2pGMEt3WTl0R3A1Nm5ETWJLOEUtUmd5cTlDbjNWY0tJMVk4bVZKZDFIMmlrRUVnYWxGUUM0dnUzUlAzR2lxVm1tY2lVV1hzclhMcUnSAdQBQVVfeXFMTVVGNnZCN1BmdFhPTTNJM3ZMZ0JOU0dMLXMxdjBCV1BqUDJBTk5qRmxlRlE1czVoVG5TaG93akFWZndQMWVobjV5NHBGX2ZWdVhzckNYdE1OeXV2MzZxaEVScEcxMWlqVnZ1LXAwaVdZLUtXQkFDMGpQdy1fclFkdzh6bG92MGRSU3NUdGhNQ2g4bGlLWURxeU5nTnNrcmhxSF96YmEtczR6SlI1eklHRlktQmlaVlBkbGxuRFltZ1k0Ym04QlVGVlFsUkQ1MW1KVWdPci0?oc=5",
+      "source": "A SPOR",
+      "source_type": "google_news",
+      "account_type": null,
+      "query": "Trabzonspor transfer",
+      "source_tier": "MEDIA",
+      "published_at": "2026-07-15T06:30:51+00:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "HIGH",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "A SPOR"
+      ],
+      "evidence": [
+        {
+          "source": "A SPOR",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Trabzonspor transfer",
+          "title": "Batista Mendy Trabzonspor'a veda ediyor! Yeni takımı ve bonservis bedeli netleşti - A SPOR",
+          "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQeUd1WDNtcnZtME9hSXJaamhLOWhkdEs2NnZlNmU0OTFVVTRVdlJ6TURGZVFSWHhfRFZfYjZWckJ4VnRfRGpRdzB6cUJxR3VIWVBoOVlyTmdYWTYtT0hnemt1elp6RXVjcmV5elA5Q2d5czFWblRNbzA5cnZkUkxiazJoT2pGMEt3WTl0R3A1Nm5ETWJLOEUtUmd5cTlDbjNWY0tJMVk4bVZKZDFIMmlrRUVnYWxGUUM0dnUzUlAzR2lxVm1tY2lVV1hzclhMcUnSAdQBQVVfeXFMTVVGNnZCN1BmdFhPTTNJM3ZMZ0JOU0dMLXMxdjBCV1BqUDJBTk5qRmxlRlE1czVoVG5TaG93akFWZndQMWVobjV5NHBGX2ZWdVhzckNYdE1OeXV2MzZxaEVScEcxMWlqVnZ1LXAwaVdZLUtXQkFDMGpQdy1fclFkdzh6bG92MGRSU3NUdGhNQ2g4bGlLWURxeU5nTnNrcmhxSF96YmEtczR6SlI1eklHRlktQmlaVlBkbGxuRFltZ1k0Ym04QlVGVlFsUkQ1MW1KVWdPci0?oc=5",
+          "published_at": "2026-07-15T06:30:51+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
       "player_name": null,
       "from_club": null,
       "to_club": "Beşiktaş",
@@ -2120,47 +2225,6 @@
           "title": "Amedspor eski Beşiktaşlı futbolcuyu transfer etti - Yeni Şafak",
           "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOazhhSUo0WUV2bi1fcGVHaU0wVWw4amE1QkxyaWZJUkRPbzhQT0JVWXZpVkVERnI3b0FSMHl5dThDdkxnUWRMMEc4U3lxNkYxS0dZZnh2TWtOaXFmNjQzd3pyc2VqZElNYXNiWDlwUkRTM2pHM2h5emcySGdFY25xUHJqSk54cEJXbEpueFM4blZJWElycXhibEFvQQ?oc=5",
           "published_at": "2026-07-15T05:31:27+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": null,
-      "to_club": "Beşiktaş",
-      "signal_type": "departure",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "1c073695cb86",
-      "title": "Beşiktaş, mağlubiyetle kapattı",
-      "link": "https://www.cnnturk.com/spor/futbol/besiktas-maglubiyetle-kapatti-3442610",
-      "source": "CNN Türk Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-07-14T21:05:22+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "CNN Türk Spor"
-      ],
-      "evidence": [
-        {
-          "source": "CNN Türk Spor",
-          "source_tier": "MEDIA",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "Beşiktaş, mağlubiyetle kapattı",
-          "link": "https://www.cnnturk.com/spor/futbol/besiktas-maglubiyetle-kapatti-3442610",
-          "published_at": "2026-07-14T21:05:22+00:00",
           "first_observed_at": null
         }
       ],
@@ -2251,47 +2315,6 @@
     {
       "player_name": null,
       "from_club": null,
-      "to_club": "Fenerbahçe",
-      "signal_type": "transfer_fee",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "6073e3b762ef",
-      "title": "Fenerbahçe Greenwood'u açıkladı!",
-      "link": "https://www.haberturk.com/son-dakika-fenerbahce-greenwood-u-acikladi-3898550-spor",
-      "source": "Haberturk Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-07-14T20:10:13+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Haberturk Spor"
-      ],
-      "evidence": [
-        {
-          "source": "Haberturk Spor",
-          "source_tier": "MEDIA",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "Fenerbahçe Greenwood'u açıkladı!",
-          "link": "https://www.haberturk.com/son-dakika-fenerbahce-greenwood-u-acikladi-3898550-spor",
-          "published_at": "2026-07-14T20:10:13+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": null,
       "to_club": "Beşiktaş",
       "signal_type": "transfer_negotiation",
       "window": "summer_2026",
@@ -2325,47 +2348,6 @@
           "title": "Beşiktaş'ın transfer görüşmelerinde bulunduğu Leandro Trossard, İstanbul'da",
           "link": "https://www.aa.com.tr/tr/spor/besiktasin-transfer-gorusmelerinde-bulundugu-leandro-trossard-istanbulda/3998147",
           "published_at": "2026-07-14T20:41:21+03:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": null,
-      "to_club": "Beşiktaş",
-      "signal_type": "signing",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "1729b4c5ed09",
-      "title": "Trossard Beşiktaş için İstanbul'da!",
-      "link": "https://www.haberturk.com/son-dakika-besiktas-in-yeni-transferi-leandro-trossard-istanbul-da-3898503-spor",
-      "source": "Haberturk Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-07-14T17:32:49+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Haberturk Spor"
-      ],
-      "evidence": [
-        {
-          "source": "Haberturk Spor",
-          "source_tier": "MEDIA",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "Trossard Beşiktaş için İstanbul'da!",
-          "link": "https://www.haberturk.com/son-dakika-besiktas-in-yeni-transferi-leandro-trossard-istanbul-da-3898503-spor",
-          "published_at": "2026-07-14T17:32:49+00:00",
           "first_observed_at": null
         }
       ],
@@ -2426,7 +2408,7 @@
       "source": "Fotomaç",
       "source_type": "google_news",
       "account_type": null,
-      "query": "Beşiktaş transfer",
+      "query": "Galatasaray transfer",
       "source_tier": "MEDIA",
       "published_at": "2026-07-14T13:26:53+00:00",
       "first_observed_at": null,
@@ -2444,7 +2426,7 @@
           "source_tier": "MEDIA",
           "source_type": "google_news",
           "account_type": null,
-          "query": "Beşiktaş transfer",
+          "query": "Galatasaray transfer",
           "title": "Beşiktaş ve Galatasaray aynı savunmacının peşinde! - Fotomaç",
           "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOcjJjU1RRZ2ZIbUwyVUZ1QXg1TmpmbkRZSlU3UUNhTmM5T2hMbS03andDUXduSXhGWEZ5N1NzcXByeTY1cS13RnNScHM5ZGlWYTJHOFR3RkVhS043SG5Pb0NYSDlYd1JwU1o5cTVBRHZhU19xbGR5dVAxdGMwZDN3V2hZeHhZZ1p0c1hSTW0ya3lfYmtUR1Jqc25kYVNTdnhBSjFoX3J2bWpTWGVZWk5YRlpwV2wzZDTSAbwBQVVfeXFMTndrTDlRalBNb0RzbnZLblhSeWhGNnotTFpIU3FuRVN5NVdMTW9Ib0NkNkZhUXY5R2tnSnN3aHRHRC1IQnduVU5rNEppdTRCbVgyVnE1N285cFE5ZmdrbEIxUHY4cUtmaVR5dFVLRU1SSEJiN3hONkthSDh0YlZud0k3em1rREZpTWJzWXJxdlRDNjhKdzV4NXN5QmNxZGxQUlV6eUdNbXRlWEpkSmp5R1d3R2lnRFMzamtmWlY?oc=5",
           "published_at": "2026-07-14T13:26:53+00:00",
@@ -2579,47 +2561,6 @@
     {
       "player_name": null,
       "from_club": null,
-      "to_club": "Beşiktaş",
-      "signal_type": "offer",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "9b56b78a7c51",
-      "title": "Beşiktaş, Vlahovic'e teklif yaptı! İşte maaşı - Hürriyet",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxONnNaUlRzNHFPbkhaTmZJT3ppc3JrdE1MUjh1SzIwVk1FU0d3X1BHVkVxLWJER2sxSE1laU1GRmZyelU5ZGktSzl5NkZOSVRybkswYVNHRUxiQ1hOODdITGsyckFkWjFma1FpOFo5cm94cGNsUFZKb2szSGVWZW44NGpEX0dJQ2t0cFJnUEozLS1HUQ?oc=5",
-      "source": "Hürriyet",
-      "source_type": "google_news",
-      "account_type": null,
-      "query": "Beşiktaş transfer",
-      "source_tier": "MEDIA",
-      "published_at": "2026-07-14T08:44:00+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Hürriyet"
-      ],
-      "evidence": [
-        {
-          "source": "Hürriyet",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Beşiktaş transfer",
-          "title": "Beşiktaş, Vlahovic'e teklif yaptı! İşte maaşı - Hürriyet",
-          "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxONnNaUlRzNHFPbkhaTmZJT3ppc3JrdE1MUjh1SzIwVk1FU0d3X1BHVkVxLWJER2sxSE1laU1GRmZyelU5ZGktSzl5NkZOSVRybkswYVNHRUxiQ1hOODdITGsyckFkWjFma1FpOFo5cm94cGNsUFZKb2szSGVWZW44NGpEX0dJQ2t0cFJnUEozLS1HUQ?oc=5",
-          "published_at": "2026-07-14T08:44:00+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": null,
       "to_club": "Göztepe",
       "signal_type": "official_transfer",
       "window": "summer_2026",
@@ -2659,43 +2600,82 @@
       "model_use": false
     },
     {
-      "player_name": "KAAN AYHAN",
-      "from_club": "GALATASARAY A.Ş.",
-      "to_club": null,
-      "transfer_type": "permanent",
+      "player_name": null,
+      "from_club": null,
+      "to_club": "Galatasaray",
+      "signal_type": "transfer_negotiation",
       "window": "summer_2026",
-      "signal_type": "departure",
       "confidence": "LOW",
-      "tm_market_value_eur": 1500000,
-      "direction_quality": "TARGET_UNRESOLVED",
-      "article_id": "23704be841d5",
-      "title": "Galatasaray'da veda zamanı! Kaan Ayhan ile yollar ayrılıyor - Sözcü Gazetesi",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNdjVVNnhDaUxRTFUzV0IxdkdTOXIyQTNpN3ZSUkMweVBuXzFfZVE2a1NMNjhuOEhmRHJWUFRNdGFvNFZCMzFOYjBUOVR3ZnpYOVRSTXdLaDJwTFBPQ3NzYjZENDNnM3QzOWlsVUhwa2VTbThVUXZReUFXcE1MNW5XbVFpVVFHUmZ3dHRzdl8zb0J5MXFIUGc?oc=5",
-      "source": "Sözcü Gazetesi",
-      "source_type": "google_news",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "76f95c501fd5",
+      "title": "Galatasaray'ın transfer görüşmelerinde bulunduğu Lesley Ugochukwu, İstanbul'a geldi",
+      "link": "https://www.aa.com.tr/tr/spor/galatasarayin-transfer-gorusmelerinde-bulundugu-lesley-ugochukwu-istanbula-geldi/3996999",
+      "source": "Anadolu Ajansı Spor",
+      "source_type": "rss",
       "account_type": null,
-      "query": "Galatasaray transfer",
-      "source_tier": "MEDIA",
-      "published_at": "2026-07-14T08:16:00+00:00",
+      "query": null,
+      "source_tier": "AGENCY",
+      "published_at": "2026-07-13T23:20:59+03:00",
       "first_observed_at": null,
       "summary_tr": "",
-      "entity_confidence": "HIGH",
+      "entity_confidence": "LOW",
       "verification_status": "REVIEW_REQUIRED",
       "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
       "source_count": 1,
       "sources": [
-        "Sözcü Gazetesi"
+        "Anadolu Ajansı Spor"
       ],
       "evidence": [
         {
-          "source": "Sözcü Gazetesi",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
+          "source": "Anadolu Ajansı Spor",
+          "source_tier": "AGENCY",
+          "source_type": "rss",
           "account_type": null,
-          "query": "Galatasaray transfer",
-          "title": "Galatasaray'da veda zamanı! Kaan Ayhan ile yollar ayrılıyor - Sözcü Gazetesi",
-          "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNdjVVNnhDaUxRTFUzV0IxdkdTOXIyQTNpN3ZSUkMweVBuXzFfZVE2a1NMNjhuOEhmRHJWUFRNdGFvNFZCMzFOYjBUOVR3ZnpYOVRSTXdLaDJwTFBPQ3NzYjZENDNnM3QzOWlsVUhwa2VTbThVUXZReUFXcE1MNW5XbVFpVVFHUmZ3dHRzdl8zb0J5MXFIUGc?oc=5",
-          "published_at": "2026-07-14T08:16:00+00:00",
+          "query": null,
+          "title": "Galatasaray'ın transfer görüşmelerinde bulunduğu Lesley Ugochukwu, İstanbul'a geldi",
+          "link": "https://www.aa.com.tr/tr/spor/galatasarayin-transfer-gorusmelerinde-bulundugu-lesley-ugochukwu-istanbula-geldi/3996999",
+          "published_at": "2026-07-13T23:20:59+03:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": null,
+      "from_club": null,
+      "to_club": "Başakşehir",
+      "signal_type": "transfer_fee",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "ece436912e35",
+      "title": "Başakşehir’den Bakasetas hamlesi! Ayrılık kararı bekleniyor",
+      "link": "https://www.takvim.com.tr/spor/superlig/2026/07/13/basaksehirden-bakasetas-hamlesi-ayrilik-karari-bekleniyor",
+      "source": "Takvim Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-07-13T18:35:47+03:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Takvim Spor"
+      ],
+      "evidence": [
+        {
+          "source": "Takvim Spor",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Başakşehir’den Bakasetas hamlesi! Ayrılık kararı bekleniyor",
+          "link": "https://www.takvim.com.tr/spor/superlig/2026/07/13/basaksehirden-bakasetas-hamlesi-ayrilik-karari-bekleniyor",
+          "published_at": "2026-07-13T18:35:47+03:00",
           "first_observed_at": null
         }
       ],
