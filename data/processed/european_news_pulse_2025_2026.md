@@ -1,12 +1,13 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-07-15T19:38:00.693068+00:00
-Toplam ilgili haber: 5
+Üretim zamanı: 2026-07-15T23:13:40.019545+00:00
+Toplam ilgili haber: 6
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
 - [TEŞEKKÜRLER MİGUEL CRESPO](https://ibfk.com.tr/haberler/tesekkurler-miguel-crespo) — Başakşehir Resmi Web · 7.7.2026 21:16:30 · turnuva=EL · kulüp=Başakşehir
+- [Devler Ligi'nde gecenin sonuçları!](https://www.haberturk.com/uefa-sampiyonlar-ligi-nde-gecenin-sonuclari-3898782-spor) — Haberturk Spor · 2026-07-15T21:52:55+00:00 · turnuva=CL · kulüp=—
 - [FENERBAHÇE-GORNİK ZABRZE ŞAMPİYONLAR LİGİ 2. ÖN ELEME TURU MAÇI NE ZAMAN? Fenerbahçe Gornık Zabre Maç Biletleri Ne Zaman Satışa Çıkacak, Bilet Fiyatı Ne?](https://www.cnnturk.com/spor/futbol/fenerbahce-gornik-zabrze-sampiyonlar-ligi-2-on-eleme-turu-maci-ne-zaman-fenerbahce-gornik-zabre-mac-biletleri-ne-zaman-satisa-3442984) — CNN Türk Spor · 2026-07-15T17:33:49+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [UEFA Şampiyonlar Ligi'nde birinci eleme turu rövanş maçları başladı](https://www.cnnturk.com/spor/futbol/uefa-sampiyonlar-liginde-birinci-eleme-turu-rovans-maclari-basladi-3442782) — CNN Türk Spor · 2026-07-15T10:10:52+00:00 · turnuva=CL · kulüp=—
 - [UEFA Avrupa Ligi'nde rövanş maçları yarın oynanacak](https://www.cnnturk.com/spor/futbol/uefa-avrupa-liginde-rovans-maclari-yarin-oynanacak-3442786) — CNN Türk Spor · 2026-07-15T10:10:20+00:00 · turnuva=EL · kulüp=—
