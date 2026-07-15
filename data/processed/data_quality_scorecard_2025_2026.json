@@ -1,6 +1,6 @@
 {
-  "warehouse": "/Users/alicanakyol/Documents/analiz/data/processed/metric11_warehouse.sqlite",
-  "score": 73.6,
+  "warehouse": "/home/runner/work/metric11/metric11/data/processed/metric11_warehouse.sqlite",
+  "score": 72.9,
   "table_counts": {
     "data_quality_findings": 6,
     "data_sources": 5,
@@ -15,7 +15,7 @@
     "referee_profiles": 29,
     "referees": 29,
     "team_profiles": 18,
-    "team_scout_blueprints": 263,
+    "team_scout_blueprints": 370,
     "teams": 18
   },
   "goal_backtest_summary": {
@@ -61,6 +61,18 @@
     },
     {
       "area": "player_profiles",
+      "metric": "tff_transfermarkt_in_scope_match_rate_pct",
+      "value": {
+        "matched": 410,
+        "in_scope": 520,
+        "pct": 78.8
+      },
+      "status": "WATCH",
+      "priority": "HIGH",
+      "recommendation": "Snapshot kapsamındaki eşleşmeyen oyuncular alias/transfer inceleme kuyruğunda doğrulanmadan piyasa değeri veya pozisyon olarak kullanılmamalı."
+    },
+    {
+      "area": "player_profiles",
       "metric": "manual_alias_pending_network_verification",
       "value": 13,
       "status": "WATCH",
@@ -70,7 +82,7 @@
     {
       "area": "scouting",
       "metric": "unmatched_players_blocking_scout_review",
-      "value": 23,
+      "value": 4,
       "status": "FAIL",
       "priority": "HIGH",
       "recommendation": "Scout kuyruğunu bloke eden oyuncular için aynı kulüp Transfermarkt adı veya resmi profil doğrulanmalı; doğrulanmadan rol önerisi yayınlanmamalı."
@@ -139,9 +151,9 @@
       "area": "scouting",
       "metric": "low_position_confidence_pct",
       "value": {
-        "low_confidence": 0,
-        "total": 263,
-        "pct": 0.0
+        "low_confidence": 27,
+        "total": 370,
+        "pct": 7.3
       },
       "status": "PASS",
       "priority": "MEDIUM",
@@ -166,6 +178,12 @@
       "area": "player_profiles",
       "metric": "manual_alias_pending_network_verification",
       "recommendation": "Operasyonda kullanılan manuel pozisyon ve piyasa değeri eşlemeleri Transfermarkt profil bağlantısıyla doğrulanana kadar teyit bekliyor olarak gösterilmeli."
+    },
+    {
+      "priority": "HIGH",
+      "area": "player_profiles",
+      "metric": "tff_transfermarkt_in_scope_match_rate_pct",
+      "recommendation": "Snapshot kapsamındaki eşleşmeyen oyuncular alias/transfer inceleme kuyruğunda doğrulanmadan piyasa değeri veya pozisyon olarak kullanılmamalı."
     },
     {
       "priority": "HIGH",
@@ -263,7 +281,19 @@
   "scout_position_confidence": [
     {
       "position_confidence": "MEDIUM_DERIVED_ROLE",
-      "rows": 263
+      "rows": 248
+    },
+    {
+      "position_confidence": "HIGH",
+      "rows": 50
+    },
+    {
+      "position_confidence": "HIGH_EXTERNAL_PROFILE",
+      "rows": 45
+    },
+    {
+      "position_confidence": "LOW_POSITION_UNVERIFIED",
+      "rows": 27
     }
   ]
 }
