@@ -5,13 +5,13 @@
 - Kadro oyuncusu: 424
 - Toplam piyasa değeri: €1,318,950,000
 - Maç kapsamı: 177/258 (%69)
-- Lig modeli doğruluğu: %47
+- Lig modeli doğruluğu: %52
 - Sabit draw-band 0.20 piyasa değeri baseline doğruluğu: %50
 - Sabit draw-band 0.20 beraberlik yakalama: %9
-- Model / piyasa baseline anlaşmazlığı: 76
-- Anlaşmazlıklarda model doğruluğu: %36
-- Anlaşmazlıklarda piyasa baseline doğruluğu: %42
-- Belirgin değer farkında model hatası: 44
+- Model / piyasa baseline anlaşmazlığı: 55
+- Anlaşmazlıklarda model doğruluğu: %40
+- Anlaşmazlıklarda piyasa baseline doğruluğu: %33
+- Belirgin değer farkında model hatası: 40
 
 ## Kullanım Sınırı
 
@@ -33,31 +33,31 @@
 
 | Takım | Değer | Maç | Model | Değer baseline |
 | --- | ---: | ---: | ---: | ---: |
-| GALATASARAY A.Ş. | €336,650,000 | 24 | %50 | %58 |
-| FENERBAHÇE A.Ş. | €240,800,000 | 23 | %52 | %65 |
-| BEŞİKTAŞ A.Ş. | €176,000,000 | 24 | %42 | %54 |
-| TRABZONSPOR A.Ş. | €129,550,000 | 24 | %46 | %50 |
-| RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ | €73,100,000 | 25 | %60 | %64 |
-| GÖZTEPE A.Ş. | €65,750,000 | 24 | %58 | %42 |
-| SAMSUNSPOR A.Ş. | €56,100,000 | 24 | %58 | %42 |
+| GALATASARAY A.Ş. | €336,650,000 | 24 | %58 | %58 |
+| FENERBAHÇE A.Ş. | €240,800,000 | 23 | %65 | %65 |
+| BEŞİKTAŞ A.Ş. | €176,000,000 | 24 | %46 | %54 |
+| TRABZONSPOR A.Ş. | €129,550,000 | 24 | %54 | %50 |
+| RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ | €73,100,000 | 25 | %68 | %64 |
+| GÖZTEPE A.Ş. | €65,750,000 | 24 | %62 | %42 |
+| SAMSUNSPOR A.Ş. | €56,100,000 | 24 | %62 | %42 |
 | ÇAYKUR RİZESPOR A.Ş. | €39,750,000 | 23 | %48 | %52 |
-| TÜMOSAN KONYASPOR | €39,300,000 | 23 | %35 | %48 |
-| CORENDON ALANYASPOR | €33,800,000 | 22 | %46 | %41 |
-| KASIMPAŞA A.Ş. | €30,800,000 | 25 | %28 | %40 |
+| TÜMOSAN KONYASPOR | €39,300,000 | 23 | %39 | %48 |
+| CORENDON ALANYASPOR | €33,800,000 | 22 | %41 | %41 |
+| KASIMPAŞA A.Ş. | €30,800,000 | 25 | %36 | %40 |
 | GAZİANTEP FUTBOL KULÜBÜ A.Ş. | €29,800,000 | 23 | %56 | %48 |
-| GENÇLERBİRLİĞİ | €26,250,000 | 24 | %50 | %46 |
-| KOCAELİSPOR | €24,150,000 | 23 | %39 | %44 |
-| İKAS EYÜPSPOR | €17,150,000 | 23 | %35 | %52 |
+| GENÇLERBİRLİĞİ | €26,250,000 | 24 | %46 | %46 |
+| KOCAELİSPOR | €24,150,000 | 23 | %52 | %44 |
+| İKAS EYÜPSPOR | €17,150,000 | 23 | %44 | %52 |
 
 ## En Büyük Anlaşmazlıklar
 
 - 9.05.2026 - 20:00 | TÜMOSAN KONYASPOR - FENERBAHÇE A.Ş. (0-3) | model=Ev baseline=Dep gerçek=Dep | değer farkı=€-201.5m
-- 5.12.2025 - 20:03 | GALATASARAY A.Ş. - SAMSUNSPOR A.Ş. (3-2) | model=X baseline=Ev gerçek=Ev | değer farkı=€280.55m
-- 1.05.2026 - 20:00 | GAZİANTEP FUTBOL KULÜBÜ A.Ş. - BEŞİKTAŞ A.Ş. (0-2) | model=X baseline=Dep gerçek=Dep | değer farkı=€-146.2m
-- 18.01.2026 - 17:00 | KOCAELİSPOR - TRABZONSPOR A.Ş. (1-2) | model=X baseline=Dep gerçek=Dep | değer farkı=€-105.4m
 - 22.10.2025 - 20:00 | TÜMOSAN KONYASPOR - BEŞİKTAŞ A.Ş. (0-2) | model=Ev baseline=Dep gerçek=Dep | değer farkı=€-136.7m
-- 15.05.2026 - 20:00 | ÇAYKUR RİZESPOR A.Ş. - BEŞİKTAŞ A.Ş. (2-2) | model=X baseline=Dep gerçek=X | değer farkı=€-136.25m
 - 20.09.2025 - 20:00 | TRABZONSPOR A.Ş. - GAZİANTEP FUTBOL KULÜBÜ A.Ş. (1-1) | model=X baseline=Ev gerçek=X | değer farkı=€99.75m
 - 5.10.2025 - 20:00 | SAMSUNSPOR A.Ş. - FENERBAHÇE A.Ş. (0-0) | model=X baseline=Dep gerçek=X | değer farkı=€-184.7m
-- 27.04.2026 - 20:00 | TÜMOSAN KONYASPOR - TRABZONSPOR A.Ş. (2-1) | model=X baseline=Dep gerçek=Ev | değer farkı=€-90.25m
-- 13.04.2026 - 20:00 | İKAS EYÜPSPOR - SAMSUNSPOR A.Ş. (1-2) | model=X baseline=Dep gerçek=Dep | değer farkı=€-38.95m
+- 23.11.2025 - 14:30 | GÖZTEPE A.Ş. - KOCAELİSPOR (0-0) | model=X baseline=Ev gerçek=X | değer farkı=€41.6m
+- 18.04.2026 - 17:00 | KOCAELİSPOR - GÖZTEPE A.Ş. (1-1) | model=X baseline=Dep gerçek=X | değer farkı=€-41.6m
+- 4.04.2026 - 14:30 | GENÇLERBİRLİĞİ - GÖZTEPE A.Ş. (0-2) | model=Ev baseline=Dep gerçek=Dep | değer farkı=€-39.5m
+- 15.02.2026 - 20:00 | RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ - BEŞİKTAŞ A.Ş. (2-3) | model=Ev baseline=Dep gerçek=Dep | değer farkı=€-102.9m
+- 24.01.2026 - 17:00 | SAMSUNSPOR A.Ş. - KOCAELİSPOR (0-0) | model=X baseline=Ev gerçek=X | değer farkı=€31.95m
+- 13.12.2025 - 14:30 | ÇAYKUR RİZESPOR A.Ş. - İKAS EYÜPSPOR (3-0) | model=X baseline=Ev gerçek=Ev | değer farkı=€22.6m
