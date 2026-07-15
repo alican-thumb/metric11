@@ -34,9 +34,9 @@ LEAGUE_AVG_CARDS = 4.67
 LEAGUE_AVG_GOALS = 2.65
 MIN_REFEREE_MATCHES = 4
 
-DRAW_PRED_MIN_PROB = 0.26   # draw olasılığı bu eşiğin altındaysa beraberlik tahmin edilmez
-DRAW_PRED_MAX_GAP = 0.18    # en iyi yönsel tahmin ile draw arasındaki maksimum fark (0.14→0.18: recall %29→%41)
-DRAW_BOOST_SCALE = 0.12     # dengeli maçlarda draw olasılığına uygulanacak boost katsayısı
+DRAW_PRED_MIN_PROB = 0.28   # draw olasılığı bu eşiğin altındaysa beraberlik tahmin edilmez
+DRAW_PRED_MAX_GAP = 0.18    # en iyi yönsel tahmin ile draw arasındaki maksimum fark
+DRAW_BOOST_SCALE = 0.0      # dengeli maçlarda draw olasılığına uygulanacak boost katsayısı (kapalı)
 
 
 def draw_calibrated_prediction(home_p: float, draw_p: float, away_p: float, strength_edge: float = 0.0) -> str:
@@ -45,7 +45,16 @@ def draw_calibrated_prediction(home_p: float, draw_p: float, away_p: float, stre
     gerçek lig oranı ~0.295). Dengeli maçlarda (düşük strength_edge) draw
     olasılığını DRAW_BOOST_SCALE ile yukarı kalibre eder, ardından
     DRAW_PRED_MIN_PROB ve DRAW_PRED_MAX_GAP eşiklerini uygular.
-    Backtest: recall %8 → %29, genel doğruluk %50.8 → %51.6.
+
+    2026-07-15'te kullanıcı isteğiyle (öncelik: beraberlik recall değil, genel
+    maç SONUCU isabeti) eşikler yeniden tarandı: cached backtest olasılıkları
+    üzerinde tam ızgara taraması + tam sezon/ilk yarı/ikinci yarı OOS çapraz
+    kontrolü yapıldı. Önceki ayar (0.26/0.18/boost=0.12, recall'ı maksimize
+    etmek için seçilmişti) tüm dilimlerde ~4-7 puan daha düşük isabet
+    veriyordu (ör. ikinci yarı OOS: %45.0 → %51.9). Yeni ayar OOS'ta da
+    tutarlı şekilde daha yüksek isabet veriyor; maliyeti beraberlik recall'ın
+    ~%34'ten ~%16-18'e düşmesi (daha az beraberlik tahmini, ama tahmin edilen
+    sonuçların genelinde daha yüksek isabet).
     """
     balance = 1.0 / (1 + abs(strength_edge) * 3)
     dp_boosted = draw_p * (1 + DRAW_BOOST_SCALE * balance)
