@@ -176,6 +176,39 @@ def _pill(val: str, label: str, color: str = "var(--green)") -> str:
 </div>"""
 
 
+def _fmt_fixture_date(date_str: str) -> str:
+    months = ["", "Oca", "Şub", "Mar", "Nis", "May", "Haz", "Tem", "Ağu", "Eyl", "Eki", "Kas", "Ara"]
+    try:
+        dt = datetime.strptime(date_str.split(" ")[0], "%d.%m.%Y")
+        return f"{dt.day} {months[dt.month]}"
+    except (ValueError, IndexError):
+        return date_str
+
+
+def _next_fixtures_html(fixture_predictions: dict) -> str:
+    weeks = fixture_predictions.get("weeks") or []
+    if not weeks:
+        return ""
+    matches = weeks[0].get("matches", [])[:6]
+    if not matches:
+        return ""
+    labels = {"home": "#4ade80", "draw": "#94a3b8", "away": "#f87171"}
+    rows = "".join(
+        f'<div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid var(--line);font-size:12px">'
+        f'<span style="font-weight:600">{escape(m["home_team"])} <span style="color:var(--muted);font-weight:400">vs</span> {escape(m["away_team"])}</span>'
+        f'<span style="display:flex;align-items:center;gap:6px;flex-shrink:0"><span style="color:var(--muted);font-size:11px">{escape(_fmt_fixture_date(m["date_time"]))}</span>'
+        f'<span style="width:8px;height:8px;border-radius:50%;background:{labels.get(m["predicted"], "#64748b")}"></span></span>'
+        f'</div>'
+        for m in matches
+    )
+    return f"""<div class="panel" style="border-top:3px solid var(--lime)">
+  <h2>🗓️ 2026-27 Sezonu Başlıyor</h2>
+  <div class="sub">{weeks[0]["week"]}. hafta fikstürü ve tahminler · {fixture_predictions.get("total_matches", 0)} maçlık tam sezon fikstürü hazır</div>
+  {rows}
+  <a class="see-more" href="season_fixture_predictions_2026_2027.html">Tüm sezon fikstürü ve tahminlerine git →</a>
+</div>"""
+
+
 def _deduplicate_articles(articles: list[dict]) -> list[tuple[dict, int]]:
     """Başlık benzerliğine göre haberleri grupla. (en iyi haber, kaynak sayısı) döner."""
     STOP = {"ve", "ile", "de", "da", "bir", "bu", "için", "the", "a", "in", "of", "to"}
@@ -250,6 +283,7 @@ def build_html() -> str:
     tracker  = _load(PROCESSED_DIR / f"transfer_tracker_{SEASON}.json")
     ctx      = _load(PROCESSED_DIR / f"transfer_season_context_{SEASON}.json")
     eu_pulse = _load(PROCESSED_DIR / f"european_news_pulse_{SEASON}.json")
+    fixture_predictions = _load(PROCESSED_DIR / "season_fixture_predictions_2026_2027.json")
 
     transfers_all = tracker.get("transfers", [])
     player_index = _build_player_index(transfers_all)
@@ -389,6 +423,7 @@ def build_html() -> str:
     <a class="active" href="/">Gündem</a>
     <a href="transfer_tracker_{SEASON}.html">Transferler</a>
     <a href="all_teams_preview_dashboard_{SEASON}.html">{"Arşiv" if _is_transfer_season else "Maç Önü"}</a>
+    <a href="season_fixture_predictions_2026_2027.html">🗓️ 2026-27 Fikstür</a>
     <a href="transfer_recommendation_report_{SEASON}.html">Scout</a>
     <a href="football_intelligence_home.html">Analiz</a>
     <a href="worldcup_2026_predictions.html">🌍 WC 2026</a>
@@ -407,7 +442,8 @@ def build_html() -> str:
       {_pill(str(free_agents), "Serbest Kalacak", "#2563eb")}
       {_pill(str(final_year), "Son Yıl Kontrat", "#7c3aed")}
     </div>
-    <div class="panel">
+    {_next_fixtures_html(fixture_predictions) if isinstance(fixture_predictions, dict) else ""}
+    <div class="panel" style="margin-top:16px">
       <h2>Transferler</h2>
       <div class="sub">Resmi · Doğrulanmış · TM Onaylı</div>
       {transfers_html}

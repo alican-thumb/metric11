@@ -117,6 +117,32 @@ def run_backtest(matches: list[dict], min_team_history: int) -> dict:
     return {"summary": summary, "rows": rows}
 
 
+def compute_final_state(matches: list[dict]) -> dict:
+    """run_backtest ile aynı kronolojik birikimi yapar, yalnızca son team_history/elo/hakem
+    durumunu döner. Henüz oynanmamış (gelecek sezon) fikstürleri tahmin etmek için kullanılır.
+    """
+    team_history = defaultdict(lambda: deque(maxlen=8))
+    referee_history: dict[str, list[dict]] = defaultdict(list)
+    elo = defaultdict(lambda: 1500.0)
+
+    for match in matches:
+        home = match["home_team"]["name"]
+        away = match["away_team"]["name"]
+        home_goals = match["home_team"]["score"] or 0
+        away_goals = match["away_team"]["score"] or 0
+        main_ref = _main_referee(match)
+
+        ss = match.get("sofascore_stats") or {}
+        total_cards = len(match["cards"]["home"]) + len(match["cards"]["away"])
+        if main_ref:
+            referee_history[main_ref].append({"cards": total_cards, "goals": home_goals + away_goals})
+        update_history(team_history, home, home_goals, away_goals, len(match["cards"]["home"]), is_home=True, xg_for=ss.get("xg_home"), xg_against=ss.get("xg_away"))
+        update_history(team_history, away, away_goals, home_goals, len(match["cards"]["away"]), is_home=False, xg_for=ss.get("xg_away"), xg_against=ss.get("xg_home"))
+        update_elo(elo, home, away, home_goals, away_goals)
+
+    return {"team_history": team_history, "elo": elo, "referee_history": referee_history}
+
+
 def _main_referee(match: dict) -> str | None:
     for official in (match.get("officials") or []):
         if official.get("role") == "Hakem":

@@ -1,13 +1,40 @@
 from __future__ import annotations
 
 import json
+import tempfile
 from dataclasses import dataclass
+from pathlib import Path
 from typing import Mapping
 
+import certifi
 import requests
 
 
 USER_AGENT = "football-intel-data-discovery/0.1 (+local research)"
+
+# Bazı kaynaklar (ör. www.tff.org) TLS zincirinde ara sertifikayı göndermiyor
+# ("unable to get local issuer certificate"). curl/tarayıcılar sistem
+# anahtarlığındaki önbelleklenmiş ara sertifikayla bunu tolere ediyor ama
+# Python'un certifi tabanlı doğrulaması sunucudan eksiksiz zincir bekliyor.
+# Eksik ara sertifikayı (data/manual/extra_ca_certs.pem) certifi paketiyle
+# birleştirip tüm istekler için kullanıyoruz — yalnızca ekleme yapar, güvenliği
+# azaltmaz.
+_EXTRA_CA_PATH = Path(__file__).resolve().parents[1] / "data" / "manual" / "extra_ca_certs.pem"
+_CA_BUNDLE_CACHE: str | None = None
+
+
+def _ca_bundle() -> str:
+    global _CA_BUNDLE_CACHE
+    if _CA_BUNDLE_CACHE is None:
+        if _EXTRA_CA_PATH.exists():
+            combined = Path(certifi.where()).read_text(encoding="utf-8") + "\n" + _EXTRA_CA_PATH.read_text(encoding="utf-8")
+            tmp = tempfile.NamedTemporaryFile(mode="w", suffix=".pem", delete=False, encoding="utf-8")
+            tmp.write(combined)
+            tmp.close()
+            _CA_BUNDLE_CACHE = tmp.name
+        else:
+            _CA_BUNDLE_CACHE = certifi.where()
+    return _CA_BUNDLE_CACHE
 
 
 @dataclass
@@ -32,7 +59,8 @@ def get_url(
         request_headers.update(headers)
 
     try:
-        response = requests.get(url, headers=request_headers, timeout=timeout, verify=verify_ssl)
+        verify_arg = _ca_bundle() if verify_ssl is True else verify_ssl
+        response = requests.get(url, headers=request_headers, timeout=timeout, verify=verify_arg)
     except requests.RequestException as exc:
         return HttpResult(
             ok=False,

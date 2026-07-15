@@ -63,6 +63,7 @@ DEFAULT_COMMANDS = [
     ["python", "-m", "src.build_european_news_pulse"],
     ["python", "-m", "src.analyze_european_predictions"],
     ["python", "-m", "src.build_european_predictions"],
+    ["python", "-m", "src.build_season_fixture_predictions"],
     ["python", "-m", "src.build_product_home"],
     ["python", "-m", "src.build_sitemap"],
     ["python", "-m", "src.build_status_page"],
@@ -71,6 +72,7 @@ DEFAULT_COMMANDS = [
 
 NETWORK_COMMANDS = [
     ["python", "-m", "src.collect_tff_league_season"],
+    ["python", "-m", "src.collect_tff_season_fixture"],
     ["python", "-m", "src.collect_sofascore_stats", "--skip-existing"],
     ["python", "-m", "src.collect_besiktas_season"],
     [
