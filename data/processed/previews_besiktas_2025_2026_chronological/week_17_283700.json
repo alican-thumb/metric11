@@ -608,7 +608,7 @@
       {
         "player_id": "2820579",
         "name": "DAVID JURASEK",
-        "goal_threat_score": 5.93,
+        "goal_threat_score": 4.63,
         "candidate_type": "primary+impact_sub",
         "recent_starts": 1,
         "season_goals_before_match": 1,
@@ -620,7 +620,12 @@
         "penalty_goals_before_match": 0,
         "recent_bench": 7,
         "cards_before_match": 0,
-        "recent_cards": 0
+        "recent_cards": 0,
+        "quality_adjustment": {
+          "multiplier": 0.78,
+          "reason": "Top 5 sıralama etkisini düşür veya aday tipini yeniden kontrol et.",
+          "source": "goal_candidate_segment_backtest"
+        }
       },
       {
         "player_id": "1523763",
