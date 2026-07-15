@@ -36,7 +36,7 @@
 - Büyük maç MEDIUM/HIGH risk işareti: 6
 - Tahmin hata analizi kaçan maç: 13
 - Tahmin hata analizi kaçan beraberlik: 8
-- Lig tahmin doğruluğu: %46
+- Lig tahmin doğruluğu: %47
 - Lig piyasa değeri audit kapsamı: 177 maç
 - Lig piyasa değeri baseline doğruluğu: %50
 - Oyuncu uygunluk maç kapsamı: 34

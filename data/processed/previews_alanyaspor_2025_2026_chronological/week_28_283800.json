@@ -666,8 +666,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.405,
-    "draw_probability": 0.26,
-    "opponent_win_probability": 0.335,
+    "draw_probability": 0.247,
+    "opponent_win_probability": 0.348,
     "expected_goals_for": 1.48,
     "expected_goals_against": 1.41,
     "top_scorelines": [
@@ -722,10 +722,9 @@
       "action_label": "Korumalı taraf tahmini",
       "risk_notes": [
         "Taraflar arası fark dar",
-        "draw_probability_watch",
         "xg_margin_very_narrow",
         "top_draw_scoreline",
-        "probability_margin_narrow",
+        "probability_margin_very_narrow",
         "strength_edge_very_narrow",
         "low_confidence_side_pick",
         "draw_calibration_high"
@@ -735,7 +734,7 @@
       "raw_result": "target_win",
       "final_result": "target_win",
       "probability": 0.405,
-      "margin": 0.07,
+      "margin": 0.058,
       "adjustment": "raw_unvalidated_team",
       "label": "CORENDON ALANYASPOR kazanır",
       "raw_label": "CORENDON ALANYASPOR kazanır",
@@ -755,14 +754,19 @@
         "son formda beraberlik eğilimi"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 18,
+      "draw_rate": 0.167,
+      "last_meeting_date": "2026-04-04T14:00:00+00:00"
+    },
     "draw_risk": {
-      "score": 94,
+      "score": 92,
       "risk_level": "HIGH",
       "reasons": [
-        "draw_probability_watch",
         "xg_margin_very_narrow",
         "top_draw_scoreline",
-        "probability_margin_narrow",
+        "probability_margin_very_narrow",
         "strength_edge_very_narrow",
         "low_confidence_side_pick",
         "draw_calibration_high"
@@ -1054,6 +1058,6 @@
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği FLORENT HADERGJONAJ, GÜVEN YALÇIN, İBRAHİM KAYA. Disiplin yönetimi gereken oyuncular: MAHMUT ERTUĞRUL TAŞKIRAN, FIDAN ALITI, STEVE MICHEL KEVİN MOUNIE.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %102 uyum buldu; karar etiketi UYUMLU. Alternatif model 11'i kullanılsaydı xG 1.48-1.41 yerine 1.48-1.41 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.48-1.41 bandından 1.7-1.39 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %45 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %40, beraberliği %26, rakip galibiyetini %34 olarak işaretliyor. Gol beklentisi 1.48-1.41; kart sinyali MEDIUM."
+    "MVP olasılık motoru Beşiktaş galibiyetini %40, beraberliği %25, rakip galibiyetini %35 olarak işaretliyor. Gol beklentisi 1.48-1.41; kart sinyali MEDIUM."
   ]
 }

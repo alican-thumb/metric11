@@ -664,8 +664,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.283,
-    "draw_probability": 0.254,
-    "opponent_win_probability": 0.463,
+    "draw_probability": 0.242,
+    "opponent_win_probability": 0.475,
     "expected_goals_for": 1.02,
     "expected_goals_against": 1.64,
     "top_scorelines": [
@@ -714,14 +714,12 @@
     },
     "recommended_call": {
       "result": "opponent_win",
-      "probability": 0.463,
+      "probability": 0.475,
       "scoreline": "1-1",
       "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "action_label": "Korumalı taraf tahmini",
       "risk_notes": [
-        "draw_probability_watch",
         "top_draw_scoreline",
-        "probability_margin_watch",
         "strength_edge_very_narrow",
         "low_confidence_side_pick"
       ]
@@ -729,8 +727,8 @@
     "display_prediction": {
       "raw_result": "opponent_win",
       "final_result": "opponent_win",
-      "probability": 0.463,
-      "margin": 0.18,
+      "probability": 0.475,
+      "margin": 0.192,
       "adjustment": "raw_unvalidated_team",
       "label": "BEŞİKTAŞ A.Ş. kazanır",
       "raw_label": "BEŞİKTAŞ A.Ş. kazanır",
@@ -749,13 +747,17 @@
         "son formda beraberlik eğilimi"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 23,
+      "draw_rate": 0.174,
+      "last_meeting_date": "2026-03-15T17:00:00+00:00"
+    },
     "draw_risk": {
-      "score": 52,
+      "score": 36,
       "risk_level": "HIGH",
       "reasons": [
-        "draw_probability_watch",
         "top_draw_scoreline",
-        "probability_margin_watch",
         "strength_edge_very_narrow",
         "low_confidence_side_pick"
       ],
@@ -1053,6 +1055,6 @@
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği SEKOU KOITA, METEHAN MİMAROĞLU, FRANCO DARYL TONGYA HEUBANG. Disiplin yönetimi gereken oyuncular: PEDRO MIGUEL DE ALMEIDA LOPES PEREIRA, SEKOU KOITA, FRANCO DARYL TONGYA HEUBANG.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %92 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.02-1.64 yerine 1.11-1.64 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.02-1.64 bandından 1.24-1.62 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %29 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %28, beraberliği %25, rakip galibiyetini %46 olarak işaretliyor. Gol beklentisi 1.02-1.64; kart sinyali MEDIUM."
+    "MVP olasılık motoru Beşiktaş galibiyetini %28, beraberliği %24, rakip galibiyetini %48 olarak işaretliyor. Gol beklentisi 1.02-1.64; kart sinyali MEDIUM."
   ]
 }

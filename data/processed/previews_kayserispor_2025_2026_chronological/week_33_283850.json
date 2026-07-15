@@ -671,8 +671,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.263,
-    "draw_probability": 0.284,
-    "opponent_win_probability": 0.453,
+    "draw_probability": 0.278,
+    "opponent_win_probability": 0.459,
     "expected_goals_for": 0.68,
     "expected_goals_against": 1.27,
     "top_scorelines": [
@@ -721,15 +721,13 @@
     },
     "recommended_call": {
       "result": "opponent_win",
-      "probability": 0.453,
+      "probability": 0.459,
       "scoreline": "0-1",
       "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "action_label": "Korumalı taraf tahmini",
       "risk_notes": [
-        "Beraberlik güçlü alternatif",
-        "draw_probability_high",
+        "draw_probability_live",
         "draw_scoreline_top_two",
-        "probability_margin_watch",
         "strength_edge_very_narrow",
         "low_confidence_side_pick"
       ]
@@ -737,8 +735,8 @@
     "display_prediction": {
       "raw_result": "opponent_win",
       "final_result": "opponent_win",
-      "probability": 0.453,
-      "margin": 0.168,
+      "probability": 0.459,
+      "margin": 0.182,
       "adjustment": "raw_unvalidated_team",
       "label": "CORENDON ALANYASPOR kazanır",
       "raw_label": "CORENDON ALANYASPOR kazanır",
@@ -757,13 +755,18 @@
         "son formda beraberlik eğilimi"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 23,
+      "draw_rate": 0.217,
+      "last_meeting_date": "2026-05-09T17:00:00+00:00"
+    },
     "draw_risk": {
-      "score": 59,
+      "score": 47,
       "risk_level": "HIGH",
       "reasons": [
-        "draw_probability_high",
+        "draw_probability_live",
         "draw_scoreline_top_two",
-        "probability_margin_watch",
         "strength_edge_very_narrow",
         "low_confidence_side_pick"
       ],
@@ -1072,6 +1075,6 @@
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği GERMAN ONUGKHA, LASZLO BENES, INDRIT TUCI. Disiplin yönetimi gereken oyuncular: YOUSSEF AIT BENASSER, RAMAZAN CİVELEK, DORUKHAN TOKÖZ.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %59 uyum buldu; karar etiketi TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 0.68-1.27 yerine 1.03-1.27 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 0.68-1.27 bandından 0.9-1.25 bandına taşırdı. Bu senaryoda en olası skor 0-1 ve kazanma olasılığı %27 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %26, beraberliği %28, rakip galibiyetini %45 olarak işaretliyor. Gol beklentisi 0.68-1.27; kart sinyali LOW."
+    "MVP olasılık motoru Beşiktaş galibiyetini %26, beraberliği %28, rakip galibiyetini %46 olarak işaretliyor. Gol beklentisi 0.68-1.27; kart sinyali LOW."
   ]
 }

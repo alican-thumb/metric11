@@ -647,8 +647,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.35,
-    "draw_probability": 0.259,
-    "opponent_win_probability": 0.392,
+    "draw_probability": 0.264,
+    "opponent_win_probability": 0.386,
     "expected_goals_for": 1.31,
     "expected_goals_against": 1.54,
     "top_scorelines": [
@@ -697,7 +697,7 @@
     },
     "recommended_call": {
       "result": "opponent_win",
-      "probability": 0.392,
+      "probability": 0.386,
       "scoreline": "1-1",
       "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "action_label": "Korumalı taraf tahmini",
@@ -709,14 +709,14 @@
         "probability_margin_very_narrow",
         "strength_edge_very_narrow",
         "low_confidence_side_pick",
-        "draw_calibration_medium"
+        "draw_calibration_high"
       ]
     },
     "display_prediction": {
       "raw_result": "opponent_win",
       "final_result": "opponent_win",
-      "probability": 0.392,
-      "margin": 0.042,
+      "probability": 0.386,
+      "margin": 0.037,
       "adjustment": "raw_unvalidated_team",
       "label": "BEŞİKTAŞ A.Ş. kazanır",
       "raw_label": "BEŞİKTAŞ A.Ş. kazanır",
@@ -728,16 +728,23 @@
     "availability_missing_count": 0,
     "strength_edge": -0.105,
     "draw_calibration": {
-      "lift": 0.11,
-      "risk_level": "MEDIUM",
+      "lift": 0.145,
+      "risk_level": "HIGH",
       "reasons": [
         "xG farkı dar",
         "orta gol bandı",
-        "son formda beraberlik eğilimi"
+        "son formda beraberlik eğilimi",
+        "h2h_beraberlik_geçmişi"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 12,
+      "draw_rate": 0.333,
+      "last_meeting_date": "2026-04-27T17:00:00+00:00"
+    },
     "draw_risk": {
-      "score": 90,
+      "score": 95,
       "risk_level": "HIGH",
       "reasons": [
         "draw_probability_watch",
@@ -746,7 +753,7 @@
         "probability_margin_very_narrow",
         "strength_edge_very_narrow",
         "low_confidence_side_pick",
-        "draw_calibration_medium"
+        "draw_calibration_high"
       ],
       "protected_prediction": true,
       "recommended_model_action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",

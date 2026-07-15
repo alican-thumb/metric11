@@ -683,8 +683,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.371,
-    "draw_probability": 0.259,
-    "opponent_win_probability": 0.37,
+    "draw_probability": 0.264,
+    "opponent_win_probability": 0.364,
     "expected_goals_for": 1.6,
     "expected_goals_against": 1.73,
     "top_scorelines": [
@@ -754,7 +754,7 @@
       "raw_result": "target_win",
       "final_result": "target_win",
       "probability": 0.371,
-      "margin": 0.001,
+      "margin": 0.007,
       "adjustment": "raw_unvalidated_team",
       "label": "GALATASARAY A.Ş. kazanır",
       "raw_label": "GALATASARAY A.Ş. kazanır",
@@ -766,13 +766,20 @@
     "availability_missing_count": 0,
     "strength_edge": 0.023,
     "draw_calibration": {
-      "lift": 0.16,
+      "lift": 0.18,
       "risk_level": "HIGH",
       "reasons": [
         "xG farkı çok dar",
         "takım gücü dengede",
-        "büyük maç denge etkisi"
+        "büyük maç denge etkisi",
+        "h2h_beraberlik_geçmişi"
       ]
+    },
+    "head_to_head": {
+      "available": true,
+      "matches": 37,
+      "draw_rate": 0.351,
+      "last_meeting_date": "2026-04-26T17:00:00+00:00"
     },
     "draw_risk": {
       "score": 100,
@@ -1088,6 +1095,6 @@
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği VICTOR JAMES OSIMHEN, MAURO EMANUEL ICARDI, LEROY AZIZ SANE. Disiplin yönetimi gereken oyuncular: MARIO RENE JUNIOR LEMINA.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %75 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.6-1.73 yerine 1.89-1.73 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.6-1.73 bandından 1.82-1.71 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %41 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %37, beraberliği %26, rakip galibiyetini %37 olarak işaretliyor. Gol beklentisi 1.6-1.73; kart sinyali HIGH."
+    "MVP olasılık motoru Beşiktaş galibiyetini %37, beraberliği %26, rakip galibiyetini %36 olarak işaretliyor. Gol beklentisi 1.6-1.73; kart sinyali HIGH."
   ]
 }

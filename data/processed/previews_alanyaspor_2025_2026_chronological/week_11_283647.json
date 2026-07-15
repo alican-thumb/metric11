@@ -642,8 +642,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.383,
-    "draw_probability": 0.265,
-    "opponent_win_probability": 0.353,
+    "draw_probability": 0.252,
+    "opponent_win_probability": 0.365,
     "expected_goals_for": 1.35,
     "expected_goals_against": 1.39,
     "top_scorelines": [
@@ -711,7 +711,7 @@
       "raw_result": "target_win",
       "final_result": "target_win",
       "probability": 0.383,
-      "margin": 0.03,
+      "margin": 0.017,
       "adjustment": "raw_unvalidated_team",
       "label": "CORENDON ALANYASPOR kazanır",
       "raw_label": "CORENDON ALANYASPOR kazanır",
@@ -731,6 +731,12 @@
         "orta gol bandı",
         "son formda beraberlik eğilimi"
       ]
+    },
+    "head_to_head": {
+      "available": true,
+      "matches": 18,
+      "draw_rate": 0.167,
+      "last_meeting_date": "2026-04-04T14:00:00+00:00"
     },
     "draw_risk": {
       "score": 100,
@@ -1034,6 +1040,6 @@
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği İBRAHİM KAYA, UCHENNA OGUNDU, GÜVEN YALÇIN. Disiplin yönetimi gereken oyuncular: IANIS HAGI.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %101 uyum buldu; karar etiketi UYUMLU. Alternatif model 11'i kullanılsaydı xG 1.35-1.39 yerine 1.35-1.39 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.35-1.39 bandından 1.57-1.37 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %42 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %38, beraberliği %26, rakip galibiyetini %35 olarak işaretliyor. Gol beklentisi 1.35-1.39; kart sinyali LOW."
+    "MVP olasılık motoru Beşiktaş galibiyetini %38, beraberliği %25, rakip galibiyetini %36 olarak işaretliyor. Gol beklentisi 1.35-1.39; kart sinyali LOW."
   ]
 }

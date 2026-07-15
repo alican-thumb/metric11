@@ -543,6 +543,23 @@
         "actual_scorer": true
       },
       {
+        "player_id": "2820579",
+        "name": "DAVID JURASEK",
+        "goal_threat_score": 8.84,
+        "candidate_type": "primary+impact_sub",
+        "recent_starts": 2,
+        "season_goals_before_match": 1,
+        "recent_goals": 1,
+        "big_match_goals_before_match": 0,
+        "opponent_defense_multiplier": 1.08,
+        "actual_scorer": false,
+        "header_goals_before_match": 0,
+        "penalty_goals_before_match": 0,
+        "recent_bench": 6,
+        "cards_before_match": 0,
+        "recent_cards": 0
+      },
+      {
         "player_id": "2820920",
         "name": "ONYINYE WILFRED NDIDI",
         "goal_threat_score": 7.79,
@@ -582,28 +599,6 @@
         "big_match_goals_before_match": 1,
         "opponent_defense_multiplier": 1.08,
         "actual_scorer": false
-      },
-      {
-        "player_id": "2820579",
-        "name": "DAVID JURASEK",
-        "goal_threat_score": 6.9,
-        "candidate_type": "primary+impact_sub",
-        "recent_starts": 2,
-        "season_goals_before_match": 1,
-        "recent_goals": 1,
-        "big_match_goals_before_match": 0,
-        "opponent_defense_multiplier": 1.08,
-        "actual_scorer": false,
-        "header_goals_before_match": 0,
-        "penalty_goals_before_match": 0,
-        "recent_bench": 6,
-        "cards_before_match": 0,
-        "recent_cards": 0,
-        "quality_adjustment": {
-          "multiplier": 0.78,
-          "reason": "Top 5 sıralama etkisini düşür veya aday tipini yeniden kontrol et.",
-          "source": "goal_candidate_segment_backtest"
-        }
       },
       {
         "player_id": "2822260",
@@ -727,7 +722,7 @@
       "raw_result": "target_win",
       "final_result": "target_win",
       "probability": 0.523,
-      "margin": 0.284,
+      "margin": 0.283,
       "adjustment": "protected_side",
       "label": "BEŞİKTAŞ A.Ş. kazanır",
       "raw_label": "BEŞİKTAŞ A.Ş. kazanır",
@@ -745,6 +740,12 @@
         "takım gücü dengede",
         "son formda beraberlik eğilimi"
       ]
+    },
+    "head_to_head": {
+      "available": true,
+      "matches": 15,
+      "draw_rate": 0.267,
+      "last_meeting_date": "2026-05-01T17:00:00+00:00"
     },
     "draw_risk": {
       "score": 28,

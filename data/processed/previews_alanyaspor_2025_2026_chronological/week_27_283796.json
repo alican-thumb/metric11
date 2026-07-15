@@ -684,8 +684,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.365,
-    "draw_probability": 0.281,
-    "opponent_win_probability": 0.354,
+    "draw_probability": 0.265,
+    "opponent_win_probability": 0.37,
     "expected_goals_for": 1.11,
     "expected_goals_against": 1.2,
     "top_scorelines": [
@@ -733,15 +733,14 @@
       "probability": 0.132
     },
     "recommended_call": {
-      "result": "target_win",
-      "probability": 0.365,
+      "result": "opponent_win",
+      "probability": 0.37,
       "scoreline": "1-1",
       "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "action_label": "Korumalı taraf tahmini",
       "risk_notes": [
-        "Beraberlik güçlü alternatif",
         "Taraflar arası fark dar",
-        "draw_probability_high",
+        "draw_probability_live",
         "xg_margin_very_narrow",
         "top_draw_scoreline",
         "probability_margin_very_narrow",
@@ -751,13 +750,13 @@
       ]
     },
     "display_prediction": {
-      "raw_result": "target_win",
-      "final_result": "target_win",
-      "probability": 0.365,
-      "margin": 0.011,
+      "raw_result": "opponent_win",
+      "final_result": "opponent_win",
+      "probability": 0.37,
+      "margin": 0.005,
       "adjustment": "raw_unvalidated_team",
-      "label": "CORENDON ALANYASPOR kazanır",
-      "raw_label": "CORENDON ALANYASPOR kazanır",
+      "label": "KOCAELİSPOR kazanır",
+      "raw_label": "KOCAELİSPOR kazanır",
       "note": "Bu takım için ekran kalibrasyonu henüz doğrulanmadığı için ham model tahmini gösterilir."
     },
     "over_2_5_signal": "MEDIUM",
@@ -775,11 +774,17 @@
         "son formda beraberlik eğilimi"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 3,
+      "draw_rate": 0.0,
+      "last_meeting_date": "2026-03-18T13:00:00+00:00"
+    },
     "draw_risk": {
       "score": 100,
       "risk_level": "HIGH",
       "reasons": [
-        "draw_probability_high",
+        "draw_probability_live",
         "xg_margin_very_narrow",
         "top_draw_scoreline",
         "probability_margin_very_narrow",
@@ -1082,6 +1087,6 @@
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği GÜVEN YALÇIN, FLORENT HADERGJONAJ, İBRAHİM KAYA. Disiplin yönetimi gereken oyuncular: ANTONIO SIMAO MUANZA, FIDAN ALITI, STEVE MICHEL KEVİN MOUNIE.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %78 uyum buldu; karar etiketi TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.11-1.2 yerine 1.34-1.2 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.11-1.2 bandından 1.33-1.18 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %40 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %36, beraberliği %28, rakip galibiyetini %35 olarak işaretliyor. Gol beklentisi 1.11-1.2; kart sinyali LOW."
+    "MVP olasılık motoru Beşiktaş galibiyetini %36, beraberliği %26, rakip galibiyetini %37 olarak işaretliyor. Gol beklentisi 1.11-1.2; kart sinyali LOW."
   ]
 }

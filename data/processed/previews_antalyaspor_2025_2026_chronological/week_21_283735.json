@@ -654,8 +654,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.408,
-    "draw_probability": 0.268,
-    "opponent_win_probability": 0.324,
+    "draw_probability": 0.26,
+    "opponent_win_probability": 0.332,
     "expected_goals_for": 1.36,
     "expected_goals_against": 1.26,
     "top_scorelines": [
@@ -709,7 +709,8 @@
       "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "action_label": "Korumalı taraf tahmini",
       "risk_notes": [
-        "draw_probability_live",
+        "Taraflar arası fark dar",
+        "draw_probability_watch",
         "xg_margin_very_narrow",
         "top_draw_scoreline",
         "probability_margin_narrow",
@@ -722,7 +723,7 @@
       "raw_result": "target_win",
       "final_result": "target_win",
       "probability": 0.408,
-      "margin": 0.084,
+      "margin": 0.076,
       "adjustment": "raw_unvalidated_team",
       "label": "HESAP.COM ANTALYASPOR kazanır",
       "raw_label": "HESAP.COM ANTALYASPOR kazanır",
@@ -743,11 +744,17 @@
         "son formda beraberlik eğilimi"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 11,
+      "draw_rate": 0.182,
+      "last_meeting_date": "2026-02-07T11:30:00+00:00"
+    },
     "draw_risk": {
-      "score": 100,
+      "score": 94,
       "risk_level": "HIGH",
       "reasons": [
-        "draw_probability_live",
+        "draw_probability_watch",
         "xg_margin_very_narrow",
         "top_draw_scoreline",
         "probability_margin_narrow",
@@ -1064,6 +1071,6 @@
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği ALEXANDER GERARD  VAN DE STREEK, LAUTARO DANIEL GIANNETTI, VEYSEL SARI. Disiplin yönetimi gereken oyuncular: SONER DİKMEN, SAMUEL LEO BEAT  BALLET, LAUTARO DANIEL GIANNETTI.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %80 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.36-1.26 yerine 1.56-1.26 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.36-1.26 bandından 1.58-1.24 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %45 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %41, beraberliği %27, rakip galibiyetini %32 olarak işaretliyor. Gol beklentisi 1.36-1.26; kart sinyali LOW."
+    "MVP olasılık motoru Beşiktaş galibiyetini %41, beraberliği %26, rakip galibiyetini %33 olarak işaretliyor. Gol beklentisi 1.36-1.26; kart sinyali LOW."
   ]
 }

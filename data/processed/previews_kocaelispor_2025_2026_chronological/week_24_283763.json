@@ -644,8 +644,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.275,
-    "draw_probability": 0.231,
-    "opponent_win_probability": 0.493,
+    "draw_probability": 0.235,
+    "opponent_win_probability": 0.489,
     "expected_goals_for": 1.27,
     "expected_goals_against": 2.07,
     "top_scorelines": [
@@ -694,21 +694,22 @@
     },
     "recommended_call": {
       "result": "opponent_win",
-      "probability": 0.493,
+      "probability": 0.489,
       "scoreline": "1-2",
-      "action": "KEEP_PICK_WITH_DRAW_WARNING",
-      "action_label": "Beraberlik uyarılı tahmin",
+      "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
+      "action_label": "Korumalı taraf tahmini",
       "risk_notes": [
         "draw_scoreline_top_two",
         "strength_edge_very_narrow",
-        "low_confidence_side_pick"
+        "low_confidence_side_pick",
+        "draw_calibration_medium"
       ]
     },
     "display_prediction": {
       "raw_result": "opponent_win",
       "final_result": "opponent_win",
-      "probability": 0.493,
-      "margin": 0.218,
+      "probability": 0.489,
+      "margin": 0.214,
       "adjustment": "raw_unvalidated_team",
       "label": "BEŞİKTAŞ A.Ş. kazanır",
       "raw_label": "BEŞİKTAŞ A.Ş. kazanır",
@@ -720,23 +721,31 @@
     "availability_missing_count": 0,
     "strength_edge": -0.08,
     "draw_calibration": {
-      "lift": 0.055,
-      "risk_level": "LOW",
+      "lift": 0.09,
+      "risk_level": "MEDIUM",
       "reasons": [
         "takım gücü yakın",
-        "son formda beraberlik eğilimi"
+        "son formda beraberlik eğilimi",
+        "h2h_beraberlik_geçmişi"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 3,
+      "draw_rate": 0.333,
+      "last_meeting_date": "2026-02-28T13:00:00+00:00"
+    },
     "draw_risk": {
-      "score": 29,
-      "risk_level": "MEDIUM",
+      "score": 36,
+      "risk_level": "HIGH",
       "reasons": [
         "draw_scoreline_top_two",
         "strength_edge_very_narrow",
-        "low_confidence_side_pick"
+        "low_confidence_side_pick",
+        "draw_calibration_medium"
       ],
       "protected_prediction": true,
-      "recommended_model_action": "KEEP_PICK_WITH_DRAW_WARNING",
+      "recommended_model_action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "note": "Ana 1X2 tahminini değiştirmeden beraberlik senaryosunu görünür yapan risk katmanıdır."
     },
     "big_match_profile": {
@@ -1022,10 +1031,10 @@
     "Hakem profili kart tarafında anlamlı bir sinyal veriyor: CİHAN AYDIN bu sezon önceki 14 Beşiktaş maçında toplam maç başı 4.07 kart, Beşiktaş'a maç başı 2.43 kart ortalamasıyla öne çıkıyor.",
     "Olası 11 sinyalinde son dönemde öne çıkan isimler: MASSADIO HAIDARA, KAROL LINETTY, BRUNO PETKOVIC, ANFERNEE JAMAL DIJKSTEEL, BOTOND BALOGH, HRVOJE SMOLCIC. Kart riski tarafında ise son 8 maç penceresinde MASSADIO HAIDARA, TAYFUR BİNGÖL, RIGOBERTO MANUEL RIVAS VINDEL, MANUEL LUIS DA SILVA CAFUMANA dikkat çekiyor.",
     "Gol adayı sinyalinde öne çıkan isimler: DANIEL EBENEZER KWASI AGYEI, BRUNO PETKOVIC, TAYFUR BİNGÖL, SERDAR DURSUN. Bu skor son gol formu, sezon içi gol sayısı ve son dönemde ilk 11 başlama sıklığından türetildi.",
-    "Skor dağılımında en olası senaryolar: 1-2 (%10), 1-1 (%9), 0-2 (%8). Model aksiyonu: Beraberlik uyarılı tahmin; önerilen ana skor 1-2.",
+    "Skor dağılımında en olası senaryolar: 1-2 (%10), 1-1 (%9), 0-2 (%8). Model aksiyonu: Korumalı taraf tahmini; önerilen ana skor 1-2.",
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği DANIEL EBENEZER KWASI AGYEI, BRUNO PETKOVIC, TAYFUR BİNGÖL. Disiplin yönetimi gereken oyuncular: MASSADIO HAIDARA, TAYFUR BİNGÖL, RIGOBERTO MANUEL RIVAS VINDEL.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %70 uyum buldu; karar etiketi TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.27-2.07 yerine 1.59-2.07 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.27-2.07 bandından 1.49-2.05 bandına taşırdı. Bu senaryoda en olası skor 1-2 ve kazanma olasılığı %28 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %28, beraberliği %23, rakip galibiyetini %49 olarak işaretliyor. Gol beklentisi 1.27-2.07; kart sinyali MEDIUM."
+    "MVP olasılık motoru Beşiktaş galibiyetini %28, beraberliği %24, rakip galibiyetini %49 olarak işaretliyor. Gol beklentisi 1.27-2.07; kart sinyali MEDIUM."
   ]
 }

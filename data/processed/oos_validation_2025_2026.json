@@ -5,91 +5,91 @@
   "note": "Walk-forward kronolojik backtest. Her tahmin yalnızca önceki maçların birikimiyle yapılır. Hafta 1-17 = ısınma + ilk yarı; hafta 18-34 = bağımsız test penceresi.",
   "full_season": {
     "matches": 258,
-    "correct": 119,
-    "accuracy": 0.461,
-    "brier": 0.615,
-    "log_loss": 1.027,
+    "correct": 122,
+    "accuracy": 0.473,
+    "brier": 0.61,
+    "log_loss": 1.019,
     "confidence": {
       "HIGH": {
         "matches": 104,
-        "correct": 62,
-        "accuracy": 0.596,
-        "brier": 0.549,
-        "log_loss": 0.931
+        "correct": 63,
+        "accuracy": 0.606,
+        "brier": 0.537,
+        "log_loss": 0.913
       },
       "MEDIUM": {
-        "matches": 87,
-        "correct": 33,
-        "accuracy": 0.379,
-        "brier": 0.664,
+        "matches": 88,
+        "correct": 35,
+        "accuracy": 0.398,
+        "brier": 0.663,
         "log_loss": 1.098
       },
       "LOW": {
-        "matches": 67,
+        "matches": 66,
         "correct": 24,
-        "accuracy": 0.358,
-        "brier": 0.656,
-        "log_loss": 1.083
+        "accuracy": 0.364,
+        "brier": 0.655,
+        "log_loss": 1.08
       }
     }
   },
   "first_half": {
     "matches": 105,
-    "correct": 49,
-    "accuracy": 0.467,
-    "brier": 0.617,
-    "log_loss": 1.031,
+    "correct": 50,
+    "accuracy": 0.476,
+    "brier": 0.613,
+    "log_loss": 1.025,
     "confidence": {
       "HIGH": {
-        "matches": 41,
+        "matches": 40,
         "correct": 25,
-        "accuracy": 0.61,
-        "brier": 0.53,
-        "log_loss": 0.906
+        "accuracy": 0.625,
+        "brier": 0.516,
+        "log_loss": 0.885
       },
       "MEDIUM": {
         "matches": 39,
-        "correct": 15,
-        "accuracy": 0.385,
-        "brier": 0.669,
-        "log_loss": 1.106
+        "correct": 16,
+        "accuracy": 0.41,
+        "brier": 0.671,
+        "log_loss": 1.108
       },
       "LOW": {
-        "matches": 25,
+        "matches": 26,
         "correct": 9,
-        "accuracy": 0.36,
-        "brier": 0.679,
-        "log_loss": 1.119
+        "accuracy": 0.346,
+        "brier": 0.677,
+        "log_loss": 1.114
       }
     }
   },
   "second_half_oos": {
     "matches": 153,
-    "correct": 70,
-    "accuracy": 0.458,
-    "brier": 0.614,
-    "log_loss": 1.024,
+    "correct": 72,
+    "accuracy": 0.471,
+    "brier": 0.608,
+    "log_loss": 1.015,
     "confidence": {
       "HIGH": {
-        "matches": 63,
-        "correct": 37,
-        "accuracy": 0.587,
-        "brier": 0.561,
-        "log_loss": 0.947
+        "matches": 64,
+        "correct": 38,
+        "accuracy": 0.594,
+        "brier": 0.551,
+        "log_loss": 0.931
       },
       "MEDIUM": {
-        "matches": 48,
-        "correct": 18,
-        "accuracy": 0.375,
-        "brier": 0.659,
-        "log_loss": 1.092
+        "matches": 49,
+        "correct": 19,
+        "accuracy": 0.388,
+        "brier": 0.657,
+        "log_loss": 1.089
       },
       "LOW": {
-        "matches": 42,
+        "matches": 40,
         "correct": 15,
-        "accuracy": 0.357,
-        "brier": 0.642,
-        "log_loss": 1.062
+        "accuracy": 0.375,
+        "brier": 0.64,
+        "log_loss": 1.057
       }
     }
   },
@@ -111,257 +111,257 @@
       "matches": 2,
       "correct": 1,
       "accuracy": 0.5,
-      "brier": 0.746,
-      "log_loss": 1.202
+      "brier": 0.744,
+      "log_loss": 1.198
     },
     {
       "week": 6,
       "matches": 6,
-      "correct": 2,
-      "accuracy": 0.333,
-      "brier": 0.671,
-      "log_loss": 1.094
+      "correct": 4,
+      "accuracy": 0.667,
+      "brier": 0.673,
+      "log_loss": 1.098
     },
     {
       "week": 7,
       "matches": 15,
-      "correct": 9,
-      "accuracy": 0.6,
-      "brier": 0.586,
-      "log_loss": 0.979
+      "correct": 11,
+      "accuracy": 0.733,
+      "brier": 0.584,
+      "log_loss": 0.976
     },
     {
       "week": 8,
       "matches": 24,
-      "correct": 14,
-      "accuracy": 0.583,
-      "brier": 0.62,
-      "log_loss": 1.031
+      "correct": 16,
+      "accuracy": 0.667,
+      "brier": 0.612,
+      "log_loss": 1.019
     },
     {
       "week": 9,
       "matches": 33,
-      "correct": 19,
-      "accuracy": 0.576,
-      "brier": 0.607,
-      "log_loss": 1.016
+      "correct": 21,
+      "accuracy": 0.636,
+      "brier": 0.602,
+      "log_loss": 1.009
     },
     {
       "week": 10,
       "matches": 42,
-      "correct": 23,
-      "accuracy": 0.548,
-      "brier": 0.61,
-      "log_loss": 1.02
+      "correct": 24,
+      "accuracy": 0.571,
+      "brier": 0.605,
+      "log_loss": 1.013
     },
     {
       "week": 11,
       "matches": 51,
       "correct": 26,
       "accuracy": 0.51,
-      "brier": 0.613,
-      "log_loss": 1.026
+      "brier": 0.61,
+      "log_loss": 1.021
     },
     {
       "week": 12,
       "matches": 60,
-      "correct": 30,
-      "accuracy": 0.5,
-      "brier": 0.612,
-      "log_loss": 1.024
+      "correct": 29,
+      "accuracy": 0.483,
+      "brier": 0.61,
+      "log_loss": 1.021
     },
     {
       "week": 13,
       "matches": 69,
       "correct": 35,
       "accuracy": 0.507,
-      "brier": 0.615,
-      "log_loss": 1.028
+      "brier": 0.611,
+      "log_loss": 1.022
     },
     {
       "week": 14,
       "matches": 78,
       "correct": 38,
       "accuracy": 0.487,
-      "brier": 0.62,
-      "log_loss": 1.035
+      "brier": 0.616,
+      "log_loss": 1.028
     },
     {
       "week": 15,
       "matches": 87,
       "correct": 40,
       "accuracy": 0.46,
-      "brier": 0.633,
-      "log_loss": 1.054
+      "brier": 0.63,
+      "log_loss": 1.048
     },
     {
       "week": 16,
       "matches": 96,
       "correct": 43,
       "accuracy": 0.448,
-      "brier": 0.635,
-      "log_loss": 1.056
+      "brier": 0.631,
+      "log_loss": 1.05
     },
     {
       "week": 17,
       "matches": 105,
-      "correct": 49,
-      "accuracy": 0.467,
-      "brier": 0.617,
-      "log_loss": 1.031
-    },
-    {
-      "week": 18,
-      "matches": 114,
-      "correct": 55,
-      "accuracy": 0.482,
+      "correct": 50,
+      "accuracy": 0.476,
       "brier": 0.613,
       "log_loss": 1.025
     },
     {
-      "week": 19,
-      "matches": 123,
-      "correct": 60,
-      "accuracy": 0.488,
-      "brier": 0.617,
-      "log_loss": 1.03
-    },
-    {
-      "week": 20,
-      "matches": 132,
-      "correct": 65,
-      "accuracy": 0.492,
-      "brier": 0.611,
-      "log_loss": 1.021
-    },
-    {
-      "week": 21,
-      "matches": 141,
-      "correct": 70,
-      "accuracy": 0.496,
-      "brier": 0.603,
-      "log_loss": 1.011
-    },
-    {
-      "week": 22,
-      "matches": 150,
-      "correct": 74,
-      "accuracy": 0.493,
-      "brier": 0.602,
-      "log_loss": 1.008
-    },
-    {
-      "week": 23,
-      "matches": 159,
-      "correct": 78,
-      "accuracy": 0.491,
-      "brier": 0.612,
-      "log_loss": 1.022
-    },
-    {
-      "week": 24,
-      "matches": 168,
-      "correct": 83,
-      "accuracy": 0.494,
-      "brier": 0.61,
-      "log_loss": 1.018
-    },
-    {
-      "week": 25,
-      "matches": 177,
-      "correct": 88,
-      "accuracy": 0.497,
-      "brier": 0.605,
-      "log_loss": 1.012
-    },
-    {
-      "week": 26,
-      "matches": 186,
-      "correct": 92,
-      "accuracy": 0.495,
-      "brier": 0.605,
-      "log_loss": 1.012
-    },
-    {
-      "week": 27,
-      "matches": 195,
-      "correct": 97,
-      "accuracy": 0.497,
-      "brier": 0.598,
-      "log_loss": 1.002
-    },
-    {
-      "week": 28,
-      "matches": 204,
-      "correct": 99,
-      "accuracy": 0.485,
-      "brier": 0.602,
-      "log_loss": 1.007
-    },
-    {
-      "week": 29,
-      "matches": 213,
-      "correct": 104,
-      "accuracy": 0.488,
-      "brier": 0.6,
-      "log_loss": 1.005
-    },
-    {
-      "week": 30,
-      "matches": 222,
-      "correct": 107,
-      "accuracy": 0.482,
-      "brier": 0.604,
-      "log_loss": 1.011
-    },
-    {
-      "week": 31,
-      "matches": 231,
-      "correct": 110,
-      "accuracy": 0.476,
-      "brier": 0.608,
-      "log_loss": 1.017
-    },
-    {
-      "week": 32,
-      "matches": 240,
-      "correct": 113,
-      "accuracy": 0.471,
-      "brier": 0.612,
-      "log_loss": 1.022
-    },
-    {
-      "week": 33,
-      "matches": 249,
-      "correct": 117,
-      "accuracy": 0.47,
+      "week": 18,
+      "matches": 114,
+      "correct": 57,
+      "accuracy": 0.5,
       "brier": 0.609,
       "log_loss": 1.018
     },
     {
+      "week": 19,
+      "matches": 123,
+      "correct": 62,
+      "accuracy": 0.504,
+      "brier": 0.611,
+      "log_loss": 1.021
+    },
+    {
+      "week": 20,
+      "matches": 132,
+      "correct": 67,
+      "accuracy": 0.508,
+      "brier": 0.606,
+      "log_loss": 1.013
+    },
+    {
+      "week": 21,
+      "matches": 141,
+      "correct": 72,
+      "accuracy": 0.511,
+      "brier": 0.598,
+      "log_loss": 1.002
+    },
+    {
+      "week": 22,
+      "matches": 150,
+      "correct": 76,
+      "accuracy": 0.507,
+      "brier": 0.597,
+      "log_loss": 0.999
+    },
+    {
+      "week": 23,
+      "matches": 159,
+      "correct": 80,
+      "accuracy": 0.503,
+      "brier": 0.607,
+      "log_loss": 1.014
+    },
+    {
+      "week": 24,
+      "matches": 168,
+      "correct": 85,
+      "accuracy": 0.506,
+      "brier": 0.605,
+      "log_loss": 1.01
+    },
+    {
+      "week": 25,
+      "matches": 177,
+      "correct": 91,
+      "accuracy": 0.514,
+      "brier": 0.6,
+      "log_loss": 1.004
+    },
+    {
+      "week": 26,
+      "matches": 186,
+      "correct": 95,
+      "accuracy": 0.511,
+      "brier": 0.6,
+      "log_loss": 1.003
+    },
+    {
+      "week": 27,
+      "matches": 195,
+      "correct": 101,
+      "accuracy": 0.518,
+      "brier": 0.593,
+      "log_loss": 0.993
+    },
+    {
+      "week": 28,
+      "matches": 204,
+      "correct": 102,
+      "accuracy": 0.5,
+      "brier": 0.596,
+      "log_loss": 0.999
+    },
+    {
+      "week": 29,
+      "matches": 213,
+      "correct": 106,
+      "accuracy": 0.498,
+      "brier": 0.595,
+      "log_loss": 0.997
+    },
+    {
+      "week": 30,
+      "matches": 222,
+      "correct": 109,
+      "accuracy": 0.491,
+      "brier": 0.599,
+      "log_loss": 1.003
+    },
+    {
+      "week": 31,
+      "matches": 231,
+      "correct": 111,
+      "accuracy": 0.481,
+      "brier": 0.603,
+      "log_loss": 1.009
+    },
+    {
+      "week": 32,
+      "matches": 240,
+      "correct": 114,
+      "accuracy": 0.475,
+      "brier": 0.607,
+      "log_loss": 1.014
+    },
+    {
+      "week": 33,
+      "matches": 249,
+      "correct": 118,
+      "accuracy": 0.474,
+      "brier": 0.605,
+      "log_loss": 1.01
+    },
+    {
       "week": 34,
       "matches": 258,
-      "correct": 119,
-      "accuracy": 0.461,
-      "brier": 0.615,
-      "log_loss": 1.027
+      "correct": 122,
+      "accuracy": 0.473,
+      "brier": 0.61,
+      "log_loss": 1.019
     }
   ],
   "result_type_breakdown": {
     "home": {
       "matches": 111,
-      "correct": 59,
-      "accuracy": 0.532
+      "correct": 61,
+      "accuracy": 0.55
     },
     "draw": {
       "matches": 76,
-      "correct": 24,
-      "accuracy": 0.316
+      "correct": 26,
+      "accuracy": 0.342
     },
     "away": {
       "matches": 71,
-      "correct": 36,
-      "accuracy": 0.507
+      "correct": 35,
+      "accuracy": 0.493
     }
   },
   "raw_result_type_breakdown": {

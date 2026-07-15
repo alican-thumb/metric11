@@ -651,8 +651,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.533,
-    "draw_probability": 0.241,
-    "opponent_win_probability": 0.226,
+    "draw_probability": 0.259,
+    "opponent_win_probability": 0.208,
     "expected_goals_for": 1.84,
     "expected_goals_against": 1.03,
     "top_scorelines": [
@@ -703,13 +703,14 @@
       "result": "target_win",
       "probability": 0.533,
       "scoreline": "1-1",
-      "action": "KEEP_PICK_WITH_DRAW_WARNING",
-      "action_label": "Beraberlik uyarılı tahmin",
+      "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
+      "action_label": "Korumalı taraf tahmini",
       "risk_notes": [
+        "draw_probability_watch",
         "top_draw_scoreline",
         "strength_edge_very_narrow",
         "medium_confidence_side_pick",
-        "draw_calibration_medium",
+        "draw_calibration_high",
         "strong_side_probability_penalty"
       ]
     },
@@ -717,7 +718,7 @@
       "raw_result": "target_win",
       "final_result": "target_win",
       "probability": 0.533,
-      "margin": 0.292,
+      "margin": 0.274,
       "adjustment": "raw_unvalidated_team",
       "label": "GENÇLERBİRLİĞİ kazanır",
       "raw_label": "GENÇLERBİRLİĞİ kazanır",
@@ -729,25 +730,33 @@
     "availability_missing_count": 0,
     "strength_edge": -0.008,
     "draw_calibration": {
-      "lift": 0.075,
-      "risk_level": "MEDIUM",
+      "lift": 0.135,
+      "risk_level": "HIGH",
       "reasons": [
         "takım gücü dengede",
-        "son formda beraberlik eğilimi"
+        "son formda beraberlik eğilimi",
+        "h2h_yüksek_beraberlik_geçmişi"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 8,
+      "draw_rate": 0.5,
+      "last_meeting_date": "2026-01-18T14:00:00+00:00"
+    },
     "draw_risk": {
-      "score": 28,
-      "risk_level": "MEDIUM",
+      "score": 43,
+      "risk_level": "HIGH",
       "reasons": [
+        "draw_probability_watch",
         "top_draw_scoreline",
         "strength_edge_very_narrow",
         "medium_confidence_side_pick",
-        "draw_calibration_medium",
+        "draw_calibration_high",
         "strong_side_probability_penalty"
       ],
       "protected_prediction": true,
-      "recommended_model_action": "KEEP_PICK_WITH_DRAW_WARNING",
+      "recommended_model_action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "note": "Ana 1X2 tahminini değiştirmeden beraberlik senaryosunu görünür yapan risk katmanıdır."
     },
     "big_match_profile": {
@@ -1026,10 +1035,10 @@
     "Hakem profili kart tarafında anlamlı bir sinyal veriyor: KADİR SAĞLAM bu sezon önceki 8 Beşiktaş maçında toplam maç başı 5.38 kart, Beşiktaş'a maç başı 2.62 kart ortalamasıyla öne çıkıyor.",
     "Olası 11 sinyalinde son dönemde öne çıkan isimler: ZAN ZUZEK, DIMITRIOS GOUTAS, AYOTOMIWA SHERIF DELE BASHIRU, FRANCO DARYL TONGYA HEUBANG, GÖKTAN GÜRPÜZ, PEDRO MIGUEL DE ALMEIDA LOPES PEREIRA. Kart riski tarafında ise son 8 maç penceresinde SAMED ONUR, DİLHAN DEMİR, PEDRO MIGUEL DE ALMEIDA LOPES PEREIRA, THALISSON KELVEN DA SILVA dikkat çekiyor.",
     "Gol adayı sinyalinde öne çıkan isimler: OĞULCAN ÜLGÜN, MBAYE HAMADY NIANG, METEHAN MİMAROĞLU, SEKOU KOITA. Bu skor son gol formu, sezon içi gol sayısı ve son dönemde ilk 11 başlama sıklığından türetildi. Test sonucunda gerçek Beşiktaş golcüleri: SEKOU KOITA.",
-    "Skor dağılımında en olası senaryolar: 1-1 (%11), 1-0 (%10), 2-1 (%10). Model aksiyonu: Beraberlik uyarılı tahmin; önerilen ana skor 1-1.",
+    "Skor dağılımında en olası senaryolar: 1-1 (%11), 1-0 (%10), 2-1 (%10). Model aksiyonu: Korumalı taraf tahmini; önerilen ana skor 1-1.",
     "Kadro tercih önerisi: Önde baskı ve skor arama. Hücum önceliği OĞULCAN ÜLGÜN, MBAYE HAMADY NIANG, METEHAN MİMAROĞLU. Disiplin yönetimi gereken oyuncular: SAMED ONUR, DİLHAN DEMİR.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %85 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.84-1.03 yerine 2.02-1.03 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.84-1.03 bandından 2.06-1.01 bandına taşırdı. Bu senaryoda en olası skor 2-1 ve kazanma olasılığı %62 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %53, beraberliği %24, rakip galibiyetini %23 olarak işaretliyor. Gol beklentisi 1.84-1.03; kart sinyali LOW."
+    "MVP olasılık motoru Beşiktaş galibiyetini %53, beraberliği %26, rakip galibiyetini %21 olarak işaretliyor. Gol beklentisi 1.84-1.03; kart sinyali LOW."
   ]
 }

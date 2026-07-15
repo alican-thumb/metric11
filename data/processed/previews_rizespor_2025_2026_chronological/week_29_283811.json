@@ -595,23 +595,6 @@
         "recent_cards": 2
       },
       {
-        "player_id": "2552476",
-        "name": "ALTIN ZEQIRI",
-        "goal_threat_score": 7.35,
-        "candidate_type": "impact_sub",
-        "recent_starts": 0,
-        "recent_bench": 7,
-        "season_goals_before_match": 1,
-        "recent_goals": 0,
-        "big_match_goals_before_match": 0,
-        "header_goals_before_match": 0,
-        "penalty_goals_before_match": 0,
-        "cards_before_match": 3,
-        "recent_cards": 0,
-        "opponent_defense_multiplier": 1.14,
-        "actual_scorer": false
-      },
-      {
         "player_id": "1802328",
         "name": "EMRECAN BULUT",
         "goal_threat_score": 7.35,
@@ -624,6 +607,23 @@
         "header_goals_before_match": 0,
         "penalty_goals_before_match": 0,
         "cards_before_match": 1,
+        "recent_cards": 0,
+        "opponent_defense_multiplier": 1.14,
+        "actual_scorer": false
+      },
+      {
+        "player_id": "2552476",
+        "name": "ALTIN ZEQIRI",
+        "goal_threat_score": 7.35,
+        "candidate_type": "impact_sub",
+        "recent_starts": 0,
+        "recent_bench": 7,
+        "season_goals_before_match": 1,
+        "recent_goals": 0,
+        "big_match_goals_before_match": 0,
+        "header_goals_before_match": 0,
+        "penalty_goals_before_match": 0,
+        "cards_before_match": 3,
         "recent_cards": 0,
         "opponent_defense_multiplier": 1.14,
         "actual_scorer": false
@@ -677,8 +677,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.507,
-    "draw_probability": 0.244,
-    "opponent_win_probability": 0.25,
+    "draw_probability": 0.224,
+    "opponent_win_probability": 0.269,
     "expected_goals_for": 1.83,
     "expected_goals_against": 1.18,
     "top_scorelines": [
@@ -741,7 +741,7 @@
       "raw_result": "target_win",
       "final_result": "target_win",
       "probability": 0.507,
-      "margin": 0.257,
+      "margin": 0.238,
       "adjustment": "raw_unvalidated_team",
       "label": "ÇAYKUR RİZESPOR A.Ş. kazanır",
       "raw_label": "ÇAYKUR RİZESPOR A.Ş. kazanır",
@@ -759,6 +759,12 @@
         "takım gücü yakın",
         "son formda beraberlik eğilimi"
       ]
+    },
+    "head_to_head": {
+      "available": true,
+      "matches": 19,
+      "draw_rate": 0.105,
+      "last_meeting_date": "2026-04-13T17:00:00+00:00"
     },
     "draw_risk": {
       "score": 31,
@@ -1060,6 +1066,6 @@
     "Kadro tercih önerisi: Önde baskı ve skor arama. Hücum önceliği MIHAI-VALENTIN  MIHAILA, QAZIM LACI, ALI SOWE. Disiplin yönetimi gereken oyuncular: IOANNIS PAPANIKOLAOU, LOIDE ANTONIO AUGUSTO, HALİL İBRAHİM DERVİŞOĞLU.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %107 uyum buldu; karar etiketi UYUMLU. Alternatif model 11'i kullanılsaydı xG 1.83-1.18 yerine 1.83-1.18 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.83-1.18 bandından 2.05-1.16 bandına taşırdı. Bu senaryoda en olası skor 2-1 ve kazanma olasılığı %58 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %51, beraberliği %24, rakip galibiyetini %25 olarak işaretliyor. Gol beklentisi 1.83-1.18; kart sinyali MEDIUM."
+    "MVP olasılık motoru Beşiktaş galibiyetini %51, beraberliği %22, rakip galibiyetini %27 olarak işaretliyor. Gol beklentisi 1.83-1.18; kart sinyali MEDIUM."
   ]
 }

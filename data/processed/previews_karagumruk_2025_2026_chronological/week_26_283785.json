@@ -671,8 +671,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.254,
-    "draw_probability": 0.239,
-    "opponent_win_probability": 0.507,
+    "draw_probability": 0.235,
+    "opponent_win_probability": 0.511,
     "expected_goals_for": 1.26,
     "expected_goals_against": 2.14,
     "top_scorelines": [
@@ -721,7 +721,7 @@
     },
     "recommended_call": {
       "result": "opponent_win",
-      "probability": 0.507,
+      "probability": 0.511,
       "scoreline": "1-2",
       "action": "taraf_eğilimi",
       "action_label": "Taraf eğilimi",
@@ -732,8 +732,8 @@
     "display_prediction": {
       "raw_result": "opponent_win",
       "final_result": "opponent_win",
-      "probability": 0.507,
-      "margin": 0.253,
+      "probability": 0.511,
+      "margin": 0.257,
       "adjustment": "raw_unvalidated_team",
       "label": "FENERBAHÇE A.Ş. kazanır",
       "raw_label": "FENERBAHÇE A.Ş. kazanır",
@@ -751,6 +751,12 @@
         "son formda beraberlik eğilimi",
         "büyük maç denge etkisi"
       ]
+    },
+    "head_to_head": {
+      "available": true,
+      "matches": 12,
+      "draw_rate": 0.25,
+      "last_meeting_date": "2026-03-13T17:00:00+00:00"
     },
     "draw_risk": {
       "score": 20,

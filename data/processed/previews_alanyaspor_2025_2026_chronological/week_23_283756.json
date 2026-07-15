@@ -651,8 +651,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.33,
-    "draw_probability": 0.237,
-    "opponent_win_probability": 0.433,
+    "draw_probability": 0.24,
+    "opponent_win_probability": 0.43,
     "expected_goals_for": 1.56,
     "expected_goals_against": 2.01,
     "top_scorelines": [
@@ -701,7 +701,7 @@
     },
     "recommended_call": {
       "result": "opponent_win",
-      "probability": 0.433,
+      "probability": 0.43,
       "scoreline": "1-2",
       "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "action_label": "Korumalı taraf tahmini",
@@ -710,14 +710,15 @@
         "draw_scoreline_top_two",
         "probability_margin_narrow",
         "strength_edge_very_narrow",
-        "low_confidence_side_pick"
+        "low_confidence_side_pick",
+        "draw_calibration_medium"
       ]
     },
     "display_prediction": {
       "raw_result": "opponent_win",
       "final_result": "opponent_win",
-      "probability": 0.433,
-      "margin": 0.103,
+      "probability": 0.43,
+      "margin": 0.1,
       "adjustment": "raw_unvalidated_team",
       "label": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ kazanır",
       "raw_label": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ kazanır",
@@ -729,22 +730,30 @@
     "availability_missing_count": 0,
     "strength_edge": -0.078,
     "draw_calibration": {
-      "lift": 0.055,
-      "risk_level": "LOW",
+      "lift": 0.09,
+      "risk_level": "MEDIUM",
       "reasons": [
         "takım gücü yakın",
-        "son formda beraberlik eğilimi"
+        "son formda beraberlik eğilimi",
+        "h2h_beraberlik_geçmişi"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 20,
+      "draw_rate": 0.3,
+      "last_meeting_date": "2026-02-21T13:00:00+00:00"
+    },
     "draw_risk": {
-      "score": 50,
+      "score": 57,
       "risk_level": "HIGH",
       "reasons": [
         "xg_margin_watch",
         "draw_scoreline_top_two",
         "probability_margin_narrow",
         "strength_edge_very_narrow",
-        "low_confidence_side_pick"
+        "low_confidence_side_pick",
+        "draw_calibration_medium"
       ],
       "protected_prediction": true,
       "recommended_model_action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",

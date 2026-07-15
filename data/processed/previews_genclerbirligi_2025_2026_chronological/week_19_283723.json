@@ -655,8 +655,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.483,
-    "draw_probability": 0.273,
-    "opponent_win_probability": 0.244,
+    "draw_probability": 0.266,
+    "opponent_win_probability": 0.251,
     "expected_goals_for": 1.39,
     "expected_goals_against": 0.86,
     "top_scorelines": [
@@ -721,7 +721,7 @@
       "raw_result": "target_win",
       "final_result": "target_win",
       "probability": 0.483,
-      "margin": 0.211,
+      "margin": 0.218,
       "adjustment": "raw_unvalidated_team",
       "label": "GENÇLERBİRLİĞİ kazanır",
       "raw_label": "GENÇLERBİRLİĞİ kazanır",
@@ -740,6 +740,12 @@
         "orta gol bandı",
         "son formda beraberlik eğilimi"
       ]
+    },
+    "head_to_head": {
+      "available": true,
+      "matches": 19,
+      "draw_rate": 0.211,
+      "last_meeting_date": "2026-01-25T14:00:00+00:00"
     },
     "draw_risk": {
       "score": 54,
@@ -1031,6 +1037,6 @@
     "Kadro tercih önerisi: Önde baskı ve skor arama. Hücum önceliği SEKOU KOITA, OĞULCAN ÜLGÜN, MBAYE HAMADY NIANG. Disiplin yönetimi gereken oyuncular: SAMED ONUR, DİLHAN DEMİR.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %103 uyum buldu; karar etiketi UYUMLU. Alternatif model 11'i kullanılsaydı xG 1.39-0.86 yerine 1.39-0.86 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.39-0.86 bandından 1.61-0.84 bandına taşırdı. Bu senaryoda en olası skor 1-0 ve kazanma olasılığı %56 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %48, beraberliği %27, rakip galibiyetini %24 olarak işaretliyor. Gol beklentisi 1.39-0.86; kart sinyali LOW."
+    "MVP olasılık motoru Beşiktaş galibiyetini %48, beraberliği %27, rakip galibiyetini %25 olarak işaretliyor. Gol beklentisi 1.39-0.86; kart sinyali LOW."
   ]
 }

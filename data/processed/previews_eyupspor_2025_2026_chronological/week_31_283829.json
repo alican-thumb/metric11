@@ -678,8 +678,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.318,
-    "draw_probability": 0.248,
-    "opponent_win_probability": 0.434,
+    "draw_probability": 0.23,
+    "opponent_win_probability": 0.452,
     "expected_goals_for": 1.28,
     "expected_goals_against": 1.75,
     "top_scorelines": [
@@ -728,14 +728,14 @@
     },
     "recommended_call": {
       "result": "opponent_win",
-      "probability": 0.434,
+      "probability": 0.452,
       "scoreline": "1-1",
       "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "action_label": "Korumalı taraf tahmini",
       "risk_notes": [
         "xg_margin_watch",
         "top_draw_scoreline",
-        "probability_margin_narrow",
+        "probability_margin_watch",
         "strength_edge_very_narrow",
         "low_confidence_side_pick"
       ]
@@ -743,8 +743,8 @@
     "display_prediction": {
       "raw_result": "opponent_win",
       "final_result": "opponent_win",
-      "probability": 0.434,
-      "margin": 0.116,
+      "probability": 0.452,
+      "margin": 0.134,
       "adjustment": "raw_unvalidated_team",
       "label": "GAZİANTEP FUTBOL KULÜBÜ A.Ş. kazanır",
       "raw_label": "GAZİANTEP FUTBOL KULÜBÜ A.Ş. kazanır",
@@ -762,13 +762,19 @@
         "takım gücü dengede"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 6,
+      "draw_rate": 0.0,
+      "last_meeting_date": "2026-04-25T11:30:00+00:00"
+    },
     "draw_risk": {
-      "score": 57,
+      "score": 51,
       "risk_level": "HIGH",
       "reasons": [
         "xg_margin_watch",
         "top_draw_scoreline",
-        "probability_margin_narrow",
+        "probability_margin_watch",
         "strength_edge_very_narrow",
         "low_confidence_side_pick"
       ],
@@ -1091,6 +1097,6 @@
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği METEHAN ALTUNBAŞ, UMUT DİLAN BOZOK, MATEUSZ JACEK LEGOWSKI. Disiplin yönetimi gereken oyuncular: TAŞKIN İLTER, CHARLES ANDRE RAUX YAO, JANKAT YILMAZ.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %69 uyum buldu; karar etiketi TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.28-1.75 yerine 1.59-1.75 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.28-1.75 bandından 1.5-1.73 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %34 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %32, beraberliği %25, rakip galibiyetini %43 olarak işaretliyor. Gol beklentisi 1.28-1.75; kart sinyali HIGH."
+    "MVP olasılık motoru Beşiktaş galibiyetini %32, beraberliği %23, rakip galibiyetini %45 olarak işaretliyor. Gol beklentisi 1.28-1.75; kart sinyali HIGH."
   ]
 }

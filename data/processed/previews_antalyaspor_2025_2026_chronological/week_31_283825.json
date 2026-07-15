@@ -659,8 +659,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.288,
-    "draw_probability": 0.234,
-    "opponent_win_probability": 0.477,
+    "draw_probability": 0.229,
+    "opponent_win_probability": 0.482,
     "expected_goals_for": 1.31,
     "expected_goals_against": 2.02,
     "top_scorelines": [
@@ -709,7 +709,7 @@
     },
     "recommended_call": {
       "result": "opponent_win",
-      "probability": 0.477,
+      "probability": 0.482,
       "scoreline": "1-2",
       "action": "KEEP_PICK_WITH_DRAW_WARNING",
       "action_label": "Beraberlik uyarılı tahmin",
@@ -722,8 +722,8 @@
     "display_prediction": {
       "raw_result": "opponent_win",
       "final_result": "opponent_win",
-      "probability": 0.477,
-      "margin": 0.189,
+      "probability": 0.482,
+      "margin": 0.194,
       "adjustment": "raw_unvalidated_team",
       "label": "GÖZTEPE A.Ş. kazanır",
       "raw_label": "GÖZTEPE A.Ş. kazanır",
@@ -741,6 +741,12 @@
         "takım gücü yakın",
         "son formda beraberlik eğilimi"
       ]
+    },
+    "head_to_head": {
+      "available": true,
+      "matches": 18,
+      "draw_rate": 0.222,
+      "last_meeting_date": "2026-04-25T17:00:00+00:00"
     },
     "draw_risk": {
       "score": 29,
@@ -807,7 +813,7 @@
   },
   "coach_lineup_audit": {
     "verdict": "TARTIŞMALI",
-    "actual_lineup_score": 70.38,
+    "actual_lineup_score": 70.39,
     "recommended_lineup_score": 111.36,
     "alignment_rate": 0.632,
     "actual_starters": [

@@ -664,8 +664,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.494,
-    "draw_probability": 0.248,
-    "opponent_win_probability": 0.257,
+    "draw_probability": 0.25,
+    "opponent_win_probability": 0.255,
     "expected_goals_for": 1.75,
     "expected_goals_against": 1.19,
     "top_scorelines": [
@@ -716,9 +716,10 @@
       "result": "target_win",
       "probability": 0.494,
       "scoreline": "1-1",
-      "action": "KEEP_PICK_WITH_DRAW_WARNING",
-      "action_label": "Beraberlik uyarılı tahmin",
+      "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
+      "action_label": "Korumalı taraf tahmini",
       "risk_notes": [
+        "draw_probability_watch",
         "top_draw_scoreline",
         "strength_edge_narrow",
         "low_confidence_side_pick"
@@ -728,7 +729,7 @@
       "raw_result": "target_win",
       "final_result": "target_win",
       "probability": 0.494,
-      "margin": 0.237,
+      "margin": 0.239,
       "adjustment": "raw_unvalidated_team",
       "label": "TRABZONSPOR A.Ş. kazanır",
       "raw_label": "TRABZONSPOR A.Ş. kazanır",
@@ -746,16 +747,23 @@
         "son formda beraberlik eğilimi"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 21,
+      "draw_rate": 0.286,
+      "last_meeting_date": "2026-05-17T17:00:00+00:00"
+    },
     "draw_risk": {
-      "score": 32,
-      "risk_level": "MEDIUM",
+      "score": 42,
+      "risk_level": "HIGH",
       "reasons": [
+        "draw_probability_watch",
         "top_draw_scoreline",
         "strength_edge_narrow",
         "low_confidence_side_pick"
       ],
       "protected_prediction": true,
-      "recommended_model_action": "KEEP_PICK_WITH_DRAW_WARNING",
+      "recommended_model_action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "note": "Ana 1X2 tahminini değiştirmeden beraberlik senaryosunu görünür yapan risk katmanıdır."
     },
     "big_match_profile": {
@@ -1064,7 +1072,7 @@
     "Hakem profili kart tarafında anlamlı bir sinyal veriyor: ATİLLA KARAOĞLAN bu sezon önceki 16 Beşiktaş maçında toplam maç başı 5.81 kart, Beşiktaş'a maç başı 3.12 kart ortalamasıyla öne çıkıyor.",
     "Olası 11 sinyalinde son dönemde öne çıkan isimler: ANDRE ONANA ONANA, CHIBUIKE GODFREY NWAIWU, OZAN TUFAN, MUSTAFA ESKİHELLAÇ, TIM LUCA PACO JABOL - FOLCARELLI, EBERE PAUL ONUACHU. Kart riski tarafında ise son 8 maç penceresinde BENJAMIN BOUCHOUARI, WAGNER FABRICIO CARDOSO DE PINA, CHRIST RAVYNEL INAO OULAI, ERNEST MUÇİ dikkat çekiyor.",
     "Gol adayı sinyalinde öne çıkan isimler: EBERE PAUL ONUACHU, FELIPE AUGUSTO DA SILVA, ERNEST MUÇİ, OLEKSANDR ZUBKOV. Bu skor son gol formu, sezon içi gol sayısı ve son dönemde ilk 11 başlama sıklığından türetildi.",
-    "Skor dağılımında en olası senaryolar: 1-1 (%11), 2-1 (%10), 1-0 (%9). Model aksiyonu: Beraberlik uyarılı tahmin; önerilen ana skor 1-1.",
+    "Skor dağılımında en olası senaryolar: 1-1 (%11), 2-1 (%10), 1-0 (%9). Model aksiyonu: Korumalı taraf tahmini; önerilen ana skor 1-1.",
     "Kadro tercih önerisi: Önde baskı ve skor arama. Hücum önceliği EBERE PAUL ONUACHU, FELIPE AUGUSTO DA SILVA, ERNEST MUÇİ. Disiplin yönetimi gereken oyuncular: BENJAMIN BOUCHOUARI.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %51 uyum buldu; karar etiketi TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.75-1.19 yerine 2.1-1.19 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.75-1.19 bandından 1.97-1.17 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %56 olurdu.",

@@ -671,8 +671,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.291,
-    "draw_probability": 0.268,
-    "opponent_win_probability": 0.441,
+    "draw_probability": 0.261,
+    "opponent_win_probability": 0.447,
     "expected_goals_for": 0.92,
     "expected_goals_against": 1.44,
     "top_scorelines": [
@@ -721,12 +721,12 @@
     },
     "recommended_call": {
       "result": "opponent_win",
-      "probability": 0.441,
+      "probability": 0.447,
       "scoreline": "0-1",
       "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "action_label": "Korumalı taraf tahmini",
       "risk_notes": [
-        "draw_probability_live",
+        "draw_probability_watch",
         "draw_scoreline_top_two",
         "probability_margin_watch",
         "strength_edge_very_narrow",
@@ -737,8 +737,8 @@
     "display_prediction": {
       "raw_result": "opponent_win",
       "final_result": "opponent_win",
-      "probability": 0.441,
-      "margin": 0.149,
+      "probability": 0.447,
+      "margin": 0.156,
       "adjustment": "raw_unvalidated_team",
       "label": "GENÇLERBİRLİĞİ kazanır",
       "raw_label": "GENÇLERBİRLİĞİ kazanır",
@@ -758,11 +758,17 @@
         "son formda beraberlik eğilimi"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 19,
+      "draw_rate": 0.211,
+      "last_meeting_date": "2026-01-25T14:00:00+00:00"
+    },
     "draw_risk": {
-      "score": 60,
+      "score": 52,
       "risk_level": "HIGH",
       "reasons": [
-        "draw_probability_live",
+        "draw_probability_watch",
         "draw_scoreline_top_two",
         "probability_margin_watch",
         "strength_edge_very_narrow",
@@ -817,7 +823,7 @@
   "coach_lineup_audit": {
     "verdict": "TARTIŞMALI",
     "actual_lineup_score": 47.12,
-    "recommended_lineup_score": 101.34,
+    "recommended_lineup_score": 101.33,
     "alignment_rate": 0.465,
     "actual_starters": [
       "JULIAN  CUESTA DIAZ",
@@ -1070,6 +1076,6 @@
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği YOHAN ALEXANDRE MADY BOLI, ALEXANDER GERARD  VAN DE STREEK, LAUTARO DANIEL GIANNETTI. Disiplin yönetimi gereken oyuncular: SONER DİKMEN, GEORGII DZHIKIIA.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %46 uyum buldu; karar etiketi TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 0.92-1.44 yerine 1.27-1.44 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 0.92-1.44 bandından 1.14-1.42 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %30 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %29, beraberliği %27, rakip galibiyetini %44 olarak işaretliyor. Gol beklentisi 0.92-1.44; kart sinyali LOW."
+    "MVP olasılık motoru Beşiktaş galibiyetini %29, beraberliği %26, rakip galibiyetini %45 olarak işaretliyor. Gol beklentisi 0.92-1.44; kart sinyali LOW."
   ]
 }

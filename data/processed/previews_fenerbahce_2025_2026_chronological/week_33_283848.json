@@ -688,8 +688,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.416,
-    "draw_probability": 0.24,
-    "opponent_win_probability": 0.345,
+    "draw_probability": 0.222,
+    "opponent_win_probability": 0.363,
     "expected_goals_for": 1.89,
     "expected_goals_against": 1.82,
     "top_scorelines": [
@@ -746,7 +746,7 @@
         "Taraflar arası fark dar",
         "xg_margin_very_narrow",
         "top_draw_scoreline",
-        "probability_margin_narrow",
+        "probability_margin_very_narrow",
         "strength_edge_very_narrow",
         "low_confidence_side_pick",
         "draw_calibration_medium"
@@ -756,7 +756,7 @@
       "raw_result": "target_win",
       "final_result": "target_win",
       "probability": 0.416,
-      "margin": 0.071,
+      "margin": 0.053,
       "adjustment": "raw_unvalidated_team",
       "label": "FENERBAHÇE A.Ş. kazanır",
       "raw_label": "FENERBAHÇE A.Ş. kazanır",
@@ -775,13 +775,19 @@
         "takım gücü yakın"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 28,
+      "draw_rate": 0.143,
+      "last_meeting_date": "2026-05-09T17:00:00+00:00"
+    },
     "draw_risk": {
-      "score": 79,
+      "score": 87,
       "risk_level": "HIGH",
       "reasons": [
         "xg_margin_very_narrow",
         "top_draw_scoreline",
-        "probability_margin_narrow",
+        "probability_margin_very_narrow",
         "strength_edge_very_narrow",
         "low_confidence_side_pick",
         "draw_calibration_medium"
@@ -1101,6 +1107,6 @@
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği ANDERSON SOUZA CONCEIÇAO, DORGELES NENE, MUHAMMED KEREM AKTÜRKOĞLU. Disiplin yönetimi gereken oyuncular: JAYDEN QUINN OOSTERWOLDE, EDERSON SANTANA DE MORAES, FREDERICO RODRIGUES DE PAULA SANTOS.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %62 uyum buldu; karar etiketi TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.89-1.82 yerine 2.24-1.82 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.89-1.82 bandından 2.11-1.8 bandına taşırdı. Bu senaryoda en olası skor 2-1 ve kazanma olasılığı %46 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %42, beraberliği %24, rakip galibiyetini %34 olarak işaretliyor. Gol beklentisi 1.89-1.82; kart sinyali MEDIUM."
+    "MVP olasılık motoru Beşiktaş galibiyetini %42, beraberliği %22, rakip galibiyetini %36 olarak işaretliyor. Gol beklentisi 1.89-1.82; kart sinyali MEDIUM."
   ]
 }

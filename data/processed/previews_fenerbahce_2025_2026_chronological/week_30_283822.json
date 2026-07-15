@@ -682,8 +682,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.558,
-    "draw_probability": 0.22,
-    "opponent_win_probability": 0.222,
+    "draw_probability": 0.202,
+    "opponent_win_probability": 0.24,
     "expected_goals_for": 2.32,
     "expected_goals_against": 1.35,
     "top_scorelines": [
@@ -742,7 +742,7 @@
       "raw_result": "target_win",
       "final_result": "target_win",
       "probability": 0.558,
-      "margin": 0.337,
+      "margin": 0.319,
       "adjustment": "raw_unvalidated_team",
       "label": "FENERBAHÇE A.Ş. kazanır",
       "raw_label": "FENERBAHÇE A.Ş. kazanır",
@@ -757,6 +757,12 @@
       "lift": 0.0,
       "risk_level": "NONE",
       "reasons": []
+    },
+    "head_to_head": {
+      "available": true,
+      "matches": 24,
+      "draw_rate": 0.125,
+      "last_meeting_date": "2026-04-17T17:00:00+00:00"
     },
     "draw_risk": {
       "score": 14,
@@ -820,7 +826,7 @@
   "coach_lineup_audit": {
     "verdict": "KISMEN_TARTIŞMALI",
     "actual_lineup_score": 99.09,
-    "recommended_lineup_score": 122.15,
+    "recommended_lineup_score": 122.16,
     "alignment_rate": 0.811,
     "actual_starters": [
       "EDERSON SANTANA DE MORAES",
@@ -1070,6 +1076,6 @@
     "Kadro tercih önerisi: Önde baskı ve skor arama. Hücum önceliği DORGELES NENE, ANDERSON SOUZA CONCEIÇAO, MARCO ASENSIO WILLEMSEN. Disiplin yönetimi gereken oyuncular: FREDERICO RODRIGUES DE PAULA SANTOS, EDERSON SANTANA DE MORAES, DORGELES NENE.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %81 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 2.32-1.35 yerine 2.55-1.35 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 2.32-1.35 bandından 2.54-1.33 bandına taşırdı. Bu senaryoda en olası skor 2-1 ve kazanma olasılığı %64 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %56, beraberliği %22, rakip galibiyetini %22 olarak işaretliyor. Gol beklentisi 2.32-1.35; kart sinyali LOW."
+    "MVP olasılık motoru Beşiktaş galibiyetini %56, beraberliği %20, rakip galibiyetini %24 olarak işaretliyor. Gol beklentisi 2.32-1.35; kart sinyali LOW."
   ]
 }

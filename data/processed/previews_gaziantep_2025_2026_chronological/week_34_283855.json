@@ -671,8 +671,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.209,
-    "draw_probability": 0.209,
-    "opponent_win_probability": 0.582,
+    "draw_probability": 0.189,
+    "opponent_win_probability": 0.602,
     "expected_goals_for": 1.03,
     "expected_goals_against": 2.36,
     "top_scorelines": [
@@ -721,7 +721,7 @@
     },
     "recommended_call": {
       "result": "opponent_win",
-      "probability": 0.582,
+      "probability": 0.602,
       "scoreline": "1-2",
       "action": "taraf_eğilimi",
       "action_label": "Taraf eğilimi",
@@ -730,8 +730,8 @@
     "display_prediction": {
       "raw_result": "opponent_win",
       "final_result": "opponent_win",
-      "probability": 0.582,
-      "margin": 0.373,
+      "probability": 0.602,
+      "margin": 0.393,
       "adjustment": "raw_unvalidated_team",
       "label": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ kazanır",
       "raw_label": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ kazanır",
@@ -746,6 +746,12 @@
       "lift": 0.0,
       "risk_level": "NONE",
       "reasons": []
+    },
+    "head_to_head": {
+      "available": true,
+      "matches": 16,
+      "draw_rate": 0.062,
+      "last_meeting_date": "2026-05-16T17:00:00+00:00"
     },
     "draw_risk": {
       "score": 0,
@@ -1064,6 +1070,6 @@
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği MOHAMED LAMINE BAYO, KACPER SZYMON KOZLOWSKI, DRISSA CAMARA. Disiplin yönetimi gereken oyuncular: CHRISTOPHER LUNGOYI, VICTOR NTINO-EMO GIDADO.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %75 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.03-2.36 yerine 1.33-2.36 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday ERNEST MUÇİ (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.03-2.36 bandından 1.22-2.35 bandına taşırdı. Bu senaryoda en olası skor 1-2 ve kazanma olasılığı %19 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %21, beraberliği %21, rakip galibiyetini %58 olarak işaretliyor. Gol beklentisi 1.03-2.36; kart sinyali MEDIUM."
+    "MVP olasılık motoru Beşiktaş galibiyetini %21, beraberliği %19, rakip galibiyetini %60 olarak işaretliyor. Gol beklentisi 1.03-2.36; kart sinyali MEDIUM."
   ]
 }

@@ -672,8 +672,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.274,
-    "draw_probability": 0.269,
-    "opponent_win_probability": 0.456,
+    "draw_probability": 0.263,
+    "opponent_win_probability": 0.463,
     "expected_goals_for": 0.84,
     "expected_goals_against": 1.43,
     "top_scorelines": [
@@ -722,12 +722,12 @@
     },
     "recommended_call": {
       "result": "opponent_win",
-      "probability": 0.456,
+      "probability": 0.463,
       "scoreline": "0-1",
       "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "action_label": "Korumalı taraf tahmini",
       "risk_notes": [
-        "draw_probability_live",
+        "draw_probability_watch",
         "draw_scoreline_top_two",
         "strength_edge_very_narrow",
         "low_confidence_side_pick"
@@ -736,8 +736,8 @@
     "display_prediction": {
       "raw_result": "opponent_win",
       "final_result": "opponent_win",
-      "probability": 0.456,
-      "margin": 0.182,
+      "probability": 0.463,
+      "margin": 0.189,
       "adjustment": "raw_unvalidated_team",
       "label": "BEŞİKTAŞ A.Ş. kazanır",
       "raw_label": "BEŞİKTAŞ A.Ş. kazanır",
@@ -756,11 +756,17 @@
         "son formda beraberlik eğilimi"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 32,
+      "draw_rate": 0.219,
+      "last_meeting_date": "2026-04-10T17:00:00+00:00"
+    },
     "draw_risk": {
-      "score": 47,
+      "score": 39,
       "risk_level": "HIGH",
       "reasons": [
-        "draw_probability_live",
+        "draw_probability_watch",
         "draw_scoreline_top_two",
         "strength_edge_very_narrow",
         "low_confidence_side_pick"
@@ -1074,6 +1080,6 @@
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği SAMUEL LEO BEAT  BALLET, ALEXANDER GERARD  VAN DE STREEK, NIKOLA STORM. Disiplin yönetimi gereken oyuncular: ERDOĞAN YEŞİLYURT, DOĞUKAN SİNİK, LAUTARO DANIEL GIANNETTI.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %66 uyum buldu; karar etiketi TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 0.84-1.43 yerine 1.19-1.43 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 0.84-1.43 bandından 1.06-1.41 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %28 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %27, beraberliği %27, rakip galibiyetini %46 olarak işaretliyor. Gol beklentisi 0.84-1.43; kart sinyali MEDIUM."
+    "MVP olasılık motoru Beşiktaş galibiyetini %27, beraberliği %26, rakip galibiyetini %46 olarak işaretliyor. Gol beklentisi 0.84-1.43; kart sinyali MEDIUM."
   ]
 }

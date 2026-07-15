@@ -659,8 +659,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.288,
-    "draw_probability": 0.292,
-    "opponent_win_probability": 0.42,
+    "draw_probability": 0.301,
+    "opponent_win_probability": 0.411,
     "expected_goals_for": 0.87,
     "expected_goals_against": 1.29,
     "top_scorelines": [
@@ -709,7 +709,7 @@
     },
     "recommended_call": {
       "result": "opponent_win",
-      "probability": 0.42,
+      "probability": 0.411,
       "scoreline": "0-1",
       "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "action_label": "Korumalı taraf tahmini",
@@ -719,7 +719,7 @@
         "draw_probability_high",
         "xg_margin_watch",
         "draw_scoreline_top_two",
-        "probability_margin_watch",
+        "probability_margin_narrow",
         "strength_edge_narrow",
         "low_confidence_side_pick",
         "draw_calibration_medium",
@@ -729,8 +729,8 @@
     "display_prediction": {
       "raw_result": "opponent_win",
       "final_result": "opponent_win",
-      "probability": 0.42,
-      "margin": 0.128,
+      "probability": 0.411,
+      "margin": 0.11,
       "adjustment": "raw_unvalidated_team",
       "label": "GALATASARAY A.Ş. kazanır",
       "raw_label": "GALATASARAY A.Ş. kazanır",
@@ -742,22 +742,29 @@
     "availability_missing_count": 0,
     "strength_edge": -0.175,
     "draw_calibration": {
-      "lift": 0.08,
+      "lift": 0.115,
       "risk_level": "MEDIUM",
       "reasons": [
         "orta gol bandı",
         "son formda beraberlik eğilimi",
-        "büyük maç denge etkisi"
+        "büyük maç denge etkisi",
+        "h2h_beraberlik_geçmişi"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 30,
+      "draw_rate": 0.367,
+      "last_meeting_date": "2026-05-09T17:00:00+00:00"
+    },
     "draw_risk": {
-      "score": 79,
+      "score": 85,
       "risk_level": "HIGH",
       "reasons": [
         "draw_probability_high",
         "xg_margin_watch",
         "draw_scoreline_top_two",
-        "probability_margin_watch",
+        "probability_margin_narrow",
         "strength_edge_narrow",
         "low_confidence_side_pick",
         "draw_calibration_medium",
@@ -1078,6 +1085,6 @@
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği YOHAN ALEXANDRE MADY BOLI, MOUHAMED EL BACHIR  GUEYE, SONER DİKMEN. Disiplin yönetimi gereken oyuncular: SONER DİKMEN, MOUHAMED EL BACHIR  GUEYE, DOĞUKAN SİNİK.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %74 uyum buldu; karar etiketi TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 0.87-1.29 yerine 1.11-1.29 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 0.87-1.29 bandından 1.09-1.27 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %32 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %29, beraberliği %29, rakip galibiyetini %42 olarak işaretliyor. Gol beklentisi 0.87-1.29; kart sinyali MEDIUM."
+    "MVP olasılık motoru Beşiktaş galibiyetini %29, beraberliği %30, rakip galibiyetini %41 olarak işaretliyor. Gol beklentisi 0.87-1.29; kart sinyali MEDIUM."
   ]
 }

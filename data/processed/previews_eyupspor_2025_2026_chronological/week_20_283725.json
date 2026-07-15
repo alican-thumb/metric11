@@ -677,8 +677,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.272,
-    "draw_probability": 0.268,
-    "opponent_win_probability": 0.46,
+    "draw_probability": 0.272,
+    "opponent_win_probability": 0.456,
     "expected_goals_for": 0.83,
     "expected_goals_against": 1.45,
     "top_scorelines": [
@@ -727,7 +727,7 @@
     },
     "recommended_call": {
       "result": "opponent_win",
-      "probability": 0.46,
+      "probability": 0.456,
       "scoreline": "0-1",
       "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "action_label": "Korumalı taraf tahmini",
@@ -742,8 +742,8 @@
     "display_prediction": {
       "raw_result": "opponent_win",
       "final_result": "opponent_win",
-      "probability": 0.46,
-      "margin": 0.188,
+      "probability": 0.456,
+      "margin": 0.183,
       "adjustment": "raw_unvalidated_team",
       "label": "CORENDON ALANYASPOR kazanır",
       "raw_label": "CORENDON ALANYASPOR kazanır",
@@ -755,13 +755,20 @@
     "availability_missing_count": 0,
     "strength_edge": -0.052,
     "draw_calibration": {
-      "lift": 0.08,
+      "lift": 0.115,
       "risk_level": "MEDIUM",
       "reasons": [
         "takım gücü yakın",
         "orta gol bandı",
-        "son formda beraberlik eğilimi"
+        "son formda beraberlik eğilimi",
+        "h2h_beraberlik_geçmişi"
       ]
+    },
+    "head_to_head": {
+      "available": true,
+      "matches": 6,
+      "draw_rate": 0.333,
+      "last_meeting_date": "2026-01-31T11:30:00+00:00"
     },
     "draw_risk": {
       "score": 54,

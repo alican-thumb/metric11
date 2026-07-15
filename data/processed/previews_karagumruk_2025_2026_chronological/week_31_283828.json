@@ -656,8 +656,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.232,
-    "draw_probability": 0.237,
-    "opponent_win_probability": 0.531,
+    "draw_probability": 0.244,
+    "opponent_win_probability": 0.524,
     "expected_goals_for": 0.87,
     "expected_goals_against": 1.85,
     "top_scorelines": [
@@ -706,7 +706,7 @@
     },
     "recommended_call": {
       "result": "opponent_win",
-      "probability": 0.531,
+      "probability": 0.524,
       "scoreline": "0-1",
       "action": "taraf_eğilimi",
       "action_label": "Taraf eğilimi",
@@ -715,8 +715,8 @@
     "display_prediction": {
       "raw_result": "opponent_win",
       "final_result": "opponent_win",
-      "probability": 0.531,
-      "margin": 0.294,
+      "probability": 0.524,
+      "margin": 0.28,
       "adjustment": "raw_unvalidated_team",
       "label": "BEŞİKTAŞ A.Ş. kazanır",
       "raw_label": "BEŞİKTAŞ A.Ş. kazanır",
@@ -728,11 +728,18 @@
     "availability_missing_count": 0,
     "strength_edge": -0.13,
     "draw_calibration": {
-      "lift": 0.025,
+      "lift": 0.06,
       "risk_level": "LOW",
       "reasons": [
-        "orta gol bandı"
+        "orta gol bandı",
+        "h2h_beraberlik_geçmişi"
       ]
+    },
+    "head_to_head": {
+      "available": true,
+      "matches": 12,
+      "draw_rate": 0.333,
+      "last_meeting_date": "2026-04-27T17:00:00+00:00"
     },
     "draw_risk": {
       "score": 1,
@@ -1033,6 +1040,6 @@
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği SERGIO ANTONIO DA LUZ JUNIOR, CLAUDIO MATIAS KRANEVITTER, BARTUĞ ELMAZ. Disiplin yönetimi gereken oyuncular: ANIL YİĞİT ÇINAR, ÇAĞTAY KURUKALIP.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %84 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 0.87-1.85 yerine 1.03-1.85 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 0.87-1.85 bandından 1.09-1.83 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %22 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %23, beraberliği %24, rakip galibiyetini %53 olarak işaretliyor. Gol beklentisi 0.87-1.85; kart sinyali MEDIUM."
+    "MVP olasılık motoru Beşiktaş galibiyetini %23, beraberliği %24, rakip galibiyetini %52 olarak işaretliyor. Gol beklentisi 0.87-1.85; kart sinyali MEDIUM."
   ]
 }

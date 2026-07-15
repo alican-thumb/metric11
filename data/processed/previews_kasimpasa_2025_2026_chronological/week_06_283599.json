@@ -605,8 +605,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.243,
-    "draw_probability": 0.267,
-    "opponent_win_probability": 0.49,
+    "draw_probability": 0.245,
+    "opponent_win_probability": 0.512,
     "expected_goals_for": 0.83,
     "expected_goals_against": 1.6,
     "top_scorelines": [
@@ -655,24 +655,23 @@
     },
     "recommended_call": {
       "result": "opponent_win",
-      "probability": 0.49,
+      "probability": 0.512,
       "scoreline": "0-1",
-      "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
-      "action_label": "Korumalı taraf tahmini",
+      "action": "KEEP_PICK_WITH_DRAW_WARNING",
+      "action_label": "Beraberlik uyarılı tahmin",
       "risk_notes": [
         "Büyük maç oynaklığı",
-        "draw_probability_live",
         "draw_scoreline_top_two",
         "strength_edge_narrow",
-        "low_confidence_side_pick",
+        "medium_confidence_side_pick",
         "draw_calibration_medium"
       ]
     },
     "display_prediction": {
       "raw_result": "opponent_win",
       "final_result": "opponent_win",
-      "probability": 0.49,
-      "margin": 0.223,
+      "probability": 0.512,
+      "margin": 0.267,
       "adjustment": "raw_unvalidated_team",
       "label": "FENERBAHÇE A.Ş. kazanır",
       "raw_label": "FENERBAHÇE A.Ş. kazanır",
@@ -692,18 +691,23 @@
         "büyük maç denge etkisi"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 31,
+      "draw_rate": 0.129,
+      "last_meeting_date": "2026-02-23T17:00:00+00:00"
+    },
     "draw_risk": {
-      "score": 50,
-      "risk_level": "HIGH",
+      "score": 27,
+      "risk_level": "MEDIUM",
       "reasons": [
-        "draw_probability_live",
         "draw_scoreline_top_two",
         "strength_edge_narrow",
-        "low_confidence_side_pick",
+        "medium_confidence_side_pick",
         "draw_calibration_medium"
       ],
       "protected_prediction": true,
-      "recommended_model_action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
+      "recommended_model_action": "KEEP_PICK_WITH_DRAW_WARNING",
       "note": "Ana 1X2 tahminini değiştirmeden beraberlik senaryosunu görünür yapan risk katmanıdır."
     },
     "big_match_profile": {
@@ -717,7 +721,7 @@
         "beraberlik riski canlı"
       ]
     },
-    "confidence": "LOW",
+    "confidence": "MEDIUM",
     "xg_data_available": false,
     "note": "Poisson, form, rakip savunma, hakem, eksik oyuncu ve takım gücü sinyaliyle çalışan MVP tahmin modelidir."
   },
@@ -1021,10 +1025,10 @@
     "Hakem için bu sezon önceki Beşiktaş örneği yok; hakem etkisi düşük güvenle ele alındı.",
     "Olası 11 sinyalinde son dönemde öne çıkan isimler: ANDREAS GIANNIOTIS, NICHOLAS OPOKU, ATTILA ARPAD SZALAI, ANDRI FANNAR BALDURSSON, HARIS HAJRADINOVIC, AHMED MORTADHA BEN OUANES. Kart riski tarafında ise son 8 maç penceresinde ATAKAN MÜJDE, ALİ YAVUZ KOL, RIBEIRO DIAS CARLOS MIGUEL, CLAUDIO WINCK NETO dikkat çekiyor.",
     "Gol adayı sinyalinde öne çıkan isimler: PAPE HABIB GUEYE, HARIS HAJRADINOVIC, ANDREAS GIANNIOTIS, NICHOLAS OPOKU. Bu skor son gol formu, sezon içi gol sayısı ve son dönemde ilk 11 başlama sıklığından türetildi. Test sonucunda gerçek Beşiktaş golcüleri: HARIS HAJRADINOVIC.",
-    "Skor dağılımında en olası senaryolar: 0-1 (%14), 1-1 (%12), 0-2 (%11). Model aksiyonu: Korumalı taraf tahmini; önerilen ana skor 0-1.",
+    "Skor dağılımında en olası senaryolar: 0-1 (%14), 1-1 (%12), 0-2 (%11). Model aksiyonu: Beraberlik uyarılı tahmin; önerilen ana skor 0-1.",
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği PAPE HABIB GUEYE, HARIS HAJRADINOVIC, ANDREAS GIANNIOTIS. Disiplin yönetimi gereken oyuncular: ATAKAN MÜJDE, ALİ YAVUZ KOL, RIBEIRO DIAS CARLOS MIGUEL.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %77 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 0.83-1.6 yerine 1.04-1.6 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 0.83-1.6 bandından 1.05-1.58 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %25 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %24, beraberliği %27, rakip galibiyetini %49 olarak işaretliyor. Gol beklentisi 0.83-1.6; kart sinyali HIGH."
+    "MVP olasılık motoru Beşiktaş galibiyetini %24, beraberliği %24, rakip galibiyetini %51 olarak işaretliyor. Gol beklentisi 0.83-1.6; kart sinyali HIGH."
   ]
 }

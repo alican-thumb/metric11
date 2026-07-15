@@ -659,8 +659,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.205,
-    "draw_probability": 0.249,
-    "opponent_win_probability": 0.546,
+    "draw_probability": 0.248,
+    "opponent_win_probability": 0.547,
     "expected_goals_for": 0.58,
     "expected_goals_against": 1.62,
     "top_scorelines": [
@@ -709,7 +709,7 @@
     },
     "recommended_call": {
       "result": "opponent_win",
-      "probability": 0.546,
+      "probability": 0.547,
       "scoreline": "0-1",
       "action": "taraf_eğilimi",
       "action_label": "Taraf eğilimi",
@@ -718,8 +718,8 @@
     "display_prediction": {
       "raw_result": "opponent_win",
       "final_result": "opponent_win",
-      "probability": 0.546,
-      "margin": 0.298,
+      "probability": 0.547,
+      "margin": 0.299,
       "adjustment": "raw_unvalidated_team",
       "label": "SAMSUNSPOR A.Ş. kazanır",
       "raw_label": "SAMSUNSPOR A.Ş. kazanır",
@@ -737,6 +737,12 @@
         "orta gol bandı",
         "son formda beraberlik eğilimi"
       ]
+    },
+    "head_to_head": {
+      "available": true,
+      "matches": 12,
+      "draw_rate": 0.25,
+      "last_meeting_date": "2026-04-27T14:00:00+00:00"
     },
     "draw_risk": {
       "score": 5,
@@ -798,7 +804,7 @@
   },
   "coach_lineup_audit": {
     "verdict": "KISMEN_TARTIŞMALI",
-    "actual_lineup_score": 82.49,
+    "actual_lineup_score": 82.5,
     "recommended_lineup_score": 99.86,
     "alignment_rate": 0.826,
     "actual_starters": [

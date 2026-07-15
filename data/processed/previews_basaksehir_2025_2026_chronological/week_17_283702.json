@@ -671,8 +671,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.464,
-    "draw_probability": 0.24,
-    "opponent_win_probability": 0.296,
+    "draw_probability": 0.218,
+    "opponent_win_probability": 0.318,
     "expected_goals_for": 1.92,
     "expected_goals_against": 1.53,
     "top_scorelines": [
@@ -737,7 +737,7 @@
       "raw_result": "target_win",
       "final_result": "target_win",
       "probability": 0.464,
-      "margin": 0.169,
+      "margin": 0.146,
       "adjustment": "raw_unvalidated_team",
       "label": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ kazanır",
       "raw_label": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ kazanır",
@@ -755,6 +755,12 @@
         "takım gücü yakın",
         "son formda beraberlik eğilimi"
       ]
+    },
+    "head_to_head": {
+      "available": true,
+      "matches": 16,
+      "draw_rate": 0.062,
+      "last_meeting_date": "2026-05-16T17:00:00+00:00"
     },
     "draw_risk": {
       "score": 51,
@@ -1069,6 +1075,6 @@
     "Kadro tercih önerisi: Önde baskı ve skor arama. Hücum önceliği ELDOR SHOMURODOV, BERTUĞ ÖZGÜR YILDIRIM, NUNO MIGUEL DA COSTA JOIA. Disiplin yönetimi gereken oyuncular: FESTY OSEIWE EBOSELE, ÖMER ALİ ŞAHİNER, OUSSEYNOU  BA.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %83 uyum buldu; karar etiketi TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.92-1.53 yerine 2.09-1.53 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.92-1.53 bandından 2.14-1.51 bandına taşırdı. Bu senaryoda en olası skor 2-1 ve kazanma olasılığı %52 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %46, beraberliği %24, rakip galibiyetini %30 olarak işaretliyor. Gol beklentisi 1.92-1.53; kart sinyali MEDIUM."
+    "MVP olasılık motoru Beşiktaş galibiyetini %46, beraberliği %22, rakip galibiyetini %32 olarak işaretliyor. Gol beklentisi 1.92-1.53; kart sinyali MEDIUM."
   ]
 }

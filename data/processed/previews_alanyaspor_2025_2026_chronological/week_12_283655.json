@@ -644,8 +644,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.156,
-    "draw_probability": 0.221,
-    "opponent_win_probability": 0.623,
+    "draw_probability": 0.218,
+    "opponent_win_probability": 0.626,
     "expected_goals_for": 0.54,
     "expected_goals_against": 2.05,
     "top_scorelines": [
@@ -694,7 +694,7 @@
     },
     "recommended_call": {
       "result": "opponent_win",
-      "probability": 0.623,
+      "probability": 0.626,
       "scoreline": "0-2",
       "action": "taraf_eğilimi",
       "action_label": "Taraf eğilimi",
@@ -705,8 +705,8 @@
     "display_prediction": {
       "raw_result": "opponent_win",
       "final_result": "opponent_win",
-      "probability": 0.623,
-      "margin": 0.403,
+      "probability": 0.626,
+      "margin": 0.408,
       "adjustment": "raw_unvalidated_team",
       "label": "TRABZONSPOR A.Ş. kazanır",
       "raw_label": "TRABZONSPOR A.Ş. kazanır",
@@ -725,6 +725,12 @@
         "son formda beraberlik eğilimi",
         "büyük maç denge etkisi"
       ]
+    },
+    "head_to_head": {
+      "available": true,
+      "matches": 23,
+      "draw_rate": 0.261,
+      "last_meeting_date": "2026-04-11T14:00:00+00:00"
     },
     "draw_risk": {
       "score": 15,
@@ -1043,6 +1049,6 @@
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği UCHENNA OGUNDU, İBRAHİM KAYA, YUSUF ÖZDEMİR. Disiplin yönetimi gereken oyuncular: IANIS HAGI, FIDAN ALITI.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %48 uyum buldu; karar etiketi TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 0.54-2.05 yerine 0.89-2.05 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 0.54-2.05 bandından 0.76-2.03 bandına taşırdı. Bu senaryoda en olası skor 0-2 ve kazanma olasılığı %13 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %16, beraberliği %22, rakip galibiyetini %62 olarak işaretliyor. Gol beklentisi 0.54-2.05; kart sinyali MEDIUM."
+    "MVP olasılık motoru Beşiktaş galibiyetini %16, beraberliği %22, rakip galibiyetini %63 olarak işaretliyor. Gol beklentisi 0.54-2.05; kart sinyali MEDIUM."
   ]
 }

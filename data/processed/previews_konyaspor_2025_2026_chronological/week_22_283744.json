@@ -655,8 +655,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.318,
-    "draw_probability": 0.259,
-    "opponent_win_probability": 0.423,
+    "draw_probability": 0.242,
+    "opponent_win_probability": 0.44,
     "expected_goals_for": 1.14,
     "expected_goals_against": 1.56,
     "top_scorelines": [
@@ -705,15 +705,14 @@
     },
     "recommended_call": {
       "result": "opponent_win",
-      "probability": 0.423,
+      "probability": 0.44,
       "scoreline": "1-1",
       "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "action_label": "Korumalı taraf tahmini",
       "risk_notes": [
-        "draw_probability_watch",
         "xg_margin_watch",
         "top_draw_scoreline",
-        "probability_margin_narrow",
+        "probability_margin_watch",
         "strength_edge_very_narrow",
         "low_confidence_side_pick",
         "draw_calibration_medium"
@@ -722,8 +721,8 @@
     "display_prediction": {
       "raw_result": "opponent_win",
       "final_result": "opponent_win",
-      "probability": 0.423,
-      "margin": 0.105,
+      "probability": 0.44,
+      "margin": 0.122,
       "adjustment": "raw_unvalidated_team",
       "label": "CORENDON ALANYASPOR kazanır",
       "raw_label": "CORENDON ALANYASPOR kazanır",
@@ -743,14 +742,19 @@
         "son formda beraberlik eğilimi"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 22,
+      "draw_rate": 0.136,
+      "last_meeting_date": "2026-02-14T14:00:00+00:00"
+    },
     "draw_risk": {
-      "score": 74,
+      "score": 58,
       "risk_level": "HIGH",
       "reasons": [
-        "draw_probability_watch",
         "xg_margin_watch",
         "top_draw_scoreline",
-        "probability_margin_narrow",
+        "probability_margin_watch",
         "strength_edge_very_narrow",
         "low_confidence_side_pick",
         "draw_calibration_medium"
@@ -1078,6 +1082,6 @@
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği MEHMET UMUT NAYİR, JACKSON KYANVUBU MULEKA, MUHAMMET TUNAHAN TAŞCI. Disiplin yönetimi gereken oyuncular: RIECHEDLY GUILLERMO BAZOER, DENİZ TÜRÜÇ, BERKAN İSMAİL KUTLU.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %49 uyum buldu; karar etiketi TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.14-1.56 yerine 1.49-1.56 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.14-1.56 bandından 1.36-1.54 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %34 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %32, beraberliği %26, rakip galibiyetini %42 olarak işaretliyor. Gol beklentisi 1.14-1.56; kart sinyali HIGH."
+    "MVP olasılık motoru Beşiktaş galibiyetini %32, beraberliği %24, rakip galibiyetini %44 olarak işaretliyor. Gol beklentisi 1.14-1.56; kart sinyali HIGH."
   ]
 }

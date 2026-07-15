@@ -667,8 +667,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.294,
-    "draw_probability": 0.242,
-    "opponent_win_probability": 0.464,
+    "draw_probability": 0.232,
+    "opponent_win_probability": 0.474,
     "expected_goals_for": 1.23,
     "expected_goals_against": 1.87,
     "top_scorelines": [
@@ -717,13 +717,12 @@
     },
     "recommended_call": {
       "result": "opponent_win",
-      "probability": 0.464,
+      "probability": 0.474,
       "scoreline": "1-1",
       "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "action_label": "Korumalı taraf tahmini",
       "risk_notes": [
         "top_draw_scoreline",
-        "probability_margin_watch",
         "strength_edge_very_narrow",
         "low_confidence_side_pick",
         "draw_calibration_medium"
@@ -732,8 +731,8 @@
     "display_prediction": {
       "raw_result": "opponent_win",
       "final_result": "opponent_win",
-      "probability": 0.464,
-      "margin": 0.17,
+      "probability": 0.474,
+      "margin": 0.18,
       "adjustment": "raw_unvalidated_team",
       "label": "GENÇLERBİRLİĞİ kazanır",
       "raw_label": "GENÇLERBİRLİĞİ kazanır",
@@ -752,12 +751,17 @@
         "son formda beraberlik eğilimi"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 17,
+      "draw_rate": 0.176,
+      "last_meeting_date": "2026-02-14T11:30:00+00:00"
+    },
     "draw_risk": {
-      "score": 49,
+      "score": 43,
       "risk_level": "HIGH",
       "reasons": [
         "top_draw_scoreline",
-        "probability_margin_watch",
         "strength_edge_very_narrow",
         "low_confidence_side_pick",
         "draw_calibration_medium"
@@ -1067,6 +1071,6 @@
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği QAZIM LACI, MIHAI-VALENTIN  MIHAILA, SAMET AKAYDİN. Disiplin yönetimi gereken oyuncular: MODIBO SAGNAN, ERDEM CANPOLAT, KHUSNIDDIN  ALIKULOV.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %100 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.23-1.87 yerine 1.23-1.87 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.23-1.87 bandından 1.45-1.85 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %30 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %29, beraberliği %24, rakip galibiyetini %46 olarak işaretliyor. Gol beklentisi 1.23-1.87; kart sinyali MEDIUM."
+    "MVP olasılık motoru Beşiktaş galibiyetini %29, beraberliği %23, rakip galibiyetini %47 olarak işaretliyor. Gol beklentisi 1.23-1.87; kart sinyali MEDIUM."
   ]
 }

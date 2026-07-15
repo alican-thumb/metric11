@@ -662,8 +662,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.495,
-    "draw_probability": 0.249,
-    "opponent_win_probability": 0.255,
+    "draw_probability": 0.26,
+    "opponent_win_probability": 0.244,
     "expected_goals_for": 1.73,
     "expected_goals_against": 1.16,
     "top_scorelines": [
@@ -717,6 +717,7 @@
       "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "action_label": "Korumalı taraf tahmini",
       "risk_notes": [
+        "draw_probability_watch",
         "top_draw_scoreline",
         "strength_edge_very_narrow",
         "low_confidence_side_pick"
@@ -726,7 +727,7 @@
       "raw_result": "target_win",
       "final_result": "target_win",
       "probability": 0.495,
-      "margin": 0.24,
+      "margin": 0.235,
       "adjustment": "raw_unvalidated_team",
       "label": "TRABZONSPOR A.Ş. kazanır",
       "raw_label": "TRABZONSPOR A.Ş. kazanır",
@@ -738,16 +739,24 @@
     "availability_missing_count": 0,
     "strength_edge": 0.109,
     "draw_calibration": {
-      "lift": 0.03,
+      "lift": 0.065,
       "risk_level": "LOW",
       "reasons": [
-        "son formda beraberlik eğilimi"
+        "son formda beraberlik eğilimi",
+        "h2h_beraberlik_geçmişi"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 13,
+      "draw_rate": 0.385,
+      "last_meeting_date": "2026-02-22T13:00:00+00:00"
+    },
     "draw_risk": {
-      "score": 36,
+      "score": 46,
       "risk_level": "HIGH",
       "reasons": [
+        "draw_probability_watch",
         "top_draw_scoreline",
         "strength_edge_very_narrow",
         "low_confidence_side_pick"
@@ -1046,6 +1055,6 @@
     "Kadro tercih önerisi: Önde baskı ve skor arama. Hücum önceliği ERNEST MUÇİ, EBERE PAUL ONUACHU, FELIPE AUGUSTO DA SILVA. Disiplin yönetimi gereken oyuncular: DANYLO SIKAN, MUSTAFA ESKİHELLAÇ, EBERE PAUL ONUACHU.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %89 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.73-1.16 yerine 1.87-1.16 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.73-1.16 bandından 1.95-1.14 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %56 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %50, beraberliği %25, rakip galibiyetini %26 olarak işaretliyor. Gol beklentisi 1.73-1.16; kart sinyali LOW."
+    "MVP olasılık motoru Beşiktaş galibiyetini %50, beraberliği %26, rakip galibiyetini %24 olarak işaretliyor. Gol beklentisi 1.73-1.16; kart sinyali LOW."
   ]
 }

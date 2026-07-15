@@ -654,8 +654,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.284,
-    "draw_probability": 0.262,
-    "opponent_win_probability": 0.453,
+    "draw_probability": 0.249,
+    "opponent_win_probability": 0.467,
     "expected_goals_for": 0.94,
     "expected_goals_against": 1.52,
     "top_scorelines": [
@@ -704,14 +704,12 @@
     },
     "recommended_call": {
       "result": "opponent_win",
-      "probability": 0.453,
+      "probability": 0.467,
       "scoreline": "0-1",
-      "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
-      "action_label": "Korumalı taraf tahmini",
+      "action": "KEEP_PICK_WITH_DRAW_WARNING",
+      "action_label": "Beraberlik uyarılı tahmin",
       "risk_notes": [
-        "draw_probability_watch",
         "draw_scoreline_top_two",
-        "probability_margin_watch",
         "strength_edge_very_narrow",
         "low_confidence_side_pick"
       ]
@@ -719,8 +717,8 @@
     "display_prediction": {
       "raw_result": "opponent_win",
       "final_result": "opponent_win",
-      "probability": 0.453,
-      "margin": 0.169,
+      "probability": 0.467,
+      "margin": 0.182,
       "adjustment": "raw_unvalidated_team",
       "label": "GENÇLERBİRLİĞİ kazanır",
       "raw_label": "GENÇLERBİRLİĞİ kazanır",
@@ -739,18 +737,22 @@
         "orta gol bandı"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 24,
+      "draw_rate": 0.167,
+      "last_meeting_date": "2026-03-01T13:00:00+00:00"
+    },
     "draw_risk": {
-      "score": 45,
-      "risk_level": "HIGH",
+      "score": 29,
+      "risk_level": "MEDIUM",
       "reasons": [
-        "draw_probability_watch",
         "draw_scoreline_top_two",
-        "probability_margin_watch",
         "strength_edge_very_narrow",
         "low_confidence_side_pick"
       ],
       "protected_prediction": true,
-      "recommended_model_action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
+      "recommended_model_action": "KEEP_PICK_WITH_DRAW_WARNING",
       "note": "Ana 1X2 tahminini değiştirmeden beraberlik senaryosunu görünür yapan risk katmanıdır."
     },
     "big_match_profile": {
@@ -1062,10 +1064,10 @@
     "Hakem profili kart tarafında anlamlı bir sinyal veriyor: ÜMİT ÖZTÜRK bu sezon önceki 4 Beşiktaş maçında toplam maç başı 5.25 kart, Beşiktaş'a maç başı 2.75 kart ortalamasıyla öne çıkıyor.",
     "Olası 11 sinyalinde son dönemde öne çıkan isimler: STEFANO WILFRED DENSWIL, MIGUEL FILIPE NUNES CARDOSO, LASZLO BENES, BİLAL BAYAZIT, GERMAN ONUGKHA, YOUSSEF AIT BENASSER. Kart riski tarafında ise son 8 maç penceresinde GÖRKEM  SAĞLAM, FURKAN SOYALP, BİLAL BAYAZIT, STEFANO WILFRED DENSWIL dikkat çekiyor.",
     "Gol adayı sinyalinde öne çıkan isimler: TALHA SARIARSLAN, GERMAN ONUGKHA, LASZLO BENES, RAMAZAN CİVELEK. Bu skor son gol formu, sezon içi gol sayısı ve son dönemde ilk 11 başlama sıklığından türetildi.",
-    "Skor dağılımında en olası senaryolar: 0-1 (%13), 1-1 (%12), 0-2 (%10). Model aksiyonu: Korumalı taraf tahmini; önerilen ana skor 0-1.",
+    "Skor dağılımında en olası senaryolar: 0-1 (%13), 1-1 (%12), 0-2 (%10). Model aksiyonu: Beraberlik uyarılı tahmin; önerilen ana skor 0-1.",
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği TALHA SARIARSLAN, GERMAN ONUGKHA, LASZLO BENES. Disiplin yönetimi gereken oyuncular: GÖRKEM  SAĞLAM, FURKAN SOYALP.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %66 uyum buldu; karar etiketi TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 0.94-1.52 yerine 1.28-1.52 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 0.94-1.52 bandından 1.16-1.5 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %29 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %28, beraberliği %26, rakip galibiyetini %45 olarak işaretliyor. Gol beklentisi 0.94-1.52; kart sinyali HIGH."
+    "MVP olasılık motoru Beşiktaş galibiyetini %28, beraberliği %25, rakip galibiyetini %47 olarak işaretliyor. Gol beklentisi 0.94-1.52; kart sinyali HIGH."
   ]
 }

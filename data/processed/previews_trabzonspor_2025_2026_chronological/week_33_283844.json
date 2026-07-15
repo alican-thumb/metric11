@@ -672,8 +672,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.343,
-    "draw_probability": 0.258,
-    "opponent_win_probability": 0.4,
+    "draw_probability": 0.27,
+    "opponent_win_probability": 0.388,
     "expected_goals_for": 1.27,
     "expected_goals_against": 1.57,
     "top_scorelines": [
@@ -722,13 +722,13 @@
     },
     "recommended_call": {
       "result": "opponent_win",
-      "probability": 0.4,
+      "probability": 0.388,
       "scoreline": "1-1",
       "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "action_label": "Korumalı taraf tahmini",
       "risk_notes": [
         "Taraflar arası fark dar",
-        "draw_probability_watch",
+        "draw_probability_live",
         "xg_margin_watch",
         "top_draw_scoreline",
         "probability_margin_very_narrow",
@@ -740,8 +740,8 @@
     "display_prediction": {
       "raw_result": "opponent_win",
       "final_result": "opponent_win",
-      "probability": 0.4,
-      "margin": 0.057,
+      "probability": 0.388,
+      "margin": 0.045,
       "adjustment": "raw_unvalidated_team",
       "label": "BEŞİKTAŞ A.Ş. kazanır",
       "raw_label": "BEŞİKTAŞ A.Ş. kazanır",
@@ -753,20 +753,27 @@
     "availability_missing_count": 0,
     "strength_edge": 0.019,
     "draw_calibration": {
-      "lift": 0.155,
+      "lift": 0.18,
       "risk_level": "HIGH",
       "reasons": [
         "xG farkı dar",
         "takım gücü dengede",
         "orta gol bandı",
-        "son formda beraberlik eğilimi"
+        "son formda beraberlik eğilimi",
+        "h2h_beraberlik_geçmişi"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 33,
+      "draw_rate": 0.364,
+      "last_meeting_date": "2026-05-09T17:00:00+00:00"
+    },
     "draw_risk": {
-      "score": 87,
+      "score": 95,
       "risk_level": "HIGH",
       "reasons": [
-        "draw_probability_watch",
+        "draw_probability_live",
         "xg_margin_watch",
         "top_draw_scoreline",
         "probability_margin_very_narrow",
@@ -1081,6 +1088,6 @@
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği EBERE PAUL ONUACHU, FELIPE AUGUSTO DA SILVA, ERNEST MUÇİ. Disiplin yönetimi gereken oyuncular: BENJAMIN BOUCHOUARI.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %56 uyum buldu; karar etiketi TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.27-1.57 yerine 1.62-1.57 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.27-1.57 bandından 1.49-1.55 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %37 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %34, beraberliği %26, rakip galibiyetini %40 olarak işaretliyor. Gol beklentisi 1.27-1.57; kart sinyali LOW."
+    "MVP olasılık motoru Beşiktaş galibiyetini %34, beraberliği %27, rakip galibiyetini %39 olarak işaretliyor. Gol beklentisi 1.27-1.57; kart sinyali LOW."
   ]
 }

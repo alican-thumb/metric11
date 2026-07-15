@@ -611,8 +611,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.406,
-    "draw_probability": 0.292,
-    "opponent_win_probability": 0.303,
+    "draw_probability": 0.28,
+    "opponent_win_probability": 0.314,
     "expected_goals_for": 1.12,
     "expected_goals_against": 0.95,
     "top_scorelines": [
@@ -680,7 +680,7 @@
       "raw_result": "target_win",
       "final_result": "target_win",
       "probability": 0.406,
-      "margin": 0.103,
+      "margin": 0.092,
       "adjustment": "raw_unvalidated_team",
       "label": "KASIMPAŞA A.Ş. kazanır",
       "raw_label": "KASIMPAŞA A.Ş. kazanır",
@@ -699,6 +699,12 @@
         "takım gücü yakın",
         "son formda beraberlik eğilimi"
       ]
+    },
+    "head_to_head": {
+      "available": true,
+      "matches": 17,
+      "draw_rate": 0.176,
+      "last_meeting_date": "2026-04-12T14:00:00+00:00"
     },
     "draw_risk": {
       "score": 94,
@@ -1017,6 +1023,6 @@
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği CLAUDIO WINCK NETO, PAPE HABIB GUEYE, KUBİLAY KANATSIZKUŞ. Disiplin yönetimi gereken oyuncular: RIBEIRO DIAS CARLOS MIGUEL, JHON JAIRO, ALİ YAVUZ KOL.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %90 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.12-0.95 yerine 1.22-0.95 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.12-0.95 bandından 1.34-0.93 bandına taşırdı. Bu senaryoda en olası skor 1-0 ve kazanma olasılığı %46 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %41, beraberliği %29, rakip galibiyetini %30 olarak işaretliyor. Gol beklentisi 1.12-0.95; kart sinyali MEDIUM."
+    "MVP olasılık motoru Beşiktaş galibiyetini %41, beraberliği %28, rakip galibiyetini %31 olarak işaretliyor. Gol beklentisi 1.12-0.95; kart sinyali MEDIUM."
   ]
 }

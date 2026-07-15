@@ -681,8 +681,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.654,
-    "draw_probability": 0.192,
-    "opponent_win_probability": 0.154,
+    "draw_probability": 0.182,
+    "opponent_win_probability": 0.164,
     "expected_goals_for": 2.73,
     "expected_goals_against": 1.13,
     "top_scorelines": [
@@ -741,7 +741,7 @@
       "raw_result": "target_win",
       "final_result": "target_win",
       "probability": 0.654,
-      "margin": 0.461,
+      "margin": 0.472,
       "adjustment": "raw_unvalidated_team",
       "label": "GALATASARAY A.Ş. kazanır",
       "raw_label": "GALATASARAY A.Ş. kazanır",
@@ -756,6 +756,12 @@
       "lift": 0.0,
       "risk_level": "NONE",
       "reasons": []
+    },
+    "head_to_head": {
+      "available": true,
+      "matches": 14,
+      "draw_rate": 0.143,
+      "last_meeting_date": "2026-01-17T17:00:00+00:00"
     },
     "draw_risk": {
       "score": 0,
@@ -1057,6 +1063,6 @@
     "Kadro tercih önerisi: Önde baskı ve skor arama. Hücum önceliği MAURO EMANUEL ICARDI, VICTOR JAMES OSIMHEN, LEROY AZIZ SANE. Disiplin yönetimi gereken oyuncular: KAZIMCAN KARATAŞ, VICTOR JAMES OSIMHEN.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %85 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 2.73-1.13 yerine 2.89-1.13 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 2.73-1.13 bandından 2.95-1.11 bandına taşırdı. Bu senaryoda en olası skor 2-1 ve kazanma olasılığı %74 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %65, beraberliği %19, rakip galibiyetini %15 olarak işaretliyor. Gol beklentisi 2.73-1.13; kart sinyali MEDIUM."
+    "MVP olasılık motoru Beşiktaş galibiyetini %65, beraberliği %18, rakip galibiyetini %16 olarak işaretliyor. Gol beklentisi 2.73-1.13; kart sinyali MEDIUM."
   ]
 }

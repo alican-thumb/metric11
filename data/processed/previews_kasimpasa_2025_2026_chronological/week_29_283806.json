@@ -677,8 +677,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.306,
-    "draw_probability": 0.273,
-    "opponent_win_probability": 0.422,
+    "draw_probability": 0.262,
+    "opponent_win_probability": 0.432,
     "expected_goals_for": 0.95,
     "expected_goals_against": 1.38,
     "top_scorelines": [
@@ -727,15 +727,15 @@
     },
     "recommended_call": {
       "result": "opponent_win",
-      "probability": 0.422,
+      "probability": 0.432,
       "scoreline": "0-1",
       "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "action_label": "Korumalı taraf tahmini",
       "risk_notes": [
-        "draw_probability_live",
+        "draw_probability_watch",
         "xg_margin_watch",
         "draw_scoreline_top_two",
-        "probability_margin_narrow",
+        "probability_margin_watch",
         "strength_edge_very_narrow",
         "low_confidence_side_pick",
         "draw_calibration_medium"
@@ -744,8 +744,8 @@
     "display_prediction": {
       "raw_result": "opponent_win",
       "final_result": "opponent_win",
-      "probability": 0.422,
-      "margin": 0.116,
+      "probability": 0.432,
+      "margin": 0.127,
       "adjustment": "raw_unvalidated_team",
       "label": "GÖZTEPE A.Ş. kazanır",
       "raw_label": "GÖZTEPE A.Ş. kazanır",
@@ -765,14 +765,20 @@
         "son formda beraberlik eğilimi"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 17,
+      "draw_rate": 0.176,
+      "last_meeting_date": "2026-04-12T14:00:00+00:00"
+    },
     "draw_risk": {
-      "score": 75,
+      "score": 61,
       "risk_level": "HIGH",
       "reasons": [
-        "draw_probability_live",
+        "draw_probability_watch",
         "xg_margin_watch",
         "draw_scoreline_top_two",
-        "probability_margin_narrow",
+        "probability_margin_watch",
         "strength_edge_very_narrow",
         "low_confidence_side_pick",
         "draw_calibration_medium"
@@ -1078,6 +1084,6 @@
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği ADRIAN DAWID BENEDYCZAK, JİM EMİLLEN NGOWET ALLEVINAH, ANDREAS GIANNIOTIS. Disiplin yönetimi gereken oyuncular: RIBEIRO DIAS CARLOS MIGUEL, PAPE HABIB GUEYE, CENK TOSUN.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %88 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 0.95-1.38 yerine 1.08-1.38 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 0.95-1.38 bandından 1.17-1.36 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %32 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %31, beraberliği %27, rakip galibiyetini %42 olarak işaretliyor. Gol beklentisi 0.95-1.38; kart sinyali LOW."
+    "MVP olasılık motoru Beşiktaş galibiyetini %31, beraberliği %26, rakip galibiyetini %43 olarak işaretliyor. Gol beklentisi 0.95-1.38; kart sinyali LOW."
   ]
 }

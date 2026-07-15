@@ -677,8 +677,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.199,
-    "draw_probability": 0.224,
-    "opponent_win_probability": 0.577,
+    "draw_probability": 0.235,
+    "opponent_win_probability": 0.566,
     "expected_goals_for": 0.99,
     "expected_goals_against": 2.28,
     "top_scorelines": [
@@ -727,7 +727,7 @@
     },
     "recommended_call": {
       "result": "opponent_win",
-      "probability": 0.577,
+      "probability": 0.566,
       "scoreline": "0-2",
       "action": "taraf_eğilimi",
       "action_label": "Taraf eğilimi",
@@ -738,8 +738,8 @@
     "display_prediction": {
       "raw_result": "opponent_win",
       "final_result": "opponent_win",
-      "probability": 0.577,
-      "margin": 0.353,
+      "probability": 0.566,
+      "margin": 0.331,
       "adjustment": "raw_unvalidated_team",
       "label": "GALATASARAY A.Ş. kazanır",
       "raw_label": "GALATASARAY A.Ş. kazanır",
@@ -751,11 +751,18 @@
     "availability_missing_count": 0,
     "strength_edge": -0.179,
     "draw_calibration": {
-      "lift": 0.025,
+      "lift": 0.06,
       "risk_level": "LOW",
       "reasons": [
-        "büyük maç denge etkisi"
+        "büyük maç denge etkisi",
+        "h2h_beraberlik_geçmişi"
       ]
+    },
+    "head_to_head": {
+      "available": true,
+      "matches": 30,
+      "draw_rate": 0.367,
+      "last_meeting_date": "2026-05-09T17:00:00+00:00"
     },
     "draw_risk": {
       "score": 1,
@@ -1094,6 +1101,6 @@
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği ALEXANDER GERARD  VAN DE STREEK, SAMUEL LEO BEAT  BALLET, NIKOLA STORM. Disiplin yönetimi gereken oyuncular: BAHADIR ÖZTÜRK, ABDULLAH YİĞİTER, SAMUEL LEO BEAT  BALLET.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %34 uyum buldu; karar etiketi TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 0.99-2.28 yerine 1.34-2.28 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 0.99-2.28 bandından 1.21-2.26 bandına taşırdı. Bu senaryoda en olası skor 1-2 ve kazanma olasılığı %20 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %20, beraberliği %22, rakip galibiyetini %58 olarak işaretliyor. Gol beklentisi 0.99-2.28; kart sinyali MEDIUM."
+    "MVP olasılık motoru Beşiktaş galibiyetini %20, beraberliği %24, rakip galibiyetini %57 olarak işaretliyor. Gol beklentisi 0.99-2.28; kart sinyali MEDIUM."
   ]
 }

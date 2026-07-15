@@ -644,8 +644,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.401,
-    "draw_probability": 0.259,
-    "opponent_win_probability": 0.34,
+    "draw_probability": 0.276,
+    "opponent_win_probability": 0.323,
     "expected_goals_for": 1.48,
     "expected_goals_against": 1.44,
     "top_scorelines": [
@@ -700,7 +700,7 @@
       "action_label": "Korumalı taraf tahmini",
       "risk_notes": [
         "Taraflar arası fark dar",
-        "draw_probability_watch",
+        "draw_probability_live",
         "xg_margin_very_narrow",
         "top_draw_scoreline",
         "probability_margin_narrow",
@@ -713,7 +713,7 @@
       "raw_result": "target_win",
       "final_result": "target_win",
       "probability": 0.401,
-      "margin": 0.061,
+      "margin": 0.078,
       "adjustment": "raw_unvalidated_team",
       "label": "SAMSUNSPOR A.Ş. kazanır",
       "raw_label": "SAMSUNSPOR A.Ş. kazanır",
@@ -725,19 +725,26 @@
     "availability_missing_count": 0,
     "strength_edge": 0.028,
     "draw_calibration": {
-      "lift": 0.165,
+      "lift": 0.18,
       "risk_level": "HIGH",
       "reasons": [
         "xG farkı çok dar",
         "takım gücü dengede",
-        "son formda beraberlik eğilimi"
+        "son formda beraberlik eğilimi",
+        "h2h_yüksek_beraberlik_geçmişi"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 8,
+      "draw_rate": 0.5,
+      "last_meeting_date": "2026-04-19T14:00:00+00:00"
+    },
     "draw_risk": {
-      "score": 94,
+      "score": 100,
       "risk_level": "HIGH",
       "reasons": [
-        "draw_probability_watch",
+        "draw_probability_live",
         "xg_margin_very_narrow",
         "top_draw_scoreline",
         "probability_margin_narrow",
@@ -1047,6 +1054,6 @@
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği CARL JOHAN HOLSE JUSTESEN, PAPE CHERIF NDIAYE, LUBOMİR SATKA. Disiplin yönetimi gereken oyuncular: YUNUS EMRE ÇİFT, PAPE CHERIF NDIAYE, TANGUY BEMIN  COULIBALY.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %85 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.48-1.44 yerine 1.66-1.44 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.48-1.44 bandından 1.7-1.42 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %44 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %40, beraberliği %26, rakip galibiyetini %34 olarak işaretliyor. Gol beklentisi 1.48-1.44; kart sinyali MEDIUM."
+    "MVP olasılık motoru Beşiktaş galibiyetini %40, beraberliği %28, rakip galibiyetini %32 olarak işaretliyor. Gol beklentisi 1.48-1.44; kart sinyali MEDIUM."
   ]
 }

@@ -627,8 +627,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.385,
-    "draw_probability": 0.296,
-    "opponent_win_probability": 0.319,
+    "draw_probability": 0.31,
+    "opponent_win_probability": 0.306,
     "expected_goals_for": 1.04,
     "expected_goals_against": 0.97,
     "top_scorelines": [
@@ -690,14 +690,14 @@
         "probability_margin_narrow",
         "strength_edge_very_narrow",
         "low_confidence_side_pick",
-        "draw_calibration_medium"
+        "draw_calibration_high"
       ]
     },
     "display_prediction": {
       "raw_result": "target_win",
       "final_result": "target_win",
       "probability": 0.385,
-      "margin": 0.066,
+      "margin": 0.075,
       "adjustment": "raw_unvalidated_team",
       "label": "KOCAELİSPOR kazanır",
       "raw_label": "KOCAELİSPOR kazanır",
@@ -709,14 +709,21 @@
     "availability_missing_count": 0,
     "strength_edge": -0.085,
     "draw_calibration": {
-      "lift": 0.09,
-      "risk_level": "MEDIUM",
+      "lift": 0.15,
+      "risk_level": "HIGH",
       "reasons": [
-        "xG farkı çok dar"
+        "xG farkı çok dar",
+        "h2h_yüksek_beraberlik_geçmişi"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 4,
+      "draw_rate": 0.5,
+      "last_meeting_date": "2026-04-18T14:00:00+00:00"
+    },
     "draw_risk": {
-      "score": 96,
+      "score": 100,
       "risk_level": "HIGH",
       "reasons": [
         "draw_probability_high",
@@ -725,7 +732,7 @@
         "probability_margin_narrow",
         "strength_edge_very_narrow",
         "low_confidence_side_pick",
-        "draw_calibration_medium"
+        "draw_calibration_high"
       ],
       "protected_prediction": true,
       "recommended_model_action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
@@ -1046,6 +1053,6 @@
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği TAYFUR BİNGÖL, BRUNO PETKOVIC, HABIB ALI KEITA. Disiplin yönetimi gereken oyuncular: MUHARREM CİNAN, SERDAR DURSUN, AHMET OĞUZ.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %79 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.04-0.97 yerine 1.26-0.97 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.04-0.97 bandından 1.26-0.95 bandına taşırdı. Bu senaryoda en olası skor 1-0 ve kazanma olasılığı %44 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %38, beraberliği %30, rakip galibiyetini %32 olarak işaretliyor. Gol beklentisi 1.04-0.97; kart sinyali MEDIUM."
+    "MVP olasılık motoru Beşiktaş galibiyetini %38, beraberliği %31, rakip galibiyetini %31 olarak işaretliyor. Gol beklentisi 1.04-0.97; kart sinyali MEDIUM."
   ]
 }

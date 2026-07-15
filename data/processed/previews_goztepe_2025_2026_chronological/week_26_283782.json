@@ -560,6 +560,23 @@
         "actual_scorer": false
       },
       {
+        "player_id": "2820847",
+        "name": "ISHOLA JUNIOR  OLAITAN",
+        "goal_threat_score": 8.25,
+        "candidate_type": "primary+impact_sub",
+        "recent_starts": 3,
+        "season_goals_before_match": 2,
+        "recent_goals": 1,
+        "big_match_goals_before_match": 0,
+        "opponent_defense_multiplier": 1.22,
+        "actual_scorer": false,
+        "header_goals_before_match": 0,
+        "penalty_goals_before_match": 0,
+        "recent_bench": 0,
+        "cards_before_match": 1,
+        "recent_cards": 0
+      },
+      {
         "player_id": "2878029",
         "name": "ALEXIS ANTUNES GOMEZ",
         "goal_threat_score": 6.62,
@@ -604,28 +621,6 @@
         "recent_bench": 0,
         "cards_before_match": 7,
         "recent_cards": 3
-      },
-      {
-        "player_id": "2820847",
-        "name": "ISHOLA JUNIOR  OLAITAN",
-        "goal_threat_score": 5.61,
-        "candidate_type": "primary+impact_sub",
-        "recent_starts": 3,
-        "season_goals_before_match": 2,
-        "recent_goals": 1,
-        "big_match_goals_before_match": 0,
-        "opponent_defense_multiplier": 1.22,
-        "actual_scorer": false,
-        "header_goals_before_match": 0,
-        "penalty_goals_before_match": 0,
-        "recent_bench": 0,
-        "cards_before_match": 1,
-        "recent_cards": 0,
-        "quality_adjustment": {
-          "multiplier": 0.68,
-          "reason": "Top 5 sıralama etkisini düşür veya aday tipini yeniden kontrol et.",
-          "source": "goal_candidate_segment_backtest"
-        }
       },
       {
         "player_id": "1618261",
@@ -676,8 +671,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.336,
-    "draw_probability": 0.296,
-    "opponent_win_probability": 0.368,
+    "draw_probability": 0.318,
+    "opponent_win_probability": 0.347,
     "expected_goals_for": 0.88,
     "expected_goals_against": 1.09,
     "top_scorelines": [
@@ -726,7 +721,7 @@
     },
     "recommended_call": {
       "result": "opponent_win",
-      "probability": 0.368,
+      "probability": 0.347,
       "scoreline": "0-1",
       "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "action_label": "Korumalı taraf tahmini",
@@ -745,8 +740,8 @@
     "display_prediction": {
       "raw_result": "opponent_win",
       "final_result": "opponent_win",
-      "probability": 0.368,
-      "margin": 0.033,
+      "probability": 0.347,
+      "margin": 0.011,
       "adjustment": "raw_unvalidated_team",
       "label": "CORENDON ALANYASPOR kazanır",
       "raw_label": "CORENDON ALANYASPOR kazanır",
@@ -758,13 +753,20 @@
     "availability_missing_count": 0,
     "strength_edge": 0.062,
     "draw_calibration": {
-      "lift": 0.145,
+      "lift": 0.18,
       "risk_level": "HIGH",
       "reasons": [
         "xG farkı çok dar",
         "takım gücü yakın",
-        "son formda beraberlik eğilimi"
+        "son formda beraberlik eğilimi",
+        "h2h_yüksek_beraberlik_geçmişi"
       ]
+    },
+    "head_to_head": {
+      "available": true,
+      "matches": 17,
+      "draw_rate": 0.471,
+      "last_meeting_date": "2026-03-14T17:00:00+00:00"
     },
     "draw_risk": {
       "score": 100,
@@ -1076,6 +1078,6 @@
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği JANDERSON  DE CARVALHO COSTA, JUAN SANTOS DA SILVA, EFKAN BEKİROĞLU. Disiplin yönetimi gereken oyuncular: JEFERSON MARINHO DOS SANTOS, MALCOM NARCISSE BOKELE MPUTU, EFKAN BEKİROĞLU.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %67 uyum buldu; karar etiketi TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 0.88-1.09 yerine 1.2-1.09 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 0.88-1.09 bandından 1.1-1.07 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %36 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %34, beraberliği %30, rakip galibiyetini %37 olarak işaretliyor. Gol beklentisi 0.88-1.09; kart sinyali HIGH."
+    "MVP olasılık motoru Beşiktaş galibiyetini %34, beraberliği %32, rakip galibiyetini %35 olarak işaretliyor. Gol beklentisi 0.88-1.09; kart sinyali HIGH."
   ]
 }

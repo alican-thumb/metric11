@@ -663,8 +663,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.191,
-    "draw_probability": 0.29,
-    "opponent_win_probability": 0.519,
+    "draw_probability": 0.274,
+    "opponent_win_probability": 0.535,
     "expected_goals_for": 0.33,
     "expected_goals_against": 1.22,
     "top_scorelines": [
@@ -713,23 +713,23 @@
     },
     "recommended_call": {
       "result": "opponent_win",
-      "probability": 0.519,
+      "probability": 0.535,
       "scoreline": "0-1",
-      "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
-      "action_label": "Korumalı taraf tahmini",
+      "action": "KEEP_PICK_WITH_DRAW_WARNING",
+      "action_label": "Beraberlik uyarılı tahmin",
       "risk_notes": [
-        "Beraberlik güçlü alternatif",
-        "draw_probability_high",
+        "draw_probability_live",
         "draw_scoreline_top_two",
         "strength_edge_very_narrow",
-        "medium_confidence_side_pick"
+        "medium_confidence_side_pick",
+        "strong_side_probability_penalty"
       ]
     },
     "display_prediction": {
       "raw_result": "opponent_win",
       "final_result": "opponent_win",
-      "probability": 0.519,
-      "margin": 0.23,
+      "probability": 0.535,
+      "margin": 0.261,
       "adjustment": "raw_unvalidated_team",
       "label": "KOCAELİSPOR kazanır",
       "raw_label": "KOCAELİSPOR kazanır",
@@ -747,17 +747,24 @@
         "son formda beraberlik eğilimi"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 4,
+      "draw_rate": 0.0,
+      "last_meeting_date": "2026-05-17T17:00:00+00:00"
+    },
     "draw_risk": {
-      "score": 48,
-      "risk_level": "HIGH",
+      "score": 32,
+      "risk_level": "MEDIUM",
       "reasons": [
-        "draw_probability_high",
+        "draw_probability_live",
         "draw_scoreline_top_two",
         "strength_edge_very_narrow",
-        "medium_confidence_side_pick"
+        "medium_confidence_side_pick",
+        "strong_side_probability_penalty"
       ],
       "protected_prediction": true,
-      "recommended_model_action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
+      "recommended_model_action": "KEEP_PICK_WITH_DRAW_WARNING",
       "note": "Ana 1X2 tahminini değiştirmeden beraberlik senaryosunu görünür yapan risk katmanıdır."
     },
     "big_match_profile": {
@@ -1060,10 +1067,10 @@
     "Hakem için bu sezon önceki Beşiktaş örneği yok; hakem etkisi düşük güvenle ele alındı.",
     "Olası 11 sinyalinde son dönemde öne çıkan isimler: BÜNYAMİN BALCI, KENNETH IMMANUEL PAAL, ABDULLAH YİĞİTER, JESPER ISMAILA  CEESAY, ABDÜLKADİR ÖMÜR, YOHAN ALEXANDRE MADY BOLI. Kart riski tarafında ise son 8 maç penceresinde SONER DİKMEN, MOUHAMED EL BACHIR  GUEYE, DOĞUKAN SİNİK, GEORGII DZHIKIIA dikkat çekiyor.",
     "Gol adayı sinyalinde öne çıkan isimler: YOHAN ALEXANDRE MADY BOLI, MOUHAMED EL BACHIR  GUEYE, ALEXANDER GERARD  VAN DE STREEK, VEYSEL SARI. Bu skor son gol formu, sezon içi gol sayısı ve son dönemde ilk 11 başlama sıklığından türetildi. Test sonucunda gerçek Beşiktaş golcüleri: LAUTARO DANIEL GIANNETTI.",
-    "Skor dağılımında en olası senaryolar: 0-1 (%26), 0-0 (%21), 0-2 (%16). Model aksiyonu: Korumalı taraf tahmini; önerilen ana skor 0-1.",
+    "Skor dağılımında en olası senaryolar: 0-1 (%26), 0-0 (%21), 0-2 (%16). Model aksiyonu: Beraberlik uyarılı tahmin; önerilen ana skor 0-1.",
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği YOHAN ALEXANDRE MADY BOLI, MOUHAMED EL BACHIR  GUEYE, ALEXANDER GERARD  VAN DE STREEK. Disiplin yönetimi gereken oyuncular: SONER DİKMEN, MOUHAMED EL BACHIR  GUEYE, DOĞUKAN SİNİK.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %81 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 0.33-1.22 yerine 0.5-1.22 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 0.33-1.22 bandından 0.55-1.2 bandına taşırdı. Bu senaryoda en olası skor 0-1 ve kazanma olasılığı %17 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %19, beraberliği %29, rakip galibiyetini %52 olarak işaretliyor. Gol beklentisi 0.33-1.22; kart sinyali LOW."
+    "MVP olasılık motoru Beşiktaş galibiyetini %19, beraberliği %27, rakip galibiyetini %54 olarak işaretliyor. Gol beklentisi 0.33-1.22; kart sinyali LOW."
   ]
 }

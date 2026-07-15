@@ -674,8 +674,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.47,
-    "draw_probability": 0.269,
-    "opponent_win_probability": 0.261,
+    "draw_probability": 0.258,
+    "opponent_win_probability": 0.271,
     "expected_goals_for": 1.43,
     "expected_goals_against": 0.97,
     "top_scorelines": [
@@ -729,7 +729,7 @@
       "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "action_label": "Korumalı taraf tahmini",
       "risk_notes": [
-        "draw_probability_live",
+        "draw_probability_watch",
         "xg_margin_watch",
         "draw_scoreline_top_two",
         "strength_edge_very_narrow",
@@ -741,7 +741,7 @@
       "raw_result": "target_win",
       "final_result": "target_win",
       "probability": 0.47,
-      "margin": 0.202,
+      "margin": 0.199,
       "adjustment": "raw_unvalidated_team",
       "label": "GÖZTEPE A.Ş. kazanır",
       "raw_label": "GÖZTEPE A.Ş. kazanır",
@@ -761,11 +761,17 @@
         "son formda beraberlik eğilimi"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 17,
+      "draw_rate": 0.176,
+      "last_meeting_date": "2026-04-12T14:00:00+00:00"
+    },
     "draw_risk": {
-      "score": 63,
+      "score": 55,
       "risk_level": "HIGH",
       "reasons": [
-        "draw_probability_live",
+        "draw_probability_watch",
         "xg_margin_watch",
         "draw_scoreline_top_two",
         "strength_edge_very_narrow",
@@ -1059,6 +1065,6 @@
     "Kadro tercih önerisi: Önde baskı ve skor arama. Hücum önceliği JUAN SANTOS DA SILVA, JANDERSON  DE CARVALHO COSTA, NOVATUS DISMAS  MIROSHI. Disiplin yönetimi gereken oyuncular: JEFERSON MARINHO DOS SANTOS, MALCOM NARCISSE BOKELE MPUTU.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %107 uyum buldu; karar etiketi UYUMLU. Alternatif model 11'i kullanılsaydı xG 1.43-0.97 yerine 1.43-0.97 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.43-0.97 bandından 1.65-0.95 bandına taşırdı. Bu senaryoda en olası skor 1-0 ve kazanma olasılığı %54 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %47, beraberliği %27, rakip galibiyetini %26 olarak işaretliyor. Gol beklentisi 1.43-0.97; kart sinyali MEDIUM."
+    "MVP olasılık motoru Beşiktaş galibiyetini %47, beraberliği %26, rakip galibiyetini %27 olarak işaretliyor. Gol beklentisi 1.43-0.97; kart sinyali MEDIUM."
   ]
 }

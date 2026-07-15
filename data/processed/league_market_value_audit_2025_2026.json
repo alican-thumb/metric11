@@ -18,13 +18,13 @@
       "MISIRLI.COM.TR FATİH KARAGÜMRÜK",
       "ZECORNER KAYSERİSPOR"
     ],
-    "model_accuracy": 0.461,
+    "model_accuracy": 0.473,
     "reporting_baseline_accuracy": 0.497,
     "reporting_baseline_draw_recall": 0.089,
-    "model_market_disagreements": 72,
-    "model_accuracy_on_disagreements": 0.333,
-    "market_accuracy_on_disagreements": 0.444,
-    "high_market_edge_model_misses": 46,
+    "model_market_disagreements": 76,
+    "model_accuracy_on_disagreements": 0.355,
+    "market_accuracy_on_disagreements": 0.421,
+    "high_market_edge_model_misses": 44,
     "diagnostic_best_band": 0.3,
     "diagnostic_best_accuracy": 0.52
   },
@@ -99,36 +99,36 @@
       "team": "BEŞİKTAŞ A.Ş.",
       "market_value_eur": 176000000,
       "matches": 24,
-      "model_correct": 11,
+      "model_correct": 10,
       "market_correct": 13,
-      "model_accuracy": 0.458,
+      "model_accuracy": 0.417,
       "market_accuracy": 0.542
     },
     {
       "team": "CORENDON ALANYASPOR",
       "market_value_eur": 33800000,
       "matches": 22,
-      "model_correct": 8,
+      "model_correct": 10,
       "market_correct": 9,
-      "model_accuracy": 0.364,
+      "model_accuracy": 0.455,
       "market_accuracy": 0.409
     },
     {
       "team": "FENERBAHÇE A.Ş.",
       "market_value_eur": 240800000,
       "matches": 23,
-      "model_correct": 15,
+      "model_correct": 12,
       "market_correct": 15,
-      "model_accuracy": 0.652,
+      "model_accuracy": 0.522,
       "market_accuracy": 0.652
     },
     {
       "team": "GALATASARAY A.Ş.",
       "market_value_eur": 336650000,
       "matches": 24,
-      "model_correct": 13,
+      "model_correct": 12,
       "market_correct": 14,
-      "model_accuracy": 0.542,
+      "model_accuracy": 0.5,
       "market_accuracy": 0.583
     },
     {
@@ -144,9 +144,9 @@
       "team": "GENÇLERBİRLİĞİ",
       "market_value_eur": 26250000,
       "matches": 24,
-      "model_correct": 8,
+      "model_correct": 12,
       "market_correct": 11,
-      "model_accuracy": 0.333,
+      "model_accuracy": 0.5,
       "market_accuracy": 0.458
     },
     {
@@ -162,18 +162,18 @@
       "team": "KASIMPAŞA A.Ş.",
       "market_value_eur": 30800000,
       "matches": 25,
-      "model_correct": 8,
+      "model_correct": 7,
       "market_correct": 10,
-      "model_accuracy": 0.32,
+      "model_accuracy": 0.28,
       "market_accuracy": 0.4
     },
     {
       "team": "KOCAELİSPOR",
       "market_value_eur": 24150000,
       "matches": 23,
-      "model_correct": 8,
+      "model_correct": 9,
       "market_correct": 10,
-      "model_accuracy": 0.348,
+      "model_accuracy": 0.391,
       "market_accuracy": 0.435
     },
     {
@@ -189,18 +189,18 @@
       "team": "SAMSUNSPOR A.Ş.",
       "market_value_eur": 56100000,
       "matches": 24,
-      "model_correct": 11,
+      "model_correct": 14,
       "market_correct": 10,
-      "model_accuracy": 0.458,
+      "model_accuracy": 0.583,
       "market_accuracy": 0.417
     },
     {
       "team": "TRABZONSPOR A.Ş.",
       "market_value_eur": 129550000,
       "matches": 24,
-      "model_correct": 10,
+      "model_correct": 11,
       "market_correct": 12,
-      "model_accuracy": 0.417,
+      "model_accuracy": 0.458,
       "market_accuracy": 0.5
     },
     {
@@ -225,9 +225,9 @@
       "team": "İKAS EYÜPSPOR",
       "market_value_eur": 17150000,
       "matches": 23,
-      "model_correct": 7,
+      "model_correct": 8,
       "market_correct": 12,
-      "model_accuracy": 0.304,
+      "model_accuracy": 0.348,
       "market_accuracy": 0.522
     }
   ],
@@ -289,9 +289,15 @@
         "away_goals": 1,
         "probability": 0.094
       },
-      "home_win_probability": 0.398,
-      "draw_probability": 0.225,
-      "away_win_probability": 0.378,
+      "home_win_probability": 0.409,
+      "draw_probability": 0.202,
+      "away_win_probability": 0.389,
+      "head_to_head": {
+        "available": true,
+        "matches": 28,
+        "draw_rate": 0.143,
+        "last_meeting_date": "2026-05-09T17:00:00+00:00"
+      },
       "home_elo": 1501.6,
       "away_elo": 1650.2,
       "home_points_per_match": 2.12,
@@ -368,6 +374,11 @@
       "home_win_probability": 0.405,
       "draw_probability": 0.256,
       "away_win_probability": 0.34,
+      "head_to_head": {
+        "available": false,
+        "matches": 0,
+        "draw_rate": null
+      },
       "home_elo": 1603.9,
       "away_elo": 1549.7,
       "home_points_per_match": 1.88,
@@ -441,9 +452,15 @@
         "away_goals": 1,
         "probability": 0.122
       },
-      "home_win_probability": 0.341,
-      "draw_probability": 0.258,
-      "away_win_probability": 0.401,
+      "home_win_probability": 0.34,
+      "draw_probability": 0.26,
+      "away_win_probability": 0.4,
+      "head_to_head": {
+        "available": true,
+        "matches": 15,
+        "draw_rate": 0.267,
+        "last_meeting_date": "2026-05-01T17:00:00+00:00"
+      },
       "home_elo": 1450.3,
       "away_elo": 1577.7,
       "home_points_per_match": 1.12,
@@ -460,82 +477,6 @@
       "market_log_edge": -1.776,
       "market_prediction": "away",
       "market_correct": true
-    },
-    {
-      "match_id": "283635",
-      "date": "26.10.2025 - 20:00",
-      "home": "KASIMPAŞA A.Ş.",
-      "away": "BEŞİKTAŞ A.Ş.",
-      "score": "1-1",
-      "raw_predicted": "away",
-      "predicted": "draw",
-      "actual": "draw",
-      "correct": true,
-      "confidence": "MEDIUM",
-      "risk_flags": [
-        "taraf tahmini düşük güven",
-        "yüksek kart hakemi"
-      ],
-      "main_referee": "ADNAN DENİZ KAYATEPE",
-      "expected_home_goals": 1.15,
-      "expected_away_goals": 1.42,
-      "top_scorelines": [
-        {
-          "score": "1-1",
-          "home_goals": 1,
-          "away_goals": 1,
-          "probability": 0.125
-        },
-        {
-          "score": "0-1",
-          "home_goals": 0,
-          "away_goals": 1,
-          "probability": 0.109
-        },
-        {
-          "score": "1-2",
-          "home_goals": 1,
-          "away_goals": 2,
-          "probability": 0.089
-        },
-        {
-          "score": "1-0",
-          "home_goals": 1,
-          "away_goals": 0,
-          "probability": 0.088
-        },
-        {
-          "score": "0-0",
-          "home_goals": 0,
-          "away_goals": 0,
-          "probability": 0.077
-        }
-      ],
-      "recommended_scoreline": {
-        "score": "1-1",
-        "home_goals": 1,
-        "away_goals": 1,
-        "probability": 0.125
-      },
-      "home_win_probability": 0.305,
-      "draw_probability": 0.263,
-      "away_win_probability": 0.432,
-      "home_elo": 1478.9,
-      "away_elo": 1528.5,
-      "home_points_per_match": 1.12,
-      "away_points_per_match": 1.62,
-      "strength_edge": -0.22,
-      "home_xg_efficiency": null,
-      "away_xg_efficiency": null,
-      "referee_adj": -0.03,
-      "referee_cards_per_match": 5.8,
-      "referee_goals_per_match": 2.4,
-      "home_market_value_eur": 30800000,
-      "away_market_value_eur": 176000000,
-      "market_edge_million_eur": -145.2,
-      "market_log_edge": -1.743,
-      "market_prediction": "away",
-      "market_correct": false
     },
     {
       "match_id": "283709",
@@ -596,6 +537,11 @@
       "home_win_probability": 0.339,
       "draw_probability": 0.252,
       "away_win_probability": 0.409,
+      "head_to_head": {
+        "available": false,
+        "matches": 0,
+        "draw_rate": null
+      },
       "home_elo": 1507.1,
       "away_elo": 1581.5,
       "home_points_per_match": 1.88,
@@ -668,9 +614,15 @@
         "away_goals": 1,
         "probability": 0.093
       },
-      "home_win_probability": 0.442,
-      "draw_probability": 0.222,
-      "away_win_probability": 0.337,
+      "home_win_probability": 0.446,
+      "draw_probability": 0.214,
+      "away_win_probability": 0.34,
+      "head_to_head": {
+        "available": true,
+        "matches": 31,
+        "draw_rate": 0.194,
+        "last_meeting_date": "2026-05-05T17:30:00+00:00"
+      },
       "home_elo": 1500.1,
       "away_elo": 1511.5,
       "home_points_per_match": 1.38,
@@ -689,6 +641,168 @@
       "market_correct": true
     },
     {
+      "match_id": "283853",
+      "date": "15.05.2026 - 20:00",
+      "home": "ÇAYKUR RİZESPOR A.Ş.",
+      "away": "BEŞİKTAŞ A.Ş.",
+      "score": "2-2",
+      "raw_predicted": "away",
+      "predicted": "draw",
+      "actual": "draw",
+      "correct": true,
+      "confidence": "MEDIUM",
+      "risk_flags": [
+        "taraf tahmini düşük güven"
+      ],
+      "main_referee": "ASEN ALBAYRAK",
+      "expected_home_goals": 1.41,
+      "expected_away_goals": 1.72,
+      "top_scorelines": [
+        {
+          "score": "1-1",
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.106
+        },
+        {
+          "score": "1-2",
+          "home_goals": 1,
+          "away_goals": 2,
+          "probability": 0.091
+        },
+        {
+          "score": "0-1",
+          "home_goals": 0,
+          "away_goals": 1,
+          "probability": 0.075
+        },
+        {
+          "score": "2-1",
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.075
+        },
+        {
+          "score": "0-2",
+          "home_goals": 0,
+          "away_goals": 2,
+          "probability": 0.065
+        }
+      ],
+      "recommended_scoreline": {
+        "score": "1-1",
+        "home_goals": 1,
+        "away_goals": 1,
+        "probability": 0.106
+      },
+      "home_win_probability": 0.309,
+      "draw_probability": 0.254,
+      "away_win_probability": 0.437,
+      "head_to_head": {
+        "available": true,
+        "matches": 26,
+        "draw_rate": 0.308,
+        "last_meeting_date": "2026-05-15T17:00:00+00:00"
+      },
+      "home_elo": 1479.5,
+      "away_elo": 1575.2,
+      "home_points_per_match": 1.25,
+      "away_points_per_match": 1.62,
+      "strength_edge": -0.23,
+      "home_xg_efficiency": null,
+      "away_xg_efficiency": null,
+      "referee_adj": 0.0,
+      "referee_cards_per_match": null,
+      "referee_goals_per_match": null,
+      "home_market_value_eur": 39750000,
+      "away_market_value_eur": 176000000,
+      "market_edge_million_eur": -136.25,
+      "market_log_edge": -1.4879,
+      "market_prediction": "away",
+      "market_correct": false
+    },
+    {
+      "match_id": "283601",
+      "date": "20.09.2025 - 20:00",
+      "home": "TRABZONSPOR A.Ş.",
+      "away": "GAZİANTEP FUTBOL KULÜBÜ A.Ş.",
+      "score": "1-1",
+      "raw_predicted": "home",
+      "predicted": "draw",
+      "actual": "draw",
+      "correct": true,
+      "confidence": "MEDIUM",
+      "risk_flags": [
+        "beraberlik olasılığı canlı"
+      ],
+      "main_referee": "ARDA KARDEŞLER",
+      "expected_home_goals": 1.43,
+      "expected_away_goals": 0.96,
+      "top_scorelines": [
+        {
+          "score": "1-0",
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.131
+        },
+        {
+          "score": "1-1",
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.126
+        },
+        {
+          "score": "2-0",
+          "home_goals": 2,
+          "away_goals": 0,
+          "probability": 0.094
+        },
+        {
+          "score": "0-0",
+          "home_goals": 0,
+          "away_goals": 0,
+          "probability": 0.092
+        },
+        {
+          "score": "2-1",
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.09
+        }
+      ],
+      "recommended_scoreline": {
+        "score": "1-0",
+        "home_goals": 1,
+        "away_goals": 0,
+        "probability": 0.131
+      },
+      "home_win_probability": 0.465,
+      "draw_probability": 0.289,
+      "away_win_probability": 0.246,
+      "head_to_head": {
+        "available": true,
+        "matches": 13,
+        "draw_rate": 0.385,
+        "last_meeting_date": "2026-02-22T13:00:00+00:00"
+      },
+      "home_elo": 1523.4,
+      "away_elo": 1506.8,
+      "home_points_per_match": 2.0,
+      "away_points_per_match": 1.8,
+      "strength_edge": 0.176,
+      "home_xg_efficiency": null,
+      "away_xg_efficiency": null,
+      "referee_adj": 0.0,
+      "referee_cards_per_match": null,
+      "referee_goals_per_match": null,
+      "home_market_value_eur": 129550000,
+      "away_market_value_eur": 29800000,
+      "market_edge_million_eur": 99.75,
+      "market_log_edge": 1.4696,
+      "market_prediction": "home",
+      "market_correct": false
+    },
+    {
       "match_id": "283620",
       "date": "5.10.2025 - 20:00",
       "home": "SAMSUNSPOR A.Ş.",
@@ -701,6 +815,7 @@
       "confidence": "LOW",
       "risk_flags": [
         "xG farkı dar",
+        "beraberlik olasılığı canlı",
         "taraf tahmini düşük güven"
       ],
       "main_referee": "HALİL UMUT MELER",
@@ -744,9 +859,15 @@
         "away_goals": 1,
         "probability": 0.119
       },
-      "home_win_probability": 0.326,
-      "draw_probability": 0.252,
-      "away_win_probability": 0.422,
+      "home_win_probability": 0.309,
+      "draw_probability": 0.291,
+      "away_win_probability": 0.4,
+      "head_to_head": {
+        "available": true,
+        "matches": 10,
+        "draw_rate": 0.5,
+        "last_meeting_date": "2026-03-08T17:00:00+00:00"
+      },
       "home_elo": 1519.3,
       "away_elo": 1548.9,
       "home_points_per_match": 1.71,
@@ -823,6 +944,11 @@
       "home_win_probability": 0.369,
       "draw_probability": 0.253,
       "away_win_probability": 0.377,
+      "head_to_head": {
+        "available": false,
+        "matches": 0,
+        "draw_rate": null
+      },
       "home_elo": 1497.2,
       "away_elo": 1642.3,
       "home_points_per_match": 2.12,
@@ -900,6 +1026,11 @@
       "home_win_probability": 0.337,
       "draw_probability": 0.274,
       "away_win_probability": 0.388,
+      "head_to_head": {
+        "available": false,
+        "matches": 0,
+        "draw_rate": null
+      },
       "home_elo": 1399.3,
       "away_elo": 1471.8,
       "home_points_per_match": 0.5,
@@ -916,6 +1047,89 @@
       "market_log_edge": -1.1851,
       "market_prediction": "away",
       "market_correct": true
+    },
+    {
+      "match_id": "283664",
+      "date": "23.11.2025 - 17:00",
+      "home": "BEŞİKTAŞ A.Ş.",
+      "away": "SAMSUNSPOR A.Ş.",
+      "score": "1-1",
+      "raw_predicted": "home",
+      "predicted": "draw",
+      "actual": "draw",
+      "correct": true,
+      "confidence": "MEDIUM",
+      "risk_flags": [
+        "beraberlik olasılığı canlı",
+        "taraf tahmini düşük güven",
+        "yüksek kart hakemi"
+      ],
+      "main_referee": "ATİLLA KARAOĞLAN",
+      "expected_home_goals": 1.74,
+      "expected_away_goals": 1.4,
+      "top_scorelines": [
+        {
+          "score": "1-1",
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.105
+        },
+        {
+          "score": "2-1",
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.092
+        },
+        {
+          "score": "1-0",
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.075
+        },
+        {
+          "score": "1-2",
+          "home_goals": 1,
+          "away_goals": 2,
+          "probability": 0.074
+        },
+        {
+          "score": "2-0",
+          "home_goals": 2,
+          "away_goals": 0,
+          "probability": 0.066
+        }
+      ],
+      "recommended_scoreline": {
+        "score": "1-1",
+        "home_goals": 1,
+        "away_goals": 1,
+        "probability": 0.105
+      },
+      "home_win_probability": 0.433,
+      "draw_probability": 0.272,
+      "away_win_probability": 0.294,
+      "head_to_head": {
+        "available": true,
+        "matches": 8,
+        "draw_rate": 0.5,
+        "last_meeting_date": "2026-04-19T14:00:00+00:00"
+      },
+      "home_elo": 1530.2,
+      "away_elo": 1552.5,
+      "home_points_per_match": 1.75,
+      "away_points_per_match": 2.0,
+      "strength_edge": -0.02,
+      "home_xg_efficiency": null,
+      "away_xg_efficiency": null,
+      "referee_adj": -0.026,
+      "referee_cards_per_match": 6.17,
+      "referee_goals_per_match": 2.67,
+      "home_market_value_eur": 176000000,
+      "away_market_value_eur": 56100000,
+      "market_edge_million_eur": 119.9,
+      "market_log_edge": 1.1433,
+      "market_prediction": "home",
+      "market_correct": false
     },
     {
       "match_id": "283648",
@@ -973,6 +1187,11 @@
       "home_win_probability": 0.464,
       "draw_probability": 0.251,
       "away_win_probability": 0.285,
+      "head_to_head": {
+        "available": false,
+        "matches": 0,
+        "draw_rate": null
+      },
       "home_elo": 1491.4,
       "away_elo": 1484.3,
       "home_points_per_match": 1.0,
@@ -1002,7 +1221,6 @@
       "correct": false,
       "confidence": "MEDIUM",
       "risk_flags": [
-        "beraberlik olasılığı canlı",
         "taraf tahmini düşük güven"
       ],
       "main_referee": "DİRENÇ TONUSLUOĞLU",
@@ -1046,9 +1264,15 @@
         "away_goals": 1,
         "probability": 0.129
       },
-      "home_win_probability": 0.293,
-      "draw_probability": 0.274,
-      "away_win_probability": 0.433,
+      "home_win_probability": 0.298,
+      "draw_probability": 0.263,
+      "away_win_probability": 0.439,
+      "head_to_head": {
+        "available": true,
+        "matches": 18,
+        "draw_rate": 0.222,
+        "last_meeting_date": "2026-04-11T11:30:00+00:00"
+      },
       "home_elo": 1446.8,
       "away_elo": 1502.2,
       "home_points_per_match": 1.0,
@@ -1121,9 +1345,15 @@
         "away_goals": 0,
         "probability": 0.15
       },
-      "home_win_probability": 0.472,
-      "draw_probability": 0.284,
-      "away_win_probability": 0.244,
+      "home_win_probability": 0.456,
+      "draw_probability": 0.308,
+      "away_win_probability": 0.236,
+      "head_to_head": {
+        "available": true,
+        "matches": 4,
+        "draw_rate": 0.5,
+        "last_meeting_date": "2026-04-18T14:00:00+00:00"
+      },
       "home_elo": 1552.1,
       "away_elo": 1489.9,
       "home_points_per_match": 1.75,
@@ -1154,6 +1384,7 @@
       "confidence": "LOW",
       "risk_flags": [
         "xG farkı dar",
+        "beraberlik olasılığı canlı",
         "taraf tahmini düşük güven"
       ],
       "main_referee": "ALİ YILMAZ",
@@ -1197,9 +1428,15 @@
         "away_goals": 1,
         "probability": 0.126
       },
-      "home_win_probability": 0.383,
-      "draw_probability": 0.266,
-      "away_win_probability": 0.351,
+      "home_win_probability": 0.369,
+      "draw_probability": 0.292,
+      "away_win_probability": 0.339,
+      "head_to_head": {
+        "available": true,
+        "matches": 4,
+        "draw_rate": 0.5,
+        "last_meeting_date": "2026-04-18T14:00:00+00:00"
+      },
       "home_elo": 1474.0,
       "away_elo": 1535.3,
       "home_points_per_match": 1.0,
@@ -1230,7 +1467,6 @@
       "confidence": "LOW",
       "risk_flags": [
         "xG farkı dar",
-        "beraberlik olasılığı canlı",
         "taraf tahmini düşük güven"
       ],
       "main_referee": "BATUHAN KOLAK",
@@ -1274,9 +1510,15 @@
         "away_goals": 0,
         "probability": 0.135
       },
-      "home_win_probability": 0.353,
-      "draw_probability": 0.306,
-      "away_win_probability": 0.341,
+      "home_win_probability": 0.373,
+      "draw_probability": 0.267,
+      "away_win_probability": 0.36,
+      "head_to_head": {
+        "available": true,
+        "matches": 12,
+        "draw_rate": 0.083,
+        "last_meeting_date": "2026-04-04T11:30:00+00:00"
+      },
       "home_elo": 1428.9,
       "away_elo": 1541.1,
       "home_points_per_match": 0.75,
@@ -1304,7 +1546,7 @@
       "predicted": "home",
       "actual": "away",
       "correct": false,
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "risk_flags": [],
       "main_referee": "MEHMET TÜRKMEN",
       "expected_home_goals": 2.25,
@@ -1347,9 +1589,15 @@
         "away_goals": 1,
         "probability": 0.089
       },
-      "home_win_probability": 0.539,
-      "draw_probability": 0.202,
-      "away_win_probability": 0.259,
+      "home_win_probability": 0.502,
+      "draw_probability": 0.257,
+      "away_win_probability": 0.241,
+      "head_to_head": {
+        "available": true,
+        "matches": 29,
+        "draw_rate": 0.414,
+        "last_meeting_date": "2026-02-15T17:00:00+00:00"
+      },
       "home_elo": 1556.5,
       "away_elo": 1558.6,
       "home_points_per_match": 2.5,
@@ -1427,6 +1675,11 @@
       "home_win_probability": 0.368,
       "draw_probability": 0.253,
       "away_win_probability": 0.379,
+      "head_to_head": {
+        "available": false,
+        "matches": 0,
+        "draw_rate": null
+      },
       "home_elo": 1469.3,
       "away_elo": 1476.2,
       "home_points_per_match": 1.12,
@@ -1505,6 +1758,11 @@
       "home_win_probability": 0.368,
       "draw_probability": 0.306,
       "away_win_probability": 0.326,
+      "head_to_head": {
+        "available": false,
+        "matches": 0,
+        "draw_rate": null
+      },
       "home_elo": 1511.3,
       "away_elo": 1494.2,
       "home_points_per_match": 1.12,
@@ -1582,6 +1840,11 @@
       "home_win_probability": 0.388,
       "draw_probability": 0.287,
       "away_win_probability": 0.325,
+      "head_to_head": {
+        "available": false,
+        "matches": 0,
+        "draw_rate": null
+      },
       "home_elo": 1459.7,
       "away_elo": 1444.6,
       "home_points_per_match": 0.88,
@@ -1598,156 +1861,6 @@
       "market_log_edge": 0.8406,
       "market_prediction": "home",
       "market_correct": true
-    },
-    {
-      "match_id": "283849",
-      "date": "9.05.2026 - 20:00",
-      "home": "İKAS EYÜPSPOR",
-      "away": "ÇAYKUR RİZESPOR A.Ş.",
-      "score": "4-0",
-      "raw_predicted": "away",
-      "predicted": "draw",
-      "actual": "home",
-      "correct": false,
-      "confidence": "MEDIUM",
-      "risk_flags": [],
-      "main_referee": "HALİL UMUT MELER",
-      "expected_home_goals": 1.23,
-      "expected_away_goals": 1.54,
-      "top_scorelines": [
-        {
-          "score": "1-1",
-          "home_goals": 1,
-          "away_goals": 1,
-          "probability": 0.119
-        },
-        {
-          "score": "0-1",
-          "home_goals": 0,
-          "away_goals": 1,
-          "probability": 0.097
-        },
-        {
-          "score": "1-2",
-          "home_goals": 1,
-          "away_goals": 2,
-          "probability": 0.091
-        },
-        {
-          "score": "1-0",
-          "home_goals": 1,
-          "away_goals": 0,
-          "probability": 0.077
-        },
-        {
-          "score": "0-2",
-          "home_goals": 0,
-          "away_goals": 2,
-          "probability": 0.074
-        }
-      ],
-      "recommended_scoreline": {
-        "score": "1-1",
-        "home_goals": 1,
-        "away_goals": 1,
-        "probability": 0.119
-      },
-      "home_win_probability": 0.304,
-      "draw_probability": 0.251,
-      "away_win_probability": 0.444,
-      "home_elo": 1420.5,
-      "away_elo": 1498.2,
-      "home_points_per_match": 0.88,
-      "away_points_per_match": 1.62,
-      "strength_edge": -0.28,
-      "home_xg_efficiency": null,
-      "away_xg_efficiency": null,
-      "referee_adj": 0.015,
-      "referee_cards_per_match": 4.5,
-      "referee_goals_per_match": 2.94,
-      "home_market_value_eur": 17150000,
-      "away_market_value_eur": 39750000,
-      "market_edge_million_eur": -22.6,
-      "market_log_edge": -0.8406,
-      "market_prediction": "away",
-      "market_correct": false
-    },
-    {
-      "match_id": "283707",
-      "date": "19.01.2026 - 17:00",
-      "home": "TÜMOSAN KONYASPOR",
-      "away": "İKAS EYÜPSPOR",
-      "score": "1-1",
-      "raw_predicted": "home",
-      "predicted": "draw",
-      "actual": "draw",
-      "correct": true,
-      "confidence": "LOW",
-      "risk_flags": [
-        "xG farkı dar",
-        "beraberlik olasılığı canlı",
-        "taraf tahmini düşük güven"
-      ],
-      "main_referee": "ÖMER FARUK TURTAY",
-      "expected_home_goals": 1.31,
-      "expected_away_goals": 1.07,
-      "top_scorelines": [
-        {
-          "score": "1-1",
-          "home_goals": 1,
-          "away_goals": 1,
-          "probability": 0.13
-        },
-        {
-          "score": "1-0",
-          "home_goals": 1,
-          "away_goals": 0,
-          "probability": 0.122
-        },
-        {
-          "score": "0-1",
-          "home_goals": 0,
-          "away_goals": 1,
-          "probability": 0.099
-        },
-        {
-          "score": "0-0",
-          "home_goals": 0,
-          "away_goals": 0,
-          "probability": 0.093
-        },
-        {
-          "score": "2-1",
-          "home_goals": 2,
-          "away_goals": 1,
-          "probability": 0.085
-        }
-      ],
-      "recommended_scoreline": {
-        "score": "1-1",
-        "home_goals": 1,
-        "away_goals": 1,
-        "probability": 0.13
-      },
-      "home_win_probability": 0.422,
-      "draw_probability": 0.276,
-      "away_win_probability": 0.303,
-      "home_elo": 1443.9,
-      "away_elo": 1421.0,
-      "home_points_per_match": 0.75,
-      "away_points_per_match": 0.62,
-      "strength_edge": 0.03,
-      "home_xg_efficiency": null,
-      "away_xg_efficiency": null,
-      "referee_adj": 0.0,
-      "referee_cards_per_match": null,
-      "referee_goals_per_match": null,
-      "home_market_value_eur": 39300000,
-      "away_market_value_eur": 17150000,
-      "market_edge_million_eur": 22.15,
-      "market_log_edge": 0.8292,
-      "market_prediction": "home",
-      "market_correct": false
     }
   ],
   "high_market_edge_model_misses": [
@@ -1804,9 +1917,15 @@
         "away_goals": 1,
         "probability": 0.098
       },
-      "home_win_probability": 0.571,
-      "draw_probability": 0.21,
-      "away_win_probability": 0.218,
+      "home_win_probability": 0.546,
+      "draw_probability": 0.245,
+      "away_win_probability": 0.209,
+      "head_to_head": {
+        "available": true,
+        "matches": 4,
+        "draw_rate": 0.5,
+        "last_meeting_date": "2026-05-17T17:00:00+00:00"
+      },
       "home_elo": 1662.4,
       "away_elo": 1439.1,
       "home_points_per_match": 2.0,
@@ -1880,6 +1999,11 @@
       "home_win_probability": 0.232,
       "draw_probability": 0.234,
       "away_win_probability": 0.533,
+      "head_to_head": {
+        "available": false,
+        "matches": 0,
+        "draw_rate": null
+      },
       "home_elo": 1473.5,
       "away_elo": 1611.3,
       "home_points_per_match": 1.38,
@@ -1953,6 +2077,11 @@
       "home_win_probability": 0.709,
       "draw_probability": 0.176,
       "away_win_probability": 0.114,
+      "head_to_head": {
+        "available": false,
+        "matches": 0,
+        "draw_rate": null
+      },
       "home_elo": 1666.1,
       "away_elo": 1466.3,
       "home_points_per_match": 2.25,
@@ -2023,9 +2152,15 @@
         "away_goals": 0,
         "probability": 0.097
       },
-      "home_win_probability": 0.68,
-      "draw_probability": 0.178,
-      "away_win_probability": 0.142,
+      "home_win_probability": 0.686,
+      "draw_probability": 0.171,
+      "away_win_probability": 0.143,
+      "head_to_head": {
+        "available": true,
+        "matches": 14,
+        "draw_rate": 0.143,
+        "last_meeting_date": "2026-01-17T17:00:00+00:00"
+      },
       "home_elo": 1631.2,
       "away_elo": 1482.5,
       "home_points_per_match": 2.12,
@@ -2096,9 +2231,15 @@
         "away_goals": 2,
         "probability": 0.092
       },
-      "home_win_probability": 0.256,
-      "draw_probability": 0.207,
-      "away_win_probability": 0.537,
+      "home_win_probability": 0.26,
+      "draw_probability": 0.196,
+      "away_win_probability": 0.545,
+      "head_to_head": {
+        "available": true,
+        "matches": 30,
+        "draw_rate": 0.167,
+        "last_meeting_date": "2026-05-17T17:00:00+00:00"
+      },
       "home_elo": 1431.6,
       "away_elo": 1661.3,
       "home_points_per_match": 1.38,
@@ -2169,9 +2310,15 @@
         "away_goals": 1,
         "probability": 0.116
       },
-      "home_win_probability": 0.197,
-      "draw_probability": 0.231,
-      "away_win_probability": 0.572,
+      "home_win_probability": 0.2,
+      "draw_probability": 0.222,
+      "away_win_probability": 0.579,
+      "head_to_head": {
+        "available": true,
+        "matches": 6,
+        "draw_rate": 0.167,
+        "last_meeting_date": "2026-01-26T17:00:00+00:00"
+      },
       "home_elo": 1423.8,
       "away_elo": 1558.9,
       "home_points_per_match": 0.75,
@@ -2247,6 +2394,11 @@
       "home_win_probability": 0.084,
       "draw_probability": 0.139,
       "away_win_probability": 0.776,
+      "head_to_head": {
+        "available": false,
+        "matches": 0,
+        "draw_rate": null
+      },
       "home_elo": 1430.6,
       "away_elo": 1655.8,
       "home_points_per_match": 0.62,
@@ -2317,9 +2469,15 @@
         "away_goals": 1,
         "probability": 0.128
       },
-      "home_win_probability": 0.218,
-      "draw_probability": 0.25,
-      "away_win_probability": 0.532,
+      "home_win_probability": 0.227,
+      "draw_probability": 0.217,
+      "away_win_probability": 0.556,
+      "head_to_head": {
+        "available": true,
+        "matches": 31,
+        "draw_rate": 0.129,
+        "last_meeting_date": "2026-02-23T17:00:00+00:00"
+      },
       "home_elo": 1478.6,
       "away_elo": 1537.6,
       "home_points_per_match": 0.8,
@@ -2390,9 +2548,15 @@
         "away_goals": 0,
         "probability": 0.143
       },
-      "home_win_probability": 0.757,
-      "draw_probability": 0.161,
-      "away_win_probability": 0.082,
+      "home_win_probability": 0.765,
+      "draw_probability": 0.152,
+      "away_win_probability": 0.083,
+      "head_to_head": {
+        "available": true,
+        "matches": 31,
+        "draw_rate": 0.129,
+        "last_meeting_date": "2026-02-23T17:00:00+00:00"
+      },
       "home_elo": 1665.0,
       "away_elo": 1425.6,
       "home_points_per_match": 2.5,
@@ -2463,9 +2627,15 @@
         "away_goals": 1,
         "probability": 0.106
       },
-      "home_win_probability": 0.576,
-      "draw_probability": 0.224,
-      "away_win_probability": 0.2,
+      "home_win_probability": 0.586,
+      "draw_probability": 0.21,
+      "away_win_probability": 0.204,
+      "head_to_head": {
+        "available": true,
+        "matches": 23,
+        "draw_rate": 0.174,
+        "last_meeting_date": "2026-03-15T17:00:00+00:00"
+      },
       "home_elo": 1530.0,
       "away_elo": 1452.1,
       "home_points_per_match": 1.86,
@@ -2540,9 +2710,15 @@
         "away_goals": 1,
         "probability": 0.094
       },
-      "home_win_probability": 0.398,
-      "draw_probability": 0.225,
-      "away_win_probability": 0.378,
+      "home_win_probability": 0.409,
+      "draw_probability": 0.202,
+      "away_win_probability": 0.389,
+      "head_to_head": {
+        "available": true,
+        "matches": 28,
+        "draw_rate": 0.143,
+        "last_meeting_date": "2026-05-09T17:00:00+00:00"
+      },
       "home_elo": 1501.6,
       "away_elo": 1650.2,
       "home_points_per_match": 2.12,
@@ -2613,9 +2789,15 @@
         "away_goals": 1,
         "probability": 0.091
       },
-      "home_win_probability": 0.475,
-      "draw_probability": 0.218,
-      "away_win_probability": 0.307,
+      "home_win_probability": 0.491,
+      "draw_probability": 0.192,
+      "away_win_probability": 0.317,
+      "head_to_head": {
+        "available": true,
+        "matches": 24,
+        "draw_rate": 0.125,
+        "last_meeting_date": "2026-04-17T17:00:00+00:00"
+      },
       "home_elo": 1660.1,
       "away_elo": 1496.3,
       "home_points_per_match": 2.12,
@@ -2692,6 +2874,11 @@
       "home_win_probability": 0.405,
       "draw_probability": 0.256,
       "away_win_probability": 0.34,
+      "head_to_head": {
+        "available": false,
+        "matches": 0,
+        "draw_rate": null
+      },
       "home_elo": 1603.9,
       "away_elo": 1549.7,
       "home_points_per_match": 1.88,
@@ -2765,6 +2952,11 @@
       "home_win_probability": 0.256,
       "draw_probability": 0.214,
       "away_win_probability": 0.529,
+      "head_to_head": {
+        "available": false,
+        "matches": 0,
+        "draw_rate": null
+      },
       "home_elo": 1515.1,
       "away_elo": 1678.2,
       "home_points_per_match": 1.75,
@@ -2835,9 +3027,15 @@
         "away_goals": 1,
         "probability": 0.104
       },
-      "home_win_probability": 0.464,
-      "draw_probability": 0.232,
-      "away_win_probability": 0.304,
+      "home_win_probability": 0.46,
+      "draw_probability": 0.239,
+      "away_win_probability": 0.301,
+      "head_to_head": {
+        "available": true,
+        "matches": 15,
+        "draw_rate": 0.267,
+        "last_meeting_date": "2026-05-01T17:00:00+00:00"
+      },
       "home_elo": 1541.7,
       "away_elo": 1507.6,
       "home_points_per_match": 1.5,
@@ -2911,9 +3109,15 @@
         "away_goals": 1,
         "probability": 0.122
       },
-      "home_win_probability": 0.341,
-      "draw_probability": 0.258,
-      "away_win_probability": 0.401,
+      "home_win_probability": 0.34,
+      "draw_probability": 0.26,
+      "away_win_probability": 0.4,
+      "head_to_head": {
+        "available": true,
+        "matches": 15,
+        "draw_rate": 0.267,
+        "last_meeting_date": "2026-05-01T17:00:00+00:00"
+      },
       "home_elo": 1450.3,
       "away_elo": 1577.7,
       "home_points_per_match": 1.12,
@@ -2930,6 +3134,87 @@
       "market_log_edge": -1.776,
       "market_prediction": "away",
       "market_correct": true
+    },
+    {
+      "match_id": "283635",
+      "date": "26.10.2025 - 20:00",
+      "home": "KASIMPAŞA A.Ş.",
+      "away": "BEŞİKTAŞ A.Ş.",
+      "score": "1-1",
+      "raw_predicted": "away",
+      "predicted": "away",
+      "actual": "draw",
+      "correct": false,
+      "confidence": "MEDIUM",
+      "risk_flags": [
+        "yüksek kart hakemi"
+      ],
+      "main_referee": "ADNAN DENİZ KAYATEPE",
+      "expected_home_goals": 1.15,
+      "expected_away_goals": 1.42,
+      "top_scorelines": [
+        {
+          "score": "1-1",
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.125
+        },
+        {
+          "score": "0-1",
+          "home_goals": 0,
+          "away_goals": 1,
+          "probability": 0.109
+        },
+        {
+          "score": "1-2",
+          "home_goals": 1,
+          "away_goals": 2,
+          "probability": 0.089
+        },
+        {
+          "score": "1-0",
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.088
+        },
+        {
+          "score": "0-0",
+          "home_goals": 0,
+          "away_goals": 0,
+          "probability": 0.077
+        }
+      ],
+      "recommended_scoreline": {
+        "score": "1-1",
+        "home_goals": 1,
+        "away_goals": 1,
+        "probability": 0.125
+      },
+      "home_win_probability": 0.314,
+      "draw_probability": 0.241,
+      "away_win_probability": 0.445,
+      "head_to_head": {
+        "available": true,
+        "matches": 28,
+        "draw_rate": 0.179,
+        "last_meeting_date": "2026-03-19T17:00:00+00:00"
+      },
+      "home_elo": 1478.9,
+      "away_elo": 1528.5,
+      "home_points_per_match": 1.12,
+      "away_points_per_match": 1.62,
+      "strength_edge": -0.22,
+      "home_xg_efficiency": null,
+      "away_xg_efficiency": null,
+      "referee_adj": -0.03,
+      "referee_cards_per_match": 5.8,
+      "referee_goals_per_match": 2.4,
+      "home_market_value_eur": 30800000,
+      "away_market_value_eur": 176000000,
+      "market_edge_million_eur": -145.2,
+      "market_log_edge": -1.743,
+      "market_prediction": "away",
+      "market_correct": false
     },
     {
       "match_id": "283709",
@@ -2990,6 +3275,11 @@
       "home_win_probability": 0.339,
       "draw_probability": 0.252,
       "away_win_probability": 0.409,
+      "head_to_head": {
+        "available": false,
+        "matches": 0,
+        "draw_rate": null
+      },
       "home_elo": 1507.1,
       "away_elo": 1581.5,
       "home_points_per_match": 1.88,
@@ -3060,9 +3350,15 @@
         "away_goals": 0,
         "probability": 0.11
       },
-      "home_win_probability": 0.557,
-      "draw_probability": 0.232,
-      "away_win_probability": 0.211,
+      "home_win_probability": 0.548,
+      "draw_probability": 0.246,
+      "away_win_probability": 0.207,
+      "head_to_head": {
+        "available": true,
+        "matches": 21,
+        "draw_rate": 0.286,
+        "last_meeting_date": "2026-04-23T17:45:00+00:00"
+      },
       "home_elo": 1563.6,
       "away_elo": 1469.6,
       "home_points_per_match": 2.0,
@@ -3133,9 +3429,15 @@
         "away_goals": 1,
         "probability": 0.103
       },
-      "home_win_probability": 0.288,
-      "draw_probability": 0.229,
-      "away_win_probability": 0.482,
+      "home_win_probability": 0.283,
+      "draw_probability": 0.243,
+      "away_win_probability": 0.473,
+      "head_to_head": {
+        "available": true,
+        "matches": 21,
+        "draw_rate": 0.286,
+        "last_meeting_date": "2026-05-17T17:00:00+00:00"
+      },
       "home_elo": 1457.8,
       "away_elo": 1598.0,
       "home_points_per_match": 1.25,
@@ -3208,9 +3510,15 @@
         "away_goals": 0,
         "probability": 0.163
       },
-      "home_win_probability": 0.63,
-      "draw_probability": 0.233,
-      "away_win_probability": 0.137,
+      "home_win_probability": 0.62,
+      "draw_probability": 0.246,
+      "away_win_probability": 0.134,
+      "head_to_head": {
+        "available": true,
+        "matches": 21,
+        "draw_rate": 0.286,
+        "last_meeting_date": "2026-05-17T17:00:00+00:00"
+      },
       "home_elo": 1635.5,
       "away_elo": 1415.9,
       "home_points_per_match": 1.88,
@@ -3283,9 +3591,15 @@
         "away_goals": 1,
         "probability": 0.093
       },
-      "home_win_probability": 0.442,
-      "draw_probability": 0.222,
-      "away_win_probability": 0.337,
+      "home_win_probability": 0.446,
+      "draw_probability": 0.214,
+      "away_win_probability": 0.34,
+      "head_to_head": {
+        "available": true,
+        "matches": 31,
+        "draw_rate": 0.194,
+        "last_meeting_date": "2026-05-05T17:30:00+00:00"
+      },
       "home_elo": 1500.1,
       "away_elo": 1511.5,
       "home_points_per_match": 1.38,
@@ -3302,152 +3616,6 @@
       "market_log_edge": -1.4993,
       "market_prediction": "away",
       "market_correct": true
-    },
-    {
-      "match_id": "283853",
-      "date": "15.05.2026 - 20:00",
-      "home": "ÇAYKUR RİZESPOR A.Ş.",
-      "away": "BEŞİKTAŞ A.Ş.",
-      "score": "2-2",
-      "raw_predicted": "away",
-      "predicted": "away",
-      "actual": "draw",
-      "correct": false,
-      "confidence": "MEDIUM",
-      "risk_flags": [],
-      "main_referee": "ASEN ALBAYRAK",
-      "expected_home_goals": 1.41,
-      "expected_away_goals": 1.72,
-      "top_scorelines": [
-        {
-          "score": "1-1",
-          "home_goals": 1,
-          "away_goals": 1,
-          "probability": 0.106
-        },
-        {
-          "score": "1-2",
-          "home_goals": 1,
-          "away_goals": 2,
-          "probability": 0.091
-        },
-        {
-          "score": "0-1",
-          "home_goals": 0,
-          "away_goals": 1,
-          "probability": 0.075
-        },
-        {
-          "score": "2-1",
-          "home_goals": 2,
-          "away_goals": 1,
-          "probability": 0.075
-        },
-        {
-          "score": "0-2",
-          "home_goals": 0,
-          "away_goals": 2,
-          "probability": 0.065
-        }
-      ],
-      "recommended_scoreline": {
-        "score": "1-1",
-        "home_goals": 1,
-        "away_goals": 1,
-        "probability": 0.106
-      },
-      "home_win_probability": 0.317,
-      "draw_probability": 0.234,
-      "away_win_probability": 0.449,
-      "home_elo": 1479.5,
-      "away_elo": 1575.2,
-      "home_points_per_match": 1.25,
-      "away_points_per_match": 1.62,
-      "strength_edge": -0.23,
-      "home_xg_efficiency": null,
-      "away_xg_efficiency": null,
-      "referee_adj": 0.0,
-      "referee_cards_per_match": null,
-      "referee_goals_per_match": null,
-      "home_market_value_eur": 39750000,
-      "away_market_value_eur": 176000000,
-      "market_edge_million_eur": -136.25,
-      "market_log_edge": -1.4879,
-      "market_prediction": "away",
-      "market_correct": false
-    },
-    {
-      "match_id": "283601",
-      "date": "20.09.2025 - 20:00",
-      "home": "TRABZONSPOR A.Ş.",
-      "away": "GAZİANTEP FUTBOL KULÜBÜ A.Ş.",
-      "score": "1-1",
-      "raw_predicted": "home",
-      "predicted": "home",
-      "actual": "draw",
-      "correct": false,
-      "confidence": "MEDIUM",
-      "risk_flags": [],
-      "main_referee": "ARDA KARDEŞLER",
-      "expected_home_goals": 1.43,
-      "expected_away_goals": 0.96,
-      "top_scorelines": [
-        {
-          "score": "1-0",
-          "home_goals": 1,
-          "away_goals": 0,
-          "probability": 0.131
-        },
-        {
-          "score": "1-1",
-          "home_goals": 1,
-          "away_goals": 1,
-          "probability": 0.126
-        },
-        {
-          "score": "2-0",
-          "home_goals": 2,
-          "away_goals": 0,
-          "probability": 0.094
-        },
-        {
-          "score": "0-0",
-          "home_goals": 0,
-          "away_goals": 0,
-          "probability": 0.092
-        },
-        {
-          "score": "2-1",
-          "home_goals": 2,
-          "away_goals": 1,
-          "probability": 0.09
-        }
-      ],
-      "recommended_scoreline": {
-        "score": "1-0",
-        "home_goals": 1,
-        "away_goals": 0,
-        "probability": 0.131
-      },
-      "home_win_probability": 0.479,
-      "draw_probability": 0.268,
-      "away_win_probability": 0.253,
-      "home_elo": 1523.4,
-      "away_elo": 1506.8,
-      "home_points_per_match": 2.0,
-      "away_points_per_match": 1.8,
-      "strength_edge": 0.176,
-      "home_xg_efficiency": null,
-      "away_xg_efficiency": null,
-      "referee_adj": 0.0,
-      "referee_cards_per_match": null,
-      "referee_goals_per_match": null,
-      "home_market_value_eur": 129550000,
-      "away_market_value_eur": 29800000,
-      "market_edge_million_eur": 99.75,
-      "market_log_edge": 1.4696,
-      "market_prediction": "home",
-      "market_correct": false
     },
     {
       "match_id": "283608",
@@ -3502,9 +3670,15 @@
         "away_goals": 1,
         "probability": 0.16
       },
-      "home_win_probability": 0.132,
-      "draw_probability": 0.227,
-      "away_win_probability": 0.641,
+      "home_win_probability": 0.128,
+      "draw_probability": 0.249,
+      "away_win_probability": 0.622,
+      "head_to_head": {
+        "available": true,
+        "matches": 8,
+        "draw_rate": 0.375,
+        "last_meeting_date": "2026-02-28T17:00:00+00:00"
+      },
       "home_elo": 1458.5,
       "away_elo": 1543.5,
       "home_points_per_match": 0.67,
@@ -3575,9 +3749,15 @@
         "away_goals": 0,
         "probability": 0.111
       },
-      "home_win_probability": 0.574,
-      "draw_probability": 0.228,
-      "away_win_probability": 0.198,
+      "home_win_probability": 0.558,
+      "draw_probability": 0.25,
+      "away_win_probability": 0.193,
+      "head_to_head": {
+        "available": true,
+        "matches": 8,
+        "draw_rate": 0.375,
+        "last_meeting_date": "2026-02-28T17:00:00+00:00"
+      },
       "home_elo": 1562.5,
       "away_elo": 1440.8,
       "home_points_per_match": 1.88,
@@ -3648,9 +3828,15 @@
         "away_goals": 0,
         "probability": 0.123
       },
-      "home_win_probability": 0.564,
-      "draw_probability": 0.237,
-      "away_win_probability": 0.199,
+      "home_win_probability": 0.559,
+      "draw_probability": 0.244,
+      "away_win_probability": 0.197,
+      "head_to_head": {
+        "available": true,
+        "matches": 23,
+        "draw_rate": 0.261,
+        "last_meeting_date": "2026-04-11T14:00:00+00:00"
+      },
       "home_elo": 1570.9,
       "away_elo": 1503.4,
       "home_points_per_match": 1.88,
@@ -3721,9 +3907,15 @@
         "away_goals": 1,
         "probability": 0.092
       },
-      "home_win_probability": 0.296,
-      "draw_probability": 0.218,
-      "away_win_probability": 0.486,
+      "home_win_probability": 0.292,
+      "draw_probability": 0.23,
+      "away_win_probability": 0.479,
+      "head_to_head": {
+        "available": true,
+        "matches": 23,
+        "draw_rate": 0.261,
+        "last_meeting_date": "2026-04-11T14:00:00+00:00"
+      },
       "home_elo": 1483.6,
       "away_elo": 1650.5,
       "home_points_per_match": 1.25,
@@ -3794,9 +3986,15 @@
         "away_goals": 1,
         "probability": 0.094
       },
-      "home_win_probability": 0.559,
-      "draw_probability": 0.206,
-      "away_win_probability": 0.236,
+      "home_win_probability": 0.531,
+      "draw_probability": 0.245,
+      "away_win_probability": 0.224,
+      "head_to_head": {
+        "available": true,
+        "matches": 15,
+        "draw_rate": 0.4,
+        "last_meeting_date": "2026-01-25T17:00:00+00:00"
+      },
       "home_elo": 1636.8,
       "away_elo": 1578.9,
       "home_points_per_match": 2.5,
@@ -3873,6 +4071,11 @@
       "home_win_probability": 0.369,
       "draw_probability": 0.253,
       "away_win_probability": 0.377,
+      "head_to_head": {
+        "available": false,
+        "matches": 0,
+        "draw_rate": null
+      },
       "home_elo": 1497.2,
       "away_elo": 1642.3,
       "home_points_per_match": 2.12,
@@ -3943,9 +4146,15 @@
         "away_goals": 2,
         "probability": 0.092
       },
-      "home_win_probability": 0.26,
-      "draw_probability": 0.209,
-      "away_win_probability": 0.532,
+      "home_win_probability": 0.267,
+      "draw_probability": 0.187,
+      "away_win_probability": 0.546,
+      "head_to_head": {
+        "available": true,
+        "matches": 30,
+        "draw_rate": 0.133,
+        "last_meeting_date": "2026-05-02T17:00:00+00:00"
+      },
       "home_elo": 1493.3,
       "away_elo": 1609.0,
       "home_points_per_match": 1.25,
@@ -4023,6 +4232,11 @@
       "home_win_probability": 0.337,
       "draw_probability": 0.274,
       "away_win_probability": 0.388,
+      "head_to_head": {
+        "available": false,
+        "matches": 0,
+        "draw_rate": null
+      },
       "home_elo": 1399.3,
       "away_elo": 1471.8,
       "home_points_per_match": 0.5,
@@ -4039,81 +4253,6 @@
       "market_log_edge": -1.1851,
       "market_prediction": "away",
       "market_correct": true
-    },
-    {
-      "match_id": "283664",
-      "date": "23.11.2025 - 17:00",
-      "home": "BEŞİKTAŞ A.Ş.",
-      "away": "SAMSUNSPOR A.Ş.",
-      "score": "1-1",
-      "raw_predicted": "home",
-      "predicted": "home",
-      "actual": "draw",
-      "correct": false,
-      "confidence": "MEDIUM",
-      "risk_flags": [
-        "yüksek kart hakemi"
-      ],
-      "main_referee": "ATİLLA KARAOĞLAN",
-      "expected_home_goals": 1.74,
-      "expected_away_goals": 1.4,
-      "top_scorelines": [
-        {
-          "score": "1-1",
-          "home_goals": 1,
-          "away_goals": 1,
-          "probability": 0.105
-        },
-        {
-          "score": "2-1",
-          "home_goals": 2,
-          "away_goals": 1,
-          "probability": 0.092
-        },
-        {
-          "score": "1-0",
-          "home_goals": 1,
-          "away_goals": 0,
-          "probability": 0.075
-        },
-        {
-          "score": "1-2",
-          "home_goals": 1,
-          "away_goals": 2,
-          "probability": 0.074
-        },
-        {
-          "score": "2-0",
-          "home_goals": 2,
-          "away_goals": 0,
-          "probability": 0.066
-        }
-      ],
-      "recommended_scoreline": {
-        "score": "1-1",
-        "home_goals": 1,
-        "away_goals": 1,
-        "probability": 0.105
-      },
-      "home_win_probability": 0.457,
-      "draw_probability": 0.233,
-      "away_win_probability": 0.31,
-      "home_elo": 1530.2,
-      "away_elo": 1552.5,
-      "home_points_per_match": 1.75,
-      "away_points_per_match": 2.0,
-      "strength_edge": -0.02,
-      "home_xg_efficiency": null,
-      "away_xg_efficiency": null,
-      "referee_adj": -0.026,
-      "referee_cards_per_match": 6.17,
-      "referee_goals_per_match": 2.67,
-      "home_market_value_eur": 176000000,
-      "away_market_value_eur": 56100000,
-      "market_edge_million_eur": 119.9,
-      "market_log_edge": 1.1433,
-      "market_prediction": "home",
-      "market_correct": false
     },
     {
       "match_id": "283817",
@@ -4168,9 +4307,15 @@
         "away_goals": 1,
         "probability": 0.099
       },
-      "home_win_probability": 0.228,
-      "draw_probability": 0.217,
-      "away_win_probability": 0.554,
+      "home_win_probability": 0.216,
+      "draw_probability": 0.259,
+      "away_win_probability": 0.525,
+      "head_to_head": {
+        "available": true,
+        "matches": 8,
+        "draw_rate": 0.5,
+        "last_meeting_date": "2026-04-19T14:00:00+00:00"
+      },
       "home_elo": 1484.8,
       "away_elo": 1601.1,
       "home_points_per_match": 1.12,
@@ -4244,6 +4389,11 @@
       "home_win_probability": 0.464,
       "draw_probability": 0.251,
       "away_win_probability": 0.285,
+      "head_to_head": {
+        "available": false,
+        "matches": 0,
+        "draw_rate": null
+      },
       "home_elo": 1491.4,
       "away_elo": 1484.3,
       "home_points_per_match": 1.0,
@@ -4317,6 +4467,11 @@
       "home_win_probability": 0.285,
       "draw_probability": 0.247,
       "away_win_probability": 0.469,
+      "head_to_head": {
+        "available": false,
+        "matches": 0,
+        "draw_rate": null
+      },
       "home_elo": 1465.2,
       "away_elo": 1557.1,
       "home_points_per_match": 1.12,
@@ -4346,7 +4501,6 @@
       "correct": false,
       "confidence": "MEDIUM",
       "risk_flags": [
-        "beraberlik olasılığı canlı",
         "taraf tahmini düşük güven"
       ],
       "main_referee": "DİRENÇ TONUSLUOĞLU",
@@ -4390,9 +4544,15 @@
         "away_goals": 1,
         "probability": 0.129
       },
-      "home_win_probability": 0.293,
-      "draw_probability": 0.274,
-      "away_win_probability": 0.433,
+      "home_win_probability": 0.298,
+      "draw_probability": 0.263,
+      "away_win_probability": 0.439,
+      "head_to_head": {
+        "available": true,
+        "matches": 18,
+        "draw_rate": 0.222,
+        "last_meeting_date": "2026-04-11T11:30:00+00:00"
+      },
       "home_elo": 1446.8,
       "away_elo": 1502.2,
       "home_points_per_match": 1.0,
@@ -4466,6 +4626,11 @@
       "home_win_probability": 0.524,
       "draw_probability": 0.218,
       "away_win_probability": 0.257,
+      "head_to_head": {
+        "available": false,
+        "matches": 0,
+        "draw_rate": null
+      },
       "home_elo": 1614.9,
       "away_elo": 1567.3,
       "home_points_per_match": 2.75,
@@ -4539,6 +4704,11 @@
       "home_win_probability": 0.309,
       "draw_probability": 0.218,
       "away_win_probability": 0.474,
+      "head_to_head": {
+        "available": false,
+        "matches": 0,
+        "draw_rate": null
+      },
       "home_elo": 1638.4,
       "away_elo": 1665.0,
       "home_points_per_match": 2.38,
@@ -4569,7 +4739,6 @@
       "confidence": "LOW",
       "risk_flags": [
         "xG farkı dar",
-        "beraberlik olasılığı canlı",
         "taraf tahmini düşük güven"
       ],
       "main_referee": "BATUHAN KOLAK",
@@ -4613,9 +4782,15 @@
         "away_goals": 0,
         "probability": 0.135
       },
-      "home_win_probability": 0.353,
-      "draw_probability": 0.306,
-      "away_win_probability": 0.341,
+      "home_win_probability": 0.373,
+      "draw_probability": 0.267,
+      "away_win_probability": 0.36,
+      "head_to_head": {
+        "available": true,
+        "matches": 12,
+        "draw_rate": 0.083,
+        "last_meeting_date": "2026-04-04T11:30:00+00:00"
+      },
       "home_elo": 1428.9,
       "away_elo": 1541.1,
       "home_points_per_match": 0.75,
@@ -4643,7 +4818,7 @@
       "predicted": "home",
       "actual": "away",
       "correct": false,
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "risk_flags": [],
       "main_referee": "MEHMET TÜRKMEN",
       "expected_home_goals": 2.25,
@@ -4686,9 +4861,15 @@
         "away_goals": 1,
         "probability": 0.089
       },
-      "home_win_probability": 0.539,
-      "draw_probability": 0.202,
-      "away_win_probability": 0.259,
+      "home_win_probability": 0.502,
+      "draw_probability": 0.257,
+      "away_win_probability": 0.241,
+      "head_to_head": {
+        "available": true,
+        "matches": 29,
+        "draw_rate": 0.414,
+        "last_meeting_date": "2026-02-15T17:00:00+00:00"
+      },
       "home_elo": 1556.5,
       "away_elo": 1558.6,
       "home_points_per_match": 2.5,
@@ -4766,6 +4947,11 @@
       "home_win_probability": 0.368,
       "draw_probability": 0.253,
       "away_win_probability": 0.379,
+      "head_to_head": {
+        "available": false,
+        "matches": 0,
+        "draw_rate": null
+      },
       "home_elo": 1469.3,
       "away_elo": 1476.2,
       "home_points_per_match": 1.12,
@@ -4843,6 +5029,11 @@
       "home_win_probability": 0.388,
       "draw_probability": 0.287,
       "away_win_probability": 0.325,
+      "head_to_head": {
+        "available": false,
+        "matches": 0,
+        "draw_rate": null
+      },
       "home_elo": 1459.7,
       "away_elo": 1444.6,
       "home_points_per_match": 0.88,
@@ -4916,6 +5107,11 @@
       "home_win_probability": 0.304,
       "draw_probability": 0.251,
       "away_win_probability": 0.444,
+      "head_to_head": {
+        "available": false,
+        "matches": 0,
+        "draw_rate": null
+      },
       "home_elo": 1420.5,
       "away_elo": 1498.2,
       "home_points_per_match": 0.88,
@@ -4991,6 +5187,11 @@
       "home_win_probability": 0.429,
       "draw_probability": 0.256,
       "away_win_probability": 0.315,
+      "head_to_head": {
+        "available": false,
+        "matches": 0,
+        "draw_rate": null
+      },
       "home_elo": 1510.8,
       "away_elo": 1545.4,
       "home_points_per_match": 1.5,
@@ -5007,79 +5208,6 @@
       "market_log_edge": -0.7914,
       "market_prediction": "away",
       "market_correct": true
-    },
-    {
-      "match_id": "283710",
-      "date": "18.01.2026 - 17:00",
-      "home": "GENÇLERBİRLİĞİ",
-      "away": "SAMSUNSPOR A.Ş.",
-      "score": "1-1",
-      "raw_predicted": "home",
-      "predicted": "home",
-      "actual": "draw",
-      "correct": false,
-      "confidence": "MEDIUM",
-      "risk_flags": [],
-      "main_referee": "KADİR SAĞLAM",
-      "expected_home_goals": 1.6,
-      "expected_away_goals": 1.23,
-      "top_scorelines": [
-        {
-          "score": "1-1",
-          "home_goals": 1,
-          "away_goals": 1,
-          "probability": 0.116
-        },
-        {
-          "score": "1-0",
-          "home_goals": 1,
-          "away_goals": 0,
-          "probability": 0.094
-        },
-        {
-          "score": "2-1",
-          "home_goals": 2,
-          "away_goals": 1,
-          "probability": 0.093
-        },
-        {
-          "score": "2-0",
-          "home_goals": 2,
-          "away_goals": 0,
-          "probability": 0.075
-        },
-        {
-          "score": "0-1",
-          "home_goals": 0,
-          "away_goals": 1,
-          "probability": 0.072
-        }
-      ],
-      "recommended_scoreline": {
-        "score": "1-1",
-        "home_goals": 1,
-        "away_goals": 1,
-        "probability": 0.116
-      },
-      "home_win_probability": 0.46,
-      "draw_probability": 0.246,
-      "away_win_probability": 0.293,
-      "home_elo": 1474.3,
-      "away_elo": 1510.5,
-      "home_points_per_match": 1.25,
-      "away_points_per_match": 1.12,
-      "strength_edge": 0.09,
-      "home_xg_efficiency": null,
-      "away_xg_efficiency": null,
-      "referee_adj": -0.009,
-      "referee_cards_per_match": 5.38,
-      "referee_goals_per_match": 2.75,
-      "home_market_value_eur": 26250000,
-      "away_market_value_eur": 56100000,
-      "market_edge_million_eur": -29.85,
-      "market_log_edge": -0.7595,
-      "market_prediction": "away",
-      "market_correct": false
     },
     {
       "match_id": "283653",
@@ -5138,9 +5266,15 @@
         "away_goals": 1,
         "probability": 0.135
       },
-      "home_win_probability": 0.343,
-      "draw_probability": 0.297,
-      "away_win_probability": 0.36,
+      "home_win_probability": 0.355,
+      "draw_probability": 0.272,
+      "away_win_probability": 0.373,
+      "head_to_head": {
+        "available": true,
+        "matches": 17,
+        "draw_rate": 0.176,
+        "last_meeting_date": "2026-04-12T14:00:00+00:00"
+      },
       "home_elo": 1465.9,
       "away_elo": 1537.8,
       "home_points_per_match": 1.25,
@@ -5157,6 +5291,88 @@
       "market_log_edge": -0.7583,
       "market_prediction": "away",
       "market_correct": true
+    },
+    {
+      "match_id": "283806",
+      "date": "12.04.2026 - 17:00",
+      "home": "GÖZTEPE A.Ş.",
+      "away": "KASIMPAŞA A.Ş.",
+      "score": "3-3",
+      "raw_predicted": "away",
+      "predicted": "away",
+      "actual": "draw",
+      "correct": false,
+      "confidence": "LOW",
+      "risk_flags": [
+        "xG farkı dar",
+        "taraf tahmini düşük güven"
+      ],
+      "main_referee": "ÇAĞDAŞ ALTAY",
+      "expected_home_goals": 1.26,
+      "expected_away_goals": 1.33,
+      "top_scorelines": [
+        {
+          "score": "1-1",
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.126
+        },
+        {
+          "score": "0-1",
+          "home_goals": 0,
+          "away_goals": 1,
+          "probability": 0.099
+        },
+        {
+          "score": "1-0",
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.095
+        },
+        {
+          "score": "1-2",
+          "home_goals": 1,
+          "away_goals": 2,
+          "probability": 0.083
+        },
+        {
+          "score": "2-1",
+          "home_goals": 2,
+          "away_goals": 1,
+          "probability": 0.079
+        }
+      ],
+      "recommended_scoreline": {
+        "score": "1-1",
+        "home_goals": 1,
+        "away_goals": 1,
+        "probability": 0.126
+      },
+      "home_win_probability": 0.362,
+      "draw_probability": 0.245,
+      "away_win_probability": 0.393,
+      "head_to_head": {
+        "available": true,
+        "matches": 17,
+        "draw_rate": 0.176,
+        "last_meeting_date": "2026-04-12T14:00:00+00:00"
+      },
+      "home_elo": 1540.5,
+      "away_elo": 1437.4,
+      "home_points_per_match": 0.88,
+      "away_points_per_match": 1.38,
+      "strength_edge": -0.2,
+      "home_xg_efficiency": null,
+      "away_xg_efficiency": null,
+      "referee_adj": 0.053,
+      "referee_cards_per_match": 2.73,
+      "referee_goals_per_match": 3.09,
+      "home_market_value_eur": 65750000,
+      "away_market_value_eur": 30800000,
+      "market_edge_million_eur": 34.95,
+      "market_log_edge": 0.7583,
+      "market_prediction": "home",
+      "market_correct": false
     }
   ]
 }

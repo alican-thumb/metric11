@@ -610,8 +610,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.41,
-    "draw_probability": 0.284,
-    "opponent_win_probability": 0.305,
+    "draw_probability": 0.269,
+    "opponent_win_probability": 0.32,
     "expected_goals_for": 1.19,
     "expected_goals_against": 1.03,
     "top_scorelines": [
@@ -665,8 +665,7 @@
       "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "action_label": "Korumalı taraf tahmini",
       "risk_notes": [
-        "Beraberlik güçlü alternatif",
-        "draw_probability_high",
+        "draw_probability_live",
         "xg_margin_narrow",
         "top_draw_scoreline",
         "probability_margin_narrow",
@@ -679,7 +678,7 @@
       "raw_result": "target_win",
       "final_result": "target_win",
       "probability": 0.41,
-      "margin": 0.105,
+      "margin": 0.09,
       "adjustment": "raw_unvalidated_team",
       "label": "GENÇLERBİRLİĞİ kazanır",
       "raw_label": "GENÇLERBİRLİĞİ kazanır",
@@ -700,11 +699,17 @@
         "son formda beraberlik eğilimi"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 24,
+      "draw_rate": 0.167,
+      "last_meeting_date": "2026-03-01T13:00:00+00:00"
+    },
     "draw_risk": {
-      "score": 100,
+      "score": 95,
       "risk_level": "HIGH",
       "reasons": [
-        "draw_probability_high",
+        "draw_probability_live",
         "xg_margin_narrow",
         "top_draw_scoreline",
         "probability_margin_narrow",
@@ -1035,6 +1040,6 @@
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği DIMITRIOS GOUTAS, ZAN ZUZEK, METEHAN MİMAROĞLU. Disiplin yönetimi gereken oyuncular: SAMED ONUR, OĞULCAN ÜLGÜN, ADAMA TRAORE.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %55 uyum buldu; karar etiketi TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.19-1.03 yerine 1.54-1.03 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.19-1.03 bandından 1.41-1.01 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %46 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %41, beraberliği %28, rakip galibiyetini %30 olarak işaretliyor. Gol beklentisi 1.19-1.03; kart sinyali HIGH."
+    "MVP olasılık motoru Beşiktaş galibiyetini %41, beraberliği %27, rakip galibiyetini %32 olarak işaretliyor. Gol beklentisi 1.19-1.03; kart sinyali HIGH."
   ]
 }

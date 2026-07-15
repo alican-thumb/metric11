@@ -593,8 +593,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.453,
-    "draw_probability": 0.256,
-    "opponent_win_probability": 0.291,
+    "draw_probability": 0.275,
+    "opponent_win_probability": 0.272,
     "expected_goals_for": 1.6,
     "expected_goals_against": 1.26,
     "top_scorelines": [
@@ -648,20 +648,20 @@
       "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "action_label": "Korumalı taraf tahmini",
       "risk_notes": [
-        "draw_probability_watch",
+        "draw_probability_live",
         "xg_margin_watch",
         "top_draw_scoreline",
         "probability_margin_watch",
         "strength_edge_very_narrow",
         "low_confidence_side_pick",
-        "draw_calibration_medium"
+        "draw_calibration_high"
       ]
     },
     "display_prediction": {
       "raw_result": "target_win",
       "final_result": "target_win",
       "probability": 0.453,
-      "margin": 0.162,
+      "margin": 0.178,
       "adjustment": "raw_unvalidated_team",
       "label": "FENERBAHÇE A.Ş. kazanır",
       "raw_label": "FENERBAHÇE A.Ş. kazanır",
@@ -673,25 +673,32 @@
     "availability_missing_count": 0,
     "strength_edge": 0.051,
     "draw_calibration": {
-      "lift": 0.11,
-      "risk_level": "MEDIUM",
+      "lift": 0.17,
+      "risk_level": "HIGH",
       "reasons": [
         "xG farkı dar",
         "takım gücü yakın",
-        "son formda beraberlik eğilimi"
+        "son formda beraberlik eğilimi",
+        "h2h_yüksek_beraberlik_geçmişi"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 10,
+      "draw_rate": 0.5,
+      "last_meeting_date": "2026-03-08T17:00:00+00:00"
+    },
     "draw_risk": {
-      "score": 68,
+      "score": 81,
       "risk_level": "HIGH",
       "reasons": [
-        "draw_probability_watch",
+        "draw_probability_live",
         "xg_margin_watch",
         "top_draw_scoreline",
         "probability_margin_watch",
         "strength_edge_very_narrow",
         "low_confidence_side_pick",
-        "draw_calibration_medium"
+        "draw_calibration_high"
       ],
       "protected_prediction": true,
       "recommended_model_action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
@@ -1010,6 +1017,6 @@
     "Kadro tercih önerisi: Önde baskı ve skor arama. Hücum önceliği YOUSSEF EN NESYRI, ANDERSON SOUZA CONCEIÇAO, MILAN SKRINIAR. Disiplin yönetimi gereken oyuncular: JAYDEN QUINN OOSTERWOLDE, İRFAN CAN KAHVECİ, JHON JADER DURAN PALACIOS.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %93 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.6-1.26 yerine 1.67-1.26 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.6-1.26 bandından 1.82-1.24 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %51 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %45, beraberliği %26, rakip galibiyetini %29 olarak işaretliyor. Gol beklentisi 1.6-1.26; kart sinyali MEDIUM."
+    "MVP olasılık motoru Beşiktaş galibiyetini %45, beraberliği %28, rakip galibiyetini %27 olarak işaretliyor. Gol beklentisi 1.6-1.26; kart sinyali MEDIUM."
   ]
 }

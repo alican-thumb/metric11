@@ -661,8 +661,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.543,
-    "draw_probability": 0.26,
-    "opponent_win_probability": 0.197,
+    "draw_probability": 0.242,
+    "opponent_win_probability": 0.215,
     "expected_goals_for": 1.53,
     "expected_goals_against": 0.69,
     "top_scorelines": [
@@ -721,7 +721,7 @@
       "raw_result": "target_win",
       "final_result": "target_win",
       "probability": 0.543,
-      "margin": 0.284,
+      "margin": 0.301,
       "adjustment": "raw_unvalidated_team",
       "label": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ kazanır",
       "raw_label": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ kazanır",
@@ -741,11 +741,16 @@
         "son formda beraberlik eğilimi"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 18,
+      "draw_rate": 0.111,
+      "last_meeting_date": "2026-03-07T13:00:00+00:00"
+    },
     "draw_risk": {
-      "score": 22,
+      "score": 12,
       "risk_level": "LOW",
       "reasons": [
-        "draw_probability_watch",
         "strength_edge_very_narrow",
         "medium_confidence_side_pick",
         "draw_calibration_medium",
@@ -1053,6 +1058,6 @@
     "Kadro tercih önerisi: Önde baskı ve skor arama. Hücum önceliği ELDOR SHOMURODOV, DAVIE SELKE, IVAN BRNIC. Disiplin yönetimi gereken oyuncular: ONUR ERGÜN, ONUR BULUT, NUNO MIGUEL DA COSTA JOIA.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %90 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.53-0.69 yerine 1.64-0.69 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.53-0.69 bandından 1.75-0.67 bandına taşırdı. Bu senaryoda en olası skor 1-0 ve kazanma olasılığı %63 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %54, beraberliği %26, rakip galibiyetini %20 olarak işaretliyor. Gol beklentisi 1.53-0.69; kart sinyali MEDIUM."
+    "MVP olasılık motoru Beşiktaş galibiyetini %54, beraberliği %24, rakip galibiyetini %22 olarak işaretliyor. Gol beklentisi 1.53-0.69; kart sinyali MEDIUM."
   ]
 }

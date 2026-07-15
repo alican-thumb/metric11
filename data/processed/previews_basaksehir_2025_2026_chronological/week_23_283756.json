@@ -661,8 +661,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.463,
-    "draw_probability": 0.239,
-    "opponent_win_probability": 0.299,
+    "draw_probability": 0.242,
+    "opponent_win_probability": 0.295,
     "expected_goals_for": 1.96,
     "expected_goals_against": 1.59,
     "top_scorelines": [
@@ -721,14 +721,14 @@
         "probability_margin_watch",
         "strength_edge_very_narrow",
         "low_confidence_side_pick",
-        "draw_calibration_medium"
+        "draw_calibration_high"
       ]
     },
     "display_prediction": {
       "raw_result": "target_win",
       "final_result": "target_win",
       "probability": 0.463,
-      "margin": 0.164,
+      "margin": 0.167,
       "adjustment": "raw_unvalidated_team",
       "label": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ kazanır",
       "raw_label": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ kazanır",
@@ -740,16 +740,23 @@
     "availability_missing_count": 0,
     "strength_edge": 0.078,
     "draw_calibration": {
-      "lift": 0.11,
-      "risk_level": "MEDIUM",
+      "lift": 0.145,
+      "risk_level": "HIGH",
       "reasons": [
         "xG farkı dar",
         "takım gücü yakın",
-        "son formda beraberlik eğilimi"
+        "son formda beraberlik eğilimi",
+        "h2h_beraberlik_geçmişi"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 20,
+      "draw_rate": 0.3,
+      "last_meeting_date": "2026-02-21T13:00:00+00:00"
+    },
     "draw_risk": {
-      "score": 58,
+      "score": 63,
       "risk_level": "HIGH",
       "reasons": [
         "xg_margin_watch",
@@ -757,7 +764,7 @@
         "probability_margin_watch",
         "strength_edge_very_narrow",
         "low_confidence_side_pick",
-        "draw_calibration_medium"
+        "draw_calibration_high"
       ],
       "protected_prediction": true,
       "recommended_model_action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",

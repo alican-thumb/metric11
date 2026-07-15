@@ -637,8 +637,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.401,
-    "draw_probability": 0.265,
-    "opponent_win_probability": 0.334,
+    "draw_probability": 0.253,
+    "opponent_win_probability": 0.346,
     "expected_goals_for": 1.39,
     "expected_goals_against": 1.33,
     "top_scorelines": [
@@ -693,10 +693,10 @@
       "action_label": "Korumalı taraf tahmini",
       "risk_notes": [
         "Taraflar arası fark dar",
-        "draw_probability_live",
+        "draw_probability_watch",
         "xg_margin_very_narrow",
         "top_draw_scoreline",
-        "probability_margin_narrow",
+        "probability_margin_very_narrow",
         "strength_edge_very_narrow",
         "low_confidence_side_pick",
         "draw_calibration_high"
@@ -706,7 +706,7 @@
       "raw_result": "target_win",
       "final_result": "target_win",
       "probability": 0.401,
-      "margin": 0.067,
+      "margin": 0.054,
       "adjustment": "raw_unvalidated_team",
       "label": "GAZİANTEP FUTBOL KULÜBÜ A.Ş. kazanır",
       "raw_label": "GAZİANTEP FUTBOL KULÜBÜ A.Ş. kazanır",
@@ -727,14 +727,20 @@
         "son formda beraberlik eğilimi"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 18,
+      "draw_rate": 0.167,
+      "last_meeting_date": "2026-04-04T14:00:00+00:00"
+    },
     "draw_risk": {
       "score": 100,
       "risk_level": "HIGH",
       "reasons": [
-        "draw_probability_live",
+        "draw_probability_watch",
         "xg_margin_very_narrow",
         "top_draw_scoreline",
-        "probability_margin_narrow",
+        "probability_margin_very_narrow",
         "strength_edge_very_narrow",
         "low_confidence_side_pick",
         "draw_calibration_high"
@@ -1061,6 +1067,6 @@
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği KACPER SZYMON KOZLOWSKI, ALEXANDRU IULIAN MAXIM, CHRISTOPHER LUNGOYI. Disiplin yönetimi gereken oyuncular: YUSUF KARHAN KABADAYI, PAPA ALIOUNE NDIAYE, EMMANUEL OKYERE BOATENG.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %54 uyum buldu; karar etiketi TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.39-1.33 yerine 1.74-1.33 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday ERNEST MUÇİ (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.39-1.33 bandından 1.58-1.32 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %44 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %40, beraberliği %26, rakip galibiyetini %33 olarak işaretliyor. Gol beklentisi 1.39-1.33; kart sinyali MEDIUM."
+    "MVP olasılık motoru Beşiktaş galibiyetini %40, beraberliği %25, rakip galibiyetini %35 olarak işaretliyor. Gol beklentisi 1.39-1.33; kart sinyali MEDIUM."
   ]
 }

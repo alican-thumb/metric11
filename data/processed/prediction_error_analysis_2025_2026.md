@@ -11,9 +11,9 @@
 
 - missed_draw: 8
 - big_match_miss: 3
-- overconfident_miss: 7
+- overconfident_miss: 6
 - overrated_opponent: 3
-- overrated_besiktas: 8
+- overrated_besiktas: 7
 
 ## Öncelikli İyileştirmeler
 
@@ -34,6 +34,6 @@
 - 15.02.2026 - 20:00 | RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ - BEŞİKTAŞ A.Ş. | skor 2-3 | tahmin=opponent_win gerçek=target_win | Rakip güç/form sinyali fazla pozitif ağırlık almış.
 - 22.02.2026 - 20:00 | BEŞİKTAŞ A.Ş. - GÖZTEPE A.Ş. | skor 4-0 | tahmin=draw gerçek=target_win | Düşük marjlı hata.
 - 5.04.2026 - 20:00 | FENERBAHÇE A.Ş. - BEŞİKTAŞ A.Ş. | skor 1-0 | tahmin=draw gerçek=opponent_win | Büyük maç oynaklığı ve kadro/duygu etkisi modele eksik yansımış.
-- 19.04.2026 - 17:00 | SAMSUNSPOR A.Ş. - BEŞİKTAŞ A.Ş. | skor 2-1 | tahmin=target_win gerçek=opponent_win | Beşiktaş form veya güç sinyali fazla pozitif ağırlık almış.
+- 19.04.2026 - 17:00 | SAMSUNSPOR A.Ş. - BEŞİKTAŞ A.Ş. | skor 2-1 | tahmin=draw gerçek=opponent_win | Düşük marjlı hata.
 - 27.04.2026 - 20:00 | BEŞİKTAŞ A.Ş. - MISIRLI.COM.TR FATİH KARAGÜMRÜK | skor 0-0 | tahmin=target_win gerçek=draw | Beraberlik riski ana tahminin gerisinde kalmış.
 - 15.05.2026 - 20:00 | ÇAYKUR RİZESPOR A.Ş. - BEŞİKTAŞ A.Ş. | skor 2-2 | tahmin=target_win gerçek=draw | Beraberlik riski ana tahminin gerisinde kalmış.

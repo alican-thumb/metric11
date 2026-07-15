@@ -663,8 +663,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.309,
-    "draw_probability": 0.263,
-    "opponent_win_probability": 0.427,
+    "draw_probability": 0.262,
+    "opponent_win_probability": 0.429,
     "expected_goals_for": 1.24,
     "expected_goals_against": 1.68,
     "top_scorelines": [
@@ -713,7 +713,7 @@
     },
     "recommended_call": {
       "result": "opponent_win",
-      "probability": 0.427,
+      "probability": 0.429,
       "scoreline": "1-1",
       "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "action_label": "Korumalı taraf tahmini",
@@ -722,7 +722,7 @@
         "draw_probability_watch",
         "xg_margin_watch",
         "top_draw_scoreline",
-        "probability_margin_narrow",
+        "probability_margin_watch",
         "strength_edge_narrow",
         "low_confidence_side_pick"
       ]
@@ -730,8 +730,8 @@
     "display_prediction": {
       "raw_result": "opponent_win",
       "final_result": "opponent_win",
-      "probability": 0.427,
-      "margin": 0.118,
+      "probability": 0.429,
+      "margin": 0.12,
       "adjustment": "raw_unvalidated_team",
       "label": "TRABZONSPOR A.Ş. kazanır",
       "raw_label": "TRABZONSPOR A.Ş. kazanır",
@@ -750,14 +750,20 @@
         "büyük maç denge etkisi"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 21,
+      "draw_rate": 0.286,
+      "last_meeting_date": "2026-05-17T17:00:00+00:00"
+    },
     "draw_risk": {
-      "score": 63,
+      "score": 57,
       "risk_level": "HIGH",
       "reasons": [
         "draw_probability_watch",
         "xg_margin_watch",
         "top_draw_scoreline",
-        "probability_margin_narrow",
+        "probability_margin_watch",
         "strength_edge_narrow",
         "low_confidence_side_pick"
       ],

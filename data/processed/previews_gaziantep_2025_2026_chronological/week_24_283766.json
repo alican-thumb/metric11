@@ -664,8 +664,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.383,
-    "draw_probability": 0.286,
-    "opponent_win_probability": 0.331,
+    "draw_probability": 0.29,
+    "opponent_win_probability": 0.327,
     "expected_goals_for": 1.12,
     "expected_goals_against": 1.1,
     "top_scorelines": [
@@ -734,7 +734,7 @@
       "raw_result": "target_win",
       "final_result": "target_win",
       "probability": 0.383,
-      "margin": 0.051,
+      "margin": 0.055,
       "adjustment": "raw_unvalidated_team",
       "label": "GAZİANTEP FUTBOL KULÜBÜ A.Ş. kazanır",
       "raw_label": "GAZİANTEP FUTBOL KULÜBÜ A.Ş. kazanır",
@@ -752,8 +752,15 @@
         "xG farkı çok dar",
         "takım gücü dengede",
         "orta gol bandı",
-        "son formda beraberlik eğilimi"
+        "son formda beraberlik eğilimi",
+        "h2h_beraberlik_geçmişi"
       ]
+    },
+    "head_to_head": {
+      "available": true,
+      "matches": 19,
+      "draw_rate": 0.316,
+      "last_meeting_date": "2026-03-01T17:00:00+00:00"
     },
     "draw_risk": {
       "score": 100,

@@ -660,8 +660,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.299,
-    "draw_probability": 0.254,
-    "opponent_win_probability": 0.447,
+    "draw_probability": 0.266,
+    "opponent_win_probability": 0.435,
     "expected_goals_for": 1.08,
     "expected_goals_against": 1.64,
     "top_scorelines": [
@@ -710,24 +710,24 @@
     },
     "recommended_call": {
       "result": "opponent_win",
-      "probability": 0.447,
+      "probability": 0.435,
       "scoreline": "1-1",
       "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "action_label": "Korumalı taraf tahmini",
       "risk_notes": [
-        "draw_probability_watch",
+        "draw_probability_live",
         "top_draw_scoreline",
         "probability_margin_watch",
         "strength_edge_very_narrow",
         "low_confidence_side_pick",
-        "draw_calibration_medium"
+        "draw_calibration_high"
       ]
     },
     "display_prediction": {
       "raw_result": "opponent_win",
       "final_result": "opponent_win",
-      "probability": 0.447,
-      "margin": 0.148,
+      "probability": 0.435,
+      "margin": 0.136,
       "adjustment": "raw_unvalidated_team",
       "label": "GENÇLERBİRLİĞİ kazanır",
       "raw_label": "GENÇLERBİRLİĞİ kazanır",
@@ -739,24 +739,31 @@
     "availability_missing_count": 0,
     "strength_edge": 0.03,
     "draw_calibration": {
-      "lift": 0.1,
-      "risk_level": "MEDIUM",
+      "lift": 0.135,
+      "risk_level": "HIGH",
       "reasons": [
         "takım gücü dengede",
         "orta gol bandı",
-        "son formda beraberlik eğilimi"
+        "son formda beraberlik eğilimi",
+        "h2h_beraberlik_geçmişi"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 19,
+      "draw_rate": 0.368,
+      "last_meeting_date": "2026-03-19T17:00:00+00:00"
+    },
     "draw_risk": {
-      "score": 59,
+      "score": 72,
       "risk_level": "HIGH",
       "reasons": [
-        "draw_probability_watch",
+        "draw_probability_live",
         "top_draw_scoreline",
         "probability_margin_watch",
         "strength_edge_very_narrow",
         "low_confidence_side_pick",
-        "draw_calibration_medium"
+        "draw_calibration_high"
       ],
       "protected_prediction": true,
       "recommended_model_action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
@@ -1060,6 +1067,6 @@
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği MEHMET UMUT NAYİR, ALASSANE NDAO, MUHAMMET TUNAHAN TAŞCI. Disiplin yönetimi gereken oyuncular: UĞURCAN YAZĞILI, JACKSON KYANVUBU MULEKA, MORTEN BJORLO.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %92 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.08-1.64 yerine 1.16-1.64 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.08-1.64 bandından 1.3-1.62 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %31 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %30, beraberliği %25, rakip galibiyetini %45 olarak işaretliyor. Gol beklentisi 1.08-1.64; kart sinyali MEDIUM."
+    "MVP olasılık motoru Beşiktaş galibiyetini %30, beraberliği %27, rakip galibiyetini %44 olarak işaretliyor. Gol beklentisi 1.08-1.64; kart sinyali MEDIUM."
   ]
 }

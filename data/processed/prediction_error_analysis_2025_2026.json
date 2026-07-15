@@ -12,9 +12,9 @@
     "miss_types": {
       "missed_draw": 8,
       "big_match_miss": 3,
-      "overconfident_miss": 7,
+      "overconfident_miss": 6,
       "overrated_opponent": 3,
-      "overrated_besiktas": 8
+      "overrated_besiktas": 7
     }
   },
   "critical_misses": [
@@ -31,7 +31,7 @@
       "recommended_action": "taraf_eğilimi",
       "prediction_adjustment": "none",
       "actionable": true,
-      "confidence_probability": 0.58,
+      "confidence_probability": 0.594,
       "card_signal": "MEDIUM",
       "is_big_match": true,
       "week": 8,
@@ -111,7 +111,7 @@
       "recommended_action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "prediction_adjustment": "protected_side",
       "actionable": false,
-      "confidence_probability": 0.431,
+      "confidence_probability": 0.423,
       "card_signal": "MEDIUM",
       "is_big_match": true,
       "week": 16,
@@ -168,14 +168,14 @@
       "actual": "target_win",
       "correct": false,
       "raw_correct": false,
-      "recommended_action": "KEEP_PICK_WITH_DRAW_WARNING",
+      "recommended_action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "prediction_adjustment": "protected_side",
       "actionable": false,
-      "confidence_probability": 0.502,
+      "confidence_probability": 0.482,
       "card_signal": "MEDIUM",
       "is_big_match": false,
       "week": 22,
-      "confidence_bucket": "OVERCONFIDENT",
+      "confidence_bucket": "LOW_MARGIN",
       "diagnosis": "Rakip güç/form sinyali fazla pozitif ağırlık almış."
     },
     {
@@ -191,7 +191,7 @@
       "recommended_action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "prediction_adjustment": "high_draw_risk_override",
       "actionable": false,
-      "confidence_probability": 0.267,
+      "confidence_probability": 0.245,
       "card_signal": "LOW",
       "is_big_match": false,
       "week": 23,
@@ -203,15 +203,15 @@
       "fixture": "FENERBAHÇE A.Ş. - BEŞİKTAŞ A.Ş.",
       "date": "5.04.2026 - 20:00",
       "actual_score": "1-0",
-      "raw_predicted": "opponent_win",
+      "raw_predicted": "target_win",
       "predicted": "draw",
       "actual": "opponent_win",
       "correct": false,
-      "raw_correct": true,
+      "raw_correct": false,
       "recommended_action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "prediction_adjustment": "high_draw_risk_override",
       "actionable": false,
-      "confidence_probability": 0.257,
+      "confidence_probability": 0.261,
       "card_signal": "MEDIUM",
       "is_big_match": true,
       "week": 28,
@@ -224,19 +224,19 @@
       "date": "19.04.2026 - 17:00",
       "actual_score": "2-1",
       "raw_predicted": "target_win",
-      "predicted": "target_win",
+      "predicted": "draw",
       "actual": "opponent_win",
       "correct": false,
       "raw_correct": false,
       "recommended_action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
-      "prediction_adjustment": "protected_side",
+      "prediction_adjustment": "high_draw_risk_override",
       "actionable": false,
-      "confidence_probability": 0.411,
+      "confidence_probability": 0.268,
       "card_signal": "MEDIUM",
       "is_big_match": false,
       "week": 30,
       "confidence_bucket": "LOW_MARGIN",
-      "diagnosis": "Beşiktaş form veya güç sinyali fazla pozitif ağırlık almış."
+      "diagnosis": "Düşük marjlı hata."
     },
     {
       "match_id": "283828",
@@ -465,16 +465,16 @@
         "HYEONGYU OH",
         "ORKUN KÖKÇÜ",
         "JOAO PEDRO FERREIRA DA SILVA",
-        "MUSTAFA ERHAN HEKİMOĞLU",
-        "CENGİZ ÜNDER"
+        "ISHOLA JUNIOR  OLAITAN",
+        "MUSTAFA ERHAN HEKİMOĞLU"
       ],
       "top_8_candidates": [
         "HYEONGYU OH",
         "ORKUN KÖKÇÜ",
         "JOAO PEDRO FERREIRA DA SILVA",
+        "ISHOLA JUNIOR  OLAITAN",
         "MUSTAFA ERHAN HEKİMOĞLU",
         "CENGİZ ÜNDER",
-        "ISHOLA JUNIOR  OLAITAN",
         "ONYINYE WILFRED NDIDI",
         "EL BILAL TOURE"
       ],
@@ -482,9 +482,9 @@
         "HYEONGYU OH",
         "ORKUN KÖKÇÜ",
         "JOAO PEDRO FERREIRA DA SILVA",
+        "ISHOLA JUNIOR  OLAITAN",
         "MUSTAFA ERHAN HEKİMOĞLU",
         "CENGİZ ÜNDER",
-        "ISHOLA JUNIOR  OLAITAN",
         "ONYINYE WILFRED NDIDI",
         "EL BILAL TOURE",
         "MICHAEL AMIR  MURILLO BERMUDEZ",
@@ -509,29 +509,29 @@
         "HYEONGYU OH",
         "JOAO PEDRO FERREIRA DA SILVA",
         "CENGİZ ÜNDER",
-        "EL BILAL TOURE"
+        "ISHOLA JUNIOR  OLAITAN"
       ],
       "top_8_candidates": [
         "ORKUN KÖKÇÜ",
         "HYEONGYU OH",
         "JOAO PEDRO FERREIRA DA SILVA",
         "CENGİZ ÜNDER",
+        "ISHOLA JUNIOR  OLAITAN",
         "EL BILAL TOURE",
         "MUSTAFA ERHAN HEKİMOĞLU",
-        "BADOBRE EMMANUEL ELYSEE DJEDJE AGBADOU",
-        "ONYINYE WILFRED NDIDI"
+        "BADOBRE EMMANUEL ELYSEE DJEDJE AGBADOU"
       ],
       "top_10_candidates": [
         "ORKUN KÖKÇÜ",
         "HYEONGYU OH",
         "JOAO PEDRO FERREIRA DA SILVA",
         "CENGİZ ÜNDER",
+        "ISHOLA JUNIOR  OLAITAN",
         "EL BILAL TOURE",
         "MUSTAFA ERHAN HEKİMOĞLU",
         "BADOBRE EMMANUEL ELYSEE DJEDJE AGBADOU",
         "ONYINYE WILFRED NDIDI",
-        "KRİSTJAN ASLLANİ",
-        "VACLAV CERNY"
+        "KRİSTJAN ASLLANİ"
       ],
       "actual_scorers": [
         "TIAGO EMANUEL EMBALO DJALO",

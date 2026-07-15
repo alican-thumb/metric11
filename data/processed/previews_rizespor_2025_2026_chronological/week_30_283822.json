@@ -677,8 +677,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.233,
-    "draw_probability": 0.226,
-    "opponent_win_probability": 0.541,
+    "draw_probability": 0.204,
+    "opponent_win_probability": 0.563,
     "expected_goals_for": 1.26,
     "expected_goals_against": 2.38,
     "top_scorelines": [
@@ -727,7 +727,7 @@
     },
     "recommended_call": {
       "result": "opponent_win",
-      "probability": 0.541,
+      "probability": 0.563,
       "scoreline": "1-2",
       "action": "taraf_eğilimi",
       "action_label": "Taraf eğilimi",
@@ -738,8 +738,8 @@
     "display_prediction": {
       "raw_result": "opponent_win",
       "final_result": "opponent_win",
-      "probability": 0.541,
-      "margin": 0.309,
+      "probability": 0.563,
+      "margin": 0.33,
       "adjustment": "raw_unvalidated_team",
       "label": "FENERBAHÇE A.Ş. kazanır",
       "raw_label": "FENERBAHÇE A.Ş. kazanır",
@@ -756,6 +756,12 @@
       "reasons": [
         "büyük maç denge etkisi"
       ]
+    },
+    "head_to_head": {
+      "available": true,
+      "matches": 24,
+      "draw_rate": 0.125,
+      "last_meeting_date": "2026-04-17T17:00:00+00:00"
     },
     "draw_risk": {
       "score": 14,
@@ -1056,6 +1062,6 @@
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği QAZIM LACI, ALI SOWE, MIHAI-VALENTIN  MIHAILA. Disiplin yönetimi gereken oyuncular: IOANNIS PAPANIKOLAOU, LOIDE ANTONIO AUGUSTO, HALİL İBRAHİM DERVİŞOĞLU.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %106 uyum buldu; karar etiketi UYUMLU. Alternatif model 11'i kullanılsaydı xG 1.26-2.38 yerine 1.26-2.38 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.26-2.38 bandından 1.48-2.36 bandına taşırdı. Bu senaryoda en olası skor 1-2 ve kazanma olasılığı %24 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %23, beraberliği %23, rakip galibiyetini %54 olarak işaretliyor. Gol beklentisi 1.26-2.38; kart sinyali MEDIUM."
+    "MVP olasılık motoru Beşiktaş galibiyetini %23, beraberliği %20, rakip galibiyetini %56 olarak işaretliyor. Gol beklentisi 1.26-2.38; kart sinyali MEDIUM."
   ]
 }

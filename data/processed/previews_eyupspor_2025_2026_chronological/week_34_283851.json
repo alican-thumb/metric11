@@ -673,8 +673,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.273,
-    "draw_probability": 0.239,
-    "opponent_win_probability": 0.487,
+    "draw_probability": 0.252,
+    "opponent_win_probability": 0.475,
     "expected_goals_for": 1.39,
     "expected_goals_against": 2.17,
     "top_scorelines": [
@@ -723,22 +723,24 @@
     },
     "recommended_call": {
       "result": "opponent_win",
-      "probability": 0.487,
+      "probability": 0.475,
       "scoreline": "1-2",
-      "action": "KEEP_PICK_WITH_DRAW_WARNING",
-      "action_label": "Beraberlik uyarılı tahmin",
+      "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
+      "action_label": "Korumalı taraf tahmini",
       "risk_notes": [
         "Büyük maç oynaklığı",
+        "draw_probability_watch",
         "draw_scoreline_top_two",
         "strength_edge_narrow",
-        "low_confidence_side_pick"
+        "low_confidence_side_pick",
+        "draw_calibration_medium"
       ]
     },
     "display_prediction": {
       "raw_result": "opponent_win",
       "final_result": "opponent_win",
-      "probability": 0.487,
-      "margin": 0.214,
+      "probability": 0.475,
+      "margin": 0.201,
       "adjustment": "raw_unvalidated_team",
       "label": "FENERBAHÇE A.Ş. kazanır",
       "raw_label": "FENERBAHÇE A.Ş. kazanır",
@@ -750,32 +752,42 @@
     "availability_missing_count": 0,
     "strength_edge": -0.136,
     "draw_calibration": {
-      "lift": 0.025,
-      "risk_level": "LOW",
-      "reasons": [
-        "büyük maç denge etkisi"
-      ]
-    },
-    "draw_risk": {
-      "score": 25,
+      "lift": 0.085,
       "risk_level": "MEDIUM",
       "reasons": [
+        "büyük maç denge etkisi",
+        "h2h_yüksek_beraberlik_geçmişi"
+      ]
+    },
+    "head_to_head": {
+      "available": true,
+      "matches": 4,
+      "draw_rate": 0.5,
+      "last_meeting_date": "2026-05-17T17:00:00+00:00"
+    },
+    "draw_risk": {
+      "score": 42,
+      "risk_level": "HIGH",
+      "reasons": [
+        "draw_probability_watch",
         "draw_scoreline_top_two",
         "strength_edge_narrow",
-        "low_confidence_side_pick"
+        "low_confidence_side_pick",
+        "draw_calibration_medium"
       ],
       "protected_prediction": true,
-      "recommended_model_action": "KEEP_PICK_WITH_DRAW_WARNING",
+      "recommended_model_action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "note": "Ana 1X2 tahminini değiştirmeden beraberlik senaryosunu görünür yapan risk katmanıdır."
     },
     "big_match_profile": {
       "available": true,
       "risk_level": "MEDIUM",
-      "volatility_score": 0.5,
+      "volatility_score": 0.65,
       "adjustment": "ana tarafı koru ama alternatif senaryoyu görünür tut",
       "notes": [
         "büyük maç taban riski",
         "büyük maç varyansı yüksek",
+        "beraberlik riski canlı",
         "deplasman büyük maçı"
       ]
     },
@@ -1059,10 +1071,10 @@
     "Hakem profili kart tarafında anlamlı bir sinyal veriyor: MEHMET TÜRKMEN bu sezon önceki 17 Beşiktaş maçında toplam maç başı 3.18 kart, Beşiktaş'a maç başı 1.53 kart ortalamasıyla öne çıkıyor.",
     "Olası 11 sinyalinde son dönemde öne çıkan isimler: CENGİZ UMUT MERAŞ, METEHAN ALTUNBAŞ, UMUT DİLAN BOZOK, LUCAS FELIPE CALEGARI, BEDİRHAN ÖZYURT, BARAN ALİ GEZEK. Kart riski tarafında ise son 8 maç penceresinde JEROME JUNIOR ONGUENE, LENNY JEAN PIERRE  PINTOR, CHARLES ANDRE RAUX YAO, TAŞKIN İLTER dikkat çekiyor.",
     "Gol adayı sinyalinde öne çıkan isimler: METEHAN ALTUNBAŞ, UMUT DİLAN BOZOK, EMRE AKBABA, CHARLES ANDRE RAUX YAO. Bu skor son gol formu, sezon içi gol sayısı ve son dönemde ilk 11 başlama sıklığından türetildi. Test sonucunda gerçek Beşiktaş golcüleri: MATEUSZ JACEK LEGOWSKI, METEHAN ALTUNBAŞ, TALHA  ÜLVAN.",
-    "Skor dağılımında en olası senaryolar: 1-2 (%9), 1-1 (%9), 0-2 (%7). Model aksiyonu: Beraberlik uyarılı tahmin; önerilen ana skor 1-2.",
+    "Skor dağılımında en olası senaryolar: 1-2 (%9), 1-1 (%9), 0-2 (%7). Model aksiyonu: Korumalı taraf tahmini; önerilen ana skor 1-2.",
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği METEHAN ALTUNBAŞ, UMUT DİLAN BOZOK, EMRE AKBABA. Disiplin yönetimi gereken oyuncular: JEROME JUNIOR ONGUENE, LENNY JEAN PIERRE  PINTOR, CHARLES ANDRE RAUX YAO.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %91 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.39-2.17 yerine 1.48-2.17 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.39-2.17 bandından 1.61-2.15 bandına taşırdı. Bu senaryoda en olası skor 1-2 ve kazanma olasılığı %29 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %27, beraberliği %24, rakip galibiyetini %49 olarak işaretliyor. Gol beklentisi 1.39-2.17; kart sinyali MEDIUM."
+    "MVP olasılık motoru Beşiktaş galibiyetini %27, beraberliği %25, rakip galibiyetini %48 olarak işaretliyor. Gol beklentisi 1.39-2.17; kart sinyali MEDIUM."
   ]
 }

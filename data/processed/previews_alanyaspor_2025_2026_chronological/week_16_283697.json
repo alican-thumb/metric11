@@ -647,8 +647,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.364,
-    "draw_probability": 0.277,
-    "opponent_win_probability": 0.359,
+    "draw_probability": 0.269,
+    "opponent_win_probability": 0.367,
     "expected_goals_for": 1.13,
     "expected_goals_against": 1.25,
     "top_scorelines": [
@@ -696,8 +696,8 @@
       "probability": 0.131
     },
     "recommended_call": {
-      "result": "target_win",
-      "probability": 0.364,
+      "result": "opponent_win",
+      "probability": 0.367,
       "scoreline": "1-1",
       "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "action_label": "Korumalı taraf tahmini",
@@ -713,13 +713,13 @@
       ]
     },
     "display_prediction": {
-      "raw_result": "target_win",
-      "final_result": "target_win",
-      "probability": 0.364,
-      "margin": 0.005,
+      "raw_result": "opponent_win",
+      "final_result": "opponent_win",
+      "probability": 0.367,
+      "margin": 0.003,
       "adjustment": "raw_unvalidated_team",
-      "label": "CORENDON ALANYASPOR kazanır",
-      "raw_label": "CORENDON ALANYASPOR kazanır",
+      "label": "ZECORNER KAYSERİSPOR kazanır",
+      "raw_label": "ZECORNER KAYSERİSPOR kazanır",
       "note": "Bu takım için ekran kalibrasyonu henüz doğrulanmadığı için ham model tahmini gösterilir."
     },
     "over_2_5_signal": "MEDIUM",
@@ -736,6 +736,12 @@
         "orta gol bandı",
         "son formda beraberlik eğilimi"
       ]
+    },
+    "head_to_head": {
+      "available": true,
+      "matches": 23,
+      "draw_rate": 0.217,
+      "last_meeting_date": "2026-05-09T17:00:00+00:00"
     },
     "draw_risk": {
       "score": 100,
@@ -1033,6 +1039,6 @@
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği IANIS HAGI, UI JO HWANG, GÜVEN YALÇIN. Disiplin yönetimi gereken oyuncular: UCHENNA OGUNDU.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %100 uyum buldu; karar etiketi UYUMLU. Alternatif model 11'i kullanılsaydı xG 1.13-1.25 yerine 1.13-1.25 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.13-1.25 bandından 1.35-1.23 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %40 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %36, beraberliği %28, rakip galibiyetini %36 olarak işaretliyor. Gol beklentisi 1.13-1.25; kart sinyali HIGH."
+    "MVP olasılık motoru Beşiktaş galibiyetini %36, beraberliği %27, rakip galibiyetini %37 olarak işaretliyor. Gol beklentisi 1.13-1.25; kart sinyali HIGH."
   ]
 }

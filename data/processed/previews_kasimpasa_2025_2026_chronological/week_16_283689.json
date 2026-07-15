@@ -637,8 +637,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.34,
-    "draw_probability": 0.262,
-    "opponent_win_probability": 0.398,
+    "draw_probability": 0.261,
+    "opponent_win_probability": 0.4,
     "expected_goals_for": 1.21,
     "expected_goals_against": 1.5,
     "top_scorelines": [
@@ -687,7 +687,7 @@
     },
     "recommended_call": {
       "result": "opponent_win",
-      "probability": 0.398,
+      "probability": 0.4,
       "scoreline": "1-1",
       "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "action_label": "Korumalı taraf tahmini",
@@ -696,7 +696,7 @@
         "draw_probability_watch",
         "xg_margin_narrow",
         "top_draw_scoreline",
-        "probability_margin_very_narrow",
+        "probability_margin_narrow",
         "strength_edge_very_narrow",
         "low_confidence_side_pick",
         "draw_calibration_high"
@@ -705,8 +705,8 @@
     "display_prediction": {
       "raw_result": "opponent_win",
       "final_result": "opponent_win",
-      "probability": 0.398,
-      "margin": 0.059,
+      "probability": 0.4,
+      "margin": 0.06,
       "adjustment": "raw_unvalidated_team",
       "label": "GENÇLERBİRLİĞİ kazanır",
       "raw_label": "GENÇLERBİRLİĞİ kazanır",
@@ -726,14 +726,20 @@
         "orta gol bandı"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 19,
+      "draw_rate": 0.263,
+      "last_meeting_date": "2026-05-09T17:00:00+00:00"
+    },
     "draw_risk": {
-      "score": 95,
+      "score": 87,
       "risk_level": "HIGH",
       "reasons": [
         "draw_probability_watch",
         "xg_margin_narrow",
         "top_draw_scoreline",
-        "probability_margin_very_narrow",
+        "probability_margin_narrow",
         "strength_edge_very_narrow",
         "low_confidence_side_pick",
         "draw_calibration_high"

@@ -3,10 +3,10 @@
     "side_flip_count": 5,
     "protected_side_flip_count": 4,
     "unprotected_side_flip_count": 1,
-    "target_overrated_count": 2,
+    "target_overrated_count": 1,
     "opponent_overrated_count": 1,
     "big_match_side_flip_count": 1,
-    "high_draw_risk_side_flip_count": 3,
+    "high_draw_risk_side_flip_count": 4,
     "opponent_market_value_covered": 5,
     "avg_market_value_edge_million_eur": 83.6,
     "missing_data_gap_counts": {
@@ -16,14 +16,14 @@
       "no_matchday_availability_signal": 4
     },
     "signal_tag_counts": {
-      "target_side_overrated": 2,
+      "target_side_overrated": 1,
       "model_xg_edge_overtrusted": 1,
-      "market_value_edge_supports_target": 2,
+      "market_value_edge_supports_target": 1,
       "opponent_side_overrated": 1,
+      "high_draw_risk_but_decisive_result": 4,
+      "low_confidence_wrong_side": 4,
       "opponent_xg_edge_overtrusted": 1,
-      "high_draw_risk_but_decisive_result": 3,
       "narrow_xg_decisive_result": 3,
-      "low_confidence_wrong_side": 3,
       "big_match_side_flip": 1,
       "availability_signal_present": 1
     }
@@ -44,7 +44,7 @@
       "actual_draw": false,
       "side_pick_correct": false,
       "side_pick_wrong": true,
-      "draw_probability": 0.233,
+      "draw_probability": 0.221,
       "confidence_probability": 0.566,
       "confidence": "MEDIUM",
       "is_big_match": false,
@@ -94,26 +94,28 @@
       "predicted": "opponent_win",
       "actual": "target_win",
       "correct": false,
-      "action": "KEEP_PICK_WITH_DRAW_WARNING",
-      "action_label": "Beraberlik uyarılı tahmin",
+      "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
+      "action_label": "Korumalı taraf tahmini",
       "protected": true,
       "actual_draw": false,
       "side_pick_correct": false,
       "side_pick_wrong": true,
-      "draw_probability": 0.225,
-      "confidence_probability": 0.502,
-      "confidence": "MEDIUM",
+      "draw_probability": 0.245,
+      "confidence_probability": 0.482,
+      "confidence": "LOW",
       "is_big_match": false,
-      "draw_risk_score": 31,
-      "draw_risk_level": "MEDIUM",
+      "draw_risk_score": 41,
+      "draw_risk_level": "HIGH",
       "draw_risk_reasons": [
         "draw_scoreline_top_two",
         "strength_edge_very_narrow",
-        "medium_confidence_side_pick",
-        "draw_calibration_medium"
+        "low_confidence_side_pick",
+        "draw_calibration_high"
       ],
       "failure_tags": [
-        "opponent_side_overrated"
+        "opponent_side_overrated",
+        "high_draw_risk_but_decisive_result",
+        "low_confidence_wrong_side"
       ],
       "opponent": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ",
       "home_away": "away",
@@ -131,6 +133,8 @@
       "recommended_scoreline": "1-2",
       "signal_tags": [
         "opponent_side_overrated",
+        "high_draw_risk_but_decisive_result",
+        "low_confidence_wrong_side",
         "opponent_xg_edge_overtrusted"
       ],
       "data_gaps": [
@@ -155,14 +159,13 @@
       "actual_draw": false,
       "side_pick_correct": false,
       "side_pick_wrong": true,
-      "draw_probability": 0.267,
-      "confidence_probability": 0.267,
+      "draw_probability": 0.245,
+      "confidence_probability": 0.245,
       "confidence": "LOW",
       "is_big_match": false,
-      "draw_risk_score": 100,
+      "draw_risk_score": 92,
       "draw_risk_level": "HIGH",
       "draw_risk_reasons": [
-        "draw_probability_live",
         "xg_margin_very_narrow",
         "top_draw_scoreline",
         "probability_margin_very_narrow",
@@ -216,8 +219,8 @@
       "actual_draw": false,
       "side_pick_correct": false,
       "side_pick_wrong": true,
-      "draw_probability": 0.257,
-      "confidence_probability": 0.257,
+      "draw_probability": 0.261,
+      "confidence_probability": 0.261,
       "confidence": "LOW",
       "is_big_match": true,
       "draw_risk_score": 100,
@@ -271,7 +274,7 @@
       "date": "19.04.2026 - 17:00",
       "fixture": "SAMSUNSPOR A.Ş. - BEŞİKTAŞ A.Ş.",
       "actual_score": "2-1",
-      "predicted": "target_win",
+      "predicted": "draw",
       "actual": "opponent_win",
       "correct": false,
       "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
@@ -280,23 +283,22 @@
       "actual_draw": false,
       "side_pick_correct": false,
       "side_pick_wrong": true,
-      "draw_probability": 0.251,
-      "confidence_probability": 0.411,
+      "draw_probability": 0.268,
+      "confidence_probability": 0.268,
       "confidence": "LOW",
       "is_big_match": false,
-      "draw_risk_score": 89,
+      "draw_risk_score": 100,
       "draw_risk_level": "HIGH",
       "draw_risk_reasons": [
-        "draw_probability_watch",
+        "draw_probability_live",
         "xg_margin_very_narrow",
         "top_draw_scoreline",
         "probability_margin_narrow",
         "strength_edge_very_narrow",
         "low_confidence_side_pick",
-        "draw_calibration_medium"
+        "draw_calibration_high"
       ],
       "failure_tags": [
-        "target_side_overrated",
         "high_draw_risk_but_decisive_result",
         "narrow_xg_decisive_result",
         "low_confidence_wrong_side"
@@ -318,12 +320,10 @@
       "card_signal": "MEDIUM",
       "recommended_scoreline": "1-1",
       "signal_tags": [
-        "target_side_overrated",
         "high_draw_risk_but_decisive_result",
         "narrow_xg_decisive_result",
         "low_confidence_wrong_side",
-        "availability_signal_present",
-        "market_value_edge_supports_target"
+        "availability_signal_present"
       ],
       "data_gaps": [
         "odds_baseline_missing",
@@ -342,26 +342,28 @@
       "predicted": "opponent_win",
       "actual": "target_win",
       "correct": false,
-      "action": "KEEP_PICK_WITH_DRAW_WARNING",
-      "action_label": "Beraberlik uyarılı tahmin",
+      "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
+      "action_label": "Korumalı taraf tahmini",
       "protected": true,
       "actual_draw": false,
       "side_pick_correct": false,
       "side_pick_wrong": true,
-      "draw_probability": 0.225,
-      "confidence_probability": 0.502,
-      "confidence": "MEDIUM",
+      "draw_probability": 0.245,
+      "confidence_probability": 0.482,
+      "confidence": "LOW",
       "is_big_match": false,
-      "draw_risk_score": 31,
-      "draw_risk_level": "MEDIUM",
+      "draw_risk_score": 41,
+      "draw_risk_level": "HIGH",
       "draw_risk_reasons": [
         "draw_scoreline_top_two",
         "strength_edge_very_narrow",
-        "medium_confidence_side_pick",
-        "draw_calibration_medium"
+        "low_confidence_side_pick",
+        "draw_calibration_high"
       ],
       "failure_tags": [
-        "opponent_side_overrated"
+        "opponent_side_overrated",
+        "high_draw_risk_but_decisive_result",
+        "low_confidence_wrong_side"
       ],
       "opponent": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ",
       "home_away": "away",
@@ -379,6 +381,8 @@
       "recommended_scoreline": "1-2",
       "signal_tags": [
         "opponent_side_overrated",
+        "high_draw_risk_but_decisive_result",
+        "low_confidence_wrong_side",
         "opponent_xg_edge_overtrusted"
       ],
       "data_gaps": [
@@ -403,14 +407,13 @@
       "actual_draw": false,
       "side_pick_correct": false,
       "side_pick_wrong": true,
-      "draw_probability": 0.267,
-      "confidence_probability": 0.267,
+      "draw_probability": 0.245,
+      "confidence_probability": 0.245,
       "confidence": "LOW",
       "is_big_match": false,
-      "draw_risk_score": 100,
+      "draw_risk_score": 92,
       "draw_risk_level": "HIGH",
       "draw_risk_reasons": [
-        "draw_probability_live",
         "xg_margin_very_narrow",
         "top_draw_scoreline",
         "probability_margin_very_narrow",
@@ -464,8 +467,8 @@
       "actual_draw": false,
       "side_pick_correct": false,
       "side_pick_wrong": true,
-      "draw_probability": 0.257,
-      "confidence_probability": 0.257,
+      "draw_probability": 0.261,
+      "confidence_probability": 0.261,
       "confidence": "LOW",
       "is_big_match": true,
       "draw_risk_score": 100,
@@ -519,7 +522,7 @@
       "date": "19.04.2026 - 17:00",
       "fixture": "SAMSUNSPOR A.Ş. - BEŞİKTAŞ A.Ş.",
       "actual_score": "2-1",
-      "predicted": "target_win",
+      "predicted": "draw",
       "actual": "opponent_win",
       "correct": false,
       "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
@@ -528,23 +531,22 @@
       "actual_draw": false,
       "side_pick_correct": false,
       "side_pick_wrong": true,
-      "draw_probability": 0.251,
-      "confidence_probability": 0.411,
+      "draw_probability": 0.268,
+      "confidence_probability": 0.268,
       "confidence": "LOW",
       "is_big_match": false,
-      "draw_risk_score": 89,
+      "draw_risk_score": 100,
       "draw_risk_level": "HIGH",
       "draw_risk_reasons": [
-        "draw_probability_watch",
+        "draw_probability_live",
         "xg_margin_very_narrow",
         "top_draw_scoreline",
         "probability_margin_narrow",
         "strength_edge_very_narrow",
         "low_confidence_side_pick",
-        "draw_calibration_medium"
+        "draw_calibration_high"
       ],
       "failure_tags": [
-        "target_side_overrated",
         "high_draw_risk_but_decisive_result",
         "narrow_xg_decisive_result",
         "low_confidence_wrong_side"
@@ -566,12 +568,10 @@
       "card_signal": "MEDIUM",
       "recommended_scoreline": "1-1",
       "signal_tags": [
-        "target_side_overrated",
         "high_draw_risk_but_decisive_result",
         "narrow_xg_decisive_result",
         "low_confidence_wrong_side",
-        "availability_signal_present",
-        "market_value_edge_supports_target"
+        "availability_signal_present"
       ],
       "data_gaps": [
         "odds_baseline_missing",
@@ -596,7 +596,7 @@
       "actual_draw": false,
       "side_pick_correct": false,
       "side_pick_wrong": true,
-      "draw_probability": 0.233,
+      "draw_probability": 0.221,
       "confidence_probability": 0.566,
       "confidence": "MEDIUM",
       "is_big_match": false,

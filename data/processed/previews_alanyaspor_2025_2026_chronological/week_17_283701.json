@@ -654,8 +654,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.446,
-    "draw_probability": 0.303,
-    "opponent_win_probability": 0.251,
+    "draw_probability": 0.306,
+    "opponent_win_probability": 0.248,
     "expected_goals_for": 1.08,
     "expected_goals_against": 0.71,
     "top_scorelines": [
@@ -716,14 +716,14 @@
         "probability_margin_watch",
         "strength_edge_very_narrow",
         "low_confidence_side_pick",
-        "draw_calibration_medium"
+        "draw_calibration_high"
       ]
     },
     "display_prediction": {
       "raw_result": "target_win",
       "final_result": "target_win",
       "probability": 0.446,
-      "margin": 0.143,
+      "margin": 0.14,
       "adjustment": "raw_unvalidated_team",
       "label": "CORENDON ALANYASPOR kazanır",
       "raw_label": "CORENDON ALANYASPOR kazanır",
@@ -735,16 +735,23 @@
     "availability_missing_count": 0,
     "strength_edge": 0.066,
     "draw_calibration": {
-      "lift": 0.11,
-      "risk_level": "MEDIUM",
+      "lift": 0.145,
+      "risk_level": "HIGH",
       "reasons": [
         "xG farkı dar",
         "takım gücü yakın",
-        "son formda beraberlik eğilimi"
+        "son formda beraberlik eğilimi",
+        "h2h_beraberlik_geçmişi"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 13,
+      "draw_rate": 0.308,
+      "last_meeting_date": "2026-05-16T14:00:00+00:00"
+    },
     "draw_risk": {
-      "score": 75,
+      "score": 80,
       "risk_level": "HIGH",
       "reasons": [
         "draw_probability_high",
@@ -753,7 +760,7 @@
         "probability_margin_watch",
         "strength_edge_very_narrow",
         "low_confidence_side_pick",
-        "draw_calibration_medium"
+        "draw_calibration_high"
       ],
       "protected_prediction": true,
       "recommended_model_action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
@@ -1054,6 +1061,6 @@
     "Kadro tercih önerisi: Önde baskı ve skor arama. Hücum önceliği GÜVEN YALÇIN, IANIS HAGI, UI JO HWANG. Disiplin yönetimi gereken oyuncular: ANTONIO SIMAO MUANZA.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %84 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.08-0.71 yerine 1.22-0.71 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.08-0.71 bandından 1.3-0.69 bandına taşırdı. Bu senaryoda en olası skor 1-0 ve kazanma olasılığı %51 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %45, beraberliği %30, rakip galibiyetini %25 olarak işaretliyor. Gol beklentisi 1.08-0.71; kart sinyali MEDIUM."
+    "MVP olasılık motoru Beşiktaş galibiyetini %45, beraberliği %31, rakip galibiyetini %25 olarak işaretliyor. Gol beklentisi 1.08-0.71; kart sinyali MEDIUM."
   ]
 }

@@ -514,6 +514,23 @@
         "actual_scorer": false
       },
       {
+        "player_id": "2820847",
+        "name": "ISHOLA JUNIOR  OLAITAN",
+        "goal_threat_score": 6.44,
+        "candidate_type": "primary+impact_sub",
+        "recent_starts": 2,
+        "season_goals_before_match": 2,
+        "recent_goals": 1,
+        "big_match_goals_before_match": 0,
+        "opponent_defense_multiplier": 1.0,
+        "actual_scorer": false,
+        "header_goals_before_match": 0,
+        "penalty_goals_before_match": 0,
+        "recent_bench": 0,
+        "cards_before_match": 1,
+        "recent_cards": 0
+      },
+      {
         "player_id": "2878029",
         "name": "ALEXIS ANTUNES GOMEZ",
         "goal_threat_score": 5.61,
@@ -611,28 +628,6 @@
         "recent_cards": 0
       },
       {
-        "player_id": "2820847",
-        "name": "ISHOLA JUNIOR  OLAITAN",
-        "goal_threat_score": 4.38,
-        "candidate_type": "primary+impact_sub",
-        "recent_starts": 2,
-        "season_goals_before_match": 2,
-        "recent_goals": 1,
-        "big_match_goals_before_match": 0,
-        "opponent_defense_multiplier": 1.0,
-        "actual_scorer": false,
-        "header_goals_before_match": 0,
-        "penalty_goals_before_match": 0,
-        "recent_bench": 0,
-        "cards_before_match": 1,
-        "recent_cards": 0,
-        "quality_adjustment": {
-          "multiplier": 0.68,
-          "reason": "Top 5 sıralama etkisini düşür veya aday tipini yeniden kontrol et.",
-          "source": "goal_candidate_segment_backtest"
-        }
-      },
-      {
         "player_id": "2685592",
         "name": "NOVATUS DISMAS  MIROSHI",
         "goal_threat_score": 3.39,
@@ -676,8 +671,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.232,
-    "draw_probability": 0.256,
-    "opponent_win_probability": 0.513,
+    "draw_probability": 0.239,
+    "opponent_win_probability": 0.529,
     "expected_goals_for": 0.67,
     "expected_goals_against": 1.57,
     "top_scorelines": [
@@ -726,22 +721,17 @@
     },
     "recommended_call": {
       "result": "opponent_win",
-      "probability": 0.513,
+      "probability": 0.529,
       "scoreline": "0-1",
-      "action": "KEEP_PICK_WITH_DRAW_WARNING",
-      "action_label": "Beraberlik uyarılı tahmin",
-      "risk_notes": [
-        "draw_probability_watch",
-        "strength_edge_very_narrow",
-        "medium_confidence_side_pick",
-        "draw_calibration_medium"
-      ]
+      "action": "taraf_eğilimi",
+      "action_label": "Taraf eğilimi",
+      "risk_notes": []
     },
     "display_prediction": {
       "raw_result": "opponent_win",
       "final_result": "opponent_win",
-      "probability": 0.513,
-      "margin": 0.257,
+      "probability": 0.529,
+      "margin": 0.29,
       "adjustment": "raw_unvalidated_team",
       "label": "GENÇLERBİRLİĞİ kazanır",
       "raw_label": "GENÇLERBİRLİĞİ kazanır",
@@ -761,17 +751,23 @@
         "son formda beraberlik eğilimi"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 12,
+      "draw_rate": 0.083,
+      "last_meeting_date": "2026-04-04T11:30:00+00:00"
+    },
     "draw_risk": {
-      "score": 32,
-      "risk_level": "MEDIUM",
+      "score": 12,
+      "risk_level": "LOW",
       "reasons": [
-        "draw_probability_watch",
         "strength_edge_very_narrow",
         "medium_confidence_side_pick",
-        "draw_calibration_medium"
+        "draw_calibration_medium",
+        "strong_side_probability_penalty"
       ],
-      "protected_prediction": true,
-      "recommended_model_action": "KEEP_PICK_WITH_DRAW_WARNING",
+      "protected_prediction": false,
+      "recommended_model_action": "KEEP_MAIN_PICK",
       "note": "Ana 1X2 tahminini değiştirmeden beraberlik senaryosunu görünür yapan risk katmanıdır."
     },
     "big_match_profile": {
@@ -799,7 +795,7 @@
     "attacking_priority": [
       "JANDERSON  DE CARVALHO COSTA",
       "JUAN SANTOS DA SILVA",
-      "ALEXIS ANTUNES GOMEZ"
+      "ISHOLA JUNIOR  OLAITAN"
     ],
     "card_caution": [
       {
@@ -821,10 +817,10 @@
     "unavailable_removed": []
   },
   "coach_lineup_audit": {
-    "verdict": "KISMEN_TARTIŞMALI",
-    "actual_lineup_score": 83.71,
-    "recommended_lineup_score": 103.97,
-    "alignment_rate": 0.805,
+    "verdict": "TARTIŞMALI",
+    "actual_lineup_score": 76.71,
+    "recommended_lineup_score": 96.97,
+    "alignment_rate": 0.791,
     "actual_starters": [
       "MATEUSZ LIS",
       "ALLAN GODOI SANTOS",
@@ -852,7 +848,8 @@
       "JUAN SANTOS DA SILVA"
     ],
     "omitted_attacking_priority": [
-      "JUAN SANTOS DA SILVA"
+      "JUAN SANTOS DA SILVA",
+      "ISHOLA JUNIOR  OLAITAN"
     ],
     "questionable_starters": [
       {
@@ -1061,11 +1058,11 @@
     "Rakibin son 8 maçlık savunma formu gol adayı modeline eklendi: maç başı 1.25 gol yiyor, %25 clean sheet oranı var. Gol adayı skor çarpanı 1.0.",
     "Hakem profili kart tarafında anlamlı bir sinyal veriyor: BATUHAN KOLAK bu sezon önceki 11 Beşiktaş maçında toplam maç başı 4.91 kart, Beşiktaş'a maç başı 2.64 kart ortalamasıyla öne çıkıyor.",
     "Olası 11 sinyalinde son dönemde öne çıkan isimler: MATEUSZ LIS, ALLAN GODOI SANTOS, MOHAMMED AMIN CHERNI, NOVATUS DISMAS  MIROSHI, HELITON JORGE  TITO DOS SANTOS, JANDERSON  DE CARVALHO COSTA. Kart riski tarafında ise son 8 maç penceresinde JEFERSON MARINHO DOS SANTOS, MALCOM NARCISSE BOKELE MPUTU, EFKAN BEKİROĞLU, ANTHONY JUNIOR DENNIS dikkat çekiyor.",
-    "Gol adayı sinyalinde öne çıkan isimler: JANDERSON  DE CARVALHO COSTA, JUAN SANTOS DA SILVA, ALEXIS ANTUNES GOMEZ, ARDA OKAN KURTULAN. Bu skor son gol formu, sezon içi gol sayısı ve son dönemde ilk 11 başlama sıklığından türetildi. Test sonucunda gerçek Beşiktaş golcüleri: NOVATUS DISMAS  MIROSHI, MALCOM NARCISSE BOKELE MPUTU.",
-    "Skor dağılımında en olası senaryolar: 0-1 (%17), 0-2 (%13), 1-1 (%11). Model aksiyonu: Beraberlik uyarılı tahmin; önerilen ana skor 0-1.",
-    "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği JANDERSON  DE CARVALHO COSTA, JUAN SANTOS DA SILVA, ALEXIS ANTUNES GOMEZ. Disiplin yönetimi gereken oyuncular: JEFERSON MARINHO DOS SANTOS, MALCOM NARCISSE BOKELE MPUTU, EFKAN BEKİROĞLU.",
-    "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %80 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 0.67-1.57 yerine 0.87-1.57 bandına gelebilirdi.",
+    "Gol adayı sinyalinde öne çıkan isimler: JANDERSON  DE CARVALHO COSTA, JUAN SANTOS DA SILVA, ISHOLA JUNIOR  OLAITAN, ALEXIS ANTUNES GOMEZ. Bu skor son gol formu, sezon içi gol sayısı ve son dönemde ilk 11 başlama sıklığından türetildi. Test sonucunda gerçek Beşiktaş golcüleri: NOVATUS DISMAS  MIROSHI, MALCOM NARCISSE BOKELE MPUTU.",
+    "Skor dağılımında en olası senaryolar: 0-1 (%17), 0-2 (%13), 1-1 (%11). Model aksiyonu: Taraf eğilimi; önerilen ana skor 0-1.",
+    "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği JANDERSON  DE CARVALHO COSTA, JUAN SANTOS DA SILVA, ISHOLA JUNIOR  OLAITAN. Disiplin yönetimi gereken oyuncular: JEFERSON MARINHO DOS SANTOS, MALCOM NARCISSE BOKELE MPUTU, EFKAN BEKİROĞLU.",
+    "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %79 uyum buldu; karar etiketi TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 0.67-1.57 yerine 0.87-1.57 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 0.67-1.57 bandından 0.89-1.55 bandına taşırdı. Bu senaryoda en olası skor 0-1 ve kazanma olasılığı %22 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %23, beraberliği %26, rakip galibiyetini %51 olarak işaretliyor. Gol beklentisi 0.67-1.57; kart sinyali LOW."
+    "MVP olasılık motoru Beşiktaş galibiyetini %23, beraberliği %24, rakip galibiyetini %53 olarak işaretliyor. Gol beklentisi 0.67-1.57; kart sinyali LOW."
   ]
 }

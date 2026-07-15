@@ -644,8 +644,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.346,
-    "draw_probability": 0.281,
-    "opponent_win_probability": 0.373,
+    "draw_probability": 0.275,
+    "opponent_win_probability": 0.379,
     "expected_goals_for": 1.05,
     "expected_goals_against": 1.23,
     "top_scorelines": [
@@ -694,14 +694,13 @@
     },
     "recommended_call": {
       "result": "opponent_win",
-      "probability": 0.373,
+      "probability": 0.379,
       "scoreline": "1-1",
       "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "action_label": "Korumalı taraf tahmini",
       "risk_notes": [
-        "Beraberlik güçlü alternatif",
         "Taraflar arası fark dar",
-        "draw_probability_high",
+        "draw_probability_live",
         "xg_margin_narrow",
         "top_draw_scoreline",
         "probability_margin_very_narrow",
@@ -713,8 +712,8 @@
     "display_prediction": {
       "raw_result": "opponent_win",
       "final_result": "opponent_win",
-      "probability": 0.373,
-      "margin": 0.027,
+      "probability": 0.379,
+      "margin": 0.033,
       "adjustment": "raw_unvalidated_team",
       "label": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ kazanır",
       "raw_label": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ kazanır",
@@ -735,11 +734,17 @@
         "son formda beraberlik eğilimi"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 18,
+      "draw_rate": 0.222,
+      "last_meeting_date": "2026-04-11T11:30:00+00:00"
+    },
     "draw_risk": {
       "score": 100,
       "risk_level": "HIGH",
       "reasons": [
-        "draw_probability_high",
+        "draw_probability_live",
         "xg_margin_narrow",
         "top_draw_scoreline",
         "probability_margin_very_narrow",
@@ -819,7 +824,7 @@
         "goal_threat_score": 0
       }
     ],
-    "alternative_xg_for": 1.06,
+    "alternative_xg_for": 1.05,
     "alternative_xg_against": 1.23,
     "alternative_scoreline": {
       "target_goals": 1,
@@ -1021,8 +1026,8 @@
     "Gol adayı sinyalinde öne çıkan isimler: OĞULCAN ÜLGÜN, FRANCO DARYL TONGYA HEUBANG, ZAN ZUZEK, DIMITRIOS GOUTAS. Bu skor son gol formu, sezon içi gol sayısı ve son dönemde ilk 11 başlama sıklığından türetildi. Test sonucunda gerçek Beşiktaş golcüleri: THALISSON KELVEN DA SILVA, MBAYE HAMADY NIANG.",
     "Skor dağılımında en olası senaryolar: 1-1 (%13), 0-1 (%13), 1-0 (%11). Model aksiyonu: Korumalı taraf tahmini; önerilen ana skor 1-1.",
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği OĞULCAN ÜLGÜN, FRANCO DARYL TONGYA HEUBANG, ZAN ZUZEK. Disiplin yönetimi gereken oyuncular: belirgin sinyal yok.",
-    "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %100 uyum buldu; karar etiketi UYUMLU. Alternatif model 11'i kullanılsaydı xG 1.05-1.23 yerine 1.06-1.23 bandına gelebilirdi.",
+    "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %100 uyum buldu; karar etiketi UYUMLU. Alternatif model 11'i kullanılsaydı xG 1.05-1.23 yerine 1.05-1.23 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.05-1.23 bandından 1.27-1.21 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %38 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %35, beraberliği %28, rakip galibiyetini %37 olarak işaretliyor. Gol beklentisi 1.05-1.23; kart sinyali HIGH."
+    "MVP olasılık motoru Beşiktaş galibiyetini %35, beraberliği %28, rakip galibiyetini %38 olarak işaretliyor. Gol beklentisi 1.05-1.23; kart sinyali HIGH."
   ]
 }

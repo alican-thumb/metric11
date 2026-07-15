@@ -659,8 +659,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.385,
-    "draw_probability": 0.26,
-    "opponent_win_probability": 0.355,
+    "draw_probability": 0.24,
+    "opponent_win_probability": 0.375,
     "expected_goals_for": 1.42,
     "expected_goals_against": 1.47,
     "top_scorelines": [
@@ -715,7 +715,6 @@
       "action_label": "Korumalı taraf tahmini",
       "risk_notes": [
         "Taraflar arası fark dar",
-        "draw_probability_watch",
         "xg_margin_very_narrow",
         "top_draw_scoreline",
         "probability_margin_very_narrow",
@@ -728,7 +727,7 @@
       "raw_result": "target_win",
       "final_result": "target_win",
       "probability": 0.385,
-      "margin": 0.029,
+      "margin": 0.009,
       "adjustment": "raw_unvalidated_team",
       "label": "CORENDON ALANYASPOR kazanır",
       "raw_label": "CORENDON ALANYASPOR kazanır",
@@ -748,11 +747,16 @@
         "son formda beraberlik eğilimi"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 23,
+      "draw_rate": 0.13,
+      "last_meeting_date": "2026-04-19T11:30:00+00:00"
+    },
     "draw_risk": {
-      "score": 100,
+      "score": 92,
       "risk_level": "HIGH",
       "reasons": [
-        "draw_probability_watch",
         "xg_margin_very_narrow",
         "top_draw_scoreline",
         "probability_margin_very_narrow",
@@ -1054,6 +1058,6 @@
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği İBRAHİM KAYA, FLORENT HADERGJONAJ, GÜVEN YALÇIN. Disiplin yönetimi gereken oyuncular: EFECAN KARACA, STEVE MICHEL KEVİN MOUNIE, FATİH AKSOY.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %108 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.42-1.47 yerine 1.42-1.47 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.42-1.47 bandından 1.64-1.45 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %42 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %38, beraberliği %26, rakip galibiyetini %36 olarak işaretliyor. Gol beklentisi 1.42-1.47; kart sinyali LOW."
+    "MVP olasılık motoru Beşiktaş galibiyetini %38, beraberliği %24, rakip galibiyetini %38 olarak işaretliyor. Gol beklentisi 1.42-1.47; kart sinyali LOW."
   ]
 }

@@ -665,8 +665,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.339,
-    "draw_probability": 0.241,
-    "opponent_win_probability": 0.42,
+    "draw_probability": 0.219,
+    "opponent_win_probability": 0.442,
     "expected_goals_for": 1.52,
     "expected_goals_against": 1.9,
     "top_scorelines": [
@@ -715,7 +715,7 @@
     },
     "recommended_call": {
       "result": "opponent_win",
-      "probability": 0.42,
+      "probability": 0.442,
       "scoreline": "1-1",
       "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "action_label": "Korumalı taraf tahmini",
@@ -731,8 +731,8 @@
     "display_prediction": {
       "raw_result": "opponent_win",
       "final_result": "opponent_win",
-      "probability": 0.42,
-      "margin": 0.081,
+      "probability": 0.442,
+      "margin": 0.103,
       "adjustment": "raw_unvalidated_team",
       "label": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ kazanır",
       "raw_label": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ kazanır",
@@ -751,6 +751,12 @@
         "takım gücü yakın",
         "son formda beraberlik eğilimi"
       ]
+    },
+    "head_to_head": {
+      "available": true,
+      "matches": 16,
+      "draw_rate": 0.062,
+      "last_meeting_date": "2026-05-16T17:00:00+00:00"
     },
     "draw_risk": {
       "score": 64,
@@ -820,8 +826,8 @@
   },
   "coach_lineup_audit": {
     "verdict": "UYUMLU",
-    "actual_lineup_score": 109.66,
-    "recommended_lineup_score": 110.32,
+    "actual_lineup_score": 109.67,
+    "recommended_lineup_score": 110.33,
     "alignment_rate": 0.994,
     "actual_starters": [
       "ZAFER GÖRGEN",
@@ -1060,6 +1066,6 @@
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği MOHAMED LAMINE BAYO, KEVIN MANUEL  RODRIGUES, KACPER SZYMON KOZLOWSKI. Disiplin yönetimi gereken oyuncular: YUSUF KARHAN KABADAYI, DEIAN CRISTIAN SORESCU, EMMANUEL OKYERE BOATENG.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %99 uyum buldu; karar etiketi UYUMLU. Alternatif model 11'i kullanılsaydı xG 1.52-1.9 yerine 1.53-1.9 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday ERNEST MUÇİ (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.52-1.9 bandından 1.71-1.89 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %35 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %34, beraberliği %24, rakip galibiyetini %42 olarak işaretliyor. Gol beklentisi 1.52-1.9; kart sinyali MEDIUM."
+    "MVP olasılık motoru Beşiktaş galibiyetini %34, beraberliği %22, rakip galibiyetini %44 olarak işaretliyor. Gol beklentisi 1.52-1.9; kart sinyali MEDIUM."
   ]
 }

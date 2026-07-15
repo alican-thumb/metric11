@@ -681,8 +681,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.418,
-    "draw_probability": 0.237,
-    "opponent_win_probability": 0.345,
+    "draw_probability": 0.224,
+    "opponent_win_probability": 0.358,
     "expected_goals_for": 1.97,
     "expected_goals_against": 1.89,
     "top_scorelines": [
@@ -739,7 +739,7 @@
         "Taraflar arası fark dar",
         "xg_margin_very_narrow",
         "top_draw_scoreline",
-        "probability_margin_narrow",
+        "probability_margin_very_narrow",
         "strength_edge_very_narrow",
         "low_confidence_side_pick",
         "draw_calibration_medium"
@@ -749,7 +749,7 @@
       "raw_result": "target_win",
       "final_result": "target_win",
       "probability": 0.418,
-      "margin": 0.073,
+      "margin": 0.06,
       "adjustment": "raw_unvalidated_team",
       "label": "GALATASARAY A.Ş. kazanır",
       "raw_label": "GALATASARAY A.Ş. kazanır",
@@ -768,13 +768,19 @@
         "takım gücü yakın"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 33,
+      "draw_rate": 0.182,
+      "last_meeting_date": "2026-03-07T17:00:00+00:00"
+    },
     "draw_risk": {
-      "score": 79,
+      "score": 87,
       "risk_level": "HIGH",
       "reasons": [
         "xg_margin_very_narrow",
         "top_draw_scoreline",
-        "probability_margin_narrow",
+        "probability_margin_very_narrow",
         "strength_edge_very_narrow",
         "low_confidence_side_pick",
         "draw_calibration_medium"
@@ -1087,6 +1093,6 @@
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği MAURO EMANUEL ICARDI, VICTOR JAMES OSIMHEN, GABRIEL DAVI  GOMES SARA. Disiplin yönetimi gereken oyuncular: KAZIMCAN KARATAŞ, MARIO RENE JUNIOR LEMINA, ISMAIL JOSHUA JAKOBS.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %72 uyum buldu; karar etiketi TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.97-1.89 yerine 2.32-1.89 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.97-1.89 bandından 2.19-1.87 bandına taşırdı. Bu senaryoda en olası skor 2-1 ve kazanma olasılığı %46 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %42, beraberliği %24, rakip galibiyetini %34 olarak işaretliyor. Gol beklentisi 1.97-1.89; kart sinyali LOW."
+    "MVP olasılık motoru Beşiktaş galibiyetini %42, beraberliği %22, rakip galibiyetini %36 olarak işaretliyor. Gol beklentisi 1.97-1.89; kart sinyali LOW."
   ]
 }

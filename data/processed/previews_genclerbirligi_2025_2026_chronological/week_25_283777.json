@@ -648,8 +648,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.388,
-    "draw_probability": 0.255,
-    "opponent_win_probability": 0.357,
+    "draw_probability": 0.265,
+    "opponent_win_probability": 0.347,
     "expected_goals_for": 1.52,
     "expected_goals_against": 1.56,
     "top_scorelines": [
@@ -717,7 +717,7 @@
       "raw_result": "target_win",
       "final_result": "target_win",
       "probability": 0.388,
-      "margin": 0.031,
+      "margin": 0.041,
       "adjustment": "raw_unvalidated_team",
       "label": "GENÇLERBİRLİĞİ kazanır",
       "raw_label": "GENÇLERBİRLİĞİ kazanır",
@@ -729,13 +729,20 @@
     "availability_missing_count": 0,
     "strength_edge": -0.012,
     "draw_calibration": {
-      "lift": 0.165,
+      "lift": 0.18,
       "risk_level": "HIGH",
       "reasons": [
         "xG farkı çok dar",
         "takım gücü dengede",
-        "son formda beraberlik eğilimi"
+        "son formda beraberlik eğilimi",
+        "h2h_yüksek_beraberlik_geçmişi"
       ]
+    },
+    "head_to_head": {
+      "available": true,
+      "matches": 10,
+      "draw_rate": 0.4,
+      "last_meeting_date": "2026-03-09T17:00:00+00:00"
     },
     "draw_risk": {
       "score": 100,
@@ -785,7 +792,7 @@
   },
   "coach_lineup_audit": {
     "verdict": "TARTIŞMALI",
-    "actual_lineup_score": 88.96,
+    "actual_lineup_score": 88.97,
     "recommended_lineup_score": 123.6,
     "alignment_rate": 0.72,
     "actual_starters": [
@@ -1036,6 +1043,6 @@
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği SEKOU KOITA, FRANCO DARYL TONGYA HEUBANG, METEHAN MİMAROĞLU. Disiplin yönetimi gereken oyuncular: belirgin sinyal yok.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %72 uyum buldu; karar etiketi TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.52-1.56 yerine 1.87-1.56 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.52-1.56 bandından 1.74-1.54 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %43 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %39, beraberliği %26, rakip galibiyetini %36 olarak işaretliyor. Gol beklentisi 1.52-1.56; kart sinyali MEDIUM."
+    "MVP olasılık motoru Beşiktaş galibiyetini %39, beraberliği %26, rakip galibiyetini %35 olarak işaretliyor. Gol beklentisi 1.52-1.56; kart sinyali MEDIUM."
   ]
 }

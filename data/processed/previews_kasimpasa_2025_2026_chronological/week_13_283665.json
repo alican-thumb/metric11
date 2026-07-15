@@ -635,8 +635,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.281,
-    "draw_probability": 0.279,
-    "opponent_win_probability": 0.44,
+    "draw_probability": 0.26,
+    "opponent_win_probability": 0.459,
     "expected_goals_for": 0.79,
     "expected_goals_against": 1.32,
     "top_scorelines": [
@@ -685,12 +685,12 @@
     },
     "recommended_call": {
       "result": "opponent_win",
-      "probability": 0.44,
+      "probability": 0.459,
       "scoreline": "0-1",
       "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "action_label": "Korumalı taraf tahmini",
       "risk_notes": [
-        "draw_probability_live",
+        "draw_probability_watch",
         "draw_scoreline_top_two",
         "probability_margin_watch",
         "strength_edge_very_narrow",
@@ -701,8 +701,8 @@
     "display_prediction": {
       "raw_result": "opponent_win",
       "final_result": "opponent_win",
-      "probability": 0.44,
-      "margin": 0.159,
+      "probability": 0.459,
+      "margin": 0.178,
       "adjustment": "raw_unvalidated_team",
       "label": "CORENDON ALANYASPOR kazanır",
       "raw_label": "CORENDON ALANYASPOR kazanır",
@@ -721,11 +721,17 @@
         "son formda beraberlik eğilimi"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 23,
+      "draw_rate": 0.13,
+      "last_meeting_date": "2026-04-19T11:30:00+00:00"
+    },
     "draw_risk": {
-      "score": 60,
+      "score": 52,
       "risk_level": "HIGH",
       "reasons": [
-        "draw_probability_live",
+        "draw_probability_watch",
         "draw_scoreline_top_two",
         "probability_margin_watch",
         "strength_edge_very_narrow",
@@ -1035,6 +1041,6 @@
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği CLAUDIO WINCK NETO, PAPE HABIB GUEYE, KUBİLAY KANATSIZKUŞ. Disiplin yönetimi gereken oyuncular: JHON JAIRO, ALİ YAVUZ KOL, RIBEIRO DIAS CARLOS MIGUEL.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %73 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 0.79-1.32 yerine 1.07-1.32 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 0.79-1.32 bandından 1.01-1.3 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %29 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %28, beraberliği %28, rakip galibiyetini %44 olarak işaretliyor. Gol beklentisi 0.79-1.32; kart sinyali MEDIUM."
+    "MVP olasılık motoru Beşiktaş galibiyetini %28, beraberliği %26, rakip galibiyetini %46 olarak işaretliyor. Gol beklentisi 0.79-1.32; kart sinyali MEDIUM."
   ]
 }

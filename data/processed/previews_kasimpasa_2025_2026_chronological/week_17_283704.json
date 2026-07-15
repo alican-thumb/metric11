@@ -642,8 +642,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.184,
-    "draw_probability": 0.23,
-    "opponent_win_probability": 0.585,
+    "draw_probability": 0.215,
+    "opponent_win_probability": 0.601,
     "expected_goals_for": 0.75,
     "expected_goals_against": 2.05,
     "top_scorelines": [
@@ -692,7 +692,7 @@
     },
     "recommended_call": {
       "result": "opponent_win",
-      "probability": 0.585,
+      "probability": 0.601,
       "scoreline": "0-2",
       "action": "taraf_eğilimi",
       "action_label": "Taraf eğilimi",
@@ -703,8 +703,8 @@
     "display_prediction": {
       "raw_result": "opponent_win",
       "final_result": "opponent_win",
-      "probability": 0.585,
-      "margin": 0.355,
+      "probability": 0.601,
+      "margin": 0.386,
       "adjustment": "raw_unvalidated_team",
       "label": "GALATASARAY A.Ş. kazanır",
       "raw_label": "GALATASARAY A.Ş. kazanır",
@@ -723,6 +723,12 @@
         "son formda beraberlik eğilimi",
         "büyük maç denge etkisi"
       ]
+    },
+    "head_to_head": {
+      "available": true,
+      "matches": 30,
+      "draw_rate": 0.167,
+      "last_meeting_date": "2026-05-17T17:00:00+00:00"
     },
     "draw_risk": {
       "score": 11,
@@ -1040,6 +1046,6 @@
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği PAPE HABIB GUEYE, CLAUDIO WINCK NETO, KUBİLAY KANATSIZKUŞ. Disiplin yönetimi gereken oyuncular: JHON JAIRO, AHMED MORTADHA BEN OUANES.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %55 uyum buldu; karar etiketi TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 0.75-2.05 yerine 1.1-2.05 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 0.75-2.05 bandından 0.97-2.03 bandına taşırdı. Bu senaryoda en olası skor 0-2 ve kazanma olasılığı %17 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %18, beraberliği %23, rakip galibiyetini %58 olarak işaretliyor. Gol beklentisi 0.75-2.05; kart sinyali MEDIUM."
+    "MVP olasılık motoru Beşiktaş galibiyetini %18, beraberliği %22, rakip galibiyetini %60 olarak işaretliyor. Gol beklentisi 0.75-2.05; kart sinyali MEDIUM."
   ]
 }

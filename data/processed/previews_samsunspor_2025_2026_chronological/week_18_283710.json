@@ -656,8 +656,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.277,
-    "draw_probability": 0.241,
-    "opponent_win_probability": 0.482,
+    "draw_probability": 0.259,
+    "opponent_win_probability": 0.465,
     "expected_goals_for": 1.11,
     "expected_goals_against": 1.86,
     "top_scorelines": [
@@ -706,22 +706,23 @@
     },
     "recommended_call": {
       "result": "opponent_win",
-      "probability": 0.482,
+      "probability": 0.465,
       "scoreline": "1-1",
       "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "action_label": "Korumalı taraf tahmini",
       "risk_notes": [
+        "draw_probability_watch",
         "top_draw_scoreline",
         "strength_edge_very_narrow",
         "low_confidence_side_pick",
-        "draw_calibration_medium"
+        "draw_calibration_high"
       ]
     },
     "display_prediction": {
       "raw_result": "opponent_win",
       "final_result": "opponent_win",
-      "probability": 0.482,
-      "margin": 0.206,
+      "probability": 0.465,
+      "margin": 0.188,
       "adjustment": "raw_unvalidated_team",
       "label": "GENÇLERBİRLİĞİ kazanır",
       "raw_label": "GENÇLERBİRLİĞİ kazanır",
@@ -733,21 +734,29 @@
     "availability_missing_count": 0,
     "strength_edge": 0.008,
     "draw_calibration": {
-      "lift": 0.075,
-      "risk_level": "MEDIUM",
-      "reasons": [
-        "takım gücü dengede",
-        "son formda beraberlik eğilimi"
-      ]
-    },
-    "draw_risk": {
-      "score": 43,
+      "lift": 0.135,
       "risk_level": "HIGH",
       "reasons": [
+        "takım gücü dengede",
+        "son formda beraberlik eğilimi",
+        "h2h_yüksek_beraberlik_geçmişi"
+      ]
+    },
+    "head_to_head": {
+      "available": true,
+      "matches": 8,
+      "draw_rate": 0.5,
+      "last_meeting_date": "2026-01-18T14:00:00+00:00"
+    },
+    "draw_risk": {
+      "score": 58,
+      "risk_level": "HIGH",
+      "reasons": [
+        "draw_probability_watch",
         "top_draw_scoreline",
         "strength_edge_very_narrow",
         "low_confidence_side_pick",
-        "draw_calibration_medium"
+        "draw_calibration_high"
       ],
       "protected_prediction": true,
       "recommended_model_action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
@@ -1077,6 +1086,6 @@
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği ANTHONY TİTE EMMANUEL MUSABA, PAPE CHERIF NDIAYE, CARL JOHAN HOLSE JUSTESEN. Disiplin yönetimi gereken oyuncular: SONER GÖNÜL.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %28 uyum buldu; karar etiketi TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.11-1.86 yerine 1.46-1.86 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.11-1.86 bandından 1.33-1.84 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %28 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %28, beraberliği %24, rakip galibiyetini %48 olarak işaretliyor. Gol beklentisi 1.11-1.86; kart sinyali MEDIUM."
+    "MVP olasılık motoru Beşiktaş galibiyetini %28, beraberliği %26, rakip galibiyetini %46 olarak işaretliyor. Gol beklentisi 1.11-1.86; kart sinyali MEDIUM."
   ]
 }

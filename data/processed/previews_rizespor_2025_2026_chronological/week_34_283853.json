@@ -677,8 +677,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.323,
-    "draw_probability": 0.25,
-    "opponent_win_probability": 0.427,
+    "draw_probability": 0.255,
+    "opponent_win_probability": 0.422,
     "expected_goals_for": 1.29,
     "expected_goals_against": 1.72,
     "top_scorelines": [
@@ -727,11 +727,12 @@
     },
     "recommended_call": {
       "result": "opponent_win",
-      "probability": 0.427,
+      "probability": 0.422,
       "scoreline": "1-1",
       "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "action_label": "Korumalı taraf tahmini",
       "risk_notes": [
+        "draw_probability_watch",
         "xg_margin_watch",
         "top_draw_scoreline",
         "probability_margin_narrow",
@@ -742,8 +743,8 @@
     "display_prediction": {
       "raw_result": "opponent_win",
       "final_result": "opponent_win",
-      "probability": 0.427,
-      "margin": 0.104,
+      "probability": 0.422,
+      "margin": 0.099,
       "adjustment": "raw_unvalidated_team",
       "label": "BEŞİKTAŞ A.Ş. kazanır",
       "raw_label": "BEŞİKTAŞ A.Ş. kazanır",
@@ -755,16 +756,24 @@
     "availability_missing_count": 0,
     "strength_edge": -0.055,
     "draw_calibration": {
-      "lift": 0.025,
+      "lift": 0.06,
       "risk_level": "LOW",
       "reasons": [
-        "takım gücü yakın"
+        "takım gücü yakın",
+        "h2h_beraberlik_geçmişi"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 26,
+      "draw_rate": 0.308,
+      "last_meeting_date": "2026-05-15T17:00:00+00:00"
+    },
     "draw_risk": {
-      "score": 57,
+      "score": 67,
       "risk_level": "HIGH",
       "reasons": [
+        "draw_probability_watch",
         "xg_margin_watch",
         "top_draw_scoreline",
         "probability_margin_narrow",
@@ -1066,6 +1075,6 @@
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği QAZIM LACI, ALI SOWE, LOIDE ANTONIO AUGUSTO. Disiplin yönetimi gereken oyuncular: LOIDE ANTONIO AUGUSTO, SAMET AKAYDİN, CASPER SOMMER HOJER.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %79 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.29-1.72 yerine 1.53-1.72 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.29-1.72 bandından 1.51-1.7 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %34 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %32, beraberliği %25, rakip galibiyetini %43 olarak işaretliyor. Gol beklentisi 1.29-1.72; kart sinyali MEDIUM."
+    "MVP olasılık motoru Beşiktaş galibiyetini %32, beraberliği %26, rakip galibiyetini %42 olarak işaretliyor. Gol beklentisi 1.29-1.72; kart sinyali MEDIUM."
   ]
 }

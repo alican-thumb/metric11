@@ -618,8 +618,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.589,
-    "draw_probability": 0.216,
-    "opponent_win_probability": 0.194,
+    "draw_probability": 0.197,
+    "opponent_win_probability": 0.213,
     "expected_goals_for": 2.31,
     "expected_goals_against": 1.18,
     "top_scorelines": [
@@ -678,7 +678,7 @@
       "raw_result": "target_win",
       "final_result": "target_win",
       "probability": 0.589,
-      "margin": 0.373,
+      "margin": 0.376,
       "adjustment": "raw_unvalidated_team",
       "label": "GALATASARAY A.Ş. kazanır",
       "raw_label": "GALATASARAY A.Ş. kazanır",
@@ -695,6 +695,12 @@
       "reasons": [
         "son formda beraberlik eğilimi"
       ]
+    },
+    "head_to_head": {
+      "available": true,
+      "matches": 26,
+      "draw_rate": 0.115,
+      "last_meeting_date": "2026-03-03T17:30:00+00:00"
     },
     "draw_risk": {
       "score": 5,
@@ -988,6 +994,6 @@
     "Kadro tercih önerisi: Önde baskı ve skor arama. Hücum önceliği MAURO EMANUEL ICARDI, EVREN EREN ELMALI, BARIŞ ALPER YILMAZ. Disiplin yönetimi gereken oyuncular: belirgin sinyal yok.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %102 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 2.31-1.18 yerine 2.31-1.18 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 2.31-1.18 bandından 2.53-1.16 bandına taşırdı. Bu senaryoda en olası skor 2-1 ve kazanma olasılığı %67 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %59, beraberliği %22, rakip galibiyetini %19 olarak işaretliyor. Gol beklentisi 2.31-1.18; kart sinyali MEDIUM."
+    "MVP olasılık motoru Beşiktaş galibiyetini %59, beraberliği %20, rakip galibiyetini %21 olarak işaretliyor. Gol beklentisi 2.31-1.18; kart sinyali MEDIUM."
   ]
 }

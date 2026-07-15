@@ -615,8 +615,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.43,
-    "draw_probability": 0.263,
-    "opponent_win_probability": 0.307,
+    "draw_probability": 0.267,
+    "opponent_win_probability": 0.302,
     "expected_goals_for": 1.48,
     "expected_goals_against": 1.24,
     "top_scorelines": [
@@ -670,7 +670,7 @@
       "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "action_label": "Korumalı taraf tahmini",
       "risk_notes": [
-        "draw_probability_watch",
+        "draw_probability_live",
         "xg_margin_narrow",
         "top_draw_scoreline",
         "probability_margin_watch",
@@ -683,7 +683,7 @@
       "raw_result": "target_win",
       "final_result": "target_win",
       "probability": 0.43,
-      "margin": 0.123,
+      "margin": 0.128,
       "adjustment": "raw_unvalidated_team",
       "label": "GAZİANTEP FUTBOL KULÜBÜ A.Ş. kazanır",
       "raw_label": "GAZİANTEP FUTBOL KULÜBÜ A.Ş. kazanır",
@@ -695,20 +695,27 @@
     "availability_missing_count": 0,
     "strength_edge": -0.042,
     "draw_calibration": {
-      "lift": 0.135,
+      "lift": 0.17,
       "risk_level": "HIGH",
       "reasons": [
         "xG farkı dar",
         "takım gücü yakın",
         "orta gol bandı",
-        "son formda beraberlik eğilimi"
+        "son formda beraberlik eğilimi",
+        "h2h_beraberlik_geçmişi"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 19,
+      "draw_rate": 0.316,
+      "last_meeting_date": "2026-03-01T17:00:00+00:00"
+    },
     "draw_risk": {
-      "score": 81,
+      "score": 89,
       "risk_level": "HIGH",
       "reasons": [
-        "draw_probability_watch",
+        "draw_probability_live",
         "xg_margin_narrow",
         "top_draw_scoreline",
         "probability_margin_watch",
@@ -1033,6 +1040,6 @@
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği KACPER SZYMON KOZLOWSKI, DEIAN CRISTIAN SORESCU, ALEXANDRU IULIAN MAXIM. Disiplin yönetimi gereken oyuncular: TAYYİP TALHA SANUÇ, YUSUF KARHAN KABADAYI, ENVER KULASIN.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %89 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.48-1.24 yerine 1.59-1.24 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday ERNEST MUÇİ (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.48-1.24 bandından 1.67-1.23 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %48 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %43, beraberliği %26, rakip galibiyetini %31 olarak işaretliyor. Gol beklentisi 1.48-1.24; kart sinyali MEDIUM."
+    "MVP olasılık motoru Beşiktaş galibiyetini %43, beraberliği %27, rakip galibiyetini %30 olarak işaretliyor. Gol beklentisi 1.48-1.24; kart sinyali MEDIUM."
   ]
 }

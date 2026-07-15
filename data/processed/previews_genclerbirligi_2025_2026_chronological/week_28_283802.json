@@ -659,8 +659,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.37,
-    "draw_probability": 0.345,
-    "opponent_win_probability": 0.285,
+    "draw_probability": 0.327,
+    "opponent_win_probability": 0.303,
     "expected_goals_for": 0.74,
     "expected_goals_against": 0.64,
     "top_scorelines": [
@@ -729,7 +729,7 @@
       "raw_result": "target_win",
       "final_result": "target_win",
       "probability": 0.37,
-      "margin": 0.025,
+      "margin": 0.043,
       "adjustment": "raw_unvalidated_team",
       "label": "GENÇLERBİRLİĞİ kazanır",
       "raw_label": "GENÇLERBİRLİĞİ kazanır",
@@ -748,6 +748,12 @@
         "takım gücü yakın",
         "son formda beraberlik eğilimi"
       ]
+    },
+    "head_to_head": {
+      "available": true,
+      "matches": 12,
+      "draw_rate": 0.083,
+      "last_meeting_date": "2026-04-04T11:30:00+00:00"
     },
     "draw_risk": {
       "score": 100,
@@ -1069,6 +1075,6 @@
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği SEKOU KOITA, METEHAN MİMAROĞLU, FRANCO DARYL TONGYA HEUBANG. Disiplin yönetimi gereken oyuncular: SEKOU KOITA, PEDRO MIGUEL DE ALMEIDA LOPES PEREIRA, FRANCO DARYL TONGYA HEUBANG.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %84 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 0.74-0.64 yerine 0.91-0.64 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 0.74-0.64 bandından 0.96-0.62 bandına taşırdı. Bu senaryoda en olası skor 0-0 ve kazanma olasılığı %42 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %37, beraberliği %34, rakip galibiyetini %28 olarak işaretliyor. Gol beklentisi 0.74-0.64; kart sinyali LOW."
+    "MVP olasılık motoru Beşiktaş galibiyetini %37, beraberliği %33, rakip galibiyetini %30 olarak işaretliyor. Gol beklentisi 0.74-0.64; kart sinyali LOW."
   ]
 }

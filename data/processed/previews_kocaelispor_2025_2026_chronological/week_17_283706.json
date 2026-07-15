@@ -644,8 +644,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.558,
-    "draw_probability": 0.287,
-    "opponent_win_probability": 0.155,
+    "draw_probability": 0.271,
+    "opponent_win_probability": 0.171,
     "expected_goals_for": 1.24,
     "expected_goals_against": 0.35,
     "top_scorelines": [
@@ -696,11 +696,10 @@
       "result": "target_win",
       "probability": 0.558,
       "scoreline": "1-0",
-      "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
-      "action_label": "Korumalı taraf tahmini",
+      "action": "KEEP_PICK_WITH_DRAW_WARNING",
+      "action_label": "Beraberlik uyarılı tahmin",
       "risk_notes": [
-        "Beraberlik güçlü alternatif",
-        "draw_probability_high",
+        "draw_probability_live",
         "draw_scoreline_top_two",
         "strength_edge_very_narrow",
         "medium_confidence_side_pick",
@@ -711,7 +710,7 @@
       "raw_result": "target_win",
       "final_result": "target_win",
       "probability": 0.558,
-      "margin": 0.271,
+      "margin": 0.287,
       "adjustment": "raw_unvalidated_team",
       "label": "KOCAELİSPOR kazanır",
       "raw_label": "KOCAELİSPOR kazanır",
@@ -729,18 +728,24 @@
         "son formda beraberlik eğilimi"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 4,
+      "draw_rate": 0.0,
+      "last_meeting_date": "2026-05-17T17:00:00+00:00"
+    },
     "draw_risk": {
-      "score": 38,
-      "risk_level": "HIGH",
+      "score": 32,
+      "risk_level": "MEDIUM",
       "reasons": [
-        "draw_probability_high",
+        "draw_probability_live",
         "draw_scoreline_top_two",
         "strength_edge_very_narrow",
         "medium_confidence_side_pick",
         "strong_side_probability_penalty"
       ],
       "protected_prediction": true,
-      "recommended_model_action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
+      "recommended_model_action": "KEEP_PICK_WITH_DRAW_WARNING",
       "note": "Ana 1X2 tahminini değiştirmeden beraberlik senaryosunu görünür yapan risk katmanıdır."
     },
     "big_match_profile": {
@@ -1026,10 +1031,10 @@
     "Hakem için bu sezon önceki Beşiktaş örneği yok; hakem etkisi düşük güvenle ele alındı.",
     "Olası 11 sinyalinde son dönemde öne çıkan isimler: ALEKSANDAR JOVANOVIC, HRVOJE SMOLCIC, KAROL LINETTY, TAYFUR BİNGÖL, SERDAR DURSUN, AHMET OĞUZ. Kart riski tarafında ise son 8 maç penceresinde BOTOND BALOGH, MANUEL LUIS DA SILVA CAFUMANA, AHMET OĞUZ, ANFERNEE JAMAL DIJKSTEEL dikkat çekiyor.",
     "Gol adayı sinyalinde öne çıkan isimler: TAYFUR BİNGÖL, SERDAR DURSUN, BRUNO PETKOVIC, DANIEL EBENEZER KWASI AGYEI. Bu skor son gol formu, sezon içi gol sayısı ve son dönemde ilk 11 başlama sıklığından türetildi. Test sonucunda gerçek Beşiktaş golcüleri: HRVOJE SMOLCIC, TAYFUR BİNGÖL.",
-    "Skor dağılımında en olası senaryolar: 1-0 (%25), 0-0 (%20), 2-0 (%16). Model aksiyonu: Korumalı taraf tahmini; önerilen ana skor 1-0.",
+    "Skor dağılımında en olası senaryolar: 1-0 (%25), 0-0 (%20), 2-0 (%16). Model aksiyonu: Beraberlik uyarılı tahmin; önerilen ana skor 1-0.",
     "Kadro tercih önerisi: Önde baskı ve skor arama. Hücum önceliği TAYFUR BİNGÖL, SERDAR DURSUN, BRUNO PETKOVIC. Disiplin yönetimi gereken oyuncular: BOTOND BALOGH, MANUEL LUIS DA SILVA CAFUMANA.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %90 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.24-0.35 yerine 1.34-0.35 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.24-0.35 bandından 1.46-0.33 bandına taşırdı. Bu senaryoda en olası skor 1-0 ve kazanma olasılığı %66 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %56, beraberliği %29, rakip galibiyetini %16 olarak işaretliyor. Gol beklentisi 1.24-0.35; kart sinyali LOW."
+    "MVP olasılık motoru Beşiktaş galibiyetini %56, beraberliği %27, rakip galibiyetini %17 olarak işaretliyor. Gol beklentisi 1.24-0.35; kart sinyali LOW."
   ]
 }

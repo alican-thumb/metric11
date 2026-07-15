@@ -1,8 +1,8 @@
 {
   "summary": {
     "big_match_count": 6,
-    "correct": 3,
-    "accuracy": 0.5,
+    "correct": 2,
+    "accuracy": 0.333,
     "high_or_medium_risk_count": 6,
     "risk_distribution": {
       "MEDIUM": 3,
@@ -10,7 +10,7 @@
     },
     "miss_distribution": {
       "missed_draw": 2,
-      "overrated_besiktas": 1
+      "overrated_besiktas": 2
     },
     "key_learning": "Büyük maçlar normal maç gibi okunmamalı; model taraf tahmini verse bile beraberlik, kart ve düşük fark senaryosu ayrı risk katmanı olarak gösterilmeli."
   },
@@ -24,8 +24,8 @@
       "actual": "draw",
       "correct": false,
       "target_win_probability": 0.2,
-      "draw_probability": 0.219,
-      "opponent_win_probability": 0.58,
+      "draw_probability": 0.206,
+      "opponent_win_probability": 0.594,
       "recommended_action": "taraf_eğilimi",
       "card_signal": "MEDIUM",
       "big_match_risk": "MEDIUM",
@@ -93,8 +93,8 @@
       "actual": "opponent_win",
       "correct": true,
       "target_win_probability": 0.325,
-      "draw_probability": 0.274,
-      "opponent_win_probability": 0.401,
+      "draw_probability": 0.278,
+      "opponent_win_probability": 0.397,
       "recommended_action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "card_signal": "HIGH",
       "big_match_risk": "HIGH",
@@ -114,7 +114,8 @@
         "takım gücü yakın",
         "orta gol bandı",
         "son formda beraberlik eğilimi",
-        "büyük maç denge etkisi"
+        "büyük maç denge etkisi",
+        "h2h_beraberlik_geçmişi"
       ],
       "top_goal_candidates": [
         {
@@ -154,7 +155,7 @@
         },
         {
           "name": "DAVID JURASEK",
-          "score": 4.05,
+          "score": 5.19,
           "type": "primary+impact_sub"
         }
       ]
@@ -168,22 +169,24 @@
       "actual": "draw",
       "correct": false,
       "target_win_probability": 0.32,
-      "draw_probability": 0.249,
-      "opponent_win_probability": 0.431,
+      "draw_probability": 0.257,
+      "opponent_win_probability": 0.423,
       "recommended_action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "card_signal": "MEDIUM",
       "big_match_risk": "MEDIUM",
-      "big_match_volatility": 0.5,
+      "big_match_volatility": 0.65,
       "big_match_adjustment": "ana tarafı koru ama alternatif senaryoyu görünür tut",
       "big_match_notes": [
         "büyük maç taban riski",
         "büyük maç varyansı yüksek",
+        "beraberlik riski canlı",
         "deplasman büyük maçı"
       ],
-      "draw_risk": "LOW",
+      "draw_risk": "MEDIUM",
       "draw_reasons": [
         "son formda beraberlik eğilimi",
-        "büyük maç denge etkisi"
+        "büyük maç denge etkisi",
+        "h2h_beraberlik_geçmişi"
       ],
       "top_goal_candidates": [
         {
@@ -207,6 +210,11 @@
           "type": "primary+impact_sub"
         },
         {
+          "name": "DAVID JURASEK",
+          "score": 8.88,
+          "type": "primary+impact_sub"
+        },
+        {
           "name": "EMİRHAN TOPÇU",
           "score": 7.89,
           "type": "primary"
@@ -215,11 +223,6 @@
           "name": "ONYINYE WILFRED NDIDI",
           "score": 7.21,
           "type": "primary"
-        },
-        {
-          "name": "DAVID JURASEK",
-          "score": 6.93,
-          "type": "primary+impact_sub"
         },
         {
           "name": "TIAGO EMANUEL EMBALO DJALO",
@@ -237,8 +240,8 @@
       "actual": "opponent_win",
       "correct": true,
       "target_win_probability": 0.312,
-      "draw_probability": 0.238,
-      "opponent_win_probability": 0.45,
+      "draw_probability": 0.223,
+      "opponent_win_probability": 0.466,
       "recommended_action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "card_signal": "HIGH",
       "big_match_risk": "MEDIUM",
@@ -302,12 +305,12 @@
       "date": "5.04.2026 - 20:00",
       "fixture": "FENERBAHÇE A.Ş. - BEŞİKTAŞ A.Ş.",
       "actual_score": "1-0",
-      "predicted": "opponent_win",
+      "predicted": "target_win",
       "actual": "opponent_win",
-      "correct": true,
+      "correct": false,
       "target_win_probability": 0.37,
-      "draw_probability": 0.257,
-      "opponent_win_probability": 0.372,
+      "draw_probability": 0.261,
+      "opponent_win_probability": 0.369,
       "recommended_action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "card_signal": "MEDIUM",
       "big_match_risk": "HIGH",
@@ -327,7 +330,8 @@
         "xG farkı çok dar",
         "takım gücü dengede",
         "son formda beraberlik eğilimi",
-        "büyük maç denge etkisi"
+        "büyük maç denge etkisi",
+        "h2h_beraberlik_geçmişi"
       ],
       "top_goal_candidates": [
         {
@@ -346,6 +350,11 @@
           "type": "primary"
         },
         {
+          "name": "ISHOLA JUNIOR  OLAITAN",
+          "score": 12.46,
+          "type": "primary"
+        },
+        {
           "name": "JOAO PEDRO FERREIRA DA SILVA",
           "score": 10.37,
           "type": "impact_sub"
@@ -359,11 +368,6 @@
           "name": "MUSTAFA ERHAN HEKİMOĞLU",
           "score": 9.59,
           "type": "primary+impact_sub"
-        },
-        {
-          "name": "ISHOLA JUNIOR  OLAITAN",
-          "score": 8.47,
-          "type": "primary"
         },
         {
           "name": "ONYINYE WILFRED NDIDI",
@@ -381,8 +385,8 @@
       "actual": "opponent_win",
       "correct": false,
       "target_win_probability": 0.435,
-      "draw_probability": 0.269,
-      "opponent_win_probability": 0.296,
+      "draw_probability": 0.277,
+      "opponent_win_probability": 0.288,
       "recommended_action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "card_signal": "HIGH",
       "big_match_risk": "HIGH",
@@ -401,7 +405,8 @@
         "takım gücü dengede",
         "orta gol bandı",
         "son formda beraberlik eğilimi",
-        "büyük maç denge etkisi"
+        "büyük maç denge etkisi",
+        "h2h_beraberlik_geçmişi"
       ],
       "top_goal_candidates": [
         {
@@ -430,6 +435,11 @@
           "type": "primary+impact_sub"
         },
         {
+          "name": "ISHOLA JUNIOR  OLAITAN",
+          "score": 8.36,
+          "type": "primary"
+        },
+        {
           "name": "VACLAV CERNY",
           "score": 7.88,
           "type": "primary+impact_sub"
@@ -437,11 +447,6 @@
         {
           "name": "EL BILAL TOURE",
           "score": 7.46,
-          "type": "primary+set_piece_defender"
-        },
-        {
-          "name": "ONYINYE WILFRED NDIDI",
-          "score": 6.83,
           "type": "primary+set_piece_defender"
         }
       ]

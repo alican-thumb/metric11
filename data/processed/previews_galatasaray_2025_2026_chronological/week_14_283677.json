@@ -664,8 +664,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.217,
-    "draw_probability": 0.21,
-    "opponent_win_probability": 0.572,
+    "draw_probability": 0.219,
+    "opponent_win_probability": 0.563,
     "expected_goals_for": 1.42,
     "expected_goals_against": 2.8,
     "top_scorelines": [
@@ -714,7 +714,7 @@
     },
     "recommended_call": {
       "result": "opponent_win",
-      "probability": 0.572,
+      "probability": 0.563,
       "scoreline": "1-2",
       "action": "taraf_eğilimi",
       "action_label": "Taraf eğilimi",
@@ -725,8 +725,8 @@
     "display_prediction": {
       "raw_result": "opponent_win",
       "final_result": "opponent_win",
-      "probability": 0.572,
-      "margin": 0.355,
+      "probability": 0.563,
+      "margin": 0.344,
       "adjustment": "raw_unvalidated_team",
       "label": "FENERBAHÇE A.Ş. kazanır",
       "raw_label": "FENERBAHÇE A.Ş. kazanır",
@@ -738,12 +738,19 @@
     "availability_missing_count": 0,
     "strength_edge": -0.013,
     "draw_calibration": {
-      "lift": 0.07,
+      "lift": 0.105,
       "risk_level": "MEDIUM",
       "reasons": [
         "takım gücü dengede",
-        "büyük maç denge etkisi"
+        "büyük maç denge etkisi",
+        "h2h_beraberlik_geçmişi"
       ]
+    },
+    "head_to_head": {
+      "available": true,
+      "matches": 37,
+      "draw_rate": 0.351,
+      "last_meeting_date": "2026-04-26T17:00:00+00:00"
     },
     "draw_risk": {
       "score": 20,
@@ -1064,6 +1071,6 @@
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği MAURO EMANUEL ICARDI, LEROY AZIZ SANE, BARIŞ ALPER YILMAZ. Disiplin yönetimi gereken oyuncular: KAAN AYHAN, GÜNAY GÜVENÇ, KAZIMCAN KARATAŞ.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %80 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.42-2.8 yerine 1.64-2.8 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.42-2.8 bandından 1.64-2.78 bandına taşırdı. Bu senaryoda en olası skor 1-2 ve kazanma olasılığı %21 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %22, beraberliği %21, rakip galibiyetini %57 olarak işaretliyor. Gol beklentisi 1.42-2.8; kart sinyali MEDIUM."
+    "MVP olasılık motoru Beşiktaş galibiyetini %22, beraberliği %22, rakip galibiyetini %56 olarak işaretliyor. Gol beklentisi 1.42-2.8; kart sinyali MEDIUM."
   ]
 }

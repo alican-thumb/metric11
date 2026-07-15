@@ -594,8 +594,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.374,
-    "draw_probability": 0.288,
-    "opponent_win_probability": 0.338,
+    "draw_probability": 0.291,
+    "opponent_win_probability": 0.335,
     "expected_goals_for": 1.07,
     "expected_goals_against": 1.1,
     "top_scorelines": [
@@ -664,7 +664,7 @@
       "raw_result": "target_win",
       "final_result": "target_win",
       "probability": 0.374,
-      "margin": 0.036,
+      "margin": 0.039,
       "adjustment": "raw_unvalidated_team",
       "label": "CORENDON ALANYASPOR kazanır",
       "raw_label": "CORENDON ALANYASPOR kazanır",
@@ -682,8 +682,15 @@
         "xG farkı çok dar",
         "takım gücü dengede",
         "orta gol bandı",
-        "son formda beraberlik eğilimi"
+        "son formda beraberlik eğilimi",
+        "h2h_beraberlik_geçmişi"
       ]
+    },
+    "head_to_head": {
+      "available": true,
+      "matches": 20,
+      "draw_rate": 0.3,
+      "last_meeting_date": "2026-02-21T13:00:00+00:00"
     },
     "draw_risk": {
       "score": 100,

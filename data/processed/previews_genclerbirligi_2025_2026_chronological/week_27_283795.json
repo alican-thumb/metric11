@@ -664,8 +664,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.268,
-    "draw_probability": 0.28,
-    "opponent_win_probability": 0.452,
+    "draw_probability": 0.292,
+    "opponent_win_probability": 0.44,
     "expected_goals_for": 0.72,
     "expected_goals_against": 1.31,
     "top_scorelines": [
@@ -714,7 +714,7 @@
     },
     "recommended_call": {
       "result": "opponent_win",
-      "probability": 0.452,
+      "probability": 0.44,
       "scoreline": "0-1",
       "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "action_label": "Korumalı taraf tahmini",
@@ -731,8 +731,8 @@
     "display_prediction": {
       "raw_result": "opponent_win",
       "final_result": "opponent_win",
-      "probability": 0.452,
-      "margin": 0.171,
+      "probability": 0.44,
+      "margin": 0.148,
       "adjustment": "raw_unvalidated_team",
       "label": "TÜMOSAN KONYASPOR kazanır",
       "raw_label": "TÜMOSAN KONYASPOR kazanır",
@@ -744,12 +744,19 @@
     "availability_missing_count": 0,
     "strength_edge": -0.021,
     "draw_calibration": {
-      "lift": 0.075,
+      "lift": 0.11,
       "risk_level": "MEDIUM",
       "reasons": [
         "takım gücü dengede",
-        "son formda beraberlik eğilimi"
+        "son formda beraberlik eğilimi",
+        "h2h_beraberlik_geçmişi"
       ]
+    },
+    "head_to_head": {
+      "available": true,
+      "matches": 19,
+      "draw_rate": 0.368,
+      "last_meeting_date": "2026-03-19T17:00:00+00:00"
     },
     "draw_risk": {
       "score": 66,
@@ -1058,6 +1065,6 @@
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği SEKOU KOITA, METEHAN MİMAROĞLU, FRANCO DARYL TONGYA HEUBANG. Disiplin yönetimi gereken oyuncular: PEDRO MIGUEL DE ALMEIDA LOPES PEREIRA, SEKOU KOITA, FRANCO DARYL TONGYA HEUBANG.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %81 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 0.72-1.31 yerine 0.93-1.31 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 0.72-1.31 bandından 0.94-1.29 bandına taşırdı. Bu senaryoda en olası skor 0-1 ve kazanma olasılığı %27 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %27, beraberliği %28, rakip galibiyetini %45 olarak işaretliyor. Gol beklentisi 0.72-1.31; kart sinyali MEDIUM."
+    "MVP olasılık motoru Beşiktaş galibiyetini %27, beraberliği %29, rakip galibiyetini %44 olarak işaretliyor. Gol beklentisi 0.72-1.31; kart sinyali MEDIUM."
   ]
 }

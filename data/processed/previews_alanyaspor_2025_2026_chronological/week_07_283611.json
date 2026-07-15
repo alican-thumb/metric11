@@ -630,8 +630,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.21,
-    "draw_probability": 0.222,
-    "opponent_win_probability": 0.568,
+    "draw_probability": 0.2,
+    "opponent_win_probability": 0.59,
     "expected_goals_for": 1.13,
     "expected_goals_against": 2.38,
     "top_scorelines": [
@@ -680,7 +680,7 @@
     },
     "recommended_call": {
       "result": "opponent_win",
-      "probability": 0.568,
+      "probability": 0.59,
       "scoreline": "1-2",
       "action": "taraf_eğilimi",
       "action_label": "Taraf eğilimi",
@@ -691,8 +691,8 @@
     "display_prediction": {
       "raw_result": "opponent_win",
       "final_result": "opponent_win",
-      "probability": 0.568,
-      "margin": 0.345,
+      "probability": 0.59,
+      "margin": 0.381,
       "adjustment": "raw_unvalidated_team",
       "label": "GALATASARAY A.Ş. kazanır",
       "raw_label": "GALATASARAY A.Ş. kazanır",
@@ -711,12 +711,17 @@
         "büyük maç denge etkisi"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 26,
+      "draw_rate": 0.115,
+      "last_meeting_date": "2026-03-03T17:30:00+00:00"
+    },
     "draw_risk": {
-      "score": 1,
+      "score": 0,
       "risk_level": "LOW",
       "reasons": [
         "strength_edge_narrow",
-        "medium_confidence_side_pick",
         "strong_side_probability_penalty"
       ],
       "protected_prediction": false,
@@ -734,7 +739,7 @@
         "hakem kart profili yüksek"
       ]
     },
-    "confidence": "MEDIUM",
+    "confidence": "HIGH",
     "xg_data_available": false,
     "note": "Poisson, form, rakip savunma, hakem, eksik oyuncu ve takım gücü sinyaliyle çalışan MVP tahmin modelidir."
   },
@@ -1011,6 +1016,6 @@
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği İBRAHİM KAYA, UCHENNA OGUNDU, YUSUF ÖZDEMİR. Disiplin yönetimi gereken oyuncular: IANIS HAGI, GÜVEN YALÇIN.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %101 uyum buldu; karar etiketi UYUMLU. Alternatif model 11'i kullanılsaydı xG 1.13-2.38 yerine 1.13-2.38 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.13-2.38 bandından 1.35-2.36 bandına taşırdı. Bu senaryoda en olası skor 1-2 ve kazanma olasılığı %21 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %21, beraberliği %22, rakip galibiyetini %57 olarak işaretliyor. Gol beklentisi 1.13-2.38; kart sinyali HIGH."
+    "MVP olasılık motoru Beşiktaş galibiyetini %21, beraberliği %20, rakip galibiyetini %59 olarak işaretliyor. Gol beklentisi 1.13-2.38; kart sinyali HIGH."
   ]
 }

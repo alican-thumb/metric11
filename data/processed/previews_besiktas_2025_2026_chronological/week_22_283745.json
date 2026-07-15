@@ -689,8 +689,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.273,
-    "draw_probability": 0.225,
-    "opponent_win_probability": 0.502,
+    "draw_probability": 0.245,
+    "opponent_win_probability": 0.482,
     "expected_goals_for": 1.35,
     "expected_goals_against": 2.22,
     "top_scorelines": [
@@ -739,22 +739,22 @@
     },
     "recommended_call": {
       "result": "opponent_win",
-      "probability": 0.502,
+      "probability": 0.482,
       "scoreline": "1-2",
-      "action": "KEEP_PICK_WITH_DRAW_WARNING",
-      "action_label": "Beraberlik uyarılı tahmin",
+      "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
+      "action_label": "Korumalı taraf tahmini",
       "risk_notes": [
         "draw_scoreline_top_two",
         "strength_edge_very_narrow",
-        "medium_confidence_side_pick",
-        "draw_calibration_medium"
+        "low_confidence_side_pick",
+        "draw_calibration_high"
       ]
     },
     "display_prediction": {
       "raw_result": "opponent_win",
       "final_result": "opponent_win",
-      "probability": 0.502,
-      "margin": 0.229,
+      "probability": 0.482,
+      "margin": 0.209,
       "adjustment": "protected_side",
       "label": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ kazanır",
       "raw_label": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ kazanır",
@@ -766,24 +766,31 @@
     "availability_missing_count": 0,
     "strength_edge": -0.034,
     "draw_calibration": {
-      "lift": 0.075,
-      "risk_level": "MEDIUM",
+      "lift": 0.135,
+      "risk_level": "HIGH",
       "reasons": [
         "takım gücü dengede",
-        "son formda beraberlik eğilimi"
+        "son formda beraberlik eğilimi",
+        "h2h_yüksek_beraberlik_geçmişi"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 29,
+      "draw_rate": 0.414,
+      "last_meeting_date": "2026-02-15T17:00:00+00:00"
+    },
     "draw_risk": {
-      "score": 31,
-      "risk_level": "MEDIUM",
+      "score": 41,
+      "risk_level": "HIGH",
       "reasons": [
         "draw_scoreline_top_two",
         "strength_edge_very_narrow",
-        "medium_confidence_side_pick",
-        "draw_calibration_medium"
+        "low_confidence_side_pick",
+        "draw_calibration_high"
       ],
       "protected_prediction": true,
-      "recommended_model_action": "KEEP_PICK_WITH_DRAW_WARNING",
+      "recommended_model_action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "note": "Ana 1X2 tahminini değiştirmeden beraberlik senaryosunu görünür yapan risk katmanıdır."
     },
     "big_match_profile": {
@@ -792,7 +799,7 @@
       "adjustment": "not_big_match",
       "notes": []
     },
-    "confidence": "MEDIUM",
+    "confidence": "LOW",
     "xg_data_available": false,
     "note": "Poisson, form, rakip savunma, hakem, eksik oyuncu ve takım gücü sinyaliyle çalışan MVP tahmin modelidir."
   },
@@ -1104,10 +1111,10 @@
     "Hakem profili kart tarafında anlamlı bir sinyal veriyor: MEHMET TÜRKMEN bu sezon önceki 9 Beşiktaş maçında toplam maç başı 3.11 kart, Beşiktaş'a maç başı 1.22 kart ortalamasıyla öne çıkıyor.",
     "Olası 11 sinyalinde son dönemde öne çıkan isimler: ERSİN DESTANOĞLU, ORKUN KÖKÇÜ, VACLAV CERNY, EMİRHAN TOPÇU, EL BILAL TOURE, GÖKHAN SAZDAĞI. Kart riski tarafında ise son 8 maç penceresinde FELIX OHIS UDUOKHAI, SALİH UÇAN, HYEONGYU OH, KEVIN OGHENETEGA TAMARAEBI BAKUMO ABRAHAM dikkat çekiyor.",
     "Gol adayı sinyalinde öne çıkan isimler: EL BILAL TOURE, VACLAV CERNY, ORKUN KÖKÇÜ, KEVIN OGHENETEGA TAMARAEBI BAKUMO ABRAHAM. Bu skor son gol formu, sezon içi gol sayısı ve son dönemde ilk 11 başlama sıklığından türetildi. Test sonucunda gerçek Beşiktaş golcüleri: HYEONGYU OH, ORKUN KÖKÇÜ, MUSTAFA ERHAN HEKİMOĞLU.",
-    "Skor dağılımında en olası senaryolar: 1-2 (%9), 1-1 (%8), 0-2 (%7). Model aksiyonu: Beraberlik uyarılı tahmin; önerilen ana skor 1-2.",
+    "Skor dağılımında en olası senaryolar: 1-2 (%9), 1-1 (%8), 0-2 (%7). Model aksiyonu: Korumalı taraf tahmini; önerilen ana skor 1-2.",
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği EL BILAL TOURE, VACLAV CERNY, ORKUN KÖKÇÜ. Disiplin yönetimi gereken oyuncular: FELIX OHIS UDUOKHAI, SALİH UÇAN, HYEONGYU OH.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %65 uyum buldu; karar etiketi TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.35-2.22 yerine 1.7-2.22 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.35-2.22 bandından 1.57-2.2 bandına taşırdı. Bu senaryoda en olası skor 1-2 ve kazanma olasılığı %28 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %27, beraberliği %22, rakip galibiyetini %50 olarak işaretliyor. Gol beklentisi 1.35-2.22; kart sinyali MEDIUM."
+    "MVP olasılık motoru Beşiktaş galibiyetini %27, beraberliği %24, rakip galibiyetini %48 olarak işaretliyor. Gol beklentisi 1.35-2.22; kart sinyali MEDIUM."
   ]
 }

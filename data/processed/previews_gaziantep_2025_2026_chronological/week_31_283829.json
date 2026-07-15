@@ -669,8 +669,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.489,
-    "draw_probability": 0.252,
-    "opponent_win_probability": 0.259,
+    "draw_probability": 0.233,
+    "opponent_win_probability": 0.278,
     "expected_goals_for": 1.69,
     "expected_goals_against": 1.14,
     "top_scorelines": [
@@ -724,7 +724,6 @@
       "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "action_label": "Korumalı taraf tahmini",
       "risk_notes": [
-        "draw_probability_watch",
         "top_draw_scoreline",
         "strength_edge_very_narrow",
         "low_confidence_side_pick",
@@ -735,7 +734,7 @@
       "raw_result": "target_win",
       "final_result": "target_win",
       "probability": 0.489,
-      "margin": 0.23,
+      "margin": 0.211,
       "adjustment": "raw_unvalidated_team",
       "label": "GAZİANTEP FUTBOL KULÜBÜ A.Ş. kazanır",
       "raw_label": "GAZİANTEP FUTBOL KULÜBÜ A.Ş. kazanır",
@@ -754,11 +753,16 @@
         "orta gol bandı"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 6,
+      "draw_rate": 0.0,
+      "last_meeting_date": "2026-04-25T11:30:00+00:00"
+    },
     "draw_risk": {
-      "score": 53,
+      "score": 43,
       "risk_level": "HIGH",
       "reasons": [
-        "draw_probability_watch",
         "top_draw_scoreline",
         "strength_edge_very_narrow",
         "low_confidence_side_pick",
@@ -1064,6 +1068,6 @@
     "Kadro tercih önerisi: Önde baskı ve skor arama. Hücum önceliği MOHAMED LAMINE BAYO, KACPER SZYMON KOZLOWSKI, ALEXANDRU IULIAN MAXIM. Disiplin yönetimi gereken oyuncular: YUSUF KARHAN KABADAYI, VICTOR NTINO-EMO GIDADO, CHRISTOPHER LUNGOYI.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %93 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.69-1.14 yerine 1.77-1.14 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday ERNEST MUÇİ (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.69-1.14 bandından 1.88-1.13 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %55 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %49, beraberliği %25, rakip galibiyetini %26 olarak işaretliyor. Gol beklentisi 1.69-1.14; kart sinyali MEDIUM."
+    "MVP olasılık motoru Beşiktaş galibiyetini %49, beraberliği %23, rakip galibiyetini %28 olarak işaretliyor. Gol beklentisi 1.69-1.14; kart sinyali MEDIUM."
   ]
 }

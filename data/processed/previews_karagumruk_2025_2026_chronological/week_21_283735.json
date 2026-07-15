@@ -659,8 +659,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.401,
-    "draw_probability": 0.267,
-    "opponent_win_probability": 0.332,
+    "draw_probability": 0.259,
+    "opponent_win_probability": 0.341,
     "expected_goals_for": 1.37,
     "expected_goals_against": 1.29,
     "top_scorelines": [
@@ -715,7 +715,7 @@
       "action_label": "Korumalı taraf tahmini",
       "risk_notes": [
         "Taraflar arası fark dar",
-        "draw_probability_live",
+        "draw_probability_watch",
         "xg_margin_very_narrow",
         "top_draw_scoreline",
         "probability_margin_narrow",
@@ -728,7 +728,7 @@
       "raw_result": "target_win",
       "final_result": "target_win",
       "probability": 0.401,
-      "margin": 0.069,
+      "margin": 0.06,
       "adjustment": "raw_unvalidated_team",
       "label": "MISIRLI.COM.TR FATİH KARAGÜMRÜK kazanır",
       "raw_label": "MISIRLI.COM.TR FATİH KARAGÜMRÜK kazanır",
@@ -749,11 +749,17 @@
         "son formda beraberlik eğilimi"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 11,
+      "draw_rate": 0.182,
+      "last_meeting_date": "2026-02-07T11:30:00+00:00"
+    },
     "draw_risk": {
-      "score": 100,
+      "score": 94,
       "risk_level": "HIGH",
       "reasons": [
-        "draw_probability_live",
+        "draw_probability_watch",
         "xg_margin_very_narrow",
         "top_draw_scoreline",
         "probability_margin_narrow",
@@ -1083,6 +1089,6 @@
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği DATRO DAVID FOFANA, SERGIO ANTONIO DA LUZ JUNIOR, ANIL YİĞİT ÇINAR. Disiplin yönetimi gereken oyuncular: DANIEL ANTHONY JOHNSON, ANIL YİĞİT ÇINAR, JOAO PEDRO GOMES CAMACHO.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %69 uyum buldu; karar etiketi TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.37-1.29 yerine 1.66-1.29 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.37-1.29 bandından 1.59-1.27 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %45 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %40, beraberliği %27, rakip galibiyetini %33 olarak işaretliyor. Gol beklentisi 1.37-1.29; kart sinyali LOW."
+    "MVP olasılık motoru Beşiktaş galibiyetini %40, beraberliği %26, rakip galibiyetini %34 olarak işaretliyor. Gol beklentisi 1.37-1.29; kart sinyali LOW."
   ]
 }

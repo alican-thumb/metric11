@@ -551,6 +551,23 @@
         "recent_cards": 2
       },
       {
+        "player_id": "2820847",
+        "name": "ISHOLA JUNIOR  OLAITAN",
+        "goal_threat_score": 8.23,
+        "candidate_type": "primary+impact_sub",
+        "recent_starts": 4,
+        "season_goals_before_match": 2,
+        "recent_goals": 1,
+        "big_match_goals_before_match": 0,
+        "opponent_defense_multiplier": 1.14,
+        "actual_scorer": false,
+        "header_goals_before_match": 0,
+        "penalty_goals_before_match": 0,
+        "recent_bench": 3,
+        "cards_before_match": 1,
+        "recent_cards": 0
+      },
+      {
         "player_id": "1618261",
         "name": "TAHA ALTIKARDEŞ",
         "goal_threat_score": 7.85,
@@ -607,28 +624,6 @@
         "recent_cards": 0,
         "opponent_defense_multiplier": 1.14,
         "actual_scorer": false
-      },
-      {
-        "player_id": "2820847",
-        "name": "ISHOLA JUNIOR  OLAITAN",
-        "goal_threat_score": 5.6,
-        "candidate_type": "primary+impact_sub",
-        "recent_starts": 4,
-        "season_goals_before_match": 2,
-        "recent_goals": 1,
-        "big_match_goals_before_match": 0,
-        "opponent_defense_multiplier": 1.14,
-        "actual_scorer": false,
-        "header_goals_before_match": 0,
-        "penalty_goals_before_match": 0,
-        "recent_bench": 3,
-        "cards_before_match": 1,
-        "recent_cards": 0,
-        "quality_adjustment": {
-          "multiplier": 0.68,
-          "reason": "Top 5 sıralama etkisini düşür veya aday tipini yeniden kontrol et.",
-          "source": "goal_candidate_segment_backtest"
-        }
       }
     ],
     "specialist_candidate_count": 11,
@@ -649,8 +644,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.555,
-    "draw_probability": 0.247,
-    "opponent_win_probability": 0.198,
+    "draw_probability": 0.249,
+    "opponent_win_probability": 0.197,
     "expected_goals_for": 1.71,
     "expected_goals_against": 0.82,
     "top_scorelines": [
@@ -709,7 +704,7 @@
       "raw_result": "target_win",
       "final_result": "target_win",
       "probability": 0.555,
-      "margin": 0.308,
+      "margin": 0.306,
       "adjustment": "raw_unvalidated_team",
       "label": "GÖZTEPE A.Ş. kazanır",
       "raw_label": "GÖZTEPE A.Ş. kazanır",
@@ -727,6 +722,12 @@
         "orta gol bandı",
         "son formda beraberlik eğilimi"
       ]
+    },
+    "head_to_head": {
+      "available": true,
+      "matches": 18,
+      "draw_rate": 0.278,
+      "last_meeting_date": "2026-02-08T14:00:00+00:00"
     },
     "draw_risk": {
       "score": 1,

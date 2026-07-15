@@ -654,8 +654,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.434,
-    "draw_probability": 0.291,
-    "opponent_win_probability": 0.275,
+    "draw_probability": 0.295,
+    "opponent_win_probability": 0.271,
     "expected_goals_for": 1.16,
     "expected_goals_against": 0.86,
     "top_scorelines": [
@@ -723,7 +723,7 @@
       "raw_result": "target_win",
       "final_result": "target_win",
       "probability": 0.434,
-      "margin": 0.143,
+      "margin": 0.139,
       "adjustment": "raw_unvalidated_team",
       "label": "CORENDON ALANYASPOR kazanır",
       "raw_label": "CORENDON ALANYASPOR kazanır",
@@ -735,13 +735,20 @@
     "availability_missing_count": 0,
     "strength_edge": 0.015,
     "draw_calibration": {
-      "lift": 0.13,
+      "lift": 0.165,
       "risk_level": "HIGH",
       "reasons": [
         "xG farkı dar",
         "takım gücü dengede",
-        "son formda beraberlik eğilimi"
+        "son formda beraberlik eğilimi",
+        "h2h_beraberlik_geçmişi"
       ]
+    },
+    "head_to_head": {
+      "available": true,
+      "matches": 13,
+      "draw_rate": 0.308,
+      "last_meeting_date": "2026-05-16T14:00:00+00:00"
     },
     "draw_risk": {
       "score": 88,
@@ -1071,6 +1078,6 @@
     "Kadro tercih önerisi: Önde baskı ve skor arama. Hücum önceliği İBRAHİM KAYA, GÜVEN YALÇIN, FLORENT HADERGJONAJ. Disiplin yönetimi gereken oyuncular: EFECAN KARACA, BRUNO VIANA WILLEMEM DA SILVA, ANTONIO SIMAO MUANZA.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %54 uyum buldu; karar etiketi TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.16-0.86 yerine 1.51-0.86 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.16-0.86 bandından 1.38-0.84 bandına taşırdı. Bu senaryoda en olası skor 1-0 ve kazanma olasılığı %50 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %43, beraberliği %29, rakip galibiyetini %28 olarak işaretliyor. Gol beklentisi 1.16-0.86; kart sinyali MEDIUM."
+    "MVP olasılık motoru Beşiktaş galibiyetini %43, beraberliği %30, rakip galibiyetini %27 olarak işaretliyor. Gol beklentisi 1.16-0.86; kart sinyali MEDIUM."
   ]
 }

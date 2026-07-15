@@ -1,9 +1,46 @@
 from __future__ import annotations
 
+import json
 import math
 from collections import Counter
 
 from src.preview.constants import ACTION_LABELS
+
+_H2H_MIN_MATCHES = 3
+_h2h_cache: dict | None = None
+
+
+def _load_h2h_pairs() -> dict:
+    global _h2h_cache
+    if _h2h_cache is None:
+        from src.config import PROCESSED_DIR, SEASON
+
+        path = PROCESSED_DIR / f"head_to_head_history_{SEASON}.json"
+        try:
+            payload = json.loads(path.read_text(encoding="utf-8"))
+            _h2h_cache = payload.get("pairs", {})
+        except (FileNotFoundError, json.JSONDecodeError):
+            _h2h_cache = {}
+    return _h2h_cache
+
+
+def head_to_head_draw_signal(team_a: str, team_b: str) -> dict:
+    """İki takımın API-Football kafa kafaya geçmişinden gerçek beraberlik oranını döner.
+
+    Veri henüz toplanmamışsa veya örneklem çok küçükse (< 3 maç) sinyal devre dışı
+    kalır — draw_calibration_signal bu durumda hiçbir ek etki uygulamaz.
+    """
+    pairs = _load_h2h_pairs()
+    key = "|".join(sorted([team_a, team_b]))
+    data = pairs.get(key)
+    if not data or (data.get("matches") or 0) < _H2H_MIN_MATCHES:
+        return {"available": False, "matches": 0, "draw_rate": None}
+    return {
+        "available": True,
+        "matches": data["matches"],
+        "draw_rate": data["draw_rate"],
+        "last_meeting_date": data.get("last_meeting_date"),
+    }
 
 
 def poisson_pmf(k: int, lam: float) -> float:
@@ -53,6 +90,7 @@ def draw_calibration_signal(
     is_big_match: bool,
     team_form: dict,
     opponent_recent_form: dict,
+    head_to_head: dict | None = None,
 ) -> dict:
     reasons = []
     lift = 0.0
@@ -108,6 +146,17 @@ def draw_calibration_signal(
         if avg_xg_ctx < 1.1:
             lift += 0.03
             reasons.append("genel düşük xG ortamı")
+
+    # Kafa kafaya (h2h) tarihsel beraberlik oranı: en az 3 önceki eşleşme varsa gerçek
+    # geçmiş veriye dayanır (API-Football), tahmini/türetilmiş bir oran değildir.
+    if head_to_head and head_to_head.get("available"):
+        h2h_rate = head_to_head["draw_rate"]
+        if h2h_rate >= 0.40:
+            lift += 0.06
+            reasons.append("h2h_yüksek_beraberlik_geçmişi")
+        elif h2h_rate >= 0.30:
+            lift += 0.035
+            reasons.append("h2h_beraberlik_geçmişi")
 
     return {
         "lift": round(min(0.18, lift), 3),
@@ -446,6 +495,13 @@ def estimate_probabilities(
     if is_big_match:
         heuristic_draw += 0.03
         heuristic_target -= 0.02
+    head_to_head = head_to_head_draw_signal(target_team, opponent_name)
+    if head_to_head.get("available"):
+        # Gerçek kafa kafaya beraberlik oranını örneklem büyüklüğüne göre ağırlıklandırarak
+        # draw olasılığına bir prior olarak karıştırır (bkz. PROJECT_STATE.md: bu proje
+        # uzun süredir "kafa kafaya tarihsel beraberlik oranı gerekir" tespitindeydi).
+        h2h_weight = min(0.35, 0.12 + head_to_head["matches"] * 0.01)
+        heuristic_draw = heuristic_draw * (1 - h2h_weight) + head_to_head["draw_rate"] * h2h_weight
     heuristic_target = min(max(heuristic_target, 0.18), 0.68)
     heuristic_draw = min(max(heuristic_draw, 0.18), 0.36)
     heuristic_opp = max(0.08, 1 - heuristic_target - heuristic_draw)
@@ -471,6 +527,7 @@ def estimate_probabilities(
         is_big_match=is_big_match,
         team_form=team_form,
         opponent_recent_form=opponent_recent_form,
+        head_to_head=head_to_head,
     )
     big_match_profile = big_match_profile_signal(
         is_big_match=is_big_match,
@@ -547,6 +604,7 @@ def estimate_probabilities(
         "availability_missing_count": missing_count,
         "strength_edge": round(strength_edge, 3),
         "draw_calibration": draw_calibration,
+        "head_to_head": head_to_head,
         "draw_risk": draw_risk,
         "big_match_profile": big_match_profile,
         "confidence": confidence,

@@ -648,8 +648,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.381,
-    "draw_probability": 0.243,
-    "opponent_win_probability": 0.376,
+    "draw_probability": 0.224,
+    "opponent_win_probability": 0.395,
     "expected_goals_for": 1.69,
     "expected_goals_against": 1.82,
     "top_scorelines": [
@@ -697,8 +697,8 @@
       "probability": 0.092
     },
     "recommended_call": {
-      "result": "target_win",
-      "probability": 0.381,
+      "result": "opponent_win",
+      "probability": 0.395,
       "scoreline": "1-1",
       "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "action_label": "Korumalı taraf tahmini",
@@ -713,13 +713,13 @@
       ]
     },
     "display_prediction": {
-      "raw_result": "target_win",
-      "final_result": "target_win",
-      "probability": 0.381,
-      "margin": 0.004,
+      "raw_result": "opponent_win",
+      "final_result": "opponent_win",
+      "probability": 0.395,
+      "margin": 0.015,
       "adjustment": "raw_unvalidated_team",
-      "label": "GÖZTEPE A.Ş. kazanır",
-      "raw_label": "GÖZTEPE A.Ş. kazanır",
+      "label": "SAMSUNSPOR A.Ş. kazanır",
+      "raw_label": "SAMSUNSPOR A.Ş. kazanır",
       "note": "Bu takım için ekran kalibrasyonu henüz doğrulanmadığı için ham model tahmini gösterilir."
     },
     "over_2_5_signal": "HIGH",
@@ -735,6 +735,12 @@
         "takım gücü dengede",
         "son formda beraberlik eğilimi"
       ]
+    },
+    "head_to_head": {
+      "available": true,
+      "matches": 13,
+      "draw_rate": 0.077,
+      "last_meeting_date": "2026-05-16T17:00:00+00:00"
     },
     "draw_risk": {
       "score": 92,
@@ -1040,6 +1046,6 @@
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği JUAN SANTOS DA SILVA, JANDERSON  DE CARVALHO COSTA, MALCOM NARCISSE BOKELE MPUTU. Disiplin yönetimi gereken oyuncular: MUSAH MOHAMMED, HELITON JORGE  TITO DOS SANTOS, NOVATUS DISMAS  MIROSHI.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %85 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.69-1.82 yerine 1.88-1.82 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.69-1.82 bandından 1.91-1.8 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %41 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %38, beraberliği %24, rakip galibiyetini %38 olarak işaretliyor. Gol beklentisi 1.69-1.82; kart sinyali MEDIUM."
+    "MVP olasılık motoru Beşiktaş galibiyetini %38, beraberliği %22, rakip galibiyetini %40 olarak işaretliyor. Gol beklentisi 1.69-1.82; kart sinyali MEDIUM."
   ]
 }

@@ -632,8 +632,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.419,
-    "draw_probability": 0.281,
-    "opponent_win_probability": 0.3,
+    "draw_probability": 0.275,
+    "opponent_win_probability": 0.306,
     "expected_goals_for": 1.23,
     "expected_goals_against": 1.04,
     "top_scorelines": [
@@ -687,8 +687,7 @@
       "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "action_label": "Korumalı taraf tahmini",
       "risk_notes": [
-        "Beraberlik güçlü alternatif",
-        "draw_probability_high",
+        "draw_probability_live",
         "xg_margin_narrow",
         "top_draw_scoreline",
         "probability_margin_narrow",
@@ -701,7 +700,7 @@
       "raw_result": "target_win",
       "final_result": "target_win",
       "probability": 0.419,
-      "margin": 0.119,
+      "margin": 0.113,
       "adjustment": "raw_unvalidated_team",
       "label": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ kazanır",
       "raw_label": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ kazanır",
@@ -722,11 +721,17 @@
         "son formda beraberlik eğilimi"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 18,
+      "draw_rate": 0.222,
+      "last_meeting_date": "2026-04-11T11:30:00+00:00"
+    },
     "draw_risk": {
-      "score": 100,
+      "score": 95,
       "risk_level": "HIGH",
       "reasons": [
-        "draw_probability_high",
+        "draw_probability_live",
         "xg_margin_narrow",
         "top_draw_scoreline",
         "probability_margin_narrow",
@@ -1042,6 +1047,6 @@
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği ELDOR SHOMURODOV, NUNO MIGUEL DA COSTA JOIA, IVAN BRNIC. Disiplin yönetimi gereken oyuncular: DENİZ TÜRÜÇ, NUNO MIGUEL DA COSTA JOIA, FESTY OSEIWE EBOSELE.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %90 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.23-1.04 yerine 1.33-1.04 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.23-1.04 bandından 1.45-1.02 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %47 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %42, beraberliği %28, rakip galibiyetini %30 olarak işaretliyor. Gol beklentisi 1.23-1.04; kart sinyali MEDIUM."
+    "MVP olasılık motoru Beşiktaş galibiyetini %42, beraberliği %28, rakip galibiyetini %31 olarak işaretliyor. Gol beklentisi 1.23-1.04; kart sinyali MEDIUM."
   ]
 }

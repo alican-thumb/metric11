@@ -9,6 +9,7 @@ from pathlib import Path
 
 from src.config import PROCESSED_DIR
 from src.normalization import normalize_matches
+from src.preview.probability import head_to_head_draw_signal
 
 
 def main() -> None:
@@ -192,6 +193,16 @@ def predict_match(home: str, away: str, home_history: list[dict], away_history: 
     expected_away = max(0.15, expected_away + ref_adj)
 
     probs = poisson_result_probs(expected_home, expected_away)
+
+    # Kafa kafaya (h2h) tarihsel beraberlik oranı: gerçek geçmiş sonuçlara dayanan bir
+    # prior olarak draw olasılığına karıştırılır (bkz. collect_head_to_head_history.py).
+    head_to_head = head_to_head_draw_signal(home, away)
+    if head_to_head.get("available"):
+        h2h_weight = min(0.35, 0.12 + head_to_head["matches"] * 0.01)
+        boosted_draw = probs["draw"] * (1 - h2h_weight) + head_to_head["draw_rate"] * h2h_weight
+        total = probs["home"] + boosted_draw + probs["away"]
+        probs = {"home": probs["home"] / total, "draw": boosted_draw / total, "away": probs["away"] / total}
+
     scorelines = scoreline_probs(expected_home, expected_away)
     return {
         "expected_home_goals": round(expected_home, 2),
@@ -201,6 +212,7 @@ def predict_match(home: str, away: str, home_history: list[dict], away_history: 
         "home_win_probability": round(probs["home"], 3),
         "draw_probability": round(probs["draw"], 3),
         "away_win_probability": round(probs["away"], 3),
+        "head_to_head": head_to_head,
         "home_elo": round(home_elo, 1),
         "away_elo": round(away_elo, 1),
         "home_points_per_match": round(home_ppg, 2),

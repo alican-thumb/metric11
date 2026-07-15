@@ -649,8 +649,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.278,
-    "draw_probability": 0.264,
-    "opponent_win_probability": 0.458,
+    "draw_probability": 0.246,
+    "opponent_win_probability": 0.476,
     "expected_goals_for": 0.9,
     "expected_goals_against": 1.5,
     "top_scorelines": [
@@ -699,12 +699,11 @@
     },
     "recommended_call": {
       "result": "opponent_win",
-      "probability": 0.458,
+      "probability": 0.476,
       "scoreline": "0-1",
-      "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
-      "action_label": "Korumalı taraf tahmini",
+      "action": "KEEP_PICK_WITH_DRAW_WARNING",
+      "action_label": "Beraberlik uyarılı tahmin",
       "risk_notes": [
-        "draw_probability_watch",
         "draw_scoreline_top_two",
         "strength_edge_very_narrow",
         "low_confidence_side_pick"
@@ -713,8 +712,8 @@
     "display_prediction": {
       "raw_result": "opponent_win",
       "final_result": "opponent_win",
-      "probability": 0.458,
-      "margin": 0.18,
+      "probability": 0.476,
+      "margin": 0.199,
       "adjustment": "raw_unvalidated_team",
       "label": "GAZİANTEP FUTBOL KULÜBÜ A.Ş. kazanır",
       "raw_label": "GAZİANTEP FUTBOL KULÜBÜ A.Ş. kazanır",
@@ -733,17 +732,22 @@
         "son formda beraberlik eğilimi"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 6,
+      "draw_rate": 0.0,
+      "last_meeting_date": "2026-04-25T11:30:00+00:00"
+    },
     "draw_risk": {
-      "score": 39,
-      "risk_level": "HIGH",
+      "score": 29,
+      "risk_level": "MEDIUM",
       "reasons": [
-        "draw_probability_watch",
         "draw_scoreline_top_two",
         "strength_edge_very_narrow",
         "low_confidence_side_pick"
       ],
       "protected_prediction": true,
-      "recommended_model_action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
+      "recommended_model_action": "KEEP_PICK_WITH_DRAW_WARNING",
       "note": "Ana 1X2 tahminini değiştirmeden beraberlik senaryosunu görünür yapan risk katmanıdır."
     },
     "big_match_profile": {
@@ -800,7 +804,7 @@
   "coach_lineup_audit": {
     "verdict": "KISMEN_TARTIŞMALI",
     "actual_lineup_score": 77.49,
-    "recommended_lineup_score": 80.31,
+    "recommended_lineup_score": 80.32,
     "alignment_rate": 0.965,
     "actual_starters": [
       "MARCOS FELIPE DE FREITAS MONTEIRO",
@@ -1056,10 +1060,10 @@
     "Hakem profili kart tarafında anlamlı bir sinyal veriyor: ÖMER TOLGA GÜLDİBİ bu sezon önceki 3 Beşiktaş maçında toplam maç başı 5.0 kart, Beşiktaş'a maç başı 2.67 kart ortalamasıyla öne çıkıyor.",
     "Olası 11 sinyalinde son dönemde öne çıkan isimler: MARCOS FELIPE DE FREITAS MONTEIRO, ROBIN YALÇIN, KEREM DEMİRBAY, LUCAS FELIPE CALEGARI, SERDAR GÜRLER, NIHAD MUJAKIC. Kart riski tarafında ise son 8 maç penceresinde DENIS MIHAI DRAGUS, EMRE AKBABA, PRINCE OBENG AMPEM, TARAS STEPANENKO dikkat çekiyor.",
     "Gol adayı sinyalinde öne çıkan isimler: EMRE AKBABA, UMUT DİLAN BOZOK, THIAM MAME BABA, PRINCE OBENG AMPEM. Bu skor son gol formu, sezon içi gol sayısı ve son dönemde ilk 11 başlama sıklığından türetildi. Test sonucunda gerçek Beşiktaş golcüleri: UMUT DİLAN BOZOK, HALİL AKBUNAR.",
-    "Skor dağılımında en olası senaryolar: 0-1 (%14), 1-1 (%12), 0-2 (%10). Model aksiyonu: Korumalı taraf tahmini; önerilen ana skor 0-1.",
+    "Skor dağılımında en olası senaryolar: 0-1 (%14), 1-1 (%12), 0-2 (%10). Model aksiyonu: Beraberlik uyarılı tahmin; önerilen ana skor 0-1.",
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği EMRE AKBABA, UMUT DİLAN BOZOK, THIAM MAME BABA. Disiplin yönetimi gereken oyuncular: DENIS MIHAI DRAGUS, EMRE AKBABA, PRINCE OBENG AMPEM.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %96 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 0.9-1.5 yerine 0.93-1.5 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 0.9-1.5 bandından 1.12-1.48 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %29 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %28, beraberliği %26, rakip galibiyetini %46 olarak işaretliyor. Gol beklentisi 0.9-1.5; kart sinyali MEDIUM."
+    "MVP olasılık motoru Beşiktaş galibiyetini %28, beraberliği %25, rakip galibiyetini %48 olarak işaretliyor. Gol beklentisi 0.9-1.5; kart sinyali MEDIUM."
   ]
 }

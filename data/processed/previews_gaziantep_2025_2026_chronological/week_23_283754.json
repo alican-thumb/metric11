@@ -671,8 +671,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.271,
-    "draw_probability": 0.253,
-    "opponent_win_probability": 0.476,
+    "draw_probability": 0.262,
+    "opponent_win_probability": 0.467,
     "expected_goals_for": 1.14,
     "expected_goals_against": 1.85,
     "top_scorelines": [
@@ -721,7 +721,7 @@
     },
     "recommended_call": {
       "result": "opponent_win",
-      "probability": 0.476,
+      "probability": 0.467,
       "scoreline": "1-1",
       "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "action_label": "Korumalı taraf tahmini",
@@ -730,14 +730,15 @@
         "draw_probability_watch",
         "top_draw_scoreline",
         "strength_edge_very_narrow",
-        "low_confidence_side_pick"
+        "low_confidence_side_pick",
+        "draw_calibration_medium"
       ]
     },
     "display_prediction": {
       "raw_result": "opponent_win",
       "final_result": "opponent_win",
-      "probability": 0.476,
-      "margin": 0.205,
+      "probability": 0.467,
+      "margin": 0.196,
       "adjustment": "raw_unvalidated_team",
       "label": "TRABZONSPOR A.Ş. kazanır",
       "raw_label": "TRABZONSPOR A.Ş. kazanır",
@@ -749,21 +750,29 @@
     "availability_missing_count": 0,
     "strength_edge": -0.109,
     "draw_calibration": {
-      "lift": 0.055,
-      "risk_level": "LOW",
+      "lift": 0.09,
+      "risk_level": "MEDIUM",
       "reasons": [
         "son formda beraberlik eğilimi",
-        "büyük maç denge etkisi"
+        "büyük maç denge etkisi",
+        "h2h_beraberlik_geçmişi"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 13,
+      "draw_rate": 0.385,
+      "last_meeting_date": "2026-02-22T13:00:00+00:00"
+    },
     "draw_risk": {
-      "score": 46,
+      "score": 53,
       "risk_level": "HIGH",
       "reasons": [
         "draw_probability_watch",
         "top_draw_scoreline",
         "strength_edge_very_narrow",
-        "low_confidence_side_pick"
+        "low_confidence_side_pick",
+        "draw_calibration_medium"
       ],
       "protected_prediction": true,
       "recommended_model_action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
@@ -772,11 +781,12 @@
     "big_match_profile": {
       "available": true,
       "risk_level": "MEDIUM",
-      "volatility_score": 0.42,
-      "adjustment": "büyük maç taban riski nedeniyle normal maç gibi okunmaz",
+      "volatility_score": 0.57,
+      "adjustment": "ana tarafı koru ama alternatif senaryoyu görünür tut",
       "notes": [
         "büyük maç taban riski",
-        "büyük maç varyansı yüksek"
+        "büyük maç varyansı yüksek",
+        "beraberlik riski canlı"
       ]
     },
     "confidence": "LOW",
@@ -1069,6 +1079,6 @@
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği MOHAMED LAMINE BAYO, KACPER SZYMON KOZLOWSKI, ALEXANDRU IULIAN MAXIM. Disiplin yönetimi gereken oyuncular: MELİH KABASAKAL, YUSUF KARHAN KABADAYI, EMMANUEL OKYERE BOATENG.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %84 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.14-1.85 yerine 1.32-1.85 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday ERNEST MUÇİ (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.14-1.85 bandından 1.33-1.84 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %28 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %27, beraberliği %25, rakip galibiyetini %48 olarak işaretliyor. Gol beklentisi 1.14-1.85; kart sinyali HIGH."
+    "MVP olasılık motoru Beşiktaş galibiyetini %27, beraberliği %26, rakip galibiyetini %47 olarak işaretliyor. Gol beklentisi 1.14-1.85; kart sinyali HIGH."
   ]
 }

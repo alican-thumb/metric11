@@ -626,8 +626,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.344,
-    "draw_probability": 0.282,
-    "opponent_win_probability": 0.374,
+    "draw_probability": 0.264,
+    "opponent_win_probability": 0.391,
     "expected_goals_for": 1.04,
     "expected_goals_against": 1.22,
     "top_scorelines": [
@@ -676,14 +676,13 @@
     },
     "recommended_call": {
       "result": "opponent_win",
-      "probability": 0.374,
+      "probability": 0.391,
       "scoreline": "1-1",
       "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "action_label": "Korumalı taraf tahmini",
       "risk_notes": [
-        "Beraberlik güçlü alternatif",
         "Taraflar arası fark dar",
-        "draw_probability_high",
+        "draw_probability_watch",
         "xg_margin_narrow",
         "top_draw_scoreline",
         "probability_margin_very_narrow",
@@ -695,8 +694,8 @@
     "display_prediction": {
       "raw_result": "opponent_win",
       "final_result": "opponent_win",
-      "probability": 0.374,
-      "margin": 0.029,
+      "probability": 0.391,
+      "margin": 0.047,
       "adjustment": "raw_unvalidated_team",
       "label": "GÖZTEPE A.Ş. kazanır",
       "raw_label": "GÖZTEPE A.Ş. kazanır",
@@ -716,11 +715,17 @@
         "son formda beraberlik eğilimi"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 12,
+      "draw_rate": 0.083,
+      "last_meeting_date": "2026-04-04T11:30:00+00:00"
+    },
     "draw_risk": {
-      "score": 100,
+      "score": 95,
       "risk_level": "HIGH",
       "reasons": [
-        "draw_probability_high",
+        "draw_probability_watch",
         "xg_margin_narrow",
         "top_draw_scoreline",
         "probability_margin_very_narrow",
@@ -1027,6 +1032,6 @@
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği ZAN ZUZEK, OĞULCAN ÜLGÜN, FRANCO DARYL TONGYA HEUBANG. Disiplin yönetimi gereken oyuncular: MICHAL JAN NALEPA, MBAYE HAMADY NIANG, GÖKHAN AKKAN.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %93 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.04-1.22 yerine 1.11-1.22 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.04-1.22 bandından 1.26-1.2 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %38 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %34, beraberliği %28, rakip galibiyetini %37 olarak işaretliyor. Gol beklentisi 1.04-1.22; kart sinyali HIGH."
+    "MVP olasılık motoru Beşiktaş galibiyetini %34, beraberliği %26, rakip galibiyetini %39 olarak işaretliyor. Gol beklentisi 1.04-1.22; kart sinyali HIGH."
   ]
 }

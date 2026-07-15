@@ -671,8 +671,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.517,
-    "draw_probability": 0.276,
-    "opponent_win_probability": 0.207,
+    "draw_probability": 0.288,
+    "opponent_win_probability": 0.195,
     "expected_goals_for": 1.35,
     "expected_goals_against": 0.64,
     "top_scorelines": [
@@ -726,7 +726,8 @@
       "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "action_label": "Korumalı taraf tahmini",
       "risk_notes": [
-        "draw_probability_live",
+        "Beraberlik güçlü alternatif",
+        "draw_probability_high",
         "draw_scoreline_top_two",
         "strength_edge_very_narrow",
         "medium_confidence_side_pick",
@@ -737,7 +738,7 @@
       "raw_result": "target_win",
       "final_result": "target_win",
       "probability": 0.517,
-      "margin": 0.241,
+      "margin": 0.229,
       "adjustment": "raw_unvalidated_team",
       "label": "TÜMOSAN KONYASPOR kazanır",
       "raw_label": "TÜMOSAN KONYASPOR kazanır",
@@ -749,18 +750,25 @@
     "availability_missing_count": 0,
     "strength_edge": 0.021,
     "draw_calibration": {
-      "lift": 0.075,
+      "lift": 0.11,
       "risk_level": "MEDIUM",
       "reasons": [
         "takım gücü dengede",
-        "son formda beraberlik eğilimi"
+        "son formda beraberlik eğilimi",
+        "h2h_beraberlik_geçmişi"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 19,
+      "draw_rate": 0.368,
+      "last_meeting_date": "2026-03-19T17:00:00+00:00"
+    },
     "draw_risk": {
-      "score": 49,
+      "score": 55,
       "risk_level": "HIGH",
       "reasons": [
-        "draw_probability_live",
+        "draw_probability_high",
         "draw_scoreline_top_two",
         "strength_edge_very_narrow",
         "medium_confidence_side_pick",
@@ -1079,6 +1087,6 @@
     "Kadro tercih önerisi: Önde baskı ve skor arama. Hücum önceliği BLAZ KRAMER, JACKSON KYANVUBU MULEKA, MEHMET UMUT NAYİR. Disiplin yönetimi gereken oyuncular: BLAZ KRAMER, JINHO JO, RIECHEDLY GUILLERMO BAZOER.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %92 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.35-0.64 yerine 1.43-0.64 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.35-0.64 bandından 1.57-0.62 bandına taşırdı. Bu senaryoda en olası skor 1-0 ve kazanma olasılığı %60 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %52, beraberliği %28, rakip galibiyetini %21 olarak işaretliyor. Gol beklentisi 1.35-0.64; kart sinyali MEDIUM."
+    "MVP olasılık motoru Beşiktaş galibiyetini %52, beraberliği %29, rakip galibiyetini %20 olarak işaretliyor. Gol beklentisi 1.35-0.64; kart sinyali MEDIUM."
   ]
 }

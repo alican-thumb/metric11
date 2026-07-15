@@ -672,8 +672,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.656,
-    "draw_probability": 0.197,
-    "opponent_win_probability": 0.147,
+    "draw_probability": 0.19,
+    "opponent_win_probability": 0.155,
     "expected_goals_for": 2.52,
     "expected_goals_against": 0.96,
     "top_scorelines": [
@@ -732,7 +732,7 @@
       "raw_result": "target_win",
       "final_result": "target_win",
       "probability": 0.656,
-      "margin": 0.459,
+      "margin": 0.466,
       "adjustment": "raw_unvalidated_team",
       "label": "FENERBAHÇE A.Ş. kazanır",
       "raw_label": "FENERBAHÇE A.Ş. kazanır",
@@ -749,6 +749,12 @@
       "reasons": [
         "son formda beraberlik eğilimi"
       ]
+    },
+    "head_to_head": {
+      "available": true,
+      "matches": 36,
+      "draw_rate": 0.194,
+      "last_meeting_date": "2026-04-11T17:00:00+00:00"
     },
     "draw_risk": {
       "score": 0,
@@ -1066,6 +1072,6 @@
     "Kadro tercih önerisi: Önde baskı ve skor arama. Hücum önceliği YOUSSEF EN NESYRI, ANDERSON SOUZA CONCEIÇAO, MARCO ASENSIO WILLEMSEN. Disiplin yönetimi gereken oyuncular: MILAN SKRINIAR, İSMAİL YÜKSEK, EDSON OMAR ALVAREZ VELAZQUEZ.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %62 uyum buldu; karar etiketi TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 2.52-0.96 yerine 2.87-0.96 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 2.52-0.96 bandından 2.74-0.94 bandına taşırdı. Bu senaryoda en olası skor 2-0 ve kazanma olasılığı %75 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %66, beraberliği %20, rakip galibiyetini %15 olarak işaretliyor. Gol beklentisi 2.52-0.96; kart sinyali HIGH."
+    "MVP olasılık motoru Beşiktaş galibiyetini %66, beraberliği %19, rakip galibiyetini %16 olarak işaretliyor. Gol beklentisi 2.52-0.96; kart sinyali HIGH."
   ]
 }

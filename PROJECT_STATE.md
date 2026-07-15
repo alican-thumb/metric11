@@ -1826,3 +1826,49 @@ Bir sonraki oturumda önce `PROJECT_STATE.md` okunmalı. Ardından öncelik:
 - Pipeline entegrasyonu: `run_daily_pipeline.py` DEFAULT_COMMANDS'a `build_european_news_pulse` eklendi (analyze/build european_predictions'tan hemen önce); `.github/workflows/news-refresh.yml` (günde 6 kez) ve `.github/workflows/refresh.yml` (günde 4 kez) adımlarına da eklendi — `refresh.yml`'de ayrıca european_predictions rebuild'i haber toplama adımlarından SONRAYA taşındı (önceden haberlerden önce çalışıyordu, artık güncel nabız verisiyle üretiliyor).
 - Test: `pytest` — `58 passed, 3 failed` (aynı 3 pre-existing hata: `test_season_boundaries` — 2026/27 yükselen takım listesi ve X erişim metni testleri, script/fallback ile ilgisiz, önceden de kayıtlıydı).
 - Kalan öncelik: (1) 2026/27 TM genel snapshot hâlâ `0/0` (kaynak tarafında oyuncu tablosu yok, yapay doldurulmadı), (2) beraberlik recall/OOS kalibrasyonu, (3) haber nabzı kapsamı zamanla genişletilebilir (şu an yalnızca Süper Lig kulüp adlarıyla eşleşiyor; Avrupa rakip takım isimleriyle de genişletilebilir).
+
+## 2026-07-15 Günlük Veri/Geliştirme Kontrolü
+
+- 15 Temmuz kontrolünde `data/processed` altında 14 Temmuz 21:00 sonrası `98` dosya güncellenmiş görünüyor; en yeni üretimler `match_prediction_backtest_2025_2026`, Beşiktaş kronolojik preview klasörü, product home, data catalog, sqlite warehouse, transfer recommendation, scout/data quality ve Avrupa haber nabzı çıktıları.
+- `daily_pipeline_run_latest.md` hâlâ 26 Mayıs 2026 ağsız `48/48` başarılı koşusunda kalmış; yeni çıktı üretilmesine rağmen bu health raporu güncel pipeline koşusunu yansıtmıyor.
+- Git durumu temiz ve `main` branch `origin/main` ile aynı hizada görünüyor; 14 Temmuz’daki TM cache fallback ve Avrupa haber nabzı geliştirmeleri localde kirli değişiklik olarak kalmamış.
+- `data_quality_scorecard_2025_2026` skoru `80.5` seviyesinden `73.6` seviyesine düşmüş. Bu bir ham veri kapsamı düşüşünden çok, yeni/sert kalite kontrollerinin görünür hâle gelmesiyle ilişkili.
+- Data quality FAIL/WATCH başlıkları:
+  - `unmatched_players_blocking_scout_review`: `23` oyuncu ile FAIL.
+  - `draw_recall_pct`: beraberlik tahmini `1/9`, `%11.1` ile FAIL.
+  - `manual_alias_pending_network_verification`: `13` ile WATCH.
+  - Beşiktaş display tahmin doğruluğu `16/29`, `%55.2` ile WATCH.
+  - Gol adayı top-5 `20/26`, `%76.9`; top-8 `22/26`, `%84.6` ile WATCH.
+- OOS model doğrulaması değişmedi: full-season `119/258`, `%46.1`; ikinci yarı OOS `70/153`, `%45.8`. Raw baseline hâlâ daha güçlü: full-season `%50.4`, second-half OOS `%51.6`.
+- `match_prediction_backtest_2025_2026` özeti: `29` rapor, `16` doğru, genel doğruluk `%55.2`; actionable maçlarda `5/9`, `%55.6`; büyük maçlarda `3/6`, `%50.0`.
+- Gol adayı backtest özeti: Beşiktaş gol attığı `26` maçta top-3 `%61.5`, top-5 `%76.9`, top-8 `%84.6`, top-10 `%88.5`.
+- `scout_quality_report_2025_2026` güncel kalmış: `370` blueprint aday bağlantısı, `275` düşük güvenli link, `29` tekil düşük güvenli oyuncu-rol, `91` pozisyon matrisi adayı. Eksik yaş/sözleşme linki `0`, tekrar eden rol oyuncusu `0`.
+- Transfer tracker büyümüş: `49` sinyal, `6` confirmed/corroborated, `15` rumor, `28` review required, `0` official. Resmi doğrulama katmanı hâlâ zayıf.
+- Market value audit toparlanmış: `15` market kulübü, `424` oyuncu, `€1.31895B`; model maç kapsamı `177/258`, `%68.6`. Eksik market takımları: Antalyaspor, Fatih Karagümrük, Kayserispor varyantları.
+- 2025/26 TM genel snapshot korunuyor: `15` kulüp / `424` oyuncu. 2026/27 TM genel snapshot hâlâ `0` kulüp / `0` oyuncu; kaynakta oyuncu tablosu yok.
+- Avrupa haber nabzı çıktı üretmiş: `european_news_pulse_2025_2026` içinde `8` haber var. Ancak ilk örneklerde kulüp eşleşmesi `None` olabiliyor ve bazı genel UEFA haberleri geliyor; Avrupa rakipleri/tur eşleşmeleri için daha iyi entity matching gerekiyor.
+- Kalan öncelik sırası:
+  1. `unmatched_players_blocking_scout_review = 23` blokajını çözmek.
+  2. Beraberlik recall ve OOS model kalibrasyonunu baseline’ın üstüne taşıyacak şekilde düzeltmek.
+  3. 2026/27 aktif kadro fallback katmanını TFF/resmi kulüp/API/haber sinyalleriyle doldurmak.
+  4. Avrupa haber nabzında kulüp/rakip/tur entity matching kapsamını genişletmek.
+  5. `daily_pipeline_run_latest.md` dosyasını gerçek son otomatik üretimi gösterecek şekilde yenilemek.
+
+## 2026-07-15 (devam) — Kafa Kafaya (H2H) Beraberlik Sinyali Eklendi
+
+- Kullanıcı isteği: "beraberlik recall kalibrasyonuna bak" → önce eşik gevşetme (score>=90→55) ve lig-geneli formülü Beşiktaş'a taşıma denendi; ikisi de önceki oturumlarla aynı sonuçla reddedildi (eşik gevşetince büyük maç override'ı geri alıyor, kazanç yok; lig formülü doğruluğu %55'ten %45'e düşürüyor, n=29/9 draw çok küçük örneklem). Kullanıcı "daha geniş düşün, futbolseverlere keyifli an yaşat, en doğruya yakın tahmin için ne gerekiyorsa yap" dedi.
+- Kök neden zaten teşhis edilmişti: "kafa kafaya tarihsel beraberlik oranı veya bahis piyasası verisi gerekir" (bkz. 3. tekrarlanan not). Bu veri hiç toplanmamıştı.
+- football-data.co.uk (bahis oranı + tarihsel sonuç, ücretsiz CSV) sandbox'tan erişilemiyor (bağlantı timeout / muhtemel gambling-domain filtresi); genel internet ve GitHub erişimi çalışıyor.
+- API-Football'ın halihazırda `.env.example` içinde bulunan ücretsiz demo key'i (`e15d854...`, `load_settings()` `.env` yoksa otomatik buna düşüyor) ile `/fixtures/headtohead` endpoint'i canlı test edildi. `last=N` parametresi ücretsiz planda yasak (`"Free plans do not have access to the Last parameter."`); parametresiz çağrı tüm geçmişi (2010'lardan bu yana) tek seferde dönüyor.
+- `data/manual/api_football_team_ids.json` eklendi: 18 Süper Lig takımının API-Football id eşlemesi (15'i bilinen 2024 snapshot'tan, 3'ü — Kocaelispor, Gençlerbirliği, Fatih Karagümrük — `--search` ile otomatik çözüldü ve dosyaya geri yazıldı).
+- `src/collect_head_to_head_history.py` eklendi: takım çiftleri için gerçek tarihsel h2h beraberlik oranını toplar; `--limit`/`--skip-existing` ile günlük kota (ücretsiz plan 100/gün) boyunca kademeli tamamlanır. Bugün elle `106/153` çift toplandı (kalan `47` çift `run_daily_pipeline` NETWORK_COMMANDS'a eklenen `--limit 30` ile birkaç gece içinde tamamlanacak). Çıktı: `head_to_head_history_2025_2026.json/.md`.
+- Gerçek veri örnekleri: Beşiktaş-Galatasaray `33` maç `%18.2` beraberlik, Beşiktaş-Fenerbahçe `36` maç `%33.3`, Beşiktaş-Başakşehir `29` maç `%41.4`, Beşiktaş-Samsunspor `8` maç `%50` (küçük örneklem).
+- `src/preview/probability.py`: `head_to_head_draw_signal(team_a, team_b)` eklendi (JSON'dan gerçek oranı okur, <3 maçta devre dışı kalır — sıfır regresyon riski). `estimate_probabilities()` içinde `heuristic_draw`'a örneklem-ağırlıklı prior olarak karıştırılıyor (`h2h_weight = min(0.35, 0.12 + matches*0.01)`); ayrıca `draw_calibration_signal`'a da ek `lift` (h2h_rate≥0.40→+0.06, ≥0.30→+0.035) olarak bağlandı.
+- `src/model_league_predictions.py`: aynı h2h sinyali `predict_match()` içinde `poisson_result_probs` çıktısına aynı ağırlıklı blend ile ekleniyor.
+- **Doğrulanmış sonuç (n=258 maç/76 beraberlik, tüm lig)**: doğruluk `%46.1→%47.3`, beraberlik recall `%31.6→%34.2`, Brier `0.615→0.610`, log loss `1.027→1.019` — hepsi aynı yönde iyileşti (trade-off yok).
+- **OOS (bağımsız ikinci yarı, hafta 18-34) doğrulaması**: `%45.8→%47.1`. Bu en katı test — walk-forward, sızıntısız.
+- **Önizleme motoru genelinde (18 takım, n=551 takım-perspektifi, 164 beraberlik)**: min_prob=0.26/max_gap=0.18 eşiğinde doğruluk `%47.2→%48.3`, beraberlik recall `%35.4→%36.6`.
+- Beşiktaş'a özgü ekran kalibrasyonu (`calibrated_display_prediction`, score>=90 sert eşik) kasıtlı olarak DEĞİŞTİRİLMEDİ: aynı gap-tabanlı yöntem yalnızca Beşiktaş'ın 29 maçlık alt kümesinde test edildiğinde doğruluğu düşürüyor (16/29→14-15/29) çünkü bu sezonun 9 beraberliğinin çoğu (Kasımpaşa, Eyüpspor, Karagümrük, Rizespor, Galatasaray) modelin hiçbir sinyalle yakalayamayacağı kadar büyük olasılık farkıyla (margin 0.18-0.36) gerçekleşti. Bu yüzden `data_quality_scorecard`'daki `draw_recall_pct: 1/9 FAIL` metriği DEĞİŞMEDİ — bu metrik kasıtlı olarak muhafazakâr kalan, çok küçük örneklemli (n=9) bir alt sistemi ölçüyor; asıl doğrulanmış iyileşme lig geneli/OOS metriklerinde.
+- Test: `pytest` `58 passed, 3 failed` (aynı 3 önceden var olan test, ilgisiz).
+- API-Football günlük kota: bugün `~94/100` kullanıldı (h2h toplama + id çözümleme); yarın sıfırlanacak.
+- Kalan öncelik: kalan `47` h2h çiftini tamamlamak (otomatik, birkaç gece), ardından h2h verisi büyüdükçe (küçük örneklemli takımlar — Kocaelispor, Karagümrük, Gençlerbirliği — 2-12 maçla sınırlı) sinyali yeniden değerlendirmek.

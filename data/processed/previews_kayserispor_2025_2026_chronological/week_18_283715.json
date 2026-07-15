@@ -639,8 +639,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.2,
-    "draw_probability": 0.231,
-    "opponent_win_probability": 0.569,
+    "draw_probability": 0.217,
+    "opponent_win_probability": 0.583,
     "expected_goals_for": 0.68,
     "expected_goals_against": 1.86,
     "top_scorelines": [
@@ -689,7 +689,7 @@
     },
     "recommended_call": {
       "result": "opponent_win",
-      "probability": 0.569,
+      "probability": 0.583,
       "scoreline": "0-1",
       "action": "taraf_eğilimi",
       "action_label": "Taraf eğilimi",
@@ -698,8 +698,8 @@
     "display_prediction": {
       "raw_result": "opponent_win",
       "final_result": "opponent_win",
-      "probability": 0.569,
-      "margin": 0.338,
+      "probability": 0.583,
+      "margin": 0.366,
       "adjustment": "raw_unvalidated_team",
       "label": "BEŞİKTAŞ A.Ş. kazanır",
       "raw_label": "BEŞİKTAŞ A.Ş. kazanır",
@@ -718,12 +718,17 @@
         "son formda beraberlik eğilimi"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 33,
+      "draw_rate": 0.152,
+      "last_meeting_date": "2026-01-19T17:00:00+00:00"
+    },
     "draw_risk": {
-      "score": 5,
+      "score": 0,
       "risk_level": "LOW",
       "reasons": [
         "strength_edge_very_narrow",
-        "medium_confidence_side_pick",
         "strong_side_probability_penalty"
       ],
       "protected_prediction": false,
@@ -736,7 +741,7 @@
       "adjustment": "not_big_match",
       "notes": []
     },
-    "confidence": "MEDIUM",
+    "confidence": "HIGH",
     "xg_data_available": false,
     "note": "Poisson, form, rakip savunma, hakem, eksik oyuncu ve takım gücü sinyaliyle çalışan MVP tahmin modelidir."
   },
@@ -1011,6 +1016,6 @@
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği GERMAN ONUGKHA, LASZLO BENES, STEFANO WILFRED DENSWIL. Disiplin yönetimi gereken oyuncular: ABDULSAMET BURAK, JOAO SABINO MENDES NETO SARAIVA, SEYEDMAJID HOSSEINI.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %99 uyum buldu; karar etiketi UYUMLU. Alternatif model 11'i kullanılsaydı xG 0.68-1.86 yerine 0.69-1.86 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 0.68-1.86 bandından 0.9-1.84 bandına taşırdı. Bu senaryoda en olası skor 0-1 ve kazanma olasılığı %18 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %20, beraberliği %23, rakip galibiyetini %57 olarak işaretliyor. Gol beklentisi 0.68-1.86; kart sinyali MEDIUM."
+    "MVP olasılık motoru Beşiktaş galibiyetini %20, beraberliği %22, rakip galibiyetini %58 olarak işaretliyor. Gol beklentisi 0.68-1.86; kart sinyali MEDIUM."
   ]
 }

@@ -666,8 +666,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.39,
-    "draw_probability": 0.248,
-    "opponent_win_probability": 0.362,
+    "draw_probability": 0.255,
+    "opponent_win_probability": 0.355,
     "expected_goals_for": 1.64,
     "expected_goals_against": 1.7,
     "top_scorelines": [
@@ -722,6 +722,7 @@
       "action_label": "Korumalı taraf tahmini",
       "risk_notes": [
         "Taraflar arası fark dar",
+        "draw_probability_watch",
         "xg_margin_very_narrow",
         "top_draw_scoreline",
         "probability_margin_very_narrow",
@@ -734,7 +735,7 @@
       "raw_result": "target_win",
       "final_result": "target_win",
       "probability": 0.39,
-      "margin": 0.027,
+      "margin": 0.035,
       "adjustment": "raw_unvalidated_team",
       "label": "FENERBAHÇE A.Ş. kazanır",
       "raw_label": "FENERBAHÇE A.Ş. kazanır",
@@ -746,18 +747,26 @@
     "availability_missing_count": 0,
     "strength_edge": 0.018,
     "draw_calibration": {
-      "lift": 0.165,
+      "lift": 0.18,
       "risk_level": "HIGH",
       "reasons": [
         "xG farkı çok dar",
         "takım gücü dengede",
-        "son formda beraberlik eğilimi"
+        "son formda beraberlik eğilimi",
+        "h2h_beraberlik_geçmişi"
       ]
     },
+    "head_to_head": {
+      "available": true,
+      "matches": 36,
+      "draw_rate": 0.333,
+      "last_meeting_date": "2026-04-05T17:00:00+00:00"
+    },
     "draw_risk": {
-      "score": 92,
+      "score": 100,
       "risk_level": "HIGH",
       "reasons": [
+        "draw_probability_watch",
         "xg_margin_very_narrow",
         "top_draw_scoreline",
         "probability_margin_very_narrow",
@@ -1050,6 +1059,6 @@
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği DORGELES NENE, MARCO ASENSIO WILLEMSEN, ANDERSON SOUZA CONCEIÇAO. Disiplin yönetimi gereken oyuncular: EDSON OMAR ALVAREZ VELAZQUEZ.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %82 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.64-1.7 yerine 1.87-1.7 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.64-1.7 bandından 1.86-1.68 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %43 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %39, beraberliği %25, rakip galibiyetini %36 olarak işaretliyor. Gol beklentisi 1.64-1.7; kart sinyali MEDIUM."
+    "MVP olasılık motoru Beşiktaş galibiyetini %39, beraberliği %26, rakip galibiyetini %36 olarak işaretliyor. Gol beklentisi 1.64-1.7; kart sinyali MEDIUM."
   ]
 }
