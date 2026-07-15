@@ -6,8 +6,8 @@
 - Yaş/sözleşme eksiği olan bağlantı: 0
 - 3+ role yayılan oyuncu: 0
 - Pozisyon matrisi adayı: 105
-- Blueprint güven dağılımı: {'MEDIUM_DERIVED_ROLE': 248, 'LOW_POSITION_UNVERIFIED': 27, 'HIGH_EXTERNAL_PROFILE': 45, 'HIGH': 50}
-- Pozisyon matrisi güven dağılımı: {'HIGH': 105}
+- Blueprint güven dağılımı: {'MEDIUM_DERIVED_ROLE': 248, 'LOW_POSITION_UNVERIFIED': 27, 'HIGH_EXTERNAL_PROFILE': 36, 'HIGH': 59}
+- Pozisyon matrisi güven dağılımı: {'HIGH': 100, 'DERIVED': 5}
 - Sonraki öncelik: Kalan düşük güvenli adaylar için Transfermarkt/API/manuel pozisyon-biyometri eşleşmesi ve rol çakışması azaltma.
 
 ## Düşük Güven İnceleme Kuyruğu

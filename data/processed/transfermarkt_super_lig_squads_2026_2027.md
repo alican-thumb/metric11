@@ -14,23 +14,23 @@
 
 ## Atlananlar
 
-- BEŞİKTAŞ A.Ş.: fetch_failed: 403 Client Error: Forbidden for url: https://www.transfermarkt.com/besiktas-jk/kader/verein/114/saison_id/2026
-- GALATASARAY A.Ş.: fetch_failed: 403 Client Error: Forbidden for url: https://www.transfermarkt.com/galatasaray-istanbul/kader/verein/141/saison_id/2026
-- FENERBAHÇE A.Ş.: fetch_failed: 403 Client Error: Forbidden for url: https://www.transfermarkt.com/fenerbahce-istanbul/kader/verein/36/saison_id/2026
-- TRABZONSPOR A.Ş.: fetch_failed: 403 Client Error: Forbidden for url: https://www.transfermarkt.com/trabzonspor/kader/verein/449/saison_id/2026
-- RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ: fetch_failed: 403 Client Error: Forbidden for url: https://www.transfermarkt.com/istanbul-basaksehir-fk/kader/verein/6890/saison_id/2026
-- CORENDON ALANYASPOR: fetch_failed: 403 Client Error: Forbidden for url: https://www.transfermarkt.com/alanyaspor/kader/verein/11282/saison_id/2026
-- SAMSUNSPOR A.Ş.: fetch_failed: 403 Client Error: Forbidden for url: https://www.transfermarkt.com/samsunspor/kader/verein/152/saison_id/2026
-- GÖZTEPE A.Ş.: fetch_failed: 403 Client Error: Forbidden for url: https://www.transfermarkt.com/goztepe/kader/verein/1467/saison_id/2026
-- TÜMOSAN KONYASPOR: fetch_failed: 403 Client Error: Forbidden for url: https://www.transfermarkt.com/konyaspor/kader/verein/2293/saison_id/2026
-- ÇAYKUR RİZESPOR A.Ş.: fetch_failed: 403 Client Error: Forbidden for url: https://www.transfermarkt.com/caykur-rizespor/kader/verein/126/saison_id/2026
-- GAZİANTEP FUTBOL KULÜBÜ A.Ş.: fetch_failed: 403 Client Error: Forbidden for url: https://www.transfermarkt.com/gaziantep-fk/kader/verein/2832/saison_id/2026
-- KASIMPAŞA A.Ş.: fetch_failed: 403 Client Error: Forbidden for url: https://www.transfermarkt.com/kasimpasa/kader/verein/10484/saison_id/2026
-- KOCAELİSPOR: fetch_failed: 403 Client Error: Forbidden for url: https://www.transfermarkt.com/kocaelispor/kader/verein/120/saison_id/2026
-- İKAS EYÜPSPOR: fetch_failed: 403 Client Error: Forbidden for url: https://www.transfermarkt.com/eyupspor/kader/verein/7160/saison_id/2026
-- GENÇLERBİRLİĞİ: fetch_failed: 403 Client Error: Forbidden for url: https://www.transfermarkt.com/genclerbirligi-ankara/kader/verein/820/saison_id/2026
-- ÇORUM FK: fetch_failed: 403 Client Error: Forbidden for url: https://www.transfermarkt.com/corum-fk/kader/verein/37951/saison_id/2026
-- ERZURUMSPOR FK: fetch_failed: 403 Client Error: Forbidden for url: https://www.transfermarkt.com/erzurumspor-fk/kader/verein/39722/saison_id/2026
-- AMED SFK: fetch_failed: 403 Client Error: Forbidden for url: https://www.transfermarkt.com/amed-sk/kader/verein/12382/saison_id/2026
+- BEŞİKTAŞ A.Ş.: empty_squad
+- GALATASARAY A.Ş.: empty_squad
+- FENERBAHÇE A.Ş.: empty_squad
+- TRABZONSPOR A.Ş.: empty_squad
+- RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ: empty_squad
+- CORENDON ALANYASPOR: empty_squad
+- SAMSUNSPOR A.Ş.: empty_squad
+- GÖZTEPE A.Ş.: empty_squad
+- TÜMOSAN KONYASPOR: empty_squad
+- ÇAYKUR RİZESPOR A.Ş.: empty_squad
+- GAZİANTEP FUTBOL KULÜBÜ A.Ş.: empty_squad
+- KASIMPAŞA A.Ş.: empty_squad
+- KOCAELİSPOR: empty_squad
+- İKAS EYÜPSPOR: empty_squad
+- GENÇLERBİRLİĞİ: empty_squad
+- ÇORUM FK: empty_squad
+- ERZURUMSPOR FK: empty_squad
+- AMED SFK: empty_squad
 
 ## Beşiktaş Tekil Rapor Formatı

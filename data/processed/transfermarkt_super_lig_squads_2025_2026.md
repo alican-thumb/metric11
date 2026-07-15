@@ -27,6 +27,10 @@
 - İKAS EYÜPSPOR: oyuncu=27, değer=€17,150,000, verified=True, mode=cache_only, url=https://www.transfermarkt.com/eyupspor/kader/verein/7160/saison_id/2025
 - GENÇLERBİRLİĞİ: oyuncu=33, değer=€26,250,000, verified=True, mode=cache_only, url=https://www.transfermarkt.com/genclerbirligi-ankara/kader/verein/820/saison_id/2025
 
+## Stale Koruma
+
+- Sebep: collector_produced_no_nonempty_clubs
+
 ## Atlananlar
 
 - ÇORUM FK: cache_missing_or_empty

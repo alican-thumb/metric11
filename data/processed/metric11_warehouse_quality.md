@@ -52,10 +52,10 @@
 - {'role_label': 'Bek / çift yönlü koridor', 'candidate_name': 'KENNETH IMMANUEL PAAL', 'candidate_team': 'HESAP.COM ANTALYASPOR', 'fit_score': 119.9, 'position_confidence': 'LOW_POSITION_UNVERIFIED'}
 - {'role_label': 'Bek / çift yönlü koridor', 'candidate_name': 'IVO  GRBIC', 'candidate_team': 'MISIRLI.COM.TR FATİH KARAGÜMRÜK', 'fit_score': 117.8, 'position_confidence': 'LOW_POSITION_UNVERIFIED'}
 - {'role_label': 'Sol açık / çizgi kırıcı', 'candidate_name': 'KACPER SZYMON KOZLOWSKI', 'candidate_team': 'GAZİANTEP FUTBOL KULÜBÜ A.Ş.', 'fit_score': 112.62, 'position_confidence': 'HIGH'}
-- {'role_label': 'Sol açık / çizgi kırıcı', 'candidate_name': 'ANDERSON SOUZA CONCEIÇAO', 'candidate_team': 'FENERBAHÇE A.Ş.', 'fit_score': 105.5, 'position_confidence': 'HIGH_EXTERNAL_PROFILE'}
 - {'role_label': 'Sol açık / çizgi kırıcı', 'candidate_name': 'ERNEST MUÇİ', 'candidate_team': 'TRABZONSPOR A.Ş.', 'fit_score': 104.74, 'position_confidence': 'HIGH'}
 - {'role_label': 'Sol açık / çizgi kırıcı', 'candidate_name': 'YUNUS AKGÜN', 'candidate_team': 'GALATASARAY A.Ş.', 'fit_score': 102.94, 'position_confidence': 'HIGH'}
 - {'role_label': 'Sol açık / çizgi kırıcı', 'candidate_name': 'BARIŞ ALPER YILMAZ', 'candidate_team': 'GALATASARAY A.Ş.', 'fit_score': 99.46, 'position_confidence': 'HIGH'}
+- {'role_label': 'Sol açık / çizgi kırıcı', 'candidate_name': 'DORGELES NENE', 'candidate_team': 'FENERBAHÇE A.Ş.', 'fit_score': 95.84, 'position_confidence': 'HIGH'}
 
 ### card_heavy_referees
 - {'referee_name': 'FATİH TOKAİL', 'cards_per_match': 9.0, 'tempo_label': 'KARTLI'}

@@ -5,14 +5,14 @@
 - Transfermarkt Süper Lig kadrosu: 15/18 kulüp, 424 oyuncu
 - TFF Beşiktaş profili: 46
 - TFF scout profili: 40
-- Transfermarkt Beşiktaş oyuncusu: 50
+- Transfermarkt Beşiktaş oyuncusu: 0
 - Dış API derin oyuncusu: 115
 
 ## Karşılaştırmalar
 
-- league_tff_vs_transfermarkt: 410/691 eşleşme (%59)
-  - Manuel eşleme: 13 (ağ teyidi bekleyen=13); kullanılabilir eşleme %61
-- besiktas_tff_vs_transfermarkt: 44/46 eşleşme (%96)
+- league_tff_vs_transfermarkt: 391/691 eşleşme (%57)
+  - Manuel eşleme: 13 (ağ teyidi bekleyen=13); kullanılabilir eşleme %58
+- besiktas_tff_vs_transfermarkt: 0/46 eşleşme (%0)
   - Ham tekil kaynak karşılaştırmasıdır; operasyonel manuel eşlemeler lig karşılaştırmasında izlenir.
 - scout_tff_vs_api_deep: 7/40 eşleşme (%18)
 - besiktas_tff_vs_api_deep: 4/46 eşleşme (%9)
@@ -32,16 +32,6 @@
 - FELIX OHIS UDUOKHAI -> Felix Uduokhai | skor=1.0 | canonical=FELIX OHIS UDUOKHAI
 
 ### besiktas_tff_vs_transfermarkt
-- FELIX OHIS UDUOKHAI -> Felix Uduokhai | skor=0.9 | canonical=FELIX OHIS UDUOKHAI
-- JOAO PEDRO FERREIRA DA SILVA -> Jota Silva | skor=0.9 | canonical=JOAO PEDRO FERREIRA DA SILVA
-- KARTAL KAYRA YILMAZ -> Kartal Yılmaz | skor=0.9 | canonical=KARTAL KAYRA YILMAZ
-- MUSTAFA ERHAN HEKİMOĞLU -> Mustafa Hekimoğlu | skor=0.9 | canonical=MUSTAFA ERHAN HEKIMOGLU
-- RAFAEL ALEXANDRE FERNANDES FERREIRA DA SILVA -> Rafa Silva | skor=0.9 | canonical=RAFAEL ALEXANDRE FERNANDES FERREIRA DA SILVA
-- TIAGO EMANUEL EMBALO DJALO -> Tiago Djaló | skor=0.9 | canonical=TIAGO EMANUEL EMBALO DJALO
-- AHMET SAMİ BİRCAN -> Ahmet Sami Bircan | skor=1.0 | canonical=AHMET SAMI BIRCAN
-- ALİ PAĞDA -> Ali Pağda | skor=1.0 | canonical=ALI PAGDA
-- AMIR HADZIAHMETOVIC -> Amir Hadziahmetovic | skor=1.0 | canonical=AMIR HADZIAHMETOVIC
-- ASIM EFE IŞIK -> Asım Efe Işık | skor=1.0 | canonical=ASIM EFE ISIK
 
 ### scout_tff_vs_api_deep
 - KACPER SZYMON KOZLOWSKI -> K. Kozłowski | skor=0.9 | canonical=KACPER SZYMON KOZLOWSKI
@@ -83,8 +73,26 @@
 - HAMZA YİĞİT AKMAN (ATKO GRUP PENDİKSPOR FUTBOL A.Ş.)
 
 ### besiktas_tff_vs_transfermarkt
+- AHMET SAMİ BİRCAN (BEŞİKTAŞ A.Ş.)
+- ALİ PAĞDA (BEŞİKTAŞ A.Ş.)
+- AMIR HADZIAHMETOVIC (BEŞİKTAŞ A.Ş.)
+- ASIM EFE IŞIK (BEŞİKTAŞ A.Ş.)
+- BADOBRE EMMANUEL ELYSEE DJEDJE AGBADOU (BEŞİKTAŞ A.Ş.)
+- CENGİZ ÜNDER (BEŞİKTAŞ A.Ş.)
+- DAVID JURASEK (BEŞİKTAŞ A.Ş.)
+- DEMİR EGE TIKNAZ (BEŞİKTAŞ A.Ş.)
+- DEVIS ESTIVEN  VASQUEZ LLACH (BEŞİKTAŞ A.Ş.)
+- DEVRİM ŞAHİN (BEŞİKTAŞ A.Ş.)
+- EL BILAL TOURE (BEŞİKTAŞ A.Ş.)
+- EMRE BİLGİN (BEŞİKTAŞ A.Ş.)
+- EMRECAN UZUNHAN (BEŞİKTAŞ A.Ş.)
+- EMİR YAŞAR (BEŞİKTAŞ A.Ş.)
+- EMİRHAN TOPÇU (BEŞİKTAŞ A.Ş.)
+- ERNEST MUÇİ (BEŞİKTAŞ A.Ş.)
+- ERSİN DESTANOĞLU (BEŞİKTAŞ A.Ş.)
+- FEHMİ MERT GÜNOK (BEŞİKTAŞ A.Ş.)
+- FELIX OHIS UDUOKHAI (BEŞİKTAŞ A.Ş.)
 - GABRIEL ARMANDO DE ABREU (BEŞİKTAŞ A.Ş.)
-- KEVIN OGHENETEGA TAMARAEBI BAKUMO ABRAHAM (BEŞİKTAŞ A.Ş.)
 
 ### scout_tff_vs_api_deep
 - ADRIAN DAWID BENEDYCZAK (KASIMPAŞA A.Ş.)
