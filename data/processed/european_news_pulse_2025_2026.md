@@ -1,16 +1,15 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-07-16T14:22:42.175490+00:00
-Toplam ilgili haber: 16
+Üretim zamanı: 2026-07-16T15:48:55.717967+00:00
+Toplam ilgili haber: 15
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
 - [TEŞEKKÜRLER MİGUEL CRESPO](https://ibfk.com.tr/haberler/tesekkurler-miguel-crespo) — Başakşehir Resmi Web · 7.7.2026 21:16:30 · turnuva=EL · kulüp=Başakşehir
+- [BEŞİKTAŞ-MIDTJYLLAND MAÇI NE ZAMAN? UEFA Avrupa Ligi Beşiktaş - Midtjylland Maçı Saat Kaçta, Hangi Kanalda? Kara Kartal'ın Avrupa Ligi Heyecanı Başlıyor!](https://www.cnnturk.com/spor/futbol/besiktas-midtjylland-maci-ne-zaman-uefa-avrupa-ligi-besiktas-midtjylland-maci-saat-kacta-hangi-kanalda-kara-kartalin-avrupa-3443328) — CNN Türk Spor · 2026-07-16T17:32:57+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Fenerbahçe'nin Şampiyonlar Ligi'nde oynayacağı Gornik Zabrze maçının hakemi Manfredas Lukjancukas oldu!](https://www.takvim.com.tr/spor/fenerbahce/2026/07/16/fenerbahcenin-sampiyonlar-ligi-macinin-hakemi-aciklandi) — Takvim Spor · 2026-07-16T15:44:49+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [FENERBAHÇE-GORNİK ZABRZE ŞAMPİYONLAR LİGİ 2. ÖN ELEME TURU MAÇI NE ZAMAN? Fenerbahçe Gornık Zabre Maç Biletleri Ne Zaman Satışa Çıkacak, Bilet Fiyatı Ne?](https://www.cnnturk.com/spor/futbol/fenerbahce-gornik-zabrze-sampiyonlar-ligi-2-on-eleme-turu-maci-ne-zaman-fenerbahce-gornik-zabre-mac-biletleri-ne-zaman-satisa-3442984) — CNN Türk Spor · 2026-07-16T15:41:26+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Beşiktaş-Midtjylland Maçı Ne Zaman? UEFA Avrupa Ligi Beşiktaş-Midtjylland Maçı Saat Kaçta, Hangi Kanalda? Kara Kartal'ın Avrupa Ligi Heyecanı Başlıyor!](https://www.cnnturk.com/spor/futbol/besiktas-midtjylland-maci-ne-zaman-uefa-avrupa-ligi-besiktas-midtjylland-maci-saat-kacta-hangi-kanalda-kara-kartalin-avrupa-3443328) — CNN Türk Spor · 2026-07-16T15:40:28+00:00 · turnuva=EL · kulüp=Beşiktaş
-- [Fenerbahçe-Gornik Zabrze maçını Litvanyalı hakem Manfredas Lukjancukas yönetecek.](https://www.fotomac.com.tr/fenerbahce/2026/07/16/fenerbahce-gornik-zabrze-macini-litvanyali-hakem-manfredas-lukjancukas-yonetecek) — Fotomaç · 2026-07-16T15:12:37+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe, Avrupa arenasına çıkıyor! Maçın hakemi açıklandı...](https://www.cnnturk.com/spor/futbol/fenerbahce-avrupa-arenasina-cikiyor-macin-hakemi-aciklandi-3443349) — CNN Türk Spor · 2026-07-16T15:07:12+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe-Gornik Zabrze maçının hakemi açıklandı!](https://www.sabah.com.tr/spor/futbol/2026/07/16/fenerbahce-gornik-zabrze-macinin-hakemi-aciklandi) — Sabah Spor · 2026-07-16T15:05:58+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe'nin Şampiyonlar Ligi'ndeki muhtemel rakipleri netleşiyor](https://www.cnnturk.com/spor/futbol/fenerbahcenin-sampiyonlar-ligindeki-muhtemel-rakipleri-netlesiyor-3443324) — CNN Türk Spor · 2026-07-16T13:09:06+00:00 · turnuva=CL · kulüp=Fenerbahçe
