@@ -3,12 +3,12 @@
 - Sezon: 2025-2026
 - Maç: 306
 - Takım: 18
-- Maç kadrosunda benzersiz oyuncu: 691
-- Ana hakem: 29
-- İlk 11 kaydı: 6732
-- Yedek kaydı: 6000
-- Kart olayı: 1428
-- Gol olayı: 812
+- Maç kadrosunda benzersiz oyuncu: 0
+- Ana hakem: 0
+- İlk 11 kaydı: 0
+- Yedek kaydı: 0
+- Kart olayı: 0
+- Gol olayı: 0
 - Beşiktaş oyuncu profili: 46
 - Eski scout parça profil dosyası: 40
 - Eski öncelikli profil parça dosyası: 608
@@ -21,8 +21,8 @@
 - TFF / Transfermarkt doğrulanmış lig snapshot içi kapsama: 391/520 (%75.2)
 - TFF / Transfermarkt manuel eşleme: 13 profil; ağ teyidi bekleyen 13
 - TFF / Transfermarkt manuel dahil kullanılabilir lig içi kapsama: 401/520 (%77.1)
-- TFF / Transfermarkt çözülmemiş kuyruğu: 287 profil; scout bloke eden 4
-- TFF / Transfermarkt yüksek kullanımlı çözülmemiş: 17 profil
+- TFF / Transfermarkt çözülmemiş kuyruğu: 287 profil; scout bloke eden 0
+- TFF / Transfermarkt yüksek kullanımlı çözülmemiş: 0 profil
 - Beşiktaş maç önü raporu: 29
 - Tüm takım maç önü raporu: 522 (18 takım)
 - Gol adayı Top 3: %62
@@ -48,17 +48,17 @@
 - FM tarzı scout adayı: 0
 - FM tarzı rol listesi: 0
 - Pozisyon scout rolü: 7
-- Pozisyon scout rol-aday eşleşmesi: 105
+- Pozisyon scout rol-aday eşleşmesi: 0
 - Lig istihbarat takım profili: 18
-- Lig istihbarat oyuncu profili: 691
-- Lig istihbarat hakem profili: 29
-- Takım scout blueprint: 21 takım
-- Takım scout aday bağlantısı: 370
-- Scout düşük güven inceleme kuyruğu: 27
-- Scout tekil düşük güven oyuncu-rol: 4
+- Lig istihbarat oyuncu profili: 0
+- Lig istihbarat hakem profili: 0
+- Takım scout blueprint: 19 takım
+- Takım scout aday bağlantısı: 0
+- Scout düşük güven inceleme kuyruğu: 0
+- Scout tekil düşük güven oyuncu-rol: 0
 - Scout fazla role yayılan oyuncu: 0
 - SQLite veri ambarı tablo sayısı: 15
-- SQLite veri ambarı toplam satır: 17462
+- SQLite veri ambarı toplam satır: 1371
 - SQLite veri kalite bulgusu: 6
 - Profil zenginleştirme kuyruğu: 0
 - Profil zenginleştirme eksik aday: 0
@@ -67,10 +67,10 @@
 - Haber/sakat-cezalı başarılı kaynak: 2
 - Haber/sakat-cezalı sinyal: 3
 - Haber/sakat-cezalı yapılandırılmış oyuncu: 13
-- RSS haber kaydı: 287
+- RSS haber kaydı: 289
 - Resmi kulüp web duyurusu: 27 | erişilebilir site=16/21 | durum=PARTIAL_SUCCESS
-- Haber analizine alınan içerik: 469
-- Transfer haber iddiası: 65 | resmi=1, çoklu kaynak=8, söylenti=14, inceleme gerekli=42
+- Haber analizine alınan içerik: 467
+- Transfer haber iddiası: 60 | resmi=1, çoklu kaynak=7, söylenti=12, inceleme gerekli=40
 - X gönderi snapshot'ı: 0 | başarılı hesap=0 | kaynak=x_api | durum=MISSING_CREDENTIALS
 - API-Football 2024 başarılı endpoint: 7
 - API-Football 2024 fikstür: 342
@@ -92,7 +92,7 @@
 - TFF oyuncu profilleri / public='Resmi federasyon oyuncu profili' (SCRAPING, risk=MEDIUM, license=VERIFY_TERMS): İşlenen lig profil havuzu 691 profil; lig snapshot içi eşleşme ayrıca ölçülür
 - Transfermarkt kadro sayfası / public='Piyasa değeri ve kadro profili' (SCRAPING, risk=HIGH, license=VERIFY_TERMS_BEFORE_COMMERCIAL_USE): Süper Lig 2025/26: 18 kulüp kadrosu, pozisyon ve piyasa değeri
 - Oyuncu uygunluk sinyalleri / public='Model türetilmiş uygunluk sinyali' (DERIVED+MANUAL, risk=MEDIUM, license=DERIVED_FROM_INTERNAL_DATA_AND_MANUAL_VERIFICATION): Beşiktaş 2025/26 kart cezası çıkarımı + manuel sakat/cezalı override dosyası
-- Türk spor haber RSS akışı / public='Güncel spor haber bağlamı' (RSS_NEWS, risk=MEDIUM, license=VERIFY_TERMS_AND_QUOTE_LIMITS): 287 ham haber; 469 ilgili analiz; 65 transfer iddiası
+- Türk spor haber RSS akışı / public='Güncel spor haber bağlamı' (RSS_NEWS, risk=MEDIUM, license=VERIFY_TERMS_AND_QUOTE_LIMITS): 289 ham haber; 467 ilgili analiz; 60 transfer iddiası
 - Süper Lig resmi kulüp web duyuruları / public='Resmi kulüp duyuruları' (OFFICIAL_CLUB_NEWS, risk=LOW_MEDIUM, license=VERIFY_TERMS_AND_LINK_DERIVED_DISPLAY): 27 duyuru; 16/21 kulüp sitesi erişilebilir; durum=PARTIAL_SUCCESS
 - X resmi kulüp ve futbol haber hesapları / public='Resmi kulüp ve sosyal haber duyuruları' (X_SOCIAL_SIGNAL, risk=MEDIUM, license=PLATFORM_TERMS_AND_DISPLAY_REQUIREMENTS): Collector çalıştı (x_api/MISSING_CREDENTIALS); kullanılabilir gönderi snapshot'ı yok
 - FM/FIFA tarzı oyuncu attribute kaynakları / public='Oyuncu attribute ve potansiyel veri seti' (OPEN_DATASET_OR_VERIFIED_EXPORT, risk=LOW_TO_HIGH_BY_LICENSE, license=SOURCE_SPECIFIC): 4 aday kaynak kaydı; normalize import varsa 691 oyuncu

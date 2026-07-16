@@ -72,17 +72,17 @@
 <li>data_quality_findings: 6</li>
 <li>data_sources: 5</li>
 <li>goal_candidates: 298</li>
-<li>match_cards: 1428</li>
-<li>match_goals: 812</li>
-<li>match_lineups: 12732</li>
+<li>match_cards: 0</li>
+<li>match_goals: 0</li>
+<li>match_lineups: 0</li>
 <li>match_predictions: 29</li>
 <li>matches: 306</li>
-<li>player_profiles: 691</li>
+<li>player_profiles: 0</li>
 <li>players: 691</li>
-<li>referee_profiles: 29</li>
-<li>referees: 29</li>
+<li>referee_profiles: 0</li>
+<li>referees: 0</li>
 <li>team_profiles: 18</li>
-<li>team_scout_blueprints: 370</li>
+<li>team_scout_blueprints: 0</li>
 <li>teams: 18</li>
 </ul>
 
@@ -99,9 +99,9 @@
 
 <ul>
 <li>LOW / matches: Warehouse match rows loaded = 306 -&gt; Bu sayı sezon kapsamıyla tutarlı kalmalı.</li>
-<li>LOW / referees: Matches missing main referee = 0 -&gt; Eksikse TFF parser veya kaynak değişimi kontrol edilmeli.</li>
+<li>MEDIUM / referees: Matches missing main referee = 306 -&gt; Eksikse TFF parser veya kaynak değişimi kontrol edilmeli.</li>
 <li>LOW / players: Players without age/profile enrichment = 0 -&gt; TFF/Transfermarkt/API profil toplama kapsamı genişletilmeli.</li>
-<li>MEDIUM / scouting: Blueprint candidates with low proxy position confidence = 27 -&gt; Doğrudan pozisyon, boy, ayak ve aksiyon verisiyle güçlendirilmeli.</li>
+<li>LOW / scouting: Blueprint candidates with low proxy position confidence = 0 -&gt; Doğrudan pozisyon, boy, ayak ve aksiyon verisiyle güçlendirilmeli.</li>
 <li>MEDIUM / predictions: Beşiktaş match prediction accuracy percent = 55 -&gt; Daha fazla sezon, sakatlık ve odds baseline ile kalibre edilmeli.</li>
 <li>LOW / goal_candidates: Goal candidate rows loaded = 298 -&gt; Top 8/10 performansı ürün için güçlü sinyal.</li>
 </ul>
@@ -110,35 +110,16 @@
 
 <h3>top_team_power</h3>
 <ul>
-<li>{&#x27;team_name&#x27;: &#x27;GALATASARAY A.Ş.&#x27;, &#x27;overall_power_score&#x27;: 84.4, &#x27;points_per_match&#x27;: 2.26}</li>
-<li>{&#x27;team_name&#x27;: &#x27;FENERBAHÇE A.Ş.&#x27;, &#x27;overall_power_score&#x27;: 76.5, &#x27;points_per_match&#x27;: 2.18}</li>
-<li>{&#x27;team_name&#x27;: &#x27;RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ&#x27;, &#x27;overall_power_score&#x27;: 73.3, &#x27;points_per_match&#x27;: 1.68}</li>
-<li>{&#x27;team_name&#x27;: &#x27;TRABZONSPOR A.Ş.&#x27;, &#x27;overall_power_score&#x27;: 68.6, &#x27;points_per_match&#x27;: 2.03}</li>
-<li>{&#x27;team_name&#x27;: &#x27;BEŞİKTAŞ A.Ş.&#x27;, &#x27;overall_power_score&#x27;: 62.5, &#x27;points_per_match&#x27;: 1.76}</li>
+<li>{&#x27;team_name&#x27;: &#x27;GALATASARAY A.Ş.&#x27;, &#x27;overall_power_score&#x27;: 48.7, &#x27;points_per_match&#x27;: 1.0}</li>
+<li>{&#x27;team_name&#x27;: &#x27;ÇORUM FK&#x27;, &#x27;overall_power_score&#x27;: 48.7, &#x27;points_per_match&#x27;: 1.0}</li>
+<li>{&#x27;team_name&#x27;: &#x27;KASIMPAŞA A.Ş.&#x27;, &#x27;overall_power_score&#x27;: 48.7, &#x27;points_per_match&#x27;: 1.0}</li>
+<li>{&#x27;team_name&#x27;: &#x27;TRABZONSPOR A.Ş.&#x27;, &#x27;overall_power_score&#x27;: 48.7, &#x27;points_per_match&#x27;: 1.0}</li>
+<li>{&#x27;team_name&#x27;: &#x27;KONYASPOR&#x27;, &#x27;overall_power_score&#x27;: 48.7, &#x27;points_per_match&#x27;: 1.0}</li>
 </ul>
 
 <h3>besiktas_blueprint</h3>
-<ul>
-<li>{&#x27;role_label&#x27;: &#x27;Bek / çift yönlü koridor&#x27;, &#x27;candidate_name&#x27;: &#x27;ALEXANDRU IULIAN MAXIM&#x27;, &#x27;candidate_team&#x27;: &#x27;GAZİANTEP FUTBOL KULÜBÜ A.Ş.&#x27;, &#x27;fit_score&#x27;: 127.7, &#x27;position_confidence&#x27;: &#x27;MEDIUM_DERIVED_ROLE&#x27;}</li>
-<li>{&#x27;role_label&#x27;: &#x27;Bek / çift yönlü koridor&#x27;, &#x27;candidate_name&#x27;: &#x27;MATEUSZ LIS&#x27;, &#x27;candidate_team&#x27;: &#x27;GÖZTEPE A.Ş.&#x27;, &#x27;fit_score&#x27;: 124.4, &#x27;position_confidence&#x27;: &#x27;MEDIUM_DERIVED_ROLE&#x27;}</li>
-<li>{&#x27;role_label&#x27;: &#x27;Bek / çift yönlü koridor&#x27;, &#x27;candidate_name&#x27;: &#x27;ANDREAS GIANNIOTIS&#x27;, &#x27;candidate_team&#x27;: &#x27;KASIMPAŞA A.Ş.&#x27;, &#x27;fit_score&#x27;: 123.3, &#x27;position_confidence&#x27;: &#x27;MEDIUM_DERIVED_ROLE&#x27;}</li>
-<li>{&#x27;role_label&#x27;: &#x27;Bek / çift yönlü koridor&#x27;, &#x27;candidate_name&#x27;: &#x27;KENNETH IMMANUEL PAAL&#x27;, &#x27;candidate_team&#x27;: &#x27;HESAP.COM ANTALYASPOR&#x27;, &#x27;fit_score&#x27;: 119.9, &#x27;position_confidence&#x27;: &#x27;LOW_POSITION_UNVERIFIED&#x27;}</li>
-<li>{&#x27;role_label&#x27;: &#x27;Bek / çift yönlü koridor&#x27;, &#x27;candidate_name&#x27;: &#x27;IVO  GRBIC&#x27;, &#x27;candidate_team&#x27;: &#x27;MISIRLI.COM.TR FATİH KARAGÜMRÜK&#x27;, &#x27;fit_score&#x27;: 117.8, &#x27;position_confidence&#x27;: &#x27;LOW_POSITION_UNVERIFIED&#x27;}</li>
-<li>{&#x27;role_label&#x27;: &#x27;Sol açık / çizgi kırıcı&#x27;, &#x27;candidate_name&#x27;: &#x27;KACPER SZYMON KOZLOWSKI&#x27;, &#x27;candidate_team&#x27;: &#x27;GAZİANTEP FUTBOL KULÜBÜ A.Ş.&#x27;, &#x27;fit_score&#x27;: 112.62, &#x27;position_confidence&#x27;: &#x27;HIGH&#x27;}</li>
-<li>{&#x27;role_label&#x27;: &#x27;Sol açık / çizgi kırıcı&#x27;, &#x27;candidate_name&#x27;: &#x27;ERNEST MUÇİ&#x27;, &#x27;candidate_team&#x27;: &#x27;TRABZONSPOR A.Ş.&#x27;, &#x27;fit_score&#x27;: 104.74, &#x27;position_confidence&#x27;: &#x27;HIGH&#x27;}</li>
-<li>{&#x27;role_label&#x27;: &#x27;Sol açık / çizgi kırıcı&#x27;, &#x27;candidate_name&#x27;: &#x27;YUNUS AKGÜN&#x27;, &#x27;candidate_team&#x27;: &#x27;GALATASARAY A.Ş.&#x27;, &#x27;fit_score&#x27;: 102.94, &#x27;position_confidence&#x27;: &#x27;HIGH&#x27;}</li>
-<li>{&#x27;role_label&#x27;: &#x27;Sol açık / çizgi kırıcı&#x27;, &#x27;candidate_name&#x27;: &#x27;BARIŞ ALPER YILMAZ&#x27;, &#x27;candidate_team&#x27;: &#x27;GALATASARAY A.Ş.&#x27;, &#x27;fit_score&#x27;: 99.46, &#x27;position_confidence&#x27;: &#x27;HIGH&#x27;}</li>
-<li>{&#x27;role_label&#x27;: &#x27;Sol açık / çizgi kırıcı&#x27;, &#x27;candidate_name&#x27;: &#x27;DORGELES NENE&#x27;, &#x27;candidate_team&#x27;: &#x27;FENERBAHÇE A.Ş.&#x27;, &#x27;fit_score&#x27;: 95.84, &#x27;position_confidence&#x27;: &#x27;HIGH&#x27;}</li>
-</ul>
 
 <h3>card_heavy_referees</h3>
-<ul>
-<li>{&#x27;referee_name&#x27;: &#x27;FATİH TOKAİL&#x27;, &#x27;cards_per_match&#x27;: 9.0, &#x27;tempo_label&#x27;: &#x27;KARTLI&#x27;}</li>
-<li>{&#x27;referee_name&#x27;: &#x27;ERDEM MERTOĞLU&#x27;, &#x27;cards_per_match&#x27;: 6.67, &#x27;tempo_label&#x27;: &#x27;KARTLI&#x27;}</li>
-<li>{&#x27;referee_name&#x27;: &#x27;GÜRCAN HASOVA&#x27;, &#x27;cards_per_match&#x27;: 6.17, &#x27;tempo_label&#x27;: &#x27;KARTLI&#x27;}</li>
-<li>{&#x27;referee_name&#x27;: &#x27;KADİR SAĞLAM&#x27;, &#x27;cards_per_match&#x27;: 5.93, &#x27;tempo_label&#x27;: &#x27;KARTLI&#x27;}</li>
-<li>{&#x27;referee_name&#x27;: &#x27;ARDA KARDEŞLER&#x27;, &#x27;cards_per_match&#x27;: 5.67, &#x27;tempo_label&#x27;: &#x27;KARTLI&#x27;}</li>
-</ul>
 
   </div>
   <footer style="text-align:center;padding:40px 16px 28px;color:#8a9e92;font-size:12px;border-top:1px solid #e2e8e4;margin-top:48px;">metric11 &middot; <a href="mailto:hello@metric11.com" style="color:#8a9e92;text-decoration:none;border-bottom:1px solid #c5d4ca;">hello@metric11.com</a></footer>

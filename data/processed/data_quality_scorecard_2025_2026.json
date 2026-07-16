@@ -1,21 +1,21 @@
 {
   "warehouse": "/home/runner/work/metric11/metric11/data/processed/metric11_warehouse.sqlite",
-  "score": 72.9,
+  "score": 70.5,
   "table_counts": {
     "data_quality_findings": 6,
     "data_sources": 5,
     "goal_candidates": 298,
-    "match_cards": 1428,
-    "match_goals": 812,
-    "match_lineups": 12732,
+    "match_cards": 0,
+    "match_goals": 0,
+    "match_lineups": 0,
     "match_predictions": 29,
     "matches": 306,
-    "player_profiles": 691,
+    "player_profiles": 0,
     "players": 691,
-    "referee_profiles": 29,
-    "referees": 29,
+    "referee_profiles": 0,
+    "referees": 0,
     "team_profiles": 18,
-    "team_scout_blueprints": 370,
+    "team_scout_blueprints": 0,
     "teams": 18
   },
   "goal_backtest_summary": {
@@ -42,9 +42,9 @@
     {
       "area": "coverage",
       "metric": "matches_missing_referee",
-      "value": 0,
-      "status": "PASS",
-      "priority": "LOW",
+      "value": 306,
+      "status": "FAIL",
+      "priority": "MEDIUM",
       "recommendation": "Hakem eksikleri kart ve büyük maç risk modelini doğrudan zayıflatır."
     },
     {
@@ -82,9 +82,9 @@
     {
       "area": "scouting",
       "metric": "unmatched_players_blocking_scout_review",
-      "value": 4,
-      "status": "FAIL",
-      "priority": "HIGH",
+      "value": 0,
+      "status": "PASS",
+      "priority": "LOW",
       "recommendation": "Scout kuyruğunu bloke eden oyuncular için aynı kulüp Transfermarkt adı veya resmi profil doğrulanmalı; doğrulanmadan rol önerisi yayınlanmamalı."
     },
     {
@@ -146,18 +146,6 @@
       "status": "WATCH",
       "priority": "MEDIUM",
       "recommendation": "Aday tipleri ayrı backtest edilmeli: primary, penaltı, duran top/defans ve yedek etki."
-    },
-    {
-      "area": "scouting",
-      "metric": "low_position_confidence_pct",
-      "value": {
-        "low_confidence": 27,
-        "total": 370,
-        "pct": 7.3
-      },
-      "status": "PASS",
-      "priority": "MEDIUM",
-      "recommendation": "Düşük güvenli scout adayları doğrudan pozisyon, boy, ayak ve aksiyon verisiyle zenginleştirilmeli."
     }
   ],
   "priorities": [
@@ -186,10 +174,10 @@
       "recommendation": "Snapshot kapsamındaki eşleşmeyen oyuncular alias/transfer inceleme kuyruğunda doğrulanmadan piyasa değeri veya pozisyon olarak kullanılmamalı."
     },
     {
-      "priority": "HIGH",
-      "area": "scouting",
-      "metric": "unmatched_players_blocking_scout_review",
-      "recommendation": "Scout kuyruğunu bloke eden oyuncular için aynı kulüp Transfermarkt adı veya resmi profil doğrulanmalı; doğrulanmadan rol önerisi yayınlanmamalı."
+      "priority": "MEDIUM",
+      "area": "coverage",
+      "metric": "matches_missing_referee",
+      "recommendation": "Hakem eksikleri kart ve büyük maç risk modelini doğrudan zayıflatır."
     },
     {
       "priority": "MEDIUM",
@@ -278,22 +266,5 @@
       "hits": 2
     }
   ],
-  "scout_position_confidence": [
-    {
-      "position_confidence": "MEDIUM_DERIVED_ROLE",
-      "rows": 248
-    },
-    {
-      "position_confidence": "HIGH",
-      "rows": 59
-    },
-    {
-      "position_confidence": "HIGH_EXTERNAL_PROFILE",
-      "rows": 36
-    },
-    {
-      "position_confidence": "LOW_POSITION_UNVERIFIED",
-      "rows": 27
-    }
-  ]
+  "scout_position_confidence": []
 }

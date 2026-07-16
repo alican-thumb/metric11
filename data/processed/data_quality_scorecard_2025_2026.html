@@ -64,7 +64,7 @@
 
 <ul>
 <li>Ambar: <code>/home/runner/work/metric11/metric11/data/processed/metric11_warehouse.sqlite</code></li>
-<li>Genel skor: 72.9/100</li>
+<li>Genel skor: 70.5/100</li>
 </ul>
 
 <h2>Kontroller</h2>
@@ -88,9 +88,9 @@
 <tr>
 <td>coverage</td>
 <td>matches_missing_referee</td>
-<td>0</td>
-<td>✓</td>
-<td>Düşük</td>
+<td>306</td>
+<td>✗ Sorun</td>
+<td>Orta</td>
 <td>Hakem eksikleri kart ve büyük maç risk modelini doğrudan zayıflatır.</td>
 </tr>
 <tr>
@@ -120,9 +120,9 @@
 <tr>
 <td>scouting</td>
 <td>unmatched_players_blocking_scout_review</td>
-<td>4</td>
-<td>✗ Sorun</td>
-<td>Yüksek</td>
+<td>0</td>
+<td>✓</td>
+<td>Düşük</td>
 <td>Scout kuyruğunu bloke eden oyuncular için aynı kulüp Transfermarkt adı veya resmi profil doğrulanmalı; doğrulanmadan rol önerisi yayınlanmamalı.</td>
 </tr>
 <tr>
@@ -165,14 +165,6 @@
 <td>Orta</td>
 <td>Aday tipleri ayrı backtest edilmeli: primary, penaltı, duran top/defans ve yedek etki.</td>
 </tr>
-<tr>
-<td>scouting</td>
-<td>low_position_confidence_pct</td>
-<td>low_confidence=27, total=370, pct=7.3</td>
-<td>✓</td>
-<td>Orta</td>
-<td>Düşük güvenli scout adayları doğrudan pozisyon, boy, ayak ve aksiyon verisiyle zenginleştirilmeli.</td>
-</tr>
 </tbody></table>
 
 <h2>Öncelikli Aksiyonlar</h2>
@@ -182,7 +174,7 @@
 <li><strong>Yüksek öncelik</strong> — model / draw_recall_pct: Beraberlik sadece çok yüksek risk ve dar olasılık farkında ekran tahminine çekilmeli; diğer durumlarda korumalı senaryo dili kullanılmalı.</li>
 <li><strong>Yüksek öncelik</strong> — player_profiles / manual_alias_pending_network_verification: Operasyonda kullanılan manuel pozisyon ve piyasa değeri eşlemeleri Transfermarkt profil bağlantısıyla doğrulanana kadar teyit bekliyor olarak gösterilmeli.</li>
 <li><strong>Yüksek öncelik</strong> — player_profiles / tff_transfermarkt_in_scope_match_rate_pct: Snapshot kapsamındaki eşleşmeyen oyuncular alias/transfer inceleme kuyruğunda doğrulanmadan piyasa değeri veya pozisyon olarak kullanılmamalı.</li>
-<li><strong>Yüksek öncelik</strong> — scouting / unmatched_players_blocking_scout_review: Scout kuyruğunu bloke eden oyuncular için aynı kulüp Transfermarkt adı veya resmi profil doğrulanmalı; doğrulanmadan rol önerisi yayınlanmamalı.</li>
+<li><strong>Orta öncelik</strong> — coverage / matches_missing_referee: Hakem eksikleri kart ve büyük maç risk modelini doğrudan zayıflatır.</li>
 <li><strong>Orta öncelik</strong> — goal_candidates / top_5_hit_pct: Aday tipleri ayrı backtest edilmeli: primary, penaltı, duran top/defans ve yedek etki.</li>
 <li><strong>Orta öncelik</strong> — goal_candidates / top_8_hit_pct: Aday tipleri ayrı backtest edilmeli: primary, penaltı, duran top/defans ve yedek etki.</li>
 </ul>
@@ -213,12 +205,6 @@
 
 <h2>Scout Pozisyon Güveni</h2>
 
-<ul>
-<li>MEDIUM_DERIVED_ROLE: 248</li>
-<li>HIGH: 59</li>
-<li>HIGH_EXTERNAL_PROFILE: 36</li>
-<li>LOW_POSITION_UNVERIFIED: 27</li>
-</ul>
 
 <h2>Tablo Kapsamı</h2>
 
@@ -226,17 +212,17 @@
 <li>data_quality_findings: 6</li>
 <li>data_sources: 5</li>
 <li>goal_candidates: 298</li>
-<li>match_cards: 1428</li>
-<li>match_goals: 812</li>
-<li>match_lineups: 12732</li>
+<li>match_cards: 0</li>
+<li>match_goals: 0</li>
+<li>match_lineups: 0</li>
 <li>match_predictions: 29</li>
 <li>matches: 306</li>
-<li>player_profiles: 691</li>
+<li>player_profiles: 0</li>
 <li>players: 691</li>
-<li>referee_profiles: 29</li>
-<li>referees: 29</li>
+<li>referee_profiles: 0</li>
+<li>referees: 0</li>
 <li>team_profiles: 18</li>
-<li>team_scout_blueprints: 370</li>
+<li>team_scout_blueprints: 0</li>
 <li>teams: 18</li>
 </ul>
   </div>
