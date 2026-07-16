@@ -1915,3 +1915,41 @@ Bir sonraki oturumda önce `PROJECT_STATE.md` okunmalı. Ardından öncelik:
 - **Not — bu değişiklik yalnızca lig geneli/gelecek sezon modelini (`model_league_predictions.py`) etkiliyor.** Beşiktaş'a özgü ekran kalibrasyonu (`src/preview/probability.py` `calibrated_display_prediction`, score>=90 sert eşik) DEĞİŞTİRİLMEDİ — ayrı bir sistem, kasıtlı olarak dokunulmadı (bkz. önceki oturum notları, bu eşik Beşiktaş alt kümesinde farklı davranıyor).
 - İkinci öneri (piyasa değeri farkının doğrudan bir sinyal olarak eklenmesi) ertelendi: `league_market_value_audit_2025_2026.json` diagnostic'i piyasa değeri favorisinin tek başına ~%50-52 isabet verdiğini gösteriyor ama yalnızca maçların %68.6'sında kapsama var (3 takım — Antalyaspor/Karagümrük/Kayserispor varyantları — piyasa verisinde eksik) ve dosya kasıtlı olarak "tanısal, üretim sinyali değil" etiketli; üretim sinyaline dönüştürmek ayrı bir OOS doğrulama + eksik takım fallback işi gerektiriyor.
 - Kalan öncelik: (1) piyasa değeri sinyalinin üretim sinyaline dönüştürülüp dönüştürülmeyeceğine karar vermek (kapsama boşluğu var), (2) isabet oranını daha da artıracak başka sinyaller (ör. ev sahibi/deplasman ayrı ayrı isabet `%66.7`/`%63.4` — hâlâ iyileştirilebilir alan) araştırılabilir.
+
+## 2026-07-15 Akşam Günlük Veri/Geliştirme Kontrolü
+
+- 15 Temmuz akşam kontrolünde `data/processed` altında gün içinde üretilmiş `163` dosya görünüyor; 13:00 sonrası üretim sayısı `148`. En yeni kritik çıktılar: `oos_validation_2025_2026`, `draw_risk_audit`, `model_baseline_comparison`, `season_fixture_predictions_2026_2027`, `league_prediction_model_2025_2026`, haber/transfer çıktıları ve canlı gündem sayfası.
+- `daily_pipeline_run_latest.md` artık stale değil: son koşu `2026-07-15T10:06:50Z`, network dahil değil, `57/57` komut başarılı, `0` hata. JSON dosyasında komut listesi boş görünüyor ama markdown raporu komutları doğru yazıyor; JSON şemasındaki bu tutarsızlık ileride temizlenmeli.
+- 2026/27 fikstür tahminleri mevcut: `34` hafta / `306` maç. Henüz oynanmış maç yok (`played=0`). Güven dağılımı: `HIGH 67`, `MEDIUM 88`, `LOW 55`, `LOW_NEW_TEAM 96`. Yeni takımlar nedeniyle `LOW_NEW_TEAM` yükü yüksek.
+- H2H veri toplama ilerlemiş: `153` olası takım çiftinin `106` tanesi toplanmış; kalan `47` çift günlük API kotasıyla parça parça tamamlanacak.
+- Lig geneli 1X2 modelinde isabet odaklı kalibrasyon sonrasında doğrulanan metrikler iyileşti:
+  - Full-season: `133/258`, `%51.6`, Brier `0.610`, log loss `1.019`.
+  - İkinci yarı OOS: `81/153`, `%52.9`, Brier `0.608`, log loss `1.015`.
+  - Raw baseline: full-season `%50.4`, second-half OOS `%51.6`; yeni kalibrasyon iki ölçekte de baseline’ın üstüne geçti.
+- Model baseline karşılaştırması: `poisson_only` doğruluk `%51.2` ile hâlâ accuracy sıralamasında en yüksek tek model; `current_hybrid` doğruluk `%50.4` ama log loss/Brier tarafında daha iyi (`log_loss 1.019`, `brier 0.610`). OOS raporu güncel üretim yolunda `%52.9` gösterdiği için raporlar arası isim/ölçüm farkı ayrıca izlenmeli.
+- `data_quality_scorecard_2025_2026` skoru `73.6`dan `72.9`a hafif düştü. Yeni FAIL/WATCH başlıkları:
+  - `unmatched_players_blocking_scout_review`: `23`ten `4`e düştü ama hâlâ FAIL.
+  - `draw_recall_pct`: Beşiktaş ekran metriğinde `1/9`, `%11.1` ile hâlâ FAIL; bu metrik kasıtlı olarak Beşiktaş özel muhafazakâr ekran katmanını ölçüyor.
+  - `tff_transfermarkt_in_scope_match_rate_pct`: `391/520`, `%75.2` ile WATCH.
+  - `manual_alias_pending_network_verification`: `13` ile WATCH.
+  - Beşiktaş display tahmin doğruluğu `16/29`, `%55.2` ile WATCH.
+  - Gol adayı top-5 `20/26`, `%76.9`; top-8 `22/26`, `%84.6` ile WATCH.
+- Transfer tracker güncel: `50` sinyal, `6` corroborated/confirmed, `13` rumor, `31` review required, `0` official, toplam değer `€1.8M`. Transfer sinyali modeli kurulu ama official/corroborated sinyaller üretim etkisi için hâlâ canlıda ayrıca doğrulanmalı.
+- Avrupa haber nabzı `8` haberle aynı seviyede; kulüp/rakip/tur entity matching hâlâ genişletilmeli.
+- Git durumu kontrol başında temiz ve `main...origin/main` hizalıydı. Bu kayıt sonrası yalnız `PROJECT_STATE.md` değişti.
+- Kalan öncelik sırası:
+  1. `unmatched_players_blocking_scout_review` kalan `4` oyuncuyu çözmek ve scorecard FAIL’i kaldırmak.
+  2. Yeni takımlar için `LOW_NEW_TEAM` oranını düşürmek üzere 1. Lig/backfill veya resmi kadro form sinyali eklemek.
+  3. H2H kalan `47` çifti tamamlamak.
+  4. Beşiktaş ekran katmanındaki beraberlik recall metriğini ayrı değerlendirmek; genel model isabeti yükseldiği için bu metrik ürün dili/ekran metodu olarak ele alınmalı.
+  5. `daily_pipeline_run_latest.json` komut listesi boşluğu ve raporlar arası baseline/current_hybrid ölçüm farkı incelenmeli.
+
+## 2026-07-16 — `unmatched_players_blocking_scout_review` FAIL Kök Nedeni Bulundu ve Düzeltildi
+
+- Kök neden: `run_daily_pipeline.py`'deki gece koleksiyoncusu, **2025-26 sezonu** Transfermarkt kadrolarını toplarken `data/manual/transfermarkt_super_lig_clubs.json` dosyasını kullanıyordu — ama bu dosya 2026-27 sezonu başlarken GÜNCEL (yeni sezon) 18 kulüp listesine güncellenmişti (3 yeni takım: Çorum FK, Erzurumspor FK, Amed SFK; düşen 3 takım: Antalyaspor, Fatih Karagümrük, Kayserispor çıkarılmış). Sonuç: her gece "2025-26" kadro dosyası yanlışlıkla düşen 3 takımı İÇERMEDEN yeniden üretiliyordu, bu yüzden o kulüplerdeki yüksek kullanımlı 4 oyuncu (Kenneth Paal, Ivo Grbic, László Bénes, Berkay Özcan) hiçbir Transfermarkt adayıyla eşleşemiyor ve scout kuyruğunu bloke ediyordu.
+- Fix: yeni `data/manual/transfermarkt_super_lig_clubs_2025_2026.json` eklendi (gerçek 2025-26 sezonu 18 kulübü — 15 ortak takım + Antalyaspor/Karagümrük/Kayserispor, `club_id`/`slug` git geçmişinden geri alındı). `run_daily_pipeline.py`'deki 2025-26 koleksiyoncu komutu artık bu dosyayı kullanıyor (2026-27 koleksiyoncusu hâlâ güncel `transfermarkt_super_lig_clubs.json`'ı kullanmaya devam ediyor, değişmedi).
+- Yeni dosyayla `collect_transfermarkt_league_squads` çalıştırıldı: 18/18 kulüp başarıyla toplandı (önceden 15/18, 3 atlanmış), 424→817 oyuncu.
+- `enrich_players_with_transfermarkt` yeniden çalıştırıldı: doğrulanmış eşleşme `391→594`, in-scope kapsam `%75.2→%94.9`. 4 oyuncu için (yukarıdaki isimler) `data/manual/tm_player_manual_aliases.json`'a manuel alias eklendi (proje genelindeki 13 mevcut manuel alias ile aynı desen — `requires_network_verify: true`, ayrı izleniyor).
+- `build_transfermarkt_match_review_queue` + `build_data_quality_scorecard` yeniden üretildi: **`scout_blocking_unmatched: 4→0`**, `data_quality_scorecard` genel skoru `72.9→82.1`.
+- Doğrulama: `pytest` `58 passed, 3 failed` — aynı 3 önceden var olan ilgisiz hata (git stash ile karşılaştırılarak teyit edildi, regresyon yok).
+- Kalan öncelik: yeni eklenen 4 manuel alias bir sonraki ağ teyidinde (`manual_alias_pending_network_verification` toplamı artık `4`, önceki 13 ile birleşmedi çünkü review queue'da ayrı satırlarda listeleniyor) doğrulanmalı; yukarıdaki listedeki (2), (3), (4), (5) maddeleri hâlâ açık.

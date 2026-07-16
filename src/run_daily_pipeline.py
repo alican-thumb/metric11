@@ -99,7 +99,7 @@ NETWORK_COMMANDS = [
     ["python", "-m", "src.collect_transfermarkt_squad"],
     [
         "python", "-m", "src.collect_transfermarkt_league_squads",
-        "--clubs", "data/manual/transfermarkt_super_lig_clubs.json",
+        "--clubs", "data/manual/transfermarkt_super_lig_clubs_2025_2026.json",
         "--season-id", "2025",
         "--output-prefix", "transfermarkt_super_lig_squads_2025_2026",
         "--delay-seconds", "6",

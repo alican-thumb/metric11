@@ -1,21 +1,21 @@
 {
-  "warehouse": "/home/runner/work/metric11/metric11/data/processed/metric11_warehouse.sqlite",
-  "score": 70.5,
+  "warehouse": "/Users/alicanakyol/Documents/analiz/data/processed/metric11_warehouse.sqlite",
+  "score": 82.1,
   "table_counts": {
     "data_quality_findings": 6,
     "data_sources": 5,
     "goal_candidates": 298,
-    "match_cards": 0,
-    "match_goals": 0,
-    "match_lineups": 0,
+    "match_cards": 1428,
+    "match_goals": 812,
+    "match_lineups": 12732,
     "match_predictions": 29,
     "matches": 306,
-    "player_profiles": 0,
+    "player_profiles": 691,
     "players": 691,
-    "referee_profiles": 0,
-    "referees": 0,
+    "referee_profiles": 29,
+    "referees": 29,
     "team_profiles": 18,
-    "team_scout_blueprints": 0,
+    "team_scout_blueprints": 370,
     "teams": 18
   },
   "goal_backtest_summary": {
@@ -42,9 +42,9 @@
     {
       "area": "coverage",
       "metric": "matches_missing_referee",
-      "value": 306,
-      "status": "FAIL",
-      "priority": "MEDIUM",
+      "value": 0,
+      "status": "PASS",
+      "priority": "LOW",
       "recommendation": "Hakem eksikleri kart ve büyük maç risk modelini doğrudan zayıflatır."
     },
     {
@@ -63,18 +63,18 @@
       "area": "player_profiles",
       "metric": "tff_transfermarkt_in_scope_match_rate_pct",
       "value": {
-        "matched": 391,
-        "in_scope": 520,
-        "pct": 75.2
+        "matched": 594,
+        "in_scope": 626,
+        "pct": 94.9
       },
-      "status": "WATCH",
-      "priority": "HIGH",
+      "status": "PASS",
+      "priority": "LOW",
       "recommendation": "Snapshot kapsamındaki eşleşmeyen oyuncular alias/transfer inceleme kuyruğunda doğrulanmadan piyasa değeri veya pozisyon olarak kullanılmamalı."
     },
     {
       "area": "player_profiles",
       "metric": "manual_alias_pending_network_verification",
-      "value": 13,
+      "value": 4,
       "status": "WATCH",
       "priority": "HIGH",
       "recommendation": "Operasyonda kullanılan manuel pozisyon ve piyasa değeri eşlemeleri Transfermarkt profil bağlantısıyla doğrulanana kadar teyit bekliyor olarak gösterilmeli."
@@ -146,6 +146,18 @@
       "status": "WATCH",
       "priority": "MEDIUM",
       "recommendation": "Aday tipleri ayrı backtest edilmeli: primary, penaltı, duran top/defans ve yedek etki."
+    },
+    {
+      "area": "scouting",
+      "metric": "low_position_confidence_pct",
+      "value": {
+        "low_confidence": 27,
+        "total": 370,
+        "pct": 7.3
+      },
+      "status": "PASS",
+      "priority": "MEDIUM",
+      "recommendation": "Düşük güvenli scout adayları doğrudan pozisyon, boy, ayak ve aksiyon verisiyle zenginleştirilmeli."
     }
   ],
   "priorities": [
@@ -166,18 +178,6 @@
       "area": "player_profiles",
       "metric": "manual_alias_pending_network_verification",
       "recommendation": "Operasyonda kullanılan manuel pozisyon ve piyasa değeri eşlemeleri Transfermarkt profil bağlantısıyla doğrulanana kadar teyit bekliyor olarak gösterilmeli."
-    },
-    {
-      "priority": "HIGH",
-      "area": "player_profiles",
-      "metric": "tff_transfermarkt_in_scope_match_rate_pct",
-      "recommendation": "Snapshot kapsamındaki eşleşmeyen oyuncular alias/transfer inceleme kuyruğunda doğrulanmadan piyasa değeri veya pozisyon olarak kullanılmamalı."
-    },
-    {
-      "priority": "MEDIUM",
-      "area": "coverage",
-      "metric": "matches_missing_referee",
-      "recommendation": "Hakem eksikleri kart ve büyük maç risk modelini doğrudan zayıflatır."
     },
     {
       "priority": "MEDIUM",
@@ -247,17 +247,17 @@
     },
     {
       "candidate_type": "primary",
-      "rows": 103,
-      "hits": 11
+      "rows": 106,
+      "hits": 12
     },
     {
       "candidate_type": "impact_sub",
-      "rows": 28,
+      "rows": 26,
       "hits": 4
     },
     {
       "candidate_type": "primary+set_piece_defender",
-      "rows": 25,
+      "rows": 24,
       "hits": 0
     },
     {
@@ -266,5 +266,22 @@
       "hits": 2
     }
   ],
-  "scout_position_confidence": []
+  "scout_position_confidence": [
+    {
+      "position_confidence": "MEDIUM_DERIVED_ROLE",
+      "rows": 248
+    },
+    {
+      "position_confidence": "HIGH",
+      "rows": 59
+    },
+    {
+      "position_confidence": "HIGH_EXTERNAL_PROFILE",
+      "rows": 36
+    },
+    {
+      "position_confidence": "LOW_POSITION_UNVERIFIED",
+      "rows": 27
+    }
+  ]
 }

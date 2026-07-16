@@ -2,40 +2,33 @@
 
 - Risk: HIGH
 - Lisans durumu: VERIFY_TERMS_BEFORE_COMMERCIAL_USE
-- Toplanan kulüp: 15
-- Atlanan kulüp: 3
-- Oyuncu: 424
-- Toplam piyasa değeri: €1,318,950,000
-- Ortalama piyasa değeri: €3,322,292
-- Pozisyon grupları: {'GK': 53, 'DEF': 134, 'MID': 125, 'FWD': 112, 'UNKNOWN': 0}
+- Toplanan kulüp: 18
+- Atlanan kulüp: 0
+- Oyuncu: 817
+- Toplam piyasa değeri: €1,741,910,000
+- Ortalama piyasa değeri: €2,663,471
+- Pozisyon grupları: {'GK': 92, 'DEF': 253, 'MID': 231, 'FWD': 241, 'UNKNOWN': 0}
 
 ## Kulüpler
 
-- BEŞİKTAŞ A.Ş.: oyuncu=28, değer=€176,000,000, verified=True, mode=cache_only, url=https://www.transfermarkt.com/besiktas-jk/kader/verein/114/saison_id/2025
-- GALATASARAY A.Ş.: oyuncu=29, değer=€336,650,000, verified=True, mode=cache_only, url=https://www.transfermarkt.com/galatasaray-istanbul/kader/verein/141/saison_id/2025
-- FENERBAHÇE A.Ş.: oyuncu=28, değer=€240,800,000, verified=True, mode=cache_only, url=https://www.transfermarkt.com/fenerbahce-istanbul/kader/verein/36/saison_id/2025
-- TRABZONSPOR A.Ş.: oyuncu=27, değer=€129,550,000, verified=True, mode=cache_only, url=https://www.transfermarkt.com/trabzonspor/kader/verein/449/saison_id/2025
-- RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ: oyuncu=28, değer=€73,100,000, verified=True, mode=cache_only, url=https://www.transfermarkt.com/istanbul-basaksehir-fk/kader/verein/6890/saison_id/2025
-- CORENDON ALANYASPOR: oyuncu=26, değer=€33,800,000, verified=True, mode=cache_only, url=https://www.transfermarkt.com/alanyaspor/kader/verein/11282/saison_id/2025
-- SAMSUNSPOR A.Ş.: oyuncu=34, değer=€56,100,000, verified=True, mode=cache_only, url=https://www.transfermarkt.com/samsunspor/kader/verein/152/saison_id/2025
-- GÖZTEPE A.Ş.: oyuncu=27, değer=€65,750,000, verified=True, mode=cache_only, url=https://www.transfermarkt.com/goztepe/kader/verein/1467/saison_id/2025
-- TÜMOSAN KONYASPOR: oyuncu=30, değer=€39,300,000, verified=True, mode=cache_only, url=https://www.transfermarkt.com/konyaspor/kader/verein/2293/saison_id/2025
-- ÇAYKUR RİZESPOR A.Ş.: oyuncu=25, değer=€39,750,000, verified=True, mode=cache_only, url=https://www.transfermarkt.com/caykur-rizespor/kader/verein/126/saison_id/2025
-- GAZİANTEP FUTBOL KULÜBÜ A.Ş.: oyuncu=26, değer=€29,800,000, verified=True, mode=cache_only, url=https://www.transfermarkt.com/gaziantep-fk/kader/verein/2832/saison_id/2025
-- KASIMPAŞA A.Ş.: oyuncu=31, değer=€30,800,000, verified=True, mode=cache_only, url=https://www.transfermarkt.com/kasimpasa/kader/verein/10484/saison_id/2025
-- KOCAELİSPOR: oyuncu=25, değer=€24,150,000, verified=True, mode=cache_only, url=https://www.transfermarkt.com/kocaelispor/kader/verein/120/saison_id/2025
-- İKAS EYÜPSPOR: oyuncu=27, değer=€17,150,000, verified=True, mode=cache_only, url=https://www.transfermarkt.com/eyupspor/kader/verein/7160/saison_id/2025
-- GENÇLERBİRLİĞİ: oyuncu=33, değer=€26,250,000, verified=True, mode=cache_only, url=https://www.transfermarkt.com/genclerbirligi-ankara/kader/verein/820/saison_id/2025
-
-## Stale Koruma
-
-- Sebep: collector_produced_no_nonempty_clubs
-
-## Atlananlar
-
-- ÇORUM FK: cache_missing_or_empty
-- ERZURUMSPOR FK: cache_missing_or_empty
-- AMED SFK: cache_missing_or_empty
+- BEŞİKTAŞ A.Ş.: oyuncu=50, değer=€273,350,000, verified=True, mode=live, url=https://www.transfermarkt.com/besiktas-jk/kader/verein/114/saison_id/2025
+- GALATASARAY A.Ş.: oyuncu=44, değer=€363,750,000, verified=True, mode=live, url=https://www.transfermarkt.com/galatasaray-istanbul/kader/verein/141/saison_id/2025
+- FENERBAHÇE A.Ş.: oyuncu=50, değer=€328,700,000, verified=True, mode=live, url=https://www.transfermarkt.com/fenerbahce-istanbul/kader/verein/36/saison_id/2025
+- TRABZONSPOR A.Ş.: oyuncu=42, değer=€169,600,000, verified=True, mode=live, url=https://www.transfermarkt.com/trabzonspor/kader/verein/449/saison_id/2025
+- RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ: oyuncu=32, değer=€75,475,000, verified=True, mode=live, url=https://www.transfermarkt.com/istanbul-basaksehir-fk/kader/verein/6890/saison_id/2025
+- CORENDON ALANYASPOR: oyuncu=37, değer=€41,700,000, verified=True, mode=live, url=https://www.transfermarkt.com/alanyaspor/kader/verein/11282/saison_id/2025
+- SAMSUNSPOR A.Ş.: oyuncu=44, değer=€70,050,000, verified=True, mode=live, url=https://www.transfermarkt.com/samsunspor/kader/verein/152/saison_id/2025
+- GÖZTEPE A.Ş.: oyuncu=36, değer=€83,300,000, verified=True, mode=live, url=https://www.transfermarkt.com/goztepe/kader/verein/1467/saison_id/2025
+- TÜMOSAN KONYASPOR: oyuncu=48, değer=€41,975,000, verified=True, mode=live, url=https://www.transfermarkt.com/konyaspor/kader/verein/2293/saison_id/2025
+- ÇAYKUR RİZESPOR A.Ş.: oyuncu=35, değer=€48,025,000, verified=True, mode=live, url=https://www.transfermarkt.com/caykur-rizespor/kader/verein/126/saison_id/2025
+- GAZİANTEP FUTBOL KULÜBÜ A.Ş.: oyuncu=45, değer=€34,850,000, verified=True, mode=live, url=https://www.transfermarkt.com/gaziantep-fk/kader/verein/2832/saison_id/2025
+- KASIMPAŞA A.Ş.: oyuncu=60, değer=€34,850,000, verified=True, mode=live, url=https://www.transfermarkt.com/kasimpasa/kader/verein/10484/saison_id/2025
+- KOCAELİSPOR: oyuncu=39, değer=€28,500,000, verified=True, mode=live, url=https://www.transfermarkt.com/kocaelispor/kader/verein/120/saison_id/2025
+- İKAS EYÜPSPOR: oyuncu=62, değer=€39,825,000, verified=True, mode=live, url=https://www.transfermarkt.com/eyupspor/kader/verein/7160/saison_id/2025
+- GENÇLERBİRLİĞİ: oyuncu=48, değer=€28,210,000, verified=True, mode=live, url=https://www.transfermarkt.com/genclerbirligi-ankara/kader/verein/820/saison_id/2025
+- MISIRLI.COM.TR FATİH KARAGÜMRÜK: oyuncu=46, değer=€23,600,000, verified=True, mode=live, url=https://www.transfermarkt.com/fatih-karagumruk/kader/verein/6646/saison_id/2025
+- HESAP.COM ANTALYASPOR: oyuncu=48, değer=€26,275,000, verified=True, mode=live, url=https://www.transfermarkt.com/antalyaspor/kader/verein/589/saison_id/2025
+- ZECORNER KAYSERİSPOR: oyuncu=51, değer=€29,875,000, verified=True, mode=live, url=https://www.transfermarkt.com/kayserispor/kader/verein/3205/saison_id/2025
 
 ## Beşiktaş Tekil Rapor Formatı
 
@@ -43,38 +36,60 @@
 
 - Kaynak: https://www.transfermarkt.com/besiktas-jk/kader/verein/114/saison_id/2025
 - Risk: HIGH
-- Oyuncu: 28
-- Toplam piyasa değeri: €176,000,000
-- Ortalama piyasa değeri: €6,285,714
-- Pozisyon grupları: {'GK': 4, 'DEF': 9, 'MID': 7, 'FWD': 8, 'UNKNOWN': 0}
+- Oyuncu: 50
+- Toplam piyasa değeri: €273,350,000
+- Ortalama piyasa değeri: €5,942,391
+- Pozisyon grupları: {'GK': 5, 'DEF': 16, 'MID': 14, 'FWD': 15, 'UNKNOWN': 0}
 
 ## Oyuncular
 
-- Ersin Destanoğlu: Goalkeeper (GK), yaş=25, sözleşme=30/06/2026, değer=€4.00m
-- Devis Vásquez: Goalkeeper (GK), yaş=28, sözleşme=30/06/2026, değer=€1.50m
-- Emre Bilgin: Goalkeeper (GK), yaş=22, sözleşme=30/06/2027, değer=€400k
-- Emir Yaşar: Goalkeeper (GK), yaş=20, sözleşme=30/06/2028, değer=€100k
-- Emmanuel Agbadou: Centre-Back (DEF), yaş=28, sözleşme=30/06/2030, değer=€16.00m
-- Tiago Djaló: Centre-Back (DEF), yaş=26, sözleşme=30/06/2028, değer=€7.00m
-- Emirhan Topçu: Centre-Back (DEF), yaş=25, sözleşme=30/06/2028, değer=€7.00m
-- Yasin Özcan: Centre-Back (DEF), yaş=20, sözleşme=27/01/2027, değer=€5.00m
-- Felix Uduokhai: Centre-Back (DEF), yaş=28, sözleşme=30/06/2027, değer=€3.50m
-- Rıdvan Yılmaz: Left-Back (DEF), yaş=25, sözleşme=30/06/2028, değer=€5.00m
-- Amir Murillo: Right-Back (DEF), yaş=30, sözleşme=30/06/2028, değer=€7.00m
-- Taylan Bulut: Right-Back (DEF), yaş=20, sözleşme=30/06/2030, değer=€5.00m
-- Gökhan Sazdağı: Right-Back (DEF), yaş=31, sözleşme=30/06/2027, değer=€1.20m
-- Kristjan Asllani: Defensive Midfield (MID), yaş=24, sözleşme=30/06/2026, değer=€12.00m
-- Wilfred Ndidi: Defensive Midfield (MID), yaş=29, sözleşme=30/06/2028, değer=€8.00m
-- Kartal Yılmaz: Defensive Midfield (MID), yaş=25, sözleşme=30/06/2028, değer=€2.50m
-- Necip Uysal: Defensive Midfield (MID), yaş=35, sözleşme=30/06/2027, değer=€100k
-- Orkun Kökçü: Central Midfield (MID), yaş=25, sözleşme=30/06/2026, değer=€25.00m
-- Salih Uçan: Central Midfield (MID), yaş=32, sözleşme=30/06/2026, değer=€800k
-- Junior Olaitan: Attacking Midfield (MID), yaş=24, sözleşme=30/06/2029, değer=€7.00m
-- El Bilal Touré: Left Winger (FWD), yaş=24, sözleşme=30/06/2026, değer=€13.00m
-- Jota Silva: Left Winger (FWD), yaş=26, sözleşme=30/06/2026, değer=€10.00m
-- Devrim Şahin: Left Winger (FWD), yaş=19, sözleşme=30/06/2028, değer=€400k
-- Vaclav Cerny: Right Winger (FWD), yaş=28, sözleşme=30/06/2028, değer=€7.00m
-- Cengiz Ünder: Right Winger (FWD), yaş=28, sözleşme=30/06/2026, değer=€4.00m
-- Milot Rashica: Right Winger (FWD), yaş=29, sözleşme=30/06/2027, değer=€3.50m
-- Hyeon-gyu Oh: Centre-Forward (FWD), yaş=25, sözleşme=30/06/2029, değer=€15.00m
-- Mustafa Hekimoğlu: Centre-Forward (FWD), yaş=19, sözleşme=30/06/2028, değer=€5.00m
+- Ersin Destanoğlu: Goalkeeper (GK), yaş=25, sözleşme=Yok, değer=€4.00m
+- Devis Vásquez: Goalkeeper (GK), yaş=28, sözleşme=Yok, değer=€1.50m
+- Mert Günok: Goalkeeper (GK), yaş=37, sözleşme=Yok, değer=€500k
+- Emre Bilgin: Goalkeeper (GK), yaş=22, sözleşme=Yok, değer=€400k
+- Emir Yaşar: Goalkeeper (GK), yaş=20, sözleşme=Yok, değer=€100k
+- Emmanuel Agbadou: Centre-Back (DEF), yaş=29, sözleşme=Yok, değer=€16.00m
+- Tiago Djaló: Centre-Back (DEF), yaş=26, sözleşme=Yok, değer=€7.00m
+- Emirhan Topçu: Centre-Back (DEF), yaş=25, sözleşme=Yok, değer=€7.00m
+- Yasin Özcan: Centre-Back (DEF), yaş=20, sözleşme=Yok, değer=€5.00m
+- Felix Uduokhai: Centre-Back (DEF), yaş=28, sözleşme=Yok, değer=€3.50m
+- Tayyip Talha Sanuç: Centre-Back (DEF), yaş=26, sözleşme=Yok, değer=€1.50m
+- Gabriel Paulista: Centre-Back (DEF), yaş=35, sözleşme=Yok, değer=€500k
+- Emrecan Uzunhan: Centre-Back (DEF), yaş=25, sözleşme=Yok, değer=€500k
+- David Jurásek: Left-Back (DEF), yaş=25, sözleşme=Yok, değer=€5.00m
+- Rıdvan Yılmaz: Left-Back (DEF), yaş=25, sözleşme=Yok, değer=€5.00m
+- Emrecan Terzi: Left-Back (DEF), yaş=22, sözleşme=Yok, değer=€450k
+- Amir Murillo: Right-Back (DEF), yaş=30, sözleşme=Yok, değer=€7.00m
+- Taylan Bulut: Right-Back (DEF), yaş=20, sözleşme=Yok, değer=€5.00m
+- Gökhan Sazdağı: Right-Back (DEF), yaş=31, sözleşme=Yok, değer=€1.20m
+- Jonas Svensson: Right-Back (DEF), yaş=33, sözleşme=Yok, değer=€500k
+- Asım Efe Işık: Right-Back (DEF), yaş=18, sözleşme=Yok, değer=-
+- Kristjan Asllani: Defensive Midfield (MID), yaş=24, sözleşme=Yok, değer=€12.00m
+- Demir Ege Tıknaz: Defensive Midfield (MID), yaş=21, sözleşme=Yok, değer=€8.00m
+- Wilfred Ndidi: Defensive Midfield (MID), yaş=29, sözleşme=Yok, değer=€8.00m
+- Moatasem Al-Musrati: Defensive Midfield (MID), yaş=30, sözleşme=Yok, değer=€4.50m
+- Amir Hadziahmetovic: Defensive Midfield (MID), yaş=29, sözleşme=Yok, değer=€4.00m
+- Kartal Yılmaz: Defensive Midfield (MID), yaş=25, sözleşme=Yok, değer=€2.50m
+- Necip Uysal: Defensive Midfield (MID), yaş=35, sözleşme=Yok, değer=€100k
+- Orkun Kökçü: Central Midfield (MID), yaş=25, sözleşme=Yok, değer=€25.00m
+- Gedson Fernandes: Central Midfield (MID), yaş=27, sözleşme=Yok, değer=€16.00m
+- Salih Uçan: Central Midfield (MID), yaş=32, sözleşme=Yok, değer=€800k
+- Tayfur Bingöl: Central Midfield (MID), yaş=33, sözleşme=Yok, değer=€400k
+- Ernest Muci: Attacking Midfield (MID), yaş=25, sözleşme=Yok, değer=€11.00m
+- Junior Olaitan: Attacking Midfield (MID), yaş=24, sözleşme=Yok, değer=€7.00m
+- João Mário: Attacking Midfield (MID), yaş=33, sözleşme=Yok, değer=€1.50m
+- El Bilal Touré: Left Winger (FWD), yaş=24, sözleşme=Yok, değer=€13.00m
+- Jota Silva: Left Winger (FWD), yaş=26, sözleşme=Yok, değer=€10.00m
+- Devrim Şahin: Left Winger (FWD), yaş=19, sözleşme=Yok, değer=€400k
+- Ali Pağda: Left Winger (FWD), yaş=17, sözleşme=Yok, değer=-
+- Keny Arroyo: Right Winger (FWD), yaş=20, sözleşme=Yok, değer=€10.00m
+- Vaclav Cerny: Right Winger (FWD), yaş=28, sözleşme=Yok, değer=€7.00m
+- Cengiz Ünder: Right Winger (FWD), yaş=28, sözleşme=Yok, değer=€4.00m
+- Milot Rashica: Right Winger (FWD), yaş=30, sözleşme=Yok, değer=€3.50m
+- Rafa Silva: Second Striker (FWD), yaş=33, sözleşme=Yok, değer=€4.00m
+- Tammy Abraham: Centre-Forward (FWD), yaş=28, sözleşme=Yok, değer=€18.00m
+- Hyeon-gyu Oh: Centre-Forward (FWD), yaş=25, sözleşme=Yok, değer=€15.00m
+- Semih Kılıçsoy: Centre-Forward (FWD), yaş=20, sözleşme=Yok, değer=€11.00m
+- Mustafa Hekimoğlu: Centre-Forward (FWD), yaş=19, sözleşme=Yok, değer=€5.00m
+- Ahmet Sami Bircan: Centre-Forward (FWD), yaş=19, sözleşme=Yok, değer=-
+- Tuna Baran Demir: Centre-Forward (FWD), yaş=18, sözleşme=Yok, değer=-
