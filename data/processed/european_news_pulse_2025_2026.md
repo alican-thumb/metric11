@@ -1,15 +1,15 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-07-16T19:36:35.853149+00:00
-Toplam ilgili haber: 19
+Üretim zamanı: 2026-07-16T23:12:23.222355+00:00
+Toplam ilgili haber: 17
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
 - [TEŞEKKÜRLER MİGUEL CRESPO](https://ibfk.com.tr/haberler/tesekkurler-miguel-crespo) — Başakşehir Resmi Web · 7.7.2026 21:16:30 · turnuva=EL · kulüp=Başakşehir
+- [UEFA Avrupa Ligi'nde 2. tura yükselen ekipler belli oldu](https://www.aksam.com.tr/spor/uefa-avrupa-liginde-2-tura-yukselen-ekipler-belli-oldu/haber-1683356) — Aksam Spor · 2026-07-17T01:25:00+03:00 · turnuva=EL · kulüp=—
 - [Başakşehir’in UEFA Konferans Ligi’ndeki rakibi belli oldu](https://www.sabah.com.tr/spor/futbol/2026/07/16/basaksehirin-uefa-konferans-ligindeki-rakibi-belli-oldu) — Sabah Spor · 2026-07-16T20:23:36+03:00 · turnuva=ECL · kulüp=Başakşehir
 - [Başakşehir'in UEFA Konferans Ligi 2. eleme turundaki rakibi Inter Turku oldu](https://www.aa.com.tr/tr/spor/basaksehirin-uefa-konferans-ligi-2-eleme-turundaki-rakibi-inter-turku-oldu/4000654) — Anadolu Ajansı Spor · 2026-07-16T20:22:20+03:00 · turnuva=ECL · kulüp=Başakşehir
-- [Başakşehir'in Konferans Ligi elemelerindeki rakibi belli oldu](https://www.aksam.com.tr/spor/basaksehirin-konferans-ligi-elemelerindeki-rakibi-belli-oldu/haber-1683317) — Aksam Spor · 2026-07-16T20:06:00+03:00 · turnuva=ECL · kulüp=Başakşehir
 - [BEŞİKTAŞ-MIDTJYLLAND MAÇI NE ZAMAN? UEFA Avrupa Ligi Beşiktaş - Midtjylland Maçı Saat Kaçta, Hangi Kanalda? Kara Kartal'ın Avrupa Ligi Heyecanı Başlıyor!](https://www.cnnturk.com/spor/futbol/besiktas-midtjylland-maci-ne-zaman-uefa-avrupa-ligi-besiktas-midtjylland-maci-saat-kacta-hangi-kanalda-kara-kartalin-avrupa-3443328) — CNN Türk Spor · 2026-07-16T17:32:57+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [İşte Başakşehir'in Konferans Ligi'ndeki rakibi!](https://www.haberturk.com/rams-basaksehirin-uefa-konferans-ligindeki-rakibi-belli-oldu-3899016-spor) — Haberturk Spor · 2026-07-16T17:26:50+00:00 · turnuva=ECL · kulüp=Başakşehir
 - [Başakşehir'in UEFA Konferans Ligi'ndeki rakibi belli oldu!](https://www.hurriyet.com.tr/sporarena/basaksehirin-uefa-konferans-ligindeki-rakibi-belli-oldu-43242248) — Hürriyet Spor · 2026-07-16T17:25:09+00:00 · turnuva=ECL · kulüp=Başakşehir
@@ -22,5 +22,4 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Fenerbahçe'nin Şampiyonlar Ligi'ndeki muhtemel rakipleri belli oldu!](https://www.hurriyet.com.tr/sporarena/fenerbahcenin-sampiyonlar-ligindeki-muhtemel-rakipleri-belli-oldu-43241604) — Hürriyet Spor · 2026-07-16T08:41:45+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Cluj, Avrupa Ligi 1. Eleme Turu’nda Dinamo Kiev’i ağırlıyor! Maçın heyecanı canlı sohbet ile Misli’de](https://www.hurriyet.com.tr/sporarena/cluj-avrupa-ligi-1-eleme-turunda-dinamo-kievi-agirliyor-macin-heyecani-canli-sohbet-ile-mislide-43241602) — Hürriyet Spor · 2026-07-16T08:20:36+00:00 · turnuva=EL · kulüp=—
 - [Fenerbahçe'de Osayi-Samuel sürprizi yaşanıyor | Transfer hattı - NTVSpor](https://news.google.com/rss/articles/CBMipAFBVV95cUxPdmhuVzBRSGZqV3RBeHMwc1ZxZm5jRi03XzhmY1c0bENXYTVUNTI4dmlBa0ZyeDU3Y3RMalhmbkowYXR2MjA1aERiQ1JTU2l3NHFTVGZpWFJLRHpsamJRZ3lmQzBLNUczTXpiTEw3eUV0RVhHM2pPcEJkN2lleEgxUGhsSmIzUTNjQ24xQWNTVUNDRmhwU1lxc3R2ME1IRWdPczlieNIBqgFBVV95cUxNODJyRWU2OU5Yem8tY29NMDJ1NkxYaFF2UG1jaHZqcFNpTzdLdDVwQUlqOXJGdU85RkFJNWIzeGs1bGhWNmJPcjdUXzRnLUxPYllYckNRbEU1SEVBX1pvUGxSRWtBampGMkIzWk9GNnhBUTVCNW54WEZqU2VIREQ2ZlROemVXQ3BmakRSb3MwdkxHa280Q1NhbzFEbjJNbEJMcUJVY2xkN1owdw?oc=5) — NTVSpor · 2026-07-16T06:00:35+00:00 · turnuva=EL · kulüp=Fenerbahçe
-- [Fenerbahçe'de Osayi-Samuel sürprizi! "Geri dönmek istiyorum" - Fenerbahçe - Mynet](https://news.google.com/rss/articles/CBMimAFBVV95cUxOeDAtWndLdzZJWE1uUzU2UlNrM1F0OXo3ZzJlbU1EZGJGRExsTHpwSV82NUFwd0hhNEtRdTN2cHphOEsyeUp3WXRRUVJLc1Vja3IzLVE3S1M5clgwUDBqZF93S1pPRWVVQkZ4bjNFVWpZdG1EU2xpNVl1Nmo3RWo1djRLajVxLUpncVh0SU5zb3ZjTlVaZF94b9IBmwFBVV95cUxQNEFQVGVtUXJXSnJ6YjdOdzAwcFN6djV2WEZjZERsdUN2cFMtaXk2M3VQelAyWWlLWVJRTEtDRnAyck5ySVZmUFVycGVXZXRNZzZibVZ0NXZYUzF3OG10NFRUZlFIQnotamFSMGdkUWR6SHJSWFBpeUlPbUtISGtjbWZrOEdGb2RYX2RnYUJfUFRhdS1WQVNMWDlNSQ?oc=5) — Mynet · 2026-07-16T04:59:47+00:00 · turnuva=EL · kulüp=Fenerbahçe
 - [UEFA Avrupa Ligi'nde birinci eleme turu rövanş maçları yarın oynanacak](https://www.aa.com.tr/tr/spor/uefa-avrupa-liginde-birinci-eleme-turu-rovans-maclari-yarin-oynanacak/3998496) — Anadolu Ajansı Spor · 2026-07-15T09:49:10+03:00 · turnuva=EL · kulüp=—
