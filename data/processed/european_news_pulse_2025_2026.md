@@ -1,17 +1,18 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-07-16T06:34:37.440509+00:00
-Toplam ilgili haber: 9
+Üretim zamanı: 2026-07-16T08:35:08.514445+00:00
+Toplam ilgili haber: 10
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
 - [TEŞEKKÜRLER MİGUEL CRESPO](https://ibfk.com.tr/haberler/tesekkurler-miguel-crespo) — Başakşehir Resmi Web · 7.7.2026 21:16:30 · turnuva=EL · kulüp=Başakşehir
 - [FENERBAHÇE-GORNİK ZABRZE ŞAMPİYONLAR LİGİ 2. ÖN ELEME TURU MAÇI NE ZAMAN? Fenerbahçe Gornık Zabre Maç Biletleri Ne Zaman Satışa Çıkacak, Bilet Fiyatı Ne?](https://www.cnnturk.com/spor/futbol/fenerbahce-gornik-zabrze-sampiyonlar-ligi-2-on-eleme-turu-maci-ne-zaman-fenerbahce-gornik-zabre-mac-biletleri-ne-zaman-satisa-3442984) — CNN Türk Spor · 2026-07-16T09:27:40+00:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Cluj, Avrupa Ligi 1. Eleme Turu’nda Dinamo Kiev’i ağırlıyor! Maçın heyecanı canlı sohbet ile Misli’de](https://www.hurriyet.com.tr/sporarena/cluj-avrupa-ligi-1-eleme-turunda-dinamo-kievi-agirliyor-macin-heyecani-canli-sohbet-ile-mislide-43241602) — Hürriyet Spor · 2026-07-16T08:20:36+00:00 · turnuva=EL · kulüp=—
+- [Fenerbahçe'de Osayi-Samuel sürprizi - T24](https://news.google.com/rss/articles/CBMidEFVX3lxTE5PRmlvQWdBelJnUWV0STY5RllwUkoxVG1ZeE5QNGoyUEw1NVE4UGRMMkd1ajNJN1JMOXB3OXBRUGlsbTdZU2FkdW1TVHpfcFpvTHRwMXpEc1ZmMkZ0TkRSLXJzVFNLTmdYZFcwck51cVdQak85?oc=5) — T24 · 2026-07-16T07:01:00+00:00 · turnuva=EL · kulüp=Fenerbahçe
 - [Günün maç programı](https://www.haberturk.com/dunya-kupasi-mac-takvimi-bugun-mac-var-mi-16-temmuz-persembe-hangi-mac-hangi-kanalda-saat-kacta-3898808-spor) — Haberturk Spor · 2026-07-16T06:01:00+00:00 · turnuva=EL · kulüp=—
 - [Fenerbahçe'de Osayi-Samuel sürprizi yaşanıyor | Transfer hattı - NTVSpor](https://news.google.com/rss/articles/CBMipAFBVV95cUxPdmhuVzBRSGZqV3RBeHMwc1ZxZm5jRi03XzhmY1c0bENXYTVUNTI4dmlBa0ZyeDU3Y3RMalhmbkowYXR2MjA1aERiQ1JTU2l3NHFTVGZpWFJLRHpsamJRZ3lmQzBLNUczTXpiTEw3eUV0RVhHM2pPcEJkN2lleEgxUGhsSmIzUTNjQ24xQWNTVUNDRmhwU1lxc3R2ME1IRWdPczlieNIBqgFBVV95cUxNODJyRWU2OU5Yem8tY29NMDJ1NkxYaFF2UG1jaHZqcFNpTzdLdDVwQUlqOXJGdU85RkFJNWIzeGs1bGhWNmJPcjdUXzRnLUxPYllYckNRbEU1SEVBX1pvUGxSRWtBampGMkIzWk9GNnhBUTVCNW54WEZqU2VIREQ2ZlROemVXQ3BmakRSb3MwdkxHa280Q1NhbzFEbjJNbEJMcUJVY2xkN1owdw?oc=5) — NTVSpor · 2026-07-16T06:00:35+00:00 · turnuva=EL · kulüp=Fenerbahçe
 - [Fenerbahçe'de Osayi-Samuel sürprizi! "Geri dönmek istiyorum" - Fenerbahçe - Mynet](https://news.google.com/rss/articles/CBMimAFBVV95cUxOeDAtWndLdzZJWE1uUzU2UlNrM1F0OXo3ZzJlbU1EZGJGRExsTHpwSV82NUFwd0hhNEtRdTN2cHphOEsyeUp3WXRRUVJLc1Vja3IzLVE3S1M5clgwUDBqZF93S1pPRWVVQkZ4bjNFVWpZdG1EU2xpNVl1Nmo3RWo1djRLajVxLUpncVh0SU5zb3ZjTlVaZF94b9IBmwFBVV95cUxQNEFQVGVtUXJXSnJ6YjdOdzAwcFN6djV2WEZjZERsdUN2cFMtaXk2M3VQelAyWWlLWVJRTEtDRnAyck5ySVZmUFVycGVXZXRNZzZibVZ0NXZYUzF3OG10NFRUZlFIQnotamFSMGdkUWR6SHJSWFBpeUlPbUtISGtjbWZrOEdGb2RYX2RnYUJfUFRhdS1WQVNMWDlNSQ?oc=5) — Mynet · 2026-07-16T04:59:47+00:00 · turnuva=EL · kulüp=Fenerbahçe
 - [Devler Ligi'nde gecenin sonuçları!](https://www.haberturk.com/uefa-sampiyonlar-ligi-nde-gecenin-sonuclari-3898782-spor) — Haberturk Spor · 2026-07-15T21:52:55+00:00 · turnuva=CL · kulüp=—
-- [UEFA Şampiyonlar Ligi'nde birinci eleme turu rövanş maçları başladı](https://www.cnnturk.com/spor/futbol/uefa-sampiyonlar-liginde-birinci-eleme-turu-rovans-maclari-basladi-3442782) — CNN Türk Spor · 2026-07-15T10:10:52+00:00 · turnuva=CL · kulüp=—
 - [UEFA Avrupa Ligi'nde rövanş maçları yarın oynanacak](https://www.cnnturk.com/spor/futbol/uefa-avrupa-liginde-rovans-maclari-yarin-oynanacak-3442786) — CNN Türk Spor · 2026-07-15T10:10:20+00:00 · turnuva=EL · kulüp=—
 - [UEFA Avrupa Ligi'nde birinci eleme turu rövanş maçları yarın oynanacak](https://www.aa.com.tr/tr/spor/uefa-avrupa-liginde-birinci-eleme-turu-rovans-maclari-yarin-oynanacak/3998496) — Anadolu Ajansı Spor · 2026-07-15T09:49:10+03:00 · turnuva=EL · kulüp=—
