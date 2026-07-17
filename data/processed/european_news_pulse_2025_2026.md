@@ -1,14 +1,13 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-07-17T14:03:55.337224+00:00
-Toplam ilgili haber: 13
+Üretim zamanı: 2026-07-17T15:39:19.610896+00:00
+Toplam ilgili haber: 12
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
 - [TEŞEKKÜRLER MİGUEL CRESPO](https://ibfk.com.tr/haberler/tesekkurler-miguel-crespo) — Başakşehir Resmi Web · 7.7.2026 21:16:30 · turnuva=EL · kulüp=Başakşehir
 - [Dünya Kupası maç takvimi](https://www.haberturk.com/bugunun-mac-takvimi-dunya-kupasi-2026-bugun-mac-var-mi-17-temmuz-cuma-hangi-mac-hangi-kanalda-saat-kacta-3899069-spor) — Haberturk Spor · 2026-07-17T12:58:29+00:00 · turnuva=EL · kulüp=—
-- [Beşiktaş'ın Avrupa Ligi 3. Eleme Turu'nda muhtemel rakipleri belli oldu!](https://www.fotomac.com.tr/besiktas/2026/07/17/besiktasin-avrupa-ligi-3-eleme-turunda-muhtemel-rakipleri-belli-oldu) — Fotomaç · 2026-07-17T10:04:22+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [UEFA Konferans Ligi'nde 2. eleme turuna yükselen takımlar belli oldu](https://www.cnnturk.com/spor/futbol/uefa-konferans-liginde-2-eleme-turuna-yukselen-takimlar-belli-oldu-3443607) — CNN Türk Spor · 2026-07-17T09:04:57+00:00 · turnuva=ECL · kulüp=—
 - [UEFA Avrupa Ligi'nde 2. eleme turuna yükselen takımlar belli oldu](https://www.cnnturk.com/spor/futbol/uefa-avrupa-liginde-2-eleme-turuna-yukselen-takimlar-belli-oldu-3443578) — CNN Türk Spor · 2026-07-17T07:07:19+00:00 · turnuva=EL · kulüp=—
 - [Başakşehir'in UEFA Konferans Ligi 2. eleme turundaki rakibi Inter Turku oldu](https://www.aa.com.tr/tr/spor/basaksehirin-uefa-konferans-ligi-2-eleme-turundaki-rakibi-inter-turku-oldu/4000654) — Anadolu Ajansı Spor · 2026-07-16T20:22:20+03:00 · turnuva=ECL · kulüp=Başakşehir
