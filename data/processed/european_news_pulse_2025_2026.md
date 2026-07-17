@@ -1,12 +1,19 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-07-17T15:39:19.610896+00:00
-Toplam ilgili haber: 12
+Üretim zamanı: 2026-07-17T19:33:50.741686+00:00
+Toplam ilgili haber: 19
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
 - [TEŞEKKÜRLER MİGUEL CRESPO](https://ibfk.com.tr/haberler/tesekkurler-miguel-crespo) — Başakşehir Resmi Web · 7.7.2026 21:16:30 · turnuva=EL · kulüp=Başakşehir
+- [Fenerbahçe, Gornik Zabrze maçı hazırlıklarını sürdürdü!](https://www.sabah.com.tr/spor/futbol/2026/07/17/fenerbahce-gornik-zabrze-maci-hazirliklarini-surdurdu) — Sabah Spor · 2026-07-17T22:20:58+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe'nin UEFA kadrosu açıklandı! Mason Greenwood kararı...](https://www.sabah.com.tr/spor/futbol/2026/07/17/fenerbahcenin-uefa-kadrosu-aciklandi-mason-greenwood-karari) — Sabah Spor · 2026-07-17T20:06:30+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [UEFA listesi belli oldu! 3 yeni transfer kadroda yok](https://www.aksam.com.tr/spor/uefa-listesi-belli-oldu-3-yeni-transfer-kadroda-yok/haber-1683581) — Aksam Spor · 2026-07-17T19:38:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe'nin UEFA listesi belli oldu - Yeni transferler kadroda yer almadı - Transfermarkt](https://news.google.com/rss/articles/CBMiwAFBVV95cUxNYXB1dnN1clJIby1jN2ZLc05CTzZLeDBGX2diUVZuRk5hTjF4ZEFEek5Zel85UDhuMzBLQnZMc3VtdzdoSkV0T0hpcUNPNHJkRFU4YjhPWTItbzczbEQ4cXpFOXdqLUtrR3RQVmhremdTN3JOWmRLUkZjVnM1YTNhbzlxS0NsamZuUkUtdUExNEFOXy0yQWo3OEdaOElYZmJ4ZTlvdjQyaDlZb1VRc1FRa2F3VUtNRnJSVUpGMmZJZlc?oc=5) — Transfermarkt · 2026-07-17T17:52:32+00:00 · turnuva=— · kulüp=Fenerbahçe
+- [F.Bahçe'nin Gornik Zabrze kadrosu belli oldu!](https://www.haberturk.com/son-dakika-fenerbahce-nin-gornik-zabrze-maclari-kadrosu-belli-oldu-3899264-spor) — Haberturk Spor · 2026-07-17T16:59:43+00:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe'nin Gornik Zabrze maçlarının kadrosunu UEFA'ya bildirdi! Yeni transferler yok](https://www.hurriyet.com.tr/sporarena/fenerbahcenin-gornik-zabrze-maclarinin-kadrosunu-uefaya-bildirdi-yeni-transferler-yok-43243341) — Hürriyet Spor · 2026-07-17T16:51:00+00:00 · turnuva=— · kulüp=Fenerbahçe
+- [Fenerbahçe'nin Gornik Zabrze maçlarının kadrosunu UEFA'ya bildirdi! Yeni transferler yok - Hürriyet](https://news.google.com/rss/articles/CBMizAFBVV95cUxNaFNkSmUzTl9IOWI3ZmduQ3NQQ0ZBVFAwT2UxWGhCRGYyNGtWZjZEU09KbjZGbVF0RDktakZ3aHFSblgzUVVMa0VUeTl0U3J4NS1TMDVaTTVkMW0xTXVVbmllR3BqRVZmbUxBcEEzekJQN280bkJMVHJ4NFVjR0EtMW1NZU1ydHdpX1llUUpqdDNJOGNSQklzX29NOFQ4X19sZjU0Vml1OUFlbnRzaXZCRGh0MFVsSEtPbFd0WTVsWV9CbFc4MnI2QW5Vamk?oc=5) — Hürriyet · 2026-07-17T16:51:00+00:00 · turnuva=— · kulüp=Fenerbahçe
 - [Dünya Kupası maç takvimi](https://www.haberturk.com/bugunun-mac-takvimi-dunya-kupasi-2026-bugun-mac-var-mi-17-temmuz-cuma-hangi-mac-hangi-kanalda-saat-kacta-3899069-spor) — Haberturk Spor · 2026-07-17T12:58:29+00:00 · turnuva=EL · kulüp=—
 - [UEFA Konferans Ligi'nde 2. eleme turuna yükselen takımlar belli oldu](https://www.cnnturk.com/spor/futbol/uefa-konferans-liginde-2-eleme-turuna-yukselen-takimlar-belli-oldu-3443607) — CNN Türk Spor · 2026-07-17T09:04:57+00:00 · turnuva=ECL · kulüp=—
 - [UEFA Avrupa Ligi'nde 2. eleme turuna yükselen takımlar belli oldu](https://www.cnnturk.com/spor/futbol/uefa-avrupa-liginde-2-eleme-turuna-yukselen-takimlar-belli-oldu-3443578) — CNN Türk Spor · 2026-07-17T07:07:19+00:00 · turnuva=EL · kulüp=—
