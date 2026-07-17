@@ -1,14 +1,16 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-07-17T05:25:13.279386+00:00
-Toplam ilgili haber: 19
+Üretim zamanı: 2026-07-17T06:36:35.946032+00:00
+Toplam ilgili haber: 22
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
 - [TEŞEKKÜRLER MİGUEL CRESPO](https://ibfk.com.tr/haberler/tesekkurler-miguel-crespo) — Başakşehir Resmi Web · 7.7.2026 21:16:30 · turnuva=EL · kulüp=Başakşehir
-- [Konferans Ligi'nde 2. tura yükselen takımlar belli oldu](https://www.aksam.com.tr/spor/konferans-liginde-2-tura-yukselen-takimlar-belli-oldu/haber-1683379) — Aksam Spor · 2026-07-17T07:35:00+03:00 · turnuva=ECL · kulüp=—
+- [UEFA Avrupa Ligi'nde 1. eleme turu rövanş maçları oynandı](https://www.aksam.com.tr/spor/uefa-avrupa-liginde-1-eleme-turu-rovans-maclari-oynandi/haber-1683408) — Aksam Spor · 2026-07-17T09:06:00+03:00 · turnuva=EL · kulüp=—
+- [UEFA Konferans Ligi'nde 2. eleme turuna yükselen takımlar belli oldu](https://www.cnnturk.com/spor/futbol/uefa-konferans-liginde-2-eleme-turuna-yukselen-takimlar-belli-oldu-3443607) — CNN Türk Spor · 2026-07-17T09:04:57+00:00 · turnuva=ECL · kulüp=—
 - [UEFA Avrupa Ligi'nde 2. eleme turuna yükselen takımlar belli oldu](https://www.cnnturk.com/spor/futbol/uefa-avrupa-liginde-2-eleme-turuna-yukselen-takimlar-belli-oldu-3443578) — CNN Türk Spor · 2026-07-17T07:07:19+00:00 · turnuva=EL · kulüp=—
+- [Dünya Kupası maç takvimi](https://www.haberturk.com/bugunun-mac-takvimi-dunya-kupasi-2026-bugun-mac-var-mi-17-temmuz-cuma-hangi-mac-hangi-kanalda-saat-kacta-3899069-spor) — Haberturk Spor · 2026-07-17T05:23:06+00:00 · turnuva=EL · kulüp=—
 - [RAMS Başakşehir’in rakibi Inter Turku oldu](https://www.fotomac.com.tr/basaksehir/2026/07/16/rams-basaksehirin-rakibi-inter-turku-oldu) — Fotomaç · 2026-07-17T01:23:46+03:00 · turnuva=ECL · kulüp=Başakşehir
 - [Fenerbahçe-Gornik Zabrze maçını Litvanyalı hakem Manfredas Lukjancukas yönetecek.](https://www.fotomac.com.tr/fenerbahce/2026/07/16/fenerbahce-gornik-zabrze-macini-litvanyali-hakem-manfredas-lukjancukas-yonetecek) — Fotomaç · 2026-07-17T01:23:18+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Başakşehir’in UEFA Konferans Ligi’ndeki rakibi belli oldu](https://www.sabah.com.tr/spor/futbol/2026/07/16/basaksehirin-uefa-konferans-ligindeki-rakibi-belli-oldu) — Sabah Spor · 2026-07-16T20:23:36+03:00 · turnuva=ECL · kulüp=Başakşehir
@@ -24,4 +26,5 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Fenerbahçe'ye Litvanyalı hakem!](https://www.haberturk.com/fenerbahce-gornik-zarbze-macinin-hakemi-manfredas-lukjancukas-3898935-spor) — Haberturk Spor · 2026-07-16T12:03:20+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe'nin Şampiyonlar Ligi'ndeki muhtemel rakipleri belli oldu!](https://www.hurriyet.com.tr/sporarena/fenerbahcenin-sampiyonlar-ligindeki-muhtemel-rakipleri-belli-oldu-43241604) — Hürriyet Spor · 2026-07-16T08:41:45+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Cluj, Avrupa Ligi 1. Eleme Turu’nda Dinamo Kiev’i ağırlıyor! Maçın heyecanı canlı sohbet ile Misli’de](https://www.hurriyet.com.tr/sporarena/cluj-avrupa-ligi-1-eleme-turunda-dinamo-kievi-agirliyor-macin-heyecani-canli-sohbet-ile-mislide-43241602) — Hürriyet Spor · 2026-07-16T08:20:36+00:00 · turnuva=EL · kulüp=—
+- [Fenerbahçe'de Osayi-Samuel sürprizi yaşanıyor | Transfer hattı - NTVSpor](https://news.google.com/rss/articles/CBMipAFBVV95cUxPdmhuVzBRSGZqV3RBeHMwc1ZxZm5jRi03XzhmY1c0bENXYTVUNTI4dmlBa0ZyeDU3Y3RMalhmbkowYXR2MjA1aERiQ1JTU2l3NHFTVGZpWFJLRHpsamJRZ3lmQzBLNUczTXpiTEw3eUV0RVhHM2pPcEJkN2lleEgxUGhsSmIzUTNjQ24xQWNTVUNDRmhwU1lxc3R2ME1IRWdPczlieNIBqgFBVV95cUxNODJyRWU2OU5Yem8tY29NMDJ1NkxYaFF2UG1jaHZqcFNpTzdLdDVwQUlqOXJGdU85RkFJNWIzeGs1bGhWNmJPcjdUXzRnLUxPYllYckNRbEU1SEVBX1pvUGxSRWtBampGMkIzWk9GNnhBUTVCNW54WEZqU2VIREQ2ZlROemVXQ3BmakRSb3MwdkxHa280Q1NhbzFEbjJNbEJMcUJVY2xkN1owdw?oc=5) — NTVSpor · 2026-07-16T06:00:35+00:00 · turnuva=EL · kulüp=Fenerbahçe
 - [UEFA Avrupa Ligi'nde birinci eleme turu rövanş maçları yarın oynanacak](https://www.aa.com.tr/tr/spor/uefa-avrupa-liginde-birinci-eleme-turu-rovans-maclari-yarin-oynanacak/3998496) — Anadolu Ajansı Spor · 2026-07-15T09:49:10+03:00 · turnuva=EL · kulüp=—

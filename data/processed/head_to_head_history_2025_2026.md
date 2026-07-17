@@ -1,8 +1,8 @@
 # Kafa Kafaya (Head-to-Head) Beraberlik Geçmişi
 
-Üretim zamanı: 2026-07-16T06:31:07.109105+00:00
-Toplanan takım çifti: 136
-Veri bulunan çift: 122
+Üretim zamanı: 2026-07-17T06:32:51.300290+00:00
+Toplanan takım çifti: 153
+Veri bulunan çift: 127
 
 ## Beraberlik Oranı En Yüksek Çiftler
 
@@ -14,8 +14,10 @@ Veri bulunan çift: 122
 - KASIMPAŞA A.Ş. vs KOCAELİSPOR: 4 maç, beraberlik oranı %50 (2 beraberlik)
 - KOCAELİSPOR vs MISIRLI.COM.TR FATİH KARAGÜMRÜK: 6 maç, beraberlik oranı %50 (3 beraberlik)
 - CORENDON ALANYASPOR vs GÖZTEPE A.Ş.: 17 maç, beraberlik oranı %47 (8 beraberlik)
+- SAMSUNSPOR A.Ş. vs TÜMOSAN KONYASPOR: 9 maç, beraberlik oranı %44 (4 beraberlik)
 - GAZİANTEP FUTBOL KULÜBÜ A.Ş. vs ZECORNER KAYSERİSPOR: 16 maç, beraberlik oranı %44 (7 beraberlik)
 - GÖZTEPE A.Ş. vs ZECORNER KAYSERİSPOR: 14 maç, beraberlik oranı %43 (6 beraberlik)
+- RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ vs İKAS EYÜPSPOR: 7 maç, beraberlik oranı %43 (3 beraberlik)
 - BEŞİKTAŞ A.Ş. vs RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ: 29 maç, beraberlik oranı %41 (12 beraberlik)
 - CORENDON ALANYASPOR vs GENÇLERBİRLİĞİ: 10 maç, beraberlik oranı %40 (4 beraberlik)
 - FENERBAHÇE A.Ş. vs GÖZTEPE A.Ş.: 15 maç, beraberlik oranı %40 (6 beraberlik)
@@ -24,5 +26,3 @@ Veri bulunan çift: 122
 - GÖZTEPE A.Ş. vs İKAS EYÜPSPOR: 8 maç, beraberlik oranı %38 (3 beraberlik)
 - CORENDON ALANYASPOR vs ÇAYKUR RİZESPOR A.Ş.: 19 maç, beraberlik oranı %37 (7 beraberlik)
 - GENÇLERBİRLİĞİ vs TÜMOSAN KONYASPOR: 19 maç, beraberlik oranı %37 (7 beraberlik)
-- GALATASARAY A.Ş. vs HESAP.COM ANTALYASPOR: 30 maç, beraberlik oranı %37 (11 beraberlik)
-- BEŞİKTAŞ A.Ş. vs TRABZONSPOR A.Ş.: 33 maç, beraberlik oranı %36 (12 beraberlik)

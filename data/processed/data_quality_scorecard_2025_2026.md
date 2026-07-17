@@ -10,7 +10,7 @@
 | coverage | season_match_rows | 306 | ✓ | Düşük | Sezon kapsamı 306 maç civarında kalmalı; düşüş olursa collector/parser kontrol edilmeli. |
 | coverage | matches_missing_referee | 306 | ✗ Sorun | Orta | Hakem eksikleri kart ve büyük maç risk modelini doğrudan zayıflatır. |
 | player_profiles | players_missing_age_profile | missing=0, total=691, missing_pct=0.0 | ✓ | Düşük | Yaş/profil kapsamı scout ve kontrat fırsatı skorunun temel girdisi. |
-| player_profiles | tff_transfermarkt_in_scope_match_rate_pct | matched=594, in_scope=626, pct=94.9 | ✓ | Düşük | Snapshot kapsamındaki eşleşmeyen oyuncular alias/transfer inceleme kuyruğunda doğrulanmadan piyasa değeri veya pozisyon olarak kullanılmamalı. |
+| player_profiles | tff_transfermarkt_in_scope_match_rate_pct | matched=592, in_scope=626, pct=94.6 | ✓ | Düşük | Snapshot kapsamındaki eşleşmeyen oyuncular alias/transfer inceleme kuyruğunda doğrulanmadan piyasa değeri veya pozisyon olarak kullanılmamalı. |
 | player_profiles | manual_alias_pending_network_verification | 4 | ⚠ İzle | Yüksek | Operasyonda kullanılan manuel pozisyon ve piyasa değeri eşlemeleri Transfermarkt profil bağlantısıyla doğrulanana kadar teyit bekliyor olarak gösterilmeli. |
 | scouting | unmatched_players_blocking_scout_review | 0 | ✓ | Düşük | Scout kuyruğunu bloke eden oyuncular için aynı kulüp Transfermarkt adı veya resmi profil doğrulanmalı; doğrulanmadan rol önerisi yayınlanmamalı. |
 | model | besiktas_display_prediction_accuracy_pct | correct=16, total=29, pct=55.2 | ⚠ İzle | Yüksek | Ekran ayarı aynı sezonda geliştirildi; yeni sezon veya ayrılmış sezonda sabit kurallarla doğrulanmadan genel başarı iddiası yapılmamalı. |
