@@ -33,7 +33,7 @@
 - 19.10.2025 - 17:00 | CORENDON ALANYASPOR - GÖZTEPE A.Ş. | skor 1-0 | tahmin=X gerçek=Ev | risk=77 | neden=draw_probability_high, xg_margin_watch, top_draw_scoreline, probability_margin_narrow
 - 20.10.2025 - 20:00 | İKAS EYÜPSPOR - KASIMPAŞA A.Ş. | skor 2-0 | tahmin=Dep gerçek=Ev | risk=66 | neden=xg_margin_narrow, top_draw_scoreline, probability_margin_narrow, strength_edge_narrow
 - 22.10.2025 - 20:00 | TÜMOSAN KONYASPOR - BEŞİKTAŞ A.Ş. | skor 0-2 | tahmin=Dep gerçek=Dep | risk=85 | neden=xg_margin_very_narrow, top_draw_scoreline, probability_margin_very_narrow, strength_edge_very_narrow
-- 22.10.2025 - 20:00 | ÇAYKUR RİZESPOR A.Ş. - RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ | skor 0-0 | tahmin=Ev gerçek=X | risk=50 | neden=draw_probability_watch, xg_margin_watch, top_draw_scoreline, strength_edge_very_narrow
+- 22.10.2025 - 20:00 | ÇAYKUR RİZESPOR A.Ş. - RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ | skor 0-0 | tahmin=Ev gerçek=X | risk=58 | neden=draw_probability_live, xg_margin_watch, top_draw_scoreline, strength_edge_very_narrow
 - 24.10.2025 - 20:00 | MISIRLI.COM.TR FATİH KARAGÜMRÜK - ZECORNER KAYSERİSPOR | skor 2-2 | tahmin=Ev gerçek=X | risk=56 | neden=draw_probability_watch, xg_margin_watch, top_draw_scoreline, probability_margin_watch
 - 25.10.2025 - 17:00 | KOCAELİSPOR - CORENDON ALANYASPOR | skor 2-0 | tahmin=Dep gerçek=Ev | risk=67 | neden=xg_margin_very_narrow, top_draw_scoreline, probability_margin_narrow, low_confidence_side_pick
 - 26.10.2025 - 14:30 | HESAP.COM ANTALYASPOR - RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ | skor 0-4 | tahmin=Dep gerçek=Dep | risk=100 | neden=draw_probability_watch, xg_margin_very_narrow, top_draw_scoreline, probability_margin_very_narrow
@@ -42,7 +42,7 @@
 - 27.10.2025 - 20:00 | SAMSUNSPOR A.Ş. - ÇAYKUR RİZESPOR A.Ş. | skor 1-1 | tahmin=Ev gerçek=X | risk=52 | neden=draw_probability_watch, xg_margin_watch, top_draw_scoreline, probability_margin_watch
 - 27.10.2025 - 20:00 | GAZİANTEP FUTBOL KULÜBÜ A.Ş. - FENERBAHÇE A.Ş. | skor 0-4 | tahmin=Dep gerçek=Dep | risk=70 | neden=xg_margin_narrow, top_draw_scoreline, probability_margin_narrow, strength_edge_very_narrow
 - 31.10.2025 - 20:00 | RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ - KOCAELİSPOR | skor 1-0 | tahmin=Ev gerçek=Ev | risk=50 | neden=draw_probability_watch, xg_margin_watch, top_draw_scoreline, strength_edge_very_narrow
-- 2.11.2025 - 14:30 | TÜMOSAN KONYASPOR - SAMSUNSPOR A.Ş. | skor 1-3 | tahmin=Dep gerçek=Dep | risk=42 | neden=xg_margin_watch, top_draw_scoreline, probability_margin_watch, strength_edge_narrow
+- 2.11.2025 - 14:30 | TÜMOSAN KONYASPOR - SAMSUNSPOR A.Ş. | skor 1-3 | tahmin=Dep gerçek=Dep | risk=66 | neden=draw_probability_live, xg_margin_watch, top_draw_scoreline, probability_margin_watch
 - 2.11.2025 - 17:00 | ZECORNER KAYSERİSPOR - KASIMPAŞA A.Ş. | skor 3-2 | tahmin=Dep gerçek=Ev | risk=75 | neden=xg_margin_very_narrow, top_draw_scoreline, probability_margin_very_narrow, low_confidence_side_pick
 - 2.11.2025 - 20:00 | BEŞİKTAŞ A.Ş. - FENERBAHÇE A.Ş. | skor 2-3 | tahmin=Dep gerçek=Dep | risk=91 | neden=draw_probability_watch, xg_margin_very_narrow, top_draw_scoreline, probability_margin_very_narrow
 - 3.11.2025 - 20:00 | CORENDON ALANYASPOR - GAZİANTEP FUTBOL KULÜBÜ A.Ş. | skor 0-0 | tahmin=Dep gerçek=X | risk=66 | neden=xg_margin_narrow, top_draw_scoreline, probability_margin_narrow, strength_edge_narrow
@@ -61,7 +61,7 @@
 - 25.01.2026 - 20:00 | FENERBAHÇE A.Ş. - GÖZTEPE A.Ş. | skor 1-1 | tahmin=Ev | risk=22 | xG=1.95-1.16 | draw_p=0.255
 - 26.01.2026 - 20:00 | İKAS EYÜPSPOR - BEŞİKTAŞ A.Ş. | skor 2-2 | tahmin=Dep | risk=6 | xG=1.11-1.84 | draw_p=0.219
 - 30.01.2026 - 20:02 | HESAP.COM ANTALYASPOR - TRABZONSPOR A.Ş. | skor 1-1 | tahmin=Dep | risk=6 | xG=1.21-1.86 | draw_p=0.228
-- 31.01.2026 - 17:00 | RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ - ÇAYKUR RİZESPOR A.Ş. | skor 2-2 | tahmin=Ev | risk=0 | xG=2.06-1.22 | draw_p=0.211
+- 31.01.2026 - 17:00 | RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ - ÇAYKUR RİZESPOR A.Ş. | skor 2-2 | tahmin=Ev | risk=0 | xG=2.06-1.22 | draw_p=0.227
 - 8.02.2026 - 20:00 | BEŞİKTAŞ A.Ş. - CORENDON ALANYASPOR | skor 2-2 | tahmin=Ev | risk=6 | xG=1.75-1.02 | draw_p=0.248
 - 15.02.2026 - 17:00 | GÖZTEPE A.Ş. - ZECORNER KAYSERİSPOR | skor 0-0 | tahmin=Ev | risk=14 | xG=1.68-0.83 | draw_p=0.276
 - 23.02.2026 - 20:00 | FENERBAHÇE A.Ş. - KASIMPAŞA A.Ş. | skor 1-1 | tahmin=Ev | risk=0 | xG=2.02-0.67 | draw_p=0.177

@@ -7,7 +7,7 @@
 - 3+ role yayılan oyuncu: 0
 - Pozisyon matrisi adayı: 105
 - Blueprint güven dağılımı: {'MEDIUM_DERIVED_ROLE': 275, 'HIGH_EXTERNAL_PROFILE': 36, 'HIGH': 59}
-- Pozisyon matrisi güven dağılımı: {'HIGH': 102, 'DERIVED': 3}
+- Pozisyon matrisi güven dağılımı: {'HIGH': 101, 'DERIVED': 4}
 - Sonraki öncelik: Düşük güvenli yayın adayı kalmadı; sıradaki doğrulama TFF/Transfermarkt eşleşmeyen yüksek kullanımlı oyuncu kuyruğudur.
 
 ## Düşük Güven İnceleme Kuyruğu

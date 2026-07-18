@@ -667,8 +667,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.429,
-    "draw_probability": 0.278,
-    "opponent_win_probability": 0.294,
+    "draw_probability": 0.28,
+    "opponent_win_probability": 0.292,
     "expected_goals_for": 1.28,
     "expected_goals_against": 1.05,
     "top_scorelines": [
@@ -735,7 +735,7 @@
       "raw_result": "target_win",
       "final_result": "target_win",
       "probability": 0.429,
-      "margin": 0.135,
+      "margin": 0.137,
       "adjustment": "raw_unvalidated_team",
       "label": "TRABZONSPOR A.Ş. kazanır",
       "raw_label": "TRABZONSPOR A.Ş. kazanır",
@@ -747,19 +747,21 @@
     "availability_missing_count": 0,
     "strength_edge": 0.094,
     "draw_calibration": {
-      "lift": 0.14,
+      "lift": 0.175,
       "risk_level": "HIGH",
       "reasons": [
         "xG farkı dar",
         "orta gol bandı",
         "son formda beraberlik eğilimi",
-        "genel düşük xG ortamı"
+        "genel düşük xG ortamı",
+        "h2h_beraberlik_geçmişi"
       ]
     },
     "head_to_head": {
-      "available": false,
-      "matches": 0,
-      "draw_rate": null
+      "available": true,
+      "matches": 10,
+      "draw_rate": 0.3,
+      "last_meeting_date": "2026-02-07T17:00:00+00:00"
     },
     "draw_risk": {
       "score": 89,

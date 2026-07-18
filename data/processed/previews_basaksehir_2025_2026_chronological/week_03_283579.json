@@ -616,8 +616,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.293,
-    "draw_probability": 0.255,
-    "opponent_win_probability": 0.452,
+    "draw_probability": 0.256,
+    "opponent_win_probability": 0.451,
     "expected_goals_for": 1.05,
     "expected_goals_against": 1.63,
     "top_scorelines": [
@@ -666,7 +666,7 @@
     },
     "recommended_call": {
       "result": "opponent_win",
-      "probability": 0.452,
+      "probability": 0.451,
       "scoreline": "1-1",
       "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "action_label": "Korumalı taraf tahmini",
@@ -682,7 +682,7 @@
     "display_prediction": {
       "raw_result": "opponent_win",
       "final_result": "opponent_win",
-      "probability": 0.452,
+      "probability": 0.451,
       "margin": 0.158,
       "adjustment": "raw_unvalidated_team",
       "label": "ÇAYKUR RİZESPOR A.Ş. kazanır",
@@ -704,9 +704,10 @@
       ]
     },
     "head_to_head": {
-      "available": false,
-      "matches": 0,
-      "draw_rate": null
+      "available": true,
+      "matches": 22,
+      "draw_rate": 0.273,
+      "last_meeting_date": "2026-01-31T14:00:00+00:00"
     },
     "draw_risk": {
       "score": 59,

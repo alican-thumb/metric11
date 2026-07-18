@@ -1,13 +1,13 @@
 # Lig Geneli Poisson/Elo MVP Backtest
 
 - Test edilen maç: 258
-- Doğru tahmin: 141 (%55)
+- Doğru tahmin: 142 (%55)
 - Gerçek dağılım: {'home': 111, 'draw': 76, 'away': 71}
-- Tahmin dağılımı: {'home': 143, 'draw': 19, 'away': 96}
+- Tahmin dağılımı: {'home': 143, 'draw': 20, 'away': 95}
 - Ortalama en yüksek olasılık: 0.487
-- Brier skoru: 0.601
+- Brier skoru: 0.6
 - Log loss: 1.005
-- Güven kırılımı: {'HIGH': {'matches': 88, 'accuracy': 0.636}, 'MEDIUM': {'matches': 86, 'accuracy': 0.558}, 'LOW': {'matches': 84, 'accuracy': 0.44}}
+- Güven kırılımı: {'HIGH': {'matches': 89, 'accuracy': 0.64}, 'MEDIUM': {'matches': 85, 'accuracy': 0.553}, 'LOW': {'matches': 84, 'accuracy': 0.452}}
 
 ## Son 40 Tahmin
 
