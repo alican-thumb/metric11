@@ -10,7 +10,7 @@
 | Model | Accuracy | Doğru | Draw recall | Draw precision | Brier | Log loss | Yüksek güvenli hata | Tahmin dağılımı |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
 | poisson_only | %51.2 | 132/258 | %0.0 | %0.0 | 0.617 | 1.03 | 32 | {'home': 156, 'away': 102} |
-| current_hybrid | %50.4 | 130/258 | %0.0 | %0.0 | 0.61 | 1.019 | 41 | {'home': 152, 'away': 106} |
+| current_hybrid | %50.4 | 130/258 | %0.0 | %0.0 | 0.609 | 1.016 | 40 | {'home': 152, 'away': 106} |
 | recent_form_edge | %48.4 | 125/258 | %27.6 | %43.8 | 0.631 | 1.047 | 24 | {'away': 112, 'draw': 48, 'home': 98} |
 | points_per_match_edge | %48.1 | 124/258 | %27.6 | %42.0 | 0.627 | 1.041 | 23 | {'away': 106, 'home': 102, 'draw': 50} |
 | elo_only | %44.2 | 114/258 | %7.9 | %15.8 | 0.618 | 1.028 | 29 | {'home': 173, 'draw': 38, 'away': 47} |

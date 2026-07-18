@@ -64,7 +64,7 @@
 
 <ul>
 <li>Ambar: <code>/Users/alicanakyol/Documents/analiz/data/processed/metric11_warehouse.sqlite</code></li>
-<li>Genel skor: 82.1/100</li>
+<li>Genel skor: 85.4/100</li>
 </ul>
 
 <h2>Kontroller</h2>
@@ -128,7 +128,7 @@
 <tr>
 <td>model</td>
 <td>besiktas_display_prediction_accuracy_pct</td>
-<td>correct=16, total=29, pct=55.2</td>
+<td>correct=19, total=29, pct=65.5</td>
 <td>⚠ İzle</td>
 <td>Yüksek</td>
 <td>Ekran ayarı aynı sezonda geliştirildi; yeni sezon veya ayrılmış sezonda sabit kurallarla doğrulanmadan genel başarı iddiası yapılmamalı.</td>
@@ -136,15 +136,15 @@
 <tr>
 <td>model</td>
 <td>draw_recall_pct</td>
-<td>draw_predicted=1, draw_total=9, pct=11.1</td>
-<td>✗ Sorun</td>
+<td>draw_predicted=2, draw_total=9, pct=22.2</td>
+<td>⚠ İzle</td>
 <td>Yüksek</td>
 <td>Beraberlik sadece çok yüksek risk ve dar olasılık farkında ekran tahminine çekilmeli; diğer durumlarda korumalı senaryo dili kullanılmalı.</td>
 </tr>
 <tr>
 <td>calibration</td>
 <td>wrong_predictions_with_high_confidence_pct</td>
-<td>wrong_high_confidence=3, wrong_total=13, pct=23.1</td>
+<td>wrong_high_confidence=1, wrong_total=10, pct=10.0</td>
 <td>✓</td>
 <td>Orta</td>
 <td>Yüksek güvenli hatalarda xG farkı, büyük maç ve beraberlik risk bayrakları güveni aşağı çekmeli.</td>
@@ -168,7 +168,7 @@
 <tr>
 <td>scouting</td>
 <td>low_position_confidence_pct</td>
-<td>low_confidence=27, total=370, pct=7.3</td>
+<td>low_confidence=0, total=370, pct=0.0</td>
 <td>✓</td>
 <td>Orta</td>
 <td>Düşük güvenli scout adayları doğrudan pozisyon, boy, ayak ve aksiyon verisiyle zenginleştirilmeli.</td>
@@ -188,15 +188,14 @@
 <h2>Tahmin Karışıklık Matrisi</h2>
 
 <ul>
-<li>tahmin=draw gerçek=draw: 1 maç</li>
-<li>tahmin=draw gerçek=opponent_win: 2 maç</li>
-<li>tahmin=draw gerçek=target_win: 1 maç</li>
-<li>tahmin=opponent_win gerçek=draw: 2 maç</li>
-<li>tahmin=opponent_win gerçek=opponent_win: 3 maç</li>
+<li>tahmin=draw gerçek=draw: 2 maç</li>
+<li>tahmin=draw gerçek=opponent_win: 1 maç</li>
+<li>tahmin=opponent_win gerçek=draw: 1 maç</li>
+<li>tahmin=opponent_win gerçek=opponent_win: 4 maç</li>
 <li>tahmin=opponent_win gerçek=target_win: 1 maç</li>
 <li>tahmin=target_win gerçek=draw: 6 maç</li>
 <li>tahmin=target_win gerçek=opponent_win: 1 maç</li>
-<li>tahmin=target_win gerçek=target_win: 12 maç</li>
+<li>tahmin=target_win gerçek=target_win: 13 maç</li>
 </ul>
 
 <h2>Gol Adayı Segmentleri</h2>
@@ -212,10 +211,9 @@
 <h2>Scout Pozisyon Güveni</h2>
 
 <ul>
-<li>MEDIUM_DERIVED_ROLE: 248</li>
+<li>MEDIUM_DERIVED_ROLE: 275</li>
 <li>HIGH: 59</li>
 <li>HIGH_EXTERNAL_PROFILE: 36</li>
-<li>LOW_POSITION_UNVERIFIED: 27</li>
 </ul>
 
 <h2>Tablo Kapsamı</h2>

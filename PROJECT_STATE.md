@@ -1953,3 +1953,108 @@ Bir sonraki oturumda önce `PROJECT_STATE.md` okunmalı. Ardından öncelik:
 - `build_transfermarkt_match_review_queue` + `build_data_quality_scorecard` yeniden üretildi: **`scout_blocking_unmatched: 4→0`**, `data_quality_scorecard` genel skoru `72.9→82.1`.
 - Doğrulama: `pytest` `58 passed, 3 failed` — aynı 3 önceden var olan ilgisiz hata (git stash ile karşılaştırılarak teyit edildi, regresyon yok).
 - Kalan öncelik: yeni eklenen 4 manuel alias bir sonraki ağ teyidinde (`manual_alias_pending_network_verification` toplamı artık `4`, önceki 13 ile birleşmedi çünkü review queue'da ayrı satırlarda listeleniyor) doğrulanmalı; yukarıdaki listedeki (2), (3), (4), (5) maddeleri hâlâ açık.
+
+## 2026-07-16 Günlük Veri/Geliştirme Kontrolü
+
+- 16 Temmuz kontrolünde bugün `data/processed` altında `128` dosya güncellenmiş görünüyor; 15:00 sonrası yeni çıktı yok. Son commit: `aa981edc fix: 2025-26 Transfermarkt kadro koleksiyonunu dogru kulup listesine bagla`.
+- `daily_pipeline_run_latest.md` hâlâ son başarılı ağsız koşuyu `2026-07-15T10:06:50Z`, `57/57` başarılı olarak gösteriyor; 16 Temmuz’daki düzeltme sonrası gerçek güncel koşuyu temsil etmiyor.
+- `data_quality_scorecard_2025_2026` belirgin iyileşti: genel skor `72.9→82.1`.
+- Transfermarkt/TFF kapsamı düzeldi:
+  - 2025/26 TM snapshot: `18` kulüp / `817` oyuncu / `€1.74191B`.
+  - Review queue: `tff_profiles 691`, `tm_players 817`, `matched_profiles 594`, `in_scope_match_rate %94.9`, operational in-scope mapping `%95.5`.
+  - `unmatched_players_blocking_scout_review`: `4→0`, scorecard artık PASS.
+  - Manuel alias ağ teyidi: `4` ile WATCH.
+- Scout kalite raporu düşük güven yayın adayı kalmadığını gösteriyor: blueprint aday bağlantısı `0`, pozisyon matrisi adayı `0`, düşük güvenli aday `0`. Bu rapor artık “yayına çıkacak düşük güvenli aday yok” anlamına geliyor; ana scout havuzunun büyüklüğünü ölçmek için `team_scout_blueprints`/`position_scout_matrix` ayrıca izlenmeli.
+- H2H veri toplama ilerledi: `153` olası çiftin `136` tanesi toplandı; kalan `17` çift kaldı. Bugünkü koşuda `30` çift fetch edilmiş.
+- Lig geneli tahmin modeli değişmedi: `258` maçta `133` doğru, doğruluk `%51.6`, Brier `0.610`, log loss `1.019`. Güven kırılımı: `HIGH %60.6`, `MEDIUM %42.0`, `LOW %50.0`.
+- Dikkat edilmesi gereken regresyon/boş çıktı: `oos_validation_2025_2026.json` bugün `0` maç / `None` accuracy üretiyor. Önceki doğrulanmış OOS değer `%52.9` idi; bu dosya şu an model sağlığı için güvenilir değil ve neden 0 maç ürettiği incelenmeli.
+- 2026/27 fikstür tahminleri mevcut kalıyor: `34` hafta / `306` maç / oynanmış maç `0`. Güven dağılımı: `HIGH 67`, `MEDIUM 88`, `LOW 55`, `LOW_NEW_TEAM 96`.
+- Transfer tracker güncellendi: `49` sinyal, `1` official, `5` corroborated, `16` rumor, `27` review required, toplam değer `€2.2M`. İlk official sinyal geldiği için transfer-strength sinyalinin canlı veriyle tahminlere beklenen yönde yansıyıp yansımadığı ayrıca doğrulanmalı.
+- Market value audit hâlâ eski kapsamı gösteriyor: `15` market kulübü / `424` oyuncu / `%68.6` maç kapsamı. TM snapshot artık `18/817` olduğu için `league_market_value_audit` yeniden üretim veya mapping sorunu açısından kontrol edilmeli.
+- Hâlâ açık FAIL/WATCH başlıkları:
+  - `draw_recall_pct`: Beşiktaş ekran metriğinde `1/9`, `%11.1` FAIL.
+  - `manual_alias_pending_network_verification`: `4` WATCH.
+  - Beşiktaş display tahmin doğruluğu `%55.2` WATCH.
+  - Gol adayı top-5 `%76.9`, top-8 `%84.6` WATCH.
+- Kalan öncelik sırası:
+  1. `oos_validation_2025_2026.json` dosyasının neden `0` maç ürettiğini düzeltmek; önceki `%52.9` OOS doğruluğu yeniden üretilebilir olmalı.
+  2. `league_market_value_audit` dosyasını yeni `18/817` TM snapshot kapsamıyla yeniden üretmek veya mapping boşluğunu bulmak.
+  3. İlk `OFFICIAL` transfer sinyalinin `season_fixture_predictions_2026_2027` içindeki transfer edge’e yansıyıp yansımadığını canlı veriyle doğrulamak.
+  4. Kalan `17` H2H çiftini tamamlamak.
+  5. 4 manuel alias için ağ teyidini tamamlamak.
+
+## 2026-07-17 Günlük Veri/Geliştirme Kontrolü
+
+- 17 Temmuz kontrolünde `data/processed` altında bugün üretilmiş yeni dosya yok (`0`). Son processed üretim hâlâ 16 Temmuz 14:59 civarında.
+- Git durumu kontrol başında `main...origin/main` hizalı; localde yalnız önceki günlük kontrol notları nedeniyle `PROJECT_STATE.md` değişikliği var.
+- `daily_pipeline_run_latest.md` hâlâ `2026-07-15T10:06:50Z`, network dahil değil, `57/57` başarılı koşusunu gösteriyor. 16 Temmuz düzeltmeleri ve bugünkü durum için güncel bir pipeline health raporu yok.
+- `data_quality_scorecard_2025_2026` değişmedi: genel skor `82.1`.
+- Açık scorecard başlıkları değişmedi:
+  - `manual_alias_pending_network_verification`: `4` WATCH.
+  - Beşiktaş display tahmin doğruluğu: `16/29`, `%55.2` WATCH.
+  - `draw_recall_pct`: `1/9`, `%11.1` FAIL.
+  - Gol adayı top-5: `20/26`, `%76.9` WATCH.
+  - Gol adayı top-8: `22/26`, `%84.6` WATCH.
+- Transfermarkt/TFF kapsamı korunuyor: 2025/26 TM snapshot `18` kulüp / `817` oyuncu / `€1.74191B`; review queue’da `in_scope_match_rate %94.9`, `scout_blocking_unmatched 0`.
+- H2H toplama değişmedi: `153` olası çiftin `136` tanesi toplanmış; kalan `17` çift var.
+- Lig geneli tahmin modeli değişmedi: `258` maçta `133` doğru, doğruluk `%51.6`, Brier `0.610`, log loss `1.019`.
+- `oos_validation_2025_2026.json` hâlâ bozuk/boş: full-season ve second-half OOS `0` maç, accuracy `None`. Önceki doğrulanmış `%52.9` OOS metriği yeniden üretilemiyor.
+- `league_market_value_audit_2025_2026` hâlâ eski kapsamı gösteriyor: `15` market kulübü / `424` oyuncu / `%68.6` maç kapsamı. TM snapshot `18/817` olduğu için audit çıktısı güncel veriyle uyumsuz.
+- 2026/27 fikstür tahminleri mevcut ve değişmedi: `34` hafta / `306` maç, oynanmış maç `0`; güven dağılımı `HIGH 67`, `MEDIUM 88`, `LOW 55`, `LOW_NEW_TEAM 96`.
+- Transfer tracker değişmedi: `49` sinyal, `1` official, `5` corroborated, `16` rumor, `27` review required, toplam değer `€2.2M`.
+- Kalan öncelik sırası aynı:
+  1. `oos_validation_2025_2026.json` dosyasının `0` maç üretme nedenini düzeltmek.
+  2. `league_market_value_audit` dosyasını yeni `18/817` Transfermarkt snapshot kapsamıyla uyumlu hale getirmek.
+  3. İlk `OFFICIAL` transfer sinyalinin fixture tahminlerinde transfer edge’e yansımasını canlı veriyle doğrulamak.
+  4. Kalan `17` H2H çiftini tamamlamak.
+  5. 4 manuel alias için ağ teyidi tamamlamak.
+
+## 2026-07-18 Günlük Veri/Geliştirme Kontrolü
+
+- 18 Temmuz kontrolünde `data/processed` altında bugün üretilmiş yeni dosya yok (`0`). Son processed üretim hâlâ 16 Temmuz 14:59 civarında.
+- Git durumu kontrol başında `main...origin/main` hizalı; localde yalnız günlük kontrol notları nedeniyle `PROJECT_STATE.md` değişikliği var.
+- `daily_pipeline_run_latest.md` hâlâ `2026-07-15T10:06:50Z`, network dahil değil, `57/57` başarılı koşusunu gösteriyor. 16 Temmuz düzeltmeleri ve 17-18 Temmuz kontrolleri için güncel pipeline health raporu yok.
+- `data_quality_scorecard_2025_2026` değişmedi: genel skor `82.1`.
+- Açık scorecard başlıkları değişmedi:
+  - `manual_alias_pending_network_verification`: `4` WATCH.
+  - Beşiktaş display tahmin doğruluğu: `16/29`, `%55.2` WATCH.
+  - `draw_recall_pct`: `1/9`, `%11.1` FAIL.
+  - Gol adayı top-5: `20/26`, `%76.9` WATCH.
+  - Gol adayı top-8: `22/26`, `%84.6` WATCH.
+- Transfermarkt/TFF kapsamı korunuyor: 2025/26 TM snapshot `18` kulüp / `817` oyuncu / `€1.74191B`; review queue’da `in_scope_match_rate %94.9`, `scout_blocking_unmatched 0`.
+- H2H toplama değişmedi: `153` olası çiftin `136` tanesi toplanmış; kalan `17` çift var.
+- Lig geneli tahmin modeli değişmedi: `258` maçta `133` doğru, doğruluk `%51.6`, Brier `0.610`, log loss `1.019`.
+- `oos_validation_2025_2026.json` hâlâ bozuk/boş: full-season ve second-half OOS `0` maç, accuracy `None`. Önceki doğrulanmış `%52.9` OOS metriği yeniden üretilemiyor.
+- `league_market_value_audit_2025_2026` hâlâ eski kapsamı gösteriyor: `15` market kulübü / `424` oyuncu / `%68.6` maç kapsamı. TM snapshot `18/817` olduğu için audit çıktısı güncel veriyle uyumsuz.
+- 2026/27 fikstür tahminleri mevcut ve değişmedi: `34` hafta / `306` maç, oynanmış maç `0`; güven dağılımı `HIGH 67`, `MEDIUM 88`, `LOW 55`, `LOW_NEW_TEAM 96`.
+- Transfer tracker değişmedi: `49` sinyal, `1` official, `5` corroborated, `16` rumor, `27` review required, toplam değer `€2.2M`.
+- Kalan öncelik sırası aynı ve artık beklememeli:
+  1. `oos_validation_2025_2026.json` dosyasının `0` maç üretme nedenini düzeltmek.
+  2. `league_market_value_audit` dosyasını yeni `18/817` Transfermarkt snapshot kapsamıyla uyumlu hale getirmek.
+  3. İlk `OFFICIAL` transfer sinyalinin fixture tahminlerinde transfer edge’e yansımasını canlı veriyle doğrulamak.
+  4. Kalan `17` H2H çiftini tamamlamak.
+  5. 4 manuel alias için ağ teyidi tamamlamak.
+
+## 2026-07-18 (devam) — `oos_validation` 0-Maç Kök Nedeni: Sezon Sonu Veri İmhası Bulundu ve Düzeltildi
+
+- Kök neden `oos_validation`'ın kendisinde değil, kaynak veride bulundu: `src/collect_tff_league_season.py`, `src/collect_besiktas_season.py` ve `src/collect_sofascore_stats.py` üçü de bitmiş **2025-2026 sezonu** için sabit `--season 2025-2026` / sabit `seed-match-id 283783` ile her `--network` günlük pipeline koşusunda TFF/Sofascore'u yeniden tarıyor ve mevcut dosyanın üzerine hiçbir güvenlik kontrolü olmadan yazıyordu. Sezon bittiği için bu siteler artık aynı navigasyondan (aynı seed/sezon kimliğiyle) yeni sezona veya boş sonuca düşüyor; script bunu ayırt etmeden final, tam skorlu veriyi boş/skorsuz fikstür kaydıyla eziyordu.
+- Bu, üretimde **iki kez** sessizce gerçekleşmiş:
+  - `2026-05-27` (`333e65cb`): `sofascore_match_stats_2025_2026.json` `306/306` maç xG'li iken `0` maça indi.
+  - `2026-07-16` (`0e7c0990`): `tff_trendyol_super_lig_2025_2026_matches.json` (`306/306` skorlu → `306` skorsuz) ve `tff_besiktas_2025_2026_matches.json` (`34/34` skorlu → `0` skorlu) aynı anda ezildi. Bu tek commit ~90 türetilmiş rapor dosyasını (lig istihbaratı, scout blueprint, takım ihtiyaç, transfer önerisi, data quality scorecard vb.) bozuk veriyle yeniden üretti.
+  - Kimse fark etmedi çünkü çoğu rapor önbelleklenmiş çıktı okuyordu; yalnızca `oos_validation` her çalıştırmada kaynak dosyayı taze okuduğu için hemen `0` maça düşüp görünür oldu.
+- **Düzeltme — veri kurtarma**: 3 kaynak dosya (`tff_trendyol_super_lig_2025_2026_matches.json`, `tff_trendyol_super_lig_2025_2026_fixtures.json`, `tff_besiktas_2025_2026_matches.json`+`fixtures`, `sofascore_match_stats_2025_2026.json`) bozulma öncesi git commit'inden (`49a902bb`, 2026-05-25 — sezon zaten bitmişti, `306/306` lig + `34/34` Beşiktaş maçı tam skorlu doğrulandı) geri yüklendi; `enrich_tff_with_sofascore` yeniden çalıştırılarak enriched dosya (`306/306` skor + `306/306` xG) doğru şekilde yeniden üretildi.
+- **Düzeltme — kök neden**: `run_daily_pipeline.py`'deki `NETWORK_COMMANDS`'tan `collect_tff_league_season`, `collect_besiktas_season` ve `collect_sofascore_stats --skip-existing` kalıcı olarak çıkarıldı (nedeni açıklayan yorumla). 2025-26 sezonu final ve tam; bu üç collector'ın toplayacağı yeni bir şey yok, yalnız tekrar bozma riski taşıyorlar.
+- **Doğrulama**: `pytest` → `58 passed, 3 failed` (aynı 3 önceden var olan ilgisiz `test_season_boundaries` hatası, regresyon yok). Ağsız günlük pipeline (`run_daily_pipeline.py`, network hariç) baştan sona çalıştırıldı: `57/57` başarılı, `0` hata.
+- **Sonuç iyileşmesi (xG verisi ~2 aydır boştu, şimdi geri geldi)**:
+  - `oos_validation`: tüm sezon `%51.6→%54.7` (`141/258`), ikinci yarı OOS `%52.9→%57.5` (`88/153`).
+  - `data_quality_scorecard`: genel skor `82.1→85.4`.
+  - Beşiktaş ekran tahmini doğruluğu `%55.2→%65.5` (`19/29`); Beşiktaş beraberlik yakalama `%11.1→%22.2` (`2/9`).
+  - `league_market_value_audit` da bu turda yan etki olarak düzeldi: artık güncel `18` kulüp/`817` oyuncu TM snapshot'ıyla uyumlu (önceki öncelik listesindeki 2. madde kapandı) — ayrı bir iş gerekmedi, yalnızca pipeline'ın kendisinin yeniden çalıştırılması yetti.
+- **Not**: Bu turda `~1200` dosya değişti (`data/processed` altındaki tüm türetilmiş raporlar/dashboard'lar doğru kaynak veriyle yeniden üretildiği için) — henüz commit/push edilmedi, kullanıcı onayı bekleniyor.
+- Kalan öncelik listesi güncellendi:
+  1. ~~`oos_validation` 0 maç~~ ✅ düzeltildi (kök neden + veri kurtarma).
+  2. ~~`league_market_value_audit` eski kapsam~~ ✅ düzeldi (yan etki).
+  3. İlk `OFFICIAL` transfer sinyalinin fixture tahminlerinde transfer edge’e yansımasını canlı veriyle doğrulamak (açık, ağ gerektirir).
+  4. Kalan `17` H2H çiftini tamamlamak (açık, ağ gerektirir).
+  5. 4 manuel alias için ağ teyidi tamamlamak (açık, ağ gerektirir).
+  6. **Yeni**: `collect_tff_league_season`/`collect_besiktas_season`/`collect_sofascore_stats` benzeri "sabit sezon kimliğiyle harici siteyi yeniden tarayan" başka collector olup olmadığı gözden geçirilmeli — aynı sınıf hata (biten sezonu güvenlik kontrolsüz üzerine yazma) başka yerde de gizli olabilir.

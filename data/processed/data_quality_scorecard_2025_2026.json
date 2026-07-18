@@ -1,6 +1,6 @@
 {
   "warehouse": "/Users/alicanakyol/Documents/analiz/data/processed/metric11_warehouse.sqlite",
-  "score": 82.1,
+  "score": 85.4,
   "table_counts": {
     "data_quality_findings": 6,
     "data_sources": 5,
@@ -91,9 +91,9 @@
       "area": "model",
       "metric": "besiktas_display_prediction_accuracy_pct",
       "value": {
-        "correct": 16,
+        "correct": 19,
         "total": 29,
-        "pct": 55.2
+        "pct": 65.5
       },
       "status": "WATCH",
       "priority": "HIGH",
@@ -103,11 +103,11 @@
       "area": "model",
       "metric": "draw_recall_pct",
       "value": {
-        "draw_predicted": 1,
+        "draw_predicted": 2,
         "draw_total": 9,
-        "pct": 11.1
+        "pct": 22.2
       },
-      "status": "FAIL",
+      "status": "WATCH",
       "priority": "HIGH",
       "recommendation": "Beraberlik sadece çok yüksek risk ve dar olasılık farkında ekran tahminine çekilmeli; diğer durumlarda korumalı senaryo dili kullanılmalı."
     },
@@ -115,9 +115,9 @@
       "area": "calibration",
       "metric": "wrong_predictions_with_high_confidence_pct",
       "value": {
-        "wrong_high_confidence": 3,
-        "wrong_total": 13,
-        "pct": 23.1
+        "wrong_high_confidence": 1,
+        "wrong_total": 10,
+        "pct": 10.0
       },
       "status": "PASS",
       "priority": "MEDIUM",
@@ -151,9 +151,9 @@
       "area": "scouting",
       "metric": "low_position_confidence_pct",
       "value": {
-        "low_confidence": 27,
+        "low_confidence": 0,
         "total": 370,
-        "pct": 7.3
+        "pct": 0.0
       },
       "status": "PASS",
       "priority": "MEDIUM",
@@ -196,27 +196,22 @@
     {
       "predicted": "draw",
       "actual": "draw",
-      "matches": 1
-    },
-    {
-      "predicted": "draw",
-      "actual": "opponent_win",
       "matches": 2
     },
     {
       "predicted": "draw",
-      "actual": "target_win",
+      "actual": "opponent_win",
       "matches": 1
     },
     {
       "predicted": "opponent_win",
       "actual": "draw",
-      "matches": 2
+      "matches": 1
     },
     {
       "predicted": "opponent_win",
       "actual": "opponent_win",
-      "matches": 3
+      "matches": 4
     },
     {
       "predicted": "opponent_win",
@@ -236,7 +231,7 @@
     {
       "predicted": "target_win",
       "actual": "target_win",
-      "matches": 12
+      "matches": 13
     }
   ],
   "goal_candidate_segments": [
@@ -269,7 +264,7 @@
   "scout_position_confidence": [
     {
       "position_confidence": "MEDIUM_DERIVED_ROLE",
-      "rows": 248
+      "rows": 275
     },
     {
       "position_confidence": "HIGH",
@@ -278,10 +273,6 @@
     {
       "position_confidence": "HIGH_EXTERNAL_PROFILE",
       "rows": 36
-    },
-    {
-      "position_confidence": "LOW_POSITION_UNVERIFIED",
-      "rows": 27
     }
   ]
 }

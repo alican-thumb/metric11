@@ -26,10 +26,10 @@
     "goals_for_per_match": 1.4,
     "goals_against_per_match": 1.4,
     "cards_per_match": 3.2,
-    "xg_for_per_match": null,
-    "xg_against_per_match": null,
-    "sot_per_match": null,
-    "xg_data_matches": 0,
+    "xg_for_per_match": 0.868,
+    "xg_against_per_match": 1.346,
+    "sot_per_match": 3.0,
+    "xg_data_matches": 5,
     "results": [
       {
         "match_id": "283797",
@@ -37,9 +37,9 @@
         "opponent": "HESAP.COM ANTALYASPOR",
         "score": "0-3",
         "cards": 6,
-        "xg_for": null,
-        "xg_against": null,
-        "shots_on_target": null
+        "xg_for": 0.32,
+        "xg_against": 2.54,
+        "shots_on_target": 0.0
       },
       {
         "match_id": "283809",
@@ -47,9 +47,9 @@
         "opponent": "SAMSUNSPOR A.Ş.",
         "score": "1-2",
         "cards": 4,
-        "xg_for": null,
-        "xg_against": null,
-        "shots_on_target": null
+        "xg_for": 1.49,
+        "xg_against": 0.93,
+        "shots_on_target": 2.0
       },
       {
         "match_id": "283815",
@@ -57,9 +57,9 @@
         "opponent": "MISIRLI.COM.TR FATİH KARAGÜMRÜK",
         "score": "2-1",
         "cards": 4,
-        "xg_for": null,
-        "xg_against": null,
-        "shots_on_target": null
+        "xg_for": 0.32,
+        "xg_against": 1.25,
+        "shots_on_target": 4.0
       },
       {
         "match_id": "283829",
@@ -67,9 +67,9 @@
         "opponent": "GAZİANTEP FUTBOL KULÜBÜ A.Ş.",
         "score": "3-0",
         "cards": 2,
-        "xg_for": null,
-        "xg_against": null,
-        "shots_on_target": null
+        "xg_for": 1.37,
+        "xg_against": 0.67,
+        "shots_on_target": 5.0
       },
       {
         "match_id": "283833",
@@ -77,9 +77,9 @@
         "opponent": "ZECORNER KAYSERİSPOR",
         "score": "1-1",
         "cards": 0,
-        "xg_for": null,
-        "xg_against": null,
-        "shots_on_target": null
+        "xg_for": 0.84,
+        "xg_against": 1.34,
+        "shots_on_target": 4.0
       }
     ]
   },
@@ -186,10 +186,10 @@
     "goals_for_per_match": 2.2,
     "goals_against_per_match": 1.6,
     "cards_per_match": 2.8,
-    "xg_for_per_match": null,
-    "xg_against_per_match": null,
-    "sot_per_match": null,
-    "xg_data_matches": 0,
+    "xg_for_per_match": 1.52,
+    "xg_against_per_match": 1.544,
+    "sot_per_match": 4.8,
+    "xg_data_matches": 5,
     "results": [
       {
         "match_id": "283791",
@@ -197,9 +197,9 @@
         "opponent": "SAMSUNSPOR A.Ş.",
         "score": "4-1",
         "cards": 2,
-        "xg_for": null,
-        "xg_against": null,
-        "shots_on_target": null
+        "xg_for": 2.15,
+        "xg_against": 1.52,
+        "shots_on_target": 6.0
       },
       {
         "match_id": "283811",
@@ -207,9 +207,9 @@
         "opponent": "GAZİANTEP FUTBOL KULÜBÜ A.Ş.",
         "score": "2-1",
         "cards": 2,
-        "xg_for": null,
-        "xg_against": null,
-        "shots_on_target": null
+        "xg_for": 2.05,
+        "xg_against": 0.75,
+        "shots_on_target": 7.0
       },
       {
         "match_id": "283822",
@@ -217,9 +217,9 @@
         "opponent": "FENERBAHÇE A.Ş.",
         "score": "2-2",
         "cards": 7,
-        "xg_for": null,
-        "xg_against": null,
-        "shots_on_target": null
+        "xg_for": 0.74,
+        "xg_against": 2.44,
+        "shots_on_target": 3.0
       },
       {
         "match_id": "283831",
@@ -227,9 +227,9 @@
         "opponent": "ZECORNER KAYSERİSPOR",
         "score": "0-2",
         "cards": 2,
-        "xg_for": null,
-        "xg_against": null,
-        "shots_on_target": null
+        "xg_for": 1.14,
+        "xg_against": 1.48,
+        "shots_on_target": 1.0
       },
       {
         "match_id": "283834",
@@ -237,9 +237,9 @@
         "opponent": "TÜMOSAN KONYASPOR",
         "score": "3-2",
         "cards": 1,
-        "xg_for": null,
-        "xg_against": null,
-        "shots_on_target": null
+        "xg_for": 1.52,
+        "xg_against": 1.53,
+        "shots_on_target": 7.0
       }
     ]
   },
@@ -693,64 +693,66 @@
     "note": "Gol adayi skoru TFF gol/ilk 11 gecmisi, son form, rakip savunma, duran top/defans, yedek etki ve segment backtest kalite sinyallerinden turetilen MVP sinyalidir."
   },
   "probabilities": {
-    "target_win_probability": 0.319,
-    "draw_probability": 0.239,
-    "opponent_win_probability": 0.442,
-    "expected_goals_for": 1.44,
-    "expected_goals_against": 1.95,
+    "target_win_probability": 0.322,
+    "draw_probability": 0.251,
+    "opponent_win_probability": 0.427,
+    "expected_goals_for": 1.27,
+    "expected_goals_against": 1.7,
     "top_scorelines": [
       {
         "target_goals": 1,
         "opponent_goals": 1,
         "score": "1-1",
-        "probability": 0.095
+        "probability": 0.111
       },
       {
         "target_goals": 1,
         "opponent_goals": 2,
         "score": "1-2",
-        "probability": 0.092
-      },
-      {
-        "target_goals": 2,
-        "opponent_goals": 1,
-        "score": "2-1",
-        "probability": 0.068
+        "probability": 0.094
       },
       {
         "target_goals": 0,
         "opponent_goals": 1,
         "score": "0-1",
-        "probability": 0.066
-      },
-      {
-        "target_goals": 2,
-        "opponent_goals": 2,
-        "score": "2-2",
-        "probability": 0.066
+        "probability": 0.087
       },
       {
         "target_goals": 0,
         "opponent_goals": 2,
         "score": "0-2",
-        "probability": 0.064
+        "probability": 0.074
+      },
+      {
+        "target_goals": 2,
+        "opponent_goals": 1,
+        "score": "2-1",
+        "probability": 0.07
+      },
+      {
+        "target_goals": 1,
+        "opponent_goals": 0,
+        "score": "1-0",
+        "probability": 0.065
       }
     ],
     "recommended_scoreline": {
       "target_goals": 1,
       "opponent_goals": 1,
       "score": "1-1",
-      "probability": 0.095
+      "probability": 0.111
     },
     "recommended_call": {
       "result": "opponent_win",
-      "probability": 0.442,
+      "probability": 0.427,
       "scoreline": "1-1",
       "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "action_label": "Korumalı taraf tahmini",
       "risk_notes": [
+        "draw_probability_watch",
+        "xg_margin_watch",
         "top_draw_scoreline",
-        "probability_margin_watch",
+        "probability_margin_narrow",
         "strength_edge_very_narrow",
         "low_confidence_side_pick"
       ]
@@ -758,8 +760,8 @@
     "display_prediction": {
       "raw_result": "opponent_win",
       "final_result": "opponent_win",
-      "probability": 0.442,
-      "margin": 0.124,
+      "probability": 0.427,
+      "margin": 0.105,
       "adjustment": "raw_unvalidated_team",
       "label": "ÇAYKUR RİZESPOR A.Ş. kazanır",
       "raw_label": "ÇAYKUR RİZESPOR A.Ş. kazanır",
@@ -783,11 +785,13 @@
       "draw_rate": null
     },
     "draw_risk": {
-      "score": 42,
+      "score": 67,
       "risk_level": "HIGH",
       "reasons": [
+        "draw_probability_watch",
+        "xg_margin_watch",
         "top_draw_scoreline",
-        "probability_margin_watch",
+        "probability_margin_narrow",
         "strength_edge_very_narrow",
         "low_confidence_side_pick"
       ],
@@ -802,7 +806,7 @@
       "notes": []
     },
     "confidence": "LOW",
-    "xg_data_available": false,
+    "xg_data_available": true,
     "note": "Poisson, form, rakip savunma, hakem, eksik oyuncu ve takım gücü sinyaliyle çalışan MVP tahmin modelidir."
   },
   "lineup_recommendation": {
@@ -849,7 +853,7 @@
   "coach_lineup_audit": {
     "verdict": "KISMEN_TARTIŞMALI",
     "actual_lineup_score": 86.34,
-    "recommended_lineup_score": 105.34,
+    "recommended_lineup_score": 105.33,
     "alignment_rate": 0.82,
     "actual_starters": [
       "JANKAT YILMAZ",
@@ -888,13 +892,13 @@
         "goal_threat_score": 0
       }
     ],
-    "alternative_xg_for": 1.63,
-    "alternative_xg_against": 1.95,
+    "alternative_xg_for": 1.46,
+    "alternative_xg_against": 1.7,
     "alternative_scoreline": {
       "target_goals": 1,
       "opponent_goals": 1,
       "score": "1-1",
-      "probability": 0.089
+      "probability": 0.105
     },
     "note": "Bu denetim gerçek maçtan önceki kullanım/gol/kart sinyaliyle çalışır; teknik direktörün antrenman, sakatlık ve taktik bilgisine sahip değildir."
   },
@@ -912,21 +916,21 @@
         "position_confidence": "HIGH",
         "age": 22,
         "economy_score": 28.0,
-        "current_expected_goals_for": 1.44,
-        "current_expected_goals_against": 1.95,
-        "simulated_expected_goals_for": 1.66,
-        "simulated_expected_goals_against": 1.93,
+        "current_expected_goals_for": 1.27,
+        "current_expected_goals_against": 1.7,
+        "simulated_expected_goals_for": 1.49,
+        "simulated_expected_goals_against": 1.68,
         "xg_for_delta": 0.22,
         "xg_against_delta": 0.02,
         "goal_edge_delta": 0.24,
-        "simulated_target_win_probability": 0.337,
-        "simulated_draw_probability": 0.218,
-        "simulated_opponent_win_probability": 0.445,
+        "simulated_target_win_probability": 0.342,
+        "simulated_draw_probability": 0.235,
+        "simulated_opponent_win_probability": 0.423,
         "simulated_scoreline": {
           "target_goals": 1,
           "opponent_goals": 1,
           "score": "1-1",
-          "probability": 0.088
+          "probability": 0.105
         },
         "impact_label": "LOW_POSITIVE",
         "why": "Poz. grup: MID (HIGH). İlk 11: 30, Gol: 6, Kart: 6. Sözleşme fırsatı: MEDIUM. Resale potansiyeli yüksek.",
@@ -941,21 +945,21 @@
         "position_confidence": "HIGH",
         "age": 25,
         "economy_score": 22.0,
-        "current_expected_goals_for": 1.44,
-        "current_expected_goals_against": 1.95,
-        "simulated_expected_goals_for": 1.63,
-        "simulated_expected_goals_against": 1.94,
+        "current_expected_goals_for": 1.27,
+        "current_expected_goals_against": 1.7,
+        "simulated_expected_goals_for": 1.46,
+        "simulated_expected_goals_against": 1.69,
         "xg_for_delta": 0.19,
         "xg_against_delta": 0.01,
         "goal_edge_delta": 0.2,
-        "simulated_target_win_probability": 0.328,
-        "simulated_draw_probability": 0.218,
-        "simulated_opponent_win_probability": 0.454,
+        "simulated_target_win_probability": 0.333,
+        "simulated_draw_probability": 0.235,
+        "simulated_opponent_win_probability": 0.432,
         "simulated_scoreline": {
           "target_goals": 1,
           "opponent_goals": 1,
           "score": "1-1",
-          "probability": 0.089
+          "probability": 0.106
         },
         "impact_label": "LOW_POSITIVE",
         "why": "Poz. grup: MID (HIGH). İlk 11: 22, Gol: 11, Kart: 4. Sözleşme fırsatı: HIGH.",
@@ -970,21 +974,21 @@
         "position_confidence": "HIGH",
         "age": 25,
         "economy_score": 22.0,
-        "current_expected_goals_for": 1.44,
-        "current_expected_goals_against": 1.95,
-        "simulated_expected_goals_for": 1.64,
-        "simulated_expected_goals_against": 1.94,
+        "current_expected_goals_for": 1.27,
+        "current_expected_goals_against": 1.7,
+        "simulated_expected_goals_for": 1.47,
+        "simulated_expected_goals_against": 1.69,
         "xg_for_delta": 0.2,
         "xg_against_delta": 0.01,
         "goal_edge_delta": 0.21,
-        "simulated_target_win_probability": 0.331,
-        "simulated_draw_probability": 0.218,
-        "simulated_opponent_win_probability": 0.452,
+        "simulated_target_win_probability": 0.336,
+        "simulated_draw_probability": 0.235,
+        "simulated_opponent_win_probability": 0.43,
         "simulated_scoreline": {
           "target_goals": 1,
           "opponent_goals": 1,
           "score": "1-1",
-          "probability": 0.089
+          "probability": 0.105
         },
         "impact_label": "LOW_POSITIVE",
         "why": "Poz. grup: FWD (HIGH). İlk 11: 23, Gol: 7, Kart: 1. Sözleşme fırsatı: HIGH.",
@@ -999,21 +1003,21 @@
         "position_confidence": "HIGH",
         "age": 26,
         "economy_score": 18.0,
-        "current_expected_goals_for": 1.44,
-        "current_expected_goals_against": 1.95,
-        "simulated_expected_goals_for": 1.66,
-        "simulated_expected_goals_against": 1.93,
+        "current_expected_goals_for": 1.27,
+        "current_expected_goals_against": 1.7,
+        "simulated_expected_goals_for": 1.49,
+        "simulated_expected_goals_against": 1.68,
         "xg_for_delta": 0.22,
         "xg_against_delta": 0.02,
         "goal_edge_delta": 0.24,
-        "simulated_target_win_probability": 0.337,
-        "simulated_draw_probability": 0.218,
-        "simulated_opponent_win_probability": 0.445,
+        "simulated_target_win_probability": 0.342,
+        "simulated_draw_probability": 0.235,
+        "simulated_opponent_win_probability": 0.423,
         "simulated_scoreline": {
           "target_goals": 1,
           "opponent_goals": 1,
           "score": "1-1",
-          "probability": 0.088
+          "probability": 0.105
         },
         "impact_label": "LOW_POSITIVE",
         "why": "Poz. grup: FWD (HIGH). İlk 11: 27, Gol: 8, Kart: 7. Sözleşme fırsatı: HIGH.",
@@ -1028,21 +1032,21 @@
         "position_confidence": "HIGH",
         "age": 23,
         "economy_score": 22.0,
-        "current_expected_goals_for": 1.44,
-        "current_expected_goals_against": 1.95,
-        "simulated_expected_goals_for": 1.57,
-        "simulated_expected_goals_against": 1.95,
+        "current_expected_goals_for": 1.27,
+        "current_expected_goals_against": 1.7,
+        "simulated_expected_goals_for": 1.4,
+        "simulated_expected_goals_against": 1.7,
         "xg_for_delta": 0.13,
         "xg_against_delta": 0.0,
         "goal_edge_delta": 0.13,
-        "simulated_target_win_probability": 0.314,
-        "simulated_draw_probability": 0.219,
-        "simulated_opponent_win_probability": 0.468,
+        "simulated_target_win_probability": 0.317,
+        "simulated_draw_probability": 0.236,
+        "simulated_opponent_win_probability": 0.447,
         "simulated_scoreline": {
           "target_goals": 1,
           "opponent_goals": 1,
           "score": "1-1",
-          "probability": 0.091
+          "probability": 0.107
         },
         "impact_label": "LOW_POSITIVE",
         "why": "Poz. grup: FWD (HIGH). İlk 11: 16, Gol: 10, Kart: 3. Resale potansiyeli yüksek.",
@@ -1057,21 +1061,21 @@
         "position_confidence": "HIGH",
         "age": 23,
         "economy_score": 32.0,
-        "current_expected_goals_for": 1.44,
-        "current_expected_goals_against": 1.95,
-        "simulated_expected_goals_for": 1.61,
-        "simulated_expected_goals_against": 1.93,
+        "current_expected_goals_for": 1.27,
+        "current_expected_goals_against": 1.7,
+        "simulated_expected_goals_for": 1.44,
+        "simulated_expected_goals_against": 1.68,
         "xg_for_delta": 0.17,
         "xg_against_delta": 0.02,
         "goal_edge_delta": 0.19,
-        "simulated_target_win_probability": 0.326,
-        "simulated_draw_probability": 0.219,
-        "simulated_opponent_win_probability": 0.455,
+        "simulated_target_win_probability": 0.33,
+        "simulated_draw_probability": 0.236,
+        "simulated_opponent_win_probability": 0.434,
         "simulated_scoreline": {
           "target_goals": 1,
           "opponent_goals": 1,
           "score": "1-1",
-          "probability": 0.09
+          "probability": 0.107
         },
         "impact_label": "LOW_POSITIVE",
         "why": "Poz. grup: FWD (HIGH). İlk 11: 26, Gol: 0, Kart: 1. Sözleşme fırsatı: HIGH. Resale potansiyeli yüksek.",
@@ -1088,10 +1092,10 @@
     "Hakem profili kart tarafında anlamlı bir sinyal veriyor: HALİL UMUT MELER bu sezon önceki 16 Beşiktaş maçında toplam maç başı 4.5 kart, Beşiktaş'a maç başı 1.94 kart ortalamasıyla öne çıkıyor.",
     "Olası 11 sinyalinde son dönemde öne çıkan isimler: CENGİZ UMUT MERAŞ, UMUT DİLAN BOZOK, BEDİRHAN ÖZYURT, BARAN ALİ GEZEK, METEHAN ALTUNBAŞ, LUCAS FELIPE CALEGARI. Kart riski tarafında ise son 8 maç penceresinde LENNY JEAN PIERRE  PINTOR, JEROME JUNIOR ONGUENE, TAŞKIN İLTER, MATEUSZ JACEK LEGOWSKI dikkat çekiyor.",
     "Gol adayı sinyalinde öne çıkan isimler: METEHAN ALTUNBAŞ, UMUT DİLAN BOZOK, CHARLES ANDRE RAUX YAO, LUCCAS CLARO DOS SANTOS. Bu skor son gol formu, sezon içi gol sayısı ve son dönemde ilk 11 başlama sıklığından türetildi. Test sonucunda gerçek Beşiktaş golcüleri: UMUT DİLAN BOZOK, METEHAN ALTUNBAŞ, LUCAS FELIPE CALEGARI, EMRE AKBABA.",
-    "Skor dağılımında en olası senaryolar: 1-1 (%10), 1-2 (%9), 2-1 (%7). Model aksiyonu: Korumalı taraf tahmini; önerilen ana skor 1-1.",
+    "Skor dağılımında en olası senaryolar: 1-1 (%11), 1-2 (%9), 0-1 (%9). Model aksiyonu: Korumalı taraf tahmini; önerilen ana skor 1-1.",
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği METEHAN ALTUNBAŞ, UMUT DİLAN BOZOK, CHARLES ANDRE RAUX YAO. Disiplin yönetimi gereken oyuncular: LENNY JEAN PIERRE  PINTOR, JEROME JUNIOR ONGUENE, TAŞKIN İLTER.",
-    "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %82 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.44-1.95 yerine 1.63-1.95 bandına gelebilirdi.",
-    "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.44-1.95 bandından 1.66-1.93 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %34 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %32, beraberliği %24, rakip galibiyetini %44 olarak işaretliyor. Gol beklentisi 1.44-1.95; kart sinyali MEDIUM."
+    "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %82 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.27-1.7 yerine 1.46-1.7 bandına gelebilirdi.",
+    "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.27-1.7 bandından 1.49-1.68 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %34 olurdu.",
+    "MVP olasılık motoru Beşiktaş galibiyetini %32, beraberliği %25, rakip galibiyetini %43 olarak işaretliyor. Gol beklentisi 1.27-1.7; kart sinyali MEDIUM."
   ]
 }

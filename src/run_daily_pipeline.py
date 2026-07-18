@@ -71,11 +71,22 @@ DEFAULT_COMMANDS = [
 ]
 
 NETWORK_COMMANDS = [
-    ["python", "-m", "src.collect_tff_league_season"],
+    # collect_tff_league_season / collect_besiktas_season / collect_sofascore_stats
+    # (with --skip-existing) all default to the finished 2025-2026 season. Once a
+    # season is over, TFF/Sofascore's own site navigation from the hardcoded
+    # seed match/season id starts resolving into the *next* season instead, so a
+    # re-run silently overwrites the final, complete results with an empty/stub
+    # fixture list. This happened twice in production (2026-05-27 wiped
+    # sofascore_match_stats_2025_2026.json to 0 matches, 2026-07-16 wiped both
+    # tff_trendyol_super_lig_2025_2026_matches.json and
+    # tff_besiktas_2025_2026_matches.json to 0 scores) before anyone noticed,
+    # because most downstream reports read from cached derived files rather than
+    # re-deriving from these on every run. The 2025-2026 season is final
+    # (306/306 league matches + 34/34 Beşiktaş matches all scored as of
+    # 2026-05-25) — there is nothing left for these three collectors to gain, so
+    # they are intentionally left out of the automated network pipeline.
     ["python", "-m", "src.collect_tff_season_fixture"],
     ["python", "-m", "src.advance_season_state"],
-    ["python", "-m", "src.collect_sofascore_stats", "--skip-existing"],
-    ["python", "-m", "src.collect_besiktas_season"],
     [
         "python",
         "-m",

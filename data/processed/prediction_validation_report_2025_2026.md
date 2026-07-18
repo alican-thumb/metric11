@@ -11,9 +11,9 @@
 | Ölçüm | Doğruluk | Kullanım |
 |---|---:|---|
 | Beşiktaş ham model | %51.7 (15/29) | Başlangıç karşılaştırması |
-| Beşiktaş ekran ayarı | %55.2 (16/29) | Aynı veri üzerinde kontrol, genellenemez |
-| Diğer 17 takım ham model | %46.7 (230/493) | Lig-geneli geliştirme başlangıcı |
-| Tekil lig fikstürleri ham model | %50.2 (132/263) | Çift sayım yapılmamış taban ölçüm |
+| Beşiktaş ekran ayarı | %65.5 (19/29) | Aynı veri üzerinde kontrol, genellenemez |
+| Diğer 17 takım ham model | %49.5 (244/493) | Lig-geneli geliştirme başlangıcı |
+| Tekil lig fikstürleri ham model | %51.3 (135/263) | Çift sayım yapılmamış taban ölçüm |
 
 ## Kalite Kapıları
 

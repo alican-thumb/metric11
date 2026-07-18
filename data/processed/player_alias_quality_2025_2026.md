@@ -2,7 +2,7 @@
 
 - Manuel alias oyuncusu: 28
 - İşlenen TFF lig profil havuzu: 691
-- Transfermarkt Süper Lig kadrosu: 15/18 kulüp, 424 oyuncu
+- Transfermarkt Süper Lig kadrosu: 18/18 kulüp, 817 oyuncu
 - TFF Beşiktaş profili: 46
 - TFF scout profili: 40
 - Transfermarkt Beşiktaş oyuncusu: 0
@@ -10,8 +10,8 @@
 
 ## Karşılaştırmalar
 
-- league_tff_vs_transfermarkt: 391/691 eşleşme (%57)
-  - Manuel eşleme: 13 (ağ teyidi bekleyen=13); kullanılabilir eşleme %58
+- league_tff_vs_transfermarkt: 594/691 eşleşme (%86)
+  - Manuel eşleme: 4 (ağ teyidi bekleyen=4); kullanılabilir eşleme %86
 - besiktas_tff_vs_transfermarkt: 0/46 eşleşme (%0)
   - Ham tekil kaynak karşılaştırmasıdır; operasyonel manuel eşlemeler lig karşılaştırmasında izlenir.
 - scout_tff_vs_api_deep: 7/40 eşleşme (%18)
@@ -20,16 +20,16 @@
 ## Düşük Skorlu Eşleşmeler
 
 ### league_tff_vs_transfermarkt
+- AHMET SAMİ BİRCAN -> Ahmet Sami Bircan | skor=1.0 | canonical=AHMET SAMI BIRCAN
+- ALİ PAĞDA -> Ali Pağda | skor=1.0 | canonical=ALI PAGDA
+- AMIR HADZIAHMETOVIC -> Amir Hadziahmetovic | skor=1.0 | canonical=AMIR HADZIAHMETOVIC
+- ASIM EFE IŞIK -> Asım Efe Işık | skor=1.0 | canonical=ASIM EFE ISIK
 - BADOBRE EMMANUEL ELYSEE DJEDJE AGBADOU -> Emmanuel Agbadou | skor=1.0 | canonical=BADOBRE EMMANUEL ELYSEE DJEDJE AGBADOU
 - CENGİZ ÜNDER -> Cengiz Ünder | skor=1.0 | canonical=CENGIZ UNDER
+- DAVID JURASEK -> David Jurásek | skor=1.0 | canonical=DAVID JURASEK
+- DEMİR EGE TIKNAZ -> Demir Ege Tıknaz | skor=1.0 | canonical=DEMIR EGE TIKNAZ
 - DEVIS ESTIVEN  VASQUEZ LLACH -> Devis Vásquez | skor=1.0 | canonical=DEVIS ESTIVEN VASQUEZ LLACH
 - DEVRİM ŞAHİN -> Devrim Şahin | skor=1.0 | canonical=DEVRIM SAHIN
-- EL BILAL TOURE -> El Bilal Touré | skor=1.0 | canonical=EL BILAL TOURE
-- EMRE BİLGİN -> Emre Bilgin | skor=1.0 | canonical=EMRE BILGIN
-- EMİR YAŞAR -> Emir Yaşar | skor=1.0 | canonical=EMIR YASAR
-- EMİRHAN TOPÇU -> Emirhan Topçu | skor=1.0 | canonical=EMIRHAN TOPCU
-- ERSİN DESTANOĞLU -> Ersin Destanoğlu | skor=1.0 | canonical=ERSIN DESTANOGLU
-- FELIX OHIS UDUOKHAI -> Felix Uduokhai | skor=1.0 | canonical=FELIX OHIS UDUOKHAI
 
 ### besiktas_tff_vs_transfermarkt
 
@@ -95,26 +95,26 @@
 - GABRIEL ARMANDO DE ABREU (BEŞİKTAŞ A.Ş.)
 
 ### scout_tff_vs_api_deep
-- ADRIAN DAWID BENEDYCZAK (takım yok)
-- ALEXANDER GERARD  VAN DE STREEK (takım yok)
-- ANDERSON SOUZA CONCEIÇAO (takım yok)
-- BERTUĞ ÖZGÜR YILDIRIM (takım yok)
-- BRUNO PETKOVIC (takım yok)
-- CARL JOHAN HOLSE JUSTESEN (takım yok)
-- DAVIE SELKE (takım yok)
-- DORGELES NENE (takım yok)
-- EBERE PAUL ONUACHU (takım yok)
-- ELDOR SHOMURODOV (takım yok)
-- ERNEST MUÇİ (takım yok)
-- FELIPE AUGUSTO DA SILVA (takım yok)
-- FLORENT HADERGJONAJ (takım yok)
-- FRANCO DARYL TONGYA HEUBANG (takım yok)
-- GERMAN ONUGKHA (takım yok)
-- GÜVEN YALÇIN (takım yok)
-- JACKSON KYANVUBU MULEKA (takım yok)
-- JUAN SANTOS DA SILVA (takım yok)
-- KEVIN OGHENETEGA TAMARAEBI BAKUMO ABRAHAM (takım yok)
-- LASZLO BENES (takım yok)
+- ADRIAN DAWID BENEDYCZAK (KASIMPAŞA A.Ş.)
+- ALEXANDER GERARD  VAN DE STREEK (HESAP.COM ANTALYASPOR)
+- ANDERSON SOUZA CONCEIÇAO (FENERBAHÇE A.Ş.)
+- BERTUĞ ÖZGÜR YILDIRIM (RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ)
+- BRUNO PETKOVIC (KOCAELİSPOR)
+- CARL JOHAN HOLSE JUSTESEN (SAMSUNSPOR A.Ş.)
+- DAVIE SELKE (RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ)
+- DORGELES NENE (FENERBAHÇE A.Ş.)
+- EBERE PAUL ONUACHU (TRABZONSPOR A.Ş.)
+- ELDOR SHOMURODOV (RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ)
+- ERNEST MUÇİ (TRABZONSPOR A.Ş.)
+- FELIPE AUGUSTO DA SILVA (TRABZONSPOR A.Ş.)
+- FLORENT HADERGJONAJ (CORENDON ALANYASPOR)
+- FRANCO DARYL TONGYA HEUBANG (GENÇLERBİRLİĞİ)
+- GERMAN ONUGKHA (ZECORNER KAYSERİSPOR)
+- GÜVEN YALÇIN (CORENDON ALANYASPOR)
+- JACKSON KYANVUBU MULEKA (TÜMOSAN KONYASPOR)
+- JUAN SANTOS DA SILVA (GÖZTEPE A.Ş.)
+- KEVIN OGHENETEGA TAMARAEBI BAKUMO ABRAHAM (BEŞİKTAŞ A.Ş.)
+- LASZLO BENES (ZECORNER KAYSERİSPOR)
 
 ### besiktas_tff_vs_api_deep
 - AHMET SAMİ BİRCAN (BEŞİKTAŞ A.Ş.)
