@@ -1,23 +1,21 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-07-18T03:31:46.972003+00:00
-Toplam ilgili haber: 21
+Üretim zamanı: 2026-07-18T05:07:32.194216+00:00
+Toplam ilgili haber: 19
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
 - [TEŞEKKÜRLER MİGUEL CRESPO](https://ibfk.com.tr/haberler/tesekkurler-miguel-crespo) — Başakşehir Resmi Web · 7.7.2026 21:16:30 · turnuva=EL · kulüp=Başakşehir
-- [Fenerbahçe, Gornik Zabrze maçı hazırlıklarını sürdürdü!](https://www.sabah.com.tr/spor/futbol/2026/07/17/fenerbahce-gornik-zabrze-maci-hazirliklarini-surdurdu) — Sabah Spor · 2026-07-17T22:20:58+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Fenerbahçe'nin UEFA kadrosu açıklandı! Mason Greenwood kararı...](https://www.sabah.com.tr/spor/futbol/2026/07/17/fenerbahcenin-uefa-kadrosu-aciklandi-mason-greenwood-karari) — Sabah Spor · 2026-07-17T20:06:30+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Fenerbahçe Gornik Zabrze maçı kadrosunu UEFA'ya bildirdi!](https://www.fotomac.com.tr/fenerbahce/2026/07/17/fenerbahce-gornik-zabrze-maci-kadrosunu-uefaya-bildirdi) — Fotomaç · 2026-07-17T19:45:10+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe Gornik Zabrze maçı kadrosunu UEFA'ya bildirdi!](https://www.fotomac.com.tr/fenerbahce/2026/07/17/fenerbahce-gornik-zabrze-maci-kadrosunu-uefaya-bildirdi) — Fotomaç · 2026-07-18T01:02:59+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Beşiktaş'ın Avrupa Ligi 3. Eleme Turu'nda muhtemel rakipleri belli oldu!](https://www.fotomac.com.tr/besiktas/2026/07/17/besiktasin-avrupa-ligi-3-eleme-turunda-muhtemel-rakipleri-belli-oldu) — Fotomaç · 2026-07-18T01:02:31+03:00 · turnuva=EL · kulüp=Beşiktaş
+- [Basketbol Şampiyonlar Ligi’nde yeni sezonun grupları ve eşleşmeleri açıklandı](https://www.fotomac.com.tr/galatasaray/2026/07/17/basketbol-sampiyonlar-liginde-yeni-sezonun-gruplari-ve-eslesmeleri-aciklandi) — Fotomaç · 2026-07-18T01:02:00+03:00 · turnuva=CL · kulüp=Galatasaray, Trabzonspor
 - [F.Bahçe'de Gornik Zabrze mesaisi!](https://www.haberturk.com/fenerbahce-de-gornik-zabrze-mesaisi-3899283-spor) — Haberturk Spor · 2026-07-17T19:44:54+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Basketbol Şampiyonlar Ligi’nde yeni sezonun grupları ve eşleşmeleri açıklandı](https://www.fotomac.com.tr/galatasaray/2026/07/17/basketbol-sampiyonlar-liginde-yeni-sezonun-gruplari-ve-eslesmeleri-aciklandi) — Fotomaç · 2026-07-17T18:07:13+03:00 · turnuva=CL · kulüp=Galatasaray, Trabzonspor
 - [Fenerbahçe'nin UEFA listesi belli oldu - Yeni transferler kadroda yer almadı - Transfermarkt](https://news.google.com/rss/articles/CBMiwAFBVV95cUxNYXB1dnN1clJIby1jN2ZLc05CTzZLeDBGX2diUVZuRk5hTjF4ZEFEek5Zel85UDhuMzBLQnZMc3VtdzdoSkV0T0hpcUNPNHJkRFU4YjhPWTItbzczbEQ4cXpFOXdqLUtrR3RQVmhremdTN3JOWmRLUkZjVnM1YTNhbzlxS0NsamZuUkUtdUExNEFOXy0yQWo3OEdaOElYZmJ4ZTlvdjQyaDlZb1VRc1FRa2F3VUtNRnJSVUpGMmZJZlc?oc=5) — Transfermarkt · 2026-07-17T17:52:32+00:00 · turnuva=— · kulüp=Fenerbahçe
 - [F.Bahçe'nin Gornik Zabrze kadrosu belli oldu!](https://www.haberturk.com/son-dakika-fenerbahce-nin-gornik-zabrze-maclari-kadrosu-belli-oldu-3899264-spor) — Haberturk Spor · 2026-07-17T16:59:43+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe'nin Gornik Zabrze maçlarının kadrosunu UEFA'ya bildirdi! Yeni transferler yok](https://www.hurriyet.com.tr/sporarena/fenerbahcenin-gornik-zabrze-maclarinin-kadrosunu-uefaya-bildirdi-yeni-transferler-yok-43243341) — Hürriyet Spor · 2026-07-17T16:51:00+00:00 · turnuva=— · kulüp=Fenerbahçe
 - [Fenerbahçe'nin Gornik Zabrze maçlarının kadrosunu UEFA'ya bildirdi! Yeni transferler yok - Hürriyet](https://news.google.com/rss/articles/CBMizAFBVV95cUxNaFNkSmUzTl9IOWI3ZmduQ3NQQ0ZBVFAwT2UxWGhCRGYyNGtWZjZEU09KbjZGbVF0RDktakZ3aHFSblgzUVVMa0VUeTl0U3J4NS1TMDVaTTVkMW0xTXVVbmllR3BqRVZmbUxBcEEzekJQN280bkJMVHJ4NFVjR0EtMW1NZU1ydHdpX1llUUpqdDNJOGNSQklzX29NOFQ4X19sZjU0Vml1OUFlbnRzaXZCRGh0MFVsSEtPbFd0WTVsWV9CbFc4MnI2QW5Vamk?oc=5) — Hürriyet · 2026-07-17T16:51:00+00:00 · turnuva=— · kulüp=Fenerbahçe
 - [Fenerbahçe'nin UEFA kadrosunu açıkladı! Yeni transferler kadroda yok - Fenerbahçe - Spor Haberleri - Milliyet](https://news.google.com/rss/articles/CBMirgFBVV95cUxQNGhaVXJ2Q1duZ1QxOU5Jd3dZaFVHT2UxYXI1YWNJcnpBZmtjMzAtNGZscEJuZDBSTV9xVWNiRnZTR1lRVzFtS3N2WDJBaWtyWTZjWWlWVFZ0YmV3X2g2MF9UMEdGd0p2a3A2MHNQdTBsRTFoQVMzYVN4Rlk2aUltSGY4UHl5ZGZkaDVacEJvdEhxRE1TZVptZi1DSExtQW9HOGpJdl9uUFJhbGZWc2c?oc=5) — Milliyet · 2026-07-17T16:40:00+00:00 · turnuva=— · kulüp=Fenerbahçe
-- [Beşiktaş'ın Avrupa Ligi 3. Eleme Turu'nda muhtemel rakipleri belli oldu!](https://www.fotomac.com.tr/besiktas/2026/07/17/besiktasin-avrupa-ligi-3-eleme-turunda-muhtemel-rakipleri-belli-oldu) — Fotomaç · 2026-07-17T10:04:22+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [UEFA Konferans Ligi'nde 2. eleme turuna yükselen takımlar belli oldu](https://www.cnnturk.com/spor/futbol/uefa-konferans-liginde-2-eleme-turuna-yukselen-takimlar-belli-oldu-3443607) — CNN Türk Spor · 2026-07-17T09:04:57+00:00 · turnuva=ECL · kulüp=—
 - [UEFA Avrupa Ligi'nde 2. eleme turuna yükselen takımlar belli oldu](https://www.cnnturk.com/spor/futbol/uefa-avrupa-liginde-2-eleme-turuna-yukselen-takimlar-belli-oldu-3443578) — CNN Türk Spor · 2026-07-17T07:07:19+00:00 · turnuva=EL · kulüp=—
 - [Başakşehir'in UEFA Konferans Ligi 2. eleme turundaki rakibi Inter Turku oldu](https://www.aa.com.tr/tr/spor/basaksehirin-uefa-konferans-ligi-2-eleme-turundaki-rakibi-inter-turku-oldu/4000654) — Anadolu Ajansı Spor · 2026-07-16T20:22:20+03:00 · turnuva=ECL · kulüp=Başakşehir
