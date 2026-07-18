@@ -59,9 +59,9 @@
       "name": "Alanyaspor Resmi Web",
       "url": "https://www.alanyaspor.org.tr/Haberler",
       "current_league": true,
-      "fetched": 1,
+      "fetched": 0,
       "warnings": [],
-      "error": null
+      "error": "listing: HTTPSConnectionPool(host='www.alanyaspor.org.tr', port=443): Max retries exceeded with url: /Haberler (Caused by Connect"
     },
     {
       "team": "SAMSUNSPOR A.Ş.",
@@ -173,7 +173,7 @@
       "current_league": false,
       "fetched": 1,
       "warnings": [
-        "listing: HTTPSConnectionPool(host='kayserispor.org.tr', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVe"
+        "listing: HTTPSConnectionPool(host='kayserispor.org.tr', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutErro"
       ],
       "error": null
     },
