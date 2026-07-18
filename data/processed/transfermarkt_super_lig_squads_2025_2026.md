@@ -30,6 +30,10 @@
 - HESAP.COM ANTALYASPOR: oyuncu=48, değer=€26,275,000, verified=True, mode=live, url=https://www.transfermarkt.com/antalyaspor/kader/verein/589/saison_id/2025
 - ZECORNER KAYSERİSPOR: oyuncu=51, değer=€29,875,000, verified=True, mode=live, url=https://www.transfermarkt.com/kayserispor/kader/verein/3205/saison_id/2025
 
+## Stale Koruma
+
+- Sebep: collector_produced_no_nonempty_clubs
+
 ## Beşiktaş Tekil Rapor Formatı
 
 # Transfermarkt Beşiktaş Kadro Verisi

@@ -3,13 +3,13 @@
 - Toplam TFF oyuncu: 691
 - Lig snapshot kapsamında TFF oyuncu: 626
 - Kulüp içi canonical eşleşme: 399
-- Kulüp içi profil tam-ad eşleşme: 31
-- Kulüp içi token eşleşme: 164
+- Kulüp içi profil tam-ad eşleşme: 0
+- Kulüp içi token eşleşme: 193
 - Manuel eşleme (ağ teyidi bekleyen): 4
-- Eşleşmedi: 93
-- Doğrulanmış tüm profil kapsamı: %86.0
-- Doğrulanmış lig snapshot içi kapsama: %94.9
-- Manuel eşleme dahil kullanılabilir lig snapshot içi kapsama: %95.5
+- Eşleşmedi: 95
+- Doğrulanmış tüm profil kapsamı: %85.7
+- Doğrulanmış lig snapshot içi kapsama: %94.6
+- Manuel eşleme dahil kullanılabilir lig snapshot içi kapsama: %95.2
 
 ## En Yüksek Piyasa Değeri (Eşleşen Oyuncular)
 
