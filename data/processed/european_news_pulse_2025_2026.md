@@ -1,7 +1,7 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-07-18T06:22:47.938750+00:00
-Toplam ilgili haber: 19
+Üretim zamanı: 2026-07-18T08:09:49.784182+00:00
+Toplam ilgili haber: 18
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
@@ -10,7 +10,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Fenerbahçe Gornik Zabrze maçı kadrosunu UEFA'ya bildirdi!](https://www.fotomac.com.tr/fenerbahce/2026/07/17/fenerbahce-gornik-zabrze-maci-kadrosunu-uefaya-bildirdi) — Fotomaç · 2026-07-18T01:02:59+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Beşiktaş'ın Avrupa Ligi 3. Eleme Turu'nda muhtemel rakipleri belli oldu!](https://www.fotomac.com.tr/besiktas/2026/07/17/besiktasin-avrupa-ligi-3-eleme-turunda-muhtemel-rakipleri-belli-oldu) — Fotomaç · 2026-07-18T01:02:31+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Basketbol Şampiyonlar Ligi’nde yeni sezonun grupları ve eşleşmeleri açıklandı](https://www.fotomac.com.tr/galatasaray/2026/07/17/basketbol-sampiyonlar-liginde-yeni-sezonun-gruplari-ve-eslesmeleri-aciklandi) — Fotomaç · 2026-07-18T01:02:00+03:00 · turnuva=CL · kulüp=Galatasaray, Trabzonspor
-- [Fenerbahçe, Gornik Zabrze maçı hazırlıklarını sürdürdü!](https://www.sabah.com.tr/spor/futbol/2026/07/17/fenerbahce-gornik-zabrze-maci-hazirliklarini-surdurdu) — Sabah Spor · 2026-07-17T22:20:58+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [F.Bahçe'de Gornik Zabrze mesaisi!](https://www.haberturk.com/fenerbahce-de-gornik-zabrze-mesaisi-3899283-spor) — Haberturk Spor · 2026-07-17T19:44:54+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe'nin UEFA listesi belli oldu - Yeni transferler kadroda yer almadı - Transfermarkt](https://news.google.com/rss/articles/CBMiwAFBVV95cUxNYXB1dnN1clJIby1jN2ZLc05CTzZLeDBGX2diUVZuRk5hTjF4ZEFEek5Zel85UDhuMzBLQnZMc3VtdzdoSkV0T0hpcUNPNHJkRFU4YjhPWTItbzczbEQ4cXpFOXdqLUtrR3RQVmhremdTN3JOWmRLUkZjVnM1YTNhbzlxS0NsamZuUkUtdUExNEFOXy0yQWo3OEdaOElYZmJ4ZTlvdjQyaDlZb1VRc1FRa2F3VUtNRnJSVUpGMmZJZlc?oc=5) — Transfermarkt · 2026-07-17T17:52:32+00:00 · turnuva=— · kulüp=Fenerbahçe
 - [F.Bahçe'nin Gornik Zabrze kadrosu belli oldu!](https://www.haberturk.com/son-dakika-fenerbahce-nin-gornik-zabrze-maclari-kadrosu-belli-oldu-3899264-spor) — Haberturk Spor · 2026-07-17T16:59:43+00:00 · turnuva=CL · kulüp=Fenerbahçe
