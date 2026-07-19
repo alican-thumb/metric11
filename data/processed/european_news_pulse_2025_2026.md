@@ -1,21 +1,20 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-07-19T19:32:39.926305+00:00
-Toplam ilgili haber: 21
+Üretim zamanı: 2026-07-19T23:10:17.988419+00:00
+Toplam ilgili haber: 19
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
 - [TEŞEKKÜRLER DOĞAN ALEMDAR](https://ibfk.com.tr/haberler/tesekkurler-dogan-alemdar) — Başakşehir Resmi Web · 8.7.2026 23:35:12 · turnuva=ECL · kulüp=Beşiktaş, Başakşehir
 - [TEŞEKKÜRLER MİGUEL CRESPO](https://ibfk.com.tr/haberler/tesekkurler-miguel-crespo) — Başakşehir Resmi Web · 7.7.2026 21:16:30 · turnuva=EL · kulüp=Başakşehir
-- [Fenerbahçe'de Gornik Zabrze mesaisi devam ediyor](https://www.aksam.com.tr/spor/fenerbahcede-gornik-zabrze-mesaisi-devam-ediyor/haber-1684025) — Aksam Spor · 2026-07-19T20:54:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe'de Gornik Zabrze maçı hazırlıkları devam etti!](https://www.sabah.com.tr/spor/futbol/2026/07/19/fenerbahcede-gornik-zabrze-maci-hazirliklari-devam-etti) — Sabah Spor · 2026-07-19T20:22:59+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe'de Gornik Zabrze maçı mesaisi!](https://www.haberturk.com/fenerbahce-gornik-zabrze-maci-hazirliklarini-surdurdu-3899555-spor) — Haberturk Spor · 2026-07-19T18:00:40+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe, Gornik Zabrze maçı hazırlıklarını sürdürdü!](https://www.hurriyet.com.tr/sporarena/fenerbahce-gornik-zabrze-maci-hazirliklarini-surdurdu-43245082) — Hürriyet Spor · 2026-07-19T17:21:46+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Beşiktaş Midtjylland maçı hazırlıklarını sürdürdü](https://www.fotomac.com.tr/besiktas/2026/07/19/besiktas-midtjylland-maci-hazirliklarini-surdurdu) — Fotomaç · 2026-07-19T15:08:07+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş'ta, Midtjylland mesaisi sürüyor](https://www.cnnturk.com/spor/futbol/besiktasta-midtjylland-mesaisi-suruyor-3444417) — CNN Türk Spor · 2026-07-19T15:03:12+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş, Midtjylland maçı hazırlıklarını sürdürdü](https://www.hurriyet.com.tr/sporarena/besiktas-midtjylland-maci-hazirliklarini-surdurdu-43244839) — Hürriyet Spor · 2026-07-19T11:48:39+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş, Midtjylland'a hazırlanıyor](https://www.haberturk.com/besiktas-midtjylland-a-hazirlaniyor-3899516-spor) — Haberturk Spor · 2026-07-19T11:44:26+00:00 · turnuva=EL · kulüp=Beşiktaş
+- [İsmail Kartal, Gornik maçının ilk 11'ini belirledi! Fenerbahçe'nin Şampiyonlar Ligi serüveni başlıyor - NTVSpor](https://news.google.com/rss/articles/CBMi1wFBVV95cUxQOU1ZTGhWdTFkZV9iVzVwQzVHVDZudzZRWF9fYXpheVJSZU41eU5EWDY3YUhrbWpuNEpfT3lUSFU1NzB5SW0xVnM1RTRUQXhGcmFKSHF1UGdfTkZuSElrckJWVlFLUm5fT0lha0tzbnhJRUlqQWc3dEdBbmRYZzhPRUFVLUZEcl85eWdtTHhXRVlFb0pCOWt5NXBhc1JYdEZuRUFlVFNhQ1dKZ0ZXdGo4SjJZWkhyWmtiVkVRMkpCdHpkTmtLbkxWZUNZa2I3OGZCR3lIeDlERdIB3AFBVV95cUxQVGJWQWlFR3RBeFVRUURMZk1fNnNiYmVQcFhwSmFyZlkyaDlDdExnY29XVzI3RWxteUk5ZjVfeXBTaVVTSlhBeEg4b0N2YjNuaHUtS0ltVzBBSktWWld4NDRyZkx0NmI0cThVSXJfSU9wbGsxckVYcC1rVGtKbGtHR1ZTbFZ3eTBJQ1dLclAxTFdqc3lnRWJnLVU5Tks1RXZQQ1NpZUF4Smc5bHBQelkxd003YWtJUGtUOE05dmxjeVFLd2dULXhkeHFZUTlhc3k1UjZudVU3eXVJcVJ1?oc=5) — NTVSpor · 2026-07-19T11:33:38+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Didier Deschamps Fransa'daki görevinden ayrıldı](https://www.takvim.com.tr/spor/2026/07/18/didier-deschamps-fransadaki-gorevinden-ayrildi) — Takvim Spor · 2026-07-19T03:36:10+03:00 · turnuva=— · kulüp=—
 - [Fenerbahçe-Gornik Zabrze maçı ne zaman?](https://www.haberturk.com/fenerbahce-gornik-zabrze-maci-ne-zaman-saat-kacta-uefa-avrupa-ligi-fenerbahce-gornik-zabrze-maci-hangi-kanalda-3899439-spor) — Haberturk Spor · 2026-07-18T22:37:06+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe'ye müjde: Gornik Zabrze'de şok sakatlık! Jaroslaw Kubicki maçta yok](https://www.takvim.com.tr/spor/fenerbahce/2026/07/18/fenerbahceye-mujde-gornik-zabrzede-sok-sakatlik) — Takvim Spor · 2026-07-18T16:38:37+03:00 · turnuva=CL · kulüp=Fenerbahçe
@@ -23,7 +22,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Beşiktaş'ın Midtjylland maçlarının hakemleri açıklandı! İlk maça İspanyol ikinci maça Hırvat hakem](https://www.takvim.com.tr/spor/besiktas/2026/07/18/besiktasin-midtjylland-maclarinin-hakemleri-aciklandi) — Takvim Spor · 2026-07-18T13:32:45+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Başakşehir-Inter Turku maçında İspanyol hakem Juan Martinez Munuera düdük çalacak](https://www.aa.com.tr/tr/spor/basaksehir-inter-turku-macinda-ispanyol-hakem-juan-martinez-munuera-duduk-calacak/4002134) — Anadolu Ajansı Spor · 2026-07-18T12:35:44+03:00 · turnuva=ECL · kulüp=Başakşehir
 - [Beşiktaş-Midtjylland maçını İspanyol hakem Ricardo de Burgos yönetecek](https://www.aa.com.tr/tr/spor/besiktas-midtjylland-macini-ispanyol-hakem-ricardo-de-burgos-yonetecek/4002100) — Anadolu Ajansı Spor · 2026-07-18T11:41:24+03:00 · turnuva=EL · kulüp=Beşiktaş
-- [İşte Beşiktaş-Midtjylland maçlarının hakemleri!](https://www.haberturk.com/besiktas-midtjylland-maclarinin-hakemleri-belli-oldu-ilk-maca-ispanyol-hakem-3899345-spor) — Haberturk Spor · 2026-07-18T08:32:58+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Fenerbahçe'nin Şampiyonlar Ligi'nde oynayacağı Gornik Zabrze maçının hakemi Manfredas Lukjancukas oldu!](https://www.takvim.com.tr/spor/fenerbahce/2026/07/16/fenerbahcenin-sampiyonlar-ligi-macinin-hakemi-aciklandi) — Takvim Spor · 2026-07-16T15:44:49+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe’nin Şampiyonlar Ligi rotası netleşti: 3. tur ve play-off’taki muhtemel rakipler belli oldu](https://www.takvim.com.tr/spor/fenerbahce/2026/07/16/fenerbahcenin-sampiyonlar-ligi-muhtemel-rakipleri) — Takvim Spor · 2026-07-16T12:21:52+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Kulübümüz, son olarak Belçika Pro Lig ekiplerinden KVC Westerlo forma giyen Emin Bayram ile 4 yıllık anlaşma sağladı.](https://ibfk.com.tr/haberler/hos-geldin-emin-bayram) — Başakşehir Resmi Web · 10.7.2026 22:54:38 · turnuva=ECL · kulüp=Başakşehir
