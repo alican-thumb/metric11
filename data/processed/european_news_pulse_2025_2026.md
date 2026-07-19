@@ -1,13 +1,14 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-07-19T13:54:17.252658+00:00
-Toplam ilgili haber: 23
+Üretim zamanı: 2026-07-19T15:15:10.166914+00:00
+Toplam ilgili haber: 24
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
 - [TEŞEKKÜRLER DOĞAN ALEMDAR](https://ibfk.com.tr/haberler/tesekkurler-dogan-alemdar) — Başakşehir Resmi Web · 8.7.2026 23:35:12 · turnuva=ECL · kulüp=Beşiktaş, Başakşehir
 - [TEŞEKKÜRLER MİGUEL CRESPO](https://ibfk.com.tr/haberler/tesekkurler-miguel-crespo) — Başakşehir Resmi Web · 7.7.2026 21:16:30 · turnuva=EL · kulüp=Başakşehir
+- [Beşiktaş'ta Midtjylland mesaisi devam etti!](https://www.sabah.com.tr/spor/futbol/2026/07/19/besiktasta-midtjylland-mesaisi-devam-etti) — Sabah Spor · 2026-07-19T17:28:59+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş Midtjylland maçı hazırlıklarını sürdürdü](https://www.fotomac.com.tr/besiktas/2026/07/19/besiktas-midtjylland-maci-hazirliklarini-surdurdu) — Fotomaç · 2026-07-19T15:08:07+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş'ta, Midtjylland mesaisi sürüyor](https://www.cnnturk.com/spor/futbol/besiktasta-midtjylland-mesaisi-suruyor-3444417) — CNN Türk Spor · 2026-07-19T15:03:12+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş, Midtjylland maçı hazırlıklarını sürdürdü](https://www.sabah.com.tr/spor/futbol/2026/07/19/besiktas-midtjylland-maci-hazirliklarini-surdurdu) — Sabah Spor · 2026-07-19T14:17:59+03:00 · turnuva=EL · kulüp=Beşiktaş
