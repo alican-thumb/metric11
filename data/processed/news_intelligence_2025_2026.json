@@ -1,66 +1,23 @@
 {
-  "generated_at": "2026-07-19T19:26:03.606703+00:00",
+  "generated_at": "2026-07-19T19:32:17.019208+00:00",
   "season": "2025_2026",
-  "total_articles": 452,
-  "analyzed_articles": 452,
-  "transfer_signals": 75,
-  "raw_transfer_mentions": 110,
-  "archived_transfer_signals": 83,
+  "total_articles": 451,
+  "analyzed_articles": 451,
+  "transfer_signals": 76,
+  "raw_transfer_mentions": 113,
+  "archived_transfer_signals": 84,
   "stale_transfer_mentions_excluded": 8,
   "transfer_status_counts": {
-    "OFFICIAL": 1,
+    "OFFICIAL": 0,
     "CORROBORATED": 9,
-    "RUMOR": 20,
+    "RUMOR": 22,
     "REVIEW_REQUIRED": 45
   },
   "injury_signals": 12,
   "suspension_signals": 0,
   "promotion_signals": 1,
-  "player_mentions": 614,
+  "player_mentions": 606,
   "transfers": [
-    {
-      "player_name": "NIHAD MUJAKIC",
-      "from_club": "GAZİANTEP FUTBOL KULÜBÜ A.Ş.",
-      "to_club": "ERZURUMSPOR FK",
-      "transfer_type": "permanent",
-      "window": "summer_2026",
-      "signal_type": "signing",
-      "confidence": "HIGH",
-      "tm_market_value_eur": 1200000,
-      "direction_quality": "TARGET_IDENTIFIED",
-      "article_id": "a0726db50d1a",
-      "title": "Erzurumspor’umuza hoş geldin Nihad Mujakic",
-      "link": "https://erzurumsporfk.org/2026/07/15/erzurumsporumuza-hos-geldin-nihad-mujakic/",
-      "source": "Erzurumspor FK Resmi Web",
-      "source_type": "official_club",
-      "account_type": "official",
-      "query": null,
-      "source_tier": "OFFICIAL",
-      "published_at": "2026-07-15T22:01:20+03:00",
-      "first_observed_at": "2026-07-19T13:53:48.926829+00:00",
-      "summary_tr": "",
-      "entity_confidence": "HIGH",
-      "verification_status": "OFFICIAL",
-      "interpretation": "Resmi kulüp kanalı duyurusu bulundu; işlem resmi transfer bağlamında izlenebilir.",
-      "source_count": 1,
-      "sources": [
-        "Erzurumspor FK Resmi Web"
-      ],
-      "evidence": [
-        {
-          "source": "Erzurumspor FK Resmi Web",
-          "source_tier": "OFFICIAL",
-          "source_type": "official_club",
-          "account_type": "official",
-          "query": null,
-          "title": "Erzurumspor’umuza hoş geldin Nihad Mujakic",
-          "link": "https://erzurumsporfk.org/2026/07/15/erzurumsporumuza-hos-geldin-nihad-mujakic/",
-          "published_at": "2026-07-15T22:01:20+03:00",
-          "first_observed_at": "2026-07-19T13:53:48.926829+00:00"
-        }
-      ],
-      "model_use": true
-    },
     {
       "player_name": "AHMED KUTUCU",
       "from_club": "GALATASARAY A.Ş.",
@@ -270,6 +227,7 @@
       "sources": [
         "Milliyet",
         "Hürriyet Spor",
+        "Hürriyet",
         "Fotomaç"
       ],
       "evidence": [
@@ -292,6 +250,17 @@
           "query": null,
           "title": "Beşiktaş'ta Tayyip Talha Sanuç Rizespor'a transfer oldu!",
           "link": "https://www.hurriyet.com.tr/sporarena/besiktasta-tayyip-talha-sanuc-rizespora-transfer-oldu-43244902",
+          "published_at": "2026-07-19T12:49:00+00:00",
+          "first_observed_at": null
+        },
+        {
+          "source": "Hürriyet",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Beşiktaş transfer",
+          "title": "Beşiktaş'ta Tayyip Talha Sanuç Rizespor'a transfer oldu! - Hürriyet",
+          "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNUTUyWUNBZVR5MXpsRHJ2cnczaFZEd0dWLUo1ZFFDd3duM3VpbVNZZURJQmNuMnRCUUJZMk5yUjlPYlF3Q1VJc2JjY29JLTVpVzFxVjllMkVwOXpsOEY3NFM2dDB3TWlqUGZhYUdMMlR3cXRQNE9uSGRFcjVrWUdFUGROb3A5N3pFV2haQVB6UHVralU0NExHVkctZjNnX0lQLUE?oc=5",
           "published_at": "2026-07-19T12:49:00+00:00",
           "first_observed_at": null
         },
@@ -885,47 +854,6 @@
       "model_use": false
     },
     {
-      "player_name": "Elliot Watt",
-      "from_club": null,
-      "to_club": "Samsunspor",
-      "signal_type": "official_transfer",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "HEADLINE_EXPLICIT_DIRECTION",
-      "article_id": "f74949077c73",
-      "title": "Samsunspor, Elliot Watt'ı Transfer Etti - Son Dakika",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQVUxpRzZuLWNKV2x5cFYxTnJqX0RZWS00bmhwcWRValhKcjB3UVF5bHdjU0hfcFJpRm52aThZMHAxTjB0akgxNFRIZEU2WDZPUGtfd28tcGUxVEJsZy00TlE3cmNMWEtSUlMweFVnOWFGanM2NkktQWxCemZIcEhaeDVOUDJIZ09NbVNqTEZB0gGMAUFVX3lxTFBJdlFfSEdoYXpSYzQ1Z1JXM0FINkwwcWZaeWZUV2hBV2ZGRUtTSEQwdDNtZ0dETjlXUlE3VWVvbUNQVFhPVHlvWGNnOW45YWxvcHplMFhzQTBfZHVtcVpxR3RXeGVaWGpncXVwamFKYkxpaDJTdllDWmRBWUp0S3NvR2tDM0xQN0kzRU1B?oc=5",
-      "source": "Son Dakika",
-      "source_type": "google_news",
-      "account_type": null,
-      "query": "Samsunspor transfer",
-      "source_tier": "MEDIA",
-      "published_at": "2026-07-18T18:06:32+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "MEDIUM",
-      "verification_status": "RUMOR",
-      "interpretation": "Tek kaynaklı transfer iddiası; yalnız transfer radarında izlenir.",
-      "source_count": 1,
-      "sources": [
-        "Son Dakika"
-      ],
-      "evidence": [
-        {
-          "source": "Son Dakika",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Samsunspor transfer",
-          "title": "Samsunspor, Elliot Watt'ı Transfer Etti - Son Dakika",
-          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQVUxpRzZuLWNKV2x5cFYxTnJqX0RZWS00bmhwcWRValhKcjB3UVF5bHdjU0hfcFJpRm52aThZMHAxTjB0akgxNFRIZEU2WDZPUGtfd28tcGUxVEJsZy00TlE3cmNMWEtSUlMweFVnOWFGanM2NkktQWxCemZIcEhaeDVOUDJIZ09NbVNqTEZB0gGMAUFVX3lxTFBJdlFfSEdoYXpSYzQ1Z1JXM0FINkwwcWZaeWZUV2hBV2ZGRUtTSEQwdDNtZ0dETjlXUlE3VWVvbUNQVFhPVHlvWGNnOW45YWxvcHplMFhzQTBfZHVtcVpxR3RXeGVaWGpncXVwamFKYkxpaDJTdllDWmRBWUp0S3NvR2tDM0xQN0kzRU1B?oc=5",
-          "published_at": "2026-07-18T18:06:32+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
       "player_name": "Amine Gouiri",
       "from_club": null,
       "to_club": "Galatasaray",
@@ -961,6 +889,47 @@
           "title": "Galatasaray'dan 9 numaraya fırsat transferi: Amine Gouiri!",
           "link": "https://www.fotomac.com.tr/galatasaray/2026/07/19/galatasaraydan-9-numaraya-firsat-transferi-amine-gouiri",
           "published_at": "2026-07-18T20:46:32+03:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": "Elliot Watt",
+      "from_club": null,
+      "to_club": "Samsunspor",
+      "signal_type": "official_transfer",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "HEADLINE_EXPLICIT_DIRECTION",
+      "article_id": "811c0ef0216d",
+      "title": "Samsunspor, Elliot Watt’ı transfer etti! - Sabah",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQa1IzT1Exam9FaGxkTWxHY0lsV0d4QS1HUGx3MUdRT25UeTBrZjV2NU9vUndXcXRSSXNlbDRMX2dROGRxRTlzYXRwN1FRelNaRWZLZ0JOODlONnBwYjdJU1RQVmd6LXVCWUdaRGdDYlhDVlVma2cxRVd6eFI0OWd3YXZYZEFBd1dIZ0xzTkNn0gGQAUFVX3lxTE9pNHFpcnpyUVFjYnlsLV9jdWVRTG1ONGdaTXR3V1dsbjdTc05SOEpFSW93N1ppZTd6ODUxZDIzUTZkZlF6YTAwcmREZ0t5MFdGenJBV3RmcXNtSWUxVnAwTWZHcmFVYlUycHpEeFRPMF9sc3l6bHMyU2Z1NjdyZm9udFlCa1ZYaXZ5VWNmM1VEWA?oc=5",
+      "source": "Sabah",
+      "source_type": "google_news",
+      "account_type": null,
+      "query": "Samsunspor transfer",
+      "source_tier": "MEDIA",
+      "published_at": "2026-07-18T17:39:13+00:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "MEDIUM",
+      "verification_status": "RUMOR",
+      "interpretation": "Tek kaynaklı transfer iddiası; yalnız transfer radarında izlenir.",
+      "source_count": 1,
+      "sources": [
+        "Sabah"
+      ],
+      "evidence": [
+        {
+          "source": "Sabah",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Samsunspor transfer",
+          "title": "Samsunspor, Elliot Watt’ı transfer etti! - Sabah",
+          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQa1IzT1Exam9FaGxkTWxHY0lsV0d4QS1HUGx3MUdRT25UeTBrZjV2NU9vUndXcXRSSXNlbDRMX2dROGRxRTlzYXRwN1FRelNaRWZLZ0JOODlONnBwYjdJU1RQVmd6LXVCWUdaRGdDYlhDVlVma2cxRVd6eFI0OWd3YXZYZEFBd1dIZ0xzTkNn0gGQAUFVX3lxTE9pNHFpcnpyUVFjYnlsLV9jdWVRTG1ONGdaTXR3V1dsbjdTc05SOEpFSW93N1ppZTd6ODUxZDIzUTZkZlF6YTAwcmREZ0t5MFdGenJBV3RmcXNtSWUxVnAwTWZHcmFVYlUycHpEeFRPMF9sc3l6bHMyU2Z1NjdyZm9udFlCa1ZYaXZ5VWNmM1VEWA?oc=5",
+          "published_at": "2026-07-18T17:39:13+00:00",
           "first_observed_at": null
         }
       ],
@@ -1084,6 +1053,49 @@
           "title": "Kocaelispor, Haydar Karataş'ı kadrosuna kattı - NTVSpor",
           "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNbjA0X0lKaDdkamVqaGswQ18xMnR3ME9DeFluWDNlVTRGVXpjSHVkdU1tZi1FQnlnTkJiaTEtaXhnWlNKZkxPMjFBMjNvWEZNTm1uc3VQNnROVjNEajAwZ0xFT0d3aWJucldGbnVvdGVVbU9GR3FKT2k0NVBLM1F2T0kza2dJbDFE0gGOAUFVX3lxTE9XNzhSTEtUN3pOS1N6V0JmY0dNa1ByTC00WGxmN3FPTkVVcjdhd0V6ZnZ6bW1nVWl5Sk8zdS1Pemd2bXFSdzdrU2JCUFhWcXRNRmdTanVOUmF5cXNIbjdBN3U2cU9QOHdJeXQzYVRpYUtUWjVCeTRfMmxrc1ZnWmVHeUNxY2VQSGJXZ1pOZlE?oc=5",
           "published_at": "2026-07-17T18:26:52+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": "HAYDAR KARATAŞ",
+      "from_club": "SAKARYASPOR A.Ş.",
+      "to_club": "Kocaelispor",
+      "transfer_type": "permanent",
+      "window": "summer_2026",
+      "signal_type": "official_transfer",
+      "confidence": "LOW",
+      "tm_market_value_eur": null,
+      "direction_quality": "TARGET_IDENTIFIED",
+      "article_id": "87c0290e1eff",
+      "title": "Kocaelispor, Haydar Karataş'ı Transfer Etti - Son Dakika",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNX3hhMFBweXFIVGF6ME9kRFVBa01taEJhUGQzTXhaTDk4MHRFRllybG5nSjF2NGs3STFNNWlzNUlQQzFOYzVpQU53SXQ0NmZndlM4bE5RdkE2dHAtMFNydE4tTWJwWkxtMFgyOTlsQzhCVVZuQS05MFRWZzBDcU9mX244QUQ3Z0J6QjUtWEx1UXdPd9IBkgFBVV95cUxNX3hhMFBweXFIVGF6ME9kRFVBa01taEJhUGQzTXhaTDk4MHRFRllybG5nSjF2NGs3STFNNWlzNUlQQzFOYzVpQU53SXQ0NmZndlM4bE5RdkE2dHAtMFNydE4tTWJwWkxtMFgyOTlsQzhCVVZuQS05MFRWZzBDcU9mX244QUQ3Z0J6QjUtWEx1UXdPdw?oc=5",
+      "source": "Son Dakika",
+      "source_type": "google_news",
+      "account_type": null,
+      "query": "Kocaelispor transfer",
+      "source_tier": "MEDIA",
+      "published_at": "2026-07-17T15:25:12+00:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "HIGH",
+      "verification_status": "RUMOR",
+      "interpretation": "Tek kaynaklı transfer iddiası; yalnız transfer radarında izlenir.",
+      "source_count": 1,
+      "sources": [
+        "Son Dakika"
+      ],
+      "evidence": [
+        {
+          "source": "Son Dakika",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Kocaelispor transfer",
+          "title": "Kocaelispor, Haydar Karataş'ı Transfer Etti - Son Dakika",
+          "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNX3hhMFBweXFIVGF6ME9kRFVBa01taEJhUGQzTXhaTDk4MHRFRllybG5nSjF2NGs3STFNNWlzNUlQQzFOYzVpQU53SXQ0NmZndlM4bE5RdkE2dHAtMFNydE4tTWJwWkxtMFgyOTlsQzhCVVZuQS05MFRWZzBDcU9mX244QUQ3Z0J6QjUtWEx1UXdPd9IBkgFBVV95cUxNX3hhMFBweXFIVGF6ME9kRFVBa01taEJhUGQzTXhaTDk4MHRFRllybG5nSjF2NGs3STFNNWlzNUlQQzFOYzVpQU53SXQ0NmZndlM4bE5RdkE2dHAtMFNydE4tTWJwWkxtMFgyOTlsQzhCVVZuQS05MFRWZzBDcU9mX244QUQ3Z0J6QjUtWEx1UXdPdw?oc=5",
+          "published_at": "2026-07-17T15:25:12+00:00",
           "first_observed_at": null
         }
       ],
@@ -1463,6 +1475,49 @@
       "model_use": false
     },
     {
+      "player_name": "KEVIN MANUEL  RODRIGUES",
+      "from_club": "GAZİANTEP FUTBOL KULÜBÜ A.Ş.",
+      "to_club": "Gençlerbirliği",
+      "transfer_type": "permanent",
+      "window": "summer_2026",
+      "signal_type": "official_transfer",
+      "confidence": "LOW",
+      "tm_market_value_eur": 800000,
+      "direction_quality": "TARGET_IDENTIFIED",
+      "article_id": "ddc200ff4db9",
+      "title": "Gençlerbirliği, Portekizli sol bek Kevin Rodrigues'i transfer etti - Anadolu Ajansı",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPUHFRLVdaMkJabVRlNVNpdlRRRUJvTjEzNWV1NlJZd1pTVzR1UXgwNVl1T0doRjRfRDdXN0VlLTEwRFB4YVFobi1zR19yMTFiNXhEd3FGMl9MbEpiNDNqQ042bUtON29MVU1yUEI0Um9jOHNuRzlYekVDekgxN21iRzNNR0owMS1iTW5yYi1mSTVTZ25NM090eFoxY2ZCQ20temVRaw?oc=5",
+      "source": "Anadolu Ajansı",
+      "source_type": "google_news",
+      "account_type": null,
+      "query": "Gençlerbirliği transfer",
+      "source_tier": "MEDIA",
+      "published_at": "2026-07-09T07:00:00+00:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "HIGH",
+      "verification_status": "RUMOR",
+      "interpretation": "Tek kaynaklı transfer iddiası; yalnız transfer radarında izlenir.",
+      "source_count": 1,
+      "sources": [
+        "Anadolu Ajansı"
+      ],
+      "evidence": [
+        {
+          "source": "Anadolu Ajansı",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Gençlerbirliği transfer",
+          "title": "Gençlerbirliği, Portekizli sol bek Kevin Rodrigues'i transfer etti - Anadolu Ajansı",
+          "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPUHFRLVdaMkJabVRlNVNpdlRRRUJvTjEzNWV1NlJZd1pTVzR1UXgwNVl1T0doRjRfRDdXN0VlLTEwRFB4YVFobi1zR19yMTFiNXhEd3FGMl9MbEpiNDNqQ042bUtON29MVU1yUEI0Um9jOHNuRzlYekVDekgxN21iRzNNR0owMS1iTW5yYi1mSTVTZ25NM090eFoxY2ZCQ20temVRaw?oc=5",
+          "published_at": "2026-07-09T07:00:00+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
       "player_name": "Mason Greenwood",
       "from_club": null,
       "to_club": "Fenerbahçe",
@@ -1702,7 +1757,8 @@
       "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
       "source_count": 1,
       "sources": [
-        "Takvim Spor"
+        "Takvim Spor",
+        "Takvim"
       ],
       "evidence": [
         {
@@ -1714,6 +1770,17 @@
           "title": "Beşiktaş'tan Juan Cabal sürprizi! Transfer görüşmesi başladı",
           "link": "https://www.takvim.com.tr/spor/besiktas/2026/07/19/besiktastan-juan-cabal-surprizi-transfer-gorusmesi-basladi",
           "published_at": "2026-07-19T21:08:39+03:00",
+          "first_observed_at": null
+        },
+        {
+          "source": "Takvim",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Beşiktaş transfer",
+          "title": "Beşiktaş’tan Juan Cabal sürprizi! Transfer görüşmesi başladı - Takvim",
+          "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxON0IzR2xhbVFzc0lQWHY0RnluYkYxLW1sdHhPTl9sS2ZwbFBjaWVMZW5RRjRhcDR5cHE0X2ZXVUNxOVFGQU9XSHBzRm1yQ3pTVEJ2OHlRVXRBRHBZcVhWRnV3cU16QXJmY19mc0VJcG9GdjRZX28zTm9OcjJwLS1HY3BleXZ3YlFxN3ZVOUd0a09RR0tkdDhhR1A4MWR3Sml5cWhMNTJJa1plOGZIT0E?oc=5",
+          "published_at": "2026-07-19T18:08:39+00:00",
           "first_observed_at": null
         }
       ],
@@ -2331,47 +2398,6 @@
           "title": "Beşiktaş'a Léo Pereira müjdesi! İmza yakın, sıra Flamengo'da",
           "link": "https://www.takvim.com.tr/spor/besiktas/2026/07/18/besiktasa-leo-pereira-mujdesi-imza-yakin-sira-flamengoda",
           "published_at": "2026-07-18T22:04:16+03:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": null,
-      "to_club": "Beşiktaş",
-      "signal_type": "transfer_fee",
-      "window": "winter_2027",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "11ff5489ddda",
-      "title": "Beşiktaş'ta Leo Pereira an meselesi! Sözleşme süresi...",
-      "link": "https://www.fotomac.com.tr/besiktas/2026/07/19/besiktasta-leo-pereira-an-meselesi-sozlesme-suresi",
-      "source": "Fotomaç",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-07-18T21:53:47+03:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Fotomaç"
-      ],
-      "evidence": [
-        {
-          "source": "Fotomaç",
-          "source_tier": "MEDIA",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "Beşiktaş'ta Leo Pereira an meselesi! Sözleşme süresi...",
-          "link": "https://www.fotomac.com.tr/besiktas/2026/07/19/besiktasta-leo-pereira-an-meselesi-sozlesme-suresi",
-          "published_at": "2026-07-18T21:53:47+03:00",
           "first_observed_at": null
         }
       ],
@@ -5252,6 +5278,28 @@
       ]
     },
     {
+      "article_id": "4f9174421c2f",
+      "title": "Beşiktaş ile anılan Fenerbahçeli milli futbolcu Orkun Kökçü'yle paylaşım yaptı! - Haber 7",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQc2NzZFE3VjY2MlNqUFFoa1JOZjJZOXozcGc0NzRQN200OW9pOEkwWDZRUVRHSWJmYzZSRTZEOUJNMHlQRC0zTlBQaVpUQ21vZHZnZnhwV0pNQjJ1RnNOOXd6d1JXYW1JbVdFYUdBU2s0aFNjcGlkM0JuQWpwQkxiLTN1TXp5dDAwU1pYZVNrcDhnVm8weWdhSTNLcVRMMUpzVUVfTm9WdFd5Nm5FZHRldXZqWXFCRW1MZk9EUGRkNzNEd9IByAFBVV95cUxPZWNkRHU1cUZaUUZkTXZlZDgyMkw3ZHQyR0M5TnNRdUFud3JRRHJZLUtDdHFqZi1aRmNCTDBlNHRWSXpXb29xYUpkT05YWS1LVjNTT2xUdW42MmRucDlXN1BFY0MxUXBZRzRLc2l1aHBnWnZKY2k0Y2M3YUNFeWhLNVRXenRubE5XR1BXWXFZU3NrcThUQ0NtRlpDNm1nUy1qc1J6NUhXM280T3AtRXYwMU0yOHMwWjdTOWs0aElDaTJIUU9RWFBGeA?oc=5",
+      "source": "Haber 7",
+      "source_type": "google_news",
+      "published_at": "2026-07-19T19:03:00+00:00",
+      "categories": [
+        "transfer"
+      ],
+      "super_lig_relevant": true,
+      "summary_tr": "",
+      "tags": [
+        "Beşiktaş",
+        "Fenerbahçe",
+        "transfer"
+      ],
+      "mentioned_clubs": [
+        "Beşiktaş",
+        "Fenerbahçe"
+      ]
+    },
+    {
       "article_id": "98c0de516912",
       "title": "Fenerbahçe eski futbolcusunu istiyor: Berke Özer sürprizi!",
       "link": "https://www.takvim.com.tr/spor/fenerbahce/2026/07/19/fenerbahce-eski-futbolcusunu-istiyor-berke-ozer-surprizi",
@@ -5268,6 +5316,26 @@
         "Fenerbahçe",
         "transfer",
         "lineup"
+      ],
+      "mentioned_clubs": [
+        "Fenerbahçe"
+      ]
+    },
+    {
+      "article_id": "1b9c4278bb09",
+      "title": "Pablo Laso'dan Fenerbahçe'ye transfer olan Shane Larkin için açıklama - MSN",
+      "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxOX3c2OUhPdjRqMFNSVzJhY3BwVkU3bjhUNzZQQmdackZvT3kwSElxMWNraEN2a0xNQ2dwOWxQeTMtODR6ZllCTGkzdmVaTGZhZGFubHZwTi1kYTVvOGUwVlo2YXBZWlltWnpKUjFNUDhEOHBLdGs3QkF0TENQSktETnpIZkRsWUZHZHFlYnRXdERYZnZoQUpVSFZjemkxQ0JocWhHYjJuNkJGZmRqUzRvNUpXSWNjVTZNRjAwSHZlLTktRDFHbThkWUdzS2NVd1pzc1hHc3psdzZ0RlRoRDF6R1hCUEhxUlJBT29relpaR2QwQW9qM09lSVo0NlRJQUtQZXV4SXVQMnY?oc=5",
+      "source": "MSN",
+      "source_type": "google_news",
+      "published_at": "2026-07-19T18:38:25+00:00",
+      "categories": [
+        "transfer"
+      ],
+      "super_lig_relevant": true,
+      "summary_tr": "",
+      "tags": [
+        "Fenerbahçe",
+        "transfer"
       ],
       "mentioned_clubs": [
         "Fenerbahçe"
@@ -5376,6 +5444,46 @@
       ]
     },
     {
+      "article_id": "7fdfcacfb634",
+      "title": "Beşiktaş’tan Juan Cabal sürprizi! Transfer görüşmesi başladı - Takvim",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxON0IzR2xhbVFzc0lQWHY0RnluYkYxLW1sdHhPTl9sS2ZwbFBjaWVMZW5RRjRhcDR5cHE0X2ZXVUNxOVFGQU9XSHBzRm1yQ3pTVEJ2OHlRVXRBRHBZcVhWRnV3cU16QXJmY19mc0VJcG9GdjRZX28zTm9OcjJwLS1HY3BleXZ3YlFxN3ZVOUd0a09RR0tkdDhhR1A4MWR3Sml5cWhMNTJJa1plOGZIT0E?oc=5",
+      "source": "Takvim",
+      "source_type": "google_news",
+      "published_at": "2026-07-19T18:08:39+00:00",
+      "categories": [
+        "transfer"
+      ],
+      "super_lig_relevant": true,
+      "summary_tr": "",
+      "tags": [
+        "Beşiktaş",
+        "transfer"
+      ],
+      "mentioned_clubs": [
+        "Beşiktaş"
+      ]
+    },
+    {
+      "article_id": "a5058b152692",
+      "title": "Fenerbahçe, Mason Greenwood'u nasıl yarı fiyatına aldı? - Fotospor",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPcHRjUHhFRTNrUnBjcEZSRks5TTRoeVA1MVVVVFA0Wm1yaGVuR2lxSlI3YXpwM1pOaFZxdFRKbGQzRXNzak1PaHZ1eVpWa3FwMko2czF2OFJjVWI0b1hFOFRteUx4bFZwU0gyX3dHRkxTMnJwMURyeDB5YzBwaHZJdmlRZlFWbS1feWMtSHItNXVTdkZnamhwNTlMbTREa0nSAaQBQVVfeXFMTm9VbkZYanFUb19ydXVjUW0xU1hqYkdKQWpvdTg0ZU5fNW9vcFEzUkJhOWplVmNMa1doTjRkQzctazRGd2hzR1hBcW1KdlpLb29GSU1EakRyY09ETmVmMDZlWWZoeTFWWTluNkVvRi1CNkFZa1VHTHVPeUVBYXdIcTljS053WHFWdlRQZVRxa3lTX2dibVB3czVCTW1MemNaTHdDc2g?oc=5",
+      "source": "Fotospor",
+      "source_type": "google_news",
+      "published_at": "2026-07-19T18:05:00+00:00",
+      "categories": [
+        "transfer"
+      ],
+      "super_lig_relevant": true,
+      "summary_tr": "",
+      "tags": [
+        "Fenerbahçe",
+        "transfer"
+      ],
+      "mentioned_clubs": [
+        "Fenerbahçe"
+      ]
+    },
+    {
       "article_id": "d90ce28eabe3",
       "title": "Transfer resmen açıklandı! Samsunspor'da rekor ayrılık - Haber 7",
       "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNU3gyY0psYmtsd0phNGh6V0JfUGpXM0pHQ0hic3MyTjdyOUpWa0hCbmtZQ3VrUUpHSTRWQzFBbl82LWM2dExsSXdYRjRXTVJtWld3WXp0Y2lfMk1TUW5NZDMtWHhXZ3ZjdnF5eVF3ekZMbkUwTWZMbGlFU1FUZDFSWENtekc3Wl94VklPVjVyRGFmTnNZUFFCbjh0OVlPTHhGOHfSAagBQVVfeXFMT2dlci1GcFdRZGRnXzBsWUFfakhvV0gwb1hEeDVhWUVhRTZXTkpPLXJyLWJncGhMS1FEMzlIUGpzWkxDdWVuSFplUjg1QUtmSDZueGhVd0tEUnFmdVhuMHEwN2JvWHM1TlhuekNaNVl1eWprN2QySWhrNmxVMC05WDJRUVlpSm5LT3BSUkU0TXhIZVZfLWNjM2h1Y0lGLUc0YVY2dzRQb3Bn?oc=5",
@@ -5433,6 +5541,26 @@
       ],
       "mentioned_clubs": [
         "Trabzonspor"
+      ]
+    },
+    {
+      "article_id": "67e4b06f28be",
+      "title": "Onur Özkan: Mohamed Salah, Beşiktaş Tarihinin En Büyük Transferi Olur - Aspor - A SPOR",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPSnRERFU5R3NqN3padnl0cmN5RkxaSm9zWFR6bWx2X1cwQjZneUtVSk5oTFRMQ1c5WUhsNHhCX0wxaGVPTDhlZTdsQUtRVXJSTmpvZGY3cV9FeGxUSUpKTk9oWmdfMXRsdThiR1JnREVwc2JOTzExTGlJUjVRNXk1WV9TMVNHSGdxbXg2UkpYRGJhd05yeUdQR2M5Qk16bUthSHdpSzc4Z3FYTXVRMlg5ejdpaWlXMld0SVlN0gHAAUFVX3lxTE9OTGFUdGdhQ2lOX0hiQmFyeEpVbFZaV2gzck9VbXhYNDRBbUczTXVJMWhuVFZTVGdkenJqdnppNlJfM19XSXJGeFpPenBaWnNJMms2Y1J0X2xLc2tGR1VoMER4OUh6M2haQTJHOVRzcEY5Nk52TGxUbjlGTEE5cHEtUXY4SnhDVUlkM2VQd0k1djRVS3g1aGVYOENYX1VkSGhsLURMd1BwZlVIOXdYaHNLZGdOTW93emlwWE1hbmhmUg?oc=5",
+      "source": "A SPOR",
+      "source_type": "google_news",
+      "published_at": "2026-07-19T17:58:25+00:00",
+      "categories": [
+        "transfer"
+      ],
+      "super_lig_relevant": true,
+      "summary_tr": "",
+      "tags": [
+        "Beşiktaş",
+        "transfer"
+      ],
+      "mentioned_clubs": [
+        "Beşiktaş"
       ]
     },
     {
@@ -5903,6 +6031,26 @@
       ]
     },
     {
+      "article_id": "cdccaa4e2f89",
+      "title": "Fenerbahçe'den Corinthians'a transfer telefonu! Rota Brezilya, Andre için harekete geçildi - Fanatik",
+      "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOOFJNR18wTG4walV6Nzg1dVFqUjh6eXFmTUtvM3R5em5rNW9KRHFqRTU5R1JQZW5ESlVmWHNXWGdZamhTWFM0QWR0bDJDR3V5cUMtUnVBX2dPOXFjLXJqMjNaTThCaUhkbzFDUGtOelpLZmFCS0JQbmliRHhiT195eGhJQTdNaGljOWJHUWRaVjFTai03T1M3STdiZXNNVDY5eFJFUnFxYncwS1NnZm5UblBhRlFTMHdIM19VWUpaaW01blBkcWZBY19UMFBubDBTUnVzUXNn?oc=5",
+      "source": "Fanatik",
+      "source_type": "google_news",
+      "published_at": "2026-07-19T16:39:07+00:00",
+      "categories": [
+        "transfer"
+      ],
+      "super_lig_relevant": true,
+      "summary_tr": "",
+      "tags": [
+        "Fenerbahçe",
+        "transfer"
+      ],
+      "mentioned_clubs": [
+        "Fenerbahçe"
+      ]
+    },
+    {
       "article_id": "be6eebca1aa4",
       "title": "Transferde büyük sürpriz! İşte Rick van Drongelen'in yeni adresi",
       "link": "https://www.fotomac.com.tr/samsunspor/2026/07/19/transferde-buyuk-surpriz-iste-rick-van-drongelenin-yeni-adresi",
@@ -6196,23 +6344,6 @@
       ]
     },
     {
-      "article_id": "d5b8b026bee6",
-      "title": "Süper Lig'de biten transferler (2026 - 2027 yaz transfer sezonu) | İmzalar atıldı, son dakika - Fanatik",
-      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPbFZBZHdGeU5tSkZSQU9hNlBqdUYyTno5c1d5QW9WNzJPYzFoSXRTRE41dzctbHlnLVNZSHRLajBYRmJ0R0NGUHNtUnFfb2RMbER1Y3FvYjRGeU80X1V1N3E2X3dMYXAxTHVOVnppbnBfWnRBX3FZSXRNR1ZvSDlON0FQVl91SFMySWtDelh1b0tOaE5yNGhCUGRlWnpMeUNHM3B6UVFVTlZvSmNkUlNYLUtIYkU5QVRjYy1YOXpmNDhLcGdGZFdkYzRkOXpHYXNWRlE?oc=5",
-      "source": "Fanatik",
-      "source_type": "google_news",
-      "published_at": "2026-07-19T16:12:04+00:00",
-      "categories": [
-        "transfer"
-      ],
-      "super_lig_relevant": true,
-      "summary_tr": "",
-      "tags": [
-        "transfer"
-      ],
-      "mentioned_clubs": []
-    },
-    {
       "article_id": "2bbf82dfcc10",
       "title": "Çaykur Rizespor Ahmed Kutucu'nun transferini resmen duyurdu!",
       "link": "https://www.fotomac.com.tr/rizespor/2026/07/19/caykur-rizespor-ahmed-kutucunun-transferini-resmen-duyurdu",
@@ -6448,26 +6579,6 @@
       "mentioned_clubs": []
     },
     {
-      "article_id": "d61cad8334af",
-      "title": "Fenerbahçe'ye transferde dev rakip! Transfer bitmeye çok yakın - NTVSpor",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNVzg0dV9Ed0s5Y1huSWNuaTI5WGZPWEFkM1NFcDBFSzd3YXh5Z0RRQS0yandINU5wQjRVV1JpdVB5NHRROWc0ZTZ1OGxUWl9DbVQ4Z1o5OFlyUWduUXFTUFFtcmQ4Rk9mN3lVVWRESTJXZFZqWmM2eEtOcXdWR2lqdEltUU1pUGVKZkVVRjNQU1BJS0xsR3lDYzMycGd6NUt5VWppMkln0gGrAUFVX3lxTE9hLTFEb3F6c2pDSy0tbVJrRDQ0WGlqNmR5d0RiRUY5VG9hZDhoR1VOUHVmcVJsQzNyM25uZnNMR2l6cmV2cU5nT1d0M0dOMEN4QWxDV3BIVGNrZjhXRlRORmxvZjlweTJIbDZfUEdoX2RsMUd6aW4xREJ3RFNEUlFFcWI0aWxFQ1VXeXU4X1RVLXFFTGZZTkVlSVpMMmZjZVU4aFpWeG1xS1FaZw?oc=5",
-      "source": "NTVSpor",
-      "source_type": "google_news",
-      "published_at": "2026-07-19T15:10:05+00:00",
-      "categories": [
-        "transfer"
-      ],
-      "super_lig_relevant": true,
-      "summary_tr": "",
-      "tags": [
-        "Fenerbahçe",
-        "transfer"
-      ],
-      "mentioned_clubs": [
-        "Fenerbahçe"
-      ]
-    },
-    {
       "article_id": "7e739c2d7773",
       "title": "Fenerbahçe’den Marcus Rashford bombası! Görüşmeler başladı - Sabah",
       "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPRkJaZWtGWmR5UWxhcVBVQkFkbWtHc2lVMnhLNUE1SVNwaXNLeUp3LV9yTmZnY2tjaHZRZmR0UXp2dm1TVklFcmVmamhxQUVKRV9jVUdIb2hGRGdQbXBObmdNT1lDRVVWZlFMTGZ2SWlnQ1RhRUc2bnVKVHFxS0NhOC1tanRBYjVjLVZlQ09nYzBzdUdGd2lGVzhWYXowQTJs0gGjAUFVX3lxTE1Dalg0b2lpSnJRMXJVRkZveE1vekhvZ2xEMWZsaTBZRkt6bi1XNkU4MDREd3lmdnZsN3VjY2p2ZXBmbjhoc0VBQ1RLdGpIc1FGc3kyNUxXOXRlbnFEOVUyUGZ1MmczcmZ3aktiTUp5dUNkYVQ4UHRHOTBpTjZMX3N2TFRQU2EzSjhWODNRRVZ3MXdkUDEwaE42dk9QY21wcE1Zd1k?oc=5",
@@ -6633,96 +6744,6 @@
       "mentioned_clubs": [
         "Beşiktaş",
         "Rizespor"
-      ]
-    },
-    {
-      "article_id": "eadb1c0ff41c",
-      "title": "Salah'ta menajer krizi!",
-      "link": "https://www.haberturk.com/besiktas-baskani-serdal-adali-acikladi-salah-transferinde-menajer-krizi-3899528-spor",
-      "source": "Haberturk Spor",
-      "source_type": "rss",
-      "published_at": "2026-07-19T13:37:47+00:00",
-      "categories": [
-        "transfer",
-        "suspension"
-      ],
-      "super_lig_relevant": true,
-      "summary_tr": "",
-      "tags": [
-        "Beşiktaş",
-        "transfer",
-        "suspension"
-      ],
-      "mentioned_clubs": [
-        "Beşiktaş"
-      ]
-    },
-    {
-      "article_id": "62b9c1922999",
-      "title": "Ahmed Kutucu Çaykur Rizespor'a transfer oldu!",
-      "link": "https://www.fotomac.com.tr/galatasaray/2026/07/19/ahmed-kutucu-caykur-rizespora-transfer-oldu",
-      "source": "Fotomaç",
-      "source_type": "rss",
-      "published_at": "2026-07-19T16:25:10+03:00",
-      "categories": [
-        "transfer",
-        "lineup"
-      ],
-      "super_lig_relevant": true,
-      "summary_tr": "",
-      "tags": [
-        "Galatasaray",
-        "Rizespor",
-        "transfer",
-        "lineup"
-      ],
-      "mentioned_clubs": [
-        "Galatasaray",
-        "Rizespor"
-      ]
-    },
-    {
-      "article_id": "3e5ecd5c5a9e",
-      "title": "Samsunspor'un istediği Galatasaraylı futbolcu Çaykur Rizespor'a transfer oldu - Gazete Gerçek",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPX05GMzVLUWNVUWxzOThqd25lX0d0ekFWNFpuSVozSkNVTG83a1puUnhnRVRCa0VOdUhlS01uYmhVdFpxUWlxZTVfd0xQcUVpT0lRUkxUQTZtVzRXVXh4VmhJaWJuc0pQTk9Nbkc0NGZ4NkRhMDlnbTh6ZDk0ajJ6dU9iQkNLTW92ZWRjdmFQMHl2TEc2Ukt1bHFrdkFqZ05oa01DRUd3OTJNeVUxamE2bmRPZWI?oc=5",
-      "source": "Gazete Gerçek",
-      "source_type": "google_news",
-      "published_at": "2026-07-19T13:16:35+00:00",
-      "categories": [
-        "transfer"
-      ],
-      "super_lig_relevant": true,
-      "summary_tr": "",
-      "tags": [
-        "Galatasaray",
-        "Samsunspor",
-        "Rizespor",
-        "transfer"
-      ],
-      "mentioned_clubs": [
-        "Galatasaray",
-        "Samsunspor",
-        "Rizespor"
-      ]
-    },
-    {
-      "article_id": "965eeaf08c75",
-      "title": "Göztepe'de sol bek gündemi: Corrie Ndaba listeye alındı",
-      "link": "https://www.cnnturk.com/spor/futbol/goztepede-sol-bek-gundemi-corrie-ndaba-listeye-alindi-3444338",
-      "source": "CNN Türk Spor",
-      "source_type": "rss",
-      "published_at": "2026-07-19T13:10:44+00:00",
-      "categories": [
-        "lineup"
-      ],
-      "super_lig_relevant": true,
-      "summary_tr": "",
-      "tags": [
-        "Göztepe",
-        "lineup"
-      ],
-      "mentioned_clubs": [
-        "Göztepe"
       ]
     }
   ]

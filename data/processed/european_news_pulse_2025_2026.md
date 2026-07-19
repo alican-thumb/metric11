@@ -1,7 +1,7 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-07-19T19:26:04.221971+00:00
-Toplam ilgili haber: 22
+Üretim zamanı: 2026-07-19T19:32:39.926305+00:00
+Toplam ilgili haber: 21
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
@@ -24,7 +24,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Başakşehir-Inter Turku maçında İspanyol hakem Juan Martinez Munuera düdük çalacak](https://www.aa.com.tr/tr/spor/basaksehir-inter-turku-macinda-ispanyol-hakem-juan-martinez-munuera-duduk-calacak/4002134) — Anadolu Ajansı Spor · 2026-07-18T12:35:44+03:00 · turnuva=ECL · kulüp=Başakşehir
 - [Beşiktaş-Midtjylland maçını İspanyol hakem Ricardo de Burgos yönetecek](https://www.aa.com.tr/tr/spor/besiktas-midtjylland-macini-ispanyol-hakem-ricardo-de-burgos-yonetecek/4002100) — Anadolu Ajansı Spor · 2026-07-18T11:41:24+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [İşte Beşiktaş-Midtjylland maçlarının hakemleri!](https://www.haberturk.com/besiktas-midtjylland-maclarinin-hakemleri-belli-oldu-ilk-maca-ispanyol-hakem-3899345-spor) — Haberturk Spor · 2026-07-18T08:32:58+00:00 · turnuva=EL · kulüp=Beşiktaş
-- [Fenerbahçe'nin UEFA listesi belli oldu - Yeni transferler kadroda yer almadı - Transfermarkt](https://news.google.com/rss/articles/CBMiwAFBVV95cUxNYXB1dnN1clJIby1jN2ZLc05CTzZLeDBGX2diUVZuRk5hTjF4ZEFEek5Zel85UDhuMzBLQnZMc3VtdzdoSkV0T0hpcUNPNHJkRFU4YjhPWTItbzczbEQ4cXpFOXdqLUtrR3RQVmhremdTN3JOWmRLUkZjVnM1YTNhbzlxS0NsamZuUkUtdUExNEFOXy0yQWo3OEdaOElYZmJ4ZTlvdjQyaDlZb1VRc1FRa2F3VUtNRnJSVUpGMmZJZlc?oc=5) — Transfermarkt · 2026-07-17T17:52:32+00:00 · turnuva=— · kulüp=Fenerbahçe
 - [Fenerbahçe'nin Şampiyonlar Ligi'nde oynayacağı Gornik Zabrze maçının hakemi Manfredas Lukjancukas oldu!](https://www.takvim.com.tr/spor/fenerbahce/2026/07/16/fenerbahcenin-sampiyonlar-ligi-macinin-hakemi-aciklandi) — Takvim Spor · 2026-07-16T15:44:49+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe’nin Şampiyonlar Ligi rotası netleşti: 3. tur ve play-off’taki muhtemel rakipler belli oldu](https://www.takvim.com.tr/spor/fenerbahce/2026/07/16/fenerbahcenin-sampiyonlar-ligi-muhtemel-rakipleri) — Takvim Spor · 2026-07-16T12:21:52+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Kulübümüz, son olarak Belçika Pro Lig ekiplerinden KVC Westerlo forma giyen Emin Bayram ile 4 yıllık anlaşma sağladı.](https://ibfk.com.tr/haberler/hos-geldin-emin-bayram) — Başakşehir Resmi Web · 10.7.2026 22:54:38 · turnuva=ECL · kulüp=Başakşehir
