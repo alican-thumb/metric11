@@ -1,6 +1,6 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-07-19T06:47:42.210997+00:00
+Üretim zamanı: 2026-07-19T08:34:44.477186+00:00
 Toplam ilgili haber: 22
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
@@ -8,6 +8,7 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 
 - [TEŞEKKÜRLER DOĞAN ALEMDAR](https://ibfk.com.tr/haberler/tesekkurler-dogan-alemdar) — Başakşehir Resmi Web · 8.7.2026 23:35:12 · turnuva=ECL · kulüp=Beşiktaş, Başakşehir
 - [TEŞEKKÜRLER MİGUEL CRESPO](https://ibfk.com.tr/haberler/tesekkurler-miguel-crespo) — Başakşehir Resmi Web · 7.7.2026 21:16:30 · turnuva=EL · kulüp=Başakşehir
+- [Fenerbahçe- Gornik Zabrze maçı ne zaman, saat kaçta ve hangi kanalda?](https://www.aksam.com.tr/trend/fenerbahce-gornik-zabrze-maci-ne-zaman-saat-kacta-ve-hangi-kanalda/haber-1683912) — Aksam Spor · 2026-07-19T10:54:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Didier Deschamps Fransa'daki görevinden ayrıldı](https://www.takvim.com.tr/spor/2026/07/18/didier-deschamps-fransadaki-gorevinden-ayrildi) — Takvim Spor · 2026-07-19T03:36:10+03:00 · turnuva=— · kulüp=—
 - [Fenerbahçe Gornik Zabrze maçı kadrosunu UEFA'ya bildirdi!](https://www.fotomac.com.tr/fenerbahce/2026/07/17/fenerbahce-gornik-zabrze-maci-kadrosunu-uefaya-bildirdi) — Fotomaç · 2026-07-19T01:04:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Beşiktaş, Midtjylland maçının hazırlıklarına devam etti](https://www.fotomac.com.tr/besiktas/2026/07/18/besiktas-midtjylland-macinin-hazirliklarina-devam-etti) — Fotomaç · 2026-07-19T01:03:48+03:00 · turnuva=EL · kulüp=Beşiktaş
@@ -24,7 +25,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Mason Greenwood Fenerbahçe'de ilk antrenmanına çıktı!](https://www.hurriyet.com.tr/sporarena/mason-greenwood-fenerbahcede-ilk-antrenmanina-cikti-43243997) — Hürriyet Spor · 2026-07-18T11:15:00+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [İşte Beşiktaş-Midtjylland maçlarının hakemleri!](https://www.haberturk.com/besiktas-midtjylland-maclarinin-hakemleri-belli-oldu-ilk-maca-ispanyol-hakem-3899345-spor) — Haberturk Spor · 2026-07-18T08:32:58+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş-Midtjylland maçının hakemi açıklandı](https://www.hurriyet.com.tr/sporarena/besiktas-midtjylland-macinin-hakemi-aciklandi-43243740) — Hürriyet Spor · 2026-07-18T08:29:59+00:00 · turnuva=EL · kulüp=Beşiktaş
-- [UEFA Konferans Ligi'nde 2. eleme turuna yükselen takımlar belli oldu](https://www.cnnturk.com/spor/futbol/uefa-konferans-liginde-2-eleme-turuna-yukselen-takimlar-belli-oldu-3443607) — CNN Türk Spor · 2026-07-17T09:04:57+00:00 · turnuva=ECL · kulüp=—
 - [Fenerbahçe'nin Şampiyonlar Ligi'nde oynayacağı Gornik Zabrze maçının hakemi Manfredas Lukjancukas oldu!](https://www.takvim.com.tr/spor/fenerbahce/2026/07/16/fenerbahcenin-sampiyonlar-ligi-macinin-hakemi-aciklandi) — Takvim Spor · 2026-07-16T15:44:49+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe’nin Şampiyonlar Ligi rotası netleşti: 3. tur ve play-off’taki muhtemel rakipler belli oldu](https://www.takvim.com.tr/spor/fenerbahce/2026/07/16/fenerbahcenin-sampiyonlar-ligi-muhtemel-rakipleri) — Takvim Spor · 2026-07-16T12:21:52+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Kulübümüz, son olarak Belçika Pro Lig ekiplerinden KVC Westerlo forma giyen Emin Bayram ile 4 yıllık anlaşma sağladı.](https://ibfk.com.tr/haberler/hos-geldin-emin-bayram) — Başakşehir Resmi Web · 10.7.2026 22:54:38 · turnuva=ECL · kulüp=Başakşehir
