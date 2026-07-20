@@ -1,6 +1,6 @@
 # 2026-27 Süper Lig Fikstürü ve Tahminleri
 
-Üretim zamanı: 2026-07-19T19:32:40.270215
+Üretim zamanı: 2026-07-20T04:04:47.290517
 Toplam hafta: 34, toplam maç: 306
 Not: Tahminler 2025-26 sezonunun tamamı ve 2026-27'de şimdiye kadar oynanmış (0 maç) sonuçlardan türetilen güncel takım formu/Elo/transfer durumuna dayanır; sezon ilerledikçe bu sayfa her gün otomatik olarak yeniden hesaplanır, statik bir anlık görüntü değildir.
 Yeni takımlar (sınırlı veri): AMED SPORTİF FAALİYETLER, ERZURUMSPOR FK, ÇORUM FK
@@ -10,7 +10,7 @@ Yeni takımlar (sınırlı veri): AMED SPORTİF FAALİYETLER, ERZURUMSPOR FK, Ç
 - 14.08.2026 21:30 | GALATASARAY A.Ş. - ÇORUM FK | tahmin=Ev (Ev %59 · X %28 · Dep %13) | güven=LOW_NEW_TEAM
 - 15.08.2026 19:00 | KASIMPAŞA A.Ş. - TRABZONSPOR A.Ş. | tahmin=Dep (Ev %36 · X %28 · Dep %36) | güven=LOW
 - 15.08.2026 19:00 | KONYASPOR - ÇAYKUR RİZESPOR A.Ş. | tahmin=Ev (Ev %44 · X %22 · Dep %34) | güven=MEDIUM
-- 15.08.2026 21:30 | GAZİANTEP FUTBOL KULÜBÜ A.Ş. - CORENDON ALANYASPOR | tahmin=Dep (Ev %33 · X %23 · Dep %44) | güven=MEDIUM
+- 15.08.2026 21:30 | GAZİANTEP FUTBOL KULÜBÜ A.Ş. - CORENDON ALANYASPOR | tahmin=Dep (Ev %32 · X %23 · Dep %44) | güven=MEDIUM
 - 15.08.2026 21:30 | GENÇLERBİRLİĞİ - FENERBAHÇE A.Ş. | tahmin=Dep (Ev %20 · X %19 · Dep %60) | güven=HIGH
 - 16.08.2026 19:00 | İSTANBUL BAŞAKŞEHİR FK - KOCAELİSPOR | tahmin=Ev (Ev %66 · X %21 · Dep %13) | güven=HIGH
 - 16.08.2026 21:30 | AMED SPORTİF FAALİYETLER - ERZURUMSPOR FK | tahmin=X (Ev %14 · X %74 · Dep %12) | güven=LOW_NEW_TEAM
