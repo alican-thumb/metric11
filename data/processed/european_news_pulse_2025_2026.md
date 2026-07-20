@@ -1,14 +1,20 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-07-20T05:51:43.627997+00:00
-Toplam ilgili haber: 17
+Üretim zamanı: 2026-07-20T06:59:58.791782+00:00
+Toplam ilgili haber: 23
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
 - [TEŞEKKÜRLER DOĞAN ALEMDAR](https://ibfk.com.tr/haberler/tesekkurler-dogan-alemdar) — Başakşehir Resmi Web · 8.7.2026 23:35:12 · turnuva=ECL · kulüp=Beşiktaş, Başakşehir
 - [TEŞEKKÜRLER MİGUEL CRESPO](https://ibfk.com.tr/haberler/tesekkurler-miguel-crespo) — Başakşehir Resmi Web · 7.7.2026 21:16:30 · turnuva=EL · kulüp=Başakşehir
-- [Aziz Yıldırım daha önce uyarmıştı! Fenerbahçe, UEFA ile görüşecek - Fotospor](https://news.google.com/rss/articles/CBMirgFBVV95cUxQLXZLdmloa18xUll3cF9SaUR4NmxNeU4xQk5fSDh2NWtCUXFCejVFeWJXd1VIV0NGcmxwZlowZm5SQXZUYWdFaWZJSnFSanhOZngzUlFSM2tLNGhPYlJfcmlPSzRwbDZIU2xXdlVmMUZreTg2dlQ5TUxqVHNaSVp6RFlOUkEwUEJCNWI5T094ZkZFdkMyNHRfck5LTFowMDl6eGRnRW9hS1p2WGNpRHfSAbMBQVVfeXFMTU0wZS13QUg3eGZrdmU3cXlsUzNXdElVZFpGaldMZ2tnanNhLVl5elc2ajRCaTFaNDdvbFVOYV9NTmFyM1Q2amVzRGlIZFpnX1JsOEVpWklvQnE5ZGZtZ1ZiQ09GX0VoUDZ1REZDLVlLWHcyVHczVzdCOHhuMUFjNm5IWDRRbTFqY2w4RXBVeEFyQXRCcjl3N0xhblo2U0QxakE3LWthSE0tYXcydnkxb3BCOW8?oc=5) — Fotospor · 2026-07-19T20:54:00+00:00 · turnuva=— · kulüp=Fenerbahçe
+- [Fenerbahçe- Górnik Zabrze maç kadrosu: Fenerbahçe- Górnik Zabrze muhtemel 11'ler belli oldu!](https://www.aksam.com.tr/trend/fenerbahce-gornik-zabrze-mac-kadrosu-fenerbahce-gornik-zabrze-muhtemel-11ler-belli-oldu/haber-1684088) — Aksam Spor · 2026-07-20T09:35:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe sezonu açıyor! İlk rakip Gornik Zabrze](https://www.aksam.com.tr/spor/fenerbahce-sezonu-aciyor-ilk-rakip-gornik-zabrze/haber-1684087) — Aksam Spor · 2026-07-20T09:33:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe - Gornik Zabrze maçına ilgi yoğun! Biletler tükendi...](https://www.cnnturk.com/spor/futbol/fenerbahce-gornik-zabrze-macina-ilgi-yogun-biletler-tukendi-3444608) — CNN Türk Spor · 2026-07-20T09:11:53+00:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe sezonu açıyor! Muhtemel 11 şekillendi...](https://www.cnnturk.com/spor/futbol/fenerbahce-sezonu-aciyor-muhtemel-11-sekillendi-3444605) — CNN Türk Spor · 2026-07-20T09:05:02+00:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe, sezonu Gornik Zabrze maçıyla açıyor!](https://www.sabah.com.tr/spor/futbol/2026/07/20/fenerbahce-sezonu-gornik-zabrze-maciyla-aciyor) — Sabah Spor · 2026-07-20T08:56:51+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe sezonu yarın Gornik Zabrze maçıyla açacak](https://www.aa.com.tr/tr/spor/fenerbahce-sezonu-yarin-gornik-zabrze-maciyla-acacak/4003253) — Anadolu Ajansı Spor · 2026-07-20T08:55:24+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Aziz Yıldırım daha önce uyarmıştı! Fenerbahçe, UEFA ile görüşecek - Fotospor](https://news.google.com/rss/articles/CBMirgFBVV95cUxQLXZLdmloa18xUll3cF9SaUR4NmxNeU4xQk5fSDh2NWtCUXFCejVFeWJXd1VIV0NGcmxwZlowZm5SQXZUYWdFaWZJSnFSanhOZngzUlFSM2tLNGhPYlJfcmlPSzRwbDZIU2xXdlVmMUZreTg2dlQ5TUxqVHNaSVp6RFlOUkEwUEJCNWI5T094ZkZFdkMyNHRfck5LTFowMDl6eGRnRW9hS1p2WGNpRHfSAbMBQVVfeXFMTU0wZS13QUg3eGZrdmU3cXlsUzNXdElVZFpGaldMZ2tnanNhLVl5elc2ajRCaTFaNDdvbFVOYV9NTmFyM1Q2amVzRGlIZFpnX1JsOEVpWklvQnE5ZGZtZ1ZiQ09GX0VoUDZ1REZDLVlLWHcyVHczVzdCOHhuMUFjNm5IWDRRbTFqY2w4RXBVeEFyQXRCcjl3N0xhblo2U0QxakE3LWthSE0tYXcydnkxb3BCOW8?oc=5) — Fotospor · 2026-07-20T06:07:00+00:00 · turnuva=— · kulüp=Fenerbahçe
 - [Fenerbahçe'de Gornik Zabrze maçı mesaisi!](https://www.haberturk.com/fenerbahce-gornik-zabrze-maci-hazirliklarini-surdurdu-3899555-spor) — Haberturk Spor · 2026-07-19T18:00:40+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe, Gornik Zabrze maçı hazırlıklarını sürdürdü!](https://www.hurriyet.com.tr/sporarena/fenerbahce-gornik-zabrze-maci-hazirliklarini-surdurdu-43245082) — Hürriyet Spor · 2026-07-19T17:21:46+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Beşiktaş'ta, Midtjylland mesaisi sürüyor](https://www.cnnturk.com/spor/futbol/besiktasta-midtjylland-mesaisi-suruyor-3444417) — CNN Türk Spor · 2026-07-19T15:03:12+00:00 · turnuva=EL · kulüp=Beşiktaş
