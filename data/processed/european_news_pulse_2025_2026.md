@@ -1,7 +1,7 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-07-20T23:16:25.877036+00:00
-Toplam ilgili haber: 61
+Üretim zamanı: 2026-07-21T03:45:02.289561+00:00
+Toplam ilgili haber: 60
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
@@ -12,7 +12,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Haydi Fener al bir zafer](https://www.aksam.com.tr/spor/haydi-fener-al-bir-zafer/haber-1684269) — Aksam Spor · 2026-07-21T01:33:00+03:00 · turnuva=CL · kulüp=—
 - [Fenerbahçe UEFA listesini güncelledi! Greenwood ve Ake...](https://www.fotomac.com.tr/fenerbahce/2026/07/20/fenerbahce-uefa-listesini-guncelledi-greenwood-ve-ake) — Fotomaç · 2026-07-21T00:51:57+03:00 · turnuva=— · kulüp=Fenerbahçe
 - [Fenerbahçe, UEFA listesini değiştirdi! 2 isim kadrodan çıkarıldı](https://www.aksam.com.tr/spor/fenerbahce-uefa-listesini-degistirdi-2-isim-kadrodan-cikarildi/haber-1684265) — Aksam Spor · 2026-07-21T00:49:00+03:00 · turnuva=— · kulüp=Fenerbahçe
-- [Fenerbahçe'de yeni transferler Ake ve Greenwood, UEFA'ya listesinde - NTV Haber](https://news.google.com/rss/articles/CBMipwFBVV95cUxQR01URnA4dlYwUjd5aE9WYmRtM01iU1JqUDRveEZEVXJsS3JDOUgwZlZyUHVVNEh0eE1xblZoQ0EzR05uckpEVDRhLWE2VmRicFc2SDRkWW9kQ2dDUjI2Z1VYYmFlRFV0ZUdDQVF3eE82QTVSZGhTeXRidUJTdDJoRW1pckxfRDNISHNKMGpKVzZIcTExUkI4TElEQ3IwWHQ4MUVFUmc1Zw?oc=5) — NTV Haber · 2026-07-20T22:52:36+00:00 · turnuva=— · kulüp=Fenerbahçe
 - [Fenerbahçe, Gornik Zabrze maçına hazır](https://www.sabah.com.tr/spor/futbol/2026/07/20/fenerbahce-gornik-zabrze-macina-hazir) — Sabah Spor · 2026-07-20T22:22:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [FENERBAHÇE - GÓRNİK ZABRZE HANGİ KANALDA? Şampiyonlar Ligi Fenerbahçe Górnik Zabrze Maçı Nereden İzlenir? Sarı Lacivertliler Avrupa Mesaisinde](https://www.cnnturk.com/spor/futbol/fenerbahce-gornik-zabrze-hangi-kanalda-sampiyonlar-ligi-fenerbahce-gornik-zabrze-maci-nereden-izlenir-sari-lacivertliler-avrupa-3444804) — CNN Türk Spor · 2026-07-20T21:28:21+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe'nin rakibi Gornik Zabrze cephesinden açıklama! "Sadece defansı düşünmeyeceğiz"](https://www.sabah.com.tr/spor/futbol/2026/07/20/fenerbahcenin-rakibi-gornik-zabrze-cephesinden-aciklama-sadece-defansi-dusunmeyecegiz) — Sabah Spor · 2026-07-20T19:53:54+03:00 · turnuva=CL · kulüp=Fenerbahçe
@@ -46,3 +45,4 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [İşte Beşiktaş'ın muhtemel rakipleri](https://www.haberturk.com/iste-besiktas-in-uefa-avrupa-ligi-ndeki-muhtemel-rakipleri-3899719-spor) — Haberturk Spor · 2026-07-20T12:36:44+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Konferans Ligi'nde 3. eleme turu kuraları çekildi! Başakşehir'in muhtemel rakibi belli oldu](https://www.hurriyet.com.tr/sporarena/konferans-liginde-3-eleme-turu-kuralari-cekildi-basaksehirin-muhtemel-rakibi-belli-oldu-43245845) — Hürriyet Spor · 2026-07-20T12:19:00+00:00 · turnuva=ECL · kulüp=Başakşehir
 - [Fenerbahçe'den ayrılan Emre Mor, Şampiyonlar Ligi'nde boy gösterecek! İşte yeni takımı](https://www.hurriyet.com.tr/sporarena/fenerbahceden-ayrilan-emre-mor-sampiyonlar-liginde-boy-gosterecek-iste-yeni-takimi-43245792) — Hürriyet Spor · 2026-07-20T11:48:57+00:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe, Avrupa'da 301. maçına çıkacak](https://www.aa.com.tr/tr/spor/fenerbahce-avrupada-301-macina-cikacak/4003432) — Anadolu Ajansı Spor · 2026-07-20T11:31:07+03:00 · turnuva=CL · kulüp=Fenerbahçe
