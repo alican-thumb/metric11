@@ -9,7 +9,7 @@ from pathlib import Path
 
 from src.config import PROCESSED_DIR
 from src.normalization import normalize_matches
-from src.preview.probability import head_to_head_draw_signal, transfer_strength_edge
+from src.preview.probability import fixture_congestion_edge, head_to_head_draw_signal, transfer_strength_edge
 
 
 def main() -> None:
@@ -192,6 +192,8 @@ def predict_match(
     away_elo: float,
     ref_stats: dict | None = None,
     apply_transfer_signal: bool = False,
+    apply_fixture_congestion: bool = False,
+    match_date=None,
 ) -> dict:
     league_home_boost = 0.18
     home_gf = avg(item["goals_for"] for item in home_history)
@@ -234,6 +236,18 @@ def predict_match(
         if transfer_home.get("available") or transfer_away.get("available"):
             strength_edge += (transfer_home.get("edge", 0.0) - transfer_away.get("edge", 0.0)) * 0.5
 
+    # Avrupa kupası fikstür sıkışıklığı/yorgunluk sinyali: yalnızca ileriye dönük
+    # tahminlerde (apply_fixture_congestion=True, bkz. build_season_fixture_predictions.py)
+    # devreye girer. Henüz backtest edilmemiş yeni bir sinyaldir; kalibre edilmiş
+    # backtest sistemini etkilemez.
+    fixture_congestion = {"home": {"available": False}, "away": {"available": False}}
+    if apply_fixture_congestion:
+        congestion_home = fixture_congestion_edge(home, match_date)
+        congestion_away = fixture_congestion_edge(away, match_date)
+        fixture_congestion = {"home": congestion_home, "away": congestion_away}
+        if congestion_home.get("available") or congestion_away.get("available"):
+            strength_edge += congestion_home.get("edge", 0.0) - congestion_away.get("edge", 0.0)
+
     # League-wide backtests are noisier than the Beşiktaş-focused preview model, so keep this as a
     # mild calibration signal instead of letting short-form strength dominate xG.
     expected_home += strength_edge * 0.05 + max(0, home_clean - away_clean) * 0.03 - max(0, home_blank - away_blank) * 0.04
@@ -270,6 +284,7 @@ def predict_match(
         "away_win_probability": round(probs["away"], 3),
         "head_to_head": head_to_head,
         "transfer_signal": transfer_signal,
+        "fixture_congestion": fixture_congestion,
         "home_elo": round(home_elo, 1),
         "away_elo": round(away_elo, 1),
         "home_points_per_match": round(home_ppg, 2),

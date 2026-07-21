@@ -1,0 +1,52 @@
+{
+  "source": "Türk spor basını (RSS/Google News) — resmi kulüp ve hakem atama duyuruları",
+  "source_type": "MANUAL_NEWS_SOURCED",
+  "captured_at": "2026-07-21",
+  "notes": [
+    "football-data.org ücretsiz planı UEFA nitelendirme/eleme turu fikstürünü kapsamıyor, bu yüzden european_predictions_2026_2027.json otomatik olarak boş kalıyor.",
+    "Bu dosya, haber kaynaklarından doğrulanmış gerçek maç bilgisini (tarih/saat/mekan/hakem) manuel olarak tutar — rakip takımlar (Górnik Zabrze, Midtjylland, Inter Turku) hakkında istatistiksel veri tabanımız olmadığı için SKOR/OLASILIK TAHMİNİ ÜRETİLMEZ, yalnızca maç bilgisi gösterilir.",
+    "Her maçın rövanş tarihi henüz haber kaynaklarında netleşmediği için yalnızca ilk maç (1. maç) bilgisi tutuluyor; rövanş netleştikçe eklenmeli."
+  ],
+  "fixtures": [
+    {
+      "competition": "CL",
+      "stage": "2ND_QUALIFYING_ROUND",
+      "leg": 1,
+      "home_team": "Fenerbahçe",
+      "away_team": "Górnik Zabrze",
+      "away_team_country": "Polonya",
+      "kickoff_local": "2026-07-21T21:00:00+03:00",
+      "venue": "Chobani Stadyumu, İstanbul",
+      "referee": null,
+      "confirmed": "date_time_venue",
+      "next_round_if_advance": "Sturm Graz (Avusturya) - Hearts (İskoçya) eşleşmesinin galibi (3. Ön Eleme Turu)"
+    },
+    {
+      "competition": "ECL",
+      "stage": "2ND_QUALIFYING_ROUND",
+      "leg": 1,
+      "home_team": "Başakşehir",
+      "away_team": "Inter Turku",
+      "away_team_country": "Finlandiya",
+      "kickoff_local": "2026-07-22T20:45:00+03:00",
+      "venue": "Başakşehir Fatih Terim Stadyumu, İstanbul",
+      "referee": "Juan Martínez Munuera (İspanya)",
+      "confirmed": "date_time_venue_referee",
+      "next_round_if_advance": "FC Vaduz (Lihtenştayn) - Atlètic Club d'Escaldes (Andorra) eşleşmesinin galibi (3. Ön Eleme Turu)"
+    },
+    {
+      "competition": "EL",
+      "stage": "2ND_QUALIFYING_ROUND",
+      "leg": 1,
+      "home_team": "Beşiktaş",
+      "away_team": "FC Midtjylland",
+      "away_team_country": "Danimarka",
+      "kickoff_local": "2026-07-23T00:00:00+03:00",
+      "kickoff_time_confirmed": false,
+      "venue": "İstanbul (ev sahibi Beşiktaş — haber başlık sırasına göre çıkarıldı, resmi teyit yok)",
+      "referee": "Ricardo de Burgos (İspanya) — 1. maç; rövanşta Ante Culina (Hırvatistan)",
+      "confirmed": "date_only",
+      "next_round_if_advance": "Hradec Králové (Çekya) - Tromsø (Norveç) eşleşmesinin galibi (3. Ön Eleme Turu)"
+    }
+  ]
+}

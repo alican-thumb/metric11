@@ -7,11 +7,14 @@ from datetime import datetime, timedelta, timezone
 from html import escape
 from pathlib import Path
 
-from src.config import PROCESSED_DIR, SEASON, ensure_data_dirs
+from src.config import DATA_DIR, PROCESSED_DIR, SEASON, ensure_data_dirs
 
 INPUT_PATH  = PROCESSED_DIR / "european_predictions_2026_2027.json"
 OUTPUT_PATH = PROCESSED_DIR / "european_predictions_2026_2027.html"
 PULSE_PATH  = PROCESSED_DIR / f"european_news_pulse_{SEASON}.json"
+KNOWN_FIXTURES_PATH = DATA_DIR / "manual" / "european_qualifier_fixtures_2026_2027.json"
+
+_TR_WEEKDAYS = ["Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi", "Pazar"]
 
 _TZ_TR = timezone(timedelta(hours=3))
 
@@ -364,6 +367,79 @@ def _build_pulse_section(items: list[dict]) -> str:
     )
 
 
+def _load_known_fixtures() -> list[dict]:
+    if not KNOWN_FIXTURES_PATH.exists():
+        return []
+    try:
+        payload = json.loads(KNOWN_FIXTURES_PATH.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return []
+    return payload.get("fixtures", [])
+
+
+def _relative_day_label(dt: datetime, now: datetime) -> str:
+    delta = (dt.date() - now.date()).days
+    if delta == 0:
+        return "Bugün"
+    if delta == 1:
+        return "Yarın"
+    if 2 <= delta <= 6:
+        return _TR_WEEKDAYS[dt.weekday()]
+    return f"{dt.day} {_TR_MONTHS[dt.month]}"
+
+
+def _known_fixture_card(fx: dict, comp_color: str, now: datetime) -> str:
+    dt = _parse_utc(fx.get("kickoff_local", ""))
+    day_label = _relative_day_label(dt, now) if dt else "?"
+    time_confirmed = fx.get("kickoff_time_confirmed", True)
+    time_str = dt.strftime("%H:%M") if (dt and time_confirmed) else "saat teyit edilmedi"
+    stage = _STAGE_TR.get(fx.get("stage", ""), fx.get("stage", ""))
+    venue = escape(fx.get("venue", "") or "")
+    referee = fx.get("referee")
+    referee_html = f'<div class="mc-tbd-note">Hakem: {escape(referee)}</div>' if referee else ""
+    next_round = fx.get("next_round_if_advance")
+    next_html = f'<div class="mc-tbd-note">Turu geçerse: {escape(next_round)}</div>' if next_round else ""
+    away_label = fx.get("away_team", "")
+    away_country = fx.get("away_team_country")
+    if away_country:
+        away_label = f'{away_label} ({away_country})'
+    return (
+        f'<div class="match-card mc-pending">'
+        f'<div class="mc-meta"><span class="mc-date">{escape(day_label)} · {escape(time_str)} · {escape(stage)}</span></div>'
+        f'<div class="mc-teams">'
+        f'<div class="mc-team">{escape(fx.get("home_team",""))}</div>'
+        f'<div class="mc-score"><div class="tbd-score">vs</div></div>'
+        f'<div class="mc-team away">{escape(away_label)}</div>'
+        f'</div>'
+        f'<div class="mc-tbd-note">{venue}</div>'
+        f'{referee_html}'
+        f'{next_html}'
+        f'</div>'
+    )
+
+
+def _build_known_fixtures_section(fixtures: list[dict]) -> str:
+    """football-data.org nitelendirme fikstürünü kapsamadığı için haber kaynaklarından
+    doğrulanmış gerçek maç bilgisini (tarih/saat/mekan) gösterir. Bu rakipler için
+    istatistiksel veri tabanımız olmadığından skor/olasılık tahmini ÜRETİLMEZ."""
+    if not fixtures:
+        return ""
+    now = datetime.now(_TZ_TR)
+    cards = "\n".join(
+        _known_fixture_card(fx, _COMP_COLOR.get(fx.get("competition", ""), "#60a5fa"), now)
+        for fx in sorted(fixtures, key=lambda f: f.get("kickoff_local", ""))
+    )
+    return (
+        '<div class="today-wrap">'
+        '<div class="today-lbl"><span class="today-dot"></span>📋 Bilinen Eleme Maçları (haber kaynaklı)</div>'
+        '<div class="mc-tbd-note" style="margin-bottom:12px">football-data.org nitelendirme turu fikstürünü kapsamıyor. '
+        'Aşağıdaki maç bilgisi (tarih/saat/mekan) haber kaynaklarından doğrulanmıştır — '
+        'rakipler hakkında istatistiksel veri olmadığı için skor/olasılık tahmini üretilmemiştir.</div>'
+        f'<div class="today-grid">{cards}</div>'
+        '</div>'
+    )
+
+
 def _build_today_section(all_comps: dict) -> str:
     today_utc = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     today_matches = []
@@ -487,6 +563,7 @@ def build_page(data: dict) -> str:
     )
 
     # Sections
+    known_fixtures_html = _build_known_fixtures_section(_load_known_fixtures())
     today_html = _build_today_section(comps)
     pulse_html = _build_pulse_section(_load_pulse())
     if comps:
@@ -539,6 +616,7 @@ def build_page(data: dict) -> str:
   </div>
 
   <div class="main">
+    {known_fixtures_html}
     {today_html}
     {pulse_html}
     {sections_html}

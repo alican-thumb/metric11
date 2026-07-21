@@ -10,7 +10,10 @@ from datetime import datetime, timezone
 from html import escape
 from pathlib import Path
 
-from src.config import PROCESSED_DIR, SEASON, TRANSFER_WATCH_SEASON_LABEL
+from src.config import DATA_DIR, PROCESSED_DIR, SEASON, TRANSFER_WATCH_SEASON_LABEL
+
+_TR_WEEKDAYS = ["Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi", "Pazar"]
+_TR_MONTHS = ["", "Oca", "Şub", "Mar", "Nis", "May", "Haz", "Tem", "Ağu", "Eyl", "Eki", "Kas", "Ara"]
 
 OUTPUT_HTML = PROCESSED_DIR / f"gundem_{SEASON}.html"
 
@@ -270,6 +273,54 @@ def _detect_player(title: str, player_index: dict[str, str]) -> str | None:
     return None
 
 
+def _nearest_known_fixture_html() -> str:
+    """football-data.org nitelendirme fikstürünü kapsamadığı için haber kaynaklarından
+    doğrulanmış gerçek maç bilgisini (tarih/saat/rakip) gösterir — skor/olasılık tahmini yok."""
+    path = DATA_DIR / "manual" / "european_qualifier_fixtures_2026_2027.json"
+    if not path.exists():
+        return ""
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return ""
+    fixtures = payload.get("fixtures", [])
+    if not fixtures:
+        return ""
+    now = datetime.now(timezone.utc)
+    upcoming = []
+    for fx in fixtures:
+        try:
+            dt = datetime.fromisoformat(fx["kickoff_local"])
+        except (KeyError, ValueError):
+            continue
+        upcoming.append((dt, fx))
+    if not upcoming:
+        return ""
+    upcoming.sort(key=lambda pair: pair[0])
+    dt, fx = upcoming[0]
+    delta_days = (dt.date() - now.astimezone(dt.tzinfo).date()).days
+    if delta_days < 0 and len(upcoming) > 1:
+        dt, fx = upcoming[1]
+        delta_days = (dt.date() - now.astimezone(dt.tzinfo).date()).days
+    if delta_days == 0:
+        day_label = "Bugün"
+    elif delta_days == 1:
+        day_label = "Yarın"
+    elif 2 <= delta_days <= 6:
+        day_label = _TR_WEEKDAYS[dt.weekday()]
+    else:
+        day_label = f"{dt.day} {_TR_MONTHS[dt.month]}"
+    time_str = dt.strftime("%H:%M") if fx.get("kickoff_time_confirmed", True) else "saat TBD"
+    return (
+        '<a href="european_predictions_2026_2027.html" style="display:flex;align-items:flex-start;gap:6px;text-decoration:none;'
+        'background:rgba(74,222,128,.08);border:1px solid rgba(74,222,128,.25);border-radius:7px;padding:8px 10px;margin-bottom:10px">'
+        '<span style="width:6px;height:6px;border-radius:50%;background:#4ade80;margin-top:5px;flex-shrink:0;animation:pulse 2s infinite"></span>'
+        f'<span style="font-size:11px;color:#e2e8f0;line-height:1.4">{escape(day_label)} {escape(time_str)} — '
+        f'{escape(fx.get("home_team",""))} - {escape(fx.get("away_team",""))}</span>'
+        '</a>'
+    )
+
+
 def _ana_link(href: str, label: str, bold: bool = False) -> str:
     exists = (PROCESSED_DIR / href).exists()
     if exists:
@@ -343,18 +394,18 @@ def build_html() -> str:
     else:
         analysis_transfer_links_html = ""
 
-    eu_pulse_items = eu_pulse.get("items", []) if isinstance(eu_pulse, dict) else []
-    if eu_pulse_items:
-        top = eu_pulse_items[0]
-        eu_teaser_html = (
-            '<a href="european_predictions_2026_2027.html" style="display:flex;align-items:flex-start;gap:6px;text-decoration:none;'
-            'background:rgba(74,222,128,.08);border:1px solid rgba(74,222,128,.25);border-radius:7px;padding:8px 10px;margin-bottom:10px">'
-            '<span style="width:6px;height:6px;border-radius:50%;background:#4ade80;margin-top:5px;flex-shrink:0;animation:pulse 2s infinite"></span>'
-            f'<span style="font-size:11px;color:#e2e8f0;line-height:1.4">{escape(top.get("title", ""))}</span>'
-            '</a>'
-        )
-    else:
-        eu_teaser_html = ""
+    eu_teaser_html = _nearest_known_fixture_html()
+    if not eu_teaser_html:
+        eu_pulse_items = eu_pulse.get("items", []) if isinstance(eu_pulse, dict) else []
+        if eu_pulse_items:
+            top = eu_pulse_items[0]
+            eu_teaser_html = (
+                '<a href="european_predictions_2026_2027.html" style="display:flex;align-items:flex-start;gap:6px;text-decoration:none;'
+                'background:rgba(74,222,128,.08);border:1px solid rgba(74,222,128,.25);border-radius:7px;padding:8px 10px;margin-bottom:10px">'
+                '<span style="width:6px;height:6px;border-radius:50%;background:#4ade80;margin-top:5px;flex-shrink:0;animation:pulse 2s infinite"></span>'
+                f'<span style="font-size:11px;color:#e2e8f0;line-height:1.4">{escape(top.get("title", ""))}</span>'
+                '</a>'
+            )
 
     return f"""<!DOCTYPE html>
 <html lang="tr">

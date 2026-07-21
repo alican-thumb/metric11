@@ -98,11 +98,17 @@ def build_predictions() -> dict:
             is_new = home_name in NEW_TEAMS or away_name in NEW_TEAMS
             if is_new:
                 new_team_matches += 1
+            try:
+                match_dt = parse_tff_datetime(m["date_time"])
+            except ValueError:
+                match_dt = None
             prediction = predict_match(
                 home_name, away_name, home_hist, away_hist,
                 elo.get(home_key, 1500.0), elo.get(away_key, 1500.0),
                 ref_stats=None,
                 apply_transfer_signal=True,
+                apply_fixture_congestion=True,
+                match_date=match_dt,
             )
             probs = {
                 "home": prediction["home_win_probability"],

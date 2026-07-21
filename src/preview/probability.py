@@ -158,6 +158,98 @@ def transfer_strength_edge(team_name: str) -> dict:
     }
 
 
+_CONGESTION_WINDOW_DAYS = 4
+_CONGESTION_EDGE_BY_DAYS_REST = {1: -0.09, 2: -0.075, 3: -0.06, 4: -0.03}
+_euro_match_index_cache: list | None = None
+
+
+def _parse_flexible_iso(value: str | None):
+    from datetime import datetime
+    if not value:
+        return None
+    try:
+        return datetime.fromisoformat(value.replace("Z", "+00:00"))
+    except (ValueError, AttributeError):
+        return None
+
+
+def _load_european_match_index() -> list[tuple[str, "datetime"]]:
+    """Süper Lig takımlarının Avrupa kupası maç tarihlerini iki kaynaktan birleştirir:
+    otomatik lig fazı/eleme fikstürü (football-data.org, sezon ilerledikçe dolar) ve
+    haber kaynaklı ön eleme turu fikstürü (data/manual — API'nin kapsamadığı Haziran-Ağustos dönemi).
+    """
+    global _euro_match_index_cache
+    if _euro_match_index_cache is not None:
+        return _euro_match_index_cache
+
+    from datetime import timedelta, timezone
+    from src.config import DATA_DIR, PROCESSED_DIR
+
+    tr_tz = timezone(timedelta(hours=3))
+    index: list[tuple[str, "datetime"]] = []
+
+    auto_path = PROCESSED_DIR / "european_fixtures_2026_2027.json"
+    if auto_path.exists():
+        try:
+            payload = json.loads(auto_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            payload = {}
+        for comp in payload.get("competitions", {}).values():
+            for m in comp.get("matches", []):
+                dt = _parse_flexible_iso(m.get("utc_date"))
+                if not dt:
+                    continue
+                dt_local = dt.astimezone(tr_tz).replace(tzinfo=None)
+                for side in ("home", "away"):
+                    name = (m.get(side) or {}).get("name")
+                    if name:
+                        index.append((name, dt_local))
+
+    manual_path = DATA_DIR / "manual" / "european_qualifier_fixtures_2026_2027.json"
+    if manual_path.exists():
+        try:
+            payload = json.loads(manual_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            payload = {}
+        for fx in payload.get("fixtures", []):
+            dt = _parse_flexible_iso(fx.get("kickoff_local"))
+            if not dt:
+                continue
+            dt_local = dt.astimezone(tr_tz).replace(tzinfo=None)
+            for key in ("home_team", "away_team"):
+                name = fx.get(key)
+                if name:
+                    index.append((name, dt_local))
+
+    _euro_match_index_cache = index
+    return index
+
+
+def fixture_congestion_edge(team_name: str, match_date) -> dict:
+    """Bir takımın lig maçından hemen önce Avrupa kupası maçı oynayıp oynamadığını
+    kontrol eder; oynadıysa küçük bir yorgunluk/rotasyon ceza sinyali döner.
+
+    Henüz backtest edilmemiş yeni bir sinyaldir — `apply_fixture_congestion=True` ile
+    yalnızca ileriye dönük tahminlerde (bkz. build_season_fixture_predictions.py)
+    devreye girer; kalibre edilmiş backtest sistemini etkilemez.
+    """
+    if match_date is None:
+        return {"available": False, "edge": 0.0, "days_rest": None, "opponent": None}
+    best: tuple[int, str] | None = None
+    for name, euro_dt in _load_european_match_index():
+        if not _club_matches_team(team_name, name):
+            continue
+        days_rest = (match_date.date() - euro_dt.date()).days
+        if 0 < days_rest <= _CONGESTION_WINDOW_DAYS:
+            if best is None or days_rest < best[0]:
+                best = (days_rest, name)
+    if best is None:
+        return {"available": False, "edge": 0.0, "days_rest": None, "opponent": None}
+    days_rest, opponent = best
+    edge = _CONGESTION_EDGE_BY_DAYS_REST.get(days_rest, 0.0)
+    return {"available": True, "edge": edge, "days_rest": days_rest, "opponent": opponent}
+
+
 def poisson_pmf(k: int, lam: float) -> float:
     return math.exp(-lam) * lam**k / math.factorial(k)
 
