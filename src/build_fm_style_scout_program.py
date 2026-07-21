@@ -291,7 +291,6 @@ def build_html(payload: dict) -> str:
       <a href="all_teams_preview_dashboard_2025_2026.html">Maç Önü</a>
       <a class="active" href="fm_style_scout_program_2025_2026.html">Scout</a>
       <a href="football_intelligence_home.html">Analiz</a>
-    <a href="worldcup_2026_predictions.html">🌍 WC 2026</a>
     <a href="european_predictions_2026_2027.html">⚽ Avrupa</a>
     </nav>
   </div>

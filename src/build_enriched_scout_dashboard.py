@@ -205,7 +205,6 @@ def build_html(payload: dict) -> str:
     <a class="active" href="league_scouting_enriched_2025_2026_dashboard.html">Scout Havuzu</a>
     <a href="transfer_recommendation_report_2025_2026.html">Öneriler</a>
     <a href="football_intelligence_home.html">Analiz</a>
-    <a href="worldcup_2026_predictions.html">🌍 WC 2026</a>
     <a href="european_predictions_2026_2027.html">⚽ Avrupa</a>
   </nav>
 </div>
@@ -267,3 +266,7 @@ def build_html(payload: dict) -> str:
 {_JS}
 </body>
 </html>"""
+
+
+if __name__ == "__main__":
+    main()

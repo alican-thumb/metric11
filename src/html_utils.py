@@ -69,11 +69,12 @@ _CSS = """
 def _build_nav(active: str = "") -> str:
     links = [
         ("G&#xfc;ndem", "/"),
-        ("Tahminler", "worldcup_2026_predictions.html"),
+        ("Fikstür", "season_fixture_predictions_2026_2027.html"),
         ("Transferler", "transfer_tracker_2025_2026.html"),
         (_preview_label(), "all_teams_preview_dashboard_2025_2026.html"),
         ("Scout", "transfer_recommendation_report_2025_2026.html"),
         ("Analiz", "football_intelligence_home.html"),
+        ("Avrupa", "european_predictions_2026_2027.html"),
     ]
     items = "".join(
         f'<a href="{href}" class="active">{label}</a>' if label == active or href == active

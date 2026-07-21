@@ -426,7 +426,6 @@ def build_html() -> str:
     <a href="season_fixture_predictions_2026_2027.html">🗓️ 2026-27 Fikstür</a>
     <a href="transfer_recommendation_report_{SEASON}.html">Scout</a>
     <a href="football_intelligence_home.html">Analiz</a>
-    <a href="worldcup_2026_predictions.html">🌍 WC 2026</a>
     <a href="european_predictions_2026_2027.html">⚽ Avrupa</a>
   </nav>
 </div>
@@ -472,12 +471,6 @@ def build_html() -> str:
         </a>
       </div>
       <a href="european_predictions_2026_2027.html" style="display:block;text-align:center;padding:8px;background:rgba(245,158,11,.08);border:1px solid rgba(245,158,11,.2);border-radius:7px;color:#f59e0b;font-size:12px;font-weight:700;text-decoration:none">Avrupa Tahminlerine Git →</a>
-      <div style="margin-top:10px;padding-top:10px;border-top:1px solid #1e3a5f">
-        <a href="worldcup_2026_predictions.html" style="display:flex;align-items:center;justify-content:space-between;text-decoration:none;color:#64748b;font-size:12px">
-          <span>🌍 WC 2026 Tahminleri</span>
-          <span style="color:#4ade80;font-weight:700">→</span>
-        </a>
-      </div>
     </div>
     <div class="panel" style="font-size:13px">
       <h2 style="margin-bottom:14px">Analiz Platformu</h2>

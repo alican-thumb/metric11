@@ -4,27 +4,27 @@
     "tm_clubs": 18,
     "tm_players": 817,
     "snapshot_in_scope_tff_profiles": 626,
-    "matched_profiles": 594,
-    "verified_matched_profiles": 594,
+    "matched_profiles": 592,
+    "verified_matched_profiles": 592,
     "manual_alias_mapped_profiles": 4,
     "manual_alias_pending_network_verification": 4,
-    "operationally_mapped_profiles": 598,
-    "operational_in_scope_mapped_profiles": 598,
-    "unmatched_profiles": 93,
-    "overall_match_rate": 0.86,
-    "in_scope_match_rate": 0.949,
-    "operational_mapping_rate": 0.865,
-    "operational_in_scope_mapping_rate": 0.955,
+    "operationally_mapped_profiles": 596,
+    "operational_in_scope_mapped_profiles": 596,
+    "unmatched_profiles": 95,
+    "overall_match_rate": 0.857,
+    "in_scope_match_rate": 0.946,
+    "operational_mapping_rate": 0.863,
+    "operational_in_scope_mapping_rate": 0.952,
     "scout_blocking_unmatched": 0,
     "category_counts": {
-      "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 25,
+      "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 27,
       "SAME_CLUB_NAME_REVIEW": 1,
       "POSSIBLE_TRANSFER_OR_CLUB_MISMATCH": 2,
       "OUT_OF_SNAPSHOT_CLUB": 65
     },
     "review_tier_counts": {
-      "HIGH_USAGE_UNRESOLVED": 17,
-      "ROTATION_USAGE_UNRESOLVED": 11,
+      "HIGH_USAGE_UNRESOLVED": 18,
+      "ROTATION_USAGE_UNRESOLVED": 12,
       "OUT_OF_SNAPSHOT": 65
     },
     "rule": "Doğrulanmış kapsama yalnız snapshot eşleşmesi girer; manuel alias kullanımı ayrı izlenir ve ağ teyidi tamamlanana kadar doğrulanmış sayılmaz."
@@ -161,12 +161,14 @@
       "team": "MISIRLI.COM.TR FATİH KARAGÜMRÜK",
       "tff_profiles": 38,
       "tm_players": 46,
-      "matched_profiles": 38,
+      "matched_profiles": 37,
       "manual_alias_mapped_profiles": 0,
-      "unmatched_profiles": 0,
-      "match_rate": 1.0,
-      "operational_mapping_rate": 1.0,
-      "categories": {}
+      "unmatched_profiles": 1,
+      "match_rate": 0.974,
+      "operational_mapping_rate": 0.974,
+      "categories": {
+        "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 1
+      }
     },
     {
       "team": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ",
@@ -224,12 +226,14 @@
       "team": "ZECORNER KAYSERİSPOR",
       "tff_profiles": 39,
       "tm_players": 51,
-      "matched_profiles": 39,
+      "matched_profiles": 38,
       "manual_alias_mapped_profiles": 0,
-      "unmatched_profiles": 0,
-      "match_rate": 1.0,
-      "operational_mapping_rate": 1.0,
-      "categories": {}
+      "unmatched_profiles": 1,
+      "match_rate": 0.974,
+      "operational_mapping_rate": 0.974,
+      "categories": {
+        "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 1
+      }
     },
     {
       "team": "ÇAYKUR RİZESPOR A.Ş.",
@@ -311,6 +315,22 @@
         "starts": 28,
         "squad_inclusions": 29,
         "goals": 2
+      },
+      "candidate": null,
+      "action": "Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir."
+    },
+    {
+      "player_id": "2292629",
+      "tff_name": "SERGIO ANTONIO DA LUZ JUNIOR",
+      "tff_club": "MISIRLI.COM.TR FATİH KARAGÜMRÜK",
+      "category": "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT",
+      "priority_rank": 4,
+      "blocks_scout_review": false,
+      "review_tier": "HIGH_USAGE_UNRESOLVED",
+      "season_activity": {
+        "starts": 26,
+        "squad_inclusions": 33,
+        "goals": 8
       },
       "candidate": null,
       "action": "Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir."
@@ -733,6 +753,32 @@
         "goals": 1
       },
       "candidate": null,
+      "action": "Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir."
+    },
+    {
+      "player_id": "2880821",
+      "tff_name": "SAMUEL JAMES MATHER",
+      "tff_club": "ZECORNER KAYSERİSPOR",
+      "category": "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT",
+      "priority_rank": 4,
+      "blocks_scout_review": false,
+      "review_tier": "ROTATION_USAGE_UNRESOLVED",
+      "season_activity": {
+        "starts": 1,
+        "squad_inclusions": 16,
+        "goals": 0
+      },
+      "candidate": {
+        "tm_name": "Sam Mather",
+        "tm_team_name": null,
+        "tm_id": "670851",
+        "tm_position": "Left Winger",
+        "tm_market_value_eur": 100000,
+        "score": 0.69,
+        "common_tokens": [
+          "MATHER"
+        ]
+      },
       "action": "Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir."
     },
     {

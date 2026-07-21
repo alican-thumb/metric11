@@ -14,11 +14,17 @@ from datetime import date
 
 from src.config import (
     PROCESSED_DIR,
+    ROOT_DIR,
     SEASON,
     TRANSFER_WATCH_SEASON,
     TRANSFER_WATCH_SEASON_LABEL,
 )
 from src.html_utils import preview_nav_label
+from src.normalization import normalize_name
+
+NEW_SIGNING_MARKET_VALUE_OVERRIDES_PATH = (
+    ROOT_DIR / "data" / "manual" / "new_signing_market_values_2025_2026.json"
+)
 
 OUTPUT_HTML = PROCESSED_DIR / f"transfer_tracker_{SEASON}.html"
 OUTPUT_JSON = PROCESSED_DIR / f"transfer_tracker_{SEASON}.json"
@@ -99,7 +105,26 @@ def _load_tm_signals() -> list[dict]:
     return signals
 
 
+def _load_new_signing_market_value_overrides() -> dict[str, int]:
+    """TFF oyuncu havuzunda henüz olmayan (yeni/yabancı) transferler için manuel TM piyasa değeri.
+
+    `player_index` (analyze_news_with_claude._build_player_index) yalnızca daha önce
+    Süper Lig'de oynamış oyuncuları kapsıyor; ilk kez gelen transferler bu yüzden
+    otomatik market value alamıyor ve transfer_strength_edge() eşiği hiç geçmiyor.
+    Bu dosya o boşluğu manuel, kaynaklı bir snapshot ile kapatır.
+    """
+    if not NEW_SIGNING_MARKET_VALUE_OVERRIDES_PATH.exists():
+        return {}
+    payload = json.loads(NEW_SIGNING_MARKET_VALUE_OVERRIDES_PATH.read_text(encoding="utf-8"))
+    return {
+        normalize_name(p["player_name"]): p["market_value_eur"]
+        for p in payload.get("players", [])
+        if p.get("player_name") and p.get("market_value_eur")
+    }
+
+
 def _enrich(signals: list[dict]) -> list[dict]:
+    overrides = _load_new_signing_market_value_overrides()
     result = []
     for s in signals:
         player = _title(s.get("player_name"))
@@ -108,7 +133,7 @@ def _enrich(signals: list[dict]) -> list[dict]:
         status = s.get("verification_status") or s.get("confidence") or "REVIEW_REQUIRED"
         if status not in STATUS_META:
             status = "REVIEW_REQUIRED"
-        mv = s.get("tm_market_value_eur")
+        mv = s.get("tm_market_value_eur") or overrides.get(normalize_name(s.get("player_name") or ""))
         result.append({
             "player":       player,
             "from_club":    from_c,
@@ -279,7 +304,6 @@ def build_html(signals: list[dict], summary: dict) -> str:
     <a href="all_teams_preview_dashboard_{SEASON}.html">{preview_nav_label()}</a>
     <a href="transfer_recommendation_report_{SEASON}.html">Scout</a>
     <a href="football_intelligence_home.html">Analiz</a>
-    <a href="worldcup_2026_predictions.html">🌍 WC 2026</a>
     <a href="european_predictions_2026_2027.html">⚽ Avrupa</a>
   </nav>
 </div>

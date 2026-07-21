@@ -65,12 +65,6 @@ def build_html() -> str:
             f"{eu_total_matches} maç · {eu_finished} oynandı" if eu_total_matches else "Sezon Temmuz'da başlıyor",
         ),
         panel_card(
-            "FIFA Dünya Kupası 2026 Tahminleri",
-            "48 takım, 104 maç. Skor tahmini, sonuç olasılıkları, gol ve kart beklentisi — veri odaklı analizle.",
-            "worldcup_2026_predictions.html",
-            "11 Haz – 19 Tem 2026",
-        ),
-        panel_card(
             "Futbol Komuta Merkezi",
             "Tahmin performansı, Beşiktaş maç önü arşivi, gol adayları, FM scout ve takım ihtiyacını tek ekranda toplar.",
             "football_command_center_2025_2026.html",
@@ -256,7 +250,6 @@ def build_html() -> str:
       <a href="all_teams_preview_dashboard_2025_2026.html">{"Arşiv" if _is_transfer_season() else "Maç Önü"}</a>
       <a href="transfer_recommendation_report_2025_2026.html">Scout</a>
       <a class="active" href="football_intelligence_home.html">Analiz</a>
-    <a href="worldcup_2026_predictions.html">🌍 WC 2026</a>
     <a href="european_predictions_2026_2027.html">⚽ Avrupa</a>
     </nav>
   </div>

@@ -2058,3 +2058,121 @@ Bir sonraki oturumda önce `PROJECT_STATE.md` okunmalı. Ardından öncelik:
   4. Kalan `17` H2H çiftini tamamlamak (açık, ağ gerektirir).
   5. 4 manuel alias için ağ teyidi tamamlamak (açık, ağ gerektirir).
   6. **Yeni**: `collect_tff_league_season`/`collect_besiktas_season`/`collect_sofascore_stats` benzeri "sabit sezon kimliğiyle harici siteyi yeniden tarayan" başka collector olup olmadığı gözden geçirilmeli — aynı sınıf hata (biten sezonu güvenlik kontrolsüz üzerine yazma) başka yerde de gizli olabilir.
+
+## 2026-07-19 Günlük Veri/Geliştirme Kontrolü
+
+- 19 Temmuz kontrolünde `data/processed` altında bugün üretilmiş yeni dosya yok (`0`). Son büyük üretim 18 Temmuz 16:40 civarında.
+- Git durumu temiz ve `main...origin/main` hizalı. Son commitler: `fc20d0d8 fix: sezon sonu collector'ların TFF/Sofascore veri imhasını düzelt`, ardından `91964cbd Merge remote-tracking branch 'origin/main'`.
+- `daily_pipeline_run_latest.md` güncel sayılır: son ağsız koşu `2026-07-18T13:32:48Z`, `57/57` başarılı, `0` hata.
+- `data_quality_scorecard_2025_2026` iyileşmiş durumda ve korunuyor: genel skor `85.4`.
+- OOS validation artık düzeldi:
+  - Full-season: `141/258`, doğruluk `%54.7`, Brier `0.601`, log loss `1.005`.
+  - İkinci yarı OOS: `88/153`, doğruluk `%57.5`, Brier `0.595`, log loss `0.997`.
+  - Raw baseline: full-season `%51.2`, second-half OOS `%53.6`; model iki ölçekte de baseline üstünde.
+- `league_market_value_audit_2025_2026` yeni TM kapsamına geçti: `18` market kulübü / `817` oyuncu / `%100` maç kapsamı (`258/258`), eksik takım yok. Model accuracy audit içinde `%54.7`; market baseline `%48.1`.
+- H2H toplama tamamlandı: `153/153` takım çifti toplandı, eksik takım id yok.
+- Transfermarkt/TFF kapsamı korunuyor: 2025/26 TM snapshot `18` kulüp / `817` oyuncu / `€1.74191B`; review queue `in_scope_match_rate %94.9`, `scout_blocking_unmatched 0`.
+- 2026/27 fikstür tahminleri mevcut: `34` hafta / `306` maç, oynanmış maç `0`. Güven dağılımı güncel üretimde `HIGH 58`, `MEDIUM 83`, `LOW 69`, `LOW_NEW_TEAM 96`.
+- Transfer tracker değişmedi: `49` sinyal, `1` official, `5` corroborated, `16` rumor, `27` review required, toplam değer `€2.2M`. Ancak `season_fixture_predictions_2026_2027` içinde `transfer_signal_available_matches 0`; ilk official sinyal tahmin edge'ine henüz yansımıyor veya takım/eşleşme mapping’i kaçırıyor.
+- Avrupa haber nabzı büyüdü: `european_news_pulse_2025_2026` artık `13` haber.
+- Açık scorecard WATCH başlıkları:
+  - `manual_alias_pending_network_verification`: `4`.
+  - Beşiktaş display tahmin doğruluğu: `19/29`, `%65.5`.
+  - Beşiktaş beraberlik recall: `2/9`, `%22.2`.
+  - Gol adayı top-5: `20/26`, `%76.9`.
+  - Gol adayı top-8: `22/26`, `%84.6`.
+- Kalan öncelik sırası:
+  1. İlk `OFFICIAL` transfer sinyalinin neden fixture tahminlerinde transfer edge olarak görünmediğini incelemek.
+  2. 4 manuel alias için ağ teyidini tamamlamak.
+  3. Sabit sezon kimliğiyle eski sezon dosyalarını yeniden tarayan başka collector var mı kontrol etmek.
+  4. Yeni takımlar için `LOW_NEW_TEAM` yükünü düşürmek üzere 1. Lig/backfill veya resmi kadro-form sinyali eklemek.
+  5. Beşiktaş özel ekran katmanındaki draw recall ve gol adayı top-5/top-8 metriklerini daha okunur ürün diliyle iyileştirmek.
+
+## 2026-07-20 Günlük Veri/Geliştirme Kontrolü
+
+- 20 Temmuz kontrolünde `data/processed` altında bugün üretilmiş yeni dosya yok (`0`). Son büyük üretim hâlâ 18 Temmuz 16:40 civarında.
+- Git durumu kontrol başında `main...origin/main` hizalı; localde yalnız günlük kontrol notları nedeniyle `PROJECT_STATE.md` değişikliği var.
+- `daily_pipeline_run_latest.md` güncel son ağsız koşuyu gösteriyor: `2026-07-18T13:32:48Z`, `57/57` başarılı, `0` hata.
+- `data_quality_scorecard_2025_2026` değişmedi: genel skor `85.4`.
+- OOS validation sağlıklı kalıyor:
+  - Full-season: `141/258`, doğruluk `%54.7`, Brier `0.601`, log loss `1.005`.
+  - İkinci yarı OOS: `88/153`, doğruluk `%57.5`, Brier `0.595`, log loss `0.997`.
+  - Raw baseline: full-season `%51.2`, second-half OOS `%53.6`.
+- `league_market_value_audit_2025_2026` güncel TM kapsamıyla uyumlu kalıyor: `18` market kulübü / `817` oyuncu / `%100` maç kapsamı, eksik takım yok.
+- H2H toplama tamamlanmış durumda: `153/153` takım çifti.
+- Transfermarkt/TFF kapsamı korunuyor: 2025/26 TM snapshot `18` kulüp / `817` oyuncu / `€1.74191B`; review queue `in_scope_match_rate %94.9`, `scout_blocking_unmatched 0`.
+- 2026/27 fikstür tahminleri mevcut ve değişmedi: `34` hafta / `306` maç, oynanmış maç `0`; güven dağılımı son üretimde `HIGH 58`, `MEDIUM 83`, `LOW 69`, `LOW_NEW_TEAM 96`.
+- Transfer tracker değişmedi: `49` sinyal, `1` official, `5` corroborated, `16` rumor, `27` review required, toplam değer `€2.2M`. `season_fixture_predictions_2026_2027` içinde hâlâ `transfer_signal_available_matches 0`; official transfer sinyali fixture tahmin edge’ine yansımıyor.
+- Avrupa haber nabzı son üretimde `13` haber.
+- Açık scorecard WATCH başlıkları değişmedi:
+  - `manual_alias_pending_network_verification`: `4`.
+  - Beşiktaş display tahmin doğruluğu: `19/29`, `%65.5`.
+  - Beşiktaş beraberlik recall: `2/9`, `%22.2`.
+  - Gol adayı top-5: `20/26`, `%76.9`.
+  - Gol adayı top-8: `22/26`, `%84.6`.
+- Kalan öncelik sırası aynı:
+  1. İlk `OFFICIAL` transfer sinyalinin fixture tahminlerinde neden transfer edge olarak görünmediğini incelemek.
+  2. 4 manuel alias için ağ teyidini tamamlamak.
+  3. Sabit sezon kimliğiyle eski sezon dosyalarını yeniden tarayan başka collector var mı kontrol etmek.
+  4. Yeni takımlar için `LOW_NEW_TEAM` yükünü düşürmek üzere 1. Lig/backfill veya resmi kadro-form sinyali eklemek.
+  5. Beşiktaş özel ekran katmanındaki draw recall ve gol adayı top-5/top-8 metriklerini daha okunur ürün diliyle iyileştirmek.
+
+## 2026-07-21 Günlük Veri/Geliştirme Kontrolü
+
+- 21 Temmuz kontrolünde `data/processed` altında bugün üretilmiş yeni dosya yok (`0`). Ancak 20 Temmuz’da önemli bir türetilmiş çıktı/görsel rapor üretimi yapılmış: `league_scouting_enriched_2025_2026_dashboard.html`, scout dashboardları, transfer tracker, OOS, market audit, data catalog ve birçok takım dashboardu güncellenmiş.
+- Git çalışma alanı temiz değil: `PROJECT_STATE.md` dışında çok sayıda `data/processed/*` ve UI/rapor builder dosyası (`src/build_*`, `src/html_utils.py`) değişmiş. Bu değişiklikler muhtemelen 20 Temmuz’daki başka agent/geliştirme turundan geliyor; revert edilmedi.
+- `daily_pipeline_run_latest.md` hâlâ son ağsız koşuyu `2026-07-18T13:32:48Z`, `57/57` başarılı, `0` hata olarak gösteriyor. 20 Temmuz’daki geniş rapor/UI üretimi için ayrı pipeline health raporu yok.
+- `data_quality_scorecard_2025_2026` değişmedi: genel skor `85.4`.
+- OOS validation sağlıklı ve küçük iyileşme var:
+  - Full-season: `142/258`, doğruluk `%55.0`, Brier `0.600`, log loss `1.005`.
+  - İkinci yarı OOS: `89/153`, doğruluk `%58.2`, Brier `0.595`, log loss `0.996`.
+  - Raw baseline: full-season `%51.2`, second-half OOS `%53.6`.
+- `league_market_value_audit_2025_2026` güncel TM kapsamıyla uyumlu kalıyor: `18` market kulübü / `817` oyuncu / `%100` maç kapsamı, eksik takım yok. Audit içindeki model accuracy hâlâ `%54.7`; OOS çıktısındaki `%55.0/%58.2` ile rapor zamanlaması farkı izlenmeli.
+- H2H toplama tamamlanmış durumda: `153/153` takım çifti.
+- Transfermarkt/TFF kapsamı korunuyor: review queue `tm_clubs 18`, `tm_players 817`, `in_scope_match_rate %94.6`, operational in-scope mapping `%95.2`, `scout_blocking_unmatched 0`. 20 Temmuz üretiminden sonra eşleşen profil sayısı `594→592` düşmüş; blokaj üretmedi ama izlenmeli.
+- Scout kalite raporu tekrar ana havuzu doğru yansıtıyor: `370` blueprint aday bağlantısı, düşük güvenli blueprint `0`, pozisyon matrisi adayı `105`, repeated role `0`. Pozisyon matrisi `691` aday / `105` rol eşleşmesi / `18` takım.
+- 2026/27 fikstür tahminleri mevcut ve değişmedi: `34` hafta / `306` maç, oynanmış maç `0`; güven dağılımı `HIGH 58`, `MEDIUM 83`, `LOW 69`, `LOW_NEW_TEAM 96`.
+- Transfer tracker değişti: `49` sinyal, `official_count 0`, `confirmed_count 7`, `CORROBORATED 7`, `RUMOR 13`, `REVIEW_REQUIRED 29`, toplam değer `0`. Önceki `1 official / €2.2M` sinyal artık official görünmüyor.
+- Transfer edge kök neden adayı netleşti: `transfer_tracker_2025_2026.json` içindeki doğrulanmış sinyallerde oyuncu isimleri var ama `team`, `club`, `to_team`, `from_team` alanları `None`; bu yüzden `transfer_strength_edge(team_name)` fixture takım adlarıyla eşleşemiyor ve `season_fixture_predictions_2026_2027` içinde `transfer_signal_available_matches 0` kalıyor.
+- Avrupa haber nabzı son üretimde `13` haber.
+- Açık scorecard WATCH başlıkları değişmedi:
+  - `manual_alias_pending_network_verification`: `4`.
+  - Beşiktaş display tahmin doğruluğu: `19/29`, `%65.5`.
+  - Beşiktaş beraberlik recall: `2/9`, `%22.2`.
+  - Gol adayı top-5: `20/26`, `%76.9`.
+  - Gol adayı top-8: `22/26`, `%84.6`.
+- Kalan öncelik sırası:
+  1. Transfer tracker sinyallerine hedef takım (`to_team`/normalized team) alanı kazandırmak; ardından transfer edge’in 2026/27 fixture tahminlerine yansıdığını doğrulamak.
+  2. 4 manuel alias için ağ teyidini tamamlamak.
+  3. 20 Temmuz’da değişen UI/rapor builder dosyalarının kapsamını review edip gerekiyorsa commit/push hazırlamak.
+  4. Sabit sezon kimliğiyle eski sezon dosyalarını yeniden tarayan başka collector var mı kontrol etmek.
+  5. Yeni takımlar için `LOW_NEW_TEAM` yükünü düşürmek üzere 1. Lig/backfill veya resmi kadro-form sinyali eklemek.
+  6. Beşiktaş özel ekran katmanındaki draw recall ve gol adayı top-5/top-8 metriklerini daha okunur ürün diliyle iyileştirmek.
+
+## 2026-07-21 (devam) — WC 2026 Linkleri Kaldırıldı, Sessiz Pipeline Hatası Bulundu, Avrupa Eleme Nabzı Yenilendi, Transfer Edge Kök Nedeni Netleşti
+
+- **WC 2026 linkleri site genelinde kaldırıldı**: Turnuva bitti, kullanıcı isteğiyle `worldcup_2026_predictions.html` artık hiçbir sayfadan linklenmiyor — anasayfa (`gundem_2025_2026.html`: nav linki + sidebar teaser bloğu), `football_intelligence_home.html` (nav + panel kart), `html_utils.py` paylaşılan nav (12 rapor sayfası bunu kullanıyor), `build_european_predictions.py` kendi nav'ı, `build_sitemap.py`. Sayfa/veri/script'ler silinmedi, yalnızca iç bağlantılar kesildi. `html_utils.py`'deki eski "Tahminler → WC 2026" linki "Fikstür → season_fixture_predictions_2026_2027.html" oldu; paylaşılan nav'a ayrıca "Avrupa" linki eklendi (önceden sadece anasayfa ve Avrupa sayfasının kendi nav'ında vardı, alt sayfalarda yoktu).
+- **Bulunan gerçek pipeline hatası**: `src/build_enriched_scout_dashboard.py`, 27 Haziran'daki büyük yeniden yazımda (`e88cb9c6`) `if __name__ == "__main__": main()` bloğunu kaybetmiş. `run_daily_pipeline.py` bunu `python -m src.build_enriched_scout_dashboard` ile her gün çalıştırıp "başarılı" (exit 0) sayıyordu ama modül hiçbir şey yazmıyordu — `league_scouting_enriched_2025_2026_dashboard.html` (691 oyunculu scout havuzu sayfası) 27 Haziran'dan beri sessizce donmuştu. Guard eklendi, sayfa yeniden üretildi (bugünkü veriyle). Diğer tüm `src/build_*.py` dosyaları tarandı, başka eksik guard bulunmadı.
+- **Avrupa eleme turu analizi yenilendi** (`collect_news_rss`, `collect_news_google`, `build_european_news_pulse`, `build_european_predictions` yeniden çalıştırıldı → 13'ten 48 ilgili habere çıktı). football-data.org nitelendirme turlarını kapsamadığı için hâlâ tek kaynak haber sinyali. Güncel durum: Fenerbahçe CL 2. ön eleme turunda Górnik Zabrze (Polonya) ile 21 Temmuz'da (Chobani, ilk maç) oynuyor, geçerse 3. turda Sturm Graz-Hearts galibiyle eşleşecek; Beşiktaş EL 2. ön eleme turunda Midtjylland (Danimarka) ile 23 Temmuz'da oynayacak, geçerse 3. turda Hradec Kralove-Tromsø galibiyle eşleşecek; Başakşehir ECL 2. ön eleme turunda Inter Turku (Finlandiya) ile oynuyor, geçerse 3. turda Vaduz-Escaldes galibiyle eşleşecek. Galatasaray ve Trabzonspor için nabızda hiç sinyal yok (muhtemelen Galatasaray şampiyon sıfatıyla doğrudan lig fazına gitti, Trabzonspor Avrupa kupasında değil — ikisi de bu kaynakla doğrulanmadı, ayrıca teyit edilmeli).
+- **Transfer edge kök nedeni düzeltildi/netleşti — önceki tanı (bugünkü ilk "Günlük Kontrol" bölümünde) yanlıştı**: O bölüm "`to_team`/`from_team` alanları None" diyordu; kod incelendiğinde `transfer_strength_edge()`'in gerçekten `to_club`/`from_club` okuduğu ve bu alanların dolu olduğu görüldü (ör. Ivanovic kaydında `to_club: "Galatasaray"`). Asıl kök neden: fonksiyon önce `value = record.get("market_value_eur") or 0` okuyor ve `market_value_eur` `null` olan 7 CORROBORATED kaydın (Ivanovic→GS, Çavuşoğlu→Gençlerbirliği, Diarra→Kasımpaşa, El Yamiq→Eyüpspor, Colley→Konyaspor, Ben Ali→Alanyaspor) hepsi `if not weight or not value: continue` satırında kulüp eşleşmesine hiç ulaşmadan atlanıyor. Sonuç: her takım için `confirmed_net_value` `0` kalıyor, `€2M` eşiği hiç geçilmiyor, `season_fixture_predictions_2026_2027` içinde `transfer_signal_available_matches` hep `0`. Düzeltme için bu 6 oyuncunun Transfermarkt profili bulunup piyasa değeriyle eşleştirilmesi gerekiyor (ağ gerektirir, bu turda yapılmadı — kullanıcı onayı bekleniyor).
+- Kalan öncelik sırası (düzeltilmiş kök nedenle):
+  1. 6 CORROBORATED transferin (Ivanovic, Çavuşoğlu, Diarra, El Yamiq, Colley, Ben Ali) Transfermarkt profilini bulup `market_value_eur` alanını doldurmak; ardından transfer edge'in fixture tahminlerine yansıdığını doğrulamak.
+  2. 4 manuel alias için ağ teyidini tamamlamak.
+  3. Sabit sezon kimliğiyle eski sezon dosyalarını yeniden tarayan başka collector var mı kontrol etmek.
+  4. Yeni takımlar için `LOW_NEW_TEAM` yükünü düşürmek üzere 1. Lig/backfill veya resmi kadro-form sinyali eklemek.
+  5. Beşiktaş özel ekran katmanındaki draw recall ve gol adayı top-5/top-8 metriklerini daha okunur ürün diliyle iyileştirmek.
+  6. Galatasaray/Trabzonspor'un 2026-27 Avrupa kupası durumu (lig fazı/yok) ayrı doğrulanmalı — haber nabzında hiç sinyal yok.
+
+## 2026-07-21 (devam 2) — Transfer Piyasa Değeri Boşluğu Kapatıldı, Ama Eşik Hâlâ Geçilmiyor (Bu Doğru Davranış)
+
+- **Kök neden doğrulandı ve düzeltildi**: `analyze_news_with_claude.py`'deki oyuncu eşleştirme (`_build_player_index()`) yalnızca daha önce Süper Lig'de oynamış (TFF havuzundaki) oyunculardan çalışıyor. 7 CORROBORATED transferin 6'sı (Ivanovic hariç) **ilk kez Süper Lig'e gelen yabancı/yeni imzalar** olduğu için bu havuzda hiç yoklar — dolayısıyla `tm_market_value_eur` hiç atanmıyordu. Bu, "kadro değişince analiz güncellenmiyor" endişesinin somut bir örneğiydi.
+- **Yapılan düzeltme**: 5 oyuncunun (Thiemoko Diarra→Kasımpaşa, Ebrima Colley→Konyaspor, Omar Ben Ali→Alanyaspor, Muhammet Ensar Çavuşoğlu→Gençlerbirliği, Jawad El Yamiq→Eyüpspor) gerçek Transfermarkt piyasa değeri ilgili kulübün güncel (2026-27) TM kadro sayfasından canlı çekilerek doğrulandı (€300K–€1.5M arası). `data/manual/new_signing_market_values_2025_2026.json` adıyla kaynaklı bir manuel snapshot dosyası oluşturuldu (mevcut `opponent_market_values` dosyasıyla aynı stil/format). `build_transfer_tracker.py`'ye bu dosyayı okuyup `tm_market_value_eur` boşsa fallback olarak kullanan `_load_new_signing_market_value_overrides()` eklendi. `transfer_tracker_2025_2026.json` artık `total_value_eur: 0 → 3.75M` gösteriyor.
+- **Nikola Ivanovic (Galatasaray) kasıtlı olarak boş bırakıldı**: Transfermarkt'ta bu isimde 3 farklı oyuncu var, hiçbiri Galatasaray kadrosunda görünmüyor; haber kaynağının ("Haberler" agregatörü) yanlış/erken olması ihtimali var. Uydurmak yerine `market_value_eur: null` bırakıldı, dosyada not olarak açıklandı.
+- **Dürüst sonuç — eşik hâlâ geçilmiyor**: `build_season_fixture_predictions` yeniden çalıştırıldı; 306 maçın hiçbirinde `transfer_signal.home/away.available` hâlâ `true` değil. Neden: `transfer_strength_edge()` CORROBORATED ağırlığı `0.6`; en büyük düzeltilmiş değer olan Diarra'nın `€1.5M`'i bile `0.6 × 1.5M = €900K` ediyor, takım başına `€2M` eşiğinin altında kalıyor. Bu bir hata değil — model kasıtlı olarak küçük/orta değerli tek transferlere aşırı tepki vermeyecek şekilde kalibre edilmiş. Yani mekanizma artık doğru çalışıyor, sadece bu pencerede henüz eşiği geçecek büyüklükte (tek başına ≥€2M veya aynı takıma birikmiş ≥€3.3M CORROBORATED) bir transfer yok.
+- Kalan öncelik sırası güncellendi:
+  1. ~~Transfer sinyali market value boşluğu~~ ✅ düzeltildi (mekanizma artık çalışıyor); ama görünür etki için ya daha büyük bir OFFICIAL transfer ya da aynı takımda birikmiş sinyal gerekiyor — pencere ilerledikçe tekrar kontrol edilmeli.
+  2. Nikola Ivanovic→Galatasaray sinyalinin gerçek olup olmadığını ayrı doğrulamak (TM'de eşleşme yok).
+  3. 4 manuel alias için ağ teyidini tamamlamak.
+  4. Sabit sezon kimliğiyle eski sezon dosyalarını yeniden tarayan başka collector var mı kontrol etmek.
+  5. Yeni takımlar için `LOW_NEW_TEAM` yükünü düşürmek üzere 1. Lig/backfill veya resmi kadro-form sinyali eklemek.
+  6. Galatasaray/Trabzonspor'un 2026-27 Avrupa kupası durumu ayrı doğrulanmalı.

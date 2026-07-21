@@ -3,16 +3,16 @@
 - TFF profil: 691
 - Transfermarkt snapshot: 18/18 kulüp, 817 oyuncu
 - Snapshot kapsamındaki TFF profil: 626
-- Doğrulanmış snapshot eşleşmesi: 594
+- Doğrulanmış snapshot eşleşmesi: 592
 - Manuel eşleme ile kullanılan profil: 4
 - Ağ teyidi bekleyen manuel eşleme: 4
-- Çözülmemiş profil: 93
-- Doğrulanmış genel eşleşme oranı: %86.0
-- Doğrulanmış snapshot içi eşleşme oranı: %94.9
-- Manuel eşleme dahil kullanılabilir snapshot içi kapsama: %95.5
+- Çözülmemiş profil: 95
+- Doğrulanmış genel eşleşme oranı: %85.7
+- Doğrulanmış snapshot içi eşleşme oranı: %94.6
+- Manuel eşleme dahil kullanılabilir snapshot içi kapsama: %95.2
 - Scout incelemesini bloke eden eşleşmeyen oyuncu: 0
-- Sınıf dağılımı: {'NO_RELIABLE_CANDIDATE_IN_SNAPSHOT': 25, 'SAME_CLUB_NAME_REVIEW': 1, 'POSSIBLE_TRANSFER_OR_CLUB_MISMATCH': 2, 'OUT_OF_SNAPSHOT_CLUB': 65}
-- Kullanım önceliği dağılımı: {'HIGH_USAGE_UNRESOLVED': 17, 'ROTATION_USAGE_UNRESOLVED': 11, 'OUT_OF_SNAPSHOT': 65}
+- Sınıf dağılımı: {'NO_RELIABLE_CANDIDATE_IN_SNAPSHOT': 27, 'SAME_CLUB_NAME_REVIEW': 1, 'POSSIBLE_TRANSFER_OR_CLUB_MISMATCH': 2, 'OUT_OF_SNAPSHOT_CLUB': 65}
+- Kullanım önceliği dağılımı: {'HIGH_USAGE_UNRESOLVED': 18, 'ROTATION_USAGE_UNRESOLVED': 12, 'OUT_OF_SNAPSHOT': 65}
 - Kural: Doğrulanmış kapsama yalnız snapshot eşleşmesi girer; manuel alias kullanımı ayrı izlenir ve ağ teyidi tamamlanana kadar doğrulanmış sayılmaz.
 
 ## Scout Bloke Eden Kuyruk
@@ -39,12 +39,12 @@
 | HESAP.COM ANTALYASPOR | 29 | 48 | 29 | 0 | 0 | %100.0 | %100.0 |
 | KASIMPAŞA A.Ş. | 35 | 60 | 32 | 0 | 3 | %91.4 | %91.4 |
 | KOCAELİSPOR | 29 | 39 | 28 | 0 | 1 | %96.6 | %96.6 |
-| MISIRLI.COM.TR FATİH KARAGÜMRÜK | 38 | 46 | 38 | 0 | 0 | %100.0 | %100.0 |
+| MISIRLI.COM.TR FATİH KARAGÜMRÜK | 38 | 46 | 37 | 0 | 1 | %97.4 | %97.4 |
 | RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ | 28 | 32 | 27 | 0 | 1 | %96.4 | %96.4 |
 | SAMSUNSPOR A.Ş. | 34 | 44 | 31 | 0 | 3 | %91.2 | %91.2 |
 | TRABZONSPOR A.Ş. | 35 | 42 | 34 | 1 | 0 | %97.1 | %100.0 |
 | TÜMOSAN KONYASPOR | 43 | 48 | 40 | 0 | 3 | %93.0 | %93.0 |
-| ZECORNER KAYSERİSPOR | 39 | 51 | 39 | 0 | 0 | %100.0 | %100.0 |
+| ZECORNER KAYSERİSPOR | 39 | 51 | 38 | 0 | 1 | %97.4 | %97.4 |
 | ÇAYKUR RİZESPOR A.Ş. | 32 | 35 | 32 | 0 | 0 | %100.0 | %100.0 |
 | İKAS EYÜPSPOR | 36 | 62 | 34 | 0 | 2 | %94.4 | %94.4 |
 
@@ -187,6 +187,10 @@
 
 - TİBET DURAKÇAY (MENEMEN FUTBOL KULÜBÜ): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 
+### MISIRLI.COM.TR FATİH KARAGÜMRÜK
+
+- SERGIO ANTONIO DA LUZ JUNIOR (MISIRLI.COM.TR FATİH KARAGÜMRÜK): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=26, gol=8, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
+
 ### RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ
 
 - LEONARDO CAMPOS DUARTE DA SILVA (RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=26, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
@@ -237,6 +241,10 @@
 ### YOZGAT BELEDİYESİ BOZOK SPOR
 
 - ADNAN AKTAŞ (YOZGAT BELEDİYESİ BOZOK SPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
+
+### ZECORNER KAYSERİSPOR
+
+- SAMUEL JAMES MATHER (ZECORNER KAYSERİSPOR): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=1, gol=0, scout_blok=False, aday=Sam Mather (ZECORNER KAYSERİSPOR, skor=0.69, ortak=MATHER). Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 
 ### ÇAYELİ SPOR KULÜBÜ
 

@@ -26,7 +26,6 @@ _NAV_LINKS = [
     ("Transferler", "transfer_tracker_2025_2026.html"),
     ("Maç Önü", "all_teams_preview_dashboard_2025_2026.html"),
     ("Scout", "transfer_recommendation_report_2025_2026.html"),
-    ("WC 2026", "worldcup_2026_predictions.html"),
     ("Avrupa", "european_predictions_2026_2027.html"),
 ]
 

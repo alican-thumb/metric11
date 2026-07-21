@@ -1,0 +1,48 @@
+{
+  "source": "Transfermarkt (manual capture)",
+  "source_type": "MANUAL_SNAPSHOT",
+  "captured_at": "2026-07-21",
+  "notes": [
+    "Bu dosya, haber sinyalinden yakalanan ama henüz TFF Süper Lig oyuncu havuzunda olmayan yeni transferler (yabancı/ilk kez Süper Lig'e gelen oyuncular) için manuel Transfermarkt piyasa değeri snapshot'ıdır.",
+    "transfer_strength_edge() (src/preview/probability.py) yalnızca market_value_eur dolu olan doğrulanmış transferleri sayıyor; bu oyuncular TFF tabanlı player_index'te olmadığı için otomatik eşleşmiyorlardı.",
+    "Değerler ilgili kulübün Transfermarkt kadro sayfasından (2026-27 kadrosu) doğrudan okunmuştur.",
+    "Nikola Ivanovic (Galatasaray, haber sinyali CORROBORATED) kasıtlı olarak dışarıda bırakıldı: Transfermarkt'ta bu isimde 3 farklı oyuncu var ve hiçbiri Galatasaray kadrosunda görünmüyor — TM eşleşmesi doğrulanamadı."
+  ],
+  "players": [
+    {
+      "player_name": "Muhammet Ensar Çavuşoğlu",
+      "to_club": "Gençlerbirliği",
+      "market_value_eur": 400000,
+      "transfermarkt_id": "674369",
+      "profile_url": "https://www.transfermarkt.com/ensar-cavusoglu/profil/spieler/674369"
+    },
+    {
+      "player_name": "Thiemoko Diarra",
+      "to_club": "Kasımpaşa",
+      "market_value_eur": 1500000,
+      "transfermarkt_id": "922828",
+      "profile_url": "https://www.transfermarkt.com/thiemoko-diarra/profil/spieler/922828"
+    },
+    {
+      "player_name": "Jawad El Yamiq",
+      "to_club": "Eyüpspor",
+      "market_value_eur": 300000,
+      "transfermarkt_id": "235412",
+      "profile_url": "https://www.transfermarkt.com/jawad-el-yamiq/profil/spieler/235412"
+    },
+    {
+      "player_name": "Ebrima Colley",
+      "to_club": "Konyaspor",
+      "market_value_eur": 800000,
+      "transfermarkt_id": "567217",
+      "profile_url": "https://www.transfermarkt.com/ebrima-colley/profil/spieler/567217"
+    },
+    {
+      "player_name": "Omar Ben Ali",
+      "to_club": "Alanyaspor",
+      "market_value_eur": 750000,
+      "transfermarkt_id": "1244036",
+      "profile_url": "https://www.transfermarkt.com/omar-ben-ali/profil/spieler/1244036"
+    }
+  ]
+}
