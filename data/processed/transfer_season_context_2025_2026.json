@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-21T03:45:01.106064+00:00",
+  "generated_at": "2026-07-21T05:32:04.975606+00:00",
   "season": "2025_2026",
   "summary": {
     "free_agents_count": 261,
     "final_year_count": 180,
     "transfer_signals_count": 50,
     "transfer_status_counts": {
-      "OFFICIAL": 0,
-      "CORROBORATED": 8,
-      "RUMOR": 12,
-      "REVIEW_REQUIRED": 30
+      "OFFICIAL": 1,
+      "CORROBORATED": 7,
+      "RUMOR": 14,
+      "REVIEW_REQUIRED": 28
     },
     "promotion_events_count": 1,
     "free_agent_total_market_value_eur": 470100000
@@ -460,6 +460,49 @@
   ],
   "transfer_signals": [
     {
+      "player_name": "NIHAD MUJAKIC",
+      "from_club": "GAZİANTEP FUTBOL KULÜBÜ A.Ş.",
+      "to_club": "ERZURUMSPOR FK",
+      "transfer_type": "permanent",
+      "window": "summer_2026",
+      "signal_type": "signing",
+      "confidence": "HIGH",
+      "tm_market_value_eur": 1200000,
+      "direction_quality": "TARGET_IDENTIFIED",
+      "article_id": "a0726db50d1a",
+      "title": "Erzurumspor’umuza hoş geldin Nihad Mujakic",
+      "link": "https://erzurumsporfk.org/2026/07/15/erzurumsporumuza-hos-geldin-nihad-mujakic/",
+      "source": "Erzurumspor FK Resmi Web",
+      "source_type": "official_club",
+      "account_type": "official",
+      "query": null,
+      "source_tier": "OFFICIAL",
+      "published_at": "2026-07-15T22:01:20+03:00",
+      "first_observed_at": "2026-07-21T05:31:59.902568+00:00",
+      "summary_tr": "",
+      "entity_confidence": "HIGH",
+      "verification_status": "OFFICIAL",
+      "interpretation": "Resmi kulüp kanalı duyurusu bulundu; işlem resmi transfer bağlamında izlenebilir.",
+      "source_count": 1,
+      "sources": [
+        "Erzurumspor FK Resmi Web"
+      ],
+      "evidence": [
+        {
+          "source": "Erzurumspor FK Resmi Web",
+          "source_tier": "OFFICIAL",
+          "source_type": "official_club",
+          "account_type": "official",
+          "query": null,
+          "title": "Erzurumspor’umuza hoş geldin Nihad Mujakic",
+          "link": "https://erzurumsporfk.org/2026/07/15/erzurumsporumuza-hos-geldin-nihad-mujakic/",
+          "published_at": "2026-07-15T22:01:20+03:00",
+          "first_observed_at": "2026-07-21T05:31:59.902568+00:00"
+        }
+      ],
+      "model_use": true
+    },
+    {
       "player_name": "CHRIST RAVYNEL INAO OULAI",
       "from_club": null,
       "to_club": "Trabzonspor",
@@ -477,7 +520,7 @@
       "account_type": null,
       "query": null,
       "source_tier": "MEDIA",
-      "published_at": "2026-07-20T01:33:04+03:00",
+      "published_at": "2026-07-21T00:32:01+03:00",
       "first_observed_at": null,
       "summary_tr": "",
       "entity_confidence": "HIGH",
@@ -497,7 +540,7 @@
           "query": null,
           "title": "Trabzonspor'da Oulai Fiorentina'ya transfer oldu!",
           "link": "https://www.fotomac.com.tr/trabzonspor/2026/07/19/trabzonsporda-oulai-fiorentinaya-transfer-oldu",
-          "published_at": "2026-07-20T01:33:04+03:00",
+          "published_at": "2026-07-21T00:32:01+03:00",
           "first_observed_at": null
         },
         {
@@ -518,21 +561,21 @@
       "player_name": "AHMED KUTUCU",
       "from_club": "GALATASARAY A.Ş.",
       "to_club": "Rizespor",
-      "transfer_type": "permanent",
+      "transfer_type": "loan",
       "window": "summer_2026",
-      "signal_type": "official_transfer",
+      "signal_type": "departure",
       "confidence": "MEDIUM",
       "tm_market_value_eur": 3000000,
       "direction_quality": "TARGET_IDENTIFIED",
-      "article_id": "62b9c1922999",
-      "title": "Ahmed Kutucu Çaykur Rizespor'a transfer oldu!",
-      "link": "https://www.fotomac.com.tr/galatasaray/2026/07/19/ahmed-kutucu-caykur-rizespora-transfer-oldu",
-      "source": "Fotomaç",
+      "article_id": "22a46e84a37a",
+      "title": "Galatasaray'dan ayrıldı! Ahmed Kutucu resmen Rizespor'da",
+      "link": "https://www.takvim.com.tr/spor/2026/07/19/galatasaraydan-ayrildi-ahmed-kutucu-resmen-rizesporda",
+      "source": "Takvim Spor",
       "source_type": "rss",
       "account_type": null,
       "query": null,
       "source_tier": "MEDIA",
-      "published_at": "2026-07-20T01:32:55+03:00",
+      "published_at": "2026-07-19T19:33:15+03:00",
       "first_observed_at": null,
       "summary_tr": "",
       "entity_confidence": "HIGH",
@@ -540,21 +583,10 @@
       "interpretation": "Birden fazla kaynak aynı yönlü iddiayı taşıyor; resmi açıklama beklenir.",
       "source_count": 2,
       "sources": [
-        "Fotomaç",
-        "Takvim Spor"
+        "Takvim Spor",
+        "Fotomaç"
       ],
       "evidence": [
-        {
-          "source": "Fotomaç",
-          "source_tier": "MEDIA",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "Ahmed Kutucu Çaykur Rizespor'a transfer oldu!",
-          "link": "https://www.fotomac.com.tr/galatasaray/2026/07/19/ahmed-kutucu-caykur-rizespora-transfer-oldu",
-          "published_at": "2026-07-20T01:32:55+03:00",
-          "first_observed_at": null
-        },
         {
           "source": "Takvim Spor",
           "source_tier": "MEDIA",
@@ -590,27 +622,39 @@
       "confidence": "MEDIUM",
       "tm_market_value_eur": 1500000,
       "direction_quality": "TARGET_IDENTIFIED",
-      "article_id": "9e1998cd779d",
-      "title": "Çaykur Rizespor, Tayyip Talha Sanuç'u renklerine bağladı",
-      "link": "https://www.aa.com.tr/tr/spor/caykur-rizespor-tayyip-talha-sanucu-renklerine-bagladi/4002924",
-      "source": "Anadolu Ajansı Spor",
-      "source_type": "rss",
+      "article_id": "45d77daea7ea",
+      "title": "Tayyip Talha Sanuç, Çaykur Rizespor'a transfer oldu - Haberler",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPQ1lTU3pPUG5TZmt4X0drX09KUFRoLUlIeVB2b2tTdzdVcnBfQnZaQzdoVkVsdTE2bHJqc2JmbTFaOWMwYWhJOWp0eHBTTU9tQXQ0ci1jNFFxQTM1RzVqZTJMTXJaUWpKTWpaT3RDQWQ5b1NWdUs2NmdjTFpnX2NTZl95WmVjS3pMdXNfT2Jqa1Rvc1BQLXZJQlUyRE1ZYi1pQXFpMmk0ZHhCbEFq0gGrAUFVX3lxTE1pMWFDTXUySFlUdkw2OC1SZ2lvei1za29iWE9SSkwtcGJOV1lLSHRJell0VzlXYXVOcnJWdGtRY3B0SmtYMXhVczYtNGxsMDNwbTJCdEdfUEpCajdSVHlVSGZWQ0JjRktyWUlMRmVQV2dqa0hVUHpPWFV3Xzk1eTJCNURQMU5OR1F0RlRHTnRnMjhKVkdaZjg1NVFBLXB6bk5UbkVrVnU5YlhCOA?oc=5",
+      "source": "Haberler",
+      "source_type": "google_news",
       "account_type": null,
-      "query": null,
-      "source_tier": "AGENCY",
-      "published_at": "2026-07-19T15:55:52+03:00",
+      "query": "Çaykur Rizespor transfer",
+      "source_tier": "MEDIA",
+      "published_at": "2026-07-19T13:07:57+00:00",
       "first_observed_at": null,
       "summary_tr": "",
       "entity_confidence": "HIGH",
       "verification_status": "CORROBORATED",
       "interpretation": "Birden fazla kaynak aynı yönlü iddiayı taşıyor; resmi açıklama beklenir.",
-      "source_count": 3,
+      "source_count": 4,
       "sources": [
+        "Haberler",
         "Anadolu Ajansı Spor",
         "Fanatik",
         "Mackolik.com"
       ],
       "evidence": [
+        {
+          "source": "Haberler",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Çaykur Rizespor transfer",
+          "title": "Tayyip Talha Sanuç, Çaykur Rizespor'a transfer oldu - Haberler",
+          "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPQ1lTU3pPUG5TZmt4X0drX09KUFRoLUlIeVB2b2tTdzdVcnBfQnZaQzdoVkVsdTE2bHJqc2JmbTFaOWMwYWhJOWp0eHBTTU9tQXQ0ci1jNFFxQTM1RzVqZTJMTXJaUWpKTWpaT3RDQWQ5b1NWdUs2NmdjTFpnX2NTZl95WmVjS3pMdXNfT2Jqa1Rvc1BQLXZJQlUyRE1ZYi1pQXFpMmk0ZHhCbEFq0gGrAUFVX3lxTE1pMWFDTXUySFlUdkw2OC1SZ2lvei1za29iWE9SSkwtcGJOV1lLSHRJell0VzlXYXVOcnJWdGtRY3B0SmtYMXhVczYtNGxsMDNwbTJCdEdfUEpCajdSVHlVSGZWQ0JjRktyWUlMRmVQV2dqa0hVUHpPWFV3Xzk1eTJCNURQMU5OR1F0RlRHTnRnMjhKVkdaZjg1NVFBLXB6bk5UbkVrVnU5YlhCOA?oc=5",
+          "published_at": "2026-07-19T13:07:57+00:00",
+          "first_observed_at": null
+        },
         {
           "source": "Anadolu Ajansı Spor",
           "source_tier": "AGENCY",
@@ -642,61 +686,6 @@
           "title": "Tayyip Talha Sanuç, Çaykur Rizespor’a transfer oldu - Mackolik.com",
           "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOTkhqaGFEQ2pSNEZpcmZka2NVcWNKNXU0NmM3NlNnSTRxRy1mM0pzNVdsNEgySHJQcEI1aGdldWpmQ3AtVFV6REpQMW5ORTI0SW01WWJJZ0t6Mk52Sm15YmpNQnpVODRTYTRpVlBjamFDallRQjZ2YkhRUFNvdlpHZmpnNlJld0dhaERsSmRRdWgweTBySUV0T0RCTXFNckZidWxQUnBRa0VmYS1lMUhkNmxTNmFPQTJOM2ZnU1dfckVGUQ?oc=5",
           "published_at": "2026-07-19T12:34:37+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": "TAYYİP TALHA SANUÇ",
-      "from_club": "GAZİANTEP FUTBOL KULÜBÜ A.Ş.",
-      "to_club": "Beşiktaş",
-      "transfer_type": "permanent",
-      "window": "summer_2026",
-      "signal_type": "official_transfer",
-      "confidence": "MEDIUM",
-      "tm_market_value_eur": 1500000,
-      "direction_quality": "TARGET_IDENTIFIED",
-      "article_id": "601f2c30ffde",
-      "title": "Beşiktaş'ta Tayyip Talha Sanuç Rizespor'a transfer oldu!",
-      "link": "https://www.hurriyet.com.tr/sporarena/besiktasta-tayyip-talha-sanuc-rizespora-transfer-oldu-43244902",
-      "source": "Hürriyet Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-07-19T12:49:00+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "HIGH",
-      "verification_status": "CORROBORATED",
-      "interpretation": "Birden fazla kaynak aynı yönlü iddiayı taşıyor; resmi açıklama beklenir.",
-      "source_count": 2,
-      "sources": [
-        "Hürriyet Spor",
-        "Mynet"
-      ],
-      "evidence": [
-        {
-          "source": "Hürriyet Spor",
-          "source_tier": "MEDIA",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "Beşiktaş'ta Tayyip Talha Sanuç Rizespor'a transfer oldu!",
-          "link": "https://www.hurriyet.com.tr/sporarena/besiktasta-tayyip-talha-sanuc-rizespora-transfer-oldu-43244902",
-          "published_at": "2026-07-19T12:49:00+00:00",
-          "first_observed_at": null
-        },
-        {
-          "source": "Mynet",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Çaykur Rizespor transfer",
-          "title": "Beşiktaş'ta Tayyip Talha Sanuç, Çaykur Rizespor'a transfer oldu - Beşiktaş (BJK) Haberleri - Mynet",
-          "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQX3ozNDV4Y1l2dld4bW9kWVBveUlRMUYtcmtKdElmUFlKUmNoN0lBZXZjN250Y01USlk0OXkzR2Q2SjhvYUdOSkZQZEtGaUtGMXFrOEJadWJwUGZjVmNrSGY2OExxZGtjdGlVMGxmZVEzSDZHTHRZbTJnNXl2a0hpM1o0VG41b3c5RnJJYWl2RG51ajFoWEM4VEhLaHFENXPSAaIBQVVfeXFMTU9saGh1dEZtWnl5NzN1NmdyMmZwZHFyZU9QWGdGbm9vVktwbHNsQXZhUlJtR0JBTV8xTUI5QVFiN3pMUGI4dE1lRXhOdjAzQlRjdXlUXzdadDZaV3pjcWRwbnRkYnE4RV83ZERJd21fY0xrbk1xU2pzNHZtMXoyZHZnZGZkS3hTZnY3Tk51LUNEMEdwYnY0QUVhVjdJWW40V2xB?oc=5",
-          "published_at": "2026-07-19T12:42:23+00:00",
           "first_observed_at": null
         }
       ],
@@ -994,6 +983,49 @@
       "model_use": false
     },
     {
+      "player_name": "TAYYİP TALHA SANUÇ",
+      "from_club": "GAZİANTEP FUTBOL KULÜBÜ A.Ş.",
+      "to_club": "Beşiktaş",
+      "transfer_type": "permanent",
+      "window": "summer_2026",
+      "signal_type": "official_transfer",
+      "confidence": "LOW",
+      "tm_market_value_eur": 1500000,
+      "direction_quality": "TARGET_IDENTIFIED",
+      "article_id": "c600fc6d5e95",
+      "title": "Beşiktaş'ta Tayyip Talha Sanuç, Çaykur Rizespor'a transfer oldu - Milliyet",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQQWx1d29ZYU11WExTZlJrZVdMd1hXcGJfX0daOW9qMFFrdGwwZ25zZHp0d2EzM0lHeVE5MWVMUVcwdDZZNDJSTVNqdllWMDlFb19idjVMVTVqMk5kTWlWcnVMZVNTNGE3SFJmMkFFd2ZpZkpKLXdBOWlCZnNmWHBmdDkwSUdxbTh1NlZKYVpWYkd0d0J0RDR6MXhUdVJVbklRVjdYX0t0MGQ?oc=5",
+      "source": "Milliyet",
+      "source_type": "google_news",
+      "account_type": null,
+      "query": "Çaykur Rizespor transfer",
+      "source_tier": "MEDIA",
+      "published_at": "2026-07-19T13:46:32+00:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "HIGH",
+      "verification_status": "RUMOR",
+      "interpretation": "Tek kaynaklı transfer iddiası; yalnız transfer radarında izlenir.",
+      "source_count": 1,
+      "sources": [
+        "Milliyet"
+      ],
+      "evidence": [
+        {
+          "source": "Milliyet",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Çaykur Rizespor transfer",
+          "title": "Beşiktaş'ta Tayyip Talha Sanuç, Çaykur Rizespor'a transfer oldu - Milliyet",
+          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQQWx1d29ZYU11WExTZlJrZVdMd1hXcGJfX0daOW9qMFFrdGwwZ25zZHp0d2EzM0lHeVE5MWVMUVcwdDZZNDJSTVNqdllWMDlFb19idjVMVTVqMk5kTWlWcnVMZVNTNGE3SFJmMkFFd2ZpZkpKLXdBOWlCZnNmWHBmdDkwSUdxbTh1NlZKYVpWYkd0d0J0RDR6MXhUdVJVbklRVjdYX0t0MGQ?oc=5",
+          "published_at": "2026-07-19T13:46:32+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
       "player_name": "Elliot Watt",
       "from_club": null,
       "to_club": "Samsunspor",
@@ -1195,6 +1227,17 @@
           "title": "Kocaelispor Haydar Karataş'ı Transfer Etti - SonDakika",
           "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPd3JrcHNVVlRGajlPcUN2aTVJUDZFdFBJTE1WeWwwVmZLSjJVT0llbEhTblh0ZjZTWkZzY25sUGg3eFc5c3FnUFloR1NCUzlmai11M3d5d2JmQnJZMzMxcXBGTmwwWHZDSDFnY3pnRVFnc25qS3IzRXFHSXpmUVlpRVU3cjJXNEl6RVduZGotYnY5V2_SAZIBQVVfeXFMTzhOeUxYdGFKMXRRc0xNRF91ZGZGMlFlOXhuT3JWMVUzNGZIRE1tVF9yLVk3VktHYjZCRzJnVE00YzNzWXFnUnhiYnFhdE1RZzl0N2NGdzJvUlROZFJDQ1VqVFJCSDNrYjY0MjZocF9FRDVUOFlxX0FaM0syOE9mLU1oQm5xYUExcXhDaU4waU02d0E?oc=5",
           "published_at": "2026-07-17T15:49:11+00:00",
+          "first_observed_at": null
+        },
+        {
+          "source": "SonDakika",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Kocaelispor transfer",
+          "title": "Kocaelispor, Haydar Karataş'ı Transfer Etti - SonDakika",
+          "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOMDNORWJsQlFpdFA3V0JMaHZlNF95bEh6cWotLVdoY05fdHl1eHFfaFoxM0N5dWZxZ0RNYlg0LUlYNHhGWVQ5NXBiQTUzb182MndJYTdYX0lTZUFTUVJYS0VDM0tXaFFvUHNHSWJucG5sZklxaV9HdTVFQjVPbmo3NTdnRFkxMVJoUXJHNVNvdGhUdDTSAZIBQVVfeXFMTV94YTBQcHlxSFRhejBPZERVQWtNbWhCYVBkM014Wkw5ODB0RUZZcmxuZ0oxdjRrN0kxTTVpczVJUEMxTmM1aUFOd0l0NDZmZ3ZTOGxOUXZBNnRwLTBTcnROLU1icFpMbTBYMjk5bEM4QlVWbkEtOTBUVmcwQ3FPZl9uOEFEN2dCekI1LVhMdVF3T3c?oc=5",
+          "published_at": "2026-07-17T15:25:12+00:00",
           "first_observed_at": null
         }
       ],
@@ -1451,6 +1494,88 @@
       "model_use": false
     },
     {
+      "player_name": "Omar Ben Ali",
+      "from_club": null,
+      "to_club": "Alanyaspor",
+      "signal_type": "official_transfer",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "HEADLINE_EXPLICIT_DIRECTION",
+      "article_id": "7d3301e7904a",
+      "title": "Alanyaspor, Omar Ben Ali’yi transfer etti - Antalya Haber - Kanal V",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE8tam1HRWF4ZTFXb2NpaGZiSHRFNEtmTTRBdUE3QzcxVTJ5Q3ZGR0xQYWIzUGRxQmlOMUYzWlFYZTB2ZGlCQU0tbEJmaV9qelU2TGdBc21DMTZHLUxMcFZxVERzMzI3dlJ0cEhIaWRUc3FsZHPSAXhBVV95cUxOZkhIR3lqV28tTjAwdmJBOUN6Y2tLZHFHaUpEbjhBeGNKajZBR0dKekJHNnNjZ3Y3Nnp1c2x2YWF6N3N2MU4yUjB2Ukxwc2ViWVlRRXlyMHFWRmtKYnZSa1dvRjZPU1dfdXVJVFJZNW43V1k2aXR0LXc?oc=5",
+      "source": "Antalya Haber - Kanal V",
+      "source_type": "google_news",
+      "account_type": null,
+      "query": "Alanyaspor transfer",
+      "source_tier": "MEDIA",
+      "published_at": "2026-07-07T07:14:00+00:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "MEDIUM",
+      "verification_status": "RUMOR",
+      "interpretation": "Tek kaynaklı transfer iddiası; yalnız transfer radarında izlenir.",
+      "source_count": 1,
+      "sources": [
+        "Antalya Haber - Kanal V"
+      ],
+      "evidence": [
+        {
+          "source": "Antalya Haber - Kanal V",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Alanyaspor transfer",
+          "title": "Alanyaspor, Omar Ben Ali’yi transfer etti - Antalya Haber - Kanal V",
+          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE8tam1HRWF4ZTFXb2NpaGZiSHRFNEtmTTRBdUE3QzcxVTJ5Q3ZGR0xQYWIzUGRxQmlOMUYzWlFYZTB2ZGlCQU0tbEJmaV9qelU2TGdBc21DMTZHLUxMcFZxVERzMzI3dlJ0cEhIaWRUc3FsZHPSAXhBVV95cUxOZkhIR3lqV28tTjAwdmJBOUN6Y2tLZHFHaUpEbjhBeGNKajZBR0dKekJHNnNjZ3Y3Nnp1c2x2YWF6N3N2MU4yUjB2Ukxwc2ViWVlRRXlyMHFWRmtKYnZSa1dvRjZPU1dfdXVJVFJZNW43V1k2aXR0LXc?oc=5",
+          "published_at": "2026-07-07T07:14:00+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": null,
+      "from_club": null,
+      "to_club": "Fenerbahçe",
+      "signal_type": "interest",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "fa9095ee9e98",
+      "title": "Fenerbahçe, Şampiyonlar Ligi'nde avantaj peşinde!",
+      "link": "https://www.hurriyet.com.tr/sporarena/fenerbahce-avrupada-avantaj-pesinde-43246153",
+      "source": "Hürriyet Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-07-21T04:00:00+00:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Hürriyet Spor"
+      ],
+      "evidence": [
+        {
+          "source": "Hürriyet Spor",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Fenerbahçe, Şampiyonlar Ligi'nde avantaj peşinde!",
+          "link": "https://www.hurriyet.com.tr/sporarena/fenerbahce-avrupada-avantaj-pesinde-43246153",
+          "published_at": "2026-07-21T04:00:00+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
       "player_name": "JHON JADER DURAN PALACIOS",
       "from_club": "FENERBAHÇE A.Ş.",
       "to_club": null,
@@ -1468,7 +1593,7 @@
       "account_type": null,
       "query": null,
       "source_tier": "MEDIA",
-      "published_at": "2026-07-21T00:40:23+03:00",
+      "published_at": "2026-07-21T01:38:37+03:00",
       "first_observed_at": null,
       "summary_tr": "",
       "entity_confidence": "HIGH",
@@ -1487,7 +1612,89 @@
           "query": null,
           "title": "Jhon Duran Benfica'ya transfer oldu!",
           "link": "https://www.fotomac.com.tr/futbol/2026/07/20/jhon-duran-benficaya-transfer-oldu",
-          "published_at": "2026-07-21T00:40:23+03:00",
+          "published_at": "2026-07-21T01:38:37+03:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": null,
+      "from_club": null,
+      "to_club": "Beşiktaş",
+      "signal_type": "transfer_negotiation",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "c262f2608da7",
+      "title": "Beşiktaş'tan Mohamed Salah açıklaması! Serdal Adalı resmen açıkladı",
+      "link": "https://www.fotomac.com.tr/besiktas/2026/07/19/besiktastan-mohamed-salah-aciklamasi-serdal-adali-resmen-acikladi",
+      "source": "Fotomaç",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-07-21T00:31:48+03:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Fotomaç"
+      ],
+      "evidence": [
+        {
+          "source": "Fotomaç",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Beşiktaş'tan Mohamed Salah açıklaması! Serdal Adalı resmen açıkladı",
+          "link": "https://www.fotomac.com.tr/besiktas/2026/07/19/besiktastan-mohamed-salah-aciklamasi-serdal-adali-resmen-acikladi",
+          "published_at": "2026-07-21T00:31:48+03:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": null,
+      "from_club": null,
+      "to_club": "Fenerbahçe",
+      "signal_type": "official_transfer",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "1f9d685911d8",
+      "title": "Fenerbahçe'de Guirassy geri sayımı",
+      "link": "https://www.fotomac.com.tr/fenerbahce/2026/07/21/fenerbahcede-guirassy-geri-sayimi",
+      "source": "Fotomaç",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-07-21T00:25:07+03:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Fotomaç"
+      ],
+      "evidence": [
+        {
+          "source": "Fotomaç",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Fenerbahçe'de Guirassy geri sayımı",
+          "link": "https://www.fotomac.com.tr/fenerbahce/2026/07/21/fenerbahcede-guirassy-geri-sayimi",
+          "published_at": "2026-07-21T00:25:07+03:00",
           "first_observed_at": null
         }
       ],
@@ -1621,47 +1828,6 @@
     {
       "player_name": null,
       "from_club": null,
-      "to_club": "Fenerbahçe",
-      "signal_type": "official_transfer",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "4630f9e3f140",
-      "title": "Fenerbahçe'den ayrılan Emre Mor'un yeni adresi belli oldu!",
-      "link": "https://www.fotomac.com.tr/fenerbahce/2026/07/20/fenerbahceden-ayrilan-emre-morun-yeni-adresi-belli-oldu",
-      "source": "Fotomaç",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-07-20T14:36:56+03:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Fotomaç"
-      ],
-      "evidence": [
-        {
-          "source": "Fotomaç",
-          "source_tier": "MEDIA",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "Fenerbahçe'den ayrılan Emre Mor'un yeni adresi belli oldu!",
-          "link": "https://www.fotomac.com.tr/fenerbahce/2026/07/20/fenerbahceden-ayrilan-emre-morun-yeni-adresi-belli-oldu",
-          "published_at": "2026-07-20T14:36:56+03:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": null,
       "to_club": "Göztepe",
       "signal_type": "departure",
       "window": "summer_2026",
@@ -1708,15 +1874,15 @@
       "window": "summer_2026",
       "confidence": "LOW",
       "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "d0746986a0eb",
-      "title": "Konyaspor eski yıldızının peşinde! - Konya Postası Gazetesi",
-      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPSUJ6SDhvX3NNbFBJblVVTlJBb19iNVF0Q2xod0QwTUZXMzZsUG91Nkppa0g4czR6RHloMjhJXzY1eGIwYWdPQTd6aTZfS2FCQzY1Ukg0WXBBcnI0MzlxV25mOVBUMzNyajV3ZVYwbDl0QXp3b3dJUkRnZDRLX0RyZjZlZw?oc=5",
-      "source": "Konya Postası Gazetesi",
+      "article_id": "f44d09c488a1",
+      "title": "Konyaspor, eski oyuncusu ile ilgileniyor - Konya'nın Sesi",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNalljR1dCZ1JPSTBwNUF6MkExZ1N1UGp0M2Z3Rm8wYkx1OElBNE1EU1FEcmI5bUxjY1pQcXhoUGFNLTNfVlY0a2dSYWF3aVFHWnpaZjRpVk5meUxoSndqTVRFbXY0bVllVUM4bXN1Qi1KenRtRnVEZWY3REVueGtTTnU0MnVRdw?oc=5",
+      "source": "Konya'nın Sesi",
       "source_type": "google_news",
       "account_type": null,
       "query": "Konyaspor transfer",
       "source_tier": "MEDIA",
-      "published_at": "2026-07-20T10:15:00+00:00",
+      "published_at": "2026-07-20T10:24:56+00:00",
       "first_observed_at": null,
       "summary_tr": "",
       "entity_confidence": "LOW",
@@ -1724,18 +1890,18 @@
       "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
       "source_count": 1,
       "sources": [
-        "Konya Postası Gazetesi"
+        "Konya'nın Sesi"
       ],
       "evidence": [
         {
-          "source": "Konya Postası Gazetesi",
+          "source": "Konya'nın Sesi",
           "source_tier": "MEDIA",
           "source_type": "google_news",
           "account_type": null,
           "query": "Konyaspor transfer",
-          "title": "Konyaspor eski yıldızının peşinde! - Konya Postası Gazetesi",
-          "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPSUJ6SDhvX3NNbFBJblVVTlJBb19iNVF0Q2xod0QwTUZXMzZsUG91Nkppa0g4czR6RHloMjhJXzY1eGIwYWdPQTd6aTZfS2FCQzY1Ukg0WXBBcnI0MzlxV25mOVBUMzNyajV3ZVYwbDl0QXp3b3dJUkRnZDRLX0RyZjZlZw?oc=5",
-          "published_at": "2026-07-20T10:15:00+00:00",
+          "title": "Konyaspor, eski oyuncusu ile ilgileniyor - Konya'nın Sesi",
+          "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNalljR1dCZ1JPSTBwNUF6MkExZ1N1UGp0M2Z3Rm8wYkx1OElBNE1EU1FEcmI5bUxjY1pQcXhoUGFNLTNfVlY0a2dSYWF3aVFHWnpaZjRpVk5meUxoSndqTVRFbXY0bVllVUM4bXN1Qi1KenRtRnVEZWY3REVueGtTTnU0MnVRdw?oc=5",
+          "published_at": "2026-07-20T10:24:56+00:00",
           "first_observed_at": null
         }
       ],
@@ -1861,88 +2027,6 @@
           "title": "Fenerbahçe'den çilek transferi! Dünya Kupası sonrası girişimler hızlandı",
           "link": "https://www.takvim.com.tr/spor/fenerbahce/2026/07/20/fenerbahceden-cilek-transferi-girisimler-hizlandi",
           "published_at": "2026-07-20T09:31:48+03:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": null,
-      "to_club": "Beşiktaş",
-      "signal_type": "transfer_negotiation",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "c262f2608da7",
-      "title": "Beşiktaş'tan Mohamed Salah açıklaması! Serdal Adalı resmen açıkladı",
-      "link": "https://www.fotomac.com.tr/besiktas/2026/07/19/besiktastan-mohamed-salah-aciklamasi-serdal-adali-resmen-acikladi",
-      "source": "Fotomaç",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-07-20T01:32:57+03:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Fotomaç"
-      ],
-      "evidence": [
-        {
-          "source": "Fotomaç",
-          "source_tier": "MEDIA",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "Beşiktaş'tan Mohamed Salah açıklaması! Serdal Adalı resmen açıkladı",
-          "link": "https://www.fotomac.com.tr/besiktas/2026/07/19/besiktastan-mohamed-salah-aciklamasi-serdal-adali-resmen-acikladi",
-          "published_at": "2026-07-20T01:32:57+03:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": null,
-      "to_club": "Beşiktaş",
-      "signal_type": "departure",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "0d26d406d4db",
-      "title": "Beşiktaş'ta 7 isim yolcu! Vincenzo Italiano biletlerini kesti",
-      "link": "https://www.fotomac.com.tr/besiktas/2026/07/19/besiktasta-7-isim-yolcu-vincenzo-italiano-biletlerini-kesti",
-      "source": "Fotomaç",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-07-20T01:32:49+03:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Fotomaç"
-      ],
-      "evidence": [
-        {
-          "source": "Fotomaç",
-          "source_tier": "MEDIA",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "Beşiktaş'ta 7 isim yolcu! Vincenzo Italiano biletlerini kesti",
-          "link": "https://www.fotomac.com.tr/besiktas/2026/07/19/besiktasta-7-isim-yolcu-vincenzo-italiano-biletlerini-kesti",
-          "published_at": "2026-07-20T01:32:49+03:00",
           "first_observed_at": null
         }
       ],
@@ -2299,49 +2383,6 @@
           "title": "Berkan Kutlu TÜMOSAN Konyaspor'dan ayrıldı mı? Berkan Kutlu hangi takımda? | Spor Haberleri - GZT",
           "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNTjZOYVljWHpHYjcxOE54Q0J4Zl8wQWRqT0xtcnV5LTlJd0MxQkxGMWZtc3YxRE04YTdDUWdBS19FUmZSWEgxMVNrbVhRV3pZMXRmREQxeDZsdzlRMlJ5MDNVTS1jMjdzVEItOWtzSjRFWnJFSWJIUjQ5X3JTbzNiNEd5YlpCVk9FUWtmMVZzaFZOTjNHWjNqTFpxMHdidWlScGE3X1VJUQ?oc=5",
           "published_at": "2026-07-18T11:02:08+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": "AHMED KUTUCU",
-      "from_club": "GALATASARAY A.Ş.",
-      "to_club": null,
-      "transfer_type": "permanent",
-      "window": "summer_2026",
-      "signal_type": "departure",
-      "confidence": "LOW",
-      "tm_market_value_eur": 3000000,
-      "direction_quality": "TARGET_UNRESOLVED",
-      "article_id": "a44b698be6b5",
-      "title": "Ahmed Kutucu Galatasara'dan ayrılıyor mu? Görüşmeler başladı - Fotomaç",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNOGkycXZPX1IwWTlURmlSckR3U2JxdXNTQnl2Yk5HX1N3RzhzRGVYWS1relB2Y3N2TllNdmFnN0NfUVg5MElDckZhSHpPQWEwT1VmaURjZmR3dWctaXYtY01oeHZONnNJY0lPcnpUSjZIUHR5cVdIWnhSZ3dYTlF1T3dOalczZWtKUTFRbG5ZaU9lOTZ5ejVVdnVZeFd4Uk9JNWR6Q09MY1V5UdIBrwFBVV95cUxOREtudGZyV1BWQ2lXOUtQN0xYZjltMlhMc3dHVUMteFpueG8zU2NYTHBOUWNFT0c5Szk3R2lyZTVLQTNHY0tKMW5UYTl1MnUwWlZ0cnJrLW9nN0Z5QnZuQlMzbXhmdE1sYmxCcE9nT0tLYWFDWnFKRGhRQUtoZnhJRmlQaDFlOE15ZVFQcFBmVzBzMHRLdk96U2RfRXpOUHpuRkFvVHN4b2JFZWI0bDQw?oc=5",
-      "source": "Fotomaç",
-      "source_type": "google_news",
-      "account_type": null,
-      "query": "Süper Lig transfer 2026",
-      "source_tier": "MEDIA",
-      "published_at": "2026-07-18T06:58:34+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "HIGH",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Fotomaç"
-      ],
-      "evidence": [
-        {
-          "source": "Fotomaç",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Süper Lig transfer 2026",
-          "title": "Ahmed Kutucu Galatasara'dan ayrılıyor mu? Görüşmeler başladı - Fotomaç",
-          "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNOGkycXZPX1IwWTlURmlSckR3U2JxdXNTQnl2Yk5HX1N3RzhzRGVYWS1relB2Y3N2TllNdmFnN0NfUVg5MElDckZhSHpPQWEwT1VmaURjZmR3dWctaXYtY01oeHZONnNJY0lPcnpUSjZIUHR5cVdIWnhSZ3dYTlF1T3dOalczZWtKUTFRbG5ZaU9lOTZ5ejVVdnVZeFd4Uk9JNWR6Q09MY1V5UdIBrwFBVV95cUxOREtudGZyV1BWQ2lXOUtQN0xYZjltMlhMc3dHVUMteFpueG8zU2NYTHBOUWNFT0c5Szk3R2lyZTVLQTNHY0tKMW5UYTl1MnUwWlZ0cnJrLW9nN0Z5QnZuQlMzbXhmdE1sYmxCcE9nT0tLYWFDWnFKRGhRQUtoZnhJRmlQaDFlOE15ZVFQcFBmVzBzMHRLdk96U2RfRXpOUHpuRkFvVHN4b2JFZWI0bDQw?oc=5",
-          "published_at": "2026-07-18T06:58:34+00:00",
           "first_observed_at": null
         }
       ],
@@ -2723,49 +2764,6 @@
           "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNQ3dmdTNnRDlJeWlyMzZsZkMtc3FRUU4tTzR3X3pyTXI4R0ctb2oxYTdOWlYtUDVFR2FOYmZ1M0dsZTllMjJWck5IM2pnM2VxeV9rMFVEVmFIeFo5M0hYREhQTTVsNDV3Mk45QTZyZTM0em44ZjVwX2xucWNVVDV5dkRVdWZUdkR3MW9DRXRKSXVLREdaemxfWlo2bk9CYUsydFJpQmVGb0VZakFaN1BNR0pxNVNpdUJOTXpiQ2Z2djlPbTR6NXdWRG11Wks?oc=5",
           "published_at": "2026-07-10T07:00:00+00:00",
           "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": "DOĞAN ALEMDAR",
-      "from_club": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ",
-      "to_club": null,
-      "transfer_type": "permanent",
-      "window": "summer_2026",
-      "signal_type": "departure",
-      "confidence": "LOW",
-      "tm_market_value_eur": 1500000,
-      "direction_quality": "TARGET_UNRESOLVED",
-      "article_id": "70bdf446eb94",
-      "title": "TEŞEKKÜRLER DOĞAN ALEMDAR",
-      "link": "https://ibfk.com.tr/haberler/tesekkurler-dogan-alemdar",
-      "source": "Başakşehir Resmi Web",
-      "source_type": "official_club",
-      "account_type": "official",
-      "query": null,
-      "source_tier": "OFFICIAL",
-      "published_at": "8.7.2026 23:35:12",
-      "first_observed_at": "2026-07-08T23:24:50.868767+00:00",
-      "summary_tr": "",
-      "entity_confidence": "HIGH",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Başakşehir Resmi Web"
-      ],
-      "evidence": [
-        {
-          "source": "Başakşehir Resmi Web",
-          "source_tier": "OFFICIAL",
-          "source_type": "official_club",
-          "account_type": "official",
-          "query": null,
-          "title": "TEŞEKKÜRLER DOĞAN ALEMDAR",
-          "link": "https://ibfk.com.tr/haberler/tesekkurler-dogan-alemdar",
-          "published_at": "8.7.2026 23:35:12",
-          "first_observed_at": "2026-07-08T23:24:50.868767+00:00"
         }
       ],
       "model_use": false
