@@ -661,8 +661,8 @@
   },
   "probabilities": {
     "target_win_probability": 0.241,
-    "draw_probability": 0.244,
-    "opponent_win_probability": 0.514,
+    "draw_probability": 0.246,
+    "opponent_win_probability": 0.513,
     "expected_goals_for": 0.86,
     "expected_goals_against": 1.75,
     "top_scorelines": [
@@ -711,7 +711,7 @@
     },
     "recommended_call": {
       "result": "opponent_win",
-      "probability": 0.514,
+      "probability": 0.513,
       "scoreline": "0-1",
       "action": "taraf_eğilimi",
       "action_label": "Taraf eğilimi",
@@ -720,8 +720,8 @@
     "display_prediction": {
       "raw_result": "opponent_win",
       "final_result": "opponent_win",
-      "probability": 0.514,
-      "margin": 0.27,
+      "probability": 0.513,
+      "margin": 0.267,
       "adjustment": "raw_unvalidated_team",
       "label": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ kazanır",
       "raw_label": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ kazanır",
@@ -741,9 +741,10 @@
       ]
     },
     "head_to_head": {
-      "available": false,
-      "matches": 0,
-      "draw_rate": null
+      "available": true,
+      "matches": 22,
+      "draw_rate": 0.273,
+      "last_meeting_date": "2026-01-31T14:00:00+00:00"
     },
     "draw_risk": {
       "score": 15,
@@ -1071,6 +1072,6 @@
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği ALI SOWE, QAZIM LACI, SAMET AKAYDİN. Disiplin yönetimi gereken oyuncular: TAYLAN ANTALYALI, ERDEM CANPOLAT, ALTIN ZEQIRI.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %76 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 0.86-1.75 yerine 1.12-1.75 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 0.86-1.75 bandından 1.08-1.73 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %24 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %24, beraberliği %24, rakip galibiyetini %51 olarak işaretliyor. Gol beklentisi 0.86-1.75; kart sinyali MEDIUM."
+    "MVP olasılık motoru Beşiktaş galibiyetini %24, beraberliği %25, rakip galibiyetini %51 olarak işaretliyor. Gol beklentisi 0.86-1.75; kart sinyali MEDIUM."
   ]
 }

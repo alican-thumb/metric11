@@ -1,8 +1,8 @@
 {
   "summary": {
     "matches": 258,
-    "correct": 141,
-    "accuracy": 0.547,
+    "correct": 142,
+    "accuracy": 0.55,
     "actual_distribution": {
       "home": 111,
       "draw": 76,
@@ -10,24 +10,24 @@
     },
     "prediction_distribution": {
       "home": 143,
-      "draw": 19,
-      "away": 96
+      "draw": 20,
+      "away": 95
     },
     "avg_top_probability": 0.487,
-    "brier_score": 0.601,
+    "brier_score": 0.6,
     "log_loss": 1.005,
     "confidence_breakdown": {
       "HIGH": {
-        "matches": 88,
-        "accuracy": 0.636
+        "matches": 89,
+        "accuracy": 0.64
       },
       "MEDIUM": {
-        "matches": 86,
-        "accuracy": 0.558
+        "matches": 85,
+        "accuracy": 0.553
       },
       "LOW": {
         "matches": 84,
-        "accuracy": 0.44
+        "accuracy": 0.452
       }
     }
   },
@@ -276,7 +276,7 @@
       "home_points_per_match": 0.8,
       "away_points_per_match": 2.2,
       "strength_edge": -0.56,
-      "home_xg_efficiency": 1.193,
+      "home_xg_efficiency": 1.192,
       "away_xg_efficiency": 1.25,
       "referee_adj": 0.0,
       "referee_cards_per_match": null,
@@ -2173,7 +2173,7 @@
       "away_points_per_match": 2.75,
       "strength_edge": -0.817,
       "home_xg_efficiency": 1.143,
-      "away_xg_efficiency": 0.857,
+      "away_xg_efficiency": 0.858,
       "referee_adj": -0.026,
       "referee_cards_per_match": 5.25,
       "referee_goals_per_match": 2.25
@@ -2188,7 +2188,7 @@
       "predicted": "away",
       "actual": "away",
       "correct": true,
-      "confidence": "MEDIUM",
+      "confidence": "HIGH",
       "risk_flags": [],
       "main_referee": "ÜMİT ÖZTÜRK",
       "expected_home_goals": 0.98,
@@ -2231,13 +2231,14 @@
         "away_goals": 1,
         "probability": 0.124
       },
-      "home_win_probability": 0.243,
-      "draw_probability": 0.257,
-      "away_win_probability": 0.5,
+      "home_win_probability": 0.253,
+      "draw_probability": 0.227,
+      "away_win_probability": 0.52,
       "head_to_head": {
-        "available": false,
-        "matches": 0,
-        "draw_rate": null
+        "available": true,
+        "matches": 11,
+        "draw_rate": 0.091,
+        "last_meeting_date": "2026-03-15T17:00:00+00:00"
       },
       "transfer_signal": {
         "home": {
@@ -2497,7 +2498,7 @@
       "home_points_per_match": 2.0,
       "away_points_per_match": 0.38,
       "strength_edge": 0.75,
-      "home_xg_efficiency": 1.252,
+      "home_xg_efficiency": 1.253,
       "away_xg_efficiency": 1.08,
       "referee_adj": -0.012,
       "referee_cards_per_match": 5.2,
@@ -2725,13 +2726,14 @@
         "away_goals": 1,
         "probability": 0.124
       },
-      "home_win_probability": 0.464,
-      "draw_probability": 0.262,
-      "away_win_probability": 0.274,
+      "home_win_probability": 0.462,
+      "draw_probability": 0.265,
+      "away_win_probability": 0.273,
       "head_to_head": {
-        "available": false,
-        "matches": 0,
-        "draw_rate": null
+        "available": true,
+        "matches": 22,
+        "draw_rate": 0.273,
+        "last_meeting_date": "2026-01-31T14:00:00+00:00"
       },
       "transfer_signal": {
         "home": {
@@ -3754,7 +3756,10 @@
       "actual": "away",
       "correct": true,
       "confidence": "MEDIUM",
-      "risk_flags": [],
+      "risk_flags": [
+        "beraberlik olasılığı canlı",
+        "taraf tahmini düşük güven"
+      ],
       "main_referee": "ALİ ŞANSALAN",
       "expected_home_goals": 1.24,
       "expected_away_goals": 1.59,
@@ -3796,13 +3801,14 @@
         "away_goals": 1,
         "probability": 0.116
       },
-      "home_win_probability": 0.297,
-      "draw_probability": 0.247,
-      "away_win_probability": 0.456,
+      "home_win_probability": 0.285,
+      "draw_probability": 0.277,
+      "away_win_probability": 0.438,
       "head_to_head": {
-        "available": false,
-        "matches": 0,
-        "draw_rate": null
+        "available": true,
+        "matches": 9,
+        "draw_rate": 0.444,
+        "last_meeting_date": "2026-04-05T11:30:00+00:00"
       },
       "transfer_signal": {
         "home": {
@@ -4563,7 +4569,7 @@
       "home_points_per_match": 1.25,
       "away_points_per_match": 1.5,
       "strength_edge": -0.12,
-      "home_xg_efficiency": 0.853,
+      "home_xg_efficiency": 0.852,
       "away_xg_efficiency": 1.374,
       "referee_adj": 0.0,
       "referee_cards_per_match": null,
@@ -7027,7 +7033,7 @@
       "away_points_per_match": 2.5,
       "strength_edge": -0.36,
       "home_xg_efficiency": 1.313,
-      "away_xg_efficiency": 0.775,
+      "away_xg_efficiency": 0.776,
       "referee_adj": -0.022,
       "referee_cards_per_match": 6.12,
       "referee_goals_per_match": 2.75
@@ -8755,7 +8761,7 @@
       "home_points_per_match": 2.0,
       "away_points_per_match": 0.75,
       "strength_edge": 0.64,
-      "home_xg_efficiency": 0.707,
+      "home_xg_efficiency": 0.706,
       "away_xg_efficiency": 1.348,
       "referee_adj": -0.037,
       "referee_cards_per_match": 5.3,
@@ -10245,7 +10251,7 @@
       "home_points_per_match": 0.75,
       "away_points_per_match": 0.88,
       "strength_edge": -0.09,
-      "home_xg_efficiency": 1.393,
+      "home_xg_efficiency": 1.392,
       "away_xg_efficiency": 1.413,
       "referee_adj": 0.058,
       "referee_cards_per_match": 2.86,
@@ -10407,7 +10413,7 @@
       "home_points_per_match": 1.0,
       "away_points_per_match": 0.88,
       "strength_edge": 0.15,
-      "home_xg_efficiency": 1.008,
+      "home_xg_efficiency": 1.007,
       "away_xg_efficiency": 1.469,
       "referee_adj": -0.03,
       "referee_cards_per_match": 2.2,
@@ -10468,13 +10474,14 @@
         "away_goals": 1,
         "probability": 0.097
       },
-      "home_win_probability": 0.568,
-      "draw_probability": 0.211,
-      "away_win_probability": 0.221,
+      "home_win_probability": 0.556,
+      "draw_probability": 0.227,
+      "away_win_probability": 0.216,
       "head_to_head": {
-        "available": false,
-        "matches": 0,
-        "draw_rate": null
+        "available": true,
+        "matches": 22,
+        "draw_rate": 0.273,
+        "last_meeting_date": "2026-01-31T14:00:00+00:00"
       },
       "transfer_signal": {
         "home": {
@@ -11035,13 +11042,14 @@
         "away_goals": 1,
         "probability": 0.109
       },
-      "home_win_probability": 0.288,
-      "draw_probability": 0.236,
-      "away_win_probability": 0.477,
+      "home_win_probability": 0.284,
+      "draw_probability": 0.246,
+      "away_win_probability": 0.47,
       "head_to_head": {
-        "available": false,
-        "matches": 0,
-        "draw_rate": null
+        "available": true,
+        "matches": 10,
+        "draw_rate": 0.3,
+        "last_meeting_date": "2026-02-07T17:00:00+00:00"
       },
       "transfer_signal": {
         "home": {
@@ -11115,13 +11123,14 @@
         "away_goals": 1,
         "probability": 0.093
       },
-      "home_win_probability": 0.278,
-      "draw_probability": 0.217,
-      "away_win_probability": 0.506,
+      "home_win_probability": 0.267,
+      "draw_probability": 0.247,
+      "away_win_probability": 0.486,
       "head_to_head": {
-        "available": false,
-        "matches": 0,
-        "draw_rate": null
+        "available": true,
+        "matches": 7,
+        "draw_rate": 0.429,
+        "last_meeting_date": "2026-02-08T11:30:00+00:00"
       },
       "transfer_signal": {
         "home": {
@@ -13844,7 +13853,7 @@
       "away_points_per_match": 2.5,
       "strength_edge": -0.68,
       "home_xg_efficiency": 0.828,
-      "away_xg_efficiency": 0.745,
+      "away_xg_efficiency": 0.744,
       "referee_adj": -0.001,
       "referee_cards_per_match": 4.4,
       "referee_goals_per_match": 2.5
@@ -15259,7 +15268,6 @@
       "correct": true,
       "confidence": "MEDIUM",
       "risk_flags": [
-        "beraberlik olasılığı canlı",
         "favori xG israfı"
       ],
       "main_referee": "ADNAN DENİZ KAYATEPE",
@@ -15303,13 +15311,14 @@
         "away_goals": 0,
         "probability": 0.136
       },
-      "home_win_probability": 0.475,
-      "draw_probability": 0.273,
-      "away_win_probability": 0.252,
+      "home_win_probability": 0.496,
+      "draw_probability": 0.241,
+      "away_win_probability": 0.263,
       "head_to_head": {
-        "available": false,
-        "matches": 0,
-        "draw_rate": null
+        "available": true,
+        "matches": 11,
+        "draw_rate": 0.091,
+        "last_meeting_date": "2026-03-15T17:00:00+00:00"
       },
       "transfer_signal": {
         "home": {
@@ -15900,7 +15909,7 @@
       "home_points_per_match": 1.12,
       "away_points_per_match": 0.75,
       "strength_edge": 0.17,
-      "home_xg_efficiency": 1.298,
+      "home_xg_efficiency": 1.297,
       "away_xg_efficiency": 1.093,
       "referee_adj": -0.005,
       "referee_cards_per_match": 4.62,
@@ -16250,9 +16259,9 @@
       "away": "TÜMOSAN KONYASPOR",
       "score": "2-2",
       "raw_predicted": "away",
-      "predicted": "away",
+      "predicted": "draw",
       "actual": "draw",
-      "correct": false,
+      "correct": true,
       "confidence": "LOW",
       "risk_flags": [
         "xG farkı dar",
@@ -16301,13 +16310,14 @@
         "away_goals": 1,
         "probability": 0.132
       },
-      "home_win_probability": 0.353,
-      "draw_probability": 0.28,
-      "away_win_probability": 0.368,
+      "home_win_probability": 0.341,
+      "draw_probability": 0.304,
+      "away_win_probability": 0.355,
       "head_to_head": {
-        "available": false,
-        "matches": 0,
-        "draw_rate": null
+        "available": true,
+        "matches": 9,
+        "draw_rate": 0.444,
+        "last_meeting_date": "2026-04-05T11:30:00+00:00"
       },
       "transfer_signal": {
         "home": {
@@ -18544,7 +18554,7 @@
       "home_points_per_match": 0.88,
       "away_points_per_match": 2.0,
       "strength_edge": -0.63,
-      "home_xg_efficiency": 2.232,
+      "home_xg_efficiency": 2.233,
       "away_xg_efficiency": 0.809,
       "referee_adj": -0.028,
       "referee_cards_per_match": 7.0,

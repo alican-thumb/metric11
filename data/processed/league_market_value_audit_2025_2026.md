@@ -9,7 +9,7 @@
 - Sabit draw-band 0.20 piyasa değeri baseline doğruluğu: %48
 - Sabit draw-band 0.20 beraberlik yakalama: %16
 - Model / piyasa baseline anlaşmazlığı: 86
-- Anlaşmazlıklarda model doğruluğu: %44
+- Anlaşmazlıklarda model doğruluğu: %45
 - Anlaşmazlıklarda piyasa baseline doğruluğu: %24
 - Belirgin değer farkında model hatası: 44
 
@@ -39,9 +39,9 @@
 | TRABZONSPOR A.Ş. | €169,600,000 | 29 | %59 | %55 |
 | GÖZTEPE A.Ş. | €83,300,000 | 28 | %57 | %46 |
 | RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ | €75,475,000 | 29 | %66 | %59 |
-| SAMSUNSPOR A.Ş. | €70,050,000 | 29 | %55 | %38 |
+| SAMSUNSPOR A.Ş. | €70,050,000 | 29 | %59 | %38 |
 | ÇAYKUR RİZESPOR A.Ş. | €48,025,000 | 29 | %48 | %48 |
-| TÜMOSAN KONYASPOR | €41,975,000 | 29 | %52 | %59 |
+| TÜMOSAN KONYASPOR | €41,975,000 | 29 | %55 | %59 |
 | CORENDON ALANYASPOR | €41,700,000 | 28 | %43 | %39 |
 | İKAS EYÜPSPOR | €39,825,000 | 29 | %41 | %34 |
 | GAZİANTEP FUTBOL KULÜBÜ A.Ş. | €34,850,000 | 29 | %52 | %52 |

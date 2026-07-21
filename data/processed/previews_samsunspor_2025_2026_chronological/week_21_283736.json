@@ -731,20 +731,22 @@
     "availability_missing_count": 0,
     "strength_edge": -0.094,
     "draw_calibration": {
-      "lift": 0.165,
+      "lift": 0.18,
       "risk_level": "HIGH",
       "reasons": [
         "xG farkı dar",
         "orta gol bandı",
         "son formda beraberlik eğilimi",
         "büyük maç denge etkisi",
-        "genel düşük xG ortamı"
+        "genel düşük xG ortamı",
+        "h2h_beraberlik_geçmişi"
       ]
     },
     "head_to_head": {
-      "available": false,
-      "matches": 0,
-      "draw_rate": null
+      "available": true,
+      "matches": 10,
+      "draw_rate": 0.3,
+      "last_meeting_date": "2026-02-07T17:00:00+00:00"
     },
     "draw_risk": {
       "score": 95,
