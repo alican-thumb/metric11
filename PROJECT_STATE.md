@@ -2176,3 +2176,9 @@ Bir sonraki oturumda önce `PROJECT_STATE.md` okunmalı. Ardından öncelik:
   4. Sabit sezon kimliğiyle eski sezon dosyalarını yeniden tarayan başka collector var mı kontrol etmek.
   5. Yeni takımlar için `LOW_NEW_TEAM` yükünü düşürmek üzere 1. Lig/backfill veya resmi kadro-form sinyali eklemek.
   6. Galatasaray/Trabzonspor'un 2026-27 Avrupa kupası durumu ayrı doğrulanmalı.
+
+## 2026-07-21 (devam 3) — Push Sırasında Bot Merge'i, Transfer Sinyali Artık Gerçekten Aktif
+
+- `git push` ilk denemede reddedildi: origin/main'de aradan geçen sürede otomatik "haber yenileme"/"full pipeline" bot commit'leri birikmiş. Rebase'de `data/processed/*` (tamamen türetilmiş) dosyalarda çok sayıda çakışma çıktı, `src/`/`PROJECT_STATE.md`/`data/manual/` tarafında hiç çakışma yoktu. Rebase abort edilip `git merge origin/main` yapıldı; `data/processed/*` çakışmaları bot'un en taze sürümü (`--theirs`) alınarak çözüldü, ardından `python -m src.run_daily_pipeline` (ağsız) baştan sona çalıştırılarak tüm türetilmiş sayfalar bugünkü koddan yeniden üretildi: `57/57` başarılı.
+- **Transfer sinyali mekanizması artık gerçekten aktif** — bot'un taze haber taramasında Trabzonspor'a `€23M`'lik bir CORROBORATED transfer (Christ Inao Oulaï) ve Rizespor'a iki transfer (Ahmed Kutucu `€3M`, Tayyip Talha Sanuç `€1.5M`) düşmüş; bunlar zaten TFF havuzunda olduğu için otomatik piyasa değeri almışlardı ve artık `€2M` eşiğini üç takım için de geçtiler. `season_fixture_predictions_2026_2027.json`'da artık `102` maç-taraf örneğinde `transfer_signal.available: true` (Rizespor, Gaziantep, Trabzonspor). Bu turdaki manuel override (Diarra/Çavuşoğlu/El Yamiq) hâlâ tabloda ama eşiği tek başına geçmiyor; asıl aktivasyonu tetikleyen bot'un bulduğu büyük Trabzonspor transferi oldu — yani mekanizma uçtan uca doğrulanmış oldu.
+- Commit `7b6df946` + merge `82fa5097` + pipeline yeniden üretimi `origin/main`'e push edildi.
