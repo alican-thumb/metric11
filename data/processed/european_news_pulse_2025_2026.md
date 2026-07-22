@@ -1,28 +1,23 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-07-22T05:31:40.571846+00:00
-Toplam ilgili haber: 82
+Üretim zamanı: 2026-07-22T06:42:23.302465+00:00
+Toplam ilgili haber: 76
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
 - [TEŞEKKÜRLER DOĞAN ALEMDAR](https://ibfk.com.tr/haberler/tesekkurler-dogan-alemdar) — Başakşehir Resmi Web · 8.7.2026 23:35:12 · turnuva=ECL · kulüp=Beşiktaş, Başakşehir
 - [TEŞEKKÜRLER MİGUEL CRESPO](https://ibfk.com.tr/haberler/tesekkurler-miguel-crespo) — Başakşehir Resmi Web · 7.7.2026 21:16:30 · turnuva=EL · kulüp=Başakşehir
+- [Beşiktaş, sezonun ilk resmi maçında Midtjylland'ı ağırlayacak](https://www.sabah.com.tr/spor/futbol/2026/07/22/besiktas-sezonun-ilk-resmi-macinda-midtjyllandi-agirlayacak) — Sabah Spor · 2026-07-22T09:35:18+03:00 · turnuva=EL · kulüp=Beşiktaş
+- [Fenerbahçe tur için avantajı kaptı! UEFA ülke puanı güncellendi](https://www.aksam.com.tr/spor/fenerbahce-tur-icin-avantaji-kapti-uefa-ulke-puani-guncellendi/haber-1684562) — Aksam Spor · 2026-07-22T09:33:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Beşiktaş, sezonun ilk resmi maçında yarın Midtjylland'ı ağırlayacak](https://www.aa.com.tr/tr/spor/besiktas-sezonun-ilk-resmi-macinda-yarin-midtjyllandi-agirlayacak/4005354) — Anadolu Ajansı Spor · 2026-07-22T09:26:34+03:00 · turnuva=EL · kulüp=Beşiktaş
+- [22 Temmuz Çarşamba: Bugün hangi maçlar var? Şampiyonlar Ligi, Konferans Ligi...](https://www.aksam.com.tr/pusula/22-temmuz-carsamba-bugun-hangi-maclar-var-sampiyonlar-ligi-konferans-ligi/haber-1684558) — Aksam Spor · 2026-07-22T09:26:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Herkes Fenerbahçe-Gornik Zabrze maçını konuşuyor! Polonya'da manşetler yıkıldı](https://www.aksam.com.tr/spor/herkes-fenerbahce-gornik-zabrze-macini-konusuyor-polonyada-mansetler-yikildi/haber-1684553) — Aksam Spor · 2026-07-22T09:11:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Beşiktaş - Midtjylland maçı hangi kanalda, ne zaman, saat kaçta? Beşiktaş Avrupa Ligi maçı canlı yayın kanalı ve saati](https://www.cnnturk.com/spor/futbol/besiktas-midtjylland-maci-hangi-kanalda-ne-zaman-saat-kacta-besiktas-avrupa-ligi-maci-canli-yayin-kanali-ve-saati-3445104) — CNN Türk Spor · 2026-07-22T07:50:56+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Fenerbahçe, Avrupa kupalarında 3 maç sonra Kadıköy'de galibiyete uzandı](https://www.cnnturk.com/spor/futbol/fenerbahce-avrupa-kupalarinda-3-mac-sonra-kadikoyde-galibiyete-uzandi-3445382) — CNN Türk Spor · 2026-07-22T07:36:53+00:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Bugün kimin maçı var?](https://www.haberturk.com/bugun-kimin-maci-var-22-temmuz-gunun-mac-programi-ile-hangi-mac-hangi-kanalda-3900138-spor) — Haberturk Spor · 2026-07-22T05:28:38+00:00 · turnuva=ECL · kulüp=Başakşehir
 - [Fenerbahçe'nin Gornik galibiyeti sonrası açıkladı: Üstünlüğün tabelaya yansımamasının nedeni şu...](https://www.hurriyet.com.tr/sporarena/fenerbahcenin-gornik-galibiyeti-sonrasi-acikladi-ustunlugun-tabelaya-yansimamasinin-nedeni-su-43247457) — Hürriyet Spor · 2026-07-22T04:47:00+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Dünya Kupası'nda çifte devrim!](https://www.hurriyet.com.tr/sporarena/dunya-kupasinda-cifte-devrim-43247440) — Hürriyet Spor · 2026-07-22T04:00:00+00:00 · turnuva=— · kulüp=—
-- [Fenerbahçe Kadıköy'de avantajlı skoru kaptı!](https://www.fotomac.com.tr/sampiyonlarligi/2026/07/21/fenerbahce-kadikoyde-avantajli-skoru-kapti) — Fotomaç · 2026-07-22T01:10:27+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [İsmail Kartal'dan Nathan Ake açıklaması! 2'nci yarıda neden oyundan çıktı?](https://www.fotomac.com.tr/sampiyonlarligi/2026/07/21/ismail-kartaldan-nathan-ake-aciklamasi-2nci-yarida-neden-oyundan-cikti) — Fotomaç · 2026-07-22T01:10:25+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Beşiktaş UEFA'ya kadro bildiriminde bulundu! Trossard...](https://www.fotomac.com.tr/besiktas/2026/07/21/besiktas-uefaya-kadro-bildiriminde-bulundu-trossard) — Fotomaç · 2026-07-22T01:10:00+03:00 · turnuva=EL · kulüp=Beşiktaş
-- [Kadıköy'de görkemli karşılama!](https://www.fotomac.com.tr/fenerbahce/2026/07/21/kadikoyde-gorkemli-karsilama) — Fotomaç · 2026-07-22T01:09:39+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Gornik Zabrze Teknik Direktörü Michal Gasparik: Fenerbahçe beklediğimiz gibiydi!](https://www.fotomac.com.tr/fenerbahce/2026/07/21/gornik-zabrze-teknik-direktoru-michal-gasparik-fenerbahce-bekledigimiz-gibiydi) — Fotomaç · 2026-07-22T01:09:33+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Bartuğ Elmaz: Bugün biraz şanssızdım](https://www.fotomac.com.tr/sampiyonlarligi/2026/07/21/bartug-elmaz-bugun-biraz-sanssizdim) — Fotomaç · 2026-07-22T01:09:32+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Anderson Talisca: Rövanştaki maç zor olacak](https://www.fotomac.com.tr/fenerbahce/2026/07/21/anderson-talisca-rovanstaki-mac-zor-olacak) — Fotomaç · 2026-07-22T01:09:28+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Gornik Zabrze tribününde kavga çıktı](https://www.fotomac.com.tr/fenerbahce/2026/07/21/gornik-zabrze-tribununde-kavga-cikti) — Fotomaç · 2026-07-22T01:09:26+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Başakşehir, Inter Turku maçının hazırlıklarını tamamladı](https://www.fotomac.com.tr/basaksehir/2026/07/21/basaksehir-inter-turku-macinin-hazirliklarini-tamamladi) — Fotomaç · 2026-07-22T01:09:22+03:00 · turnuva=ECL · kulüp=Başakşehir
-- [UEFA'dan Atilla Karaoğlan'a görev!](https://www.fotomac.com.tr/futbol/2026/07/21/uefadan-atilla-karaoglana-gorev-1784648943) — Fotomaç · 2026-07-22T01:09:20+03:00 · turnuva=CL · kulüp=—
-- [Başakşehir Teknik Direktörü Nuri Şahin: İyi bir skorla Finlandiya'ya gitmek istiyoruz](https://www.fotomac.com.tr/basaksehir/2026/07/21/basaksehir-teknik-direktoru-nuri-sahin-iyi-bir-skorla-finlandiyaya-gitmek-istiyoruz) — Fotomaç · 2026-07-22T01:09:18+03:00 · turnuva=ECL · kulüp=Başakşehir
 - [Şampiyonlar Ligi’nde gol yağmuru! Sturm Graz Hearts'ı farkladı](https://www.takvim.com.tr/spor/2026/07/21/sampiyonlar-liginde-gol-yagmuru-sturm-graz-farkladi) — Takvim Spor · 2026-07-22T01:03:23+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [İsmail Kartal'dan, yabancı kontenjanı sorusuna ilginç cevap: Belki kural değişebilir](https://www.cnnturk.com/spor/futbol/ismail-kartaldan-yabanci-kontenjani-sorusuna-ilginc-cevap-belki-kural-degisebilir-3445318) — CNN Türk Spor · 2026-07-22T00:38:46+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [ÖZEL | İsmail Kartal'dan Nelson Semedo sözleri! Neler konuştuklarını açıkladı](https://www.takvim.com.tr/spor/fenerbahce/2026/07/21/ozel-ismail-kartaldan-nelson-semedo-aciklamasi) — Takvim Spor · 2026-07-22T00:26:11+03:00 · turnuva=CL · kulüp=Fenerbahçe
@@ -46,3 +41,8 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [GÜNÜN MAÇLARI 21 TEMMUZ 2026: Bugün Kimlerin Maçlar Var? Fenerbahçe Gornik Zabrze Maçı Saat Kaçta, Hangi Kanalda? İşte 21 Temmuz Günün Maçları](https://www.cnnturk.com/spor/gunun-maclari-21-temmuz-2026-bugun-kimlerin-maclar-var-fenerbahce-gornik-zabrze-maci-saat-kacta-hangi-kanalda-iste-21-temmuz-gunun-maclari-3445079) — CNN Türk Spor · 2026-07-21T21:03:34+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [FENERBAHÇE MAÇI SAAT KAÇTA? Şampiyonlar Ligi Fenerbahçe Górnik Zabrze Hangi Kanalda, Saat Kaçta, Nereden İzlenir? Sarı Lacivertliler Avrupa Mesaisinde](https://www.cnnturk.com/spor/futbol/fenerbahce-gornik-zabrze-hangi-kanalda-sampiyonlar-ligi-fenerbahce-gornik-zabrze-maci-nereden-izlenir-sari-lacivertliler-avrupa-3444804) — CNN Türk Spor · 2026-07-21T21:02:56+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [İsmail Kartal'dan Ake ve Greenwood açıklaması: 'Yavaş yavaş geliyor!'](https://www.hurriyet.com.tr/sporarena/ismail-kartaldan-ake-ve-greenwood-aciklamasi-yavas-yavas-geliyor-43247365) — Hürriyet Spor · 2026-07-21T20:59:32+00:00 · turnuva=CL · kulüp=Fenerbahçe
+- ["İkinci yarıda pek tehlike yaratamadık"](https://www.haberturk.com/michal-gasparik-ikinci-devrede-savunmaya-gectigimiz-icin-pek-tehlike-yaratamadik-3900110-spor) — Haberturk Spor · 2026-07-21T20:57:44+00:00 · turnuva=CL · kulüp=Fenerbahçe
+- ["Skor daha farklı olabilirdi"](https://www.haberturk.com/bartug-elmaz-skor-daha-farkli-olabilirdi-3900107-spor) — Haberturk Spor · 2026-07-21T20:43:24+00:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Greenwood ve Ake ilk kez sahaya çıktı!](https://www.haberturk.com/fenerbahce-de-mason-greenwood-ve-nathan-ake-ilk-kez-sahaya-cikti-3900104-spor) — Haberturk Spor · 2026-07-21T20:32:34+00:00 · turnuva=CL · kulüp=Fenerbahçe
+- ["Takım olarak birlik olmuş durumdayız"](https://www.haberturk.com/anderson-talisca-takim-olarak-birlik-olmus-durumdayiz-3900103-spor) — Haberturk Spor · 2026-07-21T20:25:12+00:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe avantajı kaptı!](https://www.haberturk.com/fenerbahce-gornik-zabrze-mac-sonucu-ozeti-ve-golleri-fenerbahce-gornik-zabrze-ozet-izle-3899893-spor) — Haberturk Spor · 2026-07-21T19:56:08+00:00 · turnuva=CL · kulüp=Fenerbahçe
