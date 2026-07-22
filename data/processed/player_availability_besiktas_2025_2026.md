@@ -6,7 +6,7 @@
 - Otomatik ceza sinyali: 14
 - Manuel kayıt: 0
 - Güncel haber/sakat-cezalı sinyali: 3
-- Haber istihbaratı sinyali: 4
+- Haber istihbaratı sinyali: 3
 - Not: Kırmızı/çift sarı için sonraki maç cezası varsayılır. Sarı kart birikimi 4 kartta 1 maç varsayımıdır; resmi ceza listesiyle doğrulanmalıdır.
 
 ## Güncel Haber/Sakat-Cezalı Bağlamı
