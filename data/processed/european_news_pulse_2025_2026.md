@@ -1,7 +1,7 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-07-21T23:12:52.927892+00:00
-Toplam ilgili haber: 93
+Üretim zamanı: 2026-07-22T03:45:57.134500+00:00
+Toplam ilgili haber: 91
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
@@ -27,7 +27,7 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [İsmail Kartal'dan Nathan Ake açıklaması! 2'nci yarıda neden oyundan çıktı?](https://www.fotomac.com.tr/sampiyonlarligi/2026/07/21/ismail-kartaldan-nathan-ake-aciklamasi-2nci-yarida-neden-oyundan-cikti) — Fotomaç · 2026-07-21T23:05:26+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe Kadıköy'de avantajlı skoru kaptı!](https://www.fotomac.com.tr/sampiyonlarligi/2026/07/21/fenerbahce-kadikoyde-avantajli-skoru-kapti) — Fotomaç · 2026-07-21T22:52:23+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [UEFA'dan Mehmet Türkmen'e Görev](https://www.aa.com.tr/tr/spor/uefadan-mehmet-turkmene-gorev/4005181) — Anadolu Ajansı Spor · 2026-07-21T22:39:15+03:00 · turnuva=ECL · kulüp=—
-- [Fenerbahçe maçında Türk polisine saldırı! Górnik Zabrze taraftarları zıvanadan çıktı](https://www.takvim.com.tr/spor/fenerbahce/2026/07/21/gornik-zabrze-taraftarlari-turk-polisine-saldirdi) — Takvim Spor · 2026-07-21T22:01:52+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe maçında Türk polisine saldırı! Górnik Zabrze taraftarlarına hadleri bildirildi](https://www.takvim.com.tr/spor/fenerbahce/2026/07/21/gornik-zabrze-taraftarlari-turk-polisine-saldirdi) — Takvim Spor · 2026-07-21T22:01:52+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe avantajı tek golle elde etti](https://www.aa.com.tr/tr/spor/fenerbahce-avantaji-tek-golle-elde-etti/4005150) — Anadolu Ajansı Spor · 2026-07-21T21:56:41+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [İsmail Kartal'dan yabancı kuralı açıklaması!](https://www.haberturk.com/fenerbahce-de-ismail-kartal-dan-yabanci-kurali-aciklamasi-3900115-spor) — Haberturk Spor · 2026-07-21T21:42:40+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Gornik Zabrze tribününde kavga çıktı](https://www.fotomac.com.tr/fenerbahce/2026/07/21/gornik-zabrze-tribununde-kavga-cikti) — Fotomaç · 2026-07-21T21:41:36+03:00 · turnuva=CL · kulüp=Fenerbahçe
