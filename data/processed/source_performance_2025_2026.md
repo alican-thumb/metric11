@@ -1,6 +1,6 @@
 # Erken Haber Kaynak Performansı
 
-- Transfer sinyali: 49
+- Transfer sinyali: 52
 - Resmi olaya dönüşen transfer: 7
 - Yayın zamanı bulunan resmi teyit: 2/7
 - İlk görülme zamanı bulunan resmi teyit: 7/7
@@ -8,11 +8,11 @@
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 0
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 2504
+- Defterde korunan ilk iddia gözlemi: 2509
 
 ## Kanal Kapsamı
 
-- Google News: 260 haber, 30/30 başarılı sorgu.
+- Google News: 258 haber, 30/30 başarılı sorgu.
 - Telegram: 6 mesaj, 8/8 erişilebilir kanal.
 - X: durum=MISSING_CREDENTIALS, gönderi=0, yapılandırılmış hesap=45.
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 2501 | 731 | 1 | — | — | %99.8 | 0.2 | PARTIAL_MEASUREMENT |
+| Google News / medya | 2506 | 732 | 1 | — | — | %99.8 | 0.2 | PARTIAL_MEASUREMENT |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -47,7 +47,7 @@
 
 | Kaynak | Katman | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---|
-| CNN Türk Spor | MEDIA | 74 | 17 | 1 | — | — | %91.7 | 6.7 | PARTIAL_MEASUREMENT |
+| CNN Türk Spor | MEDIA | 75 | 17 | 1 | — | — | %91.7 | 6.7 | PARTIAL_MEASUREMENT |
 | Fotomaç | MEDIA | 313 | 64 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Sabah | MEDIA | 211 | 49 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Hürriyet | MEDIA | 192 | 22 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
@@ -57,10 +57,10 @@
 | A SPOR | MEDIA | 76 | 29 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | NTVSpor | MEDIA | 76 | 16 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Milliyet | MEDIA | 75 | 15 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
-| Fanatik | MEDIA | 66 | 26 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Fanatik | MEDIA | 67 | 26 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Sporx.com | MEDIA | 62 | 48 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| GZT | MEDIA | 59 | 15 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Son Dakika | MEDIA | 59 | 34 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
-| GZT | MEDIA | 58 | 14 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | SonDakika | MEDIA | 58 | 33 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Ajansspor | MEDIA | 57 | 21 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Taka Gazete | MEDIA | 54 | 40 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
@@ -69,7 +69,7 @@
 | Haberler | MEDIA | 33 | 14 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | beinsports.com.tr | MEDIA | 29 | 8 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Yeniçağ Gazetesi | MEDIA | 26 | 7 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
-| Haber 7 | MEDIA | 23 | 3 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Haber 7 | MEDIA | 24 | 3 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Halk TV | MEDIA | 22 | 2 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | FOTOMAÇ | MEDIA | 21 | 4 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | sondakika.com | MEDIA | 20 | 13 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
@@ -147,8 +147,8 @@
 | Yeni Şafak | MEDIA | 8 | 0 | 0 | — | — | — | — | OBSERVING |
 | Türkiye Gazetesi | MEDIA | 7 | 0 | 0 | — | — | — | — | OBSERVING |
 | STAR - Haberler | MEDIA | 5 | 0 | 0 | — | — | — | — | OBSERVING |
+| Alanya Postası | MEDIA | 4 | 0 | 0 | — | — | — | — | OBSERVING |
 | Özgür Kocaeli | MEDIA | 4 | 0 | 0 | — | — | — | — | OBSERVING |
-| Alanya Postası | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
 | Duhuliye | MEDIA | 3 | 1 | 0 | — | — | — | — | OBSERVING |
 | Goal.com | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
 | Samsun Haber | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
