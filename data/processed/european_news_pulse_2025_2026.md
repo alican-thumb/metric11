@@ -1,6 +1,6 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-07-23T05:36:51.103665+00:00
+Üretim zamanı: 2026-07-23T06:44:55.692970+00:00
 Toplam ilgili haber: 77
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
@@ -8,6 +8,10 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 
 - [TEŞEKKÜRLER DOĞAN ALEMDAR](https://ibfk.com.tr/haberler/tesekkurler-dogan-alemdar) — Başakşehir Resmi Web · 8.7.2026 23:35:12 · turnuva=ECL · kulüp=Beşiktaş, Başakşehir
 - [TEŞEKKÜRLER MİGUEL CRESPO](https://ibfk.com.tr/haberler/tesekkurler-miguel-crespo) — Başakşehir Resmi Web · 7.7.2026 21:16:30 · turnuva=EL · kulüp=Başakşehir
+- [Beşiktaş - Midtjylland maçı hangi kanalda, ne zaman, saat kaçta? Beşiktaş Avrupa Ligi maçı canlı yayın kanalı ve saati](https://www.cnnturk.com/spor/futbol/besiktas-midtjylland-maci-hangi-kanalda-ne-zaman-saat-kacta-besiktas-avrupa-ligi-maci-canli-yayin-kanali-ve-saati-3445104) — CNN Türk Spor · 2026-07-23T09:10:16+00:00 · turnuva=EL · kulüp=Beşiktaş
+- [Beşiktaş Avrupa sahnesine çıkıyor! Rakip Midtjylland, işte muhtemel 11'ler](https://www.aksam.com.tr/spor/besiktas-avrupa-sahnesine-cikiyor-rakip-midtjylland-iste-muhtemel-11ler/haber-1684826) — Aksam Spor · 2026-07-23T08:49:00+03:00 · turnuva=EL · kulüp=Beşiktaş
+- [Beşiktaş, Midtjylland'ı ağırlıyor! Maçın heyecanı canlı sohbet ile Misli'de](https://www.hurriyet.com.tr/sporarena/besiktas-midtjyllandi-agirliyor-macin-heyecani-canli-sohbet-ile-mislide-43248714) — Hürriyet Spor · 2026-07-23T06:35:53+00:00 · turnuva=EL · kulüp=Beşiktaş
+- [Günün maçları](https://www.haberturk.com/gunun-maclari-23-temmuz-2026-bugun-hangi-maclar-var-besiktas-midtjylland-maci-ne-zaman-saat-kacta-hangi-kanalda-3900399-spor) — Haberturk Spor · 2026-07-23T05:57:27+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş, Midtjylland önünde avantaj arıyor! İşte muhtemel 11'ler](https://www.hurriyet.com.tr/sporarena/besiktas-midtjylland-onunde-avantaj-ariyor-43248600) — Hürriyet Spor · 2026-07-23T04:00:00+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [⁠UEFA Konferans Ligi'nde ikinci eleme turuna 6 müsabakayla devam edildi](https://www.aa.com.tr/tr/spor/-uefa-konferans-liginde-ikinci-eleme-turuna-6-musabakayla-devam-edildi/4006330) — Anadolu Ajansı Spor · 2026-07-23T00:01:29+03:00 · turnuva=ECL · kulüp=—
 - [UEFA Şampiyonlar Ligi'nde ikinci eleme turu ilk maçları tamamlandı](https://www.aa.com.tr/tr/spor/uefa-sampiyonlar-liginde-ikinci-eleme-turu-ilk-maclari-tamamlandi/4006329) — Anadolu Ajansı Spor · 2026-07-23T00:01:26+03:00 · turnuva=CL · kulüp=—
@@ -27,10 +31,8 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Son dakika haberi: Başakşehir turu rövanşa bıraktı! Inter Turku ile berabere kaldı](https://www.sabah.com.tr/spor/futbol/2026/07/22/son-dakika-haberi-basaksehir-turu-rovansa-birakti-inter-turku-ile-berabere-kaldi) — Sabah Spor · 2026-07-22T19:10:56+03:00 · turnuva=ECL · kulüp=Başakşehir
 - [Midtjylland Teknik Direktörü Mike Tullberg: Beşiktaş'a saygı duyuyoruz ama kendimize de inanıyoruz](https://www.aa.com.tr/tr/spor/midtjylland-teknik-direktoru-mike-tullberg-besiktasa-saygi-duyuyoruz-ama-kendimize-de-inaniyoruz/4006039) — Anadolu Ajansı Spor · 2026-07-22T17:50:38+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Kadir Sağlam, UEFA Konferans Ligi'ndeki Rakow-Valletta maçını yönetecek](https://www.aa.com.tr/tr/spor/kadir-saglam-uefa-konferans-ligindeki-rakow-valletta-macini-yonetecek/4005914) — Anadolu Ajansı Spor · 2026-07-22T16:15:23+03:00 · turnuva=ECL · kulüp=—
-- [Beşiktaş - Midtjylland maçı hangi kanalda, ne zaman, saat kaçta? Beşiktaş Avrupa Ligi maçı canlı yayın kanalı ve saati](https://www.cnnturk.com/spor/futbol/besiktas-midtjylland-maci-hangi-kanalda-ne-zaman-saat-kacta-besiktas-avrupa-ligi-maci-canli-yayin-kanali-ve-saati-3445104) — CNN Türk Spor · 2026-07-22T16:05:01+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş Teknik Direktörü Italiano: Avrupa'da devam etmek istiyoruz](https://www.aa.com.tr/tr/spor/besiktas-teknik-direktoru-italiano-avrupada-devam-etmek-istiyoruz/4005852) — Anadolu Ajansı Spor · 2026-07-22T15:33:45+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Kadir Sağlam'a Konferans Ligi'nde görev!](https://www.haberturk.com/kadir-saglam-a-konferans-ligi-nde-gorev-3900301-spor) — Haberturk Spor · 2026-07-22T14:13:24+00:00 · turnuva=ECL · kulüp=—
-- [F.Bahçe'de rövanş mesaisi başladı](https://www.haberturk.com/fenerbahce-gornik-zabrze-rovansina-hazirlaniyor-3900306-spor) — Haberturk Spor · 2026-07-22T13:59:54+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe'de Nathan Ake'nin son durumu belli oldu! Sakatlanıp çıkmıştı rövanşta takımla olacak](https://www.takvim.com.tr/spor/fenerbahce/2026/07/22/fenerbahcede-nathan-akenin-son-durumu-belli-oldu) — Takvim Spor · 2026-07-22T13:21:02+03:00 · turnuva=— · kulüp=Fenerbahçe
 - [Beşiktaş, Avrupa kupalarında 259. randevusunda](https://www.hurriyet.com.tr/sporarena/besiktas-avrupa-kupalarinda-259-randevusunda-43248148) — Hürriyet Spor · 2026-07-22T12:57:00+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş, Midtjylland maçına hazır](https://www.cnnturk.com/spor/futbol/besiktas-midtjylland-macina-hazir-3445472) — CNN Türk Spor · 2026-07-22T12:02:57+00:00 · turnuva=EL · kulüp=Beşiktaş
@@ -44,5 +46,3 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Beşiktaş, sezonun ilk resmi maçında Midtjylland'ı ağırlayacak](https://www.aa.com.tr/tr/spor/besiktas-sezonun-ilk-resmi-macinda-midtjyllandi-agirlayacak/4005354) — Anadolu Ajansı Spor · 2026-07-22T09:26:34+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Polonya'da gündem Fenerbahçe!](https://www.haberturk.com/polonya-da-gundem-fenerbahce-3900204-spor) — Haberturk Spor · 2026-07-22T08:49:17+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Beşiktaş, Midtjylland maçına hazır!](https://www.haberturk.com/besiktas-midtjylland-macinin-hazirliklarini-tamamladi-3900196-spor) — Haberturk Spor · 2026-07-22T08:15:43+00:00 · turnuva=EL · kulüp=Beşiktaş
-- [Beşiktaş, Avrupa sahnesine çıkıyor!](https://www.haberturk.com/besiktas-sezonun-ilk-resmi-macinda-midtjylland-i-agirliyor-3900159-spor) — Haberturk Spor · 2026-07-22T08:10:14+00:00 · turnuva=EL · kulüp=Beşiktaş
-- ["Fenerbahçe, Polonya'da da kazanacak güçte"](https://www.haberturk.com/spor-yazarlarindan-fenerbahce-gornik-zabrze-maci-yorumu-3900163-spor) — Haberturk Spor · 2026-07-22T07:51:08+00:00 · turnuva=CL · kulüp=Fenerbahçe
