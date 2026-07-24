@@ -1,15 +1,19 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-07-24T06:39:57.378894+00:00
-Toplam ilgili haber: 63
+Üretim zamanı: 2026-07-24T08:44:06.655966+00:00
+Toplam ilgili haber: 61
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
 - [TEŞEKKÜRLER DOĞAN ALEMDAR](https://ibfk.com.tr/haberler/tesekkurler-dogan-alemdar) — Başakşehir Resmi Web · 8.7.2026 23:35:12 · turnuva=ECL · kulüp=Beşiktaş, Başakşehir
 - [TEŞEKKÜRLER MİGUEL CRESPO](https://ibfk.com.tr/haberler/tesekkurler-miguel-crespo) — Başakşehir Resmi Web · 7.7.2026 21:16:30 · turnuva=EL · kulüp=Başakşehir
+- [Fenerbahçe'de ayrılık raporu hazırlandı! 11 isim listede](https://www.takvim.com.tr/spor/fenerbahce/2026/07/24/fenerbahcede-ayrilik-raporu-hazirlandi-11-isim-listede) — Takvim Spor · 2026-07-24T09:36:33+03:00 · turnuva=— · kulüp=Fenerbahçe
 - [Vincenzo Italiano: 12. adam gibiyim](https://www.cnnturk.com/spor/futbol/vincenzo-italiano-12-adam-gibiyim-3446195) — CNN Türk Spor · 2026-07-24T09:06:10+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Spor yazarları Beşiktaş-Midtjylland maçını değerlendirdi](https://www.fotomac.com.tr/besiktas/2026/07/24/spor-yazarlari-besiktas-midtjylland-macini-degerlendirdi) — Fotomaç · 2026-07-24T08:56:26+03:00 · turnuva=EL · kulüp=Beşiktaş
+- [UEFA ülke puanı sıralaması güncellendi!](https://www.haberturk.com/turk-takimlari-avrupa-da-sahne-aldi-uefa-ulke-puani-siralamasi-guncellendi-3900708-spor) — Haberturk Spor · 2026-07-24T08:04:34+00:00 · turnuva=CL · kulüp=Fenerbahçe, Beşiktaş, Başakşehir
+- ["Beşiktaş ilk adımı doğru attı!"](https://www.haberturk.com/spor-yazarlari-besiktas-in-midtjylland-galibiyetini-yorumladi-besiktas-ilk-adimi-dogru-atti-3900723-spor) — Haberturk Spor · 2026-07-24T06:51:10+00:00 · turnuva=EL · kulüp=Beşiktaş
+- [Avrupa'da haftayı 3'te 2'yle kapattık! UEFA ülke puanı sıralaması güncellendi](https://www.hurriyet.com.tr/sporarena/avrupada-haftayi-3te-2yle-kapattik-uefa-ulke-puani-siralamasi-guncellendi-43250007) — Hürriyet Spor · 2026-07-24T06:50:00+00:00 · turnuva=CL · kulüp=Fenerbahçe, Beşiktaş, Başakşehir
 - [Güntekin Onay, Beşiktaş'ın galibiyeti sonrası açıkladı: İyi ama daha fazlası olmalıydı](https://www.hurriyet.com.tr/sporarena/guntekin-onay-besiktasin-galibiyeti-sonrasi-acikladi-iyi-ama-daha-fazlasi-olmaliydi-43249935) — Hürriyet Spor · 2026-07-24T05:13:16+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [24 Temmuz maç programı](https://www.haberturk.com/24-temmuz-mac-programi-bugun-kimin-maci-var-hangi-mac-saat-kacta-hangi-kanalda-yayinlanacak-3900683-spor) — Haberturk Spor · 2026-07-24T04:45:20+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [BEŞİKTAŞ HABERLERİ - Vincenzo Italiano: 'Keşke ben oynayabilseydim' dedim!](https://www.fotomac.com.tr/besiktas/2026/07/23/besiktas-haberleri-vincenzo-italiano-keske-ben-oynayabilseydim-dedim) — Fotomaç · 2026-07-24T00:52:48+03:00 · turnuva=EL · kulüp=Beşiktaş
@@ -35,7 +39,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Konferans Ligi'nde 2. eleme turu başladı!](https://www.haberturk.com/uefa-konferans-ligi-nde-2-eleme-turu-basladi-3900666-spor) — Haberturk Spor · 2026-07-23T21:29:46+00:00 · turnuva=ECL · kulüp=—
 - [İşte Avrupa Ligi'nde gecenin sonuçları!](https://www.haberturk.com/iste-avrupa-ligi-nde-gecenin-sonuclari-3900662-spor) — Haberturk Spor · 2026-07-23T21:06:55+00:00 · turnuva=EL · kulüp=—
 - [Mike Tullberg: 'Beşiktaş'ı iyi tuttuk!'](https://www.hurriyet.com.tr/sporarena/mike-tullberg-besiktasi-iyi-tuttuk-43249822) — Hürriyet Spor · 2026-07-23T20:56:11+00:00 · turnuva=EL · kulüp=Beşiktaş
-- [Nübel'den Italiano'ya övgü dolu sözler!](https://www.haberturk.com/alexander-nubel-den-vincenzo-italiano-ya-ovgu-dolu-sozler-3900660-spor) — Haberturk Spor · 2026-07-23T20:54:00+00:00 · turnuva=EL · kulüp=Beşiktaş
 - ["Bu statta oynamayı özlemişim"](https://www.haberturk.com/orkun-kokcu-bu-statta-oynamayi-ozlemisim-3900659-spor) — Haberturk Spor · 2026-07-23T20:43:55+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Vincenzo Italiano: 'Daha fazla gol atabilirdik'](https://www.hurriyet.com.tr/sporarena/vincenzo-italiano-daha-fazla-gol-atabilirdik-43249812) — Hürriyet Spor · 2026-07-23T20:34:56+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş sahasında avantajı kaptı!](https://www.haberturk.com/besiktas-midtjylland-maci-ne-zaman-saat-kacta-hangi-kanalda-bjk-midtjylland-avrupa-ligi-maci-canli-izle-3900429-spor) — Haberturk Spor · 2026-07-23T19:56:55+00:00 · turnuva=EL · kulüp=Beşiktaş
@@ -43,6 +46,3 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [BEŞİKTAŞ MIDTJYLLAND MAÇI CANLI İZLE! Beşiktaş Midtjylland Maçı S Sport Canlı Yayında! UEFA Avrupa Ligi Yolculuğu Başlıyor! Beşiktaş Midtjylland Maçı Canlı Yayın Bilgileri!](https://www.cnnturk.com/spor/futbol/besiktas-midtjylland-maci-canli-izle-besiktas-midtjylland-maci-s-sport-canli-yayinda-uefa-avrupa-ligi-yolculugu-basliyor-3445940) — CNN Türk Spor · 2026-07-23T19:47:54+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş'ta 3 yeni transfer 11’de!](https://www.haberturk.com/besiktas-ta-3-yeni-transfer-11de-3900646-spor) — Haberturk Spor · 2026-07-23T18:33:23+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş, UEFA ve Midtjylland heyetlerini dostluk yemeğinde ağırladı](https://www.cnnturk.com/spor/futbol/besiktas-uefa-ve-midtjylland-heyetlerini-dostluk-yemeginde-agirladi-3446016) — CNN Türk Spor · 2026-07-23T18:11:50+00:00 · turnuva=EL · kulüp=Beşiktaş
-- [GÜNÜN MAÇLARI 23 TEMMUZ 2026: Bugün Kimlerin Maçlar Var? Filenin Sultanları ve Beşiktaş Midtjylland Maçı Saat Kaçta, Hangi Kanalda? İşte 23 Temmuz Günün Maçları](https://www.cnnturk.com/spor/gunun-maclari-23-temmuz-2026-bugun-kimlerin-maclar-var-filenin-sultanlari-ve-besiktas-midtjylland-maci-saat-kacta-hangi-kanalda-iste-3445802) — CNN Türk Spor · 2026-07-23T17:54:43+00:00 · turnuva=CL · kulüp=Beşiktaş
-- [Kartal avantajı kaptı! Beşiktaş FC Midtjylland'ı 1-0 yendi](https://www.takvim.com.tr/spor/besiktas/2026/07/23/kartal-avantaji-kapti-besiktas-fc-midtjyllandi-1-0-yendi) — Takvim Spor · 2026-07-23T17:48:51+03:00 · turnuva=EL · kulüp=Beşiktaş
-- [Beşiktaş - Midtjylland Muhtemel 11'ler: UEFA Avrupa Ligi'nde Kritik Gece! Beşiktaş Midtjylland'ı Ağırlıyor](https://www.cnnturk.com/spor/futbol/besiktas-midtjylland-karsisinda-iste-muhtemel-11ler-3445807) — CNN Türk Spor · 2026-07-23T16:07:37+00:00 · turnuva=EL · kulüp=Beşiktaş
