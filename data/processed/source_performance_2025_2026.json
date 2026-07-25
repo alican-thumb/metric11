@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-25T05:25:38.387472+00:00",
+  "generated_at": "2026-07-25T06:30:32.661900+00:00",
   "season": "2025_2026",
   "maturity_days": 14,
   "summary": {
-    "transfer_signals": 46,
+    "transfer_signals": 41,
     "official_events": 7,
     "official_events_with_timestamp": 2,
     "official_events_with_first_observed_timestamp": 7,
@@ -12,11 +12,11 @@
     "measured_lead_times": 0,
     "first_seen_lead_times": 0,
     "tracked_x_sources_waiting": 20,
-    "retained_claim_observations": 2582
+    "retained_claim_observations": 2583
   },
   "provider_coverage": {
     "google_news": {
-      "articles": 252,
+      "articles": 251,
       "queries": 30,
       "successful_queries": 30
     },
@@ -36,7 +36,7 @@
       "source": "Google News / medya",
       "source_tier": "CHANNEL",
       "source_type": "media",
-      "observations": 2579,
+      "observations": 2580,
       "scoreable_claims": 760,
       "official_conversions": 1,
       "lead_hours": [],
@@ -44,7 +44,7 @@
       "lead_time_unavailable": 1,
       "matured_unconfirmed": 518,
       "pending_claims": 241,
-      "unresolved_claims": 1819,
+      "unresolved_claims": 1820,
       "status": "PARTIAL_MEASUREMENT",
       "score": 0.2,
       "average_lead_hours": null,
@@ -1095,6 +1095,26 @@
       "false_alarm_proxy_pct": 100.0
     },
     {
+      "source": "AKŞAM",
+      "source_tier": "MEDIA",
+      "source_type": "google_news",
+      "observations": 5,
+      "scoreable_claims": 1,
+      "official_conversions": 0,
+      "lead_hours": [],
+      "first_seen_lead_hours": [],
+      "lead_time_unavailable": 0,
+      "matured_unconfirmed": 1,
+      "pending_claims": 0,
+      "unresolved_claims": 4,
+      "status": "PARTIAL_MEASUREMENT",
+      "score": 0.0,
+      "average_lead_hours": null,
+      "average_first_seen_lead_hours": null,
+      "official_conversion_rate_pct": 0.0,
+      "false_alarm_proxy_pct": 100.0
+    },
+    {
       "source": "Aksiyon.com.TR",
       "source_tier": "MEDIA",
       "source_type": "google_news",
@@ -1127,26 +1147,6 @@
       "matured_unconfirmed": 2,
       "pending_claims": 2,
       "unresolved_claims": 1,
-      "status": "PARTIAL_MEASUREMENT",
-      "score": 0.0,
-      "average_lead_hours": null,
-      "average_first_seen_lead_hours": null,
-      "official_conversion_rate_pct": 0.0,
-      "false_alarm_proxy_pct": 100.0
-    },
-    {
-      "source": "AKŞAM",
-      "source_tier": "MEDIA",
-      "source_type": "google_news",
-      "observations": 4,
-      "scoreable_claims": 1,
-      "official_conversions": 0,
-      "lead_hours": [],
-      "first_seen_lead_hours": [],
-      "lead_time_unavailable": 0,
-      "matured_unconfirmed": 1,
-      "pending_claims": 0,
-      "unresolved_claims": 3,
       "status": "PARTIAL_MEASUREMENT",
       "score": 0.0,
       "average_lead_hours": null,
