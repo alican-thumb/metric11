@@ -1,7 +1,7 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-07-25T14:03:01.025434+00:00
-Toplam ilgili haber: 31
+Üretim zamanı: 2026-07-25T15:20:28.341022+00:00
+Toplam ilgili haber: 28
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
@@ -10,8 +10,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [TEŞEKKÜRLER MİGUEL CRESPO](https://ibfk.com.tr/haberler/tesekkurler-miguel-crespo) — Başakşehir Resmi Web · 7.7.2026 21:16:30 · turnuva=EL · kulüp=Başakşehir
 - [Fenerbahçe, Gornik Zabrze maçının hazırlıklarını sürdürdü](https://www.sabah.com.tr/spor/futbol/2026/07/25/fenerbahce-gornik-zabrze-macinin-hazirliklarini-surdurdu) — Sabah Spor · 2026-07-25T16:46:37+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe, Gornik Zabrze maçı mesaisini sürdürdü](https://www.cnnturk.com/spor/futbol/fenerbahce-gornik-zabrze-maci-mesaisini-surdurdu-3446573) — CNN Türk Spor · 2026-07-25T16:31:31+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Fenerbahçe'de Gornik Zabrze mesaisi sürüyor](https://www.aksam.com.tr/spor/fenerbahcede-gornik-zabrze-mesaisi-suruyor/haber-1685468) — Aksam Spor · 2026-07-25T16:26:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Midtjylland - Beşiktaş maçı ne zaman? Avrupa Ligi BJK rövanş maçı...](https://www.aksam.com.tr/pusula/midtjylland-besiktas-maci-ne-zaman-avrupa-ligi-bjk-rovans-maci/haber-1685457) — Aksam Spor · 2026-07-25T15:25:00+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Fenerbahçe'de Gornik Zabrze maçı hazırlıkları devam etti](https://www.fotomac.com.tr/fenerbahce/2026/07/25/fenerbahcede-gornik-zabrze-maci-hazirliklari-devam-etti) — Fotomaç · 2026-07-25T15:01:21+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [UEFA ülke puanı güncellendi! İşte Türkiye'nin sıralamadaki yeri](https://www.fotomac.com.tr/fenerbahce/2026/07/24/uefa-ulke-puani-guncellendi-iste-turkiyenin-siralamadaki-yeri) — Fotomaç · 2026-07-25T00:52:31+03:00 · turnuva=— · kulüp=Fenerbahçe, Beşiktaş, Başakşehir
 - [GALATASARAY - MONZA MAÇI HANGİ KANALDA? Galatasaray - Monza Maçı Ne Zaman, Saat Kaçta? Süper Lig Öncesi Okan Buruk'tan Kadro Kararı!](https://www.cnnturk.com/spor/futbol/galatasaray-monza-maci-hangi-kanalda-galatasaray-monza-maci-ne-zaman-saat-kacta-super-lig-oncesi-okan-buruktan-kadro-karari-3446331) — CNN Türk Spor · 2026-07-24T21:09:49+00:00 · turnuva=CL · kulüp=Galatasaray
@@ -21,7 +19,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Beşiktaş, Midtjylland maçı hazırlıklarına ara vermeden başladı](https://www.cnnturk.com/spor/futbol/besiktas-midtjylland-maci-hazirliklarina-ara-vermeden-basladi-3446336) — CNN Türk Spor · 2026-07-24T14:37:33+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Inter Turku - Başakşehir maçında Nathan Verboomen düdük çalacak](https://www.cnnturk.com/spor/futbol/inter-turku-basaksehir-macinda-nathan-verboomen-duduk-calacak-3446329) — CNN Türk Spor · 2026-07-24T14:18:30+00:00 · turnuva=ECL · kulüp=Başakşehir
 - [Beşiktaş'ta Midtjylland maçı hazırlıkları başladı](https://www.hurriyet.com.tr/sporarena/besiktasta-midtjylland-maci-hazirliklari-basladi-43250698) — Hürriyet Spor · 2026-07-24T13:43:07+00:00 · turnuva=EL · kulüp=Beşiktaş
-- [Gornik Zabrze - Fenerbahçe maçına Belçikalı hakem](https://www.cnnturk.com/spor/futbol/gornik-zabrze-fenerbahce-macina-belcikali-hakem-3446322) — CNN Türk Spor · 2026-07-24T13:37:13+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe'de ayrılık raporu hazırlandı! 11 isim listede](https://www.takvim.com.tr/spor/fenerbahce/2026/07/24/fenerbahcede-ayrilik-raporu-hazirlandi-11-isim-listede) — Takvim Spor · 2026-07-24T09:36:33+03:00 · turnuva=— · kulüp=Fenerbahçe
 - [UEFA ülke puanı sıralaması güncellendi!](https://www.haberturk.com/turk-takimlari-avrupa-da-sahne-aldi-uefa-ulke-puani-siralamasi-guncellendi-3900708-spor) — Haberturk Spor · 2026-07-24T08:04:34+00:00 · turnuva=CL · kulüp=Fenerbahçe, Beşiktaş, Başakşehir
 - ["Beşiktaş ilk adımı doğru attı!"](https://www.haberturk.com/spor-yazarlari-besiktas-in-midtjylland-galibiyetini-yorumladi-besiktas-ilk-adimi-dogru-atti-3900723-spor) — Haberturk Spor · 2026-07-24T06:51:10+00:00 · turnuva=EL · kulüp=Beşiktaş
