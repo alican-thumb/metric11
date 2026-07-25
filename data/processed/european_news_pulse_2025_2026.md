@@ -1,13 +1,19 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-07-25T11:34:35.684172+00:00
-Toplam ilgili haber: 30
+Üretim zamanı: 2026-07-25T14:03:01.025434+00:00
+Toplam ilgili haber: 31
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
 - [TEŞEKKÜRLER DOĞAN ALEMDAR](https://ibfk.com.tr/haberler/tesekkurler-dogan-alemdar) — Başakşehir Resmi Web · 8.7.2026 23:35:12 · turnuva=ECL · kulüp=Beşiktaş, Başakşehir
 - [TEŞEKKÜRLER MİGUEL CRESPO](https://ibfk.com.tr/haberler/tesekkurler-miguel-crespo) — Başakşehir Resmi Web · 7.7.2026 21:16:30 · turnuva=EL · kulüp=Başakşehir
+- [Fenerbahçe, Gornik Zabrze maçının hazırlıklarını sürdürdü](https://www.sabah.com.tr/spor/futbol/2026/07/25/fenerbahce-gornik-zabrze-macinin-hazirliklarini-surdurdu) — Sabah Spor · 2026-07-25T16:46:37+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe, Gornik Zabrze maçı mesaisini sürdürdü](https://www.cnnturk.com/spor/futbol/fenerbahce-gornik-zabrze-maci-mesaisini-surdurdu-3446573) — CNN Türk Spor · 2026-07-25T16:31:31+00:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe'de Gornik Zabrze mesaisi sürüyor](https://www.aksam.com.tr/spor/fenerbahcede-gornik-zabrze-mesaisi-suruyor/haber-1685468) — Aksam Spor · 2026-07-25T16:26:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Midtjylland - Beşiktaş maçı ne zaman? Avrupa Ligi BJK rövanş maçı...](https://www.aksam.com.tr/pusula/midtjylland-besiktas-maci-ne-zaman-avrupa-ligi-bjk-rovans-maci/haber-1685457) — Aksam Spor · 2026-07-25T15:25:00+03:00 · turnuva=EL · kulüp=Beşiktaş
+- [Fenerbahçe'de Gornik Zabrze maçı hazırlıkları devam etti](https://www.fotomac.com.tr/fenerbahce/2026/07/25/fenerbahcede-gornik-zabrze-maci-hazirliklari-devam-etti) — Fotomaç · 2026-07-25T15:01:21+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [UEFA ülke puanı güncellendi! İşte Türkiye'nin sıralamadaki yeri](https://www.fotomac.com.tr/fenerbahce/2026/07/24/uefa-ulke-puani-guncellendi-iste-turkiyenin-siralamadaki-yeri) — Fotomaç · 2026-07-25T00:52:31+03:00 · turnuva=— · kulüp=Fenerbahçe, Beşiktaş, Başakşehir
 - [GALATASARAY - MONZA MAÇI HANGİ KANALDA? Galatasaray - Monza Maçı Ne Zaman, Saat Kaçta? Süper Lig Öncesi Okan Buruk'tan Kadro Kararı!](https://www.cnnturk.com/spor/futbol/galatasaray-monza-maci-hangi-kanalda-galatasaray-monza-maci-ne-zaman-saat-kacta-super-lig-oncesi-okan-buruktan-kadro-karari-3446331) — CNN Türk Spor · 2026-07-24T21:09:49+00:00 · turnuva=CL · kulüp=Galatasaray
 - [Fenerbahçe istedi Beşiktaş peşine düştü! Darwin Núñez transferi bitebilir](https://www.takvim.com.tr/spor/besiktas/2026/07/24/fenerbahce-istedi-besiktas-pesine-dustu-transfer-bitebilir) — Takvim Spor · 2026-07-24T17:52:03+03:00 · turnuva=EL · kulüp=Fenerbahçe, Beşiktaş
 - [Fenerbahçe'de Gornik Zabrze maçı mesaisi sürüyor!](https://www.hurriyet.com.tr/sporarena/fenerbahcede-gornik-zabrze-maci-mesaisi-suruyor-43250903) — Hürriyet Spor · 2026-07-24T17:49:50+00:00 · turnuva=CL · kulüp=Fenerbahçe
@@ -16,8 +22,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Inter Turku - Başakşehir maçında Nathan Verboomen düdük çalacak](https://www.cnnturk.com/spor/futbol/inter-turku-basaksehir-macinda-nathan-verboomen-duduk-calacak-3446329) — CNN Türk Spor · 2026-07-24T14:18:30+00:00 · turnuva=ECL · kulüp=Başakşehir
 - [Beşiktaş'ta Midtjylland maçı hazırlıkları başladı](https://www.hurriyet.com.tr/sporarena/besiktasta-midtjylland-maci-hazirliklari-basladi-43250698) — Hürriyet Spor · 2026-07-24T13:43:07+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Gornik Zabrze - Fenerbahçe maçına Belçikalı hakem](https://www.cnnturk.com/spor/futbol/gornik-zabrze-fenerbahce-macina-belcikali-hakem-3446322) — CNN Türk Spor · 2026-07-24T13:37:13+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Beşiktaş'ta Midtjylland maçı hazırlıkları!](https://www.haberturk.com/besiktas-ta-midtjylland-maci-hazirliklari-basladi-3900818-spor) — Haberturk Spor · 2026-07-24T11:18:50+00:00 · turnuva=— · kulüp=Beşiktaş
-- [Gornik Zabrze-Fenerbahçe maçının hakemi açıklandı!](https://www.hurriyet.com.tr/sporarena/gornik-zabrze-fenerbahce-macinin-hakemi-aciklandi-43250334) — Hürriyet Spor · 2026-07-24T09:48:24+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe'de ayrılık raporu hazırlandı! 11 isim listede](https://www.takvim.com.tr/spor/fenerbahce/2026/07/24/fenerbahcede-ayrilik-raporu-hazirlandi-11-isim-listede) — Takvim Spor · 2026-07-24T09:36:33+03:00 · turnuva=— · kulüp=Fenerbahçe
 - [UEFA ülke puanı sıralaması güncellendi!](https://www.haberturk.com/turk-takimlari-avrupa-da-sahne-aldi-uefa-ulke-puani-siralamasi-guncellendi-3900708-spor) — Haberturk Spor · 2026-07-24T08:04:34+00:00 · turnuva=CL · kulüp=Fenerbahçe, Beşiktaş, Başakşehir
 - ["Beşiktaş ilk adımı doğru attı!"](https://www.haberturk.com/spor-yazarlari-besiktas-in-midtjylland-galibiyetini-yorumladi-besiktas-ilk-adimi-dogru-atti-3900723-spor) — Haberturk Spor · 2026-07-24T06:51:10+00:00 · turnuva=EL · kulüp=Beşiktaş
@@ -29,10 +33,7 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Orkun Kökçü'den enfes gol! Sezonu muhteşem açtı](https://www.takvim.com.tr/spor/besiktas/2026/07/23/orkun-kokcuden-enfes-gol-sezonu-muhtesem-acti) — Takvim Spor · 2026-07-23T22:12:30+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş, Avrupa Ligi'nde tek golle tur avantajını kaptı](https://www.aa.com.tr/tr/spor/besiktas-avrupa-liginde-tek-golle-tur-avantajini-kapti/4007461) — Anadolu Ajansı Spor · 2026-07-23T21:54:08+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Kartal avantajı kaptı! Beşiktaş FC Midtjylland'ı 1-0 yendi](https://www.takvim.com.tr/spor/besiktas/2026/07/23/kartal-avantaji-kapti-besiktas-fc-midtjyllandi-1-0-yendi) — Takvim Spor · 2026-07-23T17:48:51+03:00 · turnuva=EL · kulüp=Beşiktaş
-- [⁠UEFA Konferans Ligi'nde ikinci eleme turuna 6 müsabakayla devam edildi](https://www.aa.com.tr/tr/spor/-uefa-konferans-liginde-ikinci-eleme-turuna-6-musabakayla-devam-edildi/4006330) — Anadolu Ajansı Spor · 2026-07-23T00:01:29+03:00 · turnuva=ECL · kulüp=—
 - [UEFA Şampiyonlar Ligi'nde ikinci eleme turu ilk maçları tamamlandı](https://www.aa.com.tr/tr/spor/uefa-sampiyonlar-liginde-ikinci-eleme-turu-ilk-maclari-tamamlandi/4006329) — Anadolu Ajansı Spor · 2026-07-23T00:01:26+03:00 · turnuva=CL · kulüp=—
-- [Başakşehir turu rövanşa bıraktı! Inter Turku ile berabere kaldı](https://www.takvim.com.tr/spor/2026/07/22/basaksehir-turu-rovansa-birakti-inter-turku-ile-berabere-kaldi) — Takvim Spor · 2026-07-22T22:28:15+03:00 · turnuva=ECL · kulüp=Başakşehir
-- [İstanbul Başakşehir, UEFA Konferans Ligi 2. eleme turu ilk maçında Inter Turku ile berabere kaldı](https://www.aa.com.tr/tr/spor/istanbul-basaksehir-uefa-konferans-ligi-2-eleme-turu-ilk-macinda-inter-turku-ile-berabere-kaldi/4006200) — Anadolu Ajansı Spor · 2026-07-22T21:43:29+03:00 · turnuva=ECL · kulüp=Başakşehir
 - [Başakşehir evinde Inter Turku ile 1-1 berabere kaldı! Rövanş Finlandiya'da netleşecek - A Haber](https://news.google.com/rss/articles/CBMiowFBVV95cUxOVVdLTTM4SFl6QmpLM1p1SGgyMW8xYTMyY2ZxdEVMSTVLVmw2WGw0ZzJFQ1ZDeFVFb2gtN2FaQ0JnWWR1ekNhTVREdTlXa3NDLUZnbVVPcHVJSkdTOHlPZlRTVkphaE5faDNiTUQ0N3hyRFBreG12ZkFJY1QwZVluNnJoTlZHckVnT2JFcmdVTHJ2cE5FXzNSak9HczJMWmN2NmU4?oc=5) — A Haber · 2026-07-22T19:45:03+00:00 · turnuva=— · kulüp=Başakşehir
 - [Başakşehir - Inter Turku CANLI TRT 1 İZLE || Başakşehir - Inter Turku maçı hangi kanalda, şifresiz mi, saat kaçta? UEFA Konferans Ligi - Yeni Şafak](https://news.google.com/rss/articles/CBMi_wFBVV95cUxOS2w4bWhYZGlyMjB4ekozVElRS210TmhxakNKdm5wSGc2VDVoQ3pQU2lpYjQ5RUtyRXlVaVEtWXB0SHdoQzdsQzYwRjRsNFdoZEZjc0hla3FjdmpSbmh4MlZMQVk1YXJfaDdqMjNwTmFIVFEwSnN5SjB0bWRJand6WnZxay10M25PUEFaTzhxb0E3VHpfNk9MRV9GRVRsN3pNVlNHWHJjQjMzUmV5SjYxMVBaUEFIVTlVQ1NjQUxjLTlpUTd1N0VDTXQ2R05uZGtpYVNwS3Z0dDNRMWZLejNzOTlWM3JjZ00tVkpWYm12dlZkTXJJeDZLSVZMdlJ5N0k?oc=5) — Yeni Şafak · 2026-07-22T16:45:00+00:00 · turnuva=ECL · kulüp=Başakşehir
 - [Kulübümüz, son olarak Belçika Pro Lig ekiplerinden KVC Westerlo forma giyen Emin Bayram ile 4 yıllık anlaşma sağladı.](https://ibfk.com.tr/haberler/hos-geldin-emin-bayram) — Başakşehir Resmi Web · 10.7.2026 22:54:38 · turnuva=ECL · kulüp=Başakşehir
