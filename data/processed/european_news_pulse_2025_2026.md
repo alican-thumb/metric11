@@ -1,13 +1,14 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-07-26T05:43:30.446462+00:00
-Toplam ilgili haber: 21
+Üretim zamanı: 2026-07-26T06:50:48.325487+00:00
+Toplam ilgili haber: 22
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
 - [TEŞEKKÜRLER DOĞAN ALEMDAR](https://ibfk.com.tr/haberler/tesekkurler-dogan-alemdar) — Başakşehir Resmi Web · 8.7.2026 23:35:12 · turnuva=ECL · kulüp=Beşiktaş, Başakşehir
 - [TEŞEKKÜRLER MİGUEL CRESPO](https://ibfk.com.tr/haberler/tesekkurler-miguel-crespo) — Başakşehir Resmi Web · 7.7.2026 21:16:30 · turnuva=EL · kulüp=Başakşehir
+- [Beşiktaş'ın rövanş maçına İngiliz hakem!](https://www.fotomac.com.tr/avrupaligi/2026/07/25/besiktasin-rovans-macina-ingiliz-hakem) — Fotomaç · 2026-07-26T01:10:59+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş-Midtjylland maçının hakemi belli oldu](https://www.cnnturk.com/spor/futbol/besiktas-midtjylland-macinin-hakemi-belli-oldu-3446622) — CNN Türk Spor · 2026-07-25T23:10:03+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş'ın rövanş maçına İngiliz hakem!](https://www.haberturk.com/midtjylland-besiktas-macini-john-brooks-yonetecek-3901089-spor) — Haberturk Spor · 2026-07-25T19:28:01+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Başakşehir'e Belçikalı hakem!](https://www.haberturk.com/inter-turku-basaksehir-macinin-hakemi-nathan-verboomen-oldu-3901088-spor) — Haberturk Spor · 2026-07-25T19:24:35+00:00 · turnuva=ECL · kulüp=Başakşehir
