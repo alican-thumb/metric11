@@ -1,7 +1,7 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-07-26T13:57:29.425151+00:00
-Toplam ilgili haber: 19
+Üretim zamanı: 2026-07-26T15:24:37.557288+00:00
+Toplam ilgili haber: 18
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
@@ -23,5 +23,4 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [UEFA Avrupa Ligi'nde ikinci eleme turu ilk maçları oynandı](https://www.aa.com.tr/tr/spor/uefa-avrupa-liginde-ikinci-eleme-turu-ilk-maclari-oynandi/4007594) — Anadolu Ajansı Spor · 2026-07-23T23:57:26+03:00 · turnuva=EL · kulüp=—
 - [Türkiye ülke puanı sıralamasında kaçıncı? İşte UEFA'daki yerimiz (2026-2027 Sezonu)](https://www.takvim.com.tr/galeri/spor/turkiye-ulke-puani-siralamasinda-kacinci-iste-uefadaki-yerimiz-2026-2027-sezonu) — Takvim Spor · 2026-07-23T23:22:46+03:00 · turnuva=CL · kulüp=Fenerbahçe, Beşiktaş, Başakşehir
 - [Kartal avantajı kaptı! Beşiktaş FC Midtjylland'ı 1-0 yendi](https://www.takvim.com.tr/spor/besiktas/2026/07/23/kartal-avantaji-kapti-besiktas-fc-midtjyllandi-1-0-yendi) — Takvim Spor · 2026-07-23T17:48:51+03:00 · turnuva=EL · kulüp=Beşiktaş
-- [Başakşehir evinde Inter Turku ile 1-1 berabere kaldı! Rövanş Finlandiya'da netleşecek - A Haber](https://news.google.com/rss/articles/CBMiowFBVV95cUxOVVdLTTM4SFl6QmpLM1p1SGgyMW8xYTMyY2ZxdEVMSTVLVmw2WGw0ZzJFQ1ZDeFVFb2gtN2FaQ0JnWWR1ekNhTVREdTlXa3NDLUZnbVVPcHVJSkdTOHlPZlRTVkphaE5faDNiTUQ0N3hyRFBreG12ZkFJY1QwZVluNnJoTlZHckVnT2JFcmdVTHJ2cE5FXzNSak9HczJMWmN2NmU4?oc=5) — A Haber · 2026-07-22T19:45:03+00:00 · turnuva=— · kulüp=Başakşehir
 - [Kulübümüz, son olarak Belçika Pro Lig ekiplerinden KVC Westerlo forma giyen Emin Bayram ile 4 yıllık anlaşma sağladı.](https://ibfk.com.tr/haberler/hos-geldin-emin-bayram) — Başakşehir Resmi Web · 10.7.2026 22:54:38 · turnuva=ECL · kulüp=Başakşehir
