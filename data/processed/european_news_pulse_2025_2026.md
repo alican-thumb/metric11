@@ -1,17 +1,17 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-07-27T04:02:54.660523+00:00
+Üretim zamanı: 2026-07-27T06:02:25.325644+00:00
 Toplam ilgili haber: 15
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
 - [TEŞEKKÜRLER DOĞAN ALEMDAR](https://ibfk.com.tr/haberler/tesekkurler-dogan-alemdar) — Başakşehir Resmi Web · 8.7.2026 23:35:12 · turnuva=ECL · kulüp=Beşiktaş, Başakşehir
+- [Fenerbahçe'de flaş Asensio gelişmesi! İsmail Kartal...](https://www.fotomac.com.tr/fenerbahce/2026/07/26/fenerbahcede-flas-asensio-gelismesi-ismail-kartal) — Fotomaç · 2026-07-27T01:27:38+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Gornik Zabrze - Fenerbahçe maçı ne zaman?](https://www.haberturk.com/gornik-zabrze-fenerbahce-maci-ne-zaman-saat-kacta-uefa-sampiyonlar-ligi-2-on-eleme-turu-gornik-zabrze-fenerbahce-rovans-maci-hangi-kanalda-3901227-spor) — Haberturk Spor · 2026-07-26T22:46:35+00:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Rövanşa kilitlendiler](https://www.fotomac.com.tr/besiktas/2026/07/27/rovansa-kilitlendiler) — Fotomaç · 2026-07-26T22:40:33+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Fenerbahçe'de Gornik Zabrze maçı hazırlıkları!](https://www.haberturk.com/fenerbahce-gornik-zabrze-maci-hazirliklarini-surdurdu-3901226-spor) — Haberturk Spor · 2026-07-26T18:03:29+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe, Gornik Zabrze maçı hazırlıklarını sürdürdü!](https://www.hurriyet.com.tr/sporarena/fenerbahce-gornik-zabrze-maci-hazirliklarini-surdurdu-43252586) — Hürriyet Spor · 2026-07-26T17:57:33+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Beşiktaş'ta Midtjylland maçının hazırlıkları devam etti](https://www.fotomac.com.tr/besiktas/2026/07/26/besiktasta-midtjylland-macinin-hazirliklari-devam-etti) — Fotomaç · 2026-07-26T14:57:55+03:00 · turnuva=EL · kulüp=Beşiktaş
-- [Fenerbahçe'de flaş Asensio gelişmesi! İsmail Kartal...](https://www.fotomac.com.tr/fenerbahce/2026/07/26/fenerbahcede-flas-asensio-gelismesi-ismail-kartal) — Fotomaç · 2026-07-26T14:20:49+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Beşiktaş'ta Midtjylland mesaisi!](https://www.haberturk.com/besiktas-ta-midtjylland-mesaisi-3901173-spor) — Haberturk Spor · 2026-07-26T11:39:47+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş-Midtjylland maçının hakemi belli oldu](https://www.cnnturk.com/spor/futbol/besiktas-midtjylland-macinin-hakemi-belli-oldu-3446622) — CNN Türk Spor · 2026-07-25T23:10:03+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Midtjylland - Beşiktaş maçına İngiliz hakem!](https://www.hurriyet.com.tr/sporarena/midtjylland-besiktas-macina-ingiliz-hakem-43251802) — Hürriyet Spor · 2026-07-25T17:56:00+00:00 · turnuva=EL · kulüp=Beşiktaş
