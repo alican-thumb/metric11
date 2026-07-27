@@ -1,7 +1,7 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-07-27T15:14:12.542358+00:00
-Toplam ilgili haber: 22
+Üretim zamanı: 2026-07-27T16:36:23.076696+00:00
+Toplam ilgili haber: 23
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
@@ -27,4 +27,5 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Fenerbahçe, Gornik Zabrze maçı mesaisini sürdürdü](https://www.cnnturk.com/spor/futbol/fenerbahce-gornik-zabrze-maci-mesaisini-surdurdu-3446573) — CNN Türk Spor · 2026-07-25T16:31:31+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe'de ayrılık raporu hazırlandı! 11 isim listede](https://www.takvim.com.tr/spor/fenerbahce/2026/07/24/fenerbahcede-ayrilik-raporu-hazirlandi-11-isim-listede) — Takvim Spor · 2026-07-24T09:36:33+03:00 · turnuva=— · kulüp=Fenerbahçe
 - [Başakşehir evinde Inter Turku ile 1-1 berabere kaldı! Rövanş Finlandiya'da netleşecek - A Haber](https://news.google.com/rss/articles/CBMiowFBVV95cUxOVVdLTTM4SFl6QmpLM1p1SGgyMW8xYTMyY2ZxdEVMSTVLVmw2WGw0ZzJFQ1ZDeFVFb2gtN2FaQ0JnWWR1ekNhTVREdTlXa3NDLUZnbVVPcHVJSkdTOHlPZlRTVkphaE5faDNiTUQ0N3hyRFBreG12ZkFJY1QwZVluNnJoTlZHckVnT2JFcmdVTHJ2cE5FXzNSak9HczJMWmN2NmU4?oc=5) — A Haber · 2026-07-22T19:45:03+00:00 · turnuva=— · kulüp=Başakşehir
+- [Başakşehir - Inter Turku CANLI TRT 1 İZLE || Başakşehir - Inter Turku maçı hangi kanalda, şifresiz mi, saat kaçta? UEFA Konferans Ligi - Yeni Şafak](https://news.google.com/rss/articles/CBMi_wFBVV95cUxOS2w4bWhYZGlyMjB4ekozVElRS210TmhxakNKdm5wSGc2VDVoQ3pQU2lpYjQ5RUtyRXlVaVEtWXB0SHdoQzdsQzYwRjRsNFdoZEZjc0hla3FjdmpSbmh4MlZMQVk1YXJfaDdqMjNwTmFIVFEwSnN5SjB0bWRJand6WnZxay10M25PUEFaTzhxb0E3VHpfNk9MRV9GRVRsN3pNVlNHWHJjQjMzUmV5SjYxMVBaUEFIVTlVQ1NjQUxjLTlpUTd1N0VDTXQ2R05uZGtpYVNwS3Z0dDNRMWZLejNzOTlWM3JjZ00tVkpWYm12dlZkTXJJeDZLSVZMdlJ5N0k?oc=5) — Yeni Şafak · 2026-07-22T16:45:00+00:00 · turnuva=ECL · kulüp=Başakşehir
 - [Kulübümüz, son olarak Belçika Pro Lig ekiplerinden KVC Westerlo forma giyen Emin Bayram ile 4 yıllık anlaşma sağladı.](https://ibfk.com.tr/haberler/hos-geldin-emin-bayram) — Başakşehir Resmi Web · 10.7.2026 22:54:38 · turnuva=ECL · kulüp=Başakşehir
