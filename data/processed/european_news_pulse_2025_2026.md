@@ -1,13 +1,15 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-07-28T03:35:12.848570+00:00
-Toplam ilgili haber: 21
+Üretim zamanı: 2026-07-28T05:26:57.730466+00:00
+Toplam ilgili haber: 22
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
 - [TEŞEKKÜRLER DOĞAN ALEMDAR](https://ibfk.com.tr/haberler/tesekkurler-dogan-alemdar) — Başakşehir Resmi Web · 8.7.2026 23:35:12 · turnuva=ECL · kulüp=Beşiktaş, Başakşehir
-- [Fenerbahçe, Gornik Zabrze maçının hazırlıklarını sürdürdü](https://www.sabah.com.tr/spor/futbol/2026/07/27/fenerbahce-gornik-zabrze-macinin-hazirliklarini-surdurdu) — Sabah Spor · 2026-07-27T22:10:27+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [İsmail Kartal'dan flaş Greenwood kararı! Gornik Zabrze maçında...](https://www.fotomac.com.tr/fenerbahce/2026/07/27/ismail-kartaldan-flas-greenwood-karari-gornik-zabrze-macinda) — Fotomaç · 2026-07-28T01:01:14+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe, Gornik Zabrze maçının hazırlıklarını sürdürdü](https://www.fotomac.com.tr/fenerbahce/2026/07/27/fenerbahce-gornik-zabrze-macinin-hazirliklarini-surdurdu) — Fotomaç · 2026-07-28T01:00:46+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Midtjylland’a bileniyorlar](https://www.fotomac.com.tr/besiktas/2026/07/28/midtjyllanda-bileniyorlar) — Fotomaç · 2026-07-27T22:29:55+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Gornik Zabrze - Fenerbahçe maçı ne zaman?](https://www.haberturk.com/gornik-zabrze-fenerbahce-maci-ne-zaman-saat-kacta-uefa-sampiyonlar-ligi-2-on-eleme-turu-gornik-zabrze-fenerbahce-rovans-maci-hangi-kanalda-3901227-spor) — Haberturk Spor · 2026-07-27T21:38:22+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [F.Bahçe'de Gornik Zabrze maçı mesaisi!](https://www.haberturk.com/fenerbahce-gornik-zabrze-macina-hazirlaniyor-3901476-spor) — Haberturk Spor · 2026-07-27T20:18:03+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [İlkay'dan Devler Ligi için özeleştiri!](https://www.haberturk.com/ilkay-gundogan-sampiyonlar-ligi-ndeki-deplasman-maclarinda-etkisiz-kaldik-3901465-spor) — Haberturk Spor · 2026-07-27T19:14:53+00:00 · turnuva=CL · kulüp=Galatasaray
@@ -19,7 +21,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [UEFA Şampiyonlar Ligi'nde ikinci eleme turu rövanş maçları yarın başlayacak](https://www.aa.com.tr/tr/spor/uefa-sampiyonlar-liginde-ikinci-eleme-turu-rovans-maclari-yarin-baslayacak/4010136) — Anadolu Ajansı Spor · 2026-07-27T10:19:57+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Devler Ligi'nde rövanş zamanı](https://www.haberturk.com/sampiyonlar-ligi-ikinci-eleme-turunda-rovans-zamani-3901316-spor) — Haberturk Spor · 2026-07-27T08:41:20+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [UEFA Şampiyonlar Ligi'nde ikinci eleme turu rövanş maçları başlayacak](https://www.hurriyet.com.tr/sporarena/uefa-sampiyonlar-liginde-ikinci-eleme-turu-rovans-maclari-baslayacak-43252931) — Hürriyet Spor · 2026-07-27T08:17:06+00:00 · turnuva=CL · kulüp=—
-- [Fenerbahçe, Gornik Zabrze maçı hazırlıklarını sürdürdü!](https://www.hurriyet.com.tr/sporarena/fenerbahce-gornik-zabrze-maci-hazirliklarini-surdurdu-43252586) — Hürriyet Spor · 2026-07-26T17:57:33+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Beşiktaş-Midtjylland maçının hakemi belli oldu](https://www.cnnturk.com/spor/futbol/besiktas-midtjylland-macinin-hakemi-belli-oldu-3446622) — CNN Türk Spor · 2026-07-25T23:10:03+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Fenerbahçe, Gornik Zabrze maçı mesaisini sürdürdü](https://www.cnnturk.com/spor/futbol/fenerbahce-gornik-zabrze-maci-mesaisini-surdurdu-3446573) — CNN Türk Spor · 2026-07-25T16:31:31+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe istedi Beşiktaş peşine düştü! Darwin Núñez transferi bitebilir](https://www.takvim.com.tr/spor/besiktas/2026/07/24/fenerbahce-istedi-besiktas-pesine-dustu-transfer-bitebilir) — Takvim Spor · 2026-07-24T17:52:03+03:00 · turnuva=EL · kulüp=Fenerbahçe, Beşiktaş
