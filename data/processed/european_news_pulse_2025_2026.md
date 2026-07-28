@@ -1,29 +1,38 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-07-28T19:54:04.146852+00:00
-Toplam ilgili haber: 29
+Üretim zamanı: 2026-07-28T23:16:47.589392+00:00
+Toplam ilgili haber: 37
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
-- [Nelson Semedo: Rakibimiz, kazanmayı çok isteyen bir takım görecek](https://www.aksam.com.tr/spor/nelson-semedo-rakibimiz-kazanmayi-cok-isteyen-bir-takim-gorecek/haber-1686326) — Aksam Spor · 2026-07-28T22:08:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Kanarya tur peşinde](https://www.aksam.com.tr/spor/kanarya-tur-pesinde/haber-1686347) — Aksam Spor · 2026-07-29T00:59:00+03:00 · turnuva=CL · kulüp=—
+- [İşte UEFA Şampiyonlar Ligi'nde gecenin sonuçları!](https://www.fotomac.com.tr/sampiyonlarligi/2026/07/28/iste-uefa-sampiyonlar-liginde-gecenin-sonuclari) — Fotomaç · 2026-07-29T00:58:42+03:00 · turnuva=CL · kulüp=—
+- [İşte UEFA Konferans Ligi'nde gecenin sonuçları!](https://www.fotomac.com.tr/konferans-ligi/2026/07/28/iste-uefa-konferans-liginde-gecenin-sonuclari) — Fotomaç · 2026-07-29T00:56:56+03:00 · turnuva=ECL · kulüp=—
+- [Fenerbahçe'nin muhtemel rakibi Sturm Graz oldu](https://www.cnnturk.com/spor/futbol/fenerbahcenin-muhtemel-rakibi-sturm-graz-oldu-3447782) — CNN Türk Spor · 2026-07-29T00:56:12+00:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe'nin rakibi belli oldu!](https://www.aksam.com.tr/spor/fenerbahcenin-rakibi-belli-oldu/haber-1686339) — Aksam Spor · 2026-07-28T23:45:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe'nin Devler Ligi'nde sıradaki rakibi belli oldu! Gornik Zabrze'yi geçerse...](https://www.fotomac.com.tr/fenerbahce/2026/07/28/fenerbahcenin-devler-liginde-siradaki-rakibi-belli-oldu-gornik-zabrzeyi-gecerse) — Fotomaç · 2026-07-28T23:44:44+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Sturm Graz, Hearts’ı eledi! Fenerbahçe’nin muhtemel rakibi oldu](https://www.sabah.com.tr/spor/futbol/2026/07/28/sturm-graz-heartsi-eledi-fenerbahcenin-muhtemel-rakibi-oldu) — Sabah Spor · 2026-07-28T23:40:27+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [UEFA Konferans Ligi ikinci eleme turu rövanşında 4 maç yapıldı](https://www.hurriyet.com.tr/sporarena/uefa-konferans-ligi-ikinci-eleme-turu-rovansinda-4-mac-yapildi-43254839) — Hürriyet Spor · 2026-07-28T23:00:45+00:00 · turnuva=ECL · kulüp=—
+- [UEFA Şampiyonlar Ligi ikinci eleme turu rövanşında 6 maç yapıldı](https://www.hurriyet.com.tr/sporarena/uefa-sampiyonlar-ligi-ikinci-eleme-turu-rovansinda-6-mac-yapildi-43254838) — Hürriyet Spor · 2026-07-28T22:56:00+00:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Konferans Ligi 2. eleme turu rövanşları başladı!](https://www.haberturk.com/konferans-ligi-nde-gecenin-sonuclari-3901776-spor) — Haberturk Spor · 2026-07-28T21:29:35+00:00 · turnuva=ECL · kulüp=—
+- [Gornik Zabrze - Fenerbahçe maçı ne zaman?](https://www.haberturk.com/gornik-zabrze-fenerbahce-maci-ne-zaman-saat-kacta-sampiyonlar-ligi-gornik-zabrze-fenerbahce-maci-hangi-kanalda-3901742-spor) — Haberturk Spor · 2026-07-28T21:26:26+00:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Devler Ligi'nde gecenin sonuçları!](https://www.haberturk.com/devler-ligi-nde-gecenin-sonuclari-3901775-spor) — Haberturk Spor · 2026-07-28T21:21:18+00:00 · turnuva=CL · kulüp=—
+- [F.Bahçe'nin muhtemel rakibi Sturm Graz!](https://www.haberturk.com/fenerbahce-nin-muhtemel-rakibi-sturm-graz-3901774-spor) — Haberturk Spor · 2026-07-28T21:10:54+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe'de Gornik Zabrze mesaisi tamamlandı!](https://www.sabah.com.tr/spor/futbol/2026/07/28/fenerbahcede-gornik-zabrze-mesaisi-tamamlandi) — Sabah Spor · 2026-07-28T21:08:08+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe Gornik Zabrze maçına hazır](https://www.fotomac.com.tr/fenerbahce/2026/07/28/fenerbahce-gornik-zabrze-macina-hazir) — Fotomaç · 2026-07-28T20:51:40+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Fenerbahçe, Gornik Zabrze maçına hazır](https://www.aksam.com.tr/spor/fenerbahce-gornik-zabrze-macina-hazir/haber-1686317) — Aksam Spor · 2026-07-28T20:44:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe'nin Şampiyonlar Ligi 3. eleme turundaki rakibi belli oldu!](https://www.hurriyet.com.tr/sporarena/fenerbahcenin-sampiyonlar-ligi-3-on-eleme-turundaki-rakibi-belli-oldu-43254759) — Hürriyet Spor · 2026-07-28T20:47:00+00:00 · turnuva=CL · kulüp=Fenerbahçe
+- [UEFA'dan FIFA'ya 'Dünya Kupası' tepkisi!](https://www.haberturk.com/fifa-nin-dunya-kupasini-yatirimcilara-satma-planina-uefa-dan-tepki-3901772-spor) — Haberturk Spor · 2026-07-28T20:37:53+00:00 · turnuva=— · kulüp=—
+- [UEFA'dan Infantino'ya Dünya Kupası tepkisi: FIFA'nın satabileceği bir şey değil](https://www.hurriyet.com.tr/sporarena/uefadan-infantinoya-dunya-kupasi-tepkisi-fifanin-satabilecegi-bir-sey-degil-43254743) — Hürriyet Spor · 2026-07-28T20:29:08+00:00 · turnuva=— · kulüp=—
 - [FIFA'nın "Dünya Kupası'nı yatırımcılara satma" planına UEFA'dan tepki](https://www.aa.com.tr/tr/spor/fifanin-dunya-kupasini-yatirimcilara-satma-planina-uefadan-tepki/4011888) — Anadolu Ajansı Spor · 2026-07-28T20:26:10+03:00 · turnuva=— · kulüp=—
-- [UEFA'dan FIFA'ya sert tepki! Infantino, Dünya Kupası'nı satıyor...](https://www.aksam.com.tr/spor/uefadan-fifaya-sert-tepki-infantino-dunya-kupasini-satiyor/haber-1686314) — Aksam Spor · 2026-07-28T20:06:00+03:00 · turnuva=— · kulüp=—
-- [İsmail Kartal'dan Asensio ve yabancı kuralı cevabı! "Gülüp geçiyoruz"](https://www.aksam.com.tr/spor/ismail-kartaldan-asensio-ve-yabanci-kurali-cevabi-gulup-geciyoruz/haber-1686311) — Aksam Spor · 2026-07-28T19:38:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe, Gornik Zabrze maçına hazır!](https://www.haberturk.com/fenerbahce-gornik-zabrze-macina-hazir-3901747-spor) — Haberturk Spor · 2026-07-28T19:37:29+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [İsmail Kartal'dan Asensio sorusuna flaş yanıt: Ben bunlara gülüp geçiyorum](https://www.fotomac.com.tr/fenerbahce/2026/07/28/ismail-kartaldan-asensio-sorusuna-flas-yanit-ben-bunlara-gulup-geciyorum) — Fotomaç · 2026-07-28T18:51:43+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Gornik Zabrze - Fenerbahçe maçı ne zaman?](https://www.haberturk.com/gornik-zabrze-fenerbahce-maci-ne-zaman-saat-kacta-sampiyonlar-ligi-gornik-zabrze-fenerbahce-maci-hangi-kanalda-3901742-spor) — Haberturk Spor · 2026-07-28T18:47:56+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [GÜNÜN MAÇLARI 28 TEMMUZ 2026: Bugün Kimlerin Maçlar Var? Bugünkü Maçlar Saat Kaçta, Hangi Kanalda? İşte 28 Temmuz Günün Maçları](https://www.cnnturk.com/spor/gunun-maclari-28-temmuz-2026-bugun-kimlerin-maclar-var-bugunku-maclar-saat-kacta-hangi-kanalda-iste-28-temmuz-gunun-maclari-3447652) — CNN Türk Spor · 2026-07-28T17:48:37+00:00 · turnuva=CL · kulüp=—
-- [Kartal'dan Asensio iddialarına cevap!](https://www.haberturk.com/ismail-kartal-dan-marco-asensio-iddialarina-cevap-3901739-spor) — Haberturk Spor · 2026-07-28T16:57:20+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe, Zabrze'ye geldi!](https://www.haberturk.com/fenerbahce-zabrze-ye-geldi-aziz-yildirim-takimi-yalniz-birakmadi-3901712-spor) — Haberturk Spor · 2026-07-28T15:57:39+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Beşiktaş, Midtjylland maçının hazırlıklarına devam etti](https://www.cnnturk.com/spor/futbol/besiktas-midtjylland-macinin-hazirliklarina-devam-etti-3447626) — CNN Türk Spor · 2026-07-28T15:02:53+00:00 · turnuva=EL · kulüp=Beşiktaş
-- [Beşiktaş, Midtjylland maçı hazırlıklarını sürdürdü](https://www.fotomac.com.tr/besiktas/2026/07/28/besiktas-midtjylland-maci-hazirliklarini-surdurdu) — Fotomaç · 2026-07-28T14:46:17+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Fenerbahçe'nin Gornik Zabrze maçı kamp kadrosu açıklandı! 3 eksik var](https://www.takvim.com.tr/spor/fenerbahce/2026/07/28/fenerbahcenin-gornik-zabrze-maci-kamp-kadrosu-aciklandi) — Takvim Spor · 2026-07-28T13:41:13+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe'de sakatlık şoku! Polonya'ya götürülmedi](https://www.cnnturk.com/spor/futbol/fenerbahcede-sakatlik-soku-polonyaya-goturulmedi-3447580) — CNN Türk Spor · 2026-07-28T13:07:36+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe'nin Gornik Zabrze maçı kafilesi belli oldu!](https://www.fotomac.com.tr/fenerbahce/2026/07/28/fenerbahcenin-gornik-zabrze-maci-kafilesi-belli-oldu) — Fotomaç · 2026-07-28T12:35:48+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Beşiktaş'ta Midtjylland mesaisi!](https://www.haberturk.com/besiktas-midtjylland-maci-hazirliklarini-surdurdu-3901655-spor) — Haberturk Spor · 2026-07-28T11:55:00+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Fenerbahçe'den sakatlık açıklaması! Kante ve Sidiki Cherif...](https://www.fotomac.com.tr/fenerbahce/2026/07/28/fenerbahceden-sakatlik-aciklamasi-kante-ve-sidiki-cherif) — Fotomaç · 2026-07-28T11:53:05+03:00 · turnuva=— · kulüp=Fenerbahçe
 - [Fenerbahçe'de İsmail Kartal'dan Ederson ve Asensio kararı](https://www.cnnturk.com/spor/futbol/fenerbahcede-ismail-kartaldan-ederson-ve-asensio-karari-3447462) — CNN Türk Spor · 2026-07-28T09:36:53+00:00 · turnuva=EL · kulüp=Fenerbahçe
 - [Fenerbahçe, UEFA Şampiyonlar Ligi elemelerinde tur için sahaya çıkacak](https://www.aa.com.tr/tr/spor/fenerbahce-uefa-sampiyonlar-ligi-elemelerinde-tur-icin-sahaya-cikacak/4011011) — Anadolu Ajansı Spor · 2026-07-28T09:17:07+03:00 · turnuva=CL · kulüp=Fenerbahçe
@@ -33,5 +42,4 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Fenerbahçe tur için sahaya çıkacak!](https://www.haberturk.com/fenerbahce-sampiyonlar-ligi-elemelerinde-tur-icin-sahaya-cikacak-iste-ismail-kartal-in11-i-3901528-spor) — Haberturk Spor · 2026-07-28T07:01:35+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [UEFA Konferans Ligi'nde ikinci eleme turu rövanş maçları yarın başlayacak](https://www.aa.com.tr/tr/spor/uefa-konferans-liginde-ikinci-eleme-turu-rovans-maclari-yarin-baslayacak/4010247) — Anadolu Ajansı Spor · 2026-07-27T11:52:54+03:00 · turnuva=ECL · kulüp=Başakşehir
 - [UEFA Şampiyonlar Ligi'nde ikinci eleme turu rövanş maçları yarın başlayacak](https://www.aa.com.tr/tr/spor/uefa-sampiyonlar-liginde-ikinci-eleme-turu-rovans-maclari-yarin-baslayacak/4010136) — Anadolu Ajansı Spor · 2026-07-27T10:19:57+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Fenerbahçe'de ayrılık raporu hazırlandı! 11 isim listede](https://www.takvim.com.tr/spor/fenerbahce/2026/07/24/fenerbahcede-ayrilik-raporu-hazirlandi-11-isim-listede) — Takvim Spor · 2026-07-24T09:36:33+03:00 · turnuva=— · kulüp=Fenerbahçe
 - [Kulübümüz, son olarak Belçika Pro Lig ekiplerinden KVC Westerlo forma giyen Emin Bayram ile 4 yıllık anlaşma sağladı.](https://ibfk.com.tr/haberler/hos-geldin-emin-bayram) — Başakşehir Resmi Web · 10.7.2026 22:54:38 · turnuva=ECL · kulüp=Başakşehir
