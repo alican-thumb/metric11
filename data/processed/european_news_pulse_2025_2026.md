@@ -1,19 +1,22 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-07-28T05:26:57.730466+00:00
-Toplam ilgili haber: 22
+Üretim zamanı: 2026-07-28T06:41:18.517881+00:00
+Toplam ilgili haber: 25
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
 - [TEŞEKKÜRLER DOĞAN ALEMDAR](https://ibfk.com.tr/haberler/tesekkurler-dogan-alemdar) — Başakşehir Resmi Web · 8.7.2026 23:35:12 · turnuva=ECL · kulüp=Beşiktaş, Başakşehir
+- [Fenerbahçe, UEFA Şampiyonlar Ligi elemelerinde tur için sahaya çıkacak](https://www.aa.com.tr/tr/spor/fenerbahce-uefa-sampiyonlar-ligi-elemelerinde-tur-icin-sahaya-cikacak/4011011) — Anadolu Ajansı Spor · 2026-07-28T09:17:07+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [TÜRKİYE SLOVENYA VOLEYBOL MAÇI NE ZAMAN? Filenin Efeleri Türkiye Slovenya Milletler Ligi çeyrek final maçı hangi kanalda, saat kaçta?](https://www.cnnturk.com/spor/turkiye-slovenya-maci-ne-zaman-filenin-efeleri-turkiye-slovenya-milletler-ligi-ceyrek-final-maci-hangi-kanalda-saat-kacta-3447274) — CNN Türk Spor · 2026-07-28T09:14:56+00:00 · turnuva=— · kulüp=—
+- [Bugünkü maç programı](https://www.haberturk.com/bugunku-mac-programi-28-temmuz-2026-bugun-hangi-maclar-var-saat-kacta-ve-hangi-kanalda-3901516-spor) — Haberturk Spor · 2026-07-28T05:34:12+00:00 · turnuva=CL · kulüp=—
 - [İsmail Kartal'dan flaş Greenwood kararı! Gornik Zabrze maçında...](https://www.fotomac.com.tr/fenerbahce/2026/07/27/ismail-kartaldan-flas-greenwood-karari-gornik-zabrze-macinda) — Fotomaç · 2026-07-28T01:01:14+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe, Gornik Zabrze maçının hazırlıklarını sürdürdü](https://www.fotomac.com.tr/fenerbahce/2026/07/27/fenerbahce-gornik-zabrze-macinin-hazirliklarini-surdurdu) — Fotomaç · 2026-07-28T01:00:46+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Midtjylland’a bileniyorlar](https://www.fotomac.com.tr/besiktas/2026/07/28/midtjyllanda-bileniyorlar) — Fotomaç · 2026-07-27T22:29:55+03:00 · turnuva=EL · kulüp=Beşiktaş
+- [Fenerbahçe, Gornik Zabrze maçının hazırlıklarını sürdürdü](https://www.sabah.com.tr/spor/futbol/2026/07/27/fenerbahce-gornik-zabrze-macinin-hazirliklarini-surdurdu) — Sabah Spor · 2026-07-27T22:10:27+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Gornik Zabrze - Fenerbahçe maçı ne zaman?](https://www.haberturk.com/gornik-zabrze-fenerbahce-maci-ne-zaman-saat-kacta-uefa-sampiyonlar-ligi-2-on-eleme-turu-gornik-zabrze-fenerbahce-rovans-maci-hangi-kanalda-3901227-spor) — Haberturk Spor · 2026-07-27T21:38:22+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [F.Bahçe'de Gornik Zabrze maçı mesaisi!](https://www.haberturk.com/fenerbahce-gornik-zabrze-macina-hazirlaniyor-3901476-spor) — Haberturk Spor · 2026-07-27T20:18:03+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [İlkay'dan Devler Ligi için özeleştiri!](https://www.haberturk.com/ilkay-gundogan-sampiyonlar-ligi-ndeki-deplasman-maclarinda-etkisiz-kaldik-3901465-spor) — Haberturk Spor · 2026-07-27T19:14:53+00:00 · turnuva=CL · kulüp=Galatasaray
-- [TÜRKİYE SLOVENYA MAÇI NE ZAMAN? Filenin Efeleri Türkiye Slovenya Milletler Ligi çeyrek final maçı hangi kanalda, saat kaçta?](https://www.cnnturk.com/spor/turkiye-slovenya-maci-ne-zaman-filenin-efeleri-turkiye-slovenya-milletler-ligi-ceyrek-final-maci-hangi-kanalda-saat-kacta-3447274) — CNN Türk Spor · 2026-07-27T15:51:56+00:00 · turnuva=— · kulüp=—
 - [Beşiktaş Midtjylland maçının hazırlıklarını sürdürdü](https://www.hurriyet.com.tr/sporarena/besiktas-midtjylland-macinin-hazirliklarini-surdurdu-43253354) — Hürriyet Spor · 2026-07-27T14:08:38+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [İlkay Gündoğan'dan Şampiyonlar Ligi açıklaması: 'Zayıf ve etkisiz kaldık!'](https://www.hurriyet.com.tr/sporarena/ilkay-gundogandan-sampiyonlar-ligi-aciklamasi-zayif-ve-etkisiz-kaldik-43253264) — Hürriyet Spor · 2026-07-27T13:01:00+00:00 · turnuva=CL · kulüp=Galatasaray
 - [UEFA Konferans Ligi'nde ikinci eleme turu rövanş maçları yarın başlayacak](https://www.aa.com.tr/tr/spor/uefa-konferans-liginde-ikinci-eleme-turu-rovans-maclari-yarin-baslayacak/4010247) — Anadolu Ajansı Spor · 2026-07-27T11:52:54+03:00 · turnuva=ECL · kulüp=Başakşehir
