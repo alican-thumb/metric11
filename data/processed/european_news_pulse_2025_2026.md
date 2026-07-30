@@ -1,7 +1,7 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-07-29T23:15:10.124082+00:00
-Toplam ilgili haber: 73
+Üretim zamanı: 2026-07-30T03:28:06.798216+00:00
+Toplam ilgili haber: 74
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
@@ -23,6 +23,7 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Vincenzo Italiano kadro sözleri: Son kararı yarın vereceğim](https://www.cnnturk.com/spor/futbol/vincenzo-italiano-kadro-sozleri-son-karari-yarin-verecegim-3448194) — CNN Türk Spor · 2026-07-29T23:15:27+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [MAÇ ÖZETİ | Gornik Zabrze - Fenerbahçe / Kanarya, Şampiyonlar Ligi'nde turladı](https://www.cnnturk.com/spor/futbol/live-mac-ozeti-gornik-zabrze-fenerbahce-kanarya-sampiyonlar-liginde-turladi-3448067) — CNN Türk Spor · 2026-07-29T23:08:20+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe Polonya'dan üst tur biletiyle döndü!](https://www.fotomac.com.tr/sampiyonlarligi/2026/07/29/fenerbahce-polonyadan-ust-tur-biletiyle-dondu) — Fotomaç · 2026-07-29T23:00:57+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [UEFA ülke puanı güncellendi! İşte Türkiye'nin sıralamadaki yeri - Fotomaç](https://news.google.com/rss/articles/CBMiqgFBVV95cUxQc1F2REZBVjZJSmNyZkhnNUNpSG00by00Umd5RVFLTS0xUzVkYzVXVm9oczlNTDZyX2lSY3NmVG1NVGo2S21QWTgzMHJEWDBkV1B5R0dMMFc3c0s4Mk5UelNJUGVHZ3MzZUFtZ3Nldk9XaDZRai1vaVplVHdxS2g3cHNraDYxVUQwaXVkbldnSlM0SktMMEJRa3N1SGtHOGlmNVY4eUk3c01zUdIBrwFBVV95cUxNWkVuUTNZcDFoSTlzYU96RUNkT2lpT2FEWkZhTTBUTEZvd2hKN1ByQmN0WXVscUJOZkZETldWZkdjSkZFcXR1QTgyZGR5MG51VGZXY19XbFBuSi0yV0ZWa0dpX1duM1cxTncxWHE1NmV0TkRsZUxMcG5tV1dDTG51c3ZFanZqR3FUUzRxUThxbDdRUkdkeW93RTNzdFlXUHprdFJMbHdCZ0ZBcW1SbEdR?oc=5) — Fotomaç · 2026-07-29T22:21:18+00:00 · turnuva=— · kulüp=—
 - [Fenerbahçe, UEFA Şampiyonlar Ligi'nde 3. eleme turuna yükseldi](https://www.aa.com.tr/tr/spor/fenerbahce-uefa-sampiyonlar-liginde-3-eleme-turuna-yukseldi/4013147) — Anadolu Ajansı Spor · 2026-07-29T22:10:26+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Midtjylland - Beşiktaş maçı ne zaman, saat kaçta?](https://www.haberturk.com/midtjylland-besiktas-maci-ne-zaman-saat-kacta-uefa-avrupa-ligi-2-on-eleme-turu-midtjylland-besiktas-rovans-maci-hangi-kanalda-3902005-spor) — Haberturk Spor · 2026-07-29T21:44:52+00:00 · turnuva=EL · kulüp=Beşiktaş
 - ["Çocuklar çok iyi mücadele etti"](https://www.haberturk.com/michal-gasparik-cok-gururluyum-cocuklar-cok-iyi-mucadele-etti-3902039-spor) — Haberturk Spor · 2026-07-29T21:30:58+00:00 · turnuva=CL · kulüp=Fenerbahçe
@@ -45,4 +46,3 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - ["Turu geçmeyi çok istiyoruz"](https://www.haberturk.com/vincenzo-italiano-turu-gecmeyi-cok-istiyoruz-3902007-spor) — Haberturk Spor · 2026-07-29T19:10:28+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [UEFA'dan Oğuzhan Çakır'a görev!](https://www.sabah.com.tr/spor/futbol/2026/07/29/uefadan-oguzhan-cakira-gorev-1785349311) — Sabah Spor · 2026-07-29T18:57:45+03:00 · turnuva=ECL · kulüp=—
 - ["Galibiyet için her şeyi yapacağız"](https://www.haberturk.com/salih-ozcan-galibiyet-icin-her-seyi-yapacagiz-3902014-spor) — Haberturk Spor · 2026-07-29T18:05:16+00:00 · turnuva=EL · kulüp=Beşiktaş
-- [UEFA'dan, FIFA'ya sert tepki](https://www.cnnturk.com/spor/futbol/uefadan-fifaya-sert-tepki-3448116) — CNN Türk Spor · 2026-07-29T17:46:14+00:00 · turnuva=— · kulüp=—
