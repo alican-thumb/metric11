@@ -1,7 +1,7 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-07-31T16:12:43.054295+00:00
-Toplam ilgili haber: 85
+Üretim zamanı: 2026-07-31T19:53:34.219732+00:00
+Toplam ilgili haber: 78
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
@@ -10,13 +10,13 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Kulübümüz, Almanya ekiplerinden Vfl Wolfsburg Kulübü’nün oyuncusu Andreas Skov Olsen ile 2026-2027 sezonunun sonuna dek, şarta bağlı zorunlu satın alma opsiyonlu kiralık olarak anlaşma sağladı.](https://ibfk.com.tr/haberler/hos-geldin-andreas-skov-olsen) — Başakşehir Resmi Web · 28.7.2026 20:32:26 · turnuva=ECL · kulüp=Başakşehir
 - [FENERBAHÇE STURM GRAZ MAÇI NE ZAMAN? UEFA Şampiyonlar Ligi Fenerbahçe Sturm Graz Maçı Hangi Kanalda, Saat Kaçta?](https://www.cnnturk.com/spor/futbol/fenerbahce-sturm-graz-maci-ne-zaman-uefa-sampiyonlar-ligi-fenerbahce-sturm-graz-maci-hangi-kanalda-saat-kacta-3448723) — CNN Türk Spor · 2026-07-31T17:36:21+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe'nin Sturm Graz maçı kadrosu belirlendi! Levent çıktı, Muriqi girdi...](https://www.cnnturk.com/spor/futbol/fenerbahcenin-sturm-graz-maci-kadrosu-belirlendi-levent-cikti-muriqi-girdi-3448761) — CNN Türk Spor · 2026-07-31T17:14:08+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Fenerbahçe'nin UEFA kadrosunda değişiklik](https://www.aksam.com.tr/spor/fenerbahcenin-uefa-kadrosunda-degisiklik/haber-1687059) — Aksam Spor · 2026-07-31T16:59:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Son dakika: Fenerbahçe’nin UEFA kadrosunda değişiklik! Vedat Muriqi kararı](https://www.sabah.com.tr/spor/futbol/2026/07/31/son-dakika-fenerbahcenin-uefa-kadrosunda-degisiklik-vedat-muriqi-karari) — Sabah Spor · 2026-07-31T16:58:15+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe Sturm Graz maçlarının listelerini bildirdi! Vedat Muriqi yeniden kadroda](https://www.takvim.com.tr/spor/2026/07/31/fenerbahce-sturm-graz-maclarinin-listelerini-bildirdi-ngolo-kant-kadroda-yok) — Takvim Spor · 2026-07-31T16:51:55+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [İşte Fenerbahçe'nin Sturm Graz maçları kadrosı!](https://www.fotomac.com.tr/fenerbahce/2026/07/31/fenerbahce-kadrosunu-uefaya-bildirdi) — Fotomaç · 2026-07-31T16:47:50+03:00 · turnuva=— · kulüp=Fenerbahçe
 - [Fenerbahçe'de yıldız ismi Domenico Tedesco transferde gözüne kestirdi!](https://www.fotomac.com.tr/fenerbahce/2026/07/31/fenerbahcede-yildiz-ismi-domenico-tedesco-transferde-gozune-kestirdi) — Fotomaç · 2026-07-31T16:05:44+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe'nin UEFA kadrosunda değişiklik!](https://www.haberturk.com/fenerbahce-nin-uefa-kadrosunda-degisiklik-muriqi-dahil-edildi-3902495-spor) — Haberturk Spor · 2026-07-31T14:09:38+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe'nin UEFA kadrosunda değişiklik!](https://www.hurriyet.com.tr/sporarena/fenerbahcenin-uefa-kadrosunda-degisiklik-43258207) — Hürriyet Spor · 2026-07-31T14:06:00+00:00 · turnuva=— · kulüp=Fenerbahçe
+- [Fenerbahçe UEFA'ya bildirdi! Şampiyonlar Ligi kadrosunda flaş değişiklik - NTVSpor](https://news.google.com/rss/articles/CBMiswFBVV95cUxPdW5pR0JjQi14Vy1DT2tpTmhxOVhFNllxa2VyaUVsM291bzJRSWFlVUFNcjdXNEVJV2pSS0xiYWxBX3U3NHRJdTl0TmRyX3h1SU1RaWxCMmNfX1pxb3BaSXNPNW81WXhWNEw2OGNHRmNFeE1LZTk3VFJ2clRrQlJDSHdtU2VHb1h4Zjg4cEJfMDIybkYyT21DRWdTR0xKQ012ZmJFTnFMZlpHVGQ3SDNYX0ItWdIBuAFBVV95cUxQSUh4YUNPXzNhbThUbHBsdWpRNTdxckJ6VlB2LTkzQ3pLc0pDMXB4ZTliT1YyYk9qQ1VMOGVaVHkzRVV6Yl82SDVKQlNqaE9lZlhfNDdxdHJhQ0dHdkY0N2JHQkp4NHQ5SnpKVjZMWldVczB4bmdiTU5ZRW9oQzB6WFNzNGpZeHNMT3U5Uk5UQlhsam8wNVlzaUpJNC1sQnhBb2ExNk4wWklVRnZqNWlsMGxWbDVpdU5h?oc=5) — NTVSpor · 2026-07-31T13:56:54+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe - Sturm Graz maçını Chris Kavanagh yönetecek!](https://www.takvim.com.tr/spor/fenerbahce/2026/07/31/fenerbahce-sturm-graz-macini-chris-kavanagh-yonetecek) — Takvim Spor · 2026-07-31T13:45:20+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [AFC, UEFA ve CONCACAF'ın boykot kararına katıldı](https://www.cnnturk.com/spor/futbol/afc-uefa-ve-concacafin-boykot-kararina-katildi-3448711) — CNN Türk Spor · 2026-07-31T13:04:32+00:00 · turnuva=— · kulüp=—
 - [Fenerbahçe'de Mert Günok performansıyla güven verdi! Kalede 1 numaralı aday](https://www.takvim.com.tr/spor/fenerbahce/2026/07/31/fenerbahcede-mert-gunok-performansiyla-guven-verdi-kalede-1-numarali-aday) — Takvim Spor · 2026-07-31T12:29:33+03:00 · turnuva=CL · kulüp=Fenerbahçe
@@ -30,7 +30,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Fenerbahçe'de Vedat Muriqi geri dönüyor! Sturm Graz maçında kadroda olacak](https://www.takvim.com.tr/spor/fenerbahce/2026/07/31/fenerbahcede-vedat-muriqi-geri-donuyor-o-macta-kadroda) — Takvim Spor · 2026-07-31T09:33:06+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe'ye Vedat Muriqi'den müjdeli haber!](https://www.fotomac.com.tr/fenerbahce/2026/07/31/fenerbahceye-vedat-muriqiden-mujdeli-haber) — Fotomaç · 2026-07-31T09:25:31+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [UEFA Avrupa Ligi'nde tur atlayan takımlar belli oldu](https://www.cnnturk.com/spor/futbol/uefa-avrupa-liginde-tur-atlayan-takimlar-belli-oldu-3448628) — CNN Türk Spor · 2026-07-31T09:06:10+00:00 · turnuva=EL · kulüp=—
-- [UEFA Avrupa Ligi'nde ikinci eleme turu maçları tamamlandı](https://www.fotomac.com.tr/avrupaligi/2026/07/31/uefa-avrupa-liginde-ikinci-eleme-turu-maclari-tamamlandi) — Fotomaç · 2026-07-31T08:53:28+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Spor yazarları Midtjylland-Beşiktaş maçını değerlendirdi!](https://www.fotomac.com.tr/besiktas/2026/07/31/spor-yazarlari-midtjylland-besiktas-macini-degerlendirdi) — Fotomaç · 2026-07-31T08:36:01+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Fenerbahçe - Sturm Graz maçının hakemi açıklandı!](https://www.hurriyet.com.tr/sporarena/fenerbahce-sturm-graz-macinin-hakemi-aciklandi-43257742) — Hürriyet Spor · 2026-07-31T08:28:00+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - ["Mühendis Italiano!"](https://www.haberturk.com/spor-yazarlari-besiktas-in-midtjylland-zaferini-yorumladi-muhendis-italiano-3902358-spor) — Haberturk Spor · 2026-07-31T07:17:32+00:00 · turnuva=EL · kulüp=Beşiktaş
@@ -46,3 +45,4 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [UEFA ülke puanı güncellendi! İşte Türkiye'nin sıralamadaki yeri](https://www.fotomac.com.tr/futbol/2026/07/29/uefa-ulke-puani-guncellendi-iste-turkiyenin-siralamadaki-yeri) — Fotomaç · 2026-07-31T00:03:00+03:00 · turnuva=CL · kulüp=Fenerbahçe, Beşiktaş
 - [UEFA'dan FIFA'ya flaş boykot kararı! Dünya Kupası hisseleri satılırsa...](https://www.fotomac.com.tr/futbol/2026/07/30/uefadan-fifaya-flas-boykot-karari-dunya-kupasi-hisseleri-satilirsa) — Fotomaç · 2026-07-31T00:02:52+03:00 · turnuva=— · kulüp=—
 - [Fenerbahçe'nin yıldızı için Manuel Pellegrini transferde ısrarcı!](https://www.fotomac.com.tr/fenerbahce/2026/07/30/fenerbahcenin-yildizi-icin-manuel-pellegrini-transferde-israrci) — Fotomaç · 2026-07-31T00:02:46+03:00 · turnuva=EL · kulüp=Fenerbahçe
+- [Fenerbahçe sezona rekorla başladı!](https://www.fotomac.com.tr/fenerbahce/2026/07/30/fenerbahce-sezona-rekorla-basladi) — Fotomaç · 2026-07-31T00:02:42+03:00 · turnuva=CL · kulüp=Fenerbahçe
