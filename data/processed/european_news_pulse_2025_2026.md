@@ -1,19 +1,30 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-07-31T06:57:42.045417+00:00
-Toplam ilgili haber: 96
+Üretim zamanı: 2026-07-31T09:18:37.255082+00:00
+Toplam ilgili haber: 93
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
 - [Takımımız, UEFA Konferans Ligi İkinci Eleme Turu’nda Inter Turku’ya 2-0 mağlup olarak Avrupa kupalarına veda etti.](https://ibfk.com.tr/haberler/inter-turku-2-0-basaksehir-fk) — Başakşehir Resmi Web · 30.7.2026 22:46:53 · turnuva=ECL · kulüp=Başakşehir
 - [Kulübümüz, Almanya ekiplerinden Vfl Wolfsburg Kulübü’nün oyuncusu Andreas Skov Olsen ile 2026-2027 sezonunun sonuna dek, şarta bağlı zorunlu satın alma opsiyonlu kiralık olarak anlaşma sağladı.](https://ibfk.com.tr/haberler/hos-geldin-andreas-skov-olsen) — Başakşehir Resmi Web · 28.7.2026 20:32:26 · turnuva=ECL · kulüp=Başakşehir
+- [Fenerbahçe'nin Sturm Graz ile yapacağı ilk maçı İngiliz hakem Chris Kavanagh yönetecek](https://www.aa.com.tr/tr/spor/fenerbahcenin-sturm-graz-ile-yapacagi-ilk-maci-ingiliz-hakem-chris-kavanagh-yonetecek/4014722) — Anadolu Ajansı Spor · 2026-07-31T11:53:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe - Sturm Graz maçına İngiliz hakem](https://www.cnnturk.com/spor/futbol/fenerbahce-sturm-graz-macina-ingiliz-hakem-3448692) — CNN Türk Spor · 2026-07-31T11:45:32+00:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe - Sturm Graz maçının hakemi Chris Kavanagh!](https://www.sabah.com.tr/spor/futbol/2026/07/31/fenerbahce-sturm-graz-macinin-hakemi-chris-kavanagh) — Sabah Spor · 2026-07-31T11:41:06+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe-Sturm Graz maçının hakemi belli oldu](https://www.aksam.com.tr/spor/fenerbahce-sturm-graz-macinin-hakemi-belli-oldu/haber-1686980) — Aksam Spor · 2026-07-31T11:31:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe-Sturm Graz maçını Chris Kavanagh yönetecek!](https://www.fotomac.com.tr/fenerbahce/2026/07/31/fenerbahce-sturm-graz-macini-chris-kavanagh-yonetecek) — Fotomaç · 2026-07-31T11:30:09+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [FIFA, UEFA'nın boykot kararı sonrası planını savundu](https://www.cnnturk.com/spor/futbol/fifa-uefanin-boykot-karari-sonrasi-planini-savundu-3448685) — CNN Türk Spor · 2026-07-31T11:08:01+00:00 · turnuva=— · kulüp=—
+- [Beşiktaş’ın muhtemel rakipleri belli oldu!](https://www.fotomac.com.tr/besiktas/2026/07/31/besiktasin-muhtemel-rakipleri-belli-oldu) — Fotomaç · 2026-07-31T11:01:53+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Fenerbahçe'de Vedat Muriqi geri dönüyor! Sturm Graz maçında kadroda olacak](https://www.takvim.com.tr/spor/fenerbahce/2026/07/31/fenerbahcede-vedat-muriqi-geri-donuyor-o-macta-kadroda) — Takvim Spor · 2026-07-31T09:33:06+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe'ye Vedat Muriqi'den müjdeli haber!](https://www.fotomac.com.tr/fenerbahce/2026/07/31/fenerbahceye-vedat-muriqiden-mujdeli-haber) — Fotomaç · 2026-07-31T09:25:31+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [UEFA Avrupa Ligi'nde tur atlayan takımlar belli oldu](https://www.cnnturk.com/spor/futbol/uefa-avrupa-liginde-tur-atlayan-takimlar-belli-oldu-3448628) — CNN Türk Spor · 2026-07-31T09:06:10+00:00 · turnuva=EL · kulüp=—
 - [UEFA Avrupa Ligi'nde ikinci eleme turu maçları tamamlandı](https://www.fotomac.com.tr/avrupaligi/2026/07/31/uefa-avrupa-liginde-ikinci-eleme-turu-maclari-tamamlandi) — Fotomaç · 2026-07-31T08:53:28+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [UEFA Konferans Ligi'nde ikinci eleme turu maçları sona erdi](https://www.fotomac.com.tr/konferans-ligi/2026/07/31/uefa-konferans-liginde-ikinci-eleme-turu-maclari-sona-erdi) — Fotomaç · 2026-07-31T08:51:30+03:00 · turnuva=ECL · kulüp=Başakşehir
 - [Spor yazarları Midtjylland-Beşiktaş maçını değerlendirdi!](https://www.fotomac.com.tr/besiktas/2026/07/31/spor-yazarlari-midtjylland-besiktas-macini-degerlendirdi) — Fotomaç · 2026-07-31T08:36:01+03:00 · turnuva=EL · kulüp=Beşiktaş
+- [Fenerbahçe - Sturm Graz maçının hakemi açıklandı!](https://www.hurriyet.com.tr/sporarena/fenerbahce-sturm-graz-macinin-hakemi-aciklandi-43257742) — Hürriyet Spor · 2026-07-31T08:28:00+00:00 · turnuva=CL · kulüp=Fenerbahçe
+- ["Mühendis Italiano!"](https://www.haberturk.com/spor-yazarlari-besiktas-in-midtjylland-zaferini-yorumladi-muhendis-italiano-3902358-spor) — Haberturk Spor · 2026-07-31T07:17:32+00:00 · turnuva=EL · kulüp=Beşiktaş
+- [İşte UEFA ülke puanı sıralamasında son durum!](https://www.haberturk.com/fenerbahce-ve-besiktas-turladi-basaksehir-veda-etti-uefa-ulke-puani-siralamasinda-son-durum-3902340-spor) — Haberturk Spor · 2026-07-31T06:51:54+00:00 · turnuva=CL · kulüp=Fenerbahçe, Beşiktaş, Başakşehir
+- [Beşiktaş tur atladı, Başakşehir Avrupa'ya veda etti! UEFA ülke puanı sıralaması güncellendi](https://www.hurriyet.com.tr/sporarena/besiktas-tur-atladi-basaksehir-avrupaya-veda-etti-uefa-ulke-puani-siralamasi-guncellendi-43257542) — Hürriyet Spor · 2026-07-31T06:51:00+00:00 · turnuva=EL · kulüp=Beşiktaş, Başakşehir
 - [Maç programı](https://www.haberturk.com/mac-programi-31-temmuz-hazirlik-maclari-basliyor-bu-aksam-kimin-hangi-takimin-maci-var-3902330-spor) — Haberturk Spor · 2026-07-31T06:14:40+00:00 · turnuva=CL · kulüp=Kayserispor, Rizespor
 - [Midtjylland-Beşiktaş maçı sonrası yönetime mesaj: Transferle artmalı!](https://www.hurriyet.com.tr/sporarena/midtjylland-besiktas-maci-sonrasi-yonetime-mesaj-transferle-artmali-43257448) — Hürriyet Spor · 2026-07-31T04:51:00+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [UEFA Konferans Ligi'nde ikinci eleme turu maçları sona erdi](https://www.aa.com.tr/tr/spor/uefa-konferans-liginde-ikinci-eleme-turu-maclari-sona-erdi/4014436) — Anadolu Ajansı Spor · 2026-07-31T00:45:02+03:00 · turnuva=ECL · kulüp=—
@@ -32,17 +43,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Fenerbahçe'nin Strum Graz mesaisi başladı](https://www.fotomac.com.tr/fenerbahce/2026/07/30/fenerbahcenin-strum-graz-mesaisi-basladi) — Fotomaç · 2026-07-31T00:02:10+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [UEFA Avrupa Ligi'nde ikinci eleme turu maçları tamamlandı](https://www.aa.com.tr/tr/spor/uefa-avrupa-liginde-ikinci-eleme-turu-maclari-tamamlandi/4014418) — Anadolu Ajansı Spor · 2026-07-31T00:01:06+03:00 · turnuva=EL · kulüp=—
 - [Vincenzo Italiano: Bu turu geçmek hiç kolay değildi](https://www.cnnturk.com/spor/futbol/vincenzo-italiano-bu-turu-gecmek-hic-kolay-degildi-3448605) — CNN Türk Spor · 2026-07-30T23:55:28+00:00 · turnuva=EL · kulüp=Beşiktaş
-- [CONCACAF, FIFA'nın planını kabul etmedi!](https://www.sabah.com.tr/spor/futbol/2026/07/30/concacaf-fifanin-planini-kabul-etmedi) — Sabah Spor · 2026-07-30T23:29:28+03:00 · turnuva=— · kulüp=—
 - [Nuri Şahin: Çok büyük hayal kırıklığı yaşıyoruz](https://www.cnnturk.com/spor/futbol/nuri-sahin-cok-buyuk-hayal-kirikligi-yasiyoruz-3448602) — CNN Türk Spor · 2026-07-30T23:12:17+00:00 · turnuva=ECL · kulüp=Başakşehir
 - [UEFA'dan FIFA'ya boykot! Türkiye dahil Dünya Kupası'na katılmama kararı...](https://www.cnnturk.com/spor/futbol/uefadan-fifaya-boykot-turkiye-dahil-dunya-kupasina-katilmama-karari-3448597) — CNN Türk Spor · 2026-07-30T23:00:38+00:00 · turnuva=— · kulüp=—
-- [Amir Murillo: Hedefimiz grup aşamasına kalmak!](https://www.sabah.com.tr/spor/futbol/2026/07/30/amir-murillo-hedefimiz-grup-asamasina-kalmak) — Sabah Spor · 2026-07-30T22:46:06+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Türkiye ülke puanı sıralamasında kaçıncı? İşte UEFA'daki yerimiz (2026-2027 Sezonu)](https://www.takvim.com.tr/galeri/spor/turkiye-ulke-puani-siralamasinda-kacinci-iste-uefadaki-yerimiz-2026-2027-sezonu) — Takvim Spor · 2026-07-30T22:24:28+03:00 · turnuva=CL · kulüp=Fenerbahçe, Beşiktaş, Başakşehir
-- ["İki maçta da 10 kişi oynarsanız böyle olur"](https://www.haberturk.com/mike-tullberg-iki-macta-da-10-kisi-oynarsaniz-tur-atlamaniz-neredeyse-imkansiz-hale-gelir-3902301-spor) — Haberturk Spor · 2026-07-30T22:16:35+00:00 · turnuva=EL · kulüp=Beşiktaş
-- [Konferans Ligi'nde gecenin sonuçları!](https://www.haberturk.com/uefa-konferans-ligi-nde-ikinci-eleme-turu-maclari-sona-erdi-3902300-spor) — Haberturk Spor · 2026-07-30T21:56:57+00:00 · turnuva=ECL · kulüp=—
-- [Avrupa Ligi'nde ikinci eleme turu tamamlandı!](https://www.haberturk.com/uefa-avrupa-ligi-nde-ikinci-eleme-turu-maclari-tamamlandi-3902293-spor) — Haberturk Spor · 2026-07-30T21:15:04+00:00 · turnuva=EL · kulüp=Beşiktaş
-- ["Takım arkadaşlarımla gurur duyuyorum"](https://www.haberturk.com/ridvan-yilmaz-takim-arkadaslarimla-gurur-duyuyorum-3902294-spor) — Haberturk Spor · 2026-07-30T21:14:42+00:00 · turnuva=EL · kulüp=Beşiktaş
-- ["Daha iyi olacağız"](https://www.haberturk.com/amir-murillo-daha-iyi-olacagiz-3902292-spor) — Haberturk Spor · 2026-07-30T21:02:01+00:00 · turnuva=EL · kulüp=Beşiktaş
-- [Başakşehir, Avrupa'ya veda etti](https://www.cnnturk.com/spor/futbol/basaksehir-avrupaya-veda-etti-3448581) — CNN Türk Spor · 2026-07-30T21:00:47+00:00 · turnuva=ECL · kulüp=Başakşehir
-- [Beşiktaş, UEFA Avrupa Ligi'nde 3. eleme turunda](https://www.aa.com.tr/tr/spor/besiktas-uefa-avrupa-liginde-3-eleme-turunda/4014287) — Anadolu Ajansı Spor · 2026-07-30T20:53:02+03:00 · turnuva=EL · kulüp=Beşiktaş
-- [Salih Özcan'dan Orkun'a destek!](https://www.haberturk.com/salih-ozcan-dan-orkun-kokcu-ye-destek-3902287-spor) — Haberturk Spor · 2026-07-30T20:27:28+00:00 · turnuva=EL · kulüp=Beşiktaş
-- [Vesa Vasara: 'Başakşehir planımız çok iyi işledi!'](https://www.hurriyet.com.tr/sporarena/vesa-vasara-basaksehir-planimiz-cok-iyi-isledi-43257360) — Hürriyet Spor · 2026-07-30T20:11:31+00:00 · turnuva=ECL · kulüp=Başakşehir
