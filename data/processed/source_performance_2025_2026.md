@@ -164,6 +164,7 @@
 | Goal.com | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
 | Gunebakış | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
 | Saray Medya | MEDIA | 3 | 1 | 0 | — | — | — | — | OBSERVING |
+| ntvspor.net | MEDIA | 3 | 2 | 0 | — | — | — | — | OBSERVING |
 | transfermarkt.com.tr | MEDIA | 3 | 3 | 0 | — | — | — | — | OBSERVING |
 | Anadolu'da Bugün | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Bugün Kocaeli Gazetesi | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
@@ -179,7 +180,6 @@
 | Yeni Akit Gazetesi | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Yüksekova Haber | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | mynet.com | MEDIA | 2 | 1 | 0 | — | — | — | — | OBSERVING |
-| ntvspor.net | MEDIA | 2 | 2 | 0 | — | — | — | — | OBSERVING |
 | samsunhaber.com | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | tv100 Haber | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | yenisafak.com | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
