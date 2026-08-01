@@ -1,7 +1,7 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-01T13:55:06.698719+00:00
-Toplam ilgili haber: 38
+Üretim zamanı: 2026-08-01T15:18:08.411984+00:00
+Toplam ilgili haber: 39
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
@@ -13,10 +13,13 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Sturm Graz, WSG Tirol karşısında! Maçın heyecanı canlı sohbet ile Misli'de](https://www.hurriyet.com.tr/sporarena/sturm-graz-wsg-tirol-karsisinda-macin-heyecani-canli-sohbet-ile-mislide-43258733) — Hürriyet Spor · 2026-08-01T08:43:43+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe - Sturm Graz Maçı Ne Zaman, Saat Kaçta, Hangi Kanalda? Fenerbahçe Şampiyonlar Ligi 3. Eleme Turu Maçına Çıkıyor!](https://www.cnnturk.com/spor/futbol/fenerbahce-sturm-graz-maci-ne-zaman-saat-kacta-hangi-kanalda-fenerbahce-sampiyonlar-ligi-3-eleme-turu-macina-cikiyor-3448423) — CNN Türk Spor · 2026-08-01T08:26:33+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [İnşaat sürerken 'giriş niye çamur?' diye sorulmaz!](https://www.hurriyet.com.tr/sporarena/insaat-surerken-giris-niye-camur-diye-sorulmaz-43258432) — Hürriyet Spor · 2026-08-01T04:00:00+00:00 · turnuva=— · kulüp=Fenerbahçe
+- [İşte Fenerbahçe'nin Sturm Graz maçları kadrosı!](https://www.fotomac.com.tr/fenerbahce/2026/07/31/fenerbahce-kadrosunu-uefaya-bildirdi) — Fotomaç · 2026-08-01T00:40:43+03:00 · turnuva=— · kulüp=Fenerbahçe
+- [Fenerbahçe'de yıldız ismi Domenico Tedesco transferde gözüne kestirdi!](https://www.fotomac.com.tr/fenerbahce/2026/07/31/fenerbahcede-yildiz-ismi-domenico-tedesco-transferde-gozune-kestirdi) — Fotomaç · 2026-08-01T00:40:39+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe'ye Vedat Muriqi'den müjdeli haber!](https://www.fotomac.com.tr/fenerbahce/2026/07/31/fenerbahceye-vedat-muriqiden-mujdeli-haber) — Fotomaç · 2026-08-01T00:40:12+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Galatasaray Leao'ya bir adım daha yakın! Transferde Şampiyonlar Ligi faktörü](https://www.fotomac.com.tr/galatasaray/2026/08/01/galatasaray-leaoya-bir-adim-daha-yakin-transferde-sampiyonlar-ligi-faktoru) — Fotomaç · 2026-07-31T21:45:47+03:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe
 - [FENERBAHÇE STURM GRAZ MAÇI NE ZAMAN? UEFA Şampiyonlar Ligi Fenerbahçe Sturm Graz Maçı Hangi Kanalda, Saat Kaçta?](https://www.cnnturk.com/spor/futbol/fenerbahce-sturm-graz-maci-ne-zaman-uefa-sampiyonlar-ligi-fenerbahce-sturm-graz-maci-hangi-kanalda-saat-kacta-3448723) — CNN Türk Spor · 2026-07-31T17:36:21+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe'nin Sturm Graz maçı kadrosu belirlendi! Levent çıktı, Muriqi girdi...](https://www.cnnturk.com/spor/futbol/fenerbahcenin-sturm-graz-maci-kadrosu-belirlendi-levent-cikti-muriqi-girdi-3448761) — CNN Türk Spor · 2026-07-31T17:14:08+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe Sturm Graz maçlarının listelerini bildirdi! Vedat Muriqi yeniden kadroda](https://www.takvim.com.tr/spor/2026/07/31/fenerbahce-sturm-graz-maclarinin-listelerini-bildirdi-ngolo-kant-kadroda-yok) — Takvim Spor · 2026-07-31T16:51:55+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Fenerbahçe'nin UEFA kadrosunda değişiklik!](https://www.haberturk.com/fenerbahce-nin-uefa-kadrosunda-degisiklik-muriqi-dahil-edildi-3902495-spor) — Haberturk Spor · 2026-07-31T14:09:38+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe'nin UEFA kadrosunda değişiklik!](https://www.hurriyet.com.tr/sporarena/fenerbahcenin-uefa-kadrosunda-degisiklik-43258207) — Hürriyet Spor · 2026-07-31T14:06:00+00:00 · turnuva=— · kulüp=Fenerbahçe
 - [Fenerbahçe - Sturm Graz maçını Chris Kavanagh yönetecek!](https://www.takvim.com.tr/spor/fenerbahce/2026/07/31/fenerbahce-sturm-graz-macini-chris-kavanagh-yonetecek) — Takvim Spor · 2026-07-31T13:45:20+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [AFC, UEFA ve CONCACAF'ın boykot kararına katıldı](https://www.cnnturk.com/spor/futbol/afc-uefa-ve-concacafin-boykot-kararina-katildi-3448711) — CNN Türk Spor · 2026-07-31T13:04:32+00:00 · turnuva=— · kulüp=—
@@ -33,8 +36,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [İşte UEFA ülke puanı sıralamasında son durum!](https://www.haberturk.com/fenerbahce-ve-besiktas-turladi-basaksehir-veda-etti-uefa-ulke-puani-siralamasinda-son-durum-3902340-spor) — Haberturk Spor · 2026-07-31T06:51:54+00:00 · turnuva=CL · kulüp=Fenerbahçe, Beşiktaş, Başakşehir
 - [UEFA Konferans Ligi'nde ikinci eleme turu maçları sona erdi](https://www.aa.com.tr/tr/spor/uefa-konferans-liginde-ikinci-eleme-turu-maclari-sona-erdi/4014436) — Anadolu Ajansı Spor · 2026-07-31T00:45:02+03:00 · turnuva=ECL · kulüp=—
 - [UEFA Avrupa Ligi'nde ikinci eleme turu maçları tamamlandı](https://www.aa.com.tr/tr/spor/uefa-avrupa-liginde-ikinci-eleme-turu-maclari-tamamlandi/4014418) — Anadolu Ajansı Spor · 2026-07-31T00:01:06+03:00 · turnuva=EL · kulüp=—
-- [Vincenzo Italiano: Bu turu geçmek hiç kolay değildi](https://www.cnnturk.com/spor/futbol/vincenzo-italiano-bu-turu-gecmek-hic-kolay-degildi-3448605) — CNN Türk Spor · 2026-07-30T23:55:28+00:00 · turnuva=EL · kulüp=Beşiktaş
-- [Nuri Şahin: Çok büyük hayal kırıklığı yaşıyoruz](https://www.cnnturk.com/spor/futbol/nuri-sahin-cok-buyuk-hayal-kirikligi-yasiyoruz-3448602) — CNN Türk Spor · 2026-07-30T23:12:17+00:00 · turnuva=ECL · kulüp=Başakşehir
 - [Türkiye ülke puanı sıralamasında kaçıncı? İşte UEFA'daki yerimiz (2026-2027 Sezonu)](https://www.takvim.com.tr/galeri/spor/turkiye-ulke-puani-siralamasinda-kacinci-iste-uefadaki-yerimiz-2026-2027-sezonu) — Takvim Spor · 2026-07-30T22:24:28+03:00 · turnuva=CL · kulüp=Fenerbahçe, Beşiktaş, Başakşehir
 - [Beşiktaş, UEFA Avrupa Ligi'nde 3. eleme turunda](https://www.aa.com.tr/tr/spor/besiktas-uefa-avrupa-liginde-3-eleme-turunda/4014287) — Anadolu Ajansı Spor · 2026-07-30T20:53:02+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Başakşehir, Avrupa kupalarına veda etti](https://www.aa.com.tr/tr/spor/basaksehir-avrupa-kupalarina-veda-etti/4014243) — Anadolu Ajansı Spor · 2026-07-30T19:57:41+03:00 · turnuva=ECL · kulüp=Başakşehir
