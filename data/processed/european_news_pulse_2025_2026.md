@@ -1,7 +1,7 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-01T05:38:34.563023+00:00
-Toplam ilgili haber: 74
+Üretim zamanı: 2026-08-01T06:42:28.124279+00:00
+Toplam ilgili haber: 70
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
@@ -21,11 +21,9 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Galatasaray Leao'ya bir adım daha yakın! Transferde Şampiyonlar Ligi faktörü](https://www.fotomac.com.tr/galatasaray/2026/08/01/galatasaray-leaoya-bir-adim-daha-yakin-transferde-sampiyonlar-ligi-faktoru) — Fotomaç · 2026-07-31T21:45:47+03:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe
 - [FENERBAHÇE STURM GRAZ MAÇI NE ZAMAN? UEFA Şampiyonlar Ligi Fenerbahçe Sturm Graz Maçı Hangi Kanalda, Saat Kaçta?](https://www.cnnturk.com/spor/futbol/fenerbahce-sturm-graz-maci-ne-zaman-uefa-sampiyonlar-ligi-fenerbahce-sturm-graz-maci-hangi-kanalda-saat-kacta-3448723) — CNN Türk Spor · 2026-07-31T17:36:21+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe'nin Sturm Graz maçı kadrosu belirlendi! Levent çıktı, Muriqi girdi...](https://www.cnnturk.com/spor/futbol/fenerbahcenin-sturm-graz-maci-kadrosu-belirlendi-levent-cikti-muriqi-girdi-3448761) — CNN Türk Spor · 2026-07-31T17:14:08+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Son dakika: Fenerbahçe’nin UEFA kadrosunda değişiklik! Vedat Muriqi kararı](https://www.sabah.com.tr/spor/futbol/2026/07/31/son-dakika-fenerbahcenin-uefa-kadrosunda-degisiklik-vedat-muriqi-karari) — Sabah Spor · 2026-07-31T16:58:15+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe Sturm Graz maçlarının listelerini bildirdi! Vedat Muriqi yeniden kadroda](https://www.takvim.com.tr/spor/2026/07/31/fenerbahce-sturm-graz-maclarinin-listelerini-bildirdi-ngolo-kant-kadroda-yok) — Takvim Spor · 2026-07-31T16:51:55+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe'nin UEFA kadrosunda değişiklik!](https://www.haberturk.com/fenerbahce-nin-uefa-kadrosunda-degisiklik-muriqi-dahil-edildi-3902495-spor) — Haberturk Spor · 2026-07-31T14:09:38+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe'nin UEFA kadrosunda değişiklik!](https://www.hurriyet.com.tr/sporarena/fenerbahcenin-uefa-kadrosunda-degisiklik-43258207) — Hürriyet Spor · 2026-07-31T14:06:00+00:00 · turnuva=— · kulüp=Fenerbahçe
-- [Fenerbahçe UEFA'ya bildirdi! Şampiyonlar Ligi kadrosunda flaş değişiklik - NTVSpor](https://news.google.com/rss/articles/CBMiswFBVV95cUxPdW5pR0JjQi14Vy1DT2tpTmhxOVhFNllxa2VyaUVsM291bzJRSWFlVUFNcjdXNEVJV2pSS0xiYWxBX3U3NHRJdTl0TmRyX3h1SU1RaWxCMmNfX1pxb3BaSXNPNW81WXhWNEw2OGNHRmNFeE1LZTk3VFJ2clRrQlJDSHdtU2VHb1h4Zjg4cEJfMDIybkYyT21DRWdTR0xKQ012ZmJFTnFMZlpHVGQ3SDNYX0ItWdIBuAFBVV95cUxQSUh4YUNPXzNhbThUbHBsdWpRNTdxckJ6VlB2LTkzQ3pLc0pDMXB4ZTliT1YyYk9qQ1VMOGVaVHkzRVV6Yl82SDVKQlNqaE9lZlhfNDdxdHJhQ0dHdkY0N2JHQkp4NHQ5SnpKVjZMWldVczB4bmdiTU5ZRW9oQzB6WFNzNGpZeHNMT3U5Uk5UQlhsam8wNVlzaUpJNC1sQnhBb2ExNk4wWklVRnZqNWlsMGxWbDVpdU5h?oc=5) — NTVSpor · 2026-07-31T13:56:54+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe - Sturm Graz maçını Chris Kavanagh yönetecek!](https://www.takvim.com.tr/spor/fenerbahce/2026/07/31/fenerbahce-sturm-graz-macini-chris-kavanagh-yonetecek) — Takvim Spor · 2026-07-31T13:45:20+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [AFC, UEFA ve CONCACAF'ın boykot kararına katıldı](https://www.cnnturk.com/spor/futbol/afc-uefa-ve-concacafin-boykot-kararina-katildi-3448711) — CNN Türk Spor · 2026-07-31T13:04:32+00:00 · turnuva=— · kulüp=—
 - [Fenerbahçe'de Mert Günok performansıyla güven verdi! Kalede 1 numaralı aday](https://www.takvim.com.tr/spor/fenerbahce/2026/07/31/fenerbahcede-mert-gunok-performansiyla-guven-verdi-kalede-1-numarali-aday) — Takvim Spor · 2026-07-31T12:29:33+03:00 · turnuva=CL · kulüp=Fenerbahçe
@@ -46,3 +44,5 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [UEFA Avrupa Ligi'nde ikinci eleme turu maçları tamamlandı](https://www.aa.com.tr/tr/spor/uefa-avrupa-liginde-ikinci-eleme-turu-maclari-tamamlandi/4014418) — Anadolu Ajansı Spor · 2026-07-31T00:01:06+03:00 · turnuva=EL · kulüp=—
 - [Vincenzo Italiano: Bu turu geçmek hiç kolay değildi](https://www.cnnturk.com/spor/futbol/vincenzo-italiano-bu-turu-gecmek-hic-kolay-degildi-3448605) — CNN Türk Spor · 2026-07-30T23:55:28+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Nuri Şahin: Çok büyük hayal kırıklığı yaşıyoruz](https://www.cnnturk.com/spor/futbol/nuri-sahin-cok-buyuk-hayal-kirikligi-yasiyoruz-3448602) — CNN Türk Spor · 2026-07-30T23:12:17+00:00 · turnuva=ECL · kulüp=Başakşehir
+- [UEFA'dan FIFA'ya boykot! Türkiye dahil Dünya Kupası'na katılmama kararı...](https://www.cnnturk.com/spor/futbol/uefadan-fifaya-boykot-turkiye-dahil-dunya-kupasina-katilmama-karari-3448597) — CNN Türk Spor · 2026-07-30T23:00:38+00:00 · turnuva=— · kulüp=—
+- [Türkiye ülke puanı sıralamasında kaçıncı? İşte UEFA'daki yerimiz (2026-2027 Sezonu)](https://www.takvim.com.tr/galeri/spor/turkiye-ulke-puani-siralamasinda-kacinci-iste-uefadaki-yerimiz-2026-2027-sezonu) — Takvim Spor · 2026-07-30T22:24:28+03:00 · turnuva=CL · kulüp=Fenerbahçe, Beşiktaş, Başakşehir
