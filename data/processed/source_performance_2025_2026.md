@@ -4,7 +4,7 @@
 - Resmi olaya dönüşen transfer: 7
 - Yayın zamanı bulunan resmi teyit: 2/7
 - İlk görülme zamanı bulunan resmi teyit: 7/7
-- Ölçülen kaynak: 105 / gözlenen kaynak: 193
+- Ölçülen kaynak: 105 / gözlenen kaynak: 195
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 0
 - X verisi bekleyen izlenen kaynak: 20
@@ -165,6 +165,7 @@
 | Goal.com | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
 | Gunebakış | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
 | Saray Medya | MEDIA | 3 | 1 | 0 | — | — | — | — | OBSERVING |
+| mynet.com | MEDIA | 3 | 1 | 0 | — | — | — | — | OBSERVING |
 | transfermarkt.com.tr | MEDIA | 3 | 3 | 0 | — | — | — | — | OBSERVING |
 | Anadolu'da Bugün | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Bugün Kocaeli Gazetesi | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
@@ -180,7 +181,7 @@
 | Samsun Gazetesi | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Yeni Akit Gazetesi | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Yüksekova Haber | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
-| mynet.com | MEDIA | 2 | 1 | 0 | — | — | — | — | OBSERVING |
+| aspor.com.tr | MEDIA | 2 | 1 | 0 | — | — | — | — | OBSERVING |
 | ntvspor.net | MEDIA | 2 | 2 | 0 | — | — | — | — | OBSERVING |
 | sabah.com.tr | MEDIA | 2 | 1 | 0 | — | — | — | — | OBSERVING |
 | samsunhaber.com | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
@@ -232,6 +233,7 @@
 | cumhuriyet.com.tr | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | ensonhaber.com | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | gunebakis.com.tr | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
+| haberturk.com | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | milliyet.com.tr | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | politikam.com | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | sozcu.com.tr | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
