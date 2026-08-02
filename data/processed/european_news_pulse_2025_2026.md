@@ -1,13 +1,14 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-02T13:54:56.918287+00:00
-Toplam ilgili haber: 27
+Üretim zamanı: 2026-08-02T15:20:11.416189+00:00
+Toplam ilgili haber: 26
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
 - [Takımımız, UEFA Konferans Ligi İkinci Eleme Turu’nda Inter Turku’ya 2-0 mağlup olarak Avrupa kupalarına veda etti.](https://ibfk.com.tr/haberler/inter-turku-2-0-basaksehir-fk) — Başakşehir Resmi Web · 30.7.2026 22:46:53 · turnuva=ECL · kulüp=Başakşehir
 - [Kulübümüz, Almanya ekiplerinden Vfl Wolfsburg Kulübü’nün oyuncusu Andreas Skov Olsen ile 2026-2027 sezonunun sonuna dek, şarta bağlı zorunlu satın alma opsiyonlu kiralık olarak anlaşma sağladı.](https://ibfk.com.tr/haberler/hos-geldin-andreas-skov-olsen) — Başakşehir Resmi Web · 28.7.2026 20:32:26 · turnuva=ECL · kulüp=Başakşehir
+- [FENERBAHÇE STURM GRAZ MAÇI HANGİ KANALDA? Fenerbahçe Sturm Graz maçı nereden ve nasıl izlenir?](https://www.cnnturk.com/spor/fenerbahce-sturm-graz-maci-hangi-kanalda-fenerbahce-sturm-graz-maci-nereden-ve-nasil-izlenir-3449458) — CNN Türk Spor · 2026-08-02T18:00:28+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Pendikspor'dan transfer yasağıyla ilgili açıklama](https://www.sabah.com.tr/spor/futbol/2026/08/02/pendikspordan-transfer-yasagiyla-ilgili-aciklama) — Sabah Spor · 2026-08-02T16:36:03+03:00 · turnuva=— · kulüp=—
 - [Beşiktaş'ta Hradec Kralove mesaisi başladı](https://www.aksam.com.tr/spor/besiktasta-hradec-kralove-mesaisi-basladi/haber-1687474) — Aksam Spor · 2026-08-02T16:17:00+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş'ta hazırlıklar başladı!](https://www.fotomac.com.tr/besiktas/2026/08/02/besiktasta-hazirliklar-basladi) — Fotomaç · 2026-08-02T15:32:45+03:00 · turnuva=EL · kulüp=Beşiktaş
@@ -31,5 +32,3 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Fenerbahçe'de Vedat Muriqi geri dönüyor! Sturm Graz maçında kadroda olacak](https://www.takvim.com.tr/spor/fenerbahce/2026/07/31/fenerbahcede-vedat-muriqi-geri-donuyor-o-macta-kadroda) — Takvim Spor · 2026-07-31T09:33:06+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [UEFA Konferans Ligi'nde ikinci eleme turu maçları sona erdi](https://www.aa.com.tr/tr/spor/uefa-konferans-liginde-ikinci-eleme-turu-maclari-sona-erdi/4014436) — Anadolu Ajansı Spor · 2026-07-31T00:45:02+03:00 · turnuva=ECL · kulüp=—
 - [UEFA Avrupa Ligi'nde ikinci eleme turu maçları tamamlandı](https://www.aa.com.tr/tr/spor/uefa-avrupa-liginde-ikinci-eleme-turu-maclari-tamamlandi/4014418) — Anadolu Ajansı Spor · 2026-07-31T00:01:06+03:00 · turnuva=EL · kulüp=—
-- [Beşiktaş, UEFA Avrupa Ligi'nde 3. eleme turunda](https://www.aa.com.tr/tr/spor/besiktas-uefa-avrupa-liginde-3-eleme-turunda/4014287) — Anadolu Ajansı Spor · 2026-07-30T20:53:02+03:00 · turnuva=EL · kulüp=Beşiktaş
-- [Başakşehir, Avrupa kupalarına veda etti](https://www.aa.com.tr/tr/spor/basaksehir-avrupa-kupalarina-veda-etti/4014243) — Anadolu Ajansı Spor · 2026-07-30T19:57:41+03:00 · turnuva=ECL · kulüp=Başakşehir
