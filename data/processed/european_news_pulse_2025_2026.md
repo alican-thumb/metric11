@@ -1,7 +1,7 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-02T06:47:16.072806+00:00
-Toplam ilgili haber: 36
+Üretim zamanı: 2026-08-02T08:38:58.538136+00:00
+Toplam ilgili haber: 33
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
@@ -25,13 +25,10 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [FENERBAHÇE STURM GRAZ MAÇI NE ZAMAN? UEFA Şampiyonlar Ligi Fenerbahçe Sturm Graz Maçı Hangi Kanalda, Saat Kaçta?](https://www.cnnturk.com/spor/futbol/fenerbahce-sturm-graz-maci-ne-zaman-uefa-sampiyonlar-ligi-fenerbahce-sturm-graz-maci-hangi-kanalda-saat-kacta-3448723) — CNN Türk Spor · 2026-07-31T17:36:21+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe'nin Sturm Graz maçı kadrosu belirlendi! Levent çıktı, Muriqi girdi...](https://www.cnnturk.com/spor/futbol/fenerbahcenin-sturm-graz-maci-kadrosu-belirlendi-levent-cikti-muriqi-girdi-3448761) — CNN Türk Spor · 2026-07-31T17:14:08+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe Sturm Graz maçlarının listelerini bildirdi! Vedat Muriqi yeniden kadroda](https://www.takvim.com.tr/spor/2026/07/31/fenerbahce-sturm-graz-maclarinin-listelerini-bildirdi-ngolo-kant-kadroda-yok) — Takvim Spor · 2026-07-31T16:51:55+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Fenerbahçe'nin UEFA kadrosunda değişiklik!](https://www.hurriyet.com.tr/sporarena/fenerbahcenin-uefa-kadrosunda-degisiklik-43258207) — Hürriyet Spor · 2026-07-31T14:06:00+00:00 · turnuva=— · kulüp=Fenerbahçe
 - [Fenerbahçe - Sturm Graz maçını Chris Kavanagh yönetecek!](https://www.takvim.com.tr/spor/fenerbahce/2026/07/31/fenerbahce-sturm-graz-macini-chris-kavanagh-yonetecek) — Takvim Spor · 2026-07-31T13:45:20+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [AFC, UEFA ve CONCACAF'ın boykot kararına katıldı](https://www.cnnturk.com/spor/futbol/afc-uefa-ve-concacafin-boykot-kararina-katildi-3448711) — CNN Türk Spor · 2026-07-31T13:04:32+00:00 · turnuva=— · kulüp=—
 - [Fenerbahçe'de Mert Günok performansıyla güven verdi! Kalede 1 numaralı aday](https://www.takvim.com.tr/spor/fenerbahce/2026/07/31/fenerbahcede-mert-gunok-performansiyla-guven-verdi-kalede-1-numarali-aday) — Takvim Spor · 2026-07-31T12:29:33+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe'nin Sturm Graz ile yapacağı ilk maçı İngiliz hakem Chris Kavanagh yönetecek](https://www.aa.com.tr/tr/spor/fenerbahcenin-sturm-graz-ile-yapacagi-ilk-maci-ingiliz-hakem-chris-kavanagh-yonetecek/4014722) — Anadolu Ajansı Spor · 2026-07-31T11:53:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe'de Vedat Muriqi geri dönüyor! Sturm Graz maçında kadroda olacak](https://www.takvim.com.tr/spor/fenerbahce/2026/07/31/fenerbahcede-vedat-muriqi-geri-donuyor-o-macta-kadroda) — Takvim Spor · 2026-07-31T09:33:06+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- ["Mühendis Italiano!"](https://www.haberturk.com/spor-yazarlari-besiktas-in-midtjylland-zaferini-yorumladi-muhendis-italiano-3902358-spor) — Haberturk Spor · 2026-07-31T07:17:32+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [İşte UEFA ülke puanı sıralamasında son durum!](https://www.haberturk.com/fenerbahce-ve-besiktas-turladi-basaksehir-veda-etti-uefa-ulke-puani-siralamasinda-son-durum-3902340-spor) — Haberturk Spor · 2026-07-31T06:51:54+00:00 · turnuva=CL · kulüp=Fenerbahçe, Beşiktaş, Başakşehir
 - [UEFA Konferans Ligi'nde ikinci eleme turu maçları sona erdi](https://www.aa.com.tr/tr/spor/uefa-konferans-liginde-ikinci-eleme-turu-maclari-sona-erdi/4014436) — Anadolu Ajansı Spor · 2026-07-31T00:45:02+03:00 · turnuva=ECL · kulüp=—
 - [UEFA Avrupa Ligi'nde ikinci eleme turu maçları tamamlandı](https://www.aa.com.tr/tr/spor/uefa-avrupa-liginde-ikinci-eleme-turu-maclari-tamamlandi/4014418) — Anadolu Ajansı Spor · 2026-07-31T00:01:06+03:00 · turnuva=EL · kulüp=—
