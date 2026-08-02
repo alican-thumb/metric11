@@ -1,6 +1,6 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-01T23:11:38.096101+00:00
+Üretim zamanı: 2026-08-02T03:53:23.838861+00:00
 Toplam ilgili haber: 38
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
@@ -43,4 +43,4 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [UEFA'dan "Dünya Kupası'nı satma planı" nedeniyle FIFA'yı boykot etme kararı](https://www.aa.com.tr/tr/spor/uefadan-dunya-kupasini-satma-plani-nedeniyle-fifayi-boykot-etme-karari/4014213) — Anadolu Ajansı Spor · 2026-07-30T19:23:13+03:00 · turnuva=— · kulüp=—
 - [Finlandiya'da Avrupa'ya veda! Başakşehir Inter Turku'ya elendi](https://www.takvim.com.tr/spor/superlig/2026/07/30/finlandiyada-avrupaya-veda-basaksehir-inter-turkuya-elendi) — Takvim Spor · 2026-07-30T18:52:37+03:00 · turnuva=ECL · kulüp=Başakşehir
 - [Kartal Danimarka'da uçtu! Beşiktaş FC Midtjylland'ı 2-0 yendi](https://www.takvim.com.tr/spor/besiktas/2026/07/30/kartal-danimarkada-uctu-besiktas-fc-midtjyllandi-2-0-yendi) — Takvim Spor · 2026-07-30T18:46:58+03:00 · turnuva=EL · kulüp=Beşiktaş
-- [UEFA ülke puanı güncellendi! İşte Türkiye'nin sıralamadaki yeri - Fotomaç](https://news.google.com/rss/articles/CBMiqgFBVV95cUxQc1F2REZBVjZJSmNyZkhnNUNpSG00by00Umd5RVFLTS0xUzVkYzVXVm9oczlNTDZyX2lSY3NmVG1NVGo2S21QWTgzMHJEWDBkV1B5R0dMMFc3c0s4Mk5UelNJUGVHZ3MzZUFtZ3Nldk9XaDZRai1vaVplVHdxS2g3cHNraDYxVUQwaXVkbldnSlM0SktMMEJRa3N1SGtHOGlmNVY4eUk3c01zUdIBrwFBVV95cUxNWkVuUTNZcDFoSTlzYU96RUNkT2lpT2FEWkZhTTBUTEZvd2hKN1ByQmN0WXVscUJOZkZETldWZkdjSkZFcXR1QTgyZGR5MG51VGZXY19XbFBuSi0yV0ZWa0dpX1duM1cxTncxWHE1NmV0TkRsZUxMcG5tV1dDTG51c3ZFanZqR3FUUzRxUThxbDdRUkdkeW93RTNzdFlXUHprdFJMbHdCZ0ZBcW1SbEdR?oc=5) — Fotomaç · 2026-07-29T22:21:18+00:00 · turnuva=— · kulüp=—
+- [UEFA ülke puanı güncellendi! İşte Türkiye'nin sıralamadaki yeri - fotomac.com.tr](https://news.google.com/rss/articles/CBMiqgFBVV95cUxQc1F2REZBVjZJSmNyZkhnNUNpSG00by00Umd5RVFLTS0xUzVkYzVXVm9oczlNTDZyX2lSY3NmVG1NVGo2S21QWTgzMHJEWDBkV1B5R0dMMFc3c0s4Mk5UelNJUGVHZ3MzZUFtZ3Nldk9XaDZRai1vaVplVHdxS2g3cHNraDYxVUQwaXVkbldnSlM0SktMMEJRa3N1SGtHOGlmNVY4eUk3c01zUdIBrwFBVV95cUxNWkVuUTNZcDFoSTlzYU96RUNkT2lpT2FEWkZhTTBUTEZvd2hKN1ByQmN0WXVscUJOZkZETldWZkdjSkZFcXR1QTgyZGR5MG51VGZXY19XbFBuSi0yV0ZWa0dpX1duM1cxTncxWHE1NmV0TkRsZUxMcG5tV1dDTG51c3ZFanZqR3FUUzRxUThxbDdRUkdkeW93RTNzdFlXUHprdFJMbHdCZ0ZBcW1SbEdR?oc=5) — fotomac.com.tr · 2026-07-29T22:21:18+00:00 · turnuva=— · kulüp=—
