@@ -1,13 +1,17 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-03T05:54:58.174800+00:00
-Toplam ilgili haber: 11
+Üretim zamanı: 2026-08-03T07:13:35.281585+00:00
+Toplam ilgili haber: 15
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
 - [Takımımız, UEFA Konferans Ligi İkinci Eleme Turu’nda Inter Turku’ya 2-0 mağlup olarak Avrupa kupalarına veda etti.](https://ibfk.com.tr/haberler/inter-turku-2-0-basaksehir-fk) — Başakşehir Resmi Web · 30.7.2026 22:46:53 · turnuva=ECL · kulüp=Başakşehir
 - [Kulübümüz, Almanya ekiplerinden Vfl Wolfsburg Kulübü’nün oyuncusu Andreas Skov Olsen ile 2026-2027 sezonunun sonuna dek, şarta bağlı zorunlu satın alma opsiyonlu kiralık olarak anlaşma sağladı.](https://ibfk.com.tr/haberler/hos-geldin-andreas-skov-olsen) — Başakşehir Resmi Web · 28.7.2026 20:32:26 · turnuva=ECL · kulüp=Başakşehir
+- [Şampiyonlar Ligi'nde 3. eleme turu ilk maçları oynanacak](https://www.aksam.com.tr/spor/sampiyonlar-liginde-3-eleme-turu-ilk-maclari-oynanacak/haber-1687605) — Aksam Spor · 2026-08-03T10:03:00+03:00 · turnuva=CL · kulüp=—
+- [UEFA Şampiyonlar Ligi'nde 3. eleme turu ilk maçları başlayacak](https://www.sabah.com.tr/spor/futbol/2026/08/03/uefa-sampiyonlar-liginde-3-eleme-turu-ilk-maclari-baslayacak) — Sabah Spor · 2026-08-03T09:58:38+03:00 · turnuva=CL · kulüp=—
+- [Avrupa'da kura günü! Fenerbahçe, Beşiktaş ve Trabzonspor'un rakipleri belli oluyor](https://www.aksam.com.tr/spor/avrupada-kura-gunu-fenerbahce-besiktas-ve-trabzonsporun-rakipleri-belli-oluyor/haber-1687601) — Aksam Spor · 2026-08-03T09:56:00+03:00 · turnuva=CL · kulüp=Fenerbahçe, Beşiktaş, Trabzonspor
+- [UEFA Şampiyonlar Ligi'nde 3. eleme turu ilk maçları yarın başlayacak](https://www.aa.com.tr/tr/spor/uefa-sampiyonlar-liginde-3-eleme-turu-ilk-maclari-yarin-baslayacak/4016653) — Anadolu Ajansı Spor · 2026-08-03T09:48:12+03:00 · turnuva=CL · kulüp=—
 - [FENERBAHÇE STURM GRAZ MAÇI HANGİ KANALDA? Fenerbahçe Sturm Graz maçı nereden ve nasıl izlenir?](https://www.cnnturk.com/spor/fenerbahce-sturm-graz-maci-hangi-kanalda-fenerbahce-sturm-graz-maci-nereden-ve-nasil-izlenir-3449458) — CNN Türk Spor · 2026-08-02T18:00:28+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Beşiktaş'ta, Hradec Kralove mesaisi başladı](https://www.cnnturk.com/spor/futbol/besiktasta-hradec-kralove-mesaisi-basladi-3449359) — CNN Türk Spor · 2026-08-02T15:04:26+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş'ta Hradec Kralove maçı hazırlıkları!](https://www.haberturk.com/besiktas-hradec-kralove-macinin-hazirliklarina-basladi-3902794-spor) — Haberturk Spor · 2026-08-02T12:07:16+00:00 · turnuva=EL · kulüp=Beşiktaş
