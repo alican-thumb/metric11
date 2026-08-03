@@ -1,7 +1,7 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-03T15:16:54.452506+00:00
-Toplam ilgili haber: 50
+Üretim zamanı: 2026-08-03T16:41:44.395534+00:00
+Toplam ilgili haber: 46
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
@@ -9,7 +9,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Takımımız, UEFA Konferans Ligi İkinci Eleme Turu’nda Inter Turku’ya 2-0 mağlup olarak Avrupa kupalarına veda etti.](https://ibfk.com.tr/haberler/inter-turku-2-0-basaksehir-fk) — Başakşehir Resmi Web · 30.7.2026 22:46:53 · turnuva=ECL · kulüp=Başakşehir
 - [Kulübümüz, Almanya ekiplerinden Vfl Wolfsburg Kulübü’nün oyuncusu Andreas Skov Olsen ile 2026-2027 sezonunun sonuna dek, şarta bağlı zorunlu satın alma opsiyonlu kiralık olarak anlaşma sağladı.](https://ibfk.com.tr/haberler/hos-geldin-andreas-skov-olsen) — Başakşehir Resmi Web · 28.7.2026 20:32:26 · turnuva=ECL · kulüp=Başakşehir
 - [UEFA Konferans Ligi'nde play-off eşleşmeleri belli oldu](https://www.fotomac.com.tr/konferans-ligi/2026/08/03/uefa-konferans-liginde-play-off-eslesmeleri-belli-oldu) — Fotomaç · 2026-08-03T16:15:34+03:00 · turnuva=EL · kulüp=Beşiktaş
-- [Beşiktaş'ta Leandro Trossard ilk antrenmanına çıktı](https://www.sabah.com.tr/spor/futbol/2026/08/03/besiktasta-leandro-trossard-ilk-antrenmanina-cikti) — Sabah Spor · 2026-08-03T15:31:33+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [SON DAKİKA | Trabzonspor ve Beşiktaş'ın Avrupa Ligi'nde rakipleri belli oldu](https://www.cnnturk.com/spor/son-dakika-trabzonspor-ve-besiktasin-avrupa-liginde-rakipleri-belli-oluyor-3449788) — CNN Türk Spor · 2026-08-03T15:21:47+00:00 · turnuva=EL · kulüp=Beşiktaş, Trabzonspor
 - [Son dakika... Fenerbahçe'nin Şampiyonlar Ligi play-off turundaki muhtemel rakipleri belli oldu](https://www.cnnturk.com/spor/futbol/son-dakika-fenerbahcenin-sampiyonlar-ligi-play-off-turundaki-muhtemel-rakipleri-belli-oldu-3449751) — CNN Türk Spor · 2026-08-03T15:21:13+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Beşiktaş'ta Leandro Trossard ilk antrenmanına çıktı](https://www.fotomac.com.tr/besiktas/2026/08/03/besiktasta-leandro-trossard-ilk-antrenmanina-cikti) — Fotomaç · 2026-08-03T15:11:48+03:00 · turnuva=EL · kulüp=Beşiktaş
@@ -32,12 +31,10 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [A Milli Futbol Takımı'nın Belçika ve Fransa maçlarını oynayacağı statlar açıklandı](https://www.aa.com.tr/tr/spor/a-milli-futbol-takiminin-belcika-ve-fransa-maclarini-oynayacagi-statlar-aciklandi/4016873) — Anadolu Ajansı Spor · 2026-08-03T12:25:26+03:00 · turnuva=— · kulüp=—
 - [Trossard sahaya indi!](https://www.haberturk.com/besiktas-ta-trossard-ilk-antrenmanina-cikti-3903020-spor) — Haberturk Spor · 2026-08-03T11:53:54+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [UEFA Konferans Ligi'nde 3. eleme turu ilk maçları yarın başlayacak](https://www.aa.com.tr/tr/spor/uefa-konferans-liginde-3-eleme-turu-ilk-maclari-yarin-baslayacak/4016833) — Anadolu Ajansı Spor · 2026-08-03T11:48:15+03:00 · turnuva=ECL · kulüp=—
-- [UEFA Konferans Ligi'nde 3. eleme turu ilk maçları oynanacak](https://www.sabah.com.tr/spor/futbol/2026/08/03/uefa-konferans-liginde-3-eleme-turu-ilk-maclari-oynanacak) — Sabah Spor · 2026-08-03T11:42:54+03:00 · turnuva=ECL · kulüp=—
 - [İşte Avrupa Ligi'nde play-off yolu!](https://www.haberturk.com/iste-avrupa-ligi-nde-play-off-yolu-3903010-spor) — Haberturk Spor · 2026-08-03T11:38:42+00:00 · turnuva=EL · kulüp=—
 - [Devler Ligi'nde play-off kuraları çekildi](https://www.haberturk.com/sampiyonlar-ligi-nde-play-off-kuralari-cekildi-3903008-spor) — Haberturk Spor · 2026-08-03T11:33:06+00:00 · turnuva=CL · kulüp=—
 - [Trabzonspor'un muhtemel rakipleri belli oldu!](https://www.haberturk.com/son-dakika-trabzonspor-un-uefa-avrupa-ligi-ndeki-muhtemel-rakipleri-belli-oldu-3902967-spor) — Haberturk Spor · 2026-08-03T11:25:27+00:00 · turnuva=EL · kulüp=Trabzonspor
 - [Galatasaray Kulübü, RAMS Park'ın kapasitesini artırmayı planlıyor](https://www.aa.com.tr/tr/spor/galatasaray-kulubu-rams-parkin-kapasitesini-artirmayi-planliyor/4016769) — Anadolu Ajansı Spor · 2026-08-03T11:05:26+03:00 · turnuva=— · kulüp=Galatasaray
-- [UEFA Avrupa Ligi'nde üçüncü eleme turu heyecanı başlıyor](https://www.sabah.com.tr/spor/futbol/2026/08/03/uefa-avrupa-liginde-ucuncu-eleme-turu-heyecani-basliyor) — Sabah Spor · 2026-08-03T10:45:49+03:00 · turnuva=EL · kulüp=—
 - [UEFA Avrupa Ligi'nde üçüncü eleme turu heyecanı yarın başlayacak](https://www.aa.com.tr/tr/spor/uefa-avrupa-liginde-ucuncu-eleme-turu-heyecani-yarin-baslayacak/4016727) — Anadolu Ajansı Spor · 2026-08-03T10:43:51+03:00 · turnuva=EL · kulüp=—
 - [Beşiktaş'ın Avrupa Ligi play-off turundaki muhtemel rakibi belli oldu!](https://www.fotomac.com.tr/avrupaligi/2026/08/03/besiktasin-avrupa-ligi-play-off-turundaki-muhtemel-rakibi-belli-oldu) — Fotomaç · 2026-08-03T10:33:05+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Fenerbahçe'nin Şampiyonlar Ligi play-off turundaki muhtemel rakibi belli oldu!](https://www.fotomac.com.tr/fenerbahce/2026/08/03/fenerbahcenin-sampiyonlar-ligi-play-off-turundaki-muhtemel-rakibi-belli-oldu) — Fotomaç · 2026-08-03T10:31:26+03:00 · turnuva=CL · kulüp=Fenerbahçe
@@ -46,3 +43,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [A Milli Futbol Takımı'nın Belçika ve Fransa maçlarını oynayacağı statlar açıklandı](https://www.hurriyet.com.tr/sporarena/a-milli-futbol-takiminin-belcika-ve-fransa-maclarini-oynayacagi-statlar-aciklandi-43260525) — Hürriyet Spor · 2026-08-03T10:01:24+00:00 · turnuva=— · kulüp=—
 - [UEFA Şampiyonlar Ligi'nde 3. eleme turu ilk maçları yarın başlayacak](https://www.aa.com.tr/tr/spor/uefa-sampiyonlar-liginde-3-eleme-turu-ilk-maclari-yarin-baslayacak/4016653) — Anadolu Ajansı Spor · 2026-08-03T09:48:12+03:00 · turnuva=CL · kulüp=—
 - [Galatasaray RAMS Park'ın kapasitesini artırmayı planlıyor](https://www.hurriyet.com.tr/sporarena/galatasaray-rams-parkin-kapasitesini-artirmayi-planliyor-43260492) — Hürriyet Spor · 2026-08-03T09:46:00+00:00 · turnuva=— · kulüp=Galatasaray
+- [UEFA Avrupa Ligi'nde üçüncü eleme turu yarın başlayacak](https://www.hurriyet.com.tr/sporarena/uefa-avrupa-liginde-ucuncu-eleme-turu-yarin-baslayacak-43260489) — Hürriyet Spor · 2026-08-03T09:43:45+00:00 · turnuva=EL · kulüp=—
+- [Türkiye-Belçika maçı İzmir'de!](https://www.haberturk.com/uefa-uluslar-ligi-ndeki-turkiye-belcika-maci-izmir-gursel-aksel-stadi-nda-3902966-spor) — Haberturk Spor · 2026-08-03T09:37:00+00:00 · turnuva=— · kulüp=—
+- [Konferans Ligi'nde 3.eleme turu başlıyor!](https://www.haberturk.com/uefa-konferans-ligi-nde-3-eleme-turu-basliyor-3902956-spor) — Haberturk Spor · 2026-08-03T09:15:13+00:00 · turnuva=ECL · kulüp=—
