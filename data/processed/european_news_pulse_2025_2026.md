@@ -1,7 +1,7 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-04T05:26:35.035248+00:00
-Toplam ilgili haber: 43
+Üretim zamanı: 2026-08-04T06:41:42.093515+00:00
+Toplam ilgili haber: 38
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
@@ -9,12 +9,7 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Takımımız, UEFA Konferans Ligi İkinci Eleme Turu’nda Inter Turku’ya 2-0 mağlup olarak Avrupa kupalarına veda etti.](https://ibfk.com.tr/haberler/inter-turku-2-0-basaksehir-fk) — Başakşehir Resmi Web · 30.7.2026 22:46:53 · turnuva=ECL · kulüp=Başakşehir
 - [Kulübümüz, Almanya ekiplerinden Vfl Wolfsburg Kulübü’nün oyuncusu Andreas Skov Olsen ile 2026-2027 sezonunun sonuna dek, şarta bağlı zorunlu satın alma opsiyonlu kiralık olarak anlaşma sağladı.](https://ibfk.com.tr/haberler/hos-geldin-andreas-skov-olsen) — Başakşehir Resmi Web · 28.7.2026 20:32:26 · turnuva=ECL · kulüp=Başakşehir
 - [Avrupa'da kuralar çekildi! Takımlarımızı play-offta dişli rakipler bekliyor](https://www.hurriyet.com.tr/sporarena/avrupada-kuralar-cekildi-takimlarimizi-play-offta-disli-rakipler-bekliyor-43261348) — Hürriyet Spor · 2026-08-04T04:00:00+00:00 · turnuva=CL · kulüp=Fenerbahçe, Beşiktaş, Trabzonspor
-- [Fenerbahçe'nin Şampiyonlar Ligi play-off turundaki muhtemel rakibi belli oldu!](https://www.fotomac.com.tr/fenerbahce/2026/08/03/fenerbahcenin-sampiyonlar-ligi-play-off-turundaki-muhtemel-rakibi-belli-oldu) — Fotomaç · 2026-08-04T00:47:28+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Beşiktaş'ın Avrupa Ligi play-off turundaki muhtemel rakibi belli oldu!](https://www.fotomac.com.tr/avrupaligi/2026/08/03/besiktasin-avrupa-ligi-play-off-turundaki-muhtemel-rakibi-belli-oldu) — Fotomaç · 2026-08-04T00:47:26+03:00 · turnuva=EL · kulüp=Beşiktaş
-- [A Milli Takım'ın UEFA Uluslar Ligi maç programı açıklandı!](https://www.fotomac.com.tr/millitakim/2026/08/03/a-milli-takimin-uefa-uluslar-ligi-mac-programi-aciklandi) — Fotomaç · 2026-08-04T00:47:25+03:00 · turnuva=— · kulüp=—
-- [Trabzonspor'un Avrupa Ligi'ndeki play-off turu muhtemel rakibi belli oldu!](https://www.fotomac.com.tr/trabzonspor/2026/08/03/trabzonsporun-avrupa-ligindeki-play-off-turu-muhtemel-rakibi-belli-oldu) — Fotomaç · 2026-08-04T00:47:23+03:00 · turnuva=EL · kulüp=Trabzonspor
-- [Beşiktaş'ta Leandro Trossard ilk antrenmanına çıktı](https://www.fotomac.com.tr/besiktas/2026/08/03/besiktasta-leandro-trossard-ilk-antrenmanina-cikti) — Fotomaç · 2026-08-04T00:46:30+03:00 · turnuva=EL · kulüp=Beşiktaş
-- [UEFA Konferans Ligi'nde play-off eşleşmeleri belli oldu](https://www.fotomac.com.tr/konferans-ligi/2026/08/03/uefa-konferans-liginde-play-off-eslesmeleri-belli-oldu) — Fotomaç · 2026-08-04T00:46:26+03:00 · turnuva=EL · kulüp=Beşiktaş
+- [Fenerbahçe, Beşiktaş ve Trabzonspor'un Avrupa'daki rakiplerini tanıyalım! Prag kolay değil, Kauno zayıf, Ferencvaros zorlu](https://www.hurriyet.com.tr/sporarena/fenerbahce-besiktas-ve-trabzonsporun-avrupadaki-rakiplerini-taniyalim-prag-kolay-degil-43261363) — Hürriyet Spor · 2026-08-04T03:28:00+00:00 · turnuva=CL · kulüp=Fenerbahçe, Beşiktaş, Trabzonspor
 - [SON DAKİKA | Trabzonspor ve Beşiktaş'ın Avrupa Ligi'nde rakipleri belli oldu](https://www.cnnturk.com/spor/son-dakika-trabzonspor-ve-besiktasin-avrupa-liginde-rakipleri-belli-oluyor-3449788) — CNN Türk Spor · 2026-08-03T15:21:47+00:00 · turnuva=EL · kulüp=Beşiktaş, Trabzonspor
 - [Son dakika... Fenerbahçe'nin Şampiyonlar Ligi play-off turundaki muhtemel rakipleri belli oldu](https://www.cnnturk.com/spor/futbol/son-dakika-fenerbahcenin-sampiyonlar-ligi-play-off-turundaki-muhtemel-rakipleri-belli-oldu-3449751) — CNN Türk Spor · 2026-08-03T15:21:13+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [FENERBAHÇE STURM GRAZ MAÇI HANGİ KANALDA? Fenerbahçe Sturm Graz maçı nereden ve nasıl izlenir?](https://www.cnnturk.com/spor/fenerbahce-sturm-graz-maci-hangi-kanalda-fenerbahce-sturm-graz-maci-nereden-ve-nasil-izlenir-3449458) — CNN Türk Spor · 2026-08-03T14:37:45+00:00 · turnuva=CL · kulüp=Fenerbahçe
@@ -46,3 +41,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Konferans Ligi'nde 3.eleme turu başlıyor!](https://www.haberturk.com/uefa-konferans-ligi-nde-3-eleme-turu-basliyor-3902956-spor) — Haberturk Spor · 2026-08-03T09:15:13+00:00 · turnuva=ECL · kulüp=—
 - [Avrupa Ligi'nde 3. eleme turu heyecanı!](https://www.haberturk.com/uefa-avrupa-ligi-nde-3-eleme-turu-heyecani-basliyor-3902949-spor) — Haberturk Spor · 2026-08-03T08:34:55+00:00 · turnuva=EL · kulüp=—
 - [Avrupa'da kura günü!](https://www.haberturk.com/avrupa-da-kura-gunu-fenerbahce-besiktas-ve-trabzonspor-un-muhtemel-rakipleri-belli-oluyor-3902907-spor) — Haberturk Spor · 2026-08-03T07:09:12+00:00 · turnuva=CL · kulüp=Fenerbahçe, Beşiktaş, Trabzonspor
+- [Devler Ligi'nde 3. eleme turu başlıyor!](https://www.haberturk.com/uefa-sampiyonlar-ligi-nde-3-eleme-turu-ilk-maclari-yarin-baslayacak-3902909-spor) — Haberturk Spor · 2026-08-03T06:58:10+00:00 · turnuva=CL · kulüp=—
+- [Beşiktaş'ta, Hradec Kralove mesaisi başladı](https://www.cnnturk.com/spor/futbol/besiktasta-hradec-kralove-mesaisi-basladi-3449359) — CNN Türk Spor · 2026-08-02T15:04:26+00:00 · turnuva=EL · kulüp=Beşiktaş
+- [Sturm Graz, WSG Tirol karşısında! Maçın heyecanı canlı sohbet ile Misli'de](https://www.hurriyet.com.tr/sporarena/sturm-graz-wsg-tirol-karsisinda-macin-heyecani-canli-sohbet-ile-mislide-43258733) — Hürriyet Spor · 2026-08-01T08:43:43+00:00 · turnuva=CL · kulüp=Fenerbahçe
