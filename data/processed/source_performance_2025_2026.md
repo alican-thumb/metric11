@@ -1,6 +1,6 @@
 # Erken Haber Kaynak Performansı
 
-- Transfer sinyali: 37
+- Transfer sinyali: 38
 - Resmi olaya dönüşen transfer: 7
 - Yayın zamanı bulunan resmi teyit: 2/7
 - İlk görülme zamanı bulunan resmi teyit: 7/7
@@ -12,7 +12,7 @@
 
 ## Kanal Kapsamı
 
-- Google News: 295 haber, 30/30 başarılı sorgu.
+- Google News: 296 haber, 30/30 başarılı sorgu.
 - Telegram: 6 mesaj, 8/8 erişilebilir kanal.
 - X: durum=MISSING_CREDENTIALS, gönderi=0, yapılandırılmış hesap=45.
 
@@ -33,7 +33,7 @@
 |---|---:|---:|---:|---|
 | Yağız Sabuncuoğlu | 3 | 1 | 1 | PARTIAL_MEASUREMENT |
 | Ertan Süzgün | 2 | 0 | 0 | ATTRIBUTION_PENDING |
-| Sports Digitale | 3 | 0 | 0 | ATTRIBUTION_PENDING |
+| Sports Digitale | 2 | 0 | 0 | ATTRIBUTION_PENDING |
 | Yusuf Günaydın | 1 | 0 | 0 | ATTRIBUTION_PENDING |
 | Ekrem Konur | 2 | 0 | 0 | ATTRIBUTION_PENDING |
 
