@@ -1,19 +1,22 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-04T08:55:21.945047+00:00
-Toplam ilgili haber: 45
+Üretim zamanı: 2026-08-04T12:19:32.302409+00:00
+Toplam ilgili haber: 40
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
-- [Takımımız, UEFA Konferans Ligi İkinci Eleme Turu’nda Inter Turku’ya 2-0 mağlup olarak Avrupa kupalarına veda etti.](https://ibfk.com.tr/haberler/inter-turku-2-0-basaksehir-fk) — Başakşehir Resmi Web · 30.7.2026 22:46:53 · turnuva=ECL · kulüp=Başakşehir
-- [Kulübümüz, Almanya ekiplerinden Vfl Wolfsburg Kulübü’nün oyuncusu Andreas Skov Olsen ile 2026-2027 sezonunun sonuna dek, şarta bağlı zorunlu satın alma opsiyonlu kiralık olarak anlaşma sağladı.](https://ibfk.com.tr/haberler/hos-geldin-andreas-skov-olsen) — Başakşehir Resmi Web · 28.7.2026 20:32:26 · turnuva=ECL · kulüp=Başakşehir
+- [Takımımız, UEFA Konferans Ligi İkinci Eleme Turu’nda Inter Turku’ya 2-0 mağlup olarak Avrupa kupalarına veda etti.](https://ibfk.com.tr/haberler/inter-turku-2-0-basaksehir-fk) — Başakşehir Resmi Web · 30.7.2026 22:46:53 · turnuva=ECL · kulüp=Başakşehir, Kocaelispor
+- [İsmail Kartal'dan ilk 11'de farklı tercih! Fenerbahçe - Sturm Graz maçında forma onun](https://www.takvim.com.tr/spor/fenerbahce/2026/08/04/ismail-kartaldan-ilk-11de-farkli-tercih-orta-saha-karari) — Takvim Spor · 2026-08-04T14:24:20+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe'nin Avrupa kupalarında "Kadıköy" performansı](https://www.aa.com.tr/tr/spor/fenerbahcenin-avrupa-kupalarinda-kadikoy-performansi/4017795) — Anadolu Ajansı Spor · 2026-08-04T11:29:41+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe, Avrupa'da 303. maçına çıkacak](https://www.sabah.com.tr/spor/futbol/2026/08/04/fenerbahce-avrupada-303-macina-cikacak) — Sabah Spor · 2026-08-04T11:24:58+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe, UEFA Şampiyonlar Ligi'nde avantaj arıyor](https://www.sabah.com.tr/spor/futbol/2026/08/04/fenerbahce-uefa-sampiyonlar-liginde-avantaj-ariyor) — Sabah Spor · 2026-08-04T11:10:27+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe, Avrupa'da 303. maçına çıkacak](https://www.aa.com.tr/tr/spor/fenerbahce-avrupada-303-macina-cikacak/4017753) — Anadolu Ajansı Spor · 2026-08-04T11:07:50+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe, UEFA Şampiyonlar Ligi'nde avantaj arıyor](https://www.aa.com.tr/tr/spor/fenerbahce-uefa-sampiyonlar-liginde-avantaj-ariyor/4017693) — Anadolu Ajansı Spor · 2026-08-04T10:30:32+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Miguel Carodoso'nun Erzurumspor transferi iptal oldu! Kayserispor'da kalacak mı? - kayserihaber.com](https://news.google.com/rss/articles/CBMioAFBVV95cUxOLWk1Tk1PLUl2TkRSbGV4bGVlLUhCN2V0X1VwUUZpOE5GZFpmdWo2WTRubjRCRk9udHBvUmlfU29ReTNreklOcV94TGpheEd0TjItejVfVkhQZkw4QkQ3NWpSTTQ2clNlbmx5TnVoVC1SaGhsU19rbUI0cTl0U3BmZ1hUNU9tbE9sa3VLb2NQUmxfUVdLbnA5VVVZZGxVWnZz?oc=5) — kayserihaber.com · 2026-08-04T09:31:00+00:00 · turnuva=EL · kulüp=Kayserispor
+- [İsmail Kartal'dan Greenwood kararı!](https://www.haberturk.com/ismail-kartal-dan-greenwood-karari-fenerbahce-nin-sturm-graz-11-i-netlesiyor-3903205-spor) — Haberturk Spor · 2026-08-04T08:06:12+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe, UEFA Şampiyonlar Ligi'nde avantaj arıyor](https://www.hurriyet.com.tr/sporarena/fenerbahce-uefa-sampiyonlar-liginde-avantaj-ariyor-43261620) — Hürriyet Spor · 2026-08-04T08:03:38+00:00 · turnuva=CL · kulüp=Fenerbahçe
+- [F.Bahçe'nin Sturm Graz'la 3. randevusu!](https://www.haberturk.com/fenerbahce-tarihinde-3-kez-sturm-graz-ile-karsilasacak-3903185-spor) — Haberturk Spor · 2026-08-04T07:31:43+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Sparta Prag, Lyon'u ağırlıyor! Maçın heyecanı canlı yayın ile Misli'de](https://www.hurriyet.com.tr/sporarena/sparta-prag-lyonu-agirliyor-macin-heyecani-canli-yayin-ile-mislide-43261569) — Hürriyet Spor · 2026-08-04T07:30:39+00:00 · turnuva=CL · kulüp=—
 - [Avrupa'da kuralar çekildi! Takımlarımızı play-offta dişli rakipler bekliyor](https://www.hurriyet.com.tr/sporarena/avrupada-kuralar-cekildi-takimlarimizi-play-offta-disli-rakipler-bekliyor-43261348) — Hürriyet Spor · 2026-08-04T04:00:00+00:00 · turnuva=CL · kulüp=Fenerbahçe, Beşiktaş, Trabzonspor
 - [Fenerbahçe, Beşiktaş ve Trabzonspor'un Avrupa'daki rakiplerini tanıyalım! Prag kolay değil, Kauno zayıf, Ferencvaros zorlu](https://www.hurriyet.com.tr/sporarena/fenerbahce-besiktas-ve-trabzonsporun-avrupadaki-rakiplerini-taniyalim-prag-kolay-degil-43261363) — Hürriyet Spor · 2026-08-04T03:28:00+00:00 · turnuva=CL · kulüp=Fenerbahçe, Beşiktaş, Trabzonspor
@@ -34,15 +37,12 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Trossard sahaya indi!](https://www.haberturk.com/besiktas-ta-trossard-ilk-antrenmanina-cikti-3903020-spor) — Haberturk Spor · 2026-08-03T11:53:54+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [UEFA Konferans Ligi'nde 3. eleme turu ilk maçları yarın başlayacak](https://www.aa.com.tr/tr/spor/uefa-konferans-liginde-3-eleme-turu-ilk-maclari-yarin-baslayacak/4016833) — Anadolu Ajansı Spor · 2026-08-03T11:48:15+03:00 · turnuva=ECL · kulüp=—
 - [İşte Avrupa Ligi'nde play-off yolu!](https://www.haberturk.com/iste-avrupa-ligi-nde-play-off-yolu-3903010-spor) — Haberturk Spor · 2026-08-03T11:38:42+00:00 · turnuva=EL · kulüp=—
-- [Devler Ligi'nde play-off kuraları çekildi](https://www.haberturk.com/sampiyonlar-ligi-nde-play-off-kuralari-cekildi-3903008-spor) — Haberturk Spor · 2026-08-03T11:33:06+00:00 · turnuva=CL · kulüp=—
-- [Trabzonspor'un muhtemel rakipleri belli oldu!](https://www.haberturk.com/son-dakika-trabzonspor-un-uefa-avrupa-ligi-ndeki-muhtemel-rakipleri-belli-oldu-3902967-spor) — Haberturk Spor · 2026-08-03T11:25:27+00:00 · turnuva=EL · kulüp=Trabzonspor
 - [Galatasaray Kulübü, RAMS Park'ın kapasitesini artırmayı planlıyor](https://www.aa.com.tr/tr/spor/galatasaray-kulubu-rams-parkin-kapasitesini-artirmayi-planliyor/4016769) — Anadolu Ajansı Spor · 2026-08-03T11:05:26+03:00 · turnuva=— · kulüp=Galatasaray
 - [UEFA Avrupa Ligi'nde üçüncü eleme turu heyecanı yarın başlayacak](https://www.aa.com.tr/tr/spor/uefa-avrupa-liginde-ucuncu-eleme-turu-heyecani-yarin-baslayacak/4016727) — Anadolu Ajansı Spor · 2026-08-03T10:43:51+03:00 · turnuva=EL · kulüp=—
 - [Fenerbahçe'nin Sturm Graz maçı 11'i netleşiyor: İsmail Kartal'dan Greenwood kararı](https://www.hurriyet.com.tr/sporarena/fenerbahcenin-sturm-graz-maci-11i-netlesiyor-43260549) — Hürriyet Spor · 2026-08-03T10:29:00+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Aziz Yıldırım müjdeyi vermişti! Fenerbahçe yıldız golcüde sona yaklaştı](https://www.cnnturk.com/spor/futbol/aziz-yildirim-mujdeyi-vermisti-fenerbahce-yildiz-golcude-sona-yaklasti-3449622) — CNN Türk Spor · 2026-08-03T10:24:01+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- [A Milli Futbol Takımı'nın Belçika ve Fransa maçlarını oynayacağı statlar açıklandı](https://www.hurriyet.com.tr/sporarena/a-milli-futbol-takiminin-belcika-ve-fransa-maclarini-oynayacagi-statlar-aciklandi-43260525) — Hürriyet Spor · 2026-08-03T10:01:24+00:00 · turnuva=— · kulüp=—
 - [UEFA Şampiyonlar Ligi'nde 3. eleme turu ilk maçları başlıyor](https://www.aa.com.tr/tr/spor/uefa-sampiyonlar-liginde-3-eleme-turu-ilk-maclari-basliyor/4016653) — Anadolu Ajansı Spor · 2026-08-03T09:48:12+03:00 · turnuva=CL · kulüp=—
-- [Galatasaray RAMS Park'ın kapasitesini artırmayı planlıyor](https://www.hurriyet.com.tr/sporarena/galatasaray-rams-parkin-kapasitesini-artirmayi-planliyor-43260492) — Hürriyet Spor · 2026-08-03T09:46:00+00:00 · turnuva=— · kulüp=Galatasaray
-- [UEFA Avrupa Ligi'nde üçüncü eleme turu yarın başlayacak](https://www.hurriyet.com.tr/sporarena/uefa-avrupa-liginde-ucuncu-eleme-turu-yarin-baslayacak-43260489) — Hürriyet Spor · 2026-08-03T09:43:45+00:00 · turnuva=EL · kulüp=—
-- [Türkiye-Belçika maçı İzmir'de!](https://www.haberturk.com/uefa-uluslar-ligi-ndeki-turkiye-belcika-maci-izmir-gursel-aksel-stadi-nda-3902966-spor) — Haberturk Spor · 2026-08-03T09:37:00+00:00 · turnuva=— · kulüp=—
 - [Konferans Ligi'nde 3.eleme turu başlıyor!](https://www.haberturk.com/uefa-konferans-ligi-nde-3-eleme-turu-basliyor-3902956-spor) — Haberturk Spor · 2026-08-03T09:15:13+00:00 · turnuva=ECL · kulüp=—
+- [Avrupa'da kura günü!](https://www.haberturk.com/avrupa-da-kura-gunu-fenerbahce-besiktas-ve-trabzonspor-un-muhtemel-rakipleri-belli-oluyor-3902907-spor) — Haberturk Spor · 2026-08-03T07:09:12+00:00 · turnuva=CL · kulüp=Fenerbahçe, Beşiktaş, Trabzonspor
+- [Beşiktaş'ta, Hradec Kralove mesaisi başladı](https://www.cnnturk.com/spor/futbol/besiktasta-hradec-kralove-mesaisi-basladi-3449359) — CNN Türk Spor · 2026-08-02T15:04:26+00:00 · turnuva=EL · kulüp=Beşiktaş
+- [Sturm Graz, WSG Tirol karşısında! Maçın heyecanı canlı sohbet ile Misli'de](https://www.hurriyet.com.tr/sporarena/sturm-graz-wsg-tirol-karsisinda-macin-heyecani-canli-sohbet-ile-mislide-43258733) — Hürriyet Spor · 2026-08-01T08:43:43+00:00 · turnuva=CL · kulüp=Fenerbahçe
