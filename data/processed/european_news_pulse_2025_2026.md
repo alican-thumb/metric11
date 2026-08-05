@@ -1,7 +1,7 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-04T23:20:23.103787+00:00
-Toplam ilgili haber: 46
+Üretim zamanı: 2026-08-05T03:33:03.447226+00:00
+Toplam ilgili haber: 45
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
@@ -34,7 +34,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Fenerbahçe, Avrupa'da 303. maçına çıkacak](https://www.aa.com.tr/tr/spor/fenerbahce-avrupada-303-macina-cikacak/4017753) — Anadolu Ajansı Spor · 2026-08-04T11:07:50+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [F.Bahçe, Sturm Graz'la 3. randevuda!](https://www.haberturk.com/fenerbahce-tarihinde-3-kez-sturm-graz-ile-karsilasacak-3903185-spor) — Haberturk Spor · 2026-08-04T10:55:08+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe, UEFA Şampiyonlar Ligi'nde avantaj arıyor](https://www.aa.com.tr/tr/spor/fenerbahce-uefa-sampiyonlar-liginde-avantaj-ariyor/4017693) — Anadolu Ajansı Spor · 2026-08-04T10:30:32+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Miguel Carodoso'nun Erzurumspor transferi iptal oldu! Kayserispor'da kalacak mı? - kayserihaber.com](https://news.google.com/rss/articles/CBMioAFBVV95cUxOLWk1Tk1PLUl2TkRSbGV4bGVlLUhCN2V0X1VwUUZpOE5GZFpmdWo2WTRubjRCRk9udHBvUmlfU29ReTNreklOcV94TGpheEd0TjItejVfVkhQZkw4QkQ3NWpSTTQ2clNlbmx5TnVoVC1SaGhsU19rbUI0cTl0U3BmZ1hUNU9tbE9sa3VLb2NQUmxfUVdLbnA5VVVZZGxVWnZz?oc=5) — kayserihaber.com · 2026-08-04T09:31:00+00:00 · turnuva=EL · kulüp=Kayserispor
 - [Fenerbahçe, UEFA Şampiyonlar Ligi'nde avantaj arıyor](https://www.hurriyet.com.tr/sporarena/fenerbahce-uefa-sampiyonlar-liginde-avantaj-ariyor-43261620) — Hürriyet Spor · 2026-08-04T08:03:38+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Sparta Prag, Lyon'u ağırlıyor! Maçın heyecanı canlı yayın ile Misli'de](https://www.hurriyet.com.tr/sporarena/sparta-prag-lyonu-agirliyor-macin-heyecani-canli-yayin-ile-mislide-43261569) — Hürriyet Spor · 2026-08-04T07:30:39+00:00 · turnuva=CL · kulüp=—
 - [Avrupa'da kuralar çekildi! Takımlarımızı play-offta dişli rakipler bekliyor](https://www.hurriyet.com.tr/sporarena/avrupada-kuralar-cekildi-takimlarimizi-play-offta-disli-rakipler-bekliyor-43261348) — Hürriyet Spor · 2026-08-04T04:00:00+00:00 · turnuva=CL · kulüp=Fenerbahçe, Beşiktaş, Trabzonspor
@@ -46,3 +45,4 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Beşiktaş ve Trabzonspor'un UEFA Avrupa Ligi play-off turu muhtemel rakipleri belli oldu!](https://www.takvim.com.tr/spor/2026/08/03/besiktas-ve-trabzonsporun-muhtemel-rakipleri-belli-oldu) — Takvim Spor · 2026-08-03T14:15:35+03:00 · turnuva=EL · kulüp=Beşiktaş, Trabzonspor
 - [Trabzonspor ve Beşiktaş'ın UEFA Avrupa Ligi play-off turu muhtemel rakipleri belli oldu](https://www.aa.com.tr/tr/spor/trabzonspor-ve-besiktasin-uefa-avrupa-ligi-play-off-turu-muhtemel-rakipleri-belli-oldu/4017022) — Anadolu Ajansı Spor · 2026-08-03T14:08:54+03:00 · turnuva=EL · kulüp=Beşiktaş, Trabzonspor
 - [Fenerbahçe'nin UEFA Şampiyonlar Ligi play-off turu muhtemel rakibi belli oldu](https://www.aa.com.tr/tr/spor/fenerbahcenin-uefa-sampiyonlar-ligi-play-off-turu-muhtemel-rakibi-belli-oldu/4016933) — Anadolu Ajansı Spor · 2026-08-03T13:13:15+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe'nin Şampiyonlar Ligi play-off turundaki muhtemel rakibi belli oldu](https://www.takvim.com.tr/spor/fenerbahce/2026/08/03/fenerbahcenin-sampiyonlar-ligi-play-off-rakibi-belli-oldu) — Takvim Spor · 2026-08-03T13:10:21+03:00 · turnuva=CL · kulüp=Fenerbahçe
