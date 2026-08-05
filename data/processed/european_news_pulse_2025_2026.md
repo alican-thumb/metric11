@@ -1,14 +1,18 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-05T05:27:00.007499+00:00
-Toplam ilgili haber: 52
+Üretim zamanı: 2026-08-05T06:41:17.734032+00:00
+Toplam ilgili haber: 54
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
 - [Takımımız, UEFA Konferans Ligi İkinci Eleme Turu’nda Inter Turku’ya 2-0 mağlup olarak Avrupa kupalarına veda etti.](https://ibfk.com.tr/haberler/inter-turku-2-0-basaksehir-fk) — Başakşehir Resmi Web · 30.7.2026 22:46:53 · turnuva=ECL · kulüp=Başakşehir, Kocaelispor
+- [FENERBAHÇE - STURM GRAZ MAÇI KANALI: Fenerbahçe maçı şifresiz mi, şifreli mi? Fenerbahçe - Sturm Graz hangi kanalda, saat kaçta?](https://www.cnnturk.com/spor/futbol/fenerbahce-sturm-graz-maci-kanali-fenerbahce-maci-sifresiz-mi-sifreli-mi-fenerbahce-sturm-graz-hangi-kanalda-saat-kacta-3450279) — CNN Türk Spor · 2026-08-05T09:29:09+00:00 · turnuva=CL · kulüp=Fenerbahçe
+- [5 Ağustos 2026: Bugün hangi maçlar var? Şampiyonlar Ligi, Avrupa Ligi...](https://www.aksam.com.tr/pusula/5-agustos-2026-bugun-hangi-maclar-var-sampiyonlar-ligi-avrupa-ligi/haber-1688124) — Aksam Spor · 2026-08-05T09:12:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe-Sturm Graz maçı saat kaçta, hangi kanalda?](https://www.fotomac.com.tr/sampiyonlarligi/2026/08/05/fenerbahce-sturm-graz-maci-saat-kacta-hangi-kanalda) — Fotomaç · 2026-08-05T09:01:10+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Beşiktaş, Çekya'da Hradec Kralove'ye konuk olacak](https://www.aa.com.tr/tr/spor/besiktas-cekyada-hradec-kraloveye-konuk-olacak/4018613) — Anadolu Ajansı Spor · 2026-08-05T08:36:08+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Fenerbahçe'nin UEFA kadrosunda değişiklik!](https://www.cnnturk.com/spor/futbol/fenerbahcenin-uefa-kadrosunda-degisiklik-3450440) — CNN Türk Spor · 2026-08-05T07:09:57+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- [FENERBAHÇE - STURM GRAZ MAÇI KANALI: Fenerbahçe maçı şifresiz mi, şifreli mi? Fenerbahçe - Sturm Graz hangi kanalda, saat kaçta? Fenerbahçe maçı canlı izleme yayın kanalı değişti!](https://www.cnnturk.com/spor/futbol/fenerbahce-sturm-graz-maci-kanali-fenerbahce-maci-sifresiz-mi-sifreli-mi-fenerbahce-sturm-graz-hangi-kanalda-saat-kacta-3450279) — CNN Türk Spor · 2026-08-05T07:08:32+00:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Bugün hangi maçlar var?](https://www.haberturk.com/bugun-hangi-maclar-var-5-agustos-bu-aksam-mac-var-mi-kimin-maci-var-saat-kacta-ve-hangi-kanalda-3903433-spor) — Haberturk Spor · 2026-08-05T05:19:11+00:00 · turnuva=— · kulüp=—
 - [Fenerbahçe, Sturm Graz'a karşı avantaj peşinde](https://www.hurriyet.com.tr/sporarena/fenerbahce-sturm-graza-karsi-avantaj-pesinde-43262504) — Hürriyet Spor · 2026-08-05T04:00:00+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [İsmail Kartal Sturm Graz maçı öncesi müjdeyi verdi! 2 isim kadroda olacak](https://www.fotomac.com.tr/fenerbahce/2026/08/04/ismail-kartal-sturm-graz-maci-oncesi-mujdeyi-verdi-2-isim-kadroda-olacak) — Fotomaç · 2026-08-05T00:45:48+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [UEFA Avrupa Ligi'nde toplu sonuçlar](https://www.fotomac.com.tr/avrupaligi/2026/08/04/uefa-avrupa-liginde-toplu-sonuclar) — Fotomaç · 2026-08-05T00:45:08+03:00 · turnuva=EL · kulüp=—
@@ -40,9 +44,5 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [F.Bahçe, Devler Ligi sahnesine çıkıyor](https://www.haberturk.com/fenerbahce-arsavev-in-sampiyonlar-ligi-ndeki-rakibi-metalist-kharkiv-3903281-spor) — Haberturk Spor · 2026-08-04T11:42:43+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe'nin Avrupa kupalarında "Kadıköy" performansı](https://www.aa.com.tr/tr/spor/fenerbahcenin-avrupa-kupalarinda-kadikoy-performansi/4017795) — Anadolu Ajansı Spor · 2026-08-04T11:29:41+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe, Avrupa'da 303. maçına çıkacak](https://www.aa.com.tr/tr/spor/fenerbahce-avrupada-303-macina-cikacak/4017753) — Anadolu Ajansı Spor · 2026-08-04T11:07:50+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [F.Bahçe, Sturm Graz'la 3. randevuda!](https://www.haberturk.com/fenerbahce-tarihinde-3-kez-sturm-graz-ile-karsilasacak-3903185-spor) — Haberturk Spor · 2026-08-04T10:55:08+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe, UEFA Şampiyonlar Ligi'nde avantaj arıyor](https://www.aa.com.tr/tr/spor/fenerbahce-uefa-sampiyonlar-liginde-avantaj-ariyor/4017693) — Anadolu Ajansı Spor · 2026-08-04T10:30:32+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe, UEFA Şampiyonlar Ligi'nde avantaj arıyor](https://www.hurriyet.com.tr/sporarena/fenerbahce-uefa-sampiyonlar-liginde-avantaj-ariyor-43261620) — Hürriyet Spor · 2026-08-04T08:03:38+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Sparta Prag, Lyon'u ağırlıyor! Maçın heyecanı canlı yayın ile Misli'de](https://www.hurriyet.com.tr/sporarena/sparta-prag-lyonu-agirliyor-macin-heyecani-canli-yayin-ile-mislide-43261569) — Hürriyet Spor · 2026-08-04T07:30:39+00:00 · turnuva=CL · kulüp=—
-- [Avrupa'da kuralar çekildi! Takımlarımızı play-offta dişli rakipler bekliyor](https://www.hurriyet.com.tr/sporarena/avrupada-kuralar-cekildi-takimlarimizi-play-offta-disli-rakipler-bekliyor-43261348) — Hürriyet Spor · 2026-08-04T04:00:00+00:00 · turnuva=CL · kulüp=Fenerbahçe, Beşiktaş, Trabzonspor
-- [Fenerbahçe, Beşiktaş ve Trabzonspor'un Avrupa'daki rakiplerini tanıyalım! Prag kolay değil, Kauno zayıf, Ferencvaros zorlu](https://www.hurriyet.com.tr/sporarena/fenerbahce-besiktas-ve-trabzonsporun-avrupadaki-rakiplerini-taniyalim-prag-kolay-degil-43261363) — Hürriyet Spor · 2026-08-04T03:28:00+00:00 · turnuva=CL · kulüp=Fenerbahçe, Beşiktaş, Trabzonspor
