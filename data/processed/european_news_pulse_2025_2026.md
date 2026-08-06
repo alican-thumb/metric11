@@ -1,16 +1,20 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-06T05:29:09.541290+00:00
-Toplam ilgili haber: 68
+Üretim zamanı: 2026-08-06T06:43:57.408073+00:00
+Toplam ilgili haber: 69
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
 - [Takımımız, UEFA Konferans Ligi İkinci Eleme Turu’nda Inter Turku’ya 2-0 mağlup olarak Avrupa kupalarına veda etti.](https://ibfk.com.tr/haberler/inter-turku-2-0-basaksehir-fk) — Başakşehir Resmi Web · 30.7.2026 22:46:53 · turnuva=ECL · kulüp=Başakşehir, Kocaelispor
+- [Beşiktaş'ın rakibi Hradec Kralove! İşte muhtemel 11...](https://www.aksam.com.tr/spor/besiktasin-rakibi-hradec-kralove-iste-muhtemel-11/haber-1688424) — Aksam Spor · 2026-08-06T09:33:00+03:00 · turnuva=EL · kulüp=Beşiktaş
+- [Kupa'3 te heyecan 2 maçla sürdü](https://www.aksam.com.tr/spor/kupa3-te-heyecan-2-macla-surdu/haber-1688415) — Aksam Spor · 2026-08-06T09:05:00+03:00 · turnuva=ECL · kulüp=—
+- [Ülke puanında son durum belli oldu](https://www.cnnturk.com/spor/futbol/ulke-puaninda-son-durum-belli-oldu-3450908) — CNN Türk Spor · 2026-08-06T09:02:24+00:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Spor yazarları Fenerbahçe-Strum Graz maçını değerlendirdi](https://www.fotomac.com.tr/fenerbahce/2026/08/06/spor-yazarlari-fenerbahce-strum-graz-macini-degerlendirdi) — Fotomaç · 2026-08-06T08:58:03+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Trabzonspor'un muhtemel rakipleri karşı karşıya geldi](https://www.cnnturk.com/spor/futbol/trabzonsporun-muhtemel-rakipleri-karsi-karsiya-geldi-3450893) — CNN Türk Spor · 2026-08-06T08:19:52+00:00 · turnuva=EL · kulüp=Trabzonspor
-- [6 Ağustos Perşembe: Bugün maç var mı, yok mu? Hangi maçlar var?](https://www.aksam.com.tr/pusula/6-agustos-persembe-bugun-mac-var-mi-yok-mu-hangi-maclar-var/haber-1688395) — Aksam Spor · 2026-08-06T07:55:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Fenerbahçe maçı biter bitmez güncellendi! UEFA ülke puanındaki son durum netleşti](https://www.aksam.com.tr/spor/fenerbahce-maci-biter-bitmez-guncellendi-uefa-ulke-puanindaki-son-durum-netlesti/haber-1688392) — Aksam Spor · 2026-08-06T07:44:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe 2-0 Sturm Graz Maç Özeti | Temsilcimiz, avantajı kaptı](https://www.cnnturk.com/spor/futbol/live-fenerbahce-2-0-sturm-graz-mac-ozeti-temsilcimiz-avantaji-kapti-3450504) — CNN Türk Spor · 2026-08-06T07:29:37+00:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe'nin Sturm Graz galibiyeti sonrası UEFA ülke puanı güncellendi! İşte Türkiye'nin son durumu](https://www.hurriyet.com.tr/sporarena/fenerbahcenin-sturm-graz-galibiyeti-sonrasi-uefa-ulke-puani-guncellendi-iste-turkiyenin-son-durumu-43263716) — Hürriyet Spor · 2026-08-06T06:14:55+00:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Bugün hangi maçlar var?](https://www.haberturk.com/gunun-maclari-bugun-hangi-maclar-var-6-agustos-bu-aksam-mac-var-mi-kimin-maci-var-saat-kacta-ve-hangi-kanalda-3903680-spor) — Haberturk Spor · 2026-08-06T05:47:37+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe'nin Sturm Graz galibiyeti sonrası dikkat çeken sözler: 2024 nostaljisinden çıkılınca...](https://www.hurriyet.com.tr/sporarena/fenerbahcenin-sturm-graz-galibiyeti-sonrasi-dikkat-ceken-sozler-2024-nostaljisinden-cikilinca-43263700) — Hürriyet Spor · 2026-08-06T04:55:00+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Beşiktaş Dalya için sahada](https://www.hurriyet.com.tr/sporarena/besiktas-dalya-icin-sahada-43263637) — Hürriyet Spor · 2026-08-06T04:00:00+00:00 · turnuva=— · kulüp=Beşiktaş
 - [Fenerbahçe teknik direktörü İsmail Kartal'dan Sidiki Cherif açıklaması!](https://www.fotomac.com.tr/fenerbahce/2026/08/05/fenerbahce-teknik-direktoru-ismail-kartaldan-sidiki-cherif-aciklamasi) — Fotomaç · 2026-08-06T01:16:58+03:00 · turnuva=CL · kulüp=Fenerbahçe
@@ -22,7 +26,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Beşiktaş Hradec Kralove maçı kamp kadrosunu açıkladı!](https://www.fotomac.com.tr/besiktas/2026/08/05/besiktas-hradec-kralove-maci-kamp-kadrosunu-acikladi) — Fotomaç · 2026-08-06T01:16:20+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Ferençvaroş tek golle galip!](https://www.fotomac.com.tr/avrupaligi/2026/08/05/ferencvaros-tek-golle-galip) — Fotomaç · 2026-08-06T01:16:03+03:00 · turnuva=EL · kulüp=Trabzonspor
 - [Fenerbahçe'de Mason Greenwood: Daha iyi olacağım!](https://www.fotomac.com.tr/fenerbahce/2026/08/05/fenerbahcede-mason-greenwood-daha-iyi-olacagim) — Fotomaç · 2026-08-06T01:15:48+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Şampiyonlar Ligi'nde tarihi zafer](https://www.fotomac.com.tr/fenerbahce/2026/08/06/sampiyonlar-liginde-tarihi-zafer) — Fotomaç · 2026-08-06T00:17:21+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [İsmail Kartal'dan rövanş için sol bek açıklaması! Nathan Ake mi Archie Brown mu?](https://www.takvim.com.tr/spor/fenerbahce/2026/08/05/ismail-kartaldan-rovans-icin-sol-bek-aciklamasi-nathan-ake-mi-archie-brown-mu) — Takvim Spor · 2026-08-06T00:12:20+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Beşiktaş tur kapısını Çekya'da aralamak istiyor! İşte muhtemel 11'ler](https://www.fotomac.com.tr/besiktas/2026/08/06/besiktas-tur-kapisini-cekyada-aralamak-istiyor-iste-muhtemel-11ler) — Fotomaç · 2026-08-06T00:01:20+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Türkiye ülke puanı sıralamasında kaçıncı? İşte UEFA'daki yerimiz (2026-2027 Sezonu)](https://www.takvim.com.tr/galeri/spor/turkiye-ulke-puani-siralamasinda-kacinci-iste-uefadaki-yerimiz-2026-2027-sezonu) — Takvim Spor · 2026-08-05T23:32:04+03:00 · turnuva=CL · kulüp=Fenerbahçe, Beşiktaş
@@ -43,6 +46,3 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [FENERBAHÇE - STURM GRAZ MAÇI CANLI İZLE TV 100 ŞİFRESİZ | Şampiyonlar Ligi 3. Ön Eleme Turu Fenerbahçe - Sturm Graz maçı şifresiz, HD canlı yayın ekranı](https://www.cnnturk.com/spor/fenerbahce-sturm-graz-maci-canli-izle-fenerbahce-maci-sifresiz-hd-canli-yayin-ekrani-fenerbahce-sampiyonlar-ligi-3-on-eleme-turu-maci-3450635) — CNN Türk Spor · 2026-08-05T20:51:14+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe Sturm Graz hangi kanalda, şifresiz mi, şifreli mi? Fenerbahçe Şampiyonlar Ligi 3.ön eleme maçı saat kaçta? FENERBAHÇE - STURM GRAZ MAÇI KANALI!](https://www.cnnturk.com/spor/futbol/fenerbahce-sturm-graz-maci-kanali-fenerbahce-sturm-graz-hangi-kanalda-sifresiz-mi-sifreli-mi-fenerbahce-sampiyonlar-ligi-3-on-3450279) — CNN Türk Spor · 2026-08-05T20:49:11+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Talisca ve Greenwood, Sturm Graz galibiyeti sonrası konuştu: 9 numara golü diyebiliriz](https://www.hurriyet.com.tr/sporarena/talisca-ve-greenwood-sturm-graz-galibiyeti-sonrasi-konustu-9-numara-golu-diyebiliriz-43263592) — Hürriyet Spor · 2026-08-05T20:46:00+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- ["Bu oyun transferi geciktirmemeli!"](https://www.haberturk.com/ozer-cak-yazdi-bu-oyun-transferi-geciktirmemeli-3903648-spor) — Haberturk Spor · 2026-08-05T20:29:39+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- [F.Bahçe tur kapısını araladı!](https://www.haberturk.com/fenerbahce-sturm-graz-mac-sonucu-ve-ozeti-fenerbahce-sturm-graz-sampiyonlar-ligi-3-eleme-turu-maci-k-3903452-spor) — Haberturk Spor · 2026-08-05T20:11:00+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Kadıköy kalesi kapalı! Fenerbahçe Sturm Graz'ı 2-0 yendi](https://www.takvim.com.tr/spor/fenerbahce/2026/08/05/kadikoy-kalesi-kapali-fenerbahce-sturm-grazi-2-0-yendi) — Takvim Spor · 2026-08-05T19:46:27+03:00 · turnuva=CL · kulüp=Fenerbahçe
