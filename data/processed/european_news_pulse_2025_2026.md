@@ -1,13 +1,17 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-06T08:54:39.868994+00:00
-Toplam ilgili haber: 72
+Üretim zamanı: 2026-08-06T12:18:40.707244+00:00
+Toplam ilgili haber: 65
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
-- [Takımımız, UEFA Konferans Ligi İkinci Eleme Turu’nda Inter Turku’ya 2-0 mağlup olarak Avrupa kupalarına veda etti.](https://ibfk.com.tr/haberler/inter-turku-2-0-basaksehir-fk) — Başakşehir Resmi Web · 30.7.2026 22:46:53 · turnuva=ECL · kulüp=Başakşehir, Kocaelispor
-- [HRADEC KRALOVE - BEŞİKTAŞ MAÇI KANALI VE SAATİ | Beşiktaş maçı hangi kanalda, şifresiz mi? BJK Avrupa Ligi 3. ön eleme turu maçı ne zaman, saat kaçta? Beşiktaş maç kadrosu/muhtemel 11’ler](https://www.cnnturk.com/spor/futbol/hradec-kralove-besiktas-maci-kanali-ve-saati-besiktas-maci-hangi-kanalda-sifresiz-mi-bjk-avrupa-ligi-3-on-eleme-turu-maci-ne-3451021) — CNN Türk Spor · 2026-08-06T11:43:58+00:00 · turnuva=EL · kulüp=Beşiktaş
+- [Fenerbahçe, Sturm Graz hazırlıklarına ara vermeden başladı](https://www.aksam.com.tr/spor/fenerbahce-sturm-graz-hazirliklarina-ara-vermeden-basladi/haber-1688566) — Aksam Spor · 2026-08-06T15:15:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [HRADEC KRALOVE - BEŞİKTAŞ MAÇI KANALI VE SAATİ | Beşiktaş maçı hangi kanalda, şifresiz mi? BJK Avrupa Ligi 3. ön eleme turu maçı ne zaman, saat kaçta? Beşiktaş maç kadrosu/muhtemel 11’ler](https://www.cnnturk.com/spor/futbol/hradec-kralove-besiktas-maci-kanali-ve-saati-besiktas-maci-hangi-kanalda-sifresiz-mi-bjk-avrupa-ligi-3-on-eleme-turu-maci-ne-3451021) — CNN Türk Spor · 2026-08-06T14:43:34+00:00 · turnuva=EL · kulüp=Beşiktaş
+- [Hradec Kralove - Beşiktaş maçı öncesi son gelişmeler! Muhtemel 11'ler...](https://www.cnnturk.com/spor/futbol/live-besiktas-hradec-kralove-maci-canli-izle-tv100-s-sport-plus-sifresiz-yayin-canli-mac-yayini-3451033) — CNN Türk Spor · 2026-08-06T14:27:37+00:00 · turnuva=EL · kulüp=Beşiktaş
+- [Hradec Kralove - Beşiktaş maçı saat kaçta, hangi kanalda?](https://www.fotomac.com.tr/avrupaligi/2026/08/06/hradec-kralove-besiktas-maci-saat-kacta-hangi-kanalda-1786016913) — Fotomaç · 2026-08-06T14:08:41+03:00 · turnuva=EL · kulüp=Beşiktaş
+- [Oosterwolde'nin sakatlığı hakkında açıklama](https://www.cnnturk.com/spor/futbol/oosterwoldenin-sakatligi-hakkinda-aciklama-3451071) — CNN Türk Spor · 2026-08-06T13:57:04+00:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçeli futbolcu Oosterwolde'nin arka adale tendonunda kısmi yırtık tespit edildi](https://www.aa.com.tr/tr/spor/fenerbahceli-futbolcu-oosterwoldenin-arka-adale-tendonunda-kismi-yirtik-tespit-edildi/4020066) — Anadolu Ajansı Spor · 2026-08-06T13:47:33+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Beşiktaş, Hradec Kralove karşısında kapalı savunmayı nasıl açacak? Semih Sezerli'den tur analizi...](https://www.cnnturk.com/video/spor/futbol/besiktas-hradec-kralove-karsisinda-kapali-savunmayi-nasil-acacak-semih-sezerliden-tur-analizi-3450947) — CNN Türk Spor · 2026-08-06T11:15:43+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş Avrupa'da avantaj peşinde! Italiano 11'i belirledi](https://www.takvim.com.tr/spor/besiktas/2026/08/06/besiktas-avrupada-avantaj-pesinde-italiano-11i-belirledi) — Takvim Spor · 2026-08-06T10:28:52+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Ömer Üründül Fenerbahçe-Sturm Graz maçını yorumladı](https://www.fotomac.com.tr/fenerbahce/2026/08/06/omer-urundul-fenerbahce-sturm-graz-macini-yorumladi) — Fotomaç · 2026-08-06T09:44:18+03:00 · turnuva=CL · kulüp=Fenerbahçe
@@ -28,12 +32,10 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Fenerbahçe'de Anderson Talisca resmen durdurulamıyor!](https://www.fotomac.com.tr/fenerbahce/2026/08/05/fenerbahcede-anderson-talisca-resmen-durdurulamiyor) — Fotomaç · 2026-08-06T01:16:42+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Beşiktaş'ta Vincenzo Italiano'dan Leandro Trossard sözleri! Hradec Kralove maçı kadrosunda yer alacak mı?](https://www.fotomac.com.tr/besiktas/2026/08/05/besiktasta-vincenzo-italianodan-leandro-trossard-sozleri-hradec-kralove-maci-kadrosunda-yer-alacak-mi) — Fotomaç · 2026-08-06T01:16:28+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş Hradec Kralove maçı kamp kadrosunu açıkladı!](https://www.fotomac.com.tr/besiktas/2026/08/05/besiktas-hradec-kralove-maci-kamp-kadrosunu-acikladi) — Fotomaç · 2026-08-06T01:16:20+03:00 · turnuva=EL · kulüp=Beşiktaş
-- [Ferençvaroş tek golle galip!](https://www.fotomac.com.tr/avrupaligi/2026/08/05/ferencvaros-tek-golle-galip) — Fotomaç · 2026-08-06T01:16:03+03:00 · turnuva=EL · kulüp=Trabzonspor
 - [Fenerbahçe'de Mason Greenwood: Daha iyi olacağım!](https://www.fotomac.com.tr/fenerbahce/2026/08/05/fenerbahcede-mason-greenwood-daha-iyi-olacagim) — Fotomaç · 2026-08-06T01:15:48+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [İsmail Kartal'dan rövanş için sol bek açıklaması! Nathan Ake mi Archie Brown mu?](https://www.takvim.com.tr/spor/fenerbahce/2026/08/05/ismail-kartaldan-rovans-icin-sol-bek-aciklamasi-nathan-ake-mi-archie-brown-mu) — Takvim Spor · 2026-08-06T00:12:20+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Beşiktaş tur kapısını Çekya'da aralamak istiyor! İşte muhtemel 11'ler](https://www.fotomac.com.tr/besiktas/2026/08/06/besiktas-tur-kapisini-cekyada-aralamak-istiyor-iste-muhtemel-11ler) — Fotomaç · 2026-08-06T00:01:20+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Türkiye ülke puanı sıralamasında kaçıncı? İşte UEFA'daki yerimiz (2026-2027 Sezonu)](https://www.takvim.com.tr/galeri/spor/turkiye-ulke-puani-siralamasinda-kacinci-iste-uefadaki-yerimiz-2026-2027-sezonu) — Takvim Spor · 2026-08-05T23:32:04+03:00 · turnuva=CL · kulüp=Fenerbahçe, Beşiktaş
-- [Ferençvaroş, Gornik Zabrze’yi mağlup etti!](https://www.sabah.com.tr/spor/futbol/2026/08/05/ferencvaros-gornik-zabrzeyi-maglup-etti) — Sabah Spor · 2026-08-05T23:23:00+03:00 · turnuva=EL · kulüp=—
 - [Sturm Graz teknik direktörü Ingolitsch'ten Talisca itirafı: Durdurmak kolay değil](https://www.hurriyet.com.tr/sporarena/sturm-graz-teknik-direktoru-ingolitschten-talisca-itirafi-durdurmak-kolay-degil-43263658) — Hürriyet Spor · 2026-08-05T22:39:49+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe, avantaj elde etti](https://www.aa.com.tr/tr/spor/fenerbahce-avantaj-elde-etti/4019526) — Anadolu Ajansı Spor · 2026-08-05T22:01:17+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Ferençvaroş 1-0 ornik Zabrze maç özeti (UEFA Avrupa Ligi 3. eleme turu)](https://www.hurriyet.com.tr/sporarena/ferencvaros-1-0-ornik-zabrze-mac-ozeti-uefa-avrupa-ligi-3-eleme-turu-43263627) — Hürriyet Spor · 2026-08-05T21:47:06+00:00 · turnuva=EL · kulüp=Trabzonspor
@@ -43,6 +45,4 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [UEFA ülke puanı güncel sıralaması](https://www.haberturk.com/uefa-ulke-puani-siralamasi-5-agustos-2026-uefa-ulke-puani-siralamasinda-turkiye-kacinci-sirada-ve-kac-puani-var-3903619-spor) — Haberturk Spor · 2026-08-05T21:25:58+00:00 · turnuva=CL · kulüp=Fenerbahçe, Beşiktaş
 - ["Fenerbahçe güçlü oyuncularıyla kazandı"](https://www.haberturk.com/fabio-ingolitsch-fenerbahce-guclu-oyunculariyla-sonuca-gitti-3903654-spor) — Haberturk Spor · 2026-08-05T21:17:27+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - ["İlk golümü attığım için çok mutluyum"](https://www.haberturk.com/mason-greenwood-ilk-golumu-attigim-icin-cok-mutluyum-3903652-spor) — Haberturk Spor · 2026-08-05T21:13:34+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- ["Forvet transferi play-off'a yetişecek"](https://www.haberturk.com/cihan-kamer-den-fenerbahce-taraftarina-mujde-forvet-transferi-play-off-a-yetisecek-3903651-spor) — Haberturk Spor · 2026-08-05T21:11:33+00:00 · turnuva=— · kulüp=Fenerbahçe
 - [Cihan Kamer'den forvet transferi ve Oosterwolde sakatlığı açıklaması](https://www.hurriyet.com.tr/sporarena/cihan-kamerden-forvet-transferi-ve-oosterwolde-sakatligi-aciklamasi-43263618) — Hürriyet Spor · 2026-08-05T21:08:00+00:00 · turnuva=CL · kulüp=—
-- ["Sıkı bir şekilde çalışıyoruz"](https://www.haberturk.com/anderson-talisca-siki-bir-sekilde-calisiyoruz-3903650-spor) — Haberturk Spor · 2026-08-05T21:00:58+00:00 · turnuva=CL · kulüp=Fenerbahçe
