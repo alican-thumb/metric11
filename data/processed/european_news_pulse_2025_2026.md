@@ -1,17 +1,18 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-07T04:34:59.526650+00:00
+Üretim zamanı: 2026-08-07T05:53:58.578513+00:00
 Toplam ilgili haber: 70
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [7 Ağustos Cuma: Bugün maç var mı, yok mu? Bugün hangi maçlar var?](https://www.aksam.com.tr/pusula/7-agustos-cuma-bugun-mac-var-mi-yok-mu-bugun-hangi-maclar-var/haber-1688730) — Aksam Spor · 2026-08-07T08:49:00+03:00 · turnuva=CL · kulüp=Beşiktaş
 - [UEFA Avrupa Ligi'nde 3. eleme turunda ilk maçlar oynandı](https://www.cnnturk.com/spor/futbol/uefa-avrupa-liginde-3-eleme-turunda-ilk-maclar-oynandi-3451315) — CNN Türk Spor · 2026-08-07T07:11:16+00:00 · turnuva=EL · kulüp=—
 - [Hradec Kralove 0-1 Beşiktaş Maç Özeti | Temsilcimiz, avantajla dönüyor](https://www.cnnturk.com/spor/futbol/live-hradec-kralove-0-1-besiktas-mac-ozeti-temsilcimiz-avantajla-donuyor-3451033) — CNN Türk Spor · 2026-08-07T07:07:10+00:00 · turnuva=EL · kulüp=Beşiktaş
-- [Avrupa Ligi'nde 3. eleme turu ilk maçları sona erdi](https://www.aksam.com.tr/spor/avrupa-liginde-3-eleme-turu-ilk-maclari-sona-erdi/haber-1688694) — Aksam Spor · 2026-08-07T01:44:00+03:00 · turnuva=EL · kulüp=Beşiktaş
+- [Beşiktaş'ta galibiyet sonrası Güntekin Onay'dan dikkat çeken sözler: 'Önder Özen'e tebrikler! Ya olmasaydı?'](https://www.hurriyet.com.tr/sporarena/besiktasta-galibiyet-sonrasi-guntekin-onaydan-dikkat-ceken-sozler-onder-ozene-tebrikler-43264853) — Hürriyet Spor · 2026-08-07T05:01:00+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş'ta Vincenzo Italiano: Daha şiddetli olmamız gerekiyor!](https://www.fotomac.com.tr/besiktas/2026/08/06/besiktasta-vincenzo-italiano-daha-siddetli-olmamiz-gerekiyor) — Fotomaç · 2026-08-07T01:08:22+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş deplasmanda Hradec Kralove'yi yendi! Avantajı kaptı](https://www.fotomac.com.tr/besiktas/2026/08/06/besiktas-deplasmanda-hradec-kraloveyi-yendi-avantaji-kapti) — Fotomaç · 2026-08-07T01:08:20+03:00 · turnuva=EL · kulüp=Beşiktaş
-- [UEFA ülke puanı güncellendi! İşte Türkiye'nin sıralamadaki yeri](https://www.fotomac.com.tr/galeri/anasayfa/uefa-ulke-puani-guncellendi-iste-turkiyenin-siralamadaki-yeri-1786052706) — Fotomaç · 2026-08-07T01:08:16+03:00 · turnuva=EL · kulüp=Beşiktaş
+- [UEFA ülke puanı güncellendi! İşte Türkiye'nin sıralamadaki yeri](https://www.fotomac.com.tr/besiktas/2026/08/07/uefa-ulke-puani-guncellendi-iste-turkiyenin-siralamadaki-yeri-1786054493) — Fotomaç · 2026-08-07T01:08:16+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş'ta Ouattara kırmızı kart gördü!](https://www.fotomac.com.tr/besiktas/2026/08/06/besiktasta-ouattara-kirmizi-kart-gordu) — Fotomaç · 2026-08-07T01:08:14+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Spor yazarları Fenerbahçe-Strum Graz maçını değerlendirdi](https://www.fotomac.com.tr/fenerbahce/2026/08/06/spor-yazarlari-fenerbahce-strum-graz-macini-degerlendirdi) — Fotomaç · 2026-08-07T01:07:45+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Ömer Üründül Fenerbahçe-Sturm Graz maçını yorumladı](https://www.fotomac.com.tr/fenerbahce/2026/08/06/omer-urundul-fenerbahce-sturm-graz-macini-yorumladi) — Fotomaç · 2026-08-07T01:07:41+03:00 · turnuva=CL · kulüp=Fenerbahçe
@@ -45,4 +46,3 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [6 AĞUSTOS GÜNÜN MAÇLARI: Bugün hangi takımların maçı var, saat kaçta, hangi kanalda? Şampiyonlar Ligi, Avrupa Ligi ve Konferans Ligi maç programı](https://www.cnnturk.com/spor/6-agustos-gunun-maclari-bugun-hangi-takimlarin-maci-var-saat-kacta-hangi-kanalda-sampiyonlar-ligi-avrupa-ligi-ve-konferans-ligi-mac-3450626) — CNN Türk Spor · 2026-08-06T16:09:55+00:00 · turnuva=CL · kulüp=—
 - [Fenerbahçe, rövanş hazırlıklarına ara vermeden başladı](https://www.cnnturk.com/spor/futbol/fenerbahce-rovans-hazirliklarina-ara-vermeden-basladi-3451116) — CNN Türk Spor · 2026-08-06T15:23:49+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Oosterwolde'nin sakatlığı hakkında açıklama](https://www.cnnturk.com/spor/futbol/oosterwoldenin-sakatligi-hakkinda-aciklama-3451071) — CNN Türk Spor · 2026-08-06T13:57:04+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Fenerbahçeli futbolcu Oosterwolde'nin arka adale tendonunda kısmi yırtık tespit edildi](https://www.aa.com.tr/tr/spor/fenerbahceli-futbolcu-oosterwoldenin-arka-adale-tendonunda-kismi-yirtik-tespit-edildi/4020066) — Anadolu Ajansı Spor · 2026-08-06T13:47:33+03:00 · turnuva=CL · kulüp=Fenerbahçe
