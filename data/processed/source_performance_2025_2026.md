@@ -1,6 +1,6 @@
 # Erken Haber Kaynak Performansı
 
-- Transfer sinyali: 57
+- Transfer sinyali: 54
 - Resmi olaya dönüşen transfer: 7
 - Yayın zamanı bulunan resmi teyit: 2/7
 - İlk görülme zamanı bulunan resmi teyit: 7/7
@@ -8,11 +8,11 @@
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 0
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 3241
+- Defterde korunan ilk iddia gözlemi: 3245
 
 ## Kanal Kapsamı
 
-- Google News: 280 haber, 30/30 başarılı sorgu.
+- Google News: 275 haber, 30/30 başarılı sorgu.
 - Telegram: 6 mesaj, 8/8 erişilebilir kanal.
 - X: durum=MISSING_CREDENTIALS, gönderi=0, yapılandırılmış hesap=45.
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 3238 | 1012 | 1 | — | — | %99.9 | 0.1 | PARTIAL_MEASUREMENT |
+| Google News / medya | 3242 | 1015 | 1 | — | — | %99.9 | 0.1 | PARTIAL_MEASUREMENT |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -59,7 +59,7 @@
 | NTVSpor | MEDIA | 88 | 20 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Sporx.com | MEDIA | 85 | 69 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | A SPOR | MEDIA | 83 | 30 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
-| SonDakika | MEDIA | 82 | 53 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| SonDakika | MEDIA | 83 | 54 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | GZT | MEDIA | 80 | 24 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Ajansspor | MEDIA | 75 | 29 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Son Dakika | MEDIA | 63 | 38 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
@@ -69,7 +69,7 @@
 | Anadolu Ajansı Spor | AGENCY | 41 | 11 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | beinsports.com.tr | MEDIA | 33 | 9 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Haber 7 | MEDIA | 32 | 6 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
-| Gazete Vatan | MEDIA | 30 | 2 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Gazete Vatan | MEDIA | 31 | 2 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Transfermarkt | MEDIA | 30 | 12 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Yeniçağ Gazetesi | MEDIA | 29 | 9 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | sondakika.com | MEDIA | 29 | 22 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
@@ -168,10 +168,10 @@
 | STAR - Haberler | MEDIA | 6 | 1 | 0 | — | — | — | — | OBSERVING |
 | Samsun Haber | MEDIA | 6 | 1 | 0 | — | — | — | — | OBSERVING |
 | A Spor | MEDIA | 5 | 2 | 0 | — | — | — | — | OBSERVING |
+| transfermarkt.com.tr | MEDIA | 5 | 4 | 0 | — | — | — | — | OBSERVING |
 | fotomac.com.tr | MEDIA | 4 | 2 | 0 | — | — | — | — | OBSERVING |
 | mynet.com | MEDIA | 4 | 3 | 0 | — | — | — | — | OBSERVING |
 | sporx.com | MEDIA | 4 | 4 | 0 | — | — | — | — | OBSERVING |
-| transfermarkt.com.tr | MEDIA | 4 | 3 | 0 | — | — | — | — | OBSERVING |
 | Özgür Kocaeli | MEDIA | 4 | 0 | 0 | — | — | — | — | OBSERVING |
 | Bugün Kocaeli Gazetesi | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
 | Erzurum Gazetesi | MEDIA | 3 | 2 | 0 | — | — | — | — | OBSERVING |
@@ -198,7 +198,6 @@
 | ntvspor.net | MEDIA | 2 | 2 | 0 | — | — | — | — | OBSERVING |
 | sabah.com.tr | MEDIA | 2 | 1 | 0 | — | — | — | — | OBSERVING |
 | samsungazetesi.com | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
-| sozcu.com.tr | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | t24.com.tr | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | tv100 Haber | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | İz Gazete | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
@@ -259,6 +258,7 @@
 | kayseriolay.com | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | politikam.com | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | sivas360.com | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
+| sozcu.com.tr | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | takvim.com.tr | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | tibbiyebulteni.com | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | tv100.com | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
