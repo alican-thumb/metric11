@@ -1,7 +1,7 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-07T15:10:34.494330+00:00
-Toplam ilgili haber: 36
+Üretim zamanı: 2026-08-07T19:16:18.473650+00:00
+Toplam ilgili haber: 33
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
@@ -18,7 +18,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Beşiktaş deplasmanda Hradec Kralove'yi yendi! Avantajı kaptı](https://www.fotomac.com.tr/besiktas/2026/08/06/besiktas-deplasmanda-hradec-kraloveyi-yendi-avantaji-kapti) — Fotomaç · 2026-08-07T01:08:20+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [UEFA ülke puanı güncellendi! İşte Türkiye'nin sıralamadaki yeri](https://www.fotomac.com.tr/besiktas/2026/08/07/uefa-ulke-puani-guncellendi-iste-turkiyenin-siralamadaki-yeri-1786054493) — Fotomaç · 2026-08-07T01:08:16+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş'ta Ouattara kırmızı kart gördü!](https://www.fotomac.com.tr/besiktas/2026/08/06/besiktasta-ouattara-kirmizi-kart-gordu) — Fotomaç · 2026-08-07T01:08:14+03:00 · turnuva=EL · kulüp=Beşiktaş
-- [Spor yazarları Fenerbahçe-Strum Graz maçını değerlendirdi](https://www.fotomac.com.tr/fenerbahce/2026/08/06/spor-yazarlari-fenerbahce-strum-graz-macini-degerlendirdi) — Fotomaç · 2026-08-07T01:07:45+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Vincenzo Italiano'dan rövanş sözleri: Daha şiddetli olmalıyız](https://www.takvim.com.tr/spor/besiktas/2026/08/06/vincenzo-italianodan-rovans-sozleri-daha-siddetli-olmaliyiz) — Takvim Spor · 2026-08-06T22:50:38+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Türkiye ülke puanı sıralamasında kaçıncı? İşte UEFA'daki yerimiz (2026-2027 Sezonu)](https://www.takvim.com.tr/galeri/spor/turkiye-ulke-puani-siralamasinda-kacinci-iste-uefadaki-yerimiz-2026-2027-sezonu) — Takvim Spor · 2026-08-06T22:24:59+03:00 · turnuva=CL · kulüp=Fenerbahçe, Beşiktaş
 - [Beşiktaş Çekya'dan İstanbul'a avantajlı dönüyor](https://www.aa.com.tr/tr/spor/besiktas-cekyadan-istanbula-avantajli-donuyor/4020553) — Anadolu Ajansı Spor · 2026-08-06T21:56:46+03:00 · turnuva=EL · kulüp=Beşiktaş
@@ -27,7 +26,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [UEFA, FIFA organizasyonlarını boykot kararından geri adım atmadı](https://www.aa.com.tr/tr/spor/uefa-fifa-organizasyonlarini-boykot-kararindan-geri-adim-atmadi/4020509) — Anadolu Ajansı Spor · 2026-08-06T20:38:13+03:00 · turnuva=— · kulüp=—
 - [HRADEC KRALOVE - BEŞİKTAŞ MAÇI KANALI | Beşiktaş maçı hangi kanalda, şifresiz mi? Beşiktaş maçı bugün saat kaçta? BJK Avrupa Ligi 3. ön eleme turu maç kadrosu/muhtemel 11’ler](https://www.cnnturk.com/spor/futbol/hradec-kralove-besiktas-maci-kanali-besiktas-maci-hangi-kanalda-sifresiz-mi-besiktas-maci-bugun-saat-kacta-bjk-avrupa-ligi-3-3451021) — CNN Türk Spor · 2026-08-06T19:51:26+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [HRADEC KRALOVE - BEŞİKTAŞ MAÇI CANLI İZLE | Beşiktaş Avrupa Ligi 3. Ön Eleme Turu tv100 HD Canlı Yayın Ekranı: BJK Maçı Şifreli mi, Şifresiz mi?](https://www.cnnturk.com/spor/futbol/hradec-kralove-besiktas-maci-canli-izle-besiktas-avrupa-ligi-3-on-eleme-turu-tv100-hd-canli-yayin-ekrani-bjk-maci-sifreli-mi-3451122) — CNN Türk Spor · 2026-08-06T19:51:11+00:00 · turnuva=EL · kulüp=Beşiktaş
-- [Beşiktaş, Çekya'da avantajı aldı!](https://www.haberturk.com/hradec-kralove-0-besiktas-1-mac-sonucu-besiktas-cekya-da-avantaji-aldi--3903703-spor) — Haberturk Spor · 2026-08-06T19:29:06+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Çekya'da vurgun! Beşiktaş, Hradec Kralove'yi 1-0 yendi](https://www.takvim.com.tr/spor/besiktas/2026/08/06/cekyada-vurgun-besiktas-hradec-kraloveyi-1-0-yendi) — Takvim Spor · 2026-08-06T18:46:14+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Fenerbahçe, Sturm Graz maçının hazırlıklarına başladı](https://www.aa.com.tr/tr/spor/fenerbahce-sturm-graz-macinin-hazirliklarina-basladi/4020269) — Anadolu Ajansı Spor · 2026-08-06T16:23:04+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [6 AĞUSTOS GÜNÜN MAÇLARI: Bugün hangi takımların maçı var, saat kaçta, hangi kanalda? Şampiyonlar Ligi, Avrupa Ligi ve Konferans Ligi maç programı](https://www.cnnturk.com/spor/6-agustos-gunun-maclari-bugun-hangi-takimlarin-maci-var-saat-kacta-hangi-kanalda-sampiyonlar-ligi-avrupa-ligi-ve-konferans-ligi-mac-3450626) — CNN Türk Spor · 2026-08-06T16:09:55+00:00 · turnuva=CL · kulüp=—
@@ -36,7 +34,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Fenerbahçeli futbolcu Oosterwolde'nin arka adale tendonunda kısmi yırtık tespit edildi](https://www.aa.com.tr/tr/spor/fenerbahceli-futbolcu-oosterwoldenin-arka-adale-tendonunda-kismi-yirtik-tespit-edildi/4020066) — Anadolu Ajansı Spor · 2026-08-06T13:47:33+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe, Sturm Graz rövanşının hazırlıklarına ara vermeden başladı](https://www.hurriyet.com.tr/sporarena/fenerbahce-sturm-graz-rovansinin-hazirliklarina-ara-vermeden-basladi-43264427) — Hürriyet Spor · 2026-08-06T13:26:20+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Beşiktaş Avrupa'da avantaj peşinde! Italiano 11'i belirledi](https://www.takvim.com.tr/spor/besiktas/2026/08/06/besiktas-avrupada-avantaj-pesinde-italiano-11i-belirledi) — Takvim Spor · 2026-08-06T10:28:52+03:00 · turnuva=EL · kulüp=Beşiktaş
-- ["Greenwood rakiplerin canına okur"](https://www.haberturk.com/spor-yazarlari-fenerbahce-sturm-graz-macini-degerlendirdi-3903692-spor) — Haberturk Spor · 2026-08-06T06:44:59+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [İsmail Kartal'dan rövanş için sol bek açıklaması! Nathan Ake mi Archie Brown mu?](https://www.takvim.com.tr/spor/fenerbahce/2026/08/05/ismail-kartaldan-rovans-icin-sol-bek-aciklamasi-nathan-ake-mi-archie-brown-mu) — Takvim Spor · 2026-08-06T00:12:20+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe, avantaj elde etti](https://www.aa.com.tr/tr/spor/fenerbahce-avantaj-elde-etti/4019526) — Anadolu Ajansı Spor · 2026-08-05T22:01:17+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Kadıköy kalesi kapalı! Fenerbahçe Sturm Graz'ı 2-0 yendi](https://www.takvim.com.tr/spor/fenerbahce/2026/08/05/kadikoy-kalesi-kapali-fenerbahce-sturm-grazi-2-0-yendi) — Takvim Spor · 2026-08-05T19:46:27+03:00 · turnuva=CL · kulüp=Fenerbahçe
