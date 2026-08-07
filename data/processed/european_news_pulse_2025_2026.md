@@ -8,7 +8,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 
 - [Fenerbahçe arsaVev'in rakibi OH Leuven!](https://www.haberturk.com/fenerbahce-arsavev-in-rakibi-oh-leuven-3904053-spor) — Haberturk Spor · 2026-08-07T12:56:51+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [İşte Süper Lig'de 2. ve 3. haftanın programı!](https://www.haberturk.com/trendyol-super-lig-de-2-ve-3-hafta-programlari-aciklandi-3904066-spor) — Haberturk Spor · 2026-08-07T12:41:00+00:00 · turnuva=ECL · kulüp=Beşiktaş, Alanyaspor
-- [Spor yazarları Hradec Kralove-Beşiktaş maçını değerlendirdi](https://www.fotomac.com.tr/besiktas/2026/08/07/spor-yazarlari-hradec-kralove-besiktas-macini-degerlendirdi) — Fotomaç · 2026-08-07T08:57:13+03:00 · turnuva=EL · kulüp=Beşiktaş
 - ["İyi bir kaleci sizi ayakta tutar!"](https://www.haberturk.com/spor-yazarlari-besiktas-hradec-kralove-macini-yorumladi-iyi-bir-kaleci-sizi-ayakta-tutar-3903981-spor) — Haberturk Spor · 2026-08-07T07:19:44+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [UEFA Avrupa Ligi'nde 3. eleme turunda ilk maçlar oynandı](https://www.cnnturk.com/spor/futbol/uefa-avrupa-liginde-3-eleme-turunda-ilk-maclar-oynandi-3451315) — CNN Türk Spor · 2026-08-07T07:11:16+00:00 · turnuva=EL · kulüp=—
 - [Hradec Kralove 0-1 Beşiktaş Maç Özeti | Temsilcimiz, avantajla dönüyor](https://www.cnnturk.com/spor/futbol/live-hradec-kralove-0-1-besiktas-mac-ozeti-temsilcimiz-avantajla-donuyor-3451033) — CNN Türk Spor · 2026-08-07T07:07:10+00:00 · turnuva=EL · kulüp=Beşiktaş
