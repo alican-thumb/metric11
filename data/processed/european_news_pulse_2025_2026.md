@@ -1,13 +1,14 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-07T19:16:18.473650+00:00
-Toplam ilgili haber: 33
+Üretim zamanı: 2026-08-07T22:55:56.547125+00:00
+Toplam ilgili haber: 31
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
 - [Fenerbahçe arsaVev'in rakibi OH Leuven!](https://www.haberturk.com/fenerbahce-arsavev-in-rakibi-oh-leuven-3904053-spor) — Haberturk Spor · 2026-08-07T12:56:51+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [İşte Süper Lig'de 2. ve 3. haftanın programı!](https://www.haberturk.com/trendyol-super-lig-de-2-ve-3-hafta-programlari-aciklandi-3904066-spor) — Haberturk Spor · 2026-08-07T12:41:00+00:00 · turnuva=ECL · kulüp=Beşiktaş, Alanyaspor
+- [Spor yazarları Hradec Kralove-Beşiktaş maçını değerlendirdi](https://www.fotomac.com.tr/besiktas/2026/08/07/spor-yazarlari-hradec-kralove-besiktas-macini-degerlendirdi) — Fotomaç · 2026-08-07T08:57:13+03:00 · turnuva=EL · kulüp=Beşiktaş
 - ["İyi bir kaleci sizi ayakta tutar!"](https://www.haberturk.com/spor-yazarlari-besiktas-hradec-kralove-macini-yorumladi-iyi-bir-kaleci-sizi-ayakta-tutar-3903981-spor) — Haberturk Spor · 2026-08-07T07:19:44+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [UEFA Avrupa Ligi'nde 3. eleme turunda ilk maçlar oynandı](https://www.cnnturk.com/spor/futbol/uefa-avrupa-liginde-3-eleme-turunda-ilk-maclar-oynandi-3451315) — CNN Türk Spor · 2026-08-07T07:11:16+00:00 · turnuva=EL · kulüp=—
 - [Hradec Kralove 0-1 Beşiktaş Maç Özeti | Temsilcimiz, avantajla dönüyor](https://www.cnnturk.com/spor/futbol/live-hradec-kralove-0-1-besiktas-mac-ozeti-temsilcimiz-avantajla-donuyor-3451033) — CNN Türk Spor · 2026-08-07T07:07:10+00:00 · turnuva=EL · kulüp=Beşiktaş
@@ -20,8 +21,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Vincenzo Italiano'dan rövanş sözleri: Daha şiddetli olmalıyız](https://www.takvim.com.tr/spor/besiktas/2026/08/06/vincenzo-italianodan-rovans-sozleri-daha-siddetli-olmaliyiz) — Takvim Spor · 2026-08-06T22:50:38+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Türkiye ülke puanı sıralamasında kaçıncı? İşte UEFA'daki yerimiz (2026-2027 Sezonu)](https://www.takvim.com.tr/galeri/spor/turkiye-ulke-puani-siralamasinda-kacinci-iste-uefadaki-yerimiz-2026-2027-sezonu) — Takvim Spor · 2026-08-06T22:24:59+03:00 · turnuva=CL · kulüp=Fenerbahçe, Beşiktaş
 - [Beşiktaş Çekya'dan İstanbul'a avantajlı dönüyor](https://www.aa.com.tr/tr/spor/besiktas-cekyadan-istanbula-avantajli-donuyor/4020553) — Anadolu Ajansı Spor · 2026-08-06T21:56:46+03:00 · turnuva=EL · kulüp=Beşiktaş
-- [Konferans Ligi'nde gecenin sonuçları!](https://www.haberturk.com/uefa-konferans-ligi-nde-3-eleme-turu-ilk-maclari-tamamlandi-3903922-spor) — Haberturk Spor · 2026-08-06T21:38:49+00:00 · turnuva=ECL · kulüp=—
-- [UEFA ülke puanı sıralaması](https://www.haberturk.com/uefa-ulke-puani-siralamasinda-turkiye-kacinci-sirada-ve-kac-puani-var-6-agustos-2026-guncel-uefa-ulke-puani-3903877-spor) — Haberturk Spor · 2026-08-06T20:53:56+00:00 · turnuva=CL · kulüp=Fenerbahçe, Beşiktaş
 - [UEFA, FIFA organizasyonlarını boykot kararından geri adım atmadı](https://www.aa.com.tr/tr/spor/uefa-fifa-organizasyonlarini-boykot-kararindan-geri-adim-atmadi/4020509) — Anadolu Ajansı Spor · 2026-08-06T20:38:13+03:00 · turnuva=— · kulüp=—
 - [HRADEC KRALOVE - BEŞİKTAŞ MAÇI KANALI | Beşiktaş maçı hangi kanalda, şifresiz mi? Beşiktaş maçı bugün saat kaçta? BJK Avrupa Ligi 3. ön eleme turu maç kadrosu/muhtemel 11’ler](https://www.cnnturk.com/spor/futbol/hradec-kralove-besiktas-maci-kanali-besiktas-maci-hangi-kanalda-sifresiz-mi-besiktas-maci-bugun-saat-kacta-bjk-avrupa-ligi-3-3451021) — CNN Türk Spor · 2026-08-06T19:51:26+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [HRADEC KRALOVE - BEŞİKTAŞ MAÇI CANLI İZLE | Beşiktaş Avrupa Ligi 3. Ön Eleme Turu tv100 HD Canlı Yayın Ekranı: BJK Maçı Şifreli mi, Şifresiz mi?](https://www.cnnturk.com/spor/futbol/hradec-kralove-besiktas-maci-canli-izle-besiktas-avrupa-ligi-3-on-eleme-turu-tv100-hd-canli-yayin-ekrani-bjk-maci-sifreli-mi-3451122) — CNN Türk Spor · 2026-08-06T19:51:11+00:00 · turnuva=EL · kulüp=Beşiktaş
