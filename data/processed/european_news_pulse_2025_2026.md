@@ -1,18 +1,23 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-08T02:23:17.242938+00:00
-Toplam ilgili haber: 26
+Üretim zamanı: 2026-08-08T03:45:09.044521+00:00
+Toplam ilgili haber: 31
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
 - [Fenerbahçe arsaVev'in rakibi OH Leuven!](https://www.haberturk.com/fenerbahce-arsavev-in-rakibi-oh-leuven-3904053-spor) — Haberturk Spor · 2026-08-07T12:56:51+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [İşte Süper Lig'de 2. ve 3. haftanın programı!](https://www.haberturk.com/trendyol-super-lig-de-2-ve-3-hafta-programlari-aciklandi-3904066-spor) — Haberturk Spor · 2026-08-07T12:41:00+00:00 · turnuva=ECL · kulüp=Beşiktaş, Alanyaspor
+- [Spor yazarları Hradec Kralove-Beşiktaş maçını değerlendirdi](https://www.fotomac.com.tr/besiktas/2026/08/07/spor-yazarlari-hradec-kralove-besiktas-macini-degerlendirdi) — Fotomaç · 2026-08-07T08:57:13+03:00 · turnuva=EL · kulüp=Beşiktaş
 - ["İyi bir kaleci sizi ayakta tutar!"](https://www.haberturk.com/spor-yazarlari-besiktas-hradec-kralove-macini-yorumladi-iyi-bir-kaleci-sizi-ayakta-tutar-3903981-spor) — Haberturk Spor · 2026-08-07T07:19:44+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [UEFA Avrupa Ligi'nde 3. eleme turunda ilk maçlar oynandı](https://www.cnnturk.com/spor/futbol/uefa-avrupa-liginde-3-eleme-turunda-ilk-maclar-oynandi-3451315) — CNN Türk Spor · 2026-08-07T07:11:16+00:00 · turnuva=EL · kulüp=—
 - [Hradec Kralove 0-1 Beşiktaş Maç Özeti | Temsilcimiz, avantajla dönüyor](https://www.cnnturk.com/spor/futbol/live-hradec-kralove-0-1-besiktas-mac-ozeti-temsilcimiz-avantajla-donuyor-3451033) — CNN Türk Spor · 2026-08-07T07:07:10+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [İşte UEFA ülke puanı sıralamasında son durum!](https://www.haberturk.com/fenerbahce-ve-besiktas-kazandi-avantaji-aldi-uefa-ulke-puani-siralamasinda-son-durum-3903960-spor) — Haberturk Spor · 2026-08-07T06:35:19+00:00 · turnuva=CL · kulüp=Fenerbahçe, Beşiktaş
 - [Beşiktaş'ta galibiyet sonrası Güntekin Onay'dan dikkat çeken sözler: 'Önder Özen'e tebrikler! Ya olmasaydı?'](https://www.hurriyet.com.tr/sporarena/besiktasta-galibiyet-sonrasi-guntekin-onaydan-dikkat-ceken-sozler-onder-ozene-tebrikler-43264853) — Hürriyet Spor · 2026-08-07T05:01:00+00:00 · turnuva=EL · kulüp=Beşiktaş
+- [Beşiktaş'ta Vincenzo Italiano: Daha şiddetli olmamız gerekiyor!](https://www.fotomac.com.tr/besiktas/2026/08/06/besiktasta-vincenzo-italiano-daha-siddetli-olmamiz-gerekiyor) — Fotomaç · 2026-08-07T01:08:22+03:00 · turnuva=EL · kulüp=Beşiktaş
+- [Beşiktaş deplasmanda Hradec Kralove'yi yendi! Avantajı kaptı](https://www.fotomac.com.tr/besiktas/2026/08/06/besiktas-deplasmanda-hradec-kraloveyi-yendi-avantaji-kapti) — Fotomaç · 2026-08-07T01:08:20+03:00 · turnuva=EL · kulüp=Beşiktaş
+- [UEFA ülke puanı güncellendi! İşte Türkiye'nin sıralamadaki yeri](https://www.fotomac.com.tr/besiktas/2026/08/07/uefa-ulke-puani-guncellendi-iste-turkiyenin-siralamadaki-yeri-1786054493) — Fotomaç · 2026-08-07T01:08:16+03:00 · turnuva=EL · kulüp=Beşiktaş
+- [Beşiktaş'ta Ouattara kırmızı kart gördü!](https://www.fotomac.com.tr/besiktas/2026/08/06/besiktasta-ouattara-kirmizi-kart-gordu) — Fotomaç · 2026-08-07T01:08:14+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Vincenzo Italiano'dan rövanş sözleri: Daha şiddetli olmalıyız](https://www.takvim.com.tr/spor/besiktas/2026/08/06/vincenzo-italianodan-rovans-sozleri-daha-siddetli-olmaliyiz) — Takvim Spor · 2026-08-06T22:50:38+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Türkiye ülke puanı sıralamasında kaçıncı? İşte UEFA'daki yerimiz (2026-2027 Sezonu)](https://www.takvim.com.tr/galeri/spor/turkiye-ulke-puani-siralamasinda-kacinci-iste-uefadaki-yerimiz-2026-2027-sezonu) — Takvim Spor · 2026-08-06T22:24:59+03:00 · turnuva=CL · kulüp=Fenerbahçe, Beşiktaş
 - [Beşiktaş Çekya'dan İstanbul'a avantajlı dönüyor](https://www.aa.com.tr/tr/spor/besiktas-cekyadan-istanbula-avantajli-donuyor/4020553) — Anadolu Ajansı Spor · 2026-08-06T21:56:46+03:00 · turnuva=EL · kulüp=Beşiktaş
