@@ -1,7 +1,7 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-08T13:13:20.726584+00:00
-Toplam ilgili haber: 26
+Üretim zamanı: 2026-08-08T14:50:03.636031+00:00
+Toplam ilgili haber: 19
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
@@ -12,12 +12,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Beşiktaş’ta takım ruhu yükselişte: Italiano etkisi ve Nübel’in disiplini fark yarattı](https://www.cnnturk.com/spor/futbol/besiktasta-takim-ruhu-yukseliste-italiano-etkisi-ve-nubelin-disiplini-fark-yaratti-3451722) — CNN Türk Spor · 2026-08-08T10:09:53+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş Salah'ın rövanşını aldı, Trabzonspor'un istediği yıldızı bitiriyor | Transfer hattı - NTVSpor](https://news.google.com/rss/articles/CBMiygFBVV95cUxNY1JCY3JUeFVnQ2RFOVZYVkd2SUVFNXBJODdXNDJsRlZBb1RHbkUza1NJeWN1czM2cWtrUmxzSTY5UUk3RF91R1UtTUUzV2Y2NE1YeTlaa0U4d2VfTGZUR0d1elcxVlRLNlBGenhWdnhaeEhXU0xMcGIxT0ZSVzdTejh3RG5IeEwxQ0VMaXhYTjZMRlZrMWFQam9NeDFtOVVZcXRMbGVCamo1TVF2TnpKUlp1YXNfZWlXVjVTbVg2MzhoNzZVMWxlWVl30gHPAUFVX3lxTE5fd3ItZ2NOdWhfZ1RvWTE3VlFwcWZpWGJ0WHdyQUpINEkwWHk3T0RXZHJYWHlqbUU2LVJGS1Y0dzBKbk1ubXgxaXhhcVlwLWVINzlzOE84aEtqT2ZINkZfTmxPQTRoYkIyTHotekRuZ3dVQVIxYjROMVU4Y1BoOUY1ajF5NzhzNGY0eXRmX2U5aE45VWlUblRid3dmNlpKSklnOEU1X2FOcWJFOWFwNEEtOXp4akVIMGItU2VTbXNqQlNiRHljZVlwQUhMU3JXRQ?oc=5) — NTVSpor · 2026-08-08T05:43:14+00:00 · turnuva=— · kulüp=Beşiktaş, Trabzonspor
 - [Kriz sona ermedi! UEFA'nın inadı inat](https://www.hurriyet.com.tr/sporarena/kriz-sona-ermedi-uefanin-inadi-inat-43265937) — Hürriyet Spor · 2026-08-08T04:00:00+00:00 · turnuva=— · kulüp=—
-- [Spor yazarları Hradec Kralove-Beşiktaş maçını değerlendirdi](https://www.fotomac.com.tr/besiktas/2026/08/07/spor-yazarlari-hradec-kralove-besiktas-macini-degerlendirdi) — Fotomaç · 2026-08-08T00:57:39+03:00 · turnuva=EL · kulüp=Beşiktaş
-- [UEFA ülke puanı güncellendi! İşte Türkiye'nin sıralamadaki yeri](https://www.fotomac.com.tr/besiktas/2026/08/07/uefa-ulke-puani-guncellendi-iste-turkiyenin-siralamadaki-yeri-1786054493) — Fotomaç · 2026-08-08T00:57:28+03:00 · turnuva=EL · kulüp=Beşiktaş
-- [Beşiktaş deplasmanda Hradec Kralove'yi yendi! Avantajı kaptı](https://www.fotomac.com.tr/besiktas/2026/08/06/besiktas-deplasmanda-hradec-kraloveyi-yendi-avantaji-kapti) — Fotomaç · 2026-08-08T00:57:24+03:00 · turnuva=EL · kulüp=Beşiktaş
-- [Beşiktaş'ta Ouattara kırmızı kart gördü!](https://www.fotomac.com.tr/besiktas/2026/08/06/besiktasta-ouattara-kirmizi-kart-gordu) — Fotomaç · 2026-08-08T00:57:22+03:00 · turnuva=EL · kulüp=Beşiktaş
-- [Beşiktaş'ta Vincenzo Italiano: Daha şiddetli olmamız gerekiyor!](https://www.fotomac.com.tr/besiktas/2026/08/06/besiktasta-vincenzo-italiano-daha-siddetli-olmamiz-gerekiyor) — Fotomaç · 2026-08-08T00:57:21+03:00 · turnuva=EL · kulüp=Beşiktaş
-- [Fenerbahçe arsaVev'in rakibi OH Leuven!](https://www.haberturk.com/fenerbahce-arsavev-in-rakibi-oh-leuven-3904053-spor) — Haberturk Spor · 2026-08-07T12:56:51+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [İşte Süper Lig'de 2. ve 3. haftanın programı!](https://www.haberturk.com/trendyol-super-lig-de-2-ve-3-hafta-programlari-aciklandi-3904066-spor) — Haberturk Spor · 2026-08-07T12:41:00+00:00 · turnuva=ECL · kulüp=Beşiktaş, Alanyaspor
 - ["İyi bir kaleci sizi ayakta tutar!"](https://www.haberturk.com/spor-yazarlari-besiktas-hradec-kralove-macini-yorumladi-iyi-bir-kaleci-sizi-ayakta-tutar-3903981-spor) — Haberturk Spor · 2026-08-07T07:19:44+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [İşte UEFA ülke puanı sıralamasında son durum!](https://www.haberturk.com/fenerbahce-ve-besiktas-kazandi-avantaji-aldi-uefa-ulke-puani-siralamasinda-son-durum-3903960-spor) — Haberturk Spor · 2026-08-07T06:35:19+00:00 · turnuva=CL · kulüp=Fenerbahçe, Beşiktaş
@@ -28,7 +22,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Çekya'da vurgun! Beşiktaş, Hradec Kralove'yi 1-0 yendi](https://www.takvim.com.tr/spor/besiktas/2026/08/06/cekyada-vurgun-besiktas-hradec-kraloveyi-1-0-yendi) — Takvim Spor · 2026-08-06T18:46:14+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Fenerbahçe, Sturm Graz maçının hazırlıklarına başladı](https://www.aa.com.tr/tr/spor/fenerbahce-sturm-graz-macinin-hazirliklarina-basladi/4020269) — Anadolu Ajansı Spor · 2026-08-06T16:23:04+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçeli futbolcu Oosterwolde'nin arka adale tendonunda kısmi yırtık tespit edildi](https://www.aa.com.tr/tr/spor/fenerbahceli-futbolcu-oosterwoldenin-arka-adale-tendonunda-kismi-yirtik-tespit-edildi/4020066) — Anadolu Ajansı Spor · 2026-08-06T13:47:33+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Beşiktaş Avrupa'da avantaj peşinde! Italiano 11'i belirledi](https://www.takvim.com.tr/spor/besiktas/2026/08/06/besiktas-avrupada-avantaj-pesinde-italiano-11i-belirledi) — Takvim Spor · 2026-08-06T10:28:52+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [İsmail Kartal'dan rövanş için sol bek açıklaması! Nathan Ake mi Archie Brown mu?](https://www.takvim.com.tr/spor/fenerbahce/2026/08/05/ismail-kartaldan-rovans-icin-sol-bek-aciklamasi-nathan-ake-mi-archie-brown-mu) — Takvim Spor · 2026-08-06T00:12:20+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Kadıköy kalesi kapalı! Fenerbahçe Sturm Graz'ı 2-0 yendi](https://www.takvim.com.tr/spor/fenerbahce/2026/08/05/kadikoy-kalesi-kapali-fenerbahce-sturm-grazi-2-0-yendi) — Takvim Spor · 2026-08-05T19:46:27+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Sturm Graz, WSG Tirol karşısında! Maçın heyecanı canlı sohbet ile Misli'de](https://www.hurriyet.com.tr/sporarena/sturm-graz-wsg-tirol-karsisinda-macin-heyecani-canli-sohbet-ile-mislide-43258733) — Hürriyet Spor · 2026-08-01T08:43:43+00:00 · turnuva=CL · kulüp=Fenerbahçe
