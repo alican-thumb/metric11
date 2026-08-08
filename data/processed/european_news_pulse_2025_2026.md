@@ -1,6 +1,6 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-08T10:52:39.382646+00:00
+Üretim zamanı: 2026-08-08T13:13:20.726584+00:00
 Toplam ilgili haber: 26
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
@@ -20,7 +20,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Fenerbahçe arsaVev'in rakibi OH Leuven!](https://www.haberturk.com/fenerbahce-arsavev-in-rakibi-oh-leuven-3904053-spor) — Haberturk Spor · 2026-08-07T12:56:51+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [İşte Süper Lig'de 2. ve 3. haftanın programı!](https://www.haberturk.com/trendyol-super-lig-de-2-ve-3-hafta-programlari-aciklandi-3904066-spor) — Haberturk Spor · 2026-08-07T12:41:00+00:00 · turnuva=ECL · kulüp=Beşiktaş, Alanyaspor
 - ["İyi bir kaleci sizi ayakta tutar!"](https://www.haberturk.com/spor-yazarlari-besiktas-hradec-kralove-macini-yorumladi-iyi-bir-kaleci-sizi-ayakta-tutar-3903981-spor) — Haberturk Spor · 2026-08-07T07:19:44+00:00 · turnuva=EL · kulüp=Beşiktaş
-- [UEFA Avrupa Ligi'nde 3. eleme turunda ilk maçlar oynandı](https://www.cnnturk.com/spor/futbol/uefa-avrupa-liginde-3-eleme-turunda-ilk-maclar-oynandi-3451315) — CNN Türk Spor · 2026-08-07T07:11:16+00:00 · turnuva=EL · kulüp=—
 - [İşte UEFA ülke puanı sıralamasında son durum!](https://www.haberturk.com/fenerbahce-ve-besiktas-kazandi-avantaji-aldi-uefa-ulke-puani-siralamasinda-son-durum-3903960-spor) — Haberturk Spor · 2026-08-07T06:35:19+00:00 · turnuva=CL · kulüp=Fenerbahçe, Beşiktaş
 - [Vincenzo Italiano'dan rövanş sözleri: Daha şiddetli olmalıyız](https://www.takvim.com.tr/spor/besiktas/2026/08/06/vincenzo-italianodan-rovans-sozleri-daha-siddetli-olmaliyiz) — Takvim Spor · 2026-08-06T22:50:38+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Türkiye ülke puanı sıralamasında kaçıncı? İşte UEFA'daki yerimiz (2026-2027 Sezonu)](https://www.takvim.com.tr/galeri/spor/turkiye-ulke-puani-siralamasinda-kacinci-iste-uefadaki-yerimiz-2026-2027-sezonu) — Takvim Spor · 2026-08-06T22:24:59+03:00 · turnuva=CL · kulüp=Fenerbahçe, Beşiktaş
@@ -32,3 +31,4 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Beşiktaş Avrupa'da avantaj peşinde! Italiano 11'i belirledi](https://www.takvim.com.tr/spor/besiktas/2026/08/06/besiktas-avrupada-avantaj-pesinde-italiano-11i-belirledi) — Takvim Spor · 2026-08-06T10:28:52+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [İsmail Kartal'dan rövanş için sol bek açıklaması! Nathan Ake mi Archie Brown mu?](https://www.takvim.com.tr/spor/fenerbahce/2026/08/05/ismail-kartaldan-rovans-icin-sol-bek-aciklamasi-nathan-ake-mi-archie-brown-mu) — Takvim Spor · 2026-08-06T00:12:20+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Kadıköy kalesi kapalı! Fenerbahçe Sturm Graz'ı 2-0 yendi](https://www.takvim.com.tr/spor/fenerbahce/2026/08/05/kadikoy-kalesi-kapali-fenerbahce-sturm-grazi-2-0-yendi) — Takvim Spor · 2026-08-05T19:46:27+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Sturm Graz, WSG Tirol karşısında! Maçın heyecanı canlı sohbet ile Misli'de](https://www.hurriyet.com.tr/sporarena/sturm-graz-wsg-tirol-karsisinda-macin-heyecani-canli-sohbet-ile-mislide-43258733) — Hürriyet Spor · 2026-08-01T08:43:43+00:00 · turnuva=CL · kulüp=Fenerbahçe
