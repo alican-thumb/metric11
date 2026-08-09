@@ -33,7 +33,7 @@
 |---|---:|---:|---:|---|
 | Yağız Sabuncuoğlu | 4 | 1 | 1 | PARTIAL_MEASUREMENT |
 | Ertan Süzgün | 2 | 0 | 0 | ATTRIBUTION_PENDING |
-| Sports Digitale | 2 | 0 | 0 | ATTRIBUTION_PENDING |
+| Sports Digitale | 3 | 0 | 0 | ATTRIBUTION_PENDING |
 | Yusuf Günaydın | 0 | 0 | 0 | ATTRIBUTION_PENDING |
 | Ekrem Konur | 5 | 0 | 0 | ATTRIBUTION_PENDING |
 
