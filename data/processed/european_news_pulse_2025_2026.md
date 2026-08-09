@@ -1,11 +1,13 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-09T05:17:42.841747+00:00
-Toplam ilgili haber: 17
+Üretim zamanı: 2026-08-09T07:16:15.024438+00:00
+Toplam ilgili haber: 19
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [Fenerbahçe arsaVev, yoluna UEFA Avrupa Ligi'nde devam edecek](https://www.cnnturk.com/spor/futbol/fenerbahce-arsavev-yoluna-uefa-avrupa-liginde-devam-edecek-3452094) — CNN Türk Spor · 2026-08-09T09:06:58+00:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe, Sturm Graz maçı hazırlıklarını sürdürdü](https://www.fotomac.com.tr/fenerbahce/2026/08/08/fenerbahce-sturm-graz-maci-hazirliklarini-surdurdu) — Fotomaç · 2026-08-09T01:04:06+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe arsaVev, Şampiyonlar Ligi'ne veda etti!](https://www.sabah.com.tr/spor/futbol/2026/08/08/fenerbahce-arsavev-sampiyonlar-ligine-veda-etti) — Sabah Spor · 2026-08-08T23:57:49+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe arsaVev, UEFA Şampiyonlar Ligi elemelerinde OH Leuven'e penaltılarla yenildi](https://www.hurriyet.com.tr/sporarena/fenerbahce-arsavev-uefa-sampiyonlar-ligi-elemelerinde-oh-leuvene-penaltilarla-yenildi-43266901) — Hürriyet Spor · 2026-08-08T21:39:01+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [8 AĞUSTOS GÜNÜN MAÇLARI: Bugün hangi takımların maçı var, saat kaçta, hangi kanalda? Şampiyonlar Ligi, Avrupa Ligi ve Konferans Ligi maç programı](https://www.cnnturk.com/spor/8-agustos-gunun-maclari-bugun-hangi-takimlarin-maci-var-saat-kacta-hangi-kanalda-sampiyonlar-ligi-avrupa-ligi-ve-konferans-ligi-mac-3450626) — CNN Türk Spor · 2026-08-08T12:04:02+00:00 · turnuva=CL · kulüp=—
