@@ -1,19 +1,18 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-09T03:58:23.618734+00:00
-Toplam ilgili haber: 18
+Üretim zamanı: 2026-08-09T05:17:42.841747+00:00
+Toplam ilgili haber: 17
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
-- [Fenerbahçe arsaVev, Şampiyonlar Ligi'ne veda etti](https://www.aksam.com.tr/spor/fenerbahce-arsavev-sampiyonlar-ligine-veda-etti/haber-1689104) — Aksam Spor · 2026-08-09T00:56:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe arsaVev, Şampiyonlar Ligi'ne veda etti!](https://www.sabah.com.tr/spor/futbol/2026/08/08/fenerbahce-arsavev-sampiyonlar-ligine-veda-etti) — Sabah Spor · 2026-08-08T23:57:49+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe arsaVev, UEFA Şampiyonlar Ligi elemelerinde OH Leuven'e penaltılarla yenildi](https://www.hurriyet.com.tr/sporarena/fenerbahce-arsavev-uefa-sampiyonlar-ligi-elemelerinde-oh-leuvene-penaltilarla-yenildi-43266901) — Hürriyet Spor · 2026-08-08T21:39:01+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Fenerbahçe, Sturm Graz maçı hazırlıklarını sürdürdü](https://www.fotomac.com.tr/fenerbahce/2026/08/08/fenerbahce-sturm-graz-maci-hazirliklarini-surdurdu) — Fotomaç · 2026-08-08T21:15:22+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [8 AĞUSTOS GÜNÜN MAÇLARI: Bugün hangi takımların maçı var, saat kaçta, hangi kanalda? Şampiyonlar Ligi, Avrupa Ligi ve Konferans Ligi maç programı](https://www.cnnturk.com/spor/8-agustos-gunun-maclari-bugun-hangi-takimlarin-maci-var-saat-kacta-hangi-kanalda-sampiyonlar-ligi-avrupa-ligi-ve-konferans-ligi-mac-3450626) — CNN Türk Spor · 2026-08-08T12:04:02+00:00 · turnuva=CL · kulüp=—
 - [Pavlidis transferinde flaş detay! Fenerbahçe'ye gelse bile Avrupa'da yok](https://www.takvim.com.tr/spor/fenerbahce/2026/08/08/pavlidis-transferinde-flas-detay-gelse-bile-avrupada-yok) — Takvim Spor · 2026-08-08T11:31:40+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Semih Kılıçsoy’un golü İtalya’da yankı buldu: Cagliari’de “kaçırılan fırsat” yorumları](https://www.cnnturk.com/spor/futbol/semih-kilicsoyun-golu-italyada-yanki-buldu-cagliaride-kacirilan-firsat-yorumlari-3451737) — CNN Türk Spor · 2026-08-08T11:06:14+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş’ta takım ruhu yükselişte: Italiano etkisi ve Nübel’in disiplini fark yarattı](https://www.cnnturk.com/spor/futbol/besiktasta-takim-ruhu-yukseliste-italiano-etkisi-ve-nubelin-disiplini-fark-yaratti-3451722) — CNN Türk Spor · 2026-08-08T10:09:53+00:00 · turnuva=EL · kulüp=Beşiktaş
+- [Beşiktaş Salah'ın rövanşını aldı, Trabzonspor'un istediği yıldızı bitiriyor | Transfer hattı - NTVSpor](https://news.google.com/rss/articles/CBMiygFBVV95cUxNY1JCY3JUeFVnQ2RFOVZYVkd2SUVFNXBJODdXNDJsRlZBb1RHbkUza1NJeWN1czM2cWtrUmxzSTY5UUk3RF91R1UtTUUzV2Y2NE1YeTlaa0U4d2VfTGZUR0d1elcxVlRLNlBGenhWdnhaeEhXU0xMcGIxT0ZSVzdTejh3RG5IeEwxQ0VMaXhYTjZMRlZrMWFQam9NeDFtOVVZcXRMbGVCamo1TVF2TnpKUlp1YXNfZWlXVjVTbVg2MzhoNzZVMWxlWVl30gHPAUFVX3lxTE5fd3ItZ2NOdWhfZ1RvWTE3VlFwcWZpWGJ0WHdyQUpINEkwWHk3T0RXZHJYWHlqbUU2LVJGS1Y0dzBKbk1ubXgxaXhhcVlwLWVINzlzOE84aEtqT2ZINkZfTmxPQTRoYkIyTHotekRuZ3dVQVIxYjROMVU4Y1BoOUY1ajF5NzhzNGY0eXRmX2U5aE45VWlUblRid3dmNlpKSklnOEU1X2FOcWJFOWFwNEEtOXp4akVIMGItU2VTbXNqQlNiRHljZVlwQUhMU3JXRQ?oc=5) — NTVSpor · 2026-08-08T05:43:14+00:00 · turnuva=— · kulüp=Beşiktaş, Trabzonspor
 - [Kriz sona ermedi! UEFA'nın inadı inat](https://www.hurriyet.com.tr/sporarena/kriz-sona-ermedi-uefanin-inadi-inat-43265937) — Hürriyet Spor · 2026-08-08T04:00:00+00:00 · turnuva=— · kulüp=—
 - [Vincenzo Italiano'dan rövanş sözleri: Daha şiddetli olmalıyız](https://www.takvim.com.tr/spor/besiktas/2026/08/06/vincenzo-italianodan-rovans-sozleri-daha-siddetli-olmaliyiz) — Takvim Spor · 2026-08-06T22:50:38+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Türkiye ülke puanı sıralamasında kaçıncı? İşte UEFA'daki yerimiz (2026-2027 Sezonu)](https://www.takvim.com.tr/galeri/spor/turkiye-ulke-puani-siralamasinda-kacinci-iste-uefadaki-yerimiz-2026-2027-sezonu) — Takvim Spor · 2026-08-06T22:24:59+03:00 · turnuva=CL · kulüp=Fenerbahçe, Beşiktaş
