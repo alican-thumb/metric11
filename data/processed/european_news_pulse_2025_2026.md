@@ -1,25 +1,24 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-09T14:53:52.446180+00:00
-Toplam ilgili haber: 25
+Üretim zamanı: 2026-08-09T19:01:08.167398+00:00
+Toplam ilgili haber: 24
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [Fenerbahçe'de Sturm Graz mesaisi devam ediyor](https://www.aksam.com.tr/spor/fenerbahcede-sturm-graz-mesaisi-devam-ediyor/haber-1689289) — Aksam Spor · 2026-08-09T21:34:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe, Sturm Graz maçının hazırlıklarını sürdürdü](https://www.sabah.com.tr/spor/futbol/2026/08/09/fenerbahce-sturm-graz-macinin-hazirliklarini-surdurdu) — Sabah Spor · 2026-08-09T21:15:36+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe, Graz maçı hazırlıklarını sürdürdü!](https://www.haberturk.com/fenerbahce-sturm-graz-macinin-hazirliklarini-surdurdu-3904444-spor) — Haberturk Spor · 2026-08-09T18:30:26+00:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Emmanuel Emegha, Galatasaray'a önerildi! 'Transfere sıcak'](https://www.hurriyet.com.tr/sporarena/emmanuel-emegha-galatasaraya-onerildi-transfere-sicak-43267633) — Hürriyet Spor · 2026-08-09T17:58:39+00:00 · turnuva=EL · kulüp=Galatasaray
+- [Emmanuel Emegha, Galatasaray'a önerildi! 'Transfere sıcak' - Hürriyet](https://news.google.com/rss/articles/CBMiogFBVV95cUxQRXpCZ3NtRDBSdk9TUVgzcnl5YmlQWTN6bXJGdXlVWlgyWG9xTmFCX1l5Vk5yT2dKbUZBRjJpV3B2VWpncEY1NDYzdmQxRFBzbHVNX2pqRlY0MVpiOFU2ZVpueDdqVnRfN0I1dFBBOEhBR1pNM1FoeWJRV0tmbExLX2sxYUxudElrbUpWVDNtMGVOUDhnU0ZTbkJkbDlyTk9aVGc?oc=5) — Hürriyet · 2026-08-09T17:58:39+00:00 · turnuva=EL · kulüp=Galatasaray
 - [Beşiktaş-Hradec Kralove maçının hakemi belli oldu!](https://www.takvim.com.tr/spor/besiktas/2026/08/09/besiktas-hradec-kralove-macinin-hakemi-belli-oldu) — Takvim Spor · 2026-08-09T16:10:01+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [9 AĞUSTOS GÜNÜN MAÇLARI: Bugün hangi takımların maçı var, saat kaçta, hangi kanalda?](https://www.cnnturk.com/spor/9-agustos-gunun-maclari-bugun-hangi-takimlarin-maci-var-saat-kacta-hangi-kanalda-3450626) — CNN Türk Spor · 2026-08-09T15:53:30+00:00 · turnuva=CL · kulüp=—
-- [Beşiktaş'ın Hradec Kralove rövanş mesaisi başladı](https://www.fotomac.com.tr/besiktas/2026/08/09/besiktasin-hradec-kralove-rovans-mesaisi-basladi) — Fotomaç · 2026-08-09T15:40:35+03:00 · turnuva=EL · kulüp=Beşiktaş
-- [Beşiktaş'ta Hradec Kralove mesaisi!](https://www.sabah.com.tr/spor/futbol/2026/08/09/besiktasta-hradec-kralove-mesaisi) — Sabah Spor · 2026-08-09T14:54:13+03:00 · turnuva=— · kulüp=Beşiktaş
 - [Beşiktaş, iki günlük iznin ardından rövanş maçı hazırlıklarına başladı](https://www.cnnturk.com/spor/futbol/besiktas-iki-gunluk-iznin-ardindan-rovans-maci-hazirliklarina-basladi-3452199) — CNN Türk Spor · 2026-08-09T14:11:39+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş'ta Hradec Kralove rövanş maçının hazırlıkları başladı](https://www.aa.com.tr/tr/spor/besiktasta-hradec-kralove-rovans-macinin-hazirliklari-basladi/4022431) — Anadolu Ajansı Spor · 2026-08-09T14:07:23+03:00 · turnuva=EL · kulüp=Beşiktaş
-- [Beşiktaş-Hradec Kralove maçının hakemi belli oldu!](https://www.sabah.com.tr/spor/futbol/2026/08/09/besiktas-hradec-kralove-macinin-hakemi-belli-oldu) — Sabah Spor · 2026-08-09T13:57:53+03:00 · turnuva=— · kulüp=Beşiktaş
 - [Beşiktaş - Hradec Kralove maçının hakemi belli oldu](https://www.cnnturk.com/spor/futbol/besiktas-hradec-kralove-macinin-hakemi-belli-oldu-3452192) — CNN Türk Spor · 2026-08-09T13:11:57+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Sturm Graz'ın eski futbolcusu Jakob Jantscher, Fenerbahçe maçını değerlendirdi](https://www.hurriyet.com.tr/sporarena/sturm-grazin-eski-futbolcusu-jakob-jantscher-fenerbahce-macini-degerlendirdi-43267440) — Hürriyet Spor · 2026-08-09T13:10:39+00:00 · turnuva=— · kulüp=Fenerbahçe
-- [Sturm Graz-Fenerbahçe maçına İspanyol hakem!](https://www.fotomac.com.tr/sampiyonlarligi/2026/08/09/sturm-graz-fenerbahce-macina-ispanyol-hakem) — Fotomaç · 2026-08-09T13:06:26+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Beşiktaş'ın maçına İsviçreli hakem!](https://www.fotomac.com.tr/avrupaligi/2026/08/09/besiktasin-macina-isvicreli-hakem) — Fotomaç · 2026-08-09T13:02:09+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş-Hradec Kralove rövanş maçını İsviçreli hakem Urs Schnyder yönetecek](https://www.aa.com.tr/tr/spor/besiktas-hradec-kralove-rovans-macini-isvicreli-hakem-urs-schnyder-yonetecek/4022385) — Anadolu Ajansı Spor · 2026-08-09T12:51:53+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş'ta Hradec Kralove rövanş maçının hazırlıkları başladı](https://www.hurriyet.com.tr/sporarena/besiktasta-hradec-kralove-rovans-macinin-hazirliklari-basladi-43267423) — Hürriyet Spor · 2026-08-09T12:45:46+00:00 · turnuva=EL · kulüp=Beşiktaş
-- [Jakob Jantscher: Sturm Graz, erken gol bulmak için her şeyi deneyecektir](https://www.fotomac.com.tr/fenerbahce/2026/08/09/jakob-jantscher-sturm-graz-erken-gol-bulmak-icin-her-seyi-deneyecektir) — Fotomaç · 2026-08-09T11:36:47+03:00 · turnuva=— · kulüp=Fenerbahçe
 - [Beşiktaş'ta Hradec Kralove mesaisi!](https://www.haberturk.com/besiktas-ta-hradec-kralove-mesaisi-3904385-spor) — Haberturk Spor · 2026-08-09T11:27:02+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş - Hradec Kralove maçının hakemi açıklandı!](https://www.hurriyet.com.tr/sporarena/besiktas-hradec-kralove-macinin-hakemi-aciklandi-43267304) — Hürriyet Spor · 2026-08-09T10:54:21+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş maçına İsviçreli hakem!](https://www.haberturk.com/besiktas-hradec-kralove-macina-isvicreli-hakem-3904374-spor) — Haberturk Spor · 2026-08-09T09:58:00+00:00 · turnuva=EL · kulüp=Beşiktaş
