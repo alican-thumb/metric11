@@ -1,19 +1,20 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-09T13:17:08.933684+00:00
-Toplam ilgili haber: 26
+Üretim zamanı: 2026-08-09T14:53:52.446180+00:00
+Toplam ilgili haber: 25
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [Beşiktaş-Hradec Kralove maçının hakemi belli oldu!](https://www.takvim.com.tr/spor/besiktas/2026/08/09/besiktas-hradec-kralove-macinin-hakemi-belli-oldu) — Takvim Spor · 2026-08-09T16:10:01+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [9 AĞUSTOS GÜNÜN MAÇLARI: Bugün hangi takımların maçı var, saat kaçta, hangi kanalda?](https://www.cnnturk.com/spor/9-agustos-gunun-maclari-bugun-hangi-takimlarin-maci-var-saat-kacta-hangi-kanalda-3450626) — CNN Türk Spor · 2026-08-09T15:53:30+00:00 · turnuva=CL · kulüp=—
 - [Beşiktaş'ın Hradec Kralove rövanş mesaisi başladı](https://www.fotomac.com.tr/besiktas/2026/08/09/besiktasin-hradec-kralove-rovans-mesaisi-basladi) — Fotomaç · 2026-08-09T15:40:35+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş'ta Hradec Kralove mesaisi!](https://www.sabah.com.tr/spor/futbol/2026/08/09/besiktasta-hradec-kralove-mesaisi) — Sabah Spor · 2026-08-09T14:54:13+03:00 · turnuva=— · kulüp=Beşiktaş
-- [Beşiktaş'ta Hradec Kralove mesaisi başladı](https://www.aksam.com.tr/spor/besiktasta-hradec-kralove-mesaisi-basladi/haber-1689224) — Aksam Spor · 2026-08-09T14:21:00+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş, iki günlük iznin ardından rövanş maçı hazırlıklarına başladı](https://www.cnnturk.com/spor/futbol/besiktas-iki-gunluk-iznin-ardindan-rovans-maci-hazirliklarina-basladi-3452199) — CNN Türk Spor · 2026-08-09T14:11:39+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş'ta Hradec Kralove rövanş maçının hazırlıkları başladı](https://www.aa.com.tr/tr/spor/besiktasta-hradec-kralove-rovans-macinin-hazirliklari-basladi/4022431) — Anadolu Ajansı Spor · 2026-08-09T14:07:23+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş-Hradec Kralove maçının hakemi belli oldu!](https://www.sabah.com.tr/spor/futbol/2026/08/09/besiktas-hradec-kralove-macinin-hakemi-belli-oldu) — Sabah Spor · 2026-08-09T13:57:53+03:00 · turnuva=— · kulüp=Beşiktaş
 - [Beşiktaş - Hradec Kralove maçının hakemi belli oldu](https://www.cnnturk.com/spor/futbol/besiktas-hradec-kralove-macinin-hakemi-belli-oldu-3452192) — CNN Türk Spor · 2026-08-09T13:11:57+00:00 · turnuva=EL · kulüp=Beşiktaş
+- [Sturm Graz'ın eski futbolcusu Jakob Jantscher, Fenerbahçe maçını değerlendirdi](https://www.hurriyet.com.tr/sporarena/sturm-grazin-eski-futbolcusu-jakob-jantscher-fenerbahce-macini-degerlendirdi-43267440) — Hürriyet Spor · 2026-08-09T13:10:39+00:00 · turnuva=— · kulüp=Fenerbahçe
 - [Sturm Graz-Fenerbahçe maçına İspanyol hakem!](https://www.fotomac.com.tr/sampiyonlarligi/2026/08/09/sturm-graz-fenerbahce-macina-ispanyol-hakem) — Fotomaç · 2026-08-09T13:06:26+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Beşiktaş'ın maçına İsviçreli hakem!](https://www.fotomac.com.tr/avrupaligi/2026/08/09/besiktasin-macina-isvicreli-hakem) — Fotomaç · 2026-08-09T13:02:09+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş-Hradec Kralove rövanş maçını İsviçreli hakem Urs Schnyder yönetecek](https://www.aa.com.tr/tr/spor/besiktas-hradec-kralove-rovans-macini-isvicreli-hakem-urs-schnyder-yonetecek/4022385) — Anadolu Ajansı Spor · 2026-08-09T12:51:53+03:00 · turnuva=EL · kulüp=Beşiktaş
@@ -24,11 +25,9 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Beşiktaş maçına İsviçreli hakem!](https://www.haberturk.com/besiktas-hradec-kralove-macina-isvicreli-hakem-3904374-spor) — Haberturk Spor · 2026-08-09T09:58:00+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Fenerbahçe arsaVev, yoluna UEFA Avrupa Ligi'nde devam edecek](https://www.cnnturk.com/spor/futbol/fenerbahce-arsavev-yoluna-uefa-avrupa-liginde-devam-edecek-3452094) — CNN Türk Spor · 2026-08-09T09:06:58+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - ["Graz erken gol bulursa maç tersine dönebilir"](https://www.haberturk.com/jakob-jantscher-sturm-graz-erken-gol-bulursa-mac-tersine-donebilir-3904351-spor) — Haberturk Spor · 2026-08-09T08:03:02+00:00 · turnuva=— · kulüp=Fenerbahçe
-- [Fenerbahçe arsaVev, Şampiyonlar Ligi'ne veda etti!](https://www.sabah.com.tr/spor/futbol/2026/08/08/fenerbahce-arsavev-sampiyonlar-ligine-veda-etti) — Sabah Spor · 2026-08-08T23:57:49+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe arsaVev, UEFA Şampiyonlar Ligi elemelerinde OH Leuven'e penaltılarla yenildi](https://www.hurriyet.com.tr/sporarena/fenerbahce-arsavev-uefa-sampiyonlar-ligi-elemelerinde-oh-leuvene-penaltilarla-yenildi-43266901) — Hürriyet Spor · 2026-08-08T21:39:01+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Pavlidis transferinde flaş detay! Fenerbahçe'ye gelse bile Avrupa'da yok](https://www.takvim.com.tr/spor/fenerbahce/2026/08/08/pavlidis-transferinde-flas-detay-gelse-bile-avrupada-yok) — Takvim Spor · 2026-08-08T11:31:40+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Beşiktaş Salah'ın rövanşını aldı, Trabzonspor'un istediği yıldızı bitiriyor | Transfer hattı - NTVSpor](https://news.google.com/rss/articles/CBMiygFBVV95cUxNY1JCY3JUeFVnQ2RFOVZYVkd2SUVFNXBJODdXNDJsRlZBb1RHbkUza1NJeWN1czM2cWtrUmxzSTY5UUk3RF91R1UtTUUzV2Y2NE1YeTlaa0U4d2VfTGZUR0d1elcxVlRLNlBGenhWdnhaeEhXU0xMcGIxT0ZSVzdTejh3RG5IeEwxQ0VMaXhYTjZMRlZrMWFQam9NeDFtOVVZcXRMbGVCamo1TVF2TnpKUlp1YXNfZWlXVjVTbVg2MzhoNzZVMWxlWVl30gHPAUFVX3lxTE5fd3ItZ2NOdWhfZ1RvWTE3VlFwcWZpWGJ0WHdyQUpINEkwWHk3T0RXZHJYWHlqbUU2LVJGS1Y0dzBKbk1ubXgxaXhhcVlwLWVINzlzOE84aEtqT2ZINkZfTmxPQTRoYkIyTHotekRuZ3dVQVIxYjROMVU4Y1BoOUY1ajF5NzhzNGY0eXRmX2U5aE45VWlUblRid3dmNlpKSklnOEU1X2FOcWJFOWFwNEEtOXp4akVIMGItU2VTbXNqQlNiRHljZVlwQUhMU3JXRQ?oc=5) — NTVSpor · 2026-08-08T05:43:14+00:00 · turnuva=— · kulüp=Beşiktaş, Trabzonspor
-- [Vincenzo Italiano'dan rövanş sözleri: Daha şiddetli olmalıyız](https://www.takvim.com.tr/spor/besiktas/2026/08/06/vincenzo-italianodan-rovans-sozleri-daha-siddetli-olmaliyiz) — Takvim Spor · 2026-08-06T22:50:38+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Türkiye ülke puanı sıralamasında kaçıncı? İşte UEFA'daki yerimiz (2026-2027 Sezonu)](https://www.takvim.com.tr/galeri/spor/turkiye-ulke-puani-siralamasinda-kacinci-iste-uefadaki-yerimiz-2026-2027-sezonu) — Takvim Spor · 2026-08-06T22:24:59+03:00 · turnuva=CL · kulüp=Fenerbahçe, Beşiktaş
 - [Çekya'da vurgun! Beşiktaş, Hradec Kralove'yi 1-0 yendi](https://www.takvim.com.tr/spor/besiktas/2026/08/06/cekyada-vurgun-besiktas-hradec-kraloveyi-1-0-yendi) — Takvim Spor · 2026-08-06T18:46:14+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Sturm Graz, WSG Tirol karşısında! Maçın heyecanı canlı sohbet ile Misli'de](https://www.hurriyet.com.tr/sporarena/sturm-graz-wsg-tirol-karsisinda-macin-heyecani-canli-sohbet-ile-mislide-43258733) — Hürriyet Spor · 2026-08-01T08:43:43+00:00 · turnuva=CL · kulüp=Fenerbahçe
