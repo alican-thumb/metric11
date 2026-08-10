@@ -1,6 +1,6 @@
 # Erken Haber Kaynak Performansı
 
-- Transfer sinyali: 48
+- Transfer sinyali: 50
 - Resmi olaya dönüşen transfer: 8
 - Yayın zamanı bulunan resmi teyit: 3/8
 - İlk görülme zamanı bulunan resmi teyit: 8/8
@@ -8,11 +8,11 @@
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 0
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 3425
+- Defterde korunan ilk iddia gözlemi: 3428
 
 ## Kanal Kapsamı
 
-- Google News: 301 haber, 30/30 başarılı sorgu.
+- Google News: 294 haber, 30/30 başarılı sorgu.
 - Telegram: 6 mesaj, 8/8 erişilebilir kanal.
 - X: durum=MISSING_CREDENTIALS, gönderi=0, yapılandırılmış hesap=45.
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 3422 | 1088 | 1 | — | — | %99.9 | 0.1 | PARTIAL_MEASUREMENT |
+| Google News / medya | 3425 | 1090 | 1 | — | — | %99.9 | 0.1 | PARTIAL_MEASUREMENT |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -54,7 +54,7 @@
 | Takvim | MEDIA | 211 | 32 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Aksam Spor | MEDIA | 172 | 16 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Haberturk Spor | MEDIA | 135 | 12 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
-| Fanatik | MEDIA | 95 | 34 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Fanatik | MEDIA | 96 | 35 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Milliyet | MEDIA | 93 | 19 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | NTVSpor | MEDIA | 91 | 20 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Sporx.com | MEDIA | 90 | 74 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
@@ -172,6 +172,7 @@
 | fotomac.com.tr | MEDIA | 5 | 2 | 0 | — | — | — | — | OBSERVING |
 | sporx.com | MEDIA | 5 | 5 | 0 | — | — | — | — | OBSERVING |
 | Gunebakış | MEDIA | 4 | 0 | 0 | — | — | — | — | OBSERVING |
+| milliyet.com.tr | MEDIA | 4 | 2 | 0 | — | — | — | — | OBSERVING |
 | mynet.com | MEDIA | 4 | 3 | 0 | — | — | — | — | OBSERVING |
 | sabah.com.tr | MEDIA | 4 | 2 | 0 | — | — | — | — | OBSERVING |
 | takvim.com.tr | MEDIA | 4 | 2 | 0 | — | — | — | — | OBSERVING |
@@ -180,7 +181,6 @@
 | Erzurum Gazetesi | MEDIA | 3 | 2 | 0 | — | — | — | — | OBSERVING |
 | Rizedeyiz | MEDIA | 3 | 2 | 0 | — | — | — | — | OBSERVING |
 | Samsun Gazetesi | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
-| milliyet.com.tr | MEDIA | 3 | 1 | 0 | — | — | — | — | OBSERVING |
 | samsunhaber.com | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
 | yenisafak.com | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
 | 24saatgazetesi.com | MEDIA | 2 | 2 | 0 | — | — | — | — | OBSERVING |
@@ -204,6 +204,7 @@
 | samsungazetesi.com | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | t24.com.tr | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | tv100 Haber | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
+| yenicaggazetesi.com | MEDIA | 2 | 1 | 0 | — | — | — | — | OBSERVING |
 | İz Gazete | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | AS TV | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | Afyon Şehir | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
@@ -282,7 +283,6 @@
 | sozcu.com.tr | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | tibbiyebulteni.com | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | tv100.com | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
-| yenicaggazetesi.com | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | yenihaberden.com | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | yerel-haberler.haberturk.com | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | yozgatgazetesi.com | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
