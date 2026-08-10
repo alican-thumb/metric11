@@ -1,12 +1,11 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-10T13:44:24.478027+00:00
-Toplam ilgili haber: 38
+Üretim zamanı: 2026-08-10T15:17:10.808947+00:00
+Toplam ilgili haber: 36
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
-- [Beşiktaş'ta Hradec Kralove mesaisi sürüyor](https://www.aksam.com.tr/spor/besiktasta-hradec-kralove-mesaisi-suruyor/haber-1689465) — Aksam Spor · 2026-08-10T15:23:00+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş'ın Hradec Kralove mesaisi devam etti](https://www.fotomac.com.tr/besiktas/2026/08/10/besiktasin-hradec-kralove-mesaisi-devam-etti) — Fotomaç · 2026-08-10T15:19:13+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [UEFA, AFC ve CONCACAF, ortak açıklamayla Infantino'ya eleştiride bulundu](https://www.cnnturk.com/spor/futbol/uefa-afc-ve-concacaf-ortak-aciklamayla-infantinoya-elestiride-bulundu-3452544) — CNN Türk Spor · 2026-08-10T13:46:00+00:00 · turnuva=— · kulüp=—
 - [UEFA, AFC ve CONCACAF, ortak açıklamayla FIFA Başkanı Infantino'yu eleştirdi!](https://www.sabah.com.tr/spor/futbol/2026/08/10/uefa-afc-ve-concacaf-ortak-aciklamayla-fifa-baskani-infantinoyu-elestirdi) — Sabah Spor · 2026-08-10T13:07:58+03:00 · turnuva=— · kulüp=—
@@ -41,6 +40,5 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Beşiktaş'ta Hradec Kralove rövanş maçının hazırlıkları başladı](https://www.aa.com.tr/tr/spor/besiktasta-hradec-kralove-rovans-macinin-hazirliklari-basladi/4022431) — Anadolu Ajansı Spor · 2026-08-09T14:07:23+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş - Hradec Kralove maçının hakemi belli oldu](https://www.cnnturk.com/spor/futbol/besiktas-hradec-kralove-macinin-hakemi-belli-oldu-3452192) — CNN Türk Spor · 2026-08-09T13:11:57+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Sturm Graz'ın eski futbolcusu Jakob Jantscher, Fenerbahçe maçını değerlendirdi](https://www.hurriyet.com.tr/sporarena/sturm-grazin-eski-futbolcusu-jakob-jantscher-fenerbahce-macini-degerlendirdi-43267440) — Hürriyet Spor · 2026-08-09T13:10:39+00:00 · turnuva=— · kulüp=Fenerbahçe
-- [Beşiktaş'ta Hradec Kralove rövanş maçının hazırlıkları başladı](https://www.hurriyet.com.tr/sporarena/besiktasta-hradec-kralove-rovans-macinin-hazirliklari-basladi-43267423) — Hürriyet Spor · 2026-08-09T12:45:46+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Pavlidis transferinde flaş detay! Fenerbahçe'ye gelse bile Avrupa'da yok](https://www.takvim.com.tr/spor/fenerbahce/2026/08/08/pavlidis-transferinde-flas-detay-gelse-bile-avrupada-yok) — Takvim Spor · 2026-08-08T11:31:40+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Beşiktaş Salah'ın rövanşını aldı, Trabzonspor'un istediği yıldızı bitiriyor | Transfer hattı - NTVSpor](https://news.google.com/rss/articles/CBMiygFBVV95cUxNY1JCY3JUeFVnQ2RFOVZYVkd2SUVFNXBJODdXNDJsRlZBb1RHbkUza1NJeWN1czM2cWtrUmxzSTY5UUk3RF91R1UtTUUzV2Y2NE1YeTlaa0U4d2VfTGZUR0d1elcxVlRLNlBGenhWdnhaeEhXU0xMcGIxT0ZSVzdTejh3RG5IeEwxQ0VMaXhYTjZMRlZrMWFQam9NeDFtOVVZcXRMbGVCamo1TVF2TnpKUlp1YXNfZWlXVjVTbVg2MzhoNzZVMWxlWVl30gHPAUFVX3lxTE5fd3ItZ2NOdWhfZ1RvWTE3VlFwcWZpWGJ0WHdyQUpINEkwWHk3T0RXZHJYWHlqbUU2LVJGS1Y0dzBKbk1ubXgxaXhhcVlwLWVINzlzOE84aEtqT2ZINkZfTmxPQTRoYkIyTHotekRuZ3dVQVIxYjROMVU4Y1BoOUY1ajF5NzhzNGY0eXRmX2U5aE45VWlUblRid3dmNlpKSklnOEU1X2FOcWJFOWFwNEEtOXp4akVIMGItU2VTbXNqQlNiRHljZVlwQUhMU3JXRQ?oc=5) — NTVSpor · 2026-08-08T05:43:14+00:00 · turnuva=— · kulüp=Beşiktaş, Trabzonspor
