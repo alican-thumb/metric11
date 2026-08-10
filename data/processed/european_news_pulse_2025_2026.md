@@ -1,18 +1,26 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-10T05:39:27.882629+00:00
-Toplam ilgili haber: 24
+Üretim zamanı: 2026-08-10T08:05:46.882272+00:00
+Toplam ilgili haber: 29
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
-- [Sturm Graz-Fenerbahçe maçına İspanyol hakem!](https://www.fotomac.com.tr/sampiyonlarligi/2026/08/09/sturm-graz-fenerbahce-macina-ispanyol-hakem) — Fotomaç · 2026-08-09T23:59:40+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Beşiktaş'ın maçına İsviçreli hakem!](https://www.fotomac.com.tr/avrupaligi/2026/08/09/besiktasin-macina-isvicreli-hakem) — Fotomaç · 2026-08-09T23:59:39+03:00 · turnuva=EL · kulüp=Beşiktaş
+- [Avrupa Ligi'nde 3. eleme turu rövanş heyecanı başlıyor](https://www.aksam.com.tr/spor/avrupa-liginde-3-eleme-turu-rovans-heyecani-basliyor/haber-1689388) — Aksam Spor · 2026-08-10T10:55:00+03:00 · turnuva=EL · kulüp=Beşiktaş
+- [UEFA Avrupa Ligi'nde 3. eleme turu rövanşları yarın başlayacak](https://www.aa.com.tr/tr/spor/uefa-avrupa-liginde-3-eleme-turu-rovanslari-yarin-baslayacak/4022774) — Anadolu Ajansı Spor · 2026-08-10T10:16:44+03:00 · turnuva=EL · kulüp=—
+- [Adım adım Şampiyonlar Ligi'ne! Fenerbahçe'nin rakibi Sturm Graz](https://www.aksam.com.tr/spor/adim-adim-sampiyonlar-ligine-fenerbahcenin-rakibi-sturm-graz/haber-1689377) — Aksam Spor · 2026-08-10T10:16:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Şampiyonlar Ligi'nde play-off bileti alan takımlar belli oluyor](https://www.cnnturk.com/spor/futbol/sampiyonlar-liginde-play-off-bileti-alan-takimlar-belli-oluyor-3452441) — CNN Türk Spor · 2026-08-10T10:05:40+00:00 · turnuva=CL · kulüp=—
+- [Şampiyonlar Ligi'nde 3. eleme turunda rövanş heyecanı başlıyor](https://www.aksam.com.tr/spor/sampiyonlar-liginde-3-eleme-turunda-rovans-heyecani-basliyor/haber-1689374) — Aksam Spor · 2026-08-10T10:04:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [UEFA Şampiyonlar Ligi'nde 3. tur rövanş heyecanı!](https://www.sabah.com.tr/spor/futbol/2026/08/10/uefa-sampiyonlar-liginde-3-tur-rovans-heyecani) — Sabah Spor · 2026-08-10T09:52:54+03:00 · turnuva=CL · kulüp=—
+- [UEFA Şampiyonlar Ligi'nde 3. eleme turu rövanş maçları yarın yapılacak](https://www.aa.com.tr/tr/spor/uefa-sampiyonlar-liginde-3-eleme-turu-rovans-maclari-yarin-yapilacak/4022756) — Anadolu Ajansı Spor · 2026-08-10T09:50:40+03:00 · turnuva=CL · kulüp=—
+- [Fenerbahçe, Şampiyonlar Ligi play-off turu için sahaya çıkıyor](https://www.sabah.com.tr/spor/futbol/2026/08/10/fenerbahce-sampiyonlar-ligi-play-off-turu-icin-sahaya-cikiyor) — Sabah Spor · 2026-08-10T09:37:31+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe, Şampiyonlar Ligi play-off turu için sahaya çıkıyor](https://www.aa.com.tr/tr/spor/fenerbahce-sampiyonlar-ligi-play-off-turu-icin-sahaya-cikiyor/4022739) — Anadolu Ajansı Spor · 2026-08-10T09:23:27+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Devler Ligi'nde rövanş zamanı!](https://www.haberturk.com/sampiyonlar-ligi-nde-rovans-zamani-3904506-spor) — Haberturk Spor · 2026-08-10T07:21:06+00:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe, Şampiyonlar Ligi play-off turu için sahaya çıkıyor](https://www.hurriyet.com.tr/sporarena/fenerbahce-sampiyonlar-ligi-play-off-turu-icin-sahaya-cikiyor-43267928) — Hürriyet Spor · 2026-08-10T07:01:08+00:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe'de hedef Devler Ligi play-off'u!](https://www.haberturk.com/fenerbahce-sampiyonlar-ligi-play-off-turu-icin-sahaya-cikiyor-iste-ismail-kartal-in-11-i-3904499-spor) — Haberturk Spor · 2026-08-10T06:46:35+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe, Sturm Graz maçının hazırlıklarını sürdürdü](https://www.sabah.com.tr/spor/futbol/2026/08/09/fenerbahce-sturm-graz-macinin-hazirliklarini-surdurdu) — Sabah Spor · 2026-08-09T21:15:36+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Nübel huzur getirir](https://www.fotomac.com.tr/besiktas/2026/08/10/nubel-huzur-getirir) — Fotomaç · 2026-08-09T20:11:47+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Fenerbahçe, Graz maçı hazırlıklarını sürdürdü!](https://www.haberturk.com/fenerbahce-sturm-graz-macinin-hazirliklarini-surdurdu-3904444-spor) — Haberturk Spor · 2026-08-09T18:30:26+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Emmanuel Emegha, Galatasaray'a önerildi! 'Transfere sıcak'](https://www.hurriyet.com.tr/sporarena/emmanuel-emegha-galatasaraya-onerildi-transfere-sicak-43267633) — Hürriyet Spor · 2026-08-09T17:58:39+00:00 · turnuva=EL · kulüp=Galatasaray
-- [Emmanuel Emegha, Galatasaray'a önerildi! 'Transfere sıcak' - Hürriyet](https://news.google.com/rss/articles/CBMiogFBVV95cUxQRXpCZ3NtRDBSdk9TUVgzcnl5YmlQWTN6bXJGdXlVWlgyWG9xTmFCX1l5Vk5yT2dKbUZBRjJpV3B2VWpncEY1NDYzdmQxRFBzbHVNX2pqRlY0MVpiOFU2ZVpueDdqVnRfN0I1dFBBOEhBR1pNM1FoeWJRV0tmbExLX2sxYUxudElrbUpWVDNtMGVOUDhnU0ZTbkJkbDlyTk9aVGc?oc=5) — Hürriyet · 2026-08-09T17:58:39+00:00 · turnuva=EL · kulüp=Galatasaray
 - [Beşiktaş-Hradec Kralove maçının hakemi belli oldu!](https://www.takvim.com.tr/spor/besiktas/2026/08/09/besiktas-hradec-kralove-macinin-hakemi-belli-oldu) — Takvim Spor · 2026-08-09T16:10:01+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [9 AĞUSTOS GÜNÜN MAÇLARI: Bugün hangi takımların maçı var, saat kaçta, hangi kanalda?](https://www.cnnturk.com/spor/9-agustos-gunun-maclari-bugun-hangi-takimlarin-maci-var-saat-kacta-hangi-kanalda-3450626) — CNN Türk Spor · 2026-08-09T15:53:30+00:00 · turnuva=CL · kulüp=—
 - [Beşiktaş, iki günlük iznin ardından rövanş maçı hazırlıklarına başladı](https://www.cnnturk.com/spor/futbol/besiktas-iki-gunluk-iznin-ardindan-rovans-maci-hazirliklarina-basladi-3452199) — CNN Türk Spor · 2026-08-09T14:11:39+00:00 · turnuva=EL · kulüp=Beşiktaş
@@ -23,10 +31,7 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Beşiktaş'ta Hradec Kralove rövanş maçının hazırlıkları başladı](https://www.hurriyet.com.tr/sporarena/besiktasta-hradec-kralove-rovans-macinin-hazirliklari-basladi-43267423) — Hürriyet Spor · 2026-08-09T12:45:46+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş'ta Hradec Kralove mesaisi!](https://www.haberturk.com/besiktas-ta-hradec-kralove-mesaisi-3904385-spor) — Haberturk Spor · 2026-08-09T11:27:02+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş - Hradec Kralove maçının hakemi açıklandı!](https://www.hurriyet.com.tr/sporarena/besiktas-hradec-kralove-macinin-hakemi-aciklandi-43267304) — Hürriyet Spor · 2026-08-09T10:54:21+00:00 · turnuva=EL · kulüp=Beşiktaş
-- [Beşiktaş maçına İsviçreli hakem!](https://www.haberturk.com/besiktas-hradec-kralove-macina-isvicreli-hakem-3904374-spor) — Haberturk Spor · 2026-08-09T09:58:00+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Fenerbahçe arsaVev, yoluna UEFA Avrupa Ligi'nde devam edecek](https://www.cnnturk.com/spor/futbol/fenerbahce-arsavev-yoluna-uefa-avrupa-liginde-devam-edecek-3452094) — CNN Türk Spor · 2026-08-09T09:06:58+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - ["Graz erken gol bulursa maç tersine dönebilir"](https://www.haberturk.com/jakob-jantscher-sturm-graz-erken-gol-bulursa-mac-tersine-donebilir-3904351-spor) — Haberturk Spor · 2026-08-09T08:03:02+00:00 · turnuva=— · kulüp=Fenerbahçe
-- [Fenerbahçe arsaVev, UEFA Şampiyonlar Ligi elemelerinde OH Leuven'e penaltılarla yenildi](https://www.hurriyet.com.tr/sporarena/fenerbahce-arsavev-uefa-sampiyonlar-ligi-elemelerinde-oh-leuvene-penaltilarla-yenildi-43266901) — Hürriyet Spor · 2026-08-08T21:39:01+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Pavlidis transferinde flaş detay! Fenerbahçe'ye gelse bile Avrupa'da yok](https://www.takvim.com.tr/spor/fenerbahce/2026/08/08/pavlidis-transferinde-flas-detay-gelse-bile-avrupada-yok) — Takvim Spor · 2026-08-08T11:31:40+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Beşiktaş Salah'ın rövanşını aldı, Trabzonspor'un istediği yıldızı bitiriyor | Transfer hattı - NTVSpor](https://news.google.com/rss/articles/CBMiygFBVV95cUxNY1JCY3JUeFVnQ2RFOVZYVkd2SUVFNXBJODdXNDJsRlZBb1RHbkUza1NJeWN1czM2cWtrUmxzSTY5UUk3RF91R1UtTUUzV2Y2NE1YeTlaa0U4d2VfTGZUR0d1elcxVlRLNlBGenhWdnhaeEhXU0xMcGIxT0ZSVzdTejh3RG5IeEwxQ0VMaXhYTjZMRlZrMWFQam9NeDFtOVVZcXRMbGVCamo1TVF2TnpKUlp1YXNfZWlXVjVTbVg2MzhoNzZVMWxlWVl30gHPAUFVX3lxTE5fd3ItZ2NOdWhfZ1RvWTE3VlFwcWZpWGJ0WHdyQUpINEkwWHk3T0RXZHJYWHlqbUU2LVJGS1Y0dzBKbk1ubXgxaXhhcVlwLWVINzlzOE84aEtqT2ZINkZfTmxPQTRoYkIyTHotekRuZ3dVQVIxYjROMVU4Y1BoOUY1ajF5NzhzNGY0eXRmX2U5aE45VWlUblRid3dmNlpKSklnOEU1X2FOcWJFOWFwNEEtOXp4akVIMGItU2VTbXNqQlNiRHljZVlwQUhMU3JXRQ?oc=5) — NTVSpor · 2026-08-08T05:43:14+00:00 · turnuva=— · kulüp=Beşiktaş, Trabzonspor
-- [Çekya'da vurgun! Beşiktaş, Hradec Kralove'yi 1-0 yendi](https://www.takvim.com.tr/spor/besiktas/2026/08/06/cekyada-vurgun-besiktas-hradec-kraloveyi-1-0-yendi) — Takvim Spor · 2026-08-06T18:46:14+03:00 · turnuva=EL · kulüp=Beşiktaş
