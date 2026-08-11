@@ -1,6 +1,6 @@
 # Erken Haber Kaynak Performansı
 
-- Transfer sinyali: 54
+- Transfer sinyali: 53
 - Resmi olaya dönüşen transfer: 8
 - Yayın zamanı bulunan resmi teyit: 3/8
 - İlk görülme zamanı bulunan resmi teyit: 8/8
@@ -8,11 +8,11 @@
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 0
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 3471
+- Defterde korunan ilk iddia gözlemi: 3473
 
 ## Kanal Kapsamı
 
-- Google News: 295 haber, 30/30 başarılı sorgu.
+- Google News: 293 haber, 30/30 başarılı sorgu.
 - Telegram: 6 mesaj, 8/8 erişilebilir kanal.
 - X: durum=MISSING_CREDENTIALS, gönderi=0, yapılandırılmış hesap=45.
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 3468 | 1108 | 1 | — | — | %99.9 | 0.1 | PARTIAL_MEASUREMENT |
+| Google News / medya | 3470 | 1109 | 1 | — | — | %99.9 | 0.1 | PARTIAL_MEASUREMENT |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -91,7 +91,7 @@
 | Mersin Haber | MEDIA | 11 | 4 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Sporx | MEDIA | 11 | 10 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Tıbbiye Bülteni | MEDIA | 11 | 11 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
-| fanatik.com.tr | MEDIA | 10 | 5 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| fanatik.com.tr | MEDIA | 11 | 5 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | İhlas Haber Ajansı | MEDIA | 10 | 7 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Karadeniz Gazetesi | MEDIA | 9 | 4 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | DHA / Demirören Haber Ajansı | MEDIA | 8 | 2 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
@@ -171,12 +171,12 @@
 | Goal.com | MEDIA | 7 | 1 | 0 | — | — | — | — | OBSERVING |
 | STAR - Haberler | MEDIA | 6 | 1 | 0 | — | — | — | — | OBSERVING |
 | fotomac.com.tr | MEDIA | 5 | 2 | 0 | — | — | — | — | OBSERVING |
+| sabah.com.tr | MEDIA | 5 | 3 | 0 | — | — | — | — | OBSERVING |
 | sporx.com | MEDIA | 5 | 5 | 0 | — | — | — | — | OBSERVING |
 | Gunebakış | MEDIA | 4 | 0 | 0 | — | — | — | — | OBSERVING |
 | Samsun Gazetesi | MEDIA | 4 | 1 | 0 | — | — | — | — | OBSERVING |
 | milliyet.com.tr | MEDIA | 4 | 2 | 0 | — | — | — | — | OBSERVING |
 | mynet.com | MEDIA | 4 | 3 | 0 | — | — | — | — | OBSERVING |
-| sabah.com.tr | MEDIA | 4 | 2 | 0 | — | — | — | — | OBSERVING |
 | yenisafak.com | MEDIA | 4 | 0 | 0 | — | — | — | — | OBSERVING |
 | Özgür Kocaeli | MEDIA | 4 | 0 | 0 | — | — | — | — | OBSERVING |
 | Bugün Kocaeli Gazetesi | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
