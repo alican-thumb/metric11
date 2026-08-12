@@ -1,6 +1,6 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-11T23:02:42.458944+00:00
+Üretim zamanı: 2026-08-12T02:44:50.218200+00:00
 Toplam ilgili haber: 65
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
@@ -37,7 +37,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Anderson Talisca, Avusturya'da tarihe geçti: Alex de Souza'yı geride bıraktı!](https://www.hurriyet.com.tr/sporarena/anderson-talisca-avusturyada-tarihe-gecti-alex-de-souzayi-geride-birakti-43270069) — Hürriyet Spor · 2026-08-11T20:42:00+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Sturm Graz-Fenerbahçe maçı kaç kaç bitti?](https://www.haberturk.com/sturm-graz-fenerbahce-maci-kac-kac-bitti-golu-kim-atti-iste-sturm-graz-fenerbahce-maci-ozeti-ve-onemli-anlari-3904923-spor) — Haberturk Spor · 2026-08-11T20:34:46+00:00 · turnuva=— · kulüp=Fenerbahçe
 - [Kanarya Play-off turunda! Fenerbahçe Sturm Graz'ı 1-0 yendi](https://www.takvim.com.tr/spor/fenerbahce/2026/08/11/kanarya-play-off-turunda-fenerbahce-sturm-grazi-1-0-yendi) — Takvim Spor · 2026-08-11T20:16:01+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Sturm Graz-Fenerbahçe | CANLI (Şampiyonlar Ligi / 3. Eleme Turu) - Fotomaç](https://news.google.com/rss/articles/CBMiqgFBVV95cUxQenc5MzA4SlpWLUp5SmNwMFFaT2c1U2lnNGdvb05SMDM0Y0FETjBwNzhZcmNKaFFHWTZnXzFEY0xwYm9yZ1BORElHZnZhd05lQWRxbmJqaE9XeEN3MERlUi04RWM5M0dVdFc0a0FOYXdZMmh3c0JTNUtZRGJESzJYWFNiNWstb19LVUUyTFU4UHEtT1VSWk82cFNfVXM4RjNtRzlCWkV6Rjd2Zw?oc=5) — Fotomaç · 2026-08-11T19:45:44+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Beşiktaş'ın, Play-off turundaki muhtemel rakibi belli oldu!](https://www.hurriyet.com.tr/sporarena/besiktasin-play-off-turundaki-muhtemel-rakibi-belli-oldu-43270028) — Hürriyet Spor · 2026-08-11T19:41:26+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Tur atlarsa rakibi netleşti!](https://www.haberturk.com/besiktas-tur-atlarsa-rakibi-netlesti-kauno-zalgiris-3904942-spor) — Haberturk Spor · 2026-08-11T19:40:43+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Sturm Graz - Fenerbahçe maçı izle bilgisi](https://www.haberturk.com/sturm-graz-fenerbahce-maci-izle-ekrani-sampiyonlar-ligi-3-eleme-turu-sturm-graz-fenerbahce-maci-hangi-kanalda-3904904-spor) — Haberturk Spor · 2026-08-11T19:26:53+00:00 · turnuva=CL · kulüp=Fenerbahçe
@@ -46,3 +45,4 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - ["Kazanmaya açız ve önemli bir hedefimiz var"](https://www.haberturk.com/marquinhos-kazanmaya-aciz-ve-onemli-bir-hedefimiz-var-3904939-spor) — Haberturk Spor · 2026-08-11T18:58:44+00:00 · turnuva=— · kulüp=—
 - [Son dakika haberi: Fenerbahçe, UEFA Şampiyonlar Ligi’nde Sturm Graz’ı devirdi! Play-off biletini aldı](https://www.sabah.com.tr/spor/futbol/2026/08/11/son-dakika-haberi-fenerbahce-uefa-sampiyonlar-liginde-sturm-grazi-devirdi-play-off-biletini-aldi) — Sabah Spor · 2026-08-11T18:12:59+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Marquinhos: 'Açız ve kazanmak istiyoruz!'](https://www.hurriyet.com.tr/sporarena/marquinhos-aciz-ve-kazanmak-istiyoruz-43269936) — Hürriyet Spor · 2026-08-11T17:20:45+00:00 · turnuva=— · kulüp=—
+- [Fenerbahçe play-off’a yükseldi! Talisca durdurulamıyor - Son dakika Fenerbahçe haberleri - Fotomaç](https://news.google.com/rss/articles/CBMikAFBVV95cUxPN3J3Sm1IVG1DMlBjRFpTNlV6VHYxeWJ5MjFucHdMaGtlVTJPZkNkMlg1WVlkNGVPZU11MkRJZm1aejJXQmlIQ214Mks5bC1SYnBkUTk1S01SdUlwOXduT3JVcnJRV01GOHNsd2tOeUZtSmx0N3E5WFl6RjNoaXcwMmxhNzhvVjZWWkdQSTg3NGY?oc=5) — Fotomaç · 2026-08-11T17:17:03+00:00 · turnuva=— · kulüp=Fenerbahçe

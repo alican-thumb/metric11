@@ -4,15 +4,15 @@
 - Resmi olaya dönüşen transfer: 8
 - Yayın zamanı bulunan resmi teyit: 3/8
 - İlk görülme zamanı bulunan resmi teyit: 8/8
-- Ölçülen kaynak: 123 / gözlenen kaynak: 254
+- Ölçülen kaynak: 124 / gözlenen kaynak: 256
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 0
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 3537
+- Defterde korunan ilk iddia gözlemi: 3540
 
 ## Kanal Kapsamı
 
-- Google News: 295 haber, 30/30 başarılı sorgu.
+- Google News: 283 haber, 30/30 başarılı sorgu.
 - Telegram: 6 mesaj, 8/8 erişilebilir kanal.
 - X: durum=MISSING_CREDENTIALS, gönderi=0, yapılandırılmış hesap=45.
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 3534 | 1128 | 1 | — | — | %99.9 | 0.1 | PARTIAL_MEASUREMENT |
+| Google News / medya | 3537 | 1129 | 1 | — | — | %99.9 | 0.1 | PARTIAL_MEASUREMENT |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -121,6 +121,7 @@
 | İlkses Gazetesi | MEDIA | 4 | 2 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | A Haber | MEDIA | 3 | 3 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Duhuliye | MEDIA | 3 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Erzurum Gazetesi | MEDIA | 3 | 2 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Gözlem Gazetesi | MEDIA | 3 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Odatv | MEDIA | 3 | 2 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | İstanbul Ticaret Gazetesi | MEDIA | 3 | 2 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
@@ -186,7 +187,6 @@
 | yenisafak.com | MEDIA | 4 | 0 | 0 | — | — | — | — | OBSERVING |
 | Özgür Kocaeli | MEDIA | 4 | 0 | 0 | — | — | — | — | OBSERVING |
 | Bugün Kocaeli Gazetesi | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
-| Erzurum Gazetesi | MEDIA | 3 | 2 | 0 | — | — | — | — | OBSERVING |
 | Rizedeyiz | MEDIA | 3 | 2 | 0 | — | — | — | — | OBSERVING |
 | haberturk.com | MEDIA | 3 | 3 | 0 | — | — | — | — | OBSERVING |
 | samsungazetesi.com | MEDIA | 3 | 1 | 0 | — | — | — | — | OBSERVING |
@@ -208,6 +208,7 @@
 | gazetegercek.com.tr | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | gazetevatan.com | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | nefes.com.tr | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
+| sozcu.com.tr | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | t24.com.tr | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | tv100 Haber | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | yenicaggazetesi.com | MEDIA | 2 | 1 | 0 | — | — | — | — | OBSERVING |
@@ -276,6 +277,7 @@
 | gozlemgazetesi.com | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | gunebakis.com.tr | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | haberege.com.tr | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
+| halktv.com.tr | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | iha.com.tr | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | istikbalgazetesi.com | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | kayserigundem.com.tr | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
@@ -289,8 +291,8 @@
 | rizetakip.com | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | sanayigazetesi.com.tr | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | saraymedya.com | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
+| ses15.com.tr | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | sivas360.com | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
-| sozcu.com.tr | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | turkiyegazetesi.com.tr | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | tv100.com | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | yenihaberden.com | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
