@@ -1,12 +1,17 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-12T15:15:24.310341+00:00
-Toplam ilgili haber: 69
+Üretim zamanı: 2026-08-12T19:20:05.640594+00:00
+Toplam ilgili haber: 66
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [PSG-Aston Villa | CANLI İZLE (UEFA Süper Kupa Finali)](https://www.fotomac.com.tr/futbol/2026/08/12/psg-aston-villa-canli-izle-uefa-super-kupa-finali) — Fotomaç · 2026-08-12T21:11:51+03:00 · turnuva=CL · kulüp=—
+- [CANLI: PSG - Aston Villa](https://www.aksam.com.tr/spor/canli-psg-aston-villa/haber-1690135) — Aksam Spor · 2026-08-12T21:03:00+03:00 · turnuva=CL · kulüp=—
+- [Fenerbahçe'de Gençlerbirliği maçı öncesi çalışmalar başladı](https://www.aksam.com.tr/spor/fenerbahcede-genclerbirligi-maci-oncesi-calismalar-basladi/haber-1690131) — Aksam Spor · 2026-08-12T20:32:00+03:00 · turnuva=CL · kulüp=Fenerbahçe, Gençlerbirliği
+- [Çekya ekibi Hradec Kralove, Beşiktaş maçı hazırlıklarını tamamladı](https://www.aksam.com.tr/spor/cekya-ekibi-hradec-kralove-besiktas-maci-hazirliklarini-tamamladi/haber-1690126) — Aksam Spor · 2026-08-12T19:42:00+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Fenerbahçe'ye Şampiyonlar Ligi'nden dev para! İşte o rakam](https://www.takvim.com.tr/spor/fenerbahce/2026/08/12/fenerbahceye-sampiyonlar-liginden-dev-para-iste-o-rakam) — Takvim Spor · 2026-08-12T16:58:08+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- ["İyi bir sonuç almak istiyoruz"](https://www.haberturk.com/david-horejs-iyi-bir-sonuc-almak-istiyoruz-3905176-spor) — Haberturk Spor · 2026-08-12T16:23:36+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Talisca, Sturm Graz karşısında attığı golle tarihe geçti!](https://www.hurriyet.com.tr/sporarena/talisca-sturm-graz-karsisinda-attigi-golle-tarihe-gecti-43270952) — Hürriyet Spor · 2026-08-12T14:08:28+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - ["Takımda değişen bir mantalite var"](https://www.haberturk.com/besiktasli-ridvan-yilmaz-hradek-kralove-maci-oncesi-konustu-3905112-spor) — Haberturk Spor · 2026-08-12T13:17:09+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş, Hradec Kralove maçına hazır](https://www.fotomac.com.tr/besiktas/2026/08/12/besiktas-hradec-kralove-macina-hazir) — Fotomaç · 2026-08-12T13:15:51+03:00 · turnuva=EL · kulüp=Beşiktaş
@@ -27,7 +32,7 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Emre Mor’un uzatma dakikalarındaki golü NEC Nijmegen’e turu getirdi](https://www.cnnturk.com/spor/futbol/emre-morun-uzatma-dakikalarindaki-golu-nec-nijmegene-turu-getirdi-3453295) — CNN Türk Spor · 2026-08-12T09:32:16+00:00 · turnuva=EL · kulüp=—
 - [Ahmet Çakar'dan Asensio ve Greenwood eleştirisi: Asla hazır değiller!](https://www.fotomac.com.tr/fenerbahce/2026/08/12/ahmet-cakardan-asensio-ve-greenwood-elestirisi-asla-hazir-degiller) — Fotomaç · 2026-08-12T09:24:40+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [UEFA hakem kararları için 'Net Çizgi'yi kullanıma sundu](https://www.cnnturk.com/spor/futbol/uefadan-hakem-kararlari-icin-net-cizgiyi-kullanima-sundu-3452969) — CNN Türk Spor · 2026-08-12T09:24:25+00:00 · turnuva=— · kulüp=—
-- [Lyon Teknik Direktörü Paulo Fonseca'dan Fenerbahçe açıklaması!](https://www.hurriyet.com.tr/sporarena/lyon-teknik-direktoru-paulo-fonsecadan-fenerbahce-aciklamasi-43270515) — Hürriyet Spor · 2026-08-12T09:21:52+00:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Lyon Teknik Direktörü Paulo Fonseca'dan Fenerbahçe açıklaması!](https://www.hurriyet.com.tr/sporarena/lyon-teknik-direktoru-paulo-fonsecadan-fenerbahce-aciklamasi-43270515) — Hürriyet Spor · 2026-08-12T09:21:00+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Spor yazarları Sturm Graz-Fenerbahçe maçını değerlendirdi](https://www.fotomac.com.tr/fenerbahce/2026/08/12/spor-yazarlari-sturm-graz-fenerbahce-macini-degerlendirdi) — Fotomaç · 2026-08-12T08:56:28+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [UEFA Süper Kupa sahibi buluyor! PSG - Aston Villa maçının heyecanı canlı sohbet ile Misli'de](https://www.hurriyet.com.tr/sporarena/uefa-super-kupa-sahibi-buluyor-psg-aston-villa-macinin-heyecani-canli-sohbet-ile-mislide-43270468) — Hürriyet Spor · 2026-08-12T08:38:00+00:00 · turnuva=— · kulüp=—
 - [Devler Ligi'ndeki hasret sona ermek üzere!](https://www.haberturk.com/fenerbahce-lyon-u-gecerse-sampiyonlar-ligi-ne-katilacak-2008-09-dan-bu-yana-sadece-galatasaray-basardi-3905045-spor) — Haberturk Spor · 2026-08-12T08:26:50+00:00 · turnuva=CL · kulüp=Fenerbahçe
@@ -41,8 +46,3 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Fenerbahçe'nin Sturm Graz galibiyeti sonrası UEFA ülke puanı güncellendi!](https://www.hurriyet.com.tr/sporarena/fenerbahcenin-sturm-graz-galibiyeti-sonrasi-uefa-ulke-puani-guncellendi-43270211) — Hürriyet Spor · 2026-08-12T06:28:39+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [PSG ile Aston Villa, UEFA Süper Kupa için sahada!](https://www.hurriyet.com.tr/sporarena/psg-ile-aston-villa-uefa-super-kupa-icin-sahada-43270146) — Hürriyet Spor · 2026-08-12T04:00:00+00:00 · turnuva=— · kulüp=—
 - [Fenerbahçe'nin rakibi belli oldu!](https://www.fotomac.com.tr/fenerbahce/2026/08/11/fenerbahcenin-rakibi-belli-oldu) — Fotomaç · 2026-08-12T01:44:25+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [UEFA ülke puanı güncellendi! İşte Türkiye'nin sıralamadaki yeri](https://www.fotomac.com.tr/galeri/anasayfa/uefa-ulke-puani-guncellendi-iste-turkiyenin-siralamadaki-yeri-1786482200) — Fotomaç · 2026-08-12T01:44:23+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Sturm Graz'ı yenen Fenerbahçe üst turda!](https://www.fotomac.com.tr/fenerbahce/2026/08/11/sturm-grazi-yenen-fenerbahce-ust-turda) — Fotomaç · 2026-08-12T01:44:21+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Fenerbahçe penaltı kazandı!](https://www.fotomac.com.tr/fenerbahce/2026/08/11/fenerbahce-penalti-kazandi) — Fotomaç · 2026-08-12T01:44:19+03:00 · turnuva=— · kulüp=Fenerbahçe
-- [Beşiktaş'ın play-off turundaki rakibi kesinleşti!](https://www.fotomac.com.tr/besiktas/2026/08/11/besiktasin-play-off-turundaki-rakibi-kesinlesti) — Fotomaç · 2026-08-12T01:44:15+03:00 · turnuva=EL · kulüp=Beşiktaş
-- [Fenerbahçeli yıldız için flaş iddia! O maçın ardından takımdan ayrılacak](https://www.fotomac.com.tr/fenerbahce/2026/08/11/fenerbahceli-yildiz-icin-flas-iddia-o-macin-ardindan-takimdan-ayrilacak) — Fotomaç · 2026-08-12T01:44:00+03:00 · turnuva=CL · kulüp=Fenerbahçe

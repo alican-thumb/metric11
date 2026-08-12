@@ -1,18 +1,18 @@
 # Erken Haber Kaynak Performansı
 
-- Transfer sinyali: 54
+- Transfer sinyali: 56
 - Resmi olaya dönüşen transfer: 8
 - Yayın zamanı bulunan resmi teyit: 3/8
 - İlk görülme zamanı bulunan resmi teyit: 8/8
-- Ölçülen kaynak: 130 / gözlenen kaynak: 257
+- Ölçülen kaynak: 130 / gözlenen kaynak: 258
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 0
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 3578
+- Defterde korunan ilk iddia gözlemi: 3588
 
 ## Kanal Kapsamı
 
-- Google News: 287 haber, 30/30 başarılı sorgu.
+- Google News: 292 haber, 30/30 başarılı sorgu.
 - Telegram: 6 mesaj, 8/8 erişilebilir kanal.
 - X: durum=MISSING_CREDENTIALS, gönderi=0, yapılandırılmış hesap=45.
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 3575 | 1148 | 1 | — | — | %99.9 | 0.1 | PARTIAL_MEASUREMENT |
+| Google News / medya | 3585 | 1150 | 1 | — | — | %99.9 | 0.1 | PARTIAL_MEASUREMENT |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -34,7 +34,7 @@
 | Yağız Sabuncuoğlu | 3 | 1 | 1 | PARTIAL_MEASUREMENT |
 | Ertan Süzgün | 4 | 0 | 0 | ATTRIBUTION_PENDING |
 | Sports Digitale | 2 | 0 | 0 | ATTRIBUTION_PENDING |
-| Yusuf Günaydın | 0 | 0 | 0 | ATTRIBUTION_PENDING |
+| Yusuf Günaydın | 1 | 0 | 0 | ATTRIBUTION_PENDING |
 | Ekrem Konur | 5 | 0 | 0 | ATTRIBUTION_PENDING |
 
 ## Skorlama Notu
@@ -47,18 +47,18 @@
 
 | Kaynak | Katman | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---|
-| CNN Türk Spor | MEDIA | 104 | 26 | 1 | — | — | %94.1 | 4.7 | PARTIAL_MEASUREMENT |
-| Fotomaç | MEDIA | 423 | 88 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| CNN Türk Spor | MEDIA | 104 | 26 | 1 | — | — | %94.4 | 4.4 | PARTIAL_MEASUREMENT |
+| Fotomaç | MEDIA | 425 | 88 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Sabah | MEDIA | 265 | 69 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Hürriyet | MEDIA | 247 | 33 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
-| Takvim | MEDIA | 222 | 33 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Takvim | MEDIA | 224 | 33 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Aksam Spor | MEDIA | 175 | 16 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Haberturk Spor | MEDIA | 143 | 12 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Milliyet | MEDIA | 101 | 21 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Fanatik | MEDIA | 98 | 35 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Sporx.com | MEDIA | 93 | 77 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | NTVSpor | MEDIA | 91 | 20 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
-| Ajansspor | MEDIA | 87 | 34 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Ajansspor | MEDIA | 88 | 35 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | SonDakika | MEDIA | 86 | 57 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | GZT | MEDIA | 84 | 26 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | A SPOR | MEDIA | 83 | 30 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
@@ -66,7 +66,7 @@
 | Taka Gazete | MEDIA | 63 | 45 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Haberler | MEDIA | 53 | 29 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Habertürk | MEDIA | 48 | 32 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
-| Anadolu Ajansı Spor | AGENCY | 45 | 13 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Anadolu Ajansı Spor | AGENCY | 47 | 14 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | sondakika.com | MEDIA | 36 | 29 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Gazete Vatan | MEDIA | 35 | 2 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Haber 7 | MEDIA | 34 | 6 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
@@ -181,7 +181,7 @@
 | A Spor | MEDIA | 10 | 4 | 0 | — | — | — | — | OBSERVING |
 | Alanya Postası | MEDIA | 9 | 0 | 0 | — | — | — | — | OBSERVING |
 | Türkiye Gazetesi | MEDIA | 9 | 0 | 0 | — | — | — | — | OBSERVING |
-| Goal.com | MEDIA | 7 | 1 | 0 | — | — | — | — | OBSERVING |
+| Goal.com | MEDIA | 8 | 1 | 0 | — | — | — | — | OBSERVING |
 | STAR - Haberler | MEDIA | 7 | 2 | 0 | — | — | — | — | OBSERVING |
 | ajansspor.com | MEDIA | 6 | 4 | 0 | — | — | — | — | OBSERVING |
 | fotomac.com.tr | MEDIA | 6 | 2 | 0 | — | — | — | — | OBSERVING |
@@ -199,6 +199,7 @@
 | Anadolu'da Bugün | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Ege'de Sonsöz | MEDIA | 2 | 1 | 0 | — | — | — | — | OBSERVING |
 | Gazete Arena | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
+| KARAR | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Konya Postası Gazetesi | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Konya Yenigün | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Konya Yenigün Gazetesi | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
@@ -237,12 +238,12 @@
 | Haber3 | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Haberton | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Halk 54 | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
-| KARAR | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | KAYSERİ YEREL HABER | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | Kayseri Anadolu Haber | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Kayseri Gündem | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Kayseri Olay Haber | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Kocaeli Gazetesi | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
+| Konhaber | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Kurtalan Gazetesi | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Manşet Haber | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | Medya Siyah Beyaz | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
