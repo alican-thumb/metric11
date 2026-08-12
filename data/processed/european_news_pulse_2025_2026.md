@@ -1,23 +1,35 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-12T04:18:54.284785+00:00
-Toplam ilgili haber: 61
+Üretim zamanı: 2026-08-12T05:45:22.966019+00:00
+Toplam ilgili haber: 72
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [Beşiktaş’ın UEFA Avrupa Ligi'ndeki olası play-off rakibi netleşti](https://www.cnnturk.com/spor/futbol/besiktasin-uefa-avrupa-ligindeki-olasi-play-off-rakibi-netlesti-3453273) — CNN Türk Spor · 2026-08-12T08:15:50+00:00 · turnuva=CL · kulüp=Beşiktaş
+- [Fabio Ingolitsch: İki maçı da Fenerbahçe domine etti](https://www.cnnturk.com/spor/futbol/fabio-ingolitsch-iki-maci-da-fenerbahce-domine-etti-3453263) — CNN Türk Spor · 2026-08-12T07:41:49+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Sturm Graz 0-1 Fenerbahçe Maç Özeti | Temsilcimiz, play-off biletini aldı](https://www.cnnturk.com/spor/futbol/live-sturm-graz-0-1-fenerbahce-mac-ozeti-temsilcimiz-play-off-biletini-aldi-3452877) — CNN Türk Spor · 2026-08-12T07:09:22+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [PSG ile Aston Villa, UEFA Süper Kupa için sahada!](https://www.hurriyet.com.tr/sporarena/psg-ile-aston-villa-uefa-super-kupa-icin-sahada-43270146) — Hürriyet Spor · 2026-08-12T04:00:00+00:00 · turnuva=— · kulüp=—
+- [Fenerbahçe'nin rakibi belli oldu!](https://www.fotomac.com.tr/fenerbahce/2026/08/11/fenerbahcenin-rakibi-belli-oldu) — Fotomaç · 2026-08-12T01:44:25+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [UEFA ülke puanı güncellendi! İşte Türkiye'nin sıralamadaki yeri](https://www.fotomac.com.tr/galeri/anasayfa/uefa-ulke-puani-guncellendi-iste-turkiyenin-siralamadaki-yeri-1786482200) — Fotomaç · 2026-08-12T01:44:23+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Sturm Graz'ı yenen Fenerbahçe üst turda!](https://www.fotomac.com.tr/fenerbahce/2026/08/11/sturm-grazi-yenen-fenerbahce-ust-turda) — Fotomaç · 2026-08-12T01:44:21+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe penaltı kazandı!](https://www.fotomac.com.tr/fenerbahce/2026/08/11/fenerbahce-penalti-kazandi) — Fotomaç · 2026-08-12T01:44:19+03:00 · turnuva=— · kulüp=Fenerbahçe
+- [Beşiktaş'ın play-off turundaki rakibi kesinleşti!](https://www.fotomac.com.tr/besiktas/2026/08/11/besiktasin-play-off-turundaki-rakibi-kesinlesti) — Fotomaç · 2026-08-12T01:44:15+03:00 · turnuva=EL · kulüp=Beşiktaş
+- [Fenerbahçeli yıldız için flaş iddia! O maçın ardından takımdan ayrılacak](https://www.fotomac.com.tr/fenerbahce/2026/08/11/fenerbahceli-yildiz-icin-flas-iddia-o-macin-ardindan-takimdan-ayrilacak) — Fotomaç · 2026-08-12T01:44:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe'den Şampiyonlar Ligi paylaşımı!](https://www.fotomac.com.tr/fenerbahce/2026/08/11/fenerbahceden-sampiyonlar-ligi-paylasimi) — Fotomaç · 2026-08-12T01:43:32+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Sturm Graz Teknik Direktör Fabio Ingolitsch: Fenerbahçe Lyon karşısında kazanacaktır](https://www.fotomac.com.tr/futbol/2026/08/11/sturm-graz-teknik-direktor-fabio-ingolitsch-fenerbahce-lyon-karsisinda-kazanacaktir) — Fotomaç · 2026-08-12T01:43:30+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Lyon Teknik Direktörü Paulo Fonseca'dan Fenerbahçe açıklaması](https://www.fotomac.com.tr/haberler/2026/08/11/lyon-teknik-direktoru-paulo-fonsecadan-fenerbahce-aciklamasi) — Fotomaç · 2026-08-12T01:43:26+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Talisca tarihe geçti! Tam 16 gol](https://www.fotomac.com.tr/fenerbahce/2026/08/11/talisca-tarihe-gecti-tam-16-gol) — Fotomaç · 2026-08-12T01:43:22+03:00 · turnuva=— · kulüp=Fenerbahçe
+- [Luis Enrique: Bir fikrim var ama yeri değil](https://www.fotomac.com.tr/futbol/2026/08/11/luis-enrique-bir-fikrim-var-ama-yeri-degil) — Fotomaç · 2026-08-12T01:43:13+03:00 · turnuva=— · kulüp=—
+- [Unai Emery: Favori PSG olsa da...](https://www.fotomac.com.tr/futbol/2026/08/11/unai-emery-favori-psg-olsa-da) — Fotomaç · 2026-08-12T01:43:12+03:00 · turnuva=— · kulüp=—
+- [Beşiktaş'ın Hradec Kravole mesaisi devam etti](https://www.fotomac.com.tr/besiktas/2026/08/11/besiktasin-hradec-kravole-mesaisi-devam-etti) — Fotomaç · 2026-08-12T01:42:51+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Fenerbahçe'de İsmail Kartal'dan Fred açıklaması! Ayrılacak mı?](https://www.sabah.com.tr/spor/futbol/2026/08/11/fenerbahcede-ismail-kartaldan-fred-aciklamasi-ayrilacak-mi) — Sabah Spor · 2026-08-12T00:45:17+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [İsmail Kartal'dan çarpıcı açıklama! Fred ayrılacak mı?](https://www.aksam.com.tr/spor/ismail-kartaldan-carpici-aciklama-fred-ayrilacak-mi/haber-1689851) — Aksam Spor · 2026-08-12T00:39:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [İsmail Kartal'dan tur sonrası transfer açıklaması: Fred için çalışılıyor](https://www.takvim.com.tr/spor/fenerbahce/2026/08/11/ismail-kartaldan-tur-sonrasi-transfer-aciklamasi-fred-icin-calisiliyor) — Takvim Spor · 2026-08-12T00:36:07+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fabio Ingolitsch: Sonuçta iyi olan takım kazandı!](https://www.sabah.com.tr/spor/futbol/2026/08/11/fabio-ingolitsch-sonucta-iyi-olan-takim-kazandi) — Sabah Spor · 2026-08-12T00:20:42+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [SON DAKİKA | Fenerbahçe’nin Şampiyonlar Ligi’ndeki rakibi belli oldu](https://www.cnnturk.com/spor/futbol/son-dakika-fenerbahcenin-sampiyonlar-ligindeki-rakibi-belli-oldu-3453159) — CNN Türk Spor · 2026-08-12T00:16:56+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [STURM GRAZ - FENERBAHÇE MAÇI KAÇ KAÇ BİTTİ? Sturm Graz – Fenerbahçe maç sonucu ne oldu?](https://www.cnnturk.com/spor/futbol/sturm-graz-fenerbahce-maci-kac-kac-bitti-sturm-graz-fenerbahce-mac-sonucu-ne-oldu-3453117) — CNN Türk Spor · 2026-08-12T00:12:33+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- [İşte Devler Ligi'nde play-off biletini alan takımlar!](https://www.aksam.com.tr/spor/iste-devler-liginde-play-off-biletini-alan-takimlar/haber-1689846) — Aksam Spor · 2026-08-12T00:11:00+03:00 · turnuva=CL · kulüp=—
 - [UEFA Şampiyonlar Ligi'nde üçüncü eleme turu  rövanş maçları tamamlandı](https://www.aa.com.tr/tr/spor/uefa-sampiyonlar-liginde-ucuncu-eleme-turu-rovans-maclari-tamamlandi/4024677) — Anadolu Ajansı Spor · 2026-08-12T00:09:20+03:00 · turnuva=CL · kulüp=—
 - [Türkiye ülke puanı sıralamasında kaçıncı? İşte UEFA'daki yerimiz (2026-2027 Sezonu)](https://www.takvim.com.tr/galeri/spor/turkiye-ulke-puani-siralamasinda-kacinci-iste-uefadaki-yerimiz-2026-2027-sezonu) — Takvim Spor · 2026-08-11T23:57:39+03:00 · turnuva=CL · kulüp=Fenerbahçe, Beşiktaş
-- [Fenerbahçe'nin rakibi belli oldu! 3 golle turladılar](https://www.aksam.com.tr/spor/fenerbahcenin-rakibi-belli-oldu-3-golle-turladilar/haber-1689844) — Aksam Spor · 2026-08-11T23:49:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Emre Mor, NEC Nijmegen’i Şampiyonlar Ligi'nde sırtladı!](https://www.sabah.com.tr/spor/futbol/2026/08/11/emre-mor-nec-nijmegeni-sampiyonlar-liginde-sirtladi) — Sabah Spor · 2026-08-11T23:16:34+03:00 · turnuva=CL · kulüp=—
 - [Fenerbahçe, play-off turuna galibiyetle yükseldi](https://www.aa.com.tr/tr/spor/fenerbahce-play-off-turuna-galibiyetle-yukseldi/4024623) — Anadolu Ajansı Spor · 2026-08-11T22:23:29+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Beşiktaş'ın Avrupa Ligi'nde tur atlaması halinde rakibi Kauno Zalgiris](https://www.takvim.com.tr/spor/besiktas/2026/08/11/besiktasin-avrupa-liginde-tur-atlamasi-halinde-rakibi-kauno-zalgiris) — Takvim Spor · 2026-08-11T22:22:34+03:00 · turnuva=EL · kulüp=Beşiktaş
@@ -34,15 +46,3 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Fenerbahçe play-off'a yükseldi!](https://www.haberturk.com/sturm-graz-fenerbahce-maci-ozet-izle-sturm-graz-fenerbahce-mac-sonucu-golleri-3904752-spor) — Haberturk Spor · 2026-08-11T21:02:25+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Devler Ligi'nde gecenin sonuçları!](https://www.haberturk.com/uefa-sampiyonlar-ligi-nde-gecenin-sonuclari-3904950-spor) — Haberturk Spor · 2026-08-11T21:00:39+00:00 · turnuva=CL · kulüp=—
 - [Fenerbahçe'nin play-off turundaki rakibi Lyon!](https://www.hurriyet.com.tr/sporarena/fenerbahcenin-play-off-turundaki-rakibi-lyon-43270076) — Hürriyet Spor · 2026-08-11T20:53:51+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Anderson Talisca, Avusturya'da tarihe geçti: Alex de Souza'yı geride bıraktı!](https://www.hurriyet.com.tr/sporarena/anderson-talisca-avusturyada-tarihe-gecti-alex-de-souzayi-geride-birakti-43270069) — Hürriyet Spor · 2026-08-11T20:42:00+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Sturm Graz-Fenerbahçe maçı kaç kaç bitti?](https://www.haberturk.com/sturm-graz-fenerbahce-maci-kac-kac-bitti-golu-kim-atti-iste-sturm-graz-fenerbahce-maci-ozeti-ve-onemli-anlari-3904923-spor) — Haberturk Spor · 2026-08-11T20:34:46+00:00 · turnuva=— · kulüp=Fenerbahçe
-- [Kanarya Play-off turunda! Fenerbahçe Sturm Graz'ı 1-0 yendi](https://www.takvim.com.tr/spor/fenerbahce/2026/08/11/kanarya-play-off-turunda-fenerbahce-sturm-grazi-1-0-yendi) — Takvim Spor · 2026-08-11T20:16:01+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Beşiktaş'ın, Play-off turundaki muhtemel rakibi belli oldu!](https://www.hurriyet.com.tr/sporarena/besiktasin-play-off-turundaki-muhtemel-rakibi-belli-oldu-43270028) — Hürriyet Spor · 2026-08-11T19:41:26+00:00 · turnuva=EL · kulüp=Beşiktaş
-- [Tur atlarsa rakibi netleşti!](https://www.haberturk.com/besiktas-tur-atlarsa-rakibi-netlesti-kauno-zalgiris-3904942-spor) — Haberturk Spor · 2026-08-11T19:40:43+00:00 · turnuva=EL · kulüp=Beşiktaş
-- [Sturm Graz - Fenerbahçe maçı izle bilgisi](https://www.haberturk.com/sturm-graz-fenerbahce-maci-izle-ekrani-sampiyonlar-ligi-3-eleme-turu-sturm-graz-fenerbahce-maci-hangi-kanalda-3904904-spor) — Haberturk Spor · 2026-08-11T19:26:53+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- [İsmail Kartal'dan tek değişiklik!](https://www.haberturk.com/ismail-kartal-dan-ilk-11-de-tek-degisiklik-3904940-spor) — Haberturk Spor · 2026-08-11T19:26:00+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Unai Emery: 'Favori elbette PSG!'](https://www.hurriyet.com.tr/sporarena/unai-emery-favori-elbette-psg-43270025) — Hürriyet Spor · 2026-08-11T19:01:51+00:00 · turnuva=— · kulüp=—
-- ["Kazanmaya açız ve önemli bir hedefimiz var"](https://www.haberturk.com/marquinhos-kazanmaya-aciz-ve-onemli-bir-hedefimiz-var-3904939-spor) — Haberturk Spor · 2026-08-11T18:58:44+00:00 · turnuva=— · kulüp=—
-- [Son dakika haberi: Fenerbahçe, UEFA Şampiyonlar Ligi’nde Sturm Graz’ı devirdi! Play-off biletini aldı](https://www.sabah.com.tr/spor/futbol/2026/08/11/son-dakika-haberi-fenerbahce-uefa-sampiyonlar-liginde-sturm-grazi-devirdi-play-off-biletini-aldi) — Sabah Spor · 2026-08-11T18:12:59+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Marquinhos: 'Açız ve kazanmak istiyoruz!'](https://www.hurriyet.com.tr/sporarena/marquinhos-aciz-ve-kazanmak-istiyoruz-43269936) — Hürriyet Spor · 2026-08-11T17:20:45+00:00 · turnuva=— · kulüp=—
-- ["Yaptıklarımızdan ve oyunumuzdan memnunuz"](https://www.haberturk.com/luis-enrique-yaptiklarimizdan-ve-oyunumuzdan-memnunuz-3904922-spor) — Haberturk Spor · 2026-08-11T17:11:57+00:00 · turnuva=— · kulüp=—
