@@ -4,7 +4,7 @@
 - Resmi olaya dönüşen transfer: 8
 - Yayın zamanı bulunan resmi teyit: 3/8
 - İlk görülme zamanı bulunan resmi teyit: 8/8
-- Ölçülen kaynak: 130 / gözlenen kaynak: 257
+- Ölçülen kaynak: 130 / gözlenen kaynak: 258
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 0
 - X verisi bekleyen izlenen kaynak: 20
@@ -58,7 +58,7 @@
 | Fanatik | MEDIA | 98 | 35 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Sporx.com | MEDIA | 93 | 77 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | NTVSpor | MEDIA | 91 | 20 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
-| Ajansspor | MEDIA | 87 | 34 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Ajansspor | MEDIA | 88 | 35 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | SonDakika | MEDIA | 86 | 57 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | GZT | MEDIA | 84 | 26 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | A SPOR | MEDIA | 83 | 30 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
@@ -181,7 +181,7 @@
 | A Spor | MEDIA | 10 | 4 | 0 | — | — | — | — | OBSERVING |
 | Alanya Postası | MEDIA | 9 | 0 | 0 | — | — | — | — | OBSERVING |
 | Türkiye Gazetesi | MEDIA | 9 | 0 | 0 | — | — | — | — | OBSERVING |
-| Goal.com | MEDIA | 7 | 1 | 0 | — | — | — | — | OBSERVING |
+| Goal.com | MEDIA | 8 | 1 | 0 | — | — | — | — | OBSERVING |
 | STAR - Haberler | MEDIA | 7 | 2 | 0 | — | — | — | — | OBSERVING |
 | ajansspor.com | MEDIA | 6 | 4 | 0 | — | — | — | — | OBSERVING |
 | fotomac.com.tr | MEDIA | 6 | 2 | 0 | — | — | — | — | OBSERVING |
@@ -199,6 +199,7 @@
 | Anadolu'da Bugün | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Ege'de Sonsöz | MEDIA | 2 | 1 | 0 | — | — | — | — | OBSERVING |
 | Gazete Arena | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
+| KARAR | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Konya Postası Gazetesi | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Konya Yenigün | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Konya Yenigün Gazetesi | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
@@ -237,12 +238,12 @@
 | Haber3 | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Haberton | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Halk 54 | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
-| KARAR | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | KAYSERİ YEREL HABER | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | Kayseri Anadolu Haber | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Kayseri Gündem | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Kayseri Olay Haber | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Kocaeli Gazetesi | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
+| Konhaber | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Kurtalan Gazetesi | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Manşet Haber | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | Medya Siyah Beyaz | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
