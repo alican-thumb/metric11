@@ -1,14 +1,14 @@
 # Erken Haber Kaynak Performansı
 
-- Transfer sinyali: 48
+- Transfer sinyali: 50
 - Resmi olaya dönüşen transfer: 8
 - Yayın zamanı bulunan resmi teyit: 3/8
 - İlk görülme zamanı bulunan resmi teyit: 8/8
-- Ölçülen kaynak: 131 / gözlenen kaynak: 257
+- Ölçülen kaynak: 132 / gözlenen kaynak: 259
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 0
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 3590
+- Defterde korunan ilk iddia gözlemi: 3598
 
 ## Kanal Kapsamı
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 3587 | 1151 | 1 | — | — | %99.9 | 0.1 | PARTIAL_MEASUREMENT |
+| Google News / medya | 3595 | 1156 | 1 | — | — | %99.9 | 0.1 | PARTIAL_MEASUREMENT |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -70,9 +70,9 @@
 | sondakika.com | MEDIA | 36 | 29 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Gazete Vatan | MEDIA | 35 | 2 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Haber 7 | MEDIA | 34 | 6 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Transfermarkt | MEDIA | 33 | 15 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | beinsports.com.tr | MEDIA | 33 | 9 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Halk TV | MEDIA | 30 | 2 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
-| Transfermarkt | MEDIA | 30 | 12 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Yeniçağ Gazetesi | MEDIA | 30 | 9 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Ensonhaber | MEDIA | 28 | 19 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | FOTOMAÇ | MEDIA | 21 | 4 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
@@ -175,11 +175,12 @@
 | Yeşil Afşin Gazetesi | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | alanyaturk.com | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | astv.com.tr | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| erzurumgazetesi.com.tr | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | iha.com.tr | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | radikal.com.tr | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | tibbiyebulteni.com | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Yeni Şafak | MEDIA | 20 | 0 | 0 | — | — | — | — | OBSERVING |
-| A Spor | MEDIA | 10 | 4 | 0 | — | — | — | — | OBSERVING |
+| A Spor | MEDIA | 11 | 4 | 0 | — | — | — | — | OBSERVING |
 | Alanya Postası | MEDIA | 9 | 0 | 0 | — | — | — | — | OBSERVING |
 | Türkiye Gazetesi | MEDIA | 9 | 0 | 0 | — | — | — | — | OBSERVING |
 | Goal.com | MEDIA | 7 | 1 | 0 | — | — | — | — | OBSERVING |
@@ -193,6 +194,7 @@
 | Özgür Kocaeli | MEDIA | 4 | 0 | 0 | — | — | — | — | OBSERVING |
 | Bugün Kocaeli Gazetesi | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
 | Rizedeyiz | MEDIA | 3 | 2 | 0 | — | — | — | — | OBSERVING |
+| gazetevatan.com | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
 | haberturk.com | MEDIA | 3 | 3 | 0 | — | — | — | — | OBSERVING |
 | samsungazetesi.com | MEDIA | 3 | 1 | 0 | — | — | — | — | OBSERVING |
 | samsunhaber.com | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
@@ -210,7 +212,7 @@
 | Yeni Safak English | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Yüksekova Haber | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | gazetegercek.com.tr | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
-| gazetevatan.com | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
+| mackolik.com | MEDIA | 2 | 2 | 0 | — | — | — | — | OBSERVING |
 | nefes.com.tr | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | sozcu.com.tr | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | t24.com.tr | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
@@ -243,6 +245,7 @@
 | Kayseri Gündem | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Kayseri Olay Haber | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Kocaeli Gazetesi | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
+| Konhaber | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Kurtalan Gazetesi | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Manşet Haber | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | Medya Siyah Beyaz | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
@@ -272,7 +275,6 @@
 | cumhuriyet.com.tr | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | egedesonsoz.com | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | en.yenisafak.com | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
-| erzurumgazetesi.com.tr | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | gazetearena.com | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | giresunileri.com | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | gozlemgazetesi.com | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
