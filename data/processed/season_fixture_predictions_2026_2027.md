@@ -1,13 +1,13 @@
 # 2026-27 Süper Lig Fikstürü ve Tahminleri
 
-Üretim zamanı: 2026-08-13T02:47:52.394567
+Üretim zamanı: 2026-08-13T05:54:46.927924
 Toplam hafta: 34, toplam maç: 306
 Not: Tahminler 2025-26 sezonunun tamamı ve 2026-27'de şimdiye kadar oynanmış (0 maç) sonuçlardan türetilen güncel takım formu/Elo/transfer durumuna dayanır; sezon ilerledikçe bu sayfa her gün otomatik olarak yeniden hesaplanır, statik bir anlık görüntü değildir.
 Yeni takımlar (sınırlı veri): AMED SPORTİF FAALİYETLER, ERZURUMSPOR FK, ÇORUM FK
 
 ## Hafta 1
 
-- 14.08.2026 21:30 | GALATASARAY A.Ş. - ÇORUM FK | tahmin=Ev (Ev %59 · X %28 · Dep %13) | güven=LOW_NEW_TEAM
+- 14.08.2026 21:30 | GALATASARAY A.Ş. - ARCA ÇORUM FK | tahmin=Ev (Ev %59 · X %28 · Dep %13) | güven=HIGH
 - 15.08.2026 19:00 | KASIMPAŞA A.Ş. - TRABZONSPOR A.Ş. | tahmin=Dep (Ev %36 · X %28 · Dep %36) | güven=LOW
 - 15.08.2026 19:00 | TÜMOSAN KONYASPOR - ÇAYKUR RİZESPOR A.Ş. | tahmin=Ev (Ev %44 · X %22 · Dep %34) | güven=MEDIUM
 - 15.08.2026 21:30 | GAZİANTEP FUTBOL KULÜBÜ A.Ş. - CORENDON ALANYASPOR | tahmin=Dep (Ev %33 · X %23 · Dep %44) | güven=MEDIUM
