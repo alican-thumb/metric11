@@ -240,12 +240,14 @@ nav a:hover, nav a.active { background:#0f2030; color:white; }
 .mc-signals { display:flex; flex-wrap:wrap; gap:5px; font-size:10px; }
 .mc-signals span { background:#0f172a; border:1px solid var(--border); border-radius:5px; padding:2px 6px; color:#cbd5e1; }
 .mc-signals .sig-hot { color:#f59e0b; border-color:rgba(245,158,11,.35); }
+.mc-scorers { font-size:10px; color:#94a3b8; line-height:1.6; }
+.mc-scorers b { color:#e2e8f0; }
 footer { text-align:center; padding:32px 16px 24px; color:#1e3a5f; font-size:11px; border-top:1px solid var(--border); margin-top:32px; }
 footer a { color:#1e3a5f; }
 """
 
 
-def _match_card(m: dict, signals: dict | None = None) -> str:
+def _match_card(m: dict, signals: dict | None = None, scorers: dict | None = None) -> str:
     if m.get("is_played"):
         return f"""<div class="match-card">
   <div class="mc-date">{escape(_fmt_date(m['date_time']))}</div>
@@ -306,6 +308,21 @@ def _match_card(m: dict, signals: dict | None = None) -> str:
             f'<span>0-0 riski %{round(ng*100)}</span>'
             f'</div>'
         )
+    # Olası golcüler (2025-26 gol oranı × güncel 2026-27 kadro × bu haftanın beklenen golü) —
+    # bkz. build_goal_scorer_predictions.py. Eşleşmeyen/yeni transfer oyuncular veri-yok kalır.
+    scorers_html = ""
+    sc = (scorers or {}).get(str(m.get("match_id")))
+    if sc and (sc.get("home_scorers") or sc.get("away_scorers")):
+        def _fmt_scorers(lst):
+            if not lst:
+                return "veri yok"
+            return " · ".join(f'<b>{escape(s["player"])}</b> %{round(s["scores_probability"]*100)}' for s in lst[:2])
+        scorers_html = (
+            '<div class="mc-scorers">'
+            f'⚽ {escape(m["home_team"])}: {_fmt_scorers(sc.get("home_scorers"))}<br>'
+            f'⚽ {escape(m["away_team"])}: {_fmt_scorers(sc.get("away_scorers"))}'
+            '</div>'
+        )
     return f"""<div class="match-card">
   <div class="mc-date">{escape(_fmt_date(m['date_time']))}</div>
   <div class="mc-teams"><span>{escape(m['home_team'])}</span><span class="vs">vs</span><span>{escape(m['away_team'])}</span></div>
@@ -314,6 +331,7 @@ def _match_card(m: dict, signals: dict | None = None) -> str:
   {scoreline_html}
   {signals_html}
   {ref_html}
+  {scorers_html}
   <div class="mc-conf">Güven: {escape(m['data_confidence'])}</div>
 </div>"""
 
@@ -328,8 +346,19 @@ def _load_match_signals() -> dict:
         return {}
 
 
+def _load_goal_scorers() -> dict:
+    path = PROCESSED_DIR / "goal_scorer_predictions_2026_2027.json"
+    if not path.exists():
+        return {}
+    try:
+        return json.loads(path.read_text(encoding="utf-8")).get("matches", {})
+    except json.JSONDecodeError:
+        return {}
+
+
 def build_html(payload: dict) -> str:
     signals = _load_match_signals()
+    scorers = _load_goal_scorers()
     nav_items = "".join(
         f'<a href="{escape(href)}" class="active">{escape(label)}</a>' if label == "2026-27 Fikstür"
         else f'<a href="{escape(href)}">{escape(label)}</a>'
@@ -342,7 +371,7 @@ def build_html(payload: dict) -> str:
     )
     weeks_html = "\n".join(
         f'<div class="week-header">Hafta {week["week"]}</div>'
-        f'<div class="match-grid">{"".join(_match_card(m, signals) for m in week["matches"])}</div>'
+        f'<div class="match-grid">{"".join(_match_card(m, signals, scorers) for m in week["matches"])}</div>'
         for week in payload["weeks"]
     )
     return f"""<!doctype html>
@@ -384,6 +413,8 @@ def main() -> None:
     # Döngüsel import'tan kaçınmak için gecikmeli (lazy) import.
     from src.build_match_signals import main as _build_match_signals
     _build_match_signals()
+    from src.build_goal_scorer_predictions import main as _build_goal_scorers
+    _build_goal_scorers()
     OUTPUT_HTML.write_text(build_html(payload), encoding="utf-8")
     print(f"Kaydedildi: {payload['total_weeks']} hafta, {payload['total_matches']} maç")
 
