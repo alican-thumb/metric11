@@ -1,13 +1,13 @@
 # 2026-27 Süper Lig Fikstürü ve Tahminleri
 
-Üretim zamanı: 2026-08-14T02:46:48.658537
+Üretim zamanı: 2026-08-14T05:46:21.407434
 Toplam hafta: 34, toplam maç: 306
 Not: Tahminler 2025-26 sezonunun tamamı ve 2026-27'de şimdiye kadar oynanmış (0 maç) sonuçlardan türetilen güncel takım formu/Elo/transfer durumuna dayanır; sezon ilerledikçe bu sayfa her gün otomatik olarak yeniden hesaplanır, statik bir anlık görüntü değildir.
 Yeni takımlar (sınırlı veri): AMED SPORTİF FAALİYETLER, ERZURUMSPOR FK, ÇORUM FK
 
 ## Hafta 1
 
-- 14.08.2026 21:30 | GALATASARAY A.Ş. - ARCA ÇORUM FK | tahmin=Ev (Ev %59 · X %28 · Dep %13) | güven=HIGH
+- 14.08.2026 21:30 | GALATASARAY A.Ş. - ÇORUM FK | tahmin=Ev (Ev %59 · X %28 · Dep %13) | güven=LOW_NEW_TEAM
 - 15.08.2026 19:00 | KASIMPAŞA A.Ş. - TRABZONSPOR A.Ş. | tahmin=Dep (Ev %36 · X %28 · Dep %36) | güven=LOW
 - 15.08.2026 19:00 | TÜMOSAN KONYASPOR - ÇAYKUR RİZESPOR A.Ş. | tahmin=Ev (Ev %44 · X %22 · Dep %34) | güven=MEDIUM
 - 15.08.2026 21:30 | GAZİANTEP FUTBOL KULÜBÜ A.Ş. - CORENDON ALANYASPOR | tahmin=Dep (Ev %33 · X %23 · Dep %44) | güven=MEDIUM
@@ -21,7 +21,7 @@ Yeni takımlar (sınırlı veri): AMED SPORTİF FAALİYETLER, ERZURUMSPOR FK, Ç
 
 - 21.08.2026 21:30 | ERZURUMSPOR FK - GALATASARAY A.Ş. | tahmin=X (Ev %20 · X %31 · Dep %49) | güven=LOW_NEW_TEAM
 - 22.08.2026 19:00 | ÇAYKUR RİZESPOR A.Ş. - SAMSUNSPOR A.Ş. | tahmin=Ev (Ev %42 · X %22 · Dep %36) | güven=LOW
-- 22.08.2026 19:00 | ÇORUM FK - KASIMPAŞA A.Ş. | tahmin=X (Ev %35 · X %38 · Dep %27) | güven=LOW_NEW_TEAM
+- 22.08.2026 19:00 | ARCA ÇORUM FK - KASIMPAŞA A.Ş. | tahmin=X (Ev %35 · X %38 · Dep %27) | güven=LOW
 - 22.08.2026 21:30 | FENERBAHÇE A.Ş. - TÜMOSAN KONYASPOR | tahmin=Ev (Ev %62 · X %18 · Dep %21) | güven=HIGH
 - 23.08.2026 19:00 | TRABZONSPOR A.Ş. - İSTANBUL BAŞAKŞEHİR FK | tahmin=Dep (Ev %28 · X %24 · Dep %47) | güven=MEDIUM
 - 23.08.2026 19:00 | EYÜPSPOR - GAZİANTEP FUTBOL KULÜBÜ A.Ş. | tahmin=Ev (Ev %50 · X %24 · Dep %26) | güven=MEDIUM
@@ -39,5 +39,5 @@ Yeni takımlar (sınırlı veri): AMED SPORTİF FAALİYETLER, ERZURUMSPOR FK, Ç
 - 30.08.2026 21:30 | İSTANBUL BAŞAKŞEHİR FK - KASIMPAŞA A.Ş. | tahmin=Ev (Ev %61 · X %21 · Dep %18) | güven=HIGH
 - 30.08.2026 21:30 | SAMSUNSPOR A.Ş. - FENERBAHÇE A.Ş. | tahmin=Dep (Ev %25 · X %25 · Dep %50) | güven=MEDIUM
 - 31.08.2026 21:30 | AMED SPORTİF FAALİYETLER - TRABZONSPOR A.Ş. | tahmin=X (Ev %30 · X %38 · Dep %32) | güven=LOW_NEW_TEAM
-- 31.08.2026 21:30 | BEŞİKTAŞ A.Ş. - ÇORUM FK | tahmin=Ev (Ev %53 · X %30 · Dep %17) | güven=LOW_NEW_TEAM
+- 31.08.2026 21:30 | BEŞİKTAŞ A.Ş. - ARCA ÇORUM FK | tahmin=Ev (Ev %53 · X %30 · Dep %17) | güven=HIGH
 

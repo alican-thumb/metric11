@@ -1,13 +1,14 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-14T04:20:59.824989+00:00
-Toplam ilgili haber: 50
+Üretim zamanı: 2026-08-14T05:46:21.017475+00:00
+Toplam ilgili haber: 51
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [UEFA Konferans Ligi'nde sürpriz sonuçlar! Tur atlayan takımlar belli oldu...](https://www.cnnturk.com/spor/futbol/uefa-konferans-liginde-surpriz-sonuclar-tur-atlayan-takimlar-belli-oldu-3454288) — CNN Türk Spor · 2026-08-14T08:03:16+00:00 · turnuva=ECL · kulüp=—
+- [Fenerbahçe’nin yoğun maratonu başlıyor: 16 günde 5 maç!](https://www.cnnturk.com/spor/futbol/fenerbahcenin-yogun-maratonu-basliyor-16-gunde-5-mac-3454280) — CNN Türk Spor · 2026-08-14T07:32:40+00:00 · turnuva=— · kulüp=Fenerbahçe, Gençlerbirliği
 - [UEFA Avrupa Ligi'nde tur atlayan takımlar belli oldu](https://www.cnnturk.com/spor/futbol/uefa-avrupa-liginde-tur-atlayan-takimlar-belli-oldu-3454274) — CNN Türk Spor · 2026-08-14T07:05:08+00:00 · turnuva=EL · kulüp=—
-- [İşte UEFA Avrupa Ligi üçüncü turunda gecenin sonuçları...](https://www.aksam.com.tr/spor/iste-uefa-avrupa-ligi-ucuncu-turunda-gecenin-sonuclari/haber-1690503) — Aksam Spor · 2026-08-14T01:42:00+03:00 · turnuva=EL · kulüp=—
 - [UEFA Konferans Ligi'nde günün sonuçları](https://www.sabah.com.tr/spor/futbol/2026/08/13/uefa-konferans-liginde-gunu-sonuclari) — Sabah Spor · 2026-08-14T01:00:45+03:00 · turnuva=ECL · kulüp=—
 - [Beşiktaş sahasında Hradec Kralove'yi yenerek turladı!](https://www.fotomac.com.tr/besiktas/2026/08/13/besiktas-sahasinda-hradec-kraloveyi-yenerek-turladi) — Fotomaç · 2026-08-14T00:47:02+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Trabzonspor'un UEFA Avrupa Ligi'nde Play-Off Turu'ndaki rakibi belli oldu!](https://www.fotomac.com.tr/trabzonspor/2026/08/13/trabzonsporun-uefa-avrupa-liginde-play-off-turunda-rakibi-belli-oldu) — Fotomaç · 2026-08-14T00:47:00+03:00 · turnuva=EL · kulüp=Trabzonspor
@@ -45,4 +46,3 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Gel bakalım Kauno Zalgiris! Beşiktaş Hradec Kralove'yi 1-0 yendi](https://www.takvim.com.tr/spor/besiktas/2026/08/13/gel-bakalim-kauno-zalgiris-besiktas-hradec-kraloveyi-1-0-yendi) — Takvim Spor · 2026-08-13T18:47:10+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [BEŞİKTAŞ NASIL TUR ATLAR? Beşiktaş Elenirse Ne Olur, UEFA Konferans Ligi'ne Mi Gider? Tur Atlarsa Kiminle Eşleşecek, Rakibi Kim Olacak?](https://www.cnnturk.com/spor/futbol/besiktas-nasil-tur-atlar-besiktas-elenirse-ne-olur-uefa-konferans-ligine-mi-gider-tur-atlarsa-kiminle-eslesecek-rakibi-kim-olacak-3453986) — CNN Türk Spor · 2026-08-13T17:53:33+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [GÜNÜN MAÇLARI 13 AĞUSTOS 2026: Bugün Kimlerin Maçlar Var? Bugünkü Maçlar Neler? Beşiktaş Hradec Kralove Maçı Saat Kaçta, Hangi Kanalda? İşte 13 Ağustos Günün Maçları](https://www.cnnturk.com/spor/gunun-maclari-13-agustos-2026-bugun-kimlerin-maclar-var-bugunku-maclar-neler-besiktas-hradec-kralove-maci-saat-kacta-hangi-kanalda-3453899) — CNN Türk Spor · 2026-08-13T17:53:23+00:00 · turnuva=CL · kulüp=Beşiktaş
-- [Samuel Ballet, Amedspor’a transfer oldu! Antalyaspor’un kasasına 1,6 milyon Euro girdi - Akdenizmanset](https://news.google.com/rss/articles/CBMitAFBVV95cUxOYXpZdGR4ai13NzUwc2N3NzBRak9pSi1UN3NLYXc3TkdSYlc4ZGVUejdTanVkLUZZU2U3aFAyMjlEQWZ6T2tVMGtfVU9RZHNuMWFOX2J3N1ZBOWVjZ2trXy1jbWtMeGtUTVV0b2h3TFQ4OExvdWlnOXlsMVlpR3N1TXNRSGpGRFkxUkp6YWNwcHVRbWhKTUg0RE5Oa2RyOW9TRlVqdHhoRkYzMFpndHBESEhWSkw?oc=5) — Akdenizmanset · 2026-08-13T12:58:00+00:00 · turnuva=EL · kulüp=Antalyaspor
