@@ -1,11 +1,13 @@
 {
-  "source": "Türk spor basını (RSS/Google News) — resmi kulüp ve hakem atama duyuruları",
+  "source": "Türk spor basını (Milliyet/Fotomaç/Sabah/Karar/Cumhuriyet — Google News) — resmi kulüp ve UEFA fikstür duyuruları",
   "source_type": "MANUAL_NEWS_SOURCED",
-  "captured_at": "2026-07-21",
+  "captured_at": "2026-08-14",
   "notes": [
-    "football-data.org ücretsiz planı UEFA nitelendirme/eleme turu fikstürünü kapsamıyor, bu yüzden european_predictions_2026_2027.json otomatik olarak boş kalıyor.",
-    "Bu dosya, haber kaynaklarından doğrulanmış gerçek maç bilgisini (tarih/saat/mekan/hakem) manuel olarak tutar — rakip takımlar (Górnik Zabrze, Midtjylland, Inter Turku) hakkında istatistiksel veri tabanımız olmadığı için SKOR/OLASILIK TAHMİNİ ÜRETİLMEZ, yalnızca maç bilgisi gösterilir.",
-    "Her maçın rövanş tarihi henüz haber kaynaklarında netleşmediği için yalnızca ilk maç (1. maç) bilgisi tutuluyor; rövanş netleştikçe eklenmeli."
+    "football-data.org ücretsiz planı UEFA nitelendirme/eleme+playoff turu fikstürünü kapsamıyor, bu yüzden european_predictions_2026_2027.json otomatik olarak boş kalıyor.",
+    "Bu dosya, haber kaynaklarından doğrulanmış gerçek maç bilgisini (tarih/saat/mekan) manuel olarak tutar — rakip takımlar hakkında istatistiksel veri tabanımız olmadığı için SKOR/OLASILIK TAHMİNİ ÜRETİLMEZ, yalnızca maç bilgisi gösterilir.",
+    "Saatler TSİ (Türkiye saati) olarak girilmiştir; deplasman (rövanş) maçlarında yerel saat farklı olabilir ama Türk yayın saati esas alınmıştır.",
+    "2026-08-14: 2. ön eleme turu maçları (Temmuz) tamamlandı ve tarihi kayıt olarak korunuyor; playoff turu eşleşmeleri (FB-Lyon [CL], Beşiktaş-Kauno Žalgiris [EL], Trabzonspor-Ferencváros [EL]) doğrulanıp eklendi. Galatasaray şampiyon olarak doğrudan lig aşamasında (playoff yok).",
+    "Beşiktaş-Kauno Žalgiris ilk maç saati haber kaynaklarında kesinleşmediği için kickoff_time_confirmed=false (arayüzde 'saat TBD'); tarih/mekan teyitli."
   ],
   "fixtures": [
     {
@@ -19,7 +21,7 @@
       "venue": "Chobani Stadyumu, İstanbul",
       "referee": null,
       "confirmed": "date_time_venue",
-      "next_round_if_advance": "Sturm Graz (Avusturya) - Hearts (İskoçya) eşleşmesinin galibi (3. Ön Eleme Turu)"
+      "result_note": "Tamamlandı — sonuç european_results_2026_2027.json'da"
     },
     {
       "competition": "ECL",
@@ -32,7 +34,7 @@
       "venue": "Başakşehir Fatih Terim Stadyumu, İstanbul",
       "referee": "Juan Martínez Munuera (İspanya)",
       "confirmed": "date_time_venue_referee",
-      "next_round_if_advance": "FC Vaduz (Lihtenştayn) - Atlètic Club d'Escaldes (Andorra) eşleşmesinin galibi (3. Ön Eleme Turu)"
+      "result_note": "Tamamlandı — Başakşehir elendi"
     },
     {
       "competition": "EL",
@@ -43,10 +45,87 @@
       "away_team_country": "Danimarka",
       "kickoff_local": "2026-07-23T00:00:00+03:00",
       "kickoff_time_confirmed": false,
-      "venue": "İstanbul (ev sahibi Beşiktaş — haber başlık sırasına göre çıkarıldı, resmi teyit yok)",
-      "referee": "Ricardo de Burgos (İspanya) — 1. maç; rövanşta Ante Culina (Hırvatistan)",
+      "venue": "İstanbul",
+      "referee": "Ricardo de Burgos (İspanya)",
       "confirmed": "date_only",
-      "next_round_if_advance": "Hradec Králové (Çekya) - Tromsø (Norveç) eşleşmesinin galibi (3. Ön Eleme Turu)"
+      "result_note": "Tamamlandı — sonuç european_results_2026_2027.json'da"
+    },
+    {
+      "competition": "CL",
+      "stage": "PLAYOFF_ROUND",
+      "leg": 1,
+      "home_team": "Fenerbahçe",
+      "away_team": "Lyon",
+      "away_team_country": "Fransa",
+      "kickoff_local": "2026-08-18T22:00:00+03:00",
+      "venue": "Chobani Stadyumu (Şükrü Saracoğlu), İstanbul",
+      "referee": null,
+      "confirmed": "date_time_venue",
+      "next_round_if_advance": "UEFA Şampiyonlar Ligi lig aşaması (kaybeden Avrupa Ligi lig aşamasına düşer)"
+    },
+    {
+      "competition": "CL",
+      "stage": "PLAYOFF_ROUND",
+      "leg": 2,
+      "home_team": "Lyon",
+      "away_team": "Fenerbahçe",
+      "home_team_country": "Fransa",
+      "kickoff_local": "2026-08-26T22:00:00+03:00",
+      "venue": "Parc OL, Lyon (Fransa)",
+      "referee": null,
+      "confirmed": "date_time_venue"
+    },
+    {
+      "competition": "EL",
+      "stage": "PLAYOFF_ROUND",
+      "leg": 1,
+      "home_team": "Beşiktaş",
+      "away_team": "Kauno Žalgiris",
+      "away_team_country": "Litvanya",
+      "kickoff_local": "2026-08-20T21:00:00+03:00",
+      "kickoff_time_confirmed": false,
+      "venue": "Tüpraş Stadyumu, İstanbul",
+      "referee": null,
+      "confirmed": "date_venue",
+      "next_round_if_advance": "UEFA Avrupa Ligi lig aşaması (kaybeden Konferans Ligi lig aşamasına düşer)"
+    },
+    {
+      "competition": "EL",
+      "stage": "PLAYOFF_ROUND",
+      "leg": 2,
+      "home_team": "Kauno Žalgiris",
+      "away_team": "Beşiktaş",
+      "home_team_country": "Litvanya",
+      "kickoff_local": "2026-08-27T21:00:00+03:00",
+      "kickoff_time_confirmed": false,
+      "venue": "Litvanya (Kaunas)",
+      "referee": null,
+      "confirmed": "date_only"
+    },
+    {
+      "competition": "EL",
+      "stage": "PLAYOFF_ROUND",
+      "leg": 1,
+      "home_team": "Trabzonspor",
+      "away_team": "Ferencváros",
+      "away_team_country": "Macaristan",
+      "kickoff_local": "2026-08-20T22:00:00+03:00",
+      "venue": "Papara Park, Trabzon",
+      "referee": null,
+      "confirmed": "date_time_venue",
+      "next_round_if_advance": "UEFA Avrupa Ligi lig aşaması (kaybeden Konferans Ligi lig aşamasına düşer)"
+    },
+    {
+      "competition": "EL",
+      "stage": "PLAYOFF_ROUND",
+      "leg": 2,
+      "home_team": "Ferencváros",
+      "away_team": "Trabzonspor",
+      "home_team_country": "Macaristan",
+      "kickoff_local": "2026-08-27T22:00:00+03:00",
+      "venue": "Groupama Arena, Budapeşte (Macaristan)",
+      "referee": null,
+      "confirmed": "date_time_venue"
     }
   ]
 }
