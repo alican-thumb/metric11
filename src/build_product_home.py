@@ -191,13 +191,13 @@ def build_html() -> str:
 
     # Hero metni üç modludur: lig aktif (maç-öncelikli) > transfer sezonu > veri platformu.
     if league_active():
-        hero_overline = "Süper Lig 2026/27 &mdash; Lig başladı"
+        hero_overline = "Süper Lig 2026-2027 &mdash; Lig başladı"
         hero_h1 = "Bu hafta kim kazanır? Skoru oku."
         hero_p = "34 hafta, 306 maç için güncel skor tahminleri. Oynanan her maç ve doğrulanan her transfer bir sonraki haftanın tahminini besliyor; sayfa her gün yeniden hesaplanıyor."
         hero_cta_href = "season_fixture_predictions_2026_2027.html"
         hero_cta_label = "Bu Hafta ve Fikstür"
     elif _is_transfer_season():
-        hero_overline = "Süper Lig 2026/27 &mdash; Transfer sezonu"
+        hero_overline = "Süper Lig 2026-2027 &mdash; Transfer sezonu"
         hero_h1 = "Oyuncuyu değerlendir. Kadroyu kur. Transferi takip et."
         hero_p = "261 serbest kalacak oyuncu, 180 son yıl kontrat. Transfer penceresi 1 Haziran'da açılıyor."
         hero_cta_href = "transfer_season_context_2025_2026.html"
@@ -292,7 +292,7 @@ def build_html() -> str:
 </head>
 <body>
   <div class="topbar">
-    <a class="brand" href="/"><span class="brand-mark">11</span> metric11 <span class="season">Süper Lig {"2026/27" if league_active() else "2025/26"}</span></a>
+    <a class="brand" href="/"><span class="brand-mark">11</span> metric11 <span class="season">Süper Lig {"2026-2027" if league_active() else "2025-2026"}</span></a>
     <nav>
       <a href="/">Gündem</a>
       <a href="transfer_tracker_2025_2026.html">Transferler</a>

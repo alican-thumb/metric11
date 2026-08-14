@@ -7,10 +7,12 @@ from html import escape
 
 _SEASON_END = date(2026, 5, 18)
 _WINDOW_CLOSE = date(2026, 9, 1)
-# 2026-27 Trendyol Süper Lig ilk maç günü. Bu tarihten itibaren maçlar oynanmaya
-# başlar; site transfer-öncelikli moddan maç/tahmin-öncelikli "lig modu"na geçer.
-# Transfer penceresi (1 Eylül'e kadar) hâlâ açık olsa bile öncelik maça döner.
-LEAGUE_START = date(2026, 8, 16)
+# 2026-27 Trendyol Süper Lig 1. hafta ilk maç günü (Galatasaray–Çorum, 14.08.2026).
+# season_fixture_predictions_2026_2027.json'daki en erken maç tarihiyle doğrulandı
+# (Hafta 1: 14–17 Ağustos). Bu tarihten itibaren maçlar oynanmaya başlar; site
+# transfer-öncelikli moddan maç/tahmin-öncelikli "lig modu"na geçer. Transfer
+# penceresi (1 Eylül'e kadar) hâlâ açık olsa bile öncelik maça döner.
+LEAGUE_START = date(2026, 8, 14)
 
 
 def league_active() -> bool:
@@ -101,7 +103,7 @@ def _build_nav(active: str = "") -> str:
         '<a class="brand" href="/">'
         '<span class="brand-mark">11</span>'
         ' metric11'
-        f'<span class="season">S&#xfc;per Lig {"2026/27" if league_active() else "2025/26"}</span>'
+        f'<span class="season">S&#xfc;per Lig {"2026-2027" if league_active() else "2025-2026"}</span>'
         '</a>'
         f'<nav>{items}</nav>'
         '</div>'

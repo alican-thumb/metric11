@@ -289,21 +289,22 @@ def _nearest_known_fixture_html() -> str:
     if not fixtures:
         return ""
     now = datetime.now(timezone.utc)
+    # Yalnız bugünkü/gelecekteki maçlar — oynanmış (geçmiş) elemeleri gösterme.
+    # (Eski kod yalnız TEK geçmiş maçı atlıyordu; birden çok oynanmış maç varsa
+    # ikinci en eski geçmiş maça düşüyordu — bayat fikstür sorunu.)
     upcoming = []
     for fx in fixtures:
         try:
             dt = datetime.fromisoformat(fx["kickoff_local"])
         except (KeyError, ValueError):
             continue
-        upcoming.append((dt, fx))
+        if (dt.date() - now.astimezone(dt.tzinfo).date()).days >= 0:
+            upcoming.append((dt, fx))
     if not upcoming:
         return ""
     upcoming.sort(key=lambda pair: pair[0])
     dt, fx = upcoming[0]
     delta_days = (dt.date() - now.astimezone(dt.tzinfo).date()).days
-    if delta_days < 0 and len(upcoming) > 1:
-        dt, fx = upcoming[1]
-        delta_days = (dt.date() - now.astimezone(dt.tzinfo).date()).days
     if delta_days == 0:
         day_label = "Bugün"
     elif delta_days == 1:
@@ -320,6 +321,38 @@ def _nearest_known_fixture_html() -> str:
         f'<span style="font-size:11px;color:#e2e8f0;line-height:1.4">{escape(day_label)} {escape(time_str)} — '
         f'{escape(fx.get("home_team",""))} - {escape(fx.get("away_team",""))}</span>'
         '</a>'
+    )
+
+
+def _score_sidebar_html() -> str:
+    """Lig-modunda sağ sütunun üstünde skor tahminlerini öne çıkaran kompakt panel.
+
+    Transfer stat bloğunun görsel dilini (yeşil stat kutuları) skor temasına (lime
+    aksan) uyarlar; bu haftanın maç sayısı + sezon isabeti + fikstür/karne linkleri."""
+    mw = _load(PROCESSED_DIR / "match_week_2026_2027.json")
+    we = _load(PROCESSED_DIR / "weekly_evaluation_2026_2027.json")
+    matches = mw.get("matches", []) if isinstance(mw, dict) else []
+    match_count = len(matches)
+    if not match_count:
+        return ""
+    week = mw.get("week")
+    week_lbl = f"Hafta {week}" if week else "Bu Hafta"
+    summ = we.get("summary", {}) if isinstance(we, dict) else {}
+    evaluated = summ.get("evaluated_matches", 0)
+    if evaluated:
+        acc = summ.get("accuracy", 0.0) or 0.0
+        second_val, second_lbl = f"%{acc * 100:.0f}", "Sezon İsabeti"
+    else:
+        second_val, second_lbl = "Yeni", "Sezon Başladı"
+    return (
+        '<div class="panel" style="border-top:3px solid var(--lime);font-size:13px">'
+        '<div style="font-size:10px;font-weight:700;color:var(--lime);letter-spacing:.06em;margin-bottom:10px;text-transform:uppercase">Skor Tahminleri · 2026-27</div>'
+        '<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px">'
+        f'<div style="background:#0f2318;border-radius:6px;padding:10px 12px"><div style="font-size:22px;font-weight:800;color:white">{match_count}</div><div style="color:#8fa89a;font-size:11px;margin-top:2px">{escape(week_lbl)} Maçı</div></div>'
+        f'<div style="background:#0f2318;border-radius:6px;padding:10px 12px"><div style="font-size:22px;font-weight:800;color:white">{escape(second_val)}</div><div style="color:#8fa89a;font-size:11px;margin-top:2px">{escape(second_lbl)}</div></div>'
+        '</div>'
+        f'<div style="display:flex;flex-direction:column;gap:7px">{_ana_link("season_fixture_predictions_2026_2027.html", "Fikstür & skor tahminleri →", bold=True)}{_ana_link("weekly_evaluation_2026_2027.html", "Haftalık isabet karnesi →")}</div>'
+        '</div>'
     )
 
 
@@ -384,6 +417,12 @@ def build_html() -> str:
         )
     else:
         transfer_sidebar_html = ""
+
+    # Sağ sütun sıralaması: lig-modunda skor paneli üste, transfer bloğu alta iner
+    # (skor öne çıkar); lig öncesi transfer bloğu üstte kalır.
+    score_sidebar_html = _score_sidebar_html() if _league else ""
+    sidebar_top_html = score_sidebar_html if _league else transfer_sidebar_html
+    sidebar_bottom_html = transfer_sidebar_html if _league else ""
 
     if not _is_transfer_season:
         analysis_transfer_links_html = (
@@ -523,7 +562,7 @@ def build_html() -> str:
     </div>
   </div>
   <div style="display:flex;flex-direction:column;gap:16px">
-    {transfer_sidebar_html}
+    {sidebar_top_html}
     <div class="panel" style="font-size:13px;background:#09111f;border-color:#1e3a5f">
       <div style="font-size:10px;font-weight:700;color:#f59e0b;letter-spacing:.06em;margin-bottom:10px;text-transform:uppercase">⚽ Avrupa Kupası 2026-27</div>
       {eu_teaser_html}
@@ -550,6 +589,7 @@ def build_html() -> str:
         {_ana_link("football_intelligence_home.html", "Tüm analiz araçları")}
       </div>
     </div>
+    {sidebar_bottom_html}
   </div>
 </div>
 <script defer src="/_vercel/insights/script.js"></script>
