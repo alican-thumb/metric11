@@ -237,12 +237,15 @@ nav a:hover, nav a.active { background:#0f2030; color:white; }
 .mc-ref { font-size:10px; color:#94a3b8; display:flex; align-items:center; gap:5px; }
 .mc-ref .ref-flag { background:rgba(245,158,11,.14); color:#f59e0b; border-radius:4px; padding:0 5px; font-weight:700; }
 .mc-conf { font-size:10px; color:#475569; }
+.mc-signals { display:flex; flex-wrap:wrap; gap:5px; font-size:10px; }
+.mc-signals span { background:#0f172a; border:1px solid var(--border); border-radius:5px; padding:2px 6px; color:#cbd5e1; }
+.mc-signals .sig-hot { color:#f59e0b; border-color:rgba(245,158,11,.35); }
 footer { text-align:center; padding:32px 16px 24px; color:#1e3a5f; font-size:11px; border-top:1px solid var(--border); margin-top:32px; }
 footer a { color:#1e3a5f; }
 """
 
 
-def _match_card(m: dict) -> str:
+def _match_card(m: dict, signals: dict | None = None) -> str:
     if m.get("is_played"):
         return f"""<div class="match-card">
   <div class="mc-date">{escape(_fmt_date(m['date_time']))}</div>
@@ -275,18 +278,45 @@ def _match_card(m: dict) -> str:
         flag = '<span class="ref-flag">yüksek kart</span>' if ref_cards > 5.5 else ""
         name_part = f'{escape(str(ref_name))} · ' if ref_name else ""
         ref_html = f'<div class="mc-ref">🧑‍⚖️ {name_part}{ref_cards:.1f} kart/maç {flag}</div>'
+    # Maç geneli gol & kart sinyali (2.5 alt/üst, KG var/yok, beklenen kart, kırmızı risk) —
+    # build_match_signals.py'den, mevcut xG + 2025-26 takım/hakem kart geçmişinden türetilir.
+    signals_html = ""
+    sig = (signals or {}).get(str(m.get("match_id")))
+    if sig:
+        o25 = sig["over_2_5_probability"]
+        btts = sig["btts_probability"]
+        chips = [
+            f'<span class="{"sig-hot" if o25 >= 0.55 else ""}">⚽ 2.5 Üst %{round(o25*100)}</span>',
+            f'<span class="{"sig-hot" if btts >= 0.55 else ""}">🥅 KG Var %{round(btts*100)}</span>',
+            f'<span>🟨 {sig["expected_total_cards"]:.1f} kart</span>',
+        ]
+        if sig["red_card_risk"] >= 0.25:
+            chips.append(f'<span class="sig-hot">🟥 %{round(sig["red_card_risk"]*100)} risk</span>')
+        signals_html = f'<div class="mc-signals">{"".join(chips)}</div>'
     return f"""<div class="match-card">
   <div class="mc-date">{escape(_fmt_date(m['date_time']))}</div>
   <div class="mc-teams"><span>{escape(m['home_team'])}</span><span class="vs">vs</span><span>{escape(m['away_team'])}</span></div>
   <div class="mc-pick {pick}">{escape(pick_text)}</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %{round(m['home_win_probability']*100)}</span><span>X %{round(m['draw_probability']*100)}</span><span style="color:#f87171">Dep %{round(m['away_win_probability']*100)}</span></div>
   {scoreline_html}
+  {signals_html}
   {ref_html}
   <div class="mc-conf">Güven: {escape(m['data_confidence'])}</div>
 </div>"""
 
 
+def _load_match_signals() -> dict:
+    path = PROCESSED_DIR / "match_signals_2026_2027.json"
+    if not path.exists():
+        return {}
+    try:
+        return json.loads(path.read_text(encoding="utf-8")).get("matches", {})
+    except json.JSONDecodeError:
+        return {}
+
+
 def build_html(payload: dict) -> str:
+    signals = _load_match_signals()
     nav_items = "".join(
         f'<a href="{escape(href)}" class="active">{escape(label)}</a>' if label == "2026-27 Fikstür"
         else f'<a href="{escape(href)}">{escape(label)}</a>'
@@ -299,7 +329,7 @@ def build_html(payload: dict) -> str:
     )
     weeks_html = "\n".join(
         f'<div class="week-header">Hafta {week["week"]}</div>'
-        f'<div class="match-grid">{"".join(_match_card(m) for m in week["matches"])}</div>'
+        f'<div class="match-grid">{"".join(_match_card(m, signals) for m in week["matches"])}</div>'
         for week in payload["weeks"]
     )
     return f"""<!doctype html>
@@ -336,6 +366,11 @@ def main() -> None:
     payload = build_predictions()
     OUTPUT_JSON.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     OUTPUT_MD.write_text(build_markdown(payload), encoding="utf-8")
+    # Gol/kart sinyalleri (Poisson O/U, KG, kart) OUTPUT_JSON'u okur — HTML'den önce, taze
+    # xG üzerinden yeniden üretilmeli (aksi halde bir önceki çalışmanın bayat sinyali gösterilir).
+    # Döngüsel import'tan kaçınmak için gecikmeli (lazy) import.
+    from src.build_match_signals import main as _build_match_signals
+    _build_match_signals()
     OUTPUT_HTML.write_text(build_html(payload), encoding="utf-8")
     print(f"Kaydedildi: {payload['total_weeks']} hafta, {payload['total_matches']} maç")
 

@@ -17,6 +17,7 @@ from src.config import PROCESSED_DIR
 
 FIXTURE_PRED_PATH = PROCESSED_DIR / "season_fixture_predictions_2026_2027.json"
 WEEKLY_EVAL_PATH = PROCESSED_DIR / "weekly_evaluation_2026_2027.json"
+MATCH_SIGNALS_PATH = PROCESSED_DIR / "match_signals_2026_2027.json"
 OUTPUT_JSON = PROCESSED_DIR / "match_week_2026_2027.json"
 
 _TR_MONTHS = ["", "Oca", "Şub", "Mar", "Nis", "May", "Haz", "Tem", "Ağu", "Eyl", "Eki", "Kas", "Ara"]
@@ -47,6 +48,13 @@ def build_payload() -> dict:
     if not week:
         return {"available": False, "generated_at": datetime.now().isoformat()}
 
+    signals = {}
+    if MATCH_SIGNALS_PATH.exists():
+        try:
+            signals = json.loads(MATCH_SIGNALS_PATH.read_text(encoding="utf-8")).get("matches", {})
+        except json.JSONDecodeError:
+            signals = {}
+
     matches = []
     for m in week["matches"]:
         pick = m.get("predicted")
@@ -72,6 +80,7 @@ def build_payload() -> dict:
             "recommended_scoreline": (m.get("recommended_scoreline") or {}).get("score"),
             "expected_home_goals": m.get("expected_home_goals"),
             "expected_away_goals": m.get("expected_away_goals"),
+            "signals": signals.get(str(m.get("match_id"))),
         })
 
     last_week_summary = None
@@ -140,11 +149,22 @@ def render_hero_html(payload: dict | None = None) -> str:
                     f'<span style="font-weight:800;color:#132018;">{escape(str(score))}</span>'
                     f'<span style="color:#8fa89a;">{xg_part}</span></div>'
                 )
+            sig = m.get("signals")
+            sig_line = ""
+            if sig:
+                sig_line = (
+                    '<div style="font-size:10px;color:#8fa89a;margin-top:3px;display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end;">'
+                    f'<span>⚽2.5Ü %{round(sig["over_2_5_probability"]*100)}</span>'
+                    f'<span>🥅KG %{round(sig["btts_probability"]*100)}</span>'
+                    f'<span>🟨{sig["expected_total_cards"]:.1f}</span>'
+                    '</div>'
+                )
             right = (
                 f'<span style="display:inline-block;font-size:12px;font-weight:700;color:#fff;'
                 f'background:{color};padding:3px 9px;border-radius:5px;">{escape(m.get("pick_text") or "")}</span>'
                 f'<div style="font-size:11px;color:#627067;margin-top:4px;">{probs}</div>'
                 f'{score_line}'
+                f'{sig_line}'
             )
         rows.append(
             f'<div style="display:flex;justify-content:space-between;align-items:center;gap:12px;'
