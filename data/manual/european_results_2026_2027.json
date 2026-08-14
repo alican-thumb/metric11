@@ -1,0 +1,20 @@
+{
+  "source": "manual + collect_european_fixtures (finished matches)",
+  "source_type": "official_result",
+  "captured_at": null,
+  "notes": "Türk kulüplerinin 2026-27 Avrupa kupası (UCL/UEL/UECL + ön eleme) OYNANMIŞ maç sonuçları. Bu sonuçlar european_form_edge() ile Süper Lig takım gücüne küçük, capli bir form sinyali olarak beslenir. Skorlar collect_european_fixtures (football-data.org finished matches) tarafından otomatik ya da elle doldurulur; sonuç girilene kadar sinyal available=False kalır ve tahmini etkilemez. opponent_strength: elite|strong|mid|weak (varsayılan mid).",
+  "results": [
+    {
+      "_example": true,
+      "competition": "CL",
+      "stage": "2ND_QUALIFYING_ROUND",
+      "leg": 1,
+      "date": "2026-07-21",
+      "home_team": "Fenerbahçe",
+      "away_team": "Górnik Zabrze",
+      "home_score": null,
+      "away_score": null,
+      "opponent_strength": "mid"
+    }
+  ]
+}

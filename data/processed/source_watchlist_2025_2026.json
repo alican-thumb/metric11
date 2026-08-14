@@ -1,0 +1,497 @@
+{
+  "updated_at": "2026-05-25",
+  "summary": {
+    "source_count": 14,
+    "connected_or_partial_count": 6,
+    "planned_or_research_count": 5,
+    "daily_refresh_count": 10,
+    "high_analysis_weight_count": 3,
+    "high_risk_count": 1
+  },
+  "daily_sources": [
+    {
+      "name": "TFF maç detayları",
+      "category": "official_match_data",
+      "status": "connected",
+      "risk": "medium",
+      "freshness_target": "daily_during_season",
+      "analysis_weight": "core",
+      "use_cases": [
+        "match_preview",
+        "score_prediction",
+        "goal_candidates",
+        "availability",
+        "referee_analysis",
+        "team_needs"
+      ]
+    },
+    {
+      "name": "TFF oyuncu profilleri",
+      "category": "official_player_profiles",
+      "status": "connected",
+      "risk": "medium",
+      "freshness_target": "weekly_and_transfer_window_daily",
+      "analysis_weight": "core",
+      "use_cases": [
+        "team_needs",
+        "contract_risk",
+        "resale_signal",
+        "scout_filtering"
+      ]
+    },
+    {
+      "name": "Transfermarkt squad pages",
+      "category": "market_value_and_squad",
+      "status": "connected_super_lig_snapshot_2025_2026",
+      "risk": "high",
+      "freshness_target": "weekly_and_transfer_window_daily_subject_to_terms",
+      "analysis_weight": "high_internal",
+      "use_cases": [
+        "team_needs",
+        "market_value",
+        "position_mapping",
+        "transfer_window_tracking",
+        "scout_economics"
+      ]
+    },
+    {
+      "name": "API-Football",
+      "category": "external_api",
+      "status": "connected_2024_plan_limited_2025",
+      "risk": "medium",
+      "freshness_target": "daily_if_plan_allows",
+      "analysis_weight": "validation_and_enrichment",
+      "use_cases": [
+        "external_validation",
+        "player_quality_signal",
+        "injury_history",
+        "scout_enrichment"
+      ]
+    },
+    {
+      "name": "Süper Lig and club forums/social news",
+      "category": "community_signal",
+      "status": "planned",
+      "risk": "medium",
+      "freshness_target": "daily_transfer_window",
+      "analysis_weight": "weak_signal_only",
+      "use_cases": [
+        "scout_watchlist_ideas",
+        "rumor_context",
+        "manual_review_queue"
+      ]
+    },
+    {
+      "name": "Süper Lig official club website announcements",
+      "category": "official_club_news",
+      "status": "connected_snapshot_16_of_18_no_credentials_2026_05_25",
+      "risk": "low_medium",
+      "freshness_target": "daily_transfer_window",
+      "analysis_weight": "official_confirmation",
+      "use_cases": [
+        "official_transfer_confirmation",
+        "availability_review",
+        "corroboration"
+      ]
+    },
+    {
+      "name": "Turkish sports RSS news feeds",
+      "category": "news_and_transfer_context",
+      "status": "connected_snapshot_2026_05_25",
+      "risk": "medium",
+      "freshness_target": "daily_transfer_window",
+      "analysis_weight": "context_only",
+      "use_cases": [
+        "transfer_rumor_radar",
+        "news_intelligence",
+        "manual_review_queue",
+        "corroboration"
+      ]
+    },
+    {
+      "name": "X official clubs and football news accounts",
+      "category": "official_and_secondary_social_signal",
+      "status": "collector_ready_requires_x_bearer_token_or_fallback_snapshot",
+      "risk": "medium",
+      "freshness_target": "daily_transfer_window",
+      "analysis_weight": "context_only",
+      "use_cases": [
+        "official_transfer_confirmation",
+        "transfer_rumor_radar",
+        "availability_review",
+        "corroboration"
+      ]
+    },
+    {
+      "name": "beIN SPORTS / LigTV news and match context",
+      "category": "news_context",
+      "status": "planned",
+      "risk": "medium",
+      "freshness_target": "daily",
+      "analysis_weight": "context_only",
+      "use_cases": [
+        "availability_manual_review",
+        "lineup_context",
+        "transfer_window_context",
+        "narrative_analysis"
+      ]
+    },
+    {
+      "name": "football-data.org",
+      "category": "external_api",
+      "status": "collector_available_needs_key_and_competition_mapping",
+      "risk": "low_medium",
+      "freshness_target": "daily",
+      "analysis_weight": "supporting",
+      "use_cases": [
+        "cross_check_scores",
+        "fixture_validation",
+        "league_expansion"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "name": "TFF maç detayları",
+      "category": "official_match_data",
+      "url": "https://www.tff.org/",
+      "method": "scraper",
+      "status": "connected",
+      "risk": "medium",
+      "license_status": "verify_terms",
+      "freshness_target": "daily_during_season",
+      "analysis_weight": "core",
+      "fields": [
+        "fixture",
+        "score",
+        "lineup",
+        "bench",
+        "goals",
+        "cards",
+        "referee",
+        "var",
+        "player_id",
+        "club_id"
+      ],
+      "use_cases": [
+        "match_preview",
+        "score_prediction",
+        "goal_candidates",
+        "availability",
+        "referee_analysis",
+        "team_needs"
+      ]
+    },
+    {
+      "name": "TFF oyuncu profilleri",
+      "category": "official_player_profiles",
+      "url": "https://www.tff.org/",
+      "method": "scraper",
+      "status": "connected",
+      "risk": "medium",
+      "license_status": "verify_terms",
+      "freshness_target": "weekly_and_transfer_window_daily",
+      "analysis_weight": "core",
+      "fields": [
+        "birth_date",
+        "age",
+        "nationality",
+        "license_no",
+        "club",
+        "contract_start",
+        "contract_end"
+      ],
+      "use_cases": [
+        "team_needs",
+        "contract_risk",
+        "resale_signal",
+        "scout_filtering"
+      ]
+    },
+    {
+      "name": "Transfermarkt squad pages",
+      "category": "market_value_and_squad",
+      "url": "https://www.transfermarkt.com/",
+      "method": "controlled_scraper",
+      "status": "connected_super_lig_snapshot_2025_2026",
+      "risk": "high",
+      "license_status": "verify_terms_before_commercial_use",
+      "freshness_target": "weekly_and_transfer_window_daily_subject_to_terms",
+      "analysis_weight": "high_internal",
+      "fields": [
+        "position",
+        "position_group",
+        "age",
+        "contract_until",
+        "market_value",
+        "profile_url"
+      ],
+      "use_cases": [
+        "team_needs",
+        "market_value",
+        "position_mapping",
+        "transfer_window_tracking",
+        "scout_economics"
+      ]
+    },
+    {
+      "name": "beIN SPORTS / LigTV news and match context",
+      "category": "news_context",
+      "url": "https://www.beinsports.com.tr/",
+      "method": "news_monitor_or_manual_review",
+      "status": "planned",
+      "risk": "medium",
+      "license_status": "verify_terms_and_quote_limits",
+      "freshness_target": "daily",
+      "analysis_weight": "context_only",
+      "fields": [
+        "injury_news",
+        "suspension_news",
+        "transfer_news",
+        "manager_quotes",
+        "probable_lineups"
+      ],
+      "use_cases": [
+        "availability_manual_review",
+        "lineup_context",
+        "transfer_window_context",
+        "narrative_analysis"
+      ]
+    },
+    {
+      "name": "Turkish sports RSS news feeds",
+      "category": "news_and_transfer_context",
+      "url": "https://www.hurriyet.com.tr/rss/spor",
+      "method": "rss_collector",
+      "status": "connected_snapshot_2026_05_25",
+      "risk": "medium",
+      "license_status": "verify_terms_and_quote_limits",
+      "freshness_target": "daily_transfer_window",
+      "analysis_weight": "context_only",
+      "fields": [
+        "headline",
+        "summary",
+        "published_at",
+        "source",
+        "transfer_claim",
+        "injury_claim",
+        "club_mention"
+      ],
+      "use_cases": [
+        "transfer_rumor_radar",
+        "news_intelligence",
+        "manual_review_queue",
+        "corroboration"
+      ]
+    },
+    {
+      "name": "X official clubs and football news accounts",
+      "category": "official_and_secondary_social_signal",
+      "url": "https://x.com/",
+      "method": "x_api_primary_nitter_development_fallback",
+      "status": "collector_ready_requires_x_bearer_token_or_fallback_snapshot",
+      "risk": "medium",
+      "license_status": "platform_terms_and_display_requirements",
+      "freshness_target": "daily_transfer_window",
+      "analysis_weight": "context_only",
+      "fields": [
+        "post_id",
+        "account_type",
+        "published_at",
+        "official_announcement",
+        "transfer_claim",
+        "injury_claim",
+        "club_mention"
+      ],
+      "use_cases": [
+        "official_transfer_confirmation",
+        "transfer_rumor_radar",
+        "availability_review",
+        "corroboration"
+      ]
+    },
+    {
+      "name": "Süper Lig official club website announcements",
+      "category": "official_club_news",
+      "url": "data/manual/official_club_news_sources.json",
+      "method": "official_website_collector",
+      "status": "connected_snapshot_16_of_18_no_credentials_2026_05_25",
+      "risk": "low_medium",
+      "license_status": "verify_terms_and_show_link_derived_signal_only",
+      "freshness_target": "daily_transfer_window",
+      "analysis_weight": "official_confirmation",
+      "fields": [
+        "club",
+        "headline",
+        "published_at",
+        "official_transfer_announcement",
+        "injury_announcement",
+        "link"
+      ],
+      "use_cases": [
+        "official_transfer_confirmation",
+        "availability_review",
+        "corroboration"
+      ]
+    },
+    {
+      "name": "API-Football",
+      "category": "external_api",
+      "url": "https://www.api-football.com/",
+      "method": "api",
+      "status": "connected_2024_plan_limited_2025",
+      "risk": "medium",
+      "license_status": "api_plan_limited",
+      "freshness_target": "daily_if_plan_allows",
+      "analysis_weight": "validation_and_enrichment",
+      "fields": [
+        "fixtures",
+        "standings",
+        "squads",
+        "player_stats",
+        "top_scorers",
+        "cards",
+        "injuries",
+        "transfers"
+      ],
+      "use_cases": [
+        "external_validation",
+        "player_quality_signal",
+        "injury_history",
+        "scout_enrichment"
+      ]
+    },
+    {
+      "name": "football-data.org",
+      "category": "external_api",
+      "url": "https://www.football-data.org/",
+      "method": "api",
+      "status": "collector_available_needs_key_and_competition_mapping",
+      "risk": "low_medium",
+      "license_status": "api_terms",
+      "freshness_target": "daily",
+      "analysis_weight": "supporting",
+      "fields": [
+        "matches",
+        "standings",
+        "teams",
+        "scorers"
+      ],
+      "use_cases": [
+        "cross_check_scores",
+        "fixture_validation",
+        "league_expansion"
+      ]
+    },
+    {
+      "name": "Football-Data.co.uk",
+      "category": "historical_results_and_odds",
+      "url": "https://www.football-data.co.uk/",
+      "method": "csv_download",
+      "status": "collector_available",
+      "risk": "low_medium",
+      "license_status": "verify_terms",
+      "freshness_target": "weekly",
+      "analysis_weight": "model_training",
+      "fields": [
+        "historical_results",
+        "odds",
+        "shots_if_available",
+        "cards_if_available"
+      ],
+      "use_cases": [
+        "prediction_backtest",
+        "market_baseline",
+        "calibration"
+      ]
+    },
+    {
+      "name": "StatsBomb Open Data",
+      "category": "open_event_data",
+      "url": "https://github.com/statsbomb/open-data",
+      "method": "git_or_http_dataset",
+      "status": "planned",
+      "risk": "low_medium",
+      "license_status": "open_data_license_with_attribution",
+      "freshness_target": "monthly",
+      "analysis_weight": "model_training",
+      "fields": [
+        "event_coordinates",
+        "shots",
+        "passes",
+        "pressures",
+        "xg_training_examples"
+      ],
+      "use_cases": [
+        "xg_model_training",
+        "role_model_training",
+        "event_feature_engineering"
+      ]
+    },
+    {
+      "name": "openfootball datasets",
+      "category": "open_reference_data",
+      "url": "https://github.com/openfootball",
+      "method": "git_dataset",
+      "status": "planned",
+      "risk": "low",
+      "license_status": "public_domain_or_project_specific",
+      "freshness_target": "monthly",
+      "analysis_weight": "reference",
+      "fields": [
+        "clubs",
+        "players",
+        "leagues",
+        "fixtures"
+      ],
+      "use_cases": [
+        "entity_resolution",
+        "league_expansion",
+        "player_identity_reference"
+      ]
+    },
+    {
+      "name": "Reep register / entity ID crosswalk",
+      "category": "entity_resolution",
+      "url": "https://github.com/",
+      "method": "open_source_dataset_review",
+      "status": "research_needed",
+      "risk": "low_medium",
+      "license_status": "verify_repository_license",
+      "freshness_target": "weekly_if_usable",
+      "analysis_weight": "infrastructure",
+      "fields": [
+        "player_provider_ids",
+        "team_provider_ids",
+        "cross_source_identity"
+      ],
+      "use_cases": [
+        "alias_quality",
+        "cross_source_matching",
+        "transfer_tracking"
+      ]
+    },
+    {
+      "name": "Süper Lig and club forums/social news",
+      "category": "community_signal",
+      "url": "https://www.reddit.com/r/superlig/",
+      "method": "manual_review_or_api_if_allowed",
+      "status": "planned",
+      "risk": "medium",
+      "license_status": "platform_terms",
+      "freshness_target": "daily_transfer_window",
+      "analysis_weight": "weak_signal_only",
+      "fields": [
+        "rumor",
+        "fan_sentiment",
+        "emerging_young_players",
+        "transfer_links"
+      ],
+      "use_cases": [
+        "scout_watchlist_ideas",
+        "rumor_context",
+        "manual_review_queue"
+      ]
+    }
+  ]
+}

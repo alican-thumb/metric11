@@ -7,6 +7,15 @@ from html import escape
 
 _SEASON_END = date(2026, 5, 18)
 _WINDOW_CLOSE = date(2026, 9, 1)
+# 2026-27 Trendyol Süper Lig ilk maç günü. Bu tarihten itibaren maçlar oynanmaya
+# başlar; site transfer-öncelikli moddan maç/tahmin-öncelikli "lig modu"na geçer.
+# Transfer penceresi (1 Eylül'e kadar) hâlâ açık olsa bile öncelik maça döner.
+LEAGUE_START = date(2026, 8, 16)
+
+
+def league_active() -> bool:
+    """Lig başladı mı? İlk maç gününden (16 Ağustos 2026) itibaren True döner."""
+    return date.today() >= LEAGUE_START
 
 
 def _is_transfer_season() -> bool:
@@ -15,12 +24,13 @@ def _is_transfer_season() -> bool:
 
 
 def _preview_label() -> str:
-    return "Ar&#x15f;iv" if _is_transfer_season() else "Ma&#xe7; &#xd6;n&#xfc;"
+    # Lig başladıktan sonra "Maç Önü" (canlı fikstür); öncesinde "Arşiv".
+    return "Ma&#xe7; &#xd6;n&#xfc;" if league_active() else "Ar&#x15f;iv"
 
 
 def preview_nav_label() -> str:
     """Return the correct nav label for the preview/archive link based on season."""
-    return "Arşiv" if _is_transfer_season() else "Maç Önü"
+    return "Maç Önü" if league_active() else "Arşiv"
 
 
 _CSS = """
@@ -70,6 +80,11 @@ def _build_nav(active: str = "") -> str:
     links = [
         ("G&#xfc;ndem", "/"),
         ("Fikstür", "season_fixture_predictions_2026_2027.html"),
+    ]
+    # Lig başladıysa haftalık tahmin karnesi nav'da öne çıkar.
+    if league_active():
+        links.append(("Haftalık Karne", "weekly_evaluation_2026_2027.html"))
+    links += [
         ("Transferler", "transfer_tracker_2025_2026.html"),
         (_preview_label(), "all_teams_preview_dashboard_2025_2026.html"),
         ("Scout", "transfer_recommendation_report_2025_2026.html"),
@@ -86,7 +101,7 @@ def _build_nav(active: str = "") -> str:
         '<a class="brand" href="/">'
         '<span class="brand-mark">11</span>'
         ' metric11'
-        '<span class="season">S&#xfc;per Lig 2025/26</span>'
+        f'<span class="season">S&#xfc;per Lig {"2026/27" if league_active() else "2025/26"}</span>'
         '</a>'
         f'<nav>{items}</nav>'
         '</div>'

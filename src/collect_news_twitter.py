@@ -14,7 +14,6 @@ from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 
-import feedparser
 import requests
 
 from src.config import PROCESSED_DIR, RAW_DIR, SEASON, load_settings
@@ -316,13 +315,19 @@ def fetch_account(account: dict, nitter_base: str, max_items: int) -> list[dict]
     response = requests.get(url, headers=headers, timeout=15)
     response.raise_for_status()
 
-    feed = feedparser.parse(response.text)
+    feed = _parse_feed(response.text)
     tweets = []
     for entry in feed.entries[:max_items]:
         tweet = _parse_entry(entry, account)
         if tweet:
             tweets.append(tweet)
     return tweets
+
+
+def _parse_feed(text: str):
+    import feedparser
+
+    return feedparser.parse(text)
 
 
 def _parse_entry(entry, account: dict) -> dict | None:

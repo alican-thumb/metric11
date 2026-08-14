@@ -11,6 +11,8 @@ from html import escape
 from pathlib import Path
 
 from src.config import DATA_DIR, PROCESSED_DIR, SEASON, TRANSFER_WATCH_SEASON_LABEL
+from src.html_utils import league_active
+from src.build_match_week import render_hero_html
 
 _TR_WEEKDAYS = ["Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi", "Pazar"]
 _TR_MONTHS = ["", "Oca", "Şub", "Mar", "Nis", "May", "Haz", "Tem", "Ağu", "Eyl", "Eki", "Kas", "Ara"]
@@ -358,6 +360,7 @@ def build_html() -> str:
 
     _state, banner_css, dot_css, window_msg = _window_state()
     _is_transfer_season = _state in ("countdown", "open")
+    _league = league_active()
 
     mv_eur = ctx_summary.get("free_agent_total_market_value_eur", 0)
     mv_str = f"€{mv_eur / 1_000_000:.0f}M" if mv_eur >= 1_000_000 else ""
@@ -393,6 +396,24 @@ def build_html() -> str:
         )
     else:
         analysis_transfer_links_html = ""
+
+    # Sol sütun üst bloğu: lig başladıysa "Bu Hafta" skor tahmini hero'su öne çıkar;
+    # öncesinde transfer istatistik pilleri + fikstür teaser gösterilir.
+    if _league:
+        left_top_html = render_hero_html()
+        if not left_top_html and isinstance(fixture_predictions, dict):
+            left_top_html = _next_fixtures_html(fixture_predictions)
+    else:
+        pills_html = (
+            '<div class="pills">'
+            f'{_pill(str(official_count), "Resmi Transfer", "#16a34a")}'
+            f'{_pill(str(signals_count), "Transfer Sinyali", "#d97706")}'
+            f'{_pill(str(free_agents), "Serbest Kalacak", "#2563eb")}'
+            f'{_pill(str(final_year), "Son Yıl Kontrat", "#7c3aed")}'
+            '</div>'
+        )
+        fixtures_teaser = _next_fixtures_html(fixture_predictions) if isinstance(fixture_predictions, dict) else ""
+        left_top_html = pills_html + fixtures_teaser
 
     eu_teaser_html = _nearest_known_fixture_html()
     if not eu_teaser_html:
@@ -472,9 +493,10 @@ def build_html() -> str:
   <a class="brand" href="/"><b>11</b> metric11<span class="slbl">Süper Lig {TRANSFER_WATCH_SEASON_LABEL}</span></a>
   <nav class="topnav">
     <a class="active" href="/">Gündem</a>
+    <a href="season_fixture_predictions_2026_2027.html">🗓️ {"Fikstür & Tahmin" if _league else "2026-27 Fikstür"}</a>
+    {'<a href="weekly_evaluation_2026_2027.html">📊 Haftalık Karne</a>' if _league else ''}
     <a href="transfer_tracker_{SEASON}.html">Transferler</a>
-    <a href="all_teams_preview_dashboard_{SEASON}.html">{"Arşiv" if _is_transfer_season else "Maç Önü"}</a>
-    <a href="season_fixture_predictions_2026_2027.html">🗓️ 2026-27 Fikstür</a>
+    <a href="all_teams_preview_dashboard_{SEASON}.html">{"Maç Önü" if _league else "Arşiv"}</a>
     <a href="transfer_recommendation_report_{SEASON}.html">Scout</a>
     <a href="football_intelligence_home.html">Analiz</a>
     <a href="european_predictions_2026_2027.html">⚽ Avrupa</a>
@@ -486,13 +508,7 @@ def build_html() -> str:
 </div>
 <div class="main">
   <div>
-    <div class="pills">
-      {_pill(str(official_count), "Resmi Transfer", "#16a34a")}
-      {_pill(str(signals_count), "Transfer Sinyali", "#d97706")}
-      {_pill(str(free_agents), "Serbest Kalacak", "#2563eb")}
-      {_pill(str(final_year), "Son Yıl Kontrat", "#7c3aed")}
-    </div>
-    {_next_fixtures_html(fixture_predictions) if isinstance(fixture_predictions, dict) else ""}
+    {left_top_html}
     <div class="panel" style="margin-top:16px">
       <h2>Transferler</h2>
       <div class="sub">Resmi · Doğrulanmış · TM Onaylı</div>
@@ -526,10 +542,11 @@ def build_html() -> str:
     <div class="panel" style="font-size:13px">
       <h2 style="margin-bottom:14px">Analiz Platformu</h2>
       {analysis_transfer_links_html}
-      <div style="font-size:10px;font-weight:700;color:var(--muted);letter-spacing:.06em;margin-bottom:6px;text-transform:uppercase">{"Sezon Arşivi" if _is_transfer_season else "Maç &amp; Tahmin"}</div>
+      <div style="font-size:10px;font-weight:700;color:var(--muted);letter-spacing:.06em;margin-bottom:6px;text-transform:uppercase">Maç &amp; Tahmin</div>
       <div style="display:flex;flex-direction:column;gap:7px">
-        {_ana_link(f"all_teams_preview_dashboard_{SEASON}.html", "Maç önü arşivi (18 takım)", bold=not _is_transfer_season)}
-        {_ana_link(f"transfer_tracker_{SEASON}.html", "Transfer takip listesi") if _is_transfer_season else ""}
+        {_ana_link("season_fixture_predictions_2026_2027.html", "Fikstür ve skor tahminleri", bold=_league) if _league else ""}
+        {_ana_link("weekly_evaluation_2026_2027.html", "Haftalık tahmin karnesi") if _league else ""}
+        {_ana_link(f"all_teams_preview_dashboard_{SEASON}.html", "Maç önü arşivi (18 takım)", bold=not _league)}
         {_ana_link("football_intelligence_home.html", "Tüm analiz araçları")}
       </div>
     </div>

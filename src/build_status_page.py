@@ -23,6 +23,7 @@ def build_status() -> dict:
     model = _load(PROCESSED_DIR / f"league_prediction_model_{SEASON}.json") or {}
     previews = _load(PROCESSED_DIR / f"previews_besiktas_{SEASON}_chronological" / "index.json") or {}
     data_quality = _load(PROCESSED_DIR / f"data_quality_scorecard_{SEASON}.json") or {}
+    source_watchlist = _load(PROCESSED_DIR / f"source_watchlist_{SEASON}.json") or {}
 
     matches = league if isinstance(league, list) else []
     scored = [m for m in matches if m.get("home_team", {}).get("score") is not None]
@@ -32,15 +33,23 @@ def build_status() -> dict:
     pipeline_ok = pipeline.get("ok_count", 0)
     pipeline_total = pipeline.get("command_count", 0)
     pipeline_failed = pipeline.get("failed_count", 0)
+    pipeline_age_days = _age_days(pipeline.get("generated_at"))
+    pipeline_status = "ok" if pipeline_failed == 0 else ("warn" if pipeline_failed <= 3 else "fail")
+    if pipeline_age_days is not None and pipeline_age_days > 3:
+        pipeline_status = "fail"
+    elif pipeline_age_days is not None and pipeline_age_days > 1 and pipeline_status == "ok":
+        pipeline_status = "warn"
+    source_summary = source_watchlist.get("summary", {})
 
     return {
         "generated_at": datetime.now(timezone.utc).strftime("%d.%m.%Y %H:%M UTC"),
         "pipeline": {
             "last_run": _fmt_date(pipeline.get("generated_at")),
+            "age_days": pipeline_age_days,
             "ok": pipeline_ok,
             "failed": pipeline_failed,
             "total": pipeline_total,
-            "status": "ok" if pipeline_failed == 0 else ("warn" if pipeline_failed <= 3 else "fail"),
+            "status": pipeline_status,
         },
         "data": {
             "matches_total": len(matches),
@@ -59,6 +68,13 @@ def build_status() -> dict:
             "injury_signals": news.get("injury_signals", 0),
             "last_updated": _fmt_date(news.get("generated_at")),
         },
+        "sources": {
+            "source_count": source_summary.get("source_count", 0),
+            "daily_refresh_count": source_summary.get("daily_refresh_count", 0),
+            "connected_or_partial_count": source_summary.get("connected_or_partial_count", 0),
+            "high_risk_count": source_summary.get("high_risk_count", 0),
+            "updated_at": source_watchlist.get("updated_at") or "—",
+        },
     }
 
 
@@ -70,6 +86,18 @@ def _fmt_date(iso: str | None) -> str:
         return dt.strftime("%d.%m.%Y %H:%M UTC")
     except Exception:
         return iso[:16]
+
+
+def _age_days(iso: str | None) -> int | None:
+    if not iso:
+        return None
+    try:
+        dt = datetime.fromisoformat(iso.replace("Z", "+00:00"))
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        return max((datetime.now(timezone.utc) - dt.astimezone(timezone.utc)).days, 0)
+    except Exception:
+        return None
 
 
 def _load(path: Path):
@@ -93,6 +121,7 @@ def build_html(d: dict) -> str:
     p = d["pipeline"]
     data = d["data"]
     news = d["news"]
+    sources = d["sources"]
 
     pipeline_bar_pct = round(p["ok"] / max(p["total"], 1) * 100)
     pipeline_bar_color = "#116447" if p["failed"] == 0 else ("#c98000" if p["failed"] <= 3 else "#bd2936")
@@ -168,6 +197,7 @@ def build_html(d: dict) -> str:
         <div class="prog-wrap"><div class="prog-bar" style="width:{pipeline_bar_pct}%;background:{pipeline_bar_color};"></div></div>
         <div class="row"><span class="row-label">Durum</span><span class="row-value">{_status_dot(p["status"])}</span></div>
         <div class="row"><span class="row-label">Son çalışma</span><span class="row-value">{escape(p["last_run"])}</span></div>
+        <div class="row"><span class="row-label">Tazelik</span><span class="row-value">{escape(_freshness_label(p["age_days"]))}</span></div>
         <div class="row"><span class="row-label">Hata</span><span class="row-value" style="color:{'var(--red)' if p['failed'] > 0 else 'inherit'}">{p["failed"]} komut</span></div>
       </div>
 
@@ -198,12 +228,24 @@ def build_html(d: dict) -> str:
 
     <div class="grid2">
       <div class="card">
+        <div class="card-title">Kaynak Radarı</div>
+        <div class="big-num">{sources["daily_refresh_count"]}<span style="font-size:16px;color:var(--muted);">/{sources["source_count"]}</span></div>
+        <div class="big-label">günlük izlenen kaynak</div>
+        <div style="height:10px;"></div>
+        <div class="row"><span class="row-label">Bağlı/yarı bağlı</span><span class="row-value">{sources["connected_or_partial_count"]}</span></div>
+        <div class="row"><span class="row-label">Yüksek risk</span><span class="row-value">{sources["high_risk_count"]}</span></div>
+        <div class="row"><span class="row-label">Liste güncelleme</span><span class="row-value">{escape(str(sources["updated_at"]))}</span></div>
+      </div>
+      <div class="card">
         <div class="card-title">Ziyaretçi Analitiği</div>
         <p style="font-size:13px;color:var(--muted);margin:0 0 14px;">Vercel Analytics ile sayfa görüntüleme, benzersiz ziyaretçi, en çok ziyaret edilen sayfalar ve coğrafi dağılım takibi.</p>
         <a class="ext-link" href="https://vercel.com/alicans-projects-02042cb7/metric11/analytics" target="_blank">
           Vercel Analytics'i Aç →
         </a>
       </div>
+    </div>
+
+    <div class="grid2">
       <div class="card">
         <div class="card-title">Pipeline Günlükleri</div>
         <p style="font-size:13px;color:var(--muted);margin:0 0 14px;">GitHub Actions'ta her pipeline çalışmasının detaylı logları, hata mesajları ve geçmiş çalıştırmalar.</p>
@@ -222,6 +264,14 @@ def build_html(d: dict) -> str:
   <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>"""
+
+
+def _freshness_label(age_days: int | None) -> str:
+    if age_days is None:
+        return "bilinmiyor"
+    if age_days == 0:
+        return "bugün"
+    return f"{age_days} gün önce"
 
 
 if __name__ == "__main__":

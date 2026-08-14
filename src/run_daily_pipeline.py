@@ -56,6 +56,12 @@ DEFAULT_COMMANDS = [
     ["python", "-m", "src.build_source_performance_report"],
     ["python", "-m", "src.build_transfer_tracker"],
     ["python", "-m", "src.build_og_images"],
+    # 2026-27 maç/tahmin zinciri: fikstür tahminleri → haftalık karne → "Bu Hafta".
+    # build_live_feed/build_command_center/build_product_home bu çıktıları okuduğu için
+    # ANA SAYFADAN ÖNCE üretilir (aksi halde ana sayfa bayat tahmin gösterir).
+    ["python", "-m", "src.build_season_fixture_predictions"],
+    ["python", "-m", "src.build_weekly_evaluation"],
+    ["python", "-m", "src.build_match_week"],
     ["python", "-m", "src.build_live_feed"],
     ["python", "-m", "src.build_command_center"],
     ["python", "-m", "src.analyze_worldcup_predictions"],
@@ -63,7 +69,6 @@ DEFAULT_COMMANDS = [
     ["python", "-m", "src.build_european_news_pulse"],
     ["python", "-m", "src.analyze_european_predictions"],
     ["python", "-m", "src.build_european_predictions"],
-    ["python", "-m", "src.build_season_fixture_predictions"],
     ["python", "-m", "src.build_product_home"],
     ["python", "-m", "src.build_sitemap"],
     ["python", "-m", "src.build_status_page"],
@@ -189,8 +194,13 @@ def main() -> None:
     output.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     md_path = output.with_suffix(".md")
     md_path.write_text(build_markdown(payload), encoding="utf-8")
+    post_report_rows = refresh_post_report_health_pages()
+    if post_report_rows:
+        payload["post_report_refresh"] = post_report_rows
+        output.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     print(md_path.read_text(encoding="utf-8"))
-    if payload["failed_count"]:
+    post_report_failed = sum(1 for row in post_report_rows if row["returncode"] != 0)
+    if payload["failed_count"] or post_report_failed:
         raise SystemExit(1)
 
 
@@ -211,6 +221,16 @@ def run_command(command: list[str], stop_on_error: bool = False) -> dict:
         "stderr_tail": completed.stderr[-4000:],
         "stop_on_error": stop_on_error,
     }
+
+
+def refresh_post_report_health_pages() -> list[dict]:
+    # These pages read daily_pipeline_run_latest.json. They need one final pass
+    # after the latest pipeline report is written, otherwise they can display
+    # the previous run's freshness/failure state.
+    return [
+        run_command(["python", "-m", "src.build_data_quality_scorecard"]),
+        run_command(["python", "-m", "src.build_status_page"]),
+    ]
 
 
 def build_markdown(payload: dict) -> str:

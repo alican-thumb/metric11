@@ -24,6 +24,18 @@ _TRANSFER_DEFAULT_SQUAD_VALUE_EUR = 50_000_000
 _transfer_tracker_cache: list | None = None
 _squad_value_cache: dict | None = None
 
+# Avrupa kupası form sinyali (kontrollü, capli): Türk kulüplerinin oynanmış Avrupa
+# maç SONUÇLARI takım gücüne küçük bir ek/çıkarım olarak yansır. Transfer edge ile
+# aynı felsefe: düşük ağırlıklı, capli, yalnızca ileriye dönük 2026-27 tahminlerinde
+# aktif; 2025-26 backtest'i etkilemez.
+_EURO_EDGE_CAP = 0.10
+_EURO_EDGE_PER_POINT = 0.04
+_EURO_RESULT_VALUE = {"win": 1.0, "draw": 0.25, "loss": -1.0}
+_EURO_OPP_WEIGHT = {"elite": 1.5, "strong": 1.2, "mid": 1.0, "weak": 0.7}
+_EURO_MAX_MATCHES = 6
+_EURO_RECENCY_DECAY = 0.85
+_euro_results_cache: list | None = None
+
 
 def _load_h2h_pairs() -> dict:
     global _h2h_cache
@@ -248,6 +260,134 @@ def fixture_congestion_edge(team_name: str, match_date) -> dict:
     days_rest, opponent = best
     edge = _CONGESTION_EDGE_BY_DAYS_REST.get(days_rest, 0.0)
     return {"available": True, "edge": edge, "days_rest": days_rest, "opponent": opponent}
+
+
+def _load_european_results() -> list[dict]:
+    """Türk kulüplerinin oynanmış (skoru dolu) Avrupa maçlarını iki kaynaktan birleştirir:
+    elle/collector doldurulan `data/manual/european_results_2026_2027.json` ve
+    otomatik `european_fixtures_2026_2027.json` içindeki FINISHED maçlar.
+
+    Her kayıt: {home_team, away_team, home_score, away_score, opponent_strength, date}.
+    Skoru olmayan (None) veya `_example` işaretli kayıtlar atlanır — sonuç girilene
+    kadar sinyal `available=False` kalır.
+    """
+    global _euro_results_cache
+    if _euro_results_cache is not None:
+        return _euro_results_cache
+
+    from src.config import DATA_DIR, PROCESSED_DIR
+
+    results: list[dict] = []
+
+    manual_path = DATA_DIR / "manual" / "european_results_2026_2027.json"
+    if manual_path.exists():
+        try:
+            payload = json.loads(manual_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            payload = {}
+        for r in payload.get("results", []):
+            if r.get("_example"):
+                continue
+            if r.get("home_score") is None or r.get("away_score") is None:
+                continue
+            results.append({
+                "home_team": r.get("home_team"),
+                "away_team": r.get("away_team"),
+                "home_score": r.get("home_score"),
+                "away_score": r.get("away_score"),
+                "opponent_strength": r.get("opponent_strength") or "mid",
+                "date": r.get("date"),
+            })
+
+    auto_path = PROCESSED_DIR / "european_fixtures_2026_2027.json"
+    if auto_path.exists():
+        try:
+            payload = json.loads(auto_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            payload = {}
+        for comp in payload.get("competitions", {}).values():
+            for m in comp.get("matches", []):
+                # collect_european_fixtures._build_match şeması: score.home / score.away.
+                if m.get("status") and m.get("status") != "FINISHED":
+                    continue
+                score = m.get("score") or {}
+                home_score = score.get("home")
+                away_score = score.get("away")
+                if home_score is None or away_score is None:
+                    continue
+                results.append({
+                    "home_team": (m.get("home") or {}).get("name"),
+                    "away_team": (m.get("away") or {}).get("name"),
+                    "home_score": home_score,
+                    "away_score": away_score,
+                    "opponent_strength": "mid",
+                    "date": m.get("utc_date"),
+                })
+
+    _euro_results_cache = results
+    return results
+
+
+def european_form_edge(team_name: str) -> dict:
+    """Bir Süper Lig takımının oynanmış Avrupa maç SONUÇLARINDAN küçük, capli bir
+    güç sinyali döner.
+
+    Galibiyet/beraberlik/mağlubiyet, rakip seviyesi ağırlığı (`opponent_strength`)
+    ve zaman yakınlığı (son maçlar daha ağır) ile puanlanır; toplam `±_EURO_EDGE_CAP`
+    aralığına sıkıştırılır. Takımın hiç oynanmış Avrupa sonucu yoksa `available=False`
+    ile tahmine karışmaz. Yalnızca `apply_european_signal=True` (bkz.
+    build_season_fixture_predictions.py) ile ileriye dönük tahminlerde devreye girer.
+    """
+    matches = []
+    for r in _load_european_results():
+        is_home = _club_matches_team(team_name, r.get("home_team"))
+        is_away = _club_matches_team(team_name, r.get("away_team"))
+        if is_home == is_away:  # ne ev ne deplasman (ya da her ikisi — belirsiz), atla
+            continue
+        gf = r["home_score"] if is_home else r["away_score"]
+        ga = r["away_score"] if is_home else r["home_score"]
+        if gf > ga:
+            outcome = "win"
+        elif gf == ga:
+            outcome = "draw"
+        else:
+            outcome = "loss"
+        opponent = r.get("away_team") if is_home else r.get("home_team")
+        matches.append({
+            "outcome": outcome,
+            "opponent": opponent,
+            "opponent_strength": r.get("opponent_strength") or "mid",
+            "date": r.get("date"),
+            "score": f"{gf}-{ga}",
+        })
+
+    if not matches:
+        return {"available": False, "edge": 0.0, "match_count": 0}
+
+    # En yeni maçlar önce; recency decay ile ağırlıklandır.
+    matches.sort(key=lambda m: (m.get("date") or ""), reverse=True)
+    net = 0.0
+    wins = draws = losses = 0
+    for i, m in enumerate(matches[:_EURO_MAX_MATCHES]):
+        result_value = _EURO_RESULT_VALUE.get(m["outcome"], 0.0)
+        opp_weight = _EURO_OPP_WEIGHT.get(m["opponent_strength"], 1.0)
+        recency = _EURO_RECENCY_DECAY ** i
+        net += result_value * opp_weight * recency
+        if m["outcome"] == "win":
+            wins += 1
+        elif m["outcome"] == "draw":
+            draws += 1
+        else:
+            losses += 1
+
+    edge = max(-_EURO_EDGE_CAP, min(_EURO_EDGE_CAP, net * _EURO_EDGE_PER_POINT))
+    return {
+        "available": True,
+        "edge": round(edge, 4),
+        "match_count": len(matches),
+        "record": {"w": wins, "d": draws, "l": losses},
+        "recent": matches[:_EURO_MAX_MATCHES],
+    }
 
 
 def poisson_pmf(k: int, lam: float) -> float:

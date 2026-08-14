@@ -2200,3 +2200,253 @@ Bir sonraki oturumda önce `PROJECT_STATE.md` okunmalı. Ardından öncelik:
   5. Sabit sezon kimliğiyle eski sezon dosyalarını yeniden tarayan başka collector var mı kontrol etmek.
   6. Yeni takımlar için `LOW_NEW_TEAM` yükünü düşürmek üzere 1. Lig/backfill veya resmi kadro-form sinyali eklemek.
   7. Galatasaray/Trabzonspor'un 2026-27 Avrupa kupası durumu ayrı doğrulanmalı.
+
+## 2026-07-22 Günlük Veri/Geliştirme Kontrolü
+
+- 22 Temmuz kontrolünde `data/processed` altında bugün üretilmiş yeni dosya yok (`0`). Son üretim 21 Temmuz 15:05 civarında.
+- Git durumu temiz ve `main...origin/main` hizalı. Son commitler: `7f417cba feat: Avrupa eleme maçları için gerçek fikstür kartı ve fikstür sıkışıklığı/yorgunluk sinyali`, `05efd494 Merge remote-tracking branch 'origin/main'`, `ea7480e0 chore: bot merge sonrası pipeline'ı yeniden üret`.
+- `daily_pipeline_run_latest.md` güncel son ağsız koşuyu gösteriyor: `2026-07-21T12:05:30Z`, `57/57` başarılı, `0` hata.
+- `data_quality_scorecard_2025_2026` değişmedi: genel skor `85.4`.
+- OOS validation sağlıklı kalıyor:
+  - Full-season: `142/258`, doğruluk `%55.0`, Brier `0.600`, log loss `1.005`.
+  - İkinci yarı OOS: `89/153`, doğruluk `%58.2`, Brier `0.595`, log loss `0.996`.
+  - Raw baseline: full-season `%51.2`, second-half OOS `%53.6`.
+- `league_market_value_audit_2025_2026` güncel TM kapsamıyla uyumlu: `18` market kulübü / `817` oyuncu / `%100` maç kapsamı. Audit model accuracy `%55.0`, market baseline `%48.1`.
+- H2H tamamlanmış durumda: `153/153` takım çifti.
+- Transfer tracker güncel: `43` sinyal, `1` official, `6` corroborated, `8` rumor, `28` review required, toplam değer `€7.9M`.
+- Transfer edge artık fixture tahminlerine yansıyor: `season_fixture_predictions_2026_2027.json` içinde `66` maç-taraf örneğinde `transfer_signal.available = true`. Örnekler:
+  - Rizespor için Ahmed Kutucu + Tayyip Talha Sanuç girişleri `confirmed_net_value_eur 2.7M`, edge `+0.054`.
+  - Gaziantep için çıkış yönlü sinyal `confirmed_net_value_eur -2.1M`, edge `-0.0514`.
+- 2026/27 fikstür tahminleri mevcut: `34` hafta / `306` maç, oynanmış maç `0`; güven dağılımı `HIGH 58`, `MEDIUM 84`, `LOW 68`, `LOW_NEW_TEAM 96`.
+- `fixture_congestion` sinyali kurulu ama henüz gerçek fikstürlerde aktif değil: `fixture_congestion_available_matches 0`. Beklenen davranış; Temmuz eleme maçları ile 16 Ağustos lig açılışı arasında 4 günden fazla boşluk var.
+- Avrupa eleme fikstür kartı mevcut: manuel dosyada Fenerbahçe-Górnik Zabrze (`2026-07-21 21:00`), Başakşehir-Inter Turku (`2026-07-22 20:45`), Beşiktaş-FC Midtjylland (`2026-07-23`, saat teyitsiz) tutuluyor. `european_predictions_2026_2027.json` hâlâ API kaynaklı tahmin üretmiyor; bu doğru, çünkü eleme turu için güvenilir istatistik veri tabanı yok.
+- Avrupa haber nabzı büyüdü: `european_news_pulse_2025_2026` artık `61` haber.
+- Transfermarkt/TFF eşleşme kapsamı korunuyor: review queue `tm_clubs 18`, `tm_players 817`, `in_scope_match_rate %94.6`, operational in-scope mapping `%95.2`, `scout_blocking_unmatched 0`.
+- Scout kalite raporu temiz: `370` blueprint aday bağlantısı, düşük güvenli blueprint `0`, pozisyon matrisi adayı `105`, repeated role `0`.
+- Açık scorecard WATCH başlıkları değişmedi:
+  - `manual_alias_pending_network_verification`: `4`.
+  - Beşiktaş display tahmin doğruluğu: `19/29`, `%65.5`.
+  - Beşiktaş beraberlik recall: `2/9`, `%22.2`.
+  - Gol adayı top-5: `20/26`, `%76.9`.
+  - Gol adayı top-8: `22/26`, `%84.6`.
+- Kalan öncelik sırası:
+  1. `fixture_congestion` sinyalinin ilk gerçek aktif örneklerini izlemek; 3./4. eleme turu ve Ağustos play-off döneminde edge büyüklüğünü kontrol etmek.
+  2. Sofascore canlı erişiminin GitHub Actions ortamında çalışıp çalışmadığını doğrulamak; bu ortamda `403`.
+  3. Avrupa maç kartlarında Beşiktaş-Midtjylland saat/venue bilgisini resmi kaynakla netleştirmek.
+  4. Nikola Ivanovic→Galatasaray sinyalinin gerçek olup olmadığını ayrı doğrulamak.
+  5. 4 manuel alias için ağ teyidini tamamlamak.
+  6. Sabit sezon kimliğiyle eski sezon dosyalarını yeniden tarayan başka collector var mı kontrol etmek.
+  7. Yeni takımlar için `LOW_NEW_TEAM` yükünü düşürmek üzere 1. Lig/backfill veya resmi kadro-form sinyali eklemek.
+
+## 2026-07-22 Akşam Kontrolü
+
+- 22 Temmuz akşam kontrolünde `data/processed` altında bugün üretilmiş yeni dosya yok (`0`); son üretim hâlâ 21 Temmuz 15:05.
+- Git durumu kontrol başında temizdi; bu kayıt sonrası yalnız `PROJECT_STATE.md` değişti.
+- `daily_pipeline_run_latest.md` değişmedi: `2026-07-21T12:05:30Z`, `57/57` başarılı, `0` hata.
+- Sabah/günlük kontrolde kaydedilen ana metriklerde yeni değişiklik yok: scorecard `85.4`, OOS second-half `%58.2`, market audit `%100`, H2H `153/153`.
+- Transfer edge durumu değişmedi: `season_fixture_predictions_2026_2027.json` içinde `66` maç-taraf örneğinde transfer sinyali aktif.
+- `fixture_congestion` hâlâ gerçek fikstürlerde aktif değil (`0`); Temmuz Avrupa eleme maçları ile lig açılışı arasındaki süre 4 günden fazla olduğu için beklenen davranış.
+- Kalan öncelik sırası aynı: `fixture_congestion` aktivasyonunu izlemek, Sofascore GitHub Actions erişimini doğrulamak, Beşiktaş-Midtjylland saat/venue bilgisini resmi kaynakla netleştirmek, Nikola Ivanovic sinyalini ve 4 manuel alias’ı teyit etmek, sabit sezon collector risklerini taramak, yeni takımlar için veri backfill eklemek.
+
+## 2026-07-23 Günlük Veri/Geliştirme Kontrolü
+
+- 23 Temmuz kontrolünde `data/processed` altında bugün üretilmiş yeni dosya yok (`0`); son üretim hâlâ 21 Temmuz 15:05. Bu nedenle günlük heartbeat'te yeni veri çekimi değil, mevcut son pipeline çıktılarının sağlık kontrolü yapıldı.
+- Git durumu kontrol başında `main...origin/main` hizalıydı; bu kayıt öncesi yalnız `PROJECT_STATE.md` değişmiş durumdaydı.
+- `daily_pipeline_run_latest.md` son ağsız pipeline koşusunu gösteriyor: `2026-07-21T12:05:30Z`, `57/57` başarılı, `0` hata. JSON raporunda aynı koşu `generated_at/include_network/command_count/ok_count/failed_count` şemasıyla tutuluyor.
+- `data_quality_scorecard_2025_2026` ana skoru değişmedi: `85.4`. Warehouse kapsamı: `306` maç, `18` takım, `691` oyuncu, `29` hakem, `370` team scout blueprint, `298` gol adayı.
+- OOS validation değişmedi:
+  - Full-season: `142/258`, doğruluk `%55.0`, Brier `0.600`, log loss `1.005`.
+  - İkinci yarı OOS: `89/153`, doğruluk `%58.2`, Brier `0.595`, log loss `0.996`.
+  - Raw baseline: full-season `%51.2`, second-half OOS `%53.6`; model baseline üstünde kalıyor ama `%80` hedefi için hâlâ yeni veri/feature/backtest gerekiyor.
+- Market audit değişmedi: `18` market kulübü / `817` Transfermarkt oyuncusu / `%100` maç kapsamı; model accuracy `%55.0`, market baseline `%48.1`.
+- Transfer tracker son üretimi `2026-07-21T12:05:29Z`: `43` sinyal, `1` official, `6` corroborated, `8` rumor, `28` review required, toplam değer `€7.9M`.
+- 2026/27 sezon fikstür tahmini dosyası sağlıklı biçimde `34` hafta / `306` maç içeriyor; oynanmış maç `0`. Yeni takımlar: `AMED SPORTİF FAALİYETLER`, `ERZURUMSPOR FK`, `ÇORUM FK`; yeni takım içeren maç sayısı `96`.
+- 2026/27 fixture güven dağılımı doğru anahtar olan `data_confidence` üzerinden kontrol edildi: `HIGH 58`, `MEDIUM 84`, `LOW 68`, `LOW_NEW_TEAM 96`. İlk hızlı kontrolde `confidence` anahtarına bakıldığı için yanlış `null` sonucu görülmüştü; gerçek alan `data_confidence`.
+- Transfer edge 22 Temmuz'a göre biraz artmış görünüyor: `season_fixture_predictions_2026_2027.json` içinde `68` maç-taraf örneğinde `transfer_signal.available = true` (`22 Temmuz kaydı: 66`). Aktif örnekler hâlâ ağırlıklı olarak:
+  - Rizespor: Ahmed Kutucu + Tayyip Talha Sanuç, `confirmed_net_value_eur 2.7M`, edge `+0.054`.
+  - Gaziantep: çıkış yönlü sinyal, `confirmed_net_value_eur -2.1M`, edge `-0.0514`.
+- `fixture_congestion` sinyali kurulu ama gerçek lig fikstürlerinde hâlâ aktif değil: `0` maç-taraf. Bu beklenen davranış; bilinen Temmuz Avrupa eleme maçları ile 14 Ağustos lig açılışı arasında modelin 1-4 günlük yorgunluk penceresinden uzun boşluk var.
+- Avrupa eleme manuel fikstürü hâlâ güncellenmemiş kritik alan taşıyor: Beşiktaş-FC Midtjylland maçında saat `00:00` placeholder, `kickoff_time_confirmed: false`, venue resmi teyitsiz. Bugünün en uygulanabilir veri işi bu maçın resmi saat/venue bilgisini doğrulayıp manuel dosyayı güncellemek.
+- `european_predictions_2026_2027.json` hâlâ UEFA eleme turları için skor/olasılık tahmini üretmiyor; bu doğru bir koruma, çünkü Football-data ücretsiz planı eleme fikstürünü kapsamıyor ve rakip takımlar için güvenilir istatistik tabanı yok.
+- Avrupa haber nabzı son üretimde `61` haberle duruyor; bugün yeni haber çekimi yapılmamış.
+- Transfermarkt/TFF eşleşme kuyruğu değişmedi: `tm_clubs 18`, `tm_players 817`, `in_scope_match_rate %94.6`, operational in-scope mapping `%95.2`, `scout_blocking_unmatched 0`.
+- Scout kalite raporu temiz: `370` blueprint aday bağlantısı, düşük güvenli blueprint `0`, pozisyon matrisi adayı `105`, repeated role `0`. Sıradaki scout veri işi düşük güvenli öneri temizliği değil, yüksek kullanımlı ama ağ teyidi bekleyen profil/alias doğrulamaları.
+- Açık WATCH başlıkları:
+  1. Günlük veri tazeliği: son pipeline 21 Temmuz; 23 Temmuz'da yeni üretim yok.
+  2. Beşiktaş-Midtjylland saat/venue resmi teyidi eksik.
+  3. Sofascore canlı erişim bu ortamda `403`; GitHub Actions ortamında tekrar doğrulanmalı.
+  4. `manual_alias_pending_network_verification`: `4`.
+  5. Beşiktaş display tahmin doğruluğu `%65.5`; beraberlik recall `%22.2`; gol adayı top-5 `%76.9`, top-8 `%84.6`.
+  6. Yeni takımlar için `LOW_NEW_TEAM 96` hâlâ yüksek; 1. Lig/backfill ve resmi kadro-form sinyali eklenmeden 2026/27 erken sezon güveni sınırlı kalacak.
+
+## 2026-07-24 Günlük Veri/Geliştirme Kontrolü
+
+- 24 Temmuz kontrolünde `PROJECT_STATE.md` önce okundu; 23 Temmuz kaydındaki ana riskler geçerliliğini koruyor.
+- `data/processed` altında bugün üretilmiş dosya başlangıçta yoktu (`0`); son tam üretim 21 Temmuz 15:05. Bu artık izleme notundan çok veri tazeliği aksiyonu gerektiriyor: günlük ağlı koleksiyon veya en azından ağsız full pipeline tekrar çalıştırma takibi yapılmalı.
+- Git durumu kontrol başında `main...origin/main` hizalıydı; çalışma ağacında önceki kontrol kaydı nedeniyle `PROJECT_STATE.md` değişik durumdaydı.
+- Ana kalite metrikleri değişmedi:
+  - Scorecard: `85.4`.
+  - Warehouse kapsamı: `306` maç, `18` takım, `691` oyuncu, `29` hakem, `370` team scout blueprint, `298` gol adayı.
+  - Gol adayı backtest: top-5 `%76.9`, top-8 `%84.6`.
+  - OOS full-season: `142/258`, doğruluk `%55.0`, Brier `0.600`, log loss `1.005`.
+  - OOS ikinci yarı: `89/153`, doğruluk `%58.2`, Brier `0.595`, log loss `0.996`.
+- Market audit değişmedi: `18` market kulübü, `817` TM oyuncusu, `%100` maç kapsamı, model accuracy `%55.0`, market baseline `%48.1`.
+- Transfer tracker değişmedi: `43` sinyal, `1` official, `6` corroborated, `8` rumor, `28` review required, toplam değer `€7.9M`.
+- 2026/27 fixture tahmini mevcut ve yapısal olarak sağlıklı: `34` hafta / `306` maç / oynanmış maç `0`; `LOW_NEW_TEAM 96`, `LOW 68`, `MEDIUM 84`, `HIGH 58`.
+- Transfer edge hâlâ aktif: `68` maç-taraf örneğinde `transfer_signal.available = true`.
+- `fixture_congestion` hâlâ gerçek lig fikstürlerinde aktif değil (`0` maç-taraf); Temmuz Avrupa eleme maçları lig açılışından 1-4 gün önce olmadığı için beklenen davranış.
+- Avrupa veri tarafında kritik tazelik eksiği sürüyor:
+  - `european_news_pulse_2025_2026` son üretim `2026-07-21T12:05:29Z`, `61` haber.
+  - `european_predictions_2026_2027` skor/olasılık üretmiyor; eleme turu için güvenilir rakip veri tabanı olmadığı için doğru koruma.
+  - `data/manual/european_qualifier_fixtures_2026_2027.json` içinde Beşiktaş-FC Midtjylland hâlâ `kickoff_time_confirmed: false`, saat `00:00` placeholder, venue resmi teyitsiz.
+- Kaynak izleme listesi kontrol edildi:
+  - Manuel kaynak listesi `data/manual/source_watchlist.json`: `14` kaynak, `10` günlük izlenecek kaynak, `6` bağlı/yarı bağlı kaynak, `3` analizde yüksek ağırlıklı kaynak, `1` yüksek riskli kaynak.
+  - Mevcut üretici yalnız MD/HTML yazıyordu; makine okunabilir günlük sağlık kontrolü için JSON summary eksikti.
+- **Küçük geliştirme yapıldı**: `src/build_source_watchlist.py` artık `data/processed/source_watchlist_2025_2026.json` da üretiyor. JSON içinde `summary`, `daily_sources` ve ham `sources` alanları var. Doğrulama çıktısı: `source_count 14`, `daily_refresh_count 10`, `connected_or_partial_count 6`, `high_risk_count 1`.
+- Bu geliştirme sonrası bugün üretilen dosyalar: `source_watchlist_2025_2026.md`, `source_watchlist_2025_2026.html`, `source_watchlist_2025_2026.json`.
+- Scout kalite raporu değişmedi ve temiz: `370` blueprint aday bağlantısı, düşük güvenli blueprint `0`, pozisyon matrisi adayı `105`, repeated role `0`. Sıradaki scout veri işi hâlâ yüksek kullanımlı ama ağ teyidi bekleyen profil/alias doğrulamaları.
+- Açık WATCH başlıkları:
+  1. Tam veri tazeliği: son full pipeline 21 Temmuz; 24 Temmuzda yalnız kaynak radarı yeniden üretildi.
+  2. Beşiktaş-Midtjylland saat/venue resmi teyidi eksik.
+  3. Sofascore canlı erişim bu ortamda `403`; GitHub Actions ortamında tekrar doğrulanmalı.
+  4. `manual_alias_pending_network_verification`: `4`.
+  5. Yeni takımlar için `LOW_NEW_TEAM 96`; 1. Lig/backfill veya resmi kadro-form sinyali eklenmeden erken 2026/27 tahmin güveni sınırlı kalacak.
+  6. Kaynak izleme JSON’u artık var; sonraki adım `build_data_quality_scorecard.py` veya `build_status_page.py` içine bu JSON özetini bağlayıp veri tazeliğini ekranda görünür yapmak.
+
+## 2026-07-25 Günlük Veri/Geliştirme Kontrolü
+
+- 25 Temmuz kontrolünde `PROJECT_STATE.md` önce okundu; 24 Temmuzdaki kaynak radarı JSON geliştirmesi ve veri tazeliği riski doğrulandı.
+- Kontrol başlangıcında `data/processed` altında bugün üretilmiş dosya yoktu (`0`). En yeni dosyalar 24 Temmuz 17:49 kaynak radarı (`source_watchlist_2025_2026.{md,html,json}`); son tam pipeline hâlâ 21 Temmuz 15:05.
+- Git durumu kontrol başında `main...origin/main` hizalıydı; çalışma ağacında önceki günlerden `PROJECT_STATE.md`, `src/build_source_watchlist.py` ve yeni `data/processed/source_watchlist_2025_2026.json` değişiklikleri vardı.
+- Bugünkü ana geliştirme: 24 Temmuzda eklenen makine okunabilir kaynak radarı `system_status.html` ve `data_quality_scorecard` içine bağlandı.
+- `src/build_status_page.py` güncellendi:
+  - `source_watchlist_2025_2026.json` okunuyor.
+  - Pipeline son çalışma yaşı hesaplanıyor (`age_days`).
+  - Pipeline başarısız olmasa bile son çalışma `>1` gün eskiyse durum `warn`, `>3` gün eskiyse `fail` seviyesine düşüyor.
+  - Sistem durum sayfasına “Tazelik” satırı eklendi; bugünkü üretimde `3 gün önce` görünüyor.
+  - Sistem durum sayfasına yeni “Kaynak Radarı” kartı eklendi: günlük kaynak `10/14`, bağlı/yarı bağlı `6`, yüksek risk `1`, liste güncelleme `2026-05-25`.
+- `src/build_data_quality_scorecard.py` güncellendi:
+  - Yeni kontrol: `pipeline / daily_pipeline_last_run_age_days`.
+  - Yeni kontrol: `sources / source_watchlist_daily_coverage`.
+  - Pipeline tazeliği bugün `age_days=3`, `failed_count=0`, `include_network=False` olarak `WATCH/HIGH` durumuna düştü. Bu doğru: pipeline komutları başarılı görünse bile veri tazeliği artık ayrı izleniyor.
+  - Kaynak radarı kapsamı `PASS`: `sources=14`, `daily=10`, `connected_or_partial=6`, `high_risk=1`.
+- `python3 -m src.build_data_quality_scorecard` çalıştırıldı: başarılı. Genel skor `85.4 → 85.0` oldu; düşüş kasıtlı, çünkü pipeline tazeliği artık scorecard’a WATCH olarak giriyor.
+- `python3 -m src.build_status_page` çalıştırıldı: başarılı. `data/processed/system_status.html` içinde `Tazelik: 3 gün önce` ve `Kaynak Radarı` alanları doğrulandı.
+- `python3 -m py_compile src/build_status_page.py src/build_data_quality_scorecard.py` başarılı.
+- Ana metrikler değişmedi:
+  - Warehouse kapsamı: `306` maç, `18` takım, `691` oyuncu, `29` hakem, `370` scout blueprint, `298` gol adayı.
+  - OOS full-season doğruluk `%55.0`; ikinci yarı OOS `%58.2`.
+  - Gol adayı top-5 `%76.9`, top-8 `%84.6`.
+  - Transfer edge `68` maç-taraf örneğinde aktif; `fixture_congestion` hâlâ gerçek lig fikstürlerinde `0`.
+- Açık WATCH başlıkları:
+  1. Son tam pipeline 21 Temmuz; 25 Temmuz itibarıyla status/scorecard bunu görünür uyarıya çeviriyor. Sıradaki gerçek aksiyon ağlı pipeline veya en azından ağsız full pipeline tekrar koşusunu otomasyonda düzeltmek.
+  2. Beşiktaş-Midtjylland saat/venue resmi teyidi hâlâ eksik.
+  3. Sofascore canlı erişim bu ortamda `403`; GitHub Actions ortamında doğrulanmalı.
+  4. `manual_alias_pending_network_verification`: `4`.
+  5. 2026/27 yeni takımlar için `LOW_NEW_TEAM 96`; 1. Lig/backfill veya resmi kadro-form sinyali olmadan erken sezon tahmin güveni sınırlı kalacak.
+
+## 2026-07-26 Günlük Veri/Geliştirme Kontrolü
+
+- 26 Temmuz kontrolünde `PROJECT_STATE.md` önce okundu; 25 Temmuzda eklenen pipeline tazeliği/status/scorecard kontrolleri doğrulandı.
+- Kontrol başlangıcında `data/processed` altında bugün üretilmiş dosya yoktu (`0`); en yeni tam üretim hâlâ 21 Temmuz, en yeni kısmi üretim 25 Temmuz status/scorecard idi.
+- Ağsız full pipeline çalıştırıldı. İlk deneme `56/57` başarılı, `1` hata verdi:
+  - Hata: `python -m src.build_source_performance_report`.
+  - Kök neden: `build_source_performance_report.py` yalnız `TWITTER_ACCOUNTS` sabiti için `src.collect_news_twitter` import ediyor; `collect_news_twitter.py` ise modül yüklenirken `feedparser` import ediyordu. Bu ortamda `feedparser` kurulu olmadığı için ağsız rapor bile kırıldı. `requirements.txt` içinde `feedparser==6.0.12` var, ancak mevcut runtime’da yok.
+- **Fix 1 — lazy import**: `src/collect_news_twitter.py` içinde top-level `feedparser` import’u kaldırıldı; yalnız Nitter RSS parse ederken çalışan `_parse_feed()` içine alındı. Böylece `TWITTER_ACCOUNTS` gibi sabitler ağsız raporlarda bağımlılık hatası üretmeden import edilebiliyor.
+- `python3 -m src.build_source_performance_report` tek başına çalıştırıldı: başarılı, `159` gözlenen kaynak.
+- **Fix 2 — pipeline health hizalama**: `src/run_daily_pipeline.py` güncellendi. `daily_pipeline_run_latest.json` en sonda yazıldığı için pipeline içindeki `build_data_quality_scorecard` ve `build_status_page` bir önceki pipeline raporunu okuyabiliyordu. Runner artık raporu yazdıktan sonra `build_data_quality_scorecard` ve `build_status_page` için `post_report_refresh` çalıştırıyor. Doğrulama JSON’unda:
+  - `post_report_refresh[0]`: `python -m src.build_data_quality_scorecard`, returncode `0`.
+  - `post_report_refresh[1]`: `python -m src.build_status_page`, returncode `0`.
+- Ağsız full pipeline ikinci kez çalıştırıldı: `57/57` başarılı, `0` hata, `include_network=False`, `generated_at=2026-07-26T08:24:30Z`.
+- `python3 -m py_compile src/run_daily_pipeline.py src/collect_news_twitter.py src/build_data_quality_scorecard.py src/build_status_page.py` başarılı.
+- Bugün `data/processed` altında `140` dosya yeniden üretildi.
+- Scorecard son hizalanmış sonuç:
+  - Genel skor: `87.5/100`.
+  - Pipeline tazelik kontrolü: `PASS`, `age_days=0`, `failed_count=0`, `include_network=False`.
+  - Kaynak radarı kapsamı: `PASS`, `sources=14`, `daily=10`, `connected_or_partial=6`, `high_risk=1`.
+  - Status sayfası doğrulandı: `Tazelik=bugün`, `Veri kalite skoru=87.5/100`, `Kaynak Radarı` kartı mevcut.
+- Ana metrikler:
+  - Warehouse kapsamı: `306` maç, `18` takım, `691` oyuncu, `29` hakem, `370` scout blueprint, `298` gol adayı.
+  - OOS full-season: `142/258`, doğruluk `%55.0`, Brier `0.600`, log loss `1.005`.
+  - OOS ikinci yarı: `89/153`, doğruluk `%58.2`, Brier `0.595`, log loss `0.996`.
+  - Gol adayı backtest: top-5 `%76.9`, top-8 `%84.6`, top-10 `%88.5`.
+  - Market audit: `18` market kulübü, `817` oyuncu, `%100` maç kapsamı, model accuracy `%55.0`, market baseline `%48.1`.
+  - Transfer tracker: `43` sinyal, `1` official, `6` corroborated, `8` rumor, `28` review required, toplam değer `€7.9M`.
+  - 2026/27 fixture: `34` hafta / `306` maç / oynanmış maç `0`; güven dağılımı `LOW_NEW_TEAM 96`, `LOW 68`, `MEDIUM 84`, `HIGH 58`.
+  - Transfer edge: `68` maç-taraf örneğinde aktif.
+  - `fixture_congestion`: gerçek lig fikstürlerinde hâlâ `0`.
+  - Scout kalite: `370` blueprint bağlantısı, düşük güvenli blueprint `0`, pozisyon matrisi `105`, repeated role `0`.
+  - Transfermarkt/TFF eşleşme: `in_scope_match_rate %94.6`, operational in-scope `%95.2`, `manual_alias_pending_network_verification 4`, `scout_blocking_unmatched 0`.
+  - Avrupa haber nabzı ağsız yeniden üretildi: `61` haber, ancak yeni canlı haber çekimi yapılmadı.
+- Açık WATCH başlıkları:
+  1. Bugün yalnız **ağsız** pipeline tazelendi. Gerçek güncel transfer/sakatlık/kadro haberleri için ağlı collector koşusu veya GitHub Actions ağlı ortamı hâlâ gerekli.
+  2. Beşiktaş-Midtjylland saat/venue resmi teyidi hâlâ eksik.
+  3. Sofascore canlı erişim bu ortamda `403`; GitHub Actions ortamında doğrulanmalı.
+  4. `manual_alias_pending_network_verification`: `4`.
+  5. 2026/27 yeni takımlar için `LOW_NEW_TEAM 96`; 1. Lig/backfill veya resmi kadro-form sinyali olmadan erken sezon tahmin güveni sınırlı kalacak.
+  6. Sonraki uygulanabilir geliştirme: GitHub Actions / otomasyon tarafında ağlı pipeline’ın neden 21 Temmuzdan beri yeni veri üretmediğini incelemek ve gerekirse workflow’u elle tetiklemek veya schedule/secret durumunu doğrulamak.
+
+## 2026-07-27 Günlük Veri/Geliştirme Kontrolü
+
+- 27 Temmuz kontrolünde `PROJECT_STATE.md` önce okundu; 26 Temmuzdaki ağsız pipeline düzeltmeleri ve açık WATCH başlıkları doğrulandı.
+- Kontrol başlangıcında `data/processed` altında bugün üretilmiş dosya yoktu (`0`). Son tam üretim 26 Temmuz 11:24 Türkiye saati / `2026-07-26T08:24:30Z`; bu nedenle pipeline tazelik kontrolü hâlâ `PASS`.
+- Mevcut ana metrikler değişmedi:
+  - `daily_pipeline_run_latest`: `include_network=False`, `57/57` başarılı, `0` hata, `post_report_refresh` iki adım da `0`.
+  - Scorecard: `87.5/100`.
+  - Pipeline tazeliği: `PASS`, `age_days=0`, `failed_count=0`.
+  - Kaynak radarı: `PASS`, `14` kaynak, `10` günlük kaynak, `6` bağlı/yarı bağlı, `1` yüksek risk.
+  - OOS full-season doğruluk `%55.0`; ikinci yarı OOS `%58.2`.
+  - Transfer tracker: `43` sinyal, `1` official, `6` corroborated, `8` rumor, `28` review required, toplam değer `€7.9M`.
+  - 2026/27 fixture: `34` hafta / `306` maç / oynanmış maç `0`; güven dağılımı `LOW_NEW_TEAM 96`, `LOW 68`, `MEDIUM 84`, `HIGH 58`; transfer edge `68`, fixture congestion `0`.
+  - Scout kalite: `370` blueprint bağlantısı, düşük güvenli blueprint `0`, pozisyon matrisi `105`, repeated role `0`.
+  - Transfermarkt/TFF eşleşme: `in_scope_match_rate %94.6`, operational in-scope `%95.2`, `manual_alias_pending_network_verification 4`, `scout_blocking_unmatched 0`.
+- GitHub Actions workflow dosyaları yerel olarak incelendi:
+  - `.github/workflows/daily-pipeline.yml`: her gün `04:00 UTC` schedule ile `python -m src.run_daily_pipeline --include-network` çalıştırıyor.
+  - `.github/workflows/refresh.yml`: günde 4 kez haber/dashboard yenileme, birçok collector `|| true` ile fallback davranışında.
+  - `.github/workflows/news-refresh.yml`: günde 6 kez haber yenileme, haber collector/rapor adımları `|| true` ile fallback davranışında.
+  - Tüm workflow YAML dosyaları Ruby `YAML.load_file` ile parse edildi: üçü de `OK`.
+- **Bugünkü düzeltme — full network pipeline hatayı saklamasın**:
+  - `.github/workflows/daily-pipeline.yml` içinde `Run pipeline (network dahil)` ve `Run pipeline (network yok)` adımlarındaki `continue-on-error: true` kaldırıldı.
+  - Gerekçe: full pipeline adımı hata verirse GitHub Actions yeşil görünmemeli; aksi halde canlı veri üretimi bozulsa bile otomasyon başarılı gibi algılanıyor. Commit/push adımı `if: always()` olduğu için çıktı/artifact davranışı korunur, ama job sonucu artık gerçek hata sinyalini verir.
+  - `refresh.yml` ve `news-refresh.yml` içindeki `|| true` fallbackleri şimdilik korunuyor; bunlar haber kaynağı bazlı kırılmalarda tüm akışı öldürmemek için tasarlanmış. Ancak gelecekte kaynak bazlı hata raporunu ayrıca scorecard’a bağlamak iyi olur.
+- Bugün lokal uzak GitHub run logları veya secrets durumu doğrulanmadı; ağlı gerçek sebebi kesinleştirmek için bir sonraki adım GitHub Actions run list/loglarını okumak veya workflow’u manuel tetiklemek.
+- Açık WATCH başlıkları:
+  1. Canlı veri tarafı hâlâ ağsız snapshot’a dayanıyor; gerçek güncel transfer/sakatlık/kadro haberleri için GitHub Actions ağlı koşu doğrulanmalı.
+  2. Beşiktaş-Midtjylland saat/venue resmi teyidi hâlâ eksik.
+  3. Sofascore canlı erişim bu ortamda `403`; GitHub Actions ortamında doğrulanmalı.
+  4. `manual_alias_pending_network_verification`: `4`.
+  5. 2026/27 yeni takımlar için `LOW_NEW_TEAM 96`; 1. Lig/backfill veya resmi kadro-form sinyali olmadan erken sezon tahmin güveni sınırlı kalacak.
+  6. Sonraki uygulanabilir geliştirme: GitHub Actions run loglarını/secret kullanılabilirliğini kontrol etmek; full network pipeline artık hata saklamayacağı için sonraki başarısız koşu gerçek kök nedeni göstermeli.
+
+## 2026-08-14 Lig Başlangıcı: Maç Tahminleri Öne Çıkarma + Haftalık Değerlendirme + Avrupa Sinyali (Session 12)
+
+Kullanıcı isteği: lig 16 Ağustos'ta başlıyor; maç tahminleri/analizleri ön plana alınmalı, skor tahminleri şimdiye kadarki tüm transfer + Avrupa maçlarını içermeli, her hafta değerlendirilmeli (sonuç bir sonraki haftayı beslemeli), bu özellik öne çıkarılmalı.
+
+### 1. Lig modu geçişi (merkezi tarih mantığı)
+- `src/html_utils.py`: `LEAGUE_START = date(2026, 8, 16)` + `league_active()` eklendi. Transfer penceresi (1 Eylül'e kadar) hâlâ açık olsa bile lig başladığında öncelik maça/tahmine döner. `preview_nav_label()`/`_preview_label()` artık `league_active()`'e bağlı ("Maç Önü" vs "Arşiv"). Nav'a lig aktifken "Haftalık Karne" linki + Fikstür öne alındı; brand sezon etiketi 2026/27'ye döner.
+- `src/build_product_home.py` ve `src/build_live_feed.py`: yerel `_is_transfer_season` yerine üç durumlu mod. Lig aktifken maç/tahmin kartları öne (hero + Fikstür + Haftalık Karne kartları), transfer/haber ikincil.
+
+### 2. "Bu Hafta" kahraman modülü (öne çıkarma)
+- `src/build_match_week.py` (YENİ): `season_fixture_predictions_2026_2027.json`'dan oynanmamış maçı olan ilk haftayı (yoksa son haftayı) seçer; `match_week_2026_2027.json` üretir ve `render_hero_html()` ile ana sayfaya gömülebilen hero parçası sunar (maç kartları + tahmin rozeti + olasılık + "Geçen hafta N/M isabet" pili + "Tüm fikstür →").
+- `src/build_live_feed.py`: lig aktifken sol sütun üstüne "Bu Hafta" hero'su; transfer/haber altına iner. Tarayıcıda (lig-aktif simülasyonu) görsel doğrulandı.
+
+### 3. Haftalık değerlendirme (otomatik rapor + ana sayfa özeti)
+- `src/build_weekly_evaluation.py` (YENİ): oynanmış maçlarda `predicted` vs `actual_score` karşılaştırması; hafta bazında isabet, beraberlik yakalama, yüksek-güven isabeti, ✅/❌ tablo. `weekly_evaluation_2026_2027.{json,md,html}` (paylaşılan `page_html`/`md_to_html` teması). 0 maçta zarif "sezon başlıyor" durumu. Ana sayfa hero'su ve product_home kartı bu özeti gösterir. Motor sonucu zaten bir sonraki haftaya besliyor (advance_season_state → compute_final_state).
+
+### 4. Avrupa sonuçları → kontrollü güç sinyali
+- `src/preview/probability.py`: `european_form_edge(team_name)` (YENİ) — Türk kulüplerinin oynanmış Avrupa maç SONUÇLARINI (galibiyet/beraberlik/mağlubiyet + `opponent_strength` ağırlığı + recency) capli (`±0.10`) bir edge'e çevirir; sonuç yoksa `available=False`. `_load_european_results()` iki kaynağı okur: manuel `data/manual/european_results_2026_2027.json` (YENİ, şema + `_example` filtreli) ve otomatik `european_fixtures_2026_2027.json` FINISHED maçları (`collect_european_fixtures._build_match` zaten `score.home/away` yakalıyor — collector değişmedi).
+- `src/model_league_predictions.py`: `predict_match(..., apply_european_signal=False)` parametresi; transfer bloğuyla aynı biçimde `strength_edge += (euro_home.edge - euro_away.edge) * 0.5`. `european_signal` payload'a eklendi. Yalnızca `build_season_fixture_predictions.py` `True` geçirir → 2025-26 backtest ETKİLENMEZ.
+
+### 5. Pipeline + sitemap
+- `src/run_daily_pipeline.py`: maç/tahmin zinciri (season_fixture_predictions → build_weekly_evaluation → build_match_week) ana sayfa builder'larından ÖNCE'ye taşındı (aksi halde ana sayfa bayat tahmin gösteriyordu).
+- `src/build_sitemap.py`: `season_fixture_predictions_2026_2027.html` (1.0) + `weekly_evaluation_2026_2027.html` (0.9) eklendi.
+
+### Doğrulama
+- Tüm değişen dosyalar `py_compile` OK. `european_form_edge` yön/cap testleri geçti; `predict_match` entegrasyonu: enjekte sonuçla `strength_edge` 0.0→0.05, ev kazanma olasılığı hafif yukarı (kontrollü).
+- 2025-26 Beşiktaş backtest doğruluğu **0.655 birebir korundu**.
+- `pytest`: **58 passed / 3 failed** — 3 başarısızlık önceden var olan, ilgisiz (transfer tracker sezon etiketi + TM koleksiyon 2026_2027 output-prefix); değişikliklerimden kaynaklı yeni kırılma yok.
+- Ağsız full pipeline: **59/59 başarılı, 0 hata**, `generated_at 2026-08-14T06:33Z`.
+
+### Açık başlık / sonraki adım
+- Gerçek Avrupa eleme sonuçları henüz `european_results_2026_2027.json`'a girilmedi (uydurulmadı); collector FINISHED maçlarda otomatik dolduracak ya da elle girilecek — girilene kadar Avrupa sinyali `available=False`, tahmini etkilemez. İlk gerçek sonuç ve ilk gerçek OFFICIAL transferle sinyallerin canlı yönü doğrulanmalı.
+- Lig 16 Ağustos'ta başlayınca `league_active()` otomatik `True` döner; ana sayfa/nav/hero geçişi ve `advance_season_state`in gerçek maç verisiyle oynanan haftaları işlemesi canlıda izlenmeli.

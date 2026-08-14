@@ -8,6 +8,7 @@ from pathlib import Path
 from datetime import date
 
 from src.config import PROCESSED_DIR, SEASON
+from src.html_utils import league_active
 
 _SEASON_END = date(2026, 5, 18)
 _WINDOW_CLOSE = date(2026, 9, 1)
@@ -16,6 +17,11 @@ _WINDOW_CLOSE = date(2026, 9, 1)
 def _is_transfer_season() -> bool:
     today = date.today()
     return _SEASON_END <= today < _WINDOW_CLOSE
+
+
+def _pre_season_transfer() -> bool:
+    """Transfer penceresi açık ama lig henüz başlamadı — transfer-öncelikli düzen."""
+    return _is_transfer_season() and not league_active()
 
 
 def main() -> None:
@@ -56,6 +62,26 @@ def build_html() -> str:
     eu_comps = european_pred.get("competitions", {})
     eu_total_matches = sum(len(c.get("predictions", [])) for c in eu_comps.values())
     eu_finished = sum(c.get("accuracy", {}).get("finished", 0) for c in eu_comps.values())
+
+    fixture_pred = load_json(PROCESSED_DIR / "season_fixture_predictions_2026_2027.json") or {}
+    weekly_eval = load_json(PROCESSED_DIR / "weekly_evaluation_2026_2027.json") or {}
+    weekly_summary = weekly_eval.get("summary", {})
+
+    # Lig başladığında öne çıkan iki maç/tahmin kartı (2026-27 sezonu).
+    league_cards = [
+        panel_card(
+            "🗓️ Fikstür ve Skor Tahminleri",
+            "2026-27 Süper Lig'in 34 haftası için güncel skor tahminleri. Oynanan her maç ve doğrulanan her transfer bir sonraki haftanın tahminini besliyor; sayfa her gün yeniden hesaplanıyor.",
+            "season_fixture_predictions_2026_2027.html",
+            f"{fixture_pred.get('played_matches', 0)} maç oynandı · {fixture_pred.get('total_matches', 306)} maç",
+        ),
+        panel_card(
+            "📊 Haftalık Tahmin Karnesi",
+            "Her hafta modelin tahminini gerçek sonuçla karşılaştırır: isabet oranı, beraberlik yakalama ve en iyi/kötü tahminler. Sonuçlar bir sonraki haftanın tahminine geri besleniyor.",
+            "weekly_evaluation_2026_2027.html",
+            f"%{round((weekly_summary.get('accuracy') or 0) * 100)} isabet · {weekly_summary.get('evaluated_matches', 0)} maç" if weekly_summary.get('evaluated_matches') else "Sezon başlıyor",
+        ),
+    ]
 
     cards = [
         panel_card(
@@ -144,12 +170,15 @@ def build_html() -> str:
         ),
     ]
 
-    # Transfer sezonunda transfer araçları öne çıkar
-    if _is_transfer_season():
+    # Transfer sezonunda (lig başlamadan önce) transfer araçları öne çıkar;
+    # lig başladıktan sonra maç/tahmin kartları (fikstür + haftalık karne) öne alınır.
+    if _pre_season_transfer():
         transfer_titles = {"Transfer Sezonu Bağlam Raporu", "Transfer Takip", "Transfer Tavsiye Raporu", "Futbol Komuta Merkezi"}
         transfer_cards = [c for c in cards if any(t in c for t in transfer_titles)]
         other_cards = [c for c in cards if not any(t in c for t in transfer_titles)]
         ordered = transfer_cards + other_cards
+    elif league_active():
+        ordered = league_cards + cards
     else:
         ordered = cards
 
@@ -159,6 +188,26 @@ def build_html() -> str:
     featured_cards = "".join(user_cards[:4])
     module_cards = "".join(user_cards[4:])
     admin_section = "".join(admin_cards)
+
+    # Hero metni üç modludur: lig aktif (maç-öncelikli) > transfer sezonu > veri platformu.
+    if league_active():
+        hero_overline = "Süper Lig 2026/27 &mdash; Lig başladı"
+        hero_h1 = "Bu hafta kim kazanır? Skoru oku."
+        hero_p = "34 hafta, 306 maç için güncel skor tahminleri. Oynanan her maç ve doğrulanan her transfer bir sonraki haftanın tahminini besliyor; sayfa her gün yeniden hesaplanıyor."
+        hero_cta_href = "season_fixture_predictions_2026_2027.html"
+        hero_cta_label = "Bu Hafta ve Fikstür"
+    elif _is_transfer_season():
+        hero_overline = "Süper Lig 2026/27 &mdash; Transfer sezonu"
+        hero_h1 = "Oyuncuyu değerlendir. Kadroyu kur. Transferi takip et."
+        hero_p = "261 serbest kalacak oyuncu, 180 son yıl kontrat. Transfer penceresi 1 Haziran'da açılıyor."
+        hero_cta_href = "transfer_season_context_2025_2026.html"
+        hero_cta_label = "Transfer Sezonu Raporu"
+    else:
+        hero_overline = "Süper Lig 2025/26 &mdash; Veri platformu"
+        hero_h1 = "Maçı oku. Kadroyu tartış. Oyuncuyu keşfet."
+        hero_p = "18 takım için skor senaryoları, gol adayları, scout profilleri ve transfer istihbaratı tek sezon veri akışında izleniyor."
+        hero_cta_href = "all_teams_preview_dashboard_2025_2026.html"
+        hero_cta_label = "Maç Önü Arşivi"
 
     return f"""<!doctype html>
 <html lang="tr">
@@ -243,11 +292,12 @@ def build_html() -> str:
 </head>
 <body>
   <div class="topbar">
-    <a class="brand" href="/"><span class="brand-mark">11</span> metric11 <span class="season">Süper Lig 2025/26</span></a>
+    <a class="brand" href="/"><span class="brand-mark">11</span> metric11 <span class="season">Süper Lig {"2026/27" if league_active() else "2025/26"}</span></a>
     <nav>
       <a href="/">Gündem</a>
       <a href="transfer_tracker_2025_2026.html">Transferler</a>
-      <a href="all_teams_preview_dashboard_2025_2026.html">{"Arşiv" if _is_transfer_season() else "Maç Önü"}</a>
+      {'<a href="season_fixture_predictions_2026_2027.html">Fikstür</a>' if league_active() else ''}
+      <a href="all_teams_preview_dashboard_2025_2026.html">{"Maç Önü" if league_active() else "Arşiv"}</a>
       <a href="transfer_recommendation_report_2025_2026.html">Scout</a>
       <a class="active" href="football_intelligence_home.html">Analiz</a>
     <a href="european_predictions_2026_2027.html">⚽ Avrupa</a>
@@ -256,11 +306,11 @@ def build_html() -> str:
   <header>
     <div class="matchroom">
       <div>
-        <div class="overline">Süper Lig {"2026/27 &mdash; Transfer sezonu" if _is_transfer_season() else "2025/26 &mdash; Veri platformu"}</div>
-        <h1>{"Oyuncuyu değerlendir. Kadroyu kur. Transferi takip et." if _is_transfer_season() else "Maçı oku. Kadroyu tartış. Oyuncuyu keşfet."}</h1>
-        <p>{"261 serbest kalacak oyuncu, 180 son yıl kontrat. Transfer penceresi 1 Haziran'da açılıyor." if _is_transfer_season() else "18 takım için skor senaryoları, gol adayları, scout profilleri ve transfer istihbaratı tek sezon veri akışında izleniyor."}</p>
+        <div class="overline">{hero_overline}</div>
+        <h1>{hero_h1}</h1>
+        <p>{hero_p}</p>
         <div class="hero-actions">
-          <a class="primary" href="transfer_season_context_2025_2026.html">{"Transfer Sezonu Raporu" if _is_transfer_season() else "Maç Önü Arşivi"}</a>
+          <a class="primary" href="{hero_cta_href}">{hero_cta_label}</a>
           <a class="secondary" href="football_command_center_2025_2026.html">Analiz merkezi</a>
         </div>
       </div>

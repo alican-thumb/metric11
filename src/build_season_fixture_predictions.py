@@ -108,6 +108,7 @@ def build_predictions() -> dict:
                 ref_stats=None,
                 apply_transfer_signal=True,
                 apply_fixture_congestion=True,
+                apply_european_signal=True,
                 match_date=match_dt,
             )
             probs = {

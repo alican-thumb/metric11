@@ -17,9 +17,44 @@ def main() -> None:
     payload = json.loads(Path(args.input).read_text(encoding="utf-8"))
     md_path = PROCESSED_DIR / f"{args.output_prefix}.md"
     html_path = PROCESSED_DIR / f"{args.output_prefix}.html"
+    json_path = PROCESSED_DIR / f"{args.output_prefix}.json"
     md_path.write_text(build_markdown(payload), encoding="utf-8")
     html_path.write_text(build_html(payload), encoding="utf-8")
+    json_path.write_text(json.dumps(build_json_payload(payload), ensure_ascii=False, indent=2), encoding="utf-8")
     print(md_path.read_text(encoding="utf-8"))
+
+
+def build_json_payload(payload: dict) -> dict:
+    sources = payload.get("sources", [])
+    connected = [source for source in sources if "connected" in source.get("status", "")]
+    planned = [source for source in sources if source.get("status") == "planned" or source.get("status") == "research_needed"]
+    daily = [source for source in sources if "daily" in source.get("freshness_target", "")]
+    high_weight = [source for source in sources if source.get("analysis_weight") in {"core", "high_internal"}]
+    high_risk = [source for source in sources if source.get("risk") == "high"]
+    return {
+        "updated_at": payload.get("updated_at"),
+        "summary": {
+            "source_count": len(sources),
+            "connected_or_partial_count": len(connected),
+            "planned_or_research_count": len(planned),
+            "daily_refresh_count": len(daily),
+            "high_analysis_weight_count": len(high_weight),
+            "high_risk_count": len(high_risk),
+        },
+        "daily_sources": [
+            {
+                "name": source.get("name"),
+                "category": source.get("category"),
+                "status": source.get("status"),
+                "risk": source.get("risk"),
+                "freshness_target": source.get("freshness_target"),
+                "analysis_weight": source.get("analysis_weight"),
+                "use_cases": source.get("use_cases", []),
+            }
+            for source in sorted(daily, key=priority_sort)
+        ],
+        "sources": sources,
+    }
 
 
 def build_markdown(payload: dict) -> str:

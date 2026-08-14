@@ -4,6 +4,7 @@ import argparse
 import json
 import sqlite3
 from dataclasses import dataclass
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
@@ -61,6 +62,8 @@ def build_scorecard(conn: sqlite3.Connection, warehouse: Path) -> dict[str, Any]
         transfermarkt_mapping_check(),
         transfermarkt_manual_verification_check(),
         transfermarkt_scout_blocker_check(),
+        pipeline_freshness_check(),
+        source_watchlist_check(),
         prediction_accuracy_check(conn),
         draw_recall_check(conn),
         overconfidence_check(conn),
@@ -224,6 +227,65 @@ def transfermarkt_manual_verification_check() -> Check | None:
     )
 
 
+def pipeline_freshness_check() -> Check | None:
+    payload = load_optional_json(PROCESSED_DIR / "daily_pipeline_run_latest.json")
+    if not payload:
+        return Check(
+            area="pipeline",
+            metric="daily_pipeline_report_missing",
+            value="missing",
+            status="FAIL",
+            priority="HIGH",
+            recommendation="Günlük pipeline raporu yoksa siteye yansıyan veri tazeliği doğrulanamaz; pipeline çalıştırılıp rapor üretilmeli.",
+        )
+    age_days = age_days_from_iso(payload.get("generated_at"))
+    if age_days is None:
+        return Check(
+            area="pipeline",
+            metric="daily_pipeline_last_run_age_days",
+            value="unknown",
+            status="WATCH",
+            priority="HIGH",
+            recommendation="Pipeline generated_at alanı okunamıyor; günlük sağlık kontrolü için ISO tarih formatı korunmalı.",
+        )
+    failed = int(payload.get("failed_count") or 0)
+    status = "PASS" if age_days <= 1 and failed == 0 else "WATCH" if age_days <= 3 and failed <= 3 else "FAIL"
+    return Check(
+        area="pipeline",
+        metric="daily_pipeline_last_run_age_days",
+        value={"age_days": age_days, "failed_count": failed, "include_network": payload.get("include_network")},
+        status=status,
+        priority="HIGH" if status != "PASS" else "LOW",
+        recommendation="Tahmin, haber ve scout ekranları için günlük pipeline en fazla 1 gün eski olmalı; 3 günü aşarsa veri tazeliği kırmızıya alınmalı.",
+    )
+
+
+def source_watchlist_check() -> Check | None:
+    payload = load_optional_json(PROCESSED_DIR / "source_watchlist_2025_2026.json")
+    if not payload:
+        return Check(
+            area="sources",
+            metric="source_watchlist_json_missing",
+            value="missing",
+            status="WATCH",
+            priority="MEDIUM",
+            recommendation="Kaynak radarı makine okunabilir JSON üretmeli; status ve kalite ekranları günlük kaynak kapsamını buradan izler.",
+        )
+    summary = payload.get("summary", {})
+    daily = int(summary.get("daily_refresh_count") or 0)
+    connected = int(summary.get("connected_or_partial_count") or 0)
+    source_count = int(summary.get("source_count") or 0)
+    status = "PASS" if daily >= 8 and connected >= 5 else "WATCH" if source_count else "FAIL"
+    return Check(
+        area="sources",
+        metric="source_watchlist_daily_coverage",
+        value={"sources": source_count, "daily": daily, "connected_or_partial": connected, "high_risk": summary.get("high_risk_count", 0)},
+        status=status,
+        priority="MEDIUM" if status != "PASS" else "LOW",
+        recommendation="Günlük izlenecek kaynak sayısı ve bağlı kaynak kapsamı düşükse transfer/sakatlık/kadro haberleri modele geç yansır.",
+    )
+
+
 def prediction_accuracy_check(conn: sqlite3.Connection) -> Check | None:
     total = scalar(conn, "SELECT COUNT(*) FROM match_predictions")
     if total == 0:
@@ -332,6 +394,18 @@ def load_optional_json(path: Path) -> dict[str, Any]:
     if not path.exists():
         return {}
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+def age_days_from_iso(value: str | None) -> int | None:
+    if not value:
+        return None
+    try:
+        dt = datetime.fromisoformat(value.replace("Z", "+00:00"))
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        return max((datetime.now(timezone.utc) - dt.astimezone(timezone.utc)).days, 0)
+    except Exception:
+        return None
 
 
 def scout_confidence_check(conn: sqlite3.Connection) -> Check | None:

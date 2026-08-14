@@ -1,6 +1,6 @@
 {
-  "warehouse": "/home/runner/work/metric11/metric11/data/processed/metric11_warehouse.sqlite",
-  "score": 85.4,
+  "warehouse": "/Users/alicanakyol/Documents/analiz/data/processed/metric11_warehouse.sqlite",
+  "score": 87.5,
   "table_counts": {
     "data_quality_findings": 6,
     "data_sources": 5,
@@ -86,6 +86,31 @@
       "status": "PASS",
       "priority": "LOW",
       "recommendation": "Scout kuyruğunu bloke eden oyuncular için aynı kulüp Transfermarkt adı veya resmi profil doğrulanmalı; doğrulanmadan rol önerisi yayınlanmamalı."
+    },
+    {
+      "area": "pipeline",
+      "metric": "daily_pipeline_last_run_age_days",
+      "value": {
+        "age_days": 0,
+        "failed_count": 0,
+        "include_network": false
+      },
+      "status": "PASS",
+      "priority": "LOW",
+      "recommendation": "Tahmin, haber ve scout ekranları için günlük pipeline en fazla 1 gün eski olmalı; 3 günü aşarsa veri tazeliği kırmızıya alınmalı."
+    },
+    {
+      "area": "sources",
+      "metric": "source_watchlist_daily_coverage",
+      "value": {
+        "sources": 14,
+        "daily": 10,
+        "connected_or_partial": 6,
+        "high_risk": 1
+      },
+      "status": "PASS",
+      "priority": "LOW",
+      "recommendation": "Günlük izlenecek kaynak sayısı ve bağlı kaynak kapsamı düşükse transfer/sakatlık/kadro haberleri modele geç yansır."
     },
     {
       "area": "model",
@@ -242,17 +267,17 @@
     },
     {
       "candidate_type": "primary",
-      "rows": 103,
-      "hits": 11
+      "rows": 106,
+      "hits": 12
     },
     {
       "candidate_type": "impact_sub",
-      "rows": 28,
+      "rows": 26,
       "hits": 4
     },
     {
       "candidate_type": "primary+set_piece_defender",
-      "rows": 25,
+      "rows": 24,
       "hits": 0
     },
     {
