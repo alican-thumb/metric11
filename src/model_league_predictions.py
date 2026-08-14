@@ -288,11 +288,38 @@ def predict_match(
         probs = {"home": probs["home"] / total, "draw": boosted_draw / total, "away": probs["away"] / total}
 
     scorelines = scoreline_probs(expected_home, expected_away)
+    # "Olası skor" (recommended_scoreline) ile 1X2 rozeti (predicted) TUTARLI olmalı — aksi
+    # halde ör. "Olası skor 1-1" bir takımın galip rozetiyle yan yana gösterilir, kafa karıştırır
+    # (kullanıcı geri bildirimi 2026-08-14). scorelines[0] galip/beraberlik/mağlup kategorisine
+    # bakmaksızın TÜM tahtadaki en olası tek skoru seçer; draw-kalibrasyonu (draw_calibrated_
+    # prediction, aşağıdaki callers'ın da kullandığı fonksiyon) çoğu zaman farklı bir kategori
+    # seçebilir. Burada AYNI kalibrasyonu uygulayıp o kategori İÇİNDEKİ en olası skoru seçiyoruz.
+    # NOT: yalnız görüntüleme alanı (recommended_scoreline/top_scorelines) — 1X2 olasılıkları,
+    # predicted/backtest doğruluğu bundan ETKİLENMEZ (o hâlâ caller'ın kendi draw_calibrated_
+    # prediction çağrısıyla belirleniyor).
+    # NOT: probs/strength_edge burada round(...,3) ile kullanılıyor — callers (build_season_
+    # fixture_predictions.py, run_backtest) prediction["home_win_probability"] vb. (zaten
+    # yuvarlanmış) okuyup aynı fonksiyonu çağırıyor; birebir aynı girdiyle çağırmazsak
+    # calibrated_pick ile predicted (caller'ın hesapladığı) çok nadir bir eşik durumunda ayrışabilir.
+    calibrated_pick = draw_calibrated_prediction(
+        round(probs["home"], 3), round(probs["draw"], 3), round(probs["away"], 3), round(strength_edge, 3)
+    )
+
+    def _category(sl: dict) -> str:
+        if sl["home_goals"] > sl["away_goals"]:
+            return "home"
+        if sl["home_goals"] < sl["away_goals"]:
+            return "away"
+        return "draw"
+
+    consistent = [sl for sl in scorelines if _category(sl) == calibrated_pick]
+    recommended_scoreline = consistent[0] if consistent else scorelines[0]
+
     return {
         "expected_home_goals": round(expected_home, 2),
         "expected_away_goals": round(expected_away, 2),
         "top_scorelines": scorelines[:5],
-        "recommended_scoreline": scorelines[0],
+        "recommended_scoreline": recommended_scoreline,
         "home_win_probability": round(probs["home"], 3),
         "draw_probability": round(probs["draw"], 3),
         "away_win_probability": round(probs["away"], 3),
