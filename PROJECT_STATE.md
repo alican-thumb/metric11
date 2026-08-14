@@ -2450,3 +2450,14 @@ Kullanıcı isteği: lig 16 Ağustos'ta başlıyor; maç tahminleri/analizleri �
 ### Açık başlık / sonraki adım
 - Gerçek Avrupa eleme sonuçları henüz `european_results_2026_2027.json`'a girilmedi (uydurulmadı); collector FINISHED maçlarda otomatik dolduracak ya da elle girilecek — girilene kadar Avrupa sinyali `available=False`, tahmini etkilemez. İlk gerçek sonuç ve ilk gerçek OFFICIAL transferle sinyallerin canlı yönü doğrulanmalı.
 - Lig 16 Ağustos'ta başlayınca `league_active()` otomatik `True` döner; ana sayfa/nav/hero geçişi ve `advance_season_state`in gerçek maç verisiyle oynanan haftaları işlemesi canlıda izlenmeli.
+
+### 2026-08-14 (devam) — Gerçek Avrupa sonuçları girildi + sinyal güçlendirildi
+- Kullanıcı isteğiyle web araması yapılıp Türk kulüplerinin 2026-27 Avrupa eleme sonuçları güvenilir Türk basınından (Hürriyet/Fanatik/Milliyet/Sabah/Fotomaç) doğrulanarak `data/manual/european_results_2026_2027.json`'a girildi (10 gerçek maç, uydurulmadı):
+  - **Fenerbahçe** (ŞL): 2.tur Górnik 1-0 / 1-1 (agg 2-1), 3.tur Sturm Graz 2-0 / 0-1 (agg 3-0) → tur atladı. Playoff Lyon (18/26 Ağu) HENÜZ OYNANMADI.
+  - **Beşiktaş** (AL): 2.tur Midtjylland 1-0 / 0-2 (agg 3-0), 3.tur Hradec Králové 0-1 / 1-0 (agg 2-0) → tur atladı. Playoff Kauno Žalgiris (20/27 Ağu) HENÜZ OYNANMADI.
+  - **Başakşehir** (KL): 2.tur Inter Turku 1-1 / 2-0 → ELENDİ.
+  - **Galatasaray**: Süper Lig şampiyonu, doğrudan lig aşaması (eleme yok). **Trabzonspor**: doğrudan playoff (ilk maç 20 Ağu), henüz oynamadı.
+- `european_form_edge` sonuçları: FB +0.15 (3G1B), BJK +0.15 (4G, cap), Başakşehir −0.066 (elenme cezası); GS/TS `available=False`.
+- **Sinyal güçlendirildi** (kullanıcı tercihi): `_EURO_EDGE_CAP 0.10→0.15`, `_EURO_EDGE_PER_POINT 0.04→0.05`, predict_match birleştirme çarpanı `×0.5→×1.0`. 94 maçta strength_edge değişti; maç başına kazanma olasılığı ~1 puan kayıyor (capli, 1X2 yönü değişmiyor).
+- Doğrulama: 2025-26 backtest **0.655 birebir korundu** (Avrupa yalnız 2026-27 yolunda); pytest 58/3 (aynı); ağsız pipeline 59/59.
+- Playoff sonuçları (FB-Lyon, BJK-Kauno, TS-Ferencváros) oynandıkça `european_results_2026_2027.json`'a eklenmeli; collect_european_fixtures FINISHED maçlarda otomatik de doldurabilir.

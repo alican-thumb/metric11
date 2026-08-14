@@ -28,8 +28,8 @@ _squad_value_cache: dict | None = None
 # maç SONUÇLARI takım gücüne küçük bir ek/çıkarım olarak yansır. Transfer edge ile
 # aynı felsefe: düşük ağırlıklı, capli, yalnızca ileriye dönük 2026-27 tahminlerinde
 # aktif; 2025-26 backtest'i etkilemez.
-_EURO_EDGE_CAP = 0.10
-_EURO_EDGE_PER_POINT = 0.04
+_EURO_EDGE_CAP = 0.15
+_EURO_EDGE_PER_POINT = 0.05
 _EURO_RESULT_VALUE = {"win": 1.0, "draw": 0.25, "loss": -1.0}
 _EURO_OPP_WEIGHT = {"elite": 1.5, "strong": 1.2, "mid": 1.0, "weak": 0.7}
 _EURO_MAX_MATCHES = 6

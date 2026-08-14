@@ -1,20 +1,58 @@
 {
-  "source": "manual + collect_european_fixtures (finished matches)",
+  "source": "Türk basını (Hürriyet, Fanatik, Milliyet, Sabah, Fotomaç) + UEFA — web doğrulaması 2026-08-14",
   "source_type": "official_result",
-  "captured_at": null,
-  "notes": "Türk kulüplerinin 2026-27 Avrupa kupası (UCL/UEL/UECL + ön eleme) OYNANMIŞ maç sonuçları. Bu sonuçlar european_form_edge() ile Süper Lig takım gücüne küçük, capli bir form sinyali olarak beslenir. Skorlar collect_european_fixtures (football-data.org finished matches) tarafından otomatik ya da elle doldurulur; sonuç girilene kadar sinyal available=False kalır ve tahmini etkilemez. opponent_strength: elite|strong|mid|weak (varsayılan mid).",
+  "captured_at": "2026-08-14",
+  "notes": "Türk kulüplerinin 2026-27 Avrupa kupası OYNANMIŞ eleme sonuçları (14 Ağustos itibarıyla). Playoff turları (FB-Lyon 18/26 Ağu, BJK-Kauno Zalgiris 20/27 Ağu, TS-Ferencvaros 20/27 Ağu) HENÜZ OYNANMADI; oynandıkça buraya eklenecek. Galatasaray Süper Lig şampiyonu olarak doğrudan lig aşamasında (eleme yok). european_form_edge() bu sonuçları capli (±0.10) form sinyaline çevirir. opponent_strength: elite|strong|mid|weak.",
   "results": [
     {
-      "_example": true,
-      "competition": "CL",
-      "stage": "2ND_QUALIFYING_ROUND",
-      "leg": 1,
-      "date": "2026-07-21",
-      "home_team": "Fenerbahçe",
-      "away_team": "Górnik Zabrze",
-      "home_score": null,
-      "away_score": null,
-      "opponent_strength": "mid"
+      "competition": "CL", "stage": "2ND_QUALIFYING_ROUND", "leg": 1, "date": "2026-07-21",
+      "home_team": "Fenerbahçe", "away_team": "Górnik Zabrze",
+      "home_score": 1, "away_score": 0, "opponent_strength": "mid"
+    },
+    {
+      "competition": "CL", "stage": "2ND_QUALIFYING_ROUND", "leg": 2, "date": "2026-07-29",
+      "home_team": "Górnik Zabrze", "away_team": "Fenerbahçe",
+      "home_score": 1, "away_score": 1, "opponent_strength": "mid"
+    },
+    {
+      "competition": "CL", "stage": "3RD_QUALIFYING_ROUND", "leg": 1, "date": "2026-08-04",
+      "home_team": "Fenerbahçe", "away_team": "Sturm Graz",
+      "home_score": 2, "away_score": 0, "opponent_strength": "strong"
+    },
+    {
+      "competition": "CL", "stage": "3RD_QUALIFYING_ROUND", "leg": 2, "date": "2026-08-11",
+      "home_team": "Sturm Graz", "away_team": "Fenerbahçe",
+      "home_score": 0, "away_score": 1, "opponent_strength": "strong"
+    },
+    {
+      "competition": "UEL", "stage": "2ND_QUALIFYING_ROUND", "leg": 1, "date": "2026-07-23",
+      "home_team": "Beşiktaş", "away_team": "FC Midtjylland",
+      "home_score": 1, "away_score": 0, "opponent_strength": "strong"
+    },
+    {
+      "competition": "UEL", "stage": "2ND_QUALIFYING_ROUND", "leg": 2, "date": "2026-07-30",
+      "home_team": "FC Midtjylland", "away_team": "Beşiktaş",
+      "home_score": 0, "away_score": 2, "opponent_strength": "strong"
+    },
+    {
+      "competition": "UEL", "stage": "3RD_QUALIFYING_ROUND", "leg": 1, "date": "2026-08-06",
+      "home_team": "Hradec Králové", "away_team": "Beşiktaş",
+      "home_score": 0, "away_score": 1, "opponent_strength": "mid"
+    },
+    {
+      "competition": "UEL", "stage": "3RD_QUALIFYING_ROUND", "leg": 2, "date": "2026-08-13",
+      "home_team": "Beşiktaş", "away_team": "Hradec Králové",
+      "home_score": 1, "away_score": 0, "opponent_strength": "mid"
+    },
+    {
+      "competition": "UECL", "stage": "2ND_QUALIFYING_ROUND", "leg": 1, "date": "2026-07-22",
+      "home_team": "Başakşehir", "away_team": "Inter Turku",
+      "home_score": 1, "away_score": 1, "opponent_strength": "weak"
+    },
+    {
+      "competition": "UECL", "stage": "2ND_QUALIFYING_ROUND", "leg": 2, "date": "2026-07-30",
+      "home_team": "Inter Turku", "away_team": "Başakşehir",
+      "home_score": 2, "away_score": 0, "opponent_strength": "weak"
     }
   ]
 }

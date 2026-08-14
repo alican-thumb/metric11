@@ -259,7 +259,8 @@ def predict_match(
         euro_away = european_form_edge(away)
         european_signal = {"home": euro_home, "away": euro_away}
         if euro_home.get("available") or euro_away.get("available"):
-            strength_edge += (euro_home.get("edge", 0.0) - euro_away.get("edge", 0.0)) * 0.5
+            # Kullanıcı tercihi (2026-08-14): Avrupa formu görünür etki etsin — tam ağırlık (×1.0).
+            strength_edge += euro_home.get("edge", 0.0) - euro_away.get("edge", 0.0)
 
     # League-wide backtests are noisier than the Beşiktaş-focused preview model, so keep this as a
     # mild calibration signal instead of letting short-form strength dominate xG.
