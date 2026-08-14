@@ -36,6 +36,11 @@ nav a:hover, nav a.active { background:#0f2030; color:white; }
 .mc-pick.draw { background:rgba(148,163,184,.14); color:#94a3b8; }
 .mc-pick.away { background:rgba(248,113,113,.1); color:#f87171; }
 .mc-probs { display:flex; gap:8px; font-size:11px; color:var(--muted); }
+.mc-scoreline { display:flex; align-items:center; gap:8px; font-size:11px; color:#cbd5e1; }
+.mc-scoreline .sl-score { font-weight:800; color:#fff; background:rgba(205,233,78,.14); border:1px solid rgba(205,233,78,.3); border-radius:5px; padding:1px 7px; font-size:12px; }
+.mc-scoreline .sl-xg { color:var(--muted); }
+.mc-ref { font-size:10px; color:#94a3b8; display:flex; align-items:center; gap:5px; }
+.mc-ref .ref-flag { background:rgba(245,158,11,.14); color:#f59e0b; border-radius:4px; padding:0 5px; font-weight:700; }
 .mc-conf { font-size:10px; color:#475569; }
 footer { text-align:center; padding:32px 16px 24px; color:#1e3a5f; font-size:11px; border-top:1px solid var(--border); margin-top:32px; }
 footer a { color:#1e3a5f; }
@@ -56,54 +61,72 @@ footer a { color:#1e3a5f; }
   <div class="mc-teams"><span>GALATASARAY A.Ş.</span><span class="vs">vs</span><span>ÇORUM FK</span></div>
   <div class="mc-pick home">GALATASARAY A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %59</span><span>X %28</span><span style="color:#f87171">Dep %13</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-0</span><span class="sl-xg">xG 1.4–0.5</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">15 Ağu 2026</div>
   <div class="mc-teams"><span>KASIMPAŞA A.Ş.</span><span class="vs">vs</span><span>TRABZONSPOR A.Ş.</span></div>
   <div class="mc-pick away">TRABZONSPOR A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %36</span><span>X %28</span><span style="color:#f87171">Dep %36</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.3–1.3</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">15 Ağu 2026</div>
   <div class="mc-teams"><span>TÜMOSAN KONYASPOR</span><span class="vs">vs</span><span>ÇAYKUR RİZESPOR A.Ş.</span></div>
   <div class="mc-pick home">TÜMOSAN KONYASPOR</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %44</span><span>X %22</span><span style="color:#f87171">Dep %34</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.8–1.6</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">15 Ağu 2026</div>
   <div class="mc-teams"><span>GAZİANTEP FUTBOL KULÜBÜ A.Ş.</span><span class="vs">vs</span><span>CORENDON ALANYASPOR</span></div>
   <div class="mc-pick away">CORENDON ALANYASPOR</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %33</span><span>X %23</span><span style="color:#f87171">Dep %44</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.3–1.5</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">15 Ağu 2026</div>
   <div class="mc-teams"><span>GENÇLERBİRLİĞİ</span><span class="vs">vs</span><span>FENERBAHÇE A.Ş.</span></div>
   <div class="mc-pick away">FENERBAHÇE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %20</span><span>X %19</span><span style="color:#f87171">Dep %61</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-2</span><span class="sl-xg">xG 1.2–2.2</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">16 Ağu 2026</div>
   <div class="mc-teams"><span>İSTANBUL BAŞAKŞEHİR FK</span><span class="vs">vs</span><span>KOCAELİSPOR</span></div>
   <div class="mc-pick home">İSTANBUL BAŞAKŞEHİR FK</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %66</span><span>X %21</span><span style="color:#f87171">Dep %13</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-0</span><span class="sl-xg">xG 1.9–0.7</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">16 Ağu 2026</div>
   <div class="mc-teams"><span>AMED SPORTİF FAALİYETLER</span><span class="vs">vs</span><span>ERZURUMSPOR FK</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %14</span><span>X %74</span><span style="color:#f87171">Dep %12</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.2–0.1</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">16 Ağu 2026</div>
   <div class="mc-teams"><span>BEŞİKTAŞ A.Ş.</span><span class="vs">vs</span><span>EYÜPSPOR</span></div>
   <div class="mc-pick home">BEŞİKTAŞ A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %51</span><span>X %23</span><span style="color:#f87171">Dep %26</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.8–1.2</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">17 Ağu 2026</div>
   <div class="mc-teams"><span>SAMSUNSPOR A.Ş.</span><span class="vs">vs</span><span>GÖZTEPE A.Ş.</span></div>
   <div class="mc-pick away">GÖZTEPE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %39</span><span>X %19</span><span style="color:#f87171">Dep %42</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.8–1.8</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div></div>
 <div class="week-header">Hafta 2</div><div class="match-grid"><div class="match-card">
@@ -111,54 +134,72 @@ footer a { color:#1e3a5f; }
   <div class="mc-teams"><span>ERZURUMSPOR FK</span><span class="vs">vs</span><span>GALATASARAY A.Ş.</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %20</span><span>X %31</span><span style="color:#f87171">Dep %49</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-1</span><span class="sl-xg">xG 0.7–1.2</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">22 Ağu 2026</div>
   <div class="mc-teams"><span>ÇAYKUR RİZESPOR A.Ş.</span><span class="vs">vs</span><span>SAMSUNSPOR A.Ş.</span></div>
   <div class="mc-pick home">ÇAYKUR RİZESPOR A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %42</span><span>X %22</span><span style="color:#f87171">Dep %36</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.9–1.8</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">22 Ağu 2026</div>
   <div class="mc-teams"><span>ARCA ÇORUM FK</span><span class="vs">vs</span><span>KASIMPAŞA A.Ş.</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %35</span><span>X %38</span><span style="color:#f87171">Dep %27</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.8–0.7</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">22 Ağu 2026</div>
   <div class="mc-teams"><span>FENERBAHÇE A.Ş.</span><span class="vs">vs</span><span>TÜMOSAN KONYASPOR</span></div>
   <div class="mc-pick home">FENERBAHÇE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %62</span><span>X %18</span><span style="color:#f87171">Dep %20</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">2-1</span><span class="sl-xg">xG 2.3–1.3</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">23 Ağu 2026</div>
   <div class="mc-teams"><span>TRABZONSPOR A.Ş.</span><span class="vs">vs</span><span>İSTANBUL BAŞAKŞEHİR FK</span></div>
   <div class="mc-pick away">İSTANBUL BAŞAKŞEHİR FK</div>
-  <div class="mc-probs"><span style="color:#4ade80">Ev %28</span><span>X %24</span><span style="color:#f87171">Dep %47</span></div>
+  <div class="mc-probs"><span style="color:#4ade80">Ev %28</span><span>X %24</span><span style="color:#f87171">Dep %48</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.2–1.6</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">23 Ağu 2026</div>
   <div class="mc-teams"><span>EYÜPSPOR</span><span class="vs">vs</span><span>GAZİANTEP FUTBOL KULÜBÜ A.Ş.</span></div>
   <div class="mc-pick home">EYÜPSPOR</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %50</span><span>X %24</span><span style="color:#f87171">Dep %26</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.7–1.2</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">23 Ağu 2026</div>
   <div class="mc-teams"><span>CORENDON ALANYASPOR</span><span class="vs">vs</span><span>BEŞİKTAŞ A.Ş.</span></div>
   <div class="mc-pick away">BEŞİKTAŞ A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %34</span><span>X %26</span><span style="color:#f87171">Dep %41</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.4–1.5</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">23 Ağu 2026</div>
   <div class="mc-teams"><span>GÖZTEPE A.Ş.</span><span class="vs">vs</span><span>GENÇLERBİRLİĞİ</span></div>
   <div class="mc-pick home">GÖZTEPE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %56</span><span>X %19</span><span style="color:#f87171">Dep %24</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.9–1.2</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">24 Ağu 2026</div>
   <div class="mc-teams"><span>KOCAELİSPOR</span><span class="vs">vs</span><span>AMED SPORTİF FAALİYETLER</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %28</span><span>X %46</span><span style="color:#f87171">Dep %26</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.5–0.5</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div></div>
 <div class="week-header">Hafta 3</div><div class="match-grid"><div class="match-card">
@@ -166,54 +207,72 @@ footer a { color:#1e3a5f; }
   <div class="mc-teams"><span>GENÇLERBİRLİĞİ</span><span class="vs">vs</span><span>ERZURUMSPOR FK</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %37</span><span>X %37</span><span style="color:#f87171">Dep %27</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.8–0.7</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">29 Ağu 2026</div>
   <div class="mc-teams"><span>TÜMOSAN KONYASPOR</span><span class="vs">vs</span><span>KOCAELİSPOR</span></div>
   <div class="mc-pick home">TÜMOSAN KONYASPOR</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %52</span><span>X %25</span><span style="color:#f87171">Dep %23</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-0</span><span class="sl-xg">xG 1.6–1.0</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">29 Ağu 2026</div>
   <div class="mc-teams"><span>GAZİANTEP FUTBOL KULÜBÜ A.Ş.</span><span class="vs">vs</span><span>ÇAYKUR RİZESPOR A.Ş.</span></div>
   <div class="mc-pick away">ÇAYKUR RİZESPOR A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %34</span><span>X %20</span><span style="color:#f87171">Dep %46</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.5–1.8</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">29 Ağu 2026</div>
   <div class="mc-teams"><span>GALATASARAY A.Ş.</span><span class="vs">vs</span><span>GÖZTEPE A.Ş.</span></div>
   <div class="mc-pick home">GALATASARAY A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %51</span><span>X %17</span><span style="color:#f87171">Dep %32</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.9–1.5</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">30 Ağu 2026</div>
   <div class="mc-teams"><span>EYÜPSPOR</span><span class="vs">vs</span><span>CORENDON ALANYASPOR</span></div>
   <div class="mc-pick home">EYÜPSPOR</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %40</span><span>X %26</span><span style="color:#f87171">Dep %34</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.4–1.2</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">30 Ağu 2026</div>
   <div class="mc-teams"><span>İSTANBUL BAŞAKŞEHİR FK</span><span class="vs">vs</span><span>KASIMPAŞA A.Ş.</span></div>
   <div class="mc-pick home">İSTANBUL BAŞAKŞEHİR FK</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %61</span><span>X %21</span><span style="color:#f87171">Dep %18</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-0</span><span class="sl-xg">xG 2.0–0.9</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">30 Ağu 2026</div>
   <div class="mc-teams"><span>SAMSUNSPOR A.Ş.</span><span class="vs">vs</span><span>FENERBAHÇE A.Ş.</span></div>
   <div class="mc-pick away">FENERBAHÇE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %25</span><span>X %25</span><span style="color:#f87171">Dep %50</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-2</span><span class="sl-xg">xG 1.6–2.2</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">31 Ağu 2026</div>
   <div class="mc-teams"><span>AMED SPORTİF FAALİYETLER</span><span class="vs">vs</span><span>TRABZONSPOR A.Ş.</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %30</span><span>X %38</span><span style="color:#f87171">Dep %32</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.7–0.7</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">31 Ağu 2026</div>
   <div class="mc-teams"><span>BEŞİKTAŞ A.Ş.</span><span class="vs">vs</span><span>ARCA ÇORUM FK</span></div>
   <div class="mc-pick home">BEŞİKTAŞ A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %54</span><span>X %30</span><span style="color:#f87171">Dep %16</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-0</span><span class="sl-xg">xG 1.2–0.6</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div></div>
 <div class="week-header">Hafta 4</div><div class="match-grid"><div class="match-card">
@@ -221,54 +280,72 @@ footer a { color:#1e3a5f; }
   <div class="mc-teams"><span>FENERBAHÇE A.Ş.</span><span class="vs">vs</span><span>BEŞİKTAŞ A.Ş.</span></div>
   <div class="mc-pick home">FENERBAHÇE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %53</span><span>X %24</span><span style="color:#f87171">Dep %24</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">2-1</span><span class="sl-xg">xG 2.2–1.4</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">6 Eyl 2026</div>
   <div class="mc-teams"><span>KOCAELİSPOR</span><span class="vs">vs</span><span>SAMSUNSPOR A.Ş.</span></div>
   <div class="mc-pick away">SAMSUNSPOR A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %31</span><span>X %25</span><span style="color:#f87171">Dep %44</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.3–1.5</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">6 Eyl 2026</div>
   <div class="mc-teams"><span>TRABZONSPOR A.Ş.</span><span class="vs">vs</span><span>GENÇLERBİRLİĞİ</span></div>
   <div class="mc-pick home">TRABZONSPOR A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %47</span><span>X %26</span><span style="color:#f87171">Dep %27</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.6–1.2</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">6 Eyl 2026</div>
   <div class="mc-teams"><span>KASIMPAŞA A.Ş.</span><span class="vs">vs</span><span>AMED SPORTİF FAALİYETLER</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %39</span><span>X %38</span><span style="color:#f87171">Dep %24</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.8–0.6</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">6 Eyl 2026</div>
   <div class="mc-teams"><span>İSTANBUL BAŞAKŞEHİR FK</span><span class="vs">vs</span><span>GALATASARAY A.Ş.</span></div>
   <div class="mc-pick home">İSTANBUL BAŞAKŞEHİR FK</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %45</span><span>X %23</span><span style="color:#f87171">Dep %32</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.8–1.5</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">6 Eyl 2026</div>
   <div class="mc-teams"><span>ÇAYKUR RİZESPOR A.Ş.</span><span class="vs">vs</span><span>CORENDON ALANYASPOR</span></div>
   <div class="mc-pick home">ÇAYKUR RİZESPOR A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %41</span><span>X %27</span><span style="color:#f87171">Dep %32</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.6–1.4</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">6 Eyl 2026</div>
   <div class="mc-teams"><span>GÖZTEPE A.Ş.</span><span class="vs">vs</span><span>GAZİANTEP FUTBOL KULÜBÜ A.Ş.</span></div>
   <div class="mc-pick home">GÖZTEPE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %59</span><span>X %21</span><span style="color:#f87171">Dep %20</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">2-1</span><span class="sl-xg">xG 2.1–1.2</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">6 Eyl 2026</div>
   <div class="mc-teams"><span>ARCA ÇORUM FK</span><span class="vs">vs</span><span>EYÜPSPOR</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %32</span><span>X %38</span><span style="color:#f87171">Dep %31</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.7–0.7</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">6 Eyl 2026</div>
   <div class="mc-teams"><span>ERZURUMSPOR FK</span><span class="vs">vs</span><span>TÜMOSAN KONYASPOR</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %30</span><span>X %34</span><span style="color:#f87171">Dep %36</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.8–0.9</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div></div>
 <div class="week-header">Hafta 5</div><div class="match-grid"><div class="match-card">
@@ -276,54 +353,72 @@ footer a { color:#1e3a5f; }
   <div class="mc-teams"><span>EYÜPSPOR</span><span class="vs">vs</span><span>ÇAYKUR RİZESPOR A.Ş.</span></div>
   <div class="mc-pick home">EYÜPSPOR</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %40</span><span>X %24</span><span style="color:#f87171">Dep %36</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.6–1.5</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">13 Eyl 2026</div>
   <div class="mc-teams"><span>BEŞİKTAŞ A.Ş.</span><span class="vs">vs</span><span>ERZURUMSPOR FK</span></div>
   <div class="mc-pick home">BEŞİKTAŞ A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %54</span><span>X %30</span><span style="color:#f87171">Dep %16</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-0</span><span class="sl-xg">xG 1.2–0.6</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">13 Eyl 2026</div>
   <div class="mc-teams"><span>SAMSUNSPOR A.Ş.</span><span class="vs">vs</span><span>ARCA ÇORUM FK</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %46</span><span>X %30</span><span style="color:#f87171">Dep %23</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-0</span><span class="sl-xg">xG 1.2–0.8</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">13 Eyl 2026</div>
   <div class="mc-teams"><span>GAZİANTEP FUTBOL KULÜBÜ A.Ş.</span><span class="vs">vs</span><span>FENERBAHÇE A.Ş.</span></div>
   <div class="mc-pick away">FENERBAHÇE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %18</span><span>X %14</span><span style="color:#f87171">Dep %68</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-2</span><span class="sl-xg">xG 1.1–2.4</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">13 Eyl 2026</div>
   <div class="mc-teams"><span>CORENDON ALANYASPOR</span><span class="vs">vs</span><span>GÖZTEPE A.Ş.</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %32</span><span>X %29</span><span style="color:#f87171">Dep %39</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.4–1.6</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">13 Eyl 2026</div>
   <div class="mc-teams"><span>AMED SPORTİF FAALİYETLER</span><span class="vs">vs</span><span>İSTANBUL BAŞAKŞEHİR FK</span></div>
   <div class="mc-pick away">İSTANBUL BAŞAKŞEHİR FK</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %16</span><span>X %32</span><span style="color:#f87171">Dep %52</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-1</span><span class="sl-xg">xG 0.5–1.1</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">13 Eyl 2026</div>
   <div class="mc-teams"><span>GENÇLERBİRLİĞİ</span><span class="vs">vs</span><span>KASIMPAŞA A.Ş.</span></div>
   <div class="mc-pick home">GENÇLERBİRLİĞİ</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %40</span><span>X %26</span><span style="color:#f87171">Dep %35</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.4–1.3</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">13 Eyl 2026</div>
   <div class="mc-teams"><span>TÜMOSAN KONYASPOR</span><span class="vs">vs</span><span>TRABZONSPOR A.Ş.</span></div>
   <div class="mc-pick home">TÜMOSAN KONYASPOR</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %43</span><span>X %24</span><span style="color:#f87171">Dep %33</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.6–1.4</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">13 Eyl 2026</div>
   <div class="mc-teams"><span>GALATASARAY A.Ş.</span><span class="vs">vs</span><span>KOCAELİSPOR</span></div>
   <div class="mc-pick home">GALATASARAY A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %63</span><span>X %22</span><span style="color:#f87171">Dep %16</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-0</span><span class="sl-xg">xG 1.9–0.8</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div></div>
 <div class="week-header">Hafta 6</div><div class="match-grid"><div class="match-card">
@@ -331,54 +426,72 @@ footer a { color:#1e3a5f; }
   <div class="mc-teams"><span>FENERBAHÇE A.Ş.</span><span class="vs">vs</span><span>EYÜPSPOR</span></div>
   <div class="mc-pick home">FENERBAHÇE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %64</span><span>X %19</span><span style="color:#f87171">Dep %17</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">2-1</span><span class="sl-xg">xG 2.3–1.1</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">20 Eyl 2026</div>
   <div class="mc-teams"><span>KOCAELİSPOR</span><span class="vs">vs</span><span>GAZİANTEP FUTBOL KULÜBÜ A.Ş.</span></div>
   <div class="mc-pick home">KOCAELİSPOR</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %42</span><span>X %27</span><span style="color:#f87171">Dep %31</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.3–1.1</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">20 Eyl 2026</div>
   <div class="mc-teams"><span>TRABZONSPOR A.Ş.</span><span class="vs">vs</span><span>GALATASARAY A.Ş.</span></div>
   <div class="mc-pick away">GALATASARAY A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %31</span><span>X %24</span><span style="color:#f87171">Dep %45</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.4–1.7</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">20 Eyl 2026</div>
   <div class="mc-teams"><span>KASIMPAŞA A.Ş.</span><span class="vs">vs</span><span>TÜMOSAN KONYASPOR</span></div>
   <div class="mc-pick away">TÜMOSAN KONYASPOR</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %35</span><span>X %27</span><span style="color:#f87171">Dep %38</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.4–1.5</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">20 Eyl 2026</div>
   <div class="mc-teams"><span>İSTANBUL BAŞAKŞEHİR FK</span><span class="vs">vs</span><span>GENÇLERBİRLİĞİ</span></div>
   <div class="mc-pick home">İSTANBUL BAŞAKŞEHİR FK</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %62</span><span>X %21</span><span style="color:#f87171">Dep %17</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">2-0</span><span class="sl-xg">xG 2.0–1.0</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">20 Eyl 2026</div>
   <div class="mc-teams"><span>AMED SPORTİF FAALİYETLER</span><span class="vs">vs</span><span>BEŞİKTAŞ A.Ş.</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %24</span><span>X %32</span><span style="color:#f87171">Dep %43</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-1</span><span class="sl-xg">xG 0.7–1.1</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">20 Eyl 2026</div>
   <div class="mc-teams"><span>GÖZTEPE A.Ş.</span><span class="vs">vs</span><span>ÇAYKUR RİZESPOR A.Ş.</span></div>
   <div class="mc-pick home">GÖZTEPE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %50</span><span>X %20</span><span style="color:#f87171">Dep %30</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">2-1</span><span class="sl-xg">xG 2.0–1.5</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">20 Eyl 2026</div>
   <div class="mc-teams"><span>ARCA ÇORUM FK</span><span class="vs">vs</span><span>CORENDON ALANYASPOR</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %29</span><span>X %39</span><span style="color:#f87171">Dep %32</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.6–0.7</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">20 Eyl 2026</div>
   <div class="mc-teams"><span>ERZURUMSPOR FK</span><span class="vs">vs</span><span>SAMSUNSPOR A.Ş.</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %32</span><span>X %31</span><span style="color:#f87171">Dep %36</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-1</span><span class="sl-xg">xG 0.9–1.0</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div></div>
 <div class="week-header">Hafta 7</div><div class="match-grid"><div class="match-card">
@@ -386,54 +499,72 @@ footer a { color:#1e3a5f; }
   <div class="mc-teams"><span>EYÜPSPOR</span><span class="vs">vs</span><span>GÖZTEPE A.Ş.</span></div>
   <div class="mc-pick away">GÖZTEPE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %34</span><span>X %24</span><span style="color:#f87171">Dep %43</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.4–1.7</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">11 Eki 2026</div>
   <div class="mc-teams"><span>BEŞİKTAŞ A.Ş.</span><span class="vs">vs</span><span>KOCAELİSPOR</span></div>
   <div class="mc-pick home">BEŞİKTAŞ A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %57</span><span>X %24</span><span style="color:#f87171">Dep %18</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-0</span><span class="sl-xg">xG 1.8–0.9</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">11 Eki 2026</div>
   <div class="mc-teams"><span>SAMSUNSPOR A.Ş.</span><span class="vs">vs</span><span>TRABZONSPOR A.Ş.</span></div>
   <div class="mc-pick home">SAMSUNSPOR A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %42</span><span>X %24</span><span style="color:#f87171">Dep %34</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.7–1.5</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">11 Eki 2026</div>
   <div class="mc-teams"><span>GAZİANTEP FUTBOL KULÜBÜ A.Ş.</span><span class="vs">vs</span><span>ARCA ÇORUM FK</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %32</span><span>X %35</span><span style="color:#f87171">Dep %33</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.8–0.8</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">11 Eki 2026</div>
   <div class="mc-teams"><span>CORENDON ALANYASPOR</span><span class="vs">vs</span><span>ERZURUMSPOR FK</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %43</span><span>X %38</span><span style="color:#f87171">Dep %19</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.9–0.5</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">11 Eki 2026</div>
   <div class="mc-teams"><span>ÇAYKUR RİZESPOR A.Ş.</span><span class="vs">vs</span><span>FENERBAHÇE A.Ş.</span></div>
   <div class="mc-pick away">FENERBAHÇE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %26</span><span>X %18</span><span style="color:#f87171">Dep %56</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-2</span><span class="sl-xg">xG 1.5–2.3</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">11 Eki 2026</div>
   <div class="mc-teams"><span>GENÇLERBİRLİĞİ</span><span class="vs">vs</span><span>AMED SPORTİF FAALİYETLER</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %37</span><span>X %37</span><span style="color:#f87171">Dep %27</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.8–0.7</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">11 Eki 2026</div>
   <div class="mc-teams"><span>TÜMOSAN KONYASPOR</span><span class="vs">vs</span><span>İSTANBUL BAŞAKŞEHİR FK</span></div>
   <div class="mc-pick away">İSTANBUL BAŞAKŞEHİR FK</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %30</span><span>X %23</span><span style="color:#f87171">Dep %47</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.4–1.8</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">11 Eki 2026</div>
   <div class="mc-teams"><span>GALATASARAY A.Ş.</span><span class="vs">vs</span><span>KASIMPAŞA A.Ş.</span></div>
   <div class="mc-pick home">GALATASARAY A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %59</span><span>X %20</span><span style="color:#f87171">Dep %21</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 2.0–1.1</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div></div>
 <div class="week-header">Hafta 8</div><div class="match-grid"><div class="match-card">
@@ -441,54 +572,72 @@ footer a { color:#1e3a5f; }
   <div class="mc-teams"><span>FENERBAHÇE A.Ş.</span><span class="vs">vs</span><span>CORENDON ALANYASPOR</span></div>
   <div class="mc-pick home">FENERBAHÇE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %61</span><span>X %22</span><span style="color:#f87171">Dep %17</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">2-1</span><span class="sl-xg">xG 2.2–1.1</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">18 Eki 2026</div>
   <div class="mc-teams"><span>KOCAELİSPOR</span><span class="vs">vs</span><span>GÖZTEPE A.Ş.</span></div>
   <div class="mc-pick away">GÖZTEPE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %24</span><span>X %28</span><span style="color:#f87171">Dep %48</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.1–1.6</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">18 Eki 2026</div>
   <div class="mc-teams"><span>TRABZONSPOR A.Ş.</span><span class="vs">vs</span><span>BEŞİKTAŞ A.Ş.</span></div>
   <div class="mc-pick away">BEŞİKTAŞ A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %34</span><span>X %27</span><span style="color:#f87171">Dep %39</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.4–1.6</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">18 Eki 2026</div>
   <div class="mc-teams"><span>KASIMPAŞA A.Ş.</span><span class="vs">vs</span><span>SAMSUNSPOR A.Ş.</span></div>
   <div class="mc-pick away">SAMSUNSPOR A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %38</span><span>X %23</span><span style="color:#f87171">Dep %40</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.6–1.6</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">18 Eki 2026</div>
   <div class="mc-teams"><span>İSTANBUL BAŞAKŞEHİR FK</span><span class="vs">vs</span><span>GAZİANTEP FUTBOL KULÜBÜ A.Ş.</span></div>
   <div class="mc-pick home">İSTANBUL BAŞAKŞEHİR FK</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %67</span><span>X %19</span><span style="color:#f87171">Dep %14</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">2-0</span><span class="sl-xg">xG 2.2–0.9</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">18 Eki 2026</div>
   <div class="mc-teams"><span>AMED SPORTİF FAALİYETLER</span><span class="vs">vs</span><span>TÜMOSAN KONYASPOR</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %30</span><span>X %34</span><span style="color:#f87171">Dep %36</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.8–0.9</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">18 Eki 2026</div>
   <div class="mc-teams"><span>GENÇLERBİRLİĞİ</span><span class="vs">vs</span><span>GALATASARAY A.Ş.</span></div>
   <div class="mc-pick away">GALATASARAY A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %25</span><span>X %24</span><span style="color:#f87171">Dep %51</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.3–1.9</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">18 Eki 2026</div>
   <div class="mc-teams"><span>ARCA ÇORUM FK</span><span class="vs">vs</span><span>ÇAYKUR RİZESPOR A.Ş.</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %32</span><span>X %32</span><span style="color:#f87171">Dep %36</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.9–1.0</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">18 Eki 2026</div>
   <div class="mc-teams"><span>ERZURUMSPOR FK</span><span class="vs">vs</span><span>EYÜPSPOR</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %32</span><span>X %38</span><span style="color:#f87171">Dep %31</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.7–0.7</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div></div>
 <div class="week-header">Hafta 9</div><div class="match-grid"><div class="match-card">
@@ -496,54 +645,72 @@ footer a { color:#1e3a5f; }
   <div class="mc-teams"><span>EYÜPSPOR</span><span class="vs">vs</span><span>KASIMPAŞA A.Ş.</span></div>
   <div class="mc-pick home">EYÜPSPOR</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %44</span><span>X %26</span><span style="color:#f87171">Dep %31</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.5–1.2</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">25 Eki 2026</div>
   <div class="mc-teams"><span>BEŞİKTAŞ A.Ş.</span><span class="vs">vs</span><span>İSTANBUL BAŞAKŞEHİR FK</span></div>
   <div class="mc-pick away">İSTANBUL BAŞAKŞEHİR FK</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %35</span><span>X %23</span><span style="color:#f87171">Dep %41</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.5–1.7</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">25 Eki 2026</div>
   <div class="mc-teams"><span>SAMSUNSPOR A.Ş.</span><span class="vs">vs</span><span>AMED SPORTİF FAALİYETLER</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %46</span><span>X %30</span><span style="color:#f87171">Dep %23</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-0</span><span class="sl-xg">xG 1.2–0.8</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">25 Eki 2026</div>
   <div class="mc-teams"><span>GAZİANTEP FUTBOL KULÜBÜ A.Ş.</span><span class="vs">vs</span><span>ERZURUMSPOR FK</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %32</span><span>X %35</span><span style="color:#f87171">Dep %33</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.8–0.8</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">25 Eki 2026</div>
   <div class="mc-teams"><span>CORENDON ALANYASPOR</span><span class="vs">vs</span><span>KOCAELİSPOR</span></div>
   <div class="mc-pick home">CORENDON ALANYASPOR</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %52</span><span>X %24</span><span style="color:#f87171">Dep %24</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-0</span><span class="sl-xg">xG 1.4–0.8</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">25 Eki 2026</div>
   <div class="mc-teams"><span>ÇAYKUR RİZESPOR A.Ş.</span><span class="vs">vs</span><span>TRABZONSPOR A.Ş.</span></div>
   <div class="mc-pick home">ÇAYKUR RİZESPOR A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %41</span><span>X %24</span><span style="color:#f87171">Dep %35</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.6–1.5</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">25 Eki 2026</div>
   <div class="mc-teams"><span>GÖZTEPE A.Ş.</span><span class="vs">vs</span><span>ARCA ÇORUM FK</span></div>
   <div class="mc-pick home">GÖZTEPE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %54</span><span>X %30</span><span style="color:#f87171">Dep %17</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-0</span><span class="sl-xg">xG 1.3–0.6</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">25 Eki 2026</div>
   <div class="mc-teams"><span>TÜMOSAN KONYASPOR</span><span class="vs">vs</span><span>GENÇLERBİRLİĞİ</span></div>
   <div class="mc-pick home">TÜMOSAN KONYASPOR</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %47</span><span>X %26</span><span style="color:#f87171">Dep %27</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.8–1.3</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">25 Eki 2026</div>
   <div class="mc-teams"><span>GALATASARAY A.Ş.</span><span class="vs">vs</span><span>FENERBAHÇE A.Ş.</span></div>
   <div class="mc-pick away">FENERBAHÇE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %34</span><span>X %25</span><span style="color:#f87171">Dep %41</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.7–1.9</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div></div>
 <div class="week-header">Hafta 10</div><div class="match-grid"><div class="match-card">
@@ -551,54 +718,72 @@ footer a { color:#1e3a5f; }
   <div class="mc-teams"><span>FENERBAHÇE A.Ş.</span><span class="vs">vs</span><span>GÖZTEPE A.Ş.</span></div>
   <div class="mc-pick home">FENERBAHÇE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %53</span><span>X %24</span><span style="color:#f87171">Dep %23</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">2-1</span><span class="sl-xg">xG 2.2–1.4</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">1 Kas 2026</div>
   <div class="mc-teams"><span>KOCAELİSPOR</span><span class="vs">vs</span><span>ÇAYKUR RİZESPOR A.Ş.</span></div>
   <div class="mc-pick away">ÇAYKUR RİZESPOR A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %32</span><span>X %26</span><span style="color:#f87171">Dep %42</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.3–1.5</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">1 Kas 2026</div>
   <div class="mc-teams"><span>TRABZONSPOR A.Ş.</span><span class="vs">vs</span><span>GAZİANTEP FUTBOL KULÜBÜ A.Ş.</span></div>
   <div class="mc-pick home">TRABZONSPOR A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %51</span><span>X %26</span><span style="color:#f87171">Dep %23</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.8–1.1</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">1 Kas 2026</div>
   <div class="mc-teams"><span>KASIMPAŞA A.Ş.</span><span class="vs">vs</span><span>BEŞİKTAŞ A.Ş.</span></div>
   <div class="mc-pick away">BEŞİKTAŞ A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %32</span><span>X %22</span><span style="color:#f87171">Dep %46</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.3–1.7</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">1 Kas 2026</div>
   <div class="mc-teams"><span>İSTANBUL BAŞAKŞEHİR FK</span><span class="vs">vs</span><span>SAMSUNSPOR A.Ş.</span></div>
   <div class="mc-pick home">İSTANBUL BAŞAKŞEHİR FK</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %56</span><span>X %21</span><span style="color:#f87171">Dep %23</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">2-1</span><span class="sl-xg">xG 2.1–1.3</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">1 Kas 2026</div>
   <div class="mc-teams"><span>AMED SPORTİF FAALİYETLER</span><span class="vs">vs</span><span>EYÜPSPOR</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %32</span><span>X %38</span><span style="color:#f87171">Dep %31</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.7–0.7</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">1 Kas 2026</div>
   <div class="mc-teams"><span>GENÇLERBİRLİĞİ</span><span class="vs">vs</span><span>CORENDON ALANYASPOR</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %35</span><span>X %28</span><span style="color:#f87171">Dep %37</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.3–1.4</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">1 Kas 2026</div>
   <div class="mc-teams"><span>TÜMOSAN KONYASPOR</span><span class="vs">vs</span><span>GALATASARAY A.Ş.</span></div>
   <div class="mc-pick away">GALATASARAY A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %32</span><span>X %23</span><span style="color:#f87171">Dep %45</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.5–1.8</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">1 Kas 2026</div>
   <div class="mc-teams"><span>ERZURUMSPOR FK</span><span class="vs">vs</span><span>ARCA ÇORUM FK</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %14</span><span>X %74</span><span style="color:#f87171">Dep %12</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.2–0.1</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div></div>
 <div class="week-header">Hafta 11</div><div class="match-grid"><div class="match-card">
@@ -606,54 +791,72 @@ footer a { color:#1e3a5f; }
   <div class="mc-teams"><span>EYÜPSPOR</span><span class="vs">vs</span><span>KOCAELİSPOR</span></div>
   <div class="mc-pick home">EYÜPSPOR</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %48</span><span>X %27</span><span style="color:#f87171">Dep %25</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-0</span><span class="sl-xg">xG 1.4–0.9</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">8 Kas 2026</div>
   <div class="mc-teams"><span>BEŞİKTAŞ A.Ş.</span><span class="vs">vs</span><span>GENÇLERBİRLİĞİ</span></div>
   <div class="mc-pick home">BEŞİKTAŞ A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %56</span><span>X %21</span><span style="color:#f87171">Dep %24</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.9–1.2</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">8 Kas 2026</div>
   <div class="mc-teams"><span>SAMSUNSPOR A.Ş.</span><span class="vs">vs</span><span>TÜMOSAN KONYASPOR</span></div>
   <div class="mc-pick home">SAMSUNSPOR A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %41</span><span>X %26</span><span style="color:#f87171">Dep %34</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.8–1.6</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">8 Kas 2026</div>
   <div class="mc-teams"><span>GAZİANTEP FUTBOL KULÜBÜ A.Ş.</span><span class="vs">vs</span><span>KASIMPAŞA A.Ş.</span></div>
   <div class="mc-pick away">KASIMPAŞA A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %36</span><span>X %25</span><span style="color:#f87171">Dep %39</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.4–1.5</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">8 Kas 2026</div>
   <div class="mc-teams"><span>CORENDON ALANYASPOR</span><span class="vs">vs</span><span>TRABZONSPOR A.Ş.</span></div>
   <div class="mc-pick home">CORENDON ALANYASPOR</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %40</span><span>X %26</span><span style="color:#f87171">Dep %33</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.4–1.2</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">8 Kas 2026</div>
   <div class="mc-teams"><span>ÇAYKUR RİZESPOR A.Ş.</span><span class="vs">vs</span><span>ERZURUMSPOR FK</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %46</span><span>X %31</span><span style="color:#f87171">Dep %24</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-0</span><span class="sl-xg">xG 1.1–0.7</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">8 Kas 2026</div>
   <div class="mc-teams"><span>GÖZTEPE A.Ş.</span><span class="vs">vs</span><span>İSTANBUL BAŞAKŞEHİR FK</span></div>
   <div class="mc-pick away">İSTANBUL BAŞAKŞEHİR FK</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %35</span><span>X %23</span><span style="color:#f87171">Dep %42</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.6–1.7</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">8 Kas 2026</div>
   <div class="mc-teams"><span>ARCA ÇORUM FK</span><span class="vs">vs</span><span>FENERBAHÇE A.Ş.</span></div>
   <div class="mc-pick away">FENERBAHÇE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %14</span><span>X %26</span><span style="color:#f87171">Dep %59</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-1</span><span class="sl-xg">xG 0.6–1.5</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">8 Kas 2026</div>
   <div class="mc-teams"><span>GALATASARAY A.Ş.</span><span class="vs">vs</span><span>AMED SPORTİF FAALİYETLER</span></div>
   <div class="mc-pick home">GALATASARAY A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %59</span><span>X %28</span><span style="color:#f87171">Dep %13</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-0</span><span class="sl-xg">xG 1.4–0.5</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div></div>
 <div class="week-header">Hafta 12</div><div class="match-grid"><div class="match-card">
@@ -661,54 +864,72 @@ footer a { color:#1e3a5f; }
   <div class="mc-teams"><span>KOCAELİSPOR</span><span class="vs">vs</span><span>FENERBAHÇE A.Ş.</span></div>
   <div class="mc-pick away">FENERBAHÇE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %16</span><span>X %21</span><span style="color:#f87171">Dep %64</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-2</span><span class="sl-xg">xG 0.9–2.0</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">22 Kas 2026</div>
   <div class="mc-teams"><span>TRABZONSPOR A.Ş.</span><span class="vs">vs</span><span>EYÜPSPOR</span></div>
   <div class="mc-pick home">TRABZONSPOR A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %44</span><span>X %26</span><span style="color:#f87171">Dep %31</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.5–1.2</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">22 Kas 2026</div>
   <div class="mc-teams"><span>KASIMPAŞA A.Ş.</span><span class="vs">vs</span><span>CORENDON ALANYASPOR</span></div>
   <div class="mc-pick home">KASIMPAŞA A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %39</span><span>X %23</span><span style="color:#f87171">Dep %38</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.3–1.3</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">22 Kas 2026</div>
   <div class="mc-teams"><span>İSTANBUL BAŞAKŞEHİR FK</span><span class="vs">vs</span><span>ARCA ÇORUM FK</span></div>
   <div class="mc-pick home">İSTANBUL BAŞAKŞEHİR FK</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %63</span><span>X %28</span><span style="color:#f87171">Dep %9</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-0</span><span class="sl-xg">xG 1.4–0.3</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">22 Kas 2026</div>
   <div class="mc-teams"><span>AMED SPORTİF FAALİYETLER</span><span class="vs">vs</span><span>ÇAYKUR RİZESPOR A.Ş.</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %32</span><span>X %32</span><span style="color:#f87171">Dep %36</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.9–1.0</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">22 Kas 2026</div>
   <div class="mc-teams"><span>GENÇLERBİRLİĞİ</span><span class="vs">vs</span><span>GAZİANTEP FUTBOL KULÜBÜ A.Ş.</span></div>
   <div class="mc-pick home">GENÇLERBİRLİĞİ</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %46</span><span>X %24</span><span style="color:#f87171">Dep %30</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.6–1.3</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">22 Kas 2026</div>
   <div class="mc-teams"><span>TÜMOSAN KONYASPOR</span><span class="vs">vs</span><span>BEŞİKTAŞ A.Ş.</span></div>
   <div class="mc-pick away">BEŞİKTAŞ A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %37</span><span>X %22</span><span style="color:#f87171">Dep %41</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.6–1.7</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">22 Kas 2026</div>
   <div class="mc-teams"><span>GALATASARAY A.Ş.</span><span class="vs">vs</span><span>SAMSUNSPOR A.Ş.</span></div>
   <div class="mc-pick home">GALATASARAY A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %53</span><span>X %21</span><span style="color:#f87171">Dep %26</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">2-1</span><span class="sl-xg">xG 2.1–1.4</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">22 Kas 2026</div>
   <div class="mc-teams"><span>ERZURUMSPOR FK</span><span class="vs">vs</span><span>GÖZTEPE A.Ş.</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %25</span><span>X %32</span><span style="color:#f87171">Dep %43</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-1</span><span class="sl-xg">xG 0.8–1.1</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div></div>
 <div class="week-header">Hafta 13</div><div class="match-grid"><div class="match-card">
@@ -716,54 +937,72 @@ footer a { color:#1e3a5f; }
   <div class="mc-teams"><span>EYÜPSPOR</span><span class="vs">vs</span><span>İSTANBUL BAŞAKŞEHİR FK</span></div>
   <div class="mc-pick away">İSTANBUL BAŞAKŞEHİR FK</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %26</span><span>X %24</span><span style="color:#f87171">Dep %50</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.2–1.7</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">29 Kas 2026</div>
   <div class="mc-teams"><span>FENERBAHÇE A.Ş.</span><span class="vs">vs</span><span>ERZURUMSPOR FK</span></div>
   <div class="mc-pick home">FENERBAHÇE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %69</span><span>X %22</span><span style="color:#f87171">Dep %8</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-0</span><span class="sl-xg">xG 1.7–0.4</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">29 Kas 2026</div>
   <div class="mc-teams"><span>BEŞİKTAŞ A.Ş.</span><span class="vs">vs</span><span>GALATASARAY A.Ş.</span></div>
   <div class="mc-pick away">GALATASARAY A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %38</span><span>X %21</span><span style="color:#f87171">Dep %40</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.7–1.7</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">29 Kas 2026</div>
   <div class="mc-teams"><span>SAMSUNSPOR A.Ş.</span><span class="vs">vs</span><span>GENÇLERBİRLİĞİ</span></div>
   <div class="mc-pick home">SAMSUNSPOR A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %46</span><span>X %26</span><span style="color:#f87171">Dep %27</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.9–1.4</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">29 Kas 2026</div>
   <div class="mc-teams"><span>GAZİANTEP FUTBOL KULÜBÜ A.Ş.</span><span class="vs">vs</span><span>AMED SPORTİF FAALİYETLER</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %32</span><span>X %35</span><span style="color:#f87171">Dep %33</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.8–0.8</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">29 Kas 2026</div>
   <div class="mc-teams"><span>CORENDON ALANYASPOR</span><span class="vs">vs</span><span>TÜMOSAN KONYASPOR</span></div>
   <div class="mc-pick home">CORENDON ALANYASPOR</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %41</span><span>X %22</span><span style="color:#f87171">Dep %37</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.5–1.4</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">29 Kas 2026</div>
   <div class="mc-teams"><span>ÇAYKUR RİZESPOR A.Ş.</span><span class="vs">vs</span><span>KASIMPAŞA A.Ş.</span></div>
   <div class="mc-pick home">ÇAYKUR RİZESPOR A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %46</span><span>X %24</span><span style="color:#f87171">Dep %30</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.8–1.4</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">29 Kas 2026</div>
   <div class="mc-teams"><span>GÖZTEPE A.Ş.</span><span class="vs">vs</span><span>TRABZONSPOR A.Ş.</span></div>
   <div class="mc-pick home">GÖZTEPE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %48</span><span>X %24</span><span style="color:#f87171">Dep %28</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.8–1.3</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">29 Kas 2026</div>
   <div class="mc-teams"><span>ÇORUM FK</span><span class="vs">vs</span><span>KOCAELİSPOR</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %38</span><span>X %44</span><span style="color:#f87171">Dep %18</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.7–0.4</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div></div>
 <div class="week-header">Hafta 14</div><div class="match-grid"><div class="match-card">
@@ -771,54 +1010,72 @@ footer a { color:#1e3a5f; }
   <div class="mc-teams"><span>BEŞİKTAŞ A.Ş.</span><span class="vs">vs</span><span>SAMSUNSPOR A.Ş.</span></div>
   <div class="mc-pick home">BEŞİKTAŞ A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %46</span><span>X %26</span><span style="color:#f87171">Dep %28</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 2.0–1.5</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">6 Ara 2026</div>
   <div class="mc-teams"><span>TRABZONSPOR A.Ş.</span><span class="vs">vs</span><span>ÇORUM FK</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %43</span><span>X %37</span><span style="color:#f87171">Dep %20</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.9–0.5</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">6 Ara 2026</div>
   <div class="mc-teams"><span>KASIMPAŞA A.Ş.</span><span class="vs">vs</span><span>GÖZTEPE A.Ş.</span></div>
   <div class="mc-pick away">GÖZTEPE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %32</span><span>X %22</span><span style="color:#f87171">Dep %46</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.4–1.7</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">6 Ara 2026</div>
   <div class="mc-teams"><span>İSTANBUL BAŞAKŞEHİR FK</span><span class="vs">vs</span><span>FENERBAHÇE A.Ş.</span></div>
   <div class="mc-pick away">FENERBAHÇE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %37</span><span>X %22</span><span style="color:#f87171">Dep %40</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.7–1.8</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">6 Ara 2026</div>
   <div class="mc-teams"><span>AMED SPORTİF FAALİYETLER</span><span class="vs">vs</span><span>CORENDON ALANYASPOR</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %29</span><span>X %39</span><span style="color:#f87171">Dep %32</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.6–0.7</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">6 Ara 2026</div>
   <div class="mc-teams"><span>GENÇLERBİRLİĞİ</span><span class="vs">vs</span><span>EYÜPSPOR</span></div>
   <div class="mc-pick home">GENÇLERBİRLİĞİ</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %37</span><span>X %25</span><span style="color:#f87171">Dep %37</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.4–1.4</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">6 Ara 2026</div>
   <div class="mc-teams"><span>TÜMOSAN KONYASPOR</span><span class="vs">vs</span><span>GAZİANTEP FUTBOL KULÜBÜ A.Ş.</span></div>
   <div class="mc-pick home">TÜMOSAN KONYASPOR</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %53</span><span>X %23</span><span style="color:#f87171">Dep %24</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.9–1.2</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">6 Ara 2026</div>
   <div class="mc-teams"><span>GALATASARAY A.Ş.</span><span class="vs">vs</span><span>ÇAYKUR RİZESPOR A.Ş.</span></div>
   <div class="mc-pick home">GALATASARAY A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %54</span><span>X %21</span><span style="color:#f87171">Dep %25</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">2-1</span><span class="sl-xg">xG 2.1–1.4</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">6 Ara 2026</div>
   <div class="mc-teams"><span>ERZURUMSPOR FK</span><span class="vs">vs</span><span>KOCAELİSPOR</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %38</span><span>X %44</span><span style="color:#f87171">Dep %18</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.7–0.4</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div></div>
 <div class="week-header">Hafta 15</div><div class="match-grid"><div class="match-card">
@@ -826,54 +1083,72 @@ footer a { color:#1e3a5f; }
   <div class="mc-teams"><span>EYÜPSPOR</span><span class="vs">vs</span><span>GALATASARAY A.Ş.</span></div>
   <div class="mc-pick away">GALATASARAY A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %29</span><span>X %23</span><span style="color:#f87171">Dep %48</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.3–1.8</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">13 Ara 2026</div>
   <div class="mc-teams"><span>FENERBAHÇE A.Ş.</span><span class="vs">vs</span><span>TRABZONSPOR A.Ş.</span></div>
   <div class="mc-pick home">FENERBAHÇE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %59</span><span>X %23</span><span style="color:#f87171">Dep %18</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">2-1</span><span class="sl-xg">xG 2.2–1.1</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">13 Ara 2026</div>
   <div class="mc-teams"><span>KOCAELİSPOR</span><span class="vs">vs</span><span>GENÇLERBİRLİĞİ</span></div>
   <div class="mc-pick home">KOCAELİSPOR</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %37</span><span>X %28</span><span style="color:#f87171">Dep %36</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.2–1.2</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">13 Ara 2026</div>
   <div class="mc-teams"><span>GAZİANTEP FUTBOL KULÜBÜ A.Ş.</span><span class="vs">vs</span><span>BEŞİKTAŞ A.Ş.</span></div>
   <div class="mc-pick away">BEŞİKTAŞ A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %26</span><span>X %23</span><span style="color:#f87171">Dep %51</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.3–1.9</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">13 Ara 2026</div>
   <div class="mc-teams"><span>CORENDON ALANYASPOR</span><span class="vs">vs</span><span>SAMSUNSPOR A.Ş.</span></div>
   <div class="mc-pick home">CORENDON ALANYASPOR</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %40</span><span>X %24</span><span style="color:#f87171">Dep %36</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.6–1.5</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">13 Ara 2026</div>
   <div class="mc-teams"><span>ÇAYKUR RİZESPOR A.Ş.</span><span class="vs">vs</span><span>İSTANBUL BAŞAKŞEHİR FK</span></div>
   <div class="mc-pick away">İSTANBUL BAŞAKŞEHİR FK</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %30</span><span>X %22</span><span style="color:#f87171">Dep %48</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.4–1.9</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">13 Ara 2026</div>
   <div class="mc-teams"><span>GÖZTEPE A.Ş.</span><span class="vs">vs</span><span>TÜMOSAN KONYASPOR</span></div>
   <div class="mc-pick home">GÖZTEPE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %47</span><span>X %24</span><span style="color:#f87171">Dep %30</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.9–1.5</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">13 Ara 2026</div>
   <div class="mc-teams"><span>ARCA ÇORUM FK</span><span class="vs">vs</span><span>AMED SPORTİF FAALİYETLER</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %14</span><span>X %74</span><span style="color:#f87171">Dep %12</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.2–0.1</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">13 Ara 2026</div>
   <div class="mc-teams"><span>ERZURUMSPOR FK</span><span class="vs">vs</span><span>KASIMPAŞA A.Ş.</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %35</span><span>X %38</span><span style="color:#f87171">Dep %27</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.8–0.7</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div></div>
 <div class="week-header">Hafta 16</div><div class="match-grid"><div class="match-card">
@@ -881,54 +1156,72 @@ footer a { color:#1e3a5f; }
   <div class="mc-teams"><span>BEŞİKTAŞ A.Ş.</span><span class="vs">vs</span><span>ÇAYKUR RİZESPOR A.Ş.</span></div>
   <div class="mc-pick home">BEŞİKTAŞ A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %48</span><span>X %24</span><span style="color:#f87171">Dep %28</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">2-1</span><span class="sl-xg">xG 2.0–1.5</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">20 Ara 2026</div>
   <div class="mc-teams"><span>SAMSUNSPOR A.Ş.</span><span class="vs">vs</span><span>GAZİANTEP FUTBOL KULÜBÜ A.Ş.</span></div>
   <div class="mc-pick home">SAMSUNSPOR A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %52</span><span>X %24</span><span style="color:#f87171">Dep %24</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">2-1</span><span class="sl-xg">xG 2.0–1.4</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">20 Ara 2026</div>
   <div class="mc-teams"><span>TRABZONSPOR A.Ş.</span><span class="vs">vs</span><span>KOCAELİSPOR</span></div>
   <div class="mc-pick home">TRABZONSPOR A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %50</span><span>X %27</span><span style="color:#f87171">Dep %23</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-0</span><span class="sl-xg">xG 1.4–0.9</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">20 Ara 2026</div>
   <div class="mc-teams"><span>KASIMPAŞA A.Ş.</span><span class="vs">vs</span><span>FENERBAHÇE A.Ş.</span></div>
   <div class="mc-pick away">FENERBAHÇE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %22</span><span>X %18</span><span style="color:#f87171">Dep %60</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-2</span><span class="sl-xg">xG 1.2–2.1</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">20 Ara 2026</div>
   <div class="mc-teams"><span>İSTANBUL BAŞAKŞEHİR FK</span><span class="vs">vs</span><span>ERZURUMSPOR FK</span></div>
   <div class="mc-pick home">İSTANBUL BAŞAKŞEHİR FK</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %63</span><span>X %28</span><span style="color:#f87171">Dep %9</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-0</span><span class="sl-xg">xG 1.4–0.3</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">20 Ara 2026</div>
   <div class="mc-teams"><span>AMED SPORTİF FAALİYETLER</span><span class="vs">vs</span><span>GÖZTEPE A.Ş.</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %25</span><span>X %32</span><span style="color:#f87171">Dep %43</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-1</span><span class="sl-xg">xG 0.8–1.1</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">20 Ara 2026</div>
   <div class="mc-teams"><span>GENÇLERBİRLİĞİ</span><span class="vs">vs</span><span>ARCA ÇORUM FK</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %37</span><span>X %37</span><span style="color:#f87171">Dep %27</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.8–0.7</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">20 Ara 2026</div>
   <div class="mc-teams"><span>TÜMOSAN KONYASPOR</span><span class="vs">vs</span><span>EYÜPSPOR</span></div>
   <div class="mc-pick home">TÜMOSAN KONYASPOR</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %45</span><span>X %24</span><span style="color:#f87171">Dep %31</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.7–1.3</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">20 Ara 2026</div>
   <div class="mc-teams"><span>GALATASARAY A.Ş.</span><span class="vs">vs</span><span>CORENDON ALANYASPOR</span></div>
   <div class="mc-pick home">GALATASARAY A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %57</span><span>X %20</span><span style="color:#f87171">Dep %24</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.9–1.1</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div></div>
 <div class="week-header">Hafta 17</div><div class="match-grid"><div class="match-card">
@@ -936,54 +1229,72 @@ footer a { color:#1e3a5f; }
   <div class="mc-teams"><span>EYÜPSPOR</span><span class="vs">vs</span><span>SAMSUNSPOR A.Ş.</span></div>
   <div class="mc-pick home">EYÜPSPOR</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %39</span><span>X %23</span><span style="color:#f87171">Dep %37</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.6–1.6</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">17 Oca 2027</div>
   <div class="mc-teams"><span>FENERBAHÇE A.Ş.</span><span class="vs">vs</span><span>AMED SPORTİF FAALİYETLER</span></div>
   <div class="mc-pick home">FENERBAHÇE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %69</span><span>X %22</span><span style="color:#f87171">Dep %8</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-0</span><span class="sl-xg">xG 1.7–0.4</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">17 Oca 2027</div>
   <div class="mc-teams"><span>KOCAELİSPOR</span><span class="vs">vs</span><span>KASIMPAŞA A.Ş.</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %34</span><span>X %31</span><span style="color:#f87171">Dep %36</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.1–1.2</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">17 Oca 2027</div>
   <div class="mc-teams"><span>GAZİANTEP FUTBOL KULÜBÜ A.Ş.</span><span class="vs">vs</span><span>GALATASARAY A.Ş.</span></div>
   <div class="mc-pick away">GALATASARAY A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %23</span><span>X %20</span><span style="color:#f87171">Dep %57</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-2</span><span class="sl-xg">xG 1.2–2.0</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">17 Oca 2027</div>
   <div class="mc-teams"><span>CORENDON ALANYASPOR</span><span class="vs">vs</span><span>İSTANBUL BAŞAKŞEHİR FK</span></div>
   <div class="mc-pick away">İSTANBUL BAŞAKŞEHİR FK</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %27</span><span>X %24</span><span style="color:#f87171">Dep %48</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.2–1.6</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">17 Oca 2027</div>
   <div class="mc-teams"><span>ÇAYKUR RİZESPOR A.Ş.</span><span class="vs">vs</span><span>GENÇLERBİRLİĞİ</span></div>
   <div class="mc-pick home">ÇAYKUR RİZESPOR A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %49</span><span>X %22</span><span style="color:#f87171">Dep %30</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.8–1.4</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">17 Oca 2027</div>
   <div class="mc-teams"><span>GÖZTEPE A.Ş.</span><span class="vs">vs</span><span>BEŞİKTAŞ A.Ş.</span></div>
   <div class="mc-pick home">GÖZTEPE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %44</span><span>X %19</span><span style="color:#f87171">Dep %37</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.8–1.6</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">17 Oca 2027</div>
   <div class="mc-teams"><span>ARCA ÇORUM FK</span><span class="vs">vs</span><span>TÜMOSAN KONYASPOR</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %30</span><span>X %34</span><span style="color:#f87171">Dep %36</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.8–0.9</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">17 Oca 2027</div>
   <div class="mc-teams"><span>ERZURUMSPOR FK</span><span class="vs">vs</span><span>TRABZONSPOR A.Ş.</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %30</span><span>X %38</span><span style="color:#f87171">Dep %32</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.7–0.7</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div></div>
 <div class="week-header">Hafta 18</div><div class="match-grid"><div class="match-card">
@@ -991,54 +1302,72 @@ footer a { color:#1e3a5f; }
   <div class="mc-teams"><span>KOCAELİSPOR</span><span class="vs">vs</span><span>İSTANBUL BAŞAKŞEHİR FK</span></div>
   <div class="mc-pick away">İSTANBUL BAŞAKŞEHİR FK</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %18</span><span>X %24</span><span style="color:#f87171">Dep %57</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-1</span><span class="sl-xg">xG 0.8–1.7</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">24 Oca 2027</div>
   <div class="mc-teams"><span>FENERBAHÇE A.Ş.</span><span class="vs">vs</span><span>GENÇLERBİRLİĞİ</span></div>
   <div class="mc-pick home">FENERBAHÇE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %67</span><span>X %18</span><span style="color:#f87171">Dep %15</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">2-1</span><span class="sl-xg">xG 2.4–1.0</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">24 Oca 2027</div>
   <div class="mc-teams"><span>CORENDON ALANYASPOR</span><span class="vs">vs</span><span>GAZİANTEP FUTBOL KULÜBÜ A.Ş.</span></div>
   <div class="mc-pick home">CORENDON ALANYASPOR</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %53</span><span>X %22</span><span style="color:#f87171">Dep %25</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.7–1.1</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">24 Oca 2027</div>
   <div class="mc-teams"><span>TRABZONSPOR A.Ş.</span><span class="vs">vs</span><span>KASIMPAŞA A.Ş.</span></div>
   <div class="mc-pick home">TRABZONSPOR A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %45</span><span>X %27</span><span style="color:#f87171">Dep %28</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.5–1.1</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">24 Oca 2027</div>
   <div class="mc-teams"><span>ERZURUMSPOR FK</span><span class="vs">vs</span><span>AMED SPORTİF FAALİYETLER</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %14</span><span>X %74</span><span style="color:#f87171">Dep %12</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.2–0.1</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">24 Oca 2027</div>
   <div class="mc-teams"><span>ÇAYKUR RİZESPOR A.Ş.</span><span class="vs">vs</span><span>TÜMOSAN KONYASPOR</span></div>
   <div class="mc-pick home">ÇAYKUR RİZESPOR A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %42</span><span>X %22</span><span style="color:#f87171">Dep %36</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.8–1.6</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">24 Oca 2027</div>
   <div class="mc-teams"><span>ARCA ÇORUM FK</span><span class="vs">vs</span><span>GALATASARAY A.Ş.</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %20</span><span>X %31</span><span style="color:#f87171">Dep %49</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-1</span><span class="sl-xg">xG 0.7–1.2</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">24 Oca 2027</div>
   <div class="mc-teams"><span>EYÜPSPOR</span><span class="vs">vs</span><span>BEŞİKTAŞ A.Ş.</span></div>
   <div class="mc-pick away">BEŞİKTAŞ A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %33</span><span>X %24</span><span style="color:#f87171">Dep %43</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.4–1.6</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">24 Oca 2027</div>
   <div class="mc-teams"><span>GÖZTEPE A.Ş.</span><span class="vs">vs</span><span>SAMSUNSPOR A.Ş.</span></div>
   <div class="mc-pick home">GÖZTEPE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %50</span><span>X %19</span><span style="color:#f87171">Dep %32</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 2.0–1.6</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div></div>
 <div class="week-header">Hafta 19</div><div class="match-grid"><div class="match-card">
@@ -1046,54 +1375,72 @@ footer a { color:#1e3a5f; }
   <div class="mc-teams"><span>BEŞİKTAŞ A.Ş.</span><span class="vs">vs</span><span>CORENDON ALANYASPOR</span></div>
   <div class="mc-pick home">BEŞİKTAŞ A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %49</span><span>X %25</span><span style="color:#f87171">Dep %26</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.7–1.2</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">31 Oca 2027</div>
   <div class="mc-teams"><span>SAMSUNSPOR A.Ş.</span><span class="vs">vs</span><span>ÇAYKUR RİZESPOR A.Ş.</span></div>
   <div class="mc-pick home">SAMSUNSPOR A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %44</span><span>X %22</span><span style="color:#f87171">Dep %35</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.9–1.7</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">31 Oca 2027</div>
   <div class="mc-teams"><span>İSTANBUL BAŞAKŞEHİR FK</span><span class="vs">vs</span><span>TRABZONSPOR A.Ş.</span></div>
   <div class="mc-pick home">İSTANBUL BAŞAKŞEHİR FK</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %56</span><span>X %23</span><span style="color:#f87171">Dep %21</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.8–1.0</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">31 Oca 2027</div>
   <div class="mc-teams"><span>GAZİANTEP FUTBOL KULÜBÜ A.Ş.</span><span class="vs">vs</span><span>EYÜPSPOR</span></div>
   <div class="mc-pick away">EYÜPSPOR</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %34</span><span>X %25</span><span style="color:#f87171">Dep %42</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.3–1.5</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">31 Oca 2027</div>
   <div class="mc-teams"><span>GENÇLERBİRLİĞİ</span><span class="vs">vs</span><span>GÖZTEPE A.Ş.</span></div>
   <div class="mc-pick away">GÖZTEPE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %31</span><span>X %20</span><span style="color:#f87171">Dep %48</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.4–1.8</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">31 Oca 2027</div>
   <div class="mc-teams"><span>KASIMPAŞA A.Ş.</span><span class="vs">vs</span><span>ARCA ÇORUM FK</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %39</span><span>X %38</span><span style="color:#f87171">Dep %24</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.8–0.6</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">31 Oca 2027</div>
   <div class="mc-teams"><span>TÜMOSAN KONYASPOR</span><span class="vs">vs</span><span>FENERBAHÇE A.Ş.</span></div>
   <div class="mc-pick away">FENERBAHÇE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %26</span><span>X %19</span><span style="color:#f87171">Dep %55</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-2</span><span class="sl-xg">xG 1.4–2.1</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">31 Oca 2027</div>
   <div class="mc-teams"><span>AMED SPORTİF FAALİYETLER</span><span class="vs">vs</span><span>KOCAELİSPOR</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %38</span><span>X %44</span><span style="color:#f87171">Dep %18</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.7–0.4</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">31 Oca 2027</div>
   <div class="mc-teams"><span>GALATASARAY A.Ş.</span><span class="vs">vs</span><span>ERZURUMSPOR FK</span></div>
   <div class="mc-pick home">GALATASARAY A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %59</span><span>X %28</span><span style="color:#f87171">Dep %13</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-0</span><span class="sl-xg">xG 1.4–0.5</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div></div>
 <div class="week-header">Hafta 20</div><div class="match-grid"><div class="match-card">
@@ -1101,54 +1448,72 @@ footer a { color:#1e3a5f; }
   <div class="mc-teams"><span>KOCAELİSPOR</span><span class="vs">vs</span><span>TÜMOSAN KONYASPOR</span></div>
   <div class="mc-pick away">TÜMOSAN KONYASPOR</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %30</span><span>X %26</span><span style="color:#f87171">Dep %44</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.1–1.4</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">7 Şub 2027</div>
   <div class="mc-teams"><span>FENERBAHÇE A.Ş.</span><span class="vs">vs</span><span>SAMSUNSPOR A.Ş.</span></div>
   <div class="mc-pick home">FENERBAHÇE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %57</span><span>X %24</span><span style="color:#f87171">Dep %19</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">2-1</span><span class="sl-xg">xG 2.5–1.4</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">7 Şub 2027</div>
   <div class="mc-teams"><span>ÇAYKUR RİZESPOR A.Ş.</span><span class="vs">vs</span><span>GAZİANTEP FUTBOL KULÜBÜ A.Ş.</span></div>
   <div class="mc-pick home">ÇAYKUR RİZESPOR A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %55</span><span>X %19</span><span style="color:#f87171">Dep %27</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 2.0–1.3</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">7 Şub 2027</div>
   <div class="mc-teams"><span>CORENDON ALANYASPOR</span><span class="vs">vs</span><span>EYÜPSPOR</span></div>
   <div class="mc-pick home">CORENDON ALANYASPOR</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %43</span><span>X %26</span><span style="color:#f87171">Dep %31</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.4–1.2</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">7 Şub 2027</div>
   <div class="mc-teams"><span>KASIMPAŞA A.Ş.</span><span class="vs">vs</span><span>İSTANBUL BAŞAKŞEHİR FK</span></div>
   <div class="mc-pick away">İSTANBUL BAŞAKŞEHİR FK</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %24</span><span>X %23</span><span style="color:#f87171">Dep %52</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.1–1.8</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">7 Şub 2027</div>
   <div class="mc-teams"><span>TRABZONSPOR A.Ş.</span><span class="vs">vs</span><span>AMED SPORTİF FAALİYETLER</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %43</span><span>X %37</span><span style="color:#f87171">Dep %20</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.9–0.5</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">7 Şub 2027</div>
   <div class="mc-teams"><span>ERZURUMSPOR FK</span><span class="vs">vs</span><span>GENÇLERBİRLİĞİ</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %37</span><span>X %36</span><span style="color:#f87171">Dep %27</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.8–0.7</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">7 Şub 2027</div>
   <div class="mc-teams"><span>GÖZTEPE A.Ş.</span><span class="vs">vs</span><span>GALATASARAY A.Ş.</span></div>
   <div class="mc-pick away">GALATASARAY A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %40</span><span>X %18</span><span style="color:#f87171">Dep %42</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.7–1.8</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">7 Şub 2027</div>
   <div class="mc-teams"><span>ÇORUM FK</span><span class="vs">vs</span><span>BEŞİKTAŞ A.Ş.</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %24</span><span>X %32</span><span style="color:#f87171">Dep %43</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-1</span><span class="sl-xg">xG 0.7–1.1</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div></div>
 <div class="week-header">Hafta 21</div><div class="match-grid"><div class="match-card">
@@ -1156,54 +1521,72 @@ footer a { color:#1e3a5f; }
   <div class="mc-teams"><span>BEŞİKTAŞ A.Ş.</span><span class="vs">vs</span><span>FENERBAHÇE A.Ş.</span></div>
   <div class="mc-pick away">FENERBAHÇE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %30</span><span>X %25</span><span style="color:#f87171">Dep %46</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-2</span><span class="sl-xg">xG 1.6–2.0</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">14 Şub 2027</div>
   <div class="mc-teams"><span>SAMSUNSPOR A.Ş.</span><span class="vs">vs</span><span>KOCAELİSPOR</span></div>
   <div class="mc-pick home">SAMSUNSPOR A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %52</span><span>X %24</span><span style="color:#f87171">Dep %24</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.7–1.1</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">14 Şub 2027</div>
   <div class="mc-teams"><span>GENÇLERBİRLİĞİ</span><span class="vs">vs</span><span>TRABZONSPOR A.Ş.</span></div>
   <div class="mc-pick away">TRABZONSPOR A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %34</span><span>X %26</span><span style="color:#f87171">Dep %39</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.3–1.4</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">14 Şub 2027</div>
   <div class="mc-teams"><span>AMED SPORTİF FAALİYETLER</span><span class="vs">vs</span><span>KASIMPAŞA A.Ş.</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %35</span><span>X %38</span><span style="color:#f87171">Dep %27</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.8–0.7</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">14 Şub 2027</div>
   <div class="mc-teams"><span>GALATASARAY A.Ş.</span><span class="vs">vs</span><span>İSTANBUL BAŞAKŞEHİR FK</span></div>
   <div class="mc-pick home">GALATASARAY A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %40</span><span>X %23</span><span style="color:#f87171">Dep %37</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.7–1.6</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">14 Şub 2027</div>
   <div class="mc-teams"><span>CORENDON ALANYASPOR</span><span class="vs">vs</span><span>ÇAYKUR RİZESPOR A.Ş.</span></div>
   <div class="mc-pick home">CORENDON ALANYASPOR</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %40</span><span>X %27</span><span style="color:#f87171">Dep %33</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.6–1.4</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">14 Şub 2027</div>
   <div class="mc-teams"><span>GAZİANTEP FUTBOL KULÜBÜ A.Ş.</span><span class="vs">vs</span><span>GÖZTEPE A.Ş.</span></div>
   <div class="mc-pick away">GÖZTEPE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %27</span><span>X %22</span><span style="color:#f87171">Dep %51</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.3–1.9</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">14 Şub 2027</div>
   <div class="mc-teams"><span>EYÜPSPOR</span><span class="vs">vs</span><span>ARCA ÇORUM FK</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %42</span><span>X %37</span><span style="color:#f87171">Dep %22</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.9–0.6</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">14 Şub 2027</div>
   <div class="mc-teams"><span>TÜMOSAN KONYASPOR</span><span class="vs">vs</span><span>ERZURUMSPOR FK</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %47</span><span>X %32</span><span style="color:#f87171">Dep %21</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-0</span><span class="sl-xg">xG 1.1–0.6</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div></div>
 <div class="week-header">Hafta 22</div><div class="match-grid"><div class="match-card">
@@ -1211,54 +1594,72 @@ footer a { color:#1e3a5f; }
   <div class="mc-teams"><span>FENERBAHÇE A.Ş.</span><span class="vs">vs</span><span>GAZİANTEP FUTBOL KULÜBÜ A.Ş.</span></div>
   <div class="mc-pick home">FENERBAHÇE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %75</span><span>X %12</span><span style="color:#f87171">Dep %13</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">2-0</span><span class="sl-xg">xG 2.6–1.0</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">21 Şub 2027</div>
   <div class="mc-teams"><span>KOCAELİSPOR</span><span class="vs">vs</span><span>GALATASARAY A.Ş.</span></div>
   <div class="mc-pick away">GALATASARAY A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %21</span><span>X %24</span><span style="color:#f87171">Dep %55</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-1</span><span class="sl-xg">xG 1.0–1.7</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">21 Şub 2027</div>
   <div class="mc-teams"><span>ÇAYKUR RİZESPOR A.Ş.</span><span class="vs">vs</span><span>EYÜPSPOR</span></div>
   <div class="mc-pick home">ÇAYKUR RİZESPOR A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %44</span><span>X %23</span><span style="color:#f87171">Dep %32</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.7–1.4</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">21 Şub 2027</div>
   <div class="mc-teams"><span>GÖZTEPE A.Ş.</span><span class="vs">vs</span><span>CORENDON ALANYASPOR</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %46</span><span>X %28</span><span style="color:#f87171">Dep %26</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.8–1.2</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">21 Şub 2027</div>
   <div class="mc-teams"><span>İSTANBUL BAŞAKŞEHİR FK</span><span class="vs">vs</span><span>AMED SPORTİF FAALİYETLER</span></div>
   <div class="mc-pick home">İSTANBUL BAŞAKŞEHİR FK</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %63</span><span>X %28</span><span style="color:#f87171">Dep %9</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-0</span><span class="sl-xg">xG 1.4–0.3</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">21 Şub 2027</div>
   <div class="mc-teams"><span>KASIMPAŞA A.Ş.</span><span class="vs">vs</span><span>GENÇLERBİRLİĞİ</span></div>
   <div class="mc-pick home">KASIMPAŞA A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %43</span><span>X %26</span><span style="color:#f87171">Dep %32</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.5–1.2</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">21 Şub 2027</div>
   <div class="mc-teams"><span>TRABZONSPOR A.Ş.</span><span class="vs">vs</span><span>TÜMOSAN KONYASPOR</span></div>
   <div class="mc-pick home">TRABZONSPOR A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %41</span><span>X %24</span><span style="color:#f87171">Dep %34</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.6–1.4</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">21 Şub 2027</div>
   <div class="mc-teams"><span>ERZURUMSPOR FK</span><span class="vs">vs</span><span>BEŞİKTAŞ A.Ş.</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %24</span><span>X %32</span><span style="color:#f87171">Dep %43</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-1</span><span class="sl-xg">xG 0.7–1.1</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">21 Şub 2027</div>
   <div class="mc-teams"><span>ARCA ÇORUM FK</span><span class="vs">vs</span><span>SAMSUNSPOR A.Ş.</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %32</span><span>X %31</span><span style="color:#f87171">Dep %36</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-1</span><span class="sl-xg">xG 0.9–1.0</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div></div>
 <div class="week-header">Hafta 23</div><div class="match-grid"><div class="match-card">
@@ -1266,54 +1667,72 @@ footer a { color:#1e3a5f; }
   <div class="mc-teams"><span>BEŞİKTAŞ A.Ş.</span><span class="vs">vs</span><span>AMED SPORTİF FAALİYETLER</span></div>
   <div class="mc-pick home">BEŞİKTAŞ A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %54</span><span>X %30</span><span style="color:#f87171">Dep %16</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-0</span><span class="sl-xg">xG 1.2–0.6</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">28 Şub 2027</div>
   <div class="mc-teams"><span>SAMSUNSPOR A.Ş.</span><span class="vs">vs</span><span>ERZURUMSPOR FK</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %46</span><span>X %30</span><span style="color:#f87171">Dep %23</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-0</span><span class="sl-xg">xG 1.2–0.8</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">28 Şub 2027</div>
   <div class="mc-teams"><span>GALATASARAY A.Ş.</span><span class="vs">vs</span><span>TRABZONSPOR A.Ş.</span></div>
   <div class="mc-pick home">GALATASARAY A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %53</span><span>X %23</span><span style="color:#f87171">Dep %24</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.9–1.2</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">28 Şub 2027</div>
   <div class="mc-teams"><span>TÜMOSAN KONYASPOR</span><span class="vs">vs</span><span>KASIMPAŞA A.Ş.</span></div>
   <div class="mc-pick home">TÜMOSAN KONYASPOR</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %46</span><span>X %27</span><span style="color:#f87171">Dep %28</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.7–1.3</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">28 Şub 2027</div>
   <div class="mc-teams"><span>GENÇLERBİRLİĞİ</span><span class="vs">vs</span><span>İSTANBUL BAŞAKŞEHİR FK</span></div>
   <div class="mc-pick away">İSTANBUL BAŞAKŞEHİR FK</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %23</span><span>X %23</span><span style="color:#f87171">Dep %54</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.1–1.9</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">28 Şub 2027</div>
   <div class="mc-teams"><span>ÇAYKUR RİZESPOR A.Ş.</span><span class="vs">vs</span><span>GÖZTEPE A.Ş.</span></div>
   <div class="mc-pick away">GÖZTEPE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %37</span><span>X %21</span><span style="color:#f87171">Dep %42</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.7–1.8</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">28 Şub 2027</div>
   <div class="mc-teams"><span>CORENDON ALANYASPOR</span><span class="vs">vs</span><span>ARCA ÇORUM FK</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %43</span><span>X %38</span><span style="color:#f87171">Dep %19</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.9–0.5</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">28 Şub 2027</div>
   <div class="mc-teams"><span>EYÜPSPOR</span><span class="vs">vs</span><span>FENERBAHÇE A.Ş.</span></div>
   <div class="mc-pick away">FENERBAHÇE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %23</span><span>X %21</span><span style="color:#f87171">Dep %56</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-2</span><span class="sl-xg">xG 1.2–2.1</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">28 Şub 2027</div>
   <div class="mc-teams"><span>GAZİANTEP FUTBOL KULÜBÜ A.Ş.</span><span class="vs">vs</span><span>KOCAELİSPOR</span></div>
   <div class="mc-pick home">GAZİANTEP FUTBOL KULÜBÜ A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %39</span><span>X %27</span><span style="color:#f87171">Dep %34</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.3–1.2</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div></div>
 <div class="week-header">Hafta 24</div><div class="match-grid"><div class="match-card">
@@ -1321,54 +1740,72 @@ footer a { color:#1e3a5f; }
   <div class="mc-teams"><span>FENERBAHÇE A.Ş.</span><span class="vs">vs</span><span>ÇAYKUR RİZESPOR A.Ş.</span></div>
   <div class="mc-pick home">FENERBAHÇE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %63</span><span>X %17</span><span style="color:#f87171">Dep %20</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">2-1</span><span class="sl-xg">xG 2.5–1.3</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">7 Mar 2027</div>
   <div class="mc-teams"><span>KOCAELİSPOR</span><span class="vs">vs</span><span>BEŞİKTAŞ A.Ş.</span></div>
   <div class="mc-pick away">BEŞİKTAŞ A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %25</span><span>X %26</span><span style="color:#f87171">Dep %49</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.1–1.6</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">7 Mar 2027</div>
   <div class="mc-teams"><span>ARCA ÇORUM FK</span><span class="vs">vs</span><span>GAZİANTEP FUTBOL KULÜBÜ A.Ş.</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %43</span><span>X %34</span><span style="color:#f87171">Dep %22</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 1.0–0.6</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">7 Mar 2027</div>
   <div class="mc-teams"><span>GÖZTEPE A.Ş.</span><span class="vs">vs</span><span>EYÜPSPOR</span></div>
   <div class="mc-pick home">GÖZTEPE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %51</span><span>X %23</span><span style="color:#f87171">Dep %26</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.8–1.3</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">7 Mar 2027</div>
   <div class="mc-teams"><span>ERZURUMSPOR FK</span><span class="vs">vs</span><span>CORENDON ALANYASPOR</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %29</span><span>X %39</span><span style="color:#f87171">Dep %32</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.6–0.7</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">7 Mar 2027</div>
   <div class="mc-teams"><span>AMED SPORTİF FAALİYETLER</span><span class="vs">vs</span><span>GENÇLERBİRLİĞİ</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %37</span><span>X %36</span><span style="color:#f87171">Dep %27</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.8–0.7</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">7 Mar 2027</div>
   <div class="mc-teams"><span>İSTANBUL BAŞAKŞEHİR FK</span><span class="vs">vs</span><span>TÜMOSAN KONYASPOR</span></div>
   <div class="mc-pick home">İSTANBUL BAŞAKŞEHİR FK</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %55</span><span>X %22</span><span style="color:#f87171">Dep %23</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 2.0–1.2</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">7 Mar 2027</div>
   <div class="mc-teams"><span>KASIMPAŞA A.Ş.</span><span class="vs">vs</span><span>GALATASARAY A.Ş.</span></div>
   <div class="mc-pick away">GALATASARAY A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %28</span><span>X %21</span><span style="color:#f87171">Dep %51</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.3–1.8</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">7 Mar 2027</div>
   <div class="mc-teams"><span>TRABZONSPOR A.Ş.</span><span class="vs">vs</span><span>SAMSUNSPOR A.Ş.</span></div>
   <div class="mc-pick home">TRABZONSPOR A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %41</span><span>X %24</span><span style="color:#f87171">Dep %34</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.7–1.5</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div></div>
 <div class="week-header">Hafta 25</div><div class="match-grid"><div class="match-card">
@@ -1376,54 +1813,72 @@ footer a { color:#1e3a5f; }
   <div class="mc-teams"><span>BEŞİKTAŞ A.Ş.</span><span class="vs">vs</span><span>TRABZONSPOR A.Ş.</span></div>
   <div class="mc-pick home">BEŞİKTAŞ A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %46</span><span>X %27</span><span style="color:#f87171">Dep %27</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.7–1.3</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">14 Mar 2027</div>
   <div class="mc-teams"><span>SAMSUNSPOR A.Ş.</span><span class="vs">vs</span><span>KASIMPAŞA A.Ş.</span></div>
   <div class="mc-pick home">SAMSUNSPOR A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %48</span><span>X %22</span><span style="color:#f87171">Dep %30</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.8–1.4</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">14 Mar 2027</div>
   <div class="mc-teams"><span>GAZİANTEP FUTBOL KULÜBÜ A.Ş.</span><span class="vs">vs</span><span>İSTANBUL BAŞAKŞEHİR FK</span></div>
   <div class="mc-pick away">İSTANBUL BAŞAKŞEHİR FK</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %20</span><span>X %21</span><span style="color:#f87171">Dep %58</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.1–2.0</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">14 Mar 2027</div>
   <div class="mc-teams"><span>TÜMOSAN KONYASPOR</span><span class="vs">vs</span><span>AMED SPORTİF FAALİYETLER</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %47</span><span>X %32</span><span style="color:#f87171">Dep %21</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-0</span><span class="sl-xg">xG 1.1–0.6</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">14 Mar 2027</div>
   <div class="mc-teams"><span>GALATASARAY A.Ş.</span><span class="vs">vs</span><span>GENÇLERBİRLİĞİ</span></div>
   <div class="mc-pick home">GALATASARAY A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %58</span><span>X %22</span><span style="color:#f87171">Dep %19</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">2-1</span><span class="sl-xg">xG 2.1–1.1</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">14 Mar 2027</div>
   <div class="mc-teams"><span>ÇAYKUR RİZESPOR A.Ş.</span><span class="vs">vs</span><span>ÇORUM FK</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %46</span><span>X %31</span><span style="color:#f87171">Dep %24</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-0</span><span class="sl-xg">xG 1.1–0.7</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">14 Mar 2027</div>
   <div class="mc-teams"><span>CORENDON ALANYASPOR</span><span class="vs">vs</span><span>FENERBAHÇE A.Ş.</span></div>
   <div class="mc-pick away">FENERBAHÇE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %23</span><span>X %23</span><span style="color:#f87171">Dep %54</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.2–2.0</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">14 Mar 2027</div>
   <div class="mc-teams"><span>GÖZTEPE A.Ş.</span><span class="vs">vs</span><span>KOCAELİSPOR</span></div>
   <div class="mc-pick home">GÖZTEPE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %55</span><span>X %26</span><span style="color:#f87171">Dep %18</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-0</span><span class="sl-xg">xG 1.8–0.9</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">14 Mar 2027</div>
   <div class="mc-teams"><span>EYÜPSPOR</span><span class="vs">vs</span><span>ERZURUMSPOR FK</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %42</span><span>X %37</span><span style="color:#f87171">Dep %22</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.9–0.6</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div></div>
 <div class="week-header">Hafta 26</div><div class="match-grid"><div class="match-card">
@@ -1431,54 +1886,72 @@ footer a { color:#1e3a5f; }
   <div class="mc-teams"><span>KOCAELİSPOR</span><span class="vs">vs</span><span>CORENDON ALANYASPOR</span></div>
   <div class="mc-pick away">CORENDON ALANYASPOR</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %32</span><span>X %26</span><span style="color:#f87171">Dep %42</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-1</span><span class="sl-xg">xG 1.0–1.2</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">21 Mar 2027</div>
   <div class="mc-teams"><span>FENERBAHÇE A.Ş.</span><span class="vs">vs</span><span>GALATASARAY A.Ş.</span></div>
   <div class="mc-pick home">FENERBAHÇE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %48</span><span>X %25</span><span style="color:#f87171">Dep %27</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">2-1</span><span class="sl-xg">xG 2.1–1.6</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">21 Mar 2027</div>
   <div class="mc-teams"><span>ERZURUMSPOR FK</span><span class="vs">vs</span><span>GAZİANTEP FUTBOL KULÜBÜ A.Ş.</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %43</span><span>X %34</span><span style="color:#f87171">Dep %22</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 1.0–0.6</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">21 Mar 2027</div>
   <div class="mc-teams"><span>KASIMPAŞA A.Ş.</span><span class="vs">vs</span><span>EYÜPSPOR</span></div>
   <div class="mc-pick home">KASIMPAŞA A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %39</span><span>X %26</span><span style="color:#f87171">Dep %35</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.4–1.3</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">21 Mar 2027</div>
   <div class="mc-teams"><span>TRABZONSPOR A.Ş.</span><span class="vs">vs</span><span>ÇAYKUR RİZESPOR A.Ş.</span></div>
   <div class="mc-pick home">TRABZONSPOR A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %43</span><span>X %24</span><span style="color:#f87171">Dep %34</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.7–1.5</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">21 Mar 2027</div>
   <div class="mc-teams"><span>ARCA ÇORUM FK</span><span class="vs">vs</span><span>GÖZTEPE A.Ş.</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %25</span><span>X %32</span><span style="color:#f87171">Dep %43</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-1</span><span class="sl-xg">xG 0.8–1.1</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">21 Mar 2027</div>
   <div class="mc-teams"><span>GENÇLERBİRLİĞİ</span><span class="vs">vs</span><span>TÜMOSAN KONYASPOR</span></div>
   <div class="mc-pick away">TÜMOSAN KONYASPOR</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %34</span><span>X %27</span><span style="color:#f87171">Dep %40</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.4–1.6</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">21 Mar 2027</div>
   <div class="mc-teams"><span>İSTANBUL BAŞAKŞEHİR FK</span><span class="vs">vs</span><span>BEŞİKTAŞ A.Ş.</span></div>
   <div class="mc-pick home">İSTANBUL BAŞAKŞEHİR FK</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %50</span><span>X %22</span><span style="color:#f87171">Dep %28</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.9–1.4</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">21 Mar 2027</div>
   <div class="mc-teams"><span>AMED SPORTİF FAALİYETLER</span><span class="vs">vs</span><span>SAMSUNSPOR A.Ş.</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %32</span><span>X %31</span><span style="color:#f87171">Dep %36</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-1</span><span class="sl-xg">xG 0.9–1.0</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div></div>
 <div class="week-header">Hafta 27</div><div class="match-grid"><div class="match-card">
@@ -1486,54 +1959,72 @@ footer a { color:#1e3a5f; }
   <div class="mc-teams"><span>BEŞİKTAŞ A.Ş.</span><span class="vs">vs</span><span>KASIMPAŞA A.Ş.</span></div>
   <div class="mc-pick home">BEŞİKTAŞ A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %54</span><span>X %21</span><span style="color:#f87171">Dep %24</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.9–1.2</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">4 Nis 2027</div>
   <div class="mc-teams"><span>SAMSUNSPOR A.Ş.</span><span class="vs">vs</span><span>İSTANBUL BAŞAKŞEHİR FK</span></div>
   <div class="mc-pick away">İSTANBUL BAŞAKŞEHİR FK</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %30</span><span>X %22</span><span style="color:#f87171">Dep %48</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.5–1.9</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">4 Nis 2027</div>
   <div class="mc-teams"><span>GAZİANTEP FUTBOL KULÜBÜ A.Ş.</span><span class="vs">vs</span><span>TRABZONSPOR A.Ş.</span></div>
   <div class="mc-pick away">TRABZONSPOR A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %30</span><span>X %27</span><span style="color:#f87171">Dep %43</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.3–1.6</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">4 Nis 2027</div>
   <div class="mc-teams"><span>EYÜPSPOR</span><span class="vs">vs</span><span>AMED SPORTİF FAALİYETLER</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %42</span><span>X %37</span><span style="color:#f87171">Dep %22</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.9–0.6</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">4 Nis 2027</div>
   <div class="mc-teams"><span>CORENDON ALANYASPOR</span><span class="vs">vs</span><span>GENÇLERBİRLİĞİ</span></div>
   <div class="mc-pick home">CORENDON ALANYASPOR</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %45</span><span>X %28</span><span style="color:#f87171">Dep %27</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.5–1.1</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">4 Nis 2027</div>
   <div class="mc-teams"><span>GALATASARAY A.Ş.</span><span class="vs">vs</span><span>TÜMOSAN KONYASPOR</span></div>
   <div class="mc-pick home">GALATASARAY A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %53</span><span>X %22</span><span style="color:#f87171">Dep %26</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">2-1</span><span class="sl-xg">xG 2.0–1.4</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">4 Nis 2027</div>
   <div class="mc-teams"><span>GÖZTEPE A.Ş.</span><span class="vs">vs</span><span>FENERBAHÇE A.Ş.</span></div>
   <div class="mc-pick away">FENERBAHÇE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %29</span><span>X %25</span><span style="color:#f87171">Dep %46</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-2</span><span class="sl-xg">xG 1.6–2.1</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">4 Nis 2027</div>
   <div class="mc-teams"><span>ÇAYKUR RİZESPOR A.Ş.</span><span class="vs">vs</span><span>KOCAELİSPOR</span></div>
   <div class="mc-pick home">ÇAYKUR RİZESPOR A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %50</span><span>X %25</span><span style="color:#f87171">Dep %25</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.7–1.1</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">4 Nis 2027</div>
   <div class="mc-teams"><span>ARCA ÇORUM FK</span><span class="vs">vs</span><span>ERZURUMSPOR FK</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %14</span><span>X %74</span><span style="color:#f87171">Dep %12</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.2–0.1</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div></div>
 <div class="week-header">Hafta 28</div><div class="match-grid"><div class="match-card">
@@ -1541,54 +2032,72 @@ footer a { color:#1e3a5f; }
   <div class="mc-teams"><span>KOCAELİSPOR</span><span class="vs">vs</span><span>EYÜPSPOR</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %32</span><span>X %28</span><span style="color:#f87171">Dep %39</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.1–1.2</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">11 Nis 2027</div>
   <div class="mc-teams"><span>FENERBAHÇE A.Ş.</span><span class="vs">vs</span><span>ARCA ÇORUM FK</span></div>
   <div class="mc-pick home">FENERBAHÇE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %69</span><span>X %22</span><span style="color:#f87171">Dep %8</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-0</span><span class="sl-xg">xG 1.7–0.4</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">11 Nis 2027</div>
   <div class="mc-teams"><span>KASIMPAŞA A.Ş.</span><span class="vs">vs</span><span>GAZİANTEP FUTBOL KULÜBÜ A.Ş.</span></div>
   <div class="mc-pick home">KASIMPAŞA A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %48</span><span>X %24</span><span style="color:#f87171">Dep %28</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.6–1.2</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">11 Nis 2027</div>
   <div class="mc-teams"><span>TRABZONSPOR A.Ş.</span><span class="vs">vs</span><span>CORENDON ALANYASPOR</span></div>
   <div class="mc-pick home">TRABZONSPOR A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %42</span><span>X %26</span><span style="color:#f87171">Dep %32</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.4–1.2</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">11 Nis 2027</div>
   <div class="mc-teams"><span>ERZURUMSPOR FK</span><span class="vs">vs</span><span>ÇAYKUR RİZESPOR A.Ş.</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %32</span><span>X %32</span><span style="color:#f87171">Dep %36</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.9–1.0</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">11 Nis 2027</div>
   <div class="mc-teams"><span>İSTANBUL BAŞAKŞEHİR FK</span><span class="vs">vs</span><span>GÖZTEPE A.Ş.</span></div>
   <div class="mc-pick home">İSTANBUL BAŞAKŞEHİR FK</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %50</span><span>X %22</span><span style="color:#f87171">Dep %28</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.9–1.4</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">11 Nis 2027</div>
   <div class="mc-teams"><span>AMED SPORTİF FAALİYETLER</span><span class="vs">vs</span><span>GALATASARAY A.Ş.</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %20</span><span>X %31</span><span style="color:#f87171">Dep %49</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-1</span><span class="sl-xg">xG 0.7–1.2</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">11 Nis 2027</div>
   <div class="mc-teams"><span>GENÇLERBİRLİĞİ</span><span class="vs">vs</span><span>BEŞİKTAŞ A.Ş.</span></div>
   <div class="mc-pick away">BEŞİKTAŞ A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %30</span><span>X %22</span><span style="color:#f87171">Dep %48</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.4–1.8</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">11 Nis 2027</div>
   <div class="mc-teams"><span>TÜMOSAN KONYASPOR</span><span class="vs">vs</span><span>SAMSUNSPOR A.Ş.</span></div>
   <div class="mc-pick home">TÜMOSAN KONYASPOR</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %41</span><span>X %26</span><span style="color:#f87171">Dep %33</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.8–1.6</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div></div>
 <div class="week-header">Hafta 29</div><div class="match-grid"><div class="match-card">
@@ -1596,54 +2105,72 @@ footer a { color:#1e3a5f; }
   <div class="mc-teams"><span>BEŞİKTAŞ A.Ş.</span><span class="vs">vs</span><span>TÜMOSAN KONYASPOR</span></div>
   <div class="mc-pick home">BEŞİKTAŞ A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %49</span><span>X %22</span><span style="color:#f87171">Dep %30</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.9–1.4</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">18 Nis 2027</div>
   <div class="mc-teams"><span>SAMSUNSPOR A.Ş.</span><span class="vs">vs</span><span>GALATASARAY A.Ş.</span></div>
   <div class="mc-pick away">GALATASARAY A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %33</span><span>X %22</span><span style="color:#f87171">Dep %46</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.6–1.9</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">18 Nis 2027</div>
   <div class="mc-teams"><span>FENERBAHÇE A.Ş.</span><span class="vs">vs</span><span>KOCAELİSPOR</span></div>
   <div class="mc-pick home">FENERBAHÇE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %71</span><span>X %18</span><span style="color:#f87171">Dep %11</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">2-0</span><span class="sl-xg">xG 2.2–0.8</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">18 Nis 2027</div>
   <div class="mc-teams"><span>EYÜPSPOR</span><span class="vs">vs</span><span>TRABZONSPOR A.Ş.</span></div>
   <div class="mc-pick home">EYÜPSPOR</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %39</span><span>X %26</span><span style="color:#f87171">Dep %35</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.4–1.3</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">18 Nis 2027</div>
   <div class="mc-teams"><span>CORENDON ALANYASPOR</span><span class="vs">vs</span><span>KASIMPAŞA A.Ş.</span></div>
   <div class="mc-pick home">CORENDON ALANYASPOR</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %47</span><span>X %22</span><span style="color:#f87171">Dep %30</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.5–1.1</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">18 Nis 2027</div>
   <div class="mc-teams"><span>ARCA ÇORUM FK</span><span class="vs">vs</span><span>İSTANBUL BAŞAKŞEHİR FK</span></div>
   <div class="mc-pick away">İSTANBUL BAŞAKŞEHİR FK</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %16</span><span>X %32</span><span style="color:#f87171">Dep %52</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-1</span><span class="sl-xg">xG 0.5–1.1</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">18 Nis 2027</div>
   <div class="mc-teams"><span>ÇAYKUR RİZESPOR A.Ş.</span><span class="vs">vs</span><span>AMED SPORTİF FAALİYETLER</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %46</span><span>X %31</span><span style="color:#f87171">Dep %24</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-0</span><span class="sl-xg">xG 1.1–0.7</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">18 Nis 2027</div>
   <div class="mc-teams"><span>GAZİANTEP FUTBOL KULÜBÜ A.Ş.</span><span class="vs">vs</span><span>GENÇLERBİRLİĞİ</span></div>
   <div class="mc-pick away">GENÇLERBİRLİĞİ</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %37</span><span>X %25</span><span style="color:#f87171">Dep %38</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.4–1.5</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">18 Nis 2027</div>
   <div class="mc-teams"><span>GÖZTEPE A.Ş.</span><span class="vs">vs</span><span>ERZURUMSPOR FK</span></div>
   <div class="mc-pick home">GÖZTEPE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %54</span><span>X %30</span><span style="color:#f87171">Dep %17</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-0</span><span class="sl-xg">xG 1.3–0.6</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div></div>
 <div class="week-header">Hafta 30</div><div class="match-grid"><div class="match-card">
@@ -1651,54 +2178,72 @@ footer a { color:#1e3a5f; }
   <div class="mc-teams"><span>KOCAELİSPOR</span><span class="vs">vs</span><span>ARCA ÇORUM FK</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %28</span><span>X %46</span><span style="color:#f87171">Dep %26</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.5–0.5</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">25 Nis 2027</div>
   <div class="mc-teams"><span>AMED SPORTİF FAALİYETLER</span><span class="vs">vs</span><span>GAZİANTEP FUTBOL KULÜBÜ A.Ş.</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %43</span><span>X %34</span><span style="color:#f87171">Dep %22</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 1.0–0.6</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">25 Nis 2027</div>
   <div class="mc-teams"><span>İSTANBUL BAŞAKŞEHİR FK</span><span class="vs">vs</span><span>EYÜPSPOR</span></div>
   <div class="mc-pick home">İSTANBUL BAŞAKŞEHİR FK</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %59</span><span>X %22</span><span style="color:#f87171">Dep %19</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.9–1.0</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">25 Nis 2027</div>
   <div class="mc-teams"><span>TÜMOSAN KONYASPOR</span><span class="vs">vs</span><span>CORENDON ALANYASPOR</span></div>
   <div class="mc-pick home">TÜMOSAN KONYASPOR</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %45</span><span>X %22</span><span style="color:#f87171">Dep %33</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.6–1.3</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">25 Nis 2027</div>
   <div class="mc-teams"><span>KASIMPAŞA A.Ş.</span><span class="vs">vs</span><span>ÇAYKUR RİZESPOR A.Ş.</span></div>
   <div class="mc-pick away">ÇAYKUR RİZESPOR A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %38</span><span>X %24</span><span style="color:#f87171">Dep %38</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.6–1.6</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">25 Nis 2027</div>
   <div class="mc-teams"><span>TRABZONSPOR A.Ş.</span><span class="vs">vs</span><span>GÖZTEPE A.Ş.</span></div>
   <div class="mc-pick away">GÖZTEPE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %36</span><span>X %25</span><span style="color:#f87171">Dep %40</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.5–1.6</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">25 Nis 2027</div>
   <div class="mc-teams"><span>ERZURUMSPOR FK</span><span class="vs">vs</span><span>FENERBAHÇE A.Ş.</span></div>
   <div class="mc-pick away">FENERBAHÇE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %14</span><span>X %26</span><span style="color:#f87171">Dep %59</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-1</span><span class="sl-xg">xG 0.6–1.5</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">25 Nis 2027</div>
   <div class="mc-teams"><span>GALATASARAY A.Ş.</span><span class="vs">vs</span><span>BEŞİKTAŞ A.Ş.</span></div>
   <div class="mc-pick home">GALATASARAY A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %48</span><span>X %21</span><span style="color:#f87171">Dep %31</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.9–1.5</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">25 Nis 2027</div>
   <div class="mc-teams"><span>GENÇLERBİRLİĞİ</span><span class="vs">vs</span><span>SAMSUNSPOR A.Ş.</span></div>
   <div class="mc-pick away">SAMSUNSPOR A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %34</span><span>X %27</span><span style="color:#f87171">Dep %39</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.6–1.7</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div></div>
 <div class="week-header">Hafta 31</div><div class="match-grid"><div class="match-card">
@@ -1706,54 +2251,72 @@ footer a { color:#1e3a5f; }
   <div class="mc-teams"><span>FENERBAHÇE A.Ş.</span><span class="vs">vs</span><span>İSTANBUL BAŞAKŞEHİR FK</span></div>
   <div class="mc-pick home">FENERBAHÇE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %48</span><span>X %22</span><span style="color:#f87171">Dep %30</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 2.0–1.5</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">2 May 2027</div>
   <div class="mc-teams"><span>SAMSUNSPOR A.Ş.</span><span class="vs">vs</span><span>BEŞİKTAŞ A.Ş.</span></div>
   <div class="mc-pick away">BEŞİKTAŞ A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %35</span><span>X %26</span><span style="color:#f87171">Dep %39</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.7–1.8</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">2 May 2027</div>
   <div class="mc-teams"><span>KOCAELİSPOR</span><span class="vs">vs</span><span>ERZURUMSPOR FK</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %28</span><span>X %46</span><span style="color:#f87171">Dep %26</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.5–0.5</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">2 May 2027</div>
   <div class="mc-teams"><span>ARCA ÇORUM FK</span><span class="vs">vs</span><span>TRABZONSPOR A.Ş.</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %30</span><span>X %38</span><span style="color:#f87171">Dep %32</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.7–0.7</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">2 May 2027</div>
   <div class="mc-teams"><span>GÖZTEPE A.Ş.</span><span class="vs">vs</span><span>KASIMPAŞA A.Ş.</span></div>
   <div class="mc-pick home">GÖZTEPE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %54</span><span>X %21</span><span style="color:#f87171">Dep %25</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.9–1.2</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">2 May 2027</div>
   <div class="mc-teams"><span>CORENDON ALANYASPOR</span><span class="vs">vs</span><span>AMED SPORTİF FAALİYETLER</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %43</span><span>X %38</span><span style="color:#f87171">Dep %19</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.9–0.5</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">2 May 2027</div>
   <div class="mc-teams"><span>EYÜPSPOR</span><span class="vs">vs</span><span>GENÇLERBİRLİĞİ</span></div>
   <div class="mc-pick home">EYÜPSPOR</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %45</span><span>X %25</span><span style="color:#f87171">Dep %30</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.6–1.2</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">2 May 2027</div>
   <div class="mc-teams"><span>GAZİANTEP FUTBOL KULÜBÜ A.Ş.</span><span class="vs">vs</span><span>TÜMOSAN KONYASPOR</span></div>
   <div class="mc-pick away">TÜMOSAN KONYASPOR</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %31</span><span>X %24</span><span style="color:#f87171">Dep %45</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.4–1.7</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">2 May 2027</div>
   <div class="mc-teams"><span>ÇAYKUR RİZESPOR A.Ş.</span><span class="vs">vs</span><span>GALATASARAY A.Ş.</span></div>
   <div class="mc-pick away">GALATASARAY A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %32</span><span>X %22</span><span style="color:#f87171">Dep %47</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.6–1.9</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div></div>
 <div class="week-header">Hafta 32</div><div class="match-grid"><div class="match-card">
@@ -1761,54 +2324,72 @@ footer a { color:#1e3a5f; }
   <div class="mc-teams"><span>BEŞİKTAŞ A.Ş.</span><span class="vs">vs</span><span>GAZİANTEP FUTBOL KULÜBÜ A.Ş.</span></div>
   <div class="mc-pick home">BEŞİKTAŞ A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %58</span><span>X %22</span><span style="color:#f87171">Dep %20</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">2-1</span><span class="sl-xg">xG 2.1–1.1</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">9 May 2027</div>
   <div class="mc-teams"><span>SAMSUNSPOR A.Ş.</span><span class="vs">vs</span><span>CORENDON ALANYASPOR</span></div>
   <div class="mc-pick home">SAMSUNSPOR A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %43</span><span>X %24</span><span style="color:#f87171">Dep %33</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.7–1.4</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">9 May 2027</div>
   <div class="mc-teams"><span>GALATASARAY A.Ş.</span><span class="vs">vs</span><span>EYÜPSPOR</span></div>
   <div class="mc-pick home">GALATASARAY A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %56</span><span>X %22</span><span style="color:#f87171">Dep %22</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 2.0–1.2</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">9 May 2027</div>
   <div class="mc-teams"><span>İSTANBUL BAŞAKŞEHİR FK</span><span class="vs">vs</span><span>ÇAYKUR RİZESPOR A.Ş.</span></div>
   <div class="mc-pick home">İSTANBUL BAŞAKŞEHİR FK</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %57</span><span>X %21</span><span style="color:#f87171">Dep %22</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">2-1</span><span class="sl-xg">xG 2.1–1.3</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">9 May 2027</div>
   <div class="mc-teams"><span>TÜMOSAN KONYASPOR</span><span class="vs">vs</span><span>GÖZTEPE A.Ş.</span></div>
   <div class="mc-pick away">GÖZTEPE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %37</span><span>X %24</span><span style="color:#f87171">Dep %39</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.6–1.7</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">9 May 2027</div>
   <div class="mc-teams"><span>AMED SPORTİF FAALİYETLER</span><span class="vs">vs</span><span>ARCA ÇORUM FK</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %14</span><span>X %74</span><span style="color:#f87171">Dep %12</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.2–0.1</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">9 May 2027</div>
   <div class="mc-teams"><span>TRABZONSPOR A.Ş.</span><span class="vs">vs</span><span>FENERBAHÇE A.Ş.</span></div>
   <div class="mc-pick away">FENERBAHÇE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %24</span><span>X %24</span><span style="color:#f87171">Dep %52</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.3–2.0</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">9 May 2027</div>
   <div class="mc-teams"><span>GENÇLERBİRLİĞİ</span><span class="vs">vs</span><span>KOCAELİSPOR</span></div>
   <div class="mc-pick home">GENÇLERBİRLİĞİ</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %44</span><span>X %27</span><span style="color:#f87171">Dep %28</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.4–1.0</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">9 May 2027</div>
   <div class="mc-teams"><span>KASIMPAŞA A.Ş.</span><span class="vs">vs</span><span>ERZURUMSPOR FK</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %39</span><span>X %38</span><span style="color:#f87171">Dep %24</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.8–0.6</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div></div>
 <div class="week-header">Hafta 33</div><div class="match-grid"><div class="match-card">
@@ -1816,54 +2397,72 @@ footer a { color:#1e3a5f; }
   <div class="mc-teams"><span>KOCAELİSPOR</span><span class="vs">vs</span><span>TRABZONSPOR A.Ş.</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %30</span><span>X %28</span><span style="color:#f87171">Dep %42</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.0–1.3</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">16 May 2027</div>
   <div class="mc-teams"><span>FENERBAHÇE A.Ş.</span><span class="vs">vs</span><span>KASIMPAŞA A.Ş.</span></div>
   <div class="mc-pick home">FENERBAHÇE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %67</span><span>X %17</span><span style="color:#f87171">Dep %16</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">2-1</span><span class="sl-xg">xG 2.3–1.0</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">16 May 2027</div>
   <div class="mc-teams"><span>ERZURUMSPOR FK</span><span class="vs">vs</span><span>İSTANBUL BAŞAKŞEHİR FK</span></div>
   <div class="mc-pick away">İSTANBUL BAŞAKŞEHİR FK</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %16</span><span>X %32</span><span style="color:#f87171">Dep %52</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-1</span><span class="sl-xg">xG 0.5–1.1</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">16 May 2027</div>
   <div class="mc-teams"><span>GÖZTEPE A.Ş.</span><span class="vs">vs</span><span>AMED SPORTİF FAALİYETLER</span></div>
   <div class="mc-pick home">GÖZTEPE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %54</span><span>X %30</span><span style="color:#f87171">Dep %17</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-0</span><span class="sl-xg">xG 1.3–0.6</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">16 May 2027</div>
   <div class="mc-teams"><span>ARCA ÇORUM FK</span><span class="vs">vs</span><span>GENÇLERBİRLİĞİ</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %37</span><span>X %36</span><span style="color:#f87171">Dep %27</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.8–0.7</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">16 May 2027</div>
   <div class="mc-teams"><span>EYÜPSPOR</span><span class="vs">vs</span><span>TÜMOSAN KONYASPOR</span></div>
   <div class="mc-pick home">EYÜPSPOR</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %38</span><span>X %24</span><span style="color:#f87171">Dep %37</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.5–1.5</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">16 May 2027</div>
   <div class="mc-teams"><span>CORENDON ALANYASPOR</span><span class="vs">vs</span><span>GALATASARAY A.Ş.</span></div>
   <div class="mc-pick away">GALATASARAY A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %31</span><span>X %20</span><span style="color:#f87171">Dep %48</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.3–1.7</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">16 May 2027</div>
   <div class="mc-teams"><span>ÇAYKUR RİZESPOR A.Ş.</span><span class="vs">vs</span><span>BEŞİKTAŞ A.Ş.</span></div>
   <div class="mc-pick away">BEŞİKTAŞ A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %35</span><span>X %24</span><span style="color:#f87171">Dep %40</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.7–1.8</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">16 May 2027</div>
   <div class="mc-teams"><span>GAZİANTEP FUTBOL KULÜBÜ A.Ş.</span><span class="vs">vs</span><span>SAMSUNSPOR A.Ş.</span></div>
   <div class="mc-pick away">SAMSUNSPOR A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %31</span><span>X %25</span><span style="color:#f87171">Dep %44</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.5–1.9</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div></div>
 <div class="week-header">Hafta 34</div><div class="match-grid"><div class="match-card">
@@ -1871,54 +2470,72 @@ footer a { color:#1e3a5f; }
   <div class="mc-teams"><span>SAMSUNSPOR A.Ş.</span><span class="vs">vs</span><span>EYÜPSPOR</span></div>
   <div class="mc-pick home">SAMSUNSPOR A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %45</span><span>X %23</span><span style="color:#f87171">Dep %32</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.8–1.4</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">23 May 2027</div>
   <div class="mc-teams"><span>BEŞİKTAŞ A.Ş.</span><span class="vs">vs</span><span>GÖZTEPE A.Ş.</span></div>
   <div class="mc-pick home">BEŞİKTAŞ A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %45</span><span>X %19</span><span style="color:#f87171">Dep %36</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.8–1.6</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">23 May 2027</div>
   <div class="mc-teams"><span>GALATASARAY A.Ş.</span><span class="vs">vs</span><span>GAZİANTEP FUTBOL KULÜBÜ A.Ş.</span></div>
   <div class="mc-pick home">GALATASARAY A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %65</span><span>X %18</span><span style="color:#f87171">Dep %17</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">2-1</span><span class="sl-xg">xG 2.2–1.1</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">23 May 2027</div>
   <div class="mc-teams"><span>İSTANBUL BAŞAKŞEHİR FK</span><span class="vs">vs</span><span>CORENDON ALANYASPOR</span></div>
   <div class="mc-pick home">İSTANBUL BAŞAKŞEHİR FK</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %57</span><span>X %23</span><span style="color:#f87171">Dep %20</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-0</span><span class="sl-xg">xG 1.8–1.0</span></div>
+  
   <div class="mc-conf">Güven: HIGH</div>
 </div><div class="match-card">
   <div class="mc-date">23 May 2027</div>
   <div class="mc-teams"><span>GENÇLERBİRLİĞİ</span><span class="vs">vs</span><span>ÇAYKUR RİZESPOR A.Ş.</span></div>
   <div class="mc-pick away">ÇAYKUR RİZESPOR A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %37</span><span>X %22</span><span style="color:#f87171">Dep %41</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-1</span><span class="sl-xg">xG 1.6–1.6</span></div>
+  
   <div class="mc-conf">Güven: LOW</div>
 </div><div class="match-card">
   <div class="mc-date">23 May 2027</div>
   <div class="mc-teams"><span>TÜMOSAN KONYASPOR</span><span class="vs">vs</span><span>ARCA ÇORUM FK</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %47</span><span>X %32</span><span style="color:#f87171">Dep %21</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-0</span><span class="sl-xg">xG 1.1–0.6</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">23 May 2027</div>
   <div class="mc-teams"><span>AMED SPORTİF FAALİYETLER</span><span class="vs">vs</span><span>FENERBAHÇE A.Ş.</span></div>
   <div class="mc-pick away">FENERBAHÇE A.Ş.</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %14</span><span>X %26</span><span style="color:#f87171">Dep %59</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-1</span><span class="sl-xg">xG 0.6–1.5</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div><div class="match-card">
   <div class="mc-date">23 May 2027</div>
   <div class="mc-teams"><span>KASIMPAŞA A.Ş.</span><span class="vs">vs</span><span>KOCAELİSPOR</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %44</span><span>X %30</span><span style="color:#f87171">Dep %26</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">1-0</span><span class="sl-xg">xG 1.3–0.9</span></div>
+  
   <div class="mc-conf">Güven: MEDIUM</div>
 </div><div class="match-card">
   <div class="mc-date">23 May 2027</div>
   <div class="mc-teams"><span>TRABZONSPOR A.Ş.</span><span class="vs">vs</span><span>ERZURUMSPOR FK</span></div>
   <div class="mc-pick draw">Beraberlik</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %43</span><span>X %37</span><span style="color:#f87171">Dep %20</span></div>
+  <div class="mc-scoreline">Olası skor <span class="sl-score">0-0</span><span class="sl-xg">xG 0.9–0.5</span></div>
+  
   <div class="mc-conf">Güven: LOW_NEW_TEAM</div>
 </div></div></div>
 <footer>metric11 &middot; <a href="/">metric11.com</a></footer>

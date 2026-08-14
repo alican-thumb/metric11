@@ -231,6 +231,11 @@ nav a:hover, nav a.active { background:#0f2030; color:white; }
 .mc-pick.draw { background:rgba(148,163,184,.14); color:#94a3b8; }
 .mc-pick.away { background:rgba(248,113,113,.1); color:#f87171; }
 .mc-probs { display:flex; gap:8px; font-size:11px; color:var(--muted); }
+.mc-scoreline { display:flex; align-items:center; gap:8px; font-size:11px; color:#cbd5e1; }
+.mc-scoreline .sl-score { font-weight:800; color:#fff; background:rgba(205,233,78,.14); border:1px solid rgba(205,233,78,.3); border-radius:5px; padding:1px 7px; font-size:12px; }
+.mc-scoreline .sl-xg { color:var(--muted); }
+.mc-ref { font-size:10px; color:#94a3b8; display:flex; align-items:center; gap:5px; }
+.mc-ref .ref-flag { background:rgba(245,158,11,.14); color:#f59e0b; border-radius:4px; padding:0 5px; font-weight:700; }
 .mc-conf { font-size:10px; color:#475569; }
 footer { text-align:center; padding:32px 16px 24px; color:#1e3a5f; font-size:11px; border-top:1px solid var(--border); margin-top:32px; }
 footer a { color:#1e3a5f; }
@@ -249,11 +254,34 @@ def _match_card(m: dict) -> str:
     pick_text = labels[pick] if pick != "home" and pick != "away" else (m["home_team"] if pick == "home" else m["away_team"])
     if pick == "draw":
         pick_text = "Beraberlik"
+    # Kesin skor tahmini + beklenen gol (xG) — model zaten üretiyor, kartta gösterilir.
+    rec = m.get("recommended_scoreline") or {}
+    score = rec.get("score")
+    xhg, xag = m.get("expected_home_goals"), m.get("expected_away_goals")
+    scoreline_html = ""
+    if score:
+        xg_part = (
+            f'<span class="sl-xg">xG {xhg:.1f}–{xag:.1f}</span>'
+            if isinstance(xhg, (int, float)) and isinstance(xag, (int, float)) else ""
+        )
+        scoreline_html = (
+            f'<div class="mc-scoreline">Olası skor <span class="sl-score">{escape(str(score))}</span>{xg_part}</div>'
+        )
+    # Hakem: model, hakemin geçmiş kart/gol eğilimini beklentiye katıyor. Atama yapıldıysa göster.
+    ref_cards = m.get("referee_cards_per_match")
+    ref_name = m.get("main_referee")
+    ref_html = ""
+    if isinstance(ref_cards, (int, float)):
+        flag = '<span class="ref-flag">yüksek kart</span>' if ref_cards > 5.5 else ""
+        name_part = f'{escape(str(ref_name))} · ' if ref_name else ""
+        ref_html = f'<div class="mc-ref">🧑‍⚖️ {name_part}{ref_cards:.1f} kart/maç {flag}</div>'
     return f"""<div class="match-card">
   <div class="mc-date">{escape(_fmt_date(m['date_time']))}</div>
   <div class="mc-teams"><span>{escape(m['home_team'])}</span><span class="vs">vs</span><span>{escape(m['away_team'])}</span></div>
   <div class="mc-pick {pick}">{escape(pick_text)}</div>
   <div class="mc-probs"><span style="color:#4ade80">Ev %{round(m['home_win_probability']*100)}</span><span>X %{round(m['draw_probability']*100)}</span><span style="color:#f87171">Dep %{round(m['away_win_probability']*100)}</span></div>
+  {scoreline_html}
+  {ref_html}
   <div class="mc-conf">Güven: {escape(m['data_confidence'])}</div>
 </div>"""
 

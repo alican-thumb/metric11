@@ -69,6 +69,9 @@ def build_payload() -> dict:
             "draw_probability": m.get("draw_probability"),
             "away_win_probability": m.get("away_win_probability"),
             "data_confidence": m.get("data_confidence"),
+            "recommended_scoreline": (m.get("recommended_scoreline") or {}).get("score"),
+            "expected_home_goals": m.get("expected_home_goals"),
+            "expected_away_goals": m.get("expected_away_goals"),
         })
 
     last_week_summary = None
@@ -124,10 +127,24 @@ def render_hero_html(payload: dict | None = None) -> str:
                 f'<span style="color:#627067;">X %{round((m.get("draw_probability") or 0)*100)}</span> · '
                 f'<span style="color:#bd2936;">Dep %{round((m.get("away_win_probability") or 0)*100)}</span>'
             )
+            score = m.get("recommended_scoreline")
+            xhg, xag = m.get("expected_home_goals"), m.get("expected_away_goals")
+            score_line = ""
+            if score:
+                xg_part = (
+                    f' · xG {xhg:.1f}–{xag:.1f}'
+                    if isinstance(xhg, (int, float)) and isinstance(xag, (int, float)) else ""
+                )
+                score_line = (
+                    f'<div style="font-size:11px;color:#627067;margin-top:3px;">Olası skor '
+                    f'<span style="font-weight:800;color:#132018;">{escape(str(score))}</span>'
+                    f'<span style="color:#8fa89a;">{xg_part}</span></div>'
+                )
             right = (
                 f'<span style="display:inline-block;font-size:12px;font-weight:700;color:#fff;'
                 f'background:{color};padding:3px 9px;border-radius:5px;">{escape(m.get("pick_text") or "")}</span>'
                 f'<div style="font-size:11px;color:#627067;margin-top:4px;">{probs}</div>'
+                f'{score_line}'
             )
         rows.append(
             f'<div style="display:flex;justify-content:space-between;align-items:center;gap:12px;'

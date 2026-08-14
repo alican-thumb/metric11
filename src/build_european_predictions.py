@@ -41,6 +41,7 @@ _STAGE_TR = {
     "3RD_QUALIFYING_ROUND":  "3. Nitelendirme",
     "4TH_QUALIFYING_ROUND":  "4. Nitelendirme",
     "PLAY_OFF_ROUND":        "Play-off",
+    "PLAYOFF_ROUND":         "Play-off",
     "LEAGUE_PHASE":          "Lig Fazı",
     "LEAGUE_STAGE":          "Lig Aşaması",
     "GROUP_STAGE":           "Grup Aşaması",
@@ -418,26 +419,88 @@ def _known_fixture_card(fx: dict, comp_color: str, now: datetime) -> str:
     )
 
 
-def _build_known_fixtures_section(fixtures: list[dict]) -> str:
-    """football-data.org nitelendirme fikstürünü kapsamadığı için haber kaynaklarından
-    doğrulanmış gerçek maç bilgisini (tarih/saat/mekan) gösterir. Bu rakipler için
-    istatistiksel veri tabanımız olmadığından skor/olasılık tahmini ÜRETİLMEZ."""
-    if not fixtures:
-        return ""
-    now = datetime.now(_TZ_TR)
-    cards = "\n".join(
-        _known_fixture_card(fx, _COMP_COLOR.get(fx.get("competition", ""), "#60a5fa"), now)
-        for fx in sorted(fixtures, key=lambda f: f.get("kickoff_local", ""))
-    )
+def _load_european_results() -> list[dict]:
+    """Oynanmış Türk kulübü Avrupa eleme/playoff maçlarının gerçek skorları."""
+    path = DATA_DIR / "manual" / "european_results_2026_2027.json"
+    if not path.exists():
+        return []
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return []
+    return payload.get("results", [])
+
+
+def _result_card(r: dict, comp_color: str) -> str:
+    """Oynanmış maç kartı — gerçek skorla."""
+    date_str = r.get("date", "")
+    try:
+        dt = datetime.strptime(date_str, "%Y-%m-%d")
+        date_lbl = f"{dt.day} {_TR_MONTHS[dt.month]}"
+    except (ValueError, IndexError):
+        date_lbl = date_str
+    stage = _STAGE_TR.get(r.get("stage", ""), r.get("stage", ""))
+    leg = r.get("leg")
+    leg_lbl = f" · {leg}. maç" if leg else ""
+    hs, as_ = r.get("home_score"), r.get("away_score")
+    home, away = r.get("home_team", ""), r.get("away_team", "")
+    # Kazananı vurgula
+    home_w = isinstance(hs, int) and isinstance(as_, int) and hs > as_
+    away_w = isinstance(hs, int) and isinstance(as_, int) and as_ > hs
+    home_style = ' style="font-weight:800"' if home_w else ""
+    away_style = ' style="font-weight:800"' if away_w else ""
     return (
-        '<div class="today-wrap">'
-        '<div class="today-lbl"><span class="today-dot"></span>📋 Bilinen Eleme Maçları (haber kaynaklı)</div>'
-        '<div class="mc-tbd-note" style="margin-bottom:12px">football-data.org nitelendirme turu fikstürünü kapsamıyor. '
-        'Aşağıdaki maç bilgisi (tarih/saat/mekan) haber kaynaklarından doğrulanmıştır — '
-        'rakipler hakkında istatistiksel veri olmadığı için skor/olasılık tahmini üretilmemiştir.</div>'
-        f'<div class="today-grid">{cards}</div>'
-        '</div>'
+        f'<div class="match-card">'
+        f'<div class="mc-meta"><span class="mc-date">{escape(date_lbl)} · {escape(stage)}{escape(leg_lbl)}</span></div>'
+        f'<div class="mc-teams">'
+        f'<div class="mc-team"{home_style}>{escape(home)}</div>'
+        f'<div class="mc-score"><div class="tbd-score" style="color:#e2e8f0;font-weight:800">{hs}-{as_}</div></div>'
+        f'<div class="mc-team away"{away_style}>{escape(away)}</div>'
+        f'</div>'
+        f'</div>'
     )
+
+
+def _build_known_fixtures_section(fixtures: list[dict]) -> str:
+    """İki alt bölüm üretir: (1) Yaklaşan Maçlar — haber kaynaklı doğrulanmış gerçek
+    fikstür (tarih/saat/mekan; skor/olasılık tahmini ÜRETİLMEZ, rakip stat tabanı yok);
+    (2) Tamamlanan Maçlar — oynanmış maçların GERÇEK skorları (european_results)."""
+    now = datetime.now(_TZ_TR)
+    # Yaklaşan: yalnız bugün/gelecek fikstürler (oynanmışları eleme dışı bırak).
+    upcoming = [
+        fx for fx in fixtures
+        if (_parse_utc(fx.get("kickoff_local", "")) or now).date() >= now.date()
+    ]
+    upcoming.sort(key=lambda f: f.get("kickoff_local", ""))
+    results = sorted(_load_european_results(), key=lambda r: r.get("date", ""), reverse=True)
+
+    blocks = []
+    if upcoming:
+        cards = "\n".join(
+            _known_fixture_card(fx, _COMP_COLOR.get(fx.get("competition", ""), "#60a5fa"), now)
+            for fx in upcoming
+        )
+        blocks.append(
+            '<div class="today-wrap">'
+            '<div class="today-lbl"><span class="today-dot"></span>🔜 Yaklaşan Maçlar (haber kaynaklı)</div>'
+            '<div class="mc-tbd-note" style="margin-bottom:12px">football-data.org eleme/playoff turu fikstürünü kapsamıyor. '
+            'Maç bilgisi (tarih/saat/mekan) Türk basınından doğrulanmıştır — rakipler hakkında istatistiksel veri '
+            'olmadığı için skor/olasılık tahmini üretilmemiştir.</div>'
+            f'<div class="today-grid">{cards}</div>'
+            '</div>'
+        )
+    if results:
+        rcards = "\n".join(
+            _result_card(r, _COMP_COLOR.get(r.get("competition", ""), "#60a5fa"))
+            for r in results
+        )
+        blocks.append(
+            '<div class="today-wrap">'
+            '<div class="today-lbl"><span class="today-dot" style="background:#4ade80"></span>✅ Tamamlanan Maçlar (gerçek skor)</div>'
+            f'<div class="today-grid">{rcards}</div>'
+            '</div>'
+        )
+    return "\n".join(blocks)
 
 
 def _build_today_section(all_comps: dict) -> str:
@@ -545,14 +608,30 @@ def build_page(data: dict) -> str:
         for code, comp in comps.items()
     )
 
-    # Stat bar
-    stat_bar = (
-        f'<div class="stat-chip"><div class="v">{total_matches}</div><div class="l">Toplam Maç</div></div>'
-        f'<div class="stat-chip"><div class="v">{total_played}</div><div class="l">Oynandı</div></div>'
-        f'<div class="stat-chip"><div class="v" style="color:#4ade80">{total_correct}</div><div class="l">Doğru</div></div>'
-        f'<div class="stat-chip"><div class="v" style="color:#f87171">{total_wrong}</div><div class="l">Yanlış</div></div>'
-        f'<div class="stat-chip"><div class="v" style="color:#f59e0b">%{acc_pct}</div><div class="l">Doğruluk</div></div>'
+    # Stat bar: football-data.org eleme/playoff turunu kapsamadığı için otomatik tahmin
+    # (predictions) boş kalıyor. Bu durumda tahmin doğruluk çubuğu yerine haber-kaynaklı
+    # bilinen maç sayımlarını göster (yaklaşan + tamamlanan) — "0 Toplam Maç" yanıltmasın.
+    _now = datetime.now(_TZ_TR)
+    _known = _load_known_fixtures()
+    _upcoming_n = sum(
+        1 for fx in _known
+        if (_parse_utc(fx.get("kickoff_local", "")) or _now).date() >= _now.date()
     )
+    _results = _load_european_results()
+    if total_matches:
+        stat_bar = (
+            f'<div class="stat-chip"><div class="v">{total_matches}</div><div class="l">Toplam Maç</div></div>'
+            f'<div class="stat-chip"><div class="v">{total_played}</div><div class="l">Oynandı</div></div>'
+            f'<div class="stat-chip"><div class="v" style="color:#4ade80">{total_correct}</div><div class="l">Doğru</div></div>'
+            f'<div class="stat-chip"><div class="v" style="color:#f87171">{total_wrong}</div><div class="l">Yanlış</div></div>'
+            f'<div class="stat-chip"><div class="v" style="color:#f59e0b">%{acc_pct}</div><div class="l">Doğruluk</div></div>'
+        )
+    else:
+        stat_bar = (
+            f'<div class="stat-chip"><div class="v" style="color:#f59e0b">{_upcoming_n}</div><div class="l">Yaklaşan Maç</div></div>'
+            f'<div class="stat-chip"><div class="v" style="color:#4ade80">{len(_results)}</div><div class="l">Oynanan Maç</div></div>'
+            f'<div class="stat-chip"><div class="v">3</div><div class="l">Türk Kulübü (CL/EL)</div></div>'
+        )
 
     # Comp tabs
     all_btn = '<button class="comp-tab" data-comp="ALL" onclick="showComp(\'ALL\')">🌍 Tümü</button>'
