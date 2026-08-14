@@ -293,6 +293,19 @@ def _match_card(m: dict, signals: dict | None = None) -> str:
         if sig["red_card_risk"] >= 0.25:
             chips.append(f'<span class="sig-hot">🟥 %{round(sig["red_card_risk"]*100)} risk</span>')
         signals_html = f'<div class="mc-signals">{"".join(chips)}</div>'
+        # İlk gol + en olası dakika bandı — Poisson oranlarından (bkz. build_match_signals).
+        hf, af, ng = sig["home_scores_first_probability"], sig["away_scores_first_probability"], sig["no_goal_probability"]
+        first_lbl = m["home_team"] if hf >= af else m["away_team"]
+        first_pct = round(max(hf, af) * 100)
+        band = sig.get("likely_goal_band")
+        band_html = f'<span>⏱️ {escape(band)}. dk</span>' if band else ""
+        signals_html += (
+            f'<div class="mc-signals">'
+            f'<span>1️⃣ İlk gol: {escape(first_lbl)} %{first_pct}</span>'
+            f'{band_html}'
+            f'<span>0-0 riski %{round(ng*100)}</span>'
+            f'</div>'
+        )
     return f"""<div class="match-card">
   <div class="mc-date">{escape(_fmt_date(m['date_time']))}</div>
   <div class="mc-teams"><span>{escape(m['home_team'])}</span><span class="vs">vs</span><span>{escape(m['away_team'])}</span></div>

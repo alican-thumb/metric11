@@ -2496,3 +2496,28 @@ Kullanıcı: "Avrupa sayfası çok iyi değil (eski eleme maçları, skor yok, y
 - **Hakem (soru: "hakemi göz önüne alıyor musun?"):** EVET — `model_league_predictions._referee_goal_adjustment` hakemin geçmiş gol ortalamasını beklenen gole katıyor, `referee_cards_per_match > 5.5` ise "yüksek kart hakemi" flag'i üretiliyor. Kartlarda hakem satırı (`referee_cards_per_match` doluysa) + "yüksek kart" rozeti eklendi. NOT: Hafta 1'de hakem atamaları fikstür verisinde yok → `referee_cards_per_match=None`, `referee_adj=0.0`; atama/geçmiş dolunca otomatik görünür.
 - **AÇIK (kullanıcı sordu, henüz YOK):** Per-maç **gol atar (kim skorer)** ve **kırmızı kart olur** tahmini lig genelinde üretilmiyor. Mevcut gol modülleri (`backtest_goal_candidates`, `build_goal_candidate_segment_backtest`) tarihsel backtest + başta Beşiktaş-scoped ([[project_all_teams_expansion]]). Kart sinyali yalnız hakem-kart-eğilimi flag'i olarak var, per-maç kırmızı kart olasılığı yok. Bunlar yeni modelleme gerektiriyor (oyuncu-seviye veri) — uydurulmadı; kullanıcıyla kapsam netleştirilecek.
 - **Doğrulama:** py_compile OK (4 dosya); pytest **58/3** (aynı önceden var olan başarısızlıklar); tarayıcıda Avrupa + hero görsel onay.
+
+### 2026-08-14 (devam) — Maç geneli gol/kart/dakika bandı sinyalleri (A+C tamamlandı, B veri eksikliğinden duraklatıldı)
+Kullanıcı üç kapsamı seçti: (A) maç geneli gol&kart, (B) oyuncu skorer, (C) dakika bandı.
+
+**A) Maç geneli sinyal (`src/build_match_signals.py`, YENİ) — TAMAMLANDI:**
+- `tff_trendyol_super_lig_2025_2026_matches.json` (306 maç, 812 gol olayı, 1428 kart olayı, oyuncu+dakika+tip) ilk kez bu ölçekte kullanıldı — daha önce yalnız Beşiktaş-özel dosyada kullanılıyordu.
+- 2.5 alt/üst + KG var/yok: mevcut `expected_home/away_goals` (zaten form+Elo+hakem ayarlı) üzerinden saf Poisson matematiği. Beklenen toplam kart + kırmızı kart riski: takım+hakem tarihsel kart oranları (kırmızı/sarı ayrımı YENİ — `model_league_predictions.py`'ın `referee_history`'si yalnız toplam kart tutuyordu).
+- **Kritik düzeltme (birim hatası):** İlk versiyon "beklenen toplam kart"ı takım oranlarının ORTALAMASINI alıyordu (~2.3) — doğrusu TOPLAM olmalı (~4.7, `LEAGUE_AVG_CARDS=4.67` ile örtüşüyor); sanity-check ile yakalanıp düzeltildi.
+- **Takım adı eşleştirme:** `build_season_fixture_predictions.NAME_ALIASES` (zaten var olan 2026-27→2025-26 sponsor adı haritası) yeniden kullanıldı — İkas Eyüpspor/Eyüpspor, Rams Başakşehir/İstanbul Başakşehir FK eşleşti. Yalnız 3 gerçek yeni takım (Amed Sportif, Çorum FK, Erzurumspor FK) veri-yok işaretli.
+- **Yan bulgu (kapsam dışı, açık kaldı):** `season_fixture_predictions_2026_2027.json` içinde aynı kulüp iki farklı adla var — "ARCA ÇORUM FK" ve "ÇORUM FK". Bu, sezon ilerledikçe o takımın Elo/form geçmişinin ikiye bölünmesine yol açabilir (model kalitesi riski). Düzeltme `model_league_predictions.py`/fikstür üretim zincirine dokunacağından ayrı doğrulama gerektirir — kullanıcıya bildirilecek.
+- model_league_predictions.py'a DOKUNULMADI — 2025-26 Beşiktaş backtest 0.655 korunuyor.
+- Pipeline: `build_season_fixture_predictions.main()` artık JSON yazdıktan hemen sonra, HTML'den önce `build_match_signals.main()`'i çağırıyor (lazy import, döngüsel import yok) — sinyaller her zaman taze xG'den üretiliyor.
+- Gösterim: fikstür kartları (306/306) + ana sayfa hero'su (9/9) — "⚽ 2.5 Üst %28 · 🥅 KG Var %28 · 🟨 4.4 kart" (+kırmızı risk ≥%25'te kırmızı rozet).
+
+**B) Oyuncu skorer — DURAKLATILDI (veri engeli, uydurulmadı):**
+- `transfermarkt_super_lig_squads_2026_2027.json`: **0/18 kulüp toplanmış** (`clubs_collected:0`, hepsi `reason: empty_squad` — TM 2026-27 sezon sayfası henüz veri döndürmüyor). `squad_snapshots/` yalnız 2026-05-25 tarihli donmuş kadro. `transfer_tracker_2025_2026.json`'da 0 OFFICIAL transfer (yalnız 7 CORROBORATED, 26 REVIEW_REQUIRED).
+- Sonuç: transfer penceresi açıkken güvenilir "hangi oyuncu hangi takımda" verisi yok. 2025-26 kadrosunu kullanmak, takım değiştiren oyunculara yanlış takım ataması riski taşır — kullanıcının "her şeyi güncel takip" ilkesine aykırı olacağından kurulmadı.
+- **Sonraki adım:** 2026-27 TM kadro koleksiyonunun neden başarısız olduğu araştırılıp düzeltilmeli (muhtemelen `saison_id=2026` path/parametre sorunu — bkz. bilinen pytest başarısızlığı #3), sonra skorer oranı (gol/başlangıç-XI, `type != 'K'` hariç own-goal) + güncel kadro eşleştirmesiyle kurulabilir.
+
+**C) Dakika bandı / ilk gol (`build_match_signals.py` genişletildi) — TAMAMLANDI:**
+- 812 gol olayının dakika damgasından (own-goal hariç) 6 bantlı (`0-15…76-90+`) ampirik lig dağılımı — gerçek futbol örüntüsüyle uyumlu (76-90+ en yüksek %24.8, uzatma dakikası etkisi). Takım bazlı "attığı gol" + "yediği gol" bant dağılımları (min 15 gol eşiği, altında lig ortalaması).
+- İlk gol olasılığı: iki bağımsız Poisson süreci arasında oran-orantılı yaklaşım (`λh/(λh+λg)`), 0-0 olasılığı Poisson(0) ile ayrıca hesaplanıp üçü toplamda tam 1.0 (doğrulandı).
+- En olası gol bandı: ev-atış+dep-yeme ve dep-atış+ev-yeme dağılımları λ ile ağırlıklanıp birleştirilir.
+- Gösterim: fikstür kartlarında "1️⃣ İlk gol: TAKIM %62 · ⏱️ 76-90+. dk · 0-0 riski %16" (306/306).
+- **Doğrulama:** py_compile OK; pytest 58/3 (aynı); tarayıcıda görsel onay (2.5Ü/KG/kart/kırmızı-risk/ilk-gol/bant hepsi kartlarda düzgün render).
