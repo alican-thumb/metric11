@@ -226,6 +226,7 @@
 | egedesonsoz.com | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | fotomac.com.tr | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | gazetevatan.com | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
+| gzt.com | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | kayseriyerelhaber.com | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | medyasiyahbeyaz.com | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | ngazete.com | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
