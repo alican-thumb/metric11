@@ -1,12 +1,12 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-15T04:42:27.623741+00:00
-Toplam ilgili haber: 24
+Üretim zamanı: 2026-08-15T06:59:07.735688+00:00
+Toplam ilgili haber: 25
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
-- [Lech Poznan, UEFA Avrupa Ligi'nde play-off turuna yükseldi!](https://www.sabah.com.tr/spor/futbol/2026/08/14/lech-poznan-uefa-avrupa-liginde-play-off-turuna-yukseldi) — Sabah Spor · 2026-08-15T01:46:38+03:00 · turnuva=EL · kulüp=—
+- [Fenerbahçe'nin Olimpik Lyon maçlarının oyuncu listesi belli oldu](https://www.fotomac.com.tr/fenerbahce/2026/08/14/fenerbahcenin-olimpik-lyon-maclarinin-oyuncu-listesi-belli-oldu) — Fotomaç · 2026-08-15T01:33:02+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe, Lyon maçları kadrosunu UEFA’ya bildirdi](https://www.cnnturk.com/spor/futbol/fenerbahce-lyon-maclari-kadrosunu-uefaya-bildirdi-3454571) — CNN Türk Spor · 2026-08-14T22:28:34+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe'nin Olimpik Lyon maçlarının oyuncu listesi belli oldu](https://www.aa.com.tr/tr/spor/fenerbahcenin-olimpik-lyon-maclarinin-oyuncu-listesi-belli-oldu/4027782) — Anadolu Ajansı Spor · 2026-08-14T21:35:31+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [GALATASARAY – ÇORUM FK MAÇI CANLI İZLE | Galatasaray - Çorum FK maçı canlı yayın kanalı (beIN Sports) GS – Çorum FK maçı şifresiz mi, şifreli mi?](https://www.cnnturk.com/spor/futbol/galatasaray-corum-fk-maci-canli-izle-galatasaray-corum-fk-maci-canli-yayin-kanali-bein-sports-gs-corum-fk-maci-sifresiz-mi-3454453) — CNN Türk Spor · 2026-08-14T21:35:15+00:00 · turnuva=CL · kulüp=Galatasaray
@@ -30,3 +30,4 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Lyon cephesinden Fenerbahçe açıklaması: "Başka bir seviye"](https://www.takvim.com.tr/spor/fenerbahce/2026/08/12/lyon-cephesinden-fenerbahce-aciklamasi-baska-bir-seviye) — Takvim Spor · 2026-08-12T11:41:44+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Bizim Çocuklar ATV ekranlarında! Uluslar Ligi heyecanı nefes kesecek](https://www.takvim.com.tr/spor/2026/08/11/bizim-cocuklar-atv-ekranlarinda-uluslar-ligi-heyecani-nefes-kesecek) — Takvim Spor · 2026-08-11T21:23:31+03:00 · turnuva=— · kulüp=—
 - [Kanarya Play-off turunda! Fenerbahçe Sturm Graz'ı 1-0 yendi](https://www.takvim.com.tr/spor/fenerbahce/2026/08/11/kanarya-play-off-turunda-fenerbahce-sturm-grazi-1-0-yendi) — Takvim Spor · 2026-08-11T20:16:01+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Beşiktaş Salah'ın rövanşını aldı, Trabzonspor'un istediği yıldızı bitiriyor | Transfer hattı - NTVSpor](https://news.google.com/rss/articles/CBMizAFBVV95cUxPd0ozZENEYlhpQWUyYXQ5eHBWZGJHMVB4QXp5UllOVUVCTUozVW1qZlBwaU9weENtUEhuVG5SVkEzYktQSDFjaXRobGhwRXc4YjJUWnhXeUhPRDVLWE1pYUd0N0tkRTBfQmFvbzNOQW1vQkl5V294aFhER0lZdEtvR1FHZlRsSlF6WWt2V3hwaDE4SEs1Rm9vY1NBekNWZFl2MzBrQ0JRanVqRzJTZDU5ZVFzUVlQRTQyaWRMbzZTY1k5SE9SWTM1bE5ST1XSAdIBQVVfeXFMTURTVkFkN2FjVENFWFdCVUNFSXFBazVUQ0xkSzItNnNHZmJqb1lRUDl6bFFPbjhmZGM5Vk5QM054YWRoVEpCYk9yMHlVdEJ4OW9qVVk4bjNEWjJNb2gzeEt2Wm5KR05XZHBlTmdvMi1lRE1BWUphVWRoS05vTWMwdkp4U3pZN01xN21sZmVob1JBU2RJM0RQTXZrZFNzM1BQcDFtbFAwVTFnLUhDWHY2YkRjZ0NieU02dFRva0RDMDZBOXJnb0NwdlJEVUgtb3hLQlln?oc=5) — NTVSpor · 2026-08-08T05:43:14+00:00 · turnuva=— · kulüp=Beşiktaş, Trabzonspor

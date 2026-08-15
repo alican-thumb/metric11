@@ -1,18 +1,18 @@
 # Erken Haber Kaynak Performansı
 
-- Transfer sinyali: 61
+- Transfer sinyali: 69
 - Resmi olaya dönüşen transfer: 7
 - Yayın zamanı bulunan resmi teyit: 2/7
 - İlk görülme zamanı bulunan resmi teyit: 7/7
-- Ölçülen kaynak: 109 / gözlenen kaynak: 189
+- Ölçülen kaynak: 109 / gözlenen kaynak: 191
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 0
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 2592
+- Defterde korunan ilk iddia gözlemi: 2599
 
 ## Kanal Kapsamı
 
-- Google News: 315 haber, 30/30 başarılı sorgu.
+- Google News: 322 haber, 30/30 başarılı sorgu.
 - Telegram: 6 mesaj, 8/8 erişilebilir kanal.
 - X: durum=MISSING_CREDENTIALS, gönderi=0, yapılandırılmış hesap=45.
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 2589 | 805 | 1 | — | — | %99.9 | 0.1 | PARTIAL_MEASUREMENT |
+| Google News / medya | 2596 | 811 | 1 | — | — | %99.9 | 0.1 | PARTIAL_MEASUREMENT |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -48,7 +48,7 @@
 | Kaynak | Katman | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---|
 | CNN Türk Spor | MEDIA | 78 | 18 | 1 | — | — | %93.3 | 5.3 | PARTIAL_MEASUREMENT |
-| Fotomaç | MEDIA | 317 | 68 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Fotomaç | MEDIA | 319 | 69 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Sabah | MEDIA | 212 | 51 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Hürriyet | MEDIA | 194 | 26 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Takvim | MEDIA | 162 | 20 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
@@ -59,12 +59,12 @@
 | Milliyet | MEDIA | 76 | 18 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Fanatik | MEDIA | 65 | 25 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Son Dakika | MEDIA | 65 | 41 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| GZT | MEDIA | 62 | 17 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Sporx.com | MEDIA | 62 | 48 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
-| GZT | MEDIA | 61 | 16 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Ajansspor | MEDIA | 60 | 25 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | SonDakika | MEDIA | 55 | 32 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Taka Gazete | MEDIA | 53 | 40 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
-| Habertürk | MEDIA | 39 | 22 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Habertürk | MEDIA | 40 | 23 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Anadolu Ajansı Spor | AGENCY | 38 | 13 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Haberler | MEDIA | 34 | 15 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | beinsports.com.tr | MEDIA | 29 | 8 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
@@ -179,6 +179,7 @@
 | Yüksekova Haber | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | kayserihaber.com.tr | MEDIA | 2 | 2 | 0 | — | — | — | — | OBSERVING |
 | mansethaber.com | MEDIA | 2 | 2 | 0 | — | — | — | — | OBSERVING |
+| milliyet.com.tr | MEDIA | 2 | 2 | 0 | — | — | — | — | OBSERVING |
 | samsunhaber.com | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | İz Gazete | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | A Spor | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
@@ -222,6 +223,7 @@
 | cumhuriyet.com.tr | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | dha.com.tr | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | dokuzeylul.com | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
+| egedesonsoz.com | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | fotomac.com.tr | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | gazetevatan.com | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | kayseriyerelhaber.com | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
