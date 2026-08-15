@@ -1,19 +1,81 @@
 {
-  "generated_at": "2026-08-15T01:51:09.044868",
+  "generated_at": "2026-08-15T04:42:27.113668",
   "season": "2026-2027",
   "summary": {
-    "evaluated_matches": 0,
+    "evaluated_matches": 1,
     "correct": 0,
     "accuracy": 0.0,
-    "actual_draws": 0,
+    "actual_draws": 1,
     "draws_caught": 0,
-    "draw_recall": null,
+    "draw_recall": 0.0,
     "high_conf_matches": 0,
     "high_conf_correct": 0,
     "high_conf_accuracy": null
   },
-  "last_played_week": null,
-  "last_week": null,
-  "weeks": [],
+  "last_played_week": 1,
+  "last_week": {
+    "week": 1,
+    "summary": {
+      "evaluated_matches": 1,
+      "correct": 0,
+      "accuracy": 0.0,
+      "actual_draws": 1,
+      "draws_caught": 0,
+      "draw_recall": 0.0,
+      "high_conf_matches": 0,
+      "high_conf_correct": 0,
+      "high_conf_accuracy": null
+    },
+    "matches": [
+      {
+        "match_id": "317790",
+        "date_time": "14.08.2026 21:30",
+        "home_team": "GALATASARAY A.Ş.",
+        "away_team": "ARCA ÇORUM FK",
+        "actual_score": "2 - 2",
+        "actual": "draw",
+        "predicted": "home",
+        "raw_predicted": "home",
+        "correct": false,
+        "data_confidence": "PLAYED",
+        "home_win_probability": 0.592,
+        "draw_probability": 0.283,
+        "away_win_probability": 0.125
+      }
+    ]
+  },
+  "weeks": [
+    {
+      "week": 1,
+      "summary": {
+        "evaluated_matches": 1,
+        "correct": 0,
+        "accuracy": 0.0,
+        "actual_draws": 1,
+        "draws_caught": 0,
+        "draw_recall": 0.0,
+        "high_conf_matches": 0,
+        "high_conf_correct": 0,
+        "high_conf_accuracy": null
+      },
+      "matches": [
+        {
+          "match_id": "317790",
+          "date_time": "14.08.2026 21:30",
+          "home_team": "GALATASARAY A.Ş.",
+          "away_team": "ARCA ÇORUM FK",
+          "actual_score": "2 - 2",
+          "actual": "draw",
+          "predicted": "home",
+          "raw_predicted": "home",
+          "correct": false,
+          "data_confidence": "PLAYED",
+          "home_win_probability": 0.592,
+          "draw_probability": 0.283,
+          "away_win_probability": 0.125
+        }
+      ]
+    }
+  ],
   "feedback_note": "Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir; bu yüzden bir sonraki haftanın skor tahminleri geçen haftanın gerçek sonuçlarıyla güncellenir. Doğrulanan transferler de aynı şekilde güce yansır."
 }
