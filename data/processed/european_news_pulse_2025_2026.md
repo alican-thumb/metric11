@@ -1,24 +1,23 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-15T13:00:25.389318+00:00
-Toplam ilgili haber: 25
+Üretim zamanı: 2026-08-15T14:39:24.293066+00:00
+Toplam ilgili haber: 23
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
 - [Beşiktaş ve Trabzonspor'un maçlarını yönetecek hakemler açıklandı!](https://www.sabah.com.tr/spor/futbol/2026/08/15/besiktas-ve-trabzonsporun-maclarini-yonetecek-hakemler-aciklandi) — Sabah Spor · 2026-08-15T15:29:37+03:00 · turnuva=EL · kulüp=Beşiktaş, Trabzonspor
-- [Beşiktaş ve Trabzonspor'un Avrupa Ligi'nde maçlarını yönetecek hakemler açıklandı](https://www.aksam.com.tr/spor/besiktas-ve-trabzonsporun-avrupa-liginde-maclarini-yonetecek-hakemler-aciklandi/haber-1690860) — Aksam Spor · 2026-08-15T15:29:00+03:00 · turnuva=EL · kulüp=Beşiktaş, Trabzonspor
 - [Beşiktaş ve Trabzonspor'un UEFA Avrupa Ligi'nde maçlarını yönetecek hakemler belli oldu](https://www.aa.com.tr/tr/spor/besiktas-ve-trabzonsporun-uefa-avrupa-liginde-maclarini-yonetecek-hakemler-belli-oldu/4028210) — Anadolu Ajansı Spor · 2026-08-15T15:26:22+03:00 · turnuva=EL · kulüp=Beşiktaş, Trabzonspor
 - [Beşiktaş'ın yeni teknik adamı Italiano, kulüp tarihine geçti](https://www.cnnturk.com/spor/futbol/besiktasin-yeni-teknik-adami-italiano-kulup-tarihine-gecti-3454820) — CNN Türk Spor · 2026-08-15T14:17:43+00:00 · turnuva=EL · kulüp=Beşiktaş
+- [Fenerbahçe'ye Şampiyonlar Ligi transferi! 2 isim listede](https://www.hurriyet.com.tr/sporarena/fenerbahceye-sampiyonlar-ligi-transferi-2-isim-listede-43274333) — Hürriyet Spor · 2026-08-15T13:01:00+00:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe'ye Şampiyonlar Ligi transferi! 2 isim listede - Hürriyet](https://news.google.com/rss/articles/CBMiowFBVV95cUxOWjVXY3dzbTFfTERlZUVpTVREWWx5QzloRXNRT1BfamZjRW5kcVl6WGZfRnFxcXhER19ycGR4WTd0T25QMmhTSmY2U2FJR0lxcVVyWXh1WXhxenA4QmNFYTRnTHE5b1R1UEhMOVNkUzMwOE1sd0o1X0pTSzUtNko3cjNTSFlYUnhfb2JUZk9LZ25FU1laelpZTGFYeUEtZGNXejlZ?oc=5) — Hürriyet · 2026-08-15T13:01:00+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Trabzonspor - Ferencvaros maçının hakemi belli oldu!](https://www.hurriyet.com.tr/sporarena/trabzonspor-ferencvaros-macinin-hakemi-belli-oldu-43274330) — Hürriyet Spor · 2026-08-15T12:38:53+00:00 · turnuva=EL · kulüp=Trabzonspor
 - [Beşiktaş - Kauno Zalgiris maçının hakemi açıklandı!](https://www.hurriyet.com.tr/sporarena/besiktas-kauno-zalgiris-macinin-hakemi-aciklandi-43274322) — Hürriyet Spor · 2026-08-15T12:33:22+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [FENERBAHÇE - LYON MAÇ KADROSU AÇIKLANDI | Lukaku Lyon maçında oynayacak mı?](https://www.cnnturk.com/spor/futbol/fenerbahce-lyon-mac-kadrosu-aciklandi-lukaku-lyon-macinda-oynayacak-mi-3454753) — CNN Türk Spor · 2026-08-15T12:30:01+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Çekya'da gündem Cerny](https://www.cnnturk.com/spor/futbol/cekyada-gundem-cerny-3454716) — CNN Türk Spor · 2026-08-15T11:04:52+00:00 · turnuva=— · kulüp=Beşiktaş
-- [Fenerbahçe'nin Olimpik Lyon maçlarının oyuncu listesi belli oldu](https://www.fotomac.com.tr/fenerbahce/2026/08/14/fenerbahcenin-olimpik-lyon-maclarinin-oyuncu-listesi-belli-oldu) — Fotomaç · 2026-08-15T01:33:02+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe, Lyon maçları kadrosunu UEFA’ya bildirdi](https://www.cnnturk.com/spor/futbol/fenerbahce-lyon-maclari-kadrosunu-uefaya-bildirdi-3454571) — CNN Türk Spor · 2026-08-14T22:28:34+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe'nin Olimpik Lyon maçlarının oyuncu listesi belli oldu](https://www.aa.com.tr/tr/spor/fenerbahcenin-olimpik-lyon-maclarinin-oyuncu-listesi-belli-oldu/4027782) — Anadolu Ajansı Spor · 2026-08-14T21:35:31+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [GALATASARAY – ÇORUM FK MAÇI CANLI İZLE | Galatasaray - Çorum FK maçı canlı yayın kanalı (beIN Sports) GS – Çorum FK maçı şifresiz mi, şifreli mi?](https://www.cnnturk.com/spor/futbol/galatasaray-corum-fk-maci-canli-izle-galatasaray-corum-fk-maci-canli-yayin-kanali-bein-sports-gs-corum-fk-maci-sifresiz-mi-3454453) — CNN Türk Spor · 2026-08-14T21:35:15+00:00 · turnuva=CL · kulüp=Galatasaray
-- [Fenerbahçe, Lyon kadrosunu UEFA'ya bildirdi!](https://www.haberturk.com/fenerbahce-nin-lyon-maclarinin-oyuncu-listesi-belli-oldu-lukaku-surprizi-3905725-spor) — Haberturk Spor · 2026-08-14T18:59:09+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe, Lyon maçı kadrosunu UEFA'ya bildirdi!](https://www.hurriyet.com.tr/sporarena/fenerbahce-lyon-maci-kadrosunu-uefaya-bildirdi-43273728) — Hürriyet Spor · 2026-08-14T18:44:47+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe'de forma numaraları değişti! Lyon maçının kadrosu UEFA'ya bildirildi](https://www.takvim.com.tr/spor/fenerbahce/2026/08/14/fenerbahcede-forma-numaralari-degisti-7-ve-9-numara) — Takvim Spor · 2026-08-14T17:30:20+03:00 · turnuva=— · kulüp=Fenerbahçe
 - [Fenerbahçe'den TFF'ye bir erteleme talebi hazırlığı daha! Konyaspor olumlu bakıyor](https://www.takvim.com.tr/spor/fenerbahce/2026/08/14/fenerbahceden-tffye-bir-erteleme-talebi-hazirligi-daha) — Takvim Spor · 2026-08-14T16:27:12+03:00 · turnuva=CL · kulüp=Fenerbahçe, Konyaspor
@@ -29,5 +28,4 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Gel bakalım Kauno Zalgiris! Beşiktaş Hradec Kralove'yi 1-0 yendi](https://www.takvim.com.tr/spor/besiktas/2026/08/13/gel-bakalim-kauno-zalgiris-besiktas-hradec-kraloveyi-1-0-yendi) — Takvim Spor · 2026-08-13T18:47:10+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Fenerbahçe'ye Şampiyonlar Ligi'nden dev para! İşte o rakam](https://www.takvim.com.tr/spor/fenerbahce/2026/08/12/fenerbahceye-sampiyonlar-liginden-dev-para-iste-o-rakam) — Takvim Spor · 2026-08-12T16:58:08+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Lyon cephesinden Fenerbahçe açıklaması: "Başka bir seviye"](https://www.takvim.com.tr/spor/fenerbahce/2026/08/12/lyon-cephesinden-fenerbahce-aciklamasi-baska-bir-seviye) — Takvim Spor · 2026-08-12T11:41:44+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Bizim Çocuklar ATV ekranlarında! Uluslar Ligi heyecanı nefes kesecek](https://www.takvim.com.tr/spor/2026/08/11/bizim-cocuklar-atv-ekranlarinda-uluslar-ligi-heyecani-nefes-kesecek) — Takvim Spor · 2026-08-11T21:23:31+03:00 · turnuva=— · kulüp=—
 - [Kanarya Play-off turunda! Fenerbahçe Sturm Graz'ı 1-0 yendi](https://www.takvim.com.tr/spor/fenerbahce/2026/08/11/kanarya-play-off-turunda-fenerbahce-sturm-grazi-1-0-yendi) — Takvim Spor · 2026-08-11T20:16:01+03:00 · turnuva=CL · kulüp=Fenerbahçe
