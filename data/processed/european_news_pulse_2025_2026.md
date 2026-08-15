@@ -1,11 +1,13 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-15T06:59:07.735688+00:00
-Toplam ilgili haber: 25
+Üretim zamanı: 2026-08-15T10:38:54.851227+00:00
+Toplam ilgili haber: 20
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [FENERBAHÇE - LYON MAÇ KADROSU AÇIKLANDI | Lukaku Lyon maçında oynayacak mı?](https://www.cnnturk.com/spor/futbol/fenerbahce-lyon-mac-kadrosu-aciklandi-lukaku-lyon-macinda-oynayacak-mi-3454753) — CNN Türk Spor · 2026-08-15T12:30:01+00:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Çekya'da gündem Cerny](https://www.cnnturk.com/spor/futbol/cekyada-gundem-cerny-3454716) — CNN Türk Spor · 2026-08-15T11:04:52+00:00 · turnuva=— · kulüp=Beşiktaş
 - [Fenerbahçe'nin Olimpik Lyon maçlarının oyuncu listesi belli oldu](https://www.fotomac.com.tr/fenerbahce/2026/08/14/fenerbahcenin-olimpik-lyon-maclarinin-oyuncu-listesi-belli-oldu) — Fotomaç · 2026-08-15T01:33:02+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe, Lyon maçları kadrosunu UEFA’ya bildirdi](https://www.cnnturk.com/spor/futbol/fenerbahce-lyon-maclari-kadrosunu-uefaya-bildirdi-3454571) — CNN Türk Spor · 2026-08-14T22:28:34+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe'nin Olimpik Lyon maçlarının oyuncu listesi belli oldu](https://www.aa.com.tr/tr/spor/fenerbahcenin-olimpik-lyon-maclarinin-oyuncu-listesi-belli-oldu/4027782) — Anadolu Ajansı Spor · 2026-08-14T21:35:31+03:00 · turnuva=CL · kulüp=Fenerbahçe
@@ -15,19 +17,12 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Fenerbahçe'de forma numaraları değişti! Lyon maçının kadrosu UEFA'ya bildirildi](https://www.takvim.com.tr/spor/fenerbahce/2026/08/14/fenerbahcede-forma-numaralari-degisti-7-ve-9-numara) — Takvim Spor · 2026-08-14T17:30:20+03:00 · turnuva=— · kulüp=Fenerbahçe
 - [Fenerbahçe'den TFF'ye bir erteleme talebi hazırlığı daha! Konyaspor olumlu bakıyor](https://www.takvim.com.tr/spor/fenerbahce/2026/08/14/fenerbahceden-tffye-bir-erteleme-talebi-hazirligi-daha) — Takvim Spor · 2026-08-14T16:27:12+03:00 · turnuva=CL · kulüp=Fenerbahçe, Konyaspor
 - [BEŞİKTAŞ UEFA AVRUPA LİGİ PLAY OFF RAKİBİ: Beşiktaş'ın UEFA Avrupa Ligi Play-Off Rakibi Kim Oldu? Beşiktaş Turu Geçti, Sıradaki Rakip Kim? UEFA Avrupa Ligi'nde Kritik Viraj](https://www.cnnturk.com/spor/futbol/besiktas-uefa-avrupa-ligi-play-off-rakibi-besiktasin-uefa-avrupa-ligi-play-off-rakibi-kim-oldu-besiktas-turu-gecti-siradaki-3454357) — CNN Türk Spor · 2026-08-14T10:51:59+00:00 · turnuva=EL · kulüp=Beşiktaş
-- [UEFA Konferans Ligi'nde sürpriz sonuçlar! Tur atlayan takımlar belli oldu...](https://www.cnnturk.com/spor/futbol/uefa-konferans-liginde-surpriz-sonuclar-tur-atlayan-takimlar-belli-oldu-3454288) — CNN Türk Spor · 2026-08-14T08:03:16+00:00 · turnuva=ECL · kulüp=—
-- [Fenerbahçe’nin yoğun maratonu başlıyor: 16 günde 5 maç!](https://www.cnnturk.com/spor/futbol/fenerbahcenin-yogun-maratonu-basliyor-16-gunde-5-mac-3454280) — CNN Türk Spor · 2026-08-14T07:32:40+00:00 · turnuva=— · kulüp=Fenerbahçe, Gençlerbirliği
 - [İşte UEFA ülke puanında son durum!](https://www.haberturk.com/iste-uefa-ulke-puaninda-son-durum-fenerbahce-ve-besiktas-kazandi-3905531-spor) — Haberturk Spor · 2026-08-14T07:27:11+00:00 · turnuva=CL · kulüp=Fenerbahçe, Beşiktaş
-- [UEFA Avrupa Ligi'nde tur atlayan takımlar belli oldu](https://www.cnnturk.com/spor/futbol/uefa-avrupa-liginde-tur-atlayan-takimlar-belli-oldu-3454274) — CNN Türk Spor · 2026-08-14T07:05:08+00:00 · turnuva=EL · kulüp=—
 - ["Beşiktaş artık favori"](https://www.haberturk.com/spor-yazarlari-besiktas-hradec-kralove-galibiyetini-yorumladi-3905518-spor) — Haberturk Spor · 2026-08-14T06:50:26+00:00 · turnuva=EL · kulüp=Beşiktaş
-- [Beşiktaş'ın galibiyeti sonrası UEFA ülke puanı güncellendi!](https://www.hurriyet.com.tr/sporarena/besiktasin-galibiyeti-sonrasi-uefa-ulke-puani-guncellendi-43272761) — Hürriyet Spor · 2026-08-14T06:31:19+00:00 · turnuva=EL · kulüp=Beşiktaş
-- [Trabzonspor’a Avrupa’da Macar rakip](https://www.cnnturk.com/spor/futbol/trabzonspora-avrupada-macar-rakip-3454192) — CNN Türk Spor · 2026-08-14T00:06:20+00:00 · turnuva=EL · kulüp=Trabzonspor
 - [Türkiye ülke puanı sıralamasında kaçıncı? İşte UEFA'daki yerimiz (2026-2027 Sezonu)](https://www.takvim.com.tr/galeri/spor/turkiye-ulke-puani-siralamasinda-kacinci-iste-uefadaki-yerimiz-2026-2027-sezonu) — Takvim Spor · 2026-08-13T22:39:25+03:00 · turnuva=CL · kulüp=Fenerbahçe, Beşiktaş
-- [Beşiktaş 1-0 Hradec Kralove Maç Özeti | Kartal, play-off’a kanat çırptı](https://www.cnnturk.com/spor/futbol/live-besiktas-1-0-hradec-kralove-mac-ozeti-kartal-play-offa-kanat-cirpti-3454025) — CNN Türk Spor · 2026-08-13T22:06:55+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Trabzonspor'un UEFA Avrupa Ligi'ndeki rakibi Ferencvaros](https://www.takvim.com.tr/spor/trabzonspor/2026/08/13/trabzonsporun-uefa-avrupa-ligindeki-rakibi-ferencvaros) — Takvim Spor · 2026-08-13T22:02:50+03:00 · turnuva=EL · kulüp=Trabzonspor
 - [Gel bakalım Kauno Zalgiris! Beşiktaş Hradec Kralove'yi 1-0 yendi](https://www.takvim.com.tr/spor/besiktas/2026/08/13/gel-bakalim-kauno-zalgiris-besiktas-hradec-kraloveyi-1-0-yendi) — Takvim Spor · 2026-08-13T18:47:10+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Fenerbahçe'ye Şampiyonlar Ligi'nden dev para! İşte o rakam](https://www.takvim.com.tr/spor/fenerbahce/2026/08/12/fenerbahceye-sampiyonlar-liginden-dev-para-iste-o-rakam) — Takvim Spor · 2026-08-12T16:58:08+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Lyon cephesinden Fenerbahçe açıklaması: "Başka bir seviye"](https://www.takvim.com.tr/spor/fenerbahce/2026/08/12/lyon-cephesinden-fenerbahce-aciklamasi-baska-bir-seviye) — Takvim Spor · 2026-08-12T11:41:44+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Bizim Çocuklar ATV ekranlarında! Uluslar Ligi heyecanı nefes kesecek](https://www.takvim.com.tr/spor/2026/08/11/bizim-cocuklar-atv-ekranlarinda-uluslar-ligi-heyecani-nefes-kesecek) — Takvim Spor · 2026-08-11T21:23:31+03:00 · turnuva=— · kulüp=—
 - [Kanarya Play-off turunda! Fenerbahçe Sturm Graz'ı 1-0 yendi](https://www.takvim.com.tr/spor/fenerbahce/2026/08/11/kanarya-play-off-turunda-fenerbahce-sturm-grazi-1-0-yendi) — Takvim Spor · 2026-08-11T20:16:01+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Beşiktaş Salah'ın rövanşını aldı, Trabzonspor'un istediği yıldızı bitiriyor | Transfer hattı - NTVSpor](https://news.google.com/rss/articles/CBMizAFBVV95cUxPd0ozZENEYlhpQWUyYXQ5eHBWZGJHMVB4QXp5UllOVUVCTUozVW1qZlBwaU9weENtUEhuVG5SVkEzYktQSDFjaXRobGhwRXc4YjJUWnhXeUhPRDVLWE1pYUd0N0tkRTBfQmFvbzNOQW1vQkl5V294aFhER0lZdEtvR1FHZlRsSlF6WWt2V3hwaDE4SEs1Rm9vY1NBekNWZFl2MzBrQ0JRanVqRzJTZDU5ZVFzUVlQRTQyaWRMbzZTY1k5SE9SWTM1bE5ST1XSAdIBQVVfeXFMTURTVkFkN2FjVENFWFdCVUNFSXFBazVUQ0xkSzItNnNHZmJqb1lRUDl6bFFPbjhmZGM5Vk5QM054YWRoVEpCYk9yMHlVdEJ4OW9qVVk4bjNEWjJNb2gzeEt2Wm5KR05XZHBlTmdvMi1lRE1BWUphVWRoS05vTWMwdkp4U3pZN01xN21sZmVob1JBU2RJM0RQTXZrZFNzM1BQcDFtbFAwVTFnLUhDWHY2YkRjZ0NieU02dFRva0RDMDZBOXJnb0NwdlJEVUgtb3hLQlln?oc=5) — NTVSpor · 2026-08-08T05:43:14+00:00 · turnuva=— · kulüp=Beşiktaş, Trabzonspor
