@@ -1,6 +1,6 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-15T01:51:09.538508+00:00
+Üretim zamanı: 2026-08-15T03:05:06.157246+00:00
 Toplam ilgili haber: 33
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
@@ -33,7 +33,7 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Beşiktaş 1-0 Hradec Kralove Maç Özeti | Kartal, play-off’a kanat çırptı](https://www.cnnturk.com/spor/futbol/live-besiktas-1-0-hradec-kralove-mac-ozeti-kartal-play-offa-kanat-cirpti-3454025) — CNN Türk Spor · 2026-08-13T22:06:55+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Trabzonspor'un UEFA Avrupa Ligi'ndeki rakibi Ferencvaros](https://www.takvim.com.tr/spor/trabzonspor/2026/08/13/trabzonsporun-uefa-avrupa-ligindeki-rakibi-ferencvaros) — Takvim Spor · 2026-08-13T22:02:50+03:00 · turnuva=EL · kulüp=Trabzonspor
 - [Alexander Nübel'den Beşiktaş taraftarına: 'Desteklemeye devam edin!'](https://www.hurriyet.com.tr/sporarena/alexander-nubelden-besiktas-taraftarina-desteklemeye-devam-edin-43272589) — Hürriyet Spor · 2026-08-13T20:16:00+00:00 · turnuva=— · kulüp=Beşiktaş
-- [Beşiktaş kazandı ülke puanı coştu! İşte UEFA sıralamamızda yaşanan değişiklik - fotomac.com.tr](https://news.google.com/rss/articles/CBMitAFBVV95cUxPdndTdjI3NG5WWHVnU0tEQm9iNFRmNTdlcmthVWxIQVdqMVktLVRiai1FVTdIampOdG5IZks5cV9Xdmc5WkF5LTRTdzdlM1MyRTdYVTR2ZFpXb3VtRGJ5aUtDaWhkdG1UbnZOQk85cTQ0UTdsQ2xQQjNwN05tWFgwNW1tb1I2RGZyNGZob0hTbUtIbnNPTFlqUm5NN193ZXFORXgwLVhJSXAyejBOa1ZrZmY4enA?oc=5) — fotomac.com.tr · 2026-08-13T19:01:39+00:00 · turnuva=— · kulüp=Beşiktaş
+- [Beşiktaş kazandı ülke puanı coştu! İşte UEFA sıralamamızda yaşanan değişiklik - Fotomaç](https://news.google.com/rss/articles/CBMitAFBVV95cUxPdndTdjI3NG5WWHVnU0tEQm9iNFRmNTdlcmthVWxIQVdqMVktLVRiai1FVTdIampOdG5IZks5cV9Xdmc5WkF5LTRTdzdlM1MyRTdYVTR2ZFpXb3VtRGJ5aUtDaWhkdG1UbnZOQk85cTQ0UTdsQ2xQQjNwN05tWFgwNW1tb1I2RGZyNGZob0hTbUtIbnNPTFlqUm5NN193ZXFORXgwLVhJSXAyejBOa1ZrZmY4enA?oc=5) — Fotomaç · 2026-08-13T19:01:39+00:00 · turnuva=— · kulüp=Beşiktaş
 - [Gel bakalım Kauno Zalgiris! Beşiktaş Hradec Kralove'yi 1-0 yendi](https://www.takvim.com.tr/spor/besiktas/2026/08/13/gel-bakalim-kauno-zalgiris-besiktas-hradec-kraloveyi-1-0-yendi) — Takvim Spor · 2026-08-13T18:47:10+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Fenerbahçe'ye Şampiyonlar Ligi'nden dev para! İşte o rakam](https://www.takvim.com.tr/spor/fenerbahce/2026/08/12/fenerbahceye-sampiyonlar-liginden-dev-para-iste-o-rakam) — Takvim Spor · 2026-08-12T16:58:08+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Lyon cephesinden Fenerbahçe açıklaması: "Başka bir seviye"](https://www.takvim.com.tr/spor/fenerbahce/2026/08/12/lyon-cephesinden-fenerbahce-aciklamasi-baska-bir-seviye) — Takvim Spor · 2026-08-12T11:41:44+03:00 · turnuva=CL · kulüp=Fenerbahçe
