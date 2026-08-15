@@ -1,11 +1,17 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-15T10:38:54.851227+00:00
-Toplam ilgili haber: 20
+Üretim zamanı: 2026-08-15T13:00:25.389318+00:00
+Toplam ilgili haber: 25
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [Beşiktaş ve Trabzonspor'un maçlarını yönetecek hakemler açıklandı!](https://www.sabah.com.tr/spor/futbol/2026/08/15/besiktas-ve-trabzonsporun-maclarini-yonetecek-hakemler-aciklandi) — Sabah Spor · 2026-08-15T15:29:37+03:00 · turnuva=EL · kulüp=Beşiktaş, Trabzonspor
+- [Beşiktaş ve Trabzonspor'un Avrupa Ligi'nde maçlarını yönetecek hakemler açıklandı](https://www.aksam.com.tr/spor/besiktas-ve-trabzonsporun-avrupa-liginde-maclarini-yonetecek-hakemler-aciklandi/haber-1690860) — Aksam Spor · 2026-08-15T15:29:00+03:00 · turnuva=EL · kulüp=Beşiktaş, Trabzonspor
+- [Beşiktaş ve Trabzonspor'un UEFA Avrupa Ligi'nde maçlarını yönetecek hakemler belli oldu](https://www.aa.com.tr/tr/spor/besiktas-ve-trabzonsporun-uefa-avrupa-liginde-maclarini-yonetecek-hakemler-belli-oldu/4028210) — Anadolu Ajansı Spor · 2026-08-15T15:26:22+03:00 · turnuva=EL · kulüp=Beşiktaş, Trabzonspor
+- [Beşiktaş'ın yeni teknik adamı Italiano, kulüp tarihine geçti](https://www.cnnturk.com/spor/futbol/besiktasin-yeni-teknik-adami-italiano-kulup-tarihine-gecti-3454820) — CNN Türk Spor · 2026-08-15T14:17:43+00:00 · turnuva=EL · kulüp=Beşiktaş
+- [Trabzonspor - Ferencvaros maçının hakemi belli oldu!](https://www.hurriyet.com.tr/sporarena/trabzonspor-ferencvaros-macinin-hakemi-belli-oldu-43274330) — Hürriyet Spor · 2026-08-15T12:38:53+00:00 · turnuva=EL · kulüp=Trabzonspor
+- [Beşiktaş - Kauno Zalgiris maçının hakemi açıklandı!](https://www.hurriyet.com.tr/sporarena/besiktas-kauno-zalgiris-macinin-hakemi-aciklandi-43274322) — Hürriyet Spor · 2026-08-15T12:33:22+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [FENERBAHÇE - LYON MAÇ KADROSU AÇIKLANDI | Lukaku Lyon maçında oynayacak mı?](https://www.cnnturk.com/spor/futbol/fenerbahce-lyon-mac-kadrosu-aciklandi-lukaku-lyon-macinda-oynayacak-mi-3454753) — CNN Türk Spor · 2026-08-15T12:30:01+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Çekya'da gündem Cerny](https://www.cnnturk.com/spor/futbol/cekyada-gundem-cerny-3454716) — CNN Türk Spor · 2026-08-15T11:04:52+00:00 · turnuva=— · kulüp=Beşiktaş
 - [Fenerbahçe'nin Olimpik Lyon maçlarının oyuncu listesi belli oldu](https://www.fotomac.com.tr/fenerbahce/2026/08/14/fenerbahcenin-olimpik-lyon-maclarinin-oyuncu-listesi-belli-oldu) — Fotomaç · 2026-08-15T01:33:02+03:00 · turnuva=CL · kulüp=Fenerbahçe
@@ -16,7 +22,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Fenerbahçe, Lyon maçı kadrosunu UEFA'ya bildirdi!](https://www.hurriyet.com.tr/sporarena/fenerbahce-lyon-maci-kadrosunu-uefaya-bildirdi-43273728) — Hürriyet Spor · 2026-08-14T18:44:47+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe'de forma numaraları değişti! Lyon maçının kadrosu UEFA'ya bildirildi](https://www.takvim.com.tr/spor/fenerbahce/2026/08/14/fenerbahcede-forma-numaralari-degisti-7-ve-9-numara) — Takvim Spor · 2026-08-14T17:30:20+03:00 · turnuva=— · kulüp=Fenerbahçe
 - [Fenerbahçe'den TFF'ye bir erteleme talebi hazırlığı daha! Konyaspor olumlu bakıyor](https://www.takvim.com.tr/spor/fenerbahce/2026/08/14/fenerbahceden-tffye-bir-erteleme-talebi-hazirligi-daha) — Takvim Spor · 2026-08-14T16:27:12+03:00 · turnuva=CL · kulüp=Fenerbahçe, Konyaspor
-- [BEŞİKTAŞ UEFA AVRUPA LİGİ PLAY OFF RAKİBİ: Beşiktaş'ın UEFA Avrupa Ligi Play-Off Rakibi Kim Oldu? Beşiktaş Turu Geçti, Sıradaki Rakip Kim? UEFA Avrupa Ligi'nde Kritik Viraj](https://www.cnnturk.com/spor/futbol/besiktas-uefa-avrupa-ligi-play-off-rakibi-besiktasin-uefa-avrupa-ligi-play-off-rakibi-kim-oldu-besiktas-turu-gecti-siradaki-3454357) — CNN Türk Spor · 2026-08-14T10:51:59+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [İşte UEFA ülke puanında son durum!](https://www.haberturk.com/iste-uefa-ulke-puaninda-son-durum-fenerbahce-ve-besiktas-kazandi-3905531-spor) — Haberturk Spor · 2026-08-14T07:27:11+00:00 · turnuva=CL · kulüp=Fenerbahçe, Beşiktaş
 - ["Beşiktaş artık favori"](https://www.haberturk.com/spor-yazarlari-besiktas-hradec-kralove-galibiyetini-yorumladi-3905518-spor) — Haberturk Spor · 2026-08-14T06:50:26+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Türkiye ülke puanı sıralamasında kaçıncı? İşte UEFA'daki yerimiz (2026-2027 Sezonu)](https://www.takvim.com.tr/galeri/spor/turkiye-ulke-puani-siralamasinda-kacinci-iste-uefadaki-yerimiz-2026-2027-sezonu) — Takvim Spor · 2026-08-13T22:39:25+03:00 · turnuva=CL · kulüp=Fenerbahçe, Beşiktaş
