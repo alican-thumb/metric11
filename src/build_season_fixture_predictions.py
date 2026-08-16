@@ -82,13 +82,33 @@ def build_predictions() -> dict:
     played_2026_27 = _rekeyed_2026_27_matches()
     all_matches = history_matches + played_2026_27
     all_matches.sort(key=lambda m: parse_tff_datetime(m["match_date"]))
-    state = compute_final_state(all_matches)
-    team_history, elo = state["team_history"], state["elo"]
 
     weeks_out = []
     new_team_matches = 0
     played_matches = 0
+    # Walk-forward: her hafta YALNIZ o hafta başlamadan ÖNCE gerçekleşmiş maçlardan türetilen
+    # team_history/Elo ile tahmin edilir (bkz. run_backtest'teki aynı ilke). Eskiden TEK bir
+    # compute_final_state(all_matches) tüm haftalara uygulanıyordu — bu, ZATEN OYNANMIŞ bir
+    # haftanın kendi sonucunun o haftanın "tahmini"ne SIZMASINA (look-ahead) yol açıyordu;
+    # örn. Hafta 1 sonuçları girilince Hafta 1'in kendi görüntülenen tahmini/olasılıkları
+    # değişiyordu — Haftalık Karne'yi (weekly_evaluation) geçersiz kılan bir hataydı
+    # (kullanıcı 2026-08-16 gerçek sonuçlarla karşılaştırınca fark edildi).
+    remaining = list(all_matches)
+    settled: list[dict] = []
     for week in fixture_payload["weeks"]:
+        week_dts = []
+        for m in week["matches"]:
+            try:
+                week_dts.append(parse_tff_datetime(m["date_time"]))
+            except ValueError:
+                pass
+        week_start = min(week_dts) if week_dts else None
+        while remaining and week_start is not None and parse_tff_datetime(remaining[0]["match_date"]) < week_start:
+            settled.append(remaining.pop(0))
+
+        state = compute_final_state(settled)
+        team_history, elo = state["team_history"], state["elo"]
+
         week_matches = []
         for m in week["matches"]:
             home_name, away_name = m["home_team"], m["away_team"]
