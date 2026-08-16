@@ -1,11 +1,12 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-16T04:48:14.722755+00:00
+Üretim zamanı: 2026-08-16T06:59:29.569732+00:00
 Toplam ilgili haber: 20
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [BEŞİKTAŞ PLAY OFF RAKİBİ: Beşiktaş'ın UEFA Avrupa Ligi Play-Off Rakibi Kim Oldu? Beşiktaş Turu Geçti, Sıradaki Rakip Kim? UEFA Avrupa Ligi'nde Kritik Viraj](https://www.cnnturk.com/spor/futbol/besiktas-uefa-avrupa-ligi-play-off-rakibi-besiktasin-uefa-avrupa-ligi-play-off-rakibi-kim-oldu-besiktas-turu-gecti-siradaki-3454357) — CNN Türk Spor · 2026-08-16T09:12:37+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş, 5'te 5 için sahada!](https://www.hurriyet.com.tr/sporarena/besiktas-5te-5-icin-sahada-43274778) — Hürriyet Spor · 2026-08-16T04:00:00+00:00 · turnuva=EL · kulüp=Beşiktaş, Eyüpspor
 - [Trabzonspor-Ferencvaros maçı ATV'de! Şifresiz yayınlanacak](https://www.takvim.com.tr/spor/trabzonspor/2026/08/15/trabzonspor-ferencvaros-maci-atvde-sifresiz-yayinlanacak) — Takvim Spor · 2026-08-15T22:02:01+03:00 · turnuva=EL · kulüp=Trabzonspor
 - [Başkentte İrfan Can duvarı! Fenerbahçe Gençlerbirliği'ne 2-1 yenildi](https://www.takvim.com.tr/spor/fenerbahce/2026/08/15/irfan-can-duvari-fenerbahce-genclerbirligine-2-1-yenildi) — Takvim Spor · 2026-08-15T20:27:47+03:00 · turnuva=CL · kulüp=Fenerbahçe, Gençlerbirliği
@@ -23,6 +24,5 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Fenerbahçe'de forma numaraları değişti! Lyon maçının kadrosu UEFA'ya bildirildi](https://www.takvim.com.tr/spor/fenerbahce/2026/08/14/fenerbahcede-forma-numaralari-degisti-7-ve-9-numara) — Takvim Spor · 2026-08-14T17:30:20+03:00 · turnuva=— · kulüp=Fenerbahçe
 - [Fenerbahçe'den TFF'ye bir erteleme talebi hazırlığı daha! Konyaspor olumlu bakıyor](https://www.takvim.com.tr/spor/fenerbahce/2026/08/14/fenerbahceden-tffye-bir-erteleme-talebi-hazirligi-daha) — Takvim Spor · 2026-08-14T16:27:12+03:00 · turnuva=CL · kulüp=Fenerbahçe, Konyaspor
 - [Türkiye ülke puanı sıralamasında kaçıncı? İşte UEFA'daki yerimiz (2026-2027 Sezonu)](https://www.takvim.com.tr/galeri/spor/turkiye-ulke-puani-siralamasinda-kacinci-iste-uefadaki-yerimiz-2026-2027-sezonu) — Takvim Spor · 2026-08-13T22:39:25+03:00 · turnuva=CL · kulüp=Fenerbahçe, Beşiktaş
-- [Trabzonspor'un UEFA Avrupa Ligi'ndeki rakibi Ferencvaros](https://www.takvim.com.tr/spor/trabzonspor/2026/08/13/trabzonsporun-uefa-avrupa-ligindeki-rakibi-ferencvaros) — Takvim Spor · 2026-08-13T22:02:50+03:00 · turnuva=EL · kulüp=Trabzonspor
 - [Gel bakalım Kauno Zalgiris! Beşiktaş Hradec Kralove'yi 1-0 yendi](https://www.takvim.com.tr/spor/besiktas/2026/08/13/gel-bakalim-kauno-zalgiris-besiktas-hradec-kraloveyi-1-0-yendi) — Takvim Spor · 2026-08-13T18:47:10+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Samuel Ballet, Amedspor’a transfer oldu! Antalyaspor’un kasasına 1,6 milyon Euro girdi - Akdenizmanset](https://news.google.com/rss/articles/CBMitAFBVV95cUxOYXpZdGR4ai13NzUwc2N3NzBRak9pSi1UN3NLYXc3TkdSYlc4ZGVUejdTanVkLUZZU2U3aFAyMjlEQWZ6T2tVMGtfVU9RZHNuMWFOX2J3N1ZBOWVjZ2trXy1jbWtMeGtUTVV0b2h3TFQ4OExvdWlnOXlsMVlpR3N1TXNRSGpGRFkxUkp6YWNwcHVRbWhKTUg0RE5Oa2RyOW9TRlVqdHhoRkYzMFpndHBESEhWSkw?oc=5) — Akdenizmanset · 2026-08-13T12:58:00+00:00 · turnuva=EL · kulüp=Antalyaspor
