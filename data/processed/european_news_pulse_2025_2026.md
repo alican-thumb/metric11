@@ -1,13 +1,15 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-16T18:48:30.984051+00:00
-Toplam ilgili haber: 22
+Üretim zamanı: 2026-08-16T22:37:10.822692+00:00
+Toplam ilgili haber: 20
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [Kartal modaya uymadı](https://www.aksam.com.tr/spor/kartal-modaya-uymadi/haber-1691167) — Aksam Spor · 2026-08-17T01:15:00+03:00 · turnuva=— · kulüp=Beşiktaş
+- [FENERBAHÇE - LYON ŞAMPİYONLAR LİGİ MAÇI NE ZAMAN? Fenerbahçe - Lyon Şampiyonlar Ligi maçı saat kaçta, hangi kanalda?](https://www.cnnturk.com/spor/fenerbahce-lyon-sampiyonlar-ligi-maci-ne-zaman-fenerbahce-lyon-sampiyonlar-ligi-maci-saat-kacta-hangi-kanalda-3455309) — CNN Türk Spor · 2026-08-16T22:19:24+00:00 · turnuva=CL · kulüp=Fenerbahçe
+- [UEFA ŞAMPİYONLAR LİGİ KURA ÇEKİMİ TARİHLERİ: 2026-2027 Şampiyonlar Ligi kura çekimi ne zaman yapılacak?](https://www.cnnturk.com/spor/futbol/uefa-sampiyonlar-ligi-kura-cekimi-tarihleri-2026-2027-sampiyonlar-ligi-kura-cekimi-ne-zaman-yapilacak-3455307) — CNN Türk Spor · 2026-08-16T22:11:42+00:00 · turnuva=CL · kulüp=—
 - [Trabzonspor-Ferencvaros maçının biletleri yarın satışa sunulacak](https://www.aa.com.tr/tr/spor/trabzonspor-ferencvaros-macinin-biletleri-yarin-satisa-sunulacak/4028930) — Anadolu Ajansı Spor · 2026-08-16T20:12:40+03:00 · turnuva=EL · kulüp=Trabzonspor
-- [Trabzonspor, Ferençvaroş maçı bilet fiyatlarını açıkladı!](https://www.sabah.com.tr/spor/futbol/2026/08/16/trabzonspor-ferencvaros-maci-bilet-fiyatlarini-acikladi) — Sabah Spor · 2026-08-16T20:05:46+03:00 · turnuva=EL · kulüp=Trabzonspor
 - [GÜNÜN MAÇLARI 16 AĞUSTOS 2026: Bugün Kimlerin Maçlar Var? Bugünkü Maçlar Neler? İşte 16 Ağustos Günün Maçları](https://www.cnnturk.com/spor/gunun-maclari-16-agustos-2026-bugun-kimlerin-maclar-var-bugunku-maclar-neler-iste-16-agustos-gunun-maclari-3455119) — CNN Türk Spor · 2026-08-16T17:50:23+00:00 · turnuva=CL · kulüp=Galatasaray
 - [Fenerbahçe, Olimpik Lyon maçının hazırlıklarına başladı](https://www.aa.com.tr/tr/spor/fenerbahce-olimpik-lyon-macinin-hazirliklarina-basladi/4028779) — Anadolu Ajansı Spor · 2026-08-16T15:19:52+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe, Lyon maçı hazırlıklarına başladı](https://www.cnnturk.com/spor/futbol/fenerbahce-lyon-maci-hazirliklarina-basladi-3455210) — CNN Türk Spor · 2026-08-16T15:16:31+00:00 · turnuva=CL · kulüp=Fenerbahçe
@@ -22,9 +24,5 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Trabzonspor-Ferencvaros maçı ATV'de! Şifresiz yayınlanacak](https://www.takvim.com.tr/spor/trabzonspor/2026/08/15/trabzonspor-ferencvaros-maci-atvde-sifresiz-yayinlanacak) — Takvim Spor · 2026-08-15T22:02:01+03:00 · turnuva=EL · kulüp=Trabzonspor
 - [Başkentte İrfan Can duvarı! Fenerbahçe Gençlerbirliği'ne 2-1 yenildi](https://www.takvim.com.tr/spor/fenerbahce/2026/08/15/irfan-can-duvari-fenerbahce-genclerbirligine-2-1-yenildi) — Takvim Spor · 2026-08-15T20:27:47+03:00 · turnuva=CL · kulüp=Fenerbahçe, Gençlerbirliği
 - [Beşiktaş ve Trabzonspor'un UEFA Avrupa Ligi'nde maçlarını yönetecek hakemler belli oldu](https://www.aa.com.tr/tr/spor/besiktas-ve-trabzonsporun-uefa-avrupa-liginde-maclarini-yonetecek-hakemler-belli-oldu/4028210) — Anadolu Ajansı Spor · 2026-08-15T15:26:22+03:00 · turnuva=EL · kulüp=Beşiktaş, Trabzonspor
-- [Fenerbahçe'ye Şampiyonlar Ligi transferi! 2 isim listede - hurriyet.com.tr](https://news.google.com/rss/articles/CBMiowFBVV95cUxOWjVXY3dzbTFfTERlZUVpTVREWWx5QzloRXNRT1BfamZjRW5kcVl6WGZfRnFxcXhER19ycGR4WTd0T25QMmhTSmY2U2FJR0lxcVVyWXh1WXhxenA4QmNFYTRnTHE5b1R1UEhMOVNkUzMwOE1sd0o1X0pTSzUtNko3cjNTSFlYUnhfb2JUZk9LZ25FU1laelpZTGFYeUEtZGNXejlZ?oc=5) — hurriyet.com.tr · 2026-08-15T13:01:00+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe'de forma numaraları değişti! Lyon maçının kadrosu UEFA'ya bildirildi](https://www.takvim.com.tr/spor/fenerbahce/2026/08/14/fenerbahcede-forma-numaralari-degisti-7-ve-9-numara) — Takvim Spor · 2026-08-14T17:30:20+03:00 · turnuva=— · kulüp=Fenerbahçe
-- [Fenerbahçe'den TFF'ye bir erteleme talebi hazırlığı daha! Konyaspor olumlu bakıyor](https://www.takvim.com.tr/spor/fenerbahce/2026/08/14/fenerbahceden-tffye-bir-erteleme-talebi-hazirligi-daha) — Takvim Spor · 2026-08-14T16:27:12+03:00 · turnuva=CL · kulüp=Fenerbahçe, Konyaspor
-- [Türkiye ülke puanı sıralamasında kaçıncı? İşte UEFA'daki yerimiz (2026-2027 Sezonu)](https://www.takvim.com.tr/galeri/spor/turkiye-ulke-puani-siralamasinda-kacinci-iste-uefadaki-yerimiz-2026-2027-sezonu) — Takvim Spor · 2026-08-13T22:39:25+03:00 · turnuva=CL · kulüp=Fenerbahçe, Beşiktaş
-- [Gel bakalım Kauno Zalgiris! Beşiktaş Hradec Kralove'yi 1-0 yendi](https://www.takvim.com.tr/spor/besiktas/2026/08/13/gel-bakalim-kauno-zalgiris-besiktas-hradec-kraloveyi-1-0-yendi) — Takvim Spor · 2026-08-13T18:47:10+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Samuel Ballet, Amedspor’a transfer oldu! Antalyaspor’un kasasına 1,6 milyon Euro girdi - Akdenizmanset](https://news.google.com/rss/articles/CBMitAFBVV95cUxOYXpZdGR4ai13NzUwc2N3NzBRak9pSi1UN3NLYXc3TkdSYlc4ZGVUejdTanVkLUZZU2U3aFAyMjlEQWZ6T2tVMGtfVU9RZHNuMWFOX2J3N1ZBOWVjZ2trXy1jbWtMeGtUTVV0b2h3TFQ4OExvdWlnOXlsMVlpR3N1TXNRSGpGRFkxUkp6YWNwcHVRbWhKTUg0RE5Oa2RyOW9TRlVqdHhoRkYzMFpndHBESEhWSkw?oc=5) — Akdenizmanset · 2026-08-13T12:58:00+00:00 · turnuva=EL · kulüp=Antalyaspor
