@@ -1,27 +1,24 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-16T14:38:41.337238+00:00
-Toplam ilgili haber: 25
+Üretim zamanı: 2026-08-16T18:47:55.526570+00:00
+Toplam ilgili haber: 22
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [Trabzonspor-Ferencvaros maçının biletleri yarın satışa sunulacak](https://www.aa.com.tr/tr/spor/trabzonspor-ferencvaros-macinin-biletleri-yarin-satisa-sunulacak/4028930) — Anadolu Ajansı Spor · 2026-08-16T20:12:40+03:00 · turnuva=EL · kulüp=Trabzonspor
+- [Trabzonspor, Ferençvaroş maçı bilet fiyatlarını açıkladı!](https://www.sabah.com.tr/spor/futbol/2026/08/16/trabzonspor-ferencvaros-maci-bilet-fiyatlarini-acikladi) — Sabah Spor · 2026-08-16T20:05:46+03:00 · turnuva=EL · kulüp=Trabzonspor
+- [GÜNÜN MAÇLARI 16 AĞUSTOS 2026: Bugün Kimlerin Maçlar Var? Bugünkü Maçlar Neler? İşte 16 Ağustos Günün Maçları](https://www.cnnturk.com/spor/gunun-maclari-16-agustos-2026-bugun-kimlerin-maclar-var-bugunku-maclar-neler-iste-16-agustos-gunun-maclari-3455119) — CNN Türk Spor · 2026-08-16T17:50:23+00:00 · turnuva=CL · kulüp=Galatasaray
 - [Fenerbahçe, Olimpik Lyon maçının hazırlıklarına başladı](https://www.aa.com.tr/tr/spor/fenerbahce-olimpik-lyon-macinin-hazirliklarina-basladi/4028779) — Anadolu Ajansı Spor · 2026-08-16T15:19:52+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe, Lyon maçı hazırlıklarına başladı](https://www.cnnturk.com/spor/futbol/fenerbahce-lyon-maci-hazirliklarina-basladi-3455210) — CNN Türk Spor · 2026-08-16T15:16:31+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Fenerbahçe, Lyon maçı hazırlıklarına ara vermeden başladı!](https://www.sabah.com.tr/spor/futbol/2026/08/16/fenerbahce-lyon-maci-hazirliklarina-ara-vermeden-basladi) — Sabah Spor · 2026-08-16T15:06:42+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Fenerbahçe'de Lyon mesaisi başladı!](https://www.fotomac.com.tr/fenerbahce/2026/08/16/fenerbahcede-lyon-mesaisi-basladi) — Fotomaç · 2026-08-16T14:54:09+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [F.Bahçe'de Lyon mesaisi başladı](https://www.haberturk.com/fenerbahce-de-lyon-maci-hazirliklari-basladi-3906013-spor) — Haberturk Spor · 2026-08-16T12:48:43+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe, Olimpik Lyon maçının hazırlıklarına başladı](https://www.hurriyet.com.tr/sporarena/fenerbahce-olimpik-lyon-macinin-hazirliklarina-basladi-43275197) — Hürriyet Spor · 2026-08-16T12:23:55+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe - Lyon maçına Alman hakem](https://www.cnnturk.com/spor/futbol/fenerbahce-lyon-macina-alman-hakem-3455144) — CNN Türk Spor · 2026-08-16T12:07:13+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe'nin Olimpik Lyon ile yapacağı maçı Alman hakem Sven Jablonski yönetecek](https://www.aa.com.tr/tr/spor/fenerbahcenin-olimpik-lyon-ile-yapacagi-maci-alman-hakem-sven-jablonski-yonetecek/4028651) — Anadolu Ajansı Spor · 2026-08-16T11:57:34+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Fenerbahçe - Olimpik Lyon maçının hakemi açıklandı!](https://www.sabah.com.tr/spor/futbol/2026/08/16/fenerbahce-olimpik-lyon-macinin-hakemi-aciklandi) — Sabah Spor · 2026-08-16T11:34:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Fenerbahçe-Lyon maçının hakemi belli oldu!](https://www.fotomac.com.tr/fenerbahce/2026/08/16/fenerbahce-lyon-macinin-hakemi-belli-oldu) — Fotomaç · 2026-08-16T11:21:44+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [GÜNÜN MAÇLARI 16 AĞUSTOS 2026: Bugün Kimlerin Maçlar Var? Bugünkü Maçlar Neler? İşte 16 Ağustos Günün Maçları](https://www.cnnturk.com/spor/gunun-maclari-16-agustos-2026-bugun-kimlerin-maclar-var-bugunku-maclar-neler-iste-16-agustos-gunun-maclari-3455119) — CNN Türk Spor · 2026-08-16T10:26:02+00:00 · turnuva=CL · kulüp=Galatasaray
 - [F.Bahçe'ye Alman hakem!](https://www.haberturk.com/fenerbahce-lyon-macini-alman-hakem-sven-jablonski-yonetecek-3905976-spor) — Haberturk Spor · 2026-08-16T09:30:57+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [BEŞİKTAŞ PLAY OFF RAKİBİ: Beşiktaş'ın UEFA Avrupa Ligi Play-Off Rakibi Kim Oldu? Beşiktaş Turu Geçti, Sıradaki Rakip Kim? UEFA Avrupa Ligi'nde Kritik Viraj](https://www.cnnturk.com/spor/futbol/besiktas-uefa-avrupa-ligi-play-off-rakibi-besiktasin-uefa-avrupa-ligi-play-off-rakibi-kim-oldu-besiktas-turu-gecti-siradaki-3454357) — CNN Türk Spor · 2026-08-16T09:12:37+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Fenerbahçe - Lyon maçının hakemi açıklandı!](https://www.hurriyet.com.tr/sporarena/fenerbahce-lyon-macinin-hakemi-aciklandi-43274973) — Hürriyet Spor · 2026-08-16T08:24:00+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Beşiktaş, 5'te 5 için sahada!](https://www.hurriyet.com.tr/sporarena/besiktas-5te-5-icin-sahada-43274778) — Hürriyet Spor · 2026-08-16T04:00:00+00:00 · turnuva=EL · kulüp=Beşiktaş, Eyüpspor
-- [Trabzonspor - Ferencvaros maçı ATV'de!](https://www.fotomac.com.tr/trabzonspor/2026/08/15/trabzonspor-ferencvaros-maci-atvde) — Fotomaç · 2026-08-16T01:30:46+03:00 · turnuva=EL · kulüp=Trabzonspor
 - [Trabzonspor-Ferencvaros maçı ATV'de! Şifresiz yayınlanacak](https://www.takvim.com.tr/spor/trabzonspor/2026/08/15/trabzonspor-ferencvaros-maci-atvde-sifresiz-yayinlanacak) — Takvim Spor · 2026-08-15T22:02:01+03:00 · turnuva=EL · kulüp=Trabzonspor
 - [Başkentte İrfan Can duvarı! Fenerbahçe Gençlerbirliği'ne 2-1 yenildi](https://www.takvim.com.tr/spor/fenerbahce/2026/08/15/irfan-can-duvari-fenerbahce-genclerbirligine-2-1-yenildi) — Takvim Spor · 2026-08-15T20:27:47+03:00 · turnuva=CL · kulüp=Fenerbahçe, Gençlerbirliği
 - [Beşiktaş ve Trabzonspor'un UEFA Avrupa Ligi'nde maçlarını yönetecek hakemler belli oldu](https://www.aa.com.tr/tr/spor/besiktas-ve-trabzonsporun-uefa-avrupa-liginde-maclarini-yonetecek-hakemler-belli-oldu/4028210) — Anadolu Ajansı Spor · 2026-08-15T15:26:22+03:00 · turnuva=EL · kulüp=Beşiktaş, Trabzonspor
