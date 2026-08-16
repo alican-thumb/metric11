@@ -1,6 +1,6 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-16T01:58:59.129795+00:00
+Üretim zamanı: 2026-08-16T03:13:59.912114+00:00
 Toplam ilgili haber: 21
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
@@ -12,7 +12,7 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Beşiktaş ve Trabzonspor'un UEFA Avrupa Ligi'nde maçlarını yönetecek hakemler belli oldu](https://www.aa.com.tr/tr/spor/besiktas-ve-trabzonsporun-uefa-avrupa-liginde-maclarini-yonetecek-hakemler-belli-oldu/4028210) — Anadolu Ajansı Spor · 2026-08-15T15:26:22+03:00 · turnuva=EL · kulüp=Beşiktaş, Trabzonspor
 - [Beşiktaş'ın yeni teknik adamı Italiano, kulüp tarihine geçti](https://www.cnnturk.com/spor/futbol/besiktasin-yeni-teknik-adami-italiano-kulup-tarihine-gecti-3454820) — CNN Türk Spor · 2026-08-15T14:17:43+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Fenerbahçe'ye Şampiyonlar Ligi transferi! 2 isim listede](https://www.hurriyet.com.tr/sporarena/fenerbahceye-sampiyonlar-ligi-transferi-2-isim-listede-43274333) — Hürriyet Spor · 2026-08-15T13:01:00+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Fenerbahçe'ye Şampiyonlar Ligi transferi! 2 isim listede - Hürriyet](https://news.google.com/rss/articles/CBMiowFBVV95cUxOWjVXY3dzbTFfTERlZUVpTVREWWx5QzloRXNRT1BfamZjRW5kcVl6WGZfRnFxcXhER19ycGR4WTd0T25QMmhTSmY2U2FJR0lxcVVyWXh1WXhxenA4QmNFYTRnTHE5b1R1UEhMOVNkUzMwOE1sd0o1X0pTSzUtNko3cjNTSFlYUnhfb2JUZk9LZ25FU1laelpZTGFYeUEtZGNXejlZ?oc=5) — Hürriyet · 2026-08-15T13:01:00+00:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe'ye Şampiyonlar Ligi transferi! 2 isim listede - hurriyet.com.tr](https://news.google.com/rss/articles/CBMiowFBVV95cUxOWjVXY3dzbTFfTERlZUVpTVREWWx5QzloRXNRT1BfamZjRW5kcVl6WGZfRnFxcXhER19ycGR4WTd0T25QMmhTSmY2U2FJR0lxcVVyWXh1WXhxenA4QmNFYTRnTHE5b1R1UEhMOVNkUzMwOE1sd0o1X0pTSzUtNko3cjNTSFlYUnhfb2JUZk9LZ25FU1laelpZTGFYeUEtZGNXejlZ?oc=5) — hurriyet.com.tr · 2026-08-15T13:01:00+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Trabzonspor - Ferencvaros maçının hakemi belli oldu!](https://www.hurriyet.com.tr/sporarena/trabzonspor-ferencvaros-macinin-hakemi-belli-oldu-43274330) — Hürriyet Spor · 2026-08-15T12:38:53+00:00 · turnuva=EL · kulüp=Trabzonspor
 - [Beşiktaş - Kauno Zalgiris maçının hakemi açıklandı!](https://www.hurriyet.com.tr/sporarena/besiktas-kauno-zalgiris-macinin-hakemi-aciklandi-43274322) — Hürriyet Spor · 2026-08-15T12:33:22+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [FENERBAHÇE - LYON MAÇ KADROSU AÇIKLANDI | Lukaku Lyon maçında oynayacak mı?](https://www.cnnturk.com/spor/futbol/fenerbahce-lyon-mac-kadrosu-aciklandi-lukaku-lyon-macinda-oynayacak-mi-3454753) — CNN Türk Spor · 2026-08-15T12:30:01+00:00 · turnuva=CL · kulüp=Fenerbahçe
