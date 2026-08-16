@@ -4,7 +4,7 @@ import json
 import math
 from collections import Counter
 
-from src.normalization import normalize_name
+from src.normalization import canonical_player_name, normalize_name, normalize_team_name
 from src.preview.constants import ACTION_LABELS
 
 _H2H_MIN_MATCHES = 3
@@ -167,6 +167,112 @@ def transfer_strength_edge(team_name: str) -> dict:
         "confirmed_net_value_eur": round(confirmed_net_value),
         "total_net_value_eur": round(total_net_value),
         "top_moves": sorted(top_moves, key=lambda m: m["market_value_eur"], reverse=True)[:5],
+    }
+
+
+# Kadro geçiş (squad transition) sinyali: haber-kaynaklı transfer_tracker büyük gerçek
+# transferleri kaçırabiliyor (bkz. PROJECT_STATE 2026-08-16 — Beşiktaş'ın Vlahović/Trossard/
+# Wilfred Ndidi gibi imzaları tracker'da HİÇ yoktu, transfer_strength_edge bu yüzden
+# available=False dönüyordu). Bu sinyal, iki GERÇEK Transfermarkt kadro anlık görüntüsünü
+# (2025-26 vs 2026-27, oyuncu + piyasa değeri) doğrudan karşılaştırıp net kadro değeri
+# değişimini hesaplar — söylenti/haber ayrıştırmaya bağımlı değil, ground-truth.
+_SQUAD_TRANSITION_EDGE_CAP = 0.15
+_SQUAD_TRANSITION_MIN_NET_EUR = 3_000_000
+# 2026-27 fikstür adı -> Transfermarkt kadro dosyalarındaki (her iki sezonda da aynı) ad.
+_SQUAD_NAME_TO_TM = {
+    "EYÜPSPOR": "İKAS EYÜPSPOR",
+    "İSTANBUL BAŞAKŞEHİR FK": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ",
+    "AMED SPORTİF FAALİYETLER": "AMED SFK",
+}
+_squad_players_cache: dict[str, dict] = {}
+
+
+def _tm_club_name(fixture_team_name: str) -> str:
+    n = normalize_team_name(fixture_team_name) or ""
+    return _SQUAD_NAME_TO_TM.get(n, n)
+
+
+def _load_squad_players(season_label: str) -> dict:
+    if season_label not in _squad_players_cache:
+        from src.config import PROCESSED_DIR
+
+        path = PROCESSED_DIR / f"transfermarkt_super_lig_squads_{season_label}.json"
+        try:
+            payload = json.loads(path.read_text(encoding="utf-8"))
+        except (FileNotFoundError, json.JSONDecodeError):
+            _squad_players_cache[season_label] = {}
+        else:
+            out = {}
+            for club in payload.get("clubs", []):
+                out[club["team_name"]] = {
+                    canonical_player_name(p.get("name")): (p.get("market_value_eur") or 0)
+                    for p in club.get("players", [])
+                }
+            _squad_players_cache[season_label] = out
+    return _squad_players_cache[season_label]
+
+
+def squad_transition_edge(team_name: str) -> dict:
+    """2025-26 → 2026-27 arası GERÇEK kadro değişiminden (Transfermarkt) takım gücü ek/çıkarımı.
+
+    Her iki sezonun kadro anlık görüntüsü oyuncu adına göre karşılaştırılır: yalnız
+    2026-27'de olanlar (gelenler) + yalnız 2025-26'da olanlar (gidenler), piyasa
+    değerleriyle ağırlıklı net değişim. Kadrolardan biri toplanamamışsa (bkz.
+    transfermarkt_super_lig_squads_*.json) veya net değişim gürültü eşiğinin
+    (3M€) altındaysa available=False — tahmine hiç karışmaz.
+    """
+    prev = _load_squad_players("2025_2026").get(_tm_club_name(team_name))
+    curr = _load_squad_players("2026_2027").get(_tm_club_name(team_name))
+    if not prev or not curr:
+        return {"available": False, "edge": 0.0}
+
+    arrivals = [(name, val) for name, val in curr.items() if name not in prev]
+    departures = [(name, val) for name, val in prev.items() if name not in curr]
+    arrivals_value = sum(v for _, v in arrivals)
+    departures_value = sum(v for _, v in departures)
+    net_value = arrivals_value - departures_value
+
+    if abs(net_value) < _SQUAD_TRANSITION_MIN_NET_EUR:
+        return {"available": False, "edge": 0.0, "net_value_eur": round(net_value)}
+
+    squad_value = sum(curr.values()) or _TRANSFER_DEFAULT_SQUAD_VALUE_EUR
+    relative_edge = net_value / max(squad_value, _TRANSFER_DEFAULT_SQUAD_VALUE_EUR)
+    edge = max(-_SQUAD_TRANSITION_EDGE_CAP, min(_SQUAD_TRANSITION_EDGE_CAP, relative_edge))
+    return {
+        "available": True,
+        "edge": round(edge, 4),
+        "net_value_eur": round(net_value),
+        "arrivals_value_eur": round(arrivals_value),
+        "departures_value_eur": round(departures_value),
+        "top_arrivals": [
+            {"player": n, "market_value_eur": v}
+            for n, v in sorted(arrivals, key=lambda x: x[1], reverse=True)[:5]
+        ],
+        "top_departures": [
+            {"player": n, "market_value_eur": v}
+            for n, v in sorted(departures, key=lambda x: x[1], reverse=True)[:5]
+        ],
+    }
+
+
+def combined_transfer_edge(team_name: str) -> dict:
+    """Haber-kaynaklı (transfer_strength_edge) + ground-truth kadro-diff (squad_transition_edge)
+    sinyallerini harmanlar. İkisi de varsa ortalanır (aynı yönde güçlenir, ters yönde yumuşar);
+    yalnız biri varsa o kullanılır; ikisi de yoksa available=False."""
+    news = transfer_strength_edge(team_name)
+    squad = squad_transition_edge(team_name)
+    news_ok, squad_ok = news.get("available"), squad.get("available")
+    if not news_ok and not squad_ok:
+        return {"available": False, "edge": 0.0}
+    if news_ok and squad_ok:
+        edge = (news["edge"] + squad["edge"]) / 2
+    else:
+        edge = squad["edge"] if squad_ok else news["edge"]
+    return {
+        "available": True,
+        "edge": round(max(-_SQUAD_TRANSITION_EDGE_CAP, min(_SQUAD_TRANSITION_EDGE_CAP, edge)), 4),
+        "news_signal": news if news_ok else None,
+        "squad_signal": squad if squad_ok else None,
     }
 
 

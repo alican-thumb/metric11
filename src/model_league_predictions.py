@@ -9,7 +9,7 @@ from pathlib import Path
 
 from src.config import PROCESSED_DIR
 from src.normalization import normalize_matches
-from src.preview.probability import european_form_edge, fixture_congestion_edge, head_to_head_draw_signal, transfer_strength_edge
+from src.preview.probability import combined_transfer_edge, european_form_edge, fixture_congestion_edge, head_to_head_draw_signal
 
 
 def main() -> None:
@@ -229,10 +229,13 @@ def predict_match(
     # Transfer/kadro sinyali: yalnızca ileriye dönük tahminlerde (apply_transfer_signal=True,
     # bkz. build_season_fixture_predictions.py) devreye girer. Backtest/kalibre edilmiş sistem
     # varsayılan False ile hiç etkilenmez — bu doğrulanmamış, yeni bir sinyaldir.
+    # combined_transfer_edge: haber-kaynaklı tracker + Transfermarkt kadro-diff (ground-truth)
+    # harmanı (2026-08-16 — tracker büyük gerçek transferleri (Beşiktaş'ın Vlahović/Trossard
+    # gibi imzaları) kaçırıyordu, model yeni sezon kadro gerçekliğine kördü).
     transfer_signal = {"home": {"available": False}, "away": {"available": False}}
     if apply_transfer_signal:
-        transfer_home = transfer_strength_edge(home)
-        transfer_away = transfer_strength_edge(away)
+        transfer_home = combined_transfer_edge(home)
+        transfer_away = combined_transfer_edge(away)
         transfer_signal = {"home": transfer_home, "away": transfer_away}
         if transfer_home.get("available") or transfer_away.get("available"):
             strength_edge += (transfer_home.get("edge", 0.0) - transfer_away.get("edge", 0.0)) * 0.5
