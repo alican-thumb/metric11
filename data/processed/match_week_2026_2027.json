@@ -1,6 +1,6 @@
 {
   "available": true,
-  "generated_at": "2026-08-16T01:58:58.682126",
+  "generated_at": "2026-08-16T04:48:14.283217",
   "week": 1,
   "matches": [
     {
@@ -8,18 +8,29 @@
       "date": "14 Ağu",
       "home_team": "GALATASARAY A.Ş.",
       "away_team": "ARCA ÇORUM FK",
-      "is_played": true,
-      "actual_score": "2 - 2",
+      "is_played": false,
+      "actual_score": null,
       "predicted": "home",
       "pick_text": "GALATASARAY A.Ş.",
       "home_win_probability": 0.592,
       "draw_probability": 0.283,
       "away_win_probability": 0.125,
-      "data_confidence": "PLAYED",
+      "data_confidence": "HIGH",
       "recommended_scoreline": "1-0",
       "expected_home_goals": 1.35,
       "expected_away_goals": 0.46,
-      "signals": null
+      "signals": {
+        "over_2_5_probability": 0.272,
+        "btts_probability": 0.273,
+        "expected_total_cards": 4.4,
+        "red_card_risk": 0.239,
+        "home_card_data_available": true,
+        "away_card_data_available": false,
+        "no_goal_probability": 0.164,
+        "home_scores_first_probability": 0.624,
+        "away_scores_first_probability": 0.213,
+        "likely_goal_band": "76-90+"
+      }
     },
     {
       "match_id": "317785",
@@ -254,16 +265,5 @@
       }
     }
   ],
-  "last_week": {
-    "week": 1,
-    "evaluated_matches": 1,
-    "correct": 0,
-    "accuracy": 0.0,
-    "actual_draws": 1,
-    "draws_caught": 0,
-    "draw_recall": 0.0,
-    "high_conf_matches": 0,
-    "high_conf_correct": 0,
-    "high_conf_accuracy": null
-  }
+  "last_week": null
 }

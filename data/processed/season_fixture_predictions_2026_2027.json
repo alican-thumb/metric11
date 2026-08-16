@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-16T01:58:58.263257",
+  "generated_at": "2026-08-16T04:48:13.876607",
   "season": "2026-2027",
-  "source_note": "Tahminler 2025-26 sezonunun tamamı ve 2026-27'de şimdiye kadar oynanmış (1 maç) sonuçlardan türetilen güncel takım formu/Elo/transfer durumuna dayanır; sezon ilerledikçe bu sayfa her gün otomatik olarak yeniden hesaplanır, statik bir anlık görüntü değildir.",
+  "source_note": "Tahminler 2025-26 sezonunun tamamı ve 2026-27'de şimdiye kadar oynanmış (0 maç) sonuçlardan türetilen güncel takım formu/Elo/transfer durumuna dayanır; sezon ilerledikçe bu sayfa her gün otomatik olarak yeniden hesaplanır, statik bir anlık görüntü değildir.",
   "total_weeks": 34,
   "total_matches": 306,
-  "played_matches": 1,
-  "new_team_matches": 68,
+  "played_matches": 0,
+  "new_team_matches": 66,
   "new_teams": [
     "AMED SPORTİF FAALİYETLER",
     "ERZURUMSPOR FK",
@@ -20,9 +20,9 @@
           "date_time": "14.08.2026 21:30",
           "home_team": "GALATASARAY A.Ş.",
           "away_team": "ARCA ÇORUM FK",
-          "is_played": true,
-          "actual_score": "2 - 2",
-          "data_confidence": "PLAYED",
+          "is_played": false,
+          "actual_score": null,
+          "data_confidence": "HIGH",
           "raw_predicted": "home",
           "predicted": "home",
           "expected_home_goals": 1.35,
@@ -4373,6 +4373,220 @@
           "referee_goals_per_match": null
         },
         {
+          "match_id": "317825",
+          "date_time": "13.09.2026",
+          "home_team": "TÜMOSAN KONYASPOR",
+          "away_team": "TRABZONSPOR A.Ş.",
+          "is_played": false,
+          "actual_score": null,
+          "data_confidence": "LOW",
+          "raw_predicted": "home",
+          "predicted": "home",
+          "expected_home_goals": 1.58,
+          "expected_away_goals": 1.37,
+          "top_scorelines": [
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.113
+            },
+            {
+              "score": "2-1",
+              "home_goals": 2,
+              "away_goals": 1,
+              "probability": 0.09
+            },
+            {
+              "score": "1-0",
+              "home_goals": 1,
+              "away_goals": 0,
+              "probability": 0.083
+            },
+            {
+              "score": "1-2",
+              "home_goals": 1,
+              "away_goals": 2,
+              "probability": 0.077
+            },
+            {
+              "score": "0-1",
+              "home_goals": 0,
+              "away_goals": 1,
+              "probability": 0.071
+            }
+          ],
+          "recommended_scoreline": {
+            "score": "2-1",
+            "home_goals": 2,
+            "away_goals": 1,
+            "probability": 0.09
+          },
+          "home_win_probability": 0.426,
+          "draw_probability": 0.244,
+          "away_win_probability": 0.33,
+          "head_to_head": {
+            "available": false,
+            "matches": 0,
+            "draw_rate": null
+          },
+          "transfer_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "signal_count": 0
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "signal_count": 0
+            }
+          },
+          "fixture_congestion": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "days_rest": null,
+              "opponent": null
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "days_rest": null,
+              "opponent": null
+            }
+          },
+          "european_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "match_count": 0
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "match_count": 0
+            }
+          },
+          "home_elo": 1474.6,
+          "away_elo": 1608.3,
+          "home_points_per_match": 1.62,
+          "away_points_per_match": 1.5,
+          "strength_edge": 0.09,
+          "home_xg_efficiency": 0.934,
+          "away_xg_efficiency": 1.086,
+          "referee_adj": 0.0,
+          "referee_cards_per_match": null,
+          "referee_goals_per_match": null
+        },
+        {
+          "match_id": "317826",
+          "date_time": "13.09.2026",
+          "home_team": "GALATASARAY A.Ş.",
+          "away_team": "KOCAELİSPOR",
+          "is_played": false,
+          "actual_score": null,
+          "data_confidence": "HIGH",
+          "raw_predicted": "home",
+          "predicted": "home",
+          "expected_home_goals": 1.9,
+          "expected_away_goals": 0.79,
+          "top_scorelines": [
+            {
+              "score": "1-0",
+              "home_goals": 1,
+              "away_goals": 0,
+              "probability": 0.129
+            },
+            {
+              "score": "2-0",
+              "home_goals": 2,
+              "away_goals": 0,
+              "probability": 0.122
+            },
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.102
+            },
+            {
+              "score": "2-1",
+              "home_goals": 2,
+              "away_goals": 1,
+              "probability": 0.097
+            },
+            {
+              "score": "3-0",
+              "home_goals": 3,
+              "away_goals": 0,
+              "probability": 0.078
+            }
+          ],
+          "recommended_scoreline": {
+            "score": "1-0",
+            "home_goals": 1,
+            "away_goals": 0,
+            "probability": 0.129
+          },
+          "home_win_probability": 0.636,
+          "draw_probability": 0.215,
+          "away_win_probability": 0.149,
+          "head_to_head": {
+            "available": false,
+            "matches": 0,
+            "draw_rate": null
+          },
+          "transfer_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "signal_count": 0
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "signal_count": 0
+            }
+          },
+          "fixture_congestion": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "days_rest": null,
+              "opponent": null
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "days_rest": null,
+              "opponent": null
+            }
+          },
+          "european_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "match_count": 0
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "match_count": 0
+            }
+          },
+          "home_elo": 1635.5,
+          "away_elo": 1430.7,
+          "home_points_per_match": 1.75,
+          "away_points_per_match": 0.5,
+          "strength_edge": 0.54,
+          "home_xg_efficiency": 1.147,
+          "away_xg_efficiency": 2.277,
+          "referee_adj": 0.0,
+          "referee_cards_per_match": null,
+          "referee_goals_per_match": null
+        },
+        {
           "match_id": "317827",
           "date_time": "13.09.2026",
           "home_team": "BEŞİKTAŞ A.Ş.",
@@ -5104,220 +5318,6 @@
           "strength_edge": -0.08,
           "home_xg_efficiency": 1.26,
           "away_xg_efficiency": 0.681,
-          "referee_adj": 0.0,
-          "referee_cards_per_match": null,
-          "referee_goals_per_match": null
-        },
-        {
-          "match_id": "317825",
-          "date_time": "13.09.2026",
-          "home_team": "TÜMOSAN KONYASPOR",
-          "away_team": "TRABZONSPOR A.Ş.",
-          "is_played": false,
-          "actual_score": null,
-          "data_confidence": "LOW",
-          "raw_predicted": "home",
-          "predicted": "home",
-          "expected_home_goals": 1.58,
-          "expected_away_goals": 1.37,
-          "top_scorelines": [
-            {
-              "score": "1-1",
-              "home_goals": 1,
-              "away_goals": 1,
-              "probability": 0.113
-            },
-            {
-              "score": "2-1",
-              "home_goals": 2,
-              "away_goals": 1,
-              "probability": 0.09
-            },
-            {
-              "score": "1-0",
-              "home_goals": 1,
-              "away_goals": 0,
-              "probability": 0.083
-            },
-            {
-              "score": "1-2",
-              "home_goals": 1,
-              "away_goals": 2,
-              "probability": 0.077
-            },
-            {
-              "score": "0-1",
-              "home_goals": 0,
-              "away_goals": 1,
-              "probability": 0.071
-            }
-          ],
-          "recommended_scoreline": {
-            "score": "2-1",
-            "home_goals": 2,
-            "away_goals": 1,
-            "probability": 0.09
-          },
-          "home_win_probability": 0.426,
-          "draw_probability": 0.244,
-          "away_win_probability": 0.33,
-          "head_to_head": {
-            "available": false,
-            "matches": 0,
-            "draw_rate": null
-          },
-          "transfer_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "signal_count": 0
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "signal_count": 0
-            }
-          },
-          "fixture_congestion": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "days_rest": null,
-              "opponent": null
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "days_rest": null,
-              "opponent": null
-            }
-          },
-          "european_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "match_count": 0
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "match_count": 0
-            }
-          },
-          "home_elo": 1474.6,
-          "away_elo": 1608.3,
-          "home_points_per_match": 1.62,
-          "away_points_per_match": 1.5,
-          "strength_edge": 0.09,
-          "home_xg_efficiency": 0.934,
-          "away_xg_efficiency": 1.086,
-          "referee_adj": 0.0,
-          "referee_cards_per_match": null,
-          "referee_goals_per_match": null
-        },
-        {
-          "match_id": "317826",
-          "date_time": "13.09.2026",
-          "home_team": "GALATASARAY A.Ş.",
-          "away_team": "KOCAELİSPOR",
-          "is_played": false,
-          "actual_score": null,
-          "data_confidence": "HIGH",
-          "raw_predicted": "home",
-          "predicted": "home",
-          "expected_home_goals": 1.9,
-          "expected_away_goals": 0.79,
-          "top_scorelines": [
-            {
-              "score": "1-0",
-              "home_goals": 1,
-              "away_goals": 0,
-              "probability": 0.129
-            },
-            {
-              "score": "2-0",
-              "home_goals": 2,
-              "away_goals": 0,
-              "probability": 0.122
-            },
-            {
-              "score": "1-1",
-              "home_goals": 1,
-              "away_goals": 1,
-              "probability": 0.102
-            },
-            {
-              "score": "2-1",
-              "home_goals": 2,
-              "away_goals": 1,
-              "probability": 0.097
-            },
-            {
-              "score": "3-0",
-              "home_goals": 3,
-              "away_goals": 0,
-              "probability": 0.078
-            }
-          ],
-          "recommended_scoreline": {
-            "score": "1-0",
-            "home_goals": 1,
-            "away_goals": 0,
-            "probability": 0.129
-          },
-          "home_win_probability": 0.636,
-          "draw_probability": 0.215,
-          "away_win_probability": 0.149,
-          "head_to_head": {
-            "available": false,
-            "matches": 0,
-            "draw_rate": null
-          },
-          "transfer_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "signal_count": 0
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "signal_count": 0
-            }
-          },
-          "fixture_congestion": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "days_rest": null,
-              "opponent": null
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "days_rest": null,
-              "opponent": null
-            }
-          },
-          "european_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "match_count": 0
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "match_count": 0
-            }
-          },
-          "home_elo": 1635.5,
-          "away_elo": 1430.7,
-          "home_points_per_match": 1.75,
-          "away_points_per_match": 0.5,
-          "strength_edge": 0.54,
-          "home_xg_efficiency": 1.147,
-          "away_xg_efficiency": 2.277,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
           "referee_goals_per_match": null
@@ -6750,14 +6750,14 @@
           "match_id": "317838",
           "date_time": "11.10.2026",
           "home_team": "GAZİANTEP FUTBOL KULÜBÜ A.Ş.",
-          "away_team": "ÇORUM FK",
+          "away_team": "ARCA ÇORUM FK",
           "is_played": false,
           "actual_score": null,
-          "data_confidence": "LOW_NEW_TEAM",
+          "data_confidence": "LOW",
           "raw_predicted": "draw",
           "predicted": "draw",
-          "expected_home_goals": 0.79,
-          "expected_away_goals": 0.81,
+          "expected_home_goals": 0.78,
+          "expected_away_goals": 0.82,
           "top_scorelines": [
             {
               "score": "0-0",
@@ -6769,13 +6769,13 @@
               "score": "0-1",
               "home_goals": 0,
               "away_goals": 1,
-              "probability": 0.163
+              "probability": 0.165
             },
             {
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.159
+              "probability": 0.158
             },
             {
               "score": "1-1",
@@ -6787,7 +6787,7 @@
               "score": "0-2",
               "home_goals": 0,
               "away_goals": 2,
-              "probability": 0.066
+              "probability": 0.067
             }
           ],
           "recommended_scoreline": {
@@ -6796,9 +6796,9 @@
             "away_goals": 0,
             "probability": 0.202
           },
-          "home_win_probability": 0.318,
+          "home_win_probability": 0.314,
           "draw_probability": 0.353,
-          "away_win_probability": 0.329,
+          "away_win_probability": 0.333,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -6843,10 +6843,10 @@
             }
           },
           "home_elo": 1420.8,
-          "away_elo": 1500.0,
+          "away_elo": 1506.3,
           "home_points_per_match": 0.5,
-          "away_points_per_match": 0,
-          "strength_edge": -0.04,
+          "away_points_per_match": 1.0,
+          "strength_edge": -0.28,
           "home_xg_efficiency": 1.166,
           "away_xg_efficiency": null,
           "referee_adj": 0.0,
@@ -8623,257 +8623,6 @@
           "referee_goals_per_match": null
         },
         {
-          "match_id": "317861",
-          "date_time": "25.10.2026",
-          "home_team": "TÜMOSAN KONYASPOR",
-          "away_team": "GENÇLERBİRLİĞİ",
-          "is_played": false,
-          "actual_score": null,
-          "data_confidence": "MEDIUM",
-          "raw_predicted": "home",
-          "predicted": "home",
-          "expected_home_goals": 1.77,
-          "expected_away_goals": 1.29,
-          "top_scorelines": [
-            {
-              "score": "1-1",
-              "home_goals": 1,
-              "away_goals": 1,
-              "probability": 0.107
-            },
-            {
-              "score": "2-1",
-              "home_goals": 2,
-              "away_goals": 1,
-              "probability": 0.095
-            },
-            {
-              "score": "1-0",
-              "home_goals": 1,
-              "away_goals": 0,
-              "probability": 0.083
-            },
-            {
-              "score": "2-0",
-              "home_goals": 2,
-              "away_goals": 0,
-              "probability": 0.074
-            },
-            {
-              "score": "1-2",
-              "home_goals": 1,
-              "away_goals": 2,
-              "probability": 0.069
-            }
-          ],
-          "recommended_scoreline": {
-            "score": "2-1",
-            "home_goals": 2,
-            "away_goals": 1,
-            "probability": 0.095
-          },
-          "home_win_probability": 0.468,
-          "draw_probability": 0.264,
-          "away_win_probability": 0.268,
-          "head_to_head": {
-            "available": true,
-            "matches": 19,
-            "draw_rate": 0.368,
-            "last_meeting_date": "2026-03-19T17:00:00+00:00"
-          },
-          "transfer_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "signal_count": 0
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "signal_count": 0
-            }
-          },
-          "fixture_congestion": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "days_rest": null,
-              "opponent": null
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "days_rest": null,
-              "opponent": null
-            }
-          },
-          "european_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "match_count": 0
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "match_count": 0
-            }
-          },
-          "home_elo": 1474.6,
-          "away_elo": 1443.1,
-          "home_points_per_match": 1.62,
-          "away_points_per_match": 1.12,
-          "strength_edge": 0.22,
-          "home_xg_efficiency": 0.934,
-          "away_xg_efficiency": 1.26,
-          "referee_adj": 0.0,
-          "referee_cards_per_match": null,
-          "referee_goals_per_match": null
-        },
-        {
-          "match_id": "317862",
-          "date_time": "25.10.2026",
-          "home_team": "GALATASARAY A.Ş.",
-          "away_team": "FENERBAHÇE A.Ş.",
-          "is_played": false,
-          "actual_score": null,
-          "data_confidence": "LOW",
-          "raw_predicted": "away",
-          "predicted": "away",
-          "expected_home_goals": 1.72,
-          "expected_away_goals": 1.89,
-          "top_scorelines": [
-            {
-              "score": "1-1",
-              "home_goals": 1,
-              "away_goals": 1,
-              "probability": 0.088
-            },
-            {
-              "score": "1-2",
-              "home_goals": 1,
-              "away_goals": 2,
-              "probability": 0.083
-            },
-            {
-              "score": "2-1",
-              "home_goals": 2,
-              "away_goals": 1,
-              "probability": 0.076
-            },
-            {
-              "score": "2-2",
-              "home_goals": 2,
-              "away_goals": 2,
-              "probability": 0.071
-            },
-            {
-              "score": "1-3",
-              "home_goals": 1,
-              "away_goals": 3,
-              "probability": 0.052
-            }
-          ],
-          "recommended_scoreline": {
-            "score": "1-2",
-            "home_goals": 1,
-            "away_goals": 2,
-            "probability": 0.083
-          },
-          "home_win_probability": 0.341,
-          "draw_probability": 0.253,
-          "away_win_probability": 0.406,
-          "head_to_head": {
-            "available": true,
-            "matches": 37,
-            "draw_rate": 0.351,
-            "last_meeting_date": "2026-04-26T17:00:00+00:00"
-          },
-          "transfer_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "signal_count": 0
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "signal_count": 0
-            }
-          },
-          "fixture_congestion": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "days_rest": null,
-              "opponent": null
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "days_rest": null,
-              "opponent": null
-            }
-          },
-          "european_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "match_count": 0
-            },
-            "away": {
-              "available": true,
-              "edge": 0.15,
-              "match_count": 4,
-              "record": {
-                "w": 3,
-                "d": 1,
-                "l": 0
-              },
-              "recent": [
-                {
-                  "outcome": "win",
-                  "opponent": "Sturm Graz",
-                  "opponent_strength": "strong",
-                  "date": "2026-08-11",
-                  "score": "1-0"
-                },
-                {
-                  "outcome": "win",
-                  "opponent": "Sturm Graz",
-                  "opponent_strength": "strong",
-                  "date": "2026-08-04",
-                  "score": "2-0"
-                },
-                {
-                  "outcome": "draw",
-                  "opponent": "Górnik Zabrze",
-                  "opponent_strength": "mid",
-                  "date": "2026-07-29",
-                  "score": "1-1"
-                },
-                {
-                  "outcome": "win",
-                  "opponent": "Górnik Zabrze",
-                  "opponent_strength": "mid",
-                  "date": "2026-07-21",
-                  "score": "1-0"
-                }
-              ]
-            }
-          },
-          "home_elo": 1635.5,
-          "away_elo": 1654.4,
-          "home_points_per_match": 1.75,
-          "away_points_per_match": 2.12,
-          "strength_edge": -0.36,
-          "home_xg_efficiency": 1.147,
-          "away_xg_efficiency": 0.914,
-          "referee_adj": 0.0,
-          "referee_cards_per_match": null,
-          "referee_goals_per_match": null
-        },
-        {
           "match_id": "317863",
           "date_time": "25.10.2026",
           "home_team": "BEŞİKTAŞ A.Ş.",
@@ -9571,69 +9320,65 @@
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
           "referee_goals_per_match": null
-        }
-      ]
-    },
-    {
-      "week": 10,
-      "matches": [
+        },
         {
-          "match_id": "317870",
-          "date_time": "01.11.2026",
+          "match_id": "317861",
+          "date_time": "25.10.2026",
           "home_team": "TÜMOSAN KONYASPOR",
-          "away_team": "GALATASARAY A.Ş.",
+          "away_team": "GENÇLERBİRLİĞİ",
           "is_played": false,
           "actual_score": null,
           "data_confidence": "MEDIUM",
-          "raw_predicted": "away",
-          "predicted": "away",
-          "expected_home_goals": 1.49,
-          "expected_away_goals": 1.83,
+          "raw_predicted": "home",
+          "predicted": "home",
+          "expected_home_goals": 1.77,
+          "expected_away_goals": 1.29,
           "top_scorelines": [
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.099
-            },
-            {
-              "score": "1-2",
-              "home_goals": 1,
-              "away_goals": 2,
-              "probability": 0.09
+              "probability": 0.107
             },
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
+              "probability": 0.095
+            },
+            {
+              "score": "1-0",
+              "home_goals": 1,
+              "away_goals": 0,
+              "probability": 0.083
+            },
+            {
+              "score": "2-0",
+              "home_goals": 2,
+              "away_goals": 0,
               "probability": 0.074
             },
             {
-              "score": "2-2",
-              "home_goals": 2,
+              "score": "1-2",
+              "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.067
-            },
-            {
-              "score": "0-1",
-              "home_goals": 0,
-              "away_goals": 1,
-              "probability": 0.066
+              "probability": 0.069
             }
           ],
           "recommended_scoreline": {
-            "score": "1-2",
-            "home_goals": 1,
-            "away_goals": 2,
-            "probability": 0.09
+            "score": "2-1",
+            "home_goals": 2,
+            "away_goals": 1,
+            "probability": 0.095
           },
-          "home_win_probability": 0.317,
-          "draw_probability": 0.226,
-          "away_win_probability": 0.456,
+          "home_win_probability": 0.468,
+          "draw_probability": 0.264,
+          "away_win_probability": 0.268,
           "head_to_head": {
-            "available": false,
-            "matches": 0,
-            "draw_rate": null
+            "available": true,
+            "matches": 19,
+            "draw_rate": 0.368,
+            "last_meeting_date": "2026-03-19T17:00:00+00:00"
           },
           "transfer_signal": {
             "home": {
@@ -9674,16 +9419,164 @@
             }
           },
           "home_elo": 1474.6,
-          "away_elo": 1635.5,
+          "away_elo": 1443.1,
           "home_points_per_match": 1.62,
-          "away_points_per_match": 1.75,
-          "strength_edge": -0.07,
+          "away_points_per_match": 1.12,
+          "strength_edge": 0.22,
           "home_xg_efficiency": 0.934,
-          "away_xg_efficiency": 1.147,
+          "away_xg_efficiency": 1.26,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
           "referee_goals_per_match": null
         },
+        {
+          "match_id": "317862",
+          "date_time": "25.10.2026",
+          "home_team": "GALATASARAY A.Ş.",
+          "away_team": "FENERBAHÇE A.Ş.",
+          "is_played": false,
+          "actual_score": null,
+          "data_confidence": "LOW",
+          "raw_predicted": "away",
+          "predicted": "away",
+          "expected_home_goals": 1.72,
+          "expected_away_goals": 1.89,
+          "top_scorelines": [
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.088
+            },
+            {
+              "score": "1-2",
+              "home_goals": 1,
+              "away_goals": 2,
+              "probability": 0.083
+            },
+            {
+              "score": "2-1",
+              "home_goals": 2,
+              "away_goals": 1,
+              "probability": 0.076
+            },
+            {
+              "score": "2-2",
+              "home_goals": 2,
+              "away_goals": 2,
+              "probability": 0.071
+            },
+            {
+              "score": "1-3",
+              "home_goals": 1,
+              "away_goals": 3,
+              "probability": 0.052
+            }
+          ],
+          "recommended_scoreline": {
+            "score": "1-2",
+            "home_goals": 1,
+            "away_goals": 2,
+            "probability": 0.083
+          },
+          "home_win_probability": 0.341,
+          "draw_probability": 0.253,
+          "away_win_probability": 0.406,
+          "head_to_head": {
+            "available": true,
+            "matches": 37,
+            "draw_rate": 0.351,
+            "last_meeting_date": "2026-04-26T17:00:00+00:00"
+          },
+          "transfer_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "signal_count": 0
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "signal_count": 0
+            }
+          },
+          "fixture_congestion": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "days_rest": null,
+              "opponent": null
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "days_rest": null,
+              "opponent": null
+            }
+          },
+          "european_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "match_count": 0
+            },
+            "away": {
+              "available": true,
+              "edge": 0.15,
+              "match_count": 4,
+              "record": {
+                "w": 3,
+                "d": 1,
+                "l": 0
+              },
+              "recent": [
+                {
+                  "outcome": "win",
+                  "opponent": "Sturm Graz",
+                  "opponent_strength": "strong",
+                  "date": "2026-08-11",
+                  "score": "1-0"
+                },
+                {
+                  "outcome": "win",
+                  "opponent": "Sturm Graz",
+                  "opponent_strength": "strong",
+                  "date": "2026-08-04",
+                  "score": "2-0"
+                },
+                {
+                  "outcome": "draw",
+                  "opponent": "Górnik Zabrze",
+                  "opponent_strength": "mid",
+                  "date": "2026-07-29",
+                  "score": "1-1"
+                },
+                {
+                  "outcome": "win",
+                  "opponent": "Górnik Zabrze",
+                  "opponent_strength": "mid",
+                  "date": "2026-07-21",
+                  "score": "1-0"
+                }
+              ]
+            }
+          },
+          "home_elo": 1635.5,
+          "away_elo": 1654.4,
+          "home_points_per_match": 1.75,
+          "away_points_per_match": 2.12,
+          "strength_edge": -0.36,
+          "home_xg_efficiency": 1.147,
+          "away_xg_efficiency": 0.914,
+          "referee_adj": 0.0,
+          "referee_cards_per_match": null,
+          "referee_goals_per_match": null
+        }
+      ]
+    },
+    {
+      "week": 10,
+      "matches": [
         {
           "match_id": "317871",
           "date_time": "01.11.2026",
@@ -10525,6 +10418,113 @@
           "strength_edge": -0.14,
           "home_xg_efficiency": 1.26,
           "away_xg_efficiency": 0.545,
+          "referee_adj": 0.0,
+          "referee_cards_per_match": null,
+          "referee_goals_per_match": null
+        },
+        {
+          "match_id": "317870",
+          "date_time": "01.11.2026",
+          "home_team": "TÜMOSAN KONYASPOR",
+          "away_team": "GALATASARAY A.Ş.",
+          "is_played": false,
+          "actual_score": null,
+          "data_confidence": "MEDIUM",
+          "raw_predicted": "away",
+          "predicted": "away",
+          "expected_home_goals": 1.49,
+          "expected_away_goals": 1.83,
+          "top_scorelines": [
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.099
+            },
+            {
+              "score": "1-2",
+              "home_goals": 1,
+              "away_goals": 2,
+              "probability": 0.09
+            },
+            {
+              "score": "2-1",
+              "home_goals": 2,
+              "away_goals": 1,
+              "probability": 0.074
+            },
+            {
+              "score": "2-2",
+              "home_goals": 2,
+              "away_goals": 2,
+              "probability": 0.067
+            },
+            {
+              "score": "0-1",
+              "home_goals": 0,
+              "away_goals": 1,
+              "probability": 0.066
+            }
+          ],
+          "recommended_scoreline": {
+            "score": "1-2",
+            "home_goals": 1,
+            "away_goals": 2,
+            "probability": 0.09
+          },
+          "home_win_probability": 0.317,
+          "draw_probability": 0.226,
+          "away_win_probability": 0.456,
+          "head_to_head": {
+            "available": false,
+            "matches": 0,
+            "draw_rate": null
+          },
+          "transfer_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "signal_count": 0
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "signal_count": 0
+            }
+          },
+          "fixture_congestion": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "days_rest": null,
+              "opponent": null
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "days_rest": null,
+              "opponent": null
+            }
+          },
+          "european_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "match_count": 0
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "match_count": 0
+            }
+          },
+          "home_elo": 1474.6,
+          "away_elo": 1635.5,
+          "home_points_per_match": 1.62,
+          "away_points_per_match": 1.75,
+          "strength_edge": -0.07,
+          "home_xg_efficiency": 0.934,
+          "away_xg_efficiency": 1.147,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
           "referee_goals_per_match": null
@@ -11704,6 +11704,256 @@
       "week": 12,
       "matches": [
         {
+          "match_id": "317888",
+          "date_time": "22.11.2026",
+          "home_team": "TÜMOSAN KONYASPOR",
+          "away_team": "BEŞİKTAŞ A.Ş.",
+          "is_played": false,
+          "actual_score": null,
+          "data_confidence": "LOW",
+          "raw_predicted": "away",
+          "predicted": "away",
+          "expected_home_goals": 1.61,
+          "expected_away_goals": 1.7,
+          "top_scorelines": [
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.1
+            },
+            {
+              "score": "1-2",
+              "home_goals": 1,
+              "away_goals": 2,
+              "probability": 0.085
+            },
+            {
+              "score": "2-1",
+              "home_goals": 2,
+              "away_goals": 1,
+              "probability": 0.08
+            },
+            {
+              "score": "2-2",
+              "home_goals": 2,
+              "away_goals": 2,
+              "probability": 0.068
+            },
+            {
+              "score": "0-1",
+              "home_goals": 0,
+              "away_goals": 1,
+              "probability": 0.062
+            }
+          ],
+          "recommended_scoreline": {
+            "score": "1-2",
+            "home_goals": 1,
+            "away_goals": 2,
+            "probability": 0.085
+          },
+          "home_win_probability": 0.371,
+          "draw_probability": 0.22,
+          "away_win_probability": 0.409,
+          "head_to_head": {
+            "available": true,
+            "matches": 31,
+            "draw_rate": 0.194,
+            "last_meeting_date": "2026-05-05T17:30:00+00:00"
+          },
+          "transfer_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "signal_count": 0
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "signal_count": 0
+            }
+          },
+          "fixture_congestion": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "days_rest": null,
+              "opponent": null
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "days_rest": null,
+              "opponent": null
+            }
+          },
+          "european_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "match_count": 0
+            },
+            "away": {
+              "available": true,
+              "edge": 0.15,
+              "match_count": 4,
+              "record": {
+                "w": 4,
+                "d": 0,
+                "l": 0
+              },
+              "recent": [
+                {
+                  "outcome": "win",
+                  "opponent": "Hradec Králové",
+                  "opponent_strength": "mid",
+                  "date": "2026-08-13",
+                  "score": "1-0"
+                },
+                {
+                  "outcome": "win",
+                  "opponent": "Hradec Králové",
+                  "opponent_strength": "mid",
+                  "date": "2026-08-06",
+                  "score": "1-0"
+                },
+                {
+                  "outcome": "win",
+                  "opponent": "FC Midtjylland",
+                  "opponent_strength": "strong",
+                  "date": "2026-07-30",
+                  "score": "2-0"
+                },
+                {
+                  "outcome": "win",
+                  "opponent": "FC Midtjylland",
+                  "opponent_strength": "strong",
+                  "date": "2026-07-23",
+                  "score": "1-0"
+                }
+              ]
+            }
+          },
+          "home_elo": 1474.6,
+          "away_elo": 1573.9,
+          "home_points_per_match": 1.62,
+          "away_points_per_match": 1.38,
+          "strength_edge": -0.09,
+          "home_xg_efficiency": 0.934,
+          "away_xg_efficiency": 1.274,
+          "referee_adj": 0.0,
+          "referee_cards_per_match": null,
+          "referee_goals_per_match": null
+        },
+        {
+          "match_id": "317889",
+          "date_time": "22.11.2026",
+          "home_team": "GALATASARAY A.Ş.",
+          "away_team": "SAMSUNSPOR A.Ş.",
+          "is_played": false,
+          "actual_score": null,
+          "data_confidence": "HIGH",
+          "raw_predicted": "home",
+          "predicted": "home",
+          "expected_home_goals": 2.13,
+          "expected_away_goals": 1.42,
+          "top_scorelines": [
+            {
+              "score": "2-1",
+              "home_goals": 2,
+              "away_goals": 1,
+              "probability": 0.093
+            },
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.087
+            },
+            {
+              "score": "2-2",
+              "home_goals": 2,
+              "away_goals": 2,
+              "probability": 0.066
+            },
+            {
+              "score": "3-1",
+              "home_goals": 3,
+              "away_goals": 1,
+              "probability": 0.066
+            },
+            {
+              "score": "2-0",
+              "home_goals": 2,
+              "away_goals": 0,
+              "probability": 0.065
+            }
+          ],
+          "recommended_scoreline": {
+            "score": "2-1",
+            "home_goals": 2,
+            "away_goals": 1,
+            "probability": 0.093
+          },
+          "home_win_probability": 0.537,
+          "draw_probability": 0.209,
+          "away_win_probability": 0.255,
+          "head_to_head": {
+            "available": false,
+            "matches": 0,
+            "draw_rate": null
+          },
+          "transfer_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "signal_count": 0
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "signal_count": 0
+            }
+          },
+          "fixture_congestion": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "days_rest": null,
+              "opponent": null
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "days_rest": null,
+              "opponent": null
+            }
+          },
+          "european_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "match_count": 0
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "match_count": 0
+            }
+          },
+          "home_elo": 1635.5,
+          "away_elo": 1539.0,
+          "home_points_per_match": 1.75,
+          "away_points_per_match": 2.0,
+          "strength_edge": -0.04,
+          "home_xg_efficiency": 1.147,
+          "away_xg_efficiency": 0.652,
+          "referee_adj": 0.0,
+          "referee_cards_per_match": null,
+          "referee_goals_per_match": null
+        },
+        {
           "match_id": "317890",
           "date_time": "22.11.2026",
           "home_team": "KOCAELİSPOR",
@@ -12398,256 +12648,6 @@
           "strength_edge": 0.25,
           "home_xg_efficiency": 1.26,
           "away_xg_efficiency": 1.166,
-          "referee_adj": 0.0,
-          "referee_cards_per_match": null,
-          "referee_goals_per_match": null
-        },
-        {
-          "match_id": "317888",
-          "date_time": "22.11.2026",
-          "home_team": "TÜMOSAN KONYASPOR",
-          "away_team": "BEŞİKTAŞ A.Ş.",
-          "is_played": false,
-          "actual_score": null,
-          "data_confidence": "LOW",
-          "raw_predicted": "away",
-          "predicted": "away",
-          "expected_home_goals": 1.61,
-          "expected_away_goals": 1.7,
-          "top_scorelines": [
-            {
-              "score": "1-1",
-              "home_goals": 1,
-              "away_goals": 1,
-              "probability": 0.1
-            },
-            {
-              "score": "1-2",
-              "home_goals": 1,
-              "away_goals": 2,
-              "probability": 0.085
-            },
-            {
-              "score": "2-1",
-              "home_goals": 2,
-              "away_goals": 1,
-              "probability": 0.08
-            },
-            {
-              "score": "2-2",
-              "home_goals": 2,
-              "away_goals": 2,
-              "probability": 0.068
-            },
-            {
-              "score": "0-1",
-              "home_goals": 0,
-              "away_goals": 1,
-              "probability": 0.062
-            }
-          ],
-          "recommended_scoreline": {
-            "score": "1-2",
-            "home_goals": 1,
-            "away_goals": 2,
-            "probability": 0.085
-          },
-          "home_win_probability": 0.371,
-          "draw_probability": 0.22,
-          "away_win_probability": 0.409,
-          "head_to_head": {
-            "available": true,
-            "matches": 31,
-            "draw_rate": 0.194,
-            "last_meeting_date": "2026-05-05T17:30:00+00:00"
-          },
-          "transfer_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "signal_count": 0
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "signal_count": 0
-            }
-          },
-          "fixture_congestion": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "days_rest": null,
-              "opponent": null
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "days_rest": null,
-              "opponent": null
-            }
-          },
-          "european_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "match_count": 0
-            },
-            "away": {
-              "available": true,
-              "edge": 0.15,
-              "match_count": 4,
-              "record": {
-                "w": 4,
-                "d": 0,
-                "l": 0
-              },
-              "recent": [
-                {
-                  "outcome": "win",
-                  "opponent": "Hradec Králové",
-                  "opponent_strength": "mid",
-                  "date": "2026-08-13",
-                  "score": "1-0"
-                },
-                {
-                  "outcome": "win",
-                  "opponent": "Hradec Králové",
-                  "opponent_strength": "mid",
-                  "date": "2026-08-06",
-                  "score": "1-0"
-                },
-                {
-                  "outcome": "win",
-                  "opponent": "FC Midtjylland",
-                  "opponent_strength": "strong",
-                  "date": "2026-07-30",
-                  "score": "2-0"
-                },
-                {
-                  "outcome": "win",
-                  "opponent": "FC Midtjylland",
-                  "opponent_strength": "strong",
-                  "date": "2026-07-23",
-                  "score": "1-0"
-                }
-              ]
-            }
-          },
-          "home_elo": 1474.6,
-          "away_elo": 1573.9,
-          "home_points_per_match": 1.62,
-          "away_points_per_match": 1.38,
-          "strength_edge": -0.09,
-          "home_xg_efficiency": 0.934,
-          "away_xg_efficiency": 1.274,
-          "referee_adj": 0.0,
-          "referee_cards_per_match": null,
-          "referee_goals_per_match": null
-        },
-        {
-          "match_id": "317889",
-          "date_time": "22.11.2026",
-          "home_team": "GALATASARAY A.Ş.",
-          "away_team": "SAMSUNSPOR A.Ş.",
-          "is_played": false,
-          "actual_score": null,
-          "data_confidence": "HIGH",
-          "raw_predicted": "home",
-          "predicted": "home",
-          "expected_home_goals": 2.13,
-          "expected_away_goals": 1.42,
-          "top_scorelines": [
-            {
-              "score": "2-1",
-              "home_goals": 2,
-              "away_goals": 1,
-              "probability": 0.093
-            },
-            {
-              "score": "1-1",
-              "home_goals": 1,
-              "away_goals": 1,
-              "probability": 0.087
-            },
-            {
-              "score": "2-2",
-              "home_goals": 2,
-              "away_goals": 2,
-              "probability": 0.066
-            },
-            {
-              "score": "3-1",
-              "home_goals": 3,
-              "away_goals": 1,
-              "probability": 0.066
-            },
-            {
-              "score": "2-0",
-              "home_goals": 2,
-              "away_goals": 0,
-              "probability": 0.065
-            }
-          ],
-          "recommended_scoreline": {
-            "score": "2-1",
-            "home_goals": 2,
-            "away_goals": 1,
-            "probability": 0.093
-          },
-          "home_win_probability": 0.537,
-          "draw_probability": 0.209,
-          "away_win_probability": 0.255,
-          "head_to_head": {
-            "available": false,
-            "matches": 0,
-            "draw_rate": null
-          },
-          "transfer_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "signal_count": 0
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "signal_count": 0
-            }
-          },
-          "fixture_congestion": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "days_rest": null,
-              "opponent": null
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "days_rest": null,
-              "opponent": null
-            }
-          },
-          "european_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "match_count": 0
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "match_count": 0
-            }
-          },
-          "home_elo": 1635.5,
-          "away_elo": 1539.0,
-          "home_points_per_match": 1.75,
-          "away_points_per_match": 2.0,
-          "strength_edge": -0.04,
-          "home_xg_efficiency": 1.147,
-          "away_xg_efficiency": 0.652,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
           "referee_goals_per_match": null
@@ -13829,6 +13829,221 @@
       "week": 14,
       "matches": [
         {
+          "match_id": "317906",
+          "date_time": "06.12.2026",
+          "home_team": "TÜMOSAN KONYASPOR",
+          "away_team": "GAZİANTEP FUTBOL KULÜBÜ A.Ş.",
+          "is_played": false,
+          "actual_score": null,
+          "data_confidence": "HIGH",
+          "raw_predicted": "home",
+          "predicted": "home",
+          "expected_home_goals": 1.93,
+          "expected_away_goals": 1.23,
+          "top_scorelines": [
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.101
+            },
+            {
+              "score": "2-1",
+              "home_goals": 2,
+              "away_goals": 1,
+              "probability": 0.097
+            },
+            {
+              "score": "1-0",
+              "home_goals": 1,
+              "away_goals": 0,
+              "probability": 0.082
+            },
+            {
+              "score": "2-0",
+              "home_goals": 2,
+              "away_goals": 0,
+              "probability": 0.079
+            },
+            {
+              "score": "3-1",
+              "home_goals": 3,
+              "away_goals": 1,
+              "probability": 0.063
+            }
+          ],
+          "recommended_scoreline": {
+            "score": "2-1",
+            "home_goals": 2,
+            "away_goals": 1,
+            "probability": 0.097
+          },
+          "home_win_probability": 0.532,
+          "draw_probability": 0.228,
+          "away_win_probability": 0.24,
+          "head_to_head": {
+            "available": true,
+            "matches": 20,
+            "draw_rate": 0.25,
+            "last_meeting_date": "2026-01-25T11:30:00+00:00"
+          },
+          "transfer_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "signal_count": 0
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "signal_count": 0
+            }
+          },
+          "fixture_congestion": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "days_rest": null,
+              "opponent": null
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "days_rest": null,
+              "opponent": null
+            }
+          },
+          "european_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "match_count": 0
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "match_count": 0
+            }
+          },
+          "home_elo": 1474.6,
+          "away_elo": 1420.8,
+          "home_points_per_match": 1.62,
+          "away_points_per_match": 0.5,
+          "strength_edge": 0.47,
+          "home_xg_efficiency": 0.934,
+          "away_xg_efficiency": 1.166,
+          "referee_adj": 0.0,
+          "referee_cards_per_match": null,
+          "referee_goals_per_match": null
+        },
+        {
+          "match_id": "317907",
+          "date_time": "06.12.2026",
+          "home_team": "GALATASARAY A.Ş.",
+          "away_team": "ÇAYKUR RİZESPOR A.Ş.",
+          "is_played": false,
+          "actual_score": null,
+          "data_confidence": "HIGH",
+          "raw_predicted": "home",
+          "predicted": "home",
+          "expected_home_goals": 2.14,
+          "expected_away_goals": 1.38,
+          "top_scorelines": [
+            {
+              "score": "2-1",
+              "home_goals": 2,
+              "away_goals": 1,
+              "probability": 0.094
+            },
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.087
+            },
+            {
+              "score": "2-0",
+              "home_goals": 2,
+              "away_goals": 0,
+              "probability": 0.068
+            },
+            {
+              "score": "3-1",
+              "home_goals": 3,
+              "away_goals": 1,
+              "probability": 0.067
+            },
+            {
+              "score": "2-2",
+              "home_goals": 2,
+              "away_goals": 2,
+              "probability": 0.065
+            }
+          ],
+          "recommended_scoreline": {
+            "score": "2-1",
+            "home_goals": 2,
+            "away_goals": 1,
+            "probability": 0.094
+          },
+          "home_win_probability": 0.548,
+          "draw_probability": 0.208,
+          "away_win_probability": 0.244,
+          "head_to_head": {
+            "available": false,
+            "matches": 0,
+            "draw_rate": null
+          },
+          "transfer_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "signal_count": 0
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "signal_count": 0
+            }
+          },
+          "fixture_congestion": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "days_rest": null,
+              "opponent": null
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "days_rest": null,
+              "opponent": null
+            }
+          },
+          "european_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "match_count": 0
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "match_count": 0
+            }
+          },
+          "home_elo": 1635.5,
+          "away_elo": 1480.7,
+          "home_points_per_match": 1.75,
+          "away_points_per_match": 1.38,
+          "strength_edge": 0.21,
+          "home_xg_efficiency": 1.147,
+          "away_xg_efficiency": 0.937,
+          "referee_adj": 0.0,
+          "referee_cards_per_match": null,
+          "referee_goals_per_match": null
+        },
+        {
           "match_id": "317908",
           "date_time": "06.12.2026",
           "home_team": "BEŞİKTAŞ A.Ş.",
@@ -14559,221 +14774,6 @@
           "strength_edge": -0.18,
           "home_xg_efficiency": 1.26,
           "away_xg_efficiency": 0.505,
-          "referee_adj": 0.0,
-          "referee_cards_per_match": null,
-          "referee_goals_per_match": null
-        },
-        {
-          "match_id": "317906",
-          "date_time": "06.12.2026",
-          "home_team": "TÜMOSAN KONYASPOR",
-          "away_team": "GAZİANTEP FUTBOL KULÜBÜ A.Ş.",
-          "is_played": false,
-          "actual_score": null,
-          "data_confidence": "HIGH",
-          "raw_predicted": "home",
-          "predicted": "home",
-          "expected_home_goals": 1.93,
-          "expected_away_goals": 1.23,
-          "top_scorelines": [
-            {
-              "score": "1-1",
-              "home_goals": 1,
-              "away_goals": 1,
-              "probability": 0.101
-            },
-            {
-              "score": "2-1",
-              "home_goals": 2,
-              "away_goals": 1,
-              "probability": 0.097
-            },
-            {
-              "score": "1-0",
-              "home_goals": 1,
-              "away_goals": 0,
-              "probability": 0.082
-            },
-            {
-              "score": "2-0",
-              "home_goals": 2,
-              "away_goals": 0,
-              "probability": 0.079
-            },
-            {
-              "score": "3-1",
-              "home_goals": 3,
-              "away_goals": 1,
-              "probability": 0.063
-            }
-          ],
-          "recommended_scoreline": {
-            "score": "2-1",
-            "home_goals": 2,
-            "away_goals": 1,
-            "probability": 0.097
-          },
-          "home_win_probability": 0.532,
-          "draw_probability": 0.228,
-          "away_win_probability": 0.24,
-          "head_to_head": {
-            "available": true,
-            "matches": 20,
-            "draw_rate": 0.25,
-            "last_meeting_date": "2026-01-25T11:30:00+00:00"
-          },
-          "transfer_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "signal_count": 0
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "signal_count": 0
-            }
-          },
-          "fixture_congestion": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "days_rest": null,
-              "opponent": null
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "days_rest": null,
-              "opponent": null
-            }
-          },
-          "european_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "match_count": 0
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "match_count": 0
-            }
-          },
-          "home_elo": 1474.6,
-          "away_elo": 1420.8,
-          "home_points_per_match": 1.62,
-          "away_points_per_match": 0.5,
-          "strength_edge": 0.47,
-          "home_xg_efficiency": 0.934,
-          "away_xg_efficiency": 1.166,
-          "referee_adj": 0.0,
-          "referee_cards_per_match": null,
-          "referee_goals_per_match": null
-        },
-        {
-          "match_id": "317907",
-          "date_time": "06.12.2026",
-          "home_team": "GALATASARAY A.Ş.",
-          "away_team": "ÇAYKUR RİZESPOR A.Ş.",
-          "is_played": false,
-          "actual_score": null,
-          "data_confidence": "HIGH",
-          "raw_predicted": "home",
-          "predicted": "home",
-          "expected_home_goals": 2.14,
-          "expected_away_goals": 1.38,
-          "top_scorelines": [
-            {
-              "score": "2-1",
-              "home_goals": 2,
-              "away_goals": 1,
-              "probability": 0.094
-            },
-            {
-              "score": "1-1",
-              "home_goals": 1,
-              "away_goals": 1,
-              "probability": 0.087
-            },
-            {
-              "score": "2-0",
-              "home_goals": 2,
-              "away_goals": 0,
-              "probability": 0.068
-            },
-            {
-              "score": "3-1",
-              "home_goals": 3,
-              "away_goals": 1,
-              "probability": 0.067
-            },
-            {
-              "score": "2-2",
-              "home_goals": 2,
-              "away_goals": 2,
-              "probability": 0.065
-            }
-          ],
-          "recommended_scoreline": {
-            "score": "2-1",
-            "home_goals": 2,
-            "away_goals": 1,
-            "probability": 0.094
-          },
-          "home_win_probability": 0.548,
-          "draw_probability": 0.208,
-          "away_win_probability": 0.244,
-          "head_to_head": {
-            "available": false,
-            "matches": 0,
-            "draw_rate": null
-          },
-          "transfer_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "signal_count": 0
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "signal_count": 0
-            }
-          },
-          "fixture_congestion": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "days_rest": null,
-              "opponent": null
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "days_rest": null,
-              "opponent": null
-            }
-          },
-          "european_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "match_count": 0
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "match_count": 0
-            }
-          },
-          "home_elo": 1635.5,
-          "away_elo": 1480.7,
-          "home_points_per_match": 1.75,
-          "away_points_per_match": 1.38,
-          "strength_edge": 0.21,
-          "home_xg_efficiency": 1.147,
-          "away_xg_efficiency": 0.937,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
           "referee_goals_per_match": null
@@ -19394,256 +19394,6 @@
           "referee_goals_per_match": null
         },
         {
-          "match_id": "317952",
-          "date_time": "31.01.2027",
-          "home_team": "TÜMOSAN KONYASPOR",
-          "away_team": "FENERBAHÇE A.Ş.",
-          "is_played": false,
-          "actual_score": null,
-          "data_confidence": "HIGH",
-          "raw_predicted": "away",
-          "predicted": "away",
-          "expected_home_goals": 1.45,
-          "expected_away_goals": 2.14,
-          "top_scorelines": [
-            {
-              "score": "1-2",
-              "home_goals": 1,
-              "away_goals": 2,
-              "probability": 0.092
-            },
-            {
-              "score": "1-1",
-              "home_goals": 1,
-              "away_goals": 1,
-              "probability": 0.086
-            },
-            {
-              "score": "2-2",
-              "home_goals": 2,
-              "away_goals": 2,
-              "probability": 0.066
-            },
-            {
-              "score": "1-3",
-              "home_goals": 1,
-              "away_goals": 3,
-              "probability": 0.065
-            },
-            {
-              "score": "0-2",
-              "home_goals": 0,
-              "away_goals": 2,
-              "probability": 0.063
-            }
-          ],
-          "recommended_scoreline": {
-            "score": "1-2",
-            "home_goals": 1,
-            "away_goals": 2,
-            "probability": 0.092
-          },
-          "home_win_probability": 0.265,
-          "draw_probability": 0.19,
-          "away_win_probability": 0.545,
-          "head_to_head": {
-            "available": true,
-            "matches": 28,
-            "draw_rate": 0.143,
-            "last_meeting_date": "2026-05-09T17:00:00+00:00"
-          },
-          "transfer_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "signal_count": 0
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "signal_count": 0
-            }
-          },
-          "fixture_congestion": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "days_rest": null,
-              "opponent": null
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "days_rest": null,
-              "opponent": null
-            }
-          },
-          "european_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "match_count": 0
-            },
-            "away": {
-              "available": true,
-              "edge": 0.15,
-              "match_count": 4,
-              "record": {
-                "w": 3,
-                "d": 1,
-                "l": 0
-              },
-              "recent": [
-                {
-                  "outcome": "win",
-                  "opponent": "Sturm Graz",
-                  "opponent_strength": "strong",
-                  "date": "2026-08-11",
-                  "score": "1-0"
-                },
-                {
-                  "outcome": "win",
-                  "opponent": "Sturm Graz",
-                  "opponent_strength": "strong",
-                  "date": "2026-08-04",
-                  "score": "2-0"
-                },
-                {
-                  "outcome": "draw",
-                  "opponent": "Górnik Zabrze",
-                  "opponent_strength": "mid",
-                  "date": "2026-07-29",
-                  "score": "1-1"
-                },
-                {
-                  "outcome": "win",
-                  "opponent": "Górnik Zabrze",
-                  "opponent_strength": "mid",
-                  "date": "2026-07-21",
-                  "score": "1-0"
-                }
-              ]
-            }
-          },
-          "home_elo": 1474.6,
-          "away_elo": 1654.4,
-          "home_points_per_match": 1.62,
-          "away_points_per_match": 2.12,
-          "strength_edge": -0.43,
-          "home_xg_efficiency": 0.934,
-          "away_xg_efficiency": 0.914,
-          "referee_adj": 0.0,
-          "referee_cards_per_match": null,
-          "referee_goals_per_match": null
-        },
-        {
-          "match_id": "317954",
-          "date_time": "31.01.2027",
-          "home_team": "GALATASARAY A.Ş.",
-          "away_team": "ERZURUMSPOR FK",
-          "is_played": false,
-          "actual_score": null,
-          "data_confidence": "LOW_NEW_TEAM",
-          "raw_predicted": "home",
-          "predicted": "home",
-          "expected_home_goals": 1.36,
-          "expected_away_goals": 0.45,
-          "top_scorelines": [
-            {
-              "score": "1-0",
-              "home_goals": 1,
-              "away_goals": 0,
-              "probability": 0.223
-            },
-            {
-              "score": "0-0",
-              "home_goals": 0,
-              "away_goals": 0,
-              "probability": 0.164
-            },
-            {
-              "score": "2-0",
-              "home_goals": 2,
-              "away_goals": 0,
-              "probability": 0.152
-            },
-            {
-              "score": "1-1",
-              "home_goals": 1,
-              "away_goals": 1,
-              "probability": 0.1
-            },
-            {
-              "score": "0-1",
-              "home_goals": 0,
-              "away_goals": 1,
-              "probability": 0.073
-            }
-          ],
-          "recommended_scoreline": {
-            "score": "1-0",
-            "home_goals": 1,
-            "away_goals": 0,
-            "probability": 0.223
-          },
-          "home_win_probability": 0.599,
-          "draw_probability": 0.28,
-          "away_win_probability": 0.121,
-          "head_to_head": {
-            "available": false,
-            "matches": 0,
-            "draw_rate": null
-          },
-          "transfer_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "signal_count": 0
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "signal_count": 0
-            }
-          },
-          "fixture_congestion": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "days_rest": null,
-              "opponent": null
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "days_rest": null,
-              "opponent": null
-            }
-          },
-          "european_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "match_count": 0
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "match_count": 0
-            }
-          },
-          "home_elo": 1635.5,
-          "away_elo": 1500.0,
-          "home_points_per_match": 1.75,
-          "away_points_per_match": 0,
-          "strength_edge": 0.5,
-          "home_xg_efficiency": 1.147,
-          "away_xg_efficiency": null,
-          "referee_adj": 0.0,
-          "referee_cards_per_match": null,
-          "referee_goals_per_match": null
-        },
-        {
           "match_id": "317946",
           "date_time": "31.01.2027",
           "home_team": "İSTANBUL BAŞAKŞEHİR FK",
@@ -20094,6 +19844,149 @@
           "referee_goals_per_match": null
         },
         {
+          "match_id": "317952",
+          "date_time": "31.01.2027",
+          "home_team": "TÜMOSAN KONYASPOR",
+          "away_team": "FENERBAHÇE A.Ş.",
+          "is_played": false,
+          "actual_score": null,
+          "data_confidence": "HIGH",
+          "raw_predicted": "away",
+          "predicted": "away",
+          "expected_home_goals": 1.45,
+          "expected_away_goals": 2.14,
+          "top_scorelines": [
+            {
+              "score": "1-2",
+              "home_goals": 1,
+              "away_goals": 2,
+              "probability": 0.092
+            },
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.086
+            },
+            {
+              "score": "2-2",
+              "home_goals": 2,
+              "away_goals": 2,
+              "probability": 0.066
+            },
+            {
+              "score": "1-3",
+              "home_goals": 1,
+              "away_goals": 3,
+              "probability": 0.065
+            },
+            {
+              "score": "0-2",
+              "home_goals": 0,
+              "away_goals": 2,
+              "probability": 0.063
+            }
+          ],
+          "recommended_scoreline": {
+            "score": "1-2",
+            "home_goals": 1,
+            "away_goals": 2,
+            "probability": 0.092
+          },
+          "home_win_probability": 0.265,
+          "draw_probability": 0.19,
+          "away_win_probability": 0.545,
+          "head_to_head": {
+            "available": true,
+            "matches": 28,
+            "draw_rate": 0.143,
+            "last_meeting_date": "2026-05-09T17:00:00+00:00"
+          },
+          "transfer_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "signal_count": 0
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "signal_count": 0
+            }
+          },
+          "fixture_congestion": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "days_rest": null,
+              "opponent": null
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "days_rest": null,
+              "opponent": null
+            }
+          },
+          "european_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "match_count": 0
+            },
+            "away": {
+              "available": true,
+              "edge": 0.15,
+              "match_count": 4,
+              "record": {
+                "w": 3,
+                "d": 1,
+                "l": 0
+              },
+              "recent": [
+                {
+                  "outcome": "win",
+                  "opponent": "Sturm Graz",
+                  "opponent_strength": "strong",
+                  "date": "2026-08-11",
+                  "score": "1-0"
+                },
+                {
+                  "outcome": "win",
+                  "opponent": "Sturm Graz",
+                  "opponent_strength": "strong",
+                  "date": "2026-08-04",
+                  "score": "2-0"
+                },
+                {
+                  "outcome": "draw",
+                  "opponent": "Górnik Zabrze",
+                  "opponent_strength": "mid",
+                  "date": "2026-07-29",
+                  "score": "1-1"
+                },
+                {
+                  "outcome": "win",
+                  "opponent": "Górnik Zabrze",
+                  "opponent_strength": "mid",
+                  "date": "2026-07-21",
+                  "score": "1-0"
+                }
+              ]
+            }
+          },
+          "home_elo": 1474.6,
+          "away_elo": 1654.4,
+          "home_points_per_match": 1.62,
+          "away_points_per_match": 2.12,
+          "strength_edge": -0.43,
+          "home_xg_efficiency": 0.934,
+          "away_xg_efficiency": 0.914,
+          "referee_adj": 0.0,
+          "referee_cards_per_match": null,
+          "referee_goals_per_match": null
+        },
+        {
           "match_id": "317953",
           "date_time": "31.01.2027",
           "home_team": "AMED SPORTİF FAALİYETLER",
@@ -20196,6 +20089,113 @@
           "strength_edge": 0.04,
           "home_xg_efficiency": null,
           "away_xg_efficiency": 2.277,
+          "referee_adj": 0.0,
+          "referee_cards_per_match": null,
+          "referee_goals_per_match": null
+        },
+        {
+          "match_id": "317954",
+          "date_time": "31.01.2027",
+          "home_team": "GALATASARAY A.Ş.",
+          "away_team": "ERZURUMSPOR FK",
+          "is_played": false,
+          "actual_score": null,
+          "data_confidence": "LOW_NEW_TEAM",
+          "raw_predicted": "home",
+          "predicted": "home",
+          "expected_home_goals": 1.36,
+          "expected_away_goals": 0.45,
+          "top_scorelines": [
+            {
+              "score": "1-0",
+              "home_goals": 1,
+              "away_goals": 0,
+              "probability": 0.223
+            },
+            {
+              "score": "0-0",
+              "home_goals": 0,
+              "away_goals": 0,
+              "probability": 0.164
+            },
+            {
+              "score": "2-0",
+              "home_goals": 2,
+              "away_goals": 0,
+              "probability": 0.152
+            },
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.1
+            },
+            {
+              "score": "0-1",
+              "home_goals": 0,
+              "away_goals": 1,
+              "probability": 0.073
+            }
+          ],
+          "recommended_scoreline": {
+            "score": "1-0",
+            "home_goals": 1,
+            "away_goals": 0,
+            "probability": 0.223
+          },
+          "home_win_probability": 0.599,
+          "draw_probability": 0.28,
+          "away_win_probability": 0.121,
+          "head_to_head": {
+            "available": false,
+            "matches": 0,
+            "draw_rate": null
+          },
+          "transfer_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "signal_count": 0
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "signal_count": 0
+            }
+          },
+          "fixture_congestion": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "days_rest": null,
+              "opponent": null
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "days_rest": null,
+              "opponent": null
+            }
+          },
+          "european_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "match_count": 0
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "match_count": 0
+            }
+          },
+          "home_elo": 1635.5,
+          "away_elo": 1500.0,
+          "home_points_per_match": 1.75,
+          "away_points_per_match": 0,
+          "strength_edge": 0.5,
+          "home_xg_efficiency": 1.147,
+          "away_xg_efficiency": null,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
           "referee_goals_per_match": null
@@ -21268,6 +21268,134 @@
       "week": 21,
       "matches": [
         {
+          "match_id": "317966",
+          "date_time": "14.02.2027",
+          "home_team": "GALATASARAY A.Ş.",
+          "away_team": "İSTANBUL BAŞAKŞEHİR FK",
+          "is_played": false,
+          "actual_score": null,
+          "data_confidence": "LOW",
+          "raw_predicted": "home",
+          "predicted": "home",
+          "expected_home_goals": 1.66,
+          "expected_away_goals": 1.56,
+          "top_scorelines": [
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.103
+            },
+            {
+              "score": "2-1",
+              "home_goals": 2,
+              "away_goals": 1,
+              "probability": 0.086
+            },
+            {
+              "score": "1-2",
+              "home_goals": 1,
+              "away_goals": 2,
+              "probability": 0.081
+            },
+            {
+              "score": "2-2",
+              "home_goals": 2,
+              "away_goals": 2,
+              "probability": 0.067
+            },
+            {
+              "score": "1-0",
+              "home_goals": 1,
+              "away_goals": 0,
+              "probability": 0.066
+            }
+          ],
+          "recommended_scoreline": {
+            "score": "2-1",
+            "home_goals": 2,
+            "away_goals": 1,
+            "probability": 0.086
+          },
+          "home_win_probability": 0.405,
+          "draw_probability": 0.233,
+          "away_win_probability": 0.362,
+          "head_to_head": {
+            "available": false,
+            "matches": 0,
+            "draw_rate": null
+          },
+          "transfer_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "signal_count": 0
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "signal_count": 0
+            }
+          },
+          "fixture_congestion": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "days_rest": null,
+              "opponent": null
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "days_rest": null,
+              "opponent": null
+            }
+          },
+          "european_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "match_count": 0
+            },
+            "away": {
+              "available": true,
+              "edge": -0.0276,
+              "match_count": 2,
+              "record": {
+                "w": 0,
+                "d": 1,
+                "l": 1
+              },
+              "recent": [
+                {
+                  "outcome": "loss",
+                  "opponent": "Inter Turku",
+                  "opponent_strength": "weak",
+                  "date": "2026-07-30",
+                  "score": "0-2"
+                },
+                {
+                  "outcome": "draw",
+                  "opponent": "Inter Turku",
+                  "opponent_strength": "weak",
+                  "date": "2026-07-22",
+                  "score": "1-1"
+                }
+              ]
+            }
+          },
+          "home_elo": 1635.5,
+          "away_elo": 1590.4,
+          "home_points_per_match": 1.75,
+          "away_points_per_match": 1.88,
+          "strength_edge": -0.102,
+          "home_xg_efficiency": 1.147,
+          "away_xg_efficiency": 1.131,
+          "referee_adj": 0.0,
+          "referee_cards_per_match": null,
+          "referee_goals_per_match": null
+        },
+        {
           "match_id": "317970",
           "date_time": "14.02.2027",
           "home_team": "BEŞİKTAŞ A.Ş.",
@@ -21554,6 +21682,113 @@
           "referee_goals_per_match": null
         },
         {
+          "match_id": "317972",
+          "date_time": "14.02.2027",
+          "home_team": "TÜMOSAN KONYASPOR",
+          "away_team": "ERZURUMSPOR FK",
+          "is_played": false,
+          "actual_score": null,
+          "data_confidence": "LOW_NEW_TEAM",
+          "raw_predicted": "home",
+          "predicted": "draw",
+          "expected_home_goals": 1.1,
+          "expected_away_goals": 0.62,
+          "top_scorelines": [
+            {
+              "score": "1-0",
+              "home_goals": 1,
+              "away_goals": 0,
+              "probability": 0.197
+            },
+            {
+              "score": "0-0",
+              "home_goals": 0,
+              "away_goals": 0,
+              "probability": 0.178
+            },
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.122
+            },
+            {
+              "score": "0-1",
+              "home_goals": 0,
+              "away_goals": 1,
+              "probability": 0.111
+            },
+            {
+              "score": "2-0",
+              "home_goals": 2,
+              "away_goals": 0,
+              "probability": 0.109
+            }
+          ],
+          "recommended_scoreline": {
+            "score": "0-0",
+            "home_goals": 0,
+            "away_goals": 0,
+            "probability": 0.178
+          },
+          "home_win_probability": 0.471,
+          "draw_probability": 0.323,
+          "away_win_probability": 0.206,
+          "head_to_head": {
+            "available": false,
+            "matches": 0,
+            "draw_rate": null
+          },
+          "transfer_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "signal_count": 0
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "signal_count": 0
+            }
+          },
+          "fixture_congestion": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "days_rest": null,
+              "opponent": null
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "days_rest": null,
+              "opponent": null
+            }
+          },
+          "european_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "match_count": 0
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "match_count": 0
+            }
+          },
+          "home_elo": 1474.6,
+          "away_elo": 1500.0,
+          "home_points_per_match": 1.62,
+          "away_points_per_match": 0,
+          "strength_edge": 0.43,
+          "home_xg_efficiency": 0.934,
+          "away_xg_efficiency": null,
+          "referee_adj": 0.0,
+          "referee_cards_per_match": null,
+          "referee_goals_per_match": null
+        },
+        {
           "match_id": "317964",
           "date_time": "14.02.2027",
           "home_team": "GENÇLERBİRLİĞİ",
@@ -21764,134 +21999,6 @@
           "strength_edge": -0.29,
           "home_xg_efficiency": null,
           "away_xg_efficiency": 0.681,
-          "referee_adj": 0.0,
-          "referee_cards_per_match": null,
-          "referee_goals_per_match": null
-        },
-        {
-          "match_id": "317966",
-          "date_time": "14.02.2027",
-          "home_team": "GALATASARAY A.Ş.",
-          "away_team": "İSTANBUL BAŞAKŞEHİR FK",
-          "is_played": false,
-          "actual_score": null,
-          "data_confidence": "LOW",
-          "raw_predicted": "home",
-          "predicted": "home",
-          "expected_home_goals": 1.66,
-          "expected_away_goals": 1.56,
-          "top_scorelines": [
-            {
-              "score": "1-1",
-              "home_goals": 1,
-              "away_goals": 1,
-              "probability": 0.103
-            },
-            {
-              "score": "2-1",
-              "home_goals": 2,
-              "away_goals": 1,
-              "probability": 0.086
-            },
-            {
-              "score": "1-2",
-              "home_goals": 1,
-              "away_goals": 2,
-              "probability": 0.081
-            },
-            {
-              "score": "2-2",
-              "home_goals": 2,
-              "away_goals": 2,
-              "probability": 0.067
-            },
-            {
-              "score": "1-0",
-              "home_goals": 1,
-              "away_goals": 0,
-              "probability": 0.066
-            }
-          ],
-          "recommended_scoreline": {
-            "score": "2-1",
-            "home_goals": 2,
-            "away_goals": 1,
-            "probability": 0.086
-          },
-          "home_win_probability": 0.405,
-          "draw_probability": 0.233,
-          "away_win_probability": 0.362,
-          "head_to_head": {
-            "available": false,
-            "matches": 0,
-            "draw_rate": null
-          },
-          "transfer_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "signal_count": 0
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "signal_count": 0
-            }
-          },
-          "fixture_congestion": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "days_rest": null,
-              "opponent": null
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "days_rest": null,
-              "opponent": null
-            }
-          },
-          "european_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "match_count": 0
-            },
-            "away": {
-              "available": true,
-              "edge": -0.0276,
-              "match_count": 2,
-              "record": {
-                "w": 0,
-                "d": 1,
-                "l": 1
-              },
-              "recent": [
-                {
-                  "outcome": "loss",
-                  "opponent": "Inter Turku",
-                  "opponent_strength": "weak",
-                  "date": "2026-07-30",
-                  "score": "0-2"
-                },
-                {
-                  "outcome": "draw",
-                  "opponent": "Inter Turku",
-                  "opponent_strength": "weak",
-                  "date": "2026-07-22",
-                  "score": "1-1"
-                }
-              ]
-            }
-          },
-          "home_elo": 1635.5,
-          "away_elo": 1590.4,
-          "home_points_per_match": 1.75,
-          "away_points_per_match": 1.88,
-          "strength_edge": -0.102,
-          "home_xg_efficiency": 1.147,
-          "away_xg_efficiency": 1.131,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
           "referee_goals_per_match": null
@@ -22213,113 +22320,6 @@
           "away_points_per_match": 1.0,
           "strength_edge": 0.15,
           "home_xg_efficiency": 0.505,
-          "away_xg_efficiency": null,
-          "referee_adj": 0.0,
-          "referee_cards_per_match": null,
-          "referee_goals_per_match": null
-        },
-        {
-          "match_id": "317972",
-          "date_time": "14.02.2027",
-          "home_team": "TÜMOSAN KONYASPOR",
-          "away_team": "ERZURUMSPOR FK",
-          "is_played": false,
-          "actual_score": null,
-          "data_confidence": "LOW_NEW_TEAM",
-          "raw_predicted": "home",
-          "predicted": "draw",
-          "expected_home_goals": 1.1,
-          "expected_away_goals": 0.62,
-          "top_scorelines": [
-            {
-              "score": "1-0",
-              "home_goals": 1,
-              "away_goals": 0,
-              "probability": 0.197
-            },
-            {
-              "score": "0-0",
-              "home_goals": 0,
-              "away_goals": 0,
-              "probability": 0.178
-            },
-            {
-              "score": "1-1",
-              "home_goals": 1,
-              "away_goals": 1,
-              "probability": 0.122
-            },
-            {
-              "score": "0-1",
-              "home_goals": 0,
-              "away_goals": 1,
-              "probability": 0.111
-            },
-            {
-              "score": "2-0",
-              "home_goals": 2,
-              "away_goals": 0,
-              "probability": 0.109
-            }
-          ],
-          "recommended_scoreline": {
-            "score": "0-0",
-            "home_goals": 0,
-            "away_goals": 0,
-            "probability": 0.178
-          },
-          "home_win_probability": 0.471,
-          "draw_probability": 0.323,
-          "away_win_probability": 0.206,
-          "head_to_head": {
-            "available": false,
-            "matches": 0,
-            "draw_rate": null
-          },
-          "transfer_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "signal_count": 0
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "signal_count": 0
-            }
-          },
-          "fixture_congestion": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "days_rest": null,
-              "opponent": null
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "days_rest": null,
-              "opponent": null
-            }
-          },
-          "european_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "match_count": 0
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "match_count": 0
-            }
-          },
-          "home_elo": 1474.6,
-          "away_elo": 1500.0,
-          "home_points_per_match": 1.62,
-          "away_points_per_match": 0,
-          "strength_edge": 0.43,
-          "home_xg_efficiency": 0.934,
           "away_xg_efficiency": null,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
@@ -23393,6 +23393,221 @@
       "week": 23,
       "matches": [
         {
+          "match_id": "317982",
+          "date_time": "28.02.2027",
+          "home_team": "GALATASARAY A.Ş.",
+          "away_team": "TRABZONSPOR A.Ş.",
+          "is_played": false,
+          "actual_score": null,
+          "data_confidence": "HIGH",
+          "raw_predicted": "home",
+          "predicted": "home",
+          "expected_home_goals": 1.86,
+          "expected_away_goals": 1.16,
+          "top_scorelines": [
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.105
+            },
+            {
+              "score": "2-1",
+              "home_goals": 2,
+              "away_goals": 1,
+              "probability": 0.098
+            },
+            {
+              "score": "1-0",
+              "home_goals": 1,
+              "away_goals": 0,
+              "probability": 0.091
+            },
+            {
+              "score": "2-0",
+              "home_goals": 2,
+              "away_goals": 0,
+              "probability": 0.085
+            },
+            {
+              "score": "1-2",
+              "home_goals": 1,
+              "away_goals": 2,
+              "probability": 0.061
+            }
+          ],
+          "recommended_scoreline": {
+            "score": "2-1",
+            "home_goals": 2,
+            "away_goals": 1,
+            "probability": 0.098
+          },
+          "home_win_probability": 0.538,
+          "draw_probability": 0.227,
+          "away_win_probability": 0.235,
+          "head_to_head": {
+            "available": false,
+            "matches": 0,
+            "draw_rate": null
+          },
+          "transfer_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "signal_count": 0
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "signal_count": 0
+            }
+          },
+          "fixture_congestion": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "days_rest": null,
+              "opponent": null
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "days_rest": null,
+              "opponent": null
+            }
+          },
+          "european_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "match_count": 0
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "match_count": 0
+            }
+          },
+          "home_elo": 1635.5,
+          "away_elo": 1608.3,
+          "home_points_per_match": 1.75,
+          "away_points_per_match": 1.5,
+          "strength_edge": 0.16,
+          "home_xg_efficiency": 1.147,
+          "away_xg_efficiency": 1.086,
+          "referee_adj": 0.0,
+          "referee_cards_per_match": null,
+          "referee_goals_per_match": null
+        },
+        {
+          "match_id": "317983",
+          "date_time": "28.02.2027",
+          "home_team": "TÜMOSAN KONYASPOR",
+          "away_team": "KASIMPAŞA A.Ş.",
+          "is_played": false,
+          "actual_score": null,
+          "data_confidence": "MEDIUM",
+          "raw_predicted": "home",
+          "predicted": "home",
+          "expected_home_goals": 1.7,
+          "expected_away_goals": 1.27,
+          "top_scorelines": [
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.111
+            },
+            {
+              "score": "2-1",
+              "home_goals": 2,
+              "away_goals": 1,
+              "probability": 0.094
+            },
+            {
+              "score": "1-0",
+              "home_goals": 1,
+              "away_goals": 0,
+              "probability": 0.087
+            },
+            {
+              "score": "2-0",
+              "home_goals": 2,
+              "away_goals": 0,
+              "probability": 0.074
+            },
+            {
+              "score": "1-2",
+              "home_goals": 1,
+              "away_goals": 2,
+              "probability": 0.07
+            }
+          ],
+          "recommended_scoreline": {
+            "score": "2-1",
+            "home_goals": 2,
+            "away_goals": 1,
+            "probability": 0.094
+          },
+          "home_win_probability": 0.457,
+          "draw_probability": 0.266,
+          "away_win_probability": 0.277,
+          "head_to_head": {
+            "available": true,
+            "matches": 32,
+            "draw_rate": 0.344,
+            "last_meeting_date": "2026-03-08T13:00:00+00:00"
+          },
+          "transfer_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "signal_count": 0
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "signal_count": 0
+            }
+          },
+          "fixture_congestion": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "days_rest": null,
+              "opponent": null
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "days_rest": null,
+              "opponent": null
+            }
+          },
+          "european_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "match_count": 0
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "match_count": 0
+            }
+          },
+          "home_elo": 1474.6,
+          "away_elo": 1451.1,
+          "home_points_per_match": 1.62,
+          "away_points_per_match": 1.38,
+          "strength_edge": 0.14,
+          "home_xg_efficiency": 0.934,
+          "away_xg_efficiency": 0.681,
+          "referee_adj": 0.0,
+          "referee_cards_per_match": null,
+          "referee_goals_per_match": null
+        },
+        {
           "match_id": "317985",
           "date_time": "28.02.2027",
           "home_team": "BEŞİKTAŞ A.Ş.",
@@ -23642,221 +23857,6 @@
           "referee_goals_per_match": null
         },
         {
-          "match_id": "317982",
-          "date_time": "28.02.2027",
-          "home_team": "GALATASARAY A.Ş.",
-          "away_team": "TRABZONSPOR A.Ş.",
-          "is_played": false,
-          "actual_score": null,
-          "data_confidence": "HIGH",
-          "raw_predicted": "home",
-          "predicted": "home",
-          "expected_home_goals": 1.86,
-          "expected_away_goals": 1.16,
-          "top_scorelines": [
-            {
-              "score": "1-1",
-              "home_goals": 1,
-              "away_goals": 1,
-              "probability": 0.105
-            },
-            {
-              "score": "2-1",
-              "home_goals": 2,
-              "away_goals": 1,
-              "probability": 0.098
-            },
-            {
-              "score": "1-0",
-              "home_goals": 1,
-              "away_goals": 0,
-              "probability": 0.091
-            },
-            {
-              "score": "2-0",
-              "home_goals": 2,
-              "away_goals": 0,
-              "probability": 0.085
-            },
-            {
-              "score": "1-2",
-              "home_goals": 1,
-              "away_goals": 2,
-              "probability": 0.061
-            }
-          ],
-          "recommended_scoreline": {
-            "score": "2-1",
-            "home_goals": 2,
-            "away_goals": 1,
-            "probability": 0.098
-          },
-          "home_win_probability": 0.538,
-          "draw_probability": 0.227,
-          "away_win_probability": 0.235,
-          "head_to_head": {
-            "available": false,
-            "matches": 0,
-            "draw_rate": null
-          },
-          "transfer_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "signal_count": 0
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "signal_count": 0
-            }
-          },
-          "fixture_congestion": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "days_rest": null,
-              "opponent": null
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "days_rest": null,
-              "opponent": null
-            }
-          },
-          "european_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "match_count": 0
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "match_count": 0
-            }
-          },
-          "home_elo": 1635.5,
-          "away_elo": 1608.3,
-          "home_points_per_match": 1.75,
-          "away_points_per_match": 1.5,
-          "strength_edge": 0.16,
-          "home_xg_efficiency": 1.147,
-          "away_xg_efficiency": 1.086,
-          "referee_adj": 0.0,
-          "referee_cards_per_match": null,
-          "referee_goals_per_match": null
-        },
-        {
-          "match_id": "317983",
-          "date_time": "28.02.2027",
-          "home_team": "TÜMOSAN KONYASPOR",
-          "away_team": "KASIMPAŞA A.Ş.",
-          "is_played": false,
-          "actual_score": null,
-          "data_confidence": "MEDIUM",
-          "raw_predicted": "home",
-          "predicted": "home",
-          "expected_home_goals": 1.7,
-          "expected_away_goals": 1.27,
-          "top_scorelines": [
-            {
-              "score": "1-1",
-              "home_goals": 1,
-              "away_goals": 1,
-              "probability": 0.111
-            },
-            {
-              "score": "2-1",
-              "home_goals": 2,
-              "away_goals": 1,
-              "probability": 0.094
-            },
-            {
-              "score": "1-0",
-              "home_goals": 1,
-              "away_goals": 0,
-              "probability": 0.087
-            },
-            {
-              "score": "2-0",
-              "home_goals": 2,
-              "away_goals": 0,
-              "probability": 0.074
-            },
-            {
-              "score": "1-2",
-              "home_goals": 1,
-              "away_goals": 2,
-              "probability": 0.07
-            }
-          ],
-          "recommended_scoreline": {
-            "score": "2-1",
-            "home_goals": 2,
-            "away_goals": 1,
-            "probability": 0.094
-          },
-          "home_win_probability": 0.457,
-          "draw_probability": 0.266,
-          "away_win_probability": 0.277,
-          "head_to_head": {
-            "available": true,
-            "matches": 32,
-            "draw_rate": 0.344,
-            "last_meeting_date": "2026-03-08T13:00:00+00:00"
-          },
-          "transfer_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "signal_count": 0
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "signal_count": 0
-            }
-          },
-          "fixture_congestion": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "days_rest": null,
-              "opponent": null
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "days_rest": null,
-              "opponent": null
-            }
-          },
-          "european_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "match_count": 0
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "match_count": 0
-            }
-          },
-          "home_elo": 1474.6,
-          "away_elo": 1451.1,
-          "home_points_per_match": 1.62,
-          "away_points_per_match": 1.38,
-          "strength_edge": 0.14,
-          "home_xg_efficiency": 0.934,
-          "away_xg_efficiency": 0.681,
-          "referee_adj": 0.0,
-          "referee_cards_per_match": null,
-          "referee_goals_per_match": null
-        },
-        {
           "match_id": "317984",
           "date_time": "28.02.2027",
           "home_team": "GENÇLERBİRLİĞİ",
@@ -24096,55 +24096,55 @@
           "match_id": "317987",
           "date_time": "28.02.2027",
           "home_team": "CORENDON ALANYASPOR",
-          "away_team": "ÇORUM FK",
+          "away_team": "ARCA ÇORUM FK",
           "is_played": false,
           "actual_score": null,
-          "data_confidence": "LOW_NEW_TEAM",
+          "data_confidence": "LOW",
           "raw_predicted": "home",
           "predicted": "draw",
-          "expected_home_goals": 0.87,
+          "expected_home_goals": 0.86,
           "expected_away_goals": 0.47,
           "top_scorelines": [
             {
               "score": "0-0",
               "home_goals": 0,
               "away_goals": 0,
-              "probability": 0.263
+              "probability": 0.264
             },
             {
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.229
+              "probability": 0.226
             },
             {
               "score": "0-1",
               "home_goals": 0,
               "away_goals": 1,
-              "probability": 0.123
+              "probability": 0.125
             },
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.106
+              "probability": 0.107
             },
             {
               "score": "2-0",
               "home_goals": 2,
               "away_goals": 0,
-              "probability": 0.099
+              "probability": 0.097
             }
           ],
           "recommended_scoreline": {
             "score": "0-0",
             "home_goals": 0,
             "away_goals": 0,
-            "probability": 0.263
+            "probability": 0.264
           },
-          "home_win_probability": 0.432,
-          "draw_probability": 0.381,
-          "away_win_probability": 0.187,
+          "home_win_probability": 0.425,
+          "draw_probability": 0.383,
+          "away_win_probability": 0.192,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -24189,10 +24189,10 @@
             }
           },
           "home_elo": 1456.5,
-          "away_elo": 1500.0,
+          "away_elo": 1506.3,
           "home_points_per_match": 1.12,
-          "away_points_per_match": 0,
-          "strength_edge": 0.35,
+          "away_points_per_match": 1.0,
+          "strength_edge": 0.11,
           "home_xg_efficiency": 0.545,
           "away_xg_efficiency": null,
           "referee_adj": 0.0,
@@ -25768,6 +25768,134 @@
           "referee_goals_per_match": null
         },
         {
+          "match_id": "318002",
+          "date_time": "14.03.2027",
+          "home_team": "GAZİANTEP FUTBOL KULÜBÜ A.Ş.",
+          "away_team": "İSTANBUL BAŞAKŞEHİR FK",
+          "is_played": false,
+          "actual_score": null,
+          "data_confidence": "HIGH",
+          "raw_predicted": "away",
+          "predicted": "away",
+          "expected_home_goals": 1.09,
+          "expected_away_goals": 2.0,
+          "top_scorelines": [
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.099
+            },
+            {
+              "score": "1-2",
+              "home_goals": 1,
+              "away_goals": 2,
+              "probability": 0.099
+            },
+            {
+              "score": "0-1",
+              "home_goals": 0,
+              "away_goals": 1,
+              "probability": 0.091
+            },
+            {
+              "score": "0-2",
+              "home_goals": 0,
+              "away_goals": 2,
+              "probability": 0.091
+            },
+            {
+              "score": "1-3",
+              "home_goals": 1,
+              "away_goals": 3,
+              "probability": 0.066
+            }
+          ],
+          "recommended_scoreline": {
+            "score": "1-2",
+            "home_goals": 1,
+            "away_goals": 2,
+            "probability": 0.099
+          },
+          "home_win_probability": 0.202,
+          "draw_probability": 0.214,
+          "away_win_probability": 0.585,
+          "head_to_head": {
+            "available": false,
+            "matches": 0,
+            "draw_rate": null
+          },
+          "transfer_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "signal_count": 0
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "signal_count": 0
+            }
+          },
+          "fixture_congestion": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "days_rest": null,
+              "opponent": null
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "days_rest": null,
+              "opponent": null
+            }
+          },
+          "european_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "match_count": 0
+            },
+            "away": {
+              "available": true,
+              "edge": -0.0276,
+              "match_count": 2,
+              "record": {
+                "w": 0,
+                "d": 1,
+                "l": 1
+              },
+              "recent": [
+                {
+                  "outcome": "loss",
+                  "opponent": "Inter Turku",
+                  "opponent_strength": "weak",
+                  "date": "2026-07-30",
+                  "score": "0-2"
+                },
+                {
+                  "outcome": "draw",
+                  "opponent": "Inter Turku",
+                  "opponent_strength": "weak",
+                  "date": "2026-07-22",
+                  "score": "1-1"
+                }
+              ]
+            }
+          },
+          "home_elo": 1420.8,
+          "away_elo": 1590.4,
+          "home_points_per_match": 0.5,
+          "away_points_per_match": 1.88,
+          "strength_edge": -0.642,
+          "home_xg_efficiency": 1.166,
+          "away_xg_efficiency": 1.131,
+          "referee_adj": 0.0,
+          "referee_cards_per_match": null,
+          "referee_goals_per_match": null
+        },
+        {
           "match_id": "318003",
           "date_time": "14.03.2027",
           "home_team": "TÜMOSAN KONYASPOR",
@@ -25978,134 +26106,6 @@
           "strength_edge": 0.29,
           "home_xg_efficiency": 1.147,
           "away_xg_efficiency": 1.26,
-          "referee_adj": 0.0,
-          "referee_cards_per_match": null,
-          "referee_goals_per_match": null
-        },
-        {
-          "match_id": "318002",
-          "date_time": "14.03.2027",
-          "home_team": "GAZİANTEP FUTBOL KULÜBÜ A.Ş.",
-          "away_team": "İSTANBUL BAŞAKŞEHİR FK",
-          "is_played": false,
-          "actual_score": null,
-          "data_confidence": "HIGH",
-          "raw_predicted": "away",
-          "predicted": "away",
-          "expected_home_goals": 1.09,
-          "expected_away_goals": 2.0,
-          "top_scorelines": [
-            {
-              "score": "1-1",
-              "home_goals": 1,
-              "away_goals": 1,
-              "probability": 0.099
-            },
-            {
-              "score": "1-2",
-              "home_goals": 1,
-              "away_goals": 2,
-              "probability": 0.099
-            },
-            {
-              "score": "0-1",
-              "home_goals": 0,
-              "away_goals": 1,
-              "probability": 0.091
-            },
-            {
-              "score": "0-2",
-              "home_goals": 0,
-              "away_goals": 2,
-              "probability": 0.091
-            },
-            {
-              "score": "1-3",
-              "home_goals": 1,
-              "away_goals": 3,
-              "probability": 0.066
-            }
-          ],
-          "recommended_scoreline": {
-            "score": "1-2",
-            "home_goals": 1,
-            "away_goals": 2,
-            "probability": 0.099
-          },
-          "home_win_probability": 0.202,
-          "draw_probability": 0.214,
-          "away_win_probability": 0.585,
-          "head_to_head": {
-            "available": false,
-            "matches": 0,
-            "draw_rate": null
-          },
-          "transfer_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "signal_count": 0
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "signal_count": 0
-            }
-          },
-          "fixture_congestion": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "days_rest": null,
-              "opponent": null
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "days_rest": null,
-              "opponent": null
-            }
-          },
-          "european_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "match_count": 0
-            },
-            "away": {
-              "available": true,
-              "edge": -0.0276,
-              "match_count": 2,
-              "record": {
-                "w": 0,
-                "d": 1,
-                "l": 1
-              },
-              "recent": [
-                {
-                  "outcome": "loss",
-                  "opponent": "Inter Turku",
-                  "opponent_strength": "weak",
-                  "date": "2026-07-30",
-                  "score": "0-2"
-                },
-                {
-                  "outcome": "draw",
-                  "opponent": "Inter Turku",
-                  "opponent_strength": "weak",
-                  "date": "2026-07-22",
-                  "score": "1-1"
-                }
-              ]
-            }
-          },
-          "home_elo": 1420.8,
-          "away_elo": 1590.4,
-          "home_points_per_match": 0.5,
-          "away_points_per_match": 1.88,
-          "strength_edge": -0.642,
-          "home_xg_efficiency": 1.166,
-          "away_xg_efficiency": 1.131,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
           "referee_goals_per_match": null
@@ -28956,114 +28956,6 @@
           "referee_goals_per_match": null
         },
         {
-          "match_id": "318035",
-          "date_time": "11.04.2027",
-          "home_team": "TÜMOSAN KONYASPOR",
-          "away_team": "SAMSUNSPOR A.Ş.",
-          "is_played": false,
-          "actual_score": null,
-          "data_confidence": "LOW",
-          "raw_predicted": "home",
-          "predicted": "home",
-          "expected_home_goals": 1.84,
-          "expected_away_goals": 1.64,
-          "top_scorelines": [
-            {
-              "score": "1-1",
-              "home_goals": 1,
-              "away_goals": 1,
-              "probability": 0.093
-            },
-            {
-              "score": "2-1",
-              "home_goals": 2,
-              "away_goals": 1,
-              "probability": 0.085
-            },
-            {
-              "score": "1-2",
-              "home_goals": 1,
-              "away_goals": 2,
-              "probability": 0.076
-            },
-            {
-              "score": "2-2",
-              "home_goals": 2,
-              "away_goals": 2,
-              "probability": 0.07
-            },
-            {
-              "score": "1-0",
-              "home_goals": 1,
-              "away_goals": 0,
-              "probability": 0.057
-            }
-          ],
-          "recommended_scoreline": {
-            "score": "2-1",
-            "home_goals": 2,
-            "away_goals": 1,
-            "probability": 0.085
-          },
-          "home_win_probability": 0.409,
-          "draw_probability": 0.257,
-          "away_win_probability": 0.334,
-          "head_to_head": {
-            "available": true,
-            "matches": 9,
-            "draw_rate": 0.444,
-            "last_meeting_date": "2026-04-05T11:30:00+00:00"
-          },
-          "transfer_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "signal_count": 0
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "signal_count": 0
-            }
-          },
-          "fixture_congestion": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "days_rest": null,
-              "opponent": null
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "days_rest": null,
-              "opponent": null
-            }
-          },
-          "european_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "match_count": 0
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "match_count": 0
-            }
-          },
-          "home_elo": 1474.6,
-          "away_elo": 1539.0,
-          "home_points_per_match": 1.62,
-          "away_points_per_match": 2.0,
-          "strength_edge": -0.11,
-          "home_xg_efficiency": 0.934,
-          "away_xg_efficiency": 0.652,
-          "referee_adj": 0.0,
-          "referee_cards_per_match": null,
-          "referee_goals_per_match": null
-        },
-        {
           "match_id": "318027",
           "date_time": "11.04.2027",
           "home_team": "KASIMPAŞA A.Ş.",
@@ -29759,6 +29651,114 @@
           "strength_edge": -0.31,
           "home_xg_efficiency": 1.26,
           "away_xg_efficiency": 1.274,
+          "referee_adj": 0.0,
+          "referee_cards_per_match": null,
+          "referee_goals_per_match": null
+        },
+        {
+          "match_id": "318035",
+          "date_time": "11.04.2027",
+          "home_team": "TÜMOSAN KONYASPOR",
+          "away_team": "SAMSUNSPOR A.Ş.",
+          "is_played": false,
+          "actual_score": null,
+          "data_confidence": "LOW",
+          "raw_predicted": "home",
+          "predicted": "home",
+          "expected_home_goals": 1.84,
+          "expected_away_goals": 1.64,
+          "top_scorelines": [
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.093
+            },
+            {
+              "score": "2-1",
+              "home_goals": 2,
+              "away_goals": 1,
+              "probability": 0.085
+            },
+            {
+              "score": "1-2",
+              "home_goals": 1,
+              "away_goals": 2,
+              "probability": 0.076
+            },
+            {
+              "score": "2-2",
+              "home_goals": 2,
+              "away_goals": 2,
+              "probability": 0.07
+            },
+            {
+              "score": "1-0",
+              "home_goals": 1,
+              "away_goals": 0,
+              "probability": 0.057
+            }
+          ],
+          "recommended_scoreline": {
+            "score": "2-1",
+            "home_goals": 2,
+            "away_goals": 1,
+            "probability": 0.085
+          },
+          "home_win_probability": 0.409,
+          "draw_probability": 0.257,
+          "away_win_probability": 0.334,
+          "head_to_head": {
+            "available": true,
+            "matches": 9,
+            "draw_rate": 0.444,
+            "last_meeting_date": "2026-04-05T11:30:00+00:00"
+          },
+          "transfer_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "signal_count": 0
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "signal_count": 0
+            }
+          },
+          "fixture_congestion": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "days_rest": null,
+              "opponent": null
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "days_rest": null,
+              "opponent": null
+            }
+          },
+          "european_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "match_count": 0
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "match_count": 0
+            }
+          },
+          "home_elo": 1474.6,
+          "away_elo": 1539.0,
+          "home_points_per_match": 1.62,
+          "away_points_per_match": 2.0,
+          "strength_edge": -0.11,
+          "home_xg_efficiency": 0.934,
+          "away_xg_efficiency": 0.652,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
           "referee_goals_per_match": null
@@ -33099,6 +33099,113 @@
           "referee_goals_per_match": null
         },
         {
+          "match_id": "318064",
+          "date_time": "09.05.2027",
+          "home_team": "GALATASARAY A.Ş.",
+          "away_team": "EYÜPSPOR",
+          "is_played": false,
+          "actual_score": null,
+          "data_confidence": "HIGH",
+          "raw_predicted": "home",
+          "predicted": "home",
+          "expected_home_goals": 1.95,
+          "expected_away_goals": 1.13,
+          "top_scorelines": [
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.101
+            },
+            {
+              "score": "2-1",
+              "home_goals": 2,
+              "away_goals": 1,
+              "probability": 0.099
+            },
+            {
+              "score": "1-0",
+              "home_goals": 1,
+              "away_goals": 0,
+              "probability": 0.09
+            },
+            {
+              "score": "2-0",
+              "home_goals": 2,
+              "away_goals": 0,
+              "probability": 0.088
+            },
+            {
+              "score": "3-1",
+              "home_goals": 3,
+              "away_goals": 1,
+              "probability": 0.064
+            }
+          ],
+          "recommended_scoreline": {
+            "score": "2-1",
+            "home_goals": 2,
+            "away_goals": 1,
+            "probability": 0.099
+          },
+          "home_win_probability": 0.565,
+          "draw_probability": 0.219,
+          "away_win_probability": 0.216,
+          "head_to_head": {
+            "available": false,
+            "matches": 0,
+            "draw_rate": null
+          },
+          "transfer_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "signal_count": 0
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "signal_count": 0
+            }
+          },
+          "fixture_congestion": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "days_rest": null,
+              "opponent": null
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "days_rest": null,
+              "opponent": null
+            }
+          },
+          "european_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "match_count": 0
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "match_count": 0
+            }
+          },
+          "home_elo": 1635.5,
+          "away_elo": 1447.2,
+          "home_points_per_match": 1.75,
+          "away_points_per_match": 1.38,
+          "strength_edge": 0.11,
+          "home_xg_efficiency": 1.147,
+          "away_xg_efficiency": 0.505,
+          "referee_adj": 0.0,
+          "referee_cards_per_match": null,
+          "referee_goals_per_match": null
+        },
+        {
           "match_id": "318065",
           "date_time": "09.05.2027",
           "home_team": "SAMSUNSPOR A.Ş.",
@@ -33207,62 +33314,63 @@
           "referee_goals_per_match": null
         },
         {
-          "match_id": "318064",
+          "match_id": "318067",
           "date_time": "09.05.2027",
-          "home_team": "GALATASARAY A.Ş.",
-          "away_team": "EYÜPSPOR",
+          "home_team": "TÜMOSAN KONYASPOR",
+          "away_team": "GÖZTEPE A.Ş.",
           "is_played": false,
           "actual_score": null,
-          "data_confidence": "HIGH",
-          "raw_predicted": "home",
-          "predicted": "home",
-          "expected_home_goals": 1.95,
-          "expected_away_goals": 1.13,
+          "data_confidence": "LOW",
+          "raw_predicted": "away",
+          "predicted": "away",
+          "expected_home_goals": 1.65,
+          "expected_away_goals": 1.72,
           "top_scorelines": [
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.101
+              "probability": 0.098
+            },
+            {
+              "score": "1-2",
+              "home_goals": 1,
+              "away_goals": 2,
+              "probability": 0.084
             },
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.099
+              "probability": 0.081
             },
             {
-              "score": "1-0",
-              "home_goals": 1,
-              "away_goals": 0,
-              "probability": 0.09
-            },
-            {
-              "score": "2-0",
+              "score": "2-2",
               "home_goals": 2,
-              "away_goals": 0,
-              "probability": 0.088
+              "away_goals": 2,
+              "probability": 0.069
             },
             {
-              "score": "3-1",
-              "home_goals": 3,
+              "score": "0-1",
+              "home_goals": 0,
               "away_goals": 1,
-              "probability": 0.064
+              "probability": 0.059
             }
           ],
           "recommended_scoreline": {
-            "score": "2-1",
-            "home_goals": 2,
-            "away_goals": 1,
-            "probability": 0.099
+            "score": "1-2",
+            "home_goals": 1,
+            "away_goals": 2,
+            "probability": 0.084
           },
-          "home_win_probability": 0.565,
-          "draw_probability": 0.219,
-          "away_win_probability": 0.216,
+          "home_win_probability": 0.367,
+          "draw_probability": 0.239,
+          "away_win_probability": 0.394,
           "head_to_head": {
-            "available": false,
-            "matches": 0,
-            "draw_rate": null
+            "available": true,
+            "matches": 18,
+            "draw_rate": 0.278,
+            "last_meeting_date": "2026-02-08T14:00:00+00:00"
           },
           "transfer_signal": {
             "home": {
@@ -33302,13 +33410,13 @@
               "match_count": 0
             }
           },
-          "home_elo": 1635.5,
-          "away_elo": 1447.2,
-          "home_points_per_match": 1.75,
-          "away_points_per_match": 1.38,
-          "strength_edge": 0.11,
-          "home_xg_efficiency": 1.147,
-          "away_xg_efficiency": 0.505,
+          "home_elo": 1474.6,
+          "away_elo": 1539.9,
+          "home_points_per_match": 1.62,
+          "away_points_per_match": 1.5,
+          "strength_edge": 0.07,
+          "home_xg_efficiency": 0.934,
+          "away_xg_efficiency": 1.347,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
           "referee_goals_per_match": null
@@ -33437,114 +33545,6 @@
           "strength_edge": 0.312,
           "home_xg_efficiency": 1.131,
           "away_xg_efficiency": 0.937,
-          "referee_adj": 0.0,
-          "referee_cards_per_match": null,
-          "referee_goals_per_match": null
-        },
-        {
-          "match_id": "318067",
-          "date_time": "09.05.2027",
-          "home_team": "TÜMOSAN KONYASPOR",
-          "away_team": "GÖZTEPE A.Ş.",
-          "is_played": false,
-          "actual_score": null,
-          "data_confidence": "LOW",
-          "raw_predicted": "away",
-          "predicted": "away",
-          "expected_home_goals": 1.65,
-          "expected_away_goals": 1.72,
-          "top_scorelines": [
-            {
-              "score": "1-1",
-              "home_goals": 1,
-              "away_goals": 1,
-              "probability": 0.098
-            },
-            {
-              "score": "1-2",
-              "home_goals": 1,
-              "away_goals": 2,
-              "probability": 0.084
-            },
-            {
-              "score": "2-1",
-              "home_goals": 2,
-              "away_goals": 1,
-              "probability": 0.081
-            },
-            {
-              "score": "2-2",
-              "home_goals": 2,
-              "away_goals": 2,
-              "probability": 0.069
-            },
-            {
-              "score": "0-1",
-              "home_goals": 0,
-              "away_goals": 1,
-              "probability": 0.059
-            }
-          ],
-          "recommended_scoreline": {
-            "score": "1-2",
-            "home_goals": 1,
-            "away_goals": 2,
-            "probability": 0.084
-          },
-          "home_win_probability": 0.367,
-          "draw_probability": 0.239,
-          "away_win_probability": 0.394,
-          "head_to_head": {
-            "available": true,
-            "matches": 18,
-            "draw_rate": 0.278,
-            "last_meeting_date": "2026-02-08T14:00:00+00:00"
-          },
-          "transfer_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "signal_count": 0
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "signal_count": 0
-            }
-          },
-          "fixture_congestion": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "days_rest": null,
-              "opponent": null
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "days_rest": null,
-              "opponent": null
-            }
-          },
-          "european_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "match_count": 0
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "match_count": 0
-            }
-          },
-          "home_elo": 1474.6,
-          "away_elo": 1539.9,
-          "home_points_per_match": 1.62,
-          "away_points_per_match": 1.5,
-          "strength_edge": 0.07,
-          "home_xg_efficiency": 0.934,
-          "away_xg_efficiency": 1.347,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
           "referee_goals_per_match": null
@@ -35083,114 +35083,6 @@
       "week": 34,
       "matches": [
         {
-          "match_id": "318081",
-          "date_time": "23.05.2027",
-          "home_team": "GALATASARAY A.Ş.",
-          "away_team": "GAZİANTEP FUTBOL KULÜBÜ A.Ş.",
-          "is_played": false,
-          "actual_score": null,
-          "data_confidence": "HIGH",
-          "raw_predicted": "home",
-          "predicted": "home",
-          "expected_home_goals": 2.24,
-          "expected_away_goals": 1.03,
-          "top_scorelines": [
-            {
-              "score": "2-1",
-              "home_goals": 2,
-              "away_goals": 1,
-              "probability": 0.098
-            },
-            {
-              "score": "2-0",
-              "home_goals": 2,
-              "away_goals": 0,
-              "probability": 0.096
-            },
-            {
-              "score": "1-1",
-              "home_goals": 1,
-              "away_goals": 1,
-              "probability": 0.088
-            },
-            {
-              "score": "1-0",
-              "home_goals": 1,
-              "away_goals": 0,
-              "probability": 0.086
-            },
-            {
-              "score": "3-1",
-              "home_goals": 3,
-              "away_goals": 1,
-              "probability": 0.073
-            }
-          ],
-          "recommended_scoreline": {
-            "score": "2-1",
-            "home_goals": 2,
-            "away_goals": 1,
-            "probability": 0.098
-          },
-          "home_win_probability": 0.654,
-          "draw_probability": 0.182,
-          "away_win_probability": 0.164,
-          "head_to_head": {
-            "available": true,
-            "matches": 14,
-            "draw_rate": 0.143,
-            "last_meeting_date": "2026-01-17T17:00:00+00:00"
-          },
-          "transfer_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "signal_count": 0
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "signal_count": 0
-            }
-          },
-          "fixture_congestion": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "days_rest": null,
-              "opponent": null
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "days_rest": null,
-              "opponent": null
-            }
-          },
-          "european_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "match_count": 0
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "match_count": 0
-            }
-          },
-          "home_elo": 1635.5,
-          "away_elo": 1420.8,
-          "home_points_per_match": 1.75,
-          "away_points_per_match": 0.5,
-          "strength_edge": 0.54,
-          "home_xg_efficiency": 1.147,
-          "away_xg_efficiency": 1.166,
-          "referee_adj": 0.0,
-          "referee_cards_per_match": null,
-          "referee_goals_per_match": null
-        },
-        {
           "match_id": "318082",
           "date_time": "23.05.2027",
           "home_team": "SAMSUNSPOR A.Ş.",
@@ -35441,62 +35333,63 @@
           "referee_goals_per_match": null
         },
         {
-          "match_id": "318086",
+          "match_id": "318081",
           "date_time": "23.05.2027",
-          "home_team": "TÜMOSAN KONYASPOR",
-          "away_team": "ARCA ÇORUM FK",
+          "home_team": "GALATASARAY A.Ş.",
+          "away_team": "GAZİANTEP FUTBOL KULÜBÜ A.Ş.",
           "is_played": false,
           "actual_score": null,
-          "data_confidence": "MEDIUM",
+          "data_confidence": "HIGH",
           "raw_predicted": "home",
-          "predicted": "draw",
-          "expected_home_goals": 1.08,
-          "expected_away_goals": 0.64,
+          "predicted": "home",
+          "expected_home_goals": 2.24,
+          "expected_away_goals": 1.03,
           "top_scorelines": [
             {
-              "score": "1-0",
-              "home_goals": 1,
-              "away_goals": 0,
-              "probability": 0.194
-            },
-            {
-              "score": "0-0",
-              "home_goals": 0,
-              "away_goals": 0,
-              "probability": 0.179
-            },
-            {
-              "score": "1-1",
-              "home_goals": 1,
+              "score": "2-1",
+              "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.124
-            },
-            {
-              "score": "0-1",
-              "home_goals": 0,
-              "away_goals": 1,
-              "probability": 0.114
+              "probability": 0.098
             },
             {
               "score": "2-0",
               "home_goals": 2,
               "away_goals": 0,
-              "probability": 0.105
+              "probability": 0.096
+            },
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.088
+            },
+            {
+              "score": "1-0",
+              "home_goals": 1,
+              "away_goals": 0,
+              "probability": 0.086
+            },
+            {
+              "score": "3-1",
+              "home_goals": 3,
+              "away_goals": 1,
+              "probability": 0.073
             }
           ],
           "recommended_scoreline": {
-            "score": "0-0",
-            "home_goals": 0,
-            "away_goals": 0,
-            "probability": 0.179
+            "score": "2-1",
+            "home_goals": 2,
+            "away_goals": 1,
+            "probability": 0.098
           },
-          "home_win_probability": 0.46,
-          "draw_probability": 0.325,
-          "away_win_probability": 0.214,
+          "home_win_probability": 0.654,
+          "draw_probability": 0.182,
+          "away_win_probability": 0.164,
           "head_to_head": {
-            "available": false,
-            "matches": 0,
-            "draw_rate": null
+            "available": true,
+            "matches": 14,
+            "draw_rate": 0.143,
+            "last_meeting_date": "2026-01-17T17:00:00+00:00"
           },
           "transfer_signal": {
             "home": {
@@ -35536,13 +35429,13 @@
               "match_count": 0
             }
           },
-          "home_elo": 1474.6,
-          "away_elo": 1506.3,
-          "home_points_per_match": 1.62,
-          "away_points_per_match": 1.0,
-          "strength_edge": 0.19,
-          "home_xg_efficiency": 0.934,
-          "away_xg_efficiency": null,
+          "home_elo": 1635.5,
+          "away_elo": 1420.8,
+          "home_points_per_match": 1.75,
+          "away_points_per_match": 0.5,
+          "strength_edge": 0.54,
+          "home_xg_efficiency": 1.147,
+          "away_xg_efficiency": 1.166,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
           "referee_goals_per_match": null
@@ -35779,6 +35672,113 @@
           "strength_edge": -0.08,
           "home_xg_efficiency": 1.26,
           "away_xg_efficiency": 0.937,
+          "referee_adj": 0.0,
+          "referee_cards_per_match": null,
+          "referee_goals_per_match": null
+        },
+        {
+          "match_id": "318086",
+          "date_time": "23.05.2027",
+          "home_team": "TÜMOSAN KONYASPOR",
+          "away_team": "ARCA ÇORUM FK",
+          "is_played": false,
+          "actual_score": null,
+          "data_confidence": "MEDIUM",
+          "raw_predicted": "home",
+          "predicted": "draw",
+          "expected_home_goals": 1.08,
+          "expected_away_goals": 0.64,
+          "top_scorelines": [
+            {
+              "score": "1-0",
+              "home_goals": 1,
+              "away_goals": 0,
+              "probability": 0.194
+            },
+            {
+              "score": "0-0",
+              "home_goals": 0,
+              "away_goals": 0,
+              "probability": 0.179
+            },
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.124
+            },
+            {
+              "score": "0-1",
+              "home_goals": 0,
+              "away_goals": 1,
+              "probability": 0.114
+            },
+            {
+              "score": "2-0",
+              "home_goals": 2,
+              "away_goals": 0,
+              "probability": 0.105
+            }
+          ],
+          "recommended_scoreline": {
+            "score": "0-0",
+            "home_goals": 0,
+            "away_goals": 0,
+            "probability": 0.179
+          },
+          "home_win_probability": 0.46,
+          "draw_probability": 0.325,
+          "away_win_probability": 0.214,
+          "head_to_head": {
+            "available": false,
+            "matches": 0,
+            "draw_rate": null
+          },
+          "transfer_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "signal_count": 0
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "signal_count": 0
+            }
+          },
+          "fixture_congestion": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "days_rest": null,
+              "opponent": null
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "days_rest": null,
+              "opponent": null
+            }
+          },
+          "european_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "match_count": 0
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "match_count": 0
+            }
+          },
+          "home_elo": 1474.6,
+          "away_elo": 1506.3,
+          "home_points_per_match": 1.62,
+          "away_points_per_match": 1.0,
+          "strength_edge": 0.19,
+          "home_xg_efficiency": 0.934,
+          "away_xg_efficiency": null,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
           "referee_goals_per_match": null
