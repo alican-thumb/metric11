@@ -230,6 +230,7 @@
 | dokuzeylul.com | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | egedesonsoz.com | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | ensonhaber.com | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
+| evrensel.net | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | fotomac.com.tr | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | gazetevatan.com | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | haber61.net | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
