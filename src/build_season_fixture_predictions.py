@@ -129,6 +129,7 @@ def build_predictions() -> dict:
                 apply_transfer_signal=True,
                 apply_fixture_congestion=True,
                 apply_european_signal=True,
+                apply_suspension_signal=True,
                 match_date=match_dt,
             )
             probs = {
@@ -300,6 +301,13 @@ def _match_card(m: dict, signals: dict | None = None, scorers: dict | None = Non
         flag = '<span class="ref-flag">yüksek kart</span>' if ref_cards > 5.5 else ""
         name_part = f'{escape(str(ref_name))} · ' if ref_name else ""
         ref_html = f'<div class="mc-ref">🧑‍⚖️ {name_part}{ref_cards:.1f} kart/maç {flag}</div>'
+    # Ceza (kırmızı kart) sinyali — bir önceki maçta kırmızı gören oyuncu bu maçta yok.
+    susp = m.get("suspension_signal") or {}
+    susp_names = (susp.get("home") or {}).get("suspended_players") or []
+    susp_names += (susp.get("away") or {}).get("suspended_players") or []
+    susp_html = ""
+    if susp_names:
+        susp_html = f'<div class="mc-ref">🚫 Cezalı: {escape(", ".join(susp_names))}</div>'
     # Maç geneli gol & kart sinyali (2.5 alt/üst, KG var/yok, beklenen kart, kırmızı risk) —
     # build_match_signals.py'den, mevcut xG + 2025-26 takım/hakem kart geçmişinden türetilir.
     signals_html = ""
@@ -351,6 +359,7 @@ def _match_card(m: dict, signals: dict | None = None, scorers: dict | None = Non
   {scoreline_html}
   {signals_html}
   {ref_html}
+  {susp_html}
   {scorers_html}
   <div class="mc-conf">Güven: {escape(m['data_confidence'])}</div>
 </div>"""

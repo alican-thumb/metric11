@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import math
 from collections import Counter
+from datetime import datetime
 
 from src.normalization import canonical_player_name, normalize_name, normalize_team_name
 from src.preview.constants import ACTION_LABELS
@@ -183,6 +184,9 @@ _SQUAD_NAME_TO_TM = {
     "EYÜPSPOR": "İKAS EYÜPSPOR",
     "İSTANBUL BAŞAKŞEHİR FK": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ",
     "AMED SPORTİF FAALİYETLER": "AMED SFK",
+    # season_fixture_predictions_2026_2027.json içinde aynı kulüp iki adla geçiyor
+    # (bilinen, açık iç tutarsızlık — bkz. PROJECT_STATE); TM kadrosu yalnız "ÇORUM FK" kullanıyor.
+    "ARCA ÇORUM FK": "ÇORUM FK",
 }
 _squad_players_cache: dict[str, dict] = {}
 
@@ -273,6 +277,123 @@ def combined_transfer_edge(team_name: str) -> dict:
         "edge": round(max(-_SQUAD_TRANSITION_EDGE_CAP, min(_SQUAD_TRANSITION_EDGE_CAP, edge)), 4),
         "news_signal": news if news_ok else None,
         "squad_signal": squad if squad_ok else None,
+    }
+
+
+# Ceza (kırmızı kart) sinyali: yalnız STRAIGHT RED / ÇİFT SARI — belirsizlik yok, standart
+# kural her yerde aynı (1 sonraki lig maçı ceza). Birikmiş sarı kart eşiği (TFF'nin tam
+# reset/eşik kuralı güvenilir şekilde teyit edilemediği için) KASITLI OLARAK DAHİL EDİLMEZ —
+# yanlış kural varsayıp yanlış oyuncuyu "cezalı" göstermektense hiç sinyal üretmemek tercih edilir.
+_SUSPENSION_RED_TYPES = {"Kırmızı Kart", "Çift Sarı Kart"}
+_SUSPENSION_EDGE_CAP = 0.08  # transfer/kadro-diff'ten (0.15) daha küçük — tek maçlık, tek oyuncu kaybı
+_current_season_matches_cache: list[dict] | None = None
+_fixture_schedule_cache: dict[str, list[datetime]] | None = None
+
+
+def _parse_tff_dt(value: str | None) -> datetime | None:
+    if not value:
+        return None
+    try:
+        return datetime.strptime(value.replace(" - ", " ").strip(), "%d.%m.%Y %H:%M")
+    except ValueError:
+        return None
+
+
+def _load_fixture_schedule() -> dict[str, list[datetime]]:
+    """takım(TM adı) -> o takımın TÜM fikstür tarihleri (kronolojik, oynanmış+oynanmamış).
+
+    Ceza sinyalinin yalnız BİR SONRAKİ maça uygulanmasını (kırmızı karttan sonraki her
+    geleceğe değil) sağlamak için kullanılır — bkz. suspension_edge."""
+    global _fixture_schedule_cache
+    if _fixture_schedule_cache is None:
+        from src.config import PROCESSED_DIR
+
+        path = PROCESSED_DIR / "tff_super_lig_fixtures_2026_2027.json"
+        try:
+            payload = json.loads(path.read_text(encoding="utf-8"))
+        except (FileNotFoundError, json.JSONDecodeError):
+            _fixture_schedule_cache = {}
+        else:
+            out: dict[str, list[datetime]] = {}
+            for w in payload.get("weeks", []):
+                for m in w.get("matches", []):
+                    dt = _parse_tff_dt(m.get("date_time"))
+                    if dt is None:
+                        continue
+                    for side_name in (m.get("home_team"), m.get("away_team")):
+                        key = _tm_club_name(side_name)
+                        out.setdefault(key, []).append(dt)
+            for key in out:
+                out[key].sort()
+            _fixture_schedule_cache = out
+    return _fixture_schedule_cache
+
+
+def _load_current_season_matches() -> list[dict]:
+    global _current_season_matches_cache
+    if _current_season_matches_cache is None:
+        from src.config import PROCESSED_DIR
+
+        path = PROCESSED_DIR / "tff_super_lig_matches_2026_2027.json"
+        try:
+            _current_season_matches_cache = json.loads(path.read_text(encoding="utf-8"))
+        except (FileNotFoundError, json.JSONDecodeError):
+            _current_season_matches_cache = []
+    return _current_season_matches_cache
+
+
+def suspension_edge(team_name: str, match_date: "datetime | None") -> dict:
+    """Bir önceki lig maçında kırmızı kart gören oyuncunun sonraki maç cezasını, oyuncunun
+    güncel kadro piyasa değeri PAYI kadar küçük bir güç eksiği olarak yansıtır.
+
+    `match_date` (bu maçın tarihi) verilmezse veya takımın bundan önce oynanmış bir 2026-27
+    lig maçı bulunamazsa available=False. Yalnızca ileriye dönük tahminlerde kullanılmalı
+    (apply_suspension_signal=True) — backtest'i etkilemez.
+    """
+    if match_date is None:
+        return {"available": False, "edge": 0.0}
+    matches = _load_current_season_matches()
+    team_key = _tm_club_name(team_name)
+    candidates = []
+    for m in matches:
+        m_date = _parse_tff_dt(m.get("match_date"))
+        if m_date is None or m_date >= match_date:
+            continue
+        home_n = _tm_club_name(m.get("home_team", {}).get("name"))
+        away_n = _tm_club_name(m.get("away_team", {}).get("name"))
+        if home_n == team_key:
+            candidates.append((m_date, m, "home"))
+        elif away_n == team_key:
+            candidates.append((m_date, m, "away"))
+    if not candidates:
+        return {"available": False, "edge": 0.0}
+    candidates.sort(key=lambda x: x[0])
+    last_date, last_match, side = candidates[-1]
+
+    # Ceza yalnız kırmızı karttan SONRAKİ İLK fikstüre uygulanır — o maç oynanmış olsun ya
+    # da olmasın (gelecek her haftaya değil). Aradaki fikstür `match_date`'ten önceyse, ceza
+    # zaten "servis edilmiş" kabul edilir ve bu maça uygulanmaz.
+    schedule = _load_fixture_schedule().get(team_key, [])
+    next_after_red = next((d for d in schedule if d > last_date), None)
+    if next_after_red is not None and match_date != next_after_red:
+        return {"available": True, "edge": 0.0, "suspended_players": []}
+
+    red_players = [
+        c.get("player_name") for c in last_match.get("cards", {}).get(side, [])
+        if c.get("type") in _SUSPENSION_RED_TYPES
+    ]
+    if not red_players:
+        return {"available": True, "edge": 0.0, "suspended_players": []}
+
+    squad = _load_squad_players("2026_2027").get(team_key, {})
+    total_value = sum(squad.values()) or _TRANSFER_DEFAULT_SQUAD_VALUE_EUR
+    lost_value = sum(squad.get(canonical_player_name(p), 0) for p in red_players)
+    relative = lost_value / max(total_value, _TRANSFER_DEFAULT_SQUAD_VALUE_EUR)
+    return {
+        "available": True,
+        "edge": round(-min(_SUSPENSION_EDGE_CAP, relative), 4),
+        "suspended_players": red_players,
+        "lost_value_eur": lost_value,
     }
 
 

@@ -9,7 +9,7 @@ from pathlib import Path
 
 from src.config import PROCESSED_DIR
 from src.normalization import normalize_matches
-from src.preview.probability import combined_transfer_edge, european_form_edge, fixture_congestion_edge, head_to_head_draw_signal
+from src.preview.probability import combined_transfer_edge, european_form_edge, fixture_congestion_edge, head_to_head_draw_signal, suspension_edge
 
 
 def main() -> None:
@@ -194,6 +194,7 @@ def predict_match(
     apply_transfer_signal: bool = False,
     apply_fixture_congestion: bool = False,
     apply_european_signal: bool = False,
+    apply_suspension_signal: bool = False,
     match_date=None,
 ) -> dict:
     league_home_boost = 0.18
@@ -265,6 +266,17 @@ def predict_match(
             # Kullanıcı tercihi (2026-08-14): Avrupa formu görünür etki etsin — tam ağırlık (×1.0).
             strength_edge += euro_home.get("edge", 0.0) - euro_away.get("edge", 0.0)
 
+    # Ceza (kırmızı kart) sinyali: bir önceki lig maçında kırmızı kart gören oyuncunun
+    # ceza maçı, oyuncunun kadro değeri payı kadar küçük bir eksi olarak yansır. Yalnızca
+    # ileriye dönük tahminlerde (apply_suspension_signal=True); sonuç yoksa hiç karışmaz.
+    suspension_signal = {"home": {"available": False}, "away": {"available": False}}
+    if apply_suspension_signal:
+        susp_home = suspension_edge(home, match_date)
+        susp_away = suspension_edge(away, match_date)
+        suspension_signal = {"home": susp_home, "away": susp_away}
+        if susp_home.get("available") or susp_away.get("available"):
+            strength_edge += susp_home.get("edge", 0.0) - susp_away.get("edge", 0.0)
+
     # League-wide backtests are noisier than the Beşiktaş-focused preview model, so keep this as a
     # mild calibration signal instead of letting short-form strength dominate xG.
     expected_home += strength_edge * 0.05 + max(0, home_clean - away_clean) * 0.03 - max(0, home_blank - away_blank) * 0.04
@@ -330,6 +342,7 @@ def predict_match(
         "transfer_signal": transfer_signal,
         "fixture_congestion": fixture_congestion,
         "european_signal": european_signal,
+        "suspension_signal": suspension_signal,
         "home_elo": round(home_elo, 1),
         "away_elo": round(away_elo, 1),
         "home_points_per_match": round(home_ppg, 2),
