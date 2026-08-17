@@ -25,9 +25,28 @@ def main() -> None:
 
     ensure_data_dirs()
     prefix = args.output_prefix or f"tff_super_lig_fixtures_{args.season.replace('-', '_')}"
+    json_path = PROCESSED_DIR / f"{prefix}.json"
+
+    # Var olan dosyadaki BİLİNEN (gerçek, "-" olmayan) skorları koru. TFF'nin fikstür
+    # listeleme sayfası ara sıra ağ/CI kaynaklı geçici sorunlarla tam sonucu göstermeyip
+    # "-" dönebiliyor — bu durumda yeni fetch eski BİLİNEN bir skoru asla EZMEMELİ.
+    # (Kullanıcı bulgusu 2026-08-17: bot'un gece çalışması, önceden doğru girilmiş 5
+    # gerçek Hafta 1 sonucunu sessizce "-"ye geri döndürmüştü — Haftalık Karne'yi bozdu.)
+    existing_scores: dict[str, str] = {}
+    if json_path.exists():
+        try:
+            existing_payload = json.loads(json_path.read_text(encoding="utf-8"))
+            for w in existing_payload.get("weeks", []):
+                for m in w.get("matches", []):
+                    score = (m.get("score") or "").strip()
+                    if score and score != "-":
+                        existing_scores[m["match_id"]] = score
+        except (json.JSONDecodeError, KeyError):
+            pass
 
     weeks_payload = []
     empty_streak = 0
+    regressions = 0
     for week in range(1, args.weeks + 1):
         try:
             matches = fetch_week_matches(args.seed_match_id, week)
@@ -42,9 +61,19 @@ def main() -> None:
             time.sleep(args.sleep)
             continue
         empty_streak = 0
-        weeks_payload.append({"week": week, "matches": [fixture_to_dict(m) for m in matches]})
+        week_matches = [fixture_to_dict(m) for m in matches]
+        for m in week_matches:
+            new_score = (m.get("score") or "").strip()
+            known_score = existing_scores.get(m.get("match_id"))
+            if (not new_score or new_score == "-") and known_score:
+                m["score"] = known_score
+                regressions += 1
+        weeks_payload.append({"week": week, "matches": week_matches})
         print(f"  Hafta {week}: {len(matches)} maç, ilk tarih={matches[0].date_time}")
         time.sleep(args.sleep)
+
+    if regressions:
+        print(f"  UYARI: {regressions} maçta yeni çekiş '-' döndü, bilinen eski skor korundu (regresyon önlendi).")
 
     total_matches = sum(len(w["matches"]) for w in weeks_payload)
     payload = {
@@ -54,7 +83,6 @@ def main() -> None:
         "total_matches": total_matches,
         "weeks": weeks_payload,
     }
-    json_path = PROCESSED_DIR / f"{prefix}.json"
     json_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"Kaydedildi: {json_path} ({len(weeks_payload)} hafta, {total_matches} maç)")
 
