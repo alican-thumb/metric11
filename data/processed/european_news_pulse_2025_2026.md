@@ -1,22 +1,28 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-17T13:07:24.381946+00:00
-Toplam ilgili haber: 34
+Üretim zamanı: 2026-08-17T14:44:19.940138+00:00
+Toplam ilgili haber: 39
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
-- [İsmail Kartal'dan Romelu Lukaku açıklaması! "Kendisiyle konuşacağım"](https://www.aksam.com.tr/spor/ismail-kartaldan-romelu-lukaku-aciklamasi-kendisiyle-konusacagim/haber-1691318) — Aksam Spor · 2026-08-17T16:02:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [GÜNÜN MAÇLARI 17 AĞUSTOS 2026: Bugün Kimlerin Maçlar Var? Bugünkü Maçlar Neler? İşte 17 Ağustos Günün Maçları](https://www.cnnturk.com/spor/gunun-maclari-17-agustos-2026-bugun-kimlerin-maclar-var-bugunku-maclar-neler-iste-17-agustos-gunun-maclari-3455434) — CNN Türk Spor · 2026-08-17T17:36:37+00:00 · turnuva=CL · kulüp=Galatasaray
+- [BEŞİKTAŞ ZALGIRIS MAÇI NE ZAMAN? UEFA Avrupa Ligi Beşiktaş Kauno Zalgiris Maçı Hangi Kanalda, Saat Kaçta?](https://www.cnnturk.com/spor/futbol/besiktas-zalgiris-maci-ne-zaman-uefa-avrupa-ligi-besiktas-kauno-zalgiris-maci-hangi-kanalda-saat-kacta-3455575) — CNN Türk Spor · 2026-08-17T17:36:08+00:00 · turnuva=EL · kulüp=Beşiktaş
+- [İsmail Kartal: Stratejilerimizi belirledik](https://www.sabah.com.tr/spor/futbol/2026/08/17/ismail-kartal-stratejilerimizi-belirledik) — Sabah Spor · 2026-08-17T16:27:13+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe avantaj peşinde! İsmail Kartal 11'i belirledi](https://www.takvim.com.tr/spor/fenerbahce/2026/08/17/fenerbahce-avantaj-pesinde-ismail-kartal-11i-belirledi) — Takvim Spor · 2026-08-17T16:23:03+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Kerem Aktürkoğlu: Lyon maçı bir reaksiyon fırsatı](https://www.aksam.com.tr/spor/kerem-akturkoglu-lyon-maci-bir-reaksiyon-firsati/haber-1691324) — Aksam Spor · 2026-08-17T16:23:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Kerem Aktürkoğlu: "Yarın güzel bir reaksiyon fırsatı"](https://www.sabah.com.tr/spor/futbol/2026/08/17/kerem-akturkoglu-yarin-guzel-bir-reaksiyon-firsati) — Sabah Spor · 2026-08-17T16:21:23+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe'de İsmail Kartal'dan Lyon maçı öncesi yıldız isimler için açıklama!](https://www.fotomac.com.tr/fenerbahce/2026/08/17/fenerbahcede-ismail-kartaldan-lyon-maci-oncesi-yildiz-isimler-icin-aciklama) — Fotomaç · 2026-08-17T15:15:51+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Trabzonspor - Ferencvaros maçı biletleri satışta](https://www.cnnturk.com/spor/futbol/trabzonspor-ferencvaros-maci-biletleri-satista-3455448) — CNN Türk Spor · 2026-08-17T14:11:58+00:00 · turnuva=EL · kulüp=Trabzonspor
 - [Trabzonspor-Ferencvaros maçının biletleri satışa çıktı](https://www.fotomac.com.tr/trabzonspor/2026/08/17/trabzonspor-ferencvaros-macinin-biletleri-satisa-cikti) — Fotomaç · 2026-08-17T14:02:23+03:00 · turnuva=EL · kulüp=Trabzonspor
 - [Trabzonspor-Ferencvaros maçının biletleri satışa çıkarıldı](https://www.aa.com.tr/tr/spor/trabzonspor-ferencvaros-macinin-biletleri-satisa-cikarildi-/4029423) — Anadolu Ajansı Spor · 2026-08-17T13:52:27+03:00 · turnuva=EL · kulüp=Trabzonspor
+- [İsmail Kartal'dan Ederson ve Lukaku açıklaması!](https://www.haberturk.com/ismail-kartal-dan-ederson-ve-romelu-lukaku-aciklamasi-3906247-spor) — Haberturk Spor · 2026-08-17T13:49:26+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe'de Lyon maçı öncesi Lukaku gelişmesi!](https://www.sabah.com.tr/spor/futbol/2026/08/17/fenerbahcede-lyon-maci-oncesi-lukaku-gelismesi) — Sabah Spor · 2026-08-17T13:44:20+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [GÜNÜN MAÇLARI 17 AĞUSTOS 2026: Bugün Kimlerin Maçlar Var? Bugünkü Maçlar Neler? İşte 17 Ağustos Günün Maçları](https://www.cnnturk.com/spor/gunun-maclari-17-agustos-2026-bugun-kimlerin-maclar-var-bugunku-maclar-neler-iste-17-agustos-gunun-maclari-3455434) — CNN Türk Spor · 2026-08-17T13:05:04+00:00 · turnuva=CL · kulüp=Galatasaray
+- ["Avantajlı bir skor almak istiyoruz!"](https://www.haberturk.com/kerem-akturkoglu-avantajli-bir-skor-almak-istiyoruz-3906240-spor) — Haberturk Spor · 2026-08-17T13:24:08+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe'de Romelu Lukaku UEFA listesine eklendi!](https://www.fotomac.com.tr/fenerbahce/2026/08/17/fenerbahcede-romelu-lukaku-uefa-listesine-eklendi) — Fotomaç · 2026-08-17T12:21:48+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [FENERBAHÇE - LYON ŞAMPİYONLAR LİGİ MAÇI NE ZAMAN? Fenerbahçe - Lyon Şampiyonlar Ligi maçı saat kaçta, hangi kanalda?](https://www.cnnturk.com/spor/fenerbahce-lyon-sampiyonlar-ligi-maci-ne-zaman-fenerbahce-lyon-sampiyonlar-ligi-maci-saat-kacta-hangi-kanalda-3455309) — CNN Türk Spor · 2026-08-17T11:54:07+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe, 'Kadıköy'e güveniyor](https://www.hurriyet.com.tr/sporarena/fenerbahce-kadikoye-guveniyor-43276048) — Hürriyet Spor · 2026-08-17T11:28:19+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe, Lyon maçı ile Avrupa'da 305. randevuda](https://www.hurriyet.com.tr/sporarena/fenerbahce-lyon-maci-ile-avrupada-305-randevuda-43276042) — Hürriyet Spor · 2026-08-17T11:24:14+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Fatih Tekke’nin Avrupa heyecanı!](https://www.sabah.com.tr/spor/futbol/2026/08/17/fatih-tekkenin-avrupa-heyecani) — Sabah Spor · 2026-08-17T11:23:52+03:00 · turnuva=— · kulüp=Trabzonspor
 - [Kadıköy'de Avrupa gecesi! İşte Fenerbahçe'nin Lyon maçı muhtemel 11'i](https://www.fotomac.com.tr/fenerbahce/2026/08/17/kadikoyde-avrupa-gecesi-iste-fenerbahcenin-lyon-maci-muhtemel-11i) — Fotomaç · 2026-08-17T11:14:46+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fatih Tekke, teknik direktörlük kariyerinde bir ilki yaşayacak](https://www.cnnturk.com/spor/futbol/fatih-tekke-teknik-direktorluk-kariyerinde-bir-ilki-yasayacak-3455395) — CNN Türk Spor · 2026-08-17T11:11:24+00:00 · turnuva=— · kulüp=Trabzonspor
 - [Fenerbahçe, Avrupa'da 305. maçına çıkacak](https://www.aa.com.tr/tr/spor/fenerbahce-avrupada-305-macina-cikacak/4029212) — Anadolu Ajansı Spor · 2026-08-17T11:10:09+03:00 · turnuva=CL · kulüp=Fenerbahçe
@@ -35,7 +41,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Trabzonspor-Ferencvaros maçının biletleri yarın satışa sunulacak](https://www.aa.com.tr/tr/spor/trabzonspor-ferencvaros-macinin-biletleri-yarin-satisa-sunulacak/4028930) — Anadolu Ajansı Spor · 2026-08-16T20:12:40+03:00 · turnuva=EL · kulüp=Trabzonspor
 - [GÜNÜN MAÇLARI 16 AĞUSTOS 2026: Bugün Kimlerin Maçlar Var? Bugünkü Maçlar Neler? İşte 16 Ağustos Günün Maçları](https://www.cnnturk.com/spor/gunun-maclari-16-agustos-2026-bugun-kimlerin-maclar-var-bugunku-maclar-neler-iste-16-agustos-gunun-maclari-3455119) — CNN Türk Spor · 2026-08-16T17:50:23+00:00 · turnuva=CL · kulüp=Galatasaray
 - [Fenerbahçe, Olimpik Lyon maçının hazırlıklarına başladı](https://www.aa.com.tr/tr/spor/fenerbahce-olimpik-lyon-macinin-hazirliklarina-basladi/4028779) — Anadolu Ajansı Spor · 2026-08-16T15:19:52+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [F.Bahçe'de Lyon mesaisi başladı](https://www.haberturk.com/fenerbahce-de-lyon-maci-hazirliklari-basladi-3906013-spor) — Haberturk Spor · 2026-08-16T12:48:43+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe, Olimpik Lyon maçının hazırlıklarına başladı](https://www.hurriyet.com.tr/sporarena/fenerbahce-olimpik-lyon-macinin-hazirliklarina-basladi-43275197) — Hürriyet Spor · 2026-08-16T12:23:55+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe'nin Olimpik Lyon ile yapacağı maçı Alman hakem Sven Jablonski yönetecek](https://www.aa.com.tr/tr/spor/fenerbahcenin-olimpik-lyon-ile-yapacagi-maci-alman-hakem-sven-jablonski-yonetecek/4028651) — Anadolu Ajansı Spor · 2026-08-16T11:57:34+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Trabzonspor-Ferencvaros maçı ATV'de! Şifresiz yayınlanacak](https://www.takvim.com.tr/spor/trabzonspor/2026/08/15/trabzonspor-ferencvaros-maci-atvde-sifresiz-yayinlanacak) — Takvim Spor · 2026-08-15T22:02:01+03:00 · turnuva=EL · kulüp=Trabzonspor
