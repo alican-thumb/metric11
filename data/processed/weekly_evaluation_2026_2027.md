@@ -4,19 +4,14 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 
 ## Genel Karne
 
-- Değerlendirilen maç: **6**
-- İsabet: **1/6** (%17)
-- Beraberlik yakalama: **0/3** (%0)
+- Değerlendirilen maç: **1**
+- İsabet: **0/1** (%0)
+- Beraberlik yakalama: **0/1** (%0)
 - Yüksek güvenli maç isabeti: **0/0** (—)
 
-## Hafta 1 — 1/6 isabet (%17)
+## Hafta 1 — 0/1 isabet (%0)
 
 | Maç | Skor | Tahmin | Sonuç | Güven |
 | --- | --- | --- | --- | --- |
 | GALATASARAY A.Ş. - ARCA ÇORUM FK | 2 - 2 | Ev | ❌ | PLAYED |
-| KASIMPAŞA A.Ş. - TRABZONSPOR A.Ş. | 1 - 1 | Deplasman | ❌ | PLAYED |
-| TÜMOSAN KONYASPOR - ÇAYKUR RİZESPOR A.Ş. | 0 - 1 | Ev | ❌ | PLAYED |
-| GAZİANTEP FUTBOL KULÜBÜ A.Ş. - CORENDON ALANYASPOR | 1 - 1 | Deplasman | ❌ | PLAYED |
-| GENÇLERBİRLİĞİ - FENERBAHÇE A.Ş. | 2 - 1 | Deplasman | ❌ | PLAYED |
-| İSTANBUL BAŞAKŞEHİR FK - KOCAELİSPOR | 2 - 0 | Ev | ✅ | PLAYED |
 

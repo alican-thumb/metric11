@@ -1,18 +1,18 @@
 # 2026-27 Süper Lig Fikstürü ve Tahminleri
 
-Üretim zamanı: 2026-08-17T01:56:53.058517
+Üretim zamanı: 2026-08-17T04:54:59.396520
 Toplam hafta: 34, toplam maç: 306
-Not: Tahminler 2025-26 sezonunun tamamı ve 2026-27'de şimdiye kadar oynanmış (6 maç) sonuçlardan türetilen güncel takım formu/Elo/transfer durumuna dayanır; sezon ilerledikçe bu sayfa her gün otomatik olarak yeniden hesaplanır, statik bir anlık görüntü değildir.
+Not: Tahminler 2025-26 sezonunun tamamı ve 2026-27'de şimdiye kadar oynanmış (1 maç) sonuçlardan türetilen güncel takım formu/Elo/transfer durumuna dayanır; sezon ilerledikçe bu sayfa her gün otomatik olarak yeniden hesaplanır, statik bir anlık görüntü değildir.
 Yeni takımlar (sınırlı veri): AMED SPORTİF FAALİYETLER, ERZURUMSPOR FK, ÇORUM FK
 
 ## Hafta 1
 
 - 14.08.2026 21:30 | GALATASARAY A.Ş. 2 - 2 ARCA ÇORUM FK | OYNANDI
-- 15.08.2026 19:00 | KASIMPAŞA A.Ş. 1 - 1 TRABZONSPOR A.Ş. | OYNANDI
-- 15.08.2026 19:00 | TÜMOSAN KONYASPOR 0 - 1 ÇAYKUR RİZESPOR A.Ş. | OYNANDI
-- 15.08.2026 21:30 | GAZİANTEP FUTBOL KULÜBÜ A.Ş. 1 - 1 CORENDON ALANYASPOR | OYNANDI
-- 15.08.2026 21:30 | GENÇLERBİRLİĞİ 2 - 1 FENERBAHÇE A.Ş. | OYNANDI
-- 16.08.2026 19:00 | İSTANBUL BAŞAKŞEHİR FK 2 - 0 KOCAELİSPOR | OYNANDI
+- 15.08.2026 19:00 | KASIMPAŞA A.Ş. - TRABZONSPOR A.Ş. | tahmin=Dep (Ev %36 · X %28 · Dep %36) | güven=LOW
+- 15.08.2026 19:00 | TÜMOSAN KONYASPOR - ÇAYKUR RİZESPOR A.Ş. | tahmin=Ev (Ev %44 · X %22 · Dep %34) | güven=MEDIUM
+- 15.08.2026 21:30 | GAZİANTEP FUTBOL KULÜBÜ A.Ş. - CORENDON ALANYASPOR | tahmin=Dep (Ev %33 · X %23 · Dep %44) | güven=MEDIUM
+- 15.08.2026 21:30 | GENÇLERBİRLİĞİ - FENERBAHÇE A.Ş. | tahmin=Dep (Ev %20 · X %19 · Dep %61) | güven=HIGH
+- 16.08.2026 19:00 | İSTANBUL BAŞAKŞEHİR FK - KOCAELİSPOR | tahmin=Ev (Ev %66 · X %21 · Dep %12) | güven=HIGH
 - 16.08.2026 21:30 | AMED SPORTİF FAALİYETLER - ERZURUMSPOR FK | tahmin=X (Ev %14 · X %74 · Dep %12) | güven=LOW_NEW_TEAM
 - 16.08.2026 21:30 | BEŞİKTAŞ A.Ş. - EYÜPSPOR | tahmin=Ev (Ev %51 · X %23 · Dep %26) | güven=MEDIUM
 - 17.08.2026 21:30 | SAMSUNSPOR A.Ş. - GÖZTEPE A.Ş. | tahmin=Dep (Ev %39 · X %19 · Dep %42) | güven=LOW
