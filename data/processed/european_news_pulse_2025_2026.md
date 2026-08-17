@@ -1,12 +1,16 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-17T04:55:00.359018+00:00
-Toplam ilgili haber: 20
+Üretim zamanı: 2026-08-17T07:17:25.244517+00:00
+Toplam ilgili haber: 22
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
-- [Kartal modaya uymadı](https://www.aksam.com.tr/spor/kartal-modaya-uymadi/haber-1691167) — Aksam Spor · 2026-08-17T01:15:00+03:00 · turnuva=— · kulüp=Beşiktaş
+- [Fenerbahçe-Lyon maç kadrosu ve muhtemel ilk 11'ler belli oldu!](https://www.aksam.com.tr/trend/fenerbahce-lyon-mac-kadrosu-ve-muhtemel-ilk-11ler-belli-oldu/haber-1691218) — Aksam Spor · 2026-08-17T10:00:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Hedef Şampiyonlar Ligi! Fenerbahçe'nin rakibi Lyon](https://www.aksam.com.tr/spor/hedef-sampiyonlar-ligi-fenerbahcenin-rakibi-lyon/haber-1691204) — Aksam Spor · 2026-08-17T09:24:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [BEŞİKTAŞ PLAY OFF RAKİBİ: Beşiktaş'ın UEFA Avrupa Ligi Play-Off Rakibi Kim Oldu? Beşiktaş Turu Geçti, Sıradaki Rakip Kim? UEFA Avrupa Ligi'nde Kritik Viraj](https://www.cnnturk.com/spor/futbol/besiktas-uefa-avrupa-ligi-play-off-rakibi-besiktasin-uefa-avrupa-ligi-play-off-rakibi-kim-oldu-besiktas-turu-gecti-siradaki-3454357) — CNN Türk Spor · 2026-08-17T09:08:01+00:00 · turnuva=EL · kulüp=Beşiktaş
+- [Fenerbahçe, Şampiyonlar Ligi play-off turu ilk maçında Olimpik Lyon'u konuk edecek](https://www.aa.com.tr/tr/spor/fenerbahce-sampiyonlar-ligi-play-off-turu-ilk-macinda-olimpik-lyonu-konuk-edecek/4029073) — Anadolu Ajansı Spor · 2026-08-17T09:00:44+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe’de Kante’siz sistem çöktü](https://www.cnnturk.com/spor/futbol/fenerbahcede-kantesiz-sistem-coktu-3455340) — CNN Türk Spor · 2026-08-17T08:15:38+00:00 · turnuva=CL · kulüp=Fenerbahçe, Gençlerbirliği
 - [FENERBAHÇE - LYON ŞAMPİYONLAR LİGİ MAÇI NE ZAMAN? Fenerbahçe - Lyon Şampiyonlar Ligi maçı saat kaçta, hangi kanalda?](https://www.cnnturk.com/spor/fenerbahce-lyon-sampiyonlar-ligi-maci-ne-zaman-fenerbahce-lyon-sampiyonlar-ligi-maci-saat-kacta-hangi-kanalda-3455309) — CNN Türk Spor · 2026-08-16T22:19:24+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [UEFA ŞAMPİYONLAR LİGİ KURA ÇEKİMİ TARİHLERİ: 2026-2027 Şampiyonlar Ligi kura çekimi ne zaman yapılacak?](https://www.cnnturk.com/spor/futbol/uefa-sampiyonlar-ligi-kura-cekimi-tarihleri-2026-2027-sampiyonlar-ligi-kura-cekimi-ne-zaman-yapilacak-3455307) — CNN Türk Spor · 2026-08-16T22:11:42+00:00 · turnuva=CL · kulüp=—
 - [Trabzonspor-Ferencvaros maçının biletleri yarın satışa sunulacak](https://www.aa.com.tr/tr/spor/trabzonspor-ferencvaros-macinin-biletleri-yarin-satisa-sunulacak/4028930) — Anadolu Ajansı Spor · 2026-08-16T20:12:40+03:00 · turnuva=EL · kulüp=Trabzonspor
@@ -18,11 +22,9 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Fenerbahçe - Lyon maçına Alman hakem](https://www.cnnturk.com/spor/futbol/fenerbahce-lyon-macina-alman-hakem-3455144) — CNN Türk Spor · 2026-08-16T12:07:13+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe'nin Olimpik Lyon ile yapacağı maçı Alman hakem Sven Jablonski yönetecek](https://www.aa.com.tr/tr/spor/fenerbahcenin-olimpik-lyon-ile-yapacagi-maci-alman-hakem-sven-jablonski-yonetecek/4028651) — Anadolu Ajansı Spor · 2026-08-16T11:57:34+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [F.Bahçe'ye Alman hakem!](https://www.haberturk.com/fenerbahce-lyon-macini-alman-hakem-sven-jablonski-yonetecek-3905976-spor) — Haberturk Spor · 2026-08-16T09:30:57+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- [BEŞİKTAŞ PLAY OFF RAKİBİ: Beşiktaş'ın UEFA Avrupa Ligi Play-Off Rakibi Kim Oldu? Beşiktaş Turu Geçti, Sıradaki Rakip Kim? UEFA Avrupa Ligi'nde Kritik Viraj](https://www.cnnturk.com/spor/futbol/besiktas-uefa-avrupa-ligi-play-off-rakibi-besiktasin-uefa-avrupa-ligi-play-off-rakibi-kim-oldu-besiktas-turu-gecti-siradaki-3454357) — CNN Türk Spor · 2026-08-16T09:12:37+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Fenerbahçe - Lyon maçının hakemi açıklandı!](https://www.hurriyet.com.tr/sporarena/fenerbahce-lyon-macinin-hakemi-aciklandi-43274973) — Hürriyet Spor · 2026-08-16T08:24:00+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Beşiktaş, 5'te 5 için sahada!](https://www.hurriyet.com.tr/sporarena/besiktas-5te-5-icin-sahada-43274778) — Hürriyet Spor · 2026-08-16T04:00:00+00:00 · turnuva=EL · kulüp=Beşiktaş, Eyüpspor
 - [Trabzonspor-Ferencvaros maçı ATV'de! Şifresiz yayınlanacak](https://www.takvim.com.tr/spor/trabzonspor/2026/08/15/trabzonspor-ferencvaros-maci-atvde-sifresiz-yayinlanacak) — Takvim Spor · 2026-08-15T22:02:01+03:00 · turnuva=EL · kulüp=Trabzonspor
 - [Başkentte İrfan Can duvarı! Fenerbahçe Gençlerbirliği'ne 2-1 yenildi](https://www.takvim.com.tr/spor/fenerbahce/2026/08/15/irfan-can-duvari-fenerbahce-genclerbirligine-2-1-yenildi) — Takvim Spor · 2026-08-15T20:27:47+03:00 · turnuva=CL · kulüp=Fenerbahçe, Gençlerbirliği
 - [Beşiktaş ve Trabzonspor'un UEFA Avrupa Ligi'nde maçlarını yönetecek hakemler belli oldu](https://www.aa.com.tr/tr/spor/besiktas-ve-trabzonsporun-uefa-avrupa-liginde-maclarini-yonetecek-hakemler-belli-oldu/4028210) — Anadolu Ajansı Spor · 2026-08-15T15:26:22+03:00 · turnuva=EL · kulüp=Beşiktaş, Trabzonspor
-- [Fenerbahçe'de forma numaraları değişti! Lyon maçının kadrosu UEFA'ya bildirildi](https://www.takvim.com.tr/spor/fenerbahce/2026/08/14/fenerbahcede-forma-numaralari-degisti-7-ve-9-numara) — Takvim Spor · 2026-08-14T17:30:20+03:00 · turnuva=— · kulüp=Fenerbahçe
 - [Samuel Ballet, Amedspor’a transfer oldu! Antalyaspor’un kasasına 1,6 milyon Euro girdi - Akdenizmanset](https://news.google.com/rss/articles/CBMitAFBVV95cUxOYXpZdGR4ai13NzUwc2N3NzBRak9pSi1UN3NLYXc3TkdSYlc4ZGVUejdTanVkLUZZU2U3aFAyMjlEQWZ6T2tVMGtfVU9RZHNuMWFOX2J3N1ZBOWVjZ2trXy1jbWtMeGtUTVV0b2h3TFQ4OExvdWlnOXlsMVlpR3N1TXNRSGpGRFkxUkp6YWNwcHVRbWhKTUg0RE5Oa2RyOW9TRlVqdHhoRkYzMFpndHBESEhWSkw?oc=5) — Akdenizmanset · 2026-08-13T12:58:00+00:00 · turnuva=EL · kulüp=Antalyaspor
