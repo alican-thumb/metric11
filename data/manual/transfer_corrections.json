@@ -1,0 +1,24 @@
+{
+  "notes": [
+    "Otomatik haber-tabanlı transfer çıkarımı (LLM, analyze_news_with_claude) bazen bir",
+    "haberin başlığını (maç performansı, retrospektif anlatım vb.) yanlış transfer",
+    "yönü/kulübü olarak okuyabiliyor. Bu dosya, kullanıcı veya manuel doğrulamayla",
+    "tespit edilen böyle hataları düzeltir — build_transfer_tracker.py bunu SON adımda",
+    "uygular, bir sonraki haber-toplama çalışmasında tekrar bozulmaz.",
+    "player_match: transfer kaydındaki 'player' alanında büyük/küçük harf duyarsız alt-dizge eşleşmesi."
+  ],
+  "corrections": [
+    {
+      "player_match": "eğribayat",
+      "player": "İrfan Can Eğribayat",
+      "from_club": "Fenerbahçe",
+      "to_club": "Gençlerbirliği",
+      "status": "OFFICIAL",
+      "market_value_eur": 1200000,
+      "market_value_text": "€1.2M",
+      "transfer_type": "permanent",
+      "corrected_reason": "Otomatik çıkarım, Hürriyet'in 'Ankara'da İrfan Can Eğribayat gecesi' başlıklı maç-performansı haberinden yanlışlıkla 'Samsunspor A.Ş. -> Fenerbahçe' okumuştu. Gerçek: Fenerbahçe -> Gençlerbirliği, 13 Ağustos 2026 resmi kulüp açıklaması, 2 yıllık sözleşme (kullanıcı 2026-08-17 fark etti, web'den doğrulandı: Hürriyet/ASpor/Fanatik/Takvim/CNN Türk/Sabah/Sporx/Cumhuriyet).",
+      "corrected_at": "2026-08-17"
+    }
+  ]
+}

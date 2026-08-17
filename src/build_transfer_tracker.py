@@ -154,6 +154,39 @@ def _enrich(signals: list[dict]) -> list[dict]:
     ))
 
 
+def _load_transfer_corrections() -> list[dict]:
+    path = ROOT_DIR / "data" / "manual" / "transfer_corrections.json"
+    if not path.exists():
+        return []
+    try:
+        return json.loads(path.read_text(encoding="utf-8")).get("corrections", [])
+    except json.JSONDecodeError:
+        return []
+
+
+def _apply_corrections(signals: list[dict]) -> list[dict]:
+    """Otomatik haber-tabanlı çıkarımın yanlış okuduğu kayıtları (bkz. transfer_corrections.json
+    notları) düzeltir — SON adımda uygulanır, bir sonraki haber-toplama çalışması bozamaz."""
+    corrections = _load_transfer_corrections()
+    if not corrections:
+        return signals
+    for s in signals:
+        name = (s.get("player") or "").lower()
+        for c in corrections:
+            if c.get("player_match", "").lower() in name:
+                s["from_club"] = c.get("from_club", s.get("from_club"))
+                s["to_club"] = c.get("to_club", s.get("to_club"))
+                s["status"] = c.get("status", s.get("status"))
+                if c.get("market_value_eur") is not None:
+                    s["market_value_eur"] = c["market_value_eur"]
+                    s["market_value_text"] = c.get("market_value_text", s.get("market_value_text"))
+                if c.get("transfer_type"):
+                    s["transfer_type"] = c["transfer_type"]
+                s["corrected"] = True
+                s["correction_reason"] = c.get("corrected_reason")
+    return signals
+
+
 def _build_summary(signals: list[dict]) -> dict:
     official   = [s for s in signals if s["status"] == "OFFICIAL"]
     confirmed  = [s for s in signals if s["status"] in ("OFFICIAL", "CORROBORATED")]
@@ -376,6 +409,11 @@ def main() -> None:
             deduped.append(s)
     signals_raw = deduped
     signals = _enrich(signals_raw)
+    signals = _apply_corrections(signals)
+    signals.sort(key=lambda x: (
+        {"OFFICIAL": 0, "CORROBORATED": 1, "RUMOR": 2, "REVIEW_REQUIRED": 3}.get(x["status"], 9),
+        -(x["market_value_eur"] or 0),
+    ))
     summary = _build_summary(signals)
 
     payload = {
