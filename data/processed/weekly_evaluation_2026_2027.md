@@ -4,12 +4,12 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 
 ## Genel Karne
 
-- Değerlendirilen maç: **8**
-- İsabet: **2/8** (%25)
-- Beraberlik yakalama: **0/3** (%0)
+- Değerlendirilen maç: **9**
+- İsabet: **2/9** (%22)
+- Beraberlik yakalama: **0/4** (%0)
 - Yüksek güvenli maç isabeti: **0/0** (—)
 
-## Hafta 1 — 2/8 isabet (%25)
+## Hafta 1 — 2/9 isabet (%22)
 
 | Maç | Skor | Tahmin | Sonuç | Güven |
 | --- | --- | --- | --- | --- |
@@ -21,4 +21,5 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 | İSTANBUL BAŞAKŞEHİR FK - KOCAELİSPOR | 2 - 0 | Ev | ✅ | PLAYED |
 | AMED SPORTİF FAALİYETLER - ERZURUMSPOR FK | 3 - 0 | Beraberlik | ❌ | PLAYED |
 | BEŞİKTAŞ A.Ş. - EYÜPSPOR | 1 - 0 | Ev | ✅ | PLAYED |
+| SAMSUNSPOR A.Ş. - GÖZTEPE A.Ş. | 3 - 3 | Deplasman | ❌ | PLAYED |
 

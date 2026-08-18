@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-18T07:04:56.360580",
+  "generated_at": "2026-08-18T11:09:27.408915",
   "season": "2026-2027",
-  "source_note": "Tahminler 2025-26 sezonunun tamamı ve 2026-27'de şimdiye kadar oynanmış (8 maç) sonuçlardan türetilen güncel takım formu/Elo/transfer durumuna dayanır; sezon ilerledikçe bu sayfa her gün otomatik olarak yeniden hesaplanır, statik bir anlık görüntü değildir.",
+  "source_note": "Tahminler 2025-26 sezonunun tamamı ve 2026-27'de şimdiye kadar oynanmış (9 maç) sonuçlardan türetilen güncel takım formu/Elo/transfer durumuna dayanır; sezon ilerledikçe bu sayfa her gün otomatik olarak yeniden hesaplanır, statik bir anlık görüntü değildir.",
   "total_weeks": 34,
   "total_matches": 306,
-  "played_matches": 8,
+  "played_matches": 9,
   "new_team_matches": 66,
   "new_teams": [
     "AMED SPORTİF FAALİYETLER",
@@ -1658,9 +1658,9 @@
           "date_time": "17.08.2026 21:30",
           "home_team": "SAMSUNSPOR A.Ş.",
           "away_team": "GÖZTEPE A.Ş.",
-          "is_played": false,
-          "actual_score": null,
-          "data_confidence": "LOW",
+          "is_played": true,
+          "actual_score": "3 - 3",
+          "data_confidence": "PLAYED",
           "raw_predicted": "away",
           "predicted": "away",
           "expected_home_goals": 1.76,
@@ -2057,14 +2057,14 @@
           "data_confidence": "LOW",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.9,
-          "expected_away_goals": 1.71,
+          "expected_home_goals": 1.91,
+          "expected_away_goals": 1.72,
           "top_scorelines": [
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.088
+              "probability": 0.087
             },
             {
               "score": "2-1",
@@ -2082,7 +2082,7 @@
               "score": "2-2",
               "home_goals": 2,
               "away_goals": 2,
-              "probability": 0.071
+              "probability": 0.072
             },
             {
               "score": "3-1",
@@ -2097,7 +2097,7 @@
             "away_goals": 1,
             "probability": 0.083
           },
-          "home_win_probability": 0.429,
+          "home_win_probability": 0.43,
           "draw_probability": 0.218,
           "away_win_probability": 0.353,
           "head_to_head": {
@@ -2252,17 +2252,18 @@
               "suspended_players": []
             },
             "away": {
-              "available": false,
-              "edge": 0.0
+              "available": true,
+              "edge": 0.0,
+              "suspended_players": []
             }
           },
           "home_elo": 1496.2,
-          "away_elo": 1539.0,
+          "away_elo": 1537.0,
           "home_points_per_match": 1.75,
           "away_points_per_match": 2.0,
           "strength_edge": -0.106,
           "home_xg_efficiency": 0.929,
-          "away_xg_efficiency": 0.652,
+          "away_xg_efficiency": 0.584,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
           "referee_goals_per_match": null
@@ -3374,39 +3375,39 @@
           "away_team": "GENÇLERBİRLİĞİ",
           "is_played": false,
           "actual_score": null,
-          "data_confidence": "HIGH",
+          "data_confidence": "MEDIUM",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.93,
-          "expected_away_goals": 1.35,
+          "expected_home_goals": 1.96,
+          "expected_away_goals": 1.43,
           "top_scorelines": [
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.098
+              "probability": 0.095
             },
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.095
+              "probability": 0.093
+            },
+            {
+              "score": "1-2",
+              "home_goals": 1,
+              "away_goals": 2,
+              "probability": 0.068
             },
             {
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.073
+              "probability": 0.067
             },
             {
-              "score": "2-0",
+              "score": "2-2",
               "home_goals": 2,
-              "away_goals": 0,
-              "probability": 0.07
-            },
-            {
-              "score": "1-2",
-              "home_goals": 1,
               "away_goals": 2,
               "probability": 0.066
             }
@@ -3415,11 +3416,11 @@
             "score": "2-1",
             "home_goals": 2,
             "away_goals": 1,
-            "probability": 0.095
+            "probability": 0.093
           },
-          "home_win_probability": 0.528,
-          "draw_probability": 0.195,
-          "away_win_probability": 0.277,
+          "home_win_probability": 0.516,
+          "draw_probability": 0.193,
+          "away_win_probability": 0.291,
           "head_to_head": {
             "available": true,
             "matches": 12,
@@ -3568,8 +3569,9 @@
           },
           "suspension_signal": {
             "home": {
-              "available": false,
-              "edge": 0.0
+              "available": true,
+              "edge": 0.0,
+              "suspended_players": []
             },
             "away": {
               "available": true,
@@ -3577,12 +3579,12 @@
               "suspended_players": []
             }
           },
-          "home_elo": 1539.9,
+          "home_elo": 1541.9,
           "away_elo": 1462.1,
-          "home_points_per_match": 1.5,
+          "home_points_per_match": 1.25,
           "away_points_per_match": 1.5,
-          "strength_edge": 0.02,
-          "home_xg_efficiency": 1.347,
+          "strength_edge": -0.08,
+          "home_xg_efficiency": 1.246,
           "away_xg_efficiency": 1.145,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
@@ -4381,29 +4383,23 @@
           "away_team": "GÖZTEPE A.Ş.",
           "is_played": false,
           "actual_score": null,
-          "data_confidence": "MEDIUM",
+          "data_confidence": "HIGH",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 2.0,
-          "expected_away_goals": 1.53,
+          "expected_home_goals": 2.08,
+          "expected_away_goals": 1.55,
           "top_scorelines": [
-            {
-              "score": "1-1",
-              "home_goals": 1,
-              "away_goals": 1,
-              "probability": 0.09
-            },
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.09
+              "probability": 0.089
             },
             {
-              "score": "1-2",
+              "score": "1-1",
               "home_goals": 1,
-              "away_goals": 2,
-              "probability": 0.069
+              "away_goals": 1,
+              "probability": 0.085
             },
             {
               "score": "2-2",
@@ -4412,21 +4408,27 @@
               "probability": 0.069
             },
             {
+              "score": "1-2",
+              "home_goals": 1,
+              "away_goals": 2,
+              "probability": 0.066
+            },
+            {
               "score": "3-1",
               "home_goals": 3,
               "away_goals": 1,
-              "probability": 0.06
+              "probability": 0.062
             }
           ],
           "recommended_scoreline": {
             "score": "2-1",
             "home_goals": 2,
             "away_goals": 1,
-            "probability": 0.09
+            "probability": 0.089
           },
-          "home_win_probability": 0.516,
-          "draw_probability": 0.17,
-          "away_win_probability": 0.314,
+          "home_win_probability": 0.528,
+          "draw_probability": 0.166,
+          "away_win_probability": 0.306,
           "head_to_head": {
             "available": true,
             "matches": 14,
@@ -4580,17 +4582,18 @@
               "suspended_players": []
             },
             "away": {
-              "available": false,
-              "edge": 0.0
+              "available": true,
+              "edge": 0.0,
+              "suspended_players": []
             }
           },
           "home_elo": 1635.5,
-          "away_elo": 1539.9,
+          "away_elo": 1541.9,
           "home_points_per_match": 1.75,
-          "away_points_per_match": 1.5,
-          "strength_edge": 0.151,
+          "away_points_per_match": 1.25,
+          "strength_edge": 0.251,
           "home_xg_efficiency": 1.004,
-          "away_xg_efficiency": 1.347,
+          "away_xg_efficiency": 1.246,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
           "referee_goals_per_match": null
@@ -5041,7 +5044,7 @@
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.066
+              "probability": 0.065
             },
             {
               "score": "1-3",
@@ -5056,9 +5059,9 @@
             "away_goals": 2,
             "probability": 0.088
           },
-          "home_win_probability": 0.272,
+          "home_win_probability": 0.271,
           "draw_probability": 0.257,
-          "away_win_probability": 0.471,
+          "away_win_probability": 0.472,
           "head_to_head": {
             "available": true,
             "matches": 10,
@@ -5242,8 +5245,9 @@
           },
           "suspension_signal": {
             "home": {
-              "available": false,
-              "edge": 0.0
+              "available": true,
+              "edge": 0.0,
+              "suspended_players": []
             },
             "away": {
               "available": true,
@@ -5251,12 +5255,12 @@
               "suspended_players": []
             }
           },
-          "home_elo": 1539.0,
+          "home_elo": 1537.0,
           "away_elo": 1635.4,
           "home_points_per_match": 2.0,
           "away_points_per_match": 1.75,
           "strength_edge": -0.207,
-          "home_xg_efficiency": 0.652,
+          "home_xg_efficiency": 0.584,
           "away_xg_efficiency": 1.042,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
@@ -5940,7 +5944,7 @@
           "data_confidence": "LOW",
           "raw_predicted": "away",
           "predicted": "away",
-          "expected_home_goals": 1.29,
+          "expected_home_goals": 1.3,
           "expected_away_goals": 1.49,
           "top_scorelines": [
             {
@@ -5953,7 +5957,7 @@
               "score": "0-1",
               "home_goals": 0,
               "away_goals": 1,
-              "probability": 0.093
+              "probability": 0.092
             },
             {
               "score": "1-2",
@@ -5978,11 +5982,11 @@
             "score": "0-1",
             "home_goals": 0,
             "away_goals": 1,
-            "probability": 0.093
+            "probability": 0.092
           },
-          "home_win_probability": 0.329,
+          "home_win_probability": 0.33,
           "draw_probability": 0.252,
-          "away_win_probability": 0.419,
+          "away_win_probability": 0.418,
           "head_to_head": {
             "available": true,
             "matches": 4,
@@ -6140,12 +6144,12 @@
             }
           },
           "home_elo": 1424.1,
-          "away_elo": 1539.0,
+          "away_elo": 1537.0,
           "home_points_per_match": 0.5,
           "away_points_per_match": 2.0,
           "strength_edge": -0.518,
           "home_xg_efficiency": 2.522,
-          "away_xg_efficiency": 0.652,
+          "away_xg_efficiency": 0.584,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
           "referee_goals_per_match": null
@@ -6955,32 +6959,32 @@
           "data_confidence": "HIGH",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 2.01,
-          "expected_away_goals": 1.16,
+          "expected_home_goals": 2.03,
+          "expected_away_goals": 1.24,
           "top_scorelines": [
-            {
-              "score": "1-1",
-              "home_goals": 1,
-              "away_goals": 1,
-              "probability": 0.098
-            },
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.098
+              "probability": 0.097
+            },
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.096
             },
             {
               "score": "2-0",
               "home_goals": 2,
               "away_goals": 0,
-              "probability": 0.085
+              "probability": 0.078
             },
             {
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.084
+              "probability": 0.077
             },
             {
               "score": "3-1",
@@ -6993,11 +6997,11 @@
             "score": "2-1",
             "home_goals": 2,
             "away_goals": 1,
-            "probability": 0.098
+            "probability": 0.097
           },
-          "home_win_probability": 0.568,
-          "draw_probability": 0.215,
-          "away_win_probability": 0.217,
+          "home_win_probability": 0.555,
+          "draw_probability": 0.214,
+          "away_win_probability": 0.231,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -7153,12 +7157,12 @@
               "edge": 0.0
             }
           },
-          "home_elo": 1539.9,
+          "home_elo": 1541.9,
           "away_elo": 1420.0,
-          "home_points_per_match": 1.5,
+          "home_points_per_match": 1.25,
           "away_points_per_match": 0.62,
-          "strength_edge": 0.31,
-          "home_xg_efficiency": 1.347,
+          "strength_edge": 0.21,
+          "home_xg_efficiency": 1.246,
           "away_xg_efficiency": 1.144,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
@@ -8372,7 +8376,7 @@
           "data_confidence": "LOW",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 2.02,
+          "expected_home_goals": 2.03,
           "expected_away_goals": 1.92,
           "top_scorelines": [
             {
@@ -8414,7 +8418,7 @@
           },
           "home_win_probability": 0.416,
           "draw_probability": 0.209,
-          "away_win_probability": 0.375,
+          "away_win_probability": 0.376,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -8518,12 +8522,12 @@
               "edge": 0.0
             }
           },
-          "home_elo": 1539.0,
+          "home_elo": 1537.0,
           "away_elo": 1506.3,
           "home_points_per_match": 2.0,
           "away_points_per_match": 1.0,
           "strength_edge": 0.225,
-          "home_xg_efficiency": 0.652,
+          "home_xg_efficiency": 0.584,
           "away_xg_efficiency": null,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
@@ -8794,49 +8798,49 @@
           "data_confidence": "LOW",
           "raw_predicted": "away",
           "predicted": "draw",
-          "expected_home_goals": 1.31,
-          "expected_away_goals": 1.63,
+          "expected_home_goals": 1.39,
+          "expected_away_goals": 1.65,
           "top_scorelines": [
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.113
+              "probability": 0.11
             },
             {
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.092
+              "probability": 0.091
             },
             {
               "score": "0-1",
               "home_goals": 0,
               "away_goals": 1,
-              "probability": 0.086
+              "probability": 0.079
             },
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.074
+              "probability": 0.076
             },
             {
-              "score": "0-2",
-              "home_goals": 0,
-              "away_goals": 2,
-              "probability": 0.07
+              "score": "1-0",
+              "home_goals": 1,
+              "away_goals": 0,
+              "probability": 0.066
             }
           ],
           "recommended_scoreline": {
             "score": "1-1",
             "home_goals": 1,
             "away_goals": 1,
-            "probability": 0.113
+            "probability": 0.11
           },
-          "home_win_probability": 0.289,
-          "draw_probability": 0.29,
-          "away_win_probability": 0.421,
+          "home_win_probability": 0.302,
+          "draw_probability": 0.287,
+          "away_win_probability": 0.411,
           "head_to_head": {
             "available": true,
             "matches": 17,
@@ -8994,12 +8998,12 @@
             }
           },
           "home_elo": 1457.3,
-          "away_elo": 1539.9,
+          "away_elo": 1541.9,
           "home_points_per_match": 0.88,
-          "away_points_per_match": 1.5,
-          "strength_edge": -0.17,
+          "away_points_per_match": 1.25,
+          "strength_edge": -0.07,
           "home_xg_efficiency": 0.82,
-          "away_xg_efficiency": 1.347,
+          "away_xg_efficiency": 1.246,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
           "referee_goals_per_match": null
@@ -10677,49 +10681,49 @@
           "data_confidence": "MEDIUM",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.97,
-          "expected_away_goals": 1.54,
+          "expected_home_goals": 1.99,
+          "expected_away_goals": 1.63,
           "top_scorelines": [
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.091
+              "probability": 0.087
             },
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.089
+              "probability": 0.087
             },
             {
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.07
+              "probability": 0.071
             },
             {
               "score": "2-2",
               "home_goals": 2,
               "away_goals": 2,
-              "probability": 0.069
+              "probability": 0.07
             },
             {
-              "score": "1-0",
-              "home_goals": 1,
-              "away_goals": 0,
-              "probability": 0.059
+              "score": "3-1",
+              "home_goals": 3,
+              "away_goals": 1,
+              "probability": 0.057
             }
           ],
           "recommended_scoreline": {
             "score": "2-1",
             "home_goals": 2,
             "away_goals": 1,
-            "probability": 0.089
+            "probability": 0.087
           },
-          "home_win_probability": 0.484,
-          "draw_probability": 0.206,
-          "away_win_probability": 0.31,
+          "home_win_probability": 0.472,
+          "draw_probability": 0.204,
+          "away_win_probability": 0.324,
           "head_to_head": {
             "available": true,
             "matches": 18,
@@ -10876,12 +10880,12 @@
               "edge": 0.0
             }
           },
-          "home_elo": 1539.9,
+          "home_elo": 1541.9,
           "away_elo": 1496.2,
-          "home_points_per_match": 1.5,
+          "home_points_per_match": 1.25,
           "away_points_per_match": 1.75,
-          "strength_edge": -0.074,
-          "home_xg_efficiency": 1.347,
+          "strength_edge": -0.174,
+          "home_xg_efficiency": 1.246,
           "away_xg_efficiency": 0.929,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
@@ -11064,14 +11068,14 @@
           "data_confidence": "LOW_NEW_TEAM",
           "raw_predicted": "away",
           "predicted": "away",
-          "expected_home_goals": 0.87,
+          "expected_home_goals": 0.88,
           "expected_away_goals": 2.34,
           "top_scorelines": [
             {
               "score": "0-2",
               "home_goals": 0,
               "away_goals": 2,
-              "probability": 0.111
+              "probability": 0.11
             },
             {
               "score": "1-2",
@@ -11083,7 +11087,7 @@
               "score": "0-1",
               "home_goals": 0,
               "away_goals": 1,
-              "probability": 0.095
+              "probability": 0.094
             },
             {
               "score": "0-3",
@@ -11102,11 +11106,11 @@
             "score": "0-2",
             "home_goals": 0,
             "away_goals": 2,
-            "probability": 0.111
+            "probability": 0.11
           },
-          "home_win_probability": 0.123,
+          "home_win_probability": 0.124,
           "draw_probability": 0.176,
-          "away_win_probability": 0.701,
+          "away_win_probability": 0.7,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -11211,12 +11215,12 @@
             }
           },
           "home_elo": 1486.5,
-          "away_elo": 1539.0,
+          "away_elo": 1537.0,
           "home_points_per_match": 0.0,
           "away_points_per_match": 2.0,
           "strength_edge": -0.945,
           "home_xg_efficiency": null,
-          "away_xg_efficiency": 0.652,
+          "away_xg_efficiency": 0.584,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
           "referee_goals_per_match": null
@@ -11236,49 +11240,49 @@
           "data_confidence": "LOW",
           "raw_predicted": "away",
           "predicted": "away",
-          "expected_home_goals": 1.46,
-          "expected_away_goals": 1.65,
+          "expected_home_goals": 1.54,
+          "expected_away_goals": 1.68,
           "top_scorelines": [
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.107
+              "probability": 0.103
             },
             {
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.089
+              "probability": 0.087
             },
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.078
+              "probability": 0.08
             },
             {
               "score": "0-1",
               "home_goals": 0,
               "away_goals": 1,
-              "probability": 0.073
+              "probability": 0.067
             },
             {
-              "score": "1-0",
-              "home_goals": 1,
-              "away_goals": 0,
-              "probability": 0.065
+              "score": "2-2",
+              "home_goals": 2,
+              "away_goals": 2,
+              "probability": 0.067
             }
           ],
           "recommended_scoreline": {
             "score": "1-2",
             "home_goals": 1,
             "away_goals": 2,
-            "probability": 0.089
+            "probability": 0.087
           },
-          "home_win_probability": 0.34,
-          "draw_probability": 0.237,
-          "away_win_probability": 0.423,
+          "home_win_probability": 0.355,
+          "draw_probability": 0.233,
+          "away_win_probability": 0.412,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -11435,12 +11439,12 @@
             }
           },
           "home_elo": 1440.4,
-          "away_elo": 1539.9,
+          "away_elo": 1541.9,
           "home_points_per_match": 1.38,
-          "away_points_per_match": 1.5,
-          "strength_edge": 0.03,
+          "away_points_per_match": 1.25,
+          "strength_edge": 0.13,
           "home_xg_efficiency": 0.544,
-          "away_xg_efficiency": 1.347,
+          "away_xg_efficiency": 1.246,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
           "referee_goals_per_match": null
@@ -12118,8 +12122,8 @@
           "data_confidence": "MEDIUM",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.74,
-          "expected_away_goals": 1.47,
+          "expected_home_goals": 1.75,
+          "expected_away_goals": 1.48,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -12143,7 +12147,7 @@
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.07
+              "probability": 0.069
             },
             {
               "score": "2-2",
@@ -12160,7 +12164,7 @@
           },
           "home_win_probability": 0.435,
           "draw_probability": 0.243,
-          "away_win_probability": 0.322,
+          "away_win_probability": 0.323,
           "head_to_head": {
             "available": true,
             "matches": 10,
@@ -12317,12 +12321,12 @@
               "edge": 0.0
             }
           },
-          "home_elo": 1539.0,
+          "home_elo": 1537.0,
           "away_elo": 1605.0,
           "home_points_per_match": 2.0,
           "away_points_per_match": 1.25,
           "strength_edge": 0.249,
-          "home_xg_efficiency": 0.652,
+          "home_xg_efficiency": 0.584,
           "away_xg_efficiency": 1.05,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
@@ -13353,21 +13357,21 @@
           "actual_score": null,
           "data_confidence": "MEDIUM",
           "raw_predicted": "away",
-          "predicted": "draw",
-          "expected_home_goals": 1.11,
-          "expected_away_goals": 1.56,
+          "predicted": "away",
+          "expected_home_goals": 1.19,
+          "expected_away_goals": 1.59,
           "top_scorelines": [
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.12
+              "probability": 0.118
             },
             {
               "score": "0-1",
               "home_goals": 0,
               "away_goals": 1,
-              "probability": 0.108
+              "probability": 0.099
             },
             {
               "score": "1-2",
@@ -13379,24 +13383,24 @@
               "score": "0-2",
               "home_goals": 0,
               "away_goals": 2,
-              "probability": 0.084
+              "probability": 0.078
             },
             {
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.077
+              "probability": 0.074
             }
           ],
           "recommended_scoreline": {
-            "score": "1-1",
-            "home_goals": 1,
+            "score": "0-1",
+            "home_goals": 0,
             "away_goals": 1,
-            "probability": 0.12
+            "probability": 0.099
           },
-          "home_win_probability": 0.261,
-          "draw_probability": 0.281,
-          "away_win_probability": 0.458,
+          "home_win_probability": 0.275,
+          "draw_probability": 0.278,
+          "away_win_probability": 0.448,
           "head_to_head": {
             "available": true,
             "matches": 4,
@@ -13554,12 +13558,12 @@
             }
           },
           "home_elo": 1424.1,
-          "away_elo": 1539.9,
+          "away_elo": 1541.9,
           "home_points_per_match": 0.5,
-          "away_points_per_match": 1.5,
-          "strength_edge": -0.338,
+          "away_points_per_match": 1.25,
+          "strength_edge": -0.238,
           "home_xg_efficiency": 2.522,
-          "away_xg_efficiency": 1.347,
+          "away_xg_efficiency": 1.246,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
           "referee_goals_per_match": null
@@ -13829,8 +13833,8 @@
           "data_confidence": "LOW",
           "raw_predicted": "away",
           "predicted": "away",
-          "expected_home_goals": 1.56,
-          "expected_away_goals": 1.57,
+          "expected_home_goals": 1.57,
+          "expected_away_goals": 1.58,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -13854,7 +13858,7 @@
               "score": "0-1",
               "home_goals": 0,
               "away_goals": 1,
-              "probability": 0.069
+              "probability": 0.068
             },
             {
               "score": "1-0",
@@ -13869,9 +13873,9 @@
             "away_goals": 2,
             "probability": 0.084
           },
-          "home_win_probability": 0.383,
+          "home_win_probability": 0.384,
           "draw_probability": 0.227,
-          "away_win_probability": 0.39,
+          "away_win_probability": 0.389,
           "head_to_head": {
             "available": true,
             "matches": 6,
@@ -14029,12 +14033,12 @@
             }
           },
           "home_elo": 1454.4,
-          "away_elo": 1539.0,
+          "away_elo": 1537.0,
           "home_points_per_match": 1.5,
           "away_points_per_match": 2.0,
           "strength_edge": -0.18,
           "home_xg_efficiency": 0.663,
-          "away_xg_efficiency": 0.652,
+          "away_xg_efficiency": 0.584,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
           "referee_goals_per_match": null
@@ -15880,8 +15884,8 @@
           "data_confidence": "LOW_NEW_TEAM",
           "raw_predicted": "away",
           "predicted": "away",
-          "expected_home_goals": 1.12,
-          "expected_away_goals": 2.54,
+          "expected_home_goals": 1.13,
+          "expected_away_goals": 2.55,
           "top_scorelines": [
             {
               "score": "1-2",
@@ -15893,7 +15897,7 @@
               "score": "0-2",
               "home_goals": 0,
               "away_goals": 2,
-              "probability": 0.083
+              "probability": 0.082
             },
             {
               "score": "1-3",
@@ -15921,8 +15925,8 @@
             "probability": 0.093
           },
           "home_win_probability": 0.149,
-          "draw_probability": 0.172,
-          "away_win_probability": 0.679,
+          "draw_probability": 0.171,
+          "away_win_probability": 0.68,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -16026,12 +16030,12 @@
               "edge": 0.0
             }
           },
-          "home_elo": 1539.0,
+          "home_elo": 1537.0,
           "away_elo": 1513.5,
           "home_points_per_match": 2.0,
           "away_points_per_match": 3.0,
           "strength_edge": -0.735,
-          "home_xg_efficiency": 0.652,
+          "home_xg_efficiency": 0.584,
           "away_xg_efficiency": null,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
@@ -16653,20 +16657,20 @@
           "data_confidence": "MEDIUM",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 2.1,
-          "expected_away_goals": 1.73,
+          "expected_home_goals": 2.12,
+          "expected_away_goals": 1.81,
           "top_scorelines": [
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.083
+              "probability": 0.08
             },
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.079
+              "probability": 0.075
             },
             {
               "score": "2-2",
@@ -16684,18 +16688,18 @@
               "score": "3-1",
               "home_goals": 3,
               "away_goals": 1,
-              "probability": 0.058
+              "probability": 0.056
             }
           ],
           "recommended_scoreline": {
             "score": "2-1",
             "home_goals": 2,
             "away_goals": 1,
-            "probability": 0.083
+            "probability": 0.08
           },
-          "home_win_probability": 0.467,
-          "draw_probability": 0.209,
-          "away_win_probability": 0.324,
+          "home_win_probability": 0.456,
+          "draw_probability": 0.207,
+          "away_win_probability": 0.337,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -16799,12 +16803,12 @@
               "edge": 0.0
             }
           },
-          "home_elo": 1539.9,
+          "home_elo": 1541.9,
           "away_elo": 1506.3,
-          "home_points_per_match": 1.5,
+          "home_points_per_match": 1.25,
           "away_points_per_match": 1.0,
-          "strength_edge": 0.045,
-          "home_xg_efficiency": 1.347,
+          "strength_edge": -0.055,
+          "home_xg_efficiency": 1.246,
           "away_xg_efficiency": null,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
@@ -17044,20 +17048,20 @@
           "data_confidence": "MEDIUM",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 2.12,
-          "expected_away_goals": 1.47,
+          "expected_home_goals": 2.21,
+          "expected_away_goals": 1.49,
           "top_scorelines": [
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.091
+              "probability": 0.09
             },
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.086
+              "probability": 0.082
             },
             {
               "score": "2-2",
@@ -17069,24 +17073,24 @@
               "score": "3-1",
               "home_goals": 3,
               "away_goals": 1,
-              "probability": 0.064
+              "probability": 0.066
             },
             {
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.063
+              "probability": 0.061
             }
           ],
           "recommended_scoreline": {
             "score": "2-1",
             "home_goals": 2,
             "away_goals": 1,
-            "probability": 0.091
+            "probability": 0.09
           },
-          "home_win_probability": 0.499,
-          "draw_probability": 0.248,
-          "away_win_probability": 0.253,
+          "home_win_probability": 0.51,
+          "draw_probability": 0.244,
+          "away_win_probability": 0.245,
           "head_to_head": {
             "available": true,
             "matches": 15,
@@ -17279,12 +17283,12 @@
             }
           },
           "home_elo": 1635.4,
-          "away_elo": 1539.9,
+          "away_elo": 1541.9,
           "home_points_per_match": 1.75,
-          "away_points_per_match": 1.5,
-          "strength_edge": 0.417,
+          "away_points_per_match": 1.25,
+          "strength_edge": 0.517,
           "home_xg_efficiency": 1.042,
-          "away_xg_efficiency": 1.347,
+          "away_xg_efficiency": 1.246,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
           "referee_goals_per_match": null
@@ -17994,7 +17998,7 @@
           "data_confidence": "HIGH",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 2.21,
+          "expected_home_goals": 2.22,
           "expected_away_goals": 1.3,
           "top_scorelines": [
             {
@@ -18007,7 +18011,7 @@
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.086
+              "probability": 0.085
             },
             {
               "score": "2-0",
@@ -18034,7 +18038,7 @@
             "away_goals": 1,
             "probability": 0.095
           },
-          "home_win_probability": 0.58,
+          "home_win_probability": 0.581,
           "draw_probability": 0.201,
           "away_win_probability": 0.218,
           "head_to_head": {
@@ -18162,12 +18166,12 @@
             }
           },
           "home_elo": 1597.0,
-          "away_elo": 1539.0,
+          "away_elo": 1537.0,
           "home_points_per_match": 2.12,
           "away_points_per_match": 2.0,
           "strength_edge": 0.237,
           "home_xg_efficiency": 1.031,
-          "away_xg_efficiency": 0.652,
+          "away_xg_efficiency": 0.584,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
           "referee_goals_per_match": null
@@ -19331,7 +19335,7 @@
           "raw_predicted": "home",
           "predicted": "home",
           "expected_home_goals": 1.93,
-          "expected_away_goals": 1.6,
+          "expected_away_goals": 1.61,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -19370,9 +19374,9 @@
             "away_goals": 1,
             "probability": 0.087
           },
-          "home_win_probability": 0.436,
+          "home_win_probability": 0.435,
           "draw_probability": 0.254,
-          "away_win_probability": 0.31,
+          "away_win_probability": 0.311,
           "head_to_head": {
             "available": true,
             "matches": 9,
@@ -19529,12 +19533,12 @@
               "edge": 0.0
             }
           },
-          "home_elo": 1539.0,
+          "home_elo": 1537.0,
           "away_elo": 1459.1,
           "home_points_per_match": 2.0,
           "away_points_per_match": 1.25,
           "strength_edge": 0.24,
-          "home_xg_efficiency": 0.652,
+          "home_xg_efficiency": 0.584,
           "away_xg_efficiency": 0.996,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
@@ -20156,14 +20160,14 @@
           "data_confidence": "MEDIUM",
           "raw_predicted": "away",
           "predicted": "away",
-          "expected_home_goals": 1.55,
-          "expected_away_goals": 1.82,
+          "expected_home_goals": 1.58,
+          "expected_away_goals": 1.9,
           "top_scorelines": [
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.097
+              "probability": 0.092
             },
             {
               "score": "1-2",
@@ -20175,19 +20179,19 @@
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.075
+              "probability": 0.073
             },
             {
               "score": "2-2",
               "home_goals": 2,
               "away_goals": 2,
-              "probability": 0.068
+              "probability": 0.069
             },
             {
               "score": "0-1",
               "home_goals": 0,
               "away_goals": 1,
-              "probability": 0.062
+              "probability": 0.059
             }
           ],
           "recommended_scoreline": {
@@ -20196,9 +20200,9 @@
             "away_goals": 2,
             "probability": 0.088
           },
-          "home_win_probability": 0.331,
-          "draw_probability": 0.226,
-          "away_win_probability": 0.443,
+          "home_win_probability": 0.323,
+          "draw_probability": 0.221,
+          "away_win_probability": 0.456,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -20323,12 +20327,12 @@
               "edge": 0.0
             }
           },
-          "home_elo": 1539.9,
+          "home_elo": 1541.9,
           "away_elo": 1597.0,
-          "home_points_per_match": 1.5,
+          "home_points_per_match": 1.25,
           "away_points_per_match": 2.12,
-          "strength_edge": -0.417,
-          "home_xg_efficiency": 1.347,
+          "strength_edge": -0.517,
+          "home_xg_efficiency": 1.246,
           "away_xg_efficiency": 1.031,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
@@ -20846,7 +20850,7 @@
             "away_goals": 1,
             "probability": 0.091
           },
-          "home_win_probability": 0.541,
+          "home_win_probability": 0.542,
           "draw_probability": 0.205,
           "away_win_probability": 0.254,
           "head_to_head": {
@@ -21005,12 +21009,12 @@
             }
           },
           "home_elo": 1635.5,
-          "away_elo": 1539.0,
+          "away_elo": 1537.0,
           "home_points_per_match": 1.75,
           "away_points_per_match": 2.0,
           "strength_edge": -0.029,
           "home_xg_efficiency": 1.004,
-          "away_xg_efficiency": 0.652,
+          "away_xg_efficiency": 0.584,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
           "referee_goals_per_match": null
@@ -22240,49 +22244,49 @@
           "data_confidence": "LOW_NEW_TEAM",
           "raw_predicted": "away",
           "predicted": "away",
-          "expected_home_goals": 0.69,
-          "expected_away_goals": 2.41,
+          "expected_home_goals": 0.77,
+          "expected_away_goals": 2.43,
           "top_scorelines": [
             {
               "score": "0-2",
               "home_goals": 0,
               "away_goals": 2,
-              "probability": 0.131
+              "probability": 0.121
             },
             {
               "score": "0-1",
               "home_goals": 0,
               "away_goals": 1,
-              "probability": 0.109
+              "probability": 0.099
             },
             {
               "score": "0-3",
               "home_goals": 0,
               "away_goals": 3,
-              "probability": 0.105
+              "probability": 0.098
             },
             {
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.09
+              "probability": 0.093
             },
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.075
+              "probability": 0.076
             }
           ],
           "recommended_scoreline": {
             "score": "0-2",
             "home_goals": 0,
             "away_goals": 2,
-            "probability": 0.131
+            "probability": 0.121
           },
-          "home_win_probability": 0.088,
-          "draw_probability": 0.158,
-          "away_win_probability": 0.754,
+          "home_win_probability": 0.099,
+          "draw_probability": 0.161,
+          "away_win_probability": 0.74,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -22387,12 +22391,12 @@
             }
           },
           "home_elo": 1486.5,
-          "away_elo": 1539.9,
+          "away_elo": 1541.9,
           "home_points_per_match": 0.0,
-          "away_points_per_match": 1.5,
-          "strength_edge": -0.765,
+          "away_points_per_match": 1.25,
+          "strength_edge": -0.665,
           "home_xg_efficiency": null,
-          "away_xg_efficiency": 1.347,
+          "away_xg_efficiency": 1.246,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
           "referee_goals_per_match": null
@@ -23058,7 +23062,7 @@
           "raw_predicted": "home",
           "predicted": "home",
           "expected_home_goals": 1.86,
-          "expected_away_goals": 1.53,
+          "expected_away_goals": 1.54,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -23088,7 +23092,7 @@
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.063
+              "probability": 0.062
             }
           ],
           "recommended_scoreline": {
@@ -23097,9 +23101,9 @@
             "away_goals": 1,
             "probability": 0.089
           },
-          "home_win_probability": 0.433,
-          "draw_probability": 0.265,
-          "away_win_probability": 0.303,
+          "home_win_probability": 0.432,
+          "draw_probability": 0.264,
+          "away_win_probability": 0.304,
           "head_to_head": {
             "available": true,
             "matches": 8,
@@ -23256,12 +23260,12 @@
               "edge": 0.0
             }
           },
-          "home_elo": 1539.0,
+          "home_elo": 1537.0,
           "away_elo": 1462.1,
           "home_points_per_match": 2.0,
           "away_points_per_match": 1.5,
           "strength_edge": 0.2,
-          "home_xg_efficiency": 0.652,
+          "home_xg_efficiency": 0.584,
           "away_xg_efficiency": 1.145,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
@@ -23884,30 +23888,24 @@
           "data_confidence": "MEDIUM",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.81,
-          "expected_away_goals": 1.28,
+          "expected_home_goals": 1.84,
+          "expected_away_goals": 1.36,
           "top_scorelines": [
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.105
+              "probability": 0.102
             },
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.095
+              "probability": 0.094
             },
             {
               "score": "1-0",
               "home_goals": 1,
-              "away_goals": 0,
-              "probability": 0.082
-            },
-            {
-              "score": "2-0",
-              "home_goals": 2,
               "away_goals": 0,
               "probability": 0.075
             },
@@ -23915,18 +23913,24 @@
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.067
+              "probability": 0.07
+            },
+            {
+              "score": "2-0",
+              "home_goals": 2,
+              "away_goals": 0,
+              "probability": 0.069
             }
           ],
           "recommended_scoreline": {
             "score": "2-1",
             "home_goals": 2,
             "away_goals": 1,
-            "probability": 0.095
+            "probability": 0.094
           },
-          "home_win_probability": 0.495,
-          "draw_probability": 0.238,
-          "away_win_probability": 0.268,
+          "home_win_probability": 0.481,
+          "draw_probability": 0.236,
+          "away_win_probability": 0.283,
           "head_to_head": {
             "available": true,
             "matches": 15,
@@ -24083,12 +24087,12 @@
               "edge": 0.0
             }
           },
-          "home_elo": 1539.9,
+          "home_elo": 1541.9,
           "away_elo": 1605.0,
-          "home_points_per_match": 1.5,
+          "home_points_per_match": 1.25,
           "away_points_per_match": 1.25,
-          "strength_edge": 0.069,
-          "home_xg_efficiency": 1.347,
+          "strength_edge": -0.031,
+          "home_xg_efficiency": 1.246,
           "away_xg_efficiency": 1.05,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
@@ -24715,8 +24719,8 @@
           "data_confidence": "MEDIUM",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.99,
-          "expected_away_goals": 1.52,
+          "expected_home_goals": 2.0,
+          "expected_away_goals": 1.53,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -24740,7 +24744,7 @@
               "score": "2-2",
               "home_goals": 2,
               "away_goals": 2,
-              "probability": 0.068
+              "probability": 0.069
             },
             {
               "score": "3-1",
@@ -24755,8 +24759,8 @@
             "away_goals": 1,
             "probability": 0.09
           },
-          "home_win_probability": 0.46,
-          "draw_probability": 0.259,
+          "home_win_probability": 0.461,
+          "draw_probability": 0.258,
           "away_win_probability": 0.281,
           "head_to_head": {
             "available": true,
@@ -24950,12 +24954,12 @@
             }
           },
           "home_elo": 1580.8,
-          "away_elo": 1539.0,
+          "away_elo": 1537.0,
           "home_points_per_match": 1.38,
           "away_points_per_match": 2.0,
           "strength_edge": -0.02,
           "home_xg_efficiency": 1.422,
-          "away_xg_efficiency": 0.652,
+          "away_xg_efficiency": 0.584,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
           "referee_goals_per_match": null
@@ -25137,49 +25141,49 @@
           "data_confidence": "MEDIUM",
           "raw_predicted": "away",
           "predicted": "away",
-          "expected_home_goals": 1.38,
-          "expected_away_goals": 1.65,
+          "expected_home_goals": 1.46,
+          "expected_away_goals": 1.67,
           "top_scorelines": [
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.11
+              "probability": 0.107
             },
             {
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.091
-            },
-            {
-              "score": "0-1",
-              "home_goals": 0,
-              "away_goals": 1,
-              "probability": 0.08
+              "probability": 0.089
             },
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.076
+              "probability": 0.078
             },
             {
-              "score": "1-0",
-              "home_goals": 1,
-              "away_goals": 0,
-              "probability": 0.067
+              "score": "0-1",
+              "home_goals": 0,
+              "away_goals": 1,
+              "probability": 0.073
+            },
+            {
+              "score": "2-2",
+              "home_goals": 2,
+              "away_goals": 2,
+              "probability": 0.065
             }
           ],
           "recommended_scoreline": {
             "score": "1-2",
             "home_goals": 1,
             "away_goals": 2,
-            "probability": 0.091
+            "probability": 0.089
           },
-          "home_win_probability": 0.327,
-          "draw_probability": 0.225,
-          "away_win_probability": 0.448,
+          "home_win_probability": 0.342,
+          "draw_probability": 0.222,
+          "away_win_probability": 0.436,
           "head_to_head": {
             "available": true,
             "matches": 17,
@@ -25337,12 +25341,12 @@
             }
           },
           "home_elo": 1454.4,
-          "away_elo": 1539.9,
+          "away_elo": 1541.9,
           "home_points_per_match": 1.5,
-          "away_points_per_match": 1.5,
-          "strength_edge": -0.0,
+          "away_points_per_match": 1.25,
+          "strength_edge": 0.1,
           "home_xg_efficiency": 0.663,
-          "away_xg_efficiency": 1.347,
+          "away_xg_efficiency": 1.246,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
           "referee_goals_per_match": null
@@ -27127,9 +27131,9 @@
             "away_goals": 2,
             "probability": 0.086
           },
-          "home_win_probability": 0.364,
-          "draw_probability": 0.243,
-          "away_win_probability": 0.394,
+          "home_win_probability": 0.365,
+          "draw_probability": 0.242,
+          "away_win_probability": 0.393,
           "head_to_head": {
             "available": true,
             "matches": 12,
@@ -27287,12 +27291,12 @@
             }
           },
           "home_elo": 1457.3,
-          "away_elo": 1539.0,
+          "away_elo": 1537.0,
           "home_points_per_match": 0.88,
           "away_points_per_match": 2.0,
           "strength_edge": -0.35,
           "home_xg_efficiency": 0.82,
-          "away_xg_efficiency": 0.652,
+          "away_xg_efficiency": 0.584,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
           "referee_goals_per_match": null
@@ -27495,49 +27499,49 @@
           "data_confidence": "MEDIUM",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 2.0,
-          "expected_away_goals": 1.42,
+          "expected_home_goals": 2.02,
+          "expected_away_goals": 1.5,
           "top_scorelines": [
-            {
-              "score": "1-1",
-              "home_goals": 1,
-              "away_goals": 1,
-              "probability": 0.093
-            },
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.093
+              "probability": 0.091
             },
             {
-              "score": "1-2",
+              "score": "1-1",
               "home_goals": 1,
-              "away_goals": 2,
-              "probability": 0.066
+              "away_goals": 1,
+              "probability": 0.089
             },
             {
               "score": "2-2",
               "home_goals": 2,
               "away_goals": 2,
-              "probability": 0.066
+              "probability": 0.068
             },
             {
-              "score": "1-0",
+              "score": "1-2",
               "home_goals": 1,
-              "away_goals": 0,
-              "probability": 0.065
+              "away_goals": 2,
+              "probability": 0.067
+            },
+            {
+              "score": "3-1",
+              "home_goals": 3,
+              "away_goals": 1,
+              "probability": 0.061
             }
           ],
           "recommended_scoreline": {
             "score": "2-1",
             "home_goals": 2,
             "away_goals": 1,
-            "probability": 0.093
+            "probability": 0.091
           },
-          "home_win_probability": 0.5,
-          "draw_probability": 0.231,
-          "away_win_probability": 0.269,
+          "home_win_probability": 0.489,
+          "draw_probability": 0.23,
+          "away_win_probability": 0.281,
           "head_to_head": {
             "available": true,
             "matches": 18,
@@ -27694,12 +27698,12 @@
               "edge": 0.0
             }
           },
-          "home_elo": 1539.9,
+          "home_elo": 1541.9,
           "away_elo": 1459.1,
-          "home_points_per_match": 1.5,
+          "home_points_per_match": 1.25,
           "away_points_per_match": 1.25,
-          "strength_edge": 0.06,
-          "home_xg_efficiency": 1.347,
+          "strength_edge": -0.04,
+          "home_xg_efficiency": 1.246,
           "away_xg_efficiency": 0.996,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
@@ -28696,7 +28700,7 @@
           "data_confidence": "MEDIUM",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.93,
+          "expected_home_goals": 1.94,
           "expected_away_goals": 1.35,
           "top_scorelines": [
             {
@@ -28715,7 +28719,7 @@
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.073
+              "probability": 0.072
             },
             {
               "score": "2-0",
@@ -28736,9 +28740,9 @@
             "away_goals": 1,
             "probability": 0.095
           },
-          "home_win_probability": 0.497,
-          "draw_probability": 0.244,
-          "away_win_probability": 0.259,
+          "home_win_probability": 0.496,
+          "draw_probability": 0.243,
+          "away_win_probability": 0.26,
           "head_to_head": {
             "available": true,
             "matches": 19,
@@ -28895,12 +28899,12 @@
               "edge": 0.0
             }
           },
-          "home_elo": 1539.0,
+          "home_elo": 1537.0,
           "away_elo": 1420.0,
           "home_points_per_match": 2.0,
           "away_points_per_match": 0.62,
           "strength_edge": 0.49,
-          "home_xg_efficiency": 0.652,
+          "home_xg_efficiency": 0.584,
           "away_xg_efficiency": 1.144,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
@@ -29526,49 +29530,49 @@
           "data_confidence": "LOW_NEW_TEAM",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 2.56,
-          "expected_away_goals": 1.0,
+          "expected_home_goals": 2.64,
+          "expected_away_goals": 1.03,
           "top_scorelines": [
-            {
-              "score": "2-0",
-              "home_goals": 2,
-              "away_goals": 0,
-              "probability": 0.093
-            },
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.093
+              "probability": 0.091
+            },
+            {
+              "score": "2-0",
+              "home_goals": 2,
+              "away_goals": 0,
+              "probability": 0.089
             },
             {
               "score": "3-1",
               "home_goals": 3,
               "away_goals": 1,
-              "probability": 0.08
+              "probability": 0.081
             },
             {
               "score": "3-0",
               "home_goals": 3,
               "away_goals": 0,
-              "probability": 0.079
+              "probability": 0.078
             },
             {
-              "score": "1-0",
+              "score": "1-1",
               "home_goals": 1,
-              "away_goals": 0,
-              "probability": 0.073
+              "away_goals": 1,
+              "probability": 0.069
             }
           ],
           "recommended_scoreline": {
-            "score": "2-0",
+            "score": "2-1",
             "home_goals": 2,
-            "away_goals": 0,
-            "probability": 0.093
+            "away_goals": 1,
+            "probability": 0.091
           },
-          "home_win_probability": 0.708,
-          "draw_probability": 0.164,
-          "away_win_probability": 0.127,
+          "home_win_probability": 0.716,
+          "draw_probability": 0.159,
+          "away_win_probability": 0.124,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -29673,12 +29677,12 @@
             }
           },
           "home_elo": 1513.5,
-          "away_elo": 1539.9,
+          "away_elo": 1541.9,
           "home_points_per_match": 3.0,
-          "away_points_per_match": 1.5,
-          "strength_edge": 0.915,
+          "away_points_per_match": 1.25,
+          "strength_edge": 1.015,
           "home_xg_efficiency": null,
-          "away_xg_efficiency": 1.347,
+          "away_xg_efficiency": 1.246,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
           "referee_goals_per_match": null
@@ -29865,7 +29869,7 @@
           "data_confidence": "LOW",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.64,
+          "expected_home_goals": 1.65,
           "expected_away_goals": 1.58,
           "top_scorelines": [
             {
@@ -29896,7 +29900,7 @@
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.066
+              "probability": 0.065
             }
           ],
           "recommended_scoreline": {
@@ -29905,9 +29909,9 @@
             "away_goals": 1,
             "probability": 0.085
           },
-          "home_win_probability": 0.397,
+          "home_win_probability": 0.398,
           "draw_probability": 0.233,
-          "away_win_probability": 0.37,
+          "away_win_probability": 0.369,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -30064,12 +30068,12 @@
             }
           },
           "home_elo": 1440.4,
-          "away_elo": 1539.0,
+          "away_elo": 1537.0,
           "home_points_per_match": 1.38,
           "away_points_per_match": 2.0,
           "strength_edge": -0.15,
           "home_xg_efficiency": 0.544,
-          "away_xg_efficiency": 0.652,
+          "away_xg_efficiency": 0.584,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
           "referee_goals_per_match": null
@@ -31134,49 +31138,49 @@
           "data_confidence": "LOW",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.77,
-          "expected_away_goals": 1.62,
+          "expected_home_goals": 1.8,
+          "expected_away_goals": 1.7,
           "top_scorelines": [
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.097
+              "probability": 0.093
             },
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.086
+              "probability": 0.083
             },
             {
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.078
+              "probability": 0.079
             },
             {
               "score": "2-2",
               "home_goals": 2,
               "away_goals": 2,
-              "probability": 0.069
+              "probability": 0.071
             },
             {
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.06
+              "probability": 0.054
             }
           ],
           "recommended_scoreline": {
             "score": "2-1",
             "home_goals": 2,
             "away_goals": 1,
-            "probability": 0.086
+            "probability": 0.083
           },
-          "home_win_probability": 0.438,
-          "draw_probability": 0.192,
-          "away_win_probability": 0.371,
+          "home_win_probability": 0.427,
+          "draw_probability": 0.189,
+          "away_win_probability": 0.384,
           "head_to_head": {
             "available": true,
             "matches": 15,
@@ -31368,12 +31372,12 @@
               "edge": 0.0
             }
           },
-          "home_elo": 1539.9,
+          "home_elo": 1541.9,
           "away_elo": 1580.8,
-          "home_points_per_match": 1.5,
+          "home_points_per_match": 1.25,
           "away_points_per_match": 1.38,
-          "strength_edge": -0.16,
-          "home_xg_efficiency": 1.347,
+          "strength_edge": -0.26,
+          "home_xg_efficiency": 1.246,
           "away_xg_efficiency": 1.422,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
@@ -33366,20 +33370,26 @@
           "data_confidence": "MEDIUM",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 2.01,
-          "expected_away_goals": 1.57,
+          "expected_home_goals": 2.04,
+          "expected_away_goals": 1.66,
           "top_scorelines": [
-            {
-              "score": "1-1",
-              "home_goals": 1,
-              "away_goals": 1,
-              "probability": 0.088
-            },
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.088
+              "probability": 0.085
+            },
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.084
+            },
+            {
+              "score": "2-2",
+              "home_goals": 2,
+              "away_goals": 2,
+              "probability": 0.071
             },
             {
               "score": "1-2",
@@ -33388,27 +33398,21 @@
               "probability": 0.069
             },
             {
-              "score": "2-2",
-              "home_goals": 2,
-              "away_goals": 2,
-              "probability": 0.069
-            },
-            {
               "score": "3-1",
               "home_goals": 3,
               "away_goals": 1,
-              "probability": 0.059
+              "probability": 0.058
             }
           ],
           "recommended_scoreline": {
             "score": "2-1",
             "home_goals": 2,
             "away_goals": 1,
-            "probability": 0.088
+            "probability": 0.085
           },
-          "home_win_probability": 0.498,
-          "draw_probability": 0.187,
-          "away_win_probability": 0.315,
+          "home_win_probability": 0.486,
+          "draw_probability": 0.185,
+          "away_win_probability": 0.329,
           "head_to_head": {
             "available": true,
             "matches": 13,
@@ -33565,13 +33569,13 @@
               "edge": 0.0
             }
           },
-          "home_elo": 1539.9,
-          "away_elo": 1539.0,
-          "home_points_per_match": 1.5,
+          "home_elo": 1541.9,
+          "away_elo": 1537.0,
+          "home_points_per_match": 1.25,
           "away_points_per_match": 2.0,
-          "strength_edge": -0.18,
-          "home_xg_efficiency": 1.347,
-          "away_xg_efficiency": 0.652,
+          "strength_edge": -0.28,
+          "home_xg_efficiency": 1.246,
+          "away_xg_efficiency": 0.584,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
           "referee_goals_per_match": null
@@ -33846,8 +33850,8 @@
           "data_confidence": "LOW",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.89,
-          "expected_away_goals": 1.73,
+          "expected_home_goals": 1.9,
+          "expected_away_goals": 1.74,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -33886,9 +33890,9 @@
             "away_goals": 1,
             "probability": 0.083
           },
-          "home_win_probability": 0.424,
+          "home_win_probability": 0.423,
           "draw_probability": 0.218,
-          "away_win_probability": 0.358,
+          "away_win_probability": 0.359,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -34044,12 +34048,12 @@
               "edge": 0.0
             }
           },
-          "home_elo": 1539.0,
+          "home_elo": 1537.0,
           "away_elo": 1496.2,
           "home_points_per_match": 2.0,
           "away_points_per_match": 1.75,
           "strength_edge": 0.106,
-          "home_xg_efficiency": 0.652,
+          "home_xg_efficiency": 0.584,
           "away_xg_efficiency": 0.929,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
@@ -34891,52 +34895,52 @@
           "away_team": "GÖZTEPE A.Ş.",
           "is_played": false,
           "actual_score": null,
-          "data_confidence": "MEDIUM",
+          "data_confidence": "LOW",
           "raw_predicted": "away",
           "predicted": "away",
-          "expected_home_goals": 1.51,
-          "expected_away_goals": 1.75,
+          "expected_home_goals": 1.6,
+          "expected_away_goals": 1.78,
           "top_scorelines": [
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.101
+              "probability": 0.097
             },
             {
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.089
+              "probability": 0.086
             },
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.077
-            },
-            {
-              "score": "0-1",
-              "home_goals": 0,
-              "away_goals": 1,
-              "probability": 0.067
+              "probability": 0.078
             },
             {
               "score": "2-2",
               "home_goals": 2,
               "away_goals": 2,
-              "probability": 0.067
+              "probability": 0.069
+            },
+            {
+              "score": "0-1",
+              "home_goals": 0,
+              "away_goals": 1,
+              "probability": 0.061
             }
           ],
           "recommended_scoreline": {
             "score": "1-2",
             "home_goals": 1,
             "away_goals": 2,
-            "probability": 0.089
+            "probability": 0.086
           },
-          "home_win_probability": 0.347,
-          "draw_probability": 0.202,
-          "away_win_probability": 0.451,
+          "home_win_probability": 0.361,
+          "draw_probability": 0.199,
+          "away_win_probability": 0.44,
           "head_to_head": {
             "available": true,
             "matches": 12,
@@ -35094,12 +35098,12 @@
             }
           },
           "home_elo": 1462.1,
-          "away_elo": 1539.9,
+          "away_elo": 1541.9,
           "home_points_per_match": 1.5,
-          "away_points_per_match": 1.5,
-          "strength_edge": -0.02,
+          "away_points_per_match": 1.25,
+          "strength_edge": 0.08,
           "home_xg_efficiency": 1.145,
-          "away_xg_efficiency": 1.347,
+          "away_xg_efficiency": 1.246,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
           "referee_goals_per_match": null
@@ -35672,7 +35676,7 @@
           "data_confidence": "HIGH",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 2.31,
+          "expected_home_goals": 2.32,
           "expected_away_goals": 1.4,
           "top_scorelines": [
             {
@@ -35691,7 +35695,7 @@
               "score": "3-1",
               "home_goals": 3,
               "away_goals": 1,
-              "probability": 0.07
+              "probability": 0.071
             },
             {
               "score": "2-0",
@@ -35712,8 +35716,8 @@
             "away_goals": 1,
             "probability": 0.091
           },
-          "home_win_probability": 0.542,
-          "draw_probability": 0.247,
+          "home_win_probability": 0.543,
+          "draw_probability": 0.246,
           "away_win_probability": 0.211,
           "head_to_head": {
             "available": true,
@@ -35907,12 +35911,12 @@
             }
           },
           "home_elo": 1635.4,
-          "away_elo": 1539.0,
+          "away_elo": 1537.0,
           "home_points_per_match": 1.75,
           "away_points_per_match": 2.0,
           "strength_edge": 0.237,
           "home_xg_efficiency": 1.042,
-          "away_xg_efficiency": 0.652,
+          "away_xg_efficiency": 0.584,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
           "referee_goals_per_match": null
@@ -36888,14 +36892,14 @@
           "data_confidence": "LOW",
           "raw_predicted": "away",
           "predicted": "away",
-          "expected_home_goals": 1.7,
-          "expected_away_goals": 1.81,
+          "expected_home_goals": 1.73,
+          "expected_away_goals": 1.89,
           "top_scorelines": [
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.092
+              "probability": 0.088
             },
             {
               "score": "1-2",
@@ -36907,19 +36911,19 @@
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.078
+              "probability": 0.076
             },
             {
               "score": "2-2",
               "home_goals": 2,
               "away_goals": 2,
-              "probability": 0.071
+              "probability": 0.072
             },
             {
-              "score": "0-1",
-              "home_goals": 0,
-              "away_goals": 1,
-              "probability": 0.054
+              "score": "1-3",
+              "home_goals": 1,
+              "away_goals": 3,
+              "probability": 0.052
             }
           ],
           "recommended_scoreline": {
@@ -36928,9 +36932,9 @@
             "away_goals": 2,
             "probability": 0.083
           },
-          "home_win_probability": 0.39,
-          "draw_probability": 0.175,
-          "away_win_probability": 0.435,
+          "home_win_probability": 0.379,
+          "draw_probability": 0.171,
+          "away_win_probability": 0.45,
           "head_to_head": {
             "available": true,
             "matches": 14,
@@ -37087,12 +37091,12 @@
               "edge": 0.0
             }
           },
-          "home_elo": 1539.9,
+          "home_elo": 1541.9,
           "away_elo": 1635.5,
-          "home_points_per_match": 1.5,
+          "home_points_per_match": 1.25,
           "away_points_per_match": 1.75,
-          "strength_edge": -0.151,
-          "home_xg_efficiency": 1.347,
+          "strength_edge": -0.251,
+          "home_xg_efficiency": 1.246,
           "away_xg_efficiency": 1.004,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
@@ -37793,8 +37797,8 @@
           "data_confidence": "MEDIUM",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.66,
-          "expected_away_goals": 1.14,
+          "expected_home_goals": 1.67,
+          "expected_away_goals": 1.15,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -37806,7 +37810,7 @@
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.101
+              "probability": 0.1
             },
             {
               "score": "2-1",
@@ -37818,7 +37822,7 @@
               "score": "2-0",
               "home_goals": 2,
               "away_goals": 0,
-              "probability": 0.084
+              "probability": 0.083
             },
             {
               "score": "0-1",
@@ -37831,11 +37835,11 @@
             "score": "1-0",
             "home_goals": 1,
             "away_goals": 0,
-            "probability": 0.101
+            "probability": 0.1
           },
-          "home_win_probability": 0.495,
+          "home_win_probability": 0.494,
           "draw_probability": 0.244,
-          "away_win_probability": 0.261,
+          "away_win_probability": 0.262,
           "head_to_head": {
             "available": true,
             "matches": 4,
@@ -37992,12 +37996,12 @@
               "edge": 0.0
             }
           },
-          "home_elo": 1539.0,
+          "home_elo": 1537.0,
           "away_elo": 1424.1,
           "home_points_per_match": 2.0,
           "away_points_per_match": 0.5,
           "strength_edge": 0.518,
-          "home_xg_efficiency": 0.652,
+          "home_xg_efficiency": 0.584,
           "away_xg_efficiency": 2.522,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
@@ -38787,49 +38791,49 @@
           "data_confidence": "MEDIUM",
           "raw_predicted": "away",
           "predicted": "away",
-          "expected_home_goals": 1.33,
-          "expected_away_goals": 1.82,
+          "expected_home_goals": 1.41,
+          "expected_away_goals": 1.84,
           "top_scorelines": [
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.104
+              "probability": 0.1
             },
             {
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.094
+              "probability": 0.093
             },
             {
               "score": "0-1",
               "home_goals": 0,
               "away_goals": 1,
-              "probability": 0.078
-            },
-            {
-              "score": "0-2",
-              "home_goals": 0,
-              "away_goals": 2,
               "probability": 0.071
             },
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.069
+              "probability": 0.071
+            },
+            {
+              "score": "0-2",
+              "home_goals": 0,
+              "away_goals": 2,
+              "probability": 0.066
             }
           ],
           "recommended_scoreline": {
             "score": "1-2",
             "home_goals": 1,
             "away_goals": 2,
-            "probability": 0.094
+            "probability": 0.093
           },
-          "home_win_probability": 0.282,
-          "draw_probability": 0.229,
-          "away_win_probability": 0.488,
+          "home_win_probability": 0.295,
+          "draw_probability": 0.227,
+          "away_win_probability": 0.478,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -38986,12 +38990,12 @@
             }
           },
           "home_elo": 1420.0,
-          "away_elo": 1539.9,
+          "away_elo": 1541.9,
           "home_points_per_match": 0.62,
-          "away_points_per_match": 1.5,
-          "strength_edge": -0.31,
+          "away_points_per_match": 1.25,
+          "strength_edge": -0.21,
           "home_xg_efficiency": 1.144,
-          "away_xg_efficiency": 1.347,
+          "away_xg_efficiency": 1.246,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
           "referee_goals_per_match": null
@@ -39871,49 +39875,49 @@
           "data_confidence": "MEDIUM",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.81,
-          "expected_away_goals": 1.14,
+          "expected_home_goals": 1.84,
+          "expected_away_goals": 1.22,
           "top_scorelines": [
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.108
+              "probability": 0.106
             },
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.098
+              "probability": 0.097
             },
             {
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.095
+              "probability": 0.087
             },
             {
               "score": "2-0",
               "home_goals": 2,
               "away_goals": 0,
-              "probability": 0.086
+              "probability": 0.08
             },
             {
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.061
+              "probability": 0.064
             }
           ],
           "recommended_scoreline": {
             "score": "2-1",
             "home_goals": 2,
             "away_goals": 1,
-            "probability": 0.098
+            "probability": 0.097
           },
-          "home_win_probability": 0.497,
-          "draw_probability": 0.281,
-          "away_win_probability": 0.222,
+          "home_win_probability": 0.485,
+          "draw_probability": 0.279,
+          "away_win_probability": 0.236,
           "head_to_head": {
             "available": true,
             "matches": 17,
@@ -40070,12 +40074,12 @@
               "edge": 0.0
             }
           },
-          "home_elo": 1539.9,
+          "home_elo": 1541.9,
           "away_elo": 1457.3,
-          "home_points_per_match": 1.5,
+          "home_points_per_match": 1.25,
           "away_points_per_match": 0.88,
-          "strength_edge": 0.17,
-          "home_xg_efficiency": 1.347,
+          "strength_edge": 0.07,
+          "home_xg_efficiency": 1.246,
           "away_xg_efficiency": 0.82,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
@@ -40868,8 +40872,8 @@
           "data_confidence": "MEDIUM",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 2.09,
-          "expected_away_goals": 1.84,
+          "expected_home_goals": 2.1,
+          "expected_away_goals": 1.85,
           "top_scorelines": [
             {
               "score": "2-1",
@@ -40908,9 +40912,9 @@
             "away_goals": 1,
             "probability": 0.079
           },
-          "home_win_probability": 0.444,
+          "home_win_probability": 0.445,
           "draw_probability": 0.208,
-          "away_win_probability": 0.348,
+          "away_win_probability": 0.347,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -41015,12 +41019,12 @@
             }
           },
           "home_elo": 1506.3,
-          "away_elo": 1539.0,
+          "away_elo": 1537.0,
           "home_points_per_match": 1.0,
           "away_points_per_match": 2.0,
           "strength_edge": -0.225,
           "home_xg_efficiency": null,
-          "away_xg_efficiency": 0.652,
+          "away_xg_efficiency": 0.584,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
           "referee_goals_per_match": null
@@ -41681,20 +41685,20 @@
           "data_confidence": "LOW_NEW_TEAM",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 2.5,
-          "expected_away_goals": 0.73,
+          "expected_home_goals": 2.51,
+          "expected_away_goals": 0.74,
           "top_scorelines": [
             {
               "score": "2-0",
               "home_goals": 2,
               "away_goals": 0,
-              "probability": 0.123
+              "probability": 0.122
             },
             {
               "score": "3-0",
               "home_goals": 3,
               "away_goals": 0,
-              "probability": 0.103
+              "probability": 0.102
             },
             {
               "score": "1-0",
@@ -41712,18 +41716,18 @@
               "score": "3-1",
               "home_goals": 3,
               "away_goals": 1,
-              "probability": 0.075
+              "probability": 0.076
             }
           ],
           "recommended_scoreline": {
             "score": "2-0",
             "home_goals": 2,
             "away_goals": 0,
-            "probability": 0.123
+            "probability": 0.122
           },
-          "home_win_probability": 0.759,
+          "home_win_probability": 0.758,
           "draw_probability": 0.153,
-          "away_win_probability": 0.088,
+          "away_win_probability": 0.089,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -41827,12 +41831,12 @@
               "edge": 0.0
             }
           },
-          "home_elo": 1539.0,
+          "home_elo": 1537.0,
           "away_elo": 1486.5,
           "home_points_per_match": 2.0,
           "away_points_per_match": 0.0,
           "strength_edge": 0.945,
-          "home_xg_efficiency": 0.652,
+          "home_xg_efficiency": 0.584,
           "away_xg_efficiency": null,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
@@ -42036,20 +42040,20 @@
           "data_confidence": "LOW",
           "raw_predicted": "away",
           "predicted": "away",
-          "expected_home_goals": 1.72,
-          "expected_away_goals": 1.78,
+          "expected_home_goals": 1.8,
+          "expected_away_goals": 1.81,
           "top_scorelines": [
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.092
+              "probability": 0.088
             },
             {
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.082
+              "probability": 0.08
             },
             {
               "score": "2-1",
@@ -42061,24 +42065,24 @@
               "score": "2-2",
               "home_goals": 2,
               "away_goals": 2,
-              "probability": 0.071
+              "probability": 0.072
             },
             {
               "score": "0-1",
               "home_goals": 0,
               "away_goals": 1,
-              "probability": 0.054
+              "probability": 0.049
             }
           ],
           "recommended_scoreline": {
             "score": "1-2",
             "home_goals": 1,
             "away_goals": 2,
-            "probability": 0.082
+            "probability": 0.08
           },
-          "home_win_probability": 0.382,
-          "draw_probability": 0.21,
-          "away_win_probability": 0.409,
+          "home_win_probability": 0.394,
+          "draw_probability": 0.207,
+          "away_win_probability": 0.399,
           "head_to_head": {
             "available": true,
             "matches": 18,
@@ -42236,12 +42240,12 @@
             }
           },
           "home_elo": 1496.2,
-          "away_elo": 1539.9,
+          "away_elo": 1541.9,
           "home_points_per_match": 1.75,
-          "away_points_per_match": 1.5,
-          "strength_edge": 0.074,
+          "away_points_per_match": 1.25,
+          "strength_edge": 0.174,
           "home_xg_efficiency": 0.929,
-          "away_xg_efficiency": 1.347,
+          "away_xg_efficiency": 1.246,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
           "referee_goals_per_match": null
@@ -43578,30 +43582,24 @@
           "data_confidence": "MEDIUM",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.83,
-          "expected_away_goals": 1.29,
+          "expected_home_goals": 1.86,
+          "expected_away_goals": 1.37,
           "top_scorelines": [
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.104
+              "probability": 0.101
             },
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.095
+              "probability": 0.094
             },
             {
               "score": "1-0",
               "home_goals": 1,
-              "away_goals": 0,
-              "probability": 0.081
-            },
-            {
-              "score": "2-0",
-              "home_goals": 2,
               "away_goals": 0,
               "probability": 0.074
             },
@@ -43609,18 +43607,24 @@
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.067
+              "probability": 0.069
+            },
+            {
+              "score": "2-0",
+              "home_goals": 2,
+              "away_goals": 0,
+              "probability": 0.069
             }
           ],
           "recommended_scoreline": {
             "score": "2-1",
             "home_goals": 2,
             "away_goals": 1,
-            "probability": 0.095
+            "probability": 0.094
           },
-          "home_win_probability": 0.502,
-          "draw_probability": 0.229,
-          "away_win_probability": 0.27,
+          "home_win_probability": 0.491,
+          "draw_probability": 0.226,
+          "away_win_probability": 0.283,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -43776,12 +43780,12 @@
               "edge": 0.0
             }
           },
-          "home_elo": 1539.9,
+          "home_elo": 1541.9,
           "away_elo": 1440.4,
-          "home_points_per_match": 1.5,
+          "home_points_per_match": 1.25,
           "away_points_per_match": 1.38,
-          "strength_edge": -0.03,
-          "home_xg_efficiency": 1.347,
+          "strength_edge": -0.13,
+          "home_xg_efficiency": 1.246,
           "away_xg_efficiency": 0.544,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
@@ -44540,13 +44544,13 @@
           "raw_predicted": "home",
           "predicted": "home",
           "expected_home_goals": 1.66,
-          "expected_away_goals": 1.56,
+          "expected_away_goals": 1.57,
           "top_scorelines": [
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.104
+              "probability": 0.103
             },
             {
               "score": "2-1",
@@ -44579,9 +44583,9 @@
             "away_goals": 1,
             "probability": 0.086
           },
-          "home_win_probability": 0.398,
+          "home_win_probability": 0.399,
           "draw_probability": 0.244,
-          "away_win_probability": 0.358,
+          "away_win_probability": 0.357,
           "head_to_head": {
             "available": true,
             "matches": 10,
@@ -44739,12 +44743,12 @@
             }
           },
           "home_elo": 1605.0,
-          "away_elo": 1539.0,
+          "away_elo": 1537.0,
           "home_points_per_match": 1.25,
           "away_points_per_match": 2.0,
           "strength_edge": -0.249,
           "home_xg_efficiency": 1.05,
-          "away_xg_efficiency": 0.652,
+          "away_xg_efficiency": 0.584,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
           "referee_goals_per_match": null
@@ -45038,7 +45042,7 @@
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.076
+              "probability": 0.075
             },
             {
               "score": "1-2",
@@ -45059,9 +45063,9 @@
             "away_goals": 1,
             "probability": 0.093
           },
-          "home_win_probability": 0.473,
+          "home_win_probability": 0.472,
           "draw_probability": 0.223,
-          "away_win_probability": 0.304,
+          "away_win_probability": 0.305,
           "head_to_head": {
             "available": true,
             "matches": 6,
@@ -45218,12 +45222,12 @@
               "edge": 0.0
             }
           },
-          "home_elo": 1539.0,
+          "home_elo": 1537.0,
           "away_elo": 1454.4,
           "home_points_per_match": 2.0,
           "away_points_per_match": 1.5,
           "strength_edge": 0.18,
-          "home_xg_efficiency": 0.652,
+          "home_xg_efficiency": 0.584,
           "away_xg_efficiency": 0.663,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
@@ -46236,26 +46240,20 @@
           "data_confidence": "HIGH",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.74,
-          "expected_away_goals": 0.96,
+          "expected_home_goals": 1.76,
+          "expected_away_goals": 1.04,
           "top_scorelines": [
-            {
-              "score": "1-0",
-              "home_goals": 1,
-              "away_goals": 0,
-              "probability": 0.117
-            },
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.112
+              "probability": 0.111
             },
             {
-              "score": "2-0",
-              "home_goals": 2,
+              "score": "1-0",
+              "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.102
+              "probability": 0.107
             },
             {
               "score": "2-1",
@@ -46264,21 +46262,27 @@
               "probability": 0.098
             },
             {
-              "score": "0-0",
-              "home_goals": 0,
+              "score": "2-0",
+              "home_goals": 2,
               "away_goals": 0,
-              "probability": 0.068
+              "probability": 0.094
+            },
+            {
+              "score": "0-1",
+              "home_goals": 0,
+              "away_goals": 1,
+              "probability": 0.063
             }
           ],
           "recommended_scoreline": {
             "score": "1-0",
             "home_goals": 1,
             "away_goals": 0,
-            "probability": 0.117
+            "probability": 0.107
           },
-          "home_win_probability": 0.534,
-          "draw_probability": 0.267,
-          "away_win_probability": 0.198,
+          "home_win_probability": 0.521,
+          "draw_probability": 0.266,
+          "away_win_probability": 0.213,
           "head_to_head": {
             "available": true,
             "matches": 4,
@@ -46435,12 +46439,12 @@
               "edge": 0.0
             }
           },
-          "home_elo": 1539.9,
+          "home_elo": 1541.9,
           "away_elo": 1424.1,
-          "home_points_per_match": 1.5,
+          "home_points_per_match": 1.25,
           "away_points_per_match": 0.5,
-          "strength_edge": 0.338,
-          "home_xg_efficiency": 1.347,
+          "strength_edge": 0.238,
+          "home_xg_efficiency": 1.246,
           "away_xg_efficiency": 2.522,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
@@ -47706,28 +47710,28 @@
           "is_played": false,
           "actual_score": null,
           "data_confidence": "LOW",
-          "raw_predicted": "away",
-          "predicted": "away",
-          "expected_home_goals": 1.91,
-          "expected_away_goals": 1.91,
+          "raw_predicted": "home",
+          "predicted": "home",
+          "expected_home_goals": 1.99,
+          "expected_away_goals": 1.94,
           "top_scorelines": [
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.08
-            },
-            {
-              "score": "1-2",
-              "home_goals": 1,
-              "away_goals": 2,
               "probability": 0.076
             },
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.076
+              "probability": 0.075
+            },
+            {
+              "score": "1-2",
+              "home_goals": 1,
+              "away_goals": 2,
+              "probability": 0.074
             },
             {
               "score": "2-2",
@@ -47736,21 +47740,21 @@
               "probability": 0.073
             },
             {
-              "score": "1-3",
-              "home_goals": 1,
-              "away_goals": 3,
-              "probability": 0.049
+              "score": "3-1",
+              "home_goals": 3,
+              "away_goals": 1,
+              "probability": 0.05
             }
           ],
           "recommended_scoreline": {
-            "score": "1-2",
-            "home_goals": 1,
-            "away_goals": 2,
-            "probability": 0.076
+            "score": "2-1",
+            "home_goals": 2,
+            "away_goals": 1,
+            "probability": 0.075
           },
-          "home_win_probability": 0.393,
-          "draw_probability": 0.213,
-          "away_win_probability": 0.394,
+          "home_win_probability": 0.405,
+          "draw_probability": 0.209,
+          "away_win_probability": 0.386,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -47855,12 +47859,12 @@
             }
           },
           "home_elo": 1506.3,
-          "away_elo": 1539.9,
+          "away_elo": 1541.9,
           "home_points_per_match": 1.0,
-          "away_points_per_match": 1.5,
-          "strength_edge": -0.045,
+          "away_points_per_match": 1.25,
+          "strength_edge": 0.055,
           "home_xg_efficiency": null,
-          "away_xg_efficiency": 1.347,
+          "away_xg_efficiency": 1.246,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
           "referee_goals_per_match": null
@@ -48465,12 +48469,12 @@
             }
           },
           "home_elo": 1513.5,
-          "away_elo": 1539.0,
+          "away_elo": 1537.0,
           "home_points_per_match": 3.0,
           "away_points_per_match": 2.0,
           "strength_edge": 0.735,
           "home_xg_efficiency": null,
-          "away_xg_efficiency": 0.652,
+          "away_xg_efficiency": 0.584,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
           "referee_goals_per_match": null
@@ -48746,19 +48750,19 @@
           "raw_predicted": "away",
           "predicted": "away",
           "expected_home_goals": 1.49,
-          "expected_away_goals": 2.01,
+          "expected_away_goals": 2.02,
           "top_scorelines": [
-            {
-              "score": "1-1",
-              "home_goals": 1,
-              "away_goals": 1,
-              "probability": 0.091
-            },
             {
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
               "probability": 0.091
+            },
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.09
             },
             {
               "score": "2-2",
@@ -48785,9 +48789,9 @@
             "away_goals": 2,
             "probability": 0.091
           },
-          "home_win_probability": 0.286,
-          "draw_probability": 0.216,
-          "away_win_probability": 0.498,
+          "home_win_probability": 0.285,
+          "draw_probability": 0.215,
+          "away_win_probability": 0.499,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -48912,12 +48916,12 @@
               "edge": 0.0
             }
           },
-          "home_elo": 1539.0,
+          "home_elo": 1537.0,
           "away_elo": 1597.0,
           "home_points_per_match": 2.0,
           "away_points_per_match": 2.12,
           "strength_edge": -0.237,
-          "home_xg_efficiency": 0.652,
+          "home_xg_efficiency": 0.584,
           "away_xg_efficiency": 1.031,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
@@ -49756,29 +49760,29 @@
           "away_team": "FENERBAHÇE A.Ş.",
           "is_played": false,
           "actual_score": null,
-          "data_confidence": "LOW",
+          "data_confidence": "MEDIUM",
           "raw_predicted": "away",
           "predicted": "away",
-          "expected_home_goals": 1.64,
-          "expected_away_goals": 1.93,
+          "expected_home_goals": 1.67,
+          "expected_away_goals": 2.01,
           "top_scorelines": [
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.089
+              "probability": 0.085
             },
             {
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.086
+              "probability": 0.085
             },
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.073
+              "probability": 0.071
             },
             {
               "score": "2-2",
@@ -49790,18 +49794,18 @@
               "score": "1-3",
               "home_goals": 1,
               "away_goals": 3,
-              "probability": 0.055
+              "probability": 0.057
             }
           ],
           "recommended_scoreline": {
             "score": "1-2",
             "home_goals": 1,
             "away_goals": 2,
-            "probability": 0.086
+            "probability": 0.085
           },
-          "home_win_probability": 0.318,
-          "draw_probability": 0.255,
-          "away_win_probability": 0.427,
+          "home_win_probability": 0.31,
+          "draw_probability": 0.252,
+          "away_win_probability": 0.438,
           "head_to_head": {
             "available": true,
             "matches": 15,
@@ -49993,12 +49997,12 @@
               "edge": 0.0
             }
           },
-          "home_elo": 1539.9,
+          "home_elo": 1541.9,
           "away_elo": 1635.4,
-          "home_points_per_match": 1.5,
+          "home_points_per_match": 1.25,
           "away_points_per_match": 1.75,
-          "strength_edge": -0.417,
-          "home_xg_efficiency": 1.347,
+          "strength_edge": -0.517,
+          "home_xg_efficiency": 1.246,
           "away_xg_efficiency": 1.042,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
@@ -50776,13 +50780,13 @@
           "raw_predicted": "home",
           "predicted": "home",
           "expected_home_goals": 1.78,
-          "expected_away_goals": 1.74,
+          "expected_away_goals": 1.75,
           "top_scorelines": [
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.092
+              "probability": 0.091
             },
             {
               "score": "2-1",
@@ -50806,7 +50810,7 @@
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.053
+              "probability": 0.052
             }
           ],
           "recommended_scoreline": {
@@ -50815,9 +50819,9 @@
             "away_goals": 1,
             "probability": 0.081
           },
-          "home_win_probability": 0.378,
+          "home_win_probability": 0.379,
           "draw_probability": 0.257,
-          "away_win_probability": 0.365,
+          "away_win_probability": 0.364,
           "head_to_head": {
             "available": true,
             "matches": 9,
@@ -50975,12 +50979,12 @@
             }
           },
           "home_elo": 1459.1,
-          "away_elo": 1539.0,
+          "away_elo": 1537.0,
           "home_points_per_match": 1.25,
           "away_points_per_match": 2.0,
           "strength_edge": -0.24,
           "home_xg_efficiency": 0.996,
-          "away_xg_efficiency": 0.652,
+          "away_xg_efficiency": 0.584,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
           "referee_goals_per_match": null
@@ -51601,32 +51605,32 @@
           "data_confidence": "HIGH",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 2.02,
-          "expected_away_goals": 1.37,
+          "expected_home_goals": 2.11,
+          "expected_away_goals": 1.39,
           "top_scorelines": [
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.094
+              "probability": 0.093
             },
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.093
+              "probability": 0.089
             },
             {
               "score": "2-0",
               "home_goals": 2,
               "away_goals": 0,
-              "probability": 0.069
+              "probability": 0.067
             },
             {
-              "score": "1-0",
-              "home_goals": 1,
-              "away_goals": 0,
-              "probability": 0.068
+              "score": "3-1",
+              "home_goals": 3,
+              "away_goals": 1,
+              "probability": 0.066
             },
             {
               "score": "2-2",
@@ -51639,11 +51643,11 @@
             "score": "2-1",
             "home_goals": 2,
             "away_goals": 1,
-            "probability": 0.094
+            "probability": 0.093
           },
-          "home_win_probability": 0.525,
-          "draw_probability": 0.215,
-          "away_win_probability": 0.259,
+          "home_win_probability": 0.538,
+          "draw_probability": 0.21,
+          "away_win_probability": 0.252,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -51769,12 +51773,12 @@
             }
           },
           "home_elo": 1597.0,
-          "away_elo": 1539.9,
+          "away_elo": 1541.9,
           "home_points_per_match": 2.12,
-          "away_points_per_match": 1.5,
-          "strength_edge": 0.417,
+          "away_points_per_match": 1.25,
+          "strength_edge": 0.517,
           "home_xg_efficiency": 1.031,
-          "away_xg_efficiency": 1.347,
+          "away_xg_efficiency": 1.246,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
           "referee_goals_per_match": null
@@ -52471,8 +52475,8 @@
           "data_confidence": "MEDIUM",
           "raw_predicted": "away",
           "predicted": "away",
-          "expected_home_goals": 1.63,
-          "expected_away_goals": 2.0,
+          "expected_home_goals": 1.64,
+          "expected_away_goals": 2.01,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -52513,7 +52517,7 @@
           },
           "home_win_probability": 0.319,
           "draw_probability": 0.215,
-          "away_win_probability": 0.466,
+          "away_win_probability": 0.467,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -52669,12 +52673,12 @@
               "edge": 0.0
             }
           },
-          "home_elo": 1539.0,
+          "home_elo": 1537.0,
           "away_elo": 1635.5,
           "home_points_per_match": 2.0,
           "away_points_per_match": 1.75,
           "strength_edge": 0.029,
-          "home_xg_efficiency": 0.652,
+          "home_xg_efficiency": 0.584,
           "away_xg_efficiency": 1.004,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
@@ -53905,49 +53909,49 @@
           "data_confidence": "LOW_NEW_TEAM",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 2.58,
-          "expected_away_goals": 0.55,
+          "expected_home_goals": 2.6,
+          "expected_away_goals": 0.63,
           "top_scorelines": [
             {
               "score": "2-0",
               "home_goals": 2,
               "away_goals": 0,
-              "probability": 0.146
+              "probability": 0.134
             },
             {
               "score": "3-0",
               "home_goals": 3,
               "away_goals": 0,
-              "probability": 0.126
+              "probability": 0.116
             },
             {
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.113
-            },
-            {
-              "score": "4-0",
-              "home_goals": 4,
-              "away_goals": 0,
-              "probability": 0.081
+              "probability": 0.103
             },
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.08
+              "probability": 0.084
+            },
+            {
+              "score": "4-0",
+              "home_goals": 4,
+              "away_goals": 0,
+              "probability": 0.075
             }
           ],
           "recommended_scoreline": {
             "score": "2-0",
             "home_goals": 2,
             "away_goals": 0,
-            "probability": 0.146
+            "probability": 0.134
           },
-          "home_win_probability": 0.81,
-          "draw_probability": 0.132,
-          "away_win_probability": 0.058,
+          "home_win_probability": 0.795,
+          "draw_probability": 0.137,
+          "away_win_probability": 0.068,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -54051,12 +54055,12 @@
               "edge": 0.0
             }
           },
-          "home_elo": 1539.9,
+          "home_elo": 1541.9,
           "away_elo": 1486.5,
-          "home_points_per_match": 1.5,
+          "home_points_per_match": 1.25,
           "away_points_per_match": 0.0,
-          "strength_edge": 0.765,
-          "home_xg_efficiency": 1.347,
+          "strength_edge": 0.665,
+          "home_xg_efficiency": 1.246,
           "away_xg_efficiency": null,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
@@ -55294,49 +55298,49 @@
           "data_confidence": "LOW",
           "raw_predicted": "away",
           "predicted": "away",
-          "expected_home_goals": 1.47,
-          "expected_away_goals": 1.63,
+          "expected_home_goals": 1.55,
+          "expected_away_goals": 1.66,
           "top_scorelines": [
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.108
+              "probability": 0.104
             },
             {
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.088
+              "probability": 0.086
             },
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.079
+              "probability": 0.081
             },
             {
               "score": "0-1",
               "home_goals": 0,
               "away_goals": 1,
-              "probability": 0.074
+              "probability": 0.067
             },
             {
-              "score": "1-0",
-              "home_goals": 1,
-              "away_goals": 0,
-              "probability": 0.066
+              "score": "2-2",
+              "home_goals": 2,
+              "away_goals": 2,
+              "probability": 0.067
             }
           ],
           "recommended_scoreline": {
             "score": "1-2",
             "home_goals": 1,
             "away_goals": 2,
-            "probability": 0.088
+            "probability": 0.086
           },
-          "home_win_probability": 0.344,
-          "draw_probability": 0.244,
-          "away_win_probability": 0.413,
+          "home_win_probability": 0.357,
+          "draw_probability": 0.241,
+          "away_win_probability": 0.402,
           "head_to_head": {
             "available": true,
             "matches": 15,
@@ -55494,12 +55498,12 @@
             }
           },
           "home_elo": 1605.0,
-          "away_elo": 1539.9,
+          "away_elo": 1541.9,
           "home_points_per_match": 1.25,
-          "away_points_per_match": 1.5,
-          "strength_edge": -0.069,
+          "away_points_per_match": 1.25,
+          "strength_edge": 0.031,
           "home_xg_efficiency": 1.05,
-          "away_xg_efficiency": 1.347,
+          "away_xg_efficiency": 1.246,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
           "referee_goals_per_match": null
@@ -55756,9 +55760,9 @@
             "away_goals": 1,
             "probability": 0.083
           },
-          "home_win_probability": 0.37,
+          "home_win_probability": 0.371,
           "draw_probability": 0.267,
-          "away_win_probability": 0.363,
+          "away_win_probability": 0.362,
           "head_to_head": {
             "available": true,
             "matches": 8,
@@ -55916,12 +55920,12 @@
             }
           },
           "home_elo": 1462.1,
-          "away_elo": 1539.0,
+          "away_elo": 1537.0,
           "home_points_per_match": 1.5,
           "away_points_per_match": 2.0,
           "strength_edge": -0.2,
           "home_xg_efficiency": 1.145,
-          "away_xg_efficiency": 0.652,
+          "away_xg_efficiency": 0.584,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
           "referee_goals_per_match": null
@@ -56204,9 +56208,9 @@
             "away_goals": 2,
             "probability": 0.083
           },
-          "home_win_probability": 0.349,
+          "home_win_probability": 0.348,
           "draw_probability": 0.263,
-          "away_win_probability": 0.388,
+          "away_win_probability": 0.389,
           "head_to_head": {
             "available": true,
             "matches": 8,
@@ -56398,12 +56402,12 @@
               "edge": 0.0
             }
           },
-          "home_elo": 1539.0,
+          "home_elo": 1537.0,
           "away_elo": 1580.8,
           "home_points_per_match": 2.0,
           "away_points_per_match": 1.38,
           "strength_edge": 0.02,
-          "home_xg_efficiency": 0.652,
+          "home_xg_efficiency": 0.584,
           "away_xg_efficiency": 1.422,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
@@ -56750,52 +56754,52 @@
           "away_team": "KASIMPAŞA A.Ş.",
           "is_played": false,
           "actual_score": null,
-          "data_confidence": "HIGH",
+          "data_confidence": "MEDIUM",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.84,
-          "expected_away_goals": 1.2,
+          "expected_home_goals": 1.86,
+          "expected_away_goals": 1.27,
           "top_scorelines": [
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.106
+              "probability": 0.103
             },
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.097
+              "probability": 0.096
             },
             {
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.088
+              "probability": 0.081
             },
             {
               "score": "2-0",
               "home_goals": 2,
               "away_goals": 0,
-              "probability": 0.081
+              "probability": 0.075
             },
             {
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.063
+              "probability": 0.066
             }
           ],
           "recommended_scoreline": {
             "score": "2-1",
             "home_goals": 2,
             "away_goals": 1,
-            "probability": 0.097
+            "probability": 0.096
           },
-          "home_win_probability": 0.531,
-          "draw_probability": 0.217,
-          "away_win_probability": 0.252,
+          "home_win_probability": 0.519,
+          "draw_probability": 0.215,
+          "away_win_probability": 0.266,
           "head_to_head": {
             "available": true,
             "matches": 17,
@@ -56952,12 +56956,12 @@
               "edge": 0.0
             }
           },
-          "home_elo": 1539.9,
+          "home_elo": 1541.9,
           "away_elo": 1454.4,
-          "home_points_per_match": 1.5,
+          "home_points_per_match": 1.25,
           "away_points_per_match": 1.5,
-          "strength_edge": 0.0,
-          "home_xg_efficiency": 1.347,
+          "strength_edge": -0.1,
+          "home_xg_efficiency": 1.246,
           "away_xg_efficiency": 0.663,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
@@ -58278,13 +58282,13 @@
           "raw_predicted": "home",
           "predicted": "home",
           "expected_home_goals": 1.74,
-          "expected_away_goals": 1.32,
+          "expected_away_goals": 1.33,
           "top_scorelines": [
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.108
+              "probability": 0.107
             },
             {
               "score": "2-1",
@@ -58296,7 +58300,7 @@
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.082
+              "probability": 0.081
             },
             {
               "score": "1-2",
@@ -58317,9 +58321,9 @@
             "away_goals": 1,
             "probability": 0.094
           },
-          "home_win_probability": 0.472,
-          "draw_probability": 0.238,
-          "away_win_probability": 0.291,
+          "home_win_probability": 0.471,
+          "draw_probability": 0.237,
+          "away_win_probability": 0.292,
           "head_to_head": {
             "available": true,
             "matches": 12,
@@ -58476,12 +58480,12 @@
               "edge": 0.0
             }
           },
-          "home_elo": 1539.0,
+          "home_elo": 1537.0,
           "away_elo": 1457.3,
           "home_points_per_match": 2.0,
           "away_points_per_match": 0.88,
           "strength_edge": 0.35,
-          "home_xg_efficiency": 0.652,
+          "home_xg_efficiency": 0.584,
           "away_xg_efficiency": 0.82,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
@@ -58497,49 +58501,49 @@
           "data_confidence": "LOW",
           "raw_predicted": "away",
           "predicted": "away",
-          "expected_home_goals": 1.59,
-          "expected_away_goals": 1.82,
+          "expected_home_goals": 1.67,
+          "expected_away_goals": 1.84,
           "top_scorelines": [
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.096
+              "probability": 0.092
             },
             {
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.087
+              "probability": 0.084
             },
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.076
+              "probability": 0.077
             },
             {
               "score": "2-2",
               "home_goals": 2,
               "away_goals": 2,
-              "probability": 0.069
+              "probability": 0.071
             },
             {
               "score": "0-1",
               "home_goals": 0,
               "away_goals": 1,
-              "probability": 0.06
+              "probability": 0.055
             }
           ],
           "recommended_scoreline": {
             "score": "1-2",
             "home_goals": 1,
             "away_goals": 2,
-            "probability": 0.087
+            "probability": 0.084
           },
-          "home_win_probability": 0.336,
-          "draw_probability": 0.237,
-          "away_win_probability": 0.427,
+          "home_win_probability": 0.349,
+          "draw_probability": 0.235,
+          "away_win_probability": 0.416,
           "head_to_head": {
             "available": true,
             "matches": 18,
@@ -58697,12 +58701,12 @@
             }
           },
           "home_elo": 1459.1,
-          "away_elo": 1539.9,
+          "away_elo": 1541.9,
           "home_points_per_match": 1.25,
-          "away_points_per_match": 1.5,
-          "strength_edge": -0.06,
+          "away_points_per_match": 1.25,
+          "strength_edge": 0.04,
           "home_xg_efficiency": 0.996,
-          "away_xg_efficiency": 1.347,
+          "away_xg_efficiency": 1.246,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
           "referee_goals_per_match": null
@@ -60277,49 +60281,49 @@
           "data_confidence": "LOW_NEW_TEAM",
           "raw_predicted": "away",
           "predicted": "away",
-          "expected_home_goals": 1.19,
-          "expected_away_goals": 2.35,
+          "expected_home_goals": 1.22,
+          "expected_away_goals": 2.43,
           "top_scorelines": [
             {
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.095
-            },
-            {
-              "score": "1-1",
-              "home_goals": 1,
-              "away_goals": 1,
-              "probability": 0.081
+              "probability": 0.094
             },
             {
               "score": "0-2",
               "home_goals": 0,
               "away_goals": 2,
-              "probability": 0.08
+              "probability": 0.077
+            },
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.077
             },
             {
               "score": "1-3",
               "home_goals": 1,
               "away_goals": 3,
-              "probability": 0.075
+              "probability": 0.076
             },
             {
               "score": "0-1",
               "home_goals": 0,
               "away_goals": 1,
-              "probability": 0.068
+              "probability": 0.063
             }
           ],
           "recommended_scoreline": {
             "score": "1-2",
             "home_goals": 1,
             "away_goals": 2,
-            "probability": 0.095
+            "probability": 0.094
           },
-          "home_win_probability": 0.18,
-          "draw_probability": 0.188,
-          "away_win_probability": 0.632,
+          "home_win_probability": 0.176,
+          "draw_probability": 0.183,
+          "away_win_probability": 0.64,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -60423,12 +60427,12 @@
               "edge": 0.0
             }
           },
-          "home_elo": 1539.9,
+          "home_elo": 1541.9,
           "away_elo": 1513.5,
-          "home_points_per_match": 1.5,
+          "home_points_per_match": 1.25,
           "away_points_per_match": 3.0,
-          "strength_edge": -0.915,
-          "home_xg_efficiency": 1.347,
+          "strength_edge": -1.015,
+          "home_xg_efficiency": 1.246,
           "away_xg_efficiency": null,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
@@ -61305,14 +61309,14 @@
           "data_confidence": "LOW",
           "raw_predicted": "away",
           "predicted": "away",
-          "expected_home_goals": 1.51,
-          "expected_away_goals": 1.74,
+          "expected_home_goals": 1.52,
+          "expected_away_goals": 1.75,
           "top_scorelines": [
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.102
+              "probability": 0.101
             },
             {
               "score": "1-2",
@@ -61345,7 +61349,7 @@
             "away_goals": 2,
             "probability": 0.089
           },
-          "home_win_probability": 0.326,
+          "home_win_probability": 0.327,
           "draw_probability": 0.25,
           "away_win_probability": 0.423,
           "head_to_head": {
@@ -61505,12 +61509,12 @@
             }
           },
           "home_elo": 1420.0,
-          "away_elo": 1539.0,
+          "away_elo": 1537.0,
           "home_points_per_match": 0.62,
           "away_points_per_match": 2.0,
           "strength_edge": -0.49,
           "home_xg_efficiency": 1.144,
-          "away_xg_efficiency": 0.652,
+          "away_xg_efficiency": 0.584,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
           "referee_goals_per_match": null
@@ -61750,8 +61754,8 @@
           "data_confidence": "MEDIUM",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.76,
-          "expected_away_goals": 1.47,
+          "expected_home_goals": 1.77,
+          "expected_away_goals": 1.48,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -61790,9 +61794,9 @@
             "away_goals": 1,
             "probability": 0.09
           },
-          "home_win_probability": 0.447,
+          "home_win_probability": 0.446,
           "draw_probability": 0.23,
-          "away_win_probability": 0.323,
+          "away_win_probability": 0.324,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -61948,12 +61952,12 @@
               "edge": 0.0
             }
           },
-          "home_elo": 1539.0,
+          "home_elo": 1537.0,
           "away_elo": 1440.4,
           "home_points_per_match": 2.0,
           "away_points_per_match": 1.38,
           "strength_edge": 0.15,
-          "home_xg_efficiency": 0.652,
+          "home_xg_efficiency": 0.584,
           "away_xg_efficiency": 0.544,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
@@ -61969,49 +61973,49 @@
           "data_confidence": "MEDIUM",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.8,
-          "expected_away_goals": 1.6,
+          "expected_home_goals": 1.89,
+          "expected_away_goals": 1.62,
           "top_scorelines": [
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.096
+              "probability": 0.092
             },
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.087
+              "probability": 0.086
             },
             {
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.077
+              "probability": 0.074
             },
             {
               "score": "2-2",
               "home_goals": 2,
               "away_goals": 2,
-              "probability": 0.069
+              "probability": 0.07
             },
             {
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.06
+              "probability": 0.057
             }
           ],
           "recommended_scoreline": {
             "score": "2-1",
             "home_goals": 2,
             "away_goals": 1,
-            "probability": 0.087
+            "probability": 0.086
           },
-          "home_win_probability": 0.449,
-          "draw_probability": 0.191,
-          "away_win_probability": 0.36,
+          "home_win_probability": 0.463,
+          "draw_probability": 0.187,
+          "away_win_probability": 0.35,
           "head_to_head": {
             "available": true,
             "matches": 15,
@@ -62204,12 +62208,12 @@
             }
           },
           "home_elo": 1580.8,
-          "away_elo": 1539.9,
+          "away_elo": 1541.9,
           "home_points_per_match": 1.38,
-          "away_points_per_match": 1.5,
-          "strength_edge": 0.16,
+          "away_points_per_match": 1.25,
+          "strength_edge": 0.26,
           "home_xg_efficiency": 1.422,
-          "away_xg_efficiency": 1.347,
+          "away_xg_efficiency": 1.246,
           "referee_adj": 0.0,
           "referee_cards_per_match": null,
           "referee_goals_per_match": null

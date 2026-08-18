@@ -1,8 +1,8 @@
 # 2026-27 Süper Lig Fikstürü ve Tahminleri
 
-Üretim zamanı: 2026-08-18T07:04:56.360580
+Üretim zamanı: 2026-08-18T11:09:27.408915
 Toplam hafta: 34, toplam maç: 306
-Not: Tahminler 2025-26 sezonunun tamamı ve 2026-27'de şimdiye kadar oynanmış (8 maç) sonuçlardan türetilen güncel takım formu/Elo/transfer durumuna dayanır; sezon ilerledikçe bu sayfa her gün otomatik olarak yeniden hesaplanır, statik bir anlık görüntü değildir.
+Not: Tahminler 2025-26 sezonunun tamamı ve 2026-27'de şimdiye kadar oynanmış (9 maç) sonuçlardan türetilen güncel takım formu/Elo/transfer durumuna dayanır; sezon ilerledikçe bu sayfa her gün otomatik olarak yeniden hesaplanır, statik bir anlık görüntü değildir.
 Yeni takımlar (sınırlı veri): AMED SPORTİF FAALİYETLER, ERZURUMSPOR FK, ÇORUM FK
 
 ## Hafta 1
@@ -15,7 +15,7 @@ Yeni takımlar (sınırlı veri): AMED SPORTİF FAALİYETLER, ERZURUMSPOR FK, Ç
 - 16.08.2026 19:00 | İSTANBUL BAŞAKŞEHİR FK 2 - 0 KOCAELİSPOR | OYNANDI
 - 16.08.2026 21:30 | AMED SPORTİF FAALİYETLER 3 - 0 ERZURUMSPOR FK | OYNANDI
 - 16.08.2026 21:30 | BEŞİKTAŞ A.Ş. 1 - 0 EYÜPSPOR | OYNANDI
-- 17.08.2026 21:30 | SAMSUNSPOR A.Ş. - GÖZTEPE A.Ş. | tahmin=Dep (Ev %39 · X %19 · Dep %42) | güven=LOW
+- 17.08.2026 21:30 | SAMSUNSPOR A.Ş. 3 - 3 GÖZTEPE A.Ş. | OYNANDI
 
 ## Hafta 2
 
@@ -26,7 +26,7 @@ Yeni takımlar (sınırlı veri): AMED SPORTİF FAALİYETLER, ERZURUMSPOR FK, Ç
 - 23.08.2026 19:00 | TRABZONSPOR A.Ş. - İSTANBUL BAŞAKŞEHİR FK | tahmin=Dep (Ev %25 · X %23 · Dep %52) | güven=MEDIUM
 - 23.08.2026 19:00 | EYÜPSPOR - GAZİANTEP FUTBOL KULÜBÜ A.Ş. | tahmin=Ev (Ev %48 · X %24 · Dep %27) | güven=MEDIUM
 - 23.08.2026 21:30 | CORENDON ALANYASPOR - BEŞİKTAŞ A.Ş. | tahmin=Dep (Ev %30 · X %26 · Dep %44) | güven=MEDIUM
-- 23.08.2026 21:30 | GÖZTEPE A.Ş. - GENÇLERBİRLİĞİ | tahmin=Ev (Ev %53 · X %20 · Dep %28) | güven=HIGH
+- 23.08.2026 21:30 | GÖZTEPE A.Ş. - GENÇLERBİRLİĞİ | tahmin=Ev (Ev %52 · X %19 · Dep %29) | güven=MEDIUM
 - 24.08.2026 21:30 | KOCAELİSPOR - AMED SPORTİF FAALİYETLER | tahmin=Dep (Ev %6 · X %15 · Dep %78) | güven=LOW_NEW_TEAM
 
 ## Hafta 3
@@ -34,7 +34,7 @@ Yeni takımlar (sınırlı veri): AMED SPORTİF FAALİYETLER, ERZURUMSPOR FK, Ç
 - 28.08.2026 21:30 | GENÇLERBİRLİĞİ - ERZURUMSPOR FK | tahmin=Ev (Ev %74 · X %17 · Dep %9) | güven=LOW_NEW_TEAM
 - 29.08.2026 19:00 | TÜMOSAN KONYASPOR - KOCAELİSPOR | tahmin=Ev (Ev %46 · X %26 · Dep %28) | güven=MEDIUM
 - 29.08.2026 21:30 | GAZİANTEP FUTBOL KULÜBÜ A.Ş. - ÇAYKUR RİZESPOR A.Ş. | tahmin=Dep (Ev %34 · X %20 · Dep %45) | güven=MEDIUM
-- 29.08.2026 21:30 | GALATASARAY A.Ş. - GÖZTEPE A.Ş. | tahmin=Ev (Ev %52 · X %17 · Dep %31) | güven=MEDIUM
+- 29.08.2026 21:30 | GALATASARAY A.Ş. - GÖZTEPE A.Ş. | tahmin=Ev (Ev %53 · X %17 · Dep %31) | güven=HIGH
 - 30.08.2026 19:00 | EYÜPSPOR - CORENDON ALANYASPOR | tahmin=Ev (Ev %44 · X %26 · Dep %29) | güven=MEDIUM
 - 30.08.2026 21:30 | İSTANBUL BAŞAKŞEHİR FK - KASIMPAŞA A.Ş. | tahmin=Ev (Ev %63 · X %21 · Dep %17) | güven=HIGH
 - 30.08.2026 21:30 | SAMSUNSPOR A.Ş. - FENERBAHÇE A.Ş. | tahmin=Dep (Ev %27 · X %26 · Dep %47) | güven=MEDIUM
