@@ -57,7 +57,7 @@
 | NTVSpor | MEDIA | 82 | 17 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Milliyet | MEDIA | 78 | 19 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | A SPOR | MEDIA | 76 | 29 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
-| Fanatik | MEDIA | 73 | 26 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Fanatik | MEDIA | 74 | 26 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Son Dakika | MEDIA | 68 | 44 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Sporx.com | MEDIA | 68 | 54 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | GZT | MEDIA | 66 | 18 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
