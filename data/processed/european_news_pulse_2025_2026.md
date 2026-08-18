@@ -1,13 +1,14 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-18T04:48:12.454297+00:00
-Toplam ilgili haber: 38
+Üretim zamanı: 2026-08-18T07:04:57.280269+00:00
+Toplam ilgili haber: 42
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
 - [Fenerbahçe, Romelu Lukaku'yu UEFA kadrosuna ekledi](https://www.cnnturk.com/spor/futbol/fenerbahce-romelu-lukakuyu-uefa-kadrosuna-ekledi-3455628) — CNN Türk Spor · 2026-08-18T07:08:01+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Lyon'dan sonrası Şampiyonlar Ligi! İşte muhtemel 11'ler](https://www.hurriyet.com.tr/sporarena/lyondan-sonrasi-sampiyonlar-ligi-43276531) — Hürriyet Spor · 2026-08-18T04:00:00+00:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Trabzonspor'un UEFA listesi belli oldu! Salah kadroda...](https://www.sabah.com.tr/spor/futbol/2026/08/17/trabzonsporun-uefa-listesi-belli-oldu-salah-kadroda) — Sabah Spor · 2026-08-18T00:57:30+03:00 · turnuva=EL · kulüp=Trabzonspor
 - [UEFA ŞAMPİYONLAR LİGİ KURA ÇEKİMİ TARİHİ 2026-2027: Şampiyonlar Ligi kura çekimi tarihi belli oldu mu, ne zaman? Şampiyonlar Ligi kura çekimi hangi kanalda yayınlanacak?](https://www.cnnturk.com/spor/uefa-sampiyonlar-ligi-kura-cekimi-tarihi-2026-2027-sampiyonlar-ligi-kura-cekimi-tarihi-belli-oldu-mu-ne-zaman-sampiyonlar-ligi-kura-3455623) — CNN Türk Spor · 2026-08-18T00:37:29+00:00 · turnuva=CL · kulüp=—
 - [Beşiktaş UEFA kadrosunu güncelledi! Dusan Vlahovic...](https://www.fotomac.com.tr/besiktas/2026/08/17/besiktas-uefa-kadrosunu-guncelledi-dusan-vlahovic) — Fotomaç · 2026-08-18T00:02:51+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Lyon Teknik Direktörü Fonseca: Savunma yapmaya gelmedik!](https://www.fotomac.com.tr/sampiyonlarligi/2026/08/17/lyon-teknik-direktoru-fonseca-savunma-yapmaya-gelmedik) — Fotomaç · 2026-08-18T00:02:44+03:00 · turnuva=CL · kulüp=Fenerbahçe
@@ -16,6 +17,8 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Kadıköy'de Avrupa gecesi! İşte Fenerbahçe'nin Lyon maçı muhtemel 11'i](https://www.fotomac.com.tr/fenerbahce/2026/08/17/kadikoyde-avrupa-gecesi-iste-fenerbahcenin-lyon-maci-muhtemel-11i) — Fotomaç · 2026-08-18T00:02:16+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe, Lyon maçı hazırlıklarını tamamladı!](https://www.fotomac.com.tr/fenerbahce/2026/08/17/fenerbahce-lyon-maci-hazirliklarini-tamamladi) — Fotomaç · 2026-08-18T00:01:41+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Beşiktaş, Dusan Vlahovic'i UEFA kadrosuna ekledi](https://www.cnnturk.com/spor/futbol/besiktas-dusan-vlahovici-uefa-kadrosuna-ekledi-3455612) — CNN Türk Spor · 2026-08-17T22:44:54+00:00 · turnuva=EL · kulüp=Beşiktaş
+- [Beşiktaş, Dusan Vlahovic'i UEFA kadrosuna ekledi!](https://www.sabah.com.tr/spor/futbol/2026/08/17/besiktas-dusan-vlahovici-uefa-kadrosuna-ekledi) — Sabah Spor · 2026-08-17T22:12:15+03:00 · turnuva=EL · kulüp=Beşiktaş
+- [Fenerbahçe, Romelu Lukaku'yu UEFA listesine dahil etti - NTVSpor](https://news.google.com/rss/articles/CBMingFBVV95cUxQNFp5UkszMzlKNnoyWl9OUG5teUpISWlPQWNuTWktNWtreTRNQjlxUVQtRnNWLVVqVnhRV004VFJVSjlfTlBPS09BWDdhZHkwSkhMb0g4Sm9YdzAxTGtudFNWN2xhUllzenA4V2pVYl9YMGpXLVJSbk5ub01qcnpMV1paU212dk5uT0Fhd3UyVUZyZWp1UTZtYThHWDVwUdIBowFBVV95cUxNcnF0TjlsWW8zWHFnZ2dCVW05Z0VyamRCSnJ6ZDJPd1RESEhnU3JodkIxRWtlWmdZY3Z4WEk5MDN4ejJ3WmpZUEV1dUJGYWVXSVhTcllqZklKVWxrSUV3WVRLTkcycTlmT3NPODlUWWlmOEZNV1lONlpSdnlON05uODB0eEFDeF9NczktN0F2MmhIWkFpcW5ncVI4RDZGc0s1WGVZ?oc=5) — NTVSpor · 2026-08-17T21:12:24+00:00 · turnuva=— · kulüp=Fenerbahçe
 - [Olimpik Lyon Teknik Direktörü Fonseca: Şampiyonlar Ligi'ne girme ihtimali büyük bir fırsat](https://www.aa.com.tr/tr/spor/olimpik-lyon-teknik-direktoru-fonseca-sampiyonlar-ligine-girme-ihtimali-buyuk-bir-firsat/4029836) — Anadolu Ajansı Spor · 2026-08-17T21:07:35+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Beşiktaş, Dusan Vlahovic'i UEFA listesine ekledi!](https://www.hurriyet.com.tr/sporarena/besiktas-dusan-vlahovici-uefa-listesine-ekledi-43276468) — Hürriyet Spor · 2026-08-17T19:35:48+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Trabzonspor'un Ferencvaros maçı UEFA listesi açıklandı: Salah kadroda - Sözcü Gazetesi](https://news.google.com/rss/articles/CBMiqgFBVV95cUxQWnVRTzNrdVlOVmozbE0tSS10dUYxMGRrMHZVTHZMZDJqMEhFbk5VMGhhdXhTeEROTjFYTGFrQUplbTlTTlBNbmNhekRWT3A3WWdhdjlaV20ybXJRdGZnZkR2VmJCX3Y0RWtNWnY2d3JWVHM2bklDYUx5UjA2MXpwZHhYX0dLV19sUVBpSEJxSmk4SzRBalA2V0dGMU9GYXJKc3RVc0tXWEJlQQ?oc=5) — Sözcü Gazetesi · 2026-08-17T19:22:05+00:00 · turnuva=— · kulüp=Trabzonspor
@@ -31,7 +34,7 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Fenerbahçe, 'Kadıköy'e güveniyor](https://www.hurriyet.com.tr/sporarena/fenerbahce-kadikoye-guveniyor-43276048) — Hürriyet Spor · 2026-08-17T11:28:19+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe, Lyon maçı ile Avrupa'da 305. randevuda](https://www.hurriyet.com.tr/sporarena/fenerbahce-lyon-maci-ile-avrupada-305-randevuda-43276042) — Hürriyet Spor · 2026-08-17T11:24:14+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fatih Tekke, teknik direktörlük kariyerinde bir ilki yaşayacak](https://www.cnnturk.com/spor/futbol/fatih-tekke-teknik-direktorluk-kariyerinde-bir-ilki-yasayacak-3455395) — CNN Türk Spor · 2026-08-17T11:11:24+00:00 · turnuva=— · kulüp=Trabzonspor
-- [Fenerbahçe, Avrupa'da 305. maçına çıkacak](https://www.aa.com.tr/tr/spor/fenerbahce-avrupada-305-macina-cikacak/4029212) — Anadolu Ajansı Spor · 2026-08-17T11:10:09+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe Avrupa'da 305. maçına çıkacak](https://www.aa.com.tr/tr/spor/fenerbahce-avrupada-305-macina-cikacak/4029212) — Anadolu Ajansı Spor · 2026-08-17T11:10:09+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [UEFA Şampiyonlar Ligi'nde play-off turu başlıyor](https://www.cnnturk.com/spor/futbol/uefa-sampiyonlar-liginde-play-off-turu-basliyor-3455390) — CNN Türk Spor · 2026-08-17T11:08:02+00:00 · turnuva=CL · kulüp=—
 - [UEFA Şampiyonlar Ligi'nde play-off turu ilk maçları yarın başlayacak](https://www.aa.com.tr/tr/spor/uefa-sampiyonlar-liginde-play-off-turu-ilk-maclari-yarin-baslayacak/4029141) — Anadolu Ajansı Spor · 2026-08-17T10:16:54+03:00 · turnuva=CL · kulüp=—
 - [Fenerbahçe, Beşiktaş ve Trabzonspor’dan TFF’ye erteleme başvurusu](https://www.cnnturk.com/spor/futbol/fenerbahce-besiktas-ve-trabzonspordan-tffye-erteleme-basvurusu-3455372) — CNN Türk Spor · 2026-08-17T10:15:51+00:00 · turnuva=— · kulüp=Fenerbahçe, Beşiktaş, Trabzonspor
@@ -43,4 +46,3 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Fenerbahçe’de Kante’siz sistem çöktü](https://www.cnnturk.com/spor/futbol/fenerbahcede-kantesiz-sistem-coktu-3455340) — CNN Türk Spor · 2026-08-17T08:15:38+00:00 · turnuva=CL · kulüp=Fenerbahçe, Gençlerbirliği
 - [Trabzonspor-Ferencvaros maçının biletleri yarın satışa sunulacak](https://www.aa.com.tr/tr/spor/trabzonspor-ferencvaros-macinin-biletleri-yarin-satisa-sunulacak/4028930) — Anadolu Ajansı Spor · 2026-08-16T20:12:40+03:00 · turnuva=EL · kulüp=Trabzonspor
 - [Trabzonspor-Ferencvaros maçı ATV'de! Şifresiz yayınlanacak](https://www.takvim.com.tr/spor/trabzonspor/2026/08/15/trabzonspor-ferencvaros-maci-atvde-sifresiz-yayinlanacak) — Takvim Spor · 2026-08-15T22:02:01+03:00 · turnuva=EL · kulüp=Trabzonspor
-- [Başkentte İrfan Can duvarı! Fenerbahçe Gençlerbirliği'ne 2-1 yenildi](https://www.takvim.com.tr/spor/fenerbahce/2026/08/15/irfan-can-duvari-fenerbahce-genclerbirligine-2-1-yenildi) — Takvim Spor · 2026-08-15T20:27:47+03:00 · turnuva=CL · kulüp=Fenerbahçe, Gençlerbirliği
