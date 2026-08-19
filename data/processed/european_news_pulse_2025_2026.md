@@ -1,7 +1,7 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-19T01:55:01.008701+00:00
-Toplam ilgili haber: 64
+Üretim zamanı: 2026-08-19T03:12:05.097324+00:00
+Toplam ilgili haber: 62
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
@@ -40,9 +40,9 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - ["Beraberlikle ayrılmak iyi bir sonuç!"](https://www.haberturk.com/olimpik-lyon-da-lois-openda-beraberlik-iyi-bir-sonuc-3906554-spor) — Haberturk Spor · 2026-08-18T21:25:17+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [FENERBAHÇE - LYON MAÇI HANGİ KANALDA, SAAT KAÇTA? Fenerbahçe maçı şifreli mi, şifresiz mi? FB Şampiyonlar Ligi play-off turu maç kadrosu](https://www.cnnturk.com/spor/futbol/fenerbahce-lyon-maci-hangi-kanalda-saat-kacta-fenerbahce-maci-sifreli-mi-sifresiz-mi-fb-sampiyonlar-ligi-play-off-turu-mac-kadrosu-3455757) — CNN Türk Spor · 2026-08-18T21:23:15+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Lukaku 'Çubuklu'yla tanıştı!](https://www.haberturk.com/fenerbahce-de-romelu-lukaku-cubuklu-formayla-tanisti-3906552-spor) — Haberturk Spor · 2026-08-18T21:19:57+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- [UEFA ülke puanı güncellendi! Fenerbahçe'nin beraberliğinin ardından... - fotomac.com.tr](https://news.google.com/rss/articles/CBMirAFBVV95cUxOR05wOHYwbFZjdGdubHJqaDl4QXNqV3E1cEpUcG1OVjhKQXBoNWFFRUM3c2xMMWVaNkVFZ1JNZjgzbk9YRzNmYU42a21iMVZ3MEg0Z2tacXNyVndvRUZuWE9QT2pPejA1RVRVWEFTOTNYTHlINGpYNzZaaVlSTkZ5R3dhV0tteUJYN1ZvcFRvakdvZ243VXZTV0dLS3BwZTNmTkpJVzhlbzNzS21H?oc=5) — fotomac.com.tr · 2026-08-18T21:13:58+00:00 · turnuva=— · kulüp=Fenerbahçe
 - [Fenerbahçe'den Şampiyonlar Ligi'nde istenmeyen rekor: Play-off kabusu](https://www.hurriyet.com.tr/sporarena/fenerbahceden-sampiyonlar-liginde-istenmeyen-rekor-play-off-kabusu-43277610) — Hürriyet Spor · 2026-08-18T21:07:00+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [F.Bahçe turu Fransa'ya bıraktı!](https://www.haberturk.com/fenerbahce-olimpik-lyon-maci-canli-anlatim-fb-lyon-maci-kac-kac-mac-skoru-kadrosu-ve-istatistikleri--3906364-spor) — Haberturk Spor · 2026-08-18T21:06:10+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Kanarya Greenwood ile tura tutundu! Fenerbahçe Lyon ile 1-1 berabere kaldı](https://www.takvim.com.tr/spor/fenerbahce/2026/08/18/kanarya-greenwood-ile-tura-tutundu-fenerbahce-lyon-ile-1-1-berabere-kaldi) — Takvim Spor · 2026-08-18T20:44:22+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Kayserispor Miguel Cardoso ile yollarını ayırdı!](https://www.fotomac.com.tr/birincilig/2026/08/18/kayserispor-miguel-cardoso-ile-yollarini-ayirdi) — Fotomaç · 2026-08-18T19:54:14+03:00 · turnuva=EL · kulüp=Kayserispor
 - [Beşiktaş'ta Avrupa mesaisi başladı!](https://www.fotomac.com.tr/besiktas/2026/08/18/besiktasta-avrupa-mesaisi-basladi) — Fotomaç · 2026-08-18T19:50:55+03:00 · turnuva=EL · kulüp=Beşiktaş
+- [Beşiktaş'ta Avrupa mesaisi başladı](https://www.aa.com.tr/tr/spor/besiktasta-avrupa-mesaisi-basladi/4030912) — Anadolu Ajansı Spor · 2026-08-18T19:46:37+03:00 · turnuva=EL · kulüp=Beşiktaş
