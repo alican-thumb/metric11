@@ -1,11 +1,14 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-18T22:41:21.322464+00:00
-Toplam ilgili haber: 62
+Üretim zamanı: 2026-08-19T01:55:01.008701+00:00
+Toplam ilgili haber: 64
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [Fenerbahçe'den TFF'ye sert tepki!](https://www.aksam.com.tr/spor/fenerbahceden-tffye-sert-tepki/haber-1691664) — Aksam Spor · 2026-08-19T01:43:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Galatasaray Şampiyonlar Ligi maçı ne zaman? Galatasaray rakipleri belli oldu mu?](https://www.cnnturk.com/spor/futbol/galatasaray-sampiyonlar-ligi-maci-ne-zaman-galatasaray-rakipleri-belli-oldu-mu-3456224) — CNN Türk Spor · 2026-08-19T01:42:25+00:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe, Beşiktaş, Trabzonspor
+- [İsmail Kartal'dan tur sözleri! "İkinci maça kazanmak için gideceğiz"](https://www.aksam.com.tr/spor/ismail-kartaldan-tur-sozleri-ikinci-maca-kazanmak-icin-gidecegiz/haber-1691662) — Aksam Spor · 2026-08-19T01:39:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe'de İsmail Kartal'dan Asensio ve erteleme talebi sözleri!](https://www.sabah.com.tr/spor/futbol/2026/08/18/fenerbahcede-ismail-kartaldan-asensio-ve-erteleme-talebi-sozleri) — Sabah Spor · 2026-08-19T01:09:01+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [İsmail Kartal'dan Asensio açıklaması: Oynaması gerekenleri oynattık](https://www.takvim.com.tr/spor/fenerbahce/2026/08/18/ismail-kartaldan-asensio-aciklamasi-oynamasi-gerekenleri-oynattik) — Takvim Spor · 2026-08-19T01:07:20+03:00 · turnuva=CL · kulüp=Fenerbahçe, Konyaspor
 - [Paulo Fonseca: Fenerbahçe hala favori](https://www.aksam.com.tr/spor/paulo-fonseca-fenerbahce-hala-favori/haber-1691659) — Aksam Spor · 2026-08-19T00:55:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
@@ -13,7 +16,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Türkiye ülke puanı sıralamasında kaçıncı? İşte UEFA'daki yerimiz (2026-2027 Sezonu)](https://www.takvim.com.tr/galeri/spor/turkiye-ulke-puani-siralamasinda-kacinci-iste-uefadaki-yerimiz-2026-2027-sezonu) — Takvim Spor · 2026-08-19T00:33:33+03:00 · turnuva=CL · kulüp=Fenerbahçe, Beşiktaş, Trabzonspor
 - [Mason Greenwood: Kazanabileceğimizi düşünüyordum](https://www.aksam.com.tr/spor/mason-greenwood-kazanabilecegimizi-dusunuyordum/haber-1691649) — Aksam Spor · 2026-08-19T00:28:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Vedat Muriç: Lukaku'dan öğreneceğim çok şey olacaktır](https://www.fotomac.com.tr/sampiyonlarligi/2026/08/18/vedat-muric-lukakudan-ogrenecegim-cok-sey-olacaktir) — Fotomaç · 2026-08-19T00:20:46+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Vedat Muriqi: Şampiyonlar Ligi müziğini dinletmek istiyoruz!](https://www.sabah.com.tr/spor/futbol/2026/08/18/vedat-muriqi-sampiyonlar-ligi-muzigini-dinletmek-istiyoruz) — Sabah Spor · 2026-08-19T00:19:07+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [UEFA ülke puanı güncellendi! Fenerbahçe'nin beraberliğinin ardından...](https://www.fotomac.com.tr/galeri/anasayfa/uefa-ulke-puani-guncellendi-fenerbahcenin-beraberliginin-ardindan) — Fotomaç · 2026-08-19T00:15:03+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe 1-1 Lyon Maç Özeti | Her şey rövanşa kaldı](https://www.cnnturk.com/spor/futbol/live-fenerbahce-1-1-lyon-mac-ozeti-her-sey-rovansa-kaldi-3455835) — CNN Türk Spor · 2026-08-19T00:14:17+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - ["Kariyerimde gördüğüm en iyi ambiyans buydu"](https://www.fotomac.com.tr/fenerbahce/2026/08/18/kariyerimde-gordugum-en-iyi-ambiyans-buydu) — Fotomaç · 2026-08-19T00:11:56+03:00 · turnuva=CL · kulüp=Fenerbahçe
@@ -23,9 +25,10 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Fenerbahçe, turu Fransa'ya bıraktı](https://www.aa.com.tr/tr/spor/fenerbahce-turu-fransaya-birakti/4031095) — Anadolu Ajansı Spor · 2026-08-18T23:54:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe Lyon ile Kadıköy'de berabere kaldı!](https://www.fotomac.com.tr/sampiyonlarligi/2026/08/18/fenerbahce-lyon-ile-kadikoyde-berabere-kaldi) — Fotomaç · 2026-08-18T23:52:11+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Mason Greenwood'dan harika gol! Fenerbahçe skoru eşitledi](https://www.fotomac.com.tr/fenerbahce/2026/08/18/mason-greenwooddan-harika-gol-fenerbahce-skoru-esitledi) — Fotomaç · 2026-08-18T23:16:06+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Paulo Fonseca: 'Fenerbahçe play-off turunda favori!'](https://www.hurriyet.com.tr/sporarena/paulo-fonseca-fenerbahce-play-off-turunda-favori-43277675) — Hürriyet Spor · 2026-08-18T23:09:18+00:00 · turnuva=— · kulüp=Fenerbahçe
 - [TRT 1 CANLI İZLEME LİNKİ: Fenerbahçe Lyon UEFA Şampiyonlar Ligi Play Off Maçı nereden ve nasıl izlenir?](https://www.cnnturk.com/spor/futbol/trt-1-canli-izleme-linki-fenerbahce-lyon-uefa-sampiyonlar-ligi-play-off-maci-nereden-ve-nasil-izlenir-3456151) — CNN Türk Spor · 2026-08-18T22:36:11+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Devler Ligi'nde gecenin sonuçları!](https://www.haberturk.com/uefa-sampiyonlar-ligi-play-off-turu-heyecani-basladi-3906567-spor) — Haberturk Spor · 2026-08-18T22:21:56+00:00 · turnuva=CL · kulüp=—
-- [İsmail Kartal: 'Şampiyonlar Ligi'ne gitmek istiyoruz!'](https://www.hurriyet.com.tr/sporarena/ismail-kartal-sampiyonlar-ligine-gitmek-istiyoruz-43277627) — Hürriyet Spor · 2026-08-18T22:20:38+00:00 · turnuva=CL · kulüp=Fenerbahçe
+- [İsmail Kartal: 'Şampiyonlar Ligi'ne gitmek istiyoruz!'](https://www.hurriyet.com.tr/sporarena/ismail-kartal-sampiyonlar-ligine-gitmek-istiyoruz-43277627) — Hürriyet Spor · 2026-08-18T22:20:00+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - ["Şampiyonlar Ligi'ne gitmek istiyoruz!"](https://www.haberturk.com/fenerbahce-de-ismail-kartal-sampiyonlar-ligi-ne-gitmek-istiyoruz-3906558-spor) — Haberturk Spor · 2026-08-18T22:14:17+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Vedat Muriqi'den Lukaku açıklaması!](https://www.haberturk.com/vedat-muriqi-den-lukaku-aciklamasi-3906564-spor) — Haberturk Spor · 2026-08-18T22:01:23+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçeli Minik taraftar Göktuğ Alımcı, Aziz Yıldırım ve yöneticilerle buluştu!](https://www.fotomac.com.tr/fenerbahce/2026/08/18/fenerbahceli-minik-taraftar-goktug-alimci-aziz-yildirim-ve-yoneticilerle-bulustu) — Fotomaç · 2026-08-18T22:01:06+03:00 · turnuva=CL · kulüp=Fenerbahçe, Gençlerbirliği
@@ -35,14 +38,11 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - ["Turu geçen taraf olacağız!"](https://www.haberturk.com/olimpik-lyon-da-corentin-tolisso-turu-gecen-taraf-olacagiz-3906556-spor) — Haberturk Spor · 2026-08-18T21:30:22+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - ["Kariyerimde gördüğüm en iyi ambiyans"](https://www.haberturk.com/romelu-lukaku-kariyerimde-gordugum-en-iyi-ambiyans-3906555-spor) — Haberturk Spor · 2026-08-18T21:28:31+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - ["Beraberlikle ayrılmak iyi bir sonuç!"](https://www.haberturk.com/olimpik-lyon-da-lois-openda-beraberlik-iyi-bir-sonuc-3906554-spor) — Haberturk Spor · 2026-08-18T21:25:17+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Fenerbahçe'de Lyon maçı öncesi Ederson’a özel destek!](https://www.fotomac.com.tr/sampiyonlarligi/2026/08/18/fenerbahcede-lyon-maci-oncesi-edersona-ozel-destek) — Fotomaç · 2026-08-18T21:24:16+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [FENERBAHÇE - LYON MAÇI HANGİ KANALDA, SAAT KAÇTA? Fenerbahçe maçı şifreli mi, şifresiz mi? FB Şampiyonlar Ligi play-off turu maç kadrosu](https://www.cnnturk.com/spor/futbol/fenerbahce-lyon-maci-hangi-kanalda-saat-kacta-fenerbahce-maci-sifreli-mi-sifresiz-mi-fb-sampiyonlar-ligi-play-off-turu-mac-kadrosu-3455757) — CNN Türk Spor · 2026-08-18T21:23:15+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Lukaku 'Çubuklu'yla tanıştı!](https://www.haberturk.com/fenerbahce-de-romelu-lukaku-cubuklu-formayla-tanisti-3906552-spor) — Haberturk Spor · 2026-08-18T21:19:57+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- [UEFA ülke puanı güncellendi! Fenerbahçe'nin beraberliğinin ardından... - Fotomaç](https://news.google.com/rss/articles/CBMirAFBVV95cUxOR05wOHYwbFZjdGdubHJqaDl4QXNqV3E1cEpUcG1OVjhKQXBoNWFFRUM3c2xMMWVaNkVFZ1JNZjgzbk9YRzNmYU42a21iMVZ3MEg0Z2tacXNyVndvRUZuWE9QT2pPejA1RVRVWEFTOTNYTHlINGpYNzZaaVlSTkZ5R3dhV0tteUJYN1ZvcFRvakdvZ243VXZTV0dLS3BwZTNmTkpJVzhlbzNzS21H?oc=5) — Fotomaç · 2026-08-18T21:13:58+00:00 · turnuva=— · kulüp=Fenerbahçe
+- [UEFA ülke puanı güncellendi! Fenerbahçe'nin beraberliğinin ardından... - fotomac.com.tr](https://news.google.com/rss/articles/CBMirAFBVV95cUxOR05wOHYwbFZjdGdubHJqaDl4QXNqV3E1cEpUcG1OVjhKQXBoNWFFRUM3c2xMMWVaNkVFZ1JNZjgzbk9YRzNmYU42a21iMVZ3MEg0Z2tacXNyVndvRUZuWE9QT2pPejA1RVRVWEFTOTNYTHlINGpYNzZaaVlSTkZ5R3dhV0tteUJYN1ZvcFRvakdvZ243VXZTV0dLS3BwZTNmTkpJVzhlbzNzS21H?oc=5) — fotomac.com.tr · 2026-08-18T21:13:58+00:00 · turnuva=— · kulüp=Fenerbahçe
 - [Fenerbahçe'den Şampiyonlar Ligi'nde istenmeyen rekor: Play-off kabusu](https://www.hurriyet.com.tr/sporarena/fenerbahceden-sampiyonlar-liginde-istenmeyen-rekor-play-off-kabusu-43277610) — Hürriyet Spor · 2026-08-18T21:07:00+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [F.Bahçe turu Fransa'ya bıraktı!](https://www.haberturk.com/fenerbahce-olimpik-lyon-maci-canli-anlatim-fb-lyon-maci-kac-kac-mac-skoru-kadrosu-ve-istatistikleri--3906364-spor) — Haberturk Spor · 2026-08-18T21:06:10+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Kanarya Greenwood ile tura tutundu! Fenerbahçe Lyon ile 1-1 berabere kaldı](https://www.takvim.com.tr/spor/fenerbahce/2026/08/18/kanarya-greenwood-ile-tura-tutundu-fenerbahce-lyon-ile-1-1-berabere-kaldi) — Takvim Spor · 2026-08-18T20:44:22+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Kayserispor Miguel Cardoso ile yollarını ayırdı!](https://www.fotomac.com.tr/birincilig/2026/08/18/kayserispor-miguel-cardoso-ile-yollarini-ayirdi) — Fotomaç · 2026-08-18T19:54:14+03:00 · turnuva=EL · kulüp=Kayserispor
 - [Beşiktaş'ta Avrupa mesaisi başladı!](https://www.fotomac.com.tr/besiktas/2026/08/18/besiktasta-avrupa-mesaisi-basladi) — Fotomaç · 2026-08-18T19:50:55+03:00 · turnuva=EL · kulüp=Beşiktaş
-- [Beşiktaş'ta Avrupa mesaisi başladı](https://www.aa.com.tr/tr/spor/besiktasta-avrupa-mesaisi-basladi/4030912) — Anadolu Ajansı Spor · 2026-08-18T19:46:37+03:00 · turnuva=EL · kulüp=Beşiktaş
-- [Fenerbahçe’den Lyon maçı öncesi dikkat çeken paylaşım](https://www.fotomac.com.tr/fenerbahce/2026/08/18/fenerbahceden-lyon-maci-oncesi-dikkat-ceken-paylasim) — Fotomaç · 2026-08-18T19:09:48+03:00 · turnuva=CL · kulüp=Fenerbahçe
