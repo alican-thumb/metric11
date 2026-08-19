@@ -97,6 +97,12 @@ def build_html() -> str:
             "tek ekran",
         ),
         panel_card(
+            "Tahmin Backtest Paneli",
+            "Süper Lig maç ve gol tahminlerinin geçmiş sezon backtest analizi: doğruluk oranları, hata dağılımı ve model kalibrasyonu.",
+            "prediction_backtest_dashboard_2025_2026.html",
+            f"%{round(match_summary.get('accuracy', 0) * 100)} isabet · {match_summary.get('report_count', 0)} rapor" if match_summary.get("report_count") else "backtest",
+        ),
+        panel_card(
             "Tüm Takım Maç Önü Arşivi",
             "18 Süper Lig takımının tamamı için kronolojik maç önü raporları, tahmin doğruluğu karşılaştırması ve büyük maç sinyalleri.",
             "all_teams_preview_dashboard_2025_2026.html",
