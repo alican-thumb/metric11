@@ -1,22 +1,25 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-19T18:54:57.808666+00:00
-Toplam ilgili haber: 76
+Üretim zamanı: 2026-08-19T22:41:24.770770+00:00
+Toplam ilgili haber: 73
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [Zalgiris Teknik Direktörü Sopic: Beşiktaş'ın kalitesini konuşmak saçmalı](https://www.aksam.com.tr/spor/zalgiris-teknik-direktoru-sopic-besiktasin-kalitesini-konusmak-sacmali/haber-1691909) — Aksam Spor · 2026-08-20T01:10:00+03:00 · turnuva=EL · kulüp=Beşiktaş
+- [Kauno Zalgiris, Beşiktaş maçının hazırlıklarını tamamladı](https://www.aksam.com.tr/spor/kauno-zalgiris-besiktas-macinin-hazirliklarini-tamamladi/haber-1691908) — Aksam Spor · 2026-08-20T01:06:00+03:00 · turnuva=EL · kulüp=Beşiktaş
+- [Ferencvaros Teknik Direktörü Borbely: Rakibin ne kadar iyi oyuncuları olduğunu biliyoruz](https://www.aksam.com.tr/spor/ferencvaros-teknik-direktoru-borbely-rakibin-ne-kadar-iyi-oyunculari-oldugunu-biliyoruz/haber-1691907) — Aksam Spor · 2026-08-20T01:02:00+03:00 · turnuva=EL · kulüp=Trabzonspor
+- [Şampiyonlar Ligi play-off turunda gecenin sonuçları](https://www.fotomac.com.tr/sampiyonlarligi/2026/08/19/sampiyonlar-ligi-play-off-turunda-gecenin-sonuclari) — Fotomaç · 2026-08-20T00:23:46+03:00 · turnuva=CL · kulüp=—
+- [UEFA Şampiyonlar Ligi'nde play-off turu ilk maçları oynandı](https://www.aksam.com.tr/spor/uefa-sampiyonlar-liginde-play-off-turu-ilk-maclari-oynandi/haber-1691898) — Aksam Spor · 2026-08-20T00:20:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [UEFA Şampiyonlar Ligi play-off eleme turunda ilk maçlar sona erdi](https://www.aa.com.tr/tr/spor/uefa-sampiyonlar-ligi-play-off-eleme-turunda-ilk-maclar-sona-erdi/4032228) — Anadolu Ajansı Spor · 2026-08-20T00:00:40+03:00 · turnuva=CL · kulüp=—
+- [Trabzonspor, Ferencvaros maçına hazır](https://www.aa.com.tr/tr/spor/trabzonspor-ferencvaros-macina-hazir/4032151) — Anadolu Ajansı Spor · 2026-08-19T22:14:42+03:00 · turnuva=EL · kulüp=Trabzonspor
+- [Devler Ligi'nde gecenin sonuçları!](https://www.haberturk.com/uefa-sampiyonlar-ligi-nde-gecenin-sonuclari-3906810-spor) — Haberturk Spor · 2026-08-19T21:35:56+00:00 · turnuva=CL · kulüp=—
 - [Kauno Zalgiris, Beşiktaş maçına hazır!](https://www.sabah.com.tr/spor/futbol/2026/08/19/kauno-zalgiris-besiktas-macina-hazir) — Sabah Spor · 2026-08-19T21:23:01+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Miguel Cardoso ve Elisha Owusu ile resmî sözleşme imzaladık.](https://erzurumsporfk.org/2026/08/19/miguel-cardoso-ve-elisha-owusu-ile-resmi-sozlesme-imzaladik/) — Erzurumspor FK Resmi Web · 2026-08-19T20:45:50+03:00 · turnuva=EL · kulüp=Kayserispor
 - [Balazs Borbely: Güçlü ve yoğun bir atmosfer olacak!](https://www.sabah.com.tr/spor/futbol/2026/08/19/balazs-borbely-guclu-ve-yogun-bir-atmosfer-olacak) — Sabah Spor · 2026-08-19T20:42:04+03:00 · turnuva=EL · kulüp=Trabzonspor
 - [Balazs Borbely: Güçlü bir oyun ortaya koymaya çalışacağız](https://www.fotomac.com.tr/trabzonspor/2026/08/19/balazs-borbely-guclu-bir-oyun-ortaya-koymaya-calisacagiz) — Fotomaç · 2026-08-19T20:41:39+03:00 · turnuva=EL · kulüp=Trabzonspor
-- [Erzurumspor FK, Miguel Cardoso'yu transfer etti](https://www.aksam.com.tr/spor/erzurumspor-fk-miguel-cardosoyu-transfer-etti/haber-1691874) — Aksam Spor · 2026-08-19T20:39:00+03:00 · turnuva=EL · kulüp=Kayserispor
-- [Trabzonspor, Ferencvaros maçı hazırlıklarını tamamladı](https://www.aksam.com.tr/spor/trabzonspor-ferencvaros-maci-hazirliklarini-tamamladi/haber-1691873) — Aksam Spor · 2026-08-19T20:38:00+03:00 · turnuva=EL · kulüp=Trabzonspor
 - [Kauno Zalgiris Teknik Direktörü Zeljko Sopic'ten Beşiktaş'a övgü](https://www.fotomac.com.tr/avrupaligi/2026/08/19/kauno-zalgiris-teknik-direktoru-zeljko-sopicten-besiktasa-ovgu) — Fotomaç · 2026-08-19T20:30:43+03:00 · turnuva=EL · kulüp=Beşiktaş
-- [Kenan Kodro'dan Muhammed Salah sözleri!](https://www.sabah.com.tr/spor/futbol/2026/08/19/kenan-kodrodan-muhammed-salah-sozleri) — Sabah Spor · 2026-08-19T20:11:23+03:00 · turnuva=EL · kulüp=Trabzonspor
-- [Trabzonspor'da Ferençvaroş hazırlıkları tamam!](https://www.sabah.com.tr/spor/futbol/2026/08/19/trabzonsporda-ferencvaros-hazirliklari-tamam) — Sabah Spor · 2026-08-19T19:55:50+03:00 · turnuva=EL · kulüp=Trabzonspor
-- [Ferencvaros kafilesi, kritik maç öncesi Trabzon'da](https://www.aksam.com.tr/spor/ferencvaros-kafilesi-kritik-mac-oncesi-trabzonda/haber-1691869) — Aksam Spor · 2026-08-19T19:52:00+03:00 · turnuva=EL · kulüp=Trabzonspor
-- [Fatih Tekke: Avrupa Ligi'ni çok arzu ediyoruz](https://www.aksam.com.tr/spor/fatih-tekke-avrupa-ligini-cok-arzu-ediyoruz/haber-1691866) — Aksam Spor · 2026-08-19T19:36:00+03:00 · turnuva=EL · kulüp=Trabzonspor
+- [Zeljko Sopic: 'Beşiktaş'ın kalitesini konuşmak saçmalık olabilir'](https://www.hurriyet.com.tr/sporarena/zeljko-sopic-besiktasin-kalitesini-konusmak-sacmalik-olabilir-43278765) — Hürriyet Spor · 2026-08-19T18:51:44+00:00 · turnuva=EL · kulüp=Beşiktaş
 - ["Elimizden geleni yapacağız!"](https://www.haberturk.com/zeljko-sopic-elimizden-gelenin-en-iyisini-yapacagiz-3906788-spor) — Haberturk Spor · 2026-08-19T17:58:54+00:00 · turnuva=EL · kulüp=Beşiktaş
 - ["İki maç da çok zor olacak!"](https://www.haberturk.com/balazs-borbely-iki-mac-da-cok-zor-olacak-3906786-spor) — Haberturk Spor · 2026-08-19T17:54:08+00:00 · turnuva=EL · kulüp=Trabzonspor
 - [BEŞİKTAŞ ZALGIRIS MAÇI NE ZAMAN? UEFA Avrupa Ligi Beşiktaş Kauno Zalgiris Maçı Hangi Kanalda, Saat Kaçta?](https://www.cnnturk.com/spor/futbol/besiktas-zalgiris-maci-ne-zaman-uefa-avrupa-ligi-besiktas-kauno-zalgiris-maci-hangi-kanalda-saat-kacta-3455575) — CNN Türk Spor · 2026-08-19T17:47:13+00:00 · turnuva=EL · kulüp=Beşiktaş
@@ -31,7 +34,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Beşiktaş, Zalgiris maçına hazır](https://www.cnnturk.com/spor/futbol/besiktas-zalgiris-macina-hazir-3456418) — CNN Türk Spor · 2026-08-19T13:14:24+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Zalgiris 11'i netleşiyor](https://www.haberturk.com/besiktas-ta-kauno-zalgiris-11-i-netlesiyor-italiano-dan-vlahovic-karari-3906614-spor) — Haberturk Spor · 2026-08-19T12:24:24+00:00 · turnuva=EL · kulüp=Beşiktaş, Eyüpspor
 - [Cem Yılmaz'dan, İsmail Kartal'a eleştiri: Hala cevap bulamadım](https://www.cnnturk.com/spor/futbol/cem-yilmazdan-ismail-kartala-elestiri-hala-cevap-bulamadim-3456378) — CNN Türk Spor · 2026-08-19T12:08:44+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Djalo'dan Italiano'ya övgü!](https://www.haberturk.com/tiago-djalo-dan-vincenzo-italiano-ya-ovgu-3906709-spor) — Haberturk Spor · 2026-08-19T12:04:02+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Trabzonspor, Avrupa kupalarında 156. maçına çıkacak](https://www.aa.com.tr/tr/spor/trabzonspor-avrupa-kupalarinda-156-macina-cikacak/4031371) — Anadolu Ajansı Spor · 2026-08-19T11:36:51+03:00 · turnuva=EL · kulüp=Trabzonspor
 - [Trabzonspor'un Avrupa'da 720 günlük hasreti](https://www.aa.com.tr/tr/spor/trabzonsporun-avrupada-720-gunluk-hasreti/4031337) — Anadolu Ajansı Spor · 2026-08-19T11:16:11+03:00 · turnuva=EL · kulüp=Trabzonspor
 - [Beşiktaş, Avrupa kupalarında 263. randevusunda](https://www.aa.com.tr/tr/spor/besiktas-avrupa-kupalarinda-263-randevusunda/4031330) — Anadolu Ajansı Spor · 2026-08-19T11:13:35+03:00 · turnuva=EL · kulüp=Beşiktaş
@@ -44,5 +46,3 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [UEFA Avrupa Ligi'nde play-off turu heyecanı](https://www.cnnturk.com/spor/futbol/uefa-avrupa-liginde-play-off-turu-heyecani-3456297) — CNN Türk Spor · 2026-08-19T10:06:54+00:00 · turnuva=EL · kulüp=Beşiktaş, Trabzonspor
 - [UEFA Konferans Ligi'nde play-off turu ilk maçları yarın oynanacak](https://www.aa.com.tr/tr/spor/uefa-konferans-liginde-play-off-turu-ilk-maclari-yarin-oynanacak/4031231) — Anadolu Ajansı Spor · 2026-08-19T09:56:32+03:00 · turnuva=ECL · kulüp=—
 - [UEFA Avrupa Ligi'nde play-off turu heyecanı yarın başlayacak](https://www.aa.com.tr/tr/spor/uefa-avrupa-liginde-play-off-turu-heyecani-yarin-baslayacak/4031218) — Anadolu Ajansı Spor · 2026-08-19T09:42:53+03:00 · turnuva=EL · kulüp=Beşiktaş, Trabzonspor
-- [Semih Sezerli'den Fenerbahçe'ye acil uyarı: Bugün bir karar alınması gerekiyor](https://www.cnnturk.com/spor/futbol/semih-sezerliden-fenerbahceye-acil-uyari-bugun-bir-karar-alinmasi-gerekiyor-3456279) — CNN Türk Spor · 2026-08-19T09:30:13+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Fenerbahçe-Lyon maçı Fransa’da manşetlerde! ‘Greenwood’un dehası’](https://www.hurriyet.com.tr/sporarena/fenerbahce-lyon-maci-fransada-mansetlerde-greenwoodun-dehasi-43277984) — Hürriyet Spor · 2026-08-19T08:56:39+00:00 · turnuva=CL · kulüp=Fenerbahçe
