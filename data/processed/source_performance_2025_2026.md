@@ -1,18 +1,18 @@
 # Erken Haber Kaynak Performansı
 
-- Transfer sinyali: 63
+- Transfer sinyali: 68
 - Resmi olaya dönüşen transfer: 8
 - Yayın zamanı bulunan resmi teyit: 3/8
 - İlk görülme zamanı bulunan resmi teyit: 8/8
-- Ölçülen kaynak: 110 / gözlenen kaynak: 223
+- Ölçülen kaynak: 110 / gözlenen kaynak: 224
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 0
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 2923
+- Defterde korunan ilk iddia gözlemi: 2928
 
 ## Kanal Kapsamı
 
-- Google News: 288 haber, 30/30 başarılı sorgu.
+- Google News: 289 haber, 30/30 başarılı sorgu.
 - Telegram: 6 mesaj, 8/8 erişilebilir kanal.
 - X: durum=MISSING_CREDENTIALS, gönderi=0, yapılandırılmış hesap=45.
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 2920 | 923 | 1 | — | — | %99.9 | 0.1 | PARTIAL_MEASUREMENT |
+| Google News / medya | 2925 | 924 | 1 | — | — | %99.9 | 0.1 | PARTIAL_MEASUREMENT |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -31,7 +31,7 @@
 
 | Muhabir / Ağ | Google Arama Bulgusu | Atıflı Gözlem | Ölçülebilir İddia | Skor Durumu |
 |---|---:|---:|---:|---|
-| Yağız Sabuncuoğlu | 1 | 1 | 1 | PARTIAL_MEASUREMENT |
+| Yağız Sabuncuoğlu | 2 | 1 | 1 | PARTIAL_MEASUREMENT |
 | Ertan Süzgün | 4 | 0 | 0 | ATTRIBUTION_PENDING |
 | Sports Digitale | 1 | 0 | 0 | ATTRIBUTION_PENDING |
 | Yusuf Günaydın | 0 | 0 | 0 | ATTRIBUTION_PENDING |
@@ -157,14 +157,14 @@
 | cumhuriyet.com.tr | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | radikal.com.tr | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | İstiklal Gazetesi | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
-| A Spor | MEDIA | 10 | 5 | 0 | — | — | — | — | OBSERVING |
+| A Spor | MEDIA | 11 | 5 | 0 | — | — | — | — | OBSERVING |
 | Yeni Şafak | MEDIA | 10 | 1 | 0 | — | — | — | — | OBSERVING |
 | STAR - Haberler | MEDIA | 7 | 1 | 0 | — | — | — | — | OBSERVING |
 | Türkiye Gazetesi | MEDIA | 7 | 0 | 0 | — | — | — | — | OBSERVING |
 | hurriyet.com.tr | MEDIA | 7 | 3 | 0 | — | — | — | — | OBSERVING |
+| ntvspor.net | MEDIA | 7 | 0 | 0 | — | — | — | — | OBSERVING |
 | ajansspor.com | MEDIA | 6 | 3 | 0 | — | — | — | — | OBSERVING |
 | Alanya Postası | MEDIA | 5 | 1 | 0 | — | — | — | — | OBSERVING |
-| ntvspor.net | MEDIA | 5 | 0 | 0 | — | — | — | — | OBSERVING |
 | sabah.com.tr | MEDIA | 5 | 3 | 0 | — | — | — | — | OBSERVING |
 | sporx.com | MEDIA | 5 | 5 | 0 | — | — | — | — | OBSERVING |
 | Özgür Kocaeli | MEDIA | 5 | 1 | 0 | — | — | — | — | OBSERVING |
@@ -172,6 +172,7 @@
 | Manşet Haber | MEDIA | 4 | 2 | 0 | — | — | — | — | OBSERVING |
 | milliyet.com.tr | MEDIA | 4 | 3 | 0 | — | — | — | — | OBSERVING |
 | Samsun Haber | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
+| ensonhaber.com | MEDIA | 3 | 3 | 0 | — | — | — | — | OBSERVING |
 | gzt.com | MEDIA | 3 | 2 | 0 | — | — | — | — | OBSERVING |
 | mansethaber.com | MEDIA | 3 | 2 | 0 | — | — | — | — | OBSERVING |
 | samsunhaber.com | MEDIA | 3 | 1 | 0 | — | — | — | — | OBSERVING |
@@ -191,7 +192,6 @@
 | Samsun Gazetesi | MEDIA | 2 | 1 | 0 | — | — | — | — | OBSERVING |
 | Yüksekova Haber | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | alanyapostasi.com.tr | MEDIA | 2 | 1 | 0 | — | — | — | — | OBSERVING |
-| ensonhaber.com | MEDIA | 2 | 2 | 0 | — | — | — | — | OBSERVING |
 | gazetevatan.com | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | haberts.com | MEDIA | 2 | 2 | 0 | — | — | — | — | OBSERVING |
 | kayserihaber.com.tr | MEDIA | 2 | 2 | 0 | — | — | — | — | OBSERVING |
@@ -250,6 +250,7 @@
 | haber61.net | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | haberege.com.tr | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | haberturk.com | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
+| iha.com.tr | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | ilkses.com.tr | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | kayserihaber.com | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | kayseriyerelhaber.com | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
