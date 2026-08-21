@@ -1,19 +1,19 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-21T18:56:52.440218+00:00
-Toplam ilgili haber: 61
+Üretim zamanı: 2026-08-21T22:41:22.260356+00:00
+Toplam ilgili haber: 56
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
-- [Olympik Lyon'da kriz! Fenerbahçe maçı öncesi...](https://www.aksam.com.tr/sporplus/olympik-lyonda-kriz-fenerbahce-maci-oncesi/haber-1692345) — Aksam Spor · 2026-08-21T21:16:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Shakhtar Donetsk, Şampiyonlar Ligi maçlarını İngiltere'de oynayacak!](https://www.sabah.com.tr/spor/futbol/2026/08/21/shakhtar-donetsk-sampiyonlar-ligi-maclarini-ingilterede-oynayacak) — Sabah Spor · 2026-08-21T21:12:32+03:00 · turnuva=CL · kulüp=—
-- [İşte Shakhtar'ın oynayacağı stat!](https://www.haberturk.com/shakhtar-donetsk-in-sampiyonlar-ligi-maclarini-stamford-bridge-te-oynayacak-3907262-spor) — Haberturk Spor · 2026-08-21T18:05:33+00:00 · turnuva=CL · kulüp=—
+- [Barış Alper Yılmaz: Şampiyonluk ve Şampiyonlar Ligi hedeflerim var](https://www.aksam.com.tr/spor/baris-alper-yilmaz-sampiyonluk-ve-sampiyonlar-ligi-hedeflerim-var/haber-1692369) — Aksam Spor · 2026-08-22T00:00:00+03:00 · turnuva=CL · kulüp=Galatasaray
+- [Barış Alper Yılmaz: Şampiyonluk ve Şampiyonlar Ligi hedeflerim var!](https://www.sabah.com.tr/spor/futbol/2026/08/21/baris-alper-yilmaz-sampiyonluk-ve-sampiyonlar-ligi-hedeflerim-var) — Sabah Spor · 2026-08-21T23:53:27+03:00 · turnuva=CL · kulüp=Galatasaray
+- [Shakhtar Donetsk, UEFA Şampiyonlar Ligi maçlarını Stamford Bridge Stadı'nda oynayacak!](https://www.fotomac.com.tr/sampiyonlarligi/2026/08/21/shakhtar-donetsk-uefa-sampiyonlar-ligi-maclarini-stamford-bridge-stadinda-oynayacak) — Fotomaç · 2026-08-21T22:21:04+03:00 · turnuva=CL · kulüp=—
+- [Uğurcan'dan Devler Ligi sözleri!](https://www.haberturk.com/galatasaray-da-ugurcan-cakir-ht-spor-a-konustu-sampiyonlar-ligi-zor-bir-arena-3907293-spor) — Haberturk Spor · 2026-08-21T21:56:51+00:00 · turnuva=CL · kulüp=Galatasaray
 - [GÜNÜN MAÇLARI 21 AĞUSTOS 2026: Bugün Kimlerin Maçlar Var? Bugünkü Maçlar Neler? İşte 21 Ağustos Günün Maçları](https://www.cnnturk.com/spor/gunun-maclari-21-agustos-2026-bugun-kimlerin-maclar-var-bugunku-maclar-neler-iste-21-agustos-gunun-maclari-3457313) — CNN Türk Spor · 2026-08-21T17:41:51+00:00 · turnuva=CL · kulüp=—
 - [UEFA ülke puan sıralaması güncel liste 21 Ağustos 2026 || Türkiye UEFA ülke puanı tablosunda kaçıncı sırada, kaç puanı var?](https://www.hurriyet.com.tr/sporarena/galeri-turkiye-uefa-ulke-puani-tablosunda-kacinci-sirada-kac-puani-var-43280556) — Hürriyet Spor · 2026-08-21T13:05:26+00:00 · turnuva=— · kulüp=Beşiktaş, Trabzonspor
 - [Ülke puanı güncellendi! Beşiktaş ve Trabzonspor maçları sonrası...](https://www.fotomac.com.tr/avrupaligi/2026/08/21/ulke-puani-guncellendi-besiktas-ve-trabzonspor-maclari-sonrasi) — Fotomaç · 2026-08-21T12:03:29+03:00 · turnuva=EL · kulüp=Beşiktaş, Trabzonspor
 - [Oyun var, skor yok!](https://www.haberturk.com/trabzonspor-un-ferencvaros-karsisindaki-oyun-ustunlugu-skora-yansimadi-3907194-spor) — Haberturk Spor · 2026-08-21T11:45:00+00:00 · turnuva=EL · kulüp=Trabzonspor
-- [Kanatlarına bağlı taşlardan arınmış Kara Kartal!](https://www.fotomac.com.tr/besiktas/2026/08/21/kanatlarina-bagli-taslardan-arinmis-kara-kartal) — Fotomaç · 2026-08-21T11:20:32+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş'ın Zalgiris galibiyeti Avrupa basınında! Italiano ve Vlahovic için sözler](https://www.hurriyet.com.tr/sporarena/besiktasin-zalgiris-galibiyeti-avrupa-basininda-italiano-ve-vlahovic-icin-sozler-43280400) — Hürriyet Spor · 2026-08-21T09:35:41+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş 3-0 Kauno Zalgiris Maç Özeti | Temsilcimiz, Avrupa Ligi’ne çok yakın](https://www.cnnturk.com/spor/futbol/live-besiktas-3-0-kauno-zalgiris-mac-ozeti-temsilcimiz-avrupa-ligine-cok-yakin-3456920) — CNN Türk Spor · 2026-08-21T09:31:13+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [İşte UEFA ülke puanından son durum! Beşiktaş ve Trabzonspor maçları sonrası... - A Spor](https://news.google.com/rss/articles/CBMiuAFBVV95cUxPTTBNM01vZUtoM1VkUmNKSUF4b2Z4aTNoM1RldC1jVk13aHpTeVFuR0RhZW5JYUl1UXlIa0RoUlh0b2EyVXJsMDliak1sYmNtTkU5ajcyb0pyTlVWZkVyX1Z0aDY2d09pOW5rampkM0RtaWlOSllkTFhpWGx0SEhDM290ekw1Yi1jMjlJakQxZ21FQkVEWXp2RjZsY2hRRVRPV19aR0JGQUxNUXozMFJxV3duNkxWWUZK?oc=5) — A Spor · 2026-08-21T09:17:37+00:00 · turnuva=— · kulüp=Beşiktaş, Trabzonspor
@@ -32,8 +32,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Beşiktaş tur kapısını açtı!](https://www.fotomac.com.tr/besiktas/2026/08/20/besiktas-tur-kapisini-acti) — Fotomaç · 2026-08-21T00:22:11+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Trabzonspor'da Nwaiwu rövanşta yok! İşte kırmızı kart gördüğü pozisyon](https://www.fotomac.com.tr/video-haber/videoizle/trabzonsporda-nwaiwu-rovansta-yok-iste-kirmizi-kart-gordugu-pozisyon) — Fotomaç · 2026-08-21T00:22:09+03:00 · turnuva=EL · kulüp=Trabzonspor
 - [Beşiktaş’ta şok sakatlık! Leandro Trossard…](https://www.fotomac.com.tr/besiktas/2026/08/20/besiktasta-sok-sakatlik-leandro-trossard) — Fotomaç · 2026-08-21T00:22:07+03:00 · turnuva=EL · kulüp=Beşiktaş
-- [Trabzonspor'da büyük şanssızlık! Onuachu direği geçemedi](https://www.fotomac.com.tr/video-haber/videoizle/trabzonsporda-buyuk-sanssizlik-onuachu-diregi-gecemedi) — Fotomaç · 2026-08-21T00:22:05+03:00 · turnuva=EL · kulüp=Trabzonspor
-- [Trabzonspor Wagner Pina net pozisyonu kaçırdı! İşte o anlar](https://www.fotomac.com.tr/video-haber/videoizle/trabzonspor-wagner-pina-net-pozisyonu-kacirdi-iste-o-anlar) — Fotomaç · 2026-08-21T00:22:03+03:00 · turnuva=EL · kulüp=Trabzonspor
 - [UEFA Avrupa Ligi play-off turunda ilk maçlar oynandı](https://www.aa.com.tr/tr/spor/uefa-avrupa-ligi-play-off-turunda-ilk-maclar-oynandi/4033351) — Anadolu Ajansı Spor · 2026-08-21T00:04:53+03:00 · turnuva=EL · kulüp=—
 - [UEFA Konferans Ligi play-off turunda ilk maçlar oynandı](https://www.aa.com.tr/tr/spor/uefa-konferans-ligi-play-off-turunda-ilk-maclar-oynandi/4033349) — Anadolu Ajansı Spor · 2026-08-21T00:00:15+03:00 · turnuva=ECL · kulüp=—
 - [MAÇ ÖZETİ | Trabzonspor - Ferencvaros | Fırtına, tur avantajını rakibine bıraktı](https://www.cnnturk.com/spor/futbol/live-mac-ozeti-trabzonspor-ferencvaros-firtina-tur-avantajini-rakibine-birakti-3456922) — CNN Türk Spor · 2026-08-20T23:34:53+00:00 · turnuva=EL · kulüp=Trabzonspor
@@ -46,3 +44,5 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Trabzonspor, UEFA Avrupa Ligi play-off turu ilk maçında Ferencvaros'a yenildi](https://www.aa.com.tr/tr/spor/trabzonspor-uefa-avrupa-ligi-play-off-turu-ilk-macinda-ferencvarosa-yenildi/4033220) — Anadolu Ajansı Spor · 2026-08-20T20:54:02+03:00 · turnuva=EL · kulüp=Trabzonspor
 - [Beşiktaş'ın Sırp golcüsü Vlahovic, Kauno Zalgiris karşısında ilk kez maç kadrosunda](https://www.aa.com.tr/tr/spor/besiktasin-sirp-golcusu-vlahovic-kauno-zalgiris-karsisinda-ilk-kez-mac-kadrosunda/4033205) — Anadolu Ajansı Spor · 2026-08-20T20:28:22+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [BEŞİKTAŞ KAUNO ZALGİRİS HANGİ KANALDA? UEFA Avrupa Ligi play-off turu Beşiktaş Zalgiris maçı saat kaçta, ne zaman? Vlahovic oynayacak mı?](https://www.cnnturk.com/spor/futbol/besiktas-kauno-zalgiris-maci-hangi-kanalda-uefa-avrupa-ligi-play-off-turu-besiktas-zalgiris-maci-saat-kacta-ne-zaman-vlahovic-3456838) — CNN Türk Spor · 2026-08-20T20:01:17+00:00 · turnuva=EL · kulüp=Beşiktaş
+- [Beşiktaş ve Trabzonspor'un maçları başladı | CANLI TAKİP](https://www.cnnturk.com/spor/futbol/besiktas-ve-trabzonspor-avrupa-arenasinda-11ler-belli-oldu-3457077) — CNN Türk Spor · 2026-08-20T19:58:09+00:00 · turnuva=EL · kulüp=Beşiktaş, Trabzonspor
+- [Beşiktaş'tan kusursuz seri! 6 maç oldu](https://www.hurriyet.com.tr/sporarena/besiktastan-kusursuz-seri-6-mac-oldu-43279935) — Hürriyet Spor · 2026-08-20T19:40:00+00:00 · turnuva=EL · kulüp=Beşiktaş
