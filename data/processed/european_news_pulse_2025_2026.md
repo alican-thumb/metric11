@@ -1,14 +1,16 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-21T10:47:28.155653+00:00
-Toplam ilgili haber: 66
+Üretim zamanı: 2026-08-21T13:12:20.491287+00:00
+Toplam ilgili haber: 67
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
 - [GÜNÜN MAÇLARI 21 AĞUSTOS 2026: Bugün Kimlerin Maçlar Var? Bugünkü Maçlar Neler? İşte 21 Ağustos Günün Maçları](https://www.cnnturk.com/spor/gunun-maclari-21-agustos-2026-bugun-kimlerin-maclar-var-bugunku-maclar-neler-iste-21-agustos-gunun-maclari-3457313) — CNN Türk Spor · 2026-08-21T12:09:51+00:00 · turnuva=CL · kulüp=—
 - [Ülke puanı güncellendi! Beşiktaş ve Trabzonspor maçları sonrası...](https://www.fotomac.com.tr/avrupaligi/2026/08/21/ulke-puani-guncellendi-besiktas-ve-trabzonspor-maclari-sonrasi) — Fotomaç · 2026-08-21T12:03:29+03:00 · turnuva=EL · kulüp=Beşiktaş, Trabzonspor
+- [Oyun var, skor yok!](https://www.haberturk.com/trabzonspor-un-ferencvaros-karsisindaki-oyun-ustunlugu-skora-yansimadi-3907194-spor) — Haberturk Spor · 2026-08-21T11:45:00+00:00 · turnuva=EL · kulüp=Trabzonspor
 - [Kanatlarına bağlı taşlardan arınmış Kara Kartal!](https://www.fotomac.com.tr/besiktas/2026/08/21/kanatlarina-bagli-taslardan-arinmis-kara-kartal) — Fotomaç · 2026-08-21T11:20:32+03:00 · turnuva=EL · kulüp=Beşiktaş
+- [UEFA ülke puan sıralaması güncel liste 21 Ağustos 2026 || Türkiye UEFA ülke puanı tablosunda kaçıncı sırada, kaç puanı var?](https://www.hurriyet.com.tr/sporarena/galeri-turkiye-uefa-ulke-puani-tablosunda-kacinci-sirada-kac-puani-var-43280556) — Hürriyet Spor · 2026-08-21T10:50:00+00:00 · turnuva=— · kulüp=Beşiktaş, Trabzonspor
 - [Beşiktaş'ın Zalgiris galibiyeti Avrupa basınında! Italiano ve Vlahovic için sözler](https://www.hurriyet.com.tr/sporarena/besiktasin-zalgiris-galibiyeti-avrupa-basininda-italiano-ve-vlahovic-icin-sozler-43280400) — Hürriyet Spor · 2026-08-21T09:35:41+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş 3-0 Kauno Zalgiris Maç Özeti | Temsilcimiz, Avrupa Ligi’ne çok yakın](https://www.cnnturk.com/spor/futbol/live-besiktas-3-0-kauno-zalgiris-mac-ozeti-temsilcimiz-avrupa-ligine-cok-yakin-3456920) — CNN Türk Spor · 2026-08-21T09:31:13+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Spor yazarlarından Trabzonspor-Ferencvaros maçı yorumu](https://www.fotomac.com.tr/trabzonspor/2026/08/21/spor-yazarlarindan-trabzonspor-ferencvaros-maci-yorumu) — Fotomaç · 2026-08-21T08:22:23+03:00 · turnuva=EL · kulüp=Trabzonspor
@@ -16,6 +18,7 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - ["Artık korkan değil, korkutan takım!"](https://www.haberturk.com/spor-yazarlari-besiktas-kauno-zalgiris-macini-degerlendirdi-3907098-spor) — Haberturk Spor · 2026-08-21T07:45:57+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş kazandı, Trabzonspor kaybetti: UEFA ülke puanı sıralaması güncellendi!](https://www.hurriyet.com.tr/sporarena/besiktas-kazandi-trabzonspor-kaybetti-uefa-ulke-puani-siralamasi-guncellendi-43280078) — Hürriyet Spor · 2026-08-21T05:36:06+00:00 · turnuva=EL · kulüp=Beşiktaş, Trabzonspor
 - [Kauno Zalgiris galibiyetinin ardından Beşiktaş'ın iki yıldızına büyük övgü: 'Süper Lig'de onlar gibisi yok!'](https://www.hurriyet.com.tr/sporarena/kauno-zalgiris-galibiyetinin-ardindan-besiktasin-iki-yildizina-buyuk-ovgu-onlar-gibisi-super-ligde-yok-43280049) — Hürriyet Spor · 2026-08-21T04:35:00+00:00 · turnuva=EL · kulüp=Beşiktaş
+- [Fenerbahçe'den flaş transfer hamlesi! Şampiyonlar Ligi bileti alınırsa... - A Spor](https://news.google.com/rss/articles/CBMitwFBVV95cUxPVlk5NzgzUUNKSjlkMTVxNzRhVWNMbElkVlNCMFdBUVdsV0lQSWJiRVZNbEZLNDdlVllreUhZQ25pNXM4dF92M1Q4SUFLRnV6el9LUUZ1a2tPYlhvNjlMUnotRXZNV2UxNXFuNmxveGxRcVE0aGxFUVNBWjdWTVJiclJTZVNyWHJqUDFzejZJalBIRm9rSHJZYy0zcGRfUXhDcmE3a3BoQ2ZjclpiY1lfTVZfTGZlakE?oc=5) — A Spor · 2026-08-21T03:41:10+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Trabzonspor 0-1 Ferencvaros (MAÇ ÖZETİ)](https://www.fotomac.com.tr/video-haber/videoizle/trabzonspor-0-1-ferencvaros-mac-ozeti) — Fotomaç · 2026-08-21T00:22:27+03:00 · turnuva=EL · kulüp=Trabzonspor
 - [Fatih Tekke: Rövanş için ümidim var](https://www.fotomac.com.tr/video-haber/videoizle/fatih-tekke-rovans-icin-umidim-var) — Fotomaç · 2026-08-21T00:22:25+03:00 · turnuva=EL · kulüp=Trabzonspor
 - [Tur Macaristan'a kaldı! Trabzonspor evinde Ferencvaros'a mağlup oldu](https://www.fotomac.com.tr/avrupaligi/2026/08/20/tur-macaristana-kaldi-trabzonspor-evinde-ferencvarosa-maglup-oldu) — Fotomaç · 2026-08-21T00:22:24+03:00 · turnuva=EL · kulüp=Trabzonspor
@@ -36,7 +39,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [MAÇ ÖZETİ | Trabzonspor - Ferencvaros | Fırtına, tur avantajını rakibine bıraktı](https://www.cnnturk.com/spor/futbol/live-mac-ozeti-trabzonspor-ferencvaros-firtina-tur-avantajini-rakibine-birakti-3456922) — CNN Türk Spor · 2026-08-20T23:34:53+00:00 · turnuva=EL · kulüp=Trabzonspor
 - [Fatih Tekke'den Ferencvaros yenilgisi yorumu: 2 kaybımız var](https://www.takvim.com.tr/spor/trabzonspor/2026/08/20/fatih-tekkeden-ferencvaros-yenilgisi-yorumu-2-kaybimiz-var) — Takvim Spor · 2026-08-20T23:08:14+03:00 · turnuva=EL · kulüp=Trabzonspor
 - [Türkiye ülke puanı sıralamasında kaçıncı? İşte UEFA'daki yerimiz (2026-2027 Sezonu)](https://www.takvim.com.tr/galeri/spor/turkiye-ulke-puani-siralamasinda-kacinci-iste-uefadaki-yerimiz-2026-2027-sezonu) — Takvim Spor · 2026-08-20T22:49:52+03:00 · turnuva=CL · kulüp=Fenerbahçe, Beşiktaş, Trabzonspor
-- [Amir Murillo: Harika bir oyun oynadık!](https://www.sabah.com.tr/spor/futbol/2026/08/20/amir-murillo-harika-bir-oyun-oynadik) — Sabah Spor · 2026-08-20T22:46:54+03:00 · turnuva=EL · kulüp=Beşiktaş
 - ["Buradan iyi bir sonuçla ayrıldık"](https://www.haberturk.com/balazs-borbely-buradan-iyi-bir-sonucla-ayrildik-3907061-spor) — Haberturk Spor · 2026-08-20T21:57:27+00:00 · turnuva=EL · kulüp=Trabzonspor
 - [Konferans Ligi'nde gecenin sonuçları!](https://www.haberturk.com/uefa-konferans-ligi-nde-play-off-turunda-ilk-maclar-tamamlandi-3907060-spor) — Haberturk Spor · 2026-08-20T21:48:44+00:00 · turnuva=ECL · kulüp=—
 - [Avrupa Ligi'nde play-off turu başladı!](https://www.haberturk.com/uefa-avrupa-ligi-play-off-turunda-ilk-maclar-tamamlandi-3907059-spor) — Haberturk Spor · 2026-08-20T21:44:42+00:00 · turnuva=EL · kulüp=—
@@ -44,5 +46,3 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Trabzonspor, UEFA Avrupa Ligi play-off turu ilk maçında Ferencvaros'a yenildi](https://www.aa.com.tr/tr/spor/trabzonspor-uefa-avrupa-ligi-play-off-turu-ilk-macinda-ferencvarosa-yenildi/4033220) — Anadolu Ajansı Spor · 2026-08-20T20:54:02+03:00 · turnuva=EL · kulüp=Trabzonspor
 - [Beşiktaş'ın Sırp golcüsü Vlahovic, Kauno Zalgiris karşısında ilk kez maç kadrosunda](https://www.aa.com.tr/tr/spor/besiktasin-sirp-golcusu-vlahovic-kauno-zalgiris-karsisinda-ilk-kez-mac-kadrosunda/4033205) — Anadolu Ajansı Spor · 2026-08-20T20:28:22+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [BEŞİKTAŞ KAUNO ZALGİRİS HANGİ KANALDA? UEFA Avrupa Ligi play-off turu Beşiktaş Zalgiris maçı saat kaçta, ne zaman? Vlahovic oynayacak mı?](https://www.cnnturk.com/spor/futbol/besiktas-kauno-zalgiris-maci-hangi-kanalda-uefa-avrupa-ligi-play-off-turu-besiktas-zalgiris-maci-saat-kacta-ne-zaman-vlahovic-3456838) — CNN Türk Spor · 2026-08-20T20:01:17+00:00 · turnuva=EL · kulüp=Beşiktaş
-- [Beşiktaş ve Trabzonspor'un maçları başladı | CANLI TAKİP](https://www.cnnturk.com/spor/futbol/besiktas-ve-trabzonspor-avrupa-arenasinda-11ler-belli-oldu-3457077) — CNN Türk Spor · 2026-08-20T19:58:09+00:00 · turnuva=EL · kulüp=Beşiktaş, Trabzonspor
-- [Beşiktaş'tan kusursuz seri! 6 maç oldu](https://www.hurriyet.com.tr/sporarena/besiktastan-kusursuz-seri-6-mac-oldu-43279935) — Hürriyet Spor · 2026-08-20T19:40:00+00:00 · turnuva=EL · kulüp=Beşiktaş
