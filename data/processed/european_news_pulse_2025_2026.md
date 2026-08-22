@@ -1,7 +1,7 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-21T22:41:22.260356+00:00
-Toplam ilgili haber: 56
+Üretim zamanı: 2026-08-22T01:52:01.100821+00:00
+Toplam ilgili haber: 55
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
@@ -30,7 +30,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Mustafa Çulcu yorumladı! "Nwaiwu'nun pozisyonunda kırmızı kart yok"](https://www.fotomac.com.tr/video-haber/videoizle/mustafa-culcu-yorumladi-nwaiwunun-pozisyonunda-kirmizi-kart-yok) — Fotomaç · 2026-08-21T00:22:15+03:00 · turnuva=EL · kulüp=Trabzonspor
 - [GOL | Trabzonspor 0-1 Ferencvaros](https://www.fotomac.com.tr/video-haber/videoizle/gol-trabzonspor-0-1-ferencvaros) — Fotomaç · 2026-08-21T00:22:13+03:00 · turnuva=EL · kulüp=Trabzonspor
 - [Beşiktaş tur kapısını açtı!](https://www.fotomac.com.tr/besiktas/2026/08/20/besiktas-tur-kapisini-acti) — Fotomaç · 2026-08-21T00:22:11+03:00 · turnuva=EL · kulüp=Beşiktaş
-- [Trabzonspor'da Nwaiwu rövanşta yok! İşte kırmızı kart gördüğü pozisyon](https://www.fotomac.com.tr/video-haber/videoizle/trabzonsporda-nwaiwu-rovansta-yok-iste-kirmizi-kart-gordugu-pozisyon) — Fotomaç · 2026-08-21T00:22:09+03:00 · turnuva=EL · kulüp=Trabzonspor
 - [Beşiktaş’ta şok sakatlık! Leandro Trossard…](https://www.fotomac.com.tr/besiktas/2026/08/20/besiktasta-sok-sakatlik-leandro-trossard) — Fotomaç · 2026-08-21T00:22:07+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [UEFA Avrupa Ligi play-off turunda ilk maçlar oynandı](https://www.aa.com.tr/tr/spor/uefa-avrupa-ligi-play-off-turunda-ilk-maclar-oynandi/4033351) — Anadolu Ajansı Spor · 2026-08-21T00:04:53+03:00 · turnuva=EL · kulüp=—
 - [UEFA Konferans Ligi play-off turunda ilk maçlar oynandı](https://www.aa.com.tr/tr/spor/uefa-konferans-ligi-play-off-turunda-ilk-maclar-oynandi/4033349) — Anadolu Ajansı Spor · 2026-08-21T00:00:15+03:00 · turnuva=ECL · kulüp=—
@@ -46,3 +45,4 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [BEŞİKTAŞ KAUNO ZALGİRİS HANGİ KANALDA? UEFA Avrupa Ligi play-off turu Beşiktaş Zalgiris maçı saat kaçta, ne zaman? Vlahovic oynayacak mı?](https://www.cnnturk.com/spor/futbol/besiktas-kauno-zalgiris-maci-hangi-kanalda-uefa-avrupa-ligi-play-off-turu-besiktas-zalgiris-maci-saat-kacta-ne-zaman-vlahovic-3456838) — CNN Türk Spor · 2026-08-20T20:01:17+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş ve Trabzonspor'un maçları başladı | CANLI TAKİP](https://www.cnnturk.com/spor/futbol/besiktas-ve-trabzonspor-avrupa-arenasinda-11ler-belli-oldu-3457077) — CNN Türk Spor · 2026-08-20T19:58:09+00:00 · turnuva=EL · kulüp=Beşiktaş, Trabzonspor
 - [Beşiktaş'tan kusursuz seri! 6 maç oldu](https://www.hurriyet.com.tr/sporarena/besiktastan-kusursuz-seri-6-mac-oldu-43279935) — Hürriyet Spor · 2026-08-20T19:40:00+00:00 · turnuva=EL · kulüp=Beşiktaş
+- [BEŞİKTAŞ KAUNO ZALGİRİS MAÇI NEREDEN İZLENİR? Beşiktaş Zalgiris maçı hangi kanalda, saat kaçta? İlk 11'ler açıklandı mı?](https://www.cnnturk.com/spor/futbol/besiktas-kauno-zalgiris-maci-nereden-izlenir-besiktas-zalgiris-maci-hangi-kanalda-saat-kacta-ilk-11ler-aciklandi-mi-3457078) — CNN Türk Spor · 2026-08-20T19:26:43+00:00 · turnuva=EL · kulüp=Beşiktaş
