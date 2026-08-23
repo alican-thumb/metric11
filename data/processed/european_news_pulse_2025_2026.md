@@ -1,11 +1,16 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-23T13:03:40.296141+00:00
-Toplam ilgili haber: 15
+Üretim zamanı: 2026-08-23T14:39:52.400628+00:00
+Toplam ilgili haber: 20
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [Fenerbahçe'de, Lyon maçı hazırlıkları başladı](https://www.cnnturk.com/spor/futbol/fenerbahcede-lyon-maci-hazirliklari-basladi-3457925) — CNN Türk Spor · 2026-08-23T17:08:23+00:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe'de Olimpik Lyon rövanş maçı mesaisi başladı](https://www.aksam.com.tr/spor/fenerbahcede-olimpik-lyon-rovans-maci-mesaisi-basladi/haber-1692752) — Aksam Spor · 2026-08-23T17:00:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe, Olimpik Lyon maçının hazırlıklarına başladı](https://www.fotomac.com.tr/fenerbahce/2026/08/23/fenerbahce-olimpik-lyon-macinin-hazirliklarina-basladi) — Fotomaç · 2026-08-23T16:48:16+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe, Lyon mesaisine başladı!](https://www.sabah.com.tr/spor/futbol/2026/08/23/fenerbahce-lyon-mesaisine-basladi) — Sabah Spor · 2026-08-23T16:29:06+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe, Lyon maçı mesaisine başladı!](https://www.hurriyet.com.tr/sporarena/fenerbahce-lyon-maci-mesaisine-basladi-43282636) — Hürriyet Spor · 2026-08-23T14:09:00+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe-Konyaspor maçı sonrası Lyon göndermesi: Asıl galibiyet orada!](https://www.hurriyet.com.tr/sporarena/fenerbahce-konyaspor-maci-sonrasi-lyon-gondermesi-asil-galibiyet-orada-43282123) — Hürriyet Spor · 2026-08-23T04:48:00+00:00 · turnuva=CL · kulüp=Fenerbahçe, Konyaspor
 - [Vedat Muriqi'den Lyon açıklaması!](https://www.haberturk.com/vedat-muriqi-den-olimpik-lyon-aciklamasi-3907448-spor) — Haberturk Spor · 2026-08-22T22:09:24+00:00 · turnuva=CL · kulüp=Fenerbahçe, Konyaspor
 - [Lyon rotasyona rağmen kazandı!](https://www.haberturk.com/toulouse-lyon-0-2-mac-sonucu-3907444-spor) — Haberturk Spor · 2026-08-22T21:21:46+00:00 · turnuva=CL · kulüp=Fenerbahçe
