@@ -1,11 +1,12 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-23T04:50:38.271028+00:00
-Toplam ilgili haber: 19
+Üretim zamanı: 2026-08-23T07:01:21.343385+00:00
+Toplam ilgili haber: 20
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [Fenerbahçe-Konyaspor maçı sonrası Lyon göndermesi: Asıl galibiyet orada!](https://www.hurriyet.com.tr/sporarena/fenerbahce-konyaspor-maci-sonrasi-lyon-gondermesi-asil-galibiyet-orada-43282123) — Hürriyet Spor · 2026-08-23T04:48:00+00:00 · turnuva=CL · kulüp=Fenerbahçe, Konyaspor
 - [Vedat Muriqi'den Lyon açıklaması!](https://www.haberturk.com/vedat-muriqi-den-olimpik-lyon-aciklamasi-3907448-spor) — Haberturk Spor · 2026-08-22T22:09:24+00:00 · turnuva=CL · kulüp=Fenerbahçe, Konyaspor
 - [Lyon rotasyona rağmen kazandı!](https://www.haberturk.com/toulouse-lyon-0-2-mac-sonucu-3907444-spor) — Haberturk Spor · 2026-08-22T21:21:46+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe Tarfin, Avrupa Ligi Süper Kupa'da mücadele edecek](https://www.aa.com.tr/tr/spor/fenerbahce-tarfin-avrupa-ligi-super-kupada-mucadele-edecek/4034617) — Anadolu Ajansı Spor · 2026-08-22T15:30:18+03:00 · turnuva=EL · kulüp=Fenerbahçe
@@ -13,9 +14,9 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Ferencvaros-Trabzonspor maçını Sloven hakem Obrenovic yönetecek](https://www.aa.com.tr/tr/spor/ferencvaros-trabzonspor-macini-sloven-hakem-obrenovic-yonetecek/4034509) — Anadolu Ajansı Spor · 2026-08-22T12:29:26+03:00 · turnuva=EL · kulüp=Trabzonspor
 - [Kauno Zalgiris-Beşiktaş maçını İspanyol hakem Jesus Gil Manzano yönetecek](https://www.aa.com.tr/tr/spor/kauno-zalgiris-besiktas-macini-ispanyol-hakem-jesus-gil-manzano-yonetecek/4034504) — Anadolu Ajansı Spor · 2026-08-22T12:19:27+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [UEFA'dan Halil Umut Meler'e görev](https://www.haberturk.com/uefadan-halil-umut-meler-e-gorev-3907353-spor) — Haberturk Spor · 2026-08-22T10:13:05+00:00 · turnuva=EL · kulüp=—
+- [Trabzonspor maçına Sloven hakem!](https://www.haberturk.com/ferencvaros-trabzonspor-macina-sloven-hakem-rade-obrenovic-3907350-spor) — Haberturk Spor · 2026-08-22T09:59:08+00:00 · turnuva=EL · kulüp=Trabzonspor
 - [Kauno Zalgiris-Beşiktaş maçına İspanyol hakem](https://www.hurriyet.com.tr/sporarena/kauno-zalgiris-besiktas-macina-ispanyol-hakem-43281499) — Hürriyet Spor · 2026-08-22T09:30:09+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [GÜNÜN MAÇLARI 21 AĞUSTOS 2026: Bugün Kimlerin Maçlar Var? Bugünkü Maçlar Neler? İşte 21 Ağustos Günün Maçları](https://www.cnnturk.com/spor/gunun-maclari-21-agustos-2026-bugun-kimlerin-maclar-var-bugunku-maclar-neler-iste-21-agustos-gunun-maclari-3457313) — CNN Türk Spor · 2026-08-21T17:41:51+00:00 · turnuva=CL · kulüp=—
-- [MAÇ ÖZETİ | Trabzonspor - Ferencvaros | Fırtına, tur avantajını rakibine bıraktı](https://www.cnnturk.com/spor/futbol/live-mac-ozeti-trabzonspor-ferencvaros-firtina-tur-avantajini-rakibine-birakti-3456922) — CNN Türk Spor · 2026-08-20T23:34:53+00:00 · turnuva=EL · kulüp=Trabzonspor
 - [Fatih Tekke'den Ferencvaros yenilgisi yorumu: 2 kaybımız var](https://www.takvim.com.tr/spor/trabzonspor/2026/08/20/fatih-tekkeden-ferencvaros-yenilgisi-yorumu-2-kaybimiz-var) — Takvim Spor · 2026-08-20T23:08:14+03:00 · turnuva=EL · kulüp=Trabzonspor
 - [Türkiye ülke puanı sıralamasında kaçıncı? İşte UEFA'daki yerimiz (2026-2027 Sezonu)](https://www.takvim.com.tr/galeri/spor/turkiye-ulke-puani-siralamasinda-kacinci-iste-uefadaki-yerimiz-2026-2027-sezonu) — Takvim Spor · 2026-08-20T22:49:52+03:00 · turnuva=CL · kulüp=Fenerbahçe, Beşiktaş, Trabzonspor
 - [Çok güzelsin Kartalım! Beşiktaş Kauno Zalgiris'i 3-0 yendi](https://www.takvim.com.tr/spor/besiktas/2026/08/20/cok-guzelsin-kartalim-besiktas-kauno-zalgirisi-3-0-yendi) — Takvim Spor · 2026-08-20T18:48:57+03:00 · turnuva=EL · kulüp=Beşiktaş
