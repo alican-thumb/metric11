@@ -1,7 +1,7 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-23T02:01:33.411591+00:00
-Toplam ilgili haber: 21
+Üretim zamanı: 2026-08-23T03:16:45.635021+00:00
+Toplam ilgili haber: 20
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
@@ -15,7 +15,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Kauno Zalgiris-Beşiktaş maçını İspanyol hakem Jesus Gil Manzano yönetecek](https://www.aa.com.tr/tr/spor/kauno-zalgiris-besiktas-macini-ispanyol-hakem-jesus-gil-manzano-yonetecek/4034504) — Anadolu Ajansı Spor · 2026-08-22T12:19:27+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [UEFA'dan Halil Umut Meler'e görev](https://www.haberturk.com/uefadan-halil-umut-meler-e-gorev-3907353-spor) — Haberturk Spor · 2026-08-22T10:13:05+00:00 · turnuva=EL · kulüp=—
 - [Kauno Zalgiris-Beşiktaş maçına İspanyol hakem](https://www.hurriyet.com.tr/sporarena/kauno-zalgiris-besiktas-macina-ispanyol-hakem-43281499) — Hürriyet Spor · 2026-08-22T09:30:09+00:00 · turnuva=EL · kulüp=Beşiktaş
-- [Beşiktaş'ta flaş ayrılık iddiası! Emmanuel Agbadou takımdan gönderiliyor mu? - A Spor](https://news.google.com/rss/articles/CBMiuwFBVV95cUxNTmZWQ1lUeXdvUHZhcUptdWxqM2lRTHdZMzByT1dlbThwVTNxenRmSjU0bnM2aF9VZjd3WUVuLUtlMFpxZkRrYVVYSmJjV2RzYWloUm44WUYzQlMtaFVSZ1ozOXZPVzZZVktubXNwdzA0bVlwTmRhcG92T2xmb2tPcWZSYnVhQ0tyWjNTUFF2OTktakEya1FNMm10bEpMeEVib1NNS0xkSW54VG9kTDBMUUhwd2xtRW9weFYw?oc=5) — A Spor · 2026-08-22T07:53:45+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [GÜNÜN MAÇLARI 21 AĞUSTOS 2026: Bugün Kimlerin Maçlar Var? Bugünkü Maçlar Neler? İşte 21 Ağustos Günün Maçları](https://www.cnnturk.com/spor/gunun-maclari-21-agustos-2026-bugun-kimlerin-maclar-var-bugunku-maclar-neler-iste-21-agustos-gunun-maclari-3457313) — CNN Türk Spor · 2026-08-21T17:41:51+00:00 · turnuva=CL · kulüp=—
 - [MAÇ ÖZETİ | Trabzonspor - Ferencvaros | Fırtına, tur avantajını rakibine bıraktı](https://www.cnnturk.com/spor/futbol/live-mac-ozeti-trabzonspor-ferencvaros-firtina-tur-avantajini-rakibine-birakti-3456922) — CNN Türk Spor · 2026-08-20T23:34:53+00:00 · turnuva=EL · kulüp=Trabzonspor
 - [Fatih Tekke'den Ferencvaros yenilgisi yorumu: 2 kaybımız var](https://www.takvim.com.tr/spor/trabzonspor/2026/08/20/fatih-tekkeden-ferencvaros-yenilgisi-yorumu-2-kaybimiz-var) — Takvim Spor · 2026-08-20T23:08:14+03:00 · turnuva=EL · kulüp=Trabzonspor
