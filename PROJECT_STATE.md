@@ -1,6 +1,6 @@
 # Futbol İstihbarat Platformu - Proje Durumu
 
-Son güncelleme: 2026-05-29 (session 11)
+Son güncelleme: 2026-08-23 (site güncel değil şikayeti + artifact kotası fix)
 
 ## Amaç
 
@@ -2627,3 +2627,12 @@ Kullanıcı: "sitemizin trafiği artmıyor bir türlü." Teknik SEO denetimi yap
 - **Sonuç/teşhis:** Kod tarafında büyük bir "bug" yoktu — asıl darboğaz yeni domain + sıfır backlink + Google'ın küçük/güvensiz sitelere uyguladığı kısıtlı crawl bütçesiydi. Telegram'ın artık gerçekten çalışması (dış sinyal/paylaşılabilirlik) ve orphan sayfanın linklenmesi en somut, ölçülebilir aksiyonlardı; SEO'da 3-6+ aylık bir kuyruk beklentisi normal.
 - **Doğrulama:** `python3 -m src.build_product_home` çalıştırıldı, yeni kart HTML'de doğrulandı; py_compile OK. Commit `fc388777` (rebase sonrası `bd3e059b`) main'e push edildi.
 - **Açık kalan (sonraki, ~1 hafta sonra kontrol):** GSC "Sayfayı dizine ekleme" sayısının 7'den yukarı çıkıp çıkmadığına bak; çıkmıyorsa URL Inspection ile ana sayfa + birkaç önemli sayfa için elle "Dizine Eklenmeyi Talep Et" denenebilir.
+
+### 2026-08-23 — "Site güncel değil, transferler geri kalmış" şikayeti: yanlış alarm + gerçek artifact kotası hatası bulundu
+Kullanıcı: site güncel görünmüyor, transferler geri kalmış, mail'de failed bildirimleri var, "GitHub Actions limite takılmış gibi" dedi.
+
+- **Site aslında güncel:** `metric11.com` doğrudan `curl` ile kontrol edildi — `transfer_tracker_2025_2026.html` için `last-modified: 2026-08-23 13:17`, içerik tarihleri bugünü gösteriyor. `tm_squad_changes_2026_2027.json` de aynı gün 13:03'te güncellenmiş. Yerel repo klonunun 53 commit geride kaldığı (son pull'dan beri) görüldü — kullanıcının "geri kalmış" hissi muhtemelen tarayıcı önbelleği ya da spesifik bir oyuncunun piyasada gerçekten hareketsiz olmasından kaynaklı, canlı veri sorunlu değildi.
+- **Gerçek bulunan hata:** `metric11 full network pipeline` (`daily-pipeline.yml`) işi 3 gündür (2026-08-21, 22, 23) "failure" statüsündeydi ama TFF/Transfermarkt/haber toplama + git commit+push adımlarının hepsi sorunsuz tamamlanıyordu. Asıl patlayan adım en sondaki `actions/upload-artifact@v4` — **"Artifact storage quota has been hit"**. Repo private olduğu için free plan'da 500MB artifact kotası var; `gh api .../actions/artifacts` ile kontrol edildiğinde 85 artifact, ~360MB+ birikmiş (90 günlük varsayılan retention ile her gün ~12MB ekleniyordu). Bu adımı hiçbir workflow `download-artifact` ile tüketmiyordu (grep ile doğrulandı) — tamamen gereksizdi, sadece Actions run sayfasında indirilebilir bir yedek zip sağlıyordu.
+- **Düzeltme:** `daily-pipeline.yml`'deki `upload-artifact` adımı tamamen kaldırıldı (commit `b7d48562`, main'e push edildi). Bu, kullanıcının gördüğü "failure" maillerinin kaynağıydı; veri akışına (git push → Vercel deploy) hiç dokunmuyor, sadece kotayı dolduran gereksiz yükleme adımını temizliyor.
+- **Doğrulama:** Değişiklik öncesi diğer workflow dosyaları (`news-refresh.yml`, `refresh.yml`) grep ile tarandı, hiçbiri bu artifact'i beklemiyor. Silinen adım `if: always()` ile çalışıyordu ama commit+push'tan sonra geliyordu, yani kaldırılması pipeline sırasını bozmuyor.
+- **Açık kalan:** Bir sonraki `full network pipeline` çalıştırmasının (yarın ~04:00 UTC) "success" dönüp dönmediğine bakılmalı; ayrıca mevcut 85 birikmiş artifact GitHub arayüzünden elle silinebilir (kota anında boşalır, opsiyonel — 90 gün içinde otomatik de düşecek).
