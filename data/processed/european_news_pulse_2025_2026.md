@@ -1,12 +1,11 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-23T03:16:45.635021+00:00
-Toplam ilgili haber: 20
+Üretim zamanı: 2026-08-23T04:50:38.271028+00:00
+Toplam ilgili haber: 19
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
-- [Lyon Fenerbahçe maçı öncesi ligde hata yapmadı](https://www.aksam.com.tr/spor/lyon-fenerbahce-maci-oncesi-ligde-hata-yapmadi/haber-1692589) — Aksam Spor · 2026-08-23T00:24:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Vedat Muriqi'den Lyon açıklaması!](https://www.haberturk.com/vedat-muriqi-den-olimpik-lyon-aciklamasi-3907448-spor) — Haberturk Spor · 2026-08-22T22:09:24+00:00 · turnuva=CL · kulüp=Fenerbahçe, Konyaspor
 - [Lyon rotasyona rağmen kazandı!](https://www.haberturk.com/toulouse-lyon-0-2-mac-sonucu-3907444-spor) — Haberturk Spor · 2026-08-22T21:21:46+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe Tarfin, Avrupa Ligi Süper Kupa'da mücadele edecek](https://www.aa.com.tr/tr/spor/fenerbahce-tarfin-avrupa-ligi-super-kupada-mucadele-edecek/4034617) — Anadolu Ajansı Spor · 2026-08-22T15:30:18+03:00 · turnuva=EL · kulüp=Fenerbahçe
