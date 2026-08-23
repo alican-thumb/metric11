@@ -1,6 +1,6 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-23T10:40:39.339779+00:00
+Üretim zamanı: 2026-08-23T13:03:40.296141+00:00
 Toplam ilgili haber: 15
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
@@ -13,11 +13,11 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [UEFA'dan Halil Umut Meler'e görev](https://www.aa.com.tr/tr/spor/uefadan-halil-umut-melere-gorev/4034514) — Anadolu Ajansı Spor · 2026-08-22T12:37:09+03:00 · turnuva=EL · kulüp=—
 - [Ferencvaros-Trabzonspor maçını Sloven hakem Obrenovic yönetecek](https://www.aa.com.tr/tr/spor/ferencvaros-trabzonspor-macini-sloven-hakem-obrenovic-yonetecek/4034509) — Anadolu Ajansı Spor · 2026-08-22T12:29:26+03:00 · turnuva=EL · kulüp=Trabzonspor
 - [Kauno Zalgiris-Beşiktaş maçını İspanyol hakem Jesus Gil Manzano yönetecek](https://www.aa.com.tr/tr/spor/kauno-zalgiris-besiktas-macini-ispanyol-hakem-jesus-gil-manzano-yonetecek/4034504) — Anadolu Ajansı Spor · 2026-08-22T12:19:27+03:00 · turnuva=EL · kulüp=Beşiktaş
-- [Kauno Zalgiris-Beşiktaş maçına İspanyol hakem](https://www.hurriyet.com.tr/sporarena/kauno-zalgiris-besiktas-macina-ispanyol-hakem-43281499) — Hürriyet Spor · 2026-08-22T09:30:09+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Türkiye ülke puanı sıralamasında kaçıncı? İşte UEFA'daki yerimiz (2026-2027 Sezonu)](https://www.takvim.com.tr/galeri/spor/turkiye-ulke-puani-siralamasinda-kacinci-iste-uefadaki-yerimiz-2026-2027-sezonu) — Takvim Spor · 2026-08-20T22:49:52+03:00 · turnuva=CL · kulüp=Fenerbahçe, Beşiktaş, Trabzonspor
 - [Çok güzelsin Kartalım! Beşiktaş Kauno Zalgiris'i 3-0 yendi](https://www.takvim.com.tr/spor/besiktas/2026/08/20/cok-guzelsin-kartalim-besiktas-kauno-zalgirisi-3-0-yendi) — Takvim Spor · 2026-08-20T18:48:57+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Fırsat elimizden kaçtı! Trabzonspor Ferencvaros'a 1-0 yenildi](https://www.takvim.com.tr/spor/trabzonspor/2026/08/20/firsat-elimizden-kacti-trabzonspor-ferencvarosa-1-0-yenildi) — Takvim Spor · 2026-08-20T18:46:49+03:00 · turnuva=EL · kulüp=Trabzonspor
 - [Fenerbahçe’de Asensio ve Lukaku gelişmesi!](https://www.takvim.com.tr/spor/fenerbahce/2026/08/20/fenerbahcede-asensio-ve-lukaku-gelismesi) — Takvim Spor · 2026-08-20T15:18:33+03:00 · turnuva=— · kulüp=Fenerbahçe, Konyaspor, Gençlerbirliği
 - [Fenerbahçe'de Ferdi Kadıoğlu sesleri! Geri dönüş ihtimali](https://www.takvim.com.tr/spor/fenerbahce/2026/08/20/fenerbahcede-ferdi-kadioglu-sesleri-geri-donus-ihtimali) — Takvim Spor · 2026-08-20T12:23:47+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Miguel Cardoso ve Elisha Owusu ile resmî sözleşme imzaladık.](https://erzurumsporfk.org/2026/08/19/miguel-cardoso-ve-elisha-owusu-ile-resmi-sozlesme-imzaladik/) — Erzurumspor FK Resmi Web · 2026-08-19T20:45:50+03:00 · turnuva=EL · kulüp=Kayserispor
+- [Fenerbahçe'de Şampiyonlar Ligi Hesabı! Yerli Transfer İçin Hayal - Gazeteniz Olsun](https://news.google.com/rss/articles/CBMiogFBVV95cUxPMVVOZVFlNWFRZkIyY0ltNWNYTTR5YWU5eTlyRWs0dFRabjlnNVBSSzFEODRyNHJMMVBFN1kzV05qOUFWaXF6NGVsMzBWNnZoVFQxR3Bxc1g2RDFaUl9uY3JqRjdfVDdJQTUyTmloTUREOEZGWEJsZXZRa1ItVERKWVJGY25fTm01QUxaeTZfM3NIcldhTkR2SnRHRjE1Q19ra3c?oc=5) — Gazeteniz Olsun · 2026-08-18T16:03:28+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Temsilcimiz Fenerbahçe, play-off turunda Lyon’a karşı Kadıköy’de favori… İşte Misli’de Günün En Çok Oynanan Maçları](https://www.hurriyet.com.tr/sporarena/temsilcimiz-fenerbahce-play-off-turunda-lyona-karsi-kadikoyde-favori-iste-mislide-gunun-en-cok-oynanan-maclari-43277034) — Hürriyet Spor · 2026-08-18T10:20:31+00:00 · turnuva=— · kulüp=Fenerbahçe
