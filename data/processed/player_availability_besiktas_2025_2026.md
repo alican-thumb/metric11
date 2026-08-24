@@ -11,7 +11,7 @@
 
 ## Güncel Haber/Sakat-Cezalı Bağlamı
 
-- INJURED | None | kaynak=news_intelligence | güven=HIGH
+- INJURED | None | kaynak=news_intelligence | güven=MEDIUM
 
 ## Maç Bazlı Eksikler
 

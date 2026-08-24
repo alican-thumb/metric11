@@ -1,12 +1,12 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-24T10:53:37.856574+00:00
-Toplam ilgili haber: 23
+Üretim zamanı: 2026-08-24T13:14:15.342337+00:00
+Toplam ilgili haber: 21
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
-- [Olimpik Lyon-Fenerbahçe maç kadrosu ve muhtemel 11'ler belli oldu!](https://www.aksam.com.tr/trend/olimpik-lyon-fenerbahce-mac-kadrosu-ve-muhtemel-11ler-belli-oldu/haber-1692930) — Aksam Spor · 2026-08-24T13:35:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [UEFA Başkanı Aleksander Ceferin'den gündem olan açıklama!](https://www.fotomac.com.tr/futbol/2026/08/24/uefa-baskani-aleksander-ceferinden-gundem-olan-aciklama) — Fotomaç · 2026-08-24T14:59:19+03:00 · turnuva=— · kulüp=—
 - [Lyon - Fenerbahçe maçına İtalyan hakem](https://www.cnnturk.com/spor/futbol/lyon-fenerbahce-macina-italyan-hakem-3458204) — CNN Türk Spor · 2026-08-24T12:17:00+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Avrupa Ligi Süper Kupa'da mücadele edecek takımlar belli oldu](https://www.aa.com.tr/tr/spor/avrupa-ligi-super-kupada-mucadele-edecek-takimlar-belli-oldu/4035598) — Anadolu Ajansı Spor · 2026-08-24T11:42:34+03:00 · turnuva=EL · kulüp=Fenerbahçe
 - [Olimpik Lyon-Fenerbahçe maçını, İtalyan hakem Maurizio Mariani yönetecek](https://www.aa.com.tr/tr/spor/olimpik-lyon-fenerbahce-macini-italyan-hakem-maurizio-mariani-yonetecek/4035582) — Anadolu Ajansı Spor · 2026-08-24T11:32:59+03:00 · turnuva=CL · kulüp=Fenerbahçe
@@ -16,7 +16,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [UEFA Başkanı Ceferin'den FIFA Başkanlığı için karar!](https://www.sabah.com.tr/spor/futbol/2026/08/24/uefa-baskani-ceferinden-fifa-baskanligi-icin-karar) — Sabah Spor · 2026-08-24T10:55:08+03:00 · turnuva=— · kulüp=—
 - [UEFA Başkanı Ceferin, FIFA Başkanlığı'na aday olmayacağını duyurdu](https://www.aa.com.tr/tr/spor/uefa-baskani-ceferin-fifa-baskanligina-aday-olmayacagini-duyurdu/4035501) — Anadolu Ajansı Spor · 2026-08-24T10:42:55+03:00 · turnuva=— · kulüp=—
 - [UEFA Başkanı Ceferin, FIFA Başkanlığı'na aday olmayacağını duyurdu](https://www.hurriyet.com.tr/sporarena/uefa-baskani-ceferin-fifa-baskanligina-aday-olmayacagini-duyurdu-43283362) — Hürriyet Spor · 2026-08-24T10:03:22+00:00 · turnuva=— · kulüp=—
-- [Şampiyonlar Ligi'nde play-off turu rövanş maçları yarın!](https://www.sabah.com.tr/spor/futbol/2026/08/24/sampiyonlar-liginde-play-off-turu-rovans-maclari-yarin) — Sabah Spor · 2026-08-24T09:47:10+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Devler Ligi'nde play-off rövanşları başlıyor!](https://www.haberturk.com/sampiyonlar-ligi-nde-play-off-rovanslari-basliyor-3907648-spor) — Haberturk Spor · 2026-08-24T09:46:10+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Devler Ligi'ne giden son gemi kalkıyor](https://www.cnnturk.com/spor/futbol/devler-ligine-giden-son-gemi-kalkiyor-3458117) — CNN Türk Spor · 2026-08-24T09:45:40+00:00 · turnuva=CL · kulüp=—
 - [UEFA Şampiyonlar Ligi'nde play-off turu rövanş maçları yarın başlayacak](https://www.aa.com.tr/tr/spor/uefa-sampiyonlar-liginde-play-off-turu-rovans-maclari-yarin-baslayacak/4035439) — Anadolu Ajansı Spor · 2026-08-24T09:42:39+03:00 · turnuva=CL · kulüp=Fenerbahçe
@@ -26,6 +25,5 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [UEFA Şampiyonlar Ligi'nde play-off turu rövanş maçları başlayacak](https://www.hurriyet.com.tr/sporarena/uefa-sampiyonlar-liginde-play-off-turu-rovans-maclari-baslayacak-43283147) — Hürriyet Spor · 2026-08-24T07:41:17+00:00 · turnuva=CL · kulüp=—
 - [Fenerbahçe'de, Lyon maçı hazırlıkları başladı](https://www.cnnturk.com/spor/futbol/fenerbahcede-lyon-maci-hazirliklari-basladi-3457925) — CNN Türk Spor · 2026-08-23T17:08:23+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe, Lyon maçı mesaisine başladı!](https://www.hurriyet.com.tr/sporarena/fenerbahce-lyon-maci-mesaisine-basladi-43282636) — Hürriyet Spor · 2026-08-23T14:09:00+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Fenerbahçe-Konyaspor maçı sonrası Lyon göndermesi: Asıl galibiyet orada!](https://www.hurriyet.com.tr/sporarena/fenerbahce-konyaspor-maci-sonrasi-lyon-gondermesi-asil-galibiyet-orada-43282123) — Hürriyet Spor · 2026-08-23T04:48:00+00:00 · turnuva=CL · kulüp=Fenerbahçe, Konyaspor
 - [Miguel Cardoso ve Elisha Owusu ile resmî sözleşme imzaladık.](https://erzurumsporfk.org/2026/08/19/miguel-cardoso-ve-elisha-owusu-ile-resmi-sozlesme-imzaladik/) — Erzurumspor FK Resmi Web · 2026-08-19T20:45:50+03:00 · turnuva=EL · kulüp=Kayserispor
 - [Fenerbahçe'de Şampiyonlar Ligi Hesabı! Yerli Transfer İçin Hayal - Gazeteniz Olsun](https://news.google.com/rss/articles/CBMiogFBVV95cUxPMVVOZVFlNWFRZkIyY0ltNWNYTTR5YWU5eTlyRWs0dFRabjlnNVBSSzFEODRyNHJMMVBFN1kzV05qOUFWaXF6NGVsMzBWNnZoVFQxR3Bxc1g2RDFaUl9uY3JqRjdfVDdJQTUyTmloTUREOEZGWEJsZXZRa1ItVERKWVJGY25fTm01QUxaeTZfM3NIcldhTkR2SnRHRjE1Q19ra3c?oc=5) — Gazeteniz Olsun · 2026-08-18T16:03:28+00:00 · turnuva=CL · kulüp=Fenerbahçe
