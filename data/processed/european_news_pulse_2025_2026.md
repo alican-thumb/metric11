@@ -1,11 +1,15 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-24T04:58:02.116497+00:00
-Toplam ilgili haber: 7
+Üretim zamanı: 2026-08-24T07:21:18.551715+00:00
+Toplam ilgili haber: 11
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [Devler Ligi'nde play-off turu rövanş maçları başlıyor! İşte program...](https://www.aksam.com.tr/spor/devler-liginde-play-off-turu-rovans-maclari-basliyor-iste-program/haber-1692875) — Aksam Spor · 2026-08-24T09:51:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Şampiyonlar Ligi'nde play-off turu rövanş maçları yarın!](https://www.sabah.com.tr/spor/futbol/2026/08/24/sampiyonlar-liginde-play-off-turu-rovans-maclari-yarin) — Sabah Spor · 2026-08-24T09:47:10+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Devler Ligi'ne giden son gemi kalkıyor](https://www.cnnturk.com/spor/futbol/devler-ligine-giden-son-gemi-kalkiyor-3458117) — CNN Türk Spor · 2026-08-24T09:45:40+00:00 · turnuva=CL · kulüp=—
+- [UEFA Şampiyonlar Ligi'nde play-off turu rövanş maçları yarın başlayacak](https://www.aa.com.tr/tr/spor/uefa-sampiyonlar-liginde-play-off-turu-rovans-maclari-yarin-baslayacak/4035439) — Anadolu Ajansı Spor · 2026-08-24T09:42:39+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe'de, Lyon maçı hazırlıkları başladı](https://www.cnnturk.com/spor/futbol/fenerbahcede-lyon-maci-hazirliklari-basladi-3457925) — CNN Türk Spor · 2026-08-23T17:08:23+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe, Lyon maçı mesaisine başladı!](https://www.hurriyet.com.tr/sporarena/fenerbahce-lyon-maci-mesaisine-basladi-43282636) — Hürriyet Spor · 2026-08-23T14:09:00+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe-Konyaspor maçı sonrası Lyon göndermesi: Asıl galibiyet orada!](https://www.hurriyet.com.tr/sporarena/fenerbahce-konyaspor-maci-sonrasi-lyon-gondermesi-asil-galibiyet-orada-43282123) — Hürriyet Spor · 2026-08-23T04:48:00+00:00 · turnuva=CL · kulüp=Fenerbahçe, Konyaspor
