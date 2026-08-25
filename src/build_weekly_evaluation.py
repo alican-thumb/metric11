@@ -40,6 +40,29 @@ def _actual_outcome(score: str | None) -> str | None:
     return "draw"
 
 
+def _prediction_confidence(m: dict) -> str:
+    """Maç oynanmadan ÖNCEKİ model güven etiketini (HIGH/MEDIUM/LOW), o anki
+    home/draw/away olasılıklarından yeniden hesaplar.
+
+    `data_confidence` alanı oynanmış maçlarda görüntüleme amacıyla "PLAYED"
+    ile eziliyor (bkz. build_season_fixture_predictions.py), bu yüzden gerçek
+    güven etiketi orada saklı değil — ama olasılıkların kendisi değişmediği
+    için `model_league_predictions.confidence_label` ile AYNI eşiklerle
+    burada güvenilir şekilde yeniden türetilebilir.
+    """
+    probs = sorted([
+        m.get("home_win_probability") or 0.0,
+        m.get("draw_probability") or 0.0,
+        m.get("away_win_probability") or 0.0,
+    ], reverse=True)
+    top, margin = probs[0], probs[0] - probs[1]
+    if top >= 0.52 and margin >= 0.16:
+        return "HIGH"
+    if top >= 0.43 and margin >= 0.08:
+        return "MEDIUM"
+    return "LOW"
+
+
 def _evaluate_match(m: dict) -> dict | None:
     if not m.get("is_played"):
         return None
@@ -58,6 +81,7 @@ def _evaluate_match(m: dict) -> dict | None:
         "raw_predicted": m.get("raw_predicted"),
         "correct": predicted == actual,
         "data_confidence": m.get("data_confidence"),
+        "prediction_confidence": _prediction_confidence(m),
         "home_win_probability": m.get("home_win_probability"),
         "draw_probability": m.get("draw_probability"),
         "away_win_probability": m.get("away_win_probability"),
@@ -77,7 +101,7 @@ def _summarize(evaluations: list[dict]) -> dict:
     correct = sum(1 for e in evaluations if e["correct"])
     actual_draws = [e for e in evaluations if e["actual"] == "draw"]
     draws_caught = sum(1 for e in actual_draws if e["predicted"] == "draw")
-    high_conf = [e for e in evaluations if e.get("data_confidence") == "HIGH"]
+    high_conf = [e for e in evaluations if e.get("prediction_confidence") == "HIGH"]
     high_conf_correct = sum(1 for e in high_conf if e["correct"])
     return {
         "evaluated_matches": total,
@@ -159,7 +183,7 @@ def build_markdown(payload: dict) -> str:
             mark = "✅" if e["correct"] else "❌"
             lines.append(
                 f"| {e['home_team']} - {e['away_team']} | {e['actual_score']} | "
-                f"{_PICK_LABEL.get(e['predicted'], e['predicted'])} | {mark} | {e['data_confidence']} |"
+                f"{_PICK_LABEL.get(e['predicted'], e['predicted'])} | {mark} | {e['prediction_confidence']} |"
             )
         lines.append("")
     return "\n".join(lines) + "\n"
