@@ -1,7 +1,7 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-25T03:13:59.434464+00:00
-Toplam ilgili haber: 14
+Üretim zamanı: 2026-08-25T04:52:59.258625+00:00
+Toplam ilgili haber: 13
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
@@ -18,5 +18,4 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Lyon-Fenerbahçe maçının hakemi belli oldu](https://www.hurriyet.com.tr/sporarena/lyon-fenerbahce-macinin-hakemi-belli-oldu-43283231) — Hürriyet Spor · 2026-08-24T08:22:17+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [UEFA Şampiyonlar Ligi'nde play-off turu rövanş maçları başlayacak](https://www.hurriyet.com.tr/sporarena/uefa-sampiyonlar-liginde-play-off-turu-rovans-maclari-baslayacak-43283147) — Hürriyet Spor · 2026-08-24T07:41:17+00:00 · turnuva=CL · kulüp=—
 - [Fenerbahçe'de, Lyon maçı hazırlıkları başladı](https://www.cnnturk.com/spor/futbol/fenerbahcede-lyon-maci-hazirliklari-basladi-3457925) — CNN Türk Spor · 2026-08-23T17:08:23+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Miguel Cardoso ve Elisha Owusu ile resmî sözleşme imzaladık.](https://erzurumsporfk.org/2026/08/19/miguel-cardoso-ve-elisha-owusu-ile-resmi-sozlesme-imzaladik/) — Erzurumspor FK Resmi Web · 2026-08-19T20:45:50+03:00 · turnuva=EL · kulüp=Kayserispor
 - [Fenerbahçe'de Şampiyonlar Ligi Hesabı! Yerli Transfer İçin Hayal - Gazeteniz Olsun](https://news.google.com/rss/articles/CBMiogFBVV95cUxPMVVOZVFlNWFRZkIyY0ltNWNYTTR5YWU5eTlyRWs0dFRabjlnNVBSSzFEODRyNHJMMVBFN1kzV05qOUFWaXF6NGVsMzBWNnZoVFQxR3Bxc1g2RDFaUl9uY3JqRjdfVDdJQTUyTmloTUREOEZGWEJsZXZRa1ItVERKWVJGY25fTm01QUxaeTZfM3NIcldhTkR2SnRHRjE1Q19ra3c?oc=5) — Gazeteniz Olsun · 2026-08-18T16:03:28+00:00 · turnuva=CL · kulüp=Fenerbahçe
