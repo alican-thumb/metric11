@@ -1,6 +1,6 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-24T22:44:30.525843+00:00
+Üretim zamanı: 2026-08-25T01:54:02.138782+00:00
 Toplam ilgili haber: 15
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
@@ -16,7 +16,7 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [UEFA Başkanı Ceferin, FIFA Başkanlığı'na aday olmayacağını duyurdu](https://www.aa.com.tr/tr/spor/uefa-baskani-ceferin-fifa-baskanligina-aday-olmayacagini-duyurdu/4035501) — Anadolu Ajansı Spor · 2026-08-24T10:42:55+03:00 · turnuva=— · kulüp=—
 - [UEFA Başkanı Ceferin, FIFA Başkanlığı'na aday olmayacağını duyurdu](https://www.hurriyet.com.tr/sporarena/uefa-baskani-ceferin-fifa-baskanligina-aday-olmayacagini-duyurdu-43283362) — Hürriyet Spor · 2026-08-24T10:03:22+00:00 · turnuva=— · kulüp=—
 - [Devler Ligi'ne giden son gemi kalkıyor](https://www.cnnturk.com/spor/futbol/devler-ligine-giden-son-gemi-kalkiyor-3458117) — CNN Türk Spor · 2026-08-24T09:45:40+00:00 · turnuva=CL · kulüp=—
-- [UEFA Şampiyonlar Ligi'nde play-off turu rövanş maçları yarın başlayacak](https://www.aa.com.tr/tr/spor/uefa-sampiyonlar-liginde-play-off-turu-rovans-maclari-yarin-baslayacak/4035439) — Anadolu Ajansı Spor · 2026-08-24T09:42:39+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [UEFA Şampiyonlar Ligi'nde play-off turu rövanş maçları başlayacak](https://www.aa.com.tr/tr/spor/uefa-sampiyonlar-liginde-play-off-turu-rovans-maclari-baslayacak/4035439) — Anadolu Ajansı Spor · 2026-08-24T09:42:39+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Lyon-Fenerbahçe maçının hakemi belli oldu](https://www.hurriyet.com.tr/sporarena/lyon-fenerbahce-macinin-hakemi-belli-oldu-43283231) — Hürriyet Spor · 2026-08-24T08:22:17+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [UEFA Şampiyonlar Ligi'nde play-off turu rövanş maçları başlayacak](https://www.hurriyet.com.tr/sporarena/uefa-sampiyonlar-liginde-play-off-turu-rovans-maclari-baslayacak-43283147) — Hürriyet Spor · 2026-08-24T07:41:17+00:00 · turnuva=CL · kulüp=—
 - [Fenerbahçe'de, Lyon maçı hazırlıkları başladı](https://www.cnnturk.com/spor/futbol/fenerbahcede-lyon-maci-hazirliklari-basladi-3457925) — CNN Türk Spor · 2026-08-23T17:08:23+00:00 · turnuva=CL · kulüp=Fenerbahçe
