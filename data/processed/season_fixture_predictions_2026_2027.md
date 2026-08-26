@@ -1,8 +1,8 @@
 # 2026-27 Süper Lig Fikstürü ve Tahminleri
 
-Üretim zamanı: 2026-08-26T02:00:21.258429
+Üretim zamanı: 2026-08-26T04:53:00.516373
 Toplam hafta: 34, toplam maç: 306
-Not: Tahminler 2025-26 sezonunun tamamı ve 2026-27'de şimdiye kadar oynanmış (17 maç) sonuçlardan türetilen güncel takım formu/Elo/transfer durumuna dayanır; sezon ilerledikçe bu sayfa her gün otomatik olarak yeniden hesaplanır, statik bir anlık görüntü değildir.
+Not: Tahminler 2025-26 sezonunun tamamı ve 2026-27'de şimdiye kadar oynanmış (18 maç) sonuçlardan türetilen güncel takım formu/Elo/transfer durumuna dayanır; sezon ilerledikçe bu sayfa her gün otomatik olarak yeniden hesaplanır, statik bir anlık görüntü değildir.
 Yeni takımlar (sınırlı veri): AMED SPORTİF FAALİYETLER, ERZURUMSPOR FK, ÇORUM FK
 
 ## Hafta 1
@@ -27,17 +27,17 @@ Yeni takımlar (sınırlı veri): AMED SPORTİF FAALİYETLER, ERZURUMSPOR FK, Ç
 - 23.08.2026 19:00 | EYÜPSPOR 0 - 1 GAZİANTEP FUTBOL KULÜBÜ A.Ş. | OYNANDI
 - 23.08.2026 21:30 | CORENDON ALANYASPOR 1 - 0 BEŞİKTAŞ A.Ş. | OYNANDI
 - 23.08.2026 21:30 | GÖZTEPE A.Ş. 0 - 1 GENÇLERBİRLİĞİ | OYNANDI
-- 24.08.2026 21:30 | KOCAELİSPOR - AMED SPORTİF FAALİYETLER | tahmin=Dep (Ev %6 · X %15 · Dep %78) | güven=LOW_NEW_TEAM
+- 24.08.2026 21:30 | KOCAELİSPOR 2 - 0 AMED SPORTİF FAALİYETLER | OYNANDI
 
 ## Hafta 3
 
 - 28.08.2026 21:30 | GENÇLERBİRLİĞİ - ERZURUMSPOR FK | tahmin=Ev (Ev %81 · X %13 · Dep %6) | güven=LOW_NEW_TEAM
-- 29.08.2026 19:00 | TÜMOSAN KONYASPOR - KOCAELİSPOR | tahmin=Ev (Ev %44 · X %26 · Dep %30) | güven=MEDIUM
+- 29.08.2026 19:00 | TÜMOSAN KONYASPOR - KOCAELİSPOR | tahmin=Ev (Ev %42 · X %26 · Dep %32) | güven=LOW
 - 29.08.2026 21:30 | GAZİANTEP FUTBOL KULÜBÜ A.Ş. - ÇAYKUR RİZESPOR A.Ş. | tahmin=Dep (Ev %40 · X %21 · Dep %40) | güven=LOW
 - 29.08.2026 21:30 | GALATASARAY A.Ş. - GÖZTEPE A.Ş. | tahmin=Ev (Ev %56 · X %16 · Dep %28) | güven=HIGH
 - 30.08.2026 19:00 | EYÜPSPOR - CORENDON ALANYASPOR | tahmin=Ev (Ev %46 · X %26 · Dep %27) | güven=MEDIUM
 - 30.08.2026 21:30 | İSTANBUL BAŞAKŞEHİR FK - KASIMPAŞA A.Ş. | tahmin=Ev (Ev %63 · X %20 · Dep %17) | güven=HIGH
 - 30.08.2026 21:30 | SAMSUNSPOR A.Ş. - FENERBAHÇE A.Ş. | tahmin=Dep (Ev %30 · X %26 · Dep %44) | güven=MEDIUM
-- 31.08.2026 21:30 | AMED SPORTİF FAALİYETLER - TRABZONSPOR A.Ş. | tahmin=Ev (Ev %78 · X %14 · Dep %7) | güven=LOW_NEW_TEAM
+- 31.08.2026 21:30 | AMED SPORTİF FAALİYETLER - TRABZONSPOR A.Ş. | tahmin=Ev (Ev %48 · X %25 · Dep %27) | güven=LOW_NEW_TEAM
 - 31.08.2026 21:30 | BEŞİKTAŞ A.Ş. - ARCA ÇORUM FK | tahmin=Ev (Ev %58 · X %22 · Dep %20) | güven=HIGH
 

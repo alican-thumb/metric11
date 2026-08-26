@@ -4,12 +4,12 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 
 ## Genel Karne
 
-- Değerlendirilen maç: **17**
-- İsabet: **4/17** (%24)
+- Değerlendirilen maç: **18**
+- İsabet: **4/18** (%22)
 - Beraberlik yakalama: **0/4** (%0)
-- Yüksek güvenli maç isabeti: **3/6** (%50)
+- Yüksek güvenli maç isabeti: **3/7** (%43)
 
-## Hafta 2 — 2/8 isabet (%25)
+## Hafta 2 — 2/9 isabet (%22)
 
 | Maç | Skor | Tahmin | Sonuç | Güven |
 | --- | --- | --- | --- | --- |
@@ -21,6 +21,7 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 | EYÜPSPOR - GAZİANTEP FUTBOL KULÜBÜ A.Ş. | 0 - 1 | Ev | ❌ | MEDIUM |
 | CORENDON ALANYASPOR - BEŞİKTAŞ A.Ş. | 1 - 0 | Deplasman | ❌ | MEDIUM |
 | GÖZTEPE A.Ş. - GENÇLERBİRLİĞİ | 0 - 1 | Ev | ❌ | MEDIUM |
+| KOCAELİSPOR - AMED SPORTİF FAALİYETLER | 2 - 0 | Deplasman | ❌ | HIGH |
 
 ## Hafta 1 — 2/9 isabet (%22)
 
