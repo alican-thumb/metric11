@@ -1,13 +1,16 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-25T22:45:34.610287+00:00
-Toplam ilgili haber: 49
+Üretim zamanı: 2026-08-26T02:00:21.846339+00:00
+Toplam ilgili haber: 52
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [İşte Şampiyonlar Ligi bileti alan takımlar...](https://www.aksam.com.tr/spor/iste-sampiyonlar-ligi-bileti-alan-takimlar/haber-1693352) — Aksam Spor · 2026-08-26T01:43:00+03:00 · turnuva=CL · kulüp=—
+- [UEFA Şampiyonlar Ligi'nde şok skorlar! Tur atlayan 3 takım belli oldu...](https://www.sabah.com.tr/spor/futbol/2026/08/25/uefa-sampiyonlar-liginde-sok-skorlar-tur-atlayan-3-takim-belli-oldu) — Sabah Spor · 2026-08-26T01:39:49+03:00 · turnuva=CL · kulüp=—
 - [UEFA Şampiyonlar Ligi'nde play-off turu rövanş maçları başladı](https://www.aa.com.tr/tr/spor/uefa-sampiyonlar-liginde-play-off-turu-rovans-maclari-basladi/4037504) — Anadolu Ajansı Spor · 2026-08-26T00:44:25+03:00 · turnuva=CL · kulüp=—
 - [Fenerbahçe, Lyon maçına hazır!](https://www.sabah.com.tr/spor/futbol/2026/08/25/fenerbahce-lyon-macina-hazir) — Sabah Spor · 2026-08-25T23:42:24+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Şampiyonlar Ligi'nde gecenin sonuçları](https://www.hurriyet.com.tr/sporarena/sampiyonlar-liginde-gecenin-sonuclari-43285133) — Hürriyet Spor · 2026-08-25T23:15:28+00:00 · turnuva=CL · kulüp=—
 - [Azerbaycan temsilcisi Sabah'tan tarihi başarı! İsrail takımını yenerek Devler Ligi'ne kaldılar](https://www.fotomac.com.tr/sampiyonlarligi/2026/08/25/azerbaycan-temsilcisi-sabahtan-tarihi-basari-israil-takimini-yenerek-devler-ligine-kaldilar) — Fotomaç · 2026-08-25T22:52:35+03:00 · turnuva=CL · kulüp=—
 - [Trabzonspor, Ferencvaros'a hazırlanıyor! Fabinho ilk antrenmanına çıktı...](https://www.sabah.com.tr/spor/futbol/2026/08/25/trabzonspor-ferencvarosa-hazirlaniyor-fabinho-ilk-antrenmanina-cikti) — Sabah Spor · 2026-08-25T22:01:01+03:00 · turnuva=EL · kulüp=Trabzonspor
 - [LYON - FENERBAHÇE MAÇI NE ZAMAN? Lyon - Fenerbahçe Rövanş Maçı Hangi Kanalda, Saat Kaçta? Şampiyonlar Ligi İçin Kritik Gece](https://www.cnnturk.com/spor/futbol/lyon-fenerbahce-maci-ne-zaman-lyon-fenerbahce-rovans-maci-hangi-kanalda-saat-kacta-sampiyonlar-ligi-icin-kritik-gece-3458926) — CNN Türk Spor · 2026-08-25T21:41:04+00:00 · turnuva=CL · kulüp=Fenerbahçe
@@ -43,6 +46,3 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Fenerbahçe, Avrupa'da 306. maçına çıkacak](https://www.aa.com.tr/tr/spor/fenerbahce-avrupada-306-macina-cikacak/4036561) — Anadolu Ajansı Spor · 2026-08-25T11:03:23+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe, Lyon deplasmanına 2 eksikle çıkacak](https://www.cnnturk.com/spor/futbol/fenerbahce-lyon-deplasmanina-2-eksikle-cikacak-3458604) — CNN Türk Spor · 2026-08-25T10:03:32+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fransa’da Fenerbahçe maçı öncesi Türk korkusu: Beşiktaş kabusunu tekrar yaşamayalım](https://www.hurriyet.com.tr/sporarena/fransada-fenerbahce-maci-oncesi-turk-korkusu-besiktas-kabusunu-tekrar-yasamayalim-43284387) — Hürriyet Spor · 2026-08-25T10:02:33+00:00 · turnuva=CL · kulüp=Fenerbahçe, Beşiktaş
-- [Fenerbahçe, UEFA Şampiyonlar Ligi için sahaya çıkacak](https://www.aa.com.tr/tr/spor/fenerbahce-uefa-sampiyonlar-ligi-icin-sahaya-cikacak/4036451) — Anadolu Ajansı Spor · 2026-08-25T09:50:42+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Fenerbahçe'nin Lyon kadrosunda 4 eksik!](https://www.haberturk.com/fenerbahce-nin-lyon-maci-kamp-kadrosu-belli-oldu-4-eksik-3907952-spor) — Haberturk Spor · 2026-08-25T09:49:09+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Fenerbahçe'nin Lyon maçı kamp kadrosu açıklandı!](https://www.hurriyet.com.tr/sporarena/fenerbahcenin-lyon-maci-kamp-kadrosu-aciklandi-43284436) — Hürriyet Spor · 2026-08-25T09:40:29+00:00 · turnuva=CL · kulüp=Fenerbahçe
