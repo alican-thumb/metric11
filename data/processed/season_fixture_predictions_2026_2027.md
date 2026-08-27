@@ -1,6 +1,6 @@
 # 2026-27 Süper Lig Fikstürü ve Tahminleri
 
-Üretim zamanı: 2026-08-26T20:04:15.964314
+Üretim zamanı: 2026-08-27T09:44:36.248579
 Toplam hafta: 34, toplam maç: 306
 Not: Tahminler 2025-26 sezonunun tamamı ve 2026-27'de şimdiye kadar oynanmış (18 maç) sonuçlardan türetilen güncel takım formu/Elo/transfer durumuna dayanır; sezon ilerledikçe bu sayfa her gün otomatik olarak yeniden hesaplanır, statik bir anlık görüntü değildir.
 Yeni takımlar (sınırlı veri): AMED SPORTİF FAALİYETLER, ERZURUMSPOR FK, ÇORUM FK
@@ -34,7 +34,7 @@ Yeni takımlar (sınırlı veri): AMED SPORTİF FAALİYETLER, ERZURUMSPOR FK, Ç
 - 28.08.2026 21:30 | GENÇLERBİRLİĞİ - ERZURUMSPOR FK | tahmin=Ev (Ev %81 · X %13 · Dep %6) | güven=LOW_NEW_TEAM
 - 29.08.2026 19:00 | TÜMOSAN KONYASPOR - KOCAELİSPOR | tahmin=Ev (Ev %42 · X %26 · Dep %32) | güven=LOW
 - 29.08.2026 21:30 | GAZİANTEP FUTBOL KULÜBÜ A.Ş. - ÇAYKUR RİZESPOR A.Ş. | tahmin=Dep (Ev %40 · X %21 · Dep %40) | güven=LOW
-- 29.08.2026 21:30 | GALATASARAY A.Ş. - GÖZTEPE A.Ş. | tahmin=Ev (Ev %56 · X %16 · Dep %27) | güven=HIGH
+- 29.08.2026 21:30 | GALATASARAY A.Ş. - GÖZTEPE A.Ş. | tahmin=Ev (Ev %56 · X %16 · Dep %28) | güven=HIGH
 - 30.08.2026 19:00 | EYÜPSPOR - CORENDON ALANYASPOR | tahmin=Ev (Ev %46 · X %26 · Dep %27) | güven=MEDIUM
 - 30.08.2026 21:30 | İSTANBUL BAŞAKŞEHİR FK - KASIMPAŞA A.Ş. | tahmin=Ev (Ev %63 · X %20 · Dep %17) | güven=HIGH
 - 30.08.2026 21:30 | SAMSUNSPOR A.Ş. - FENERBAHÇE A.Ş. | tahmin=Dep (Ev %30 · X %26 · Dep %44) | güven=MEDIUM
