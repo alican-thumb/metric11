@@ -13,7 +13,7 @@
 | player_profiles | tff_transfermarkt_in_scope_match_rate_pct | matched=592, in_scope=626, pct=94.6 | ✓ | Düşük | Snapshot kapsamındaki eşleşmeyen oyuncular alias/transfer inceleme kuyruğunda doğrulanmadan piyasa değeri veya pozisyon olarak kullanılmamalı. |
 | player_profiles | manual_alias_pending_network_verification | 4 | ⚠ İzle | Yüksek | Operasyonda kullanılan manuel pozisyon ve piyasa değeri eşlemeleri Transfermarkt profil bağlantısıyla doğrulanana kadar teyit bekliyor olarak gösterilmeli. |
 | scouting | unmatched_players_blocking_scout_review | 0 | ✓ | Düşük | Scout kuyruğunu bloke eden oyuncular için aynı kulüp Transfermarkt adı veya resmi profil doğrulanmalı; doğrulanmadan rol önerisi yayınlanmamalı. |
-| pipeline | daily_pipeline_last_run_age_days | age_days=0, failed_count=0, include_network=False | ✓ | Düşük | Tahmin, haber ve scout ekranları için günlük pipeline en fazla 1 gün eski olmalı; 3 günü aşarsa veri tazeliği kırmızıya alınmalı. |
+| pipeline | daily_pipeline_last_run_age_days | age_days=0, failed_count=0, include_network=True | ✓ | Düşük | Tahmin, haber ve scout ekranları için günlük pipeline en fazla 1 gün eski olmalı; 3 günü aşarsa veri tazeliği kırmızıya alınmalı. |
 | sources | source_watchlist_daily_coverage | sources=14, daily=10, connected_or_partial=6, high_risk=1 | ✓ | Düşük | Günlük izlenecek kaynak sayısı ve bağlı kaynak kapsamı düşükse transfer/sakatlık/kadro haberleri modele geç yansır. |
 | model | besiktas_display_prediction_accuracy_pct | correct=19, total=29, pct=65.5 | ⚠ İzle | Yüksek | Ekran ayarı aynı sezonda geliştirildi; yeni sezon veya ayrılmış sezonda sabit kurallarla doğrulanmadan genel başarı iddiası yapılmamalı. |
 | model | draw_recall_pct | draw_predicted=2, draw_total=9, pct=22.2 | ⚠ İzle | Yüksek | Beraberlik sadece çok yüksek risk ve dar olasılık farkında ekran tahminine çekilmeli; diğer durumlarda korumalı senaryo dili kullanılmalı. |
@@ -44,9 +44,9 @@
 ## Gol Adayı Segmentleri
 
 - primary+impact_sub: 134 satır, 19 isabet satırı, %14.2
-- primary: 103 satır, 11 isabet satırı, %10.7
-- impact_sub: 28 satır, 4 isabet satırı, %14.3
-- primary+set_piece_defender: 25 satır, 0 isabet satırı, %0.0
+- primary: 106 satır, 12 isabet satırı, %11.3
+- impact_sub: 26 satır, 4 isabet satırı, %15.4
+- primary+set_piece_defender: 24 satır, 0 isabet satırı, %0.0
 - unknown: 8 satır, 2 isabet satırı, %25.0
 
 ## Scout Pozisyon Güveni
