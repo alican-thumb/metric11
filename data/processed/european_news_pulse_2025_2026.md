@@ -1,14 +1,19 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-30T14:54:52.236674+00:00
-Toplam ilgili haber: 32
+Üretim zamanı: 2026-08-30T16:42:59.879966+00:00
+Toplam ilgili haber: 36
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
 - [FENERBAHÇE – SAMSUNSPOR MAÇI SAAT KAÇTA, HANGİ KANALDA? Samsunspor - Fenerbahçe maçı kadrosu: Samsunspor - Fenerbahçe maçı şifreli mi, nereden izlenir?](https://www.cnnturk.com/spor/futbol/fenerbahce-samsunspor-maci-saat-kacta-hangi-kanalda-samsunspor-fenerbahce-maci-kadrosu-samsunspor-fenerbahce-maci-sifreli-3460693) — CNN Türk Spor · 2026-08-30T16:07:36+00:00 · turnuva=CL · kulüp=Fenerbahçe, Samsunspor
+- [Aziz Yıldırım'dan Acun Ilıcalı'ya transfer çalımı! Şampiyonlar Ligi için devrede - Fenerbahçe - Mynet](https://news.google.com/rss/articles/CBMitgFBVV95cUxOXzExaGlzTTNrTWsxTDhTajdDMnlSaWlTZmhzUWNheTFiYmR0NlBHUi1fa3dUWVZFOHZnQ1VvSVRDaExhUGZTQWl4RDlYaTUwejlNWWk2SlRYMEhLaXdjaDJZUE5xZmNISEVjb092TzFqRlhHczM2eWJfNjQ0MkIxakdPaVdhOWZER1M1OE1ROUppZnh4OThCbjVlZDVDT3A5WnEzTlhFeTJXbVhMMy1GTE1kS04yd9IBuAFBVV95cUxNTUpBanh3VjRMZ0EwNFp6U0FEeEU3dDFPYWxRbVRfSldHT0lBYzFsZG81T0VkT0FXbFc4UWxENEVwVklKSUZyVUZzNUxzUWxndklGb3ZXZGRfUjVZRHZqZ0dkam4yQWpTWUVSMUdueWMzSmNBOE5xaGJmWUZpSmVqalZPaTd5eV8zZXNwZThXUDFNREFUT2VsUXZKQUZBeXM4aGdUcXdtNGNZNTBKalc5MUhOZ211LVdr?oc=5) — Mynet · 2026-08-30T13:24:11+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Trabzonspor'da Onuachu bu sezon suskun](https://www.cnnturk.com/spor/futbol/trabzonsporda-onuachu-bu-sezon-suskun-3460640) — CNN Türk Spor · 2026-08-30T11:00:20+00:00 · turnuva=EL · kulüp=Trabzonspor
 - [Trabzonspor’da gözler Onuachu’da](https://www.hurriyet.com.tr/sporarena/trabzonsporda-gozler-onuachuda-43289878) — Hürriyet Spor · 2026-08-30T09:02:45+00:00 · turnuva=EL · kulüp=Trabzonspor
+- [Beşiktaş'ın UEFA Avrupa Ligi fikstürü belli oldu! İşte Kartal'ın Avrupa rotası](https://www.fotomac.com.tr/besiktas/2026/08/29/besiktasin-uefa-avrupa-ligi-fiksturu-belli-oldu-iste-kartalin-avrupa-rotasi) — Fotomaç · 2026-08-30T01:51:26+03:00 · turnuva=EL · kulüp=Beşiktaş
+- [Fenerbahçe'den ligi sallayacak transfer! Şampiyonlar Ligi bombası ortaya çıktı](https://www.fotomac.com.tr/fenerbahce/2026/08/29/fenerbahceden-ligi-sallayacak-transfer-sampiyonlar-ligi-bombasi-ortaya-cikti) — Fotomaç · 2026-08-30T01:51:24+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Trabzonspor'un UEFA Konferans Ligi fikstürü açıklandı!](https://www.fotomac.com.tr/konferans-ligi/2026/08/29/trabzonsporun-uefa-konferans-ligi-fiksturu-aciklandi) — Fotomaç · 2026-08-30T01:51:22+03:00 · turnuva=ECL · kulüp=Trabzonspor
+- [Fenerbahçe'ye 1.93'lük dünya yıldızı! Bu transfer büyük ses getirir](https://www.fotomac.com.tr/fenerbahce/2026/08/30/fenerbahceye-193luk-dunya-yildizi-bu-transfer-buyuk-ses-getirir) — Fotomaç · 2026-08-30T00:27:03+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Trabzonspor’un Konferans Ligi fikstürü belli oldu](https://www.cnnturk.com/spor/futbol/trabzonsporun-konferans-ligi-fiksturu-belli-oldu-3460549) — CNN Türk Spor · 2026-08-29T22:39:20+00:00 · turnuva=ECL · kulüp=Trabzonspor
 - [Trabzonspor'un UEFA Konferans Ligi'ndeki fikstürü belli oldu](https://www.aa.com.tr/tr/spor/trabzonsporun-uefa-konferans-ligindeki-fiksturu-belli-oldu/4041186) — Anadolu Ajansı Spor · 2026-08-29T22:19:39+03:00 · turnuva=ECL · kulüp=Trabzonspor
 - [Beşiktaş’ın UEFA Avrupa Ligi fikstürü belli oldu](https://www.cnnturk.com/spor/futbol/besiktasin-uefa-avrupa-ligi-fiksturu-belli-oldu-3460544) — CNN Türk Spor · 2026-08-29T22:19:18+00:00 · turnuva=EL · kulüp=Beşiktaş
@@ -16,7 +21,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Trabzonspor'un UEFA Konferans Ligi fikstürü belli oldu!](https://www.hurriyet.com.tr/sporarena/trabzonsporun-uefa-konferans-ligi-fiksturu-belli-oldu-43289518) — Hürriyet Spor · 2026-08-29T19:26:55+00:00 · turnuva=ECL · kulüp=Trabzonspor
 - [Semih Sezerli: Fenerbahçe avantajlı bir fikstüre sahip, ilk 24'ü büyük ölçüde garantileyebilir](https://www.cnnturk.com/spor/futbol/semih-sezerli-fenerbahce-avantajli-bir-fiksture-sahip-ilk-24u-buyuk-olcude-garantileyebilir-3460519) — CNN Türk Spor · 2026-08-29T19:18:30+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Beşiktaş'ın UEFA Avrupa Ligi fikstürü belli oldu!](https://www.hurriyet.com.tr/sporarena/besiktasin-uefa-avrupa-ligi-fiksturu-belli-oldu-43289501) — Hürriyet Spor · 2026-08-29T19:03:15+00:00 · turnuva=EL · kulüp=Beşiktaş
-- [FENERBAHÇE ŞAMPİYONLAR LİGİ RAKİPLERİ: Fenerbahçe'nin Şampiyonlar Ligi'ndeki rakipleri kimler oldu? Maç ne zaman, saat kaçta, hangi kanalda?](https://www.cnnturk.com/spor/futbol/fenerbahce-sampiyonlar-ligi-rakipleri-fenerbahcenin-sampiyonlar-ligindeki-rakipleri-kimler-oldu-mac-ne-zaman-saat-kacta-hangi-3460485) — CNN Türk Spor · 2026-08-29T16:02:58+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Galatasaray ve Fenerbahçe'nin UEFA Şampiyonlar Ligi fikstürü belli oldu](https://www.aa.com.tr/tr/spor/galatasaray-ve-fenerbahcenin-uefa-sampiyonlar-ligi-fiksturu-belli-oldu/4040958) — Anadolu Ajansı Spor · 2026-08-29T15:05:53+03:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe
 - [Liverpool, yeni sezona kayıplarla başladı](https://www.hurriyet.com.tr/sporarena/liverpool-yeni-sezona-kayiplarla-basladi-43289331) — Hürriyet Spor · 2026-08-29T14:48:47+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe, Galatasaray, Beşiktaş ve Trabzonspor'un fikstürleri belli oldu! Avrupa'da dev rakipler](https://www.takvim.com.tr/spor/2026/08/29/fenerbahce-galatasaray-besiktas-ve-trabzonsporun-fiksturleri-belli-oldu-avrupada-dev-rakipler) — Takvim Spor · 2026-08-29T14:23:25+03:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe, Beşiktaş, Trabzonspor
