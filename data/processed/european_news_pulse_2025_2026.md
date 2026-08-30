@@ -1,7 +1,7 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-29T20:57:38.974289+00:00
-Toplam ilgili haber: 48
+Üretim zamanı: 2026-08-30T00:20:12.563585+00:00
+Toplam ilgili haber: 46
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
@@ -12,7 +12,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Beşiktaş'ın UEFA Avrupa Ligi'ndeki fikstürü belli oldu](https://www.aa.com.tr/tr/spor/besiktasin-uefa-avrupa-ligindeki-fiksturu-belli-oldu/4041182) — Anadolu Ajansı Spor · 2026-08-29T22:10:46+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş'ın UEFA Avrupa Ligi fikstürü belli oldu! İşte Kartal'ın Avrupa rotası](https://www.fotomac.com.tr/besiktas/2026/08/29/besiktasin-uefa-avrupa-ligi-fiksturu-belli-oldu-iste-kartalin-avrupa-rotasi) — Fotomaç · 2026-08-29T21:54:25+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Trabzonspor'un UEFA Konferans Ligi fikstürü açıklandı!](https://www.fotomac.com.tr/konferans-ligi/2026/08/29/trabzonsporun-uefa-konferans-ligi-fiksturu-aciklandi) — Fotomaç · 2026-08-29T21:49:38+03:00 · turnuva=ECL · kulüp=Trabzonspor
-- [Maç takvimi belli oldu! İşte temsilcilerimizin Avrupa fikstürü...](https://www.aksam.com.tr/spor/mac-takvimi-belli-oldu-iste-temsilcilerimizin-avrupa-fiksturu/haber-1694393) — Aksam Spor · 2026-08-29T21:40:00+03:00 · turnuva=EL · kulüp=Beşiktaş, Trabzonspor
 - [Trabzonspor'un UEFA Konferans Ligi fikstürü belli oldu!](https://www.hurriyet.com.tr/sporarena/trabzonsporun-uefa-konferans-ligi-fiksturu-belli-oldu-43289518) — Hürriyet Spor · 2026-08-29T19:26:55+00:00 · turnuva=ECL · kulüp=Trabzonspor
 - [Beşiktaş'ın Avrupa Ligi fikstürü belli oldu!](https://www.haberturk.com/besiktas-in-uefa-avrupa-ligi-fiksturu-belli-oldu-3908982-spor) — Haberturk Spor · 2026-08-29T19:21:58+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Semih Sezerli: Fenerbahçe avantajlı bir fikstüre sahip, ilk 24'ü büyük ölçüde garantileyebilir](https://www.cnnturk.com/spor/futbol/semih-sezerli-fenerbahce-avantajli-bir-fiksture-sahip-ilk-24u-buyuk-olcude-garantileyebilir-3460519) — CNN Türk Spor · 2026-08-29T19:18:30+00:00 · turnuva=CL · kulüp=Fenerbahçe
@@ -46,3 +45,4 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Sessiz sedasız Avrupa Ligi'ne! Beşiktaş Kauno Zalgiris'e 1-0 yenildi](https://www.takvim.com.tr/spor/besiktas/2026/08/27/sessiz-sedasiz-avrupa-ligine-besiktas-kauno-zalgirise-1-0-yenildi) — Takvim Spor · 2026-08-27T18:47:13+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [ZTK heyecanı! 1. tur eşleşmeleri belli oldu](https://www.takvim.com.tr/spor/2026/08/27/ztk-heyecani-1-tur-eslesmeleri-belli-oldu) — Takvim Spor · 2026-08-27T14:40:53+03:00 · turnuva=— · kulüp=—
 - [Fenerbahçe tarih yazdı! Spor yazarları Lyon zaferini böyle yorumladı: Allah'a şükürler olsun](https://www.takvim.com.tr/galeri/spor/fenerbahce-tarih-yazdi-spor-yazarlari-lyon-zaferini-boyle-yorumladi-allaha-sukurler-olsun) — Takvim Spor · 2026-08-27T08:35:26+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Aynı takımla eşleştiler! Fenerbahçe ve Galatasaray'ın Şampiyonlar Ligi'ndeki rakipleri belli oldu](https://www.takvim.com.tr/spor/fenerbahce/2026/08/26/ayni-takimla-eslestiler-fenerbahce-ve-galatasarayin-sampiyonlar-ligindeki-rakipleri-belli-oldu) — Takvim Spor · 2026-08-27T01:30:17+03:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe
