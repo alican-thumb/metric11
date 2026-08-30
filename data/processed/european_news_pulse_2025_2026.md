@@ -1,23 +1,14 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-08-30T10:00:01.018175+00:00
-Toplam ilgili haber: 45
+Üretim zamanı: 2026-08-30T11:55:34.675989+00:00
+Toplam ilgili haber: 35
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [FENERBAHÇE – SAMSUNSPOR MAÇI SAAT KAÇTA, HANGİ KANALDA? Samsunspor - Fenerbahçe maçı kadrosu: Samsunspor - Fenerbahçe maçı şifreli mi, nereden izlenir?](https://www.cnnturk.com/spor/futbol/fenerbahce-samsunspor-maci-saat-kacta-hangi-kanalda-samsunspor-fenerbahce-maci-kadrosu-samsunspor-fenerbahce-maci-sifreli-3460693) — CNN Türk Spor · 2026-08-30T14:10:42+00:00 · turnuva=CL · kulüp=Fenerbahçe, Samsunspor
 - [Trabzonspor'da Onuachu bu sezon suskun](https://www.cnnturk.com/spor/futbol/trabzonsporda-onuachu-bu-sezon-suskun-3460640) — CNN Türk Spor · 2026-08-30T11:00:20+00:00 · turnuva=EL · kulüp=Trabzonspor
-- [Trabzonspor’da gözler Onuachu’da](https://www.sabah.com.tr/spor/futbol/2026/08/30/trabzonsporda-gozler-onuachuda) — Sabah Spor · 2026-08-30T11:00:01+03:00 · turnuva=EL · kulüp=Trabzonspor
 - [Trabzonspor’da gözler Onuachu’da](https://www.hurriyet.com.tr/sporarena/trabzonsporda-gozler-onuachuda-43289878) — Hürriyet Spor · 2026-08-30T09:02:45+00:00 · turnuva=EL · kulüp=Trabzonspor
-- [Beşiktaş'ın UEFA Avrupa Ligi fikstürü belli oldu! İşte Kartal'ın Avrupa rotası](https://www.fotomac.com.tr/besiktas/2026/08/29/besiktasin-uefa-avrupa-ligi-fiksturu-belli-oldu-iste-kartalin-avrupa-rotasi) — Fotomaç · 2026-08-30T01:51:26+03:00 · turnuva=EL · kulüp=Beşiktaş
-- [Fenerbahçe'den ligi sallayacak transfer! Şampiyonlar Ligi bombası ortaya çıktı](https://www.fotomac.com.tr/fenerbahce/2026/08/29/fenerbahceden-ligi-sallayacak-transfer-sampiyonlar-ligi-bombasi-ortaya-cikti) — Fotomaç · 2026-08-30T01:51:24+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Trabzonspor'un UEFA Konferans Ligi fikstürü açıklandı!](https://www.fotomac.com.tr/konferans-ligi/2026/08/29/trabzonsporun-uefa-konferans-ligi-fiksturu-aciklandi) — Fotomaç · 2026-08-30T01:51:22+03:00 · turnuva=ECL · kulüp=Trabzonspor
-- [Galatasaray'ın Devler Ligi fikstürü belli oldu!](https://www.fotomac.com.tr/galatasaray/2026/08/29/galatasarayin-devler-ligi-fiksturu-belli-oldu) — Fotomaç · 2026-08-30T01:51:09+03:00 · turnuva=CL · kulüp=Galatasaray
-- [Fenerbahçe'nin Devler Ligi fikstürü belli oldu!](https://www.fotomac.com.tr/fenerbahce/2026/08/29/fenerbahcenin-devler-ligi-fiksturu-belli-oldu) — Fotomaç · 2026-08-30T01:51:07+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Yapay zekadan Fenerbahçe tahmini! Şampiyonlar Ligi'nde...](https://www.fotomac.com.tr/fenerbahce/2026/08/28/yapay-zekadan-fenerbahce-tahmini-sampiyonlar-liginde) — Fotomaç · 2026-08-30T01:50:40+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Yapay zekadan Galatasaray tahmini: Şampiyonlar Ligi'nde...](https://www.fotomac.com.tr/galatasaray/2026/08/28/yapay-zekadan-galatasaray-tahmini-sampiyonlar-liginde) — Fotomaç · 2026-08-30T01:50:36+03:00 · turnuva=CL · kulüp=Galatasaray
-- [Fenerbahçe'ye 1.93'lük dünya yıldızı! Bu transfer büyük ses getirir](https://www.fotomac.com.tr/fenerbahce/2026/08/30/fenerbahceye-193luk-dunya-yildizi-bu-transfer-buyuk-ses-getirir) — Fotomaç · 2026-08-30T00:27:03+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Beşiktaş'tan İngiltere'de dev operasyon! 30 milyon euro'luk yıldız için düğmeye basıldı](https://www.fotomac.com.tr/besiktas/2026/08/30/sarr-surprizi) — Fotomaç · 2026-08-30T00:23:13+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Trabzonspor’un Konferans Ligi fikstürü belli oldu](https://www.cnnturk.com/spor/futbol/trabzonsporun-konferans-ligi-fiksturu-belli-oldu-3460549) — CNN Türk Spor · 2026-08-29T22:39:20+00:00 · turnuva=ECL · kulüp=Trabzonspor
 - [Trabzonspor'un UEFA Konferans Ligi'ndeki fikstürü belli oldu](https://www.aa.com.tr/tr/spor/trabzonsporun-uefa-konferans-ligindeki-fiksturu-belli-oldu/4041186) — Anadolu Ajansı Spor · 2026-08-29T22:19:39+03:00 · turnuva=ECL · kulüp=Trabzonspor
 - [Beşiktaş’ın UEFA Avrupa Ligi fikstürü belli oldu](https://www.cnnturk.com/spor/futbol/besiktasin-uefa-avrupa-ligi-fiksturu-belli-oldu-3460544) — CNN Türk Spor · 2026-08-29T22:19:18+00:00 · turnuva=EL · kulüp=Beşiktaş
@@ -46,3 +37,7 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Fenerbahçe tarih yazdı! Spor yazarları Lyon zaferini böyle yorumladı: Allah'a şükürler olsun](https://www.takvim.com.tr/galeri/spor/fenerbahce-tarih-yazdi-spor-yazarlari-lyon-zaferini-boyle-yorumladi-allaha-sukurler-olsun) — Takvim Spor · 2026-08-27T08:35:26+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Aynı takımla eşleştiler! Fenerbahçe ve Galatasaray'ın Şampiyonlar Ligi'ndeki rakipleri belli oldu](https://www.takvim.com.tr/spor/fenerbahce/2026/08/26/ayni-takimla-eslestiler-fenerbahce-ve-galatasarayin-sampiyonlar-ligindeki-rakipleri-belli-oldu) — Takvim Spor · 2026-08-27T01:30:17+03:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe
 - [Fenerbahçe ve Galatasaray 1 numaralı arenada! İşte Şampiyonlar Ligi'ne katılan takımlar](https://www.takvim.com.tr/galeri/spor/fenerbahce-ve-galatasaray-1-numarali-arenada-iste-sampiyonlar-ligine-katilan-takimlar) — Takvim Spor · 2026-08-27T00:40:24+03:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe
+- [18 yıl sonra Şampiyonlar Ligi! Fenerbahçe Lyon'u 2-1 yendi](https://www.takvim.com.tr/spor/fenerbahce/2026/08/26/18-yil-sonra-sampiyonlar-ligi-fenerbahce-lyonu-2-1-yendi) — Takvim Spor · 2026-08-26T20:46:49+03:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe
+- [Leandro Trossard neden yok? Vincenzo Italiano'dan Ernest Poku için açıklama](https://www.takvim.com.tr/spor/besiktas/2026/08/26/leandro-trossard-neden-yok-vincenzo-italianodan-ernest-poku-icin-aciklama) — Takvim Spor · 2026-08-26T20:27:50+03:00 · turnuva=EL · kulüp=Beşiktaş
+- [Fatih Tekke'den Ferencvaros maçı için umut dolu yorum: Ümidim çok fazla](https://www.takvim.com.tr/spor/trabzonspor/2026/08/26/fatih-tekkeden-ferencvaros-maci-icin-umut-dolu-yorum-umidim-cok-fazla) — Takvim Spor · 2026-08-26T19:27:45+03:00 · turnuva=EL · kulüp=Trabzonspor
+- [Barcelona’dan KKTC’de tarihi futbol hamlesi: Barça Academy Lefkoşa'da Kıbrıs Türk gençliğiyle buluşacak](https://www.takvim.com.tr/dunya/barcelonadan-kktcde-futbol-hamlesi-6499104) — Takvim Spor · 2026-08-25T16:14:40+03:00 · turnuva=— · kulüp=—
