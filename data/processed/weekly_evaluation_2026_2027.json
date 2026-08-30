@@ -1,30 +1,30 @@
 {
-  "generated_at": "2026-08-30T05:24:30.940433",
+  "generated_at": "2026-08-30T10:00:00.464156",
   "season": "2026-2027",
   "summary": {
-    "evaluated_matches": 19,
-    "correct": 4,
-    "accuracy": 0.2105,
+    "evaluated_matches": 22,
+    "correct": 6,
+    "accuracy": 0.2727,
     "actual_draws": 5,
     "draws_caught": 0,
     "draw_recall": 0.0,
-    "high_conf_matches": 8,
-    "high_conf_correct": 3,
-    "high_conf_accuracy": 0.375
+    "high_conf_matches": 9,
+    "high_conf_correct": 4,
+    "high_conf_accuracy": 0.4444
   },
   "last_played_week": 3,
   "last_week": {
     "week": 3,
     "summary": {
-      "evaluated_matches": 1,
-      "correct": 0,
-      "accuracy": 0.0,
+      "evaluated_matches": 4,
+      "correct": 2,
+      "accuracy": 0.5,
       "actual_draws": 1,
       "draws_caught": 0,
       "draw_recall": 0.0,
-      "high_conf_matches": 1,
-      "high_conf_correct": 0,
-      "high_conf_accuracy": 0.0
+      "high_conf_matches": 2,
+      "high_conf_correct": 1,
+      "high_conf_accuracy": 0.5
     },
     "matches": [
       {
@@ -42,6 +42,54 @@
         "home_win_probability": 0.807,
         "draw_probability": 0.134,
         "away_win_probability": 0.059
+      },
+      {
+        "match_id": "317807",
+        "date_time": "29.08.2026 19:00",
+        "home_team": "TÜMOSAN KONYASPOR",
+        "away_team": "KOCAELİSPOR",
+        "actual_score": "1 - 2",
+        "actual": "away",
+        "predicted": "home",
+        "raw_predicted": "home",
+        "correct": false,
+        "data_confidence": "PLAYED",
+        "prediction_confidence": "LOW",
+        "home_win_probability": 0.418,
+        "draw_probability": 0.26,
+        "away_win_probability": 0.322
+      },
+      {
+        "match_id": "317802",
+        "date_time": "29.08.2026 21:30",
+        "home_team": "GAZİANTEP FUTBOL KULÜBÜ A.Ş.",
+        "away_team": "ÇAYKUR RİZESPOR A.Ş.",
+        "actual_score": "1 - 2",
+        "actual": "away",
+        "predicted": "away",
+        "raw_predicted": "away",
+        "correct": true,
+        "data_confidence": "PLAYED",
+        "prediction_confidence": "LOW",
+        "home_win_probability": 0.395,
+        "draw_probability": 0.206,
+        "away_win_probability": 0.399
+      },
+      {
+        "match_id": "317808",
+        "date_time": "29.08.2026 21:33",
+        "home_team": "GALATASARAY A.Ş.",
+        "away_team": "GÖZTEPE A.Ş.",
+        "actual_score": "3 - 2",
+        "actual": "home",
+        "predicted": "home",
+        "raw_predicted": "home",
+        "correct": true,
+        "data_confidence": "PLAYED",
+        "prediction_confidence": "HIGH",
+        "home_win_probability": 0.562,
+        "draw_probability": 0.163,
+        "away_win_probability": 0.274
       }
     ]
   },
@@ -369,15 +417,15 @@
     {
       "week": 3,
       "summary": {
-        "evaluated_matches": 1,
-        "correct": 0,
-        "accuracy": 0.0,
+        "evaluated_matches": 4,
+        "correct": 2,
+        "accuracy": 0.5,
         "actual_draws": 1,
         "draws_caught": 0,
         "draw_recall": 0.0,
-        "high_conf_matches": 1,
-        "high_conf_correct": 0,
-        "high_conf_accuracy": 0.0
+        "high_conf_matches": 2,
+        "high_conf_correct": 1,
+        "high_conf_accuracy": 0.5
       },
       "matches": [
         {
@@ -395,6 +443,54 @@
           "home_win_probability": 0.807,
           "draw_probability": 0.134,
           "away_win_probability": 0.059
+        },
+        {
+          "match_id": "317807",
+          "date_time": "29.08.2026 19:00",
+          "home_team": "TÜMOSAN KONYASPOR",
+          "away_team": "KOCAELİSPOR",
+          "actual_score": "1 - 2",
+          "actual": "away",
+          "predicted": "home",
+          "raw_predicted": "home",
+          "correct": false,
+          "data_confidence": "PLAYED",
+          "prediction_confidence": "LOW",
+          "home_win_probability": 0.418,
+          "draw_probability": 0.26,
+          "away_win_probability": 0.322
+        },
+        {
+          "match_id": "317802",
+          "date_time": "29.08.2026 21:30",
+          "home_team": "GAZİANTEP FUTBOL KULÜBÜ A.Ş.",
+          "away_team": "ÇAYKUR RİZESPOR A.Ş.",
+          "actual_score": "1 - 2",
+          "actual": "away",
+          "predicted": "away",
+          "raw_predicted": "away",
+          "correct": true,
+          "data_confidence": "PLAYED",
+          "prediction_confidence": "LOW",
+          "home_win_probability": 0.395,
+          "draw_probability": 0.206,
+          "away_win_probability": 0.399
+        },
+        {
+          "match_id": "317808",
+          "date_time": "29.08.2026 21:33",
+          "home_team": "GALATASARAY A.Ş.",
+          "away_team": "GÖZTEPE A.Ş.",
+          "actual_score": "3 - 2",
+          "actual": "home",
+          "predicted": "home",
+          "raw_predicted": "home",
+          "correct": true,
+          "data_confidence": "PLAYED",
+          "prediction_confidence": "HIGH",
+          "home_win_probability": 0.562,
+          "draw_probability": 0.163,
+          "away_win_probability": 0.274
         }
       ]
     }

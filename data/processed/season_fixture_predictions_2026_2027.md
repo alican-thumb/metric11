@@ -1,8 +1,8 @@
 # 2026-27 Süper Lig Fikstürü ve Tahminleri
 
-Üretim zamanı: 2026-08-30T05:24:30.537712
+Üretim zamanı: 2026-08-30T10:00:00.058440
 Toplam hafta: 34, toplam maç: 306
-Not: Tahminler 2025-26 sezonunun tamamı ve 2026-27'de şimdiye kadar oynanmış (19 maç) sonuçlardan türetilen güncel takım formu/Elo/transfer durumuna dayanır; sezon ilerledikçe bu sayfa her gün otomatik olarak yeniden hesaplanır, statik bir anlık görüntü değildir.
+Not: Tahminler 2025-26 sezonunun tamamı ve 2026-27'de şimdiye kadar oynanmış (22 maç) sonuçlardan türetilen güncel takım formu/Elo/transfer durumuna dayanır; sezon ilerledikçe bu sayfa her gün otomatik olarak yeniden hesaplanır, statik bir anlık görüntü değildir.
 Yeni takımlar (sınırlı veri): AMED SPORTİF FAALİYETLER, ERZURUMSPOR FK, ÇORUM FK
 
 ## Hafta 1
@@ -32,9 +32,9 @@ Yeni takımlar (sınırlı veri): AMED SPORTİF FAALİYETLER, ERZURUMSPOR FK, Ç
 ## Hafta 3
 
 - 28.08.2026 21:30 | GENÇLERBİRLİĞİ 1 - 1 ERZURUMSPOR FK | OYNANDI
-- 29.08.2026 19:00 | TÜMOSAN KONYASPOR - KOCAELİSPOR | tahmin=Ev (Ev %42 · X %26 · Dep %32) | güven=LOW
-- 29.08.2026 21:30 | GAZİANTEP FUTBOL KULÜBÜ A.Ş. - ÇAYKUR RİZESPOR A.Ş. | tahmin=Dep (Ev %40 · X %21 · Dep %40) | güven=LOW
-- 29.08.2026 21:30 | GALATASARAY A.Ş. - GÖZTEPE A.Ş. | tahmin=Ev (Ev %56 · X %16 · Dep %27) | güven=HIGH
+- 29.08.2026 19:00 | TÜMOSAN KONYASPOR 1 - 2 KOCAELİSPOR | OYNANDI
+- 29.08.2026 21:30 | GAZİANTEP FUTBOL KULÜBÜ A.Ş. 1 - 2 ÇAYKUR RİZESPOR A.Ş. | OYNANDI
+- 29.08.2026 21:33 | GALATASARAY A.Ş. 3 - 2 GÖZTEPE A.Ş. | OYNANDI
 - 30.08.2026 19:00 | EYÜPSPOR - CORENDON ALANYASPOR | tahmin=Ev (Ev %46 · X %26 · Dep %27) | güven=MEDIUM
 - 30.08.2026 21:30 | İSTANBUL BAŞAKŞEHİR FK - KASIMPAŞA A.Ş. | tahmin=Ev (Ev %63 · X %20 · Dep %17) | güven=HIGH
 - 30.08.2026 21:30 | SAMSUNSPOR A.Ş. - FENERBAHÇE A.Ş. | tahmin=Dep (Ev %30 · X %26 · Dep %44) | güven=MEDIUM
