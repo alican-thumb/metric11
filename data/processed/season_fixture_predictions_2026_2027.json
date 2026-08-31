@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T10:44:54.244563",
+  "generated_at": "2026-08-31T13:47:04.758287",
   "season": "2026-2027",
   "source_note": "Tahminler 2025-26 sezonunun tamamı ve 2026-27'de şimdiye kadar oynanmış (25 maç) sonuçlardan türetilen güncel takım formu/Elo/transfer durumuna dayanır; sezon ilerledikçe bu sayfa her gün otomatik olarak yeniden hesaplanır, statik bir anlık görüntü değildir.",
   "total_weeks": 34,
@@ -25,7 +25,7 @@
           "data_confidence": "PLAYED",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.36,
+          "expected_home_goals": 1.37,
           "expected_away_goals": 0.48,
           "top_scorelines": [
             {
@@ -65,7 +65,7 @@
             "away_goals": 0,
             "probability": 0.215
           },
-          "home_win_probability": 0.589,
+          "home_win_probability": 0.59,
           "draw_probability": 0.28,
           "away_win_probability": 0.131,
           "head_to_head": {
@@ -76,8 +76,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.1282,
-              "news_signal": null,
+              "edge": -0.0584,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0115,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 4200000,
+                "total_net_value_eur": 4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "in",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.1282,
@@ -175,7 +189,7 @@
           "away_elo": 1500.0,
           "home_points_per_match": 1.62,
           "away_points_per_match": 0,
-          "strength_edge": 0.386,
+          "strength_edge": 0.421,
           "home_xg_efficiency": 1.035,
           "away_xg_efficiency": null,
           "referee_adj": 0.0,
@@ -973,20 +987,14 @@
             },
             "away": {
               "available": true,
-              "edge": -0.0007,
+              "edge": 0.0025,
               "news_signal": {
                 "available": true,
-                "edge": -0.0259,
-                "signal_count": 4,
+                "edge": -0.0195,
+                "signal_count": 3,
                 "confirmed_net_value_eur": -6000000,
-                "total_net_value_eur": -8500000,
+                "total_net_value_eur": -6400000,
                 "top_moves": [
-                  {
-                    "player": "Yusuf Akçiçek",
-                    "direction": "out",
-                    "market_value_eur": 14000000,
-                    "status": "RUMOR"
-                  },
                   {
                     "player": "Sofyan Amrabat",
                     "direction": "out",
@@ -1135,7 +1143,7 @@
           "away_elo": 1654.4,
           "home_points_per_match": 1.12,
           "away_points_per_match": 2.12,
-          "strength_edge": -0.725,
+          "strength_edge": -0.726,
           "home_xg_efficiency": 1.26,
           "away_xg_efficiency": 0.914,
           "referee_adj": 0.0,
@@ -1709,7 +1717,7 @@
           "data_confidence": "PLAYED",
           "raw_predicted": "away",
           "predicted": "away",
-          "expected_home_goals": 1.76,
+          "expected_home_goals": 1.75,
           "expected_away_goals": 1.83,
           "top_scorelines": [
             {
@@ -1722,7 +1730,7 @@
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.081
+              "probability": 0.082
             },
             {
               "score": "2-1",
@@ -1747,7 +1755,7 @@
             "score": "1-2",
             "home_goals": 1,
             "away_goals": 2,
-            "probability": 0.081
+            "probability": 0.082
           },
           "home_win_probability": 0.389,
           "draw_probability": 0.191,
@@ -1817,8 +1825,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.1002,
+              "news_signal": {
+                "available": true,
+                "edge": -0.0504,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -4200000,
+                "total_net_value_eur": -4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "out",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -1912,7 +1934,7 @@
           "away_elo": 1539.9,
           "home_points_per_match": 2.0,
           "away_points_per_match": 1.5,
-          "strength_edge": 0.18,
+          "strength_edge": 0.155,
           "home_xg_efficiency": 0.652,
           "away_xg_efficiency": 1.347,
           "referee_adj": 0.0,
@@ -1976,7 +1998,7 @@
           },
           "home_win_probability": 0.064,
           "draw_probability": 0.135,
-          "away_win_probability": 0.801,
+          "away_win_probability": 0.802,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -1989,8 +2011,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.1282,
-              "news_signal": null,
+              "edge": -0.0584,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0115,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 4200000,
+                "total_net_value_eur": 4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "in",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.1282,
@@ -2086,7 +2122,7 @@
           "away_elo": 1635.5,
           "home_points_per_match": 0.0,
           "away_points_per_match": 1.75,
-          "strength_edge": -0.916,
+          "strength_edge": -0.951,
           "home_xg_efficiency": null,
           "away_xg_efficiency": 1.004,
           "referee_adj": 0.0,
@@ -2548,20 +2584,14 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.0007,
+              "edge": 0.0025,
               "news_signal": {
                 "available": true,
-                "edge": -0.0259,
-                "signal_count": 4,
+                "edge": -0.0195,
+                "signal_count": 3,
                 "confirmed_net_value_eur": -6000000,
-                "total_net_value_eur": -8500000,
+                "total_net_value_eur": -6400000,
                 "top_moves": [
-                  {
-                    "player": "Yusuf Akçiçek",
-                    "direction": "out",
-                    "market_value_eur": 14000000,
-                    "status": "RUMOR"
-                  },
                   {
                     "player": "Sofyan Amrabat",
                     "direction": "out",
@@ -2768,7 +2798,7 @@
           "away_elo": 1459.1,
           "home_points_per_match": 1.75,
           "away_points_per_match": 1.25,
-          "strength_edge": 0.435,
+          "strength_edge": 0.436,
           "home_xg_efficiency": 1.042,
           "away_xg_efficiency": 0.996,
           "referee_adj": 0.0,
@@ -3471,7 +3501,7 @@
           "raw_predicted": "home",
           "predicted": "home",
           "expected_home_goals": 1.96,
-          "expected_away_goals": 1.43,
+          "expected_away_goals": 1.42,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -3486,15 +3516,15 @@
               "probability": 0.093
             },
             {
-              "score": "1-2",
-              "home_goals": 1,
-              "away_goals": 2,
-              "probability": 0.068
-            },
-            {
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
+              "probability": 0.067
+            },
+            {
+              "score": "1-2",
+              "home_goals": 1,
+              "away_goals": 2,
               "probability": 0.067
             },
             {
@@ -3510,9 +3540,9 @@
             "away_goals": 1,
             "probability": 0.093
           },
-          "home_win_probability": 0.516,
+          "home_win_probability": 0.517,
           "draw_probability": 0.193,
-          "away_win_probability": 0.291,
+          "away_win_probability": 0.29,
           "head_to_head": {
             "available": true,
             "matches": 12,
@@ -3522,8 +3552,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.1002,
+              "news_signal": {
+                "available": true,
+                "edge": -0.0504,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -4200000,
+                "total_net_value_eur": -4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "out",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -3675,7 +3719,7 @@
           "away_elo": 1462.1,
           "home_points_per_match": 1.25,
           "away_points_per_match": 1.5,
-          "strength_edge": -0.08,
+          "strength_edge": -0.055,
           "home_xg_efficiency": 1.246,
           "away_xg_efficiency": 1.145,
           "referee_adj": 0.0,
@@ -4521,7 +4565,7 @@
             "away_goals": 1,
             "probability": 0.092
           },
-          "home_win_probability": 0.562,
+          "home_win_probability": 0.563,
           "draw_probability": 0.163,
           "away_win_probability": 0.274,
           "head_to_head": {
@@ -4533,8 +4577,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.1282,
-              "news_signal": null,
+              "edge": -0.0584,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0115,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 4200000,
+                "total_net_value_eur": 4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "in",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.1282,
@@ -4589,8 +4647,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.1002,
+              "news_signal": {
+                "available": true,
+                "edge": -0.0504,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -4200000,
+                "total_net_value_eur": -4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "out",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -4686,7 +4758,7 @@
           "away_elo": 1523.4,
           "home_points_per_match": 1.75,
           "away_points_per_match": 1.25,
-          "strength_edge": 0.271,
+          "strength_edge": 0.281,
           "home_xg_efficiency": 0.994,
           "away_xg_efficiency": 1.347,
           "referee_adj": 0.0,
@@ -5170,7 +5242,7 @@
           },
           "home_win_probability": 0.297,
           "draw_probability": 0.259,
-          "away_win_probability": 0.444,
+          "away_win_probability": 0.445,
           "head_to_head": {
             "available": true,
             "matches": 10,
@@ -5236,20 +5308,14 @@
             },
             "away": {
               "available": true,
-              "edge": -0.0007,
+              "edge": 0.0025,
               "news_signal": {
                 "available": true,
-                "edge": -0.0259,
-                "signal_count": 4,
+                "edge": -0.0195,
+                "signal_count": 3,
                 "confirmed_net_value_eur": -6000000,
-                "total_net_value_eur": -8500000,
+                "total_net_value_eur": -6400000,
                 "top_moves": [
-                  {
-                    "player": "Yusuf Akçiçek",
-                    "direction": "out",
-                    "market_value_eur": 14000000,
-                    "status": "RUMOR"
-                  },
                   {
                     "player": "Sofyan Amrabat",
                     "direction": "out",
@@ -5400,7 +5466,7 @@
           "away_elo": 1641.5,
           "home_points_per_match": 2.38,
           "away_points_per_match": 1.75,
-          "strength_edge": -0.025,
+          "strength_edge": -0.026,
           "home_xg_efficiency": 0.539,
           "away_xg_efficiency": 0.837,
           "referee_adj": 0.0,
@@ -5814,7 +5880,7 @@
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.082
+              "probability": 0.081
             },
             {
               "score": "2-2",
@@ -5826,7 +5892,7 @@
               "score": "0-1",
               "home_goals": 0,
               "away_goals": 1,
-              "probability": 0.056
+              "probability": 0.057
             }
           ],
           "recommended_scoreline": {
@@ -5850,8 +5916,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.1282,
-              "news_signal": null,
+              "edge": -0.0584,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0115,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 4200000,
+                "total_net_value_eur": 4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "in",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.1282,
@@ -5968,7 +6048,7 @@
           "away_elo": 1643.0,
           "home_points_per_match": 1.75,
           "away_points_per_match": 1.75,
-          "strength_edge": 0.057,
+          "strength_edge": 0.022,
           "home_xg_efficiency": 0.994,
           "away_xg_efficiency": 1.131,
           "referee_adj": 0.0,
@@ -6209,20 +6289,14 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.0007,
+              "edge": 0.0025,
               "news_signal": {
                 "available": true,
-                "edge": -0.0259,
-                "signal_count": 4,
+                "edge": -0.0195,
+                "signal_count": 3,
                 "confirmed_net_value_eur": -6000000,
-                "total_net_value_eur": -8500000,
+                "total_net_value_eur": -6400000,
                 "top_moves": [
-                  {
-                    "player": "Yusuf Akçiçek",
-                    "direction": "out",
-                    "market_value_eur": 14000000,
-                    "status": "RUMOR"
-                  },
                   {
                     "player": "Sofyan Amrabat",
                     "direction": "out",
@@ -6464,7 +6538,7 @@
           "away_elo": 1564.9,
           "home_points_per_match": 1.5,
           "away_points_per_match": 1.38,
-          "strength_edge": 0.125,
+          "strength_edge": 0.126,
           "home_xg_efficiency": 1.108,
           "away_xg_efficiency": 1.559,
           "referee_adj": 0.0,
@@ -7550,8 +7624,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.1002,
+              "news_signal": {
+                "available": true,
+                "edge": -0.0504,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -4200000,
+                "total_net_value_eur": -4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "out",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -7703,7 +7791,7 @@
           "away_elo": 1435.9,
           "home_points_per_match": 1.25,
           "away_points_per_match": 1.0,
-          "strength_edge": 0.1,
+          "strength_edge": 0.125,
           "home_xg_efficiency": 1.648,
           "away_xg_efficiency": 1.449,
           "referee_adj": 0.0,
@@ -7984,9 +8072,9 @@
             "away_goals": 1,
             "probability": 0.12
           },
-          "home_win_probability": 0.329,
+          "home_win_probability": 0.328,
           "draw_probability": 0.298,
-          "away_win_probability": 0.373,
+          "away_win_probability": 0.374,
           "head_to_head": {
             "available": true,
             "matches": 17,
@@ -8066,8 +8154,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.1002,
+              "news_signal": {
+                "available": true,
+                "edge": -0.0504,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -4200000,
+                "total_net_value_eur": -4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "out",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -8161,7 +8263,7 @@
           "away_elo": 1529.2,
           "home_points_per_match": 1.0,
           "away_points_per_match": 1.25,
-          "strength_edge": 0.008,
+          "strength_edge": -0.017,
           "home_xg_efficiency": 0.828,
           "away_xg_efficiency": 1.648,
           "referee_adj": 0.0,
@@ -8410,7 +8512,7 @@
               "score": "2-0",
               "home_goals": 2,
               "away_goals": 0,
-              "probability": 0.107
+              "probability": 0.108
             },
             {
               "score": "1-1",
@@ -8448,8 +8550,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.1282,
-              "news_signal": null,
+              "edge": -0.0584,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0115,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 4200000,
+                "total_net_value_eur": 4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "in",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.1282,
@@ -8599,7 +8715,7 @@
           "away_elo": 1456.5,
           "home_points_per_match": 1.75,
           "away_points_per_match": 1.0,
-          "strength_edge": 0.349,
+          "strength_edge": 0.384,
           "home_xg_efficiency": 1.131,
           "away_xg_efficiency": 1.373,
           "referee_adj": 0.0,
@@ -9093,20 +9209,14 @@
             },
             "away": {
               "available": true,
-              "edge": -0.0007,
+              "edge": 0.0025,
               "news_signal": {
                 "available": true,
-                "edge": -0.0259,
-                "signal_count": 4,
+                "edge": -0.0195,
+                "signal_count": 3,
                 "confirmed_net_value_eur": -6000000,
-                "total_net_value_eur": -8500000,
+                "total_net_value_eur": -6400000,
                 "top_moves": [
-                  {
-                    "player": "Yusuf Akçiçek",
-                    "direction": "out",
-                    "market_value_eur": 14000000,
-                    "status": "RUMOR"
-                  },
                   {
                     "player": "Sofyan Amrabat",
                     "direction": "out",
@@ -9255,7 +9365,7 @@
           "away_elo": 1640.5,
           "home_points_per_match": 1.0,
           "away_points_per_match": 1.5,
-          "strength_edge": -0.465,
+          "strength_edge": -0.466,
           "home_xg_efficiency": 1.449,
           "away_xg_efficiency": 1.108,
           "referee_adj": 0.0,
@@ -9673,7 +9783,7 @@
             "away_goals": 2,
             "probability": 0.095
           },
-          "home_win_probability": 0.267,
+          "home_win_probability": 0.266,
           "draw_probability": 0.225,
           "away_win_probability": 0.509,
           "head_to_head": {
@@ -9740,8 +9850,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.1282,
-              "news_signal": null,
+              "edge": -0.0584,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0115,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 4200000,
+                "total_net_value_eur": 4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "in",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.1282,
@@ -9835,7 +9959,7 @@
           "away_elo": 1643.0,
           "home_points_per_match": 1.25,
           "away_points_per_match": 1.75,
-          "strength_edge": -0.26,
+          "strength_edge": -0.295,
           "home_xg_efficiency": 1.096,
           "away_xg_efficiency": 1.131,
           "referee_adj": 0.0,
@@ -9894,7 +10018,7 @@
           },
           "home_win_probability": 0.542,
           "draw_probability": 0.218,
-          "away_win_probability": 0.24,
+          "away_win_probability": 0.239,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -9903,20 +10027,14 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.0007,
+              "edge": 0.0025,
               "news_signal": {
                 "available": true,
-                "edge": -0.0259,
-                "signal_count": 4,
+                "edge": -0.0195,
+                "signal_count": 3,
                 "confirmed_net_value_eur": -6000000,
-                "total_net_value_eur": -8500000,
+                "total_net_value_eur": -6400000,
                 "top_moves": [
-                  {
-                    "player": "Yusuf Akçiçek",
-                    "direction": "out",
-                    "market_value_eur": 14000000,
-                    "status": "RUMOR"
-                  },
                   {
                     "player": "Sofyan Amrabat",
                     "direction": "out",
@@ -10121,7 +10239,7 @@
           "away_elo": 1436.9,
           "home_points_per_match": 1.5,
           "away_points_per_match": 1.75,
-          "strength_edge": 0.085,
+          "strength_edge": 0.086,
           "home_xg_efficiency": 1.108,
           "away_xg_efficiency": 0.518,
           "referee_adj": 0.0,
@@ -11009,7 +11127,7 @@
           },
           "home_win_probability": 0.518,
           "draw_probability": 0.211,
-          "away_win_probability": 0.271,
+          "away_win_probability": 0.27,
           "head_to_head": {
             "available": true,
             "matches": 18,
@@ -11019,8 +11137,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.1002,
+              "news_signal": {
+                "available": true,
+                "edge": -0.0504,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -4200000,
+                "total_net_value_eur": -4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "out",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -11170,7 +11302,7 @@
           "away_elo": 1481.1,
           "home_points_per_match": 1.25,
           "away_points_per_match": 1.12,
-          "strength_edge": 0.116,
+          "strength_edge": 0.141,
           "home_xg_efficiency": 1.648,
           "away_xg_efficiency": 1.436,
           "referee_adj": 0.0,
@@ -11541,7 +11673,7 @@
           "raw_predicted": "home",
           "predicted": "home",
           "expected_home_goals": 1.52,
-          "expected_away_goals": 1.37,
+          "expected_away_goals": 1.38,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -11580,7 +11712,7 @@
             "away_goals": 1,
             "probability": 0.088
           },
-          "home_win_probability": 0.409,
+          "home_win_probability": 0.408,
           "draw_probability": 0.247,
           "away_win_probability": 0.344,
           "head_to_head": {
@@ -11647,8 +11779,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.1002,
+              "news_signal": {
+                "available": true,
+                "edge": -0.0504,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -4200000,
+                "total_net_value_eur": -4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "out",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -11742,7 +11888,7 @@
           "away_elo": 1529.2,
           "home_points_per_match": 1.75,
           "away_points_per_match": 1.25,
-          "strength_edge": 0.28,
+          "strength_edge": 0.255,
           "home_xg_efficiency": 0.518,
           "away_xg_efficiency": 1.648,
           "referee_adj": 0.0,
@@ -12159,7 +12305,7 @@
               "score": "3-0",
               "home_goals": 3,
               "away_goals": 0,
-              "probability": 0.067
+              "probability": 0.068
             }
           ],
           "recommended_scoreline": {
@@ -12180,8 +12326,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.1282,
-              "news_signal": null,
+              "edge": -0.0584,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0115,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 4200000,
+                "total_net_value_eur": 4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "in",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.1282,
@@ -12331,7 +12491,7 @@
           "away_elo": 1477.6,
           "home_points_per_match": 1.75,
           "away_points_per_match": 1.5,
-          "strength_edge": 0.211,
+          "strength_edge": 0.246,
           "home_xg_efficiency": 1.131,
           "away_xg_efficiency": 1.01,
           "referee_adj": 0.0,
@@ -13098,20 +13258,14 @@
             },
             "away": {
               "available": true,
-              "edge": -0.0007,
+              "edge": 0.0025,
               "news_signal": {
                 "available": true,
-                "edge": -0.0259,
-                "signal_count": 4,
+                "edge": -0.0195,
+                "signal_count": 3,
                 "confirmed_net_value_eur": -6000000,
-                "total_net_value_eur": -8500000,
+                "total_net_value_eur": -6400000,
                 "top_moves": [
-                  {
-                    "player": "Yusuf Akçiçek",
-                    "direction": "out",
-                    "market_value_eur": 14000000,
-                    "status": "RUMOR"
-                  },
                   {
                     "player": "Sofyan Amrabat",
                     "direction": "out",
@@ -13260,7 +13414,7 @@
           "away_elo": 1640.5,
           "home_points_per_match": 1.12,
           "away_points_per_match": 1.5,
-          "strength_edge": -0.48,
+          "strength_edge": -0.482,
           "home_xg_efficiency": 1.436,
           "away_xg_efficiency": 1.108,
           "referee_adj": 0.0,
@@ -13756,20 +13910,14 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.0007,
+              "edge": 0.0025,
               "news_signal": {
                 "available": true,
-                "edge": -0.0259,
-                "signal_count": 4,
+                "edge": -0.0195,
+                "signal_count": 3,
                 "confirmed_net_value_eur": -6000000,
-                "total_net_value_eur": -8500000,
+                "total_net_value_eur": -6400000,
                 "top_moves": [
-                  {
-                    "player": "Yusuf Akçiçek",
-                    "direction": "out",
-                    "market_value_eur": 14000000,
-                    "status": "RUMOR"
-                  },
                   {
                     "player": "Sofyan Amrabat",
                     "direction": "out",
@@ -13988,7 +14136,7 @@
           "away_elo": 1460.2,
           "home_points_per_match": 1.5,
           "away_points_per_match": 1.0,
-          "strength_edge": 0.357,
+          "strength_edge": 0.359,
           "home_xg_efficiency": 1.108,
           "away_xg_efficiency": 0.828,
           "referee_adj": 0.0,
@@ -14045,7 +14193,7 @@
             "away_goals": 1,
             "probability": 0.125
           },
-          "home_win_probability": 0.341,
+          "home_win_probability": 0.34,
           "draw_probability": 0.29,
           "away_win_probability": 0.369,
           "head_to_head": {
@@ -14113,8 +14261,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.1002,
+              "news_signal": {
+                "available": true,
+                "edge": -0.0504,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -4200000,
+                "total_net_value_eur": -4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "out",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -14208,7 +14370,7 @@
           "away_elo": 1529.2,
           "home_points_per_match": 1.0,
           "away_points_per_match": 1.25,
-          "strength_edge": -0.079,
+          "strength_edge": -0.103,
           "home_xg_efficiency": 1.373,
           "away_xg_efficiency": 1.648,
           "referee_adj": 0.0,
@@ -14800,7 +14962,7 @@
           "data_confidence": "MEDIUM",
           "raw_predicted": "away",
           "predicted": "away",
-          "expected_home_goals": 1.45,
+          "expected_home_goals": 1.44,
           "expected_away_goals": 1.76,
           "top_scorelines": [
             {
@@ -14840,9 +15002,9 @@
             "away_goals": 2,
             "probability": 0.091
           },
-          "home_win_probability": 0.314,
+          "home_win_probability": 0.313,
           "draw_probability": 0.242,
-          "away_win_probability": 0.444,
+          "away_win_probability": 0.445,
           "head_to_head": {
             "available": true,
             "matches": 22,
@@ -14908,8 +15070,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.1282,
-              "news_signal": null,
+              "edge": -0.0584,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0115,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 4200000,
+                "total_net_value_eur": 4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "in",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.1282,
@@ -15003,7 +15179,7 @@
           "away_elo": 1643.0,
           "home_points_per_match": 2.0,
           "away_points_per_match": 1.75,
-          "strength_edge": 0.029,
+          "strength_edge": -0.006,
           "home_xg_efficiency": 1.152,
           "away_xg_efficiency": 1.131,
           "referee_adj": 0.0,
@@ -16072,9 +16248,9 @@
             "away_goals": 1,
             "probability": 0.084
           },
-          "home_win_probability": 0.43,
+          "home_win_probability": 0.431,
           "draw_probability": 0.25,
-          "away_win_probability": 0.32,
+          "away_win_probability": 0.319,
           "head_to_head": {
             "available": true,
             "matches": 37,
@@ -16084,8 +16260,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.1282,
-              "news_signal": null,
+              "edge": -0.0584,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0115,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 4200000,
+                "total_net_value_eur": 4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "in",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.1282,
@@ -16140,20 +16330,14 @@
             },
             "away": {
               "available": true,
-              "edge": -0.0007,
+              "edge": 0.0025,
               "news_signal": {
                 "available": true,
-                "edge": -0.0259,
-                "signal_count": 4,
+                "edge": -0.0195,
+                "signal_count": 3,
                 "confirmed_net_value_eur": -6000000,
-                "total_net_value_eur": -8500000,
+                "total_net_value_eur": -6400000,
                 "top_moves": [
-                  {
-                    "player": "Yusuf Akçiçek",
-                    "direction": "out",
-                    "market_value_eur": 14000000,
-                    "status": "RUMOR"
-                  },
                   {
                     "player": "Sofyan Amrabat",
                     "direction": "out",
@@ -16302,7 +16486,7 @@
           "away_elo": 1640.5,
           "home_points_per_match": 1.75,
           "away_points_per_match": 1.5,
-          "strength_edge": -0.094,
+          "strength_edge": -0.06,
           "home_xg_efficiency": 1.131,
           "away_xg_efficiency": 1.108,
           "referee_adj": 0.0,
@@ -17123,10 +17307,10 @@
               "probability": 0.084
             },
             {
-              "score": "1-2",
-              "home_goals": 1,
-              "away_goals": 2,
-              "probability": 0.064
+              "score": "0-1",
+              "home_goals": 0,
+              "away_goals": 1,
+              "probability": 0.063
             }
           ],
           "recommended_scoreline": {
@@ -17137,7 +17321,7 @@
           },
           "home_win_probability": 0.515,
           "draw_probability": 0.235,
-          "away_win_probability": 0.25,
+          "away_win_probability": 0.249,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -17146,8 +17330,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.1002,
+              "news_signal": {
+                "available": true,
+                "edge": -0.0504,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -4200000,
+                "total_net_value_eur": -4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "out",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -17245,7 +17443,7 @@
           "away_elo": 1488.7,
           "home_points_per_match": 1.25,
           "away_points_per_match": 0.5,
-          "strength_edge": 0.165,
+          "strength_edge": 0.19,
           "home_xg_efficiency": 1.648,
           "away_xg_efficiency": null,
           "referee_adj": 0.0,
@@ -17488,7 +17686,7 @@
           "raw_predicted": "away",
           "predicted": "away",
           "expected_home_goals": 1.3,
-          "expected_away_goals": 2.21,
+          "expected_away_goals": 2.22,
           "top_scorelines": [
             {
               "score": "1-2",
@@ -17527,7 +17725,7 @@
             "away_goals": 2,
             "probability": 0.095
           },
-          "home_win_probability": 0.219,
+          "home_win_probability": 0.218,
           "draw_probability": 0.201,
           "away_win_probability": 0.58,
           "head_to_head": {
@@ -17594,8 +17792,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.1282,
-              "news_signal": null,
+              "edge": -0.0584,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0115,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 4200000,
+                "total_net_value_eur": 4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "in",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.1282,
@@ -17689,7 +17901,7 @@
           "away_elo": 1643.0,
           "home_points_per_match": 0.75,
           "away_points_per_match": 1.75,
-          "strength_edge": -0.491,
+          "strength_edge": -0.526,
           "home_xg_efficiency": 1.098,
           "away_xg_efficiency": 1.131,
           "referee_adj": 0.0,
@@ -17758,20 +17970,14 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.0007,
+              "edge": 0.0025,
               "news_signal": {
                 "available": true,
-                "edge": -0.0259,
-                "signal_count": 4,
+                "edge": -0.0195,
+                "signal_count": 3,
                 "confirmed_net_value_eur": -6000000,
-                "total_net_value_eur": -8500000,
+                "total_net_value_eur": -6400000,
                 "top_moves": [
-                  {
-                    "player": "Yusuf Akçiçek",
-                    "direction": "out",
-                    "market_value_eur": 14000000,
-                    "status": "RUMOR"
-                  },
                   {
                     "player": "Sofyan Amrabat",
                     "direction": "out",
@@ -17846,8 +18052,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.1002,
+              "news_signal": {
+                "available": true,
+                "edge": -0.0504,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -4200000,
+                "total_net_value_eur": -4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "out",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -17976,7 +18196,7 @@
           "away_elo": 1529.2,
           "home_points_per_match": 1.5,
           "away_points_per_match": 1.25,
-          "strength_edge": 0.365,
+          "strength_edge": 0.341,
           "home_xg_efficiency": 1.108,
           "away_xg_efficiency": 1.648,
           "referee_adj": 0.0,
@@ -19630,8 +19850,8 @@
           "data_confidence": "LOW_NEW_TEAM",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.93,
-          "expected_away_goals": 1.28,
+          "expected_home_goals": 1.94,
+          "expected_away_goals": 1.27,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -19655,13 +19875,13 @@
               "score": "2-0",
               "home_goals": 2,
               "away_goals": 0,
-              "probability": 0.075
+              "probability": 0.076
             },
             {
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.064
+              "probability": 0.063
             }
           ],
           "recommended_scoreline": {
@@ -19670,7 +19890,7 @@
             "away_goals": 1,
             "probability": 0.096
           },
-          "home_win_probability": 0.527,
+          "home_win_probability": 0.528,
           "draw_probability": 0.221,
           "away_win_probability": 0.251,
           "head_to_head": {
@@ -19681,8 +19901,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.1282,
-              "news_signal": null,
+              "edge": -0.0584,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0115,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 4200000,
+                "total_net_value_eur": 4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "in",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.1282,
@@ -19780,7 +20014,7 @@
           "away_elo": 1497.4,
           "home_points_per_match": 1.75,
           "away_points_per_match": 1.5,
-          "strength_edge": 0.036,
+          "strength_edge": 0.071,
           "home_xg_efficiency": 1.131,
           "away_xg_efficiency": null,
           "referee_adj": 0.0,
@@ -20658,7 +20892,7 @@
           "data_confidence": "MEDIUM",
           "raw_predicted": "away",
           "predicted": "away",
-          "expected_home_goals": 1.46,
+          "expected_home_goals": 1.47,
           "expected_away_goals": 1.73,
           "top_scorelines": [
             {
@@ -20698,7 +20932,7 @@
             "away_goals": 2,
             "probability": 0.09
           },
-          "home_win_probability": 0.327,
+          "home_win_probability": 0.328,
           "draw_probability": 0.232,
           "away_win_probability": 0.44,
           "head_to_head": {
@@ -20709,8 +20943,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.1002,
+              "news_signal": {
+                "available": true,
+                "edge": -0.0504,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -4200000,
+                "total_net_value_eur": -4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "out",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -20829,7 +21077,7 @@
           "away_elo": 1580.6,
           "home_points_per_match": 1.25,
           "away_points_per_match": 1.75,
-          "strength_edge": -0.327,
+          "strength_edge": -0.302,
           "home_xg_efficiency": 1.648,
           "away_xg_efficiency": 0.994,
           "referee_adj": 0.0,
@@ -20901,20 +21149,14 @@
             },
             "away": {
               "available": true,
-              "edge": -0.0007,
+              "edge": 0.0025,
               "news_signal": {
                 "available": true,
-                "edge": -0.0259,
-                "signal_count": 4,
+                "edge": -0.0195,
+                "signal_count": 3,
                 "confirmed_net_value_eur": -6000000,
-                "total_net_value_eur": -8500000,
+                "total_net_value_eur": -6400000,
                 "top_moves": [
-                  {
-                    "player": "Yusuf Akçiçek",
-                    "direction": "out",
-                    "market_value_eur": 14000000,
-                    "status": "RUMOR"
-                  },
                   {
                     "player": "Sofyan Amrabat",
                     "direction": "out",
@@ -21063,7 +21305,7 @@
           "away_elo": 1640.5,
           "home_points_per_match": 0.5,
           "away_points_per_match": 1.5,
-          "strength_edge": -0.53,
+          "strength_edge": -0.531,
           "home_xg_efficiency": null,
           "away_xg_efficiency": 1.108,
           "referee_adj": 0.0,
@@ -21599,7 +21841,7 @@
             "away_goals": 1,
             "probability": 0.093
           },
-          "home_win_probability": 0.552,
+          "home_win_probability": 0.553,
           "draw_probability": 0.205,
           "away_win_probability": 0.242,
           "head_to_head": {
@@ -21610,8 +21852,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.1282,
-              "news_signal": null,
+              "edge": -0.0584,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0115,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 4200000,
+                "total_net_value_eur": 4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "in",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.1282,
@@ -21761,7 +22017,7 @@
           "away_elo": 1553.7,
           "home_points_per_match": 1.75,
           "away_points_per_match": 2.12,
-          "strength_edge": -0.099,
+          "strength_edge": -0.064,
           "home_xg_efficiency": 1.131,
           "away_xg_efficiency": 0.635,
           "referee_adj": 0.0,
@@ -21820,7 +22076,7 @@
           },
           "home_win_probability": 0.256,
           "draw_probability": 0.236,
-          "away_win_probability": 0.507,
+          "away_win_probability": 0.508,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -21885,20 +22141,14 @@
             },
             "away": {
               "available": true,
-              "edge": -0.0007,
+              "edge": 0.0025,
               "news_signal": {
                 "available": true,
-                "edge": -0.0259,
-                "signal_count": 4,
+                "edge": -0.0195,
+                "signal_count": 3,
                 "confirmed_net_value_eur": -6000000,
-                "total_net_value_eur": -8500000,
+                "total_net_value_eur": -6400000,
                 "top_moves": [
-                  {
-                    "player": "Yusuf Akçiçek",
-                    "direction": "out",
-                    "market_value_eur": 14000000,
-                    "status": "RUMOR"
-                  },
                   {
                     "player": "Sofyan Amrabat",
                     "direction": "out",
@@ -22047,7 +22297,7 @@
           "away_elo": 1640.5,
           "home_points_per_match": 1.0,
           "away_points_per_match": 1.5,
-          "strength_edge": -0.443,
+          "strength_edge": -0.445,
           "home_xg_efficiency": 1.373,
           "away_xg_efficiency": 1.108,
           "referee_adj": 0.0,
@@ -22860,9 +23110,9 @@
             "away_goals": 1,
             "probability": 0.135
           },
-          "home_win_probability": 0.129,
+          "home_win_probability": 0.128,
           "draw_probability": 0.206,
-          "away_win_probability": 0.665,
+          "away_win_probability": 0.666,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -22875,8 +23125,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.1002,
+              "news_signal": {
+                "available": true,
+                "edge": -0.0504,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -4200000,
+                "total_net_value_eur": -4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "out",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -22970,7 +23234,7 @@
           "away_elo": 1529.2,
           "home_points_per_match": 0.33,
           "away_points_per_match": 1.25,
-          "strength_edge": -0.498,
+          "strength_edge": -0.523,
           "home_xg_efficiency": null,
           "away_xg_efficiency": 1.648,
           "referee_adj": 0.0,
@@ -23465,20 +23729,14 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.0007,
+              "edge": 0.0025,
               "news_signal": {
                 "available": true,
-                "edge": -0.0259,
-                "signal_count": 4,
+                "edge": -0.0195,
+                "signal_count": 3,
                 "confirmed_net_value_eur": -6000000,
-                "total_net_value_eur": -8500000,
+                "total_net_value_eur": -6400000,
                 "top_moves": [
-                  {
-                    "player": "Yusuf Akçiçek",
-                    "direction": "out",
-                    "market_value_eur": 14000000,
-                    "status": "RUMOR"
-                  },
                   {
                     "player": "Sofyan Amrabat",
                     "direction": "out",
@@ -23631,7 +23889,7 @@
           "away_elo": 1475.5,
           "home_points_per_match": 1.5,
           "away_points_per_match": 0.33,
-          "strength_edge": 0.863,
+          "strength_edge": 0.865,
           "home_xg_efficiency": 1.108,
           "away_xg_efficiency": null,
           "referee_adj": 0.0,
@@ -23649,7 +23907,7 @@
           "raw_predicted": "away",
           "predicted": "away",
           "expected_home_goals": 1.67,
-          "expected_away_goals": 1.8,
+          "expected_away_goals": 1.81,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -23688,9 +23946,9 @@
             "away_goals": 2,
             "probability": 0.084
           },
-          "home_win_probability": 0.366,
+          "home_win_probability": 0.365,
           "draw_probability": 0.212,
-          "away_win_probability": 0.422,
+          "away_win_probability": 0.423,
           "head_to_head": {
             "available": true,
             "matches": 33,
@@ -23756,8 +24014,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.1282,
-              "news_signal": null,
+              "edge": -0.0584,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0115,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 4200000,
+                "total_net_value_eur": 4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "in",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.1282,
@@ -23886,7 +24158,7 @@
           "away_elo": 1643.0,
           "home_points_per_match": 1.38,
           "away_points_per_match": 1.75,
-          "strength_edge": -0.031,
+          "strength_edge": -0.066,
           "home_xg_efficiency": 1.559,
           "away_xg_efficiency": 1.131,
           "referee_adj": 0.0,
@@ -24550,9 +24822,9 @@
             "away_goals": 1,
             "probability": 0.092
           },
-          "home_win_probability": 0.448,
+          "home_win_probability": 0.449,
           "draw_probability": 0.246,
-          "away_win_probability": 0.306,
+          "away_win_probability": 0.305,
           "head_to_head": {
             "available": true,
             "matches": 15,
@@ -24562,8 +24834,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.1002,
+              "news_signal": {
+                "available": true,
+                "edge": -0.0504,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -4200000,
+                "total_net_value_eur": -4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "out",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -24713,7 +24999,7 @@
           "away_elo": 1615.9,
           "home_points_per_match": 1.25,
           "away_points_per_match": 1.25,
-          "strength_edge": -0.011,
+          "strength_edge": 0.014,
           "home_xg_efficiency": 1.648,
           "away_xg_efficiency": 1.096,
           "referee_adj": 0.0,
@@ -25329,9 +25615,9 @@
             "away_goals": 1,
             "probability": 0.097
           },
-          "home_win_probability": 0.641,
+          "home_win_probability": 0.642,
           "draw_probability": 0.188,
-          "away_win_probability": 0.171,
+          "away_win_probability": 0.17,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -25340,8 +25626,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.1282,
-              "news_signal": null,
+              "edge": -0.0584,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0115,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 4200000,
+                "total_net_value_eur": 4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "in",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.1282,
@@ -25491,7 +25791,7 @@
           "away_elo": 1481.1,
           "home_points_per_match": 1.75,
           "away_points_per_match": 1.12,
-          "strength_edge": 0.387,
+          "strength_edge": 0.422,
           "home_xg_efficiency": 1.131,
           "away_xg_efficiency": 1.436,
           "referee_adj": 0.0,
@@ -25763,7 +26063,7 @@
           "data_confidence": "LOW",
           "raw_predicted": "away",
           "predicted": "away",
-          "expected_home_goals": 1.35,
+          "expected_home_goals": 1.34,
           "expected_away_goals": 1.41,
           "top_scorelines": [
             {
@@ -25805,7 +26105,7 @@
           },
           "home_win_probability": 0.367,
           "draw_probability": 0.238,
-          "away_win_probability": 0.395,
+          "away_win_probability": 0.396,
           "head_to_head": {
             "available": true,
             "matches": 17,
@@ -25871,8 +26171,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.1002,
+              "news_signal": {
+                "available": true,
+                "edge": -0.0504,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -4200000,
+                "total_net_value_eur": -4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "out",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -25966,7 +26280,7 @@
           "away_elo": 1529.2,
           "home_points_per_match": 1.5,
           "away_points_per_match": 1.25,
-          "strength_edge": 0.06,
+          "strength_edge": 0.035,
           "home_xg_efficiency": 1.01,
           "away_xg_efficiency": 1.648,
           "referee_adj": 0.0,
@@ -26038,20 +26352,14 @@
             },
             "away": {
               "available": true,
-              "edge": -0.0007,
+              "edge": 0.0025,
               "news_signal": {
                 "available": true,
-                "edge": -0.0259,
-                "signal_count": 4,
+                "edge": -0.0195,
+                "signal_count": 3,
                 "confirmed_net_value_eur": -6000000,
-                "total_net_value_eur": -8500000,
+                "total_net_value_eur": -6400000,
                 "top_moves": [
-                  {
-                    "player": "Yusuf Akçiçek",
-                    "direction": "out",
-                    "market_value_eur": 14000000,
-                    "status": "RUMOR"
-                  },
                   {
                     "player": "Sofyan Amrabat",
                     "direction": "out",
@@ -26221,7 +26529,7 @@
           "away_elo": 1640.5,
           "home_points_per_match": 1.75,
           "away_points_per_match": 1.5,
-          "strength_edge": -0.037,
+          "strength_edge": -0.039,
           "home_xg_efficiency": 0.994,
           "away_xg_efficiency": 1.108,
           "referee_adj": 0.0,
@@ -26850,9 +27158,9 @@
             "away_goals": 2,
             "probability": 0.094
           },
-          "home_win_probability": 0.285,
+          "home_win_probability": 0.284,
           "draw_probability": 0.231,
-          "away_win_probability": 0.484,
+          "away_win_probability": 0.485,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -26917,8 +27225,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.1282,
-              "news_signal": null,
+              "edge": -0.0584,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0115,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 4200000,
+                "total_net_value_eur": 4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "in",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.1282,
@@ -27012,7 +27334,7 @@
           "away_elo": 1643.0,
           "home_points_per_match": 1.75,
           "away_points_per_match": 1.75,
-          "strength_edge": 0.009,
+          "strength_edge": -0.026,
           "home_xg_efficiency": 0.518,
           "away_xg_efficiency": 1.131,
           "referee_adj": 0.0,
@@ -27315,20 +27637,14 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.0007,
+              "edge": 0.0025,
               "news_signal": {
                 "available": true,
-                "edge": -0.0259,
-                "signal_count": 4,
+                "edge": -0.0195,
+                "signal_count": 3,
                 "confirmed_net_value_eur": -6000000,
-                "total_net_value_eur": -8500000,
+                "total_net_value_eur": -6400000,
                 "top_moves": [
-                  {
-                    "player": "Yusuf Akçiçek",
-                    "direction": "out",
-                    "market_value_eur": 14000000,
-                    "status": "RUMOR"
-                  },
                   {
                     "player": "Sofyan Amrabat",
                     "direction": "out",
@@ -27533,7 +27849,7 @@
           "away_elo": 1615.9,
           "home_points_per_match": 1.5,
           "away_points_per_match": 1.25,
-          "strength_edge": 0.354,
+          "strength_edge": 0.355,
           "home_xg_efficiency": 1.108,
           "away_xg_efficiency": 1.096,
           "referee_adj": 0.0,
@@ -28265,8 +28581,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.1002,
+              "news_signal": {
+                "available": true,
+                "edge": -0.0504,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -4200000,
+                "total_net_value_eur": -4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "out",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -28416,7 +28746,7 @@
           "away_elo": 1436.8,
           "home_points_per_match": 1.25,
           "away_points_per_match": 0.75,
-          "strength_edge": 0.22,
+          "strength_edge": 0.245,
           "home_xg_efficiency": 1.648,
           "away_xg_efficiency": 1.098,
           "referee_adj": 0.0,
@@ -29165,7 +29495,7 @@
               "score": "2-0",
               "home_goals": 2,
               "away_goals": 0,
-              "probability": 0.101
+              "probability": 0.102
             },
             {
               "score": "1-0",
@@ -29196,11 +29526,11 @@
             "score": "2-0",
             "home_goals": 2,
             "away_goals": 0,
-            "probability": 0.101
+            "probability": 0.102
           },
-          "home_win_probability": 0.642,
+          "home_win_probability": 0.643,
           "draw_probability": 0.18,
-          "away_win_probability": 0.178,
+          "away_win_probability": 0.177,
           "head_to_head": {
             "available": true,
             "matches": 26,
@@ -29210,8 +29540,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.1282,
-              "news_signal": null,
+              "edge": -0.0584,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0115,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 4200000,
+                "total_net_value_eur": 4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "in",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.1282,
@@ -29375,7 +29719,7 @@
           "away_elo": 1460.2,
           "home_points_per_match": 1.75,
           "away_points_per_match": 1.0,
-          "strength_edge": 0.263,
+          "strength_edge": 0.298,
           "home_xg_efficiency": 1.131,
           "away_xg_efficiency": 0.828,
           "referee_adj": 0.0,
@@ -29975,20 +30319,14 @@
             },
             "away": {
               "available": true,
-              "edge": -0.0007,
+              "edge": 0.0025,
               "news_signal": {
                 "available": true,
-                "edge": -0.0259,
-                "signal_count": 4,
+                "edge": -0.0195,
+                "signal_count": 3,
                 "confirmed_net_value_eur": -6000000,
-                "total_net_value_eur": -8500000,
+                "total_net_value_eur": -6400000,
                 "top_moves": [
-                  {
-                    "player": "Yusuf Akçiçek",
-                    "direction": "out",
-                    "market_value_eur": 14000000,
-                    "status": "RUMOR"
-                  },
                   {
                     "player": "Sofyan Amrabat",
                     "direction": "out",
@@ -30137,7 +30475,7 @@
           "away_elo": 1640.5,
           "home_points_per_match": 1.5,
           "away_points_per_match": 1.5,
-          "strength_edge": -0.305,
+          "strength_edge": -0.306,
           "home_xg_efficiency": 1.01,
           "away_xg_efficiency": 1.108,
           "referee_adj": 0.0,
@@ -30345,8 +30683,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.1002,
+              "news_signal": {
+                "available": true,
+                "edge": -0.0504,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -4200000,
+                "total_net_value_eur": -4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "out",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -30440,7 +30792,7 @@
           "away_elo": 1529.2,
           "home_points_per_match": 1.5,
           "away_points_per_match": 1.25,
-          "strength_edge": 0.235,
+          "strength_edge": 0.21,
           "home_xg_efficiency": null,
           "away_xg_efficiency": 1.648,
           "referee_adj": 0.0,
@@ -31101,20 +31453,14 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.0007,
+              "edge": 0.0025,
               "news_signal": {
                 "available": true,
-                "edge": -0.0259,
-                "signal_count": 4,
+                "edge": -0.0195,
+                "signal_count": 3,
                 "confirmed_net_value_eur": -6000000,
-                "total_net_value_eur": -8500000,
+                "total_net_value_eur": -6400000,
                 "top_moves": [
-                  {
-                    "player": "Yusuf Akçiçek",
-                    "direction": "out",
-                    "market_value_eur": 14000000,
-                    "status": "RUMOR"
-                  },
                   {
                     "player": "Sofyan Amrabat",
                     "direction": "out",
@@ -31267,7 +31613,7 @@
           "away_elo": 1497.4,
           "home_points_per_match": 1.5,
           "away_points_per_match": 1.5,
-          "strength_edge": 0.13,
+          "strength_edge": 0.131,
           "home_xg_efficiency": 1.108,
           "away_xg_efficiency": null,
           "referee_adj": 0.0,
@@ -31544,9 +31890,9 @@
             "away_goals": 2,
             "probability": 0.098
           },
-          "home_win_probability": 0.223,
+          "home_win_probability": 0.222,
           "draw_probability": 0.198,
-          "away_win_probability": 0.579,
+          "away_win_probability": 0.58,
           "head_to_head": {
             "available": true,
             "matches": 14,
@@ -31612,8 +31958,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.1282,
-              "news_signal": null,
+              "edge": -0.0584,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0115,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 4200000,
+                "total_net_value_eur": 4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "in",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.1282,
@@ -31707,7 +32067,7 @@
           "away_elo": 1643.0,
           "home_points_per_match": 1.0,
           "away_points_per_match": 1.75,
-          "strength_edge": -0.371,
+          "strength_edge": -0.406,
           "home_xg_efficiency": 1.449,
           "away_xg_efficiency": 1.131,
           "referee_adj": 0.0,
@@ -31984,9 +32344,9 @@
             "away_goals": 2,
             "probability": 0.086
           },
-          "home_win_probability": 0.373,
+          "home_win_probability": 0.374,
           "draw_probability": 0.196,
-          "away_win_probability": 0.431,
+          "away_win_probability": 0.43,
           "head_to_head": {
             "available": true,
             "matches": 15,
@@ -31996,8 +32356,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.1002,
+              "news_signal": {
+                "available": true,
+                "edge": -0.0504,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -4200000,
+                "total_net_value_eur": -4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "out",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -32182,7 +32556,7 @@
           "away_elo": 1564.9,
           "home_points_per_match": 1.25,
           "away_points_per_match": 1.38,
-          "strength_edge": -0.24,
+          "strength_edge": -0.215,
           "home_xg_efficiency": 1.648,
           "away_xg_efficiency": 1.559,
           "referee_adj": 0.0,
@@ -32998,20 +33372,14 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.0007,
+              "edge": 0.0025,
               "news_signal": {
                 "available": true,
-                "edge": -0.0259,
-                "signal_count": 4,
+                "edge": -0.0195,
+                "signal_count": 3,
                 "confirmed_net_value_eur": -6000000,
-                "total_net_value_eur": -8500000,
+                "total_net_value_eur": -6400000,
                 "top_moves": [
-                  {
-                    "player": "Yusuf Akçiçek",
-                    "direction": "out",
-                    "market_value_eur": 14000000,
-                    "status": "RUMOR"
-                  },
                   {
                     "player": "Sofyan Amrabat",
                     "direction": "out",
@@ -33216,7 +33584,7 @@
           "away_elo": 1478.4,
           "home_points_per_match": 1.5,
           "away_points_per_match": 2.0,
-          "strength_edge": 0.065,
+          "strength_edge": 0.066,
           "home_xg_efficiency": 1.108,
           "away_xg_efficiency": 1.152,
           "referee_adj": 0.0,
@@ -33802,7 +34170,7 @@
           "raw_predicted": "away",
           "predicted": "away",
           "expected_home_goals": 1.14,
-          "expected_away_goals": 1.99,
+          "expected_away_goals": 2.0,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -33856,8 +34224,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.1282,
-              "news_signal": null,
+              "edge": -0.0584,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0115,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 4200000,
+                "total_net_value_eur": 4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "in",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.1282,
@@ -33951,7 +34333,7 @@
           "away_elo": 1643.0,
           "home_points_per_match": 0.5,
           "away_points_per_match": 1.75,
-          "strength_edge": -0.436,
+          "strength_edge": -0.471,
           "home_xg_efficiency": null,
           "away_xg_efficiency": 1.131,
           "referee_adj": 0.0,
@@ -34262,9 +34644,9 @@
             "away_goals": 1,
             "probability": 0.086
           },
-          "home_win_probability": 0.434,
+          "home_win_probability": 0.435,
           "draw_probability": 0.198,
-          "away_win_probability": 0.368,
+          "away_win_probability": 0.367,
           "head_to_head": {
             "available": true,
             "matches": 13,
@@ -34274,8 +34656,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.1002,
+              "news_signal": {
+                "available": true,
+                "edge": -0.0504,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -4200000,
+                "total_net_value_eur": -4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "out",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -34425,7 +34821,7 @@
           "away_elo": 1553.7,
           "home_points_per_match": 1.25,
           "away_points_per_match": 2.12,
-          "strength_edge": -0.37,
+          "strength_edge": -0.345,
           "home_xg_efficiency": 1.648,
           "away_xg_efficiency": 0.635,
           "referee_adj": 0.0,
@@ -35043,20 +35439,14 @@
             },
             "away": {
               "available": true,
-              "edge": -0.0007,
+              "edge": 0.0025,
               "news_signal": {
                 "available": true,
-                "edge": -0.0259,
-                "signal_count": 4,
+                "edge": -0.0195,
+                "signal_count": 3,
                 "confirmed_net_value_eur": -6000000,
-                "total_net_value_eur": -8500000,
+                "total_net_value_eur": -6400000,
                 "top_moves": [
-                  {
-                    "player": "Yusuf Akçiçek",
-                    "direction": "out",
-                    "market_value_eur": 14000000,
-                    "status": "RUMOR"
-                  },
                   {
                     "player": "Sofyan Amrabat",
                     "direction": "out",
@@ -35205,7 +35595,7 @@
           "away_elo": 1640.5,
           "home_points_per_match": 0.75,
           "away_points_per_match": 1.5,
-          "strength_edge": -0.585,
+          "strength_edge": -0.586,
           "home_xg_efficiency": 1.098,
           "away_xg_efficiency": 1.108,
           "referee_adj": 0.0,
@@ -35222,7 +35612,7 @@
           "data_confidence": "LOW_NEW_TEAM",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 2.57,
+          "expected_home_goals": 2.58,
           "expected_away_goals": 0.41,
           "top_scorelines": [
             {
@@ -35247,7 +35637,7 @@
               "score": "4-0",
               "home_goals": 4,
               "away_goals": 0,
-              "probability": 0.092
+              "probability": 0.093
             },
             {
               "score": "2-1",
@@ -35262,8 +35652,8 @@
             "away_goals": 0,
             "probability": 0.167
           },
-          "home_win_probability": 0.838,
-          "draw_probability": 0.121,
+          "home_win_probability": 0.839,
+          "draw_probability": 0.12,
           "away_win_probability": 0.041,
           "head_to_head": {
             "available": false,
@@ -35273,8 +35663,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.1282,
-              "news_signal": null,
+              "edge": -0.0584,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0115,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 4200000,
+                "total_net_value_eur": 4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "in",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.1282,
@@ -35372,7 +35776,7 @@
           "away_elo": 1475.5,
           "home_points_per_match": 1.75,
           "away_points_per_match": 0.33,
-          "strength_edge": 0.769,
+          "strength_edge": 0.804,
           "home_xg_efficiency": 1.131,
           "away_xg_efficiency": null,
           "referee_adj": 0.0,
@@ -35815,7 +36219,7 @@
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.084
+              "probability": 0.083
             },
             {
               "score": "1-2",
@@ -35836,9 +36240,9 @@
             "away_goals": 1,
             "probability": 0.092
           },
-          "home_win_probability": 0.465,
+          "home_win_probability": 0.464,
           "draw_probability": 0.211,
-          "away_win_probability": 0.324,
+          "away_win_probability": 0.325,
           "head_to_head": {
             "available": true,
             "matches": 12,
@@ -35904,8 +36308,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.1002,
+              "news_signal": {
+                "available": true,
+                "edge": -0.0504,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -4200000,
+                "total_net_value_eur": -4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "out",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -35999,7 +36417,7 @@
           "away_elo": 1529.2,
           "home_points_per_match": 2.0,
           "away_points_per_match": 1.25,
-          "strength_edge": 0.3,
+          "strength_edge": 0.275,
           "home_xg_efficiency": 1.152,
           "away_xg_efficiency": 1.648,
           "referee_adj": 0.0,
@@ -37026,20 +37444,14 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.0007,
+              "edge": 0.0025,
               "news_signal": {
                 "available": true,
-                "edge": -0.0259,
-                "signal_count": 4,
+                "edge": -0.0195,
+                "signal_count": 3,
                 "confirmed_net_value_eur": -6000000,
-                "total_net_value_eur": -8500000,
+                "total_net_value_eur": -6400000,
                 "top_moves": [
-                  {
-                    "player": "Yusuf Akçiçek",
-                    "direction": "out",
-                    "market_value_eur": 14000000,
-                    "status": "RUMOR"
-                  },
                   {
                     "player": "Sofyan Amrabat",
                     "direction": "out",
@@ -37244,7 +37656,7 @@
           "away_elo": 1553.7,
           "home_points_per_match": 1.5,
           "away_points_per_match": 2.12,
-          "strength_edge": -0.005,
+          "strength_edge": -0.004,
           "home_xg_efficiency": 1.108,
           "away_xg_efficiency": 0.635,
           "referee_adj": 0.0,
@@ -37878,7 +38290,7 @@
           },
           "home_win_probability": 0.316,
           "draw_probability": 0.173,
-          "away_win_probability": 0.51,
+          "away_win_probability": 0.511,
           "head_to_head": {
             "available": true,
             "matches": 14,
@@ -37888,8 +38300,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.1002,
+              "news_signal": {
+                "available": true,
+                "edge": -0.0504,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -4200000,
+                "total_net_value_eur": -4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "out",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -37944,8 +38370,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.1282,
-              "news_signal": null,
+              "edge": -0.0584,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0115,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 4200000,
+                "total_net_value_eur": 4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "in",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.1282,
@@ -38039,7 +38479,7 @@
           "away_elo": 1643.0,
           "home_points_per_match": 1.25,
           "away_points_per_match": 1.75,
-          "strength_edge": -0.271,
+          "strength_edge": -0.281,
           "home_xg_efficiency": 1.648,
           "away_xg_efficiency": 1.131,
           "referee_adj": 0.0,
@@ -38282,7 +38722,7 @@
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.073
+              "probability": 0.072
             },
             {
               "score": "2-2",
@@ -38303,7 +38743,7 @@
             "away_goals": 1,
             "probability": 0.089
           },
-          "home_win_probability": 0.462,
+          "home_win_probability": 0.463,
           "draw_probability": 0.223,
           "away_win_probability": 0.315,
           "head_to_head": {
@@ -38314,8 +38754,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.1282,
-              "news_signal": null,
+              "edge": -0.0584,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0115,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 4200000,
+                "total_net_value_eur": 4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "in",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.1282,
@@ -38434,7 +38888,7 @@
           "away_elo": 1580.6,
           "home_points_per_match": 1.75,
           "away_points_per_match": 1.75,
-          "strength_edge": -0.057,
+          "strength_edge": -0.022,
           "home_xg_efficiency": 1.131,
           "away_xg_efficiency": 0.994,
           "referee_adj": 0.0,
@@ -38793,20 +39247,14 @@
             },
             "away": {
               "available": true,
-              "edge": -0.0007,
+              "edge": 0.0025,
               "news_signal": {
                 "available": true,
-                "edge": -0.0259,
-                "signal_count": 4,
+                "edge": -0.0195,
+                "signal_count": 3,
                 "confirmed_net_value_eur": -6000000,
-                "total_net_value_eur": -8500000,
+                "total_net_value_eur": -6400000,
                 "top_moves": [
-                  {
-                    "player": "Yusuf Akçiçek",
-                    "direction": "out",
-                    "market_value_eur": 14000000,
-                    "status": "RUMOR"
-                  },
                   {
                     "player": "Sofyan Amrabat",
                     "direction": "out",
@@ -38990,7 +39438,7 @@
           "away_elo": 1640.5,
           "home_points_per_match": 1.38,
           "away_points_per_match": 1.5,
-          "strength_edge": -0.125,
+          "strength_edge": -0.126,
           "home_xg_efficiency": 1.559,
           "away_xg_efficiency": 1.108,
           "referee_adj": 0.0,
@@ -39800,19 +40248,19 @@
               "score": "0-1",
               "home_goals": 0,
               "away_goals": 1,
-              "probability": 0.081
+              "probability": 0.082
             },
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.078
+              "probability": 0.077
             },
             {
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.071
+              "probability": 0.07
             }
           ],
           "recommended_scoreline": {
@@ -39888,8 +40336,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.1002,
+              "news_signal": {
+                "available": true,
+                "edge": -0.0504,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -4200000,
+                "total_net_value_eur": -4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "out",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -39983,7 +40445,7 @@
           "away_elo": 1529.2,
           "home_points_per_match": 1.0,
           "away_points_per_match": 1.25,
-          "strength_edge": -0.1,
+          "strength_edge": -0.125,
           "home_xg_efficiency": 1.449,
           "away_xg_efficiency": 1.648,
           "referee_adj": 0.0,
@@ -40224,20 +40686,14 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.0007,
+              "edge": 0.0025,
               "news_signal": {
                 "available": true,
-                "edge": -0.0259,
-                "signal_count": 4,
+                "edge": -0.0195,
+                "signal_count": 3,
                 "confirmed_net_value_eur": -6000000,
-                "total_net_value_eur": -8500000,
+                "total_net_value_eur": -6400000,
                 "top_moves": [
-                  {
-                    "player": "Yusuf Akçiçek",
-                    "direction": "out",
-                    "market_value_eur": 14000000,
-                    "status": "RUMOR"
-                  },
                   {
                     "player": "Sofyan Amrabat",
                     "direction": "out",
@@ -40442,7 +40898,7 @@
           "away_elo": 1435.9,
           "home_points_per_match": 1.5,
           "away_points_per_match": 1.0,
-          "strength_edge": 0.465,
+          "strength_edge": 0.466,
           "home_xg_efficiency": 1.108,
           "away_xg_efficiency": 1.449,
           "referee_adj": 0.0,
@@ -40678,7 +41134,7 @@
           "data_confidence": "HIGH",
           "raw_predicted": "away",
           "predicted": "away",
-          "expected_home_goals": 1.09,
+          "expected_home_goals": 1.08,
           "expected_away_goals": 1.76,
           "top_scorelines": [
             {
@@ -40718,7 +41174,7 @@
             "away_goals": 1,
             "probability": 0.102
           },
-          "home_win_probability": 0.234,
+          "home_win_probability": 0.233,
           "draw_probability": 0.235,
           "away_win_probability": 0.531,
           "head_to_head": {
@@ -40785,8 +41241,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.1282,
-              "news_signal": null,
+              "edge": -0.0584,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0115,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 4200000,
+                "total_net_value_eur": 4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "in",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.1282,
@@ -40880,7 +41350,7 @@
           "away_elo": 1643.0,
           "home_points_per_match": 1.0,
           "away_points_per_match": 1.75,
-          "strength_edge": -0.349,
+          "strength_edge": -0.384,
           "home_xg_efficiency": 1.373,
           "away_xg_efficiency": 1.131,
           "referee_adj": 0.0,
@@ -41168,8 +41638,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.1002,
+              "news_signal": {
+                "available": true,
+                "edge": -0.0504,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -4200000,
+                "total_net_value_eur": -4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "out",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -41333,7 +41817,7 @@
           "away_elo": 1460.2,
           "home_points_per_match": 1.25,
           "away_points_per_match": 1.0,
-          "strength_edge": -0.008,
+          "strength_edge": 0.017,
           "home_xg_efficiency": 1.648,
           "away_xg_efficiency": 0.828,
           "referee_adj": 0.0,
@@ -42122,7 +42606,7 @@
           },
           "home_win_probability": 0.591,
           "draw_probability": 0.208,
-          "away_win_probability": 0.201,
+          "away_win_probability": 0.2,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -42131,8 +42615,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.1282,
-              "news_signal": null,
+              "edge": -0.0584,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0115,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 4200000,
+                "total_net_value_eur": 4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "in",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.1282,
@@ -42282,7 +42780,7 @@
           "away_elo": 1615.9,
           "home_points_per_match": 1.75,
           "away_points_per_match": 1.25,
-          "strength_edge": 0.26,
+          "strength_edge": 0.295,
           "home_xg_efficiency": 1.131,
           "away_xg_efficiency": 1.096,
           "referee_adj": 0.0,
@@ -43257,7 +43755,7 @@
           "data_confidence": "MEDIUM",
           "raw_predicted": "away",
           "predicted": "away",
-          "expected_home_goals": 1.48,
+          "expected_home_goals": 1.47,
           "expected_away_goals": 1.7,
           "top_scorelines": [
             {
@@ -43365,8 +43863,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.1002,
+              "news_signal": {
+                "available": true,
+                "edge": -0.0504,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -4200000,
+                "total_net_value_eur": -4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "out",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -43460,7 +43972,7 @@
           "away_elo": 1529.2,
           "home_points_per_match": 1.12,
           "away_points_per_match": 1.25,
-          "strength_edge": -0.116,
+          "strength_edge": -0.141,
           "home_xg_efficiency": 1.436,
           "away_xg_efficiency": 1.648,
           "referee_adj": 0.0,
@@ -43584,20 +44096,14 @@
             },
             "away": {
               "available": true,
-              "edge": -0.0007,
+              "edge": 0.0025,
               "news_signal": {
                 "available": true,
-                "edge": -0.0259,
-                "signal_count": 4,
+                "edge": -0.0195,
+                "signal_count": 3,
                 "confirmed_net_value_eur": -6000000,
-                "total_net_value_eur": -8500000,
+                "total_net_value_eur": -6400000,
                 "top_moves": [
-                  {
-                    "player": "Yusuf Akçiçek",
-                    "direction": "out",
-                    "market_value_eur": 14000000,
-                    "status": "RUMOR"
-                  },
                   {
                     "player": "Sofyan Amrabat",
                     "direction": "out",
@@ -43746,7 +44252,7 @@
           "away_elo": 1640.5,
           "home_points_per_match": 1.75,
           "away_points_per_match": 1.5,
-          "strength_edge": -0.085,
+          "strength_edge": -0.086,
           "home_xg_efficiency": 0.518,
           "away_xg_efficiency": 1.108,
           "referee_adj": 0.0,
@@ -44039,20 +44545,14 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.0007,
+              "edge": 0.0025,
               "news_signal": {
                 "available": true,
-                "edge": -0.0259,
-                "signal_count": 4,
+                "edge": -0.0195,
+                "signal_count": 3,
                 "confirmed_net_value_eur": -6000000,
-                "total_net_value_eur": -8500000,
+                "total_net_value_eur": -6400000,
                 "top_moves": [
-                  {
-                    "player": "Yusuf Akçiçek",
-                    "direction": "out",
-                    "market_value_eur": 14000000,
-                    "status": "RUMOR"
-                  },
                   {
                     "player": "Sofyan Amrabat",
                     "direction": "out",
@@ -44257,7 +44757,7 @@
           "away_elo": 1481.1,
           "home_points_per_match": 1.5,
           "away_points_per_match": 1.12,
-          "strength_edge": 0.48,
+          "strength_edge": 0.482,
           "home_xg_efficiency": 1.108,
           "away_xg_efficiency": 1.436,
           "referee_adj": 0.0,
@@ -44941,7 +45441,7 @@
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.078
+              "probability": 0.077
             },
             {
               "score": "0-1",
@@ -44956,8 +45456,8 @@
             "away_goals": 1,
             "probability": 0.089
           },
-          "home_win_probability": 0.422,
-          "draw_probability": 0.247,
+          "home_win_probability": 0.423,
+          "draw_probability": 0.246,
           "away_win_probability": 0.331,
           "head_to_head": {
             "available": false,
@@ -44967,8 +45467,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.1002,
+              "news_signal": {
+                "available": true,
+                "edge": -0.0504,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -4200000,
+                "total_net_value_eur": -4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "out",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -45118,7 +45632,7 @@
           "away_elo": 1436.9,
           "home_points_per_match": 1.25,
           "away_points_per_match": 1.75,
-          "strength_edge": -0.28,
+          "strength_edge": -0.255,
           "home_xg_efficiency": 1.648,
           "away_xg_efficiency": 0.518,
           "referee_adj": 0.0,
@@ -45696,7 +46210,7 @@
               "score": "0-2",
               "home_goals": 0,
               "away_goals": 2,
-              "probability": 0.084
+              "probability": 0.085
             },
             {
               "score": "2-1",
@@ -45711,9 +46225,9 @@
             "away_goals": 2,
             "probability": 0.098
           },
-          "home_win_probability": 0.246,
+          "home_win_probability": 0.245,
           "draw_probability": 0.212,
-          "away_win_probability": 0.542,
+          "away_win_probability": 0.543,
           "head_to_head": {
             "available": true,
             "matches": 30,
@@ -45779,8 +46293,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.1282,
-              "news_signal": null,
+              "edge": -0.0584,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0115,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 4200000,
+                "total_net_value_eur": 4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "in",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.1282,
@@ -45874,7 +46402,7 @@
           "away_elo": 1643.0,
           "home_points_per_match": 1.5,
           "away_points_per_match": 1.75,
-          "strength_edge": -0.211,
+          "strength_edge": -0.246,
           "home_xg_efficiency": 1.01,
           "away_xg_efficiency": 1.131,
           "referee_adj": 0.0,
@@ -46578,9 +47106,9 @@
             "away_goals": 1,
             "probability": 0.096
           },
-          "home_win_probability": 0.522,
+          "home_win_probability": 0.523,
           "draw_probability": 0.234,
-          "away_win_probability": 0.244,
+          "away_win_probability": 0.243,
           "head_to_head": {
             "available": true,
             "matches": 22,
@@ -46590,8 +47118,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.1282,
-              "news_signal": null,
+              "edge": -0.0584,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0115,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 4200000,
+                "total_net_value_eur": 4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "in",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.1282,
@@ -46741,7 +47283,7 @@
           "away_elo": 1478.4,
           "home_points_per_match": 1.75,
           "away_points_per_match": 2.0,
-          "strength_edge": -0.029,
+          "strength_edge": 0.006,
           "home_xg_efficiency": 1.131,
           "away_xg_efficiency": 1.152,
           "referee_adj": 0.0,
@@ -46880,20 +47422,14 @@
             },
             "away": {
               "available": true,
-              "edge": -0.0007,
+              "edge": 0.0025,
               "news_signal": {
                 "available": true,
-                "edge": -0.0259,
-                "signal_count": 4,
+                "edge": -0.0195,
+                "signal_count": 3,
                 "confirmed_net_value_eur": -6000000,
-                "total_net_value_eur": -8500000,
+                "total_net_value_eur": -6400000,
                 "top_moves": [
-                  {
-                    "player": "Yusuf Akçiçek",
-                    "direction": "out",
-                    "market_value_eur": 14000000,
-                    "status": "RUMOR"
-                  },
                   {
                     "player": "Sofyan Amrabat",
                     "direction": "out",
@@ -47042,7 +47578,7 @@
           "away_elo": 1640.5,
           "home_points_per_match": 1.0,
           "away_points_per_match": 1.5,
-          "strength_edge": -0.357,
+          "strength_edge": -0.359,
           "home_xg_efficiency": 0.828,
           "away_xg_efficiency": 1.108,
           "referee_adj": 0.0,
@@ -47433,7 +47969,7 @@
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.092
+              "probability": 0.093
             },
             {
               "score": "2-0",
@@ -47466,8 +48002,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.1002,
+              "news_signal": {
+                "available": true,
+                "edge": -0.0504,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -4200000,
+                "total_net_value_eur": -4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "out",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -47617,7 +48167,7 @@
           "away_elo": 1456.5,
           "home_points_per_match": 1.25,
           "away_points_per_match": 1.0,
-          "strength_edge": 0.079,
+          "strength_edge": 0.103,
           "home_xg_efficiency": 1.648,
           "away_xg_efficiency": 1.373,
           "referee_adj": 0.0,
@@ -48299,7 +48849,7 @@
             "away_goals": 1,
             "probability": 0.08
           },
-          "home_win_probability": 0.389,
+          "home_win_probability": 0.388,
           "draw_probability": 0.252,
           "away_win_probability": 0.36,
           "head_to_head": {
@@ -48311,20 +48861,14 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.0007,
+              "edge": 0.0025,
               "news_signal": {
                 "available": true,
-                "edge": -0.0259,
-                "signal_count": 4,
+                "edge": -0.0195,
+                "signal_count": 3,
                 "confirmed_net_value_eur": -6000000,
-                "total_net_value_eur": -8500000,
+                "total_net_value_eur": -6400000,
                 "top_moves": [
-                  {
-                    "player": "Yusuf Akçiçek",
-                    "direction": "out",
-                    "market_value_eur": 14000000,
-                    "status": "RUMOR"
-                  },
                   {
                     "player": "Sofyan Amrabat",
                     "direction": "out",
@@ -48399,8 +48943,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.1282,
-              "news_signal": null,
+              "edge": -0.0584,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0115,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 4200000,
+                "total_net_value_eur": 4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "in",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.1282,
@@ -48529,7 +49087,7 @@
           "away_elo": 1643.0,
           "home_points_per_match": 1.5,
           "away_points_per_match": 1.75,
-          "strength_edge": 0.094,
+          "strength_edge": 0.06,
           "home_xg_efficiency": 1.108,
           "away_xg_efficiency": 1.131,
           "referee_adj": 0.0,
@@ -48972,7 +49530,7 @@
             "away_goals": 2,
             "probability": 0.09
           },
-          "home_win_probability": 0.324,
+          "home_win_probability": 0.323,
           "draw_probability": 0.246,
           "away_win_probability": 0.43,
           "head_to_head": {
@@ -48987,8 +49545,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.1002,
+              "news_signal": {
+                "available": true,
+                "edge": -0.0504,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -4200000,
+                "total_net_value_eur": -4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "out",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -49082,7 +49654,7 @@
           "away_elo": 1529.2,
           "home_points_per_match": 0.5,
           "away_points_per_match": 1.25,
-          "strength_edge": -0.165,
+          "strength_edge": -0.19,
           "home_xg_efficiency": null,
           "away_xg_efficiency": 1.648,
           "referee_adj": 0.0,
@@ -50431,9 +51003,9 @@
             "away_goals": 1,
             "probability": 0.095
           },
-          "home_win_probability": 0.656,
+          "home_win_probability": 0.657,
           "draw_probability": 0.181,
-          "away_win_probability": 0.163,
+          "away_win_probability": 0.162,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -50442,8 +51014,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.1282,
-              "news_signal": null,
+              "edge": -0.0584,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0115,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 4200000,
+                "total_net_value_eur": 4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "in",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.1282,
@@ -50593,7 +51179,7 @@
           "away_elo": 1436.8,
           "home_points_per_match": 1.75,
           "away_points_per_match": 0.75,
-          "strength_edge": 0.491,
+          "strength_edge": 0.526,
           "home_xg_efficiency": 1.131,
           "away_xg_efficiency": 1.098,
           "referee_adj": 0.0,
@@ -51039,7 +51625,7 @@
           },
           "home_win_probability": 0.305,
           "draw_probability": 0.257,
-          "away_win_probability": 0.439,
+          "away_win_probability": 0.438,
           "head_to_head": {
             "available": true,
             "matches": 15,
@@ -51049,8 +51635,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.1002,
+              "news_signal": {
+                "available": true,
+                "edge": -0.0504,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -4200000,
+                "total_net_value_eur": -4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "out",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -51105,20 +51705,14 @@
             },
             "away": {
               "available": true,
-              "edge": -0.0007,
+              "edge": 0.0025,
               "news_signal": {
                 "available": true,
-                "edge": -0.0259,
-                "signal_count": 4,
+                "edge": -0.0195,
+                "signal_count": 3,
                 "confirmed_net_value_eur": -6000000,
-                "total_net_value_eur": -8500000,
+                "total_net_value_eur": -6400000,
                 "top_moves": [
-                  {
-                    "player": "Yusuf Akçiçek",
-                    "direction": "out",
-                    "market_value_eur": 14000000,
-                    "status": "RUMOR"
-                  },
                   {
                     "player": "Sofyan Amrabat",
                     "direction": "out",
@@ -51267,7 +51861,7 @@
           "away_elo": 1640.5,
           "home_points_per_match": 1.25,
           "away_points_per_match": 1.5,
-          "strength_edge": -0.365,
+          "strength_edge": -0.341,
           "home_xg_efficiency": 1.648,
           "away_xg_efficiency": 1.108,
           "referee_adj": 0.0,
@@ -52128,20 +52722,14 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.0007,
+              "edge": 0.0025,
               "news_signal": {
                 "available": true,
-                "edge": -0.0259,
-                "signal_count": 4,
+                "edge": -0.0195,
+                "signal_count": 3,
                 "confirmed_net_value_eur": -6000000,
-                "total_net_value_eur": -8500000,
+                "total_net_value_eur": -6400000,
                 "top_moves": [
-                  {
-                    "player": "Yusuf Akçiçek",
-                    "direction": "out",
-                    "market_value_eur": 14000000,
-                    "status": "RUMOR"
-                  },
                   {
                     "player": "Sofyan Amrabat",
                     "direction": "out",
@@ -52294,7 +52882,7 @@
           "away_elo": 1488.7,
           "home_points_per_match": 1.5,
           "away_points_per_match": 0.5,
-          "strength_edge": 0.53,
+          "strength_edge": 0.531,
           "home_xg_efficiency": 1.108,
           "away_xg_efficiency": null,
           "referee_adj": 0.0,
@@ -52957,7 +53545,7 @@
             "away_goals": 1,
             "probability": 0.096
           },
-          "home_win_probability": 0.516,
+          "home_win_probability": 0.515,
           "draw_probability": 0.223,
           "away_win_probability": 0.261,
           "head_to_head": {
@@ -52972,8 +53560,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.1002,
+              "news_signal": {
+                "available": true,
+                "edge": -0.0504,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -4200000,
+                "total_net_value_eur": -4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "out",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -53088,7 +53690,7 @@
           "away_elo": 1529.2,
           "home_points_per_match": 1.75,
           "away_points_per_match": 1.25,
-          "strength_edge": 0.327,
+          "strength_edge": 0.302,
           "home_xg_efficiency": 0.994,
           "away_xg_efficiency": 1.648,
           "referee_adj": 0.0,
@@ -53160,8 +53762,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.1282,
-              "news_signal": null,
+              "edge": -0.0584,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0115,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 4200000,
+                "total_net_value_eur": 4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "in",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.1282,
@@ -53255,7 +53871,7 @@
           "away_elo": 1643.0,
           "home_points_per_match": 1.5,
           "away_points_per_match": 1.75,
-          "strength_edge": -0.036,
+          "strength_edge": -0.071,
           "home_xg_efficiency": null,
           "away_xg_efficiency": 1.131,
           "referee_adj": 0.0,
@@ -54061,9 +54677,9 @@
             "away_goals": 2,
             "probability": 0.088
           },
-          "home_win_probability": 0.307,
+          "home_win_probability": 0.306,
           "draw_probability": 0.216,
-          "away_win_probability": 0.477,
+          "away_win_probability": 0.478,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -54128,8 +54744,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.1282,
-              "news_signal": null,
+              "edge": -0.0584,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0115,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 4200000,
+                "total_net_value_eur": 4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "in",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.1282,
@@ -54223,7 +54853,7 @@
           "away_elo": 1643.0,
           "home_points_per_match": 2.12,
           "away_points_per_match": 1.75,
-          "strength_edge": 0.099,
+          "strength_edge": 0.064,
           "home_xg_efficiency": 0.635,
           "away_xg_efficiency": 1.131,
           "referee_adj": 0.0,
@@ -54291,20 +54921,14 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.0007,
+              "edge": 0.0025,
               "news_signal": {
                 "available": true,
-                "edge": -0.0259,
-                "signal_count": 4,
+                "edge": -0.0195,
+                "signal_count": 3,
                 "confirmed_net_value_eur": -6000000,
-                "total_net_value_eur": -8500000,
+                "total_net_value_eur": -6400000,
                 "top_moves": [
-                  {
-                    "player": "Yusuf Akçiçek",
-                    "direction": "out",
-                    "market_value_eur": 14000000,
-                    "status": "RUMOR"
-                  },
                   {
                     "player": "Sofyan Amrabat",
                     "direction": "out",
@@ -54509,7 +55133,7 @@
           "away_elo": 1456.5,
           "home_points_per_match": 1.5,
           "away_points_per_match": 1.0,
-          "strength_edge": 0.443,
+          "strength_edge": 0.445,
           "home_xg_efficiency": 1.108,
           "away_xg_efficiency": 1.373,
           "referee_adj": 0.0,
@@ -55267,7 +55891,7 @@
           "data_confidence": "LOW_NEW_TEAM",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 2.12,
+          "expected_home_goals": 2.13,
           "expected_away_goals": 0.57,
           "top_scorelines": [
             {
@@ -55307,7 +55931,7 @@
             "away_goals": 0,
             "probability": 0.153
           },
-          "home_win_probability": 0.736,
+          "home_win_probability": 0.737,
           "draw_probability": 0.178,
           "away_win_probability": 0.086,
           "head_to_head": {
@@ -55318,8 +55942,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.1002,
+              "news_signal": {
+                "available": true,
+                "edge": -0.0504,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -4200000,
+                "total_net_value_eur": -4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "out",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -55417,7 +56055,7 @@
           "away_elo": 1475.5,
           "home_points_per_match": 1.25,
           "away_points_per_match": 0.33,
-          "strength_edge": 0.498,
+          "strength_edge": 0.523,
           "home_xg_efficiency": 1.648,
           "away_xg_efficiency": null,
           "referee_adj": 0.0,
@@ -55673,7 +56311,7 @@
           "data_confidence": "LOW",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.51,
+          "expected_home_goals": 1.5,
           "expected_away_goals": 1.48,
           "top_scorelines": [
             {
@@ -55715,7 +56353,7 @@
           },
           "home_win_probability": 0.382,
           "draw_probability": 0.249,
-          "away_win_probability": 0.369,
+          "away_win_probability": 0.37,
           "head_to_head": {
             "available": true,
             "matches": 15,
@@ -55781,8 +56419,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.1002,
+              "news_signal": {
+                "available": true,
+                "edge": -0.0504,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -4200000,
+                "total_net_value_eur": -4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "out",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -55876,7 +56528,7 @@
           "away_elo": 1529.2,
           "home_points_per_match": 1.25,
           "away_points_per_match": 1.25,
-          "strength_edge": 0.011,
+          "strength_edge": -0.014,
           "home_xg_efficiency": 1.096,
           "away_xg_efficiency": 1.648,
           "referee_adj": 0.0,
@@ -56100,7 +56752,7 @@
             "away_goals": 1,
             "probability": 0.091
           },
-          "home_win_probability": 0.498,
+          "home_win_probability": 0.499,
           "draw_probability": 0.207,
           "away_win_probability": 0.294,
           "head_to_head": {
@@ -56112,8 +56764,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.1282,
-              "news_signal": null,
+              "edge": -0.0584,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0115,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 4200000,
+                "total_net_value_eur": 4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "in",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.1282,
@@ -56298,7 +56964,7 @@
           "away_elo": 1564.9,
           "home_points_per_match": 1.75,
           "away_points_per_match": 1.38,
-          "strength_edge": 0.031,
+          "strength_edge": 0.066,
           "home_xg_efficiency": 1.131,
           "away_xg_efficiency": 1.559,
           "referee_adj": 0.0,
@@ -56945,20 +57611,14 @@
             },
             "away": {
               "available": true,
-              "edge": -0.0007,
+              "edge": 0.0025,
               "news_signal": {
                 "available": true,
-                "edge": -0.0259,
-                "signal_count": 4,
+                "edge": -0.0195,
+                "signal_count": 3,
                 "confirmed_net_value_eur": -6000000,
-                "total_net_value_eur": -8500000,
+                "total_net_value_eur": -6400000,
                 "top_moves": [
-                  {
-                    "player": "Yusuf Akçiçek",
-                    "direction": "out",
-                    "market_value_eur": 14000000,
-                    "status": "RUMOR"
-                  },
                   {
                     "player": "Sofyan Amrabat",
                     "direction": "out",
@@ -57107,7 +57767,7 @@
           "away_elo": 1640.5,
           "home_points_per_match": 0.33,
           "away_points_per_match": 1.5,
-          "strength_edge": -0.863,
+          "strength_edge": -0.865,
           "home_xg_efficiency": null,
           "away_xg_efficiency": 1.108,
           "referee_adj": 0.0,
@@ -57400,20 +58060,14 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.0007,
+              "edge": 0.0025,
               "news_signal": {
                 "available": true,
-                "edge": -0.0259,
-                "signal_count": 4,
+                "edge": -0.0195,
+                "signal_count": 3,
                 "confirmed_net_value_eur": -6000000,
-                "total_net_value_eur": -8500000,
+                "total_net_value_eur": -6400000,
                 "top_moves": [
-                  {
-                    "player": "Yusuf Akçiçek",
-                    "direction": "out",
-                    "market_value_eur": 14000000,
-                    "status": "RUMOR"
-                  },
                   {
                     "player": "Sofyan Amrabat",
                     "direction": "out",
@@ -57587,7 +58241,7 @@
           "away_elo": 1580.6,
           "home_points_per_match": 1.5,
           "away_points_per_match": 1.75,
-          "strength_edge": 0.037,
+          "strength_edge": 0.039,
           "home_xg_efficiency": 1.108,
           "away_xg_efficiency": 0.994,
           "referee_adj": 0.0,
@@ -58414,9 +59068,9 @@
             "away_goals": 0,
             "probability": 0.101
           },
-          "home_win_probability": 0.478,
+          "home_win_probability": 0.479,
           "draw_probability": 0.233,
-          "away_win_probability": 0.289,
+          "away_win_probability": 0.288,
           "head_to_head": {
             "available": true,
             "matches": 17,
@@ -58426,8 +59080,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.1002,
+              "news_signal": {
+                "available": true,
+                "edge": -0.0504,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -4200000,
+                "total_net_value_eur": -4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "out",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -58577,7 +59245,7 @@
           "away_elo": 1477.6,
           "home_points_per_match": 1.25,
           "away_points_per_match": 1.5,
-          "strength_edge": -0.06,
+          "strength_edge": -0.035,
           "home_xg_efficiency": 1.648,
           "away_xg_efficiency": 1.01,
           "referee_adj": 0.0,
@@ -59034,7 +59702,7 @@
           "raw_predicted": "away",
           "predicted": "away",
           "expected_home_goals": 1.28,
-          "expected_away_goals": 2.13,
+          "expected_away_goals": 2.14,
           "top_scorelines": [
             {
               "score": "1-2",
@@ -59075,7 +59743,7 @@
           },
           "home_win_probability": 0.225,
           "draw_probability": 0.207,
-          "away_win_probability": 0.568,
+          "away_win_probability": 0.569,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -59140,8 +59808,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.1282,
-              "news_signal": null,
+              "edge": -0.0584,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0115,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 4200000,
+                "total_net_value_eur": 4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "in",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.1282,
@@ -59235,7 +59917,7 @@
           "away_elo": 1643.0,
           "home_points_per_match": 1.12,
           "away_points_per_match": 1.75,
-          "strength_edge": -0.387,
+          "strength_edge": -0.422,
           "home_xg_efficiency": 1.436,
           "away_xg_efficiency": 1.131,
           "referee_adj": 0.0,
@@ -59552,9 +60234,9 @@
             "away_goals": 1,
             "probability": 0.098
           },
-          "home_win_probability": 0.566,
+          "home_win_probability": 0.567,
           "draw_probability": 0.216,
-          "away_win_probability": 0.218,
+          "away_win_probability": 0.217,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -59563,8 +60245,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.1282,
-              "news_signal": null,
+              "edge": -0.0584,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0115,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 4200000,
+                "total_net_value_eur": 4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "in",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.1282,
@@ -59714,7 +60410,7 @@
           "away_elo": 1436.9,
           "home_points_per_match": 1.75,
           "away_points_per_match": 1.75,
-          "strength_edge": -0.009,
+          "strength_edge": 0.026,
           "home_xg_efficiency": 1.131,
           "away_xg_efficiency": 0.518,
           "referee_adj": 0.0,
@@ -60007,7 +60703,7 @@
           },
           "home_win_probability": 0.32,
           "draw_probability": 0.24,
-          "away_win_probability": 0.439,
+          "away_win_probability": 0.44,
           "head_to_head": {
             "available": true,
             "matches": 18,
@@ -60073,8 +60769,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.1002,
+              "news_signal": {
+                "available": true,
+                "edge": -0.0504,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -4200000,
+                "total_net_value_eur": -4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "out",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -60168,7 +60878,7 @@
           "away_elo": 1529.2,
           "home_points_per_match": 0.75,
           "away_points_per_match": 1.25,
-          "strength_edge": -0.22,
+          "strength_edge": -0.245,
           "home_xg_efficiency": 1.098,
           "away_xg_efficiency": 1.648,
           "referee_adj": 0.0,
@@ -60293,20 +61003,14 @@
             },
             "away": {
               "available": true,
-              "edge": -0.0007,
+              "edge": 0.0025,
               "news_signal": {
                 "available": true,
-                "edge": -0.0259,
-                "signal_count": 4,
+                "edge": -0.0195,
+                "signal_count": 3,
                 "confirmed_net_value_eur": -6000000,
-                "total_net_value_eur": -8500000,
+                "total_net_value_eur": -6400000,
                 "top_moves": [
-                  {
-                    "player": "Yusuf Akçiçek",
-                    "direction": "out",
-                    "market_value_eur": 14000000,
-                    "status": "RUMOR"
-                  },
                   {
                     "player": "Sofyan Amrabat",
                     "direction": "out",
@@ -60455,7 +61159,7 @@
           "away_elo": 1640.5,
           "home_points_per_match": 1.25,
           "away_points_per_match": 1.5,
-          "strength_edge": -0.354,
+          "strength_edge": -0.355,
           "home_xg_efficiency": 1.096,
           "away_xg_efficiency": 1.108,
           "referee_adj": 0.0,
@@ -61438,20 +62142,14 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.0007,
+              "edge": 0.0025,
               "news_signal": {
                 "available": true,
-                "edge": -0.0259,
-                "signal_count": 4,
+                "edge": -0.0195,
+                "signal_count": 3,
                 "confirmed_net_value_eur": -6000000,
-                "total_net_value_eur": -8500000,
+                "total_net_value_eur": -6400000,
                 "top_moves": [
-                  {
-                    "player": "Yusuf Akçiçek",
-                    "direction": "out",
-                    "market_value_eur": 14000000,
-                    "status": "RUMOR"
-                  },
                   {
                     "player": "Sofyan Amrabat",
                     "direction": "out",
@@ -61656,7 +62354,7 @@
           "away_elo": 1477.6,
           "home_points_per_match": 1.5,
           "away_points_per_match": 1.5,
-          "strength_edge": 0.305,
+          "strength_edge": 0.306,
           "home_xg_efficiency": 1.108,
           "away_xg_efficiency": 1.01,
           "referee_adj": 0.0,
@@ -61713,9 +62411,9 @@
             "away_goals": 2,
             "probability": 0.098
           },
-          "home_win_probability": 0.244,
+          "home_win_probability": 0.243,
           "draw_probability": 0.195,
-          "away_win_probability": 0.561,
+          "away_win_probability": 0.562,
           "head_to_head": {
             "available": true,
             "matches": 26,
@@ -61795,8 +62493,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.1282,
-              "news_signal": null,
+              "edge": -0.0584,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0115,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 4200000,
+                "total_net_value_eur": 4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "in",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.1282,
@@ -61890,7 +62602,7 @@
           "away_elo": 1643.0,
           "home_points_per_match": 1.0,
           "away_points_per_match": 1.75,
-          "strength_edge": -0.263,
+          "strength_edge": -0.298,
           "home_xg_efficiency": 0.828,
           "away_xg_efficiency": 1.131,
           "referee_adj": 0.0,
@@ -62083,7 +62795,7 @@
             "away_goals": 1,
             "probability": 0.085
           },
-          "home_win_probability": 0.388,
+          "home_win_probability": 0.389,
           "draw_probability": 0.244,
           "away_win_probability": 0.367,
           "head_to_head": {
@@ -62094,8 +62806,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.1002,
+              "news_signal": {
+                "available": true,
+                "edge": -0.0504,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -4200000,
+                "total_net_value_eur": -4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "out",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -62193,7 +62919,7 @@
           "away_elo": 1497.4,
           "home_points_per_match": 1.25,
           "away_points_per_match": 1.5,
-          "strength_edge": -0.235,
+          "strength_edge": -0.21,
           "home_xg_efficiency": 1.648,
           "away_xg_efficiency": null,
           "referee_adj": 0.0,
@@ -63076,7 +63802,7 @@
           "data_confidence": "HIGH",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 2.22,
+          "expected_home_goals": 2.23,
           "expected_away_goals": 1.03,
           "top_scorelines": [
             {
@@ -63095,7 +63821,7 @@
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.089
+              "probability": 0.088
             },
             {
               "score": "1-0",
@@ -63116,7 +63842,7 @@
             "away_goals": 1,
             "probability": 0.098
           },
-          "home_win_probability": 0.652,
+          "home_win_probability": 0.653,
           "draw_probability": 0.182,
           "away_win_probability": 0.165,
           "head_to_head": {
@@ -63128,8 +63854,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.1282,
-              "news_signal": null,
+              "edge": -0.0584,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0115,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 4200000,
+                "total_net_value_eur": 4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "in",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.1282,
@@ -63279,7 +64019,7 @@
           "away_elo": 1435.9,
           "home_points_per_match": 1.75,
           "away_points_per_match": 1.0,
-          "strength_edge": 0.371,
+          "strength_edge": 0.406,
           "home_xg_efficiency": 1.131,
           "away_xg_efficiency": 1.449,
           "referee_adj": 0.0,
@@ -63522,7 +64262,7 @@
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.099
+              "probability": 0.1
             },
             {
               "score": "2-1",
@@ -63555,9 +64295,9 @@
             "away_goals": 1,
             "probability": 0.093
           },
-          "home_win_probability": 0.512,
+          "home_win_probability": 0.511,
           "draw_probability": 0.19,
-          "away_win_probability": 0.298,
+          "away_win_probability": 0.299,
           "head_to_head": {
             "available": true,
             "matches": 15,
@@ -63623,8 +64363,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.1002,
+              "news_signal": {
+                "available": true,
+                "edge": -0.0504,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -4200000,
+                "total_net_value_eur": -4200000,
+                "top_moves": [
+                  {
+                    "player": "Arda Okan Kurtulan",
+                    "direction": "out",
+                    "market_value_eur": 7000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -63753,7 +64507,7 @@
           "away_elo": 1529.2,
           "home_points_per_match": 1.38,
           "away_points_per_match": 1.25,
-          "strength_edge": 0.24,
+          "strength_edge": 0.215,
           "home_xg_efficiency": 1.559,
           "away_xg_efficiency": 1.648,
           "referee_adj": 0.0,
@@ -64581,20 +65335,14 @@
             },
             "away": {
               "available": true,
-              "edge": -0.0007,
+              "edge": 0.0025,
               "news_signal": {
                 "available": true,
-                "edge": -0.0259,
-                "signal_count": 4,
+                "edge": -0.0195,
+                "signal_count": 3,
                 "confirmed_net_value_eur": -6000000,
-                "total_net_value_eur": -8500000,
+                "total_net_value_eur": -6400000,
                 "top_moves": [
-                  {
-                    "player": "Yusuf Akçiçek",
-                    "direction": "out",
-                    "market_value_eur": 14000000,
-                    "status": "RUMOR"
-                  },
                   {
                     "player": "Sofyan Amrabat",
                     "direction": "out",
@@ -64743,7 +65491,7 @@
           "away_elo": 1640.5,
           "home_points_per_match": 1.5,
           "away_points_per_match": 1.5,
-          "strength_edge": -0.13,
+          "strength_edge": -0.131,
           "home_xg_efficiency": null,
           "away_xg_efficiency": 1.108,
           "referee_adj": 0.0,
