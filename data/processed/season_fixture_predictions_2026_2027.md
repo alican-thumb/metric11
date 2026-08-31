@@ -1,8 +1,8 @@
 # 2026-27 Süper Lig Fikstürü ve Tahminleri
 
-Üretim zamanı: 2026-08-31T05:32:58.557224
+Üretim zamanı: 2026-08-31T10:44:54.244563
 Toplam hafta: 34, toplam maç: 306
-Not: Tahminler 2025-26 sezonunun tamamı ve 2026-27'de şimdiye kadar oynanmış (22 maç) sonuçlardan türetilen güncel takım formu/Elo/transfer durumuna dayanır; sezon ilerledikçe bu sayfa her gün otomatik olarak yeniden hesaplanır, statik bir anlık görüntü değildir.
+Not: Tahminler 2025-26 sezonunun tamamı ve 2026-27'de şimdiye kadar oynanmış (25 maç) sonuçlardan türetilen güncel takım formu/Elo/transfer durumuna dayanır; sezon ilerledikçe bu sayfa her gün otomatik olarak yeniden hesaplanır, statik bir anlık görüntü değildir.
 Yeni takımlar (sınırlı veri): AMED SPORTİF FAALİYETLER, ERZURUMSPOR FK, ÇORUM FK
 
 ## Hafta 1
@@ -35,9 +35,9 @@ Yeni takımlar (sınırlı veri): AMED SPORTİF FAALİYETLER, ERZURUMSPOR FK, Ç
 - 29.08.2026 19:00 | TÜMOSAN KONYASPOR 1 - 2 KOCAELİSPOR | OYNANDI
 - 29.08.2026 21:30 | GAZİANTEP FUTBOL KULÜBÜ A.Ş. 1 - 2 ÇAYKUR RİZESPOR A.Ş. | OYNANDI
 - 29.08.2026 21:33 | GALATASARAY A.Ş. 3 - 2 GÖZTEPE A.Ş. | OYNANDI
-- 30.08.2026 19:00 | EYÜPSPOR - CORENDON ALANYASPOR | tahmin=Ev (Ev %46 · X %26 · Dep %27) | güven=MEDIUM
-- 30.08.2026 21:30 | İSTANBUL BAŞAKŞEHİR FK - KASIMPAŞA A.Ş. | tahmin=Ev (Ev %63 · X %20 · Dep %17) | güven=HIGH
-- 30.08.2026 21:30 | SAMSUNSPOR A.Ş. - FENERBAHÇE A.Ş. | tahmin=Dep (Ev %30 · X %26 · Dep %44) | güven=MEDIUM
+- 30.08.2026 19:00 | EYÜPSPOR 2 - 1 CORENDON ALANYASPOR | OYNANDI
+- 30.08.2026 21:30 | İSTANBUL BAŞAKŞEHİR FK 1 - 1 KASIMPAŞA A.Ş. | OYNANDI
+- 30.08.2026 21:30 | SAMSUNSPOR A.Ş. 0 - 2 FENERBAHÇE A.Ş. | OYNANDI
 - 31.08.2026 21:30 | AMED SPORTİF FAALİYETLER - TRABZONSPOR A.Ş. | tahmin=Ev (Ev %48 · X %25 · Dep %27) | güven=LOW_NEW_TEAM
 - 31.08.2026 21:30 | BEŞİKTAŞ A.Ş. - ARCA ÇORUM FK | tahmin=Ev (Ev %58 · X %22 · Dep %20) | güven=HIGH
 

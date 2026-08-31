@@ -4,12 +4,12 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 
 ## Genel Karne
 
-- Değerlendirilen maç: **22**
-- İsabet: **6/22** (%27)
-- Beraberlik yakalama: **0/5** (%0)
-- Yüksek güvenli maç isabeti: **4/9** (%44)
+- Değerlendirilen maç: **25**
+- İsabet: **8/25** (%32)
+- Beraberlik yakalama: **0/6** (%0)
+- Yüksek güvenli maç isabeti: **4/10** (%40)
 
-## Hafta 3 — 2/4 isabet (%50)
+## Hafta 3 — 4/7 isabet (%57)
 
 | Maç | Skor | Tahmin | Sonuç | Güven |
 | --- | --- | --- | --- | --- |
@@ -17,6 +17,9 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 | TÜMOSAN KONYASPOR - KOCAELİSPOR | 1 - 2 | Ev | ❌ | LOW |
 | GAZİANTEP FUTBOL KULÜBÜ A.Ş. - ÇAYKUR RİZESPOR A.Ş. | 1 - 2 | Deplasman | ✅ | LOW |
 | GALATASARAY A.Ş. - GÖZTEPE A.Ş. | 3 - 2 | Ev | ✅ | HIGH |
+| EYÜPSPOR - CORENDON ALANYASPOR | 2 - 1 | Ev | ✅ | MEDIUM |
+| İSTANBUL BAŞAKŞEHİR FK - KASIMPAŞA A.Ş. | 1 - 1 | Ev | ❌ | HIGH |
+| SAMSUNSPOR A.Ş. - FENERBAHÇE A.Ş. | 0 - 2 | Deplasman | ✅ | MEDIUM |
 
 ## Hafta 2 — 2/9 isabet (%22)
 
