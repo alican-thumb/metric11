@@ -1,8 +1,8 @@
 # 2026-27 Süper Lig Fikstürü ve Tahminleri
 
-Üretim zamanı: 2026-09-01T05:08:15.996471
+Üretim zamanı: 2026-09-01T09:25:22.839011
 Toplam hafta: 34, toplam maç: 306
-Not: Tahminler 2025-26 sezonunun tamamı ve 2026-27'de şimdiye kadar oynanmış (25 maç) sonuçlardan türetilen güncel takım formu/Elo/transfer durumuna dayanır; sezon ilerledikçe bu sayfa her gün otomatik olarak yeniden hesaplanır, statik bir anlık görüntü değildir.
+Not: Tahminler 2025-26 sezonunun tamamı ve 2026-27'de şimdiye kadar oynanmış (27 maç) sonuçlardan türetilen güncel takım formu/Elo/transfer durumuna dayanır; sezon ilerledikçe bu sayfa her gün otomatik olarak yeniden hesaplanır, statik bir anlık görüntü değildir.
 Yeni takımlar (sınırlı veri): AMED SPORTİF FAALİYETLER, ERZURUMSPOR FK, ÇORUM FK
 
 ## Hafta 1
@@ -38,6 +38,6 @@ Yeni takımlar (sınırlı veri): AMED SPORTİF FAALİYETLER, ERZURUMSPOR FK, Ç
 - 30.08.2026 19:00 | EYÜPSPOR 2 - 1 CORENDON ALANYASPOR | OYNANDI
 - 30.08.2026 21:30 | İSTANBUL BAŞAKŞEHİR FK 1 - 1 KASIMPAŞA A.Ş. | OYNANDI
 - 30.08.2026 21:30 | SAMSUNSPOR A.Ş. 0 - 2 FENERBAHÇE A.Ş. | OYNANDI
-- 31.08.2026 21:30 | AMED SPORTİF FAALİYETLER - TRABZONSPOR A.Ş. | tahmin=Ev (Ev %48 · X %25 · Dep %27) | güven=LOW_NEW_TEAM
-- 31.08.2026 21:30 | BEŞİKTAŞ A.Ş. - ARCA ÇORUM FK | tahmin=Ev (Ev %58 · X %22 · Dep %20) | güven=HIGH
+- 31.08.2026 21:30 | AMED SPORTİF FAALİYETLER 2 - 1 TRABZONSPOR A.Ş. | OYNANDI
+- 31.08.2026 21:30 | BEŞİKTAŞ A.Ş. 6 - 2 ARCA ÇORUM FK | OYNANDI
 

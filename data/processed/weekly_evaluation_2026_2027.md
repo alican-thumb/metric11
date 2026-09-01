@@ -4,12 +4,12 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 
 ## Genel Karne
 
-- Değerlendirilen maç: **25**
-- İsabet: **8/25** (%32)
+- Değerlendirilen maç: **27**
+- İsabet: **10/27** (%37)
 - Beraberlik yakalama: **0/6** (%0)
-- Yüksek güvenli maç isabeti: **4/10** (%40)
+- Yüksek güvenli maç isabeti: **5/11** (%45)
 
-## Hafta 3 — 4/7 isabet (%57)
+## Hafta 3 — 6/9 isabet (%67)
 
 | Maç | Skor | Tahmin | Sonuç | Güven |
 | --- | --- | --- | --- | --- |
@@ -20,6 +20,8 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 | EYÜPSPOR - CORENDON ALANYASPOR | 2 - 1 | Ev | ✅ | MEDIUM |
 | İSTANBUL BAŞAKŞEHİR FK - KASIMPAŞA A.Ş. | 1 - 1 | Ev | ❌ | HIGH |
 | SAMSUNSPOR A.Ş. - FENERBAHÇE A.Ş. | 0 - 2 | Deplasman | ✅ | MEDIUM |
+| AMED SPORTİF FAALİYETLER - TRABZONSPOR A.Ş. | 2 - 1 | Ev | ✅ | MEDIUM |
+| BEŞİKTAŞ A.Ş. - ARCA ÇORUM FK | 6 - 2 | Ev | ✅ | HIGH |
 
 ## Hafta 2 — 2/9 isabet (%22)
 
