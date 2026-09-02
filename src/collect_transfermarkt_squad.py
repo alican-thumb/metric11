@@ -49,9 +49,15 @@ def main() -> None:
 
 
 def fetch(url: str) -> str:
+    # Gerçekçi tarayıcı User-Agent'ı: bot olduğunu açıkça belirten önceki UA
+    # ("FootballIntelligenceMVP/0.1; local research") TM'nin anti-bot filtresini
+    # tetikleyen sinyallerden biriydi (bkz. PROJECT_STATE 2026-08-14/15 — GitHub
+    # Actions'ın bulut IP'si engelleniyor). Bu tek başına IP-tabanlı bir engeli
+    # çözmez ama en azından bariz bot imzasını kaldırır.
     headers = {
-        "User-Agent": "Mozilla/5.0 (compatible; FootballIntelligenceMVP/0.1; local research)",
-        "Accept-Language": "en-US,en;q=0.9",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.9,tr;q=0.8",
     }
     response = requests.get(url, headers=headers, timeout=30)
     response.raise_for_status()

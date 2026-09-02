@@ -44,11 +44,18 @@ def build_status() -> dict:
 
     squad_clubs = squads_2627.get("clubs", [])
     squad_live_count = sum(1 for c in squad_clubs if c.get("source_mode") == "live")
+    squad_fresh_count = sum(1 for c in squad_clubs if c.get("source_mode") in ("live", "api_football_fallback"))
     squad_stale_reason = squads_2627.get("stale_reason")
     squad_data_age_days = _age_days(squads_2627.get("data_as_of"))
-    if squad_stale_reason:
+    if squad_stale_reason == "collector_produced_no_nonempty_clubs":
+        # TM tamamen boş döndü VE API-Football fallback'i de veri üretemedi (ör. anahtar yok) —
+        # gösterilen veri tamamen eski önbellek, gerçek "hata" durumu.
         squad_status = "fail"
-    elif squad_live_count < len(squad_clubs):
+    elif squad_stale_reason == "transfermarkt_empty_used_api_football_fallback":
+        # TM engelli ama API-Football fallback devrede — veri güncel/kısmen güncel,
+        # yine de TM'nin kendisinin bozuk olması dikkat gerektirir.
+        squad_status = "warn"
+    elif squad_fresh_count < len(squad_clubs):
         squad_status = "warn"
     else:
         squad_status = "ok"
@@ -91,6 +98,7 @@ def build_status() -> dict:
             "status": squad_status,
             "clubs_total": len(squad_clubs),
             "clubs_live_today": squad_live_count,
+            "clubs_fresh_today": squad_fresh_count,
             "stale_reason": squad_stale_reason,
             "data_as_of": _fmt_date(squads_2627.get("data_as_of")),
             "data_age_days": squad_data_age_days,
@@ -148,7 +156,7 @@ def build_html(d: dict) -> str:
     pipeline_bar_pct = round(p["ok"] / max(p["total"], 1) * 100)
     pipeline_bar_color = "#116447" if p["failed"] == 0 else ("#c98000" if p["failed"] <= 3 else "#bd2936")
     _status_colors = {"ok": "#116447", "warn": "#c98000", "fail": "#bd2936"}
-    squads_bar_pct = round(squads["clubs_live_today"] / max(squads["clubs_total"], 1) * 100)
+    squads_bar_pct = round(squads["clubs_fresh_today"] / max(squads["clubs_total"], 1) * 100)
     squads_bar_color = _status_colors.get(squads["status"], "#627067")
 
     return f"""<!doctype html>
@@ -254,10 +262,11 @@ def build_html(d: dict) -> str:
     <div class="grid2">
       <div class="card">
         <div class="card-title">Kadro Verisi (2026-27, Transfermarkt)</div>
-        <div class="big-num">{squads["clubs_live_today"]}<span style="font-size:16px;color:var(--muted);">/{squads["clubs_total"]}</span></div>
-        <div class="big-label">kulüp bugün canlı çekildi</div>
+        <div class="big-num">{squads["clubs_fresh_today"]}<span style="font-size:16px;color:var(--muted);">/{squads["clubs_total"]}</span></div>
+        <div class="big-label">kulüp güncel (canlı/fallback)</div>
         <div class="prog-wrap"><div class="prog-bar" style="width:{squads_bar_pct}%;background:{squads_bar_color};"></div></div>
         <div class="row"><span class="row-label">Durum</span><span class="row-value">{_status_dot(squads["status"])}</span></div>
+        <div class="row"><span class="row-label">TM'den canlı çekilen</span><span class="row-value">{squads["clubs_live_today"]}/{squads["clubs_total"]}</span></div>
         <div class="row"><span class="row-label">Veri tarihi (data_as_of)</span><span class="row-value">{escape(squads["data_as_of"])}</span></div>
         <div class="row"><span class="row-label">Son çalışma</span><span class="row-value">{escape(squads["last_run_at"])}</span></div>
         {f'<div class="row"><span class="row-label">Bayat sebebi</span><span class="row-value" style="color:var(--red)">{escape(str(squads["stale_reason"]))}</span></div>' if squads["stale_reason"] else ''}

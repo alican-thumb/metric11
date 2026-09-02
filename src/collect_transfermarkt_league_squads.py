@@ -7,7 +7,55 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from src.collect_transfermarkt_squad import TRANSFERMARKT_BASE, build_markdown, fetch, parse_squad, summarize
-from src.config import PROCESSED_DIR, RAW_DIR, ROOT_DIR
+from src.config import PROCESSED_DIR, RAW_DIR, ROOT_DIR, load_settings
+from src.http_client import get_url
+from src.normalization import normalize_name
+
+API_FOOTBALL_BASE = "https://v3.football.api-sports.io"
+API_FOOTBALL_SUPER_LIG_ID = 203
+
+# API-Football takım adları TM'nin resmi/sponsorlu adlarından farklı (ör. "Besiktas" vs
+# "BEŞİKTAŞ A.Ş."). TM tamamen boş döndüğünde (bkz. `stale_reason`) veriyi TAMAMEN
+# kaybetmemek için son çare olarak API-Football kadrosuna düşülür — bu yüzden eşleşme
+# KESİN bilinen isim varyantlarıyla sınırlı tutulur (bulanık/fuzzy eşleşme YOK): bir kulüp
+# burada yoksa o kulüp için API-Football denenmez, mevcut eski önbellek davranışı korunur.
+API_FOOTBALL_TM_ALIASES: dict[str, str] = {
+    "BESIKTAS": "BEŞİKTAŞ A.Ş.",
+    "GALATASARAY": "GALATASARAY A.Ş.",
+    "FENERBAHCE": "FENERBAHÇE A.Ş.",
+    "TRABZONSPOR": "TRABZONSPOR A.Ş.",
+    "ISTANBUL BASAKSEHIR": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ",
+    "BASAKSEHIR FK": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ",
+    "ALANYASPOR": "CORENDON ALANYASPOR",
+    "SAMSUNSPOR": "SAMSUNSPOR A.Ş.",
+    "GOZTEPE": "GÖZTEPE A.Ş.",
+    "KONYASPOR": "TÜMOSAN KONYASPOR",
+    "CAYKUR RIZESPOR": "ÇAYKUR RİZESPOR A.Ş.",
+    "RIZESPOR": "ÇAYKUR RİZESPOR A.Ş.",
+    "GAZIANTEP": "GAZİANTEP FUTBOL KULÜBÜ A.Ş.",
+    "GAZIANTEP FK": "GAZİANTEP FUTBOL KULÜBÜ A.Ş.",
+    "KASIMPASA": "KASIMPAŞA A.Ş.",
+    "KOCAELISPOR": "KOCAELİSPOR",
+    "EYUPSPOR": "İKAS EYÜPSPOR",
+    "GENCLERBIRLIGI": "GENÇLERBİRLİĞİ",
+    "CORUM FK": "ÇORUM FK",
+    "ERZURUMSPOR": "ERZURUMSPOR FK",
+    "ERZURUMSPOR FK": "ERZURUMSPOR FK",
+    "BB ERZURUMSPOR": "ERZURUMSPOR FK",
+    "AMEDSPOR": "AMED SFK",
+    "AMED SPORTIF FAALIYETLER": "AMED SFK",
+    "AMED SK": "AMED SFK",
+    "AMED": "AMED SFK",
+}
+
+API_FOOTBALL_POSITION_GROUPS = {
+    "GOALKEEPER": "GK",
+    "DEFENDER": "DEF",
+    "MIDFIELDER": "MID",
+    "ATTACKER": "FWD",
+}
+
+MIN_PLAUSIBLE_SQUAD_SIZE = 15  # bariz eksik/bozuk API yanıtını reddetmek için alt sınır
 
 
 def main() -> None:
@@ -44,6 +92,12 @@ def main() -> None:
             try:
                 html = fetch(url)
                 players = parse_squad(html)
+                if not players:
+                    # Boş sonuç geçici rate-limit olabilir (kalıcı IP engeli de olabilir,
+                    # bu durumda ikinci deneme de boş döner) — tek bir bekleyip yeniden dene.
+                    time.sleep(max(args.delay_seconds, 5.0))
+                    html = fetch(url)
+                    players = parse_squad(html)
                 if players:
                     raw_path.parent.mkdir(parents=True, exist_ok=True)
                     raw_path.write_text(html, encoding="utf-8")
@@ -93,8 +147,33 @@ def main() -> None:
         "data_as_of": now_iso,
     }
     if not collected:
+        fallback_clubs = api_football_fallback_clubs(club_payload.get("clubs", []))
         previous = load_previous_nonempty(PROCESSED_DIR / f"{args.output_prefix}.json")
-        if previous:
+        if fallback_clubs:
+            # Fallback'in eşleştiremediği kulüpler için TAMAMEN kaybetmek yerine önceki
+            # (bayat ama mevcut) önbellek kaydını koru — regresyon yok, yalnız iyileşme.
+            fallback_by_name = {c["team_name"] for c in fallback_clubs}
+            merged = list(fallback_clubs)
+            if previous:
+                for prev_club in previous.get("clubs", []):
+                    if prev_club.get("team_name") not in fallback_by_name:
+                        merged.append(prev_club)
+            payload = {
+                "source": "Transfermarkt (TM boş döndü, API-Football'a düşüldü)",
+                "source_type": "SCRAPING+API_FALLBACK",
+                "risk_level": "HIGH",
+                "license_status": "VERIFY_TERMS_BEFORE_COMMERCIAL_USE",
+                "season_id": season_id,
+                "clubs_collected": len(merged),
+                "clubs_skipped": len(club_payload.get("clubs", [])) - len(merged),
+                "clubs": merged,
+                "skipped": skipped,
+                "summary": summarize_league(merged),
+                "run_at": now_iso,
+                "data_as_of": now_iso,
+                "stale_reason": "transfermarkt_empty_used_api_football_fallback",
+            }
+        elif previous:
             previous["stale_reason"] = "collector_produced_no_nonempty_clubs"
             previous["skipped_latest"] = skipped
             previous["run_at"] = now_iso
@@ -106,6 +185,76 @@ def main() -> None:
     json_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     md_path.write_text(build_league_markdown(payload), encoding="utf-8")
     print(md_path.read_text(encoding="utf-8"))
+
+
+def api_football_fallback_clubs(tm_clubs: list[dict]) -> list[dict]:
+    """TM tamamen boş döndüğünde son çare: API-Football'dan kadro çeker.
+
+    Yalnız `API_FOOTBALL_TM_ALIASES`'ta KESİN bilinen bir isim eşleşmesi varsa ve
+    dönen kadro `MIN_PLAUSIBLE_SQUAD_SIZE`'ı geçiyorsa kabul edilir — eşleşmeyen veya
+    şüpheli (çok küçük) kadrolar sessizce atlanır, hiçbir zaman TM'den daha eski ama
+    doğru bilinen bir kadronun yerine yanlış eşleşmiş veri koymaz.
+    """
+    try:
+        key = load_settings().api_football_key
+        if not key:
+            return []
+        headers = {"x-apisports-key": key}
+        teams_result = get_url(f"{API_FOOTBALL_BASE}/teams?league={API_FOOTBALL_SUPER_LIG_ID}&season={datetime.now(timezone.utc).year}", headers=headers)
+        if not teams_result.ok or not isinstance(teams_result.json_data, dict):
+            return []
+        api_teams = teams_result.json_data.get("response") or []
+        tm_by_name = {c.get("team_name"): c for c in tm_clubs}
+        out: list[dict] = []
+        for entry in api_teams:
+            team = entry.get("team") or {}
+            api_id = team.get("id")
+            api_name = team.get("name")
+            if not api_id or not api_name:
+                continue
+            tm_name = API_FOOTBALL_TM_ALIASES.get(normalize_name(api_name))
+            if not tm_name or tm_name not in tm_by_name:
+                continue
+            time.sleep(1.5)
+            squad_result = get_url(f"{API_FOOTBALL_BASE}/players/squads?team={api_id}", headers=headers)
+            if not squad_result.ok or not isinstance(squad_result.json_data, dict):
+                continue
+            squad_response = squad_result.json_data.get("response") or []
+            raw_players = squad_response[0].get("players", []) if squad_response else []
+            players = []
+            for p in raw_players:
+                if not p.get("name"):
+                    continue
+                players.append({
+                    "transfermarkt_id": None,
+                    "api_football_id": p.get("id"),
+                    "name": p.get("name"),
+                    "normalized_name": normalize_name(p.get("name")),
+                    "shirt_number": str(p.get("number")) if p.get("number") is not None else "-",
+                    "position": p.get("position"),
+                    "position_group": API_FOOTBALL_POSITION_GROUPS.get((p.get("position") or "").upper(), "UNKNOWN"),
+                    "age": p.get("age"),
+                    "contract_until": None,
+                    "market_value_text": "-",
+                    "market_value_eur": None,
+                    "profile_url": None,
+                })
+            if len(players) < MIN_PLAUSIBLE_SQUAD_SIZE:
+                continue
+            tm_club = tm_by_name[tm_name]
+            out.append({
+                "team_name": tm_name,
+                "club_slug": tm_club.get("club_slug"),
+                "club_id": tm_club.get("club_id"),
+                "verified": tm_club.get("verified", False),
+                "url": f"{API_FOOTBALL_BASE}/players/squads?team={api_id}",
+                "source_mode": "api_football_fallback",
+                "players": players,
+                "summary": summarize(players),
+            })
+        return out
+    except Exception:  # noqa: BLE001 - fallback en kötü ihtimalle hiçbir şey döndürmemeli
+        return []
 
 
 def parse_cached_squad(path: Path) -> list[dict]:
