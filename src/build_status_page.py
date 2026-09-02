@@ -24,6 +24,7 @@ def build_status() -> dict:
     previews = _load(PROCESSED_DIR / f"previews_besiktas_{SEASON}_chronological" / "index.json") or {}
     data_quality = _load(PROCESSED_DIR / f"data_quality_scorecard_{SEASON}.json") or {}
     source_watchlist = _load(PROCESSED_DIR / f"source_watchlist_{SEASON}.json") or {}
+    squads_2627 = _load(PROCESSED_DIR / "transfermarkt_super_lig_squads_2026_2027.json") or {}
 
     matches = league if isinstance(league, list) else []
     scored = [m for m in matches if m.get("home_team", {}).get("score") is not None]
@@ -40,6 +41,17 @@ def build_status() -> dict:
     elif pipeline_age_days is not None and pipeline_age_days > 1 and pipeline_status == "ok":
         pipeline_status = "warn"
     source_summary = source_watchlist.get("summary", {})
+
+    squad_clubs = squads_2627.get("clubs", [])
+    squad_live_count = sum(1 for c in squad_clubs if c.get("source_mode") == "live")
+    squad_stale_reason = squads_2627.get("stale_reason")
+    squad_data_age_days = _age_days(squads_2627.get("data_as_of"))
+    if squad_stale_reason:
+        squad_status = "fail"
+    elif squad_live_count < len(squad_clubs):
+        squad_status = "warn"
+    else:
+        squad_status = "ok"
 
     return {
         "generated_at": datetime.now(timezone.utc).strftime("%d.%m.%Y %H:%M UTC"),
@@ -74,6 +86,15 @@ def build_status() -> dict:
             "connected_or_partial_count": source_summary.get("connected_or_partial_count", 0),
             "high_risk_count": source_summary.get("high_risk_count", 0),
             "updated_at": source_watchlist.get("updated_at") or "—",
+        },
+        "squads": {
+            "status": squad_status,
+            "clubs_total": len(squad_clubs),
+            "clubs_live_today": squad_live_count,
+            "stale_reason": squad_stale_reason,
+            "data_as_of": _fmt_date(squads_2627.get("data_as_of")),
+            "data_age_days": squad_data_age_days,
+            "last_run_at": _fmt_date(squads_2627.get("run_at")),
         },
     }
 
@@ -122,9 +143,13 @@ def build_html(d: dict) -> str:
     data = d["data"]
     news = d["news"]
     sources = d["sources"]
+    squads = d["squads"]
 
     pipeline_bar_pct = round(p["ok"] / max(p["total"], 1) * 100)
     pipeline_bar_color = "#116447" if p["failed"] == 0 else ("#c98000" if p["failed"] <= 3 else "#bd2936")
+    _status_colors = {"ok": "#116447", "warn": "#c98000", "fail": "#bd2936"}
+    squads_bar_pct = round(squads["clubs_live_today"] / max(squads["clubs_total"], 1) * 100)
+    squads_bar_color = _status_colors.get(squads["status"], "#627067")
 
     return f"""<!doctype html>
 <html lang="tr">
@@ -227,6 +252,16 @@ def build_html(d: dict) -> str:
     </div>
 
     <div class="grid2">
+      <div class="card">
+        <div class="card-title">Kadro Verisi (2026-27, Transfermarkt)</div>
+        <div class="big-num">{squads["clubs_live_today"]}<span style="font-size:16px;color:var(--muted);">/{squads["clubs_total"]}</span></div>
+        <div class="big-label">kulüp bugün canlı çekildi</div>
+        <div class="prog-wrap"><div class="prog-bar" style="width:{squads_bar_pct}%;background:{squads_bar_color};"></div></div>
+        <div class="row"><span class="row-label">Durum</span><span class="row-value">{_status_dot(squads["status"])}</span></div>
+        <div class="row"><span class="row-label">Veri tarihi (data_as_of)</span><span class="row-value">{escape(squads["data_as_of"])}</span></div>
+        <div class="row"><span class="row-label">Son çalışma</span><span class="row-value">{escape(squads["last_run_at"])}</span></div>
+        {f'<div class="row"><span class="row-label">Bayat sebebi</span><span class="row-value" style="color:var(--red)">{escape(str(squads["stale_reason"]))}</span></div>' if squads["stale_reason"] else ''}
+      </div>
       <div class="card">
         <div class="card-title">Kaynak Radarı</div>
         <div class="big-num">{sources["daily_refresh_count"]}<span style="font-size:16px;color:var(--muted);">/{sources["source_count"]}</span></div>

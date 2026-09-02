@@ -344,7 +344,10 @@ def _match_card(m: dict, signals: dict | None = None, scorers: dict | None = Non
         def _fmt_scorers(lst):
             if not lst:
                 return "veri yok"
-            return " · ".join(f'<b>{escape(s["player"])}</b> %{round(s["scores_probability"]*100)}' for s in lst[:2])
+            def _one(s):
+                tag = ' <span title="Yeni transfer — 2025-26 Süper Lig geçmişi yok, pozisyon+piyasa değerine göre tahmini oran">🆕</span>' if s.get("projected") else ""
+                return f'<b>{escape(s["player"])}</b>{tag} %{round(s["scores_probability"]*100)}'
+            return " · ".join(_one(s) for s in lst[:2])
         scorers_html = (
             '<div class="mc-scorers">'
             f'⚽ {escape(m["home_team"])}: {_fmt_scorers(sc.get("home_scorers"))}<br>'

@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import json
 import time
+from datetime import datetime, timezone
 from pathlib import Path
 
 from src.collect_transfermarkt_squad import TRANSFERMARKT_BASE, build_markdown, fetch, parse_squad, summarize
@@ -76,6 +77,7 @@ def main() -> None:
         )
         time.sleep(args.delay_seconds)
 
+    now_iso = datetime.now(timezone.utc).isoformat()
     payload = {
         "source": "Transfermarkt",
         "source_type": "SCRAPING",
@@ -87,12 +89,16 @@ def main() -> None:
         "clubs": collected,
         "skipped": skipped,
         "summary": summarize_league(collected),
+        "run_at": now_iso,
+        "data_as_of": now_iso,
     }
     if not collected:
         previous = load_previous_nonempty(PROCESSED_DIR / f"{args.output_prefix}.json")
         if previous:
             previous["stale_reason"] = "collector_produced_no_nonempty_clubs"
             previous["skipped_latest"] = skipped
+            previous["run_at"] = now_iso
+            previous.setdefault("data_as_of", previous.get("run_at"))
             payload = previous
 
     json_path = PROCESSED_DIR / f"{args.output_prefix}.json"

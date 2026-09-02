@@ -9,7 +9,15 @@ oyuncular arasında tarihsel gol PAYINA göre dağıtılır; P(oyuncu ≥1 gol) 
 Oyuncu eşleştirmesi `canonical_player_name` (normalize + `data/manual/player_aliases.json`)
 ile yapılır — TFF'nin tam ad formatı ile TM'nin yaygın ad formatı birebir örtüşmeyebilir;
 eşleşmeyen oyuncular İÇİN TAHMİN ÜRETİLMEZ (yanlış oyuncu göstermektense veri-yok tercih edilir).
-Yeni transfer/yabancı imza (2025-26 Süper Lig'de oynamamış) oyuncular da aynı sebeple hariç.
+
+Yeni transfer/yabancı imza (2025-26 Süper Lig'de oynamamış) hücum oyuncuları (FWD/MID) için
+gerçek gol oranı yoktur; bunlar tamamen hariç tutmak yerine "projected" (tahmini) bir orana
+sahip olur — kendi pozisyon grubundaki değerlendirilmiş (rated) oyuncuların ortalama gol
+oranı, o oyuncunun piyasa değerinin aynı pozisyon grubu ortalamasına oranıyla ölçeklenir
+(bkz. `PROJECTED_VALUE_MULT_RANGE`). Piyasa değeri bilinmiyorsa ortalamanın altında sabit bir
+çarpan kullanılır. Bu, örn. yeni transfer bir santrforun listede hiç görünmemesini (ve takımın
+golcü olasılığının yanlışlıkla ayrılmış eski oyunculara yıkılmasını) önler; `projected: true`
+alanıyla işaretlenir ve arayüzde ayrı gösterilir.
 
 model_league_predictions.py'a DOKUNMAZ.
 """
@@ -32,6 +40,9 @@ OWN_GOAL_TYPE = "K"
 MIN_STARTS = 3          # oran güvenilir sayılmadan önce minimum başlangıç-XI sayısı
 TOP_N_PER_SIDE = 3       # kartta gösterilecek olası golcü sayısı
 EXCLUDED_POSITION_GROUPS = {"GK"}  # kaleciler skorer sıralamasından hariç
+PROJECTED_POSITION_GROUPS = {"FWD", "MID"}  # 2025-26'da oynamamış (yeni transfer/yabancı) hücum oyuncuları için tahmini oran
+PROJECTED_VALUE_MULT_RANGE = (0.3, 3.0)  # piyasa değeri çarpanı sınırı (aşırı uç değerleri sınırlamak için)
+PROJECTED_UNVALUED_MULT = 0.5  # piyasa değeri bilinmeyen yeni transferler için varsayılan (ortalamanın altı) çarpan
 
 # TM kulüp adı fikstürdeki adla birebir örtüşmeyen kulüpler (NAME_ALIASES'a ek).
 _TM_EXTRA_ALIASES = {
@@ -84,16 +95,49 @@ def build_predictions() -> dict:
     goals, starts = build_player_goal_history(hist)
     rosters = build_team_rosters()
 
+    # Pozisyon grubu başına, değerlendirilmiş (rated) oyunculardan ortalama gol oranı ve
+    # ortalama piyasa değeri — yeni transferler için "projected" oranı ölçeklemekte kullanılır.
+    pg_rates: dict[str, list[float]] = defaultdict(list)
+    pg_values: dict[str, list[float]] = defaultdict(list)
+    for roster in rosters.values():
+        for p in roster:
+            n_starts = starts.get(canonical_player_name(p.get("name")), 0)
+            if n_starts < MIN_STARTS:
+                continue
+            n_goals = goals.get(canonical_player_name(p.get("name")), 0)
+            rate = n_goals / n_starts
+            if rate <= 0:
+                continue
+            pg = p.get("position_group")
+            pg_rates[pg].append(rate)
+            mv = p.get("market_value_eur")
+            if mv:
+                pg_values[pg].append(mv)
+    pg_avg_rate = {pg: sum(v) / len(v) for pg, v in pg_rates.items() if v}
+    pg_avg_value = {pg: sum(v) / len(v) for pg, v in pg_values.items() if v}
+
     def _side_candidates(team_fixture_name: str, lam: float) -> list[dict]:
         roster = rosters.get(_canon(team_fixture_name), [])
         rated = []
         for p in roster:
             key = canonical_player_name(p.get("name"))
             n_starts = starts.get(key, 0)
-            if n_starts < MIN_STARTS:
+            if n_starts >= MIN_STARTS:
+                n_goals = goals.get(key, 0)
+                rated.append({"name": p.get("name"), "rate": n_goals / n_starts, "goals_2025_26": n_goals, "starts_2025_26": n_starts, "projected": False})
                 continue
-            n_goals = goals.get(key, 0)
-            rated.append({"name": p.get("name"), "rate": n_goals / n_starts, "goals_2025_26": n_goals, "starts_2025_26": n_starts})
+            pg = p.get("position_group")
+            base_rate = pg_avg_rate.get(pg) if pg in PROJECTED_POSITION_GROUPS else None
+            if not base_rate:
+                continue
+            mv = p.get("market_value_eur")
+            avg_mv = pg_avg_value.get(pg)
+            if mv and avg_mv:
+                lo, hi = PROJECTED_VALUE_MULT_RANGE
+                mult = max(lo, min(hi, mv / avg_mv))
+            else:
+                mult = PROJECTED_UNVALUED_MULT
+            rated.append({"name": p.get("name"), "rate": base_rate * mult, "goals_2025_26": 0, "starts_2025_26": n_starts, "projected": True})
         total_rate = sum(p["rate"] for p in rated)
         if total_rate <= 0 or lam is None:
             return []
@@ -108,6 +152,7 @@ def build_predictions() -> dict:
                 "scores_probability": round(1 - math.exp(-expected), 3),
                 "goals_2025_26": p["goals_2025_26"],
                 "starts_2025_26": p["starts_2025_26"],
+                "projected": p["projected"],
             })
         candidates.sort(key=lambda c: c["scores_probability"], reverse=True)
         return candidates[:TOP_N_PER_SIDE]
