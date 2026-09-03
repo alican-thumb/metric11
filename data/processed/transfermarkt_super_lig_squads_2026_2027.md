@@ -30,6 +30,10 @@
 - ERZURUMSPOR FK: oyuncu=31, değer=€25,650,000, verified=True, mode=live, url=https://www.transfermarkt.com/erzurumspor-fk/kader/verein/39722/saison_id/2026
 - AMED SFK: oyuncu=27, değer=€27,275,000, verified=True, mode=live, url=https://www.transfermarkt.com/amed-sk/kader/verein/12382/saison_id/2026
 
+## Stale Koruma
+
+- Sebep: collector_produced_no_nonempty_clubs
+
 ## Beşiktaş Tekil Rapor Formatı
 
 # Transfermarkt Beşiktaş Kadro Verisi
