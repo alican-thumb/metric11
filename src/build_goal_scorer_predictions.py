@@ -19,6 +19,18 @@ oranı, o oyuncunun piyasa değerinin aynı pozisyon grubu ortalamasına oranıy
 golcü olasılığının yanlışlıkla ayrılmış eski oyunculara yıkılmasını) önler; `projected: true`
 alanıyla işaretlenir ve arayüzde ayrı gösterilir.
 
+KRİTİK GÜVENLİK KOŞULU (2026-09-04, kullanıcı bulgusu — bkz. PROJECT_STATE): "projected"
+oranı yalnızca oyuncu bu sezon (2026-27) EN AZ BİR resmi lig maçının kadrosunda (11 veya
+yedek) GERÇEKTEN yer almışsa uygulanır (`tff_super_lig_matches_2026_2027.json`'dan). TM
+kadro sayfasında görünmek transfer olduğu/piyasa değeri olduğu anlamına gelir ama O MAÇ
+İÇİN kayıtlı/uygun olduğu anlamına GELMEZ (uluslararası transfer belgesi, lisans, tescil
+gecikmesi vb.) — Galatasaray'a yeni transfer olup henüz hiç resmi maç kadrosunda yer
+almamış bir oyuncu (ör. bu tespitte Rafael Leão) "olası golcü" olarak gösterilmişti,
+oysa o akşamki maçın kadrosunda bile yoktu. Bu koşul olmadan "projected" tamamen KALDIRILIR
+(hiç tahmin üretilmez) — yanlış oyuncu göstermektense veri-yok tercih edilir ilkesi
+korunur. Bu koşul, ligde zaten oynamaya başlamış transferleri (ör. Vlahović, Miretti,
+Poku — hepsi ilk 3 haftada kadroya girdi) hâlâ doğru şekilde gösterir.
+
 model_league_predictions.py'a DOKUNMAZ.
 """
 from __future__ import annotations
@@ -34,6 +46,7 @@ from src.build_season_fixture_predictions import NAME_ALIASES
 FIXTURE_PATH = PROCESSED_DIR / "season_fixture_predictions_2026_2027.json"
 HIST_PATH = PROCESSED_DIR / "tff_trendyol_super_lig_2025_2026_matches.json"
 SQUAD_PATH = PROCESSED_DIR / "transfermarkt_super_lig_squads_2026_2027.json"
+CURRENT_SEASON_MATCHES_PATH = PROCESSED_DIR / "tff_super_lig_matches_2026_2027.json"
 OUTPUT_PATH = PROCESSED_DIR / "goal_scorer_predictions_2026_2027.json"
 
 OWN_GOAL_TYPE = "K"
@@ -72,6 +85,27 @@ def build_player_goal_history(matches: list[dict]) -> tuple[dict[str, int], dict
     return dict(goals), dict(starts)
 
 
+def players_with_2026_27_appearance() -> set[str]:
+    """canonical_player_name kümesi: bu sezon EN AZ BİR resmi maç kadrosunda (11/yedek) yer almış oyuncular.
+
+    "projected" (tahmini) skorer oranının uygulanabilmesi için zorunlu ön koşul — bkz.
+    modül docstring'i (2026-09-04 kullanıcı bulgusu). TM kadrosunda olmak tescilli/uygun
+    olduğu anlamına gelmez; bu sezon gerçekten bir maç kadrosuna girmiş olmak daha güçlü
+    bir sinyaldir.
+    """
+    if not CURRENT_SEASON_MATCHES_PATH.exists():
+        return set()
+    matches = json.loads(CURRENT_SEASON_MATCHES_PATH.read_text(encoding="utf-8"))
+    appeared: set[str] = set()
+    for m in matches:
+        for side in ("home", "away"):
+            lineup = m.get("lineups", {}).get(side, {})
+            for group in ("starting", "bench"):
+                for p in lineup.get(group, []) or []:
+                    appeared.add(canonical_player_name(p.get("name")))
+    return appeared
+
+
 def build_team_rosters() -> dict[str, list[dict]]:
     """_canon(takım adı) -> [{"name", "position_group", "rate"} ...] — yalnız kaleci-dışı."""
     if not SQUAD_PATH.exists():
@@ -94,6 +128,7 @@ def build_predictions() -> dict:
     hist = json.loads(HIST_PATH.read_text(encoding="utf-8"))
     goals, starts = build_player_goal_history(hist)
     rosters = build_team_rosters()
+    appeared_this_season = players_with_2026_27_appearance()
 
     # Pozisyon grubu başına, değerlendirilmiş (rated) oyunculardan ortalama gol oranı ve
     # ortalama piyasa değeri — yeni transferler için "projected" oranı ölçeklemekte kullanılır.
@@ -128,7 +163,7 @@ def build_predictions() -> dict:
                 continue
             pg = p.get("position_group")
             base_rate = pg_avg_rate.get(pg) if pg in PROJECTED_POSITION_GROUPS else None
-            if not base_rate:
+            if not base_rate or key not in appeared_this_season:
                 continue
             mv = p.get("market_value_eur")
             avg_mv = pg_avg_value.get(pg)
