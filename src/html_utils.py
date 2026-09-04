@@ -92,6 +92,7 @@ def _build_nav(active: str = "") -> str:
         ("Scout", "transfer_recommendation_report_2025_2026.html"),
         ("Analiz", "football_intelligence_home.html"),
         ("Avrupa", "european_predictions_2026_2027.html"),
+        ("🎮 Tahmin Oyunu", "/tahmin"),
     ]
     items = "".join(
         f'<a href="{href}" class="active">{label}</a>' if label == active or href == active

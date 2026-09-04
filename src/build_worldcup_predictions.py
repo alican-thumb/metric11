@@ -707,6 +707,7 @@ _NAV_LINKS = [
     ("Scout", "transfer_recommendation_report_2025_2026.html"),
     ("Analiz", "football_intelligence_home.html"),
     ("Tahminler", "worldcup_2026_predictions.html"),
+    ("🎮 Tahmin Oyunu", "/tahmin"),
 ]
 
 

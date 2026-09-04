@@ -220,6 +220,7 @@ _NAV_LINKS = [
     ("2026-27 Fikstür", "season_fixture_predictions_2026_2027.html"),
     ("Scout", "transfer_recommendation_report_2025_2026.html"),
     ("Avrupa", "european_predictions_2026_2027.html"),
+    ("🎮 Tahmin Oyunu", "/tahmin"),
 ]
 
 _CSS = """

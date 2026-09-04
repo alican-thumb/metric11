@@ -356,6 +356,24 @@ def _score_sidebar_html() -> str:
     )
 
 
+def _predict_game_sidebar_html() -> str:
+    """Kullanıcı tahmin oyununu (metric11-tahmin.vercel.app, /tahmin altında) tanıtan
+    öne çıkan sidebar kartı. Siteye yeni eklenen flagship özellik — en üstte gösterilir."""
+    return (
+        '<a href="/tahmin" style="display:block;text-decoration:none;color:inherit">'
+        '<div class="panel" style="border-top:3px solid var(--lime);background:linear-gradient(165deg,#0f2318,#0a1a10);font-size:13px">'
+        '<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">'
+        '<div style="font-size:10px;font-weight:700;color:var(--lime);letter-spacing:.06em;text-transform:uppercase">🎮 Tahmin Oyunu</div>'
+        '<span style="font-size:9px;font-weight:800;color:#091810;background:var(--lime);border-radius:4px;padding:2px 6px;letter-spacing:.04em">YENİ</span>'
+        '</div>'
+        '<div style="color:white;font-size:14px;font-weight:700;line-height:1.35;margin-bottom:6px">Kendi tahminini gir, metric11 ile yarış</div>'
+        '<div style="color:#8fa89a;font-size:12px;line-height:1.5;margin-bottom:14px">Üye ol, her hafta skor tahminlerini gönder, otomatik puanlan ve lider tablosunda yerini al — tamamen ücretsiz.</div>'
+        '<div style="display:block;text-align:center;padding:9px;background:var(--lime);border-radius:7px;color:#091810;font-size:12px;font-weight:800">Ücretsiz Katıl →</div>'
+        '</div>'
+        '</a>'
+    )
+
+
 def _ana_link(href: str, label: str, bold: bool = False) -> str:
     exists = (PROCESSED_DIR / href).exists()
     if exists:
@@ -418,10 +436,12 @@ def build_html() -> str:
     else:
         transfer_sidebar_html = ""
 
-    # Sağ sütun sıralaması: lig-modunda skor paneli üste, transfer bloğu alta iner
-    # (skor öne çıkar); lig öncesi transfer bloğu üstte kalır.
+    # Sağ sütun sıralaması: tahmin oyunu kartı her zaman en üstte (flagship özellik);
+    # lig-modunda skor paneli onun altında, transfer bloğu alta iner; lig öncesi
+    # transfer bloğu skor panelinin yerini alır.
+    predict_game_html = _predict_game_sidebar_html()
     score_sidebar_html = _score_sidebar_html() if _league else ""
-    sidebar_top_html = score_sidebar_html if _league else transfer_sidebar_html
+    sidebar_top_html = predict_game_html + (score_sidebar_html if _league else transfer_sidebar_html)
     sidebar_bottom_html = transfer_sidebar_html if _league else ""
 
     if not _is_transfer_season:
@@ -539,6 +559,7 @@ def build_html() -> str:
     <a href="transfer_recommendation_report_{SEASON}.html">Scout</a>
     <a href="football_intelligence_home.html">Analiz</a>
     <a href="european_predictions_2026_2027.html">⚽ Avrupa</a>
+    <a href="/tahmin" style="color:var(--lime)">🎮 Tahmin Oyunu</a>
   </nav>
 </div>
 <div class="window-banner" style="{banner_css}">

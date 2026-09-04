@@ -338,6 +338,7 @@ def build_html(signals: list[dict], summary: dict) -> str:
     <a href="transfer_recommendation_report_{SEASON}.html">Scout</a>
     <a href="football_intelligence_home.html">Analiz</a>
     <a href="european_predictions_2026_2027.html">⚽ Avrupa</a>
+    <a href="/tahmin">🎮 Tahmin Oyunu</a>
   </nav>
 </div>
 <div class="header">

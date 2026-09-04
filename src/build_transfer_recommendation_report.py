@@ -725,7 +725,8 @@ def build_html(report: dict) -> str:
 <div class="topbar">
   <a class="brand" href="/"><b>11</b> metric11<span class="slbl">Süper Lig 2025/26</span></a>
   <nav class="topnav"><a href="/">Gündem</a><a href="transfer_tracker_2025_2026.html">Transferler</a><a href="all_teams_preview_dashboard_2025_2026.html">{preview_nav_label()}</a><a class="active" href="transfer_recommendation_report_2025_2026.html">Scout</a><a href="football_intelligence_home.html">Analiz</a>
-    <a href="european_predictions_2026_2027.html">⚽ Avrupa</a></nav>
+    <a href="european_predictions_2026_2027.html">⚽ Avrupa</a>
+    <a href="/tahmin">🎮 Tahmin Oyunu</a></nav>
 </div>
 <div class="header">
   <h1>Scout &amp; Transfer Merkezi <span style="color:#cde94e;font-size:0.9em">{TRANSFER_WATCH_SEASON_LABEL}</span></h1>

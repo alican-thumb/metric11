@@ -30,6 +30,7 @@ _NAV_LINKS = [
     ("Maç Önü", "all_teams_preview_dashboard_2025_2026.html"),
     ("Scout", "transfer_recommendation_report_2025_2026.html"),
     ("Avrupa", "european_predictions_2026_2027.html"),
+    ("🎮 Tahmin Oyunu", "/tahmin"),
 ]
 
 _STAGE_TR = {

@@ -97,6 +97,7 @@ def build_html(report: dict) -> str:
       <a class="active" href="transfer_recommendation_report_2025_2026.html">Scout</a>
       <a href="football_intelligence_home.html">Analiz</a>
     <a href="european_predictions_2026_2027.html">⚽ Avrupa</a>
+    <a href="/tahmin">🎮 Tahmin Oyunu</a>
     </nav>
   </div>
   <header>
