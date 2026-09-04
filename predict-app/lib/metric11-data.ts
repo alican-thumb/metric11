@@ -38,8 +38,11 @@ export async function getAllMatches(): Promise<Metric11Match[]> {
   if (fixtureCache && Date.now() - fixtureCache.fetchedAt < FIXTURE_CACHE_TTL_MS) {
     return fixtureCache.data;
   }
+  // Next.js'in dahili veri önbelleği 2MB üstü yanıtları önbellekleyemiyor (bu dosya
+  // ~3MB) — kendi modül-seviyeli fixtureCache'imiz zaten var, Next'in kendi cache'ine
+  // gerek yok, `no-store` ile o katmanı tamamen atlıyoruz.
   const res = await fetch(`${METRIC11_BASE_URL}/season_fixture_predictions_2026_2027.json`, {
-    next: { revalidate: 300 },
+    cache: "no-store",
   });
   if (!res.ok) {
     throw new Error(`metric11 fixture verisi çekilemedi: HTTP ${res.status}`);
@@ -65,7 +68,7 @@ export async function getUpcomingMatches(): Promise<Metric11Match[]> {
 
 export async function getScorerPredictions(matchId: string): Promise<ScorerPayload["matches"][string] | undefined> {
   const res = await fetch(`${METRIC11_BASE_URL}/goal_scorer_predictions_2026_2027.json`, {
-    next: { revalidate: 300 },
+    cache: "no-store",
   });
   if (!res.ok) return undefined;
   const payload = (await res.json()) as ScorerPayload;
@@ -74,10 +77,17 @@ export async function getScorerPredictions(matchId: string): Promise<ScorerPaylo
 
 // "DD.MM.YYYY HH:MM" (Türkiye yerel, UTC+3, DST yok) -> gerçek UTC Date.
 // src/model_league_predictions.py::parse_tff_datetime ile aynı format varsayımı.
+//
+// Sezonun ileri haftalarındaki maçların çoğunda (yayın programı henüz belli değil)
+// kickoff saati YOK — yalnız "DD.MM.YYYY" (bkz. 2026-09-05: 252/306 maçta bu durum
+// tespit edildi, `.split(" ")` tek eleman döndürüp bir sonraki `.split(":")`'ı
+// undefined üzerinde çağırıp TÜM ana sayfayı çökertiyordu). Saat bilinmiyorsa güne
+// ait en geç makul saati (23:59) varsayıyoruz — is_played bayrağı zaten asıl kilit
+// kontrolü, bu yalnızca sıralama/görüntüleme için ve erken kilitlenmemeyi tercih eder.
 export function parseKickoff(dateTime: string): Date {
   const [datePart, timePart] = dateTime.trim().split(" ");
   const [day, month, year] = datePart.split(".").map(Number);
-  const [hour, minute] = timePart.split(":").map(Number);
+  const [hour, minute] = timePart ? timePart.split(":").map(Number) : [23, 59];
   // UTC+3 yerel saat -> UTC: 3 saat çıkar.
   return new Date(Date.UTC(year, month - 1, day, hour - 3, minute));
 }
