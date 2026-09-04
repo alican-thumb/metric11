@@ -1,0 +1,17 @@
+{
+  "$schema": "https://openapi.vercel.sh/microfrontends.json",
+  "version": "1",
+  "applications": {
+    "metric11": {
+      "development": {
+        "fallback": "metric11.com"
+      }
+    },
+    "metric11-tahmin": {
+      "packageName": "predict-app",
+      "routing": [
+        { "paths": ["/tahmin/:path*"] }
+      ]
+    }
+  }
+}
