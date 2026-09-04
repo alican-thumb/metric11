@@ -101,6 +101,7 @@
 | Haber61 | MEDIA | 10 | 2 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Saray Medya | MEDIA | 10 | 3 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | birgun.net | MEDIA | 10 | 7 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| gzt.com | MEDIA | 9 | 6 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | hurriyet.com.tr | MEDIA | 9 | 3 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | İhlas Haber Ajansı | MEDIA | 9 | 5 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | 61SAAT | MEDIA | 8 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
@@ -223,6 +224,7 @@
 | Samsun Haber | MEDIA | 5 | 0 | 0 | — | — | — | — | OBSERVING |
 | gazetevatan.com | MEDIA | 4 | 0 | 0 | — | — | — | — | OBSERVING |
 | ntv.com.tr | MEDIA | 3 | 1 | 0 | — | — | — | — | OBSERVING |
+| saraymedya.com | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
 | 24saatgazetesi.com | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Anadolu'da Bugün | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Bugün Kocaeli Gazetesi | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
@@ -303,7 +305,6 @@
 | odakgazetesi.com | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | ozgurkocaeli.com.tr | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | politikam.com | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
-| saraymedya.com | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | siyasalbirikim.com.tr | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | sozcu.com.tr | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | spor.haber7.com | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
