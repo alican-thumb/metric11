@@ -1,7 +1,11 @@
 """UEFA Şampiyonlar Ligi, Avrupa Ligi ve Konferans Ligi 2026-27 maç tahminleri.
 
 football-data.org fixtures verisi üzerinden Poisson bazlı tahmin üretir.
-Form verisi: turnikedeki geçmiş maçlar + UEFA katsayısı bazlı başlangıç gücü.
+Form verisi: turnuvadaki geçmiş maçlar + (2026-09-04'ten itibaren) 7 büyük iç ligin
+GÜNCEL sezon puan durumuyla harmanlanmış UEFA katsayısı bazlı başlangıç gücü
+(bkz. collect_domestic_league_form.py, `_strength()`) — statik 2024-25 tablosu artık
+tek başına belirleyici değil, transfer/mevcut-form etkisini turnuva maçları oynanmadan
+ÖNCE de yansıtır.
 Çıktı: data/processed/european_predictions_2026_2027.json
 """
 from __future__ import annotations
@@ -93,8 +97,47 @@ _BASE_GOALS       = 1.42   # UCL 2023-25 ortalama gol/takım/maç
 _DRAW_CALIBRATION = 1.18   # UCL grup aşaması gerçek draw oranı ~%26 (Poisson ~%22)
 _MAX_GOALS        = 8
 
+DOMESTIC_FORM_PATH = PROCESSED_DIR / "domestic_league_form_2026_2027.json"
+# Statik tablo 2024-25 UEFA katsayısına donuk kalır (transfer/form değişikliğini hiç
+# yansıtmaz). Mevcutsa, ücretsiz football-data.org planında zaten erişilebilen 7 büyük
+# iç ligin (bkz. collect_domestic_league_form.py) GÜNCEL sezon puan ortalaması bu statik
+# değere harmanlanır — turnuvanın kendi maçları oynanmadan önce bile (`_att_lambda`/
+# `_def_lambda`'daki turnuva-içi form ayrıca, bağımsız olarak devam eder).
+_DOMESTIC_FORM_CACHE: dict[str, dict] | None = None
+_DOMESTIC_FORM_MAX_WEIGHT = 0.5  # iç lig formu statik tabloyu en fazla yarı yarıya ağırlıklandırır
+
+
+def _load_domestic_form() -> dict[str, dict]:
+    global _DOMESTIC_FORM_CACHE
+    if _DOMESTIC_FORM_CACHE is None:
+        try:
+            payload = json.loads(DOMESTIC_FORM_PATH.read_text(encoding="utf-8"))
+            _DOMESTIC_FORM_CACHE = payload.get("teams", {})
+        except (FileNotFoundError, json.JSONDecodeError):
+            _DOMESTIC_FORM_CACHE = {}
+    return _DOMESTIC_FORM_CACHE
+
+
+def _domestic_form_for(name: str) -> dict | None:
+    form = _load_domestic_form()
+    for k, v in form.items():
+        if k.lower() in name.lower() or name.lower() in k.lower():
+            return v
+    return None
+
 
 def _strength(name: str) -> float:
+    static = _static_strength(name)
+    row = _domestic_form_for(name)
+    if not row or row.get("played", 0) < 1:
+        return static
+    ppg = row.get("points_per_game", 1.0)
+    domestic_strength = max(15.0, min(100.0, 30.0 + ppg * 22.0))
+    weight = min(_DOMESTIC_FORM_MAX_WEIGHT, row["played"] / 8)
+    return static * (1 - weight) + domestic_strength * weight
+
+
+def _static_strength(name: str) -> float:
     for k, v in _CLUB_STRENGTH.items():
         if k.lower() in name.lower() or name.lower() in k.lower():
             return v

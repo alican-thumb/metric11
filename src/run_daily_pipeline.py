@@ -134,6 +134,7 @@ NETWORK_COMMANDS = [
     ],
     ["python", "-m", "src.collect_worldcup_fixtures"],
     ["python", "-m", "src.collect_european_fixtures"],
+    ["python", "-m", "src.collect_domestic_league_form"],
     ["python", "-m", "src.collect_national_team_form"],
     ["python", "-m", "src.collect_head_to_head_history", "--limit", "30"],
     ["python", "-m", "src.collect_news_context"],
