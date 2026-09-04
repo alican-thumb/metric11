@@ -57,6 +57,10 @@ jobs:
           ADMIN_CREDENTIALS_HASH: ${{ secrets.ADMIN_CREDENTIALS_HASH }}
         run: python -m src.run_daily_pipeline
 
+      - name: Kadro veri tazeliğini kontrol et
+        if: always()
+        run: python -m src.check_squad_freshness
+        
       - name: Commit and push generated outputs
         if: always()
         run: |
