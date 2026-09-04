@@ -5,9 +5,9 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 ## Genel Karne
 
 - Değerlendirilen maç: **27**
-- İsabet: **10/27** (%37)
+- İsabet: **11/27** (%41)
 - Beraberlik yakalama: **0/6** (%0)
-- Yüksek güvenli maç isabeti: **5/11** (%45)
+- Yüksek güvenli maç isabeti: **5/10** (%50)
 
 ## Hafta 3 — 6/9 isabet (%67)
 
@@ -37,7 +37,7 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 | GÖZTEPE A.Ş. - GENÇLERBİRLİĞİ | 0 - 1 | Ev | ❌ | MEDIUM |
 | KOCAELİSPOR - AMED SPORTİF FAALİYETLER | 2 - 0 | Deplasman | ❌ | HIGH |
 
-## Hafta 1 — 2/9 isabet (%22)
+## Hafta 1 — 3/9 isabet (%33)
 
 | Maç | Skor | Tahmin | Sonuç | Güven |
 | --- | --- | --- | --- | --- |
@@ -47,7 +47,7 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 | GAZİANTEP FUTBOL KULÜBÜ A.Ş. - CORENDON ALANYASPOR | 1 - 1 | Deplasman | ❌ | MEDIUM |
 | GENÇLERBİRLİĞİ - FENERBAHÇE A.Ş. | 2 - 1 | Deplasman | ❌ | HIGH |
 | İSTANBUL BAŞAKŞEHİR FK - KOCAELİSPOR | 2 - 0 | Ev | ✅ | HIGH |
-| AMED SPORTİF FAALİYETLER - ERZURUMSPOR FK | 3 - 0 | Beraberlik | ❌ | HIGH |
+| AMED SPORTİF FAALİYETLER - ERZURUMSPOR FK | 3 - 0 | Ev | ✅ | LOW |
 | BEŞİKTAŞ A.Ş. - EYÜPSPOR | 1 - 0 | Ev | ✅ | MEDIUM |
 | SAMSUNSPOR A.Ş. - GÖZTEPE A.Ş. | 3 - 3 | Deplasman | ❌ | LOW |
 

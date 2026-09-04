@@ -32,6 +32,8 @@ def main() -> None:
 
 LEAGUE_AVG_CARDS = 4.67
 LEAGUE_AVG_GOALS = 2.65
+LEAGUE_AVG_GOALS_PER_TEAM = LEAGUE_AVG_GOALS / 2
+LEAGUE_AVG_PPG = 1.3  # takım başına maç başı ortalama puan (~%28-30 lig beraberlik oranıyla tutarlı)
 MIN_REFEREE_MATCHES = 4
 
 DRAW_PRED_MIN_PROB = 0.28   # draw olasılığı bu eşiğin altındaysa beraberlik tahmin edilmez
@@ -198,12 +200,17 @@ def predict_match(
     match_date=None,
 ) -> dict:
     league_home_boost = 0.18
-    home_gf = avg(item["goals_for"] for item in home_history)
-    home_ga = avg(item["goals_against"] for item in home_history)
-    away_gf = avg(item["goals_for"] for item in away_history)
-    away_ga = avg(item["goals_against"] for item in away_history)
-    home_ppg = avg(item["points"] for item in home_history)
-    away_ppg = avg(item["points"] for item in away_history)
+    # Hiç geçmişi olmayan takım (ör. yeni yükselen — bkz. PROJECT_STATE 2026-09-04): avg([])
+    # sessizce 0 döner, yani "bu takım maç başına 0 gol atar/yer" gibi anlamsız bir varsayıma
+    # yol açar (iki yeni takım karşılaşınca ikisi de ~0.15-0.18 beklenen gole düşüyor, Poisson
+    # bunu ~%74 beraberlik olarak okuyor — gerçekte olmayan bir sinyal). Geçmiş YOKSA lig
+    # ortalamasını (bilinmeyen = ortalama takım) varsayılan al; geçmiş VARSA davranış aynı.
+    home_gf = avg(item["goals_for"] for item in home_history) if home_history else LEAGUE_AVG_GOALS_PER_TEAM
+    home_ga = avg(item["goals_against"] for item in home_history) if home_history else LEAGUE_AVG_GOALS_PER_TEAM
+    away_gf = avg(item["goals_for"] for item in away_history) if away_history else LEAGUE_AVG_GOALS_PER_TEAM
+    away_ga = avg(item["goals_against"] for item in away_history) if away_history else LEAGUE_AVG_GOALS_PER_TEAM
+    home_ppg = avg(item["points"] for item in home_history) if home_history else LEAGUE_AVG_PPG
+    away_ppg = avg(item["points"] for item in away_history) if away_history else LEAGUE_AVG_PPG
     home_gd = avg(item["goals_for"] - item["goals_against"] for item in home_history)
     away_gd = avg(item["goals_for"] - item["goals_against"] for item in away_history)
     home_clean = avg(1 if item["goals_against"] == 0 else 0 for item in home_history)
