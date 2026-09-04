@@ -144,6 +144,10 @@ def transfer_strength_edge(team_name: str) -> dict:
         is_departure = _club_matches_team(team_name, record.get("from_club"))
         if not is_arrival and not is_departure:
             continue
+        # squad_transition_edge'deki aynı koşul: henüz bu sezon bir maç kadrosuna bile
+        # girmemiş bir "gelen" oyuncunun piyasa değerini takım gücüne hemen yansıtma.
+        if is_arrival and canonical_player_name(record.get("player")) not in _players_appeared_this_season():
+            continue
         weighted_value = weight * value if is_arrival else -weight * value
         total_net_value += weighted_value
         if status in _TRANSFER_CONFIRMED_STATUSES:
@@ -230,7 +234,18 @@ def squad_transition_edge(team_name: str) -> dict:
     if not prev or not curr:
         return {"available": False, "edge": 0.0}
 
-    arrivals = [(name, val) for name, val in curr.items() if name not in prev]
+    # TM kadrosunda görünmek transfer olduğu anlamına gelir ama O SEZON HENÜZ BİR MAÇ
+    # KADROSUNA BİLE GİRMEMİŞ bir yeni transferin piyasa değerini takım gücüne hemen tam
+    # olarak yansıtmak yanıltıcı (2026-09-04 kullanıcı bulgusu — Leão örneği: Galatasaray'a
+    # transfer olmuş ama henüz oynamamış bir oyuncu hem "olası golcü" listesinde hem de
+    # (bu düzeltmeden önce) squad_transition_edge üzerinden maç sonucu tahminlerinde takımı
+    # olduğundan güçlü gösteriyordu). Bu yüzden yalnız bu sezon EN AZ BİR maç kadrosuna
+    # (11 veya yedek) GERÇEKTEN girmiş gelenler tam ağırlıkla sayılır; henüz debut yapmamış
+    # gelenler `edge` hesabına dahil edilmez (yine de "pending_arrivals" olarak raporlanır).
+    appeared = _players_appeared_this_season()
+    arrivals_all = [(name, val) for name, val in curr.items() if name not in prev]
+    arrivals = [(name, val) for name, val in arrivals_all if name in appeared]
+    pending_arrivals = [(name, val) for name, val in arrivals_all if name not in appeared]
     departures = [(name, val) for name, val in prev.items() if name not in curr]
     arrivals_value = sum(v for _, v in arrivals)
     departures_value = sum(v for _, v in departures)
@@ -255,6 +270,10 @@ def squad_transition_edge(team_name: str) -> dict:
         "top_departures": [
             {"player": n, "market_value_eur": v}
             for n, v in sorted(departures, key=lambda x: x[1], reverse=True)[:5]
+        ],
+        "pending_arrivals": [
+            {"player": n, "market_value_eur": v}
+            for n, v in sorted(pending_arrivals, key=lambda x: x[1], reverse=True)[:5]
         ],
     }
 
@@ -340,6 +359,28 @@ def _load_current_season_matches() -> list[dict]:
         except (FileNotFoundError, json.JSONDecodeError):
             _current_season_matches_cache = []
     return _current_season_matches_cache
+
+
+_appeared_players_cache: set[str] | None = None
+
+
+def _players_appeared_this_season() -> set[str]:
+    """canonical_player_name kümesi: bu sezon EN AZ BİR maç kadrosunda (11/yedek) yer almış oyuncular.
+
+    `squad_transition_edge`'in yeni-transfer piyasa değerini takım gücüne yansıtmadan önce
+    o oyuncunun gerçekten oynadığını doğrulamak için kullanılır (bkz. o fonksiyondaki not).
+    """
+    global _appeared_players_cache
+    if _appeared_players_cache is None:
+        appeared: set[str] = set()
+        for m in _load_current_season_matches():
+            for side in ("home", "away"):
+                lineup = m.get("lineups", {}).get(side, {})
+                for group in ("starting", "bench"):
+                    for p in lineup.get(group, []) or []:
+                        appeared.add(canonical_player_name(p.get("name")))
+        _appeared_players_cache = appeared
+    return _appeared_players_cache
 
 
 def suspension_edge(team_name: str, match_date: "datetime | None") -> dict:
