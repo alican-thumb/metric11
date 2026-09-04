@@ -31,6 +31,15 @@ oysa o akşamki maçın kadrosunda bile yoktu. Bu koşul olmadan "projected" tam
 korunur. Bu koşul, ligde zaten oynamaya başlamış transferleri (ör. Vlahović, Miretti,
 Poku — hepsi ilk 3 haftada kadroya girdi) hâlâ doğru şekilde gösterir.
 
+MAÇ GÜNÜ KADRO TAKİBİ (2026-09-04): `collect_live_lineups.py` kickoff'tan birkaç saat
+önce TFF'nin sayfasında kadro yayınlanıp yayınlanmadığını dener; yayınlanmışsa
+(`live_lineups_2026_2027.json`) o maçın golcü adayları SADECE o günkü kadroda (11 veya
+yedek) olan oyuncularla sınırlanır — yalnızca yeni transferler için değil, herkes için:
+2025-26'da çok gol atmış ama bugün sakat/cezalı/rotasyonda olan bir oyuncu da artık
+gösterilmez. Kadro henüz yayınlanmamışsa (çoğu maç için — kickoff'a saatler var) eski
+davranış (sezonluk TM kadrosu + görünürlük koşulları) aynen sürer. `lineup_confirmed`
+alanı bu maç için kadronun doğrulanıp doğrulanmadığını gösterir.
+
 model_league_predictions.py'a DOKUNMAZ.
 """
 from __future__ import annotations
@@ -106,6 +115,37 @@ def players_with_2026_27_appearance() -> set[str]:
     return appeared
 
 
+def load_live_lineup_names() -> dict[str, dict[str, set[str]]]:
+    """match_id(str) -> {"home": {canonical_player_name...}, "away": {...}}.
+
+    `collect_live_lineups.py`'nin maç başlamadan yakaladığı kadrolar — mevcutsa bu, elimizdeki
+    EN KESİN sinyaldir: yalnızca "bu sezon oynadı mı" değil, "BUGÜN o maçın kadrosunda mı"
+    diye bakar. Bir maç için varsa, o maçın golcü adayları BUNUNLA sınırlanır (2025-26'da
+    çok gol atmış ama bugün kadroda/11'de olmayan — ör. sakat/cezalı/rotasyon — bir oyuncu
+    da artık gösterilmez, yalnız yeni transferler için değil).
+    """
+    path = PROCESSED_DIR / "live_lineups_2026_2027.json"
+    if not path.exists():
+        return {}
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {}
+    out: dict[str, dict[str, set[str]]] = {}
+    for match_id, m in payload.get("matches", {}).items():
+        sides: dict[str, set[str]] = {}
+        for side in ("home", "away"):
+            lineup = m.get("lineups", {}).get(side, {})
+            names = {
+                canonical_player_name(p.get("name"))
+                for group in ("starting", "bench")
+                for p in (lineup.get(group, []) or [])
+            }
+            sides[side] = names
+        out[match_id] = sides
+    return out
+
+
 def build_team_rosters() -> dict[str, list[dict]]:
     """_canon(takım adı) -> [{"name", "position_group", "rate"} ...] — yalnız kaleci-dışı."""
     if not SQUAD_PATH.exists():
@@ -129,6 +169,7 @@ def build_predictions() -> dict:
     goals, starts = build_player_goal_history(hist)
     rosters = build_team_rosters()
     appeared_this_season = players_with_2026_27_appearance()
+    live_lineups = load_live_lineup_names()
 
     # Pozisyon grubu başına, değerlendirilmiş (rated) oyunculardan ortalama gol oranı ve
     # ortalama piyasa değeri — yeni transferler için "projected" oranı ölçeklemekte kullanılır.
@@ -151,11 +192,13 @@ def build_predictions() -> dict:
     pg_avg_rate = {pg: sum(v) / len(v) for pg, v in pg_rates.items() if v}
     pg_avg_value = {pg: sum(v) / len(v) for pg, v in pg_values.items() if v}
 
-    def _side_candidates(team_fixture_name: str, lam: float) -> list[dict]:
+    def _side_candidates(team_fixture_name: str, lam: float, allowed_names: set[str] | None = None) -> list[dict]:
         roster = rosters.get(_canon(team_fixture_name), [])
         rated = []
         for p in roster:
             key = canonical_player_name(p.get("name"))
+            if allowed_names is not None and key not in allowed_names:
+                continue
             n_starts = starts.get(key, 0)
             if n_starts >= MIN_STARTS:
                 n_goals = goals.get(key, 0)
@@ -199,8 +242,11 @@ def build_predictions() -> dict:
             if m.get("is_played"):
                 continue
             lam_h, lam_a = m.get("expected_home_goals"), m.get("expected_away_goals")
-            home_c = _side_candidates(m.get("home_team"), lam_h)
-            away_c = _side_candidates(m.get("away_team"), lam_a)
+            live = live_lineups.get(str(m["match_id"]))
+            home_allowed = live["home"] if live else None
+            away_allowed = live["away"] if live else None
+            home_c = _side_candidates(m.get("home_team"), lam_h, home_allowed)
+            away_c = _side_candidates(m.get("away_team"), lam_a, away_allowed)
             if not home_c and not away_c:
                 continue
             out_matches[str(m["match_id"])] = {
@@ -208,6 +254,7 @@ def build_predictions() -> dict:
                 "away_scorers": away_c,
                 "home_roster_rated": bool(home_c),
                 "away_roster_rated": bool(away_c),
+                "lineup_confirmed": bool(live),
             }
 
     return {

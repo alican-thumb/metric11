@@ -364,8 +364,24 @@ def _load_current_season_matches() -> list[dict]:
 _appeared_players_cache: set[str] | None = None
 
 
+def _load_live_lineups() -> dict:
+    from src.config import PROCESSED_DIR
+
+    path = PROCESSED_DIR / "live_lineups_2026_2027.json"
+    try:
+        return json.loads(path.read_text(encoding="utf-8")).get("matches", {})
+    except (FileNotFoundError, json.JSONDecodeError):
+        return {}
+
+
 def _players_appeared_this_season() -> set[str]:
     """canonical_player_name kümesi: bu sezon EN AZ BİR maç kadrosunda (11/yedek) yer almış oyuncular.
+
+    İki kaynak birleştirilir: (1) bitmiş maçların kesin kadrosu (`tff_super_lig_matches_
+    2026_2027.json`), (2) `collect_live_lineups.py`'nin maç başlamadan önce yakaladığı
+    kadrolar (`live_lineups_2026_2027.json`) — böylece bir oyuncunun SEZON DEBUT'ü olduğu
+    maçın kendisinde bile (maç henüz bitmemişken) "oynadı" sayılır, maçın bitmesini
+    beklemek zorunda kalınmaz.
 
     `squad_transition_edge`'in yeni-transfer piyasa değerini takım gücüne yansıtmadan önce
     o oyuncunun gerçekten oynadığını doğrulamak için kullanılır (bkz. o fonksiyondaki not).
@@ -374,6 +390,12 @@ def _players_appeared_this_season() -> set[str]:
     if _appeared_players_cache is None:
         appeared: set[str] = set()
         for m in _load_current_season_matches():
+            for side in ("home", "away"):
+                lineup = m.get("lineups", {}).get(side, {})
+                for group in ("starting", "bench"):
+                    for p in lineup.get(group, []) or []:
+                        appeared.add(canonical_player_name(p.get("name")))
+        for m in _load_live_lineups().values():
             for side in ("home", "away"):
                 lineup = m.get("lineups", {}).get(side, {})
                 for group in ("starting", "bench"):

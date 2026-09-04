@@ -92,6 +92,7 @@ NETWORK_COMMANDS = [
     # they are intentionally left out of the automated network pipeline.
     ["python", "-m", "src.collect_tff_season_fixture"],
     ["python", "-m", "src.advance_season_state"],
+    ["python", "-m", "src.collect_live_lineups"],
     [
         "python",
         "-m",

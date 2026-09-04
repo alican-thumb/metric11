@@ -348,10 +348,14 @@ def _match_card(m: dict, signals: dict | None = None, scorers: dict | None = Non
                 tag = ' <span title="Yeni transfer — 2025-26 Süper Lig geçmişi yok, pozisyon+piyasa değerine göre tahmini oran">🆕</span>' if s.get("projected") else ""
                 return f'<b>{escape(s["player"])}</b>{tag} %{round(s["scores_probability"]*100)}'
             return " · ".join(_one(s) for s in lst[:2])
+        lineup_tag = (
+            ' <span title="Maç günü kadrosu TFF tarafından yayınlandı — golcü adayları bugünkü kadroyla sınırlı" style="color:#4ade80">✓ kadro açıklandı</span>'
+            if sc.get("lineup_confirmed") else ""
+        )
         scorers_html = (
             '<div class="mc-scorers">'
             f'⚽ {escape(m["home_team"])}: {_fmt_scorers(sc.get("home_scorers"))}<br>'
-            f'⚽ {escape(m["away_team"])}: {_fmt_scorers(sc.get("away_scorers"))}'
+            f'⚽ {escape(m["away_team"])}: {_fmt_scorers(sc.get("away_scorers"))}{lineup_tag}'
             '</div>'
         )
     return f"""<div class="match-card">
@@ -437,6 +441,18 @@ def main() -> None:
     if not FIXTURE_PATH.exists():
         print(f"HATA: {FIXTURE_PATH} bulunamadı. Önce collect_tff_season_fixture çalıştırın.")
         return
+    # Maç günü kadro kontrolü: bu fonksiyon `run_daily_pipeline`'ın hem network hem
+    # network-yok modunda (DEFAULT_COMMANDS'te, bkz. refresh.yml'in 6 saatlik döngüsü)
+    # koşulsuz çağrılıyor — bu yüzden kickoff'a yakın kadro kontrolünü BURADA (yalnız
+    # NETWORK_COMMANDS'e değil) yapmak, `collect_live_lineups`'ın gerçekten günde birkaç
+    # kez (nightly pipeline dışında da) denenmesini sağlıyor (bkz. PROJECT_STATE 2026-09-04
+    # — workflow dosyalarına yeni bir adım eklenemediği için bu, mevcut cadence içinde
+    # kalabilecek en sık çalışma yolu).
+    from src.collect_live_lineups import main as _collect_live_lineups
+    try:
+        _collect_live_lineups()
+    except Exception as exc:  # noqa: BLE001 - kadro kontrolü opsiyonel bir iyileştirme, ana akışı kesmemeli
+        print(f"UYARI: collect_live_lineups başarısız oldu ({exc}), atlanıyor.")
     payload = build_predictions()
     OUTPUT_JSON.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     OUTPUT_MD.write_text(build_markdown(payload), encoding="utf-8")
