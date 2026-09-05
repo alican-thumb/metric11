@@ -1,14 +1,15 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-09-04T22:00:20.100099+00:00
-Toplam ilgili haber: 26
+Üretim zamanı: 2026-09-05T00:04:33.812163+00:00
+Toplam ilgili haber: 27
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
-- [Galatasaray'da Uğurcan Çakır, Şampiyonlar Ligi hedefini açıkladı!](https://www.sabah.com.tr/spor/futbol/2026/09/04/galatasarayda-ugurcan-cakir-sampiyonlar-ligi-hedefini-acikladi) — Sabah Spor · 2026-09-04T22:21:36+03:00 · turnuva=CL · kulüp=Galatasaray, Başakşehir
+- [Uğurcan Çakır'dan Şampiyonlar Ligi mesajı! "Geçen senenin üzerinde performans..."](https://www.aksam.com.tr/spor/ugurcan-cakirdan-sampiyonlar-ligi-mesaji-gecen-senenin-uzerinde-performans/haber-1695957) — Aksam Spor · 2026-09-05T01:08:00+03:00 · turnuva=CL · kulüp=Galatasaray, Başakşehir
 - [UEFA’dan Matteo Guendouzi ve Mason Greenwood’a ceza](https://www.cnnturk.com/spor/futbol/uefadan-matteo-guendouzi-ve-mason-greenwooda-ceza-3462955) — CNN Türk Spor · 2026-09-04T21:00:45+00:00 · turnuva=— · kulüp=Fenerbahçe
 - [GALATASARAY ŞAMPİYONLAR LİGİ KADROSU: GS UEFA Listesi Belli Oldu Mu? Galatasaray Şampiyonlar Ligi Kadrosunda Kimler Var?](https://www.cnnturk.com/spor/futbol/galatasaray-sampiyonlar-ligi-kadrosu-gs-uefa-listesi-belli-oldu-mu-galatasaray-sampiyonlar-ligi-kadrosunda-kimler-var-3462213) — CNN Türk Spor · 2026-09-04T20:32:02+00:00 · turnuva=CL · kulüp=Galatasaray
+- [Lyon maçının faturası Fenerbahçe'ye ağır oldu: Guendouzi 2 maç kaçıracak, Greenwood Roma'da oynayabilecek](https://www.takvim.com.tr/spor/fenerbahce/2026/09/04/uefadan-fenerbahceye-ceza-greenwood-30-bin-euro-guendouzi-4-mac-men) — Takvim Spor · 2026-09-04T20:17:20+03:00 · turnuva=— · kulüp=Fenerbahçe
 - [UEFA açıkladı! Fenerbahçe'de Guendouzi ve Greenwood'a şok ceza](https://www.fotomac.com.tr/fenerbahce/2026/09/04/fenerbahceye-guendouzi-ve-greenwooda-sok-ceza) — Fotomaç · 2026-09-04T20:14:59+03:00 · turnuva=— · kulüp=Fenerbahçe
 - [Lucas Torreira'dan Şampiyonlar Ligi mesajı!](https://www.hurriyet.com.tr/sporarena/lucas-torreiradan-sampiyonlar-ligi-mesaji-43296502) — Hürriyet Spor · 2026-09-04T19:51:55+00:00 · turnuva=CL · kulüp=Galatasaray, Başakşehir
 - [BEŞİKTAŞ UEFA AVRUPA LİGİ FİKSTÜRÜ 2026-2027: Beşiktaş Avrupa Ligi'nde İlk Maçını Kiminle Oynayacak, Ne Zaman? İşte BJK UEL Maç Takvimi...](https://www.cnnturk.com/spor/futbol/besiktas-uefa-avrupa-ligi-fiksturu-2026-2027-besiktas-avrupa-liginde-ilk-macini-kiminle-oynayacak-ne-zaman-iste-bjk-uel-mac-takvimi-3462430) — CNN Türk Spor · 2026-09-04T17:46:28+00:00 · turnuva=EL · kulüp=Beşiktaş
