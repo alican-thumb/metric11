@@ -1,7 +1,7 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-09-05T08:23:52.978242+00:00
-Toplam ilgili haber: 28
+Üretim zamanı: 2026-09-05T10:34:49.922491+00:00
+Toplam ilgili haber: 24
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
@@ -24,13 +24,9 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Ziraat Türkiye Kupası'nda 1. eleme turu maçlarının programı belli oldu](https://www.aa.com.tr/tr/spor/ziraat-turkiye-kupasinda-1-eleme-turu-maclarinin-programi-belli-oldu/4047517) — Anadolu Ajansı Spor · 2026-09-04T17:01:59+03:00 · turnuva=— · kulüp=—
 - [Ziraat Türkiye Kupası'nda 1. tur heyecanı başlıyor! İşte maç programı](https://www.takvim.com.tr/spor/2026/09/04/ziraat-turkiye-kupasinda-1-eleme-turu-programi-aciklandi) — Takvim Spor · 2026-09-04T16:32:20+03:00 · turnuva=— · kulüp=—
 - [BEŞİKTAŞ AVRUPA LİGİ KADROSU: Beşiktaş UEFA Listesi Belli Oldu Mu? BJK Avrupa Ligi Kadrosunda Kimler Var?](https://www.cnnturk.com/spor/futbol/besiktas-avrupa-ligi-kadrosu-besiktas-uefa-listesi-belli-oldu-mu-bjk-avrupa-ligi-kadrosunda-kimler-var-3462270) — CNN Türk Spor · 2026-09-04T09:16:18+00:00 · turnuva=EL · kulüp=Beşiktaş
-- [Fenerbahçe’nin Şampiyonlar Ligi kadrosu belli oldu](https://www.cnnturk.com/spor/futbol/fenerbahcenin-sampiyonlar-ligi-kadrosu-belli-oldu-3462522) — CNN Türk Spor · 2026-09-03T23:53:16+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Trabzonspor’un Konferans Ligi kadrosu belli oldu](https://www.cnnturk.com/spor/futbol/trabzonsporun-konferans-ligi-kadrosu-belli-oldu-3462531) — CNN Türk Spor · 2026-09-03T23:52:54+00:00 · turnuva=ECL · kulüp=Trabzonspor
-- [Beşiktaş’ın UEFA Avrupa Ligi kadrosu belli oldu](https://www.cnnturk.com/spor/futbol/besiktasin-uefa-avrupa-ligi-kadrosu-belli-oldu-3462530) — CNN Türk Spor · 2026-09-03T23:27:45+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş'ta 2 isim UEFA kadrosunda yok!](https://www.haberturk.com/spor/besiktas-in-uefa-avrupa-ligi-kadrosu-aciklandi-3910132) — Haberturk Spor · 2026-09-03T20:05:12+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Trabzonspor'un Konferans Ligi kadrosu belli oldu](https://www.haberturk.com/spor/trabzonspor-un-konferans-ligi-kadrosu-belli-oldu-3910131) — Haberturk Spor · 2026-09-03T20:01:16+00:00 · turnuva=ECL · kulüp=Trabzonspor
 - [Dört büyük takımın Avrupa kadroları açıklandı! Yeni transferler listede](https://www.takvim.com.tr/spor/superlig/2026/09/03/dort-buyuk-takimin-avrupa-kadrolari-aciklandi-yeni-transferler-listede) — Takvim Spor · 2026-09-03T19:50:04+03:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe, Beşiktaş, Trabzonspor
 - [UEFA'dan Fenerbahçe'ye soruşturma: Guendouzi, Greenwood!](https://www.haberturk.com/spor/son-dakika-uefa-dan-fenerbahce-ye-sorusturma-guendouzi-greenwood-3909912) — Haberturk Spor · 2026-09-03T06:30:12+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Beşiktaş'tan gece yarısı bombası! Yeni transfer açıklandı, UEFA listesine bile yazıldı - Beşiktaş (BJK) Haberleri - Mynet](https://news.google.com/rss/articles/CBMivwFBVV95cUxPakpneWdJcWl5aTdKOHp5WjNyYTlvWWdRSXpRdGNqX1lDR2pYYUlGazFROWpPcllBSmxoNlN0TkJfMEUzY1pTMzdFNkpydU1sVnFJbElEVTdpWjN5TGFiaUdiekx4alV0d01jQ3A1NkdjU09BV1pKNFJ2WFg1RkdlTi1SWWl1STE0eFRRZ1JRZDZXbUFpVjQ1b3U0Ul9pQUxPMDBWcXFWUGJ2YzR0T3lVOHVnSWpDVEptODdMdHBCUdIBvwFBVV95cUxPakpneWdJcWl5aTdKOHp5WjNyYTlvWWdRSXpRdGNqX1lDR2pYYUlGazFROWpPcllBSmxoNlN0TkJfMEUzY1pTMzdFNkpydU1sVnFJbElEVTdpWjN5TGFiaUdiekx4alV0d01jQ3A1NkdjU09BV1pKNFJ2WFg1RkdlTi1SWWl1STE0eFRRZ1JRZDZXbUFpVjQ1b3U0Ul9pQUxPMDBWcXFWUGJ2YzR0T3lVOHVnSWpDVEptODdMdHBCUQ?oc=5) — Mynet · 2026-09-03T04:56:54+00:00 · turnuva=— · kulüp=Beşiktaş
 - [Beşiktaş transferi bitirdi: UEFA listesi için acil çalışma - NTVSpor](https://news.google.com/rss/articles/CBMiqgFBVV95cUxPWHZxVXNtWGlkS2l2QUp1TlFjZHBmbE5SQ1NYWERvTjNCbTNXaXI5VzZmdHQzRHROMEhNQkhmN0RGcDhvRzRSX0t1Y09xMjJrQ0VnMi1NMU00WGhBZUlEYnhubV9UVndhbGxRWV9zR0FrMlFZSHN4YUFaR1BzZVdpR3V5Z0lYMzhYb2IxemFRWERYbGZELUVjUTRSNXgxcmlaZ3BKZmxFNkZZQdIBqgFBVV95cUxPWHZxVXNtWGlkS2l2QUp1TlFjZHBmbE5SQ1NYWERvTjNCbTNXaXI5VzZmdHQzRHROMEhNQkhmN0RGcDhvRzRSX0t1Y09xMjJrQ0VnMi1NMU00WGhBZUlEYnhubV9UVndhbGxRWV9zR0FrMlFZSHN4YUFaR1BzZVdpR3V5Z0lYMzhYb2IxemFRWERYbGZELUVjUTRSNXgxcmlaZ3BKZmxFNkZZQQ?oc=5) — NTVSpor · 2026-09-02T18:58:58+00:00 · turnuva=— · kulüp=Beşiktaş
 - [Miguel Cardoso ve Elisha Owusu ile resmî sözleşme imzaladık.](https://erzurumsporfk.org/2026/08/19/miguel-cardoso-ve-elisha-owusu-ile-resmi-sozlesme-imzaladik/) — Erzurumspor FK Resmi Web · 2026-08-19T20:45:50+03:00 · turnuva=EL · kulüp=Kayserispor
