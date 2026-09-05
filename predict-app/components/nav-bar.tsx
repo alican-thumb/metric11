@@ -4,13 +4,18 @@ import { Show, SignInButton, SignUpButton, UserButton } from "@clerk/nextjs";
 export function NavBar() {
   return (
     <header className="border-b border-slate-800 bg-slate-950/80 backdrop-blur sticky top-0 z-10">
-      <div className="mx-auto flex max-w-4xl items-center justify-between px-4 py-3">
-        <Link href="/" className="flex items-center gap-2 font-bold text-lg">
-          <span className="grid h-7 w-7 place-items-center rounded-md bg-lime-300 text-slate-900 text-sm">
-            11
-          </span>
-          metric11 <span className="text-lime-300">Tahmin</span>
-        </Link>
+      <div className="mx-auto flex max-w-4xl items-center justify-between gap-4 px-4 py-3">
+        <div className="flex items-center gap-3">
+          <a href="https://metric11.com" className="text-xs text-slate-500 hover:text-slate-300">
+            ← metric11.com
+          </a>
+          <Link href="/" className="flex items-center gap-2 font-bold text-lg">
+            <span className="grid h-7 w-7 place-items-center rounded-md bg-lime-300 text-slate-900 text-sm">
+              11
+            </span>
+            metric11 <span className="text-lime-300">Tahmin</span>
+          </Link>
+        </div>
         <nav className="flex flex-wrap items-center justify-end gap-x-4 gap-y-1 text-sm">
           <Link href="/" className="text-slate-300 hover:text-white">
             Bu Hafta
