@@ -11,7 +11,7 @@ export function NavBar() {
           </span>
           metric11 <span className="text-lime-300">Tahmin</span>
         </Link>
-        <nav className="flex items-center gap-4 text-sm">
+        <nav className="flex flex-wrap items-center justify-end gap-x-4 gap-y-1 text-sm">
           <Link href="/" className="text-slate-300 hover:text-white">
             Bu Hafta
           </Link>
@@ -21,17 +21,17 @@ export function NavBar() {
             </Link>
           </Show>
           <Link href="/topluluk" className="text-slate-300 hover:text-white">
-            Herkesin Tahminleri
+            Topluluk Tahminleri
           </Link>
           <Link href="/leaderboard" className="text-slate-300 hover:text-white">
             Lider Tablosu
           </Link>
           <Show when="signed-out">
             <SignInButton mode="modal">
-              <button className="text-slate-300 hover:text-white">Giriş Yap</button>
+              <button className="cursor-pointer text-slate-300 hover:text-white">Giriş Yap</button>
             </SignInButton>
             <SignUpButton mode="modal">
-              <button className="rounded-md bg-lime-300 px-3 py-1.5 font-semibold text-slate-900">
+              <button className="cursor-pointer rounded-md bg-lime-300 px-3 py-1.5 font-semibold text-slate-900">
                 Üye Ol
               </button>
             </SignUpButton>

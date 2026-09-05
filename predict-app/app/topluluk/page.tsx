@@ -38,11 +38,11 @@ export default async function CommunityPredictionsPage() {
 
   return (
     <div className="space-y-4">
-      <h1 className="text-xl font-bold">Herkesin Tahminleri</h1>
+      <h1 className="text-xl font-bold">Topluluk Tahminleri</h1>
       <p className="text-sm text-slate-400">
-        Kilitlenmemiş (henüz başlamamış) maçlarda başkalarının tahminini görebilmek için
-        önce kendi tahminini girmelisin — bu, kopya çekmeyi engeller. Maç başladıktan
-        sonra herkese açılır.
+        Henüz başlamamış bir maçta başkalarının tahminini görmek için önce kendi
+        tahminini girmelisin — kopya çekmeyi önlemek için. Maç başladıktan sonra
+        herkese açık.
       </p>
       <div className="space-y-3">
         {relevant.map((m) => {

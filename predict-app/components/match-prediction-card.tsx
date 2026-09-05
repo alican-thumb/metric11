@@ -67,6 +67,7 @@ export function MatchPredictionCard({
               max={20}
               value={home}
               onChange={(e) => setHome(e.target.value)}
+              aria-label={`${homeTeam} skoru`}
               className="w-12 rounded border border-slate-700 bg-slate-800 py-1 text-center"
             />
             <span>-</span>
@@ -76,6 +77,7 @@ export function MatchPredictionCard({
               max={20}
               value={away}
               onChange={(e) => setAway(e.target.value)}
+              aria-label={`${awayTeam} skoru`}
               className="w-12 rounded border border-slate-700 bg-slate-800 py-1 text-center"
             />
           </div>
@@ -89,7 +91,7 @@ export function MatchPredictionCard({
           <button
             onClick={submit}
             disabled={status === "saving" || home === "" || away === ""}
-            className="rounded-md bg-lime-300 px-3 py-1.5 text-sm font-semibold text-slate-900 disabled:opacity-40"
+            className="cursor-pointer rounded-md bg-lime-300 px-3 py-1.5 text-sm font-semibold text-slate-900 disabled:cursor-not-allowed disabled:opacity-40"
           >
             {status === "saving" ? "Kaydediliyor…" : "Tahmini Kaydet"}
           </button>
