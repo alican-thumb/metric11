@@ -4,10 +4,16 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 
 ## Genel Karne
 
-- Değerlendirilen maç: **27**
-- İsabet: **11/27** (%41)
+- Değerlendirilen maç: **28**
+- İsabet: **12/28** (%43)
 - Beraberlik yakalama: **0/6** (%0)
 - Yüksek güvenli maç isabeti: **5/10** (%50)
+
+## Hafta 4 — 1/1 isabet (%100)
+
+| Maç | Skor | Tahmin | Sonuç | Güven |
+| --- | --- | --- | --- | --- |
+| İSTANBUL BAŞAKŞEHİR FK - GALATASARAY A.Ş. | 2 - 3 | Deplasman | ✅ | LOW |
 
 ## Hafta 3 — 6/9 isabet (%67)
 
