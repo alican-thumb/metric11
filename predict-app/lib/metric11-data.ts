@@ -5,6 +5,7 @@ const METRIC11_BASE_URL = process.env.METRIC11_BASE_URL ?? "https://metric11.com
 
 export type Metric11Match = {
   match_id: string;
+  week: number;
   date_time: string; // "DD.MM.YYYY HH:MM", Türkiye yerel saati (UTC+3)
   home_team: string;
   away_team: string;
@@ -48,7 +49,7 @@ export async function getAllMatches(): Promise<Metric11Match[]> {
     throw new Error(`metric11 fixture verisi çekilemedi: HTTP ${res.status}`);
   }
   const payload = (await res.json()) as FixturePayload;
-  const matches = payload.weeks.flatMap((w) => w.matches);
+  const matches = payload.weeks.flatMap((w) => w.matches.map((m) => ({ ...m, week: w.week })));
   fixtureCache = { data: matches, fetchedAt: Date.now() };
   return matches;
 }
@@ -58,11 +59,19 @@ export async function getMatchById(matchId: string): Promise<Metric11Match | und
   return matches.find((m) => m.match_id === matchId);
 }
 
+// Yalnızca en yakın "aktif" haftanın (henüz oynanmamış maçı kalan en erken hafta)
+// kalan maçlarını döner — sabit bir sayıyla kesip (ör. ilk 15) doldurmaya çalışmak,
+// o hafta 15'ten az kalan maç varsa bir SONRAKİ haftanın maçlarını sessizce karıştırıp
+// "Bu Haftanın Maçları" başlığı altında yanlış haftayı göstermeye neden oluyordu.
 export async function getUpcomingMatches(): Promise<Metric11Match[]> {
   const matches = await getAllMatches();
   const now = new Date();
-  return matches
-    .filter((m) => !m.is_played && parseKickoff(m.date_time) > now)
+  const upcoming = matches.filter((m) => !m.is_played && parseKickoff(m.date_time) > now);
+  if (upcoming.length === 0) return [];
+
+  const currentWeek = Math.min(...upcoming.map((m) => m.week));
+  return upcoming
+    .filter((m) => m.week === currentWeek)
     .sort((a, b) => parseKickoff(a.date_time).getTime() - parseKickoff(b.date_time).getTime());
 }
 

@@ -8,8 +8,8 @@ import { MatchPredictionCard } from "@/components/match-prediction-card";
 
 export default async function HomePage() {
   const { userId } = await auth();
-  const matches = await getUpcomingMatches();
-  const upcoming = matches.slice(0, 15); // bir sonraki haftalar, aşırı uzun liste olmasın
+  const upcoming = await getUpcomingMatches(); // her zaman tek bir haftanın maçları (bkz. lib/metric11-data.ts)
+  const weekLabel = upcoming[0]?.week;
 
   let existing: Record<string, { predictedHome: number; predictedAway: number }> = {};
   if (userId) {
@@ -25,7 +25,9 @@ export default async function HomePage() {
 
   return (
     <div className="space-y-4">
-      <h1 className="text-xl font-bold">Bu Haftanın Maçları</h1>
+      <h1 className="text-xl font-bold">
+        Bu Haftanın Maçları{weekLabel ? ` (${weekLabel}. Hafta)` : ""}
+      </h1>
       <p className="text-sm text-slate-400">
         Kickoff&apos;a kadar tahminini gir/değiştir — maç başladıktan sonra kilitlenir.
       </p>

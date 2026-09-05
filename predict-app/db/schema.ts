@@ -7,6 +7,7 @@ export const users = pgTable("users", {
   createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
 }, (table) => ({
   clerkUserIdIdx: uniqueIndex("users_clerk_user_id_idx").on(table.clerkUserId),
+  displayNameIdx: uniqueIndex("users_display_name_idx").on(table.displayName),
 }));
 
 export const predictions = pgTable("predictions", {

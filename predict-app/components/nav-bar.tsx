@@ -37,7 +37,11 @@ export function NavBar() {
             </SignUpButton>
           </Show>
           <Show when="signed-in">
-            <UserButton />
+            <UserButton>
+              <UserButton.MenuItems>
+                <UserButton.Link label="Kullanıcı Adı" href="/profil" labelIcon={<span>✏️</span>} />
+              </UserButton.MenuItems>
+            </UserButton>
           </Show>
         </nav>
       </div>
