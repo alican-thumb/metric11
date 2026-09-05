@@ -357,7 +357,7 @@ def _score_sidebar_html() -> str:
 
 
 def _predict_game_sidebar_html() -> str:
-    """Kullanıcı tahmin oyununu (metric11-tahmin.vercel.app, /tahmin altında) tanıtan
+    """Kullanıcı tahmin oyununu (tahmin.metric11.com, /tahmin altında) tanıtan
     öne çıkan sidebar kartı. Siteye yeni eklenen flagship özellik — en üstte gösterilir."""
     return (
         '<a href="/tahmin" style="display:block;text-decoration:none;color:inherit">'

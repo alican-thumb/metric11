@@ -20,6 +20,9 @@ export function NavBar() {
               Tahminlerim
             </Link>
           </Show>
+          <Link href="/topluluk" className="text-slate-300 hover:text-white">
+            Herkesin Tahminleri
+          </Link>
           <Link href="/leaderboard" className="text-slate-300 hover:text-white">
             Lider Tablosu
           </Link>
