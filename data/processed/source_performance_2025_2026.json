@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-05T23:55:44.806500+00:00",
+  "generated_at": "2026-09-06T04:37:18.259422+00:00",
   "season": "2025_2026",
   "maturity_days": 14,
   "summary": {
-    "transfer_signals": 48,
+    "transfer_signals": 49,
     "official_events": 10,
     "official_events_with_timestamp": 4,
     "official_events_with_first_observed_timestamp": 10,
@@ -12,11 +12,11 @@
     "measured_lead_times": 0,
     "first_seen_lead_times": 3,
     "tracked_x_sources_waiting": 20,
-    "retained_claim_observations": 3921
+    "retained_claim_observations": 3923
   },
   "provider_coverage": {
     "google_news": {
-      "articles": 321,
+      "articles": 313,
       "queries": 30,
       "successful_queries": 30
     },
@@ -36,7 +36,7 @@
       "source": "Google News / medya",
       "source_tier": "CHANNEL",
       "source_type": "media",
-      "observations": 3918,
+      "observations": 3920,
       "scoreable_claims": 1270,
       "official_conversions": 5,
       "lead_hours": [],
@@ -48,7 +48,7 @@
       "lead_time_unavailable": 2,
       "matured_unconfirmed": 989,
       "pending_claims": 276,
-      "unresolved_claims": 2648,
+      "unresolved_claims": 2650,
       "status": "FIRST_SEEN_BOUND",
       "score": 0.4,
       "average_lead_hours": null,
@@ -268,7 +268,7 @@
       "source": "Hürriyet",
       "source_tier": "MEDIA",
       "source_type": null,
-      "observations": 262,
+      "observations": 263,
       "scoreable_claims": 39,
       "official_conversions": 0,
       "lead_hours": [],
@@ -276,7 +276,7 @@
       "lead_time_unavailable": 0,
       "matured_unconfirmed": 30,
       "pending_claims": 9,
-      "unresolved_claims": 223,
+      "unresolved_claims": 224,
       "status": "PARTIAL_MEASUREMENT",
       "score": 0.0,
       "average_lead_hours": null,
@@ -4145,6 +4145,26 @@
       "false_alarm_proxy_pct": null
     },
     {
+      "source": "sozcu.com.tr",
+      "source_tier": "MEDIA",
+      "source_type": "google_news",
+      "observations": 2,
+      "scoreable_claims": 0,
+      "official_conversions": 0,
+      "lead_hours": [],
+      "first_seen_lead_hours": [],
+      "lead_time_unavailable": 0,
+      "matured_unconfirmed": 0,
+      "pending_claims": 0,
+      "unresolved_claims": 2,
+      "status": "OBSERVING",
+      "score": null,
+      "average_lead_hours": null,
+      "average_first_seen_lead_hours": null,
+      "official_conversion_rate_pct": null,
+      "false_alarm_proxy_pct": null
+    },
+    {
       "source": "12punto",
       "source_tier": "MEDIA",
       "source_type": "google_news",
@@ -5485,26 +5505,6 @@
       "false_alarm_proxy_pct": null
     },
     {
-      "source": "sozcu.com.tr",
-      "source_tier": "MEDIA",
-      "source_type": "google_news",
-      "observations": 1,
-      "scoreable_claims": 0,
-      "official_conversions": 0,
-      "lead_hours": [],
-      "first_seen_lead_hours": [],
-      "lead_time_unavailable": 0,
-      "matured_unconfirmed": 0,
-      "pending_claims": 0,
-      "unresolved_claims": 1,
-      "status": "OBSERVING",
-      "score": null,
-      "average_lead_hours": null,
-      "average_first_seen_lead_hours": null,
-      "official_conversion_rate_pct": null,
-      "false_alarm_proxy_pct": null
-    },
-    {
       "source": "spor.haber7.com",
       "source_tier": "MEDIA",
       "source_type": "google_news",
@@ -6289,7 +6289,7 @@
     {
       "name": "Yağız Sabuncuoğlu",
       "google_query": "Yağız Sabuncuoğlu transfer",
-      "indexed_results": 5,
+      "indexed_results": 4,
       "query_error": null,
       "attributed_observations": 1,
       "scoreable_claims": 1,
