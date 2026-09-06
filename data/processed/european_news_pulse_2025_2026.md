@@ -1,11 +1,12 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-09-06T20:26:31.552350+00:00
+Üretim zamanı: 2026-09-06T23:53:51.349177+00:00
 Toplam ilgili haber: 11
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [ŞAMPİYONLAR LİGİ YENİ SEZON TARİHİ: Galatasaray ve Fenerbahçe Şampiyonlar Ligi maçları ne zaman, hangi tarihte, saat kaçta? 2026 - 2027 Şampiyonlar Ligi maç programı](https://www.cnnturk.com/spor/futbol/sampiyonlar-ligi-yeni-sezon-tarihi-galatasaray-ve-fenerbahce-sampiyonlar-ligi-maclari-ne-zaman-hangi-tarihte-saat-kacta-2026-3463682) — CNN Türk Spor · 2026-09-07T01:43:46+00:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe
 - [Galatasaray, Sporting maçı antrenmanlarına devam etti](https://www.cnnturk.com/spor/futbol/galatasaray-sporting-maci-antrenmanlarina-devam-etti-3463608) — CNN Türk Spor · 2026-09-06T16:02:34+00:00 · turnuva=CL · kulüp=Galatasaray
 - [Fenerbahçe'de Roma mesaisi başladı](https://www.cnnturk.com/spor/futbol/fenerbahcede-roma-mesaisi-basladi-3463601) — CNN Türk Spor · 2026-09-06T15:29:48+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Galatasaray, Sporting maçı hazırlıklarını sürdürdü](https://www.hurriyet.com.tr/sporarena/galatasaray-sporting-maci-hazirliklarini-surdurdu-43298096) — Hürriyet Spor · 2026-09-06T13:53:50+00:00 · turnuva=CL · kulüp=Galatasaray
