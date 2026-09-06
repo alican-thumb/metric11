@@ -31,3 +31,11 @@ export function parseActualScore(actualScore: string): { home: number; away: num
   if (!match) return null;
   return { home: Number(match[1]), away: Number(match[2]) };
 }
+
+// Seri bonusu: ardışık isabetli (pointsEarned > 0) tahminler için ödül. `streak`, bu
+// tahmin dahil edilmiş ardışık isabet sayısıdır (bkz. lib/sync-results.ts).
+export function computeStreakBonus(streak: number): number {
+  if (streak >= 5) return 2;
+  if (streak >= 3) return 1;
+  return 0;
+}

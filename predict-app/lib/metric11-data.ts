@@ -75,6 +75,26 @@ export async function getUpcomingMatches(): Promise<Metric11Match[]> {
     .sort((a, b) => parseKickoff(a.date_time).getTime() - parseKickoff(b.date_time).getTime());
 }
 
+// Haftalık lider tablosu için "aktif hafta"yı belirler: henüz maçı olan en yakın hafta
+// (getUpcomingMatches ile aynı tanım — ana sayfadaki "Bu Hafta" ile tutarlı), sezon
+// bittiyse (kalan maç yok) son oynanan haftaya düşer ki liderlik tablosu boş kalmasın.
+export async function getCurrentWeekMatchIds(): Promise<{ week: number | null; matchIds: string[] }> {
+  const matches = await getAllMatches();
+  const now = new Date();
+  const upcoming = matches.filter((m) => !m.is_played && parseKickoff(m.date_time) > now);
+
+  let week: number | null = null;
+  if (upcoming.length > 0) {
+    week = Math.min(...upcoming.map((m) => m.week));
+  } else {
+    const played = matches.filter((m) => m.is_played);
+    if (played.length > 0) week = Math.max(...played.map((m) => m.week));
+  }
+  if (week === null) return { week: null, matchIds: [] };
+
+  return { week, matchIds: matches.filter((m) => m.week === week).map((m) => m.match_id) };
+}
+
 export async function getScorerPredictions(matchId: string): Promise<ScorerPayload["matches"][string] | undefined> {
   const res = await fetch(`${METRIC11_BASE_URL}/goal_scorer_predictions_2026_2027.json`, {
     cache: "no-store",

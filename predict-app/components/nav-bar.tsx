@@ -7,6 +7,7 @@ import { Show, SignInButton, SignUpButton, UserButton } from "@clerk/nextjs";
 const LINKS = [
   { href: "/", label: "Bu Hafta", authOnly: false },
   { href: "/predictions", label: "Tahminlerim", authOnly: true },
+  { href: "/gruplar", label: "Gruplar", authOnly: true },
   { href: "/profil", label: "Profil", authOnly: true },
   { href: "/topluluk", label: "Topluluk Tahminleri", authOnly: false },
   { href: "/leaderboard", label: "Lider Tablosu", authOnly: false },

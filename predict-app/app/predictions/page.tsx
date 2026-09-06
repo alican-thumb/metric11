@@ -6,14 +6,15 @@ import { getAllMatches } from "@/lib/metric11-data";
 import { syncFinishedResults } from "@/lib/sync-results";
 
 export default async function PredictionsPage() {
+  // Sayfa her açıldığında fırsatçı senkronizasyon — cron'un ne sıklıkla çalıştığından
+  // bağımsız olarak, biten ama henüz puanlanmamış maçlar burada da yakalanır. Kullanıcıyı
+  // bundan SONRA okuyoruz ki currentStreak/bestStreak güncel değerlerini yansıtsın.
+  await syncFinishedResults();
+
   const user = await getOrCreateUser();
   if (!user) {
     return <p className="text-slate-400">Bu sayfayı görmek için giriş yapmalısınız.</p>;
   }
-
-  // Sayfa her açıldığında fırsatçı senkronizasyon — cron'un ne sıklıkla çalıştığından
-  // bağımsız olarak, biten ama henüz puanlanmamış maçlar burada da yakalanır.
-  await syncFinishedResults();
 
   const db = getDb();
   const rows = await db
@@ -25,12 +26,19 @@ export default async function PredictionsPage() {
   const matches = await getAllMatches();
   const matchById = new Map(matches.map((m) => [m.match_id, m]));
 
-  const totalPoints = rows.reduce((sum, r) => sum + (r.pointsEarned ?? 0), 0);
+  const totalPoints = rows.reduce((sum, r) => sum + (r.pointsEarned ?? 0) + r.streakBonus, 0);
 
   return (
     <div className="space-y-4">
       <h1 className="text-xl font-bold">Tahminlerim</h1>
-      <p className="text-sm text-slate-400">Toplam puan: <span className="text-lime-300 font-semibold">{totalPoints}</span></p>
+      <p className="text-sm text-slate-400">
+        Toplam puan: <span className="text-lime-300 font-semibold">{totalPoints}</span>
+        {user.currentStreak > 0 && (
+          <span className="ml-3 text-orange-300">
+            🔥 {user.currentStreak} maçlık seri {user.currentStreak >= 3 ? "(bonus aktif)" : ""}
+          </span>
+        )}
+      </p>
       <div className="space-y-2">
         {rows.map((r) => {
           const match = matchById.get(r.matchId);
@@ -46,7 +54,8 @@ export default async function PredictionsPage() {
                 {match?.actual_score && <span className="text-slate-400">Gerçek: {match.actual_score}</span>}
                 {r.pointsEarned !== null ? (
                   <span className="rounded bg-lime-300/20 text-lime-300 px-2 py-0.5 font-semibold">
-                    +{r.pointsEarned} puan
+                    +{r.pointsEarned + r.streakBonus} puan
+                    {r.streakBonus > 0 && <span className="ml-1 text-orange-300">🔥+{r.streakBonus}</span>}
                   </span>
                 ) : (
                   <span className="text-slate-500">bekliyor</span>
