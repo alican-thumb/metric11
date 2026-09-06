@@ -6,7 +6,6 @@ Toplam ilgili haber: 11
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
-- [Galatasaray'ın Sporting CP maçı hazırlıkları sürüyor!](https://www.fotomac.com.tr/galatasaray/2026/09/06/galatasarayin-sporting-cp-maci-hazirliklari-suruyor) — Fotomaç · 2026-09-06T16:39:02+03:00 · turnuva=CL · kulüp=Galatasaray
 - [Galatasaray, Sporting maçı antrenmanlarına devam etti](https://www.cnnturk.com/spor/futbol/galatasaray-sporting-maci-antrenmanlarina-devam-etti-3463608) — CNN Türk Spor · 2026-09-06T16:02:34+00:00 · turnuva=CL · kulüp=Galatasaray
 - [Fenerbahçe'de Roma mesaisi başladı](https://www.cnnturk.com/spor/futbol/fenerbahcede-roma-mesaisi-basladi-3463601) — CNN Türk Spor · 2026-09-06T15:29:48+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Galatasaray, Sporting maçı hazırlıklarını sürdürdü](https://www.hurriyet.com.tr/sporarena/galatasaray-sporting-maci-hazirliklarini-surdurdu-43298096) — Hürriyet Spor · 2026-09-06T13:53:50+00:00 · turnuva=CL · kulüp=Galatasaray
