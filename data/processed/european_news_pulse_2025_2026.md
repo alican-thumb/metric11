@@ -1,7 +1,7 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-09-06T08:41:32.463943+00:00
-Toplam ilgili haber: 11
+Üretim zamanı: 2026-09-06T10:56:29.515292+00:00
+Toplam ilgili haber: 12
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
@@ -16,4 +16,5 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Trabzonspor'un Konferans Ligi kadrosu belli oldu](https://www.haberturk.com/spor/trabzonspor-un-konferans-ligi-kadrosu-belli-oldu-3910131) — Haberturk Spor · 2026-09-03T20:01:16+00:00 · turnuva=ECL · kulüp=Trabzonspor
 - [Dört büyük takımın Avrupa kadroları açıklandı! Yeni transferler listede](https://www.takvim.com.tr/spor/superlig/2026/09/03/dort-buyuk-takimin-avrupa-kadrolari-aciklandi-yeni-transferler-listede) — Takvim Spor · 2026-09-03T19:50:04+03:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe, Beşiktaş, Trabzonspor
 - [UEFA'dan Fenerbahçe'ye soruşturma: Guendouzi, Greenwood!](https://www.haberturk.com/spor/son-dakika-uefa-dan-fenerbahce-ye-sorusturma-guendouzi-greenwood-3909912) — Haberturk Spor · 2026-09-03T06:30:12+00:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Beşiktaş'tan gece yarısı bombası! Yeni transfer açıklandı, UEFA listesine bile yazıldı - Beşiktaş (BJK) Haberleri - Mynet](https://news.google.com/rss/articles/CBMivAFBVV95cUxQRnJmTHlGaHFURmpZcnhTRWtTMUoydjZsMS1Xa2k0bFItVUVmSUFIRTFWSGN4Sk5WVjZ4WTdGNVJvaFltdTU5OUl5cXR4SHBJTk9Ud3FOeUlaR3hwSVBNZDlhSl9xclc0UmV0dGZyZUZvbWFqUFI1a0hrMHJ1WVV1QVRTSUEwX3QwdDBZR2ZiMVc0d016WDhTZmthOGJYUG5Ga1hpeEhJbkRwakIwSGVZckVCYTM1Y2hnUWEtetIBvwFBVV95cUxPakpneWdJcWl5aTdKOHp5WjNyYTlvWWdRSXpRdGNqX1lDR2pYYUlGazFROWpPcllBSmxoNlN0TkJfMEUzY1pTMzdFNkpydU1sVnFJbElEVTdpWjN5TGFiaUdiekx4alV0d01jQ3A1NkdjU09BV1pKNFJ2WFg1RkdlTi1SWWl1STE0eFRRZ1JRZDZXbUFpVjQ1b3U0Ul9pQUxPMDBWcXFWUGJ2YzR0T3lVOHVnSWpDVEptODdMdHBCUQ?oc=5) — Mynet · 2026-09-03T04:56:54+00:00 · turnuva=— · kulüp=Beşiktaş
 - [Miguel Cardoso ve Elisha Owusu ile resmî sözleşme imzaladık.](https://erzurumsporfk.org/2026/08/19/miguel-cardoso-ve-elisha-owusu-ile-resmi-sozlesme-imzaladik/) — Erzurumspor FK Resmi Web · 2026-08-19T20:45:50+03:00 · turnuva=EL · kulüp=Kayserispor
