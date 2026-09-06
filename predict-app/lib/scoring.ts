@@ -1,15 +1,22 @@
-// Puanlama kuralı (plan dosyasında kullanıcıyla onaylandı): tam skor 3 puan, yalnız
-// sonuç yönü (1X2) doğruysa 1 puan, yanlışsa 0.
+// Puanlama kuralı (2026-09-06'da kullanıcı isteğiyle güncellendi): üç ayrı kriter var,
+// her biri kendi puanını ayrı ayrı ekliyor (üst üste biniyor, birbirini dışlamıyor):
+//   1) Doğru sonuç (1X2 — kim kazandı/kaybetti ya da beraberlik)  → +1
+//   2) Doğru gol farkı (kaç farkla kazanıldığı/kaybedildiği)      → +1
+//   3) Tam doğru skor                                             → +1
+// Gol farkı doğruysa sonuç yönü de otomatik doğru olur (aynı işaretli fark aynı
+// sonucu ima eder), tam skor doğruysa ikisi de doğrudur — yani puanlar doğal olarak
+// üst üste yığılıyor: yalnız yön doğru=1, yön+fark doğru ama skor değil=2, tam skor=3.
 export function computePoints(
   predictedHome: number,
   predictedAway: number,
   actualHome: number,
   actualAway: number
 ): number {
-  if (predictedHome === actualHome && predictedAway === actualAway) return 3;
-  const predictedOutcome = outcome(predictedHome, predictedAway);
-  const actualOutcome = outcome(actualHome, actualAway);
-  return predictedOutcome === actualOutcome ? 1 : 0;
+  let points = 0;
+  if (outcome(predictedHome, predictedAway) === outcome(actualHome, actualAway)) points += 1;
+  if (predictedHome - predictedAway === actualHome - actualAway) points += 1;
+  if (predictedHome === actualHome && predictedAway === actualAway) points += 1;
+  return points;
 }
 
 function outcome(home: number, away: number): "home" | "draw" | "away" {

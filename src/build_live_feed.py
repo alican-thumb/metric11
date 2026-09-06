@@ -56,15 +56,21 @@ def _load(path: Path) -> dict | list:
     return {}
 
 
-def _window_state() -> tuple[str, str, str, str]:
-    """Returns (state, banner_css, dot_css, message) for transfer window."""
+def _window_state() -> tuple[str, str, str, str, str | None]:
+    """Returns (state, banner_css, dot_css, message, link_href) for the top banner.
+
+    Transfer penceresi kapandıktan sonra bu şerit artık bayat bir durum bildirimi
+    yerine tahmin oyununun evergreen tanıtımına dönüşüyor — sitenin en görünür
+    alanı (nav'ın hemen altı) boşa gitmesin diye."""
     now = datetime.now(timezone.utc)
     if now >= WINDOW_CLOSE_DATE:
         return (
-            "closed",
-            "background:linear-gradient(90deg,#374151,#1f2937);border-bottom:1px solid #4b5563",
-            "background:#9ca3af",
-            f"<strong>Transfer penceresi kapandı</strong> — {TRANSFER_WATCH_SEASON_LABEL} sezonu transferleri tamamlandı",
+            "promo",
+            "background:linear-gradient(90deg,#0f2318,#0a1a10);border-bottom:1px solid #cde94e",
+            "background:#cde94e",
+            "🎮 <strong>Tahmin Oyunu açık!</strong> Süper Lig maçlarına skor tahmini gir, puan topla, "
+            "lider tablosunda yarış — <strong>ücretsiz</strong> →",
+            "/tahmin",
         )
     if now >= WINDOW_OPEN_DATE:
         days_left = (WINDOW_CLOSE_DATE - now).days
@@ -73,6 +79,7 @@ def _window_state() -> tuple[str, str, str, str]:
             "background:linear-gradient(90deg,#14532d,#166534);border-bottom:1px solid #16a34a",
             "background:#4ade80",
             f"<strong>Transfer penceresi açık</strong> — {days_left} gün kaldı (1 Haz – 31 Ağu 2026)",
+            None,
         )
     days_left = (WINDOW_OPEN_DATE - now).days
     return (
@@ -80,6 +87,7 @@ def _window_state() -> tuple[str, str, str, str]:
         "background:linear-gradient(90deg,#1e3a5f,#0f2a4a);border-bottom:1px solid #1e40af",
         "background:#60a5fa",
         f"Transfer penceresi <strong>{days_left} gün sonra</strong> açılıyor (1 Haziran 2026)",
+        None,
     )
 
 
@@ -409,7 +417,7 @@ def build_html() -> str:
     tracker_summary = tracker.get("summary", {}) if isinstance(tracker, dict) else {}
     official_count = tracker_summary.get("official_count", 0)
 
-    _state, banner_css, dot_css, window_msg = _window_state()
+    _state, banner_css, dot_css, window_msg, window_link = _window_state()
     _is_transfer_season = _state in ("countdown", "open")
     _league = league_active()
 
@@ -562,10 +570,10 @@ def build_html() -> str:
     <a href="/tahmin" style="color:var(--lime)">🎮 Tahmin Oyunu</a>
   </nav>
 </div>
-<div class="window-banner" style="{banner_css}">
+{f'<a href="{window_link}" class="window-banner" style="{banner_css};text-decoration:none;cursor:pointer">' if window_link else f'<div class="window-banner" style="{banner_css}">'}
   <div class="window-dot" style="{dot_css}"></div>
-  <span>{window_msg} · Güncelleme: {now_str}</span>
-</div>
+  <span>{window_msg}{"" if window_link else f" · Güncelleme: {now_str}"}</span>
+{'</a>' if window_link else '</div>'}
 <div class="main">
   <div>
     {left_top_html}

@@ -2,7 +2,7 @@ import { eq } from "drizzle-orm";
 import { auth } from "@clerk/nextjs/server";
 import { getDb } from "@/db";
 import { predictions } from "@/db/schema";
-import { getUpcomingMatches } from "@/lib/metric11-data";
+import { getUpcomingMatches, formatMatchDateTime } from "@/lib/metric11-data";
 import { getOrCreateUser } from "@/lib/get-or-create-user";
 import { MatchPredictionCard } from "@/components/match-prediction-card";
 
@@ -31,6 +31,11 @@ export default async function HomePage() {
       <p className="text-sm text-slate-400">
         Kickoff&apos;a kadar tahminini gir/değiştir — maç başladıktan sonra kilitlenir.
       </p>
+      <p className="text-xs text-slate-500">
+        Puanlama: doğru sonuç (1X2) <span className="text-lime-300">+1</span>, doğru gol farkı{" "}
+        <span className="text-lime-300">+1</span>, tam skor <span className="text-lime-300">+1</span> — en
+        fazla 3 puan.
+      </p>
       {upcoming.length === 0 && <p className="text-slate-400">Şu an tahmin edilecek yaklaşan maç yok.</p>}
       <div className="space-y-3">
         {upcoming.map((m) => (
@@ -39,7 +44,7 @@ export default async function HomePage() {
             matchId={m.match_id}
             homeTeam={m.home_team}
             awayTeam={m.away_team}
-            dateTime={m.date_time}
+            dateTime={formatMatchDateTime(m.date_time)}
             metric11Prediction={m.recommended_scoreline.score}
             initialHome={existing[m.match_id]?.predictedHome}
             initialAway={existing[m.match_id]?.predictedAway}

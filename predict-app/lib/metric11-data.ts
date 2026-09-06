@@ -104,3 +104,11 @@ export function parseKickoff(dateTime: string): Date {
 export function isLocked(match: Metric11Match): boolean {
   return match.is_played || parseKickoff(match.date_time) <= new Date();
 }
+
+// TFF, maçtan haftalar önce saati henüz açıklamamış olabilir (bkz. yukarıdaki not) —
+// bu durumda ham veri yalnız "DD.MM.YYYY" içerir. Kullanıcıya bunu "veri hatası" gibi
+// göstermemek için saat kısmı yoksa açıkça "saat TBD" ekliyoruz.
+export function formatMatchDateTime(dateTime: string): string {
+  const hasTime = dateTime.trim().includes(":");
+  return hasTime ? dateTime : `${dateTime} · saat TBD`;
+}
