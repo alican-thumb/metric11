@@ -25,6 +25,11 @@ export function NavBar() {
               Tahminlerim
             </Link>
           </Show>
+          <Show when="signed-in">
+            <Link href="/profil" className="text-slate-300 hover:text-white">
+              Profil
+            </Link>
+          </Show>
           <Link href="/topluluk" className="text-slate-300 hover:text-white">
             Topluluk Tahminleri
           </Link>

@@ -2673,3 +2673,8 @@ Kullanıcı: kullanıcı adları hâlâ otomatik/saçma geliyor dedi (muhtemelen
 - **Kullanıcı adı netleştirme:** `/profil` sayfasının zaten canlı olduğu doğrulandı (build log'unda route var); kullanıcıya mevcut adını oradan değiştirebileceği hatırlatıldı. Clerk Dashboard'da "Username" alanını sign-up'ta zorunlu/opsiyonel yapmak (ki `get-or-create-user.ts` zaten `clerkUser.username`'i önceliklendiriyor) kullanıcıya ayrı önerildi — bu bir dashboard ayarı, kod değişikliği gerektirmiyor.
 - **Lint düzeltmesi:** İlk yazımda `Row` bileşeni `LeaderboardPage` içinde render sırasında tanımlanmıştı (`react-hooks/static-components` hatası) — modül seviyesine taşındı, `viewerId` prop olarak geçiliyor.
 - **Doğrulama:** `tsc --noEmit`, `npm run lint`, `npm run build` temiz.
+
+### 2026-09-06 — "Kullanıcı adını nereden değiştiriyoruz göremedim"
+Kullanıcı, bir önceki oturumda eklenen kullanıcı-adı-değiştirme özelliğini bulamadı. Kök neden: özellik yalnızca Clerk `UserButton`'ın avatar açılır menüsüne gizli bir öğe olarak eklenmişti (`UserButton.MenuItems` + `UserButton.Link`, API doğru/çalışıyor — `@clerk/react` tip tanımlarından doğrulandı) — keşfedilebilirlik sorunuydu, bug değil.
+- **Düzeltme:** `components/nav-bar.tsx`'te ana nav çubuğuna, "Tahminlerim"in hemen yanına, signed-in kullanıcılara direkt görünen bir **"Profil"** linki eklendi (`/profil`'e gidiyor). Avatar menüsündeki eski link de bırakıldı (zarar vermiyor, ekstra bir yol).
+- **Doğrulama:** `tsc --noEmit`, `npm run lint`, `npm run build` temiz.
