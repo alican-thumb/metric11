@@ -554,6 +554,23 @@
         "recent_cards": 2
       },
       {
+        "player_id": "2820847",
+        "name": "ISHOLA JUNIOR  OLAITAN",
+        "goal_threat_score": 6.76,
+        "candidate_type": "primary+impact_sub",
+        "recent_starts": 3,
+        "season_goals_before_match": 2,
+        "recent_goals": 1,
+        "big_match_goals_before_match": 0,
+        "opponent_defense_multiplier": 1.0,
+        "actual_scorer": false,
+        "header_goals_before_match": 0,
+        "penalty_goals_before_match": 0,
+        "recent_bench": 0,
+        "cards_before_match": 1,
+        "recent_cards": 0
+      },
+      {
         "player_id": "2685592",
         "name": "NOVATUS DISMAS  MIROSHI",
         "goal_threat_score": 6.57,
@@ -593,28 +610,6 @@
         "recent_bench": 0,
         "cards_before_match": 6,
         "recent_cards": 2
-      },
-      {
-        "player_id": "2820847",
-        "name": "ISHOLA JUNIOR  OLAITAN",
-        "goal_threat_score": 4.6,
-        "candidate_type": "primary+impact_sub",
-        "recent_starts": 3,
-        "season_goals_before_match": 2,
-        "recent_goals": 1,
-        "big_match_goals_before_match": 0,
-        "opponent_defense_multiplier": 1.0,
-        "actual_scorer": false,
-        "header_goals_before_match": 0,
-        "penalty_goals_before_match": 0,
-        "recent_bench": 0,
-        "cards_before_match": 1,
-        "recent_cards": 0,
-        "quality_adjustment": {
-          "multiplier": 0.68,
-          "reason": "Top 5 sıralama etkisini düşür veya aday tipini yeniden kontrol et.",
-          "source": "goal_candidate_segment_backtest"
-        }
       },
       {
         "player_id": "2820755",
@@ -792,7 +787,7 @@
       "JANDERSON  DE CARVALHO COSTA",
       "JUAN SANTOS DA SILVA",
       "EFKAN BEKİROĞLU",
-      "NOVATUS DISMAS  MIROSHI",
+      "ISHOLA JUNIOR  OLAITAN",
       "MATEUSZ LIS",
       "MOHAMMED AMIN CHERNI",
       "ALLAN GODOI SANTOS"
@@ -818,9 +813,9 @@
   },
   "coach_lineup_audit": {
     "verdict": "TARTIŞMALI",
-    "actual_lineup_score": 55.57,
-    "recommended_lineup_score": 106.21,
-    "alignment_rate": 0.523,
+    "actual_lineup_score": 47.57,
+    "recommended_lineup_score": 106.3,
+    "alignment_rate": 0.448,
     "actual_starters": [
       "MATEUSZ LIS",
       "ALLAN GODOI SANTOS",
@@ -839,7 +834,7 @@
       "JANDERSON  DE CARVALHO COSTA",
       "JUAN SANTOS DA SILVA",
       "EFKAN BEKİROĞLU",
-      "NOVATUS DISMAS  MIROSHI",
+      "ISHOLA JUNIOR  OLAITAN",
       "MATEUSZ LIS",
       "MOHAMMED AMIN CHERNI",
       "ALLAN GODOI SANTOS"
@@ -847,7 +842,8 @@
     "omitted_core_players": [
       "ARDA OKAN KURTULAN",
       "JANDERSON  DE CARVALHO COSTA",
-      "EFKAN BEKİROĞLU"
+      "EFKAN BEKİROĞLU",
+      "ISHOLA JUNIOR  OLAITAN"
     ],
     "omitted_attacking_priority": [
       "ARDA OKAN KURTULAN",
@@ -1069,7 +1065,7 @@
     "Gol adayı sinyalinde öne çıkan isimler: ARDA OKAN KURTULAN, JANDERSON  DE CARVALHO COSTA, JUAN SANTOS DA SILVA, EFKAN BEKİROĞLU. Bu skor son gol formu, sezon içi gol sayısı ve son dönemde ilk 11 başlama sıklığından türetildi. Test sonucunda gerçek Beşiktaş golcüleri: ALEXIS ANTUNES GOMEZ.",
     "Skor dağılımında en olası senaryolar: 0-1 (%13), 0-2 (%11), 1-1 (%11). Model aksiyonu: Taraf eğilimi; önerilen ana skor 0-1.",
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği ARDA OKAN KURTULAN, JANDERSON  DE CARVALHO COSTA, JUAN SANTOS DA SILVA. Disiplin yönetimi gereken oyuncular: RHALDNEY NORBERTO SIMIAO GOMES, EFKAN BEKİROĞLU.",
-    "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %52 uyum buldu; karar etiketi TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 0.84-1.7 yerine 1.19-1.7 bandına gelebilirdi.",
+    "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %45 uyum buldu; karar etiketi TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 0.84-1.7 yerine 1.19-1.7 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 0.84-1.7 bandından 1.06-1.68 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %24 olurdu.",
     "MVP olasılık motoru Beşiktaş galibiyetini %25, beraberliği %23, rakip galibiyetini %52 olarak işaretliyor. Gol beklentisi 0.84-1.7; kart sinyali MEDIUM."
   ]

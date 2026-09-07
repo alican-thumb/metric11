@@ -146,7 +146,7 @@ def transfer_strength_edge(team_name: str) -> dict:
             continue
         # squad_transition_edge'deki aynı koşul: henüz bu sezon bir maç kadrosuna bile
         # girmemiş bir "gelen" oyuncunun piyasa değerini takım gücüne hemen yansıtma.
-        if is_arrival and canonical_player_name(record.get("player")) not in _players_appeared_this_season():
+        if is_arrival and not _player_appeared_for_club(record.get("player"), _tm_club_name(team_name)):
             continue
         weighted_value = weight * value if is_arrival else -weight * value
         total_net_value += weighted_value
@@ -242,10 +242,10 @@ def squad_transition_edge(team_name: str) -> dict:
     # olduğundan güçlü gösteriyordu). Bu yüzden yalnız bu sezon EN AZ BİR maç kadrosuna
     # (11 veya yedek) GERÇEKTEN girmiş gelenler tam ağırlıkla sayılır; henüz debut yapmamış
     # gelenler `edge` hesabına dahil edilmez (yine de "pending_arrivals" olarak raporlanır).
-    appeared = _players_appeared_this_season()
+    club_key = _tm_club_name(team_name)
     arrivals_all = [(name, val) for name, val in curr.items() if name not in prev]
-    arrivals = [(name, val) for name, val in arrivals_all if name in appeared]
-    pending_arrivals = [(name, val) for name, val in arrivals_all if name not in appeared]
+    arrivals = [(name, val) for name, val in arrivals_all if _player_appeared_for_club(name, club_key)]
+    pending_arrivals = [(name, val) for name, val in arrivals_all if not _player_appeared_for_club(name, club_key)]
     departures = [(name, val) for name, val in prev.items() if name not in curr]
     arrivals_value = sum(v for _, v in arrivals)
     departures_value = sum(v for _, v in departures)
@@ -361,7 +361,7 @@ def _load_current_season_matches() -> list[dict]:
     return _current_season_matches_cache
 
 
-_appeared_players_cache: set[str] | None = None
+_appeared_players_cache: dict[str, set[str]] | None = None
 
 
 def _load_live_lineups() -> dict:
@@ -374,8 +374,9 @@ def _load_live_lineups() -> dict:
         return {}
 
 
-def _players_appeared_this_season() -> set[str]:
-    """canonical_player_name kümesi: bu sezon EN AZ BİR maç kadrosunda (11/yedek) yer almış oyuncular.
+def _appeared_players_by_club() -> dict[str, set[str]]:
+    """TM kulüp anahtarı (`_tm_club_name`) -> bu sezon EN AZ BİR maç kadrosunda (11/yedek)
+    yer almış oyuncuların normalize_name() kümesi (kulüp bazlı, GLOBAL DEĞİL).
 
     İki kaynak birleştirilir: (1) bitmiş maçların kesin kadrosu (`tff_super_lig_matches_
     2026_2027.json`), (2) `collect_live_lineups.py`'nin maç başlamadan önce yakaladığı
@@ -388,21 +389,47 @@ def _players_appeared_this_season() -> set[str]:
     """
     global _appeared_players_cache
     if _appeared_players_cache is None:
-        appeared: set[str] = set()
+        by_club: dict[str, set[str]] = {}
+
+        def _add(team_name: str | None, lineup: dict) -> None:
+            if not team_name:
+                return
+            bucket = by_club.setdefault(_tm_club_name(team_name), set())
+            for group in ("starting", "bench"):
+                for p in lineup.get(group, []) or []:
+                    name = p.get("name")
+                    if name:
+                        bucket.add(normalize_name(name))
+
         for m in _load_current_season_matches():
-            for side in ("home", "away"):
-                lineup = m.get("lineups", {}).get(side, {})
-                for group in ("starting", "bench"):
-                    for p in lineup.get(group, []) or []:
-                        appeared.add(canonical_player_name(p.get("name")))
+            _add((m.get("home_team") or {}).get("name"), m.get("lineups", {}).get("home", {}))
+            _add((m.get("away_team") or {}).get("name"), m.get("lineups", {}).get("away", {}))
         for m in _load_live_lineups().values():
-            for side in ("home", "away"):
-                lineup = m.get("lineups", {}).get(side, {})
-                for group in ("starting", "bench"):
-                    for p in lineup.get(group, []) or []:
-                        appeared.add(canonical_player_name(p.get("name")))
-        _appeared_players_cache = appeared
+            _add(m.get("home_team"), m.get("lineups", {}).get("home", {}))
+            _add(m.get("away_team"), m.get("lineups", {}).get("away", {}))
+        _appeared_players_cache = by_club
     return _appeared_players_cache
+
+
+def _player_appeared_for_club(player_name: str | None, club_key: str) -> bool:
+    """Bir oyuncunun bu sezon VERİLEN kulüp için oynadığını doğrular.
+
+    Tam canonical eşleşme yetmiyor: TFF kadro verisi çoğu zaman oyuncunun TAM YASAL adını
+    kullanıyor ("MASON WILL JOHN GREENWOOD"), Transfermarkt ise kısa/yaygın adı
+    ("Mason Greenwood") — bu ikisi canonical_player_name ile asla birebir eşleşmiyor,
+    bu yüzden büyük gerçek transferler (ör. Fenerbahçe'nin Greenwood/Aké imzaları)
+    sessizce "henüz oynamadı" sayılıp squad_transition_edge/transfer_strength_edge'e hiç
+    yansımıyordu (bkz. PROJECT_STATE 2026-09-07). `enrich_players_with_transfermarkt.py`
+    ile aynı iki-token örtüşme kuralı (kulüp içi, >=2 ortak token) burada da uygulanır.
+    """
+    bucket = _appeared_players_by_club().get(club_key)
+    if not bucket or not player_name:
+        return False
+    candidate_norm = normalize_name(player_name)
+    if candidate_norm in bucket:
+        return True
+    candidate_tokens = set(candidate_norm.split())
+    return any(len(candidate_tokens & set(appeared_norm.split())) >= 2 for appeared_norm in bucket)
 
 
 def suspension_edge(team_name: str, match_date: "datetime | None") -> dict:
