@@ -1,7 +1,7 @@
 # Oyuncu Alias ve Eşleşme Kalitesi
 
 - Manuel alias oyuncusu: 28
-- İşlenen TFF lig profil havuzu: 691
+- İşlenen TFF lig profil havuzu: 859
 - Transfermarkt Süper Lig kadrosu: 18/18 kulüp, 817 oyuncu
 - TFF Beşiktaş profili: 46
 - TFF scout profili: 40
@@ -10,8 +10,8 @@
 
 ## Karşılaştırmalar
 
-- league_tff_vs_transfermarkt: 592/691 eşleşme (%86)
-  - Manuel eşleme: 4 (ağ teyidi bekleyen=4); kullanılabilir eşleme %86
+- league_tff_vs_transfermarkt: 593/859 eşleşme (%69)
+  - Manuel eşleme: 4 (ağ teyidi bekleyen=4); kullanılabilir eşleme %70
 - besiktas_tff_vs_transfermarkt: 0/46 eşleşme (%0)
   - Ham tekil kaynak karşılaştırmasıdır; operasyonel manuel eşlemeler lig karşılaştırmasında izlenir.
 - scout_tff_vs_api_deep: 7/40 eşleşme (%18)
@@ -57,20 +57,20 @@
 - MARUIS TRESOR DOH (ALAGÖZ HOLDİNG IĞDIR FK)
 - ROBIN YALÇIN (ALAGÖZ HOLDİNG IĞDIR FK)
 - RYAN ISAAC MENDES (ALAGÖZ HOLDİNG IĞDIR FK)
+- ALBAN-MARC LAFONT (AMED SPORTİF FAALİYETLER)
+- AMADOU CİSSE (AMED SPORTİF FAALİYETLER)
 - ATAKAN MÜJDE (AMED SPORTİF FAALİYETLER)
+- BERK KIZILDEMİR (AMED SPORTİF FAALİYETLER)
 - CEM ÜSTÜNDAĞ (AMED SPORTİF FAALİYETLER)
+- DAVID ROBERT BATES (AMED SPORTİF FAALİYETLER)
+- DIAA SABI'A (AMED SPORTİF FAALİYETLER)
 - DİLHAN DEMİR (AMED SPORTİF FAALİYETLER)
-- OLEKSANDR SYROTA (AMED SPORTİF FAALİYETLER)
-- TARKAN SERBEST (AMED SPORTİF FAALİYETLER)
-- DENİZ YAŞAR (ANKARA DEMİRSPOR)
-- AHMED ILDIZ (ARCA ÇORUM FK)
-- DANİJEL ALEKSİC (ARCA ÇORUM FK)
-- SERDAR GÜRLER (ARCA ÇORUM FK)
-- SİNAN OSMANOĞLU (ARCA ÇORUM FK)
-- THIAM MAME BABA (ARCA ÇORUM FK)
-- MUHAMMET ONUR BAŞYİĞİT (ARKENT ARNAVUTKÖY BELEDİYESİ FUTBOL SK)
-- DENİZ DİLMEN (ATKO GRUP PENDİKSPOR FUTBOL A.Ş.)
-- HAMZA YİĞİT AKMAN (ATKO GRUP PENDİKSPOR FUTBOL A.Ş.)
+- ERMAL KRASNIQI (AMED SPORTİF FAALİYETLER)
+- GIFT EMMANUEL  ORBAN (AMED SPORTİF FAALİYETLER)
+- GÖKHAN GÜL (AMED SPORTİF FAALİYETLER)
+- KAHRAMAN DEMİRTAŞ (AMED SPORTİF FAALİYETLER)
+- LUMBARDH DELLOVA (AMED SPORTİF FAALİYETLER)
+- MBAYE DIAGNE (AMED SPORTİF FAALİYETLER)
 
 ### besiktas_tff_vs_transfermarkt
 - AHMET SAMİ BİRCAN (BEŞİKTAŞ A.Ş.)

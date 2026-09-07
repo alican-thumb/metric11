@@ -1,15 +1,15 @@
 # TFF × Transfermarkt Zenginleştirilmiş Oyuncu Profilleri — 2025-2026
 
-- Toplam TFF oyuncu: 691
-- Lig snapshot kapsamında TFF oyuncu: 626
-- Kulüp içi canonical eşleşme: 399
+- Toplam TFF oyuncu: 859
+- Lig snapshot kapsamında TFF oyuncu: 724
+- Kulüp içi canonical eşleşme: 400
 - Kulüp içi profil tam-ad eşleşme: 0
 - Kulüp içi token eşleşme: 193
 - Manuel eşleme (ağ teyidi bekleyen): 4
-- Eşleşmedi: 95
-- Doğrulanmış tüm profil kapsamı: %85.7
-- Doğrulanmış lig snapshot içi kapsama: %94.6
-- Manuel eşleme dahil kullanılabilir lig snapshot içi kapsama: %95.2
+- Eşleşmedi: 262
+- Doğrulanmış tüm profil kapsamı: %69.0
+- Doğrulanmış lig snapshot içi kapsama: %81.9
+- Manuel eşleme dahil kullanılabilir lig snapshot içi kapsama: %82.5
 
 ## En Yüksek Piyasa Değeri (Eşleşen Oyuncular)
 
@@ -32,17 +32,17 @@
 - MARUIS TRESOR DOH (ALAGÖZ HOLDİNG IĞDIR FK)
 - ROBIN YALÇIN (ALAGÖZ HOLDİNG IĞDIR FK)
 - RYAN ISAAC MENDES (ALAGÖZ HOLDİNG IĞDIR FK)
+- ALBAN-MARC LAFONT (AMED SPORTİF FAALİYETLER)
+- AMADOU CİSSE (AMED SPORTİF FAALİYETLER)
 - ATAKAN MÜJDE (AMED SPORTİF FAALİYETLER)
+- BERK KIZILDEMİR (AMED SPORTİF FAALİYETLER)
 - CEM ÜSTÜNDAĞ (AMED SPORTİF FAALİYETLER)
+- DAVID ROBERT BATES (AMED SPORTİF FAALİYETLER)
+- DIAA SABI'A (AMED SPORTİF FAALİYETLER)
 - DİLHAN DEMİR (AMED SPORTİF FAALİYETLER)
-- OLEKSANDR SYROTA (AMED SPORTİF FAALİYETLER)
-- TARKAN SERBEST (AMED SPORTİF FAALİYETLER)
-- DENİZ YAŞAR (ANKARA DEMİRSPOR)
-- AHMED ILDIZ (ARCA ÇORUM FK)
-- DANİJEL ALEKSİC (ARCA ÇORUM FK)
-- SERDAR GÜRLER (ARCA ÇORUM FK)
-- SİNAN OSMANOĞLU (ARCA ÇORUM FK)
-- THIAM MAME BABA (ARCA ÇORUM FK)
-- MUHAMMET ONUR BAŞYİĞİT (ARKENT ARNAVUTKÖY BELEDİYESİ FUTBOL SK)
-- DENİZ DİLMEN (ATKO GRUP PENDİKSPOR FUTBOL A.Ş.)
-- HAMZA YİĞİT AKMAN (ATKO GRUP PENDİKSPOR FUTBOL A.Ş.)
+- ERMAL KRASNIQI (AMED SPORTİF FAALİYETLER)
+- GIFT EMMANUEL  ORBAN (AMED SPORTİF FAALİYETLER)
+- GÖKHAN GÜL (AMED SPORTİF FAALİYETLER)
+- KAHRAMAN DEMİRTAŞ (AMED SPORTİF FAALİYETLER)
+- LUMBARDH DELLOVA (AMED SPORTİF FAALİYETLER)
+- MBAYE DIAGNE (AMED SPORTİF FAALİYETLER)

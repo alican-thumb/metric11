@@ -23,6 +23,7 @@ def main() -> None:
         default=[
             str(PROCESSED_DIR / f"tff_player_profiles_all_priority_{SEASON}.json"),
             str(PROCESSED_DIR / f"tff_player_profiles_besiktas_{SEASON}.json"),
+            str(PROCESSED_DIR / "tff_player_profiles_new_2026_2027.json"),
         ],
         help="Lig geneli tek dosya henüz yoksa birleştirilecek mevcut profil dosyaları.",
     )
@@ -211,7 +212,13 @@ def _find_manual_alias(player: dict, aliases: list[dict]) -> dict | None:
 
 
 def load_tff_profiles(preferred: Path, fallbacks: list[Path]) -> list[dict]:
-    paths = [preferred] if preferred.exists() else [path for path in fallbacks if path.exists()]
+    # 2026-09-08 düzeltmesi: eskiden preferred varsa fallback'ler HİÇ okunmuyordu (either/or) —
+    # preferred (lig geneli 2025-26 profil dosyası) neredeyse her zaman var olduğu için
+    # fallback'ler ölü kod gibi duruyordu. Artık preferred + var olan TÜM fallback'ler
+    # birleştiriliyor — bu, `tff_player_profiles_new_2026_2027.json` gibi (2026-27'ye ilk kez
+    # gelen oyuncular, bkz. PROJECT_STATE) SONRADAN eklenen ek profil dosyalarının otomatik
+    # olarak devreye girmesini sağlıyor.
+    paths = ([preferred] if preferred.exists() else []) + [path for path in fallbacks if path.exists()]
     if not paths:
         raise SystemExit(f"TFF dosyası bulunamadı: {preferred} veya fallback dosyaları")
     profiles: dict[str, dict] = {}

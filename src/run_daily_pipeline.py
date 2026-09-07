@@ -113,6 +113,25 @@ NETWORK_COMMANDS = [
         "--output",
         "data/processed/tff_player_profiles_league_all_2025_2026.json",
     ],
+    # 2026-09-08 bulgusu: yukarıdaki komut yalnızca TAMAMLANMIŞ 2025-26 sezonu maç
+    # kadrolarından (--matches varsayılanı) oyuncu topluyor — bu yaz Süper Lig'e ilk
+    # kez gelen (Vlahović/Greenwood gibi) 168 oyuncu hiç TFF profiline sahip değildi,
+    # bu yüzden Scout/FM/transfer sayfalarında tamamen YOK sayılıyorlardı (bkz.
+    # PROJECT_STATE). Bu ayrı komut, GÜNCEL 2026-27 maç kadrolarından (advance_
+    # season_state.py'nin doldurduğu dosya) oyuncu toplar — mevcut/işlenmiş ID'ler
+    # otomatik atlanır (collect_tff_player_profiles.py'nin kendi merge mantığı), yani
+    # sezon ilerledikçe yeni debut yapan oyuncuları da otomatik yakalamaya devam eder.
+    [
+        "python",
+        "-m",
+        "src.collect_tff_player_profiles",
+        "--matches",
+        "data/processed/tff_super_lig_matches_2026_2027.json",
+        "--limit",
+        "0",
+        "--output",
+        "data/processed/tff_player_profiles_new_2026_2027.json",
+    ],
     ["python", "-m", "src.collect_transfermarkt_squad"],
     [
         "python", "-m", "src.collect_transfermarkt_league_squads",
