@@ -6,6 +6,7 @@ from html import escape
 from pathlib import Path
 
 from src.config import PROCESSED_DIR, TRANSFER_WATCH_SEASON_LABEL
+from src.html_utils import nav_links_html
 
 ROLE_REQUIREMENTS = {
     "LW_CREATOR": {
@@ -322,20 +323,13 @@ def build_markdown(payload: dict) -> str:
     return "\n".join(lines)
 
 
-_NAV = """<div class="topbar">
-  <a class="brand" href="/"><b>11</b> metric11</a>
-  <nav>
-    <a href="/">Gündem</a>
-    <a href="transfer_tracker_2025_2026.html">Transferler</a>
-    <a href="all_teams_preview_dashboard_2025_2026.html">Maç Önü</a>
-    <a class="active" href="position_scout_matrix_2025_2026.html">Scout Matrisi</a>
-    <a href="league_scouting_enriched_2025_2026_dashboard.html">Scout Havuzu</a>
-    <a href="transfer_recommendation_report_2025_2026.html">Öneriler</a>
-    <a href="football_intelligence_home.html">Analiz</a>
-    <a href="european_predictions_2026_2027.html">⚽ Avrupa</a>
-    <a href="/tahmin">🎮 Tahmin Oyunu</a>
-  </nav>
-</div>"""
+def _nav() -> str:
+    return (
+        '<div class="topbar">'
+        '<a class="brand" href="/"><b>11</b> metric11</a>'
+        f'<nav class="topnav">{nav_links_html("transfer_recommendation_report_2025_2026.html")}</nav>'
+        '</div>'
+    )
 
 
 def build_html(payload: dict) -> str:
@@ -400,7 +394,7 @@ def build_html(payload: dict) -> str:
   </style>
 </head>
 <body>
-{_NAV}
+{_nav()}
 <div class="hero">
   <h1>Pozisyon Scout Matrisi <span style="color:#cde94e">{TRANSFER_WATCH_SEASON_LABEL}</span></h1>
   <p>Her rol için adaylar yaş, sözleşme fırsatı, tahmini yük, gol/ilk 11 profiliyle puanlanır. Takım seçerek kendi kadronuzdaki oyuncuları gizleyin.</p>

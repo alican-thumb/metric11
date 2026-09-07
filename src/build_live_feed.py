@@ -11,7 +11,7 @@ from html import escape
 from pathlib import Path
 
 from src.config import DATA_DIR, PROCESSED_DIR, SEASON, TRANSFER_WATCH_SEASON_LABEL
-from src.html_utils import league_active
+from src.html_utils import league_active, nav_links_html
 from src.build_match_week import render_hero_html
 
 _TR_WEEKDAYS = ["Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi", "Pazar"]
@@ -558,17 +558,7 @@ def build_html() -> str:
 <body>
 <div class="topbar">
   <a class="brand" href="/"><b>11</b> metric11<span class="slbl">Süper Lig {TRANSFER_WATCH_SEASON_LABEL}</span></a>
-  <nav class="topnav">
-    <a class="active" href="/">Gündem</a>
-    <a href="season_fixture_predictions_2026_2027.html">🗓️ {"Fikstür & Tahmin" if _league else "2026-27 Fikstür"}</a>
-    {'<a href="weekly_evaluation_2026_2027.html">📊 Haftalık Karne</a>' if _league else ''}
-    <a href="transfer_tracker_{SEASON}.html">Transferler</a>
-    <a href="all_teams_preview_dashboard_{SEASON}.html">{"Maç Önü" if _league else "Arşiv"}</a>
-    <a href="transfer_recommendation_report_{SEASON}.html">Scout</a>
-    <a href="football_intelligence_home.html">Analiz</a>
-    <a href="european_predictions_2026_2027.html">⚽ Avrupa</a>
-    <a href="/tahmin" style="color:var(--lime)">🎮 Tahmin Oyunu</a>
-  </nav>
+  <nav class="topnav">{nav_links_html("/")}</nav>
 </div>
 {f'<a href="{window_link}" class="window-banner" style="{banner_css};text-decoration:none;cursor:pointer">' if window_link else f'<div class="window-banner" style="{banner_css}">'}
   <div class="window-dot" style="{dot_css}"></div>

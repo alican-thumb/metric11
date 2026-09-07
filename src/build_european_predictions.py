@@ -8,6 +8,7 @@ from html import escape
 from pathlib import Path
 
 from src.config import DATA_DIR, PROCESSED_DIR, SEASON, ensure_data_dirs
+from src.html_utils import nav_links_html
 
 INPUT_PATH  = PROCESSED_DIR / "european_predictions_2026_2027.json"
 OUTPUT_PATH = PROCESSED_DIR / "european_predictions_2026_2027.html"
@@ -23,15 +24,6 @@ _TR_MONTHS = ["", "Oca", "Şub", "Mar", "Nis", "May", "Haz",
 
 _COMP_EMOJI = {"CL": "🏆", "EL": "🟠", "ECL": "🟢"}
 _COMP_COLOR = {"CL": "#f59e0b", "EL": "#f97316", "ECL": "#22c55e"}
-
-_NAV_LINKS = [
-    ("Gündem", "/"),
-    ("Transferler", "transfer_tracker_2025_2026.html"),
-    ("Maç Önü", "all_teams_preview_dashboard_2025_2026.html"),
-    ("Scout", "transfer_recommendation_report_2025_2026.html"),
-    ("Avrupa", "european_predictions_2026_2027.html"),
-    ("🎮 Tahmin Oyunu", "/tahmin"),
-]
 
 _STAGE_TR = {
     "PRELIMINARY_ROUND":     "Ön Tur",
@@ -594,13 +586,7 @@ def build_page(data: dict) -> str:
 
     acc_pct = round(total_correct / total_played * 100, 1) if total_played else 0
 
-    # Nav
-    nav_items = "".join(
-        f'<a href="{escape(href)}" class="active">{escape(label)}</a>'
-        if label == "Avrupa"
-        else f'<a href="{escape(href)}">{escape(label)}</a>'
-        for label, href in _NAV_LINKS
-    )
+    nav_items = nav_links_html("european_predictions_2026_2027.html")
 
     # Hero badges
     badges = "".join(

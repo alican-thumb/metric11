@@ -47,12 +47,12 @@ _CSS = """
     .brand:visited,.brand:active,.brand:hover { color:white; }
     .brand-mark { width:28px; height:28px; display:grid; place-items:center; border-radius:6px; color:var(--dark); background:var(--lime); font-size:14px; font-weight:900; flex-shrink:0; }
     .season { color:#6b7c72; font-size:11px; font-weight:500; margin-left:2px; border-left:1px solid #2a3d30; padding-left:8px; }
-    nav { display:flex; gap:2px; flex-wrap:nowrap; overflow-x:auto; overflow-y:hidden; justify-content:flex-end; -webkit-overflow-scrolling:touch; scrollbar-width:none; }
-    nav::-webkit-scrollbar { display:none; }
-    nav a { color:#8fa89a; text-decoration:none; font-size:13px; font-weight:600; padding:8px 11px; border-radius:6px; white-space:nowrap; flex-shrink:0; transition:background .15s,color .15s; }
-    nav a:visited { color:#8fa89a; }
-    nav a:hover { background:#162b20; color:white; }
-    nav a.active { background:#162b20; color:white; }
+    nav, .topnav { display:flex; gap:2px; flex-wrap:nowrap; overflow-x:auto; overflow-y:hidden; justify-content:flex-end; -webkit-overflow-scrolling:touch; scrollbar-width:none; }
+    nav::-webkit-scrollbar, .topnav::-webkit-scrollbar { display:none; }
+    nav a, .topnav a { color:#8fa89a; text-decoration:none; font-size:13px; font-weight:600; padding:8px 11px; border-radius:6px; white-space:nowrap; flex-shrink:0; transition:background .15s,color .15s; }
+    nav a:visited, .topnav a:visited { color:#8fa89a; }
+    nav a:hover, .topnav a:hover { background:#162b20; color:white; }
+    nav a.active, .topnav a.active { background:#162b20; color:white; }
     .back-link { display:inline-flex; align-items:center; gap:6px; color:var(--green); text-decoration:none; font-size:13px; font-weight:600; margin-bottom:18px; }
     .back-link::before { content:"←"; }
     .report-wrap { max-width:960px; margin:0 auto; padding:32px clamp(14px,3vw,32px) 60px; }
@@ -78,27 +78,55 @@ _CSS = """
 """
 
 
-def _build_nav(active: str = "") -> str:
+# Tek gerçek kaynak: tüm sayfa üreticileri (build_live_feed dahil) nav linklerini
+# buradan alır. Önceden her script kendi <nav> listesini elle kopyalamıştı ve
+# "Fikstür & Tahmin"/"Haftalık Karne" gibi sonradan eklenen linkler yalnızca bazı
+# sayfalara işlenmişti — menülerin sayfadan sayfaya "eski" görünmesinin sebebi buydu.
+def _nav_link_list() -> list[tuple[str, str]]:
     links = [
-        ("G&#xfc;ndem", "/"),
-        ("Fikstür", "season_fixture_predictions_2026_2027.html"),
+        ("Gündem", "/"),
+        (
+            "🗓️ Fikstür & Tahmin" if league_active() else "🗓️ 2026-27 Fikstür",
+            "season_fixture_predictions_2026_2027.html",
+        ),
     ]
-    # Lig başladıysa haftalık tahmin karnesi nav'da öne çıkar.
     if league_active():
-        links.append(("Haftalık Karne", "weekly_evaluation_2026_2027.html"))
+        links.append(("📊 Haftalık Karne", "weekly_evaluation_2026_2027.html"))
     links += [
         ("Transferler", "transfer_tracker_2025_2026.html"),
         (_preview_label(), "all_teams_preview_dashboard_2025_2026.html"),
         ("Scout", "transfer_recommendation_report_2025_2026.html"),
         ("Analiz", "football_intelligence_home.html"),
-        ("Avrupa", "european_predictions_2026_2027.html"),
+        ("⚽ Avrupa", "european_predictions_2026_2027.html"),
         ("🎮 Tahmin Oyunu", "/tahmin"),
     ]
-    items = "".join(
-        f'<a href="{href}" class="active">{label}</a>' if label == active or href == active
-        else f'<a href="{href}">{label}</a>'
+    return links
+
+
+def nav_links_html(active: str = "", extra: list[tuple[str, str]] | None = None) -> str:
+    """Sadece <a> etiketlerini döner (sarmalayıcı <nav> yok) — kendi topbar/nav
+    markup'ını ve CSS'ini koruyan sayfalarda link listesini güncel tutmak için.
+
+    `extra`: bu sayfaya özel, genel listede olmayan link(ler) — "🎮 Tahmin Oyunu"dan
+    hemen önce eklenir (ör. Dünya Kupası sayfasındaki "Tahminler" sekmesi)."""
+    def _attrs(label: str, href: str) -> str:
+        if href == "/tahmin":
+            return ' style="color:var(--lime)"'
+        return ""
+
+    links = _nav_link_list()
+    if extra:
+        links = links[:-1] + list(extra) + links[-1:]
+    return "".join(
+        f'<a href="{href}" class="active"{_attrs(label, href)}>{label}</a>'
+        if label == active or href == active
+        else f'<a href="{href}"{_attrs(label, href)}>{label}</a>'
         for label, href in links
     )
+
+
+def _build_nav(active: str = "") -> str:
+    items = nav_links_html(active)
     return (
         '<div class="topbar">'
         '<a class="brand" href="/">'
@@ -106,7 +134,7 @@ def _build_nav(active: str = "") -> str:
         ' metric11'
         f'<span class="season">S&#xfc;per Lig {"2026-2027" if league_active() else "2025-2026"}</span>'
         '</a>'
-        f'<nav>{items}</nav>'
+        f'<nav class="topnav">{items}</nav>'
         '</div>'
     )
 

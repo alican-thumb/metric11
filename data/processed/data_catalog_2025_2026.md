@@ -52,8 +52,8 @@
 - Lig istihbarat takım profili: 18
 - Lig istihbarat oyuncu profili: 691
 - Lig istihbarat hakem profili: 29
-- Takım scout blueprint: 21 takım
-- Takım scout aday bağlantısı: 370
+- Takım scout blueprint: 18 takım
+- Takım scout aday bağlantısı: 310
 - Scout düşük güven inceleme kuyruğu: 0
 - Scout tekil düşük güven oyuncu-rol: 0
 - Scout fazla role yayılan oyuncu: 0

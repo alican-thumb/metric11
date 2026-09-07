@@ -7,6 +7,7 @@ from datetime import date, datetime, timezone
 from pathlib import Path
 
 from src.config import PROCESSED_DIR, SEASON, TRANSFER_WATCH_SEASON_LABEL
+from src.html_utils import nav_links_html
 
 # --------------------------------------------------------------------------- #
 # constants
@@ -490,7 +491,10 @@ def main() -> None:
         "tr:hover{background:#f7faf7}",
         ".x-share{display:inline-flex;align-items:center;gap:8px;background:#000;color:#fff;text-decoration:none;font-size:14px;font-weight:700;padding:10px 18px;border-radius:8px;transition:background .15s;}",
         ".x-share:hover{background:#1a1a1a;}",
-        ".share-bar{padding:16px 0 8px;border-top:1px solid #d7ded9;margin-top:24px;}</style>",
+        ".share-bar{padding:16px 0 8px;border-top:1px solid #d7ded9;margin-top:24px;}",
+        ".topnav{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}",
+        ".topnav a{white-space:nowrap;color:#8fa89a;padding:8px 11px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600}",
+        ".topnav a.active{background:#162b20;color:#fff}</style>",
         "</head><body>",
         "<div style='min-height:58px;padding:0 clamp(12px,3vw,28px);display:flex;align-items:center;justify-content:space-between;gap:16px;background:#091810;position:sticky;top:0;z-index:10;border-bottom:2px solid #1a3023'>"
         "<a style='display:flex;align-items:center;gap:10px;color:white;text-decoration:none;font-size:18px;font-weight:800;letter-spacing:-0.2px' href='/'>"
@@ -498,13 +502,7 @@ def main() -> None:
         " metric11"
         f"<span style='color:#6b7c72;font-size:11px;font-weight:500;border-left:1px solid #2a3d30;padding-left:8px;margin-left:2px'>Süper Lig {TRANSFER_WATCH_SEASON_LABEL}</span>"
         "</a>"
-        "<nav style='display:flex;gap:2px;overflow-x:auto;scrollbar-width:none'>"
-        "<a style='white-space:nowrap;color:#8fa89a;padding:8px 11px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600' href='/'>Gündem</a>"
-        "<a style='white-space:nowrap;background:#162b20;color:white;padding:8px 11px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600' href='transfer_tracker_2025_2026.html'>Transferler</a>"
-        "<a style='white-space:nowrap;color:#8fa89a;padding:8px 11px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600' href='all_teams_preview_dashboard_2025_2026.html'>Maç Önü</a>"
-        "<a style='white-space:nowrap;color:#8fa89a;padding:8px 11px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600' href='transfer_recommendation_report_2025_2026.html'>Scout</a>"
-        "<a style='white-space:nowrap;color:#8fa89a;padding:8px 11px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600' href='football_intelligence_home.html'>Analiz</a>"
-        "</nav></div>",
+        f"<nav class='topnav'>{nav_links_html('transfer_tracker_2025_2026.html')}</nav></div>",
         "<div style='max-width:1100px;margin:24px auto;padding:0 clamp(12px,3vw,28px)'>",
         _header_section(),
         _countdown_banner(),

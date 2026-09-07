@@ -8,6 +8,7 @@ from html import escape
 from pathlib import Path
 
 from src.config import PROCESSED_DIR, ensure_data_dirs
+from src.html_utils import nav_links_html
 
 # ---------------------------------------------------------------------------
 # Inline CSS + tasarım sabitleri
@@ -700,23 +701,10 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 # ---------------------------------------------------------------------------
 # Nav linkleri
 # ---------------------------------------------------------------------------
-_NAV_LINKS = [
-    ("Gündem", "/"),
-    ("Transferler", "transfer_tracker_2025_2026.html"),
-    ("Maç Önü", "all_teams_preview_dashboard_2025_2026.html"),
-    ("Scout", "transfer_recommendation_report_2025_2026.html"),
-    ("Analiz", "football_intelligence_home.html"),
-    ("Tahminler", "worldcup_2026_predictions.html"),
-    ("🎮 Tahmin Oyunu", "/tahmin"),
-]
-
-
 def _build_topbar() -> str:
-    nav_items = "".join(
-        f'<a href="{escape(href)}" class="active">{escape(label)}</a>'
-        if label == "Tahminler"
-        else f'<a href="{escape(href)}">{escape(label)}</a>'
-        for label, href in _NAV_LINKS
+    nav_items = nav_links_html(
+        "worldcup_2026_predictions.html",
+        extra=[("Tahminler", "worldcup_2026_predictions.html")],
     )
     return (
         '<div class="topbar">'

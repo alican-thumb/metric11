@@ -6,6 +6,7 @@ from html import escape
 from pathlib import Path
 
 from src.config import PROCESSED_DIR
+from src.html_utils import nav_links_html
 
 
 def main() -> None:
@@ -90,15 +91,7 @@ def build_html(report: dict) -> str:
 <body>
   <div class="topbar">
     <a class="brand" href="/"><span class="brand-mark">11</span> metric11</a>
-    <nav>
-      <a href="/">Gündem</a>
-      <a href="transfer_tracker_2025_2026.html">Transferler</a>
-      <a href="all_teams_preview_dashboard_2025_2026.html">Maç Önü</a>
-      <a class="active" href="transfer_recommendation_report_2025_2026.html">Scout</a>
-      <a href="football_intelligence_home.html">Analiz</a>
-    <a href="european_predictions_2026_2027.html">⚽ Avrupa</a>
-    <a href="/tahmin">🎮 Tahmin Oyunu</a>
-    </nav>
+    <nav class="topnav">{nav_links_html("transfer_recommendation_report_2025_2026.html")}</nav>
   </div>
   <header>
     <h1>{escape(report['team'])} Takım İhtiyaç Paneli</h1>

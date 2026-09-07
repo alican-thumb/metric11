@@ -10,7 +10,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from src.config import PROCESSED_DIR, SEASON, TRANSFER_WATCH_SEASON_LABEL
-from src.html_utils import preview_nav_label
+from src.html_utils import nav_links_html
 
 
 def main() -> None:
@@ -177,15 +177,7 @@ def build_html(intel: dict) -> str:
 <body>
 <div class="topbar">
   <a class="brand" href="/"><b>11</b> metric11<span class="slbl">Süper Lig {TRANSFER_WATCH_SEASON_LABEL}</span></a>
-  <nav class="topnav">
-    <a class="active" href="/">Gündem</a>
-    <a href="transfer_tracker_2025_2026.html">Transferler</a>
-    <a href="all_teams_preview_dashboard_2025_2026.html">{preview_nav_label()}</a>
-    <a href="transfer_recommendation_report_2025_2026.html">Scout</a>
-    <a href="football_intelligence_home.html">Analiz</a>
-    <a href="european_predictions_2026_2027.html">⚽ Avrupa</a>
-    <a href="/tahmin">🎮 Tahmin Oyunu</a>
-  </nav>
+  <nav class="topnav">{nav_links_html("/")}</nav>
 </div>
 <div class="header">
   <h1>📰 Haber İstihbaratı — Süper Lig {TRANSFER_WATCH_SEASON_LABEL}</h1>

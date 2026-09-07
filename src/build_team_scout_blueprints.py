@@ -6,8 +6,26 @@ from collections import defaultdict
 from html import escape
 from pathlib import Path
 
-from src.config import PROCESSED_DIR
-from src.html_utils import _build_nav, preview_nav_label
+from src.config import PROCESSED_DIR, ROOT_DIR
+from src.html_utils import nav_links_html
+
+CURRENT_CLUBS_PATH = ROOT_DIR / "data" / "manual" / "transfermarkt_super_lig_clubs.json"
+
+
+def _current_super_lig_teams() -> set[str]:
+    """2026-27 Süper Lig'in güncel 18 kulübü (küme düşenler hariç).
+
+    `league_intelligence_2025_2026.json` geçen sezon oynayan HERKESİ içerir — küme düşen
+    Antalyaspor/Karagümrük/Kayserispor dahil. Bu liste, "2026-27 transfer penceresi"
+    diye sunulan scout blueprint'lerinin artık Süper Lig'de olmayan takımlar için
+    üretilmesini engellemek için kullanılır (bkz. kullanıcı raporu: "antalyaspor alt
+    ligde hâlâ ne arıyor").
+    """
+    try:
+        clubs = json.loads(CURRENT_CLUBS_PATH.read_text(encoding="utf-8")).get("clubs", [])
+    except FileNotFoundError:
+        return set()
+    return {c["team_name"] for c in clubs if c.get("team_name")}
 
 
 ROLE_MAP = {
@@ -115,9 +133,12 @@ def build_payload(
     profile_index = {str(item.get("external_id")): item for item in (player_profiles or []) if item.get("external_id")}
     role_candidates = build_role_candidate_index(position_matrix, fm_scout, league, profile_index, role_overrides or {})
     team_profiles = {item["team"]: item for item in league.get("team_profiles", [])}
+    current_teams = _current_super_lig_teams()
     blueprints = []
     for weakness in league.get("team_weaknesses", []):
         team = weakness["team"]
+        if current_teams and team not in current_teams:
+            continue  # 2025/26'da oynadı ama küme düştü — 2026-27 transfer planlamasının dışında
         profile = team_profiles.get(team, {})
         required_roles = roles_for_weaknesses(weakness.get("weaknesses", []))
         role_plans = []
@@ -459,21 +480,13 @@ def build_markdown(payload: dict) -> str:
     return "\n".join(lines)
 
 
-_DARK_NAV = """<div class="topbar">
-  <a class="brand" href="/"><b>11</b> metric11</a>
-  <nav>
-    <a href="/">Gündem</a>
-    <a href="transfer_tracker_2025_2026.html">Transferler</a>
-    <a href="all_teams_preview_dashboard_2025_2026.html">Maç Önü</a>
-    <a class="active" href="team_scout_blueprints_2025_2026.html">Takım Blueprint</a>
-    <a href="position_scout_matrix_2025_2026.html">Pozisyon Matrisi</a>
-    <a href="league_scouting_enriched_2025_2026_dashboard.html">Scout Havuzu</a>
-    <a href="transfer_recommendation_report_2025_2026.html">Öneriler</a>
-    <a href="football_intelligence_home.html">Analiz</a>
-    <a href="european_predictions_2026_2027.html">⚽ Avrupa</a>
-    <a href="/tahmin">🎮 Tahmin Oyunu</a>
-  </nav>
-</div>"""
+def _dark_nav() -> str:
+    return (
+        '<div class="topbar">'
+        '<a class="brand" href="/"><b>11</b> metric11</a>'
+        f'<nav class="topnav">{nav_links_html("transfer_recommendation_report_2025_2026.html")}</nav>'
+        '</div>'
+    )
 
 
 def build_html(payload: dict) -> str:
@@ -535,7 +548,7 @@ def build_html(payload: dict) -> str:
   </style>
 </head>
 <body>
-{_DARK_NAV}
+{_dark_nav()}
 <div class="hero">
   <h1>Takım Scout Blueprint Raporu <span style="color:#cde94e">2026-2027</span></h1>
   <p>Lig verisi bazlı takım zafiyetleri → 2026-27 transfer penceresi için rol öncelikleri ve aday eşleşmesi</p>

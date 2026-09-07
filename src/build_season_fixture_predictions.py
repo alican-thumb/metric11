@@ -23,6 +23,7 @@ from src.model_league_predictions import (
     predict_match,
 )
 from src.normalization import normalize_matches
+from src.html_utils import nav_links_html
 
 FIXTURE_PATH = PROCESSED_DIR / "tff_super_lig_fixtures_2026_2027.json"
 HISTORY_INPUT_PATH = PROCESSED_DIR / f"tff_super_lig_enriched_{SEASON}.json"
@@ -213,16 +214,6 @@ def _fmt_date(date_str: str) -> str:
         return date_str
 
 
-_NAV_LINKS = [
-    ("Gündem", "/"),
-    ("Transferler", "transfer_tracker_2025_2026.html"),
-    ("Maç Önü", "all_teams_preview_dashboard_2025_2026.html"),
-    ("2026-27 Fikstür", "season_fixture_predictions_2026_2027.html"),
-    ("Scout", "transfer_recommendation_report_2025_2026.html"),
-    ("Avrupa", "european_predictions_2026_2027.html"),
-    ("🎮 Tahmin Oyunu", "/tahmin"),
-]
-
 _CSS = """
 :root { --bg:#09111f; --panel:#0e1929; --panel2:#13223a; --ink:#e2e8f0; --muted:#64748b; --border:#1e3a5f; --lime:#cde94e; }
 * { box-sizing:border-box; margin:0; padding:0; }
@@ -396,11 +387,7 @@ def _load_goal_scorers() -> dict:
 def build_html(payload: dict) -> str:
     signals = _load_match_signals()
     scorers = _load_goal_scorers()
-    nav_items = "".join(
-        f'<a href="{escape(href)}" class="active">{escape(label)}</a>' if label == "2026-27 Fikstür"
-        else f'<a href="{escape(href)}">{escape(label)}</a>'
-        for label, href in _NAV_LINKS
-    )
+    nav_items = nav_links_html("season_fixture_predictions_2026_2027.html")
     stat_bar = (
         f'<div class="stat-chip"><div class="v">{payload["total_matches"]}</div><div class="l">Toplam Maç</div></div>'
         f'<div class="stat-chip"><div class="v">{payload["total_weeks"]}</div><div class="l">Hafta</div></div>'

@@ -8,7 +8,7 @@ from pathlib import Path
 from datetime import date
 
 from src.config import PROCESSED_DIR, SEASON
-from src.html_utils import league_active
+from src.html_utils import league_active, nav_links_html
 
 _SEASON_END = date(2026, 5, 18)
 _WINDOW_CLOSE = date(2026, 9, 1)
@@ -299,16 +299,7 @@ def build_html() -> str:
 <body>
   <div class="topbar">
     <a class="brand" href="/"><span class="brand-mark">11</span> metric11 <span class="season">Süper Lig {"2026-2027" if league_active() else "2025-2026"}</span></a>
-    <nav>
-      <a href="/">Gündem</a>
-      <a href="transfer_tracker_2025_2026.html">Transferler</a>
-      {'<a href="season_fixture_predictions_2026_2027.html">Fikstür</a>' if league_active() else ''}
-      <a href="all_teams_preview_dashboard_2025_2026.html">{"Maç Önü" if league_active() else "Arşiv"}</a>
-      <a href="transfer_recommendation_report_2025_2026.html">Scout</a>
-      <a class="active" href="football_intelligence_home.html">Analiz</a>
-    <a href="european_predictions_2026_2027.html">⚽ Avrupa</a>
-    <a href="/tahmin">🎮 Tahmin Oyunu</a>
-    </nav>
+    <nav class="topnav">{nav_links_html("football_intelligence_home.html")}</nav>
   </div>
   <header>
     <div class="matchroom">

@@ -11,7 +11,7 @@ from pathlib import Path
 
 from src.config import PROCESSED_DIR, SEASON, SEASON_LABEL, TRANSFER_WATCH_SEASON_LABEL
 from src.build_team_scout_blueprints import candidate_matches_role
-from src.html_utils import preview_nav_label
+from src.html_utils import nav_links_html
 
 CONTRACT_URGENCY = {
     "EXPIRING_SOON": 40,
@@ -723,10 +723,8 @@ def build_html(report: dict) -> str:
 </head>
 <body>
 <div class="topbar">
-  <a class="brand" href="/"><b>11</b> metric11<span class="slbl">Süper Lig 2025/26</span></a>
-  <nav class="topnav"><a href="/">Gündem</a><a href="transfer_tracker_2025_2026.html">Transferler</a><a href="all_teams_preview_dashboard_2025_2026.html">{preview_nav_label()}</a><a class="active" href="transfer_recommendation_report_2025_2026.html">Scout</a><a href="football_intelligence_home.html">Analiz</a>
-    <a href="european_predictions_2026_2027.html">⚽ Avrupa</a>
-    <a href="/tahmin">🎮 Tahmin Oyunu</a></nav>
+  <a class="brand" href="/"><b>11</b> metric11<span class="slbl">Süper Lig {TRANSFER_WATCH_SEASON_LABEL}</span></a>
+  <nav class="topnav">{nav_links_html("transfer_recommendation_report_2025_2026.html")}</nav>
 </div>
 <div class="header">
   <h1>Scout &amp; Transfer Merkezi <span style="color:#cde94e;font-size:0.9em">{TRANSFER_WATCH_SEASON_LABEL}</span></h1>

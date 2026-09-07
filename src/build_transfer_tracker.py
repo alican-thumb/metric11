@@ -19,7 +19,7 @@ from src.config import (
     TRANSFER_WATCH_SEASON,
     TRANSFER_WATCH_SEASON_LABEL,
 )
-from src.html_utils import preview_nav_label
+from src.html_utils import nav_links_html
 from src.normalization import normalize_name
 
 NEW_SIGNING_MARKET_VALUE_OVERRIDES_PATH = (
@@ -331,15 +331,7 @@ def build_html(signals: list[dict], summary: dict) -> str:
 <body>
 <div class="topbar">
   <a class="brand" href="/"><b>11</b> metric11<span class="slbl">Süper Lig {TRANSFER_WATCH_SEASON_LABEL}</span></a>
-  <nav class="topnav">
-    <a href="/">Gündem</a>
-    <a class="active" href="transfer_tracker_{SEASON}.html">Transferler</a>
-    <a href="all_teams_preview_dashboard_{SEASON}.html">{preview_nav_label()}</a>
-    <a href="transfer_recommendation_report_{SEASON}.html">Scout</a>
-    <a href="football_intelligence_home.html">Analiz</a>
-    <a href="european_predictions_2026_2027.html">⚽ Avrupa</a>
-    <a href="/tahmin">🎮 Tahmin Oyunu</a>
-  </nav>
+  <nav class="topnav">{nav_links_html(f"transfer_tracker_{SEASON}.html")}</nav>
 </div>
 <div class="header">
   <h1>Transfer Takip — {TRANSFER_WATCH_SEASON_LABEL} {_window_badge()}</h1>
