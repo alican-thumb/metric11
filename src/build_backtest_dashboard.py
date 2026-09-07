@@ -78,9 +78,9 @@ def build_html(
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tahmin Backtest Paneli — metric11</title>
+  <title>Tahmin Backtest Paneli (2025-26 Arşiv) — metric11</title>
   <meta name="description" content="Süper Lig maç ve gol tahminlerinin geçmiş sezon backtest analizi: doğruluk oranları, hata dağılımı ve model kalibrasyonu — metric11.">
-  <meta property="og:title" content="Tahmin Backtest Paneli — metric11">
+  <meta property="og:title" content="Tahmin Backtest Paneli (2025-26 Arşiv) — metric11">
   <meta property="og:description" content="Süper Lig maç ve gol tahminlerinin geçmiş sezon backtest analizi — metric11.">
   <meta property="og:image" content="https://metric11.com/og-image.png">
   <meta property="og:type" content="website">
@@ -126,7 +126,7 @@ def build_html(
   {nav}
   <div class="page-header">
     <a class="back-link" href="/">Ana sayfaya dön</a>
-    <h1>Tahmin Backtest Paneli</h1>
+    <h1>Tahmin Backtest Paneli <span style="color:#cde94e;font-size:16px;font-weight:700">2025-26 Arşiv</span></h1>
     <p>Lig geneli Poisson/Elo modelinin ve Beşiktaş gol adayı motorunun geçmiş maç performansı.</p>
   </div>
   <main>

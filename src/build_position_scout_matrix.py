@@ -396,8 +396,8 @@ def build_html(payload: dict) -> str:
 <body>
 {_nav()}
 <div class="hero">
-  <h1>Pozisyon Scout Matrisi <span style="color:#cde94e">{TRANSFER_WATCH_SEASON_LABEL}</span></h1>
-  <p>Her rol için adaylar yaş, sözleşme fırsatı, tahmini yük, gol/ilk 11 profiliyle puanlanır. Takım seçerek kendi kadronuzdaki oyuncuları gizleyin.</p>
+  <h1>Pozisyon Scout Matrisi <span style="color:#cde94e">2025-2026 Arşiv</span></h1>
+  <p>Her rol için adaylar yaş, sözleşme fırsatı, tahmini yük, gol/ilk 11 profiliyle puanlanır. Takım seçerek kendi kadronuzdaki oyuncuları gizleyin. Tamamlanmış 2025-26 sezonu istatistiklerine dayanır — küme düşen takımlar dahil, 2026-27'ye yükselenler dahil değil.</p>
 </div>
 <div class="stat-bar">
   <div class="stat-chip"><div class="v">{summary["candidate_count"]}</div><div class="l">Aday</div></div>

@@ -1,4 +1,4 @@
-# Lig Geneli Piyasa Değeri / Model Denetimi
+# Lig Geneli Piyasa Değeri / Model Denetimi (2025-26 Arşiv)
 
 - Sezon: 2025-2026
 - Transfermarkt kulüp kapsamı: 18/18

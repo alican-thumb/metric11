@@ -386,9 +386,9 @@ def build_html(payload: dict) -> str:
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Süper Lig İstihbarat Raporu — metric11</title>
+  <title>Süper Lig İstihbarat Raporu (2025-26 Arşiv) — metric11</title>
   <meta name="description" content="Süper Lig 2025-2026 takım gücü, oyuncu profili, hakem analizi ve transfer istihbaratı — metric11.">
-  <meta property="og:title" content="Süper Lig İstihbarat Raporu — metric11">
+  <meta property="og:title" content="Süper Lig İstihbarat Raporu (2025-26 Arşiv) — metric11">
   <meta property="og:description" content="Süper Lig 2025-2026 takım gücü, oyuncu profili, hakem analizi ve transfer istihbaratı.">
   <meta property="og:image" content="https://metric11.com/og_league_intelligence.png">
   <meta property="og:type" content="website">
@@ -437,7 +437,7 @@ def build_html(payload: dict) -> str:
     <nav class="topnav">{nav_links_html("football_intelligence_home.html")}</nav>
   </div>
   <header>
-    <h1>Süper Lig İstihbarat Raporu</h1>
+    <h1>Süper Lig İstihbarat Raporu <span style="color:#cde94e;font-size:16px;font-weight:700">2025-26 Arşiv</span></h1>
     <p>2025-2026 maç detaylarından takım gücü, oyuncu skor/kart profili, hakem tempo etiketi ve takım zafiyetlerinden scout ihtiyacı çıkarır.</p>
   </header>
   <main>

@@ -32,7 +32,7 @@ def main() -> None:
     json_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     md_path.write_text(md, encoding="utf-8")
     html_path = PROCESSED_DIR / f"{args.output_prefix}.html"
-    html_path.write_text(page_html("Lig Piyasa Değeri Denetimi", md_to_html(md), description="18 Süper Lig takımının Transfermarkt kadro değerlerini model tahminleriyle karşılaştıran retrospektif denetim — metric11."), encoding="utf-8")
+    html_path.write_text(page_html("Lig Piyasa Değeri Denetimi (2025-26 Arşiv)", md_to_html(md), description="18 Süper Lig takımının Transfermarkt kadro değerlerini model tahminleriyle karşılaştıran retrospektif denetim — metric11."), encoding="utf-8")
     print(md)
 
 
@@ -171,7 +171,7 @@ def build_markdown(payload: dict) -> str:
     summary = payload["summary"]
     methodology = payload["methodology"]
     lines = [
-        "# Lig Geneli Piyasa Değeri / Model Denetimi",
+        "# Lig Geneli Piyasa Değeri / Model Denetimi (2025-26 Arşiv)",
         "",
         f"- Sezon: {payload['season']}",
         f"- Transfermarkt kulüp kapsamı: {summary['market_clubs']}/18",

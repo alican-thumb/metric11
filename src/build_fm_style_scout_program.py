@@ -191,7 +191,7 @@ def build_html(payload: dict) -> str:
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>FM Scout Programı — metric11</title>
+  <title>FM Scout Programı (2025-26 Arşiv) — metric11</title>
   <meta name="description" content="Süper Lig 2025-2026 scouting programı: 691 oyuncu için Football Manager tarzı attribute barları, takım ihtiyacı eşleşmesi — metric11.">
   <meta property="og:title" content="FM Scout Programı — metric11">
   <meta property="og:description" content="Süper Lig 2025-2026 scouting programı: 691 oyuncu için Football Manager tarzı attribute barları — metric11.">
@@ -290,7 +290,7 @@ def build_html(payload: dict) -> str:
   </div>
 
   <header>
-    <h1>FM Scout Programı</h1>
+    <h1>FM Scout Programı <span style="color:#cde94e;font-size:16px;font-weight:700">2025-26 Arşiv</span></h1>
     <p>
       {summary['sl_candidates']} Süper Lig oyuncusu · {summary['global_pool']} global aday (CA ≥ {summary['global_ca_min']}) ·
       {summary['fm23_matched']} SL oyuncusunda FM23 gerçek attribute barları

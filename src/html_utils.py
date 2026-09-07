@@ -25,14 +25,6 @@ def _is_transfer_season() -> bool:
     return _SEASON_END <= today < _WINDOW_CLOSE
 
 
-def _preview_label() -> str:
-    # Lig başladıktan sonra "Maç Önü" (canlı fikstür); öncesinde "Arşiv".
-    return "Ma&#xe7; &#xd6;n&#xfc;" if league_active() else "Ar&#x15f;iv"
-
-
-def preview_nav_label() -> str:
-    """Return the correct nav label for the preview/archive link based on season."""
-    return "Maç Önü" if league_active() else "Arşiv"
 
 
 _CSS = """
@@ -94,7 +86,6 @@ def _nav_link_list() -> list[tuple[str, str]]:
         links.append(("📊 Haftalık Karne", "weekly_evaluation_2026_2027.html"))
     links += [
         ("Transferler", "transfer_tracker_2025_2026.html"),
-        (_preview_label(), "all_teams_preview_dashboard_2025_2026.html"),
         ("Scout", "transfer_recommendation_report_2025_2026.html"),
         ("Analiz", "football_intelligence_home.html"),
         ("⚽ Avrupa", "european_predictions_2026_2027.html"),

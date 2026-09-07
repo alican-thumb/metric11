@@ -12,7 +12,9 @@ from __future__ import annotations
 
 import json
 import math
+import re
 import sys
+import unicodedata
 from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
@@ -64,7 +66,7 @@ _CLUB_STRENGTH: dict[str, float] = {
     "VfB Stuttgart":         72, "SC Freiburg":          62,
     "Valencia CF":           60, "Athletic Club":        65,
     "Celta de Vigo":         55, "Getafe CF":            52,
-    "Nice":                  62, "Lens":                 60,
+    "Nice":                  62,
     "Rennes":                57, "Toulouse FC":          52,
     "Bologna FC":            64, "Torino FC":            55,
     "Udinese Calcio":        48, "Sassuolo":             50,
@@ -89,6 +91,21 @@ _CLUB_STRENGTH: dict[str, float] = {
     "Vitória SC":            50, "Boavista":             46,
     "Lech Poznan":           52, "Wisla Krakow":         44,
     "AIK":                   48, "BK Häcken":            46,
+    # 2026-09-07 eklendi — 2026-27 Avrupa kupası fikstüründe bu tabloda hiç karşılığı
+    # olmayan (isim eşleşmesi ne substring ne token-overlap ile mümkün OLMAYAN, çünkü
+    # gerçekten hiç girilmemiş) kulüpler. Tahmini, kaba tier değerleri — sabit bir resmi
+    # kaynağa dayanmıyor, yalnızca 48 (jenerik varsayılan) yerine geçmiş Avrupa
+    # performansına göre kabaca konumlandırma. Elit değiller ama tamamen jenerik de değiller.
+    "Como 1907":             46, "FK Bodø/Glimt":        58,
+    "LASK Linz":             50, "Sabah FK":             36,
+    "Viking FK":             44, "ŠK Slovan Bratislava": 48,
+}
+
+# football-data.org'un tam resmi adı ile tablodaki kısa/yaygın ad arasında ne substring
+# ne token-overlap ile çözülebilen (dil farkı: "Internazionale"≠"Inter", "AEK" gibi kısa
+# kodlar) birkaç bilinen istisna. `_static_strength` önce bunu, sonra token-overlap'i dener.
+_TEAM_STRENGTH_ALIASES: dict[str, str] = {
+    "FC INTERNAZIONALE MILANO": "Inter Milan",
 }
 
 _DEFAULT_STRENGTH = 48.0
@@ -137,7 +154,60 @@ def _strength(name: str) -> float:
     return static * (1 - weight) + domestic_strength * weight
 
 
+# 2026-09-07 bulgusu: eski `k.lower() in name.lower()` TAM ALT-DİZİ eşleşmesi, football-
+# data.org'un tam resmi adlarının ("FC Bayern München", "FC Internazionale Milano") tablodaki
+# kısa/yaygın adlarla ("Bayern Munich", "Inter Milan") HİÇ eşleşmemesine yol açıyordu — 2026-27
+# Avrupa fikstüründeki 36 takımın 11'i (Bayern Münih ve Inter Milan dahil — ikisi de tabloda
+# elit/93-84 puanlı!) sessizce jenerik varsayılana (48) düşüyordu, maçları ciddi çarpıtıyordu.
+# Düzeltme: normalize edilmiş isim üzerinde token-overlap (kulüp isimlerindeki jenerik "FC/SK/
+# 1907" gibi ekler hariç), en çok ortak token'ı olan aday kazanır (ör. "Manchester City" vs
+# "Manchester United" tek "MANCHESTER" ortak tokeniyle değil, "CITY"/"UNITED" farkıyla ayrılır).
+_STRENGTH_MATCH_STOPWORDS = {
+    "FC", "SK", "AS", "CF", "SC", "AFC", "FK", "CD", "UD", "RC", "KV", "US",
+    "PAE", "TSV", "SV", "VFB", "VFL", "BSC", "1907", "CLUB", "CLUBE", "DE",
+}
+
+
+def _normalize_club_name(name: str) -> str:
+    cleaned = unicodedata.normalize("NFKD", name or "")
+    cleaned = "".join(ch for ch in cleaned if not unicodedata.combining(ch))
+    cleaned = re.sub(r"[^A-Za-z0-9 ]+", " ", cleaned).upper()
+    return re.sub(r"\s+", " ", cleaned).strip()
+
+
+def _strength_tokens(name: str) -> set[str]:
+    return {t for t in _normalize_club_name(name).split() if len(t) >= 3 and t not in _STRENGTH_MATCH_STOPWORDS}
+
+
+_club_strength_tokens_cache: dict[str, set[str]] | None = None
+
+
+def _club_strength_tokens() -> dict[str, set[str]]:
+    global _club_strength_tokens_cache
+    if _club_strength_tokens_cache is None:
+        _club_strength_tokens_cache = {k: _strength_tokens(k) for k in _CLUB_STRENGTH}
+    return _club_strength_tokens_cache
+
+
 def _static_strength(name: str) -> float:
+    alias = _TEAM_STRENGTH_ALIASES.get(_normalize_club_name(name))
+    if alias:
+        return _CLUB_STRENGTH[alias]
+    name_tokens = _strength_tokens(name)
+    if name_tokens:
+        scored = [
+            (len(name_tokens & candidate_tokens), key)
+            for key, candidate_tokens in _club_strength_tokens().items()
+            if name_tokens & candidate_tokens
+        ]
+        if scored:
+            scored.sort(key=lambda item: item[0], reverse=True)
+            best_score = scored[0][0]
+            winners = [key for score, key in scored if score == best_score]
+            if len(winners) == 1:
+                return _CLUB_STRENGTH[winners[0]]
+    # Alt-dizi (substring) son çare — yukarıdaki token eşleşmesi hiçbir aday bulamadıysa
+    # (ör. tamamen kısa/tek kelimelik adlar) eski davranış korunur.
     for k, v in _CLUB_STRENGTH.items():
         if k.lower() in name.lower() or name.lower() in k.lower():
             return v

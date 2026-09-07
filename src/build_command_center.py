@@ -209,8 +209,8 @@ def build_html(payload: dict) -> str:
     <nav class="topnav">{nav_links_html("football_intelligence_home.html")}</nav>
   </div>
   <header>
-    <div><h1>Analiz merkezi</h1>
-    <p>Süper Lig tahmin kontrolü, gol adayı performansı, transfer radar ve scout kararlarını aynı operasyon yüzünde incele.</p></div>
+    <div><h1>Analiz merkezi <span style="color:#cde94e;font-size:16px;font-weight:700">2025-26 Arşiv</span></h1>
+    <p>Süper Lig tahmin kontrolü, gol adayı performansı, transfer radar ve scout kararlarını aynı operasyon yüzünde incele. Tamamlanmış 2025-26 sezonu backtest verisine dayanır — güncel 2026-27 tahminleri için <a href="season_fixture_predictions_2026_2027.html" style="color:#cde94e">Fikstür &amp; Tahmin</a>'e bakın.</p></div>
   </header>
   <main>
     <div class="links">
