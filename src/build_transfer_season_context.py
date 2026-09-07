@@ -143,6 +143,7 @@ def _header_section() -> str:
 <div style='background:#091810;border-radius:12px;padding:24px 32px;margin-bottom:24px;'>
   <h1 style='color:#fff;margin:0 0 8px 0;font-size:24px;'>Transfer Sezonu Bağlam Raporu</h1>
   <p style='color:#8fa89a;margin:0;font-size:13px;'>{TRANSFER_WATCH_SEASON_LABEL} · Yaz Penceresi: {WINDOW_OPEN} – {WINDOW_CLOSE} · Güncelleme: {now}</p>
+  <p style='color:#5e7a6b;margin:8px 0 0 0;font-size:11.5px;line-height:1.5;'>Oyuncu havuzu 2025-26 TFF profil arşivine dayanır, güncel kulüp/sözleşme bilgisiyle zenginleştirilir — bu yaz Süper Lig'e ilk kez gelen (2025-26'da hiç oynamamış) transferler henüz bu listede yer almıyor.</p>
 </div>
 """
 
