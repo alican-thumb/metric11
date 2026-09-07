@@ -10,6 +10,27 @@ from src.config import PROCESSED_DIR, ROOT_DIR
 from src.html_utils import nav_links_html
 
 CURRENT_CLUBS_PATH = ROOT_DIR / "data" / "manual" / "transfermarkt_super_lig_clubs.json"
+CURRENT_SEASON_FORM_PATH = PROCESSED_DIR / "domestic_league_form_2026_2027.json"
+CURRENT_SEASON_MIN_PLAYED = 3  # bundan az maçla puan/gol ortalaması gürültülü — 2025-26'ya düş
+
+
+def _current_season_team_form() -> dict[str, dict]:
+    """2026-27 sezonunun ŞİMDİYE KADAR oynanan maçlarından güncel puan/gol formu
+    (bkz. `collect_domestic_league_form.py::_load_turkish_standings`, resmi TM adıyla
+    anahtarlı). `team_scout_blueprints` daha önce SADECE 2025-26 sezonu istatistiklerini
+    (`league_intelligence_2025_2026.json`) kullanıyordu — kadro/oyuncu verisi güncel
+    olsa bile "Transfer Aciliyet Sıralaması" bir sezon önceki performansa dayanıyordu
+    (2026-09-08 kullanıcı bulgusu: "Scout & Transfer Merkezi" sayfası aşırı eski).
+    """
+    try:
+        payload = json.loads(CURRENT_SEASON_FORM_PATH.read_text(encoding="utf-8"))
+    except (FileNotFoundError, json.JSONDecodeError):
+        return {}
+    return {
+        name: row
+        for name, row in payload.get("teams", {}).items()
+        if row.get("league") == "TR1" and row.get("played", 0) >= CURRENT_SEASON_MIN_PLAYED
+    }
 
 
 def _current_super_lig_teams() -> set[str]:
@@ -134,12 +155,22 @@ def build_payload(
     role_candidates = build_role_candidate_index(position_matrix, fm_scout, league, profile_index, role_overrides or {})
     team_profiles = {item["team"]: item for item in league.get("team_profiles", [])}
     current_teams = _current_super_lig_teams()
+    current_form = _current_season_team_form()
     blueprints = []
     for weakness in league.get("team_weaknesses", []):
         team = weakness["team"]
         if current_teams and team not in current_teams:
             continue  # 2025/26'da oynadı ama küme düştü — 2026-27 transfer planlamasının dışında
-        profile = team_profiles.get(team, {})
+        profile = dict(team_profiles.get(team, {}))
+        form_row = current_form.get(team)
+        if form_row:
+            # Puan/gol ortalamasını GÜNCEL 2026-27 sezonuyla değiştir (bkz.
+            # _current_season_team_form docstring) — overall_power_score, kart/oyuncu
+            # yük etiketleri gibi tam-sezon-gerektiren alanlar 2025-26'dan kalıyor.
+            profile["points_per_match"] = form_row["points_per_game"]
+            profile["goals_for_per_match"] = form_row["goals_for_per_match"]
+            profile["goals_against_per_match"] = form_row["goals_against_per_match"]
+            profile["current_season_matches_played"] = form_row["played"]
         required_roles = roles_for_weaknesses(weakness.get("weaknesses", []))
         role_plans = []
         for role_key in required_roles[:4]:
@@ -165,6 +196,7 @@ def build_payload(
                 "cards_for_per_match": profile.get("cards_for_per_match"),
                 "main_scoring_window": profile.get("main_scoring_window"),
                 "main_conceding_window": profile.get("main_conceding_window"),
+                "current_season_matches_played": profile.get("current_season_matches_played"),
                 "weakness_count": weakness.get("weakness_count", 0),
                 "weaknesses": weakness.get("weaknesses", []),
                 "scout_need_hint": weakness.get("scout_need_hint"),
@@ -172,7 +204,10 @@ def build_payload(
                 "role_plans": role_plans,
             }
         )
-    # Yükselen takımlar: sezon verisi yok, ihtiyaç tahmini template'den
+    # Yükselen takımlar: 2025-26 sezon verisi yok (o zaman 1. Lig'deydiler) ama artık
+    # 2026-27'de birkaç maç oynadılar — mevcutsa GÜNCEL puan/gol formu kullanılır,
+    # zafiyet etiketi yine de "yeni lig takımı" şablonundan kalır (tam sezonluk zafiyet
+    # tespiti için henüz yetersiz örneklem).
     promoted_teams = {"ÇORUM FK", "ERZURUMSPOR FK", "AMED SFK"}
     existing_teams = {b["team"] for b in blueprints}
     for promo_team in promoted_teams:
@@ -191,15 +226,17 @@ def build_payload(
                     "reason": f"Süper Lig'e yeni çıkan takım; {ROLE_LABELS.get(role_key, role_key)} pozisyonunda deneyimli takviye kritik.",
                     "top_candidates": candidates,
                 })
+            promo_form = current_form.get(promo_team)
             blueprints.append({
                 "team": promo_team,
                 "overall_power_score": None,
-                "points_per_match": None,
-                "goals_for_per_match": None,
-                "goals_against_per_match": None,
+                "points_per_match": promo_form["points_per_game"] if promo_form else None,
+                "goals_for_per_match": promo_form["goals_for_per_match"] if promo_form else None,
+                "goals_against_per_match": promo_form["goals_against_per_match"] if promo_form else None,
                 "cards_for_per_match": None,
                 "main_scoring_window": None,
                 "main_conceding_window": None,
+                "current_season_matches_played": promo_form["played"] if promo_form else None,
                 "weakness_count": 4,
                 "weaknesses": [promo_weakness],
                 "scout_need_hint": "Süper Lig deneyimli kaleci, stoper ve santrfor takviyesi — serbest ajan ve kiralık öncelikli.",
