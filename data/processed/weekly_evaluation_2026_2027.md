@@ -4,18 +4,22 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 
 ## Genel Karne
 
-- Değerlendirilen maç: **30**
-- İsabet: **12/30** (%40)
-- Beraberlik yakalama: **0/6** (%0)
-- Yüksek güvenli maç isabeti: **5/11** (%45)
+- Değerlendirilen maç: **34**
+- İsabet: **13/34** (%38)
+- Beraberlik yakalama: **1/7** (%14)
+- Yüksek güvenli maç isabeti: **5/12** (%42)
 
-## Hafta 4 — 1/3 isabet (%33)
+## Hafta 4 — 2/7 isabet (%29)
 
 | Maç | Skor | Tahmin | Sonuç | Güven |
 | --- | --- | --- | --- | --- |
 | İSTANBUL BAŞAKŞEHİR FK - GALATASARAY A.Ş. | 2 - 3 | Deplasman | ✅ | LOW |
 | ERZURUMSPOR FK - TÜMOSAN KONYASPOR | 1 - 0 | Deplasman | ❌ | HIGH |
 | FENERBAHÇE A.Ş. - BEŞİKTAŞ A.Ş. | 1 - 2 | Ev | ❌ | MEDIUM |
+| KASIMPAŞA A.Ş. - AMED SPORTİF FAALİYETLER | 2 - 2 | Beraberlik | ✅ | LOW |
+| ARCA ÇORUM FK - EYÜPSPOR | 3 - 0 | Deplasman | ❌ | HIGH |
+| TRABZONSPOR A.Ş. - GENÇLERBİRLİĞİ | 5 - 0 | Deplasman | ❌ | LOW |
+| KOCAELİSPOR - SAMSUNSPOR A.Ş. | 1 - 0 | Deplasman | ❌ | LOW |
 
 ## Hafta 3 — 6/9 isabet (%67)
 
