@@ -269,11 +269,32 @@ def rule_based_analyze(article: dict, player_index: dict) -> dict:
                 news_types.append("transfer")
             transfer_players = [player for player in players if player.get("matched_in_title")]
             if not transfer_players:
-                current_club_surname_players = [
-                    player for player in players
-                    if player.get("_surname_in_title")
-                    and any(_same_club(player.get("current_club"), club) for club in title_clubs)
-                ]
+                current_club_surname_players = []
+                for player in players:
+                    if not player.get("_surname_in_title"):
+                        continue
+                    if not any(_same_club(player.get("current_club"), club) for club in title_clubs):
+                        continue
+                    name_parts = player["name"].split()
+                    if len(name_parts) < 2:
+                        continue
+                    first = normalize_name(name_parts[0])
+                    # Aynı soyisimli, indekslenmemiş başka bir oyuncuyu (ör. yeni/henüz
+                    # TFF'te oynamamış bir transfer) yanlışlıkla mevcut kadrodaki isimdaşıyla
+                    # eşleştirmeyi önler — metinde soyisimden hemen önce FARKLI bir ilk isim
+                    # geçiyorsa (örn. "Emre Demir" haberinde "Yiğit Efe Demir"i seçmek gibi)
+                    # bu adayı reddet. Bkz. PROJECT_STATE 2026-09-07: Alanyaspor'un "Emre
+                    # Demir" transferi yanlışlıkla Fenerbahçeli "Yiğit Efe Demir"e atfedilmişti.
+                    # ORİJİNAL (normalize edilmemiş) metin üzerinde arıyoruz: normalize_name
+                    # noktalama işaretlerini boşluğa çevirdiği için "başladı! Oulai" gibi bir
+                    # cümle sonu, normalize edilmiş halde "BASLADI OULAI" olup "Oulai"dan hemen
+                    # önce sahte bir "ilk isim" varmış gibi görünür. Ham metinde noktalama
+                    # bitişikliği bozduğu için bu yanlış pozitifi baştan engelliyor.
+                    preceding_words = re.findall(rf"(\w+)\s+{re.escape(name_parts[-1])}\b", text_orig, re.IGNORECASE)
+                    preceding_names = {normalize_name(w) for w in preceding_words}
+                    if preceding_names and first not in preceding_names:
+                        continue
+                    current_club_surname_players.append(player)
                 if len(current_club_surname_players) == 1:
                     transfer_players = current_club_surname_players
             candidate_clubs = list(title_clubs)

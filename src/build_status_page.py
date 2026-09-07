@@ -6,7 +6,8 @@ from datetime import datetime, timezone
 from html import escape
 from pathlib import Path
 
-from src.config import PROCESSED_DIR, SEASON
+from src.config import PROCESSED_DIR, SEASON, TRANSFER_WATCH_SEASON_LABEL
+from src.html_utils import nav_links_html
 
 
 def main() -> None:
@@ -207,15 +208,8 @@ def build_html(d: dict) -> str:
 </head>
 <body>
   <div class="topbar">
-    <a class="brand" href="football_intelligence_home.html"><span class="brand-mark">11</span> metric11 <span class="season">Süper Lig 2025/26</span></a>
-    <nav>
-      <a href="football_intelligence_home.html">Merkez</a>
-      <a href="football_command_center_2025_2026.html">Analiz</a>
-      <a href="besiktas_2025_2026_dashboard_chronological.html">Maç Önü</a>
-      <a href="transfer_recommendation_report_2025_2026.html">Scout</a>
-      <a href="all_teams_preview_dashboard_2025_2026.html">Lig</a>
-
-    </nav>
+    <a class="brand" href="/"><span class="brand-mark">11</span> metric11 <span class="season">Süper Lig {TRANSFER_WATCH_SEASON_LABEL}</span></a>
+    <nav class="topnav">{nav_links_html()}</nav>
   </div>
 
   <div class="wrap">

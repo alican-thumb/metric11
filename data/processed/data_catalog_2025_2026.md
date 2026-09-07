@@ -70,7 +70,7 @@
 - RSS haber kaydı: 236
 - Resmi kulüp web duyurusu: 31 | erişilebilir site=17/21 | durum=PARTIAL_SUCCESS
 - Haber analizine alınan içerik: 460
-- Transfer haber iddiası: 42 | resmi=2, çoklu kaynak=2, söylenti=16, inceleme gerekli=22
+- Transfer haber iddiası: 42 | resmi=1, çoklu kaynak=2, söylenti=15, inceleme gerekli=24
 - X gönderi snapshot'ı: 0 | başarılı hesap=0 | kaynak=x_api | durum=MISSING_CREDENTIALS
 - API-Football 2024 başarılı endpoint: 7
 - API-Football 2024 fikstür: 342
