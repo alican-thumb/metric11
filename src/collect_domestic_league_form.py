@@ -43,6 +43,8 @@ TURKISH_FIXTURES_PATH = PROCESSED_DIR / "tff_super_lig_fixtures_2026_2027.json"
 # katsayı tablosuyla değerlendiriliyordu, güncel sezon Süper Lig formu hiç yansımıyordu.
 # `_CLUB_STRENGTH` tablosundaki aynı kısa adlarla eşleşsin diye (substring eşleşme,
 # bkz. `_domestic_form_for`) TFF'nin resmi uzun adlarını kısa görünen ada çeviriyoruz.
+# Avrupa fikstüründeki (football-data.org) kısa/yaygın adlarla substring eşleşsin diye
+# yalnızca Avrupa kupasına katılma potansiyeli olan kulüpler için kısa görünen ad.
 _TURKISH_DISPLAY_NAME: dict[str, str] = {
     "GALATASARAY A.Ş.": "Galatasaray",
     "FENERBAHÇE A.Ş.": "Fenerbahçe",
@@ -53,10 +55,42 @@ _TURKISH_DISPLAY_NAME: dict[str, str] = {
     "KASIMPAŞA A.Ş.": "Kasımpaşa",
 }
 
+# TFF fikstüründeki ad -> aynı kulübün team_scout_blueprints/transfer raporlarındaki
+# RESMİ ad (data/manual/transfermarkt_super_lig_clubs.json ile birebir). Fikstür ve TM
+# dosyaları farklı sponsor/uzun ad varyantı kullanıyor; 2026-09-08 bulgusu — bu eşleme
+# olmadan `build_team_scout_blueprints.py` güncel sezon formuna hiç erişemiyordu, "Scout
+# & Transfer Merkezi" sayfası (kullanıcı raporu: "aşırı eski") tamamen 2025-26 sezonu
+# istatistiklerine (puan/maç, gol attı/yedi) dayanıyordu.
+_TURKISH_OFFICIAL_NAME: dict[str, str] = {
+    "BEŞİKTAŞ A.Ş.": "BEŞİKTAŞ A.Ş.",
+    "GALATASARAY A.Ş.": "GALATASARAY A.Ş.",
+    "FENERBAHÇE A.Ş.": "FENERBAHÇE A.Ş.",
+    "TRABZONSPOR A.Ş.": "TRABZONSPOR A.Ş.",
+    "İSTANBUL BAŞAKŞEHİR FK": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ",
+    "CORENDON ALANYASPOR": "CORENDON ALANYASPOR",
+    "SAMSUNSPOR A.Ş.": "SAMSUNSPOR A.Ş.",
+    "GÖZTEPE A.Ş.": "GÖZTEPE A.Ş.",
+    "TÜMOSAN KONYASPOR": "TÜMOSAN KONYASPOR",
+    "ÇAYKUR RİZESPOR A.Ş.": "ÇAYKUR RİZESPOR A.Ş.",
+    "GAZİANTEP FUTBOL KULÜBÜ A.Ş.": "GAZİANTEP FUTBOL KULÜBÜ A.Ş.",
+    "KASIMPAŞA A.Ş.": "KASIMPAŞA A.Ş.",
+    "KOCAELİSPOR": "KOCAELİSPOR",
+    "EYÜPSPOR": "İKAS EYÜPSPOR",
+    "GENÇLERBİRLİĞİ": "GENÇLERBİRLİĞİ",
+    "ARCA ÇORUM FK": "ÇORUM FK",
+    "ERZURUMSPOR FK": "ERZURUMSPOR FK",
+    "AMED SPORTİF FAALİYETLER": "AMED SFK",
+}
+
 
 def _load_turkish_standings() -> dict[str, dict]:
     """TFF fikstür dosyasından (zaten toplanmış, ağ çağrısı YOK) güncel Süper Lig
-    puan/gol formunu, football-data.org standings ile aynı şekle çevirir."""
+    puan/gol formunu, football-data.org standings ile aynı şekle çevirir.
+
+    Her takım için İKİ anahtar yazılır: kısa görünen ad (Avrupa modülünün substring
+    eşleşmesi için) + resmi TM adı (blueprint/transfer raporlarının doğrudan `team`
+    anahtarıyla eşleşmesi için) — aynı satırı gösterirler, tek doğru kaynak korunur.
+    """
     try:
         fixtures = json.loads(TURKISH_FIXTURES_PATH.read_text(encoding="utf-8"))
     except (FileNotFoundError, json.JSONDecodeError):
@@ -87,11 +121,10 @@ def _load_turkish_standings() -> dict[str, dict]:
 
     out: dict[str, dict] = {}
     for tff_name, row in agg.items():
-        display = _TURKISH_DISPLAY_NAME.get(tff_name)
-        if not display or row["played"] < 1:
+        if row["played"] < 1:
             continue
         played = row["played"]
-        out[display] = {
+        stat = {
             "league": "TR1",
             "played": played,
             "points": row["points"],
@@ -100,6 +133,11 @@ def _load_turkish_standings() -> dict[str, dict]:
             "goals_against_per_match": round(row["ga"] / played, 3),
             "position": None,
         }
+        display = _TURKISH_DISPLAY_NAME.get(tff_name)
+        if display:
+            out[display] = stat
+        official = _TURKISH_OFFICIAL_NAME.get(tff_name, tff_name)
+        out[official] = stat
     return out
 
 
