@@ -65,6 +65,13 @@ EXCLUDED_POSITION_GROUPS = {"GK"}  # kaleciler skorer sıralamasından hariç
 PROJECTED_POSITION_GROUPS = {"FWD", "MID"}  # 2025-26'da oynamamış (yeni transfer/yabancı) hücum oyuncuları için tahmini oran
 PROJECTED_VALUE_MULT_RANGE = (0.3, 3.0)  # piyasa değeri çarpanı sınırı (aşırı uç değerleri sınırlamak için)
 PROJECTED_UNVALUED_MULT = 0.5  # piyasa değeri bilinmeyen yeni transferler için varsayılan (ortalamanın altı) çarpan
+# 2026-09-08 bulgusu: oran SADECE 2025-26 tam sezonundan geliyordu — Vlahović gibi 2025-26'da
+# hiç oynamamış ama 2026-27'de 4 maçta 4 gol atan bir oyuncu, gerçek golcü formu tamamen
+# GÖRMEZDEN GELİNİP piyasa-değeri-bazlı jenerik "projected" orana düşürülüyordu. 2025-26'dan
+# daha kısa bir eşik (sezon henüz birkaç hafta) + gerçek 2025-26 oranıyla ağırlıklı harman.
+CURRENT_SEASON_MIN_STARTS = 2   # 2026-27 kısa sezon için MIN_STARTS'tan (3) daha gevşek eşik
+CURRENT_SEASON_BLEND_MAX_WEIGHT = 0.7  # güncel form, yeterince maç birikince en fazla %70 ağırlık alır
+CURRENT_SEASON_BLEND_STARTS_FOR_MAX = 8  # bu kadar 2026-27 başlangıçta tam ağırlığa ulaşır
 
 # TM kulüp adı fikstürdeki adla birebir örtüşmeyen kulüpler (NAME_ALIASES'a ek).
 _TM_EXTRA_ALIASES = {
@@ -167,6 +174,11 @@ def build_predictions() -> dict:
 
     hist = json.loads(HIST_PATH.read_text(encoding="utf-8"))
     goals, starts = build_player_goal_history(hist)
+    current_goals: dict[str, int] = {}
+    current_starts: dict[str, int] = {}
+    if CURRENT_SEASON_MATCHES_PATH.exists():
+        current_matches = json.loads(CURRENT_SEASON_MATCHES_PATH.read_text(encoding="utf-8"))
+        current_goals, current_starts = build_player_goal_history(current_matches)
     rosters = build_team_rosters()
     appeared_this_season = players_with_2026_27_appearance()
     live_lineups = load_live_lineup_names()
@@ -200,12 +212,39 @@ def build_predictions() -> dict:
             if allowed_names is not None and key not in allowed_names:
                 continue
             n_starts = starts.get(key, 0)
+            cur_starts = current_starts.get(key, 0)
+            cur_goals = current_goals.get(key, 0)
+            # Güncel form ağırlığı: 0 maçla 0, CURRENT_SEASON_BLEND_STARTS_FOR_MAX maçta tavana
+            # ulaşır — 2026-09-08 düzeltmesi öncesi yalnız 2025-26 sezonu kullanılıyordu (ör.
+            # Vlahović 2026-27'de 2 başlangıçta 4 gol atmışken tamamen görmezden geliniyordu).
+            # Az maçlı örneklemin gürültüsünü (2 maç 4 gol = ham oran 2.0, gerçekçi değil)
+            # bastırmak için HAM oran hiçbir zaman tek başına kullanılmıyor — her zaman bir
+            # taban orana (geçmiş sezon veya pozisyon ortalaması) karışık ağırlıkla eklenir.
+            cur_weight = min(CURRENT_SEASON_BLEND_MAX_WEIGHT, cur_starts / CURRENT_SEASON_BLEND_STARTS_FOR_MAX) if cur_starts > 0 else 0.0
+            cur_rate = (cur_goals / cur_starts) if cur_starts > 0 else 0.0
             if n_starts >= MIN_STARTS:
                 n_goals = goals.get(key, 0)
-                rated.append({"name": p.get("name"), "rate": n_goals / n_starts, "goals_2025_26": n_goals, "starts_2025_26": n_starts, "projected": False})
+                hist_rate = n_goals / n_starts
+                rate = hist_rate * (1 - cur_weight) + cur_rate * cur_weight
+                rated.append({
+                    "name": p.get("name"), "rate": rate, "goals_2025_26": n_goals, "starts_2025_26": n_starts,
+                    "goals_2026_27": cur_goals, "starts_2026_27": cur_starts, "projected": False,
+                })
                 continue
             pg = p.get("position_group")
             base_rate = pg_avg_rate.get(pg) if pg in PROJECTED_POSITION_GROUPS else None
+            if cur_starts >= CURRENT_SEASON_MIN_STARTS:
+                # 2025-26'da hiç oynamamış (yeni transfer/yabancı) ama 2026-27'de gerçek
+                # golcü formu birikmeye başlamış — pozisyon ortalamasıyla (taban, gürültüyü
+                # bastırır) harmanlanır; hâlâ "projected" değil çünkü artık GERÇEK maç verisi
+                # ağırlıklı belirleyici (cur_weight >= CURRENT_SEASON_MIN_STARTS/8).
+                fallback_rate = base_rate if base_rate else cur_rate
+                rate = fallback_rate * (1 - cur_weight) + cur_rate * cur_weight
+                rated.append({
+                    "name": p.get("name"), "rate": rate, "goals_2025_26": 0, "starts_2025_26": n_starts,
+                    "goals_2026_27": cur_goals, "starts_2026_27": cur_starts, "projected": False,
+                })
+                continue
             if not base_rate or key not in appeared_this_season:
                 continue
             mv = p.get("market_value_eur")
@@ -215,7 +254,10 @@ def build_predictions() -> dict:
                 mult = max(lo, min(hi, mv / avg_mv))
             else:
                 mult = PROJECTED_UNVALUED_MULT
-            rated.append({"name": p.get("name"), "rate": base_rate * mult, "goals_2025_26": 0, "starts_2025_26": n_starts, "projected": True})
+            rated.append({
+                "name": p.get("name"), "rate": base_rate * mult, "goals_2025_26": 0, "starts_2025_26": n_starts,
+                "goals_2026_27": cur_goals, "starts_2026_27": cur_starts, "projected": True,
+            })
         total_rate = sum(p["rate"] for p in rated)
         if total_rate <= 0 or lam is None:
             return []
@@ -230,6 +272,8 @@ def build_predictions() -> dict:
                 "scores_probability": round(1 - math.exp(-expected), 3),
                 "goals_2025_26": p["goals_2025_26"],
                 "starts_2025_26": p["starts_2025_26"],
+                "goals_2026_27": p.get("goals_2026_27", 0),
+                "starts_2026_27": p.get("starts_2026_27", 0),
                 "projected": p["projected"],
             })
         candidates.sort(key=lambda c: c["scores_probability"], reverse=True)
