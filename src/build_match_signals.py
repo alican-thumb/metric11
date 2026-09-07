@@ -20,6 +20,10 @@ from src.build_season_fixture_predictions import NAME_ALIASES
 
 FIXTURE_PATH = PROCESSED_DIR / "season_fixture_predictions_2026_2027.json"
 HIST_PATH = PROCESSED_DIR / "tff_trendyol_super_lig_2025_2026_matches.json"
+# 2026-09-08 düzeltmesi: kart/gol-bandı istatistikleri yalnızca tamamlanmış 2025-26
+# sezonundan geliyordu — bu sezonki oynanmış maçlar (artık kart verisi eksiksiz, bkz.
+# PROJECT_STATE'teki "kalıcı boş kadro/kart kaydı" düzeltmesi) havuza dahil edilmiyordu.
+CURRENT_HIST_PATH = PROCESSED_DIR / "tff_super_lig_matches_2026_2027.json"
 OUTPUT_PATH = PROCESSED_DIR / "match_signals_2026_2027.json"
 
 RED_CARD_TYPES = {"Kırmızı Kart", "Çift Sarı Kart"}
@@ -175,6 +179,8 @@ def build_signals() -> dict:
         return {"available": False, "matches": {}}
 
     hist = json.loads(HIST_PATH.read_text(encoding="utf-8"))
+    if CURRENT_HIST_PATH.exists():
+        hist = hist + json.loads(CURRENT_HIST_PATH.read_text(encoding="utf-8"))
     team_cards = build_team_card_stats(hist)
     ref_reds = build_referee_red_stats(hist)
     league_avg_cards = sum(s["cards_per_match"] for s in team_cards.values()) / len(team_cards)

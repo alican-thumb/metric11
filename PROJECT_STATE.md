@@ -2797,3 +2797,11 @@ Kullanıcı: "bu sayfa da aşırı eski... kaç kere dedim... hâlâ geçen sene
 - **Düzeltme:** `CURRENT_SEASON_MATCHES_PATH` (zaten tanımlıydı ama yalnızca "oynadı mı" kontrolü için kullanılıyordu) üzerinden 2026-27 gol/başlangıç sayısı da hesaplanıyor. Ham güncel oran TEK BAŞINA asla kullanılmıyor (2 maçta 4 gol = 2.0 ham oran, küçük örneklem gürültüsü) — her zaman bir taban orana (2025-26 gerçek oranı VEYA hiç yoksa pozisyon ortalaması) `cur_starts/8` ile en fazla %70'e kadar artan ağırlıkla karıştırılıyor. Vlahović: ilk denemede ham oranla %56 skor olasılığı çıktı, gürültü-bastırma sonrası %32'ye düzeldi — hâlâ yükselmiş (haklı olarak) ama abartısız.
 - **Doğrulama:** Formda olan/olmayan mevcut oyuncularda da mantıklı: İbrahim Kaya (2025-26'da 6/11 iyi oran ama 2026-27'de 0/3 soğuk) olasılığı geçmiş orandan aşağı çekiliyor; Efkan Bekiroğlu (2025-26'da 3/14 vasat ama 2026-27'de 1/2 sıcak) yukarı çekiliyor. `projected` bayrağı artık yalnızca HİÇ 2025-26 VE HİÇ 2026-27 (< 2 başlangıç) verisi olmayan oyuncular için true.
 - pytest 58/61 (aynı 3 bilinen hata). Tam pipeline çalıştırılıyor, deploy edilecek.
+
+### 2026-09-08 (devam 9) — Maç sinyalleri (kart/gol bandı) de aynı 2025-26-only kalıbındaydı, düzeltildi
+
+Golcü tahmini fix'inin hemen ardından aynı kalıbı `build_match_signals.py`'de de buldum: takım kart ortalaması, hakem kırmızı kart oranı ve gol dakika-bandı dağılımları SADECE `tff_trendyol_super_lig_2025_2026_matches.json`'dan (tamamlanmış sezon) hesaplanıyordu — bu sezon oynanmış 34 maç (artık kart verisi eksiksiz, bkz. yukarıdaki "kalıcı boş kadro/kart" düzeltmesi) havuza hiç girmiyordu.
+
+- **Düzeltme:** Basit/düşük riskli — golcü fix'inden farklı olarak burada ağırlıklı harman yerine sadece 2026-27 maçları `hist` listesine EKLENDİ (havuzu büyütmek, kart/gol-bandı ortalaması gibi toplu istatistikler için ağırlıklı harmandan daha az riskli ve yeterli). `_canon()` fonksiyonu zaten 2025-26/2026-27 isim farklarını (İstanbul Başakşehir FK ↔ Rams Başakşehir vb.) hizalıyordu, ek bir alias işi gerekmedi.
+- **Doğrulama:** Beşiktaş kart ortalaması 34 maç/2.32'den 38 maç/2.26'ya, Fenerbahçe 34/2.47'den 38/2.37'ye güncellendi — makul, küçük kaymalar.
+- pytest 58/61 (aynı 3 bilinen hata).
