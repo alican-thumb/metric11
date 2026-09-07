@@ -1,25 +1,18 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-09-07T21:06:35.978482+00:00
-Toplam ilgili haber: 25
+Üretim zamanı: 2026-09-07T21:33:46.840225+00:00
+Toplam ilgili haber: 18
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
-- [Fenerbahçe-Roma maç kadrosu ve muhtemel ilk 11'ler belli oldu!](https://www.aksam.com.tr/trend/fenerbahce-roma-mac-kadrosu-ve-muhtemel-ilk-11ler-belli-oldu/haber-1696552) — Aksam Spor · 2026-09-07T17:10:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [UEFA Şampiyonlar Ligi'nin enleri!](https://www.sabah.com.tr/spor/futbol/2026/09/07/uefa-sampiyonlar-liginin-enleri) — Sabah Spor · 2026-09-07T16:42:59+03:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe
 - [UEFA Şampiyonlar Ligi'nin "en"leri](https://www.aa.com.tr/tr/spor/uefa-sampiyonlar-liginin-enleri/4049685) — Anadolu Ajansı Spor · 2026-09-07T15:39:25+03:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe
-- [Fenerbahçe'de Roma maçının hazırlıkları sürüyor!](https://www.sabah.com.tr/spor/futbol/2026/09/07/fenerbahcede-roma-macinin-hazirliklari-suruyor) — Sabah Spor · 2026-09-07T15:14:33+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe, Roma maçı hazırlıklarına devam etti](https://www.cnnturk.com/spor/futbol/fenerbahce-roma-maci-hazirliklarina-devam-etti-3463900) — CNN Türk Spor · 2026-09-07T15:01:39+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Fenerbahçe'nin Roma maçı hazırlıkları sürüyor!](https://www.fotomac.com.tr/fenerbahce/2026/09/07/fenerbahcenin-roma-maci-hazirliklari-suruyor) — Fotomaç · 2026-09-07T15:01:27+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [FENERBAHÇE - ROMA MAÇI NE ZAMAN, HANGİ KANALDA, ŞİFRESİZ Mİ? Fenerbahçe maçı tarihi, canlı yayın kanalı ve maç saati](https://www.cnnturk.com/spor/futbol/fenerbahce-roma-maci-ne-zaman-hangi-kanalda-sifresiz-mi-fenerbahce-maci-tarihi-canli-yayin-kanali-ve-mac-saati-3463856) — CNN Türk Spor · 2026-09-07T13:56:26+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- [UEFA'dan Dusan Vlahovic paylaşımı](https://www.fotomac.com.tr/besiktas/2026/09/07/uefadan-dusan-vlahovic-paylasimi) — Fotomaç · 2026-09-07T13:49:01+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Fenerbahçe Roma maçının hazırlıklarına devam etti](https://www.hurriyet.com.tr/sporarena/fenerbahce-roma-macinin-hazirliklarina-devam-etti-43299075) — Hürriyet Spor · 2026-09-07T12:55:08+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- [UEFA'dan Muhammed Salah paylaşımı!](https://www.fotomac.com.tr/trabzonspor/2026/09/07/uefadan-muhammed-salah-paylasimi) — Fotomaç · 2026-09-07T12:48:06+03:00 · turnuva=ECL · kulüp=Trabzonspor
 - [UEFA Şampiyonlar Ligi'nde heyecan yarın başlıyor](https://www.aa.com.tr/tr/spor/uefa-sampiyonlar-liginde-heyecan-yarin-basliyor/4049457) — Anadolu Ajansı Spor · 2026-09-07T12:39:03+03:00 · turnuva=CL · kulüp=—
 - [Sporting-Galatasaray maçını Norveçli hakem Espen Eskas yönetecek](https://www.aa.com.tr/tr/spor/sporting-galatasaray-macini-norvecli-hakem-espen-eskas-yonetecek/4049456) — Anadolu Ajansı Spor · 2026-09-07T12:38:58+03:00 · turnuva=CL · kulüp=Galatasaray
 - [Sporting - Galatasaray maçının hakemi Eskas oldu](https://www.cnnturk.com/spor/futbol/sporting-galatasaray-macinin-hakemi-eskas-oldu-3463841) — CNN Türk Spor · 2026-09-07T12:14:23+00:00 · turnuva=CL · kulüp=Galatasaray
-- [Sporting CP-Galatasaray maçının hakemi açıklandı!](https://www.fotomac.com.tr/galatasaray/2026/09/07/sporting-cp-galatasaray-macinin-hakemi-aciklandi) — Fotomaç · 2026-09-07T12:08:09+03:00 · turnuva=CL · kulüp=Galatasaray
 - [UEFA Şampiyonlar Ligi'nde yeni sezon başlıyor](https://www.cnnturk.com/spor/futbol/uefa-sampiyonlar-liginde-yeni-sezon-basliyor-3463826) — CNN Türk Spor · 2026-09-07T11:04:11+00:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe
 - [Sporting-Galatasaray maçının hakemi açıklandı](https://www.hurriyet.com.tr/sporarena/sporting-galatasaray-macinin-hakemi-aciklandi-43298761) — Hürriyet Spor · 2026-09-07T09:25:27+00:00 · turnuva=CL · kulüp=Galatasaray
 - [UEFA Şampiyonlar Ligi'nde 2026/2027 sezonu başlayacak](https://www.hurriyet.com.tr/sporarena/uefa-sampiyonlar-liginde-2026-2027-sezonu-baslayacak-43298729) — Hürriyet Spor · 2026-09-07T08:57:12+00:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe
