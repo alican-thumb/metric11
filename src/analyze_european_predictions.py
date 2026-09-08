@@ -206,6 +206,13 @@ def _static_strength(name: str) -> float:
             winners = [key for score, key in scored if score == best_score]
             if len(winners) == 1:
                 return _CLUB_STRENGTH[winners[0]]
+            # 2026-09-08 kod incelemesi bulgusu: birden fazla aday eşit skorla eşleşirse
+            # (ör. yalnız "Milan" gelirse "AC Milan" ve "Inter Milan" ikisi de tek ortak
+            # tokenle eşleşir) eskiden aşağıdaki BAĞIMSIZ alt-dizi son çaresine düşülüyordu —
+            # bu, eşleşen adaylardan HİÇBİRİNE bakmadan kendi sözlük sırasına göre rastgele
+            # (ve yanlış olabilecek) bir kulüp seçebiliyordu. Belirsiz kalınca dürüstçe
+            # jenerik varsayılana düş — yanlış kesin bir kulüp seçmekten daha güvenli.
+            return _DEFAULT_STRENGTH
     # Alt-dizi (substring) son çare — yukarıdaki token eşleşmesi hiçbir aday bulamadıysa
     # (ör. tamamen kısa/tek kelimelik adlar) eski davranış korunur.
     for k, v in _CLUB_STRENGTH.items():

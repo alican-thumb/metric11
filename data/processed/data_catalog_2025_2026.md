@@ -17,12 +17,12 @@
 - Transfermarkt Süper Lig oyuncusu: 817
 - Transfermarkt Süper Lig toplam değer: €1,741,910,000
 - Transfermarkt oyuncu profil detayı/tam adı: 854/21
-- TFF / Transfermarkt doğrulanmış snapshot eşleşmesi: 530/859 (%62)
-- TFF / Transfermarkt doğrulanmış lig snapshot içi kapsama: 530/684 (%77.5)
+- TFF / Transfermarkt doğrulanmış snapshot eşleşmesi: 593/859 (%69)
+- TFF / Transfermarkt doğrulanmış lig snapshot içi kapsama: 593/724 (%81.9)
 - TFF / Transfermarkt manuel eşleme: 4 profil; ağ teyidi bekleyen 4
-- TFF / Transfermarkt manuel dahil kullanılabilir lig içi kapsama: 534/684 (%78.1)
-- TFF / Transfermarkt çözülmemiş kuyruğu: 325 profil; scout bloke eden 3
-- TFF / Transfermarkt yüksek kullanımlı çözülmemiş: 30 profil
+- TFF / Transfermarkt manuel dahil kullanılabilir lig içi kapsama: 597/724 (%82.5)
+- TFF / Transfermarkt çözülmemiş kuyruğu: 262 profil; scout bloke eden 0
+- TFF / Transfermarkt yüksek kullanımlı çözülmemiş: 18 profil
 - Beşiktaş maç önü raporu: 29
 - Tüm takım maç önü raporu: 522 (18 takım)
 - Gol adayı Top 3: %62
@@ -54,8 +54,8 @@
 - Lig istihbarat hakem profili: 29
 - Takım scout blueprint: 18 takım
 - Takım scout aday bağlantısı: 310
-- Scout düşük güven inceleme kuyruğu: 34
-- Scout tekil düşük güven oyuncu-rol: 4
+- Scout düşük güven inceleme kuyruğu: 0
+- Scout tekil düşük güven oyuncu-rol: 0
 - Scout fazla role yayılan oyuncu: 0
 - SQLite veri ambarı tablo sayısı: 15
 - SQLite veri ambarı toplam satır: 17402
@@ -83,7 +83,7 @@
 - API-Football 2024 derin oyuncu istatistik satırı: 60
 - API-Football 2024 derin birleşik oyuncu havuzu: 115
 - Manuel oyuncu alias kaydı: 28
-- Alias lig geneli TFF/Transfermarkt eşleşme oranı: %62
+- Alias lig geneli TFF/Transfermarkt eşleşme oranı: %69
 - Alias scout TFF/Dış API eşleşme oranı: %18
 
 ## Kaynaklar

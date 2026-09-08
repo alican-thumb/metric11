@@ -64,7 +64,7 @@
 
 <ul>
 <li>Ambar: <code>/Users/alicanakyol/Documents/analiz/data/processed/metric11_warehouse.sqlite</code></li>
-<li>Genel skor: 77.1/100</li>
+<li>Genel skor: 85.0/100</li>
 </ul>
 
 <h2>Kontroller</h2>
@@ -104,7 +104,7 @@
 <tr>
 <td>player_profiles</td>
 <td>tff_transfermarkt_in_scope_match_rate_pct</td>
-<td>matched=530, in_scope=684, pct=77.5</td>
+<td>matched=593, in_scope=724, pct=81.9</td>
 <td>⚠ İzle</td>
 <td>Yüksek</td>
 <td>Snapshot kapsamındaki eşleşmeyen oyuncular alias/transfer inceleme kuyruğunda doğrulanmadan piyasa değeri veya pozisyon olarak kullanılmamalı.</td>
@@ -120,9 +120,9 @@
 <tr>
 <td>scouting</td>
 <td>unmatched_players_blocking_scout_review</td>
-<td>3</td>
-<td>✗ Sorun</td>
-<td>Yüksek</td>
+<td>0</td>
+<td>✓</td>
+<td>Düşük</td>
 <td>Scout kuyruğunu bloke eden oyuncular için aynı kulüp Transfermarkt adı veya resmi profil doğrulanmalı; doğrulanmadan rol önerisi yayınlanmamalı.</td>
 </tr>
 <tr>
@@ -184,9 +184,9 @@
 <tr>
 <td>scouting</td>
 <td>low_position_confidence_pct</td>
-<td>low_confidence=34, total=310, pct=11.0</td>
-<td>⚠ İzle</td>
-<td>Yüksek</td>
+<td>low_confidence=0, total=310, pct=0.0</td>
+<td>✓</td>
+<td>Orta</td>
 <td>Düşük güvenli scout adayları doğrudan pozisyon, boy, ayak ve aksiyon verisiyle zenginleştirilmeli.</td>
 </tr>
 </tbody></table>
@@ -198,8 +198,6 @@
 <li><strong>Yüksek öncelik</strong> — model / draw_recall_pct: Beraberlik sadece çok yüksek risk ve dar olasılık farkında ekran tahminine çekilmeli; diğer durumlarda korumalı senaryo dili kullanılmalı.</li>
 <li><strong>Yüksek öncelik</strong> — player_profiles / manual_alias_pending_network_verification: Operasyonda kullanılan manuel pozisyon ve piyasa değeri eşlemeleri Transfermarkt profil bağlantısıyla doğrulanana kadar teyit bekliyor olarak gösterilmeli.</li>
 <li><strong>Yüksek öncelik</strong> — player_profiles / tff_transfermarkt_in_scope_match_rate_pct: Snapshot kapsamındaki eşleşmeyen oyuncular alias/transfer inceleme kuyruğunda doğrulanmadan piyasa değeri veya pozisyon olarak kullanılmamalı.</li>
-<li><strong>Yüksek öncelik</strong> — scouting / low_position_confidence_pct: Düşük güvenli scout adayları doğrudan pozisyon, boy, ayak ve aksiyon verisiyle zenginleştirilmeli.</li>
-<li><strong>Yüksek öncelik</strong> — scouting / unmatched_players_blocking_scout_review: Scout kuyruğunu bloke eden oyuncular için aynı kulüp Transfermarkt adı veya resmi profil doğrulanmalı; doğrulanmadan rol önerisi yayınlanmamalı.</li>
 <li><strong>Orta öncelik</strong> — goal_candidates / top_5_hit_pct: Aday tipleri ayrı backtest edilmeli: primary, penaltı, duran top/defans ve yedek etki.</li>
 <li><strong>Orta öncelik</strong> — goal_candidates / top_8_hit_pct: Aday tipleri ayrı backtest edilmeli: primary, penaltı, duran top/defans ve yedek etki.</li>
 </ul>
@@ -230,9 +228,8 @@
 <h2>Scout Pozisyon Güveni</h2>
 
 <ul>
-<li>MEDIUM_DERIVED_ROLE: 186</li>
+<li>MEDIUM_DERIVED_ROLE: 220</li>
 <li>HIGH: 58</li>
-<li>LOW_POSITION_UNVERIFIED: 34</li>
 <li>HIGH_EXTERNAL_PROFILE: 32</li>
 </ul>
 

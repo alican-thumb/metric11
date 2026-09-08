@@ -1,6 +1,6 @@
 {
   "warehouse": "/Users/alicanakyol/Documents/analiz/data/processed/metric11_warehouse.sqlite",
-  "score": 77.1,
+  "score": 85.0,
   "table_counts": {
     "data_quality_findings": 6,
     "data_sources": 5,
@@ -63,9 +63,9 @@
       "area": "player_profiles",
       "metric": "tff_transfermarkt_in_scope_match_rate_pct",
       "value": {
-        "matched": 530,
-        "in_scope": 684,
-        "pct": 77.5
+        "matched": 593,
+        "in_scope": 724,
+        "pct": 81.9
       },
       "status": "WATCH",
       "priority": "HIGH",
@@ -82,9 +82,9 @@
     {
       "area": "scouting",
       "metric": "unmatched_players_blocking_scout_review",
-      "value": 3,
-      "status": "FAIL",
-      "priority": "HIGH",
+      "value": 0,
+      "status": "PASS",
+      "priority": "LOW",
       "recommendation": "Scout kuyruğunu bloke eden oyuncular için aynı kulüp Transfermarkt adı veya resmi profil doğrulanmalı; doğrulanmadan rol önerisi yayınlanmamalı."
     },
     {
@@ -176,12 +176,12 @@
       "area": "scouting",
       "metric": "low_position_confidence_pct",
       "value": {
-        "low_confidence": 34,
+        "low_confidence": 0,
         "total": 310,
-        "pct": 11.0
+        "pct": 0.0
       },
-      "status": "WATCH",
-      "priority": "HIGH",
+      "status": "PASS",
+      "priority": "MEDIUM",
       "recommendation": "Düşük güvenli scout adayları doğrudan pozisyon, boy, ayak ve aksiyon verisiyle zenginleştirilmeli."
     }
   ],
@@ -209,18 +209,6 @@
       "area": "player_profiles",
       "metric": "tff_transfermarkt_in_scope_match_rate_pct",
       "recommendation": "Snapshot kapsamındaki eşleşmeyen oyuncular alias/transfer inceleme kuyruğunda doğrulanmadan piyasa değeri veya pozisyon olarak kullanılmamalı."
-    },
-    {
-      "priority": "HIGH",
-      "area": "scouting",
-      "metric": "low_position_confidence_pct",
-      "recommendation": "Düşük güvenli scout adayları doğrudan pozisyon, boy, ayak ve aksiyon verisiyle zenginleştirilmeli."
-    },
-    {
-      "priority": "HIGH",
-      "area": "scouting",
-      "metric": "unmatched_players_blocking_scout_review",
-      "recommendation": "Scout kuyruğunu bloke eden oyuncular için aynı kulüp Transfermarkt adı veya resmi profil doğrulanmalı; doğrulanmadan rol önerisi yayınlanmamalı."
     },
     {
       "priority": "MEDIUM",
@@ -307,15 +295,11 @@
   "scout_position_confidence": [
     {
       "position_confidence": "MEDIUM_DERIVED_ROLE",
-      "rows": 186
+      "rows": 220
     },
     {
       "position_confidence": "HIGH",
       "rows": 58
-    },
-    {
-      "position_confidence": "LOW_POSITION_UNVERIFIED",
-      "rows": 34
     },
     {
       "position_confidence": "HIGH_EXTERNAL_PROFILE",

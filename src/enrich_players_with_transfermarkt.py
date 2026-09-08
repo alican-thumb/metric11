@@ -213,12 +213,19 @@ def _find_manual_alias(player: dict, aliases: list[dict]) -> dict | None:
 
 def load_tff_profiles(preferred: Path, fallbacks: list[Path]) -> list[dict]:
     # 2026-09-08 düzeltmesi: eskiden preferred varsa fallback'ler HİÇ okunmuyordu (either/or) —
-    # preferred (lig geneli 2025-26 profil dosyası) neredeyse her zaman var olduğu için
-    # fallback'ler ölü kod gibi duruyordu. Artık preferred + var olan TÜM fallback'ler
-    # birleştiriliyor — bu, `tff_player_profiles_new_2026_2027.json` gibi (2026-27'ye ilk kez
-    # gelen oyuncular, bkz. PROJECT_STATE) SONRADAN eklenen ek profil dosyalarının otomatik
-    # olarak devreye girmesini sağlıyor.
-    paths = ([preferred] if preferred.exists() else []) + [path for path in fallbacks if path.exists()]
+    # preferred (lig geneli 2025-26 profil dosyası, HER GÜN yeniden üretiliyor) neredeyse her
+    # zaman var olduğu için fallback'ler ölü kod gibi duruyordu. Artık preferred + var olan TÜM
+    # fallback'ler birleştiriliyor — bu, `tff_player_profiles_new_2026_2027.json` gibi (2026-27'ye
+    # ilk kez gelen oyuncular, bkz. PROJECT_STATE) SONRADAN eklenen ek profil dosyalarının
+    # otomatik olarak devreye girmesini sağlıyor.
+    #
+    # SIRA ÖNEMLİ (2026-09-08, kod incelemesinde bulundu): fallback'lerden ikisi
+    # (tff_player_profiles_all_priority/besiktas_2025_2026.json) artık hiçbir pipeline
+    # komutu tarafından yeniden üretilmiyor — Mayıs 2026'dan beri donuk. Önce fallback'ler
+    # sonra preferred işlenir ki ORTAK oyuncularda preferred (taze) alanları HER ZAMAN
+    # kazansın — aksi halde donuk bir fallback, preferred'daki güncel bir alanı (ör. bir
+    # oyuncunun kulüp/sözleşme değişikliği) sessizce eski değere geri döndürebilirdi.
+    paths = [path for path in fallbacks if path.exists()] + ([preferred] if preferred.exists() else [])
     if not paths:
         raise SystemExit(f"TFF dosyası bulunamadı: {preferred} veya fallback dosyaları")
     profiles: dict[str, dict] = {}

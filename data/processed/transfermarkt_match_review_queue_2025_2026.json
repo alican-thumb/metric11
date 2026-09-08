@@ -3,30 +3,29 @@
     "tff_profiles": 859,
     "tm_clubs": 18,
     "tm_players": 817,
-    "snapshot_in_scope_tff_profiles": 684,
-    "matched_profiles": 530,
-    "verified_matched_profiles": 530,
+    "snapshot_in_scope_tff_profiles": 724,
+    "matched_profiles": 593,
+    "verified_matched_profiles": 593,
     "manual_alias_mapped_profiles": 4,
     "manual_alias_pending_network_verification": 4,
-    "operationally_mapped_profiles": 534,
-    "operational_in_scope_mapped_profiles": 534,
-    "unmatched_profiles": 325,
-    "overall_match_rate": 0.617,
-    "in_scope_match_rate": 0.775,
-    "operational_mapping_rate": 0.622,
-    "operational_in_scope_mapping_rate": 0.781,
-    "scout_blocking_unmatched": 3,
+    "operationally_mapped_profiles": 597,
+    "operational_in_scope_mapped_profiles": 597,
+    "unmatched_profiles": 262,
+    "overall_match_rate": 0.69,
+    "in_scope_match_rate": 0.819,
+    "operational_mapping_rate": 0.695,
+    "operational_in_scope_mapping_rate": 0.825,
+    "scout_blocking_unmatched": 0,
     "category_counts": {
-      "OUT_OF_SNAPSHOT_CLUB": 175,
-      "POSSIBLE_TRANSFER_OR_CLUB_MISMATCH": 24,
-      "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 123,
-      "SAME_CLUB_NAME_REVIEW": 3
+      "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 122,
+      "SAME_CLUB_NAME_REVIEW": 3,
+      "POSSIBLE_TRANSFER_OR_CLUB_MISMATCH": 2,
+      "OUT_OF_SNAPSHOT_CLUB": 135
     },
     "review_tier_counts": {
-      "SCOUT_BLOCKING": 3,
-      "HIGH_USAGE_UNRESOLVED": 30,
-      "ROTATION_USAGE_UNRESOLVED": 23,
-      "OUT_OF_SNAPSHOT": 172,
+      "HIGH_USAGE_UNRESOLVED": 18,
+      "ROTATION_USAGE_UNRESOLVED": 12,
+      "OUT_OF_SNAPSHOT": 135,
       "NO_MATCH_ACTIVITY": 97
     },
     "rule": "Doğrulanmış kapsama yalnız snapshot eşleşmesi girer; manuel alias kullanımı ayrı izlenir ve ağ teyidi tamamlanana kadar doğrulanmış sayılmaz."
@@ -34,42 +33,40 @@
   "team_coverage": [
     {
       "team": "BEŞİKTAŞ A.Ş.",
-      "tff_profiles": 48,
+      "tff_profiles": 50,
       "tm_players": 50,
-      "matched_profiles": 34,
+      "matched_profiles": 38,
       "manual_alias_mapped_profiles": 2,
-      "unmatched_profiles": 12,
-      "match_rate": 0.708,
-      "operational_mapping_rate": 0.75,
+      "unmatched_profiles": 10,
+      "match_rate": 0.76,
+      "operational_mapping_rate": 0.8,
       "categories": {
-        "POSSIBLE_TRANSFER_OR_CLUB_MISMATCH": 2,
         "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 8,
         "SAME_CLUB_NAME_REVIEW": 2
       }
     },
     {
       "team": "CORENDON ALANYASPOR",
-      "tff_profiles": 38,
+      "tff_profiles": 37,
       "tm_players": 37,
       "matched_profiles": 31,
       "manual_alias_mapped_profiles": 0,
-      "unmatched_profiles": 7,
-      "match_rate": 0.816,
-      "operational_mapping_rate": 0.816,
+      "unmatched_profiles": 6,
+      "match_rate": 0.838,
+      "operational_mapping_rate": 0.838,
       "categories": {
-        "POSSIBLE_TRANSFER_OR_CLUB_MISMATCH": 1,
         "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 6
       }
     },
     {
       "team": "FENERBAHÇE A.Ş.",
-      "tff_profiles": 46,
+      "tff_profiles": 44,
       "tm_players": 50,
-      "matched_profiles": 35,
+      "matched_profiles": 33,
       "manual_alias_mapped_profiles": 0,
       "unmatched_profiles": 11,
-      "match_rate": 0.761,
-      "operational_mapping_rate": 0.761,
+      "match_rate": 0.75,
+      "operational_mapping_rate": 0.75,
       "categories": {
         "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 10,
         "POSSIBLE_TRANSFER_OR_CLUB_MISMATCH": 1
@@ -90,50 +87,48 @@
     },
     {
       "team": "GAZİANTEP FUTBOL KULÜBÜ A.Ş.",
-      "tff_profiles": 40,
+      "tff_profiles": 41,
       "tm_players": 45,
-      "matched_profiles": 29,
+      "matched_profiles": 32,
       "manual_alias_mapped_profiles": 0,
-      "unmatched_profiles": 11,
-      "match_rate": 0.725,
-      "operational_mapping_rate": 0.725,
+      "unmatched_profiles": 9,
+      "match_rate": 0.78,
+      "operational_mapping_rate": 0.78,
       "categories": {
-        "POSSIBLE_TRANSFER_OR_CLUB_MISMATCH": 1,
-        "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 10
+        "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 9
       }
     },
     {
       "team": "GENÇLERBİRLİĞİ",
-      "tff_profiles": 39,
+      "tff_profiles": 41,
       "tm_players": 48,
-      "matched_profiles": 28,
+      "matched_profiles": 33,
       "manual_alias_mapped_profiles": 0,
-      "unmatched_profiles": 11,
-      "match_rate": 0.718,
-      "operational_mapping_rate": 0.718,
+      "unmatched_profiles": 8,
+      "match_rate": 0.805,
+      "operational_mapping_rate": 0.805,
       "categories": {
-        "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 8,
-        "POSSIBLE_TRANSFER_OR_CLUB_MISMATCH": 3
+        "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 8
       }
     },
     {
       "team": "GÖZTEPE A.Ş.",
-      "tff_profiles": 37,
+      "tff_profiles": 38,
       "tm_players": 36,
-      "matched_profiles": 24,
+      "matched_profiles": 25,
       "manual_alias_mapped_profiles": 1,
       "unmatched_profiles": 12,
-      "match_rate": 0.649,
-      "operational_mapping_rate": 0.676,
+      "match_rate": 0.658,
+      "operational_mapping_rate": 0.684,
       "categories": {
         "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 12
       }
     },
     {
       "team": "HESAP.COM ANTALYASPOR",
-      "tff_profiles": 28,
+      "tff_profiles": 29,
       "tm_players": 48,
-      "matched_profiles": 28,
+      "matched_profiles": 29,
       "manual_alias_mapped_profiles": 0,
       "unmatched_profiles": 0,
       "match_rate": 1.0,
@@ -144,52 +139,50 @@
       "team": "KASIMPAŞA A.Ş.",
       "tff_profiles": 47,
       "tm_players": 60,
-      "matched_profiles": 30,
+      "matched_profiles": 32,
       "manual_alias_mapped_profiles": 0,
-      "unmatched_profiles": 17,
-      "match_rate": 0.638,
-      "operational_mapping_rate": 0.638,
+      "unmatched_profiles": 15,
+      "match_rate": 0.681,
+      "operational_mapping_rate": 0.681,
       "categories": {
-        "POSSIBLE_TRANSFER_OR_CLUB_MISMATCH": 2,
         "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 15
       }
     },
     {
       "team": "KOCAELİSPOR",
-      "tff_profiles": 42,
+      "tff_profiles": 36,
       "tm_players": 39,
       "matched_profiles": 28,
       "manual_alias_mapped_profiles": 0,
-      "unmatched_profiles": 14,
-      "match_rate": 0.667,
-      "operational_mapping_rate": 0.667,
+      "unmatched_profiles": 8,
+      "match_rate": 0.778,
+      "operational_mapping_rate": 0.778,
       "categories": {
-        "POSSIBLE_TRANSFER_OR_CLUB_MISMATCH": 5,
-        "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 9
+        "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 8
       }
     },
     {
       "team": "MISIRLI.COM.TR FATİH KARAGÜMRÜK",
-      "tff_profiles": 36,
+      "tff_profiles": 38,
       "tm_players": 46,
-      "matched_profiles": 35,
+      "matched_profiles": 37,
       "manual_alias_mapped_profiles": 0,
       "unmatched_profiles": 1,
-      "match_rate": 0.972,
-      "operational_mapping_rate": 0.972,
+      "match_rate": 0.974,
+      "operational_mapping_rate": 0.974,
       "categories": {
         "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 1
       }
     },
     {
       "team": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ",
-      "tff_profiles": 7,
+      "tff_profiles": 28,
       "tm_players": 32,
-      "matched_profiles": 6,
+      "matched_profiles": 27,
       "manual_alias_mapped_profiles": 0,
       "unmatched_profiles": 1,
-      "match_rate": 0.857,
-      "operational_mapping_rate": 0.857,
+      "match_rate": 0.964,
+      "operational_mapping_rate": 0.964,
       "categories": {
         "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 1
       }
@@ -198,40 +191,38 @@
       "team": "SAMSUNSPOR A.Ş.",
       "tff_profiles": 41,
       "tm_players": 44,
-      "matched_profiles": 29,
+      "matched_profiles": 31,
       "manual_alias_mapped_profiles": 0,
-      "unmatched_profiles": 12,
-      "match_rate": 0.707,
-      "operational_mapping_rate": 0.707,
+      "unmatched_profiles": 10,
+      "match_rate": 0.756,
+      "operational_mapping_rate": 0.756,
       "categories": {
-        "POSSIBLE_TRANSFER_OR_CLUB_MISMATCH": 2,
         "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 9,
         "SAME_CLUB_NAME_REVIEW": 1
       }
     },
     {
       "team": "TRABZONSPOR A.Ş.",
-      "tff_profiles": 47,
+      "tff_profiles": 45,
       "tm_players": 42,
-      "matched_profiles": 33,
+      "matched_profiles": 34,
       "manual_alias_mapped_profiles": 1,
-      "unmatched_profiles": 13,
-      "match_rate": 0.702,
-      "operational_mapping_rate": 0.723,
+      "unmatched_profiles": 10,
+      "match_rate": 0.756,
+      "operational_mapping_rate": 0.778,
       "categories": {
-        "POSSIBLE_TRANSFER_OR_CLUB_MISMATCH": 3,
         "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 10
       }
     },
     {
       "team": "TÜMOSAN KONYASPOR",
-      "tff_profiles": 51,
+      "tff_profiles": 52,
       "tm_players": 48,
-      "matched_profiles": 39,
+      "matched_profiles": 40,
       "manual_alias_mapped_profiles": 0,
       "unmatched_profiles": 12,
-      "match_rate": 0.765,
-      "operational_mapping_rate": 0.765,
+      "match_rate": 0.769,
+      "operational_mapping_rate": 0.769,
       "categories": {
         "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 11,
         "POSSIBLE_TRANSFER_OR_CLUB_MISMATCH": 1
@@ -239,13 +230,13 @@
     },
     {
       "team": "ZECORNER KAYSERİSPOR",
-      "tff_profiles": 35,
+      "tff_profiles": 39,
       "tm_players": 51,
-      "matched_profiles": 34,
+      "matched_profiles": 38,
       "manual_alias_mapped_profiles": 0,
       "unmatched_profiles": 1,
-      "match_rate": 0.971,
-      "operational_mapping_rate": 0.971,
+      "match_rate": 0.974,
+      "operational_mapping_rate": 0.974,
       "categories": {
         "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 1
       }
@@ -254,405 +245,30 @@
       "team": "ÇAYKUR RİZESPOR A.Ş.",
       "tff_profiles": 39,
       "tm_players": 35,
-      "matched_profiles": 29,
+      "matched_profiles": 32,
       "manual_alias_mapped_profiles": 0,
-      "unmatched_profiles": 10,
-      "match_rate": 0.744,
-      "operational_mapping_rate": 0.744,
+      "unmatched_profiles": 7,
+      "match_rate": 0.821,
+      "operational_mapping_rate": 0.821,
       "categories": {
-        "POSSIBLE_TRANSFER_OR_CLUB_MISMATCH": 3,
         "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 7
       }
     },
     {
       "team": "İKAS EYÜPSPOR",
-      "tff_profiles": 20,
+      "tff_profiles": 36,
       "tm_players": 62,
-      "matched_profiles": 19,
+      "matched_profiles": 34,
       "manual_alias_mapped_profiles": 0,
-      "unmatched_profiles": 1,
-      "match_rate": 0.95,
-      "operational_mapping_rate": 0.95,
+      "unmatched_profiles": 2,
+      "match_rate": 0.944,
+      "operational_mapping_rate": 0.944,
       "categories": {
-        "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 1
+        "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 2
       }
     }
   ],
   "priority_queue": [
-    {
-      "player_id": "1021203",
-      "tff_name": "MUHAMMED ŞENGEZER",
-      "tff_club": "İSTANBUL BAŞAKŞEHİR FK",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 4,
-      "blocks_scout_review": true,
-      "review_tier": "SCOUT_BLOCKING",
-      "season_activity": {
-        "starts": 33,
-        "squad_inclusions": 33,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "2562580",
-      "tff_name": "JEROME OPOKU",
-      "tff_club": "İSTANBUL BAŞAKŞEHİR FK",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 4,
-      "blocks_scout_review": true,
-      "review_tier": "SCOUT_BLOCKING",
-      "season_activity": {
-        "starts": 31,
-        "squad_inclusions": 32,
-        "goals": 1
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "2217525",
-      "tff_name": "BERKAY ÖZCAN",
-      "tff_club": "İSTANBUL BAŞAKŞEHİR FK",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 4,
-      "blocks_scout_review": true,
-      "review_tier": "SCOUT_BLOCKING",
-      "season_activity": {
-        "starts": 26,
-        "squad_inclusions": 33,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "2312869",
-      "tff_name": "ÜMİT AKDAĞ",
-      "tff_club": "BEŞİKTAŞ A.Ş.",
-      "category": "POSSIBLE_TRANSFER_OR_CLUB_MISMATCH",
-      "priority_rank": 3,
-      "blocks_scout_review": false,
-      "review_tier": "HIGH_USAGE_UNRESOLVED",
-      "season_activity": {
-        "starts": 30,
-        "squad_inclusions": 31,
-        "goals": 1
-      },
-      "candidate": {
-        "tm_name": "Ümit Akdağ",
-        "tm_team_name": "CORENDON ALANYASPOR",
-        "tm_id": "958647",
-        "tm_position": "Centre-Back",
-        "tm_market_value_eur": 6000000,
-        "score": 1.0,
-        "common_tokens": [
-          "AKDAG",
-          "UMIT"
-        ]
-      },
-      "action": "Oyuncu adı başka snapshot kulübünde güçlü eşleşiyor; transfer doğrulanmadan otomatik bağlanmamalı."
-    },
-    {
-      "player_id": "867128",
-      "tff_name": "SAMET AKAYDİN",
-      "tff_club": "TRABZONSPOR A.Ş.",
-      "category": "POSSIBLE_TRANSFER_OR_CLUB_MISMATCH",
-      "priority_rank": 3,
-      "blocks_scout_review": false,
-      "review_tier": "HIGH_USAGE_UNRESOLVED",
-      "season_activity": {
-        "starts": 29,
-        "squad_inclusions": 29,
-        "goals": 3
-      },
-      "candidate": {
-        "tm_name": "Samet Akaydin",
-        "tm_team_name": "ÇAYKUR RİZESPOR A.Ş.",
-        "tm_id": "295024",
-        "tm_position": "Centre-Back",
-        "tm_market_value_eur": 1200000,
-        "score": 1.0,
-        "common_tokens": [
-          "AKAYDIN",
-          "SAMET"
-        ]
-      },
-      "action": "Oyuncu adı başka snapshot kulübünde güçlü eşleşiyor; transfer doğrulanmadan otomatik bağlanmamalı."
-    },
-    {
-      "player_id": "2294104",
-      "tff_name": "BİLAL BAYAZIT",
-      "tff_club": "SAMSUNSPOR A.Ş.",
-      "category": "POSSIBLE_TRANSFER_OR_CLUB_MISMATCH",
-      "priority_rank": 3,
-      "blocks_scout_review": false,
-      "review_tier": "HIGH_USAGE_UNRESOLVED",
-      "season_activity": {
-        "starts": 28,
-        "squad_inclusions": 31,
-        "goals": 1
-      },
-      "candidate": {
-        "tm_name": "Bilal Bayazıt",
-        "tm_team_name": "ZECORNER KAYSERİSPOR",
-        "tm_id": "361032",
-        "tm_position": "Goalkeeper",
-        "tm_market_value_eur": 1800000,
-        "score": 1.0,
-        "common_tokens": [
-          "BAYAZIT",
-          "BILAL"
-        ]
-      },
-      "action": "Oyuncu adı başka snapshot kulübünde güçlü eşleşiyor; transfer doğrulanmadan otomatik bağlanmamalı."
-    },
-    {
-      "player_id": "913017",
-      "tff_name": "METEHAN MİMAROĞLU",
-      "tff_club": "TRABZONSPOR A.Ş.",
-      "category": "POSSIBLE_TRANSFER_OR_CLUB_MISMATCH",
-      "priority_rank": 3,
-      "blocks_scout_review": false,
-      "review_tier": "HIGH_USAGE_UNRESOLVED",
-      "season_activity": {
-        "starts": 21,
-        "squad_inclusions": 33,
-        "goals": 6
-      },
-      "candidate": {
-        "tm_name": "Metehan Mimaroğlu",
-        "tm_team_name": "GENÇLERBİRLİĞİ",
-        "tm_id": "294100",
-        "tm_position": "Left Winger",
-        "tm_market_value_eur": 400000,
-        "score": 1.0,
-        "common_tokens": [
-          "METEHAN",
-          "MIMAROGLU"
-        ]
-      },
-      "action": "Oyuncu adı başka snapshot kulübünde güçlü eşleşiyor; transfer doğrulanmadan otomatik bağlanmamalı."
-    },
-    {
-      "player_id": "1562254",
-      "tff_name": "ZAFER GÖRGEN",
-      "tff_club": "ÇAYKUR RİZESPOR A.Ş.",
-      "category": "POSSIBLE_TRANSFER_OR_CLUB_MISMATCH",
-      "priority_rank": 3,
-      "blocks_scout_review": false,
-      "review_tier": "HIGH_USAGE_UNRESOLVED",
-      "season_activity": {
-        "starts": 20,
-        "squad_inclusions": 32,
-        "goals": 0
-      },
-      "candidate": {
-        "tm_name": "Zafer Görgen",
-        "tm_team_name": "GAZİANTEP FUTBOL KULÜBÜ A.Ş.",
-        "tm_id": "576566",
-        "tm_position": "Goalkeeper",
-        "tm_market_value_eur": 800000,
-        "score": 1.0,
-        "common_tokens": [
-          "GORGEN",
-          "ZAFER"
-        ]
-      },
-      "action": "Oyuncu adı başka snapshot kulübünde güçlü eşleşiyor; transfer doğrulanmadan otomatik bağlanmamalı."
-    },
-    {
-      "player_id": "1048516",
-      "tff_name": "MELİH KABASAKAL",
-      "tff_club": "TRABZONSPOR A.Ş.",
-      "category": "POSSIBLE_TRANSFER_OR_CLUB_MISMATCH",
-      "priority_rank": 3,
-      "blocks_scout_review": false,
-      "review_tier": "HIGH_USAGE_UNRESOLVED",
-      "season_activity": {
-        "starts": 18,
-        "squad_inclusions": 28,
-        "goals": 1
-      },
-      "candidate": {
-        "tm_name": "Melih Kabasakal",
-        "tm_team_name": "GAZİANTEP FUTBOL KULÜBÜ A.Ş.",
-        "tm_id": "275683",
-        "tm_position": "Defensive Midfield",
-        "tm_market_value_eur": 600000,
-        "score": 1.0,
-        "common_tokens": [
-          "KABASAKAL",
-          "MELIH"
-        ]
-      },
-      "action": "Oyuncu adı başka snapshot kulübünde güçlü eşleşiyor; transfer doğrulanmadan otomatik bağlanmamalı."
-    },
-    {
-      "player_id": "1432128",
-      "tff_name": "SERDAR DURSUN",
-      "tff_club": "GAZİANTEP FUTBOL KULÜBÜ A.Ş.",
-      "category": "POSSIBLE_TRANSFER_OR_CLUB_MISMATCH",
-      "priority_rank": 3,
-      "blocks_scout_review": false,
-      "review_tier": "HIGH_USAGE_UNRESOLVED",
-      "season_activity": {
-        "starts": 16,
-        "squad_inclusions": 29,
-        "goals": 6
-      },
-      "candidate": {
-        "tm_name": "Serdar Dursun",
-        "tm_team_name": "KOCAELİSPOR",
-        "tm_id": "80059",
-        "tm_position": "Centre-Forward",
-        "tm_market_value_eur": 250000,
-        "score": 1.0,
-        "common_tokens": [
-          "DURSUN",
-          "SERDAR"
-        ]
-      },
-      "action": "Oyuncu adı başka snapshot kulübünde güçlü eşleşiyor; transfer doğrulanmadan otomatik bağlanmamalı."
-    },
-    {
-      "player_id": "1366112",
-      "tff_name": "TAYYİP TALHA SANUÇ",
-      "tff_club": "ÇAYKUR RİZESPOR A.Ş.",
-      "category": "POSSIBLE_TRANSFER_OR_CLUB_MISMATCH",
-      "priority_rank": 3,
-      "blocks_scout_review": false,
-      "review_tier": "HIGH_USAGE_UNRESOLVED",
-      "season_activity": {
-        "starts": 16,
-        "squad_inclusions": 22,
-        "goals": 0
-      },
-      "candidate": {
-        "tm_name": "Tayyip Talha Sanuç",
-        "tm_team_name": "BEŞİKTAŞ A.Ş.",
-        "tm_id": "462772",
-        "tm_position": "Centre-Back",
-        "tm_market_value_eur": 1500000,
-        "score": 1.0,
-        "common_tokens": [
-          "SANUC",
-          "TALHA",
-          "TAYYIP"
-        ]
-      },
-      "action": "Oyuncu adı başka snapshot kulübünde güçlü eşleşiyor; transfer doğrulanmadan otomatik bağlanmamalı."
-    },
-    {
-      "player_id": "1725864",
-      "tff_name": "BARAN ALİ GEZEK",
-      "tff_club": "CORENDON ALANYASPOR",
-      "category": "POSSIBLE_TRANSFER_OR_CLUB_MISMATCH",
-      "priority_rank": 3,
-      "blocks_scout_review": false,
-      "review_tier": "HIGH_USAGE_UNRESOLVED",
-      "season_activity": {
-        "starts": 15,
-        "squad_inclusions": 22,
-        "goals": 0
-      },
-      "candidate": {
-        "tm_name": "Baran Gezek",
-        "tm_team_name": "İKAS EYÜPSPOR",
-        "tm_id": "988710",
-        "tm_position": "Defensive Midfield",
-        "tm_market_value_eur": 1500000,
-        "score": 0.846,
-        "common_tokens": [
-          "BARAN",
-          "GEZEK"
-        ]
-      },
-      "action": "Oyuncu adı başka snapshot kulübünde güçlü eşleşiyor; transfer doğrulanmadan otomatik bağlanmamalı."
-    },
-    {
-      "player_id": "1826853",
-      "tff_name": "GÜVEN YALÇIN",
-      "tff_club": "KASIMPAŞA A.Ş.",
-      "category": "POSSIBLE_TRANSFER_OR_CLUB_MISMATCH",
-      "priority_rank": 3,
-      "blocks_scout_review": false,
-      "review_tier": "HIGH_USAGE_UNRESOLVED",
-      "season_activity": {
-        "starts": 12,
-        "squad_inclusions": 30,
-        "goals": 8
-      },
-      "candidate": {
-        "tm_name": "Güven Yalçın",
-        "tm_team_name": "CORENDON ALANYASPOR",
-        "tm_id": "341019",
-        "tm_position": "Centre-Forward",
-        "tm_market_value_eur": 1000000,
-        "score": 1.0,
-        "common_tokens": [
-          "GUVEN",
-          "YALCIN"
-        ]
-      },
-      "action": "Oyuncu adı başka snapshot kulübünde güçlü eşleşiyor; transfer doğrulanmadan otomatik bağlanmamalı."
-    },
-    {
-      "player_id": "1539855",
-      "tff_name": "METEHAN ALTUNBAŞ",
-      "tff_club": "KOCAELİSPOR",
-      "category": "POSSIBLE_TRANSFER_OR_CLUB_MISMATCH",
-      "priority_rank": 3,
-      "blocks_scout_review": false,
-      "review_tier": "HIGH_USAGE_UNRESOLVED",
-      "season_activity": {
-        "starts": 12,
-        "squad_inclusions": 24,
-        "goals": 7
-      },
-      "candidate": {
-        "tm_name": "Metehan Altunbaş",
-        "tm_team_name": "İKAS EYÜPSPOR",
-        "tm_id": "621603",
-        "tm_position": "Centre-Forward",
-        "tm_market_value_eur": 2000000,
-        "score": 1.0,
-        "common_tokens": [
-          "ALTUNBAS",
-          "METEHAN"
-        ]
-      },
-      "action": "Oyuncu adı başka snapshot kulübünde güçlü eşleşiyor; transfer doğrulanmadan otomatik bağlanmamalı."
-    },
-    {
-      "player_id": "2828311",
-      "tff_name": "JESURUN RAK-SAKYI",
-      "tff_club": "KASIMPAŞA A.Ş.",
-      "category": "POSSIBLE_TRANSFER_OR_CLUB_MISMATCH",
-      "priority_rank": 3,
-      "blocks_scout_review": false,
-      "review_tier": "HIGH_USAGE_UNRESOLVED",
-      "season_activity": {
-        "starts": 11,
-        "squad_inclusions": 12,
-        "goals": 4
-      },
-      "candidate": {
-        "tm_name": "Jesurun Rak-Sakyi",
-        "tm_team_name": "ÇAYKUR RİZESPOR A.Ş.",
-        "tm_id": "586834",
-        "tm_position": "Right Winger",
-        "tm_market_value_eur": 6000000,
-        "score": 1.0,
-        "common_tokens": [
-          "JESURUN",
-          "RAK",
-          "SAKYI"
-        ]
-      },
-      "action": "Oyuncu adı başka snapshot kulübünde güçlü eşleşiyor; transfer doğrulanmadan otomatik bağlanmamalı."
-    },
     {
       "player_id": "2685880",
       "tff_name": "JUAN SANTOS DA SILVA",
@@ -808,6 +424,22 @@
       "action": "Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir."
     },
     {
+      "player_id": "2820934",
+      "tff_name": "LUCAS FELIPE CALEGARI",
+      "tff_club": "İKAS EYÜPSPOR",
+      "category": "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT",
+      "priority_rank": 4,
+      "blocks_scout_review": false,
+      "review_tier": "HIGH_USAGE_UNRESOLVED",
+      "season_activity": {
+        "starts": 19,
+        "squad_inclusions": 24,
+        "goals": 1
+      },
+      "candidate": null,
+      "action": "Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir."
+    },
+    {
       "player_id": "2820744",
       "tff_name": "ARCHIBALD NORMAN BROWN",
       "tff_club": "FENERBAHÇE A.Ş.",
@@ -898,22 +530,6 @@
       "action": "Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir."
     },
     {
-      "player_id": "2292522",
-      "tff_name": "BERKAN İSMAİL KUTLU",
-      "tff_club": "KOCAELİSPOR",
-      "category": "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT",
-      "priority_rank": 4,
-      "blocks_scout_review": false,
-      "review_tier": "HIGH_USAGE_UNRESOLVED",
-      "season_activity": {
-        "starts": 12,
-        "squad_inclusions": 27,
-        "goals": 2
-      },
-      "candidate": null,
-      "action": "Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir."
-    },
-    {
       "player_id": "2820741",
       "tff_name": "JOSAFAT WOODING MENDES",
       "tff_club": "SAMSUNSPOR A.Ş.",
@@ -988,169 +604,6 @@
       "action": "Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir."
     },
     {
-      "player_id": "1799966",
-      "tff_name": "EMİR ORTAKAYA",
-      "tff_club": "KOCAELİSPOR",
-      "category": "POSSIBLE_TRANSFER_OR_CLUB_MISMATCH",
-      "priority_rank": 3,
-      "blocks_scout_review": false,
-      "review_tier": "ROTATION_USAGE_UNRESOLVED",
-      "season_activity": {
-        "starts": 8,
-        "squad_inclusions": 34,
-        "goals": 0
-      },
-      "candidate": {
-        "tm_name": "Emir Ortakaya",
-        "tm_team_name": "ÇAYKUR RİZESPOR A.Ş.",
-        "tm_id": "727081",
-        "tm_position": "Centre-Back",
-        "tm_market_value_eur": 600000,
-        "score": 1.0,
-        "common_tokens": [
-          "EMIR",
-          "ORTAKAYA"
-        ]
-      },
-      "action": "Oyuncu adı başka snapshot kulübünde güçlü eşleşiyor; transfer doğrulanmadan otomatik bağlanmamalı."
-    },
-    {
-      "player_id": "1074861",
-      "tff_name": "İRFAN CAN EĞRİBAYAT",
-      "tff_club": "GENÇLERBİRLİĞİ",
-      "category": "POSSIBLE_TRANSFER_OR_CLUB_MISMATCH",
-      "priority_rank": 3,
-      "blocks_scout_review": false,
-      "review_tier": "ROTATION_USAGE_UNRESOLVED",
-      "season_activity": {
-        "starts": 6,
-        "squad_inclusions": 21,
-        "goals": 0
-      },
-      "candidate": {
-        "tm_name": "İrfan Can Eğribayat",
-        "tm_team_name": "FENERBAHÇE A.Ş.",
-        "tm_id": "322873",
-        "tm_position": "Goalkeeper",
-        "tm_market_value_eur": 1200000,
-        "score": 1.0,
-        "common_tokens": [
-          "CAN",
-          "EGRIBAYAT",
-          "IRFAN"
-        ]
-      },
-      "action": "Oyuncu adı başka snapshot kulübünde güçlü eşleşiyor; transfer doğrulanmadan otomatik bağlanmamalı."
-    },
-    {
-      "player_id": "884378",
-      "tff_name": "SALİH UÇAN",
-      "tff_club": "GENÇLERBİRLİĞİ",
-      "category": "POSSIBLE_TRANSFER_OR_CLUB_MISMATCH",
-      "priority_rank": 3,
-      "blocks_scout_review": false,
-      "review_tier": "ROTATION_USAGE_UNRESOLVED",
-      "season_activity": {
-        "starts": 5,
-        "squad_inclusions": 29,
-        "goals": 0
-      },
-      "candidate": {
-        "tm_name": "Salih Uçan",
-        "tm_team_name": "BEŞİKTAŞ A.Ş.",
-        "tm_id": "170838",
-        "tm_position": "Central Midfield",
-        "tm_market_value_eur": 800000,
-        "score": 1.0,
-        "common_tokens": [
-          "SALIH",
-          "UCAN"
-        ]
-      },
-      "action": "Oyuncu adı başka snapshot kulübünde güçlü eşleşiyor; transfer doğrulanmadan otomatik bağlanmamalı."
-    },
-    {
-      "player_id": "908175",
-      "tff_name": "ONURCAN PİRİ",
-      "tff_club": "KOCAELİSPOR",
-      "category": "POSSIBLE_TRANSFER_OR_CLUB_MISMATCH",
-      "priority_rank": 3,
-      "blocks_scout_review": false,
-      "review_tier": "ROTATION_USAGE_UNRESOLVED",
-      "season_activity": {
-        "starts": 4,
-        "squad_inclusions": 33,
-        "goals": 0
-      },
-      "candidate": {
-        "tm_name": "Onurcan Piri",
-        "tm_team_name": "ZECORNER KAYSERİSPOR",
-        "tm_id": "199470",
-        "tm_position": "Goalkeeper",
-        "tm_market_value_eur": 200000,
-        "score": 1.0,
-        "common_tokens": [
-          "ONURCAN",
-          "PIRI"
-        ]
-      },
-      "action": "Oyuncu adı başka snapshot kulübünde güçlü eşleşiyor; transfer doğrulanmadan otomatik bağlanmamalı."
-    },
-    {
-      "player_id": "2174557",
-      "tff_name": "SAMED ONUR",
-      "tff_club": "SAMSUNSPOR A.Ş.",
-      "category": "POSSIBLE_TRANSFER_OR_CLUB_MISMATCH",
-      "priority_rank": 3,
-      "blocks_scout_review": false,
-      "review_tier": "ROTATION_USAGE_UNRESOLVED",
-      "season_activity": {
-        "starts": 4,
-        "squad_inclusions": 34,
-        "goals": 0
-      },
-      "candidate": {
-        "tm_name": "Samed Onur",
-        "tm_team_name": "GENÇLERBİRLİĞİ",
-        "tm_id": "538864",
-        "tm_position": "Central Midfield",
-        "tm_market_value_eur": 700000,
-        "score": 1.0,
-        "common_tokens": [
-          "ONUR",
-          "SAMED"
-        ]
-      },
-      "action": "Oyuncu adı başka snapshot kulübünde güçlü eşleşiyor; transfer doğrulanmadan otomatik bağlanmamalı."
-    },
-    {
-      "player_id": "1587237",
-      "tff_name": "DOĞAN ALEMDAR",
-      "tff_club": "BEŞİKTAŞ A.Ş.",
-      "category": "POSSIBLE_TRANSFER_OR_CLUB_MISMATCH",
-      "priority_rank": 3,
-      "blocks_scout_review": false,
-      "review_tier": "ROTATION_USAGE_UNRESOLVED",
-      "season_activity": {
-        "starts": 0,
-        "squad_inclusions": 28,
-        "goals": 0
-      },
-      "candidate": {
-        "tm_name": "Doğan Alemdar",
-        "tm_team_name": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ",
-        "tm_id": "576033",
-        "tm_position": "Goalkeeper",
-        "tm_market_value_eur": 1500000,
-        "score": 1.0,
-        "common_tokens": [
-          "ALEMDAR",
-          "DOGAN"
-        ]
-      },
-      "action": "Oyuncu adı başka snapshot kulübünde güçlü eşleşiyor; transfer doğrulanmadan otomatik bağlanmamalı."
-    },
-    {
       "player_id": "2130825",
       "tff_name": "ALİ DEMİRBİLEK",
       "tff_club": "FENERBAHÇE A.Ş.",
@@ -1173,88 +626,6 @@
         "common_tokens": [
           "ALI",
           "DEMIRBILEK"
-        ]
-      },
-      "action": "Oyuncu adı başka snapshot kulübünde güçlü eşleşiyor; transfer doğrulanmadan otomatik bağlanmamalı."
-    },
-    {
-      "player_id": "1541465",
-      "tff_name": "METEHAN BALTACI",
-      "tff_club": "GENÇLERBİRLİĞİ",
-      "category": "POSSIBLE_TRANSFER_OR_CLUB_MISMATCH",
-      "priority_rank": 3,
-      "blocks_scout_review": false,
-      "review_tier": "ROTATION_USAGE_UNRESOLVED",
-      "season_activity": {
-        "starts": 0,
-        "squad_inclusions": 12,
-        "goals": 0
-      },
-      "candidate": {
-        "tm_name": "Metehan Baltacı",
-        "tm_team_name": "GALATASARAY A.Ş.",
-        "tm_id": "618869",
-        "tm_position": "Centre-Back",
-        "tm_market_value_eur": null,
-        "score": 1.0,
-        "common_tokens": [
-          "BALTACI",
-          "METEHAN"
-        ]
-      },
-      "action": "Oyuncu adı başka snapshot kulübünde güçlü eşleşiyor; transfer doğrulanmadan otomatik bağlanmamalı."
-    },
-    {
-      "player_id": "1965682",
-      "tff_name": "HAYDAR KARATAŞ",
-      "tff_club": "KOCAELİSPOR",
-      "category": "POSSIBLE_TRANSFER_OR_CLUB_MISMATCH",
-      "priority_rank": 3,
-      "blocks_scout_review": false,
-      "review_tier": "ROTATION_USAGE_UNRESOLVED",
-      "season_activity": {
-        "starts": 0,
-        "squad_inclusions": 2,
-        "goals": 0
-      },
-      "candidate": {
-        "tm_name": "Haydar Karataş",
-        "tm_team_name": "FENERBAHÇE A.Ş.",
-        "tm_id": "1243050",
-        "tm_position": "Left Winger",
-        "tm_market_value_eur": 100000,
-        "score": 1.0,
-        "common_tokens": [
-          "HAYDAR",
-          "KARATAS"
-        ]
-      },
-      "action": "Oyuncu adı başka snapshot kulübünde güçlü eşleşiyor; transfer doğrulanmadan otomatik bağlanmamalı."
-    },
-    {
-      "player_id": "1555402",
-      "tff_name": "UĞUR KAAN YILDIZ",
-      "tff_club": "KOCAELİSPOR",
-      "category": "POSSIBLE_TRANSFER_OR_CLUB_MISMATCH",
-      "priority_rank": 3,
-      "blocks_scout_review": false,
-      "review_tier": "ROTATION_USAGE_UNRESOLVED",
-      "season_activity": {
-        "starts": 0,
-        "squad_inclusions": 28,
-        "goals": 0
-      },
-      "candidate": {
-        "tm_name": "Uğur Kaan Yıldız",
-        "tm_team_name": "GÖZTEPE A.Ş.",
-        "tm_id": "700034",
-        "tm_position": "Right-Back",
-        "tm_market_value_eur": 600000,
-        "score": 1.0,
-        "common_tokens": [
-          "KAAN",
-          "UGUR",
-          "YILDIZ"
         ]
       },
       "action": "Oyuncu adı başka snapshot kulübünde güçlü eşleşiyor; transfer doğrulanmadan otomatik bağlanmamalı."
@@ -1285,49 +656,6 @@
         ]
       },
       "action": "Oyuncu adı başka snapshot kulübünde güçlü eşleşiyor; transfer doğrulanmadan otomatik bağlanmamalı."
-    },
-    {
-      "player_id": "2042328",
-      "tff_name": "AHMED KUTUCU",
-      "tff_club": "ÇAYKUR RİZESPOR A.Ş.",
-      "category": "POSSIBLE_TRANSFER_OR_CLUB_MISMATCH",
-      "priority_rank": 3,
-      "blocks_scout_review": false,
-      "review_tier": "ROTATION_USAGE_UNRESOLVED",
-      "season_activity": {
-        "starts": 0,
-        "squad_inclusions": 29,
-        "goals": 0
-      },
-      "candidate": {
-        "tm_name": "Ahmed Kutucu",
-        "tm_team_name": "GALATASARAY A.Ş.",
-        "tm_id": "452084",
-        "tm_position": "Left Winger",
-        "tm_market_value_eur": 3000000,
-        "score": 1.0,
-        "common_tokens": [
-          "AHMED",
-          "KUTUCU"
-        ]
-      },
-      "action": "Oyuncu adı başka snapshot kulübünde güçlü eşleşiyor; transfer doğrulanmadan otomatik bağlanmamalı."
-    },
-    {
-      "player_id": "2088215",
-      "tff_name": "HALİL İBRAHİM DERVİŞOĞLU",
-      "tff_club": "GAZİANTEP FUTBOL KULÜBÜ A.Ş.",
-      "category": "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT",
-      "priority_rank": 4,
-      "blocks_scout_review": false,
-      "review_tier": "ROTATION_USAGE_UNRESOLVED",
-      "season_activity": {
-        "starts": 7,
-        "squad_inclusions": 27,
-        "goals": 1
-      },
-      "candidate": null,
-      "action": "Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir."
     },
     {
       "player_id": "2689457",
@@ -1504,246 +832,6 @@
       "action": "Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir."
     },
     {
-      "player_id": "2820747",
-      "tff_name": "ELDOR SHOMURODOV",
-      "tff_club": "İSTANBUL BAŞAKŞEHİR FK",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 34,
-        "squad_inclusions": 34,
-        "goals": 22
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "2294101",
-      "tff_name": "MIGUEL FILIPE NUNES CARDOSO",
-      "tff_club": "ERZURUMSPOR FK",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 32,
-        "squad_inclusions": 32,
-        "goals": 2
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "2824649",
-      "tff_name": "HRVOJE SMOLCIC",
-      "tff_club": "ARCA ÇORUM FK",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 26,
-        "squad_inclusions": 27,
-        "goals": 1
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "2294103",
-      "tff_name": "OLIVER MICHEL KEMEN",
-      "tff_club": "İSTANBUL BAŞAKŞEHİR FK",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 26,
-        "squad_inclusions": 29,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "2167262",
-      "tff_name": "GÖKTAN GÜRPÜZ",
-      "tff_club": "ARCA ÇORUM FK",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 25,
-        "squad_inclusions": 32,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "2214981",
-      "tff_name": "UMUT GÜNEŞ",
-      "tff_club": "İSTANBUL BAŞAKŞEHİR FK",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 25,
-        "squad_inclusions": 34,
-        "goals": 1
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "2419656",
-      "tff_name": "NIHAD MUJAKIC",
-      "tff_club": "ERZURUMSPOR FK",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 24,
-        "squad_inclusions": 30,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "1556340",
-      "tff_name": "UMUT DİLAN BOZOK",
-      "tff_club": "İSTANBUL BAŞAKŞEHİR FK",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 23,
-        "squad_inclusions": 33,
-        "goals": 6
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "1053172",
-      "tff_name": "FURKAN SOYALP",
-      "tff_club": "AMED SPORTİF FAALİYETLER",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 22,
-        "squad_inclusions": 29,
-        "goals": 1
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "2755821",
-      "tff_name": "CHRİSTOPHER TEA DOMORAUD OPERI",
-      "tff_club": "İSTANBUL BAŞAKŞEHİR FK",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 22,
-        "squad_inclusions": 25,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "654953",
-      "tff_name": "ÖMER ALİ ŞAHİNER",
-      "tff_club": "İSTANBUL BAŞAKŞEHİR FK",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 22,
-        "squad_inclusions": 29,
-        "goals": 2
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "1179524",
-      "tff_name": "CENGİZ UMUT MERAŞ",
-      "tff_club": "AMED SPORTİF FAALİYETLER",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 20,
-        "squad_inclusions": 27,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "717596",
-      "tff_name": "MAHMUT ERTUĞRUL TAŞKIRAN",
-      "tff_club": "ERZURUMSPOR FK",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 20,
-        "squad_inclusions": 34,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "2821114",
-      "tff_name": "MARCOS FELIPE DE FREITAS MONTEIRO",
-      "tff_club": "ARCA ÇORUM FK",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 19,
-        "squad_inclusions": 31,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "2820934",
-      "tff_name": "LUCAS FELIPE CALEGARI",
-      "tff_club": "EYÜPSPOR",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 19,
-        "squad_inclusions": 24,
-        "goals": 1
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
       "player_id": "1822711",
       "tff_name": "ROBIN YALÇIN",
       "tff_club": "ALAGÖZ HOLDİNG IĞDIR FK",
@@ -1755,22 +843,6 @@
         "starts": 18,
         "squad_inclusions": 19,
         "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "2089857",
-      "tff_name": "YUSUF SARI",
-      "tff_club": "İSTANBUL BAŞAKŞEHİR FK",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 18,
-        "squad_inclusions": 23,
-        "goals": 1
       },
       "candidate": null,
       "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
@@ -1792,41 +864,9 @@
       "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
     },
     {
-      "player_id": "2828089",
-      "tff_name": "SAMUEL LEO BEAT BALLET",
-      "tff_club": "AMED SPORTİF FAALİYETLER",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 17,
-        "squad_inclusions": 26,
-        "goals": 5
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "959313",
-      "tff_name": "GÖKHAN SAZDAĞI",
-      "tff_club": "ARCA ÇORUM FK",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 17,
-        "squad_inclusions": 27,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
       "player_id": "1516438",
       "tff_name": "SERDAR GÜRLER",
-      "tff_club": "ALAGÖZ HOLDİNG IĞDIR FUTBOL KULÜBÜ",
+      "tff_club": "ARCA ÇORUM FK",
       "category": "OUT_OF_SNAPSHOT_CLUB",
       "priority_rank": 5,
       "blocks_scout_review": false,
@@ -1835,54 +875,6 @@
         "starts": 16,
         "squad_inclusions": 17,
         "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "2820758",
-      "tff_name": "DAVIE SELKE",
-      "tff_club": "İSTANBUL BAŞAKŞEHİR FK",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 15,
-        "squad_inclusions": 25,
-        "goals": 10
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "1506181",
-      "tff_name": "MUSTAFA BURAK BOZAN",
-      "tff_club": "AMED SPORTİF FAALİYETLER",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 14,
-        "squad_inclusions": 31,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "1087749",
-      "tff_name": "CENGİZ ÜNDER",
-      "tff_club": "ARCA ÇORUM FK",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 14,
-        "squad_inclusions": 30,
-        "goals": 5
       },
       "candidate": null,
       "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
@@ -1899,22 +891,6 @@
         "starts": 14,
         "squad_inclusions": 20,
         "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "2820875",
-      "tff_name": "ABBOSBEK FAYZULLAYEV",
-      "tff_club": "İSTANBUL BAŞAKŞEHİR FK",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 14,
-        "squad_inclusions": 22,
-        "goals": 3
       },
       "candidate": null,
       "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
@@ -1952,54 +928,6 @@
       "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
     },
     {
-      "player_id": "2292955",
-      "tff_name": "TALHA ÜLVAN",
-      "tff_club": "EYÜPSPOR",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 12,
-        "squad_inclusions": 34,
-        "goals": 2
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "1145571",
-      "tff_name": "BERAT AYBERK ÖZDEMİR",
-      "tff_club": "ARCA ÇORUM FK",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 10,
-        "squad_inclusions": 28,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "2554457",
-      "tff_name": "OUSSEYNOU BA",
-      "tff_club": "İSTANBUL BAŞAKŞEHİR FK",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 10,
-        "squad_inclusions": 29,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
       "player_id": "2820489",
       "tff_name": "CEM ÜSTÜNDAĞ",
       "tff_club": "AMED SPORTİF FAALİYETLER",
@@ -2016,70 +944,6 @@
       "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
     },
     {
-      "player_id": "2766741",
-      "tff_name": "FESTY OSEIWE EBOSELE",
-      "tff_club": "ERZURUMSPOR FK",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 9,
-        "squad_inclusions": 19,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "2879750",
-      "tff_name": "LENNY JEAN PIERRE PINTOR",
-      "tff_club": "EYÜPSPOR",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 9,
-        "squad_inclusions": 16,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "1134978",
-      "tff_name": "ERHAN ERENTÜRK",
-      "tff_club": "ARCA ÇORUM FK",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 7,
-        "squad_inclusions": 34,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "2770769",
-      "tff_name": "IVAN BRNIC",
-      "tff_club": "İSTANBUL BAŞAKŞEHİR FK",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 7,
-        "squad_inclusions": 34,
-        "goals": 4
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
       "player_id": "987571",
       "tff_name": "HALİL AKBUNAR",
       "tff_club": "BURSASPOR",
@@ -2091,38 +955,6 @@
         "starts": 6,
         "squad_inclusions": 15,
         "goals": 2
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "2879749",
-      "tff_name": "CHARLES ANDRE RAUX YAO",
-      "tff_club": "EYÜPSPOR",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 5,
-        "squad_inclusions": 17,
-        "goals": 2
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "1611609",
-      "tff_name": "BERTUĞ ÖZGÜR YILDIRIM",
-      "tff_club": "İSTANBUL BAŞAKŞEHİR FK",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 5,
-        "squad_inclusions": 23,
-        "goals": 7
       },
       "candidate": null,
       "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
@@ -2160,22 +992,6 @@
       "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
     },
     {
-      "player_id": "1616083",
-      "tff_name": "SEYFETTİN ANIL YAŞAR",
-      "tff_club": "EYÜPSPOR",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 4,
-        "squad_inclusions": 13,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
       "player_id": "2019190",
       "tff_name": "AARON CHRISTOPHER BILLY ONDELE APPINDANGOYE",
       "tff_club": "ÖZBELSAN SİVASSPOR",
@@ -2192,16 +1008,16 @@
       "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
     },
     {
-      "player_id": "2552446",
-      "tff_name": "JAKUB KALUZINSKI",
-      "tff_club": "İSTANBUL BAŞAKŞEHİR FK",
+      "player_id": "945473",
+      "tff_name": "GÖKHAN AKKAN",
+      "tff_club": "ÖZBELSAN SİVASSPOR",
       "category": "OUT_OF_SNAPSHOT_CLUB",
       "priority_rank": 5,
       "blocks_scout_review": false,
       "review_tier": "OUT_OF_SNAPSHOT",
       "season_activity": {
         "starts": 4,
-        "squad_inclusions": 28,
+        "squad_inclusions": 9,
         "goals": 0
       },
       "candidate": null,
@@ -2240,22 +1056,6 @@
       "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
     },
     {
-      "player_id": "2293096",
-      "tff_name": "YUSUF BARASI",
-      "tff_club": "EYÜPSPOR",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 3,
-        "squad_inclusions": 20,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
       "player_id": "1617820",
       "tff_name": "ARİF KOCAMAN",
       "tff_club": "SAKARYASPOR A.Ş.",
@@ -2288,16 +1088,16 @@
       "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
     },
     {
-      "player_id": "877168",
-      "tff_name": "ONUR ERGÜN",
-      "tff_club": "İSTANBUL BAŞAKŞEHİR FK",
+      "player_id": "1587762",
+      "tff_name": "ATAKAN MÜJDE",
+      "tff_club": "AMED SPORTİF FAALİYETLER",
       "category": "OUT_OF_SNAPSHOT_CLUB",
       "priority_rank": 5,
       "blocks_scout_review": false,
       "review_tier": "OUT_OF_SNAPSHOT",
       "season_activity": {
-        "starts": 3,
-        "squad_inclusions": 29,
+        "starts": 2,
+        "squad_inclusions": 19,
         "goals": 0
       },
       "candidate": null,
@@ -2307,22 +1107,6 @@
       "player_id": "2111004",
       "tff_name": "TARKAN SERBEST",
       "tff_club": "AMED SPORTİF FAALİYETLER",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 2,
-        "squad_inclusions": 16,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "1612907",
-      "tff_name": "SERDAR SAATÇI",
-      "tff_club": "ARCA ÇORUM FK",
       "category": "OUT_OF_SNAPSHOT_CLUB",
       "priority_rank": 5,
       "blocks_scout_review": false,
@@ -2384,32 +1168,16 @@
       "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
     },
     {
-      "player_id": "1837699",
-      "tff_name": "ARDA YAVUZ",
-      "tff_club": "EYÜPSPOR",
+      "player_id": "1742470",
+      "tff_name": "DENİZ DİLMEN",
+      "tff_club": "ATKO GRUP PENDİKSPOR FUTBOL A.Ş.",
       "category": "OUT_OF_SNAPSHOT_CLUB",
       "priority_rank": 5,
       "blocks_scout_review": false,
       "review_tier": "OUT_OF_SNAPSHOT",
       "season_activity": {
         "starts": 1,
-        "squad_inclusions": 12,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "2021942",
-      "tff_name": "TAHSİN BÜLBÜL",
-      "tff_club": "KIZILKAYA TARIM ŞANLIURFASPOR",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 1,
-        "squad_inclusions": 8,
+        "squad_inclusions": 2,
         "goals": 0
       },
       "candidate": null,
@@ -2432,6 +1200,22 @@
       "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
     },
     {
+      "player_id": "2820813",
+      "tff_name": "ENVER KULASIN",
+      "tff_club": "SMS GRUP SARIYERSPOR",
+      "category": "OUT_OF_SNAPSHOT_CLUB",
+      "priority_rank": 5,
+      "blocks_scout_review": false,
+      "review_tier": "OUT_OF_SNAPSHOT",
+      "season_activity": {
+        "starts": 1,
+        "squad_inclusions": 14,
+        "goals": 0
+      },
+      "candidate": null,
+      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
+    },
+    {
       "player_id": "2771255",
       "tff_name": "ALPER EMRE DEMİROL",
       "tff_club": "İMAJ ALTYAPI VAN SPOR FUTBOL KULÜBÜ",
@@ -2442,38 +1226,6 @@
       "season_activity": {
         "starts": 1,
         "squad_inclusions": 10,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "1742470",
-      "tff_name": "DENİZ DİLMEN",
-      "tff_club": "İSTANBUL BAŞAKŞEHİR FK",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 1,
-        "squad_inclusions": 2,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "1842053",
-      "tff_name": "HAMZA GÜRELER",
-      "tff_club": "İSTANBUL BAŞAKŞEHİR FK",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 1,
-        "squad_inclusions": 20,
         "goals": 0
       },
       "candidate": null,
@@ -2784,22 +1536,6 @@
       "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
     },
     {
-      "player_id": "1886981",
-      "tff_name": "TAYLAN UTKU AYDIN",
-      "tff_club": "ANKARA DEMİRSPOR",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 0,
-        "squad_inclusions": 29,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
       "player_id": "1928323",
       "tff_name": "AHMED ILDIZ",
       "tff_club": "ARCA ÇORUM FK",
@@ -3088,6 +1824,22 @@
       "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
     },
     {
+      "player_id": "1746344",
+      "tff_name": "HAMZA YİĞİT AKMAN",
+      "tff_club": "ATKO GRUP PENDİKSPOR FUTBOL A.Ş.",
+      "category": "OUT_OF_SNAPSHOT_CLUB",
+      "priority_rank": 5,
+      "blocks_scout_review": false,
+      "review_tier": "OUT_OF_SNAPSHOT",
+      "season_activity": {
+        "starts": 0,
+        "squad_inclusions": 4,
+        "goals": 0
+      },
+      "candidate": null,
+      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
+    },
+    {
       "player_id": "1615916",
       "tff_name": "POLAT YALDIR",
       "tff_club": "BATMAN PETROL SPOR A.Ş.",
@@ -3130,6 +1882,38 @@
       "season_activity": {
         "starts": 0,
         "squad_inclusions": 0,
+        "goals": 0
+      },
+      "candidate": null,
+      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
+    },
+    {
+      "player_id": "1839013",
+      "tff_name": "ARDA USLUOĞLU",
+      "tff_club": "BOLUSPOR",
+      "category": "OUT_OF_SNAPSHOT_CLUB",
+      "priority_rank": 5,
+      "blocks_scout_review": false,
+      "review_tier": "OUT_OF_SNAPSHOT",
+      "season_activity": {
+        "starts": 0,
+        "squad_inclusions": 1,
+        "goals": 0
+      },
+      "candidate": null,
+      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
+    },
+    {
+      "player_id": "1452298",
+      "tff_name": "ONUR ÖZTONGA",
+      "tff_club": "BOLUSPOR",
+      "category": "OUT_OF_SNAPSHOT_CLUB",
+      "priority_rank": 5,
+      "blocks_scout_review": false,
+      "review_tier": "OUT_OF_SNAPSHOT",
+      "season_activity": {
+        "starts": 0,
+        "squad_inclusions": 3,
         "goals": 0
       },
       "candidate": null,
@@ -3520,22 +2304,6 @@
       "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
     },
     {
-      "player_id": "1896175",
-      "tff_name": "BERHAN KUTLAY ŞATLI",
-      "tff_club": "EYÜPSPOR",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 0,
-        "squad_inclusions": 8,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
       "player_id": "2689540",
       "tff_name": "BILAL BOUTOBBA",
       "tff_club": "EYÜPSPOR",
@@ -3568,22 +2336,6 @@
       "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
     },
     {
-      "player_id": "2827987",
-      "tff_name": "CHRIST OTINIEL SADIA",
-      "tff_club": "EYÜPSPOR",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 0,
-        "squad_inclusions": 6,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
       "player_id": "2935152",
       "tff_name": "DAVID JOSE SOARES OLIVEIRA FURTADO DA COSTA",
       "tff_club": "EYÜPSPOR",
@@ -3594,38 +2346,6 @@
       "season_activity": {
         "starts": 0,
         "squad_inclusions": 0,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "1638358",
-      "tff_name": "EMRE BİLGİN",
-      "tff_club": "EYÜPSPOR",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 0,
-        "squad_inclusions": 11,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "1746344",
-      "tff_name": "HAMZA YİĞİT AKMAN",
-      "tff_club": "EYÜPSPOR",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 0,
-        "squad_inclusions": 4,
         "goals": 0
       },
       "candidate": null,
@@ -3680,22 +2400,6 @@
       "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
     },
     {
-      "player_id": "1936972",
-      "tff_name": "METE KAAN DEMİR",
-      "tff_club": "EYÜPSPOR",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 0,
-        "squad_inclusions": 2,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
       "player_id": "2935646",
       "tff_name": "SIMONE GIORDANO",
       "tff_club": "EYÜPSPOR",
@@ -3722,22 +2426,6 @@
       "season_activity": {
         "starts": 0,
         "squad_inclusions": 0,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "2142801",
-      "tff_name": "ÖMER AHMET CEYHAN",
-      "tff_club": "EYÜPSPOR",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 0,
-        "squad_inclusions": 4,
         "goals": 0
       },
       "candidate": null,
@@ -3872,22 +2560,6 @@
       "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
     },
     {
-      "player_id": "1730874",
-      "tff_name": "ENSAR KEMALOĞLU",
-      "tff_club": "METRO HOLDİNG KAYSERİSPOR",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 0,
-        "squad_inclusions": 14,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
       "player_id": "1020654",
       "tff_name": "MURAT CEM AKPINAR",
       "tff_club": "METRO HOLDİNG KAYSERİSPOR",
@@ -3920,6 +2592,22 @@
       "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
     },
     {
+      "player_id": "1965682",
+      "tff_name": "HAYDAR KARATAŞ",
+      "tff_club": "SAKARYASPOR A.Ş.",
+      "category": "OUT_OF_SNAPSHOT_CLUB",
+      "priority_rank": 5,
+      "blocks_scout_review": false,
+      "review_tier": "OUT_OF_SNAPSHOT",
+      "season_activity": {
+        "starts": 0,
+        "squad_inclusions": 2,
+        "goals": 0
+      },
+      "candidate": null,
+      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
+    },
+    {
       "player_id": "1389269",
       "tff_name": "MEHMET ATABERK DADAKDENİZ",
       "tff_club": "SAKARYASPOR A.Ş.",
@@ -3946,6 +2634,38 @@
       "season_activity": {
         "starts": 0,
         "squad_inclusions": 18,
+        "goals": 0
+      },
+      "candidate": null,
+      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
+    },
+    {
+      "player_id": "1936972",
+      "tff_name": "METE KAAN DEMİR",
+      "tff_club": "SAKARYASPOR A.Ş.",
+      "category": "OUT_OF_SNAPSHOT_CLUB",
+      "priority_rank": 5,
+      "blocks_scout_review": false,
+      "review_tier": "OUT_OF_SNAPSHOT",
+      "season_activity": {
+        "starts": 0,
+        "squad_inclusions": 2,
+        "goals": 0
+      },
+      "candidate": null,
+      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
+    },
+    {
+      "player_id": "1438077",
+      "tff_name": "MİRZA CİHAN",
+      "tff_club": "SAKARYASPOR A.Ş.",
+      "category": "OUT_OF_SNAPSHOT_CLUB",
+      "priority_rank": 5,
+      "blocks_scout_review": false,
+      "review_tier": "OUT_OF_SNAPSHOT",
+      "season_activity": {
+        "starts": 0,
+        "squad_inclusions": 4,
         "goals": 0
       },
       "candidate": null,
@@ -4016,6 +2736,22 @@
       "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
     },
     {
+      "player_id": "1780378",
+      "tff_name": "MERT FURKAN BAYRAM",
+      "tff_club": "SMS GRUP SARIYERSPOR",
+      "category": "OUT_OF_SNAPSHOT_CLUB",
+      "priority_rank": 5,
+      "blocks_scout_review": false,
+      "review_tier": "OUT_OF_SNAPSHOT",
+      "season_activity": {
+        "starts": 0,
+        "squad_inclusions": 3,
+        "goals": 0
+      },
+      "candidate": null,
+      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
+    },
+    {
       "player_id": "2099123",
       "tff_name": "MERT YILMAZ",
       "tff_club": "SİPAY BODRUM FK",
@@ -4058,6 +2794,22 @@
       "season_activity": {
         "starts": 0,
         "squad_inclusions": 0,
+        "goals": 0
+      },
+      "candidate": null,
+      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
+    },
+    {
+      "player_id": "1836772",
+      "tff_name": "MUSTAFA EGE BİLİM",
+      "tff_club": "YALOVA FK 77 SPOR KULÜBÜ",
+      "category": "OUT_OF_SNAPSHOT_CLUB",
+      "priority_rank": 5,
+      "blocks_scout_review": false,
+      "review_tier": "OUT_OF_SNAPSHOT",
+      "season_activity": {
+        "starts": 0,
+        "squad_inclusions": 6,
         "goals": 0
       },
       "candidate": null,
@@ -4202,22 +2954,6 @@
       "season_activity": {
         "starts": 0,
         "squad_inclusions": 0,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "111663",
-      "tff_name": "VOLKAN BABACAN",
-      "tff_club": "İSTANBUL BAŞAKŞEHİR FK",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 5,
-      "blocks_scout_review": false,
-      "review_tier": "OUT_OF_SNAPSHOT",
-      "season_activity": {
-        "starts": 0,
-        "squad_inclusions": 6,
         "goals": 0
       },
       "candidate": null,
@@ -6006,54 +4742,5 @@
       "action": "Manuel eşleme operasyonda kullanılıyor; Transfermarkt profil bağlantısı ile ağ teyidi bekleniyor."
     }
   ],
-  "scout_blocking_queue": [
-    {
-      "player_id": "1021203",
-      "tff_name": "MUHAMMED ŞENGEZER",
-      "tff_club": "İSTANBUL BAŞAKŞEHİR FK",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 4,
-      "blocks_scout_review": true,
-      "review_tier": "SCOUT_BLOCKING",
-      "season_activity": {
-        "starts": 33,
-        "squad_inclusions": 33,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "2562580",
-      "tff_name": "JEROME OPOKU",
-      "tff_club": "İSTANBUL BAŞAKŞEHİR FK",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 4,
-      "blocks_scout_review": true,
-      "review_tier": "SCOUT_BLOCKING",
-      "season_activity": {
-        "starts": 31,
-        "squad_inclusions": 32,
-        "goals": 1
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "2217525",
-      "tff_name": "BERKAY ÖZCAN",
-      "tff_club": "İSTANBUL BAŞAKŞEHİR FK",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 4,
-      "blocks_scout_review": true,
-      "review_tier": "SCOUT_BLOCKING",
-      "season_activity": {
-        "starts": 26,
-        "squad_inclusions": 33,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    }
-  ]
+  "scout_blocking_queue": []
 }
