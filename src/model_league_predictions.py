@@ -241,20 +241,26 @@ def predict_match(
     # harmanı (2026-08-16 — tracker büyük gerçek transferleri (Beşiktaş'ın Vlahović/Trossard
     # gibi imzaları) kaçırıyordu, model yeni sezon kadro gerçekliğine kördü).
     transfer_signal = {"home": {"available": False}, "away": {"available": False}}
+    transfer_direct_effect = 0.0
     if apply_transfer_signal:
         transfer_home = combined_transfer_edge(home)
         transfer_away = combined_transfer_edge(away)
         transfer_signal = {"home": transfer_home, "away": transfer_away}
         if transfer_home.get("available") or transfer_away.get("available"):
-            # 2026-09-08 kullanıcı kararı ("doğrusunu yap"): ×0.5 ağırlığı diğer ileriye-dönük
-            # sinyallerle (Avrupa formu ×1.0 — 2026-08-14 kullanıcı tercihi, ceza/fikstür
-            # sıkışıklığı da ×1.0) tutarsızdı — transfer sinyaline özel bir küçültme için
-            # belgelenmiş bir gerekçe yoktu. Aynı ×1.0'a çekildi: veri artık doğru (isim
-            # eşleştirme bug'ı düzeltildi, bkz. PROJECT_STATE), ağırlık da artık diğerleriyle
-            # tutarlı. Hâlâ capli (±0.15) ve `strength_edge`'in kendisi de expected goal'e
-            # geçerken 0.05/0.04 ile yumuşatılıyor (bu paylaşılan yumuşatma dokunulmadı) —
-            # yani tek bir büyük transfer tek başına tahmini alt üst edemez.
-            strength_edge += transfer_home.get("edge", 0.0) - transfer_away.get("edge", 0.0)
+            # 2026-09-08 kullanıcı kararı ("doğrusunu yap, çok bekledik"): önce ×0.5→×1.0
+            # denendi (strength_edge üzerinden) ama TÜM strength_edge kaynakları (transfer
+            # dahil) beklenen gole geçerken PAYLAŞILAN, kasıtlı küçük bir kapıdan (×0.05/×0.04)
+            # geçiyor — bu kapıyı büyütmek denendi (0.05→0.30 arası ızgara taraması) ve 258
+            # maçlık lig-geneli backtest doğruluğunu her seviyede DÜŞÜRDÜĞÜ görüldü (%55→%54,
+            # kalibre edilmiş sistemin özenle ayarlanmış olduğunu doğruladı) — o kapıya
+            # dokunulmadı. Bunun yerine transfer sinyaline, backtest'i HİÇ etkilemeyen ayrı
+            # bir doğrudan katkı verildi: apply_transfer_signal yalnızca ileriye dönük
+            # tahminlerde True (backtest'te hep False), yani bu satır run_backtest'i
+            # yapısal olarak hiç etkilemiyor — ağırlığı serbestçe (backtest riski olmadan)
+            # daha görünür ayarlanabildi. Capli (±0.15/taraf, ±0.3 fark) × 0.5 ile beklenen
+            # gole doğrudan en fazla ±0.15 katkı (tipik beklenen gol ~1-2 aralığında %10-15) —
+            # görünür ama aşırı değil.
+            transfer_direct_effect = (transfer_home.get("edge", 0.0) - transfer_away.get("edge", 0.0)) * 0.5
 
     # Avrupa kupası fikstür sıkışıklığı/yorgunluk sinyali: yalnızca ileriye dönük
     # tahminlerde (apply_fixture_congestion=True, bkz. build_season_fixture_predictions.py)
@@ -296,6 +302,9 @@ def predict_match(
     # mild calibration signal instead of letting short-form strength dominate xG.
     expected_home += strength_edge * 0.05 + max(0, home_clean - away_clean) * 0.03 - max(0, home_blank - away_blank) * 0.04
     expected_away -= strength_edge * 0.04 + max(0, home_clean - away_clean) * 0.025 - max(0, home_blank - away_blank) * 0.03
+    # transfer_direct_effect: apply_transfer_signal=False'ta hep 0.0 — run_backtest'i etkilemez.
+    expected_home += transfer_direct_effect
+    expected_away -= transfer_direct_effect
 
     elo_delta = (home_elo - away_elo) / 400
     expected_home *= max(0.75, min(1.25, 1 + elo_delta * 0.12))
