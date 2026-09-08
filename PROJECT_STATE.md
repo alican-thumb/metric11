@@ -2805,3 +2805,12 @@ Golcü tahmini fix'inin hemen ardından aynı kalıbı `build_match_signals.py`'
 - **Düzeltme:** Basit/düşük riskli — golcü fix'inden farklı olarak burada ağırlıklı harman yerine sadece 2026-27 maçları `hist` listesine EKLENDİ (havuzu büyütmek, kart/gol-bandı ortalaması gibi toplu istatistikler için ağırlıklı harmandan daha az riskli ve yeterli). `_canon()` fonksiyonu zaten 2025-26/2026-27 isim farklarını (İstanbul Başakşehir FK ↔ Rams Başakşehir vb.) hizalıyordu, ek bir alias işi gerekmedi.
 - **Doğrulama:** Beşiktaş kart ortalaması 34 maç/2.32'den 38 maç/2.26'ya, Fenerbahçe 34/2.47'den 38/2.37'ye güncellendi — makul, küçük kaymalar.
 - pytest 58/61 (aynı 3 bilinen hata).
+
+### 2026-09-08 (devam 10) — Kendi kendini gözden geçirme: golcü blend'inde 1 gerçek bug bulundu ve düzeltildi
+
+Kullanıcının "durma" demesi üzerine, bu oturumdaki 8 commit'lik src/ diff'ini (20 dosya, ~475 satır) satır satır tekrar okudum — hacim büyük olduğu için gözden kaçmış bir şey olabilir diye. Bulundu: `build_goal_scorer_predictions.py`'deki güncel-form blend'i, `PROJECTED_POSITION_GROUPS` (FWD/MID) dışındaki bir oyuncu (ör. bir stoper) 2025-26'da hiç oynamamış ama 2026-27'de birkaç maçta gol atmışsa, `base_rate` hiç yoktu ve kod sessizce HAM, dampinglenmeMİŞ güncel-sezon oranına düşüyordu — tam da önlemeye çalıştığım küçük-örneklem-gürültüsü sorununun kendisi. Somut örnek: Matej Maglica (DEF), 2 maçta 1 golle hiçbir bastırma olmadan golcü adayı listeleniyordu.
+
+- **Düzeltme:** Bu dal artık `base_rate` (yani FWD/MID pozisyonu) zorunlu ön koşul; yoksa tamamen hariç tutuluyor (bu, değişiklikten ÖNCEKİ orijinal davranışla aynı — savunma oyuncuları hiç golcü adayı olmuyordu).
+- **Doğrulama:** Maglica artık listede yok, Vlahović (FWD, geçerli base_rate) etkilenmedi.
+- Diğer büyük değişiklikler (`build_team_scout_blueprints.py`, `collect_domestic_league_form.py`, `preview/probability.py`, `html_utils.py`, `run_daily_pipeline.py`) tek tek okundu, başka sorun bulunmadı.
+- Bu oturumda bot ile 2. kez gerçek (auto-merge edilemeyen) merge çakışması oldu — hepsi `data/processed/` üretilmiş dosyalarında, kaynak kodda değil; `--ours` ile çözülüp ardından tam pipeline yeniden çalıştırıldı (59/59). pytest 58/61 (aynı 3 bilinen hata). Commit+push+deploy tamamlandı.
