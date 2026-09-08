@@ -135,9 +135,9 @@ NETWORK_COMMANDS = [
     ["python", "-m", "src.collect_transfermarkt_squad"],
     [
         "python", "-m", "src.collect_transfermarkt_league_squads",
-        "--clubs", "data/manual/transfermarkt_super_lig_clubs_2025_2026.json",
-        "--season-id", "2025",
-        "--output-prefix", "transfermarkt_super_lig_squads_2025_2026",
+        "--clubs", "data/manual/transfermarkt_super_lig_clubs.json",
+        "--season-id", "2026",
+        "--output-prefix", "transfermarkt_super_lig_squads_2026_2027",
         "--delay-seconds", "6",
     ],
     [
@@ -147,10 +147,10 @@ NETWORK_COMMANDS = [
     ],
     [
         "python", "-m", "src.detect_squad_changes",
-        "--squad-file", "data/processed/transfermarkt_super_lig_squads_2025_2026.json",
-        "--snapshot-dir", "data/raw/transfermarkt/squad_snapshots_2025_2026",
-        "--output", "data/processed/tm_squad_changes_2025_2026.json",
-        "--season", "2025_2026",
+        "--squad-file", "data/processed/transfermarkt_super_lig_squads_2026_2027.json",
+        "--snapshot-dir", "data/raw/transfermarkt/squad_snapshots_2026_2027",
+        "--output", "data/processed/tm_squad_changes_2026_2027.json",
+        "--season", "2026_2027",
     ],
     ["python", "-m", "src.collect_worldcup_fixtures"],
     ["python", "-m", "src.collect_european_fixtures"],
@@ -176,25 +176,6 @@ def main() -> None:
     commands = []
     if args.include_network:
         commands.extend(NETWORK_COMMANDS)
-        # 1 Haziran 2026'dan itibaren 2026/27 sezonu TM koleksiyonu devreye girer
-        today = datetime.now(timezone.utc).date()
-        if today >= datetime(2026, 6, 1, tzinfo=timezone.utc).date():
-            commands.extend([
-                [
-                    "python", "-m", "src.collect_transfermarkt_league_squads",
-                    "--clubs", "data/manual/transfermarkt_super_lig_clubs.json",
-                    "--season-id", "2026",
-                    "--output-prefix", "transfermarkt_super_lig_squads_2026_2027",
-                    "--delay-seconds", "6",
-                ],
-                [
-                    "python", "-m", "src.detect_squad_changes",
-                    "--squad-file", "data/processed/transfermarkt_super_lig_squads_2026_2027.json",
-                    "--snapshot-dir", "data/raw/transfermarkt/squad_snapshots_2026_2027",
-                    "--output", "data/processed/tm_squad_changes_2026_2027.json",
-                    "--season", "2026_2027",
-                ],
-            ])
     commands.extend(DEFAULT_COMMANDS)
 
     rows = []

@@ -15,9 +15,12 @@ class SeasonBoundaryTests(unittest.TestCase):
         self.assertIn("MISIRLI.COM.TR FATİH KARAGÜMRÜK", ALL_TEAMS)
         self.assertIn("HESAP.COM ANTALYASPOR", ALL_TEAMS)
         self.assertIn("ZECORNER KAYSERİSPOR", ALL_TEAMS)
-        self.assertNotIn("ÇORUM FK", ALL_TEAMS)
-        self.assertNotIn("ERZURUMSPOR FK", ALL_TEAMS)
-        self.assertNotIn("AMED SFK", ALL_TEAMS)
+        # 2026/27'ye yükselen takımlar artık gerçek maç verisine sahip
+        # (bkz. tff_super_lig_matches_2026_2027.json), bu yüzden preview
+        # rosterına dahil edilmeleri doğru davranış.
+        self.assertIn("ÇORUM FK", ALL_TEAMS)
+        self.assertIn("ERZURUMSPOR FK", ALL_TEAMS)
+        self.assertIn("AMED SFK", ALL_TEAMS)
 
     def test_network_tm_collection_writes_active_transfer_season_separately(self):
         collector = next(command for command in NETWORK_COMMANDS if "src.collect_transfermarkt_league_squads" in command)
@@ -47,11 +50,10 @@ class SeasonBoundaryTests(unittest.TestCase):
         command_modules = {" ".join(command) for command in NETWORK_COMMANDS}
         self.assertFalse(any("src.collect_news_twitter" in command for command in command_modules))
 
-    def test_live_transfer_tracker_labels_active_season_and_optional_x(self):
+    def test_live_transfer_tracker_labels_active_season(self):
         html = build_transfer_tracker.build_html([], build_transfer_tracker._build_summary([]))
 
         self.assertIn("Transfer Takip — 2026-2027", html)
-        self.assertIn("X sinyali yalnız yapılandırılmış erişim bulunduğunda değerlendirilir.", html)
         self.assertNotIn("Transfer Takip — 2025-2026", html)
 
 
