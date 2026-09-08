@@ -1,11 +1,14 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-09-08T00:24:28.405923+00:00
-Toplam ilgili haber: 18
+Üretim zamanı: 2026-09-08T04:35:49.891249+00:00
+Toplam ilgili haber: 21
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [UEFA'dan Muhammed Salah paylaşımı!](https://www.fotomac.com.tr/trabzonspor/2026/09/07/uefadan-muhammed-salah-paylasimi) — Fotomaç · 2026-09-08T00:19:44+03:00 · turnuva=ECL · kulüp=Trabzonspor
+- [UEFA'dan Dusan Vlahovic paylaşımı](https://www.fotomac.com.tr/besiktas/2026/09/07/uefadan-dusan-vlahovic-paylasimi) — Fotomaç · 2026-09-08T00:19:42+03:00 · turnuva=EL · kulüp=Beşiktaş
+- [Sporting CP-Galatasaray maçının hakemi açıklandı!](https://www.fotomac.com.tr/galatasaray/2026/09/07/sporting-cp-galatasaray-macinin-hakemi-aciklandi) — Fotomaç · 2026-09-08T00:19:40+03:00 · turnuva=CL · kulüp=Galatasaray
 - [UEFA Şampiyonlar Ligi'nin "en"leri](https://www.aa.com.tr/tr/spor/uefa-sampiyonlar-liginin-enleri/4049685) — Anadolu Ajansı Spor · 2026-09-07T15:39:25+03:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe
 - [Fenerbahçe, Roma maçı hazırlıklarına devam etti](https://www.cnnturk.com/spor/futbol/fenerbahce-roma-maci-hazirliklarina-devam-etti-3463900) — CNN Türk Spor · 2026-09-07T15:01:39+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [FENERBAHÇE - ROMA MAÇI NE ZAMAN, HANGİ KANALDA, ŞİFRESİZ Mİ? Fenerbahçe maçı tarihi, canlı yayın kanalı ve maç saati](https://www.cnnturk.com/spor/futbol/fenerbahce-roma-maci-ne-zaman-hangi-kanalda-sifresiz-mi-fenerbahce-maci-tarihi-canli-yayin-kanali-ve-mac-saati-3463856) — CNN Türk Spor · 2026-09-07T13:56:26+00:00 · turnuva=CL · kulüp=Fenerbahçe
