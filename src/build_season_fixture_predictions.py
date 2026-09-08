@@ -22,7 +22,7 @@ from src.model_league_predictions import (
     parse_tff_datetime,
     predict_match,
 )
-from src.normalization import normalize_matches
+from src.normalization import normalize_matches, normalize_team_name
 from src.html_utils import nav_links_html
 
 FIXTURE_PATH = PROCESSED_DIR / "tff_super_lig_fixtures_2026_2027.json"
@@ -45,7 +45,12 @@ _TR_MONTHS = ["", "Oca", "Şub", "Mar", "Nis", "May", "Haz", "Tem", "Ağu", "Eyl
 
 
 def _history_key(fixture_team_name: str) -> str:
-    return NAME_ALIASES.get(fixture_team_name, fixture_team_name)
+    # Fikstür dosyası bazen ham/sponsorlu adları kullanır (ör. "AMED SPORTİF
+    # FAALİYETLER"); global TEAM_ALIASES ile önce kanonik hale getirilmeli, yoksa
+    # `_rekeyed_2026_27_matches()`'ın normalize_matches ile ürettiği team_history
+    # anahtarıyla eşleşmez ve o takımın Elo/form'u hep varsayılana (1500) döner.
+    canonical = normalize_team_name(fixture_team_name) or fixture_team_name
+    return NAME_ALIASES.get(canonical, canonical)
 
 
 def _rekeyed_2026_27_matches() -> list[dict]:

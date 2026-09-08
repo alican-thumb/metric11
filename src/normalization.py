@@ -12,6 +12,7 @@ from src.config import ROOT_DIR
 TEAM_ALIASES = {
     "NATURA DÜNYASI GENÇLERBİRLİĞİ": "GENÇLERBİRLİĞİ",
     "FATİH KARAGÜMRÜK A.Ş.": "MISIRLI.COM.TR FATİH KARAGÜMRÜK",
+    "AMED SPORTİF FAALİYETLER": "AMED SFK",
 }
 
 LATIN_NAME_TRANSLATION = str.maketrans(
