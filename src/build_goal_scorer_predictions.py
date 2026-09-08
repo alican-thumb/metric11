@@ -233,13 +233,15 @@ def build_predictions() -> dict:
                 continue
             pg = p.get("position_group")
             base_rate = pg_avg_rate.get(pg) if pg in PROJECTED_POSITION_GROUPS else None
-            if cur_starts >= CURRENT_SEASON_MIN_STARTS:
+            if base_rate and cur_starts >= CURRENT_SEASON_MIN_STARTS:
                 # 2025-26'da hiç oynamamış (yeni transfer/yabancı) ama 2026-27'de gerçek
                 # golcü formu birikmeye başlamış — pozisyon ortalamasıyla (taban, gürültüyü
                 # bastırır) harmanlanır; hâlâ "projected" değil çünkü artık GERÇEK maç verisi
-                # ağırlıklı belirleyici (cur_weight >= CURRENT_SEASON_MIN_STARTS/8).
-                fallback_rate = base_rate if base_rate else cur_rate
-                rate = fallback_rate * (1 - cur_weight) + cur_rate * cur_weight
+                # ağırlıklı belirleyici (cur_weight >= CURRENT_SEASON_MIN_STARTS/8). `base_rate`
+                # zorunlu ön koşul (2026-09-08 düzeltmesi) — aksi halde savunma oyuncusu gibi
+                # PROJECTED_POSITION_GROUPS dışı biri için taban orana hiç sahip olmadan ham,
+                # dampinglenmeMİŞ güncel-sezon oranına düşülüyordu (küçük örneklem gürültüsü).
+                rate = base_rate * (1 - cur_weight) + cur_rate * cur_weight
                 rated.append({
                     "name": p.get("name"), "rate": rate, "goals_2025_26": 0, "starts_2025_26": n_starts,
                     "goals_2026_27": cur_goals, "starts_2026_27": cur_starts, "projected": False,
