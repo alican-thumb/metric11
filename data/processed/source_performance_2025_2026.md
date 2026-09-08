@@ -4,11 +4,11 @@
 - Resmi olaya dönüşen transfer: 12
 - Yayın zamanı bulunan resmi teyit: 5/12
 - İlk görülme zamanı bulunan resmi teyit: 12/12
-- Ölçülen kaynak: 175 / gözlenen kaynak: 296
+- Ölçülen kaynak: 175 / gözlenen kaynak: 293
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 3
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 3997
+- Defterde korunan ilk iddia gözlemi: 3992
 
 ## Kanal Kapsamı
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 3994 | 1296 | 5 | — | 0.3 | %99.5 | 0.4 | FIRST_SEEN_BOUND |
+| Google News / medya | 3989 | 1294 | 5 | — | 0.3 | %99.5 | 0.4 | FIRST_SEEN_BOUND |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -91,13 +91,13 @@
 | Sporx | MEDIA | 14 | 12 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Yeni Şafak | MEDIA | 13 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Alanya Postası | MEDIA | 12 | 3 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
-| Haber61 | MEDIA | 12 | 2 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Mersin Haber | MEDIA | 12 | 6 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | birgun.net | MEDIA | 12 | 7 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | fanatik.com.tr | MEDIA | 12 | 5 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | hurriyet.com.tr | MEDIA | 12 | 5 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Anadolu Ajansı | MEDIA | 11 | 8 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | DHA / Demirören Haber Ajansı | MEDIA | 11 | 6 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Haber61 | MEDIA | 11 | 2 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Tıbbiye Bülteni | MEDIA | 11 | 11 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | transfermarkt.com.tr | MEDIA | 11 | 4 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | 61SAAT | MEDIA | 10 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
@@ -231,7 +231,6 @@
 | gazetegercek.com.tr | MEDIA | 3 | 1 | 0 | — | — | — | — | OBSERVING |
 | ntv.com.tr | MEDIA | 3 | 1 | 0 | — | — | — | — | OBSERVING |
 | saraymedya.com | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
-| sozcu.com.tr | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
 | 24saatgazetesi.com | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | 61saat.com | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Anadolu'da Bugün | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
@@ -252,6 +251,7 @@
 | Yüksekova Haber | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | aksam.com.tr | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | instagram.com | MEDIA | 2 | 1 | 0 | — | — | — | — | OBSERVING |
+| sozcu.com.tr | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | takvim.com.tr | MEDIA | 2 | 1 | 0 | — | — | — | — | OBSERVING |
 | 12punto | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | 5 Ocak Gazetesi | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
@@ -262,7 +262,6 @@
 | Aydın Ses Gazetesi | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Bengü Türk | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Bigpara | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
-| Bitlis Postası | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Bjk.com.tr | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | Bursa Saati | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Bursa Saati Gazetesi | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
@@ -272,7 +271,6 @@
 | Erzurum Gazetesi | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Evrensel | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | Fenerbahçe Spor Kulübü | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
-| Gazeteniz Olsun | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | Gunebakış | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Güneysu53 | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | Haber Ekspres | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
@@ -332,7 +330,6 @@
 | spor.haber7.com | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | sporanki.com | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | star.com.tr | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
-| tr.investing.com | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | tv100 Haber | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | yenialanya.com | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | yeniasir.com.tr | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
