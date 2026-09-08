@@ -13,17 +13,17 @@
 | Sıra | Takım | Öncelik | Skor | Puan/maç | Attığı gol/maç | Yediği gol/maç | İhtiyaç |
 |------|-------|------|------|-----|----|----|---------|
 | 1 | İKAS EYÜPSPOR | ACİL | 70.8 | 0.75 | 0.5 | 1.5 | Kaleci / istikrar |
-| 2 | GÖZTEPE A.Ş. | ACİL | 66.0 | 0.333 | 1.667 | 2.333 | 6 numara / savunma emniyeti |
+| 2 | GÖZTEPE A.Ş. | ACİL | 70.8 | 0.25 | 1.75 | 2.75 | 6 numara / savunma emniyeti |
 | 3 | TÜMOSAN KONYASPOR | ACİL | 60.0 | 0.0 | 0.75 | 2.0 | 6 numara / savunma emniyeti |
 | 4 | ERZURUMSPOR FK | ACİL | 57.0 | 1.0 | 0.5 | 2.0 | Kaleci / istikrar |
 | 5 | KASIMPAŞA A.Ş. | YÜKSEK | 53.5 | 1.5 | 1.25 | 1.0 | Kaleci / istikrar |
-| 6 | GAZİANTEP FUTBOL KULÜBÜ A.Ş. | YÜKSEK | 53.0 | 1.333 | 1.0 | 1.0 | Kaleci / istikrar |
-| 7 | ÇORUM FK | YÜKSEK | 49.5 | 1.0 | 1.75 | 2.25 | Kaleci / istikrar |
-| 8 | GENÇLERBİRLİĞİ | YÜKSEK | 49.2 | 1.75 | 1.0 | 1.75 | Santrfor / skor yükü |
+| 6 | ÇORUM FK | YÜKSEK | 49.5 | 1.0 | 1.75 | 2.25 | Kaleci / istikrar |
+| 7 | GENÇLERBİRLİĞİ | YÜKSEK | 49.2 | 1.75 | 1.0 | 1.75 | Santrfor / skor yükü |
+| 8 | ÇAYKUR RİZESPOR A.Ş. | YÜKSEK | 47.5 | 1.5 | 0.75 | 1.0 | Kaleci / istikrar |
 | 9 | SAMSUNSPOR A.Ş. | YÜKSEK | 46.0 | 1.0 | 1.25 | 1.5 | Kaleci / istikrar |
 | 10 | RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ | YÜKSEK | 44.0 | 1.0 | 1.5 | 1.5 | Sol açık / çizgi kırıcı |
-| 11 | CORENDON ALANYASPOR | YÜKSEK | 43.0 | 1.333 | 1.0 | 1.0 | 8 numara / fizik motoru |
-| 12 | ÇAYKUR RİZESPOR A.Ş. | YÜKSEK | 38.0 | 2.0 | 1.0 | 1.0 | Kaleci / istikrar |
+| 11 | GAZİANTEP FUTBOL KULÜBÜ A.Ş. | YÜKSEK | 43.2 | 1.75 | 1.75 | 1.25 | Kaleci / istikrar |
+| 12 | CORENDON ALANYASPOR | NORMAL | 34.2 | 1.75 | 1.0 | 0.75 | 8 numara / fizik motoru |
 | 13 | FENERBAHÇE A.Ş. | NORMAL | 32.5 | 1.5 | 2.0 | 1.5 | Sol açık / çizgi kırıcı |
 | 14 | KOCAELİSPOR | NORMAL | 29.8 | 2.25 | 1.25 | 0.75 | Santrfor / skor yükü |
 | 15 | AMED SFK | NORMAL | 28.2 | 1.75 | 1.75 | 1.25 | Kaleci / istikrar |
@@ -91,17 +91,17 @@ Zayıf nokta: son bölüm gol yeme riski, skor üretim sorunu, deplasman zayıf,
      → Savunma kırılgan (maç başına 1.5 gol yedi) - 6 numara / savunma emniyeti ihtiyacı net. Opoku: 1 gol, 31 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
 
 ### GÖZTEPE A.Ş.  [ACİL]
-*0.333 puan/maç | maç başına 1.667 attı | maç başına 2.333 yedi*
+*0.25 puan/maç | maç başına 1.75 attı | maç başına 2.75 yedi*
 
 Zayıf nokta: kart baskısı, düşük şut baskısı
 
 **6 numara / savunma emniyeti** — Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir.
   1. FIDAN ALITI (CORENDON ALANYASPOR) | 32y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 23.6
-     → Savunma kırılgan (maç başına 2.333 gol yedi) - 6 numara / savunma emniyeti ihtiyacı net. Aliti: 30 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 32 yaş — deneyim katkısı, kısa dönem çözüm.
+     → Savunma kırılgan (maç başına 2.75 gol yedi) - 6 numara / savunma emniyeti ihtiyacı net. Aliti: 30 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 32 yaş — deneyim katkısı, kısa dönem çözüm.
   2. NUNO MIGUEL REIS LIMA (CORENDON ALANYASPOR) | 25y | 1 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 22.9
-     → Savunma kırılgan (maç başına 2.333 gol yedi) - 6 numara / savunma emniyeti ihtiyacı net. Lima: 1 gol, 32 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
+     → Savunma kırılgan (maç başına 2.75 gol yedi) - 6 numara / savunma emniyeti ihtiyacı net. Lima: 1 gol, 32 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
   3. JEROME OPOKU (RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ) | 27y | 1 gol | MÜZAKERE PENCERESİ | LOW | skor 22.1
-     → Savunma kırılgan (maç başına 2.333 gol yedi) - 6 numara / savunma emniyeti ihtiyacı net. Opoku: 1 gol, 31 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
+     → Savunma kırılgan (maç başına 2.75 gol yedi) - 6 numara / savunma emniyeti ihtiyacı net. Opoku: 1 gol, 31 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
 
 **8 numara / fizik motoru** — Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir.
   1. ORKUN KÖKÇÜ (BEŞİKTAŞ A.Ş.) | 25y | 8 gol | SERBEST TRANSFER FIRSATI | FREE | skor 36.0
@@ -206,35 +206,6 @@ Zayıf nokta: son bölüm gol yeme riski, kart baskısı, skor üretim sorunu, d
   3. JEROME OPOKU (RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ) | 27y | 1 gol | MÜZAKERE PENCERESİ | LOW | skor 22.1
      → Son bölüm gol yeme riski sorunu var; 6 numara / savunma emniyeti bu açığı kapatacak. Opoku: 1 gol, 31 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
 
-### GAZİANTEP FUTBOL KULÜBÜ A.Ş.  [YÜKSEK]
-*1.333 puan/maç | maç başına 1.0 attı | maç başına 1.0 yedi*
-
-Zayıf nokta: savunma kırılgan, son bölüm gol yeme riski, kart baskısı, düşük şut baskısı
-
-**Kaleci / istikrar** — Savunma kırılganlığında kaleci istikrarı önceliği; GA ortalaması 1.0 — güvenilir kaleci pozisyonu kritik.
-  1. MUHAMMED ŞENGEZER (RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ) | 29y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 27.6
-     → Gol üretimi zayıf (maç başına 1.0 gol attı) - Kaleci / istikrar pozisyonunda yaratıcılık gerekiyor. Şengezer: 33 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  2. BERKAY ÖZCAN (MISIRLI.COM.TR FATİH KARAGÜMRÜK) | 28y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 22.8
-     → Gol üretimi zayıf (maç başına 1.0 gol attı) - Kaleci / istikrar pozisyonunda yaratıcılık gerekiyor. Özcan: 26 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  3. ANFERNEE JAMAL DIJKSTEEL (KOCAELİSPOR) | 29y | 0 gol | MÜZAKERE PENCERESİ | LOW | skor 19.0
-     → Gol üretimi zayıf (maç başına 1.0 gol attı) - Kaleci / istikrar pozisyonunda yaratıcılık gerekiyor. Dijksteel: 28 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
-
-**Stoper / hava ve temas** — Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 1.0.
-  1. HELITON JORGE  TITO DOS SANTOS (GÖZTEPE A.Ş.) | 30y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 27.8
-     → Gol üretimi zayıf (maç başına 1.0 gol attı) - Stoper / hava ve temas pozisyonunda yaratıcılık gerekiyor. Santos: 32 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  2. FIDAN ALITI (CORENDON ALANYASPOR) | 32y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 26.6
-     → Gol üretimi zayıf (maç başına 1.0 gol attı) - Stoper / hava ve temas pozisyonunda yaratıcılık gerekiyor. Aliti: 30 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 32 yaş — deneyim katkısı, kısa dönem çözüm.
-  3. JEROME OPOKU (RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ) | 27y | 1 gol | MÜZAKERE PENCERESİ | LOW | skor 25.0
-     → Gol üretimi zayıf (maç başına 1.0 gol attı) - Stoper / hava ve temas pozisyonunda yaratıcılık gerekiyor. Opoku: 1 gol, 31 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
-
-**6 numara / savunma emniyeti** — Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir.
-  1. HELITON JORGE  TITO DOS SANTOS (GÖZTEPE A.Ş.) | 30y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 24.8
-     → Gol üretimi zayıf (maç başına 1.0 gol attı) - 6 numara / savunma emniyeti pozisyonunda yaratıcılık gerekiyor. Santos: 32 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  2. FIDAN ALITI (CORENDON ALANYASPOR) | 32y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 23.6
-     → Gol üretimi zayıf (maç başına 1.0 gol attı) - 6 numara / savunma emniyeti pozisyonunda yaratıcılık gerekiyor. Aliti: 30 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 32 yaş — deneyim katkısı, kısa dönem çözüm.
-  3. JEROME OPOKU (RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ) | 27y | 1 gol | MÜZAKERE PENCERESİ | LOW | skor 22.1
-     → Gol üretimi zayıf (maç başına 1.0 gol attı) - 6 numara / savunma emniyeti pozisyonunda yaratıcılık gerekiyor. Opoku: 1 gol, 31 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
-
 ### ÇORUM FK  [YÜKSEK]
 *1.0 puan/maç | maç başına 1.75 attı | maç başına 2.25 yedi*
 
@@ -293,6 +264,35 @@ Zayıf nokta: skor üretim sorunu, deplasman zayıf, düşük şut baskısı
   3. KACPER SZYMON KOZLOWSKI (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 22y | 6 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 30.1
      → Gol üretimi zayıf (maç başına 1.0 gol attı) - 8 numara / fizik motoru pozisyonunda yaratıcılık gerekiyor. Kozlowski: 6 gol, 30 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere. 22 yaş, uzun vadeli yatırım profili.
 
+### ÇAYKUR RİZESPOR A.Ş.  [YÜKSEK]
+*1.5 puan/maç | maç başına 0.75 attı | maç başına 1.0 yedi*
+
+Zayıf nokta: savunma kırılgan, son bölüm gol yeme riski, deplasman zayıf
+
+**Kaleci / istikrar** — Savunma kırılganlığında kaleci istikrarı önceliği; GA ortalaması 1.0 — güvenilir kaleci pozisyonu kritik.
+  1. MUHAMMED ŞENGEZER (RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ) | 29y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 27.6
+     → Gol üretimi zayıf (maç başına 0.75 gol attı) - Kaleci / istikrar pozisyonunda yaratıcılık gerekiyor. Şengezer: 33 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
+  2. KAZEEM ADEREMI J. OLAIGBE (TÜMOSAN KONYASPOR) | 23y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 25.2
+     → Gol üretimi zayıf (maç başına 0.75 gol attı) - Kaleci / istikrar pozisyonunda yaratıcılık gerekiyor. Olaigbe: 26 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 23 yaş, uzun vadeli yatırım profili.
+  3. BERKAY ÖZCAN (MISIRLI.COM.TR FATİH KARAGÜMRÜK) | 28y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 22.8
+     → Gol üretimi zayıf (maç başına 0.75 gol attı) - Kaleci / istikrar pozisyonunda yaratıcılık gerekiyor. Özcan: 26 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
+
+**Stoper / hava ve temas** — Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 1.0.
+  1. HELITON JORGE  TITO DOS SANTOS (GÖZTEPE A.Ş.) | 30y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 27.8
+     → Gol üretimi zayıf (maç başına 0.75 gol attı) - Stoper / hava ve temas pozisyonunda yaratıcılık gerekiyor. Santos: 32 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
+  2. FIDAN ALITI (CORENDON ALANYASPOR) | 32y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 26.6
+     → Gol üretimi zayıf (maç başına 0.75 gol attı) - Stoper / hava ve temas pozisyonunda yaratıcılık gerekiyor. Aliti: 30 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 32 yaş — deneyim katkısı, kısa dönem çözüm.
+  3. JEROME OPOKU (RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ) | 27y | 1 gol | MÜZAKERE PENCERESİ | LOW | skor 25.0
+     → Gol üretimi zayıf (maç başına 0.75 gol attı) - Stoper / hava ve temas pozisyonunda yaratıcılık gerekiyor. Opoku: 1 gol, 31 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
+
+**6 numara / savunma emniyeti** — Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir.
+  1. HELITON JORGE  TITO DOS SANTOS (GÖZTEPE A.Ş.) | 30y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 24.8
+     → Gol üretimi zayıf (maç başına 0.75 gol attı) - 6 numara / savunma emniyeti pozisyonunda yaratıcılık gerekiyor. Santos: 32 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
+  2. FIDAN ALITI (CORENDON ALANYASPOR) | 32y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 23.6
+     → Gol üretimi zayıf (maç başına 0.75 gol attı) - 6 numara / savunma emniyeti pozisyonunda yaratıcılık gerekiyor. Aliti: 30 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 32 yaş — deneyim katkısı, kısa dönem çözüm.
+  3. JEROME OPOKU (RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ) | 27y | 1 gol | MÜZAKERE PENCERESİ | LOW | skor 22.1
+     → Gol üretimi zayıf (maç başına 0.75 gol attı) - 6 numara / savunma emniyeti pozisyonunda yaratıcılık gerekiyor. Opoku: 1 gol, 31 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
+
 ### SAMSUNSPOR A.Ş.  [YÜKSEK]
 *1.0 puan/maç | maç başına 1.25 attı | maç başına 1.5 yedi*
 
@@ -343,8 +343,37 @@ Zayıf nokta: kadro derinliği sınırlı
   3. MATEUSZ LIS (GÖZTEPE A.Ş.) | 29y | 0 gol | MÜZAKERE PENCERESİ | LOW | skor 20.1
      → Kadro derinliği sınırlı sorunu var; Bek / çift yönlü koridor bu açığı kapatacak. Lis: 34 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
 
-### CORENDON ALANYASPOR  [YÜKSEK]
-*1.333 puan/maç | maç başına 1.0 attı | maç başına 1.0 yedi*
+### GAZİANTEP FUTBOL KULÜBÜ A.Ş.  [YÜKSEK]
+*1.75 puan/maç | maç başına 1.75 attı | maç başına 1.25 yedi*
+
+Zayıf nokta: savunma kırılgan, son bölüm gol yeme riski, kart baskısı, düşük şut baskısı
+
+**Kaleci / istikrar** — Savunma kırılganlığında kaleci istikrarı önceliği; GA ortalaması 1.25 — güvenilir kaleci pozisyonu kritik.
+  1. MUHAMMED ŞENGEZER (RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ) | 29y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 27.6
+     → Savunma kırılgan sorunu var; Kaleci / istikrar bu açığı kapatacak. Şengezer: 33 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
+  2. BERKAY ÖZCAN (MISIRLI.COM.TR FATİH KARAGÜMRÜK) | 28y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 22.8
+     → Savunma kırılgan sorunu var; Kaleci / istikrar bu açığı kapatacak. Özcan: 26 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
+  3. ANFERNEE JAMAL DIJKSTEEL (KOCAELİSPOR) | 29y | 0 gol | MÜZAKERE PENCERESİ | LOW | skor 19.0
+     → Savunma kırılgan sorunu var; Kaleci / istikrar bu açığı kapatacak. Dijksteel: 28 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
+
+**Stoper / hava ve temas** — Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 1.25.
+  1. HELITON JORGE  TITO DOS SANTOS (GÖZTEPE A.Ş.) | 30y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 27.8
+     → Savunma kırılgan sorunu var; Stoper / hava ve temas bu açığı kapatacak. Santos: 32 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
+  2. FIDAN ALITI (CORENDON ALANYASPOR) | 32y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 26.6
+     → Savunma kırılgan sorunu var; Stoper / hava ve temas bu açığı kapatacak. Aliti: 30 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 32 yaş — deneyim katkısı, kısa dönem çözüm.
+  3. JEROME OPOKU (RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ) | 27y | 1 gol | MÜZAKERE PENCERESİ | LOW | skor 25.0
+     → Savunma kırılgan sorunu var; Stoper / hava ve temas bu açığı kapatacak. Opoku: 1 gol, 31 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
+
+**6 numara / savunma emniyeti** — Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir.
+  1. HELITON JORGE  TITO DOS SANTOS (GÖZTEPE A.Ş.) | 30y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 24.8
+     → Savunma kırılgan sorunu var; 6 numara / savunma emniyeti bu açığı kapatacak. Santos: 32 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
+  2. FIDAN ALITI (CORENDON ALANYASPOR) | 32y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 23.6
+     → Savunma kırılgan sorunu var; 6 numara / savunma emniyeti bu açığı kapatacak. Aliti: 30 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 32 yaş — deneyim katkısı, kısa dönem çözüm.
+  3. JEROME OPOKU (RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ) | 27y | 1 gol | MÜZAKERE PENCERESİ | LOW | skor 22.1
+     → Savunma kırılgan sorunu var; 6 numara / savunma emniyeti bu açığı kapatacak. Opoku: 1 gol, 31 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
+
+### CORENDON ALANYASPOR  [NORMAL]
+*1.75 puan/maç | maç başına 1.0 attı | maç başına 0.75 yedi*
 
 Zayıf nokta: deplasman zayıf, düşük şut baskısı
 
@@ -371,35 +400,6 @@ Zayıf nokta: deplasman zayıf, düşük şut baskısı
      → Gol üretimi zayıf (maç başına 1.0 gol attı) - Bek / çift yönlü koridor pozisyonunda yaratıcılık gerekiyor. Grbic: 32 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
   3. MATEUSZ LIS (GÖZTEPE A.Ş.) | 29y | 0 gol | MÜZAKERE PENCERESİ | LOW | skor 20.1
      → Gol üretimi zayıf (maç başına 1.0 gol attı) - Bek / çift yönlü koridor pozisyonunda yaratıcılık gerekiyor. Lis: 34 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
-
-### ÇAYKUR RİZESPOR A.Ş.  [YÜKSEK]
-*2.0 puan/maç | maç başına 1.0 attı | maç başına 1.0 yedi*
-
-Zayıf nokta: savunma kırılgan, son bölüm gol yeme riski, deplasman zayıf
-
-**Kaleci / istikrar** — Savunma kırılganlığında kaleci istikrarı önceliği; GA ortalaması 1.0 — güvenilir kaleci pozisyonu kritik.
-  1. MUHAMMED ŞENGEZER (RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ) | 29y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 27.6
-     → Gol üretimi zayıf (maç başına 1.0 gol attı) - Kaleci / istikrar pozisyonunda yaratıcılık gerekiyor. Şengezer: 33 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  2. KAZEEM ADEREMI J. OLAIGBE (TÜMOSAN KONYASPOR) | 23y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 25.2
-     → Gol üretimi zayıf (maç başına 1.0 gol attı) - Kaleci / istikrar pozisyonunda yaratıcılık gerekiyor. Olaigbe: 26 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 23 yaş, uzun vadeli yatırım profili.
-  3. BERKAY ÖZCAN (MISIRLI.COM.TR FATİH KARAGÜMRÜK) | 28y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 22.8
-     → Gol üretimi zayıf (maç başına 1.0 gol attı) - Kaleci / istikrar pozisyonunda yaratıcılık gerekiyor. Özcan: 26 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-
-**Stoper / hava ve temas** — Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 1.0.
-  1. HELITON JORGE  TITO DOS SANTOS (GÖZTEPE A.Ş.) | 30y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 27.8
-     → Gol üretimi zayıf (maç başına 1.0 gol attı) - Stoper / hava ve temas pozisyonunda yaratıcılık gerekiyor. Santos: 32 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  2. FIDAN ALITI (CORENDON ALANYASPOR) | 32y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 26.6
-     → Gol üretimi zayıf (maç başına 1.0 gol attı) - Stoper / hava ve temas pozisyonunda yaratıcılık gerekiyor. Aliti: 30 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 32 yaş — deneyim katkısı, kısa dönem çözüm.
-  3. JEROME OPOKU (RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ) | 27y | 1 gol | MÜZAKERE PENCERESİ | LOW | skor 25.0
-     → Gol üretimi zayıf (maç başına 1.0 gol attı) - Stoper / hava ve temas pozisyonunda yaratıcılık gerekiyor. Opoku: 1 gol, 31 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
-
-**6 numara / savunma emniyeti** — Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir.
-  1. HELITON JORGE  TITO DOS SANTOS (GÖZTEPE A.Ş.) | 30y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 24.8
-     → Gol üretimi zayıf (maç başına 1.0 gol attı) - 6 numara / savunma emniyeti pozisyonunda yaratıcılık gerekiyor. Santos: 32 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı.
-  2. FIDAN ALITI (CORENDON ALANYASPOR) | 32y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 23.6
-     → Gol üretimi zayıf (maç başına 1.0 gol attı) - 6 numara / savunma emniyeti pozisyonunda yaratıcılık gerekiyor. Aliti: 30 maç. Bu yaz serbest kalıyor (~1ay) — bonussuz transfer fırsatı. 32 yaş — deneyim katkısı, kısa dönem çözüm.
-  3. JEROME OPOKU (RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ) | 27y | 1 gol | MÜZAKERE PENCERESİ | LOW | skor 22.1
-     → Gol üretimi zayıf (maç başına 1.0 gol attı) - 6 numara / savunma emniyeti pozisyonunda yaratıcılık gerekiyor. Opoku: 1 gol, 31 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
 
 ### FENERBAHÇE A.Ş.  [NORMAL]
 *1.5 puan/maç | maç başına 2.0 attı | maç başına 1.5 yedi*

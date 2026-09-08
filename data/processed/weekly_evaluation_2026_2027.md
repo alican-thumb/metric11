@@ -4,12 +4,12 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 
 ## Genel Karne
 
-- Değerlendirilen maç: **34**
-- İsabet: **14/34** (%41)
+- Değerlendirilen maç: **36**
+- İsabet: **14/36** (%39)
 - Beraberlik yakalama: **1/7** (%14)
 - Yüksek güvenli maç isabeti: **6/13** (%46)
 
-## Hafta 4 — 2/7 isabet (%29)
+## Hafta 4 — 2/9 isabet (%22)
 
 | Maç | Skor | Tahmin | Sonuç | Güven |
 | --- | --- | --- | --- | --- |
@@ -20,6 +20,8 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 | ARCA ÇORUM FK - EYÜPSPOR | 3 - 0 | Deplasman | ❌ | MEDIUM |
 | TRABZONSPOR A.Ş. - GENÇLERBİRLİĞİ | 5 - 0 | Deplasman | ❌ | MEDIUM |
 | KOCAELİSPOR - SAMSUNSPOR A.Ş. | 1 - 0 | Ev | ✅ | LOW |
+| ÇAYKUR RİZESPOR A.Ş. - CORENDON ALANYASPOR | 0 - 1 | Beraberlik | ❌ | LOW |
+| GÖZTEPE A.Ş. - GAZİANTEP FUTBOL KULÜBÜ A.Ş. | 2 - 4 | Ev | ❌ | MEDIUM |
 
 ## Hafta 3 — 6/9 isabet (%67)
 

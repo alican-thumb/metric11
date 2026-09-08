@@ -47,11 +47,11 @@
 
 ## GAZİANTEP FUTBOL KULÜBÜ A.Ş.
 
-- Güç: 30.9 | GF: 1.0 | GA: 1.0 | kart: 2.91
+- Güç: 30.9 | GF: 1.75 | GA: 1.25 | kart: 2.91
 - Zafiyet: savunma kırılgan, son bölüm gol yeme riski, kart baskısı, düşük şut baskısı
 - Scout ipucu: Güvenilir kaleci, hızlı stoper veya savunmacı 6 numara — GA ortalaması kritik eşiğin üstünde
-- Kaleci / istikrar: Savunma kırılganlığında kaleci istikrarı önceliği; GA ortalaması 1.0 — güvenilir kaleci pozisyonu kritik. Adaylar: MOHAMMED AMIN CHERNI, MUHAMMED ŞENGEZER, ANFERNEE JAMAL DIJKSTEEL
-- Stoper / hava ve temas: Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 1.0. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
+- Kaleci / istikrar: Savunma kırılganlığında kaleci istikrarı önceliği; GA ortalaması 1.25 — güvenilir kaleci pozisyonu kritik. Adaylar: MOHAMMED AMIN CHERNI, MUHAMMED ŞENGEZER, ANFERNEE JAMAL DIJKSTEEL
+- Stoper / hava ve temas: Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 1.25. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
 - 6 numara / savunma emniyeti: Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
 - 8 numara / fizik motoru: Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir. Adaylar: JANDERSON  DE CARVALHO COSTA, QAZIM LACI, ORKUN KÖKÇÜ
 
@@ -77,7 +77,7 @@
 
 ## ÇAYKUR RİZESPOR A.Ş.
 
-- Güç: 42.6 | GF: 1.0 | GA: 1.0 | kart: 2.41
+- Güç: 42.6 | GF: 0.75 | GA: 1.0 | kart: 2.41
 - Zafiyet: savunma kırılgan, son bölüm gol yeme riski, deplasman zayıf
 - Scout ipucu: Güvenilir kaleci, hızlı stoper veya savunmacı 6 numara — GA ortalaması kritik eşiğin üstünde
 - Kaleci / istikrar: Savunma kırılganlığında kaleci istikrarı önceliği; GA ortalaması 1.0 — güvenilir kaleci pozisyonu kritik. Adaylar: MOHAMMED AMIN CHERNI, MUHAMMED ŞENGEZER, ANFERNEE JAMAL DIJKSTEEL
@@ -107,7 +107,7 @@
 
 ## CORENDON ALANYASPOR
 
-- Güç: 44.1 | GF: 1.0 | GA: 1.0 | kart: 2.38
+- Güç: 44.1 | GF: 1.0 | GA: 0.75 | kart: 2.38
 - Zafiyet: deplasman zayıf, düşük şut baskısı
 - Scout ipucu: Geçiş oyunu taşıyacak fiziksel orta saha/kanat
 - 8 numara / fizik motoru: Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir. Adaylar: ALEXANDRU IULIAN MAXIM, JANDERSON  DE CARVALHO COSTA, QAZIM LACI
@@ -117,13 +117,13 @@
 
 ## GÖZTEPE A.Ş.
 
-- Güç: 59.8 | GF: 1.667 | GA: 2.333 | kart: 2.53
+- Güç: 59.8 | GF: 1.75 | GA: 2.75 | kart: 2.53
 - Zafiyet: kart baskısı, düşük şut baskısı
 - Scout ipucu: Daha kontrollü ikili mücadele profili ve pasla baskı kıran orta saha
 - 6 numara / savunma emniyeti: Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir. Adaylar: JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU, PEDRO MIGUEL DE ALMEIDA LOPES PEREIRA
 - 8 numara / fizik motoru: Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir. Adaylar: ALEXANDRU IULIAN MAXIM, QAZIM LACI, ORKUN KÖKÇÜ
 - Sol açık / çizgi kırıcı: Deplasman veya üretim zafiyetinde çizgi kıran/taşıyıcı hücum profili gerekir. Adaylar: KACPER SZYMON KOZLOWSKI, ERNEST MUÇİ, YUNUS AKGÜN
-- Santrfor / skor yükü: Skor üretim problemi için bitirici profil; mevcut gol ortalaması 1.667. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, MOHAMED LAMINE BAYO
+- Santrfor / skor yükü: Skor üretim problemi için bitirici profil; mevcut gol ortalaması 1.75. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, MOHAMED LAMINE BAYO
 
 ## SAMSUNSPOR A.Ş.
 
