@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-08T18:44:26.452830+00:00",
+  "generated_at": "2026-09-08T18:57:41.538752+00:00",
   "season": "2026-2027",
   "competitions": {
     "CL": {
@@ -13,7 +13,7 @@
           "group": "",
           "matchday": 1,
           "utc_date": "2026-09-08T16:45:00Z",
-          "status": "SCHEDULED",
+          "status": "FINISHED",
           "home": {
             "id": 851,
             "name": "Club Brugge KV",
@@ -26,7 +26,10 @@
             "short": "AVL",
             "crest": "https://crests.football-data.org/58.png"
           },
-          "actual_score": null,
+          "actual_score": {
+            "home": 2,
+            "away": 3
+          },
           "prediction": {
             "home_win": 0.404,
             "draw": 0.275,
@@ -39,7 +42,7 @@
             "lam_home": 1.578,
             "lam_away": 1.38
           },
-          "prediction_outcome": "pending"
+          "prediction_outcome": "wrong"
         },
         {
           "match_id": 575324,
@@ -47,7 +50,7 @@
           "group": "",
           "matchday": 1,
           "utc_date": "2026-09-08T16:45:00Z",
-          "status": "SCHEDULED",
+          "status": "FINISHED",
           "home": {
             "id": 1899,
             "name": "PAE AEK",
@@ -60,7 +63,10 @@
             "short": "LIN",
             "crest": "https://crests.football-data.org/2016.png"
           },
-          "actual_score": null,
+          "actual_score": {
+            "home": 2,
+            "away": 0
+          },
           "prediction": {
             "home_win": 0.386,
             "draw": 0.277,
@@ -73,7 +79,7 @@
             "lam_home": 1.534,
             "lam_away": 1.42
           },
-          "prediction_outcome": "pending"
+          "prediction_outcome": "correct"
         },
         {
           "match_id": 575325,
@@ -81,7 +87,7 @@
           "group": "",
           "matchday": 1,
           "utc_date": "2026-09-08T19:00:00Z",
-          "status": "TIMED",
+          "status": "SCHEDULED",
           "home": {
             "id": 86,
             "name": "Real Madrid CF",
@@ -115,7 +121,7 @@
           "group": "",
           "matchday": 1,
           "utc_date": "2026-09-08T19:00:00Z",
-          "status": "TIMED",
+          "status": "SCHEDULED",
           "home": {
             "id": 503,
             "name": "FC Porto",
@@ -149,7 +155,7 @@
           "group": "",
           "matchday": 1,
           "utc_date": "2026-09-08T19:00:00Z",
-          "status": "TIMED",
+          "status": "SCHEDULED",
           "home": {
             "id": 4,
             "name": "Borussia Dortmund",
@@ -183,7 +189,7 @@
           "group": "",
           "matchday": 1,
           "utc_date": "2026-09-08T19:00:00Z",
-          "status": "TIMED",
+          "status": "SCHEDULED",
           "home": {
             "id": 521,
             "name": "Lille OSC",
@@ -4905,10 +4911,10 @@
         }
       ],
       "accuracy": {
-        "finished": 0,
-        "correct": 0,
-        "wrong": 0,
-        "pct": null
+        "finished": 2,
+        "correct": 1,
+        "wrong": 1,
+        "pct": 50.0
       }
     },
     "EL": {
