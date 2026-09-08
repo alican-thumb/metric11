@@ -450,18 +450,6 @@
         "actual_scorer": false
       },
       {
-        "player_id": "2820847",
-        "name": "ISHOLA JUNIOR  OLAITAN",
-        "goal_threat_score": 6.25,
-        "candidate_type": "primary",
-        "recent_starts": 5,
-        "season_goals_before_match": 1,
-        "recent_goals": 1,
-        "big_match_goals_before_match": 0,
-        "opponent_defense_multiplier": 1.0,
-        "actual_scorer": false
-      },
-      {
         "player_id": "2685818",
         "name": "MALCOM NARCISSE BOKELE MPUTU",
         "goal_threat_score": 6.25,
@@ -501,6 +489,23 @@
         "recent_bench": 2,
         "cards_before_match": 0,
         "recent_cards": 0
+      },
+      {
+        "player_id": "2820847",
+        "name": "ISHOLA JUNIOR  OLAITAN",
+        "goal_threat_score": 4.25,
+        "candidate_type": "primary",
+        "recent_starts": 5,
+        "season_goals_before_match": 1,
+        "recent_goals": 1,
+        "big_match_goals_before_match": 0,
+        "opponent_defense_multiplier": 1.0,
+        "actual_scorer": false,
+        "quality_adjustment": {
+          "multiplier": 0.68,
+          "reason": "Top 5 sıralama etkisini düşür veya aday tipini yeniden kontrol et.",
+          "source": "goal_candidate_segment_backtest"
+        }
       },
       {
         "player_id": "2294118",
@@ -712,18 +717,18 @@
     "plan": "Dengeli başlangıç, ikinci yarı hamle",
     "core_starters": [
       "ANTHONY JUNIOR DENNIS",
-      "ISHOLA JUNIOR  OLAITAN",
       "MALCOM NARCISSE BOKELE MPUTU",
       "JANDERSON  DE CARVALHO COSTA",
       "MATEUSZ LIS",
       "ARDA OKAN KURTULAN",
       "HELITON JORGE  TITO DOS SANTOS",
-      "RHALDNEY NORBERTO SIMIAO GOMES"
+      "RHALDNEY NORBERTO SIMIAO GOMES",
+      "ISHOLA JUNIOR  OLAITAN"
     ],
     "attacking_priority": [
       "ANTHONY JUNIOR DENNIS",
       "EFKAN BEKİROĞLU",
-      "ISHOLA JUNIOR  OLAITAN"
+      "MALCOM NARCISSE BOKELE MPUTU"
     ],
     "card_caution": [
       {
@@ -746,9 +751,9 @@
   },
   "coach_lineup_audit": {
     "verdict": "UYUMLU",
-    "actual_lineup_score": 88.98,
-    "recommended_lineup_score": 91.48,
-    "alignment_rate": 0.973,
+    "actual_lineup_score": 88.08,
+    "recommended_lineup_score": 90.58,
+    "alignment_rate": 0.972,
     "actual_starters": [
       "MATEUSZ LIS",
       "ARDA OKAN KURTULAN",
@@ -764,13 +769,13 @@
     ],
     "model_core_starters": [
       "ANTHONY JUNIOR DENNIS",
-      "ISHOLA JUNIOR  OLAITAN",
       "MALCOM NARCISSE BOKELE MPUTU",
       "JANDERSON  DE CARVALHO COSTA",
       "MATEUSZ LIS",
       "ARDA OKAN KURTULAN",
       "HELITON JORGE  TITO DOS SANTOS",
-      "RHALDNEY NORBERTO SIMIAO GOMES"
+      "RHALDNEY NORBERTO SIMIAO GOMES",
+      "ISHOLA JUNIOR  OLAITAN"
     ],
     "omitted_core_players": [],
     "omitted_attacking_priority": [
@@ -829,93 +834,6 @@
         "commercial_note": "Al-sat değeri yüksek."
       },
       {
-        "player_name": "ERNEST MUÇİ",
-        "current_team": "TRABZONSPOR A.Ş.",
-        "target_role": "Kanat / çizgi kırıcı",
-        "role_key": "LW_CREATOR",
-        "role_fit_score": 104.74,
-        "position_confidence": "HIGH",
-        "age": 25,
-        "economy_score": 22.0,
-        "current_expected_goals_for": 1.4,
-        "current_expected_goals_against": 1.39,
-        "simulated_expected_goals_for": 1.59,
-        "simulated_expected_goals_against": 1.38,
-        "xg_for_delta": 0.19,
-        "xg_against_delta": 0.01,
-        "goal_edge_delta": 0.2,
-        "simulated_target_win_probability": 0.425,
-        "simulated_draw_probability": 0.243,
-        "simulated_opponent_win_probability": 0.332,
-        "simulated_scoreline": {
-          "target_goals": 1,
-          "opponent_goals": 1,
-          "score": "1-1",
-          "probability": 0.113
-        },
-        "impact_label": "LOW_POSITIVE",
-        "why": "Poz. grup: MID (HIGH). İlk 11: 22, Gol: 11, Kart: 4. Sözleşme fırsatı: HIGH.",
-        "commercial_note": "Serbest kalma yakın; bonservis düşük olabilir."
-      },
-      {
-        "player_name": "YUNUS AKGÜN",
-        "current_team": "GALATASARAY A.Ş.",
-        "target_role": "Kanat / çizgi kırıcı",
-        "role_key": "LW_CREATOR",
-        "role_fit_score": 102.94,
-        "position_confidence": "HIGH",
-        "age": 25,
-        "economy_score": 22.0,
-        "current_expected_goals_for": 1.4,
-        "current_expected_goals_against": 1.39,
-        "simulated_expected_goals_for": 1.6,
-        "simulated_expected_goals_against": 1.38,
-        "xg_for_delta": 0.2,
-        "xg_against_delta": 0.01,
-        "goal_edge_delta": 0.21,
-        "simulated_target_win_probability": 0.427,
-        "simulated_draw_probability": 0.242,
-        "simulated_opponent_win_probability": 0.33,
-        "simulated_scoreline": {
-          "target_goals": 1,
-          "opponent_goals": 1,
-          "score": "1-1",
-          "probability": 0.112
-        },
-        "impact_label": "LOW_POSITIVE",
-        "why": "Poz. grup: FWD (HIGH). İlk 11: 23, Gol: 7, Kart: 1. Sözleşme fırsatı: HIGH.",
-        "commercial_note": "Serbest kalma yakın; bonservis düşük olabilir."
-      },
-      {
-        "player_name": "BARIŞ ALPER YILMAZ",
-        "current_team": "GALATASARAY A.Ş.",
-        "target_role": "Kanat / çizgi kırıcı",
-        "role_key": "LW_CREATOR",
-        "role_fit_score": 99.46,
-        "position_confidence": "HIGH",
-        "age": 26,
-        "economy_score": 18.0,
-        "current_expected_goals_for": 1.4,
-        "current_expected_goals_against": 1.39,
-        "simulated_expected_goals_for": 1.62,
-        "simulated_expected_goals_against": 1.37,
-        "xg_for_delta": 0.22,
-        "xg_against_delta": 0.02,
-        "goal_edge_delta": 0.24,
-        "simulated_target_win_probability": 0.434,
-        "simulated_draw_probability": 0.242,
-        "simulated_opponent_win_probability": 0.324,
-        "simulated_scoreline": {
-          "target_goals": 1,
-          "opponent_goals": 1,
-          "score": "1-1",
-          "probability": 0.112
-        },
-        "impact_label": "LOW_POSITIVE",
-        "why": "Poz. grup: FWD (HIGH). İlk 11: 27, Gol: 8, Kart: 7. Sözleşme fırsatı: HIGH.",
-        "commercial_note": "Serbest kalma yakın; bonservis düşük olabilir."
-      },
-      {
         "player_name": "DORGELES NENE",
         "current_team": "FENERBAHÇE A.Ş.",
         "target_role": "Kanat / çizgi kırıcı",
@@ -945,6 +863,64 @@
         "commercial_note": "Al-sat değeri yüksek."
       },
       {
+        "player_name": "BARIŞ ALPER YILMAZ",
+        "current_team": "GALATASARAY A.Ş.",
+        "target_role": "Kanat / çizgi kırıcı",
+        "role_key": "LW_CREATOR",
+        "role_fit_score": 94.66,
+        "position_confidence": "HIGH",
+        "age": 26,
+        "economy_score": 14.0,
+        "current_expected_goals_for": 1.4,
+        "current_expected_goals_against": 1.39,
+        "simulated_expected_goals_for": 1.61,
+        "simulated_expected_goals_against": 1.37,
+        "xg_for_delta": 0.21,
+        "xg_against_delta": 0.02,
+        "goal_edge_delta": 0.23,
+        "simulated_target_win_probability": 0.432,
+        "simulated_draw_probability": 0.242,
+        "simulated_opponent_win_probability": 0.326,
+        "simulated_scoreline": {
+          "target_goals": 1,
+          "opponent_goals": 1,
+          "score": "1-1",
+          "probability": 0.112
+        },
+        "impact_label": "LOW_POSITIVE",
+        "why": "Poz. grup: FWD (HIGH). İlk 11: 27, Gol: 8, Kart: 7. Sözleşme fırsatı: MEDIUM.",
+        "commercial_note": "Maliyet/katkı dengesi piyasa değeriyle doğrulanmalı."
+      },
+      {
+        "player_name": "ERNEST MUÇİ",
+        "current_team": "TRABZONSPOR A.Ş.",
+        "target_role": "Kanat / çizgi kırıcı",
+        "role_key": "LW_CREATOR",
+        "role_fit_score": 92.54,
+        "position_confidence": "HIGH",
+        "age": 25,
+        "economy_score": 12.0,
+        "current_expected_goals_for": 1.4,
+        "current_expected_goals_against": 1.39,
+        "simulated_expected_goals_for": 1.58,
+        "simulated_expected_goals_against": 1.38,
+        "xg_for_delta": 0.18,
+        "xg_against_delta": 0.01,
+        "goal_edge_delta": 0.19,
+        "simulated_target_win_probability": 0.422,
+        "simulated_draw_probability": 0.244,
+        "simulated_opponent_win_probability": 0.334,
+        "simulated_scoreline": {
+          "target_goals": 1,
+          "opponent_goals": 1,
+          "score": "1-1",
+          "probability": 0.113
+        },
+        "impact_label": "LOW_POSITIVE",
+        "why": "Poz. grup: MID (HIGH). İlk 11: 22, Gol: 11, Kart: 4.",
+        "commercial_note": "Maliyet/katkı dengesi piyasa değeriyle doğrulanmalı."
+      },
+      {
         "player_name": "KAZEEM ADEREMI J. OLAIGBE",
         "current_team": "TRABZONSPOR A.Ş.",
         "target_role": "Kanat / çizgi kırıcı",
@@ -972,6 +948,35 @@
         "impact_label": "LOW_POSITIVE",
         "why": "Poz. grup: FWD (HIGH). İlk 11: 26, Gol: 0, Kart: 1. Sözleşme fırsatı: HIGH. Resale potansiyeli yüksek.",
         "commercial_note": "Al-sat değeri yüksek."
+      },
+      {
+        "player_name": "BARIŞ JAKOB KALAYCI",
+        "current_team": "MISIRLI.COM.TR FATİH KARAGÜMRÜK",
+        "target_role": "Kanat / çizgi kırıcı",
+        "role_key": "LW_CREATOR",
+        "role_fit_score": 83.38,
+        "position_confidence": "HIGH",
+        "age": 20,
+        "economy_score": 32.0,
+        "current_expected_goals_for": 1.4,
+        "current_expected_goals_against": 1.39,
+        "simulated_expected_goals_for": 1.5,
+        "simulated_expected_goals_against": 1.38,
+        "xg_for_delta": 0.1,
+        "xg_against_delta": 0.01,
+        "goal_edge_delta": 0.11,
+        "simulated_target_win_probability": 0.403,
+        "simulated_draw_probability": 0.248,
+        "simulated_opponent_win_probability": 0.349,
+        "simulated_scoreline": {
+          "target_goals": 1,
+          "opponent_goals": 1,
+          "score": "1-1",
+          "probability": 0.116
+        },
+        "impact_label": "LOW_POSITIVE",
+        "why": "Poz. grup: FWD (HIGH). İlk 11: 15, Gol: 1, Kart: 4. Sözleşme fırsatı: HIGH. Resale potansiyeli yüksek.",
+        "commercial_note": "Al-sat değeri yüksek."
       }
     ]
   },
@@ -983,9 +988,9 @@
     "Rakibin son 3 maçlık savunma formu gol adayı modeline eklendi: maç başı 1.33 gol yiyor, %0 clean sheet oranı var. Gol adayı skor çarpanı 1.0.",
     "Hakem profili kart tarafında anlamlı bir sinyal veriyor: MEHMET TÜRKMEN bu sezon önceki 2 Beşiktaş maçında toplam maç başı 3.5 kart, Beşiktaş'a maç başı 2.0 kart ortalamasıyla öne çıkıyor.",
     "Olası 11 sinyalinde son dönemde öne çıkan isimler: MATEUSZ LIS, ARDA OKAN KURTULAN, HELITON JORGE  TITO DOS SANTOS, RHALDNEY NORBERTO SIMIAO GOMES, ISHOLA JUNIOR  OLAITAN, MOHAMMED AMIN CHERNI. Kart riski tarafında ise son 8 maç penceresinde ALLAN GODOI SANTOS, ANTHONY JUNIOR DENNIS, FURKAN BAYIR, MALCOM NARCISSE BOKELE MPUTU dikkat çekiyor.",
-    "Gol adayı sinyalinde öne çıkan isimler: ANTHONY JUNIOR DENNIS, EFKAN BEKİROĞLU, ISHOLA JUNIOR  OLAITAN, MALCOM NARCISSE BOKELE MPUTU. Bu skor son gol formu, sezon içi gol sayısı ve son dönemde ilk 11 başlama sıklığından türetildi. Test sonucunda gerçek Beşiktaş golcüleri: JUAN SANTOS DA SILVA, RHALDNEY NORBERTO SIMIAO GOMES, IBRAHIM MOHAMMED ABDALLAH SABRA.",
+    "Gol adayı sinyalinde öne çıkan isimler: ANTHONY JUNIOR DENNIS, EFKAN BEKİROĞLU, MALCOM NARCISSE BOKELE MPUTU, JANDERSON  DE CARVALHO COSTA. Bu skor son gol formu, sezon içi gol sayısı ve son dönemde ilk 11 başlama sıklığından türetildi. Test sonucunda gerçek Beşiktaş golcüleri: JUAN SANTOS DA SILVA, RHALDNEY NORBERTO SIMIAO GOMES, IBRAHIM MOHAMMED ABDALLAH SABRA.",
     "Skor dağılımında en olası senaryolar: 1-1 (%12), 1-0 (%9), 0-1 (%8). Model aksiyonu: Korumalı taraf tahmini; önerilen ana skor 1-1.",
-    "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği ANTHONY JUNIOR DENNIS, EFKAN BEKİROĞLU, ISHOLA JUNIOR  OLAITAN. Disiplin yönetimi gereken oyuncular: ALLAN GODOI SANTOS, ANTHONY JUNIOR DENNIS, FURKAN BAYIR.",
+    "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği ANTHONY JUNIOR DENNIS, EFKAN BEKİROĞLU, MALCOM NARCISSE BOKELE MPUTU. Disiplin yönetimi gereken oyuncular: ALLAN GODOI SANTOS, ANTHONY JUNIOR DENNIS, FURKAN BAYIR.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %97 uyum buldu; karar etiketi UYUMLU. Alternatif model 11'i kullanılsaydı xG 1.4-1.39 yerine 1.42-1.39 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.4-1.39 bandından 1.62-1.37 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %43 olurdu.",
     "MVP olasılık motoru Beşiktaş galibiyetini %40, beraberliği %24, rakip galibiyetini %36 olarak işaretliyor. Gol beklentisi 1.4-1.39; kart sinyali LOW."
