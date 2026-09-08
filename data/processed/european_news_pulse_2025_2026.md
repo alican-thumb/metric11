@@ -1,21 +1,25 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-09-08T10:57:51.670406+00:00
-Toplam ilgili haber: 36
+Üretim zamanı: 2026-09-08T11:18:07.386411+00:00
+Toplam ilgili haber: 37
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
-- [Galatasaray'a kötü haber! O isimler Sporting deplasmanına götürülmedi...](https://www.aksam.com.tr/spor/galatasaraya-kotu-o-isimler-sporting-deplasmanina-goturulmedi/haber-1696712) — Aksam Spor · 2026-09-08T11:39:00+03:00 · turnuva=CL · kulüp=Galatasaray
-- [Galatasaray'ın Sporting CP maçı kamp kadrosu açıklandı!](https://www.fotomac.com.tr/galatasaray/2026/09/08/galatasarayin-sporting-cp-maci-kamp-kadrosu-aciklandi) — Fotomaç · 2026-09-08T11:37:53+03:00 · turnuva=CL · kulüp=Galatasaray
+- [GÜNÜN MAÇLARI 8 EYLÜL 2026: Bugün Kimlerin Maçlar Var? Bugünkü Maçlar Neler? İşte 8 Eylül Günün Maçları](https://www.cnnturk.com/spor/gunun-maclari-8-eylul-2026-bugun-kimlerin-maclar-var-bugunku-maclar-neler-iste-8-eylul-gunun-maclari-3464170) — CNN Türk Spor · 2026-09-08T13:37:16+00:00 · turnuva=CL · kulüp=—
+- [SPORTING LIZBON - GALATASARAY MAÇI NE ZAMAN? Lizbon GS Maçı Hangi Kanalda? UEFA Şampiyonlar Ligi'nde İlk Sınav! Galatasaray Sporting Deplasmanında](https://www.cnnturk.com/spor/futbol/sporting-lizbon-galatasaray-maci-ne-zaman-lizbon-gs-maci-hangi-kanalda-uefa-sampiyonlar-liginde-ilk-sinav-galatasaray-3464232) — CNN Türk Spor · 2026-09-08T13:34:22+00:00 · turnuva=CL · kulüp=Galatasaray
+- [Fenerbahçe - Roma maçına İspanyol hakem](https://www.cnnturk.com/spor/futbol/fenerbahce-roma-macina-ispanyol-hakem-3464227) — CNN Türk Spor · 2026-09-08T13:09:22+00:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe - Roma maçının hakemi belli oldu!](https://www.sabah.com.tr/spor/futbol/2026/09/08/fenerbahce-roma-macinin-hakemi-belli-oldu) — Sabah Spor · 2026-09-08T13:07:24+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Galatasaray'ın Sporting maçı kadrosunda 4 isim yer almadı](https://www.cnnturk.com/spor/futbol/galatasarayin-sporting-maci-kadrosunda-4-isim-yer-almadi-3464210) — CNN Türk Spor · 2026-09-08T12:05:45+00:00 · turnuva=CL · kulüp=Galatasaray
+- [Galatasaray, Sporting Lizbon maçı için Portekiz'e hareket etti](https://www.aa.com.tr/tr/spor/galatasaray-sporting-lizbon-maci-icin-portekize-hareket-etti/4050521) — Anadolu Ajansı Spor · 2026-09-08T12:04:54+03:00 · turnuva=CL · kulüp=Galatasaray
 - [Galatasaray'ın Sporting maçı kamp kadrosu belli oldu!](https://www.sabah.com.tr/spor/futbol/2026/09/08/galatasarayin-sporting-maci-kamp-kadrosu-belli-oldu) — Sabah Spor · 2026-09-08T11:33:45+03:00 · turnuva=CL · kulüp=Galatasaray
 - [Galatasaray, Sporting ile ilk kez karşılaşacak](https://www.aa.com.tr/tr/spor/galatasaray-sporting-ile-ilk-kez-karsilasacak/4050472) — Anadolu Ajansı Spor · 2026-09-08T11:32:20+03:00 · turnuva=CL · kulüp=Galatasaray
 - [Galatasaray, Avrupa'da 341. kez sahne alacak](https://www.sabah.com.tr/spor/futbol/2026/09/08/galatasaray-avrupada-341-kez-sahne-alacak) — Sabah Spor · 2026-09-08T11:29:22+03:00 · turnuva=CL · kulüp=Galatasaray
 - [Galatasaray, Avrupa'da 341. kez sahne alacak](https://www.aa.com.tr/tr/spor/galatasaray-avrupada-341-kez-sahne-alacak/4050465) — Anadolu Ajansı Spor · 2026-09-08T11:26:05+03:00 · turnuva=CL · kulüp=Galatasaray
 - [Galatasaray, Şampiyonlar Ligi'nde Sporting'e konuk olacak](https://www.sabah.com.tr/spor/futbol/2026/09/08/galatasaray-sampiyonlar-liginde-sportinge-konuk-olacak) — Sabah Spor · 2026-09-08T11:23:57+03:00 · turnuva=CL · kulüp=Galatasaray
 - [Galatasaray, Şampiyonlar Ligi'nde yarın Sporting'e konuk olacak](https://www.aa.com.tr/tr/spor/galatasaray-sampiyonlar-liginde-yarin-sportinge-konuk-olacak/4050460) — Anadolu Ajansı Spor · 2026-09-08T11:21:15+03:00 · turnuva=CL · kulüp=Galatasaray
-- [GÜNÜN MAÇLARI 8 EYLÜL 2026: Bugün Kimlerin Maçlar Var? Bugünkü Maçlar Neler? İşte 8 Eylül Günün Maçları](https://www.cnnturk.com/spor/gunun-maclari-8-eylul-2026-bugun-kimlerin-maclar-var-bugunku-maclar-neler-iste-8-eylul-gunun-maclari-3464170) — CNN Türk Spor · 2026-09-08T10:23:13+00:00 · turnuva=CL · kulüp=—
-- [Şampiyonlar Ligi'nde Fenerbahçe ve Galatasaray'ın tur ihtimali belli oldu](https://www.fotomac.com.tr/sampiyonlarligi/2026/09/08/sampiyonlar-liginde-fenerbahce-ve-galatasarayin-tur-ihtimali-belli-oldu) — Fotomaç · 2026-09-08T09:49:57+03:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe
+- [Fenerbahçe ve Galatasaray'ın Şampiyonlar Ligi maçları simüle edildi! İşte Süper Lig devlerinin tur şansları](https://www.hurriyet.com.tr/sporarena/fenerbahce-ve-galatasarayin-sampiyonlar-ligi-maclari-simule-edildi-iste-super-lig-devlerinin-tur-sanslari-43300061) — Hürriyet Spor · 2026-09-08T10:44:18+00:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe
+- [Fenerbahçe - Roma maçının hakemi belli oldu](https://www.hurriyet.com.tr/sporarena/fenerbahce-roma-macinin-hakemi-belli-oldu-43300012) — Hürriyet Spor · 2026-09-08T09:58:00+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [FENERBAHÇE - ROMA MAÇI NE ZAMAN, HANGİ KANALDA, ŞİFRESİZ Mİ? Fenerbahçe maçı tarihi, canlı yayın kanalı ve maç saati](https://www.cnnturk.com/spor/futbol/fenerbahce-roma-maci-ne-zaman-hangi-kanalda-sifresiz-mi-fenerbahce-maci-tarihi-canli-yayin-kanali-ve-mac-saati-3463856) — CNN Türk Spor · 2026-09-08T09:15:20+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [ŞAMPİYONLAR LİGİ YENİ SEZON TARİHİ: Galatasaray ve Fenerbahçe Şampiyonlar Ligi maçları ne zaman, hangi tarihte, saat kaçta? 2026 - 2027 Şampiyonlar Ligi maç programı](https://www.cnnturk.com/spor/futbol/sampiyonlar-ligi-yeni-sezon-tarihi-galatasaray-ve-fenerbahce-sampiyonlar-ligi-maclari-ne-zaman-hangi-tarihte-saat-kacta-2026-3463682) — CNN Türk Spor · 2026-09-08T09:14:33+00:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe
 - [GALATASARAY ŞAMPİYONLAR LİGİ KADROSU: GS UEFA Listesi Belli Oldu Mu? Galatasaray Şampiyonlar Ligi Kadrosunda Kimler Var?](https://www.cnnturk.com/spor/futbol/galatasaray-sampiyonlar-ligi-kadrosu-gs-uefa-listesi-belli-oldu-mu-galatasaray-sampiyonlar-ligi-kadrosunda-kimler-var-3462213) — CNN Türk Spor · 2026-09-08T09:11:38+00:00 · turnuva=CL · kulüp=Galatasaray
@@ -25,9 +29,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Galatasaray 3 eksikle Sporting'e konuk olacak! Kamp kadrosu açıklandı](https://www.hurriyet.com.tr/sporarena/galatasaray-3-eksikle-sportinge-konuk-olacak-43299832) — Hürriyet Spor · 2026-09-08T08:42:00+00:00 · turnuva=CL · kulüp=Galatasaray
 - [Beşiktaş’ın, Hapoel Beer Sheva maçı Batum’a kayabilir](https://www.cnnturk.com/spor/futbol/besiktasin-hapoel-beer-sheva-maci-batuma-kayabilir-3464099) — CNN Türk Spor · 2026-09-08T08:04:27+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Real Madrid, İnter’i ağırlıyor! Şampiyonlar Ligi heyecanı canlı sohbet ile Misli’de](https://www.hurriyet.com.tr/sporarena/real-madrid-interi-agirliyor-sampiyonlar-ligi-heyecani-canli-sohbet-ile-mislide-43299625) — Hürriyet Spor · 2026-09-08T06:57:00+00:00 · turnuva=CL · kulüp=—
-- [UEFA'dan Muhammed Salah paylaşımı!](https://www.fotomac.com.tr/trabzonspor/2026/09/07/uefadan-muhammed-salah-paylasimi) — Fotomaç · 2026-09-08T00:19:44+03:00 · turnuva=ECL · kulüp=Trabzonspor
-- [UEFA'dan Dusan Vlahovic paylaşımı](https://www.fotomac.com.tr/besiktas/2026/09/07/uefadan-dusan-vlahovic-paylasimi) — Fotomaç · 2026-09-08T00:19:42+03:00 · turnuva=EL · kulüp=Beşiktaş
-- [Sporting CP-Galatasaray maçının hakemi açıklandı!](https://www.fotomac.com.tr/galatasaray/2026/09/07/sporting-cp-galatasaray-macinin-hakemi-aciklandi) — Fotomaç · 2026-09-08T00:19:40+03:00 · turnuva=CL · kulüp=Galatasaray
 - [UEFA Şampiyonlar Ligi'nin "en"leri](https://www.aa.com.tr/tr/spor/uefa-sampiyonlar-liginin-enleri/4049685) — Anadolu Ajansı Spor · 2026-09-07T15:39:25+03:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe
 - [Fenerbahçe, Roma maçı hazırlıklarına devam etti](https://www.cnnturk.com/spor/futbol/fenerbahce-roma-maci-hazirliklarina-devam-etti-3463900) — CNN Türk Spor · 2026-09-07T15:01:39+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe Roma maçının hazırlıklarına devam etti](https://www.hurriyet.com.tr/sporarena/fenerbahce-roma-macinin-hazirliklarina-devam-etti-43299075) — Hürriyet Spor · 2026-09-07T12:55:08+00:00 · turnuva=CL · kulüp=Fenerbahçe
