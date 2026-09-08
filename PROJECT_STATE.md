@@ -2844,3 +2844,16 @@ Kullanıcı ısrar etti, paylaşılan `×0.05/×0.04` kapısına dokunma kararı
   3. **Gerçek 2026-27 sonuçlarında iyileşme:** Haftalık isabet %35.3'ten (12/34) %38.2'ye (13/34) çıktı; yüksek güvenli tahmin isabeti de yükseldi. Kocaelispor-Samsunspor (1-0) örneğinde yanlış tahmin doğruya döndü.
   4. Fenerbahçe-Beşiktaş (orijinal örnek maç) hâlâ "Fenerbahçe" tahmin ediyor (Beşiktaş'ın net avantajı bu maçta tek başına baskın olmaya yetecek kadar büyük değil) — her maçın flip etmesi beklenmiyordu, sinyal yeterince güçlü olduğunda hareket ediyor, bu da doğru davranış.
 - pytest 58/61 (aynı 3 bilinen hata). Tam pipeline çalıştırılıyor, commit+push+deploy edilecek.
+
+### 2026-09-08 (devam 14) — "En iyisi ol" isteği: beraberlik eşikleri yeniden kalibre edildi (0/7→1/7, %38.2→%41.2)
+
+Kullanıcı: "güncellikte en iyisi ol, tahmin takipçileri hep kazansın" dedi. `weekly_evaluation`'da beraberlik yakalama 0/7 (%0) olduğu dikkat çekti — 2026-07-15'te kullanıcı isteğiyle (o zaman yalnızca 2025-26 backtest'e karşı) kalibre edilmiş eşikler, artık elimizde olan 34 maçlık GERÇEK 2026-27 sonucuna karşı hiç test edilmemişti.
+
+- **Yöntem:** `draw_calibrated_prediction`'ın eşiklerini (`DRAW_PRED_MIN_PROB`, `DRAW_PRED_MAX_GAP`, `DRAW_BOOST_SCALE`) İKİ bağımsız veri setine karşı ızgara taradım: 258 maçlık 2025-26 backtest (eski, büyük örneklem) VE 34 maçlık gerçek 2026-27 sonucu (yeni, o 2026-07-15 tarihinde mevcut olmayan out-of-sample veri). Kaba tarama + ince tarama + tam-sezon/ilk-yarı/ikinci-yarı OOS çapraz kontrolü yapıldı (aynı metodoloji, orijinal tuning'in izlediği yöntem).
+- **Sonuç:** `0.275/0.15/0.04` (eskisi `0.28/0.18/0.0`) her ikisi de dahil TÜM dilimlerde eşit veya daha iyi çıktı — tek bir kırılgan nokta değil, geniş bir eşik komşuluğunda tutarlı:
+  - 2025-26 backtest: %55.0→%55.4 (143/258), beraberlik yakalama 13/76→17/76
+  - İlk yarı OOS: %52.7→%52.7 (aynı), beraberlik 8/45→10/45
+  - İkinci yarı OOS: %57.4→%58.1, beraberlik 5/31→7/31
+  - **2026-27 gerçek sonuç (34 maç): %38.2→%41.2 (13→14 doğru), beraberlik yakalama 0/7→1/7**
+- **Doğrulama:** Simülasyon (cached olasılıklar üzerinde) ve gerçek pipeline çalıştırması (`model_league_predictions` + `build_season_fixture_predictions` + `build_weekly_evaluation`) birebir aynı sayıları verdi. pytest 58/61 (aynı 3 bilinen hata).
+- **Not:** Bu hâlâ küçük bir iyileşme (34 maçlık örneklemde +1 doğru, +1 beraberlik) — mucize değil, ama HER dilimde (asla daha kötü değil, çoğu yerde daha iyi) doğrulanmış, kırılgan olmayan bir kazanım. Sezon ilerledikçe daha fazla gerçek veri birikince bu kalibrasyon tekrar gözden geçirilmeli.

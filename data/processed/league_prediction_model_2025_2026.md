@@ -1,13 +1,13 @@
 # Lig Geneli Poisson/Elo MVP Backtest
 
 - Test edilen maç: 258
-- Doğru tahmin: 142 (%55)
+- Doğru tahmin: 143 (%55)
 - Gerçek dağılım: {'home': 111, 'draw': 76, 'away': 71}
-- Tahmin dağılımı: {'home': 143, 'draw': 20, 'away': 95}
+- Tahmin dağılımı: {'home': 132, 'draw': 35, 'away': 91}
 - Ortalama en yüksek olasılık: 0.487
 - Brier skoru: 0.6
 - Log loss: 1.005
-- Güven kırılımı: {'HIGH': {'matches': 89, 'accuracy': 0.64}, 'MEDIUM': {'matches': 85, 'accuracy': 0.553}, 'LOW': {'matches': 84, 'accuracy': 0.452}}
+- Güven kırılımı: {'HIGH': {'matches': 89, 'accuracy': 0.64}, 'MEDIUM': {'matches': 85, 'accuracy': 0.541}, 'LOW': {'matches': 84, 'accuracy': 0.476}}
 
 ## Son 40 Tahmin
 
@@ -29,13 +29,13 @@
 - 2.05.2026 - 20:00 | FENERBAHÇE A.Ş. - RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ | skor 3-1 | tahmin=Ev gerçek=Ev doğru=True | xG 1.74-1.4 | skor=2-1 | güven=MEDIUM | risk=-
 - 2.05.2026 - 20:00 | TRABZONSPOR A.Ş. - GÖZTEPE A.Ş. | skor 1-1 | tahmin=Ev gerçek=X doğru=False | xG 1.76-1.43 | skor=2-1 | güven=MEDIUM | risk=-
 - 2.05.2026 - 20:00 | SAMSUNSPOR A.Ş. - GALATASARAY A.Ş. | skor 4-1 | tahmin=Dep gerçek=Ev doğru=False | xG 1.28-1.86 | skor=1-2 | güven=MEDIUM | risk=-
-- 3.05.2026 - 20:00 | ZECORNER KAYSERİSPOR - İKAS EYÜPSPOR | skor 1-1 | tahmin=Ev gerçek=X doğru=False | xG 1.25-1.12 | skor=1-0 | güven=LOW | risk=xG farkı dar, beraberlik olasılığı canlı, taraf tahmini düşük güven, favori xG israfı
+- 3.05.2026 - 20:00 | ZECORNER KAYSERİSPOR - İKAS EYÜPSPOR | skor 1-1 | tahmin=X gerçek=X doğru=True | xG 1.25-1.12 | skor=1-1 | güven=LOW | risk=xG farkı dar, beraberlik olasılığı canlı, taraf tahmini düşük güven, favori xG israfı
 - 3.05.2026 - 20:00 | HESAP.COM ANTALYASPOR - CORENDON ALANYASPOR | skor 0-0 | tahmin=Dep gerçek=X doğru=False | xG 1.24-1.49 | skor=0-1 | güven=MEDIUM | risk=taraf tahmini düşük güven, yüksek kart hakemi
 - 3.05.2026 - 20:00 | MISIRLI.COM.TR FATİH KARAGÜMRÜK - GENÇLERBİRLİĞİ | skor 1-0 | tahmin=Ev gerçek=Ev doğru=True | xG 1.37-0.86 | skor=1-0 | güven=MEDIUM | risk=-
 - 3.05.2026 - 20:00 | KASIMPAŞA A.Ş. - KOCAELİSPOR | skor 1-1 | tahmin=X gerçek=X doğru=True | xG 1.23-1.06 | skor=1-1 | güven=LOW | risk=xG farkı dar, beraberlik olasılığı canlı, taraf tahmini düşük güven, yüksek kart hakemi
-- 9.05.2026 - 20:00 | GENÇLERBİRLİĞİ - KASIMPAŞA A.Ş. | skor 3-2 | tahmin=Dep gerçek=Ev doğru=False | xG 1.04-1.29 | skor=0-1 | güven=LOW | risk=beraberlik olasılığı canlı, taraf tahmini düşük güven
+- 9.05.2026 - 20:00 | GENÇLERBİRLİĞİ - KASIMPAŞA A.Ş. | skor 3-2 | tahmin=X gerçek=Ev doğru=False | xG 1.04-1.29 | skor=1-1 | güven=LOW | risk=beraberlik olasılığı canlı, taraf tahmini düşük güven
 - 9.05.2026 - 20:00 | GALATASARAY A.Ş. - HESAP.COM ANTALYASPOR | skor 4-2 | tahmin=Ev gerçek=Ev doğru=True | xG 2.26-0.93 | skor=2-0 | güven=HIGH | risk=-
-- 9.05.2026 - 20:00 | BEŞİKTAŞ A.Ş. - TRABZONSPOR A.Ş. | skor 1-2 | tahmin=Ev gerçek=Dep doğru=False | xG 1.49-1.37 | skor=2-1 | güven=LOW | risk=xG farkı dar, beraberlik olasılığı canlı, taraf tahmini düşük güven
+- 9.05.2026 - 20:00 | BEŞİKTAŞ A.Ş. - TRABZONSPOR A.Ş. | skor 1-2 | tahmin=X gerçek=Dep doğru=False | xG 1.49-1.37 | skor=1-1 | güven=LOW | risk=xG farkı dar, beraberlik olasılığı canlı, taraf tahmini düşük güven
 - 9.05.2026 - 20:00 | RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ - SAMSUNSPOR A.Ş. | skor 3-0 | tahmin=Ev gerçek=Ev doğru=True | xG 1.73-1.55 | skor=2-1 | güven=LOW | risk=xG farkı dar, taraf tahmini düşük güven, yüksek kart hakemi
 - 9.05.2026 - 20:00 | KOCAELİSPOR - MISIRLI.COM.TR FATİH KARAGÜMRÜK | skor 0-1 | tahmin=X gerçek=Dep doğru=False | xG 1.26-1.07 | skor=1-1 | güven=LOW | risk=xG farkı dar, beraberlik olasılığı canlı, taraf tahmini düşük güven, favori xG israfı
 - 9.05.2026 - 20:00 | GÖZTEPE A.Ş. - GAZİANTEP FUTBOL KULÜBÜ A.Ş. | skor 2-1 | tahmin=Ev gerçek=Ev doğru=True | xG 1.96-1.31 | skor=2-1 | güven=HIGH | risk=-

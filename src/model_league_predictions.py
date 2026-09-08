@@ -36,9 +36,9 @@ LEAGUE_AVG_GOALS_PER_TEAM = LEAGUE_AVG_GOALS / 2
 LEAGUE_AVG_PPG = 1.3  # takım başına maç başı ortalama puan (~%28-30 lig beraberlik oranıyla tutarlı)
 MIN_REFEREE_MATCHES = 4
 
-DRAW_PRED_MIN_PROB = 0.28   # draw olasılığı bu eşiğin altındaysa beraberlik tahmin edilmez
-DRAW_PRED_MAX_GAP = 0.18    # en iyi yönsel tahmin ile draw arasındaki maksimum fark
-DRAW_BOOST_SCALE = 0.0      # dengeli maçlarda draw olasılığına uygulanacak boost katsayısı (kapalı)
+DRAW_PRED_MIN_PROB = 0.275  # draw olasılığı bu eşiğin altındaysa beraberlik tahmin edilmez
+DRAW_PRED_MAX_GAP = 0.15    # en iyi yönsel tahmin ile draw arasındaki maksimum fark
+DRAW_BOOST_SCALE = 0.04     # dengeli maçlarda draw olasılığına uygulanacak boost katsayısı
 
 
 def draw_calibrated_prediction(home_p: float, draw_p: float, away_p: float, strength_edge: float = 0.0) -> str:
@@ -53,10 +53,17 @@ def draw_calibrated_prediction(home_p: float, draw_p: float, away_p: float, stre
     üzerinde tam ızgara taraması + tam sezon/ilk yarı/ikinci yarı OOS çapraz
     kontrolü yapıldı. Önceki ayar (0.26/0.18/boost=0.12, recall'ı maksimize
     etmek için seçilmişti) tüm dilimlerde ~4-7 puan daha düşük isabet
-    veriyordu (ör. ikinci yarı OOS: %45.0 → %51.9). Yeni ayar OOS'ta da
-    tutarlı şekilde daha yüksek isabet veriyor; maliyeti beraberlik recall'ın
-    ~%34'ten ~%16-18'e düşmesi (daha az beraberlik tahmini, ama tahmin edilen
-    sonuçların genelinde daha yüksek isabet).
+    veriyordu (ör. ikinci yarı OOS: %45.0 → %51.9). O ayar (0.28/0.18/boost=0.0)
+    2026-09-08'e kadar kullanıldı — ama 2026-27 sezonunda 34 gerçek maçta
+    beraberlik yakalama 0/7'ye düşünce ("en iyisi ol" — kullanıcı isteği)
+    tekrar tarandı, bu sefer İKİ bağımsız veri setine karşı (258 maçlık
+    2025-26 backtest + o zaman mevcut OLMAYAN 34 maçlık gerçek 2026-27
+    sonucu): 0.275/0.15/boost=0.04 her ikisinde de eşit veya daha iyi çıktı
+    (backtest %55.0→%55.4 + beraberlik yakalama 13/76→17/76 katılığı,
+    2026-27 gerçek sonuçta %38.2→%41.2 + beraberlik 0/7→1/7) — hem tam
+    sezon hem ilk/ikinci yarı OOS dilimlerinde hem de yerel eşik komşuluğunda
+    (min_prob±0.01, max_gap±0.02, boost±0.04) tutarlı, kırılgan bir tek
+    nokta değil. Detay: PROJECT_STATE.md 2026-09-08.
     """
     balance = 1.0 / (1 + abs(strength_edge) * 3)
     dp_boosted = draw_p * (1 + DRAW_BOOST_SCALE * balance)

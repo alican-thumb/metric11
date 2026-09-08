@@ -7,8 +7,8 @@ _Not: Walk-forward kronolojik backtest. Her tahmin yalnızca önceki maçların 
 
 | Dönem | Doğruluk | Brier | Log Loss |
 |---|---:|---:|---:|
-| Tüm sezon | %55.0 (142/258) | 0.6 | 1.005 |
-| İlk yarı (hafta 1-17) | %50.5 (53/105) | 0.608 | 1.017 |
+| Tüm sezon | %55.4 (143/258) | 0.6 | 1.005 |
+| İlk yarı (hafta 1-17) | %51.4 (54/105) | 0.608 | 1.017 |
 | **İkinci yarı OOS (hafta 18-34)** | **%58.2 (89/153)** | 0.595 | 0.996 |
 
 ## Güven Seviyesi Kırılımı (Tüm Sezon)
@@ -16,8 +16,8 @@ _Not: Walk-forward kronolojik backtest. Her tahmin yalnızca önceki maçların 
 | Güven | Doğruluk | |
 |---|---:|---|
 | HIGH | %64.0 (57/89) | Brier: 0.516 |
-| MEDIUM | %55.3 (47/85) | Brier: 0.619 |
-| LOW | %45.2 (38/84) | Brier: 0.67 |
+| MEDIUM | %54.1 (46/85) | Brier: 0.619 |
+| LOW | %47.6 (40/84) | Brier: 0.67 |
 
 ## Güven Seviyesi Kırılımı (OOS — İkinci Yarı)
 
@@ -31,8 +31,8 @@ _Not: Walk-forward kronolojik backtest. Her tahmin yalnızca önceki maçların 
 
 | Gerçek Sonuç | Model Doğruluğu |
 |---|---:|
-| Ev sahibi kazandı | %72.1 (80/111) |
-| Beraberlik | %17.1 (13/76) |
+| Ev sahibi kazandı | %69.4 (77/111) |
+| Beraberlik | %22.4 (17/76) |
 | Deplasman kazandı | %69.0 (49/71) |
 
 ## Kümülatif Doğruluk (son 10 hafta)
@@ -46,18 +46,18 @@ _Not: Walk-forward kronolojik backtest. Her tahmin yalnızca önceki maçların 
 | 29 | %57.7 | 213 |
 | 30 | %57.2 | 222 |
 | 31 | %56.7 | 231 |
-| 32 | %56.7 | 240 |
-| 33 | %56.6 | 249 |
-| 34 | %55.0 | 258 |
+| 32 | %57.1 | 240 |
+| 33 | %57.0 | 249 |
+| 34 | %55.4 | 258 |
 
 ## Draw Kalibrasyon Karşılaştırması
 
 | | Ham argmax | Kalibre |
 |---|---:|---:|
-| Tüm sezon doğruluk | %51.2 (132/258) | %55.0 (142/258) |
+| Tüm sezon doğruluk | %51.2 (132/258) | %55.4 (143/258) |
 | OOS ikinci yarı doğruluk | %53.6 (82/153) | %58.2 (89/153) |
-| Beraberlik doğruluğu (tüm sezon) | %0.0 (0/76) | %17.1 (13/76) |
-| Ev sahibi doğruluğu | %73.0 (81/111) | %72.1 (80/111) |
+| Beraberlik doğruluğu (tüm sezon) | %0.0 (0/76) | %22.4 (17/76) |
+| Ev sahibi doğruluğu | %73.0 (81/111) | %69.4 (77/111) |
 | Deplasman doğruluğu | %71.8 (51/71) | %69.0 (49/71) |
 
 ## Yorumlama
@@ -65,5 +65,5 @@ _Not: Walk-forward kronolojik backtest. Her tahmin yalnızca önceki maçların 
 - Tüm sezon doğruluğu walk-forward kronolojik tahmindir; gelecek sonuçlar o anda görülmüyor.
 - Hafta 18+ (ikinci yarı OOS) gerçek bağımsız test penceresine en yakın ölçüm.
 - Hiperparametreler (K faktör, blend oranı) bu sezon verisine göre ayarlanmadı; genel futbol pratiğine dayanıyor.
-- Draw kalibrasyon eşikleri: min draw_p=0.28, max gap=0.18, boost=0.0 (draw_calibrated_prediction).
+- Draw kalibrasyon eşikleri: min draw_p=0.275, max gap=0.15, boost=0.04 (draw_calibrated_prediction).
 - Canlı kullanım için: HIGH güven → güvenilir sinyal, LOW güven → bilgi amaçlı.

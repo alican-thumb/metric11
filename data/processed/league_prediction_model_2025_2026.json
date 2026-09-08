@@ -1,17 +1,17 @@
 {
   "summary": {
     "matches": 258,
-    "correct": 142,
-    "accuracy": 0.55,
+    "correct": 143,
+    "accuracy": 0.554,
     "actual_distribution": {
       "home": 111,
       "draw": 76,
       "away": 71
     },
     "prediction_distribution": {
-      "home": 143,
-      "draw": 20,
-      "away": 95
+      "home": 132,
+      "draw": 35,
+      "away": 91
     },
     "avg_top_probability": 0.487,
     "brier_score": 0.6,
@@ -23,11 +23,11 @@
       },
       "MEDIUM": {
         "matches": 85,
-        "accuracy": 0.553
+        "accuracy": 0.541
       },
       "LOW": {
         "matches": 84,
-        "accuracy": 0.452
+        "accuracy": 0.476
       }
     }
   },
@@ -676,9 +676,9 @@
       "away": "SAMSUNSPOR A.Ş.",
       "score": "2-2",
       "raw_predicted": "away",
-      "predicted": "away",
+      "predicted": "draw",
       "actual": "draw",
-      "correct": false,
+      "correct": true,
       "confidence": "LOW",
       "risk_flags": [
         "xG farkı dar",
@@ -721,10 +721,10 @@
         }
       ],
       "recommended_scoreline": {
-        "score": "0-1",
-        "home_goals": 0,
+        "score": "1-1",
+        "home_goals": 1,
         "away_goals": 1,
-        "probability": 0.103
+        "probability": 0.124
       },
       "home_win_probability": 0.311,
       "draw_probability": 0.273,
@@ -997,7 +997,7 @@
       "away": "KASIMPAŞA A.Ş.",
       "score": "1-2",
       "raw_predicted": "home",
-      "predicted": "home",
+      "predicted": "draw",
       "actual": "away",
       "correct": false,
       "confidence": "LOW",
@@ -1043,10 +1043,10 @@
         }
       ],
       "recommended_scoreline": {
-        "score": "1-0",
+        "score": "1-1",
         "home_goals": 1,
-        "away_goals": 0,
-        "probability": 0.121
+        "away_goals": 1,
+        "probability": 0.133
       },
       "home_win_probability": 0.385,
       "draw_probability": 0.275,
@@ -1748,9 +1748,9 @@
       "away": "İKAS EYÜPSPOR",
       "score": "1-0",
       "raw_predicted": "home",
-      "predicted": "home",
+      "predicted": "draw",
       "actual": "home",
-      "correct": true,
+      "correct": false,
       "confidence": "LOW",
       "risk_flags": [
         "xG farkı dar",
@@ -1794,10 +1794,10 @@
         }
       ],
       "recommended_scoreline": {
-        "score": "1-0",
+        "score": "1-1",
         "home_goals": 1,
-        "away_goals": 0,
-        "probability": 0.127
+        "away_goals": 1,
+        "probability": 0.133
       },
       "home_win_probability": 0.396,
       "draw_probability": 0.273,
@@ -1963,9 +1963,9 @@
       "away": "TÜMOSAN KONYASPOR",
       "score": "1-1",
       "raw_predicted": "away",
-      "predicted": "away",
+      "predicted": "draw",
       "actual": "draw",
-      "correct": false,
+      "correct": true,
       "confidence": "LOW",
       "risk_flags": [
         "xG farkı dar",
@@ -2008,10 +2008,10 @@
         }
       ],
       "recommended_scoreline": {
-        "score": "0-1",
-        "home_goals": 0,
+        "score": "1-1",
+        "home_goals": 1,
         "away_goals": 1,
-        "probability": 0.092
+        "probability": 0.121
       },
       "home_win_probability": 0.331,
       "draw_probability": 0.277,
@@ -6007,7 +6007,7 @@
       "away": "TÜMOSAN KONYASPOR",
       "score": "2-0",
       "raw_predicted": "away",
-      "predicted": "away",
+      "predicted": "draw",
       "actual": "home",
       "correct": false,
       "confidence": "LOW",
@@ -6052,10 +6052,10 @@
         }
       ],
       "recommended_scoreline": {
-        "score": "1-2",
+        "score": "1-1",
         "home_goals": 1,
-        "away_goals": 2,
-        "probability": 0.087
+        "away_goals": 1,
+        "probability": 0.115
       },
       "home_win_probability": 0.342,
       "draw_probability": 0.271,
@@ -6854,9 +6854,9 @@
       "away": "SAMSUNSPOR A.Ş.",
       "score": "1-1",
       "raw_predicted": "home",
-      "predicted": "home",
+      "predicted": "draw",
       "actual": "draw",
-      "correct": false,
+      "correct": true,
       "confidence": "LOW",
       "risk_flags": [
         "beraberlik olasılığı canlı",
@@ -6899,10 +6899,10 @@
         }
       ],
       "recommended_scoreline": {
-        "score": "2-1",
-        "home_goals": 2,
+        "score": "1-1",
+        "home_goals": 1,
         "away_goals": 1,
-        "probability": 0.09
+        "probability": 0.105
       },
       "home_win_probability": 0.418,
       "draw_probability": 0.272,
@@ -9832,9 +9832,9 @@
       "away": "KOCAELİSPOR",
       "score": "1-1",
       "raw_predicted": "away",
-      "predicted": "draw",
+      "predicted": "away",
       "actual": "draw",
-      "correct": true,
+      "correct": false,
       "confidence": "MEDIUM",
       "risk_flags": [
         "beraberlik olasılığı canlı"
@@ -9875,10 +9875,10 @@
         }
       ],
       "recommended_scoreline": {
-        "score": "1-1",
-        "home_goals": 1,
+        "score": "0-1",
+        "home_goals": 0,
         "away_goals": 1,
-        "probability": 0.123
+        "probability": 0.12
       },
       "home_win_probability": 0.247,
       "draw_probability": 0.29,
@@ -13130,9 +13130,9 @@
       "away": "SAMSUNSPOR A.Ş.",
       "score": "0-1",
       "raw_predicted": "away",
-      "predicted": "away",
+      "predicted": "draw",
       "actual": "away",
-      "correct": true,
+      "correct": false,
       "confidence": "LOW",
       "risk_flags": [
         "xG farkı dar",
@@ -13176,10 +13176,10 @@
         }
       ],
       "recommended_scoreline": {
-        "score": "0-1",
-        "home_goals": 0,
+        "score": "1-1",
+        "home_goals": 1,
         "away_goals": 1,
-        "probability": 0.135
+        "probability": 0.133
       },
       "home_win_probability": 0.312,
       "draw_probability": 0.276,
@@ -14079,7 +14079,7 @@
       "away": "HESAP.COM ANTALYASPOR",
       "score": "1-0",
       "raw_predicted": "away",
-      "predicted": "away",
+      "predicted": "draw",
       "actual": "home",
       "correct": false,
       "confidence": "LOW",
@@ -14124,10 +14124,10 @@
         }
       ],
       "recommended_scoreline": {
-        "score": "0-1",
-        "home_goals": 0,
+        "score": "1-1",
+        "home_goals": 1,
         "away_goals": 1,
-        "probability": 0.128
+        "probability": 0.133
       },
       "home_win_probability": 0.329,
       "draw_probability": 0.271,
@@ -14712,9 +14712,9 @@
       "away": "KOCAELİSPOR",
       "score": "1-2",
       "raw_predicted": "away",
-      "predicted": "draw",
+      "predicted": "away",
       "actual": "away",
-      "correct": false,
+      "correct": true,
       "confidence": "MEDIUM",
       "risk_flags": [
         "beraberlik olasılığı canlı",
@@ -14756,10 +14756,10 @@
         }
       ],
       "recommended_scoreline": {
-        "score": "0-0",
+        "score": "0-1",
         "home_goals": 0,
-        "away_goals": 0,
-        "probability": 0.137
+        "away_goals": 1,
+        "probability": 0.168
       },
       "home_win_probability": 0.232,
       "draw_probability": 0.299,
@@ -15769,7 +15769,7 @@
       "away": "BEŞİKTAŞ A.Ş.",
       "score": "2-3",
       "raw_predicted": "home",
-      "predicted": "home",
+      "predicted": "draw",
       "actual": "away",
       "correct": false,
       "confidence": "LOW",
@@ -15813,10 +15813,10 @@
         }
       ],
       "recommended_scoreline": {
-        "score": "2-1",
-        "home_goals": 2,
+        "score": "1-1",
+        "home_goals": 1,
         "away_goals": 1,
-        "probability": 0.088
+        "probability": 0.093
       },
       "home_win_probability": 0.424,
       "draw_probability": 0.271,
@@ -15877,9 +15877,9 @@
       "away": "MISIRLI.COM.TR FATİH KARAGÜMRÜK",
       "score": "3-2",
       "raw_predicted": "home",
-      "predicted": "home",
+      "predicted": "draw",
       "actual": "home",
-      "correct": true,
+      "correct": false,
       "confidence": "LOW",
       "risk_flags": [
         "xG farkı dar",
@@ -15923,10 +15923,10 @@
         }
       ],
       "recommended_scoreline": {
-        "score": "1-0",
+        "score": "1-1",
         "home_goals": 1,
-        "away_goals": 0,
-        "probability": 0.137
+        "away_goals": 1,
+        "probability": 0.133
       },
       "home_win_probability": 0.424,
       "draw_probability": 0.279,
@@ -16413,9 +16413,9 @@
       "away": "HESAP.COM ANTALYASPOR",
       "score": "1-0",
       "raw_predicted": "home",
-      "predicted": "home",
+      "predicted": "draw",
       "actual": "home",
-      "correct": true,
+      "correct": false,
       "confidence": "LOW",
       "risk_flags": [
         "xG farkı dar",
@@ -16458,10 +16458,10 @@
         }
       ],
       "recommended_scoreline": {
-        "score": "1-0",
+        "score": "1-1",
         "home_goals": 1,
-        "away_goals": 0,
-        "probability": 0.109
+        "away_goals": 1,
+        "probability": 0.131
       },
       "home_win_probability": 0.363,
       "draw_probability": 0.277,
@@ -17682,9 +17682,9 @@
       "away": "GAZİANTEP FUTBOL KULÜBÜ A.Ş.",
       "score": "0-0",
       "raw_predicted": "home",
-      "predicted": "home",
+      "predicted": "draw",
       "actual": "draw",
-      "correct": false,
+      "correct": true,
       "confidence": "LOW",
       "risk_flags": [
         "xG farkı dar",
@@ -17728,10 +17728,10 @@
         }
       ],
       "recommended_scoreline": {
-        "score": "1-0",
+        "score": "1-1",
         "home_goals": 1,
-        "away_goals": 0,
-        "probability": 0.107
+        "away_goals": 1,
+        "probability": 0.126
       },
       "home_win_probability": 0.41,
       "draw_probability": 0.276,
@@ -18323,9 +18323,9 @@
       "away": "KASIMPAŞA A.Ş.",
       "score": "1-1",
       "raw_predicted": "home",
-      "predicted": "draw",
+      "predicted": "home",
       "actual": "draw",
-      "correct": true,
+      "correct": false,
       "confidence": "MEDIUM",
       "risk_flags": [
         "beraberlik olasılığı canlı",
@@ -18367,10 +18367,10 @@
         }
       ],
       "recommended_scoreline": {
-        "score": "1-1",
+        "score": "1-0",
         "home_goals": 1,
-        "away_goals": 1,
-        "probability": 0.126
+        "away_goals": 0,
+        "probability": 0.131
       },
       "home_win_probability": 0.466,
       "draw_probability": 0.287,
@@ -18748,9 +18748,9 @@
       "away": "GENÇLERBİRLİĞİ",
       "score": "0-0",
       "raw_predicted": "home",
-      "predicted": "home",
+      "predicted": "draw",
       "actual": "draw",
-      "correct": false,
+      "correct": true,
       "confidence": "LOW",
       "risk_flags": [
         "xG farkı dar",
@@ -18792,10 +18792,10 @@
         }
       ],
       "recommended_scoreline": {
-        "score": "2-1",
-        "home_goals": 2,
+        "score": "1-1",
+        "home_goals": 1,
         "away_goals": 1,
-        "probability": 0.087
+        "probability": 0.113
       },
       "home_win_probability": 0.389,
       "draw_probability": 0.269,
@@ -18856,7 +18856,7 @@
       "away": "GAZİANTEP FUTBOL KULÜBÜ A.Ş.",
       "score": "1-4",
       "raw_predicted": "home",
-      "predicted": "home",
+      "predicted": "draw",
       "actual": "away",
       "correct": false,
       "confidence": "LOW",
@@ -18901,10 +18901,10 @@
         }
       ],
       "recommended_scoreline": {
-        "score": "1-0",
+        "score": "1-1",
         "home_goals": 1,
-        "away_goals": 0,
-        "probability": 0.113
+        "away_goals": 1,
+        "probability": 0.131
       },
       "home_win_probability": 0.381,
       "draw_probability": 0.277,
@@ -19069,7 +19069,7 @@
       "away": "TÜMOSAN KONYASPOR",
       "score": "1-2",
       "raw_predicted": "home",
-      "predicted": "home",
+      "predicted": "draw",
       "actual": "away",
       "correct": false,
       "confidence": "LOW",
@@ -19114,10 +19114,10 @@
         }
       ],
       "recommended_scoreline": {
-        "score": "1-0",
+        "score": "1-1",
         "home_goals": 1,
-        "away_goals": 0,
-        "probability": 0.121
+        "away_goals": 1,
+        "probability": 0.131
       },
       "home_win_probability": 0.41,
       "draw_probability": 0.278,
@@ -25140,9 +25140,9 @@
       "away": "İKAS EYÜPSPOR",
       "score": "1-1",
       "raw_predicted": "home",
-      "predicted": "home",
+      "predicted": "draw",
       "actual": "draw",
-      "correct": false,
+      "correct": true,
       "confidence": "LOW",
       "risk_flags": [
         "xG farkı dar",
@@ -25186,10 +25186,10 @@
         }
       ],
       "recommended_scoreline": {
-        "score": "1-0",
+        "score": "1-1",
         "home_goals": 1,
-        "away_goals": 0,
-        "probability": 0.117
+        "away_goals": 1,
+        "probability": 0.131
       },
       "home_win_probability": 0.392,
       "draw_probability": 0.278,
@@ -25572,7 +25572,7 @@
       "away": "KASIMPAŞA A.Ş.",
       "score": "3-2",
       "raw_predicted": "away",
-      "predicted": "away",
+      "predicted": "draw",
       "actual": "home",
       "correct": false,
       "confidence": "LOW",
@@ -25616,10 +25616,10 @@
         }
       ],
       "recommended_scoreline": {
-        "score": "0-1",
-        "home_goals": 0,
+        "score": "1-1",
+        "home_goals": 1,
         "away_goals": 1,
-        "probability": 0.125
+        "probability": 0.131
       },
       "home_win_probability": 0.301,
       "draw_probability": 0.275,
@@ -25785,7 +25785,7 @@
       "away": "TRABZONSPOR A.Ş.",
       "score": "1-2",
       "raw_predicted": "home",
-      "predicted": "home",
+      "predicted": "draw",
       "actual": "away",
       "correct": false,
       "confidence": "LOW",
@@ -25830,10 +25830,10 @@
         }
       ],
       "recommended_scoreline": {
-        "score": "2-1",
-        "home_goals": 2,
+        "score": "1-1",
+        "home_goals": 1,
         "away_goals": 1,
-        "probability": 0.087
+        "probability": 0.117
       },
       "home_win_probability": 0.385,
       "draw_probability": 0.278,

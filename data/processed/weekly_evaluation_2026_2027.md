@@ -5,8 +5,8 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 ## Genel Karne
 
 - Değerlendirilen maç: **34**
-- İsabet: **13/34** (%38)
-- Beraberlik yakalama: **0/7** (%0)
+- İsabet: **14/34** (%41)
+- Beraberlik yakalama: **1/7** (%14)
 - Yüksek güvenli maç isabeti: **6/13** (%46)
 
 ## Hafta 4 — 2/7 isabet (%29)
@@ -49,12 +49,12 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 | GÖZTEPE A.Ş. - GENÇLERBİRLİĞİ | 0 - 1 | Ev | ❌ | MEDIUM |
 | KOCAELİSPOR - AMED SPORTİF FAALİYETLER | 2 - 0 | Deplasman | ❌ | HIGH |
 
-## Hafta 1 — 3/9 isabet (%33)
+## Hafta 1 — 4/9 isabet (%44)
 
 | Maç | Skor | Tahmin | Sonuç | Güven |
 | --- | --- | --- | --- | --- |
 | GALATASARAY A.Ş. - ARCA ÇORUM FK | 2 - 2 | Ev | ❌ | HIGH |
-| KASIMPAŞA A.Ş. - TRABZONSPOR A.Ş. | 1 - 1 | Ev | ❌ | LOW |
+| KASIMPAŞA A.Ş. - TRABZONSPOR A.Ş. | 1 - 1 | Beraberlik | ✅ | LOW |
 | TÜMOSAN KONYASPOR - ÇAYKUR RİZESPOR A.Ş. | 0 - 1 | Ev | ❌ | MEDIUM |
 | GAZİANTEP FUTBOL KULÜBÜ A.Ş. - CORENDON ALANYASPOR | 1 - 1 | Deplasman | ❌ | MEDIUM |
 | GENÇLERBİRLİĞİ - FENERBAHÇE A.Ş. | 2 - 1 | Deplasman | ❌ | HIGH |

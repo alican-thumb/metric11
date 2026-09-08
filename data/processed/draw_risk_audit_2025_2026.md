@@ -19,14 +19,14 @@
 
 - 20.09.2025 - 17:00 | GENÇLERBİRLİĞİ - İKAS EYÜPSPOR | skor 1-0 | tahmin=Ev gerçek=Ev | risk=76 | neden=xg_margin_very_narrow, draw_scoreline_top_two, probability_margin_narrow, strength_edge_narrow
 - 20.09.2025 - 20:00 | TRABZONSPOR A.Ş. - GAZİANTEP FUTBOL KULÜBÜ A.Ş. | skor 1-1 | tahmin=X gerçek=X | risk=85 | neden=draw_probability_high, xg_margin_narrow, top_draw_scoreline, probability_margin_watch
-- 27.09.2025 - 17:00 | GAZİANTEP FUTBOL KULÜBÜ A.Ş. - SAMSUNSPOR A.Ş. | skor 2-2 | tahmin=Dep gerçek=X | risk=83 | neden=draw_probability_live, xg_margin_narrow, draw_scoreline_top_two, probability_margin_narrow
+- 27.09.2025 - 17:00 | GAZİANTEP FUTBOL KULÜBÜ A.Ş. - SAMSUNSPOR A.Ş. | skor 2-2 | tahmin=X gerçek=X | risk=90 | neden=draw_probability_live, xg_margin_narrow, top_draw_scoreline, probability_margin_narrow
 - 28.09.2025 - 17:00 | TÜMOSAN KONYASPOR - RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ | skor 2-1 | tahmin=Ev gerçek=Ev | risk=57 | neden=draw_probability_live, xg_margin_watch, draw_scoreline_top_two, strength_edge_very_narrow
-- 28.09.2025 - 17:00 | ÇAYKUR RİZESPOR A.Ş. - KASIMPAŞA A.Ş. | skor 1-2 | tahmin=Ev gerçek=Dep | risk=100 | neden=draw_probability_live, xg_margin_very_narrow, draw_scoreline_top_two, probability_margin_very_narrow
+- 28.09.2025 - 17:00 | ÇAYKUR RİZESPOR A.Ş. - KASIMPAŞA A.Ş. | skor 1-2 | tahmin=X gerçek=Dep | risk=100 | neden=draw_probability_live, xg_margin_very_narrow, top_draw_scoreline, probability_margin_very_narrow
 - 28.09.2025 - 20:00 | ZECORNER KAYSERİSPOR - GENÇLERBİRLİĞİ | skor 1-1 | tahmin=Ev gerçek=X | risk=88 | neden=draw_probability_watch, xg_margin_very_narrow, draw_scoreline_top_two, probability_margin_very_narrow
 - 3.10.2025 - 20:00 | HESAP.COM ANTALYASPOR - ÇAYKUR RİZESPOR A.Ş. | skor 2-5 | tahmin=Ev gerçek=Dep | risk=63 | neden=draw_probability_watch, xg_margin_narrow, draw_scoreline_top_two, probability_margin_narrow
 - 4.10.2025 - 14:30 | GENÇLERBİRLİĞİ - CORENDON ALANYASPOR | skor 2-2 | tahmin=X gerçek=X | risk=90 | neden=draw_probability_high, xg_margin_narrow, top_draw_scoreline, probability_margin_narrow
-- 4.10.2025 - 17:00 | KOCAELİSPOR - İKAS EYÜPSPOR | skor 1-0 | tahmin=Ev gerçek=Ev | risk=90 | neden=draw_probability_live, xg_margin_very_narrow, draw_scoreline_top_two, probability_margin_narrow
-- 5.10.2025 - 14:30 | KASIMPAŞA A.Ş. - TÜMOSAN KONYASPOR | skor 1-1 | tahmin=Dep gerçek=X | risk=84 | neden=draw_probability_live, xg_margin_very_narrow, draw_scoreline_top_two, probability_margin_narrow
+- 4.10.2025 - 17:00 | KOCAELİSPOR - İKAS EYÜPSPOR | skor 1-0 | tahmin=X gerçek=Ev | risk=97 | neden=draw_probability_live, xg_margin_very_narrow, top_draw_scoreline, probability_margin_narrow
+- 5.10.2025 - 14:30 | KASIMPAŞA A.Ş. - TÜMOSAN KONYASPOR | skor 1-1 | tahmin=X gerçek=X | risk=91 | neden=draw_probability_live, xg_margin_very_narrow, top_draw_scoreline, probability_margin_narrow
 - 5.10.2025 - 20:00 | SAMSUNSPOR A.Ş. - FENERBAHÇE A.Ş. | skor 0-0 | tahmin=X gerçek=X | risk=72 | neden=draw_probability_high, xg_margin_watch, top_draw_scoreline, probability_margin_watch
 - 18.10.2025 - 17:00 | ÇAYKUR RİZESPOR A.Ş. - TRABZONSPOR A.Ş. | skor 1-2 | tahmin=Dep gerçek=Dep | risk=63 | neden=draw_probability_watch, xg_margin_narrow, draw_scoreline_top_two, probability_margin_narrow
 - 19.10.2025 - 17:00 | CORENDON ALANYASPOR - GÖZTEPE A.Ş. | skor 1-0 | tahmin=X gerçek=Ev | risk=77 | neden=draw_probability_high, xg_margin_watch, top_draw_scoreline, probability_margin_narrow
