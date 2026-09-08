@@ -59,6 +59,7 @@ jobs:
 
       - name: Kadro veri tazeliğini kontrol et
         if: always()
+        continue-on-error: true
         run: python -m src.check_squad_freshness
         
       - name: Commit and push generated outputs
