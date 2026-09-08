@@ -246,7 +246,15 @@ def predict_match(
         transfer_away = combined_transfer_edge(away)
         transfer_signal = {"home": transfer_home, "away": transfer_away}
         if transfer_home.get("available") or transfer_away.get("available"):
-            strength_edge += (transfer_home.get("edge", 0.0) - transfer_away.get("edge", 0.0)) * 0.5
+            # 2026-09-08 kullanıcı kararı ("doğrusunu yap"): ×0.5 ağırlığı diğer ileriye-dönük
+            # sinyallerle (Avrupa formu ×1.0 — 2026-08-14 kullanıcı tercihi, ceza/fikstür
+            # sıkışıklığı da ×1.0) tutarsızdı — transfer sinyaline özel bir küçültme için
+            # belgelenmiş bir gerekçe yoktu. Aynı ×1.0'a çekildi: veri artık doğru (isim
+            # eşleştirme bug'ı düzeltildi, bkz. PROJECT_STATE), ağırlık da artık diğerleriyle
+            # tutarlı. Hâlâ capli (±0.15) ve `strength_edge`'in kendisi de expected goal'e
+            # geçerken 0.05/0.04 ile yumuşatılıyor (bu paylaşılan yumuşatma dokunulmadı) —
+            # yani tek bir büyük transfer tek başına tahmini alt üst edemez.
+            strength_edge += transfer_home.get("edge", 0.0) - transfer_away.get("edge", 0.0)
 
     # Avrupa kupası fikstür sıkışıklığı/yorgunluk sinyali: yalnızca ileriye dönük
     # tahminlerde (apply_fixture_congestion=True, bkz. build_season_fixture_predictions.py)
