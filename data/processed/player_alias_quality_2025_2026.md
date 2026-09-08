@@ -10,8 +10,8 @@
 
 ## Karşılaştırmalar
 
-- league_tff_vs_transfermarkt: 593/859 eşleşme (%69)
-  - Manuel eşleme: 4 (ağ teyidi bekleyen=4); kullanılabilir eşleme %70
+- league_tff_vs_transfermarkt: 530/859 eşleşme (%62)
+  - Manuel eşleme: 4 (ağ teyidi bekleyen=4); kullanılabilir eşleme %62
 - besiktas_tff_vs_transfermarkt: 0/46 eşleşme (%0)
   - Ham tekil kaynak karşılaştırmasıdır; operasyonel manuel eşlemeler lig karşılaştırmasında izlenir.
 - scout_tff_vs_api_deep: 7/40 eşleşme (%18)
@@ -25,11 +25,11 @@
 - AMIR HADZIAHMETOVIC -> Amir Hadziahmetovic | skor=1.0 | canonical=AMIR HADZIAHMETOVIC
 - ASIM EFE IŞIK -> Asım Efe Işık | skor=1.0 | canonical=ASIM EFE ISIK
 - BADOBRE EMMANUEL ELYSEE DJEDJE AGBADOU -> Emmanuel Agbadou | skor=1.0 | canonical=BADOBRE EMMANUEL ELYSEE DJEDJE AGBADOU
-- CENGİZ ÜNDER -> Cengiz Ünder | skor=1.0 | canonical=CENGIZ UNDER
 - DAVID JURASEK -> David Jurásek | skor=1.0 | canonical=DAVID JURASEK
 - DEMİR EGE TIKNAZ -> Demir Ege Tıknaz | skor=1.0 | canonical=DEMIR EGE TIKNAZ
 - DEVIS ESTIVEN  VASQUEZ LLACH -> Devis Vásquez | skor=1.0 | canonical=DEVIS ESTIVEN VASQUEZ LLACH
 - DEVRİM ŞAHİN -> Devrim Şahin | skor=1.0 | canonical=DEVRIM SAHIN
+- EL BILAL TOURE -> El Bilal Touré | skor=1.0 | canonical=EL BILAL TOURE
 
 ### besiktas_tff_vs_transfermarkt
 
@@ -57,20 +57,20 @@
 - MARUIS TRESOR DOH (ALAGÖZ HOLDİNG IĞDIR FK)
 - ROBIN YALÇIN (ALAGÖZ HOLDİNG IĞDIR FK)
 - RYAN ISAAC MENDES (ALAGÖZ HOLDİNG IĞDIR FK)
+- SERDAR GÜRLER (ALAGÖZ HOLDİNG IĞDIR FUTBOL KULÜBÜ)
 - ALBAN-MARC LAFONT (AMED SPORTİF FAALİYETLER)
 - AMADOU CİSSE (AMED SPORTİF FAALİYETLER)
-- ATAKAN MÜJDE (AMED SPORTİF FAALİYETLER)
 - BERK KIZILDEMİR (AMED SPORTİF FAALİYETLER)
 - CEM ÜSTÜNDAĞ (AMED SPORTİF FAALİYETLER)
+- CENGİZ UMUT MERAŞ (AMED SPORTİF FAALİYETLER)
 - DAVID ROBERT BATES (AMED SPORTİF FAALİYETLER)
 - DIAA SABI'A (AMED SPORTİF FAALİYETLER)
 - DİLHAN DEMİR (AMED SPORTİF FAALİYETLER)
 - ERMAL KRASNIQI (AMED SPORTİF FAALİYETLER)
+- FURKAN SOYALP (AMED SPORTİF FAALİYETLER)
 - GIFT EMMANUEL  ORBAN (AMED SPORTİF FAALİYETLER)
 - GÖKHAN GÜL (AMED SPORTİF FAALİYETLER)
 - KAHRAMAN DEMİRTAŞ (AMED SPORTİF FAALİYETLER)
-- LUMBARDH DELLOVA (AMED SPORTİF FAALİYETLER)
-- MBAYE DIAGNE (AMED SPORTİF FAALİYETLER)
 
 ### besiktas_tff_vs_transfermarkt
 - AHMET SAMİ BİRCAN (BEŞİKTAŞ A.Ş.)
