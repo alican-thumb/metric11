@@ -17,11 +17,11 @@
 - Transfermarkt Süper Lig oyuncusu: 817
 - Transfermarkt Süper Lig toplam değer: €1,741,910,000
 - Transfermarkt oyuncu profil detayı/tam adı: 854/21
-- TFF / Transfermarkt doğrulanmış snapshot eşleşmesi: 593/859 (%69)
-- TFF / Transfermarkt doğrulanmış lig snapshot içi kapsama: 593/724 (%81.9)
+- TFF / Transfermarkt doğrulanmış snapshot eşleşmesi: 593/863 (%69)
+- TFF / Transfermarkt doğrulanmış lig snapshot içi kapsama: 593/728 (%81.5)
 - TFF / Transfermarkt manuel eşleme: 4 profil; ağ teyidi bekleyen 4
-- TFF / Transfermarkt manuel dahil kullanılabilir lig içi kapsama: 597/724 (%82.5)
-- TFF / Transfermarkt çözülmemiş kuyruğu: 262 profil; scout bloke eden 0
+- TFF / Transfermarkt manuel dahil kullanılabilir lig içi kapsama: 597/728 (%82.0)
+- TFF / Transfermarkt çözülmemiş kuyruğu: 266 profil; scout bloke eden 0
 - TFF / Transfermarkt yüksek kullanımlı çözülmemiş: 18 profil
 - Beşiktaş maç önü raporu: 29
 - Tüm takım maç önü raporu: 522 (18 takım)
@@ -68,9 +68,9 @@
 - Haber/sakat-cezalı sinyal: 3
 - Haber/sakat-cezalı yapılandırılmış oyuncu: 5
 - RSS haber kaydı: 238
-- Resmi kulüp web duyurusu: 29 | erişilebilir site=17/21 | durum=PARTIAL_SUCCESS
-- Haber analizine alınan içerik: 458
-- Transfer haber iddiası: 40 | resmi=1, çoklu kaynak=1, söylenti=12, inceleme gerekli=26
+- Resmi kulüp web duyurusu: 31 | erişilebilir site=17/21 | durum=PARTIAL_SUCCESS
+- Haber analizine alınan içerik: 462
+- Transfer haber iddiası: 39 | resmi=1, çoklu kaynak=1, söylenti=13, inceleme gerekli=24
 - X gönderi snapshot'ı: 0 | başarılı hesap=0 | kaynak=x_api | durum=MISSING_CREDENTIALS
 - API-Football 2024 başarılı endpoint: 7
 - API-Football 2024 fikstür: 342
@@ -89,11 +89,11 @@
 ## Kaynaklar
 
 - TFF maç detayları / public='Resmi federasyon maç verisi' (SCRAPING, risk=MEDIUM, license=VERIFY_TERMS): Süper Lig 306 maç
-- TFF oyuncu profilleri / public='Resmi federasyon oyuncu profili' (SCRAPING, risk=MEDIUM, license=VERIFY_TERMS): İşlenen lig profil havuzu 859 profil; lig snapshot içi eşleşme ayrıca ölçülür
+- TFF oyuncu profilleri / public='Resmi federasyon oyuncu profili' (SCRAPING, risk=MEDIUM, license=VERIFY_TERMS): İşlenen lig profil havuzu 863 profil; lig snapshot içi eşleşme ayrıca ölçülür
 - Transfermarkt kadro sayfası / public='Piyasa değeri ve kadro profili' (SCRAPING, risk=HIGH, license=VERIFY_TERMS_BEFORE_COMMERCIAL_USE): Süper Lig 2025/26: 18 kulüp kadrosu, pozisyon ve piyasa değeri
 - Oyuncu uygunluk sinyalleri / public='Model türetilmiş uygunluk sinyali' (DERIVED+MANUAL, risk=MEDIUM, license=DERIVED_FROM_INTERNAL_DATA_AND_MANUAL_VERIFICATION): Beşiktaş 2025/26 kart cezası çıkarımı + manuel sakat/cezalı override dosyası
-- Türk spor haber RSS akışı / public='Güncel spor haber bağlamı' (RSS_NEWS, risk=MEDIUM, license=VERIFY_TERMS_AND_QUOTE_LIMITS): 238 ham haber; 458 ilgili analiz; 40 transfer iddiası
-- Süper Lig resmi kulüp web duyuruları / public='Resmi kulüp duyuruları' (OFFICIAL_CLUB_NEWS, risk=LOW_MEDIUM, license=VERIFY_TERMS_AND_LINK_DERIVED_DISPLAY): 29 duyuru; 17/21 kulüp sitesi erişilebilir; durum=PARTIAL_SUCCESS
+- Türk spor haber RSS akışı / public='Güncel spor haber bağlamı' (RSS_NEWS, risk=MEDIUM, license=VERIFY_TERMS_AND_QUOTE_LIMITS): 238 ham haber; 462 ilgili analiz; 39 transfer iddiası
+- Süper Lig resmi kulüp web duyuruları / public='Resmi kulüp duyuruları' (OFFICIAL_CLUB_NEWS, risk=LOW_MEDIUM, license=VERIFY_TERMS_AND_LINK_DERIVED_DISPLAY): 31 duyuru; 17/21 kulüp sitesi erişilebilir; durum=PARTIAL_SUCCESS
 - X resmi kulüp ve futbol haber hesapları / public='Resmi kulüp ve sosyal haber duyuruları' (X_SOCIAL_SIGNAL, risk=MEDIUM, license=PLATFORM_TERMS_AND_DISPLAY_REQUIREMENTS): Collector çalıştı (x_api/MISSING_CREDENTIALS); kullanılabilir gönderi snapshot'ı yok
 - FM/FIFA tarzı oyuncu attribute kaynakları / public='Oyuncu attribute ve potansiyel veri seti' (OPEN_DATASET_OR_VERIFIED_EXPORT, risk=LOW_TO_HIGH_BY_LICENSE, license=SOURCE_SPECIFIC): 4 aday kaynak kaydı; normalize import varsa 691 oyuncu
 - API-Football Süper Lig snapshot / public='Dış futbol API doğrulama ve geçmiş sezon zenginleştirme' (API, risk=MEDIUM, license=API_PLAN_LIMITED): 2024 sezonu ücretsiz planda erişilebilir; 2025 sezonu plan kısıtı nedeniyle boş dönüyor; derin snapshot rate-limit kontrollü çalışır

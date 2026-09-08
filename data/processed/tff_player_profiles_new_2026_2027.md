@@ -1,12 +1,12 @@
 # TFF Oyuncu Profilleri
 
 - Takım filtresi: Yok
-- Profil sayısı: 449
+- Profil sayısı: 455
 - Hata sayısı: 0
 - Ortalama yaş: 25.9
-- Ortalama kalan sözleşme ayı: 22.1
-- 23 yaş ve altı oyuncu: 148
-- 13 ay içinde sözleşmesi bitecek oyuncu: 174
+- Ortalama kalan sözleşme ayı: 22.0
+- 23 yaş ve altı oyuncu: 151
+- 13 ay içinde sözleşmesi bitecek oyuncu: 177
 
 ## Genç Oyuncular
 
@@ -43,33 +43,33 @@
 
 ## Sözleşme Fırsatları
 
-- YAKUP KIRTAY (ERZURUMSPOR FK): kalan ay=8, bitiş=2027-05-31
 - AMIR HADZIAHMETOVIC (BEŞİKTAŞ A.Ş.): kalan ay=8, bitiş=2027-05-31
-- İSMAİL YÜKSEK (FENERBAHÇE A.Ş.): kalan ay=8, bitiş=2027-05-31
 - BARIŞ ALPER YILMAZ (GALATASARAY A.Ş.): kalan ay=8, bitiş=2027-05-31
-- KAZIMCAN KARATAŞ (GALATASARAY A.Ş.): kalan ay=8, bitiş=2027-05-31
 - ENES ALBAK (SAMSUNSPOR A.Ş.): kalan ay=8, bitiş=2027-05-31
+- KAZIMCAN KARATAŞ (GALATASARAY A.Ş.): kalan ay=8, bitiş=2027-05-31
+- YAKUP KIRTAY (ERZURUMSPOR FK): kalan ay=8, bitiş=2027-05-31
 - YUNUS EMRE ÇİFT (SAMSUNSPOR A.Ş.): kalan ay=8, bitiş=2027-05-31
+- İSMAİL YÜKSEK (FENERBAHÇE A.Ş.): kalan ay=8, bitiş=2027-05-31
 - ABDELHAMID SABIRI (EYÜPSPOR): kalan ay=9, bitiş=2027-06-30
+- ABDURRAHİM DURSUN (GENÇLERBİRLİĞİ): kalan ay=9, bitiş=2027-06-30
+- ABDÜLKERİM BARDAKCI (GALATASARAY A.Ş.): kalan ay=9, bitiş=2027-06-30
+- ADAMA TRAORE (GENÇLERBİRLİĞİ): kalan ay=9, bitiş=2027-06-30
+- ADİL DEMİRBAĞ (TÜMOSAN KONYASPOR): kalan ay=9, bitiş=2027-06-30
+- AHMED ILDIZ (ARCA ÇORUM FK): kalan ay=9, bitiş=2027-06-30
+- AHMED KUTUCU (ÇAYKUR RİZESPOR A.Ş.): kalan ay=9, bitiş=2027-06-30
+- AHMED MORTADHA BEN OUANES (KASIMPAŞA A.Ş.): kalan ay=9, bitiş=2027-06-30
 - ALEX OJAHN  MATOS (GÖZTEPE A.Ş.): kalan ay=9, bitiş=2027-06-30
 - ALEXANDRE MANUEL PENETRA CORREIRA (ARCA ÇORUM FK): kalan ay=9, bitiş=2027-06-30
+- ALEXANDRU IULIAN MAXIM (GAZİANTEP FUTBOL KULÜBÜ A.Ş.): kalan ay=9, bitiş=2027-06-30
 - ALFREDO KULEMBE RIBEIRO (ARCA ÇORUM FK): kalan ay=9, bitiş=2027-06-30
+- ALLAN GODOI SANTOS (GÖZTEPE A.Ş.): kalan ay=9, bitiş=2027-06-30
+- ALİ EMRE YANAR (KASIMPAŞA A.Ş.): kalan ay=9, bitiş=2027-06-30
+- ALİ OSMAN KALIN (GAZİANTEP FUTBOL KULÜBÜ A.Ş.): kalan ay=9, bitiş=2027-06-30
+- ALİ YAVUZ KOL (KASIMPAŞA A.Ş.): kalan ay=9, bitiş=2027-06-30
 - AMAR GERXHALIU (ERZURUMSPOR FK): kalan ay=9, bitiş=2027-06-30
+- ANDRE ONANA ONANA (TRABZONSPOR A.Ş.): kalan ay=9, bitiş=2027-06-30
+- ANDREAS GIANNIOTIS (KASIMPAŞA A.Ş.): kalan ay=9, bitiş=2027-06-30
 - ANDREAS SKOV OLSEN (İSTANBUL BAŞAKŞEHİR FK): kalan ay=9, bitiş=2027-06-30
-- ARDA ÖZÇİMEN (GÖZTEPE A.Ş.): kalan ay=9, bitiş=2027-06-30
-- BANHIE XAVIER TANGUY ZOUKROU (KOCAELİSPOR): kalan ay=9, bitiş=2027-06-30
-- BEDİRHAN YILDIZ (KOCAELİSPOR): kalan ay=9, bitiş=2027-06-30
-- BILAL BOUTOBBA (EYÜPSPOR): kalan ay=9, bitiş=2027-06-30
-- BRANDON BAIYE (ERZURUMSPOR FK): kalan ay=9, bitiş=2027-06-30
-- CHANDREL GERAUD MASSANGA MATONDO (EYÜPSPOR): kalan ay=9, bitiş=2027-06-30
-- CHEIKH AHMET TIDIANE NIASSE (GENÇLERBİRLİĞİ): kalan ay=9, bitiş=2027-06-30
-- DIAA SABI'A (AMED SPORTİF FAALİYETLER): kalan ay=9, bitiş=2027-06-30
-- EBRIMA COLLEY (TÜMOSAN KONYASPOR): kalan ay=9, bitiş=2027-06-30
-- EREN TOZLU (ERZURUMSPOR FK): kalan ay=9, bitiş=2027-06-30
-- ERKAN ANAPA (ERZURUMSPOR FK): kalan ay=9, bitiş=2027-06-30
-- ERNEST POKU (BEŞİKTAŞ A.Ş.): kalan ay=9, bitiş=2027-06-30
-- EYÜP DEĞİRMENCİ (MALATYA YEŞİLYURT SPOR KULÜBÜ): kalan ay=9, bitiş=2027-06-30
-- FABIO MIRETTI (BEŞİKTAŞ A.Ş.): kalan ay=9, bitiş=2027-06-30
-- FERNANDO ANDRADE DOS SANTOS (BODRUM FK): kalan ay=9, bitiş=2027-06-30
-- FLORIN BOGDAN ŞTEFAN (GAZİANTEP FUTBOL KULÜBÜ A.Ş.): kalan ay=9, bitiş=2027-06-30
-- GIFT EMMANUEL  ORBAN (AMED SPORTİF FAALİYETLER): kalan ay=9, bitiş=2027-06-30
+- ANFERNEE JAMAL DIJKSTEEL (KOCAELİSPOR): kalan ay=9, bitiş=2027-06-30
+- ARDA KIZILDAĞ (GAZİANTEP FUTBOL KULÜBÜ A.Ş.): kalan ay=9, bitiş=2027-06-30
+- ARDA USLUOĞLU (CORENDON ALANYASPOR): kalan ay=9, bitiş=2027-06-30

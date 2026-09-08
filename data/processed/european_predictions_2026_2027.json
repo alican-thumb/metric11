@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-08T18:57:41.538752+00:00",
+  "generated_at": "2026-09-08T19:47:00.619821+00:00",
   "season": "2026-2027",
   "competitions": {
     "CL": {
@@ -87,7 +87,7 @@
           "group": "",
           "matchday": 1,
           "utc_date": "2026-09-08T19:00:00Z",
-          "status": "SCHEDULED",
+          "status": "IN_PLAY",
           "home": {
             "id": 86,
             "name": "Real Madrid CF",
@@ -100,7 +100,10 @@
             "short": "INT",
             "crest": "https://crests.football-data.org/108.png"
           },
-          "actual_score": null,
+          "actual_score": {
+            "home": 2,
+            "away": 0
+          },
           "prediction": {
             "home_win": 0.388,
             "draw": 0.277,
@@ -113,7 +116,7 @@
             "lam_home": 1.538,
             "lam_away": 1.416
           },
-          "prediction_outcome": "pending"
+          "prediction_outcome": "correct"
         },
         {
           "match_id": 575326,
@@ -121,7 +124,7 @@
           "group": "",
           "matchday": 1,
           "utc_date": "2026-09-08T19:00:00Z",
-          "status": "SCHEDULED",
+          "status": "IN_PLAY",
           "home": {
             "id": 503,
             "name": "FC Porto",
@@ -134,7 +137,10 @@
             "short": "MCI",
             "crest": "https://crests.football-data.org/65.png"
           },
-          "actual_score": null,
+          "actual_score": {
+            "home": 0,
+            "away": 0
+          },
           "prediction": {
             "home_win": 0.3,
             "draw": 0.273,
@@ -147,7 +153,7 @@
             "lam_home": 1.334,
             "lam_away": 1.633
           },
-          "prediction_outcome": "pending"
+          "prediction_outcome": "wrong"
         },
         {
           "match_id": 575327,
@@ -155,7 +161,7 @@
           "group": "",
           "matchday": 1,
           "utc_date": "2026-09-08T19:00:00Z",
-          "status": "SCHEDULED",
+          "status": "IN_PLAY",
           "home": {
             "id": 4,
             "name": "Borussia Dortmund",
@@ -168,7 +174,10 @@
             "short": "VIL",
             "crest": "https://crests.football-data.org/94.png"
           },
-          "actual_score": null,
+          "actual_score": {
+            "home": 0,
+            "away": 0
+          },
           "prediction": {
             "home_win": 0.696,
             "draw": 0.191,
@@ -181,7 +190,7 @@
             "lam_home": 2.452,
             "lam_away": 0.888
           },
-          "prediction_outcome": "pending"
+          "prediction_outcome": "wrong"
         },
         {
           "match_id": 575328,
@@ -189,7 +198,7 @@
           "group": "",
           "matchday": 1,
           "utc_date": "2026-09-08T19:00:00Z",
-          "status": "SCHEDULED",
+          "status": "IN_PLAY",
           "home": {
             "id": 521,
             "name": "Lille OSC",
@@ -202,7 +211,10 @@
             "short": "BET",
             "crest": "https://crests.football-data.org/90.png"
           },
-          "actual_score": null,
+          "actual_score": {
+            "home": 1,
+            "away": 0
+          },
           "prediction": {
             "home_win": 0.374,
             "draw": 0.277,
@@ -215,7 +227,7 @@
             "lam_home": 1.505,
             "lam_away": 1.447
           },
-          "prediction_outcome": "pending"
+          "prediction_outcome": "correct"
         },
         {
           "match_id": 575329,
@@ -4911,9 +4923,9 @@
         }
       ],
       "accuracy": {
-        "finished": 2,
-        "correct": 1,
-        "wrong": 1,
+        "finished": 6,
+        "correct": 3,
+        "wrong": 3,
         "pct": 50.0
       }
     },
