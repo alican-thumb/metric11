@@ -218,6 +218,8 @@ def fetch_competition_from_api_football(code: str) -> dict | None:
         return None
     fixtures = result.json_data.get("response") or []
     if not fixtures:
+        print(f"  API-Football fallback: {code} için sezon {SEASON} fikstürü boş döndü "
+              f"(muhtemelen UEFA henüz yayınlamadı — CL'den ~2-3 hafta sonra başlar).", flush=True)
         return None
     league_name = ((fixtures[0].get("league") or {}).get("name") or "").lower()
     expected = API_FOOTBALL_NAME_CHECK.get(code, "")
@@ -280,6 +282,14 @@ def fetch_competition(key: str, code: str, short: str, name: str) -> dict:
         if any(tc.lower() in t.get("name", "").lower() for tc in TURKISH_CLUBS)
     }
 
+    note = None
+    if not matches:
+        note = (
+            "Hiçbir kaynaktan fikstür alınamadı — muhtemelen UEFA bu turnuvanın "
+            f"{SEASON} sezonu fikstürünü henüz yayınlamadı (CL'den ~2-3 hafta sonra "
+            "başlar). Bir sonraki koleksiyonda otomatik dolacak, kod değişikliği gerekmez."
+        )
+
     print(f"  {len(matches)} maç, {len(teams)} takım "
           f"({len(turkish_ids)} Türk kulüp)", flush=True)
 
@@ -291,6 +301,7 @@ def fetch_competition(key: str, code: str, short: str, name: str) -> dict:
         "matches": matches,
         "teams": teams,
         "turkish_team_ids": list(turkish_ids),
+        "note": note,
     }
 
 
