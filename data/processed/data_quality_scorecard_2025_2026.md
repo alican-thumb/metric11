@@ -1,6 +1,6 @@
 # Veri Kalite ve İstatistik Scorecard
 
-- Ambar: `/Users/alicanakyol/Documents/analiz/data/processed/metric11_warehouse.sqlite`
+- Ambar: `/home/runner/work/metric11/metric11/data/processed/metric11_warehouse.sqlite`
 - Genel skor: 85.0/100
 
 ## Kontroller
