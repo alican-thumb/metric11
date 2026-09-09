@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T16:40:48.199372+00:00",
+  "generated_at": "2026-09-09T20:59:23.593346+00:00",
   "season": "2026-2027",
   "competitions": {
     "CL": {
@@ -235,7 +235,7 @@
           "group": "",
           "matchday": 1,
           "utc_date": "2026-09-09T16:45:00Z",
-          "status": "TIMED",
+          "status": "FINISHED",
           "home": {
             "id": 81,
             "name": "FC Barcelona",
@@ -248,7 +248,10 @@
             "short": "FEY",
             "crest": "https://crests.football-data.org/675.png"
           },
-          "actual_score": null,
+          "actual_score": {
+            "home": 5,
+            "away": 1
+          },
           "prediction": {
             "home_win": 0.535,
             "draw": 0.251,
@@ -261,7 +264,7 @@
             "lam_home": 1.92,
             "lam_away": 1.134
           },
-          "prediction_outcome": "pending"
+          "prediction_outcome": "correct"
         },
         {
           "match_id": 575330,
@@ -269,7 +272,7 @@
           "group": "",
           "matchday": 1,
           "utc_date": "2026-09-09T16:45:00Z",
-          "status": "TIMED",
+          "status": "FINISHED",
           "home": {
             "id": 10,
             "name": "VfB Stuttgart",
@@ -282,7 +285,10 @@
             "short": "VIK",
             "crest": "https://crests.football-data.org/5720.png"
           },
-          "actual_score": null,
+          "actual_score": {
+            "home": 3,
+            "away": 1
+          },
           "prediction": {
             "home_win": 0.691,
             "draw": 0.193,
@@ -295,7 +301,7 @@
             "lam_home": 2.431,
             "lam_away": 0.896
           },
-          "prediction_outcome": "pending"
+          "prediction_outcome": "correct"
         },
         {
           "match_id": 575331,
@@ -303,7 +309,7 @@
           "group": "",
           "matchday": 1,
           "utc_date": "2026-09-09T19:00:00Z",
-          "status": "TIMED",
+          "status": "IN_PLAY",
           "home": {
             "id": 64,
             "name": "Liverpool FC",
@@ -316,7 +322,10 @@
             "short": "ATL",
             "crest": "https://crests.football-data.org/78.png"
           },
-          "actual_score": null,
+          "actual_score": {
+            "home": 2,
+            "away": 1
+          },
           "prediction": {
             "home_win": 0.431,
             "draw": 0.273,
@@ -329,7 +338,7 @@
             "lam_home": 1.645,
             "lam_away": 1.324
           },
-          "prediction_outcome": "pending"
+          "prediction_outcome": "correct"
         },
         {
           "match_id": 575332,
@@ -337,7 +346,7 @@
           "group": "",
           "matchday": 1,
           "utc_date": "2026-09-09T19:00:00Z",
-          "status": "TIMED",
+          "status": "IN_PLAY",
           "home": {
             "id": 524,
             "name": "Paris Saint-Germain FC",
@@ -350,7 +359,10 @@
             "short": "SBA",
             "crest": "https://crests.football-data.org/7509.png"
           },
-          "actual_score": null,
+          "actual_score": {
+            "home": 5,
+            "away": 1
+          },
           "prediction": {
             "home_win": 0.636,
             "draw": 0.217,
@@ -363,7 +375,7 @@
             "lam_home": 2.233,
             "lam_away": 0.975
           },
-          "prediction_outcome": "pending"
+          "prediction_outcome": "correct"
         },
         {
           "match_id": 575333,
@@ -371,7 +383,7 @@
           "group": "",
           "matchday": 1,
           "utc_date": "2026-09-09T19:00:00Z",
-          "status": "TIMED",
+          "status": "IN_PLAY",
           "home": {
             "id": 113,
             "name": "SSC Napoli",
@@ -384,7 +396,10 @@
             "short": "ARS",
             "crest": "https://crests.football-data.org/57.png"
           },
-          "actual_score": null,
+          "actual_score": {
+            "home": 0,
+            "away": 1
+          },
           "prediction": {
             "home_win": 0.21,
             "draw": 0.25,
@@ -397,7 +412,7 @@
             "lam_home": 1.126,
             "lam_away": 1.933
           },
-          "prediction_outcome": "pending"
+          "prediction_outcome": "correct"
         },
         {
           "match_id": 575334,
@@ -405,7 +420,7 @@
           "group": "",
           "matchday": 1,
           "utc_date": "2026-09-09T19:00:00Z",
-          "status": "TIMED",
+          "status": "IN_PLAY",
           "home": {
             "id": 498,
             "name": "Sporting Clube de Portugal",
@@ -418,7 +433,10 @@
             "short": "GAL",
             "crest": "https://crests.football-data.org/610.png"
           },
-          "actual_score": null,
+          "actual_score": {
+            "home": 3,
+            "away": 1
+          },
           "prediction": {
             "home_win": 0.408,
             "draw": 0.275,
@@ -431,7 +449,7 @@
             "lam_home": 1.587,
             "lam_away": 1.372
           },
-          "prediction_outcome": "pending"
+          "prediction_outcome": "correct"
         },
         {
           "match_id": 575335,
@@ -4923,10 +4941,10 @@
         }
       ],
       "accuracy": {
-        "finished": 6,
-        "correct": 4,
+        "finished": 12,
+        "correct": 10,
         "wrong": 2,
-        "pct": 66.7
+        "pct": 83.3
       }
     },
     "EL": {
