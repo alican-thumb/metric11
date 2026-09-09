@@ -1,22 +1,24 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-09-09T00:13:50.067609+00:00
+Üretim zamanı: 2026-09-09T04:41:54.482728+00:00
 Toplam ilgili haber: 50
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [ÖZET | Real Madrid, evinde Inter'i devirdi](https://www.cnnturk.com/spor/futbol/ozet-real-madrid-evinde-interi-devirdi-3464463) — CNN Türk Spor · 2026-09-09T07:31:26+00:00 · turnuva=CL · kulüp=—
+- [Mbappe ve Arda Güler ödülünü aldı](https://www.cnnturk.com/spor/futbol/mbappe-ve-arda-guler-odulunu-aldi-3464459) — CNN Türk Spor · 2026-09-09T07:10:31+00:00 · turnuva=CL · kulüp=—
 - [Şampiyonlar Ligi'nde perde açıldı: Devler sahneye çıktı](https://www.cnnturk.com/spor/futbol/sampiyonlar-liginde-perde-acildi-devler-sahneye-cikti-3464385) — CNN Türk Spor · 2026-09-09T01:44:30+00:00 · turnuva=CL · kulüp=—
-- [Manchester City, Porto'yu Haaland ile yıktı!](https://www.sabah.com.tr/spor/futbol/2026/09/08/manchester-city-portoyu-haaland-ile-yikti) — Sabah Spor · 2026-09-09T00:23:52+03:00 · turnuva=CL · kulüp=—
-- [Devler Ligi'nde heyecan başladı! İşte gecenin sonuçları...](https://www.aksam.com.tr/spor/devler-liginde-heyecan-basladi-iste-gecenin-sonuclari/haber-1696893) — Aksam Spor · 2026-09-09T00:16:00+03:00 · turnuva=CL · kulüp=—
-- [Galatasaray, Sporting maçına hazır](https://www.aksam.com.tr/spor/galatasaray-sporting-macina-hazir/haber-1696891) — Aksam Spor · 2026-09-08T23:43:00+03:00 · turnuva=CL · kulüp=Galatasaray
-- [Galatasaray, Sporting maçına hazır!](https://www.sabah.com.tr/spor/futbol/2026/09/08/galatasaray-sporting-macina-hazir) — Sabah Spor · 2026-09-08T22:50:44+03:00 · turnuva=CL · kulüp=Galatasaray
-- [Okan Buruk'tan Sporting maçı açıklaması: Çok iyi bir takıma karşı oynayacağız](https://www.sabah.com.tr/spor/futbol/2026/09/08/okan-buruktan-sporting-maci-aciklamasi-cok-iyi-bir-takima-karsi-oynayacagiz) — Sabah Spor · 2026-09-08T22:49:33+03:00 · turnuva=CL · kulüp=Galatasaray
+- [Vur pençeyi aslanım](https://www.sabah.com.tr/spor/galatasaray/vur-penceyi-aslanim-7657207) — Sabah Spor · 2026-09-09T00:34:23+03:00 · turnuva=CL · kulüp=—
+- [Galatasaray, Sporting maçına hazır](https://www.fotomac.com.tr/galatasaray/2026/09/08/galatasaray-sporting-macina-hazir) — Fotomaç · 2026-09-09T00:21:05+03:00 · turnuva=CL · kulüp=Galatasaray
+- [Şampiyonlar Ligi'nde sezon başladı! İşte günün sonuçları](https://www.fotomac.com.tr/sampiyonlarligi/2026/09/08/sampiyonlar-liginde-sezon-basladi) — Fotomaç · 2026-09-09T00:16:47+03:00 · turnuva=CL · kulüp=—
+- [Arda Güler'e Inter maçı öncesi 'dev' ödül!](https://www.fotomac.com.tr/millitakim/2026/09/08/arda-gulere-inter-maci-oncesi-dev-odul) — Fotomaç · 2026-09-09T00:16:45+03:00 · turnuva=CL · kulüp=—
+- [Şampiyonlar Ligi'nde Fenerbahçe ve Galatasaray'ın tur ihtimali belli oldu](https://www.fotomac.com.tr/sampiyonlarligi/2026/09/08/sampiyonlar-liginde-fenerbahce-ve-galatasarayin-tur-ihtimali-belli-oldu) — Fotomaç · 2026-09-09T00:16:23+03:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe
+- [Galatasaray'ın Sporting CP maçı kamp kadrosu açıklandı!](https://www.fotomac.com.tr/galatasaray/2026/09/08/galatasarayin-sporting-cp-maci-kamp-kadrosu-aciklandi) — Fotomaç · 2026-09-09T00:16:06+03:00 · turnuva=CL · kulüp=Galatasaray
+- [Sporting CP Teknik Direktörü Rui Borges: Galatasaray'ın çok kaliteli oyuncuları var](https://www.fotomac.com.tr/galatasaray/2026/09/08/sporting-cp-teknik-direktoru-rui-borges-galatasarayin-cok-kaliteli-oyunculari-var) — Fotomaç · 2026-09-09T00:15:08+03:00 · turnuva=CL · kulüp=Galatasaray
+- [Sporting CP, Galatasaray maçının hazırlıklarını tamamladı!](https://www.fotomac.com.tr/galatasaray/2026/09/08/sporting-cp-galatasaray-macinin-hazirliklarini-tamamladi) — Fotomaç · 2026-09-09T00:15:01+03:00 · turnuva=CL · kulüp=Galatasaray
 - [Borussia Dortmund 3-2 Villarreal maç özeti (Şampiyonlar Ligi)](https://www.hurriyet.com.tr/sporarena/borussia-dortmund-3-2-villarreal-mac-ozeti-sampiyonlar-ligi-43300727) — Hürriyet Spor · 2026-09-08T22:23:59+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Rafael Leao'den Sporting maçı sözleri: Galibiyet için hazırım](https://www.sabah.com.tr/spor/futbol/2026/09/08/rafael-leaoden-sporting-maci-sozleri-galibiyet-icin-hazirim) — Sabah Spor · 2026-09-08T22:18:07+03:00 · turnuva=CL · kulüp=Galatasaray
 - [Lille 2-3 Real Betis maç özeti (Şampiyonlar Ligi)](https://www.hurriyet.com.tr/sporarena/lille-2-3-real-betis-mac-ozeti-sampiyonlar-ligi-43300718) — Hürriyet Spor · 2026-09-08T22:16:34+00:00 · turnuva=CL · kulüp=—
-- [AEK, LASK'ı tek golle geçti!](https://www.sabah.com.tr/spor/futbol/2026/09/08/aek-laski-tek-golle-gecti) — Sabah Spor · 2026-09-08T22:01:54+03:00 · turnuva=CL · kulüp=—
-- [Aston Villa, Club Brugge'ü deplasmanda devirdi!](https://www.sabah.com.tr/spor/futbol/2026/09/08/aston-villa-club-bruggeu-deplasmanda-devirdi) — Sabah Spor · 2026-09-08T21:54:21+03:00 · turnuva=CL · kulüp=—
 - [Porto 0-2 Manchester City maç özeti (Şampiyonlar Ligi)](https://www.hurriyet.com.tr/sporarena/porto-0-2-manchester-city-mac-ozeti-sampiyonlar-ligi-43300708) — Hürriyet Spor · 2026-09-08T21:29:00+00:00 · turnuva=CL · kulüp=—
 - [REAL MADRID INTER CANLI İZLE: Şampiyonlar Ligi Real Madrid Inter Maçı Hangi Kanalda, Saat Kaçta? Maç Nereden İzlenir, Şifresiz Mi? Arda Güler Mi Hakan Çalhanoğlu Mu? İşte Maç Kadrosu...](https://www.cnnturk.com/spor/futbol/real-madrid-inter-canli-izle-sampiyonlar-ligi-real-madrid-inter-maci-hangi-kanalda-saat-kacta-mac-nereden-izlenir-sifresiz-mi-3464310) — CNN Türk Spor · 2026-09-08T21:02:28+00:00 · turnuva=CL · kulüp=—
 - [Club Brugge 2-3 Aston Villa maç özeti (Şampiyonlar Ligi)](https://www.hurriyet.com.tr/sporarena/club-brugge-2-3-aston-villa-mac-ozeti-sampiyonlar-ligi-43300692) — Hürriyet Spor · 2026-09-08T20:42:08+00:00 · turnuva=CL · kulüp=—
@@ -44,5 +46,3 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [FENERBAHÇE - ROMA MAÇI NE ZAMAN, HANGİ KANALDA, ŞİFRESİZ Mİ? Fenerbahçe maçı tarihi, canlı yayın kanalı ve maç saati](https://www.cnnturk.com/spor/futbol/fenerbahce-roma-maci-ne-zaman-hangi-kanalda-sifresiz-mi-fenerbahce-maci-tarihi-canli-yayin-kanali-ve-mac-saati-3463856) — CNN Türk Spor · 2026-09-08T09:15:20+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [ŞAMPİYONLAR LİGİ YENİ SEZON TARİHİ: Galatasaray ve Fenerbahçe Şampiyonlar Ligi maçları ne zaman, hangi tarihte, saat kaçta? 2026 - 2027 Şampiyonlar Ligi maç programı](https://www.cnnturk.com/spor/futbol/sampiyonlar-ligi-yeni-sezon-tarihi-galatasaray-ve-fenerbahce-sampiyonlar-ligi-maclari-ne-zaman-hangi-tarihte-saat-kacta-2026-3463682) — CNN Türk Spor · 2026-09-08T09:14:33+00:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe
 - [TRABZONSPOR KONFERANS LİGİ KADROSU: TS UEFA Listesi Belli Oldu Mu? Trabzonspor Konferans Ligi Kadrosunda Kimler Var?](https://www.cnnturk.com/spor/futbol/trabzonspor-konferans-ligi-kadrosu-ts-uefa-listesi-belli-oldu-mu-trabzonspor-konferans-ligi-kadrosunda-kimler-var-3462340) — CNN Türk Spor · 2026-09-08T09:11:25+00:00 · turnuva=ECL · kulüp=Trabzonspor
-- [FENERBAHÇE ŞAMPİYONLAR LİGİ KADROSU: FB UEFA Listesi Belli Oldu Mu? Fenerbahçe Şampiyonlar Ligi Kadrosunda Kimler Var? 18 Yıl Sonra Devler Ligi'nde!](https://www.cnnturk.com/spor/futbol/fenerbahce-sampiyonlar-ligi-kadrosu-fb-uefa-listesi-belli-oldu-mu-fenerbahce-sampiyonlar-ligi-kadrosunda-kimler-var-18-yil-sonra-3462221) — CNN Türk Spor · 2026-09-08T09:11:22+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Galatasaray 3 eksikle Sporting'e konuk olacak! Kamp kadrosu açıklandı](https://www.hurriyet.com.tr/sporarena/galatasaray-3-eksikle-sportinge-konuk-olacak-43299832) — Hürriyet Spor · 2026-09-08T08:42:00+00:00 · turnuva=CL · kulüp=Galatasaray
