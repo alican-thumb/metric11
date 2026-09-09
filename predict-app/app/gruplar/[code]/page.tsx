@@ -7,6 +7,7 @@ import { getRankedLeaderboard } from "@/lib/leaderboard";
 import { syncFinishedResults } from "@/lib/sync-results";
 import { LeaderboardTable } from "@/components/leaderboard-table";
 import { JoinGroupForm } from "@/components/join-group-form";
+import { ShareGroupInvite } from "@/components/share-group-invite";
 
 export default async function GroupPage({ params }: { params: Promise<{ code: string }> }) {
   const { code } = await params;
@@ -52,6 +53,7 @@ export default async function GroupPage({ params }: { params: Promise<{ code: st
       <p className="text-sm text-slate-400">
         Bu kodu paylaşarak arkadaşlarını davet edebilirsin — {members.length} üye.
       </p>
+      <ShareGroupInvite groupName={group.name} code={group.inviteCode} />
       <LeaderboardTable
         ranked={ranked}
         viewerId={user.id}
