@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T16:26:54.831768+00:00",
+  "generated_at": "2026-09-10T20:54:42.732862+00:00",
   "season": "2026-2027",
   "competitions": {
     "CL": {
@@ -457,7 +457,7 @@
           "group": "",
           "matchday": 1,
           "utc_date": "2026-09-10T16:45:00Z",
-          "status": "TIMED",
+          "status": "FINISHED",
           "home": {
             "id": 613,
             "name": "Fenerbahçe SK",
@@ -470,7 +470,10 @@
             "short": "ROM",
             "crest": "https://crests.football-data.org/100.png"
           },
-          "actual_score": null,
+          "actual_score": {
+            "home": 1,
+            "away": 1
+          },
           "prediction": {
             "home_win": 0.255,
             "draw": 0.265,
@@ -483,7 +486,7 @@
             "lam_home": 1.231,
             "lam_away": 1.769
           },
-          "prediction_outcome": "pending"
+          "prediction_outcome": "wrong"
         },
         {
           "match_id": 575336,
@@ -491,7 +494,7 @@
           "group": "",
           "matchday": 1,
           "utc_date": "2026-09-10T16:45:00Z",
-          "status": "TIMED",
+          "status": "FINISHED",
           "home": {
             "id": 674,
             "name": "PSV",
@@ -504,7 +507,10 @@
             "short": "SHD",
             "crest": "https://crests.football-data.org/1887.png"
           },
-          "actual_score": null,
+          "actual_score": {
+            "home": 1,
+            "away": 1
+          },
           "prediction": {
             "home_win": 0.557,
             "draw": 0.245,
@@ -517,7 +523,7 @@
             "lam_home": 1.983,
             "lam_away": 1.098
           },
-          "prediction_outcome": "pending"
+          "prediction_outcome": "wrong"
         },
         {
           "match_id": 575337,
@@ -525,7 +531,7 @@
           "group": "",
           "matchday": 1,
           "utc_date": "2026-09-10T19:00:00Z",
-          "status": "TIMED",
+          "status": "IN_PLAY",
           "home": {
             "id": 5,
             "name": "FC Bayern München",
@@ -538,7 +544,10 @@
             "short": "FK",
             "crest": "https://crests.football-data.org/5721.png"
           },
-          "actual_score": null,
+          "actual_score": {
+            "home": 3,
+            "away": 0
+          },
           "prediction": {
             "home_win": 0.665,
             "draw": 0.205,
@@ -551,7 +560,7 @@
             "lam_home": 2.333,
             "lam_away": 0.933
           },
-          "prediction_outcome": "pending"
+          "prediction_outcome": "correct"
         },
         {
           "match_id": 575338,
@@ -559,7 +568,7 @@
           "group": "",
           "matchday": 1,
           "utc_date": "2026-09-10T19:00:00Z",
-          "status": "TIMED",
+          "status": "IN_PLAY",
           "home": {
             "id": 66,
             "name": "Manchester United FC",
@@ -572,7 +581,10 @@
             "short": "SAB",
             "crest": "https://crests.football-data.org/10233.png"
           },
-          "actual_score": null,
+          "actual_score": {
+            "home": 4,
+            "away": 0
+          },
           "prediction": {
             "home_win": 0.791,
             "draw": 0.142,
@@ -585,7 +597,7 @@
             "lam_home": 2.891,
             "lam_away": 0.753
           },
-          "prediction_outcome": "pending"
+          "prediction_outcome": "correct"
         },
         {
           "match_id": 575339,
@@ -593,7 +605,7 @@
           "group": "",
           "matchday": 1,
           "utc_date": "2026-09-10T19:00:00Z",
-          "status": "TIMED",
+          "status": "IN_PLAY",
           "home": {
             "id": 7397,
             "name": "Como 1907",
@@ -606,7 +618,10 @@
             "short": "RBL",
             "crest": "https://crests.football-data.org/721.png"
           },
-          "actual_score": null,
+          "actual_score": {
+            "home": 3,
+            "away": 1
+          },
           "prediction": {
             "home_win": 0.258,
             "draw": 0.265,
@@ -619,7 +634,7 @@
             "lam_home": 1.236,
             "lam_away": 1.762
           },
-          "prediction_outcome": "pending"
+          "prediction_outcome": "wrong"
         },
         {
           "match_id": 575340,
@@ -627,7 +642,7 @@
           "group": "",
           "matchday": 1,
           "utc_date": "2026-09-10T19:00:00Z",
-          "status": "TIMED",
+          "status": "IN_PLAY",
           "home": {
             "id": 930,
             "name": "SK Slavia Praha",
@@ -640,7 +655,10 @@
             "short": "RCL",
             "crest": "https://crests.football-data.org/546.png"
           },
-          "actual_score": null,
+          "actual_score": {
+            "home": 1,
+            "away": 1
+          },
           "prediction": {
             "home_win": 0.345,
             "draw": 0.277,
@@ -653,7 +671,7 @@
             "lam_home": 1.437,
             "lam_away": 1.515
           },
-          "prediction_outcome": "pending"
+          "prediction_outcome": "wrong"
         },
         {
           "match_id": 575341,
@@ -4941,10 +4959,10 @@
         }
       ],
       "accuracy": {
-        "finished": 12,
-        "correct": 10,
-        "wrong": 2,
-        "pct": 83.3
+        "finished": 18,
+        "correct": 12,
+        "wrong": 6,
+        "pct": 66.7
       }
     },
     "EL": {
