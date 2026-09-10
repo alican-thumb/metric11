@@ -1,19 +1,25 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-09-10T04:41:58.013257+00:00
-Toplam ilgili haber: 88
+Üretim zamanı: 2026-09-10T07:20:06.063068+00:00
+Toplam ilgili haber: 86
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [FENERBAHÇE - ROMA MAÇI HANGİ KANALDA, ŞİFRESİZ Mİ? Fenerbahçe Şampiyonlar Ligi Maçı Ne Zaman, Saat Kaçta, Nereden İzlenir?](https://www.cnnturk.com/spor/futbol/fenerbahce-roma-maci-hangi-kanalda-sifresiz-mi-fenerbahce-sampiyonlar-ligi-maci-ne-zaman-saat-kacta-nereden-izlenir-3464848) — CNN Türk Spor · 2026-09-10T09:54:20+00:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Ömer Üründül Sporting-G.Saray maçını değerlendirdi.](https://www.fotomac.com.tr/galatasaray/2026/09/10/omer-urundul-sporting-gsaray-macini-degerlendirdi) — Fotomaç · 2026-09-10T09:33:15+03:00 · turnuva=CL · kulüp=Galatasaray
+- [Spor yazarlarından Sporting Lizbon-Galatasaray maçı sonrası flaş sözler](https://www.fotomac.com.tr/galatasaray/2026/09/10/spor-yazarlarindan-sporting-lizbon-galatasaray-maci-sonrasi-flas-sozler) — Fotomaç · 2026-09-10T09:00:54+03:00 · turnuva=CL · kulüp=Galatasaray
+- [Sporting tribünleri, Leao'yu protesto etti](https://www.cnnturk.com/spor/futbol/sporting-tribunleri-leaoyu-protesto-etti-3464845) — CNN Türk Spor · 2026-09-10T08:31:55+00:00 · turnuva=CL · kulüp=Galatasaray
+- [GALATASARAY MAÇI NE OLDU? Sporting Lizbon Galatasaray maçı kaç kaç bitti? Galatasaray Şampiyonlar Ligi puan durumu: İşte maç sonucu ve goller](https://www.cnnturk.com/spor/futbol/galatasaray-maci-ne-oldu-sporting-lizbon-galatasaray-maci-kac-kac-bitti-galatasaray-sampiyonlar-ligi-puan-durumu-iste-mac-sonucu-3464842) — CNN Türk Spor · 2026-09-10T08:01:52+00:00 · turnuva=CL · kulüp=Galatasaray
+- [ÖZET | PSG, Şampiyonlar Ligi'nde çok farklı](https://www.cnnturk.com/spor/futbol/ozet-psg-sampiyonlar-liginde-cok-farkli-3464840) — CNN Türk Spor · 2026-09-10T07:51:11+00:00 · turnuva=CL · kulüp=Galatasaray
 - [Sporting 3-1 Galatasaray Maç Özeti | Temsilcimiz, mağlubiyetle başladı](https://www.cnnturk.com/spor/futbol/live-sporting-3-1-galatasaray-mac-ozeti-temsilcimiz-maglubiyetle-basladi-3464599) — CNN Türk Spor · 2026-09-10T07:31:57+00:00 · turnuva=CL · kulüp=Galatasaray
+- [Sporting - Galatasaray maçı sonrası ülke puanı güncellendi!](https://www.hurriyet.com.tr/sporarena/sporting-galatasaray-maci-sonrasi-ulke-puani-guncellendi-43301995) — Hürriyet Spor · 2026-09-10T06:30:00+00:00 · turnuva=CL · kulüp=Galatasaray
+- [Fenerbahçe'ye Roma maçı öncesi uyarı! 'Sahanda karşılama'](https://www.hurriyet.com.tr/sporarena/fenerbahceye-roma-maci-oncesi-uyari-sahanda-karsilama-43301974) — Hürriyet Spor · 2026-09-10T05:32:00+00:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Sporting-Galatasaray maçını yazdılar: Cevap veremedi! 90 dakika çıkaramayan takım](https://www.hurriyet.com.tr/sporarena/sporting-galatasaray-macini-yazdilar-cevap-veremedi-90-dakika-cikaramayan-takim-43301959) — Hürriyet Spor · 2026-09-10T04:59:00+00:00 · turnuva=CL · kulüp=Galatasaray
 - [Kadıköy'de tarihi gece: Fenerbahçe - Roma!](https://www.hurriyet.com.tr/sporarena/kadikoyde-tarihi-gece-fenerbahce-roma-43301945) — Hürriyet Spor · 2026-09-10T04:00:00+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Okan Buruk'tan Sporting Lizbon maçı sonrası hakem tepkisi: Her şeyiyle aleyhimize çalıştı](https://www.takvim.com.tr/spor/galatasaray/2026/09/09/okan-buruktan-sporting-lizbon-maci-sonrasi-hakem-tepkisi) — Takvim Spor · 2026-09-10T02:32:18+03:00 · turnuva=CL · kulüp=Galatasaray
 - [İsmail Kartal'dan orta saha kararı! Fenerbahçe'nin Roma maçı muhtemel 11'i](https://www.takvim.com.tr/spor/fenerbahce/2026/09/09/ismail-kartaldan-orta-saha-karari-fenerbahcenin-roma-maci-muhtemel-11i) — Takvim Spor · 2026-09-10T02:17:01+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Rui Borges: Galatasaray'a karşı daha üstündük ve sakin kaldık](https://www.aksam.com.tr/spor/rui-borges-galatasaraya-karsi-daha-ustunduk-ve-sakin-kaldik/haber-1697197) — Aksam Spor · 2026-09-10T01:40:00+03:00 · turnuva=CL · kulüp=Galatasaray
 - [Şampiyonlar Ligi puan durumu [2026-2027 sezonu]](https://www.takvim.com.tr/galeri/spor/sampiyonlar-ligi-puan-durumu-2026-2027-sezonu) — Takvim Spor · 2026-09-10T01:38:38+03:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe
-- [Kartal’dan Roma’ya üçlü savunma!](https://www.sabah.com.tr/spor/fenerbahce/kartaldan-romaya-uclu-savunma-7657922) — Sabah Spor · 2026-09-10T01:17:52+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [PSG, Şampiyonlar Ligi'ne 6 golle başladı!](https://www.aksam.com.tr/spor/psg-sampiyonlar-ligine-6-golle-basladi/haber-1697188) — Aksam Spor · 2026-09-10T01:07:00+03:00 · turnuva=CL · kulüp=—
 - [Türkiye ülke puanı sıralamasında kaçıncı? İşte UEFA'daki yerimiz (2026-2027 Sezonu)](https://www.takvim.com.tr/galeri/spor/turkiye-ulke-puani-siralamasinda-kacinci-iste-uefadaki-yerimiz-2026-2027-sezonu) — Takvim Spor · 2026-09-10T01:03:18+03:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe
 - [Galatasaray Devler Ligi ilk maçında Sporting'e kaybetti!](https://www.fotomac.com.tr/galatasaray/2026/09/09/galatasaray-devler-ligi-ilk-macinda-sportinge-kaybetti) — Fotomaç · 2026-09-10T00:57:59+03:00 · turnuva=CL · kulüp=Galatasaray
 - [Galatasaray'da Okan Buruk: 3-0'ı bulabilirdik!](https://www.fotomac.com.tr/galatasaray/2026/09/09/galatasarayda-okan-buruk-3-0i-bulabilirdik) — Fotomaç · 2026-09-10T00:57:57+03:00 · turnuva=CL · kulüp=Galatasaray
@@ -34,15 +40,9 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Galatasaray U19, 3 puanı 90+9'da kaybetti!](https://www.fotomac.com.tr/galatasaray/2026/09/09/galatasaray-u19-3-puani-909da-kaybetti) — Fotomaç · 2026-09-10T00:56:57+03:00 · turnuva=— · kulüp=Galatasaray
 - [Halil Umut Meler'e Şampiyonlar Ligi'nde kritik görev!](https://www.fotomac.com.tr/sampiyonlarligi/2026/09/09/halil-umut-melere-sampiyonlar-liginde-kritik-gorev) — Fotomaç · 2026-09-10T00:56:55+03:00 · turnuva=CL · kulüp=—
 - [Liverpool Şampiyonlar Ligi'nde Atletico Madrid'i geri dönüşle 2-1 yendi](https://www.takvim.com.tr/spor/2026/09/09/liverpool-sampiyonlar-liginde-atletico-madridi-2-1-yendi) — Takvim Spor · 2026-09-10T00:36:36+03:00 · turnuva=CL · kulüp=—
+- [Okan Buruk'tan hakem isyanı! Her şeyle aleyhimize çalıştı"](https://www.sabah.com.tr/spor/futbol/2026/09/09/okan-buruktan-hakem-isyani-her-seyle-aleyhimize-calisti) — Sabah Spor · 2026-09-10T00:31:31+03:00 · turnuva=CL · kulüp=Galatasaray
 - [Arsenal Napoli'yi 1-0 ile devirdi! 3 puan Ödegaard'dan](https://www.takvim.com.tr/spor/2026/09/09/arsenal-napoliyi-1-0-ile-devirdi-3-puan-odegaarddan) — Takvim Spor · 2026-09-10T00:29:27+03:00 · turnuva=CL · kulüp=—
 - [PSG'den Şampiyonlar Ligi'ne 6 gollü başlangıç! Yaya Toure'nin takımına farklı tarife](https://www.takvim.com.tr/spor/2026/09/09/psg-sampiyonlar-liginde-slovan-bratislavayi-yendi-6-1) — Takvim Spor · 2026-09-10T00:22:21+03:00 · turnuva=CL · kulüp=—
 - [Galatasaray, öne geçtiği maçta Sporting'e 3-1 mağlup oldu](https://www.aa.com.tr/tr/spor/galatasaray-one-gectigi-macta-sportinge-3-1-maglup-oldu/4052639) — Anadolu Ajansı Spor · 2026-09-09T23:54:00+03:00 · turnuva=CL · kulüp=Galatasaray
+- [Paris Saint Germain, Slovan Bratislava’yı farklı geçti!](https://www.sabah.com.tr/spor/futbol/2026/09/09/paris-saint-germain-slovan-bratislavayi-farkli-gecti) — Sabah Spor · 2026-09-09T23:51:42+03:00 · turnuva=CL · kulüp=—
 - [Galatasaray'dan Sporting Lizbon maçında penaltı isyanı! VAR inceledi, karar değişmedi](https://www.takvim.com.tr/spor/galatasaray/2026/09/09/galatasaraydan-sporting-lizbon-macinda-penalti-isyani) — Takvim Spor · 2026-09-09T23:45:59+03:00 · turnuva=CL · kulüp=Galatasaray
-- [Galatasaray'ın Aleksey Batrakov'a Sporting Lizbon maçında yapılan faulde VAR'dan kritik karar!](https://www.takvim.com.tr/spor/galatasaray/2026/09/09/galatasaray-sporting-macinda-kirmizi-kart-bekledi) — Takvim Spor · 2026-09-09T23:12:57+03:00 · turnuva=CL · kulüp=Galatasaray
-- ["Hak ettiğimiz bir galibiyet oldu"](https://www.haberturk.com/spor/rui-borges-hak-ettigimiz-bir-galibiyet-oldu-3911454) — Haberturk Spor · 2026-09-09T22:45:45+00:00 · turnuva=CL · kulüp=Galatasaray
-- [Rui Borges: 'Galatasaray'a karşı kalitemizi gösterdik!'](https://www.hurriyet.com.tr/sporarena/rui-borges-galatasaraya-karsi-kalitemizi-gosterdik-43301935) — Hürriyet Spor · 2026-09-09T22:39:39+00:00 · turnuva=CL · kulüp=Galatasaray
-- [Sporting'ten Rafael Leao'ya tepki!](https://www.haberturk.com/spor/foto/sporting-taraftarlarindan-rafael-leao-ya-tepki-25-milyon-euroluk-zarara-sokmustu-3911453) — Haberturk Spor · 2026-09-09T22:34:19+00:00 · turnuva=CL · kulüp=Galatasaray
-- [Demirovic ilk yarıda coştu: Stuttgart Arena'da Boşnak forvet attı Stuttgart 3-1 kazandı](https://www.takvim.com.tr/spor/2026/09/09/stuttgart-sampiyonlar-liginde-vikingi-3-1-yendi) — Takvim Spor · 2026-09-09T22:24:11+03:00 · turnuva=CL · kulüp=—
-- [G.Saray Devler Ligi'ne iyi başlayamıyor!](https://www.haberturk.com/spor/foto/sporting-e-3-1-maglup-olan-galatasaray-uefa-sampiyonlar-ligi-ne-yine-iyi-baslayamadi-son-10-organizasyonda-1-galibiyet-3911443) — Haberturk Spor · 2026-09-09T22:13:39+00:00 · turnuva=CL · kulüp=Galatasaray
-- [G.Saray Devler Ligi'ne kayıpla başladı!](https://www.haberturk.com/spor/sporting-3-1-lizbon-galatasaray-mac-sonucu-iste-gs-lizbon-maci-ozeti-ve-golleri-sampiyonlar-ligi-3911226) — Haberturk Spor · 2026-09-09T22:09:31+00:00 · turnuva=CL · kulüp=Galatasaray
-- [Barcelona Feyenoord'u Şampiyonlar Ligi'nde gole boğdu! Nou Camp'ta 5-1'lik zafer](https://www.takvim.com.tr/spor/galatasaray/2026/09/09/barcelona-sampiyonlar-liginde-feyenoordu-5-1-ile-dagitti) — Takvim Spor · 2026-09-09T22:08:45+03:00 · turnuva=CL · kulüp=—
