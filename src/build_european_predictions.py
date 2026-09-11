@@ -8,7 +8,7 @@ from html import escape
 from pathlib import Path
 
 from src.config import DATA_DIR, PROCESSED_DIR, SEASON, ensure_data_dirs
-from src.html_utils import nav_links_html
+from src.html_utils import nav_links_html, telegram_cta_html
 
 INPUT_PATH  = PROCESSED_DIR / "european_predictions_2026_2027.json"
 OUTPUT_PATH = PROCESSED_DIR / "european_predictions_2026_2027.html"
@@ -682,6 +682,7 @@ def build_page(data: dict) -> str:
   </div>
 
   <div class="main">
+    <div style="margin-bottom:16px">{telegram_cta_html()}</div>
     {known_fixtures_html}
     {today_html}
     {pulse_html}

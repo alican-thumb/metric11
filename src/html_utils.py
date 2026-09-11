@@ -14,6 +14,30 @@ _WINDOW_CLOSE = date(2026, 9, 1)
 # penceresi (1 Eylül'e kadar) hâlâ açık olsa bile öncelik maça döner.
 LEAGUE_START = date(2026, 8, 14)
 
+TELEGRAM_CHANNEL_URL = "https://t.me/metric11tr"
+
+
+def telegram_cta_html(text: str = "📣 Her gün maç önü, transfer ve tahmin analizi Telegram'da — kaçırma.") -> str:
+    """Telegram kanalına tek tıkla (hesap açmadan) katılım daveti.
+
+    2026-09-11 bulgusu: siteye gelen trafiğin neredeyse tamamı Twitter/X paylaşımından
+    tek seferlik tıklama; hiçbir sayfada geri gelmeyi tetikleyecek bir çağrı yoktu —
+    Telegram kanalı (@metric11tr, aktif, gerçek gönderim yapıyor) siteden hiç
+    linklenmiyordu. Bu, sayfaya gömülü, kendi stiliyle bağımsız (herhangi bir sayfa
+    temasına bağımlı olmayan) bir banner — her sayfaya (özellikle Twitter'dan gelen
+    soğuk trafiğin düştüğü maç/analiz sayfalarına) eklenmesi amaçlanır."""
+    return (
+        '<div style="background:#0a1929;border:1px solid #1e3a5f;border-radius:10px;'
+        'padding:14px 18px;margin:0 0 20px;display:flex;align-items:center;'
+        'justify-content:space-between;gap:14px;flex-wrap:wrap">'
+        f'<div style="color:#e2e8f0;font-size:13px;font-weight:600">{escape(text)}</div>'
+        f'<a href="{TELEGRAM_CHANNEL_URL}" target="_blank" rel="noopener" '
+        'style="background:#cde94e;color:#091810;font-weight:800;font-size:13px;'
+        'padding:8px 16px;border-radius:8px;text-decoration:none;white-space:nowrap;'
+        'flex-shrink:0">Telegram&#8217;a Katıl &#8594;</a>'
+        '</div>'
+    )
+
 
 def league_active() -> bool:
     """Lig başladı mı? İlk maç gününden (16 Ağustos 2026) itibaren True döner."""
@@ -131,6 +155,7 @@ def page_html(title: str, body_html: str, description: str = "Süper Lig maç ta
     _d = escape(description)
     _og = f"https://metric11.com/{og_image}"
     _robots = '  <meta name="robots" content="noindex,nofollow">\n' if noindex else ""
+    _cta = telegram_cta_html() if not noindex else ""
     return (
         "<!doctype html>\n"
         '<html lang="tr">\n'
@@ -154,6 +179,7 @@ def page_html(title: str, body_html: str, description: str = "Süper Lig maç ta
         f"  {_build_nav(active_nav)}\n"
         '  <div class="report-wrap">\n'
         f'    <a class="back-link" href="/">Ana sayfaya d&#xf6;n</a>\n'
+        f"    {_cta}\n"
         f"    {body_html}\n"
         "  </div>\n"
         '  <footer style="text-align:center;padding:40px 16px 28px;color:#8a9e92;font-size:12px;border-top:1px solid #e2e8e4;margin-top:48px;">metric11 &middot; <a href="mailto:hello@metric11.com" style="color:#8a9e92;text-decoration:none;border-bottom:1px solid #c5d4ca;">hello@metric11.com</a></footer>\n'

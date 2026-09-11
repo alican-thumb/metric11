@@ -11,7 +11,7 @@ from pathlib import Path
 
 from src.config import PROCESSED_DIR, SEASON, SEASON_LABEL, TRANSFER_WATCH_SEASON_LABEL
 from src.build_team_scout_blueprints import candidate_matches_role
-from src.html_utils import nav_links_html
+from src.html_utils import nav_links_html, telegram_cta_html
 
 CONTRACT_URGENCY = {
     "EXPIRING_SOON": 40,
@@ -739,6 +739,7 @@ def build_html(report: dict) -> str:
   <div class="stat-pill"><div class="val" style="color:#16a34a">{s['free_agent_opportunities']}</div><div class="lbl">Serbest Transfer</div></div>
   <div class="stat-pill"><div class="val" style="color:#d97706">{s['negotiation_window_count']}</div><div class="lbl">Müzakere Penceresi</div></div>
 </div>
+<div style="margin-bottom:16px">{telegram_cta_html()}</div>
 <div class="tabs">
   <div class="tab active" onclick="showTab('ranking',this)">Lig Sıralaması</div>
   <div class="tab" onclick="showTab('teams',this)">Takım Planları</div>

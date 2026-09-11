@@ -15,6 +15,7 @@ from html import escape
 from pathlib import Path
 
 from src.config import PROCESSED_DIR, SEASON
+from src.html_utils import nav_links_html, telegram_cta_html
 from src.model_league_predictions import (
     compute_final_state,
     confidence_label,
@@ -23,7 +24,6 @@ from src.model_league_predictions import (
     predict_match,
 )
 from src.normalization import normalize_matches, normalize_team_name
-from src.html_utils import nav_links_html
 
 FIXTURE_PATH = PROCESSED_DIR / "tff_super_lig_fixtures_2026_2027.json"
 HISTORY_INPUT_PATH = PROCESSED_DIR / f"tff_super_lig_enriched_{SEASON}.json"
@@ -423,7 +423,7 @@ def build_html(payload: dict) -> str:
   <p>{escape(payload['source_note'])}</p>
 </div>
 <div class="stat-bar">{stat_bar}</div>
-<div class="main">{weeks_html}</div>
+<div class="main"><div style="margin-bottom:16px">{telegram_cta_html()}</div>{weeks_html}</div>
 <footer>metric11 &middot; <a href="/">metric11.com</a></footer>
 <script defer src="/_vercel/insights/script.js"></script>
 </body>

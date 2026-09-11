@@ -19,7 +19,7 @@ from src.config import (
     TRANSFER_WATCH_SEASON,
     TRANSFER_WATCH_SEASON_LABEL,
 )
-from src.html_utils import nav_links_html
+from src.html_utils import nav_links_html, telegram_cta_html
 from src.normalization import normalize_name
 
 NEW_SIGNING_MARKET_VALUE_OVERRIDES_PATH = (
@@ -342,6 +342,7 @@ def build_html(signals: list[dict], summary: dict) -> str:
   <div class="stat-mv"><div class="v">{total_mv_label}</div><div class="l">Toplam Teyitli Değer</div></div>
 </div>
 <main>
+  <div style="margin-bottom:16px">{telegram_cta_html()}</div>
   <div class="filter-bar">
     <input class="filter-input" id="filterInput" placeholder="Oyuncu veya kulüp ara…" oninput="filterRows(this.value)">
     <span style="font-size:13px;color:var(--muted)">{len(named)} kayıt</span>

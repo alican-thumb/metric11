@@ -7,7 +7,7 @@ from html import escape
 from pathlib import Path
 
 from src.config import PROCESSED_DIR, SEASON
-from src.html_utils import nav_links_html
+from src.html_utils import nav_links_html, telegram_cta_html
 
 TRANSFER_SEASON_START = datetime(2026, 5, 18, tzinfo=timezone.utc)
 TRANSFER_SEASON_END   = datetime(2026, 9, 1, tzinfo=timezone.utc)
@@ -542,6 +542,7 @@ def build_html(summary: dict, previews: list[dict], goal_backtest: dict, team_na
     </div>
   </header>
   <main>
+    <div style="margin-bottom:16px">{telegram_cta_html()}</div>
     {transfer_section}
     {off_season_banner}
     <div class="toolbar">

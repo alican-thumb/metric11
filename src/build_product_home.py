@@ -8,7 +8,7 @@ from pathlib import Path
 from datetime import date
 
 from src.config import PROCESSED_DIR, SEASON
-from src.html_utils import league_active, nav_links_html
+from src.html_utils import league_active, nav_links_html, telegram_cta_html
 
 _SEASON_END = date(2026, 5, 18)
 _WINDOW_CLOSE = date(2026, 9, 1)
@@ -324,6 +324,7 @@ def build_html() -> str:
     </div>
   </header>
   <main>
+    <div style="margin-bottom:16px">{telegram_cta_html()}</div>
     <div class="section-title"><h2>Öne çıkan deneyimler</h2></div>
     <div class="featured">{featured_cards}</div>
     <div class="section-title"><h2>Sezon rakamları</h2></div>

@@ -8,7 +8,7 @@ from html import escape
 from pathlib import Path
 
 from src.config import PROCESSED_DIR, ensure_data_dirs
-from src.html_utils import nav_links_html
+from src.html_utils import nav_links_html, telegram_cta_html
 
 # ---------------------------------------------------------------------------
 # Inline CSS + tasarım sabitleri
@@ -1230,6 +1230,7 @@ def build_page(predictions_data: dict) -> str:
   {today_html}
 
   <div class="tabs-wrap">
+    <div style="margin-bottom:16px">{telegram_cta_html()}</div>
     {accuracy_html}
     {tabs_html}
   </div>

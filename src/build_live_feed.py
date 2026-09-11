@@ -11,7 +11,7 @@ from html import escape
 from pathlib import Path
 
 from src.config import DATA_DIR, PROCESSED_DIR, SEASON, TRANSFER_WATCH_SEASON_LABEL
-from src.html_utils import league_active, nav_links_html
+from src.html_utils import league_active, nav_links_html, telegram_cta_html
 from src.build_match_week import render_hero_html
 
 _TR_WEEKDAYS = ["Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi", "Pazar"]
@@ -566,6 +566,7 @@ def build_html() -> str:
 {'</a>' if window_link else '</div>'}
 <div class="main">
   <div>
+    <div style="margin-bottom:16px">{telegram_cta_html()}</div>
     {left_top_html}
     <div class="panel" style="margin-top:16px">
       <h2>Transferler</h2>
