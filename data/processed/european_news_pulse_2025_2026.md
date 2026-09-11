@@ -1,14 +1,21 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-09-11T04:39:35.397340+00:00
-Toplam ilgili haber: 85
+Üretim zamanı: 2026-09-11T07:19:03.689146+00:00
+Toplam ilgili haber: 86
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [GALATASARAY - BARCELONA MAÇI NE ZAMAN? UCL Galatasaray - Barcelona Maçı Hangi Kanalda, Saat Kaçta? Şampiyonlar Ligi Dev Randevusu İçin Geri Sayım](https://www.cnnturk.com/spor/futbol/galatasaray-barcelona-maci-ne-zaman-ucl-galatasaray-barcelona-maci-hangi-kanalda-saat-kacta-sampiyonlar-ligi-dev-randevusu-3464892) — CNN Türk Spor · 2026-09-11T09:33:21+00:00 · turnuva=CL · kulüp=Galatasaray
+- [Spor yazarları da ikiye bölündü: "İstifasını bekliyordum" ve "Hepimizi şoke etti"](https://www.takvim.com.tr/spor/fenerbahce/2026/09/11/spor-yazarlari-fenerbahce-roma-macini-koselerinde-yorumladi) — Takvim Spor · 2026-09-11T09:29:43+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Ahmet Çakar'dan Fenerbahçe-Roma yorumu! "Aslında o pozisyonda..."](https://www.fotomac.com.tr/fenerbahce/2026/09/11/ahmet-cakardan-fenerbahce-roma-yorumu-aslinda-o-pozisyonda) — Fotomaç · 2026-09-11T08:51:52+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe kasayı doldurdu! Roma maçı sonrası dev gelir...](https://www.sabah.com.tr/spor/futbol/2026/09/11/fenerbahce-kasayi-doldurdu-roma-maci-sonrasi-dev-gelir) — Sabah Spor · 2026-09-11T08:47:04+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Spor yazarları, Fenerbahçe-Roma maçını kaleme aldılar! "Az daha Roma'yı yakıyorduk!"](https://www.fotomac.com.tr/fenerbahce/2026/09/11/spor-yazarlari-fenerbahce-roma-macini-kaleme-aldilar-az-daha-romayi-yakiyorduk) — Fotomaç · 2026-09-11T08:29:59+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe-Roma maçını Nihat Kahveci yorumladı: Alkışlıyorum!](https://www.hurriyet.com.tr/sporarena/fenerbahce-roma-macini-nihat-kahveci-yorumladi-alkisliyorum-43303079) — Hürriyet Spor · 2026-09-11T06:45:00+00:00 · turnuva=CL · kulüp=Fenerbahçe
+- ["Müthiş mücadele, akılcı oyun"](https://www.haberturk.com/spor/foto/spor-yazarlari-fenerbahce-nin-roma-mucadelesini-degerlendirdi-3911722) — Haberturk Spor · 2026-09-11T06:41:37+00:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe'de büyük kaos: İsmail Kartal, 'Asla dönmem', Aziz Yıldırım 'Görevinin başında' dedi! Peki şimdi ne olacak?](https://www.hurriyet.com.tr/sporarena/fenerbahcede-buyuk-kaos-ismail-kartal-asla-donmem-aziz-yildirim-gorevinin-basinda-dedi-peki-simdi-ne-olacak-43303078) — Hürriyet Spor · 2026-09-11T06:01:00+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe - Roma maçı İtalyan basınında: Türk cehenneminden 1 puan](https://www.takvim.com.tr/spor/fenerbahce/2026/09/10/fenerbahce-roma-maci-italyan-basininda) — Takvim Spor · 2026-09-11T04:37:48+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Galatasaray, UEFA'ya gidiyor!](https://www.hurriyet.com.tr/sporarena/galatasaray-uefaya-gidiyor-43303035) — Hürriyet Spor · 2026-09-11T04:00:00+00:00 · turnuva=— · kulüp=Galatasaray
-- [Como, tarihinde ilk kez katıldığı Şampiyonlar Ligi'ne 3 puanla başladı](https://www.aksam.com.tr/spor/como-tarihinde-ilk-kez-katildigi-sampiyonlar-ligine-3-puanla-basladi/haber-1697469) — Aksam Spor · 2026-09-11T01:48:00+03:00 · turnuva=CL · kulüp=—
 - [UEFA Şampiyonlar Ligi’nde ilk hafta sona erdi! İşte tüm sonuçlar](https://www.sabah.com.tr/spor/futbol/2026/09/10/uefa-sampiyonlar-liginde-ilk-hafta-sona-erdi-iste-tum-sonuclar) — Sabah Spor · 2026-09-11T01:08:14+03:00 · turnuva=CL · kulüp=—
 - [Şampiyonlar Ligi puan durumu [2026-2027 sezonu]](https://www.takvim.com.tr/galeri/spor/sampiyonlar-ligi-puan-durumu-2026-2027-sezonu) — Takvim Spor · 2026-09-11T01:06:17+03:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe
 - [Fenerbahçe'nin rakibi Slavia Prag, 3 puanı uzatmalarda kaybetti!](https://www.fotomac.com.tr/sampiyonlarligi/2026/09/10/fenerbahcenin-rakibi-slavia-prag-3-puani-uzatmalarda-kaybetti) — Fotomaç · 2026-09-11T00:59:18+03:00 · turnuva=CL · kulüp=Fenerbahçe
@@ -24,9 +31,7 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Archie Brown: Atmış olduğum golden ötürü çok mutluyum!](https://www.fotomac.com.tr/fenerbahce/2026/09/10/archie-brown-atmis-oldugum-golden-oturu-cok-mutluyum) — Fotomaç · 2026-09-11T00:49:45+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [UEFA kararı sonrası Fenerbahçe'de flaş gelişme! Sözleşmesi değişti](https://www.fotomac.com.tr/fenerbahce/2026/09/09/uefa-karari-sonrasi-fenerbahcede-flas-gelisme-sozlesmesi-degisti) — Fotomaç · 2026-09-11T00:49:43+03:00 · turnuva=— · kulüp=Fenerbahçe
 - [MAÇ SONUCU: Fenerbahçe U19 2-4 Roma U19 | UEFA Gençlik Ligi](https://www.fotomac.com.tr/fenerbahce/2026/09/10/mac-sonucu-fenerbahce-u19-2-4-roma-u19-uefa-genclik-ligi) — Fotomaç · 2026-09-11T00:49:35+03:00 · turnuva=— · kulüp=Fenerbahçe
-- [Bayern Münih'ten ilk haftada gövde gösterisi](https://www.aksam.com.tr/spor/bayern-munihten-ilk-haftada-govde-gosterisi/haber-1697462) — Aksam Spor · 2026-09-11T00:47:00+03:00 · turnuva=CL · kulüp=—
 - [Türkiye ülke puanı sıralamasında kaçıncı? İşte UEFA'daki yerimiz (2026-2027 Sezonu)](https://www.takvim.com.tr/galeri/spor/turkiye-ulke-puani-siralamasinda-kacinci-iste-uefadaki-yerimiz-2026-2027-sezonu) — Takvim Spor · 2026-09-11T00:42:36+03:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe
-- [Manchester United'dan Sabah karşısında 4 gollü galibiyet](https://www.aksam.com.tr/spor/manchester-uniteddan-sabah-karsisinda-4-gollu-galibiyet/haber-1697460) — Aksam Spor · 2026-09-11T00:41:00+03:00 · turnuva=CL · kulüp=—
 - [Bayern Münih'ten Şampiyonlar Ligi'ne 5 gollü başlangıç!](https://www.takvim.com.tr/spor/2026/09/10/bayern-munihten-sampiyonlar-ligine-5-gollu-baslangic) — Takvim Spor · 2026-09-11T00:29:51+03:00 · turnuva=CL · kulüp=—
 - [Lens'ten Şampiyonlar Ligi'nde inanılmaz geri dönüş! Slavia Prag'ı 90+3'te yıktı](https://www.takvim.com.tr/spor/2026/09/10/lensten-sampiyonlar-liginde-inanilmaz-geri-donus) — Takvim Spor · 2026-09-11T00:17:59+03:00 · turnuva=CL · kulüp=—
 - [Manchester United'dan 4 gollü açılış! Sabah'ı Old Trafford'da dağıttı](https://www.takvim.com.tr/spor/2026/09/10/manchester-uniteddan-4-gollu-acilis-sabahi-old-traffordda-dagitti) — Takvim Spor · 2026-09-11T00:11:23+03:00 · turnuva=CL · kulüp=—
@@ -41,8 +46,3 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [İsmail Kartal'a şişe atan taraftara men cezası!](https://www.hurriyet.com.tr/sporarena/ismail-kartala-sise-atan-taraftara-men-cezasi-43302966) — Hürriyet Spor · 2026-09-10T20:39:00+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - ["Evimizde oynasaydık daha farklı olurdu"](https://www.haberturk.com/spor/gian-piero-gasperini-evimizde-oynasaydik-daha-farkli-olurdu-3911680) — Haberturk Spor · 2026-09-10T19:51:20+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - ["Üç puanı elimizden kaçırdık"](https://www.haberturk.com/spor/levent-mercan-uc-puani-elimizden-kacirdik-3911679) — Haberturk Spor · 2026-09-10T19:42:16+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- [FENERBAHÇE MAÇI BUGÜN SAAT KAÇTA, HANGİ KANALDA? Fenerbahçe Roma maçı şifreli mi, şifresiz mi, nereden izlenir? FB Şampiyonlar Ligi maçı canlı yayın izleme bilgileri](https://www.cnnturk.com/spor/futbol/fenerbahce-maci-bugun-saat-kacta-hangi-kanalda-fenerbahce-roma-maci-sifreli-mi-sifresiz-mi-nereden-izlenir-fb-sampiyonlar-ligi-3464848) — CNN Türk Spor · 2026-09-10T19:33:08+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- ["Galibiyeti kaçırdık"](https://www.haberturk.com/spor/bartug-elmaz-galibiyeti-kacirdik-3911674) — Haberturk Spor · 2026-09-10T19:28:28+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- [FENERBAHÇE ROMA TRT 1 CANLI İZLE: Şampiyonlar Ligi Fenerbahçe Roma Maçı Şifresiz İzle! Asensio Oynayacak Mı? 18 yıl Sonra Devler Liginde İlk Sahne! İşte FB Roma Maç Kadrosu](https://www.cnnturk.com/spor/futbol/fenerbahce-roma-canli-izle-sampiyonlar-ligi-fenerbahce-roma-maci-trt-1-sifresiz-izle-asensio-oynayacak-mi-18-yil-sonra-devler-3465024) — CNN Türk Spor · 2026-09-10T19:26:07+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Archie Brown: 'Şampiyonlar Ligi'nde ilerleyebiliriz!'](https://www.hurriyet.com.tr/sporarena/archie-brown-sampiyonlar-liginde-ilerleyebiliriz-43302917) — Hürriyet Spor · 2026-09-10T19:24:58+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Devler Ligi'nde 18 yıl sonra gelen gol Brown'dan!](https://www.haberturk.com/spor/fenerbahcenin-sampiyonlar-ligindeki-ilk-golu-archie-browndan-3911668) — Haberturk Spor · 2026-09-10T19:00:28+00:00 · turnuva=CL · kulüp=Fenerbahçe
