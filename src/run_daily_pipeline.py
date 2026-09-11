@@ -12,7 +12,7 @@ from src.config import PROCESSED_DIR, ROOT_DIR
 
 DEFAULT_COMMANDS = [
     ["python", "-m", "src.enrich_tff_with_sofascore"],
-    ["python", "-m", "src.build_player_availability"],
+    ["python", "-m", "src.build_player_availability", "--all-teams"],
     ["python", "-m", "src.build_tff_league_profile_pool"],
     ["python", "-m", "src.enrich_players_with_transfermarkt"],
     ["python", "-m", "src.analyze_league_scouting", "--output-prefix", "league_scouting_2025_2026_normalized"],

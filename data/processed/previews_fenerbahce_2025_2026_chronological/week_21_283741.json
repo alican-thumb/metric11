@@ -330,9 +330,20 @@
     "goal_candidate_multiplier": 1.0
   },
   "availability_signal": {
-    "available": false,
-    "unavailable": [],
-    "note": "Availability verisi yok.",
+    "available": true,
+    "unavailable": [
+      {
+        "player_external_id": "2821996",
+        "player_name": "EDSON OMAR ALVAREZ VELAZQUEZ",
+        "status": "SUSPENDED",
+        "reason": "4. sarı kart sonrası 1 maç ceza varsayımı",
+        "source": "AUTO_YELLOW_ACCUMULATION",
+        "confidence": "LOW",
+        "impact": "ROTATION"
+      }
+    ],
+    "suspended_count": 1,
+    "injured_count": 0,
     "squad_xg_adjustment": -0.0,
     "squad_adjustment_breakdown": []
   },
@@ -411,12 +422,6 @@
         "name": "JHON JADER DURAN PALACIOS",
         "recent_starts": 4,
         "recent_bench": 3
-      },
-      {
-        "player_id": "2821996",
-        "name": "EDSON OMAR ALVAREZ VELAZQUEZ",
-        "recent_starts": 4,
-        "recent_bench": 1
       }
     ],
     "card_risk_players": [
@@ -762,7 +767,7 @@
     "over_2_5_signal": "HIGH",
     "team_card_expectation": 1.72,
     "card_signal": "LOW",
-    "availability_missing_count": 0,
+    "availability_missing_count": 1,
     "strength_edge": 0.143,
     "draw_calibration": {
       "lift": 0.03,
@@ -832,7 +837,9 @@
         "recommendation": "Erken kart görürse tempo düşür veya değişiklik planla."
       }
     ],
-    "unavailable_removed": []
+    "unavailable_removed": [
+      "EDSON OMAR ALVAREZ VELAZQUEZ"
+    ]
   },
   "coach_lineup_audit": {
     "verdict": "KISMEN_TARTIŞMALI",
@@ -1085,6 +1092,7 @@
     "Bu sezon GENÇLERBİRLİĞİ ile önceki eşleşme verisi var: 1 maçta Beşiktaş maç başı 3.0 gol ve 0.0 kart ortalaması üretti. Bu yüzden raporda hem skor hem kart tarafı önceki eşleşme etkisiyle ayarlandı.",
     "Rakibin son 5 maçlık genel formu modele ayrı eklendi: maç başı 1.6 gol atıp 1.4 gol yiyor. Skor tahmini artık sadece Beşiktaş formuna değil, rakibin hücum/savunma profilinin birleşimine göre hesaplanıyor.",
     "Rakibin son 8 maçlık savunma formu gol adayı modeline eklendi: maç başı 1.38 gol yiyor, %25 clean sheet oranı var. Gol adayı skor çarpanı 1.0.",
+    "Eksik oyuncu sinyali modele dahil edildi: EDSON OMAR ALVAREZ VELAZQUEZ. Bu oyuncular olası 11 ve gol adayı listesinden çıkarıldı; skor beklentisi düşük güvenle aşağı ayarlandı.",
     "Hakem profili kart tarafında anlamlı bir sinyal veriyor: ALİ ŞANSALAN bu sezon önceki 12 Beşiktaş maçında toplam maç başı 5.08 kart, Beşiktaş'a maç başı 3.0 kart ortalamasıyla öne çıkıyor.",
     "Olası 11 sinyalinde son dönemde öne çıkan isimler: EDERSON SANTANA DE MORAES, MARCO ASENSIO WILLEMSEN, MILAN SKRINIAR, JAYDEN QUINN OOSTERWOLDE, ANDERSON SOUZA CONCEIÇAO, İSMAİL YÜKSEK. Kart riski tarafında ise son 8 maç penceresinde EDSON OMAR ALVAREZ VELAZQUEZ, ARCHIBALD NORMAN BROWN, YİĞİT EFE DEMİR, NELSON CABRAL SEMEDO dikkat çekiyor.",
     "Gol adayı sinyalinde öne çıkan isimler: ANDERSON SOUZA CONCEIÇAO, MARCO ASENSIO WILLEMSEN, DORGELES NENE, YOUSSEF EN NESYRI. Bu skor son gol formu, sezon içi gol sayısı ve son dönemde ilk 11 başlama sıklığından türetildi. Test sonucunda gerçek Beşiktaş golcüleri: ANDERSON SOUZA CONCEIÇAO, MUHAMMED KEREM AKTÜRKOĞLU, MUHAMMED KEREM AKTÜRKOĞLU.",

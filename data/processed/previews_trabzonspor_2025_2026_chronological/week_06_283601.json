@@ -313,9 +313,20 @@
     "goal_candidate_multiplier": 1.22
   },
   "availability_signal": {
-    "available": false,
-    "unavailable": [],
-    "note": "Availability verisi yok.",
+    "available": true,
+    "unavailable": [
+      {
+        "player_external_id": "887190",
+        "player_name": "OKAY YOKUŞLU",
+        "status": "SUSPENDED",
+        "reason": "Kırmızı Kart sonrası otomatik 1 maç ceza varsayımı",
+        "source": "AUTO_CARD_RED",
+        "confidence": "MEDIUM",
+        "impact": "FRINGE"
+      }
+    ],
+    "suspended_count": 1,
+    "injured_count": 0,
     "squad_xg_adjustment": -0.0,
     "squad_adjustment_breakdown": []
   },
@@ -329,12 +340,6 @@
   "player_signals": {
     "window_matches": 5,
     "likely_starters": [
-      {
-        "player_id": "887190",
-        "name": "OKAY YOKUŞLU",
-        "recent_starts": 5,
-        "recent_bench": 0
-      },
       {
         "player_id": "2685595",
         "name": "STEFAN SAVIC",
@@ -495,18 +500,6 @@
         "recent_cards": 0
       },
       {
-        "player_id": "887190",
-        "name": "OKAY YOKUŞLU",
-        "goal_threat_score": 1.95,
-        "candidate_type": "primary",
-        "recent_starts": 5,
-        "season_goals_before_match": 0,
-        "recent_goals": 0,
-        "big_match_goals_before_match": 0,
-        "opponent_defense_multiplier": 1.22,
-        "actual_scorer": false
-      },
-      {
         "player_id": "1025518",
         "name": "MUSTAFA ESKİHELLAÇ",
         "goal_threat_score": 1.95,
@@ -569,6 +562,18 @@
       {
         "player_id": "2820461",
         "name": "WAGNER FABRICIO CARDOSO DE PINA",
+        "goal_threat_score": 1.56,
+        "candidate_type": "primary",
+        "recent_starts": 4,
+        "season_goals_before_match": 0,
+        "recent_goals": 0,
+        "big_match_goals_before_match": 0,
+        "opponent_defense_multiplier": 1.22,
+        "actual_scorer": false
+      },
+      {
+        "player_id": "2768048",
+        "name": "OLEKSANDR ZUBKOV",
         "goal_threat_score": 1.56,
         "candidate_type": "primary",
         "recent_starts": 4,
@@ -682,7 +687,7 @@
     "over_2_5_signal": "MEDIUM",
     "team_card_expectation": 2.38,
     "card_signal": "MEDIUM",
-    "availability_missing_count": 0,
+    "availability_missing_count": 1,
     "strength_edge": 0.063,
     "draw_calibration": {
       "lift": 0.165,
@@ -733,11 +738,11 @@
       "EBERE PAUL ONUACHU",
       "STEFAN SAVIC",
       "FELIPE AUGUSTO DA SILVA",
-      "OKAY YOKUŞLU",
       "MUSTAFA ESKİHELLAÇ",
       "TIM LUCA PACO JABOL - FOLCARELLI",
       "ARSENII BATAHOV",
-      "KAZEEM ADEREMI J. OLAIGBE"
+      "KAZEEM ADEREMI J. OLAIGBE",
+      "UĞURCAN ÇAKIR"
     ],
     "attacking_priority": [
       "EBERE PAUL ONUACHU",
@@ -751,13 +756,15 @@
         "recommendation": "Erken kart görürse tempo düşür veya değişiklik planla."
       }
     ],
-    "unavailable_removed": []
+    "unavailable_removed": [
+      "OKAY YOKUŞLU"
+    ]
   },
   "coach_lineup_audit": {
     "verdict": "KISMEN_TARTIŞMALI",
-    "actual_lineup_score": 73.23,
-    "recommended_lineup_score": 98.68,
-    "alignment_rate": 0.742,
+    "actual_lineup_score": 73.93,
+    "recommended_lineup_score": 99.3,
+    "alignment_rate": 0.744,
     "actual_starters": [
       "ANDRE ONANA ONANA",
       "ERNEST MUÇİ",
@@ -775,15 +782,15 @@
       "EBERE PAUL ONUACHU",
       "STEFAN SAVIC",
       "FELIPE AUGUSTO DA SILVA",
-      "OKAY YOKUŞLU",
       "MUSTAFA ESKİHELLAÇ",
       "TIM LUCA PACO JABOL - FOLCARELLI",
       "ARSENII BATAHOV",
-      "KAZEEM ADEREMI J. OLAIGBE"
+      "KAZEEM ADEREMI J. OLAIGBE",
+      "UĞURCAN ÇAKIR"
     ],
     "omitted_core_players": [
       "FELIPE AUGUSTO DA SILVA",
-      "OKAY YOKUŞLU"
+      "UĞURCAN ÇAKIR"
     ],
     "omitted_attacking_priority": [
       "FELIPE AUGUSTO DA SILVA"
@@ -1005,9 +1012,10 @@
     "Bu sezon GAZİANTEP FUTBOL KULÜBÜ A.Ş. ile önceki eşleşme bulunmadığı için rakip özel sinyal zayıf; ağırlık daha çok son form ve oyuncu kullanımına verildi.",
     "Rakibin son 5 maçlık genel formu modele ayrı eklendi: maç başı 1.4 gol atıp 1.8 gol yiyor. Skor tahmini artık sadece Beşiktaş formuna değil, rakibin hücum/savunma profilinin birleşimine göre hesaplanıyor.",
     "Rakibin son 5 maçlık savunma formu gol adayı modeline eklendi: maç başı 1.8 gol yiyor, %20 clean sheet oranı var. Gol adayı skor çarpanı 1.22.",
+    "Eksik oyuncu sinyali modele dahil edildi: OKAY YOKUŞLU. Bu oyuncular olası 11 ve gol adayı listesinden çıkarıldı; skor beklentisi düşük güvenle aşağı ayarlandı.",
     "Hakem profili kart tarafında anlamlı bir sinyal veriyor: ARDA KARDEŞLER bu sezon önceki 2 Beşiktaş maçında toplam maç başı 5.5 kart, Beşiktaş'a maç başı 2.5 kart ortalamasıyla öne çıkıyor.",
-    "Olası 11 sinyalinde son dönemde öne çıkan isimler: OKAY YOKUŞLU, STEFAN SAVIC, MUSTAFA ESKİHELLAÇ, TIM LUCA PACO JABOL - FOLCARELLI, EBERE PAUL ONUACHU, ARSENII BATAHOV. Kart riski tarafında ise son 8 maç penceresinde ANTHONY NNADUZOR NWAKAEME, OKAY YOKUŞLU, EBERE PAUL ONUACHU, MUSTAFA ESKİHELLAÇ dikkat çekiyor.",
-    "Gol adayı sinyalinde öne çıkan isimler: EBERE PAUL ONUACHU, STEFAN SAVIC, FELIPE AUGUSTO DA SILVA, OKAY YOKUŞLU. Bu skor son gol formu, sezon içi gol sayısı ve son dönemde ilk 11 başlama sıklığından türetildi. Test sonucunda gerçek Beşiktaş golcüleri: EBERE PAUL ONUACHU.",
+    "Olası 11 sinyalinde son dönemde öne çıkan isimler: STEFAN SAVIC, MUSTAFA ESKİHELLAÇ, TIM LUCA PACO JABOL - FOLCARELLI, EBERE PAUL ONUACHU, ARSENII BATAHOV, KAZEEM ADEREMI J. OLAIGBE. Kart riski tarafında ise son 8 maç penceresinde ANTHONY NNADUZOR NWAKAEME, OKAY YOKUŞLU, EBERE PAUL ONUACHU, MUSTAFA ESKİHELLAÇ dikkat çekiyor.",
+    "Gol adayı sinyalinde öne çıkan isimler: EBERE PAUL ONUACHU, STEFAN SAVIC, FELIPE AUGUSTO DA SILVA, MUSTAFA ESKİHELLAÇ. Bu skor son gol formu, sezon içi gol sayısı ve son dönemde ilk 11 başlama sıklığından türetildi. Test sonucunda gerçek Beşiktaş golcüleri: EBERE PAUL ONUACHU.",
     "Skor dağılımında en olası senaryolar: 1-1 (%13), 1-0 (%12), 0-1 (%10). Model aksiyonu: Korumalı taraf tahmini; önerilen ana skor 1-1.",
     "Kadro tercih önerisi: Önde baskı ve skor arama. Hücum önceliği EBERE PAUL ONUACHU, STEFAN SAVIC, FELIPE AUGUSTO DA SILVA. Disiplin yönetimi gereken oyuncular: ANTHONY NNADUZOR NWAKAEME.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %74 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.35-1.08 yerine 1.6-1.08 bandına gelebilirdi.",

@@ -330,9 +330,20 @@
     "goal_candidate_multiplier": 1.0
   },
   "availability_signal": {
-    "available": false,
-    "unavailable": [],
-    "note": "Availability verisi yok.",
+    "available": true,
+    "unavailable": [
+      {
+        "player_external_id": "2884717",
+        "player_name": "ADAMO NAGALO",
+        "status": "SUSPENDED",
+        "reason": "Çift Sarı Kart sonrası otomatik 1 maç ceza varsayımı",
+        "source": "AUTO_CARD_RED",
+        "confidence": "MEDIUM",
+        "impact": "FRINGE"
+      }
+    ],
+    "suspended_count": 1,
+    "injured_count": 0,
     "squad_xg_adjustment": -0.0,
     "squad_adjustment_breakdown": []
   },
@@ -413,8 +424,8 @@
         "recent_bench": 3
       },
       {
-        "player_id": "2884717",
-        "name": "ADAMO NAGALO",
+        "player_id": "1663187",
+        "name": "ARİF BOŞLUK",
         "recent_starts": 4,
         "recent_bench": 4
       }
@@ -759,7 +770,7 @@
     "over_2_5_signal": "MEDIUM",
     "team_card_expectation": 1.84,
     "card_signal": "LOW",
-    "availability_missing_count": 0,
+    "availability_missing_count": 1,
     "strength_edge": 0.041,
     "draw_calibration": {
       "lift": 0.18,
@@ -842,7 +853,9 @@
         "recommendation": "Erken kart görürse tempo düşür veya değişiklik planla."
       }
     ],
-    "unavailable_removed": []
+    "unavailable_removed": [
+      "ADAMO NAGALO"
+    ]
   },
   "coach_lineup_audit": {
     "verdict": "KISMEN_TARTIŞMALI",
@@ -1093,6 +1106,7 @@
     "Bu sezon MISIRLI.COM.TR FATİH KARAGÜMRÜK ile önceki eşleşme verisi var: 1 maçta Beşiktaş maç başı 0.0 gol ve 2.0 kart ortalaması üretti. Bu yüzden raporda hem skor hem kart tarafı önceki eşleşme etkisiyle ayarlandı.",
     "Rakibin son 5 maçlık genel formu modele ayrı eklendi: maç başı 1.2 gol atıp 1.2 gol yiyor. Skor tahmini artık sadece Beşiktaş formuna değil, rakibin hücum/savunma profilinin birleşimine göre hesaplanıyor.",
     "Rakibin son 8 maçlık savunma formu gol adayı modeline eklendi: maç başı 1.12 gol yiyor, %38 clean sheet oranı var. Gol adayı skor çarpanı 1.0.",
+    "Eksik oyuncu sinyali modele dahil edildi: ADAMO NAGALO. Bu oyuncular olası 11 ve gol adayı listesinden çıkarıldı; skor beklentisi düşük güvenle aşağı ayarlandı.",
     "Hakem profili kart tarafında anlamlı bir sinyal veriyor: OĞUZHAN AKSU bu sezon önceki 8 Beşiktaş maçında toplam maç başı 2.75 kart, Beşiktaş'a maç başı 1.12 kart ortalamasıyla öne çıkıyor.",
     "Olası 11 sinyalinde son dönemde öne çıkan isimler: BAHADIR HAN GÜNGÖRDÜ, BERKAN İSMAİL KUTLU, YHOAN MANY ANDZOUANA, ADİL DEMİRBAĞ, JACKSON KYANVUBU MULEKA, KAZEEM ADEREMI J. OLAIGBE. Kart riski tarafında ise son 8 maç penceresinde BLAZ KRAMER, MARKO JEVTOVIC, DENİZ TÜRÜÇ, ARİF BOŞLUK dikkat çekiyor.",
     "Gol adayı sinyalinde öne çıkan isimler: JACKSON KYANVUBU MULEKA, BLAZ KRAMER, ENIS BARDHI, MEHMET UMUT NAYİR. Bu skor son gol formu, sezon içi gol sayısı ve son dönemde ilk 11 başlama sıklığından türetildi. Test sonucunda gerçek Beşiktaş golcüleri: BLAZ KRAMER, JACKSON KYANVUBU MULEKA, DIOGO ANTONIO CUPIDO GONÇALVES.",

@@ -318,9 +318,29 @@
     "goal_candidate_multiplier": 1.0
   },
   "availability_signal": {
-    "available": false,
-    "unavailable": [],
-    "note": "Availability verisi yok.",
+    "available": true,
+    "unavailable": [
+      {
+        "player_external_id": "1475919",
+        "player_name": "MUHAMMET TAHA ŞAHİN",
+        "status": "SUSPENDED",
+        "reason": "4. sarı kart sonrası 1 maç ceza varsayımı",
+        "source": "AUTO_YELLOW_ACCUMULATION",
+        "confidence": "LOW",
+        "impact": "ROTATION"
+      },
+      {
+        "player_external_id": "2552375",
+        "player_name": "KHUSNIDDIN  ALIKULOV",
+        "status": "SUSPENDED",
+        "reason": "4. sarı kart sonrası 1 maç ceza varsayımı",
+        "source": "AUTO_YELLOW_ACCUMULATION",
+        "confidence": "LOW",
+        "impact": "FRINGE"
+      }
+    ],
+    "suspended_count": 2,
+    "injured_count": 0,
     "squad_xg_adjustment": -0.0,
     "squad_adjustment_breakdown": []
   },
@@ -343,12 +363,6 @@
       {
         "player_id": "2684943",
         "name": "IOANNIS PAPANIKOLAOU",
-        "recent_starts": 8,
-        "recent_bench": 0
-      },
-      {
-        "player_id": "1475919",
-        "name": "MUHAMMET TAHA ŞAHİN",
         "recent_starts": 8,
         "recent_bench": 0
       },
@@ -739,7 +753,7 @@
     "over_2_5_signal": "HIGH",
     "team_card_expectation": 3.03,
     "card_signal": "HIGH",
-    "availability_missing_count": 0,
+    "availability_missing_count": 2,
     "strength_edge": 0.008,
     "draw_calibration": {
       "lift": 0.18,
@@ -778,7 +792,7 @@
       "adjustment": "not_big_match",
       "notes": []
     },
-    "confidence": "LOW",
+    "confidence": "LOW_AVAILABILITY",
     "xg_data_available": true,
     "note": "Poisson, form, rakip savunma, hakem, eksik oyuncu ve takım gücü sinyaliyle çalışan MVP tahmin modelidir."
   },
@@ -792,7 +806,7 @@
       "QAZIM LACI",
       "CASPER SOMMER HOJER",
       "IOANNIS PAPANIKOLAOU",
-      "MUHAMMET TAHA ŞAHİN"
+      "YAHIA FOFANA"
     ],
     "attacking_priority": [
       "JESURUN  RAK-SAKYI",
@@ -821,13 +835,16 @@
         "recommendation": "Erken kart görürse tempo düşür veya değişiklik planla."
       }
     ],
-    "unavailable_removed": []
+    "unavailable_removed": [
+      "KHUSNIDDIN  ALIKULOV",
+      "MUHAMMET TAHA ŞAHİN"
+    ]
   },
   "coach_lineup_audit": {
     "verdict": "KISMEN_TARTIŞMALI",
-    "actual_lineup_score": 84.99,
+    "actual_lineup_score": 92.99,
     "recommended_lineup_score": 105.23,
-    "alignment_rate": 0.808,
+    "alignment_rate": 0.884,
     "actual_starters": [
       "YAHIA FOFANA",
       "SAMET AKAYDİN",
@@ -849,11 +866,10 @@
       "QAZIM LACI",
       "CASPER SOMMER HOJER",
       "IOANNIS PAPANIKOLAOU",
-      "MUHAMMET TAHA ŞAHİN"
+      "YAHIA FOFANA"
     ],
     "omitted_core_players": [
-      "ATTILA  MOCSI",
-      "MUHAMMET TAHA ŞAHİN"
+      "ATTILA  MOCSI"
     ],
     "omitted_attacking_priority": [],
     "questionable_starters": [
@@ -882,13 +898,13 @@
         "goal_threat_score": 0
       }
     ],
-    "alternative_xg_for": 1.58,
+    "alternative_xg_for": 1.5,
     "alternative_xg_against": 1.39,
     "alternative_scoreline": {
       "target_goals": 1,
       "opponent_goals": 1,
       "score": "1-1",
-      "probability": 0.113
+      "probability": 0.116
     },
     "note": "Bu denetim gerçek maçtan önceki kullanım/gol/kart sinyaliyle çalışır; teknik direktörün antrenman, sakatlık ve taktik bilgisine sahip değildir."
   },
@@ -1079,12 +1095,13 @@
     "Bu sezon İKAS EYÜPSPOR ile önceki eşleşme bulunmadığı için rakip özel sinyal zayıf; ağırlık daha çok son form ve oyuncu kullanımına verildi.",
     "Rakibin son 5 maçlık genel formu modele ayrı eklendi: maç başı 0.8 gol atıp 1.0 gol yiyor. Skor tahmini artık sadece Beşiktaş formuna değil, rakibin hücum/savunma profilinin birleşimine göre hesaplanıyor.",
     "Rakibin son 8 maçlık savunma formu gol adayı modeline eklendi: maç başı 1.0 gol yiyor, %12 clean sheet oranı var. Gol adayı skor çarpanı 1.0.",
+    "Eksik oyuncu sinyali modele dahil edildi: MUHAMMET TAHA ŞAHİN, KHUSNIDDIN  ALIKULOV. Bu oyuncular olası 11 ve gol adayı listesinden çıkarıldı; skor beklentisi düşük güvenle aşağı ayarlandı.",
     "Hakem profili kart tarafında anlamlı bir sinyal veriyor: YİĞİT ARSLAN bu sezon önceki 3 Beşiktaş maçında toplam maç başı 7.33 kart, Beşiktaş'a maç başı 3.67 kart ortalamasıyla öne çıkıyor.",
-    "Olası 11 sinyalinde son dönemde öne çıkan isimler: CASPER SOMMER HOJER, IOANNIS PAPANIKOLAOU, MUHAMMET TAHA ŞAHİN, SAMET AKAYDİN, ATTILA  MOCSI, JESURUN  RAK-SAKYI. Kart riski tarafında ise son 8 maç penceresinde ALTIN ZEQIRI, TAYLAN ANTALYALI, MODIBO SAGNAN, KHUSNIDDIN  ALIKULOV dikkat çekiyor.",
+    "Olası 11 sinyalinde son dönemde öne çıkan isimler: CASPER SOMMER HOJER, IOANNIS PAPANIKOLAOU, SAMET AKAYDİN, ATTILA  MOCSI, JESURUN  RAK-SAKYI, QAZIM LACI. Kart riski tarafında ise son 8 maç penceresinde ALTIN ZEQIRI, TAYLAN ANTALYALI, MODIBO SAGNAN, KHUSNIDDIN  ALIKULOV dikkat çekiyor.",
     "Gol adayı sinyalinde öne çıkan isimler: JESURUN  RAK-SAKYI, ALI SOWE, SAMET AKAYDİN, ATTILA  MOCSI. Bu skor son gol formu, sezon içi gol sayısı ve son dönemde ilk 11 başlama sıklığından türetildi. Test sonucunda gerçek Beşiktaş golcüleri: QAZIM LACI, SAMET AKAYDİN, ALI SOWE.",
     "Skor dağılımında en olası senaryolar: 1-1 (%12), 0-1 (%9), 1-0 (%9). Model aksiyonu: Korumalı taraf tahmini; önerilen ana skor 1-1.",
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği JESURUN  RAK-SAKYI, ALI SOWE, SAMET AKAYDİN. Disiplin yönetimi gereken oyuncular: ALTIN ZEQIRI, TAYLAN ANTALYALI, MODIBO SAGNAN.",
-    "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %81 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.38-1.39 yerine 1.58-1.39 bandına gelebilirdi.",
+    "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %88 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.38-1.39 yerine 1.5-1.39 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.38-1.39 bandından 1.6-1.37 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %43 olurdu.",
     "MVP olasılık motoru Beşiktaş galibiyetini %39, beraberliği %26, rakip galibiyetini %35 olarak işaretliyor. Gol beklentisi 1.38-1.39; kart sinyali HIGH."
   ]

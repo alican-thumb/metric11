@@ -313,9 +313,20 @@
     "goal_candidate_multiplier": 1.0
   },
   "availability_signal": {
-    "available": false,
-    "unavailable": [],
-    "note": "Availability verisi yok.",
+    "available": true,
+    "unavailable": [
+      {
+        "player_external_id": "2820741",
+        "player_name": "JOSAFAT WOODING MENDES",
+        "status": "SUSPENDED",
+        "reason": "Kırmızı Kart sonrası otomatik 1 maç ceza varsayımı",
+        "source": "AUTO_CARD_RED",
+        "confidence": "MEDIUM",
+        "impact": "ROTATION"
+      }
+    ],
+    "suspended_count": 1,
+    "injured_count": 0,
     "squad_xg_adjustment": -0.0,
     "squad_adjustment_breakdown": []
   },
@@ -708,7 +719,7 @@
     "over_2_5_signal": "HIGH",
     "team_card_expectation": 2.31,
     "card_signal": "MEDIUM",
-    "availability_missing_count": 0,
+    "availability_missing_count": 1,
     "strength_edge": -0.057,
     "draw_calibration": {
       "lift": 0.175,
@@ -800,7 +811,9 @@
         "recommendation": "Erken kart görürse tempo düşür veya değişiklik planla."
       }
     ],
-    "unavailable_removed": []
+    "unavailable_removed": [
+      "JOSAFAT WOODING MENDES"
+    ]
   },
   "coach_lineup_audit": {
     "verdict": "UYUMLU",
@@ -1037,6 +1050,7 @@
     "Bu sezon GALATASARAY A.Ş. ile önceki eşleşme bulunmadığı için rakip özel sinyal zayıf; ağırlık daha çok son form ve oyuncu kullanımına verildi.",
     "Rakibin son 5 maçlık genel formu modele ayrı eklendi: maç başı 1.4 gol atıp 1.0 gol yiyor. Skor tahmini artık sadece Beşiktaş formuna değil, rakibin hücum/savunma profilinin birleşimine göre hesaplanıyor.",
     "Rakibin son 8 maçlık savunma formu gol adayı modeline eklendi: maç başı 0.88 gol yiyor, %25 clean sheet oranı var. Gol adayı skor çarpanı 1.0.",
+    "Eksik oyuncu sinyali modele dahil edildi: JOSAFAT WOODING MENDES. Bu oyuncular olası 11 ve gol adayı listesinden çıkarıldı; skor beklentisi düşük güvenle aşağı ayarlandı.",
     "Hakem profili kart tarafında anlamlı bir sinyal veriyor: MEHMET TÜRKMEN bu sezon önceki 6 Beşiktaş maçında toplam maç başı 2.83 kart, Beşiktaş'a maç başı 1.17 kart ortalamasıyla öne çıkıyor.",
     "Olası 11 sinyalinde son dönemde öne çıkan isimler: OKAN KOCUK, RİCK VAN DRONGELEN, ANTHONY TİTE EMMANUEL MUSABA, LOGI TOMASSON, ZEKİ YAVRU, CARL JOHAN HOLSE JUSTESEN. Kart riski tarafında ise son 8 maç penceresinde YUNUS EMRE ÇİFT, TANGUY BEMIN  COULIBALY, TONI BOREVKOVIC, EYÜP AYDIN dikkat çekiyor.",
     "Gol adayı sinyalinde öne çıkan isimler: CARL JOHAN HOLSE JUSTESEN, PAPE CHERIF NDIAYE, ANTHONY TİTE EMMANUEL MUSABA, RİCK VAN DRONGELEN. Bu skor son gol formu, sezon içi gol sayısı ve son dönemde ilk 11 başlama sıklığından türetildi. Test sonucunda gerçek Beşiktaş golcüleri: ANTHONY TİTE EMMANUEL MUSABA, EMRE KILINÇ.",

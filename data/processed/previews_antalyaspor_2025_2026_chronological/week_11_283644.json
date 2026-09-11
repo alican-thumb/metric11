@@ -318,9 +318,20 @@
     "goal_candidate_multiplier": 1.0
   },
   "availability_signal": {
-    "available": false,
-    "unavailable": [],
-    "note": "Availability verisi yok.",
+    "available": true,
+    "unavailable": [
+      {
+        "player_external_id": "1155653",
+        "player_name": "DOĞUKAN SİNİK",
+        "status": "SUSPENDED",
+        "reason": "Çift Sarı Kart sonrası otomatik 1 maç ceza varsayımı",
+        "source": "AUTO_CARD_RED",
+        "confidence": "MEDIUM",
+        "impact": "ROTATION"
+      }
+    ],
+    "suspended_count": 1,
+    "injured_count": 0,
     "squad_xg_adjustment": -0.0,
     "squad_adjustment_breakdown": []
   },
@@ -707,7 +718,7 @@
     "over_2_5_signal": "MEDIUM",
     "team_card_expectation": 3.24,
     "card_signal": "HIGH",
-    "availability_missing_count": 0,
+    "availability_missing_count": 1,
     "strength_edge": -0.033,
     "draw_calibration": {
       "lift": 0.11,
@@ -785,7 +796,9 @@
         "recommendation": "Erken kart görürse tempo düşür veya değişiklik planla."
       }
     ],
-    "unavailable_removed": []
+    "unavailable_removed": [
+      "DOĞUKAN SİNİK"
+    ]
   },
   "coach_lineup_audit": {
     "verdict": "TARTIŞMALI",
@@ -1048,6 +1061,7 @@
     "Bu sezon İKAS EYÜPSPOR ile önceki eşleşme bulunmadığı için rakip özel sinyal zayıf; ağırlık daha çok son form ve oyuncu kullanımına verildi.",
     "Rakibin son 5 maçlık genel formu modele ayrı eklendi: maç başı 0.4 gol atıp 0.8 gol yiyor. Skor tahmini artık sadece Beşiktaş formuna değil, rakibin hücum/savunma profilinin birleşimine göre hesaplanıyor.",
     "Rakibin son 8 maçlık savunma formu gol adayı modeline eklendi: maç başı 0.88 gol yiyor, %38 clean sheet oranı var. Gol adayı skor çarpanı 1.0.",
+    "Eksik oyuncu sinyali modele dahil edildi: DOĞUKAN SİNİK. Bu oyuncular olası 11 ve gol adayı listesinden çıkarıldı; skor beklentisi düşük güvenle aşağı ayarlandı.",
     "Hakem profili kart tarafında anlamlı bir sinyal veriyor: ALPER AKARSU bu sezon önceki 4 Beşiktaş maçında toplam maç başı 5.75 kart, Beşiktaş'a maç başı 2.75 kart ortalamasıyla öne çıkıyor.",
     "Olası 11 sinyalinde son dönemde öne çıkan isimler: KENNETH IMMANUEL PAAL, BÜNYAMİN BALCI, GEORGII DZHIKIIA, ABDÜLKADİR ÖMÜR, ALEXANDER GERARD  VAN DE STREEK, NIKOLA STORM. Kart riski tarafında ise son 8 maç penceresinde SAMUEL LEO BEAT  BALLET, MOUHAMED EL BACHIR  GUEYE, DOĞUKAN SİNİK, RAMZI  SAFURI dikkat çekiyor.",
     "Gol adayı sinyalinde öne çıkan isimler: GEORGII DZHIKIIA, SONER DİKMEN, MOUHAMED EL BACHIR  GUEYE, TOMAS  CVANCARA. Bu skor son gol formu, sezon içi gol sayısı ve son dönemde ilk 11 başlama sıklığından türetildi. Test sonucunda gerçek Beşiktaş golcüleri: YOHAN ALEXANDRE MADY BOLI.",

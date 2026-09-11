@@ -313,11 +313,29 @@
     "goal_candidate_multiplier": 1.22
   },
   "availability_signal": {
-    "available": false,
-    "unavailable": [],
-    "note": "Availability verisi yok.",
-    "squad_xg_adjustment": -0.0,
-    "squad_adjustment_breakdown": []
+    "available": true,
+    "unavailable": [
+      {
+        "player_external_id": "2766836",
+        "player_name": "MILAN SKRINIAR",
+        "status": "SUSPENDED",
+        "reason": "4. sarı kart sonrası 1 maç ceza varsayımı",
+        "source": "AUTO_YELLOW_ACCUMULATION",
+        "confidence": "LOW",
+        "impact": "REGULAR"
+      }
+    ],
+    "suspended_count": 1,
+    "injured_count": 0,
+    "squad_xg_adjustment": -0.05,
+    "squad_adjustment_breakdown": [
+      {
+        "player_id": "2766836",
+        "name": "MILAN SKRINIAR",
+        "xg_penalty": 0.05,
+        "start_rate": 0.667
+      }
+    ]
   },
   "referee_signal": {
     "available": true,
@@ -329,12 +347,6 @@
   "player_signals": {
     "window_matches": 8,
     "likely_starters": [
-      {
-        "player_id": "2766836",
-        "name": "MILAN SKRINIAR",
-        "recent_starts": 8,
-        "recent_bench": 0
-      },
       {
         "player_id": "2820744",
         "name": "ARCHIBALD NORMAN BROWN",
@@ -496,18 +508,6 @@
         "recent_cards": 0
       },
       {
-        "player_id": "2766836",
-        "name": "MILAN SKRINIAR",
-        "goal_threat_score": 8.8,
-        "candidate_type": "primary",
-        "recent_starts": 8,
-        "season_goals_before_match": 1,
-        "recent_goals": 1,
-        "big_match_goals_before_match": 0,
-        "opponent_defense_multiplier": 1.22,
-        "actual_scorer": false
-      },
-      {
         "player_id": "2820744",
         "name": "ARCHIBALD NORMAN BROWN",
         "goal_threat_score": 8.41,
@@ -605,9 +605,21 @@
         "big_match_goals_before_match": 0,
         "opponent_defense_multiplier": 1.22,
         "actual_scorer": false
+      },
+      {
+        "player_id": "1427164",
+        "name": "İSMAİL YÜKSEK",
+        "goal_threat_score": 1.95,
+        "candidate_type": "primary",
+        "recent_starts": 5,
+        "season_goals_before_match": 0,
+        "recent_goals": 0,
+        "big_match_goals_before_match": 0,
+        "opponent_defense_multiplier": 1.22,
+        "actual_scorer": false
       }
     ],
-    "specialist_candidate_count": 8,
+    "specialist_candidate_count": 7,
     "actual_scorers": [
       {
         "player_id": "1927788",
@@ -637,17 +649,17 @@
     "note": "Gol adayi skoru TFF gol/ilk 11 gecmisi, son form, rakip savunma, duran top/defans, yedek etki ve segment backtest kalite sinyallerinden turetilen MVP sinyalidir."
   },
   "probabilities": {
-    "target_win_probability": 0.618,
-    "draw_probability": 0.224,
-    "opponent_win_probability": 0.159,
-    "expected_goals_for": 1.97,
+    "target_win_probability": 0.61,
+    "draw_probability": 0.227,
+    "opponent_win_probability": 0.163,
+    "expected_goals_for": 1.92,
     "expected_goals_against": 0.73,
     "top_scorelines": [
       {
         "target_goals": 1,
         "opponent_goals": 0,
         "score": "1-0",
-        "probability": 0.132
+        "probability": 0.136
       },
       {
         "target_goals": 2,
@@ -659,7 +671,7 @@
         "target_goals": 1,
         "opponent_goals": 1,
         "score": "1-1",
-        "probability": 0.097
+        "probability": 0.099
       },
       {
         "target_goals": 2,
@@ -671,24 +683,24 @@
         "target_goals": 3,
         "opponent_goals": 0,
         "score": "3-0",
-        "probability": 0.086
+        "probability": 0.083
       },
       {
         "target_goals": 0,
         "opponent_goals": 0,
         "score": "0-0",
-        "probability": 0.067
+        "probability": 0.071
       }
     ],
     "recommended_scoreline": {
       "target_goals": 1,
       "opponent_goals": 0,
       "score": "1-0",
-      "probability": 0.132
+      "probability": 0.136
     },
     "recommended_call": {
       "result": "target_win",
-      "probability": 0.618,
+      "probability": 0.61,
       "scoreline": "1-0",
       "action": "taraf_eğilimi",
       "action_label": "Taraf eğilimi",
@@ -697,17 +709,17 @@
     "display_prediction": {
       "raw_result": "target_win",
       "final_result": "target_win",
-      "probability": 0.618,
-      "margin": 0.394,
+      "probability": 0.61,
+      "margin": 0.382,
       "adjustment": "raw_unvalidated_team",
       "label": "FENERBAHÇE A.Ş. kazanır",
       "raw_label": "FENERBAHÇE A.Ş. kazanır",
       "note": "Bu takım için ekran kalibrasyonu henüz doğrulanmadığı için ham model tahmini gösterilir."
     },
-    "over_2_5_signal": "HIGH",
+    "over_2_5_signal": "MEDIUM",
     "team_card_expectation": 2.6,
     "card_signal": "MEDIUM",
-    "availability_missing_count": 0,
+    "availability_missing_count": 1,
     "strength_edge": 0.2,
     "draw_calibration": {
       "lift": 0.095,
@@ -751,17 +763,17 @@
     "core_starters": [
       "YOUSSEF EN NESYRI",
       "ANDERSON SOUZA CONCEIÇAO",
-      "MILAN SKRINIAR",
       "ARCHIBALD NORMAN BROWN",
       "SEBASTIAN SZYMANSKI",
       "NELSON CABRAL SEMEDO",
       "JAYDEN QUINN OOSTERWOLDE",
-      "FREDERICO RODRIGUES DE PAULA SANTOS"
+      "FREDERICO RODRIGUES DE PAULA SANTOS",
+      "İSMAİL YÜKSEK"
     ],
     "attacking_priority": [
       "YOUSSEF EN NESYRI",
       "ANDERSON SOUZA CONCEIÇAO",
-      "MILAN SKRINIAR"
+      "ARCHIBALD NORMAN BROWN"
     ],
     "card_caution": [
       {
@@ -785,13 +797,15 @@
         "recommendation": "Erken kart görürse tempo düşür veya değişiklik planla."
       }
     ],
-    "unavailable_removed": []
+    "unavailable_removed": [
+      "MILAN SKRINIAR"
+    ]
   },
   "coach_lineup_audit": {
     "verdict": "TARTIŞMALI",
-    "actual_lineup_score": 45.7,
-    "recommended_lineup_score": 114.88,
-    "alignment_rate": 0.398,
+    "actual_lineup_score": 54.57,
+    "recommended_lineup_score": 111.99,
+    "alignment_rate": 0.487,
     "actual_starters": [
       "TARIK ÇETİN",
       "ÇAĞLAR SÖYÜNCÜ",
@@ -808,23 +822,22 @@
     "model_core_starters": [
       "YOUSSEF EN NESYRI",
       "ANDERSON SOUZA CONCEIÇAO",
-      "MILAN SKRINIAR",
       "ARCHIBALD NORMAN BROWN",
       "SEBASTIAN SZYMANSKI",
       "NELSON CABRAL SEMEDO",
       "JAYDEN QUINN OOSTERWOLDE",
-      "FREDERICO RODRIGUES DE PAULA SANTOS"
+      "FREDERICO RODRIGUES DE PAULA SANTOS",
+      "İSMAİL YÜKSEK"
     ],
     "omitted_core_players": [
       "YOUSSEF EN NESYRI",
-      "MILAN SKRINIAR",
       "ARCHIBALD NORMAN BROWN",
       "SEBASTIAN SZYMANSKI",
       "FREDERICO RODRIGUES DE PAULA SANTOS"
     ],
     "omitted_attacking_priority": [
       "YOUSSEF EN NESYRI",
-      "MILAN SKRINIAR"
+      "ARCHIBALD NORMAN BROWN"
     ],
     "questionable_starters": [
       {
@@ -852,13 +865,13 @@
         "goal_threat_score": 0
       }
     ],
-    "alternative_xg_for": 2.32,
+    "alternative_xg_for": 2.27,
     "alternative_xg_against": 0.73,
     "alternative_scoreline": {
       "target_goals": 2,
       "opponent_goals": 0,
       "score": "2-0",
-      "probability": 0.127
+      "probability": 0.128
     },
     "note": "Bu denetim gerçek maçtan önceki kullanım/gol/kart sinyaliyle çalışır; teknik direktörün antrenman, sakatlık ve taktik bilgisine sahip değildir."
   },
@@ -876,16 +889,16 @@
         "position_confidence": "HIGH",
         "age": 22,
         "economy_score": 28.0,
-        "current_expected_goals_for": 1.97,
+        "current_expected_goals_for": 1.92,
         "current_expected_goals_against": 0.73,
-        "simulated_expected_goals_for": 2.19,
+        "simulated_expected_goals_for": 2.14,
         "simulated_expected_goals_against": 0.71,
         "xg_for_delta": 0.22,
         "xg_against_delta": 0.02,
         "goal_edge_delta": 0.24,
-        "simulated_target_win_probability": 0.713,
-        "simulated_draw_probability": 0.181,
-        "simulated_opponent_win_probability": 0.107,
+        "simulated_target_win_probability": 0.703,
+        "simulated_draw_probability": 0.186,
+        "simulated_opponent_win_probability": 0.111,
         "simulated_scoreline": {
           "target_goals": 2,
           "opponent_goals": 0,
@@ -905,16 +918,16 @@
         "position_confidence": "HIGH",
         "age": 25,
         "economy_score": 22.0,
-        "current_expected_goals_for": 1.97,
+        "current_expected_goals_for": 1.92,
         "current_expected_goals_against": 0.73,
-        "simulated_expected_goals_for": 2.16,
+        "simulated_expected_goals_for": 2.11,
         "simulated_expected_goals_against": 0.72,
         "xg_for_delta": 0.19,
         "xg_against_delta": 0.01,
         "goal_edge_delta": 0.2,
-        "simulated_target_win_probability": 0.705,
-        "simulated_draw_probability": 0.184,
-        "simulated_opponent_win_probability": 0.111,
+        "simulated_target_win_probability": 0.695,
+        "simulated_draw_probability": 0.189,
+        "simulated_opponent_win_probability": 0.115,
         "simulated_scoreline": {
           "target_goals": 2,
           "opponent_goals": 0,
@@ -934,16 +947,16 @@
         "position_confidence": "HIGH",
         "age": 25,
         "economy_score": 22.0,
-        "current_expected_goals_for": 1.97,
+        "current_expected_goals_for": 1.92,
         "current_expected_goals_against": 0.73,
-        "simulated_expected_goals_for": 2.17,
+        "simulated_expected_goals_for": 2.12,
         "simulated_expected_goals_against": 0.72,
         "xg_for_delta": 0.2,
         "xg_against_delta": 0.01,
         "goal_edge_delta": 0.21,
-        "simulated_target_win_probability": 0.707,
-        "simulated_draw_probability": 0.183,
-        "simulated_opponent_win_probability": 0.11,
+        "simulated_target_win_probability": 0.697,
+        "simulated_draw_probability": 0.188,
+        "simulated_opponent_win_probability": 0.114,
         "simulated_scoreline": {
           "target_goals": 2,
           "opponent_goals": 0,
@@ -963,16 +976,16 @@
         "position_confidence": "HIGH",
         "age": 26,
         "economy_score": 18.0,
-        "current_expected_goals_for": 1.97,
+        "current_expected_goals_for": 1.92,
         "current_expected_goals_against": 0.73,
-        "simulated_expected_goals_for": 2.19,
+        "simulated_expected_goals_for": 2.14,
         "simulated_expected_goals_against": 0.71,
         "xg_for_delta": 0.22,
         "xg_against_delta": 0.02,
         "goal_edge_delta": 0.24,
-        "simulated_target_win_probability": 0.713,
-        "simulated_draw_probability": 0.181,
-        "simulated_opponent_win_probability": 0.107,
+        "simulated_target_win_probability": 0.703,
+        "simulated_draw_probability": 0.186,
+        "simulated_opponent_win_probability": 0.111,
         "simulated_scoreline": {
           "target_goals": 2,
           "opponent_goals": 0,
@@ -992,21 +1005,21 @@
         "position_confidence": "HIGH",
         "age": 23,
         "economy_score": 32.0,
-        "current_expected_goals_for": 1.97,
+        "current_expected_goals_for": 1.92,
         "current_expected_goals_against": 0.73,
-        "simulated_expected_goals_for": 2.14,
+        "simulated_expected_goals_for": 2.09,
         "simulated_expected_goals_against": 0.71,
         "xg_for_delta": 0.17,
         "xg_against_delta": 0.02,
         "goal_edge_delta": 0.19,
-        "simulated_target_win_probability": 0.703,
-        "simulated_draw_probability": 0.186,
-        "simulated_opponent_win_probability": 0.111,
+        "simulated_target_win_probability": 0.694,
+        "simulated_draw_probability": 0.191,
+        "simulated_opponent_win_probability": 0.115,
         "simulated_scoreline": {
           "target_goals": 2,
           "opponent_goals": 0,
           "score": "2-0",
-          "probability": 0.132
+          "probability": 0.133
         },
         "impact_label": "LOW_POSITIVE",
         "why": "Poz. grup: FWD (HIGH). İlk 11: 26, Gol: 0, Kart: 1. Sözleşme fırsatı: HIGH. Resale potansiyeli yüksek.",
@@ -1021,21 +1034,21 @@
         "position_confidence": "HIGH",
         "age": 23,
         "economy_score": 32.0,
-        "current_expected_goals_for": 1.97,
+        "current_expected_goals_for": 1.92,
         "current_expected_goals_against": 0.73,
-        "simulated_expected_goals_for": 2.14,
+        "simulated_expected_goals_for": 2.09,
         "simulated_expected_goals_against": 0.71,
         "xg_for_delta": 0.17,
         "xg_against_delta": 0.02,
         "goal_edge_delta": 0.19,
-        "simulated_target_win_probability": 0.703,
-        "simulated_draw_probability": 0.186,
-        "simulated_opponent_win_probability": 0.111,
+        "simulated_target_win_probability": 0.694,
+        "simulated_draw_probability": 0.191,
+        "simulated_opponent_win_probability": 0.115,
         "simulated_scoreline": {
           "target_goals": 2,
           "opponent_goals": 0,
           "score": "2-0",
-          "probability": 0.132
+          "probability": 0.133
         },
         "impact_label": "LOW_POSITIVE",
         "why": "Poz. grup: MID (HIGH). İlk 11: 25, Gol: 0, Kart: 2. Sözleşme fırsatı: HIGH. Resale potansiyeli yüksek.",
@@ -1049,13 +1062,14 @@
     "Bu sezon MISIRLI.COM.TR FATİH KARAGÜMRÜK ile önceki eşleşme bulunmadığı için rakip özel sinyal zayıf; ağırlık daha çok son form ve oyuncu kullanımına verildi.",
     "Rakibin son 5 maçlık genel formu modele ayrı eklendi: maç başı 1.0 gol atıp 2.4 gol yiyor. Skor tahmini artık sadece Beşiktaş formuna değil, rakibin hücum/savunma profilinin birleşimine göre hesaplanıyor.",
     "Rakibin son 8 maçlık savunma formu gol adayı modeline eklendi: maç başı 2.25 gol yiyor, %0 clean sheet oranı var. Gol adayı skor çarpanı 1.22.",
+    "Eksik oyuncu sinyali modele dahil edildi: MILAN SKRINIAR. Bu oyuncular olası 11 ve gol adayı listesinden çıkarıldı; skor beklentisi düşük güvenle aşağı ayarlandı.",
     "Hakem profili kart tarafında anlamlı bir sinyal veriyor: ALİ ŞANSALAN bu sezon önceki 5 Beşiktaş maçında toplam maç başı 5.2 kart, Beşiktaş'a maç başı 3.2 kart ortalamasıyla öne çıkıyor.",
-    "Olası 11 sinyalinde son dönemde öne çıkan isimler: MILAN SKRINIAR, ARCHIBALD NORMAN BROWN, YOUSSEF EN NESYRI, ANDERSON SOUZA CONCEIÇAO, NELSON CABRAL SEMEDO, JAYDEN QUINN OOSTERWOLDE. Kart riski tarafında ise son 8 maç penceresinde MILAN SKRINIAR, JAYDEN QUINN OOSTERWOLDE, İRFAN CAN KAHVECİ, JHON JADER DURAN PALACIOS dikkat çekiyor.",
-    "Gol adayı sinyalinde öne çıkan isimler: YOUSSEF EN NESYRI, ANDERSON SOUZA CONCEIÇAO, MILAN SKRINIAR, ARCHIBALD NORMAN BROWN. Bu skor son gol formu, sezon içi gol sayısı ve son dönemde ilk 11 başlama sıklığından türetildi. Test sonucunda gerçek Beşiktaş golcüleri: ANDERSON SOUZA CONCEIÇAO, MARCO ASENSIO WILLEMSEN.",
-    "Skor dağılımında en olası senaryolar: 1-0 (%13), 2-0 (%13), 1-1 (%10). Model aksiyonu: Taraf eğilimi; önerilen ana skor 1-0.",
-    "Kadro tercih önerisi: Önde baskı ve skor arama. Hücum önceliği YOUSSEF EN NESYRI, ANDERSON SOUZA CONCEIÇAO, MILAN SKRINIAR. Disiplin yönetimi gereken oyuncular: MILAN SKRINIAR, JAYDEN QUINN OOSTERWOLDE, İRFAN CAN KAHVECİ.",
-    "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %40 uyum buldu; karar etiketi TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.97-0.73 yerine 2.32-0.73 bandına gelebilirdi.",
-    "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.97-0.73 bandından 2.19-0.71 bandına taşırdı. Bu senaryoda en olası skor 2-0 ve kazanma olasılığı %71 olurdu.",
-    "MVP olasılık motoru Beşiktaş galibiyetini %62, beraberliği %22, rakip galibiyetini %16 olarak işaretliyor. Gol beklentisi 1.97-0.73; kart sinyali MEDIUM."
+    "Olası 11 sinyalinde son dönemde öne çıkan isimler: ARCHIBALD NORMAN BROWN, YOUSSEF EN NESYRI, ANDERSON SOUZA CONCEIÇAO, NELSON CABRAL SEMEDO, JAYDEN QUINN OOSTERWOLDE, FREDERICO RODRIGUES DE PAULA SANTOS. Kart riski tarafında ise son 8 maç penceresinde MILAN SKRINIAR, JAYDEN QUINN OOSTERWOLDE, İRFAN CAN KAHVECİ, JHON JADER DURAN PALACIOS dikkat çekiyor.",
+    "Gol adayı sinyalinde öne çıkan isimler: YOUSSEF EN NESYRI, ANDERSON SOUZA CONCEIÇAO, ARCHIBALD NORMAN BROWN, SEBASTIAN SZYMANSKI. Bu skor son gol formu, sezon içi gol sayısı ve son dönemde ilk 11 başlama sıklığından türetildi. Test sonucunda gerçek Beşiktaş golcüleri: ANDERSON SOUZA CONCEIÇAO, MARCO ASENSIO WILLEMSEN.",
+    "Skor dağılımında en olası senaryolar: 1-0 (%14), 2-0 (%13), 1-1 (%10). Model aksiyonu: Taraf eğilimi; önerilen ana skor 1-0.",
+    "Kadro tercih önerisi: Önde baskı ve skor arama. Hücum önceliği YOUSSEF EN NESYRI, ANDERSON SOUZA CONCEIÇAO, ARCHIBALD NORMAN BROWN. Disiplin yönetimi gereken oyuncular: MILAN SKRINIAR, JAYDEN QUINN OOSTERWOLDE, İRFAN CAN KAHVECİ.",
+    "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %49 uyum buldu; karar etiketi TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.92-0.73 yerine 2.27-0.73 bandına gelebilirdi.",
+    "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.92-0.73 bandından 2.14-0.71 bandına taşırdı. Bu senaryoda en olası skor 2-0 ve kazanma olasılığı %70 olurdu.",
+    "MVP olasılık motoru Beşiktaş galibiyetini %61, beraberliği %23, rakip galibiyetini %16 olarak işaretliyor. Gol beklentisi 1.92-0.73; kart sinyali MEDIUM."
   ]
 }

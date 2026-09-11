@@ -330,9 +330,10 @@
     "goal_candidate_multiplier": 1.0
   },
   "availability_signal": {
-    "available": false,
+    "available": true,
     "unavailable": [],
-    "note": "Availability verisi yok.",
+    "suspended_count": 0,
+    "injured_count": 0,
     "squad_xg_adjustment": -0.0,
     "squad_adjustment_breakdown": []
   },
@@ -832,7 +833,7 @@
   "coach_lineup_audit": {
     "verdict": "UYUMLU",
     "actual_lineup_score": 120.11,
-    "recommended_lineup_score": 112.67,
+    "recommended_lineup_score": 112.68,
     "alignment_rate": 1.066,
     "actual_starters": [
       "MATEUSZ LIS",

@@ -325,9 +325,20 @@
     "goal_candidate_multiplier": 1.0
   },
   "availability_signal": {
-    "available": false,
-    "unavailable": [],
-    "note": "Availability verisi yok.",
+    "available": true,
+    "unavailable": [
+      {
+        "player_external_id": "2372595",
+        "player_name": "JINHO JO",
+        "status": "SUSPENDED",
+        "reason": "4. sarı kart sonrası 1 maç ceza varsayımı",
+        "source": "AUTO_YELLOW_ACCUMULATION",
+        "confidence": "LOW",
+        "impact": "ROTATION"
+      }
+    ],
+    "suspended_count": 1,
+    "injured_count": 0,
     "squad_xg_adjustment": -0.0,
     "squad_adjustment_breakdown": []
   },
@@ -380,12 +391,6 @@
       {
         "player_id": "2419765",
         "name": "ENIS BARDHI",
-        "recent_starts": 6,
-        "recent_bench": 2
-      },
-      {
-        "player_id": "2372595",
-        "name": "JINHO JO",
         "recent_starts": 6,
         "recent_bench": 2
       },
@@ -708,7 +713,7 @@
     "over_2_5_signal": "HIGH",
     "team_card_expectation": 1.7,
     "card_signal": "LOW",
-    "availability_missing_count": 0,
+    "availability_missing_count": 1,
     "strength_edge": -0.116,
     "draw_calibration": {
       "lift": 0.03,
@@ -756,7 +761,7 @@
       "GUILHERME HAUBERT SITYA",
       "YHOAN MANY ANDZOUANA",
       "UĞURCAN YAZĞILI",
-      "JINHO JO"
+      "MORTEN BJORLO"
     ],
     "attacking_priority": [
       "MEHMET UMUT NAYİR",
@@ -780,13 +785,15 @@
         "recommendation": "Erken kart görürse tempo düşür veya değişiklik planla."
       }
     ],
-    "unavailable_removed": []
+    "unavailable_removed": [
+      "JINHO JO"
+    ]
   },
   "coach_lineup_audit": {
     "verdict": "TARTIŞMALI",
-    "actual_lineup_score": 61.58,
-    "recommended_lineup_score": 99.67,
-    "alignment_rate": 0.618,
+    "actual_lineup_score": 69.58,
+    "recommended_lineup_score": 100.33,
+    "alignment_rate": 0.694,
     "actual_starters": [
       "BAHADIR HAN GÜNGÖRDÜ",
       "ADİL DEMİRBAĞ",
@@ -808,12 +815,11 @@
       "GUILHERME HAUBERT SITYA",
       "YHOAN MANY ANDZOUANA",
       "UĞURCAN YAZĞILI",
-      "JINHO JO"
+      "MORTEN BJORLO"
     ],
     "omitted_core_players": [
       "MEHMET UMUT NAYİR",
-      "YHOAN MANY ANDZOUANA",
-      "JINHO JO"
+      "YHOAN MANY ANDZOUANA"
     ],
     "omitted_attacking_priority": [
       "MEHMET UMUT NAYİR"
@@ -850,13 +856,13 @@
         "goal_threat_score": 5.15
       }
     ],
-    "alternative_xg_for": 1.33,
+    "alternative_xg_for": 1.29,
     "alternative_xg_against": 1.94,
     "alternative_scoreline": {
       "target_goals": 1,
       "opponent_goals": 1,
       "score": "1-1",
-      "probability": 0.098
+      "probability": 0.099
     },
     "note": "Bu denetim gerçek maçtan önceki kullanım/gol/kart sinyaliyle çalışır; teknik direktörün antrenman, sakatlık ve taktik bilgisine sahip değildir."
   },
@@ -1047,12 +1053,13 @@
     "Bu sezon BEŞİKTAŞ A.Ş. ile önceki eşleşme verisi var: 1 maçta Beşiktaş maç başı 0.0 gol ve 1.0 kart ortalaması üretti. Bu yüzden raporda hem skor hem kart tarafı önceki eşleşme etkisiyle ayarlandı.",
     "Rakibin son 5 maçlık genel formu modele ayrı eklendi: maç başı 1.8 gol atıp 1.4 gol yiyor. Skor tahmini artık sadece Beşiktaş formuna değil, rakibin hücum/savunma profilinin birleşimine göre hesaplanıyor.",
     "Rakibin son 8 maçlık savunma formu gol adayı modeline eklendi: maç başı 1.12 gol yiyor, %38 clean sheet oranı var. Gol adayı skor çarpanı 1.0.",
+    "Eksik oyuncu sinyali modele dahil edildi: JINHO JO. Bu oyuncular olası 11 ve gol adayı listesinden çıkarıldı; skor beklentisi düşük güvenle aşağı ayarlandı.",
     "Hakem profili kart tarafında anlamlı bir sinyal veriyor: BATUHAN KOLAK bu sezon önceki 6 Beşiktaş maçında toplam maç başı 4.0 kart, Beşiktaş'a maç başı 1.83 kart ortalamasıyla öne çıkıyor.",
     "Olası 11 sinyalinde son dönemde öne çıkan isimler: BAHADIR HAN GÜNGÖRDÜ, MEHMET UMUT NAYİR, GUILHERME HAUBERT SITYA, YHOAN MANY ANDZOUANA, JACKSON KYANVUBU MULEKA, UĞURCAN YAZĞILI. Kart riski tarafında ise son 8 maç penceresinde JINHO JO, ADİL DEMİRBAĞ, DENİZ TÜRÜÇ, UĞURCAN YAZĞILI dikkat çekiyor.",
     "Gol adayı sinyalinde öne çıkan isimler: MEHMET UMUT NAYİR, JACKSON KYANVUBU MULEKA, ENIS BARDHI, BLAZ KRAMER. Bu skor son gol formu, sezon içi gol sayısı ve son dönemde ilk 11 başlama sıklığından türetildi. Test sonucunda gerçek Beşiktaş golcüleri: DENİZ TÜRÜÇ.",
     "Skor dağılımında en olası senaryolar: 0-1 (%10), 1-1 (%10), 0-2 (%10). Model aksiyonu: Taraf eğilimi; önerilen ana skor 0-1.",
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği MEHMET UMUT NAYİR, JACKSON KYANVUBU MULEKA, ENIS BARDHI. Disiplin yönetimi gereken oyuncular: JINHO JO, ADİL DEMİRBAĞ, DENİZ TÜRÜÇ.",
-    "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %62 uyum buldu; karar etiketi TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 0.98-1.94 yerine 1.33-1.94 bandına gelebilirdi.",
+    "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %69 uyum buldu; karar etiketi TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 0.98-1.94 yerine 1.29-1.94 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 0.98-1.94 bandından 1.2-1.92 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %24 olurdu.",
     "MVP olasılık motoru Beşiktaş galibiyetini %24, beraberliği %22, rakip galibiyetini %53 olarak işaretliyor. Gol beklentisi 0.98-1.94; kart sinyali LOW."
   ]

@@ -89,7 +89,10 @@ def main() -> None:
 
     if args.all_teams:
         for team in ALL_TEAMS:
-            avail_path = Path(args.availability) if team == "BEŞİKTAŞ A.Ş." else None
+            # Her takımın kendi build_player_availability.py --all-teams çıktısını kullan
+            # (player_availability_{slug}_{SEASON}.json); Beşiktaş için bu, args.availability
+            # ile aynı dosyaya karşılık gelir.
+            avail_path = PROCESSED_DIR / f"player_availability_{team_slug(team)}_{SEASON}.json"
             out_dir = PROCESSED_DIR / f"previews_{team_slug(team)}_{SEASON}_chronological"
             run_for_team(matches, team, args.min_prior_matches, avail_path, out_dir)
     else:

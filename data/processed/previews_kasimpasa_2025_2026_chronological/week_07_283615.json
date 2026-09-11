@@ -318,9 +318,20 @@
     "goal_candidate_multiplier": 1.01
   },
   "availability_signal": {
-    "available": false,
-    "unavailable": [],
-    "note": "Availability verisi yok.",
+    "available": true,
+    "unavailable": [
+      {
+        "player_external_id": "2685696",
+        "player_name": "RIBEIRO DIAS CARLOS MIGUEL",
+        "status": "SUSPENDED",
+        "reason": "Kırmızı Kart sonrası otomatik 1 maç ceza varsayımı",
+        "source": "AUTO_CARD_RED",
+        "confidence": "MEDIUM",
+        "impact": "ROTATION"
+      }
+    ],
+    "suspended_count": 1,
+    "injured_count": 0,
     "squad_xg_adjustment": -0.0,
     "squad_adjustment_breakdown": []
   },
@@ -697,7 +708,7 @@
     "over_2_5_signal": "MEDIUM",
     "team_card_expectation": 2.18,
     "card_signal": "MEDIUM",
-    "availability_missing_count": 0,
+    "availability_missing_count": 1,
     "strength_edge": 0.011,
     "draw_calibration": {
       "lift": 0.18,
@@ -780,7 +791,9 @@
         "recommendation": "Erken kart görürse tempo düşür veya değişiklik planla."
       }
     ],
-    "unavailable_removed": []
+    "unavailable_removed": [
+      "RIBEIRO DIAS CARLOS MIGUEL"
+    ]
   },
   "coach_lineup_audit": {
     "verdict": "UYUMLU",
@@ -1017,6 +1030,7 @@
     "Bu sezon ÇAYKUR RİZESPOR A.Ş. ile önceki eşleşme bulunmadığı için rakip özel sinyal zayıf; ağırlık daha çok son form ve oyuncu kullanımına verildi.",
     "Rakibin son 5 maçlık genel formu modele ayrı eklendi: maç başı 0.6 gol atıp 1.4 gol yiyor. Skor tahmini artık sadece Beşiktaş formuna değil, rakibin hücum/savunma profilinin birleşimine göre hesaplanıyor.",
     "Rakibin son 5 maçlık savunma formu gol adayı modeline eklendi: maç başı 1.4 gol yiyor, %40 clean sheet oranı var. Gol adayı skor çarpanı 1.01.",
+    "Eksik oyuncu sinyali modele dahil edildi: RIBEIRO DIAS CARLOS MIGUEL. Bu oyuncular olası 11 ve gol adayı listesinden çıkarıldı; skor beklentisi düşük güvenle aşağı ayarlandı.",
     "Hakem profili kart tarafında anlamlı bir sinyal veriyor: ÇAĞDAŞ ALTAY bu sezon önceki 3 Beşiktaş maçında toplam maç başı 2.33 kart, Beşiktaş'a maç başı 0.67 kart ortalamasıyla öne çıkıyor.",
     "Olası 11 sinyalinde son dönemde öne çıkan isimler: ANDREAS GIANNIOTIS, NICHOLAS OPOKU, ANDRI FANNAR BALDURSSON, HARIS HAJRADINOVIC, AHMED MORTADHA BEN OUANES, ATTILA ARPAD SZALAI. Kart riski tarafında ise son 8 maç penceresinde ATAKAN MÜJDE, ALİ YAVUZ KOL, RIBEIRO DIAS CARLOS MIGUEL, CLAUDIO WINCK NETO dikkat çekiyor.",
     "Gol adayı sinyalinde öne çıkan isimler: HARIS HAJRADINOVIC, PAPE HABIB GUEYE, ANDREAS GIANNIOTIS, NICHOLAS OPOKU. Bu skor son gol formu, sezon içi gol sayısı ve son dönemde ilk 11 başlama sıklığından türetildi. Test sonucunda gerçek Beşiktaş golcüleri: PAPE HABIB GUEYE, AHMED MORTADHA BEN OUANES.",

@@ -330,9 +330,20 @@
     "goal_candidate_multiplier": 1.22
   },
   "availability_signal": {
-    "available": false,
-    "unavailable": [],
-    "note": "Availability verisi yok.",
+    "available": true,
+    "unavailable": [
+      {
+        "player_external_id": "1247487",
+        "player_name": "DORUKHAN TOKÖZ",
+        "status": "SUSPENDED",
+        "reason": "4. sarı kart sonrası 1 maç ceza varsayımı",
+        "source": "AUTO_YELLOW_ACCUMULATION",
+        "confidence": "LOW",
+        "impact": "ROTATION"
+      }
+    ],
+    "suspended_count": 1,
+    "injured_count": 0,
     "squad_xg_adjustment": -0.0,
     "squad_adjustment_breakdown": []
   },
@@ -413,10 +424,10 @@
         "recent_bench": 1
       },
       {
-        "player_id": "1247487",
-        "name": "DORUKHAN TOKÖZ",
+        "player_id": "1726611",
+        "name": "SEMİH GÜLER",
         "recent_starts": 4,
-        "recent_bench": 4
+        "recent_bench": 2
       }
     ],
     "card_risk_players": [
@@ -731,7 +742,7 @@
     "over_2_5_signal": "MEDIUM",
     "team_card_expectation": 3.31,
     "card_signal": "HIGH",
-    "availability_missing_count": 0,
+    "availability_missing_count": 1,
     "strength_edge": -0.06,
     "draw_calibration": {
       "lift": 0.13,
@@ -804,7 +815,9 @@
         "recommendation": "Erken kart görürse tempo düşür veya değişiklik planla."
       }
     ],
-    "unavailable_removed": []
+    "unavailable_removed": [
+      "DORUKHAN TOKÖZ"
+    ]
   },
   "coach_lineup_audit": {
     "verdict": "TARTIŞMALI",
@@ -843,12 +856,6 @@
       "GERMAN ONUGKHA"
     ],
     "questionable_starters": [
-      {
-        "name": "SEMİH GÜLER",
-        "reason": "Model çekirdek 11 veya hücum önceliğinde değil; son pencere ilk 11/gol tehdidi düşük.",
-        "recent_starts": 0,
-        "goal_threat_score": 0
-      },
       {
         "name": "JOSHUA BENJAMIN BRENET",
         "reason": "Model çekirdek 11 veya hücum önceliğinde değil; son pencere ilk 11/gol tehdidi düşük.",
@@ -1071,6 +1078,7 @@
     "Bu sezon GENÇLERBİRLİĞİ ile önceki eşleşme verisi var: 1 maçta Beşiktaş maç başı 1.0 gol ve 5.0 kart ortalaması üretti. Bu yüzden raporda hem skor hem kart tarafı önceki eşleşme etkisiyle ayarlandı.",
     "Rakibin son 5 maçlık genel formu modele ayrı eklendi: maç başı 1.2 gol atıp 1.8 gol yiyor. Skor tahmini artık sadece Beşiktaş formuna değil, rakibin hücum/savunma profilinin birleşimine göre hesaplanıyor.",
     "Rakibin son 8 maçlık savunma formu gol adayı modeline eklendi: maç başı 1.62 gol yiyor, %12 clean sheet oranı var. Gol adayı skor çarpanı 1.22.",
+    "Eksik oyuncu sinyali modele dahil edildi: DORUKHAN TOKÖZ. Bu oyuncular olası 11 ve gol adayı listesinden çıkarıldı; skor beklentisi düşük güvenle aşağı ayarlandı.",
     "Hakem profili kart tarafında anlamlı bir sinyal veriyor: ÜMİT ÖZTÜRK bu sezon önceki 4 Beşiktaş maçında toplam maç başı 5.25 kart, Beşiktaş'a maç başı 2.75 kart ortalamasıyla öne çıkıyor.",
     "Olası 11 sinyalinde son dönemde öne çıkan isimler: STEFANO WILFRED DENSWIL, MIGUEL FILIPE NUNES CARDOSO, LASZLO BENES, BİLAL BAYAZIT, GERMAN ONUGKHA, YOUSSEF AIT BENASSER. Kart riski tarafında ise son 8 maç penceresinde GÖRKEM  SAĞLAM, FURKAN SOYALP, BİLAL BAYAZIT, STEFANO WILFRED DENSWIL dikkat çekiyor.",
     "Gol adayı sinyalinde öne çıkan isimler: TALHA SARIARSLAN, GERMAN ONUGKHA, LASZLO BENES, RAMAZAN CİVELEK. Bu skor son gol formu, sezon içi gol sayısı ve son dönemde ilk 11 başlama sıklığından türetildi.",

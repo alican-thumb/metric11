@@ -318,9 +318,29 @@
     "goal_candidate_multiplier": 1.0
   },
   "availability_signal": {
-    "available": false,
-    "unavailable": [],
-    "note": "Availability verisi yok.",
+    "available": true,
+    "unavailable": [
+      {
+        "player_external_id": "2554457",
+        "player_name": "OUSSEYNOU  BA",
+        "status": "SUSPENDED",
+        "reason": "4. sarı kart sonrası 1 maç ceza varsayımı",
+        "source": "AUTO_YELLOW_ACCUMULATION",
+        "confidence": "LOW",
+        "impact": "ROTATION"
+      },
+      {
+        "player_external_id": "2766741",
+        "player_name": "FESTY OSEIWE EBOSELE",
+        "status": "SUSPENDED",
+        "reason": "Kırmızı Kart sonrası otomatik 1 maç ceza varsayımı",
+        "source": "AUTO_CARD_RED",
+        "confidence": "MEDIUM",
+        "impact": "FRINGE"
+      }
+    ],
+    "suspended_count": 2,
+    "injured_count": 0,
     "squad_xg_adjustment": -0.0,
     "squad_adjustment_breakdown": []
   },
@@ -713,12 +733,12 @@
       "result": "target_win",
       "probability": 0.508,
       "scoreline": "1-1",
-      "action": "KEEP_PICK_WITH_DRAW_WARNING",
-      "action_label": "Beraberlik uyarılı tahmin",
+      "action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
+      "action_label": "Korumalı taraf tahmini",
       "risk_notes": [
         "top_draw_scoreline",
         "strength_edge_very_narrow",
-        "medium_confidence_side_pick"
+        "low_confidence_side_pick"
       ]
     },
     "display_prediction": {
@@ -734,7 +754,7 @@
     "over_2_5_signal": "HIGH",
     "team_card_expectation": 2.67,
     "card_signal": "MEDIUM",
-    "availability_missing_count": 0,
+    "availability_missing_count": 2,
     "strength_edge": 0.022,
     "draw_calibration": {
       "lift": 0.045,
@@ -750,15 +770,15 @@
       "last_meeting_date": "2026-04-24T17:00:00+00:00"
     },
     "draw_risk": {
-      "score": 31,
-      "risk_level": "MEDIUM",
+      "score": 36,
+      "risk_level": "HIGH",
       "reasons": [
         "top_draw_scoreline",
         "strength_edge_very_narrow",
-        "medium_confidence_side_pick"
+        "low_confidence_side_pick"
       ],
       "protected_prediction": true,
-      "recommended_model_action": "KEEP_PICK_WITH_DRAW_WARNING",
+      "recommended_model_action": "PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO",
       "note": "Ana 1X2 tahminini değiştirmeden beraberlik senaryosunu görünür yapan risk katmanıdır."
     },
     "big_match_profile": {
@@ -767,7 +787,7 @@
       "adjustment": "not_big_match",
       "notes": []
     },
-    "confidence": "MEDIUM",
+    "confidence": "LOW_AVAILABILITY",
     "xg_data_available": true,
     "note": "Poisson, form, rakip savunma, hakem, eksik oyuncu ve takım gücü sinyaliyle çalışan MVP tahmin modelidir."
   },
@@ -810,7 +830,10 @@
         "recommendation": "Erken kart görürse tempo düşür veya değişiklik planla."
       }
     ],
-    "unavailable_removed": []
+    "unavailable_removed": [
+      "FESTY OSEIWE EBOSELE",
+      "OUSSEYNOU  BA"
+    ]
   },
   "coach_lineup_audit": {
     "verdict": "TARTIŞMALI",
@@ -1066,10 +1089,11 @@
     "Bu sezon KASIMPAŞA A.Ş. ile önceki eşleşme bulunmadığı için rakip özel sinyal zayıf; ağırlık daha çok son form ve oyuncu kullanımına verildi.",
     "Rakibin son 5 maçlık genel formu modele ayrı eklendi: maç başı 1.0 gol atıp 1.8 gol yiyor. Skor tahmini artık sadece Beşiktaş formuna değil, rakibin hücum/savunma profilinin birleşimine göre hesaplanıyor.",
     "Rakibin son 8 maçlık savunma formu gol adayı modeline eklendi: maç başı 1.5 gol yiyor, %0 clean sheet oranı var. Gol adayı skor çarpanı 1.0.",
+    "Eksik oyuncu sinyali modele dahil edildi: OUSSEYNOU  BA, FESTY OSEIWE EBOSELE. Bu oyuncular olası 11 ve gol adayı listesinden çıkarıldı; skor beklentisi düşük güvenle aşağı ayarlandı.",
     "Hakem profili kart tarafında anlamlı bir sinyal veriyor: ATİLLA KARAOĞLAN bu sezon önceki 7 Beşiktaş maçında toplam maç başı 5.86 kart, Beşiktaş'a maç başı 2.86 kart ortalamasıyla öne çıkıyor.",
     "Olası 11 sinyalinde son dönemde öne çıkan isimler: MUHAMMED ŞENGEZER, ELDOR SHOMURODOV, JEROME OPOKU, BERAT AYBERK ÖZDEMİR, MIGUEL CRESPO DA SILVA, LEONARDO CAMPOS DUARTE DA SILVA. Kart riski tarafında ise son 8 maç penceresinde DENİZ TÜRÜÇ, OUSSEYNOU  BA, FESTY OSEIWE EBOSELE, JAKUB  KALUZINSKI dikkat çekiyor.",
     "Gol adayı sinyalinde öne çıkan isimler: ELDOR SHOMURODOV, NUNO MIGUEL DA COSTA JOIA, BERTUĞ ÖZGÜR YILDIRIM, IVAN BRNIC. Bu skor son gol formu, sezon içi gol sayısı ve son dönemde ilk 11 başlama sıklığından türetildi. Test sonucunda gerçek Beşiktaş golcüleri: ABBOSBEK FAYZULLAYEV, AMINE HARIT, ELDOR SHOMURODOV.",
-    "Skor dağılımında en olası senaryolar: 1-1 (%11), 2-1 (%10), 1-0 (%9). Model aksiyonu: Beraberlik uyarılı tahmin; önerilen ana skor 1-1.",
+    "Skor dağılımında en olası senaryolar: 1-1 (%11), 2-1 (%10), 1-0 (%9). Model aksiyonu: Korumalı taraf tahmini; önerilen ana skor 1-1.",
     "Kadro tercih önerisi: Önde baskı ve skor arama. Hücum önceliği ELDOR SHOMURODOV, NUNO MIGUEL DA COSTA JOIA, BERTUĞ ÖZGÜR YILDIRIM. Disiplin yönetimi gereken oyuncular: DENİZ TÜRÜÇ, OUSSEYNOU  BA, FESTY OSEIWE EBOSELE.",
     "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %63 uyum buldu; karar etiketi TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.84-1.18 yerine 2.19-1.18 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.84-1.18 bandından 2.06-1.16 bandına taşırdı. Bu senaryoda en olası skor 2-1 ve kazanma olasılığı %58 olurdu.",

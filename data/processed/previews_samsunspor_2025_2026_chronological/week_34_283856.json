@@ -330,9 +330,20 @@
     "goal_candidate_multiplier": 1.0
   },
   "availability_signal": {
-    "available": false,
-    "unavailable": [],
-    "note": "Availability verisi yok.",
+    "available": true,
+    "unavailable": [
+      {
+        "player_external_id": "2820741",
+        "player_name": "JOSAFAT WOODING MENDES",
+        "status": "SUSPENDED",
+        "reason": "4. sarı kart sonrası 1 maç ceza varsayımı",
+        "source": "AUTO_YELLOW_ACCUMULATION",
+        "confidence": "LOW",
+        "impact": "ROTATION"
+      }
+    ],
+    "suspended_count": 1,
+    "injured_count": 0,
     "squad_xg_adjustment": -0.0,
     "squad_adjustment_breakdown": []
   },
@@ -395,12 +406,6 @@
         "recent_bench": 2
       },
       {
-        "player_id": "2820741",
-        "name": "JOSAFAT WOODING MENDES",
-        "recent_starts": 5,
-        "recent_bench": 3
-      },
-      {
         "player_id": "2821057",
         "name": "TONI BOREVKOVIC",
         "recent_starts": 4,
@@ -417,6 +422,12 @@
         "name": "ELAYİS TAVSAN",
         "recent_starts": 4,
         "recent_bench": 4
+      },
+      {
+        "player_id": "2824222",
+        "name": "TANGUY BEMIN  COULIBALY",
+        "recent_starts": 4,
+        "recent_bench": 3
       }
     ],
     "card_risk_players": [
@@ -769,7 +780,7 @@
     "over_2_5_signal": "HIGH",
     "team_card_expectation": 2.59,
     "card_signal": "MEDIUM",
-    "availability_missing_count": 0,
+    "availability_missing_count": 1,
     "strength_edge": -0.005,
     "draw_calibration": {
       "lift": 0.13,
@@ -845,7 +856,9 @@
         "recommendation": "Erken kart görürse tempo düşür veya değişiklik planla."
       }
     ],
-    "unavailable_removed": []
+    "unavailable_removed": [
+      "JOSAFAT WOODING MENDES"
+    ]
   },
   "coach_lineup_audit": {
     "verdict": "TARTIŞMALI",
@@ -1100,6 +1113,7 @@
     "Bu sezon GÖZTEPE A.Ş. ile önceki eşleşme verisi var: 1 maçta Beşiktaş maç başı 0.0 gol ve 2.0 kart ortalaması üretti. Bu yüzden raporda hem skor hem kart tarafı önceki eşleşme etkisiyle ayarlandı.",
     "Rakibin son 5 maçlık genel formu modele ayrı eklendi: maç başı 1.8 gol atıp 1.2 gol yiyor. Skor tahmini artık sadece Beşiktaş formuna değil, rakibin hücum/savunma profilinin birleşimine göre hesaplanıyor.",
     "Rakibin son 8 maçlık savunma formu gol adayı modeline eklendi: maç başı 1.38 gol yiyor, %25 clean sheet oranı var. Gol adayı skor çarpanı 1.0.",
+    "Eksik oyuncu sinyali modele dahil edildi: JOSAFAT WOODING MENDES. Bu oyuncular olası 11 ve gol adayı listesinden çıkarıldı; skor beklentisi düşük güvenle aşağı ayarlandı.",
     "Hakem profili kart tarafında anlamlı bir sinyal veriyor: ÜMİT ÖZTÜRK bu sezon önceki 6 Beşiktaş maçında toplam maç başı 5.17 kart, Beşiktaş'a maç başı 2.67 kart ortalamasıyla öne çıkıyor.",
     "Olası 11 sinyalinde son dönemde öne çıkan isimler: CARL JOHAN HOLSE JUSTESEN, MARIUS MOUNDILMADJI, LOGI TOMASSON, OKAN KOCUK, RİCK VAN DRONGELEN, ANTOINE MAKOUMBOU. Kart riski tarafında ise son 8 maç penceresinde EMRE KILINÇ, SONER GÖNÜL, ALI BADRA DIABATE, YALÇIN KAYAN dikkat çekiyor.",
     "Gol adayı sinyalinde öne çıkan isimler: MARIUS MOUNDILMADJI, CARL JOHAN HOLSE JUSTESEN, PAPE CHERIF NDIAYE, JULES OLIVIER NTCHAM. Bu skor son gol formu, sezon içi gol sayısı ve son dönemde ilk 11 başlama sıklığından türetildi. Test sonucunda gerçek Beşiktaş golcüleri: TANGUY BEMIN  COULIBALY, ELAYİS TAVSAN, MARIUS MOUNDILMADJI.",

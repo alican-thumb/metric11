@@ -330,9 +330,20 @@
     "goal_candidate_multiplier": 1.14
   },
   "availability_signal": {
-    "available": false,
-    "unavailable": [],
-    "note": "Availability verisi yok.",
+    "available": true,
+    "unavailable": [
+      {
+        "player_external_id": "2467794",
+        "player_name": "BARIŞ JAKOB KALAYCI",
+        "status": "SUSPENDED",
+        "reason": "4. sarı kart sonrası 1 maç ceza varsayımı",
+        "source": "AUTO_YELLOW_ACCUMULATION",
+        "confidence": "LOW",
+        "impact": "ROTATION"
+      }
+    ],
+    "suspended_count": 1,
+    "injured_count": 0,
     "squad_xg_adjustment": -0.0,
     "squad_adjustment_breakdown": []
   },
@@ -385,12 +396,6 @@
       {
         "player_id": "1718185",
         "name": "ÇAĞTAY KURUKALIP",
-        "recent_starts": 5,
-        "recent_bench": 3
-      },
-      {
-        "player_id": "2467794",
-        "name": "BARIŞ JAKOB KALAYCI",
         "recent_starts": 5,
         "recent_bench": 3
       },
@@ -543,23 +548,6 @@
         "recent_cards": 0
       },
       {
-        "player_id": "2467794",
-        "name": "BARIŞ JAKOB KALAYCI",
-        "goal_threat_score": 8.12,
-        "candidate_type": "primary+impact_sub",
-        "recent_starts": 5,
-        "season_goals_before_match": 1,
-        "recent_goals": 1,
-        "big_match_goals_before_match": 1,
-        "opponent_defense_multiplier": 1.14,
-        "actual_scorer": false,
-        "header_goals_before_match": 0,
-        "penalty_goals_before_match": 0,
-        "recent_bench": 3,
-        "cards_before_match": 4,
-        "recent_cards": 3
-      },
-      {
         "player_id": "2886001",
         "name": "FILIP MLADENOVIC",
         "goal_threat_score": 6.4,
@@ -633,9 +621,26 @@
         "big_match_goals_before_match": 0,
         "opponent_defense_multiplier": 1.14,
         "actual_scorer": false
+      },
+      {
+        "player_id": "2419591",
+        "name": "SAM ANDREAS LARSSON",
+        "goal_threat_score": 3.5,
+        "candidate_type": "primary+penalty_profile",
+        "recent_starts": 6,
+        "season_goals_before_match": 1,
+        "recent_goals": 0,
+        "big_match_goals_before_match": 0,
+        "opponent_defense_multiplier": 1.14,
+        "actual_scorer": false,
+        "header_goals_before_match": 0,
+        "penalty_goals_before_match": 1,
+        "recent_bench": 0,
+        "cards_before_match": 1,
+        "recent_cards": 1
       }
     ],
-    "specialist_candidate_count": 12,
+    "specialist_candidate_count": 11,
     "actual_scorers": [
       {
         "player_id": "2886225",
@@ -734,7 +739,7 @@
     "over_2_5_signal": "HIGH",
     "team_card_expectation": 3.3,
     "card_signal": "HIGH",
-    "availability_missing_count": 0,
+    "availability_missing_count": 1,
     "strength_edge": -0.151,
     "draw_calibration": {
       "lift": 0.025,
@@ -781,7 +786,7 @@
     "core_starters": [
       "DATRO DAVID FOFANA",
       "SERGIO ANTONIO DA LUZ JUNIOR",
-      "BARIŞ JAKOB KALAYCI",
+      "FILIP MLADENOVIC",
       "IVO  GRBIC",
       "BERKAY ÖZCAN",
       "RICARDO DE SOUSA ESGAIO",
@@ -815,13 +820,15 @@
         "recommendation": "Erken kart görürse tempo düşür veya değişiklik planla."
       }
     ],
-    "unavailable_removed": []
+    "unavailable_removed": [
+      "BARIŞ JAKOB KALAYCI"
+    ]
   },
   "coach_lineup_audit": {
     "verdict": "TARTIŞMALI",
-    "actual_lineup_score": 55.69,
-    "recommended_lineup_score": 97.19,
-    "alignment_rate": 0.573,
+    "actual_lineup_score": 65.26,
+    "recommended_lineup_score": 99.19,
+    "alignment_rate": 0.658,
     "actual_starters": [
       "IVO  GRBIC",
       "RICARDO DE SOUSA ESGAIO",
@@ -838,7 +845,7 @@
     "model_core_starters": [
       "DATRO DAVID FOFANA",
       "SERGIO ANTONIO DA LUZ JUNIOR",
-      "BARIŞ JAKOB KALAYCI",
+      "FILIP MLADENOVIC",
       "IVO  GRBIC",
       "BERKAY ÖZCAN",
       "RICARDO DE SOUSA ESGAIO",
@@ -847,7 +854,6 @@
     ],
     "omitted_core_players": [
       "DATRO DAVID FOFANA",
-      "BARIŞ JAKOB KALAYCI",
       "BERKAY ÖZCAN"
     ],
     "omitted_attacking_priority": [
@@ -874,7 +880,7 @@
         "goal_threat_score": 0
       }
     ],
-    "alternative_xg_for": 1.49,
+    "alternative_xg_for": 1.48,
     "alternative_xg_against": 2.0,
     "alternative_scoreline": {
       "target_goals": 1,
@@ -1071,12 +1077,13 @@
     "Bu sezon TRABZONSPOR A.Ş. ile önceki eşleşme verisi var: 1 maçta Beşiktaş maç başı 3.0 gol ve 4.0 kart ortalaması üretti. Bu yüzden raporda hem skor hem kart tarafı önceki eşleşme etkisiyle ayarlandı.",
     "Rakibin son 5 maçlık genel formu modele ayrı eklendi: maç başı 2.0 gol atıp 1.2 gol yiyor. Skor tahmini artık sadece Beşiktaş formuna değil, rakibin hücum/savunma profilinin birleşimine göre hesaplanıyor.",
     "Rakibin son 8 maçlık savunma formu gol adayı modeline eklendi: maç başı 1.75 gol yiyor, %12 clean sheet oranı var. Gol adayı skor çarpanı 1.14.",
+    "Eksik oyuncu sinyali modele dahil edildi: BARIŞ JAKOB KALAYCI. Bu oyuncular olası 11 ve gol adayı listesinden çıkarıldı; skor beklentisi düşük güvenle aşağı ayarlandı.",
     "Hakem profili kart tarafında anlamlı bir sinyal veriyor: ALİ YILMAZ bu sezon önceki 14 Beşiktaş maçında toplam maç başı 4.79 kart, Beşiktaş'a maç başı 2.86 kart ortalamasıyla öne çıkıyor.",
     "Olası 11 sinyalinde son dönemde öne çıkan isimler: IVO  GRBIC, BERKAY ÖZCAN, RICARDO DE SOUSA ESGAIO, CLAUDIO MATIAS KRANEVITTER, SERGIO ANTONIO DA LUZ JUNIOR, SAM ANDREAS LARSSON. Kart riski tarafında ise son 8 maç penceresinde DANIEL ANTHONY JOHNSON, BARTUĞ ELMAZ, ANIL YİĞİT ÇINAR, BARIŞ JAKOB KALAYCI dikkat çekiyor.",
     "Gol adayı sinyalinde öne çıkan isimler: DATRO DAVID FOFANA, SERGIO ANTONIO DA LUZ JUNIOR, ANIL YİĞİT ÇINAR, AHMED TRAORE. Bu skor son gol formu, sezon içi gol sayısı ve son dönemde ilk 11 başlama sıklığından türetildi. Test sonucunda gerçek Beşiktaş golcüleri: DANIELE VERDE.",
     "Skor dağılımında en olası senaryolar: 1-1 (%10), 1-2 (%10), 0-1 (%9). Model aksiyonu: Beraberlik uyarılı tahmin; önerilen ana skor 1-1.",
     "Kadro tercih önerisi: Dengeli başlangıç, ikinci yarı hamle. Hücum önceliği DATRO DAVID FOFANA, SERGIO ANTONIO DA LUZ JUNIOR, ANIL YİĞİT ÇINAR. Disiplin yönetimi gereken oyuncular: DANIEL ANTHONY JOHNSON, BARTUĞ ELMAZ, ANIL YİĞİT ÇINAR.",
-    "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %57 uyum buldu; karar etiketi TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.14-2.0 yerine 1.49-2.0 bandına gelebilirdi.",
+    "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %66 uyum buldu; karar etiketi TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 1.14-2.0 yerine 1.48-2.0 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday KACPER SZYMON KOZLOWSKI (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 1.14-2.0 bandından 1.36-1.98 bandına taşırdı. Bu senaryoda en olası skor 1-1 ve kazanma olasılığı %26 olurdu.",
     "MVP olasılık motoru Beşiktaş galibiyetini %25, beraberliği %23, rakip galibiyetini %52 olarak işaretliyor. Gol beklentisi 1.14-2.0; kart sinyali HIGH."
   ]

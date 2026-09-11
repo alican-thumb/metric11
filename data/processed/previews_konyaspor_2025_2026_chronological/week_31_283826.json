@@ -330,9 +330,29 @@
     "goal_candidate_multiplier": 0.9
   },
   "availability_signal": {
-    "available": false,
-    "unavailable": [],
-    "note": "Availability verisi yok.",
+    "available": true,
+    "unavailable": [
+      {
+        "player_external_id": "2695670",
+        "player_name": "RIECHEDLY GUILLERMO BAZOER",
+        "status": "SUSPENDED",
+        "reason": "4. sarı kart sonrası 1 maç ceza varsayımı",
+        "source": "AUTO_YELLOW_ACCUMULATION",
+        "confidence": "LOW",
+        "impact": "FRINGE"
+      },
+      {
+        "player_external_id": "2771473",
+        "player_name": "MORTEN BJORLO",
+        "status": "SUSPENDED",
+        "reason": "4. sarı kart sonrası 1 maç ceza varsayımı",
+        "source": "AUTO_YELLOW_ACCUMULATION",
+        "confidence": "LOW",
+        "impact": "ROTATION"
+      }
+    ],
+    "suspended_count": 2,
+    "injured_count": 0,
     "squad_xg_adjustment": -0.0,
     "squad_adjustment_breakdown": []
   },
@@ -407,16 +427,16 @@
         "recent_bench": 3
       },
       {
-        "player_id": "2771473",
-        "name": "MORTEN BJORLO",
-        "recent_starts": 4,
-        "recent_bench": 4
-      },
-      {
         "player_id": "2419765",
         "name": "ENIS BARDHI",
         "recent_starts": 4,
         "recent_bench": 4
+      },
+      {
+        "player_id": "2697063",
+        "name": "BLAZ KRAMER",
+        "recent_starts": 4,
+        "recent_bench": 3
       }
     ],
     "card_risk_players": [
@@ -747,7 +767,7 @@
     "over_2_5_signal": "HIGH",
     "team_card_expectation": 2.88,
     "card_signal": "MEDIUM",
-    "availability_missing_count": 0,
+    "availability_missing_count": 2,
     "strength_edge": -0.073,
     "draw_calibration": {
       "lift": 0.18,
@@ -795,7 +815,7 @@
         "beraberlik riski canlı"
       ]
     },
-    "confidence": "LOW",
+    "confidence": "LOW_AVAILABILITY",
     "xg_data_available": true,
     "note": "Poisson, form, rakip savunma, hakem, eksik oyuncu ve takım gücü sinyaliyle çalışan MVP tahmin modelidir."
   },
@@ -838,12 +858,15 @@
         "recommendation": "Erken kart görürse tempo düşür veya değişiklik planla."
       }
     ],
-    "unavailable_removed": []
+    "unavailable_removed": [
+      "MORTEN BJORLO",
+      "RIECHEDLY GUILLERMO BAZOER"
+    ]
   },
   "coach_lineup_audit": {
     "verdict": "TARTIŞMALI",
     "actual_lineup_score": 71.88,
-    "recommended_lineup_score": 102.32,
+    "recommended_lineup_score": 102.31,
     "alignment_rate": 0.703,
     "actual_starters": [
       "DENİZ ERTAŞ",
@@ -1093,6 +1116,7 @@
     "Bu sezon TRABZONSPOR A.Ş. ile önceki eşleşme verisi var: 1 maçta Beşiktaş maç başı 1.0 gol ve 2.0 kart ortalaması üretti. Bu yüzden raporda hem skor hem kart tarafı önceki eşleşme etkisiyle ayarlandı.",
     "Rakibin son 5 maçlık genel formu modele ayrı eklendi: maç başı 1.2 gol atıp 0.6 gol yiyor. Skor tahmini artık sadece Beşiktaş formuna değil, rakibin hücum/savunma profilinin birleşimine göre hesaplanıyor.",
     "Rakibin son 8 maçlık savunma formu gol adayı modeline eklendi: maç başı 0.75 gol yiyor, %25 clean sheet oranı var. Gol adayı skor çarpanı 0.9.",
+    "Eksik oyuncu sinyali modele dahil edildi: RIECHEDLY GUILLERMO BAZOER, MORTEN BJORLO. Bu oyuncular olası 11 ve gol adayı listesinden çıkarıldı; skor beklentisi düşük güvenle aşağı ayarlandı.",
     "Hakem profili kart tarafında anlamlı bir sinyal veriyor: HALİL UMUT MELER bu sezon önceki 15 Beşiktaş maçında toplam maç başı 4.53 kart, Beşiktaş'a maç başı 2.2 kart ortalamasıyla öne çıkıyor.",
     "Olası 11 sinyalinde son dönemde öne çıkan isimler: BAHADIR HAN GÜNGÖRDÜ, ADİL DEMİRBAĞ, DENİZ TÜRÜÇ, BERKAN İSMAİL KUTLU, KAZEEM ADEREMI J. OLAIGBE, MELİH İBRAHİMOĞLU. Kart riski tarafında ise son 8 maç penceresinde ADAMO NAGALO, DENİZ TÜRÜÇ, ARİF BOŞLUK, BLAZ KRAMER dikkat çekiyor.",
     "Gol adayı sinyalinde öne çıkan isimler: JACKSON KYANVUBU MULEKA, BLAZ KRAMER, DIOGO ANTONIO CUPIDO GONÇALVES, MEHMET UMUT NAYİR. Bu skor son gol formu, sezon içi gol sayısı ve son dönemde ilk 11 başlama sıklığından türetildi. Test sonucunda gerçek Beşiktaş golcüleri: BERKAN İSMAİL KUTLU, BERKAN İSMAİL KUTLU.",

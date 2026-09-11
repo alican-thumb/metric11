@@ -330,9 +330,20 @@
     "goal_candidate_multiplier": 1.08
   },
   "availability_signal": {
-    "available": false,
-    "unavailable": [],
-    "note": "Availability verisi yok.",
+    "available": true,
+    "unavailable": [
+      {
+        "player_external_id": "1574806",
+        "player_name": "BEDİRHAN ÖZYURT",
+        "status": "SUSPENDED",
+        "reason": "Kırmızı Kart sonrası otomatik 1 maç ceza varsayımı",
+        "source": "AUTO_CARD_RED",
+        "confidence": "MEDIUM",
+        "impact": "ROTATION"
+      }
+    ],
+    "suspended_count": 1,
+    "injured_count": 0,
     "squad_xg_adjustment": -0.0,
     "squad_adjustment_breakdown": []
   },
@@ -743,7 +754,7 @@
     "over_2_5_signal": "HIGH",
     "team_card_expectation": 1.5,
     "card_signal": "LOW",
-    "availability_missing_count": 0,
+    "availability_missing_count": 1,
     "strength_edge": -0.051,
     "draw_calibration": {
       "lift": 0.17,
@@ -825,7 +836,9 @@
         "recommendation": "Erken kart görürse tempo düşür veya değişiklik planla."
       }
     ],
-    "unavailable_removed": []
+    "unavailable_removed": [
+      "BEDİRHAN ÖZYURT"
+    ]
   },
   "coach_lineup_audit": {
     "verdict": "KISMEN_TARTIŞMALI",
@@ -1073,6 +1086,7 @@
     "Bu sezon GENÇLERBİRLİĞİ ile önceki eşleşme verisi var: 1 maçta Beşiktaş maç başı 0.0 gol ve 2.0 kart ortalaması üretti. Bu yüzden raporda hem skor hem kart tarafı önceki eşleşme etkisiyle ayarlandı.",
     "Rakibin son 5 maçlık genel formu modele ayrı eklendi: maç başı 1.4 gol atıp 1.8 gol yiyor. Skor tahmini artık sadece Beşiktaş formuna değil, rakibin hücum/savunma profilinin birleşimine göre hesaplanıyor.",
     "Rakibin son 8 maçlık savunma formu gol adayı modeline eklendi: maç başı 1.5 gol yiyor, %25 clean sheet oranı var. Gol adayı skor çarpanı 1.08.",
+    "Eksik oyuncu sinyali modele dahil edildi: BEDİRHAN ÖZYURT. Bu oyuncular olası 11 ve gol adayı listesinden çıkarıldı; skor beklentisi düşük güvenle aşağı ayarlandı.",
     "Hakem profili kart tarafında anlamlı bir sinyal veriyor: ÖMER FARUK TURTAY bu sezon önceki 1 Beşiktaş maçında toplam maç başı 2.0 kart, Beşiktaş'a maç başı 2.0 kart ortalamasıyla öne çıkıyor.",
     "Olası 11 sinyalinde son dönemde öne çıkan isimler: UMUT DİLAN BOZOK, EMİR ORTAKAYA, MATEUSZ JACEK LEGOWSKI, JANKAT YILMAZ, JEROME JUNIOR ONGUENE, TALHA  ÜLVAN. Kart riski tarafında ise son 8 maç penceresinde HALİL AKBUNAR, TAŞKIN İLTER, NIHAD MUJAKIC, BEDİRHAN ÖZYURT dikkat çekiyor.",
     "Gol adayı sinyalinde öne çıkan isimler: UMUT DİLAN BOZOK, EMRE AKBABA, METEHAN ALTUNBAŞ, PRINCE OBENG AMPEM. Bu skor son gol formu, sezon içi gol sayısı ve son dönemde ilk 11 başlama sıklığından türetildi. Test sonucunda gerçek Beşiktaş golcüleri: METEHAN ALTUNBAŞ.",

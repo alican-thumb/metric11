@@ -318,9 +318,20 @@
     "goal_candidate_multiplier": 1.22
   },
   "availability_signal": {
-    "available": false,
-    "unavailable": [],
-    "note": "Availability verisi yok.",
+    "available": true,
+    "unavailable": [
+      {
+        "player_external_id": "1048516",
+        "player_name": "MELİH KABASAKAL",
+        "status": "SUSPENDED",
+        "reason": "4. sarı kart sonrası 1 maç ceza varsayımı",
+        "source": "AUTO_YELLOW_ACCUMULATION",
+        "confidence": "LOW",
+        "impact": "ROTATION"
+      }
+    ],
+    "suspended_count": 1,
+    "injured_count": 0,
     "squad_xg_adjustment": -0.0,
     "squad_adjustment_breakdown": []
   },
@@ -337,12 +348,6 @@
       {
         "player_id": "2821509",
         "name": "LUIS JESUS PEREZ MAQUEDA",
-        "recent_starts": 8,
-        "recent_bench": 0
-      },
-      {
-        "player_id": "1048516",
-        "name": "MELİH KABASAKAL",
         "recent_starts": 8,
         "recent_bench": 0
       },
@@ -742,7 +747,7 @@
     "over_2_5_signal": "HIGH",
     "team_card_expectation": 2.15,
     "card_signal": "MEDIUM",
-    "availability_missing_count": 0,
+    "availability_missing_count": 1,
     "strength_edge": 0.096,
     "draw_calibration": {
       "lift": 0.09,
@@ -791,9 +796,9 @@
       "MOHAMED LAMINE BAYO",
       "ALEXANDRU IULIAN MAXIM",
       "LUIS JESUS PEREZ MAQUEDA",
-      "MELİH KABASAKAL",
       "MUSTAFA BURAK BOZAN",
-      "LEO MYENTY JANNA ABENA"
+      "LEO MYENTY JANNA ABENA",
+      "ARDA KIZILDAĞ"
     ],
     "attacking_priority": [
       "KACPER SZYMON KOZLOWSKI",
@@ -822,13 +827,15 @@
         "recommendation": "Erken kart görürse tempo düşür veya değişiklik planla."
       }
     ],
-    "unavailable_removed": []
+    "unavailable_removed": [
+      "MELİH KABASAKAL"
+    ]
   },
   "coach_lineup_audit": {
     "verdict": "KISMEN_TARTIŞMALI",
-    "actual_lineup_score": 89.55,
-    "recommended_lineup_score": 116.39,
-    "alignment_rate": 0.769,
+    "actual_lineup_score": 97.55,
+    "recommended_lineup_score": 118.53,
+    "alignment_rate": 0.823,
     "actual_starters": [
       "ZAFER GÖRGEN",
       "ARDA KIZILDAĞ",
@@ -848,12 +855,11 @@
       "MOHAMED LAMINE BAYO",
       "ALEXANDRU IULIAN MAXIM",
       "LUIS JESUS PEREZ MAQUEDA",
-      "MELİH KABASAKAL",
       "MUSTAFA BURAK BOZAN",
-      "LEO MYENTY JANNA ABENA"
+      "LEO MYENTY JANNA ABENA",
+      "ARDA KIZILDAĞ"
     ],
     "omitted_core_players": [
-      "MELİH KABASAKAL",
       "MUSTAFA BURAK BOZAN",
       "LEO MYENTY JANNA ABENA"
     ],
@@ -878,7 +884,7 @@
         "goal_threat_score": 0
       }
     ],
-    "alternative_xg_for": 2.3,
+    "alternative_xg_for": 2.24,
     "alternative_xg_against": 1.57,
     "alternative_scoreline": {
       "target_goals": 2,
@@ -1075,12 +1081,13 @@
     "Bu sezon ZECORNER KAYSERİSPOR ile önceki eşleşme bulunmadığı için rakip özel sinyal zayıf; ağırlık daha çok son form ve oyuncu kullanımına verildi.",
     "Rakibin son 5 maçlık genel formu modele ayrı eklendi: maç başı 1.6 gol atıp 3.0 gol yiyor. Skor tahmini artık sadece Beşiktaş formuna değil, rakibin hücum/savunma profilinin birleşimine göre hesaplanıyor.",
     "Rakibin son 8 maçlık savunma formu gol adayı modeline eklendi: maç başı 2.62 gol yiyor, %0 clean sheet oranı var. Gol adayı skor çarpanı 1.22.",
+    "Eksik oyuncu sinyali modele dahil edildi: MELİH KABASAKAL. Bu oyuncular olası 11 ve gol adayı listesinden çıkarıldı; skor beklentisi düşük güvenle aşağı ayarlandı.",
     "Hakem profili kart tarafında anlamlı bir sinyal veriyor: MEHMET TÜRKMEN bu sezon önceki 5 Beşiktaş maçında toplam maç başı 3.0 kart, Beşiktaş'a maç başı 1.2 kart ortalamasıyla öne çıkıyor.",
-    "Olası 11 sinyalinde son dönemde öne çıkan isimler: LUIS JESUS PEREZ MAQUEDA, MELİH KABASAKAL, KACPER SZYMON KOZLOWSKI, ALEXANDRU IULIAN MAXIM, KEVIN MANUEL  RODRIGUES, MUSTAFA BURAK BOZAN. Kart riski tarafında ise son 8 maç penceresinde PAPA ALIOUNE NDIAYE, YUSUF KARHAN KABADAYI, OGÜN ÖZÇİÇEK, DEIAN CRISTIAN SORESCU dikkat çekiyor.",
+    "Olası 11 sinyalinde son dönemde öne çıkan isimler: LUIS JESUS PEREZ MAQUEDA, KACPER SZYMON KOZLOWSKI, ALEXANDRU IULIAN MAXIM, KEVIN MANUEL  RODRIGUES, MUSTAFA BURAK BOZAN, LEO MYENTY JANNA ABENA. Kart riski tarafında ise son 8 maç penceresinde PAPA ALIOUNE NDIAYE, YUSUF KARHAN KABADAYI, OGÜN ÖZÇİÇEK, DEIAN CRISTIAN SORESCU dikkat çekiyor.",
     "Gol adayı sinyalinde öne çıkan isimler: KACPER SZYMON KOZLOWSKI, KEVIN MANUEL  RODRIGUES, MOHAMED LAMINE BAYO, ALEXANDRU IULIAN MAXIM. Bu skor son gol formu, sezon içi gol sayısı ve son dönemde ilk 11 başlama sıklığından türetildi. Test sonucunda gerçek Beşiktaş golcüleri: ALEXANDRU IULIAN MAXIM, MOHAMED LAMINE BAYO, MOHAMED LAMINE BAYO.",
     "Skor dağılımında en olası senaryolar: 2-1 (%9), 1-1 (%9), 2-2 (%7). Model aksiyonu: Korumalı taraf tahmini; önerilen ana skor 2-1.",
     "Kadro tercih önerisi: Önde baskı ve skor arama. Hücum önceliği KACPER SZYMON KOZLOWSKI, KEVIN MANUEL  RODRIGUES, MOHAMED LAMINE BAYO. Disiplin yönetimi gereken oyuncular: PAPA ALIOUNE NDIAYE, YUSUF KARHAN KABADAYI, OGÜN ÖZÇİÇEK.",
-    "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %77 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 2.03-1.57 yerine 2.3-1.57 bandına gelebilirdi.",
+    "Teknik direktör kadro denetimi: model gerçek ilk 11 ile önerilen çekirdek plan arasında %82 uyum buldu; karar etiketi KISMEN_TARTIŞMALI. Alternatif model 11'i kullanılsaydı xG 2.03-1.57 yerine 2.24-1.57 bandına gelebilirdi.",
     "Transfer etki simülasyonunda örnek aday ERNEST MUÇİ (Kanat / çizgi kırıcı) maç planına eklenseydi model xG'yi 2.03-1.57 bandından 2.22-1.56 bandına taşırdı. Bu senaryoda en olası skor 2-1 ve kazanma olasılığı %53 olurdu.",
     "MVP olasılık motoru Beşiktaş galibiyetini %48, beraberliği %25, rakip galibiyetini %27 olarak işaretliyor. Gol beklentisi 2.03-1.57; kart sinyali MEDIUM."
   ]

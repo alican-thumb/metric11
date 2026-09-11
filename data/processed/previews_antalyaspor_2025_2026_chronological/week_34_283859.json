@@ -330,9 +330,20 @@
     "goal_candidate_multiplier": 1.0
   },
   "availability_signal": {
-    "available": false,
-    "unavailable": [],
-    "note": "Availability verisi yok.",
+    "available": true,
+    "unavailable": [
+      {
+        "player_external_id": "1722425",
+        "player_name": "ERDOĞAN YEŞİLYURT",
+        "status": "SUSPENDED",
+        "reason": "4. sarı kart sonrası 1 maç ceza varsayımı",
+        "source": "AUTO_YELLOW_ACCUMULATION",
+        "confidence": "LOW",
+        "impact": "FRINGE"
+      }
+    ],
+    "suspended_count": 1,
+    "injured_count": 0,
     "squad_xg_adjustment": -0.0,
     "squad_adjustment_breakdown": []
   },
@@ -401,12 +412,6 @@
         "recent_bench": 2
       },
       {
-        "player_id": "1722425",
-        "name": "ERDOĞAN YEŞİLYURT",
-        "recent_starts": 5,
-        "recent_bench": 3
-      },
-      {
         "player_id": "2821002",
         "name": "LAUTARO DANIEL GIANNETTI",
         "recent_starts": 5,
@@ -415,6 +420,12 @@
       {
         "player_id": "1435110",
         "name": "BÜNYAMİN BALCI",
+        "recent_starts": 4,
+        "recent_bench": 4
+      },
+      {
+        "player_id": "1155653",
+        "name": "DOĞUKAN SİNİK",
         "recent_starts": 4,
         "recent_bench": 4
       }
@@ -748,7 +759,7 @@
     "over_2_5_signal": "MEDIUM",
     "team_card_expectation": 2.41,
     "card_signal": "MEDIUM",
-    "availability_missing_count": 0,
+    "availability_missing_count": 1,
     "strength_edge": -0.01,
     "draw_calibration": {
       "lift": 0.165,
@@ -832,7 +843,9 @@
         "recommendation": "Erken kart görürse tempo düşür veya değişiklik planla."
       }
     ],
-    "unavailable_removed": []
+    "unavailable_removed": [
+      "ERDOĞAN YEŞİLYURT"
+    ]
   },
   "coach_lineup_audit": {
     "verdict": "KISMEN_TARTIŞMALI",
@@ -1085,6 +1098,7 @@
     "Bu sezon KOCAELİSPOR ile önceki eşleşme verisi var: 1 maçta Beşiktaş maç başı 1.0 gol ve 3.0 kart ortalaması üretti. Bu yüzden raporda hem skor hem kart tarafı önceki eşleşme etkisiyle ayarlandı.",
     "Rakibin son 5 maçlık genel formu modele ayrı eklendi: maç başı 0.6 gol atıp 1.0 gol yiyor. Skor tahmini artık sadece Beşiktaş formuna değil, rakibin hücum/savunma profilinin birleşimine göre hesaplanıyor.",
     "Rakibin son 8 maçlık savunma formu gol adayı modeline eklendi: maç başı 1.5 gol yiyor, %12 clean sheet oranı var. Gol adayı skor çarpanı 1.0.",
+    "Eksik oyuncu sinyali modele dahil edildi: ERDOĞAN YEŞİLYURT. Bu oyuncular olası 11 ve gol adayı listesinden çıkarıldı; skor beklentisi düşük güvenle aşağı ayarlandı.",
     "Hakem profili kart tarafında anlamlı bir sinyal veriyor: HALİL UMUT MELER bu sezon önceki 17 Beşiktaş maçında toplam maç başı 4.24 kart, Beşiktaş'a maç başı 1.82 kart ortalamasıyla öne çıkıyor.",
     "Olası 11 sinyalinde son dönemde öne çıkan isimler: KENNETH IMMANUEL PAAL, SAMUEL LEO BEAT  BALLET, ALEXANDER GERARD  VAN DE STREEK, JULIAN  CUESTA DIAZ, SONER DİKMEN, JESPER ISMAILA  CEESAY. Kart riski tarafında ise son 8 maç penceresinde BAHADIR ÖZTÜRK, ABDULLAH YİĞİTER, LAUTARO DANIEL GIANNETTI, ERDOĞAN YEŞİLYURT dikkat çekiyor.",
     "Gol adayı sinyalinde öne çıkan isimler: ALEXANDER GERARD  VAN DE STREEK, SAMUEL LEO BEAT  BALLET, SONER DİKMEN, NIKOLA STORM. Bu skor son gol formu, sezon içi gol sayısı ve son dönemde ilk 11 başlama sıklığından türetildi. Test sonucunda gerçek Beşiktaş golcüleri: SAMUEL LEO BEAT  BALLET.",

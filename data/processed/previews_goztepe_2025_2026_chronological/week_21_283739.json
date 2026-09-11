@@ -325,9 +325,10 @@
     "goal_candidate_multiplier": 1.14
   },
   "availability_signal": {
-    "available": false,
+    "available": true,
     "unavailable": [],
-    "note": "Availability verisi yok.",
+    "suspended_count": 0,
+    "injured_count": 0,
     "squad_xg_adjustment": -0.0,
     "squad_adjustment_breakdown": []
   },
@@ -551,6 +552,23 @@
         "recent_cards": 2
       },
       {
+        "player_id": "2820847",
+        "name": "ISHOLA JUNIOR  OLAITAN",
+        "goal_threat_score": 8.23,
+        "candidate_type": "primary+impact_sub",
+        "recent_starts": 4,
+        "season_goals_before_match": 2,
+        "recent_goals": 1,
+        "big_match_goals_before_match": 0,
+        "opponent_defense_multiplier": 1.14,
+        "actual_scorer": false,
+        "header_goals_before_match": 0,
+        "penalty_goals_before_match": 0,
+        "recent_bench": 3,
+        "cards_before_match": 1,
+        "recent_cards": 0
+      },
+      {
         "player_id": "1618261",
         "name": "TAHA ALTIKARDEŞ",
         "goal_threat_score": 7.85,
@@ -607,28 +625,6 @@
         "recent_cards": 0,
         "opponent_defense_multiplier": 1.14,
         "actual_scorer": false
-      },
-      {
-        "player_id": "2820847",
-        "name": "ISHOLA JUNIOR  OLAITAN",
-        "goal_threat_score": 5.6,
-        "candidate_type": "primary+impact_sub",
-        "recent_starts": 4,
-        "season_goals_before_match": 2,
-        "recent_goals": 1,
-        "big_match_goals_before_match": 0,
-        "opponent_defense_multiplier": 1.14,
-        "actual_scorer": false,
-        "header_goals_before_match": 0,
-        "penalty_goals_before_match": 0,
-        "recent_bench": 3,
-        "cards_before_match": 1,
-        "recent_cards": 0,
-        "quality_adjustment": {
-          "multiplier": 0.68,
-          "reason": "Top 5 sıralama etkisini düşür veya aday tipini yeniden kontrol et.",
-          "source": "goal_candidate_segment_backtest"
-        }
       }
     ],
     "specialist_candidate_count": 11,
