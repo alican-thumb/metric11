@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T19:19:40.303546",
+  "generated_at": "2026-09-11T16:31:11.644446",
   "season": "2026-2027",
   "source_note": "Tahminler 2025-26 sezonunun tamamı ve 2026-27'de şimdiye kadar oynanmış (36 maç) sonuçlardan türetilen güncel takım formu/Elo/transfer durumuna dayanır; sezon ilerledikçe bu sayfa her gün otomatik olarak yeniden hesaplanır, statik bir anlık görüntü değildir.",
   "total_weeks": 34,
@@ -575,49 +575,49 @@
           "data_confidence": "PLAYED",
           "raw_predicted": "away",
           "predicted": "away",
-          "expected_home_goals": 1.26,
-          "expected_away_goals": 1.5,
+          "expected_home_goals": 1.24,
+          "expected_away_goals": 1.52,
           "top_scorelines": [
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.12
+              "probability": 0.119
             },
             {
               "score": "0-1",
               "home_goals": 0,
               "away_goals": 1,
-              "probability": 0.095
+              "probability": 0.096
             },
             {
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.09
+              "probability": 0.091
             },
             {
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.08
+              "probability": 0.078
             },
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.075
+              "probability": 0.074
             }
           ],
           "recommended_scoreline": {
             "score": "0-1",
             "home_goals": 0,
             "away_goals": 1,
-            "probability": 0.095
+            "probability": 0.096
           },
-          "home_win_probability": 0.326,
-          "draw_probability": 0.233,
-          "away_win_probability": 0.441,
+          "home_win_probability": 0.317,
+          "draw_probability": 0.232,
+          "away_win_probability": 0.45,
           "head_to_head": {
             "available": true,
             "matches": 18,
@@ -697,8 +697,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.111,
+              "news_signal": {
+                "available": true,
+                "edge": -0.072,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -3600000,
+                "total_net_value_eur": -3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "out",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -1294,14 +1308,14 @@
           "data_confidence": "PLAYED",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.89,
-          "expected_away_goals": 1.18,
+          "expected_home_goals": 1.9,
+          "expected_away_goals": 1.17,
           "top_scorelines": [
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.104
+              "probability": 0.103
             },
             {
               "score": "2-1",
@@ -1319,7 +1333,7 @@
               "score": "2-0",
               "home_goals": 2,
               "away_goals": 0,
-              "probability": 0.083
+              "probability": 0.084
             },
             {
               "score": "3-1",
@@ -1334,9 +1348,9 @@
             "away_goals": 1,
             "probability": 0.098
           },
-          "home_win_probability": 0.538,
-          "draw_probability": 0.225,
-          "away_win_probability": 0.237,
+          "home_win_probability": 0.543,
+          "draw_probability": 0.224,
+          "away_win_probability": 0.233,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -1345,8 +1359,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.0302,
-              "news_signal": null,
+              "edge": -0.0085,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0132,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 3600000,
+                "total_net_value_eur": 3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "in",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.0302,
@@ -3061,8 +3089,8 @@
           "data_confidence": "PLAYED",
           "raw_predicted": "away",
           "predicted": "away",
-          "expected_home_goals": 1.21,
-          "expected_away_goals": 1.66,
+          "expected_home_goals": 1.22,
+          "expected_away_goals": 1.65,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -3086,13 +3114,13 @@
               "score": "0-2",
               "home_goals": 0,
               "away_goals": 2,
-              "probability": 0.078
+              "probability": 0.077
             },
             {
-              "score": "1-0",
-              "home_goals": 1,
-              "away_goals": 0,
-              "probability": 0.069
+              "score": "2-1",
+              "home_goals": 2,
+              "away_goals": 1,
+              "probability": 0.07
             }
           ],
           "recommended_scoreline": {
@@ -3101,9 +3129,9 @@
             "away_goals": 1,
             "probability": 0.094
           },
-          "home_win_probability": 0.276,
-          "draw_probability": 0.253,
-          "away_win_probability": 0.47,
+          "home_win_probability": 0.28,
+          "draw_probability": 0.254,
+          "away_win_probability": 0.466,
           "head_to_head": {
             "available": true,
             "matches": 21,
@@ -3113,8 +3141,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.111,
+              "news_signal": {
+                "available": true,
+                "edge": -0.072,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -3600000,
+                "total_net_value_eur": -3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "out",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -3183,8 +3225,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.0302,
-              "news_signal": null,
+              "edge": -0.0085,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0132,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 3600000,
+                "total_net_value_eur": 3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "in",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.0302,
@@ -4391,8 +4447,8 @@
           "data_confidence": "PLAYED",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.46,
-          "expected_away_goals": 1.05,
+          "expected_home_goals": 1.44,
+          "expected_away_goals": 1.07,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -4404,36 +4460,36 @@
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.118
+              "probability": 0.117
             },
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.091
-            },
-            {
-              "score": "2-0",
-              "home_goals": 2,
-              "away_goals": 0,
-              "probability": 0.086
+              "probability": 0.09
             },
             {
               "score": "0-1",
               "home_goals": 0,
               "away_goals": 1,
-              "probability": 0.085
+              "probability": 0.087
+            },
+            {
+              "score": "2-0",
+              "home_goals": 2,
+              "away_goals": 0,
+              "probability": 0.084
             }
           ],
           "recommended_scoreline": {
             "score": "1-0",
             "home_goals": 1,
             "away_goals": 0,
-            "probability": 0.118
+            "probability": 0.117
           },
-          "home_win_probability": 0.465,
-          "draw_probability": 0.263,
-          "away_win_probability": 0.273,
+          "home_win_probability": 0.455,
+          "draw_probability": 0.264,
+          "away_win_probability": 0.281,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -4508,8 +4564,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.111,
+              "news_signal": {
+                "available": true,
+                "edge": -0.072,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -3600000,
+                "total_net_value_eur": -3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "out",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -5245,8 +5315,8 @@
           "data_confidence": "PLAYED",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.88,
-          "expected_away_goals": 1.17,
+          "expected_home_goals": 1.89,
+          "expected_away_goals": 1.16,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -5270,13 +5340,13 @@
               "score": "2-0",
               "home_goals": 2,
               "away_goals": 0,
-              "probability": 0.083
+              "probability": 0.084
             },
             {
-              "score": "1-2",
-              "home_goals": 1,
-              "away_goals": 2,
-              "probability": 0.061
+              "score": "3-1",
+              "home_goals": 3,
+              "away_goals": 1,
+              "probability": 0.062
             }
           ],
           "recommended_scoreline": {
@@ -5285,9 +5355,9 @@
             "away_goals": 1,
             "probability": 0.098
           },
-          "home_win_probability": 0.538,
-          "draw_probability": 0.225,
-          "away_win_probability": 0.237,
+          "home_win_probability": 0.543,
+          "draw_probability": 0.224,
+          "away_win_probability": 0.233,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -5296,8 +5366,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.0302,
-              "news_signal": null,
+              "edge": -0.0085,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0132,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 3600000,
+                "total_net_value_eur": 3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "in",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.0302,
@@ -5802,8 +5886,8 @@
           "data_confidence": "PLAYED",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 2.0,
-          "expected_away_goals": 1.62,
+          "expected_home_goals": 1.99,
+          "expected_away_goals": 1.63,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -5821,7 +5905,7 @@
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.07
+              "probability": 0.071
             },
             {
               "score": "2-2",
@@ -5833,7 +5917,7 @@
               "score": "3-1",
               "home_goals": 3,
               "away_goals": 1,
-              "probability": 0.058
+              "probability": 0.057
             }
           ],
           "recommended_scoreline": {
@@ -5842,9 +5926,9 @@
             "away_goals": 1,
             "probability": 0.087
           },
-          "home_win_probability": 0.45,
-          "draw_probability": 0.246,
-          "away_win_probability": 0.303,
+          "home_win_probability": 0.446,
+          "draw_probability": 0.247,
+          "away_win_probability": 0.307,
           "head_to_head": {
             "available": true,
             "matches": 36,
@@ -5920,8 +6004,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.0302,
-              "news_signal": null,
+              "edge": -0.0085,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0132,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 3600000,
+                "total_net_value_eur": 3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "in",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.0302,
@@ -6789,49 +6887,49 @@
           "data_confidence": "PLAYED",
           "raw_predicted": "home",
           "predicted": "draw",
-          "expected_home_goals": 1.5,
-          "expected_away_goals": 1.34,
+          "expected_home_goals": 1.48,
+          "expected_away_goals": 1.36,
           "top_scorelines": [
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.117
-            },
-            {
-              "score": "1-0",
-              "home_goals": 1,
-              "away_goals": 0,
-              "probability": 0.088
+              "probability": 0.118
             },
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.088
+              "probability": 0.087
             },
             {
-              "score": "1-2",
+              "score": "1-0",
               "home_goals": 1,
-              "away_goals": 2,
-              "probability": 0.079
+              "away_goals": 0,
+              "probability": 0.086
             },
             {
               "score": "0-1",
               "home_goals": 0,
               "away_goals": 1,
-              "probability": 0.078
+              "probability": 0.08
+            },
+            {
+              "score": "1-2",
+              "home_goals": 1,
+              "away_goals": 2,
+              "probability": 0.08
             }
           ],
           "recommended_scoreline": {
             "score": "1-1",
             "home_goals": 1,
             "away_goals": 1,
-            "probability": 0.117
+            "probability": 0.118
           },
-          "home_win_probability": 0.396,
-          "draw_probability": 0.276,
-          "away_win_probability": 0.328,
+          "home_win_probability": 0.387,
+          "draw_probability": 0.277,
+          "away_win_probability": 0.336,
           "head_to_head": {
             "available": true,
             "matches": 19,
@@ -6911,8 +7009,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.111,
+              "news_signal": {
+                "available": true,
+                "edge": -0.072,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -3600000,
+                "total_net_value_eur": -3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "out",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -7289,14 +7401,14 @@
           "data_confidence": "LOW_NEW_TEAM",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 2.16,
-          "expected_away_goals": 0.87,
+          "expected_home_goals": 2.17,
+          "expected_away_goals": 0.86,
           "top_scorelines": [
             {
               "score": "2-0",
               "home_goals": 2,
               "away_goals": 0,
-              "probability": 0.112
+              "probability": 0.113
             },
             {
               "score": "1-0",
@@ -7314,24 +7426,24 @@
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.091
+              "probability": 0.09
             },
             {
               "score": "3-0",
               "home_goals": 3,
               "away_goals": 0,
-              "probability": 0.081
+              "probability": 0.082
             }
           ],
           "recommended_scoreline": {
             "score": "2-0",
             "home_goals": 2,
             "away_goals": 0,
-            "probability": 0.112
+            "probability": 0.113
           },
-          "home_win_probability": 0.668,
-          "draw_probability": 0.192,
-          "away_win_probability": 0.14,
+          "home_win_probability": 0.672,
+          "draw_probability": 0.191,
+          "away_win_probability": 0.137,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -7340,8 +7452,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.0302,
-              "news_signal": null,
+              "edge": -0.0085,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0132,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 3600000,
+                "total_net_value_eur": 3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "in",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.0302,
@@ -7939,8 +8065,8 @@
           "data_confidence": "LOW",
           "raw_predicted": "away",
           "predicted": "draw",
-          "expected_home_goals": 1.49,
-          "expected_away_goals": 1.6,
+          "expected_home_goals": 1.51,
+          "expected_away_goals": 1.58,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -7952,25 +8078,25 @@
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.087
+              "probability": 0.086
             },
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.081
+              "probability": 0.082
             },
             {
               "score": "0-1",
               "home_goals": 0,
               "away_goals": 1,
-              "probability": 0.073
+              "probability": 0.072
             },
             {
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.068
+              "probability": 0.069
             }
           ],
           "recommended_scoreline": {
@@ -7979,9 +8105,9 @@
             "away_goals": 1,
             "probability": 0.108
           },
-          "home_win_probability": 0.334,
+          "home_win_probability": 0.342,
           "draw_probability": 0.287,
-          "away_win_probability": 0.38,
+          "away_win_probability": 0.372,
           "head_to_head": {
             "available": true,
             "matches": 17,
@@ -7991,8 +8117,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.111,
+              "news_signal": {
+                "available": true,
+                "edge": -0.072,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -3600000,
+                "total_net_value_eur": -3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "out",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -9289,8 +9429,8 @@
           "data_confidence": "MEDIUM",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.73,
-          "expected_away_goals": 1.47,
+          "expected_home_goals": 1.71,
+          "expected_away_goals": 1.49,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -9302,19 +9442,19 @@
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.09
+              "probability": 0.089
             },
             {
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.076
+              "probability": 0.077
             },
             {
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.07
+              "probability": 0.069
             },
             {
               "score": "2-2",
@@ -9327,11 +9467,11 @@
             "score": "2-1",
             "home_goals": 2,
             "away_goals": 1,
-            "probability": 0.09
+            "probability": 0.089
           },
-          "home_win_probability": 0.439,
-          "draw_probability": 0.232,
-          "away_win_probability": 0.329,
+          "home_win_probability": 0.43,
+          "draw_probability": 0.233,
+          "away_win_probability": 0.337,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -9344,8 +9484,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.111,
+              "news_signal": {
+                "available": true,
+                "edge": -0.072,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -3600000,
+                "total_net_value_eur": -3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "out",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -10456,8 +10610,8 @@
           "data_confidence": "LOW_NEW_TEAM",
           "raw_predicted": "away",
           "predicted": "away",
-          "expected_home_goals": 1.41,
-          "expected_away_goals": 1.51,
+          "expected_home_goals": 1.4,
+          "expected_away_goals": 1.52,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -10481,7 +10635,7 @@
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.081
+              "probability": 0.08
             },
             {
               "score": "1-0",
@@ -10496,9 +10650,9 @@
             "away_goals": 2,
             "probability": 0.087
           },
-          "home_win_probability": 0.355,
+          "home_win_probability": 0.35,
           "draw_probability": 0.247,
-          "away_win_probability": 0.398,
+          "away_win_probability": 0.403,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -10511,8 +10665,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.0302,
-              "news_signal": null,
+              "edge": -0.0085,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0132,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 3600000,
+                "total_net_value_eur": 3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "in",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.0302,
@@ -11345,32 +11513,32 @@
           "data_confidence": "LOW_NEW_TEAM",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.58,
-          "expected_away_goals": 0.96,
+          "expected_home_goals": 1.6,
+          "expected_away_goals": 0.95,
           "top_scorelines": [
             {
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.124
+              "probability": 0.126
             },
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.12
+              "probability": 0.119
             },
             {
               "score": "2-0",
               "home_goals": 2,
               "away_goals": 0,
-              "probability": 0.098
+              "probability": 0.1
             },
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.094
+              "probability": 0.095
             },
             {
               "score": "0-0",
@@ -11383,11 +11551,11 @@
             "score": "1-0",
             "home_goals": 1,
             "away_goals": 0,
-            "probability": 0.124
+            "probability": 0.126
           },
-          "home_win_probability": 0.517,
-          "draw_probability": 0.252,
-          "away_win_probability": 0.231,
+          "home_win_probability": 0.526,
+          "draw_probability": 0.251,
+          "away_win_probability": 0.223,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -11396,8 +11564,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.111,
+              "news_signal": {
+                "available": true,
+                "edge": -0.072,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -3600000,
+                "total_net_value_eur": -3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "out",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -11854,26 +12036,26 @@
           "data_confidence": "HIGH",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.74,
-          "expected_away_goals": 0.85,
+          "expected_home_goals": 1.75,
+          "expected_away_goals": 0.84,
           "top_scorelines": [
             {
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.131
+              "probability": 0.132
             },
             {
               "score": "2-0",
               "home_goals": 2,
               "away_goals": 0,
-              "probability": 0.114
+              "probability": 0.115
             },
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.111
+              "probability": 0.11
             },
             {
               "score": "2-1",
@@ -11892,11 +12074,11 @@
             "score": "1-0",
             "home_goals": 1,
             "away_goals": 0,
-            "probability": 0.131
+            "probability": 0.132
           },
-          "home_win_probability": 0.577,
-          "draw_probability": 0.245,
-          "away_win_probability": 0.177,
+          "home_win_probability": 0.582,
+          "draw_probability": 0.244,
+          "away_win_probability": 0.173,
           "head_to_head": {
             "available": true,
             "matches": 3,
@@ -11906,8 +12088,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.0302,
-              "news_signal": null,
+              "edge": -0.0085,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0132,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 3600000,
+                "total_net_value_eur": 3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "in",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.0302,
@@ -12725,8 +12921,8 @@
           "data_confidence": "MEDIUM",
           "raw_predicted": "away",
           "predicted": "away",
-          "expected_home_goals": 1.41,
-          "expected_away_goals": 1.83,
+          "expected_home_goals": 1.4,
+          "expected_away_goals": 1.84,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -12750,13 +12946,13 @@
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.071
+              "probability": 0.07
             },
             {
               "score": "0-2",
               "home_goals": 0,
               "away_goals": 2,
-              "probability": 0.066
+              "probability": 0.067
             }
           ],
           "recommended_scoreline": {
@@ -12765,9 +12961,9 @@
             "away_goals": 2,
             "probability": 0.093
           },
-          "home_win_probability": 0.283,
-          "draw_probability": 0.263,
-          "away_win_probability": 0.454,
+          "home_win_probability": 0.279,
+          "draw_probability": 0.262,
+          "away_win_probability": 0.458,
           "head_to_head": {
             "available": true,
             "matches": 33,
@@ -12843,8 +13039,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.0302,
-              "news_signal": null,
+              "edge": -0.0085,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0132,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 3600000,
+                "total_net_value_eur": 3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "in",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.0302,
@@ -13206,8 +13416,8 @@
           "data_confidence": "HIGH",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 2.05,
-          "expected_away_goals": 1.19,
+          "expected_home_goals": 2.03,
+          "expected_away_goals": 1.21,
           "top_scorelines": [
             {
               "score": "2-1",
@@ -13225,7 +13435,7 @@
               "score": "2-0",
               "home_goals": 2,
               "away_goals": 0,
-              "probability": 0.082
+              "probability": 0.081
             },
             {
               "score": "1-0",
@@ -13237,7 +13447,7 @@
               "score": "3-1",
               "home_goals": 3,
               "away_goals": 1,
-              "probability": 0.067
+              "probability": 0.066
             }
           ],
           "recommended_scoreline": {
@@ -13246,9 +13456,9 @@
             "away_goals": 1,
             "probability": 0.098
           },
-          "home_win_probability": 0.559,
-          "draw_probability": 0.228,
-          "away_win_probability": 0.213,
+          "home_win_probability": 0.551,
+          "draw_probability": 0.229,
+          "away_win_probability": 0.219,
           "head_to_head": {
             "available": true,
             "matches": 22,
@@ -13324,8 +13534,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.111,
+              "news_signal": {
+                "available": true,
+                "edge": -0.072,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -3600000,
+                "total_net_value_eur": -3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "out",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -14884,14 +15108,14 @@
           "data_confidence": "MEDIUM",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.17,
-          "expected_away_goals": 0.94,
+          "expected_home_goals": 1.19,
+          "expected_away_goals": 0.92,
           "top_scorelines": [
             {
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.142
+              "probability": 0.145
             },
             {
               "score": "1-1",
@@ -14909,24 +15133,24 @@
               "score": "0-1",
               "home_goals": 0,
               "away_goals": 1,
-              "probability": 0.114
+              "probability": 0.111
             },
             {
               "score": "2-0",
               "home_goals": 2,
               "away_goals": 0,
-              "probability": 0.083
+              "probability": 0.086
             }
           ],
           "recommended_scoreline": {
             "score": "1-0",
             "home_goals": 1,
             "away_goals": 0,
-            "probability": 0.142
+            "probability": 0.145
           },
-          "home_win_probability": 0.431,
-          "draw_probability": 0.263,
-          "away_win_probability": 0.305,
+          "home_win_probability": 0.442,
+          "draw_probability": 0.262,
+          "away_win_probability": 0.295,
           "head_to_head": {
             "available": true,
             "matches": 3,
@@ -14936,8 +15160,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.111,
+              "news_signal": {
+                "available": true,
+                "edge": -0.072,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -3600000,
+                "total_net_value_eur": -3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "out",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -15478,8 +15716,8 @@
           "data_confidence": "LOW",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.75,
-          "expected_away_goals": 1.73,
+          "expected_home_goals": 1.76,
+          "expected_away_goals": 1.72,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -15497,7 +15735,7 @@
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.081
+              "probability": 0.08
             },
             {
               "score": "2-2",
@@ -15518,9 +15756,9 @@
             "away_goals": 1,
             "probability": 0.082
           },
-          "home_win_probability": 0.393,
+          "home_win_probability": 0.397,
           "draw_probability": 0.223,
-          "away_win_probability": 0.384,
+          "away_win_probability": 0.38,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -15529,8 +15767,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.0302,
-              "news_signal": null,
+              "edge": -0.0085,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0132,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 3600000,
+                "total_net_value_eur": 3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "in",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.0302,
@@ -17430,8 +17682,8 @@
           "data_confidence": "MEDIUM",
           "raw_predicted": "away",
           "predicted": "away",
-          "expected_home_goals": 1.25,
-          "expected_away_goals": 1.71,
+          "expected_home_goals": 1.24,
+          "expected_away_goals": 1.72,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -17455,13 +17707,13 @@
               "score": "0-2",
               "home_goals": 0,
               "away_goals": 2,
-              "probability": 0.076
+              "probability": 0.077
             },
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.069
+              "probability": 0.068
             }
           ],
           "recommended_scoreline": {
@@ -17470,9 +17722,9 @@
             "away_goals": 2,
             "probability": 0.095
           },
-          "home_win_probability": 0.286,
+          "home_win_probability": 0.282,
           "draw_probability": 0.222,
-          "away_win_probability": 0.492,
+          "away_win_probability": 0.497,
           "head_to_head": {
             "available": true,
             "matches": 28,
@@ -17486,8 +17738,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.0302,
-              "news_signal": null,
+              "edge": -0.0085,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0132,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 3600000,
+                "total_net_value_eur": 3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "in",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.0302,
@@ -17824,49 +18090,49 @@
           "data_confidence": "MEDIUM",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.74,
-          "expected_away_goals": 1.05,
+          "expected_home_goals": 1.72,
+          "expected_away_goals": 1.07,
           "top_scorelines": [
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.112
+              "probability": 0.113
             },
             {
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.107
+              "probability": 0.106
             },
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.098
+              "probability": 0.097
             },
             {
               "score": "2-0",
               "home_goals": 2,
               "away_goals": 0,
-              "probability": 0.093
+              "probability": 0.091
             },
             {
               "score": "0-1",
               "home_goals": 0,
               "away_goals": 1,
-              "probability": 0.065
+              "probability": 0.066
             }
           ],
           "recommended_scoreline": {
             "score": "1-0",
             "home_goals": 1,
             "away_goals": 0,
-            "probability": 0.107
+            "probability": 0.106
           },
-          "home_win_probability": 0.516,
-          "draw_probability": 0.264,
-          "away_win_probability": 0.22,
+          "home_win_probability": 0.508,
+          "draw_probability": 0.265,
+          "away_win_probability": 0.228,
           "head_to_head": {
             "available": true,
             "matches": 10,
@@ -17880,8 +18146,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.111,
+              "news_signal": {
+                "available": true,
+                "edge": -0.072,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -3600000,
+                "total_net_value_eur": -3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "out",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -18484,8 +18764,8 @@
           "data_confidence": "LOW",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.46,
-          "expected_away_goals": 1.33,
+          "expected_home_goals": 1.48,
+          "expected_away_goals": 1.31,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -18497,36 +18777,36 @@
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.09
+              "probability": 0.091
             },
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.087
+              "probability": 0.088
             },
             {
               "score": "0-1",
               "home_goals": 0,
               "away_goals": 1,
-              "probability": 0.082
+              "probability": 0.081
             },
             {
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.079
+              "probability": 0.078
             }
           ],
           "recommended_scoreline": {
             "score": "1-0",
             "home_goals": 1,
             "away_goals": 0,
-            "probability": 0.09
+            "probability": 0.091
           },
-          "home_win_probability": 0.403,
+          "home_win_probability": 0.411,
           "draw_probability": 0.255,
-          "away_win_probability": 0.342,
+          "away_win_probability": 0.334,
           "head_to_head": {
             "available": true,
             "matches": 23,
@@ -18536,8 +18816,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.111,
+              "news_signal": {
+                "available": true,
+                "edge": -0.072,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -3600000,
+                "total_net_value_eur": -3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "out",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -18857,20 +19151,20 @@
           "data_confidence": "MEDIUM",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.79,
-          "expected_away_goals": 1.45,
+          "expected_home_goals": 1.81,
+          "expected_away_goals": 1.44,
           "top_scorelines": [
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.102
+              "probability": 0.101
             },
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.091
+              "probability": 0.092
             },
             {
               "score": "1-2",
@@ -18882,7 +19176,7 @@
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.07
+              "probability": 0.071
             },
             {
               "score": "2-2",
@@ -18895,11 +19189,11 @@
             "score": "2-1",
             "home_goals": 2,
             "away_goals": 1,
-            "probability": 0.091
+            "probability": 0.092
           },
-          "home_win_probability": 0.468,
+          "home_win_probability": 0.472,
           "draw_probability": 0.214,
-          "away_win_probability": 0.318,
+          "away_win_probability": 0.314,
           "head_to_head": {
             "available": true,
             "matches": 23,
@@ -18909,8 +19203,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.0302,
-              "news_signal": null,
+              "edge": -0.0085,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0132,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 3600000,
+                "total_net_value_eur": 3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "in",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.0302,
@@ -20300,8 +20608,8 @@
           "data_confidence": "HIGH",
           "raw_predicted": "away",
           "predicted": "away",
-          "expected_home_goals": 1.24,
-          "expected_away_goals": 2.16,
+          "expected_home_goals": 1.23,
+          "expected_away_goals": 2.17,
           "top_scorelines": [
             {
               "score": "1-2",
@@ -20319,7 +20627,7 @@
               "score": "0-2",
               "home_goals": 0,
               "away_goals": 2,
-              "probability": 0.078
+              "probability": 0.079
             },
             {
               "score": "0-1",
@@ -20340,9 +20648,9 @@
             "away_goals": 2,
             "probability": 0.097
           },
-          "home_win_probability": 0.213,
-          "draw_probability": 0.201,
-          "away_win_probability": 0.585,
+          "home_win_probability": 0.21,
+          "draw_probability": 0.2,
+          "away_win_probability": 0.59,
           "head_to_head": {
             "available": true,
             "matches": 31,
@@ -20418,8 +20726,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.0302,
-              "news_signal": null,
+              "edge": -0.0085,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0132,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 3600000,
+                "total_net_value_eur": 3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "in",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.0302,
@@ -20994,35 +21316,35 @@
           "away_team": "CORENDON ALANYASPOR",
           "is_played": false,
           "actual_score": null,
-          "data_confidence": "MEDIUM",
+          "data_confidence": "LOW",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.35,
-          "expected_away_goals": 1.15,
+          "expected_home_goals": 1.33,
+          "expected_away_goals": 1.17,
           "top_scorelines": [
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.127
+              "probability": 0.128
             },
             {
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.111
+              "probability": 0.109
             },
             {
               "score": "0-1",
               "home_goals": 0,
               "away_goals": 1,
-              "probability": 0.094
+              "probability": 0.096
             },
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.086
+              "probability": 0.085
             },
             {
               "score": "0-0",
@@ -21035,11 +21357,11 @@
             "score": "1-0",
             "home_goals": 1,
             "away_goals": 0,
-            "probability": 0.111
+            "probability": 0.109
           },
-          "home_win_probability": 0.435,
-          "draw_probability": 0.231,
-          "away_win_probability": 0.333,
+          "home_win_probability": 0.425,
+          "draw_probability": 0.232,
+          "away_win_probability": 0.343,
           "head_to_head": {
             "available": true,
             "matches": 23,
@@ -21053,8 +21375,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.111,
+              "news_signal": {
+                "available": true,
+                "edge": -0.072,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -3600000,
+                "total_net_value_eur": -3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "out",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -22102,8 +22438,8 @@
           "data_confidence": "HIGH",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.77,
-          "expected_away_goals": 1.17,
+          "expected_home_goals": 1.79,
+          "expected_away_goals": 1.15,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -22121,19 +22457,19 @@
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.094
+              "probability": 0.095
             },
             {
               "score": "2-0",
               "home_goals": 2,
               "away_goals": 0,
-              "probability": 0.083
+              "probability": 0.085
             },
             {
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.064
+              "probability": 0.063
             }
           ],
           "recommended_scoreline": {
@@ -22142,9 +22478,9 @@
             "away_goals": 1,
             "probability": 0.097
           },
-          "home_win_probability": 0.532,
-          "draw_probability": 0.208,
-          "away_win_probability": 0.261,
+          "home_win_probability": 0.541,
+          "draw_probability": 0.206,
+          "away_win_probability": 0.253,
           "head_to_head": {
             "available": true,
             "matches": 22,
@@ -22154,8 +22490,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.111,
+              "news_signal": {
+                "available": true,
+                "edge": -0.072,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -3600000,
+                "total_net_value_eur": -3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "out",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -22565,26 +22915,26 @@
           "data_confidence": "LOW",
           "raw_predicted": "away",
           "predicted": "away",
-          "expected_home_goals": 1.8,
-          "expected_away_goals": 1.95,
+          "expected_home_goals": 1.81,
+          "expected_away_goals": 1.94,
           "top_scorelines": [
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.082
+              "probability": 0.083
             },
             {
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.081
+              "probability": 0.08
             },
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.074
+              "probability": 0.075
             },
             {
               "score": "2-2",
@@ -22603,11 +22953,11 @@
             "score": "1-2",
             "home_goals": 1,
             "away_goals": 2,
-            "probability": 0.081
+            "probability": 0.08
           },
-          "home_win_probability": 0.367,
+          "home_win_probability": 0.371,
           "draw_probability": 0.205,
-          "away_win_probability": 0.428,
+          "away_win_probability": 0.424,
           "head_to_head": {
             "available": true,
             "matches": 33,
@@ -22617,8 +22967,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.0302,
-              "news_signal": null,
+              "edge": -0.0085,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0132,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 3600000,
+                "total_net_value_eur": 3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "in",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.0302,
@@ -24380,8 +24744,8 @@
           "data_confidence": "HIGH",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 2.17,
-          "expected_away_goals": 1.36,
+          "expected_home_goals": 2.19,
+          "expected_away_goals": 1.35,
           "top_scorelines": [
             {
               "score": "2-1",
@@ -24399,13 +24763,13 @@
               "score": "2-0",
               "home_goals": 2,
               "away_goals": 0,
-              "probability": 0.069
+              "probability": 0.07
             },
             {
               "score": "3-1",
               "home_goals": 3,
               "away_goals": 1,
-              "probability": 0.068
+              "probability": 0.069
             },
             {
               "score": "1-0",
@@ -24420,9 +24784,9 @@
             "away_goals": 1,
             "probability": 0.094
           },
-          "home_win_probability": 0.529,
+          "home_win_probability": 0.533,
           "draw_probability": 0.249,
-          "away_win_probability": 0.222,
+          "away_win_probability": 0.218,
           "head_to_head": {
             "available": true,
             "matches": 8,
@@ -24432,8 +24796,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.0302,
-              "news_signal": null,
+              "edge": -0.0085,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0132,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 3600000,
+                "total_net_value_eur": 3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "in",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.0302,
@@ -24845,32 +25223,32 @@
           "data_confidence": "LOW_NEW_TEAM",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.52,
-          "expected_away_goals": 0.96,
+          "expected_home_goals": 1.5,
+          "expected_away_goals": 0.98,
           "top_scorelines": [
             {
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.128
+              "probability": 0.126
             },
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.122
+              "probability": 0.123
             },
             {
               "score": "2-0",
               "home_goals": 2,
               "away_goals": 0,
-              "probability": 0.097
+              "probability": 0.094
             },
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.093
+              "probability": 0.092
             },
             {
               "score": "0-0",
@@ -24883,11 +25261,11 @@
             "score": "1-0",
             "home_goals": 1,
             "away_goals": 0,
-            "probability": 0.128
+            "probability": 0.126
           },
-          "home_win_probability": 0.503,
-          "draw_probability": 0.259,
-          "away_win_probability": 0.239,
+          "home_win_probability": 0.493,
+          "draw_probability": 0.261,
+          "away_win_probability": 0.247,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -24900,8 +25278,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.111,
+              "news_signal": {
+                "available": true,
+                "edge": -0.072,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -3600000,
+                "total_net_value_eur": -3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "out",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -25323,8 +25715,8 @@
           "data_confidence": "HIGH",
           "raw_predicted": "away",
           "predicted": "away",
-          "expected_home_goals": 1.17,
-          "expected_away_goals": 2.05,
+          "expected_home_goals": 1.16,
+          "expected_away_goals": 2.06,
           "top_scorelines": [
             {
               "score": "1-2",
@@ -25342,13 +25734,13 @@
               "score": "0-2",
               "home_goals": 0,
               "away_goals": 2,
-              "probability": 0.084
+              "probability": 0.085
             },
             {
               "score": "0-1",
               "home_goals": 0,
               "away_goals": 1,
-              "probability": 0.082
+              "probability": 0.083
             },
             {
               "score": "1-3",
@@ -25363,9 +25755,9 @@
             "away_goals": 2,
             "probability": 0.098
           },
-          "home_win_probability": 0.21,
-          "draw_probability": 0.223,
-          "away_win_probability": 0.567,
+          "home_win_probability": 0.206,
+          "draw_probability": 0.222,
+          "away_win_probability": 0.572,
           "head_to_head": {
             "available": true,
             "matches": 15,
@@ -25445,8 +25837,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.0302,
-              "news_signal": null,
+              "edge": -0.0085,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0132,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 3600000,
+                "total_net_value_eur": 3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "in",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.0302,
@@ -25797,8 +26203,8 @@
           "data_confidence": "LOW",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.6,
-          "expected_away_goals": 1.47,
+          "expected_home_goals": 1.62,
+          "expected_away_goals": 1.45,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -25810,19 +26216,19 @@
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.087
+              "probability": 0.088
             },
             {
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.08
+              "probability": 0.079
             },
             {
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.075
+              "probability": 0.076
             },
             {
               "score": "0-1",
@@ -25835,11 +26241,11 @@
             "score": "2-1",
             "home_goals": 2,
             "away_goals": 1,
-            "probability": 0.087
+            "probability": 0.088
           },
-          "home_win_probability": 0.408,
-          "draw_probability": 0.242,
-          "away_win_probability": 0.351,
+          "home_win_probability": 0.416,
+          "draw_probability": 0.241,
+          "away_win_probability": 0.343,
           "head_to_head": {
             "available": true,
             "matches": 12,
@@ -25849,8 +26255,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.111,
+              "news_signal": {
+                "available": true,
+                "edge": -0.072,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -3600000,
+                "total_net_value_eur": -3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "out",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -27676,8 +28096,8 @@
           "data_confidence": "HIGH",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 2.27,
-          "expected_away_goals": 1.09,
+          "expected_home_goals": 2.25,
+          "expected_away_goals": 1.11,
           "top_scorelines": [
             {
               "score": "2-1",
@@ -27689,25 +28109,25 @@
               "score": "2-0",
               "home_goals": 2,
               "away_goals": 0,
-              "probability": 0.09
+              "probability": 0.088
             },
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.086
+              "probability": 0.087
             },
             {
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.079
+              "probability": 0.078
             },
             {
               "score": "3-1",
               "home_goals": 3,
               "away_goals": 1,
-              "probability": 0.074
+              "probability": 0.073
             }
           ],
           "recommended_scoreline": {
@@ -27716,9 +28136,9 @@
             "away_goals": 1,
             "probability": 0.098
           },
-          "home_win_probability": 0.657,
-          "draw_probability": 0.169,
-          "away_win_probability": 0.174,
+          "home_win_probability": 0.649,
+          "draw_probability": 0.171,
+          "away_win_probability": 0.18,
           "head_to_head": {
             "available": true,
             "matches": 26,
@@ -27732,8 +28152,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.111,
+              "news_signal": {
+                "available": true,
+                "edge": -0.072,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -3600000,
+                "total_net_value_eur": -3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "out",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -27872,8 +28306,8 @@
           "data_confidence": "HIGH",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 2.16,
-          "expected_away_goals": 1.21,
+          "expected_home_goals": 2.18,
+          "expected_away_goals": 1.2,
           "top_scorelines": [
             {
               "score": "2-1",
@@ -27885,19 +28319,19 @@
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.09
+              "probability": 0.089
             },
             {
               "score": "2-0",
               "home_goals": 2,
               "away_goals": 0,
-              "probability": 0.08
+              "probability": 0.081
             },
             {
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.074
+              "probability": 0.075
             },
             {
               "score": "3-1",
@@ -27912,9 +28346,9 @@
             "away_goals": 1,
             "probability": 0.097
           },
-          "home_win_probability": 0.57,
+          "home_win_probability": 0.574,
           "draw_probability": 0.231,
-          "away_win_probability": 0.199,
+          "away_win_probability": 0.195,
           "head_to_head": {
             "available": true,
             "matches": 26,
@@ -27924,8 +28358,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.0302,
-              "news_signal": null,
+              "edge": -0.0085,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0132,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 3600000,
+                "total_net_value_eur": 3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "in",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.0302,
@@ -29364,17 +29812,17 @@
           "away_team": "İSTANBUL BAŞAKŞEHİR FK",
           "is_played": false,
           "actual_score": null,
-          "data_confidence": "HIGH",
+          "data_confidence": "MEDIUM",
           "raw_predicted": "away",
           "predicted": "away",
-          "expected_home_goals": 1.2,
-          "expected_away_goals": 1.85,
+          "expected_home_goals": 1.22,
+          "expected_away_goals": 1.83,
           "top_scorelines": [
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.105
+              "probability": 0.106
             },
             {
               "score": "1-2",
@@ -29392,13 +29840,13 @@
               "score": "0-2",
               "home_goals": 0,
               "away_goals": 2,
-              "probability": 0.081
+              "probability": 0.079
             },
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.063
+              "probability": 0.064
             }
           ],
           "recommended_scoreline": {
@@ -29407,9 +29855,9 @@
             "away_goals": 2,
             "probability": 0.097
           },
-          "home_win_probability": 0.247,
-          "draw_probability": 0.227,
-          "away_win_probability": 0.525,
+          "home_win_probability": 0.254,
+          "draw_probability": 0.229,
+          "away_win_probability": 0.517,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -29418,8 +29866,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.111,
+              "news_signal": {
+                "available": true,
+                "edge": -0.072,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -3600000,
+                "total_net_value_eur": -3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "out",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -30086,8 +30548,8 @@
           "data_confidence": "MEDIUM",
           "raw_predicted": "away",
           "predicted": "away",
-          "expected_home_goals": 1.67,
-          "expected_away_goals": 1.87,
+          "expected_home_goals": 1.65,
+          "expected_away_goals": 1.88,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -30105,7 +30567,7 @@
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.076
+              "probability": 0.075
             },
             {
               "score": "2-2",
@@ -30126,9 +30588,9 @@
             "away_goals": 2,
             "probability": 0.085
           },
-          "home_win_probability": 0.364,
+          "home_win_probability": 0.359,
           "draw_probability": 0.187,
-          "away_win_probability": 0.449,
+          "away_win_probability": 0.454,
           "head_to_head": {
             "available": true,
             "matches": 15,
@@ -30204,8 +30666,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.0302,
-              "news_signal": null,
+              "edge": -0.0085,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0132,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 3600000,
+                "total_net_value_eur": 3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "in",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.0302,
@@ -31255,23 +31731,23 @@
           "away_team": "GAZİANTEP FUTBOL KULÜBÜ A.Ş.",
           "is_played": false,
           "actual_score": null,
-          "data_confidence": "MEDIUM",
+          "data_confidence": "HIGH",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.66,
-          "expected_away_goals": 1.09,
+          "expected_home_goals": 1.68,
+          "expected_away_goals": 1.07,
           "top_scorelines": [
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.116
+              "probability": 0.115
             },
             {
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.106
+              "probability": 0.107
             },
             {
               "score": "2-1",
@@ -31283,24 +31759,24 @@
               "score": "2-0",
               "home_goals": 2,
               "away_goals": 0,
-              "probability": 0.088
+              "probability": 0.09
             },
             {
               "score": "0-1",
               "home_goals": 0,
               "away_goals": 1,
-              "probability": 0.07
+              "probability": 0.069
             }
           ],
           "recommended_scoreline": {
             "score": "1-0",
             "home_goals": 1,
             "away_goals": 0,
-            "probability": 0.106
+            "probability": 0.107
           },
-          "home_win_probability": 0.518,
-          "draw_probability": 0.226,
-          "away_win_probability": 0.256,
+          "home_win_probability": 0.527,
+          "draw_probability": 0.225,
+          "away_win_probability": 0.248,
           "head_to_head": {
             "available": true,
             "matches": 18,
@@ -31310,8 +31786,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.111,
+              "news_signal": {
+                "available": true,
+                "edge": -0.072,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -3600000,
+                "total_net_value_eur": -3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "out",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -31993,8 +32483,8 @@
           "data_confidence": "MEDIUM",
           "raw_predicted": "away",
           "predicted": "away",
-          "expected_home_goals": 1.33,
-          "expected_away_goals": 1.74,
+          "expected_home_goals": 1.32,
+          "expected_away_goals": 1.75,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -32006,7 +32496,7 @@
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.093
+              "probability": 0.094
             },
             {
               "score": "0-1",
@@ -32015,27 +32505,27 @@
               "probability": 0.081
             },
             {
+              "score": "0-2",
+              "home_goals": 0,
+              "away_goals": 2,
+              "probability": 0.071
+            },
+            {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
               "probability": 0.071
-            },
-            {
-              "score": "0-2",
-              "home_goals": 0,
-              "away_goals": 2,
-              "probability": 0.07
             }
           ],
           "recommended_scoreline": {
             "score": "1-2",
             "home_goals": 1,
             "away_goals": 2,
-            "probability": 0.093
+            "probability": 0.094
           },
-          "home_win_probability": 0.294,
+          "home_win_probability": 0.29,
           "draw_probability": 0.234,
-          "away_win_probability": 0.472,
+          "away_win_probability": 0.476,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -32110,8 +32600,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.0302,
-              "news_signal": null,
+              "edge": -0.0085,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0132,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 3600000,
+                "total_net_value_eur": 3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "in",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.0302,
@@ -32965,8 +33469,8 @@
           "data_confidence": "HIGH",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.94,
-          "expected_away_goals": 1.1,
+          "expected_home_goals": 1.93,
+          "expected_away_goals": 1.11,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -32990,7 +33494,7 @@
               "score": "2-0",
               "home_goals": 2,
               "away_goals": 0,
-              "probability": 0.09
+              "probability": 0.089
             },
             {
               "score": "3-1",
@@ -33005,9 +33509,9 @@
             "away_goals": 1,
             "probability": 0.099
           },
-          "home_win_probability": 0.558,
-          "draw_probability": 0.236,
-          "away_win_probability": 0.206,
+          "home_win_probability": 0.554,
+          "draw_probability": 0.237,
+          "away_win_probability": 0.209,
           "head_to_head": {
             "available": true,
             "matches": 21,
@@ -33017,8 +33521,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.0302,
-              "news_signal": null,
+              "edge": -0.0085,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0132,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 3600000,
+                "total_net_value_eur": 3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "in",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.0302,
@@ -33087,8 +33605,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.111,
+              "news_signal": {
+                "available": true,
+                "edge": -0.072,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -3600000,
+                "total_net_value_eur": -3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "out",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -34323,8 +34855,8 @@
           "data_confidence": "LOW",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.35,
-          "expected_away_goals": 1.27,
+          "expected_home_goals": 1.37,
+          "expected_away_goals": 1.25,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -34336,36 +34868,36 @@
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.099
+              "probability": 0.1
             },
             {
               "score": "0-1",
               "home_goals": 0,
               "away_goals": 1,
-              "probability": 0.092
+              "probability": 0.091
             },
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.084
+              "probability": 0.086
             },
             {
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.079
+              "probability": 0.078
             }
           ],
           "recommended_scoreline": {
             "score": "1-0",
             "home_goals": 1,
             "away_goals": 0,
-            "probability": 0.099
+            "probability": 0.1
           },
-          "home_win_probability": 0.389,
-          "draw_probability": 0.263,
-          "away_win_probability": 0.349,
+          "home_win_probability": 0.398,
+          "draw_probability": 0.262,
+          "away_win_probability": 0.34,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -34374,8 +34906,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.111,
+              "news_signal": {
+                "available": true,
+                "edge": -0.072,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -3600000,
+                "total_net_value_eur": -3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "out",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -35901,8 +36447,8 @@
           "data_confidence": "MEDIUM",
           "raw_predicted": "away",
           "predicted": "away",
-          "expected_home_goals": 1.61,
-          "expected_away_goals": 2.04,
+          "expected_home_goals": 1.6,
+          "expected_away_goals": 2.05,
           "top_scorelines": [
             {
               "score": "1-2",
@@ -35926,13 +36472,13 @@
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.069
+              "probability": 0.068
             },
             {
               "score": "1-3",
               "home_goals": 1,
               "away_goals": 3,
-              "probability": 0.059
+              "probability": 0.06
             }
           ],
           "recommended_scoreline": {
@@ -35941,9 +36487,9 @@
             "away_goals": 2,
             "probability": 0.087
           },
-          "home_win_probability": 0.308,
+          "home_win_probability": 0.304,
           "draw_probability": 0.213,
-          "away_win_probability": 0.479,
+          "away_win_probability": 0.483,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -35956,8 +36502,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.0302,
-              "news_signal": null,
+              "edge": -0.0085,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0132,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 3600000,
+                "total_net_value_eur": 3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "in",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.0302,
@@ -36269,11 +36829,11 @@
           "away_team": "ÇAYKUR RİZESPOR A.Ş.",
           "is_played": false,
           "actual_score": null,
-          "data_confidence": "LOW",
+          "data_confidence": "MEDIUM",
           "raw_predicted": "home",
           "predicted": "draw",
-          "expected_home_goals": 1.58,
-          "expected_away_goals": 1.31,
+          "expected_home_goals": 1.6,
+          "expected_away_goals": 1.29,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -36285,25 +36845,25 @@
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.091
+              "probability": 0.092
             },
             {
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.088
+              "probability": 0.089
             },
             {
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.075
+              "probability": 0.074
             },
             {
               "score": "0-1",
               "home_goals": 0,
               "away_goals": 1,
-              "probability": 0.073
+              "probability": 0.072
             }
           ],
           "recommended_scoreline": {
@@ -36312,9 +36872,9 @@
             "away_goals": 1,
             "probability": 0.115
           },
-          "home_win_probability": 0.421,
+          "home_win_probability": 0.43,
           "draw_probability": 0.273,
-          "away_win_probability": 0.305,
+          "away_win_probability": 0.297,
           "head_to_head": {
             "available": true,
             "matches": 19,
@@ -36324,8 +36884,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.111,
+              "news_signal": {
+                "available": true,
+                "edge": -0.072,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -3600000,
+                "total_net_value_eur": -3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "out",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -36763,8 +37337,8 @@
           "data_confidence": "LOW",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.91,
-          "expected_away_goals": 1.73,
+          "expected_home_goals": 1.92,
+          "expected_away_goals": 1.72,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -36803,9 +37377,9 @@
             "away_goals": 1,
             "probability": 0.083
           },
-          "home_win_probability": 0.41,
+          "home_win_probability": 0.414,
           "draw_probability": 0.248,
-          "away_win_probability": 0.342,
+          "away_win_probability": 0.338,
           "head_to_head": {
             "available": true,
             "matches": 36,
@@ -36815,8 +37389,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.0302,
-              "news_signal": null,
+              "edge": -0.0085,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0132,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 3600000,
+                "total_net_value_eur": 3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "in",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.0302,
@@ -38955,8 +39543,8 @@
           "data_confidence": "MEDIUM",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.78,
-          "expected_away_goals": 1.3,
+          "expected_home_goals": 1.76,
+          "expected_away_goals": 1.32,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -38968,36 +39556,36 @@
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.095
+              "probability": 0.094
             },
             {
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.081
+              "probability": 0.08
             },
             {
               "score": "2-0",
               "home_goals": 2,
               "away_goals": 0,
-              "probability": 0.073
+              "probability": 0.071
             },
             {
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.069
+              "probability": 0.07
             }
           ],
           "recommended_scoreline": {
             "score": "2-1",
             "home_goals": 2,
             "away_goals": 1,
-            "probability": 0.095
+            "probability": 0.094
           },
-          "home_win_probability": 0.455,
-          "draw_probability": 0.282,
-          "away_win_probability": 0.263,
+          "home_win_probability": 0.447,
+          "draw_probability": 0.283,
+          "away_win_probability": 0.27,
           "head_to_head": {
             "available": true,
             "matches": 17,
@@ -39073,8 +39661,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.111,
+              "news_signal": {
+                "available": true,
+                "edge": -0.072,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -3600000,
+                "total_net_value_eur": -3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "out",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -39315,49 +39917,49 @@
           "data_confidence": "LOW_NEW_TEAM",
           "raw_predicted": "away",
           "predicted": "away",
-          "expected_home_goals": 1.04,
-          "expected_away_goals": 1.97,
+          "expected_home_goals": 1.03,
+          "expected_away_goals": 1.98,
           "top_scorelines": [
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.101
+              "probability": 0.1
             },
             {
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.099
+              "probability": 0.1
             },
             {
               "score": "0-1",
               "home_goals": 0,
               "away_goals": 1,
-              "probability": 0.097
+              "probability": 0.098
             },
             {
               "score": "0-2",
               "home_goals": 0,
               "away_goals": 2,
-              "probability": 0.096
+              "probability": 0.097
             },
             {
               "score": "1-3",
               "home_goals": 1,
               "away_goals": 3,
-              "probability": 0.065
+              "probability": 0.066
             }
           ],
           "recommended_scoreline": {
             "score": "1-2",
             "home_goals": 1,
             "away_goals": 2,
-            "probability": 0.099
+            "probability": 0.1
           },
-          "home_win_probability": 0.194,
-          "draw_probability": 0.215,
-          "away_win_probability": 0.59,
+          "home_win_probability": 0.191,
+          "draw_probability": 0.214,
+          "away_win_probability": 0.595,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -39370,8 +39972,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.0302,
-              "news_signal": null,
+              "edge": -0.0085,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0132,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 3600000,
+                "total_net_value_eur": 3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "in",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.0302,
@@ -40090,8 +40706,8 @@
           "data_confidence": "LOW_NEW_TEAM",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.69,
-          "expected_away_goals": 1.24,
+          "expected_home_goals": 1.7,
+          "expected_away_goals": 1.23,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -40109,13 +40725,13 @@
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.09
+              "probability": 0.091
             },
             {
               "score": "2-0",
               "home_goals": 2,
               "away_goals": 0,
-              "probability": 0.076
+              "probability": 0.077
             },
             {
               "score": "1-2",
@@ -40130,9 +40746,9 @@
             "away_goals": 1,
             "probability": 0.095
           },
-          "home_win_probability": 0.479,
-          "draw_probability": 0.24,
-          "away_win_probability": 0.281,
+          "home_win_probability": 0.484,
+          "draw_probability": 0.239,
+          "away_win_probability": 0.277,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -40141,8 +40757,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.0302,
-              "news_signal": null,
+              "edge": -0.0085,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0132,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 3600000,
+                "total_net_value_eur": 3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "in",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.0302,
@@ -40306,8 +40936,8 @@
           "data_confidence": "LOW",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.65,
-          "expected_away_goals": 1.55,
+          "expected_home_goals": 1.67,
+          "expected_away_goals": 1.53,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -40319,19 +40949,19 @@
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.086
+              "probability": 0.087
             },
             {
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.081
+              "probability": 0.08
             },
             {
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.067
+              "probability": 0.068
             },
             {
               "score": "2-2",
@@ -40344,11 +40974,11 @@
             "score": "2-1",
             "home_goals": 2,
             "away_goals": 1,
-            "probability": 0.086
+            "probability": 0.087
           },
-          "home_win_probability": 0.405,
-          "draw_probability": 0.234,
-          "away_win_probability": 0.362,
+          "home_win_probability": 0.413,
+          "draw_probability": 0.233,
+          "away_win_probability": 0.353,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -40357,8 +40987,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.111,
+              "news_signal": {
+                "available": true,
+                "edge": -0.072,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -3600000,
+                "total_net_value_eur": -3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "out",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -41805,20 +42449,26 @@
           "data_confidence": "MEDIUM",
           "raw_predicted": "away",
           "predicted": "away",
-          "expected_home_goals": 1.01,
-          "expected_away_goals": 1.55,
+          "expected_home_goals": 1.0,
+          "expected_away_goals": 1.57,
           "top_scorelines": [
-            {
-              "score": "1-1",
-              "home_goals": 1,
-              "away_goals": 1,
-              "probability": 0.121
-            },
             {
               "score": "0-1",
               "home_goals": 0,
               "away_goals": 1,
+              "probability": 0.121
+            },
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
               "probability": 0.12
+            },
+            {
+              "score": "0-2",
+              "home_goals": 0,
+              "away_goals": 2,
+              "probability": 0.094
             },
             {
               "score": "1-2",
@@ -41827,27 +42477,21 @@
               "probability": 0.094
             },
             {
-              "score": "0-2",
+              "score": "0-0",
               "home_goals": 0,
-              "away_goals": 2,
-              "probability": 0.093
-            },
-            {
-              "score": "1-0",
-              "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.078
+              "probability": 0.077
             }
           ],
           "recommended_scoreline": {
             "score": "0-1",
             "home_goals": 0,
             "away_goals": 1,
-            "probability": 0.12
+            "probability": 0.121
           },
-          "home_win_probability": 0.243,
-          "draw_probability": 0.263,
-          "away_win_probability": 0.494,
+          "home_win_probability": 0.239,
+          "draw_probability": 0.262,
+          "away_win_probability": 0.499,
           "head_to_head": {
             "available": true,
             "matches": 3,
@@ -41861,8 +42505,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.0302,
-              "news_signal": null,
+              "edge": -0.0085,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0132,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 3600000,
+                "total_net_value_eur": 3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "in",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.0302,
@@ -42690,49 +43348,49 @@
           "data_confidence": "LOW_NEW_TEAM",
           "raw_predicted": "away",
           "predicted": "away",
-          "expected_home_goals": 1.13,
-          "expected_away_goals": 1.4,
+          "expected_home_goals": 1.11,
+          "expected_away_goals": 1.42,
           "top_scorelines": [
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.126
+              "probability": 0.125
             },
             {
               "score": "0-1",
               "home_goals": 0,
               "away_goals": 1,
-              "probability": 0.111
-            },
-            {
-              "score": "1-0",
-              "home_goals": 1,
-              "away_goals": 0,
-              "probability": 0.09
+              "probability": 0.113
             },
             {
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
+              "probability": 0.089
+            },
+            {
+              "score": "1-0",
+              "home_goals": 1,
+              "away_goals": 0,
               "probability": 0.088
             },
             {
-              "score": "0-0",
+              "score": "0-2",
               "home_goals": 0,
-              "away_goals": 0,
-              "probability": 0.079
+              "away_goals": 2,
+              "probability": 0.08
             }
           ],
           "recommended_scoreline": {
             "score": "0-1",
             "home_goals": 0,
             "away_goals": 1,
-            "probability": 0.111
+            "probability": 0.113
           },
-          "home_win_probability": 0.304,
-          "draw_probability": 0.265,
-          "away_win_probability": 0.431,
+          "home_win_probability": 0.295,
+          "draw_probability": 0.264,
+          "away_win_probability": 0.441,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -42745,8 +43403,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.111,
+              "news_signal": {
+                "available": true,
+                "edge": -0.072,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -3600000,
+                "total_net_value_eur": -3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "out",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -43319,20 +43991,26 @@
           "data_confidence": "HIGH",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 2.02,
-          "expected_away_goals": 1.23,
+          "expected_home_goals": 2.03,
+          "expected_away_goals": 1.22,
           "top_scorelines": [
-            {
-              "score": "1-1",
-              "home_goals": 1,
-              "away_goals": 1,
-              "probability": 0.097
-            },
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.097
+              "probability": 0.098
+            },
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.096
+            },
+            {
+              "score": "2-0",
+              "home_goals": 2,
+              "away_goals": 0,
+              "probability": 0.08
             },
             {
               "score": "1-0",
@@ -43341,27 +44019,21 @@
               "probability": 0.079
             },
             {
-              "score": "2-0",
-              "home_goals": 2,
-              "away_goals": 0,
-              "probability": 0.079
-            },
-            {
               "score": "3-1",
               "home_goals": 3,
               "away_goals": 1,
-              "probability": 0.065
+              "probability": 0.066
             }
           ],
           "recommended_scoreline": {
             "score": "2-1",
             "home_goals": 2,
             "away_goals": 1,
-            "probability": 0.097
+            "probability": 0.098
           },
-          "home_win_probability": 0.528,
-          "draw_probability": 0.254,
-          "away_win_probability": 0.218,
+          "home_win_probability": 0.533,
+          "draw_probability": 0.253,
+          "away_win_probability": 0.214,
           "head_to_head": {
             "available": true,
             "matches": 33,
@@ -43371,8 +44043,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.0302,
-              "news_signal": null,
+              "edge": -0.0085,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0132,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 3600000,
+                "total_net_value_eur": 3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "in",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.0302,
@@ -44293,20 +44979,20 @@
           "data_confidence": "MEDIUM",
           "raw_predicted": "away",
           "predicted": "away",
-          "expected_home_goals": 1.36,
-          "expected_away_goals": 1.85,
+          "expected_home_goals": 1.38,
+          "expected_away_goals": 1.83,
           "top_scorelines": [
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.101
+              "probability": 0.102
             },
             {
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.094
+              "probability": 0.093
             },
             {
               "score": "0-1",
@@ -44315,27 +45001,27 @@
               "probability": 0.074
             },
             {
-              "score": "0-2",
-              "home_goals": 0,
-              "away_goals": 2,
-              "probability": 0.069
-            },
-            {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.069
+              "probability": 0.07
+            },
+            {
+              "score": "0-2",
+              "home_goals": 0,
+              "away_goals": 2,
+              "probability": 0.067
             }
           ],
           "recommended_scoreline": {
             "score": "1-2",
             "home_goals": 1,
             "away_goals": 2,
-            "probability": 0.094
+            "probability": 0.093
           },
-          "home_win_probability": 0.279,
+          "home_win_probability": 0.287,
           "draw_probability": 0.239,
-          "away_win_probability": 0.482,
+          "away_win_probability": 0.474,
           "head_to_head": {
             "available": true,
             "matches": 22,
@@ -44345,8 +45031,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.111,
+              "news_signal": {
+                "available": true,
+                "edge": -0.072,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -3600000,
+                "total_net_value_eur": -3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "out",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -45120,20 +45820,26 @@
           "data_confidence": "LOW",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.1,
-          "expected_away_goals": 1.0,
+          "expected_home_goals": 1.08,
+          "expected_away_goals": 1.02,
           "top_scorelines": [
-            {
-              "score": "1-0",
-              "home_goals": 1,
-              "away_goals": 0,
-              "probability": 0.135
-            },
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
               "probability": 0.135
+            },
+            {
+              "score": "1-0",
+              "home_goals": 1,
+              "away_goals": 0,
+              "probability": 0.132
+            },
+            {
+              "score": "0-1",
+              "home_goals": 0,
+              "away_goals": 1,
+              "probability": 0.124
             },
             {
               "score": "0-0",
@@ -45142,27 +45848,21 @@
               "probability": 0.122
             },
             {
-              "score": "0-1",
-              "home_goals": 0,
-              "away_goals": 1,
-              "probability": 0.122
-            },
-            {
-              "score": "2-0",
+              "score": "2-1",
               "home_goals": 2,
-              "away_goals": 0,
-              "probability": 0.074
+              "away_goals": 1,
+              "probability": 0.073
             }
           ],
           "recommended_scoreline": {
             "score": "1-0",
             "home_goals": 1,
             "away_goals": 0,
-            "probability": 0.135
+            "probability": 0.132
           },
-          "home_win_probability": 0.395,
+          "home_win_probability": 0.385,
           "draw_probability": 0.266,
-          "away_win_probability": 0.339,
+          "away_win_probability": 0.349,
           "head_to_head": {
             "available": true,
             "matches": 3,
@@ -45176,8 +45876,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.111,
+              "news_signal": {
+                "available": true,
+                "edge": -0.072,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -3600000,
+                "total_net_value_eur": -3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "out",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -45779,8 +46493,8 @@
           "data_confidence": "MEDIUM",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.9,
-          "expected_away_goals": 1.58,
+          "expected_home_goals": 1.89,
+          "expected_away_goals": 1.59,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -45792,19 +46506,19 @@
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.088
+              "probability": 0.087
             },
             {
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.073
+              "probability": 0.074
             },
             {
               "score": "2-2",
               "home_goals": 2,
               "away_goals": 2,
-              "probability": 0.069
+              "probability": 0.07
             },
             {
               "score": "1-0",
@@ -45817,11 +46531,11 @@
             "score": "2-1",
             "home_goals": 2,
             "away_goals": 1,
-            "probability": 0.088
+            "probability": 0.087
           },
-          "home_win_probability": 0.455,
+          "home_win_probability": 0.451,
           "draw_probability": 0.221,
-          "away_win_probability": 0.324,
+          "away_win_probability": 0.328,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -45834,8 +46548,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.0302,
-              "news_signal": null,
+              "edge": -0.0085,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0132,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 3600000,
+                "total_net_value_eur": 3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "in",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.0302,
@@ -47163,8 +47891,8 @@
           "data_confidence": "HIGH",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.9,
-          "expected_away_goals": 1.08,
+          "expected_home_goals": 1.91,
+          "expected_away_goals": 1.07,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -47188,7 +47916,7 @@
               "score": "2-0",
               "home_goals": 2,
               "away_goals": 0,
-              "probability": 0.092
+              "probability": 0.093
             },
             {
               "score": "3-1",
@@ -47203,9 +47931,9 @@
             "away_goals": 1,
             "probability": 0.099
           },
-          "home_win_probability": 0.573,
-          "draw_probability": 0.211,
-          "away_win_probability": 0.216,
+          "home_win_probability": 0.578,
+          "draw_probability": 0.21,
+          "away_win_probability": 0.212,
           "head_to_head": {
             "available": true,
             "matches": 28,
@@ -47215,8 +47943,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.0302,
-              "news_signal": null,
+              "edge": -0.0085,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0132,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 3600000,
+                "total_net_value_eur": 3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "in",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.0302,
@@ -47583,11 +48325,11 @@
           "away_team": "GENÇLERBİRLİĞİ",
           "is_played": false,
           "actual_score": null,
-          "data_confidence": "MEDIUM",
+          "data_confidence": "LOW",
           "raw_predicted": "away",
-          "predicted": "away",
-          "expected_home_goals": 1.22,
-          "expected_away_goals": 1.56,
+          "predicted": "draw",
+          "expected_home_goals": 1.24,
+          "expected_away_goals": 1.54,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -47599,36 +48341,36 @@
               "score": "0-1",
               "home_goals": 0,
               "away_goals": 1,
-              "probability": 0.097
+              "probability": 0.095
             },
             {
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.092
+              "probability": 0.091
             },
             {
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.076
+              "probability": 0.077
             },
             {
-              "score": "0-2",
-              "home_goals": 0,
-              "away_goals": 2,
-              "probability": 0.075
+              "score": "2-1",
+              "home_goals": 2,
+              "away_goals": 1,
+              "probability": 0.074
             }
           ],
           "recommended_scoreline": {
-            "score": "0-1",
-            "home_goals": 0,
+            "score": "1-1",
+            "home_goals": 1,
             "away_goals": 1,
-            "probability": 0.097
+            "probability": 0.118
           },
-          "home_win_probability": 0.289,
+          "home_win_probability": 0.297,
           "draw_probability": 0.274,
-          "away_win_probability": 0.437,
+          "away_win_probability": 0.428,
           "head_to_head": {
             "available": true,
             "matches": 10,
@@ -47638,8 +48380,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.111,
+              "news_signal": {
+                "available": true,
+                "edge": -0.072,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -3600000,
+                "total_net_value_eur": -3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "out",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -48897,49 +49653,49 @@
           "data_confidence": "LOW",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.52,
-          "expected_away_goals": 1.28,
+          "expected_home_goals": 1.5,
+          "expected_away_goals": 1.3,
           "top_scorelines": [
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.118
+              "probability": 0.119
             },
             {
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.092
+              "probability": 0.091
             },
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.09
+              "probability": 0.089
             },
             {
               "score": "0-1",
               "home_goals": 0,
               "away_goals": 1,
-              "probability": 0.078
+              "probability": 0.079
             },
             {
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.076
+              "probability": 0.077
             }
           ],
           "recommended_scoreline": {
             "score": "1-0",
             "home_goals": 1,
             "away_goals": 0,
-            "probability": 0.092
+            "probability": 0.091
           },
-          "home_win_probability": 0.428,
-          "draw_probability": 0.253,
-          "away_win_probability": 0.319,
+          "home_win_probability": 0.419,
+          "draw_probability": 0.254,
+          "away_win_probability": 0.328,
           "head_to_head": {
             "available": true,
             "matches": 23,
@@ -49015,8 +49771,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.111,
+              "news_signal": {
+                "available": true,
+                "edge": -0.072,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -3600000,
+                "total_net_value_eur": -3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "out",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -50295,10 +51065,10 @@
           "is_played": false,
           "actual_score": null,
           "data_confidence": "LOW",
-          "raw_predicted": "home",
-          "predicted": "home",
-          "expected_home_goals": 1.62,
-          "expected_away_goals": 1.61,
+          "raw_predicted": "away",
+          "predicted": "away",
+          "expected_home_goals": 1.61,
+          "expected_away_goals": 1.62,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -50307,15 +51077,15 @@
               "probability": 0.103
             },
             {
-              "score": "2-1",
-              "home_goals": 2,
-              "away_goals": 1,
-              "probability": 0.084
-            },
-            {
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
+              "probability": 0.084
+            },
+            {
+              "score": "2-1",
+              "home_goals": 2,
+              "away_goals": 1,
               "probability": 0.083
             },
             {
@@ -50332,14 +51102,14 @@
             }
           ],
           "recommended_scoreline": {
-            "score": "2-1",
-            "home_goals": 2,
-            "away_goals": 1,
+            "score": "1-2",
+            "home_goals": 1,
+            "away_goals": 2,
             "probability": 0.084
           },
-          "home_win_probability": 0.394,
+          "home_win_probability": 0.39,
           "draw_probability": 0.217,
-          "away_win_probability": 0.389,
+          "away_win_probability": 0.393,
           "head_to_head": {
             "available": true,
             "matches": 23,
@@ -50353,8 +51123,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.0302,
-              "news_signal": null,
+              "edge": -0.0085,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0132,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 3600000,
+                "total_net_value_eur": 3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "in",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.0302,
@@ -50516,11 +51300,11 @@
           "away_team": "KASIMPAŞA A.Ş.",
           "is_played": false,
           "actual_score": null,
-          "data_confidence": "LOW",
+          "data_confidence": "MEDIUM",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.32,
-          "expected_away_goals": 1.18,
+          "expected_home_goals": 1.34,
+          "expected_away_goals": 1.16,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -50532,19 +51316,19 @@
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.109
+              "probability": 0.11
             },
             {
               "score": "0-1",
               "home_goals": 0,
               "away_goals": 1,
-              "probability": 0.096
+              "probability": 0.095
             },
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.085
+              "probability": 0.086
             },
             {
               "score": "0-0",
@@ -50557,11 +51341,11 @@
             "score": "1-0",
             "home_goals": 1,
             "away_goals": 0,
-            "probability": 0.109
+            "probability": 0.11
           },
-          "home_win_probability": 0.421,
-          "draw_probability": 0.232,
-          "away_win_probability": 0.347,
+          "home_win_probability": 0.431,
+          "draw_probability": 0.231,
+          "away_win_probability": 0.338,
           "head_to_head": {
             "available": true,
             "matches": 23,
@@ -50571,8 +51355,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.111,
+              "news_signal": {
+                "available": true,
+                "edge": -0.072,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -3600000,
+                "total_net_value_eur": -3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "out",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -50882,8 +51680,8 @@
           "data_confidence": "HIGH",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 2.37,
-          "expected_away_goals": 1.07,
+          "expected_home_goals": 2.38,
+          "expected_away_goals": 1.06,
           "top_scorelines": [
             {
               "score": "2-1",
@@ -50895,7 +51693,7 @@
               "score": "2-0",
               "home_goals": 2,
               "away_goals": 0,
-              "probability": 0.09
+              "probability": 0.091
             },
             {
               "score": "1-1",
@@ -50922,9 +51720,9 @@
             "away_goals": 1,
             "probability": 0.096
           },
-          "home_win_probability": 0.658,
-          "draw_probability": 0.186,
-          "away_win_probability": 0.156,
+          "home_win_probability": 0.662,
+          "draw_probability": 0.185,
+          "away_win_probability": 0.153,
           "head_to_head": {
             "available": true,
             "matches": 31,
@@ -50934,8 +51732,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.0302,
-              "news_signal": null,
+              "edge": -0.0085,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0132,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 3600000,
+                "total_net_value_eur": 3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "in",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.0302,
@@ -52515,8 +53327,8 @@
           "data_confidence": "MEDIUM",
           "raw_predicted": "away",
           "predicted": "away",
-          "expected_home_goals": 1.34,
-          "expected_away_goals": 1.58,
+          "expected_home_goals": 1.32,
+          "expected_away_goals": 1.6,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -52528,36 +53340,36 @@
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.09
+              "probability": 0.091
             },
             {
               "score": "0-1",
               "home_goals": 0,
               "away_goals": 1,
-              "probability": 0.085
+              "probability": 0.086
             },
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.077
+              "probability": 0.075
             },
             {
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.072
+              "probability": 0.071
             }
           ],
           "recommended_scoreline": {
             "score": "1-2",
             "home_goals": 1,
             "away_goals": 2,
-            "probability": 0.09
+            "probability": 0.091
           },
-          "home_win_probability": 0.338,
-          "draw_probability": 0.216,
-          "away_win_probability": 0.447,
+          "home_win_probability": 0.329,
+          "draw_probability": 0.215,
+          "away_win_probability": 0.456,
           "head_to_head": {
             "available": true,
             "matches": 22,
@@ -52633,8 +53445,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.111,
+              "news_signal": {
+                "available": true,
+                "edge": -0.072,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -3600000,
+                "total_net_value_eur": -3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "out",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -53114,8 +53940,8 @@
           "data_confidence": "MEDIUM",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 2.13,
-          "expected_away_goals": 1.62,
+          "expected_home_goals": 2.12,
+          "expected_away_goals": 1.63,
           "top_scorelines": [
             {
               "score": "2-1",
@@ -53154,9 +53980,9 @@
             "away_goals": 1,
             "probability": 0.086
           },
-          "home_win_probability": 0.501,
+          "home_win_probability": 0.496,
           "draw_probability": 0.201,
-          "away_win_probability": 0.298,
+          "away_win_probability": 0.302,
           "head_to_head": {
             "available": true,
             "matches": 33,
@@ -53170,8 +53996,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.0302,
-              "news_signal": null,
+              "edge": -0.0085,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0132,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 3600000,
+                "total_net_value_eur": 3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "in",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.0302,
@@ -54358,8 +55198,8 @@
           "data_confidence": "LOW_NEW_TEAM",
           "raw_predicted": "away",
           "predicted": "draw",
-          "expected_home_goals": 1.13,
-          "expected_away_goals": 1.34,
+          "expected_home_goals": 1.15,
+          "expected_away_goals": 1.32,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -54371,24 +55211,24 @@
               "score": "0-1",
               "home_goals": 0,
               "away_goals": 1,
-              "probability": 0.114
+              "probability": 0.112
             },
             {
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.095
-            },
-            {
-              "score": "1-2",
-              "home_goals": 1,
-              "away_goals": 2,
-              "probability": 0.086
+              "probability": 0.097
             },
             {
               "score": "0-0",
               "home_goals": 0,
               "away_goals": 0,
+              "probability": 0.085
+            },
+            {
+              "score": "1-2",
+              "home_goals": 1,
+              "away_goals": 2,
               "probability": 0.085
             }
           ],
@@ -54398,9 +55238,9 @@
             "away_goals": 1,
             "probability": 0.128
           },
-          "home_win_probability": 0.313,
-          "draw_probability": 0.27,
-          "away_win_probability": 0.417,
+          "home_win_probability": 0.322,
+          "draw_probability": 0.271,
+          "away_win_probability": 0.407,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -54409,8 +55249,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.111,
+              "news_signal": {
+                "available": true,
+                "edge": -0.072,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -3600000,
+                "total_net_value_eur": -3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "out",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -54783,8 +55637,8 @@
           "data_confidence": "MEDIUM",
           "raw_predicted": "away",
           "predicted": "away",
-          "expected_home_goals": 1.53,
-          "expected_away_goals": 1.99,
+          "expected_home_goals": 1.52,
+          "expected_away_goals": 2.0,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -54802,19 +55656,19 @@
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.069
+              "probability": 0.068
             },
             {
               "score": "2-2",
               "home_goals": 2,
               "away_goals": 2,
-              "probability": 0.069
+              "probability": 0.068
             },
             {
-              "score": "0-1",
-              "home_goals": 0,
-              "away_goals": 1,
-              "probability": 0.059
+              "score": "1-3",
+              "home_goals": 1,
+              "away_goals": 3,
+              "probability": 0.06
             }
           ],
           "recommended_scoreline": {
@@ -54823,9 +55677,9 @@
             "away_goals": 2,
             "probability": 0.09
           },
-          "home_win_probability": 0.283,
-          "draw_probability": 0.259,
-          "away_win_probability": 0.458,
+          "home_win_probability": 0.279,
+          "draw_probability": 0.258,
+          "away_win_probability": 0.463,
           "head_to_head": {
             "available": true,
             "matches": 8,
@@ -54909,8 +55763,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.0302,
-              "news_signal": null,
+              "edge": -0.0085,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0132,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 3600000,
+                "total_net_value_eur": 3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "in",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.0302,
@@ -55917,8 +56785,8 @@
           "data_confidence": "HIGH",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 2.25,
-          "expected_away_goals": 1.0,
+          "expected_home_goals": 2.26,
+          "expected_away_goals": 0.99,
           "top_scorelines": [
             {
               "score": "2-0",
@@ -55948,7 +56816,7 @@
               "score": "3-0",
               "home_goals": 3,
               "away_goals": 0,
-              "probability": 0.074
+              "probability": 0.075
             }
           ],
           "recommended_scoreline": {
@@ -55957,9 +56825,9 @@
             "away_goals": 0,
             "probability": 0.099
           },
-          "home_win_probability": 0.642,
-          "draw_probability": 0.206,
-          "away_win_probability": 0.152,
+          "home_win_probability": 0.646,
+          "draw_probability": 0.205,
+          "away_win_probability": 0.148,
           "head_to_head": {
             "available": true,
             "matches": 15,
@@ -55969,8 +56837,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.0302,
-              "news_signal": null,
+              "edge": -0.0085,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0132,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 3600000,
+                "total_net_value_eur": 3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "in",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.0302,
@@ -56391,8 +57273,8 @@
           "data_confidence": "LOW",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.64,
-          "expected_away_goals": 1.42,
+          "expected_home_goals": 1.62,
+          "expected_away_goals": 1.44,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -56410,7 +57292,7 @@
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.078
+              "probability": 0.079
             },
             {
               "score": "1-0",
@@ -56422,7 +57304,7 @@
               "score": "0-1",
               "home_goals": 0,
               "away_goals": 1,
-              "probability": 0.066
+              "probability": 0.067
             }
           ],
           "recommended_scoreline": {
@@ -56431,9 +57313,9 @@
             "away_goals": 1,
             "probability": 0.089
           },
-          "home_win_probability": 0.427,
+          "home_win_probability": 0.418,
           "draw_probability": 0.241,
-          "away_win_probability": 0.332,
+          "away_win_probability": 0.341,
           "head_to_head": {
             "available": true,
             "matches": 12,
@@ -56517,8 +57399,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.111,
+              "news_signal": {
+                "available": true,
+                "edge": -0.072,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -3600000,
+                "total_net_value_eur": -3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "out",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -58115,49 +59011,49 @@
           "data_confidence": "HIGH",
           "raw_predicted": "away",
           "predicted": "away",
-          "expected_home_goals": 1.26,
-          "expected_away_goals": 2.08,
+          "expected_home_goals": 1.28,
+          "expected_away_goals": 2.06,
           "top_scorelines": [
             {
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.097
+              "probability": 0.096
             },
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.093
+              "probability": 0.094
             },
             {
               "score": "0-2",
               "home_goals": 0,
               "away_goals": 2,
-              "probability": 0.077
+              "probability": 0.075
             },
             {
               "score": "0-1",
               "home_goals": 0,
               "away_goals": 1,
-              "probability": 0.074
+              "probability": 0.073
             },
             {
               "score": "1-3",
               "home_goals": 1,
               "away_goals": 3,
-              "probability": 0.067
+              "probability": 0.066
             }
           ],
           "recommended_scoreline": {
             "score": "1-2",
             "home_goals": 1,
             "away_goals": 2,
-            "probability": 0.097
+            "probability": 0.096
           },
-          "home_win_probability": 0.235,
-          "draw_probability": 0.183,
-          "away_win_probability": 0.581,
+          "home_win_probability": 0.242,
+          "draw_probability": 0.185,
+          "away_win_probability": 0.573,
           "head_to_head": {
             "available": true,
             "matches": 26,
@@ -58167,8 +59063,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.111,
+              "news_signal": {
+                "available": true,
+                "edge": -0.072,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -3600000,
+                "total_net_value_eur": -3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "out",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -59230,8 +60140,8 @@
           "data_confidence": "MEDIUM",
           "raw_predicted": "away",
           "predicted": "away",
-          "expected_home_goals": 1.37,
-          "expected_away_goals": 1.97,
+          "expected_home_goals": 1.36,
+          "expected_away_goals": 1.98,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -59261,7 +60171,7 @@
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.066
+              "probability": 0.065
             }
           ],
           "recommended_scoreline": {
@@ -59270,9 +60180,9 @@
             "away_goals": 2,
             "probability": 0.094
           },
-          "home_win_probability": 0.259,
+          "home_win_probability": 0.255,
           "draw_probability": 0.242,
-          "away_win_probability": 0.499,
+          "away_win_probability": 0.503,
           "head_to_head": {
             "available": true,
             "matches": 26,
@@ -59352,8 +60262,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.0302,
-              "news_signal": null,
+              "edge": -0.0085,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0132,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 3600000,
+                "total_net_value_eur": 3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "in",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.0302,
@@ -59961,9 +60885,15 @@
           "data_confidence": "HIGH",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 2.03,
-          "expected_away_goals": 1.03,
+          "expected_home_goals": 2.01,
+          "expected_away_goals": 1.05,
           "top_scorelines": [
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.099
+            },
             {
               "score": "2-1",
               "home_goals": 2,
@@ -59971,22 +60901,16 @@
               "probability": 0.099
             },
             {
-              "score": "1-1",
-              "home_goals": 1,
-              "away_goals": 1,
-              "probability": 0.098
-            },
-            {
               "score": "2-0",
               "home_goals": 2,
               "away_goals": 0,
-              "probability": 0.096
+              "probability": 0.095
             },
             {
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.095
+              "probability": 0.094
             },
             {
               "score": "3-1",
@@ -60001,9 +60925,9 @@
             "away_goals": 1,
             "probability": 0.099
           },
-          "home_win_probability": 0.605,
-          "draw_probability": 0.21,
-          "away_win_probability": 0.186,
+          "home_win_probability": 0.596,
+          "draw_probability": 0.212,
+          "away_win_probability": 0.192,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -60016,8 +60940,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.111,
+              "news_signal": {
+                "available": true,
+                "edge": -0.072,
+                "signal_count": 1,
+                "confirmed_net_value_eur": -3600000,
+                "total_net_value_eur": -3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "out",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -60163,8 +61101,8 @@
           "data_confidence": "HIGH",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 2.07,
-          "expected_away_goals": 1.49,
+          "expected_home_goals": 2.08,
+          "expected_away_goals": 1.48,
           "top_scorelines": [
             {
               "score": "2-1",
@@ -60182,7 +61120,7 @@
               "score": "2-2",
               "home_goals": 2,
               "away_goals": 2,
-              "probability": 0.068
+              "probability": 0.067
             },
             {
               "score": "1-2",
@@ -60203,9 +61141,9 @@
             "away_goals": 1,
             "probability": 0.091
           },
-          "home_win_probability": 0.53,
+          "home_win_probability": 0.535,
           "draw_probability": 0.18,
-          "away_win_probability": 0.289,
+          "away_win_probability": 0.285,
           "head_to_head": {
             "available": true,
             "matches": 15,
@@ -60215,8 +61153,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.0302,
-              "news_signal": null,
+              "edge": -0.0085,
+              "news_signal": {
+                "available": true,
+                "edge": 0.0132,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 3600000,
+                "total_net_value_eur": 3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "in",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.0302,
