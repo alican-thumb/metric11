@@ -420,6 +420,15 @@ def build_html() -> str:
     _state, banner_css, dot_css, window_msg, window_link = _window_state()
     _is_transfer_season = _state in ("countdown", "open")
     _league = league_active()
+    # 2026-09-11 bulgusu: başlık/açıklama sabit olarak "transfer haberleri"ne odaklıydı —
+    # lig başladıktan sonra (league_active) sayfanın gerçek içeriği maç/tahmin odaklı
+    # olduğu halde arama/paylaşım önizlemesi hâlâ transfer sezonundan kalma metni
+    # gösteriyordu.
+    _gundem_description = (
+        "Süper Lig maç önü tahminleri, skor öngörüleri ve haftalık isabet karnesi. Günlük güncellenen analiz platformu."
+        if _league else
+        "Süper Lig transfer haberleri, sakat-cezalı listesi ve güncel transfer takibi. Tüm kaynaklar tek sayfada — metric11."
+    )
 
     mv_eur = ctx_summary.get("free_agent_total_market_value_eur", 0)
     mv_str = f"€{mv_eur / 1_000_000:.0f}M" if mv_eur >= 1_000_000 else ""
@@ -501,13 +510,13 @@ def build_html() -> str:
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Gündem — Süper Lig {TRANSFER_WATCH_SEASON_LABEL} | metric11</title>
-<meta name="description" content="Süper Lig transfer haberleri, sakat-cezalı listesi ve güncel transfer takibi. Tüm kaynaklar tek sayfada — metric11.">
+<meta name="description" content="{_gundem_description}">
 <meta property="og:title" content="Gündem — Süper Lig {TRANSFER_WATCH_SEASON_LABEL} | metric11">
-<meta property="og:description" content="Süper Lig transfer haberleri, sakat-cezalı listesi ve güncel transfer takibi.">
-<meta property="og:image" content="https://metric11.com/og-image.png">
+<meta property="og:description" content="{_gundem_description}">
+<meta property="og:image" content="https://metric11.com/og_gundem.png">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://metric11.com/og-image.png">
+  <meta name="twitter:image" content="https://metric11.com/og_gundem.png">
 <meta property="og:url" content="https://metric11.com/">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="canonical" href="https://metric11.com/">

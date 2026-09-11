@@ -203,6 +203,54 @@ def _mv_label(eur: int) -> str:
     return f"€{eur // 1000}K"
 
 
+def generate_og_gundem() -> Path | None:
+    """Ana sayfanın (gundem_2025_2026.html) gerçek paylaşım görseli.
+
+    2026-09-11 bulgusu: siteye en çok Twitter'dan tıklama getiren sayfa olan ana
+    sayfa hiç kendine ait dinamik bir OG görseline sahip değildi — jenerik/statik
+    `og-image.png`'yi kullanıyordu. `og_home.png` adı yanıltıcı: içeriği aslında
+    transfer radarı (bkz. `generate_og_home`), ana sayfa artık lig moduna geçtiği
+    için (bkz. html_utils.league_active) o görsel ana sayfayla örtüşmüyor. Bu
+    fonksiyon ana sayfanın GERÇEK güncel içeriğini (hangi hafta, bu haftaki maç
+    sayısı, sezon ölçeği) yansıtır."""
+    mw = _load_json("match_week_2026_2027.json") or {}
+    fixtures = _load_json("season_fixture_predictions_2026_2027.json") or {}
+    matches = mw.get("matches", []) if isinstance(mw, dict) else []
+    match_count = len(matches)
+    week = mw.get("week")
+    total_matches = fixtures.get("total_matches", 306) if isinstance(fixtures, dict) else 306
+    total_weeks = fixtures.get("total_weeks", 34) if isinstance(fixtures, dict) else 34
+
+    img, draw = _make_base_image()
+
+    _draw_overline(draw, f"HAFTA {week}" if week else "SÜPER LİG 2026-27", 110)
+    _draw_headline(draw, "Süper Lig Tahmin Merkezi", 185, size=64)
+
+    # 2026-09-11 kararı: burada bilerek "sezon isabeti" yüzdesi GÖSTERİLMİYOR — soğuk
+    # bir Twitter ziyaretçisine ilk izlenimde bağlamsız bir isabet yüzdesi (ör. o anki
+    # gibi %39) yanlış/olumsuz bir sinyal verebilir. Gerçek isabet oranı şeffafça
+    # weekly_evaluation sayfasında duruyor; paylaşım görseli ölçek/kapsam vurgusu yapar.
+    stats = [
+        ("Bu Hafta", str(match_count)),
+        ("Sezon", f"{total_weeks} Hafta"),
+        ("Toplam Maç", str(total_matches)),
+    ]
+    _draw_stat_cards(draw, stats, 370)
+
+    font_lime = _load_font("Inter-SemiBold.ttf", 18)
+    draw.text(
+        (W // 2, 490),
+        "Günlük Güncellenen Maç Önü Analizleri",
+        font=font_lime,
+        fill=_rgb(LIME),
+        anchor="mm",
+    )
+
+    out = OG_DIR / "og_gundem.png"
+    img.save(str(out), "PNG")
+    return out
+
+
 def generate_og_home() -> Path | None:
     ctx = _load_json("transfer_season_context_2025_2026.json")
     if ctx is None:
@@ -237,11 +285,17 @@ def generate_og_home() -> Path | None:
     ]
     _draw_stat_cards(draw, stats, 370)
 
-    # Bottom lime text
+    # Bottom lime text — 2026-09-11 bulgusu: burada sabit "Pencere 1 Haziran'da
+    # Açılıyor" yazıyordu; pencere 1 Eylül'de kapandığı için bu paylaşım görseli
+    # 10+ gündür yanlış bilgi gösteriyordu. official_count zaten hesaplanmış ama
+    # hiç kullanılmıyordu — burada kullanılıyor.
     font_lime = _load_font("Inter-SemiBold.ttf", 18)
+    bottom_text = (
+        f"{official_count} Resmi Transfer Onaylandı" if official_count else "2026-27 Sezonu Boyunca Güncel Takip"
+    )
     draw.text(
         (W // 2, 490),
-        "Pencere 1 Haziran'da Açılıyor",
+        bottom_text,
         font=font_lime,
         fill=_rgb(LIME),
         anchor="mm",
@@ -706,6 +760,7 @@ def main() -> None:
         return
 
     generators = [
+        ("og_gundem.png", generate_og_gundem),
         ("og_home.png", generate_og_home),
         ("og_transfer_season.png", generate_og_transfer_season),
         ("og_blueprints.png", generate_og_blueprints),

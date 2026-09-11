@@ -53,13 +53,16 @@ DEFAULT_COMMANDS = [
     ["python", "-m", "src.build_news_intelligence_report"],
     ["python", "-m", "src.build_source_performance_report"],
     ["python", "-m", "src.build_transfer_tracker"],
-    ["python", "-m", "src.build_og_images"],
     # 2026-27 maç/tahmin zinciri: fikstür tahminleri → haftalık karne → "Bu Hafta".
     # build_live_feed/build_command_center/build_product_home bu çıktıları okuduğu için
     # ANA SAYFADAN ÖNCE üretilir (aksi halde ana sayfa bayat tahmin gösterir).
     ["python", "-m", "src.build_season_fixture_predictions"],
     ["python", "-m", "src.build_weekly_evaluation"],
     ["python", "-m", "src.build_match_week"],
+    # build_og_images burada (match_week/weekly_evaluation'dan SONRA, build_live_feed'den
+    # ÖNCE) çalışır — 2026-09-11 bulgusu: eskiden bu iki dosyadan önce çalışıyordu,
+    # og_gundem.png bir önceki günün bayat "Bu Hafta" verisiyle üretiliyordu.
+    ["python", "-m", "src.build_og_images"],
     ["python", "-m", "src.build_live_feed"],
     ["python", "-m", "src.build_command_center"],
     ["python", "-m", "src.analyze_worldcup_predictions"],
