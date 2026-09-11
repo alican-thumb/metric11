@@ -72,22 +72,11 @@ Lig geneli scout, tahmin modeli ve backtest paneli:
 
 ```bash
 python -m src.analyze_league_scouting --output-prefix league_scouting_2025_2026_normalized
-python -m src.build_scout_dashboard --input data/processed/league_scouting_2025_2026_normalized.json --output data/processed/league_scouting_2025_2026_normalized_dashboard.html
 python -m src.model_league_predictions
 python -m src.build_model_baseline_comparison
 python -m src.build_draw_risk_audit
 python -m src.build_backtest_dashboard
 ```
-
-Dış API snapshot verisi:
-
-```bash
-python -m src.collect_external_snapshots --season 2024
-python -m src.collect_external_snapshots --season 2025
-python -m src.analyze_api_football_snapshot
-```
-
-Not: API-Football ücretsiz planı 2025 sezonunu kısıtlayabilir. Bu durumda 2025-2026 ana sezon verisi TFF hattından, API-Football ise geçmiş sezon zenginleştirme ve dış doğrulama katmanından gelir.
 
 Besiktas oyuncu profilleri, takim ihtiyac analizi ve paneli:
 
