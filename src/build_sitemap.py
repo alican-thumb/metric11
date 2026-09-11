@@ -19,12 +19,14 @@ _PUBLIC_PAGES = [
     ("season_fixture_predictions_2026_2027.html", 1.0, "daily"),
     ("weekly_evaluation_2026_2027.html", 0.9, "daily"),
     ("european_predictions_2026_2027.html", 1.0, "daily"),
+    ("worldcup_2026_predictions.html", 1.0, "daily"),
     (f"transfer_tracker_{SEASON}.html", 0.9, "daily"),
     (f"news_intelligence_dashboard_{SEASON}.html", 0.8, "daily"),
     (f"transfer_recommendation_report_{SEASON}.html", 0.8, "weekly"),
     (f"transfer_season_context_{SEASON}.html", 0.8, "weekly"),
     ("team_scout_blueprints_2025_2026.html", 0.7, "weekly"),
     ("position_scout_matrix_2025_2026.html", 0.7, "weekly"),
+    ("league_scouting_enriched_2025_2026_dashboard.html", 0.6, "weekly"),
     ("football_intelligence_home.html", 0.7, "weekly"),
     # --- 2025-26 sezonu arşivi / backtest (tamamlanmış, güncellenmiyor) ---
     (f"league_intelligence_{SEASON}.html", 0.4, "monthly"),
@@ -86,11 +88,14 @@ def build_robots() -> str:
         "User-agent: *\n"
         "Allow: /\n"
         "Disallow: /admin.html\n"
+        "Disallow: /system_status.html\n"
         "Disallow: /data_quality_scorecard_2025_2026.html\n"
         "Disallow: /data_catalog_2025_2026.html\n"
         "Disallow: /metric11_warehouse_quality.html\n"
         "Disallow: /oos_validation_2025_2026.html\n"
         "Disallow: /player_alias_quality_2025_2026.html\n"
+        "Disallow: /prediction_validation_report_2025_2026.html\n"
+        "Disallow: /scout_quality_report_2025_2026.html\n"
         "Disallow: /source_watchlist_2025_2026.html\n"
         "Disallow: /transfermarkt_match_review_queue_2025_2026.html\n"
         "\n"

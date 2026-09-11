@@ -702,10 +702,7 @@ footer a { color: #3a5a7a; text-decoration: none; border-bottom: 1px solid #1e3a
 # Nav linkleri
 # ---------------------------------------------------------------------------
 def _build_topbar() -> str:
-    nav_items = nav_links_html(
-        "worldcup_2026_predictions.html",
-        extra=[("Tahminler", "worldcup_2026_predictions.html")],
-    )
+    nav_items = nav_links_html("worldcup_2026_predictions.html")
     return (
         '<div class="topbar">'
         '<a class="brand" href="/">'

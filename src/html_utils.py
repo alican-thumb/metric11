@@ -89,25 +89,21 @@ def _nav_link_list() -> list[tuple[str, str]]:
         ("Scout", "transfer_recommendation_report_2025_2026.html"),
         ("Analiz", "football_intelligence_home.html"),
         ("⚽ Avrupa", "european_predictions_2026_2027.html"),
+        ("🌍 Dünya Kupası", "worldcup_2026_predictions.html"),
         ("🎮 Tahmin Oyunu", "/tahmin"),
     ]
     return links
 
 
-def nav_links_html(active: str = "", extra: list[tuple[str, str]] | None = None) -> str:
+def nav_links_html(active: str = "") -> str:
     """Sadece <a> etiketlerini döner (sarmalayıcı <nav> yok) — kendi topbar/nav
-    markup'ını ve CSS'ini koruyan sayfalarda link listesini güncel tutmak için.
-
-    `extra`: bu sayfaya özel, genel listede olmayan link(ler) — "🎮 Tahmin Oyunu"dan
-    hemen önce eklenir (ör. Dünya Kupası sayfasındaki "Tahminler" sekmesi)."""
+    markup'ını ve CSS'ini koruyan sayfalarda link listesini güncel tutmak için."""
     def _attrs(label: str, href: str) -> str:
         if href == "/tahmin":
             return ' style="color:var(--lime)"'
         return ""
 
     links = _nav_link_list()
-    if extra:
-        links = links[:-1] + list(extra) + links[-1:]
     return "".join(
         f'<a href="{href}" class="active"{_attrs(label, href)}>{label}</a>'
         if label == active or href == active

@@ -124,7 +124,6 @@ team, match_date, score, venue, referee, var, lineup, bench, cards, goals, goal_
 - pressures
 - tracking/running distance
 - verified_fm_commercial_license
-- api_football_2025_paid_plan_access
 
 ## Ürün Hazırlık Durumu
 
@@ -133,8 +132,7 @@ team, match_date, score, venue, referee, var, lineup, bench, cards, goals, goal_
 - match_result_prediction: IMPROVED_MVP_NEEDS_MORE_FEATURES
 - big_match_risk_audit: MVP_READY_RISK_LAYER
 - scouting: MVP_WITH_PARTIAL_POSITION_VALUE
-- team_needs: MVP_WITH_BESIKTAS_POSITION_VALUE
-- availability: MVP_AUTO_SUSPENSION_MANUAL_INJURY
+- availability: MVP_LEAGUE_WIDE_AUTO_SUSPENSION_NEWS_INJURY
 - fm_style_attributes: IMPORT_READY_NEEDS_LICENSED_DATASET
 - fm_style_scout_program: MVP_READY_DERIVED_ROLE_ENGINE
 - position_scout_matrix: MVP_READY_NEEDS_STRONGER_POSITION_DATA
@@ -146,4 +144,4 @@ team, match_date, score, venue, referee, var, lineup, bench, cards, goals, goal_
 - source_watchlist: MVP_READY_DAILY_REFRESH_PLAN
 - news_context: CONNECTED_LOW_TO_MEDIUM_CONFIDENCE
 - transfer_news_intelligence: RSS_CONNECTED_OFFICIAL_CLUB_WEB_CONNECTED_X_OPTIONAL_REVIEW_GATED
-- api_football: CONNECTED_2024_HISTORY_PLAN_LIMITED_2025
+- api_football: RETIRED_2026_09_SUPERSEDED_BY_TFF_TRANSFERMARKT_SOFASCORE

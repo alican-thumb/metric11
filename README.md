@@ -78,14 +78,14 @@ python -m src.build_draw_risk_audit
 python -m src.build_backtest_dashboard
 ```
 
-Besiktas oyuncu profilleri, takim ihtiyac analizi ve paneli:
+Besiktas oyuncu profilleri:
 
 ```bash
 python -m src.collect_tff_player_profiles --team "BEŞİKTAŞ A.Ş." --limit 0 --output data/processed/tff_player_profiles_besiktas_2025_2026.json
 python -m src.collect_transfermarkt_squad
-python -m src.analyze_team_needs
-python -m src.build_team_needs_dashboard
 ```
+
+Takım ihtiyaç analizi artık lig geneli `src.build_team_scout_blueprints` (zafiyet → rol → aday) tarafından karşılanıyor; ayrı, Beşiktaş'a özel bir ihtiyaç paneli yok.
 
 Scout kisa liste oyuncu profili ve zenginlestirilmis scout paneli:
 

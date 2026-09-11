@@ -729,6 +729,7 @@ def build_html(report: dict) -> str:
 <div class="header">
   <h1>Scout &amp; Transfer Merkezi <span style="color:#cde94e;font-size:0.9em">{TRANSFER_WATCH_SEASON_LABEL}</span></h1>
   <div class="subtitle">{SEASON_LABEL} sezon verisi bazlı · 2026-27 transfer penceresi planlaması · pozisyonu doğrulanmış aday önerileri · günlük güncellenir</div>
+  <div class="subtitle"><a href="league_scouting_enriched_2025_2026_dashboard.html" style="color:#cde94e">→ Zenginleştirilmiş scout listesi: genç değer adayları, sözleşme fırsatları, tam lig kısa listesi</a></div>
 </div>
 <div class="summary-bar">
   <div class="stat-pill"><div class="val">{s['teams_analyzed']}</div><div class="lbl">Takım</div></div>
