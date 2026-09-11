@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-11T00:09:47.462642+00:00",
+  "generated_at": "2026-09-11T04:39:33.363382+00:00",
   "season": "2025_2026",
   "maturity_days": 14,
   "summary": {
-    "transfer_signals": 35,
+    "transfer_signals": 34,
     "official_events": 12,
     "official_events_with_timestamp": 5,
     "official_events_with_first_observed_timestamp": 12,
@@ -12,11 +12,11 @@
     "measured_lead_times": 0,
     "first_seen_lead_times": 3,
     "tracked_x_sources_waiting": 20,
-    "retained_claim_observations": 4047
+    "retained_claim_observations": 4048
   },
   "provider_coverage": {
     "google_news": {
-      "articles": 268,
+      "articles": 258,
       "queries": 30,
       "successful_queries": 30
     },
@@ -36,8 +36,8 @@
       "source": "Google News / medya",
       "source_tier": "CHANNEL",
       "source_type": "media",
-      "observations": 4044,
-      "scoreable_claims": 1309,
+      "observations": 4045,
+      "scoreable_claims": 1310,
       "official_conversions": 5,
       "lead_hours": [],
       "first_seen_lead_hours": [
@@ -47,7 +47,7 @@
       ],
       "lead_time_unavailable": 2,
       "matured_unconfirmed": 1085,
-      "pending_claims": 219,
+      "pending_claims": 220,
       "unresolved_claims": 2735,
       "status": "FIRST_SEEN_BOUND",
       "score": 0.4,
@@ -2125,6 +2125,26 @@
       "false_alarm_proxy_pct": 100.0
     },
     {
+      "source": "haberturk.com",
+      "source_tier": "MEDIA",
+      "source_type": "google_news",
+      "observations": 3,
+      "scoreable_claims": 3,
+      "official_conversions": 0,
+      "lead_hours": [],
+      "first_seen_lead_hours": [],
+      "lead_time_unavailable": 0,
+      "matured_unconfirmed": 1,
+      "pending_claims": 2,
+      "unresolved_claims": 0,
+      "status": "PARTIAL_MEASUREMENT",
+      "score": 0.0,
+      "average_lead_hours": null,
+      "average_first_seen_lead_hours": null,
+      "official_conversion_rate_pct": 0.0,
+      "false_alarm_proxy_pct": 100.0
+    },
+    {
       "source": "mansethaber.com",
       "source_tier": "MEDIA",
       "source_type": "google_news",
@@ -2576,26 +2596,6 @@
       "lead_time_unavailable": 0,
       "matured_unconfirmed": 2,
       "pending_claims": 0,
-      "unresolved_claims": 0,
-      "status": "PARTIAL_MEASUREMENT",
-      "score": 0.0,
-      "average_lead_hours": null,
-      "average_first_seen_lead_hours": null,
-      "official_conversion_rate_pct": 0.0,
-      "false_alarm_proxy_pct": 100.0
-    },
-    {
-      "source": "haberturk.com",
-      "source_tier": "MEDIA",
-      "source_type": "google_news",
-      "observations": 2,
-      "scoreable_claims": 2,
-      "official_conversions": 0,
-      "lead_hours": [],
-      "first_seen_lead_hours": [],
-      "lead_time_unavailable": 0,
-      "matured_unconfirmed": 1,
-      "pending_claims": 1,
       "unresolved_claims": 0,
       "status": "PARTIAL_MEASUREMENT",
       "score": 0.0,
