@@ -267,19 +267,39 @@ def _win_draw_loss(lam_h: float, lam_a: float) -> tuple[float, float, float]:
 
 
 def _score_prediction(lam_h: float, lam_a: float, hw: float, dr: float, aw: float) -> tuple[int, int]:
-    ph = round(lam_h)
-    pa = round(lam_a)
+    """En olası kazananın (hw/dr/aw) skor grubu içinde en yüksek Poisson ortak
+    olasılıklı skoru seçer.
+
+    2026-09-11 bulgusu: eski sürüm λ'ları en yakın tam sayıya yuvarlayıp kazananı
+    tutturmak için sadece +1 dürtüyordu. UCL/UEL maçlarında λ neredeyse hep 1.0-1.6
+    aralığına düştüğünden (BASE_GOALS=1.42, home advantage 1.08) bu mekanik olarak
+    144 tahminin %90'ını 2-1/1-2'ye sabitliyordu; 0-0, 1-0, 1-1, 2-0 gibi gerçekçi
+    skorlar hiç çıkmıyordu. Artık gerçek ortak olasılık dağılımından o kazanma
+    grubundaki (ev/berabere/deplasman) en olası skor seçiliyor — skorlar takımların
+    gerçek gol beklentisine göre çeşitleniyor.
+    """
     if hw >= dr and hw >= aw:
-        if ph <= pa:
-            ph = pa + 1
+        outcome = "home"
     elif dr >= hw and dr >= aw:
-        if ph != pa:
-            low = min(ph, pa)
-            ph = pa = low
+        outcome = "draw"
     else:
-        if pa <= ph:
-            pa = ph + 1
-    return max(0, ph), max(0, pa)
+        outcome = "away"
+
+    best_score = (0, 0)
+    best_prob = -1.0
+    for h in range(_MAX_GOALS + 1):
+        for a in range(_MAX_GOALS + 1):
+            if outcome == "home" and h <= a:
+                continue
+            if outcome == "away" and a <= h:
+                continue
+            if outcome == "draw" and h != a:
+                continue
+            p = _poisson_prob(lam_h, h) * _poisson_prob(lam_a, a)
+            if p > best_prob:
+                best_prob = p
+                best_score = (h, a)
+    return best_score
 
 
 def _goals_over_2_5(lam_h: float, lam_a: float) -> float:
