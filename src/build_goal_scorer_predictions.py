@@ -122,6 +122,34 @@ def players_with_2026_27_appearance() -> set[str]:
     return appeared
 
 
+def load_current_unavailable_players(team_fixture_name: str) -> set[str]:
+    """canonical_player_name kümesi: o takımın ŞU AN sakat/cezalı olduğu bilinen oyuncuları.
+
+    2026-09-11 bulgusu (kullanıcı örneği — Beşiktaş-Erzurumspor FK, 11 Eylül): Dušan
+    Vlahović haber kaynaklı olarak cezalı olduğu bilindiği halde (bkz.
+    `build_player_availability.py`'nin `current_news_context_unavailability`'si — Haberturk
+    kaynaklı, HIGH güven) golcü tahmininde hâlâ ikinci sırada gösteriliyordu. Sebep:
+    kadro maç günü TFF tarafından henüz yayınlanmamışken (`live_lineups`'ta yok,
+    `lineup_confirmed=False`) bu dosyadaki HİÇBİR fonksiyon sakat/cezalı sinyaline
+    bakmıyordu — yalnızca `load_live_lineup_names()` (kadro yayınlandıktan SONRA) bir
+    filtre uyguluyordu. Bu fonksiyon, kadro henüz yayınlanmamış olsa BİLE zaten bilinen
+    haber-kaynaklı sakat/cezalı sinyalini her zaman uygular."""
+    from src.generate_preview_batch import team_slug
+
+    path = PROCESSED_DIR / f"player_availability_{team_slug(team_fixture_name)}_2025_2026.json"
+    if not path.exists():
+        return set()
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return set()
+    return {
+        canonical_player_name(entry.get("player_name"))
+        for entry in data.get("current_news_context_unavailability", [])
+        if entry.get("status") in ("SUSPENDED", "INJURED") and entry.get("player_name")
+    }
+
+
 def load_live_lineup_names() -> dict[str, dict[str, set[str]]]:
     """match_id(str) -> {"home": {canonical_player_name...}, "away": {...}}.
 
@@ -182,6 +210,7 @@ def build_predictions() -> dict:
     rosters = build_team_rosters()
     appeared_this_season = players_with_2026_27_appearance()
     live_lineups = load_live_lineup_names()
+    unavailable_by_team: dict[str, set[str]] = {}
 
     # Pozisyon grubu başına, değerlendirilmiş (rated) oyunculardan ortalama gol oranı ve
     # ortalama piyasa değeri — yeni transferler için "projected" oranı ölçeklemekte kullanılır.
@@ -206,9 +235,15 @@ def build_predictions() -> dict:
 
     def _side_candidates(team_fixture_name: str, lam: float, allowed_names: set[str] | None = None) -> list[dict]:
         roster = rosters.get(_canon(team_fixture_name), [])
+        team_key = _canon(team_fixture_name)
+        if team_key not in unavailable_by_team:
+            unavailable_by_team[team_key] = load_current_unavailable_players(team_fixture_name)
+        unavailable = unavailable_by_team[team_key]
         rated = []
         for p in roster:
             key = canonical_player_name(p.get("name"))
+            if key in unavailable:
+                continue
             if allowed_names is not None and key not in allowed_names:
                 continue
             n_starts = starts.get(key, 0)
