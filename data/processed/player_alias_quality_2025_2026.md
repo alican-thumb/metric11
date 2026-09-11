@@ -6,7 +6,7 @@
 - TFF Beşiktaş profili: 46
 - TFF scout profili: 40
 - Transfermarkt Beşiktaş oyuncusu: 0
-- Dış API derin oyuncusu: 115
+- Dış API derin oyuncusu: 0
 
 ## Karşılaştırmalar
 
@@ -14,8 +14,8 @@
   - Manuel eşleme: 4 (ağ teyidi bekleyen=4); kullanılabilir eşleme %69
 - besiktas_tff_vs_transfermarkt: 0/46 eşleşme (%0)
   - Ham tekil kaynak karşılaştırmasıdır; operasyonel manuel eşlemeler lig karşılaştırmasında izlenir.
-- scout_tff_vs_api_deep: 7/40 eşleşme (%18)
-- besiktas_tff_vs_api_deep: 4/46 eşleşme (%9)
+- scout_tff_vs_api_deep: 0/40 eşleşme (%0)
+- besiktas_tff_vs_api_deep: 0/46 eşleşme (%0)
 
 ## Düşük Skorlu Eşleşmeler
 
@@ -34,19 +34,8 @@
 ### besiktas_tff_vs_transfermarkt
 
 ### scout_tff_vs_api_deep
-- KACPER SZYMON KOZLOWSKI -> K. Kozłowski | skor=0.9 | canonical=KACPER SZYMON KOZLOWSKI
-- ALI SOWE -> A. Sowe | skor=1.0 | canonical=ALI SOWE
-- BARIŞ ALPER YILMAZ -> B. Yılmaz | skor=1.0 | canonical=BARIS ALPER YILMAZ
-- MARIUS MOUNDILMADJI -> M. Mouandilmadji | skor=1.0 | canonical=MARIUS MOUANDILMADJI
-- VICTOR JAMES OSIMHEN -> V. Osimhen | skor=1.0 | canonical=VICTOR OSIMHEN
-- YOUSSEF EN NESYRI -> Y. En-Nesyri | skor=1.0 | canonical=YOUSSEF EN NESYRI
-- YUNUS AKGÜN -> Y. Akgün | skor=1.0 | canonical=YUNUS AKGUN
 
 ### besiktas_tff_vs_api_deep
-- EMRE BİLGİN -> E. Bilgin | skor=0.9 | canonical=EMRE BILGIN
-- GÖKHAN SAZDAĞI -> G. Sazdağı | skor=0.9 | canonical=GOKHAN SAZDAGI
-- KARTAL KAYRA YILMAZ -> K. Yılmaz | skor=0.9 | canonical=KARTAL KAYRA YILMAZ
-- RAFAEL ALEXANDRE FERNANDES FERREIRA DA SILVA -> Rafa | skor=0.9 | canonical=RAFAEL ALEXANDRE FERNANDES FERREIRA DA SILVA
 
 ## Eşleşmeyen Sol Kaynak Oyuncuları
 
@@ -97,7 +86,9 @@
 ### scout_tff_vs_api_deep
 - ADRIAN DAWID BENEDYCZAK (KASIMPAŞA A.Ş.)
 - ALEXANDER GERARD  VAN DE STREEK (HESAP.COM ANTALYASPOR)
+- ALI SOWE (ÇAYKUR RİZESPOR A.Ş.)
 - ANDERSON SOUZA CONCEIÇAO (FENERBAHÇE A.Ş.)
+- BARIŞ ALPER YILMAZ (GALATASARAY A.Ş.)
 - BERTUĞ ÖZGÜR YILDIRIM (RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ)
 - BRUNO PETKOVIC (KOCAELİSPOR)
 - CARL JOHAN HOLSE JUSTESEN (SAMSUNSPOR A.Ş.)
@@ -113,8 +104,6 @@
 - GÜVEN YALÇIN (CORENDON ALANYASPOR)
 - JACKSON KYANVUBU MULEKA (TÜMOSAN KONYASPOR)
 - JUAN SANTOS DA SILVA (GÖZTEPE A.Ş.)
-- KEVIN OGHENETEGA TAMARAEBI BAKUMO ABRAHAM (BEŞİKTAŞ A.Ş.)
-- LASZLO BENES (ZECORNER KAYSERİSPOR)
 
 ### besiktas_tff_vs_api_deep
 - AHMET SAMİ BİRCAN (BEŞİKTAŞ A.Ş.)
@@ -128,6 +117,7 @@
 - DEVIS ESTIVEN  VASQUEZ LLACH (BEŞİKTAŞ A.Ş.)
 - DEVRİM ŞAHİN (BEŞİKTAŞ A.Ş.)
 - EL BILAL TOURE (BEŞİKTAŞ A.Ş.)
+- EMRE BİLGİN (BEŞİKTAŞ A.Ş.)
 - EMRECAN UZUNHAN (BEŞİKTAŞ A.Ş.)
 - EMİR YAŞAR (BEŞİKTAŞ A.Ş.)
 - EMİRHAN TOPÇU (BEŞİKTAŞ A.Ş.)
@@ -136,4 +126,3 @@
 - FEHMİ MERT GÜNOK (BEŞİKTAŞ A.Ş.)
 - FELIX OHIS UDUOKHAI (BEŞİKTAŞ A.Ş.)
 - GABRIEL ARMANDO DE ABREU (BEŞİKTAŞ A.Ş.)
-- HYEONGYU OH (BEŞİKTAŞ A.Ş.)

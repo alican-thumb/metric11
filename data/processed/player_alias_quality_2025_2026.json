@@ -7,7 +7,7 @@
     "tff_besiktas_players": 46,
     "tff_scout_players": 40,
     "transfermarkt_besiktas_players": 0,
-    "api_football_deep_players": 115
+    "api_football_deep_players": 0
   },
   "comparisons": {
     "league_tff_vs_transfermarkt": {
@@ -6369,67 +6369,10 @@
     },
     "scout_tff_vs_api_deep": {
       "left_count": 40,
-      "right_count": 115,
-      "matched": 7,
-      "match_rate": 0.175,
-      "matches": [
-        {
-          "left_name": "KACPER SZYMON KOZLOWSKI",
-          "right_name": "K. Kozłowski",
-          "left_team": "GAZİANTEP FUTBOL KULÜBÜ A.Ş.",
-          "right_team": "Gaziantep FK",
-          "score": 0.9,
-          "canonical": "KACPER SZYMON KOZLOWSKI"
-        },
-        {
-          "left_name": "ALI SOWE",
-          "right_name": "A. Sowe",
-          "left_team": "ÇAYKUR RİZESPOR A.Ş.",
-          "right_team": "Rizespor",
-          "score": 1.0,
-          "canonical": "ALI SOWE"
-        },
-        {
-          "left_name": "BARIŞ ALPER YILMAZ",
-          "right_name": "B. Yılmaz",
-          "left_team": "GALATASARAY A.Ş.",
-          "right_team": "Galatasaray",
-          "score": 1.0,
-          "canonical": "BARIS ALPER YILMAZ"
-        },
-        {
-          "left_name": "MARIUS MOUNDILMADJI",
-          "right_name": "M. Mouandilmadji",
-          "left_team": "SAMSUNSPOR A.Ş.",
-          "right_team": "Samsunspor",
-          "score": 1.0,
-          "canonical": "MARIUS MOUANDILMADJI"
-        },
-        {
-          "left_name": "VICTOR JAMES OSIMHEN",
-          "right_name": "V. Osimhen",
-          "left_team": "GALATASARAY A.Ş.",
-          "right_team": "Galatasaray",
-          "score": 1.0,
-          "canonical": "VICTOR OSIMHEN"
-        },
-        {
-          "left_name": "YOUSSEF EN NESYRI",
-          "right_name": "Y. En-Nesyri",
-          "left_team": "FENERBAHÇE A.Ş.",
-          "right_team": "Fenerbahçe",
-          "score": 1.0,
-          "canonical": "YOUSSEF EN NESYRI"
-        },
-        {
-          "left_name": "YUNUS AKGÜN",
-          "right_name": "Y. Akgün",
-          "left_team": "GALATASARAY A.Ş.",
-          "right_team": "Galatasaray",
-          "score": 1.0,
-          "canonical": "YUNUS AKGUN"
-        }
-      ],
+      "right_count": 0,
+      "matched": 0,
+      "match_rate": 0.0,
+      "matches": [],
       "unmatched_left": [
         {
           "name": "ADRIAN DAWID BENEDYCZAK",
@@ -6442,9 +6385,19 @@
           "id": "2552804"
         },
         {
+          "name": "ALI SOWE",
+          "team": "ÇAYKUR RİZESPOR A.Ş.",
+          "id": "2419602"
+        },
+        {
           "name": "ANDERSON SOUZA CONCEIÇAO",
           "team": "FENERBAHÇE A.Ş.",
           "id": "1927788"
+        },
+        {
+          "name": "BARIŞ ALPER YILMAZ",
+          "team": "GALATASARAY A.Ş.",
+          "id": "1462850"
         },
         {
           "name": "BERTUĞ ÖZGÜR YILDIRIM",
@@ -6522,6 +6475,11 @@
           "id": "2685880"
         },
         {
+          "name": "KACPER SZYMON KOZLOWSKI",
+          "team": "GAZİANTEP FUTBOL KULÜBÜ A.Ş.",
+          "id": "2685549"
+        },
+        {
           "name": "KEVIN OGHENETEGA TAMARAEBI BAKUMO ABRAHAM",
           "team": "BEŞİKTAŞ A.Ş.",
           "id": "2820578"
@@ -6540,6 +6498,11 @@
           "name": "MARCO ASENSIO WILLEMSEN",
           "team": "FENERBAHÇE A.Ş.",
           "id": "2823881"
+        },
+        {
+          "name": "MARIUS MOUNDILMADJI",
+          "team": "SAMSUNSPOR A.Ş.",
+          "id": "2551977"
         },
         {
           "name": "MAURO EMANUEL ICARDI",
@@ -6595,48 +6558,30 @@
           "name": "UMUT DİLAN BOZOK",
           "team": "İKAS EYÜPSPOR",
           "id": "1556340"
+        },
+        {
+          "name": "VICTOR JAMES OSIMHEN",
+          "team": "GALATASARAY A.Ş.",
+          "id": "2690888"
+        },
+        {
+          "name": "YOUSSEF EN NESYRI",
+          "team": "FENERBAHÇE A.Ş.",
+          "id": "2685585"
+        },
+        {
+          "name": "YUNUS AKGÜN",
+          "team": "GALATASARAY A.Ş.",
+          "id": "1442892"
         }
       ]
     },
     "besiktas_tff_vs_api_deep": {
       "left_count": 46,
-      "right_count": 115,
-      "matched": 4,
-      "match_rate": 0.087,
-      "matches": [
-        {
-          "left_name": "EMRE BİLGİN",
-          "right_name": "E. Bilgin",
-          "left_team": "BEŞİKTAŞ A.Ş.",
-          "right_team": "Beşiktaş",
-          "score": 0.9,
-          "canonical": "EMRE BILGIN"
-        },
-        {
-          "left_name": "GÖKHAN SAZDAĞI",
-          "right_name": "G. Sazdağı",
-          "left_team": "BEŞİKTAŞ A.Ş.",
-          "right_team": "Kayserispor",
-          "score": 0.9,
-          "canonical": "GOKHAN SAZDAGI"
-        },
-        {
-          "left_name": "KARTAL KAYRA YILMAZ",
-          "right_name": "K. Yılmaz",
-          "left_team": "BEŞİKTAŞ A.Ş.",
-          "right_team": "Kayserispor",
-          "score": 0.9,
-          "canonical": "KARTAL KAYRA YILMAZ"
-        },
-        {
-          "left_name": "RAFAEL ALEXANDRE FERNANDES FERREIRA DA SILVA",
-          "right_name": "Rafa",
-          "left_team": "BEŞİKTAŞ A.Ş.",
-          "right_team": "Beşiktaş",
-          "score": 0.9,
-          "canonical": "RAFAEL ALEXANDRE FERNANDES FERREIRA DA SILVA"
-        }
-      ],
+      "right_count": 0,
+      "matched": 0,
+      "match_rate": 0.0,
+      "matches": [],
       "unmatched_left": [
         {
           "name": "AHMET SAMİ BİRCAN",
@@ -6694,6 +6639,11 @@
           "id": "2822113"
         },
         {
+          "name": "EMRE BİLGİN",
+          "team": "BEŞİKTAŞ A.Ş.",
+          "id": "1638358"
+        },
+        {
           "name": "EMRECAN UZUNHAN",
           "team": "BEŞİKTAŞ A.Ş.",
           "id": "1614079"
@@ -6734,6 +6684,11 @@
           "id": "2685268"
         },
         {
+          "name": "GÖKHAN SAZDAĞI",
+          "team": "BEŞİKTAŞ A.Ş.",
+          "id": "959313"
+        },
+        {
           "name": "HYEONGYU OH",
           "team": "BEŞİKTAŞ A.Ş.",
           "id": "2885470"
@@ -6757,6 +6712,11 @@
           "name": "JONAS SVENSSON",
           "team": "BEŞİKTAŞ A.Ş.",
           "id": "2294041"
+        },
+        {
+          "name": "KARTAL KAYRA YILMAZ",
+          "team": "BEŞİKTAŞ A.Ş.",
+          "id": "1444464"
         },
         {
           "name": "KENY ALEXANDER ARROYO ALVARADO",
@@ -6802,6 +6762,11 @@
           "name": "ORKUN KÖKÇÜ",
           "team": "BEŞİKTAŞ A.Ş.",
           "id": "2217597"
+        },
+        {
+          "name": "RAFAEL ALEXANDRE FERNANDES FERREIRA DA SILVA",
+          "team": "BEŞİKTAŞ A.Ş.",
+          "id": "2685262"
         },
         {
           "name": "RIDVAN YILMAZ",

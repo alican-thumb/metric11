@@ -7,11 +7,11 @@
 ## Kanat / çizgi kırıcı
 _Kanat üretimi ve açık alan tehdidi için Süper Lig aday havuzu._
 
-- KACPER SZYMON KOZLOWSKI (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) — fit=112.62, yaş=22, gol=6, ilk11=30
+- KACPER SZYMON KOZLOWSKI (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) — fit=107.89, yaş=22, gol=6, ilk11=30
 - ERNEST MUÇİ (TRABZONSPOR A.Ş.) — fit=104.74, yaş=25, gol=11, ilk11=22
-- YUNUS AKGÜN (GALATASARAY A.Ş.) — fit=102.94, yaş=25, gol=7, ilk11=23
-- BARIŞ ALPER YILMAZ (GALATASARAY A.Ş.) — fit=99.46, yaş=26, gol=8, ilk11=27
+- YUNUS AKGÜN (GALATASARAY A.Ş.) — fit=96.93, yaş=25, gol=7, ilk11=23
 - DORGELES NENE (FENERBAHÇE A.Ş.) — fit=95.84, yaş=23, gol=10, ilk11=16
+- BARIŞ ALPER YILMAZ (GALATASARAY A.Ş.) — fit=92.79, yaş=26, gol=8, ilk11=27
 - KAZEEM ADEREMI J. OLAIGBE (TRABZONSPOR A.Ş.) — fit=92.39, yaş=23, gol=0, ilk11=26
 - GÖKTAN GÜRPÜZ (GENÇLERBİRLİĞİ) — fit=91.14, yaş=23, gol=0, ilk11=25
 - BARIŞ JAKOB KALAYCI (MISIRLI.COM.TR FATİH KARAGÜMRÜK) — fit=83.38, yaş=20, gol=1, ilk11=15
@@ -23,15 +23,15 @@ _Dar maçlarda gol olasılığını artıracak direkt skor profili._
 - EBERE PAUL ONUACHU (TRABZONSPOR A.Ş.) — fit=154.37, yaş=31, gol=22, ilk11=28
 - MOHAMED LAMINE BAYO (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) — fit=144.77, yaş=27, gol=15, ilk11=28
 - FELIPE AUGUSTO DA SILVA (TRABZONSPOR A.Ş.) — fit=137.03, yaş=22, gol=13, ilk11=26
-- VICTOR JAMES OSIMHEN (GALATASARAY A.Ş.) — fit=124.14, yaş=27, gol=15, ilk11=19
+- VICTOR JAMES OSIMHEN (GALATASARAY A.Ş.) — fit=114.03, yaş=27, gol=15, ilk11=19
 - ADRIAN DAWID BENEDYCZAK (KASIMPAŞA A.Ş.) — fit=108.03, yaş=25, gol=10, ilk11=14
 - MAURO EMANUEL ICARDI (GALATASARAY A.Ş.) — fit=107.14, yaş=33, gol=14, ilk11=12
-- MARIUS MOUNDILMADJI (SAMSUNSPOR A.Ş.) — fit=103.88, yaş=28, gol=10, ilk11=22
+- ANDERSON SOUZA CONCEIÇAO (FENERBAHÇE A.Ş.) — fit=103.6, yaş=32, gol=19, ilk11=24
 
 ## 8 numara / fizik motoru
 _Pres, geçiş ve ikinci top sürekliliğini taşıyacak merkez orta saha._
 
-- KACPER SZYMON KOZLOWSKI (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) — fit=114.08, yaş=22, gol=6, ilk11=30
+- KACPER SZYMON KOZLOWSKI (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) — fit=112.29, yaş=22, gol=6, ilk11=30
 - ANTHONY JUNIOR DENNIS (GÖZTEPE A.Ş.) — fit=110.35, yaş=21, gol=3, ilk11=29
 - ORKUN KÖKÇÜ (BEŞİKTAŞ A.Ş.) — fit=106.03, yaş=25, gol=8, ilk11=29
 - GÖKTAN GÜRPÜZ (GENÇLERBİRLİĞİ) — fit=101.84, yaş=23, gol=0, ilk11=25
@@ -68,7 +68,7 @@ _Kanat savunması ve bindirme sürekliliği için ekonomik bek profili._
 _Duran top, hava topu ve temas yoğunluğu için savunma profili._
 
 - ÜMİT AKDAĞ (CORENDON ALANYASPOR) — fit=88.75, yaş=22, gol=1, ilk11=30
-- NUNO MIGUEL REIS LIMA (CORENDON ALANYASPOR) — fit=78.7, yaş=25, gol=1, ilk11=32
+- NUNO MIGUEL REIS LIMA (CORENDON ALANYASPOR) — fit=77.18, yaş=25, gol=1, ilk11=32
 - MALCOM NARCISSE BOKELE MPUTU (GÖZTEPE A.Ş.) — fit=73.1, yaş=26, gol=3, ilk11=30
 - HRVOJE SMOLCIC (KOCAELİSPOR) — fit=72.37, yaş=25, gol=1, ilk11=26
 - ZAN ZUZEK (GENÇLERBİRLİĞİ) — fit=71.95, yaş=29, gol=2, ilk11=31
