@@ -40,6 +40,23 @@ DRAW_PRED_MIN_PROB = 0.275  # draw olasılığı bu eşiğin altındaysa beraber
 DRAW_PRED_MAX_GAP = 0.15    # en iyi yönsel tahmin ile draw arasındaki maksimum fark
 DRAW_BOOST_SCALE = 0.04     # dengeli maçlarda draw olasılığına uygulanacak boost katsayısı
 
+# run_backtest'in min_team_history varsayılanıyla KASITLI OLARAK aynı: backtest zaten
+# yalnızca her iki takımın da >=5 maçlık geçmişi varken predict_match'i çağırıyor, yani bu
+# eşiğin üstünde _shrink_to_league_avg no-op'tur (mevcut/kalibre backtest davranışı birebir
+# korunur). Eşiğin altı yalnızca ileriye dönük tahminlerde (season_fixture_predictions,
+# min-history gate'i yok) ve erken sezon/yeni takım durumlarında devreye girer.
+MIN_HISTORY_FOR_FULL_TRUST = 5
+
+
+def _shrink_to_league_avg(value: float, count: int, league_avg: float) -> float:
+    """count < MIN_HISTORY_FOR_FULL_TRUST iken value'yu kademeli olarak league_avg'a
+    kaydırır (count=0 → tam league_avg, count>=eşik → value birebir). Amaç: 1-4 maçlık
+    ince örneklemi (ör. "ilk maçında 3-0 kazandı") tam bir sezonluk form gibi okumamak."""
+    if count >= MIN_HISTORY_FOR_FULL_TRUST:
+        return value
+    weight = count / MIN_HISTORY_FOR_FULL_TRUST
+    return value * weight + league_avg * (1 - weight)
+
 
 def draw_calibrated_prediction(home_p: float, draw_p: float, away_p: float, strength_edge: float = 0.0) -> str:
     """
@@ -212,18 +229,31 @@ def predict_match(
     # yol açar (iki yeni takım karşılaşınca ikisi de ~0.15-0.18 beklenen gole düşüyor, Poisson
     # bunu ~%74 beraberlik olarak okuyor — gerçekte olmayan bir sinyal). Geçmiş YOKSA lig
     # ortalamasını (bilinmeyen = ortalama takım) varsayılan al; geçmiş VARSA davranış aynı.
-    home_gf = avg(item["goals_for"] for item in home_history) if home_history else LEAGUE_AVG_GOALS_PER_TEAM
-    home_ga = avg(item["goals_against"] for item in home_history) if home_history else LEAGUE_AVG_GOALS_PER_TEAM
-    away_gf = avg(item["goals_for"] for item in away_history) if away_history else LEAGUE_AVG_GOALS_PER_TEAM
-    away_ga = avg(item["goals_against"] for item in away_history) if away_history else LEAGUE_AVG_GOALS_PER_TEAM
-    home_ppg = avg(item["points"] for item in home_history) if home_history else LEAGUE_AVG_PPG
-    away_ppg = avg(item["points"] for item in away_history) if away_history else LEAGUE_AVG_PPG
-    home_gd = avg(item["goals_for"] - item["goals_against"] for item in home_history)
-    away_gd = avg(item["goals_for"] - item["goals_against"] for item in away_history)
-    home_clean = avg(1 if item["goals_against"] == 0 else 0 for item in home_history)
-    away_clean = avg(1 if item["goals_against"] == 0 else 0 for item in away_history)
-    home_blank = avg(1 if item["goals_for"] == 0 else 0 for item in home_history)
-    away_blank = avg(1 if item["goals_for"] == 0 else 0 for item in away_history)
+    #
+    # 2026-09-11 bulgusu: bu ikili anahtar (0 maç → tam lig ortalaması, 1+ maç → HAM örnekleme
+    # tam güven) 1-4 maçlık ince örneklemi tek bir maç kadar güvenilir sayıyordu. Örnek:
+    # 2026-27 hafta 2'de Kocaelispor-Amed maçında Amed hafta 1'de Erzurumspor'u 3-0 yenmişti
+    # (n=1 → "gf=3,ga=0"), Kocaelispor ise Başakşehir'e 0-2 kaybetmişti (n=1 → "gf=0,ga=2") —
+    # model bu TEK maçlık örneklemden Amed'e deplasmanda %78.1 kazanma şansı verdi, gerçekte
+    # Kocaelispor evinde 2-0 kazandı. `_shrink_to_league_avg` artık `MIN_HISTORY_FOR_FULL_TRUST`
+    # (run_backtest'in `min_team_history` varsayılanıyla AYNI, kasıtlı) maçın altındaki
+    # örneklemi kademeli olarak lig ortalamasına kaydırıyor; eşiğin üstünde (>=5, backtest'in
+    # HER ZAMAN çalıştığı aralık) davranış birebir eskisiyle aynı — yani 258 maçlık kalibre
+    # backtest bu değişiklikten etkilenmiyor, yalnızca ileriye dönük tahminlerde (ve
+    # min_team_history altı, backtest'in zaten atladığı erken sezon/yeni takım durumlarında)
+    # devreye giriyor.
+    home_gf = _shrink_to_league_avg(avg(item["goals_for"] for item in home_history), len(home_history), LEAGUE_AVG_GOALS_PER_TEAM)
+    home_ga = _shrink_to_league_avg(avg(item["goals_against"] for item in home_history), len(home_history), LEAGUE_AVG_GOALS_PER_TEAM)
+    away_gf = _shrink_to_league_avg(avg(item["goals_for"] for item in away_history), len(away_history), LEAGUE_AVG_GOALS_PER_TEAM)
+    away_ga = _shrink_to_league_avg(avg(item["goals_against"] for item in away_history), len(away_history), LEAGUE_AVG_GOALS_PER_TEAM)
+    home_ppg = _shrink_to_league_avg(avg(item["points"] for item in home_history), len(home_history), LEAGUE_AVG_PPG)
+    away_ppg = _shrink_to_league_avg(avg(item["points"] for item in away_history), len(away_history), LEAGUE_AVG_PPG)
+    home_gd = _shrink_to_league_avg(avg(item["goals_for"] - item["goals_against"] for item in home_history), len(home_history), 0.0)
+    away_gd = _shrink_to_league_avg(avg(item["goals_for"] - item["goals_against"] for item in away_history), len(away_history), 0.0)
+    home_clean = _shrink_to_league_avg(avg(1 if item["goals_against"] == 0 else 0 for item in home_history), len(home_history), 0.25)
+    away_clean = _shrink_to_league_avg(avg(1 if item["goals_against"] == 0 else 0 for item in away_history), len(away_history), 0.25)
+    home_blank = _shrink_to_league_avg(avg(1 if item["goals_for"] == 0 else 0 for item in home_history), len(home_history), 0.25)
+    away_blank = _shrink_to_league_avg(avg(1 if item["goals_for"] == 0 else 0 for item in away_history), len(away_history), 0.25)
 
     # Sofascore xG: 60/40 blend ile gol ortalamasını düzelt (en az 3 xG kayıtlı maç gerekli)
     home_xg_vals = [item["xg_for"] for item in home_history if item.get("xg_for") is not None]

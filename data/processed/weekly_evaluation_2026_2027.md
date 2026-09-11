@@ -7,16 +7,16 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 - Değerlendirilen maç: **36**
 - İsabet: **14/36** (%39)
 - Beraberlik yakalama: **1/7** (%14)
-- Yüksek güvenli maç isabeti: **6/13** (%46)
+- Yüksek güvenli maç isabeti: **6/11** (%55)
 
 ## Hafta 4 — 2/9 isabet (%22)
 
 | Maç | Skor | Tahmin | Sonuç | Güven |
 | --- | --- | --- | --- | --- |
 | İSTANBUL BAŞAKŞEHİR FK - GALATASARAY A.Ş. | 2 - 3 | Deplasman | ✅ | LOW |
-| ERZURUMSPOR FK - TÜMOSAN KONYASPOR | 1 - 0 | Deplasman | ❌ | HIGH |
+| ERZURUMSPOR FK - TÜMOSAN KONYASPOR | 1 - 0 | Deplasman | ❌ | LOW |
 | FENERBAHÇE A.Ş. - BEŞİKTAŞ A.Ş. | 1 - 2 | Ev | ❌ | MEDIUM |
-| KASIMPAŞA A.Ş. - AMED SPORTİF FAALİYETLER | 2 - 2 | Deplasman | ❌ | MEDIUM |
+| KASIMPAŞA A.Ş. - AMED SPORTİF FAALİYETLER | 2 - 2 | Deplasman | ❌ | LOW |
 | ARCA ÇORUM FK - EYÜPSPOR | 3 - 0 | Deplasman | ❌ | MEDIUM |
 | TRABZONSPOR A.Ş. - GENÇLERBİRLİĞİ | 5 - 0 | Deplasman | ❌ | MEDIUM |
 | KOCAELİSPOR - SAMSUNSPOR A.Ş. | 1 - 0 | Ev | ✅ | LOW |
@@ -49,7 +49,7 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 | EYÜPSPOR - GAZİANTEP FUTBOL KULÜBÜ A.Ş. | 0 - 1 | Ev | ❌ | MEDIUM |
 | CORENDON ALANYASPOR - BEŞİKTAŞ A.Ş. | 1 - 0 | Deplasman | ❌ | MEDIUM |
 | GÖZTEPE A.Ş. - GENÇLERBİRLİĞİ | 0 - 1 | Ev | ❌ | MEDIUM |
-| KOCAELİSPOR - AMED SPORTİF FAALİYETLER | 2 - 0 | Deplasman | ❌ | HIGH |
+| KOCAELİSPOR - AMED SPORTİF FAALİYETLER | 2 - 0 | Deplasman | ❌ | MEDIUM |
 
 ## Hafta 1 — 4/9 isabet (%44)
 
