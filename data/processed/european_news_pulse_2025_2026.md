@@ -1,11 +1,13 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-09-11T21:01:15.751554+00:00
-Toplam ilgili haber: 58
+Üretim zamanı: 2026-09-12T00:18:23.852452+00:00
+Toplam ilgili haber: 59
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [İsmail Kartal böyle geri döndü...İşte perde arkasında yaşananlar](https://www.fotomac.com.tr/fenerbahce/2026/09/11/ismail-kartal-boyle-geri-donduiste-perde-arkasinda-yasananlar) — Fotomaç · 2026-09-12T00:39:49+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Beşiktaş'ın rakibi Marsilya ligde kaybetti](https://www.haberturk.com/spor/besiktas-in-rakibi-marsilya-deplasmanda-rennes-e-maglup-oldu-3911928) — Haberturk Spor · 2026-09-11T20:52:55+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Fenerbahçe, teknik direktör İsmail Kartal'ın görevinin başında olduğunu açıkladı](https://www.aa.com.tr/tr/spor/fenerbahce-teknik-direktor-ismail-kartalin-gorevinin-basinda-oldugunu-acikladi/4054690) — Anadolu Ajansı Spor · 2026-09-11T20:41:59+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Archie Brown, Şampiyonlar Ligi'nde haftanın 11'ine seçildi](https://www.aa.com.tr/tr/spor/archie-brown-sampiyonlar-liginde-haftanin-11ine-secildi/4054577) — Anadolu Ajansı Spor · 2026-09-11T18:28:33+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [GALATASARAY - BARCELONA MAÇI NE ZAMAN? UCL Galatasaray - Barcelona Maçı Hangi Kanalda, Saat Kaçta? Şampiyonlar Ligi Dev Randevusu İçin Geri Sayım](https://www.cnnturk.com/spor/futbol/galatasaray-barcelona-maci-ne-zaman-ucl-galatasaray-barcelona-maci-hangi-kanalda-saat-kacta-sampiyonlar-ligi-dev-randevusu-3464892) — CNN Türk Spor · 2026-09-11T17:42:42+00:00 · turnuva=CL · kulüp=Galatasaray
@@ -32,7 +34,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Kadıköy'de 18 yıl sonra gelen gol!](https://www.fotomac.com.tr/fenerbahce/2026/09/10/roma-fenerbahce-karsisinda-bu-pozisyonla-one-gecti) — Fotomaç · 2026-09-11T00:50:24+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe'de Bartuğ Elmaz maça devam edemedi!](https://www.fotomac.com.tr/fenerbahce/2026/09/10/fenerbahcede-bartug-elmaz-maca-devam-edemedi) — Fotomaç · 2026-09-11T00:50:22+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Manchester United sahasında Sabah karşısında farklı kazandı!](https://www.fotomac.com.tr/sampiyonlarligi/2026/09/10/manchester-united-sahasinda-sabah-karsisinda-farkli-kazandi) — Fotomaç · 2026-09-11T00:49:59+03:00 · turnuva=CL · kulüp=—
-- [Bayern Münih evinde Bodo/Glimt'i farklı yendi!](https://www.fotomac.com.tr/sampiyonlarligi/2026/09/10/bayern-munih-evinde-bodoglimti-farkli-yendi) — Fotomaç · 2026-09-11T00:49:54+03:00 · turnuva=CL · kulüp=—
 - [Gian Piero Gasperini: "1-1'lik bir sonuç elde ettik. İkinci yarıda çok daha zor bir maç oldu"](https://www.fotomac.com.tr/sampiyonlarligi/2026/09/10/gian-piero-gasperini-1-1lik-bir-sonuc-elde-ettik-ikinci-yarida-cok-daha-zor-bir-mac-oldu) — Fotomaç · 2026-09-11T00:49:51+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Archie Brown: Atmış olduğum golden ötürü çok mutluyum!](https://www.fotomac.com.tr/fenerbahce/2026/09/10/archie-brown-atmis-oldugum-golden-oturu-cok-mutluyum) — Fotomaç · 2026-09-11T00:49:45+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [UEFA kararı sonrası Fenerbahçe'de flaş gelişme! Sözleşmesi değişti](https://www.fotomac.com.tr/fenerbahce/2026/09/09/uefa-karari-sonrasi-fenerbahcede-flas-gelisme-sozlesmesi-degisti) — Fotomaç · 2026-09-11T00:49:43+03:00 · turnuva=— · kulüp=Fenerbahçe
@@ -45,4 +46,3 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Fenerbahçe 1-1 Roma Maç Özeti | Temsilcimiz, 1 puanla başladı](https://www.cnnturk.com/spor/futbol/live-fenerbahce-1-1-roma-mac-ozeti-temsilcimiz-1-puanla-basladi-3464951) — CNN Türk Spor · 2026-09-10T21:37:01+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Şampiyonlar Ligi'nde ilk haftanın lideri PSG!](https://www.hurriyet.com.tr/sporarena/sampiyonlar-liginde-ilk-haftanin-lideri-psg-43302993) — Hürriyet Spor · 2026-09-10T21:22:54+00:00 · turnuva=CL · kulüp=—
 - [Trabzonspor'a Uğurcan Çakır piyangosu!](https://www.fotomac.com.tr/trabzonspor/2026/09/11/trabzonspora-dev-piyango) — Fotomaç · 2026-09-10T21:17:56+03:00 · turnuva=CL · kulüp=Galatasaray, Trabzonspor
-- [Bayern Münih'ten 5 gollü galibiyet!](https://www.haberturk.com/spor/sampiyonlar-ligi-nde-ilk-hafta-tamamlandi-bayern-munih-ten-5-gollu-galibiyet-3911688) — Haberturk Spor · 2026-09-10T21:10:32+00:00 · turnuva=CL · kulüp=Fenerbahçe

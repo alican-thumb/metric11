@@ -1,18 +1,18 @@
 # Erken Haber Kaynak Performansı
 
-- Transfer sinyali: 39
+- Transfer sinyali: 38
 - Resmi olaya dönüşen transfer: 12
 - Yayın zamanı bulunan resmi teyit: 5/12
 - İlk görülme zamanı bulunan resmi teyit: 12/12
-- Ölçülen kaynak: 179 / gözlenen kaynak: 301
+- Ölçülen kaynak: 179 / gözlenen kaynak: 302
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 3
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 4065
+- Defterde korunan ilk iddia gözlemi: 4067
 
 ## Kanal Kapsamı
 
-- Google News: 242 haber, 30/30 başarılı sorgu.
+- Google News: 241 haber, 30/30 başarılı sorgu.
 - Telegram: 6 mesaj, 8/8 erişilebilir kanal.
 - X: durum=MISSING_CREDENTIALS, gönderi=0, yapılandırılmış hesap=45.
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 4062 | 1310 | 5 | — | 0.3 | %99.5 | 0.4 | FIRST_SEEN_BOUND |
+| Google News / medya | 4064 | 1310 | 5 | — | 0.3 | %99.6 | 0.4 | FIRST_SEEN_BOUND |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -55,7 +55,7 @@
 | Fotomaç | MEDIA | 440 | 92 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Sabah | MEDIA | 288 | 63 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Hürriyet | MEDIA | 271 | 39 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
-| Takvim | MEDIA | 253 | 28 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Takvim | MEDIA | 254 | 28 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Aksam Spor | MEDIA | 189 | 15 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Haberturk Spor | MEDIA | 155 | 13 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | NTVSpor | MEDIA | 105 | 24 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
@@ -306,6 +306,7 @@
 | Yeni Ankara | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Yeni Çağrı Gazetesi | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Yenigün Gazetesi | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
+| ahaber.com.tr | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | bjk.com.tr | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | bursasaati.com.tr | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | cankiripostasi.com | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
