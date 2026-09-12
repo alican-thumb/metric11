@@ -408,7 +408,12 @@ def _kadro_kur_panel_html() -> str:
     pool = _load(PROCESSED_DIR / "fantasy_player_pool_2026_2027.json")
     players = pool.get("players", []) if isinstance(pool, dict) else []
     player_count = pool.get("player_count", len(players)) if isinstance(pool, dict) else len(players)
-    top3 = sorted(players, key=lambda p: p.get("price", 0), reverse=True)[:3]
+    # market_value_eur ile sırala, price DEĞİL — fiyat artık 97. persentilin üzerini
+    # MAX_PRICE'a kırpıyor (bkz. build_fantasy_player_pool.py), yani birçok yıldız
+    # aynı fiyatta eşitleniyor; gerçek "en değerli" sırası yalnızca piyasa değerinden
+    # okunabilir (2026-09-12 bulgusu: bu olmadan Osimhen yerine rastgele bir 15.0'lık
+    # oyuncu üstte görünüyordu).
+    top3 = sorted(players, key=lambda p: p.get("market_value_eur", 0), reverse=True)[:3]
     top3_html = "".join(
         f'<div style="display:flex;justify-content:space-between;padding:7px 0;border-top:1px solid #1e3228">'
         f'<span style="color:#e8eee9">{escape(p.get("name", ""))} <span style="color:#8fa89a;font-size:11px">({escape(p.get("team", ""))})</span></span>'
