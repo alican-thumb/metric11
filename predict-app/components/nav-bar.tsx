@@ -5,27 +5,48 @@ import { usePathname } from "next/navigation";
 import { Show, SignInButton, SignUpButton, UserButton } from "@clerk/nextjs";
 
 const LINKS = [
-  { href: "/", label: "Bu Hafta", authOnly: false },
-  { href: "/predictions", label: "Tahminlerim", authOnly: true },
-  { href: "/gruplar", label: "Gruplar", authOnly: true },
-  { href: "/profil", label: "Profil", authOnly: true },
-  { href: "/topluluk", label: "Topluluk Tahminleri", authOnly: false },
-  { href: "/leaderboard", label: "Lider Tablosu", authOnly: false },
+  { href: "/", label: "Bu Hafta", authOnly: false, highlight: false },
+  { href: "/predictions", label: "Tahminlerim", authOnly: true, highlight: false },
+  { href: "/kadro", label: "Kadro Kur", authOnly: false, highlight: true },
+  { href: "/gruplar", label: "Gruplar", authOnly: true, highlight: false },
+  { href: "/profil", label: "Profil", authOnly: true, highlight: false },
+  { href: "/topluluk", label: "Topluluk Tahminleri", authOnly: false, highlight: false },
+  { href: "/leaderboard", label: "Lider Tablosu", authOnly: false, highlight: false },
 ] as const;
 
-function NavLink({ href, label, active }: { href: string; label: string; active: boolean }) {
+function NavLink({
+  href,
+  label,
+  active,
+  highlight,
+}: {
+  href: string;
+  label: string;
+  active: boolean;
+  highlight?: boolean;
+}) {
   return (
     <Link
       href={href}
-      className={`shrink-0 border-b-2 pb-0.5 transition-colors ${
+      className={`relative shrink-0 border-b-2 pb-0.5 transition-colors ${
         active
           ? "border-lime-300 text-white"
           : "border-transparent text-slate-400 hover:text-white"
-      }`}
+      } ${highlight && !active ? "font-semibold text-lime-300" : ""}`}
     >
       {label}
+      {highlight && (
+        <span className="absolute -right-2 -top-1.5 flex h-1.5 w-1.5">
+          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-lime-300 opacity-75" />
+          <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-lime-300" />
+        </span>
+      )}
     </Link>
   );
+}
+
+function isActivePath(pathname: string, href: string): boolean {
+  return href === "/" ? pathname === "/" : pathname === href || pathname.startsWith(`${href}/`);
 }
 
 export function NavBar() {
@@ -71,10 +92,21 @@ export function NavBar() {
           {LINKS.map((link) =>
             link.authOnly ? (
               <Show key={link.href} when="signed-in">
-                <NavLink href={link.href} label={link.label} active={pathname === link.href} />
+                <NavLink
+                  href={link.href}
+                  label={link.label}
+                  active={isActivePath(pathname, link.href)}
+                  highlight={link.highlight}
+                />
               </Show>
             ) : (
-              <NavLink key={link.href} href={link.href} label={link.label} active={pathname === link.href} />
+              <NavLink
+                key={link.href}
+                href={link.href}
+                label={link.label}
+                active={isActivePath(pathname, link.href)}
+                highlight={link.highlight}
+              />
             )
           )}
         </nav>

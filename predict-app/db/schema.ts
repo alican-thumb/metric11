@@ -1,4 +1,4 @@
-import { pgTable, serial, text, integer, timestamp, uniqueIndex } from "drizzle-orm/pg-core";
+import { pgTable, serial, text, integer, timestamp, uniqueIndex, boolean } from "drizzle-orm/pg-core";
 
 export const users = pgTable("users", {
   id: serial("id").primaryKey(),
@@ -57,3 +57,62 @@ export const groupMembers = pgTable("group_members", {
 }, (table) => ({
   groupUserIdx: uniqueIndex("group_members_group_user_idx").on(table.groupId, table.userId),
 }));
+
+// --- Kadro Kur (Fantasy Manager) ---
+// Oyuncu kimliği her yerde `transfermarkt_id` (text) — kaynak metric11.com'daki
+// fantasy_player_pool_2026_2027.json'dan gelir, DB'de ayrı bir players tablosu YOK
+// (metric11-data.ts'deki fixture verisiyle aynı desen: canlı JSON tek gerçek kaynak).
+
+export const fantasySquads = pgTable("fantasy_squads", {
+  id: serial("id").primaryKey(),
+  userId: integer("user_id").notNull().references(() => users.id),
+  createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+  updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
+  // Bu hafta kaç ücretsiz transfer kaldı (haftada 1 ile sıfırlanır, bkz. lib/fantasy-transfers.ts);
+  // fazlası -4 puan cezası.
+  freeTransfers: integer("free_transfers").notNull().default(1),
+  // Ücretsiz transfer sayacının hangi haftaya ait olduğu — yeni hafta algılandığında sıfırlanır.
+  transfersWeek: integer("transfers_week"),
+}, (table) => ({
+  userIdIdx: uniqueIndex("fantasy_squads_user_id_idx").on(table.userId),
+}));
+
+export const fantasySquadPlayers = pgTable("fantasy_squad_players", {
+  id: serial("id").primaryKey(),
+  squadId: integer("squad_id").notNull().references(() => fantasySquads.id),
+  transfermarktId: text("transfermarkt_id").notNull(),
+  addedAt: timestamp("added_at", { withTimezone: true }).notNull().defaultNow(),
+}, (table) => ({
+  squadPlayerIdx: uniqueIndex("fantasy_squad_players_squad_player_idx").on(table.squadId, table.transfermarktId),
+}));
+
+// Haftalık ilk 11 + kaptan seçimi — kullanıcı kaydetmezse bir önceki haftanın seçimi
+// UI'da ön dolu gösterilir (bkz. app/kadro/hafta), ama puanlama yalnızca bu tabloda o
+// hafta için GERÇEKTEN kaydedilmiş bir satır varsa yapılır.
+export const fantasyGameweekLineups = pgTable("fantasy_gameweek_lineups", {
+  id: serial("id").primaryKey(),
+  squadId: integer("squad_id").notNull().references(() => fantasySquads.id),
+  week: integer("week").notNull(),
+  transfermarktId: text("transfermarkt_id").notNull(),
+  isStarting: boolean("is_starting").notNull().default(false),
+  isCaptain: boolean("is_captain").notNull().default(false),
+  isViceCaptain: boolean("is_vice_captain").notNull().default(false),
+  // NULL = maçı henüz oynanmadı/puanlanmadı (bkz. lib/sync-fantasy-results.ts); kaptan
+  // çarpanı burada DEĞİL, toplama/leaderboard sorgusunda uygulanır (scoring.ts ile aynı
+  // ayrıştırma ilkesi — ham oyuncu puanı hiç bulanıklaşmasın).
+  points: integer("points"),
+}, (table) => ({
+  lineupIdx: uniqueIndex("fantasy_gameweek_lineups_idx").on(table.squadId, table.week, table.transfermarktId),
+}));
+
+// Transfer cezası denetimi/şeffaflığı için log — free transfer sayacı fantasySquads'ta
+// tutulur, bu tablo yalnızca "hangi hafta ne oldu"yu gösterebilmek içindir.
+export const fantasyTransferLog = pgTable("fantasy_transfer_log", {
+  id: serial("id").primaryKey(),
+  squadId: integer("squad_id").notNull().references(() => fantasySquads.id),
+  week: integer("week").notNull(),
+  playerOutId: text("player_out_id").notNull(),
+  playerInId: text("player_in_id").notNull(),
+  penalized: boolean("penalized").notNull().default(false),
+  createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+});

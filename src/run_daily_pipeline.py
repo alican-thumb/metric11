@@ -25,6 +25,10 @@ DEFAULT_COMMANDS = [
     ["python", "-m", "src.build_scout_quality_report"],
     ["python", "-m", "src.build_transfermarkt_match_review_queue"],
     ["python", "-m", "src.build_alias_quality_report"],
+    # Kadro Kur (fantasy manager) oyuncu havuzu + haftalık puanlar — sırasıyla önce havuz
+    # (pozisyon/fiyat), sonra puanlama (havuzdaki pozisyonu okuyor).
+    ["python", "-m", "src.build_fantasy_player_pool"],
+    ["python", "-m", "src.build_fantasy_gameweek_scores"],
     ["python", "-m", "src.build_player_profile_enrichment_queue"],
     ["python", "-m", "src.model_league_predictions"],
     ["python", "-m", "src.build_league_market_value_audit"],
