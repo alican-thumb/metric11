@@ -10,9 +10,17 @@ değişebilir, oyuncunun uygulamadaki kimliğini etkilememesi için ayrı tutulu
 `canonical_player_name` (normalize + `data/manual/player_aliases.json`) ile yapılır;
 takım adı sadece aynı isimli birden fazla adayda çakışma çözücü olarak kullanılır.
 
-Fiyat: piyasa değerinin karekök ölçeklemesiyle 4.0-14.5 (fantezi bütçe birimi) aralığına
-sıkıştırılır — en pahalı yıldızla en ucuz yedek arasındaki farkı gerçekçi ama bütçeyi
-(100.0) imkansız kılmayacak kadar yumuşatır.
+Fiyat: piyasa değerinin karekök ölçeklemesiyle 4.0-15.0 (fantezi bütçe birimi) aralığına
+sıkıştırılır. KRİTİK (2026-09-12 kullanıcı bulgusu): ölçekleme ligin TEK EN YÜKSEK
+piyasa değerine (bu sezon Osimhen ~€75M — yaz penceresindeki gerçek ama uç bir transfer
+ücreti) göre normalize edilirse, geri kalan 528 oyuncunun neredeyse tamamı bu tek uç
+değere oranlandığı için 4.0-5.5 bandına sıkışıyordu (529 oyuncunun %69'u yalnızca 4
+fiyat noktasında toplanıyordu — ölçüm: median değer €1.2M, 97. persentil €20M, max
+€75M). Bunun yerine 97. persentili "tavan" alıp onun ÜZERİNDEKİLERİ tavana kırpıyoruz
+(clamp) — tek bir aşırı transfer artık tüm ölçeği ezmiyor, ~50 benzersiz fiyat noktasına
+yayılıyor. En ucuz yasal kadro (60.0) ile en pahalı yasal kadro (~194.0) arasında 100.0
+bütçe gerçekçi bir gerilim yaratıyor — tam yıldız kadrosu imkansız (gerçek FPL'de de
+öyle), ama 1-2 yıldız + değerli oyunculardan oluşan bir kadro rahatça kurulabiliyor.
 """
 from __future__ import annotations
 
@@ -30,7 +38,8 @@ OUTPUT_JSON = PROCESSED_DIR / "fantasy_player_pool_2026_2027.json"
 OUTPUT_MD = PROCESSED_DIR / "fantasy_player_pool_2026_2027.md"
 
 MIN_PRICE = 4.0
-MAX_PRICE = 14.5
+MAX_PRICE = 15.0
+PRICE_CAP_PERCENTILE = 0.97
 OWN_GOAL_TYPE = "K"
 
 
@@ -133,13 +142,15 @@ def _build_tff_player_index(matches: list[dict]) -> dict[str, dict]:
 
 
 def _build_player_pool(tm_payload: dict, tff_index: dict[str, dict]) -> list[dict]:
-    values = [
+    values = sorted(
         p["market_value_eur"]
         for club in tm_payload["clubs"]
         for p in club["players"]
         if p.get("market_value_eur")
-    ]
-    max_value = max(values) if values else 1
+    )
+    # Tavan = 97. persentil, tek en yüksek değer DEĞİL — bkz. modül docstring'i:
+    # o sezonun tek bir uç transferi (ör. Osimhen) tüm ölçeği ezmesin diye.
+    price_cap = values[min(int(len(values) * PRICE_CAP_PERCENTILE), len(values) - 1)] if values else 1
 
     players = []
     for club in tm_payload["clubs"]:
@@ -153,7 +164,7 @@ def _build_player_pool(tm_payload: dict, tff_index: dict[str, dict]) -> list[dic
                 tff = None
 
             market_value = p.get("market_value_eur") or 0
-            price = _price_from_value(market_value, max_value)
+            price = _price_from_value(market_value, price_cap)
 
             players.append(
                 {
@@ -181,12 +192,15 @@ def _build_player_pool(tm_payload: dict, tff_index: dict[str, dict]) -> list[dic
     return players
 
 
-def _price_from_value(market_value_eur: int, max_value: int) -> float:
-    if market_value_eur <= 0 or max_value <= 0:
+def _price_from_value(market_value_eur: int, price_cap: int) -> float:
+    if market_value_eur <= 0 or price_cap <= 0:
         raw = MIN_PRICE
     else:
-        raw = MIN_PRICE + (MAX_PRICE - MIN_PRICE) * math.sqrt(market_value_eur / max_value)
-    return round(raw * 2) / 2  # en yakın 0.5'e yuvarla
+        # Tavanın üzerindeki (o sezonun uç transferleri) değerler MAX_PRICE'a kırpılır —
+        # tek bir oyuncu ölçeği geri kalanının aleyhine ezmesin.
+        norm = min(market_value_eur / price_cap, 1.0)
+        raw = MIN_PRICE + (MAX_PRICE - MIN_PRICE) * math.sqrt(norm)
+    return round(raw * 10) / 10  # en yakın 0.1'e yuvarla (gerçek FPL'deki gibi ince ayar)
 
 
 def _build_report(payload: dict) -> str:
