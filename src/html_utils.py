@@ -109,22 +109,25 @@ def _nav_link_list() -> list[tuple[str, str]]:
     if league_active():
         links.append(("📊 Haftalık Karne", "weekly_evaluation_2026_2027.html"))
     links += [
-        ("Transferler", "transfer_tracker_2025_2026.html"),
         ("Scout", "transfer_recommendation_report_2025_2026.html"),
         ("Analiz", "football_intelligence_home.html"),
         ("⚽ Avrupa", "european_predictions_2026_2027.html"),
         ("🌍 Dünya Kupası", "worldcup_2026_predictions.html"),
         ("🎮 Tahmin Oyunu", "/tahmin"),
+        ("🏆 Kadro Kur", "https://tahmin.metric11.com/kadro"),
     ]
     return links
 
 
+# Transfer penceresi kapandığı için (bkz. build_product_home.py::_WINDOW_CLOSE)
+# "Transferler" linki kaldırıldı — kullanıcı bulgusu: sezon içinde bayat/gereksiz
+# duruyordu. Yerine iki oyunu (Tahmin Oyunu + Kadro Kur) eşit ağırlıkta öne çıkarıyoruz.
 def nav_links_html(active: str = "") -> str:
     """Sadece <a> etiketlerini döner (sarmalayıcı <nav> yok) — kendi topbar/nav
     markup'ını ve CSS'ini koruyan sayfalarda link listesini güncel tutmak için."""
     def _attrs(label: str, href: str) -> str:
-        if href == "/tahmin":
-            return ' style="color:var(--lime)"'
+        if href in ("/tahmin", "https://tahmin.metric11.com/kadro"):
+            return ' style="color:var(--lime);font-weight:700"'
         return ""
 
     links = _nav_link_list()

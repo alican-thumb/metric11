@@ -1,6 +1,6 @@
 # Kadro Kur — Oyuncu Havuzu
 
-- Toplam oyuncu: 530
+- Toplam oyuncu: 529
 - TFF (gerçek maç verisi) ile eşleşen: 214
-- Pozisyon dağılımı: {'GK': 67, 'DEF': 169, 'MID': 137, 'FWD': 157}
+- Pozisyon dağılımı: {'GK': 68, 'DEF': 167, 'MID': 139, 'FWD': 155}
 - Varsayılan bütçe: 100.0

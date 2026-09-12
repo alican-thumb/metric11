@@ -382,6 +382,53 @@ def _predict_game_sidebar_html() -> str:
     )
 
 
+def _kadro_kur_sidebar_html() -> str:
+    """Kadro Kur (fantasy manager) oyununu tanıtan sidebar kartı — tahmin oyunu
+    kartıyla aynı görsel dilde, hemen altında gösterilir (bkz. _predict_game_sidebar_html)."""
+    pool = _load(PROCESSED_DIR / "fantasy_player_pool_2026_2027.json")
+    player_count = pool.get("player_count", 0) if isinstance(pool, dict) else 0
+    return (
+        '<a href="https://tahmin.metric11.com/kadro" style="display:block;text-decoration:none;color:inherit">'
+        '<div class="panel" style="border-top:3px solid var(--lime);background:linear-gradient(165deg,#0f2318,#0a1a10);font-size:13px">'
+        '<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">'
+        '<div style="font-size:10px;font-weight:700;color:var(--lime);letter-spacing:.06em;text-transform:uppercase">🏆 Kadro Kur</div>'
+        '<span style="font-size:9px;font-weight:800;color:#091810;background:var(--lime);border-radius:4px;padding:2px 6px;letter-spacing:.04em">YENİ</span>'
+        '</div>'
+        '<div style="color:white;font-size:14px;font-weight:700;line-height:1.35;margin-bottom:6px">15 kişilik hayalindeki kadroyu kur</div>'
+        f'<div style="color:#8fa89a;font-size:12px;line-height:1.5;margin-bottom:14px">{player_count} oyuncudan bütçeni kur, her hafta ilk 11 + kaptan seç, gerçek maç istatistikleriyle puan topla.</div>'
+        '<div style="display:block;text-align:center;padding:9px;background:var(--lime);border-radius:7px;color:#091810;font-size:12px;font-weight:800">Kadronu Kur →</div>'
+        '</div>'
+        '</a>'
+    )
+
+
+def _kadro_kur_panel_html() -> str:
+    """Ana sütunda, transfer penceresi kapandıktan sonra artık bayat kalan
+    'Transferler' bloğunun YERİNİ alan büyük Kadro Kur tanıtım paneli."""
+    pool = _load(PROCESSED_DIR / "fantasy_player_pool_2026_2027.json")
+    players = pool.get("players", []) if isinstance(pool, dict) else []
+    player_count = pool.get("player_count", len(players)) if isinstance(pool, dict) else len(players)
+    top3 = sorted(players, key=lambda p: p.get("price", 0), reverse=True)[:3]
+    top3_html = "".join(
+        f'<div style="display:flex;justify-content:space-between;padding:7px 0;border-top:1px solid #1e3228">'
+        f'<span>{escape(p.get("name", ""))} <span style="color:var(--muted);font-size:11px">({escape(p.get("team", ""))})</span></span>'
+        f'<span style="color:var(--lime);font-weight:700">{p.get("price", 0):.1f}</span></div>'
+        for p in top3
+    )
+    return (
+        '<div class="panel" style="margin-top:16px;border-top:3px solid var(--lime);background:linear-gradient(165deg,#0f2318,#0a1a10)">'
+        '<div style="display:flex;align-items:center;justify-content:space-between">'
+        '<h2 style="margin:0">🏆 Kadro Kur</h2>'
+        '<span style="font-size:9px;font-weight:800;color:#091810;background:var(--lime);border-radius:4px;padding:2px 6px;letter-spacing:.04em">YENİ OYUN</span>'
+        '</div>'
+        f'<div class="sub">100 birim bütçe · {player_count} oyuncu · 18 takım</div>'
+        f'<div style="color:#c7d6cc;font-size:13px;line-height:1.6;margin:10px 0">Süper Lig&#39;den 15 kişilik kadronu kur, her hafta ilk 11 + kaptan seç. Gol, temiz sayfa ve kartlarla gerçek maçlardan puan topla, arkadaşlarınla lider tablosunda yarış.</div>'
+        f'<div style="margin-bottom:8px">{top3_html}</div>'
+        '<a class="see-more" href="https://tahmin.metric11.com/kadro">Kadronu kur →</a>'
+        '</div>'
+    )
+
+
 def _ana_link(href: str, label: str, bold: bool = False) -> str:
     exists = (PROCESSED_DIR / href).exists()
     if exists:
@@ -453,12 +500,13 @@ def build_html() -> str:
     else:
         transfer_sidebar_html = ""
 
-    # Sağ sütun sıralaması: tahmin oyunu kartı her zaman en üstte (flagship özellik);
-    # lig-modunda skor paneli onun altında, transfer bloğu alta iner; lig öncesi
-    # transfer bloğu skor panelinin yerini alır.
+    # Sağ sütun sıralaması: iki oyun kartı (tahmin + kadro kur) her zaman en üstte
+    # (flagship özellikler); lig-modunda skor paneli onların altında, transfer bloğu
+    # alta iner; lig öncesi transfer bloğu skor panelinin yerini alır.
     predict_game_html = _predict_game_sidebar_html()
+    kadro_kur_sidebar_html = _kadro_kur_sidebar_html()
     score_sidebar_html = _score_sidebar_html() if _league else ""
-    sidebar_top_html = predict_game_html + (score_sidebar_html if _league else transfer_sidebar_html)
+    sidebar_top_html = predict_game_html + kadro_kur_sidebar_html + (score_sidebar_html if _league else transfer_sidebar_html)
     sidebar_bottom_html = transfer_sidebar_html if _league else ""
 
     if not _is_transfer_season:
@@ -577,12 +625,12 @@ def build_html() -> str:
   <div>
     <div style="margin-bottom:16px">{telegram_cta_html()}</div>
     {left_top_html}
-    <div class="panel" style="margin-top:16px">
+    {f'''<div class="panel" style="margin-top:16px">
       <h2>Transferler</h2>
       <div class="sub">Resmi · Doğrulanmış · TM Onaylı</div>
       {transfers_html}
       <a class="see-more" href="transfer_tracker_{SEASON}.html">Tüm transfer takibine git →</a>
-    </div>
+    </div>''' if _is_transfer_season else _kadro_kur_panel_html()}
     <div class="panel" style="margin-top:16px">
       <h2>Haber Sinyalleri</h2>
       <div class="sub">Son 14 gün · Basın + Resmi Kulüp + Google News</div>

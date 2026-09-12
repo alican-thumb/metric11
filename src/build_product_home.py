@@ -55,7 +55,6 @@ def build_html() -> str:
     transfer_report = load_json(PROCESSED_DIR / "transfer_recommendation_report_2025_2026.json").get("summary", {})
     news_intel = load_json(PROCESSED_DIR / f"news_intelligence_{SEASON}.json")
     transfer_season = load_json(PROCESSED_DIR / f"transfer_season_context_{SEASON}.json") or {}
-    transfer_tracker = load_json(PROCESSED_DIR / f"transfer_tracker_{SEASON}.json") or {}
     all_teams_total = _count_all_teams_reports()
 
     european_pred = load_json(PROCESSED_DIR / "european_predictions_2026_2027.json")
@@ -67,8 +66,16 @@ def build_html() -> str:
     weekly_eval = load_json(PROCESSED_DIR / "weekly_evaluation_2026_2027.json") or {}
     weekly_summary = weekly_eval.get("summary", {})
 
-    # Lig başladığında öne çıkan iki maç/tahmin kartı (2026-27 sezonu).
+    fantasy_pool = load_json(PROCESSED_DIR / "fantasy_player_pool_2026_2027.json") or {}
+
+    # Lig başladığında öne çıkan maç/tahmin ve Kadro Kur kartları (2026-27 sezonu).
     league_cards = [
+        panel_card(
+            "🏆 Kadro Kur — Yeni Oyun",
+            "Süper Lig'den 15 kişilik hayalindeki kadroyu kur, her hafta ilk 11'ini ve kaptanını seç, gerçek maç istatistikleriyle (gol, temiz sayfa, kart) puan topla. Arkadaşlarınla lider tablosunda yarış.",
+            "https://tahmin.metric11.com/kadro",
+            f"{fantasy_pool.get('player_count', 0)} oyuncu · 18 takım",
+        ),
         panel_card(
             "🗓️ Fikstür ve Skor Tahminleri",
             "2026-27 Süper Lig'in 34 haftası için güncel skor tahminleri. Oynanan her maç ve doğrulanan her transfer bir sonraki haftanın tahminini besliyor; sayfa her gün yeniden hesaplanıyor.",
@@ -145,18 +152,6 @@ def build_html() -> str:
             f"{news_intel.get('total_articles', 0)} makale · {news_intel.get('transfer_signals', 0)} haber iddiası",
         ),
         panel_card(
-            "Transfer Takip",
-            "Yaz 2026 transfer penceresi canlı takibi: resmi transferler, doğrulanan iddialar ve inceleme bekleyen sinyaller takım bazlı izleniyor.",
-            f"transfer_tracker_{SEASON}.html",
-            f"{transfer_tracker.get('summary', {}).get('official_count', 0)} resmi · {transfer_tracker.get('summary', {}).get('total_signals', 0)} toplam sinyal",
-        ),
-        panel_card(
-            "Transfer Sezonu Bağlam Raporu",
-            "Yaz 2026 transfer penceresine hazırlık: sözleşmesi biten oyuncular, son yıl kontrat adayları ve resmi teyit bekleyen transfer haber iddiaları.",
-            f"transfer_season_context_{SEASON}.html",
-            f"{transfer_season.get('summary', {}).get('free_agents_count', 0)} serbest kalacak · {transfer_season.get('summary', {}).get('final_year_count', 0)} son yıl",
-        ),
-        panel_card(
             "Transfer Tavsiye Raporu",
             "18 takım için yalnızca pozisyonu dış profille eşleşmiş rol önerileri; serbest transfer ve genç yetenek izleme listeleri.",
             "transfer_recommendation_report_2025_2026.html",
@@ -179,7 +174,7 @@ def build_html() -> str:
     # Transfer sezonunda (lig başlamadan önce) transfer araçları öne çıkar;
     # lig başladıktan sonra maç/tahmin kartları (fikstür + haftalık karne) öne alınır.
     if _pre_season_transfer():
-        transfer_titles = {"Transfer Sezonu Bağlam Raporu", "Transfer Takip", "Transfer Tavsiye Raporu", "Futbol Komuta Merkezi"}
+        transfer_titles = {"Transfer Sezonu Bağlam Raporu", "Transfer Tavsiye Raporu", "Futbol Komuta Merkezi"}
         transfer_cards = [c for c in cards if any(t in c for t in transfer_titles)]
         other_cards = [c for c in cards if not any(t in c for t in transfer_titles)]
         ordered = transfer_cards + other_cards
@@ -309,7 +304,7 @@ def build_html() -> str:
         <p>{hero_p}</p>
         <div class="hero-actions">
           <a class="primary" href="{hero_cta_href}">{hero_cta_label}</a>
-          <a class="secondary" href="football_command_center_2025_2026.html">Analiz merkezi</a>
+          <a class="secondary" style="border-color:var(--lime);color:var(--lime)" href="https://tahmin.metric11.com/kadro">🏆 Kadro Kur</a>
         </div>
       </div>
       <div class="scoreboard">
