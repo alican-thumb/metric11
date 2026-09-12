@@ -1,6 +1,6 @@
 # Veri Kalite ve İstatistik Scorecard
 
-- Ambar: `/Users/alicanakyol/Documents/analiz/data/processed/metric11_warehouse.sqlite`
+- Ambar: `/home/runner/work/metric11/metric11/data/processed/metric11_warehouse.sqlite`
 - Genel skor: 85.0/100
 
 ## Kontroller
@@ -45,9 +45,9 @@
 ## Gol Adayı Segmentleri
 
 - primary+impact_sub: 134 satır, 19 isabet satırı, %14.2
-- primary: 106 satır, 12 isabet satırı, %11.3
-- impact_sub: 26 satır, 4 isabet satırı, %15.4
-- primary+set_piece_defender: 24 satır, 0 isabet satırı, %0.0
+- primary: 103 satır, 11 isabet satırı, %10.7
+- impact_sub: 28 satır, 4 isabet satırı, %14.3
+- primary+set_piece_defender: 25 satır, 0 isabet satırı, %0.0
 - unknown: 8 satır, 2 isabet satırı, %25.0
 
 ## Scout Pozisyon Güveni
