@@ -2,6 +2,7 @@ import { eq, and, isNull } from "drizzle-orm";
 import { getDb } from "@/db";
 import { fantasyGameweekLineups } from "@/db/schema";
 import { getGameweekPlayerPoints } from "./fantasy-data";
+import { syncFantasyBadges } from "./badges";
 
 // Idempotent, tahmin oyunundaki sync-results.ts ile aynı desen: hem cron'dan hem de
 // sayfa yüklerinden fırsatçı çağrılabilir. Yedek oyuncular (isStarting=false) hep 0
@@ -40,5 +41,6 @@ export async function syncFantasyResults(): Promise<{ scored: number }> {
     }
   }
 
+  if (scored > 0) await syncFantasyBadges();
   return { scored };
 }

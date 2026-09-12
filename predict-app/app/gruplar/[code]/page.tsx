@@ -5,7 +5,10 @@ import { groups, groupMembers } from "@/db/schema";
 import { getOrCreateUser } from "@/lib/get-or-create-user";
 import { getRankedLeaderboard } from "@/lib/leaderboard";
 import { syncFinishedResults } from "@/lib/sync-results";
+import { getFantasyLeaderboard } from "@/lib/fantasy-leaderboard";
+import { syncFantasyResults } from "@/lib/sync-fantasy-results";
 import { LeaderboardTable } from "@/components/leaderboard-table";
+import { FantasyLeaderboardTable } from "@/components/fantasy/fantasy-leaderboard-table";
 import { JoinGroupForm } from "@/components/join-group-form";
 import { ShareGroupInvite } from "@/components/share-group-invite";
 
@@ -39,8 +42,12 @@ export default async function GroupPage({ params }: { params: Promise<{ code: st
     );
   }
 
-  await syncFinishedResults();
-  const ranked = await getRankedLeaderboard({ userIds: members.map((m) => m.userId) });
+  const memberIds = members.map((m) => m.userId);
+  await Promise.all([syncFinishedResults(), syncFantasyResults()]);
+  const [ranked, fantasyRanked] = await Promise.all([
+    getRankedLeaderboard({ userIds: memberIds }),
+    getFantasyLeaderboard({ userIds: memberIds }),
+  ]);
 
   return (
     <div className="space-y-4">
@@ -54,11 +61,24 @@ export default async function GroupPage({ params }: { params: Promise<{ code: st
         Bu kodu paylaşarak arkadaşlarını davet edebilirsin — {members.length} üye.
       </p>
       <ShareGroupInvite groupName={group.name} code={group.inviteCode} />
-      <LeaderboardTable
-        ranked={ranked}
-        viewerId={user.id}
-        emptyMessage="Grupta henüz kimse tahmin girmedi."
-      />
+
+      <div>
+        <h2 className="mb-2 text-sm font-semibold text-slate-300">Tahmin Ligi</h2>
+        <LeaderboardTable
+          ranked={ranked}
+          viewerId={user.id}
+          emptyMessage="Grupta henüz kimse tahmin girmedi."
+        />
+      </div>
+
+      <div>
+        <h2 className="mb-2 text-sm font-semibold text-slate-300">Kadro Kur Ligi</h2>
+        <FantasyLeaderboardTable
+          ranked={fantasyRanked}
+          viewerId={user.id}
+          emptyMessage="Grupta henüz kimse kadro kurmadı."
+        />
+      </div>
     </div>
   );
 }

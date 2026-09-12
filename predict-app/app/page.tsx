@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { eq } from "drizzle-orm";
 import { auth } from "@clerk/nextjs/server";
 import { getDb } from "@/db";
@@ -25,6 +26,21 @@ export default async function HomePage() {
 
   return (
     <div className="space-y-4">
+      <Link
+        href="/kadro"
+        className="group flex items-center justify-between gap-3 rounded-xl border border-emerald-800/50 bg-gradient-to-r from-emerald-900/40 via-slate-900 to-slate-950 px-4 py-3 transition-colors hover:border-lime-300/50"
+      >
+        <div>
+          <div className="text-sm font-bold text-white">
+            Yeni: <span className="text-lime-300">Kadro Kur</span> 🎮
+          </div>
+          <div className="text-xs text-slate-400">15 kişilik kadronu kur, gerçek maçlardan puan topla.</div>
+        </div>
+        <span className="shrink-0 text-sm font-semibold text-lime-300 group-hover:translate-x-0.5 transition-transform">
+          Dene →
+        </span>
+      </Link>
+
       <h1 className="text-xl font-bold">
         Bu Haftanın Maçları{weekLabel ? ` (${weekLabel}. Hafta)` : ""}
       </h1>

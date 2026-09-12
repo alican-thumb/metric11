@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { eq } from "drizzle-orm";
 import { getDb } from "@/db";
-import { fantasySquads, fantasySquadPlayers } from "@/db/schema";
+import { fantasySquads, fantasySquadPlayers, badges } from "@/db/schema";
 import { getOrCreateUser } from "@/lib/get-or-create-user";
 import { getPlayersById } from "@/lib/fantasy-data";
 import { validateSquad, squadCost, BUDGET } from "@/lib/fantasy-rules";
@@ -66,6 +66,10 @@ export async function POST(req: Request) {
 
   const [squad] = await db.insert(fantasySquads).values({ userId: user.id }).returning();
   await db.insert(fantasySquadPlayers).values(transfermarktIds.map((id) => ({ squadId: squad.id, transfermarktId: id })));
+  await db
+    .insert(badges)
+    .values({ userId: user.id, code: "fantasy_first_squad" })
+    .onConflictDoNothing({ target: [badges.userId, badges.code] });
 
   return NextResponse.json({ squad: { id: squad.id, freeTransfers: squad.freeTransfers } }, { status: 201 });
 }
