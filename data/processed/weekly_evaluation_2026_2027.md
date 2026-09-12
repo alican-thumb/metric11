@@ -4,10 +4,16 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 
 ## Genel Karne
 
-- Değerlendirilen maç: **36**
-- İsabet: **14/36** (%39)
+- Değerlendirilen maç: **37**
+- İsabet: **15/37** (%41)
 - Beraberlik yakalama: **1/7** (%14)
-- Yüksek güvenli maç isabeti: **6/11** (%55)
+- Yüksek güvenli maç isabeti: **7/12** (%58)
+
+## Hafta 5 — 1/1 isabet (%100)
+
+| Maç | Skor | Tahmin | Sonuç | Güven |
+| --- | --- | --- | --- | --- |
+| BEŞİKTAŞ A.Ş. - ERZURUMSPOR FK | 3 - 0 | Ev | ✅ | HIGH |
 
 ## Hafta 4 — 2/9 isabet (%22)
 
