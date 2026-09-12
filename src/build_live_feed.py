@@ -411,20 +411,24 @@ def _kadro_kur_panel_html() -> str:
     top3 = sorted(players, key=lambda p: p.get("price", 0), reverse=True)[:3]
     top3_html = "".join(
         f'<div style="display:flex;justify-content:space-between;padding:7px 0;border-top:1px solid #1e3228">'
-        f'<span>{escape(p.get("name", ""))} <span style="color:var(--muted);font-size:11px">({escape(p.get("team", ""))})</span></span>'
+        f'<span style="color:#e8eee9">{escape(p.get("name", ""))} <span style="color:#8fa89a;font-size:11px">({escape(p.get("team", ""))})</span></span>'
         f'<span style="color:var(--lime);font-weight:700">{p.get("price", 0):.1f}</span></div>'
         for p in top3
     )
+    # Bu panel diğer kartlardan farklı olarak koyu (lime çerçeveli, gradient) bir arka
+    # plana sahip — .panel h2/.sub sınıflarının varsayılan rengi (var(--ink), açık tema
+    # kartları için neredeyse siyah) burada metni görünmez kılar, bu yüzden başlık ve
+    # alt yazı rengi elle açık tona zorlanıyor (bkz. 2026-09-12 kullanıcı ekran görüntüsü).
     return (
         '<div class="panel" style="margin-top:16px;border-top:3px solid var(--lime);background:linear-gradient(165deg,#0f2318,#0a1a10)">'
         '<div style="display:flex;align-items:center;justify-content:space-between">'
-        '<h2 style="margin:0">🏆 Kadro Kur</h2>'
+        '<h2 style="margin:0;color:white">🏆 Kadro Kur</h2>'
         '<span style="font-size:9px;font-weight:800;color:#091810;background:var(--lime);border-radius:4px;padding:2px 6px;letter-spacing:.04em">YENİ OYUN</span>'
         '</div>'
-        f'<div class="sub">100 birim bütçe · {player_count} oyuncu · 18 takım</div>'
+        f'<div class="sub" style="color:#8fa89a">100 birim bütçe · {player_count} oyuncu · 18 takım</div>'
         f'<div style="color:#c7d6cc;font-size:13px;line-height:1.6;margin:10px 0">Süper Lig&#39;den 15 kişilik kadronu kur, her hafta ilk 11 + kaptan seç. Gol, temiz sayfa ve kartlarla gerçek maçlardan puan topla, arkadaşlarınla lider tablosunda yarış.</div>'
         f'<div style="margin-bottom:8px">{top3_html}</div>'
-        '<a class="see-more" href="https://tahmin.metric11.com/kadro">Kadronu kur →</a>'
+        '<a class="see-more" style="color:var(--lime);border-top-color:#1e3228" href="https://tahmin.metric11.com/kadro">Kadronu kur →</a>'
         '</div>'
     )
 
