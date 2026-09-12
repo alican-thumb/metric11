@@ -5,9 +5,13 @@
 - Eksik sinyali olan maç: 11
 - Otomatik ceza sinyali: 14
 - Manuel kayıt: 0
-- Güncel haber/sakat-cezalı sinyali: 0
+- Güncel haber/sakat-cezalı sinyali: 1
 - Haber istihbaratı sinyali: 0
 - Not: Kırmızı/çift sarı için sonraki maç cezası varsayılır. Sarı kart birikimi 4 kartta 1 maç varsayımıdır; resmi ceza listesiyle doğrulanmalıdır.
+
+## Güncel Haber/Sakat-Cezalı Bağlamı
+
+- INJURED | Rıdvan Yılmaz | kaynak=beIN SPORTS sakat ve cezalı listesi | güven=MEDIUM_CONTEXT
 
 ## Maç Bazlı Eksikler
 
