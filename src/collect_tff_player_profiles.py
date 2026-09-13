@@ -3,10 +3,31 @@ from __future__ import annotations
 import argparse
 import json
 import time
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from src.collectors.tff_player import probe_player_profile
 from src.config import PROCESSED_DIR, RAW_DIR
+
+# Bir profil bir kez toplandıktan sonra kalıcı olarak "yapıldı" sayılıp asla yeniden
+# çekilmiyordu — yaş/sözleşme/milliyet gibi zamanla değişen alanlar (2026-09-13 kullanıcı
+# bulgusu: Orkun Kökçü'nün sözleşmesi TFF'de uzatılmış olmasına rağmen scout sayfası
+# aylar önceki eski bitiş tarihini gösteriyordu) sonsuza dek donuk kalıyordu. Artık bir
+# profil bu kadar günden eskiyse (veya hiç `_fetched_at` damgası yoksa) yeniden çekiliyor.
+STALE_AFTER_DAYS = 30
+
+
+def _is_stale(profile: dict) -> bool:
+    fetched_at = profile.get("_fetched_at")
+    if not fetched_at:
+        return True
+    try:
+        fetched = datetime.fromisoformat(fetched_at)
+    except ValueError:
+        return True
+    if fetched.tzinfo is None:
+        fetched = fetched.replace(tzinfo=timezone.utc)
+    return datetime.now(timezone.utc) - fetched > timedelta(days=STALE_AFTER_DAYS)
 
 
 def main() -> None:
@@ -34,13 +55,13 @@ def main() -> None:
     errors = []
     for idx, player in enumerate(selected, start=1):
         player_id = player["external_id"]
-        if player_id in profiles:
+        if player_id in profiles and not _is_stale(profiles[player_id]):
             continue
         probe = probe_player_profile(player_id, include_raw=True)
         if probe.raw_html:
             (raw_dir / f"player_{player_id}.html").write_text(probe.raw_html, encoding="utf-8")
         if probe.profile:
-            profile = {**player, **probe.profile}
+            profile = {**player, **probe.profile, "_fetched_at": datetime.now(timezone.utc).isoformat()}
             profiles[player_id] = profile
             print(f"[{idx}/{len(selected)}] OK {profile.get('name') or player['name']}")
         else:

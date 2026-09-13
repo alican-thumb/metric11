@@ -27,7 +27,11 @@ def main() -> None:
         ],
         help="Lig geneli tek dosya henüz yoksa birleştirilecek mevcut profil dosyaları.",
     )
-    parser.add_argument("--tm-input", default=str(PROCESSED_DIR / f"transfermarkt_super_lig_squads_{SEASON}.json"))
+    # Kadro/sözleşme/piyasa değeri "şu an" bilgisidir, sezon geçmişi değil — SEASON
+    # sabiti (2025_2026, bitmiş sezon) yerine her zaman en güncel kadro dosyasına
+    # sabitlendi. Eskiden bu SEASON'a bağlıydı ve sözleşme uzatmaları/yeni transferler
+    # hiç yansımıyordu (bkz. 2026-09-13 "Orkun Kökçü sözleşmesi eski" bulgusu).
+    parser.add_argument("--tm-input", default=str(PROCESSED_DIR / "transfermarkt_super_lig_squads_2026_2027.json"))
     parser.add_argument("--tm-profiles", default=str(PROCESSED_DIR / f"transfermarkt_super_lig_player_profiles_{SEASON}.json"))
     parser.add_argument("--manual-aliases", default="data/manual/tm_player_manual_aliases.json")
     parser.add_argument("--output", default=str(PROCESSED_DIR / f"tff_player_profiles_enriched_{SEASON}.json"))

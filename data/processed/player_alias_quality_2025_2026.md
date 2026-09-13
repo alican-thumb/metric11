@@ -10,8 +10,8 @@
 
 ## Karşılaştırmalar
 
-- league_tff_vs_transfermarkt: 593/864 eşleşme (%69)
-  - Manuel eşleme: 4 (ağ teyidi bekleyen=4); kullanılabilir eşleme %69
+- league_tff_vs_transfermarkt: 387/864 eşleşme (%45)
+  - Manuel eşleme: 9 (ağ teyidi bekleyen=9); kullanılabilir eşleme %46
 - besiktas_tff_vs_transfermarkt: 0/46 eşleşme (%0)
   - Ham tekil kaynak karşılaştırmasıdır; operasyonel manuel eşlemeler lig karşılaştırmasında izlenir.
 - scout_tff_vs_api_deep: 0/40 eşleşme (%0)
@@ -20,16 +20,16 @@
 ## Düşük Skorlu Eşleşmeler
 
 ### league_tff_vs_transfermarkt
-- AHMET SAMİ BİRCAN -> Ahmet Sami Bircan | skor=1.0 | canonical=AHMET SAMI BIRCAN
-- ALİ PAĞDA -> Ali Pağda | skor=1.0 | canonical=ALI PAGDA
-- AMIR HADZIAHMETOVIC -> Amir Hadziahmetovic | skor=1.0 | canonical=AMIR HADZIAHMETOVIC
-- ASIM EFE IŞIK -> Asım Efe Işık | skor=1.0 | canonical=ASIM EFE ISIK
-- BADOBRE EMMANUEL ELYSEE DJEDJE AGBADOU -> Emmanuel Agbadou | skor=1.0 | canonical=BADOBRE EMMANUEL ELYSEE DJEDJE AGBADOU
-- CENGİZ ÜNDER -> Cengiz Ünder | skor=1.0 | canonical=CENGIZ UNDER
-- DAVID JURASEK -> David Jurásek | skor=1.0 | canonical=DAVID JURASEK
-- DEMİR EGE TIKNAZ -> Demir Ege Tıknaz | skor=1.0 | canonical=DEMIR EGE TIKNAZ
-- DEVIS ESTIVEN  VASQUEZ LLACH -> Devis Vásquez | skor=1.0 | canonical=DEVIS ESTIVEN VASQUEZ LLACH
-- DEVRİM ŞAHİN -> Devrim Şahin | skor=1.0 | canonical=DEVRIM SAHIN
+- ALBAN-MARC LAFONT -> Alban Lafont | skor=1.0 | canonical=ALBAN MARC LAFONT
+- AMADOU CİSSE -> Amadou Cissé | skor=1.0 | canonical=AMADOU CISSE
+- BERK KIZILDEMİR -> Berk Kızıldemir | skor=1.0 | canonical=BERK KIZILDEMIR
+- CEM ÜSTÜNDAĞ -> Cem Üstündag | skor=1.0 | canonical=CEM USTUNDAG
+- CENGİZ UMUT MERAŞ -> Umut Meraş | skor=1.0 | canonical=CENGIZ UMUT MERAS
+- DAVID ROBERT BATES -> David Bates | skor=1.0 | canonical=DAVID ROBERT BATES
+- DİLHAN DEMİR -> Dilhan Demir | skor=1.0 | canonical=DILHAN DEMIR
+- ERMAL KRASNIQI -> Ermal Krasniqi | skor=1.0 | canonical=ERMAL KRASNIQI
+- FURKAN SOYALP -> Furkan Soyalp | skor=1.0 | canonical=FURKAN SOYALP
+- GIFT EMMANUEL  ORBAN -> Gift Orban | skor=1.0 | canonical=GIFT EMMANUEL ORBAN
 
 ### besiktas_tff_vs_transfermarkt
 
@@ -40,26 +40,26 @@
 ## Eşleşmeyen Sol Kaynak Oyuncuları
 
 ### league_tff_vs_transfermarkt
-- HALİL YERAL (ADANA 01 FUTBOL KULÜBÜ SK)
-- ATAKAN RIDVAN ÇANKAYA (ALAGÖZ HOLDİNG IĞDIR FK)
-- GÜRAY VURAL (ALAGÖZ HOLDİNG IĞDIR FK)
-- MARUIS TRESOR DOH (ALAGÖZ HOLDİNG IĞDIR FK)
-- ROBIN YALÇIN (ALAGÖZ HOLDİNG IĞDIR FK)
-- RYAN ISAAC MENDES (ALAGÖZ HOLDİNG IĞDIR FK)
-- ALBAN-MARC LAFONT (AMED SPORTİF FAALİYETLER)
-- AMADOU CİSSE (AMED SPORTİF FAALİYETLER)
-- ATAKAN MÜJDE (AMED SPORTİF FAALİYETLER)
-- BERK KIZILDEMİR (AMED SPORTİF FAALİYETLER)
-- CEM ÜSTÜNDAĞ (AMED SPORTİF FAALİYETLER)
-- DAVID ROBERT BATES (AMED SPORTİF FAALİYETLER)
+- BERKAY MURATOĞLU (12 BİNGÖL SPOR)
+- MUHAMMET ONUR BAŞYİĞİT (68 AKSARAY BELEDİYE SPOR)
+- EGE ARAÇ (ADANA 01 FUTBOL KULÜBÜ SK)
+- ENGİN CAN BİTERGE (ADANA 01 FUTBOL KULÜBÜ SK)
+- MESUT CAN TUNALI (ADANA 01 FUTBOL KULÜBÜ SK)
+- BARAN MOĞULTAY (ALAGÖZ HOLDİNG IĞDIR FUTBOL KULÜBÜ)
+- RYAN ISAAC MENDES (ALAGÖZ HOLDİNG IĞDIR FUTBOL KULÜBÜ)
+- SERDAR GÜRLER (ALAGÖZ HOLDİNG IĞDIR FUTBOL KULÜBÜ)
+- SERKAN EMRECAN TERZİ (ALAGÖZ HOLDİNG IĞDIR FUTBOL KULÜBÜ)
+- SONER GÖNÜL (ALAGÖZ HOLDİNG IĞDIR FUTBOL KULÜBÜ)
+- ADNAN AKTAŞ (ALİAĞA FUTBOL A.Ş.)
+- BERKAY TOPDEMİR (ALİAĞA FUTBOL A.Ş.)
+- HALİL YERAL (ALİAĞA FUTBOL A.Ş.)
+- YUSUF NACAR (AMASYASPOR FK)
 - DIAA SABI'A (AMED SPORTİF FAALİYETLER)
-- DİLHAN DEMİR (AMED SPORTİF FAALİYETLER)
-- ERMAL KRASNIQI (AMED SPORTİF FAALİYETLER)
-- GIFT EMMANUEL  ORBAN (AMED SPORTİF FAALİYETLER)
-- GÖKHAN GÜL (AMED SPORTİF FAALİYETLER)
-- KAHRAMAN DEMİRTAŞ (AMED SPORTİF FAALİYETLER)
-- LUMBARDH DELLOVA (AMED SPORTİF FAALİYETLER)
-- MBAYE DIAGNE (AMED SPORTİF FAALİYETLER)
+- OLEKSANDR SYROTA (AMED SPORTİF FAALİYETLER)
+- DENİZ YAŞAR (ANKARA DEMİRSPOR)
+- ERDEM ÇETİNKAYA (ANKARA DEMİRSPOR)
+- TAYLAN UTKU AYDIN (ANKARA DEMİRSPOR)
+- ABDULLAH YİĞİTER (ANTALYASPOR A.Ş.)
 
 ### besiktas_tff_vs_transfermarkt
 - AHMET SAMİ BİRCAN (BEŞİKTAŞ A.Ş.)
@@ -70,7 +70,7 @@
 - CENGİZ ÜNDER (BEŞİKTAŞ A.Ş.)
 - DAVID JURASEK (BEŞİKTAŞ A.Ş.)
 - DEMİR EGE TIKNAZ (BEŞİKTAŞ A.Ş.)
-- DEVIS ESTIVEN  VASQUEZ LLACH (BEŞİKTAŞ A.Ş.)
+- DEVIS ESTIVEN VASQUEZ LLACH (BEŞİKTAŞ A.Ş.)
 - DEVRİM ŞAHİN (BEŞİKTAŞ A.Ş.)
 - EL BILAL TOURE (BEŞİKTAŞ A.Ş.)
 - EMRE BİLGİN (BEŞİKTAŞ A.Ş.)
@@ -114,7 +114,7 @@
 - CENGİZ ÜNDER (BEŞİKTAŞ A.Ş.)
 - DAVID JURASEK (BEŞİKTAŞ A.Ş.)
 - DEMİR EGE TIKNAZ (BEŞİKTAŞ A.Ş.)
-- DEVIS ESTIVEN  VASQUEZ LLACH (BEŞİKTAŞ A.Ş.)
+- DEVIS ESTIVEN VASQUEZ LLACH (BEŞİKTAŞ A.Ş.)
 - DEVRİM ŞAHİN (BEŞİKTAŞ A.Ş.)
 - EL BILAL TOURE (BEŞİKTAŞ A.Ş.)
 - EMRE BİLGİN (BEŞİKTAŞ A.Ş.)

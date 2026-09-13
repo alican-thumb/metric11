@@ -33,7 +33,7 @@
 - 5.04.2026 - 20:00 | FENERBAHÇE A.Ş. - BEŞİKTAŞ A.Ş. | skor 1-0 | ekran=Rakip ham=Rakip gerçek=Rakip | ayar=big_match_opponent_edge | aksiyon=PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO | doğru=True
 - 10.04.2026 - 20:00 | BEŞİKTAŞ A.Ş. - HESAP.COM ANTALYASPOR | skor 4-2 | ekran=BJK ham=BJK gerçek=BJK | ayar=none | aksiyon=taraf_eğilimi | doğru=True
 - 19.04.2026 - 17:00 | SAMSUNSPOR A.Ş. - BEŞİKTAŞ A.Ş. | skor 2-1 | ekran=X ham=BJK gerçek=Rakip | ayar=high_draw_risk_override | aksiyon=PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO | doğru=False
-- 27.04.2026 - 20:00 | BEŞİKTAŞ A.Ş. - MISIRLI.COM.TR FATİH KARAGÜMRÜK | skor 0-0 | ekran=BJK ham=BJK gerçek=X | ayar=none | aksiyon=senaryo_anlat | doğru=False
+- 27.04.2026 - 20:00 | BEŞİKTAŞ A.Ş. - MISIRLI.COM.TR FATİH KARAGÜMRÜK | skor 0-0 | ekran=BJK ham=BJK gerçek=X | ayar=protected_side | aksiyon=KEEP_PICK_WITH_DRAW_WARNING | doğru=False
 - 1.05.2026 - 20:00 | GAZİANTEP FUTBOL KULÜBÜ A.Ş. - BEŞİKTAŞ A.Ş. | skor 0-2 | ekran=BJK ham=BJK gerçek=BJK | ayar=protected_side | aksiyon=PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO | doğru=True
 - 9.05.2026 - 20:00 | BEŞİKTAŞ A.Ş. - TRABZONSPOR A.Ş. | skor 1-2 | ekran=Rakip ham=BJK gerçek=Rakip | ayar=big_match_negative_strength_high_card | aksiyon=PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO | doğru=True
 - 15.05.2026 - 20:00 | ÇAYKUR RİZESPOR A.Ş. - BEŞİKTAŞ A.Ş. | skor 2-2 | ekran=BJK ham=BJK gerçek=X | ayar=protected_side | aksiyon=PROTECT_SIDE_PICK_SHOW_DRAW_SCENARIO | doğru=False
