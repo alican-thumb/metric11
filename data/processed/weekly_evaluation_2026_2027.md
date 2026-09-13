@@ -4,16 +4,20 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 
 ## Genel Karne
 
-- Değerlendirilen maç: **37**
-- İsabet: **15/37** (%41)
-- Beraberlik yakalama: **1/7** (%14)
+- Değerlendirilen maç: **41**
+- İsabet: **16/41** (%39)
+- Beraberlik yakalama: **2/8** (%25)
 - Yüksek güvenli maç isabeti: **7/12** (%58)
 
-## Hafta 5 — 1/1 isabet (%100)
+## Hafta 5 — 2/5 isabet (%40)
 
 | Maç | Skor | Tahmin | Sonuç | Güven |
 | --- | --- | --- | --- | --- |
 | BEŞİKTAŞ A.Ş. - ERZURUMSPOR FK | 3 - 0 | Ev | ✅ | HIGH |
+| EYÜPSPOR - ÇAYKUR RİZESPOR A.Ş. | 0 - 2 | Ev | ❌ | MEDIUM |
+| SAMSUNSPOR A.Ş. - ARCA ÇORUM FK | 1 - 5 | Ev | ❌ | LOW |
+| CORENDON ALANYASPOR - GÖZTEPE A.Ş. | 2 - 2 | Beraberlik | ✅ | LOW |
+| TÜMOSAN KONYASPOR - TRABZONSPOR A.Ş. | 1 - 0 | Deplasman | ❌ | MEDIUM |
 
 ## Hafta 4 — 2/9 isabet (%22)
 
