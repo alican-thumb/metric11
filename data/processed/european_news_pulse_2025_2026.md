@@ -1,7 +1,7 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-09-13T04:47:05.277922+00:00
-Toplam ilgili haber: 26
+Üretim zamanı: 2026-09-13T07:29:41.357913+00:00
+Toplam ilgili haber: 23
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
@@ -11,15 +11,12 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [İsmail Kartal böyle geri döndü...İşte perde arkasında yaşananlar](https://www.fotomac.com.tr/fenerbahce/2026/09/11/ismail-kartal-boyle-geri-donduiste-perde-arkasinda-yasananlar) — Fotomaç · 2026-09-12T23:36:15+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Galatasaray'dan UEFA hamlesi! Sporting maçı için...](https://www.fotomac.com.tr/galatasaray/2026/09/11/galatasaraydan-uefa-hamlesi-sporting-maci-icin) — Fotomaç · 2026-09-12T23:35:48+03:00 · turnuva=CL · kulüp=Galatasaray
 - [İtalyan basını, Fenerbahçe'yi konuşuyor! 'Türk cehennemi'](https://www.fotomac.com.tr/fenerbahce/2026/09/11/italyan-basini-fenerbahceyi-konusuyor-turk-cehennemi) — Fotomaç · 2026-09-12T23:35:42+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Ahmet Çakar'dan Fenerbahçe-Roma yorumu! "Aslında o pozisyonda..."](https://www.fotomac.com.tr/fenerbahce/2026/09/11/ahmet-cakardan-fenerbahce-roma-yorumu-aslinda-o-pozisyonda) — Fotomaç · 2026-09-12T23:35:33+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Spor yazarları, Fenerbahçe-Roma maçını kaleme aldılar! "Az daha Roma'yı yakıyorduk!"](https://www.fotomac.com.tr/fenerbahce/2026/09/11/spor-yazarlari-fenerbahce-roma-macini-kaleme-aldilar-az-daha-romayi-yakiyorduk) — Fotomaç · 2026-09-12T23:35:31+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Trabzonspor'a Uğurcan Çakır piyangosu!](https://www.fotomac.com.tr/trabzonspor/2026/09/11/trabzonspora-dev-piyango) — Fotomaç · 2026-09-12T23:35:28+03:00 · turnuva=CL · kulüp=Galatasaray, Trabzonspor
-- [İşte Fenerbahçe-Roma maçı sonrası UEFA ülke puanında son durum!](https://www.fotomac.com.tr/fenerbahce/2026/09/10/iste-fenerbahce-roma-maci-sonrasi-uefa-ulke-puaninda-son-durum) — Fotomaç · 2026-09-12T23:35:26+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Okan Buruk'tan o isme kesik! Galatasaray'ın Kocaelispor maçı muhtemel 11'i](https://www.takvim.com.tr/spor/galatasaray/2026/09/12/galatasaray-kocaelispor-muhtemel-11-leao-sane-karari) — Takvim Spor · 2026-09-12T20:09:16+03:00 · turnuva=CL · kulüp=Galatasaray, Kocaelispor
 - [GALATASARAY - BARCELONA MAÇI NE ZAMAN? UCL Galatasaray - Barcelona Maçı Hangi Kanalda, Saat Kaçta? Şampiyonlar Ligi Dev Randevusu İçin Geri Sayım](https://www.cnnturk.com/spor/futbol/galatasaray-barcelona-maci-ne-zaman-ucl-galatasaray-barcelona-maci-hangi-kanalda-saat-kacta-sampiyonlar-ligi-dev-randevusu-3464892) — CNN Türk Spor · 2026-09-12T17:33:11+00:00 · turnuva=CL · kulüp=Galatasaray
 - [Fenerbahçe, teknik direktör İsmail Kartal'ın görevinin başında olduğunu açıkladı](https://www.aa.com.tr/tr/spor/fenerbahce-teknik-direktor-ismail-kartalin-gorevinin-basinda-oldugunu-acikladi/4054690) — Anadolu Ajansı Spor · 2026-09-11T20:41:59+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Archie Brown, Şampiyonlar Ligi'nde haftanın 11'ine seçildi](https://www.aa.com.tr/tr/spor/archie-brown-sampiyonlar-liginde-haftanin-11ine-secildi/4054577) — Anadolu Ajansı Spor · 2026-09-11T18:28:33+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Spor yazarları da ikiye bölündü: "İstifasına hiç şaşırmadım" ve "Hepimizi şoke etti"](https://www.takvim.com.tr/spor/fenerbahce/2026/09/11/spor-yazarlari-fenerbahce-roma-macini-koselerinde-yorumladi) — Takvim Spor · 2026-09-11T09:29:43+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Galatasaray'ın transfer listesindeydi! Şampiyonlar Ligi'ne damga vurdu - beinsports.com.tr](https://news.google.com/rss/articles/CBMioAFBVV95cUxOTDFQdFdJZk1WU0NCTVI4NlQtTFpiT2lMUVlxbnV3TUZIUVYtbU9tQzktcDJETXEzSnhhckZtN3RDMXV0ek5xb1UxdFRzZDF1X09PWmxJSmRZLS1tVldDUEx5NWZwdVFhLWI5TnhjMGRCSUt5RE12cWVEQ2xjRV9IS0lCRkR3bmRmeFVtZFBoZGpEeFloUG12dmh0Y01OWGtG?oc=5) — beinsports.com.tr · 2026-09-11T08:52:18+00:00 · turnuva=CL · kulüp=Galatasaray
 - [Fenerbahçe - Roma maçı İtalyan basınında: Türk cehenneminden 1 puan](https://www.takvim.com.tr/spor/fenerbahce/2026/09/10/fenerbahce-roma-maci-italyan-basininda) — Takvim Spor · 2026-09-11T04:37:48+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Şampiyonlar Ligi puan durumu [2026-2027 sezonu]](https://www.takvim.com.tr/galeri/spor/sampiyonlar-ligi-puan-durumu-2026-2027-sezonu) — Takvim Spor · 2026-09-11T01:06:17+03:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe
 - [Türkiye ülke puanı sıralamasında kaçıncı? İşte UEFA'daki yerimiz (2026-2027 Sezonu)](https://www.takvim.com.tr/galeri/spor/turkiye-ulke-puani-siralamasinda-kacinci-iste-uefadaki-yerimiz-2026-2027-sezonu) — Takvim Spor · 2026-09-11T00:42:36+03:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe
