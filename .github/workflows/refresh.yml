@@ -55,6 +55,20 @@ jobs:
           python -m src.build_live_feed || true
           python -m src.notify_telegram || true
 
+      - name: Maç sonuçlarını çek (hafif TFF fikstür, retry amaçlı)
+        # Günlük tam ağ pipeline'ı (04:00 UTC, --include-network) TFF'nin fikstür
+        # listeleme sayfasını CI'nin bulut IP'sinden bazen boş/"-" skorla çekiyor
+        # (Transfermarkt kadro verisinde de görülen aynı CDN/anti-bot deseni,
+        # bkz. 2026-09-13 "dünkü maçlar güncellenmedi" bulgusu). Bu adım olmadan
+        # o günkü koşu kaçırırsa sonuç 24 saat "-" kalıyordu. collect_tff_season_
+        # fixture zaten bilinen gerçek skorları asla "-" ile ezmiyor (bkz. script
+        # içindeki existing_scores koruması), o yüzden 6 saatte bir tekrar
+        # denemek güvenli — en kötü ihtimalle hiçbir şey değişmez.
+        continue-on-error: true
+        run: |
+          python -m src.collect_tff_season_fixture || true
+          python -m src.advance_season_state || true
+
       - name: Rebuild dashboards
         continue-on-error: true
         env:
