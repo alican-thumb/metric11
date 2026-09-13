@@ -1,7 +1,7 @@
 # Oyuncu Alias ve Eşleşme Kalitesi
 
 - Manuel alias oyuncusu: 28
-- İşlenen TFF lig profil havuzu: 863
+- İşlenen TFF lig profil havuzu: 864
 - Transfermarkt Süper Lig kadrosu: 18/18 kulüp, 817 oyuncu
 - TFF Beşiktaş profili: 46
 - TFF scout profili: 40
@@ -10,7 +10,7 @@
 
 ## Karşılaştırmalar
 
-- league_tff_vs_transfermarkt: 593/863 eşleşme (%69)
+- league_tff_vs_transfermarkt: 593/864 eşleşme (%69)
   - Manuel eşleme: 4 (ağ teyidi bekleyen=4); kullanılabilir eşleme %69
 - besiktas_tff_vs_transfermarkt: 0/46 eşleşme (%0)
   - Ham tekil kaynak karşılaştırmasıdır; operasyonel manuel eşlemeler lig karşılaştırmasında izlenir.

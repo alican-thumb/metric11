@@ -1,18 +1,18 @@
 # Transfermarkt Oyuncu Eşleşme İnceleme Kuyruğu
 
-- TFF profil: 863
+- TFF profil: 864
 - Transfermarkt snapshot: 18/18 kulüp, 817 oyuncu
 - Snapshot kapsamındaki TFF profil: 728
 - Doğrulanmış snapshot eşleşmesi: 593
 - Manuel eşleme ile kullanılan profil: 4
 - Ağ teyidi bekleyen manuel eşleme: 4
-- Çözülmemiş profil: 266
-- Doğrulanmış genel eşleşme oranı: %68.7
+- Çözülmemiş profil: 267
+- Doğrulanmış genel eşleşme oranı: %68.6
 - Doğrulanmış snapshot içi eşleşme oranı: %81.5
 - Manuel eşleme dahil kullanılabilir snapshot içi kapsama: %82.0
 - Scout incelemesini bloke eden eşleşmeyen oyuncu: 0
-- Sınıf dağılımı: {'NO_RELIABLE_CANDIDATE_IN_SNAPSHOT': 126, 'SAME_CLUB_NAME_REVIEW': 3, 'POSSIBLE_TRANSFER_OR_CLUB_MISMATCH': 2, 'OUT_OF_SNAPSHOT_CLUB': 135}
-- Kullanım önceliği dağılımı: {'HIGH_USAGE_UNRESOLVED': 18, 'ROTATION_USAGE_UNRESOLVED': 12, 'OUT_OF_SNAPSHOT': 135, 'NO_MATCH_ACTIVITY': 101}
+- Sınıf dağılımı: {'NO_RELIABLE_CANDIDATE_IN_SNAPSHOT': 126, 'SAME_CLUB_NAME_REVIEW': 3, 'POSSIBLE_TRANSFER_OR_CLUB_MISMATCH': 2, 'OUT_OF_SNAPSHOT_CLUB': 136}
+- Kullanım önceliği dağılımı: {'HIGH_USAGE_UNRESOLVED': 18, 'ROTATION_USAGE_UNRESOLVED': 12, 'OUT_OF_SNAPSHOT': 136, 'NO_MATCH_ACTIVITY': 101}
 - Kural: Doğrulanmış kapsama yalnız snapshot eşleşmesi girer; manuel alias kullanımı ayrı izlenir ve ağ teyidi tamamlanana kadar doğrulanmış sayılmaz.
 
 ## Scout Bloke Eden Kuyruk
@@ -177,6 +177,7 @@
 - GURAM GIORBELIDZE (ERZURUMSPOR FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 - GYRANO EMELIO KERK (ERZURUMSPOR FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 - IBRAHIM YALATIF DIABATE (ERZURUMSPOR FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
+- LAWRENCE AGYEKUM (ERZURUMSPOR FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 - MARTİN VLAMIDIR RODRİGUEZ TORREJON (ERZURUMSPOR FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 - MATIJA ORBANIC (ERZURUMSPOR FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 - MUSTAFA FETTAHOĞLU (ERZURUMSPOR FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.

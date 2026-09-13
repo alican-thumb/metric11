@@ -1,12 +1,12 @@
 # TFF Oyuncu Profilleri
 
 - Takım filtresi: Yok
-- Profil sayısı: 455
+- Profil sayısı: 457
 - Hata sayısı: 0
 - Ortalama yaş: 25.9
 - Ortalama kalan sözleşme ayı: 22.0
-- 23 yaş ve altı oyuncu: 151
-- 13 ay içinde sözleşmesi bitecek oyuncu: 177
+- 23 yaş ve altı oyuncu: 153
+- 13 ay içinde sözleşmesi bitecek oyuncu: 179
 
 ## Genç Oyuncular
 
@@ -43,6 +43,7 @@
 
 ## Sözleşme Fırsatları
 
+- YASİN ÖZCAN (BEŞİKTAŞ A.Ş.): kalan ay=4, bitiş=2027-01-27
 - AMIR HADZIAHMETOVIC (BEŞİKTAŞ A.Ş.): kalan ay=8, bitiş=2027-05-31
 - BARIŞ ALPER YILMAZ (GALATASARAY A.Ş.): kalan ay=8, bitiş=2027-05-31
 - ENES ALBAK (SAMSUNSPOR A.Ş.): kalan ay=8, bitiş=2027-05-31
@@ -72,4 +73,3 @@
 - ANDREAS SKOV OLSEN (İSTANBUL BAŞAKŞEHİR FK): kalan ay=9, bitiş=2027-06-30
 - ANFERNEE JAMAL DIJKSTEEL (KOCAELİSPOR): kalan ay=9, bitiş=2027-06-30
 - ARDA KIZILDAĞ (GAZİANTEP FUTBOL KULÜBÜ A.Ş.): kalan ay=9, bitiş=2027-06-30
-- ARDA USLUOĞLU (CORENDON ALANYASPOR): kalan ay=9, bitiş=2027-06-30

@@ -1,13 +1,13 @@
 # TFF × Transfermarkt Zenginleştirilmiş Oyuncu Profilleri — 2025-2026
 
-- Toplam TFF oyuncu: 863
+- Toplam TFF oyuncu: 864
 - Lig snapshot kapsamında TFF oyuncu: 728
 - Kulüp içi canonical eşleşme: 400
 - Kulüp içi profil tam-ad eşleşme: 0
 - Kulüp içi token eşleşme: 193
 - Manuel eşleme (ağ teyidi bekleyen): 4
-- Eşleşmedi: 266
-- Doğrulanmış tüm profil kapsamı: %68.7
+- Eşleşmedi: 267
+- Doğrulanmış tüm profil kapsamı: %68.6
 - Doğrulanmış lig snapshot içi kapsama: %81.5
 - Manuel eşleme dahil kullanılabilir lig snapshot içi kapsama: %82.0
 

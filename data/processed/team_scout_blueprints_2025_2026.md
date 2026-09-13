@@ -15,9 +15,9 @@
 - 6 numara / savunma emniyeti: Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
 - Stoper / hava ve temas: Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 1.0. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
 
-## ERZURUMSPOR FK
+## ÇORUM FK
 
-- Güç: None | GF: 0.5 | GA: 2.0 | kart: None
+- Güç: None | GF: 1.75 | GA: 2.25 | kart: None
 - Zafiyet: yeni lig takımı
 - Scout ipucu: Süper Lig deneyimli kaleci, stoper ve santrfor takviyesi — serbest ajan ve kiralık öncelikli.
 - Kaleci / istikrar: Süper Lig'e yeni çıkan takım; Kaleci / istikrar pozisyonunda deneyimli takviye kritik. Adaylar: MOHAMMED AMIN CHERNI, MUHAMMED ŞENGEZER, ANFERNEE JAMAL DIJKSTEEL
@@ -35,9 +35,9 @@
 - Santrfor / skor yükü: Süper Lig'e yeni çıkan takım; Santrfor / skor yükü pozisyonunda deneyimli takviye kritik. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, MOHAMED LAMINE BAYO
 - 6 numara / savunma emniyeti: Süper Lig'e yeni çıkan takım; 6 numara / savunma emniyeti pozisyonunda deneyimli takviye kritik. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
 
-## ÇORUM FK
+## ERZURUMSPOR FK
 
-- Güç: None | GF: 1.75 | GA: 2.25 | kart: None
+- Güç: None | GF: 0.4 | GA: 2.2 | kart: None
 - Zafiyet: yeni lig takımı
 - Scout ipucu: Süper Lig deneyimli kaleci, stoper ve santrfor takviyesi — serbest ajan ve kiralık öncelikli.
 - Kaleci / istikrar: Süper Lig'e yeni çıkan takım; Kaleci / istikrar pozisyonunda deneyimli takviye kritik. Adaylar: MOHAMMED AMIN CHERNI, MUHAMMED ŞENGEZER, ANFERNEE JAMAL DIJKSTEEL
@@ -137,7 +137,7 @@
 
 ## BEŞİKTAŞ A.Ş.
 
-- Güç: 62.5 | GF: 2.25 | GA: 1.0 | kart: 2.32
+- Güç: 62.5 | GF: 2.4 | GA: 0.8 | kart: 2.32
 - Zafiyet: kadro derinliği sınırlı
 - Scout ipucu: Kaliteli rotasyon: büyük maç baskısını karşılayacak kanat/bek derinliği
 - Sol açık / çizgi kırıcı: Büyük maç rotasyonunu besleyecek ve kanat derinliğini artıracak yaratıcı profil. Adaylar: KACPER SZYMON KOZLOWSKI, ERNEST MUÇİ, YUNUS AKGÜN

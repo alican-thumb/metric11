@@ -1,6 +1,6 @@
 {
   "summary": {
-    "tff_profiles": 863,
+    "tff_profiles": 864,
     "tm_clubs": 18,
     "tm_players": 817,
     "snapshot_in_scope_tff_profiles": 728,
@@ -10,22 +10,22 @@
     "manual_alias_pending_network_verification": 4,
     "operationally_mapped_profiles": 597,
     "operational_in_scope_mapped_profiles": 597,
-    "unmatched_profiles": 266,
-    "overall_match_rate": 0.687,
+    "unmatched_profiles": 267,
+    "overall_match_rate": 0.686,
     "in_scope_match_rate": 0.815,
-    "operational_mapping_rate": 0.692,
+    "operational_mapping_rate": 0.691,
     "operational_in_scope_mapping_rate": 0.82,
     "scout_blocking_unmatched": 0,
     "category_counts": {
       "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 126,
       "SAME_CLUB_NAME_REVIEW": 3,
       "POSSIBLE_TRANSFER_OR_CLUB_MISMATCH": 2,
-      "OUT_OF_SNAPSHOT_CLUB": 135
+      "OUT_OF_SNAPSHOT_CLUB": 136
     },
     "review_tier_counts": {
       "HIGH_USAGE_UNRESOLVED": 18,
       "ROTATION_USAGE_UNRESOLVED": 12,
-      "OUT_OF_SNAPSHOT": 135,
+      "OUT_OF_SNAPSHOT": 136,
       "NO_MATCH_ACTIVITY": 101
     },
     "rule": "Doğrulanmış kapsama yalnız snapshot eşleşmesi girer; manuel alias kullanımı ayrı izlenir ve ağ teyidi tamamlanana kadar doğrulanmış sayılmaz."
@@ -2066,6 +2066,22 @@
     {
       "player_id": "2935965",
       "tff_name": "IBRAHIM YALATIF DIABATE",
+      "tff_club": "ERZURUMSPOR FK",
+      "category": "OUT_OF_SNAPSHOT_CLUB",
+      "priority_rank": 5,
+      "blocks_scout_review": false,
+      "review_tier": "OUT_OF_SNAPSHOT",
+      "season_activity": {
+        "starts": 0,
+        "squad_inclusions": 0,
+        "goals": 0
+      },
+      "candidate": null,
+      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
+    },
+    {
+      "player_id": "2938735",
+      "tff_name": "LAWRENCE AGYEKUM",
       "tff_club": "ERZURUMSPOR FK",
       "category": "OUT_OF_SNAPSHOT_CLUB",
       "priority_rank": 5,

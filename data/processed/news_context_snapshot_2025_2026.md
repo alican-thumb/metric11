@@ -1,24 +1,12 @@
 # Haber / Sakat-Cezalı Bağlam Snapshot
 
-- Oluşturma: 2026-09-12T08:36:48.402586+00:00
+- Oluşturma: 2026-09-13T09:00:49.149185+00:00
 - Kaynak: 2
 - Başarılı: 2
-- Sinyal: 3
-- Yapılandırılmış eksik oyuncu kaydı: 6
+- Sinyal: 0
+- Yapılandırılmış eksik oyuncu kaydı: 0
 
 ## Kaynaklar
 
-- beIN SPORTS sakat ve cezalı listesi: ok=True, status=200, sinyal=3, risk=MEDIUM
-  - MEDIUM_CONTEXT: Trendyol Süper Lig de sakat ve cezalı futbolcu listesi | beIN SPORTS Türkiye - beinsports.com.tr/ | anahtar=sakat, cezalı
-  - MEDIUM_CONTEXT: Trendyol Süper Lig'de sakat ve cezalı futbolcu listesi | anahtar=sakat, cezalı
-  - MEDIUM_CONTEXT: Trendyol Süper Lig'de sakat ve cezalı futbolcu listesi # 1 Trendyol Süper Lig'de 4. haftanın sakat ve cezalı futbolcuları bu sayfada... # 2 Arca Çorum FK | Sakat: - | Cezalı: - # 3 Amed Sportif Faliyetler | Sakat: Yira Sor, Hasan Yıldırım, Dilhan Demir | Cezalı: - # 4 Beşiktaş | Sakat: Rıdvan Yılmaz | Cezalı: - # 5 Corendon Alanyaspor | Sakat: Maestro | Cezalı: - # 6 Çaykur Rizespor | Sakat: Khusniddin Alikulov | Cezalı: - # 7 Erzurumspor FK | Sakat: - | Cezalı: - # 8 Eyüpspor | Sakat: Taşkın İl | anahtar=beşiktaş, sakat, cezalı, transfer
+- beIN SPORTS sakat ve cezalı listesi: ok=True, status=200, sinyal=0, risk=MEDIUM
 - FootballToday Süper Lig injuries and suspensions: ok=True, status=200, sinyal=0, risk=MEDIUM
-
-## Yapılandırılmış Eksik Oyuncu Sinyalleri
-
-- Amed Sportif Faliyetler: INJURED | Yira Sor | kaynak=beIN SPORTS sakat ve cezalı listesi | güven=MEDIUM_CONTEXT
-- Amed Sportif Faliyetler: INJURED | Hasan Yıldırım | kaynak=beIN SPORTS sakat ve cezalı listesi | güven=MEDIUM_CONTEXT
-- Amed Sportif Faliyetler: INJURED | Dilhan Demir | kaynak=beIN SPORTS sakat ve cezalı listesi | güven=MEDIUM_CONTEXT
-- Beşiktaş: INJURED | Rıdvan Yılmaz | kaynak=beIN SPORTS sakat ve cezalı listesi | güven=MEDIUM_CONTEXT
-- Corendon Alanyaspor: INJURED | Maestro | kaynak=beIN SPORTS sakat ve cezalı listesi | güven=MEDIUM_CONTEXT
-- Çaykur Rizespor: INJURED | Khusniddin Alikulov | kaynak=beIN SPORTS sakat ve cezalı listesi | güven=MEDIUM_CONTEXT
