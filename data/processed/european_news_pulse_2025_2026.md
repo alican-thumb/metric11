@@ -1,24 +1,18 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-09-13T12:58:35.916818+00:00
-Toplam ilgili haber: 19
+Üretim zamanı: 2026-09-13T14:23:20.616125+00:00
+Toplam ilgili haber: 13
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
 - [Galatasaray, Kocaelispor karşısında hem rövanş hem koltuk peşinde! İşte muhtemel 11'ler](https://www.hurriyet.com.tr/sporarena/galatasaray-kocaelispor-karsisinda-hem-rovans-hem-koltuk-pesinde-iste-muhtemel-11ler-43304777) — Hürriyet Spor · 2026-09-13T04:00:00+00:00 · turnuva=— · kulüp=Galatasaray, Kocaelispor
-- [UEFA kulüpler sıralaması güncellendi! İlk 30'daki tek Türk takımı...](https://www.fotomac.com.tr/fenerbahce/2026/09/12/uefa-kulupler-siralamasi-guncellendi-ilk-30daki-tek-turk-takimi) — Fotomaç · 2026-09-12T23:36:41+03:00 · turnuva=CL · kulüp=Fenerbahçe, Beşiktaş
-- [İsmail Kartal böyle geri döndü...İşte perde arkasında yaşananlar](https://www.fotomac.com.tr/fenerbahce/2026/09/11/ismail-kartal-boyle-geri-donduiste-perde-arkasinda-yasananlar) — Fotomaç · 2026-09-12T23:36:15+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Okan Buruk'tan o isme kesik! Galatasaray tahtı almak için sahaya çıkıyor](https://www.takvim.com.tr/spor/galatasaray/2026/09/12/galatasaray-kocaelispor-muhtemel-11-leao-sane-karari) — Takvim Spor · 2026-09-12T20:09:16+03:00 · turnuva=CL · kulüp=Galatasaray, Kocaelispor
 - [GALATASARAY - BARCELONA MAÇI NE ZAMAN? UCL Galatasaray - Barcelona Maçı Hangi Kanalda, Saat Kaçta? Şampiyonlar Ligi Dev Randevusu İçin Geri Sayım](https://www.cnnturk.com/spor/futbol/galatasaray-barcelona-maci-ne-zaman-ucl-galatasaray-barcelona-maci-hangi-kanalda-saat-kacta-sampiyonlar-ligi-dev-randevusu-3464892) — CNN Türk Spor · 2026-09-12T17:33:11+00:00 · turnuva=CL · kulüp=Galatasaray
-- [UEFA kulüpler sıralaması güncellendi! Beşiktaş, Fenerbahçe, Galatasaray ve Trabzonspor... - Fotomaç](https://news.google.com/rss/articles/CBMisgFBVV95cUxPSlZBcERIZXc0YTlLaTRvWlVuMVdzeWxPWmhEc0x2RmpfWVZ3Qjk0WmFXYXNjdUxmX2hBaW94clhMX256VlN4MW9Tc1lQbjhJM0Zma1FsYzJtQURDaWhEUHM3TGFsSG00cF9CeWc3dUFhVkYwaGFvYVJGTnZKNmpPVXkxcVNSU19mSThJbzlMMjBGS2xWMHB4RzlYVVdkZ3VnRmlNMlVpcF8zR3o0WWYwTFJ3?oc=5) — Fotomaç · 2026-09-12T11:56:59+00:00 · turnuva=— · kulüp=Galatasaray, Fenerbahçe, Beşiktaş, Trabzonspor
 - [Spor yazarları da ikiye bölündü: "İstifasına hiç şaşırmadım" ve "Hepimizi şoke etti"](https://www.takvim.com.tr/spor/fenerbahce/2026/09/11/spor-yazarlari-fenerbahce-roma-macini-koselerinde-yorumladi) — Takvim Spor · 2026-09-11T09:29:43+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe - Roma maçı İtalyan basınında: Türk cehenneminden 1 puan](https://www.takvim.com.tr/spor/fenerbahce/2026/09/10/fenerbahce-roma-maci-italyan-basininda) — Takvim Spor · 2026-09-11T04:37:48+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Şampiyonlar Ligi puan durumu [2026-2027 sezonu]](https://www.takvim.com.tr/galeri/spor/sampiyonlar-ligi-puan-durumu-2026-2027-sezonu) — Takvim Spor · 2026-09-11T01:06:17+03:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe
 - [Türkiye ülke puanı sıralamasında kaçıncı? İşte UEFA'daki yerimiz (2026-2027 Sezonu)](https://www.takvim.com.tr/galeri/spor/turkiye-ulke-puani-siralamasinda-kacinci-iste-uefadaki-yerimiz-2026-2027-sezonu) — Takvim Spor · 2026-09-11T00:42:36+03:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe
-- [Bayern Münih'ten Şampiyonlar Ligi'ne 5 gollü başlangıç!](https://www.takvim.com.tr/spor/2026/09/10/bayern-munihten-sampiyonlar-ligine-5-gollu-baslangic) — Takvim Spor · 2026-09-11T00:29:51+03:00 · turnuva=CL · kulüp=—
-- [Lens'ten Şampiyonlar Ligi'nde inanılmaz geri dönüş! Slavia Prag'ı 90+3'te yıktı](https://www.takvim.com.tr/spor/2026/09/10/lensten-sampiyonlar-liginde-inanilmaz-geri-donus) — Takvim Spor · 2026-09-11T00:17:59+03:00 · turnuva=CL · kulüp=—
-- [Manchester United'dan 4 gollü açılış! Sabah'ı Old Trafford'da dağıttı](https://www.takvim.com.tr/spor/2026/09/10/manchester-uniteddan-4-gollu-acilis-sabahi-old-traffordda-dagitti) — Takvim Spor · 2026-09-11T00:11:23+03:00 · turnuva=CL · kulüp=—
 - [Galatasaray hesap soracak! Cimbom Espen Eskas için UEFA'ya gidiyor](https://www.takvim.com.tr/spor/galatasaray/2026/09/10/galatasaray-espen-eskasi-uefaya-sikayet-edecek) — Takvim Spor · 2026-09-10T17:15:49+03:00 · turnuva=CL · kulüp=Galatasaray
 - [Alex de Souza Fenerbahçe ve Şampiyonlar Ligi ile ilgili konuştu! Unutamadığı maçlar ve güvendiği o isimler](https://www.takvim.com.tr/spor/fenerbahce/2026/09/10/alex-de-souzadan-fenerbahce-ve-marco-asensio-sozleri) — Takvim Spor · 2026-09-10T14:14:09+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [18 yıl sonra 1 puanla merhaba! Fenerbahçe Şampiyonlar Ligi'nde Roma ile 1-1 berabere kaldı](https://www.takvim.com.tr/spor/fenerbahce/2026/09/09/fenerbahce-sampiyonlar-liginde-roma-ile-1-1-berabere-kaldi) — Takvim Spor · 2026-09-10T02:17:01+03:00 · turnuva=CL · kulüp=Fenerbahçe
