@@ -1,14 +1,17 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-09-13T10:29:28.997312+00:00
-Toplam ilgili haber: 16
+Üretim zamanı: 2026-09-13T11:51:57.041310+00:00
+Toplam ilgili haber: 19
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
 - [Galatasaray, Kocaelispor karşısında hem rövanş hem koltuk peşinde! İşte muhtemel 11'ler](https://www.hurriyet.com.tr/sporarena/galatasaray-kocaelispor-karsisinda-hem-rovans-hem-koltuk-pesinde-iste-muhtemel-11ler-43304777) — Hürriyet Spor · 2026-09-13T04:00:00+00:00 · turnuva=— · kulüp=Galatasaray, Kocaelispor
+- [UEFA kulüpler sıralaması güncellendi! İlk 30'daki tek Türk takımı...](https://www.fotomac.com.tr/fenerbahce/2026/09/12/uefa-kulupler-siralamasi-guncellendi-ilk-30daki-tek-turk-takimi) — Fotomaç · 2026-09-12T23:36:41+03:00 · turnuva=CL · kulüp=Fenerbahçe, Beşiktaş
+- [İsmail Kartal böyle geri döndü...İşte perde arkasında yaşananlar](https://www.fotomac.com.tr/fenerbahce/2026/09/11/ismail-kartal-boyle-geri-donduiste-perde-arkasinda-yasananlar) — Fotomaç · 2026-09-12T23:36:15+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Okan Buruk'tan o isme kesik! Galatasaray tahtı almak için sahaya çıkıyor](https://www.takvim.com.tr/spor/galatasaray/2026/09/12/galatasaray-kocaelispor-muhtemel-11-leao-sane-karari) — Takvim Spor · 2026-09-12T20:09:16+03:00 · turnuva=CL · kulüp=Galatasaray, Kocaelispor
 - [GALATASARAY - BARCELONA MAÇI NE ZAMAN? UCL Galatasaray - Barcelona Maçı Hangi Kanalda, Saat Kaçta? Şampiyonlar Ligi Dev Randevusu İçin Geri Sayım](https://www.cnnturk.com/spor/futbol/galatasaray-barcelona-maci-ne-zaman-ucl-galatasaray-barcelona-maci-hangi-kanalda-saat-kacta-sampiyonlar-ligi-dev-randevusu-3464892) — CNN Türk Spor · 2026-09-12T17:33:11+00:00 · turnuva=CL · kulüp=Galatasaray
+- [UEFA kulüpler sıralaması güncellendi! Beşiktaş, Fenerbahçe, Galatasaray ve Trabzonspor... - Fotomaç](https://news.google.com/rss/articles/CBMisgFBVV95cUxPSlZBcERIZXc0YTlLaTRvWlVuMVdzeWxPWmhEc0x2RmpfWVZ3Qjk0WmFXYXNjdUxmX2hBaW94clhMX256VlN4MW9Tc1lQbjhJM0Zma1FsYzJtQURDaWhEUHM3TGFsSG00cF9CeWc3dUFhVkYwaGFvYVJGTnZKNmpPVXkxcVNSU19mSThJbzlMMjBGS2xWMHB4RzlYVVdkZ3VnRmlNMlVpcF8zR3o0WWYwTFJ3?oc=5) — Fotomaç · 2026-09-12T11:56:59+00:00 · turnuva=— · kulüp=Galatasaray, Fenerbahçe, Beşiktaş, Trabzonspor
 - [Spor yazarları da ikiye bölündü: "İstifasına hiç şaşırmadım" ve "Hepimizi şoke etti"](https://www.takvim.com.tr/spor/fenerbahce/2026/09/11/spor-yazarlari-fenerbahce-roma-macini-koselerinde-yorumladi) — Takvim Spor · 2026-09-11T09:29:43+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe - Roma maçı İtalyan basınında: Türk cehenneminden 1 puan](https://www.takvim.com.tr/spor/fenerbahce/2026/09/10/fenerbahce-roma-maci-italyan-basininda) — Takvim Spor · 2026-09-11T04:37:48+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Şampiyonlar Ligi puan durumu [2026-2027 sezonu]](https://www.takvim.com.tr/galeri/spor/sampiyonlar-ligi-puan-durumu-2026-2027-sezonu) — Takvim Spor · 2026-09-11T01:06:17+03:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe

@@ -1,18 +1,18 @@
 # Erken Haber Kaynak Performansı
 
-- Transfer sinyali: 28
+- Transfer sinyali: 30
 - Resmi olaya dönüşen transfer: 12
 - Yayın zamanı bulunan resmi teyit: 5/12
 - İlk görülme zamanı bulunan resmi teyit: 12/12
-- Ölçülen kaynak: 181 / gözlenen kaynak: 305
+- Ölçülen kaynak: 181 / gözlenen kaynak: 306
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 3
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 4090
+- Defterde korunan ilk iddia gözlemi: 4091
 
 ## Kanal Kapsamı
 
-- Google News: 221 haber, 30/30 başarılı sorgu.
+- Google News: 222 haber, 30/30 başarılı sorgu.
 - Telegram: 6 mesaj, 8/8 erişilebilir kanal.
 - X: durum=MISSING_CREDENTIALS, gönderi=0, yapılandırılmış hesap=45.
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 4087 | 1317 | 5 | — | 0.3 | %99.6 | 0.4 | FIRST_SEEN_BOUND |
+| Google News / medya | 4088 | 1318 | 5 | — | 0.3 | %99.6 | 0.4 | FIRST_SEEN_BOUND |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -292,6 +292,7 @@
 | Kars Manşet | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Kuzey Ekspres | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Küçük Saat / Adana Haberleri | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
+| Kırşehir Çiğdem | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | MANŞET İZ | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Medyabar | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Mshale | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
