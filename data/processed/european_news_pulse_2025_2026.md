@@ -1,13 +1,14 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-09-13T14:23:20.616125+00:00
-Toplam ilgili haber: 13
+Üretim zamanı: 2026-09-13T16:19:11.232686+00:00
+Toplam ilgili haber: 14
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [G.Saray'ın rakibi hata yapmadı!](https://www.haberturk.com/spor/lille-troyes-mac-sonucu-iste-lille-troyes-maci-ozeti-ve-golleri-fransa-ligue-1-3912200) — Haberturk Spor · 2026-09-13T15:39:52+00:00 · turnuva=CL · kulüp=Galatasaray
 - [Galatasaray, Kocaelispor karşısında hem rövanş hem koltuk peşinde! İşte muhtemel 11'ler](https://www.hurriyet.com.tr/sporarena/galatasaray-kocaelispor-karsisinda-hem-rovans-hem-koltuk-pesinde-iste-muhtemel-11ler-43304777) — Hürriyet Spor · 2026-09-13T04:00:00+00:00 · turnuva=— · kulüp=Galatasaray, Kocaelispor
-- [Okan Buruk'tan o isme kesik! Galatasaray tahtı almak için sahaya çıkıyor](https://www.takvim.com.tr/spor/galatasaray/2026/09/12/galatasaray-kocaelispor-muhtemel-11-leao-sane-karari) — Takvim Spor · 2026-09-12T20:09:16+03:00 · turnuva=CL · kulüp=Galatasaray, Kocaelispor
+- [Okan Buruk kararını verdi! İlk 11'de Leao tercihi](https://www.takvim.com.tr/spor/galatasaray/2026/09/12/okan-buruk-kararini-verdi-ilk-11de-leao-tercihi) — Takvim Spor · 2026-09-12T20:09:16+03:00 · turnuva=CL · kulüp=Galatasaray, Kocaelispor
 - [GALATASARAY - BARCELONA MAÇI NE ZAMAN? UCL Galatasaray - Barcelona Maçı Hangi Kanalda, Saat Kaçta? Şampiyonlar Ligi Dev Randevusu İçin Geri Sayım](https://www.cnnturk.com/spor/futbol/galatasaray-barcelona-maci-ne-zaman-ucl-galatasaray-barcelona-maci-hangi-kanalda-saat-kacta-sampiyonlar-ligi-dev-randevusu-3464892) — CNN Türk Spor · 2026-09-12T17:33:11+00:00 · turnuva=CL · kulüp=Galatasaray
 - [Spor yazarları da ikiye bölündü: "İstifasına hiç şaşırmadım" ve "Hepimizi şoke etti"](https://www.takvim.com.tr/spor/fenerbahce/2026/09/11/spor-yazarlari-fenerbahce-roma-macini-koselerinde-yorumladi) — Takvim Spor · 2026-09-11T09:29:43+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe - Roma maçı İtalyan basınında: Türk cehenneminden 1 puan](https://www.takvim.com.tr/spor/fenerbahce/2026/09/10/fenerbahce-roma-maci-italyan-basininda) — Takvim Spor · 2026-09-11T04:37:48+03:00 · turnuva=CL · kulüp=Fenerbahçe
