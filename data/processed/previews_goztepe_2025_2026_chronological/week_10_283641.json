@@ -558,7 +558,7 @@
       {
         "player_id": "2820847",
         "name": "ISHOLA JUNIOR  OLAITAN",
-        "goal_threat_score": 5.19,
+        "goal_threat_score": 3.53,
         "candidate_type": "primary+impact_sub",
         "recent_starts": 5,
         "season_goals_before_match": 1,
@@ -570,7 +570,12 @@
         "penalty_goals_before_match": 0,
         "recent_bench": 1,
         "cards_before_match": 1,
-        "recent_cards": 1
+        "recent_cards": 1,
+        "quality_adjustment": {
+          "multiplier": 0.68,
+          "reason": "Top 5 sıralama etkisini düşür veya aday tipini yeniden kontrol et.",
+          "source": "goal_candidate_segment_backtest"
+        }
       },
       {
         "player_id": "2685818",
@@ -939,6 +944,35 @@
         "commercial_note": "Maliyet/katkı dengesi piyasa değeriyle doğrulanmalı."
       },
       {
+        "player_name": "KAZEEM ADEREMI J. OLAIGBE",
+        "current_team": "TRABZONSPOR A.Ş.",
+        "target_role": "Kanat / çizgi kırıcı",
+        "role_key": "LW_CREATOR",
+        "role_fit_score": 91.84,
+        "position_confidence": "HIGH",
+        "age": 23,
+        "economy_score": 32.0,
+        "current_expected_goals_for": 1.0,
+        "current_expected_goals_against": 1.51,
+        "simulated_expected_goals_for": 1.17,
+        "simulated_expected_goals_against": 1.49,
+        "xg_for_delta": 0.17,
+        "xg_against_delta": 0.02,
+        "goal_edge_delta": 0.19,
+        "simulated_target_win_probability": 0.298,
+        "simulated_draw_probability": 0.257,
+        "simulated_opponent_win_probability": 0.446,
+        "simulated_scoreline": {
+          "target_goals": 1,
+          "opponent_goals": 1,
+          "score": "1-1",
+          "probability": 0.122
+        },
+        "impact_label": "LOW_POSITIVE",
+        "why": "Poz. grup: FWD (HIGH). İlk 11: 26, Gol: 0, Kart: 1. Sözleşme fırsatı: HIGH. Resale potansiyeli yüksek.",
+        "commercial_note": "Al-sat değeri yüksek."
+      },
+      {
         "player_name": "BARIŞ ALPER YILMAZ",
         "current_team": "GALATASARAY A.Ş.",
         "target_role": "Kanat / çizgi kırıcı",
@@ -968,62 +1002,33 @@
         "commercial_note": "Maliyet/katkı dengesi piyasa değeriyle doğrulanmalı."
       },
       {
-        "player_name": "FELIPE AUGUSTO DA SILVA",
-        "current_team": "TRABZONSPOR A.Ş.",
+        "player_name": "GÖKTAN GÜRPÜZ",
+        "current_team": "GENÇLERBİRLİĞİ",
         "target_role": "Kanat / çizgi kırıcı",
         "role_key": "LW_CREATOR",
-        "role_fit_score": 84.7,
-        "position_confidence": "DERIVED",
-        "age": 22,
-        "economy_score": 22.0,
+        "role_fit_score": 86.35,
+        "position_confidence": "HIGH",
+        "age": 23,
+        "economy_score": 28.0,
         "current_expected_goals_for": 1.0,
         "current_expected_goals_against": 1.51,
-        "simulated_expected_goals_for": 1.22,
-        "simulated_expected_goals_against": 1.5,
-        "xg_for_delta": 0.22,
-        "xg_against_delta": 0.01,
-        "goal_edge_delta": 0.23,
-        "simulated_target_win_probability": 0.309,
-        "simulated_draw_probability": 0.254,
-        "simulated_opponent_win_probability": 0.437,
+        "simulated_expected_goals_for": 1.17,
+        "simulated_expected_goals_against": 1.49,
+        "xg_for_delta": 0.17,
+        "xg_against_delta": 0.02,
+        "goal_edge_delta": 0.19,
+        "simulated_target_win_probability": 0.298,
+        "simulated_draw_probability": 0.257,
+        "simulated_opponent_win_probability": 0.446,
         "simulated_scoreline": {
           "target_goals": 1,
           "opponent_goals": 1,
           "score": "1-1",
-          "probability": 0.121
+          "probability": 0.122
         },
         "impact_label": "LOW_POSITIVE",
-        "why": "Poz. grup: FWD (DERIVED). İlk 11: 26, Gol: 13, Kart: 1. Resale potansiyeli yüksek.",
+        "why": "Poz. grup: MID (HIGH). İlk 11: 25, Gol: 0, Kart: 2. Sözleşme fırsatı: MEDIUM. Resale potansiyeli yüksek.",
         "commercial_note": "Al-sat değeri yüksek."
-      },
-      {
-        "player_name": "ELDOR SHOMURODOV",
-        "current_team": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ",
-        "target_role": "Kanat / çizgi kırıcı",
-        "role_key": "LW_CREATOR",
-        "role_fit_score": 80.89,
-        "position_confidence": "DERIVED",
-        "age": 31,
-        "economy_score": -4.5,
-        "current_expected_goals_for": 1.0,
-        "current_expected_goals_against": 1.51,
-        "simulated_expected_goals_for": 1.23,
-        "simulated_expected_goals_against": 1.5,
-        "xg_for_delta": 0.23,
-        "xg_against_delta": 0.01,
-        "goal_edge_delta": 0.24,
-        "simulated_target_win_probability": 0.311,
-        "simulated_draw_probability": 0.254,
-        "simulated_opponent_win_probability": 0.435,
-        "simulated_scoreline": {
-          "target_goals": 1,
-          "opponent_goals": 1,
-          "score": "1-1",
-          "probability": 0.12
-        },
-        "impact_label": "LOW_POSITIVE",
-        "why": "Poz. grup: FWD (DERIVED). İlk 11: 34, Gol: 22, Kart: 0.",
-        "commercial_note": "Kısa vadeli sportif katkı adayı."
       }
     ]
   },

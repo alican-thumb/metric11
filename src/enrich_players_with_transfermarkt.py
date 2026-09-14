@@ -32,6 +32,18 @@ def main() -> None:
     # sabitlendi. Eskiden bu SEASON'a bağlıydı ve sözleşme uzatmaları/yeni transferler
     # hiç yansımıyordu (bkz. 2026-09-13 "Orkun Kökçü sözleşmesi eski" bulgusu).
     parser.add_argument("--tm-input", default=str(PROCESSED_DIR / "transfermarkt_super_lig_squads_2026_2027.json"))
+    # 2026-27 kadro anlık görüntüsü 2025-26'dan (817) çok daha küçük (529) — muhtemelen
+    # yalnızca o an sitede listelenen oyuncuları kapsıyor, kadro dışı/rotasyon dışı
+    # kalanları değil. Saf geçiş bunu fallback OLMADAN yapınca eşleşme kapsamı 593'ten
+    # 387'ye düştü, scout blocking 0'dan 10'a çıktı (bkz. 2026-09-14 heartbeat bulgusu).
+    # Artık 2026-27 birincil (tazelik kazanır), eksik kalanlar için 2025-26 tamamlayıcı
+    # olarak birleştiriliyor (kapsam geri kazanılır, tazelik kaybolmaz).
+    parser.add_argument(
+        "--tm-fallback-input",
+        action="append",
+        default=[str(PROCESSED_DIR / f"transfermarkt_super_lig_squads_{SEASON}.json")],
+        help="Birincil kadro dosyasında olmayan oyuncular için tamamlayıcı Transfermarkt kadro dosyaları.",
+    )
     parser.add_argument("--tm-profiles", default=str(PROCESSED_DIR / f"transfermarkt_super_lig_player_profiles_{SEASON}.json"))
     parser.add_argument("--manual-aliases", default="data/manual/tm_player_manual_aliases.json")
     parser.add_argument("--output", default=str(PROCESSED_DIR / f"tff_player_profiles_enriched_{SEASON}.json"))
@@ -53,13 +65,29 @@ def main() -> None:
     }
 
     # Constrain candidates to their club so same-name and transferred players
-    # cannot be silently attached to a different current squad.
+    # cannot be silently attached to a different current squad. Birincil (--tm-input,
+    # taze) kulüp listesi önce eklenir; --tm-fallback-input dosyalarındaki oyuncular
+    # yalnızca aynı kulüpte transfermarkt_id'si HENÜZ yoksa eklenir — böylece tazelik
+    # (sözleşme/değer) hep birincil kaynaktan gelir, kapsam ise düşmez.
     tm_by_club: dict[str, list[dict]] = {}
-    for club in tm_payload.get("clubs", []):
-        club_key = normalize_team_name(club.get("team_name"))
-        for p in club.get("players", []):
-            if club_key:
-                profile = profile_by_id.get(str(p.get("transfermarkt_id")), {})
+    seen_ids_by_club: dict[str, set[str]] = {}
+    tm_sources = [tm_path] + [Path(value) for value in args.tm_fallback_input]
+    for source_idx, source_path in enumerate(tm_sources):
+        if not source_path.exists():
+            continue
+        source_payload = tm_payload if source_idx == 0 else json.loads(source_path.read_text(encoding="utf-8"))
+        for club in source_payload.get("clubs", []):
+            club_key = normalize_team_name(club.get("team_name"))
+            if not club_key:
+                continue
+            seen_ids = seen_ids_by_club.setdefault(club_key, set())
+            for p in club.get("players", []):
+                tm_id = str(p.get("transfermarkt_id")) if p.get("transfermarkt_id") else None
+                if tm_id and tm_id in seen_ids:
+                    continue
+                if tm_id:
+                    seen_ids.add(tm_id)
+                profile = profile_by_id.get(tm_id or "", {})
                 identity_names = [
                     value for value in (p.get("name"), profile.get("full_name"), profile.get("display_name")) if value
                 ]

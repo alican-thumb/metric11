@@ -13,6 +13,14 @@ TEAM_ALIASES = {
     "NATURA DÜNYASI GENÇLERBİRLİĞİ": "GENÇLERBİRLİĞİ",
     "FATİH KARAGÜMRÜK A.Ş.": "MISIRLI.COM.TR FATİH KARAGÜMRÜK",
     "AMED SPORTİF FAALİYETLER": "AMED SFK",
+    # TFF'nin oyuncu profil sayfası ("Kulüp" alanı) sponsorsuz/kısa isim kullanıyor,
+    # Transfermarkt kadro dosyaları sponsorlu resmi isim kullanıyor — 2026-09-13'te
+    # tüm TFF profilleri yeniden çekilince (bkz. collect_tff_player_profiles.py
+    # staleness düzeltmesi) bu üç takımın oyuncuları TM eşleşmesinden düşüverdi
+    # (96 oyuncu, bkz. 2026-09-14 "in_scope 704→558" regresyonu).
+    "EYÜPSPOR": "İKAS EYÜPSPOR",
+    "İSTANBUL BAŞAKŞEHİR FK": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ",
+    "ARCA ÇORUM FK": "ÇORUM FK",
 }
 
 LATIN_NAME_TRANSLATION = str.maketrans(

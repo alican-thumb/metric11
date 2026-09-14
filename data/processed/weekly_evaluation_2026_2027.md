@@ -4,12 +4,12 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 
 ## Genel Karne
 
-- Değerlendirilen maç: **42**
-- İsabet: **16/42** (%38)
+- Değerlendirilen maç: **44**
+- İsabet: **17/44** (%39)
 - Beraberlik yakalama: **2/8** (%25)
-- Yüksek güvenli maç isabeti: **7/13** (%54)
+- Yüksek güvenli maç isabeti: **8/14** (%57)
 
-## Hafta 5 — 2/6 isabet (%33)
+## Hafta 5 — 3/8 isabet (%38)
 
 | Maç | Skor | Tahmin | Sonuç | Güven |
 | --- | --- | --- | --- | --- |
@@ -19,6 +19,8 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 | CORENDON ALANYASPOR - GÖZTEPE A.Ş. | 2 - 2 | Beraberlik | ✅ | LOW |
 | TÜMOSAN KONYASPOR - TRABZONSPOR A.Ş. | 1 - 0 | Deplasman | ❌ | MEDIUM |
 | GENÇLERBİRLİĞİ - KASIMPAŞA A.Ş. | 1 - 2 | Ev | ❌ | HIGH |
+| AMED SPORTİF FAALİYETLER - İSTANBUL BAŞAKŞEHİR FK | 5 - 0 | Deplasman | ❌ | MEDIUM |
+| GALATASARAY A.Ş. - KOCAELİSPOR | 1 - 0 | Ev | ✅ | HIGH |
 
 ## Hafta 4 — 2/9 isabet (%22)
 

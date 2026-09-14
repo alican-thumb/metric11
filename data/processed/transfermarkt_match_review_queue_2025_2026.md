@@ -2,66 +2,54 @@
 
 - TFF profil: 864
 - Transfermarkt snapshot: 18/18 kulüp, 817 oyuncu
-- Snapshot kapsamındaki TFF profil: 512
-- Doğrulanmış snapshot eşleşmesi: 387
-- Manuel eşleme ile kullanılan profil: 9
-- Ağ teyidi bekleyen manuel eşleme: 9
-- Çözülmemiş profil: 468
-- Doğrulanmış genel eşleşme oranı: %44.8
-- Doğrulanmış snapshot içi eşleşme oranı: %75.6
-- Manuel eşleme dahil kullanılabilir snapshot içi kapsama: %68.8
-- Scout incelemesini bloke eden eşleşmeyen oyuncu: 10
-- Sınıf dağılımı: {'SAME_CLUB_NAME_REVIEW': 108, 'NO_RELIABLE_CANDIDATE_IN_SNAPSHOT': 51, 'OUT_OF_SNAPSHOT_CLUB': 308, 'POSSIBLE_TRANSFER_OR_CLUB_MISMATCH': 1}
-- Kullanım önceliği dağılımı: {'SCOUT_BLOCKING': 10, 'HIGH_USAGE_UNRESOLVED': 51, 'ROTATION_USAGE_UNRESOLVED': 93, 'OUT_OF_SNAPSHOT': 302, 'NO_MATCH_ACTIVITY': 12}
+- Snapshot kapsamındaki TFF profil: 581
+- Doğrulanmış snapshot eşleşmesi: 607
+- Manuel eşleme ile kullanılan profil: 4
+- Ağ teyidi bekleyen manuel eşleme: 4
+- Çözülmemiş profil: 253
+- Doğrulanmış genel eşleşme oranı: %70.3
+- Doğrulanmış snapshot içi eşleşme oranı: %104.5
+- Manuel eşleme dahil kullanılabilir snapshot içi kapsama: %93.3
+- Scout incelemesini bloke eden eşleşmeyen oyuncu: 3
+- Sınıf dağılımı: {'OUT_OF_SNAPSHOT_CLUB': 214, 'NO_RELIABLE_CANDIDATE_IN_SNAPSHOT': 37, 'SAME_CLUB_NAME_REVIEW': 1, 'POSSIBLE_TRANSFER_OR_CLUB_MISMATCH': 1}
+- Kullanım önceliği dağılımı: {'SCOUT_BLOCKING': 3, 'HIGH_USAGE_UNRESOLVED': 17, 'ROTATION_USAGE_UNRESOLVED': 10, 'OUT_OF_SNAPSHOT': 211, 'NO_MATCH_ACTIVITY': 12}
 - Kural: Doğrulanmış kapsama yalnız snapshot eşleşmesi girer; manuel alias kullanımı ayrı izlenir ve ağ teyidi tamamlanana kadar doğrulanmış sayılmaz.
 
 ## Scout Bloke Eden Kuyruk
 
-- MATEUSZ LIS (GÖZTEPE A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=SCOUT_BLOCKING, ilk11=34, gol=0, scout_blok=True, aday=Mateusz Lis (GÖZTEPE A.Ş., skor=1.0, ortak=LIS,MATEUSZ). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- HELITON JORGE TITO DOS SANTOS (GÖZTEPE A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=SCOUT_BLOCKING, ilk11=32, gol=0, scout_blok=True, aday=Héliton (GÖZTEPE A.Ş., skor=1.0, ortak=HELITON). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- KAZEEM ADEREMI J. OLAIGBE (TRABZONSPOR A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=SCOUT_BLOCKING, ilk11=26, gol=0, scout_blok=True, aday=Kazeem Olaigbe (TRABZONSPOR A.Ş., skor=0.737, ortak=KAZEEM,OLAIGBE). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- MOHAMMED AMIN CHERNI (GÖZTEPE A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=SCOUT_BLOCKING, ilk11=34, gol=0, scout_blok=True, aday=Amin Cherni (GÖZTEPE A.Ş., skor=0.71, ortak=AMIN,CHERNI). Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
-- MUHAMMED ŞENGEZER (İSTANBUL BAŞAKŞEHİR FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=SCOUT_BLOCKING, ilk11=33, gol=0, scout_blok=True, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 - KENNETH IMMANUEL PAAL (ANTALYASPOR A.Ş.): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=SCOUT_BLOCKING, ilk11=32, gol=0, scout_blok=True, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 - IVO GRBIC (MISIRLICOMTR FATİH KARAGÜMRÜK A.Ş.): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=SCOUT_BLOCKING, ilk11=32, gol=0, scout_blok=True, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- JEROME OPOKU (İSTANBUL BAŞAKŞEHİR FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=SCOUT_BLOCKING, ilk11=31, gol=1, scout_blok=True, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 - LASZLO BENES (METRO HOLDİNG KAYSERİSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=SCOUT_BLOCKING, ilk11=29, gol=7, scout_blok=True, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- BERKAY ÖZCAN (İSTANBUL BAŞAKŞEHİR FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=SCOUT_BLOCKING, ilk11=26, gol=0, scout_blok=True, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 
 ## Manuel Eşleme Ağ Teyidi Bekleyenler
 
 - KEVIN OGHENETEGA TAMARAEBI BAKUMO ABRAHAM (BEŞİKTAŞ A.Ş.): sınıf=MANUAL_ALIAS_PENDING_NETWORK_VERIFY, öncelik=MANUAL_VERIFY_HIGH_USAGE, ilk11=15, gol=7, scout_blok=False, aday=Kevin (BEŞİKTAŞ A.Ş., skor=1.0, ortak=-). Manuel eşleme operasyonda kullanılıyor; Transfermarkt profil bağlantısı ile ağ teyidi bekleniyor.
-- ATTILA ARPAD SZALAI (KASIMPAŞA A.Ş.): sınıf=MANUAL_ALIAS_PENDING_NETWORK_VERIFY, öncelik=MANUAL_VERIFY_HIGH_USAGE, ilk11=14, gol=0, scout_blok=False, aday=Attila Szalai (KASIMPAŞA A.Ş., skor=1.0, ortak=-). Manuel eşleme operasyonda kullanılıyor; Transfermarkt profil bağlantısı ile ağ teyidi bekleniyor.
 - DENIS MIHAI DRAGUS (TRABZONSPOR A.Ş.): sınıf=MANUAL_ALIAS_PENDING_NETWORK_VERIFY, öncelik=MANUAL_VERIFY_HIGH_USAGE, ilk11=13, gol=0, scout_blok=False, aday=Denis Drăguș (TRABZONSPOR A.Ş., skor=1.0, ortak=-). Manuel eşleme operasyonda kullanılıyor; Transfermarkt profil bağlantısı ile ağ teyidi bekleniyor.
 - RHALDNEY NORBERTO SIMIAO GOMES (GÖZTEPE A.Ş.): sınıf=MANUAL_ALIAS_PENDING_NETWORK_VERIFY, öncelik=MANUAL_VERIFY_HIGH_USAGE, ilk11=12, gol=1, scout_blok=False, aday=Rhaldney (GÖZTEPE A.Ş., skor=1.0, ortak=-). Manuel eşleme operasyonda kullanılıyor; Transfermarkt profil bağlantısı ile ağ teyidi bekleniyor.
-- UCHENNA OGUNDU (CORENDON ALANYASPOR): sınıf=MANUAL_ALIAS_PENDING_NETWORK_VERIFY, öncelik=MANUAL_VERIFY_HIGH_USAGE, ilk11=11, gol=2, scout_blok=False, aday=Uchenna Ogundu (CORENDON ALANYASPOR, skor=1.0, ortak=-). Manuel eşleme operasyonda kullanılıyor; Transfermarkt profil bağlantısı ile ağ teyidi bekleniyor.
-- YOUSSEF EN NESYRI (FENERBAHÇE A.Ş.): sınıf=MANUAL_ALIAS_PENDING_NETWORK_VERIFY, öncelik=MANUAL_VERIFY_HIGH_USAGE, ilk11=11, gol=7, scout_blok=False, aday=Youssef En-Nesyri (FENERBAHÇE A.Ş., skor=1.0, ortak=-). Manuel eşleme operasyonda kullanılıyor; Transfermarkt profil bağlantısı ile ağ teyidi bekleniyor.
-- ALASSANE NDAO (TÜMOSAN KONYASPOR): sınıf=MANUAL_ALIAS_PENDING_NETWORK_VERIFY, öncelik=MANUAL_VERIFY_HIGH_USAGE, ilk11=11, gol=2, scout_blok=False, aday=Alassane Ndao (TÜMOSAN KONYASPOR, skor=1.0, ortak=-). Manuel eşleme operasyonda kullanılıyor; Transfermarkt profil bağlantısı ile ağ teyidi bekleniyor.
 - GABRIEL ARMANDO DE ABREU (BEŞİKTAŞ A.Ş.): sınıf=MANUAL_ALIAS_PENDING_NETWORK_VERIFY, öncelik=MANUAL_VERIFY_HIGH_USAGE, ilk11=10, gol=0, scout_blok=False, aday=Gabriel (BEŞİKTAŞ A.Ş., skor=1.0, ortak=-). Manuel eşleme operasyonda kullanılıyor; Transfermarkt profil bağlantısı ile ağ teyidi bekleniyor.
-- JHON JADER DURAN PALACIOS (FENERBAHÇE A.Ş.): sınıf=MANUAL_ALIAS_PENDING_NETWORK_VERIFY, öncelik=MANUAL_VERIFY_HIGH_USAGE, ilk11=6, gol=3, scout_blok=False, aday=Jhon Durán (FENERBAHÇE A.Ş., skor=1.0, ortak=-). Manuel eşleme operasyonda kullanılıyor; Transfermarkt profil bağlantısı ile ağ teyidi bekleniyor.
 
 ## 18 Takım Kapsama Tablosu
 
 | Takım | TFF Profil | TM Kadro | Doğrulanmış | Manuel | Açık | Doğrulanmış Oran | Kullanılabilir Oran |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| BEŞİKTAŞ A.Ş. | 47 | 50 | 29 | 2 | 16 | %61.7 | %66.0 |
-| CORENDON ALANYASPOR | 33 | 37 | 23 | 1 | 9 | %69.7 | %72.7 |
-| FENERBAHÇE A.Ş. | 44 | 50 | 22 | 2 | 20 | %50.0 | %54.5 |
-| GALATASARAY A.Ş. | 41 | 44 | 28 | 0 | 13 | %68.3 | %68.3 |
-| GAZİANTEP FUTBOL KULÜBÜ A.Ş. | 41 | 45 | 30 | 0 | 11 | %73.2 | %73.2 |
-| GENÇLERBİRLİĞİ | 39 | 48 | 27 | 0 | 12 | %69.2 | %69.2 |
-| GÖZTEPE A.Ş. | 35 | 36 | 22 | 1 | 12 | %62.9 | %65.7 |
+| BEŞİKTAŞ A.Ş. | 47 | 50 | 43 | 2 | 2 | %91.5 | %95.7 |
+| CORENDON ALANYASPOR | 33 | 37 | 30 | 0 | 3 | %90.9 | %90.9 |
+| FENERBAHÇE A.Ş. | 44 | 50 | 35 | 0 | 9 | %79.5 | %79.5 |
+| GALATASARAY A.Ş. | 41 | 44 | 40 | 0 | 1 | %97.6 | %97.6 |
+| GAZİANTEP FUTBOL KULÜBÜ A.Ş. | 41 | 45 | 38 | 0 | 3 | %92.7 | %92.7 |
+| GENÇLERBİRLİĞİ | 39 | 48 | 38 | 0 | 1 | %97.4 | %97.4 |
+| GÖZTEPE A.Ş. | 35 | 36 | 29 | 1 | 5 | %82.9 | %85.7 |
 | HESAP.COM ANTALYASPOR | 0 | 48 | 0 | 0 | 0 | %0 | %0 |
-| KASIMPAŞA A.Ş. | 38 | 60 | 30 | 1 | 7 | %78.9 | %81.6 |
-| KOCAELİSPOR | 34 | 39 | 26 | 0 | 8 | %76.5 | %76.5 |
+| KASIMPAŞA A.Ş. | 38 | 60 | 35 | 0 | 3 | %92.1 | %92.1 |
+| KOCAELİSPOR | 34 | 39 | 33 | 0 | 1 | %97.1 | %97.1 |
 | MISIRLI.COM.TR FATİH KARAGÜMRÜK | 0 | 46 | 0 | 0 | 0 | %0 | %0 |
-| RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ | 0 | 32 | 0 | 0 | 0 | %0 | %0 |
-| SAMSUNSPOR A.Ş. | 39 | 44 | 25 | 0 | 14 | %64.1 | %64.1 |
-| TRABZONSPOR A.Ş. | 43 | 42 | 28 | 1 | 14 | %65.1 | %67.4 |
-| TÜMOSAN KONYASPOR | 43 | 48 | 27 | 1 | 15 | %62.8 | %65.1 |
-| ZECORNER KAYSERİSPOR | 1 | 51 | 0 | 0 | 1 | %0.0 | %0.0 |
-| ÇAYKUR RİZESPOR A.Ş. | 34 | 35 | 26 | 0 | 8 | %76.5 | %76.5 |
-| İKAS EYÜPSPOR | 0 | 62 | 0 | 0 | 0 | %0 | %0 |
+| RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ | 30 | 32 | 29 | 0 | 1 | %96.7 | %96.7 |
+| SAMSUNSPOR A.Ş. | 39 | 44 | 35 | 0 | 4 | %89.7 | %89.7 |
+| TRABZONSPOR A.Ş. | 43 | 42 | 39 | 1 | 3 | %90.7 | %93.0 |
+| TÜMOSAN KONYASPOR | 43 | 48 | 42 | 0 | 1 | %97.7 | %97.7 |
+| ZECORNER KAYSERİSPOR | 1 | 51 | 1 | 0 | 0 | %100.0 | %100.0 |
+| ÇAYKUR RİZESPOR A.Ş. | 34 | 35 | 34 | 0 | 0 | %100.0 | %100.0 |
+| İKAS EYÜPSPOR | 39 | 62 | 37 | 0 | 2 | %94.9 | %94.9 |
 
 ## Tüm Eşleşmeyen Kayıtlar (Takım Bazında)
 
@@ -144,36 +132,6 @@
 - UFUK AKYOL (ANTALYASPOR A.Ş.): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 - ÖMER FARUK BEYAZ (ANTALYASPOR A.Ş.): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 
-### ARCA ÇORUM FK
-
-- HRVOJE SMOLCIC (ARCA ÇORUM FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=26, gol=1, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- GÖKTAN GÜRPÜZ (ARCA ÇORUM FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=25, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- MARCOS FELIPE DE FREITAS MONTEIRO (ARCA ÇORUM FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=19, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- GÖKHAN SAZDAĞI (ARCA ÇORUM FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=17, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- CENGİZ ÜNDER (ARCA ÇORUM FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=14, gol=5, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- THIAM MAME BABA (ARCA ÇORUM FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=13, gol=2, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- BERAT AYBERK ÖZDEMİR (ARCA ÇORUM FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=10, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- ÇAĞLAR SÖYÜNCÜ (ARCA ÇORUM FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=10, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- ERHAN ERENTÜRK (ARCA ÇORUM FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=7, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- DANİJEL ALEKSİC (ARCA ÇORUM FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=3, gol=1, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- SERDAR SAATÇI (ARCA ÇORUM FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=2, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- AHMED ILDIZ (ARCA ÇORUM FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- ALEXANDRE MANUEL PENETRA CORREIRA (ARCA ÇORUM FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- ALEXANDROS KYZIRIDIS (ARCA ÇORUM FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- ALFREDO KULEMBE RIBEIRO (ARCA ÇORUM FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- ARDA HİLMİ ŞENGÜL (ARCA ÇORUM FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- CEMALİ SERTEL (ARCA ÇORUM FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- EMİRCAN GÜRLÜK (ARCA ÇORUM FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- ERMIN MAHMIC (ARCA ÇORUM FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- HASAN ABDULKAREEM JABBAR SAYYID (ARCA ÇORUM FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- HÜSEYİN BULUT (ARCA ÇORUM FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- JESUS ANDRES RAMIREZ DIAZ (ARCA ÇORUM FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- MARKUS SEEHUSEN KARLSBAKK (ARCA ÇORUM FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- MOHAMED DIOMANDE (ARCA ÇORUM FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- SEBASTIAN ANDREI BORZA (ARCA ÇORUM FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- YLBER RAMADANI (ARCA ÇORUM FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- YOUSSOUFA MOUKOKO (ARCA ÇORUM FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-
 ### ARTI DEĞER VAN SPOR FUTBOL KULÜBÜ
 
 - ALPER EMRE DEMİROL (ARTI DEĞER VAN SPOR FUTBOL KULÜBÜ): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=1, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
@@ -210,22 +168,8 @@
 
 ### BEŞİKTAŞ A.Ş.
 
-- ERSİN DESTANOĞLU (BEŞİKTAŞ A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=25, gol=0, scout_blok=False, aday=Ersin Destanoğlu (BEŞİKTAŞ A.Ş., skor=1.0, ortak=DESTANOGLU,ERSIN). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- EL BILAL TOURE (BEŞİKTAŞ A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=19, gol=5, scout_blok=False, aday=El Bilal Touré (BEŞİKTAŞ A.Ş., skor=1.0, ortak=BILAL,EL,TOURE). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- FELIX OHIS UDUOKHAI (BEŞİKTAŞ A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=12, gol=0, scout_blok=False, aday=Felix Uduokhai (BEŞİKTAŞ A.Ş., skor=0.848, ortak=FELIX,UDUOKHAI). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- KRİSTJAN ASLLANİ (BEŞİKTAŞ A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=11, gol=2, scout_blok=False, aday=Kristjan Asllani (BEŞİKTAŞ A.Ş., skor=1.0, ortak=ASLLANI,KRISTJAN). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
 - RAFAEL ALEXANDRE FERNANDES FERREIRA DA SILVA (BEŞİKTAŞ A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=10, gol=5, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - JOAO PEDRO FERREIRA DA SILVA (BEŞİKTAŞ A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=5, gol=5, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
-- DAVID JURASEK (BEŞİKTAŞ A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=7, gol=1, scout_blok=False, aday=David Jurásek (BEŞİKTAŞ A.Ş., skor=1.0, ortak=DAVID,JURASEK). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- JONAS SVENSSON (BEŞİKTAŞ A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=4, gol=0, scout_blok=False, aday=Jonas Svensson (BEŞİKTAŞ A.Ş., skor=1.0, ortak=JONAS,SVENSSON). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- DEMİR EGE TIKNAZ (BEŞİKTAŞ A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=2, gol=0, scout_blok=False, aday=Demir Ege Tıknaz (BEŞİKTAŞ A.Ş., skor=1.0, ortak=DEMIR,EGE,TIKNAZ). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- NECİP UYSAL (BEŞİKTAŞ A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=1, gol=0, scout_blok=False, aday=Necip Uysal (BEŞİKTAŞ A.Ş., skor=1.0, ortak=NECIP,UYSAL). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- ALİ PAĞDA (BEŞİKTAŞ A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=Ali Pağda (BEŞİKTAŞ A.Ş., skor=1.0, ortak=ALI,PAGDA). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- AMIR HADZIAHMETOVIC (BEŞİKTAŞ A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=Amir Hadziahmetovic (BEŞİKTAŞ A.Ş., skor=1.0, ortak=AMIR,HADZIAHMETOVIC). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- TUNA BARAN DEMİR (BEŞİKTAŞ A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=Tuna Baran Demir (BEŞİKTAŞ A.Ş., skor=1.0, ortak=BARAN,DEMIR,TUNA). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- DEVIS ESTIVEN VASQUEZ LLACH (BEŞİKTAŞ A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=1, gol=0, scout_blok=False, aday=Devis Vásquez (BEŞİKTAŞ A.Ş., skor=0.65, ortak=DEVIS,VASQUEZ). Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
-- JOAO MARIO NAVAL DA COSTA EDUARDO (BEŞİKTAŞ A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=1, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
-- KENY ALEXANDER ARROYO ALVARADO (BEŞİKTAŞ A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 
 ### BODRUM FK
 
@@ -253,12 +197,6 @@
 ### CORENDON ALANYASPOR
 
 - ANTONIO SIMAO MUANZA (CORENDON ALANYASPOR): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=16, gol=1, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
-- ANDRAZ SPORAR (CORENDON ALANYASPOR): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=2, gol=0, scout_blok=False, aday=Andraz Sporar (CORENDON ALANYASPOR, skor=1.0, ortak=ANDRAZ,SPORAR). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- HÜSEYİN ŞEN (CORENDON ALANYASPOR): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=Hüseyin Şen (CORENDON ALANYASPOR, skor=1.0, ortak=HUSEYIN,SEN). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- MEHMET ÖZ (CORENDON ALANYASPOR): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=Mehmet Öz (CORENDON ALANYASPOR, skor=1.0, ortak=MEHMET,OZ). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- SEMİH DOĞANAY (CORENDON ALANYASPOR): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=Semih Doğanay (CORENDON ALANYASPOR, skor=1.0, ortak=DOGANAY,SEMIH). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- STEVE MICHEL KEVİN MOUNIE (CORENDON ALANYASPOR): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=6, gol=2, scout_blok=False, aday=Steve Mounié (CORENDON ALANYASPOR, skor=0.649, ortak=MOUNIE,STEVE). Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
-- BRUNO VIANA WILLEMEM DA SILVA (CORENDON ALANYASPOR): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=4, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - MARCOS PAULO MESQUITA LOPES (CORENDON ALANYASPOR): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - EYMEN KARATAŞ (CORENDON ALANYASPOR): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=NO_MATCH_ACTIVITY, ilk11=0, gol=0, scout_blok=False, aday=Efecan Karaca (CORENDON ALANYASPOR, skor=0.692, ortak=-). Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 
@@ -283,48 +221,6 @@
 
 - AHMET SİVRİ (ERZİNCAN FUTBOL YATIRIMLARI A.Ş.): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=3, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 
-### EYÜPSPOR
-
-- LUCAS FELIPE CALEGARI (EYÜPSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=19, gol=1, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- MATEUSZ JACEK LEGOWSKI (EYÜPSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=18, gol=2, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- TAŞKIN İLTER (EYÜPSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=13, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- TALHA ÜLVAN (EYÜPSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=12, gol=2, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- JEROME JUNIOR ONGUENE (EYÜPSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=9, gol=1, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- LENNY JEAN PIERRE PINTOR (EYÜPSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=9, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- ANGEL YESID TORRES QUINONES (EYÜPSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=6, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- SVIT SESLAR (EYÜPSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=6, gol=1, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- TARAS STEPANENKO (EYÜPSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=6, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- CHARLES ANDRE RAUX YAO (EYÜPSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=5, gol=2, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- PRINCE OBENG AMPEM (EYÜPSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=4, gol=2, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- SEYFETTİN ANIL YAŞAR (EYÜPSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=4, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- YUSUF BARASI (EYÜPSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=3, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- ARDA YAVUZ (EYÜPSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=1, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- BERKE ÖZER (EYÜPSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=1, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- ABDELHAMID SABIRI (EYÜPSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- ABDOU KHADRE SY (EYÜPSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- AHMED  ABDULLAHI (EYÜPSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- BERHAN KUTLAY ŞATLI (EYÜPSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- BILAL BOUTOBBA (EYÜPSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- CHANDREL GERAUD MASSANGA MATONDO (EYÜPSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- CHRIST OTINIEL SADIA (EYÜPSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- DAVID JOSE SOARES OLIVEIRA FURTADO DA COSTA (EYÜPSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- DENİZ SALİH AYDOĞDU (EYÜPSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- DIABEL NDOYE (EYÜPSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- DORIN ROTARIU (EYÜPSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- EMRE BİLGİN (EYÜPSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- GILBERT MENDY (EYÜPSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- HAMZA YİĞİT AKMAN (EYÜPSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- HORATIU ALEXANDRU MOLDOVAN (EYÜPSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- JAWAD EL YAMIQ (EYÜPSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- KERİM YERLİKAYA (EYÜPSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- KONRAD HUBERT MICHALAK (EYÜPSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- METE KAAN DEMİR (EYÜPSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- SAMUEL SAIZ ALONSO (EYÜPSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- SIMONE GIORDANO (EYÜPSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- UMUT KESECİ (EYÜPSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- ZAK KENNEDY JULES (EYÜPSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- ÖMER AHMET CEYHAN (EYÜPSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-
 ### FATSA BELEDİYESPOR
 
 - ARDA KAYA (FATSA BELEDİYESPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
@@ -332,22 +228,11 @@
 ### FENERBAHÇE A.Ş.
 
 - ANDERSON SOUZA CONCEIÇAO (FENERBAHÇE A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=24, gol=19, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
-- ANTHONY TİTE EMMANUEL MUSABA (FENERBAHÇE A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=24, gol=5, scout_blok=False, aday=Anthony Musaba (FENERBAHÇE A.Ş., skor=0.667, ortak=ANTHONY,MUSABA). Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - EDERSON SANTANA DE MORAES (FENERBAHÇE A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=24, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - ARCHIBALD NORMAN BROWN (FENERBAHÇE A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=17, gol=3, scout_blok=False, aday=Archie Brown (FENERBAHÇE A.Ş., skor=0.647, ortak=BROWN). Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - FREDERICO RODRIGUES DE PAULA SANTOS (FENERBAHÇE A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=15, gol=3, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - RODRIGO NASCIMENTO FRANCA (FENERBAHÇE A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=13, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
-- EDSON OMAR ALVAREZ VELAZQUEZ (FENERBAHÇE A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=10, gol=0, scout_blok=False, aday=Edson Álvarez (FENERBAHÇE A.Ş., skor=0.634, ortak=ALVAREZ,EDSON). Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
-- SIDIKI CHERIF (FENERBAHÇE A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=7, gol=2, scout_blok=False, aday=Sidiki Chérif (FENERBAHÇE A.Ş., skor=1.0, ortak=CHERIF,SIDIKI). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- SEBASTIAN SZYMANSKI (FENERBAHÇE A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=4, gol=1, scout_blok=False, aday=Sebastian Szymanski (FENERBAHÇE A.Ş., skor=1.0, ortak=SEBASTIAN,SZYMANSKI). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- DOMINIK LIVAKOVIC (FENERBAHÇE A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=1, gol=0, scout_blok=False, aday=Dominik Livakovic (FENERBAHÇE A.Ş., skor=1.0, ortak=DOMINIK,LIVAKOVIC). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- SOFYAN AMRABAT (FENERBAHÇE A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=1, gol=0, scout_blok=False, aday=Sofyan Amrabat (FENERBAHÇE A.Ş., skor=1.0, ortak=AMRABAT,SOFYAN). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- YUSUF AKÇİÇEK (FENERBAHÇE A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=1, gol=0, scout_blok=False, aday=Yusuf Akçiçek (FENERBAHÇE A.Ş., skor=1.0, ortak=AKCICEK,YUSUF). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- ADNAN EFE FETTAHOĞLU (FENERBAHÇE A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=Efe Fettahoğlu (FENERBAHÇE A.Ş., skor=0.824, ortak=EFE,FETTAHOGLU). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- ALAETTİN EKİCİ (FENERBAHÇE A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=Alaettin Ekici (FENERBAHÇE A.Ş., skor=1.0, ortak=ALAETTIN,EKICI). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- EMİN EREN SAYAR (FENERBAHÇE A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=Eren Sayar (FENERBAHÇE A.Ş., skor=0.8, ortak=EREN,SAYAR). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
 - ALİ DEMİRBİLEK (FENERBAHÇE A.Ş.): sınıf=POSSIBLE_TRANSFER_OR_CLUB_MISMATCH, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=Ali Demirbilek (HESAP.COM ANTALYASPOR, skor=1.0, ortak=ALI,DEMIRBILEK). Oyuncu adı başka snapshot kulübünde güçlü eşleşiyor; transfer doğrulanmadan otomatik bağlanmamalı.
-- ALEXANDER KWABENA BAIDOOH DJIKU (FENERBAHÇE A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=Alexander Djiku (FENERBAHÇE A.Ş., skor=0.652, ortak=ALEXANDER,DJIKU). Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - ÇAĞRI HAKAN BALTA (FENERBAHÇE A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - KUZEY SAPAZ (FENERBAHÇE A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=NO_MATCH_ACTIVITY, ilk11=0, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - VEDAT MURIÇ (FENERBAHÇE A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=NO_MATCH_ACTIVITY, ilk11=0, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
@@ -358,59 +243,21 @@
 
 ### GALATASARAY A.Ş.
 
-- MAURO EMANUEL ICARDI (GALATASARAY A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=12, gol=14, scout_blok=False, aday=Mauro Icardi (GALATASARAY A.Ş., skor=1.0, ortak=ICARDI,MAURO). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- NOA NOËLL LANG (GALATASARAY A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=7, gol=0, scout_blok=False, aday=Noa Lang (GALATASARAY A.Ş., skor=0.727, ortak=LANG,NOA). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- SACHA BOEY (GALATASARAY A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=6, gol=1, scout_blok=False, aday=Sacha Boey (GALATASARAY A.Ş., skor=1.0, ortak=BOEY,SACHA). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- CİHAN AKGÜN (GALATASARAY A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=Cihan Akgün (GALATASARAY A.Ş., skor=1.0, ortak=AKGUN,CIHAN). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- EYÜP CAN KARASU (GALATASARAY A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=Eyüp Karasu (GALATASARAY A.Ş., skor=0.846, ortak=EYUP,KARASU). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- FURKAN KOÇAK (GALATASARAY A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=Furkan Koçak (GALATASARAY A.Ş., skor=1.0, ortak=FURKAN,KOCAK). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- GÖKDENİZ GÜRPÜZ (GALATASARAY A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=Gökdeniz Gürpüz (GALATASARAY A.Ş., skor=1.0, ortak=GOKDENIZ,GURPUZ). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- NICOLO ZANIOLO (GALATASARAY A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=Nicolò Zaniolo (GALATASARAY A.Ş., skor=1.0, ortak=NICOLO,ZANIOLO). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- YUSUF DAĞHAN KAHRAMAN (GALATASARAY A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=Dağhan Kahraman (GALATASARAY A.Ş., skor=0.833, ortak=DAGHAN,KAHRAMAN). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- YUSUF DEMİR (GALATASARAY A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=Yusuf Demir (GALATASARAY A.Ş., skor=1.0, ortak=DEMIR,YUSUF). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- YASER ESNEYDER ASPRILLA MARTINEZ (GALATASARAY A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=1, gol=0, scout_blok=False, aday=Yáser Asprilla (GALATASARAY A.Ş., skor=0.609, ortak=ASPRILLA,YASER). Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
-- ELIAS JELERT KRISTENSEN (GALATASARAY A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=Elias Jelert (GALATASARAY A.Ş., skor=0.686, ortak=ELIAS,JELERT). Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - ALEKSEI BATRAKOV (GALATASARAY A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=NO_MATCH_ACTIVITY, ilk11=0, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 
 ### GAZİANTEP FUTBOL KULÜBÜ A.Ş.
 
-- CHRISTOPHER LUNGOYI (GAZİANTEP FUTBOL KULÜBÜ A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=20, gol=3, scout_blok=False, aday=Christopher Lungoyi (GAZİANTEP FUTBOL KULÜBÜ A.Ş., skor=1.0, ortak=CHRISTOPHER,LUNGOYI). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- YUSUF KARHAN KABADAYI (GAZİANTEP FUTBOL KULÜBÜ A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=5, gol=1, scout_blok=False, aday=Yusuf Kabadayi (GAZİANTEP FUTBOL KULÜBÜ A.Ş., skor=0.8, ortak=KABADAYI,YUSUF). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- EMMANUEL OKYERE BOATENG (GAZİANTEP FUTBOL KULÜBÜ A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=4, gol=1, scout_blok=False, aday=Emmanuel Boateng (GAZİANTEP FUTBOL KULÜBÜ A.Ş., skor=0.821, ortak=BOATENG,EMMANUEL). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- SALEM M'BAKATA (GAZİANTEP FUTBOL KULÜBÜ A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=1, gol=0, scout_blok=False, aday=Salem M'Bakata (GAZİANTEP FUTBOL KULÜBÜ A.Ş., skor=1.0, ortak=BAKATA,M,SALEM). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- KUZEY EGE BULGULU (GAZİANTEP FUTBOL KULÜBÜ A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=Kuzey Bulgulu (GAZİANTEP FUTBOL KULÜBÜ A.Ş., skor=0.867, ortak=BULGULU,KUZEY). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- MERVAN MÜJDECİ (GAZİANTEP FUTBOL KULÜBÜ A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=Mervan Müjdeci (GAZİANTEP FUTBOL KULÜBÜ A.Ş., skor=1.0, ortak=MERVAN,MUJDECI). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- ROB NIZET (GAZİANTEP FUTBOL KULÜBÜ A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=Rob Nizet (GAZİANTEP FUTBOL KULÜBÜ A.Ş., skor=1.0, ortak=NIZET,ROB). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- SOKRATIS DIOUDIS (GAZİANTEP FUTBOL KULÜBÜ A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=Sokratis Dioudis (GAZİANTEP FUTBOL KULÜBÜ A.Ş., skor=1.0, ortak=DIOUDIS,SOKRATIS). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
 - PAPA ALIOUNE NDIAYE (GAZİANTEP FUTBOL KULÜBÜ A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=3, gol=0, scout_blok=False, aday=Badou Ndiaye (GAZİANTEP FUTBOL KULÜBÜ A.Ş., skor=0.645, ortak=NDIAYE). Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - FLORIN BOGDAN ŞTEFAN (GAZİANTEP FUTBOL KULÜBÜ A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=NO_MATCH_ACTIVITY, ilk11=0, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - MISJONNE JUNIFFER NAIGELINO HANSEN (GAZİANTEP FUTBOL KULÜBÜ A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=NO_MATCH_ACTIVITY, ilk11=0, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 
 ### GENÇLERBİRLİĞİ
 
-- ZAN ZUZEK (GENÇLERBİRLİĞİ): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=31, gol=2, scout_blok=False, aday=Zan Zuzek (GENÇLERBİRLİĞİ, skor=1.0, ortak=ZAN,ZUZEK). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- MBAYE HAMADY NIANG (GENÇLERBİRLİĞİ): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=19, gol=4, scout_blok=False, aday=M'Baye Niang (GENÇLERBİRLİĞİ, skor=1.0, ortak=BAYE,M,NIANG). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- MATEJ HANOUSEK (GENÇLERBİRLİĞİ): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=14, gol=0, scout_blok=False, aday=Matej Hanousek (GENÇLERBİRLİĞİ, skor=1.0, ortak=HANOUSEK,MATEJ). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
 - THALISSON KELVEN DA SILVA (GENÇLERBİRLİĞİ): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=28, gol=2, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
-- AYOTOMIWA SHERIF DELE BASHIRU (GENÇLERBİRLİĞİ): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=26, gol=0, scout_blok=False, aday=Tom Dele-Bashiru (GENÇLERBİRLİĞİ, skor=0.711, ortak=BASHIRU,DELE). Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
-- MARIO RICARDO DA SILVA VELHO (GENÇLERBİRLİĞİ): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=23, gol=0, scout_blok=False, aday=Ricardo Velho (GENÇLERBİRLİĞİ, skor=0.634, ortak=RICARDO,VELHO). Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
-- MOUSSA KYABOU (GENÇLERBİRLİĞİ): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=2, gol=0, scout_blok=False, aday=Moussa Kyabou (GENÇLERBİRLİĞİ, skor=1.0, ortak=KYABOU,MOUSSA). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- ILIUTA DANIEL POPA (GENÇLERBİRLİĞİ): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=1, gol=0, scout_blok=False, aday=Daniel Popa (GENÇLERBİRLİĞİ, skor=0.759, ortak=DANIEL,POPA). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- EBRAR YİĞİT AYDIN (GENÇLERBİRLİĞİ): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=Ebrar Aydın (GENÇLERBİRLİĞİ, skor=0.786, ortak=AYDIN,EBRAR). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- KEVIN CSOBOTH (GENÇLERBİRLİĞİ): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=Kevin Csoboth (GENÇLERBİRLİĞİ, skor=1.0, ortak=CSOBOTH,KEVIN). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- YUSUF HASAN TEMEL (GENÇLERBİRLİĞİ): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=Hasan Temel (GENÇLERBİRLİĞİ, skor=0.786, ortak=HASAN,TEMEL). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- HENRY CHUKWUEMEKA ONYEKURU (GENÇLERBİRLİĞİ): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=3, gol=0, scout_blok=False, aday=Henry Onyekuru (GENÇLERBİRLİĞİ, skor=0.7, ortak=HENRY,ONYEKURU). Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 
 ### GÖZTEPE A.Ş.
 
-- MATEUSZ LIS (GÖZTEPE A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=SCOUT_BLOCKING, ilk11=34, gol=0, scout_blok=True, aday=Mateusz Lis (GÖZTEPE A.Ş., skor=1.0, ortak=LIS,MATEUSZ). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- HELITON JORGE TITO DOS SANTOS (GÖZTEPE A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=SCOUT_BLOCKING, ilk11=32, gol=0, scout_blok=True, aday=Héliton (GÖZTEPE A.Ş., skor=1.0, ortak=HELITON). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- MOHAMMED AMIN CHERNI (GÖZTEPE A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=SCOUT_BLOCKING, ilk11=34, gol=0, scout_blok=True, aday=Amin Cherni (GÖZTEPE A.Ş., skor=0.71, ortak=AMIN,CHERNI). Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
-- ANTHONY JUNIOR DENNIS (GÖZTEPE A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=29, gol=3, scout_blok=False, aday=Anthony Dennis (GÖZTEPE A.Ş., skor=0.8, ortak=ANTHONY,DENNIS). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
 - JUAN SANTOS DA SILVA (GÖZTEPE A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=30, gol=11, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
-- FILIP YAVOROV KRASTEV (GÖZTEPE A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=5, gol=1, scout_blok=False, aday=Filip Krastev (GÖZTEPE A.Ş., skor=0.765, ortak=FILIP,KRASTEV). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- YUSUF ALİ ŞİRİN (GÖZTEPE A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=Yusuf Ali Şirin (GÖZTEPE A.Ş., skor=1.0, ortak=ALI,SIRIN,YUSUF). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- İSMAİL KÖYBAŞI (GÖZTEPE A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=İsmail Köybaşı (GÖZTEPE A.Ş., skor=1.0, ortak=ISMAIL,KOYBASI). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
 - JEFERSON MARINHO DOS SANTOS (GÖZTEPE A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=4, gol=2, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - GUILERME LUIZ OLIVEIRA DA SILVA (GÖZTEPE A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=2, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - EMERSONN CORREIRA DA SILVA (GÖZTEPE A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=1, gol=1, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
@@ -418,12 +265,8 @@
 
 ### KASIMPAŞA A.Ş.
 
-- NICHOLAS OPOKU (KASIMPAŞA A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=26, gol=0, scout_blok=False, aday=Nicholas Opoku (KASIMPAŞA A.Ş., skor=1.0, ortak=NICHOLAS,OPOKU). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
 - RIBEIRO DIAS CARLOS MIGUEL (KASIMPAŞA A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=15, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
-- LORET SADIKU (KASIMPAŞA A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=Loret Sadiku (KASIMPAŞA A.Ş., skor=1.0, ortak=LORET,SADIKU). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- ŞANT KAZANCI (KASIMPAŞA A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=Şant Kazancı (KASIMPAŞA A.Ş., skor=1.0, ortak=KAZANCI,SANT). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
 - JHON JAIRO (KASIMPAŞA A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=6, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
-- JİM EMİLLEN NGOWET ALLEVINAH (KASIMPAŞA A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=3, gol=1, scout_blok=False, aday=Jim Allevinah (KASIMPAŞA A.Ş., skor=0.634, ortak=ALLEVINAH,JIM). Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - JAKOP VESTERGAARD JESSEN (KASIMPAŞA A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=NO_MATCH_ACTIVITY, ilk11=0, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 
 ### KEPEZ SPOR FUTBOL A.Ş.
@@ -441,14 +284,7 @@
 
 ### KOCAELİSPOR
 
-- HABIB ALI KEITA (KOCAELİSPOR): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=24, gol=1, scout_blok=False, aday=Habib Keïta (KOCAELİSPOR, skor=0.846, ortak=HABIB,KEITA). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- KAROL LINETTY (KOCAELİSPOR): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=19, gol=0, scout_blok=False, aday=Karol Linetty (KOCAELİSPOR, skor=1.0, ortak=KAROL,LINETTY). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- BOTOND BALOGH (KOCAELİSPOR): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=18, gol=0, scout_blok=False, aday=Botond Balogh (KOCAELİSPOR, skor=1.0, ortak=BALOGH,BOTOND). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- JOSEPH NONGE BOENDE (KOCAELİSPOR): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=14, gol=0, scout_blok=False, aday=Joseph Nonge (KOCAELİSPOR, skor=0.774, ortak=JOSEPH,NONGE). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- DARKO CHURLINOV (KOCAELİSPOR): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=12, gol=0, scout_blok=False, aday=Darko Churlinov (KOCAELİSPOR, skor=1.0, ortak=CHURLINOV,DARKO). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
 - DANIEL EBENEZER KWASI AGYEI (KOCAELİSPOR): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=23, gol=5, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
-- MATEUSZ WIETESKA (KOCAELİSPOR): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=1, gol=0, scout_blok=False, aday=Mateusz Wieteska (KOCAELİSPOR, skor=1.0, ortak=MATEUSZ,WIETESKA). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- DENİZ CEYLAN (KOCAELİSPOR): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=Deniz Ceylan (KOCAELİSPOR, skor=1.0, ortak=CEYLAN,DENIZ). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
 
 ### KÜTAHYASPOR FUTBOL SPOR KULÜBÜ
 
@@ -557,6 +393,10 @@
 - ONURALP ÇAKIROĞLU (ORFA YAPI PENDİKSPOR FUTBOL A.Ş.): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 - TAHA EMRE İNCE (ORFA YAPI PENDİKSPOR FUTBOL A.Ş.): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 
+### RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ
+
+- LEONARDO CAMPOS DUARTE DA SILVA (RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=26, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
+
 ### SAKARYASPOR A.Ş.
 
 - RUAN GREGORIO TEIXEIRA (SAKARYASPOR A.Ş.): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=1, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
@@ -564,19 +404,9 @@
 
 ### SAMSUNSPOR A.Ş.
 
-- RİCK VAN DRONGELEN (SAMSUNSPOR A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=31, gol=2, scout_blok=False, aday=Rick van Drongelen (SAMSUNSPOR A.Ş., skor=1.0, ortak=DRONGELEN,RICK,VAN). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- LUBOMİR SATKA (SAMSUNSPOR A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=25, gol=2, scout_blok=False, aday=Lubomir Satka (SAMSUNSPOR A.Ş., skor=1.0, ortak=LUBOMIR,SATKA). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- ANTOINE MAKOUMBOU (SAMSUNSPOR A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=23, gol=1, scout_blok=False, aday=Antoine Makoumbou (SAMSUNSPOR A.Ş., skor=1.0, ortak=ANTOINE,MAKOUMBOU). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- JULES OLIVIER NTCHAM (SAMSUNSPOR A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=20, gol=2, scout_blok=False, aday=Olivier Ntcham (SAMSUNSPOR A.Ş., skor=0.824, ortak=NTCHAM,OLIVIER). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- PAPE CHERIF NDIAYE (SAMSUNSPOR A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=16, gol=7, scout_blok=False, aday=Cherif Ndiaye (SAMSUNSPOR A.Ş., skor=0.839, ortak=CHERIF,NDIAYE). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- TONI BOREVKOVIC (SAMSUNSPOR A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=10, gol=2, scout_blok=False, aday=Toni Borevković (SAMSUNSPOR A.Ş., skor=1.0, ortak=BOREVKOVIC,TONI). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
 - CARL JOHAN HOLSE JUSTESEN (SAMSUNSPOR A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=29, gol=8, scout_blok=False, aday=Carlo Holse (SAMSUNSPOR A.Ş., skor=0.611, ortak=HOLSE). Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - JOSAFAT WOODING MENDES (SAMSUNSPOR A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=11, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
-- ALI BADRA DIABATE (SAMSUNSPOR A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=3, gol=0, scout_blok=False, aday=Ali Badra Diabaté (SAMSUNSPOR A.Ş., skor=1.0, ortak=ALI,BADRA,DIABATE). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
 - NANY DIMATA (SAMSUNSPOR A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=2, gol=0, scout_blok=False, aday=Landry Dimata (SAMSUNSPOR A.Ş., skor=0.833, ortak=DIMATA). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- ALBERT POSIADALA (SAMSUNSPOR A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=Albert Posiadala (SAMSUNSPOR A.Ş., skor=1.0, ortak=ALBERT,POSIADALA). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- ARBNOR MUJA (SAMSUNSPOR A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=Arbnor Muja (SAMSUNSPOR A.Ş., skor=1.0, ortak=ARBNOR,MUJA). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- MEHMET EFE KARSLI (SAMSUNSPOR A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=Mehmet Efe Karslı (SAMSUNSPOR A.Ş., skor=1.0, ortak=EFE,KARSLI,MEHMET). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
 - YIRIGUE FOUNGOGNAN SEKONGO (SAMSUNSPOR A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=NO_MATCH_ACTIVITY, ilk11=0, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 
 ### SEBAT SPOR KULÜBÜ
@@ -609,17 +439,6 @@
 
 ### TRABZONSPOR A.Ş.
 
-- KAZEEM ADEREMI J. OLAIGBE (TRABZONSPOR A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=SCOUT_BLOCKING, ilk11=26, gol=0, scout_blok=True, aday=Kazeem Olaigbe (TRABZONSPOR A.Ş., skor=0.737, ortak=KAZEEM,OLAIGBE). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- FELIPE AUGUSTO DA SILVA (TRABZONSPOR A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=26, gol=13, scout_blok=False, aday=Felipe Augusto (TRABZONSPOR A.Ş., skor=0.757, ortak=AUGUSTO,FELIPE). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- OLEKSANDR ZUBKOV (TRABZONSPOR A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=25, gol=4, scout_blok=False, aday=Oleksandr Zubkov (TRABZONSPOR A.Ş., skor=1.0, ortak=OLEKSANDR,ZUBKOV). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- CHRIST RAVYNEL INAO OULAI (TRABZONSPOR A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=24, gol=2, scout_blok=False, aday=Christ Inao Oulaï (TRABZONSPOR A.Ş., skor=0.81, ortak=CHRIST,INAO,OULAI). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- ANTHONY NNADUZOR NWAKAEME (TRABZONSPOR A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=7, gol=0, scout_blok=False, aday=Anthony Nwakaeme (TRABZONSPOR A.Ş., skor=0.78, ortak=ANTHONY,NWAKAEME). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- SALİH MALKOÇOĞLU (TRABZONSPOR A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=3, gol=0, scout_blok=False, aday=Salih Malkoçoğlu (TRABZONSPOR A.Ş., skor=1.0, ortak=MALKOCOGLU,SALIH). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- DANYLO SIKAN (TRABZONSPOR A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=1, gol=1, scout_blok=False, aday=Danylo Sikan (TRABZONSPOR A.Ş., skor=1.0, ortak=DANYLO,SIKAN). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- MUHAMMED CHAM SARACEVIC (TRABZONSPOR A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=Muhammed Cham (TRABZONSPOR A.Ş., skor=0.722, ortak=CHAM,MUHAMMED). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- OĞUZHAN ERTEM (TRABZONSPOR A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=Oğuzhan Ertem (TRABZONSPOR A.Ş., skor=1.0, ortak=ERTEM,OGUZHAN). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- YİĞİTHAN ÇUBUKCU (TRABZONSPOR A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=Yiğithan Çubukcu (TRABZONSPOR A.Ş., skor=1.0, ortak=CUBUKCU,YIGITHAN). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- MATHIAS JOHAN FJORTOFT LOVIK (TRABZONSPOR A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=8, gol=0, scout_blok=False, aday=Mathias Løvik (TRABZONSPOR A.Ş., skor=0.634, ortak=LOVIK,MATHIAS). Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - FABIO HENRIQUE TAVARES (TRABZONSPOR A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=NO_MATCH_ACTIVITY, ilk11=0, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - FRANCULINO GLUDA DJU (TRABZONSPOR A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=NO_MATCH_ACTIVITY, ilk11=0, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - RENE MITONGO MUTEBA (TRABZONSPOR A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=NO_MATCH_ACTIVITY, ilk11=0, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
@@ -640,21 +459,7 @@
 
 ### TÜMOSAN KONYASPOR
 
-- MORTEN BJORLO (TÜMOSAN KONYASPOR): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=14, gol=0, scout_blok=False, aday=Morten Bjørlo (TÜMOSAN KONYASPOR, skor=1.0, ortak=BJORLO,MORTEN). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- RIECHEDLY GUILLERMO BAZOER (TÜMOSAN KONYASPOR): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=10, gol=0, scout_blok=False, aday=Riechedly Bazoer (TÜMOSAN KONYASPOR, skor=0.762, ortak=BAZOER,RIECHEDLY). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- BLAZ KRAMER (TÜMOSAN KONYASPOR): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=7, gol=5, scout_blok=False, aday=Blaz Kramer (TÜMOSAN KONYASPOR, skor=1.0, ortak=BLAZ,KRAMER). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
 - GUILHERME HAUBERT SITYA (TÜMOSAN KONYASPOR): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=21, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
-- ADAMO NAGALO (TÜMOSAN KONYASPOR): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=6, gol=0, scout_blok=False, aday=Adamo Nagalo (TÜMOSAN KONYASPOR, skor=1.0, ortak=ADAMO,NAGALO). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- SANDER SVENDSEN (TÜMOSAN KONYASPOR): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=4, gol=0, scout_blok=False, aday=Sander Svendsen (TÜMOSAN KONYASPOR, skor=1.0, ortak=SANDER,SVENDSEN). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- JOSIP CALUSIC (TÜMOSAN KONYASPOR): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=2, gol=0, scout_blok=False, aday=Josip Calusic (TÜMOSAN KONYASPOR, skor=1.0, ortak=CALUSIC,JOSIP). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- EREN CEMALİ YAĞMUR (TÜMOSAN KONYASPOR): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=1, gol=1, scout_blok=False, aday=Eren Yağmur (TÜMOSAN KONYASPOR, skor=0.759, ortak=EREN,YAGMUR). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- MARIUS STEFANESCU (TÜMOSAN KONYASPOR): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=1, gol=0, scout_blok=False, aday=Marius Ștefănescu (TÜMOSAN KONYASPOR, skor=1.0, ortak=MARIUS,STEFANESCU). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- EFE SEÇİL (TÜMOSAN KONYASPOR): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=Efe Seçil (TÜMOSAN KONYASPOR, skor=1.0, ortak=EFE,SECIL). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- EGEHAN ŞENSOY (TÜMOSAN KONYASPOR): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=Egehan Şensoy (TÜMOSAN KONYASPOR, skor=1.0, ortak=EGEHAN,SENSOY). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- ENES İLYAS SEVEN (TÜMOSAN KONYASPOR): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=Enes Seven (TÜMOSAN KONYASPOR, skor=0.769, ortak=ENES,SEVEN). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- EREN DOĞAN (TÜMOSAN KONYASPOR): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=Eren Doğan (TÜMOSAN KONYASPOR, skor=1.0, ortak=DOGAN,EREN). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- TUNCAY ELGÜN (TÜMOSAN KONYASPOR): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=Tuncay Elgün (TÜMOSAN KONYASPOR, skor=1.0, ortak=ELGUN,TUNCAY). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- MUHAMMED ARDA VAR (TÜMOSAN KONYASPOR): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=Arda Var (TÜMOSAN KONYASPOR, skor=0.64, ortak=ARDA,VAR). Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 
 ### VAN SPOR FUTBOL KULÜBÜ
 
@@ -672,62 +477,24 @@
 - AHMET KUSAY DAĞDEVİR (YENİ MERSİN İDMANYURDU FUTBOL A.Ş.): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 - AHMET TIRPANCI (YENİ MERSİN İDMANYURDU FUTBOL A.Ş.): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 
-### ZECORNER KAYSERİSPOR
-
-- YOUSSEF AIT BENASSER (ZECORNER KAYSERİSPOR): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=19, gol=0, scout_blok=False, aday=Youssef Aït Bennasser (ZECORNER KAYSERİSPOR, skor=0.976, ortak=AIT,YOUSSEF). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-
 ### ZONGULDAK SPOR FUTBOL KULÜBÜ A.Ş.
 
 - OSMAN YAĞIZ TOPÇU (ZONGULDAK SPOR FUTBOL KULÜBÜ A.Ş.): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-
-### ÇAYKUR RİZESPOR A.Ş.
-
-- CASPER SOMMER HOJER (ÇAYKUR RİZESPOR A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=32, gol=0, scout_blok=False, aday=Casper Højer (ÇAYKUR RİZESPOR A.Ş., skor=0.774, ortak=CASPER,HOJER). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- IOANNIS PAPANIKOLAOU (ÇAYKUR RİZESPOR A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=22, gol=1, scout_blok=False, aday=Giannis Papanikolaou (ÇAYKUR RİZESPOR A.Ş., skor=1.0, ortak=GIANNIS,PAPANIKOLAOU). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- LOIDE ANTONIO AUGUSTO (ÇAYKUR RİZESPOR A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=14, gol=3, scout_blok=False, aday=Loide Augusto (ÇAYKUR RİZESPOR A.Ş., skor=0.765, ortak=AUGUSTO,LOIDE). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- VACLAV JURECKA (ÇAYKUR RİZESPOR A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=5, gol=1, scout_blok=False, aday=Vaclav Jurecka (ÇAYKUR RİZESPOR A.Ş., skor=1.0, ortak=JURECKA,VACLAV). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- BAYRAM BERK ÇAPOĞLU (ÇAYKUR RİZESPOR A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=Bayram Berk Çapoğlu (ÇAYKUR RİZESPOR A.Ş., skor=1.0, ortak=BAYRAM,BERK,CAPOGLU). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- EMİR BORA ÇOBAN (ÇAYKUR RİZESPOR A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=Emir Bora Çoban (ÇAYKUR RİZESPOR A.Ş., skor=1.0, ortak=BORA,COBAN,EMIR). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- EREN KILIÇ (ÇAYKUR RİZESPOR A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=Eren Kılıç (ÇAYKUR RİZESPOR A.Ş., skor=1.0, ortak=EREN,KILIC). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
-- FRANTZDY PIERROT (ÇAYKUR RİZESPOR A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=Frantzdy Pierrot (ÇAYKUR RİZESPOR A.Ş., skor=1.0, ortak=FRANTZDY,PIERROT). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
 
 ### ÇORLU SPOR 1947
 
 - ASIM EFE IŞIK (ÇORLU SPOR 1947): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 - ESAT YİĞİT ALKURT (ÇORLU SPOR 1947): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 
-### İSTANBUL BAŞAKŞEHİR FK
+### ÇORUM FK
 
-- MUHAMMED ŞENGEZER (İSTANBUL BAŞAKŞEHİR FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=SCOUT_BLOCKING, ilk11=33, gol=0, scout_blok=True, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- JEROME OPOKU (İSTANBUL BAŞAKŞEHİR FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=SCOUT_BLOCKING, ilk11=31, gol=1, scout_blok=True, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- BERKAY ÖZCAN (İSTANBUL BAŞAKŞEHİR FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=SCOUT_BLOCKING, ilk11=26, gol=0, scout_blok=True, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- ELDOR SHOMURODOV (İSTANBUL BAŞAKŞEHİR FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=34, gol=22, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- LEONARDO CAMPOS DUARTE DA SILVA (İSTANBUL BAŞAKŞEHİR FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=26, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- OLIVER MICHEL KEMEN (İSTANBUL BAŞAKŞEHİR FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=26, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- UMUT GÜNEŞ (İSTANBUL BAŞAKŞEHİR FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=25, gol=1, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- UMUT DİLAN BOZOK (İSTANBUL BAŞAKŞEHİR FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=23, gol=6, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- CHRİSTOPHER TEA DOMORAUD OPERI (İSTANBUL BAŞAKŞEHİR FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=22, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- ÖMER ALİ ŞAHİNER (İSTANBUL BAŞAKŞEHİR FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=22, gol=2, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- AMINE HARIT (İSTANBUL BAŞAKŞEHİR FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=20, gol=2, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- YUSUF SARI (İSTANBUL BAŞAKŞEHİR FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=18, gol=1, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- DAVIE SELKE (İSTANBUL BAŞAKŞEHİR FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=15, gol=10, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- ABBOSBEK FAYZULLAYEV (İSTANBUL BAŞAKŞEHİR FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=14, gol=3, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- MIGUEL CRESPO DA SILVA (İSTANBUL BAŞAKŞEHİR FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=12, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- OUSSEYNOU BA (İSTANBUL BAŞAKŞEHİR FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=10, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- ONUR BULUT (İSTANBUL BAŞAKŞEHİR FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=9, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- IVAN BRNIC (İSTANBUL BAŞAKŞEHİR FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=7, gol=4, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- BERTUĞ ÖZGÜR YILDIRIM (İSTANBUL BAŞAKŞEHİR FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=5, gol=7, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- JAKUB KALUZINSKI (İSTANBUL BAŞAKŞEHİR FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=4, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- ONUR ERGÜN (İSTANBUL BAŞAKŞEHİR FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=3, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- EDIN VISCA (İSTANBUL BAŞAKŞEHİR FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=2, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- DENİZ DİLMEN (İSTANBUL BAŞAKŞEHİR FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=1, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- HAMZA GÜRELER (İSTANBUL BAŞAKŞEHİR FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=1, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- ANDREAS SKOV OLSEN (İSTANBUL BAŞAKŞEHİR FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- EMİN BAYRAM (İSTANBUL BAŞAKŞEHİR FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- LUCA EKREM STANCIC (İSTANBUL BAŞAKŞEHİR FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- MICHAL KARBOWNIK (İSTANBUL BAŞAKŞEHİR FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- SABA KHAREBASHVILI (İSTANBUL BAŞAKŞEHİR FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- VOLKAN BABACAN (İSTANBUL BAŞAKŞEHİR FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
+- DANİJEL ALEKSİC (ÇORUM FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=3, gol=1, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
+- HASAN ABDULKAREEM JABBAR SAYYID (ÇORUM FK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
+
+### İKAS EYÜPSPOR
+
+- LUCAS FELIPE CALEGARI (İKAS EYÜPSPOR): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=19, gol=1, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
+- SAMUEL SAIZ ALONSO (İKAS EYÜPSPOR): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=Samu Saiz (İKAS EYÜPSPOR, skor=0.667, ortak=SAIZ). Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 
 ### İSTANBULSPOR A.Ş.
 

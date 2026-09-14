@@ -1,5 +1,5 @@
 {
-  "warehouse_path": "/home/runner/work/metric11/metric11/data/processed/metric11_warehouse.sqlite",
+  "warehouse_path": "/Users/alicanakyol/Documents/analiz/data/processed/metric11_warehouse.sqlite",
   "table_counts": {
     "data_quality_findings": 6,
     "data_sources": 5,
@@ -49,7 +49,7 @@
       "severity": "MEDIUM",
       "area": "scouting",
       "finding": "Blueprint candidates with low proxy position confidence",
-      "count_value": 85,
+      "count_value": 17,
       "recommendation": "Doğrudan pozisyon, boy, ayak ve aksiyon verisiyle güçlendirilmeli."
     },
     {
@@ -108,7 +108,7 @@
         "candidate_name": "MATEUSZ LIS",
         "candidate_team": "GÖZTEPE A.Ş.",
         "fit_score": 124.4,
-        "position_confidence": "LOW_POSITION_UNVERIFIED"
+        "position_confidence": "MEDIUM_DERIVED_ROLE"
       },
       {
         "role_label": "Bek / çift yönlü koridor",
@@ -154,16 +154,16 @@
       },
       {
         "role_label": "Sol açık / çizgi kırıcı",
-        "candidate_name": "BARIŞ ALPER YILMAZ",
-        "candidate_team": "GALATASARAY A.Ş.",
-        "fit_score": 88.0,
+        "candidate_name": "KAZEEM ADEREMI J. OLAIGBE",
+        "candidate_team": "TRABZONSPOR A.Ş.",
+        "fit_score": 91.84,
         "position_confidence": "HIGH"
       },
       {
         "role_label": "Sol açık / çizgi kırıcı",
-        "candidate_name": "MUHAMMED KEREM AKTÜRKOĞLU",
-        "candidate_team": "FENERBAHÇE A.Ş.",
-        "fit_score": 79.44,
+        "candidate_name": "BARIŞ ALPER YILMAZ",
+        "candidate_team": "GALATASARAY A.Ş.",
+        "fit_score": 88.0,
         "position_confidence": "HIGH"
       }
     ],
