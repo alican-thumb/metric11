@@ -1,6 +1,6 @@
 # Erken Haber Kaynak Performansı
 
-- Transfer sinyali: 23
+- Transfer sinyali: 24
 - Resmi olaya dönüşen transfer: 13
 - Yayın zamanı bulunan resmi teyit: 5/13
 - İlk görülme zamanı bulunan resmi teyit: 13/13
@@ -12,7 +12,7 @@
 
 ## Kanal Kapsamı
 
-- Google News: 204 haber, 30/30 başarılı sorgu.
+- Google News: 205 haber, 30/30 başarılı sorgu.
 - Telegram: 6 mesaj, 8/8 erişilebilir kanal.
 - X: durum=MISSING_CREDENTIALS, gönderi=0, yapılandırılmış hesap=45.
 
