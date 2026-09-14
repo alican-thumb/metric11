@@ -1,18 +1,18 @@
 # Erken Haber Kaynak Performansı
 
-- Transfer sinyali: 23
-- Resmi olaya dönüşen transfer: 13
-- Yayın zamanı bulunan resmi teyit: 5/13
-- İlk görülme zamanı bulunan resmi teyit: 13/13
+- Transfer sinyali: 7
+- Resmi olaya dönüşen transfer: 14
+- Yayın zamanı bulunan resmi teyit: 5/14
+- İlk görülme zamanı bulunan resmi teyit: 14/14
 - Ölçülen kaynak: 181 / gözlenen kaynak: 307
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 3
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 4098
+- Defterde korunan ilk iddia gözlemi: 4099
 
 ## Kanal Kapsamı
 
-- Google News: 206 haber, 30/30 başarılı sorgu.
+- Google News: 0 haber, 0/30 başarılı sorgu.
 - Telegram: 6 mesaj, 8/8 erişilebilir kanal.
 - X: durum=MISSING_CREDENTIALS, gönderi=0, yapılandırılmış hesap=45.
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 4095 | 1320 | 5 | — | 0.3 | %99.6 | 0.4 | FIRST_SEEN_BOUND |
+| Google News / medya | 4096 | 1320 | 5 | — | 0.3 | %99.6 | 0.4 | FIRST_SEEN_BOUND |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -33,7 +33,7 @@
 |---|---:|---:|---:|---|
 | Yağız Sabuncuoğlu | 0 | 1 | 1 | PARTIAL_MEASUREMENT |
 | Ertan Süzgün | 0 | 0 | 0 | ATTRIBUTION_PENDING |
-| Sports Digitale | 1 | 0 | 0 | ATTRIBUTION_PENDING |
+| Sports Digitale | 0 | 0 | 0 | ATTRIBUTION_PENDING |
 | Yusuf Günaydın | 0 | 0 | 0 | ATTRIBUTION_PENDING |
 | Ekrem Konur | 0 | 0 | 0 | ATTRIBUTION_PENDING |
 
@@ -56,7 +56,7 @@
 | Sabah | MEDIA | 288 | 63 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Hürriyet | MEDIA | 275 | 39 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Takvim | MEDIA | 255 | 28 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
-| Aksam Spor | MEDIA | 189 | 15 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Aksam Spor | MEDIA | 190 | 15 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Haberturk Spor | MEDIA | 156 | 13 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | NTVSpor | MEDIA | 105 | 24 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Fanatik | MEDIA | 103 | 34 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
