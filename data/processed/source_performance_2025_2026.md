@@ -1,18 +1,18 @@
 # Erken Haber Kaynak Performansı
 
-- Transfer sinyali: 25
+- Transfer sinyali: 23
 - Resmi olaya dönüşen transfer: 13
 - Yayın zamanı bulunan resmi teyit: 5/13
 - İlk görülme zamanı bulunan resmi teyit: 13/13
-- Ölçülen kaynak: 181 / gözlenen kaynak: 306
+- Ölçülen kaynak: 181 / gözlenen kaynak: 307
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 3
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 4093
+- Defterde korunan ilk iddia gözlemi: 4094
 
 ## Kanal Kapsamı
 
-- Google News: 220 haber, 30/30 başarılı sorgu.
+- Google News: 216 haber, 30/30 başarılı sorgu.
 - Telegram: 6 mesaj, 8/8 erişilebilir kanal.
 - X: durum=MISSING_CREDENTIALS, gönderi=0, yapılandırılmış hesap=45.
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 4090 | 1319 | 5 | — | 0.3 | %99.6 | 0.4 | FIRST_SEEN_BOUND |
+| Google News / medya | 4091 | 1320 | 5 | — | 0.3 | %99.6 | 0.4 | FIRST_SEEN_BOUND |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -316,6 +316,7 @@
 | fethiyetv.com | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | gazeteyenigun.com.tr | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | gaziantepolusum.com | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
+| gercekfethiye.com | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | goal.com | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | gundemebakis.com | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | gunebakis.com.tr | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
