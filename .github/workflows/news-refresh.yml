@@ -13,7 +13,7 @@ permissions:
 jobs:
   news-refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
@@ -39,6 +39,22 @@ jobs:
           python -m src.collect_news_google || true
           python -m src.collect_news_telegram || true
           python -m src.collect_official_club_news || true
+
+      - name: Maç sonuçlarını çek (hafif TFF fikstür, retry amaçlı)
+        # TFF'nin fikstür listeleme sayfası ara sıra (IP'den bağımsız, gerçek bir kaynak
+        # tutarsızlığı) biten maçlar için bile boş skor döndürüyor — bkz. 2026-09-13/14
+        # "dünkü maçlar güncellenmedi" bulguları, iki gün üst üste. refresh.yml'deki
+        # 6 saatlik retry tek başına yetmedi (bazı maçlar birden fazla pencereyi
+        # kaçırdı). Bu adım, bu workflow'un zaten 4 saatte bir çalışmasından
+        # yararlanıp retry sıklığını fiilen ~2 katına çıkarıyor. Güvenli:
+        # collect_tff_season_fixture bilinen gerçek skorları asla "-" ile ezmiyor.
+        continue-on-error: true
+        run: |
+          python -m src.collect_tff_season_fixture || true
+          python -m src.advance_season_state || true
+          python -m src.build_season_fixture_predictions || true
+          python -m src.build_weekly_evaluation || true
+          python -m src.build_match_week || true
 
       - name: Haber raporlarını güncelle
         continue-on-error: true

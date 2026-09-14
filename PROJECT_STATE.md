@@ -3151,3 +3151,8 @@ Kullanıcı yine "dünkü maçlar güncellenmemiş" dedi (Galatasaray-Kocaelispo
   - **Sonuç:** in-scope TFF oyuncu 558'den 654'e, doğrulanmış+manuel eşleşme 520'den 611'e (%70.7 operasyonel, %93.4 kapsam-içi doğruluk) çıktı; `scout_quality_report` düşük güvenli link 85'ten 17'ye düştü. Tam eski %82'ye dönmedi çünkü bu sezon gerçekten 3 takım değişti (Antalyaspor/Karagümrük/Kayserispor küme düştü, Amed/Çorum/Erzurumspor geldi) — kalan fark büyük ölçüde ligden düşmüş takımların TFF havuzunda hâlâ duran oyuncuları.
 - **İşlem notu:** Yine eşzamanlı bot commit'leriyle karşılaşıldı; aynı güvenli yöntem kullanıldı (kaynak+veri değişiklikleri ayrı tutulup origin'in en güncel haline göre yeniden inşa edildi).
 - Değişen dosyalar: `src/enrich_players_with_transfermarkt.py`, `src/normalization.py`, ilgili `data/processed/*` türetilmiş çıktılar.
+
+### 2026-09-14 — TFF maç sonucu retry sıklığı ikiye katlandı (news-refresh.yml)
+
+Aynı "dünkü maçlar güncellenmedi" hatası iki gün üst üste oldu; `refresh.yml`'deki 6 saatlik retry (2026-09-13) tek başına yetmedi — bazı maçlar birden fazla retry penceresini art arda kaçırdı (TFF'nin kendi listeleme sayfası gerçekten ara sıra, IP'den bağımsız boş dönüyor). `news-refresh.yml`'e (zaten 4 saatte bir çalışıyor) aynı hafif adım eklendi: `collect_tff_season_fixture` + `advance_season_state` + `build_season_fixture_predictions` + `build_weekly_evaluation` + `build_match_week`. İki workflow birlikte artık günde ~8 farklı saatte deniyor (önceki 4'ten). `timeout-minutes` 10'dan 15'e çıkarıldı (ek adımlar için pay). Güvenli: aynı "bilinen skoru asla ezme" koruması geçerli.
+- Değişen dosyalar: `.github/workflows/news-refresh.yml`.
