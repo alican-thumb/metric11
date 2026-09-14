@@ -1,7 +1,7 @@
 # Oyuncu Alias ve Eşleşme Kalitesi
 
 - Manuel alias oyuncusu: 28
-- İşlenen TFF lig profil havuzu: 864
+- İşlenen TFF lig profil havuzu: 866
 - Transfermarkt Süper Lig kadrosu: 18/18 kulüp, 817 oyuncu
 - TFF Beşiktaş profili: 46
 - TFF scout profili: 40
@@ -10,7 +10,7 @@
 
 ## Karşılaştırmalar
 
-- league_tff_vs_transfermarkt: 607/864 eşleşme (%70)
+- league_tff_vs_transfermarkt: 608/866 eşleşme (%70)
   - Manuel eşleme: 4 (ağ teyidi bekleyen=4); kullanılabilir eşleme %71
 - besiktas_tff_vs_transfermarkt: 0/46 eşleşme (%0)
   - Ham tekil kaynak karşılaştırmasıdır; operasyonel manuel eşlemeler lig karşılaştırmasında izlenir.
@@ -21,6 +21,7 @@
 
 ### league_tff_vs_transfermarkt
 - ALBAN-MARC LAFONT -> Alban Lafont | skor=1.0 | canonical=ALBAN MARC LAFONT
+- ALİ TURAP BÜLBÜL -> Ali Turap Bülbül | skor=1.0 | canonical=ALI TURAP BULBUL
 - AMADOU CİSSE -> Amadou Cissé | skor=1.0 | canonical=AMADOU CISSE
 - BERK KIZILDEMİR -> Berk Kızıldemir | skor=1.0 | canonical=BERK KIZILDEMIR
 - CEM ÜSTÜNDAĞ -> Cem Üstündag | skor=1.0 | canonical=CEM USTUNDAG
@@ -29,7 +30,6 @@
 - DİLHAN DEMİR -> Dilhan Demir | skor=1.0 | canonical=DILHAN DEMIR
 - ERMAL KRASNIQI -> Ermal Krasniqi | skor=1.0 | canonical=ERMAL KRASNIQI
 - FURKAN SOYALP -> Furkan Soyalp | skor=1.0 | canonical=FURKAN SOYALP
-- GIFT EMMANUEL  ORBAN -> Gift Orban | skor=1.0 | canonical=GIFT EMMANUEL ORBAN
 
 ### besiktas_tff_vs_transfermarkt
 

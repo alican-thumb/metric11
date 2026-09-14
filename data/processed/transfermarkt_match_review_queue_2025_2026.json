@@ -1,23 +1,23 @@
 {
   "summary": {
-    "tff_profiles": 864,
+    "tff_profiles": 866,
     "tm_clubs": 18,
     "tm_players": 817,
     "snapshot_in_scope_tff_profiles": 581,
-    "matched_profiles": 607,
-    "verified_matched_profiles": 607,
+    "matched_profiles": 608,
+    "verified_matched_profiles": 608,
     "manual_alias_mapped_profiles": 4,
     "manual_alias_pending_network_verification": 4,
-    "operationally_mapped_profiles": 611,
+    "operationally_mapped_profiles": 612,
     "operational_in_scope_mapped_profiles": 542,
-    "unmatched_profiles": 253,
-    "overall_match_rate": 0.703,
-    "in_scope_match_rate": 1.045,
+    "unmatched_profiles": 254,
+    "overall_match_rate": 0.702,
+    "in_scope_match_rate": 1.046,
     "operational_mapping_rate": 0.707,
     "operational_in_scope_mapping_rate": 0.933,
     "scout_blocking_unmatched": 3,
     "category_counts": {
-      "OUT_OF_SNAPSHOT_CLUB": 214,
+      "OUT_OF_SNAPSHOT_CLUB": 215,
       "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 37,
       "SAME_CLUB_NAME_REVIEW": 1,
       "POSSIBLE_TRANSFER_OR_CLUB_MISMATCH": 1
@@ -26,7 +26,7 @@
       "SCOUT_BLOCKING": 3,
       "HIGH_USAGE_UNRESOLVED": 17,
       "ROTATION_USAGE_UNRESOLVED": 10,
-      "OUT_OF_SNAPSHOT": 211,
+      "OUT_OF_SNAPSHOT": 212,
       "NO_MATCH_ACTIVITY": 12
     },
     "rule": "Doğrulanmış kapsama yalnız snapshot eşleşmesi girer; manuel alias kullanımı ayrı izlenir ve ağ teyidi tamamlanana kadar doğrulanmış sayılmaz."
@@ -74,9 +74,9 @@
     },
     {
       "team": "GALATASARAY A.Ş.",
-      "tff_profiles": 41,
+      "tff_profiles": 42,
       "tm_players": 44,
-      "matched_profiles": 40,
+      "matched_profiles": 41,
       "manual_alias_mapped_profiles": 0,
       "unmatched_profiles": 1,
       "match_rate": 0.976,
@@ -227,13 +227,13 @@
     },
     {
       "team": "ZECORNER KAYSERİSPOR",
-      "tff_profiles": 1,
+      "tff_profiles": 0,
       "tm_players": 51,
-      "matched_profiles": 1,
+      "matched_profiles": 0,
       "manual_alias_mapped_profiles": 0,
       "unmatched_profiles": 0,
-      "match_rate": 1.0,
-      "operational_mapping_rate": 1.0,
+      "match_rate": 0,
+      "operational_mapping_rate": 0,
       "categories": {}
     },
     {
@@ -1103,6 +1103,22 @@
         "starts": 20,
         "squad_inclusions": 23,
         "goals": 3
+      },
+      "candidate": null,
+      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
+    },
+    {
+      "player_id": "2294786",
+      "tff_name": "YOUSSEF AIT BENASSER",
+      "tff_club": "METRO HOLDİNG KAYSERİSPOR",
+      "category": "OUT_OF_SNAPSHOT_CLUB",
+      "priority_rank": 5,
+      "blocks_scout_review": false,
+      "review_tier": "OUT_OF_SNAPSHOT",
+      "season_activity": {
+        "starts": 19,
+        "squad_inclusions": 21,
+        "goals": 0
       },
       "candidate": null,
       "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."

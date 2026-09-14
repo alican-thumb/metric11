@@ -1,18 +1,18 @@
 # Transfermarkt Oyuncu Eşleşme İnceleme Kuyruğu
 
-- TFF profil: 864
+- TFF profil: 866
 - Transfermarkt snapshot: 18/18 kulüp, 817 oyuncu
 - Snapshot kapsamındaki TFF profil: 581
-- Doğrulanmış snapshot eşleşmesi: 607
+- Doğrulanmış snapshot eşleşmesi: 608
 - Manuel eşleme ile kullanılan profil: 4
 - Ağ teyidi bekleyen manuel eşleme: 4
-- Çözülmemiş profil: 253
-- Doğrulanmış genel eşleşme oranı: %70.3
-- Doğrulanmış snapshot içi eşleşme oranı: %104.5
+- Çözülmemiş profil: 254
+- Doğrulanmış genel eşleşme oranı: %70.2
+- Doğrulanmış snapshot içi eşleşme oranı: %104.6
 - Manuel eşleme dahil kullanılabilir snapshot içi kapsama: %93.3
 - Scout incelemesini bloke eden eşleşmeyen oyuncu: 3
-- Sınıf dağılımı: {'OUT_OF_SNAPSHOT_CLUB': 214, 'NO_RELIABLE_CANDIDATE_IN_SNAPSHOT': 37, 'SAME_CLUB_NAME_REVIEW': 1, 'POSSIBLE_TRANSFER_OR_CLUB_MISMATCH': 1}
-- Kullanım önceliği dağılımı: {'SCOUT_BLOCKING': 3, 'HIGH_USAGE_UNRESOLVED': 17, 'ROTATION_USAGE_UNRESOLVED': 10, 'OUT_OF_SNAPSHOT': 211, 'NO_MATCH_ACTIVITY': 12}
+- Sınıf dağılımı: {'OUT_OF_SNAPSHOT_CLUB': 215, 'NO_RELIABLE_CANDIDATE_IN_SNAPSHOT': 37, 'SAME_CLUB_NAME_REVIEW': 1, 'POSSIBLE_TRANSFER_OR_CLUB_MISMATCH': 1}
+- Kullanım önceliği dağılımı: {'SCOUT_BLOCKING': 3, 'HIGH_USAGE_UNRESOLVED': 17, 'ROTATION_USAGE_UNRESOLVED': 10, 'OUT_OF_SNAPSHOT': 212, 'NO_MATCH_ACTIVITY': 12}
 - Kural: Doğrulanmış kapsama yalnız snapshot eşleşmesi girer; manuel alias kullanımı ayrı izlenir ve ağ teyidi tamamlanana kadar doğrulanmış sayılmaz.
 
 ## Scout Bloke Eden Kuyruk
@@ -35,7 +35,7 @@
 | BEŞİKTAŞ A.Ş. | 47 | 50 | 43 | 2 | 2 | %91.5 | %95.7 |
 | CORENDON ALANYASPOR | 33 | 37 | 30 | 0 | 3 | %90.9 | %90.9 |
 | FENERBAHÇE A.Ş. | 44 | 50 | 35 | 0 | 9 | %79.5 | %79.5 |
-| GALATASARAY A.Ş. | 41 | 44 | 40 | 0 | 1 | %97.6 | %97.6 |
+| GALATASARAY A.Ş. | 42 | 44 | 41 | 0 | 1 | %97.6 | %97.6 |
 | GAZİANTEP FUTBOL KULÜBÜ A.Ş. | 41 | 45 | 38 | 0 | 3 | %92.7 | %92.7 |
 | GENÇLERBİRLİĞİ | 39 | 48 | 38 | 0 | 1 | %97.4 | %97.4 |
 | GÖZTEPE A.Ş. | 35 | 36 | 29 | 1 | 5 | %82.9 | %85.7 |
@@ -47,7 +47,7 @@
 | SAMSUNSPOR A.Ş. | 39 | 44 | 35 | 0 | 4 | %89.7 | %89.7 |
 | TRABZONSPOR A.Ş. | 43 | 42 | 39 | 1 | 3 | %90.7 | %93.0 |
 | TÜMOSAN KONYASPOR | 43 | 48 | 42 | 0 | 1 | %97.7 | %97.7 |
-| ZECORNER KAYSERİSPOR | 1 | 51 | 1 | 0 | 0 | %100.0 | %100.0 |
+| ZECORNER KAYSERİSPOR | 0 | 51 | 0 | 0 | 0 | %0 | %0 |
 | ÇAYKUR RİZESPOR A.Ş. | 34 | 35 | 34 | 0 | 0 | %100.0 | %100.0 |
 | İKAS EYÜPSPOR | 39 | 62 | 37 | 0 | 2 | %94.9 | %94.9 |
 
@@ -309,6 +309,7 @@
 - LIONEL JULES CAROLE (METRO HOLDİNG KAYSERİSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=23, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 - SEMİH GÜLER (METRO HOLDİNG KAYSERİSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=22, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 - GERMAN ONUGKHA (METRO HOLDİNG KAYSERİSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=21, gol=8, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
+- YOUSSEF AIT BENASSER (METRO HOLDİNG KAYSERİSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=19, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 - JOAO SABINO MENDES NETO SARAIVA (METRO HOLDİNG KAYSERİSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=15, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 - AARON OPOKU TIAWIAH (METRO HOLDİNG KAYSERİSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=14, gol=1, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 - CARLOS MANUEL CARDOSO MANE (METRO HOLDİNG KAYSERİSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=12, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
