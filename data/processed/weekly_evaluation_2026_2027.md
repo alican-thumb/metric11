@@ -4,12 +4,12 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 
 ## Genel Karne
 
-- Değerlendirilen maç: **41**
-- İsabet: **16/41** (%39)
+- Değerlendirilen maç: **42**
+- İsabet: **16/42** (%38)
 - Beraberlik yakalama: **2/8** (%25)
-- Yüksek güvenli maç isabeti: **7/12** (%58)
+- Yüksek güvenli maç isabeti: **7/13** (%54)
 
-## Hafta 5 — 2/5 isabet (%40)
+## Hafta 5 — 2/6 isabet (%33)
 
 | Maç | Skor | Tahmin | Sonuç | Güven |
 | --- | --- | --- | --- | --- |
@@ -18,6 +18,7 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 | SAMSUNSPOR A.Ş. - ARCA ÇORUM FK | 1 - 5 | Ev | ❌ | LOW |
 | CORENDON ALANYASPOR - GÖZTEPE A.Ş. | 2 - 2 | Beraberlik | ✅ | LOW |
 | TÜMOSAN KONYASPOR - TRABZONSPOR A.Ş. | 1 - 0 | Deplasman | ❌ | MEDIUM |
+| GENÇLERBİRLİĞİ - KASIMPAŞA A.Ş. | 1 - 2 | Ev | ❌ | HIGH |
 
 ## Hafta 4 — 2/9 isabet (%22)
 
