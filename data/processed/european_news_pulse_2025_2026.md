@@ -1,11 +1,12 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-09-14T21:52:03.609219+00:00
-Toplam ilgili haber: 22
+Üretim zamanı: 2026-09-15T00:38:59.543215+00:00
+Toplam ilgili haber: 23
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [Selanik'te kritik gün](https://www.aksam.com.tr/spor/selanikte-kritik-gun/haber-1698393) — Aksam Spor · 2026-09-15T01:46:00+03:00 · turnuva=— · kulüp=—
 - [Kupada heyecan başlıyor! İlk maçlar 15 Eylül'de](https://www.takvim.com.tr/spor/2026/09/14/ziraat-turkiye-kupasi-1-eleme-turu-mac-programi) — Takvim Spor · 2026-09-14T23:20:21+03:00 · turnuva=— · kulüp=—
 - [Beşiktaş - Marsilya UEFA Avrupa Ligi Maçı Ne Zaman, Hangi Kanalda? Beşiktaş Marsilya Maçı Şifresiz Mi, Nereden İzlenir? Italiano'nun Beşiktaş'ı Marsilya'ya Nasıl Bir Performans Sergileyecek?](https://www.cnnturk.com/spor/futbol/besiktas-marsilya-uefa-avrupa-ligi-maci-ne-zaman-hangi-kanalda-besiktas-marsilya-maci-sifresiz-mi-nereden-izlenir-3466489) — CNN Türk Spor · 2026-09-14T17:26:39+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş, Olimpik Marsilya maçının hazırlıklarına başladı](https://www.fotomac.com.tr/besiktas/2026/09/14/besiktas-olimpik-marsilya-macinin-hazirliklarina-basladi) — Fotomaç · 2026-09-14T16:24:38+03:00 · turnuva=EL · kulüp=Beşiktaş

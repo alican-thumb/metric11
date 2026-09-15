@@ -4,12 +4,12 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 
 ## Genel Karne
 
-- Değerlendirilen maç: **44**
-- İsabet: **17/44** (%39)
-- Beraberlik yakalama: **2/8** (%25)
-- Yüksek güvenli maç isabeti: **8/14** (%57)
+- Değerlendirilen maç: **45**
+- İsabet: **17/45** (%38)
+- Beraberlik yakalama: **2/9** (%22)
+- Yüksek güvenli maç isabeti: **8/15** (%53)
 
-## Hafta 5 — 3/8 isabet (%38)
+## Hafta 5 — 3/9 isabet (%33)
 
 | Maç | Skor | Tahmin | Sonuç | Güven |
 | --- | --- | --- | --- | --- |
@@ -21,6 +21,7 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 | GENÇLERBİRLİĞİ - KASIMPAŞA A.Ş. | 1 - 2 | Ev | ❌ | HIGH |
 | AMED SPORTİF FAALİYETLER - İSTANBUL BAŞAKŞEHİR FK | 5 - 0 | Deplasman | ❌ | MEDIUM |
 | GALATASARAY A.Ş. - KOCAELİSPOR | 1 - 0 | Ev | ✅ | HIGH |
+| GAZİANTEP FUTBOL KULÜBÜ A.Ş. - FENERBAHÇE A.Ş. | 0 - 0 | Deplasman | ❌ | HIGH |
 
 ## Hafta 4 — 2/9 isabet (%22)
 
