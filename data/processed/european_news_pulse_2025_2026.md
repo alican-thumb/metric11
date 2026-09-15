@@ -1,21 +1,23 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-09-15T17:00:49.821022+00:00
-Toplam ilgili haber: 25
+Üretim zamanı: 2026-09-15T21:20:24.536019+00:00
+Toplam ilgili haber: 27
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [Ziraat Türkiye Kupası'nda ilk tur heyecanı başladı](https://www.aksam.com.tr/spor/ziraat-turkiye-kupasinda-ilk-tur-heyecani-basladi/haber-1698643) — Aksam Spor · 2026-09-15T22:17:00+03:00 · turnuva=— · kulüp=—
+- [Söke 1970 Spor, kupada turladı!](https://www.sabah.com.tr/spor/futbol/2026/09/15/soke-1970-spor-kupada-turladi) — Sabah Spor · 2026-09-15T22:07:21+03:00 · turnuva=— · kulüp=—
+- [Ziraat Türkiye Kupası'nda gol yağmuru: Söke 1970 Spor, Altay'ı 4-2 yenerek 2. tura yükseldi](https://www.takvim.com.tr/spor/2026/09/15/altay-soke-1970-spor-mac-ozeti-golleri-ztk) — Takvim Spor · 2026-09-15T19:56:16+03:00 · turnuva=— · kulüp=—
 - [TÜRKİYE KUPASI MAÇ TAKVİMİ: Bu hafta hangi maçlar var, ne zaman, saat kaçta? 1. Eleme Turu maç programı...](https://www.cnnturk.com/spor/futbol/turkiye-kupasi-mac-takvimi-bu-hafta-hangi-maclar-var-ne-zaman-saat-kacta-1-eleme-turu-mac-programi-3467051) — CNN Türk Spor · 2026-09-15T19:22:45+00:00 · turnuva=— · kulüp=—
+- [Türkiye Kupası'nda heyecan başladı!](https://www.haberturk.com/spor/ziraat-turkiye-kupasi-1-eleme-turunda-heyecan-2-macla-basladi-3912716) — Haberturk Spor · 2026-09-15T19:10:31+00:00 · turnuva=— · kulüp=—
 - [1923 Afyonkarahisar SK, kupada Ürgüpspor'u eledi!](https://www.sabah.com.tr/spor/futbol/2026/09/15/1923-afyonkarahisar-sk-kupada-urgupsporu-eledi) — Sabah Spor · 2026-09-15T19:07:42+03:00 · turnuva=— · kulüp=—
 - [TÜRKİYE FRANSA MAÇ BİLETİ FİYATI: Türkiye Fransa maç biletleri ne zaman satılacak? Türkiye Fransa maçı ne zaman, hangi kanalda, saat kaçta? Gözler TFF'de...](https://www.cnnturk.com/spor/futbol/turkiye-fransa-mac-bileti-fiyati-turkiye-fransa-mac-biletleri-ne-zaman-satilacak-turkiye-fransa-maci-ne-zaman-hangi-kanalda-3467043) — CNN Türk Spor · 2026-09-15T18:39:28+00:00 · turnuva=— · kulüp=—
 - [BEŞİKTAŞ - MARSİLYA MAÇI NE ZAMAN, SAAT KAÇTA, HANGİ KANALDA? UEFA Avrupa Ligi Beşiktaş Marsilya Maçı Şifresiz Mi, Nereden İzlenir? Italiano'nun Beşiktaş'ı Marsilya'ya Nasıl Bir Performans Sergileyecek?](https://www.cnnturk.com/spor/futbol/besiktas-marsilya-uefa-avrupa-ligi-maci-ne-zaman-hangi-kanalda-besiktas-marsilya-maci-sifresiz-mi-nereden-izlenir-3466489) — CNN Türk Spor · 2026-09-15T17:39:25+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Ziraat Türkiye Kupası'nda 1923 Afyonkarahisar SK Ürgüpspor’u 2-1 yenerek tur atladı](https://www.takvim.com.tr/spor/2026/09/15/ziraat-turkiye-kupasi-1923-afyonkarahisar-sk-urgupspor) — Takvim Spor · 2026-09-15T16:54:44+03:00 · turnuva=— · kulüp=—
-- [Beşiktaş, Marsilya maçı hazırlıklarını sürdürdü](https://www.sabah.com.tr/spor/futbol/2026/09/15/besiktas-marsilya-maci-hazirliklarini-surdurdu) — Sabah Spor · 2026-09-15T16:43:17+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [UEFA, önümüzdeki senelerde final oynanacak stadyumları açıkladı](https://www.cnnturk.com/spor/futbol/uefa-onumuzdeki-senelerde-final-oynanacak-stadyumlari-acikladi-3466883) — CNN Türk Spor · 2026-09-15T13:47:23+00:00 · turnuva=— · kulüp=—
 - [Beşiktaş'ta Marsilya maçı mesaisi!](https://www.haberturk.com/spor/besiktas-ta-marsilya-maci-mesaisi-3912652) — Haberturk Spor · 2026-09-15T13:14:28+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [UEFA Avrupa Ligi'nde ilk maçlar yarın oynanacak](https://www.cnnturk.com/spor/futbol/uefa-avrupa-liginde-ilk-maclar-yarin-oynanacak-3466874) — CNN Türk Spor · 2026-09-15T13:09:08+00:00 · turnuva=EL · kulüp=—
-- [Beşiktaş - Marsilya maçının hakemi açıklandı!](https://www.sabah.com.tr/spor/futbol/2026/09/15/besiktas-marsilya-macinin-hakemi-aciklandi) — Sabah Spor · 2026-09-15T11:40:50+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş - Marsilya maçının hakemi belli oldu](https://www.cnnturk.com/spor/futbol/besiktas-marsilya-macinin-hakemi-belli-oldu-3466825) — CNN Türk Spor · 2026-09-15T11:39:01+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [UEFA, finallerin ev sahiplerini açıkladı!](https://www.haberturk.com/spor/uefa-finallerin-ev-sahiplerini-acikladi-3912608) — Haberturk Spor · 2026-09-15T10:45:50+00:00 · turnuva=— · kulüp=—
 - [UEFA Avrupa Ligi'nde ilk hafta maçları yarın başlayacak](https://www.aa.com.tr/tr/spor/uefa-avrupa-liginde-ilk-hafta-maclari-yarin-baslayacak/4057381) — Anadolu Ajansı Spor · 2026-09-15T10:08:44+03:00 · turnuva=EL · kulüp=—
