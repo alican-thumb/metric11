@@ -1,17 +1,18 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-09-15T04:54:56.469709+00:00
-Toplam ilgili haber: 22
+Üretim zamanı: 2026-09-15T07:44:42.693660+00:00
+Toplam ilgili haber: 23
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [UEFA Avrupa Ligi'nde ilk hafta maçları yarın başlayacak](https://www.aa.com.tr/tr/spor/uefa-avrupa-liginde-ilk-hafta-maclari-yarin-baslayacak/4057381) — Anadolu Ajansı Spor · 2026-09-15T10:08:44+03:00 · turnuva=EL · kulüp=—
+- [Beşiktaş - Marsilya UEFA Avrupa Ligi Maçı Ne Zaman, Hangi Kanalda? Beşiktaş Marsilya Maçı Şifresiz Mi, Nereden İzlenir? Italiano'nun Beşiktaş'ı Marsilya'ya Nasıl Bir Performans Sergileyecek?](https://www.cnnturk.com/spor/futbol/besiktas-marsilya-uefa-avrupa-ligi-maci-ne-zaman-hangi-kanalda-besiktas-marsilya-maci-sifresiz-mi-nereden-izlenir-3466489) — CNN Türk Spor · 2026-09-15T09:57:37+00:00 · turnuva=EL · kulüp=Beşiktaş
+- [Ziraat Türkiye Kupası'nda dev heyecan başlıyor! Kupa şöleni  A Spor'da](https://www.sabah.com.tr/spor/futbol/2026/09/15/ziraat-turkiye-kupasinda-dev-heyecan-basliyor-kupa-soleni-a-sporda) — Sabah Spor · 2026-09-15T08:36:39+03:00 · turnuva=— · kulüp=—
+- [Beşiktaş'ta Vincenzo Italiano, Marsilya maçı için rakibi mercek altına aldı](https://www.cnnturk.com/spor/futbol/besiktasta-vincenzo-italiano-marsilya-maci-icin-rakibi-mercek-altina-aldi-3466691) — CNN Türk Spor · 2026-09-15T08:05:24+00:00 · turnuva=EL · kulüp=Beşiktaş
+- [Avrupa Ligi'nde ilk hafta heyecanı!](https://www.haberturk.com/spor/uefa-avrupa-ligi-nde-ilk-hafta-maclari-yarin-baslayacak-3912549) — Haberturk Spor · 2026-09-15T07:19:00+00:00 · turnuva=EL · kulüp=—
 - [Şampiyonlar Ligi'nde İsmail Yüksek'ten daha iyisi yok!](https://www.hurriyet.com.tr/sporarena/sampiyonlar-liginde-ismail-yuksekten-daha-iyisi-yok-43306842) — Hürriyet Spor · 2026-09-15T04:00:00+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Selanik'te kritik gün](https://www.aksam.com.tr/spor/selanikte-kritik-gun/haber-1698393) — Aksam Spor · 2026-09-15T01:46:00+03:00 · turnuva=— · kulüp=—
-- [Ziraat Türkiye Kupası heyecanı A Spor'da! Canlı yayınlanacak maçlar...](https://www.fotomac.com.tr/turkiye-kupasi/2026/09/14/ziraat-turkiye-kupasi-heyecani-a-sporda-canli-yayinlanacak-maclar) — Fotomaç · 2026-09-15T00:44:20+03:00 · turnuva=— · kulüp=—
-- [UEFA kulüpler sıralaması güncellendi! İlk 30'daki tek Türk takımı...](https://www.fotomac.com.tr/fenerbahce/2026/09/12/uefa-kulupler-siralamasi-guncellendi-ilk-30daki-tek-turk-takimi) — Fotomaç · 2026-09-15T00:44:04+03:00 · turnuva=CL · kulüp=Fenerbahçe, Beşiktaş
 - [Kupada heyecan başlıyor! İlk maçlar 15 Eylül'de](https://www.takvim.com.tr/spor/2026/09/14/ziraat-turkiye-kupasi-1-eleme-turu-mac-programi) — Takvim Spor · 2026-09-14T23:20:21+03:00 · turnuva=— · kulüp=—
-- [Beşiktaş - Marsilya UEFA Avrupa Ligi Maçı Ne Zaman, Hangi Kanalda? Beşiktaş Marsilya Maçı Şifresiz Mi, Nereden İzlenir? Italiano'nun Beşiktaş'ı Marsilya'ya Nasıl Bir Performans Sergileyecek?](https://www.cnnturk.com/spor/futbol/besiktas-marsilya-uefa-avrupa-ligi-maci-ne-zaman-hangi-kanalda-besiktas-marsilya-maci-sifresiz-mi-nereden-izlenir-3466489) — CNN Türk Spor · 2026-09-14T17:26:39+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş, Marsilya maçının hazırlıklarına başladı](https://www.hurriyet.com.tr/sporarena/besiktas-marsilya-macinin-hazirliklarina-basladi-43306585) — Hürriyet Spor · 2026-09-14T14:13:37+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [İsmail Yüksek, performansıyla Şampiyonlar Ligi'nde zirvede](https://www.cnnturk.com/spor/futbol/ismail-yuksek-performansiyla-sampiyonlar-liginde-zirvede-3466412) — CNN Türk Spor · 2026-09-14T14:05:16+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Milli maçların biletleri satışa çıktı](https://www.cnnturk.com/spor/futbol/milli-maclarin-biletleri-satisa-cikti-3466411) — CNN Türk Spor · 2026-09-14T14:01:58+00:00 · turnuva=— · kulüp=—
@@ -27,4 +28,4 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Türkiye Kupası'nda heyecan başlıyor!](https://www.haberturk.com/spor/ziraat-turkiye-kupasi-nda-1-eleme-turu-maclari-basliyor-3912322) — Haberturk Spor · 2026-09-14T08:27:01+00:00 · turnuva=— · kulüp=—
 - [Ziraat Türkiye Kupası'nda 1. eleme turu maçları başlayacak](https://www.hurriyet.com.tr/sporarena/ziraat-turkiye-kupasinda-1-eleme-turu-maclari-baslayacak-43305868) — Hürriyet Spor · 2026-09-14T08:13:29+00:00 · turnuva=— · kulüp=—
 - [Transfer Gerçekleri / Başakşehir-Galatasaray / Fenerbahçe- Beşiktaş / Şampiyonlar Ligi - YouTube](https://news.google.com/rss/articles/CBMiXEFVX3lxTE1BdGE1bnBJX0FnTmtiY2tEVDVsWnRaTGtZdXBDSGRBZ0xuWEstSTJsM21iWVJjY1Y4S3RzUWxwdEpPQnNSQWcyeHVTWnBMVnlneUlLUl9pZDU1WUpm?oc=5) — YouTube · 2026-09-09T14:00:04+00:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe, Beşiktaş, Başakşehir
-- [Miguel Cardoso ve Elisha Owusu ile resmî sözleşme imzaladık.](https://erzurumsporfk.org/2026/08/19/miguel-cardoso-ve-elisha-owusu-ile-resmi-sozlesme-imzaladik/) — Erzurumspor FK Resmi Web · 2026-08-19T20:45:50+03:00 · turnuva=EL · kulüp=Kayserispor
+- [Beşiktaş'tan gece yarısı bombası! Yeni transfer açıklandı, UEFA listesine bile yazıldı - Beşiktaş (BJK) Haberleri - Mynet](https://news.google.com/rss/articles/CBMivAFBVV95cUxQRnJmTHlGaHFURmpZcnhTRWtTMUoydjZsMS1Xa2k0bFItVUVmSUFIRTFWSGN4Sk5WVjZ4WTdGNVJvaFltdTU5OUl5cXR4SHBJTk9Ud3FOeUlaR3hwSVBNZDlhSl9xclc0UmV0dGZyZUZvbWFqUFI1a0hrMHJ1WVV1QVRTSUEwX3QwdDBZR2ZiMVc0d016WDhTZmthOGJYUG5Ga1hpeEhJbkRwakIwSGVZckVCYTM1Y2hnUWEtetIBvwFBVV95cUxPakpneWdJcWl5aTdKOHp5WjNyYTlvWWdRSXpRdGNqX1lDR2pYYUlGazFROWpPcllBSmxoNlN0TkJfMEUzY1pTMzdFNkpydU1sVnFJbElEVTdpWjN5TGFiaUdiekx4alV0d01jQ3A1NkdjU09BV1pKNFJ2WFg1RkdlTi1SWWl1STE0eFRRZ1JRZDZXbUFpVjQ1b3U0Ul9pQUxPMDBWcXFWUGJ2YzR0T3lVOHVnSWpDVEptODdMdHBCUQ?oc=5) — Mynet · 2026-09-03T04:56:54+00:00 · turnuva=— · kulüp=Beşiktaş
