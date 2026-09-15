@@ -20,12 +20,12 @@
 | 6 | RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ | ACİL | 56.4 | 0.8 | 1.2 | 2.2 | Sol açık / çizgi kırıcı |
 | 7 | GENÇLERBİRLİĞİ | YÜKSEK | 55.0 | 1.4 | 1.0 | 1.8 | Santrfor / skor yükü |
 | 8 | KASIMPAŞA A.Ş. | YÜKSEK | 47.8 | 1.8 | 1.4 | 1.0 | Kaleci / istikrar |
-| 9 | GAZİANTEP FUTBOL KULÜBÜ A.Ş. | YÜKSEK | 43.2 | 1.75 | 1.75 | 1.25 | Kaleci / istikrar |
+| 9 | GAZİANTEP FUTBOL KULÜBÜ A.Ş. | YÜKSEK | 45.8 | 1.6 | 1.4 | 1.0 | Kaleci / istikrar |
 | 10 | KOCAELİSPOR | YÜKSEK | 39.0 | 1.8 | 1.0 | 0.8 | Santrfor / skor yükü |
 | 11 | ÇAYKUR RİZESPOR A.Ş. | YÜKSEK | 39.0 | 1.8 | 1.0 | 0.8 | Kaleci / istikrar |
 | 12 | CORENDON ALANYASPOR | YÜKSEK | 37.4 | 1.6 | 1.2 | 1.0 | 8 numara / fizik motoru |
 | 13 | ÇORUM FK | YÜKSEK | 35.8 | 1.4 | 2.4 | 2.0 | Kaleci / istikrar |
-| 14 | FENERBAHÇE A.Ş. | NORMAL | 32.5 | 1.5 | 2.0 | 1.5 | Sol açık / çizgi kırıcı |
+| 14 | FENERBAHÇE A.Ş. | NORMAL | 34.2 | 1.4 | 1.6 | 1.2 | Sol açık / çizgi kırıcı |
 | 15 | TRABZONSPOR A.Ş. | NORMAL | 30.6 | 1.4 | 1.8 | 1.0 | Sol açık / çizgi kırıcı |
 | 16 | AMED SFK | STABİL | 16.8 | 2.0 | 2.4 | 1.0 | Kaleci / istikrar |
 | 17 | BEŞİKTAŞ A.Ş. | STABİL | 8.8 | 2.4 | 2.4 | 0.8 | Sol açık / çizgi kırıcı |
@@ -281,11 +281,11 @@ Zayıf nokta: son bölüm gol yeme riski, kart baskısı, skor üretim sorunu, d
      → Son bölüm gol yeme riski sorunu var; 6 numara / savunma emniyeti bu açığı kapatacak. Oosterwolde: 29 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
 
 ### GAZİANTEP FUTBOL KULÜBÜ A.Ş.  [YÜKSEK]
-*1.75 puan/maç | maç başına 1.75 attı | maç başına 1.25 yedi*
+*1.6 puan/maç | maç başına 1.4 attı | maç başına 1.0 yedi*
 
 Zayıf nokta: savunma kırılgan, son bölüm gol yeme riski, kart baskısı, düşük şut baskısı
 
-**Kaleci / istikrar** — Savunma kırılganlığında kaleci istikrarı önceliği; GA ortalaması 1.25 — güvenilir kaleci pozisyonu kritik.
+**Kaleci / istikrar** — Savunma kırılganlığında kaleci istikrarı önceliği; GA ortalaması 1.0 — güvenilir kaleci pozisyonu kritik.
   1. ANFERNEE JAMAL DIJKSTEEL (KOCAELİSPOR) | 29y | 0 gol | MÜZAKERE PENCERESİ | LOW | skor 19.0
      → Savunma kırılgan sorunu var; Kaleci / istikrar bu açığı kapatacak. Dijksteel: 28 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
   2. BERKAY ÖZCAN (İSTANBUL BAŞAKŞEHİR FK) | 28y | 0 gol | MÜZAKERE PENCERESİ | LOW | skor 18.3
@@ -293,7 +293,7 @@ Zayıf nokta: savunma kırılgan, son bölüm gol yeme riski, kart baskısı, d�
   3. MUHAMMED ŞENGEZER (İSTANBUL BAŞAKŞEHİR FK) | 29y | 0 gol | PREMİUM TRANSFER | MEDIUM | skor 16.5
      → Savunma kırılgan sorunu var; Kaleci / istikrar bu açığı kapatacak. Şengezer: 33 maç. Uzun sözleşme — yüksek bonusu göze almalı.
 
-**Stoper / hava ve temas** — Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 1.25.
+**Stoper / hava ve temas** — Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 1.0.
   1. HELITON JORGE  TITO DOS SANTOS (GÖZTEPE A.Ş.) | 30y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 27.8
      → Savunma kırılgan sorunu var; Stoper / hava ve temas bu açığı kapatacak. Santos: 32 maç. Bu yaz serbest kalıyor (~-3ay) — bonussuz transfer fırsatı.
   2. JEROME OPOKU (İSTANBUL BAŞAKŞEHİR FK) | 27y | 1 gol | MÜZAKERE PENCERESİ | LOW | skor 25.0
@@ -426,7 +426,7 @@ Zayıf nokta: yeni lig takımı
      → Yeni lig takımı sorunu var; Santrfor / skor yükü bu açığı kapatacak. Osimhen: 15 gol, 19 maçta sahada. Uzun sözleşme — yüksek bonusu göze almalı.
 
 ### FENERBAHÇE A.Ş.  [NORMAL]
-*1.5 puan/maç | maç başına 2.0 attı | maç başına 1.5 yedi*
+*1.4 puan/maç | maç başına 1.6 attı | maç başına 1.2 yedi*
 
 Zayıf nokta: kadro derinliği sınırlı
 
