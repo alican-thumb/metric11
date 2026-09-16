@@ -644,6 +644,7 @@ def build_html(report: dict) -> str:
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Transfer Scout Raporu {TRANSFER_WATCH_SEASON_LABEL} — Süper Lig | metric11</title>
 <meta name="description" content="Süper Lig 2026-27 sezonu için pozisyon bazlı transfer önerileri: piyasa değeri, sözleşme durumu ve performans analizi — metric11.">
+<link rel="canonical" href="https://metric11.com/transfer_recommendation_report_2025_2026.html">
 <meta property="og:title" content="Transfer Scout Raporu {TRANSFER_WATCH_SEASON_LABEL} — Süper Lig | metric11">
 <meta property="og:description" content="Süper Lig takımlarına pozisyon bazlı transfer önerileri: piyasa değeri, sözleşme durumu ve performans analizi.">
 <meta property="og:image" content="https://metric11.com/og_transfer_recommendation.png">

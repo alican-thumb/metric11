@@ -25,7 +25,7 @@ def main() -> None:
     json_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     md_path.write_text(md, encoding="utf-8")
     html_path = PROCESSED_DIR / f"{args.output_prefix}.html"
-    html_path.write_text(page_html("Büyük Maç Denetim Raporu (2025-26 Arşiv)", md_to_html(md), description="Süper Lig derbi ve büyük maçlarında beraberlik riski, gol adayı kalitesi ve taraf tahmin tutarlılığı — tamamlanmış 2025-26 sezonu, Beşiktaş maçları — metric11."), encoding="utf-8")
+    html_path.write_text(page_html("Büyük Maç Denetim Raporu (2025-26 Arşiv)", md_to_html(md), description="Süper Lig derbi ve büyük maçlarında beraberlik riski, gol adayı kalitesi ve taraf tahmin tutarlılığı — tamamlanmış 2025-26 sezonu, Beşiktaş maçları — metric11.", canonical_path=html_path.name), encoding="utf-8")
     print(md)
 
 

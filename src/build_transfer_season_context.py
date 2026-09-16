@@ -480,6 +480,7 @@ def main() -> None:
         "<meta name='viewport' content='width=device-width,initial-scale=1'>",
         f"<title>Transfer Sezonu – Süper Lig {TRANSFER_WATCH_SEASON_LABEL} | metric11</title>",
         f"<meta name='description' content='Süper Lig {TRANSFER_WATCH_SEASON_LABEL} transfer sezonu: sözleşmesi bitenler, serbest kalacaklar, yükselen takım ihtiyaçları ve transfer penceresi takvimi &mdash; metric11.'>",
+        "<link rel='canonical' href='https://metric11.com/transfer_season_context_2025_2026.html'>",
         "<meta property='og:title' content='Transfer Sezonu &mdash; metric11'>",
         "<meta property='og:description' content='Süper Lig transfer sezonu: sözleşmesi bitenler, serbest kalacaklar ve pencere takvimi.'>",
         "<meta property='og:image' content='https://metric11.com/og_transfer_season.png'>",

@@ -344,6 +344,7 @@ def build_html(payload: dict) -> str:
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Pozisyon Scout Matrisi {TRANSFER_WATCH_SEASON_LABEL} | metric11</title>
   <meta name="description" content="Süper Lig pozisyon bazlı scout matrisi: santrfor, 8 numara, bek ve daha fazla rol için aday eşleşmesi — metric11.">
+  <link rel="canonical" href="https://metric11.com/position_scout_matrix_2025_2026.html">
   <meta property="og:title" content="Pozisyon Scout Matrisi — metric11">
   <meta property="og:image" content="https://metric11.com/og-image.png">
   <meta name="twitter:card" content="summary_large_image">

@@ -55,7 +55,7 @@ def main() -> None:
     md = build_markdown(payload)
     OUTPUT_JSON.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     OUTPUT_MD.write_text(md, encoding="utf-8")
-    OUTPUT_HTML.write_text(page_html(f"OOS Validasyon — {SEASON.replace('_', '-')}", md_to_html(md), noindex=True), encoding="utf-8")
+    OUTPUT_HTML.write_text(page_html(f"OOS Validasyon — {SEASON.replace('_', '-')}", md_to_html(md), noindex=True, canonical_path=OUTPUT_HTML.name), encoding="utf-8")
     print(md)
 
 

@@ -80,6 +80,7 @@ def build_html(
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tahmin Backtest Paneli (2025-26 Arşiv) — metric11</title>
   <meta name="description" content="Süper Lig maç ve gol tahminlerinin geçmiş sezon backtest analizi: doğruluk oranları, hata dağılımı ve model kalibrasyonu — metric11.">
+  <link rel="canonical" href="https://metric11.com/prediction_backtest_dashboard_2025_2026.html">
   <meta property="og:title" content="Tahmin Backtest Paneli (2025-26 Arşiv) — metric11">
   <meta property="og:description" content="Süper Lig maç ve gol tahminlerinin geçmiş sezon backtest analizi — metric11.">
   <meta property="og:image" content="https://metric11.com/og-image.png">

@@ -172,11 +172,12 @@ def _build_nav(active: str = "") -> str:
     )
 
 
-def page_html(title: str, body_html: str, description: str = "Süper Lig maç tahminleri, scout analizleri ve transfer istihbaratı — metric11.", active_nav: str = "Analiz", og_image: str = "og-image.png", noindex: bool = False) -> str:
+def page_html(title: str, body_html: str, description: str = "Süper Lig maç tahminleri, scout analizleri ve transfer istihbaratı — metric11.", active_nav: str = "Analiz", og_image: str = "og-image.png", noindex: bool = False, canonical_path: str = "") -> str:
     _t = escape(title)
     _d = escape(description)
     _og = f"https://metric11.com/{og_image}"
     _robots = '  <meta name="robots" content="noindex,nofollow">\n' if noindex else ""
+    _canonical = f'  <link rel="canonical" href="https://metric11.com/{canonical_path}">\n' if canonical_path else ""
     _cta = telegram_cta_html() if not noindex else ""
     return (
         "<!doctype html>\n"
@@ -186,6 +187,7 @@ def page_html(title: str, body_html: str, description: str = "Süper Lig maç ta
         '  <meta name="viewport" content="width=device-width, initial-scale=1">\n'
         f"  <title>{_t} — metric11</title>\n"
         f'  <meta name="description" content="{_d}">\n'
+        f"{_canonical}"
         f'  <meta property="og:title" content="{_t} — metric11">\n'
         f'  <meta property="og:description" content="{_d}">\n'
         f'  <meta property="og:image" content="{_og}">\n'

@@ -291,6 +291,7 @@ def build_html(summary: dict, previews: list[dict], goal_backtest: dict, team_na
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{_page_title}</title>
   <meta name="description" content="{_meta_desc}">
+  <link rel="canonical" href="https://metric11.com/{team_slug}_{SEASON}_dashboard_chronological.html">
   <meta property="og:title" content="{_og_title}">
   <meta property="og:description" content="{_meta_desc}">
   <meta property="og:image" content="https://metric11.com/og-image.png">

@@ -65,6 +65,7 @@ def build_html(team_data: list[dict]) -> str:
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Maç Önü Arşivi — Süper Lig {SEASON_LABEL} | metric11</title>
 <meta name="description" content="Süper Lig tüm takımlarının maç önü analizleri: olasılıklar, gol adayları, kadro sinyali ve hakem etkisi — metric11.">
+<link rel="canonical" href="https://metric11.com/all_teams_preview_dashboard_2025_2026.html">
 <meta property="og:title" content="Maç Önü Arşivi — Süper Lig {SEASON_LABEL} | metric11">
 <meta property="og:description" content="Süper Lig tüm takımlarının maç önü analizleri: olasılıklar, gol adayları, kadro sinyali ve hakem etkisi.">
 <meta property="og:image" content="https://metric11.com/og-image.png">

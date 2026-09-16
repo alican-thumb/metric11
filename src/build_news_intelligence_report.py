@@ -116,6 +116,7 @@ def build_html(intel: dict) -> str:
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Haber İstihbaratı — Süper Lig {TRANSFER_WATCH_SEASON_LABEL} | metric11</title>
 <meta name="description" content="Süper Lig güncel haberleri: transfer iddiaları, sakat listesi, ceza kararları ve resmi açıklamalar — metric11.">
+<link rel="canonical" href="https://metric11.com/news_intelligence_dashboard_2025_2026.html">
 <meta property="og:title" content="Haber İstihbaratı — Süper Lig {TRANSFER_WATCH_SEASON_LABEL} | metric11">
 <meta property="og:description" content="Süper Lig güncel haberleri: transfer iddiaları, sakat listesi, ceza kararları ve resmi açıklamalar.">
 <meta property="og:image" content="https://metric11.com/og-image.png">

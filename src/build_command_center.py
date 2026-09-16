@@ -152,6 +152,7 @@ def build_html(payload: dict) -> str:
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Analiz Merkezi — metric11</title>
   <meta name="description" content="Tahmin performansı, maç önü arşivi, gol adayları ve scout kararları tek ekranda.">
+  <link rel="canonical" href="https://metric11.com/football_command_center_2025_2026.html">
   <meta property="og:title" content="Analiz Merkezi — metric11">
   <meta property="og:image" content="https://metric11.com/og-image.png">
   <meta name="theme-color" content="#091810">

@@ -32,7 +32,7 @@ def main() -> None:
     json_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     md_path.write_text(md, encoding="utf-8")
     html_path = PROCESSED_DIR / f"{args.output_prefix}.html"
-    html_path.write_text(page_html("Lig Piyasa Değeri Denetimi (2025-26 Arşiv)", md_to_html(md), description="18 Süper Lig takımının Transfermarkt kadro değerlerini model tahminleriyle karşılaştıran retrospektif denetim — metric11."), encoding="utf-8")
+    html_path.write_text(page_html("Lig Piyasa Değeri Denetimi (2025-26 Arşiv)", md_to_html(md), description="18 Süper Lig takımının Transfermarkt kadro değerlerini model tahminleriyle karşılaştıran retrospektif denetim — metric11.", canonical_path=html_path.name), encoding="utf-8")
     print(md)
 
 

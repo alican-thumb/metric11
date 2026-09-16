@@ -410,6 +410,7 @@ def build_html(payload: dict) -> str:
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>2026-27 Süper Lig Fikstürü ve Tahminleri | metric11</title>
 <meta name="description" content="Trendyol Süper Lig 2026-27 sezonu resmi fikstürü ve 34 haftalık 306 maç için tahminler.">
+<link rel="canonical" href="https://metric11.com/season_fixture_predictions_2026_2027.html">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <style>{_CSS}</style>
 </head>

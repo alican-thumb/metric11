@@ -162,6 +162,7 @@ def build_html(payload: dict) -> str:
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Scout Havuzu {TRANSFER_WATCH_SEASON_LABEL} | metric11</title>
   <meta name="description" content="Süper Lig 691 oyuncu scout veri havuzu — {TRANSFER_WATCH_SEASON_LABEL} transfer planlaması. Fırsat skoru, piyasa değeri, sözleşme durumu.">
+  <link rel="canonical" href="https://metric11.com/league_scouting_enriched_2025_2026_dashboard.html">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <style>
     :root{{--bg:#09111f;--panel:#0e1929;--panel2:#13223a;--ink:#e2e8f0;--muted:#64748b;--border:#1e3a5f;}}

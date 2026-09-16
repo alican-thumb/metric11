@@ -536,6 +536,7 @@ def build_html(payload: dict) -> str:
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Takım Scout Blueprint Raporu 2026-2027 | metric11</title>
   <meta name="description" content="Süper Lig takım zafiyetleri ve 2026-27 transfer öncelikleri — metric11.">
+  <link rel="canonical" href="https://metric11.com/team_scout_blueprints_2025_2026.html">
   <meta property="og:title" content="Takım Scout Blueprint Raporu — metric11">
   <meta property="og:image" content="https://metric11.com/og_blueprints.png">
   <meta name="twitter:card" content="summary_large_image">
