@@ -307,7 +307,7 @@ def build_html(signals: list[dict], summary: dict) -> str:
   .topnav a{{white-space:nowrap;color:#8fa89a;padding:8px 11px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600;transition:background .15s,color .15s}}
   .topnav a:visited{{color:#8fa89a}}
   .topnav a:hover{{background:#162b20;color:white}}
-  .topnav a.active{{background:#162b20;color:white}}
+  .topnav a.active{{background:#162b20;color:var(--lime);border-bottom:2px solid var(--lime);font-weight:800}}
   .header{{background:var(--dark);border-bottom:3px solid #1a3023;padding:24px clamp(14px,3vw,32px)}}
   .header h1{{font-size:28px;font-weight:700;color:white;margin-bottom:6px}}
   .header .sub{{color:#8fa89a;font-size:13px}}

@@ -371,7 +371,7 @@ def build_html(summary: dict, previews: list[dict], goal_backtest: dict, team_na
     }}
     .topnav a:visited {{ color: #8fa89a; }}
     .topnav a:hover {{ background: #162b20; color: white; }}
-    .topnav a.active {{ background: #162b20; color: white; }}
+    .topnav a.active {{ background: #162b20; color: var(--lime); border-bottom: 2px solid var(--lime); font-weight: 800; }}
     header {{
       background: #102419;
       color: white;

@@ -65,10 +65,10 @@ _CSS = """
     .season { color:#6b7c72; font-size:11px; font-weight:500; margin-left:2px; border-left:1px solid #2a3d30; padding-left:8px; }
     nav, .topnav { display:flex; gap:2px; flex-wrap:nowrap; overflow-x:auto; overflow-y:hidden; justify-content:flex-end; -webkit-overflow-scrolling:touch; scrollbar-width:none; }
     nav::-webkit-scrollbar, .topnav::-webkit-scrollbar { display:none; }
-    nav a, .topnav a { color:#8fa89a; text-decoration:none; font-size:13px; font-weight:600; padding:8px 11px; border-radius:6px; white-space:nowrap; flex-shrink:0; transition:background .15s,color .15s; }
+    nav a, .topnav a { color:#8fa89a; text-decoration:none; font-size:13px; font-weight:600; padding:8px 11px 6px; border-radius:6px 6px 0 0; white-space:nowrap; flex-shrink:0; border-bottom:2px solid transparent; transition:background .15s,color .15s,border-color .15s; }
     nav a:visited, .topnav a:visited { color:#8fa89a; }
     nav a:hover, .topnav a:hover { background:#162b20; color:white; }
-    nav a.active, .topnav a.active { background:#162b20; color:white; }
+    nav a.active, .topnav a.active { background:#162b20; color:var(--lime); border-bottom-color:var(--lime); font-weight:800; }
     .back-link { display:inline-flex; align-items:center; gap:6px; color:var(--green); text-decoration:none; font-size:13px; font-weight:600; margin-bottom:18px; }
     .back-link::before { content:"←"; }
     .report-wrap { max-width:960px; margin:0 auto; padding:32px clamp(14px,3vw,32px) 60px; }
@@ -108,13 +108,16 @@ def _nav_link_list() -> list[tuple[str, str]]:
     ]
     if league_active():
         links.append(("📊 Haftalık Karne", "weekly_evaluation_2026_2027.html"))
+    # Not (2026-09-16): "🌍 Dünya Kupası" kullanıcı geri bildirimiyle header'dan
+    # kaldırıldı (gereksiz yer kaplıyordu) — artık yalnızca footer'da link olarak var
+    # (bkz. page_html()'deki footer).
     links += [
         ("Scout", "transfer_recommendation_report_2025_2026.html"),
         ("Analiz", "football_intelligence_home.html"),
         ("⚽ Avrupa", "european_predictions_2026_2027.html"),
-        ("🌍 Dünya Kupası", "worldcup_2026_predictions.html"),
         ("🎮 Tahmin Oyunu", "/tahmin"),
         ("🏆 Kadro Kur", "https://tahmin.metric11.com/kadro"),
+        ("📣 Tribün Lideri", "https://tahmin.metric11.com/taraftar"),
     ]
     return links
 
@@ -126,7 +129,7 @@ def nav_links_html(active: str = "") -> str:
     """Sadece <a> etiketlerini döner (sarmalayıcı <nav> yok) — kendi topbar/nav
     markup'ını ve CSS'ini koruyan sayfalarda link listesini güncel tutmak için."""
     def _attrs(label: str, href: str) -> str:
-        if href in ("/tahmin", "https://tahmin.metric11.com/kadro"):
+        if href in ("/tahmin", "https://tahmin.metric11.com/kadro", "https://tahmin.metric11.com/taraftar"):
             return ' style="color:var(--lime);font-weight:700"'
         return ""
 
@@ -185,7 +188,7 @@ def page_html(title: str, body_html: str, description: str = "Süper Lig maç ta
         f"    {_cta}\n"
         f"    {body_html}\n"
         "  </div>\n"
-        '  <footer style="text-align:center;padding:40px 16px 28px;color:#8a9e92;font-size:12px;border-top:1px solid #e2e8e4;margin-top:48px;">metric11 &middot; <a href="mailto:hello@metric11.com" style="color:#8a9e92;text-decoration:none;border-bottom:1px solid #c5d4ca;">hello@metric11.com</a></footer>\n'
+        '  <footer style="text-align:center;padding:40px 16px 28px;color:#8a9e92;font-size:12px;border-top:1px solid #e2e8e4;margin-top:48px;">metric11 &middot; <a href="mailto:hello@metric11.com" style="color:#8a9e92;text-decoration:none;border-bottom:1px solid #c5d4ca;">hello@metric11.com</a> &middot; <a href="worldcup_2026_predictions.html" style="color:#8a9e92;text-decoration:none;border-bottom:1px solid #c5d4ca;">🌍 D&#xfc;nya Kupası Tahminleri</a></footer>\n'
         '  <script defer src="/_vercel/insights/script.js"></script>\n'
         "</body>\n"
         "</html>"

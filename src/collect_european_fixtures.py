@@ -3,9 +3,16 @@
 football-data.org API kullanır (FOOTBALL_DATA_KEY). 2026-09-04'te tespit edildi: bu API'nin
 mevcut plan/anahtarı UEL'i vermiyor (HTTP 403 — plan kısıtı) ve UECL'i hiç tanımıyor
 (HTTP 404 "sezon henüz mevcut değil" — muhtemelen bu API bu turnuvayı hiç kapsamıyor). CL
-sorunsuz çalışıyor. Bu yüzden EL/ECL için API-Football'a (zaten mevcut bir GH secret,
-Süper Lig kadro/derin-snapshot toplamada kullanılıyor) düşülür — o API'nin plan kapsamı
-daha geniş ve bu iki turnuvayı da içeriyor.
+sorunsuz çalışıyor. İkinci sırada API-Football'a (zaten mevcut bir GH secret, Süper Lig
+kadro/derin-snapshot toplamada kullanılıyor) düşülür.
+
+2026-09-16: API_FOOTBALL_KEY hesabı ASKIYA ALINMIŞ bulundu ("Your account is suspended") —
+bu yüzden EL/ECL haftalardır boş dönüyordu, halbuki gerçek maçlar (ör. Beşiktaş-Marsilya
+17 Eylül) zaten oynanıyordu. Üçüncü, anahtar GEREKTİRMEYEN bir kaynak eklendi: ESPN'in
+herkese açık "site API"si (`site.api.espn.com`, resmi/dokümante değil ama yaygın kullanılan,
+kararlı bir uç nokta) — CL/EL/ECL'in üçünü de kapsıyor, kayıt/anahtar gerektirmiyor. Bu
+üçüncü kaynak asıl güvence: ilk iki kaynak da (anahtar sorunu/plan kısıtı yüzünden) tekrar
+bozulursa EL/ECL yine de boş kalmaz.
 Çıktı: data/processed/european_fixtures_2026_2027.json
 """
 from __future__ import annotations
@@ -37,6 +44,17 @@ TURKISH_CLUBS = {
     "Trabzonspor",
     "Başakşehir",
 }
+
+_TR_FOLD = str.maketrans("şŞçÇğĞıİöÖüÜ", "sScCgGiIoOuU")
+
+
+def _ascii_fold(text: str) -> str:
+    """ESPN takım adları Türkçe karaktersiz döner ('Besiktas', 'Fenerbahce') — TURKISH_CLUBS
+    ile karşılaştırmadan önce her iki tarafı da bu şekilde katlamak gerekir, aksi halde
+    Beşiktaş/Fenerbahçe/Başakşehir (özel karakterli 3'ü) ESPN kaynaklı fikstürlerde hiç
+    Türk kulüp olarak işaretlenmez (Galatasaray/Trabzonspor özel karaktersiz olduğu için
+    fark edilmeden çalışıyor gibi görünürdü)."""
+    return text.translate(_TR_FOLD).lower()
 
 API_FOOTBALL_BASE = "https://v3.football.api-sports.io"
 # API-Football'ın sabit lig ID'leri (kamuya açık, uzun süredir değişmeyen kimlikler).
@@ -246,6 +264,137 @@ def fetch_competition_from_api_football(code: str) -> dict | None:
     return {"matches": matches, "teams": teams}
 
 
+ESPN_BASE = "https://site.api.espn.com/apis/site/v2/sports/soccer"
+# ESPN'in kendi slug'ları — resmi/dokümante değil ama uzun süredir kararlı, yaygın kullanılan
+# kimlikler (bkz. modül docstring'i).
+ESPN_COMPETITION_SLUGS = {"CL": "uefa.champions", "EL": "uefa.europa", "ECL": "uefa.europa.conf"}
+ESPN_MATCHES_PER_MATCHDAY = 18  # 36 takımlı lig aşaması formatı (2024-25 reformundan beri)
+
+
+def _fetch_espn_via_curl(url: str, timeout: int = 30) -> dict | None:
+    """Bkz. fetch_competition_from_espn docstring'i — `requests` yerine bilerek `curl`."""
+    import subprocess
+
+    try:
+        result = subprocess.run(
+            ["curl", "-s", "--max-time", str(timeout), url],
+            capture_output=True, text=True, timeout=timeout + 5,
+        )
+    except (subprocess.TimeoutExpired, FileNotFoundError) as exc:
+        print(f"  ESPN fallback (curl) başarısız: {exc}", flush=True)
+        return None
+    if result.returncode != 0 or not result.stdout:
+        print(f"  ESPN fallback (curl) başarısız: returncode={result.returncode}", flush=True)
+        return None
+    try:
+        data = json.loads(result.stdout)
+    except json.JSONDecodeError as exc:
+        print(f"  ESPN fallback (curl) JSON çözümlenemedi: {exc}", flush=True)
+        return None
+    return data if isinstance(data, dict) else None
+
+
+def _build_match_from_espn(event: dict) -> dict | None:
+    comp = (event.get("competitions") or [{}])[0]
+    competitors = comp.get("competitors") or []
+    home = next((c for c in competitors if c.get("homeAway") == "home"), None)
+    away = next((c for c in competitors if c.get("homeAway") == "away"), None)
+    if not home or not away:
+        return None
+    status = (comp.get("status") or {}).get("type") or {}
+    completed = bool(status.get("completed"))
+
+    def _score(c: dict) -> int | None:
+        if not completed:
+            return None
+        try:
+            return int(c.get("score"))
+        except (TypeError, ValueError):
+            return None
+
+    home_goals, away_goals = _score(home), _score(away)
+    winner = None
+    if completed and home_goals is not None and away_goals is not None:
+        winner = "HOME_TEAM" if home_goals > away_goals else "AWAY_TEAM" if away_goals > home_goals else "DRAW"
+
+    def _team(c: dict) -> dict:
+        t = c.get("team") or {}
+        return {
+            "id": t.get("id"),
+            "name": t.get("displayName") or t.get("name", ""),
+            "short": t.get("abbreviation", ""),
+            "crest": t.get("logo", ""),
+        }
+
+    return {
+        "id": event.get("id"),
+        "matchday": None,  # fetch_competition_from_espn içinde tarihe göre sonradan atanır
+        "stage": "LEAGUE_STAGE",
+        "group": "",
+        "utc_date": event.get("date", ""),
+        "status": "FINISHED" if completed else "TIMED",
+        "home": _team(home),
+        "away": _team(away),
+        "score": {
+            "home": home_goals,
+            "away": away_goals,
+            "extra_time_home": None,
+            "extra_time_away": None,
+            "penalties_home": None,
+            "penalties_away": None,
+            "winner": winner,
+        },
+    }
+
+
+def fetch_competition_from_espn(code: str) -> dict | None:
+    """İkinci (API-Football) kaynak da başarısız olduğunda son çare — anahtar/kayıt
+    gerektirmeyen ESPN genel API'si. Bkz. modül docstring'i (2026-09-16).
+
+    `dates=<SEASON>` takvim yılı bazlı sorguluyor — bu hem şu anki sezonun lig aşamasını HEM
+    DE bir önceki sezonun (aynı takvim yılına denk gelen) son aşama maçlarını (playoff/16'lık
+    vb.) karıştırarak döndürüyor. `season.year == SEASON` VE `season.slug == "league-phase"`
+    filtresiyle SADECE hedeflenen sezonun lig aşaması maçları alınır.
+    """
+    slug = ESPN_COMPETITION_SLUGS.get(code)
+    if not slug:
+        return None
+    # ÖNEMLİ: burada bilerek `http_client.get_url` (requests/urllib3) DEĞİL, `curl` alt
+    # process'i kullanılıyor. Yerelden doğrulandı (2026-09-16): ESPN'in Akamai WAF'ı
+    # `requests` kütüphanesinin TLS/HTTP parmak izini (User-Agent'tan BAĞIMSIZ olarak —
+    # tarayıcı UA'sı denenmiş, yine de 403 Access Denied) bot sayıp engelliyor; aynı URL
+    # `curl` ile (varsayılan UA'sıyla bile) sorunsuz 200 dönüyor. GitHub Actions ubuntu
+    # runner'larında `curl` standart olarak kurulu.
+    payload = _fetch_espn_via_curl(f"{ESPN_BASE}/{slug}/scoreboard?dates={SEASON}&limit=500")
+    if payload is None:
+        return None
+
+    events = [
+        e for e in (payload.get("events") or [])
+        if (e.get("season") or {}).get("year") == SEASON and (e.get("season") or {}).get("slug") == "league-phase"
+    ]
+    if not events:
+        print(f"  ESPN fallback: {code} için {SEASON} lig aşaması maçı bulunamadı.", flush=True)
+        return None
+
+    events.sort(key=lambda e: e.get("date", ""))
+    matches = []
+    teams: dict[str, dict] = {}
+    for i, event in enumerate(events):
+        m = _build_match_from_espn(event)
+        if not m:
+            continue
+        m["matchday"] = i // ESPN_MATCHES_PER_MATCHDAY + 1  # yaklaşık — ESPN maçbaşı hafta numarası vermiyor
+        matches.append(m)
+        for side in ("home", "away"):
+            t = m[side]
+            if t.get("id") is not None:
+                teams[str(t["id"])] = {**t, "country": ""}
+
+    print(f"  (ESPN fallback) {len(matches)} maç, {len(teams)} takım", flush=True)
+    return {"matches": matches, "teams": teams}
+
+
 def fetch_competition(key: str, code: str, short: str, name: str) -> dict:
     print(f"\n{name} ({code}) çekiliyor…", flush=True)
 
@@ -277,17 +426,23 @@ def fetch_competition(key: str, code: str, short: str, name: str) -> dict:
             matches = fallback["matches"]
             teams = fallback["teams"] or teams
 
+    if not matches:
+        espn_fallback = fetch_competition_from_espn(code)
+        if espn_fallback:
+            matches = espn_fallback["matches"]
+            teams = espn_fallback["teams"] or teams
+
     turkish_ids = {
         tid for tid, t in teams.items()
-        if any(tc.lower() in t.get("name", "").lower() for tc in TURKISH_CLUBS)
+        if any(_ascii_fold(tc) in _ascii_fold(t.get("name", "")) for tc in TURKISH_CLUBS)
     }
 
     note = None
     if not matches:
         note = (
-            "Hiçbir kaynaktan fikstür alınamadı — muhtemelen UEFA bu turnuvanın "
-            f"{SEASON} sezonu fikstürünü henüz yayınlamadı (CL'den ~2-3 hafta sonra "
-            "başlar). Bir sonraki koleksiyonda otomatik dolacak, kod değişikliği gerekmez."
+            "Hiçbir kaynaktan (football-data.org, API-Football, ESPN) fikstür alınamadı — "
+            "üç kaynak da aynı anda başarısız olması beklenmeyen bir durum, muhtemelen geçici "
+            "bir ağ/servis sorunu. Bir sonraki koleksiyonda otomatik tekrar denenir."
         )
 
     print(f"  {len(matches)} maç, {len(teams)} takım "

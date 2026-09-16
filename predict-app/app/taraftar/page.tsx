@@ -13,7 +13,7 @@ export default async function FanClubPage() {
     <div className="space-y-5">
       <div className="overflow-hidden rounded-2xl border border-emerald-800/50 bg-gradient-to-br from-emerald-900/40 via-slate-900 to-slate-950 px-5 py-4">
         <h1 className="text-xl font-black tracking-tight">
-          Taraftar <span className="text-lime-300">Sayacı</span>
+          Tribün <span className="text-lime-300">Lideri</span>
         </h1>
         <p className="text-xs text-slate-400">
           Süper Lig takımlarının gerçek taraftar sayımı — {standings.totalVotes} kullanıcı takımını seçti.

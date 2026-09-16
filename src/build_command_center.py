@@ -170,7 +170,7 @@ def build_html(payload: dict) -> str:
     .topnav a {{ white-space:nowrap; flex-shrink:0; color:#8fa89a; padding:8px 11px; border-radius:6px; text-decoration:none; font-size:13px; font-weight:600; transition:background .15s,color .15s; }}
     .topnav a:visited {{ color:#8fa89a; }}
     .topnav a:hover {{ background:#162b20; color:white; }}
-    .topnav a.active {{ background:#162b20; color:white; }}
+    .topnav a.active {{ background:#162b20; color:var(--lime); border-bottom:2px solid var(--lime); font-weight:800; }}
     header {{ background:#102419; color:white; padding:25px clamp(14px,3vw,32px); border-bottom:3px solid var(--green); }}
     header > div {{ max-width:1420px; margin:0 auto; }}
     header h1 {{ margin:0 0 7px; font-size:35px; letter-spacing:0; }}

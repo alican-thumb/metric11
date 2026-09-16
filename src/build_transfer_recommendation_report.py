@@ -664,7 +664,7 @@ def build_html(report: dict) -> str:
   .topnav a {{ color:#8fa89a; text-decoration:none; font-size:13px; font-weight:600; white-space:nowrap; flex-shrink:0; padding:8px 11px; border-radius:6px; transition:background .15s,color .15s; }}
   .topnav a:visited {{ color:#8fa89a; }}
   .topnav a:hover {{ background:#162b20; color:#fff; }}
-  .topnav a.active {{ background:#162b20; color:#fff; }}
+  .topnav a.active {{ background:#162b20; color:#cde94e; border-bottom:2px solid #cde94e; font-weight:800; }}
   .header {{ background:#102419; border-bottom:3px solid #116447; padding:24px clamp(14px,3vw,32px); }}
   .header h1 {{ font-size: 1.6rem; font-weight: 700; color: #f8fafc; }}
   .header .subtitle {{ color: #94a3b8; margin-top: 4px; font-size: 0.9rem; }}

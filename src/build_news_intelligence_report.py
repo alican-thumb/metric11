@@ -171,7 +171,7 @@ def build_html(intel: dict) -> str:
   .topnav a{{white-space:nowrap;color:#8fa89a;padding:8px 11px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600;transition:background .15s,color .15s}}
   .topnav a:visited{{color:#8fa89a}}
   .topnav a:hover{{background:#162b20;color:white}}
-  .topnav a.active{{background:#162b20;color:white}}
+  .topnav a.active{{background:#162b20;color:#cde94e;border-bottom:2px solid #cde94e;font-weight:800}}
 </style>
 </head>
 <body>

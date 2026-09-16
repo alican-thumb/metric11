@@ -495,7 +495,7 @@ def main() -> None:
         ".share-bar{padding:16px 0 8px;border-top:1px solid #d7ded9;margin-top:24px;}",
         ".topnav{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}",
         ".topnav a{white-space:nowrap;color:#8fa89a;padding:8px 11px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600}",
-        ".topnav a.active{background:#162b20;color:#fff}</style>",
+        ".topnav a.active{background:#162b20;color:#cde94e;border-bottom:2px solid #cde94e;font-weight:800}</style>",
         "</head><body>",
         "<div style='min-height:58px;padding:0 clamp(12px,3vw,28px);display:flex;align-items:center;justify-content:space-between;gap:16px;background:#091810;position:sticky;top:0;z-index:10;border-bottom:2px solid #1a3023'>"
         "<a style='display:flex;align-items:center;gap:10px;color:white;text-decoration:none;font-size:18px;font-weight:800;letter-spacing:-0.2px' href='/'>"

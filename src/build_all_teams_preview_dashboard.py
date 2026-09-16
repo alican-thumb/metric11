@@ -86,7 +86,7 @@ def build_html(team_data: list[dict]) -> str:
   .topnav a {{ white-space:nowrap; flex-shrink:0; color:#8fa89a; padding:8px 11px; border-radius:6px; text-decoration:none; font-size:13px; font-weight:600; transition:background .15s,color .15s; }}
   .topnav a:visited {{ color:#8fa89a; }}
   .topnav a:hover {{ background:#162b20; color:white; }}
-  .topnav a.active {{ background:#162b20; color:white; }}
+  .topnav a.active {{ background:#162b20; color:var(--lime); border-bottom:2px solid var(--lime); font-weight:800; }}
   .header {{ background:#102419; border-bottom:3px solid var(--green); padding:24px clamp(14px,3vw,32px); }}
   .header-inner {{ max-width:1400px; margin:0 auto; }}
   .header h1 {{ font-size:34px; font-weight:700; color:white; }}

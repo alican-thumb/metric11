@@ -596,10 +596,10 @@ def build_html() -> str:
   .brand .slbl{{color:#6b7c72;font-size:11px;font-weight:500;border-left:1px solid #2a3d30;padding-left:8px;margin-left:2px}}
   .topnav{{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}}
   .topnav::-webkit-scrollbar{{display:none}}
-  .topnav a{{white-space:nowrap;color:#8fa89a;padding:8px 11px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600;transition:background .15s,color .15s}}
+  .topnav a{{white-space:nowrap;color:#8fa89a;padding:8px 11px 6px;border-radius:6px 6px 0 0;border-bottom:2px solid transparent;text-decoration:none;font-size:13px;font-weight:600;transition:background .15s,color .15s,border-color .15s}}
   .topnav a:visited{{color:#8fa89a}}
   .topnav a:hover{{background:#162b20;color:white}}
-  .topnav a.active{{background:#162b20;color:white}}
+  .topnav a.active{{background:#162b20;color:var(--lime);border-bottom-color:var(--lime);font-weight:800}}
   .window-banner{{padding:10px clamp(14px,3vw,32px);color:#d1fae5;font-size:13px;display:flex;align-items:center;gap:10px}}
   .window-dot{{width:8px;height:8px;border-radius:50%;flex-shrink:0;animation:pulse 2s infinite}}
   @keyframes pulse{{0%,100%{{opacity:1}}50%{{opacity:.4}}}}
