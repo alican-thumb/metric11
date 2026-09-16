@@ -1,7 +1,7 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-09-16T00:18:54.237595+00:00
-Toplam ilgili haber: 33
+Üretim zamanı: 2026-09-16T03:51:17.522361+00:00
+Toplam ilgili haber: 32
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
@@ -36,6 +36,5 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Kupada heyecan başlıyor! İlk maçlar 15 Eylül'de](https://www.takvim.com.tr/spor/2026/09/14/ziraat-turkiye-kupasi-1-eleme-turu-mac-programi) — Takvim Spor · 2026-09-14T23:20:21+03:00 · turnuva=— · kulüp=—
 - [A Milli Futbol Takımı'nın deplasmandaki Belçika ve İtalya maçlarının biletleri satışa çıktı](https://www.aa.com.tr/tr/spor/a-milli-futbol-takiminin-deplasmandaki-belcika-ve-italya-maclarinin-biletleri-satisa-cikti/4056619) — Anadolu Ajansı Spor · 2026-09-14T13:31:48+03:00 · turnuva=— · kulüp=—
 - [Ziraat Türkiye Kupası'nda 1. eleme turu maçları yarın başlayacak](https://www.aa.com.tr/tr/spor/ziraat-turkiye-kupasinda-1-eleme-turu-maclari-yarin-baslayacak/4056348) — Anadolu Ajansı Spor · 2026-09-14T09:51:54+03:00 · turnuva=— · kulüp=—
-- [Transfer Gerçekleri / Başakşehir-Galatasaray / Fenerbahçe- Beşiktaş / Şampiyonlar Ligi - YouTube](https://news.google.com/rss/articles/CBMiXEFVX3lxTE1BdGE1bnBJX0FnTmtiY2tEVDVsWnRaTGtZdXBDSGRBZ0xuWEstSTJsM21iWVJjY1Y4S3RzUWxwdEpPQnNSQWcyeHVTWnBMVnlneUlLUl9pZDU1WUpm?oc=5) — YouTube · 2026-09-09T14:00:04+00:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe, Beşiktaş, Başakşehir
-- [Beşiktaş'tan gece yarısı bombası! Yeni transfer açıklandı, UEFA listesine bile yazıldı - Beşiktaş (BJK) Haberleri - Mynet](https://news.google.com/rss/articles/CBMivAFBVV95cUxQRnJmTHlGaHFURmpZcnhTRWtTMUoydjZsMS1Xa2k0bFItVUVmSUFIRTFWSGN4Sk5WVjZ4WTdGNVJvaFltdTU5OUl5cXR4SHBJTk9Ud3FOeUlaR3hwSVBNZDlhSl9xclc0UmV0dGZyZUZvbWFqUFI1a0hrMHJ1WVV1QVRTSUEwX3QwdDBZR2ZiMVc0d016WDhTZmthOGJYUG5Ga1hpeEhJbkRwakIwSGVZckVCYTM1Y2hnUWEtetIBvwFBVV95cUxPakpneWdJcWl5aTdKOHp5WjNyYTlvWWdRSXpRdGNqX1lDR2pYYUlGazFROWpPcllBSmxoNlN0TkJfMEUzY1pTMzdFNkpydU1sVnFJbElEVTdpWjN5TGFiaUdiekx4alV0d01jQ3A1NkdjU09BV1pKNFJ2WFg1RkdlTi1SWWl1STE0eFRRZ1JRZDZXbUFpVjQ1b3U0Ul9pQUxPMDBWcXFWUGJ2YzR0T3lVOHVnSWpDVEptODdMdHBCUQ?oc=5) — Mynet · 2026-09-03T04:56:54+00:00 · turnuva=— · kulüp=Beşiktaş
+- [Transfer Gerçekleri / Başakşehir-Galatasaray / Fenerbahçe- Beşiktaş / Şampiyonlar Ligi - youtu.be](https://news.google.com/rss/articles/CBMiXEFVX3lxTE1BdGE1bnBJX0FnTmtiY2tEVDVsWnRaTGtZdXBDSGRBZ0xuWEstSTJsM21iWVJjY1Y4S3RzUWxwdEpPQnNSQWcyeHVTWnBMVnlneUlLUl9pZDU1WUpm?oc=5) — youtu.be · 2026-09-09T14:00:04+00:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe, Beşiktaş, Başakşehir
 - [Miguel Cardoso ve Elisha Owusu ile resmî sözleşme imzaladık.](https://erzurumsporfk.org/2026/08/19/miguel-cardoso-ve-elisha-owusu-ile-resmi-sozlesme-imzaladik/) — Erzurumspor FK Resmi Web · 2026-08-19T20:45:50+03:00 · turnuva=EL · kulüp=Kayserispor

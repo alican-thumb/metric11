@@ -36,7 +36,7 @@
   .topnav a{white-space:nowrap;color:#8fa89a;padding:8px 11px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600;transition:background .15s,color .15s}
   .topnav a:visited{color:#8fa89a}
   .topnav a:hover{background:#162b20;color:white}
-  .topnav a.active{background:#162b20;color:white}
+  .topnav a.active{background:#162b20;color:var(--lime);border-bottom:2px solid var(--lime);font-weight:800}
   .header{background:var(--dark);border-bottom:3px solid #1a3023;padding:24px clamp(14px,3vw,32px)}
   .header h1{font-size:28px;font-weight:700;color:white;margin-bottom:6px}
   .header .sub{color:#8fa89a;font-size:13px}
@@ -60,21 +60,21 @@
 <body>
 <div class="topbar">
   <a class="brand" href="/"><b>11</b> metric11<span class="slbl">Süper Lig 2026-2027</span></a>
-  <nav class="topnav"><a href="/">Gündem</a><a href="season_fixture_predictions_2026_2027.html">🗓️ Fikstür & Tahmin</a><a href="weekly_evaluation_2026_2027.html">📊 Haftalık Karne</a><a href="transfer_recommendation_report_2025_2026.html">Scout</a><a href="football_intelligence_home.html">Analiz</a><a href="european_predictions_2026_2027.html">⚽ Avrupa</a><a href="worldcup_2026_predictions.html">🌍 Dünya Kupası</a><a href="/tahmin" style="color:var(--lime);font-weight:700">🎮 Tahmin Oyunu</a><a href="https://tahmin.metric11.com/kadro" style="color:var(--lime);font-weight:700">🏆 Kadro Kur</a></nav>
+  <nav class="topnav"><a href="/">Gündem</a><a href="season_fixture_predictions_2026_2027.html">🗓️ Fikstür & Tahmin</a><a href="weekly_evaluation_2026_2027.html">📊 Haftalık Karne</a><a href="transfer_recommendation_report_2025_2026.html">Scout</a><a href="football_intelligence_home.html">Analiz</a><a href="european_predictions_2026_2027.html">⚽ Avrupa</a><a href="/tahmin" style="color:var(--lime);font-weight:700">🎮 Tahmin Oyunu</a><a href="https://tahmin.metric11.com/kadro" style="color:var(--lime);font-weight:700">🏆 Kadro Kur</a><a href="https://tahmin.metric11.com/taraftar" style="color:var(--lime);font-weight:700">📣 Tribün Lideri</a></nav>
 </div>
 <div class="header">
   <h1>Transfer Takip — 2026-2027 <span style="background:#f1f5f9;color:#475569;border:1px solid #cbd5e1;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;">Pencere Kapandı</span></h1>
-  <div class="sub">Yaz penceresi: 1 Haziran 2026 – 31 Ağustos 2026 · 31 sinyal · Güncelleme: 16.09.2026 00:18</div>
+  <div class="sub">Yaz penceresi: 1 Haziran 2026 – 31 Ağustos 2026 · 31 sinyal · Güncelleme: 16.09.2026 03:51</div>
 </div>
 <div class="stat-bar">
   <div style="background:#0f2018;border-radius:10px;padding:14px 20px;text-align:center;min-width:110px;flex:1">
   <div style="font-size:22px;font-weight:700;color:#2563eb">1</div>
   <div style="font-size:11px;color:#8fa89a;margin-top:2px">DOĞRULANDI</div>
 </div><div style="background:#0f2018;border-radius:10px;padding:14px 20px;text-align:center;min-width:110px;flex:1">
-  <div style="font-size:22px;font-weight:700;color:#6b7280">26</div>
+  <div style="font-size:22px;font-weight:700;color:#6b7280">27</div>
   <div style="font-size:11px;color:#8fa89a;margin-top:2px">TAKİPTE</div>
 </div><div style="background:#0f2018;border-radius:10px;padding:14px 20px;text-align:center;min-width:110px;flex:1">
-  <div style="font-size:22px;font-weight:700;color:#d97706">4</div>
+  <div style="font-size:22px;font-weight:700;color:#d97706">3</div>
   <div style="font-size:11px;color:#8fa89a;margin-top:2px">SÖYLENTI</div>
 </div>
   <div class="stat-mv"><div class="v">€6.0M</div><div class="l">Toplam Teyitli Değer</div></div>
@@ -83,7 +83,7 @@
   <div style="margin-bottom:16px"><div style="background:#0a1929;border:1px solid #1e3a5f;border-radius:10px;padding:14px 18px;margin:0 0 20px;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap"><div style="color:#e2e8f0;font-size:13px;font-weight:600">📣 Her gün maç önü, transfer ve tahmin analizi Telegram&#x27;da — kaçırma.</div><a href="https://t.me/metric11tr" target="_blank" rel="noopener" style="background:#cde94e;color:#091810;font-weight:800;font-size:13px;padding:8px 16px;border-radius:8px;text-decoration:none;white-space:nowrap;flex-shrink:0">Telegram&#8217;a Katıl &#8594;</a></div></div>
   <div class="filter-bar">
     <input class="filter-input" id="filterInput" placeholder="Oyuncu veya kulüp ara…" oninput="filterRows(this.value)">
-    <span style="font-size:13px;color:var(--muted)">8 kayıt</span>
+    <span style="font-size:13px;color:var(--muted)">7 kayıt</span>
   </div>
   <div class="table-wrap">
     <table id="transferTable">
@@ -120,16 +120,6 @@
   <td style="color:var(--muted);font-size:12px">Kalıcı</td>
   <td style="font-weight:600">€900K</td>
   <td><a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxPd2VQWFk5bVhDS0lJYWI4VXFablpWWmZYdm9jRlA3Vm82aGo3Z3Z5TGtkMENwN0V6TUd3YlhneXRmR0dvY3BvUnZFXzhMc1VkbjN1ZGFqVWFYczRvc0xtUmhGcE43T3A1V2NMcUVJVHVOSjBqSHF6Y1NCZEE4SGpZSzNqWUlRN18wLWt5dFd1UGNIZGJYX3NheHRZY3FaaGVWM0F5VktBUUoyN2M?oc=5" target="_blank" style="color:var(--green);font-size:11px">Rajmund Toth Konyaspor&#x27;a nasıl transfer oldu? Ali Camgö…</a></td>
-</tr>
-<tr>
-  <td><strong>Meğer Greenwood</strong></td>
-  <td>—</td>
-  <td>→</td>
-  <td>Fenerbahçe</td>
-  <td><span style="font-size:10px;padding:2px 7px;border-radius:4px;font-weight:700;color:#d97706;background:#fef3c7">SÖYLENTI</span></td>
-  <td style="color:var(--muted);font-size:12px">Kalıcı</td>
-  <td style="font-weight:600">—</td>
-  <td><a href="https://news.google.com/rss/articles/CBMixwFBVV95cUxOMzROUzJWd3dENnFpT2Rpa2o5cDREaWpNeGJ3dDF5MW91VTRTMWJnMVQ1U3pVSW4zUlBoQVJ4OE9ZLVhTS1ZHYkw4RUtHOUQ1cFkzMTN6Z2E5eGNoT0hTWmtuczdlQS1VMFRNX3dydmFBMTF4cWg1Q1d5QUh4Zy1OdE9Ick1lUTJnSkNZRlQwS0diYkxFN1pVZllUM0R6SERZZFRnUlhaeU9LTkY5MW5qNV8yT1pXcmtsai1lWFRUUm84em9xMlB30gHMAUFVX3lxTFB2cEZBY3p4U3V4ZDU1MlE4eFFNZnczSC1KNHduanM2VEVBVUlVZ2tjaS1SSFNhNWNadHpxQ1BKT1UyTTFVLUJnaHBaSHFSMlBObWtkWWhLZXJfVU51RXVVUG50SEV0UVNOTU5ObWNDRkRTZ0lDNXdZckh0cFB2NzJWTFpGRkI0dDkwYnpBVGxsNXl3TmxVZEZPZWtpZWRvRUEydnptRGQwSjIwRDVQcDM0eXBLSHMwMVJuUDdXZ1dnWjZOeWZvMmxQMDFLRQ?oc=5" target="_blank" style="color:var(--green);font-size:11px">Meğer Greenwood&#x27;un Fenerbahçe&#x27;ye transfer sürecind…</a></td>
 </tr>
 <tr>
   <td><strong>Ousmane Diabate</strong></td>
@@ -176,7 +166,7 @@
   
 <section style="background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:18px;margin-top:24px">
   <h2 style="font-size:16px;font-weight:700;margin:0 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line)">
-    Takip Edilen Haberler <span style="font-weight:400;color:var(--muted);font-size:13px">(23 haber — oyuncu adı henüz doğrulanmadı)</span>
+    Takip Edilen Haberler <span style="font-weight:400;color:var(--muted);font-size:13px">(24 haber — oyuncu adı henüz doğrulanmadı)</span>
   </h2>
   <div style="padding:10px 0;border-bottom:1px solid var(--line)">
   <a href="https://www.cnnturk.com/spor/futbol/trabzonsporda-thomas-reis-donemi-alman-calistirici-trabzona-geldi-3467102" target="_blank" rel="noopener"
@@ -199,9 +189,9 @@
 </div><div style="padding:10px 0;border-bottom:1px solid var(--line)">
   <a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxPSzkxUzQ1NHNYUmJQUWFGdUEyWnU2Z2R5NXVxaHJyUFQ4UnRoLW11ZVVxVy14VTRLNlpkZmZPTXRUeWwwaGpvWGtabWVjSzE2SUIyQVNCb3NnZ1Z1dENTSzZfb1VsZDVVYUctQThXc3JxbzRpZ2RiOV9nOGtSczhsaFRKQ0lpdw?oc=5" target="_blank" rel="noopener"
      style="color:var(--ink);font-size:13px;font-weight:600;text-decoration:none;line-height:1.4">
-    Trabzonspor, Thomas Reis ile anlaşmaya vardı - dha.com.tr
+    Trabzonspor, Thomas Reis ile anlaşmaya vardı - DHA | Demirören Haber Ajansı
   </a>
-  <div style="font-size:11px;color:var(--muted);margin-top:3px">dha.com.tr · 2026-09-15</div>
+  <div style="font-size:11px;color:var(--muted);margin-top:3px">DHA | Demirören Haber Ajansı · 2026-09-15</div>
 </div><div style="padding:10px 0;border-bottom:1px solid var(--line)">
   <a href="https://www.aa.com.tr/tr/spor/fenerbahce-kadin-ve-erkek-basketbol-takimlarinin-isim-sponsoru-tarfin-oldu/4058128" target="_blank" rel="noopener"
      style="color:var(--ink);font-size:13px;font-weight:600;text-decoration:none;line-height:1.4">
@@ -227,17 +217,17 @@
   </a>
   <div style="font-size:11px;color:var(--muted);margin-top:3px">Antalyaspor Resmi Web · 2026-09-15</div>
 </div><div style="padding:10px 0;border-bottom:1px solid var(--line)">
+  <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxQNXRNYi0zQXJiM2hkcy1DVVpFR0RaWHAwekRhQTVGWG0xR3poYnpxcFFXbUR5bm5KaXkzNFg1QzR4NFFkT2JhMTRKbm9TXzBBbm1xQXFHUXVxNU9GNkFKTXRvc21WTjFQenYydTBvRldiRGdWYjBfcHp0OXMzaWl3RXppSF9xU0ZMMnNLM2Y0amFGY0dENUhNMm1QWTBpcU5RUnpHV1lVSzk1SExDNVhPODRSZnA?oc=5" target="_blank" rel="noopener"
+     style="color:var(--ink);font-size:13px;font-weight:600;text-decoration:none;line-height:1.4">
+    Trabzonspor yeni teknik direktörünü buldu: Thomas Reis Süper Lig&#x27;e dönüyor - Yeniçağ Gazetesi
+  </a>
+  <div style="font-size:11px;color:var(--muted);margin-top:3px">Yeniçağ Gazetesi · 2026-09-15</div>
+</div><div style="padding:10px 0;border-bottom:1px solid var(--line)">
   <a href="https://news.google.com/rss/articles/CBMiwwFBVV95cUxOU3FHMm5JZXdWa2x0TU5pc3VQRWRXR19BR01IbG1WRDJ6WkMwLTJKVFk4M2hMYml5NjBjLXR1S2pyR1BXWGN4TFR0TnZmWng3cnVyd3NpdEs1eGpDRTFIaGxzVmpuaHpST3lHSXpGVUcwLVRrSmtTYXNlZ3J1LUFrd05mbmRZTUxMZ0pGYTR4U0N4TWc3aVNJdEdRcjJUbXpydS1PNkI1bTNXTEFCckhJZUh1TFR3UkhDMWFjWXJOQkdQdW8?oc=5" target="_blank" rel="noopener"
      style="color:var(--ink);font-size:13px;font-weight:600;text-decoration:none;line-height:1.4">
     TRABZONSPOR TRANSFER HABERLERİ SON DAKİKA: Samsun&#x27;un eski hocası Fırtına&#x27;ya! Anlaşma sağlandı - İstanbul Ticaret Gazetes
   </a>
   <div style="font-size:11px;color:var(--muted);margin-top:3px">İstanbul Ticaret Gazetesi · 2026-09-15</div>
-</div><div style="padding:10px 0;border-bottom:1px solid var(--line)">
-  <a href="https://news.google.com/rss/articles/CBMiygFBVV95cUxNZjdHVnlwaFZZcWloYVZoZ1M1Z0tFRks3RUFfcURsSlBsbXNXX3k4UGtGY3hycFAtWU9tOGVhQ2NYSTlDSmpHQVhzZ19lOTRocEpheHRxa0wxZjUyVXFxOWc0UFJBZ2xmVHlmclVsTmtFd205djJKU3JHRF9sTlEzRjExMHA5NFVvbnJiZDVaOGVfTGZYQnZScW01NXRwZkwxZGZsb210STVaQnNsSjBObG1obEZITHU3eTJPS2ZoY0s4M0FJSkQ2MmJn?oc=5" target="_blank" rel="noopener"
-     style="color:var(--ink);font-size:13px;font-weight:600;text-decoration:none;line-height:1.4">
-    Nuri Şahin Başakşehir&#x27;den ayrılacak mı? Yönetim kritik toplantı sonrası Nuri Şahin kararını verecek | Futbol Haberleri -
-  </a>
-  <div style="font-size:11px;color:var(--muted);margin-top:3px">GZT · 2026-09-15</div>
 </div><div style="padding:10px 0;border-bottom:1px solid var(--line)">
   <a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxQay05NF9qN21wWGFXdWNBa2F4SEFLTVdaR0h5V3ZmRjExTlE1R05Wb1U2V1pQYTc0VTlVUmctQ3JnVm80M0lod1lyTThlMDRHY3pTMy0yUzh2anhMdHk4cFFfaHRsTmhHcFZqZVZVSTM2NHNDWi1mUEl0Ql9xSmlwUUc5SVd6eUplUVJKSURXN0RFaVI2YUNnSElUR0ktUnZ5a1HSAacBQVVfeXFMTUU0elFxRF9IV0xDTzV0LTlEWkdfNDlsdlhzdVJCZGoxcEt6andPS2lrSUJaOUxrZEVpaHRlWnhsaWdqbzlydmFTLUNkdmJJYkd1akZMTWhwYUZDOFFsZnQtczVGMm5jOHB2NWNOLVIzaG1NRWZGblFtU3lYR3lQNFhVN0Y1ekdkRnhFQjh4YnpWb3lLSlluZXFJUWdGR1A4V2tzOVh3WWM?oc=5" target="_blank" rel="noopener"
      style="color:var(--ink);font-size:13px;font-weight:600;text-decoration:none;line-height:1.4">
@@ -262,6 +252,12 @@
     Galatasaray stoperini dünya devinden alacak! Teklif gitti
   </a>
   <div style="font-size:11px;color:var(--muted);margin-top:3px">Takvim Spor · 2026-09-14</div>
+</div><div style="padding:10px 0;border-bottom:1px solid var(--line)">
+  <a href="https://news.google.com/rss/articles/CBMiyAFBVV95cUxONTNMQ3hjNzhIN0NaeEN5bk9HQlJRMzN1YzNxWnd6ZU43V2ZiS3FWTHFtTXlscHFXOC0yUWFsNkF6Tl9mMmZXNk8yYm1zOURnMFJyaTZLbWdjVWU3bXIxUGZhQXhiX2NzcmJMM1I3Q3ROOF9yWVVsVlFyUEZTdmpvSzh1OFNJWF9FQWIzOHFZWWhvSno0cXdvVG5TdVplT0V3RFFLZzFjRDFxeDNZeVYtZTB3TEM3QkpJLV96dHdNYXpzSkY0NGZrRQ?oc=5" target="_blank" rel="noopener"
+     style="color:var(--ink);font-size:13px;font-weight:600;text-decoration:none;line-height:1.4">
+    Galatasaray&#x27;dan ayrılan Icardi için İtalya iddiası! Transfer görüşmeleri yeniden başladı - Futbol - Spor Haberleri - Mil
+  </a>
+  <div style="font-size:11px;color:var(--muted);margin-top:3px">Milliyet · 2026-09-14</div>
 </div><div style="padding:10px 0;border-bottom:1px solid var(--line)">
   <a href="https://www.takvim.com.tr/spor/fenerbahce/2026/09/14/gaziantep-fk-fenerbahce-0-0-mac-sonucu" target="_blank" rel="noopener"
      style="color:var(--ink);font-size:13px;font-weight:600;text-decoration:none;line-height:1.4">
@@ -293,11 +289,11 @@
   </a>
   <div style="font-size:11px;color:var(--muted);margin-top:3px">birgun.net · 2026-09-05</div>
 </div><div style="padding:10px 0;border-bottom:1px solid var(--line)">
-  <a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxQbXU3Q3V0UF9KZ0xacE9kVFctNmxRY1NKQ3NTVmo4QTdZVjFtdlJMd2R6a1pTcVRKZnlqbWdyRXJwVk91WTNYSTVtbUZRc2FFYjQxeDZvRkRZS3JObVBUNXJhUEVwenhBZ0I1aEwzV1F1dHNPd3hGR004aWZBSjJrSGd2dlczM1NSd3I5aDFKYjJhanc0Vm5vV0M4dlViTU44Sll0M24zcFd5cWxMbm9z0gG0AUFVX3lxTE1ZSGNueEg5cUtkRkNzSlhqckZDcVYwV3FSZi1wbHFaMzMtNU92RkpLSk5TZ0NFdm9CTXNDc3Jlbzlocm9paFlaRVNMSEZlVnd2eDkzR1ZUYklFVVg5RDRzekJUbnc2MFM0X0VtUGU0Z0Nyb0h4VHJMdGdrN1k0QzlRUUs1TlVHVEZTOXdNb3MxY3U2Tm5sTnJKd1V3VkxxdThiOWV0R003Wlc2ZzdsWTJkYzFzQg?oc=5" target="_blank" rel="noopener"
+  <a href="https://news.google.com/rss/articles/CBMifkFVX3lxTFBGNFB6Y3NvYm1fY2N0Wkh1WUlLajZEVFR1RVlKOXZvOUZ5TmJ5YTlYbE5qMW5TS2thOVFiVWFaVlFsdlZkMmFTdkF4ZVJRV2VDc2JQOUNCTkdnUWJIUEdQSHJfdVFGTTVjNHVLR3BOMTFRUWRXaUlBblVRLWlSQQ?oc=5" target="_blank" rel="noopener"
      style="color:var(--ink);font-size:13px;font-weight:600;text-decoration:none;line-height:1.4">
-    Sadece 14 dakika oynadığı Galatasaray&#x27;dan ayrılıyor | Transfer hattı - NTVSpor
+    Kocaelispor dan Antalyaspor a transfer oldu - beinsports.com.tr
   </a>
-  <div style="font-size:11px;color:var(--muted);margin-top:3px">NTVSpor · 2026-09-03</div>
+  <div style="font-size:11px;color:var(--muted);margin-top:3px">beinsports.com.tr · 2026-09-03</div>
 </div><div style="padding:10px 0;border-bottom:1px solid var(--line)">
   <a href="https://ibfk.com.tr/haberler/tesekkurler-nuno-da-costa" target="_blank" rel="noopener"
      style="color:var(--ink);font-size:13px;font-weight:600;text-decoration:none;line-height:1.4">

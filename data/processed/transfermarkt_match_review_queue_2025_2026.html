@@ -28,10 +28,10 @@
     .season { color:#6b7c72; font-size:11px; font-weight:500; margin-left:2px; border-left:1px solid #2a3d30; padding-left:8px; }
     nav, .topnav { display:flex; gap:2px; flex-wrap:nowrap; overflow-x:auto; overflow-y:hidden; justify-content:flex-end; -webkit-overflow-scrolling:touch; scrollbar-width:none; }
     nav::-webkit-scrollbar, .topnav::-webkit-scrollbar { display:none; }
-    nav a, .topnav a { color:#8fa89a; text-decoration:none; font-size:13px; font-weight:600; padding:8px 11px; border-radius:6px; white-space:nowrap; flex-shrink:0; transition:background .15s,color .15s; }
+    nav a, .topnav a { color:#8fa89a; text-decoration:none; font-size:13px; font-weight:600; padding:8px 11px 6px; border-radius:6px 6px 0 0; white-space:nowrap; flex-shrink:0; border-bottom:2px solid transparent; transition:background .15s,color .15s,border-color .15s; }
     nav a:visited, .topnav a:visited { color:#8fa89a; }
     nav a:hover, .topnav a:hover { background:#162b20; color:white; }
-    nav a.active, .topnav a.active { background:#162b20; color:white; }
+    nav a.active, .topnav a.active { background:#162b20; color:var(--lime); border-bottom-color:var(--lime); font-weight:800; }
     .back-link { display:inline-flex; align-items:center; gap:6px; color:var(--green); text-decoration:none; font-size:13px; font-weight:600; margin-bottom:18px; }
     .back-link::before { content:"←"; }
     .report-wrap { max-width:960px; margin:0 auto; padding:32px clamp(14px,3vw,32px) 60px; }
@@ -57,7 +57,7 @@
   </style>
 </head>
 <body>
-  <div class="topbar"><a class="brand" href="/"><span class="brand-mark">11</span> metric11<span class="season">S&#xfc;per Lig 2026-2027</span></a><nav class="topnav"><a href="/">Gündem</a><a href="season_fixture_predictions_2026_2027.html">🗓️ Fikstür & Tahmin</a><a href="weekly_evaluation_2026_2027.html">📊 Haftalık Karne</a><a href="transfer_recommendation_report_2025_2026.html">Scout</a><a href="football_intelligence_home.html" class="active">Analiz</a><a href="european_predictions_2026_2027.html">⚽ Avrupa</a><a href="worldcup_2026_predictions.html">🌍 Dünya Kupası</a><a href="/tahmin" style="color:var(--lime);font-weight:700">🎮 Tahmin Oyunu</a><a href="https://tahmin.metric11.com/kadro" style="color:var(--lime);font-weight:700">🏆 Kadro Kur</a></nav></div>
+  <div class="topbar"><a class="brand" href="/"><span class="brand-mark">11</span> metric11<span class="season">S&#xfc;per Lig 2026-2027</span></a><nav class="topnav"><a href="/">Gündem</a><a href="season_fixture_predictions_2026_2027.html">🗓️ Fikstür & Tahmin</a><a href="weekly_evaluation_2026_2027.html">📊 Haftalık Karne</a><a href="transfer_recommendation_report_2025_2026.html">Scout</a><a href="football_intelligence_home.html" class="active">Analiz</a><a href="european_predictions_2026_2027.html">⚽ Avrupa</a><a href="/tahmin" style="color:var(--lime);font-weight:700">🎮 Tahmin Oyunu</a><a href="https://tahmin.metric11.com/kadro" style="color:var(--lime);font-weight:700">🏆 Kadro Kur</a><a href="https://tahmin.metric11.com/taraftar" style="color:var(--lime);font-weight:700">📣 Tribün Lideri</a></nav></div>
   <div class="report-wrap">
     <a class="back-link" href="/">Ana sayfaya d&#xf6;n</a>
     
@@ -878,7 +878,7 @@
 </ul>
 
   </div>
-  <footer style="text-align:center;padding:40px 16px 28px;color:#8a9e92;font-size:12px;border-top:1px solid #e2e8e4;margin-top:48px;">metric11 &middot; <a href="mailto:hello@metric11.com" style="color:#8a9e92;text-decoration:none;border-bottom:1px solid #c5d4ca;">hello@metric11.com</a></footer>
+  <footer style="text-align:center;padding:40px 16px 28px;color:#8a9e92;font-size:12px;border-top:1px solid #e2e8e4;margin-top:48px;">metric11 &middot; <a href="mailto:hello@metric11.com" style="color:#8a9e92;text-decoration:none;border-bottom:1px solid #c5d4ca;">hello@metric11.com</a> &middot; <a href="worldcup_2026_predictions.html" style="color:#8a9e92;text-decoration:none;border-bottom:1px solid #c5d4ca;">🌍 D&#xfc;nya Kupası Tahminleri</a></footer>
   <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
