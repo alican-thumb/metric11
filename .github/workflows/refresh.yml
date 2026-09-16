@@ -30,30 +30,23 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Haber topla (news-refresh fallback)
+      - name: Dünya Kupası + Avrupa fikstürlerini güncelle
+        # Haber toplama/analiz adımları BURADAN KALDIRILDI (2026-09-16): news-refresh.yml
+        # zaten aynı işi günde 6 kez (bu workflow'un 4 katı sıklıkta) yapıyor — tam bir
+        # kopyaydı ve GitHub Actions'ın private repo için ücretsiz 2000 dk/ay limitinin
+        # neredeyse tamamını (~%68'i tek bu adımdan, ölçülen: run 35090327281'de 4dk32sn/
+        # 6dk37sn) tüketiyordu. Bu adım sadece news-refresh.yml'nin KAPSAMADIĞI iki
+        # fikstür kaynağını (Dünya Kupası + Avrupa Ligi) burada tutuyor, geri kalanı
+        # news-refresh.yml'ye devredildi.
         continue-on-error: true
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           FOOTBALL_DATA_KEY: ${{ secrets.FOOTBALL_DATA_KEY }}
           API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
         run: |
           python -m src.collect_worldcup_fixtures || true
           python -m src.analyze_worldcup_predictions || true
           python -m src.build_worldcup_predictions || true
           python -m src.collect_european_fixtures || true
-          python -m src.collect_news_rss || true
-          python -m src.collect_news_google || true
-          python -m src.collect_official_club_news || true
-          python -m src.analyze_news_with_claude --only-relevant || true
-          python -m src.build_news_intelligence_report || true
-          python -m src.build_transfer_tracker || true
-          python -m src.build_european_news_pulse || true
-          python -m src.analyze_european_predictions || true
-          python -m src.build_european_predictions || true
-          python -m src.build_live_feed || true
-          python -m src.notify_telegram || true
 
       - name: Maç sonuçlarını çek (hafif TFF fikstür, retry amaçlı)
         # Günlük tam ağ pipeline'ı (04:00 UTC, --include-network) TFF'nin fikstür
@@ -76,6 +69,17 @@ jobs:
           ADMIN_CREDENTIALS_HASH: ${{ secrets.ADMIN_CREDENTIALS_HASH }}
           X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
         run: python -m src.run_daily_pipeline || true
+
+      - name: Telegram bildirimi gönder
+        # notify_telegram tüm repoda SADECE burada çağrılıyordu (news-refresh.yml bunu
+        # hiç çağırmıyor) — yukarıdaki kaldırma sırasında yanlışlıkla silinmesin diye
+        # ayrı, ucuz bir adım olarak tutuluyor. Ağır değil: sadece transfer_tracker
+        # JSON'unu okuyup yeni sinyalleri postalıyor, scraping/LLM çağrısı yok.
+        continue-on-error: true
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+        run: python -m src.notify_telegram || true
 
       - name: Commit and push
         if: always()
