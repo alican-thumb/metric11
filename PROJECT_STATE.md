@@ -3299,3 +3299,13 @@ Kullanıcı "Approaching your limits: Upgrade now to avoid service disruption" m
 - **Ek, kod dışı seçenekler (kullanıcıya iletildi, uygulanmadı):** (a) repo'yu public yapmak — public repo'larda GitHub Actions dakikası tamamen ücretsiz/sınırsız, ama kod/iş mantığı açığa çıkar; (b) GitHub Pro'ya geçmek (~$4/ay, 3000 dk/ay); (c) news-refresh.yml'nin sıklığını 6'dan 4'e düşürmek (daha fazla tasarruf ama tazelik kaybı).
 - **Doğrulama:** `python -c "import yaml; yaml.safe_load(...)"` ile YAML sözdizimi doğrulandı; `notify_telegram`'ın repoda başka hiçbir yerden çağrılmadığı grep ile teyit edildi (silinmeden önce fark edildi, geri eklendi).
 - Değişen dosyalar: `.github/workflows/refresh.yml`.
+
+### 2026-09-16 (devam 8) — Trafik odaklı: Vercel Web Analytics'in her iki projede de KAPALI olduğu bulundu, kablolandı
+
+Kullanıcı "marketin amaçlı trafik odaklı bir şeyler yap" dedi. `get_web_analytics` API'si hem `metric11` hem `metric11-tahmin` için 404 "Web Analytics not found" döndürdü — yani şu ana kadar sitede HİÇ trafik verisi toplanmıyordu, pazarlama kararları tamamen kör alınıyordu.
+
+- **Ana site (metric11):** `src/html_utils.py::page_html()` ve canonical-tag turunda tek tek düzeltilen 14 hand-rolled builder'ın (`build_dashboard`, `build_product_home`, `build_all_teams_preview_dashboard`, `build_season_fixture_predictions`, `build_command_center`, `build_league_intelligence_report`, `build_position_scout_matrix`, `build_team_scout_blueprints`, `build_transfer_recommendation_report`, `build_transfer_season_context`, `build_enriched_scout_dashboard`, `build_fm_style_scout_program`, `build_news_intelligence_report`, `build_backtest_dashboard`) HEPSİNDE `<script defer src="/_vercel/insights/script.js"></script>` zaten kodda vardı (muhtemelen daha önce eklenmiş ama hiç etkinleştirilmemiş) — kod tarafında ek iş gerekmedi.
+- **predict-app (tahmin.metric11.com):** `@vercel/analytics` paketi eklendi, `app/layout.tsx`'e `<Analytics />` (Next.js) bileşeni kablolandı. `tsc --noEmit` temiz.
+- **Kullanıcıdan beklenen tek adım (API ile yapılamıyor, interaktif onay istiyor):** `vercel project web-analytics enable metric11` ve `vercel project web-analytics enable metric11-tahmin` komutlarını kendi terminalinde çalıştırıp onaylaması gerekiyor — script zaten yerinde, sadece proje ayarında açılması lazım.
+- **Ayrıca bulunan, kullanıcıya iletilen (kod dışı, ayrı konu):** Google Search Console'a `metric11.com` hâlâ hiç eklenmemiş (önceki oturumdan bilinen açık madde) — Web Analytics "kaç kişi geliyor" sorusunu, GSC ise "Google'da hiç görünmüyoruz" sorusunu çözer, ikisi de ayrı ayrı gerekli.
+- Değişen dosyalar: `predict-app/app/layout.tsx`, `predict-app/package.json`, `predict-app/package-lock.json`.

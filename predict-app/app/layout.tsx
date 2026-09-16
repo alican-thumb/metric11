@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { ClerkProvider } from "@clerk/nextjs";
 import { trTR } from "@clerk/localizations";
+import { Analytics } from "@vercel/analytics/next";
 import { NavBar } from "@/components/nav-bar";
 import "./globals.css";
 
@@ -53,6 +54,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <body className="min-h-full flex flex-col bg-slate-950 text-slate-100">
           <NavBar />
           <main className="flex-1 mx-auto w-full max-w-4xl px-4 py-6">{children}</main>
+          <Analytics />
         </body>
       </html>
     </ClerkProvider>
