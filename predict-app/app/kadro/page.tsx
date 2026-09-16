@@ -98,6 +98,12 @@ export default async function FantasyHubPage() {
         <NavCard href="/kadro/transfer" title="Transfer" desc="Kadronu güçlendir" />
         <NavCard href="/kadro/liderlik" title="Lider Tablosu" desc="Arkadaşlarına karşı sırala" />
       </div>
+
+      <div className="text-center">
+        <Link href="/kadro/kur" className="text-xs font-semibold text-slate-500 underline decoration-dotted underline-offset-4 hover:text-slate-300">
+          Kadromu sıfırla ve yeniden kur
+        </Link>
+      </div>
     </div>
   );
 }

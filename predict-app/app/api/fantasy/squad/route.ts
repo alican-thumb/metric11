@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { eq } from "drizzle-orm";
 import { getDb } from "@/db";
-import { fantasySquads, fantasySquadPlayers, badges } from "@/db/schema";
+import { fantasySquads, fantasySquadPlayers, fantasyGameweekLineups, fantasyTransferLog, badges } from "@/db/schema";
 import { getOrCreateUser } from "@/lib/get-or-create-user";
 import { getPlayersById } from "@/lib/fantasy-data";
 import { validateSquad, squadCost, BUDGET } from "@/lib/fantasy-rules";
@@ -72,4 +72,23 @@ export async function POST(req: Request) {
     .onConflictDoNothing({ target: [badges.userId, badges.code] });
 
   return NextResponse.json({ squad: { id: squad.id, freeTransfers: squad.freeTransfers } }, { status: 201 });
+}
+
+// Kadroyu tamamen siler (kullanıcı "yeniden kur" istediğinde) — leaderboard/hafta geçmişi
+// dahil GERİ ALINAMAZ şekilde. /kadro/kur bir kadro varken bunu çağırıp ardından yeni
+// kadro kurma akışına devam eder.
+export async function DELETE() {
+  const user = await getOrCreateUser();
+  if (!user) return NextResponse.json({ error: "Giriş yapmalısınız." }, { status: 401 });
+
+  const db = getDb();
+  const [squad] = await db.select().from(fantasySquads).where(eq(fantasySquads.userId, user.id)).limit(1);
+  if (!squad) return NextResponse.json({ error: "Zaten bir kadron yok." }, { status: 404 });
+
+  await db.delete(fantasyTransferLog).where(eq(fantasyTransferLog.squadId, squad.id));
+  await db.delete(fantasyGameweekLineups).where(eq(fantasyGameweekLineups.squadId, squad.id));
+  await db.delete(fantasySquadPlayers).where(eq(fantasySquadPlayers.squadId, squad.id));
+  await db.delete(fantasySquads).where(eq(fantasySquads.id, squad.id));
+
+  return NextResponse.json({ ok: true });
 }
