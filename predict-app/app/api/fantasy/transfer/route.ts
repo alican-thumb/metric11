@@ -5,7 +5,7 @@ import { fantasySquads, fantasySquadPlayers, fantasyTransferLog } from "@/db/sch
 import { getOrCreateUser } from "@/lib/get-or-create-user";
 import { getPlayersById } from "@/lib/fantasy-data";
 import { getCurrentFantasyGameweek } from "@/lib/fantasy-week";
-import { validateSquad, MAX_PER_TEAM } from "@/lib/fantasy-rules";
+import { validateSquad, squadCost, BUDGET, MAX_PER_TEAM } from "@/lib/fantasy-rules";
 
 export async function POST(req: Request) {
   const user = await getOrCreateUser();
@@ -55,13 +55,19 @@ export async function POST(req: Request) {
     );
   }
 
+  const currentPlayers = currentIds.map((id) => playersById.get(id)).filter((p): p is NonNullable<typeof p> => Boolean(p));
   const newIds = currentIds.map((id) => (id === playerOutId ? playerInId : id));
   const newPlayers = newIds.map((id) => playersById.get(id)!);
   const teamCount = newPlayers.filter((p) => p.team === playerIn.team).length;
   if (teamCount > MAX_PER_TEAM) {
     return NextResponse.json({ error: `${playerIn.team}'dan en fazla ${MAX_PER_TEAM} oyuncu olabilir.` }, { status: 400 });
   }
-  const validation = validateSquad(newPlayers);
+  // budgetCap bilerek BUDGET yerine max(mevcut maliyet, BUDGET) — bkz. fantasy-rules.ts
+  // validateSquad yorumu: fiyatlar canlı güncellendiği için kadro, kullanıcının hiçbir
+  // işlemi olmadan bütçenin üzerine çıkabilir; bu durumda kullanıcıyı SONSUZA KADAR
+  // transfer yapamaz hale getirmek yerine, durumu KÖTÜLEŞTİRMEYEN transferlere izin verilir.
+  const budgetCap = Math.max(squadCost(currentPlayers), BUDGET);
+  const validation = validateSquad(newPlayers, budgetCap);
   if (!validation.ok) {
     return NextResponse.json({ error: validation.error }, { status: 400 });
   }

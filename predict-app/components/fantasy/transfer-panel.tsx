@@ -31,7 +31,13 @@ export function TransferPanel({
   for (const p of squadPlayers) byTeamCount[p.team] = (byTeamCount[p.team] ?? 0) + 1;
 
   const remainingBudget = BUDGET - currentCost;
-  const maxAffordable = outPlayer ? BUDGET - (currentCost - outPlayer.price) : 0;
+  // budgetCap: normalde BUDGET, ama fiyatlar canlı güncellendiği için kadro maliyeti
+  // kullanıcının hiçbir işlemi olmadan bütçenin üzerine çıkmış olabilir (bkz.
+  // /api/fantasy/transfer sunucu tarafındaki AYNI mantık — ikisi eşleşmeli). Böyle bir
+  // durumda kullanıcıyı sonsuza kadar kilitlemek yerine, durumu kötüleştirmeyen
+  // (eşit/daha ucuz) transferlere izin verilir.
+  const budgetCap = Math.max(currentCost, BUDGET);
+  const maxAffordable = outPlayer ? budgetCap - (currentCost - outPlayer.price) : 0;
 
   const samePositionPool = outPlayer
     ? allPlayers.filter((p) => !squadIds.has(p.transfermarkt_id) && p.position_group === outPlayer.position_group)
@@ -100,7 +106,14 @@ export function TransferPanel({
             </span>
           </span>
         </div>
-        {remainingBudget < 1 && (
+        {remainingBudget < 0 && (
+          <p className="mt-1 text-[11px] text-amber-400">
+            Oyuncu fiyatları piyasa değerine göre haftalık güncelleniyor — kadron bu yüzden bütçenin{" "}
+            {Math.abs(remainingBudget).toFixed(1)} birim üzerine çıkmış (senin bir hatan değil). Getirdiğin oyuncu,
+            çıkardığından pahalı olamaz ama eşit/daha ucuz oyuncularla transfer yapmaya devam edebilirsin.
+          </p>
+        )}
+        {remainingBudget >= 0 && remainingBudget < 1 && (
           <p className="mt-1 text-[11px] text-amber-400">
             Bütçen dolmuş — yeni oyuncu alabilmek için çıkardığın oyuncudan daha ucuz birini seçmelisin.
           </p>

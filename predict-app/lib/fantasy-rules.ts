@@ -12,13 +12,25 @@ export const STARTING_XI_RANGE: Record<PositionGroup, [number, number]> = {
   FWD: [1, 3],
 };
 
-export function validateSquad(players: FantasyPlayer[]): { ok: true } | { ok: false; error: string } {
+// `budgetCap` normalde BUDGET'tır (yeni kadro kurarken hep öyle). Transfer sırasında
+// farklı: oyuncu fiyatları CANLI piyasa değerinden haftalık güncelleniyor (bkz.
+// lib/fantasy-data.ts), yani bir kadro kurulduktan SONRA fiyat artışları yüzünden
+// bütçenin üzerine çıkabilir — kullanıcının hatası değil. Bunu hep sıfır tolerans
+// (BUDGET) ile denetlemek, bütçesi drift'le aşan kullanıcıyı SONSUZA KADAR hiçbir
+// transfer yapamaz hale getirirdi (2026-09-16 kullanıcı bulgusu: "-31.1 birim"
+// gösterip hiç aday sunmuyordu). Transfer route'u bu yüzden `budgetCap` olarak
+// `Math.max(mevcut kadro maliyeti, BUDGET)` gönderir — kullanıcı durumu
+// KÖTÜLEŞTİREMEZ ama zaten var olan bir aşımı yüzünden tamamen kilitlenmez de.
+export function validateSquad(
+  players: FantasyPlayer[],
+  budgetCap: number = BUDGET
+): { ok: true } | { ok: false; error: string } {
   if (players.length !== SQUAD_SIZE) {
     return { ok: false, error: `Kadro tam olarak ${SQUAD_SIZE} oyuncudan oluşmalı (şu an ${players.length}).` };
   }
   const totalCost = players.reduce((sum, p) => sum + p.price, 0);
-  if (totalCost > BUDGET + 1e-6) {
-    return { ok: false, error: `Bütçe aşıldı: ${totalCost.toFixed(1)} / ${BUDGET.toFixed(1)}.` };
+  if (totalCost > budgetCap + 1e-6) {
+    return { ok: false, error: `Bütçe aşıldı: ${totalCost.toFixed(1)} / ${budgetCap.toFixed(1)}.` };
   }
   const byPosition: Record<string, number> = {};
   const byTeam: Record<string, number> = {};
