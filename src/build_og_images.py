@@ -809,6 +809,39 @@ def generate_og_league_intelligence() -> Path | None:
     return out
 
 
+def generate_og_intelligence_home() -> Path | None:
+    """Analiz hub sayfası (football_intelligence_home.html, ana nav'daki 'Analiz'
+    linki) — önceden hiç kendine ait görseli yoktu. 'Kaç araç var' gibi jenerik bir
+    sayım yerine somut bir iddia: ligin o anki lideri (2026-09-16 kararı — og_gundem
+    ile aynı ilke: soyut istatistik yerine doğrulanabilir tek bir gerçek)."""
+    data = _load_json("league_intelligence_2025_2026.json")
+    if data is None:
+        return None
+    team_profiles = data.get("team_profiles", [])
+    if not team_profiles:
+        return None
+    leader = max(team_profiles, key=lambda t: t.get("overall_power_score") or 0)
+    leader_name = _clean_team(leader.get("team", ""), max_len=24)
+    leader_score = leader.get("overall_power_score") or 0
+
+    img, draw = _make_base_image()
+    _draw_overline(draw, "LİG ANALİZİ", 110)
+    _draw_headline(draw, "Şu An Zirvede Kim Var?", 185, size=52)
+
+    font_team = _load_font("Inter-Bold.ttf", 56)
+    font_score = _load_font("Inter-SemiBold.ttf", 20)
+    draw.text((W // 2, 320), leader_name, font=font_team, fill=_rgb(LIME), anchor="mm")
+    draw.text((W // 2, 370), f"Güç puanı: {leader_score:.1f}", font=font_score, fill=_rgb(MUTED), anchor="mm")
+
+    font_lime = _load_font("Inter-SemiBold.ttf", 17)
+    draw.text((W // 2, 460), "Tüm analiz araçlarını incele →", font=font_lime, fill=_rgb(LIME), anchor="mm")
+
+    _draw_bottom_url(draw, "metric11.com/football_intelligence_home.html")
+    out = OG_DIR / "og_intelligence_home.png"
+    img.save(str(out), "PNG")
+    return out
+
+
 def _pick_featured_european_match(data: dict) -> tuple[dict, str] | None:
     """CL/EL/ECL'in üçünden en 'merak uyandırıcı' tek maçı seçer — Türk kulübü
     oynuyorsa öncelik, yoksa en cesur (en yüksek olasılıklı) tahmine düşer. Dönen
@@ -928,6 +961,7 @@ def main() -> None:
         ("og_league_intelligence.png", generate_og_league_intelligence),
         ("og_european.png", generate_og_european),
         ("og_weekly_evaluation.png", generate_og_weekly_evaluation),
+        ("og_intelligence_home.png", generate_og_intelligence_home),
     ]
 
     for name, func in generators:

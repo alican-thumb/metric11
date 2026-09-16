@@ -425,6 +425,26 @@ def _kadro_kur_sidebar_html() -> str:
     )
 
 
+def _amigo_ligi_sidebar_html() -> str:
+    """Amigo Ligi (taraftar sayacı) oyununu tanıtan sidebar kartı — diğer 2 oyunla
+    (Tahmin Oyunu, Kadro Kur) aynı görsel dilde, hemen altlarında gösterilir. Kullanıcı
+    geri bildirimi (2026-09-16): yeni özellikler bu ikisi kadar dikkat çekici değildi —
+    bu üçüncü kart o eşitliği sağlıyor."""
+    return (
+        '<a href="https://tahmin.metric11.com/taraftar" style="display:block;text-decoration:none;color:inherit">'
+        '<div class="panel" style="border-top:3px solid #fb923c;background:linear-gradient(165deg,#2a1608,#0a1a10);font-size:13px">'
+        '<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">'
+        '<div style="font-size:10px;font-weight:700;color:#fb923c;letter-spacing:.06em;text-transform:uppercase">🔥 Amigo Ligi</div>'
+        '<span style="font-size:9px;font-weight:800;color:#1a0d08;background:#fb923c;border-radius:4px;padding:2px 6px;letter-spacing:.04em">YENİ</span>'
+        '</div>'
+        '<div style="color:white;font-size:14px;font-weight:700;line-height:1.35;margin-bottom:6px">Takımını seç, taraftarlar arasında sırala</div>'
+        '<div style="color:#8fa89a;font-size:12px;line-height:1.5;margin-bottom:14px">En yüksek puanlı taraftar takımın Amigo\'su olur — linkini paylaşabilir. Ücretsiz, tek tık.</div>'
+        '<div style="display:block;text-align:center;padding:9px;background:#fb923c;border-radius:7px;color:#1a0d08;font-size:12px;font-weight:800">Takımını Seç →</div>'
+        '</div>'
+        '</a>'
+    )
+
+
 def _kadro_kur_panel_html() -> str:
     """Ana sütunda, transfer penceresi kapandıktan sonra artık bayat kalan
     'Transferler' bloğunun YERİNİ alan büyük Kadro Kur tanıtım paneli."""
@@ -537,8 +557,12 @@ def build_html() -> str:
     # alta iner; lig öncesi transfer bloğu skor panelinin yerini alır.
     predict_game_html = _predict_game_sidebar_html()
     kadro_kur_sidebar_html = _kadro_kur_sidebar_html()
+    amigo_ligi_sidebar_html = _amigo_ligi_sidebar_html()
     score_sidebar_html = _score_sidebar_html() if _league else ""
-    sidebar_top_html = predict_game_html + kadro_kur_sidebar_html + (score_sidebar_html if _league else transfer_sidebar_html)
+    sidebar_top_html = (
+        predict_game_html + kadro_kur_sidebar_html + amigo_ligi_sidebar_html
+        + (score_sidebar_html if _league else transfer_sidebar_html)
+    )
     sidebar_bottom_html = transfer_sidebar_html if _league else ""
 
     if not _is_transfer_season:

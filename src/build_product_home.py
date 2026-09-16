@@ -219,10 +219,10 @@ def build_html() -> str:
   <meta name="description" content="Süper Lig maç tahminleri, gol adayları, scout analizleri ve transfer istihbaratı. 18 takım, gerçek veri.">
   <meta property="og:title" content="metric11 — Süper Lig Futbol İstihbaratı">
   <meta property="og:description" content="Süper Lig maç tahminleri, gol adayları, scout analizleri ve transfer istihbaratı. 18 takım, gerçek veri.">
-  <meta property="og:image" content="https://metric11.com/og-image.png">
+  <meta property="og:image" content="https://metric11.com/og_intelligence_home.png">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://metric11.com/og-image.png">
+  <meta name="twitter:image" content="https://metric11.com/og_intelligence_home.png">
   <meta name="theme-color" content="#091810">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <style>
