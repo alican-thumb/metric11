@@ -1,7 +1,7 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-09-16T14:59:52.444454+00:00
-Toplam ilgili haber: 34
+Üretim zamanı: 2026-09-16T16:55:13.281250+00:00
+Toplam ilgili haber: 38
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
@@ -11,8 +11,10 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Beşiktaş, UEFA Avrupa Ligi kadrosunu açıkladı!](https://www.sabah.com.tr/spor/futbol/2026/09/16/besiktas-uefa-avrupa-ligi-kadrosunu-acikladi) — Sabah Spor · 2026-09-16T17:38:41+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş, UEFA Avrupa Ligi kadrosunu açıkladı](https://www.aa.com.tr/tr/spor/besiktas-uefa-avrupa-ligi-kadrosunu-acikladi/4059205) — Anadolu Ajansı Spor · 2026-09-16T17:31:14+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [BEŞİKTAŞ - MARSİLYA MAÇI NE ZAMAN, SAAT KAÇTA, HANGİ KANALDA? UEFA Avrupa Ligi Beşiktaş Marsilya Maçı Şifresiz Mi, Nereden İzlenir? Italiano'dan Marsilya Maçı Trossard Açıklaması!](https://www.cnnturk.com/spor/futbol/besiktas-marsilya-uefa-avrupa-ligi-maci-ne-zaman-hangi-kanalda-besiktas-marsilya-maci-sifresiz-mi-nereden-izlenir-3466489) — CNN Türk Spor · 2026-09-16T16:54:26+00:00 · turnuva=EL · kulüp=Beşiktaş
-- [Bucaspor 1928 - Gaziemir GOG | CANLI YAYIN](https://www.takvim.com.tr/spor/2026/09/16/bucaspor-1928-gaziemir-gog-canli-yayin) — Takvim Spor · 2026-09-16T16:50:28+03:00 · turnuva=— · kulüp=—
+- [İzmir'de farklı tarife! Gaziemir turladı](https://www.takvim.com.tr/spor/2026/09/16/izmirde-farkli-tarife-gaziemir-turladi) — Takvim Spor · 2026-09-16T16:50:28+03:00 · turnuva=— · kulüp=—
+- [Beşiktaş, UEFA Avrupa Ligi kadrosunu açıkladı](https://www.hurriyet.com.tr/sporarena/besiktas-uefa-avrupa-ligi-kadrosunu-acikladi-43309169) — Hürriyet Spor · 2026-09-16T15:35:46+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Ziraat Türkiye Kupası: Yeni Mersin İY - Bucak Bld. Oğuzhanspor canlı yayın](https://www.takvim.com.tr/spor/2026/09/16/yeni-mersin-iy-bucak-bld-oguzhanspor-canli) — Takvim Spor · 2026-09-16T15:35:04+03:00 · turnuva=— · kulüp=—
+- [Beşiktaş'ın Avrupa Ligi kadrosu açıklandı](https://www.haberturk.com/spor/besiktas-in-uefa-avrupa-ligi-kadrosu-aciklandi-3912921) — Haberturk Spor · 2026-09-16T15:00:08+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş UEFA Avrupa Ligi kadrosunu açıkladı - Sözcü Gazetesi](https://news.google.com/rss/articles/CBMigwFBVV95cUxPc3pzRkR4NDdpQUItMVlzSlZuRmF3MUdaU2U2U0ZvMmgxckF1NHlrLURUMlhGOG1Nd2tBMzJHYUxRNWR6X05FZmFTOHNTVlBVMDlYNkIxRmdscF9oWFMxMGNZaFgwbHBBYmI4ckJuWWlncHZhRC1pcGtDem5ZWEpoYzZEbw?oc=5) — Sözcü Gazetesi · 2026-09-16T14:37:46+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş, Marsilya maçı hazırlıklarını tamamladı](https://www.cnnturk.com/spor/futbol/besiktas-marsilya-maci-hazirliklarini-tamamladi-3467370) — CNN Türk Spor · 2026-09-16T13:18:27+00:00 · turnuva=EL · kulüp=Beşiktaş
 - ["Hedefimiz ilk 8’den çıkmak!"](https://www.haberturk.com/spor/vincenzo-italiano-hedefimiz-ilk-8den-cikmak-3912893) — Haberturk Spor · 2026-09-16T12:52:49+00:00 · turnuva=EL · kulüp=Beşiktaş
@@ -29,6 +31,9 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Milan, Benfica’yı konuk ediyor! Avrupa Ligi’nin heyecanı canlı sohbet ile Misli’de](https://www.hurriyet.com.tr/sporarena/milan-benficayi-konuk-ediyor-avrupa-liginin-heyecani-canli-sohbet-ile-mislide-43308459) — Hürriyet Spor · 2026-09-16T08:39:25+00:00 · turnuva=EL · kulüp=—
 - [Beşiktaş'ın UEFA Avrupa Ligi serüveni!](https://www.haberturk.com/spor/besiktas-in-uefa-avrupa-ligi-seruveni-3912807) — Haberturk Spor · 2026-09-16T08:24:34+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [İşte Italiano'nun Marsilya planı!](https://www.hurriyet.com.tr/sporarena/iste-italianonun-marsilya-plani-43308138) — Hürriyet Spor · 2026-09-16T04:00:00+00:00 · turnuva=EL · kulüp=Beşiktaş
+- [Söke 1970 Spor, Ziraat Türkiye Kupası'nda Altay'ı eleyerek 2. tura yükseldi!](https://www.fotomac.com.tr/turkiye-kupasi/2026/09/15/soke-1970-spor-ziraat-turkiye-kupasinda-altayi-eleyerek-2-tura-yukseldi) — Fotomaç · 2026-09-16T00:55:34+03:00 · turnuva=— · kulüp=—
+- [1923 Afyonkarahisar SK Ürgüpspor'u eleyerek Ziraat Türkiye Kupası'nda 2. tura yükseldi!](https://www.fotomac.com.tr/turkiye-kupasi/2026/09/15/1923-afyonkarahisar-sk-urgupsporu-eleyerek-2-tura-yukseldi) — Fotomaç · 2026-09-16T00:55:30+03:00 · turnuva=— · kulüp=—
+- [Liverpool, İngiltere Lig Kupası'nda Tottenham'ı eledi ve turladı](https://www.fotomac.com.tr/besiktas/2026/09/15/liverpool-ingiltere-lig-kupasinda-tottenhami-eledi-ve-turladi) — Fotomaç · 2026-09-16T00:54:50+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Ziraat Türkiye Kupası'nda gol yağmuru: Söke 1970 Spor, Altay'ı 4-2 yenerek 2. tura yükseldi](https://www.takvim.com.tr/spor/2026/09/15/altay-soke-1970-spor-mac-ozeti-golleri-ztk) — Takvim Spor · 2026-09-15T19:56:16+03:00 · turnuva=— · kulüp=—
 - [TÜRKİYE KUPASI MAÇ TAKVİMİ: Bu hafta hangi maçlar var, ne zaman, saat kaçta? 1. Eleme Turu maç programı...](https://www.cnnturk.com/spor/futbol/turkiye-kupasi-mac-takvimi-bu-hafta-hangi-maclar-var-ne-zaman-saat-kacta-1-eleme-turu-mac-programi-3467051) — CNN Türk Spor · 2026-09-15T19:22:45+00:00 · turnuva=— · kulüp=—
 - [TÜRKİYE FRANSA MAÇ BİLETİ FİYATI: Türkiye Fransa maç biletleri ne zaman satılacak? Türkiye Fransa maçı ne zaman, hangi kanalda, saat kaçta? Gözler TFF'de...](https://www.cnnturk.com/spor/futbol/turkiye-fransa-mac-bileti-fiyati-turkiye-fransa-mac-biletleri-ne-zaman-satilacak-turkiye-fransa-maci-ne-zaman-hangi-kanalda-3467043) — CNN Türk Spor · 2026-09-15T18:39:28+00:00 · turnuva=— · kulüp=—
@@ -36,7 +41,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [UEFA, önümüzdeki senelerde final oynanacak stadyumları açıkladı](https://www.cnnturk.com/spor/futbol/uefa-onumuzdeki-senelerde-final-oynanacak-stadyumlari-acikladi-3466883) — CNN Türk Spor · 2026-09-15T13:47:23+00:00 · turnuva=— · kulüp=—
 - [UEFA Avrupa Ligi'nde ilk maçlar yarın oynanacak](https://www.cnnturk.com/spor/futbol/uefa-avrupa-liginde-ilk-maclar-yarin-oynanacak-3466874) — CNN Türk Spor · 2026-09-15T13:09:08+00:00 · turnuva=EL · kulüp=—
 - [Beşiktaş - Marsilya maçının hakemi belli oldu](https://www.cnnturk.com/spor/futbol/besiktas-marsilya-macinin-hakemi-belli-oldu-3466825) — CNN Türk Spor · 2026-09-15T11:39:01+00:00 · turnuva=EL · kulüp=Beşiktaş
-- [Beşiktaş-Marsilya maçının hakemi belli oldu](https://www.hurriyet.com.tr/sporarena/besiktas-marsilya-macinin-hakemi-belli-oldu-43307265) — Hürriyet Spor · 2026-09-15T08:56:40+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Kupada heyecan başlıyor! İlk maçlar 15 Eylül'de](https://www.takvim.com.tr/spor/2026/09/14/ziraat-turkiye-kupasi-1-eleme-turu-mac-programi) — Takvim Spor · 2026-09-14T23:20:21+03:00 · turnuva=— · kulüp=—
 - [Transfer Gerçekleri / Başakşehir-Galatasaray / Fenerbahçe- Beşiktaş / Şampiyonlar Ligi - YouTube](https://news.google.com/rss/articles/CBMiXEFVX3lxTE1BdGE1bnBJX0FnTmtiY2tEVDVsWnRaTGtZdXBDSGRBZ0xuWEstSTJsM21iWVJjY1Y4S3RzUWxwdEpPQnNSQWcyeHVTWnBMVnlneUlLUl9pZDU1WUpm?oc=5) — YouTube · 2026-09-09T14:00:04+00:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe, Beşiktaş, Başakşehir
 - [Miguel Cardoso ve Elisha Owusu ile resmî sözleşme imzaladık.](https://erzurumsporfk.org/2026/08/19/miguel-cardoso-ve-elisha-owusu-ile-resmi-sozlesme-imzaladik/) — Erzurumspor FK Resmi Web · 2026-08-19T20:45:50+03:00 · turnuva=EL · kulüp=Kayserispor

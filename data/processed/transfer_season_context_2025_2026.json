@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-09-16T14:59:52.390661+00:00",
+  "generated_at": "2026-09-16T16:55:08.246808+00:00",
   "season": "2025_2026",
   "summary": {
     "free_agents_count": 95,
     "final_year_count": 334,
-    "transfer_signals_count": 31,
+    "transfer_signals_count": 33,
     "transfer_status_counts": {
       "OFFICIAL": 0,
-      "CORROBORATED": 1,
-      "RUMOR": 8,
-      "REVIEW_REQUIRED": 22
+      "CORROBORATED": 2,
+      "RUMOR": 7,
+      "REVIEW_REQUIRED": 24
     },
     "promotion_events_count": 1,
     "free_agent_total_market_value_eur": 180475000
@@ -460,6 +460,61 @@
   ],
   "transfer_signals": [
     {
+      "player_name": "MARIUS MOUNDILMADJI",
+      "from_club": null,
+      "to_club": "Samsunspor",
+      "transfer_type": "permanent",
+      "window": "summer_2026",
+      "signal_type": "official_transfer",
+      "confidence": "MEDIUM",
+      "tm_market_value_eur": 7000000,
+      "direction_quality": "TARGET_IDENTIFIED",
+      "article_id": "c5e606f28395",
+      "title": "Marius Mouandilmadji Olympiakos'a transfer oldu: Samsunspor 9 milyon euro kazanacak | Futbol Haberleri - GZT",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNSDRQdFJGUXFDQ2xNTUVOc0RmdnFaR3E2X0stcElleHNOYWdZaUw2T2VnQzJyMF9oLTJkUkpQOC1Ldkdlc2VwdmZHa2MtY29mT0k2eXVrUXUyekNqUG1kMThfMVlUSWpvVXpDLW40OGlveTVYU1pEdEJDdWgzV2Y2bjh6RlZtMEU5bUREQ1c3MTFqRnh6d1E3blEyeVhNS3JKQTRVNkZrcnhwdlI1X0hIV0pyMG0?oc=5",
+      "source": "GZT",
+      "source_type": "google_news",
+      "account_type": null,
+      "query": "Samsunspor transfer",
+      "source_tier": "MEDIA",
+      "published_at": "2026-09-16T07:40:10+00:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "HIGH",
+      "verification_status": "CORROBORATED",
+      "interpretation": "Birden fazla kaynak aynı yönlü iddiayı taşıyor; resmi açıklama beklenir.",
+      "source_count": 2,
+      "sources": [
+        "GZT",
+        "Fotomaç"
+      ],
+      "evidence": [
+        {
+          "source": "GZT",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Samsunspor transfer",
+          "title": "Marius Mouandilmadji Olympiakos'a transfer oldu: Samsunspor 9 milyon euro kazanacak | Futbol Haberleri - GZT",
+          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNSDRQdFJGUXFDQ2xNTUVOc0RmdnFaR3E2X0stcElleHNOYWdZaUw2T2VnQzJyMF9oLTJkUkpQOC1Ldkdlc2VwdmZHa2MtY29mT0k2eXVrUXUyekNqUG1kMThfMVlUSWpvVXpDLW40OGlveTVYU1pEdEJDdWgzV2Y2bjh6RlZtMEU5bUREQ1c3MTFqRnh6d1E3blEyeVhNS3JKQTRVNkZrcnhwdlI1X0hIV0pyMG0?oc=5",
+          "published_at": "2026-09-16T07:40:10+00:00",
+          "first_observed_at": null
+        },
+        {
+          "source": "Fotomaç",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Samsunspor'da Marius Mouandilmadji, Olympiakos'a transfer oldu!",
+          "link": "https://www.fotomac.com.tr/samsunspor/2026/09/16/samsunsporda-marius-mouandilmadji-olympiakosa-transfer-oldu",
+          "published_at": "2026-09-16T09:50:20+03:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
       "player_name": "ÜMİT AKDAĞ",
       "from_club": "BEŞİKTAŞ A.Ş.",
       "to_club": "Alanyaspor",
@@ -597,49 +652,6 @@
       "model_use": false
     },
     {
-      "player_name": "MARIUS MOUNDILMADJI",
-      "from_club": null,
-      "to_club": "Samsunspor",
-      "transfer_type": "permanent",
-      "window": "summer_2026",
-      "signal_type": "official_transfer",
-      "confidence": "LOW",
-      "tm_market_value_eur": 7000000,
-      "direction_quality": "TARGET_IDENTIFIED",
-      "article_id": "c5e606f28395",
-      "title": "Marius Mouandilmadji Olympiakos'a transfer oldu: Samsunspor 9 milyon euro kazanacak | Futbol Haberleri - GZT",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNSDRQdFJGUXFDQ2xNTUVOc0RmdnFaR3E2X0stcElleHNOYWdZaUw2T2VnQzJyMF9oLTJkUkpQOC1Ldkdlc2VwdmZHa2MtY29mT0k2eXVrUXUyekNqUG1kMThfMVlUSWpvVXpDLW40OGlveTVYU1pEdEJDdWgzV2Y2bjh6RlZtMEU5bUREQ1c3MTFqRnh6d1E3blEyeVhNS3JKQTRVNkZrcnhwdlI1X0hIV0pyMG0?oc=5",
-      "source": "GZT",
-      "source_type": "google_news",
-      "account_type": null,
-      "query": "Samsunspor transfer",
-      "source_tier": "MEDIA",
-      "published_at": "2026-09-16T07:40:10+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "HIGH",
-      "verification_status": "RUMOR",
-      "interpretation": "Tek kaynaklı transfer iddiası; yalnız transfer radarında izlenir.",
-      "source_count": 1,
-      "sources": [
-        "GZT"
-      ],
-      "evidence": [
-        {
-          "source": "GZT",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Samsunspor transfer",
-          "title": "Marius Mouandilmadji Olympiakos'a transfer oldu: Samsunspor 9 milyon euro kazanacak | Futbol Haberleri - GZT",
-          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNSDRQdFJGUXFDQ2xNTUVOc0RmdnFaR3E2X0stcElleHNOYWdZaUw2T2VnQzJyMF9oLTJkUkpQOC1Ldkdlc2VwdmZHa2MtY29mT0k2eXVrUXUyekNqUG1kMThfMVlUSWpvVXpDLW40OGlveTVYU1pEdEJDdWgzV2Y2bjh6RlZtMEU5bUREQ1c3MTFqRnh6d1E3blEyeVhNS3JKQTRVNkZrcnhwdlI1X0hIV0pyMG0?oc=5",
-          "published_at": "2026-09-16T07:40:10+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
       "player_name": "RAJMUND TOTH",
       "from_club": null,
       "to_club": "Konyaspor",
@@ -683,43 +695,41 @@
       "model_use": false
     },
     {
-      "player_name": "EMRECAN UZUNHAN",
-      "from_club": "İSTANBULSPOR A.Ş.",
-      "to_club": "Beşiktaş",
-      "transfer_type": "permanent",
-      "window": "summer_2026",
+      "player_name": "Karaman'ın genç yıldızı",
+      "from_club": null,
+      "to_club": "Konyaspor",
       "signal_type": "official_transfer",
+      "window": "summer_2026",
       "confidence": "LOW",
-      "tm_market_value_eur": null,
-      "direction_quality": "TARGET_IDENTIFIED",
-      "article_id": "e9bd10bcb119",
-      "title": "Beşiktaş, Emrecan Uzunhan’ın bonservisi ile İstanbulspor’a transfer olduğunu KAP’a bildirdi. “Profesyonel futbolcumuz Emrecan Uzunhan'ın İstanbulspor Kulübü'ne kesin transferi konusunda anlaşma sağlanmıştır.” #Beşiktaş #duhuliye #haber1903 - instagram.com",
-      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1nclQteEJfRk1sQ3RzdV9tRzNXQlpDZ3FlZk9xYWZ4OWo0SGxjRzFpMFljNUJOT0dLQ3VpZ3pQbTRGN2xmRUowQlh6TTZLZzh6YXc?oc=5",
-      "source": "instagram.com",
+      "direction_quality": "HEADLINE_EXPLICIT_DIRECTION",
+      "article_id": "934048cad1b4",
+      "title": "Karaman'ın genç yıldızı Konyaspor'a transfer oldu - Karaman Gündem",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQYnllV0FGV0JiQlJ1QllvTjBxX3Z5eEVxaTE1alpBLTFRMEtwajExQjFLMGtwdDRaWGZRR3hkZkI2eXltNFR1MUI4RkM1ZGlpSHNOM09EaTRXaDJwamplZllqbldvVGNMNEIwb3NLWVpjUEQ1R1JzaGplWVZKT1Q4THdSUUdza3lJV0N2Qg?oc=5",
+      "source": "Karaman Gündem",
       "source_type": "google_news",
       "account_type": null,
-      "query": "Beşiktaş transfer",
+      "query": "Konyaspor transfer",
       "source_tier": "MEDIA",
-      "published_at": "2026-09-04T19:53:51+00:00",
+      "published_at": "2026-09-04T07:00:00+00:00",
       "first_observed_at": null,
       "summary_tr": "",
-      "entity_confidence": "HIGH",
+      "entity_confidence": "MEDIUM",
       "verification_status": "RUMOR",
       "interpretation": "Tek kaynaklı transfer iddiası; yalnız transfer radarında izlenir.",
       "source_count": 1,
       "sources": [
-        "instagram.com"
+        "Karaman Gündem"
       ],
       "evidence": [
         {
-          "source": "instagram.com",
+          "source": "Karaman Gündem",
           "source_tier": "MEDIA",
           "source_type": "google_news",
           "account_type": null,
-          "query": "Beşiktaş transfer",
-          "title": "Beşiktaş, Emrecan Uzunhan’ın bonservisi ile İstanbulspor’a transfer olduğunu KAP’a bildirdi. “Profesyonel futbolcumuz Emrecan Uzunhan'ın İstanbulspor Kulübü'ne kesin transferi konusunda anlaşma sağlanmıştır.” #Beşiktaş #duhuliye #haber1903 - instagram.com",
-          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1nclQteEJfRk1sQ3RzdV9tRzNXQlpDZ3FlZk9xYWZ4OWo0SGxjRzFpMFljNUJOT0dLQ3VpZ3pQbTRGN2xmRUowQlh6TTZLZzh6YXc?oc=5",
-          "published_at": "2026-09-04T19:53:51+00:00",
+          "query": "Konyaspor transfer",
+          "title": "Karaman'ın genç yıldızı Konyaspor'a transfer oldu - Karaman Gündem",
+          "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQYnllV0FGV0JiQlJ1QllvTjBxX3Z5eEVxaTE1alpBLTFRMEtwajExQjFLMGtwdDRaWGZRR3hkZkI2eXltNFR1MUI4RkM1ZGlpSHNOM09EaTRXaDJwamplZllqbldvVGNMNEIwb3NLWVpjUEQ1R1JzaGplWVZKT1Q4THdSUUdza3lJV0N2Qg?oc=5",
+          "published_at": "2026-09-04T07:00:00+00:00",
           "first_observed_at": null
         }
       ],
@@ -893,6 +903,47 @@
     },
     {
       "player_name": null,
+      "from_club": null,
+      "to_club": "Trabzonspor",
+      "signal_type": "interest",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "2b359eab105a",
+      "title": "Trabzonspor aylarca peşinden koşmuştu! Yeni takımında ilk golünü attı - Haber61",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNV2JGMksySE5BbjUyd2xrOUg3VTBNNXdlVzVrOVdkTHFHMjNqQ2hIT19NY2g2Z0d5VlpOeEZkXzktOFRVZ2E2SU9uRXN4eF9JTmx1NWVFV1ItcktzZG1jSHVxemZUSlJHSWJoVUhJeWFJeS1Zckt3am9jSGNmdEg3emcwX1pVbmRwSWNuRERGS3NCS3g0YmJINU9teVowcG84a2QzUklaczZqRE5EeE5zbA?oc=5",
+      "source": "Haber61",
+      "source_type": "google_news",
+      "account_type": null,
+      "query": "Trabzonspor transfer",
+      "source_tier": "MEDIA",
+      "published_at": "2026-09-16T06:59:16+00:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Haber61"
+      ],
+      "evidence": [
+        {
+          "source": "Haber61",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Trabzonspor transfer",
+          "title": "Trabzonspor aylarca peşinden koşmuştu! Yeni takımında ilk golünü attı - Haber61",
+          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNV2JGMksySE5BbjUyd2xrOUg3VTBNNXdlVzVrOVdkTHFHMjNqQ2hIT19NY2g2Z0d5VlpOeEZkXzktOFRVZ2E2SU9uRXN4eF9JTmx1NWVFV1ItcktzZG1jSHVxemZUSlJHSWJoVUhJeWFJeS1Zckt3am9jSGNmdEg3emcwX1pVbmRwSWNuRERGS3NCS3g0YmJINU9teVowcG84a2QzUklaczZqRE5EeE5zbA?oc=5",
+          "published_at": "2026-09-16T06:59:16+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": null,
       "from_club": "Samsunspor",
       "to_club": null,
       "signal_type": "official_transfer",
@@ -943,9 +994,9 @@
       "tm_market_value_eur": 7000000,
       "direction_quality": "TARGET_UNRESOLVED",
       "article_id": "e77a5172d4d6",
-      "title": "Marius Mouandilmadji, Olympiakos'a transfer oldu - ensonhaber.com",
+      "title": "Marius Mouandilmadji, Olympiakos'a transfer oldu - Ensonhaber",
       "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQTE5reVBQQXY1cnNXVEw3bUZBSFFJRF9qMG12dlFFYnoxVFRzb1AtSkZwTW1fVXNmTF9GQlItdHcxdHpLS3BQOWxnQkY2S0FQc28xNGVjblY3OExyeHhYTXdqTmUxZkFKUUZQZXNDQlJrc1pBU1RGMm9OWUo2WjFJM2wwaHZNRlRqR2c?oc=5",
-      "source": "ensonhaber.com",
+      "source": "Ensonhaber",
       "source_type": "google_news",
       "account_type": null,
       "query": "Samsunspor transfer",
@@ -958,16 +1009,16 @@
       "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
       "source_count": 1,
       "sources": [
-        "ensonhaber.com"
+        "Ensonhaber"
       ],
       "evidence": [
         {
-          "source": "ensonhaber.com",
+          "source": "Ensonhaber",
           "source_tier": "MEDIA",
           "source_type": "google_news",
           "account_type": null,
           "query": "Samsunspor transfer",
-          "title": "Marius Mouandilmadji, Olympiakos'a transfer oldu - ensonhaber.com",
+          "title": "Marius Mouandilmadji, Olympiakos'a transfer oldu - Ensonhaber",
           "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQTE5reVBQQXY1cnNXVEw3bUZBSFFJRF9qMG12dlFFYnoxVFRzb1AtSkZwTW1fVXNmTF9GQlItdHcxdHpLS3BQOWxnQkY2S0FQc28xNGVjblY3OExyeHhYTXdqTmUxZkFKUUZQZXNDQlJrc1pBU1RGMm9OWUo2WjFJM2wwaHZNRlRqR2c?oc=5",
           "published_at": "2026-09-16T06:35:05+00:00",
           "first_observed_at": null
@@ -1011,6 +1062,47 @@
           "title": "Trabzonspor'da Thomas Reis dönemi! Alman çalıştırıcı Trabzon'a geldi",
           "link": "https://www.cnnturk.com/spor/futbol/trabzonsporda-thomas-reis-donemi-alman-calistirici-trabzona-geldi-3467102",
           "published_at": "2026-09-15T22:00:24+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": null,
+      "from_club": null,
+      "to_club": "Trabzonspor",
+      "signal_type": "deal_close",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "6c4a23f645d8",
+      "title": "Thomas Reis Trabzonspor için geldi! İşte ilk görüntüler",
+      "link": "https://www.fotomac.com.tr/trabzonspor/2026/09/15/thomas-reis-trabzona-ulasti",
+      "source": "Fotomaç",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-09-16T00:55:48+03:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Fotomaç"
+      ],
+      "evidence": [
+        {
+          "source": "Fotomaç",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Thomas Reis Trabzonspor için geldi! İşte ilk görüntüler",
+          "link": "https://www.fotomac.com.tr/trabzonspor/2026/09/15/thomas-reis-trabzona-ulasti",
+          "published_at": "2026-09-16T00:55:48+03:00",
           "first_observed_at": null
         }
       ],
@@ -1222,49 +1314,6 @@
       "model_use": false
     },
     {
-      "player_name": "MUHAMMED KEREM AKTÜRKOĞLU",
-      "from_club": "FENERBAHÇE A.Ş.",
-      "to_club": null,
-      "transfer_type": "permanent",
-      "window": "summer_2026",
-      "signal_type": "departure",
-      "confidence": "LOW",
-      "tm_market_value_eur": 20000000,
-      "direction_quality": "TARGET_UNRESOLVED",
-      "article_id": "a2f7e04a5679",
-      "title": "Bal yapmayan Kerem Aktürkoğlu!",
-      "link": "https://www.haberturk.com/spor/bal-yapmayan-kerem-akturkoglu-ligde-kayip-avrupa-da-bir-var-bir-yok-3912640",
-      "source": "Haberturk Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-09-15T12:27:54+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "HIGH",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Haberturk Spor"
-      ],
-      "evidence": [
-        {
-          "source": "Haberturk Spor",
-          "source_tier": "MEDIA",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "Bal yapmayan Kerem Aktürkoğlu!",
-          "link": "https://www.haberturk.com/spor/bal-yapmayan-kerem-akturkoglu-ligde-kayip-avrupa-da-bir-var-bir-yok-3912640",
-          "published_at": "2026-09-15T12:27:54+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
       "player_name": null,
       "from_club": null,
       "to_club": "Trabzonspor",
@@ -1314,9 +1363,9 @@
       "confidence": "LOW",
       "direction_quality": "PLAYER_UNRESOLVED",
       "article_id": "d1ed339171e8",
-      "title": "SON DAKİKA | Trabzonspor, Thomas Reis ile anlaşmaya vardı! Alman hoca imzaya geliyor... - sabah.com.tr",
+      "title": "SON DAKİKA | Trabzonspor, Thomas Reis ile anlaşmaya vardı! Alman hoca imzaya geliyor... - Sabah",
       "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQVERoUDI5enRCcnIyODlVTWhDZFFtaXV5ZlRlYUZSaFQ2ZC1MSlZya01kbTNwbUZiXzNNUUF2TlJWU19rLWg2SWU2aW9YYmNjcnlGdi12X1JrQ0s4dldwUjdSQk54QlhiZnFOZGNQdGVKRFpIZXk4ZVkzanV6Y0tlbjk3cXlaY3ZWdzRoaXdQR0ZaQjBOZ3ZRY293R3BldEU?oc=5",
-      "source": "sabah.com.tr",
+      "source": "Sabah",
       "source_type": "google_news",
       "account_type": null,
       "query": "Süper Lig yeni teknik direktör 2026",
@@ -1329,16 +1378,16 @@
       "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
       "source_count": 1,
       "sources": [
-        "sabah.com.tr"
+        "Sabah"
       ],
       "evidence": [
         {
-          "source": "sabah.com.tr",
+          "source": "Sabah",
           "source_tier": "MEDIA",
           "source_type": "google_news",
           "account_type": null,
           "query": "Süper Lig yeni teknik direktör 2026",
-          "title": "SON DAKİKA | Trabzonspor, Thomas Reis ile anlaşmaya vardı! Alman hoca imzaya geliyor... - sabah.com.tr",
+          "title": "SON DAKİKA | Trabzonspor, Thomas Reis ile anlaşmaya vardı! Alman hoca imzaya geliyor... - Sabah",
           "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQVERoUDI5enRCcnIyODlVTWhDZFFtaXV5ZlRlYUZSaFQ2ZC1MSlZya01kbTNwbUZiXzNNUUF2TlJWU19rLWg2SWU2aW9YYmNjcnlGdi12X1JrQ0s4dldwUjdSQk54QlhiZnFOZGNQdGVKRFpIZXk4ZVkzanV6Y0tlbjk3cXlaY3ZWdzRoaXdQR0ZaQjBOZ3ZRY293R3BldEU?oc=5",
           "published_at": "2026-09-15T06:10:32+00:00",
           "first_observed_at": null
@@ -1714,6 +1763,49 @@
           "title": "Fenerbahçe'de yeni transfer ayrıldı! Henüz 1 dakika bile süre almamıştı - NTVSpor",
           "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOMFg4UEdrOFkwQW5ZTXQ3NEV5RW5zN3VQZUs2b0ZDYkpCcnJuTkFCNmo4UHVzaG5aM3hZTTVDd01UZzBsZnhCWll3ZkdUY3RaVG9CcWd4UGdRX05ieGtBcVltSnJBUkxteXV6LUdCckVxeTlJYWZOM1R5TXR6NUVOZ19EUEJGczVVWEd0OE9xdVU2bzlUTldPN0ZRRVliVG5DTEV0dkRzeXAzaUp1ZXFjeFkzVE_SAboBQVVfeXFMUEhtb2kwMjhVX2VyM0VFaVllMERUMkZMUlRxcVR4VmI4Mk1UdEozTGx3Z3lKSTZxQ29JN0JINkxCMnhRWjg3RHdfXzh0b1U4a2cyVGctV3NnYUNmR2xuUkptbTlsektEZ0RmcU4wRGZLTkpGSkFLX3RxZmpNNHA0V3ZFYWdXNzZsdVFIV2tic3A2OG1hUW04Q1ZrT0s4TkZMTmhld25tVUtiWURvMkN1VUl2WHM0akpNRk1B?oc=5",
           "published_at": "2026-09-04T07:00:00+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": "DENIS MIHAI DRAGUS",
+      "from_club": "TRABZONSPOR A.Ş.",
+      "to_club": null,
+      "transfer_type": "permanent",
+      "window": "summer_2026",
+      "signal_type": "departure",
+      "confidence": "LOW",
+      "tm_market_value_eur": 4000000,
+      "direction_quality": "TARGET_UNRESOLVED",
+      "article_id": "e3f920d3f667",
+      "title": "Trabzonspor’da Denis Dragus ile yollar ayrıldı: FCSB’ye imza attı! - Ajansspor",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNOEszZFBIMUQtM2RhVGM2WVFtN29hb0R4dFBnM2h6V0tfN1BFZGRDcE9GM21DU2dsSzFsVHB2dmtLNG8zTVFKVGJ1YUlLX3hmUnVkY18yNi1JNG9rTGFGQU9MRVZOOWxUOFhmRVJ4RnN2ZG5OY24yX25pdTJoVEl4OTRIWnMtcWZocHA0T19kTzFoMVRKc2hZNW9ETlZNQQ?oc=5",
+      "source": "Ajansspor",
+      "source_type": "google_news",
+      "account_type": null,
+      "query": "Süper Lig bonservis imza",
+      "source_tier": "MEDIA",
+      "published_at": "2026-09-03T07:00:00+00:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "HIGH",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Ajansspor"
+      ],
+      "evidence": [
+        {
+          "source": "Ajansspor",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Süper Lig bonservis imza",
+          "title": "Trabzonspor’da Denis Dragus ile yollar ayrıldı: FCSB’ye imza attı! - Ajansspor",
+          "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNOEszZFBIMUQtM2RhVGM2WVFtN29hb0R4dFBnM2h6V0tfN1BFZGRDcE9GM21DU2dsSzFsVHB2dmtLNG8zTVFKVGJ1YUlLX3hmUnVkY18yNi1JNG9rTGFGQU9MRVZOOWxUOFhmRVJ4RnN2ZG5OY24yX25pdTJoVEl4OTRIWnMtcWZocHA0T19kTzFoMVRKc2hZNW9ETlZNQQ?oc=5",
+          "published_at": "2026-09-03T07:00:00+00:00",
           "first_observed_at": null
         }
       ],
