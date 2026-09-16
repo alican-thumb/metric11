@@ -3259,3 +3259,19 @@ Kullanıcı ekran görüntüsü gönderdi: bir FWD'yi çıkarmaya çalışınca 
 - **Doğrulama:** `tsc`/`eslint`/`next build` temiz. DB şeması değişmedi (saf hesaplama mantığı), gerçek kadroyla test edilemedi (kullanıcının kendi hesabı) — kullanıcıdan tekrar denemesi istendi.
 - Commit `ca40c0230`, push edildi, `tahmin.metric11.com`'a deploy edildi.
 - Değişen dosyalar: `predict-app/lib/fantasy-rules.ts`, `predict-app/app/api/fantasy/transfer/route.ts`, `predict-app/components/fantasy/transfer-panel.tsx`.
+
+### 2026-09-16 (devam 5) — Kadro Kur bütçe/fiyat analizi, Amigo Ligi ana sayfa kartı, Analiz sayfası OG görseli
+
+Kullanıcı "oyuncu değerleri ile bütçe uyumlu mu" diye sordu — `fantasy_player_pool_2026_2027.json` (529 oyuncu) üzerinden analiz edildi:
+
+- **Bütçe/fiyat aralığı SAĞLIKLI:** Takım kotası (max 3/takım) dahil gerçekçi minimum kadro maliyeti 60.0, maksimum 194.1 — bütçe (100.0) bu aralığın ~%30'unda duruyor, yani ne "her kombinasyon mümkün" kadar gevşek ne de "tek bir zorunlu kadro var" kadar sıkı. Medyan fiyatlı bir kadro (~99.4) neredeyse tam bütçeye oturuyor — kasıtlı gibi görünen iyi bir kalibrasyon.
+- **GK fiyat tavanı (13.5) DEF/MID/FWD'den (15.0) düşük** — bug değil, gerçek Transfermarkt piyasa değerlerinin kaleci pozisyonunu sistematik olarak daha düşük fiyatlandırmasının doğal sonucu (`_price_from_value`, tüm pozisyonlar için TEK bir global 97. persentil tavanı kullanıyor). Gerçek FPL'de de kaleciler en ucuz pozisyondur — bu, tür-standart bir tasarım, değiştirilmesi önerilmiyor.
+- **Fiyat–performans korelasyonu şu an ZAYIF** (fiyat↔maç başlama r=0.14, fiyat↔gol r=0.31, yalnızca 168/529 oyuncunun bu sezon maç verisi var) — muhtemelen 5-6 haftalık erken sezon örnekleminin küçüklüğünden (oyuncuların çoğu henüz forma giymedi), pazarlama değeri tabanlı fiyatlandırmanın yapısal bir kusuru olduğuna dair güçlü kanıt değil. Birkaç hafta sonra tekrar bakılmalı.
+- **Yan bulgu (aksiyon alınmadı, ayrı konu):** `worldcup_2026_predictions.json` — grup aşaması (72 maç) tam skorlu ama KO aşamasının (32 maç) TAMAMI hâlâ `actual_score: null` — gerçek 2026 Dünya Kupası Temmuz'da bitmiş olmasına rağmen (bu bugünkü tarih Eylül) site hâlâ KO sonuçlarını hiç toplamamış görünüyor. Kullanıcıya bildirilecek, bu turda dokunulmadı.
+- **Yapılan (kullanıcının "bunları yap" dediği 2 iş):**
+  1. Ana sayfa sidebar'ına `_amigo_ligi_sidebar_html()` (yeni) eklendi — Tahmin Oyunu/Kadro Kur kartlarıyla birebir aynı görsel dilde, üçüncü oyuna eşit görünürlük kazandırdı (turuncu vurgu, `#fb923c`, diğer ikisinden ayırt edilsin diye).
+  2. `football_intelligence_home.html` (ana nav "Analiz" linki) ilk kez kendi paylaşım görseline kavuştu (`generate_og_intelligence_home`, "şu an ligde kim zirvede" hook'u — Galatasaray, 84.4 güç puanı).
+- **Kapsam kararı:** Kalan OG-görselsiz sayfalar (18 takım "2025/26 dashboard chronological" arşiv sayfaları + Dünya Kupası) bilinçli olarak ERTELENDİ — takım dashboard'ları `build_live_feed.py`'de zaten `bold=not _league` ile düşük öncelikli işaretlenmiş eski/arşiv sayfalar (2025/26 adında, `is_off_season` mantığıyla "transfer odası"na dönüyor), Dünya Kupası ise yukarıdaki KO-veri boşluğu netleşmeden görsel eklemek yanlış/eski bir "sıradaki maç" gösterebilirdi.
+- **Doğrulama:** `py_compile` temiz, `metric11.com`'da canlı doğrulandı (Amigo Ligi kartı ana sayfada, Analiz sayfası yeni görseliyle).
+- Commit `0eb47d45f`, push edildi.
+- Değişen/yeni dosyalar: `src/build_live_feed.py`, `src/build_og_images.py`, `src/build_product_home.py`, `data/processed/og_intelligence_home.png`.
