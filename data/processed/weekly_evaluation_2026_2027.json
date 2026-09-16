@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T00:18:48.946848",
+  "generated_at": "2026-09-16T05:44:35.082576",
   "season": "2026-2027",
   "summary": {
     "evaluated_matches": 45,
@@ -10,7 +10,30 @@
     "draw_recall": 0.2222,
     "high_conf_matches": 15,
     "high_conf_correct": 8,
-    "high_conf_accuracy": 0.5333
+    "high_conf_accuracy": 0.5333,
+    "confidence_breakdown": {
+      "HIGH": {
+        "matches": 15,
+        "correct": 8,
+        "accuracy": 0.5333,
+        "avg_stated_probability": 0.5901,
+        "calibration_gap": -0.0568
+      },
+      "MEDIUM": {
+        "matches": 18,
+        "correct": 3,
+        "accuracy": 0.1667,
+        "avg_stated_probability": 0.4574,
+        "calibration_gap": -0.2907
+      },
+      "LOW": {
+        "matches": 12,
+        "correct": 6,
+        "accuracy": 0.5,
+        "avg_stated_probability": 0.3785,
+        "calibration_gap": 0.1215
+      }
+    }
   },
   "last_played_week": 5,
   "last_week": {
@@ -24,7 +47,30 @@
       "draw_recall": 0.5,
       "high_conf_matches": 4,
       "high_conf_correct": 2,
-      "high_conf_accuracy": 0.5
+      "high_conf_accuracy": 0.5,
+      "confidence_breakdown": {
+        "HIGH": {
+          "matches": 4,
+          "correct": 2,
+          "accuracy": 0.5,
+          "avg_stated_probability": 0.6175,
+          "calibration_gap": -0.1175
+        },
+        "MEDIUM": {
+          "matches": 3,
+          "correct": 0,
+          "accuracy": 0.0,
+          "avg_stated_probability": 0.4483,
+          "calibration_gap": -0.4483
+        },
+        "LOW": {
+          "matches": 2,
+          "correct": 1,
+          "accuracy": 0.5,
+          "avg_stated_probability": 0.3545,
+          "calibration_gap": 0.1455
+        }
+      }
     },
     "matches": [
       {
@@ -185,7 +231,30 @@
         "draw_recall": 0.25,
         "high_conf_matches": 4,
         "high_conf_correct": 2,
-        "high_conf_accuracy": 0.5
+        "high_conf_accuracy": 0.5,
+        "confidence_breakdown": {
+          "HIGH": {
+            "matches": 4,
+            "correct": 2,
+            "accuracy": 0.5,
+            "avg_stated_probability": 0.5807,
+            "calibration_gap": -0.0807
+          },
+          "MEDIUM": {
+            "matches": 2,
+            "correct": 0,
+            "accuracy": 0.0,
+            "avg_stated_probability": 0.4565,
+            "calibration_gap": -0.4565
+          },
+          "LOW": {
+            "matches": 3,
+            "correct": 2,
+            "accuracy": 0.6667,
+            "avg_stated_probability": 0.3713,
+            "calibration_gap": 0.2954
+          }
+        }
       },
       "matches": [
         {
@@ -345,7 +414,30 @@
         "draw_recall": null,
         "high_conf_matches": 3,
         "high_conf_correct": 2,
-        "high_conf_accuracy": 0.6667
+        "high_conf_accuracy": 0.6667,
+        "confidence_breakdown": {
+          "HIGH": {
+            "matches": 3,
+            "correct": 2,
+            "accuracy": 0.6667,
+            "avg_stated_probability": 0.5637,
+            "calibration_gap": 0.103
+          },
+          "MEDIUM": {
+            "matches": 6,
+            "correct": 0,
+            "accuracy": 0.0,
+            "avg_stated_probability": 0.465,
+            "calibration_gap": -0.465
+          },
+          "LOW": {
+            "matches": 0,
+            "correct": 0,
+            "accuracy": null,
+            "avg_stated_probability": null,
+            "calibration_gap": null
+          }
+        }
       },
       "matches": [
         {
@@ -505,7 +597,30 @@
         "draw_recall": 0.0,
         "high_conf_matches": 4,
         "high_conf_correct": 2,
-        "high_conf_accuracy": 0.5
+        "high_conf_accuracy": 0.5,
+        "confidence_breakdown": {
+          "HIGH": {
+            "matches": 4,
+            "correct": 2,
+            "accuracy": 0.5,
+            "avg_stated_probability": 0.592,
+            "calibration_gap": -0.092
+          },
+          "MEDIUM": {
+            "matches": 3,
+            "correct": 3,
+            "accuracy": 1.0,
+            "avg_stated_probability": 0.4503,
+            "calibration_gap": 0.5497
+          },
+          "LOW": {
+            "matches": 2,
+            "correct": 1,
+            "accuracy": 0.5,
+            "avg_stated_probability": 0.4025,
+            "calibration_gap": 0.0975
+          }
+        }
       },
       "matches": [
         {
@@ -665,7 +780,30 @@
         "draw_recall": 0.0,
         "high_conf_matches": 0,
         "high_conf_correct": 0,
-        "high_conf_accuracy": null
+        "high_conf_accuracy": null,
+        "confidence_breakdown": {
+          "HIGH": {
+            "matches": 0,
+            "correct": 0,
+            "accuracy": null,
+            "avg_stated_probability": null,
+            "calibration_gap": null
+          },
+          "MEDIUM": {
+            "matches": 4,
+            "correct": 0,
+            "accuracy": 0.0,
+            "avg_stated_probability": 0.4587,
+            "calibration_gap": -0.4587
+          },
+          "LOW": {
+            "matches": 5,
+            "correct": 2,
+            "accuracy": 0.4,
+            "avg_stated_probability": 0.3828,
+            "calibration_gap": 0.0172
+          }
+        }
       },
       "matches": [
         {
@@ -825,7 +963,30 @@
         "draw_recall": 0.5,
         "high_conf_matches": 4,
         "high_conf_correct": 2,
-        "high_conf_accuracy": 0.5
+        "high_conf_accuracy": 0.5,
+        "confidence_breakdown": {
+          "HIGH": {
+            "matches": 4,
+            "correct": 2,
+            "accuracy": 0.5,
+            "avg_stated_probability": 0.6175,
+            "calibration_gap": -0.1175
+          },
+          "MEDIUM": {
+            "matches": 3,
+            "correct": 0,
+            "accuracy": 0.0,
+            "avg_stated_probability": 0.4483,
+            "calibration_gap": -0.4483
+          },
+          "LOW": {
+            "matches": 2,
+            "correct": 1,
+            "accuracy": 0.5,
+            "avg_stated_probability": 0.3545,
+            "calibration_gap": 0.1455
+          }
+        }
       },
       "matches": [
         {

@@ -96,6 +96,37 @@ def _pick_probability(ev: dict) -> float:
     }.get(ev.get("predicted"), 0.0)
 
 
+def _confidence_breakdown(evaluations: list[dict]) -> dict:
+    """HIGH/MEDIUM/LOW güven bandı başına isabet oranı VE modelin o banttaki
+    ORTALAMA beyan ettiği olasılık ("stated probability") kıyaslaması.
+
+    2026-09-14 kullanıcı geri bildirimi ("tahminler kötü gidiyor, MEDIUM bandı
+    hiç tutmuyor" — Göztepe-Rize örneği) üzerine eklendi. Amaç: tek bir kötü
+    haftayı ("gürültü") gerçek bir kalibrasyon bozulmasından ("sinyal") ayırt
+    edebilmek için kalıcı, haftadan haftaya biriken bir referans oluşturmak.
+    `calibration_gap` = gerçek isabet - ortalama beyan edilen olasılık; belirgin
+    negatifse model o bantta olduğundan fazla kendinden emin demektir. Küçük
+    örneklemde (bkz. ilk birkaç hafta) bu tek başına aksiyon almak için yeterli
+    değil — 258 maçlık 2025-26 backtest'teki referans değerler (HIGH ~%64,
+    MEDIUM ~%54, LOW ~%48) ile kıyaslanarak okunmalı.
+    """
+    breakdown = {}
+    for label in ("HIGH", "MEDIUM", "LOW"):
+        items = [e for e in evaluations if e.get("prediction_confidence") == label]
+        n = len(items)
+        correct = sum(1 for e in items if e["correct"])
+        avg_stated = round(sum(_pick_probability(e) for e in items) / n, 4) if n else None
+        accuracy = round(correct / n, 4) if n else None
+        breakdown[label] = {
+            "matches": n,
+            "correct": correct,
+            "accuracy": accuracy,
+            "avg_stated_probability": avg_stated,
+            "calibration_gap": round(accuracy - avg_stated, 4) if n else None,
+        }
+    return breakdown
+
+
 def _summarize(evaluations: list[dict]) -> dict:
     total = len(evaluations)
     correct = sum(1 for e in evaluations if e["correct"])
@@ -113,6 +144,7 @@ def _summarize(evaluations: list[dict]) -> dict:
         "high_conf_matches": len(high_conf),
         "high_conf_correct": high_conf_correct,
         "high_conf_accuracy": round(high_conf_correct / len(high_conf), 4) if high_conf else None,
+        "confidence_breakdown": _confidence_breakdown(evaluations),
     }
 
 
@@ -154,6 +186,24 @@ def _pct(value: float | None) -> str:
     return "—" if value is None else f"%{round(value * 100)}"
 
 
+_BACKTEST_REF_ACCURACY = {"HIGH": 0.64, "MEDIUM": 0.541, "LOW": 0.476}
+
+
+def _confidence_breakdown_lines(breakdown: dict) -> list[str]:
+    lines = [
+        "| Güven bandı | Maç | İsabet | Beyan edilen ort. olasılık | Referans (2025-26, 258 maç) |",
+        "| --- | --- | --- | --- | --- |",
+    ]
+    for label in ("HIGH", "MEDIUM", "LOW"):
+        b = breakdown.get(label, {})
+        n = b.get("matches") or 0
+        ref = _BACKTEST_REF_ACCURACY[label]
+        row_acc = f"{b['correct']}/{n} ({_pct(b['accuracy'])})" if n else "—"
+        row_stated = _pct(b.get("avg_stated_probability")) if n else "—"
+        lines.append(f"| {label} | {n} | {row_acc} | {row_stated} | {_pct(ref)} |")
+    return lines
+
+
 def build_markdown(payload: dict) -> str:
     s = payload["summary"]
     lines = [
@@ -167,6 +217,15 @@ def build_markdown(payload: dict) -> str:
         f"- İsabet: **{s['correct']}/{s['evaluated_matches']}** ({_pct(s['accuracy'])})",
         f"- Beraberlik yakalama: **{s['draws_caught']}/{s['actual_draws']}** ({_pct(s['draw_recall'])})",
         f"- Yüksek güvenli maç isabeti: **{s['high_conf_correct']}/{s['high_conf_matches']}** ({_pct(s['high_conf_accuracy'])})",
+        "",
+        "### Güven bandı kalibrasyonu",
+        "",
+        "_\"Beyan edilen ort. olasılık\" ile \"İsabet\" arasındaki fark büyükse (özellikle "
+        "isabet daha düşükse) model o banttaki kendine güvenini haklı çıkaramıyor demektir. "
+        "Referans sütunu geçmiş sezonun 258 maçlık backtest'inden — küçük örneklemli erken "
+        "hafta sapmalarını buna göre yorumlayın._",
+        "",
+        *_confidence_breakdown_lines(s.get("confidence_breakdown", {})),
         "",
     ]
     if s["evaluated_matches"] == 0:

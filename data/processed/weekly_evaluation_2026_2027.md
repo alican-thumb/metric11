@@ -9,6 +9,16 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 - Beraberlik yakalama: **2/9** (%22)
 - Yüksek güvenli maç isabeti: **8/15** (%53)
 
+### Güven bandı kalibrasyonu
+
+_"Beyan edilen ort. olasılık" ile "İsabet" arasındaki fark büyükse (özellikle isabet daha düşükse) model o banttaki kendine güvenini haklı çıkaramıyor demektir. Referans sütunu geçmiş sezonun 258 maçlık backtest'inden — küçük örneklemli erken hafta sapmalarını buna göre yorumlayın._
+
+| Güven bandı | Maç | İsabet | Beyan edilen ort. olasılık | Referans (2025-26, 258 maç) |
+| --- | --- | --- | --- | --- |
+| HIGH | 15 | 8/15 (%53) | %59 | %64 |
+| MEDIUM | 18 | 3/18 (%17) | %46 | %54 |
+| LOW | 12 | 6/12 (%50) | %38 | %48 |
+
 ## Hafta 5 — 3/9 isabet (%33)
 
 | Maç | Skor | Tahmin | Sonuç | Güven |
