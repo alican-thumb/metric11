@@ -1,7 +1,7 @@
 import { auth } from "@clerk/nextjs/server";
 import { getOrCreateUser } from "@/lib/get-or-create-user";
 import { getSuperLigTeams } from "@/lib/fantasy-data";
-import { getFanClubStandings } from "@/lib/fanclub";
+import { getFanClubStandings, type Amigo } from "@/lib/fanclub";
 import { TeamPicker } from "@/components/fanclub/team-picker";
 
 export default async function FanClubPage() {
@@ -11,20 +11,21 @@ export default async function FanClubPage() {
 
   return (
     <div className="space-y-5">
-      <div className="overflow-hidden rounded-2xl border border-emerald-800/50 bg-gradient-to-br from-emerald-900/40 via-slate-900 to-slate-950 px-5 py-4">
+      <div className="overflow-hidden rounded-2xl border border-orange-800/50 bg-gradient-to-br from-orange-900/40 via-slate-900 to-slate-950 px-5 py-4">
         <h1 className="text-xl font-black tracking-tight">
-          Tribün <span className="text-lime-300">Lideri</span>
+          🔥 Amigo <span className="text-lime-300">Ligi</span>
         </h1>
         <p className="text-xs text-slate-400">
-          Süper Lig takımlarının gerçek taraftar sayımı — {standings.totalVotes} kullanıcı takımını seçti.
+          Takımını seç, {standings.totalVotes} taraftarla birlikte sırala. En yüksek puanlı taraftar takımın{" "}
+          <span className="font-semibold text-orange-300">Amigo</span>&apos;su olur.
         </p>
       </div>
 
-      <TeamPicker teams={teams} myTeam={standings.myTeam} signedIn={Boolean(userId)} />
+      <TeamPicker teams={teams} myTeam={standings.myTeam} myLink={standings.myLink} signedIn={Boolean(userId)} />
 
       <div className="space-y-2">
         {standings.teams.map((row, i) => (
-          <TeamRow key={row.team} rank={i + 1} team={row.team} count={row.count} percentage={row.percentage} isMine={row.team === standings.myTeam} />
+          <TeamRow key={row.team} rank={i + 1} team={row.team} count={row.count} percentage={row.percentage} amigo={row.amigo} isMine={row.team === standings.myTeam} />
         ))}
       </div>
     </div>
@@ -36,12 +37,14 @@ function TeamRow({
   team,
   count,
   percentage,
+  amigo,
   isMine,
 }: {
   rank: number;
   team: string;
   count: number;
   percentage: number;
+  amigo: Amigo;
   isMine: boolean;
 }) {
   return (
@@ -64,6 +67,24 @@ function TeamRow({
           <span>({(percentage * 100).toFixed(1)}%)</span>
         </div>
       </div>
+      {amigo && (
+        <div className="relative mt-1.5 flex items-center gap-1.5 text-[11px] text-slate-500">
+          <span>🔥 Amigo:</span>
+          {amigo.link ? (
+            <a
+              href={amigo.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-orange-300 underline decoration-dotted underline-offset-2 hover:text-orange-200"
+            >
+              {amigo.displayName}
+            </a>
+          ) : (
+            <span className="font-semibold text-orange-300">{amigo.displayName}</span>
+          )}
+          <span>· {amigo.totalPoints} puan</span>
+        </div>
+      )}
     </div>
   );
 }

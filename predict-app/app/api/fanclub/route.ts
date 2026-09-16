@@ -11,6 +11,18 @@ export async function GET() {
   return NextResponse.json(standings);
 }
 
+// Amigo olunca gösterilecek link — yalnızca http(s) kabul edilir (javascript: vb. XSS
+// vektörlerini engellemek için), boş string/undefined verilirse link temizlenir (null).
+function _sanitizeLink(raw: unknown): string | null {
+  if (typeof raw !== "string" || raw.trim() === "") return null;
+  try {
+    const url = new URL(raw.trim());
+    return url.protocol === "http:" || url.protocol === "https:" ? url.toString() : null;
+  } catch {
+    return null;
+  }
+}
+
 export async function POST(req: Request) {
   const user = await getOrCreateUser();
   if (!user) return NextResponse.json({ error: "Giriş yapmalısınız." }, { status: 401 });
@@ -23,12 +35,13 @@ export async function POST(req: Request) {
   if (!validTeams.includes(team)) {
     return NextResponse.json({ error: "Geçersiz takım." }, { status: 400 });
   }
+  const link = _sanitizeLink(body?.link);
 
   const db = getDb();
   await db
     .insert(fanPicks)
-    .values({ userId: user.id, team })
-    .onConflictDoUpdate({ target: fanPicks.userId, set: { team, updatedAt: new Date() } });
+    .values({ userId: user.id, team, link })
+    .onConflictDoUpdate({ target: fanPicks.userId, set: { team, link, updatedAt: new Date() } });
 
-  return NextResponse.json({ ok: true, team });
+  return NextResponse.json({ ok: true, team, link });
 }

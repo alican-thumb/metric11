@@ -255,6 +255,7 @@ def build_html(payload: dict) -> str:
         body,
         description="Süper Lig 2026-27 maç tahminlerinin her hafta gerçek sonuçlarla karşılaştırıldığı isabet karnesi.",
         active_nav="Haftalık Karne",
+        og_image="og_weekly_evaluation.png",
     )
 
 

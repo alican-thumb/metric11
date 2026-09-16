@@ -64,14 +64,37 @@ def _window_state() -> tuple[str, str, str, str, str | None]:
     alanı (nav'ın hemen altı) boşa gitmesin diye."""
     now = datetime.now(timezone.utc)
     if now >= WINDOW_CLOSE_DATE:
-        return (
-            "promo",
-            "background:linear-gradient(90deg,#0f2318,#0a1a10);border-bottom:1px solid #cde94e",
-            "background:#cde94e",
-            "🎮 <strong>Tahmin Oyunu açık!</strong> Süper Lig maçlarına skor tahmini gir, puan topla, "
-            "lider tablosunda yarış — <strong>ücretsiz</strong> →",
-            "/tahmin",
-        )
+        # 3 oyunu dönüşümlü tanıtıyor — sitenin en görünür şeridi tek bir oyunda
+        # donup kalmasın diye (kullanıcı geri bildirimi 2026-09-16: "yeni özellikler
+        # daha dikkat çekici olmalı"). Her pipeline yenilemesinde (~6 saatte bir)
+        # bir sonrakine geçiyor — gerçek zamanlı client-side rotasyon değil, ama
+        # sitenin en görünür alanı artık tek bir oyunda sabitlenmiyor.
+        promos = [
+            (
+                "background:linear-gradient(90deg,#0f2318,#0a1a10);border-bottom:1px solid #cde94e",
+                "background:#cde94e",
+                "🎮 <strong>Tahmin Oyunu açık!</strong> Süper Lig maçlarına skor tahmini gir, puan topla, "
+                "lider tablosunda yarış — <strong>ücretsiz</strong> →",
+                "/tahmin",
+            ),
+            (
+                "background:linear-gradient(90deg,#132b1c,#0a1a10);border-bottom:1px solid #cde94e",
+                "background:#cde94e",
+                "🏆 <strong>Kadro Kur açık!</strong> 100 birim bütçeyle FM tarzı fantasy kadronu kur, "
+                "her hafta gerçek maçlardan puan topla →",
+                "https://tahmin.metric11.com/kadro",
+            ),
+            (
+                "background:linear-gradient(90deg,#3a1f0f,#1a0d08);border-bottom:1px solid #fb923c",
+                "background:#fb923c",
+                "🔥 <strong>Amigo Ligi açık!</strong> Takımını seç, taraftarlar arasında sırala — "
+                "en yüksek puanlı taraftar takımın Amigo'su olur →",
+                "https://tahmin.metric11.com/taraftar",
+            ),
+        ]
+        idx = int(now.timestamp()) // (6 * 3600) % len(promos)
+        banner_css, dot_css, msg, link = promos[idx]
+        return ("promo", banner_css, dot_css, msg, link)
     if now >= WINDOW_OPEN_DATE:
         days_left = (WINDOW_CLOSE_DATE - now).days
         return (
@@ -678,6 +701,7 @@ def build_html() -> str:
     {sidebar_bottom_html}
   </div>
 </div>
+<footer style="text-align:center;padding:40px 16px 28px;color:#8a9e92;font-size:12px;border-top:1px solid #e2e8e4;margin-top:8px">metric11 &middot; <a href="mailto:hello@metric11.com" style="color:#8a9e92;text-decoration:none;border-bottom:1px solid #c5d4ca">hello@metric11.com</a> &middot; <a href="worldcup_2026_predictions.html" style="color:#8a9e92;text-decoration:none;border-bottom:1px solid #c5d4ca">🌍 Dünya Kupası Tahminleri</a></footer>
 <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>"""

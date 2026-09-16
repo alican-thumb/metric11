@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import type { FantasyPlayer } from "@/lib/fantasy-data";
 import { BUDGET, MAX_PER_TEAM, squadCost } from "@/lib/fantasy-rules";
+import { Pitch, PlayerChip, groupByPosition } from "./pitch";
 
 export function TransferPanel({
   squadPlayers,
@@ -24,6 +25,7 @@ export function TransferPanel({
   const squadIds = useMemo(() => new Set(squadPlayers.map((p) => p.transfermarkt_id)), [squadPlayers]);
   const currentCost = squadCost(squadPlayers);
   const outPlayer = squadPlayers.find((p) => p.transfermarkt_id === outId) ?? null;
+  const groups = groupByPosition(squadPlayers);
 
   const byTeamCount: Record<string, number> = {};
   for (const p of squadPlayers) byTeamCount[p.team] = (byTeamCount[p.team] ?? 0) + 1;
@@ -80,34 +82,42 @@ export function TransferPanel({
         </span>
       </div>
 
-      <div>
-        <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-500">Kadrondan çıkar</p>
-        <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
-          {squadPlayers.map((p) => (
-            <button
-              key={p.transfermarkt_id}
-              onClick={() => setOutId(p.transfermarkt_id)}
-              className={`rounded-lg border px-2 py-2 text-left text-xs transition-colors ${
-                outId === p.transfermarkt_id
-                  ? "border-lime-300 bg-lime-300/10 text-lime-300"
-                  : "border-slate-800 bg-slate-900 text-slate-300 hover:border-slate-600"
-              }`}
-            >
-              <div className="truncate font-medium">{p.name}</div>
-              <div className="flex justify-between text-slate-500">
-                <span>{p.position_group}</span>
-                <span>{p.price.toFixed(1)}</span>
-              </div>
-            </button>
-          ))}
-        </div>
-      </div>
+      <p className="text-center text-xs text-slate-400">
+        <span className="font-bold text-lime-300">1.</span> Çıkaracağın oyuncuya dokun (kırmızı{" "}
+        <span className="font-bold text-red-400">×</span> işaretli) &nbsp;→&nbsp;{" "}
+        <span className="font-bold text-lime-300">2.</span> Yerine gelecek oyuncuyu seç
+      </p>
+
+      <Pitch
+        gk={groups.gk}
+        def={groups.def}
+        mid={groups.mid}
+        fwd={groups.fwd}
+        renderChip={(p) => (
+          <PlayerChip
+            key={p.transfermarkt_id}
+            player={p}
+            sublabel={p.price.toFixed(1)}
+            removable
+            dimmed={outId !== null && outId !== p.transfermarkt_id}
+            onClick={() => setOutId(p.transfermarkt_id)}
+          />
+        )}
+      />
 
       {outPlayer && (
-        <div>
-          <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-500">
-            {outPlayer.name} yerine getir ({outPlayer.position_group})
-          </p>
+        <div className="rounded-xl border border-lime-300/30 bg-lime-300/5 p-3">
+          <div className="mb-2 flex items-center justify-between">
+            <p className="text-xs font-semibold uppercase tracking-wide text-lime-300">
+              {outPlayer.name} yerine getir ({outPlayer.position_group})
+            </p>
+            <button
+              onClick={() => setOutId(null)}
+              className="text-xs font-semibold text-slate-500 underline decoration-dotted underline-offset-4 hover:text-slate-300"
+            >
+              Vazgeç
+            </button>
+          </div>
           <div className="max-h-72 space-y-1 overflow-y-auto rounded-xl border border-slate-800 bg-slate-900/40 p-2">
             {candidates.map((p) => (
               <button
@@ -123,7 +133,11 @@ export function TransferPanel({
                 <span className="shrink-0 font-semibold text-lime-300">{p.price.toFixed(1)}</span>
               </button>
             ))}
-            {candidates.length === 0 && <p className="py-4 text-center text-sm text-slate-500">Bütçe/kontenjana uyan aday yok.</p>}
+            {candidates.length === 0 && (
+              <p className="py-4 text-center text-sm text-slate-500">
+                Bütçe/kontenjana uyan aday yok — bu oyuncuyu değil, başka birini çıkarmayı dene.
+              </p>
+            )}
           </div>
         </div>
       )}

@@ -8,7 +8,7 @@ const LINKS = [
   { href: "/", label: "Bu Hafta", authOnly: false, highlight: false },
   { href: "/predictions", label: "Tahminlerim", authOnly: true, highlight: false },
   { href: "/kadro", label: "Kadro Kur", authOnly: false, highlight: false },
-  { href: "/taraftar", label: "Tribün Lideri", authOnly: false, highlight: true },
+  { href: "/taraftar", label: "Amigo Ligi", authOnly: false, highlight: true },
   { href: "/gruplar", label: "Gruplar", authOnly: true, highlight: false },
   { href: "/profil", label: "Profil", authOnly: true, highlight: false },
   { href: "/topluluk", label: "Topluluk Tahminleri", authOnly: false, highlight: false },

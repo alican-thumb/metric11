@@ -155,6 +155,66 @@ def _draw_stat_cards(
         )
 
 
+_BIG_CLUBS = ("GALATASARAY", "FENERBAHÇE", "BEŞİKTAŞ", "TRABZONSPOR")
+
+
+def _pick_featured_match(matches: list[dict]) -> dict | None:
+    """Twitter'da 'merak ettim' hissi uyandıracak TEK maçı seçer — jenerik istatistik
+    yerine somut, doğrulanabilir bir iddia (paylaşım görsellerinin 'basit/ilgi çekmiyor'
+    bulunması üzerine eklendi, 2026-09-16). Öncelik: büyük 4 takımdan biri oynuyorsa VE
+    modelin net bir favorisi varsa (en 'iddialı' iddia en çok tıklama getirir); yoksa
+    ligdeki en yüksek olasılıklı (en 'cesur') tahmine düşer."""
+    unplayed = [m for m in matches if not m.get("is_played")]
+    if not unplayed:
+        return None
+
+    def _top_prob(m: dict) -> float:
+        return max(m.get("home_win_probability") or 0, m.get("draw_probability") or 0, m.get("away_win_probability") or 0)
+
+    big_club_matches = [
+        m for m in unplayed
+        if any(c in (m.get("home_team") or "") or c in (m.get("away_team") or "") for c in _BIG_CLUBS)
+    ]
+    pool = big_club_matches or unplayed
+    return max(pool, key=_top_prob)
+
+
+def _draw_featured_match(draw: "ImageDraw.ImageDraw", match: dict, y: int) -> None:
+    """İki takım adı + kalın 'VS' + tahmin edilen skor + 3'lü olasılık çubuğu."""
+    home = _clean_team(match.get("home_team", ""), max_len=16)
+    away = _clean_team(match.get("away_team", ""), max_len=16)
+    home_p = match.get("home_win_probability") or 0
+    draw_p = match.get("draw_probability") or 0
+    away_p = match.get("away_win_probability") or 0
+    score = match.get("recommended_scoreline") or ""
+
+    font_team = _load_font("Inter-Bold.ttf", 40)
+    font_vs = _load_font("Inter-Bold.ttf", 22)
+    font_score = _load_font("Inter-Bold.ttf", 30)
+    font_pct = _load_font("Inter-SemiBold.ttf", 15)
+
+    draw.text((W // 2 - 130, y), home, font=font_team, fill=_rgb(WHITE), anchor="rm")
+    draw.ellipse([(W // 2 - 26, y - 26), (W // 2 + 26, y + 26)], fill=_rgb(DARK_PANEL), outline=_rgb(LIME), width=2)
+    draw.text((W // 2, y), "VS", font=font_vs, fill=_rgb(LIME), anchor="mm")
+    draw.text((W // 2 + 130, y), away, font=font_team, fill=_rgb(WHITE), anchor="lm")
+
+    if score:
+        draw.text((W // 2, y + 60), f"Tahmin: {score}", font=font_score, fill=_rgb(LIME), anchor="mm")
+
+    # 3'lü olasılık çubuğu (ev/beraberlik/deplasman)
+    bar_w, bar_h, bar_y = 480, 14, y + 110
+    bar_x = (W - bar_w) // 2
+    home_w = int(bar_w * home_p)
+    draw_w = int(bar_w * draw_p)
+    away_w = bar_w - home_w - draw_w
+    draw.rectangle([(bar_x, bar_y), (bar_x + home_w, bar_y + bar_h)], fill=_rgb(LIME))
+    draw.rectangle([(bar_x + home_w, bar_y), (bar_x + home_w + draw_w, bar_y + bar_h)], fill=_rgb(MUTED))
+    draw.rectangle([(bar_x + home_w + draw_w, bar_y), (bar_x + bar_w, bar_y + bar_h)], fill=_rgb(BLUE))
+    draw.text((bar_x, bar_y + 26), f"{home_p*100:.0f}%", font=font_pct, fill=_rgb(LIME), anchor="lm")
+    draw.text((W // 2, bar_y + 26), f"{draw_p*100:.0f}%", font=font_pct, fill=_rgb(MUTED), anchor="mm")
+    draw.text((bar_x + bar_w, bar_y + 26), f"{away_p*100:.0f}%", font=font_pct, fill=_rgb("#5b9bd5"), anchor="rm")
+
+
 def _load_json(filename: str) -> dict | None:
     path = PROCESSED_DIR / filename
     if not path.exists():
@@ -214,37 +274,32 @@ def generate_og_gundem() -> Path | None:
     fonksiyon ana sayfanın GERÇEK güncel içeriğini (hangi hafta, bu haftaki maç
     sayısı, sezon ölçeği) yansıtır."""
     mw = _load_json("match_week_2026_2027.json") or {}
-    fixtures = _load_json("season_fixture_predictions_2026_2027.json") or {}
     matches = mw.get("matches", []) if isinstance(mw, dict) else []
-    match_count = len(matches)
     week = mw.get("week")
-    total_matches = fixtures.get("total_matches", 306) if isinstance(fixtures, dict) else 306
-    total_weeks = fixtures.get("total_weeks", 34) if isinstance(fixtures, dict) else 34
 
     img, draw = _make_base_image()
 
-    _draw_overline(draw, f"HAFTA {week}" if week else "SÜPER LİG 2026-27", 110)
-    _draw_headline(draw, "Süper Lig Tahmin Merkezi", 185, size=64)
+    _draw_overline(draw, f"HAFTA {week}" if week else "SÜPER LİG 2026-27", 100)
+    _draw_headline(draw, "Bu Maçta Ne Olacak?", 165, size=52)
 
-    # 2026-09-11 kararı: burada bilerek "sezon isabeti" yüzdesi GÖSTERİLMİYOR — soğuk
-    # bir Twitter ziyaretçisine ilk izlenimde bağlamsız bir isabet yüzdesi (ör. o anki
-    # gibi %39) yanlış/olumsuz bir sinyal verebilir. Gerçek isabet oranı şeffafça
-    # weekly_evaluation sayfasında duruyor; paylaşım görseli ölçek/kapsam vurgusu yapar.
-    stats = [
-        ("Bu Hafta", str(match_count)),
-        ("Sezon", f"{total_weeks} Hafta"),
-        ("Toplam Maç", str(total_matches)),
-    ]
-    _draw_stat_cards(draw, stats, 370)
-
-    font_lime = _load_font("Inter-SemiBold.ttf", 18)
-    draw.text(
-        (W // 2, 490),
-        "Günlük Güncellenen Maç Önü Analizleri",
-        font=font_lime,
-        fill=_rgb(LIME),
-        anchor="mm",
-    )
+    # 2026-09-16 kararı: jenerik "kaç maç var" istatistiği yerine SOMUT, doğrulanabilir
+    # tek bir iddia (öne çıkan maç + tahmin edilen skor + olasılık) — kullanıcı geri
+    # bildirimi: paylaşım görselleri "basit, merak uyandırmıyor" bulundu. Featured maç
+    # yoksa (sezon arası) eski jenerik istatistik kartlarına düşer.
+    featured = _pick_featured_match(matches)
+    if featured:
+        _draw_featured_match(draw, featured, 300)
+        font_lime = _load_font("Inter-SemiBold.ttf", 17)
+        draw.text((W // 2, 470), "Tüm hafta için maç önü analizleri →", font=font_lime, fill=_rgb(LIME), anchor="mm")
+    else:
+        stats = [
+            ("Bu Hafta", str(len(matches))),
+            ("Sezon", "34 Hafta"),
+            ("Toplam Maç", "306"),
+        ]
+        _draw_stat_cards(draw, stats, 370)
+        font_lime = _load_font("Inter-SemiBold.ttf", 18)
+        draw.text((W // 2, 490), "Günlük Güncellenen Maç Önü Analizleri", font=font_lime, fill=_rgb(LIME), anchor="mm")
 
     out = OG_DIR / "og_gundem.png"
     img.save(str(out), "PNG")
@@ -754,6 +809,111 @@ def generate_og_league_intelligence() -> Path | None:
     return out
 
 
+def _pick_featured_european_match(data: dict) -> tuple[dict, str] | None:
+    """CL/EL/ECL'in üçünden en 'merak uyandırıcı' tek maçı seçer — Türk kulübü
+    oynuyorsa öncelik, yoksa en cesur (en yüksek olasılıklı) tahmine düşer. Dönen
+    dict, `_draw_featured_match`'in beklediği ortak şekle (home_team/away_team/
+    home_win_probability/...) burada adapte edilir."""
+    comps = data.get("competitions", {}) if isinstance(data, dict) else {}
+    candidates: list[tuple[dict, str, bool]] = []
+    for code, comp in comps.items():
+        for m in comp.get("predictions", []):
+            if m.get("status") == "FINISHED" or not m.get("prediction"):
+                continue
+            home_name = (m.get("home") or {}).get("name", "")
+            away_name = (m.get("away") or {}).get("name", "")
+            is_turkish = any(
+                c.lower() in home_name.lower() or c.lower() in away_name.lower()
+                for c in ("beşiktaş", "besiktas", "fenerbahçe", "fenerbahce", "galatasaray", "trabzonspor")
+            )
+            candidates.append((m, code, is_turkish))
+    if not candidates:
+        return None
+
+    turkish = [c for c in candidates if c[2]]
+    pool = turkish or candidates
+
+    def _top_prob(item: tuple[dict, str, bool]) -> float:
+        p = item[0]["prediction"]
+        return max(p.get("home_win", 0), p.get("draw", 0), p.get("away_win", 0))
+
+    m, code, _ = max(pool, key=_top_prob)
+    p = m["prediction"]
+    score = p.get("predicted_score") or {}
+    adapted = {
+        "home_team": (m.get("home") or {}).get("name", ""),
+        "away_team": (m.get("away") or {}).get("name", ""),
+        "home_win_probability": p.get("home_win", 0),
+        "draw_probability": p.get("draw", 0),
+        "away_win_probability": p.get("away_win", 0),
+        "recommended_scoreline": f"{score.get('home', '?')}-{score.get('away', '?')}" if score else "",
+    }
+    return adapted, code
+
+
+def generate_og_european() -> Path | None:
+    """Avrupa Ligi sayfası (european_predictions_2026_2027.html) — önceden hiç kendine
+    ait görseli yoktu, jenerik og-image.png kullanıyordu (2026-09-16 kullanıcı
+    geri bildirimi: 'her sayfanın sayfaya has görseli olmalı')."""
+    data = _load_json("european_predictions_2026_2027.json")
+    if data is None:
+        return None
+    picked = _pick_featured_european_match(data)
+
+    img, draw = _make_base_image()
+    _draw_overline(draw, "UEFA KUPALARI", 100)
+    _draw_headline(draw, "Avrupa'da Bu Hafta", 165, size=52)
+
+    if picked:
+        match, code = picked
+        _draw_featured_match(draw, match, 300)
+        comp_label = {"CL": "Şampiyonlar Ligi", "EL": "Avrupa Ligi", "ECL": "Konferans Ligi"}.get(code, code)
+        font_lime = _load_font("Inter-SemiBold.ttf", 17)
+        draw.text((W // 2, 470), f"UEFA {comp_label} tahminleri →", font=font_lime, fill=_rgb(LIME), anchor="mm")
+    else:
+        _draw_subtext(draw, "Şampiyonlar Ligi · Avrupa Ligi · Konferans Ligi", 300)
+        font_lime = _load_font("Inter-SemiBold.ttf", 18)
+        draw.text((W // 2, 350), "Türk kulüp takibi ve günlük güncellenen tahminler", font=font_lime, fill=_rgb(LIME), anchor="mm")
+
+    _draw_bottom_url(draw, "metric11.com/european_predictions_2026_2027.html")
+    out = OG_DIR / "og_european.png"
+    img.save(str(out), "PNG")
+    return out
+
+
+def generate_og_weekly_evaluation() -> Path | None:
+    """Haftalık Karne sayfası — önceden hiç kendine ait görseli yoktu. 'İsabet %39'
+    gibi ham bir sayı yerine (bkz. og_gundem kararı — bağlamsız düşük yüzde olumsuz
+    ilk izlenim verebilir) HIGH güven bandının isabetini öne çıkarır — hâlâ dürüst
+    ama daha güçlü bir iddia (2026-09-16)."""
+    data = _load_json("weekly_evaluation_2026_2027.json")
+    if data is None:
+        return None
+    summary = data.get("summary", {})
+    if not summary.get("evaluated_matches"):
+        return None
+
+    img, draw = _make_base_image()
+    _draw_overline(draw, f"HAFTA {data.get('last_played_week', '')}", 100)
+    _draw_headline(draw, "Model Ne Kadar Tuttu?", 175, size=52)
+
+    high = (summary.get("confidence_breakdown") or {}).get("HIGH") or {}
+    stats = [
+        ("Genel İsabet", f"%{round((summary.get('accuracy') or 0) * 100)}"),
+        ("Yüksek Güven", f"%{round((high.get('accuracy') or 0) * 100)}" if high.get("matches") else "—"),
+        ("Değerlendirilen", str(summary.get("evaluated_matches", 0))),
+    ]
+    _draw_stat_cards(draw, stats, 340)
+
+    font_lime = _load_font("Inter-SemiBold.ttf", 17)
+    draw.text((W // 2, 460), "Haftalık tahmin karnesini incele →", font=font_lime, fill=_rgb(LIME), anchor="mm")
+
+    _draw_bottom_url(draw, "metric11.com/weekly_evaluation_2026_2027.html")
+    out = OG_DIR / "og_weekly_evaluation.png"
+    img.save(str(out), "PNG")
+    return out
+
+
 def main() -> None:
     if not _PIL_AVAILABLE:
         print("ERROR: Pillow is not installed. Run: pip install Pillow")
@@ -766,6 +926,8 @@ def main() -> None:
         ("og_blueprints.png", generate_og_blueprints),
         ("og_transfer_recommendation.png", generate_og_transfer_recommendation),
         ("og_league_intelligence.png", generate_og_league_intelligence),
+        ("og_european.png", generate_og_european),
+        ("og_weekly_evaluation.png", generate_og_weekly_evaluation),
     ]
 
     for name, func in generators:

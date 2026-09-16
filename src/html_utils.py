@@ -117,7 +117,7 @@ def _nav_link_list() -> list[tuple[str, str]]:
         ("⚽ Avrupa", "european_predictions_2026_2027.html"),
         ("🎮 Tahmin Oyunu", "/tahmin"),
         ("🏆 Kadro Kur", "https://tahmin.metric11.com/kadro"),
-        ("📣 Tribün Lideri", "https://tahmin.metric11.com/taraftar"),
+        ("🔥 Amigo Ligi", "https://tahmin.metric11.com/taraftar"),
     ]
     return links
 
@@ -125,6 +125,22 @@ def _nav_link_list() -> list[tuple[str, str]]:
 # Transfer penceresi kapandığı için (bkz. build_product_home.py::_WINDOW_CLOSE)
 # "Transferler" linki kaldırıldı — kullanıcı bulgusu: sezon içinde bayat/gereksiz
 # duruyordu. Yerine iki oyunu (Tahmin Oyunu + Kadro Kur) eşit ağırlıkta öne çıkarıyoruz.
+# Yeni özellik lansmanlarında birkaç gün süren dikkat çekici bir rozet — kullanıcı
+# geri bildirimi (2026-09-16): "yeni özelliklerimiz daha dikkat çekici olmalı".
+# Süre dolunca kod değişikliği gerekmeden otomatik kayboluyor (tarih bazlı).
+_NEW_BADGE_WINDOW_DAYS = 10
+_NEW_BADGES = {
+    "https://tahmin.metric11.com/taraftar": date(2026, 9, 16),
+}
+
+
+def _new_badge_html(href: str) -> str:
+    launch = _NEW_BADGES.get(href)
+    if not launch or (date.today() - launch).days > _NEW_BADGE_WINDOW_DAYS:
+        return ""
+    return ' <span style="background:#fb923c;color:#1a0d08;font-size:9px;font-weight:800;padding:1px 5px;border-radius:8px;vertical-align:middle">YENİ</span>'
+
+
 def nav_links_html(active: str = "") -> str:
     """Sadece <a> etiketlerini döner (sarmalayıcı <nav> yok) — kendi topbar/nav
     markup'ını ve CSS'ini koruyan sayfalarda link listesini güncel tutmak için."""
@@ -135,9 +151,9 @@ def nav_links_html(active: str = "") -> str:
 
     links = _nav_link_list()
     return "".join(
-        f'<a href="{href}" class="active"{_attrs(label, href)}>{label}</a>'
+        f'<a href="{href}" class="active"{_attrs(label, href)}>{label}{_new_badge_html(href)}</a>'
         if label == active or href == active
-        else f'<a href="{href}"{_attrs(label, href)}>{label}</a>'
+        else f'<a href="{href}"{_attrs(label, href)}>{label}{_new_badge_html(href)}</a>'
         for label, href in links
     )
 

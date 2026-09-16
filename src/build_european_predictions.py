@@ -646,7 +646,8 @@ def build_page(data: dict) -> str:
   <meta name="description" content="UEFA Şampiyonlar Ligi, Avrupa Ligi ve Konferans Ligi 2026-27 maç tahminleri — Fenerbahçe, Galatasaray, Beşiktaş takibi. Günlük güncellenen analiz platformu.">
   <meta property="og:title" content="Avrupa Kupası Tahminleri 2026-27 | metric11">
   <meta property="og:description" content="UCL, UEL, UECL 2026-27 maç tahminleri ve Türk kulüp takibi.">
-  <meta property="og:image" content="https://metric11.com/og-image.png">
+  <meta property="og:image" content="https://metric11.com/og_european.png">
+  <meta name="twitter:image" content="https://metric11.com/og_european.png">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://metric11.com/european_predictions_2026_2027.html">
   <meta name="twitter:card" content="summary_large_image">

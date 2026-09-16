@@ -117,14 +117,19 @@ export const fantasyTransferLog = pgTable("fantasy_transfer_log", {
   createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
 });
 
-// --- Taraftar Sayacı (Fan Counter) ---
+// --- Amigo Ligi (Taraftar Sayacı / Fan Counter) ---
 // memleket.lol'un tekrar-tıklanabilir/anonim oy savaşı YERİNE: hesap başına tek satır
 // (istenirse değiştirilebilir) bir takım seçimi — "kaç kullanıcı bu takımı destekliyor"
 // anlamına gelsin diye, spam/bot riskini de ortadan kaldırsın diye böyle tasarlandı.
+// `link`: memleket.lol'daki parasal "Ağa" sisteminin YERİNE — o takımı seçenler arasında
+// SİTE LEADERBOARD PUANI en yüksek kişi o takımın "Amigo"su sayılır (bkz. lib/fanclub.ts),
+// dinamik olarak hesaplanır (satırda tutulmaz); bu link o kişi Amigo OLDUĞUNDA gösterilen,
+// tıklanınca yeni sekmede açılan opsiyonel bir sosyal medya/profil linkidir.
 export const fanPicks = pgTable("fan_picks", {
   id: serial("id").primaryKey(),
   userId: integer("user_id").notNull().references(() => users.id),
   team: text("team").notNull(),
+  link: text("link"),
   createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
   updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
 }, (table) => ({
