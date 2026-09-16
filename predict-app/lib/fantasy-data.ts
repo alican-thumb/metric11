@@ -82,6 +82,13 @@ export async function getPlayersById(): Promise<Map<string, FantasyPlayer>> {
   return new Map(pool.players.map((p) => [p.transfermarkt_id, p]));
 }
 
+// Taraftar Sayacı için: ayrı bir hardcoded takım listesi tutmak yerine, zaten canlı/cache'li
+// olan oyuncu havuzundan güncel 18 takımı türetiyoruz (sezon içi küme düşme/çıkma otomatik yansır).
+export async function getSuperLigTeams(): Promise<string[]> {
+  const pool = await getPlayerPool();
+  return [...new Set(pool.players.map((p) => p.team))].sort();
+}
+
 export async function getGameweekScores(): Promise<GameweekScoresPayload> {
   if (scoresCache && Date.now() - scoresCache.fetchedAt < CACHE_TTL_MS) return scoresCache.data;
   const res = await fetch(`${METRIC11_BASE_URL}/fantasy_gameweek_scores_2026_2027.json`, { cache: "no-store" });

@@ -116,3 +116,17 @@ export const fantasyTransferLog = pgTable("fantasy_transfer_log", {
   penalized: boolean("penalized").notNull().default(false),
   createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
 });
+
+// --- Taraftar Sayacı (Fan Counter) ---
+// memleket.lol'un tekrar-tıklanabilir/anonim oy savaşı YERİNE: hesap başına tek satır
+// (istenirse değiştirilebilir) bir takım seçimi — "kaç kullanıcı bu takımı destekliyor"
+// anlamına gelsin diye, spam/bot riskini de ortadan kaldırsın diye böyle tasarlandı.
+export const fanPicks = pgTable("fan_picks", {
+  id: serial("id").primaryKey(),
+  userId: integer("user_id").notNull().references(() => users.id),
+  team: text("team").notNull(),
+  createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+  updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
+}, (table) => ({
+  userIdIdx: uniqueIndex("fan_picks_user_id_idx").on(table.userId),
+}));

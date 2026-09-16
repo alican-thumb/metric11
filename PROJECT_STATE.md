@@ -3205,3 +3205,17 @@ sezon bitene kadar bu kısıtla yaşamak) gerekir. Kesinleştirmek için kullan�
 api-football.com hesabından plan/sezon kapsamını kontrol etmesi gerekiyor.
 
 **3) memleket.lol incelendi (kullanıcı fikri: "taraftar sayısı" özelliği).** Mekanik: 81 il, oy bazlı sıralama (IP/cookie, giriş gerekmiyor), her oyda "fiyat" +1 artan bir "Ağa" (sponsor) sistemi ile gerçek para monetizasyonu, canlı harita, bölgesel filtre, minimalist tablo UI. Süper Lig'e uyarlanmış hali ("takım başına taraftar oyu/sayacı, canlı sıralama") henüz TASARLANMADI/UYGULANMADI — kullanıcıya öneri sunuldu (mevcut Clerk/Neon altyapısı reuse edilebilir, basit bir oy+sayaç tablosu düşük efor; parasal "Ağa" katmanı ayrı bir karar), onay bekleniyor.
+
+### 2026-09-16 (devam) — Taraftar Sayacı özelliği inşa edildi (predict-app)
+
+Kullanıcı memleket.lol'un mekaniğini sade (parasız, haritasız, bölge filtresiz) şekilde Süper Lig'e uyarlamak istedi. AskUserQuestion ile mekanik netleştirildi: memleket.lol'un tekrar-tıklanabilir/anonim oy savaşı YERİNE, hesapla giriş yapıp bir takımı seçen (istenirse değiştirilebilen) tek-seçimlik bir taraftar sayımı — spam/bot riski yok, mevcut Clerk/Neon/Drizzle altyapısı birebir reuse edildi.
+
+- **Şema:** `fan_picks` (`db/schema.ts`) — `user_id` üzerinde unique index (kullanıcı başına tek satır, "oy logu" değil "seçim"). `drizzle-kit push` ile canlı Neon DB'ye uygulandı, `information_schema.columns` ile doğrulandı.
+- **Takım listesi:** Yeni hardcoded liste YOK — `lib/fantasy-data.ts::getSuperLigTeams()` (yeni) zaten cache'li `getPlayerPool()`'dan 18 takımı türetiyor (küme düşme/çıkma otomatik yansır).
+- **Ortak mantık:** `lib/fanclub.ts::getFanClubStandings()` (yeni) — hem API route hem sayfa aynı fonksiyonu çağırıyor (kod tekrarı yok), sıfır oylu takımları da dahil ediyor, yüzde/toplam hesaplıyor.
+- **API:** `app/api/fanclub/route.ts` (yeni) — GET herkese açık (`getFanClubStandings`), POST `getOrCreateUser()` ile auth zorunlu, `team` gerçek 18 takım kümesinde değilse 400, `onConflictDoUpdate` ile upsert (takım değişince eski seçim otomatik düşer).
+- **Sayfa:** `app/taraftar/page.tsx` (yeni, `proxy.ts`'e eklenmedi — herkese açık, `/kadro` deseniyle aynı: görmek serbest, seçmek giriş ister). Basit sıralı bar listesi (logo/harita/bölge filtresi yok). `components/fanclub/team-picker.tsx` (yeni, client) — `transfer-panel.tsx`'teki fetch+`router.refresh()` deseni.
+- **Nav:** `components/nav-bar.tsx`'e "Taraftar Sayacı" eklendi, yanıp-sönen `highlight:true` rozeti "Kadro Kur"dan bu yeni özelliğe taşındı (lansman vurgusu).
+- **Doğrulama:** `tsc`/`eslint`/`next build` temiz (`/taraftar`, `/api/fanclub` route'ları derlendi). Gerçek Neon DB'ye karşı geçici bir script ile insert+upsert davranışı doğrulandı (test kullanıcısı/kaydı hemen temizlendi) — bu kez auto-mode classifier engellemedi (önceki oturumdaki reset-squad denemesinden farklı olarak). Clerk yerel girişi hâlâ bozuk olduğu için tam tarayıcı E2E testi yapılamadı (bilinen sınırlama).
+- **Kapsam dışı bırakılan (bilinçli):** Parasal "Ağa" katmanı, canlı harita, bölgesel filtre, geçmiş lider tarihçesi, gerçek zamanlı polling/WebSocket, ana statik sitede promosyon banner'ı.
+- Değişen/yeni dosyalar: `predict-app/db/schema.ts`, `predict-app/lib/fantasy-data.ts`, `predict-app/lib/fanclub.ts` (yeni), `predict-app/app/api/fanclub/route.ts` (yeni), `predict-app/app/taraftar/page.tsx` (yeni), `predict-app/components/fanclub/team-picker.tsx` (yeni), `predict-app/components/nav-bar.tsx`.
