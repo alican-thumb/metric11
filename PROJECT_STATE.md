@@ -3195,4 +3195,13 @@ Otomasyon kontrolünde önce bu dosya okundu, ardından çalışma ağacı, `dat
 - **Kullanıcıdan istenen aksiyon:** api-football.com hesap panelinden `API_FOOTBALL_KEY`'in plan/kota/geçerlilik durumu kontrol edilmeli. Anahtar sorunuysa yenilenince hem EL/ECL fikstürleri hem Süper Lig kadro fallback'i otomatik düzelecek (kod tarafında ek değişiklik gerekmiyor).
 - **Sonraki adım (kod tarafı, düşük öncelik):** `collect_european_fixtures.py`/`collect_transfermarkt_league_squads.py`'deki `get_url`/API-Football çağrılarına gerçek HTTP durum kodunu (401 vs 429 vs boş) log'a/JSON'a yazan bir iyileştirme eklenebilir — şu an "boş döndü" ile "anahtar geçersiz" ayrımı görünmüyor, bir sonraki benzer arızada teşhisi hızlandırır.
 
+**Düzeltme/ek bağlam (hemen ardından fark edildi):** Yukarıdaki "anahtar geçersiz/süresi
+dolmuş olabilir" varsayımı muhtemelen yanlış — [[project_transfermarkt_integration]]
+memory'sinde zaten 2026-09-07 tarihli bir not var: "API-Football fallback da **ücretsiz
+plan sezon kısıtı** yüzünden devreye giremiyordu". Yani muhtemel gerçek sebep anahtarın
+bozuk olması değil, API-Football'ın mevcut planının **2026 sezonuna (`season=2026`)
+erişim vermemesi** — bu durumda anahtarı yenilemek değil, planı yükseltmek (veya
+sezon bitene kadar bu kısıtla yaşamak) gerekir. Kesinleştirmek için kullanıcının
+api-football.com hesabından plan/sezon kapsamını kontrol etmesi gerekiyor.
+
 **3) memleket.lol incelendi (kullanıcı fikri: "taraftar sayısı" özelliği).** Mekanik: 81 il, oy bazlı sıralama (IP/cookie, giriş gerekmiyor), her oyda "fiyat" +1 artan bir "Ağa" (sponsor) sistemi ile gerçek para monetizasyonu, canlı harita, bölgesel filtre, minimalist tablo UI. Süper Lig'e uyarlanmış hali ("takım başına taraftar oyu/sayacı, canlı sıralama") henüz TASARLANMADI/UYGULANMADI — kullanıcıya öneri sunuldu (mevcut Clerk/Neon altyapısı reuse edilebilir, basit bir oy+sayaç tablosu düşük efor; parasal "Ağa" katmanı ayrı bir karar), onay bekleniyor.
