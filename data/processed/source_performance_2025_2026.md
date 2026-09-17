@@ -1,10 +1,10 @@
 # Erken Haber Kaynak Performansı
 
-- Transfer sinyali: 29
+- Transfer sinyali: 30
 - Resmi olaya dönüşen transfer: 14
 - Yayın zamanı bulunan resmi teyit: 5/14
 - İlk görülme zamanı bulunan resmi teyit: 14/14
-- Ölçülen kaynak: 185 / gözlenen kaynak: 311
+- Ölçülen kaynak: 187 / gözlenen kaynak: 311
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 3
 - X verisi bekleyen izlenen kaynak: 20
@@ -12,7 +12,7 @@
 
 ## Kanal Kapsamı
 
-- Google News: 200 haber, 30/30 başarılı sorgu.
+- Google News: 201 haber, 30/30 başarılı sorgu.
 - Telegram: 6 mesaj, 8/8 erişilebilir kanal.
 - X: durum=MISSING_CREDENTIALS, gönderi=0, yapılandırılmış hesap=45.
 
@@ -152,6 +152,7 @@
 | gazetegercek.com.tr | MEDIA | 3 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | haberturk.com | MEDIA | 3 | 3 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | mansethaber.com | MEDIA | 3 | 2 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| ntv.com.tr | MEDIA | 3 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | samsunhaber.com | MEDIA | 3 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | t24.com.tr | MEDIA | 3 | 2 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | yenisafak.com | MEDIA | 3 | 2 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
@@ -180,6 +181,7 @@
 | kayserihaber.com.tr | MEDIA | 2 | 2 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | mackolik.com | MEDIA | 2 | 2 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | takagazete.com.tr | MEDIA | 2 | 2 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| takvim.com.tr | MEDIA | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | 2mart.com.tr | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Afyon Haber | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Akdenizmanset | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
@@ -240,7 +242,6 @@
 | sozcu.com.tr | MEDIA | 4 | 0 | 0 | — | — | — | — | OBSERVING |
 | Bugün Kocaeli Gazetesi | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
 | haber61.net | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
-| ntv.com.tr | MEDIA | 3 | 1 | 0 | — | — | — | — | OBSERVING |
 | 24saatgazetesi.com | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | 61saat.com | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Anadolu'da Bugün | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
@@ -262,7 +263,6 @@
 | Yüksekova Haber | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | aksam.com.tr | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | instagram.com | MEDIA | 2 | 1 | 0 | — | — | — | — | OBSERVING |
-| takvim.com.tr | MEDIA | 2 | 1 | 0 | — | — | — | — | OBSERVING |
 | yenicaggazetesi.com | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | 12punto | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | 5 Ocak Gazetesi | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
