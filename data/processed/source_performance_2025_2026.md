@@ -1,18 +1,18 @@
 # Erken Haber Kaynak Performansı
 
-- Transfer sinyali: 30
+- Transfer sinyali: 26
 - Resmi olaya dönüşen transfer: 14
 - Yayın zamanı bulunan resmi teyit: 5/14
 - İlk görülme zamanı bulunan resmi teyit: 14/14
-- Ölçülen kaynak: 187 / gözlenen kaynak: 311
+- Ölçülen kaynak: 191 / gözlenen kaynak: 312
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 3
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 4170
+- Defterde korunan ilk iddia gözlemi: 4174
 
 ## Kanal Kapsamı
 
-- Google News: 201 haber, 30/30 başarılı sorgu.
+- Google News: 192 haber, 30/30 başarılı sorgu.
 - Telegram: 6 mesaj, 8/8 erişilebilir kanal.
 - X: durum=MISSING_CREDENTIALS, gönderi=0, yapılandırılmış hesap=45.
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 4167 | 1336 | 5 | — | 0.3 | %99.6 | 0.3 | FIRST_SEEN_BOUND |
+| Google News / medya | 4171 | 1339 | 5 | — | 0.3 | %99.6 | 0.3 | FIRST_SEEN_BOUND |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -58,12 +58,12 @@
 | Takvim | MEDIA | 262 | 29 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Aksam Spor | MEDIA | 194 | 16 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Haberturk Spor | MEDIA | 162 | 14 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| NTVSpor | MEDIA | 107 | 26 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | GZT | MEDIA | 106 | 32 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
-| NTVSpor | MEDIA | 106 | 25 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Fanatik | MEDIA | 103 | 34 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Sporx.com | MEDIA | 100 | 80 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Milliyet | MEDIA | 99 | 26 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
-| Son Dakika | MEDIA | 95 | 64 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Son Dakika | MEDIA | 96 | 64 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Ajansspor | MEDIA | 91 | 38 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | A SPOR | MEDIA | 76 | 29 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Anadolu Ajansı Spor | AGENCY | 76 | 20 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
@@ -71,7 +71,7 @@
 | Taka Gazete | MEDIA | 67 | 53 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | SonDakika | MEDIA | 57 | 34 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Haberler | MEDIA | 52 | 29 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
-| A Spor | MEDIA | 46 | 17 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| A Spor | MEDIA | 47 | 18 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Gazete Vatan | MEDIA | 46 | 3 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | beinsports.com.tr | MEDIA | 41 | 11 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Haber 7 | MEDIA | 35 | 6 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
@@ -192,6 +192,7 @@
 | Bundle | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Bursa Hakimiyet | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Canlı Gaste | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Doğruhaber | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Ege Postası | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Gaziantep Söz | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Giresun İleri Gazetesi | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
@@ -199,9 +200,11 @@
 | Güneydoğu Ekspres | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Güneysu53 | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Haber 1 | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Haber S Balıkesir | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Hentbolhaber.Net | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Internet Haber | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | KAYSERİ YEREL HABER | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Kahta Haber Postası | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Kanal 3 Tv | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Kocaeli Kent Gazetesi | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Malta Haber | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
@@ -224,6 +227,7 @@
 | haberege.com.tr | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | habername.com | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | ilkses.com.tr | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| kahtahaberpostasi.com | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | kayseriyerelhaber.com | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | medyasiyahbeyaz.com | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | ngazete.com | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
@@ -279,7 +283,6 @@
 | Bursada Bugün | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | CGTN Türk | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Denizli Haber | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
-| Doğruhaber | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | Ekonomim | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Erhan Gülenç | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | Erzurum Gazetesi | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
@@ -290,10 +293,8 @@
 | Gunebakış | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Haber Ekspres | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Haber Gündemim | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
-| Haber S Balıkesir | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | Haber Vakti | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Haber3 | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
-| Kahta Haber Postası | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | Karaman Gündem | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | Kars Manşet | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Kuzey Ekspres | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
@@ -334,7 +335,6 @@
 | halktv.com.tr | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | iha.com.tr | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | istanbulticaretgazetesi.com | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
-| kahtahaberpostasi.com | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | karamangundem.com | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | kayserihaber.com | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | kocaelibarisgazetesi.com | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
@@ -349,6 +349,7 @@
 | samsunilkhaber.com.tr | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | samsunkenthaber.com.tr | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | star.com.tr | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
+| superhaber.com | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | tr.investing.com | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | tv100 Haber | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | yenialanya.com | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
