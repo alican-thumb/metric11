@@ -6,13 +6,12 @@
 - Otomatik ceza sinyali: 11
 - Manuel kayıt: 0
 - Güncel haber/sakat-cezalı sinyali: 0
-- Haber istihbaratı sinyali: 2
+- Haber istihbaratı sinyali: 1
 - Not: Kırmızı/çift sarı için sonraki maç cezası varsayılır. Sarı kart birikimi 4 kartta 1 maç varsayımıdır; resmi ceza listesiyle doğrulanmalıdır.
 
 ## Güncel Haber/Sakat-Cezalı Bağlamı
 
 - INJURED | UĞUR KAAN YILDIZ | kaynak=news_intelligence | güven=MEDIUM
-- SUSPENDED | UĞUR KAAN YILDIZ | kaynak=news_intelligence | güven=MEDIUM
 
 ## Maç Bazlı Eksikler
 
