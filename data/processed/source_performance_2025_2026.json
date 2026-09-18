@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-17T21:22:11.508976+00:00",
+  "generated_at": "2026-09-18T00:17:15.641767+00:00",
   "season": "2025_2026",
   "maturity_days": 14,
   "summary": {
-    "transfer_signals": 23,
+    "transfer_signals": 20,
     "official_events": 14,
     "official_events_with_timestamp": 5,
     "official_events_with_first_observed_timestamp": 14,
@@ -12,11 +12,11 @@
     "measured_lead_times": 0,
     "first_seen_lead_times": 3,
     "tracked_x_sources_waiting": 20,
-    "retained_claim_observations": 4182
+    "retained_claim_observations": 4183
   },
   "provider_coverage": {
     "google_news": {
-      "articles": 184,
+      "articles": 183,
       "queries": 30,
       "successful_queries": 30
     },
@@ -36,8 +36,8 @@
       "source": "Google News / medya",
       "source_tier": "CHANNEL",
       "source_type": "media",
-      "observations": 4179,
-      "scoreable_claims": 1342,
+      "observations": 4180,
+      "scoreable_claims": 1343,
       "official_conversions": 5,
       "lead_hours": [],
       "first_seen_lead_hours": [
@@ -47,7 +47,7 @@
       ],
       "lead_time_unavailable": 2,
       "matured_unconfirmed": 1224,
-      "pending_claims": 113,
+      "pending_claims": 114,
       "unresolved_claims": 2837,
       "status": "FIRST_SEEN_BOUND",
       "score": 0.3,
@@ -765,6 +765,26 @@
       "false_alarm_proxy_pct": 100.0
     },
     {
+      "source": "T24",
+      "source_tier": "MEDIA",
+      "source_type": "google_news",
+      "observations": 27,
+      "scoreable_claims": 14,
+      "official_conversions": 0,
+      "lead_hours": [],
+      "first_seen_lead_hours": [],
+      "lead_time_unavailable": 0,
+      "matured_unconfirmed": 10,
+      "pending_claims": 4,
+      "unresolved_claims": 13,
+      "status": "PARTIAL_MEASUREMENT",
+      "score": 0.0,
+      "average_lead_hours": null,
+      "average_first_seen_lead_hours": null,
+      "official_conversion_rate_pct": 0.0,
+      "false_alarm_proxy_pct": 100.0
+    },
+    {
       "source": "HaberTS",
       "source_tier": "MEDIA",
       "source_type": "google_news",
@@ -777,26 +797,6 @@
       "matured_unconfirmed": 15,
       "pending_claims": 2,
       "unresolved_claims": 9,
-      "status": "PARTIAL_MEASUREMENT",
-      "score": 0.0,
-      "average_lead_hours": null,
-      "average_first_seen_lead_hours": null,
-      "official_conversion_rate_pct": 0.0,
-      "false_alarm_proxy_pct": 100.0
-    },
-    {
-      "source": "T24",
-      "source_tier": "MEDIA",
-      "source_type": "google_news",
-      "observations": 26,
-      "scoreable_claims": 13,
-      "official_conversions": 0,
-      "lead_hours": [],
-      "first_seen_lead_hours": [],
-      "lead_time_unavailable": 0,
-      "matured_unconfirmed": 10,
-      "pending_claims": 3,
-      "unresolved_claims": 13,
       "status": "PARTIAL_MEASUREMENT",
       "score": 0.0,
       "average_lead_hours": null,
