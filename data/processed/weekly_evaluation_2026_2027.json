@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T14:32:08.774353",
+  "generated_at": "2026-09-18T16:23:32.967969",
   "season": "2026-2027",
   "summary": {
     "evaluated_matches": 45,
@@ -20,18 +20,18 @@
         "calibration_gap": -0.0568
       },
       "MEDIUM": {
-        "matches": 17,
-        "correct": 2,
-        "accuracy": 0.1176,
-        "avg_stated_probability": 0.4603,
-        "calibration_gap": -0.3427
+        "matches": 18,
+        "correct": 3,
+        "accuracy": 0.1667,
+        "avg_stated_probability": 0.4589,
+        "calibration_gap": -0.2922
       },
       "LOW": {
-        "matches": 13,
-        "correct": 7,
-        "accuracy": 0.5385,
-        "avg_stated_probability": 0.3787,
-        "calibration_gap": 0.1598
+        "matches": 12,
+        "correct": 6,
+        "accuracy": 0.5,
+        "avg_stated_probability": 0.3784,
+        "calibration_gap": 0.1216
       }
     }
   },
@@ -57,18 +57,18 @@
           "calibration_gap": -0.1175
         },
         "MEDIUM": {
-          "matches": 4,
+          "matches": 3,
           "correct": 0,
           "accuracy": 0.0,
-          "avg_stated_probability": 0.447,
-          "calibration_gap": -0.447
+          "avg_stated_probability": 0.4483,
+          "calibration_gap": -0.4483
         },
         "LOW": {
-          "matches": 1,
+          "matches": 2,
           "correct": 1,
-          "accuracy": 1.0,
-          "avg_stated_probability": 0.287,
-          "calibration_gap": 0.713
+          "accuracy": 0.5,
+          "avg_stated_probability": 0.3545,
+          "calibration_gap": 0.1455
         }
       }
     },
@@ -116,10 +116,10 @@
         "raw_predicted": "home",
         "correct": false,
         "data_confidence": "PLAYED",
-        "prediction_confidence": "MEDIUM",
-        "home_win_probability": 0.443,
-        "draw_probability": 0.214,
-        "away_win_probability": 0.342
+        "prediction_confidence": "LOW",
+        "home_win_probability": 0.422,
+        "draw_probability": 0.216,
+        "away_win_probability": 0.363
       },
       {
         "match_id": "317822",
@@ -251,8 +251,8 @@
             "matches": 3,
             "correct": 2,
             "accuracy": 0.6667,
-            "avg_stated_probability": 0.3683,
-            "calibration_gap": 0.2984
+            "avg_stated_probability": 0.3713,
+            "calibration_gap": 0.2954
           }
         }
       },
@@ -392,14 +392,14 @@
           "away_team": "GÖZTEPE A.Ş.",
           "actual_score": "3 - 3",
           "actual": "draw",
-          "predicted": "home",
-          "raw_predicted": "home",
+          "predicted": "away",
+          "raw_predicted": "away",
           "correct": false,
           "data_confidence": "PLAYED",
           "prediction_confidence": "LOW",
-          "home_win_probability": 0.411,
+          "home_win_probability": 0.389,
           "draw_probability": 0.191,
-          "away_win_probability": 0.398
+          "away_win_probability": 0.42
         }
       ]
     },
@@ -424,18 +424,18 @@
             "calibration_gap": 0.103
           },
           "MEDIUM": {
-            "matches": 5,
+            "matches": 6,
             "correct": 0,
             "accuracy": 0.0,
-            "avg_stated_probability": 0.4758,
-            "calibration_gap": -0.4758
+            "avg_stated_probability": 0.469,
+            "calibration_gap": -0.469
           },
           "LOW": {
-            "matches": 1,
+            "matches": 0,
             "correct": 0,
-            "accuracy": 0.0,
-            "avg_stated_probability": 0.414,
-            "calibration_gap": -0.414
+            "accuracy": null,
+            "avg_stated_probability": null,
+            "calibration_gap": null
           }
         }
       },
@@ -467,10 +467,10 @@
           "raw_predicted": "home",
           "correct": false,
           "data_confidence": "PLAYED",
-          "prediction_confidence": "LOW",
-          "home_win_probability": 0.414,
+          "prediction_confidence": "MEDIUM",
+          "home_win_probability": 0.435,
           "draw_probability": 0.218,
-          "away_win_probability": 0.368
+          "away_win_probability": 0.347
         },
         {
           "match_id": "317798",
@@ -607,18 +607,18 @@
             "calibration_gap": -0.092
           },
           "MEDIUM": {
-            "matches": 2,
-            "correct": 2,
+            "matches": 3,
+            "correct": 3,
             "accuracy": 1.0,
-            "avg_stated_probability": 0.468,
-            "calibration_gap": 0.532
+            "avg_stated_probability": 0.4597,
+            "calibration_gap": 0.5403
           },
           "LOW": {
-            "matches": 3,
-            "correct": 2,
-            "accuracy": 0.6667,
-            "avg_stated_probability": 0.4093,
-            "calibration_gap": 0.2574
+            "matches": 2,
+            "correct": 1,
+            "accuracy": 0.5,
+            "avg_stated_probability": 0.4025,
+            "calibration_gap": 0.0975
           }
         }
       },
@@ -730,10 +730,10 @@
           "raw_predicted": "away",
           "correct": true,
           "data_confidence": "PLAYED",
-          "prediction_confidence": "LOW",
-          "home_win_probability": 0.317,
-          "draw_probability": 0.26,
-          "away_win_probability": 0.423
+          "prediction_confidence": "MEDIUM",
+          "home_win_probability": 0.298,
+          "draw_probability": 0.259,
+          "away_win_probability": 0.443
         },
         {
           "match_id": "317805",
@@ -800,8 +800,8 @@
             "matches": 5,
             "correct": 2,
             "accuracy": 0.4,
-            "avg_stated_probability": 0.3778,
-            "calibration_gap": 0.0222
+            "avg_stated_probability": 0.3826,
+            "calibration_gap": 0.0174
           }
         }
       },
@@ -914,9 +914,9 @@
           "correct": true,
           "data_confidence": "PLAYED",
           "prediction_confidence": "LOW",
-          "home_win_probability": 0.377,
-          "draw_probability": 0.253,
-          "away_win_probability": 0.37
+          "home_win_probability": 0.401,
+          "draw_probability": 0.252,
+          "away_win_probability": 0.346
         },
         {
           "match_id": "317814",
@@ -973,18 +973,18 @@
             "calibration_gap": -0.1175
           },
           "MEDIUM": {
-            "matches": 4,
+            "matches": 3,
             "correct": 0,
             "accuracy": 0.0,
-            "avg_stated_probability": 0.447,
-            "calibration_gap": -0.447
+            "avg_stated_probability": 0.4483,
+            "calibration_gap": -0.4483
           },
           "LOW": {
-            "matches": 1,
+            "matches": 2,
             "correct": 1,
-            "accuracy": 1.0,
-            "avg_stated_probability": 0.287,
-            "calibration_gap": 0.713
+            "accuracy": 0.5,
+            "avg_stated_probability": 0.3545,
+            "calibration_gap": 0.1455
           }
         }
       },
@@ -1032,10 +1032,10 @@
           "raw_predicted": "home",
           "correct": false,
           "data_confidence": "PLAYED",
-          "prediction_confidence": "MEDIUM",
-          "home_win_probability": 0.443,
-          "draw_probability": 0.214,
-          "away_win_probability": 0.342
+          "prediction_confidence": "LOW",
+          "home_win_probability": 0.422,
+          "draw_probability": 0.216,
+          "away_win_probability": 0.363
         },
         {
           "match_id": "317822",
