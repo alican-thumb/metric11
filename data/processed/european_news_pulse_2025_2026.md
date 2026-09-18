@@ -1,20 +1,25 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-09-18T16:23:34.178740+00:00
-Toplam ilgili haber: 61
+Üretim zamanı: 2026-09-18T20:55:45.915728+00:00
+Toplam ilgili haber: 53
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [Millilerin rakibi İtalya'nın aday kadrosu belli oldu](https://www.aksam.com.tr/spor/millilerin-rakibi-italyanin-aday-kadrosu-belli-oldu/haber-1699501) — Aksam Spor · 2026-09-18T21:27:00+03:00 · turnuva=— · kulüp=—
+- [İtalya'nın aday kadrosu belli oldu!](https://www.sabah.com.tr/spor/futbol/2026/09/18/italyanin-aday-kadrosu-belli-oldu) — Sabah Spor · 2026-09-18T21:10:39+03:00 · turnuva=— · kulüp=—
+- [Futbolda Ziraat Türkiye Kupası 2. eleme turu kura çekimi yapıldı](https://www.aa.com.tr/tr/spor/futbolda-ziraat-turkiye-kupasi-2-eleme-turu-kura-cekimi-yapildi/4061437) — Anadolu Ajansı Spor · 2026-09-18T19:19:32+03:00 · turnuva=— · kulüp=—
+- [Basketbol Avrupa Ligi Süper Kupa'da Olympiakos, finale yükseldi](https://www.aa.com.tr/tr/spor/basketbol-avrupa-ligi-super-kupada-olympiakos-finale-yukseldi/4061430) — Anadolu Ajansı Spor · 2026-09-18T19:15:23+03:00 · turnuva=EL · kulüp=Fenerbahçe
+- [Ümit Millilerin Ukrayna ve Macaristan maçları aday kadrosu açıklandı](https://www.fotomac.com.tr/u21millitakim/2026/09/18/umit-millilerin-ukrayna-ve-macaristan-maclari-aday-kadrosu-aciklandi) — Fotomaç · 2026-09-18T18:28:24+03:00 · turnuva=— · kulüp=—
+- [İtalya'nın aday kadrosu açıklandı!](https://www.haberturk.com/spor/a-milli-futbol-takimimiz-in-uefa-uluslar-ligi-ndeki-rakibi-italya-nin-aday-kadrosu-belli-oldu-3913495) — Haberturk Spor · 2026-09-18T17:42:07+00:00 · turnuva=— · kulüp=—
+- [Zinedine Zidane'dan N'Golo Kante'ye şok!](https://www.haberturk.com/spor/zinedine-zidane-dan-n-golo-kante-ye-sok-fransa-milli-takimi-na-cagirmama-nedenini-acikladi-3913488) — Haberturk Spor · 2026-09-18T17:25:12+00:00 · turnuva=— · kulüp=Fenerbahçe
 - [A Milli Futbol Takımı'nın Uluslar A Ligi aday kadrosu açıklandı](https://www.aa.com.tr/tr/spor/a-milli-futbol-takiminin-uluslar-a-ligi-aday-kadrosu-aciklandi/4061283) — Anadolu Ajansı Spor · 2026-09-18T16:35:09+03:00 · turnuva=— · kulüp=—
 - [A Milli Takımımızın aday kadrosu açıklandı!](https://www.fotomac.com.tr/millitakim/2026/09/18/a-milli-takimimizin-aday-kadrosu-aciklandi-1789744270) — Fotomaç · 2026-09-18T16:22:50+03:00 · turnuva=— · kulüp=—
-- [Ziraat Türkiye Kupası 2. Eleme Turu kura çekimi yapıldı! İşte tüm eşleşmeler...](https://www.sabah.com.tr/spor/futbol/2026/09/18/ziraat-turkiye-kupasi-2-eleme-turu-kura-cekimi-yapiliyor) — Sabah Spor · 2026-09-18T15:06:34+03:00 · turnuva=— · kulüp=—
+- [Ziraat Türkiye Kupası 2. eleme turu kura çekimi yapıldı](https://www.hurriyet.com.tr/sporarena/ziraat-turkiye-kupasi-2-eleme-turu-kura-cekimi-yapildi-43311647) — Hürriyet Spor · 2026-09-18T14:51:52+00:00 · turnuva=— · kulüp=—
 - [A Milli Takım'ın aday kadrosu açıklandı!](https://www.haberturk.com/spor/son-dakika-a-milli-takim-in-aday-kadrosu-aciklandi-3913454) — Haberturk Spor · 2026-09-18T13:19:16+00:00 · turnuva=— · kulüp=—
 - [A Milli Takım'ın aday kadrosu açıklandı! 4 isim ilk kez çağrıldı](https://www.hurriyet.com.tr/sporarena/a-milli-takimin-aday-kadrosu-aciklandi-43311491) — Hürriyet Spor · 2026-09-18T13:04:00+00:00 · turnuva=— · kulüp=—
-- [İngiltere'nin UEFA Uluslar Ligi kadrosu açıklandı](https://www.sabah.com.tr/spor/futbol/2026/09/18/ingilterenin-uefa-uluslar-ligi-kadrosu-aciklandi) — Sabah Spor · 2026-09-18T13:00:02+03:00 · turnuva=— · kulüp=—
 - [Beşiktaş'ın Marsilya zaferi Fransız basınında manşetlerde!](https://www.fotomac.com.tr/besiktas/2026/09/18/besiktasin-marsilya-zaferi-fransiz-basininda-mansetlerde) — Fotomaç · 2026-09-18T12:44:00+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Türkiye İtalya maçı biletleri ne zaman satışa çıkacak? Türkiye İtalya maçı biletleri ne kadar?](https://www.hurriyet.com.tr/sporarena/turkiye-italya-maci-biletleri-ne-zaman-satisa-cikacak-turkiye-italya-maci-biletleri-ne-kadar-43311275) — Hürriyet Spor · 2026-09-18T10:59:00+00:00 · turnuva=— · kulüp=—
-- [Tuchel'den sürpriz İngiltere kadrosu](https://www.haberturk.com/spor/tuchel-den-surpriz-ingiltere-kadrosu-3913401) — Haberturk Spor · 2026-09-18T09:57:11+00:00 · turnuva=— · kulüp=—
 - [Spor yazarlarından Beşiktaşlı yıldıza övgüler: "Sahanın en iyisiydi"](https://www.takvim.com.tr/spor/besiktas/2026/09/18/spor-yazarlari-besiktas-marsilya-macini-degerlendirdi) — Takvim Spor · 2026-09-18T09:43:54+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Nihat Kahveci'den Beşiktaş'a övgüler: 'Çatır çatır oynadı!'](https://www.hurriyet.com.tr/sporarena/nihat-kahveciden-besiktasa-ovguler-catir-catir-oynadi-43311047) — Hürriyet Spor · 2026-09-18T09:10:29+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Spor yazarları Beşiktaş-Marsilya maçını değerlendirdi](https://www.fotomac.com.tr/besiktas/2026/09/18/spor-yazarlari-besiktas-marsilya-macini-degerlendirdi) — Fotomaç · 2026-09-18T08:21:53+03:00 · turnuva=EL · kulüp=Beşiktaş
@@ -29,20 +34,15 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Beşiktaş evinde Marsilya'yı ezdi geçti! İşte maçın özeti](https://www.fotomac.com.tr/besiktas/2026/09/17/besiktas-evinde-marsilyayi-ezdi-gecti-iste-macin-ozeti) — Fotomaç · 2026-09-18T01:29:33+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [İşte Beşiktaş'ın zaferi sonrası UEFA ülke puanında son durum!](https://www.fotomac.com.tr/galeri/anasayfa/iste-besiktasin-zaferi-sonrasi-uefa-ulke-puaninda-son-durum) — Fotomaç · 2026-09-18T01:29:30+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Poku attı, Beşiktaş farkı 3'e çıkardı!](https://www.fotomac.com.tr/besiktas/2026/09/17/iste-besiktas-marsilya-macinin-golleri) — Fotomaç · 2026-09-18T01:29:28+03:00 · turnuva=EL · kulüp=Beşiktaş
-- [Zeki Çelik attı, Juventus farklı kazandı!](https://www.fotomac.com.tr/avrupaligi/2026/09/17/zeki-celik-atti-juventus-farkli-kazandi) — Fotomaç · 2026-09-18T01:28:47+03:00 · turnuva=EL · kulüp=—
-- [Beşiktaş'ta İlhan Fakılı'dan galibiyet yorumu! "İyi bir iş çıkardık"](https://www.fotomac.com.tr/besiktas/2026/09/17/besiktasta-ilhan-fakilidan-galibiyet-yorumu-iyi-bir-is-cikardik) — Fotomaç · 2026-09-18T01:28:39+03:00 · turnuva=EL · kulüp=Beşiktaş
-- [Beşiktaş'ta Vaclav Cerny'den maç sonu sakatlık sözleri!](https://www.fotomac.com.tr/besiktas/2026/09/17/besiktasta-vaclav-cernyden-mac-sonu-sakatlik-sozleri) — Fotomaç · 2026-09-18T01:28:37+03:00 · turnuva=EL · kulüp=Beşiktaş
-- [Salih Özcan: Atmosfer bizi inanılmaz motive etti!](https://www.fotomac.com.tr/besiktas/2026/09/17/salih-ozcan-atmosfer-bizi-inanilmaz-motive-etti) — Fotomaç · 2026-09-18T01:28:34+03:00 · turnuva=EL · kulüp=Beşiktaş
-- [Beşiktaş'ta Amir Murillo Marsilya'ya attığı golü değerlendirdi!](https://www.fotomac.com.tr/besiktas/2026/09/17/besiktasta-amir-murillo-marsilyaya-attigi-golu-degerlendirdi) — Fotomaç · 2026-09-18T01:28:32+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Türkiye ülke puanı sıralamasında kaçıncı? İşte UEFA'daki yerimiz (2026-2027 Sezonu)](https://www.takvim.com.tr/galeri/spor/turkiye-ulke-puani-siralamasinda-kacinci-iste-uefadaki-yerimiz-2026-2027-sezonu) — Takvim Spor · 2026-09-18T01:01:09+03:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe, Beşiktaş
 - [UEFA Avrupa Ligi Puan Durumu [2026-2027 Sezonu - 1. Hafta]](https://www.takvim.com.tr/galeri/spor/uefa-avrupa-ligi-puan-durumu-2026-2027-sezonu-1-hafta) — Takvim Spor · 2026-09-18T00:31:16+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [AVRUPA LİGİ PUAN DURUMU: Beşiktaş Kaçıncı Sırada? Avrupa Ligi Puan Durumunda Hangi Takımlar Var? Beşiktaş, Juventus, Crystal Palace Sıralaması...](https://www.cnnturk.com/spor/futbol/avrupa-ligi-puan-durumu-besiktas-kacinci-sirada-avrupa-ligi-puan-durumunda-hangi-takimlar-var-besiktas-juventus-crystal-palace-3468187) — CNN Türk Spor · 2026-09-18T00:20:32+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş 4-1 Marsilya Maç Özeti | Kartal, Avrupa’da yüksekten uçtu](https://www.cnnturk.com/spor/futbol/live-besiktas-4-1-marsilya-mac-ozeti-kartal-avrupada-yuksekten-uctu-3468023) — CNN Türk Spor · 2026-09-18T00:09:11+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [UEFA Avrupa Ligi'nde ilk hafta maçları sona erdi](https://www.aa.com.tr/tr/spor/-uefa-avrupa-liginde-ilk-hafta-maclari-sona-erdi/4060642) — Anadolu Ajansı Spor · 2026-09-18T00:08:37+03:00 · turnuva=EL · kulüp=—
 - [Beşiktaş, UEFA Avrupa Ligi'ne 3 puanla başladı](https://www.aa.com.tr/tr/spor/besiktas-uefa-avrupa-ligine-3-puanla-basladi/4060572) — Anadolu Ajansı Spor · 2026-09-17T22:55:01+03:00 · turnuva=EL · kulüp=Beşiktaş
-- ["Her zaman yüzde 100'ümü vermeye hazırım"](https://www.haberturk.com/spor/ernest-poku-takim-icinde-her-zaman-yuzde-100-umu-vermeye-hazirim-3913298) — Haberturk Spor · 2026-09-17T22:27:19+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [“Çok iyi başladık"](https://www.haberturk.com/spor/orkun-kokcu-cok-iyi-basladik-3913297) — Haberturk Spor · 2026-09-17T22:14:11+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Italiano'dan genç isme büyük övgü!](https://www.haberturk.com/spor/vincenzo-italiano-dan-ilhan-fakili-ya-buyuk-ovgu-basrol-oyuncusuna-donusebilir-3913287) — Haberturk Spor · 2026-09-17T22:03:17+00:00 · turnuva=EL · kulüp=Beşiktaş
-- [Cerny'den sakatlık sorusuna cevap!](https://www.haberturk.com/spor/vaclav-cerny-den-sakatlik-sorusuna-cevap-3913293) — Haberturk Spor · 2026-09-17T21:44:46+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Salih Özcan'dan taraftarlara büyük övgü!](https://www.haberturk.com/spor/besiktas-ta-salih-ozcan-dan-taraftarlara-buyuk-ovgu-3913291) — Haberturk Spor · 2026-09-17T21:32:11+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş’ta Ernest Poku siftah yaptı!](https://www.hurriyet.com.tr/sporarena/besiktasta-ernest-poku-siftah-yapti-43310677) — Hürriyet Spor · 2026-09-17T21:32:00+00:00 · turnuva=EL · kulüp=Beşiktaş
+- [Beşiktaş sahasında kayıpsız devam ediyor!](https://www.hurriyet.com.tr/sporarena/besiktas-sahasinda-kayipsiz-devam-ediyor-43310675) — Hürriyet Spor · 2026-09-17T21:30:17+00:00 · turnuva=EL · kulüp=Beşiktaş
+- [Salih Özcan: 'Kulaklarım hala duymuyor!'](https://www.hurriyet.com.tr/sporarena/salih-ozcan-kulaklarim-hala-duymuyor-43310662) — Hürriyet Spor · 2026-09-17T21:27:00+00:00 · turnuva=EL · kulüp=Beşiktaş
