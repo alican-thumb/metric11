@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-09-19T15:52:56.379851+00:00",
+  "generated_at": "2026-09-19T17:20:13.113725+00:00",
   "season": "2025_2026",
   "summary": {
     "free_agents_count": 95,
     "final_year_count": 334,
-    "transfer_signals_count": 20,
+    "transfer_signals_count": 17,
     "transfer_status_counts": {
       "OFFICIAL": 0,
       "CORROBORATED": 1,
-      "RUMOR": 4,
-      "REVIEW_REQUIRED": 15
+      "RUMOR": 5,
+      "REVIEW_REQUIRED": 11
     },
     "promotion_events_count": 0,
     "free_agent_total_market_value_eur": 180475000
@@ -483,11 +483,12 @@
       "entity_confidence": "HIGH",
       "verification_status": "CORROBORATED",
       "interpretation": "Birden fazla kaynak aynı yönlü iddiayı taşıyor; resmi açıklama beklenir.",
-      "source_count": 3,
+      "source_count": 4,
       "sources": [
         "GZT",
+        "A Spor",
         "Fotomaç",
-        "Yeni Şafak"
+        "yenisafak.com"
       ],
       "evidence": [
         {
@@ -502,6 +503,17 @@
           "first_observed_at": null
         },
         {
+          "source": "A Spor",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Samsunspor transfer",
+          "title": "Samsunspor'da Marius Mouandilmadji, Olympiakos'a transfer oldu! - A Spor",
+          "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOdk05OVJVMV9IMDlzSERlLU83MmI3akp5d2hCMFlWUGg0VFZXOUxua1Q5THRUb2NrbXJMUFY4N1RtQl95QUJzYzUtUEoxZlAwN21yRkRsYm1wQjludEV6VDlwQnk1eC1OMVhuN25MMUZWeU02eHNNd25NMjA0WlctaEhubGQtY2JKU3BJWkxYVVp3bmhoNTlSSjZnQkFGMXJ3bHZDV3JoeWwxQQ?oc=5",
+          "published_at": "2026-09-16T06:58:42+00:00",
+          "first_observed_at": null
+        },
+        {
           "source": "Fotomaç",
           "source_tier": "MEDIA",
           "source_type": "google_news",
@@ -513,14 +525,55 @@
           "first_observed_at": null
         },
         {
-          "source": "Yeni Şafak",
+          "source": "yenisafak.com",
           "source_tier": "MEDIA",
           "source_type": "google_news",
           "account_type": null,
           "query": "Samsunspor transfer",
-          "title": "Samsunspor'da Mouandilmadji ayrılığı: 9 milyon Euro'ya transfer oldu - Yeni Şafak",
+          "title": "Samsunspor'da Mouandilmadji ayrılığı: 9 milyon Euro'ya transfer oldu - yenisafak.com",
           "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOd0hPNHdrSFBLWkVNcG1pNjU5SlN1emdHLUo3M0NjQWZSSEpNSF84bE1Bc1A5S3Z3Zm1wU3hSTE42YS1aejYwRG8yUmdrdkwzYzFHRDJOZEZEWklRa0xqOS1yd1Nxb3k1VUpMT25QYWtHcnAyU0tweHhNU0JuM2J2WEMwenoyVXpBVlpoZHhoVFZSMWRjUGIzT01TZVZIb3kwZFdaMXhxQdIBsgFBVV95cUxPM0gyTF9ETnlWV2lHNVVtNUJnX1Jwa1JBSklucXprbVl4ZGJRVnJDWDFZRG5lSjRMRFBIWGhfT3J6TWZfdUxYV0FXQkJrZ0xtVnY0ZU15Y1pPd1FIdHR5eE82R1owamRVbkNvUEV3WGxab0puSW0zLTVvUHgyaEFIZGh1YjZVaE9rVjRwVi15LUl5UVhvNWZBVUJfSlpjX1JnYlVCTk5wN0d0bWVQRU54dl9B?oc=5",
           "published_at": "2026-09-15T13:57:57+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": "Yvonne Anderson",
+      "from_club": null,
+      "to_club": "Fenerbahçe",
+      "signal_type": "official_transfer",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "HEADLINE_EXPLICIT_DIRECTION",
+      "article_id": "d2e511306cbc",
+      "title": "Fenerbahçe, Yvonne Anderson'u transfer etti - Ensonhaber",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOelNCXzBxSERFclVDRWtyWjJsRGhMWFF3cVAwa1BEMkVsY2hqZ1U2SUJOdlJoMTBSQ2RtSF84SmIycEFlVjV6bjQyTFJGTm5OYV9IZG1zN2JUbFlSRmFWNlhYcmQ4VU5jakFMYlRfcGpYVF9iV0kxaHpZNkNVSUxCR3Zqcw?oc=5",
+      "source": "Ensonhaber",
+      "source_type": "google_news",
+      "account_type": null,
+      "query": "Fenerbahçe transfer",
+      "source_tier": "MEDIA",
+      "published_at": "2026-09-19T15:52:54+00:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "MEDIUM",
+      "verification_status": "RUMOR",
+      "interpretation": "Tek kaynaklı transfer iddiası; yalnız transfer radarında izlenir.",
+      "source_count": 1,
+      "sources": [
+        "Ensonhaber"
+      ],
+      "evidence": [
+        {
+          "source": "Ensonhaber",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Fenerbahçe transfer",
+          "title": "Fenerbahçe, Yvonne Anderson'u transfer etti - Ensonhaber",
+          "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOelNCXzBxSERFclVDRWtyWjJsRGhMWFF3cVAwa1BEMkVsY2hqZ1U2SUJOdlJoMTBSQ2RtSF84SmIycEFlVjV6bjQyTFJGTm5OYV9IZG1zN2JUbFlSRmFWNlhYcmQ4VU5jakFMYlRfcGpYVF9iV0kxaHpZNkNVSUxCR3Zqcw?oc=5",
+          "published_at": "2026-09-19T15:52:54+00:00",
           "first_observed_at": null
         }
       ],
@@ -736,47 +789,6 @@
     {
       "player_name": null,
       "from_club": null,
-      "to_club": "Beşiktaş",
-      "signal_type": "official_transfer",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "4fa75d451a55",
-      "title": "Hocası 'ortadan kayboldu' dedi: Beşiktaş'a transfer olduğu ortaya çıktı - Yeni Şafak",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNNWQ3bjBKUHVGMk9JdU5DLWJybmZTR0U5LXpqU3J2WUlkUE1IQzVJYlNvc1dCWUpIQkxJcXBkMUVBZlVKTkc1ODB0dm5OMGNMbjVzVEVhSGt2amdJT0RGZFFzb3FvTVhWaUktc1VMcEtLcFRJQ0t3d00wNjV3NVVuemhmSWhMajVTbUpzREw3TFBiR0RuV1htMGpBaEtybjJ4SUtXYUdQOHZJaWdqbHFaU2xvVQ?oc=5",
-      "source": "Yeni Şafak",
-      "source_type": "google_news",
-      "account_type": null,
-      "query": "Trabzonspor transfer",
-      "source_tier": "MEDIA",
-      "published_at": "2026-09-19T11:17:30+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Yeni Şafak"
-      ],
-      "evidence": [
-        {
-          "source": "Yeni Şafak",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Trabzonspor transfer",
-          "title": "Hocası 'ortadan kayboldu' dedi: Beşiktaş'a transfer olduğu ortaya çıktı - Yeni Şafak",
-          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNNWQ3bjBKUHVGMk9JdU5DLWJybmZTR0U5LXpqU3J2WUlkUE1IQzVJYlNvc1dCWUpIQkxJcXBkMUVBZlVKTkc1ODB0dm5OMGNMbjVzVEVhSGt2amdJT0RGZFFzb3FvTVhWaUktc1VMcEtLcFRJQ0t3d00wNjV3NVVuemhmSWhMajVTbUpzREw3TFBiR0RuV1htMGpBaEtybjJ4SUtXYUdQOHZJaWdqbHFaU2xvVQ?oc=5",
-          "published_at": "2026-09-19T11:17:30+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": null,
       "to_club": "Fenerbahçe",
       "signal_type": "transfer_fee",
       "window": "summer_2026",
@@ -899,47 +911,6 @@
     },
     {
       "player_name": null,
-      "from_club": null,
-      "to_club": "Beşiktaş",
-      "signal_type": "departure",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "b2f89494e468",
-      "title": "Beşiktaş transferi sessiz sedasız bitirdi! Takımından olaylı şekilde ayrıldı, İstanbul'a geldi - NTVSpor",
-      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPSDZ5Rnl2MU1QeEJqTFNuWS1VWjlZNXUtb1FtQ2dJNWtoMEtRYm9va3hpcUFCRzB3dU01NmNSZUVWelRGY2J5TFNxWmtZRWFCR3hzcC00Q0lOc1JSVUVZeDFVa1FnbE1jNlBxTC1kVldnUWhzSl9JQ0lMbzBKOHBWRWxEVTJjYjFacF9VejA0VTBxWXdNaG1Oc0RkQnZkaU0yaUhPRUdodVM1eWxEMjZtX0VGWlJ4dlBBanl0cWdzYTdIWWg4Z29pMWIzMVNXbU9OM0HSAdcBQVVfeXFMT3hjbXVvZnRtSlFjcUJ4S2JwNWQ2Q0JkSWNJdHhtSC1PTzE4TnhTZDRjTTZoNmFtbWJVa1ZMWTJxVnlZM0FaTGdlN0hrNUhDOTBrUWppb3ozejJXYnBQb2haNS02dFJxdUpBZGZxN1dqZnUwNUJuRVlaQlpBVFAwbDY3Y0t1aWFRWXU3dGJDVGN1WWVidVFaVjcwNWxqdHhZUUxmRU1iRm12S0REUkZzTEdFbko3QVJld2lpbWdBdkpjU1UyQ1J4Nl90Smp2dXJEd25TVGJSM0E?oc=5",
-      "source": "NTVSpor",
-      "source_type": "google_news",
-      "account_type": null,
-      "query": "Beşiktaş transfer",
-      "source_tier": "MEDIA",
-      "published_at": "2026-09-19T06:31:00+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "NTVSpor"
-      ],
-      "evidence": [
-        {
-          "source": "NTVSpor",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Beşiktaş transfer",
-          "title": "Beşiktaş transferi sessiz sedasız bitirdi! Takımından olaylı şekilde ayrıldı, İstanbul'a geldi - NTVSpor",
-          "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPSDZ5Rnl2MU1QeEJqTFNuWS1VWjlZNXUtb1FtQ2dJNWtoMEtRYm9va3hpcUFCRzB3dU01NmNSZUVWelRGY2J5TFNxWmtZRWFCR3hzcC00Q0lOc1JSVUVZeDFVa1FnbE1jNlBxTC1kVldnUWhzSl9JQ0lMbzBKOHBWRWxEVTJjYjFacF9VejA0VTBxWXdNaG1Oc0RkQnZkaU0yaUhPRUdodVM1eWxEMjZtX0VGWlJ4dlBBanl0cWdzYTdIWWg4Z29pMWIzMVNXbU9OM0HSAdcBQVVfeXFMT3hjbXVvZnRtSlFjcUJ4S2JwNWQ2Q0JkSWNJdHhtSC1PTzE4TnhTZDRjTTZoNmFtbWJVa1ZMWTJxVnlZM0FaTGdlN0hrNUhDOTBrUWppb3ozejJXYnBQb2haNS02dFJxdUpBZGZxN1dqZnUwNUJuRVlaQlpBVFAwbDY3Y0t1aWFRWXU3dGJDVGN1WWVidVFaVjcwNWxqdHhZUUxmRU1iRm12S0REUkZzTEdFbko3QVJld2lpbWdBdkpjU1UyQ1J4Nl90Smp2dXJEd25TVGJSM0E?oc=5",
-          "published_at": "2026-09-19T06:31:00+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
       "from_club": "Konyaspor",
       "to_club": "Kasımpaşa",
       "signal_type": "departure",
@@ -981,47 +952,6 @@
     },
     {
       "player_name": null,
-      "from_club": "Galatasaray",
-      "to_club": "Trabzonspor",
-      "signal_type": "interest",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "4b6c1a3273e4",
-      "title": "Akyazı'da derbi heyecanı: Trabzonspor'da orta saha tercihi! Galatasaray'da 10 numara sürprizi",
-      "link": "https://www.takvim.com.tr/spor/superlig/2026/09/18/super-ligde-dev-mac-trabzonspor-galatasarayi-konuk-ediyor",
-      "source": "Takvim Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-09-18T16:58:41+03:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Takvim Spor"
-      ],
-      "evidence": [
-        {
-          "source": "Takvim Spor",
-          "source_tier": "MEDIA",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "Akyazı'da derbi heyecanı: Trabzonspor'da orta saha tercihi! Galatasaray'da 10 numara sürprizi",
-          "link": "https://www.takvim.com.tr/spor/superlig/2026/09/18/super-ligde-dev-mac-trabzonspor-galatasarayi-konuk-ediyor",
-          "published_at": "2026-09-18T16:58:41+03:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
       "from_club": null,
       "to_club": "Fenerbahçe",
       "signal_type": "departure",
@@ -1029,12 +959,12 @@
       "confidence": "LOW",
       "direction_quality": "PLAYER_UNRESOLVED",
       "article_id": "1170d1a2d39f",
-      "title": "Fenerbahçe’de 2 yıldızla yollar ayrılıyor! Ara transfer planı şimdiden hazır... - Sabah",
+      "title": "Fenerbahçe’de 2 yıldızla yollar ayrılıyor! Ara transfer planı şimdiden hazır... - sabah.com.tr",
       "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNdlJPMkpkOWdsTF9lU1BaNzNnUG5ud2FxYVFzWnJrOVM2UmNSMHI3M3VfYXZlckFjU3p3azdFWS1uVVhXZUVHNmE3Sm5tUzg3ZWRnSVFXLUYyM0ppdFhvQ0VwRktsVXVhWG8zc3ZoVS1SRmpIb2h6UnBuYWw2OUphaGxxaWMxaHB2cl9idGJ1UHJLenFTVEFLWDBKMGdYNXhWMVhjbk9KZzNjMm1TVVIzalRjeXREOW9Z0gG7AUFVX3lxTE1TNW9PQVp0RHpxV0dxZktNUDROUzJJSlA4ZUNTYWI2UWprRzczeE56dE9NTnBERHQtaWo4OGw4TWdGWjI5WHgwOURqYlgzbndCNE0zTC1jVVRCTzVNbWxTM3EyalRzZnpaMXBfNml3Vnc1ZXkyclgwYmRwNHhmVUV2NEtCVThybTc0NmRZaEEydjZncVVTRUs0eVZlX0h4eDJEZWxENHU2UHhXVWUzOG1Da3QxbnVwVHh3VWM?oc=5",
-      "source": "Sabah",
+      "source": "sabah.com.tr",
       "source_type": "google_news",
       "account_type": null,
-      "query": "Fenerbahçe transfer",
+      "query": "Eyüpspor transfer",
       "source_tier": "MEDIA",
       "published_at": "2026-09-18T04:30:01+00:00",
       "first_observed_at": null,
@@ -1044,16 +974,16 @@
       "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
       "source_count": 1,
       "sources": [
-        "Sabah"
+        "sabah.com.tr"
       ],
       "evidence": [
         {
-          "source": "Sabah",
+          "source": "sabah.com.tr",
           "source_tier": "MEDIA",
           "source_type": "google_news",
           "account_type": null,
-          "query": "Fenerbahçe transfer",
-          "title": "Fenerbahçe’de 2 yıldızla yollar ayrılıyor! Ara transfer planı şimdiden hazır... - Sabah",
+          "query": "Eyüpspor transfer",
+          "title": "Fenerbahçe’de 2 yıldızla yollar ayrılıyor! Ara transfer planı şimdiden hazır... - sabah.com.tr",
           "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNdlJPMkpkOWdsTF9lU1BaNzNnUG5ud2FxYVFzWnJrOVM2UmNSMHI3M3VfYXZlckFjU3p3azdFWS1uVVhXZUVHNmE3Sm5tUzg3ZWRnSVFXLUYyM0ppdFhvQ0VwRktsVXVhWG8zc3ZoVS1SRmpIb2h6UnBuYWw2OUphaGxxaWMxaHB2cl9idGJ1UHJLenFTVEFLWDBKMGdYNXhWMVhjbk9KZzNjMm1TVVIzalRjeXREOW9Z0gG7AUFVX3lxTE1TNW9PQVp0RHpxV0dxZktNUDROUzJJSlA4ZUNTYWI2UWprRzczeE56dE9NTnBERHQtaWo4OGw4TWdGWjI5WHgwOURqYlgzbndCNE0zTC1jVVRCTzVNbWxTM3EyalRzZnpaMXBfNml3Vnc1ZXkyclgwYmRwNHhmVUV2NEtCVThybTc0NmRZaEEydjZncVVTRUs0eVZlX0h4eDJEZWxENHU2UHhXVWUzOG1Da3QxbnVwVHh3VWM?oc=5",
           "published_at": "2026-09-18T04:30:01+00:00",
           "first_observed_at": null
@@ -1264,47 +1194,6 @@
           "link": "https://www.antalyaspor.com.tr/tr/futbol-haberleri/yeni-transferlerimiz-icin-imza-toreni-duzenlendi.html",
           "published_at": "2026-09-15T16:44:00+03:00",
           "first_observed_at": "2026-09-15T15:01:12.517944+00:00"
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": "Galatasaray",
-      "to_club": "Kocaelispor",
-      "signal_type": "official_transfer",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "c3546fd7d198",
-      "title": "Selçuk İnan istedi, Galatasaray'ın eski golcüsü Kocaelispor'a transfer oldu - Gazete Vatan",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQZWE1WWIzTEZkS3BoaDR3ek9YX3hDajBvbkdPRWUtSHZKQ0xwQ1J0cmJRNUVEZ3NENS1Cem1PVUNGeVVpM2lqeXZndXdfemtjUktOZ0NoSXU1S2ViZmdCZGhsWktOQ3BIRkNoRk5SdkUwU192Ym4zRlBKQlpKak1MT3JNYkJJcjBfbTlaTnpjSUhFS2FPVl9SREhDbzVXaW9LZUJqZDVyYk1QLUgzUjlQUHRuWFhndw?oc=5",
-      "source": "Gazete Vatan",
-      "source_type": "google_news",
-      "account_type": null,
-      "query": "Kocaelispor transfer",
-      "source_tier": "MEDIA",
-      "published_at": "2026-09-11T04:00:00+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Gazete Vatan"
-      ],
-      "evidence": [
-        {
-          "source": "Gazete Vatan",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Kocaelispor transfer",
-          "title": "Selçuk İnan istedi, Galatasaray'ın eski golcüsü Kocaelispor'a transfer oldu - Gazete Vatan",
-          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQZWE1WWIzTEZkS3BoaDR3ek9YX3hDajBvbkdPRWUtSHZKQ0xwQ1J0cmJRNUVEZ3NENS1Cem1PVUNGeVVpM2lqeXZndXdfemtjUktOZ0NoSXU1S2ViZmdCZGhsWktOQ3BIRkNoRk5SdkUwU192Ym4zRlBKQlpKak1MT3JNYkJJcjBfbTlaTnpjSUhFS2FPVl9SREhDbzVXaW9LZUJqZDVyYk1QLUgzUjlQUHRuWFhndw?oc=5",
-          "published_at": "2026-09-11T04:00:00+00:00",
-          "first_observed_at": null
         }
       ],
       "model_use": false
