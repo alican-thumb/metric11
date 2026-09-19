@@ -1,7 +1,7 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-09-19T07:21:33.364665+00:00
-Toplam ilgili haber: 42
+Üretim zamanı: 2026-09-19T08:52:23.850015+00:00
+Toplam ilgili haber: 40
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
@@ -28,7 +28,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - ["İstanbul'da süpürüldü!"](https://www.haberturk.com/spor/foto/besiktas-in-marsilya-galibiyeti-fransa-da-gundem-oldu-istanbul-da-supuruldu--3913345) — Haberturk Spor · 2026-09-18T07:23:28+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [İşte UEFA ülke puanı sıralamasında son durum!](https://www.haberturk.com/spor/foto/besiktas-marsilya-yi-farkli-gecti-iste-uefa-ulke-puani-siralamasinda-son-durum-3913343) — Haberturk Spor · 2026-09-18T07:21:48+00:00 · turnuva=EL · kulüp=Beşiktaş
 - ["Beşiktaş ortalığı kasıp kavurdu!"](https://www.haberturk.com/spor/foto/spor-yazarlari-besiktas-in-marsilya-zaferini-degerlendirdi-besiktas-ortaligi-kasip-kavurdu-3913331) — Haberturk Spor · 2026-09-18T06:58:22+00:00 · turnuva=EL · kulüp=Beşiktaş
-- [Beşiktaş'ın Marsilya'yı darmadağın ettiği maçı Güntekin Onay değerlendirdi: 'Marsilya'yı sahadan sildi! Ona ayrı bir paragraf açmak istiyorum'](https://www.hurriyet.com.tr/sporarena/besiktasin-marsilyayi-darmadagin-ettigi-maci-guntekin-onay-degerlendirdi-marsilyayi-sahadan-sildi-ona-ayri-bir-paragraf-43310737) — Hürriyet Spor · 2026-09-18T04:51:00+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Avrupa Ligi'nde şaşırtan sonuçlar! Ozan Kabak üzüldü](https://www.takvim.com.tr/spor/2026/09/17/avrupa-ligi-1-hafta-mac-sonuclari) — Takvim Spor · 2026-09-18T02:36:53+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Fransızlar Marsilya'yı hedefe oturttu: Beşiktaş aşağıladı](https://www.takvim.com.tr/spor/besiktas/2026/09/17/besiktas-marsilya-maci-sonrasi-fransizlardan-sert-yorumlar) — Takvim Spor · 2026-09-18T02:15:08+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Türkiye ülke puanı sıralamasında kaçıncı? İşte UEFA'daki yerimiz (2026-2027 Sezonu)](https://www.takvim.com.tr/galeri/spor/turkiye-ulke-puani-siralamasinda-kacinci-iste-uefadaki-yerimiz-2026-2027-sezonu) — Takvim Spor · 2026-09-18T01:01:09+03:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe, Beşiktaş
@@ -42,7 +41,8 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [BEŞİKTAŞ - MARSİLYA HANGİ KANALDA, NE ZAMAN, SAAT KAÇTA? UEFA Avrupa Ligi Beşiktaş Marsilya Maçı Şifresiz Mi, Nereden İzlenir? Italiano'dan Marsilya Maçı Trossard Açıklaması!](https://www.cnnturk.com/spor/futbol/besiktas-marsilya-uefa-avrupa-ligi-maci-ne-zaman-hangi-kanalda-besiktas-marsilya-maci-sifresiz-mi-nereden-izlenir-3466489) — CNN Türk Spor · 2026-09-17T19:23:04+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [GÜNÜN MAÇLARI 17 EYLÜL 2026: Bugün Kimlerin Maçlar Var? Bugünkü Maçlar Neler? İşte 17 Eylül Günün Maçları](https://www.cnnturk.com/spor/gunun-maclari-17-eylul-2026-bugun-kimlerin-maclar-var-bugunku-maclar-neler-iste-17-eylul-gunun-maclari-3467887) — CNN Türk Spor · 2026-09-17T17:55:36+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş Marsilya'yı ezdi geçti! Avrupa Ligi'nde 4 golle şov](https://www.takvim.com.tr/spor/besiktas/2026/09/16/besiktas-marsilya-4-1-avrupa-ligi-mac-sonucu) — Takvim Spor · 2026-09-16T23:05:10+03:00 · turnuva=EL · kulüp=Beşiktaş
-- [GÜNÜN MAÇLARI 16 EYLÜL 2026: Bugün Kimlerin Maçlar Var? Bugünkü Maçlar Neler? İşte 16 Eylül Günün Maçları](https://www.cnnturk.com/spor/gunun-maclari-16-eylul-2026-bugun-kimlerin-maclar-var-bugunku-maclar-neler-iste-16-eylul-gunun-maclari-3467376) — CNN Türk Spor · 2026-09-16T17:45:19+00:00 · turnuva=EL · kulüp=—
 - [İzmir'de farklı tarife! Gaziemir turladı](https://www.takvim.com.tr/spor/2026/09/16/izmirde-farkli-tarife-gaziemir-turladi) — Takvim Spor · 2026-09-16T16:50:28+03:00 · turnuva=— · kulüp=—
 - [Ziraat Türkiye Kupası'nda gol yağmuru! Yeni Mersin İY turladı](https://www.takvim.com.tr/spor/2026/09/16/yeni-mersin-idman-yurdu-5-golle-ztkda-tur-atladi) — Takvim Spor · 2026-09-16T15:35:04+03:00 · turnuva=— · kulüp=—
 - [Ziraat Türkiye Kupası'nda gol yağmuru: Söke 1970 Spor, Altay'ı 4-2 yenerek 2. tura yükseldi](https://www.takvim.com.tr/spor/2026/09/15/altay-soke-1970-spor-mac-ozeti-golleri-ztk) — Takvim Spor · 2026-09-15T19:56:16+03:00 · turnuva=— · kulüp=—
+- [Ziraat Türkiye Kupası'nda 1923 Afyonkarahisar SK Ürgüpspor’u 2-1 yenerek tur atladı](https://www.takvim.com.tr/spor/2026/09/15/ziraat-turkiye-kupasi-1923-afyonkarahisar-sk-urgupspor) — Takvim Spor · 2026-09-15T16:54:44+03:00 · turnuva=— · kulüp=—
+- [Miguel Cardoso ve Elisha Owusu ile resmî sözleşme imzaladık.](https://erzurumsporfk.org/2026/08/19/miguel-cardoso-ve-elisha-owusu-ile-resmi-sozlesme-imzaladik/) — Erzurumspor FK Resmi Web · 2026-08-19T20:45:50+03:00 · turnuva=EL · kulüp=Kayserispor

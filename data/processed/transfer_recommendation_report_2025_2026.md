@@ -15,11 +15,11 @@
 | 1 | İKAS EYÜPSPOR | ACİL | 74.8 | 0.6 | 0.4 | 1.6 | Kaleci / istikrar |
 | 2 | GÖZTEPE A.Ş. | ACİL | 66.6 | 0.4 | 1.8 | 2.6 | 6 numara / savunma emniyeti |
 | 3 | ERZURUMSPOR FK | ACİL | 62.8 | 0.8 | 0.4 | 2.2 | Kaleci / istikrar |
-| 4 | TÜMOSAN KONYASPOR | ACİL | 61.6 | 0.6 | 0.8 | 1.6 | 6 numara / savunma emniyeti |
+| 4 | TÜMOSAN KONYASPOR | ACİL | 59.0 | 0.667 | 0.667 | 1.333 | 6 numara / savunma emniyeti |
 | 5 | SAMSUNSPOR A.Ş. | ACİL | 56.4 | 0.8 | 1.2 | 2.2 | Kaleci / istikrar |
 | 6 | RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ | ACİL | 56.4 | 0.8 | 1.2 | 2.2 | Sol açık / çizgi kırıcı |
 | 7 | GENÇLERBİRLİĞİ | YÜKSEK | 55.0 | 1.4 | 1.0 | 1.8 | Santrfor / skor yükü |
-| 8 | KASIMPAŞA A.Ş. | YÜKSEK | 47.8 | 1.8 | 1.4 | 1.0 | Kaleci / istikrar |
+| 8 | KASIMPAŞA A.Ş. | YÜKSEK | 50.0 | 1.667 | 1.167 | 0.833 | Kaleci / istikrar |
 | 9 | GAZİANTEP FUTBOL KULÜBÜ A.Ş. | YÜKSEK | 45.8 | 1.6 | 1.4 | 1.0 | Kaleci / istikrar |
 | 10 | KOCAELİSPOR | YÜKSEK | 39.0 | 1.8 | 1.0 | 0.8 | Santrfor / skor yükü |
 | 11 | ÇAYKUR RİZESPOR A.Ş. | YÜKSEK | 39.0 | 1.8 | 1.0 | 0.8 | Kaleci / istikrar |
@@ -144,33 +144,33 @@ Zayıf nokta: yeni lig takımı
      → Gol üretimi zayıf (maç başına 0.4 gol attı) - Santrfor / skor yükü pozisyonunda yaratıcılık gerekiyor. Osimhen: 15 gol, 19 maçta sahada. Uzun sözleşme — yüksek bonusu göze almalı.
 
 ### TÜMOSAN KONYASPOR  [ACİL]
-*0.6 puan/maç | maç başına 0.8 attı | maç başına 1.6 yedi*
+*0.667 puan/maç | maç başına 0.667 attı | maç başına 1.333 yedi*
 
 Zayıf nokta: kart baskısı, düşük şut baskısı
 
 **6 numara / savunma emniyeti** — Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir.
   1. HELITON JORGE  TITO DOS SANTOS (GÖZTEPE A.Ş.) | 30y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 24.8
-     → Savunma kırılgan (maç başına 1.6 gol yedi) - 6 numara / savunma emniyeti ihtiyacı net. Santos: 32 maç. Bu yaz serbest kalıyor (~-3ay) — bonussuz transfer fırsatı.
+     → Gol üretimi zayıf (maç başına 0.667 gol attı) - 6 numara / savunma emniyeti pozisyonunda yaratıcılık gerekiyor. Santos: 32 maç. Bu yaz serbest kalıyor (~-3ay) — bonussuz transfer fırsatı.
   2. JEROME OPOKU (İSTANBUL BAŞAKŞEHİR FK) | 27y | 1 gol | MÜZAKERE PENCERESİ | LOW | skor 22.1
-     → Savunma kırılgan (maç başına 1.6 gol yedi) - 6 numara / savunma emniyeti ihtiyacı net. Opoku: 1 gol, 31 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
+     → Gol üretimi zayıf (maç başına 0.667 gol attı) - 6 numara / savunma emniyeti pozisyonunda yaratıcılık gerekiyor. Opoku: 1 gol, 31 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
   3. JAYDEN QUINN OOSTERWOLDE (FENERBAHÇE A.Ş.) | 25y | 0 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 21.7
-     → Savunma kırılgan (maç başına 1.6 gol yedi) - 6 numara / savunma emniyeti ihtiyacı net. Oosterwolde: 29 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
+     → Gol üretimi zayıf (maç başına 0.667 gol attı) - 6 numara / savunma emniyeti pozisyonunda yaratıcılık gerekiyor. Oosterwolde: 29 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
 
 **8 numara / fizik motoru** — Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir.
   1. KACPER SZYMON KOZLOWSKI (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 22y | 6 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 30.1
-     → Gol üretimi zayıf (maç başına 0.8 gol attı) - 8 numara / fizik motoru pozisyonunda yaratıcılık gerekiyor. Kozlowski: 6 gol, 30 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere. 22 yaş, uzun vadeli yatırım profili.
+     → Gol üretimi zayıf (maç başına 0.667 gol attı) - 8 numara / fizik motoru pozisyonunda yaratıcılık gerekiyor. Kozlowski: 6 gol, 30 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere. 22 yaş, uzun vadeli yatırım profili.
   2. ALEXANDRU IULIAN MAXIM (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 36y | 5 gol | MÜZAKERE PENCERESİ | LOW | skor 26.4
-     → Gol üretimi zayıf (maç başına 0.8 gol attı) - 8 numara / fizik motoru pozisyonunda yaratıcılık gerekiyor. Maxim: 5 gol, 32 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere. 36 yaş — deneyim katkısı, kısa dönem çözüm.
+     → Gol üretimi zayıf (maç başına 0.667 gol attı) - 8 numara / fizik motoru pozisyonunda yaratıcılık gerekiyor. Maxim: 5 gol, 32 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere. 36 yaş — deneyim katkısı, kısa dönem çözüm.
   3. ORKUN KÖKÇÜ (BEŞİKTAŞ A.Ş.) | 25y | 8 gol | PREMİUM TRANSFER | MEDIUM | skor 24.9
-     → Gol üretimi zayıf (maç başına 0.8 gol attı) - 8 numara / fizik motoru pozisyonunda yaratıcılık gerekiyor. Kökçü: 8 gol, 29 maç. Uzun sözleşme — yüksek bonusu göze almalı.
+     → Gol üretimi zayıf (maç başına 0.667 gol attı) - 8 numara / fizik motoru pozisyonunda yaratıcılık gerekiyor. Kökçü: 8 gol, 29 maç. Uzun sözleşme — yüksek bonusu göze almalı.
 
 **Sol açık / çizgi kırıcı** — Deplasman veya üretim zafiyetinde çizgi kıran/taşıyıcı hücum profili gerekir.
   1. DORGELES NENE (FENERBAHÇE A.Ş.) | 23y | 10 gol | PREMİUM TRANSFER | HIGH | skor 24.2
-     → Gol üretimi zayıf (maç başına 0.8 gol attı) - Sol açık / çizgi kırıcı pozisyonunda yaratıcılık gerekiyor. Nene: 10 gol, 16 maçta sahada. Uzun sözleşme — yüksek bonusu göze almalı. 23 yaş, uzun vadeli yatırım profili.
+     → Gol üretimi zayıf (maç başına 0.667 gol attı) - Sol açık / çizgi kırıcı pozisyonunda yaratıcılık gerekiyor. Nene: 10 gol, 16 maçta sahada. Uzun sözleşme — yüksek bonusu göze almalı. 23 yaş, uzun vadeli yatırım profili.
   2. ERNEST MUÇİ (TRABZONSPOR A.Ş.) | 25y | 11 gol | PREMİUM TRANSFER | MEDIUM | skor 22.6
-     → Gol üretimi zayıf (maç başına 0.8 gol attı) - Sol açık / çizgi kırıcı pozisyonunda yaratıcılık gerekiyor. Muçi̇: 11 gol, 22 maç. Uzun sözleşme — yüksek bonusu göze almalı.
+     → Gol üretimi zayıf (maç başına 0.667 gol attı) - Sol açık / çizgi kırıcı pozisyonunda yaratıcılık gerekiyor. Muçi̇: 11 gol, 22 maç. Uzun sözleşme — yüksek bonusu göze almalı.
   3. BARIŞ ALPER YILMAZ (GALATASARAY A.Ş.) | 26y | 8 gol | PREMİUM TRANSFER | MEDIUM | skor 22.1
-     → Gol üretimi zayıf (maç başına 0.8 gol attı) - Sol açık / çizgi kırıcı pozisyonunda yaratıcılık gerekiyor. Yilmaz: 8 gol, 27 maç. Uzun sözleşme — yüksek bonusu göze almalı.
+     → Gol üretimi zayıf (maç başına 0.667 gol attı) - Sol açık / çizgi kırıcı pozisyonunda yaratıcılık gerekiyor. Yilmaz: 8 gol, 27 maç. Uzun sözleşme — yüksek bonusu göze almalı.
 
 ### SAMSUNSPOR A.Ş.  [ACİL]
 *0.8 puan/maç | maç başına 1.2 attı | maç başına 2.2 yedi*
@@ -252,11 +252,11 @@ Zayıf nokta: skor üretim sorunu, deplasman zayıf, düşük şut baskısı
      → Gol üretimi zayıf (maç başına 1.0 gol attı) - 8 numara / fizik motoru pozisyonunda yaratıcılık gerekiyor. Kökçü: 8 gol, 29 maç. Uzun sözleşme — yüksek bonusu göze almalı.
 
 ### KASIMPAŞA A.Ş.  [YÜKSEK]
-*1.8 puan/maç | maç başına 1.4 attı | maç başına 1.0 yedi*
+*1.667 puan/maç | maç başına 1.167 attı | maç başına 0.833 yedi*
 
 Zayıf nokta: son bölüm gol yeme riski, kart baskısı, skor üretim sorunu, deplasman zayıf, hücum verimsizliği
 
-**Kaleci / istikrar** — Savunma kırılganlığında kaleci istikrarı önceliği; GA ortalaması 1.0 — güvenilir kaleci pozisyonu kritik.
+**Kaleci / istikrar** — Savunma kırılganlığında kaleci istikrarı önceliği; GA ortalaması 0.833 — güvenilir kaleci pozisyonu kritik.
   1. ANFERNEE JAMAL DIJKSTEEL (KOCAELİSPOR) | 29y | 0 gol | MÜZAKERE PENCERESİ | LOW | skor 19.0
      → Son bölüm gol yeme riski sorunu var; Kaleci / istikrar bu açığı kapatacak. Dijksteel: 28 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
   2. BERKAY ÖZCAN (İSTANBUL BAŞAKŞEHİR FK) | 28y | 0 gol | MÜZAKERE PENCERESİ | LOW | skor 18.3

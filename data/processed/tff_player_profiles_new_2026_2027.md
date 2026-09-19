@@ -1,12 +1,12 @@
 # TFF Oyuncu Profilleri
 
 - Takım filtresi: Yok
-- Profil sayısı: 462
+- Profil sayısı: 463
 - Hata sayısı: 0
-- Ortalama yaş: 25.8
+- Ortalama yaş: 25.9
 - Ortalama kalan sözleşme ayı: 22.0
 - 23 yaş ve altı oyuncu: 156
-- 13 ay içinde sözleşmesi bitecek oyuncu: 180
+- 13 ay içinde sözleşmesi bitecek oyuncu: 181
 
 ## Genç Oyuncular
 
