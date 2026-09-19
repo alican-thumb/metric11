@@ -16,8 +16,8 @@ _"Beyan edilen ort. olasılık" ile "İsabet" arasındaki fark büyükse (özell
 | Güven bandı | Maç | İsabet | Beyan edilen ort. olasılık | Referans (2025-26, 258 maç) |
 | --- | --- | --- | --- | --- |
 | HIGH | 15 | 8/15 (%53) | %59 | %64 |
-| MEDIUM | 18 | 3/18 (%17) | %46 | %54 |
-| LOW | 12 | 6/12 (%50) | %38 | %48 |
+| MEDIUM | 17 | 2/17 (%12) | %46 | %54 |
+| LOW | 13 | 7/13 (%54) | %38 | %48 |
 
 ## Hafta 5 — 3/9 isabet (%33)
 
@@ -25,7 +25,7 @@ _"Beyan edilen ort. olasılık" ile "İsabet" arasındaki fark büyükse (özell
 | --- | --- | --- | --- | --- |
 | BEŞİKTAŞ A.Ş. - ERZURUMSPOR FK | 3 - 0 | Ev | ✅ | HIGH |
 | EYÜPSPOR - ÇAYKUR RİZESPOR A.Ş. | 0 - 2 | Ev | ❌ | MEDIUM |
-| SAMSUNSPOR A.Ş. - ARCA ÇORUM FK | 1 - 5 | Ev | ❌ | LOW |
+| SAMSUNSPOR A.Ş. - ARCA ÇORUM FK | 1 - 5 | Ev | ❌ | MEDIUM |
 | CORENDON ALANYASPOR - GÖZTEPE A.Ş. | 2 - 2 | Beraberlik | ✅ | LOW |
 | TÜMOSAN KONYASPOR - TRABZONSPOR A.Ş. | 1 - 0 | Deplasman | ❌ | MEDIUM |
 | GENÇLERBİRLİĞİ - KASIMPAŞA A.Ş. | 1 - 2 | Ev | ❌ | HIGH |
@@ -57,7 +57,7 @@ _"Beyan edilen ort. olasılık" ile "İsabet" arasındaki fark büyükse (özell
 | GALATASARAY A.Ş. - GÖZTEPE A.Ş. | 3 - 2 | Ev | ✅ | HIGH |
 | EYÜPSPOR - CORENDON ALANYASPOR | 2 - 1 | Ev | ✅ | MEDIUM |
 | İSTANBUL BAŞAKŞEHİR FK - KASIMPAŞA A.Ş. | 1 - 1 | Ev | ❌ | HIGH |
-| SAMSUNSPOR A.Ş. - FENERBAHÇE A.Ş. | 0 - 2 | Deplasman | ✅ | MEDIUM |
+| SAMSUNSPOR A.Ş. - FENERBAHÇE A.Ş. | 0 - 2 | Deplasman | ✅ | LOW |
 | AMED SPORTİF FAALİYETLER - TRABZONSPOR A.Ş. | 2 - 1 | Ev | ✅ | MEDIUM |
 | BEŞİKTAŞ A.Ş. - ARCA ÇORUM FK | 6 - 2 | Ev | ✅ | HIGH |
 
@@ -66,7 +66,7 @@ _"Beyan edilen ort. olasılık" ile "İsabet" arasındaki fark büyükse (özell
 | Maç | Skor | Tahmin | Sonuç | Güven |
 | --- | --- | --- | --- | --- |
 | ERZURUMSPOR FK - GALATASARAY A.Ş. | 0 - 4 | Deplasman | ✅ | HIGH |
-| ÇAYKUR RİZESPOR A.Ş. - SAMSUNSPOR A.Ş. | 0 - 2 | Ev | ❌ | MEDIUM |
+| ÇAYKUR RİZESPOR A.Ş. - SAMSUNSPOR A.Ş. | 0 - 2 | Ev | ❌ | LOW |
 | ARCA ÇORUM FK - KASIMPAŞA A.Ş. | 0 - 1 | Ev | ❌ | MEDIUM |
 | FENERBAHÇE A.Ş. - TÜMOSAN KONYASPOR | 4 - 2 | Ev | ✅ | HIGH |
 | TRABZONSPOR A.Ş. - İSTANBUL BAŞAKŞEHİR FK | 2 - 1 | Deplasman | ❌ | HIGH |
@@ -87,5 +87,5 @@ _"Beyan edilen ort. olasılık" ile "İsabet" arasındaki fark büyükse (özell
 | İSTANBUL BAŞAKŞEHİR FK - KOCAELİSPOR | 2 - 0 | Ev | ✅ | HIGH |
 | AMED SPORTİF FAALİYETLER - ERZURUMSPOR FK | 3 - 0 | Ev | ✅ | LOW |
 | BEŞİKTAŞ A.Ş. - EYÜPSPOR | 1 - 0 | Ev | ✅ | HIGH |
-| SAMSUNSPOR A.Ş. - GÖZTEPE A.Ş. | 3 - 3 | Deplasman | ❌ | LOW |
+| SAMSUNSPOR A.Ş. - GÖZTEPE A.Ş. | 3 - 3 | Ev | ❌ | LOW |
 

@@ -1,12 +1,11 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-09-18T20:55:45.915728+00:00
-Toplam ilgili haber: 53
+Üretim zamanı: 2026-09-19T00:19:55.295192+00:00
+Toplam ilgili haber: 50
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
-- [Millilerin rakibi İtalya'nın aday kadrosu belli oldu](https://www.aksam.com.tr/spor/millilerin-rakibi-italyanin-aday-kadrosu-belli-oldu/haber-1699501) — Aksam Spor · 2026-09-18T21:27:00+03:00 · turnuva=— · kulüp=—
 - [İtalya'nın aday kadrosu belli oldu!](https://www.sabah.com.tr/spor/futbol/2026/09/18/italyanin-aday-kadrosu-belli-oldu) — Sabah Spor · 2026-09-18T21:10:39+03:00 · turnuva=— · kulüp=—
 - [Futbolda Ziraat Türkiye Kupası 2. eleme turu kura çekimi yapıldı](https://www.aa.com.tr/tr/spor/futbolda-ziraat-turkiye-kupasi-2-eleme-turu-kura-cekimi-yapildi/4061437) — Anadolu Ajansı Spor · 2026-09-18T19:19:32+03:00 · turnuva=— · kulüp=—
 - [Basketbol Avrupa Ligi Süper Kupa'da Olympiakos, finale yükseldi](https://www.aa.com.tr/tr/spor/basketbol-avrupa-ligi-super-kupada-olympiakos-finale-yukseldi/4061430) — Anadolu Ajansı Spor · 2026-09-18T19:15:23+03:00 · turnuva=EL · kulüp=Fenerbahçe
@@ -40,9 +39,10 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Beşiktaş 4-1 Marsilya Maç Özeti | Kartal, Avrupa’da yüksekten uçtu](https://www.cnnturk.com/spor/futbol/live-besiktas-4-1-marsilya-mac-ozeti-kartal-avrupada-yuksekten-uctu-3468023) — CNN Türk Spor · 2026-09-18T00:09:11+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [UEFA Avrupa Ligi'nde ilk hafta maçları sona erdi](https://www.aa.com.tr/tr/spor/-uefa-avrupa-liginde-ilk-hafta-maclari-sona-erdi/4060642) — Anadolu Ajansı Spor · 2026-09-18T00:08:37+03:00 · turnuva=EL · kulüp=—
 - [Beşiktaş, UEFA Avrupa Ligi'ne 3 puanla başladı](https://www.aa.com.tr/tr/spor/besiktas-uefa-avrupa-ligine-3-puanla-basladi/4060572) — Anadolu Ajansı Spor · 2026-09-17T22:55:01+03:00 · turnuva=EL · kulüp=Beşiktaş
-- [“Çok iyi başladık"](https://www.haberturk.com/spor/orkun-kokcu-cok-iyi-basladik-3913297) — Haberturk Spor · 2026-09-17T22:14:11+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Italiano'dan genç isme büyük övgü!](https://www.haberturk.com/spor/vincenzo-italiano-dan-ilhan-fakili-ya-buyuk-ovgu-basrol-oyuncusuna-donusebilir-3913287) — Haberturk Spor · 2026-09-17T22:03:17+00:00 · turnuva=EL · kulüp=Beşiktaş
-- [Salih Özcan'dan taraftarlara büyük övgü!](https://www.haberturk.com/spor/besiktas-ta-salih-ozcan-dan-taraftarlara-buyuk-ovgu-3913291) — Haberturk Spor · 2026-09-17T21:32:11+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş’ta Ernest Poku siftah yaptı!](https://www.hurriyet.com.tr/sporarena/besiktasta-ernest-poku-siftah-yapti-43310677) — Hürriyet Spor · 2026-09-17T21:32:00+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş sahasında kayıpsız devam ediyor!](https://www.hurriyet.com.tr/sporarena/besiktas-sahasinda-kayipsiz-devam-ediyor-43310675) — Hürriyet Spor · 2026-09-17T21:30:17+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Salih Özcan: 'Kulaklarım hala duymuyor!'](https://www.hurriyet.com.tr/sporarena/salih-ozcan-kulaklarim-hala-duymuyor-43310662) — Hürriyet Spor · 2026-09-17T21:27:00+00:00 · turnuva=EL · kulüp=Beşiktaş
+- [Beşiktaş'ta Vincenzo Italiano fırtınası!](https://www.haberturk.com/spor/foto/besiktas-ta-vincenzo-italiano-firtinasi-16-yil-sonra-bir-ilk-3913285) — Haberturk Spor · 2026-09-17T21:22:55+00:00 · turnuva=EL · kulüp=Beşiktaş
+- [BEŞİKTAŞ - MARSİLYA MAÇI CANLI İZLE | Beşiktaş Avrupa Ligi Maçı TRT 1 Şifresiz, HD Canlı Yayın: BJK Maçı Hangi Kanalda, Nereden İzlenir?](https://www.cnnturk.com/spor/futbol/besiktas-marsilya-maci-canli-izle-besiktas-avrupa-ligi-maci-trt-1-sifresiz-hd-canli-yayin-bjk-maci-hangi-kanalda-nereden-izlenir-3467960) — CNN Türk Spor · 2026-09-17T21:01:50+00:00 · turnuva=EL · kulüp=Beşiktaş
+- [BEŞİKTAŞ MARSİLYA MAÇI HANGİ KANALDA? UEFA Avrupa Ligi Beşiktaş Marsilya Maçı Saat Kaçta, Nereden İzlenir, Şifresiz Mi? İşte BJK Marsilya Maç Kadrosu...](https://www.cnnturk.com/spor/futbol/besiktas-marsilya-maci-hangi-kanalda-uefa-avrupa-ligi-besiktas-marsilya-maci-saat-kacta-nereden-izlenir-sifresiz-mi-iste-bjk-3467719) — CNN Türk Spor · 2026-09-17T21:01:13+00:00 · turnuva=EL · kulüp=Beşiktaş
