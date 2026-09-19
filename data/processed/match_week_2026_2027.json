@@ -1,6 +1,6 @@
 {
   "available": true,
-  "generated_at": "2026-09-19T04:35:47.462208",
+  "generated_at": "2026-09-19T07:21:28.130585",
   "week": 6,
   "matches": [
     {
@@ -8,29 +8,18 @@
       "date": "18 Eyl",
       "home_team": "KASIMPAŞA A.Ş.",
       "away_team": "TÜMOSAN KONYASPOR",
-      "is_played": false,
-      "actual_score": null,
+      "is_played": true,
+      "actual_score": "0 - 0",
       "predicted": "home",
       "pick_text": "KASIMPAŞA A.Ş.",
-      "home_win_probability": 0.575,
+      "home_win_probability": 0.573,
       "draw_probability": 0.253,
-      "away_win_probability": 0.172,
-      "data_confidence": "HIGH",
+      "away_win_probability": 0.173,
+      "data_confidence": "PLAYED",
       "recommended_scoreline": "1-0",
       "expected_home_goals": 1.89,
-      "expected_away_goals": 0.92,
-      "signals": {
-        "over_2_5_probability": 0.533,
-        "btts_probability": 0.511,
-        "expected_total_cards": 5.0,
-        "red_card_risk": 0.264,
-        "home_card_data_available": true,
-        "away_card_data_available": true,
-        "no_goal_probability": 0.06,
-        "home_scores_first_probability": 0.632,
-        "away_scores_first_probability": 0.308,
-        "likely_goal_band": "76-90+"
-      }
+      "expected_away_goals": 0.93,
+      "signals": null
     },
     {
       "match_id": "317834",
@@ -266,37 +255,37 @@
     }
   ],
   "last_week": {
-    "week": 5,
-    "evaluated_matches": 9,
-    "correct": 3,
-    "accuracy": 0.3333,
-    "actual_draws": 2,
-    "draws_caught": 1,
-    "draw_recall": 0.5,
-    "high_conf_matches": 4,
-    "high_conf_correct": 2,
-    "high_conf_accuracy": 0.5,
+    "week": 6,
+    "evaluated_matches": 1,
+    "correct": 0,
+    "accuracy": 0.0,
+    "actual_draws": 1,
+    "draws_caught": 0,
+    "draw_recall": 0.0,
+    "high_conf_matches": 1,
+    "high_conf_correct": 0,
+    "high_conf_accuracy": 0.0,
     "confidence_breakdown": {
       "HIGH": {
-        "matches": 4,
-        "correct": 2,
-        "accuracy": 0.5,
-        "avg_stated_probability": 0.6175,
-        "calibration_gap": -0.1175
-      },
-      "MEDIUM": {
-        "matches": 4,
+        "matches": 1,
         "correct": 0,
         "accuracy": 0.0,
-        "avg_stated_probability": 0.447,
-        "calibration_gap": -0.447
+        "avg_stated_probability": 0.573,
+        "calibration_gap": -0.573
+      },
+      "MEDIUM": {
+        "matches": 0,
+        "correct": 0,
+        "accuracy": null,
+        "avg_stated_probability": null,
+        "calibration_gap": null
       },
       "LOW": {
-        "matches": 1,
-        "correct": 1,
-        "accuracy": 1.0,
-        "avg_stated_probability": 0.287,
-        "calibration_gap": 0.713
+        "matches": 0,
+        "correct": 0,
+        "accuracy": null,
+        "avg_stated_probability": null,
+        "calibration_gap": null
       }
     }
   }

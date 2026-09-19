@@ -4,10 +4,10 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 
 ## Genel Karne
 
-- Değerlendirilen maç: **45**
-- İsabet: **17/45** (%38)
-- Beraberlik yakalama: **2/9** (%22)
-- Yüksek güvenli maç isabeti: **8/15** (%53)
+- Değerlendirilen maç: **46**
+- İsabet: **17/46** (%37)
+- Beraberlik yakalama: **2/10** (%20)
+- Yüksek güvenli maç isabeti: **8/16** (%50)
 
 ### Güven bandı kalibrasyonu
 
@@ -15,9 +15,15 @@ _"Beyan edilen ort. olasılık" ile "İsabet" arasındaki fark büyükse (özell
 
 | Güven bandı | Maç | İsabet | Beyan edilen ort. olasılık | Referans (2025-26, 258 maç) |
 | --- | --- | --- | --- | --- |
-| HIGH | 15 | 8/15 (%53) | %59 | %64 |
+| HIGH | 16 | 8/16 (%50) | %59 | %64 |
 | MEDIUM | 17 | 2/17 (%12) | %46 | %54 |
 | LOW | 13 | 7/13 (%54) | %38 | %48 |
+
+## Hafta 6 — 0/1 isabet (%0)
+
+| Maç | Skor | Tahmin | Sonuç | Güven |
+| --- | --- | --- | --- | --- |
+| KASIMPAŞA A.Ş. - TÜMOSAN KONYASPOR | 0 - 0 | Ev | ❌ | HIGH |
 
 ## Hafta 5 — 3/9 isabet (%33)
 
