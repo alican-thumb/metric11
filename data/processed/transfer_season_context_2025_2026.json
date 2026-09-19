@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-09-19T17:20:13.113725+00:00",
+  "generated_at": "2026-09-19T20:38:40.423289+00:00",
   "season": "2025_2026",
   "summary": {
     "free_agents_count": 95,
     "final_year_count": 334,
-    "transfer_signals_count": 17,
+    "transfer_signals_count": 16,
     "transfer_status_counts": {
       "OFFICIAL": 0,
       "CORROBORATED": 1,
       "RUMOR": 5,
-      "REVIEW_REQUIRED": 11
+      "REVIEW_REQUIRED": 10
     },
     "promotion_events_count": 0,
     "free_agent_total_market_value_eur": 180475000
@@ -483,12 +483,11 @@
       "entity_confidence": "HIGH",
       "verification_status": "CORROBORATED",
       "interpretation": "Birden fazla kaynak aynı yönlü iddiayı taşıyor; resmi açıklama beklenir.",
-      "source_count": 4,
+      "source_count": 3,
       "sources": [
         "GZT",
         "A Spor",
-        "Fotomaç",
-        "yenisafak.com"
+        "Yeni Şafak"
       ],
       "evidence": [
         {
@@ -514,25 +513,55 @@
           "first_observed_at": null
         },
         {
-          "source": "Fotomaç",
+          "source": "Yeni Şafak",
           "source_tier": "MEDIA",
           "source_type": "google_news",
           "account_type": null,
           "query": "Samsunspor transfer",
-          "title": "Samsunspor’da Marius Mouandilmadji, Olympiakos’a transfer oldu! - Fotomaç",
-          "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQNEFoVEdPd3c3VUF4N3BEUzdRXzdjQ1ptdFZwZWNfM0t0S25DNXczTzliSi1aa0hCNHBjMEQwVWNzS1gtUnNOSUxZeUVSVk1wYnRSSTI5WldDa2swRVhicVZTMW1qaVRpNUUyejliS1gyazRMOTJ3bm5vdktoWmRUMGdDa01DUEJKQUFWUjZSRnptcHJTSzc3bjVSQXAxdHpEaGEyNkdiclBuVFJW?oc=5",
-          "published_at": "2026-09-16T06:50:37+00:00",
-          "first_observed_at": null
-        },
-        {
-          "source": "yenisafak.com",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Samsunspor transfer",
-          "title": "Samsunspor'da Mouandilmadji ayrılığı: 9 milyon Euro'ya transfer oldu - yenisafak.com",
+          "title": "Samsunspor'da Mouandilmadji ayrılığı: 9 milyon Euro'ya transfer oldu - Yeni Şafak",
           "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOd0hPNHdrSFBLWkVNcG1pNjU5SlN1emdHLUo3M0NjQWZSSEpNSF84bE1Bc1A5S3Z3Zm1wU3hSTE42YS1aejYwRG8yUmdrdkwzYzFHRDJOZEZEWklRa0xqOS1yd1Nxb3k1VUpMT25QYWtHcnAyU0tweHhNU0JuM2J2WEMwenoyVXpBVlpoZHhoVFZSMWRjUGIzT01TZVZIb3kwZFdaMXhxQdIBsgFBVV95cUxPM0gyTF9ETnlWV2lHNVVtNUJnX1Jwa1JBSklucXprbVl4ZGJRVnJDWDFZRG5lSjRMRFBIWGhfT3J6TWZfdUxYV0FXQkJrZ0xtVnY0ZU15Y1pPd1FIdHR5eE82R1owamRVbkNvUEV3WGxab0puSW0zLTVvUHgyaEFIZGh1YjZVaE9rVjRwVi15LUl5UVhvNWZBVUJfSlpjX1JnYlVCTk5wN0d0bWVQRU54dl9B?oc=5",
           "published_at": "2026-09-15T13:57:57+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": "Genç Yetenek",
+      "from_club": null,
+      "to_club": "Alanyaspor",
+      "signal_type": "interest",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "HEADLINE_EXPLICIT_DIRECTION",
+      "article_id": "a9cdee07671f",
+      "title": "Isparta 32 Spor’dan Alanyaspor’a Genç Yetenek Transferi - demokrat32.com",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNOGFMMk5yZjVSaGl5OVBfYUt4MXJnVG4tRlV3S1liTXFaMVV4UGlXYUhQOUJYWTlpUUFwN184dGNDbm5TYy15TUhHVmhUOXg1cmtELXE2RjZTal85VUdSN1JZMWktQ21yaUtWejFyUzN4cXlZd3RhVzlvTzY0a0pwVDlKOHczcFE?oc=5",
+      "source": "demokrat32.com",
+      "source_type": "google_news",
+      "account_type": null,
+      "query": "Alanyaspor transfer",
+      "source_tier": "MEDIA",
+      "published_at": "2026-09-19T19:30:00+00:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "MEDIUM",
+      "verification_status": "RUMOR",
+      "interpretation": "Tek kaynaklı transfer iddiası; yalnız transfer radarında izlenir.",
+      "source_count": 1,
+      "sources": [
+        "demokrat32.com"
+      ],
+      "evidence": [
+        {
+          "source": "demokrat32.com",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Alanyaspor transfer",
+          "title": "Isparta 32 Spor’dan Alanyaspor’a Genç Yetenek Transferi - demokrat32.com",
+          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNOGFMMk5yZjVSaGl5OVBfYUt4MXJnVG4tRlV3S1liTXFaMVV4UGlXYUhQOUJYWTlpUUFwN184dGNDbm5TYy15TUhHVmhUOXg1cmtELXE2RjZTal85VUdSN1JZMWktQ21yaUtWejFyUzN4cXlZd3RhVzlvTzY0a0pwVDlKOHczcFE?oc=5",
+          "published_at": "2026-09-19T19:30:00+00:00",
           "first_observed_at": null
         }
       ],
@@ -574,47 +603,6 @@
           "title": "Fenerbahçe, Yvonne Anderson'u transfer etti - Ensonhaber",
           "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOelNCXzBxSERFclVDRWtyWjJsRGhMWFF3cVAwa1BEMkVsY2hqZ1U2SUJOdlJoMTBSQ2RtSF84SmIycEFlVjV6bjQyTFJGTm5OYV9IZG1zN2JUbFlSRmFWNlhYcmQ4VU5jakFMYlRfcGpYVF9iV0kxaHpZNkNVSUxCR3Zqcw?oc=5",
           "published_at": "2026-09-19T15:52:54+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": "Zorlanıyoruz",
-      "from_club": null,
-      "to_club": "Kayserispor",
-      "signal_type": "interest",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "HEADLINE_EXPLICIT_DIRECTION",
-      "article_id": "0b8c020a9032",
-      "title": "Kayserispor’daki tek eksiği teknik direktör Atila Gerin açıkladı: Zorlanıyoruz - kayserihaber.com",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQX0NLNWotT0JBOV91TU1JbERCT1VEcHV4T3hLNk5sRnNTRDFLUllkQlhWVWdfakdGdnNwNi1aQkx0eUtTZGxkN3BmQ3RkMlVUR3N5VFh4b2FDZlZkcTEwYlFWOUQ5SXVEMWlGZ0hLdjl2NjNtbWViaGtJM2hQdzIxcU9vMnBLaWsxMm1V?oc=5",
-      "source": "kayserihaber.com",
-      "source_type": "google_news",
-      "account_type": null,
-      "query": "Süper Lig teknik direktör",
-      "source_tier": "MEDIA",
-      "published_at": "2026-09-19T12:20:00+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "MEDIUM",
-      "verification_status": "RUMOR",
-      "interpretation": "Tek kaynaklı transfer iddiası; yalnız transfer radarında izlenir.",
-      "source_count": 1,
-      "sources": [
-        "kayserihaber.com"
-      ],
-      "evidence": [
-        {
-          "source": "kayserihaber.com",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Süper Lig teknik direktör",
-          "title": "Kayserispor’daki tek eksiği teknik direktör Atila Gerin açıkladı: Zorlanıyoruz - kayserihaber.com",
-          "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQX0NLNWotT0JBOV91TU1JbERCT1VEcHV4T3hLNk5sRnNTRDFLUllkQlhWVWdfakdGdnNwNi1aQkx0eUtTZGxkN3BmQ3RkMlVUR3N5VFh4b2FDZlZkcTEwYlFWOUQ5SXVEMWlGZ0hLdjl2NjNtbWViaGtJM2hQdzIxcU9vMnBLaWsxMm1V?oc=5",
-          "published_at": "2026-09-19T12:20:00+00:00",
           "first_observed_at": null
         }
       ],
@@ -789,47 +777,6 @@
     {
       "player_name": null,
       "from_club": null,
-      "to_club": "Fenerbahçe",
-      "signal_type": "transfer_fee",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "8086df2591f7",
-      "title": "Fenerbahçe için sürpriz transfer iddiası! Yıldız oyuncunun bonservisi belli oldu - Fenerbahçe - Spor Haberleri - Milliyet",
-      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPRGQ1c2pYZGUxRlhEcEMxdlV0Q3Z2S2N2OUdQYThQMTB3eXlvWUlaTEluQXZ4eUtQam15cFB1d21sUXdfZzBoYXVWNHZURnM5LXRxVnNDbHFyNjd5OU9OSEpzbnJiOHdJWno1aGRjT1lKWl90a3gxQ2p1dFphZERRZ2F2Yjg1QUFNNldTRkswZUlZWndBWGVpMjF0OHp0cEpMR2pqMllIejN4Yy1ONUNIWVRCc3NfdElHTlo5N2doZw?oc=5",
-      "source": "Milliyet",
-      "source_type": "google_news",
-      "account_type": null,
-      "query": "Fenerbahçe transfer",
-      "source_tier": "MEDIA",
-      "published_at": "2026-09-19T09:09:09+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Milliyet"
-      ],
-      "evidence": [
-        {
-          "source": "Milliyet",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Fenerbahçe transfer",
-          "title": "Fenerbahçe için sürpriz transfer iddiası! Yıldız oyuncunun bonservisi belli oldu - Fenerbahçe - Spor Haberleri - Milliyet",
-          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPRGQ1c2pYZGUxRlhEcEMxdlV0Q3Z2S2N2OUdQYThQMTB3eXlvWUlaTEluQXZ4eUtQam15cFB1d21sUXdfZzBoYXVWNHZURnM5LXRxVnNDbHFyNjd5OU9OSEpzbnJiOHdJWno1aGRjT1lKWl90a3gxQ2p1dFphZERRZ2F2Yjg1QUFNNldTRkswZUlZWndBWGVpMjF0OHp0cEpMR2pqMllIejN4Yy1ONUNIWVRCc3NfdElHTlo5N2doZw?oc=5",
-          "published_at": "2026-09-19T09:09:09+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": null,
       "to_club": "Kocaelispor",
       "signal_type": "official_transfer",
       "window": "summer_2026",
@@ -959,9 +906,9 @@
       "confidence": "LOW",
       "direction_quality": "PLAYER_UNRESOLVED",
       "article_id": "1170d1a2d39f",
-      "title": "Fenerbahçe’de 2 yıldızla yollar ayrılıyor! Ara transfer planı şimdiden hazır... - sabah.com.tr",
+      "title": "Fenerbahçe’de 2 yıldızla yollar ayrılıyor! Ara transfer planı şimdiden hazır... - Sabah",
       "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNdlJPMkpkOWdsTF9lU1BaNzNnUG5ud2FxYVFzWnJrOVM2UmNSMHI3M3VfYXZlckFjU3p3azdFWS1uVVhXZUVHNmE3Sm5tUzg3ZWRnSVFXLUYyM0ppdFhvQ0VwRktsVXVhWG8zc3ZoVS1SRmpIb2h6UnBuYWw2OUphaGxxaWMxaHB2cl9idGJ1UHJLenFTVEFLWDBKMGdYNXhWMVhjbk9KZzNjMm1TVVIzalRjeXREOW9Z0gG7AUFVX3lxTE1TNW9PQVp0RHpxV0dxZktNUDROUzJJSlA4ZUNTYWI2UWprRzczeE56dE9NTnBERHQtaWo4OGw4TWdGWjI5WHgwOURqYlgzbndCNE0zTC1jVVRCTzVNbWxTM3EyalRzZnpaMXBfNml3Vnc1ZXkyclgwYmRwNHhmVUV2NEtCVThybTc0NmRZaEEydjZncVVTRUs0eVZlX0h4eDJEZWxENHU2UHhXVWUzOG1Da3QxbnVwVHh3VWM?oc=5",
-      "source": "sabah.com.tr",
+      "source": "Sabah",
       "source_type": "google_news",
       "account_type": null,
       "query": "Eyüpspor transfer",
@@ -974,16 +921,16 @@
       "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
       "source_count": 1,
       "sources": [
-        "sabah.com.tr"
+        "Sabah"
       ],
       "evidence": [
         {
-          "source": "sabah.com.tr",
+          "source": "Sabah",
           "source_tier": "MEDIA",
           "source_type": "google_news",
           "account_type": null,
           "query": "Eyüpspor transfer",
-          "title": "Fenerbahçe’de 2 yıldızla yollar ayrılıyor! Ara transfer planı şimdiden hazır... - sabah.com.tr",
+          "title": "Fenerbahçe’de 2 yıldızla yollar ayrılıyor! Ara transfer planı şimdiden hazır... - Sabah",
           "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNdlJPMkpkOWdsTF9lU1BaNzNnUG5ud2FxYVFzWnJrOVM2UmNSMHI3M3VfYXZlckFjU3p3azdFWS1uVVhXZUVHNmE3Sm5tUzg3ZWRnSVFXLUYyM0ppdFhvQ0VwRktsVXVhWG8zc3ZoVS1SRmpIb2h6UnBuYWw2OUphaGxxaWMxaHB2cl9idGJ1UHJLenFTVEFLWDBKMGdYNXhWMVhjbk9KZzNjMm1TVVIzalRjeXREOW9Z0gG7AUFVX3lxTE1TNW9PQVp0RHpxV0dxZktNUDROUzJJSlA4ZUNTYWI2UWprRzczeE56dE9NTnBERHQtaWo4OGw4TWdGWjI5WHgwOURqYlgzbndCNE0zTC1jVVRCTzVNbWxTM3EyalRzZnpaMXBfNml3Vnc1ZXkyclgwYmRwNHhmVUV2NEtCVThybTc0NmRZaEEydjZncVVTRUs0eVZlX0h4eDJEZWxENHU2UHhXVWUzOG1Da3QxbnVwVHh3VWM?oc=5",
           "published_at": "2026-09-18T04:30:01+00:00",
           "first_observed_at": null
