@@ -4,10 +4,10 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 
 ## Genel Karne
 
-- Değerlendirilen maç: **48**
-- İsabet: **18/48** (%38)
+- Değerlendirilen maç: **50**
+- İsabet: **19/50** (%38)
 - Beraberlik yakalama: **2/10** (%20)
-- Yüksek güvenli maç isabeti: **8/17** (%47)
+- Yüksek güvenli maç isabeti: **8/18** (%44)
 
 ### Güven bandı kalibrasyonu
 
@@ -15,17 +15,19 @@ _"Beyan edilen ort. olasılık" ile "İsabet" arasındaki fark büyükse (özell
 
 | Güven bandı | Maç | İsabet | Beyan edilen ort. olasılık | Referans (2025-26, 258 maç) |
 | --- | --- | --- | --- | --- |
-| HIGH | 17 | 8/17 (%47) | %59 | %64 |
+| HIGH | 18 | 8/18 (%44) | %59 | %64 |
 | MEDIUM | 18 | 3/18 (%17) | %46 | %54 |
-| LOW | 13 | 7/13 (%54) | %38 | %48 |
+| LOW | 14 | 8/14 (%57) | %38 | %48 |
 
-## Hafta 6 — 1/3 isabet (%33)
+## Hafta 6 — 2/5 isabet (%40)
 
 | Maç | Skor | Tahmin | Sonuç | Güven |
 | --- | --- | --- | --- | --- |
 | KASIMPAŞA A.Ş. - TÜMOSAN KONYASPOR | 0 - 0 | Ev | ❌ | HIGH |
 | ARCA ÇORUM FK - CORENDON ALANYASPOR | 1 - 2 | Ev | ❌ | HIGH |
 | KOCAELİSPOR - GAZİANTEP FUTBOL KULÜBÜ A.Ş. | 2 - 0 | Ev | ✅ | MEDIUM |
+| TRABZONSPOR A.Ş. - GALATASARAY A.Ş. | 4 - 0 | Deplasman | ❌ | HIGH |
+| İSTANBUL BAŞAKŞEHİR FK - GENÇLERBİRLİĞİ | 4 - 0 | Ev | ✅ | LOW |
 
 ## Hafta 5 — 3/9 isabet (%33)
 

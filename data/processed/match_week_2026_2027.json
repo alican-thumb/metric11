@@ -1,6 +1,6 @@
 {
   "available": true,
-  "generated_at": "2026-09-20T04:52:02.126748",
+  "generated_at": "2026-09-20T07:46:13.701389",
   "week": 6,
   "matches": [
     {
@@ -62,58 +62,36 @@
       "date": "19 Eyl",
       "home_team": "TRABZONSPOR A.Ş.",
       "away_team": "GALATASARAY A.Ş.",
-      "is_played": false,
-      "actual_score": null,
+      "is_played": true,
+      "actual_score": "4 - 0",
       "predicted": "away",
       "pick_text": "GALATASARAY A.Ş.",
       "home_win_probability": 0.211,
       "draw_probability": 0.208,
       "away_win_probability": 0.581,
-      "data_confidence": "HIGH",
+      "data_confidence": "PLAYED",
       "recommended_scoreline": "1-2",
       "expected_home_goals": 1.19,
       "expected_away_goals": 2.1,
-      "signals": {
-        "over_2_5_probability": 0.639,
-        "btts_probability": 0.611,
-        "expected_total_cards": 3.6,
-        "red_card_risk": 0.218,
-        "home_card_data_available": true,
-        "away_card_data_available": true,
-        "no_goal_probability": 0.037,
-        "home_scores_first_probability": 0.348,
-        "away_scores_first_probability": 0.615,
-        "likely_goal_band": "76-90+"
-      }
+      "signals": null
     },
     {
       "match_id": "317831",
       "date": "19 Eyl",
       "home_team": "İSTANBUL BAŞAKŞEHİR FK",
       "away_team": "GENÇLERBİRLİĞİ",
-      "is_played": false,
-      "actual_score": null,
+      "is_played": true,
+      "actual_score": "4 - 0",
       "predicted": "home",
       "pick_text": "İSTANBUL BAŞAKŞEHİR FK",
       "home_win_probability": 0.422,
       "draw_probability": 0.224,
       "away_win_probability": 0.355,
-      "data_confidence": "LOW",
+      "data_confidence": "PLAYED",
       "recommended_scoreline": "2-1",
       "expected_home_goals": 1.81,
       "expected_away_goals": 1.65,
-      "signals": {
-        "over_2_5_probability": 0.672,
-        "btts_probability": 0.676,
-        "expected_total_cards": 4.0,
-        "red_card_risk": 0.241,
-        "home_card_data_available": true,
-        "away_card_data_available": true,
-        "no_goal_probability": 0.031,
-        "home_scores_first_probability": 0.507,
-        "away_scores_first_probability": 0.462,
-        "likely_goal_band": "76-90+"
-      }
+      "signals": null
     },
     {
       "match_id": "317835",
@@ -234,22 +212,22 @@
   ],
   "last_week": {
     "week": 6,
-    "evaluated_matches": 3,
-    "correct": 1,
-    "accuracy": 0.3333,
+    "evaluated_matches": 5,
+    "correct": 2,
+    "accuracy": 0.4,
     "actual_draws": 1,
     "draws_caught": 0,
     "draw_recall": 0.0,
-    "high_conf_matches": 2,
+    "high_conf_matches": 3,
     "high_conf_correct": 0,
     "high_conf_accuracy": 0.0,
     "confidence_breakdown": {
       "HIGH": {
-        "matches": 2,
+        "matches": 3,
         "correct": 0,
         "accuracy": 0.0,
-        "avg_stated_probability": 0.5555,
-        "calibration_gap": -0.5555
+        "avg_stated_probability": 0.564,
+        "calibration_gap": -0.564
       },
       "MEDIUM": {
         "matches": 1,
@@ -259,11 +237,11 @@
         "calibration_gap": 0.538
       },
       "LOW": {
-        "matches": 0,
-        "correct": 0,
-        "accuracy": null,
-        "avg_stated_probability": null,
-        "calibration_gap": null
+        "matches": 1,
+        "correct": 1,
+        "accuracy": 1.0,
+        "avg_stated_probability": 0.422,
+        "calibration_gap": 0.578
       }
     }
   }
