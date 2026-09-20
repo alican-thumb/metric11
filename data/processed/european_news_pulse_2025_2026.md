@@ -1,6 +1,6 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-09-20T16:03:06.960526+00:00
+Üretim zamanı: 2026-09-20T17:31:13.559372+00:00
 Toplam ilgili haber: 13
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
@@ -18,4 +18,4 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Beşiktaş Marsilya'yı ezdi geçti! Avrupa Ligi'nde 4 golle şov](https://www.takvim.com.tr/spor/besiktas/2026/09/16/besiktas-marsilya-4-1-avrupa-ligi-mac-sonucu) — Takvim Spor · 2026-09-16T23:05:10+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [İzmir'de farklı tarife! Gaziemir turladı](https://www.takvim.com.tr/spor/2026/09/16/izmirde-farkli-tarife-gaziemir-turladi) — Takvim Spor · 2026-09-16T16:50:28+03:00 · turnuva=— · kulüp=—
 - [Ziraat Türkiye Kupası'nda gol yağmuru! Yeni Mersin İY turladı](https://www.takvim.com.tr/spor/2026/09/16/yeni-mersin-idman-yurdu-5-golle-ztkda-tur-atladi) — Takvim Spor · 2026-09-16T15:35:04+03:00 · turnuva=— · kulüp=—
-- [Miguel Cardoso ve Elisha Owusu ile resmî sözleşme imzaladık.](https://erzurumsporfk.org/2026/08/19/miguel-cardoso-ve-elisha-owusu-ile-resmi-sozlesme-imzaladik/) — Erzurumspor FK Resmi Web · 2026-08-19T20:45:50+03:00 · turnuva=EL · kulüp=Kayserispor
+- [Transfer Gerçekleri / Başakşehir-Galatasaray / Fenerbahçe- Beşiktaş / Şampiyonlar Ligi - YouTube](https://news.google.com/rss/articles/CBMiXEFVX3lxTE1BdGE1bnBJX0FnTmtiY2tEVDVsWnRaTGtZdXBDSGRBZ0xuWEstSTJsM21iWVJjY1Y4S3RzUWxwdEpPQnNSQWcyeHVTWnBMVnlneUlLUl9pZDU1WUpm?oc=5) — YouTube · 2026-09-09T14:00:04+00:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe, Beşiktaş, Başakşehir
