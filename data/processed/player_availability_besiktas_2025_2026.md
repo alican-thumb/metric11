@@ -11,7 +11,7 @@
 
 ## Güncel Haber/Sakat-Cezalı Bağlamı
 
-- INJURED | Rıdvan Yılmaz | kaynak=beIN SPORTS sakat ve cezalı listesi | güven=MEDIUM_CONTEXT
+- INJURED | Leandro Trossard | kaynak=beIN SPORTS sakat ve cezalı listesi | güven=MEDIUM_CONTEXT
 - SUSPENDED | Dusan Vlahovic | kaynak=beIN SPORTS sakat ve cezalı listesi | güven=MEDIUM_CONTEXT
 
 ## Maç Bazlı Eksikler

@@ -1,17 +1,18 @@
 # TFF Oyuncu Profilleri
 
 - Takım filtresi: Yok
-- Profil sayısı: 463
+- Profil sayısı: 466
 - Hata sayısı: 0
-- Ortalama yaş: 25.9
-- Ortalama kalan sözleşme ayı: 22.0
-- 23 yaş ve altı oyuncu: 156
-- 13 ay içinde sözleşmesi bitecek oyuncu: 181
+- Ortalama yaş: 25.8
+- Ortalama kalan sözleşme ayı: 21.9
+- 23 yaş ve altı oyuncu: 158
+- 13 ay içinde sözleşmesi bitecek oyuncu: 182
 
 ## Genç Oyuncular
 
 - FURKAN AYAZ ÖZCAN (GENÇLERBİRLİĞİ): yaş=16, sözleşme bitiş=2028-06-30
 - ATA YANIK (TÜMOSAN KONYASPOR): yaş=17, sözleşme bitiş=2028-06-30
+- DENİZ CEYLAN (KOCAELİSPOR): yaş=17, sözleşme bitiş=Yok
 - ERK ARDA ASLAN (GENÇLERBİRLİĞİ): yaş=17, sözleşme bitiş=Yok
 - MUSTAFA COŞKUN TOSUN (ÇAYKUR RİZESPOR A.Ş.): yaş=17, sözleşme bitiş=2029-06-30
 - YİĞİT HAMZA AYDAR (GENÇLERBİRLİĞİ): yaş=17, sözleşme bitiş=2028-06-30
@@ -39,7 +40,6 @@
 - EGEMEN AYDIN (TÜMOSAN KONYASPOR): yaş=19, sözleşme bitiş=2027-06-30
 - EREN CEMALİ YAĞMUR (TÜMOSAN KONYASPOR): yaş=19, sözleşme bitiş=2028-06-30
 - EYÜP DEĞİRMENCİ (MALATYA YEŞİLYURT SPOR KULÜBÜ): yaş=19, sözleşme bitiş=2027-06-30
-- HAYDAR KARATAŞ (KOCAELİSPOR): yaş=19, sözleşme bitiş=2030-06-30
 
 ## Sözleşme Fırsatları
 
@@ -59,6 +59,7 @@
 - AHMED ILDIZ (ARCA ÇORUM FK): kalan ay=9, bitiş=2027-06-30
 - AHMED KUTUCU (ÇAYKUR RİZESPOR A.Ş.): kalan ay=9, bitiş=2027-06-30
 - AHMED MORTADHA BEN OUANES (KASIMPAŞA A.Ş.): kalan ay=9, bitiş=2027-06-30
+- AHMET OĞUZ (TÜMOSAN KONYASPOR): kalan ay=9, bitiş=2027-06-30
 - ALEX OJAHN  MATOS (GÖZTEPE A.Ş.): kalan ay=9, bitiş=2027-06-30
 - ALEXANDRE MANUEL PENETRA CORREIRA (ARCA ÇORUM FK): kalan ay=9, bitiş=2027-06-30
 - ALEXANDRU IULIAN MAXIM (GAZİANTEP FUTBOL KULÜBÜ A.Ş.): kalan ay=9, bitiş=2027-06-30
@@ -72,4 +73,3 @@
 - ANDREAS GIANNIOTIS (KASIMPAŞA A.Ş.): kalan ay=9, bitiş=2027-06-30
 - ANDREAS SKOV OLSEN (İSTANBUL BAŞAKŞEHİR FK): kalan ay=9, bitiş=2027-06-30
 - ANFERNEE JAMAL DIJKSTEEL (KOCAELİSPOR): kalan ay=9, bitiş=2027-06-30
-- ARDA KIZILDAĞ (GAZİANTEP FUTBOL KULÜBÜ A.Ş.): kalan ay=9, bitiş=2027-06-30
