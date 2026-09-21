@@ -4,9 +4,9 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 
 ## Genel Karne
 
-- Değerlendirilen maç: **52**
-- İsabet: **20/52** (%38)
-- Beraberlik yakalama: **2/10** (%20)
+- Değerlendirilen maç: **54**
+- İsabet: **21/54** (%39)
+- Beraberlik yakalama: **2/11** (%18)
 - Yüksek güvenli maç isabeti: **9/19** (%47)
 
 ### Güven bandı kalibrasyonu
@@ -16,10 +16,10 @@ _"Beyan edilen ort. olasılık" ile "İsabet" arasındaki fark büyükse (özell
 | Güven bandı | Maç | İsabet | Beyan edilen ort. olasılık | Referans (2025-26, 258 maç) |
 | --- | --- | --- | --- | --- |
 | HIGH | 19 | 9/19 (%47) | %59 | %64 |
-| MEDIUM | 19 | 3/19 (%16) | %46 | %54 |
-| LOW | 14 | 8/14 (%57) | %38 | %48 |
+| MEDIUM | 20 | 4/20 (%20) | %46 | %54 |
+| LOW | 15 | 8/15 (%53) | %39 | %48 |
 
-## Hafta 6 — 3/7 isabet (%43)
+## Hafta 6 — 4/9 isabet (%44)
 
 | Maç | Skor | Tahmin | Sonuç | Güven |
 | --- | --- | --- | --- | --- |
@@ -30,6 +30,8 @@ _"Beyan edilen ort. olasılık" ile "İsabet" arasındaki fark büyükse (özell
 | İSTANBUL BAŞAKŞEHİR FK - GENÇLERBİRLİĞİ | 4 - 0 | Ev | ✅ | LOW |
 | FENERBAHÇE A.Ş. - EYÜPSPOR | 8 - 0 | Ev | ✅ | HIGH |
 | ERZURUMSPOR FK - SAMSUNSPOR A.Ş. | 1 - 0 | Deplasman | ❌ | MEDIUM |
+| AMED SPORTİF FAALİYETLER - BEŞİKTAŞ A.Ş. | 3 - 2 | Ev | ✅ | MEDIUM |
+| GÖZTEPE A.Ş. - ÇAYKUR RİZESPOR A.Ş. | 2 - 2 | Ev | ❌ | LOW |
 
 ## Hafta 5 — 3/9 isabet (%33)
 

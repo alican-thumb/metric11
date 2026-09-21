@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-21T00:17:07.760047",
+  "generated_at": "2026-09-21T04:52:30.749122",
   "season": "2026-2027",
   "summary": {
-    "evaluated_matches": 52,
-    "correct": 20,
-    "accuracy": 0.3846,
-    "actual_draws": 10,
+    "evaluated_matches": 54,
+    "correct": 21,
+    "accuracy": 0.3889,
+    "actual_draws": 11,
     "draws_caught": 2,
-    "draw_recall": 0.2,
+    "draw_recall": 0.1818,
     "high_conf_matches": 19,
     "high_conf_correct": 9,
     "high_conf_accuracy": 0.4737,
@@ -20,18 +20,18 @@
         "calibration_gap": -0.1159
       },
       "MEDIUM": {
-        "matches": 19,
-        "correct": 3,
-        "accuracy": 0.1579,
-        "avg_stated_probability": 0.46,
-        "calibration_gap": -0.3021
+        "matches": 20,
+        "correct": 4,
+        "accuracy": 0.2,
+        "avg_stated_probability": 0.4611,
+        "calibration_gap": -0.2611
       },
       "LOW": {
-        "matches": 14,
+        "matches": 15,
         "correct": 8,
-        "accuracy": 0.5714,
-        "avg_stated_probability": 0.3845,
-        "calibration_gap": 0.1869
+        "accuracy": 0.5333,
+        "avg_stated_probability": 0.3878,
+        "calibration_gap": 0.1455
       }
     }
   },
@@ -39,10 +39,10 @@
   "last_week": {
     "week": 6,
     "summary": {
-      "evaluated_matches": 7,
-      "correct": 3,
-      "accuracy": 0.4286,
-      "actual_draws": 1,
+      "evaluated_matches": 9,
+      "correct": 4,
+      "accuracy": 0.4444,
+      "actual_draws": 2,
       "draws_caught": 0,
       "draw_recall": 0.0,
       "high_conf_matches": 4,
@@ -57,18 +57,18 @@
           "calibration_gap": -0.338
         },
         "MEDIUM": {
+          "matches": 3,
+          "correct": 2,
+          "accuracy": 0.6667,
+          "avg_stated_probability": 0.4773,
+          "calibration_gap": 0.1894
+        },
+        "LOW": {
           "matches": 2,
           "correct": 1,
           "accuracy": 0.5,
-          "avg_stated_probability": 0.4755,
-          "calibration_gap": 0.0245
-        },
-        "LOW": {
-          "matches": 1,
-          "correct": 1,
-          "accuracy": 1.0,
-          "avg_stated_probability": 0.422,
-          "calibration_gap": 0.578
+          "avg_stated_probability": 0.428,
+          "calibration_gap": 0.072
         }
       }
     },
@@ -184,6 +184,38 @@
         "home_win_probability": 0.28,
         "draw_probability": 0.231,
         "away_win_probability": 0.489
+      },
+      {
+        "match_id": "317832",
+        "date_time": "20.09.2026 20:00",
+        "home_team": "AMED SPORTİF FAALİYETLER",
+        "away_team": "BEŞİKTAŞ A.Ş.",
+        "actual_score": "3 - 2",
+        "actual": "home",
+        "predicted": "home",
+        "raw_predicted": "home",
+        "correct": true,
+        "data_confidence": "PLAYED",
+        "prediction_confidence": "MEDIUM",
+        "home_win_probability": 0.481,
+        "draw_probability": 0.223,
+        "away_win_probability": 0.296
+      },
+      {
+        "match_id": "317833",
+        "date_time": "20.09.2026 20:00",
+        "home_team": "GÖZTEPE A.Ş.",
+        "away_team": "ÇAYKUR RİZESPOR A.Ş.",
+        "actual_score": "2 - 2",
+        "actual": "draw",
+        "predicted": "home",
+        "raw_predicted": "home",
+        "correct": false,
+        "data_confidence": "PLAYED",
+        "prediction_confidence": "LOW",
+        "home_win_probability": 0.434,
+        "draw_probability": 0.208,
+        "away_win_probability": 0.358
       }
     ]
   },
@@ -1106,10 +1138,10 @@
     {
       "week": 6,
       "summary": {
-        "evaluated_matches": 7,
-        "correct": 3,
-        "accuracy": 0.4286,
-        "actual_draws": 1,
+        "evaluated_matches": 9,
+        "correct": 4,
+        "accuracy": 0.4444,
+        "actual_draws": 2,
         "draws_caught": 0,
         "draw_recall": 0.0,
         "high_conf_matches": 4,
@@ -1124,18 +1156,18 @@
             "calibration_gap": -0.338
           },
           "MEDIUM": {
+            "matches": 3,
+            "correct": 2,
+            "accuracy": 0.6667,
+            "avg_stated_probability": 0.4773,
+            "calibration_gap": 0.1894
+          },
+          "LOW": {
             "matches": 2,
             "correct": 1,
             "accuracy": 0.5,
-            "avg_stated_probability": 0.4755,
-            "calibration_gap": 0.0245
-          },
-          "LOW": {
-            "matches": 1,
-            "correct": 1,
-            "accuracy": 1.0,
-            "avg_stated_probability": 0.422,
-            "calibration_gap": 0.578
+            "avg_stated_probability": 0.428,
+            "calibration_gap": 0.072
           }
         }
       },
@@ -1251,6 +1283,38 @@
           "home_win_probability": 0.28,
           "draw_probability": 0.231,
           "away_win_probability": 0.489
+        },
+        {
+          "match_id": "317832",
+          "date_time": "20.09.2026 20:00",
+          "home_team": "AMED SPORTİF FAALİYETLER",
+          "away_team": "BEŞİKTAŞ A.Ş.",
+          "actual_score": "3 - 2",
+          "actual": "home",
+          "predicted": "home",
+          "raw_predicted": "home",
+          "correct": true,
+          "data_confidence": "PLAYED",
+          "prediction_confidence": "MEDIUM",
+          "home_win_probability": 0.481,
+          "draw_probability": 0.223,
+          "away_win_probability": 0.296
+        },
+        {
+          "match_id": "317833",
+          "date_time": "20.09.2026 20:00",
+          "home_team": "GÖZTEPE A.Ş.",
+          "away_team": "ÇAYKUR RİZESPOR A.Ş.",
+          "actual_score": "2 - 2",
+          "actual": "draw",
+          "predicted": "home",
+          "raw_predicted": "home",
+          "correct": false,
+          "data_confidence": "PLAYED",
+          "prediction_confidence": "LOW",
+          "home_win_probability": 0.434,
+          "draw_probability": 0.208,
+          "away_win_probability": 0.358
         }
       ]
     }
