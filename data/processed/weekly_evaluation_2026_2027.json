@@ -1,30 +1,30 @@
 {
-  "generated_at": "2026-09-20T20:49:35.229686",
+  "generated_at": "2026-09-21T00:17:07.760047",
   "season": "2026-2027",
   "summary": {
-    "evaluated_matches": 50,
-    "correct": 19,
-    "accuracy": 0.38,
+    "evaluated_matches": 52,
+    "correct": 20,
+    "accuracy": 0.3846,
     "actual_draws": 10,
     "draws_caught": 2,
     "draw_recall": 0.2,
-    "high_conf_matches": 18,
-    "high_conf_correct": 8,
-    "high_conf_accuracy": 0.4444,
+    "high_conf_matches": 19,
+    "high_conf_correct": 9,
+    "high_conf_accuracy": 0.4737,
     "confidence_breakdown": {
       "HIGH": {
-        "matches": 18,
-        "correct": 8,
-        "accuracy": 0.4444,
-        "avg_stated_probability": 0.5857,
-        "calibration_gap": -0.1413
+        "matches": 19,
+        "correct": 9,
+        "accuracy": 0.4737,
+        "avg_stated_probability": 0.5896,
+        "calibration_gap": -0.1159
       },
       "MEDIUM": {
-        "matches": 18,
+        "matches": 19,
         "correct": 3,
-        "accuracy": 0.1667,
-        "avg_stated_probability": 0.4584,
-        "calibration_gap": -0.2917
+        "accuracy": 0.1579,
+        "avg_stated_probability": 0.46,
+        "calibration_gap": -0.3021
       },
       "LOW": {
         "matches": 14,
@@ -39,29 +39,29 @@
   "last_week": {
     "week": 6,
     "summary": {
-      "evaluated_matches": 5,
-      "correct": 2,
-      "accuracy": 0.4,
+      "evaluated_matches": 7,
+      "correct": 3,
+      "accuracy": 0.4286,
       "actual_draws": 1,
       "draws_caught": 0,
       "draw_recall": 0.0,
-      "high_conf_matches": 3,
-      "high_conf_correct": 0,
-      "high_conf_accuracy": 0.0,
+      "high_conf_matches": 4,
+      "high_conf_correct": 1,
+      "high_conf_accuracy": 0.25,
       "confidence_breakdown": {
         "HIGH": {
-          "matches": 3,
-          "correct": 0,
-          "accuracy": 0.0,
-          "avg_stated_probability": 0.564,
-          "calibration_gap": -0.564
+          "matches": 4,
+          "correct": 1,
+          "accuracy": 0.25,
+          "avg_stated_probability": 0.588,
+          "calibration_gap": -0.338
         },
         "MEDIUM": {
-          "matches": 1,
+          "matches": 2,
           "correct": 1,
-          "accuracy": 1.0,
-          "avg_stated_probability": 0.462,
-          "calibration_gap": 0.538
+          "accuracy": 0.5,
+          "avg_stated_probability": 0.4755,
+          "calibration_gap": 0.0245
         },
         "LOW": {
           "matches": 1,
@@ -152,6 +152,38 @@
         "home_win_probability": 0.422,
         "draw_probability": 0.224,
         "away_win_probability": 0.355
+      },
+      {
+        "match_id": "317835",
+        "date_time": "20.09.2026 17:00",
+        "home_team": "FENERBAHÇE A.Ş.",
+        "away_team": "EYÜPSPOR",
+        "actual_score": "8 - 0",
+        "actual": "home",
+        "predicted": "home",
+        "raw_predicted": "home",
+        "correct": true,
+        "data_confidence": "PLAYED",
+        "prediction_confidence": "HIGH",
+        "home_win_probability": 0.66,
+        "draw_probability": 0.189,
+        "away_win_probability": 0.151
+      },
+      {
+        "match_id": "317837",
+        "date_time": "20.09.2026 17:00",
+        "home_team": "ERZURUMSPOR FK",
+        "away_team": "SAMSUNSPOR A.Ş.",
+        "actual_score": "1 - 0",
+        "actual": "home",
+        "predicted": "away",
+        "raw_predicted": "away",
+        "correct": false,
+        "data_confidence": "PLAYED",
+        "prediction_confidence": "MEDIUM",
+        "home_win_probability": 0.28,
+        "draw_probability": 0.231,
+        "away_win_probability": 0.489
       }
     ]
   },
@@ -1074,29 +1106,29 @@
     {
       "week": 6,
       "summary": {
-        "evaluated_matches": 5,
-        "correct": 2,
-        "accuracy": 0.4,
+        "evaluated_matches": 7,
+        "correct": 3,
+        "accuracy": 0.4286,
         "actual_draws": 1,
         "draws_caught": 0,
         "draw_recall": 0.0,
-        "high_conf_matches": 3,
-        "high_conf_correct": 0,
-        "high_conf_accuracy": 0.0,
+        "high_conf_matches": 4,
+        "high_conf_correct": 1,
+        "high_conf_accuracy": 0.25,
         "confidence_breakdown": {
           "HIGH": {
-            "matches": 3,
-            "correct": 0,
-            "accuracy": 0.0,
-            "avg_stated_probability": 0.564,
-            "calibration_gap": -0.564
+            "matches": 4,
+            "correct": 1,
+            "accuracy": 0.25,
+            "avg_stated_probability": 0.588,
+            "calibration_gap": -0.338
           },
           "MEDIUM": {
-            "matches": 1,
+            "matches": 2,
             "correct": 1,
-            "accuracy": 1.0,
-            "avg_stated_probability": 0.462,
-            "calibration_gap": 0.538
+            "accuracy": 0.5,
+            "avg_stated_probability": 0.4755,
+            "calibration_gap": 0.0245
           },
           "LOW": {
             "matches": 1,
@@ -1187,6 +1219,38 @@
           "home_win_probability": 0.422,
           "draw_probability": 0.224,
           "away_win_probability": 0.355
+        },
+        {
+          "match_id": "317835",
+          "date_time": "20.09.2026 17:00",
+          "home_team": "FENERBAHÇE A.Ş.",
+          "away_team": "EYÜPSPOR",
+          "actual_score": "8 - 0",
+          "actual": "home",
+          "predicted": "home",
+          "raw_predicted": "home",
+          "correct": true,
+          "data_confidence": "PLAYED",
+          "prediction_confidence": "HIGH",
+          "home_win_probability": 0.66,
+          "draw_probability": 0.189,
+          "away_win_probability": 0.151
+        },
+        {
+          "match_id": "317837",
+          "date_time": "20.09.2026 17:00",
+          "home_team": "ERZURUMSPOR FK",
+          "away_team": "SAMSUNSPOR A.Ş.",
+          "actual_score": "1 - 0",
+          "actual": "home",
+          "predicted": "away",
+          "raw_predicted": "away",
+          "correct": false,
+          "data_confidence": "PLAYED",
+          "prediction_confidence": "MEDIUM",
+          "home_win_probability": 0.28,
+          "draw_probability": 0.231,
+          "away_win_probability": 0.489
         }
       ]
     }

@@ -4,10 +4,10 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 
 ## Genel Karne
 
-- Değerlendirilen maç: **50**
-- İsabet: **19/50** (%38)
+- Değerlendirilen maç: **52**
+- İsabet: **20/52** (%38)
 - Beraberlik yakalama: **2/10** (%20)
-- Yüksek güvenli maç isabeti: **8/18** (%44)
+- Yüksek güvenli maç isabeti: **9/19** (%47)
 
 ### Güven bandı kalibrasyonu
 
@@ -15,11 +15,11 @@ _"Beyan edilen ort. olasılık" ile "İsabet" arasındaki fark büyükse (özell
 
 | Güven bandı | Maç | İsabet | Beyan edilen ort. olasılık | Referans (2025-26, 258 maç) |
 | --- | --- | --- | --- | --- |
-| HIGH | 18 | 8/18 (%44) | %59 | %64 |
-| MEDIUM | 18 | 3/18 (%17) | %46 | %54 |
+| HIGH | 19 | 9/19 (%47) | %59 | %64 |
+| MEDIUM | 19 | 3/19 (%16) | %46 | %54 |
 | LOW | 14 | 8/14 (%57) | %38 | %48 |
 
-## Hafta 6 — 2/5 isabet (%40)
+## Hafta 6 — 3/7 isabet (%43)
 
 | Maç | Skor | Tahmin | Sonuç | Güven |
 | --- | --- | --- | --- | --- |
@@ -28,6 +28,8 @@ _"Beyan edilen ort. olasılık" ile "İsabet" arasındaki fark büyükse (özell
 | KOCAELİSPOR - GAZİANTEP FUTBOL KULÜBÜ A.Ş. | 2 - 0 | Ev | ✅ | MEDIUM |
 | TRABZONSPOR A.Ş. - GALATASARAY A.Ş. | 4 - 0 | Deplasman | ❌ | HIGH |
 | İSTANBUL BAŞAKŞEHİR FK - GENÇLERBİRLİĞİ | 4 - 0 | Ev | ✅ | LOW |
+| FENERBAHÇE A.Ş. - EYÜPSPOR | 8 - 0 | Ev | ✅ | HIGH |
+| ERZURUMSPOR FK - SAMSUNSPOR A.Ş. | 1 - 0 | Deplasman | ❌ | MEDIUM |
 
 ## Hafta 5 — 3/9 isabet (%33)
 
