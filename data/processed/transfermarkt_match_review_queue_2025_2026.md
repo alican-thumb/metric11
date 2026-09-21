@@ -1,13 +1,13 @@
 # Transfermarkt Oyuncu Eşleşme İnceleme Kuyruğu
 
-- TFF profil: 866
+- TFF profil: 870
 - Transfermarkt snapshot: 18/18 kulüp, 817 oyuncu
-- Snapshot kapsamındaki TFF profil: 581
-- Doğrulanmış snapshot eşleşmesi: 608
+- Snapshot kapsamındaki TFF profil: 585
+- Doğrulanmış snapshot eşleşmesi: 612
 - Manuel eşleme ile kullanılan profil: 4
 - Ağ teyidi bekleyen manuel eşleme: 4
 - Çözülmemiş profil: 254
-- Doğrulanmış genel eşleşme oranı: %70.2
+- Doğrulanmış genel eşleşme oranı: %70.3
 - Doğrulanmış snapshot içi eşleşme oranı: %104.6
 - Manuel eşleme dahil kullanılabilir snapshot içi kapsama: %93.3
 - Scout incelemesini bloke eden eşleşmeyen oyuncu: 3
@@ -48,8 +48,8 @@
 | TRABZONSPOR A.Ş. | 43 | 42 | 39 | 1 | 3 | %90.7 | %93.0 |
 | TÜMOSAN KONYASPOR | 43 | 48 | 42 | 0 | 1 | %97.7 | %97.7 |
 | ZECORNER KAYSERİSPOR | 0 | 51 | 0 | 0 | 0 | %0 | %0 |
-| ÇAYKUR RİZESPOR A.Ş. | 34 | 35 | 34 | 0 | 0 | %100.0 | %100.0 |
-| İKAS EYÜPSPOR | 39 | 62 | 37 | 0 | 2 | %94.9 | %94.9 |
+| ÇAYKUR RİZESPOR A.Ş. | 36 | 35 | 36 | 0 | 0 | %100.0 | %100.0 |
+| İKAS EYÜPSPOR | 41 | 62 | 39 | 0 | 2 | %95.1 | %95.1 |
 
 ## Tüm Eşleşmeyen Kayıtlar (Takım Bazında)
 

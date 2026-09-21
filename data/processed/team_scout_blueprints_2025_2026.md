@@ -15,6 +15,16 @@
 - 6 numara / savunma emniyeti: Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
 - Stoper / hava ve temas: Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 0.833. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
 
+## ERZURUMSPOR FK
+
+- Güç: None | GF: 0.5 | GA: 1.833 | kart: None
+- Zafiyet: yeni lig takımı
+- Scout ipucu: Süper Lig deneyimli kaleci, stoper ve santrfor takviyesi — serbest ajan ve kiralık öncelikli.
+- Kaleci / istikrar: Süper Lig'e yeni çıkan takım; Kaleci / istikrar pozisyonunda deneyimli takviye kritik. Adaylar: MOHAMMED AMIN CHERNI, MUHAMMED ŞENGEZER, ANFERNEE JAMAL DIJKSTEEL
+- Stoper / hava ve temas: Süper Lig'e yeni çıkan takım; Stoper / hava ve temas pozisyonunda deneyimli takviye kritik. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
+- Santrfor / skor yükü: Süper Lig'e yeni çıkan takım; Santrfor / skor yükü pozisyonunda deneyimli takviye kritik. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, FELIPE AUGUSTO DA SILVA
+- 6 numara / savunma emniyeti: Süper Lig'e yeni çıkan takım; 6 numara / savunma emniyeti pozisyonunda deneyimli takviye kritik. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
+
 ## ÇORUM FK
 
 - Güç: None | GF: 2.167 | GA: 2.0 | kart: None
@@ -27,17 +37,7 @@
 
 ## AMED SFK
 
-- Güç: None | GF: 2.4 | GA: 1.0 | kart: None
-- Zafiyet: yeni lig takımı
-- Scout ipucu: Süper Lig deneyimli kaleci, stoper ve santrfor takviyesi — serbest ajan ve kiralık öncelikli.
-- Kaleci / istikrar: Süper Lig'e yeni çıkan takım; Kaleci / istikrar pozisyonunda deneyimli takviye kritik. Adaylar: MOHAMMED AMIN CHERNI, MUHAMMED ŞENGEZER, ANFERNEE JAMAL DIJKSTEEL
-- Stoper / hava ve temas: Süper Lig'e yeni çıkan takım; Stoper / hava ve temas pozisyonunda deneyimli takviye kritik. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
-- Santrfor / skor yükü: Süper Lig'e yeni çıkan takım; Santrfor / skor yükü pozisyonunda deneyimli takviye kritik. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, FELIPE AUGUSTO DA SILVA
-- 6 numara / savunma emniyeti: Süper Lig'e yeni çıkan takım; 6 numara / savunma emniyeti pozisyonunda deneyimli takviye kritik. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
-
-## ERZURUMSPOR FK
-
-- Güç: None | GF: 0.4 | GA: 2.2 | kart: None
+- Güç: None | GF: 2.5 | GA: 1.167 | kart: None
 - Zafiyet: yeni lig takımı
 - Scout ipucu: Süper Lig deneyimli kaleci, stoper ve santrfor takviyesi — serbest ajan ve kiralık öncelikli.
 - Kaleci / istikrar: Süper Lig'e yeni çıkan takım; Kaleci / istikrar pozisyonunda deneyimli takviye kritik. Adaylar: MOHAMMED AMIN CHERNI, MUHAMMED ŞENGEZER, ANFERNEE JAMAL DIJKSTEEL
@@ -57,13 +57,13 @@
 
 ## İKAS EYÜPSPOR
 
-- Güç: 45.0 | GF: 0.4 | GA: 1.6 | kart: 2.38
+- Güç: 45.0 | GF: 0.333 | GA: 2.667 | kart: 2.38
 - Zafiyet: son bölüm gol yeme riski, skor üretim sorunu, deplasman zayıf, hücum verimsizliği
 - Scout ipucu: Maç sonu denge sağlayan fiziksel 8 numara veya savunmacı orta saha
-- Kaleci / istikrar: Savunma kırılganlığında kaleci istikrarı önceliği; GA ortalaması 1.6 — güvenilir kaleci pozisyonu kritik. Adaylar: MOHAMMED AMIN CHERNI, MUHAMMED ŞENGEZER, ANFERNEE JAMAL DIJKSTEEL
+- Kaleci / istikrar: Savunma kırılganlığında kaleci istikrarı önceliği; GA ortalaması 2.667 — güvenilir kaleci pozisyonu kritik. Adaylar: MOHAMMED AMIN CHERNI, MUHAMMED ŞENGEZER, ANFERNEE JAMAL DIJKSTEEL
 - 8 numara / fizik motoru: Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir. Adaylar: ALEXANDRU IULIAN MAXIM, JANDERSON  DE CARVALHO COSTA, QAZIM LACI
 - 6 numara / savunma emniyeti: Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
-- Stoper / hava ve temas: Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 1.6. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
+- Stoper / hava ve temas: Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 2.667. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
 
 ## KOCAELİSPOR
 
@@ -77,11 +77,11 @@
 
 ## ÇAYKUR RİZESPOR A.Ş.
 
-- Güç: 42.6 | GF: 1.0 | GA: 0.8 | kart: 2.41
+- Güç: 42.6 | GF: 1.167 | GA: 1.0 | kart: 2.41
 - Zafiyet: savunma kırılgan, son bölüm gol yeme riski, deplasman zayıf
 - Scout ipucu: Güvenilir kaleci, hızlı stoper veya savunmacı 6 numara — GA ortalaması kritik eşiğin üstünde
-- Kaleci / istikrar: Savunma kırılganlığında kaleci istikrarı önceliği; GA ortalaması 0.8 — güvenilir kaleci pozisyonu kritik. Adaylar: MOHAMMED AMIN CHERNI, MUHAMMED ŞENGEZER, ANFERNEE JAMAL DIJKSTEEL
-- Stoper / hava ve temas: Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 0.8. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
+- Kaleci / istikrar: Savunma kırılganlığında kaleci istikrarı önceliği; GA ortalaması 1.0 — güvenilir kaleci pozisyonu kritik. Adaylar: MOHAMMED AMIN CHERNI, MUHAMMED ŞENGEZER, ANFERNEE JAMAL DIJKSTEEL
+- Stoper / hava ve temas: Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 1.0. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
 - 6 numara / savunma emniyeti: Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
 - 8 numara / fizik motoru: Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir. Adaylar: ALEXANDRU IULIAN MAXIM, JANDERSON  DE CARVALHO COSTA, ORKUN KÖKÇÜ
 
@@ -117,27 +117,27 @@
 
 ## GÖZTEPE A.Ş.
 
-- Güç: 59.8 | GF: 1.8 | GA: 2.6 | kart: 2.53
+- Güç: 59.8 | GF: 1.833 | GA: 2.5 | kart: 2.53
 - Zafiyet: kart baskısı, düşük şut baskısı
 - Scout ipucu: Daha kontrollü ikili mücadele profili ve pasla baskı kıran orta saha
 - 6 numara / savunma emniyeti: Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir. Adaylar: JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU, PEDRO MIGUEL DE ALMEIDA LOPES PEREIRA
 - 8 numara / fizik motoru: Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir. Adaylar: ALEXANDRU IULIAN MAXIM, QAZIM LACI, ORKUN KÖKÇÜ
 - Sol açık / çizgi kırıcı: Deplasman veya üretim zafiyetinde çizgi kıran/taşıyıcı hücum profili gerekir. Adaylar: KACPER SZYMON KOZLOWSKI, DORGELES NENE, ERNEST MUÇİ
-- Santrfor / skor yükü: Skor üretim problemi için bitirici profil; mevcut gol ortalaması 1.8. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, FELIPE AUGUSTO DA SILVA
+- Santrfor / skor yükü: Skor üretim problemi için bitirici profil; mevcut gol ortalaması 1.833. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, FELIPE AUGUSTO DA SILVA
 
 ## SAMSUNSPOR A.Ş.
 
-- Güç: 60.9 | GF: 1.2 | GA: 2.2 | kart: 2.24
+- Güç: 60.9 | GF: 1.0 | GA: 2.0 | kart: 2.24
 - Zafiyet: son bölüm gol yeme riski
 - Scout ipucu: Maç sonu denge sağlayan fiziksel 8 numara veya savunmacı orta saha
-- Kaleci / istikrar: Savunma kırılganlığında kaleci istikrarı önceliği; GA ortalaması 2.2 — güvenilir kaleci pozisyonu kritik. Adaylar: MOHAMMED AMIN CHERNI, MUHAMMED ŞENGEZER, ANFERNEE JAMAL DIJKSTEEL
+- Kaleci / istikrar: Savunma kırılganlığında kaleci istikrarı önceliği; GA ortalaması 2.0 — güvenilir kaleci pozisyonu kritik. Adaylar: MOHAMMED AMIN CHERNI, MUHAMMED ŞENGEZER, ANFERNEE JAMAL DIJKSTEEL
 - 8 numara / fizik motoru: Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir. Adaylar: ALEXANDRU IULIAN MAXIM, JANDERSON  DE CARVALHO COSTA, QAZIM LACI
 - 6 numara / savunma emniyeti: Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
-- Stoper / hava ve temas: Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 2.2. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
+- Stoper / hava ve temas: Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 2.0. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
 
 ## BEŞİKTAŞ A.Ş.
 
-- Güç: 62.5 | GF: 2.4 | GA: 0.8 | kart: 2.32
+- Güç: 62.5 | GF: 2.333 | GA: 1.167 | kart: 2.32
 - Zafiyet: kadro derinliği sınırlı
 - Scout ipucu: Kaliteli rotasyon: büyük maç baskısını karşılayacak kanat/bek derinliği
 - Sol açık / çizgi kırıcı: Büyük maç rotasyonunu besleyecek ve kanat derinliğini artıracak yaratıcı profil. Adaylar: KACPER SZYMON KOZLOWSKI, DORGELES NENE, ERNEST MUÇİ
@@ -161,7 +161,7 @@
 
 ## FENERBAHÇE A.Ş.
 
-- Güç: 76.5 | GF: 1.6 | GA: 1.2 | kart: 2.47
+- Güç: 76.5 | GF: 2.667 | GA: 1.0 | kart: 2.47
 - Zafiyet: kadro derinliği sınırlı
 - Scout ipucu: Kaliteli rotasyon: büyük maç baskısını karşılayacak kanat/bek derinliği
 - Sol açık / çizgi kırıcı: Büyük maç rotasyonunu besleyecek ve kanat derinliğini artıracak yaratıcı profil. Adaylar: KACPER SZYMON KOZLOWSKI, ERNEST MUÇİ, KAZEEM ADEREMI J. OLAIGBE
