@@ -1,18 +1,18 @@
 # Erken Haber Kaynak Performansı
 
-- Transfer sinyali: 25
+- Transfer sinyali: 22
 - Resmi olaya dönüşen transfer: 14
 - Yayın zamanı bulunan resmi teyit: 5/14
 - İlk görülme zamanı bulunan resmi teyit: 14/14
-- Ölçülen kaynak: 205 / gözlenen kaynak: 322
+- Ölçülen kaynak: 206 / gözlenen kaynak: 323
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 3
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 4234
+- Defterde korunan ilk iddia gözlemi: 4237
 
 ## Kanal Kapsamı
 
-- Google News: 129 haber, 30/30 başarılı sorgu.
+- Google News: 137 haber, 30/30 başarılı sorgu.
 - Telegram: 6 mesaj, 8/8 erişilebilir kanal.
 - X: durum=MISSING_CREDENTIALS, gönderi=0, yapılandırılmış hesap=45.
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 4231 | 1350 | 5 | — | 0.3 | %99.6 | 0.3 | FIRST_SEEN_BOUND |
+| Google News / medya | 4234 | 1351 | 5 | — | 0.3 | %99.6 | 0.3 | FIRST_SEEN_BOUND |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -55,8 +55,8 @@
 | Fotomaç | MEDIA | 449 | 93 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Sabah | MEDIA | 297 | 64 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Hürriyet | MEDIA | 282 | 39 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
-| Takvim | MEDIA | 268 | 29 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
-| Aksam Spor | MEDIA | 194 | 16 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Takvim | MEDIA | 269 | 29 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Aksam Spor | MEDIA | 195 | 16 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Haberturk Spor | MEDIA | 163 | 14 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | NTVSpor | MEDIA | 108 | 26 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | GZT | MEDIA | 107 | 32 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
@@ -233,6 +233,7 @@
 | bjk.com.tr | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | bolgegundemi.com | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | cumhuriyet.com.tr | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| gercekfethiye.com | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | gundemebakis.com | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | guneysu53.com | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | haberege.com.tr | MEDIA | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
@@ -330,13 +331,13 @@
 | Zonguldak Pusula Son Dakika Haberleri | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | afyonsehir.com | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | ahaber.com.tr | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
+| akdenizgazetesi.com | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | bursasaati.com.tr | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | cankiripostasi.com | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | demokrat32.com | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | fethiyetv.com | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | gazeteyenigun.com.tr | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | gaziantepolusum.com | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
-| gercekfethiye.com | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | goal.com | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | gunebakis.com.tr | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | gunes.com | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
