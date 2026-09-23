@@ -1,37 +1,27 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-09-23T04:43:28.918097+00:00
-Toplam ilgili haber: 29
+Üretim zamanı: 2026-09-23T07:46:38.508102+00:00
+Toplam ilgili haber: 19
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
-- [Mustafa Eskihellaç A Milli Takım aday kadrosuna dahil edildi](https://www.fotomac.com.tr/millitakim/2026/09/22/mustafa-eskihellac-a-milli-takim-aday-kadrosuna-dahil-edildi) — Fotomaç · 2026-09-23T00:42:12+03:00 · turnuva=— · kulüp=Trabzonspor
-- [Bizim Çocuklar'ın Fransa mesaisi sürüyor!](https://www.aksam.com.tr/spor/bizim-cocuklarin-fransa-mesaisi-suruyor/haber-1700528) — Aksam Spor · 2026-09-22T23:30:00+03:00 · turnuva=— · kulüp=—
-- [TFF Orkun Kökçü'nün son durumunu açıkladı](https://www.sabah.com.tr/spor/futbol/2026/09/22/tff-orkun-kokcunun-son-durumunu-acikladi) — Sabah Spor · 2026-09-22T23:23:51+03:00 · turnuva=— · kulüp=—
-- [TFF'den Orkun Kökçü açıklaması! A Milli Takım'ın Fransa mesaisi sürüyor](https://www.fotomac.com.tr/millitakim/2026/09/22/tffden-orkun-kokcu-aciklamasi-a-milli-takimin-fransa-mesaisi-suruyor) — Fotomaç · 2026-09-22T22:30:06+03:00 · turnuva=— · kulüp=—
+- [Mustafa Eskihellaç, Milli Takım'a dahil edildi!](https://www.haberturk.com/spor/mustafa-eskihellac-a-milli-takim-aday-kadrosuna-dahil-edildi-3914433) — Haberturk Spor · 2026-09-23T06:27:43+00:00 · turnuva=— · kulüp=—
 - [GALATASARAY BARCELONA MAÇI NE ZAMAN? Galatasaray Şampiyonlar Ligi maçı nerede oynanacak?](https://www.cnnturk.com/spor/galatasaray-barcelona-maci-ne-zaman-galatasaray-sampiyonlar-ligi-maci-nerede-oynanacak-3470131) — CNN Türk Spor · 2026-09-22T22:13:59+00:00 · turnuva=CL · kulüp=Galatasaray
 - [UEFA'dan Gamze Durmuş Pakkan'a görev](https://www.aa.com.tr/tr/spor/uefadan-gamze-durmus-pakkana-gorev/4065314) — Anadolu Ajansı Spor · 2026-09-22T21:56:44+03:00 · turnuva=— · kulüp=—
 - [UEFA’dan Gamze Durmuş Pakkan’a görev](https://www.cnnturk.com/spor/futbol/uefadan-gamze-durmus-pakkana-gorev-3470127) — CNN Türk Spor · 2026-09-22T21:45:07+00:00 · turnuva=— · kulüp=—
-- [Borussia Dortmund'dan paylaşım: Beşiktaş taraftarları, kusura bakmayın!](https://www.fotomac.com.tr/besiktas/2026/09/22/borussia-dortmunddan-paylasim-besiktas-taraftarlari-kusura-bakmayin) — Fotomaç · 2026-09-22T21:43:27+03:00 · turnuva=CL · kulüp=Beşiktaş
-- [UEFA'dan Gamze Durmuş Pakkan'a görev!](https://www.fotomac.com.tr/futbol/2026/09/22/uefadan-gamze-durmus-pakkana-gorev) — Fotomaç · 2026-09-22T21:29:34+03:00 · turnuva=— · kulüp=—
 - [Ziraat Türkiye Kupası ikinci tur programı açıklandı](https://www.cnnturk.com/spor/futbol/ziraat-turkiye-kupasi-ikinci-tur-programi-aciklandi-3469975) — CNN Türk Spor · 2026-09-22T18:28:23+00:00 · turnuva=— · kulüp=—
-- [A Milli Takım'ın İtalya maçı biletleri satışa çıktı](https://www.fotomac.com.tr/millitakim/2026/09/22/a-milli-takimin-italya-maci-biletleri-satisa-cikti) — Fotomaç · 2026-09-22T18:03:12+03:00 · turnuva=— · kulüp=—
 - [A Milli Futbol Takımı'nın İtalya ile yapacağı maçın öncelikli bilet satışları başladı](https://www.aa.com.tr/tr/spor/a-milli-futbol-takiminin-italya-ile-yapacagi-macin-oncelikli-bilet-satislari-basladi/4064667) — Anadolu Ajansı Spor · 2026-09-22T17:56:19+03:00 · turnuva=— · kulüp=—
 - [UEFA Uluslar Ligi 20 bin kez simüle edildi: A Milli Takım için dikkat çeken sonuç!](https://www.hurriyet.com.tr/sporarena/uefa-uluslar-ligi-20-bin-kez-simule-edildi-a-milli-takim-icin-dikkat-ceken-sonuc-43315966) — Hürriyet Spor · 2026-09-22T17:35:00+00:00 · turnuva=— · kulüp=—
 - [Ziraat Türkiye Kupası'nda 2. eleme turu maç programı açıklandı](https://www.aa.com.tr/tr/spor/ziraat-turkiye-kupasinda-2-eleme-turu-mac-programi-aciklandi/4064584) — Anadolu Ajansı Spor · 2026-09-22T16:55:56+03:00 · turnuva=— · kulüp=—
-- [Ziraat Türkiye Kupası'nda 2. eleme turu programı açıklandı!](https://www.fotomac.com.tr/turkiye-kupasi/2026/09/22/ziraat-turkiye-kupasinda-2-eleme-turu-programi-aciklandi) — Fotomaç · 2026-09-22T16:03:41+03:00 · turnuva=— · kulüp=—
 - [MİLLİ MAÇ TAKVİMİ 2026 | Milli Maç Ne Zaman Başlıyor, Hangi Gün? A Milli Futbol Takımı UEFA Uluslar Ligi Maç Tarihleri](https://www.cnnturk.com/spor/futbol/milli-mac-takvimi-2026-milli-maclar-ne-zaman-basliyor-hangi-gun-a-milli-futbol-takimi-uefa-uluslar-ligi-mac-tarihleri-3469407) — CNN Türk Spor · 2026-09-22T13:37:40+00:00 · turnuva=— · kulüp=—
-- [Kupada 2. tur programı açıklandı!](https://www.haberturk.com/spor/ziraat-turkiye-kupasi-nda-2-tur-programi-aciklandi-3914311) — Haberturk Spor · 2026-09-22T13:33:26+00:00 · turnuva=— · kulüp=—
-- [A Milli Takım'da Orkun Kökçü şoku!](https://www.fotomac.com.tr/millitakim/2026/09/22/a-milli-takimda-orkun-kokcu-soku) — Fotomaç · 2026-09-22T12:01:08+03:00 · turnuva=— · kulüp=—
 - [Beşiktaş'ta Vlahovic sakatlandı!](https://www.haberturk.com/spor/besiktas-ta-vlahovic-sakatlandi-3914274) — Haberturk Spor · 2026-09-22T11:36:08+00:00 · turnuva=— · kulüp=Beşiktaş
 - [Beşiktaş Fenerbahçe ve Galatasaray'ı bekleyen fikstür tehlikesi!](https://www.haberturk.com/spor/foto/besiktas-fenerbahce-ve-galatasaray-i-bekleyen-fikstur-tehlikesi-3914216) — Haberturk Spor · 2026-09-22T09:03:58+00:00 · turnuva=— · kulüp=Galatasaray, Fenerbahçe, Beşiktaş
-- [Turkuvaz Medya'da milli heyecan](https://www.fotomac.com.tr/millitakim/2026/09/22/turkuvaz-medyada-milli-heyecan) — Fotomaç · 2026-09-21T23:03:14+03:00 · turnuva=— · kulüp=—
 - [A Milli Futbol Takımı, Fransa maçının hazırlıklarına başladı](https://www.aa.com.tr/tr/spor/a-milli-futbol-takimi-fransa-macinin-hazirliklarina-basladi/4063542) — Anadolu Ajansı Spor · 2026-09-21T19:07:20+03:00 · turnuva=— · kulüp=—
 - [A Milli Futbol Takımı, Fransa maçının hazırlıklarına başladı!](https://www.hurriyet.com.tr/sporarena/a-milli-futbol-takimi-fransa-macinin-hazirliklarina-basladi-43314848) — Hürriyet Spor · 2026-09-21T18:10:31+00:00 · turnuva=— · kulüp=—
 - [İsviçre'de Xhaka depremi! Sahte koronavirüs aşısı raporu olay oldu...](https://www.cnnturk.com/spor/futbol/isvicrede-xhaka-depremi-sahte-koronavirus-asisi-raporu-olay-oldu-3469446) — CNN Türk Spor · 2026-09-21T15:24:19+00:00 · turnuva=— · kulüp=—
 - [Uluslar Ligi heyecanı Turkuvaz Medya'da yaşanacak! İşte dev maçların yayın programı](https://www.takvim.com.tr/uluslar-ligi/2026/09/21/uluslar-ligi-heyecani-turkuvaz-medyada-yasanacak) — Takvim Spor · 2026-09-21T15:06:39+03:00 · turnuva=— · kulüp=—
 - [Zidane ilk maçı öncesi heyecanlı: Aklımda Türkiye'ye karşı kazanmaktan başka bir şey yok](https://www.cnnturk.com/spor/futbol/zidane-ilk-maci-oncesi-heyecanli-aklimda-turkiyeye-karsi-kazanmaktan-baska-bir-sey-yok-3469320) — CNN Türk Spor · 2026-09-21T12:13:02+00:00 · turnuva=— · kulüp=—
-- [Beşiktaş, ilk milli araya üç deplasman yenilgisiyle girdi](https://www.aa.com.tr/tr/spor/besiktas-ilk-milli-araya-uc-deplasman-yenilgisiyle-girdi/4063023) — Anadolu Ajansı Spor · 2026-09-21T11:05:08+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [UEFA kulüpler sıralaması güncellendi! Beşiktaş, Fenerbahçe, Galatasaray ve Trabzonspor... - Fotomaç](https://news.google.com/rss/articles/CBMisgFBVV95cUxPSlZBcERIZXc0YTlLaTRvWlVuMVdzeWxPWmhEc0x2RmpfWVZ3Qjk0WmFXYXNjdUxmX2hBaW94clhMX256VlN4MW9Tc1lQbjhJM0Zma1FsYzJtQURDaWhEUHM3TGFsSG00cF9CeWc3dUFhVkYwaGFvYVJGTnZKNmpPVXkxcVNSU19mSThJbzlMMjBGS2xWMHB4RzlYVVdkZ3VnRmlNMlVpcF8zR3o0WWYwTFJ3?oc=5) — Fotomaç · 2026-09-12T07:00:00+00:00 · turnuva=— · kulüp=Galatasaray, Fenerbahçe, Beşiktaş, Trabzonspor
 - [Transfer Gerçekleri / Başakşehir-Galatasaray / Fenerbahçe- Beşiktaş / Şampiyonlar Ligi - YouTube](https://news.google.com/rss/articles/CBMiXEFVX3lxTE1BdGE1bnBJX0FnTmtiY2tEVDVsWnRaTGtZdXBDSGRBZ0xuWEstSTJsM21iWVJjY1Y4S3RzUWxwdEpPQnNSQWcyeHVTWnBMVnlneUlLUl9pZDU1WUpm?oc=5) — YouTube · 2026-09-09T14:00:04+00:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe, Beşiktaş, Başakşehir
+- [Miguel Cardoso ve Elisha Owusu ile resmî sözleşme imzaladık.](https://erzurumsporfk.org/2026/08/19/miguel-cardoso-ve-elisha-owusu-ile-resmi-sozlesme-imzaladik/) — Erzurumspor FK Resmi Web · 2026-08-19T20:45:50+03:00 · turnuva=EL · kulüp=Kayserispor
