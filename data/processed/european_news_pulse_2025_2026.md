@@ -1,24 +1,30 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-09-23T07:46:38.508102+00:00
-Toplam ilgili haber: 19
+Üretim zamanı: 2026-09-23T09:22:07.775856+00:00
+Toplam ilgili haber: 25
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [Türkiye-Fransa maçını Alman hakem Felix Zwayer yönetecek](https://www.aa.com.tr/tr/spor/turkiye-fransa-macini-alman-hakem-felix-zwayer-yonetecek/4065984) — Anadolu Ajansı Spor · 2026-09-23T12:10:21+03:00 · turnuva=— · kulüp=—
+- [Türkiye - Fransa maçının hakemi belli oldu!](https://www.cnnturk.com/spor/futbol/turkiye-fransa-macinin-hakemi-belli-oldu-3470305) — CNN Türk Spor · 2026-09-23T12:07:42+00:00 · turnuva=— · kulüp=—
+- [Okan Buruk "Hakemlik hayatı bitmeli" demişti! UEFA, Türkiye-Fransa maçında görevlendirdi](https://www.aksam.com.tr/spor/okan-buruk-hakemlik-hayati-bitmeli-demisti-uefa-turkiye-fransa-macinda-gorevlendirdi/haber-1700647) — Aksam Spor · 2026-09-23T11:59:00+03:00 · turnuva=— · kulüp=Galatasaray
+- [Kocaeli Stadyumu Türkiye-Fransa maçına hazır](https://www.aa.com.tr/tr/spor/kocaeli-stadyumu-turkiye-fransa-macina-hazir/4065931) — Anadolu Ajansı Spor · 2026-09-23T11:36:57+03:00 · turnuva=— · kulüp=—
+- [Mustafa Eskihellaç, A Milli Futbol Takımı'nın aday kadrosuna dahil edildi](https://www.aa.com.tr/tr/spor/mustafa-eskihellac-a-milli-futbol-takiminin-aday-kadrosuna-dahil-edildi/4065865) — Anadolu Ajansı Spor · 2026-09-23T10:59:12+03:00 · turnuva=— · kulüp=—
+- [UEFA Uluslar Ligi'nde sezon yarınki maçlarla başlayacak](https://www.aa.com.tr/tr/spor/uefa-uluslar-liginde-sezon-yarinki-maclarla-baslayacak/4065862) — Anadolu Ajansı Spor · 2026-09-23T10:56:18+03:00 · turnuva=— · kulüp=—
+- [Türkiye - Fransa maçının hakemi belli oldu!](https://www.haberturk.com/spor/son-dakika-turkiye-fransa-macinin-hakemi-belli-oldu-3914498) — Haberturk Spor · 2026-09-23T08:41:45+00:00 · turnuva=— · kulüp=—
+- [Uluslar Ligi'nde heyecan başlıyor](https://www.haberturk.com/spor/uefa-uluslar-ligi-nde-heyecan-basliyor-3914476) — Haberturk Spor · 2026-09-23T08:00:40+00:00 · turnuva=— · kulüp=—
 - [Mustafa Eskihellaç, Milli Takım'a dahil edildi!](https://www.haberturk.com/spor/mustafa-eskihellac-a-milli-takim-aday-kadrosuna-dahil-edildi-3914433) — Haberturk Spor · 2026-09-23T06:27:43+00:00 · turnuva=— · kulüp=—
 - [GALATASARAY BARCELONA MAÇI NE ZAMAN? Galatasaray Şampiyonlar Ligi maçı nerede oynanacak?](https://www.cnnturk.com/spor/galatasaray-barcelona-maci-ne-zaman-galatasaray-sampiyonlar-ligi-maci-nerede-oynanacak-3470131) — CNN Türk Spor · 2026-09-22T22:13:59+00:00 · turnuva=CL · kulüp=Galatasaray
 - [UEFA'dan Gamze Durmuş Pakkan'a görev](https://www.aa.com.tr/tr/spor/uefadan-gamze-durmus-pakkana-gorev/4065314) — Anadolu Ajansı Spor · 2026-09-22T21:56:44+03:00 · turnuva=— · kulüp=—
 - [UEFA’dan Gamze Durmuş Pakkan’a görev](https://www.cnnturk.com/spor/futbol/uefadan-gamze-durmus-pakkana-gorev-3470127) — CNN Türk Spor · 2026-09-22T21:45:07+00:00 · turnuva=— · kulüp=—
 - [Ziraat Türkiye Kupası ikinci tur programı açıklandı](https://www.cnnturk.com/spor/futbol/ziraat-turkiye-kupasi-ikinci-tur-programi-aciklandi-3469975) — CNN Türk Spor · 2026-09-22T18:28:23+00:00 · turnuva=— · kulüp=—
 - [A Milli Futbol Takımı'nın İtalya ile yapacağı maçın öncelikli bilet satışları başladı](https://www.aa.com.tr/tr/spor/a-milli-futbol-takiminin-italya-ile-yapacagi-macin-oncelikli-bilet-satislari-basladi/4064667) — Anadolu Ajansı Spor · 2026-09-22T17:56:19+03:00 · turnuva=— · kulüp=—
-- [UEFA Uluslar Ligi 20 bin kez simüle edildi: A Milli Takım için dikkat çeken sonuç!](https://www.hurriyet.com.tr/sporarena/uefa-uluslar-ligi-20-bin-kez-simule-edildi-a-milli-takim-icin-dikkat-ceken-sonuc-43315966) — Hürriyet Spor · 2026-09-22T17:35:00+00:00 · turnuva=— · kulüp=—
 - [Ziraat Türkiye Kupası'nda 2. eleme turu maç programı açıklandı](https://www.aa.com.tr/tr/spor/ziraat-turkiye-kupasinda-2-eleme-turu-mac-programi-aciklandi/4064584) — Anadolu Ajansı Spor · 2026-09-22T16:55:56+03:00 · turnuva=— · kulüp=—
 - [MİLLİ MAÇ TAKVİMİ 2026 | Milli Maç Ne Zaman Başlıyor, Hangi Gün? A Milli Futbol Takımı UEFA Uluslar Ligi Maç Tarihleri](https://www.cnnturk.com/spor/futbol/milli-mac-takvimi-2026-milli-maclar-ne-zaman-basliyor-hangi-gun-a-milli-futbol-takimi-uefa-uluslar-ligi-mac-tarihleri-3469407) — CNN Türk Spor · 2026-09-22T13:37:40+00:00 · turnuva=— · kulüp=—
 - [Beşiktaş'ta Vlahovic sakatlandı!](https://www.haberturk.com/spor/besiktas-ta-vlahovic-sakatlandi-3914274) — Haberturk Spor · 2026-09-22T11:36:08+00:00 · turnuva=— · kulüp=Beşiktaş
 - [Beşiktaş Fenerbahçe ve Galatasaray'ı bekleyen fikstür tehlikesi!](https://www.haberturk.com/spor/foto/besiktas-fenerbahce-ve-galatasaray-i-bekleyen-fikstur-tehlikesi-3914216) — Haberturk Spor · 2026-09-22T09:03:58+00:00 · turnuva=— · kulüp=Galatasaray, Fenerbahçe, Beşiktaş
 - [A Milli Futbol Takımı, Fransa maçının hazırlıklarına başladı](https://www.aa.com.tr/tr/spor/a-milli-futbol-takimi-fransa-macinin-hazirliklarina-basladi/4063542) — Anadolu Ajansı Spor · 2026-09-21T19:07:20+03:00 · turnuva=— · kulüp=—
-- [A Milli Futbol Takımı, Fransa maçının hazırlıklarına başladı!](https://www.hurriyet.com.tr/sporarena/a-milli-futbol-takimi-fransa-macinin-hazirliklarina-basladi-43314848) — Hürriyet Spor · 2026-09-21T18:10:31+00:00 · turnuva=— · kulüp=—
 - [İsviçre'de Xhaka depremi! Sahte koronavirüs aşısı raporu olay oldu...](https://www.cnnturk.com/spor/futbol/isvicrede-xhaka-depremi-sahte-koronavirus-asisi-raporu-olay-oldu-3469446) — CNN Türk Spor · 2026-09-21T15:24:19+00:00 · turnuva=— · kulüp=—
 - [Uluslar Ligi heyecanı Turkuvaz Medya'da yaşanacak! İşte dev maçların yayın programı](https://www.takvim.com.tr/uluslar-ligi/2026/09/21/uluslar-ligi-heyecani-turkuvaz-medyada-yasanacak) — Takvim Spor · 2026-09-21T15:06:39+03:00 · turnuva=— · kulüp=—
 - [Zidane ilk maçı öncesi heyecanlı: Aklımda Türkiye'ye karşı kazanmaktan başka bir şey yok](https://www.cnnturk.com/spor/futbol/zidane-ilk-maci-oncesi-heyecanli-aklimda-turkiyeye-karsi-kazanmaktan-baska-bir-sey-yok-3469320) — CNN Türk Spor · 2026-09-21T12:13:02+00:00 · turnuva=— · kulüp=—
