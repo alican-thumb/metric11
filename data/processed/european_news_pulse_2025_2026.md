@@ -1,41 +1,40 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-09-23T16:55:45.471207+00:00
-Toplam ilgili haber: 36
+Üretim zamanı: 2026-09-23T21:31:31.130042+00:00
+Toplam ilgili haber: 35
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
-- [İtalya maçının biletleri satışta!](https://www.aksam.com.tr/spor/italya-macinin-biletleri-satista/haber-1700780) — Aksam Spor · 2026-09-23T17:58:00+03:00 · turnuva=— · kulüp=—
+- [Fransa milli maçı öncesinde kötü haber! 2 futbolcu antrenmana katılmadı](https://www.takvim.com.tr/uluslar-ligi/2026/09/23/orkun-kokcu-ve-muhammed-sengezer-milli-takim-idmanina-katilmadi) — Takvim Spor · 2026-09-23T22:46:48+03:00 · turnuva=— · kulüp=—
+- [TFF açıkladı! A Milli Takım antrenmanında 2 eksik](https://www.aksam.com.tr/spor/tff-acikladi-a-milli-takim-antrenmaninda-2-eksik/haber-1700810) — Aksam Spor · 2026-09-23T22:40:00+03:00 · turnuva=— · kulüp=—
+- [A Milli Futbol Takımı, Fransa maçının hazırlıklarını sürdürdü!](https://www.sabah.com.tr/spor/futbol/2026/09/23/a-milli-futbol-takimi-fransa-macinin-hazirliklarini-surdurdu) — Sabah Spor · 2026-09-23T22:02:06+03:00 · turnuva=— · kulüp=—
+- [Cristiano Ronaldo'dan 1000. gol ve 2028 sözleri! Takıntı iddialarına yanıt verdi](https://www.takvim.com.tr/uluslar-ligi/2026/09/23/cristiano-ronaldodan-1000-gol-aciklamasi-hedefi-belli) — Takvim Spor · 2026-09-23T20:21:46+03:00 · turnuva=— · kulüp=—
+- [Ronaldo'dan 1000. gol ve Uluslar Ligi'ni kazanma hedefi](https://www.sabah.com.tr/spor/futbol/2026/09/23/ronaldodan-1000-gol-ve-uluslar-ligini-kazanma-hedefi) — Sabah Spor · 2026-09-23T19:50:59+03:00 · turnuva=— · kulüp=—
+- [Ronaldo'dan 1000. gol ve Uluslar Ligi'ni kazanma hedefi](https://www.aa.com.tr/tr/spor/ronaldodan-1000-gol-ve-uluslar-ligini-kazanma-hedefi/4066666) — Anadolu Ajansı Spor · 2026-09-23T19:49:08+03:00 · turnuva=— · kulüp=—
+- [TFF Başkanı Hacıosmanoğlu'ndan Ceferin'in eşinin resim sergisine ziyaret!](https://www.sabah.com.tr/spor/futbol/2026/09/23/tff-baskani-haciosmanoglundan-ceferinin-esinin-resim-sergisine-ziyaret) — Sabah Spor · 2026-09-23T19:41:09+03:00 · turnuva=— · kulüp=—
+- [A Milli Takım, 2 eksikle çalıştı!](https://www.haberturk.com/spor/a-milli-takim-2-eksikle-calisti-3914650) — Haberturk Spor · 2026-09-23T18:53:40+00:00 · turnuva=— · kulüp=—
 - [Türkiye-İtalya maçının genel bilet satışı başladı!](https://www.sabah.com.tr/spor/futbol/2026/09/23/turkiye-italya-macinin-genel-bilet-satisi-basladi) — Sabah Spor · 2026-09-23T17:37:52+03:00 · turnuva=— · kulüp=—
 - [Emmanuel Emenike'den Fenerbahçe'ye ziyaret!](https://www.sabah.com.tr/spor/futbol/2026/09/23/emmanuel-emenikeden-fenerbahceye-ziyaret) — Sabah Spor · 2026-09-23T17:35:52+03:00 · turnuva=EL · kulüp=Fenerbahçe
 - [Türkiye-İtalya maçının genel bilet satışı başladı](https://www.aa.com.tr/tr/spor/turkiye-italya-macinin-genel-bilet-satisi-basladi/4066489) — Anadolu Ajansı Spor · 2026-09-23T17:27:42+03:00 · turnuva=— · kulüp=—
 - [Türkiye'den sadece 1 isim var! Uluslar Ligi'nin en değerlileri açıklandı](https://www.takvim.com.tr/galeri/spor/arda-guler-uluslar-liginin-en-pahali-futbolculari-listesinde) — Takvim Spor · 2026-09-23T17:26:51+03:00 · turnuva=— · kulüp=—
 - [Emmanuel Emenike’den Fenerbahçe’ye ziyaret](https://www.cnnturk.com/spor/futbol/emmanuel-emenikeden-fenerbahceye-ziyaret-3470472) — CNN Türk Spor · 2026-09-23T17:25:29+00:00 · turnuva=EL · kulüp=Fenerbahçe
-- [Emmanuel Emenike'den Fenerbahçe ziyareti!](https://www.fotomac.com.tr/fenerbahce/2026/09/23/emmanuel-emenikeden-fenerbahce-ziyareti) — Fotomaç · 2026-09-23T16:53:42+03:00 · turnuva=EL · kulüp=Fenerbahçe
-- [Yeni Malatyaspor'un profesyonel liglerdeki 19 yıllık serüveni sona erdi](https://www.fotomac.com.tr/ucunculig/2026/09/23/yeni-malatyasporun-profesyonel-liglerdeki-19-yillik-seruveni-sona-erdi) — Fotomaç · 2026-09-23T16:46:10+03:00 · turnuva=EL · kulüp=—
-- [Kocaeli Stadyumu Türkiye-Fransa maçına hazır](https://www.fotomac.com.tr/millitakim/2026/09/23/kocaeli-stadyumu-turkiye-fransa-macina-hazir) — Fotomaç · 2026-09-23T13:50:35+03:00 · turnuva=— · kulüp=—
+- [Ronaldo hedefini açıkladı!](https://www.haberturk.com/spor/foto/cristiano-ronaldo-hedefini-acikladi-3914640) — Haberturk Spor · 2026-09-23T16:52:47+00:00 · turnuva=— · kulüp=—
+- [TFF Başkanı Hacıosmanoğlu'ndan resim sergisine ziyaret!](https://www.haberturk.com/spor/tff-baskani-haciosmanoglu-ndan-ceferin-in-esinin-resim-sergisini-ziyaret-3914634) — Haberturk Spor · 2026-09-23T16:15:29+00:00 · turnuva=— · kulüp=—
+- [İtalya maçının biletleri satışta!](https://www.haberturk.com/spor/turkiye-italya-macinin-biletleri-satista-3914620) — Haberturk Spor · 2026-09-23T15:07:07+00:00 · turnuva=— · kulüp=—
 - [Kocaeli Stadyumu, Türkiye-Fransa maçına hazır](https://www.hurriyet.com.tr/sporarena/kocaeli-stadyumu-turkiye-fransa-macina-hazir-43316899) — Hürriyet Spor · 2026-09-23T12:12:00+00:00 · turnuva=— · kulüp=—
 - [Türkiye-Fransa maçını Alman hakem Felix Zwayer yönetecek](https://www.aa.com.tr/tr/spor/turkiye-fransa-macini-alman-hakem-felix-zwayer-yonetecek/4065984) — Anadolu Ajansı Spor · 2026-09-23T12:10:21+03:00 · turnuva=— · kulüp=—
 - [Türkiye - Fransa maçının hakemi belli oldu!](https://www.cnnturk.com/spor/futbol/turkiye-fransa-macinin-hakemi-belli-oldu-3470305) — CNN Türk Spor · 2026-09-23T12:07:42+00:00 · turnuva=— · kulüp=—
 - [Kocaeli Stadyumu Türkiye-Fransa maçına hazır](https://www.aa.com.tr/tr/spor/kocaeli-stadyumu-turkiye-fransa-macina-hazir/4065931) — Anadolu Ajansı Spor · 2026-09-23T11:36:57+03:00 · turnuva=— · kulüp=—
-- [Türkiye-Fransa maçının hakemi belli oldu!](https://www.fotomac.com.tr/millitakim/2026/09/23/a-milli-takimimizin-uluslar-liginde-oynayacagi-fransa-macinin-hakemleri-belli-oldu) — Fotomaç · 2026-09-23T11:33:48+03:00 · turnuva=— · kulüp=—
 - [Mustafa Eskihellaç, A Milli Futbol Takımı'nın aday kadrosuna dahil edildi](https://www.aa.com.tr/tr/spor/mustafa-eskihellac-a-milli-futbol-takiminin-aday-kadrosuna-dahil-edildi/4065865) — Anadolu Ajansı Spor · 2026-09-23T10:59:12+03:00 · turnuva=— · kulüp=—
 - [UEFA Uluslar Ligi'nde sezon yarınki maçlarla başlayacak](https://www.aa.com.tr/tr/spor/uefa-uluslar-liginde-sezon-yarinki-maclarla-baslayacak/4065862) — Anadolu Ajansı Spor · 2026-09-23T10:56:18+03:00 · turnuva=— · kulüp=—
 - [UEFA Şampiyonlar Ligi Kadınlar’ da 'Üst' tercihleri ön planda! İşte Misli’de günün en çok oynanan maçları](https://www.hurriyet.com.tr/sporarena/uefa-sampiyonlar-ligi-kadinlar-da-ust-tercihleri-on-planda-iste-mislide-gunun-en-cok-oynanan-maclari-43316585) — Hürriyet Spor · 2026-09-23T09:33:03+00:00 · turnuva=CL · kulüp=—
 - [Türkiye - Fransa maçının hakemi belli oldu!](https://www.haberturk.com/spor/son-dakika-turkiye-fransa-macinin-hakemi-belli-oldu-3914498) — Haberturk Spor · 2026-09-23T08:41:45+00:00 · turnuva=— · kulüp=—
 - [UEFA Uluslar Ligi'nde yeni sezon yarın başlıyor](https://www.hurriyet.com.tr/sporarena/uefa-uluslar-liginde-yeni-sezon-yarin-basliyor-43316408) — Hürriyet Spor · 2026-09-23T08:17:07+00:00 · turnuva=— · kulüp=—
-- [Uluslar Ligi'nde heyecan başlıyor](https://www.haberturk.com/spor/uefa-uluslar-ligi-nde-heyecan-basliyor-3914476) — Haberturk Spor · 2026-09-23T08:00:40+00:00 · turnuva=— · kulüp=—
-- [Mustafa Eskihellaç, Milli Takım'a dahil edildi!](https://www.haberturk.com/spor/mustafa-eskihellac-a-milli-takim-aday-kadrosuna-dahil-edildi-3914433) — Haberturk Spor · 2026-09-23T06:27:43+00:00 · turnuva=— · kulüp=—
-- [Ziraat Türkiye Kupası'nda 2. eleme turu programı açıklandı!](https://www.fotomac.com.tr/turkiye-kupasi/2026/09/22/ziraat-turkiye-kupasinda-2-eleme-turu-programi-aciklandi) — Fotomaç · 2026-09-22T23:58:33+03:00 · turnuva=— · kulüp=—
-- [A Milli Takım'da Orkun Kökçü şoku!](https://www.fotomac.com.tr/millitakim/2026/09/22/a-milli-takimda-orkun-kokcu-soku) — Fotomaç · 2026-09-22T23:58:31+03:00 · turnuva=— · kulüp=—
 - [GALATASARAY BARCELONA MAÇI NE ZAMAN? Galatasaray Şampiyonlar Ligi maçı nerede oynanacak?](https://www.cnnturk.com/spor/galatasaray-barcelona-maci-ne-zaman-galatasaray-sampiyonlar-ligi-maci-nerede-oynanacak-3470131) — CNN Türk Spor · 2026-09-22T22:13:59+00:00 · turnuva=CL · kulüp=Galatasaray
-- [UEFA'dan Gamze Durmuş Pakkan'a görev](https://www.aa.com.tr/tr/spor/uefadan-gamze-durmus-pakkana-gorev/4065314) — Anadolu Ajansı Spor · 2026-09-22T21:56:44+03:00 · turnuva=— · kulüp=—
 - [UEFA’dan Gamze Durmuş Pakkan’a görev](https://www.cnnturk.com/spor/futbol/uefadan-gamze-durmus-pakkana-gorev-3470127) — CNN Türk Spor · 2026-09-22T21:45:07+00:00 · turnuva=— · kulüp=—
 - [Ziraat Türkiye Kupası ikinci tur programı açıklandı](https://www.cnnturk.com/spor/futbol/ziraat-turkiye-kupasi-ikinci-tur-programi-aciklandi-3469975) — CNN Türk Spor · 2026-09-22T18:28:23+00:00 · turnuva=— · kulüp=—
-- [A Milli Futbol Takımı'nın İtalya ile yapacağı maçın öncelikli bilet satışları başladı](https://www.aa.com.tr/tr/spor/a-milli-futbol-takiminin-italya-ile-yapacagi-macin-oncelikli-bilet-satislari-basladi/4064667) — Anadolu Ajansı Spor · 2026-09-22T17:56:19+03:00 · turnuva=— · kulüp=—
 - [UEFA Uluslar Ligi 20 bin kez simüle edildi: A Milli Takım için dikkat çeken sonuç!](https://www.hurriyet.com.tr/sporarena/uefa-uluslar-ligi-20-bin-kez-simule-edildi-a-milli-takim-icin-dikkat-ceken-sonuc-43315966) — Hürriyet Spor · 2026-09-22T17:35:00+00:00 · turnuva=— · kulüp=—
-- [Ziraat Türkiye Kupası'nda 2. eleme turu maç programı açıklandı](https://www.aa.com.tr/tr/spor/ziraat-turkiye-kupasinda-2-eleme-turu-mac-programi-aciklandi/4064584) — Anadolu Ajansı Spor · 2026-09-22T16:55:56+03:00 · turnuva=— · kulüp=—
 - [MİLLİ MAÇ TAKVİMİ 2026 | Milli Maç Ne Zaman Başlıyor, Hangi Gün? A Milli Futbol Takımı UEFA Uluslar Ligi Maç Tarihleri](https://www.cnnturk.com/spor/futbol/milli-mac-takvimi-2026-milli-maclar-ne-zaman-basliyor-hangi-gun-a-milli-futbol-takimi-uefa-uluslar-ligi-mac-tarihleri-3469407) — CNN Türk Spor · 2026-09-22T13:37:40+00:00 · turnuva=— · kulüp=—
 - [İsviçre'de Xhaka depremi! Sahte koronavirüs aşısı raporu olay oldu...](https://www.cnnturk.com/spor/futbol/isvicrede-xhaka-depremi-sahte-koronavirus-asisi-raporu-olay-oldu-3469446) — CNN Türk Spor · 2026-09-21T15:24:19+00:00 · turnuva=— · kulüp=—
 - [Uluslar Ligi heyecanı Turkuvaz Medya'da yaşanacak! İşte dev maçların yayın programı](https://www.takvim.com.tr/uluslar-ligi/2026/09/21/uluslar-ligi-heyecani-turkuvaz-medyada-yasanacak) — Takvim Spor · 2026-09-21T15:06:39+03:00 · turnuva=— · kulüp=—
