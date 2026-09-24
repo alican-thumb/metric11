@@ -1,21 +1,21 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-09-23T21:31:31.130042+00:00
+Üretim zamanı: 2026-09-24T00:32:25.719321+00:00
 Toplam ilgili haber: 35
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [Zinedine Zidane'ın Türkiye maçı planı!](https://www.sabah.com.tr/spor/futbol/2026/09/23/zinedine-zidanein-turkiye-maci-plani) — Sabah Spor · 2026-09-24T00:41:57+03:00 · turnuva=— · kulüp=—
+- [Katillerle oynamayın](https://www.aksam.com.tr/spor/katillerle-oynamayin/haber-1700823) — Aksam Spor · 2026-09-24T00:35:00+03:00 · turnuva=— · kulüp=—
+- [Ümit Milli Futbol Takımı, Ukrayna maçının hazırlıklarını sürdürdü!](https://www.sabah.com.tr/spor/futbol/2026/09/23/umit-milli-futbol-takimi-ukrayna-macinin-hazirliklarini-surdurdu) — Sabah Spor · 2026-09-24T00:32:25+03:00 · turnuva=— · kulüp=—
 - [Fransa milli maçı öncesinde kötü haber! 2 futbolcu antrenmana katılmadı](https://www.takvim.com.tr/uluslar-ligi/2026/09/23/orkun-kokcu-ve-muhammed-sengezer-milli-takim-idmanina-katilmadi) — Takvim Spor · 2026-09-23T22:46:48+03:00 · turnuva=— · kulüp=—
-- [TFF açıkladı! A Milli Takım antrenmanında 2 eksik](https://www.aksam.com.tr/spor/tff-acikladi-a-milli-takim-antrenmaninda-2-eksik/haber-1700810) — Aksam Spor · 2026-09-23T22:40:00+03:00 · turnuva=— · kulüp=—
 - [A Milli Futbol Takımı, Fransa maçının hazırlıklarını sürdürdü!](https://www.sabah.com.tr/spor/futbol/2026/09/23/a-milli-futbol-takimi-fransa-macinin-hazirliklarini-surdurdu) — Sabah Spor · 2026-09-23T22:02:06+03:00 · turnuva=— · kulüp=—
 - [Cristiano Ronaldo'dan 1000. gol ve 2028 sözleri! Takıntı iddialarına yanıt verdi](https://www.takvim.com.tr/uluslar-ligi/2026/09/23/cristiano-ronaldodan-1000-gol-aciklamasi-hedefi-belli) — Takvim Spor · 2026-09-23T20:21:46+03:00 · turnuva=— · kulüp=—
 - [Ronaldo'dan 1000. gol ve Uluslar Ligi'ni kazanma hedefi](https://www.sabah.com.tr/spor/futbol/2026/09/23/ronaldodan-1000-gol-ve-uluslar-ligini-kazanma-hedefi) — Sabah Spor · 2026-09-23T19:50:59+03:00 · turnuva=— · kulüp=—
 - [Ronaldo'dan 1000. gol ve Uluslar Ligi'ni kazanma hedefi](https://www.aa.com.tr/tr/spor/ronaldodan-1000-gol-ve-uluslar-ligini-kazanma-hedefi/4066666) — Anadolu Ajansı Spor · 2026-09-23T19:49:08+03:00 · turnuva=— · kulüp=—
 - [TFF Başkanı Hacıosmanoğlu'ndan Ceferin'in eşinin resim sergisine ziyaret!](https://www.sabah.com.tr/spor/futbol/2026/09/23/tff-baskani-haciosmanoglundan-ceferinin-esinin-resim-sergisine-ziyaret) — Sabah Spor · 2026-09-23T19:41:09+03:00 · turnuva=— · kulüp=—
 - [A Milli Takım, 2 eksikle çalıştı!](https://www.haberturk.com/spor/a-milli-takim-2-eksikle-calisti-3914650) — Haberturk Spor · 2026-09-23T18:53:40+00:00 · turnuva=— · kulüp=—
-- [Türkiye-İtalya maçının genel bilet satışı başladı!](https://www.sabah.com.tr/spor/futbol/2026/09/23/turkiye-italya-macinin-genel-bilet-satisi-basladi) — Sabah Spor · 2026-09-23T17:37:52+03:00 · turnuva=— · kulüp=—
-- [Emmanuel Emenike'den Fenerbahçe'ye ziyaret!](https://www.sabah.com.tr/spor/futbol/2026/09/23/emmanuel-emenikeden-fenerbahceye-ziyaret) — Sabah Spor · 2026-09-23T17:35:52+03:00 · turnuva=EL · kulüp=Fenerbahçe
 - [Türkiye-İtalya maçının genel bilet satışı başladı](https://www.aa.com.tr/tr/spor/turkiye-italya-macinin-genel-bilet-satisi-basladi/4066489) — Anadolu Ajansı Spor · 2026-09-23T17:27:42+03:00 · turnuva=— · kulüp=—
 - [Türkiye'den sadece 1 isim var! Uluslar Ligi'nin en değerlileri açıklandı](https://www.takvim.com.tr/galeri/spor/arda-guler-uluslar-liginin-en-pahali-futbolculari-listesinde) — Takvim Spor · 2026-09-23T17:26:51+03:00 · turnuva=— · kulüp=—
 - [Emmanuel Emenike’den Fenerbahçe’ye ziyaret](https://www.cnnturk.com/spor/futbol/emmanuel-emenikeden-fenerbahceye-ziyaret-3470472) — CNN Türk Spor · 2026-09-23T17:25:29+00:00 · turnuva=EL · kulüp=Fenerbahçe
