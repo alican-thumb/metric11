@@ -164,7 +164,8 @@ def main() -> None:
             try:
                 claude_result = _claude_enhance(claude_client, article)
                 if claude_result:
-                    analysis = _merge_analyses(analysis, claude_result)
+                    source_text = f"{article.get('title', '')} {article.get('summary', '')}"
+                    analysis = _merge_analyses(analysis, claude_result, source_text)
             except Exception:  # noqa: BLE001
                 pass
             time.sleep(args.delay_seconds)
@@ -717,7 +718,23 @@ JSON döndür (değer belirsizse null):
         return None
 
 
-def _merge_analyses(rule_result: dict, claude_result: dict) -> dict:
+def _grounded_in_text(value: str | None, source_text: str) -> bool:
+    """Claude'un çıkardığı bir oyuncu/kulüp adının gerçekten haber metninde
+    geçip geçmediğini kontrol eder — LLM'in metinde olmayan bir transfer
+    tarafı uydurmasına (hallucination) karşı ucuz bir kaynak/faithfulness
+    denetimi. Ad(lar)ın normalize son kelimesi (ör. soyisim) metinde
+    geçmiyorsa değer reddedilir; sessizce yanlış bir transfer iddiası
+    transfer_rumors'a merge edilmez. bkz. PROJECT_STATE.md 2026-09-25."""
+    if not value:
+        return False
+    normalized_source = normalize_name(source_text)
+    tokens = [t for t in normalize_name(value).split() if len(t) >= 3]
+    if not tokens:
+        return False
+    return tokens[-1] in normalized_source
+
+
+def _merge_analyses(rule_result: dict, claude_result: dict, source_text: str = "") -> dict:
     merged = dict(rule_result)
     if claude_result.get("summary_tr"):
         merged["summary_tr"] = claude_result["summary_tr"]
@@ -725,9 +742,16 @@ def _merge_analyses(rule_result: dict, claude_result: dict) -> dict:
         merged["tags"] = _unique_in_order(merged.get("tags", []) + claude_result.get("tags", []), limit=10)
 
     # Claude'dan oyuncu adı geldiyse, kural tabanlı sistemin çözemediği rumorlara uygula
+    # — ama önce kaynak metinde gerçekten geçtiğini doğrula (bkz. _grounded_in_text).
     claude_player = (claude_result.get("player_name") or "").strip() or None
     claude_to = (claude_result.get("to_club") or "").strip() or None
     claude_from = (claude_result.get("from_club") or "").strip() or None
+    if claude_player and not _grounded_in_text(claude_player, source_text):
+        claude_player = None
+    if claude_to and not _grounded_in_text(claude_to, source_text):
+        claude_to = None
+    if claude_from and not _grounded_in_text(claude_from, source_text):
+        claude_from = None
     if claude_player:
         for rumor in merged.get("transfer_rumors", []):
             if not rumor.get("player_name") and rumor.get("direction_quality") == "PLAYER_UNRESOLVED":

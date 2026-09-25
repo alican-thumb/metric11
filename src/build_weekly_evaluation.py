@@ -16,6 +16,7 @@ from datetime import datetime
 
 from src.config import PROCESSED_DIR
 from src.html_utils import md_to_html, page_html
+from src.model_league_predictions import brier_score, log_loss
 
 FIXTURE_PRED_PATH = PROCESSED_DIR / "season_fixture_predictions_2026_2027.json"
 OUTPUT_JSON = PROCESSED_DIR / "weekly_evaluation_2026_2027.json"
@@ -123,6 +124,11 @@ def _confidence_breakdown(evaluations: list[dict]) -> dict:
             "accuracy": accuracy,
             "avg_stated_probability": avg_stated,
             "calibration_gap": round(accuracy - avg_stated, 4) if n else None,
+            # isabet oranı tek başına aldatıcı olabilir (favoriyi seçip düşük olasılıkla
+            # tutturmak gibi) — brier/log_loss olasılıkların KENDİSİNİN ne kadar iyi
+            # kalibre olduğunu ölçer. bkz. PROJECT_STATE.md 2026-09-25.
+            "brier_score": round(sum(brier_score(e) for e in items) / n, 4) if n else None,
+            "log_loss": round(sum(log_loss(e) for e in items) / n, 4) if n else None,
         }
     return breakdown
 
@@ -144,6 +150,8 @@ def _summarize(evaluations: list[dict]) -> dict:
         "high_conf_matches": len(high_conf),
         "high_conf_correct": high_conf_correct,
         "high_conf_accuracy": round(high_conf_correct / len(high_conf), 4) if high_conf else None,
+        "brier_score": round(sum(brier_score(e) for e in evaluations) / total, 4) if total else None,
+        "log_loss": round(sum(log_loss(e) for e in evaluations) / total, 4) if total else None,
         "confidence_breakdown": _confidence_breakdown(evaluations),
     }
 
@@ -187,20 +195,32 @@ def _pct(value: float | None) -> str:
 
 
 _BACKTEST_REF_ACCURACY = {"HIGH": 0.64, "MEDIUM": 0.541, "LOW": 0.476}
+# 258 maçlık 2025-26 backtest'indeki (data/processed/league_prediction_model_2025_2026.json
+# "rows") gerçek brier_score/log_loss ortalamaları, güven bandına göre gruplanıp
+# src.model_league_predictions.brier_score/log_loss ile hesaplandı (2026-09-25) — düşük
+# değer daha iyi. Canlı sezon bunlardan belirgin kötüyse model o banda güvenmemeli.
+_BACKTEST_REF_BRIER = {"HIGH": 0.516, "MEDIUM": 0.619, "LOW": 0.670}
+_BACKTEST_REF_LOG_LOSS = {"HIGH": 0.885, "MEDIUM": 1.032, "LOW": 1.103}
+
+
+def _fmt_score(value: float | None) -> str:
+    return "—" if value is None else f"{value:.3f}"
 
 
 def _confidence_breakdown_lines(breakdown: dict) -> list[str]:
     lines = [
-        "| Güven bandı | Maç | İsabet | Beyan edilen ort. olasılık | Referans (2025-26, 258 maç) |",
-        "| --- | --- | --- | --- | --- |",
+        "| Güven bandı | Maç | İsabet | Beyan edilen ort. olasılık | Brier | Log loss | Referans (2025-26: isabet / brier / logloss) |",
+        "| --- | --- | --- | --- | --- | --- | --- |",
     ]
     for label in ("HIGH", "MEDIUM", "LOW"):
         b = breakdown.get(label, {})
         n = b.get("matches") or 0
-        ref = _BACKTEST_REF_ACCURACY[label]
         row_acc = f"{b['correct']}/{n} ({_pct(b['accuracy'])})" if n else "—"
         row_stated = _pct(b.get("avg_stated_probability")) if n else "—"
-        lines.append(f"| {label} | {n} | {row_acc} | {row_stated} | {_pct(ref)} |")
+        row_brier = _fmt_score(b.get("brier_score"))
+        row_log_loss = _fmt_score(b.get("log_loss"))
+        ref = f"{_pct(_BACKTEST_REF_ACCURACY[label])} / {_BACKTEST_REF_BRIER[label]:.3f} / {_BACKTEST_REF_LOG_LOSS[label]:.3f}"
+        lines.append(f"| {label} | {n} | {row_acc} | {row_stated} | {row_brier} | {row_log_loss} | {ref} |")
     return lines
 
 
@@ -217,13 +237,17 @@ def build_markdown(payload: dict) -> str:
         f"- İsabet: **{s['correct']}/{s['evaluated_matches']}** ({_pct(s['accuracy'])})",
         f"- Beraberlik yakalama: **{s['draws_caught']}/{s['actual_draws']}** ({_pct(s['draw_recall'])})",
         f"- Yüksek güvenli maç isabeti: **{s['high_conf_correct']}/{s['high_conf_matches']}** ({_pct(s['high_conf_accuracy'])})",
+        f"- Brier score: **{_fmt_score(s.get('brier_score'))}** (düşük daha iyi; 2025-26 referans 0.600)",
+        f"- Log loss: **{_fmt_score(s.get('log_loss'))}** (düşük daha iyi; 2025-26 referans 1.005)",
         "",
         "### Güven bandı kalibrasyonu",
         "",
         "_\"Beyan edilen ort. olasılık\" ile \"İsabet\" arasındaki fark büyükse (özellikle "
         "isabet daha düşükse) model o banttaki kendine güvenini haklı çıkaramıyor demektir. "
-        "Referans sütunu geçmiş sezonun 258 maçlık backtest'inden — küçük örneklemli erken "
-        "hafta sapmalarını buna göre yorumlayın._",
+        "İsabet oranı tek başına aldatıcı olabilir — favoriyi seçip düşük bir olasılıkla "
+        "tutturmak yüksek isabet ama kötü kalibrasyon demektir. Brier/log loss olasılıkların "
+        "KENDİSİNİN kalitesini ölçer (düşük = iyi). Referans sütunu geçmiş sezonun 258 maçlık "
+        "backtest'inden — küçük örneklemli erken hafta sapmalarını buna göre yorumlayın._",
         "",
         *_confidence_breakdown_lines(s.get("confidence_breakdown", {})),
         "",

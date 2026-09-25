@@ -31,6 +31,7 @@ PLAYED_2026_2027_PATH = PROCESSED_DIR / "tff_super_lig_matches_2026_2027.json"
 OUTPUT_JSON = PROCESSED_DIR / "season_fixture_predictions_2026_2027.json"
 OUTPUT_MD = PROCESSED_DIR / "season_fixture_predictions_2026_2027.md"
 OUTPUT_HTML = PROCESSED_DIR / "season_fixture_predictions_2026_2027.html"
+SNAPSHOT_PATH = PROCESSED_DIR / "prediction_snapshots_2026_2027.json"
 
 # 2025-26 -> 2026-27 sponsor/isim değişiklikleri (aynı kulüp, farklı resmi ad).
 NAME_ALIASES: dict[str, str] = {
@@ -99,6 +100,10 @@ def build_predictions() -> dict:
     # örn. Hafta 1 sonuçları girilince Hafta 1'in kendi görüntülenen tahmini/olasılıkları
     # değişiyordu — Haftalık Karne'yi (weekly_evaluation) geçersiz kılan bir hataydı
     # (kullanıcı 2026-08-16 gerçek sonuçlarla karşılaştırınca fark edildi).
+    snapshots: dict[str, dict] = (
+        json.loads(SNAPSHOT_PATH.read_text(encoding="utf-8")) if SNAPSHOT_PATH.exists() else {}
+    )
+
     remaining = list(all_matches)
     settled: list[dict] = []
     for week in fixture_payload["weeks"]:
@@ -124,33 +129,58 @@ def build_predictions() -> dict:
             is_new = home_name in NEW_TEAMS or away_name in NEW_TEAMS
             if is_new:
                 new_team_matches += 1
-            try:
-                match_dt = parse_tff_datetime(m["date_time"])
-            except ValueError:
-                match_dt = None
-            prediction = predict_match(
-                home_name, away_name, home_hist, away_hist,
-                elo.get(home_key, 1500.0), elo.get(away_key, 1500.0),
-                ref_stats=None,
-                apply_transfer_signal=True,
-                apply_fixture_congestion=True,
-                apply_european_signal=True,
-                apply_suspension_signal=True,
-                match_date=match_dt,
-            )
-            probs = {
-                "home": prediction["home_win_probability"],
-                "draw": prediction["draw_probability"],
-                "away": prediction["away_win_probability"],
-            }
-            raw_predicted = max(probs, key=probs.__getitem__)
-            predicted = draw_calibrated_prediction(
-                probs["home"], probs["draw"], probs["away"], prediction.get("strength_edge", 0.0)
-            )
             score_text = (m.get("score") or "").strip()
             is_played = bool(score_text) and score_text != "-"
             if is_played:
                 played_matches += 1
+
+            match_id_key = str(m["match_id"])
+            frozen = snapshots.get(match_id_key)
+            if frozen is not None:
+                # Bu maç daha önce oynanmış HALDE bulunmuş ve dondurulmuş: aynı tahmini
+                # tekrar kullan, YENİDEN HESAPLAMA. Aksi halde her pipeline çalışmasında
+                # tüm geçmiş, o anki model kodu/eşikleriyle (ör. draw_calibrated_prediction
+                # ayarları zamanla değişti, bkz. o fonksiyonun docstring'i) sessizce yeniden
+                # hesaplanır ve haftalık karnenin (weekly_evaluation) isabet oranı geçmişe
+                # dönük kayar — backtest'i geçersiz kılan bir temporal-leakage biçimi.
+                # Detay: PROJECT_STATE.md 2026-09-25.
+                prediction = frozen["prediction"]
+                raw_predicted = frozen["raw_predicted"]
+                predicted = frozen["predicted"]
+            else:
+                try:
+                    match_dt = parse_tff_datetime(m["date_time"])
+                except ValueError:
+                    match_dt = None
+                prediction = predict_match(
+                    home_name, away_name, home_hist, away_hist,
+                    elo.get(home_key, 1500.0), elo.get(away_key, 1500.0),
+                    ref_stats=None,
+                    apply_transfer_signal=True,
+                    apply_fixture_congestion=True,
+                    apply_european_signal=True,
+                    apply_suspension_signal=True,
+                    match_date=match_dt,
+                )
+                probs = {
+                    "home": prediction["home_win_probability"],
+                    "draw": prediction["draw_probability"],
+                    "away": prediction["away_win_probability"],
+                }
+                raw_predicted = max(probs, key=probs.__getitem__)
+                predicted = draw_calibrated_prediction(
+                    probs["home"], probs["draw"], probs["away"], prediction.get("strength_edge", 0.0)
+                )
+                if is_played:
+                    # İlk kez oynanmış görülüyor: pre-kickoff kalitesindeki (bu haftanın
+                    # kendi sonucunu görmeyen `settled` state'inden türetilen) tahmini
+                    # kalıcı olarak dondur.
+                    snapshots[match_id_key] = {
+                        "frozen_at": datetime.now().isoformat(),
+                        "prediction": prediction,
+                        "raw_predicted": raw_predicted,
+                        "predicted": predicted,
+                    }
             week_matches.append({
                 "match_id": m["match_id"],
                 "date_time": m["date_time"],
@@ -164,6 +194,8 @@ def build_predictions() -> dict:
                 **prediction,
             })
         weeks_out.append({"week": week["week"], "matches": week_matches})
+
+    SNAPSHOT_PATH.write_text(json.dumps(snapshots, ensure_ascii=False, indent=2), encoding="utf-8")
 
     return {
         "generated_at": datetime.now().isoformat(),
