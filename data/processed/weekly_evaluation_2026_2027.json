@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T19:27:57.304516",
+  "generated_at": "2026-09-25T17:09:15.082165",
   "season": "2026-2027",
   "summary": {
     "evaluated_matches": 54,
@@ -11,35 +11,35 @@
     "high_conf_matches": 19,
     "high_conf_correct": 9,
     "high_conf_accuracy": 0.4737,
-    "brier_score": 0.6663,
-    "log_loss": 1.092,
+    "brier_score": 0.6662,
+    "log_loss": 1.0915,
     "confidence_breakdown": {
       "HIGH": {
         "matches": 19,
         "correct": 9,
         "accuracy": 0.4737,
-        "avg_stated_probability": 0.5896,
-        "calibration_gap": -0.1159,
-        "brier_score": 0.6278,
-        "log_loss": 1.0385
+        "avg_stated_probability": 0.5897,
+        "calibration_gap": -0.116,
+        "brier_score": 0.6276,
+        "log_loss": 1.0384
       },
       "MEDIUM": {
         "matches": 20,
         "correct": 4,
         "accuracy": 0.2,
-        "avg_stated_probability": 0.4611,
-        "calibration_gap": -0.2611,
-        "brier_score": 0.6958,
-        "log_loss": 1.1237
+        "avg_stated_probability": 0.4616,
+        "calibration_gap": -0.2616,
+        "brier_score": 0.7003,
+        "log_loss": 1.1293
       },
       "LOW": {
         "matches": 15,
         "correct": 8,
         "accuracy": 0.5333,
-        "avg_stated_probability": 0.3878,
-        "calibration_gap": 0.1455,
-        "brier_score": 0.6756,
-        "log_loss": 1.1175
+        "avg_stated_probability": 0.3853,
+        "calibration_gap": 0.148,
+        "brier_score": 0.6695,
+        "log_loss": 1.1084
       }
     }
   },
@@ -248,35 +248,35 @@
         "high_conf_matches": 4,
         "high_conf_correct": 2,
         "high_conf_accuracy": 0.5,
-        "brier_score": 0.6932,
-        "log_loss": 1.1489,
+        "brier_score": 0.6998,
+        "log_loss": 1.1568,
         "confidence_breakdown": {
           "HIGH": {
             "matches": 4,
             "correct": 2,
             "accuracy": 0.5,
-            "avg_stated_probability": 0.5805,
-            "calibration_gap": -0.0805,
-            "brier_score": 0.6067,
-            "log_loss": 1.0084
+            "avg_stated_probability": 0.5807,
+            "calibration_gap": -0.0807,
+            "brier_score": 0.6063,
+            "log_loss": 1.008
           },
           "MEDIUM": {
-            "matches": 1,
+            "matches": 2,
             "correct": 0,
             "accuracy": 0.0,
-            "avg_stated_probability": 0.441,
-            "calibration_gap": -0.441,
-            "brier_score": 0.889,
-            "log_loss": 1.4567
+            "avg_stated_probability": 0.4565,
+            "calibration_gap": -0.4565,
+            "brier_score": 0.7975,
+            "log_loss": 1.284
           },
           "LOW": {
-            "matches": 4,
+            "matches": 3,
             "correct": 2,
-            "accuracy": 0.5,
-            "avg_stated_probability": 0.3817,
-            "calibration_gap": 0.1183,
-            "brier_score": 0.7308,
-            "log_loss": 1.2125
+            "accuracy": 0.6667,
+            "avg_stated_probability": 0.3683,
+            "calibration_gap": 0.2984,
+            "brier_score": 0.7593,
+            "log_loss": 1.2705
           }
         }
       },
@@ -324,10 +324,10 @@
           "raw_predicted": "home",
           "correct": false,
           "data_confidence": "PLAYED",
-          "prediction_confidence": "LOW",
-          "home_win_probability": 0.422,
-          "draw_probability": 0.224,
-          "away_win_probability": 0.354
+          "prediction_confidence": "MEDIUM",
+          "home_win_probability": 0.446,
+          "draw_probability": 0.223,
+          "away_win_probability": 0.332
         },
         {
           "match_id": "317784",
@@ -341,9 +341,9 @@
           "correct": false,
           "data_confidence": "PLAYED",
           "prediction_confidence": "MEDIUM",
-          "home_win_probability": 0.326,
-          "draw_probability": 0.233,
-          "away_win_probability": 0.441
+          "home_win_probability": 0.301,
+          "draw_probability": 0.231,
+          "away_win_probability": 0.467
         },
         {
           "match_id": "317788",
@@ -405,8 +405,8 @@
           "correct": true,
           "data_confidence": "PLAYED",
           "prediction_confidence": "HIGH",
-          "home_win_probability": 0.538,
-          "draw_probability": 0.225,
+          "home_win_probability": 0.539,
+          "draw_probability": 0.224,
           "away_win_probability": 0.237
         },
         {
@@ -439,35 +439,35 @@
         "high_conf_matches": 3,
         "high_conf_correct": 2,
         "high_conf_accuracy": 0.6667,
-        "brier_score": 0.6822,
-        "log_loss": 1.1062,
+        "brier_score": 0.6704,
+        "log_loss": 1.0896,
         "confidence_breakdown": {
           "HIGH": {
             "matches": 3,
             "correct": 2,
             "accuracy": 0.6667,
-            "avg_stated_probability": 0.5633,
-            "calibration_gap": 0.1034,
-            "brier_score": 0.4894,
-            "log_loss": 0.8511
+            "avg_stated_probability": 0.5637,
+            "calibration_gap": 0.103,
+            "brier_score": 0.4888,
+            "log_loss": 0.8506
           },
           "MEDIUM": {
-            "matches": 6,
+            "matches": 5,
             "correct": 0,
             "accuracy": 0.0,
-            "avg_stated_probability": 0.4697,
-            "calibration_gap": -0.4697,
-            "brier_score": 0.7786,
-            "log_loss": 1.2337
+            "avg_stated_probability": 0.471,
+            "calibration_gap": -0.471,
+            "brier_score": 0.7897,
+            "log_loss": 1.251
           },
           "LOW": {
-            "matches": 0,
+            "matches": 1,
             "correct": 0,
-            "accuracy": null,
-            "avg_stated_probability": null,
-            "calibration_gap": null,
-            "brier_score": null,
-            "log_loss": null
+            "accuracy": 0.0,
+            "avg_stated_probability": 0.414,
+            "calibration_gap": -0.414,
+            "brier_score": 0.6183,
+            "log_loss": 0.9997
           }
         }
       },
@@ -499,10 +499,10 @@
           "raw_predicted": "home",
           "correct": false,
           "data_confidence": "PLAYED",
-          "prediction_confidence": "MEDIUM",
-          "home_win_probability": 0.439,
-          "draw_probability": 0.217,
-          "away_win_probability": 0.344
+          "prediction_confidence": "LOW",
+          "home_win_probability": 0.414,
+          "draw_probability": 0.218,
+          "away_win_probability": 0.368
         },
         {
           "match_id": "317798",
@@ -532,9 +532,9 @@
           "correct": true,
           "data_confidence": "PLAYED",
           "prediction_confidence": "HIGH",
-          "home_win_probability": 0.601,
+          "home_win_probability": 0.602,
           "draw_probability": 0.182,
-          "away_win_probability": 0.217
+          "away_win_probability": 0.215
         },
         {
           "match_id": "317793",
@@ -580,9 +580,9 @@
           "correct": false,
           "data_confidence": "PLAYED",
           "prediction_confidence": "MEDIUM",
-          "home_win_probability": 0.276,
-          "draw_probability": 0.253,
-          "away_win_probability": 0.47
+          "home_win_probability": 0.299,
+          "draw_probability": 0.256,
+          "away_win_probability": 0.446
         },
         {
           "match_id": "317797",
@@ -630,8 +630,8 @@
         "high_conf_matches": 4,
         "high_conf_correct": 2,
         "high_conf_accuracy": 0.5,
-        "brier_score": 0.5717,
-        "log_loss": 0.9522,
+        "brier_score": 0.582,
+        "log_loss": 0.9656,
         "confidence_breakdown": {
           "HIGH": {
             "matches": 4,
@@ -639,26 +639,26 @@
             "accuracy": 0.5,
             "avg_stated_probability": 0.592,
             "calibration_gap": -0.092,
-            "brier_score": 0.6585,
+            "brier_score": 0.6584,
             "log_loss": 1.068
           },
           "MEDIUM": {
             "matches": 2,
             "correct": 2,
             "accuracy": 1.0,
-            "avg_stated_probability": 0.468,
-            "calibration_gap": 0.532,
-            "brier_score": 0.4251,
-            "log_loss": 0.7593
+            "avg_stated_probability": 0.454,
+            "calibration_gap": 0.546,
+            "brier_score": 0.4481,
+            "log_loss": 0.7904
           },
           "LOW": {
             "matches": 3,
             "correct": 2,
             "accuracy": 0.6667,
-            "avg_stated_probability": 0.419,
-            "calibration_gap": 0.2477,
-            "brier_score": 0.5537,
-            "log_loss": 0.9264
+            "avg_stated_probability": 0.4093,
+            "calibration_gap": 0.2574,
+            "brier_score": 0.5695,
+            "log_loss": 0.9459
           }
         }
       },
@@ -691,9 +691,9 @@
           "correct": false,
           "data_confidence": "PLAYED",
           "prediction_confidence": "LOW",
-          "home_win_probability": 0.401,
+          "home_win_probability": 0.399,
           "draw_probability": 0.261,
-          "away_win_probability": 0.339
+          "away_win_probability": 0.341
         },
         {
           "match_id": "317802",
@@ -707,9 +707,9 @@
           "correct": true,
           "data_confidence": "PLAYED",
           "prediction_confidence": "LOW",
-          "home_win_probability": 0.361,
+          "home_win_probability": 0.388,
           "draw_probability": 0.206,
-          "away_win_probability": 0.433
+          "away_win_probability": 0.406
         },
         {
           "match_id": "317808",
@@ -739,9 +739,9 @@
           "correct": true,
           "data_confidence": "PLAYED",
           "prediction_confidence": "MEDIUM",
-          "home_win_probability": 0.465,
-          "draw_probability": 0.263,
-          "away_win_probability": 0.273
+          "home_win_probability": 0.437,
+          "draw_probability": 0.266,
+          "away_win_probability": 0.297
         },
         {
           "match_id": "317804",
@@ -805,7 +805,7 @@
           "prediction_confidence": "HIGH",
           "home_win_probability": 0.538,
           "draw_probability": 0.225,
-          "away_win_probability": 0.237
+          "away_win_probability": 0.236
         }
       ]
     },
@@ -821,8 +821,8 @@
         "high_conf_matches": 0,
         "high_conf_correct": 0,
         "high_conf_accuracy": null,
-        "brier_score": 0.7084,
-        "log_loss": 1.1433,
+        "brier_score": 0.6963,
+        "log_loss": 1.126,
         "confidence_breakdown": {
           "HIGH": {
             "matches": 0,
@@ -848,8 +848,8 @@
             "accuracy": 0.4,
             "avg_stated_probability": 0.378,
             "calibration_gap": 0.022,
-            "brier_score": 0.6662,
-            "log_loss": 1.0904
+            "brier_score": 0.6443,
+            "log_loss": 1.0593
           }
         }
       },
@@ -882,9 +882,9 @@
           "correct": false,
           "data_confidence": "PLAYED",
           "prediction_confidence": "LOW",
-          "home_win_probability": 0.346,
+          "home_win_probability": 0.348,
           "draw_probability": 0.239,
-          "away_win_probability": 0.415
+          "away_win_probability": 0.413
         },
         {
           "match_id": "317817",
@@ -978,9 +978,9 @@
           "correct": false,
           "data_confidence": "PLAYED",
           "prediction_confidence": "LOW",
-          "home_win_probability": 0.422,
-          "draw_probability": 0.275,
-          "away_win_probability": 0.303
+          "home_win_probability": 0.371,
+          "draw_probability": 0.277,
+          "away_win_probability": 0.352
         },
         {
           "match_id": "317815",
@@ -1012,8 +1012,8 @@
         "high_conf_matches": 4,
         "high_conf_correct": 2,
         "high_conf_accuracy": 0.5,
-        "brier_score": 0.6654,
-        "log_loss": 1.0986,
+        "brier_score": 0.6721,
+        "log_loss": 1.1082,
         "confidence_breakdown": {
           "HIGH": {
             "matches": 4,
@@ -1028,10 +1028,10 @@
             "matches": 4,
             "correct": 0,
             "accuracy": 0.0,
-            "avg_stated_probability": 0.4397,
-            "calibration_gap": -0.4397,
-            "brier_score": 0.7021,
-            "log_loss": 1.1205
+            "avg_stated_probability": 0.447,
+            "calibration_gap": -0.447,
+            "brier_score": 0.7176,
+            "log_loss": 1.1421
           },
           "LOW": {
             "matches": 1,
@@ -1039,7 +1039,7 @@
             "accuracy": 1.0,
             "avg_stated_probability": 0.287,
             "calibration_gap": 0.713,
-            "brier_score": 0.7643,
+            "brier_score": 0.7626,
             "log_loss": 1.2483
           }
         }
@@ -1073,9 +1073,9 @@
           "correct": false,
           "data_confidence": "PLAYED",
           "prediction_confidence": "MEDIUM",
-          "home_win_probability": 0.431,
-          "draw_probability": 0.244,
-          "away_win_probability": 0.325
+          "home_win_probability": 0.458,
+          "draw_probability": 0.242,
+          "away_win_probability": 0.3
         },
         {
           "match_id": "317828",
@@ -1105,9 +1105,9 @@
           "correct": true,
           "data_confidence": "PLAYED",
           "prediction_confidence": "LOW",
-          "home_win_probability": 0.334,
+          "home_win_probability": 0.356,
           "draw_probability": 0.287,
-          "away_win_probability": 0.38
+          "away_win_probability": 0.357
         },
         {
           "match_id": "317825",
@@ -1121,9 +1121,9 @@
           "correct": false,
           "data_confidence": "PLAYED",
           "prediction_confidence": "MEDIUM",
-          "home_win_probability": 0.318,
+          "home_win_probability": 0.316,
           "draw_probability": 0.233,
-          "away_win_probability": 0.449
+          "away_win_probability": 0.451
         },
         {
           "match_id": "317824",

@@ -9,7 +9,7 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 - Beraberlik yakalama: **2/11** (%18)
 - Yüksek güvenli maç isabeti: **9/19** (%47)
 - Brier score: **0.666** (düşük daha iyi; 2025-26 referans 0.600)
-- Log loss: **1.092** (düşük daha iyi; 2025-26 referans 1.005)
+- Log loss: **1.091** (düşük daha iyi; 2025-26 referans 1.005)
 
 ### Güven bandı kalibrasyonu
 
@@ -18,8 +18,8 @@ _"Beyan edilen ort. olasılık" ile "İsabet" arasındaki fark büyükse (özell
 | Güven bandı | Maç | İsabet | Beyan edilen ort. olasılık | Brier | Log loss | Referans (2025-26: isabet / brier / logloss) |
 | --- | --- | --- | --- | --- | --- | --- |
 | HIGH | 19 | 9/19 (%47) | %59 | 0.628 | 1.038 | %64 / 0.516 / 0.885 |
-| MEDIUM | 20 | 4/20 (%20) | %46 | 0.696 | 1.124 | %54 / 0.619 / 1.032 |
-| LOW | 15 | 8/15 (%53) | %39 | 0.676 | 1.117 | %48 / 0.670 / 1.103 |
+| MEDIUM | 20 | 4/20 (%20) | %46 | 0.700 | 1.129 | %54 / 0.619 / 1.032 |
+| LOW | 15 | 8/15 (%53) | %39 | 0.669 | 1.108 | %48 / 0.670 / 1.103 |
 
 ## Hafta 6 — 4/9 isabet (%44)
 
@@ -82,7 +82,7 @@ _"Beyan edilen ort. olasılık" ile "İsabet" arasındaki fark büyükse (özell
 | Maç | Skor | Tahmin | Sonuç | Güven |
 | --- | --- | --- | --- | --- |
 | ERZURUMSPOR FK - GALATASARAY A.Ş. | 0 - 4 | Deplasman | ✅ | HIGH |
-| ÇAYKUR RİZESPOR A.Ş. - SAMSUNSPOR A.Ş. | 0 - 2 | Ev | ❌ | MEDIUM |
+| ÇAYKUR RİZESPOR A.Ş. - SAMSUNSPOR A.Ş. | 0 - 2 | Ev | ❌ | LOW |
 | ARCA ÇORUM FK - KASIMPAŞA A.Ş. | 0 - 1 | Ev | ❌ | MEDIUM |
 | FENERBAHÇE A.Ş. - TÜMOSAN KONYASPOR | 4 - 2 | Ev | ✅ | HIGH |
 | TRABZONSPOR A.Ş. - İSTANBUL BAŞAKŞEHİR FK | 2 - 1 | Deplasman | ❌ | HIGH |
@@ -97,7 +97,7 @@ _"Beyan edilen ort. olasılık" ile "İsabet" arasındaki fark büyükse (özell
 | --- | --- | --- | --- | --- |
 | GALATASARAY A.Ş. - ARCA ÇORUM FK | 2 - 2 | Ev | ❌ | HIGH |
 | KASIMPAŞA A.Ş. - TRABZONSPOR A.Ş. | 1 - 1 | Beraberlik | ✅ | LOW |
-| TÜMOSAN KONYASPOR - ÇAYKUR RİZESPOR A.Ş. | 0 - 1 | Ev | ❌ | LOW |
+| TÜMOSAN KONYASPOR - ÇAYKUR RİZESPOR A.Ş. | 0 - 1 | Ev | ❌ | MEDIUM |
 | GAZİANTEP FUTBOL KULÜBÜ A.Ş. - CORENDON ALANYASPOR | 1 - 1 | Deplasman | ❌ | MEDIUM |
 | GENÇLERBİRLİĞİ - FENERBAHÇE A.Ş. | 2 - 1 | Deplasman | ❌ | HIGH |
 | İSTANBUL BAŞAKŞEHİR FK - KOCAELİSPOR | 2 - 0 | Ev | ✅ | HIGH |

@@ -1,6 +1,6 @@
 {
   "available": true,
-  "generated_at": "2026-09-25T15:17:04.029375",
+  "generated_at": "2026-09-25T17:09:15.163001",
   "week": 7,
   "matches": [
     {
@@ -276,27 +276,35 @@
     "high_conf_matches": 4,
     "high_conf_correct": 1,
     "high_conf_accuracy": 0.25,
+    "brier_score": 0.6765,
+    "log_loss": 1.1029,
     "confidence_breakdown": {
       "HIGH": {
         "matches": 4,
         "correct": 1,
         "accuracy": 0.25,
         "avg_stated_probability": 0.588,
-        "calibration_gap": -0.338
+        "calibration_gap": -0.338,
+        "brier_score": 0.7457,
+        "log_loss": 1.179
       },
       "MEDIUM": {
         "matches": 3,
         "correct": 2,
         "accuracy": 0.6667,
         "avg_stated_probability": 0.4773,
-        "calibration_gap": 0.1894
+        "calibration_gap": 0.1894,
+        "brier_score": 0.5506,
+        "log_loss": 0.9257
       },
       "LOW": {
         "matches": 2,
         "correct": 1,
         "accuracy": 0.5,
         "avg_stated_probability": 0.428,
-        "calibration_gap": 0.072
+        "calibration_gap": 0.072,
+        "brier_score": 0.727,
+        "log_loss": 1.2165
       }
     }
   }

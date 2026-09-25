@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T15:17:03.494940",
+  "generated_at": "2026-09-25T17:09:14.639168",
   "season": "2026-2027",
   "source_note": "Tahminler 2025-26 sezonunun tamamı ve 2026-27'de şimdiye kadar oynanmış (54 maç) sonuçlardan türetilen güncel takım formu/Elo/transfer durumuna dayanır; sezon ilerledikçe bu sayfa her gün otomatik olarak yeniden hesaplanır, statik bir anlık görüntü değildir.",
   "total_weeks": 34,
@@ -394,8 +394,8 @@
           "data_confidence": "PLAYED",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.81,
-          "expected_away_goals": 1.64,
+          "expected_home_goals": 1.86,
+          "expected_away_goals": 1.58,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -407,36 +407,36 @@
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.085
+              "probability": 0.088
             },
             {
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.077
+              "probability": 0.074
             },
             {
               "score": "2-2",
               "home_goals": 2,
               "away_goals": 2,
-              "probability": 0.07
+              "probability": 0.069
             },
             {
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.058
+              "probability": 0.059
             }
           ],
           "recommended_scoreline": {
             "score": "2-1",
             "home_goals": 2,
             "away_goals": 1,
-            "probability": 0.085
+            "probability": 0.088
           },
-          "home_win_probability": 0.422,
-          "draw_probability": 0.224,
-          "away_win_probability": 0.354,
+          "home_win_probability": 0.446,
+          "draw_probability": 0.223,
+          "away_win_probability": 0.332,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -445,13 +445,13 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.0735,
+              "edge": -0.0815,
               "news_signal": null,
               "squad_signal": {
                 "available": true,
-                "edge": -0.0735,
-                "net_value_eur": -3675000,
-                "arrivals_value_eur": 15050000,
+                "edge": -0.0815,
+                "net_value_eur": -4075000,
+                "arrivals_value_eur": 14650000,
                 "departures_value_eur": 18725000,
                 "top_arrivals": [
                   {
@@ -499,6 +499,10 @@
                 ],
                 "pending_arrivals": [
                   {
+                    "player": "AHMET OGUZ",
+                    "market_value_eur": 400000
+                  },
+                  {
                     "player": "EMIR GUNDOGDU",
                     "market_value_eur": 0
                   }
@@ -506,8 +510,74 @@
               }
             },
             "away": {
-              "available": false,
-              "edge": 0.0
+              "available": true,
+              "edge": -0.1205,
+              "news_signal": null,
+              "squad_signal": {
+                "available": true,
+                "edge": -0.1205,
+                "net_value_eur": -6025000,
+                "arrivals_value_eur": 11650000,
+                "departures_value_eur": 17675000,
+                "top_arrivals": [
+                  {
+                    "player": "AHMED KUTUCU",
+                    "market_value_eur": 3000000
+                  },
+                  {
+                    "player": "SIAKA BAKAYOKO",
+                    "market_value_eur": 2500000
+                  },
+                  {
+                    "player": "ZAKARIA ARISS",
+                    "market_value_eur": 2000000
+                  },
+                  {
+                    "player": "TAYYIP TALHA SANUC",
+                    "market_value_eur": 1500000
+                  },
+                  {
+                    "player": "MOUSSA DIAKITE",
+                    "market_value_eur": 1000000
+                  }
+                ],
+                "top_departures": [
+                  {
+                    "player": "JESURUN RAK SAKYI",
+                    "market_value_eur": 6000000
+                  },
+                  {
+                    "player": "MUHAMED BULJUBASIC",
+                    "market_value_eur": 1500000
+                  },
+                  {
+                    "player": "FRANTZDY PIERROT",
+                    "market_value_eur": 1500000
+                  },
+                  {
+                    "player": "SAMET AKAYDIN",
+                    "market_value_eur": 1200000
+                  },
+                  {
+                    "player": "GIANNIS PAPANIKOLAOU",
+                    "market_value_eur": 1200000
+                  }
+                ],
+                "pending_arrivals": [
+                  {
+                    "player": "GENNARO BORRELLI",
+                    "market_value_eur": 3000000
+                  },
+                  {
+                    "player": "CAN BOZDOGAN",
+                    "market_value_eur": 2000000
+                  },
+                  {
+                    "player": "HASAN YAGIZ DONE",
+                    "market_value_eur": 0
+                  }
+                ]
+              }
             }
           },
           "fixture_congestion": {
@@ -567,49 +637,49 @@
           "data_confidence": "PLAYED",
           "raw_predicted": "away",
           "predicted": "away",
-          "expected_home_goals": 1.26,
-          "expected_away_goals": 1.5,
+          "expected_home_goals": 1.2,
+          "expected_away_goals": 1.56,
           "top_scorelines": [
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.12
+              "probability": 0.119
             },
             {
               "score": "0-1",
               "home_goals": 0,
               "away_goals": 1,
-              "probability": 0.095
+              "probability": 0.099
             },
             {
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.09
+              "probability": 0.092
+            },
+            {
+              "score": "0-2",
+              "home_goals": 0,
+              "away_goals": 2,
+              "probability": 0.077
             },
             {
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.08
-            },
-            {
-              "score": "2-1",
-              "home_goals": 2,
-              "away_goals": 1,
-              "probability": 0.075
+              "probability": 0.076
             }
           ],
           "recommended_scoreline": {
             "score": "0-1",
             "home_goals": 0,
             "away_goals": 1,
-            "probability": 0.095
+            "probability": 0.099
           },
-          "home_win_probability": 0.326,
-          "draw_probability": 0.233,
-          "away_win_probability": 0.441,
+          "home_win_probability": 0.301,
+          "draw_probability": 0.231,
+          "away_win_probability": 0.467,
           "head_to_head": {
             "available": true,
             "matches": 18,
@@ -689,8 +759,22 @@
             },
             "away": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.039,
+              "news_signal": {
+                "available": true,
+                "edge": 0.072,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 3600000,
+                "total_net_value_eur": 3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "in",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -1326,8 +1410,8 @@
             "away_goals": 1,
             "probability": 0.098
           },
-          "home_win_probability": 0.538,
-          "draw_probability": 0.225,
+          "home_win_probability": 0.539,
+          "draw_probability": 0.224,
           "away_win_probability": 0.237,
           "head_to_head": {
             "available": false,
@@ -1337,8 +1421,28 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.0302,
-              "news_signal": null,
+              "edge": -0.0281,
+              "news_signal": {
+                "available": true,
+                "edge": -0.026,
+                "signal_count": 2,
+                "confirmed_net_value_eur": -3600000,
+                "total_net_value_eur": -7100000,
+                "top_moves": [
+                  {
+                    "player": "Dusan Vlahovıc",
+                    "direction": "out",
+                    "market_value_eur": 35000000,
+                    "status": "REVIEW_REQUIRED"
+                  },
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "out",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.0302,
@@ -1412,8 +1516,8 @@
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
-                "net_value_eur": -28325000,
-                "arrivals_value_eur": 8725000,
+                "net_value_eur": -28475000,
+                "arrivals_value_eur": 8575000,
                 "departures_value_eur": 37050000,
                 "top_arrivals": [
                   {
@@ -1459,7 +1563,16 @@
                     "market_value_eur": 2000000
                   }
                 ],
-                "pending_arrivals": []
+                "pending_arrivals": [
+                  {
+                    "player": "YIGIT DEMIR",
+                    "market_value_eur": 150000
+                  },
+                  {
+                    "player": "MUSA EREN KARAKAS",
+                    "market_value_eur": 0
+                  }
+                ]
               }
             }
           },
@@ -1481,20 +1594,13 @@
             "home": {
               "available": true,
               "edge": 0.15,
-              "match_count": 5,
+              "match_count": 4,
               "record": {
-                "w": 5,
+                "w": 4,
                 "d": 0,
                 "l": 0
               },
               "recent": [
-                {
-                  "outcome": "win",
-                  "opponent": "Marseille",
-                  "opponent_strength": "mid",
-                  "date": "2026-09-17T19:00Z",
-                  "score": "4-1"
-                },
                 {
                   "outcome": "win",
                   "opponent": "Hradec Králové",
@@ -2018,8 +2124,8 @@
           "data_confidence": "PLAYED",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.93,
-          "expected_away_goals": 1.69,
+          "expected_home_goals": 1.87,
+          "expected_away_goals": 1.76,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -2031,36 +2137,36 @@
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.084
+              "probability": 0.082
             },
             {
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.074
+              "probability": 0.077
             },
             {
               "score": "2-2",
               "home_goals": 2,
               "away_goals": 2,
-              "probability": 0.071
+              "probability": 0.072
             },
             {
               "score": "3-1",
               "home_goals": 3,
               "away_goals": 1,
-              "probability": 0.054
+              "probability": 0.051
             }
           ],
           "recommended_scoreline": {
             "score": "2-1",
             "home_goals": 2,
             "away_goals": 1,
-            "probability": 0.084
+            "probability": 0.082
           },
-          "home_win_probability": 0.439,
-          "draw_probability": 0.217,
-          "away_win_probability": 0.344,
+          "home_win_probability": 0.414,
+          "draw_probability": 0.218,
+          "away_win_probability": 0.368,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -2068,8 +2174,74 @@
           },
           "transfer_signal": {
             "home": {
-              "available": false,
-              "edge": 0.0
+              "available": true,
+              "edge": -0.1205,
+              "news_signal": null,
+              "squad_signal": {
+                "available": true,
+                "edge": -0.1205,
+                "net_value_eur": -6025000,
+                "arrivals_value_eur": 11650000,
+                "departures_value_eur": 17675000,
+                "top_arrivals": [
+                  {
+                    "player": "AHMED KUTUCU",
+                    "market_value_eur": 3000000
+                  },
+                  {
+                    "player": "SIAKA BAKAYOKO",
+                    "market_value_eur": 2500000
+                  },
+                  {
+                    "player": "ZAKARIA ARISS",
+                    "market_value_eur": 2000000
+                  },
+                  {
+                    "player": "TAYYIP TALHA SANUC",
+                    "market_value_eur": 1500000
+                  },
+                  {
+                    "player": "MOUSSA DIAKITE",
+                    "market_value_eur": 1000000
+                  }
+                ],
+                "top_departures": [
+                  {
+                    "player": "JESURUN RAK SAKYI",
+                    "market_value_eur": 6000000
+                  },
+                  {
+                    "player": "MUHAMED BULJUBASIC",
+                    "market_value_eur": 1500000
+                  },
+                  {
+                    "player": "FRANTZDY PIERROT",
+                    "market_value_eur": 1500000
+                  },
+                  {
+                    "player": "SAMET AKAYDIN",
+                    "market_value_eur": 1200000
+                  },
+                  {
+                    "player": "GIANNIS PAPANIKOLAOU",
+                    "market_value_eur": 1200000
+                  }
+                ],
+                "pending_arrivals": [
+                  {
+                    "player": "GENNARO BORRELLI",
+                    "market_value_eur": 3000000
+                  },
+                  {
+                    "player": "CAN BOZDOGAN",
+                    "market_value_eur": 2000000
+                  },
+                  {
+                    "player": "HASAN YAGIZ DONE",
+                    "market_value_eur": 0
+                  }
+                ]
+              }
             },
             "away": {
               "available": true,
@@ -2336,13 +2508,13 @@
           "raw_predicted": "home",
           "predicted": "home",
           "expected_home_goals": 2.26,
-          "expected_away_goals": 1.3,
+          "expected_away_goals": 1.29,
           "top_scorelines": [
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.094
+              "probability": 0.095
             },
             {
               "score": "1-1",
@@ -2373,11 +2545,11 @@
             "score": "2-1",
             "home_goals": 2,
             "away_goals": 1,
-            "probability": 0.094
+            "probability": 0.095
           },
-          "home_win_probability": 0.601,
+          "home_win_probability": 0.602,
           "draw_probability": 0.182,
-          "away_win_probability": 0.217,
+          "away_win_probability": 0.215,
           "head_to_head": {
             "available": true,
             "matches": 28,
@@ -2453,13 +2625,13 @@
             },
             "away": {
               "available": true,
-              "edge": -0.0735,
+              "edge": -0.0815,
               "news_signal": null,
               "squad_signal": {
                 "available": true,
-                "edge": -0.0735,
-                "net_value_eur": -3675000,
-                "arrivals_value_eur": 15050000,
+                "edge": -0.0815,
+                "net_value_eur": -4075000,
+                "arrivals_value_eur": 14650000,
                 "departures_value_eur": 18725000,
                 "top_arrivals": [
                   {
@@ -2506,6 +2678,10 @@
                   }
                 ],
                 "pending_arrivals": [
+                  {
+                    "player": "AHMET OGUZ",
+                    "market_value_eur": 400000
+                  },
                   {
                     "player": "EMIR GUNDOGDU",
                     "market_value_eur": 0
@@ -2871,8 +3047,8 @@
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
-                "net_value_eur": -28325000,
-                "arrivals_value_eur": 8725000,
+                "net_value_eur": -28475000,
+                "arrivals_value_eur": 8575000,
                 "departures_value_eur": 37050000,
                 "top_arrivals": [
                   {
@@ -2918,7 +3094,16 @@
                     "market_value_eur": 2000000
                   }
                 ],
-                "pending_arrivals": []
+                "pending_arrivals": [
+                  {
+                    "player": "YIGIT DEMIR",
+                    "market_value_eur": 150000
+                  },
+                  {
+                    "player": "MUSA EREN KARAKAS",
+                    "market_value_eur": 0
+                  }
+                ]
               }
             },
             "away": {
@@ -3054,49 +3239,49 @@
           "data_confidence": "PLAYED",
           "raw_predicted": "away",
           "predicted": "away",
-          "expected_home_goals": 1.21,
-          "expected_away_goals": 1.66,
+          "expected_home_goals": 1.27,
+          "expected_away_goals": 1.6,
           "top_scorelines": [
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.114
-            },
-            {
-              "score": "0-1",
-              "home_goals": 0,
-              "away_goals": 1,
-              "probability": 0.094
+              "probability": 0.115
             },
             {
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.094
+              "probability": 0.092
+            },
+            {
+              "score": "0-1",
+              "home_goals": 0,
+              "away_goals": 1,
+              "probability": 0.091
             },
             {
               "score": "0-2",
               "home_goals": 0,
               "away_goals": 2,
-              "probability": 0.078
+              "probability": 0.073
             },
             {
-              "score": "1-0",
-              "home_goals": 1,
-              "away_goals": 0,
-              "probability": 0.069
+              "score": "2-1",
+              "home_goals": 2,
+              "away_goals": 1,
+              "probability": 0.073
             }
           ],
           "recommended_scoreline": {
-            "score": "0-1",
-            "home_goals": 0,
-            "away_goals": 1,
-            "probability": 0.094
+            "score": "1-2",
+            "home_goals": 1,
+            "away_goals": 2,
+            "probability": 0.092
           },
-          "home_win_probability": 0.276,
-          "draw_probability": 0.253,
-          "away_win_probability": 0.47,
+          "home_win_probability": 0.299,
+          "draw_probability": 0.256,
+          "away_win_probability": 0.446,
           "head_to_head": {
             "available": true,
             "matches": 21,
@@ -3106,8 +3291,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.039,
+              "news_signal": {
+                "available": true,
+                "edge": 0.072,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 3600000,
+                "total_net_value_eur": 3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "in",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -3176,8 +3375,28 @@
             },
             "away": {
               "available": true,
-              "edge": -0.0302,
-              "news_signal": null,
+              "edge": -0.0281,
+              "news_signal": {
+                "available": true,
+                "edge": -0.026,
+                "signal_count": 2,
+                "confirmed_net_value_eur": -3600000,
+                "total_net_value_eur": -7100000,
+                "top_moves": [
+                  {
+                    "player": "Dusan Vlahovıc",
+                    "direction": "out",
+                    "market_value_eur": 35000000,
+                    "status": "REVIEW_REQUIRED"
+                  },
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "out",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.0302,
@@ -3268,20 +3487,13 @@
             "away": {
               "available": true,
               "edge": 0.15,
-              "match_count": 5,
+              "match_count": 4,
               "record": {
-                "w": 5,
+                "w": 4,
                 "d": 0,
                 "l": 0
               },
               "recent": [
-                {
-                  "outcome": "win",
-                  "opponent": "Marseille",
-                  "opponent_strength": "mid",
-                  "date": "2026-09-17T19:00Z",
-                  "score": "4-1"
-                },
                 {
                   "outcome": "win",
                   "opponent": "Hradec Králové",
@@ -3765,8 +3977,8 @@
           "data_confidence": "PLAYED",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.39,
-          "expected_away_goals": 1.25,
+          "expected_home_goals": 1.38,
+          "expected_away_goals": 1.26,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -3784,7 +3996,7 @@
               "score": "0-1",
               "home_goals": 0,
               "away_goals": 1,
-              "probability": 0.089
+              "probability": 0.09
             },
             {
               "score": "2-1",
@@ -3805,9 +4017,9 @@
             "away_goals": 0,
             "probability": 0.099
           },
-          "home_win_probability": 0.401,
+          "home_win_probability": 0.399,
           "draw_probability": 0.261,
-          "away_win_probability": 0.339,
+          "away_win_probability": 0.341,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -3816,13 +4028,13 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.0735,
+              "edge": -0.0815,
               "news_signal": null,
               "squad_signal": {
                 "available": true,
-                "edge": -0.0735,
-                "net_value_eur": -3675000,
-                "arrivals_value_eur": 15050000,
+                "edge": -0.0815,
+                "net_value_eur": -4075000,
+                "arrivals_value_eur": 14650000,
                 "departures_value_eur": 18725000,
                 "top_arrivals": [
                   {
@@ -3869,6 +4081,10 @@
                   }
                 ],
                 "pending_arrivals": [
+                  {
+                    "player": "AHMET OGUZ",
+                    "market_value_eur": 400000
+                  },
                   {
                     "player": "EMIR GUNDOGDU",
                     "market_value_eur": 0
@@ -3940,8 +4156,8 @@
           "data_confidence": "PLAYED",
           "raw_predicted": "away",
           "predicted": "away",
-          "expected_home_goals": 1.46,
-          "expected_away_goals": 1.62,
+          "expected_home_goals": 1.52,
+          "expected_away_goals": 1.56,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -3953,36 +4169,36 @@
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.088
+              "probability": 0.085
             },
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.079
+              "probability": 0.083
             },
             {
               "score": "0-1",
               "home_goals": 0,
               "away_goals": 1,
-              "probability": 0.074
+              "probability": 0.072
             },
             {
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.067
+              "probability": 0.07
             }
           ],
           "recommended_scoreline": {
             "score": "1-2",
             "home_goals": 1,
             "away_goals": 2,
-            "probability": 0.088
+            "probability": 0.085
           },
-          "home_win_probability": 0.361,
+          "home_win_probability": 0.388,
           "draw_probability": 0.206,
-          "away_win_probability": 0.433,
+          "away_win_probability": 0.406,
           "head_to_head": {
             "available": true,
             "matches": 19,
@@ -4061,8 +4277,74 @@
               }
             },
             "away": {
-              "available": false,
-              "edge": 0.0
+              "available": true,
+              "edge": -0.1205,
+              "news_signal": null,
+              "squad_signal": {
+                "available": true,
+                "edge": -0.1205,
+                "net_value_eur": -6025000,
+                "arrivals_value_eur": 11650000,
+                "departures_value_eur": 17675000,
+                "top_arrivals": [
+                  {
+                    "player": "AHMED KUTUCU",
+                    "market_value_eur": 3000000
+                  },
+                  {
+                    "player": "SIAKA BAKAYOKO",
+                    "market_value_eur": 2500000
+                  },
+                  {
+                    "player": "ZAKARIA ARISS",
+                    "market_value_eur": 2000000
+                  },
+                  {
+                    "player": "TAYYIP TALHA SANUC",
+                    "market_value_eur": 1500000
+                  },
+                  {
+                    "player": "MOUSSA DIAKITE",
+                    "market_value_eur": 1000000
+                  }
+                ],
+                "top_departures": [
+                  {
+                    "player": "JESURUN RAK SAKYI",
+                    "market_value_eur": 6000000
+                  },
+                  {
+                    "player": "MUHAMED BULJUBASIC",
+                    "market_value_eur": 1500000
+                  },
+                  {
+                    "player": "FRANTZDY PIERROT",
+                    "market_value_eur": 1500000
+                  },
+                  {
+                    "player": "SAMET AKAYDIN",
+                    "market_value_eur": 1200000
+                  },
+                  {
+                    "player": "GIANNIS PAPANIKOLAOU",
+                    "market_value_eur": 1200000
+                  }
+                ],
+                "pending_arrivals": [
+                  {
+                    "player": "GENNARO BORRELLI",
+                    "market_value_eur": 3000000
+                  },
+                  {
+                    "player": "CAN BOZDOGAN",
+                    "market_value_eur": 2000000
+                  },
+                  {
+                    "player": "HASAN YAGIZ DONE",
+                    "market_value_eur": 0
+                  }
+                ]
+              }
             }
           },
           "fixture_congestion": {
@@ -4383,49 +4665,49 @@
           "data_confidence": "PLAYED",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.46,
-          "expected_away_goals": 1.05,
+          "expected_home_goals": 1.4,
+          "expected_away_goals": 1.11,
           "top_scorelines": [
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.125
+              "probability": 0.126
             },
             {
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.118
-            },
-            {
-              "score": "2-1",
-              "home_goals": 2,
-              "away_goals": 1,
-              "probability": 0.091
-            },
-            {
-              "score": "2-0",
-              "home_goals": 2,
-              "away_goals": 0,
-              "probability": 0.086
+              "probability": 0.114
             },
             {
               "score": "0-1",
               "home_goals": 0,
               "away_goals": 1,
-              "probability": 0.085
+              "probability": 0.09
+            },
+            {
+              "score": "2-1",
+              "home_goals": 2,
+              "away_goals": 1,
+              "probability": 0.089
+            },
+            {
+              "score": "0-0",
+              "home_goals": 0,
+              "away_goals": 0,
+              "probability": 0.081
             }
           ],
           "recommended_scoreline": {
             "score": "1-0",
             "home_goals": 1,
             "away_goals": 0,
-            "probability": 0.118
+            "probability": 0.114
           },
-          "home_win_probability": 0.465,
-          "draw_probability": 0.263,
-          "away_win_probability": 0.273,
+          "home_win_probability": 0.437,
+          "draw_probability": 0.266,
+          "away_win_probability": 0.297,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -4439,8 +4721,8 @@
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
-                "net_value_eur": -28325000,
-                "arrivals_value_eur": 8725000,
+                "net_value_eur": -28475000,
+                "arrivals_value_eur": 8575000,
                 "departures_value_eur": 37050000,
                 "top_arrivals": [
                   {
@@ -4486,13 +4768,36 @@
                     "market_value_eur": 2000000
                   }
                 ],
-                "pending_arrivals": []
+                "pending_arrivals": [
+                  {
+                    "player": "YIGIT DEMIR",
+                    "market_value_eur": 150000
+                  },
+                  {
+                    "player": "MUSA EREN KARAKAS",
+                    "market_value_eur": 0
+                  }
+                ]
               }
             },
             "away": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.039,
+              "news_signal": {
+                "available": true,
+                "edge": 0.072,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 3600000,
+                "total_net_value_eur": 3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "in",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -5280,7 +5585,7 @@
           },
           "home_win_probability": 0.538,
           "draw_probability": 0.225,
-          "away_win_probability": 0.237,
+          "away_win_probability": 0.236,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -5289,8 +5594,28 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.0302,
-              "news_signal": null,
+              "edge": -0.0281,
+              "news_signal": {
+                "available": true,
+                "edge": -0.026,
+                "signal_count": 2,
+                "confirmed_net_value_eur": -3600000,
+                "total_net_value_eur": -7100000,
+                "top_moves": [
+                  {
+                    "player": "Dusan Vlahovıc",
+                    "direction": "out",
+                    "market_value_eur": 35000000,
+                    "status": "REVIEW_REQUIRED"
+                  },
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "out",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.0302,
@@ -5380,20 +5705,13 @@
             "home": {
               "available": true,
               "edge": 0.15,
-              "match_count": 5,
+              "match_count": 4,
               "record": {
-                "w": 5,
+                "w": 4,
                 "d": 0,
                 "l": 0
               },
               "recent": [
-                {
-                  "outcome": "win",
-                  "opponent": "Marseille",
-                  "opponent_strength": "mid",
-                  "date": "2026-09-17T19:00Z",
-                  "score": "4-1"
-                },
                 {
                   "outcome": "win",
                   "opponent": "Hradec Králové",
@@ -5683,7 +6001,7 @@
           "raw_predicted": "away",
           "predicted": "away",
           "expected_home_goals": 1.46,
-          "expected_away_goals": 1.62,
+          "expected_away_goals": 1.61,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -5701,7 +6019,7 @@
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.079
+              "probability": 0.08
             },
             {
               "score": "0-1",
@@ -5713,7 +6031,7 @@
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.067
+              "probability": 0.068
             }
           ],
           "recommended_scoreline": {
@@ -5722,9 +6040,9 @@
             "away_goals": 2,
             "probability": 0.088
           },
-          "home_win_probability": 0.346,
+          "home_win_probability": 0.348,
           "draw_probability": 0.239,
-          "away_win_probability": 0.415,
+          "away_win_probability": 0.413,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -5737,13 +6055,13 @@
             },
             "away": {
               "available": true,
-              "edge": -0.0735,
+              "edge": -0.0815,
               "news_signal": null,
               "squad_signal": {
                 "available": true,
-                "edge": -0.0735,
-                "net_value_eur": -3675000,
-                "arrivals_value_eur": 15050000,
+                "edge": -0.0815,
+                "net_value_eur": -4075000,
+                "arrivals_value_eur": 14650000,
                 "departures_value_eur": 18725000,
                 "top_arrivals": [
                   {
@@ -5790,6 +6108,10 @@
                   }
                 ],
                 "pending_arrivals": [
+                  {
+                    "player": "AHMET OGUZ",
+                    "market_value_eur": 400000
+                  },
                   {
                     "player": "EMIR GUNDOGDU",
                     "market_value_eur": 0
@@ -5978,8 +6300,28 @@
             },
             "away": {
               "available": true,
-              "edge": -0.0302,
-              "news_signal": null,
+              "edge": -0.0281,
+              "news_signal": {
+                "available": true,
+                "edge": -0.026,
+                "signal_count": 2,
+                "confirmed_net_value_eur": -3600000,
+                "total_net_value_eur": -7100000,
+                "top_moves": [
+                  {
+                    "player": "Dusan Vlahovıc",
+                    "direction": "out",
+                    "market_value_eur": 35000000,
+                    "status": "REVIEW_REQUIRED"
+                  },
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "out",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.0302,
@@ -6112,20 +6454,13 @@
             "away": {
               "available": true,
               "edge": 0.15,
-              "match_count": 5,
+              "match_count": 4,
               "record": {
-                "w": 5,
+                "w": 4,
                 "d": 0,
                 "l": 0
               },
               "recent": [
-                {
-                  "outcome": "win",
-                  "opponent": "Marseille",
-                  "opponent_strength": "mid",
-                  "date": "2026-09-17T19:00Z",
-                  "score": "4-1"
-                },
                 {
                   "outcome": "win",
                   "opponent": "Hradec Králové",
@@ -6367,8 +6702,8 @@
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
-                "net_value_eur": -28325000,
-                "arrivals_value_eur": 8725000,
+                "net_value_eur": -28475000,
+                "arrivals_value_eur": 8575000,
                 "departures_value_eur": 37050000,
                 "top_arrivals": [
                   {
@@ -6414,7 +6749,16 @@
                     "market_value_eur": 2000000
                   }
                 ],
-                "pending_arrivals": []
+                "pending_arrivals": [
+                  {
+                    "player": "YIGIT DEMIR",
+                    "market_value_eur": 150000
+                  },
+                  {
+                    "player": "MUSA EREN KARAKAS",
+                    "market_value_eur": 0
+                  }
+                ]
               }
             }
           },
@@ -6855,49 +7199,49 @@
           "data_confidence": "PLAYED",
           "raw_predicted": "home",
           "predicted": "draw",
-          "expected_home_goals": 1.56,
-          "expected_away_goals": 1.28,
+          "expected_home_goals": 1.44,
+          "expected_away_goals": 1.4,
           "top_scorelines": [
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.117
-            },
-            {
-              "score": "1-0",
-              "home_goals": 1,
-              "away_goals": 0,
-              "probability": 0.091
+              "probability": 0.118
             },
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.091
+              "probability": 0.085
+            },
+            {
+              "score": "1-0",
+              "home_goals": 1,
+              "away_goals": 0,
+              "probability": 0.084
             },
             {
               "score": "0-1",
               "home_goals": 0,
               "away_goals": 1,
-              "probability": 0.075
+              "probability": 0.082
             },
             {
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.075
+              "probability": 0.082
             }
           ],
           "recommended_scoreline": {
             "score": "1-1",
             "home_goals": 1,
             "away_goals": 1,
-            "probability": 0.117
+            "probability": 0.118
           },
-          "home_win_probability": 0.422,
-          "draw_probability": 0.275,
-          "away_win_probability": 0.303,
+          "home_win_probability": 0.371,
+          "draw_probability": 0.277,
+          "away_win_probability": 0.352,
           "head_to_head": {
             "available": true,
             "matches": 19,
@@ -6906,13 +7250,93 @@
           },
           "transfer_signal": {
             "home": {
-              "available": false,
-              "edge": 0.0
+              "available": true,
+              "edge": -0.1205,
+              "news_signal": null,
+              "squad_signal": {
+                "available": true,
+                "edge": -0.1205,
+                "net_value_eur": -6025000,
+                "arrivals_value_eur": 11650000,
+                "departures_value_eur": 17675000,
+                "top_arrivals": [
+                  {
+                    "player": "AHMED KUTUCU",
+                    "market_value_eur": 3000000
+                  },
+                  {
+                    "player": "SIAKA BAKAYOKO",
+                    "market_value_eur": 2500000
+                  },
+                  {
+                    "player": "ZAKARIA ARISS",
+                    "market_value_eur": 2000000
+                  },
+                  {
+                    "player": "TAYYIP TALHA SANUC",
+                    "market_value_eur": 1500000
+                  },
+                  {
+                    "player": "MOUSSA DIAKITE",
+                    "market_value_eur": 1000000
+                  }
+                ],
+                "top_departures": [
+                  {
+                    "player": "JESURUN RAK SAKYI",
+                    "market_value_eur": 6000000
+                  },
+                  {
+                    "player": "MUHAMED BULJUBASIC",
+                    "market_value_eur": 1500000
+                  },
+                  {
+                    "player": "FRANTZDY PIERROT",
+                    "market_value_eur": 1500000
+                  },
+                  {
+                    "player": "SAMET AKAYDIN",
+                    "market_value_eur": 1200000
+                  },
+                  {
+                    "player": "GIANNIS PAPANIKOLAOU",
+                    "market_value_eur": 1200000
+                  }
+                ],
+                "pending_arrivals": [
+                  {
+                    "player": "GENNARO BORRELLI",
+                    "market_value_eur": 3000000
+                  },
+                  {
+                    "player": "CAN BOZDOGAN",
+                    "market_value_eur": 2000000
+                  },
+                  {
+                    "player": "HASAN YAGIZ DONE",
+                    "market_value_eur": 0
+                  }
+                ]
+              }
             },
             "away": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.039,
+              "news_signal": {
+                "available": true,
+                "edge": 0.072,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 3600000,
+                "total_net_value_eur": 3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "in",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -7340,8 +7764,28 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.0302,
-              "news_signal": null,
+              "edge": -0.0281,
+              "news_signal": {
+                "available": true,
+                "edge": -0.026,
+                "signal_count": 2,
+                "confirmed_net_value_eur": -3600000,
+                "total_net_value_eur": -7100000,
+                "top_moves": [
+                  {
+                    "player": "Dusan Vlahovıc",
+                    "direction": "out",
+                    "market_value_eur": 35000000,
+                    "status": "REVIEW_REQUIRED"
+                  },
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "out",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.0302,
@@ -7431,20 +7875,13 @@
             "home": {
               "available": true,
               "edge": 0.15,
-              "match_count": 5,
+              "match_count": 4,
               "record": {
-                "w": 5,
+                "w": 4,
                 "d": 0,
                 "l": 0
               },
               "recent": [
-                {
-                  "outcome": "win",
-                  "opponent": "Marseille",
-                  "opponent_strength": "mid",
-                  "date": "2026-09-17T19:00Z",
-                  "score": "4-1"
-                },
                 {
                   "outcome": "win",
                   "opponent": "Hradec Králové",
@@ -7514,8 +7951,8 @@
           "data_confidence": "PLAYED",
           "raw_predicted": "home",
           "predicted": "home",
-          "expected_home_goals": 1.59,
-          "expected_away_goals": 1.35,
+          "expected_home_goals": 1.65,
+          "expected_away_goals": 1.29,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -7527,36 +7964,36 @@
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.09
+              "probability": 0.093
             },
             {
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.084
+              "probability": 0.087
             },
             {
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.077
+              "probability": 0.073
             },
             {
-              "score": "0-1",
-              "home_goals": 0,
-              "away_goals": 1,
-              "probability": 0.071
+              "score": "2-0",
+              "home_goals": 2,
+              "away_goals": 0,
+              "probability": 0.072
             }
           ],
           "recommended_scoreline": {
             "score": "2-1",
             "home_goals": 2,
             "away_goals": 1,
-            "probability": 0.09
+            "probability": 0.093
           },
-          "home_win_probability": 0.431,
-          "draw_probability": 0.244,
-          "away_win_probability": 0.325,
+          "home_win_probability": 0.458,
+          "draw_probability": 0.242,
+          "away_win_probability": 0.3,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -7570,8 +8007,8 @@
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
-                "net_value_eur": -28325000,
-                "arrivals_value_eur": 8725000,
+                "net_value_eur": -28475000,
+                "arrivals_value_eur": 8575000,
                 "departures_value_eur": 37050000,
                 "top_arrivals": [
                   {
@@ -7617,12 +8054,87 @@
                     "market_value_eur": 2000000
                   }
                 ],
-                "pending_arrivals": []
+                "pending_arrivals": [
+                  {
+                    "player": "YIGIT DEMIR",
+                    "market_value_eur": 150000
+                  },
+                  {
+                    "player": "MUSA EREN KARAKAS",
+                    "market_value_eur": 0
+                  }
+                ]
               }
             },
             "away": {
-              "available": false,
-              "edge": 0.0
+              "available": true,
+              "edge": -0.1205,
+              "news_signal": null,
+              "squad_signal": {
+                "available": true,
+                "edge": -0.1205,
+                "net_value_eur": -6025000,
+                "arrivals_value_eur": 11650000,
+                "departures_value_eur": 17675000,
+                "top_arrivals": [
+                  {
+                    "player": "AHMED KUTUCU",
+                    "market_value_eur": 3000000
+                  },
+                  {
+                    "player": "SIAKA BAKAYOKO",
+                    "market_value_eur": 2500000
+                  },
+                  {
+                    "player": "ZAKARIA ARISS",
+                    "market_value_eur": 2000000
+                  },
+                  {
+                    "player": "TAYYIP TALHA SANUC",
+                    "market_value_eur": 1500000
+                  },
+                  {
+                    "player": "MOUSSA DIAKITE",
+                    "market_value_eur": 1000000
+                  }
+                ],
+                "top_departures": [
+                  {
+                    "player": "JESURUN RAK SAKYI",
+                    "market_value_eur": 6000000
+                  },
+                  {
+                    "player": "MUHAMED BULJUBASIC",
+                    "market_value_eur": 1500000
+                  },
+                  {
+                    "player": "FRANTZDY PIERROT",
+                    "market_value_eur": 1500000
+                  },
+                  {
+                    "player": "SAMET AKAYDIN",
+                    "market_value_eur": 1200000
+                  },
+                  {
+                    "player": "GIANNIS PAPANIKOLAOU",
+                    "market_value_eur": 1200000
+                  }
+                ],
+                "pending_arrivals": [
+                  {
+                    "player": "GENNARO BORRELLI",
+                    "market_value_eur": 3000000
+                  },
+                  {
+                    "player": "CAN BOZDOGAN",
+                    "market_value_eur": 2000000
+                  },
+                  {
+                    "player": "HASAN YAGIZ DONE",
+                    "market_value_eur": 0
+                  }
+                ]
+              }
             }
           },
           "fixture_congestion": {
@@ -7881,49 +8393,49 @@
           "data_confidence": "PLAYED",
           "raw_predicted": "away",
           "predicted": "draw",
-          "expected_home_goals": 1.49,
-          "expected_away_goals": 1.6,
+          "expected_home_goals": 1.54,
+          "expected_away_goals": 1.55,
           "top_scorelines": [
             {
               "score": "1-1",
               "home_goals": 1,
               "away_goals": 1,
-              "probability": 0.108
+              "probability": 0.109
             },
             {
               "score": "1-2",
               "home_goals": 1,
               "away_goals": 2,
-              "probability": 0.087
+              "probability": 0.084
             },
             {
               "score": "2-1",
               "home_goals": 2,
               "away_goals": 1,
-              "probability": 0.081
+              "probability": 0.084
             },
             {
               "score": "0-1",
               "home_goals": 0,
               "away_goals": 1,
-              "probability": 0.073
+              "probability": 0.07
             },
             {
               "score": "1-0",
               "home_goals": 1,
               "away_goals": 0,
-              "probability": 0.068
+              "probability": 0.07
             }
           ],
           "recommended_scoreline": {
             "score": "1-1",
             "home_goals": 1,
             "away_goals": 1,
-            "probability": 0.108
+            "probability": 0.109
           },
-          "home_win_probability": 0.334,
+          "home_win_probability": 0.356,
           "draw_probability": 0.287,
-          "away_win_probability": 0.38,
+          "away_win_probability": 0.357,
           "head_to_head": {
             "available": true,
             "matches": 17,
@@ -7933,8 +8445,22 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.15,
-              "news_signal": null,
+              "edge": -0.039,
+              "news_signal": {
+                "available": true,
+                "edge": 0.072,
+                "signal_count": 1,
+                "confirmed_net_value_eur": 3600000,
+                "total_net_value_eur": 3600000,
+                "top_moves": [
+                  {
+                    "player": "Ümit Akdağ",
+                    "direction": "in",
+                    "market_value_eur": 6000000,
+                    "status": "CORROBORATED"
+                  }
+                ]
+              },
               "squad_signal": {
                 "available": true,
                 "edge": -0.15,
@@ -8130,8 +8656,8 @@
           "data_confidence": "PLAYED",
           "raw_predicted": "away",
           "predicted": "away",
-          "expected_home_goals": 1.43,
-          "expected_away_goals": 1.73,
+          "expected_home_goals": 1.42,
+          "expected_away_goals": 1.74,
           "top_scorelines": [
             {
               "score": "1-1",
@@ -8170,9 +8696,9 @@
             "away_goals": 2,
             "probability": 0.091
           },
-          "home_win_probability": 0.318,
+          "home_win_probability": 0.316,
           "draw_probability": 0.233,
-          "away_win_probability": 0.449,
+          "away_win_probability": 0.451,
           "head_to_head": {
             "available": false,
             "matches": 0,
@@ -8181,13 +8707,13 @@
           "transfer_signal": {
             "home": {
               "available": true,
-              "edge": -0.0735,
+              "edge": -0.0815,
               "news_signal": null,
               "squad_signal": {
                 "available": true,
-                "edge": -0.0735,
-                "net_value_eur": -3675000,
-                "arrivals_value_eur": 15050000,
+                "edge": -0.0815,
+                "net_value_eur": -4075000,
+                "arrivals_value_eur": 14650000,
                 "departures_value_eur": 18725000,
                 "top_arrivals": [
                   {
@@ -8234,6 +8760,10 @@
                   }
                 ],
                 "pending_arrivals": [
+                  {
+                    "player": "AHMET OGUZ",
+                    "market_value_eur": 400000
+                  },
                   {
                     "player": "EMIR GUNDOGDU",
                     "market_value_eur": 0
