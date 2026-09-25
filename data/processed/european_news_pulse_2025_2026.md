@@ -1,11 +1,19 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-09-24T21:32:19.006460+00:00
-Toplam ilgili haber: 53
+Üretim zamanı: 2026-09-25T00:36:09.028361+00:00
+Toplam ilgili haber: 57
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [Vincenzo Montella'dan 10 numara kararı! Türkiye'nin Fransa maçı muhtemel 11'i](https://www.takvim.com.tr/uluslar-ligi/2026/09/24/turkiye-fransa-uluslar-ligi-maci-muhtemel-11leri) — Takvim Spor · 2026-09-25T02:26:35+03:00 · turnuva=— · kulüp=—
+- [MAÇ SONUCU: Kosova 1-0 İrlanda](https://www.aksam.com.tr/spor/mac-sonucu-kosova-1-0-irlanda/haber-1701179) — Aksam Spor · 2026-09-25T01:41:00+03:00 · turnuva=— · kulüp=—
+- [İsrailli futbolcudan gol sonrası skandal sevinç!](https://www.fotomac.com.tr/uluslar-ligi/2026/09/24/israilli-futbolcudan-gol-sonrasi-skandal-sevinc) — Fotomaç · 2026-09-25T01:37:22+03:00 · turnuva=— · kulüp=—
+- [MAÇ SONUCU: Norveç 3-2 Danimarka](https://www.aksam.com.tr/spor/mac-sonucu-norvec-3-2-danimarka/haber-1701178) — Aksam Spor · 2026-09-25T01:20:00+03:00 · turnuva=— · kulüp=—
+- [MAÇ SONUCU: Portekiz 1-0 Galler](https://www.aksam.com.tr/spor/mac-sonucu-portekiz-1-0-galler/haber-1701175) — Aksam Spor · 2026-09-25T00:55:00+03:00 · turnuva=— · kulüp=—
+- [Yunanistan, Sırbistan deplasmanında galip!](https://www.sabah.com.tr/spor/futbol/2026/09/24/yunanistan-sirbistan-deplasmaninda-galip) — Sabah Spor · 2026-09-25T00:36:32+03:00 · turnuva=— · kulüp=—
+- [İsrailli futbolcudan gol sonrası skandal sevinç!](https://www.sabah.com.tr/spor/futbol/2026/09/24/israilli-futbolcudan-gol-sonrasi-skandal-sevinc) — Sabah Spor · 2026-09-25T00:30:52+03:00 · turnuva=— · kulüp=—
+- [PORTEKİZ GALLER MAÇI ÖZETİ: Portekiz Galler maçı kaç kaç bitti? UEFA Uluslar Ligi D Grubu maçı!](https://www.cnnturk.com/spor/futbol/portekiz-galler-maci-hangi-kanalda-portekiz-galler-maci-ne-zaman-saat-kacta-uefa-uluslar-ligi-d-grubu-maci-3470984) — CNN Türk Spor · 2026-09-25T00:25:57+00:00 · turnuva=— · kulüp=—
 - [UEFA Uluslar Ligi'nde Kosova’ya galibiyeti Vedat Muriqi getirdi!](https://www.sabah.com.tr/spor/futbol/2026/09/24/uefa-uluslar-liginde-kosovaya-galibiyeti-vedat-muriqi-getirdi) — Sabah Spor · 2026-09-25T00:13:01+03:00 · turnuva=— · kulüp=—
 - [Uluslar Ligi’nde Hollanda ile Almanya puanları paylaştı! (Maç özeti)](https://www.sabah.com.tr/spor/futbol/2026/09/24/uluslar-liginde-hollanda-ile-almanya-puanlari-paylasti-mac-ozeti) — Sabah Spor · 2026-09-24T23:51:36+03:00 · turnuva=— · kulüp=—
 - [Dev düelloda Hollanda ile Almanya yenişemedi!](https://www.fotomac.com.tr/uluslar-ligi/2026/09/24/dev-duelloda-hollanda-ile-almanya-yenisemedi) — Fotomaç · 2026-09-24T23:44:54+03:00 · turnuva=— · kulüp=—
@@ -13,15 +21,11 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Norveç kıran kırana geçen maçta Danimarka'yı mağlup etti!](https://www.fotomac.com.tr/uluslar-ligi/2026/09/24/norvec-kiran-kirana-gecen-macta-danimarkayi-maglup-etti) — Fotomaç · 2026-09-24T23:39:57+03:00 · turnuva=— · kulüp=—
 - [Portekiz, UEFA Uluslar Ligi'nde Galler'e takılmadı! (Maç özeti)](https://www.sabah.com.tr/spor/futbol/2026/09/24/portekiz-uefa-uluslar-liginde-gallere-takilmadi-mac-ozeti) — Sabah Spor · 2026-09-24T23:39:43+03:00 · turnuva=— · kulüp=—
 - [Portekiz Uluslar Ligi'ne galibiyetle başladı!](https://www.fotomac.com.tr/uluslar-ligi/2026/09/24/portekiz-uluslar-ligine-galibiyetle-basladi) — Fotomaç · 2026-09-24T23:38:34+03:00 · turnuva=— · kulüp=—
-- [Kocaeli'de A Milli Takım'a coşkulu karşılama](https://www.aksam.com.tr/spor/kocaelide-a-milli-takima-coskulu-karsilama/haber-1701158) — Aksam Spor · 2026-09-24T23:30:00+03:00 · turnuva=— · kulüp=—
-- [A Milli Futbol Takımı, Kocaeli Stadyumu'nda yürüyüş yaptı!](https://www.sabah.com.tr/spor/futbol/2026/09/24/a-milli-futbol-takimi-kocaeli-stadyumunda-yuruyus-yapti) — Sabah Spor · 2026-09-24T21:37:54+03:00 · turnuva=— · kulüp=—
 - [A Milli Futbol Takımı Teknik Direktörü Vincenzo Montella: Daha güzel günler yaşayacağımızı biliyorum](https://www.aa.com.tr/tr/spor/a-milli-futbol-takimi-teknik-direktoru-vincenzo-montella-daha-guzel-gunler-yasayacagimizi-biliyorum/4068488) — Anadolu Ajansı Spor · 2026-09-24T21:29:00+03:00 · turnuva=— · kulüp=—
-- [PORTEKİZ GALLER MAÇI HANGİ KANALDA? Portekiz Galler Maçı Ne Zaman, Saat Kaçta? UEFA Uluslar Ligi D Grubu maçı!](https://www.cnnturk.com/spor/futbol/portekiz-galler-maci-hangi-kanalda-portekiz-galler-maci-ne-zaman-saat-kacta-uefa-uluslar-ligi-d-grubu-maci-3470984) — CNN Türk Spor · 2026-09-24T21:26:54+00:00 · turnuva=— · kulüp=—
 - [Jorge Jesus galibiyetle başladı, Portekiz tek golle güldü!](https://www.hurriyet.com.tr/sporarena/jorge-jesus-galibiyetle-basladi-portekiz-tek-golle-guldu-43318685) — Hürriyet Spor · 2026-09-24T21:08:03+00:00 · turnuva=— · kulüp=—
 - [Klopp'lu Almanya 90+2'de galibiyeti kaçırdı!](https://www.haberturk.com/spor/hollanda-almanya-mac-sonucu-iste-hollanda-almanya-maci-ozeti-ve-golleri-uefa-uluslar-ligi-3914936) — Haberturk Spor · 2026-09-24T21:06:09+00:00 · turnuva=— · kulüp=—
 - [İsrail, Avusturya-İsrail maçı öncesi Linz kentinde protesto edildi](https://www.aa.com.tr/tr/spor/israil-avusturya-israil-maci-oncesi-linz-kentinde-protesto-edildi/4068457) — Anadolu Ajansı Spor · 2026-09-24T20:57:14+03:00 · turnuva=— · kulüp=—
 - [Muriqi attı, Kosova kazandı!](https://www.haberturk.com/spor/kosova-irlanda-mac-sonucu-iste-kosova-irlanda-maci-ozeti-ve-golleri-uefa-uluslar-ligi-vedat-muric-atti-kosova-kazandi-3914933) — Haberturk Spor · 2026-09-24T20:49:15+00:00 · turnuva=— · kulüp=Fenerbahçe
-- [Avusturya'daki milli maç öncesi İsrail protesto edildi!](https://www.sabah.com.tr/spor/futbol/2026/09/24/avusturyadaki-milli-mac-oncesi-israil-protesto-edildi) — Sabah Spor · 2026-09-24T20:35:08+03:00 · turnuva=— · kulüp=—
 - [Adrien Rabiot: Türkiye'de çok sıcak bir futbol ortamı var](https://www.fotomac.com.tr/video-haber/videoizle/adrien-rabiot-turkiyede-cok-sicak-bir-futbol-ortami-var) — Fotomaç · 2026-09-24T19:10:14+03:00 · turnuva=— · kulüp=—
 - [Jorge Jesus 3 puanla başladı! Portekiz'den tek gollü galibiyet](https://www.takvim.com.tr/uluslar-ligi/2026/09/24/tek-gollu-acilis-portekiz-1-0-galler-mac-sonucu) — Takvim Spor · 2026-09-24T19:00:15+03:00 · turnuva=— · kulüp=—
 - [5 gollü düello! Norveç dünya yıldızıyla 3 puana ulaştı](https://www.takvim.com.tr/uluslar-ligi/2026/09/24/5-gollu-duello-norvec-3-2-danimarka-mac-sonucu) — Takvim Spor · 2026-09-24T18:44:20+03:00 · turnuva=— · kulüp=—
@@ -42,7 +46,3 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Beşiktaş Basketbol Takımı, 13 sezon sonra Avrupa Ligi'nde sahne alacak](https://www.aa.com.tr/tr/spor/besiktas-basketbol-takimi-13-sezon-sonra-avrupa-liginde-sahne-alacak/4067464) — Anadolu Ajansı Spor · 2026-09-24T11:50:42+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Futbolda Türkiye ile Fransa 6. kez karşı karşıya](https://www.aa.com.tr/tr/spor/futbolda-turkiye-ile-fransa-6-kez-karsi-karsiya/4067389) — Anadolu Ajansı Spor · 2026-09-24T11:10:29+03:00 · turnuva=— · kulüp=—
 - [A Milli Futbol Takımı, 655. maçına Fransa karşısında çıkacak](https://www.aa.com.tr/tr/spor/-a-milli-futbol-takimi-655-macina-fransa-karsisinda-cikacak/4067374) — Anadolu Ajansı Spor · 2026-09-24T11:03:52+03:00 · turnuva=— · kulüp=—
-- [Beşiktaş, Avrupa Ligi'nde sezonu Valencia Basket maçıyla açacak](https://www.aa.com.tr/tr/spor/besiktas-avrupa-liginde-sezonu-valencia-basket-maciyla-acacak/4067345) — Anadolu Ajansı Spor · 2026-09-24T10:44:38+03:00 · turnuva=EL · kulüp=Beşiktaş
-- [Fenerbahçe Tarfin, Avrupa Ligi'nin ilk haftasında Virtus Bologna'yı ağırlayacak](https://www.aa.com.tr/tr/spor/fenerbahce-tarfin-avrupa-liginin-ilk-haftasinda-virtus-bolognayi-agirlayacak/4067296) — Anadolu Ajansı Spor · 2026-09-24T10:02:30+03:00 · turnuva=EL · kulüp=Fenerbahçe
-- [Türkiye'nin UEFA Uluslar Ligi'ndeki ilk rakibi Fransa](https://www.hurriyet.com.tr/sporarena/turkiyenin-uefa-uluslar-ligindeki-ilk-rakibi-fransa-43317886) — Hürriyet Spor · 2026-09-24T09:22:00+00:00 · turnuva=— · kulüp=—
-- [Türkiye'nin UEFA Uluslar Ligi'ndeki ilk rakibi Fransa](https://www.aa.com.tr/tr/spor/turkiyenin-uefa-uluslar-ligindeki-ilk-rakibi-fransa/4067248) — Anadolu Ajansı Spor · 2026-09-24T09:20:05+03:00 · turnuva=— · kulüp=—
