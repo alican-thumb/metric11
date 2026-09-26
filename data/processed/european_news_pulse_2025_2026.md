@@ -1,13 +1,24 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-09-25T21:35:15.773785+00:00
-Toplam ilgili haber: 66
+Üretim zamanı: 2026-09-26T00:40:01.245953+00:00
+Toplam ilgili haber: 68
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [Abdülkerim Bardakcı'dan Kocaeli halkına teşekkür!](https://www.fotomac.com.tr/millitakim/2026/09/25/abdulkerim-bardakcidan-kocaeli-halkina-tesekkur) — Fotomaç · 2026-09-26T01:55:59+03:00 · turnuva=— · kulüp=—
+- [Arda Güler Türkiye-Fransa maçının ardından açıklamalarda bulundu!](https://www.fotomac.com.tr/uluslar-ligi/2026/09/25/arda-guler-turkiye-fransa-macinin-ardindan-aciklamalarda-bulundu) — Fotomaç · 2026-09-26T01:48:25+03:00 · turnuva=— · kulüp=—
+- [Bakan Bak: "Bu çocuklar iyi işler yapacaklar, güvenmeye devam edelim"](https://www.sabah.com.tr/spor/futbol/2026/09/25/bakan-bak-bu-cocuklar-iyi-isler-yapacaklar-guvenmeye-devam-edelim) — Sabah Spor · 2026-09-26T01:08:12+03:00 · turnuva=— · kulüp=—
+- [Türkiye 0-1 Fransa (MAÇ ÖZETİ İZLE)](https://www.fotomac.com.tr/video-haber/videoizle/turkiye-0-1-fransa-mac-ozeti-izle) — Fotomaç · 2026-09-26T01:05:33+03:00 · turnuva=— · kulüp=—
+- [Bakan Bak: Bu grupta puan toplamak önemli](https://www.aksam.com.tr/spor/bakan-bak-bu-grupta-puan-toplamak-onemli/haber-1701429) — Aksam Spor · 2026-09-26T01:01:00+03:00 · turnuva=— · kulüp=—
+- [Luis De La Fuente: Şimdiye kadar yaptıklarımız artık yetmez!](https://www.sabah.com.tr/spor/futbol/2026/09/25/luis-de-la-fuente-simdiye-kadar-yaptiklarimiz-artik-yetmez) — Sabah Spor · 2026-09-26T00:49:33+03:00 · turnuva=— · kulüp=—
+- [Merih Demiral: Fransızlar konuşmayı seviyor!](https://www.fotomac.com.tr/video-haber/videoizle/merih-demiral-fransizlar-konusmayi-seviyor) — Fotomaç · 2026-09-26T00:29:16+03:00 · turnuva=— · kulüp=—
 - [Merih Demiral'dan kırmız kart tepkisi: Hakem de emin değildi](https://www.sabah.com.tr/spor/futbol/2026/09/25/merih-demiraldan-kirmiz-kart-tepkisi-hakem-de-emin-degildi) — Sabah Spor · 2026-09-26T00:22:16+03:00 · turnuva=— · kulüp=—
-- [İşte UEFA Uluslar Ligi'nde günün sonuçları...](https://www.aksam.com.tr/spor/iste-uefa-uluslar-liginde-gunun-sonuclari/haber-1701418) — Aksam Spor · 2026-09-26T00:06:00+03:00 · turnuva=— · kulüp=—
+- [Vincenzo Montella Fransa maçı sonrası konuştu! "Kazanabilirdik"](https://www.fotomac.com.tr/video-haber/videoizle/vincenzo-montella-fransa-maci-sonrasi-konustu-kazanabilirdik) — Fotomaç · 2026-09-26T00:21:39+03:00 · turnuva=— · kulüp=—
+- [Polonya ile Bosna Hersek yenişemedi!](https://www.fotomac.com.tr/uluslar-ligi/2026/09/25/polonya-ile-bosna-hersek-yenisemedi) — Fotomaç · 2026-09-26T00:18:43+03:00 · turnuva=— · kulüp=—
+- [Karadağ evinde Güney Kıbrıs'ı mağlup etti!](https://www.fotomac.com.tr/uluslar-ligi/2026/09/25/karadag-evinde-guney-kibrisi-maglup-etti) — Fotomaç · 2026-09-26T00:07:56+03:00 · turnuva=— · kulüp=—
+- [UEFA Uluslar Ligi'nin ilk haftasında 8 maç oynandı](https://www.aa.com.tr/tr/spor/uefa-uluslar-liginin-ilk-haftasinda-8-mac-oynandi/4069768) — Anadolu Ajansı Spor · 2026-09-26T00:02:32+03:00 · turnuva=— · kulüp=—
+- [Ukrayna deplasmanda Macaristan'ı mağlup etti!](https://www.fotomac.com.tr/uluslar-ligi/2026/09/25/ukrayna-deplasmanda-macaristani-maglup-etti) — Fotomaç · 2026-09-26T00:01:34+03:00 · turnuva=— · kulüp=—
 - [Uğurcan Çakır kırmızı kart gördü! İşte Milli Takımımızın 10 kişi kaldığı pozisyon](https://www.fotomac.com.tr/video-haber/videoizle/ugurcan-cakir-kirmizi-kart-gordu-iste-milli-takimimizin-10-kisi-kaldigi-pozisyon) — Fotomaç · 2026-09-25T23:58:00+03:00 · turnuva=— · kulüp=—
 - [TÜRKİYE FRANSA MAÇI KAÇ KAÇ BİTTİ? Türkiye Fransa maç özeti](https://www.cnnturk.com/spor/futbol/turkiye-fransa-maci-nereden-izlenir-turkiye-fransa-maci-hangi-kanalda-saat-kacta-sifreli-mi-sifresiz-mi-3471498) — CNN Türk Spor · 2026-09-25T23:56:05+00:00 · turnuva=— · kulüp=—
 - [A Milli Takımımız, Fransa'yı elinden kaçırdı! İşte dev maçın özeti](https://www.fotomac.com.tr/uluslar-ligi/2026/09/25/a-milli-takimimiz-fransayi-elinden-kacirdi-iste-dev-macin-ozeti) — Fotomaç · 2026-09-25T23:46:31+03:00 · turnuva=— · kulüp=—
@@ -16,12 +27,11 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Belçika, İtalya’ya evinde kabusu yaşattı! (Maç özeti)](https://www.sabah.com.tr/spor/futbol/2026/09/25/belcika-italyaya-evinde-kabusu-yasatti-mac-ozeti) — Sabah Spor · 2026-09-25T23:40:01+03:00 · turnuva=— · kulüp=—
 - [İsveç yıldızlarıyla 3 puana uzandı!](https://www.fotomac.com.tr/uluslar-ligi/2026/09/25/isvec-yildizlariyla-3-puana-uzandi) — Fotomaç · 2026-09-25T23:39:54+03:00 · turnuva=— · kulüp=—
 - [Belçika İtalya'yı deplasmanda mağlup etti!](https://www.fotomac.com.tr/uluslar-ligi/2026/09/25/belcika-italyayi-deplasmanda-maglup-etti) — Fotomaç · 2026-09-25T23:38:23+03:00 · turnuva=— · kulüp=—
-- [A Milli Futbol Takımı, Fransa'ya mağlup oldu](https://www.aa.com.tr/tr/spor/a-milli-futbol-takimi-fransaya-maglup-oldu/4069728) — Anadolu Ajansı Spor · 2026-09-25T23:35:38+03:00 · turnuva=— · kulüp=—
+- [A Milli Takım, Uluslar Ligi'ne yenilgiyle başladı](https://www.aa.com.tr/tr/spor/a-milli-takim-uluslar-ligine-yenilgiyle-basladi/4069728) — Anadolu Ajansı Spor · 2026-09-25T23:35:38+03:00 · turnuva=— · kulüp=—
 - [GOL | Türkiye 0-1 Fransa](https://www.fotomac.com.tr/video-haber/videoizle/gol-turkiye-0-1-fransa) — Fotomaç · 2026-09-25T23:17:03+03:00 · turnuva=— · kulüp=—
 - [Mbappe attığı golden sonra sakatlandı!](https://www.fotomac.com.tr/video-haber/videoizle/mbappe-attigi-golden-sonra-sakatlandi) — Fotomaç · 2026-09-25T23:12:55+03:00 · turnuva=— · kulüp=—
 - [A Milli Futbol Takımımız gole çok yaklaştı! İşte İsmail Yüksek'in net pozisyonu](https://www.fotomac.com.tr/video-haber/videoizle/a-milli-futbol-takimimiz-gole-cok-yaklasti-iste-ismail-yuksekin-net-pozisyonu) — Fotomaç · 2026-09-25T23:09:13+03:00 · turnuva=— · kulüp=—
 - [Kuzey İrlanda deplasmanda Gürcistan'ı mağlup etti!](https://www.fotomac.com.tr/uluslar-ligi/2026/09/25/kuzey-irlanda-deplasmanda-gurcistani-maglup-etti) — Fotomaç · 2026-09-25T22:55:47+03:00 · turnuva=— · kulüp=—
-- [Vincenzo Montella'dan forvet kararı!](https://www.aksam.com.tr/spor/vincenzo-montelladan-forvet-karari/haber-1701406) — Aksam Spor · 2026-09-25T22:55:00+03:00 · turnuva=— · kulüp=—
 - [Uğurcan Çakır'dan muhteşem kurtarış! Olise'ye böyle geçit vermedi!](https://www.fotomac.com.tr/video-haber/videoizle/ugurcan-cakirdan-muhtesem-kurtaris-oliseye-boyle-gecit-vermedi) — Fotomaç · 2026-09-25T22:54:44+03:00 · turnuva=— · kulüp=—
 - [Türkiye - Fransa maçında kritik pozisyon! Penaltı beklenen pozisyonda devam kararı](https://www.takvim.com.tr/uluslar-ligi/2026/09/25/turkiye-baris-alper-yilmaz-ile-fransa-penalti-bekledi) — Takvim Spor · 2026-09-25T22:49:34+03:00 · turnuva=— · kulüp=—
 - [Beşiktaş, 13 sezon sonra katıldığı Basketbol Avrupa Ligi'ne mağlubiyetle başladı](https://www.aa.com.tr/tr/spor/besiktas-13-sezon-sonra-katildigi-basketbol-avrupa-ligine-maglubiyetle-basladi/4069688) — Anadolu Ajansı Spor · 2026-09-25T22:40:33+03:00 · turnuva=EL · kulüp=Beşiktaş
@@ -30,19 +40,9 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Arda Güler'den harika çalımlar! Fransızlar ancak faulle durdurabildi](https://www.fotomac.com.tr/video-haber/videoizle/arda-gulerden-harika-calimlar-fransizlar-ancak-faulle-durdurabildi) — Fotomaç · 2026-09-25T22:22:41+03:00 · turnuva=— · kulüp=—
 - [Aral Şimşir: Fransa çok kaliteli oyunculara sahip ancak...](https://www.fotomac.com.tr/video-haber/videoizle/aral-simsir-fransa-cok-kaliteli-oyunculara-sahip-ancak) — Fotomaç · 2026-09-25T22:01:37+03:00 · turnuva=— · kulüp=—
 - [Kocaeli’de görsel şölen!](https://www.fotomac.com.tr/uluslar-ligi/2026/09/25/kocaelide-gorsel-solen) — Fotomaç · 2026-09-25T21:57:25+03:00 · turnuva=— · kulüp=—
-- ["Zorlu bir galibiyet"](https://www.haberturk.com/spor/esteban-lepaul-zorlu-bir-galibiyet-3915188) — Haberturk Spor · 2026-09-25T21:20:27+00:00 · turnuva=— · kulüp=—
 - [Belçika, İtalya'da 2 golle kazandı!](https://www.hurriyet.com.tr/sporarena/belcika-italyada-2-golle-kazandi-43319904) — Hürriyet Spor · 2026-09-25T21:19:37+00:00 · turnuva=— · kulüp=—
-- [Ermenistan evinde Letonya'yı 2 golle geçti](https://www.fotomac.com.tr/uluslar-ligi/2026/09/25/ermenistan-evinde-letonyayi-2-golle-gecti) — Fotomaç · 2026-09-25T21:17:54+03:00 · turnuva=— · kulüp=—
-- ["1-2 gol daha atabilirdik!"](https://www.haberturk.com/spor/ousmane-dembele-1-2-gol-daha-atabilirdik-3915185) — Haberturk Spor · 2026-09-25T21:16:44+00:00 · turnuva=— · kulüp=—
-- [Milliler Kocaeli'de Fransa'ya mağlup oldu](https://www.haberturk.com/spor/turkiye-fransa-maci-canli-anlatim-turkiye-fransa-uefa-uluslar-ligi-maci-kac-kac-mac-skoru-ve-onemli--3914982) — Haberturk Spor · 2026-09-25T21:06:38+00:00 · turnuva=— · kulüp=—
 - [Türkiye Fransa maçına hazır! Soyunma odasındaki atmosferden görüntüler](https://www.takvim.com.tr/uluslar-ligi/2026/09/25/fransa-maci-oncesi-millilerin-soyunma-odasi-hazir) — Takvim Spor · 2026-09-25T21:00:48+03:00 · turnuva=— · kulüp=—
 - [TÜRKİYE - FRANSA MAÇI HANGİ KANALDA, SAAT KAÇTA? Milli maç ne zaman, şifreli mi, şifresiz mi izlenecek? Türkiye – Fransa Uluslar Ligi maçı kanalı ve saati|](https://www.cnnturk.com/spor/futbol/turkiye-fransa-maci-hangi-kanalda-saat-kacta-milli-mac-ne-zaman-sifreli-mi-sifresiz-mi-izlenecek-turkiye-fransa-uluslar-3471296) — CNN Türk Spor · 2026-09-25T20:59:48+00:00 · turnuva=— · kulüp=—
 - [TÜRKİYE FRANSA MİLLİ MAÇ ATV CANLI İZLE ŞİFRESİZ| Uluslar Ligi Türkiye Fransa Maçı Canlı İzle! Arda Güler Mbappe'ye Karşı! İşte TR FR Maç Yayını ATV Frekans Bilgileri...](https://www.cnnturk.com/spor/futbol/turkiye-fransa-milli-mac-atv-canli-izle-sifresiz-uluslar-ligi-turkiye-fransa-maci-canli-izle-arda-guler-mbappeye-karsi-iste-tr-3471228) — CNN Türk Spor · 2026-09-25T20:59:02+00:00 · turnuva=— · kulüp=—
-- [SON DAKİKA | A Milli Takım istediğini alamadı! Fransa'ya mağlup oldu...](https://www.sabah.com.tr/spor/futbol/2026/09/25/atv-canli-izle-turkiye-fransa-maci-ay-yildizlilarin-ilk-11i-belli-oldu) — Sabah Spor · 2026-09-25T19:56:14+03:00 · turnuva=— · kulüp=—
 - [SON DAKİKA | Fenerbahçe’ye Matteo Guendouzi müjdesi](https://www.cnnturk.com/spor/futbol/son-dakika-fenerbahceye-matteo-guendouzi-mujdesi-3471517) — CNN Türk Spor · 2026-09-25T18:53:01+00:00 · turnuva=— · kulüp=Fenerbahçe
 - [UEFA, Fenerbahçeli Guendouzi'ye verilen 4 maçlık men cezasını 3'e düşürdü](https://www.aa.com.tr/tr/spor/uefa-fenerbahceli-guendouziye-verilen-4-maclik-men-cezasini-3e-dusurdu/4069525) — Anadolu Ajansı Spor · 2026-09-25T18:44:34+03:00 · turnuva=— · kulüp=Fenerbahçe
-- [Golcüler Stockholm'ü inletti! Uluslar Ligi'nde 2 gollü galibiyet](https://www.takvim.com.tr/uluslar-ligi/2026/09/25/isvec-2-1-romanya-uluslar-ligi-mac-sonucu) — Takvim Spor · 2026-09-25T18:26:08+03:00 · turnuva=— · kulüp=—
-- [İtiraz sonuç verdi! Fenerbahçeli Guendouzi'nin cezasına UEFA'dan indirim: Resmen açıklandı](https://www.takvim.com.tr/spor/fenerbahce/2026/09/25/fenerbahceli-matteo-guendouzinin-cezasi-indirildi) — Takvim Spor · 2026-09-25T18:19:19+03:00 · turnuva=— · kulüp=Fenerbahçe
-- [Fenerbahçe Matteo Guendouzi hakkında açıklama yayınladı!](https://www.fotomac.com.tr/fenerbahce/2026/09/25/fenerbahce-matteo-guendouzi-hakkinda-aciklama-yayinladi) — Fotomaç · 2026-09-25T18:15:51+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Torino'da net skor! Uluslar Ligi'ne rüya gibi başlangıç](https://www.takvim.com.tr/uluslar-ligi/2026/09/25/italya-belcika-0-2-uluslar-ligi-mac-sonucu) — Takvim Spor · 2026-09-25T17:42:15+03:00 · turnuva=— · kulüp=—
-- [GÜNÜN MAÇLARI 25 EYLÜL 2026: Bugünkü Maçlar Neler? Uluslar Ligi Türkiye Fransa Maçı Hangi Kanalda, Saat Kaçta? İşte 25 Eylül Günün Maçları](https://www.cnnturk.com/spor/gunun-maclari-25-eylul-2026-bugunku-maclar-neler-uluslar-ligi-turkiye-fransa-maci-hangi-kanalda-saat-kacta-iste-25-eylul-gunun-maclari-3471304) — CNN Türk Spor · 2026-09-25T17:26:32+00:00 · turnuva=— · kulüp=—
