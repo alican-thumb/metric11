@@ -1,15 +1,17 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-09-26T07:39:56.341241+00:00
-Toplam ilgili haber: 76
+Üretim zamanı: 2026-09-26T09:22:10.429074+00:00
+Toplam ilgili haber: 70
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
-- [Tüm Fransa bu maçı konuşuyor! "Türkiye karşısında ecel terleri döktük"](https://www.aksam.com.tr/spor/tum-fransa-bu-maci-konusuyor-turkiye-karsisinda-ecel-terleri-doktuk/haber-1701486) — Aksam Spor · 2026-09-26T10:32:00+03:00 · turnuva=— · kulüp=—
+- [Türkiye-İtalya maçının hakemi Michael Oliver!](https://www.sabah.com.tr/spor/futbol/2026/09/26/turkiye-italya-macinin-hakemi-michael-oliver) — Sabah Spor · 2026-09-26T11:55:46+03:00 · turnuva=— · kulüp=—
+- [Türkiye-İtalya maçını İngiliz hakem Michael Oliver yönetecek](https://www.aa.com.tr/tr/spor/turkiye-italya-macini-ingiliz-hakem-michael-oliver-yonetecek/4069958) — Anadolu Ajansı Spor · 2026-09-26T11:54:51+03:00 · turnuva=— · kulüp=—
 - [Türkiye 0-1 Fransa Maç Özeti | Millîlerimiz, tek golle mağlup](https://www.cnnturk.com/spor/futbol/live-turkiye-0-1-fransa-mac-ozeti-millilerimiz-tek-golle-maglup-3471201) — CNN Türk Spor · 2026-09-26T10:00:11+00:00 · turnuva=— · kulüp=—
-- [26 Eylül Cumartesi: Bugün hangi maçlar var? Bugün Türkiye'nin maçı var mı?](https://www.aksam.com.tr/pusula/26-eylul-cumartesi-bugun-hangi-maclar-var-bugun-turkiyenin-maci-var-mi/haber-1701470) — Aksam Spor · 2026-09-26T09:17:00+03:00 · turnuva=— · kulüp=—
 - [Uluslar Ligi: Slovenya - İskoçya A Spor CANLI YAYIN](https://www.takvim.com.tr/uluslar-ligi/2026/09/26/slovenya-iskocya-uluslar-ligi-maci-a-spor-canli-yayin) — Takvim Spor · 2026-09-26T09:00:49+03:00 · turnuva=— · kulüp=—
+- ["Galip sayılır bu yolda mağlup!"](https://www.haberturk.com/spor/foto/spor-yazarlari-turkiye-fransa-macini-degerlendirdi-galip-sayilir-bu-yolda-maglup--3915240) — Haberturk Spor · 2026-09-26T08:57:47+00:00 · turnuva=— · kulüp=—
+- [Türkiye-İtalya maçının hakemi açıklandı](https://www.hurriyet.com.tr/sporarena/turkiye-italya-macinin-hakemi-aciklandi-43320185) — Hürriyet Spor · 2026-09-26T08:50:40+00:00 · turnuva=— · kulüp=—
 - [Yenildik ama mağlubiyeti hak etmedik! Mücadeleye alkış Arda Güler'e övgü](https://www.takvim.com.tr/galeri/uluslar-ligi/usta-yazarlar-turkiye-fransa-macini-degerlendirdi) — Takvim Spor · 2026-09-26T08:25:18+03:00 · turnuva=— · kulüp=—
 - [TÜRKİYE - FRANSA MAÇ SONUCU | Türkiye Milli maçı kaç kaç bitti? A Milli Takım sahadan kaç kaç ayrıldı?](https://www.cnnturk.com/spor/futbol/turkiye-fransa-mac-sonucu-turkiye-milli-maci-kac-kac-bitti-a-milli-takim-sahadan-kac-kac-ayrildi-3471657) — CNN Türk Spor · 2026-09-26T07:57:11+00:00 · turnuva=— · kulüp=—
 - [Spor yazarları Türkiye-Fransa maçını değerlendirdi](https://www.fotomac.com.tr/millitakim/2026/09/26/spor-yazarlari-turkiye-fransa-macini-degerlendirdi) — Fotomaç · 2026-09-26T06:58:17+03:00 · turnuva=— · kulüp=—
@@ -34,15 +36,13 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Karadağ evinde Güney Kıbrıs'ı mağlup etti!](https://www.fotomac.com.tr/uluslar-ligi/2026/09/25/karadag-evinde-guney-kibrisi-maglup-etti) — Fotomaç · 2026-09-26T01:34:38+03:00 · turnuva=— · kulüp=—
 - [Polonya ile Bosna Hersek yenişemedi!](https://www.fotomac.com.tr/uluslar-ligi/2026/09/25/polonya-ile-bosna-hersek-yenisemedi) — Fotomaç · 2026-09-26T01:34:36+03:00 · turnuva=— · kulüp=—
 - [Ukrayna deplasmanda Macaristan'ı mağlup etti!](https://www.fotomac.com.tr/uluslar-ligi/2026/09/25/ukrayna-deplasmanda-macaristani-maglup-etti) — Fotomaç · 2026-09-26T01:34:34+03:00 · turnuva=— · kulüp=—
-- [Bakan Bak: "Bu çocuklar iyi işler yapacaklar, güvenmeye devam edelim"](https://www.sabah.com.tr/spor/futbol/2026/09/25/bakan-bak-bu-cocuklar-iyi-isler-yapacaklar-guvenmeye-devam-edelim) — Sabah Spor · 2026-09-26T01:08:12+03:00 · turnuva=— · kulüp=—
 - [Luis De La Fuente: Şimdiye kadar yaptıklarımız artık yetmez!](https://www.sabah.com.tr/spor/futbol/2026/09/25/luis-de-la-fuente-simdiye-kadar-yaptiklarimiz-artik-yetmez) — Sabah Spor · 2026-09-26T00:49:33+03:00 · turnuva=— · kulüp=—
-- [Merih Demiral'dan kırmız kart tepkisi: Hakem de emin değildi](https://www.sabah.com.tr/spor/futbol/2026/09/25/merih-demiraldan-kirmiz-kart-tepkisi-hakem-de-emin-degildi) — Sabah Spor · 2026-09-26T00:22:16+03:00 · turnuva=— · kulüp=—
 - [UEFA Uluslar Ligi'nin ilk haftasında 8 maç oynandı](https://www.aa.com.tr/tr/spor/uefa-uluslar-liginin-ilk-haftasinda-8-mac-oynandi/4069768) — Anadolu Ajansı Spor · 2026-09-26T00:02:32+03:00 · turnuva=— · kulüp=—
 - [TÜRKİYE FRANSA MAÇI KAÇ KAÇ BİTTİ? Türkiye Fransa maç özeti](https://www.cnnturk.com/spor/futbol/turkiye-fransa-maci-nereden-izlenir-turkiye-fransa-maci-hangi-kanalda-saat-kacta-sifreli-mi-sifresiz-mi-3471498) — CNN Türk Spor · 2026-09-25T23:56:05+00:00 · turnuva=— · kulüp=—
-- [İsveç, Romanya engelini 2 golle geçti! (Maç özeti)](https://www.sabah.com.tr/spor/futbol/2026/09/25/isvec-romanya-engelini-2-golle-gecti-mac-ozeti) — Sabah Spor · 2026-09-25T23:41:49+03:00 · turnuva=— · kulüp=—
-- [Belçika, İtalya’ya evinde kabusu yaşattı! (Maç özeti)](https://www.sabah.com.tr/spor/futbol/2026/09/25/belcika-italyaya-evinde-kabusu-yasatti-mac-ozeti) — Sabah Spor · 2026-09-25T23:40:01+03:00 · turnuva=— · kulüp=—
 - [A Milli Takım, Uluslar Ligi'ne yenilgiyle başladı](https://www.aa.com.tr/tr/spor/a-milli-takim-uluslar-ligine-yenilgiyle-basladi/4069728) — Anadolu Ajansı Spor · 2026-09-25T23:35:38+03:00 · turnuva=— · kulüp=—
 - [Türkiye - Fransa maçında kritik pozisyon! Penaltı beklenen pozisyonda devam kararı](https://www.takvim.com.tr/uluslar-ligi/2026/09/25/turkiye-baris-alper-yilmaz-ile-fransa-penalti-bekledi) — Takvim Spor · 2026-09-25T22:49:34+03:00 · turnuva=— · kulüp=—
 - [Beşiktaş, 13 sezon sonra katıldığı Basketbol Avrupa Ligi'ne mağlubiyetle başladı](https://www.aa.com.tr/tr/spor/besiktas-13-sezon-sonra-katildigi-basketbol-avrupa-ligine-maglubiyetle-basladi/4069688) — Anadolu Ajansı Spor · 2026-09-25T22:40:33+03:00 · turnuva=EL · kulüp=Beşiktaş
 - ["Fransa'yı elimizden kaçırdık"](https://www.haberturk.com/spor/abdulkerim-bardakci-fransa-yi-elimizden-kacirdik-3915200) — Haberturk Spor · 2026-09-25T22:39:57+00:00 · turnuva=— · kulüp=—
 - ["Bugünü unutturacağız"](https://www.haberturk.com/spor/arda-guler-bugunu-unutturacagiz-insallah-3915199) — Haberturk Spor · 2026-09-25T22:30:27+00:00 · turnuva=— · kulüp=—
+- ["Türkiye'de oynamak her zaman keyiflidir"](https://www.haberturk.com/spor/rayan-cherki-turkiye-de-oynamak-her-zaman-keyiflidir-3915197) — Haberturk Spor · 2026-09-25T22:03:36+00:00 · turnuva=— · kulüp=—
+- ["Türkiye'de oynamak kolay değil!"](https://www.haberturk.com/spor/fransa-da-zinedine-zidane-turkiye-de-oynamak-kolay-degil-3915194) — Haberturk Spor · 2026-09-25T21:59:39+00:00 · turnuva=— · kulüp=—
