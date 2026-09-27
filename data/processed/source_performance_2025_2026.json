@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-26T21:08:44.119960+00:00",
+  "generated_at": "2026-09-27T00:35:41.412196+00:00",
   "season": "2025_2026",
   "maturity_days": 14,
   "summary": {
-    "transfer_signals": 14,
+    "transfer_signals": 15,
     "official_events": 14,
     "official_events_with_timestamp": 5,
     "official_events_with_first_observed_timestamp": 14,
     "observed_sources": 325,
-    "scored_sources": 208,
+    "scored_sources": 209,
     "measured_lead_times": 0,
     "first_seen_lead_times": 3,
     "tracked_x_sources_waiting": 20,
@@ -16,7 +16,7 @@
   },
   "provider_coverage": {
     "google_news": {
-      "articles": 147,
+      "articles": 145,
       "queries": 30,
       "successful_queries": 30
     },
@@ -46,8 +46,8 @@
         0.3
       ],
       "lead_time_unavailable": 2,
-      "matured_unconfirmed": 1315,
-      "pending_claims": 41,
+      "matured_unconfirmed": 1316,
+      "pending_claims": 40,
       "unresolved_claims": 2921,
       "status": "FIRST_SEEN_BOUND",
       "score": 0.3,
@@ -4085,6 +4085,26 @@
       "false_alarm_proxy_pct": 100.0
     },
     {
+      "source": "pusulahaber.com.tr",
+      "source_tier": "MEDIA",
+      "source_type": "google_news",
+      "observations": 1,
+      "scoreable_claims": 1,
+      "official_conversions": 0,
+      "lead_hours": [],
+      "first_seen_lead_hours": [],
+      "lead_time_unavailable": 0,
+      "matured_unconfirmed": 1,
+      "pending_claims": 0,
+      "unresolved_claims": 0,
+      "status": "PARTIAL_MEASUREMENT",
+      "score": 0.0,
+      "average_lead_hours": null,
+      "average_first_seen_lead_hours": null,
+      "official_conversion_rate_pct": 0.0,
+      "false_alarm_proxy_pct": 100.0
+    },
+    {
       "source": "radikal.com.tr",
       "source_tier": "MEDIA",
       "source_type": "google_news",
@@ -6362,26 +6382,6 @@
       "average_lead_hours": null,
       "average_first_seen_lead_hours": null,
       "official_conversion_rate_pct": null,
-      "false_alarm_proxy_pct": null
-    },
-    {
-      "source": "pusulahaber.com.tr",
-      "source_tier": "MEDIA",
-      "source_type": "google_news",
-      "observations": 1,
-      "scoreable_claims": 1,
-      "official_conversions": 0,
-      "lead_hours": [],
-      "first_seen_lead_hours": [],
-      "lead_time_unavailable": 0,
-      "matured_unconfirmed": 0,
-      "pending_claims": 1,
-      "unresolved_claims": 0,
-      "status": "OBSERVING",
-      "score": null,
-      "average_lead_hours": null,
-      "average_first_seen_lead_hours": null,
-      "official_conversion_rate_pct": 0.0,
       "false_alarm_proxy_pct": null
     },
     {

@@ -1,11 +1,16 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-09-26T21:08:44.385524+00:00
-Toplam ilgili haber: 63
+Üretim zamanı: 2026-09-27T00:35:41.596027+00:00
+Toplam ilgili haber: 69
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [Uluslar Ligi'nde ilk hafta noktalandı! İşte karşılaşmaların sonuçları...](https://www.aksam.com.tr/spor/uluslar-liginde-ilk-hafta-noktalandi-iste-karsilasmalarin-sonuclari/haber-1701641) — Aksam Spor · 2026-09-27T01:40:00+03:00 · turnuva=— · kulüp=—
+- [Finlandiya, San Marino kalesine gol oldu yağdı](https://www.aksam.com.tr/spor/finlandiya-san-marino-kalesine-gol-oldu-yagdi/haber-1701640) — Aksam Spor · 2026-09-27T01:21:00+03:00 · turnuva=— · kulüp=Rizespor
+- [İrlanda'da Gavin Bazunu, İsrail maçlarında oynamayı reddetti!](https://www.sabah.com.tr/spor/futbol/2026/09/26/irlandada-gavin-bazunu-israil-maclarinda-oynamayi-reddetti) — Sabah Spor · 2026-09-27T00:56:03+03:00 · turnuva=— · kulüp=—
+- [Dünya Kupası şampiyonu İspanya, İngiltere karşısında geriden gelerek kazandı](https://www.aa.com.tr/tr/spor/dunya-kupasi-sampiyonu-ispanya-ingiltere-karsisinda-geriden-gelerek-kazandi/4070453) — Anadolu Ajansı Spor · 2026-09-27T00:42:23+03:00 · turnuva=— · kulüp=—
+- [İspanya, İngiltere'yi devirdi; yenilmezlik serisini 39 maça çıkardı](https://www.cnnturk.com/spor/futbol/ispanya-ingiltereyi-devirdi-yenilmezlik-serisini-39-maca-cikardi-3471930) — CNN Türk Spor · 2026-09-27T00:27:53+00:00 · turnuva=— · kulüp=—
 - [MAÇ SONUCU: İngiltere 2-3 İspanya](https://www.aksam.com.tr/spor/mac-sonucu-ingiltere-2-3-ispanya/haber-1701627) — Aksam Spor · 2026-09-27T00:00:00+03:00 · turnuva=— · kulüp=—
 - [Finlandiya, San Marino'yu 7 golle devirdi!](https://www.sabah.com.tr/spor/futbol/2026/09/26/finlandiya-san-marinoyu-7-golle-devirdi) — Sabah Spor · 2026-09-26T23:57:23+03:00 · turnuva=— · kulüp=—
 - [Uluslar Ligi'nde tarihi protesto! Bazunu, İsrail maçına çıkmayacak](https://www.aksam.com.tr/spor/uluslar-liginde-tarihi-protesto-bazunu-israil-macina-cikmayacak/haber-1701626) — Aksam Spor · 2026-09-26T23:40:00+03:00 · turnuva=— · kulüp=—
@@ -17,9 +22,9 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [A Milli Futbol Takımı'nda İtalya hazırlıkları başladı!](https://www.sabah.com.tr/spor/futbol/2026/09/26/a-milli-futbol-takiminda-italya-hazirliklari-basladi) — Sabah Spor · 2026-09-26T21:14:24+03:00 · turnuva=— · kulüp=—
 - [Ümit Milli Futbol Takımı, Avrupa Şampiyonası play-offlarını garantiledi!](https://www.sabah.com.tr/spor/futbol/2026/09/26/umit-milli-futbol-takimi-avrupa-sampiyonasi-play-offlarini-garantiledi) — Sabah Spor · 2026-09-26T21:07:11+03:00 · turnuva=— · kulüp=—
 - [Ay-yıldızlı ekip, play-off oynamayı garantiledi](https://www.aa.com.tr/tr/spor/ay-yildizli-ekip-play-off-oynamayi-garantiledi/4070354) — Anadolu Ajansı Spor · 2026-09-26T21:05:48+03:00 · turnuva=— · kulüp=—
+- [UEFA Uluslar Ligi'nin ilk haftası sona erdi!](https://www.haberturk.com/spor/uefa-uluslar-ligi-nin-ilk-haftasi-sona-erdi-3915359) — Haberturk Spor · 2026-09-26T21:03:27+00:00 · turnuva=— · kulüp=—
 - [Gol düellosunda kazanan İspanya!](https://www.haberturk.com/spor/ingiltere-ispanya-mac-sonucu-iste-ingiltere-ispanya-maci-ozeti-ve-golleri-uefa-uluslar-ligi-a-ligi-3915358) — Haberturk Spor · 2026-09-26T20:55:04+00:00 · turnuva=— · kulüp=—
 - [İrlandalı futbolculardan, İsrail maçı için protesto! 'Soykırıma' karşı oynanacak bir maç](https://www.sabah.com.tr/spor/futbol/2026/09/26/irlandali-futbolculardan-israil-maci-icin-protesto-soykirima-karsi-oynanacak-bir-mac) — Sabah Spor · 2026-09-26T20:52:19+03:00 · turnuva=— · kulüp=—
-- [SON DAKİKA | Hırvatistan, Çekya deplasmanında kazandı! (MAÇ ÖZETİ İZLE)](https://www.sabah.com.tr/spor/futbol/2026/09/26/son-dakika-hirvatistan-cekya-deplasmaninda-kazandi-mac-ozeti-izle) — Sabah Spor · 2026-09-26T19:48:27+03:00 · turnuva=— · kulüp=—
 - [Patron Modric sahnede! Uluslar Ligi'nde kritik galibiyet](https://www.takvim.com.tr/uluslar-ligi/2026/09/26/cekya-hirvatistan-1-2-uluslar-ligi-mac-sonucu) — Takvim Spor · 2026-09-26T19:48:12+03:00 · turnuva=— · kulüp=—
 - [SON DAKİKA | İspanya müthiş maçta İngiltere'yi yıktı! (MAÇ ÖZETİ İZLE)](https://www.sabah.com.tr/spor/futbol/2026/09/26/son-dakika-ispanya-muthis-macta-ingiltereyi-yikti-mac-ozeti-izle) — Sabah Spor · 2026-09-26T19:29:06+03:00 · turnuva=— · kulüp=—
 - [A Milli Takım'da İtalya maçı öncesi Orkun Kökçü gelişmesi!](https://www.hurriyet.com.tr/sporarena/a-milli-takimda-italya-maci-oncesi-orkun-kokcu-gelismesi-43320715) — Hürriyet Spor · 2026-09-26T19:24:47+00:00 · turnuva=— · kulüp=—
@@ -41,8 +46,3 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [İngiltere, İspanya’yı ağırlıyor! Uluslar Ligi heyecanı canlı sohbet ile Misli'de](https://www.hurriyet.com.tr/sporarena/ingiltere-ispanyayi-agirliyor-uluslar-ligi-heyecani-canli-sohbet-ile-mislide-43320042) — Hürriyet Spor · 2026-09-26T06:41:00+00:00 · turnuva=— · kulüp=—
 - [Türkiye-Fransa maçını yazdılar: Montella'nın iki büyük problemi var!](https://www.hurriyet.com.tr/sporarena/turkiye-fransa-macini-yazdilar-montellanin-iki-buyuk-problemi-var-43319971) — Hürriyet Spor · 2026-09-26T04:53:00+00:00 · turnuva=— · kulüp=—
 - [UEFA Uluslar Ligi'nin ilk haftasında 8 maç oynandı](https://www.aa.com.tr/tr/spor/uefa-uluslar-liginin-ilk-haftasinda-8-mac-oynandi/4069768) — Anadolu Ajansı Spor · 2026-09-26T00:02:32+03:00 · turnuva=— · kulüp=—
-- [TÜRKİYE FRANSA MAÇI KAÇ KAÇ BİTTİ? Türkiye Fransa maç özeti](https://www.cnnturk.com/spor/futbol/turkiye-fransa-maci-nereden-izlenir-turkiye-fransa-maci-hangi-kanalda-saat-kacta-sifreli-mi-sifresiz-mi-3471498) — CNN Türk Spor · 2026-09-25T23:56:05+00:00 · turnuva=— · kulüp=—
-- [A Milli Takım, Uluslar Ligi'ne yenilgiyle başladı](https://www.aa.com.tr/tr/spor/a-milli-takim-uluslar-ligine-yenilgiyle-basladi/4069728) — Anadolu Ajansı Spor · 2026-09-25T23:35:38+03:00 · turnuva=— · kulüp=—
-- [Türkiye - Fransa maçında kritik pozisyon! Penaltı beklenen pozisyonda devam kararı](https://www.takvim.com.tr/uluslar-ligi/2026/09/25/turkiye-baris-alper-yilmaz-ile-fransa-penalti-bekledi) — Takvim Spor · 2026-09-25T22:49:34+03:00 · turnuva=— · kulüp=—
-- [Beşiktaş, 13 sezon sonra katıldığı Basketbol Avrupa Ligi'ne mağlubiyetle başladı](https://www.aa.com.tr/tr/spor/besiktas-13-sezon-sonra-katildigi-basketbol-avrupa-ligine-maglubiyetle-basladi/4069688) — Anadolu Ajansı Spor · 2026-09-25T22:40:33+03:00 · turnuva=EL · kulüp=Beşiktaş
-- ["Fransa'yı elimizden kaçırdık"](https://www.haberturk.com/spor/abdulkerim-bardakci-fransa-yi-elimizden-kacirdik-3915200) — Haberturk Spor · 2026-09-25T22:39:57+00:00 · turnuva=— · kulüp=—
