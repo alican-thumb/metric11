@@ -1,18 +1,22 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-09-27T08:11:56.703414+00:00
-Toplam ilgili haber: 64
+Üretim zamanı: 2026-09-27T10:07:26.185090+00:00
+Toplam ilgili haber: 62
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
-- [Galibiyet parolasıyla sahaya çıkacak! A Milli Futbol Takımı'nın sıradaki rakibi İtalya](https://www.aksam.com.tr/spor/galibiyet-parolasiyla-sahaya-cikacak-a-milli-futbol-takiminin-siradaki-rakibi-italya/haber-1701691) — Aksam Spor · 2026-09-27T10:51:00+03:00 · turnuva=— · kulüp=—
-- [UEFA Uluslar Ligi formatı nedir? Uluslar Ligi'nde gruptan kaç takım çıkıyor?](https://www.aksam.com.tr/trend/uefa-uluslar-ligi-formati-nedir-uluslar-liginde-gruptan-kac-takim-cikiyor/haber-1701687) — Aksam Spor · 2026-09-27T10:36:00+03:00 · turnuva=— · kulüp=—
+- [İtalya aday kadrodan 10 futbolcusunu Türkiye'ye getirmiyor](https://www.aksam.com.tr/spor/italya-aday-kadrodan-10-futbolcusunu-turkiyeye-getirmiyor/haber-1701732) — Aksam Spor · 2026-09-27T13:00:00+03:00 · turnuva=— · kulüp=—
+- [A Milli Futbol Takımı, İtalya karşısında ilk galibiyet için sahada](https://www.aa.com.tr/tr/spor/a-milli-futbol-takimi-italya-karsisinda-ilk-galibiyet-icin-sahada/4070614) — Anadolu Ajansı Spor · 2026-09-27T11:24:02+03:00 · turnuva=— · kulüp=—
+- [GÜNÜN MAÇLARI 27 EYLÜL 2026: Bugünkü Maçlar Neler? Uluslar Ligi Maçları Hangi Kanalda, Saat Kaçta? İşte 27 Eylül Günün Maçları](https://www.cnnturk.com/spor/gunun-maclari-27-eylul-2026-bugunku-maclar-neler-uluslar-ligi-maclari-hangi-kanalda-saat-kacta-iste-27-eylul-gunun-maclari-3472006) — CNN Türk Spor · 2026-09-27T11:13:25+00:00 · turnuva=— · kulüp=Beşiktaş
+- [A Milli Futbol Takımı, 656. maçına İtalya karşısında çıkacak](https://www.sabah.com.tr/spor/futbol/2026/09/27/a-milli-futbol-takimi-656-macina-italya-karsisinda-cikacak) — Sabah Spor · 2026-09-27T11:09:38+03:00 · turnuva=— · kulüp=—
+- [A Milli Futbol Takımı, 656. maçına İtalya karşısında çıkacak](https://www.aa.com.tr/tr/spor/a-milli-futbol-takimi-656-macina-italya-karsisinda-cikacak/4070596) — Anadolu Ajansı Spor · 2026-09-27T11:07:34+03:00 · turnuva=— · kulüp=—
 - [Louzan: "Çok ama çok hırslı bir grubuz"](https://www.sabah.com.tr/spor/futbol/2026/09/27/louzan-cok-ama-cok-hirsli-bir-grubuz) — Sabah Spor · 2026-09-27T10:32:28+03:00 · turnuva=— · kulüp=—
 - [Türkiye'nin UEFA Uluslar Ligi'ndeki ikinci rakibi İtalya](https://www.sabah.com.tr/spor/futbol/2026/09/27/turkiyenin-uefa-uluslar-ligindeki-ikinci-rakibi-italya) — Sabah Spor · 2026-09-27T10:30:06+03:00 · turnuva=— · kulüp=—
 - [Türkiye'nin UEFA Uluslar Ligi'ndeki ikinci rakibi İtalya](https://www.aa.com.tr/tr/spor/turkiyenin-uefa-uluslar-ligindeki-ikinci-rakibi-italya/4070549) — Anadolu Ajansı Spor · 2026-09-27T10:21:06+03:00 · turnuva=— · kulüp=—
+- [Millilerin ikinci rakibi İtalya!](https://www.haberturk.com/spor/foto/turkiye-nin-uefa-uluslar-ligi-ndeki-ikinci-rakibi-italya-3915396) — Haberturk Spor · 2026-09-27T08:52:53+00:00 · turnuva=— · kulüp=—
+- [A Milli Futbol Takımı, 656. maçına İtalya karşısında çıkacak](https://www.hurriyet.com.tr/sporarena/a-milli-futbol-takimi-656-macina-italya-karsisinda-cikacak-43321006) — Hürriyet Spor · 2026-09-27T08:19:03+00:00 · turnuva=— · kulüp=—
 - [Norveç, Portekiz'i ağırlıyor! Uluslar Ligi heyecanı canlı sohbet ile Misli'de](https://www.hurriyet.com.tr/sporarena/norvec-portekizi-agirliyor-uluslar-ligi-heyecani-canli-sohbet-ile-mislide-43320913) — Hürriyet Spor · 2026-09-27T06:57:38+00:00 · turnuva=— · kulüp=—
-- [İrlanda'da Gavin Bazunu, İsrail maçlarında oynamayı reddetti!](https://www.sabah.com.tr/spor/futbol/2026/09/26/irlandada-gavin-bazunu-israil-maclarinda-oynamayi-reddetti) — Sabah Spor · 2026-09-27T00:56:03+03:00 · turnuva=— · kulüp=—
 - [Dünya Kupası şampiyonu İspanya, İngiltere karşısında geriden gelerek kazandı](https://www.aa.com.tr/tr/spor/dunya-kupasi-sampiyonu-ispanya-ingiltere-karsisinda-geriden-gelerek-kazandi/4070453) — Anadolu Ajansı Spor · 2026-09-27T00:42:23+03:00 · turnuva=— · kulüp=—
 - [İspanya, İngiltere'yi devirdi; yenilmezlik serisini 39 maça çıkardı](https://www.cnnturk.com/spor/futbol/ispanya-ingiltereyi-devirdi-yenilmezlik-serisini-39-maca-cikardi-3471930) — CNN Türk Spor · 2026-09-27T00:27:53+00:00 · turnuva=— · kulüp=—
 - [İrlanda'nın kalecisi Bazunu, İsrail maçlarında oynamayı reddetti](https://www.aa.com.tr/tr/spor/irlandanin-kalecisi-bazunu-israil-maclarinda-oynamayi-reddetti/4070406) — Anadolu Ajansı Spor · 2026-09-26T22:59:19+03:00 · turnuva=— · kulüp=—
@@ -42,7 +46,3 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Türkiye-Fransa maçını Nihat Kahveci yorumladı: Yeniliyorsan böyle yenil!](https://www.hurriyet.com.tr/sporarena/turkiye-fransa-macini-nihat-kahveci-yorumladi-yeniliyorsan-boyle-yenil-43320036) — Hürriyet Spor · 2026-09-26T06:47:00+00:00 · turnuva=— · kulüp=—
 - [İngiltere, İspanya’yı ağırlıyor! Uluslar Ligi heyecanı canlı sohbet ile Misli'de](https://www.hurriyet.com.tr/sporarena/ingiltere-ispanyayi-agirliyor-uluslar-ligi-heyecani-canli-sohbet-ile-mislide-43320042) — Hürriyet Spor · 2026-09-26T06:41:00+00:00 · turnuva=— · kulüp=—
 - [Türkiye-Fransa maçını yazdılar: Montella'nın iki büyük problemi var!](https://www.hurriyet.com.tr/sporarena/turkiye-fransa-macini-yazdilar-montellanin-iki-buyuk-problemi-var-43319971) — Hürriyet Spor · 2026-09-26T04:53:00+00:00 · turnuva=— · kulüp=—
-- [UEFA Uluslar Ligi'nin ilk haftasında 8 maç oynandı](https://www.aa.com.tr/tr/spor/uefa-uluslar-liginin-ilk-haftasinda-8-mac-oynandi/4069768) — Anadolu Ajansı Spor · 2026-09-26T00:02:32+03:00 · turnuva=— · kulüp=—
-- [TÜRKİYE FRANSA MAÇI KAÇ KAÇ BİTTİ? Türkiye Fransa maç özeti](https://www.cnnturk.com/spor/futbol/turkiye-fransa-maci-nereden-izlenir-turkiye-fransa-maci-hangi-kanalda-saat-kacta-sifreli-mi-sifresiz-mi-3471498) — CNN Türk Spor · 2026-09-25T23:56:05+00:00 · turnuva=— · kulüp=—
-- [A Milli Takım, Uluslar Ligi'ne yenilgiyle başladı](https://www.aa.com.tr/tr/spor/a-milli-takim-uluslar-ligine-yenilgiyle-basladi/4069728) — Anadolu Ajansı Spor · 2026-09-25T23:35:38+03:00 · turnuva=— · kulüp=—
-- [Türkiye - Fransa maçında kritik pozisyon! Penaltı beklenen pozisyonda devam kararı](https://www.takvim.com.tr/uluslar-ligi/2026/09/25/turkiye-baris-alper-yilmaz-ile-fransa-penalti-bekledi) — Takvim Spor · 2026-09-25T22:49:34+03:00 · turnuva=— · kulüp=—
