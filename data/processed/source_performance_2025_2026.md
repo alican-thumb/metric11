@@ -12,7 +12,7 @@
 
 ## Kanal Kapsamı
 
-- Google News: 140 haber, 30/30 başarılı sorgu.
+- Google News: 141 haber, 30/30 başarılı sorgu.
 - Telegram: 6 mesaj, 8/8 erişilebilir kanal.
 - X: durum=MISSING_CREDENTIALS, gönderi=0, yapılandırılmış hesap=45.
 

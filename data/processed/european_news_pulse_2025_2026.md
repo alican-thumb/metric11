@@ -1,18 +1,22 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-09-27T21:21:50.435445+00:00
-Toplam ilgili haber: 89
+Üretim zamanı: 2026-09-28T00:44:09.738151+00:00
+Toplam ilgili haber: 92
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [A MİLLİ TAKIM İTALYA KARŞISINDA! Türkiye - İtalya Maçı Ne Zaman, Saat Kaçta, Hangi Kanalda? Türkiye - İtalya Milli Maçı Hangi Kanalda Yayınlanacak? Uluslar Ligi Heyecanı](https://www.cnnturk.com/spor/futbol/a-milli-takim-italya-karsisinda-turkiye-italya-maci-ne-zaman-saat-kacta-hangi-kanalda-turkiye-italya-milli-maci-hangi-3472066) — CNN Türk Spor · 2026-09-28T02:43:13+00:00 · turnuva=— · kulüp=—
+- [Haaland'ın golü yetmedi! Portekiz, Norveç'i devirdi](https://www.aksam.com.tr/spor/haalandin-golu-yetmedi-portekiz-norveci-devirdi/haber-1701864) — Aksam Spor · 2026-09-28T01:31:00+03:00 · turnuva=— · kulüp=—
+- [Montella'dan kaleci kararı! Türkiye'nin İtalya maçı muhtemel 11'i](https://www.takvim.com.tr/uluslar-ligi/2026/09/27/turkiye-italya-uluslar-ligi-maci-muhtemel-11lleri) — Takvim Spor · 2026-09-28T01:05:58+03:00 · turnuva=— · kulüp=—
+- [Uluslar Ligi'nde ikinci hafta heyecanı başladı](https://www.aksam.com.tr/spor/uluslar-liginde-ikinci-hafta-heyecani-basladi/haber-1701863) — Aksam Spor · 2026-09-28T00:57:00+03:00 · turnuva=— · kulüp=—
+- [İrlanda deplasmanda İsrail'i darmadağın etti](https://www.fotomac.com.tr/uluslar-ligi/2026/09/27/irlanda-deplasmanda-israili-darmadagin-etti) — Fotomaç · 2026-09-28T00:23:15+03:00 · turnuva=— · kulüp=—
 - [Yunanistan'dan Almanya deplasmanında kritik galibiyet](https://www.aksam.com.tr/spor/yunanistandan-almanya-deplasmaninda-kritik-galibiyet/haber-1701851) — Aksam Spor · 2026-09-28T00:13:00+03:00 · turnuva=— · kulüp=—
 - [Portekiz deplasmanda Norveç'e şans tanımadı!](https://www.fotomac.com.tr/uluslar-ligi/2026/09/27/portekiz-deplasmanda-norvece-sans-tanimadi) — Fotomaç · 2026-09-27T23:44:21+03:00 · turnuva=— · kulüp=—
 - [Almanya'ya evinde Yunanistan şoku!](https://www.fotomac.com.tr/uluslar-ligi/2026/09/27/almanyaya-evinde-yunanistan-soku) — Fotomaç · 2026-09-27T23:41:15+03:00 · turnuva=— · kulüp=—
 - [Nübel'in şanssız anı! İşte Yunanistan'ı öne geçiren gol](https://www.fotomac.com.tr/video-haber/videoizle/gol-almanya-0-1-yunanistan) — Fotomaç · 2026-09-27T23:33:22+03:00 · turnuva=— · kulüp=—
 - [İrlanda'dan İsrail'e tarihi protesto: Başlar önde el sıkışmak ve temas yok](https://www.takvim.com.tr/uluslar-ligi/2026/09/27/irlandadan-israile-tarihi-protesto) — Takvim Spor · 2026-09-27T23:24:39+03:00 · turnuva=— · kulüp=—
 - [Uluslar Ligi'nde Danimarka'dan kritik galibiyet! Galler'i devirdi](https://www.takvim.com.tr/uluslar-ligi/2026/09/27/danimarka-galler-2-0-uluslar-ligi-mac-sonucu) — Takvim Spor · 2026-09-27T22:28:07+03:00 · turnuva=— · kulüp=—
-- [Hollanda, Sırbistan karşısında hata yapmadı](https://www.aksam.com.tr/spor/hollanda-sirbistan-karsisinda-hata-yapmadi/haber-1701838) — Aksam Spor · 2026-09-27T22:02:00+03:00 · turnuva=— · kulüp=—
 - [Danimarka, Galler engeline takılmadı!](https://www.sabah.com.tr/spor/futbol/2026/09/27/danimarka-galler-engeline-takilmadi) — Sabah Spor · 2026-09-27T21:57:11+03:00 · turnuva=— · kulüp=—
 - [ALMANYA YUNANİSTAN MAÇI HANGİ KANALDA? Almanya Yunanistan Maçı Saat Kaçta, Şifreli Mi Şifresiz Mi?](https://www.cnnturk.com/spor/futbol/almanya-yunanistan-maci-hangi-kanalda-almanya-yunanistan-maci-saat-kacta-sifreli-mi-sifresiz-mi-3472227) — CNN Türk Spor · 2026-09-27T21:49:30+00:00 · turnuva=— · kulüp=—
 - [Avusturya, Kosova engelini 3 golle geçti!](https://www.sabah.com.tr/spor/futbol/2026/09/27/avusturya-kosova-engelini-3-golle-gecti) — Sabah Spor · 2026-09-27T21:46:38+03:00 · turnuva=— · kulüp=—
@@ -20,6 +24,7 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [NORVEÇ PORTEKİZ MAÇI CANLI İZLE| Uluslar Ligi Norveç Portekiz Maçı Saat Kaçta, Hangi Kanalda? Ronaldo Mu Erling Haaland Mı? İşte Maç Kadrosu...](https://www.cnnturk.com/spor/futbol/norvec-portekiz-maci-canli-izle-uluslar-ligi-norvec-portekiz-maci-saat-kacta-hangi-kanalda-ronaldo-mu-erling-haaland-mi-iste-mac-3472157) — CNN Türk Spor · 2026-09-27T21:30:57+00:00 · turnuva=— · kulüp=—
 - [Cebelitarık ile Andorra puanları paylaştı](https://www.fotomac.com.tr/uluslar-ligi/2026/09/27/cebelitarik-ile-andorra-puanlari-paylasti) — Fotomaç · 2026-09-27T21:19:50+03:00 · turnuva=— · kulüp=—
 - [Muriç'li Kosova Avusturya'ya mağlup](https://www.fotomac.com.tr/uluslar-ligi/2026/09/27/muricli-kosova-avusturyaya-maglup) — Fotomaç · 2026-09-27T21:15:39+03:00 · turnuva=— · kulüp=—
+- [UEFA Uluslar Ligi'nde 2. hafta başladı!](https://www.haberturk.com/spor/uefa-uluslar-ligi-nde-2-hafta-basladi-3915485) — Haberturk Spor · 2026-09-27T21:14:23+00:00 · turnuva=— · kulüp=—
 - [Danimarka'dan Galler'e geçit yok](https://www.fotomac.com.tr/uluslar-ligi/2026/09/27/danimarkadan-gallere-gecit-yok) — Fotomaç · 2026-09-27T21:09:43+03:00 · turnuva=— · kulüp=—
 - [Almanya'ya evinde Yunanistan şoku!](https://www.hurriyet.com.tr/sporarena/almanyaya-evinde-yunanistan-soku-43321729) — Hürriyet Spor · 2026-09-27T21:00:08+00:00 · turnuva=— · kulüp=—
 - [Almanya'ya Yunanistan şoku!](https://www.haberturk.com/spor/almanya-yunanistan-mac-sonucu-iste-almanya-yunanistan-maci-ozeti-ve-golleri-uefa-uluslar-ligi-3915481) — Haberturk Spor · 2026-09-27T20:47:44+00:00 · turnuva=— · kulüp=—
@@ -38,11 +43,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - ["Yüreğim Türkiye için atacak"](https://www.haberturk.com/spor/vincenzo-montella-akliniz-kalmasin-yuregim-turkiye-icin-atacak-3915465) — Haberturk Spor · 2026-09-27T17:59:42+00:00 · turnuva=— · kulüp=—
 - [İtalya kafilesi Bursa'ya geldi](https://www.fotomac.com.tr/uluslar-ligi/2026/09/27/italya-kafilesi-bursaya-geldi) — Fotomaç · 2026-09-27T17:58:32+03:00 · turnuva=— · kulüp=—
 - [MAÇ ÖZETİ İZLE | Almanya’ya evinde şok skor! Yunanistan kazandı](https://www.sabah.com.tr/spor/futbol/2026/09/27/mac-ozeti-izle-almanyaya-evinde-sok-skor-yunanistan-kazandi) — Sabah Spor · 2026-09-27T17:58:14+03:00 · turnuva=— · kulüp=—
-- [A MİLLİ TAKIM İTALYA KARŞISINDA! Türkiye - İtalya Maçı Ne Zaman, Saat Kaçta, Hangi Kanalda? Türkiye - İtalya Milli Maçı Hangi Kanalda Yayınlanacak? Uluslar Ligi Heyecanı](https://www.cnnturk.com/spor/futbol/a-milli-takim-italya-karsisinda-turkiye-italya-maci-ne-zaman-saat-kacta-hangi-kanalda-turkiye-italya-milli-maci-hangi-3472066) — CNN Türk Spor · 2026-09-27T17:47:13+00:00 · turnuva=— · kulüp=—
 - [GÜNÜN MAÇLARI 27 EYLÜL 2026: Bugünkü Maçlar Neler? Uluslar Ligi Maçları Hangi Kanalda, Saat Kaçta? İşte 27 Eylül Günün Maçları](https://www.cnnturk.com/spor/gunun-maclari-27-eylul-2026-bugunku-maclar-neler-uluslar-ligi-maclari-hangi-kanalda-saat-kacta-iste-27-eylul-gunun-maclari-3472006) — CNN Türk Spor · 2026-09-27T17:47:01+00:00 · turnuva=— · kulüp=Beşiktaş
 - [A Milli Futbol Takımı, İtalya maçına hazır](https://www.aa.com.tr/tr/spor/a-milli-futbol-takimi-italya-macina-hazir/4070880) — Anadolu Ajansı Spor · 2026-09-27T17:42:54+03:00 · turnuva=— · kulüp=—
 - [Mexx Merdink rüzgarı! Ülkesini 3 puana uçurdu](https://www.takvim.com.tr/uluslar-ligi/2026/09/27/sirbistan-hollanda-1-2-uluslar-ligi-mac-sonucu) — Takvim Spor · 2026-09-27T17:33:00+03:00 · turnuva=— · kulüp=—
-- [MAÇ ÖZETİ İZLE | Hollanda, Sırbistan deplasmanında kazandı! Mexx Meerdink fırtınası](https://www.sabah.com.tr/spor/futbol/2026/09/27/mac-ozeti-izle-hollanda-sirbistan-deplasmaninda-kazandi-mexx-meerdink-firtinasi) — Sabah Spor · 2026-09-27T17:20:33+03:00 · turnuva=— · kulüp=—
-- [Roberto Mancini: 'Türkiye çok iyi bir takım, elenmeyi hak etmediler'](https://www.hurriyet.com.tr/sporarena/roberto-mancini-turkiye-cok-iyi-bir-takim-elenmeyi-hak-etmediler-43321545) — Hürriyet Spor · 2026-09-27T16:49:00+00:00 · turnuva=— · kulüp=—
-- ["İyi bir oyun olacak"](https://www.haberturk.com/spor/roberto-mancini-iyi-bir-oyun-olacak-3915461) — Haberturk Spor · 2026-09-27T16:44:34+00:00 · turnuva=— · kulüp=—
-- [Milliler, İtalya maçına hazır!](https://www.haberturk.com/spor/a-milli-futbol-takimi-italya-macina-hazir-3915447) — Haberturk Spor · 2026-09-27T15:00:07+00:00 · turnuva=— · kulüp=—
