@@ -6,12 +6,13 @@
 - Otomatik ceza sinyali: 13
 - Manuel kayıt: 0
 - Güncel haber/sakat-cezalı sinyali: 1
-- Haber istihbaratı sinyali: 0
+- Haber istihbaratı sinyali: 1
 - Not: Kırmızı/çift sarı için sonraki maç cezası varsayılır. Sarı kart birikimi 4 kartta 1 maç varsayımıdır; resmi ceza listesiyle doğrulanmalıdır.
 
 ## Güncel Haber/Sakat-Cezalı Bağlamı
 
 - INJURED | Maestro | kaynak=beIN SPORTS sakat ve cezalı listesi | güven=MEDIUM_CONTEXT
+- INJURED | PAOLO FERNANDES CANTIN | kaynak=news_intelligence | güven=MEDIUM
 
 ## Maç Bazlı Eksikler
 
