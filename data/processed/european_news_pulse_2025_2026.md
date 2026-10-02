@@ -1,22 +1,26 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-10-02T05:32:09.211009+00:00
-Toplam ilgili haber: 50
+Üretim zamanı: 2026-10-02T08:30:16.864382+00:00
+Toplam ilgili haber: 51
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
-- [Almanya'dan Sırbistan karşısında 2 gollü galibiyet](https://www.aksam.com.tr/spor/almanyadan-sirbistan-karsisinda-2-gollu-galibiyet/haber-1702974) — Aksam Spor · 2026-10-02T01:36:00+03:00 · turnuva=— · kulüp=—
-- [Maç sonu olay! Önce Ronaldo sevinci yaptı sonra Jorge Jesus'u ittirdi...](https://www.aksam.com.tr/spor/mac-sonu-olay-once-ronaldo-sevinci-yapti-sonra-jorge-jesusu-ittirdi/haber-1702968) — Aksam Spor · 2026-10-02T00:45:00+03:00 · turnuva=— · kulüp=—
-- [Yunanistan ile Hollanda puanları paylaştı](https://www.aksam.com.tr/spor/yunanistan-ile-hollanda-puanlari-paylasti/haber-1702962) — Aksam Spor · 2026-10-02T00:09:00+03:00 · turnuva=— · kulüp=—
-- [Cristiano Ronaldo'suz Portekiz, Danimarka engelini geçti](https://www.aksam.com.tr/spor/cristiano-ronaldosuz-portekiz-danimarka-engelini-gecti/haber-1702961) — Aksam Spor · 2026-10-01T23:54:00+03:00 · turnuva=— · kulüp=—
+- [A Milli Takım, Uluslar Ligi'nde Belçika'ya konuk oluyor! Maçın heyecanı canlı sohbet ile Misli'de](https://www.hurriyet.com.tr/sporarena/a-milli-takim-uluslar-liginde-belcikaya-konuk-oluyor-macin-heyecani-canli-sohbet-ile-mislide-43326941) — Hürriyet Spor · 2026-10-02T08:03:00+00:00 · turnuva=— · kulüp=—
+- [Belçika - Türkiye maçı ne zaman, saat kaçta ve hangi kanalda CANLI yayınlanacak?](https://www.fotomac.com.tr/millitakim/2026/10/02/belcika-turkiye-maci-ne-zaman-saat-kacta-ve-hangi-kanalda-canli-yayinlanacak) — Fotomaç · 2026-10-02T07:32:05+03:00 · turnuva=— · kulüp=—
+- [Belçika'da siftah zamanı!](https://www.haberturk.com/spor/belcika-turkiye-maci-ne-zaman-saat-kacta-hangi-kanalda-belcika-turkiye-canli-izle-belcika-turkiye-uluslar-ligi-muhtemel-11-ler-3916662) — Haberturk Spor · 2026-10-02T07:22:20+00:00 · turnuva=— · kulüp=—
+- [Rafael Leao'dan Ronaldo açıklaması! 'Bu bizi ilgilendiren bir konu değil'](https://www.hurriyet.com.tr/sporarena/rafael-leaodan-ronaldo-aciklamasi-bu-bizi-ilgilendiren-bir-konu-degil-43326790) — Hürriyet Spor · 2026-10-02T06:54:50+00:00 · turnuva=— · kulüp=—
+- [Ronaldo'suz Portekiz 4 golle kazandı!](https://www.haberturk.com/spor/uefa-uluslar-ligi-3-hafta-maclari-8-karsilasma-ile-devam-etti-3916609) — Haberturk Spor · 2026-10-02T06:29:39+00:00 · turnuva=— · kulüp=—
+- [Almanya Uluslar Ligi'nde 3 puanla tanıştı! Sırbistan'ı yendiler](https://www.fotomac.com.tr/uluslar-ligi/2026/10/01/almanya-uluslar-liginde-3-puanla-tanisti-sirbistani-yendiler) — Fotomaç · 2026-10-02T01:08:40+03:00 · turnuva=— · kulüp=—
+- [A Milli Takım'da Can Uzun şoku!](https://www.fotomac.com.tr/millitakim/2026/10/01/a-milli-takimda-can-uzun-soku) — Fotomaç · 2026-10-02T01:08:15+03:00 · turnuva=— · kulüp=—
+- [İrlanda-Avusturya maçında kazanan çıkmadı!](https://www.fotomac.com.tr/uluslar-ligi/2026/10/01/irlanda-avusturya-macinda-kazanan-cikmadi) — Fotomaç · 2026-10-02T01:07:58+03:00 · turnuva=— · kulüp=—
+- [Galler sahasında Norveç'i mağlup etti!](https://www.fotomac.com.tr/uluslar-ligi/2026/10/01/galler-sahasinda-norveci-maglup-etti) — Fotomaç · 2026-10-02T01:07:52+03:00 · turnuva=— · kulüp=—
+- [Yapay zeka açıkladı! İşte Şampiyonlar Ligi'ni kazanacak Türk takımları](https://www.fotomac.com.tr/galatasaray/2026/09/30/yapay-zeka-acikladi-iste-sampiyonlar-ligini-kazanacak-turk-takimlari) — Fotomaç · 2026-10-02T01:07:50+03:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe
+- [Azerbaycan ile Lihtenştayn golsüz berabere kaldı! (Uluslar Ligi)](https://www.fotomac.com.tr/uluslar-ligi/2026/10/01/azerbaycan-ile-lihtenstayn-golsuz-berabere-kaldi-uluslar-ligi) — Fotomaç · 2026-10-02T01:07:46+03:00 · turnuva=— · kulüp=—
+- [UEFA'dan Galatasaray paylaşımı](https://www.fotomac.com.tr/galatasaray/2026/10/01/uefadan-galatasaray-paylasimi) — Fotomaç · 2026-10-02T01:07:32+03:00 · turnuva=— · kulüp=Galatasaray
 - [DANİMARKA PORTEKİZ MAÇ ÖZETİ: Danimarka Portekiz maçı kaç kaç bitti?](https://www.cnnturk.com/spor/futbol/danimarka-portekiz-maci-hangi-kanalda-danimarka-portekiz-maci-saat-kacta-ne-zaman-3473734) — CNN Türk Spor · 2026-10-01T23:39:16+00:00 · turnuva=— · kulüp=—
-- [İşte Uluslar Ligi'nde gecenin sonuçları!](https://www.haberturk.com/spor/uefa-uluslar-ligi-3-hafta-maclari-8-karsilasma-ile-devam-etti-3916609) — Haberturk Spor · 2026-10-01T22:09:14+00:00 · turnuva=— · kulüp=—
-- [UEFA'dan, Galatasaray'a kutlama paylaşımı](https://www.sabah.com.tr/spor/futbol/2026/10/01/uefadan-galatasaraya-kutlama-paylasimi) — Sabah Spor · 2026-10-01T22:08:33+03:00 · turnuva=— · kulüp=Galatasaray
-- [A Milli Futbol Takımı, Maurice Dufrasne Stadı'nda yürüyüş yaptı](https://www.sabah.com.tr/spor/futbol/2026/10/01/a-milli-futbol-takimi-maurice-dufrasne-stadinda-yuruyus-yapti) — Sabah Spor · 2026-10-01T21:57:43+03:00 · turnuva=— · kulüp=—
+- [Danimarka ile Portekiz 4 gollü maçta yenişemedi!](https://www.hurriyet.com.tr/sporarena/danimarka-ile-portekiz-4-gollu-macta-yenisemedi-43326673) — Hürriyet Spor · 2026-10-01T22:55:23+00:00 · turnuva=— · kulüp=—
 - [Portekiz, Danimarka’yı farklı geçti! İşte atılan tüm goller...](https://www.sabah.com.tr/spor/futbol/2026/10/01/canli-izle-danimarka-portekiz-maci-a2-canli-yayin) — Sabah Spor · 2026-10-01T21:44:29+03:00 · turnuva=— · kulüp=—
-- [GOLLERİ İZLE! Hollanda, Yunanistan karşısında 2-0’dan döndü](https://www.sabah.com.tr/spor/futbol/2026/10/01/a-spor-canli-izle-yunanistan-hollanda-maci-canli-izle) — Sabah Spor · 2026-10-01T21:44:16+03:00 · turnuva=— · kulüp=—
-- [Almanya, Sırbistan karşısında zorlanmadı! İşte maçta atılan goller](https://www.sabah.com.tr/spor/futbol/2026/10/01/a-haber-canli-izle-almanya-sirbistan-maci-canli-yayini) — Sabah Spor · 2026-10-01T21:44:04+03:00 · turnuva=— · kulüp=—
 - [A Milli Futbol Takımı, Maurice Dufrasne Stadı'nda yürüyüş yaptı](https://www.aa.com.tr/tr/spor/a-milli-futbol-takimi-maurice-dufrasne-stadinda-yuruyus-yapti/4075459) — Anadolu Ajansı Spor · 2026-10-01T21:42:41+03:00 · turnuva=— · kulüp=—
 - [Ronaldo'suz Portekiz deplasmanda hata yapmadı: Danimarka’yı devirip 4 puanla liderliği sürdürdü](https://www.takvim.com.tr/uluslar-ligi/2026/10/01/portekiz-danimarkayi-devirip-liderligi-surdurdu) — Takvim Spor · 2026-10-01T21:42:13+03:00 · turnuva=— · kulüp=—
 - [Panzerler 3 puanı kaptı! Almanya Sırbistan'ı 2-0 yendi](https://www.takvim.com.tr/uluslar-ligi/2026/10/01/almanya-sirbistani-2-0-yendi) — Takvim Spor · 2026-10-01T21:40:08+03:00 · turnuva=— · kulüp=—
@@ -36,13 +40,9 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Beşiktaş Erkek Basketbol Takımı, Avrupa Ligi'nde yarın Barcelona'yla karşılaşacak](https://www.aa.com.tr/tr/spor/besiktas-erkek-basketbol-takimi-avrupa-liginde-yarin-barcelonayla-karsilasacak/4074917) — Anadolu Ajansı Spor · 2026-10-01T14:50:44+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Fenerbahçe Tarfin, Avrupa Ligi'nde yarın Dubai Basketbol'u ağırlayacak](https://www.aa.com.tr/tr/spor/fenerbahce-tarfin-avrupa-liginde-yarin-dubai-basketbolu-agirlayacak/4074814) — Anadolu Ajansı Spor · 2026-10-01T13:59:18+03:00 · turnuva=EL · kulüp=Fenerbahçe
 - [Mark van Bommel'den Lukaku ve Trossard açıklaması!](https://www.hurriyet.com.tr/sporarena/mark-van-bommelden-lukaku-ve-trossard-aciklamasi-43326233) — Hürriyet Spor · 2026-10-01T12:51:00+00:00 · turnuva=— · kulüp=—
-- [Türkiye ile Belçika, 15 yıl sonra karşı karşıya](https://www.aa.com.tr/tr/spor/turkiye-ile-belcika-15-yil-sonra-karsi-karsiya/4074550) — Anadolu Ajansı Spor · 2026-10-01T11:03:51+03:00 · turnuva=— · kulüp=—
-- [A Milli Futbol Takımı, 657. maçına Belçika karşısında çıkacak](https://www.aa.com.tr/tr/spor/a-milli-futbol-takimi-657-macina-belcika-karsisinda-cikacak/4074540) — Anadolu Ajansı Spor · 2026-10-01T11:02:31+03:00 · turnuva=— · kulüp=—
-- [Milliler, Belçika maçına hazır!](https://www.haberturk.com/spor/a-milli-futbol-takimi-belcika-macinin-hazirliklarini-tamamladi-3916436) — Haberturk Spor · 2026-10-01T10:49:27+00:00 · turnuva=— · kulüp=—
+- [Türkiye ile Belçika 15 yıl sonra karşı karşıya](https://www.aa.com.tr/tr/spor/turkiye-ile-belcika-15-yil-sonra-karsi-karsiya/4074550) — Anadolu Ajansı Spor · 2026-10-01T11:03:51+03:00 · turnuva=— · kulüp=—
+- [A Milli Futbol Takımı 657. maçına Belçika karşısında çıkacak](https://www.aa.com.tr/tr/spor/a-milli-futbol-takimi-657-macina-belcika-karsisinda-cikacak/4074540) — Anadolu Ajansı Spor · 2026-10-01T11:02:31+03:00 · turnuva=— · kulüp=—
 - [Türkiye'nin UEFA Uluslar Ligi'ndeki üçüncü rakibi Belçika](https://www.aa.com.tr/tr/spor/turkiyenin-uefa-uluslar-ligindeki-ucuncu-rakibi-belcika/4074426) — Anadolu Ajansı Spor · 2026-10-01T09:43:57+03:00 · turnuva=— · kulüp=—
 - [A Milli Takım'da Vincenzo Montella için kritik 180 dakika](https://www.cnnturk.com/spor/futbol/a-milli-takimda-vincenzo-montella-icin-kritik-180-dakika-3473473) — CNN Türk Spor · 2026-10-01T09:21:59+00:00 · turnuva=— · kulüp=—
 - [Türkiye'nin UEFA Uluslar Ligi'ndeki üçüncü rakibi Belçika](https://www.hurriyet.com.tr/sporarena/turkiyenin-uefa-uluslar-ligindeki-ucuncu-rakibi-belcika-43325777) — Hürriyet Spor · 2026-10-01T09:09:10+00:00 · turnuva=— · kulüp=—
 - [15 yıl sonra kritik randevu!](https://www.haberturk.com/spor/turkiye-ile-belcika-15-yil-sonra-karsi-karsiya-3916398) — Haberturk Spor · 2026-10-01T08:08:30+00:00 · turnuva=— · kulüp=—
-- [Uluslar Ligi'nde grup maçlarının heyecanı canlı sohbet ile Misli'de](https://www.hurriyet.com.tr/sporarena/uluslar-liginde-grup-maclarinin-heyecani-canli-sohbet-ile-mislide-43325610) — Hürriyet Spor · 2026-10-01T07:54:24+00:00 · turnuva=— · kulüp=—
-- [Milliler, Belçika'da siftah peşinde!](https://www.haberturk.com/spor/foto/belcika-turkiye-maci-ne-zaman-saat-kacta-hangi-kanalda-belcika-turkiye-uefa-uluslar-ligi-maci-canli-izle-3916373) — Haberturk Spor · 2026-10-01T07:18:06+00:00 · turnuva=— · kulüp=—
-- [İtalya EURO 2032 aday statları sundu](https://www.haberturk.com/spor/italya-euro-2032-icin-uefaya-aday-sehir-ve-statlarini-sundu-3916319) — Haberturk Spor · 2026-09-30T22:05:40+00:00 · turnuva=— · kulüp=—
