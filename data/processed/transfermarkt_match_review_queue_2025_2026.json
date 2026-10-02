@@ -6,27 +6,27 @@
     "snapshot_in_scope_tff_profiles": 585,
     "matched_profiles": 612,
     "verified_matched_profiles": 612,
+    "in_scope_verified_matched_profiles": 542,
     "manual_alias_mapped_profiles": 4,
     "manual_alias_pending_network_verification": 4,
     "operationally_mapped_profiles": 616,
     "operational_in_scope_mapped_profiles": 546,
     "unmatched_profiles": 254,
     "overall_match_rate": 0.703,
-    "in_scope_match_rate": 1.046,
+    "in_scope_match_rate": 0.926,
     "operational_mapping_rate": 0.708,
     "operational_in_scope_mapping_rate": 0.933,
-    "scout_blocking_unmatched": 3,
+    "scout_blocking_unmatched": 0,
     "category_counts": {
-      "OUT_OF_SNAPSHOT_CLUB": 215,
       "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 37,
       "SAME_CLUB_NAME_REVIEW": 1,
-      "POSSIBLE_TRANSFER_OR_CLUB_MISMATCH": 1
+      "POSSIBLE_TRANSFER_OR_CLUB_MISMATCH": 1,
+      "OUT_OF_SNAPSHOT_CLUB": 215
     },
     "review_tier_counts": {
-      "SCOUT_BLOCKING": 3,
       "HIGH_USAGE_UNRESOLVED": 17,
       "ROTATION_USAGE_UNRESOLVED": 10,
-      "OUT_OF_SNAPSHOT": 212,
+      "OUT_OF_SNAPSHOT": 215,
       "NO_MATCH_ACTIVITY": 12
     },
     "rule": "Doğrulanmış kapsama yalnız snapshot eşleşmesi girer; manuel alias kullanımı ayrı izlenir ve ağ teyidi tamamlanana kadar doğrulanmış sayılmaz."
@@ -262,54 +262,6 @@
     }
   ],
   "priority_queue": [
-    {
-      "player_id": "2820848",
-      "tff_name": "KENNETH IMMANUEL PAAL",
-      "tff_club": "ANTALYASPOR A.Ş.",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 4,
-      "blocks_scout_review": true,
-      "review_tier": "SCOUT_BLOCKING",
-      "season_activity": {
-        "starts": 32,
-        "squad_inclusions": 34,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "2693644",
-      "tff_name": "IVO GRBIC",
-      "tff_club": "MISIRLICOMTR FATİH KARAGÜMRÜK A.Ş.",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 4,
-      "blocks_scout_review": true,
-      "review_tier": "SCOUT_BLOCKING",
-      "season_activity": {
-        "starts": 32,
-        "squad_inclusions": 32,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "2821154",
-      "tff_name": "LASZLO BENES",
-      "tff_club": "METRO HOLDİNG KAYSERİSPOR",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 4,
-      "blocks_scout_review": true,
-      "review_tier": "SCOUT_BLOCKING",
-      "season_activity": {
-        "starts": 29,
-        "squad_inclusions": 32,
-        "goals": 7
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
     {
       "player_id": "2685880",
       "tff_name": "JUAN SANTOS DA SILVA",
@@ -804,6 +756,38 @@
       "action": "Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir."
     },
     {
+      "player_id": "2820848",
+      "tff_name": "KENNETH IMMANUEL PAAL",
+      "tff_club": "ANTALYASPOR A.Ş.",
+      "category": "OUT_OF_SNAPSHOT_CLUB",
+      "priority_rank": 5,
+      "blocks_scout_review": false,
+      "review_tier": "OUT_OF_SNAPSHOT",
+      "season_activity": {
+        "starts": 32,
+        "squad_inclusions": 34,
+        "goals": 0
+      },
+      "candidate": null,
+      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
+    },
+    {
+      "player_id": "2693644",
+      "tff_name": "IVO GRBIC",
+      "tff_club": "MISIRLICOMTR FATİH KARAGÜMRÜK A.Ş.",
+      "category": "OUT_OF_SNAPSHOT_CLUB",
+      "priority_rank": 5,
+      "blocks_scout_review": false,
+      "review_tier": "OUT_OF_SNAPSHOT",
+      "season_activity": {
+        "starts": 32,
+        "squad_inclusions": 32,
+        "goals": 0
+      },
+      "candidate": null,
+      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
+    },
+    {
       "player_id": "2294192",
       "tff_name": "STEFANO WILFRED DENSWIL",
       "tff_club": "METRO HOLDİNG KAYSERİSPOR",
@@ -815,6 +799,22 @@
         "starts": 31,
         "squad_inclusions": 32,
         "goals": 1
+      },
+      "candidate": null,
+      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
+    },
+    {
+      "player_id": "2821154",
+      "tff_name": "LASZLO BENES",
+      "tff_club": "METRO HOLDİNG KAYSERİSPOR",
+      "category": "OUT_OF_SNAPSHOT_CLUB",
+      "priority_rank": 5,
+      "blocks_scout_review": false,
+      "review_tier": "OUT_OF_SNAPSHOT",
+      "season_activity": {
+        "starts": 29,
+        "squad_inclusions": 32,
+        "goals": 7
       },
       "candidate": null,
       "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
@@ -4482,54 +4482,5 @@
       "action": "Manuel eşleme operasyonda kullanılıyor; Transfermarkt profil bağlantısı ile ağ teyidi bekleniyor."
     }
   ],
-  "scout_blocking_queue": [
-    {
-      "player_id": "2820848",
-      "tff_name": "KENNETH IMMANUEL PAAL",
-      "tff_club": "ANTALYASPOR A.Ş.",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 4,
-      "blocks_scout_review": true,
-      "review_tier": "SCOUT_BLOCKING",
-      "season_activity": {
-        "starts": 32,
-        "squad_inclusions": 34,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "2693644",
-      "tff_name": "IVO GRBIC",
-      "tff_club": "MISIRLICOMTR FATİH KARAGÜMRÜK A.Ş.",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 4,
-      "blocks_scout_review": true,
-      "review_tier": "SCOUT_BLOCKING",
-      "season_activity": {
-        "starts": 32,
-        "squad_inclusions": 32,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    },
-    {
-      "player_id": "2821154",
-      "tff_name": "LASZLO BENES",
-      "tff_club": "METRO HOLDİNG KAYSERİSPOR",
-      "category": "OUT_OF_SNAPSHOT_CLUB",
-      "priority_rank": 4,
-      "blocks_scout_review": true,
-      "review_tier": "SCOUT_BLOCKING",
-      "season_activity": {
-        "starts": 29,
-        "squad_inclusions": 32,
-        "goals": 7
-      },
-      "candidate": null,
-      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
-    }
-  ]
+  "scout_blocking_queue": []
 }

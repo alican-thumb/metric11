@@ -8,18 +8,15 @@
 - Ağ teyidi bekleyen manuel eşleme: 4
 - Çözülmemiş profil: 254
 - Doğrulanmış genel eşleşme oranı: %70.3
-- Doğrulanmış snapshot içi eşleşme oranı: %104.6
+- Doğrulanmış snapshot içi eşleşme oranı: %92.6
 - Manuel eşleme dahil kullanılabilir snapshot içi kapsama: %93.3
-- Scout incelemesini bloke eden eşleşmeyen oyuncu: 3
-- Sınıf dağılımı: {'OUT_OF_SNAPSHOT_CLUB': 215, 'NO_RELIABLE_CANDIDATE_IN_SNAPSHOT': 37, 'SAME_CLUB_NAME_REVIEW': 1, 'POSSIBLE_TRANSFER_OR_CLUB_MISMATCH': 1}
-- Kullanım önceliği dağılımı: {'SCOUT_BLOCKING': 3, 'HIGH_USAGE_UNRESOLVED': 17, 'ROTATION_USAGE_UNRESOLVED': 10, 'OUT_OF_SNAPSHOT': 212, 'NO_MATCH_ACTIVITY': 12}
+- Scout incelemesini bloke eden eşleşmeyen oyuncu: 0
+- Sınıf dağılımı: {'NO_RELIABLE_CANDIDATE_IN_SNAPSHOT': 37, 'SAME_CLUB_NAME_REVIEW': 1, 'POSSIBLE_TRANSFER_OR_CLUB_MISMATCH': 1, 'OUT_OF_SNAPSHOT_CLUB': 215}
+- Kullanım önceliği dağılımı: {'HIGH_USAGE_UNRESOLVED': 17, 'ROTATION_USAGE_UNRESOLVED': 10, 'OUT_OF_SNAPSHOT': 215, 'NO_MATCH_ACTIVITY': 12}
 - Kural: Doğrulanmış kapsama yalnız snapshot eşleşmesi girer; manuel alias kullanımı ayrı izlenir ve ağ teyidi tamamlanana kadar doğrulanmış sayılmaz.
 
 ## Scout Bloke Eden Kuyruk
 
-- KENNETH IMMANUEL PAAL (ANTALYASPOR A.Ş.): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=SCOUT_BLOCKING, ilk11=32, gol=0, scout_blok=True, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- IVO GRBIC (MISIRLICOMTR FATİH KARAGÜMRÜK A.Ş.): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=SCOUT_BLOCKING, ilk11=32, gol=0, scout_blok=True, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
-- LASZLO BENES (METRO HOLDİNG KAYSERİSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=SCOUT_BLOCKING, ilk11=29, gol=7, scout_blok=True, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 
 ## Manuel Eşleme Ağ Teyidi Bekleyenler
 
@@ -98,7 +95,7 @@
 
 ### ANTALYASPOR A.Ş.
 
-- KENNETH IMMANUEL PAAL (ANTALYASPOR A.Ş.): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=SCOUT_BLOCKING, ilk11=32, gol=0, scout_blok=True, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
+- KENNETH IMMANUEL PAAL (ANTALYASPOR A.Ş.): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=32, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 - ALEXANDER GERARD VAN DE STREEK (ANTALYASPOR A.Ş.): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=28, gol=6, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 - BÜNYAMİN BALCI (ANTALYASPOR A.Ş.): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=25, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 - SONER DİKMEN (ANTALYASPOR A.Ş.): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=25, gol=4, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
@@ -304,8 +301,8 @@
 
 ### METRO HOLDİNG KAYSERİSPOR
 
-- LASZLO BENES (METRO HOLDİNG KAYSERİSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=SCOUT_BLOCKING, ilk11=29, gol=7, scout_blok=True, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 - STEFANO WILFRED DENSWIL (METRO HOLDİNG KAYSERİSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=31, gol=1, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
+- LASZLO BENES (METRO HOLDİNG KAYSERİSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=29, gol=7, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 - LIONEL JULES CAROLE (METRO HOLDİNG KAYSERİSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=23, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 - SEMİH GÜLER (METRO HOLDİNG KAYSERİSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=22, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 - GERMAN ONUGKHA (METRO HOLDİNG KAYSERİSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=21, gol=8, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
@@ -340,7 +337,7 @@
 
 ### MISIRLICOMTR FATİH KARAGÜMRÜK A.Ş.
 
-- IVO GRBIC (MISIRLICOMTR FATİH KARAGÜMRÜK A.Ş.): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=SCOUT_BLOCKING, ilk11=32, gol=0, scout_blok=True, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
+- IVO GRBIC (MISIRLICOMTR FATİH KARAGÜMRÜK A.Ş.): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=32, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 - SERGIO ANTONIO DA LUZ JUNIOR (MISIRLICOMTR FATİH KARAGÜMRÜK A.Ş.): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=26, gol=8, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 - RAMAZAN CİVELEK (MISIRLICOMTR FATİH KARAGÜMRÜK A.Ş.): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=25, gol=1, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 - RICARDO DE SOUSA ESGAIO (MISIRLICOMTR FATİH KARAGÜMRÜK A.Ş.): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=24, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.

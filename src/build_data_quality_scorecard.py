@@ -185,7 +185,7 @@ def transfermarkt_mapping_check() -> Check | None:
     return Check(
         area="player_profiles",
         metric="tff_transfermarkt_in_scope_match_rate_pct",
-        value={"matched": summary.get("matched_profiles", 0), "in_scope": in_scope, "pct": pct},
+        value={"matched": summary.get("in_scope_verified_matched_profiles", summary.get("matched_profiles", 0)), "in_scope": in_scope, "pct": pct},
         status=status,
         priority="HIGH" if status != "PASS" else "LOW",
         recommendation="Snapshot kapsamındaki eşleşmeyen oyuncular alias/transfer inceleme kuyruğunda doğrulanmadan piyasa değeri veya pozisyon olarak kullanılmamalı.",

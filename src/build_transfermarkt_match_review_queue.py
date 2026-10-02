@@ -91,6 +91,10 @@ def build_queue(profiles: list[dict], tm_payload: dict, scout_quality: dict, lea
     categories = Counter(item["category"] for item in queue)
     review_tiers = Counter(item["review_tier"] for item in queue)
     in_scope = [profile for profile in profiles if (normalize_team_name(profile.get("club")) or "") in clubs]
+    # Pay ve payda aynı küme olmalı: eskiden payda in_scope, pay TÜM matched'di →
+    # oran %104.6 gibi %100 üstü çıkıyordu (snapshot dışı kulüplerde eşleşenler
+    # de sayılıyordu). 2026-10-02.
+    in_scope_matched = [profile for profile in in_scope if is_verified_match(profile)]
     in_scope_mapped = [
         profile for profile in in_scope if is_verified_match(profile) or is_manual_mapping(profile)
     ]
@@ -103,13 +107,14 @@ def build_queue(profiles: list[dict], tm_payload: dict, scout_quality: dict, lea
             "snapshot_in_scope_tff_profiles": len(in_scope),
             "matched_profiles": len(matched),
             "verified_matched_profiles": len(matched),
+            "in_scope_verified_matched_profiles": len(in_scope_matched),
             "manual_alias_mapped_profiles": len(manual_mapped),
             "manual_alias_pending_network_verification": len(manual_verification_queue),
             "operationally_mapped_profiles": len(matched) + len(manual_mapped),
             "operational_in_scope_mapped_profiles": len(in_scope_mapped),
             "unmatched_profiles": len(unmatched),
             "overall_match_rate": rate(len(matched), len(profiles)),
-            "in_scope_match_rate": rate(len(matched), len(in_scope)),
+            "in_scope_match_rate": rate(len(in_scope_matched), len(in_scope)),
             "operational_mapping_rate": rate(len(matched) + len(manual_mapped), len(profiles)),
             "operational_in_scope_mapping_rate": rate(len(in_scope_mapped), len(in_scope)),
             "scout_blocking_unmatched": sum(1 for item in queue if item["blocks_scout_review"]),
