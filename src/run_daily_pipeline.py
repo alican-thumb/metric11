@@ -157,7 +157,7 @@ NETWORK_COMMANDS = [
         "--output", "data/processed/tm_squad_changes_2026_2027.json",
         "--season", "2026_2027",
     ],
-    ["python", "-m", "src.collect_worldcup_fixtures"],
+    # collect_worldcup_fixtures kaldırıldı: turnuva Temmuz 2026'da bitti, veri sabit.
     ["python", "-m", "src.collect_european_fixtures"],
     ["python", "-m", "src.collect_domestic_league_form"],
     ["python", "-m", "src.collect_national_team_form"],

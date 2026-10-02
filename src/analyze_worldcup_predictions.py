@@ -472,8 +472,10 @@ def main() -> None:
             pred_entry = analyze_match(match)
             entry["prediction"] = pred_entry["prediction"]
             if has_result:
-                entry = _enrich_with_result(entry, {})  # type: ignore[arg-type]
-                # manuel outcome hesapla
+                # Eskiden burada _enrich_with_result(entry, {}) çağrılıyordu: boş fikstür
+                # sözlüğünde maçı bulamayıp actual_score'u None'a eziyordu — 32 eleme
+                # maçının hiçbirinde skor görünmüyordu (2026-10-02). Outcome zaten
+                # aşağıda elle hesaplanıyor.
                 if score_h > score_a:
                     act = "home"
                 elif score_h == score_a:

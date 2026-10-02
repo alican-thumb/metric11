@@ -43,9 +43,8 @@ jobs:
           FOOTBALL_DATA_KEY: ${{ secrets.FOOTBALL_DATA_KEY }}
           API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
         run: |
-          python -m src.collect_worldcup_fixtures || true
-          python -m src.analyze_worldcup_predictions || true
-          python -m src.build_worldcup_predictions || true
+          # Dünya Kupası 2026 Temmuz'da bitti: fikstür artık çekilmiyor, sayfa
+          # run_daily_pipeline içinde mevcut veriden arşiv olarak üretiliyor.
           python -m src.collect_european_fixtures || true
 
       - name: Maç sonuçlarını çek (hafif TFF fikstür, retry amaçlı)
