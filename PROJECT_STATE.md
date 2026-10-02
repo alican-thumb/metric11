@@ -3363,3 +3363,29 @@ Kullanıcı ChatGPT'nin metric11 için yazdığı bir AI-platform analizini (ML/
 3. **LLM çıktısına kaynak/faithfulness kontrolü eklendi** (`src/analyze_news_with_claude.py`, yeni `_grounded_in_text`): Claude'un haber başlığından çıkardığı `player_name`/`to_club`/`from_club` artık haber metninde gerçekten geçtiği (normalize edilmiş son kelime/soyisim eşleşmesi) doğrulanmadan `transfer_rumors`'a merge edilmiyor — metinde olmayan bir transfer tarafını uydurup Telegram'a kadar sızdırma riskini kapatıyor. Testle doğrulandı (uydurma isim reddedildi, gerçek isim kabul edildi).
 
 Değişen dosyalar: `src/build_weekly_evaluation.py`, `src/build_season_fixture_predictions.py`, `src/analyze_news_with_claude.py`, yeni `data/processed/prediction_snapshots_2026_2027.json` (henüz commit edilmedi). `python -m pytest tests/` (61 passed) ve manuel `build_predictions()`/`build_evaluation()` çalıştırmalarıyla doğrulandı. Atlanan (bilinçli, bu ölçek için aşırı): dataset/feature/model registry, çok ajanlı transfer doğrulama + insan onay akışı, embedding tabanlı tam RAG.
+
+### 2026-10-01 — Günlük heartbeat: pipeline 25 Eylül'de toparlandı, sonra yeniden bayatladı
+
+- Önceki kontrolden sonra veri hattı yeniden çalışmış: 25 Eylül'de full pipeline, refresh ve haber yenileme commitleri oluşmuş; 113 işlenmiş dosya yenilenmiş. Prediction snapshot, Brier score/log loss ve LLM kaynak doğrulama geliştirmeleri commit `2dafc7b3f` ile kayda girmiş.
+- Ancak 26 Eylül 00:00 sonrası `data/processed` altında değişen dosya sayısı **0**; yerel son commit 25 Eylül. Dolayısıyla 1 Ekim itibarıyla yerel veri yaklaşık 6 günlük. `daily_pipeline_run_latest.json` ayrıca hâlâ 14 Eylül tarihli; monitoring manifesti gerçek üretimi temsil etmiyor.
+- Tahmin karnesi 54 maç / 21 doğru (**%38.89**). HIGH 19/9 (**%47.37**), MEDIUM 20/4 (**%20.00**), LOW 15/8 (**%53.33**). Genel Brier **0.6663**, log loss **1.092**. MEDIUM bandı önceki %11.76'dan %20'ye çıktı ama beyan edilen ortalama %46.11'e karşı hâlâ ciddi biçimde aşırı güvenli (`calibration_gap=-0.2611`). Beraberlik yakalama 2/11 (**%18.18**) ile geriledi.
+- Kaynak snapshot'ı 25 Eylül: Google News 150 makale/30 başarılı sorgu, Telegram 6 mesaj/8 kanal, X/Twitter hâlâ `MISSING_CREDENTIALS`; 324 kaynak gözlenmiş, 208'i skorlanmış.
+- Scout kalite raporu değişmemiş ve 14 Eylül tarihli: 310 bağlantı, 17 düşük güvenli pozisyon eşleşmesi. Birleşik availability hâlâ `season=2025-2026`, 21 takım. Rol-pozisyon hard constraint ve 2026-27/18 takım hizalaması yapılmamış görünüyor.
+- **Sıradaki uygulanabilir adım:** Önce GitHub Actions dakika kotasının 1 Ekim'de sıfırlanıp sıfırlanmadığını ve 26 Eylül sonrası workflow'ların neden çalışmadığını doğrula; pipeline'ı yeniden başlat ve manifest üretimini düzelt. Sonrasında MEDIUM bandını kullanıcı arayüzünde LOW/kararsız olarak göster, beraberlik modelini maç bazlı hata listesiyle yeniden kalibre et ve scout rol-pozisyon filtresini zorunlu hale getir.
+
+### 2026-10-02 — Durum değerlendirmesi: 1 Ekim "bayatladı" alarmı yanlıştı; asıl risk Ekim sonu Actions kotası
+
+- **Düzeltme:** 1 Ekim heartbeat'indeki "26 Eylül sonrası pipeline çalışmadı" yanlış — yalnız yerel kopya çekilmemişti. `git fetch` + `merge --ff-only` sonrası: CI 1-2 Ekim boyunca tüm runlarda başarılı, son bot commit 2026-10-02 16:19Z. Gerçek kesinti **28 Eylül 13:46Z – 30 Eylül 22:11Z** arası (runlar 3-4 sn'de düşmüş → Actions dakika kotası doldu); 1 Ekim kota sıfırlanınca kendiliğinden düzeldi. Bu aralıkta lig maçı yoktu (milli ara), skor kaybı yok.
+- **Kalıcı risk:** Son 30 günde ~2090 dk (günde ~65-70 dk) — 16 Eylül'deki kopya-adım temizliğine rağmen hâlâ 2000 dk limitinin üstünde. Müdahale edilmezse **~29-30 Ekim'de tekrar duracak** (lig haftası ortasında). Seçenekler: news-refresh 6→4/gün, full pipeline süresini (≈23 dk) kısaltmak, repo public, veya GitHub Pro.
+- Karne değişmedi (hafta 7 = 9-12 Ekim): 54 maç %38.9, HIGH %47.4, MEDIUM %20 (gap -0.26), LOW %53.3, beraberlik 2/11, Brier 0.666.
+- Hâlâ açık: scout blueprint'te kaleciler (Lis, Gianniotis vb.) `FB_TWO_WAY` bek rolünde öneriliyor; availability `2025-2026`; Dünya Kupası KO 32 maçın 0'ı sonuçlu; X/Twitter `MISSING_CREDENTIALS`; `predict-app/tmp-seed-accounts.mjs` untracked.
+
+### 2026-10-02 — Repo public yapıldı: güvenlik denetimi
+
+Kullanıcı `alican-thumb/metric11`'i public yaptı (amaç: Actions dakikaları public repoda ücretsiz → Ekim sonu kota kesintisi riski ortadan kalktı).
+
+- **Git geçmişi taraması (tüm branch'ler, `data/processed` dahil):** Anthropic/GitHub/Clerk/Neon/Postgres/Telegram bot/Google/Vercel/AWS anahtar kalıpları için tarandı — **gerçek sızıntı yok**. Tek eşleşme PROJECT_STATE'teki `sk_live_` kelimesini anan dokümantasyon cümlesi. `.env*` her zaman ignore'da; `.env.template`/`predict-app/.env.example` boş şablon. `data/manual/extra_ca_certs.pem` public GlobalSign kök sertifikası (sır değil). Kodda sabit şifre/e-posta yok.
+- **Workflow'lar:** üçü de yalnız `schedule` + `workflow_dispatch` — fork PR'ları secret'lara erişemez. Varsayılan workflow token yetkisi `read`, fork PR onayı `first_time_contributors`.
+- **Açıldı:** GitHub secret scanning + push protection (public repoda ücretsiz).
+- **`predict-app/.gitignore`'a `tmp-*` eklendi:** untracked `tmp-seed-accounts.mjs` kullanıcının e-postasını içeriyor, yanlışlıkla commit'lenmesin.
+- **AÇIK RİSK (kullanıcı kararı):** `admin.html` istemci taraflı "parola kapısı" kullanıyor — `sha256("email:şifre")` tuzsuz olarak HTML'e gömülü, içerik zaten HTML'de (kapı göstermelik). Hash canlı sitede zaten herkese açıktı, ama artık git geçmişinde de kalıcı; zayıf/yeniden kullanılan bir şifreyse çevrimdışı kırılabilir. Kapıyı kaldırma değişikliği otomatik onay sisteminde reddedildi, kullanıcıya bırakıldı. Öneri: o şifre başka yerde kullanılıyorsa değiştirilsin; kapı kaldırılsın veya Vercel tarafında gerçek koruma konsun.
