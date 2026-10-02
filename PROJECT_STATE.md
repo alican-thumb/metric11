@@ -3422,3 +3422,8 @@ Kullanıcı `alican-thumb/metric11`'i public yaptı (amaç: Actions dakikaları 
 ### 2026-10-02 — Admin şifresi sıfırlandı
 
 Kullanıcı admin sayfasına giremiyordu (kendi çalıştırdığı sıfırlama komutu bir hash üretmişti ama girdiği bilgiyle eşleşmedi). Kullanıcı isteğiyle rastgele 20 karakterlik yeni şifre üretildi, e-posta `alicanakyol10@gmail.com`; yalnız `sha256(email:şifre)` GitHub Secrets'taki `ADMIN_CREDENTIALS_HASH`'e yazıldı, refresh.yml tetiklendi, canlı `admin.html`'deki hash'in yeniyle eşleştiği doğrulandı. Şifre bu dosyaya/repoya YAZILMADI (yalnız kullanıcıya sohbette iletildi). Kilit hâlâ istemci taraflı ve göstermelik — bkz. aynı günün güvenlik kaydı.
+
+### 2026-10-02 — tahmin.metric11.com deploy'ları Node 20 yüzünden düşüyordu
+
+- `metric11-tahmin` Vercel projesi ayarında Node.js `20.x` kalmıştı; Vercel 20.x'i kapattığı için son 3 production deploy 7-8 sn'de "Node.js Version 20.x is discontinued" hatasıyla düştü (canlıda 4 gün önceki sağlam deploy servis edilmeye devam ettiği için site kapanmadı). `package.json`'da `engines` yok, sürüm tamamen proje ayarından geliyordu.
+- Düzeltme: `vercel api PATCH /v9/projects/<id> nodeVersion=24.x` (Vercel MCP bu projeyi göremedi, CLI kullanıldı) + son deploy `vercel redeploy --target production` → 48 sn'de Ready, `tahmin.metric11.com`'a aliaslandı; `/`, `/kadro`, `/taraftar`, `/api/fanclub` 200. Ana site `metric11` zaten 24.x'teydi.
