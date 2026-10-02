@@ -3389,3 +3389,9 @@ Kullanıcı `alican-thumb/metric11`'i public yaptı (amaç: Actions dakikaları 
 - **Açıldı:** GitHub secret scanning + push protection (public repoda ücretsiz).
 - **`predict-app/.gitignore`'a `tmp-*` eklendi:** untracked `tmp-seed-accounts.mjs` kullanıcının e-postasını içeriyor, yanlışlıkla commit'lenmesin.
 - **AÇIK RİSK (kullanıcı kararı):** `admin.html` istemci taraflı "parola kapısı" kullanıyor — `sha256("email:şifre")` tuzsuz olarak HTML'e gömülü, içerik zaten HTML'de (kapı göstermelik). Hash canlı sitede zaten herkese açıktı, ama artık git geçmişinde de kalıcı; zayıf/yeniden kullanılan bir şifreyse çevrimdışı kırılabilir. Kapıyı kaldırma değişikliği otomatik onay sisteminde reddedildi, kullanıcıya bırakıldı. Öneri: o şifre başka yerde kullanılıyorsa değiştirilsin; kapı kaldırılsın veya Vercel tarafında gerçek koruma konsun.
+
+### 2026-10-02 — Scout: rol → pozisyon hard constraint
+
+- **Kök neden:** `build_team_scout_blueprints.py::candidate_matches_role` ilk satırda `candidate.role_key == role_key` ise pozisyona bakmadan `True` dönüyordu. Lig proxy adaylarına (`league_proxy_roles`, sadece gol/kart/maç sayısından) `role_key` zaten o rol olarak atandığı için Transfermarkt'ta "Goalkeeper" olan Lis/Gianniotis/Grbic "Bek" rolüne, stoperler "6 numara"ya, orta sahalar "Kaleci" rolüne giriyordu (önceki çıktıda ~130 çelişkili bağlantı).
+- **Düzeltme:** doğrulanmış pozisyon varsa yalnız `ROLE_POSITION_ALLOWLIST` belirler; pozisyonu bilinmeyen adayda `role_key`'e güvenilmez, sadece `inferred_group/position_group` eşleşmesi kabul edilir. Pozisyonsuz roller (RESALE_VALUE, LOW_RISK_REGULAR) etkilenmez. Aynı fonksiyonu kullanan `build_transfer_recommendation_report` da otomatik düzeldi.
+- **Sonuç:** 62 rol planının hepsi hâlâ 5 adaylı; tüm adayların pozisyonu rolle tutarlı. Scout kalite raporu: düşük güvenli blueprint bağlantısı 17 → **0**. Yeni test: `tests/test_scout_role_position.py` (65 test geçiyor).

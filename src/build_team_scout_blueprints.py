@@ -257,16 +257,18 @@ def build_payload(
 
 
 def candidate_matches_role(candidate: dict, role_key: str) -> bool:
-    # If candidate already validated by position_scout_matrix for this role, trust it
-    if candidate.get("role_key") == role_key:
-        return True
-    # Exact TM position match
     allowed_positions = ROLE_POSITION_ALLOWLIST.get(role_key)
     if not allowed_positions:
         return True
+    # Hard constraint: doğrulanmış pozisyon rolle çelişiyorsa (ör. kaleci → bek)
+    # role_key ne derse desin aday elenir. Proxy adaylara role_key zaten bu rol
+    # olarak atandığı için önce bu kontrol yapılmalı.
     verified_position = candidate.get("verified_position")
-    if verified_position and verified_position in allowed_positions:
-        return True
+    if verified_position:
+        return verified_position in allowed_positions
+    # Pozisyonu bilinmeyen adayda role_key'e güvenilmez: lig proxy'si role_key'i
+    # yalnız gol/kart/maç sayısından atar (ör. kaleci Ivo Grbic → bek). Sadece
+    # pozisyon grubundan doğrulanabilenler geçer.
     # Inferred group fallback (from new position scout matrix)
     inferred_group = candidate.get("inferred_group") or candidate.get("position_group")
     role_group_map = {
