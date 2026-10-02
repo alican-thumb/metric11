@@ -64,13 +64,21 @@ _TEAM_SLUGS: dict[str, str] = {
     "ÇORUM FK": "corumfk",
     "ERZURUMSPOR FK": "erzurumspor",
     "AMED SFK": "amed",
+    # 2026-27 TFF fikstüründeki resmi adlar (2026-10-02): bunlar eşlenmeden golcü
+    # tahmini bu 3 takımın availability dosyasını bulamıyor, haber kaynaklı
+    # sakat/cezalı filtresi hiç uygulanmıyordu.
+    "İSTANBUL BAŞAKŞEHİR FK": "basaksehir",
+    "ARCA ÇORUM FK": "corumfk",
+    "AMED SPORTİF FAALİYETLER": "amed",
 }
 
 
 def team_slug(team: str) -> str:
     if team in _TEAM_SLUGS:
         return _TEAM_SLUGS[team]
-    slug = team.lower().translate(_TR_TABLE)
+    # Önce Türkçe harfleri çevir, sonra küçült: "İ".lower() → "i̇" (i + U+0307)
+    # olduğundan ters sıra "i_stanbul_basaksehi_r" gibi bozuk slug üretiyordu.
+    slug = team.translate(_TR_TABLE).lower()
     slug = re.sub(r"[^a-z0-9]+", "_", slug)
     return slug.strip("_")[:32]
 

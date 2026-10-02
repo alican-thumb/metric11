@@ -62,21 +62,47 @@ def build_all_teams(matches: list[dict], manual_path: Path, news_context: dict |
         md_path.write_text(build_markdown(availability), encoding="utf-8")
 
         summary = availability["summary"]
-        teams_payload[team] = {"slug": slug, "summary": summary, "json_path": str(json_path)}
+        teams_payload[team] = {"slug": slug, "summary": summary, "json_path": json_path.name}
         league_summary["teams"] += 1
         for key in ("matches_with_unavailable", "auto_suspension_entries", "manual_entries",
                     "news_context_entries", "news_intelligence_entries"):
             league_summary[key] += summary.get(key, 0)
         print(f"[{team}] maç={summary['matches']} eksik-sinyalli-maç={summary['matches_with_unavailable']}")
 
+    # Aktif sezon hizalaması (2026-10-02): maç bazlı kart arşivi 2025-26 maçlarından
+    # gelir (arşiv maç önü sayfaları bunu kullanır), ama güncel haber kaynaklı
+    # sakat/cezalı sinyali 2026-27 içindir. 2026-27 kart cezaları ayrıca
+    # preview/probability.py::suspension_edge'de 2026-27 maçlarından hesaplanır.
+    active_slugs = _active_team_slugs()
+    for payload in teams_payload.values():
+        payload["active_in_current_season"] = payload["slug"] in active_slugs
+    league_summary["active_current_season_teams"] = sum(
+        1 for payload in teams_payload.values() if payload["active_in_current_season"]
+    )
     combined = {
-        "season": "2025-2026",
+        "season": "2026-2027",
+        "match_archive_season": "2025-2026",
         "league_summary": league_summary,
         "teams": teams_payload,
     }
     combined_path = PROCESSED_DIR / "player_availability_superlig_2025_2026.json"
     combined_path.write_text(json.dumps(combined, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"Birleşik lig raporu kaydedildi: {combined_path} ({league_summary['teams']} takım)")
+
+
+def _active_team_slugs() -> set[str]:
+    from src.generate_preview_batch import team_slug
+
+    fixture_path = PROCESSED_DIR / "tff_super_lig_fixtures_2026_2027.json"
+    if not fixture_path.exists():
+        return set()
+    fixtures = json.loads(fixture_path.read_text(encoding="utf-8"))
+    return {
+        team_slug(match[side])
+        for week in fixtures.get("weeks", [])
+        for match in week.get("matches", [])
+        for side in ("home_team", "away_team")
+    }
 
 
 def build_availability(matches: list[dict], team: str, manual_path: Path, news_context: dict | None = None, news_intel: dict | None = None) -> dict:
