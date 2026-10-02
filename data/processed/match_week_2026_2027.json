@@ -1,6 +1,6 @@
 {
   "available": true,
-  "generated_at": "2026-10-02T16:19:03.336898",
+  "generated_at": "2026-10-02T20:05:29.073860",
   "week": 7,
   "matches": [
     {
@@ -305,6 +305,38 @@
         "calibration_gap": 0.072,
         "brier_score": 0.727,
         "log_loss": 1.2165
+      }
+    },
+    "pick_side_breakdown": {
+      "home": {
+        "matches": 7,
+        "correct": 4,
+        "accuracy": 0.5714,
+        "actual": {
+          "home": 4,
+          "draw": 2,
+          "away": 1
+        }
+      },
+      "draw": {
+        "matches": 0,
+        "correct": 0,
+        "accuracy": null,
+        "actual": {
+          "home": 0,
+          "draw": 0,
+          "away": 0
+        }
+      },
+      "away": {
+        "matches": 2,
+        "correct": 0,
+        "accuracy": 0.0,
+        "actual": {
+          "home": 2,
+          "draw": 0,
+          "away": 0
+        }
       }
     }
   }

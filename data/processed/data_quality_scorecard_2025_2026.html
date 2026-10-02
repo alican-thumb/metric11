@@ -66,7 +66,7 @@
 
 <ul>
 <li>Ambar: <code>/home/runner/work/metric11/metric11/data/processed/metric11_warehouse.sqlite</code></li>
-<li>Genel skor: 82.1/100</li>
+<li>Genel skor: 87.5/100</li>
 </ul>
 
 <h2>Kontroller</h2>
@@ -106,7 +106,7 @@
 <tr>
 <td>player_profiles</td>
 <td>tff_transfermarkt_in_scope_match_rate_pct</td>
-<td>matched=612, in_scope=585, pct=104.6</td>
+<td>matched=542, in_scope=585, pct=92.6</td>
 <td>✓</td>
 <td>Düşük</td>
 <td>Snapshot kapsamındaki eşleşmeyen oyuncular alias/transfer inceleme kuyruğunda doğrulanmadan piyasa değeri veya pozisyon olarak kullanılmamalı.</td>
@@ -122,9 +122,9 @@
 <tr>
 <td>scouting</td>
 <td>unmatched_players_blocking_scout_review</td>
-<td>3</td>
-<td>✗ Sorun</td>
-<td>Yüksek</td>
+<td>0</td>
+<td>✓</td>
+<td>Düşük</td>
 <td>Scout kuyruğunu bloke eden oyuncular için aynı kulüp Transfermarkt adı veya resmi profil doğrulanmalı; doğrulanmadan rol önerisi yayınlanmamalı.</td>
 </tr>
 <tr>
@@ -186,7 +186,7 @@
 <tr>
 <td>scouting</td>
 <td>low_position_confidence_pct</td>
-<td>low_confidence=17, total=310, pct=5.5</td>
+<td>low_confidence=0, total=310, pct=0.0</td>
 <td>✓</td>
 <td>Orta</td>
 <td>Düşük güvenli scout adayları doğrudan pozisyon, boy, ayak ve aksiyon verisiyle zenginleştirilmeli.</td>
@@ -199,7 +199,6 @@
 <li><strong>Yüksek öncelik</strong> — model / besiktas_display_prediction_accuracy_pct: Ekran ayarı aynı sezonda geliştirildi; yeni sezon veya ayrılmış sezonda sabit kurallarla doğrulanmadan genel başarı iddiası yapılmamalı.</li>
 <li><strong>Yüksek öncelik</strong> — model / draw_recall_pct: Beraberlik sadece çok yüksek risk ve dar olasılık farkında ekran tahminine çekilmeli; diğer durumlarda korumalı senaryo dili kullanılmalı.</li>
 <li><strong>Yüksek öncelik</strong> — player_profiles / manual_alias_pending_network_verification: Operasyonda kullanılan manuel pozisyon ve piyasa değeri eşlemeleri Transfermarkt profil bağlantısıyla doğrulanana kadar teyit bekliyor olarak gösterilmeli.</li>
-<li><strong>Yüksek öncelik</strong> — scouting / unmatched_players_blocking_scout_review: Scout kuyruğunu bloke eden oyuncular için aynı kulüp Transfermarkt adı veya resmi profil doğrulanmalı; doğrulanmadan rol önerisi yayınlanmamalı.</li>
 <li><strong>Orta öncelik</strong> — goal_candidates / top_5_hit_pct: Aday tipleri ayrı backtest edilmeli: primary, penaltı, duran top/defans ve yedek etki.</li>
 <li><strong>Orta öncelik</strong> — goal_candidates / top_8_hit_pct: Aday tipleri ayrı backtest edilmeli: primary, penaltı, duran top/defans ve yedek etki.</li>
 </ul>
@@ -221,19 +220,18 @@
 
 <ul>
 <li>primary+impact_sub: 134 satır, 19 isabet satırı, %14.2</li>
-<li>primary: 103 satır, 11 isabet satırı, %10.7</li>
-<li>impact_sub: 28 satır, 4 isabet satırı, %14.3</li>
-<li>primary+set_piece_defender: 25 satır, 0 isabet satırı, %0.0</li>
+<li>primary: 106 satır, 12 isabet satırı, %11.3</li>
+<li>impact_sub: 26 satır, 4 isabet satırı, %15.4</li>
+<li>primary+set_piece_defender: 24 satır, 0 isabet satırı, %0.0</li>
 <li>unknown: 8 satır, 2 isabet satırı, %25.0</li>
 </ul>
 
 <h2>Scout Pozisyon Güveni</h2>
 
 <ul>
-<li>MEDIUM_DERIVED_ROLE: 203</li>
-<li>HIGH: 58</li>
+<li>MEDIUM_DERIVED_ROLE: 197</li>
+<li>HIGH: 81</li>
 <li>HIGH_EXTERNAL_PROFILE: 32</li>
-<li>LOW_POSITION_UNVERIFIED: 17</li>
 </ul>
 
 <h2>Tablo Kapsamı</h2>
