@@ -3418,3 +3418,7 @@ Kullanıcı `alican-thumb/metric11`'i public yaptı (amaç: Actions dakikaları 
 
 - `build_transfermarkt_match_review_queue.py`: `in_scope_match_rate` payında TÜM doğrulanmış eşleşmeler (snapshot dışı kulüpler dahil), paydasında yalnız snapshot içi profiller vardı → %104.6. Pay artık `in_scope_matched` (aynı küme): **542/585 = %92.6** (PASS). Yeni alan `in_scope_verified_matched_profiles`; `build_data_quality_scorecard.py` bunu gösteriyor. Scorecard çıktısı yerelde mutlak yol yazdığı için commit'lenmedi, CI yeniden üretecek.
 - Not (yanlış alarm kaynağı): `daily_pipeline_run_latest.*` `.gitignore`'da — yerel kopyada hep eski görünmesi beklenen davranış, heartbeat'lerde "manifest bayat" bulgusu olarak raporlanmamalı.
+
+### 2026-10-02 — Admin şifresi sıfırlandı
+
+Kullanıcı admin sayfasına giremiyordu (kendi çalıştırdığı sıfırlama komutu bir hash üretmişti ama girdiği bilgiyle eşleşmedi). Kullanıcı isteğiyle rastgele 20 karakterlik yeni şifre üretildi, e-posta `alicanakyol10@gmail.com`; yalnız `sha256(email:şifre)` GitHub Secrets'taki `ADMIN_CREDENTIALS_HASH`'e yazıldı, refresh.yml tetiklendi, canlı `admin.html`'deki hash'in yeniyle eşleştiği doğrulandı. Şifre bu dosyaya/repoya YAZILMADI (yalnız kullanıcıya sohbette iletildi). Kilit hâlâ istemci taraflı ve göstermelik — bkz. aynı günün güvenlik kaydı.
