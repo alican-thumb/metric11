@@ -133,6 +133,27 @@ def _confidence_breakdown(evaluations: list[dict]) -> dict:
     return breakdown
 
 
+def _pick_side_breakdown(evaluations: list[dict]) -> dict:
+    """Seçilen tarafa (ev/beraberlik/deplasman) göre isabet ve gerçekleşen sonuç dağılımı.
+
+    2026-10-02 hata dökümü: MEDIUM+HIGH bandında deplasman seçimleri 13 maçta 1 kez
+    tuttu, ev sahibi 10 kez kazandı. Ev avantajı katsayısını (0.12-0.42) taramak bunu
+    düzeltmedi (backtest'i bozdu) — sorun sezon başı takım gücünün geçen sezondan
+    taşınması. Bu tablo, bu örüntünün sürüp sürmediğini haftadan haftaya görünür kılar.
+    """
+    out = {}
+    for side in ("home", "draw", "away"):
+        items = [e for e in evaluations if e.get("predicted") == side]
+        n = len(items)
+        out[side] = {
+            "matches": n,
+            "correct": sum(1 for e in items if e["correct"]),
+            "accuracy": round(sum(1 for e in items if e["correct"]) / n, 4) if n else None,
+            "actual": {a: sum(1 for e in items if e["actual"] == a) for a in ("home", "draw", "away")},
+        }
+    return out
+
+
 def _summarize(evaluations: list[dict]) -> dict:
     total = len(evaluations)
     correct = sum(1 for e in evaluations if e["correct"])
@@ -153,6 +174,7 @@ def _summarize(evaluations: list[dict]) -> dict:
         "brier_score": round(sum(brier_score(e) for e in evaluations) / total, 4) if total else None,
         "log_loss": round(sum(log_loss(e) for e in evaluations) / total, 4) if total else None,
         "confidence_breakdown": _confidence_breakdown(evaluations),
+        "pick_side_breakdown": _pick_side_breakdown(evaluations),
     }
 
 
@@ -224,6 +246,24 @@ def _confidence_breakdown_lines(breakdown: dict) -> list[str]:
     return lines
 
 
+def _pick_side_lines(breakdown: dict) -> list[str]:
+    lines = [
+        "| Seçim | Maç | İsabet | Gerçekleşen (Ev / X / Dep) |",
+        "| --- | --- | --- | --- |",
+    ]
+    for side in ("home", "draw", "away"):
+        b = breakdown.get(side) or {}
+        n = b.get("matches") or 0
+        if not n:
+            continue
+        a = b.get("actual", {})
+        lines.append(
+            f"| {_PICK_LABEL.get(side, side)} | {n} | {b['correct']}/{n} ({_pct(b['accuracy'])}) | "
+            f"{a.get('home', 0)} / {a.get('draw', 0)} / {a.get('away', 0)} |"
+        )
+    return lines
+
+
 def build_markdown(payload: dict) -> str:
     s = payload["summary"]
     lines = [
@@ -250,6 +290,14 @@ def build_markdown(payload: dict) -> str:
         "backtest'inden — küçük örneklemli erken hafta sapmalarını buna göre yorumlayın._",
         "",
         *_confidence_breakdown_lines(s.get("confidence_breakdown", {})),
+        "",
+        "### Seçilen tarafa göre isabet",
+        "",
+        "_Model hangi tarafı seçtiğinde ne oldu? Belirli bir seçimde (ör. deplasman favorisi) "
+        "sistematik hata varsa burada görünür. MEDIUM bandı canlı isabeti %35'in altında "
+        "kaldıkça fikstür sayfasında bu bant \"Kararsız\" olarak gösterilir._",
+        "",
+        *_pick_side_lines(s.get("pick_side_breakdown", {})),
         "",
     ]
     if s["evaluated_matches"] == 0:

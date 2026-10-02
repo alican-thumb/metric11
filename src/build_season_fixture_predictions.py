@@ -297,7 +297,7 @@ footer a { color:#1e3a5f; }
 """
 
 
-def _match_card(m: dict, signals: dict | None = None, scorers: dict | None = None) -> str:
+def _match_card(m: dict, signals: dict | None = None, scorers: dict | None = None, medium_unreliable: bool = False) -> str:
     if m.get("is_played"):
         return f"""<div class="match-card">
   <div class="mc-date">{escape(_fmt_date(m['date_time']))}</div>
@@ -397,7 +397,7 @@ def _match_card(m: dict, signals: dict | None = None, scorers: dict | None = Non
   {ref_html}
   {susp_html}
   {scorers_html}
-  <div class="mc-conf">Güven: {escape(m['data_confidence'])}</div>
+  <div class="mc-conf">Güven: {escape(_confidence_text(m['data_confidence'], medium_unreliable))}</div>
 </div>"""
 
 
@@ -409,6 +409,37 @@ def _load_match_signals() -> dict:
         return json.loads(path.read_text(encoding="utf-8")).get("matches", {})
     except json.JSONDecodeError:
         return {}
+
+
+# MEDIUM bandı canlı isabeti bu eşiğin altındaysa (yeterli örneklemle) kullanıcıya
+# "Orta" yerine "Kararsız" gösterilir — model ~%46 olasılık ilan ederken 2026-27'de
+# gerçekleşen %12-20 aralığında kaldı (PROJECT_STATE 2026-09-14/10-02). Etiket yalnız
+# görüntüleme; data_confidence alanı ve haftalık karne bandları değişmez. Bant
+# toparlanırsa etiket kendiliğinden "Orta"ya döner.
+MEDIUM_UNRELIABLE_MIN_MATCHES = 15
+MEDIUM_UNRELIABLE_MAX_ACCURACY = 0.35
+WEEKLY_EVAL_PATH = PROCESSED_DIR / "weekly_evaluation_2026_2027.json"
+
+
+def _medium_band_unreliable() -> bool:
+    if not WEEKLY_EVAL_PATH.exists():
+        return False
+    try:
+        band = json.loads(WEEKLY_EVAL_PATH.read_text(encoding="utf-8"))["summary"]["confidence_breakdown"]["MEDIUM"]
+    except (json.JSONDecodeError, KeyError, TypeError):
+        return False
+    return band.get("matches", 0) >= MEDIUM_UNRELIABLE_MIN_MATCHES and band.get("accuracy", 1) < MEDIUM_UNRELIABLE_MAX_ACCURACY
+
+
+def _confidence_text(label: str, medium_unreliable: bool) -> str:
+    if label == "MEDIUM":
+        return "Kararsız" if medium_unreliable else "Orta"
+    return {
+        "HIGH": "Yüksek",
+        "LOW": "Düşük",
+        "LOW_NEW_TEAM": "Düşük (yeni takım)",
+        "PLAYED": "Oynandı",
+    }.get(label, label)
 
 
 def _load_goal_scorers() -> dict:
@@ -424,6 +455,7 @@ def _load_goal_scorers() -> dict:
 def build_html(payload: dict) -> str:
     signals = _load_match_signals()
     scorers = _load_goal_scorers()
+    medium_unreliable = _medium_band_unreliable()
     nav_items = nav_links_html("season_fixture_predictions_2026_2027.html")
     stat_bar = (
         f'<div class="stat-chip"><div class="v">{payload["total_matches"]}</div><div class="l">Toplam Maç</div></div>'
@@ -432,7 +464,7 @@ def build_html(payload: dict) -> str:
     )
     weeks_html = "\n".join(
         f'<div class="week-header">Hafta {week["week"]}</div>'
-        f'<div class="match-grid">{"".join(_match_card(m, signals, scorers) for m in week["matches"])}</div>'
+        f'<div class="match-grid">{"".join(_match_card(m, signals, scorers, medium_unreliable) for m in week["matches"])}</div>'
         for week in payload["weeks"]
     )
     return f"""<!doctype html>

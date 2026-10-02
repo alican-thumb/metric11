@@ -21,6 +21,16 @@ _"Beyan edilen ort. olasılık" ile "İsabet" arasındaki fark büyükse (özell
 | MEDIUM | 20 | 4/20 (%20) | %46 | 0.700 | 1.129 | %54 / 0.619 / 1.032 |
 | LOW | 15 | 8/15 (%53) | %39 | 0.669 | 1.108 | %48 / 0.670 / 1.103 |
 
+### Seçilen tarafa göre isabet
+
+_Model hangi tarafı seçtiğinde ne oldu? Belirli bir seçimde (ör. deplasman favorisi) sistematik hata varsa burada görünür. MEDIUM bandı canlı isabeti %35'in altında kaldıkça fikstür sayfasında bu bant "Kararsız" olarak gösterilir._
+
+| Seçim | Maç | İsabet | Gerçekleşen (Ev / X / Dep) |
+| --- | --- | --- | --- |
+| Ev | 33 | 15/33 (%45) | 15 / 6 / 12 |
+| Beraberlik | 3 | 2/3 (%67) | 0 / 2 / 1 |
+| Deplasman | 18 | 4/18 (%22) | 11 / 3 / 4 |
+
 ## Hafta 6 — 4/9 isabet (%44)
 
 | Maç | Skor | Tahmin | Sonuç | Güven |
