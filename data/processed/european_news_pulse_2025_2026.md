@@ -1,17 +1,19 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-10-03T21:14:24.379989+00:00
-Toplam ilgili haber: 73
+Üretim zamanı: 2026-10-04T00:38:46.074358+00:00
+Toplam ilgili haber: 74
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [İskoçya, Kuzey Makedonya karşısında 3 puanı kaptı](https://www.aksam.com.tr/spor/iskocya-kuzey-makedonya-karsisinda-3-puani-kapti/haber-1703412) — Aksam Spor · 2026-10-04T01:34:00+03:00 · turnuva=— · kulüp=—
+- [UEFA Uluslar Ligi'nde yıldızlar sahne aldı! İşte alınan sonuçlar](https://www.takvim.com.tr/uluslar-ligi/2026/10/03/uefa-uluslar-liginde-gol-dolu-gece-alinan-sonuclar) — Takvim Spor · 2026-10-04T01:23:02+03:00 · turnuva=— · kulüp=—
+- [İsrailli gazetecinin iddiası sonrası İrlanda'nın basın toplantısı yarıda kaldı!](https://www.sabah.com.tr/spor/futbol/2026/10/03/israilli-gazetecinin-iddiasi-sonrasi-irlandanin-basin-toplantisi-yarida-kaldi) — Sabah Spor · 2026-10-04T00:41:08+03:00 · turnuva=— · kulüp=—
+- [İşte UEFA Uluslar Ligi'nde gecenin sonuçları...](https://www.aksam.com.tr/spor/iste-uefa-uluslar-liginde-gecenin-sonuclari/haber-1703399) — Aksam Spor · 2026-10-04T00:23:00+03:00 · turnuva=— · kulüp=—
+- [UEFA Uluslar Ligi 8 maçla devam etti](https://www.aa.com.tr/tr/spor/uefa-uluslar-ligi-8-macla-devam-etti/4077312) — Anadolu Ajansı Spor · 2026-10-04T00:06:12+03:00 · turnuva=— · kulüp=—
 - [İspanya, Çekya'yı 3 golle geçti](https://www.aksam.com.tr/spor/ispanya-cekyayi-3-golle-gecti/haber-1703398) — Aksam Spor · 2026-10-03T23:53:00+03:00 · turnuva=— · kulüp=—
-- [Maç öncesi basın toplantısı yarıda kaldı! İsrailli gazeteciden provokatif soru...](https://www.aksam.com.tr/spor/mac-oncesi-basin-toplantisi-yarida-kaldi-israilli-gazeteciden-provokatif-soru/haber-1703389) — Aksam Spor · 2026-10-03T23:06:00+03:00 · turnuva=— · kulüp=—
 - [Belarus sahasında 4 golle kazandı!](https://www.fotomac.com.tr/uluslar-ligi/2026/10/03/belarus-sahasinda-4-golle-kazandi) — Fotomaç · 2026-10-03T22:50:51+03:00 · turnuva=— · kulüp=—
-- [Ümit Milli Takım, Macaristan mesaisine devam etti](https://www.aksam.com.tr/spor/umit-milli-takim-macaristan-mesaisine-devam-etti/haber-1703387) — Aksam Spor · 2026-10-03T22:50:00+03:00 · turnuva=— · kulüp=—
 - [Estonya, Lüksemburg'u tek golle geçti](https://www.fotomac.com.tr/uluslar-ligi/2026/10/03/estonya-luksemburgu-tek-golle-gecti) — Fotomaç · 2026-10-03T22:28:20+03:00 · turnuva=— · kulüp=—
-- [Tarihi skor! İngiltere Hırvatistan'ı paramparça etti](https://www.aksam.com.tr/spor/tarihi-skor-ingiltere-hirvatistani-paramparca-etti/haber-1703381) — Aksam Spor · 2026-10-03T21:25:00+03:00 · turnuva=— · kulüp=—
 - [İskoçya galibiyetle tanıştı!](https://www.fotomac.com.tr/uluslar-ligi/2026/10/03/iskocya-galibiyetle-tanisti) — Fotomaç · 2026-10-03T21:20:03+03:00 · turnuva=— · kulüp=—
 - [İsviçre geri dönüşle coştu! Zirvede hata yok](https://www.takvim.com.tr/uluslar-ligi/2026/10/03/isvicre-2-1-slovenya-uluslar-ligi-mac-sonucu) — Takvim Spor · 2026-10-03T20:28:52+03:00 · turnuva=— · kulüp=—
 - [Maç Özeti İzle | İskoçya, Kuzey Makedonya deplasmanında galip!](https://www.sabah.com.tr/spor/futbol/2026/10/03/mac-ozeti-izle-iskocya-kuzey-makedonya-deplasmaninda-galip) — Sabah Spor · 2026-10-03T19:46:30+03:00 · turnuva=— · kulüp=—
@@ -26,7 +28,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [A Milli Futbol Takımı'nda İtalya mesaisi başladı!](https://www.sabah.com.tr/spor/futbol/2026/10/03/a-milli-futbol-takiminda-italya-mesaisi-basladi) — Sabah Spor · 2026-10-03T18:21:45+03:00 · turnuva=— · kulüp=—
 - [A Milli Futbol Takımı, İtalya maçının hazırlıklarına başladı](https://www.fotomac.com.tr/millitakim/2026/10/03/a-milli-futbol-takimi-italya-macinin-hazirliklarina-basladi) — Fotomaç · 2026-10-03T18:13:08+03:00 · turnuva=— · kulüp=—
 - [İngiltere Hırvatistan'da gol oldu yağdı!](https://www.fotomac.com.tr/uluslar-ligi/2026/10/03/ingiltere-hirvatistanda-gol-oldu-yagdi) — Fotomaç · 2026-10-03T18:00:34+03:00 · turnuva=— · kulüp=—
-- [İngiltere'den Hırvatistan'a tarihi fark!](https://www.haberturk.com/spor/hirvatistan-ingiltere-mac-sonucu-iste-hirvatistan-ingiltere-maci-ozeti-ve-golleri-uefa-uluslar-ligi-3917035) — Haberturk Spor · 2026-10-03T18:00:11+00:00 · turnuva=— · kulüp=—
 - [Rijeka'da 7 gollü şov! İngilizler Uluslar Ligi'nde rakibini ezdi geçti](https://www.takvim.com.tr/uluslar-ligi/2026/10/03/uluslar-ligi-hirvatistan-0-7-ingiltere-mac-sonucu) — Takvim Spor · 2026-10-03T17:40:29+03:00 · turnuva=— · kulüp=—
 - [Maç Özeti İzle | İngiltere deplasmanda 7 golle kazandı! Hırvatistan evinde mağlup](https://www.sabah.com.tr/spor/futbol/2026/10/03/mac-ozeti-izle-ingiltere-deplasmanda-7-golle-kazandi-hirvatistan-evinde-maglup) — Sabah Spor · 2026-10-03T17:36:47+03:00 · turnuva=— · kulüp=—
 - [Sergi Altimira'dan Galatasaray maçı sözleri!](https://www.fotomac.com.tr/galatasaray/2026/10/03/sergi-altimiradan-galatasaray-maci-sozleri) — Fotomaç · 2026-10-03T16:34:08+03:00 · turnuva=CL · kulüp=Galatasaray
@@ -45,4 +46,3 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [FIFA sıralamamız değişti! İşte Milli Takım'ın Belçika mağlubiyeti sonrası yeri](https://www.fotomac.com.tr/millitakim/2026/10/03/fifa-siralamamiz-degisti-iste-milli-takimin-belcika-maglubiyeti-sonrasi-yeri) — Fotomaç · 2026-10-03T09:38:29+03:00 · turnuva=— · kulüp=—
 - [A Milli Takım'a 2 şok birden! O yıldızlar İtalya maçında yok](https://www.fotomac.com.tr/millitakim/2026/10/03/a-milli-takima-2-sok-birden-o-yildizlar-italya-macinda-yok) — Fotomaç · 2026-10-03T08:30:12+03:00 · turnuva=— · kulüp=—
 - [Belçika - Türkiye maçı sonrası Nihat Kahveci'den Montella'ya tepki: 'Arda Güler'in anası ağladı!'](https://www.hurriyet.com.tr/sporarena/belcika-turkiye-maci-sonrasi-nihat-kahveciden-montellaya-tepki-arda-gulerin-anasi-agladi-43327976) — Hürriyet Spor · 2026-10-03T07:50:41+00:00 · turnuva=— · kulüp=—
-- [TÜRKİYE MAÇI KAÇ KAÇ BİTTİ? Belçika Türkiye Maç Sonucu | Milliler üçüncü sınavını Belçika deplasmanında verdi!](https://www.cnnturk.com/spor/futbol/turkiye-maci-kac-kac-bitti-belcika-turkiye-mac-sonucu-milliler-ucuncu-sinavini-belcika-deplasmaninda-verdi-3474310) — CNN Türk Spor · 2026-10-03T07:48:53+00:00 · turnuva=— · kulüp=—

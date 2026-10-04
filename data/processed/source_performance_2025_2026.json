@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-03T21:14:24.203846+00:00",
+  "generated_at": "2026-10-04T00:38:45.798224+00:00",
   "season": "2025_2026",
   "maturity_days": 14,
   "summary": {
-    "transfer_signals": 18,
+    "transfer_signals": 19,
     "official_events": 16,
     "official_events_with_timestamp": 5,
     "official_events_with_first_observed_timestamp": 16,
@@ -12,7 +12,7 @@
     "measured_lead_times": 0,
     "first_seen_lead_times": 11,
     "tracked_x_sources_waiting": 20,
-    "retained_claim_observations": 4339
+    "retained_claim_observations": 4340
   },
   "provider_coverage": {
     "google_news": {
@@ -36,8 +36,8 @@
       "source": "Google News / medya",
       "source_tier": "CHANNEL",
       "source_type": "media",
-      "observations": 4336,
-      "scoreable_claims": 1371,
+      "observations": 4337,
+      "scoreable_claims": 1372,
       "official_conversions": 13,
       "lead_hours": [],
       "first_seen_lead_hours": [
@@ -55,7 +55,7 @@
       ],
       "lead_time_unavailable": 2,
       "matured_unconfirmed": 1339,
-      "pending_claims": 19,
+      "pending_claims": 20,
       "unresolved_claims": 2965,
       "status": "FIRST_SEEN_BOUND",
       "score": 0.8,
@@ -1469,6 +1469,26 @@
       "false_alarm_proxy_pct": 100.0
     },
     {
+      "source": "A Haber",
+      "source_tier": "MEDIA",
+      "source_type": "google_news",
+      "observations": 8,
+      "scoreable_claims": 6,
+      "official_conversions": 0,
+      "lead_hours": [],
+      "first_seen_lead_hours": [],
+      "lead_time_unavailable": 0,
+      "matured_unconfirmed": 4,
+      "pending_claims": 2,
+      "unresolved_claims": 2,
+      "status": "PARTIAL_MEASUREMENT",
+      "score": 0.0,
+      "average_lead_hours": null,
+      "average_first_seen_lead_hours": null,
+      "official_conversion_rate_pct": 0.0,
+      "false_alarm_proxy_pct": 100.0
+    },
+    {
       "source": "Karadeniz Gazetesi",
       "source_tier": "MEDIA",
       "source_type": "google_news",
@@ -1540,26 +1560,6 @@
       "lead_time_unavailable": 0,
       "matured_unconfirmed": 6,
       "pending_claims": 0,
-      "unresolved_claims": 2,
-      "status": "PARTIAL_MEASUREMENT",
-      "score": 0.0,
-      "average_lead_hours": null,
-      "average_first_seen_lead_hours": null,
-      "official_conversion_rate_pct": 0.0,
-      "false_alarm_proxy_pct": 100.0
-    },
-    {
-      "source": "A Haber",
-      "source_tier": "MEDIA",
-      "source_type": "google_news",
-      "observations": 7,
-      "scoreable_claims": 5,
-      "official_conversions": 0,
-      "lead_hours": [],
-      "first_seen_lead_hours": [],
-      "lead_time_unavailable": 0,
-      "matured_unconfirmed": 4,
-      "pending_claims": 1,
       "unresolved_claims": 2,
       "status": "PARTIAL_MEASUREMENT",
       "score": 0.0,
