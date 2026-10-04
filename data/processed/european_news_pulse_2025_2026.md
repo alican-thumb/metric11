@@ -1,11 +1,14 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-10-04T08:27:52.199554+00:00
-Toplam ilgili haber: 57
+Üretim zamanı: 2026-10-04T10:43:31.037860+00:00
+Toplam ilgili haber: 62
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [A Milli Futbol Takım'ın İtalya maçı mesaisi sürüyor! İZLE](https://www.fotomac.com.tr/video-haber/videoizle/a-milli-futbol-takimin-italya-maci-mesaisi-suruyor-izle) — Fotomaç · 2026-10-04T12:58:03+03:00 · turnuva=— · kulüp=—
+- [Milliler ilk galibiyet için sahada! İşte A Milli Takımımızın, İtalya karnesi](https://www.fotomac.com.tr/uluslar-ligi/2026/10/04/milliler-ilk-galibiyet-icin-sahada-iste-a-milli-takimimizin-italya-karnesi) — Fotomaç · 2026-10-04T12:06:38+03:00 · turnuva=— · kulüp=—
+- [A Milli Futbol Takımı, 658. maçına İtalya karşısında çıkacak](https://www.aa.com.tr/tr/spor/a-milli-futbol-takimi-658-macina-italya-karsisinda-cikacak/4077429) — Anadolu Ajansı Spor · 2026-10-04T11:18:21+03:00 · turnuva=— · kulüp=—
 - [A Milli Futbol Takımı, 658. maçına İtalya karşısında çıkacak](https://www.sabah.com.tr/spor/futbol/2026/10/04/a-milli-futbol-takimi-658-macina-italya-karsisinda-cikacak) — Sabah Spor · 2026-10-04T11:09:03+03:00 · turnuva=— · kulüp=—
 - [A Milli Futbol Takımı, İtalya karşısındaki ilk galibiyetini arıyor](https://www.cnnturk.com/spor/futbol/a-milli-futbol-takimi-italya-karsisindaki-ilk-galibiyetini-ariyor-3474633) — CNN Türk Spor · 2026-10-04T11:07:33+00:00 · turnuva=— · kulüp=—
 - [A Milli Futbol Takımı, İtalya karşısında ilk galibiyet için sahada](https://www.aa.com.tr/tr/spor/a-milli-futbol-takimi-italya-karsisinda-ilk-galibiyet-icin-sahada/4077414) — Anadolu Ajansı Spor · 2026-10-04T11:05:40+03:00 · turnuva=— · kulüp=—
@@ -13,7 +16,9 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Türkiye, UEFA Uluslar Ligi'nde deplasmanda İtalya karşısında](https://www.sabah.com.tr/spor/futbol/2026/10/04/turkiye-uefa-uluslar-liginde-deplasmanda-italya-karsisinda) — Sabah Spor · 2026-10-04T09:38:22+03:00 · turnuva=— · kulüp=—
 - [ÖZET | İngiltere, Hırvatistan'a acımadı! Farklı skor...](https://www.cnnturk.com/spor/futbol/ozet-ingiltere-hirvatistana-acimadi-farkli-skor-3474585) — CNN Türk Spor · 2026-10-04T09:08:20+00:00 · turnuva=— · kulüp=—
 - [Türkiye, UEFA Uluslar Ligi'nde deplasmanda İtalya ile karşılaşacak](https://www.aa.com.tr/tr/spor/turkiye-uefa-uluslar-liginde-deplasmanda-italya-ile-karsilasacak/4077348) — Anadolu Ajansı Spor · 2026-10-04T08:59:59+03:00 · turnuva=— · kulüp=—
-- [Bizim Çocuklar kritik sınavda!](https://www.haberturk.com/spor/foto/italya-turkiye-maci-ne-zaman-saat-kacta-hangi-kanalda-canli-yayinlanacak-3917092) — Haberturk Spor · 2026-10-04T07:23:28+00:00 · turnuva=— · kulüp=—
+- [Bizim Çocuklar kritik sınavda!](https://www.haberturk.com/spor/foto/italya-turkiye-maci-ne-zaman-saat-kacta-hangi-kanalda-canli-yayinlanacak-3917092) — Haberturk Spor · 2026-10-04T08:35:59+00:00 · turnuva=— · kulüp=—
+- [Almanya, Yunanistan'a konuk oluyor! Maçın heyecanlı Misli'de](https://www.hurriyet.com.tr/sporarena/almanya-yunanistana-konuk-oluyor-macin-heyecanli-mislide-43328960) — Hürriyet Spor · 2026-10-04T08:15:00+00:00 · turnuva=— · kulüp=—
+- [Türkiye, UEFA Uluslar Ligi'nde deplasmanda İtalya karşısında](https://www.hurriyet.com.tr/sporarena/turkiye-uefa-uluslar-liginde-deplasmanda-italya-karsisinda-43328998) — Hürriyet Spor · 2026-10-04T08:08:36+00:00 · turnuva=— · kulüp=—
 - [UEFA Uluslar Ligi'nde yıldızlar sahne aldı! İşte alınan sonuçlar](https://www.takvim.com.tr/uluslar-ligi/2026/10/03/uefa-uluslar-liginde-gol-dolu-gece-alinan-sonuclar) — Takvim Spor · 2026-10-04T01:23:02+03:00 · turnuva=— · kulüp=—
 - [İngiltere Hırvatistan'da gol oldu yağdı!](https://www.fotomac.com.tr/uluslar-ligi/2026/10/03/ingiltere-hirvatistanda-gol-oldu-yagdi) — Fotomaç · 2026-10-04T00:44:06+03:00 · turnuva=— · kulüp=—
 - [İsviçre sahasında Slovenya'yı mağlup etti!](https://www.fotomac.com.tr/uluslar-ligi/2026/10/03/isvicre-sahasinda-slovenyayi-maglup-etti) — Fotomaç · 2026-10-04T00:44:04+03:00 · turnuva=— · kulüp=—
@@ -28,21 +33,16 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Belarus sahasında 4 golle kazandı!](https://www.fotomac.com.tr/uluslar-ligi/2026/10/03/belarus-sahasinda-4-golle-kazandi) — Fotomaç · 2026-10-04T00:43:26+03:00 · turnuva=— · kulüp=—
 - [Estonya, Lüksemburg'u tek golle geçti](https://www.fotomac.com.tr/uluslar-ligi/2026/10/03/estonya-luksemburgu-tek-golle-gecti) — Fotomaç · 2026-10-04T00:43:23+03:00 · turnuva=— · kulüp=—
 - [Bosna son dakikalarda puanı kurtardı!](https://www.fotomac.com.tr/uluslar-ligi/2026/10/02/bosna-son-dakikalarda-puani-kurtardi) — Fotomaç · 2026-10-04T00:43:18+03:00 · turnuva=— · kulüp=—
-- [Fransa ile İtalya yenişemedi!](https://www.fotomac.com.tr/uluslar-ligi/2026/10/02/fransa-ile-italya-yenisemedi) — Fotomaç · 2026-10-04T00:43:11+03:00 · turnuva=— · kulüp=—
-- [Finlandiya sahasında Arnavutluk'u devirdi!](https://www.fotomac.com.tr/uluslar-ligi/2026/10/03/finlandiya-sahasinda-arnavutluku-devirdi) — Fotomaç · 2026-10-04T00:43:09+03:00 · turnuva=— · kulüp=—
 - [UEFA Uluslar Ligi 8 maçla devam etti](https://www.aa.com.tr/tr/spor/uefa-uluslar-ligi-8-macla-devam-etti/4077312) — Anadolu Ajansı Spor · 2026-10-04T00:06:12+03:00 · turnuva=— · kulüp=—
 - [İsviçre geri dönüşle coştu! Zirvede hata yok](https://www.takvim.com.tr/uluslar-ligi/2026/10/03/isvicre-2-1-slovenya-uluslar-ligi-mac-sonucu) — Takvim Spor · 2026-10-03T20:28:52+03:00 · turnuva=— · kulüp=—
+- [A Milli Takım'ın İtalya maçı mesaisi başladı!](https://www.hurriyet.com.tr/sporarena/a-milli-takimin-italya-maci-mesaisi-basladi-43328761) — Hürriyet Spor · 2026-10-03T19:37:50+00:00 · turnuva=— · kulüp=—
 - [Durdurulamaz! İspanya Çekya'yı da devirdi](https://www.takvim.com.tr/uluslar-ligi/2026/10/03/ispanya-3-1-cekya-uluslar-ligi-mac-sonucu) — Takvim Spor · 2026-10-03T19:17:10+03:00 · turnuva=— · kulüp=—
-- [Milli Takım'da İtalya mesaisi başladı](https://www.haberturk.com/spor/a-milli-takim-da-italya-macinin-hazirliklari-basladi-3917023) — Haberturk Spor · 2026-10-03T18:46:06+00:00 · turnuva=— · kulüp=—
 - [A Milli Futbol Takımı, İtalya maçının hazırlıklarına başladı](https://www.aa.com.tr/tr/spor/a-milli-futbol-takimi-italya-macinin-hazirliklarina-basladi/4077204) — Anadolu Ajansı Spor · 2026-10-03T18:26:57+03:00 · turnuva=— · kulüp=—
 - [Rijeka'da 7 gollü şov! İngilizler Uluslar Ligi'nde rakibini ezdi geçti](https://www.takvim.com.tr/uluslar-ligi/2026/10/03/uluslar-ligi-hirvatistan-0-7-ingiltere-mac-sonucu) — Takvim Spor · 2026-10-03T17:40:29+03:00 · turnuva=— · kulüp=—
 - [İtalya - Türkiye maçında Marciniak düdük çalacak](https://www.cnnturk.com/spor/futbol/italya-turkiye-macinda-marciniak-duduk-calacak-3474393) — CNN Türk Spor · 2026-10-03T14:01:45+00:00 · turnuva=— · kulüp=—
 - [İtalya-Türkiye maçını, Polonyalı hakem Szymon Marciniak yönetecek](https://www.aa.com.tr/tr/spor/italya-turkiye-macini-polonyali-hakem-szymon-marciniak-yonetecek/4076898) — Anadolu Ajansı Spor · 2026-10-03T13:20:40+03:00 · turnuva=— · kulüp=—
 - [TÜRKİYE UEFA ULUSLAR LİGİ'NDEN ELENDİ Mİ? Türkiye gruptan çıkabilir mi? UEFA Uluslar Ligi’nde son puan durumu!](https://www.cnnturk.com/spor/futbol/turkiye-uefa-uluslar-liginden-elendi-mi-turkiye-gruptan-cikabilir-mi-uefa-uluslar-liginde-son-puan-durumu-3474339) — CNN Türk Spor · 2026-10-03T12:56:46+00:00 · turnuva=— · kulüp=—
+- [İtalya-Türkiye maçını Szymon Marciniak yönetecek](https://www.hurriyet.com.tr/sporarena/italya-turkiye-macini-szymon-marciniak-yonetecek-43328460) — Hürriyet Spor · 2026-10-03T12:41:40+00:00 · turnuva=— · kulüp=—
 - [Melo eleştirdi, Ronaldo beğendi!](https://www.haberturk.com/spor/felipe-melo-elestirdi-cristiano-ronaldo-takim-arkadaslarini-hedef-alan-o-videoyu-begendi-3916990) — Haberturk Spor · 2026-10-03T12:35:17+00:00 · turnuva=— · kulüp=—
+- [A Milli Takım'ın Belçika mağlubiyeti Avrupa basınında gündem oldu: 'Arda Güler'in bitmek bilmeyen kabusu!'](https://www.hurriyet.com.tr/sporarena/a-milli-takimin-belcika-maglubiyeti-avrupa-basininda-gundem-oldu-arda-gulerin-bitmek-bilmeyen-kabusu-43328360) — Hürriyet Spor · 2026-10-03T11:55:00+00:00 · turnuva=— · kulüp=—
 - [İrlandalı taraftarlar, Filistin'e destek verdi; İsrail'i protesto etti](https://www.cnnturk.com/spor/futbol/irlandali-taraftarlar-filistine-destek-verdi-israili-protesto-etti-3474360) — CNN Türk Spor · 2026-10-03T11:07:23+00:00 · turnuva=— · kulüp=—
-- [İtalya - Türkiye maçının hakemi belli oldu!](https://www.haberturk.com/spor/uluslar-ligi-ndeki-italya-turkiye-macinin-hakemi-belli-oldu-3916959) — Haberturk Spor · 2026-10-03T09:56:48+00:00 · turnuva=— · kulüp=—
-- [ÖZET | Fransa evinde İtalya'yla karşılaştı](https://www.cnnturk.com/spor/futbol/ozet-fransa-evinde-italyayla-karsilasti-3474336) — CNN Türk Spor · 2026-10-03T09:55:11+00:00 · turnuva=— · kulüp=—
-- [Montella'ya yaylım ateşi! Spor yazarlarından flaş yorumlar](https://www.takvim.com.tr/uluslar-ligi/2026/10/03/spor-yazarlari-belcika-turkiye-macini-yorumladi) — Takvim Spor · 2026-10-03T09:50:29+03:00 · turnuva=— · kulüp=—
-- [TÜRKİYE MAÇI KAÇ KAÇ BİTTİ? Belçika Türkiye Maç Sonucu | Milliler üçüncü sınavını Belçika deplasmanında verdi!](https://www.cnnturk.com/spor/futbol/turkiye-maci-kac-kac-bitti-belcika-turkiye-mac-sonucu-milliler-ucuncu-sinavini-belcika-deplasmaninda-verdi-3474310) — CNN Türk Spor · 2026-10-03T07:48:53+00:00 · turnuva=— · kulüp=—
-- ["Hepiniz istifa edin gidin!"](https://www.haberturk.com/spor/foto/spor-yazarlari-a-milli-takim-in-belcika-macini-yorumladi-hepiniz-istifa-edin-gidin-3916914) — Haberturk Spor · 2026-10-03T06:56:53+00:00 · turnuva=— · kulüp=—
