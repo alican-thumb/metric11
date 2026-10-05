@@ -1,29 +1,28 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-10-04T21:22:35.206994+00:00
-Toplam ilgili haber: 66
+Üretim zamanı: 2026-10-05T00:56:28.259445+00:00
+Toplam ilgili haber: 65
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [UEFA Uluslar Ligi'nde 8 karşılaşma oynandı! İşte gecenin sonuçları...](https://www.aksam.com.tr/spor/uefa-uluslar-liginde-8-karsilasma-oynandi-iste-gecenin-sonuclari/haber-1703645) — Aksam Spor · 2026-10-05T01:45:00+03:00 · turnuva=— · kulüp=—
+- [Hollanda, Uluslar Ligi'nde doludizgin](https://www.aksam.com.tr/spor/hollanda-uluslar-liginde-doludizgin/haber-1703643) — Aksam Spor · 2026-10-05T01:30:00+03:00 · turnuva=— · kulüp=—
+- [İrlandalı futbolculardan Uluslar Ligi'ndeki İsrail maçında protesto](https://www.aksam.com.tr/spor/irlandali-futbolculardan-uluslar-ligindeki-israil-macinda-protesto/haber-1703642) — Aksam Spor · 2026-10-05T01:12:00+03:00 · turnuva=— · kulüp=—
 - [Almanya, Yunanistan deplasmanında 1 puana razı oldu](https://www.aksam.com.tr/spor/almanya-yunanistan-deplasmaninda-1-puana-razi-oldu/haber-1703630) — Aksam Spor · 2026-10-05T00:13:00+03:00 · turnuva=— · kulüp=—
 - [YUNANİSTAN ALMANYA MAÇI KAÇ KAÇ BİTTİ? Yunanistan Almanya maç özeti](https://www.cnnturk.com/spor/futbol/yunanistan-almanya-maci-hangi-kanalda-yunanistan-almanya-maci-saat-kacta-nereden-izlenir-3474814) — CNN Türk Spor · 2026-10-04T23:55:53+00:00 · turnuva=— · kulüp=—
 - [Malta sahasında tek golle galip!](https://www.fotomac.com.tr/uluslar-ligi/2026/10/04/malta-sahasinda-tek-golle-galip) — Fotomaç · 2026-10-04T23:55:31+03:00 · turnuva=— · kulüp=—
 - [Danimarka Galler deplasmanında tek golle kazandı!](https://www.fotomac.com.tr/uluslar-ligi/2026/10/04/danimarka-galler-deplasmaninda-tek-golle-kazandi) — Fotomaç · 2026-10-04T23:50:07+03:00 · turnuva=— · kulüp=—
 - [Ozan Kabak: Düştüğümüz yerden birlik olarak çıkacağımıza eminim](https://www.aksam.com.tr/spor/ozan-kabak-dustugumuz-yerden-birlik-olarak-cikacagimiza-eminim/haber-1703627) — Aksam Spor · 2026-10-04T23:32:00+03:00 · turnuva=— · kulüp=—
-- [Ümit Milli Takım, Macaristan maçı hazırlıklarını sürdürdü](https://www.aksam.com.tr/spor/umit-milli-takim-macaristan-maci-hazirliklarini-surdurdu/haber-1703624) — Aksam Spor · 2026-10-04T23:08:00+03:00 · turnuva=— · kulüp=—
 - [İtalya Milli Takımı Teknik Direktörü Mancini: Türkiye'nin kolay bir rakip olduğunu düşünmek hata olur](https://www.aa.com.tr/tr/spor/italya-milli-takimi-teknik-direktoru-mancini-turkiyenin-kolay-bir-rakip-oldugunu-dusunmek-hata-olur/4077895) — Anadolu Ajansı Spor · 2026-10-04T23:00:15+03:00 · turnuva=— · kulüp=—
-- [Roberto Mancini: Türkiye şu anda zor bir dönemden geçmekte](https://www.aksam.com.tr/spor/roberto-mancini-turkiye-su-anda-zor-bir-donemden-gecmekte/haber-1703614) — Aksam Spor · 2026-10-04T21:43:00+03:00 · turnuva=— · kulüp=—
 - [Norveç'i yenen Portekiz 4'te 4 yaptı!](https://www.fotomac.com.tr/uluslar-ligi/2026/10/04/norveci-yenen-portekiz-4te-4-yapti) — Fotomaç · 2026-10-04T21:40:09+03:00 · turnuva=— · kulüp=—
 - [Hollanda sahasında Sırbistan'ı yendi!](https://www.fotomac.com.tr/uluslar-ligi/2026/10/04/hollanda-sahasinda-sirbistani-yendi) — Fotomaç · 2026-10-04T21:36:24+03:00 · turnuva=— · kulüp=—
-- [Beşiktaş'a Milot Rashica'dan kötü haber! Milli maçta sakatlandı...](https://www.aksam.com.tr/spor/besiktasa-milot-rashicadan-kotu--milli-macta-sakatlandi/haber-1703612) — Aksam Spor · 2026-10-04T21:23:00+03:00 · turnuva=— · kulüp=Beşiktaş
 - [Beşiktaş'a kötü haber! Rashica maça devam edemedi!](https://www.fotomac.com.tr/video-haber/videoizle/besiktasa-kotu-haber-rashica-maca-devam-edemedi) — Fotomaç · 2026-10-04T21:21:47+03:00 · turnuva=— · kulüp=Beşiktaş
 - [İşte Uluslar Ligi'nde günün sonuçları!](https://www.haberturk.com/spor/portekiz-2-1-norvec-mac-sonucu-golleri-ve-ozeti-uefa-uluslar-ligi-3917204) — Haberturk Spor · 2026-10-04T21:07:26+00:00 · turnuva=— · kulüp=—
 - [A Milli Futbol Takımı, İtalya maçının hazırlıklarını tamamladı](https://www.aa.com.tr/tr/spor/a-milli-futbol-takimi-italya-macinin-hazirliklarini-tamamladi/4077844) — Anadolu Ajansı Spor · 2026-10-04T20:55:14+03:00 · turnuva=— · kulüp=—
 - [4'te 4 ile çeyrek finale! Portekiz'de Jorge Jesus harikası](https://www.takvim.com.tr/uluslar-ligi/2026/10/04/portekiz-2-1-norvec-uluslar-ligi-mac-sonucu) — Takvim Spor · 2026-10-04T20:32:00+03:00 · turnuva=— · kulüp=—
 - [Portekiz - Norveç maçı canlı izle](https://www.haberturk.com/spor/foto/portekiz-norvec-maci-ne-zaman-saat-kacta-hangi-kanalda-uefa-uluslar-ligi-portekiz-norvec-maci-canli-3917177) — Haberturk Spor · 2026-10-04T20:19:22+00:00 · turnuva=— · kulüp=—
 - [Panzerler yine takıldı! Yunanistan evinde geçit vermedi](https://www.takvim.com.tr/uluslar-ligi/2026/10/04/yunanistan-0-0-almanya-uluslar-ligi-mac-sonucu) — Takvim Spor · 2026-10-04T19:53:28+03:00 · turnuva=— · kulüp=—
-- [İtalya, Türkiye maçına hazır!](https://www.sabah.com.tr/spor/futbol/2026/10/04/italya-turkiye-macina-hazir) — Sabah Spor · 2026-10-04T19:52:33+03:00 · turnuva=— · kulüp=—
 - ["Güzel sonuç alacağımıza dair ümitliyim"](https://www.haberturk.com/spor/italya-maci-oncesi-a-milli-takim-teknik-direktoru-vincenzo-montella-guzel-bir-sonuc-alacagimiza-dair-umitliyim-3917201) — Haberturk Spor · 2026-10-04T19:43:34+00:00 · turnuva=— · kulüp=—
 - [HOLLANDA - SIRBİSTAN MAÇI NE ZAMAN? Hollanda Sırbistan Maçı Hangi Kanalda, Saat Kaçta, Nereden İzlenir?](https://www.cnnturk.com/spor/futbol/hollanda-sirbistan-maci-ne-zaman-hollanda-sirbistan-maci-hangi-kanalda-saat-kacta-nereden-izlenir-3474812) — CNN Türk Spor · 2026-10-04T19:24:21+00:00 · turnuva=— · kulüp=—
 - [Maç Özeti İzle | Portekiz, Norveç karşısında geri döndü! 4’te 4 yaptı](https://www.sabah.com.tr/spor/futbol/2026/10/04/mac-ozeti-izle-portekiz-norvec-karsisinda-geri-dondu-4te-4-yapti) — Sabah Spor · 2026-10-04T19:08:51+03:00 · turnuva=— · kulüp=—
@@ -46,3 +45,4 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [A Milli Futbol Takımı, 658. maçına İtalya karşısında çıkacak](https://www.aa.com.tr/tr/spor/a-milli-futbol-takimi-658-macina-italya-karsisinda-cikacak/4077429) — Anadolu Ajansı Spor · 2026-10-04T11:18:21+03:00 · turnuva=— · kulüp=—
 - [A Milli Futbol Takımı, İtalya karşısındaki ilk galibiyetini arıyor](https://www.cnnturk.com/spor/futbol/a-milli-futbol-takimi-italya-karsisindaki-ilk-galibiyetini-ariyor-3474633) — CNN Türk Spor · 2026-10-04T11:07:33+00:00 · turnuva=— · kulüp=—
 - [A Milli Futbol Takımı, İtalya karşısında ilk galibiyet için sahada](https://www.aa.com.tr/tr/spor/a-milli-futbol-takimi-italya-karsisinda-ilk-galibiyet-icin-sahada/4077414) — Anadolu Ajansı Spor · 2026-10-04T11:05:40+03:00 · turnuva=— · kulüp=—
+- [Luka Modric'ten 7-0'lık mağlubiyet sonrası sert sözler: 'Çok utanıyorum!'](https://www.hurriyet.com.tr/sporarena/luka-modricten-7-0lik-maglubiyet-sonrasi-sert-sozler-cok-utaniyorum-43329162) — Hürriyet Spor · 2026-10-04T10:37:00+00:00 · turnuva=— · kulüp=—
