@@ -1,13 +1,32 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-10-06T13:22:05.312142+00:00
-Toplam ilgili haber: 67
+Üretim zamanı: 2026-10-06T19:33:59.328070+00:00
+Toplam ilgili haber: 65
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
-- [Ziraat Türkiye Kupası'nda eşine az rastlanır olay! Kaleci 2 penaltı birden çıkardı](https://www.aksam.com.tr/spor/ziraat-turkiye-kupasinda-esine-az-rastlanir-olay-kaleci-2-penalti-birden-cikardi/haber-1704058) — Aksam Spor · 2026-10-06T16:02:00+03:00 · turnuva=— · kulüp=—
-- [Kırklarelispor-Bayburtspor maçı CANLI İZLE | Ziraat Türkiye Kupası](https://www.fotomac.com.tr/turkiye-kupasi/2026/10/06/kirklarelispor-bayburtspor-maci-canli-izle-ziraat-turkiye-kupasi) — Fotomaç · 2026-10-06T12:17:44+03:00 · turnuva=— · kulüp=—
+- [İşte Türkiye Kupası günün sonuçları...](https://www.aksam.com.tr/spor/iste-turkiye-kupasi-gunun-sonuclari/haber-1704136) — Aksam Spor · 2026-10-06T21:44:00+03:00 · turnuva=— · kulüp=—
+- [İSVİÇRE KUZEY MAKEDONYA MAÇI HANGİ KANALDA? İsviçre Kuzey Makedonya maçı saat kaçta, ne zaman? Şifreli mi şifresiz mi?](https://www.cnnturk.com/spor/futbol/isvicre-kuzey-makedonya-maci-hangi-kanalda-isvicre-kuzey-makedonya-maci-saat-kacta-ne-zaman-sifreli-mi-sifresiz-mi-3475809) — CNN Türk Spor · 2026-10-06T21:15:54+00:00 · turnuva=— · kulüp=—
+- [Karşıyaka, Türkiye Kupası’nda 3 golle tur atladı! İşte maçın özeti…](https://www.sabah.com.tr/spor/futbol/2026/10/06/karsiyaka-turkiye-kupasinda-3-golle-tur-atladi-iste-macin-ozeti) — Sabah Spor · 2026-10-06T21:01:35+03:00 · turnuva=— · kulüp=—
+- [Kazakistan-Fareo Adaları maçında gol çok! Kazanan yok](https://www.fotomac.com.tr/uluslar-ligi/2026/10/06/kazakistan-fareo-adalari-macinda-gol-cok-kazanan-yok) — Fotomaç · 2026-10-06T20:03:25+03:00 · turnuva=— · kulüp=—
+- [İsviçre-Kuzey Makedonya | CANLI İZLE (UEFA Uluslar Ligi)](https://www.fotomac.com.tr/uluslar-ligi/2026/10/06/isvicre-kuzey-makedonya-canli-izle-uefa-uluslar-ligi) — Fotomaç · 2026-10-06T19:54:59+03:00 · turnuva=— · kulüp=—
+- [A Haber Canlı İzle | Uluslar Ligi’nde Hırvatistan – İspanya maçı! İlk gol geldi](https://www.sabah.com.tr/spor/futbol/2026/10/06/a-haber-canli-izle-uluslar-liginde-hirvatistan-ispanya-maci-ne-zaman-saat-kacta-sifresiz-izle) — Sabah Spor · 2026-10-06T19:42:20+03:00 · turnuva=— · kulüp=—
+- [İngiltere-Çekya maçı A Spor'da! CANLI İZLE](https://www.fotomac.com.tr/uluslar-ligi/2026/10/06/ingiltere-cekya-maci-a-sporda-canli-izle) — Fotomaç · 2026-10-06T19:40:18+03:00 · turnuva=— · kulüp=—
+- [A Para Canlı İzle | Uluslar Ligi’nde İsviçre – Kuzey Makedonya maçı! İlk yarı oynanıyor](https://www.sabah.com.tr/spor/futbol/2026/10/06/a-para-canli-izle-uluslar-liginde-isvicre-kuzey-makedonya-maci-ne-zaman-saat-kacta-sifresiz-izle) — Sabah Spor · 2026-10-06T19:38:35+03:00 · turnuva=— · kulüp=—
+- [A Spor Canlı İzle | Uluslar Ligi’nde İngiltere – Çekya maçı! Bir gol daha geldi](https://www.sabah.com.tr/spor/futbol/2026/10/06/a-spor-canli-izle-uluslar-liginde-ingiltere-cekya-maci-ne-zaman-saat-kacta-sifresiz-izle) — Sabah Spor · 2026-10-06T19:36:05+03:00 · turnuva=— · kulüp=—
+- [Sakaryaspor, Arıt Kayadibispor’u 2 golle geçti! İşte maçın özeti...](https://www.sabah.com.tr/spor/futbol/2026/10/06/sakaryaspor-arit-kayadibisporu-2-golle-gecti) — Sabah Spor · 2026-10-06T19:11:55+03:00 · turnuva=— · kulüp=—
+- [İsviçre - Kuzey Makedonya Uluslar Ligi maçı A Para CANLI İZLE](https://www.takvim.com.tr/uluslar-ligi/2026/10/06/isvicre-kuzey-makedonya-uluslar-ligi-maci-a-para-canli-izle) — Takvim Spor · 2026-10-06T19:08:16+03:00 · turnuva=— · kulüp=—
+- [Hırvatistan - İspanya maçı ne zaman?](https://www.haberturk.com/spor/foto/hirvatistan-ispanya-maci-ne-zaman-saat-kacta-hangi-kanalda-uefa-uluslar-ligi-hirvatistan-ispanya-maci-canli-izle-3917736) — Haberturk Spor · 2026-10-06T19:01:04+00:00 · turnuva=— · kulüp=—
+- [Ziraat Türkiye Kupası: Kaf-Kaf 3.  turda! Karşıyaka 3-1 1923 Afyonkarahisar](https://www.takvim.com.tr/turkiye-kupa/2026/10/06/karsiyaka-3-1-1923-afyonkarahisar-ztk-mac-sonucu) — Takvim Spor · 2026-10-06T18:54:12+03:00 · turnuva=— · kulüp=—
+- [Hırvatistan-İspanya | CANLI İZLE (UEFA Uluslar Ligi)](https://www.fotomac.com.tr/uluslar-ligi/2026/10/06/hirvatistan-ispanya-canli-izle-uefa-uluslar-ligi) — Fotomaç · 2026-10-06T18:30:19+03:00 · turnuva=— · kulüp=—
+- [Uluslar Ligi: İngiltere - Çekya maçı A Spor CANLI İZLE](https://www.takvim.com.tr/uluslar-ligi/2026/10/06/ingiltere-cekya-uluslar-ligi-maci-a-spor-canli-izle) — Takvim Spor · 2026-10-06T18:01:58+03:00 · turnuva=— · kulüp=—
+- [Uluslar Ligi: Hırvatistan - İspanya maçı A Haber CANLI İZLE](https://www.takvim.com.tr/uluslar-ligi/2026/10/06/hirvatistan-ispanya-uluslar-ligi-maci-a-haber-canli-izle) — Takvim Spor · 2026-10-06T17:23:09+03:00 · turnuva=— · kulüp=—
+- [TFF Başkanı Hacıosmanoğlu harekete geçti: Yabancı hakem için FIFA ve UEFA ile masaya oturacak!](https://www.hurriyet.com.tr/sporarena/tff-baskani-haciosmanoglu-harekete-gecti-yabanci-hakem-icin-fifa-ve-uefa-ile-masaya-oturacak-43331910) — Hürriyet Spor · 2026-10-06T17:11:44+00:00 · turnuva=— · kulüp=—
+- [Tatangalar evinde turladı! Sakaryaspor 2-0 Arıt Kayadibispor](https://www.takvim.com.tr/spor/2026/10/06/sakaryaspor-2-0-arit-kayadibispor-ziraat-turkiye-kupasi) — Takvim Spor · 2026-10-06T16:57:18+03:00 · turnuva=— · kulüp=—
+- [UEFA, İsrailli futbolcunun İrlandalı antrenöre tükürmesine yönelik suçlamayı soruşturuyor](https://www.aa.com.tr/tr/spor/uefa-israilli-futbolcunun-irlandali-antrenore-tukurmesine-yonelik-suclamayi-sorusturuyor/4079890) — Anadolu Ajansı Spor · 2026-10-06T16:42:38+03:00 · turnuva=— · kulüp=—
+- [Fenerbahçe'de kritik viraj! Galatasaray ve Liverpool maçları oynanacak](https://www.hurriyet.com.tr/sporarena/fenerbahcede-kritik-viraj-galatasaray-ve-liverpool-maclari-oynanacak-43331711) — Hürriyet Spor · 2026-10-06T14:12:12+00:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe
+- [Ziraat Türkiye Kupası: 'Kırklar' uzatmada turladı! Kırklarelispor 1-0 Bayburt 1973](https://www.takvim.com.tr/spor/2026/10/06/kirklarelispor-bayburt-1973-canli-izle) — Takvim Spor · 2026-10-06T13:54:50+03:00 · turnuva=— · kulüp=—
 - [Çizme basınından flaş İtalya-Türkiye yorumu! "Montella tehlikede"](https://www.fotomac.com.tr/millitakim/2026/10/06/cizme-basinindan-flas-italya-turkiye-yorumu-montella-tehlikede) — Fotomaç · 2026-10-06T11:11:49+03:00 · turnuva=— · kulüp=—
 - [FIFA Dünya sıralamasında değişiklik! Türkiye kaçıncı sırada?](https://www.fotomac.com.tr/millitakim/2026/10/06/fifa-dunya-siralamasinda-degisiklik-turkiye-kacinci-sirada) — Fotomaç · 2026-10-06T09:48:15+03:00 · turnuva=— · kulüp=—
 - [Ahmet Çakar'dan Montella'ya sert sözler! "Utanmadan, sıkılmadan..."](https://www.fotomac.com.tr/millitakim/2026/10/06/ahmet-cakardan-montellaya-sert-sozler-utanmadan-sikilmadan) — Fotomaç · 2026-10-06T09:19:32+03:00 · turnuva=— · kulüp=—
@@ -27,22 +46,3 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [İşte İtalya-Türkiye maçının tüm golleri!](https://www.fotomac.com.tr/millitakim/2026/10/05/iste-italya-turkiye-macinin-tum-golleri) — Fotomaç · 2026-10-06T01:29:15+03:00 · turnuva=— · kulüp=—
 - [Fransa evinde doludizgin!](https://www.fotomac.com.tr/uluslar-ligi/2026/10/05/fransa-evinde-doludizgin) — Fotomaç · 2026-10-06T01:29:08+03:00 · turnuva=— · kulüp=—
 - [İsveç deplasmanda tek golle kazandı!](https://www.fotomac.com.tr/uluslar-ligi/2026/10/05/isvec-deplasmanda-tek-golle-kazandi) — Fotomaç · 2026-10-06T01:29:07+03:00 · turnuva=— · kulüp=—
-- [İrlandalı futbolculardan İsrail'e protesto!](https://www.fotomac.com.tr/video-haber/videoizle/irlandali-futbolculardan-israile-protesto) — Fotomaç · 2026-10-06T01:28:42+03:00 · turnuva=— · kulüp=—
-- [Karadağ ile Ermenistan Uluslar Ligi'nde berabere kaldı!](https://www.fotomac.com.tr/uluslar-ligi/2026/10/05/karadag-ile-ermenistan-uluslar-liginde-berabere-kaldi) — Fotomaç · 2026-10-06T01:28:39+03:00 · turnuva=— · kulüp=—
-- [Ivan Basic attı! Bosna evinde Polonya'yı devirdi!](https://www.fotomac.com.tr/uluslar-ligi/2026/10/05/ivan-basic-atti-bosna-evinde-polonyayi-devirdi) — Fotomaç · 2026-10-06T01:28:34+03:00 · turnuva=— · kulüp=—
-- [Macaristan, Ukrayna karşısında galibiyeti buldu!](https://www.fotomac.com.tr/uluslar-ligi/2026/10/05/macaristan-ukrayna-karsisinda-galibiyeti-buldu) — Fotomaç · 2026-10-06T01:28:31+03:00 · turnuva=— · kulüp=—
-- [Kuzey İrlanda ile Gürcistan golsüz berabere kaldı!](https://www.fotomac.com.tr/uluslar-ligi/2026/10/05/kuzey-irlanda-ile-gurcistan-golsuz-berabere-kaldi) — Fotomaç · 2026-10-06T01:28:29+03:00 · turnuva=— · kulüp=—
-- [Letonya, Güney Kıbrıs'a uzatmalarda kaybetti!](https://www.fotomac.com.tr/uluslar-ligi/2026/10/05/letonya-guney-kibrisa-uzatmalarda-kaybetti) — Fotomaç · 2026-10-06T01:28:27+03:00 · turnuva=— · kulüp=—
-- [Gianluca Scamacca: Başarıya ulaştığımızı söylemek erken](https://www.fotomac.com.tr/video-haber/videoizle/gianluca-scamacca-basariya-ulastigimizi-soylemek-erken) — Fotomaç · 2026-10-06T01:28:25+03:00 · turnuva=— · kulüp=—
-- [Yunus Akgün: Buradan ayağa kalkabiliriz](https://www.fotomac.com.tr/video-haber/videoizle/yunus-akgun-buradan-ayaga-kalkabiliriz) — Fotomaç · 2026-10-06T01:28:21+03:00 · turnuva=— · kulüp=—
-- [Ziraat Türkiye Kupası'nda üçüncü eleme turu kuraları 9 Ekim'de çekilecek](https://www.aa.com.tr/tr/spor/ziraat-turkiye-kupasinda-ucuncu-eleme-turu-kuralari-9-ekimde-cekilecek/4079089) — Anadolu Ajansı Spor · 2026-10-06T01:00:41+03:00 · turnuva=— · kulüp=—
-- [A Milli Futbol Takımı, İtalya'ya 3-1 yenildi](https://www.aa.com.tr/tr/spor/a-milli-futbol-takimi-italyaya-3-1-yenildi/4079039) — Anadolu Ajansı Spor · 2026-10-05T23:36:57+03:00 · turnuva=— · kulüp=—
-- [İtalya 3-1 Türkiye Maç Özeti | Millîler, puanla tanışamadı](https://www.cnnturk.com/spor/futbol/live-italya-3-1-turkiye-mac-ozeti-milliler-puanla-tanisamadi-3475097) — CNN Türk Spor · 2026-10-05T23:35:27+00:00 · turnuva=— · kulüp=—
-- [Mancini'den Montella'ya övgü!](https://www.haberturk.com/spor/roberto-mancini-den-vincenzo-montella-ya-ovgu-dolu-sozler-3917486) — Haberturk Spor · 2026-10-05T22:33:50+00:00 · turnuva=— · kulüp=—
-- [Roberto Mancini: 'Montella, Türkiye için çok güzel iş çıkardı!'](https://www.hurriyet.com.tr/sporarena/roberto-mancini-montella-turkiye-icin-cok-guzel-is-cikardi-43330852) — Hürriyet Spor · 2026-10-05T22:32:18+00:00 · turnuva=— · kulüp=—
-- [Salih Özcan: 'Açıkçası çok üzgünüz!'](https://www.hurriyet.com.tr/sporarena/salih-ozcan-acikcasi-cok-uzgunuz-43330835) — Hürriyet Spor · 2026-10-05T22:10:14+00:00 · turnuva=— · kulüp=—
-- ["Şut şansı vermeden gol yedik!"](https://www.haberturk.com/spor/italya-turkiye-maci-sonrasi-vincenzo-montella-sut-sansi-vermeden-gol-yedik-3917473) — Haberturk Spor · 2026-10-05T21:59:06+00:00 · turnuva=— · kulüp=—
-- [A Milli Futbol Takımı teknik direktörü Montella, ilk 11'de 6 değişiklik yaptı](https://www.aa.com.tr/tr/spor/a-milli-futbol-takimi-teknik-direktoru-montella-ilk-11de-6-degisiklik-yapti/4078967) — Anadolu Ajansı Spor · 2026-10-05T21:58:41+03:00 · turnuva=— · kulüp=—
-- ["Çok üzgünüz"](https://www.haberturk.com/spor/salih-ozcan-cok-uzgunuz-ama-insallah-iyi-gunler-gelir-3917478) — Haberturk Spor · 2026-10-05T21:50:56+00:00 · turnuva=— · kulüp=—
-- [Milli ara bitti mi?](https://www.haberturk.com/spor/foto/milli-ara-bitti-mi-ne-zaman-bitecek-super-lig-ne-zaman-basliyor-iste-super-lig-7-hafta-lig-fiksturu-3917434) — Haberturk Spor · 2026-10-05T21:39:59+00:00 · turnuva=— · kulüp=Galatasaray, Fenerbahçe, Beşiktaş, Trabzonspor
-- [Fransa 4-1 Belçika (UEFA Uluslar Ligi) Lukaku...](https://www.hurriyet.com.tr/sporarena/fransa-4-1-belcika-uefa-uluslar-ligi-lukaku-43330830) — Hürriyet Spor · 2026-10-05T21:36:31+00:00 · turnuva=— · kulüp=—
