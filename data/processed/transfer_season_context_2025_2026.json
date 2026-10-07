@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-07T08:39:29.660421+00:00",
+  "generated_at": "2026-10-07T11:09:40.073694+00:00",
   "season": "2025_2026",
   "summary": {
     "free_agents_count": 95,
     "final_year_count": 335,
-    "transfer_signals_count": 15,
+    "transfer_signals_count": 17,
     "transfer_status_counts": {
       "OFFICIAL": 0,
       "CORROBORATED": 0,
-      "RUMOR": 3,
-      "REVIEW_REQUIRED": 12
+      "RUMOR": 2,
+      "REVIEW_REQUIRED": 15
     },
     "promotion_events_count": 0,
     "free_agent_total_market_value_eur": 180475000
@@ -460,47 +460,6 @@
   ],
   "transfer_signals": [
     {
-      "player_name": "Jayden Oosterwolde",
-      "from_club": null,
-      "to_club": "Fenerbahçe",
-      "signal_type": "interest",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "HEADLINE_EXPLICIT_DIRECTION",
-      "article_id": "0c65d19eed9f",
-      "title": "Fenerbahçe'de Jayden Oosterwolde sürprizi! Yeniden devreye girdiler - Fenerbahçe - Spor Haberleri - Milliyet",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOVGItRUR2dGZKNEdDOXhzQ01wUjBkSGtwUEhrWVlKMkQzdElsb3dEc0JQVmdLNjg3VUx4SEhva0d2VWg5TVFINWZaRjRSOG4wUGN6YXpRSnNZOC11UW0zU3ZobFh0M3RweWRZaEFscG1nQnRZY19oNVpheXNKZmNfano2MnVwXy1PWklwbW43LUNGS2NtckRqQXhONXFLZ0dWOTRlZDdyMGYwWndy?oc=5",
-      "source": "Milliyet",
-      "source_type": "google_news",
-      "account_type": null,
-      "query": "Fenerbahçe transfer",
-      "source_tier": "MEDIA",
-      "published_at": "2026-10-06T17:56:00+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "MEDIUM",
-      "verification_status": "RUMOR",
-      "interpretation": "Tek kaynaklı transfer iddiası; yalnız transfer radarında izlenir.",
-      "source_count": 1,
-      "sources": [
-        "Milliyet"
-      ],
-      "evidence": [
-        {
-          "source": "Milliyet",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Fenerbahçe transfer",
-          "title": "Fenerbahçe'de Jayden Oosterwolde sürprizi! Yeniden devreye girdiler - Fenerbahçe - Spor Haberleri - Milliyet",
-          "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOVGItRUR2dGZKNEdDOXhzQ01wUjBkSGtwUEhrWVlKMkQzdElsb3dEc0JQVmdLNjg3VUx4SEhva0d2VWg5TVFINWZaRjRSOG4wUGN6YXpRSnNZOC11UW0zU3ZobFh0M3RweWRZaEFscG1nQnRZY19oNVpheXNKZmNfano2MnVwXy1PWklwbW43LUNGS2NtckRqQXhONXFLZ0dWOTRlZDdyMGYwWndy?oc=5",
-          "published_at": "2026-10-06T17:56:00+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
       "player_name": "ABDELHAMID SABIRI",
       "from_club": null,
       "to_club": "Eyüpspor",
@@ -649,8 +608,7 @@
       "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
       "source_count": 1,
       "sources": [
-        "Hürriyet Spor",
-        "Hürriyet"
+        "Hürriyet Spor"
       ],
       "evidence": [
         {
@@ -663,16 +621,89 @@
           "link": "https://www.hurriyet.com.tr/sporarena/fenerbahcede-archie-brown-icin-karar-verildi-bonservis-bedeli-belirlendi-43332134",
           "published_at": "2026-10-07T05:35:37+00:00",
           "first_observed_at": null
-        },
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": "JAYDEN QUINN OOSTERWOLDE",
+      "from_club": "FENERBAHÇE A.Ş.",
+      "to_club": null,
+      "transfer_type": "permanent",
+      "window": "summer_2026",
+      "signal_type": "departure",
+      "confidence": "LOW",
+      "tm_market_value_eur": 20000000,
+      "direction_quality": "TARGET_UNRESOLVED",
+      "article_id": "96ce9f5a7465",
+      "title": "Jayden Oosterwolde kalırsa Fenerbahçe'nin yıldızı ayrılacak! İşte Kanarya'nın transfer stratejisi... - Fanatik",
+      "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOOERyR1B6bTdvVGJzOTBQY1VYNE9UdTdVeFg1TFdORmZpSzFVbUtCaGw5TzAwbFFoMUJaMDd4ZnVaLWNIZUdGdzdhWGk3U0NDSlRrTHZWSFdCZnpRNk8wMlR1a1kyMTVlc3pzVjh5eXRYb2FmeU9HX0VFdUxmdDdiQnR6cXZsVUR4eEoyVGp5U1pKSVF1SVAzX2FrMGUtVU9EdHEtOUtWRVdfb0xIRGFtelU5aXpzWUZVbnlSX05YZWU3VHNaWlAyUVpqLV9hcmdtckgzV0k1azJCbV92Y2lLSw?oc=5",
+      "source": "Fanatik",
+      "source_type": "google_news",
+      "account_type": null,
+      "query": "Fenerbahçe transfer",
+      "source_tier": "MEDIA",
+      "published_at": "2026-10-07T03:59:00+00:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "HIGH",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Fanatik"
+      ],
+      "evidence": [
         {
-          "source": "Hürriyet",
+          "source": "Fanatik",
           "source_tier": "MEDIA",
           "source_type": "google_news",
           "account_type": null,
           "query": "Fenerbahçe transfer",
-          "title": "Fenerbahçe'de Archie Brown için karar verildi! Bonservis bedeli belirlendi - Hürriyet",
-          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOaXhLUDZGSWVocmpnTDZCdGFKY0c2UTAwSTRZRm9iZU1jR01lYWIySVRVaFBWeG5EcnZKUUFCdjFscUtWN0dZUmQ0MjBHdmVJWDhBUXU0SVZaYUFPTExfemJlcjNCbWFvazFlcXlMaHd5S3NkUHprZjUzWVpRMzd2UXpRckJ4Z3lWSkg3MWZjTGFhVURjdklsTGlodWpTWm4waFdreHVLaTZ6NVRWeFQ4VDgwWk9TLUFiX3NF?oc=5",
-          "published_at": "2026-10-07T05:35:37+00:00",
+          "title": "Jayden Oosterwolde kalırsa Fenerbahçe'nin yıldızı ayrılacak! İşte Kanarya'nın transfer stratejisi... - Fanatik",
+          "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOOERyR1B6bTdvVGJzOTBQY1VYNE9UdTdVeFg1TFdORmZpSzFVbUtCaGw5TzAwbFFoMUJaMDd4ZnVaLWNIZUdGdzdhWGk3U0NDSlRrTHZWSFdCZnpRNk8wMlR1a1kyMTVlc3pzVjh5eXRYb2FmeU9HX0VFdUxmdDdiQnR6cXZsVUR4eEoyVGp5U1pKSVF1SVAzX2FrMGUtVU9EdHEtOUtWRVdfb0xIRGFtelU5aXpzWUZVbnlSX05YZWU3VHNaWlAyUVpqLV9hcmdtckgzV0k1azJCbV92Y2lLSw?oc=5",
+          "published_at": "2026-10-07T03:59:00+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": null,
+      "from_club": null,
+      "to_club": "Gençlerbirliği",
+      "signal_type": "departure",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "9c1fc744c15d",
+      "title": "Gençlerbirliği'nde Metin Diyadin ile yollar ayrıldı!",
+      "link": "https://www.fotomac.com.tr/genclerbirligi/2026/10/06/genclerbirliginde-metin-diyadin-ile-yollar-ayrildi",
+      "source": "Fotomaç",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-10-07T01:23:09+03:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Fotomaç"
+      ],
+      "evidence": [
+        {
+          "source": "Fotomaç",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Gençlerbirliği'nde Metin Diyadin ile yollar ayrıldı!",
+          "link": "https://www.fotomac.com.tr/genclerbirligi/2026/10/06/genclerbirliginde-metin-diyadin-ile-yollar-ayrildi",
+          "published_at": "2026-10-07T01:23:09+03:00",
           "first_observed_at": null
         }
       ],
@@ -880,6 +911,47 @@
           "title": "Beşiktaş'tan yeni İlkhan Fakılı hamlesi! Transfer görüşmeleri başlıyor - Fanatik",
           "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQU3EwUDVkY21UMEhwcjhUYkh5TnVueXBkckFhelgwM21Na0dDb1hjR2xCcjVwRzlXN1E1NFlHNTVMM0pkWEVoMkhLcU9sM3hoUkxuc2FiMjItSXNOemQ2ZzA3R1BwNFBvUG1aXzBhNHIxN3dPTWU1RUFXMjRIbTJWODVQa1FBUjdJNVhkblFuZE8wd3UwM2NBUHhGQms2dFlPQml1ZUJxeDl5SXpGOW9tbEZR?oc=5",
           "published_at": "2026-10-05T10:57:23+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": null,
+      "from_club": null,
+      "to_club": "Samsunspor",
+      "signal_type": "departure",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "9db5dc631a7b",
+      "title": "Samsunspor'dan 8 milyon Euro'ya ayrıldı, Suudi Arabistan'da gündem oldu - Gazete Vatan",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPcjBOT1VYQnlhNmM1RloxSjBpU2hFdDBzbTRPNjJHMncwa1A5dE9NRmg1Q2h0NThiSUFsSXFCUVVkZnplM3NSRHVOeE1YTmhZWTZkUHUxVV8zUFdsdFdBNDN3VXNubTRwSEJJUHQ2bkYwVjhPeFk3aHlEWWxQaHgyY09tS1ZEQ2h4R09sR2JCRWJ5MXA5dDBpZ2Zqd2JOb3VBNkdBN00yRjVONy1IZDhv?oc=5",
+      "source": "Gazete Vatan",
+      "source_type": "google_news",
+      "account_type": null,
+      "query": "Samsunspor transfer",
+      "source_tier": "MEDIA",
+      "published_at": "2026-10-05T07:51:04+00:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Gazete Vatan"
+      ],
+      "evidence": [
+        {
+          "source": "Gazete Vatan",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Samsunspor transfer",
+          "title": "Samsunspor'dan 8 milyon Euro'ya ayrıldı, Suudi Arabistan'da gündem oldu - Gazete Vatan",
+          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPcjBOT1VYQnlhNmM1RloxSjBpU2hFdDBzbTRPNjJHMncwa1A5dE9NRmg1Q2h0NThiSUFsSXFCUVVkZnplM3NSRHVOeE1YTmhZWTZkUHUxVV8zUFdsdFdBNDN3VXNubTRwSEJJUHQ2bkYwVjhPeFk3aHlEWWxQaHgyY09tS1ZEQ2h4R09sR2JCRWJ5MXA5dDBpZ2Zqd2JOb3VBNkdBN00yRjVONy1IZDhv?oc=5",
+          "published_at": "2026-10-05T07:51:04+00:00",
           "first_observed_at": null
         }
       ],
