@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-08T05:58:11.218672+00:00",
+  "generated_at": "2026-10-08T08:57:12.052827+00:00",
   "season": "2025_2026",
   "summary": {
     "free_agents_count": 95,
     "final_year_count": 335,
-    "transfer_signals_count": 17,
+    "transfer_signals_count": 16,
     "transfer_status_counts": {
       "OFFICIAL": 0,
-      "CORROBORATED": 0,
-      "RUMOR": 3,
-      "REVIEW_REQUIRED": 14
+      "CORROBORATED": 1,
+      "RUMOR": 5,
+      "REVIEW_REQUIRED": 10
     },
     "promotion_events_count": 0,
     "free_agent_total_market_value_eur": 180475000
@@ -460,22 +460,75 @@
   ],
   "transfer_signals": [
     {
-      "player_name": "Jayden Oosterwolde",
+      "player_name": "Mert Kömür",
       "from_club": null,
-      "to_club": "Fenerbahçe",
+      "to_club": "Beşiktaş",
+      "signal_type": "interest",
+      "window": "winter_2027",
+      "confidence": "MEDIUM",
+      "direction_quality": "HEADLINE_EXPLICIT_DIRECTION",
+      "article_id": "a5e896b82f90",
+      "title": "Beşiktaş'tan Mert Kömür bombası! Ocak ayında yeniden masaya oturacak - www.duzcetv.com",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQOE1EM05LNnVXZjl0RXYtdDlWVmxpUi1ZOWR5bml0S1JVNXZXSzhUZVF1LU5yNkRvSVhpLWFjQVVNTnNIZnVOTEhoNGthcE1tanZMRjgwSjBiWUFPVVRHSkNEcUZmZmdCclhkcndiUTZjZDlRZHZxb21HWG9UWjVBcG9uR1lBRFRBUTFpYWhBTjB1dk02VFphS2JUVk9pNmpfR2NNRFU4eHM0ZDNDWm5SZEdB?oc=5",
+      "source": "www.duzcetv.com",
+      "source_type": "google_news",
+      "account_type": null,
+      "query": "Beşiktaş transfer",
+      "source_tier": "MEDIA",
+      "published_at": "2026-10-08T07:01:59+00:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "MEDIUM",
+      "verification_status": "CORROBORATED",
+      "interpretation": "Birden fazla kaynak aynı yönlü iddiayı taşıyor; resmi açıklama beklenir.",
+      "source_count": 2,
+      "sources": [
+        "www.duzcetv.com",
+        "Fanatik"
+      ],
+      "evidence": [
+        {
+          "source": "www.duzcetv.com",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Beşiktaş transfer",
+          "title": "Beşiktaş'tan Mert Kömür bombası! Ocak ayında yeniden masaya oturacak - www.duzcetv.com",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQOE1EM05LNnVXZjl0RXYtdDlWVmxpUi1ZOWR5bml0S1JVNXZXSzhUZVF1LU5yNkRvSVhpLWFjQVVNTnNIZnVOTEhoNGthcE1tanZMRjgwSjBiWUFPVVRHSkNEcUZmZmdCclhkcndiUTZjZDlRZHZxb21HWG9UWjVBcG9uR1lBRFRBUTFpYWhBTjB1dk02VFphS2JUVk9pNmpfR2NNRFU4eHM0ZDNDWm5SZEdB?oc=5",
+          "published_at": "2026-10-08T07:01:59+00:00",
+          "first_observed_at": null
+        },
+        {
+          "source": "Fanatik",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Beşiktaş transfer",
+          "title": "Teklif yapılacak! Beşiktaş'tan Mert Kömür bombası... - Fanatik",
+          "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxON29ia2Jkc0xHdE5NZlhtbUpTMFIyNm0wZUNjYU5DT1BfTmdqY0F2dDVDb040c09GMkZzZWsxLVVwTnVFWXlveFl5LTYwTll2MGxRT08yX0tlak5rNVZUYUxQSEJtUlpyMkJFdjFEb2V0YTY4UWdZcU9qRUhjX0d5SndIbFlHYTJxNXlCbjFNMElmamhQb1E?oc=5",
+          "published_at": "2026-10-08T03:59:00+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": "Pyry Mentu",
+      "from_club": null,
+      "to_club": "Trabzonspor",
       "signal_type": "interest",
       "window": "summer_2026",
       "confidence": "LOW",
       "direction_quality": "HEADLINE_EXPLICIT_DIRECTION",
-      "article_id": "0c65d19eed9f",
-      "title": "Fenerbahçe'de Jayden Oosterwolde sürprizi! Yeniden devreye girdiler - Fenerbahçe - Spor Haberleri - Milliyet",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOVGItRUR2dGZKNEdDOXhzQ01wUjBkSGtwUEhrWVlKMkQzdElsb3dEc0JQVmdLNjg3VUx4SEhva0d2VWg5TVFINWZaRjRSOG4wUGN6YXpRSnNZOC11UW0zU3ZobFh0M3RweWRZaEFscG1nQnRZY19oNVpheXNKZmNfano2MnVwXy1PWklwbW43LUNGS2NtckRqQXhONXFLZ0dWOTRlZDdyMGYwWndy?oc=5",
-      "source": "Milliyet",
+      "article_id": "a136f18f9476",
+      "title": "Finlandiya’dan Trabzonspor’a yeni yıldız adayı: Pyry Mentu! - Ajansspor",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQZzZ3TENYbkpDVEh1RVhjYXBmWldienNhRDBtR3E0SnVxem8yNnktTFV6U1R1VnNqVHpKdHFSQUJQUXUwVENPM2JZaFQxRHRfMHU5NlZ1bVVmcDRoM3ozNmxvT2Zydnk0OEk3Q2NWZ3hLVzRJWEprdmRlVFNrYklSWi1Pa2l6ZWZuNnU5dTJWaVA5ZFJU?oc=5",
+      "source": "Ajansspor",
       "source_type": "google_news",
       "account_type": null,
-      "query": "Fenerbahçe transfer",
+      "query": "Trabzonspor transfer",
       "source_tier": "MEDIA",
-      "published_at": "2026-10-06T17:56:00+00:00",
+      "published_at": "2026-10-08T07:25:43+00:00",
       "first_observed_at": null,
       "summary_tr": "",
       "entity_confidence": "MEDIUM",
@@ -483,18 +536,124 @@
       "interpretation": "Tek kaynaklı transfer iddiası; yalnız transfer radarında izlenir.",
       "source_count": 1,
       "sources": [
-        "Milliyet"
+        "Ajansspor"
       ],
       "evidence": [
         {
-          "source": "Milliyet",
+          "source": "Ajansspor",
           "source_tier": "MEDIA",
           "source_type": "google_news",
           "account_type": null,
-          "query": "Fenerbahçe transfer",
-          "title": "Fenerbahçe'de Jayden Oosterwolde sürprizi! Yeniden devreye girdiler - Fenerbahçe - Spor Haberleri - Milliyet",
-          "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOVGItRUR2dGZKNEdDOXhzQ01wUjBkSGtwUEhrWVlKMkQzdElsb3dEc0JQVmdLNjg3VUx4SEhva0d2VWg5TVFINWZaRjRSOG4wUGN6YXpRSnNZOC11UW0zU3ZobFh0M3RweWRZaEFscG1nQnRZY19oNVpheXNKZmNfano2MnVwXy1PWklwbW43LUNGS2NtckRqQXhONXFLZ0dWOTRlZDdyMGYwWndy?oc=5",
-          "published_at": "2026-10-06T17:56:00+00:00",
+          "query": "Trabzonspor transfer",
+          "title": "Finlandiya’dan Trabzonspor’a yeni yıldız adayı: Pyry Mentu! - Ajansspor",
+          "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQZzZ3TENYbkpDVEh1RVhjYXBmWldienNhRDBtR3E0SnVxem8yNnktTFV6U1R1VnNqVHpKdHFSQUJQUXUwVENPM2JZaFQxRHRfMHU5NlZ1bVVmcDRoM3ozNmxvT2Zydnk0OEk3Q2NWZ3hLVzRJWEprdmRlVFNrYklSWi1Pa2l6ZWZuNnU5dTJWaVA5ZFJU?oc=5",
+          "published_at": "2026-10-08T07:25:43+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": "Alternatifi Premier Lig",
+      "from_club": null,
+      "to_club": "Galatasaray",
+      "signal_type": "interest",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "HEADLINE_EXPLICIT_DIRECTION",
+      "article_id": "6e714e892b1b",
+      "title": "Galatasaray'da 1 transfer 1 ayrılık! Yıldız isim gözden çıktı: Alternatifi Premier Lig'den",
+      "link": "https://www.takvim.com.tr/spor/galatasaray/2026/10/08/galatasarayda-sane-giderse-sarr-gelecek",
+      "source": "Takvim Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-10-08T09:49:01+03:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "MEDIUM",
+      "verification_status": "RUMOR",
+      "interpretation": "Tek kaynaklı transfer iddiası; yalnız transfer radarında izlenir.",
+      "source_count": 1,
+      "sources": [
+        "Takvim Spor",
+        "Takvim"
+      ],
+      "evidence": [
+        {
+          "source": "Takvim Spor",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Galatasaray'da 1 transfer 1 ayrılık! Yıldız isim gözden çıktı: Alternatifi Premier Lig'den",
+          "link": "https://www.takvim.com.tr/spor/galatasaray/2026/10/08/galatasarayda-sane-giderse-sarr-gelecek",
+          "published_at": "2026-10-08T09:49:01+03:00",
+          "first_observed_at": null
+        },
+        {
+          "source": "Takvim",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Galatasaray transfer",
+          "title": "Galatasaray'da 1 transfer 1 ayrılık! Yıldız isim gözden çıktı: Alternatifi Premier Lig'den - Takvim",
+          "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQZ3RxN2VScGVxS3JNbTJZdFVjQ2lnNVVOdXY3THlScmhvbEt4Um81WjJMaURCLVpzaVhJcHFLeDhDZHlvNHdXVHpROWd3VlBqbEZ6ZXdPZjh4NGtrQXQwdHhaV0hTZVhKR3BVX2pzY3ZNdFMyalVfTUVsY0hZN2FzTHRRVjhKTXhlR2VGWEtCNmYycFR5cVZoeA?oc=5",
+          "published_at": "2026-10-08T06:49:01+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": "Andre Onana",
+      "from_club": null,
+      "to_club": "Trabzonspor",
+      "signal_type": "interest",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "HEADLINE_EXPLICIT_DIRECTION",
+      "article_id": "77d66c87bbe5",
+      "title": "Trabzonspor'da Andre Onana hamlesi!",
+      "link": "https://www.hurriyet.com.tr/sporarena/trabzonsporda-andre-onana-hamlesi-43333478",
+      "source": "Hürriyet Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-10-08T06:44:23+00:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "MEDIUM",
+      "verification_status": "RUMOR",
+      "interpretation": "Tek kaynaklı transfer iddiası; yalnız transfer radarında izlenir.",
+      "source_count": 1,
+      "sources": [
+        "Hürriyet Spor",
+        "Hürriyet"
+      ],
+      "evidence": [
+        {
+          "source": "Hürriyet Spor",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Trabzonspor'da Andre Onana hamlesi!",
+          "link": "https://www.hurriyet.com.tr/sporarena/trabzonsporda-andre-onana-hamlesi-43333478",
+          "published_at": "2026-10-08T06:44:23+00:00",
+          "first_observed_at": null
+        },
+        {
+          "source": "Hürriyet",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Trabzonspor transfer",
+          "title": "Trabzonspor'da Andre Onana hamlesi! - Hürriyet",
+          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQb3ppRHBoZ0NuQm9mMzZMTzllU1VnLTRhMEdic1lkSFFDb2FBaEZUREdhYmd2eFk2aFV1a3BiT0NMZmlUU1Vad3N4UTdWcFE1U19KVk1QaXlzUk1XbDdFbE9iTzZVVEdoSUFudmpHTmMxak9DNkQ4Tks5elF2MmxmYS1NOWZON2M?oc=5",
+          "published_at": "2026-10-08T06:44:23+00:00",
           "first_observed_at": null
         }
       ],
@@ -585,6 +744,49 @@
       "model_use": false
     },
     {
+      "player_name": "MAURO EMANUEL ICARDI",
+      "from_club": "GALATASARAY A.Ş.",
+      "to_club": null,
+      "transfer_type": "permanent",
+      "window": "summer_2026",
+      "signal_type": "transfer_negotiation",
+      "confidence": "LOW",
+      "tm_market_value_eur": 4000000,
+      "direction_quality": "TARGET_UNRESOLVED",
+      "article_id": "28140b954295",
+      "title": "Galatasaray Mauro Icardi transfer görüşmeleri: Icardi Galatasaray'a dönecek mi? Menajeri açıkladı | Futbol Haberleri - GZT",
+      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPWThiQk9yMVI0UEoxd2hSemJRX2IyQkxJdFZoTG9Udnc3UDNGd2JxcXh4Z2kzUm9hNXdsbnFfbmhWNkJDVnN4MjFVdnlHOWxhV1hNU3Ftci04Umt5RmtESGl3VEZRRFoxVUpkeDFsTmdMa2JqalB1aFJHOVpoaVp2TE1jMVlLZEk5bi1nYXUwcy05UEUxY2E5UDhpUFJKQnYtSHh0c0RiaXU2eG9qLWk3Sm5wWlJnR0dhdXV1cS03YUt1ODZlOEE?oc=5",
+      "source": "GZT",
+      "source_type": "google_news",
+      "account_type": null,
+      "query": "Galatasaray transfer",
+      "source_tier": "MEDIA",
+      "published_at": "2026-10-08T08:33:31+00:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "HIGH",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "GZT"
+      ],
+      "evidence": [
+        {
+          "source": "GZT",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Galatasaray transfer",
+          "title": "Galatasaray Mauro Icardi transfer görüşmeleri: Icardi Galatasaray'a dönecek mi? Menajeri açıkladı | Futbol Haberleri - GZT",
+          "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPWThiQk9yMVI0UEoxd2hSemJRX2IyQkxJdFZoTG9Udnc3UDNGd2JxcXh4Z2kzUm9hNXdsbnFfbmhWNkJDVnN4MjFVdnlHOWxhV1hNU3Ftci04Umt5RmtESGl3VEZRRFoxVUpkeDFsTmdMa2JqalB1aFJHOVpoaVp2TE1jMVlLZEk5bi1nYXUwcy05UEUxY2E5UDhpUFJKQnYtSHh0c0RiaXU2eG9qLWk3Sm5wWlJnR0dhdXV1cS03YUt1ODZlOEE?oc=5",
+          "published_at": "2026-10-08T08:33:31+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
       "player_name": null,
       "from_club": null,
       "to_club": "Trabzonspor",
@@ -620,47 +822,6 @@
           "title": "Trabzonspor 93 - 83 Nanterre 92 maç özeti (Basketbol Şampiyonlar Ligi)",
           "link": "https://www.hurriyet.com.tr/sporarena/trabzonspor-93-83-nanterre-92-mac-ozeti-basketbol-sampiyonlar-ligi-43333384",
           "published_at": "2026-10-07T22:28:31+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": null,
-      "to_club": "Fenerbahçe",
-      "signal_type": "transfer_fee",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "bd79666202d9",
-      "title": "Fenerbahçe Archie Brown'un bonservisini belirledi! Ayrılık için Oosterwolde şartı - Milliyet",
-      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPdFk5NHlxbUlTMDJCSzFubl9RTXFTVWxPZXZqRnpOc0hQRGZNSUhPakdXUVNKaGlwa3g4R0ZlNDNPUTFaMkZzd0xNeTF1Yzg0OGpVNVlCU1JCQUFJaFQ0LWxQaEV1X21LZHVxX0YyOUxlZVJUU3B1WWZIT3otUzgzUGM0a182aUQxY2pUWHJaOUZmSjh3bTFreFB6b0F4NzdCYm04OER3TlpfLVR6dFlLYnlwYk5rTUhyNXVmR0pnMA?oc=5",
-      "source": "Milliyet",
-      "source_type": "google_news",
-      "account_type": null,
-      "query": "Fenerbahçe transfer",
-      "source_tier": "MEDIA",
-      "published_at": "2026-10-07T10:21:56+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Milliyet"
-      ],
-      "evidence": [
-        {
-          "source": "Milliyet",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Fenerbahçe transfer",
-          "title": "Fenerbahçe Archie Brown'un bonservisini belirledi! Ayrılık için Oosterwolde şartı - Milliyet",
-          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPdFk5NHlxbUlTMDJCSzFubl9RTXFTVWxPZXZqRnpOc0hQRGZNSUhPakdXUVNKaGlwa3g4R0ZlNDNPUTFaMkZzd0xNeTF1Yzg0OGpVNVlCU1JCQUFJaFQ0LWxQaEV1X21LZHVxX0YyOUxlZVJUU3B1WWZIT3otUzgzUGM0a182aUQxY2pUWHJaOUZmSjh3bTFreFB6b0F4NzdCYm04OER3TlpfLVR6dFlLYnlwYk5rTUhyNXVmR0pnMA?oc=5",
-          "published_at": "2026-10-07T10:21:56+00:00",
           "first_observed_at": null
         }
       ],
@@ -708,90 +869,6 @@
       "model_use": false
     },
     {
-      "player_name": null,
-      "from_club": null,
-      "to_club": "Fenerbahçe",
-      "signal_type": "transfer_fee",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "617a80c0cfe4",
-      "title": "Fenerbahçe'de Archie Brown için karar verildi! Bonservis bedeli belirlendi",
-      "link": "https://www.hurriyet.com.tr/sporarena/fenerbahcede-archie-brown-icin-karar-verildi-bonservis-bedeli-belirlendi-43332134",
-      "source": "Hürriyet Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-10-07T05:35:37+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Hürriyet Spor"
-      ],
-      "evidence": [
-        {
-          "source": "Hürriyet Spor",
-          "source_tier": "MEDIA",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "Fenerbahçe'de Archie Brown için karar verildi! Bonservis bedeli belirlendi",
-          "link": "https://www.hurriyet.com.tr/sporarena/fenerbahcede-archie-brown-icin-karar-verildi-bonservis-bedeli-belirlendi-43332134",
-          "published_at": "2026-10-07T05:35:37+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": "JAYDEN QUINN OOSTERWOLDE",
-      "from_club": "FENERBAHÇE A.Ş.",
-      "to_club": null,
-      "transfer_type": "permanent",
-      "window": "summer_2026",
-      "signal_type": "departure",
-      "confidence": "LOW",
-      "tm_market_value_eur": 20000000,
-      "direction_quality": "TARGET_UNRESOLVED",
-      "article_id": "96ce9f5a7465",
-      "title": "Jayden Oosterwolde kalırsa Fenerbahçe'nin yıldızı ayrılacak! İşte Kanarya'nın transfer stratejisi... - Fanatik",
-      "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOOERyR1B6bTdvVGJzOTBQY1VYNE9UdTdVeFg1TFdORmZpSzFVbUtCaGw5TzAwbFFoMUJaMDd4ZnVaLWNIZUdGdzdhWGk3U0NDSlRrTHZWSFdCZnpRNk8wMlR1a1kyMTVlc3pzVjh5eXRYb2FmeU9HX0VFdUxmdDdiQnR6cXZsVUR4eEoyVGp5U1pKSVF1SVAzX2FrMGUtVU9EdHEtOUtWRVdfb0xIRGFtelU5aXpzWUZVbnlSX05YZWU3VHNaWlAyUVpqLV9hcmdtckgzV0k1azJCbV92Y2lLSw?oc=5",
-      "source": "Fanatik",
-      "source_type": "google_news",
-      "account_type": null,
-      "query": "Fenerbahçe transfer",
-      "source_tier": "MEDIA",
-      "published_at": "2026-10-07T03:59:00+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "HIGH",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Fanatik"
-      ],
-      "evidence": [
-        {
-          "source": "Fanatik",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Fenerbahçe transfer",
-          "title": "Jayden Oosterwolde kalırsa Fenerbahçe'nin yıldızı ayrılacak! İşte Kanarya'nın transfer stratejisi... - Fanatik",
-          "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOOERyR1B6bTdvVGJzOTBQY1VYNE9UdTdVeFg1TFdORmZpSzFVbUtCaGw5TzAwbFFoMUJaMDd4ZnVaLWNIZUdGdzdhWGk3U0NDSlRrTHZWSFdCZnpRNk8wMlR1a1kyMTVlc3pzVjh5eXRYb2FmeU9HX0VFdUxmdDdiQnR6cXZsVUR4eEoyVGp5U1pKSVF1SVAzX2FrMGUtVU9EdHEtOUtWRVdfb0xIRGFtelU5aXpzWUZVbnlSX05YZWU3VHNaWlAyUVpqLV9hcmdtckgzV0k1azJCbV92Y2lLSw?oc=5",
-          "published_at": "2026-10-07T03:59:00+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
       "player_name": "RAFAEL ALEXANDRE DA CONCEIÇÃO LEÃO",
       "from_club": "GALATASARAY A.Ş.",
       "to_club": null,
@@ -829,47 +906,6 @@
           "title": "Galatasaray Rafael Leao'nun arkadaşını istiyor! Juventus ve Milan da peşinde",
           "link": "https://www.takvim.com.tr/spor/galatasaray/2026/10/06/galatasaray-bruno-fernandes-transferinde-gozunu-karartti",
           "published_at": "2026-10-06T20:21:49+03:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": null,
-      "to_club": "Gençlerbirliği",
-      "signal_type": "departure",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "daf172c914c3",
-      "title": "Gençlerbirliği'nde teknik direktör Metin Diyadin ile yollar ayrıldı",
-      "link": "https://www.aa.com.tr/tr/spor/genclerbirliginde-teknik-direktor-metin-diyadin-ile-yollar-ayrildi/4079652",
-      "source": "Anadolu Ajansı Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "AGENCY",
-      "published_at": "2026-10-06T13:54:46+03:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Anadolu Ajansı Spor"
-      ],
-      "evidence": [
-        {
-          "source": "Anadolu Ajansı Spor",
-          "source_tier": "AGENCY",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "Gençlerbirliği'nde teknik direktör Metin Diyadin ile yollar ayrıldı",
-          "link": "https://www.aa.com.tr/tr/spor/genclerbirliginde-teknik-direktor-metin-diyadin-ile-yollar-ayrildi/4079652",
-          "published_at": "2026-10-06T13:54:46+03:00",
           "first_observed_at": null
         }
       ],
@@ -1116,47 +1152,6 @@
           "title": "Konyaspor'da talihini düzeltip 14. takımına transfer oldu - Memleket",
           "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPVVJJV1M2T1NLNmRreGRHYjhZdURYSno2VXB1c1RRWmIxTVVhU3FzU190LU9TcTFYNE1fckUwRjVGamNVNEk1aFRmYUcxYjVsUFp3OUptQ2M2RlJQM3JaYTBsYWVDa2V5QnJselBWN0UwWEFTQTFMWVBFWm1LbzlOVV9EYjExNXQyWU52MnROaGRSengzdWZ6NmpEVlM?oc=5",
           "published_at": "2026-09-25T12:26:24+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": "Göztepe",
-      "to_club": null,
-      "signal_type": "official_transfer",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "dc7dd228ba07",
-      "title": "Muğlaspor, Göztepe'den transfer etti! Yedek kulübeye mahkum kaldı - Gazete Vatan",
-      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNUEpxcmNHZThfd01kVE81RVlZQl9DWHRZQTJQWF9tOU1CNERTdG5PNEtBV0xQMmwxSlRDeEdYc2RwOEZqcVNORTU2ZDFDMzlMY09mLTBGdjRaaWNoalVBeFl6TEhBRVRNSnVJaXF4cllucFM1M3Rucnk4VGs3N05oekJITFhXX2FOMHpyMGVCTWN3cXVHOTg4cjZwZ3dDNFdUdC1NVHF5Mno0emM?oc=5",
-      "source": "Gazete Vatan",
-      "source_type": "google_news",
-      "account_type": null,
-      "query": "Göztepe transfer",
-      "source_tier": "MEDIA",
-      "published_at": "2026-09-24T07:00:00+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Gazete Vatan"
-      ],
-      "evidence": [
-        {
-          "source": "Gazete Vatan",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Göztepe transfer",
-          "title": "Muğlaspor, Göztepe'den transfer etti! Yedek kulübeye mahkum kaldı - Gazete Vatan",
-          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNUEpxcmNHZThfd01kVE81RVlZQl9DWHRZQTJQWF9tOU1CNERTdG5PNEtBV0xQMmwxSlRDeEdYc2RwOEZqcVNORTU2ZDFDMzlMY09mLTBGdjRaaWNoalVBeFl6TEhBRVRNSnVJaXF4cllucFM1M3Rucnk4VGs3N05oekJITFhXX2FOMHpyMGVCTWN3cXVHOTg4cjZwZ3dDNFdUdC1NVHF5Mno0emM?oc=5",
-          "published_at": "2026-09-24T07:00:00+00:00",
           "first_observed_at": null
         }
       ],
