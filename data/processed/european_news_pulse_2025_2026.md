@@ -1,19 +1,17 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-10-08T13:23:21.647609+00:00
-Toplam ilgili haber: 25
+Üretim zamanı: 2026-10-08T17:27:06.615669+00:00
+Toplam ilgili haber: 23
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
-- [Açıkalın Erciyes 38 FSK - Kahta 02 Spor maçı CANLI İZLE | Ziraat Türkiye Kupası](https://www.fotomac.com.tr/turkiye-kupasi/2026/10/08/acikalin-erciyes-38-fsk-kahta-02-spor-maci-canli-izle-ziraat-turkiye-kupasi) — Fotomaç · 2026-10-08T13:19:16+03:00 · turnuva=— · kulüp=—
+- [UEFA Başkanı Ceferin yeniden aday olacak!](https://www.hurriyet.com.tr/sporarena/uefa-baskani-ceferin-yeniden-aday-olacak-43334531) — Hürriyet Spor · 2026-10-08T16:19:26+00:00 · turnuva=— · kulüp=—
+- [UEFA'da Ceferin yeniden aday!](https://www.haberturk.com/spor/uefa-da-aleksander-ceferin-yeniden-baskan-adayi-3918274) — Haberturk Spor · 2026-10-08T16:04:58+00:00 · turnuva=— · kulüp=—
 - [Türkiye'nin UEFA Uluslar A Ligi'ndeki geleceği son 2 maçta netleşecek](https://www.aa.com.tr/tr/spor/turkiyenin-uefa-uluslar-a-ligindeki-gelecegi-son-2-macta-netlesecek/4081829) — Anadolu Ajansı Spor · 2026-10-08T11:02:34+03:00 · turnuva=— · kulüp=—
 - [Beşiktaş Erkek Basketbol Takımı, Avrupa Ligi'nde yarın Kosner Baskonia'ya konuk olacak](https://www.aa.com.tr/tr/spor/besiktas-erkek-basketbol-takimi-avrupa-liginde-yarin-kosner-baskoniaya-konuk-olacak/4081787) — Anadolu Ajansı Spor · 2026-10-08T10:33:55+03:00 · turnuva=EL · kulüp=Beşiktaş
-- [israilli futbolcuya "tükürük" soruşturması!](https://www.fotomac.com.tr/video-haber/videoizle/israilli-futbolcuya-tukuruk-sorusturmasi) — Fotomaç · 2026-10-08T10:31:21+03:00 · turnuva=— · kulüp=—
-- [Ekim ayı FIFA Dünya Sıralaması açıklandı! İşte Türkiye'nin yeri...](https://www.sabah.com.tr/spor/futbol/2026/10/08/ekim-ayi-fifa-dunya-siralamasi-aciklandi-iste-turkiyenin-yeri) — Sabah Spor · 2026-10-08T10:24:25+03:00 · turnuva=— · kulüp=—
 - [A Milli Takım'ın kaderi 2 maçta!](https://www.haberturk.com/spor/foto/a-milli-takim-in-kaderi-2-macta-hedef-a-ligi-nde-kalmak-3918124) — Haberturk Spor · 2026-10-08T08:42:48+00:00 · turnuva=— · kulüp=—
 - [FIFA Dünya sıralaması güncellendi!](https://www.haberturk.com/spor/foto/fifa-dunya-siralamasi-guncellendi-a-milli-takimimiz-uefa-uluslar-ligi-ndeki-4-yenilgi-sonrasi-4-basamak-dustu-3918076) — Haberturk Spor · 2026-10-08T07:58:14+00:00 · turnuva=— · kulüp=—
-- [Ziraat Türkiye Kupası toplu sonuçlar 7 Ekim](https://www.fotomac.com.tr/turkiye-kupasi/2026/10/07/ziraat-turkiye-kupasi-toplu-sonuclar-7-ekim) — Fotomaç · 2026-10-08T00:25:13+03:00 · turnuva=— · kulüp=—
 - [Trabzonspor 93 - 83 Nanterre 92 maç özeti (Basketbol Şampiyonlar Ligi)](https://www.hurriyet.com.tr/sporarena/trabzonspor-93-83-nanterre-92-mac-ozeti-basketbol-sampiyonlar-ligi-43333384) — Hürriyet Spor · 2026-10-07T22:28:31+00:00 · turnuva=CL · kulüp=Trabzonspor
 - [Kupada 2. eleme turunda bugün 24 maç oynandı](https://www.aa.com.tr/tr/spor/kupada-2-eleme-turunda-bugun-24-mac-oynandi/4081438) — Anadolu Ajansı Spor · 2026-10-07T22:17:26+03:00 · turnuva=— · kulüp=—
 - [Eskişehirspor evinde şov yaptı! 1922 Akşehirspor'u 4-1 mağlup etti](https://www.takvim.com.tr/spor/2026/10/07/ziraat-turkiye-kupasi-eskisehirspor-1922-aksehir-spor-maci) — Takvim Spor · 2026-10-07T20:01:00+03:00 · turnuva=— · kulüp=—
