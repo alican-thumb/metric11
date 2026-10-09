@@ -6,8 +6,13 @@
 - Otomatik ceza sinyali: 13
 - Manuel kayıt: 0
 - Güncel haber/sakat-cezalı sinyali: 0
-- Haber istihbaratı sinyali: 0
+- Haber istihbaratı sinyali: 2
 - Not: Kırmızı/çift sarı için sonraki maç cezası varsayılır. Sarı kart birikimi 4 kartta 1 maç varsayımıdır; resmi ceza listesiyle doğrulanmalıdır.
+
+## Güncel Haber/Sakat-Cezalı Bağlamı
+
+- INJURED | ISMAIL JOSHUA JAKOBS | kaynak=news_intelligence | güven=HIGH
+- INJURED | GABRIEL DAVI GOMES SARA | kaynak=news_intelligence | güven=MEDIUM
 
 ## Maç Bazlı Eksikler
 
