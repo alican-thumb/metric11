@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-09T09:01:12.535067+00:00",
+  "generated_at": "2026-10-09T11:26:19.817132+00:00",
   "season": "2025_2026",
   "summary": {
     "free_agents_count": 95,
     "final_year_count": 335,
-    "transfer_signals_count": 13,
+    "transfer_signals_count": 16,
     "transfer_status_counts": {
       "OFFICIAL": 0,
       "CORROBORATED": 0,
-      "RUMOR": 2,
-      "REVIEW_REQUIRED": 11
+      "RUMOR": 3,
+      "REVIEW_REQUIRED": 13
     },
     "promotion_events_count": 0,
     "free_agent_total_market_value_eur": 180475000
@@ -556,6 +556,88 @@
       "model_use": false
     },
     {
+      "player_name": "Yakup Yılancı",
+      "from_club": null,
+      "to_club": "Kocaelispor",
+      "signal_type": "official_transfer",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "HEADLINE_EXPLICIT_DIRECTION",
+      "article_id": "a1ae4b79003a",
+      "title": "Yakup Yılancı Kocaelispor'a transfer oldu - Bugün Kocaeli Gazetesi",
+      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE40WF8yN3R5ZGJYU1I3Vms2eHBmdUsybHpDcE5BQS04M0daUjdqWmpFb1piV3ByYzNCeC1rQVF2WmZjMDNoS2pMZ0NWU05xV2VNUTVjZVQ1TVhYbTEydW00YXQtRG9pbkxEaVFkekJkMTUyWXVGX3hSbXpTaFM?oc=5",
+      "source": "Bugün Kocaeli Gazetesi",
+      "source_type": "google_news",
+      "account_type": null,
+      "query": "Kocaelispor transfer",
+      "source_tier": "MEDIA",
+      "published_at": "2026-09-26T10:46:00+00:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "MEDIUM",
+      "verification_status": "RUMOR",
+      "interpretation": "Tek kaynaklı transfer iddiası; yalnız transfer radarında izlenir.",
+      "source_count": 1,
+      "sources": [
+        "Bugün Kocaeli Gazetesi"
+      ],
+      "evidence": [
+        {
+          "source": "Bugün Kocaeli Gazetesi",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Kocaelispor transfer",
+          "title": "Yakup Yılancı Kocaelispor'a transfer oldu - Bugün Kocaeli Gazetesi",
+          "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE40WF8yN3R5ZGJYU1I3Vms2eHBmdUsybHpDcE5BQS04M0daUjdqWmpFb1piV3ByYzNCeC1rQVF2WmZjMDNoS2pMZ0NWU05xV2VNUTVjZVQ1TVhYbTEydW00YXQtRG9pbkxEaVFkekJkMTUyWXVGX3hSbXpTaFM?oc=5",
+          "published_at": "2026-09-26T10:46:00+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": null,
+      "from_club": null,
+      "to_club": "Galatasaray",
+      "signal_type": "interest",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "d3d7b66ed937",
+      "title": "Galatasaray'ın gözü zirvede!",
+      "link": "https://www.haberturk.com/spor/canli-galatasaray-kasimpasa-maci-ne-zaman-saat-kacta-hangi-kanalda-canli-yayinlanacak-gs-kasimpasa-muhtemel-11-ler-3918338",
+      "source": "Haberturk Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-10-09T10:09:34+00:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Haberturk Spor"
+      ],
+      "evidence": [
+        {
+          "source": "Haberturk Spor",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Galatasaray'ın gözü zirvede!",
+          "link": "https://www.haberturk.com/spor/canli-galatasaray-kasimpasa-maci-ne-zaman-saat-kacta-hangi-kanalda-canli-yayinlanacak-gs-kasimpasa-muhtemel-11-ler-3918338",
+          "published_at": "2026-10-09T10:09:34+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
       "player_name": null,
       "from_club": null,
       "to_club": "Trabzonspor",
@@ -591,6 +673,47 @@
           "title": "Trabzonspor deplasmanda ilk peşinde!",
           "link": "https://www.haberturk.com/spor/foto/samsunspor-trabzonspor-maci-ne-zaman-saat-kacta-hangi-kanalda-canli-yayinlanacak-3918366",
           "published_at": "2026-10-09T08:11:07+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": null,
+      "from_club": null,
+      "to_club": "Fenerbahçe",
+      "signal_type": "transfer_fee",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "d4e605923963",
+      "title": "Fenerbahçe'den Pavlidis'e dev bonservis! Transfer teklifini duyurdular",
+      "link": "https://www.fotomac.com.tr/fenerbahce/2026/10/09/fenerbahceden-pavlidise-dev-bonservis-transfer-teklifini-duyurdular",
+      "source": "Fotomaç",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-10-09T09:58:12+03:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Fotomaç"
+      ],
+      "evidence": [
+        {
+          "source": "Fotomaç",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Fenerbahçe'den Pavlidis'e dev bonservis! Transfer teklifini duyurdular",
+          "link": "https://www.fotomac.com.tr/fenerbahce/2026/10/09/fenerbahceden-pavlidise-dev-bonservis-transfer-teklifini-duyurdular",
+          "published_at": "2026-10-09T09:58:12+03:00",
           "first_observed_at": null
         }
       ],
@@ -693,20 +816,20 @@
     {
       "player_name": null,
       "from_club": null,
-      "to_club": "Galatasaray",
-      "signal_type": "interest",
+      "to_club": "Fenerbahçe",
+      "signal_type": "departure",
       "window": "summer_2026",
       "confidence": "LOW",
       "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "d3d7b66ed937",
-      "title": "Galatasaray'ın gözü zirvede!",
-      "link": "https://www.haberturk.com/spor/canli-galatasaray-kasimpasa-maci-ne-zaman-saat-kacta-hangi-kanalda-canli-yayinlanacak-gs-kasimpasa-muhtemel-11-ler-3918338",
-      "source": "Haberturk Spor",
-      "source_type": "rss",
+      "article_id": "0b22f1a898fc",
+      "title": "Fenerbahçe’de 2 oyuncunun üstü çizildi: Devre arasında yollar ayrılıyor - Yeni Şafak",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQVExLcjFUMFdLWkRRdWVWUk05N1lDWFlyMEF1N3prMUNLbzAteHJfeEs2ckZ2dHBCZzdLZ2lud0ZqUTJjamczR2RJa1N0NXgtWm9iSy04QTNaQ2V0YmRmcHdtZ3Y3RnVfRm51NWhYMk5PMHpKeGRxUUtlTGUzQ3JtUUM2X3VxZlJYNEpzNEZiWWJ4TnNoNkxvX1prdFFpdGxjdkhNSFdJb05XWTB6LUY5anhuQWtFUQ?oc=5",
+      "source": "Yeni Şafak",
+      "source_type": "google_news",
       "account_type": null,
-      "query": null,
+      "query": "Fenerbahçe transfer",
       "source_tier": "MEDIA",
-      "published_at": "2026-10-09T06:46:05+00:00",
+      "published_at": "2026-10-09T06:31:10+00:00",
       "first_observed_at": null,
       "summary_tr": "",
       "entity_confidence": "LOW",
@@ -714,18 +837,59 @@
       "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
       "source_count": 1,
       "sources": [
-        "Haberturk Spor"
+        "Yeni Şafak"
       ],
       "evidence": [
         {
-          "source": "Haberturk Spor",
+          "source": "Yeni Şafak",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Fenerbahçe transfer",
+          "title": "Fenerbahçe’de 2 oyuncunun üstü çizildi: Devre arasında yollar ayrılıyor - Yeni Şafak",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQVExLcjFUMFdLWkRRdWVWUk05N1lDWFlyMEF1N3prMUNLbzAteHJfeEs2ckZ2dHBCZzdLZ2lud0ZqUTJjamczR2RJa1N0NXgtWm9iSy04QTNaQ2V0YmRmcHdtZ3Y3RnVfRm51NWhYMk5PMHpKeGRxUUtlTGUzQ3JtUUM2X3VxZlJYNEpzNEZiWWJ4TnNoNkxvX1prdFFpdGxjdkhNSFdJb05XWTB6LUY5anhuQWtFUQ?oc=5",
+          "published_at": "2026-10-09T06:31:10+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": null,
+      "from_club": null,
+      "to_club": "Galatasaray",
+      "signal_type": "transfer_negotiation",
+      "window": "winter_2027",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "a239e9a2fdac",
+      "title": "Galatasaray'ın yıldızına Ada'dan talip! Transfer görüşmesi ocak ayında",
+      "link": "https://www.fotomac.com.tr/galatasaray/2026/10/08/galatasarayin-yildizina-adadan-talip-transfer-gorusmesi-ocak-ayinda",
+      "source": "Fotomaç",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-10-09T01:07:22+03:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Fotomaç"
+      ],
+      "evidence": [
+        {
+          "source": "Fotomaç",
           "source_tier": "MEDIA",
           "source_type": "rss",
           "account_type": null,
           "query": null,
-          "title": "Galatasaray'ın gözü zirvede!",
-          "link": "https://www.haberturk.com/spor/canli-galatasaray-kasimpasa-maci-ne-zaman-saat-kacta-hangi-kanalda-canli-yayinlanacak-gs-kasimpasa-muhtemel-11-ler-3918338",
-          "published_at": "2026-10-09T06:46:05+00:00",
+          "title": "Galatasaray'ın yıldızına Ada'dan talip! Transfer görüşmesi ocak ayında",
+          "link": "https://www.fotomac.com.tr/galatasaray/2026/10/08/galatasarayin-yildizina-adadan-talip-transfer-gorusmesi-ocak-ayinda",
+          "published_at": "2026-10-09T01:07:22+03:00",
           "first_observed_at": null
         }
       ],
@@ -735,19 +899,19 @@
       "player_name": null,
       "from_club": null,
       "to_club": "Trabzonspor",
-      "signal_type": "transfer_fee",
+      "signal_type": "interest",
       "window": "summer_2026",
       "confidence": "LOW",
       "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "bf6dc33a2580",
-      "title": "Trabzonspor'dan Atakan Karazor için flaş hamle! Bonservisi belli oldu - A Spor",
-      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPYUZjZ28zQlhjQ3p0S3RxYU1pQTdZUGhic2hwa3YyWlg1bU0yd05XRWxQLTJPdmxTTVFnMm1xWUhIZF9rTEFyM2VLZUJQUF9WalJ4VVdNLWN0TEU4WXlYNEY1cmxUNndpakNhcnUzYjdBWXpwOUJDQzE5MTVpYm1hb1JTTEFuMkV3dTBRSjdSN2wxbWN1ZzRrVTlBWjlNUEdWbWRqTW1RUmw3LTllSElBNkJaaUdBRDV5RmVBYTlONnBWUmPSAcgBQVVfeXFMTVZFajVIZV91UlIyNV9hS1F1Mld2N1VmQnJicUdvR2x3R3BIcWNwYnpHdnVqZ2Nza053NjFlWkdLRnZjM0tuTTM4Nmc0SGRQTFVUYVZBMHBsTHlCX2Q3Nzd1X3dRajY0TzBKNEtQWi1ZZXFIYWlPUFEwUDhEOV80Ql8taHh6S3NxT3p6Q0N4dTN1aEh0eHVDVXU1RzlUVUk5WlctMjJ6aVpVYnJqdkdsQ3RZckpTSFR3SDExdWF5RVNIYWxVY0RGRUo?oc=5",
-      "source": "A Spor",
-      "source_type": "google_news",
+      "article_id": "3ac4398a0649",
+      "title": "Trabzonspor'dan Atakan Karazor atağı!",
+      "link": "https://www.fotomac.com.tr/trabzonspor/2026/10/09/trabzonspordan-atakan-karazor-atagi",
+      "source": "Fotomaç",
+      "source_type": "rss",
       "account_type": null,
-      "query": "Trabzonspor transfer",
+      "query": null,
       "source_tier": "MEDIA",
-      "published_at": "2026-10-09T03:40:51+00:00",
+      "published_at": "2026-10-08T23:31:24+03:00",
       "first_observed_at": null,
       "summary_tr": "",
       "entity_confidence": "LOW",
@@ -755,18 +919,18 @@
       "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
       "source_count": 1,
       "sources": [
-        "A Spor"
+        "Fotomaç"
       ],
       "evidence": [
         {
-          "source": "A Spor",
+          "source": "Fotomaç",
           "source_tier": "MEDIA",
-          "source_type": "google_news",
+          "source_type": "rss",
           "account_type": null,
-          "query": "Trabzonspor transfer",
-          "title": "Trabzonspor'dan Atakan Karazor için flaş hamle! Bonservisi belli oldu - A Spor",
-          "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPYUZjZ28zQlhjQ3p0S3RxYU1pQTdZUGhic2hwa3YyWlg1bU0yd05XRWxQLTJPdmxTTVFnMm1xWUhIZF9rTEFyM2VLZUJQUF9WalJ4VVdNLWN0TEU4WXlYNEY1cmxUNndpakNhcnUzYjdBWXpwOUJDQzE5MTVpYm1hb1JTTEFuMkV3dTBRSjdSN2wxbWN1ZzRrVTlBWjlNUEdWbWRqTW1RUmw3LTllSElBNkJaaUdBRDV5RmVBYTlONnBWUmPSAcgBQVVfeXFMTVZFajVIZV91UlIyNV9hS1F1Mld2N1VmQnJicUdvR2x3R3BIcWNwYnpHdnVqZ2Nza053NjFlWkdLRnZjM0tuTTM4Nmc0SGRQTFVUYVZBMHBsTHlCX2Q3Nzd1X3dRajY0TzBKNEtQWi1ZZXFIYWlPUFEwUDhEOV80Ql8taHh6S3NxT3p6Q0N4dTN1aEh0eHVDVXU1RzlUVUk5WlctMjJ6aVpVYnJqdkdsQ3RZckpTSFR3SDExdWF5RVNIYWxVY0RGRUo?oc=5",
-          "published_at": "2026-10-09T03:40:51+00:00",
+          "query": null,
+          "title": "Trabzonspor'dan Atakan Karazor atağı!",
+          "link": "https://www.fotomac.com.tr/trabzonspor/2026/10/09/trabzonspordan-atakan-karazor-atagi",
+          "published_at": "2026-10-08T23:31:24+03:00",
           "first_observed_at": null
         }
       ],
@@ -808,47 +972,6 @@
           "title": "Fenerbahçe'den u23 hamlesi! 2 farklı transfer planı devrede",
           "link": "https://www.takvim.com.tr/spor/fenerbahce/2026/10/08/fenerbahceden-arthur-avom-icin-iki-farkli-transfer-plani",
           "published_at": "2026-10-08T12:37:43+03:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": null,
-      "to_club": "Fenerbahçe",
-      "signal_type": "interest",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "b5419e4d5394",
-      "title": "Fenerbahçe Tarfin deplasmanda galibiyet peşinde, Finlandiya’da taraf, Valencia’da 'Üst' tercihleri öne çıkıyor! İşte Misli’de günün en çok oynanan maçları",
-      "link": "https://www.hurriyet.com.tr/sporarena/fenerbahce-tarfin-deplasmanda-galibiyet-pesinde-finlandiyada-taraf-valenciada-ust-tercihleri-one-cikiyor-iste-mislide-43333802",
-      "source": "Hürriyet Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-10-08T09:05:58+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Hürriyet Spor"
-      ],
-      "evidence": [
-        {
-          "source": "Hürriyet Spor",
-          "source_tier": "MEDIA",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "Fenerbahçe Tarfin deplasmanda galibiyet peşinde, Finlandiya’da taraf, Valencia’da 'Üst' tercihleri öne çıkıyor! İşte Misli’de günün en çok oynanan maçları",
-          "link": "https://www.hurriyet.com.tr/sporarena/fenerbahce-tarfin-deplasmanda-galibiyet-pesinde-finlandiyada-taraf-valenciada-ust-tercihleri-one-cikiyor-iste-mislide-43333802",
-          "published_at": "2026-10-08T09:05:58+00:00",
           "first_observed_at": null
         }
       ],
