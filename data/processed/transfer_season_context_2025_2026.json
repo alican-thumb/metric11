@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-10T12:26:30.388548+00:00",
+  "generated_at": "2026-10-10T15:55:03.503633+00:00",
   "season": "2025_2026",
   "summary": {
     "free_agents_count": 95,
     "final_year_count": 335,
-    "transfer_signals_count": 17,
+    "transfer_signals_count": 20,
     "transfer_status_counts": {
       "OFFICIAL": 0,
       "CORROBORATED": 0,
-      "RUMOR": 4,
-      "REVIEW_REQUIRED": 13
+      "RUMOR": 5,
+      "REVIEW_REQUIRED": 15
     },
     "promotion_events_count": 0,
     "free_agent_total_market_value_eur": 180475000
@@ -460,6 +460,47 @@
   ],
   "transfer_signals": [
     {
+      "player_name": "Amed SK",
+      "from_club": null,
+      "to_club": "Gençlerbirliği",
+      "signal_type": "interest",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "HEADLINE_EXPLICIT_DIRECTION",
+      "article_id": "8e53a86264ca",
+      "title": "Canlı anlatım - Gençlerbirliği SK : Amed SK - Transfermarkt",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBMWWdtUlU1WEVjTnJqaENXUEl0MnFOcEtPV1k2QkJPcVJQengwLXBtcGkzWURxTEZfZXpJZ1F1MzJKZkhxWDBCOEZ5bkc4VjhCczRIb2ZOcDlyajBlNGVNYkNuU2FlSWp6WWFONEw3TQ?oc=5",
+      "source": "Transfermarkt",
+      "source_type": "google_news",
+      "account_type": null,
+      "query": "Gençlerbirliği transfer",
+      "source_tier": "MEDIA",
+      "published_at": "2026-10-10T09:52:47+00:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "MEDIUM",
+      "verification_status": "RUMOR",
+      "interpretation": "Tek kaynaklı transfer iddiası; yalnız transfer radarında izlenir.",
+      "source_count": 1,
+      "sources": [
+        "Transfermarkt"
+      ],
+      "evidence": [
+        {
+          "source": "Transfermarkt",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Gençlerbirliği transfer",
+          "title": "Canlı anlatım - Gençlerbirliği SK : Amed SK - Transfermarkt",
+          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBMWWdtUlU1WEVjTnJqaENXUEl0MnFOcEtPV1k2QkJPcVJQengwLXBtcGkzWURxTEZfZXpJZ1F1MzJKZkhxWDBCOEZ5bkc4VjhCczRIb2ZOcDlyajBlNGVNYkNuU2FlSWp6WWFONEw3TQ?oc=5",
+          "published_at": "2026-10-10T09:52:47+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
       "player_name": "Junior Olaitan",
       "from_club": null,
       "to_club": "Beşiktaş",
@@ -628,6 +669,88 @@
     {
       "player_name": null,
       "from_club": null,
+      "to_club": "Gençlerbirliği",
+      "signal_type": "departure",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "a7ceb451e6e5",
+      "title": "Gençlerbirliği ile Amedspor yenişemedi",
+      "link": "https://www.cnnturk.com/spor/futbol/genclerbirligi-ile-amedspor-yenisemedi-3477455",
+      "source": "CNN Türk Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-10-10T16:46:53+00:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "CNN Türk Spor"
+      ],
+      "evidence": [
+        {
+          "source": "CNN Türk Spor",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Gençlerbirliği ile Amedspor yenişemedi",
+          "link": "https://www.cnnturk.com/spor/futbol/genclerbirligi-ile-amedspor-yenisemedi-3477455",
+          "published_at": "2026-10-10T16:46:53+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": null,
+      "from_club": "Trabzonspor",
+      "to_club": "Samsunspor",
+      "signal_type": "departure",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "9ba7e86dd0ea",
+      "title": "Son dakika: Trabzonspor farklı kazandı! Samsunspor evinde mağlup",
+      "link": "https://www.sabah.com.tr/spor/futbol/2026/10/10/son-dakika-trabzonspor-farkli-kazandi-samsunspor-evinde-maglup",
+      "source": "Sabah Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-10-10T13:14:19+03:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Sabah Spor"
+      ],
+      "evidence": [
+        {
+          "source": "Sabah Spor",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Son dakika: Trabzonspor farklı kazandı! Samsunspor evinde mağlup",
+          "link": "https://www.sabah.com.tr/spor/futbol/2026/10/10/son-dakika-trabzonspor-farkli-kazandi-samsunspor-evinde-maglup",
+          "published_at": "2026-10-10T13:14:19+03:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": null,
+      "from_club": null,
       "to_club": "Fenerbahçe",
       "signal_type": "official_transfer",
       "window": "summer_2026",
@@ -709,6 +832,129 @@
     },
     {
       "player_name": null,
+      "from_club": "Galatasaray",
+      "to_club": "Kasımpaşa",
+      "signal_type": "departure",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "1d8c8625452c",
+      "title": "Spor yazarları Galatasaray-Kasımpaşa maçını yorumladı!",
+      "link": "https://www.fotomac.com.tr/galatasaray/2026/10/10/spor-yazarlari-galatasaray-kasimpasa-macini-yorumladi",
+      "source": "Fotomaç",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-10-10T07:27:17+03:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Fotomaç"
+      ],
+      "evidence": [
+        {
+          "source": "Fotomaç",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Spor yazarları Galatasaray-Kasımpaşa maçını yorumladı!",
+          "link": "https://www.fotomac.com.tr/galatasaray/2026/10/10/spor-yazarlari-galatasaray-kasimpasa-macini-yorumladi",
+          "published_at": "2026-10-10T07:27:17+03:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": null,
+      "from_club": null,
+      "to_club": "Fenerbahçe",
+      "signal_type": "transfer_fee",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "d4e605923963",
+      "title": "Fenerbahçe'den Pavlidis'e dev bonservis! Transfer teklifini duyurdular",
+      "link": "https://www.fotomac.com.tr/fenerbahce/2026/10/09/fenerbahceden-pavlidise-dev-bonservis-transfer-teklifini-duyurdular",
+      "source": "Fotomaç",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-10-10T01:17:17+03:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Fotomaç"
+      ],
+      "evidence": [
+        {
+          "source": "Fotomaç",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Fenerbahçe'den Pavlidis'e dev bonservis! Transfer teklifini duyurdular",
+          "link": "https://www.fotomac.com.tr/fenerbahce/2026/10/09/fenerbahceden-pavlidise-dev-bonservis-transfer-teklifini-duyurdular",
+          "published_at": "2026-10-10T01:17:17+03:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": null,
+      "from_club": null,
+      "to_club": "Galatasaray",
+      "signal_type": "free_agent",
+      "window": "winter_2027",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "4c8db216eb79",
+      "title": "Bruno Fernandes'ten Galatasaray'a büyük müjde! Ocak ayında...",
+      "link": "https://www.fotomac.com.tr/galatasaray/2026/10/10/bruno-fernandesten-galatasaraya-buyuk-mujde-ocak-ayinda",
+      "source": "Fotomaç",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-10-10T00:08:16+03:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Fotomaç"
+      ],
+      "evidence": [
+        {
+          "source": "Fotomaç",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Bruno Fernandes'ten Galatasaray'a büyük müjde! Ocak ayında...",
+          "link": "https://www.fotomac.com.tr/galatasaray/2026/10/10/bruno-fernandesten-galatasaraya-buyuk-mujde-ocak-ayinda",
+          "published_at": "2026-10-10T00:08:16+03:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": null,
       "from_club": null,
       "to_club": "Beşiktaş",
       "signal_type": "departure",
@@ -743,47 +989,6 @@
           "title": "Baskonia - Beşiktaş maçı ne zaman, saat kaçta? Baskonia - Beşiktaş maçı hangi kanalda?",
           "link": "https://www.cnnturk.com/spor/basketbol/baskonia-besiktas-maci-ne-zaman-saat-kacta-baskonia-besiktas-maci-hangi-kanalda-3477259",
           "published_at": "2026-10-09T21:07:32+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": null,
-      "to_club": "Gençlerbirliği",
-      "signal_type": "deal_close",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "b4d83a83633d",
-      "title": "Gençlerbirliği yeni teknik direktörünü açıkladı - Bernd Storck ile sezon sonuna kadar anlaşma sağlandı - Transfermarkt",
-      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOLUVEVWR5amVsMXRUVmYzNmhmVGFZVDFCd0pEbnVwbHktSVRCYTNGNDVfVGotVURQZDVLMU5ySzJuWHpKeFBIeUFPOEtPUEdSaENxN0F6T3cwYlctYnBpaDNmU0d3c1ZId0U0RmgyUFFXTjlMZXB6U1hiS0o1SXUwU1hKeFd1VGVSb0ZqTm1PQkN0SG5rN2ZTM3Z4TTBPX3JrZTJSczhINk5jeV9MZkZ5TlhQaVIwTWVxY1ZWcm5QNWtIS2E5QjBDNGpCeVNDbmFfLTFLdjAzNkVmYXVaNExRbWgtbzU?oc=5",
-      "source": "Transfermarkt",
-      "source_type": "google_news",
-      "account_type": null,
-      "query": "Süper Lig teknik direktör",
-      "source_tier": "MEDIA",
-      "published_at": "2026-10-09T13:39:08+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Transfermarkt"
-      ],
-      "evidence": [
-        {
-          "source": "Transfermarkt",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Süper Lig teknik direktör",
-          "title": "Gençlerbirliği yeni teknik direktörünü açıkladı - Bernd Storck ile sezon sonuna kadar anlaşma sağlandı - Transfermarkt",
-          "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOLUVEVWR5amVsMXRUVmYzNmhmVGFZVDFCd0pEbnVwbHktSVRCYTNGNDVfVGotVURQZDVLMU5ySzJuWHpKeFBIeUFPOEtPUEdSaENxN0F6T3cwYlctYnBpaDNmU0d3c1ZId0U0RmgyUFFXTjlMZXB6U1hiS0o1SXUwU1hKeFd1VGVSb0ZqTm1PQkN0SG5rN2ZTM3Z4TTBPX3JrZTJSczhINk5jeV9MZkZ5TlhQaVIwTWVxY1ZWcm5QNWtIS2E5QjBDNGpCeVNDbmFfLTFLdjAzNkVmYXVaNExRbWgtbzU?oc=5",
-          "published_at": "2026-10-09T13:39:08+00:00",
           "first_observed_at": null
         }
       ],
@@ -833,47 +1038,6 @@
     {
       "player_name": null,
       "from_club": null,
-      "to_club": "Gençlerbirliği",
-      "signal_type": "deal_close",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "eaa5913012c5",
-      "title": "Gençlerbirliği'nin yeni teknik direktörü belli oldu",
-      "link": "https://www.hurriyet.com.tr/sporarena/genclerbirliginin-yeni-teknik-direktoru-belli-oldu-43335476",
-      "source": "Hürriyet Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-10-09T12:08:23+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Hürriyet Spor"
-      ],
-      "evidence": [
-        {
-          "source": "Hürriyet Spor",
-          "source_tier": "MEDIA",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "Gençlerbirliği'nin yeni teknik direktörü belli oldu",
-          "link": "https://www.hurriyet.com.tr/sporarena/genclerbirliginin-yeni-teknik-direktoru-belli-oldu-43335476",
-          "published_at": "2026-10-09T12:08:23+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": null,
       "to_club": "Trabzonspor",
       "signal_type": "transfer_fee",
       "window": "summer_2026",
@@ -915,61 +1079,20 @@
     {
       "player_name": null,
       "from_club": null,
-      "to_club": "Trabzonspor",
-      "signal_type": "interest",
-      "window": "winter_2027",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "d0fdc32f6249",
-      "title": "Trabzonspor deplasmanda ilk peşinde!",
-      "link": "https://www.haberturk.com/spor/foto/samsunspor-trabzonspor-maci-ne-zaman-saat-kacta-hangi-kanalda-canli-yayinlanacak-3918366",
-      "source": "Haberturk Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-10-09T08:11:07+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Haberturk Spor"
-      ],
-      "evidence": [
-        {
-          "source": "Haberturk Spor",
-          "source_tier": "MEDIA",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "Trabzonspor deplasmanda ilk peşinde!",
-          "link": "https://www.haberturk.com/spor/foto/samsunspor-trabzonspor-maci-ne-zaman-saat-kacta-hangi-kanalda-canli-yayinlanacak-3918366",
-          "published_at": "2026-10-09T08:11:07+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": null,
-      "to_club": "Trabzonspor",
+      "to_club": "Beşiktaş",
       "signal_type": "departure",
       "window": "summer_2026",
       "confidence": "LOW",
       "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "fa653a79b42c",
-      "title": "Trabzonspor'da ayrılacak ilk isim belli oldu! - Hürriyet",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPRjZxSlFBRFFPZXN4Z1NENzZIbnJFT2NpaVoxbk0xYW50cHpDTWxSbkdpVFpoSEFnYU90TUFaenFLak9vUHBPTmpYVG83SmVpNDVCV3JoaW1IQ3Zva2FjcGlFaUhiMndRdTlzdnN6WVpzM0J5V0ZEZDJtUURjRDJPVl84UFpDVVF6QWFGVkt3cFpUUHA0?oc=5",
-      "source": "Hürriyet",
+      "article_id": "830bfe3838c6",
+      "title": "Hyeon-gyu Oh Beşiktaş'tan ayrılacak mı? İşte Italiano'nun transfer kararı! - A Spor",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOdXFxdFFSeTlCMkN3dVNyZ2s3anpaSmFRREE3NGw4d2M0Q09MT04wVmptU1pvcmlxUFRPb0o0S1R2ZFJ1SGYzZnREUFlRTDBCUEU0U0NaMEI1QktQTjgtelBxNzhOT0plQk1RWWZ1ZGpMQV9zdGpabGN3QTI1bVFKQ0hJSlJSQ054TnNOOTg1b0hpY3FaRWJoTFJkMU1Ca0NJUGFRdTk0QUVibk5Od00xMDZn0gG3AUFVX3lxTE95dW5tVXplYVhJX0ZJU2tHZktQbk55akstTE5wVnNoaUkwanRKbzk3RDZjcWJnbUdmVjJtLU1mX3NnNTVXTzFpdjdHMFVoTTJWaDJ6NUl1WmxBcVljTFRpVDRwajVOM09abWF2d3pKZ0pXeXFUdEdwODNaUmZrMURFRElQaFI3OGRGNzI3UkhOQ0FxQUlSQXI5RkpUbkhhMm1hUUpXWGN6Z2s0d3R4OHR0V2tUcjJBRQ?oc=5",
+      "source": "A Spor",
       "source_type": "google_news",
       "account_type": null,
-      "query": "Trabzonspor transfer",
+      "query": "Beşiktaş transfer",
       "source_tier": "MEDIA",
-      "published_at": "2026-10-09T06:47:00+00:00",
+      "published_at": "2026-10-09T06:49:59+00:00",
       "first_observed_at": null,
       "summary_tr": "",
       "entity_confidence": "LOW",
@@ -977,18 +1100,18 @@
       "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
       "source_count": 1,
       "sources": [
-        "Hürriyet"
+        "A Spor"
       ],
       "evidence": [
         {
-          "source": "Hürriyet",
+          "source": "A Spor",
           "source_tier": "MEDIA",
           "source_type": "google_news",
           "account_type": null,
-          "query": "Trabzonspor transfer",
-          "title": "Trabzonspor'da ayrılacak ilk isim belli oldu! - Hürriyet",
-          "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPRjZxSlFBRFFPZXN4Z1NENzZIbnJFT2NpaVoxbk0xYW50cHpDTWxSbkdpVFpoSEFnYU90TUFaenFLak9vUHBPTmpYVG83SmVpNDVCV3JoaW1IQ3Zva2FjcGlFaUhiMndRdTlzdnN6WVpzM0J5V0ZEZDJtUURjRDJPVl84UFpDVVF6QWFGVkt3cFpUUHA0?oc=5",
-          "published_at": "2026-10-09T06:47:00+00:00",
+          "query": "Beşiktaş transfer",
+          "title": "Hyeon-gyu Oh Beşiktaş'tan ayrılacak mı? İşte Italiano'nun transfer kararı! - A Spor",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOdXFxdFFSeTlCMkN3dVNyZ2s3anpaSmFRREE3NGw4d2M0Q09MT04wVmptU1pvcmlxUFRPb0o0S1R2ZFJ1SGYzZnREUFlRTDBCUEU0U0NaMEI1QktQTjgtelBxNzhOT0plQk1RWWZ1ZGpMQV9zdGpabGN3QTI1bVFKQ0hJSlJSQ054TnNOOTg1b0hpY3FaRWJoTFJkMU1Ca0NJUGFRdTk0QUVibk5Od00xMDZn0gG3AUFVX3lxTE95dW5tVXplYVhJX0ZJU2tHZktQbk55akstTE5wVnNoaUkwanRKbzk3RDZjcWJnbUdmVjJtLU1mX3NnNTVXTzFpdjdHMFVoTTJWaDJ6NUl1WmxBcVljTFRpVDRwajVOM09abWF2d3pKZ0pXeXFUdEdwODNaUmZrMURFRElQaFI3OGRGNzI3UkhOQ0FxQUlSQXI5RkpUbkhhMm1hUUpXWGN6Z2s0d3R4OHR0V2tUcjJBRQ?oc=5",
+          "published_at": "2026-10-09T06:49:59+00:00",
           "first_observed_at": null
         }
       ],
@@ -1135,7 +1258,7 @@
       "account_type": null,
       "query": "Samsunspor transfer",
       "source_tier": "MEDIA",
-      "published_at": "2026-10-02T13:03:19+00:00",
+      "published_at": "2026-10-02T07:00:00+00:00",
       "first_observed_at": null,
       "summary_tr": "",
       "entity_confidence": "LOW",
@@ -1154,7 +1277,7 @@
           "query": "Samsunspor transfer",
           "title": "Adanaspor'un genç yıldızı bedavaya Samsunspor'a transfer oldu - Gazete Vatan",
           "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNVWxQMDV0ZTFudFhDd2pVajBUaTczMk9FOW4xRnN6dGVHdUVyRzhKWGtaRm5oX25wZk9ydnJ5cS1rYzdBcjBYRVMwdVBpNF9tTXlVdHVFYU5iNUFpZFJFeThsYTRhcXZRV3N3eDBFUGlvN2JoZC11NzhORV85Y050YmE1QnlxM1V0LW1ONHlwdjZXQXNtSEt5Ym1waVdTTW9lYmdYZzg4cDVMazlrMURF?oc=5",
-          "published_at": "2026-10-02T13:03:19+00:00",
+          "published_at": "2026-10-02T07:00:00+00:00",
           "first_observed_at": null
         }
       ],
