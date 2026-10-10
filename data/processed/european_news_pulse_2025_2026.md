@@ -1,13 +1,14 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-10-10T08:30:02.377510+00:00
-Toplam ilgili haber: 19
+Üretim zamanı: 2026-10-10T10:44:18.408982+00:00
+Toplam ilgili haber: 20
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
-- [Fenerbahçe ve Galatasaray'ın tur ihtimalleri belli oldu! Yapay zeka açıkladı](https://www.fotomac.com.tr/fenerbahce/2026/10/09/fenerbahce-ve-galatasarayin-tur-ihtimallari-belli-oldu-yapay-zeka-acikladi) — Fotomaç · 2026-10-10T01:17:29+03:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe
-- [Galatasaray-Barcelona maçı öncesi son dakika! Dünya yıldızı forma giyemeyecek](https://www.fotomac.com.tr/galatasaray/2026/10/09/galatasaray-barcelona-maci-oncesi-son-dakika-dunya-yildizi-forma-giyemeyecek) — Fotomaç · 2026-10-10T01:17:24+03:00 · turnuva=CL · kulüp=Galatasaray
+- [Galatasaray - Barcelona maçının öncelikli biletleri satışa çıktı](https://www.cnnturk.com/spor/futbol/galatasaray-barcelona-macinin-oncelikli-biletleri-satisa-cikti-3477424) — CNN Türk Spor · 2026-10-10T13:01:36+00:00 · turnuva=CL · kulüp=Galatasaray
+- [Galatasaray, Barcelona maçının bilet fiyatlarını açıkladı](https://www.sabah.com.tr/spor/futbol/2026/10/10/galatasaray-barcelona-macinin-bilet-fiyatlarini-acikladi) — Sabah Spor · 2026-10-10T12:41:10+03:00 · turnuva=CL · kulüp=Galatasaray
+- ["UEFA'dan 63 milyon euro gelir elde ettik"](https://www.haberturk.com/spor/dursun-ozbek-uefa-dan-63-milyon-euro-gelir-elde-ettik-3918683) — Haberturk Spor · 2026-10-10T09:49:19+00:00 · turnuva=CL · kulüp=Galatasaray
 - [GALATASARAY BARCELONA MAÇI HANGİ KANALDA? Galatasaray Barcelona maçı saat kaçta, şifreli mi şifresiz mi?](https://www.cnnturk.com/spor/futbol/galatasaray-barcelona-maci-hangi-kanalda-galatasaray-barcelona-maci-saat-kacta-sifreli-mi-sifresiz-mi-3477290) — CNN Türk Spor · 2026-10-10T00:33:21+00:00 · turnuva=EL · kulüp=Galatasaray
 - ["Milli ara dönüşü galibiyetle başlamak önemliydi!"](https://www.haberturk.com/spor/irfan-saraloglu-milli-aradan-donuste-lige-galibiyetle-baslamak-onemliydi-3918606) — Haberturk Spor · 2026-10-09T20:50:45+00:00 · turnuva=CL · kulüp=Galatasaray
 - [Yunus Akgün'den Barcelona açıklaması!](https://www.haberturk.com/spor/yunus-akgun-den-barcelona-aciklamasi-3918596) — Haberturk Spor · 2026-10-09T20:06:36+00:00 · turnuva=CL · kulüp=Galatasaray, Kasımpaşa
