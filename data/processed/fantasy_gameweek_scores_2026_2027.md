@@ -1,6 +1,6 @@
 # Kadro Kur — Haftalık Puanlar
 
-- Puanlanan hafta sayısı: 6
+- Puanlanan hafta sayısı: 7
 - Toplamda puan alan oyuncu: 472
 - En yüksek puanlı 5 oyuncu:
   - MILAN SKRINIAR (FENERBAHÇE A.Ş.): 29 puan

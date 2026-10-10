@@ -4,12 +4,12 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 
 ## Genel Karne
 
-- Değerlendirilen maç: **54**
-- İsabet: **21/54** (%39)
+- Değerlendirilen maç: **55**
+- İsabet: **22/55** (%40)
 - Beraberlik yakalama: **2/11** (%18)
-- Yüksek güvenli maç isabeti: **9/19** (%47)
-- Brier score: **0.666** (düşük daha iyi; 2025-26 referans 0.600)
-- Log loss: **1.091** (düşük daha iyi; 2025-26 referans 1.005)
+- Yüksek güvenli maç isabeti: **10/20** (%50)
+- Brier score: **0.660** (düşük daha iyi; 2025-26 referans 0.600)
+- Log loss: **1.083** (düşük daha iyi; 2025-26 referans 1.005)
 
 ### Güven bandı kalibrasyonu
 
@@ -17,7 +17,7 @@ _"Beyan edilen ort. olasılık" ile "İsabet" arasındaki fark büyükse (özell
 
 | Güven bandı | Maç | İsabet | Beyan edilen ort. olasılık | Brier | Log loss | Referans (2025-26: isabet / brier / logloss) |
 | --- | --- | --- | --- | --- | --- | --- |
-| HIGH | 19 | 9/19 (%47) | %59 | 0.628 | 1.038 | %64 / 0.516 / 0.885 |
+| HIGH | 20 | 10/20 (%50) | %59 | 0.612 | 1.017 | %64 / 0.516 / 0.885 |
 | MEDIUM | 20 | 4/20 (%20) | %46 | 0.700 | 1.129 | %54 / 0.619 / 1.032 |
 | LOW | 15 | 8/15 (%53) | %39 | 0.669 | 1.108 | %48 / 0.670 / 1.103 |
 
@@ -27,9 +27,15 @@ _Model hangi tarafı seçtiğinde ne oldu? Belirli bir seçimde (ör. deplasman 
 
 | Seçim | Maç | İsabet | Gerçekleşen (Ev / X / Dep) |
 | --- | --- | --- | --- |
-| Ev | 33 | 15/33 (%45) | 15 / 6 / 12 |
+| Ev | 34 | 16/34 (%47) | 16 / 6 / 12 |
 | Beraberlik | 3 | 2/3 (%67) | 0 / 2 / 1 |
 | Deplasman | 18 | 4/18 (%22) | 11 / 3 / 4 |
+
+## Hafta 7 — 1/1 isabet (%100)
+
+| Maç | Skor | Tahmin | Sonuç | Güven |
+| --- | --- | --- | --- | --- |
+| GALATASARAY A.Ş. - KASIMPAŞA A.Ş. | 3 - 1 | Ev | ✅ | HIGH |
 
 ## Hafta 6 — 4/9 isabet (%44)
 

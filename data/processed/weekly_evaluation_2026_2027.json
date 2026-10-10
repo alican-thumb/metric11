@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-10-09T22:38:22.974512",
+  "generated_at": "2026-10-10T05:47:37.599605",
   "season": "2026-2027",
   "summary": {
-    "evaluated_matches": 54,
-    "correct": 21,
-    "accuracy": 0.3889,
+    "evaluated_matches": 55,
+    "correct": 22,
+    "accuracy": 0.4,
     "actual_draws": 11,
     "draws_caught": 2,
     "draw_recall": 0.1818,
-    "high_conf_matches": 19,
-    "high_conf_correct": 9,
-    "high_conf_accuracy": 0.4737,
-    "brier_score": 0.6662,
-    "log_loss": 1.0915,
+    "high_conf_matches": 20,
+    "high_conf_correct": 10,
+    "high_conf_accuracy": 0.5,
+    "brier_score": 0.6598,
+    "log_loss": 1.0828,
     "confidence_breakdown": {
       "HIGH": {
-        "matches": 19,
-        "correct": 9,
-        "accuracy": 0.4737,
-        "avg_stated_probability": 0.5897,
-        "calibration_gap": -0.116,
-        "brier_score": 0.6276,
-        "log_loss": 1.0384
+        "matches": 20,
+        "correct": 10,
+        "accuracy": 0.5,
+        "avg_stated_probability": 0.5872,
+        "calibration_gap": -0.0872,
+        "brier_score": 0.612,
+        "log_loss": 1.0172
       },
       "MEDIUM": {
         "matches": 20,
@@ -44,11 +44,11 @@
     },
     "pick_side_breakdown": {
       "home": {
-        "matches": 33,
-        "correct": 15,
-        "accuracy": 0.4545,
+        "matches": 34,
+        "correct": 16,
+        "accuracy": 0.4706,
         "actual": {
-          "home": 15,
+          "home": 16,
           "draw": 6,
           "away": 12
         }
@@ -75,59 +75,59 @@
       }
     }
   },
-  "last_played_week": 6,
+  "last_played_week": 7,
   "last_week": {
-    "week": 6,
+    "week": 7,
     "summary": {
-      "evaluated_matches": 9,
-      "correct": 4,
-      "accuracy": 0.4444,
-      "actual_draws": 2,
+      "evaluated_matches": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "actual_draws": 0,
       "draws_caught": 0,
-      "draw_recall": 0.0,
-      "high_conf_matches": 4,
+      "draw_recall": null,
+      "high_conf_matches": 1,
       "high_conf_correct": 1,
-      "high_conf_accuracy": 0.25,
-      "brier_score": 0.6765,
-      "log_loss": 1.1029,
+      "high_conf_accuracy": 1.0,
+      "brier_score": 0.3167,
+      "log_loss": 0.6143,
       "confidence_breakdown": {
         "HIGH": {
-          "matches": 4,
+          "matches": 1,
           "correct": 1,
-          "accuracy": 0.25,
-          "avg_stated_probability": 0.588,
-          "calibration_gap": -0.338,
-          "brier_score": 0.7457,
-          "log_loss": 1.179
+          "accuracy": 1.0,
+          "avg_stated_probability": 0.541,
+          "calibration_gap": 0.459,
+          "brier_score": 0.3167,
+          "log_loss": 0.6143
         },
         "MEDIUM": {
-          "matches": 3,
-          "correct": 2,
-          "accuracy": 0.6667,
-          "avg_stated_probability": 0.4773,
-          "calibration_gap": 0.1894,
-          "brier_score": 0.5506,
-          "log_loss": 0.9257
+          "matches": 0,
+          "correct": 0,
+          "accuracy": null,
+          "avg_stated_probability": null,
+          "calibration_gap": null,
+          "brier_score": null,
+          "log_loss": null
         },
         "LOW": {
-          "matches": 2,
-          "correct": 1,
-          "accuracy": 0.5,
-          "avg_stated_probability": 0.428,
-          "calibration_gap": 0.072,
-          "brier_score": 0.727,
-          "log_loss": 1.2165
+          "matches": 0,
+          "correct": 0,
+          "accuracy": null,
+          "avg_stated_probability": null,
+          "calibration_gap": null,
+          "brier_score": null,
+          "log_loss": null
         }
       },
       "pick_side_breakdown": {
         "home": {
-          "matches": 7,
-          "correct": 4,
-          "accuracy": 0.5714,
+          "matches": 1,
+          "correct": 1,
+          "accuracy": 1.0,
           "actual": {
-            "home": 4,
-            "draw": 2,
-            "away": 1
+            "home": 1,
+            "draw": 0,
+            "away": 0
           }
         },
         "draw": {
@@ -141,11 +141,11 @@
           }
         },
         "away": {
-          "matches": 2,
+          "matches": 0,
           "correct": 0,
-          "accuracy": 0.0,
+          "accuracy": null,
           "actual": {
-            "home": 2,
+            "home": 0,
             "draw": 0,
             "away": 0
           }
@@ -154,148 +154,20 @@
     },
     "matches": [
       {
-        "match_id": "317830",
-        "date_time": "18.09.2026 20:00",
-        "home_team": "KASIMPAŞA A.Ş.",
-        "away_team": "TÜMOSAN KONYASPOR",
-        "actual_score": "0 - 0",
-        "actual": "draw",
-        "predicted": "home",
-        "raw_predicted": "home",
-        "correct": false,
-        "data_confidence": "PLAYED",
-        "prediction_confidence": "HIGH",
-        "home_win_probability": 0.573,
-        "draw_probability": 0.253,
-        "away_win_probability": 0.173
-      },
-      {
-        "match_id": "317834",
-        "date_time": "19.09.2026 17:00",
-        "home_team": "ARCA ÇORUM FK",
-        "away_team": "CORENDON ALANYASPOR",
-        "actual_score": "1 - 2",
-        "actual": "away",
-        "predicted": "home",
-        "raw_predicted": "home",
-        "correct": false,
-        "data_confidence": "PLAYED",
-        "prediction_confidence": "HIGH",
-        "home_win_probability": 0.538,
-        "draw_probability": 0.208,
-        "away_win_probability": 0.254
-      },
-      {
-        "match_id": "317836",
-        "date_time": "19.09.2026 17:00",
-        "home_team": "KOCAELİSPOR",
-        "away_team": "GAZİANTEP FUTBOL KULÜBÜ A.Ş.",
-        "actual_score": "2 - 0",
-        "actual": "home",
-        "predicted": "home",
-        "raw_predicted": "home",
-        "correct": true,
-        "data_confidence": "PLAYED",
-        "prediction_confidence": "MEDIUM",
-        "home_win_probability": 0.462,
-        "draw_probability": 0.278,
-        "away_win_probability": 0.26
-      },
-      {
-        "match_id": "317829",
-        "date_time": "19.09.2026 20:00",
-        "home_team": "TRABZONSPOR A.Ş.",
-        "away_team": "GALATASARAY A.Ş.",
-        "actual_score": "4 - 0",
-        "actual": "home",
-        "predicted": "away",
-        "raw_predicted": "away",
-        "correct": false,
-        "data_confidence": "PLAYED",
-        "prediction_confidence": "HIGH",
-        "home_win_probability": 0.211,
-        "draw_probability": 0.208,
-        "away_win_probability": 0.581
-      },
-      {
-        "match_id": "317831",
-        "date_time": "19.09.2026 20:00",
-        "home_team": "İSTANBUL BAŞAKŞEHİR FK",
-        "away_team": "GENÇLERBİRLİĞİ",
-        "actual_score": "4 - 0",
-        "actual": "home",
-        "predicted": "home",
-        "raw_predicted": "home",
-        "correct": true,
-        "data_confidence": "PLAYED",
-        "prediction_confidence": "LOW",
-        "home_win_probability": 0.422,
-        "draw_probability": 0.224,
-        "away_win_probability": 0.355
-      },
-      {
-        "match_id": "317835",
-        "date_time": "20.09.2026 17:00",
-        "home_team": "FENERBAHÇE A.Ş.",
-        "away_team": "EYÜPSPOR",
-        "actual_score": "8 - 0",
+        "match_id": "317844",
+        "date_time": "09.10.2026 20:00",
+        "home_team": "GALATASARAY A.Ş.",
+        "away_team": "KASIMPAŞA A.Ş.",
+        "actual_score": "3 - 1",
         "actual": "home",
         "predicted": "home",
         "raw_predicted": "home",
         "correct": true,
         "data_confidence": "PLAYED",
         "prediction_confidence": "HIGH",
-        "home_win_probability": 0.66,
-        "draw_probability": 0.189,
-        "away_win_probability": 0.151
-      },
-      {
-        "match_id": "317837",
-        "date_time": "20.09.2026 17:00",
-        "home_team": "ERZURUMSPOR FK",
-        "away_team": "SAMSUNSPOR A.Ş.",
-        "actual_score": "1 - 0",
-        "actual": "home",
-        "predicted": "away",
-        "raw_predicted": "away",
-        "correct": false,
-        "data_confidence": "PLAYED",
-        "prediction_confidence": "MEDIUM",
-        "home_win_probability": 0.28,
-        "draw_probability": 0.231,
-        "away_win_probability": 0.489
-      },
-      {
-        "match_id": "317832",
-        "date_time": "20.09.2026 20:00",
-        "home_team": "AMED SPORTİF FAALİYETLER",
-        "away_team": "BEŞİKTAŞ A.Ş.",
-        "actual_score": "3 - 2",
-        "actual": "home",
-        "predicted": "home",
-        "raw_predicted": "home",
-        "correct": true,
-        "data_confidence": "PLAYED",
-        "prediction_confidence": "MEDIUM",
-        "home_win_probability": 0.481,
-        "draw_probability": 0.223,
-        "away_win_probability": 0.296
-      },
-      {
-        "match_id": "317833",
-        "date_time": "20.09.2026 20:00",
-        "home_team": "GÖZTEPE A.Ş.",
-        "away_team": "ÇAYKUR RİZESPOR A.Ş.",
-        "actual_score": "2 - 2",
-        "actual": "draw",
-        "predicted": "home",
-        "raw_predicted": "home",
-        "correct": false,
-        "data_confidence": "PLAYED",
-        "prediction_confidence": "LOW",
-        "home_win_probability": 0.434,
-        "draw_probability": 0.208,
-        "away_win_probability": 0.358
+        "home_win_probability": 0.541,
+        "draw_probability": 0.211,
+        "away_win_probability": 0.248
       }
     ]
   },
@@ -1635,6 +1507,101 @@
           "home_win_probability": 0.434,
           "draw_probability": 0.208,
           "away_win_probability": 0.358
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "summary": {
+        "evaluated_matches": 1,
+        "correct": 1,
+        "accuracy": 1.0,
+        "actual_draws": 0,
+        "draws_caught": 0,
+        "draw_recall": null,
+        "high_conf_matches": 1,
+        "high_conf_correct": 1,
+        "high_conf_accuracy": 1.0,
+        "brier_score": 0.3167,
+        "log_loss": 0.6143,
+        "confidence_breakdown": {
+          "HIGH": {
+            "matches": 1,
+            "correct": 1,
+            "accuracy": 1.0,
+            "avg_stated_probability": 0.541,
+            "calibration_gap": 0.459,
+            "brier_score": 0.3167,
+            "log_loss": 0.6143
+          },
+          "MEDIUM": {
+            "matches": 0,
+            "correct": 0,
+            "accuracy": null,
+            "avg_stated_probability": null,
+            "calibration_gap": null,
+            "brier_score": null,
+            "log_loss": null
+          },
+          "LOW": {
+            "matches": 0,
+            "correct": 0,
+            "accuracy": null,
+            "avg_stated_probability": null,
+            "calibration_gap": null,
+            "brier_score": null,
+            "log_loss": null
+          }
+        },
+        "pick_side_breakdown": {
+          "home": {
+            "matches": 1,
+            "correct": 1,
+            "accuracy": 1.0,
+            "actual": {
+              "home": 1,
+              "draw": 0,
+              "away": 0
+            }
+          },
+          "draw": {
+            "matches": 0,
+            "correct": 0,
+            "accuracy": null,
+            "actual": {
+              "home": 0,
+              "draw": 0,
+              "away": 0
+            }
+          },
+          "away": {
+            "matches": 0,
+            "correct": 0,
+            "accuracy": null,
+            "actual": {
+              "home": 0,
+              "draw": 0,
+              "away": 0
+            }
+          }
+        }
+      },
+      "matches": [
+        {
+          "match_id": "317844",
+          "date_time": "09.10.2026 20:00",
+          "home_team": "GALATASARAY A.Ş.",
+          "away_team": "KASIMPAŞA A.Ş.",
+          "actual_score": "3 - 1",
+          "actual": "home",
+          "predicted": "home",
+          "raw_predicted": "home",
+          "correct": true,
+          "data_confidence": "PLAYED",
+          "prediction_confidence": "HIGH",
+          "home_win_probability": 0.541,
+          "draw_probability": 0.211,
+          "away_win_probability": 0.248
         }
       ]
     }
