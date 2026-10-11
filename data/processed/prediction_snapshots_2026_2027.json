@@ -12123,5 +12123,197 @@
     },
     "raw_predicted": "away",
     "predicted": "away"
+  },
+  "317843": {
+    "frozen_at": "2026-10-11T21:55:14.110027",
+    "prediction": {
+      "expected_home_goals": 1.08,
+      "expected_away_goals": 1.58,
+      "top_scorelines": [
+        {
+          "score": "1-1",
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.119
+        },
+        {
+          "score": "0-1",
+          "home_goals": 0,
+          "away_goals": 1,
+          "probability": 0.111
+        },
+        {
+          "score": "1-2",
+          "home_goals": 1,
+          "away_goals": 2,
+          "probability": 0.094
+        },
+        {
+          "score": "0-2",
+          "home_goals": 0,
+          "away_goals": 2,
+          "probability": 0.088
+        },
+        {
+          "score": "1-0",
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.075
+        }
+      ],
+      "recommended_scoreline": {
+        "score": "0-1",
+        "home_goals": 0,
+        "away_goals": 1,
+        "probability": 0.111
+      },
+      "home_win_probability": 0.259,
+      "draw_probability": 0.251,
+      "away_win_probability": 0.49,
+      "head_to_head": {
+        "available": false,
+        "matches": 0,
+        "draw_rate": null
+      },
+      "transfer_signal": {
+        "home": {
+          "available": true,
+          "edge": -0.0735,
+          "news_signal": null,
+          "squad_signal": {
+            "available": true,
+            "edge": -0.0735,
+            "net_value_eur": -3675000,
+            "arrivals_value_eur": 15050000,
+            "departures_value_eur": 18725000,
+            "top_arrivals": [
+              {
+                "player": "MOSTAFA MOHAMED",
+                "market_value_eur": 3500000
+              },
+              {
+                "player": "CHIDOZIE AWAZIEM",
+                "market_value_eur": 2500000
+              },
+              {
+                "player": "JEAN LUC DOMPE",
+                "market_value_eur": 2500000
+              },
+              {
+                "player": "ARTHUR MASUAKU",
+                "market_value_eur": 2000000
+              },
+              {
+                "player": "ENIS DESTAN",
+                "market_value_eur": 2000000
+              }
+            ],
+            "top_departures": [
+              {
+                "player": "KAZEEM OLAIGBE",
+                "market_value_eur": 4000000
+              },
+              {
+                "player": "ADAMO NAGALO",
+                "market_value_eur": 2800000
+              },
+              {
+                "player": "BERKAN KUTLU",
+                "market_value_eur": 2500000
+              },
+              {
+                "player": "RIECHEDLY BAZOER",
+                "market_value_eur": 1500000
+              },
+              {
+                "player": "JIN HO JO",
+                "market_value_eur": 1000000
+              }
+            ],
+            "pending_arrivals": [
+              {
+                "player": "EMIR GUNDOGDU",
+                "market_value_eur": 0
+              }
+            ]
+          }
+        },
+        "away": {
+          "available": false,
+          "edge": 0.0
+        }
+      },
+      "fixture_congestion": {
+        "home": {
+          "available": false,
+          "edge": 0.0,
+          "days_rest": null,
+          "opponent": null
+        },
+        "away": {
+          "available": false,
+          "edge": 0.0,
+          "days_rest": null,
+          "opponent": null
+        }
+      },
+      "european_signal": {
+        "home": {
+          "available": false,
+          "edge": 0.0,
+          "match_count": 0
+        },
+        "away": {
+          "available": true,
+          "edge": -0.0276,
+          "match_count": 2,
+          "record": {
+            "w": 0,
+            "d": 1,
+            "l": 1
+          },
+          "recent": [
+            {
+              "outcome": "loss",
+              "opponent": "Inter Turku",
+              "opponent_strength": "weak",
+              "date": "2026-07-30",
+              "score": "0-2"
+            },
+            {
+              "outcome": "draw",
+              "opponent": "Inter Turku",
+              "opponent_strength": "weak",
+              "date": "2026-07-22",
+              "score": "1-1"
+            }
+          ]
+        }
+      },
+      "suspension_signal": {
+        "home": {
+          "available": true,
+          "edge": 0.0,
+          "suspended_players": []
+        },
+        "away": {
+          "available": true,
+          "edge": 0.0,
+          "suspended_players": []
+        }
+      },
+      "home_elo": 1448.7,
+      "away_elo": 1545.2,
+      "home_points_per_match": 0.5,
+      "away_points_per_match": 1.38,
+      "strength_edge": -0.322,
+      "home_xg_efficiency": null,
+      "away_xg_efficiency": null,
+      "referee_adj": 0.0,
+      "referee_cards_per_match": null,
+      "referee_goals_per_match": null
+    },
+    "raw_predicted": "away",
+    "predicted": "away"
   }
 }

@@ -4,12 +4,12 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 
 ## Genel Karne
 
-- Değerlendirilen maç: **59**
-- İsabet: **24/59** (%41)
-- Beraberlik yakalama: **2/13** (%15)
+- Değerlendirilen maç: **60**
+- İsabet: **24/60** (%40)
+- Beraberlik yakalama: **2/14** (%14)
 - Yüksek güvenli maç isabeti: **12/23** (%52)
-- Brier score: **0.655** (düşük daha iyi; 2025-26 referans 0.600)
-- Log loss: **1.077** (düşük daha iyi; 2025-26 referans 1.005)
+- Brier score: **0.659** (düşük daha iyi; 2025-26 referans 0.600)
+- Log loss: **1.082** (düşük daha iyi; 2025-26 referans 1.005)
 
 ### Güven bandı kalibrasyonu
 
@@ -18,7 +18,7 @@ _"Beyan edilen ort. olasılık" ile "İsabet" arasındaki fark büyükse (özell
 | Güven bandı | Maç | İsabet | Beyan edilen ort. olasılık | Brier | Log loss | Referans (2025-26: isabet / brier / logloss) |
 | --- | --- | --- | --- | --- | --- | --- |
 | HIGH | 23 | 12/23 (%52) | %59 | 0.595 | 0.992 | %64 / 0.516 / 0.885 |
-| MEDIUM | 21 | 4/21 (%19) | %46 | 0.712 | 1.147 | %54 / 0.619 / 1.032 |
+| MEDIUM | 22 | 4/22 (%18) | %47 | 0.719 | 1.157 | %54 / 0.619 / 1.032 |
 | LOW | 15 | 8/15 (%53) | %39 | 0.669 | 1.108 | %48 / 0.670 / 1.103 |
 
 ### Seçilen tarafa göre isabet
@@ -29,9 +29,9 @@ _Model hangi tarafı seçtiğinde ne oldu? Belirli bir seçimde (ör. deplasman 
 | --- | --- | --- | --- |
 | Ev | 35 | 16/35 (%46) | 16 / 7 / 12 |
 | Beraberlik | 3 | 2/3 (%67) | 0 / 2 / 1 |
-| Deplasman | 21 | 6/21 (%29) | 11 / 4 / 6 |
+| Deplasman | 22 | 6/22 (%27) | 11 / 5 / 6 |
 
-## Hafta 7 — 3/5 isabet (%60)
+## Hafta 7 — 3/6 isabet (%50)
 
 | Maç | Skor | Tahmin | Sonuç | Güven |
 | --- | --- | --- | --- | --- |
@@ -40,6 +40,7 @@ _Model hangi tarafı seçtiğinde ne oldu? Belirli bir seçimde (ör. deplasman 
 | CORENDON ALANYASPOR - ERZURUMSPOR FK | 0 - 0 | Ev | ❌ | HIGH |
 | SAMSUNSPOR A.Ş. - TRABZONSPOR A.Ş. | 0 - 3 | Deplasman | ✅ | HIGH |
 | ÇAYKUR RİZESPOR A.Ş. - FENERBAHÇE A.Ş. | 0 - 3 | Deplasman | ✅ | HIGH |
+| TÜMOSAN KONYASPOR - İSTANBUL BAŞAKŞEHİR FK | 0 - 0 | Deplasman | ❌ | MEDIUM |
 
 ## Hafta 6 — 4/9 isabet (%44)
 
