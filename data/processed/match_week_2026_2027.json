@@ -1,6 +1,6 @@
 {
   "available": true,
-  "generated_at": "2026-10-11T16:22:00.473582",
+  "generated_at": "2026-10-11T21:55:15.974042",
   "week": 7,
   "matches": [
     {
@@ -98,29 +98,18 @@
       "date": "11 Eki",
       "home_team": "TÜMOSAN KONYASPOR",
       "away_team": "İSTANBUL BAŞAKŞEHİR FK",
-      "is_played": false,
-      "actual_score": null,
+      "is_played": true,
+      "actual_score": "0 - 0",
       "predicted": "away",
       "pick_text": "İSTANBUL BAŞAKŞEHİR FK",
       "home_win_probability": 0.259,
       "draw_probability": 0.251,
       "away_win_probability": 0.49,
-      "data_confidence": "MEDIUM",
+      "data_confidence": "PLAYED",
       "recommended_scoreline": "0-1",
       "expected_home_goals": 1.08,
       "expected_away_goals": 1.58,
-      "signals": {
-        "over_2_5_probability": 0.497,
-        "btts_probability": 0.524,
-        "expected_total_cards": 4.4,
-        "red_card_risk": 0.19,
-        "home_card_data_available": true,
-        "away_card_data_available": true,
-        "no_goal_probability": 0.07,
-        "home_scores_first_probability": 0.378,
-        "away_scores_first_probability": 0.552,
-        "likely_goal_band": "76-90+"
-      }
+      "signals": null
     },
     {
       "match_id": "317838",
@@ -212,17 +201,17 @@
   ],
   "last_week": {
     "week": 7,
-    "evaluated_matches": 5,
+    "evaluated_matches": 6,
     "correct": 3,
-    "accuracy": 0.6,
-    "actual_draws": 2,
+    "accuracy": 0.5,
+    "actual_draws": 3,
     "draws_caught": 0,
     "draw_recall": 0.0,
     "high_conf_matches": 4,
     "high_conf_correct": 3,
     "high_conf_accuracy": 0.75,
-    "brier_score": 0.5402,
-    "log_loss": 0.9163,
+    "brier_score": 0.5948,
+    "log_loss": 0.9939,
     "confidence_breakdown": {
       "HIGH": {
         "matches": 4,
@@ -234,13 +223,13 @@
         "log_loss": 0.7713
       },
       "MEDIUM": {
-        "matches": 1,
+        "matches": 2,
         "correct": 0,
         "accuracy": 0.0,
-        "avg_stated_probability": 0.518,
-        "calibration_gap": -0.518,
-        "brier_score": 0.9371,
-        "log_loss": 1.4961
+        "avg_stated_probability": 0.504,
+        "calibration_gap": -0.504,
+        "brier_score": 0.9026,
+        "log_loss": 1.4392
       },
       "LOW": {
         "matches": 0,
@@ -274,12 +263,12 @@
         }
       },
       "away": {
-        "matches": 3,
+        "matches": 4,
         "correct": 2,
-        "accuracy": 0.6667,
+        "accuracy": 0.5,
         "actual": {
           "home": 0,
-          "draw": 1,
+          "draw": 2,
           "away": 2
         }
       }

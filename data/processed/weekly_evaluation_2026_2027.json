@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-11T16:22:00.391228",
+  "generated_at": "2026-10-11T21:55:15.911973",
   "season": "2026-2027",
   "summary": {
-    "evaluated_matches": 59,
+    "evaluated_matches": 60,
     "correct": 24,
-    "accuracy": 0.4068,
-    "actual_draws": 13,
+    "accuracy": 0.4,
+    "actual_draws": 14,
     "draws_caught": 2,
-    "draw_recall": 0.1538,
+    "draw_recall": 0.1429,
     "high_conf_matches": 23,
     "high_conf_correct": 12,
     "high_conf_accuracy": 0.5217,
-    "brier_score": 0.6555,
-    "log_loss": 1.0767,
+    "brier_score": 0.659,
+    "log_loss": 1.0818,
     "confidence_breakdown": {
       "HIGH": {
         "matches": 23,
@@ -24,13 +24,13 @@
         "log_loss": 0.9919
       },
       "MEDIUM": {
-        "matches": 21,
+        "matches": 22,
         "correct": 4,
-        "accuracy": 0.1905,
-        "avg_stated_probability": 0.4642,
-        "calibration_gap": -0.2737,
-        "brier_score": 0.7116,
-        "log_loss": 1.1468
+        "accuracy": 0.1818,
+        "avg_stated_probability": 0.4654,
+        "calibration_gap": -0.2836,
+        "brier_score": 0.7187,
+        "log_loss": 1.1575
       },
       "LOW": {
         "matches": 15,
@@ -64,12 +64,12 @@
         }
       },
       "away": {
-        "matches": 21,
+        "matches": 22,
         "correct": 6,
-        "accuracy": 0.2857,
+        "accuracy": 0.2727,
         "actual": {
           "home": 11,
-          "draw": 4,
+          "draw": 5,
           "away": 6
         }
       }
@@ -79,17 +79,17 @@
   "last_week": {
     "week": 7,
     "summary": {
-      "evaluated_matches": 5,
+      "evaluated_matches": 6,
       "correct": 3,
-      "accuracy": 0.6,
-      "actual_draws": 2,
+      "accuracy": 0.5,
+      "actual_draws": 3,
       "draws_caught": 0,
       "draw_recall": 0.0,
       "high_conf_matches": 4,
       "high_conf_correct": 3,
       "high_conf_accuracy": 0.75,
-      "brier_score": 0.5402,
-      "log_loss": 0.9163,
+      "brier_score": 0.5948,
+      "log_loss": 0.9939,
       "confidence_breakdown": {
         "HIGH": {
           "matches": 4,
@@ -101,13 +101,13 @@
           "log_loss": 0.7713
         },
         "MEDIUM": {
-          "matches": 1,
+          "matches": 2,
           "correct": 0,
           "accuracy": 0.0,
-          "avg_stated_probability": 0.518,
-          "calibration_gap": -0.518,
-          "brier_score": 0.9371,
-          "log_loss": 1.4961
+          "avg_stated_probability": 0.504,
+          "calibration_gap": -0.504,
+          "brier_score": 0.9026,
+          "log_loss": 1.4392
         },
         "LOW": {
           "matches": 0,
@@ -141,12 +141,12 @@
           }
         },
         "away": {
-          "matches": 3,
+          "matches": 4,
           "correct": 2,
-          "accuracy": 0.6667,
+          "accuracy": 0.5,
           "actual": {
             "home": 0,
-            "draw": 1,
+            "draw": 2,
             "away": 2
           }
         }
@@ -232,6 +232,22 @@
         "home_win_probability": 0.197,
         "draw_probability": 0.179,
         "away_win_probability": 0.623
+      },
+      {
+        "match_id": "317843",
+        "date_time": "11.10.2026 13:30",
+        "home_team": "TÜMOSAN KONYASPOR",
+        "away_team": "İSTANBUL BAŞAKŞEHİR FK",
+        "actual_score": "0 - 0",
+        "actual": "draw",
+        "predicted": "away",
+        "raw_predicted": "away",
+        "correct": false,
+        "data_confidence": "PLAYED",
+        "prediction_confidence": "MEDIUM",
+        "home_win_probability": 0.259,
+        "draw_probability": 0.251,
+        "away_win_probability": 0.49
       }
     ]
   },
@@ -1577,17 +1593,17 @@
     {
       "week": 7,
       "summary": {
-        "evaluated_matches": 5,
+        "evaluated_matches": 6,
         "correct": 3,
-        "accuracy": 0.6,
-        "actual_draws": 2,
+        "accuracy": 0.5,
+        "actual_draws": 3,
         "draws_caught": 0,
         "draw_recall": 0.0,
         "high_conf_matches": 4,
         "high_conf_correct": 3,
         "high_conf_accuracy": 0.75,
-        "brier_score": 0.5402,
-        "log_loss": 0.9163,
+        "brier_score": 0.5948,
+        "log_loss": 0.9939,
         "confidence_breakdown": {
           "HIGH": {
             "matches": 4,
@@ -1599,13 +1615,13 @@
             "log_loss": 0.7713
           },
           "MEDIUM": {
-            "matches": 1,
+            "matches": 2,
             "correct": 0,
             "accuracy": 0.0,
-            "avg_stated_probability": 0.518,
-            "calibration_gap": -0.518,
-            "brier_score": 0.9371,
-            "log_loss": 1.4961
+            "avg_stated_probability": 0.504,
+            "calibration_gap": -0.504,
+            "brier_score": 0.9026,
+            "log_loss": 1.4392
           },
           "LOW": {
             "matches": 0,
@@ -1639,12 +1655,12 @@
             }
           },
           "away": {
-            "matches": 3,
+            "matches": 4,
             "correct": 2,
-            "accuracy": 0.6667,
+            "accuracy": 0.5,
             "actual": {
               "home": 0,
-              "draw": 1,
+              "draw": 2,
               "away": 2
             }
           }
@@ -1730,6 +1746,22 @@
           "home_win_probability": 0.197,
           "draw_probability": 0.179,
           "away_win_probability": 0.623
+        },
+        {
+          "match_id": "317843",
+          "date_time": "11.10.2026 13:30",
+          "home_team": "TÜMOSAN KONYASPOR",
+          "away_team": "İSTANBUL BAŞAKŞEHİR FK",
+          "actual_score": "0 - 0",
+          "actual": "draw",
+          "predicted": "away",
+          "raw_predicted": "away",
+          "correct": false,
+          "data_confidence": "PLAYED",
+          "prediction_confidence": "MEDIUM",
+          "home_win_probability": 0.259,
+          "draw_probability": 0.251,
+          "away_win_probability": 0.49
         }
       ]
     }
