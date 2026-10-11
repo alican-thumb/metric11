@@ -1,12 +1,12 @@
 # TFF Oyuncu Profilleri
 
 - Takım filtresi: Yok
-- Profil sayısı: 472
+- Profil sayısı: 482
 - Hata sayısı: 0
 - Ortalama yaş: 25.8
-- Ortalama kalan sözleşme ayı: 21.9
-- 23 yaş ve altı oyuncu: 160
-- 13 ay içinde sözleşmesi bitecek oyuncu: 184
+- Ortalama kalan sözleşme ayı: 22.0
+- 23 yaş ve altı oyuncu: 167
+- 13 ay içinde sözleşmesi bitecek oyuncu: 187
 
 ## Genç Oyuncular
 
@@ -16,6 +16,7 @@
 - ERK ARDA ASLAN (GENÇLERBİRLİĞİ): yaş=17, sözleşme bitiş=Yok
 - MUSTAFA COŞKUN TOSUN (ÇAYKUR RİZESPOR A.Ş.): yaş=17, sözleşme bitiş=2029-06-30
 - YİĞİT HAMZA AYDAR (GENÇLERBİRLİĞİ): yaş=17, sözleşme bitiş=2028-06-30
+- İSMAİL DUYU (AMED SPORTİF FAALİYETLER): yaş=17, sözleşme bitiş=Yok
 - AHMET SALİH ARICI (KASIMPAŞA A.Ş.): yaş=18, sözleşme bitiş=Yok
 - ALİ OSMAN KALIN (GAZİANTEP FUTBOL KULÜBÜ A.Ş.): yaş=18, sözleşme bitiş=2027-06-30
 - CEMİLHAN ASLAN (GAZİANTEP FUTBOL KULÜBÜ A.Ş.): yaş=18, sözleşme bitiş=2027-06-30
@@ -27,6 +28,7 @@
 - RENE MITONGO MUTEBA (TRABZONSPOR A.Ş.): yaş=18, sözleşme bitiş=2030-06-30
 - SABA KHAREBASHVILI (İSTANBUL BAŞAKŞEHİR FK): yaş=18, sözleşme bitiş=2030-06-30
 - SAIKUBA JARJU (SAMSUNSPOR A.Ş.): yaş=18, sözleşme bitiş=2029-06-30
+- ÖMER ARDA KARA (ERZURUMSPOR FK): yaş=18, sözleşme bitiş=2027-06-30
 - AHMET DOĞAN YILDIRIM (TRABZONSPOR A.Ş.): yaş=19, sözleşme bitiş=2029-06-30
 - ALBERT-IUSTIN DOICARU (ÇAYKUR RİZESPOR A.Ş.): yaş=19, sözleşme bitiş=2031-06-30
 - ALI BADRA DIABATE (SAMSUNSPOR A.Ş.): yaş=19, sözleşme bitiş=2029-06-30
@@ -38,8 +40,6 @@
 - CHRIST OTINIEL SADIA (EYÜPSPOR): yaş=19, sözleşme bitiş=2028-06-30
 - EGE YILDIRIM (GÖZTEPE A.Ş.): yaş=19, sözleşme bitiş=2029-06-30
 - EGEMEN AYDIN (TÜMOSAN KONYASPOR): yaş=19, sözleşme bitiş=2027-06-30
-- EREN CEMALİ YAĞMUR (TÜMOSAN KONYASPOR): yaş=19, sözleşme bitiş=2028-06-30
-- EYÜP DEĞİRMENCİ (MALATYA YEŞİLYURT SPOR KULÜBÜ): yaş=19, sözleşme bitiş=2027-06-30
 
 ## Sözleşme Fırsatları
 
@@ -51,6 +51,9 @@
 - YAKUP KIRTAY (ERZURUMSPOR FK): kalan ay=8, bitiş=2027-05-31
 - YUNUS EMRE ÇİFT (SAMSUNSPOR A.Ş.): kalan ay=8, bitiş=2027-05-31
 - İSMAİL YÜKSEK (FENERBAHÇE A.Ş.): kalan ay=8, bitiş=2027-05-31
+- ÖMER ARDA KARA (ERZURUMSPOR FK): kalan ay=8, bitiş=2027-06-30
+- MERT HAKAN YANDAŞ (FENERBAHÇE A.Ş.): kalan ay=8, bitiş=2027-06-30
+- CİHAN ÇANAK (TRABZONSPOR A.Ş.): kalan ay=8, bitiş=2027-06-30
 - ABDELHAMID SABIRI (EYÜPSPOR): kalan ay=9, bitiş=2027-06-30
 - ABDURRAHİM DURSUN (GENÇLERBİRLİĞİ): kalan ay=9, bitiş=2027-06-30
 - ABDÜLKERİM BARDAKCI (GALATASARAY A.Ş.): kalan ay=9, bitiş=2027-06-30
@@ -70,6 +73,3 @@
 - ALİ YAVUZ KOL (KASIMPAŞA A.Ş.): kalan ay=9, bitiş=2027-06-30
 - AMAR GERXHALIU (ERZURUMSPOR FK): kalan ay=9, bitiş=2027-06-30
 - ANDRE ONANA ONANA (TRABZONSPOR A.Ş.): kalan ay=9, bitiş=2027-06-30
-- ANDREAS GIANNIOTIS (KASIMPAŞA A.Ş.): kalan ay=9, bitiş=2027-06-30
-- ANDREAS SKOV OLSEN (İSTANBUL BAŞAKŞEHİR FK): kalan ay=9, bitiş=2027-06-30
-- ANFERNEE JAMAL DIJKSTEEL (KOCAELİSPOR): kalan ay=9, bitiş=2027-06-30

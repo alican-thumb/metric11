@@ -1,33 +1,33 @@
 {
   "summary": {
-    "tff_profiles": 870,
+    "tff_profiles": 875,
     "tm_clubs": 18,
     "tm_players": 817,
-    "snapshot_in_scope_tff_profiles": 585,
-    "matched_profiles": 612,
-    "verified_matched_profiles": 612,
-    "in_scope_verified_matched_profiles": 542,
+    "snapshot_in_scope_tff_profiles": 587,
+    "matched_profiles": 615,
+    "verified_matched_profiles": 615,
+    "in_scope_verified_matched_profiles": 543,
     "manual_alias_mapped_profiles": 4,
     "manual_alias_pending_network_verification": 4,
-    "operationally_mapped_profiles": 616,
-    "operational_in_scope_mapped_profiles": 546,
-    "unmatched_profiles": 254,
+    "operationally_mapped_profiles": 619,
+    "operational_in_scope_mapped_profiles": 547,
+    "unmatched_profiles": 256,
     "overall_match_rate": 0.703,
-    "in_scope_match_rate": 0.926,
-    "operational_mapping_rate": 0.708,
-    "operational_in_scope_mapping_rate": 0.933,
+    "in_scope_match_rate": 0.925,
+    "operational_mapping_rate": 0.707,
+    "operational_in_scope_mapping_rate": 0.932,
     "scout_blocking_unmatched": 0,
     "category_counts": {
-      "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 37,
+      "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 38,
       "SAME_CLUB_NAME_REVIEW": 1,
       "POSSIBLE_TRANSFER_OR_CLUB_MISMATCH": 1,
-      "OUT_OF_SNAPSHOT_CLUB": 215
+      "OUT_OF_SNAPSHOT_CLUB": 216
     },
     "review_tier_counts": {
       "HIGH_USAGE_UNRESOLVED": 17,
       "ROTATION_USAGE_UNRESOLVED": 10,
-      "OUT_OF_SNAPSHOT": 215,
-      "NO_MATCH_ACTIVITY": 12
+      "OUT_OF_SNAPSHOT": 216,
+      "NO_MATCH_ACTIVITY": 13
     },
     "rule": "Doğrulanmış kapsama yalnız snapshot eşleşmesi girer; manuel alias kullanımı ayrı izlenir ve ağ teyidi tamamlanana kadar doğrulanmış sayılmaz."
   },
@@ -100,15 +100,15 @@
     },
     {
       "team": "GENÇLERBİRLİĞİ",
-      "tff_profiles": 39,
+      "tff_profiles": 40,
       "tm_players": 48,
       "matched_profiles": 38,
       "manual_alias_mapped_profiles": 0,
-      "unmatched_profiles": 1,
-      "match_rate": 0.974,
-      "operational_mapping_rate": 0.974,
+      "unmatched_profiles": 2,
+      "match_rate": 0.95,
+      "operational_mapping_rate": 0.95,
       "categories": {
-        "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 1
+        "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 2
       }
     },
     {
@@ -187,13 +187,13 @@
     },
     {
       "team": "SAMSUNSPOR A.Ş.",
-      "tff_profiles": 39,
+      "tff_profiles": 40,
       "tm_players": 44,
-      "matched_profiles": 35,
+      "matched_profiles": 36,
       "manual_alias_mapped_profiles": 0,
       "unmatched_profiles": 4,
-      "match_rate": 0.897,
-      "operational_mapping_rate": 0.897,
+      "match_rate": 0.9,
+      "operational_mapping_rate": 0.9,
       "categories": {
         "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 3,
         "SAME_CLUB_NAME_REVIEW": 1
@@ -2868,6 +2868,22 @@
       "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
     },
     {
+      "player_id": "2464102",
+      "tff_name": "İSMAİL DUYU",
+      "tff_club": "AMED SFK",
+      "category": "OUT_OF_SNAPSHOT_CLUB",
+      "priority_rank": 5,
+      "blocks_scout_review": false,
+      "review_tier": "OUT_OF_SNAPSHOT",
+      "season_activity": {
+        "starts": 0,
+        "squad_inclusions": 0,
+        "goals": 0
+      },
+      "candidate": null,
+      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
+    },
+    {
       "player_id": "1902244",
       "tff_name": "DENİZ YAŞAR",
       "tff_club": "ANKARA DEMİRSPOR",
@@ -4297,6 +4313,32 @@
         "goals": 0
       },
       "candidate": null,
+      "action": "Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir."
+    },
+    {
+      "player_id": "2106401",
+      "tff_name": "HASAN OĞUL",
+      "tff_club": "GENÇLERBİRLİĞİ",
+      "category": "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT",
+      "priority_rank": 4,
+      "blocks_scout_review": false,
+      "review_tier": "NO_MATCH_ACTIVITY",
+      "season_activity": {
+        "starts": 0,
+        "squad_inclusions": 0,
+        "goals": 0
+      },
+      "candidate": {
+        "tm_name": "Hasan Temel",
+        "tm_team_name": null,
+        "tm_id": "1438141",
+        "tm_position": "Left Winger",
+        "tm_market_value_eur": null,
+        "score": 0.667,
+        "common_tokens": [
+          "HASAN"
+        ]
+      },
       "action": "Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir."
     },
     {

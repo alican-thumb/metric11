@@ -1,15 +1,15 @@
 # TFF × Transfermarkt Zenginleştirilmiş Oyuncu Profilleri — 2025-2026
 
-- Toplam TFF oyuncu: 870
-- Lig snapshot kapsamında TFF oyuncu: 659
-- Kulüp içi canonical eşleşme: 396
+- Toplam TFF oyuncu: 875
+- Lig snapshot kapsamında TFF oyuncu: 664
+- Kulüp içi canonical eşleşme: 398
 - Kulüp içi profil tam-ad eşleşme: 2
-- Kulüp içi token eşleşme: 214
+- Kulüp içi token eşleşme: 215
 - Manuel eşleme (ağ teyidi bekleyen): 4
-- Eşleşmedi: 254
+- Eşleşmedi: 256
 - Doğrulanmış tüm profil kapsamı: %70.3
-- Doğrulanmış lig snapshot içi kapsama: %92.9
-- Manuel eşleme dahil kullanılabilir lig snapshot içi kapsama: %93.5
+- Doğrulanmış lig snapshot içi kapsama: %92.6
+- Manuel eşleme dahil kullanılabilir lig snapshot içi kapsama: %93.2
 
 ## En Yüksek Piyasa Değeri (Eşleşen Oyuncular)
 
@@ -42,7 +42,7 @@
 - YUSUF NACAR (AMASYASPOR FK)
 - DIAA SABI'A (AMED SPORTİF FAALİYETLER)
 - OLEKSANDR SYROTA (AMED SPORTİF FAALİYETLER)
+- İSMAİL DUYU (AMED SPORTİF FAALİYETLER)
 - DENİZ YAŞAR (ANKARA DEMİRSPOR)
 - ERDEM ÇETİNKAYA (ANKARA DEMİRSPOR)
 - TAYLAN UTKU AYDIN (ANKARA DEMİRSPOR)
-- ABDULLAH YİĞİTER (ANTALYASPOR A.Ş.)

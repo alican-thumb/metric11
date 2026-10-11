@@ -1,18 +1,18 @@
 # Transfermarkt Oyuncu Eşleşme İnceleme Kuyruğu
 
-- TFF profil: 870
+- TFF profil: 875
 - Transfermarkt snapshot: 18/18 kulüp, 817 oyuncu
-- Snapshot kapsamındaki TFF profil: 585
-- Doğrulanmış snapshot eşleşmesi: 612
+- Snapshot kapsamındaki TFF profil: 587
+- Doğrulanmış snapshot eşleşmesi: 615
 - Manuel eşleme ile kullanılan profil: 4
 - Ağ teyidi bekleyen manuel eşleme: 4
-- Çözülmemiş profil: 254
+- Çözülmemiş profil: 256
 - Doğrulanmış genel eşleşme oranı: %70.3
-- Doğrulanmış snapshot içi eşleşme oranı: %92.6
-- Manuel eşleme dahil kullanılabilir snapshot içi kapsama: %93.3
+- Doğrulanmış snapshot içi eşleşme oranı: %92.5
+- Manuel eşleme dahil kullanılabilir snapshot içi kapsama: %93.2
 - Scout incelemesini bloke eden eşleşmeyen oyuncu: 0
-- Sınıf dağılımı: {'NO_RELIABLE_CANDIDATE_IN_SNAPSHOT': 37, 'SAME_CLUB_NAME_REVIEW': 1, 'POSSIBLE_TRANSFER_OR_CLUB_MISMATCH': 1, 'OUT_OF_SNAPSHOT_CLUB': 215}
-- Kullanım önceliği dağılımı: {'HIGH_USAGE_UNRESOLVED': 17, 'ROTATION_USAGE_UNRESOLVED': 10, 'OUT_OF_SNAPSHOT': 215, 'NO_MATCH_ACTIVITY': 12}
+- Sınıf dağılımı: {'NO_RELIABLE_CANDIDATE_IN_SNAPSHOT': 38, 'SAME_CLUB_NAME_REVIEW': 1, 'POSSIBLE_TRANSFER_OR_CLUB_MISMATCH': 1, 'OUT_OF_SNAPSHOT_CLUB': 216}
+- Kullanım önceliği dağılımı: {'HIGH_USAGE_UNRESOLVED': 17, 'ROTATION_USAGE_UNRESOLVED': 10, 'OUT_OF_SNAPSHOT': 216, 'NO_MATCH_ACTIVITY': 13}
 - Kural: Doğrulanmış kapsama yalnız snapshot eşleşmesi girer; manuel alias kullanımı ayrı izlenir ve ağ teyidi tamamlanana kadar doğrulanmış sayılmaz.
 
 ## Scout Bloke Eden Kuyruk
@@ -34,14 +34,14 @@
 | FENERBAHÇE A.Ş. | 44 | 50 | 35 | 0 | 9 | %79.5 | %79.5 |
 | GALATASARAY A.Ş. | 42 | 44 | 41 | 0 | 1 | %97.6 | %97.6 |
 | GAZİANTEP FUTBOL KULÜBÜ A.Ş. | 41 | 45 | 38 | 0 | 3 | %92.7 | %92.7 |
-| GENÇLERBİRLİĞİ | 39 | 48 | 38 | 0 | 1 | %97.4 | %97.4 |
+| GENÇLERBİRLİĞİ | 40 | 48 | 38 | 0 | 2 | %95.0 | %95.0 |
 | GÖZTEPE A.Ş. | 35 | 36 | 29 | 1 | 5 | %82.9 | %85.7 |
 | HESAP.COM ANTALYASPOR | 0 | 48 | 0 | 0 | 0 | %0 | %0 |
 | KASIMPAŞA A.Ş. | 38 | 60 | 35 | 0 | 3 | %92.1 | %92.1 |
 | KOCAELİSPOR | 34 | 39 | 33 | 0 | 1 | %97.1 | %97.1 |
 | MISIRLI.COM.TR FATİH KARAGÜMRÜK | 0 | 46 | 0 | 0 | 0 | %0 | %0 |
 | RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ | 30 | 32 | 29 | 0 | 1 | %96.7 | %96.7 |
-| SAMSUNSPOR A.Ş. | 39 | 44 | 35 | 0 | 4 | %89.7 | %89.7 |
+| SAMSUNSPOR A.Ş. | 40 | 44 | 36 | 0 | 4 | %90.0 | %90.0 |
 | TRABZONSPOR A.Ş. | 43 | 42 | 39 | 1 | 3 | %90.7 | %93.0 |
 | TÜMOSAN KONYASPOR | 43 | 48 | 42 | 0 | 1 | %97.7 | %97.7 |
 | ZECORNER KAYSERİSPOR | 0 | 51 | 0 | 0 | 0 | %0 | %0 |
@@ -86,6 +86,7 @@
 
 - OLEKSANDR SYROTA (AMED SFK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=4, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 - DIAA SABI'A (AMED SFK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
+- İSMAİL DUYU (AMED SFK): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 
 ### ANKARA DEMİRSPOR
 
@@ -251,6 +252,7 @@
 ### GENÇLERBİRLİĞİ
 
 - THALISSON KELVEN DA SILVA (GENÇLERBİRLİĞİ): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=28, gol=2, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
+- HASAN OĞUL (GENÇLERBİRLİĞİ): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=NO_MATCH_ACTIVITY, ilk11=0, gol=0, scout_blok=False, aday=Hasan Temel (GENÇLERBİRLİĞİ, skor=0.667, ortak=HASAN). Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 
 ### GÖZTEPE A.Ş.
 
