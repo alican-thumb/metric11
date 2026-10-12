@@ -1,6 +1,6 @@
 # Kafa Kafaya (Head-to-Head) Beraberlik Geçmişi
 
-Üretim zamanı: 2026-10-11T10:49:10.157490+00:00
+Üretim zamanı: 2026-10-12T11:53:43.214726+00:00
 Toplanan takım çifti: 153
 Veri bulunan çift: 127
 

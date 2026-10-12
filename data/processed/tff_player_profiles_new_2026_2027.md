@@ -1,11 +1,11 @@
 # TFF Oyuncu Profilleri
 
 - Takım filtresi: Yok
-- Profil sayısı: 482
+- Profil sayısı: 483
 - Hata sayısı: 0
-- Ortalama yaş: 25.8
+- Ortalama yaş: 25.7
 - Ortalama kalan sözleşme ayı: 22.0
-- 23 yaş ve altı oyuncu: 167
+- 23 yaş ve altı oyuncu: 168
 - 13 ay içinde sözleşmesi bitecek oyuncu: 187
 
 ## Genç Oyuncular
@@ -22,6 +22,7 @@
 - CEMİLHAN ASLAN (GAZİANTEP FUTBOL KULÜBÜ A.Ş.): yaş=18, sözleşme bitiş=2027-06-30
 - EFE YİĞİT ÜSTÜN (SAMSUNSPOR A.Ş.): yaş=18, sözleşme bitiş=2028-06-30
 - EYMEN KARATAŞ (CORENDON ALANYASPOR): yaş=18, sözleşme bitiş=Yok
+- HULİSİ DESTİCİ (KOCAELİSPOR): yaş=18, sözleşme bitiş=2030-06-30
 - KUZEY SAPAZ (FENERBAHÇE A.Ş.): yaş=18, sözleşme bitiş=2028-06-30
 - MERVAN MÜJDECİ (GAZİANTEP FUTBOL KULÜBÜ A.Ş.): yaş=18, sözleşme bitiş=2027-06-30
 - OUSMANE DIABATE (GENÇLERBİRLİĞİ): yaş=18, sözleşme bitiş=2027-06-30
@@ -39,21 +40,20 @@
 - BERK KIZILDEMİR (AMED SPORTİF FAALİYETLER): yaş=19, sözleşme bitiş=2029-06-30
 - CHRIST OTINIEL SADIA (EYÜPSPOR): yaş=19, sözleşme bitiş=2028-06-30
 - EGE YILDIRIM (GÖZTEPE A.Ş.): yaş=19, sözleşme bitiş=2029-06-30
-- EGEMEN AYDIN (TÜMOSAN KONYASPOR): yaş=19, sözleşme bitiş=2027-06-30
 
 ## Sözleşme Fırsatları
 
 - YASİN ÖZCAN (BEŞİKTAŞ A.Ş.): kalan ay=4, bitiş=2027-01-27
 - AMIR HADZIAHMETOVIC (BEŞİKTAŞ A.Ş.): kalan ay=8, bitiş=2027-05-31
 - BARIŞ ALPER YILMAZ (GALATASARAY A.Ş.): kalan ay=8, bitiş=2027-05-31
+- CİHAN ÇANAK (TRABZONSPOR A.Ş.): kalan ay=8, bitiş=2027-06-30
 - ENES ALBAK (SAMSUNSPOR A.Ş.): kalan ay=8, bitiş=2027-05-31
 - KAZIMCAN KARATAŞ (GALATASARAY A.Ş.): kalan ay=8, bitiş=2027-05-31
+- MERT HAKAN YANDAŞ (FENERBAHÇE A.Ş.): kalan ay=8, bitiş=2027-06-30
 - YAKUP KIRTAY (ERZURUMSPOR FK): kalan ay=8, bitiş=2027-05-31
 - YUNUS EMRE ÇİFT (SAMSUNSPOR A.Ş.): kalan ay=8, bitiş=2027-05-31
-- İSMAİL YÜKSEK (FENERBAHÇE A.Ş.): kalan ay=8, bitiş=2027-05-31
 - ÖMER ARDA KARA (ERZURUMSPOR FK): kalan ay=8, bitiş=2027-06-30
-- MERT HAKAN YANDAŞ (FENERBAHÇE A.Ş.): kalan ay=8, bitiş=2027-06-30
-- CİHAN ÇANAK (TRABZONSPOR A.Ş.): kalan ay=8, bitiş=2027-06-30
+- İSMAİL YÜKSEK (FENERBAHÇE A.Ş.): kalan ay=8, bitiş=2027-05-31
 - ABDELHAMID SABIRI (EYÜPSPOR): kalan ay=9, bitiş=2027-06-30
 - ABDURRAHİM DURSUN (GENÇLERBİRLİĞİ): kalan ay=9, bitiş=2027-06-30
 - ABDÜLKERİM BARDAKCI (GALATASARAY A.Ş.): kalan ay=9, bitiş=2027-06-30

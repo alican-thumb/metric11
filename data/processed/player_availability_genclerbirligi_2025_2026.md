@@ -11,7 +11,7 @@
 
 ## Güncel Haber/Sakat-Cezalı Bağlamı
 
-- INJURED | ARDA ÇAĞAN ÇELİK | kaynak=news_intelligence | güven=MEDIUM
+- INJURED | ABDURRAHİM DURSUN | kaynak=news_intelligence | güven=MEDIUM
 
 ## Maç Bazlı Eksikler
 
