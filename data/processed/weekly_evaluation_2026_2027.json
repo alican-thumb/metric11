@@ -1,36 +1,36 @@
 {
-  "generated_at": "2026-10-11T21:57:00.165211",
+  "generated_at": "2026-10-12T01:21:18.756923",
   "season": "2026-2027",
   "summary": {
-    "evaluated_matches": 60,
-    "correct": 24,
-    "accuracy": 0.4,
+    "evaluated_matches": 62,
+    "correct": 26,
+    "accuracy": 0.4194,
     "actual_draws": 14,
     "draws_caught": 2,
     "draw_recall": 0.1429,
-    "high_conf_matches": 23,
-    "high_conf_correct": 12,
-    "high_conf_accuracy": 0.5217,
-    "brier_score": 0.659,
-    "log_loss": 1.0818,
+    "high_conf_matches": 24,
+    "high_conf_correct": 13,
+    "high_conf_accuracy": 0.5417,
+    "brier_score": 0.6496,
+    "log_loss": 1.0687,
     "confidence_breakdown": {
       "HIGH": {
-        "matches": 23,
-        "correct": 12,
-        "accuracy": 0.5217,
-        "avg_stated_probability": 0.5865,
-        "calibration_gap": -0.0648,
-        "brier_score": 0.5951,
-        "log_loss": 0.9919
+        "matches": 24,
+        "correct": 13,
+        "accuracy": 0.5417,
+        "avg_stated_probability": 0.586,
+        "calibration_gap": -0.0443,
+        "brier_score": 0.5817,
+        "log_loss": 0.9736
       },
       "MEDIUM": {
-        "matches": 22,
-        "correct": 4,
-        "accuracy": 0.1818,
-        "avg_stated_probability": 0.4654,
-        "calibration_gap": -0.2836,
-        "brier_score": 0.7187,
-        "log_loss": 1.1575
+        "matches": 23,
+        "correct": 5,
+        "accuracy": 0.2174,
+        "avg_stated_probability": 0.4647,
+        "calibration_gap": -0.2473,
+        "brier_score": 0.7074,
+        "log_loss": 1.1419
       },
       "LOW": {
         "matches": 15,
@@ -44,11 +44,11 @@
     },
     "pick_side_breakdown": {
       "home": {
-        "matches": 35,
-        "correct": 16,
-        "accuracy": 0.4571,
+        "matches": 36,
+        "correct": 17,
+        "accuracy": 0.4722,
         "actual": {
-          "home": 16,
+          "home": 17,
           "draw": 7,
           "away": 12
         }
@@ -64,13 +64,13 @@
         }
       },
       "away": {
-        "matches": 22,
-        "correct": 6,
-        "accuracy": 0.2727,
+        "matches": 23,
+        "correct": 7,
+        "accuracy": 0.3043,
         "actual": {
           "home": 11,
           "draw": 5,
-          "away": 6
+          "away": 7
         }
       }
     }
@@ -79,35 +79,35 @@
   "last_week": {
     "week": 7,
     "summary": {
-      "evaluated_matches": 6,
-      "correct": 3,
-      "accuracy": 0.5,
+      "evaluated_matches": 8,
+      "correct": 5,
+      "accuracy": 0.625,
       "actual_draws": 3,
       "draws_caught": 0,
       "draw_recall": 0.0,
-      "high_conf_matches": 4,
-      "high_conf_correct": 3,
-      "high_conf_accuracy": 0.75,
-      "brier_score": 0.5948,
-      "log_loss": 0.9939,
+      "high_conf_matches": 5,
+      "high_conf_correct": 4,
+      "high_conf_accuracy": 0.8,
+      "brier_score": 0.5374,
+      "log_loss": 0.9144,
       "confidence_breakdown": {
         "HIGH": {
-          "matches": 4,
-          "correct": 3,
-          "accuracy": 0.75,
-          "avg_stated_probability": 0.5713,
-          "calibration_gap": 0.1787,
-          "brier_score": 0.4409,
-          "log_loss": 0.7713
+          "matches": 5,
+          "correct": 4,
+          "accuracy": 0.8,
+          "avg_stated_probability": 0.572,
+          "calibration_gap": 0.228,
+          "brier_score": 0.4073,
+          "log_loss": 0.7277
         },
         "MEDIUM": {
-          "matches": 2,
-          "correct": 0,
-          "accuracy": 0.0,
-          "avg_stated_probability": 0.504,
-          "calibration_gap": -0.504,
-          "brier_score": 0.9026,
-          "log_loss": 1.4392
+          "matches": 3,
+          "correct": 1,
+          "accuracy": 0.3333,
+          "avg_stated_probability": 0.486,
+          "calibration_gap": -0.1527,
+          "brier_score": 0.7542,
+          "log_loss": 1.2256
         },
         "LOW": {
           "matches": 0,
@@ -121,11 +121,11 @@
       },
       "pick_side_breakdown": {
         "home": {
-          "matches": 2,
-          "correct": 1,
-          "accuracy": 0.5,
+          "matches": 3,
+          "correct": 2,
+          "accuracy": 0.6667,
           "actual": {
-            "home": 1,
+            "home": 2,
             "draw": 1,
             "away": 0
           }
@@ -141,13 +141,13 @@
           }
         },
         "away": {
-          "matches": 4,
-          "correct": 2,
-          "accuracy": 0.5,
+          "matches": 5,
+          "correct": 3,
+          "accuracy": 0.6,
           "actual": {
             "home": 0,
             "draw": 2,
-            "away": 2
+            "away": 3
           }
         }
       }
@@ -248,6 +248,38 @@
         "home_win_probability": 0.259,
         "draw_probability": 0.251,
         "away_win_probability": 0.49
+      },
+      {
+        "match_id": "317838",
+        "date_time": "11.10.2026 16:00",
+        "home_team": "GAZİANTEP FUTBOL KULÜBÜ A.Ş.",
+        "away_team": "ARCA ÇORUM FK",
+        "actual_score": "0 - 3",
+        "actual": "away",
+        "predicted": "away",
+        "raw_predicted": "away",
+        "correct": true,
+        "data_confidence": "PLAYED",
+        "prediction_confidence": "MEDIUM",
+        "home_win_probability": 0.317,
+        "draw_probability": 0.233,
+        "away_win_probability": 0.45
+      },
+      {
+        "match_id": "317845",
+        "date_time": "11.10.2026 19:00",
+        "home_team": "BEŞİKTAŞ A.Ş.",
+        "away_team": "KOCAELİSPOR",
+        "actual_score": "2 - 1",
+        "actual": "home",
+        "predicted": "home",
+        "raw_predicted": "home",
+        "correct": true,
+        "data_confidence": "PLAYED",
+        "prediction_confidence": "HIGH",
+        "home_win_probability": 0.575,
+        "draw_probability": 0.241,
+        "away_win_probability": 0.184
       }
     ]
   },
@@ -1593,35 +1625,35 @@
     {
       "week": 7,
       "summary": {
-        "evaluated_matches": 6,
-        "correct": 3,
-        "accuracy": 0.5,
+        "evaluated_matches": 8,
+        "correct": 5,
+        "accuracy": 0.625,
         "actual_draws": 3,
         "draws_caught": 0,
         "draw_recall": 0.0,
-        "high_conf_matches": 4,
-        "high_conf_correct": 3,
-        "high_conf_accuracy": 0.75,
-        "brier_score": 0.5948,
-        "log_loss": 0.9939,
+        "high_conf_matches": 5,
+        "high_conf_correct": 4,
+        "high_conf_accuracy": 0.8,
+        "brier_score": 0.5374,
+        "log_loss": 0.9144,
         "confidence_breakdown": {
           "HIGH": {
-            "matches": 4,
-            "correct": 3,
-            "accuracy": 0.75,
-            "avg_stated_probability": 0.5713,
-            "calibration_gap": 0.1787,
-            "brier_score": 0.4409,
-            "log_loss": 0.7713
+            "matches": 5,
+            "correct": 4,
+            "accuracy": 0.8,
+            "avg_stated_probability": 0.572,
+            "calibration_gap": 0.228,
+            "brier_score": 0.4073,
+            "log_loss": 0.7277
           },
           "MEDIUM": {
-            "matches": 2,
-            "correct": 0,
-            "accuracy": 0.0,
-            "avg_stated_probability": 0.504,
-            "calibration_gap": -0.504,
-            "brier_score": 0.9026,
-            "log_loss": 1.4392
+            "matches": 3,
+            "correct": 1,
+            "accuracy": 0.3333,
+            "avg_stated_probability": 0.486,
+            "calibration_gap": -0.1527,
+            "brier_score": 0.7542,
+            "log_loss": 1.2256
           },
           "LOW": {
             "matches": 0,
@@ -1635,11 +1667,11 @@
         },
         "pick_side_breakdown": {
           "home": {
-            "matches": 2,
-            "correct": 1,
-            "accuracy": 0.5,
+            "matches": 3,
+            "correct": 2,
+            "accuracy": 0.6667,
             "actual": {
-              "home": 1,
+              "home": 2,
               "draw": 1,
               "away": 0
             }
@@ -1655,13 +1687,13 @@
             }
           },
           "away": {
-            "matches": 4,
-            "correct": 2,
-            "accuracy": 0.5,
+            "matches": 5,
+            "correct": 3,
+            "accuracy": 0.6,
             "actual": {
               "home": 0,
               "draw": 2,
-              "away": 2
+              "away": 3
             }
           }
         }
@@ -1762,6 +1794,38 @@
           "home_win_probability": 0.259,
           "draw_probability": 0.251,
           "away_win_probability": 0.49
+        },
+        {
+          "match_id": "317838",
+          "date_time": "11.10.2026 16:00",
+          "home_team": "GAZİANTEP FUTBOL KULÜBÜ A.Ş.",
+          "away_team": "ARCA ÇORUM FK",
+          "actual_score": "0 - 3",
+          "actual": "away",
+          "predicted": "away",
+          "raw_predicted": "away",
+          "correct": true,
+          "data_confidence": "PLAYED",
+          "prediction_confidence": "MEDIUM",
+          "home_win_probability": 0.317,
+          "draw_probability": 0.233,
+          "away_win_probability": 0.45
+        },
+        {
+          "match_id": "317845",
+          "date_time": "11.10.2026 19:00",
+          "home_team": "BEŞİKTAŞ A.Ş.",
+          "away_team": "KOCAELİSPOR",
+          "actual_score": "2 - 1",
+          "actual": "home",
+          "predicted": "home",
+          "raw_predicted": "home",
+          "correct": true,
+          "data_confidence": "PLAYED",
+          "prediction_confidence": "HIGH",
+          "home_win_probability": 0.575,
+          "draw_probability": 0.241,
+          "away_win_probability": 0.184
         }
       ]
     }

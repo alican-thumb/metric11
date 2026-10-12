@@ -4,12 +4,12 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 
 ## Genel Karne
 
-- Değerlendirilen maç: **60**
-- İsabet: **24/60** (%40)
+- Değerlendirilen maç: **62**
+- İsabet: **26/62** (%42)
 - Beraberlik yakalama: **2/14** (%14)
-- Yüksek güvenli maç isabeti: **12/23** (%52)
-- Brier score: **0.659** (düşük daha iyi; 2025-26 referans 0.600)
-- Log loss: **1.082** (düşük daha iyi; 2025-26 referans 1.005)
+- Yüksek güvenli maç isabeti: **13/24** (%54)
+- Brier score: **0.650** (düşük daha iyi; 2025-26 referans 0.600)
+- Log loss: **1.069** (düşük daha iyi; 2025-26 referans 1.005)
 
 ### Güven bandı kalibrasyonu
 
@@ -17,8 +17,8 @@ _"Beyan edilen ort. olasılık" ile "İsabet" arasındaki fark büyükse (özell
 
 | Güven bandı | Maç | İsabet | Beyan edilen ort. olasılık | Brier | Log loss | Referans (2025-26: isabet / brier / logloss) |
 | --- | --- | --- | --- | --- | --- | --- |
-| HIGH | 23 | 12/23 (%52) | %59 | 0.595 | 0.992 | %64 / 0.516 / 0.885 |
-| MEDIUM | 22 | 4/22 (%18) | %47 | 0.719 | 1.157 | %54 / 0.619 / 1.032 |
+| HIGH | 24 | 13/24 (%54) | %59 | 0.582 | 0.974 | %64 / 0.516 / 0.885 |
+| MEDIUM | 23 | 5/23 (%22) | %46 | 0.707 | 1.142 | %54 / 0.619 / 1.032 |
 | LOW | 15 | 8/15 (%53) | %39 | 0.669 | 1.108 | %48 / 0.670 / 1.103 |
 
 ### Seçilen tarafa göre isabet
@@ -27,11 +27,11 @@ _Model hangi tarafı seçtiğinde ne oldu? Belirli bir seçimde (ör. deplasman 
 
 | Seçim | Maç | İsabet | Gerçekleşen (Ev / X / Dep) |
 | --- | --- | --- | --- |
-| Ev | 35 | 16/35 (%46) | 16 / 7 / 12 |
+| Ev | 36 | 17/36 (%47) | 17 / 7 / 12 |
 | Beraberlik | 3 | 2/3 (%67) | 0 / 2 / 1 |
-| Deplasman | 22 | 6/22 (%27) | 11 / 5 / 6 |
+| Deplasman | 23 | 7/23 (%30) | 11 / 5 / 7 |
 
-## Hafta 7 — 3/6 isabet (%50)
+## Hafta 7 — 5/8 isabet (%62)
 
 | Maç | Skor | Tahmin | Sonuç | Güven |
 | --- | --- | --- | --- | --- |
@@ -41,6 +41,8 @@ _Model hangi tarafı seçtiğinde ne oldu? Belirli bir seçimde (ör. deplasman 
 | SAMSUNSPOR A.Ş. - TRABZONSPOR A.Ş. | 0 - 3 | Deplasman | ✅ | HIGH |
 | ÇAYKUR RİZESPOR A.Ş. - FENERBAHÇE A.Ş. | 0 - 3 | Deplasman | ✅ | HIGH |
 | TÜMOSAN KONYASPOR - İSTANBUL BAŞAKŞEHİR FK | 0 - 0 | Deplasman | ❌ | MEDIUM |
+| GAZİANTEP FUTBOL KULÜBÜ A.Ş. - ARCA ÇORUM FK | 0 - 3 | Deplasman | ✅ | MEDIUM |
+| BEŞİKTAŞ A.Ş. - KOCAELİSPOR | 2 - 1 | Ev | ✅ | HIGH |
 
 ## Hafta 6 — 4/9 isabet (%44)
 
