@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-13T00:37:01.171358",
+  "generated_at": "2026-10-13T03:04:42.910298",
   "season": "2026-2027",
   "summary": {
-    "evaluated_matches": 62,
-    "correct": 26,
-    "accuracy": 0.4194,
+    "evaluated_matches": 63,
+    "correct": 27,
+    "accuracy": 0.4286,
     "actual_draws": 14,
     "draws_caught": 2,
     "draw_recall": 0.1429,
     "high_conf_matches": 24,
     "high_conf_correct": 13,
     "high_conf_accuracy": 0.5417,
-    "brier_score": 0.6496,
-    "log_loss": 1.0687,
+    "brier_score": 0.6472,
+    "log_loss": 1.0652,
     "confidence_breakdown": {
       "HIGH": {
         "matches": 24,
@@ -33,13 +33,13 @@
         "log_loss": 1.1419
       },
       "LOW": {
-        "matches": 15,
-        "correct": 8,
-        "accuracy": 0.5333,
-        "avg_stated_probability": 0.3853,
-        "calibration_gap": 0.148,
-        "brier_score": 0.6695,
-        "log_loss": 1.1084
+        "matches": 16,
+        "correct": 9,
+        "accuracy": 0.5625,
+        "avg_stated_probability": 0.3879,
+        "calibration_gap": 0.1746,
+        "brier_score": 0.659,
+        "log_loss": 1.0923
       }
     },
     "pick_side_breakdown": {
@@ -64,13 +64,13 @@
         }
       },
       "away": {
-        "matches": 23,
-        "correct": 7,
-        "accuracy": 0.3043,
+        "matches": 24,
+        "correct": 8,
+        "accuracy": 0.3333,
         "actual": {
           "home": 11,
           "draw": 5,
-          "away": 7
+          "away": 8
         }
       }
     }
@@ -79,17 +79,17 @@
   "last_week": {
     "week": 7,
     "summary": {
-      "evaluated_matches": 8,
-      "correct": 5,
-      "accuracy": 0.625,
+      "evaluated_matches": 9,
+      "correct": 6,
+      "accuracy": 0.6667,
       "actual_draws": 3,
       "draws_caught": 0,
       "draw_recall": 0.0,
       "high_conf_matches": 5,
       "high_conf_correct": 4,
       "high_conf_accuracy": 0.8,
-      "brier_score": 0.5374,
-      "log_loss": 0.9144,
+      "brier_score": 0.5332,
+      "log_loss": 0.9074,
       "confidence_breakdown": {
         "HIGH": {
           "matches": 5,
@@ -110,13 +110,13 @@
           "log_loss": 1.2256
         },
         "LOW": {
-          "matches": 0,
-          "correct": 0,
-          "accuracy": null,
-          "avg_stated_probability": null,
-          "calibration_gap": null,
-          "brier_score": null,
-          "log_loss": null
+          "matches": 1,
+          "correct": 1,
+          "accuracy": 1.0,
+          "avg_stated_probability": 0.427,
+          "calibration_gap": 0.573,
+          "brier_score": 0.5004,
+          "log_loss": 0.851
         }
       },
       "pick_side_breakdown": {
@@ -141,13 +141,13 @@
           }
         },
         "away": {
-          "matches": 5,
-          "correct": 3,
-          "accuracy": 0.6,
+          "matches": 6,
+          "correct": 4,
+          "accuracy": 0.6667,
           "actual": {
             "home": 0,
             "draw": 2,
-            "away": 3
+            "away": 4
           }
         }
       }
@@ -280,6 +280,22 @@
         "home_win_probability": 0.575,
         "draw_probability": 0.241,
         "away_win_probability": 0.184
+      },
+      {
+        "match_id": "317839",
+        "date_time": "12.10.2026 20:00",
+        "home_team": "EYÜPSPOR",
+        "away_team": "GÖZTEPE A.Ş.",
+        "actual_score": "0 - 4",
+        "actual": "away",
+        "predicted": "away",
+        "raw_predicted": "away",
+        "correct": true,
+        "data_confidence": "PLAYED",
+        "prediction_confidence": "LOW",
+        "home_win_probability": 0.351,
+        "draw_probability": 0.221,
+        "away_win_probability": 0.427
       }
     ]
   },
@@ -1625,17 +1641,17 @@
     {
       "week": 7,
       "summary": {
-        "evaluated_matches": 8,
-        "correct": 5,
-        "accuracy": 0.625,
+        "evaluated_matches": 9,
+        "correct": 6,
+        "accuracy": 0.6667,
         "actual_draws": 3,
         "draws_caught": 0,
         "draw_recall": 0.0,
         "high_conf_matches": 5,
         "high_conf_correct": 4,
         "high_conf_accuracy": 0.8,
-        "brier_score": 0.5374,
-        "log_loss": 0.9144,
+        "brier_score": 0.5332,
+        "log_loss": 0.9074,
         "confidence_breakdown": {
           "HIGH": {
             "matches": 5,
@@ -1656,13 +1672,13 @@
             "log_loss": 1.2256
           },
           "LOW": {
-            "matches": 0,
-            "correct": 0,
-            "accuracy": null,
-            "avg_stated_probability": null,
-            "calibration_gap": null,
-            "brier_score": null,
-            "log_loss": null
+            "matches": 1,
+            "correct": 1,
+            "accuracy": 1.0,
+            "avg_stated_probability": 0.427,
+            "calibration_gap": 0.573,
+            "brier_score": 0.5004,
+            "log_loss": 0.851
           }
         },
         "pick_side_breakdown": {
@@ -1687,13 +1703,13 @@
             }
           },
           "away": {
-            "matches": 5,
-            "correct": 3,
-            "accuracy": 0.6,
+            "matches": 6,
+            "correct": 4,
+            "accuracy": 0.6667,
             "actual": {
               "home": 0,
               "draw": 2,
-              "away": 3
+              "away": 4
             }
           }
         }
@@ -1826,6 +1842,22 @@
           "home_win_probability": 0.575,
           "draw_probability": 0.241,
           "away_win_probability": 0.184
+        },
+        {
+          "match_id": "317839",
+          "date_time": "12.10.2026 20:00",
+          "home_team": "EYÜPSPOR",
+          "away_team": "GÖZTEPE A.Ş.",
+          "actual_score": "0 - 4",
+          "actual": "away",
+          "predicted": "away",
+          "raw_predicted": "away",
+          "correct": true,
+          "data_confidence": "PLAYED",
+          "prediction_confidence": "LOW",
+          "home_win_probability": 0.351,
+          "draw_probability": 0.221,
+          "away_win_probability": 0.427
         }
       ]
     }
