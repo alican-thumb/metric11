@@ -13,7 +13,7 @@
 
 - INJURED | Leandro Trossard | kaynak=beIN SPORTS sakat ve cezalı listesi | güven=MEDIUM_CONTEXT
 - SUSPENDED | Dusan Vlahovic | kaynak=beIN SPORTS sakat ve cezalı listesi | güven=MEDIUM_CONTEXT
-- INJURED | VACLAV CERNY | kaynak=news_intelligence | güven=HIGH
+- INJURED | BADOBRE EMMANUEL ELYSEE DJEDJE AGBADOU | kaynak=news_intelligence | güven=MEDIUM
 
 ## Maç Bazlı Eksikler
 
