@@ -49,7 +49,7 @@
 - {'role_label': 'Bek / çift yönlü koridor', 'candidate_name': 'YHOAN MANY ANDZOUANA', 'candidate_team': 'TÜMOSAN KONYASPOR', 'fit_score': 110.2, 'position_confidence': 'MEDIUM_DERIVED_ROLE'}
 - {'role_label': 'Bek / çift yönlü koridor', 'candidate_name': 'ROLAND SALLAI', 'candidate_team': 'GALATASARAY A.Ş.', 'fit_score': 101.9, 'position_confidence': 'MEDIUM_DERIVED_ROLE'}
 - {'role_label': 'Bek / çift yönlü koridor', 'candidate_name': 'RUAN PEREIRA DUARTE', 'candidate_team': 'CORENDON ALANYASPOR', 'fit_score': 100.9, 'position_confidence': 'MEDIUM_DERIVED_ROLE'}
-- {'role_label': 'Bek / çift yönlü koridor', 'candidate_name': 'ARDA OKAN KURTULAN', 'candidate_team': 'GÖZTEPE A.Ş.', 'fit_score': 88.81, 'position_confidence': 'HIGH'}
+- {'role_label': 'Bek / çift yönlü koridor', 'candidate_name': 'ARDA OKAN KURTULAN', 'candidate_team': 'GÖZTEPE A.Ş.', 'fit_score': 88.8, 'position_confidence': 'HIGH'}
 - {'role_label': 'Bek / çift yönlü koridor', 'candidate_name': 'WAGNER FABRICIO CARDOSO DE PINA', 'candidate_team': 'TRABZONSPOR A.Ş.', 'fit_score': 86.1, 'position_confidence': 'HIGH'}
 - {'role_label': 'Sol açık / çizgi kırıcı', 'candidate_name': 'KACPER SZYMON KOZLOWSKI', 'candidate_team': 'GAZİANTEP FUTBOL KULÜBÜ A.Ş.', 'fit_score': 107.89, 'position_confidence': 'HIGH'}
 - {'role_label': 'Sol açık / çizgi kırıcı', 'candidate_name': 'DORGELES NENE', 'candidate_team': 'FENERBAHÇE A.Ş.', 'fit_score': 95.84, 'position_confidence': 'HIGH'}

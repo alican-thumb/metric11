@@ -1,7 +1,7 @@
 # Kadro Kur — Haftalık Puanlar
 
 - Puanlanan hafta sayısı: 7
-- Toplamda puan alan oyuncu: 483
+- Toplamda puan alan oyuncu: 484
 - En yüksek puanlı 5 oyuncu:
   - MILAN SKRINIAR (FENERBAHÇE A.Ş.): 31 puan
   - ABDÜLKERİM BARDAKCI (GALATASARAY A.Ş.): 31 puan
