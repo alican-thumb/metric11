@@ -3,7 +3,7 @@
 - Analiz edilen takım: 18
 - Toplam pozisyon ihtiyacı: 49
 - Toplam oyuncu önerisi: 147
-- Acil transfer ihtiyacı olan takım: 7
+- Acil transfer ihtiyacı olan takım: 6
 - Serbest transfer fırsatı: 3 oyuncu
 - Müzakere penceresi (1 yıl kalan): 9 oyuncu
 - Yayın kuralı: Rol önerileri yalnızca dış profil pozisyonu rol ile eşleşen oyuncuları içerir.
@@ -12,13 +12,13 @@
 
 | Sıra | Takım | Öncelik | Skor | Puan/maç | Attığı gol/maç | Yediği gol/maç | İhtiyaç |
 |------|-------|------|------|-----|----|----|---------|
-| 1 | İKAS EYÜPSPOR | ACİL | 87.5 | 0.5 | 0.333 | 2.667 | Kaleci / istikrar |
-| 2 | GÖZTEPE A.Ş. | ACİL | 63.8 | 0.5 | 1.833 | 2.5 | 6 numara / savunma emniyeti |
-| 3 | GENÇLERBİRLİĞİ | ACİL | 62.3 | 1.143 | 1.0 | 2.143 | Santrfor / skor yükü |
-| 4 | SAMSUNSPOR A.Ş. | ACİL | 62.0 | 0.571 | 0.857 | 2.143 | Kaleci / istikrar |
-| 5 | GAZİANTEP FUTBOL KULÜBÜ A.Ş. | ACİL | 60.1 | 1.143 | 1.0 | 1.429 | Kaleci / istikrar |
-| 6 | TÜMOSAN KONYASPOR | ACİL | 57.2 | 0.714 | 0.571 | 1.143 | 6 numara / savunma emniyeti |
-| 7 | KASIMPAŞA A.Ş. | ACİL | 56.9 | 1.429 | 1.143 | 1.143 | Kaleci / istikrar |
+| 1 | İKAS EYÜPSPOR | ACİL | 90.8 | 0.429 | 0.286 | 2.857 | Kaleci / istikrar |
+| 2 | GENÇLERBİRLİĞİ | ACİL | 62.3 | 1.143 | 1.0 | 2.143 | Santrfor / skor yükü |
+| 3 | SAMSUNSPOR A.Ş. | ACİL | 62.0 | 0.571 | 0.857 | 2.143 | Kaleci / istikrar |
+| 4 | GAZİANTEP FUTBOL KULÜBÜ A.Ş. | ACİL | 60.1 | 1.143 | 1.0 | 1.429 | Kaleci / istikrar |
+| 5 | TÜMOSAN KONYASPOR | ACİL | 57.2 | 0.714 | 0.571 | 1.143 | 6 numara / savunma emniyeti |
+| 6 | KASIMPAŞA A.Ş. | ACİL | 56.9 | 1.429 | 1.143 | 1.143 | Kaleci / istikrar |
+| 7 | GÖZTEPE A.Ş. | YÜKSEK | 52.4 | 0.857 | 2.143 | 2.143 | 6 numara / savunma emniyeti |
 | 8 | ERZURUMSPOR FK | YÜKSEK | 51.1 | 1.143 | 0.429 | 1.571 | Kaleci / istikrar |
 | 9 | ÇAYKUR RİZESPOR A.Ş. | YÜKSEK | 49.4 | 1.429 | 1.0 | 1.286 | Kaleci / istikrar |
 | 10 | RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ | YÜKSEK | 43.1 | 1.143 | 1.429 | 1.571 | Sol açık / çizgi kırıcı |
@@ -57,62 +57,33 @@ Bu liste sözleşme izlemesidir; takım/rol uygunluğu ayrıca doğrulanmış ö
 ## Takım Bazlı Öneriler
 
 ### İKAS EYÜPSPOR  [ACİL]
-*0.5 puan/maç | maç başına 0.333 attı | maç başına 2.667 yedi*
+*0.429 puan/maç | maç başına 0.286 attı | maç başına 2.857 yedi*
 
 Zayıf nokta: son bölüm gol yeme riski, skor üretim sorunu, deplasman zayıf, hücum verimsizliği
 
-**Kaleci / istikrar** — Savunma kırılganlığında kaleci istikrarı önceliği; GA ortalaması 2.667 — güvenilir kaleci pozisyonu kritik.
+**Kaleci / istikrar** — Savunma kırılganlığında kaleci istikrarı önceliği; GA ortalaması 2.857 — güvenilir kaleci pozisyonu kritik.
   1. MARIO RICARDO DA SILVA VELHO (GENÇLERBİRLİĞİ) | 28y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 24.4
-     → Savunma kırılgan (maç başına 2.667 gol yedi) - Kaleci / istikrar ihtiyacı net. Velho: 23 maç. Bu yaz serbest kalıyor (~-4ay) — bonussuz transfer fırsatı.
+     → Savunma kırılgan (maç başına 2.857 gol yedi) - Kaleci / istikrar ihtiyacı net. Velho: 23 maç. Bu yaz serbest kalıyor (~-4ay) — bonussuz transfer fırsatı.
   2. MAHMUT ERTUĞRUL TAŞKIRAN (ERZURUMSPOR FK) | 36y | 0 gol | MÜZAKERE PENCERESİ | LOW | skor 18.2
-     → Savunma kırılgan (maç başına 2.667 gol yedi) - Kaleci / istikrar ihtiyacı net. Taşkiran: 20 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere. 36 yaş — deneyim katkısı, kısa dönem çözüm.
+     → Savunma kırılgan (maç başına 2.857 gol yedi) - Kaleci / istikrar ihtiyacı net. Taşkiran: 20 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere. 36 yaş — deneyim katkısı, kısa dönem çözüm.
   3. MUHAMMED ŞENGEZER (İSTANBUL BAŞAKŞEHİR FK) | 29y | 0 gol | PREMİUM TRANSFER | MEDIUM | skor 16.5
-     → Savunma kırılgan (maç başına 2.667 gol yedi) - Kaleci / istikrar ihtiyacı net. Şengezer: 33 maç. Uzun sözleşme — yüksek bonusu göze almalı.
+     → Savunma kırılgan (maç başına 2.857 gol yedi) - Kaleci / istikrar ihtiyacı net. Şengezer: 33 maç. Uzun sözleşme — yüksek bonusu göze almalı.
 
 **8 numara / fizik motoru** — Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir.
   1. KACPER SZYMON KOZLOWSKI (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 22y | 6 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 30.1
-     → Gol üretimi zayıf (maç başına 0.333 gol attı) - 8 numara / fizik motoru pozisyonunda yaratıcılık gerekiyor. Kozlowski: 6 gol, 30 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere. 22 yaş, uzun vadeli yatırım profili.
+     → Gol üretimi zayıf (maç başına 0.286 gol attı) - 8 numara / fizik motoru pozisyonunda yaratıcılık gerekiyor. Kozlowski: 6 gol, 30 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere. 22 yaş, uzun vadeli yatırım profili.
   2. FRANCO DARYL TONGYA HEUBANG (GENÇLERBİRLİĞİ) | 24y | 6 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 28.9
-     → Gol üretimi zayıf (maç başına 0.333 gol attı) - 8 numara / fizik motoru pozisyonunda yaratıcılık gerekiyor. Heubang: 6 gol, 27 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
+     → Gol üretimi zayıf (maç başına 0.286 gol attı) - 8 numara / fizik motoru pozisyonunda yaratıcılık gerekiyor. Heubang: 6 gol, 27 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
   3. ALEXANDRU IULIAN MAXIM (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 36y | 5 gol | MÜZAKERE PENCERESİ | LOW | skor 26.4
-     → Gol üretimi zayıf (maç başına 0.333 gol attı) - 8 numara / fizik motoru pozisyonunda yaratıcılık gerekiyor. Maxim: 5 gol, 32 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere. 36 yaş — deneyim katkısı, kısa dönem çözüm.
+     → Gol üretimi zayıf (maç başına 0.286 gol attı) - 8 numara / fizik motoru pozisyonunda yaratıcılık gerekiyor. Maxim: 5 gol, 32 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere. 36 yaş — deneyim katkısı, kısa dönem çözüm.
 
 **6 numara / savunma emniyeti** — Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir.
   1. FRANCO DARYL TONGYA HEUBANG (GENÇLERBİRLİĞİ) | 24y | 6 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 27.7
-     → Savunma kırılgan (maç başına 2.667 gol yedi) - 6 numara / savunma emniyeti ihtiyacı net. Heubang: 6 gol, 27 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
+     → Savunma kırılgan (maç başına 2.857 gol yedi) - 6 numara / savunma emniyeti ihtiyacı net. Heubang: 6 gol, 27 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
   2. ANTHONY JUNIOR DENNIS (GÖZTEPE A.Ş.) | 22y | 3 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 27.6
-     → Savunma kırılgan (maç başına 2.667 gol yedi) - 6 numara / savunma emniyeti ihtiyacı net. Dennis: 3 gol, 29 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere. 22 yaş, uzun vadeli yatırım profili.
+     → Savunma kırılgan (maç başına 2.857 gol yedi) - 6 numara / savunma emniyeti ihtiyacı net. Dennis: 3 gol, 29 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere. 22 yaş, uzun vadeli yatırım profili.
   3. GAİUS ABRAHAM JERED MAKOUTA (CORENDON ALANYASPOR) | 29y | 1 gol | MÜZAKERE PENCERESİ | LOW | skor 23.9
-     → Savunma kırılgan (maç başına 2.667 gol yedi) - 6 numara / savunma emniyeti ihtiyacı net. Makouta: 1 gol, 32 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
-
-### GÖZTEPE A.Ş.  [ACİL]
-*0.5 puan/maç | maç başına 1.833 attı | maç başına 2.5 yedi*
-
-Zayıf nokta: kart baskısı, düşük şut baskısı
-
-**6 numara / savunma emniyeti** — Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir.
-  1. FRANCO DARYL TONGYA HEUBANG (GENÇLERBİRLİĞİ) | 24y | 6 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 27.7
-     → Savunma kırılgan (maç başına 2.5 gol yedi) - 6 numara / savunma emniyeti ihtiyacı net. Heubang: 6 gol, 27 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
-  2. GAİUS ABRAHAM JERED MAKOUTA (CORENDON ALANYASPOR) | 29y | 1 gol | MÜZAKERE PENCERESİ | LOW | skor 23.9
-     → Savunma kırılgan (maç başına 2.5 gol yedi) - 6 numara / savunma emniyeti ihtiyacı net. Makouta: 1 gol, 32 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
-  3. CHRIST RAVYNEL INAO OULAI (TRABZONSPOR A.Ş.) | 20y | 2 gol | PREMİUM TRANSFER | HIGH | skor 17.9
-     → Savunma kırılgan (maç başına 2.5 gol yedi) - 6 numara / savunma emniyeti ihtiyacı net. Oulai: 2 gol, 24 maç. Uzun sözleşme — yüksek bonusu göze almalı. 20 yaş, uzun vadeli yatırım profili.
-
-**8 numara / fizik motoru** — Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir.
-  1. KACPER SZYMON KOZLOWSKI (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 22y | 6 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 30.1
-     → Kart baskısı sorunu var; 8 numara / fizik motoru bu açığı kapatacak. Kozlowski: 6 gol, 30 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere. 22 yaş, uzun vadeli yatırım profili.
-  2. FRANCO DARYL TONGYA HEUBANG (GENÇLERBİRLİĞİ) | 24y | 6 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 28.9
-     → Kart baskısı sorunu var; 8 numara / fizik motoru bu açığı kapatacak. Heubang: 6 gol, 27 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
-  3. ALEXANDRU IULIAN MAXIM (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 36y | 5 gol | MÜZAKERE PENCERESİ | LOW | skor 26.4
-     → Kart baskısı sorunu var; 8 numara / fizik motoru bu açığı kapatacak. Maxim: 5 gol, 32 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere. 36 yaş — deneyim katkısı, kısa dönem çözüm.
-
-**Sol açık / çizgi kırıcı** — Deplasman veya üretim zafiyetinde çizgi kıran/taşıyıcı hücum profili gerekir.
-  1. DORGELES NENE (FENERBAHÇE A.Ş.) | 23y | 10 gol | PREMİUM TRANSFER | HIGH | skor 24.2
-     → Kart baskısı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Nene: 10 gol, 16 maçta sahada. Uzun sözleşme — yüksek bonusu göze almalı. 23 yaş, uzun vadeli yatırım profili.
-  2. ERNEST MUÇİ (TRABZONSPOR A.Ş.) | 25y | 11 gol | PREMİUM TRANSFER | MEDIUM | skor 22.6
-     → Kart baskısı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Muçi̇: 11 gol, 22 maç. Uzun sözleşme — yüksek bonusu göze almalı.
-  3. BARIŞ ALPER YILMAZ (GALATASARAY A.Ş.) | 26y | 8 gol | PREMİUM TRANSFER | MEDIUM | skor 22.1
-     → Kart baskısı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Yilmaz: 8 gol, 27 maç. Uzun sözleşme — yüksek bonusu göze almalı.
+     → Savunma kırılgan (maç başına 2.857 gol yedi) - 6 numara / savunma emniyeti ihtiyacı net. Makouta: 1 gol, 32 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
 
 ### GENÇLERBİRLİĞİ  [ACİL]
 *1.143 puan/maç | maç başına 1.0 attı | maç başına 2.143 yedi*
@@ -258,6 +229,35 @@ Zayıf nokta: son bölüm gol yeme riski, kart baskısı, skor üretim sorunu, d
      → Son bölüm gol yeme riski sorunu var; 6 numara / savunma emniyeti bu açığı kapatacak. Dennis: 3 gol, 29 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere. 22 yaş, uzun vadeli yatırım profili.
   3. GAİUS ABRAHAM JERED MAKOUTA (CORENDON ALANYASPOR) | 29y | 1 gol | MÜZAKERE PENCERESİ | LOW | skor 23.9
      → Son bölüm gol yeme riski sorunu var; 6 numara / savunma emniyeti bu açığı kapatacak. Makouta: 1 gol, 32 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
+
+### GÖZTEPE A.Ş.  [YÜKSEK]
+*0.857 puan/maç | maç başına 2.143 attı | maç başına 2.143 yedi*
+
+Zayıf nokta: kart baskısı, düşük şut baskısı
+
+**6 numara / savunma emniyeti** — Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir.
+  1. FRANCO DARYL TONGYA HEUBANG (GENÇLERBİRLİĞİ) | 24y | 6 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 27.7
+     → Savunma kırılgan (maç başına 2.143 gol yedi) - 6 numara / savunma emniyeti ihtiyacı net. Heubang: 6 gol, 27 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
+  2. GAİUS ABRAHAM JERED MAKOUTA (CORENDON ALANYASPOR) | 29y | 1 gol | MÜZAKERE PENCERESİ | LOW | skor 23.9
+     → Savunma kırılgan (maç başına 2.143 gol yedi) - 6 numara / savunma emniyeti ihtiyacı net. Makouta: 1 gol, 32 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
+  3. CHRIST RAVYNEL INAO OULAI (TRABZONSPOR A.Ş.) | 20y | 2 gol | PREMİUM TRANSFER | HIGH | skor 17.9
+     → Savunma kırılgan (maç başına 2.143 gol yedi) - 6 numara / savunma emniyeti ihtiyacı net. Oulai: 2 gol, 24 maç. Uzun sözleşme — yüksek bonusu göze almalı. 20 yaş, uzun vadeli yatırım profili.
+
+**8 numara / fizik motoru** — Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir.
+  1. KACPER SZYMON KOZLOWSKI (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 22y | 6 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 30.1
+     → Kart baskısı sorunu var; 8 numara / fizik motoru bu açığı kapatacak. Kozlowski: 6 gol, 30 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere. 22 yaş, uzun vadeli yatırım profili.
+  2. FRANCO DARYL TONGYA HEUBANG (GENÇLERBİRLİĞİ) | 24y | 6 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 28.9
+     → Kart baskısı sorunu var; 8 numara / fizik motoru bu açığı kapatacak. Heubang: 6 gol, 27 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
+  3. ALEXANDRU IULIAN MAXIM (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 36y | 5 gol | MÜZAKERE PENCERESİ | LOW | skor 26.4
+     → Kart baskısı sorunu var; 8 numara / fizik motoru bu açığı kapatacak. Maxim: 5 gol, 32 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere. 36 yaş — deneyim katkısı, kısa dönem çözüm.
+
+**Sol açık / çizgi kırıcı** — Deplasman veya üretim zafiyetinde çizgi kıran/taşıyıcı hücum profili gerekir.
+  1. DORGELES NENE (FENERBAHÇE A.Ş.) | 23y | 10 gol | PREMİUM TRANSFER | HIGH | skor 24.2
+     → Kart baskısı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Nene: 10 gol, 16 maçta sahada. Uzun sözleşme — yüksek bonusu göze almalı. 23 yaş, uzun vadeli yatırım profili.
+  2. ERNEST MUÇİ (TRABZONSPOR A.Ş.) | 25y | 11 gol | PREMİUM TRANSFER | MEDIUM | skor 22.6
+     → Kart baskısı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Muçi̇: 11 gol, 22 maç. Uzun sözleşme — yüksek bonusu göze almalı.
+  3. BARIŞ ALPER YILMAZ (GALATASARAY A.Ş.) | 26y | 8 gol | PREMİUM TRANSFER | MEDIUM | skor 22.1
+     → Kart baskısı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Yilmaz: 8 gol, 27 maç. Uzun sözleşme — yüksek bonusu göze almalı.
 
 ### ERZURUMSPOR FK  [YÜKSEK]
 *1.143 puan/maç | maç başına 0.429 attı | maç başına 1.571 yedi*

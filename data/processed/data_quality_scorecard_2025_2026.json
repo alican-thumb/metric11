@@ -1,6 +1,6 @@
 {
   "warehouse": "/home/runner/work/metric11/metric11/data/processed/metric11_warehouse.sqlite",
-  "score": 87.5,
+  "score": 85.0,
   "table_counts": {
     "data_quality_findings": 6,
     "data_sources": 5,
@@ -92,11 +92,11 @@
       "metric": "daily_pipeline_last_run_age_days",
       "value": {
         "age_days": 0,
-        "failed_count": 0,
-        "include_network": false
+        "failed_count": 1,
+        "include_network": true
       },
-      "status": "PASS",
-      "priority": "LOW",
+      "status": "WATCH",
+      "priority": "HIGH",
       "recommendation": "Tahmin, haber ve scout ekranları için günlük pipeline en fazla 1 gün eski olmalı; 3 günü aşarsa veri tazeliği kırmızıya alınmalı."
     },
     {
@@ -200,6 +200,12 @@
     },
     {
       "priority": "HIGH",
+      "area": "pipeline",
+      "metric": "daily_pipeline_last_run_age_days",
+      "recommendation": "Tahmin, haber ve scout ekranları için günlük pipeline en fazla 1 gün eski olmalı; 3 günü aşarsa veri tazeliği kırmızıya alınmalı."
+    },
+    {
+      "priority": "HIGH",
       "area": "player_profiles",
       "metric": "manual_alias_pending_network_verification",
       "recommendation": "Operasyonda kullanılan manuel pozisyon ve piyasa değeri eşlemeleri Transfermarkt profil bağlantısıyla doğrulanana kadar teyit bekliyor olarak gösterilmeli."
@@ -267,17 +273,17 @@
     },
     {
       "candidate_type": "primary",
-      "rows": 103,
-      "hits": 11
+      "rows": 106,
+      "hits": 12
     },
     {
       "candidate_type": "impact_sub",
-      "rows": 28,
+      "rows": 26,
       "hits": 4
     },
     {
       "candidate_type": "primary+set_piece_defender",
-      "rows": 25,
+      "rows": 24,
       "hits": 0
     },
     {

@@ -1,14 +1,14 @@
 # TFF × Transfermarkt Zenginleştirilmiş Oyuncu Profilleri — 2025-2026
 
-- Toplam TFF oyuncu: 876
-- Lig snapshot kapsamında TFF oyuncu: 665
-- Kulüp içi canonical eşleşme: 398
+- Toplam TFF oyuncu: 877
+- Lig snapshot kapsamında TFF oyuncu: 662
+- Kulüp içi canonical eşleşme: 394
 - Kulüp içi profil tam-ad eşleşme: 2
-- Kulüp içi token eşleşme: 215
+- Kulüp içi token eşleşme: 216
 - Manuel eşleme (ağ teyidi bekleyen): 4
-- Eşleşmedi: 257
-- Doğrulanmış tüm profil kapsamı: %70.2
-- Doğrulanmış lig snapshot içi kapsama: %92.5
+- Eşleşmedi: 261
+- Doğrulanmış tüm profil kapsamı: %69.8
+- Doğrulanmış lig snapshot içi kapsama: %92.4
 - Manuel eşleme dahil kullanılabilir lig snapshot içi kapsama: %93.1
 
 ## En Yüksek Piyasa Değeri (Eşleşen Oyuncular)
@@ -26,6 +26,8 @@
 
 ## Eşleşmeyen Oyuncular (İlk 20)
 
+- Türkiye Futbol Federasyonu (None)
+- Türkiye Futbol Federasyonu (None)
 - BERKAY MURATOĞLU (12 BİNGÖL SPOR)
 - MUHAMMET ONUR BAŞYİĞİT (68 AKSARAY BELEDİYE SPOR)
 - EGE ARAÇ (ADANA 01 FUTBOL KULÜBÜ SK)
@@ -44,5 +46,3 @@
 - OLEKSANDR SYROTA (AMED SPORTİF FAALİYETLER)
 - İSMAİL DUYU (AMED SPORTİF FAALİYETLER)
 - DENİZ YAŞAR (ANKARA DEMİRSPOR)
-- ERDEM ÇETİNKAYA (ANKARA DEMİRSPOR)
-- TAYLAN UTKU AYDIN (ANKARA DEMİRSPOR)

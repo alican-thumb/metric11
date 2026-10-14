@@ -3,8 +3,8 @@
 - Takım filtresi: BEŞİKTAŞ A.Ş.
 - Profil sayısı: 46
 - Hata sayısı: 0
-- Ortalama yaş: 25.9
-- Ortalama kalan sözleşme ayı: 17.2
+- Ortalama yaş: 26.0
+- Ortalama kalan sözleşme ayı: 16.2
 - 23 yaş ve altı oyuncu: 13
 - 13 ay içinde sözleşmesi bitecek oyuncu: 19
 
@@ -26,22 +26,22 @@
 
 ## Sözleşme Fırsatları
 
-- ERSİN DESTANOĞLU (BEŞİKTAŞ A.Ş.): kalan ay=-4, bitiş=2026-05-31
-- DAVID JURASEK (BEŞİKTAŞ A.Ş.): kalan ay=-3, bitiş=2026-06-30
-- DEVIS ESTIVEN VASQUEZ LLACH (BEŞİKTAŞ A.Ş.): kalan ay=-3, bitiş=2026-06-30
-- EL BILAL TOURE (BEŞİKTAŞ A.Ş.): kalan ay=-3, bitiş=2026-06-30
-- JOAO PEDRO FERREIRA DA SILVA (BEŞİKTAŞ A.Ş.): kalan ay=-3, bitiş=2026-06-30
-- JONAS SVENSSON (BEŞİKTAŞ A.Ş.): kalan ay=-3, bitiş=2026-06-30
-- KRİSTJAN ASLLANİ (BEŞİKTAŞ A.Ş.): kalan ay=-3, bitiş=2026-06-30
-- YASİN ÖZCAN (BEŞİKTAŞ A.Ş.): kalan ay=4, bitiş=2027-01-27
-- AMIR HADZIAHMETOVIC (BEŞİKTAŞ A.Ş.): kalan ay=8, bitiş=2027-05-31
-- ASIM EFE IŞIK (ÇORLU SPOR 1947): kalan ay=9, bitiş=2027-06-30
-- CENGİZ ÜNDER (ARCA ÇORUM FK): kalan ay=9, bitiş=2027-06-30
-- DEVRİM ŞAHİN (BODRUM FK): kalan ay=9, bitiş=2027-06-30
-- FELIX OHIS UDUOKHAI (BEŞİKTAŞ A.Ş.): kalan ay=9, bitiş=2027-06-30
-- GABRIEL ARMANDO DE ABREU (BEŞİKTAŞ A.Ş.): kalan ay=9, bitiş=2027-06-30
-- JOAO MARIO NAVAL DA COSTA EDUARDO (BEŞİKTAŞ A.Ş.): kalan ay=9, bitiş=2027-06-30
-- MILOT RASHICA (BEŞİKTAŞ A.Ş.): kalan ay=9, bitiş=2027-06-30
-- MUSTAFA ERHAN HEKİMOĞLU (BEŞİKTAŞ A.Ş.): kalan ay=9, bitiş=2027-06-30
-- NECİP UYSAL (BEŞİKTAŞ A.Ş.): kalan ay=9, bitiş=2027-06-30
-- RAFAEL ALEXANDRE FERNANDES FERREIRA DA SILVA (BEŞİKTAŞ A.Ş.): kalan ay=9, bitiş=2027-06-30
+- ERSİN DESTANOĞLU (BEŞİKTAŞ A.Ş.): kalan ay=-5, bitiş=2026-05-31
+- DAVID JURASEK (BEŞİKTAŞ A.Ş.): kalan ay=-4, bitiş=2026-06-30
+- DEVIS ESTIVEN VASQUEZ LLACH (BEŞİKTAŞ A.Ş.): kalan ay=-4, bitiş=2026-06-30
+- EL BILAL TOURE (BEŞİKTAŞ A.Ş.): kalan ay=-4, bitiş=2026-06-30
+- JOAO PEDRO FERREIRA DA SILVA (BEŞİKTAŞ A.Ş.): kalan ay=-4, bitiş=2026-06-30
+- JONAS SVENSSON (BEŞİKTAŞ A.Ş.): kalan ay=-4, bitiş=2026-06-30
+- KRİSTJAN ASLLANİ (BEŞİKTAŞ A.Ş.): kalan ay=-4, bitiş=2026-06-30
+- YASİN ÖZCAN (BEŞİKTAŞ A.Ş.): kalan ay=3, bitiş=2027-01-27
+- AMIR HADZIAHMETOVIC (BEŞİKTAŞ A.Ş.): kalan ay=7, bitiş=2027-05-31
+- ASIM EFE IŞIK (ÇORLU SPOR 1947): kalan ay=8, bitiş=2027-06-30
+- CENGİZ ÜNDER (ARCA ÇORUM FK): kalan ay=8, bitiş=2027-06-30
+- DEVRİM ŞAHİN (BODRUM FK): kalan ay=8, bitiş=2027-06-30
+- FELIX OHIS UDUOKHAI (BEŞİKTAŞ A.Ş.): kalan ay=8, bitiş=2027-06-30
+- GABRIEL ARMANDO DE ABREU (BEŞİKTAŞ A.Ş.): kalan ay=8, bitiş=2027-06-30
+- JOAO MARIO NAVAL DA COSTA EDUARDO (BEŞİKTAŞ A.Ş.): kalan ay=8, bitiş=2027-06-30
+- MILOT RASHICA (BEŞİKTAŞ A.Ş.): kalan ay=8, bitiş=2027-06-30
+- MUSTAFA ERHAN HEKİMOĞLU (BEŞİKTAŞ A.Ş.): kalan ay=8, bitiş=2027-06-30
+- NECİP UYSAL (BEŞİKTAŞ A.Ş.): kalan ay=8, bitiş=2027-06-30
+- RAFAEL ALEXANDRE FERNANDES FERREIRA DA SILVA (BEŞİKTAŞ A.Ş.): kalan ay=8, bitiş=2027-06-30

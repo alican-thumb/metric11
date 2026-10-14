@@ -5,14 +5,12 @@
 - Eksik sinyali olan maç: 10
 - Otomatik ceza sinyali: 15
 - Manuel kayıt: 0
-- Güncel haber/sakat-cezalı sinyali: 2
+- Güncel haber/sakat-cezalı sinyali: 0
 - Haber istihbaratı sinyali: 1
 - Not: Kırmızı/çift sarı için sonraki maç cezası varsayılır. Sarı kart birikimi 4 kartta 1 maç varsayımıdır; resmi ceza listesiyle doğrulanmalıdır.
 
 ## Güncel Haber/Sakat-Cezalı Bağlamı
 
-- INJURED | Khusniddin Alikulov | kaynak=beIN SPORTS sakat ve cezalı listesi | güven=MEDIUM_CONTEXT
-- SUSPENDED | Valentin Mihaila | kaynak=beIN SPORTS sakat ve cezalı listesi | güven=MEDIUM_CONTEXT
 - INJURED | EFE DOĞAN | kaynak=news_intelligence | güven=MEDIUM
 
 ## Maç Bazlı Eksikler
