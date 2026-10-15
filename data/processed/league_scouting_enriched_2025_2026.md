@@ -13,7 +13,7 @@
 - ELDOR SHOMURODOV (RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ): fırsat=105.56, scout=122.5, yaş=31, gol=22, ilk 11=34, sözleşme=2028-06-30, resale=LOW, rol-fit=13.67, dış-api=Yok
 - EBERE PAUL ONUACHU (TRABZONSPOR A.Ş.): fırsat=99.2, scout=118.6, yaş=32, gol=22, ilk 11=28, sözleşme=2028-06-30, resale=LOW, rol-fit=12.5, dış-api=Yok
 - ANDERSON SOUZA CONCEIÇAO (FENERBAHÇE A.Ş.): fırsat=91.41, scout=106.5, yaş=32, gol=19, ilk 11=24, sözleşme=2028-06-30, resale=LOW, rol-fit=12.75, dış-api=Yok
-- FELIPE AUGUSTO DA SILVA (TRABZONSPOR A.Ş.): fırsat=89.67, scout=78.0, yaş=22, gol=13, ilk 11=26, sözleşme=2029-06-30, resale=HIGH, rol-fit=13.17, dış-api=Yok
+- FELIPE AUGUSTO DA SILVA (TRABZONSPOR A.Ş.): fırsat=89.49, scout=78.0, yaş=22, gol=13, ilk 11=26, sözleşme=2029-06-30, resale=HIGH, rol-fit=13.17, dış-api=Yok
 - MOHAMED LAMINE BAYO (GAZİANTEP FUTBOL KULÜBÜ A.Ş.): fırsat=84.49, scout=86.25, yaş=28, gol=15, ilk 11=28, sözleşme=2030-06-30, resale=MEDIUM, rol-fit=12.83, dış-api=Yok
 - JUAN SANTOS DA SILVA (GÖZTEPE A.Ş.): fırsat=74.12, scout=64.3, yaş=24, gol=11, ilk 11=30, sözleşme=2029-06-30, resale=MEDIUM, rol-fit=12.42, dış-api=Yok
 - VICTOR JAMES OSIMHEN (GALATASARAY A.Ş.): fırsat=71.66, scout=79.35, yaş=27, gol=15, ilk 11=19, sözleşme=2029-06-30, resale=MEDIUM, rol-fit=12.83, dış-api=Yok
@@ -33,7 +33,7 @@
 
 ## Genç Değer
 
-- FELIPE AUGUSTO DA SILVA (TRABZONSPOR A.Ş.): yaş=22, fırsat=89.67, ilk 11=26, gol=13, sözleşme=2029-06-30
+- FELIPE AUGUSTO DA SILVA (TRABZONSPOR A.Ş.): yaş=22, fırsat=89.49, ilk 11=26, gol=13, sözleşme=2029-06-30
 - JUAN SANTOS DA SILVA (GÖZTEPE A.Ş.): yaş=24, fırsat=74.12, ilk 11=30, gol=11, sözleşme=2029-06-30
 - DORGELES NENE (FENERBAHÇE A.Ş.): yaş=23, fırsat=71.52, ilk 11=16, gol=10, sözleşme=2030-06-30
 - KACPER SZYMON KOZLOWSKI (GAZİANTEP FUTBOL KULÜBÜ A.Ş.): yaş=22, fırsat=64.78, ilk 11=30, gol=6, sözleşme=2027-06-30

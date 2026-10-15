@@ -21,7 +21,7 @@ _Dar maçlarda gol olasılığını artıracak direkt skor profili._
 
 - ELDOR SHOMURODOV (RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ) — fit=164.55, yaş=31, gol=22, ilk11=34
 - EBERE PAUL ONUACHU (TRABZONSPOR A.Ş.) — fit=152.7, yaş=32, gol=22, ilk11=28
-- FELIPE AUGUSTO DA SILVA (TRABZONSPOR A.Ş.) — fit=137.0, yaş=22, gol=13, ilk11=26
+- FELIPE AUGUSTO DA SILVA (TRABZONSPOR A.Ş.) — fit=136.99, yaş=22, gol=13, ilk11=26
 - MOHAMED LAMINE BAYO (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) — fit=132.01, yaş=28, gol=15, ilk11=28
 - VICTOR JAMES OSIMHEN (GALATASARAY A.Ş.) — fit=113.99, yaş=27, gol=15, ilk11=19
 - MAURO EMANUEL ICARDI (GALATASARAY A.Ş.) — fit=106.58, yaş=33, gol=14, ilk11=12
