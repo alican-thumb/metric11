@@ -1,16 +1,16 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-10-16T16:35:27.399121+00:00
-Toplam ilgili haber: 65
+Üretim zamanı: 2026-10-16T21:06:21.054087+00:00
+Toplam ilgili haber: 64
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [Derbide oynayacak mı? Orkun Kökçü için resmi açıklama](https://www.aksam.com.tr/spor/resmi-aciklama-orkun-kokcunun-saglik-durumu-belli-oldu/haber-1706823) — Aksam Spor · 2026-10-16T23:22:00+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Jhon Duran'dan Pavlidis açıklaması: 'Herkes onun ilk tercih olduğunu biliyor!'](https://www.hurriyet.com.tr/sporarena/jhon-durandan-pavlidis-aciklamasi-herkes-onun-ilk-tercih-oldugunu-biliyor-43344379) — Hürriyet Spor · 2026-10-16T14:03:02+00:00 · turnuva=EL · kulüp=—
+- [UEFA kulüpler sıralaması güncellendi! İlk 30'da tek Türk takımı var - Fotomaç](https://news.google.com/rss/articles/CBMirwFBVV95cUxPd2hXV19rUWhIbnZ2SllYRzgtSnhnUTBoX0F4OFM0cHJSSUVWVTNHQzBmVVBQRmlQem5wRnAzdk53ZzB4QkpvM1BsbUt5ZzdfRDBydUJGTUN5NEhMLXJMU2N3TmdsMkJrR1JjdE11QjRiUHZRakE2UUwxR1BRX2gtMUY3N0JVN0VXNE1WbWMzUFRMam5HR0N2a3g0UzRwVzBDb2RwMmVpVHNsSGZ0QTBj0gG0AUFVX3lxTFBSTElYZU9hRURVTnJYWTE0cWNTVlJMTUhIdENhdDJLMlFBQ1FnWENqTWpTamtmT1R4RXBNb3FxOXVzLVBmSVFvVWRHSWhsVHdLWWt5N3VJUGpEQ1lpRHBrY0Q3bjM5T0IzZXBQeF9Jb1RQOVhfMDZ2WFgyWnZTc05qbjBnXzVHMHJYUzVBRzQwVGNNQTdWYUhrRzA1bXd4eld3bHBVeDdwT2tjZVZ0RWQwa3gwbg?oc=5) — Fotomaç · 2026-10-16T13:23:34+00:00 · turnuva=— · kulüp=—
 - [Fenerbahçe'de Marco Asensio krizi iddiası: Aston Villa maçı öncesi rest çekti! İşte yaşananlar](https://www.takvim.com.tr/spor/fenerbahce/2026/10/16/fenerbahcede-marco-asensiodan-ismail-kartala-rest) — Takvim Spor · 2026-10-16T12:22:46+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Türkiye Belçika maçı ne zaman?](https://www.haberturk.com/spor/foto/mi-lli-mac-i-ci-n-geri-sayim-uefa-uluslar-ligi-a-grubu-turkiye-belcika-maci-ne-zaman-saat-kacta-3920231) — Haberturk Spor · 2026-10-16T11:35:07+00:00 · turnuva=— · kulüp=—
 - [Trabzonspor, Thomas Reis yönetiminde gol yollarında zorlanmıyor](https://www.aa.com.tr/tr/spor/trabzonspor-thomas-reis-yonetiminde-gol-yollarinda-zorlanmiyor/4090681) — Anadolu Ajansı Spor · 2026-10-16T11:11:43+03:00 · turnuva=ECL · kulüp=Trabzonspor
-- [Bir Sabah FC olamadılar: Fenerbahçe ve Galatasaray’dan Şampiyonlar Ligi’nde ağır fatura - GZT](https://news.google.com/rss/articles/CBMi6gFBVV95cUxPdnA2bzNfQm5UQzNpaGs1Mm1EOV8ybmphcXk1RHVjaXZudkxGTlFQaXlWSUhmM0xRdjQzUEpCOUt2dElKRVlMdk5kdjA5R0FTUXEwYU9IZ1RyYV9ud2VtVjBEc3VQTWhYTks1MnlvcWEta2hhRHdVUFd2WnZCMnpoWWo2WXprR3Q3MndxQm00ZlVScXp6Y1gyYWdUbEZ1cy1IcmNwM3p4bFlESkxua0FXYkhmSGRzWW5uMUJhUzZRTlNNdzVxWkpRU1VqYm5TTEdJVXJpOUJJMzl6S2U1WlUwdFBDZG1mV2pKYVE?oc=5) — GZT · 2026-10-16T11:05:40+00:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe
 - [Alman basını Beşiktaş'ın zaferini konuşuyor: 'Hoffenheim alay konusu oldu!'](https://www.hurriyet.com.tr/sporarena/alman-basini-besiktasin-zaferini-konusuyor-hoffenheim-alay-konusu-oldu-43343987) — Hürriyet Spor · 2026-10-16T11:02:00+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Spor yazarlarından Beşiktaş övgüleri: "Oh oh suyundan da!"](https://www.takvim.com.tr/spor/besiktas/2026/10/16/spor-yazarlari-hoffenheim-besiktas-macini-yorumladi) — Takvim Spor · 2026-10-16T10:47:47+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Spor yazarlarından Trabzonspor ve Salah övgüleri: "Avrupa'da Konferans verdi"](https://www.takvim.com.tr/spor/trabzonspor/2026/10/16/spor-yazarlari-kups-trabzonspor-macini-degerlendirdi) — Takvim Spor · 2026-10-16T09:43:15+03:00 · turnuva=ECL · kulüp=Trabzonspor
@@ -40,9 +40,9 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [HOFFENHEIM BEŞİKTAŞ CANLI İZLE| Avrupa Ligi Hoffenheim Beşiktaş Maçı Şifresiz Mi? İşte UEL Hoffenheim Beşiktaş TRT 1 Canlı Yayını!](https://www.cnnturk.com/spor/futbol/hoffenheim-besiktas-canli-izle-avrupa-ligi-hoffenheim-besiktas-maci-sifresiz-mi-iste-uel-hoffenheim-besiktas-trt-1-canli-yayini-3479711) — CNN Türk Spor · 2026-10-15T21:51:56+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [HOFFENHEIM BEŞİKTAŞ MAÇI HANGİ KANALDA? UEFA Avrupa Ligi Hoffenheim - Beşiktaş Maçı Saat Kaçta, Hangi Kanalda? Vlahovic Yok Mu, Neden?](https://www.cnnturk.com/spor/futbol/hoffenheim-besiktas-maci-ne-zaman-uefa-avrupa-ligi-hoffenheim-besiktas-maci-hangi-kanalda-saat-kacta-3478102) — CNN Türk Spor · 2026-10-15T21:51:20+00:00 · turnuva=EL · kulüp=Beşiktaş, Kocaelispor
 - ["Önemli bir galibiyet aldık"](https://www.haberturk.com/spor/junior-olaitan-onemli-bir-galibiyet-aldik-3920091) — Haberturk Spor · 2026-10-15T21:47:19+00:00 · turnuva=EL · kulüp=Beşiktaş
-- ["Kendi sahamızda gibi hissettim"](https://www.haberturk.com/spor/hyeon-gyu-oh-kendi-sahamizda-gibi-hissettim-3920087) — Haberturk Spor · 2026-10-15T21:35:48+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Avrupa Ligi'nde gecenin sonuçları!](https://www.haberturk.com/spor/uefa-avrupa-ligi-nde-gecenin-sonuclari-3920084) — Haberturk Spor · 2026-10-15T21:25:06+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Konferans Ligi'nde gecenin sonuçları!](https://www.haberturk.com/spor/uefa-konferans-ligi-nde-gecenin-sonuclari-3920085) — Haberturk Spor · 2026-10-15T21:22:25+00:00 · turnuva=ECL · kulüp=Trabzonspor
 - [Beşiktaş'ta Dusan Vlahovic yok ama Hyeon-gyu Oh var!](https://www.hurriyet.com.tr/sporarena/besiktasta-dusan-vlahovic-yok-ama-hyeon-gyu-oh-var-43343413) — Hürriyet Spor · 2026-10-15T21:11:00+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Trabzonspor'da Onuachu şoku! 10. dakikada oyundan çıktı](https://www.takvim.com.tr/spor/trabzonspor/2026/10/15/trabzonsporda-onuachu-soku-kups-kuopio-macinda-sakatlandi) — Takvim Spor · 2026-10-15T20:56:50+03:00 · turnuva=ECL · kulüp=Trabzonspor
 - [Trabzonspor, Finlandiya deplasmanında 4 golle kazandı](https://www.aa.com.tr/tr/spor/trabzonspor-finlandiya-deplasmaninda-4-golle-kazandi/4090271) — Anadolu Ajansı Spor · 2026-10-15T20:49:39+03:00 · turnuva=ECL · kulüp=Trabzonspor
+- [Beşiktaş'ta Orkun Kökçü telaşı: İkinci yarıya çıkamadı!](https://www.hurriyet.com.tr/sporarena/besiktasta-orkun-kokcu-telasi-ikinci-yariya-cikamadi-43343405) — Hürriyet Spor · 2026-10-15T20:15:05+00:00 · turnuva=EL · kulüp=Beşiktaş
