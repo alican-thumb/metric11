@@ -14,6 +14,6 @@
 - INJURED | Dilhan Demir | kaynak=beIN SPORTS sakat ve cezalı listesi | güven=MEDIUM_CONTEXT
 - INJURED | Hasan Yıldırım | kaynak=beIN SPORTS sakat ve cezalı listesi | güven=MEDIUM_CONTEXT
 - INJURED | Yira Sor | kaynak=beIN SPORTS sakat ve cezalı listesi | güven=MEDIUM_CONTEXT
-- INJURED | Gökhan Gül | kaynak=beIN SPORTS sakat ve cezalı listesi | güven=MEDIUM_CONTEXT
+- INJURED | Lumbardh Dellova | kaynak=beIN SPORTS sakat ve cezalı listesi | güven=MEDIUM_CONTEXT
 
 ## Maç Bazlı Eksikler
