@@ -8,11 +8,11 @@
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 11
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 4487
+- Defterde korunan ilk iddia gözlemi: 4492
 
 ## Kanal Kapsamı
 
-- Google News: 91 haber, 30/30 başarılı sorgu.
+- Google News: 92 haber, 30/30 başarılı sorgu.
 - Telegram: 6 mesaj, 8/8 erişilebilir kanal.
 - X: durum=MISSING_CREDENTIALS, gönderi=0, yapılandırılmış hesap=45.
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 4484 | 1396 | 13 | — | 910.9 | %99.1 | 0.8 | FIRST_SEEN_BOUND |
+| Google News / medya | 4489 | 1396 | 13 | — | 910.9 | %99.1 | 0.8 | FIRST_SEEN_BOUND |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -59,14 +59,14 @@
 | Ajansspor | MEDIA | 95 | 40 | 1 | — | 1255.5 | %97.4 | 2.1 | FIRST_SEEN_BOUND |
 | Habertürk | MEDIA | 68 | 41 | 1 | — | 1251.6 | %97.6 | 2.0 | FIRST_SEEN_BOUND |
 | Son Dakika | MEDIA | 98 | 65 | 1 | — | 1251.4 | %98.4 | 1.2 | FIRST_SEEN_BOUND |
-| Fotomaç | MEDIA | 484 | 96 | 1 | — | 1251.1 | %98.9 | 0.9 | FIRST_SEEN_BOUND |
+| Fotomaç | MEDIA | 487 | 96 | 1 | — | 1251.1 | %98.9 | 0.9 | FIRST_SEEN_BOUND |
 | Sabah | MEDIA | 312 | 65 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Hürriyet | MEDIA | 304 | 41 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Takvim | MEDIA | 297 | 30 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Aksam Spor | MEDIA | 200 | 16 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
-| Haberturk Spor | MEDIA | 171 | 14 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Haberturk Spor | MEDIA | 172 | 14 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | GZT | MEDIA | 112 | 33 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
-| Fanatik | MEDIA | 109 | 36 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Fanatik | MEDIA | 110 | 36 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | NTVSpor | MEDIA | 109 | 26 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Milliyet | MEDIA | 105 | 26 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Sporx.com | MEDIA | 103 | 82 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
