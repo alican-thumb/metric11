@@ -1,6 +1,6 @@
 {
   "available": true,
-  "generated_at": "2026-10-17T19:09:10.286120",
+  "generated_at": "2026-10-17T16:11:01.206526",
   "week": 8,
   "matches": [
     {
@@ -26,29 +26,18 @@
       "date": "17 Eki",
       "home_team": "ERZURUMSPOR FK",
       "away_team": "EYÜPSPOR",
-      "is_played": false,
-      "actual_score": null,
+      "is_played": true,
+      "actual_score": "2 - 0",
       "predicted": "home",
       "pick_text": "ERZURUMSPOR FK",
       "home_win_probability": 0.586,
       "draw_probability": 0.23,
       "away_win_probability": 0.185,
-      "data_confidence": "LOW_NEW_TEAM",
+      "data_confidence": "PLAYED",
       "recommended_scoreline": "1-0",
       "expected_home_goals": 1.79,
       "expected_away_goals": 0.9,
-      "signals": {
-        "over_2_5_probability": 0.504,
-        "btts_probability": 0.494,
-        "expected_total_cards": 3.1,
-        "red_card_risk": 0.122,
-        "home_card_data_available": true,
-        "away_card_data_available": true,
-        "no_goal_probability": 0.068,
-        "home_scores_first_probability": 0.62,
-        "away_scores_first_probability": 0.312,
-        "likely_goal_band": "76-90+"
-      }
+      "signals": null
     },
     {
       "match_id": "317850",
@@ -256,26 +245,26 @@
   ],
   "last_week": {
     "week": 8,
-    "evaluated_matches": 1,
-    "correct": 1,
+    "evaluated_matches": 2,
+    "correct": 2,
     "accuracy": 1.0,
     "actual_draws": 0,
     "draws_caught": 0,
     "draw_recall": null,
-    "high_conf_matches": 0,
-    "high_conf_correct": 0,
-    "high_conf_accuracy": null,
-    "brier_score": 0.436,
-    "log_loss": 0.7744,
+    "high_conf_matches": 1,
+    "high_conf_correct": 1,
+    "high_conf_accuracy": 1.0,
+    "brier_score": 0.3473,
+    "log_loss": 0.6544,
     "confidence_breakdown": {
       "HIGH": {
-        "matches": 0,
-        "correct": 0,
-        "accuracy": null,
-        "avg_stated_probability": null,
-        "calibration_gap": null,
-        "brier_score": null,
-        "log_loss": null
+        "matches": 1,
+        "correct": 1,
+        "accuracy": 1.0,
+        "avg_stated_probability": 0.586,
+        "calibration_gap": 0.414,
+        "brier_score": 0.2585,
+        "log_loss": 0.5344
       },
       "MEDIUM": {
         "matches": 1,
@@ -298,11 +287,11 @@
     },
     "pick_side_breakdown": {
       "home": {
-        "matches": 1,
-        "correct": 1,
+        "matches": 2,
+        "correct": 2,
         "accuracy": 1.0,
         "actual": {
-          "home": 1,
+          "home": 2,
           "draw": 0,
           "away": 0
         }
