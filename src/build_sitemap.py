@@ -1,7 +1,8 @@
 """Sitemap.xml ve robots.txt üretir."""
 from __future__ import annotations
 
-from datetime import date
+import json
+from datetime import date, datetime
 from pathlib import Path
 
 from src.config import PROCESSED_DIR, SEASON
@@ -74,6 +75,7 @@ def build_sitemap() -> str:
             f"    <priority>{priority:.1f}</priority>\n"
             f"  </url>"
         )
+    urls += _match_page_urls(today)
     body = "\n".join(urls)
     return (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
@@ -81,6 +83,40 @@ def build_sitemap() -> str:
         f"{body}\n"
         "</urlset>"
     )
+
+
+def _url_entry(path: str, lastmod: str, freq: str, priority: float) -> str:
+    return (
+        f"  <url>\n"
+        f"    <loc>{BASE_URL}/{path}</loc>\n"
+        f"    <lastmod>{lastmod}</lastmod>\n"
+        f"    <changefreq>{freq}</changefreq>\n"
+        f"    <priority>{priority:.1f}</priority>\n"
+        f"  </url>"
+    )
+
+
+def _match_page_urls(today: str) -> list[str]:
+    """build_match_pages çıktısı: oynanmış maç/hafta sayfası donuk (lastmod = maç günü),
+    yaklaşanlar her gün yeniden hesaplanıyor (lastmod = bugün)."""
+    index_path = PROCESSED_DIR / "match_pages_index_2026_2027.json"
+    if not index_path.exists():
+        return []
+    index = json.loads(index_path.read_text(encoding="utf-8"))
+    out = []
+    for week in index.get("weeks", []):
+        out.append(_url_entry(week["path"], today, "monthly" if week["played"] else "daily", 0.6 if week["played"] else 0.9))
+    for match in index.get("matches", []):
+        played_on = None
+        try:
+            played_on = datetime.strptime(match["date_time"].replace(" - ", " ").strip(), "%d.%m.%Y %H:%M").date().isoformat()
+        except (ValueError, AttributeError, KeyError):
+            pass
+        if match.get("played"):
+            out.append(_url_entry(match["path"], played_on or today, "yearly", 0.5))
+        else:
+            out.append(_url_entry(match["path"], today, "daily", 0.8))
+    return out
 
 
 def build_robots() -> str:

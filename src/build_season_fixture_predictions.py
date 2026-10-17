@@ -297,12 +297,21 @@ footer a { color:#1e3a5f; }
 """
 
 
+def _detail_link(m: dict, label: str) -> str:
+    # Döngüsel import: build_match_pages bu modülün OUTPUT_JSON'unu kullanıyor.
+    from src.build_match_pages import match_page_path
+
+    href = match_page_path(m["home_team"], m["away_team"])
+    return f'<a class="mc-detail" href="{href}" style="font-size:11px;color:var(--lime);text-decoration:none;font-weight:700">{label} →</a>'
+
+
 def _match_card(m: dict, signals: dict | None = None, scorers: dict | None = None, medium_unreliable: bool = False) -> str:
     if m.get("is_played"):
         return f"""<div class="match-card">
   <div class="mc-date">{escape(_fmt_date(m['date_time']))}</div>
   <div class="mc-teams"><span>{escape(m['home_team'])}</span><span class="vs">{escape(m['actual_score'])}</span><span>{escape(m['away_team'])}</span></div>
   <div class="mc-pick draw" style="background:rgba(148,163,184,.14);color:#94a3b8">OYNANDI</div>
+  {_detail_link(m, "Tahmin ve sonuç")}
 </div>"""
     labels = {"home": "Ev Sahibi", "draw": "Beraberlik", "away": "Deplasman"}
     pick = m["predicted"]
@@ -398,6 +407,7 @@ def _match_card(m: dict, signals: dict | None = None, scorers: dict | None = Non
   {susp_html}
   {scorers_html}
   <div class="mc-conf">Güven: {escape(_confidence_text(m['data_confidence'], medium_unreliable))}</div>
+  {_detail_link(m, "Detaylı maç tahmini")}
 </div>"""
 
 
@@ -463,7 +473,7 @@ def build_html(payload: dict) -> str:
         f'<div class="stat-chip"><div class="v">3</div><div class="l">Yeni Takım</div></div>'
     )
     weeks_html = "\n".join(
-        f'<div class="week-header">Hafta {week["week"]}</div>'
+        f'<div class="week-header"><a href="super-lig-{week["week"]}-hafta-tahminleri-2026-27.html" style="color:inherit;text-decoration:none">Hafta {week["week"]}</a></div>'
         f'<div class="match-grid">{"".join(_match_card(m, signals, scorers, medium_unreliable) for m in week["matches"])}</div>'
         for week in payload["weeks"]
     )

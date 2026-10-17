@@ -108,6 +108,8 @@ def _pick_class(pick: str) -> str:
 
 def render_hero_html(payload: dict | None = None) -> str:
     """Ana sayfaya gömülebilen "Bu Hafta" hero HTML parçası (self-contained inline stil)."""
+    from src.build_match_pages import match_page_path, week_page_path
+
     if payload is None:
         payload = build_payload()
     if not payload.get("available") or not payload.get("matches"):
@@ -170,8 +172,8 @@ def render_hero_html(payload: dict | None = None) -> str:
             f'<div style="display:flex;justify-content:space-between;align-items:center;gap:12px;'
             f'padding:10px 0;border-bottom:1px solid #eef2ef;">'
             f'<div><div style="font-size:10px;color:#8fa89a;">{escape(m.get("date") or "")}</div>'
-            f'<div style="font-size:14px;font-weight:700;color:#132018;">{escape(m.get("home_team") or "")} '
-            f'<span style="color:#8fa89a;font-weight:600;font-size:11px;">vs</span> {escape(m.get("away_team") or "")}</div></div>'
+            f'<a href="{match_page_path(m.get("home_team") or "", m.get("away_team") or "")}" style="display:block;font-size:14px;font-weight:700;color:#132018;text-decoration:none;">{escape(m.get("home_team") or "")} '
+            f'<span style="color:#8fa89a;font-weight:600;font-size:11px;">vs</span> {escape(m.get("away_team") or "")}</a></div>'
             f'<div style="text-align:right;">{right}</div></div>'
         )
 
@@ -185,8 +187,10 @@ def render_hero_html(payload: dict | None = None) -> str:
         '<div style="font-size:12px;color:#627067;margin-bottom:8px;line-height:1.5;">'
         'Oynanan her maç ve doğrulanan her transfer bir sonraki haftanın tahminini besliyor; her gün güncelleniyor.</div>'
         f'{"".join(rows)}'
+        f'<a href="{week_page_path(payload["week"])}" style="display:inline-block;margin:12px 16px 0 0;'
+        f'color:#116447;font-weight:700;font-size:13px;text-decoration:none;">Hafta {payload["week"]} tüm tahminler →</a>'
         '<a href="season_fixture_predictions_2026_2027.html" style="display:inline-block;margin-top:12px;'
-        'color:#116447;font-weight:700;font-size:13px;text-decoration:none;">Tüm fikstür ve tahminlere git →</a>'
+        'color:#116447;font-weight:700;font-size:13px;text-decoration:none;">Tüm fikstür →</a>'
         '</section>'
     )
 

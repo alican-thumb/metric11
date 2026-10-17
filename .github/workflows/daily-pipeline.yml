@@ -80,3 +80,8 @@ jobs:
           VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
           VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
         run: npx --yes vercel deploy --prod --yes --token="$VERCEL_TOKEN"
+
+      - name: Yeni sayfaları arama motorlarına bildir (IndexNow)
+        if: always()
+        continue-on-error: true
+        run: python -m src.submit_indexnow
