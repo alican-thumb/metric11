@@ -1,6 +1,6 @@
 {
   "available": true,
-  "generated_at": "2026-10-16T21:06:18.009679",
+  "generated_at": "2026-10-17T00:29:46.194986",
   "week": 8,
   "matches": [
     {
@@ -8,29 +8,18 @@
       "date": "16 Eki",
       "home_team": "ARCA ÇORUM FK",
       "away_team": "ÇAYKUR RİZESPOR A.Ş.",
-      "is_played": false,
-      "actual_score": null,
+      "is_played": true,
+      "actual_score": "2 - 1",
       "predicted": "home",
       "pick_text": "ARCA ÇORUM FK",
       "home_win_probability": 0.461,
       "draw_probability": 0.258,
       "away_win_probability": 0.281,
-      "data_confidence": "MEDIUM",
+      "data_confidence": "PLAYED",
       "recommended_scoreline": "1-0",
       "expected_home_goals": 1.49,
       "expected_away_goals": 1.1,
-      "signals": {
-        "over_2_5_probability": 0.479,
-        "btts_probability": 0.517,
-        "expected_total_cards": 3.4,
-        "red_card_risk": 0.227,
-        "home_card_data_available": true,
-        "away_card_data_available": true,
-        "no_goal_probability": 0.075,
-        "home_scores_first_probability": 0.532,
-        "away_scores_first_probability": 0.393,
-        "likely_goal_band": "76-90+"
-      }
+      "signals": null
     },
     {
       "match_id": "317855",
@@ -266,55 +255,55 @@
     }
   ],
   "last_week": {
-    "week": 7,
-    "evaluated_matches": 9,
-    "correct": 6,
-    "accuracy": 0.6667,
-    "actual_draws": 3,
+    "week": 8,
+    "evaluated_matches": 1,
+    "correct": 1,
+    "accuracy": 1.0,
+    "actual_draws": 0,
     "draws_caught": 0,
-    "draw_recall": 0.0,
-    "high_conf_matches": 5,
-    "high_conf_correct": 4,
-    "high_conf_accuracy": 0.8,
-    "brier_score": 0.5332,
-    "log_loss": 0.9074,
+    "draw_recall": null,
+    "high_conf_matches": 0,
+    "high_conf_correct": 0,
+    "high_conf_accuracy": null,
+    "brier_score": 0.436,
+    "log_loss": 0.7744,
     "confidence_breakdown": {
       "HIGH": {
-        "matches": 5,
-        "correct": 4,
-        "accuracy": 0.8,
-        "avg_stated_probability": 0.572,
-        "calibration_gap": 0.228,
-        "brier_score": 0.4073,
-        "log_loss": 0.7277
+        "matches": 0,
+        "correct": 0,
+        "accuracy": null,
+        "avg_stated_probability": null,
+        "calibration_gap": null,
+        "brier_score": null,
+        "log_loss": null
       },
       "MEDIUM": {
-        "matches": 3,
-        "correct": 1,
-        "accuracy": 0.3333,
-        "avg_stated_probability": 0.486,
-        "calibration_gap": -0.1527,
-        "brier_score": 0.7542,
-        "log_loss": 1.2256
-      },
-      "LOW": {
         "matches": 1,
         "correct": 1,
         "accuracy": 1.0,
-        "avg_stated_probability": 0.427,
-        "calibration_gap": 0.573,
-        "brier_score": 0.5004,
-        "log_loss": 0.851
+        "avg_stated_probability": 0.461,
+        "calibration_gap": 0.539,
+        "brier_score": 0.436,
+        "log_loss": 0.7744
+      },
+      "LOW": {
+        "matches": 0,
+        "correct": 0,
+        "accuracy": null,
+        "avg_stated_probability": null,
+        "calibration_gap": null,
+        "brier_score": null,
+        "log_loss": null
       }
     },
     "pick_side_breakdown": {
       "home": {
-        "matches": 3,
-        "correct": 2,
-        "accuracy": 0.6667,
+        "matches": 1,
+        "correct": 1,
+        "accuracy": 1.0,
         "actual": {
-          "home": 2,
-          "draw": 1,
+          "home": 1,
+          "draw": 0,
           "away": 0
         }
       },
@@ -329,13 +318,13 @@
         }
       },
       "away": {
-        "matches": 6,
-        "correct": 4,
-        "accuracy": 0.6667,
+        "matches": 0,
+        "correct": 0,
+        "accuracy": null,
         "actual": {
           "home": 0,
-          "draw": 2,
-          "away": 4
+          "draw": 0,
+          "away": 0
         }
       }
     }

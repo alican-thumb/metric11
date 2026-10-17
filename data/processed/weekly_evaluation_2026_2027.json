@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-16T21:06:17.943496",
+  "generated_at": "2026-10-17T00:29:46.109552",
   "season": "2026-2027",
   "summary": {
-    "evaluated_matches": 63,
-    "correct": 27,
-    "accuracy": 0.4286,
+    "evaluated_matches": 64,
+    "correct": 28,
+    "accuracy": 0.4375,
     "actual_draws": 14,
     "draws_caught": 2,
     "draw_recall": 0.1429,
     "high_conf_matches": 24,
     "high_conf_correct": 13,
     "high_conf_accuracy": 0.5417,
-    "brier_score": 0.6472,
-    "log_loss": 1.0652,
+    "brier_score": 0.6439,
+    "log_loss": 1.0607,
     "confidence_breakdown": {
       "HIGH": {
         "matches": 24,
@@ -24,13 +24,13 @@
         "log_loss": 0.9736
       },
       "MEDIUM": {
-        "matches": 23,
-        "correct": 5,
-        "accuracy": 0.2174,
-        "avg_stated_probability": 0.4647,
-        "calibration_gap": -0.2473,
-        "brier_score": 0.7074,
-        "log_loss": 1.1419
+        "matches": 24,
+        "correct": 6,
+        "accuracy": 0.25,
+        "avg_stated_probability": 0.4646,
+        "calibration_gap": -0.2146,
+        "brier_score": 0.696,
+        "log_loss": 1.1266
       },
       "LOW": {
         "matches": 16,
@@ -44,11 +44,11 @@
     },
     "pick_side_breakdown": {
       "home": {
-        "matches": 36,
-        "correct": 17,
-        "accuracy": 0.4722,
+        "matches": 37,
+        "correct": 18,
+        "accuracy": 0.4865,
         "actual": {
-          "home": 17,
+          "home": 18,
           "draw": 7,
           "away": 12
         }
@@ -75,58 +75,58 @@
       }
     }
   },
-  "last_played_week": 7,
+  "last_played_week": 8,
   "last_week": {
-    "week": 7,
+    "week": 8,
     "summary": {
-      "evaluated_matches": 9,
-      "correct": 6,
-      "accuracy": 0.6667,
-      "actual_draws": 3,
+      "evaluated_matches": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "actual_draws": 0,
       "draws_caught": 0,
-      "draw_recall": 0.0,
-      "high_conf_matches": 5,
-      "high_conf_correct": 4,
-      "high_conf_accuracy": 0.8,
-      "brier_score": 0.5332,
-      "log_loss": 0.9074,
+      "draw_recall": null,
+      "high_conf_matches": 0,
+      "high_conf_correct": 0,
+      "high_conf_accuracy": null,
+      "brier_score": 0.436,
+      "log_loss": 0.7744,
       "confidence_breakdown": {
         "HIGH": {
-          "matches": 5,
-          "correct": 4,
-          "accuracy": 0.8,
-          "avg_stated_probability": 0.572,
-          "calibration_gap": 0.228,
-          "brier_score": 0.4073,
-          "log_loss": 0.7277
+          "matches": 0,
+          "correct": 0,
+          "accuracy": null,
+          "avg_stated_probability": null,
+          "calibration_gap": null,
+          "brier_score": null,
+          "log_loss": null
         },
         "MEDIUM": {
-          "matches": 3,
-          "correct": 1,
-          "accuracy": 0.3333,
-          "avg_stated_probability": 0.486,
-          "calibration_gap": -0.1527,
-          "brier_score": 0.7542,
-          "log_loss": 1.2256
-        },
-        "LOW": {
           "matches": 1,
           "correct": 1,
           "accuracy": 1.0,
-          "avg_stated_probability": 0.427,
-          "calibration_gap": 0.573,
-          "brier_score": 0.5004,
-          "log_loss": 0.851
+          "avg_stated_probability": 0.461,
+          "calibration_gap": 0.539,
+          "brier_score": 0.436,
+          "log_loss": 0.7744
+        },
+        "LOW": {
+          "matches": 0,
+          "correct": 0,
+          "accuracy": null,
+          "avg_stated_probability": null,
+          "calibration_gap": null,
+          "brier_score": null,
+          "log_loss": null
         }
       },
       "pick_side_breakdown": {
         "home": {
-          "matches": 3,
-          "correct": 2,
-          "accuracy": 0.6667,
+          "matches": 1,
+          "correct": 1,
+          "accuracy": 1.0,
           "actual": {
-            "home": 2,
-            "draw": 1,
+            "home": 1,
+            "draw": 0,
             "away": 0
           }
         },
@@ -141,161 +141,33 @@
           }
         },
         "away": {
-          "matches": 6,
-          "correct": 4,
-          "accuracy": 0.6667,
+          "matches": 0,
+          "correct": 0,
+          "accuracy": null,
           "actual": {
             "home": 0,
-            "draw": 2,
-            "away": 4
+            "draw": 0,
+            "away": 0
           }
         }
       }
     },
     "matches": [
       {
-        "match_id": "317844",
-        "date_time": "09.10.2026 20:00",
-        "home_team": "GALATASARAY A.Ş.",
-        "away_team": "KASIMPAŞA A.Ş.",
-        "actual_score": "3 - 1",
-        "actual": "home",
-        "predicted": "home",
-        "raw_predicted": "home",
-        "correct": true,
-        "data_confidence": "PLAYED",
-        "prediction_confidence": "HIGH",
-        "home_win_probability": 0.541,
-        "draw_probability": 0.211,
-        "away_win_probability": 0.248
-      },
-      {
-        "match_id": "317842",
-        "date_time": "10.10.2026 13:30",
-        "home_team": "GENÇLERBİRLİĞİ",
-        "away_team": "AMED SPORTİF FAALİYETLER",
-        "actual_score": "2 - 2",
-        "actual": "draw",
-        "predicted": "away",
-        "raw_predicted": "away",
-        "correct": false,
-        "data_confidence": "PLAYED",
-        "prediction_confidence": "MEDIUM",
-        "home_win_probability": 0.258,
-        "draw_probability": 0.224,
-        "away_win_probability": 0.518
-      },
-      {
-        "match_id": "317840",
-        "date_time": "10.10.2026 16:00",
-        "home_team": "CORENDON ALANYASPOR",
-        "away_team": "ERZURUMSPOR FK",
-        "actual_score": "0 - 0",
-        "actual": "draw",
-        "predicted": "home",
-        "raw_predicted": "home",
-        "correct": false,
-        "data_confidence": "PLAYED",
-        "prediction_confidence": "HIGH",
-        "home_win_probability": 0.574,
-        "draw_probability": 0.248,
-        "away_win_probability": 0.178
-      },
-      {
-        "match_id": "317846",
-        "date_time": "10.10.2026 16:00",
-        "home_team": "SAMSUNSPOR A.Ş.",
-        "away_team": "TRABZONSPOR A.Ş.",
-        "actual_score": "0 - 3",
-        "actual": "away",
-        "predicted": "away",
-        "raw_predicted": "away",
-        "correct": true,
-        "data_confidence": "PLAYED",
-        "prediction_confidence": "HIGH",
-        "home_win_probability": 0.222,
-        "draw_probability": 0.23,
-        "away_win_probability": 0.547
-      },
-      {
-        "match_id": "317841",
-        "date_time": "10.10.2026 19:00",
-        "home_team": "ÇAYKUR RİZESPOR A.Ş.",
-        "away_team": "FENERBAHÇE A.Ş.",
-        "actual_score": "0 - 3",
-        "actual": "away",
-        "predicted": "away",
-        "raw_predicted": "away",
-        "correct": true,
-        "data_confidence": "PLAYED",
-        "prediction_confidence": "HIGH",
-        "home_win_probability": 0.197,
-        "draw_probability": 0.179,
-        "away_win_probability": 0.623
-      },
-      {
-        "match_id": "317843",
-        "date_time": "11.10.2026 13:30",
-        "home_team": "TÜMOSAN KONYASPOR",
-        "away_team": "İSTANBUL BAŞAKŞEHİR FK",
-        "actual_score": "0 - 0",
-        "actual": "draw",
-        "predicted": "away",
-        "raw_predicted": "away",
-        "correct": false,
-        "data_confidence": "PLAYED",
-        "prediction_confidence": "MEDIUM",
-        "home_win_probability": 0.259,
-        "draw_probability": 0.251,
-        "away_win_probability": 0.49
-      },
-      {
-        "match_id": "317838",
-        "date_time": "11.10.2026 16:00",
-        "home_team": "GAZİANTEP FUTBOL KULÜBÜ A.Ş.",
-        "away_team": "ARCA ÇORUM FK",
-        "actual_score": "0 - 3",
-        "actual": "away",
-        "predicted": "away",
-        "raw_predicted": "away",
-        "correct": true,
-        "data_confidence": "PLAYED",
-        "prediction_confidence": "MEDIUM",
-        "home_win_probability": 0.317,
-        "draw_probability": 0.233,
-        "away_win_probability": 0.45
-      },
-      {
-        "match_id": "317845",
-        "date_time": "11.10.2026 19:00",
-        "home_team": "BEŞİKTAŞ A.Ş.",
-        "away_team": "KOCAELİSPOR",
+        "match_id": "317852",
+        "date_time": "16.10.2026 20:00",
+        "home_team": "ARCA ÇORUM FK",
+        "away_team": "ÇAYKUR RİZESPOR A.Ş.",
         "actual_score": "2 - 1",
         "actual": "home",
         "predicted": "home",
         "raw_predicted": "home",
         "correct": true,
         "data_confidence": "PLAYED",
-        "prediction_confidence": "HIGH",
-        "home_win_probability": 0.575,
-        "draw_probability": 0.241,
-        "away_win_probability": 0.184
-      },
-      {
-        "match_id": "317839",
-        "date_time": "12.10.2026 20:00",
-        "home_team": "EYÜPSPOR",
-        "away_team": "GÖZTEPE A.Ş.",
-        "actual_score": "0 - 4",
-        "actual": "away",
-        "predicted": "away",
-        "raw_predicted": "away",
-        "correct": true,
-        "data_confidence": "PLAYED",
-        "prediction_confidence": "LOW",
-        "home_win_probability": 0.351,
-        "draw_probability": 0.221,
-        "away_win_probability": 0.427
+        "prediction_confidence": "MEDIUM",
+        "home_win_probability": 0.461,
+        "draw_probability": 0.258,
+        "away_win_probability": 0.281
       }
     ]
   },
@@ -1858,6 +1730,101 @@
           "home_win_probability": 0.351,
           "draw_probability": 0.221,
           "away_win_probability": 0.427
+        }
+      ]
+    },
+    {
+      "week": 8,
+      "summary": {
+        "evaluated_matches": 1,
+        "correct": 1,
+        "accuracy": 1.0,
+        "actual_draws": 0,
+        "draws_caught": 0,
+        "draw_recall": null,
+        "high_conf_matches": 0,
+        "high_conf_correct": 0,
+        "high_conf_accuracy": null,
+        "brier_score": 0.436,
+        "log_loss": 0.7744,
+        "confidence_breakdown": {
+          "HIGH": {
+            "matches": 0,
+            "correct": 0,
+            "accuracy": null,
+            "avg_stated_probability": null,
+            "calibration_gap": null,
+            "brier_score": null,
+            "log_loss": null
+          },
+          "MEDIUM": {
+            "matches": 1,
+            "correct": 1,
+            "accuracy": 1.0,
+            "avg_stated_probability": 0.461,
+            "calibration_gap": 0.539,
+            "brier_score": 0.436,
+            "log_loss": 0.7744
+          },
+          "LOW": {
+            "matches": 0,
+            "correct": 0,
+            "accuracy": null,
+            "avg_stated_probability": null,
+            "calibration_gap": null,
+            "brier_score": null,
+            "log_loss": null
+          }
+        },
+        "pick_side_breakdown": {
+          "home": {
+            "matches": 1,
+            "correct": 1,
+            "accuracy": 1.0,
+            "actual": {
+              "home": 1,
+              "draw": 0,
+              "away": 0
+            }
+          },
+          "draw": {
+            "matches": 0,
+            "correct": 0,
+            "accuracy": null,
+            "actual": {
+              "home": 0,
+              "draw": 0,
+              "away": 0
+            }
+          },
+          "away": {
+            "matches": 0,
+            "correct": 0,
+            "accuracy": null,
+            "actual": {
+              "home": 0,
+              "draw": 0,
+              "away": 0
+            }
+          }
+        }
+      },
+      "matches": [
+        {
+          "match_id": "317852",
+          "date_time": "16.10.2026 20:00",
+          "home_team": "ARCA ÇORUM FK",
+          "away_team": "ÇAYKUR RİZESPOR A.Ş.",
+          "actual_score": "2 - 1",
+          "actual": "home",
+          "predicted": "home",
+          "raw_predicted": "home",
+          "correct": true,
+          "data_confidence": "PLAYED",
+          "prediction_confidence": "MEDIUM",
+          "home_win_probability": 0.461,
+          "draw_probability": 0.258,
+          "away_win_probability": 0.281
         }
       ]
     }

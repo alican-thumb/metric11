@@ -4,12 +4,12 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 
 ## Genel Karne
 
-- Değerlendirilen maç: **63**
-- İsabet: **27/63** (%43)
+- Değerlendirilen maç: **64**
+- İsabet: **28/64** (%44)
 - Beraberlik yakalama: **2/14** (%14)
 - Yüksek güvenli maç isabeti: **13/24** (%54)
-- Brier score: **0.647** (düşük daha iyi; 2025-26 referans 0.600)
-- Log loss: **1.065** (düşük daha iyi; 2025-26 referans 1.005)
+- Brier score: **0.644** (düşük daha iyi; 2025-26 referans 0.600)
+- Log loss: **1.061** (düşük daha iyi; 2025-26 referans 1.005)
 
 ### Güven bandı kalibrasyonu
 
@@ -18,7 +18,7 @@ _"Beyan edilen ort. olasılık" ile "İsabet" arasındaki fark büyükse (özell
 | Güven bandı | Maç | İsabet | Beyan edilen ort. olasılık | Brier | Log loss | Referans (2025-26: isabet / brier / logloss) |
 | --- | --- | --- | --- | --- | --- | --- |
 | HIGH | 24 | 13/24 (%54) | %59 | 0.582 | 0.974 | %64 / 0.516 / 0.885 |
-| MEDIUM | 23 | 5/23 (%22) | %46 | 0.707 | 1.142 | %54 / 0.619 / 1.032 |
+| MEDIUM | 24 | 6/24 (%25) | %46 | 0.696 | 1.127 | %54 / 0.619 / 1.032 |
 | LOW | 16 | 9/16 (%56) | %39 | 0.659 | 1.092 | %48 / 0.670 / 1.103 |
 
 ### Seçilen tarafa göre isabet
@@ -27,9 +27,15 @@ _Model hangi tarafı seçtiğinde ne oldu? Belirli bir seçimde (ör. deplasman 
 
 | Seçim | Maç | İsabet | Gerçekleşen (Ev / X / Dep) |
 | --- | --- | --- | --- |
-| Ev | 36 | 17/36 (%47) | 17 / 7 / 12 |
+| Ev | 37 | 18/37 (%49) | 18 / 7 / 12 |
 | Beraberlik | 3 | 2/3 (%67) | 0 / 2 / 1 |
 | Deplasman | 24 | 8/24 (%33) | 11 / 5 / 8 |
+
+## Hafta 8 — 1/1 isabet (%100)
+
+| Maç | Skor | Tahmin | Sonuç | Güven |
+| --- | --- | --- | --- | --- |
+| ARCA ÇORUM FK - ÇAYKUR RİZESPOR A.Ş. | 2 - 1 | Ev | ✅ | MEDIUM |
 
 ## Hafta 7 — 6/9 isabet (%67)
 
