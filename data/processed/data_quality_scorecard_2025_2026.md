@@ -1,7 +1,7 @@
 # Veri Kalite ve İstatistik Scorecard
 
-- Ambar: `/home/runner/work/metric11/metric11/data/processed/metric11_warehouse.sqlite`
-- Genel skor: 85.0/100
+- Ambar: `/Users/alicanakyol/Documents/analiz/data/processed/metric11_warehouse.sqlite`
+- Genel skor: 87.5/100
 
 ## Kontroller
 
@@ -10,10 +10,10 @@
 | coverage | season_match_rows | 306 | ✓ | Düşük | Sezon kapsamı 306 maç civarında kalmalı; düşüş olursa collector/parser kontrol edilmeli. |
 | coverage | matches_missing_referee | 0 | ✓ | Düşük | Hakem eksikleri kart ve büyük maç risk modelini doğrudan zayıflatır. |
 | player_profiles | players_missing_age_profile | missing=0, total=691, missing_pct=0.0 | ✓ | Düşük | Yaş/profil kapsamı scout ve kontrat fırsatı skorunun temel girdisi. |
-| player_profiles | tff_transfermarkt_in_scope_match_rate_pct | matched=543, in_scope=588, pct=92.3 | ✓ | Düşük | Snapshot kapsamındaki eşleşmeyen oyuncular alias/transfer inceleme kuyruğunda doğrulanmadan piyasa değeri veya pozisyon olarak kullanılmamalı. |
+| player_profiles | tff_transfermarkt_in_scope_match_rate_pct | matched=544, in_scope=587, pct=92.7 | ✓ | Düşük | Snapshot kapsamındaki eşleşmeyen oyuncular alias/transfer inceleme kuyruğunda doğrulanmadan piyasa değeri veya pozisyon olarak kullanılmamalı. |
 | player_profiles | manual_alias_pending_network_verification | 4 | ⚠ İzle | Yüksek | Operasyonda kullanılan manuel pozisyon ve piyasa değeri eşlemeleri Transfermarkt profil bağlantısıyla doğrulanana kadar teyit bekliyor olarak gösterilmeli. |
 | scouting | unmatched_players_blocking_scout_review | 0 | ✓ | Düşük | Scout kuyruğunu bloke eden oyuncular için aynı kulüp Transfermarkt adı veya resmi profil doğrulanmalı; doğrulanmadan rol önerisi yayınlanmamalı. |
-| pipeline | daily_pipeline_last_run_age_days | age_days=0, failed_count=1, include_network=False | ⚠ İzle | Yüksek | Tahmin, haber ve scout ekranları için günlük pipeline en fazla 1 gün eski olmalı; 3 günü aşarsa veri tazeliği kırmızıya alınmalı. |
+| pipeline | daily_pipeline_last_run_age_days | age_days=0, failed_count=0, include_network=False | ✓ | Düşük | Tahmin, haber ve scout ekranları için günlük pipeline en fazla 1 gün eski olmalı; 3 günü aşarsa veri tazeliği kırmızıya alınmalı. |
 | sources | source_watchlist_daily_coverage | sources=14, daily=10, connected_or_partial=6, high_risk=1 | ✓ | Düşük | Günlük izlenecek kaynak sayısı ve bağlı kaynak kapsamı düşükse transfer/sakatlık/kadro haberleri modele geç yansır. |
 | model | besiktas_display_prediction_accuracy_pct | correct=19, total=29, pct=65.5 | ⚠ İzle | Yüksek | Ekran ayarı aynı sezonda geliştirildi; yeni sezon veya ayrılmış sezonda sabit kurallarla doğrulanmadan genel başarı iddiası yapılmamalı. |
 | model | draw_recall_pct | draw_predicted=2, draw_total=9, pct=22.2 | ⚠ İzle | Yüksek | Beraberlik sadece çok yüksek risk ve dar olasılık farkında ekran tahminine çekilmeli; diğer durumlarda korumalı senaryo dili kullanılmalı. |
@@ -26,7 +26,6 @@
 
 - **Yüksek öncelik** — model / besiktas_display_prediction_accuracy_pct: Ekran ayarı aynı sezonda geliştirildi; yeni sezon veya ayrılmış sezonda sabit kurallarla doğrulanmadan genel başarı iddiası yapılmamalı.
 - **Yüksek öncelik** — model / draw_recall_pct: Beraberlik sadece çok yüksek risk ve dar olasılık farkında ekran tahminine çekilmeli; diğer durumlarda korumalı senaryo dili kullanılmalı.
-- **Yüksek öncelik** — pipeline / daily_pipeline_last_run_age_days: Tahmin, haber ve scout ekranları için günlük pipeline en fazla 1 gün eski olmalı; 3 günü aşarsa veri tazeliği kırmızıya alınmalı.
 - **Yüksek öncelik** — player_profiles / manual_alias_pending_network_verification: Operasyonda kullanılan manuel pozisyon ve piyasa değeri eşlemeleri Transfermarkt profil bağlantısıyla doğrulanana kadar teyit bekliyor olarak gösterilmeli.
 - **Orta öncelik** — goal_candidates / top_5_hit_pct: Aday tipleri ayrı backtest edilmeli: primary, penaltı, duran top/defans ve yedek etki.
 - **Orta öncelik** — goal_candidates / top_8_hit_pct: Aday tipleri ayrı backtest edilmeli: primary, penaltı, duran top/defans ve yedek etki.

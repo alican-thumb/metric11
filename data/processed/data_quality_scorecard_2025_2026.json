@@ -1,6 +1,6 @@
 {
-  "warehouse": "/home/runner/work/metric11/metric11/data/processed/metric11_warehouse.sqlite",
-  "score": 85.0,
+  "warehouse": "/Users/alicanakyol/Documents/analiz/data/processed/metric11_warehouse.sqlite",
+  "score": 87.5,
   "table_counts": {
     "data_quality_findings": 6,
     "data_sources": 5,
@@ -63,9 +63,9 @@
       "area": "player_profiles",
       "metric": "tff_transfermarkt_in_scope_match_rate_pct",
       "value": {
-        "matched": 543,
-        "in_scope": 588,
-        "pct": 92.3
+        "matched": 544,
+        "in_scope": 587,
+        "pct": 92.7
       },
       "status": "PASS",
       "priority": "LOW",
@@ -92,11 +92,11 @@
       "metric": "daily_pipeline_last_run_age_days",
       "value": {
         "age_days": 0,
-        "failed_count": 1,
+        "failed_count": 0,
         "include_network": false
       },
-      "status": "WATCH",
-      "priority": "HIGH",
+      "status": "PASS",
+      "priority": "LOW",
       "recommendation": "Tahmin, haber ve scout ekranları için günlük pipeline en fazla 1 gün eski olmalı; 3 günü aşarsa veri tazeliği kırmızıya alınmalı."
     },
     {
@@ -197,12 +197,6 @@
       "area": "model",
       "metric": "draw_recall_pct",
       "recommendation": "Beraberlik sadece çok yüksek risk ve dar olasılık farkında ekran tahminine çekilmeli; diğer durumlarda korumalı senaryo dili kullanılmalı."
-    },
-    {
-      "priority": "HIGH",
-      "area": "pipeline",
-      "metric": "daily_pipeline_last_run_age_days",
-      "recommendation": "Tahmin, haber ve scout ekranları için günlük pipeline en fazla 1 gün eski olmalı; 3 günü aşarsa veri tazeliği kırmızıya alınmalı."
     },
     {
       "priority": "HIGH",

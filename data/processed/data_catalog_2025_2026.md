@@ -17,10 +17,10 @@
 - Transfermarkt Süper Lig oyuncusu: 817
 - Transfermarkt Süper Lig toplam değer: €1,741,910,000
 - Transfermarkt oyuncu profil detayı/tam adı: 854/21
-- TFF / Transfermarkt doğrulanmış snapshot eşleşmesi: 612/877 (%70)
-- TFF / Transfermarkt doğrulanmış lig snapshot içi kapsama: 612/588 (%92.3)
+- TFF / Transfermarkt doğrulanmış snapshot eşleşmesi: 616/877 (%70)
+- TFF / Transfermarkt doğrulanmış lig snapshot içi kapsama: 616/587 (%92.7)
 - TFF / Transfermarkt manuel eşleme: 4 profil; ağ teyidi bekleyen 4
-- TFF / Transfermarkt manuel dahil kullanılabilir lig içi kapsama: 547/588 (%93.0)
+- TFF / Transfermarkt manuel dahil kullanılabilir lig içi kapsama: 548/587 (%93.4)
 - TFF / Transfermarkt çözülmemiş kuyruğu: 257 profil; scout bloke eden 0
 - TFF / Transfermarkt yüksek kullanımlı çözülmemiş: 17 profil
 - Beşiktaş maç önü raporu: 29

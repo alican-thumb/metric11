@@ -1,33 +1,33 @@
 {
   "summary": {
-    "tff_profiles": 876,
+    "tff_profiles": 877,
     "tm_clubs": 18,
     "tm_players": 817,
-    "snapshot_in_scope_tff_profiles": 588,
-    "matched_profiles": 615,
-    "verified_matched_profiles": 615,
-    "in_scope_verified_matched_profiles": 543,
+    "snapshot_in_scope_tff_profiles": 587,
+    "matched_profiles": 616,
+    "verified_matched_profiles": 616,
+    "in_scope_verified_matched_profiles": 544,
     "manual_alias_mapped_profiles": 4,
     "manual_alias_pending_network_verification": 4,
-    "operationally_mapped_profiles": 619,
-    "operational_in_scope_mapped_profiles": 547,
+    "operationally_mapped_profiles": 620,
+    "operational_in_scope_mapped_profiles": 548,
     "unmatched_profiles": 257,
     "overall_match_rate": 0.702,
-    "in_scope_match_rate": 0.923,
+    "in_scope_match_rate": 0.927,
     "operational_mapping_rate": 0.707,
-    "operational_in_scope_mapping_rate": 0.93,
+    "operational_in_scope_mapping_rate": 0.934,
     "scout_blocking_unmatched": 0,
     "category_counts": {
-      "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 39,
+      "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 37,
       "SAME_CLUB_NAME_REVIEW": 1,
       "POSSIBLE_TRANSFER_OR_CLUB_MISMATCH": 1,
-      "OUT_OF_SNAPSHOT_CLUB": 216
+      "OUT_OF_SNAPSHOT_CLUB": 218
     },
     "review_tier_counts": {
       "HIGH_USAGE_UNRESOLVED": 17,
-      "ROTATION_USAGE_UNRESOLVED": 10,
-      "OUT_OF_SNAPSHOT": 216,
-      "NO_MATCH_ACTIVITY": 14
+      "ROTATION_USAGE_UNRESOLVED": 9,
+      "OUT_OF_SNAPSHOT": 218,
+      "NO_MATCH_ACTIVITY": 13
     },
     "rule": "Doğrulanmış kapsama yalnız snapshot eşleşmesi girer; manuel alias kullanımı ayrı izlenir ve ağ teyidi tamamlanana kadar doğrulanmış sayılmaz."
   },
@@ -62,13 +62,13 @@
       "team": "FENERBAHÇE A.Ş.",
       "tff_profiles": 44,
       "tm_players": 50,
-      "matched_profiles": 35,
+      "matched_profiles": 37,
       "manual_alias_mapped_profiles": 0,
-      "unmatched_profiles": 9,
-      "match_rate": 0.795,
-      "operational_mapping_rate": 0.795,
+      "unmatched_profiles": 7,
+      "match_rate": 0.841,
+      "operational_mapping_rate": 0.841,
       "categories": {
-        "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 8,
+        "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 6,
         "POSSIBLE_TRANSFER_OR_CLUB_MISMATCH": 1
       }
     },
@@ -113,13 +113,13 @@
     },
     {
       "team": "GÖZTEPE A.Ş.",
-      "tff_profiles": 35,
+      "tff_profiles": 36,
       "tm_players": 36,
-      "matched_profiles": 29,
+      "matched_profiles": 30,
       "manual_alias_mapped_profiles": 1,
       "unmatched_profiles": 5,
-      "match_rate": 0.829,
-      "operational_mapping_rate": 0.857,
+      "match_rate": 0.833,
+      "operational_mapping_rate": 0.861,
       "categories": {
         "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 5
       }
@@ -214,13 +214,13 @@
     },
     {
       "team": "TÜMOSAN KONYASPOR",
-      "tff_profiles": 43,
+      "tff_profiles": 42,
       "tm_players": 48,
-      "matched_profiles": 42,
+      "matched_profiles": 41,
       "manual_alias_mapped_profiles": 0,
       "unmatched_profiles": 1,
-      "match_rate": 0.977,
-      "operational_mapping_rate": 0.977,
+      "match_rate": 0.976,
+      "operational_mapping_rate": 0.976,
       "categories": {
         "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 1
       }
@@ -238,9 +238,9 @@
     },
     {
       "team": "ÇAYKUR RİZESPOR A.Ş.",
-      "tff_profiles": 36,
+      "tff_profiles": 35,
       "tm_players": 35,
-      "matched_profiles": 36,
+      "matched_profiles": 35,
       "manual_alias_mapped_profiles": 0,
       "unmatched_profiles": 0,
       "match_rate": 1.0,
@@ -708,22 +708,6 @@
       "season_activity": {
         "starts": 0,
         "squad_inclusions": 1,
-        "goals": 0
-      },
-      "candidate": null,
-      "action": "Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir."
-    },
-    {
-      "player_id": "2140854",
-      "tff_name": "ÇAĞRI HAKAN BALTA",
-      "tff_club": "FENERBAHÇE A.Ş.",
-      "category": "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT",
-      "priority_rank": 4,
-      "blocks_scout_review": false,
-      "review_tier": "ROTATION_USAGE_UNRESOLVED",
-      "season_activity": {
-        "starts": 0,
-        "squad_inclusions": 2,
         "goals": 0
       },
       "candidate": null,
@@ -3732,6 +3716,22 @@
       "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
     },
     {
+      "player_id": "2161733",
+      "tff_name": "EGEHAN ŞENSOY",
+      "tff_club": "ORDUSPOR 1967 A.Ş.",
+      "category": "OUT_OF_SNAPSHOT_CLUB",
+      "priority_rank": 5,
+      "blocks_scout_review": false,
+      "review_tier": "OUT_OF_SNAPSHOT",
+      "season_activity": {
+        "starts": 0,
+        "squad_inclusions": 1,
+        "goals": 0
+      },
+      "candidate": null,
+      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
+    },
+    {
       "player_id": "1879855",
       "tff_name": "BURAK GÜLTEKİN",
       "tff_club": "ORFA YAPI PENDİKSPOR FUTBOL A.Ş.",
@@ -3790,6 +3790,22 @@
       "season_activity": {
         "starts": 0,
         "squad_inclusions": 17,
+        "goals": 0
+      },
+      "candidate": null,
+      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
+    },
+    {
+      "player_id": "2367522",
+      "tff_name": "EREN KILIÇ",
+      "tff_club": "PAZARSPOR",
+      "category": "OUT_OF_SNAPSHOT_CLUB",
+      "priority_rank": 5,
+      "blocks_scout_review": false,
+      "review_tier": "OUT_OF_SNAPSHOT",
+      "season_activity": {
+        "starts": 0,
+        "squad_inclusions": 1,
         "goals": 0
       },
       "candidate": null,
@@ -4233,22 +4249,6 @@
         "score": 0.692,
         "common_tokens": []
       },
-      "action": "Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir."
-    },
-    {
-      "player_id": "2036948",
-      "tff_name": "KUZEY SAPAZ",
-      "tff_club": "FENERBAHÇE A.Ş.",
-      "category": "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT",
-      "priority_rank": 4,
-      "blocks_scout_review": false,
-      "review_tier": "NO_MATCH_ACTIVITY",
-      "season_activity": {
-        "starts": 0,
-        "squad_inclusions": 0,
-        "goals": 0
-      },
-      "candidate": null,
       "action": "Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir."
     },
     {

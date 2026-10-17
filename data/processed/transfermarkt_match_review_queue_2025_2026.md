@@ -1,18 +1,18 @@
 # Transfermarkt Oyuncu Eşleşme İnceleme Kuyruğu
 
-- TFF profil: 876
+- TFF profil: 877
 - Transfermarkt snapshot: 18/18 kulüp, 817 oyuncu
-- Snapshot kapsamındaki TFF profil: 588
-- Doğrulanmış snapshot eşleşmesi: 615
+- Snapshot kapsamındaki TFF profil: 587
+- Doğrulanmış snapshot eşleşmesi: 616
 - Manuel eşleme ile kullanılan profil: 4
 - Ağ teyidi bekleyen manuel eşleme: 4
 - Çözülmemiş profil: 257
 - Doğrulanmış genel eşleşme oranı: %70.2
-- Doğrulanmış snapshot içi eşleşme oranı: %92.3
-- Manuel eşleme dahil kullanılabilir snapshot içi kapsama: %93.0
+- Doğrulanmış snapshot içi eşleşme oranı: %92.7
+- Manuel eşleme dahil kullanılabilir snapshot içi kapsama: %93.4
 - Scout incelemesini bloke eden eşleşmeyen oyuncu: 0
-- Sınıf dağılımı: {'NO_RELIABLE_CANDIDATE_IN_SNAPSHOT': 39, 'SAME_CLUB_NAME_REVIEW': 1, 'POSSIBLE_TRANSFER_OR_CLUB_MISMATCH': 1, 'OUT_OF_SNAPSHOT_CLUB': 216}
-- Kullanım önceliği dağılımı: {'HIGH_USAGE_UNRESOLVED': 17, 'ROTATION_USAGE_UNRESOLVED': 10, 'OUT_OF_SNAPSHOT': 216, 'NO_MATCH_ACTIVITY': 14}
+- Sınıf dağılımı: {'NO_RELIABLE_CANDIDATE_IN_SNAPSHOT': 37, 'SAME_CLUB_NAME_REVIEW': 1, 'POSSIBLE_TRANSFER_OR_CLUB_MISMATCH': 1, 'OUT_OF_SNAPSHOT_CLUB': 218}
+- Kullanım önceliği dağılımı: {'HIGH_USAGE_UNRESOLVED': 17, 'ROTATION_USAGE_UNRESOLVED': 9, 'OUT_OF_SNAPSHOT': 218, 'NO_MATCH_ACTIVITY': 13}
 - Kural: Doğrulanmış kapsama yalnız snapshot eşleşmesi girer; manuel alias kullanımı ayrı izlenir ve ağ teyidi tamamlanana kadar doğrulanmış sayılmaz.
 
 ## Scout Bloke Eden Kuyruk
@@ -31,11 +31,11 @@
 |---|---:|---:|---:|---:|---:|---:|---:|
 | BEŞİKTAŞ A.Ş. | 47 | 50 | 43 | 2 | 2 | %91.5 | %95.7 |
 | CORENDON ALANYASPOR | 33 | 37 | 30 | 0 | 3 | %90.9 | %90.9 |
-| FENERBAHÇE A.Ş. | 44 | 50 | 35 | 0 | 9 | %79.5 | %79.5 |
+| FENERBAHÇE A.Ş. | 44 | 50 | 37 | 0 | 7 | %84.1 | %84.1 |
 | GALATASARAY A.Ş. | 42 | 44 | 41 | 0 | 1 | %97.6 | %97.6 |
 | GAZİANTEP FUTBOL KULÜBÜ A.Ş. | 41 | 45 | 38 | 0 | 3 | %92.7 | %92.7 |
 | GENÇLERBİRLİĞİ | 40 | 48 | 38 | 0 | 2 | %95.0 | %95.0 |
-| GÖZTEPE A.Ş. | 35 | 36 | 29 | 1 | 5 | %82.9 | %85.7 |
+| GÖZTEPE A.Ş. | 36 | 36 | 30 | 1 | 5 | %83.3 | %86.1 |
 | HESAP.COM ANTALYASPOR | 0 | 48 | 0 | 0 | 0 | %0 | %0 |
 | KASIMPAŞA A.Ş. | 38 | 60 | 35 | 0 | 3 | %92.1 | %92.1 |
 | KOCAELİSPOR | 35 | 39 | 33 | 0 | 2 | %94.3 | %94.3 |
@@ -43,9 +43,9 @@
 | RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ | 30 | 32 | 29 | 0 | 1 | %96.7 | %96.7 |
 | SAMSUNSPOR A.Ş. | 40 | 44 | 36 | 0 | 4 | %90.0 | %90.0 |
 | TRABZONSPOR A.Ş. | 43 | 42 | 39 | 1 | 3 | %90.7 | %93.0 |
-| TÜMOSAN KONYASPOR | 43 | 48 | 42 | 0 | 1 | %97.7 | %97.7 |
+| TÜMOSAN KONYASPOR | 42 | 48 | 41 | 0 | 1 | %97.6 | %97.6 |
 | ZECORNER KAYSERİSPOR | 0 | 51 | 0 | 0 | 0 | %0 | %0 |
-| ÇAYKUR RİZESPOR A.Ş. | 36 | 35 | 36 | 0 | 0 | %100.0 | %100.0 |
+| ÇAYKUR RİZESPOR A.Ş. | 35 | 35 | 35 | 0 | 0 | %100.0 | %100.0 |
 | İKAS EYÜPSPOR | 41 | 62 | 39 | 0 | 2 | %95.1 | %95.1 |
 
 ## Tüm Eşleşmeyen Kayıtlar (Takım Bazında)
@@ -231,8 +231,6 @@
 - FREDERICO RODRIGUES DE PAULA SANTOS (FENERBAHÇE A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=15, gol=3, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - RODRIGO NASCIMENTO FRANCA (FENERBAHÇE A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=13, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - ALİ DEMİRBİLEK (FENERBAHÇE A.Ş.): sınıf=POSSIBLE_TRANSFER_OR_CLUB_MISMATCH, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=Ali Demirbilek (HESAP.COM ANTALYASPOR, skor=1.0, ortak=ALI,DEMIRBILEK). Oyuncu adı başka snapshot kulübünde güçlü eşleşiyor; transfer doğrulanmadan otomatik bağlanmamalı.
-- ÇAĞRI HAKAN BALTA (FENERBAHÇE A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
-- KUZEY SAPAZ (FENERBAHÇE A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=NO_MATCH_ACTIVITY, ilk11=0, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - VEDAT MURIÇ (FENERBAHÇE A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=NO_MATCH_ACTIVITY, ilk11=0, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 
 ### FETHİYESPOR
@@ -387,12 +385,20 @@
 - ENGİN POYRAZ EFE YILDIRIM (MUĞLASPOR KULÜBÜ): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 - SALEM MOUNIR BOUAJILA (MUĞLASPOR KULÜBÜ): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 
+### ORDUSPOR 1967 A.Ş.
+
+- EGEHAN ŞENSOY (ORDUSPOR 1967 A.Ş.): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
+
 ### ORFA YAPI PENDİKSPOR FUTBOL A.Ş.
 
 - BURAK GÜLTEKİN (ORFA YAPI PENDİKSPOR FUTBOL A.Ş.): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 - ISMAILA MANGA (ORFA YAPI PENDİKSPOR FUTBOL A.Ş.): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 - ONURALP ÇAKIROĞLU (ORFA YAPI PENDİKSPOR FUTBOL A.Ş.): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 - TAHA EMRE İNCE (ORFA YAPI PENDİKSPOR FUTBOL A.Ş.): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
+
+### PAZARSPOR
+
+- EREN KILIÇ (PAZARSPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 
 ### RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ
 

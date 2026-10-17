@@ -10,8 +10,8 @@
 
 ## Karşılaştırmalar
 
-- league_tff_vs_transfermarkt: 612/877 eşleşme (%70)
-  - Manuel eşleme: 4 (ağ teyidi bekleyen=4); kullanılabilir eşleme %70
+- league_tff_vs_transfermarkt: 616/877 eşleşme (%70)
+  - Manuel eşleme: 4 (ağ teyidi bekleyen=4); kullanılabilir eşleme %71
 - besiktas_tff_vs_transfermarkt: 0/46 eşleşme (%0)
   - Ham tekil kaynak karşılaştırmasıdır; operasyonel manuel eşlemeler lig karşılaştırmasında izlenir.
 - scout_tff_vs_api_deep: 0/40 eşleşme (%0)
@@ -40,8 +40,6 @@
 ## Eşleşmeyen Sol Kaynak Oyuncuları
 
 ### league_tff_vs_transfermarkt
-- Türkiye Futbol Federasyonu (takım yok)
-- Türkiye Futbol Federasyonu (takım yok)
 - BERKAY MURATOĞLU (12 BİNGÖL SPOR)
 - MUHAMMET ONUR BAŞYİĞİT (68 AKSARAY BELEDİYE SPOR)
 - EGE ARAÇ (ADANA 01 FUTBOL KULÜBÜ SK)
@@ -60,6 +58,8 @@
 - OLEKSANDR SYROTA (AMED SPORTİF FAALİYETLER)
 - İSMAİL DUYU (AMED SPORTİF FAALİYETLER)
 - DENİZ YAŞAR (ANKARA DEMİRSPOR)
+- ERDEM ÇETİNKAYA (ANKARA DEMİRSPOR)
+- TAYLAN UTKU AYDIN (ANKARA DEMİRSPOR)
 
 ### besiktas_tff_vs_transfermarkt
 - AHMET SAMİ BİRCAN (BEŞİKTAŞ A.Ş.)

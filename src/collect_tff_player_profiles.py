@@ -60,8 +60,13 @@ def main() -> None:
         probe = probe_player_profile(player_id, include_raw=True)
         if probe.raw_html:
             (raw_dir / f"player_{player_id}.html").write_text(probe.raw_html, encoding="utf-8")
-        if probe.profile:
-            profile = {**player, **probe.profile, "_fetched_at": datetime.now(timezone.utc).isoformat()}
+        if probe.profile and not probe.profile.get("raw_fields"):
+            # TFF bazen oyuncu yerine genel sayfa döndürüyor (başlık "Türkiye Futbol
+            # Federasyonu", alan yok); mevcut sağlam profilin üzerine yazılmasın. 2026-10-17.
+            errors.append({"player": player, "error": "empty_profile_page", "status_code": probe.status_code})
+            print(f"[{idx}/{len(selected)}] ERR {player['name']}: empty_profile_page")
+        elif probe.profile:
+            profile ={**player, **probe.profile, "_fetched_at": datetime.now(timezone.utc).isoformat()}
             profiles[player_id] = profile
             print(f"[{idx}/{len(selected)}] OK {profile.get('name') or player['name']}")
         else:

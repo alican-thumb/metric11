@@ -1,8 +1,8 @@
 # Zenginleştirilmiş Lig Scout Havuzu
 
 - Profilli oyuncu: 691
-- U24 oyuncu: 285
-- Sözleşme riski/fırsatı: 368
+- U24 oyuncu: 286
+- Sözleşme riski/fırsatı: 369
 - Attribute kaynağı: metric11 türetilmiş FM attribute verisi (TFF 2025/26)
 - Attribute eşleşen oyuncu: 691
 - Dış API kaynağı: Yok

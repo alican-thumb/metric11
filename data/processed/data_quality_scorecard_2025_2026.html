@@ -65,8 +65,8 @@
     <h1>Veri Kalite ve İstatistik Scorecard</h1>
 
 <ul>
-<li>Ambar: <code>/home/runner/work/metric11/metric11/data/processed/metric11_warehouse.sqlite</code></li>
-<li>Genel skor: 85.0/100</li>
+<li>Ambar: <code>/Users/alicanakyol/Documents/analiz/data/processed/metric11_warehouse.sqlite</code></li>
+<li>Genel skor: 87.5/100</li>
 </ul>
 
 <h2>Kontroller</h2>
@@ -106,7 +106,7 @@
 <tr>
 <td>player_profiles</td>
 <td>tff_transfermarkt_in_scope_match_rate_pct</td>
-<td>matched=543, in_scope=588, pct=92.3</td>
+<td>matched=544, in_scope=587, pct=92.7</td>
 <td>✓</td>
 <td>Düşük</td>
 <td>Snapshot kapsamındaki eşleşmeyen oyuncular alias/transfer inceleme kuyruğunda doğrulanmadan piyasa değeri veya pozisyon olarak kullanılmamalı.</td>
@@ -130,9 +130,9 @@
 <tr>
 <td>pipeline</td>
 <td>daily_pipeline_last_run_age_days</td>
-<td>age_days=0, failed_count=1, include_network=False</td>
-<td>⚠ İzle</td>
-<td>Yüksek</td>
+<td>age_days=0, failed_count=0, include_network=False</td>
+<td>✓</td>
+<td>Düşük</td>
 <td>Tahmin, haber ve scout ekranları için günlük pipeline en fazla 1 gün eski olmalı; 3 günü aşarsa veri tazeliği kırmızıya alınmalı.</td>
 </tr>
 <tr>
@@ -198,7 +198,6 @@
 <ul>
 <li><strong>Yüksek öncelik</strong> — model / besiktas_display_prediction_accuracy_pct: Ekran ayarı aynı sezonda geliştirildi; yeni sezon veya ayrılmış sezonda sabit kurallarla doğrulanmadan genel başarı iddiası yapılmamalı.</li>
 <li><strong>Yüksek öncelik</strong> — model / draw_recall_pct: Beraberlik sadece çok yüksek risk ve dar olasılık farkında ekran tahminine çekilmeli; diğer durumlarda korumalı senaryo dili kullanılmalı.</li>
-<li><strong>Yüksek öncelik</strong> — pipeline / daily_pipeline_last_run_age_days: Tahmin, haber ve scout ekranları için günlük pipeline en fazla 1 gün eski olmalı; 3 günü aşarsa veri tazeliği kırmızıya alınmalı.</li>
 <li><strong>Yüksek öncelik</strong> — player_profiles / manual_alias_pending_network_verification: Operasyonda kullanılan manuel pozisyon ve piyasa değeri eşlemeleri Transfermarkt profil bağlantısıyla doğrulanana kadar teyit bekliyor olarak gösterilmeli.</li>
 <li><strong>Orta öncelik</strong> — goal_candidates / top_5_hit_pct: Aday tipleri ayrı backtest edilmeli: primary, penaltı, duran top/defans ve yedek etki.</li>
 <li><strong>Orta öncelik</strong> — goal_candidates / top_8_hit_pct: Aday tipleri ayrı backtest edilmeli: primary, penaltı, duran top/defans ve yedek etki.</li>

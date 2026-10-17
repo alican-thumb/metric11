@@ -3427,3 +3427,28 @@ Kullanıcı admin sayfasına giremiyordu (kendi çalıştırdığı sıfırlama 
 
 - `metric11-tahmin` Vercel projesi ayarında Node.js `20.x` kalmıştı; Vercel 20.x'i kapattığı için son 3 production deploy 7-8 sn'de "Node.js Version 20.x is discontinued" hatasıyla düştü (canlıda 4 gün önceki sağlam deploy servis edilmeye devam ettiği için site kapanmadı). `package.json`'da `engines` yok, sürüm tamamen proje ayarından geliyordu.
 - Düzeltme: `vercel api PATCH /v9/projects/<id> nodeVersion=24.x` (Vercel MCP bu projeyi göremedi, CLI kullanıldı) + son deploy `vercel redeploy --target production` → 48 sn'de Ready, `tahmin.metric11.com`'a aliaslandı; `/`, `/kadro`, `/taraftar`, `/api/fanclub` 200. Ana site `metric11` zaten 24.x'teydi.
+
+### 2026-10-03 — Günlük heartbeat: veri hattı ve kritik kalite düzeltmeleri doğrulandı
+
+- 2 Ekim pipeline üretimi taze: 154 işlenmiş dosya yenilenmiş; repo `main...origin/main` ve çalışma ağacı temiz.
+- Scout rol-pozisyon filtresi etkili: 310 aday bağlantısında düşük güvenli eşleşme **17'den 0'a**, blocking scout kaydı **3'ten 0'a** indi. Pozisyon matrisi 101 HIGH + 4 DERIVED aday taşıyor.
+- Availability payload artık `season=2026-2027`, `match_archive_season=2025-2026` ve `active_current_season_teams=18`; eski dosya adı geriye dönük uyumluluk için korunuyor.
+- Tahmin karnesi yeni maç eklenmediği için 54/21 (**%38.89**) kaldı. MEDIUM 20/4 (**%20.00**, Brier 0.7003, log loss 1.1293) ve beraberlik yakalama 2/11 (**%18.18**) hâlâ ana model açığı. Yeni taraf kırılımı sorunu netleştiriyor: ev seçimi 15/33 (**%45.45**), beraberlik 2/3 (**%66.67**), deplasman 4/18 (**%22.22**); özellikle deplasman seçimleri aşırı üretiliyor.
+- Kaynak snapshot'ı 2 Ekim: Google News 144 makale/30 başarılı sorgu, Telegram 6 mesaj/8 kanal; X/Twitter 45 hesap için hâlâ `MISSING_CREDENTIALS`. Gözlenen kaynak 326, skorlanan kaynak 214.
+- Kalite kartında FAIL kalmadı; kalan WATCH başlıkları 4 manuel alias doğrulaması, beraberlik recall, Beşiktaş ekran tahmini ve golcü aday kapsam metrikleri.
+- **Sıradaki uygulanabilir adım:** MEDIUM/deplasman seçimlerini maç bazında ayırıp geçen-sezon güç taşımasının etkisini ölç; yeni sezon formuna kademeli ağırlık veren zaman bağımlı takım gücü modeli dene. Yeni snapshot mekanizması sayesinde değişiklik sonrası ileriye dönük ölçüm geçmiş tahminleri oynatmadan yapılabilir.
+
+### 2026-10-06 — Günlük heartbeat: pipeline dört gündür yerelde yenilenmiyor
+
+- 5 Ekim 00:00 sonrası yeni işlenmiş dosya yok; son veri üretimi ve son repo commitleri 2 Ekim tarihli. Altı saatte bir planlanan refresh akışına göre bu artık normal gecikme değil, kalıcı tazelik problemi.
+- 3 Ekim'de doğrulanan scout/availability düzeltmeleri korunuyor; tahmin, kaynak ve scout metriklerinde yeni örnek oluşmadığı için sayısal değişim yok.
+- `daily_pipeline_run_latest.*` gitignore'da olduğu için onun eski tarihi alarm kaynağı sayılmadı; alarm doğrudan takip edilen `data/processed` dosyalarının ve repo commitlerinin dört gündür değişmemesine dayanıyor.
+- **Sıradaki uygulanabilir adım:** GitHub Actions'ta `refresh`, `news-refresh` ve full pipeline run geçmişini kontrol et; Ekim dakika kotası sıfırlandıysa başarısız job/secret/deploy nedenini, sıfırlanmadıysa hesap kota durumunu çözmeden model geliştirmesine devam etme.
+
+### 2026-10-17 — Full pipeline 5 gündür kırmızı: iki kök neden düzeltildi
+
+- Kullanıcıya gelen hata mailleri Vercel'den değil GitHub Actions `metric11 full network pipeline`'dan geliyordu (13-17 Ekim, 5 gün üst üste failure). Vercel deploy'larının hepsi Ready; site hiç düşmedi. Refresh ve haber yenileme job'ları yeşil.
+- **Neden 1:** TFF, 14 Ekim'de 2 oyuncu için (Erol Can Çolak 1851236, Taylan Antalyalı 964772) oyuncu yerine genel sayfa döndürdü; `collect_tff_player_profiles` bunu geçerli profil sanıp sağlam kaydın üzerine yazdı (isim "Türkiye Futbol Federasyonu", kulüp None). `build_transfermarkt_match_review_queue` sıralamada None↔str karşılaştırmasıyla çöktü. Düzeltme: collector `raw_fields` boş profili hata sayıp mevcut kaydı koruyor; sıralama anahtarları None'a dayanıklı; 2 kayıt `4ab4d8537`'den geri yüklendi.
+- **Neden 2:** `check_squad_freshness` — 2026-27 kadro verisi 12 Eylül'den beri bayattı (TM CI IP'sini engelliyor, API-Football fallback plan kısıtı yüzünden çalışmıyor; bilinen sorun). Yerelden `collect_transfermarkt_league_squads ... --delay-seconds 6` ile 18/18 canlı toplandı; `detect_squad_changes` (09-07 → 10-17): 4 varış, 8 ayrılış. Offline pipeline 59/59, testler 67/67.
+- Kalıcı çözüm hâlâ yok: TM CI'da engelli kaldıkça kadro birkaç haftada bir yerelden yenilenmeli ya da TFF/kulüp tabanlı fallback yazılmalı.
+- Tahmin karnesi (2026-27): 64 maç / 28 isabet (**%43.75**, Brier 0.644). HIGH %54.2, MEDIUM %25.0, LOW %56.3; ev %48.6, beraberlik 2/3, deplasman 8/24 (**%33.3**). Deplasman seçimleri hâlâ ana zayıflık.

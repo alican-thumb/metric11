@@ -74,8 +74,8 @@ def build_queue(profiles: list[dict], tm_payload: dict, scout_quality: dict, lea
         key=lambda item: (
             item["priority_rank"],
             -item["season_activity"]["starts"],
-            item["tff_club"],
-            item["tff_name"],
+            item["tff_club"] or "",
+            item["tff_name"] or "",
         )
     )
     tier_rank = {"SCOUT_BLOCKING": 0, "HIGH_USAGE_UNRESOLVED": 1, "ROTATION_USAGE_UNRESOLVED": 2, "OUT_OF_SNAPSHOT": 3}
@@ -84,8 +84,8 @@ def build_queue(profiles: list[dict], tm_payload: dict, scout_quality: dict, lea
             tier_rank.get(item["review_tier"], 4),
             item["priority_rank"],
             -item["season_activity"]["starts"],
-            item["tff_club"],
-            item["tff_name"],
+            item["tff_club"] or "",
+            item["tff_name"] or "",
         )
     )
     categories = Counter(item["category"] for item in queue)

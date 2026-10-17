@@ -62,7 +62,7 @@ _Kanat savunması ve bindirme sürekliliği için ekonomik bek profili._
 - MİTHAT PALA (ÇAYKUR RİZESPOR A.Ş.) — fit=68.83, yaş=26, gol=2, ilk11=21
 - GODFRİED AYESU OWUSU FRİMPONG (KASIMPAŞA A.Ş.) — fit=68.36, yaş=27, gol=0, ilk11=25
 - MUHAMMET TAHA ŞAHİN (ÇAYKUR RİZESPOR A.Ş.) — fit=66.52, yaş=25, gol=1, ilk11=19
-- RIDVAN YILMAZ (BEŞİKTAŞ A.Ş.) — fit=66.09, yaş=25, gol=0, ilk11=23
+- ANFERNEE JAMAL DIJKSTEEL (KOCAELİSPOR) — fit=66.42, yaş=29, gol=0, ilk11=28
 
 ## Stoper / hava ve temas
 _Duran top, hava topu ve temas yoğunluğu için savunma profili._
