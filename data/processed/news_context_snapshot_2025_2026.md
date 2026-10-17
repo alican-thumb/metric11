@@ -1,8 +1,8 @@
 # Haber / Sakat-Cezalı Bağlam Snapshot
 
-- Oluşturma: 2026-10-17T08:29:57.810009+00:00
+- Oluşturma: 2026-10-17T15:59:59.862926+00:00
 - Kaynak: 2
-- Başarılı: 1
+- Başarılı: 2
 - Sinyal: 3
 - Yapılandırılmış eksik oyuncu kaydı: 8
 
@@ -12,8 +12,7 @@
   - MEDIUM_CONTEXT: Trendyol Süper Lig de sakat ve cezalı futbolcu listesi | beIN SPORTS Türkiye - beinsports.com.tr/ | anahtar=sakat, cezalı
   - MEDIUM_CONTEXT: Trendyol Süper Lig'de sakat ve cezalı futbolcu listesi | anahtar=sakat, cezalı
   - MEDIUM_CONTEXT: Trendyol Süper Lig'de sakat ve cezalı futbolcu listesi # 1 Trendyol Süper Lig'de 8. haftanın sakat ve cezalı futbolcuları bu sayfada... # 2 Arca Çorum FK | Sakat: - | Cezalı: - # 3 Amed Sportif Faliyetler | Sakat: Dilhan Demir, Hasan Yıldırım, Yira Sor, Lumbardh Dellova | Cezalı: - # 4 Beşiktaş | Sakat: Vaclav Cerny | Cezalı: - # 5 Corendon Alanyaspor | Sakat: Maestro, Fatih Aksoy | Cezalı: - # 6 Çaykur Rizespor | Sakat: Khusniddin Alikulov | Cezalı: - # 7 Erzurumspor FK | Sakat: - | Cezalı: - # | anahtar=beşiktaş, sakat, cezalı, transfer
-- FootballToday Süper Lig injuries and suspensions: ok=False, status=429, sinyal=0, risk=MEDIUM
-  - Hata: 429 Client Error: Too Many Requests for url: https://www.footballtoday.net/turkey/super-lig/injured-and-suspended
+- FootballToday Süper Lig injuries and suspensions: ok=True, status=200, sinyal=0, risk=MEDIUM
 
 ## Yapılandırılmış Eksik Oyuncu Sinyalleri
 

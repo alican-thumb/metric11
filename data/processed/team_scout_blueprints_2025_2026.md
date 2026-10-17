@@ -15,9 +15,9 @@
 - 6 numara / savunma emniyeti: Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir. Adaylar: GAİUS ABRAHAM JERED MAKOUTA, ANTHONY JUNIOR DENNIS, MANUEL LUIS DA SILVA CAFUMANA
 - Stoper / hava ve temas: Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 1.143. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
 
-## AMED SFK
+## ÇORUM FK
 
-- Güç: None | GF: 2.429 | GA: 1.286 | kart: None
+- Güç: None | GF: 2.25 | GA: 1.625 | kart: None
 - Zafiyet: yeni lig takımı
 - Scout ipucu: Süper Lig deneyimli kaleci, stoper ve santrfor takviyesi — serbest ajan ve kiralık öncelikli.
 - Kaleci / istikrar: Süper Lig'e yeni çıkan takım; Kaleci / istikrar pozisyonunda deneyimli takviye kritik. Adaylar: MUHAMMED ŞENGEZER, YAHIA FOFANA, MARIO RICARDO DA SILVA VELHO
