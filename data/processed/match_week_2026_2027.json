@@ -1,6 +1,6 @@
 {
   "available": true,
-  "generated_at": "2026-10-17T19:28:36.680064",
+  "generated_at": "2026-10-17T16:30:29.781482",
   "week": 8,
   "matches": [
     {
@@ -44,58 +44,36 @@
       "date": "17 Eki",
       "home_team": "AMED SPORTİF FAALİYETLER",
       "away_team": "TÜMOSAN KONYASPOR",
-      "is_played": false,
-      "actual_score": null,
+      "is_played": true,
+      "actual_score": "1 - 0",
       "predicted": "home",
       "pick_text": "AMED SPORTİF FAALİYETLER",
       "home_win_probability": 0.702,
       "draw_probability": 0.2,
       "away_win_probability": 0.098,
-      "data_confidence": "LOW_NEW_TEAM",
+      "data_confidence": "PLAYED",
       "recommended_scoreline": "1-0",
       "expected_home_goals": 1.93,
       "expected_away_goals": 0.56,
-      "signals": {
-        "over_2_5_probability": 0.454,
-        "btts_probability": 0.367,
-        "expected_total_cards": 3.7,
-        "red_card_risk": 0.098,
-        "home_card_data_available": true,
-        "away_card_data_available": true,
-        "no_goal_probability": 0.083,
-        "home_scores_first_probability": 0.711,
-        "away_scores_first_probability": 0.206,
-        "likely_goal_band": "76-90+"
-      }
+      "signals": null
     },
     {
       "match_id": "317851",
       "date": "17 Eki",
       "home_team": "GENÇLERBİRLİĞİ",
       "away_team": "GALATASARAY A.Ş.",
-      "is_played": false,
-      "actual_score": null,
+      "is_played": true,
+      "actual_score": "0 - 1",
       "predicted": "away",
       "pick_text": "GALATASARAY A.Ş.",
       "home_win_probability": 0.279,
       "draw_probability": 0.244,
       "away_win_probability": 0.477,
-      "data_confidence": "MEDIUM",
+      "data_confidence": "PLAYED",
       "recommended_scoreline": "1-2",
       "expected_home_goals": 1.29,
       "expected_away_goals": 1.75,
-      "signals": {
-        "over_2_5_probability": 0.586,
-        "btts_probability": 0.599,
-        "expected_total_cards": 3.8,
-        "red_card_risk": 0.271,
-        "home_card_data_available": true,
-        "away_card_data_available": true,
-        "no_goal_probability": 0.048,
-        "home_scores_first_probability": 0.404,
-        "away_scores_first_probability": 0.548,
-        "likely_goal_band": "61-75"
-      }
+      "signals": null
     },
     {
       "match_id": "317853",
@@ -245,35 +223,35 @@
   ],
   "last_week": {
     "week": 8,
-    "evaluated_matches": 2,
-    "correct": 2,
+    "evaluated_matches": 4,
+    "correct": 4,
     "accuracy": 1.0,
     "actual_draws": 0,
     "draws_caught": 0,
     "draw_recall": null,
-    "high_conf_matches": 1,
-    "high_conf_correct": 1,
+    "high_conf_matches": 2,
+    "high_conf_correct": 2,
     "high_conf_accuracy": 1.0,
-    "brier_score": 0.3473,
-    "log_loss": 0.6544,
+    "brier_score": 0.311,
+    "log_loss": 0.6007,
     "confidence_breakdown": {
       "HIGH": {
-        "matches": 1,
-        "correct": 1,
+        "matches": 2,
+        "correct": 2,
         "accuracy": 1.0,
-        "avg_stated_probability": 0.586,
-        "calibration_gap": 0.414,
-        "brier_score": 0.2585,
-        "log_loss": 0.5344
+        "avg_stated_probability": 0.644,
+        "calibration_gap": 0.356,
+        "brier_score": 0.1985,
+        "log_loss": 0.4441
       },
       "MEDIUM": {
-        "matches": 1,
-        "correct": 1,
+        "matches": 2,
+        "correct": 2,
         "accuracy": 1.0,
-        "avg_stated_probability": 0.461,
-        "calibration_gap": 0.539,
-        "brier_score": 0.436,
-        "log_loss": 0.7744
+        "avg_stated_probability": 0.469,
+        "calibration_gap": 0.531,
+        "brier_score": 0.4235,
+        "log_loss": 0.7573
       },
       "LOW": {
         "matches": 0,
@@ -287,11 +265,11 @@
     },
     "pick_side_breakdown": {
       "home": {
-        "matches": 2,
-        "correct": 2,
+        "matches": 3,
+        "correct": 3,
         "accuracy": 1.0,
         "actual": {
-          "home": 2,
+          "home": 3,
           "draw": 0,
           "away": 0
         }
@@ -307,13 +285,13 @@
         }
       },
       "away": {
-        "matches": 0,
-        "correct": 0,
-        "accuracy": null,
+        "matches": 1,
+        "correct": 1,
+        "accuracy": 1.0,
         "actual": {
           "home": 0,
           "draw": 0,
-          "away": 0
+          "away": 1
         }
       }
     }

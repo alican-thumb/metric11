@@ -1,36 +1,36 @@
 {
-  "generated_at": "2026-10-17T19:28:35.537516",
+  "generated_at": "2026-10-17T16:30:28.179621",
   "season": "2026-2027",
   "summary": {
-    "evaluated_matches": 65,
-    "correct": 29,
-    "accuracy": 0.4462,
+    "evaluated_matches": 67,
+    "correct": 31,
+    "accuracy": 0.4627,
     "actual_draws": 14,
     "draws_caught": 2,
     "draw_recall": 0.1429,
-    "high_conf_matches": 25,
-    "high_conf_correct": 14,
-    "high_conf_accuracy": 0.56,
-    "brier_score": 0.638,
-    "log_loss": 1.0526,
+    "high_conf_matches": 26,
+    "high_conf_correct": 15,
+    "high_conf_accuracy": 0.5769,
+    "brier_score": 0.6271,
+    "log_loss": 1.0375,
     "confidence_breakdown": {
       "HIGH": {
-        "matches": 25,
-        "correct": 14,
-        "accuracy": 0.56,
-        "avg_stated_probability": 0.586,
-        "calibration_gap": -0.026,
-        "brier_score": 0.5687,
-        "log_loss": 0.9561
+        "matches": 26,
+        "correct": 15,
+        "accuracy": 0.5769,
+        "avg_stated_probability": 0.5905,
+        "calibration_gap": -0.0136,
+        "brier_score": 0.5522,
+        "log_loss": 0.9329
       },
       "MEDIUM": {
-        "matches": 24,
-        "correct": 6,
-        "accuracy": 0.25,
-        "avg_stated_probability": 0.4646,
-        "calibration_gap": -0.2146,
-        "brier_score": 0.696,
-        "log_loss": 1.1266
+        "matches": 25,
+        "correct": 7,
+        "accuracy": 0.28,
+        "avg_stated_probability": 0.4651,
+        "calibration_gap": -0.1851,
+        "brier_score": 0.6846,
+        "log_loss": 1.1111
       },
       "LOW": {
         "matches": 16,
@@ -44,11 +44,11 @@
     },
     "pick_side_breakdown": {
       "home": {
-        "matches": 38,
-        "correct": 19,
-        "accuracy": 0.5,
+        "matches": 39,
+        "correct": 20,
+        "accuracy": 0.5128,
         "actual": {
-          "home": 19,
+          "home": 20,
           "draw": 7,
           "away": 12
         }
@@ -64,13 +64,13 @@
         }
       },
       "away": {
-        "matches": 24,
-        "correct": 8,
-        "accuracy": 0.3333,
+        "matches": 25,
+        "correct": 9,
+        "accuracy": 0.36,
         "actual": {
           "home": 11,
           "draw": 5,
-          "away": 8
+          "away": 9
         }
       }
     }
@@ -79,35 +79,35 @@
   "last_week": {
     "week": 8,
     "summary": {
-      "evaluated_matches": 2,
-      "correct": 2,
+      "evaluated_matches": 4,
+      "correct": 4,
       "accuracy": 1.0,
       "actual_draws": 0,
       "draws_caught": 0,
       "draw_recall": null,
-      "high_conf_matches": 1,
-      "high_conf_correct": 1,
+      "high_conf_matches": 2,
+      "high_conf_correct": 2,
       "high_conf_accuracy": 1.0,
-      "brier_score": 0.3473,
-      "log_loss": 0.6544,
+      "brier_score": 0.311,
+      "log_loss": 0.6007,
       "confidence_breakdown": {
         "HIGH": {
-          "matches": 1,
-          "correct": 1,
+          "matches": 2,
+          "correct": 2,
           "accuracy": 1.0,
-          "avg_stated_probability": 0.586,
-          "calibration_gap": 0.414,
-          "brier_score": 0.2585,
-          "log_loss": 0.5344
+          "avg_stated_probability": 0.644,
+          "calibration_gap": 0.356,
+          "brier_score": 0.1985,
+          "log_loss": 0.4441
         },
         "MEDIUM": {
-          "matches": 1,
-          "correct": 1,
+          "matches": 2,
+          "correct": 2,
           "accuracy": 1.0,
-          "avg_stated_probability": 0.461,
-          "calibration_gap": 0.539,
-          "brier_score": 0.436,
-          "log_loss": 0.7744
+          "avg_stated_probability": 0.469,
+          "calibration_gap": 0.531,
+          "brier_score": 0.4235,
+          "log_loss": 0.7573
         },
         "LOW": {
           "matches": 0,
@@ -121,11 +121,11 @@
       },
       "pick_side_breakdown": {
         "home": {
-          "matches": 2,
-          "correct": 2,
+          "matches": 3,
+          "correct": 3,
           "accuracy": 1.0,
           "actual": {
-            "home": 2,
+            "home": 3,
             "draw": 0,
             "away": 0
           }
@@ -141,13 +141,13 @@
           }
         },
         "away": {
-          "matches": 0,
-          "correct": 0,
-          "accuracy": null,
+          "matches": 1,
+          "correct": 1,
+          "accuracy": 1.0,
           "actual": {
             "home": 0,
             "draw": 0,
-            "away": 0
+            "away": 1
           }
         }
       }
@@ -184,6 +184,38 @@
         "home_win_probability": 0.586,
         "draw_probability": 0.23,
         "away_win_probability": 0.185
+      },
+      {
+        "match_id": "317850",
+        "date_time": "17.10.2026 16:00",
+        "home_team": "AMED SPORTİF FAALİYETLER",
+        "away_team": "TÜMOSAN KONYASPOR",
+        "actual_score": "1 - 0",
+        "actual": "home",
+        "predicted": "home",
+        "raw_predicted": "home",
+        "correct": true,
+        "data_confidence": "PLAYED",
+        "prediction_confidence": "HIGH",
+        "home_win_probability": 0.702,
+        "draw_probability": 0.2,
+        "away_win_probability": 0.098
+      },
+      {
+        "match_id": "317851",
+        "date_time": "17.10.2026 16:00",
+        "home_team": "GENÇLERBİRLİĞİ",
+        "away_team": "GALATASARAY A.Ş.",
+        "actual_score": "0 - 1",
+        "actual": "away",
+        "predicted": "away",
+        "raw_predicted": "away",
+        "correct": true,
+        "data_confidence": "PLAYED",
+        "prediction_confidence": "MEDIUM",
+        "home_win_probability": 0.279,
+        "draw_probability": 0.244,
+        "away_win_probability": 0.477
       }
     ]
   },
@@ -1752,35 +1784,35 @@
     {
       "week": 8,
       "summary": {
-        "evaluated_matches": 2,
-        "correct": 2,
+        "evaluated_matches": 4,
+        "correct": 4,
         "accuracy": 1.0,
         "actual_draws": 0,
         "draws_caught": 0,
         "draw_recall": null,
-        "high_conf_matches": 1,
-        "high_conf_correct": 1,
+        "high_conf_matches": 2,
+        "high_conf_correct": 2,
         "high_conf_accuracy": 1.0,
-        "brier_score": 0.3473,
-        "log_loss": 0.6544,
+        "brier_score": 0.311,
+        "log_loss": 0.6007,
         "confidence_breakdown": {
           "HIGH": {
-            "matches": 1,
-            "correct": 1,
+            "matches": 2,
+            "correct": 2,
             "accuracy": 1.0,
-            "avg_stated_probability": 0.586,
-            "calibration_gap": 0.414,
-            "brier_score": 0.2585,
-            "log_loss": 0.5344
+            "avg_stated_probability": 0.644,
+            "calibration_gap": 0.356,
+            "brier_score": 0.1985,
+            "log_loss": 0.4441
           },
           "MEDIUM": {
-            "matches": 1,
-            "correct": 1,
+            "matches": 2,
+            "correct": 2,
             "accuracy": 1.0,
-            "avg_stated_probability": 0.461,
-            "calibration_gap": 0.539,
-            "brier_score": 0.436,
-            "log_loss": 0.7744
+            "avg_stated_probability": 0.469,
+            "calibration_gap": 0.531,
+            "brier_score": 0.4235,
+            "log_loss": 0.7573
           },
           "LOW": {
             "matches": 0,
@@ -1794,11 +1826,11 @@
         },
         "pick_side_breakdown": {
           "home": {
-            "matches": 2,
-            "correct": 2,
+            "matches": 3,
+            "correct": 3,
             "accuracy": 1.0,
             "actual": {
-              "home": 2,
+              "home": 3,
               "draw": 0,
               "away": 0
             }
@@ -1814,13 +1846,13 @@
             }
           },
           "away": {
-            "matches": 0,
-            "correct": 0,
-            "accuracy": null,
+            "matches": 1,
+            "correct": 1,
+            "accuracy": 1.0,
             "actual": {
               "home": 0,
               "draw": 0,
-              "away": 0
+              "away": 1
             }
           }
         }
@@ -1857,6 +1889,38 @@
           "home_win_probability": 0.586,
           "draw_probability": 0.23,
           "away_win_probability": 0.185
+        },
+        {
+          "match_id": "317850",
+          "date_time": "17.10.2026 16:00",
+          "home_team": "AMED SPORTİF FAALİYETLER",
+          "away_team": "TÜMOSAN KONYASPOR",
+          "actual_score": "1 - 0",
+          "actual": "home",
+          "predicted": "home",
+          "raw_predicted": "home",
+          "correct": true,
+          "data_confidence": "PLAYED",
+          "prediction_confidence": "HIGH",
+          "home_win_probability": 0.702,
+          "draw_probability": 0.2,
+          "away_win_probability": 0.098
+        },
+        {
+          "match_id": "317851",
+          "date_time": "17.10.2026 16:00",
+          "home_team": "GENÇLERBİRLİĞİ",
+          "away_team": "GALATASARAY A.Ş.",
+          "actual_score": "0 - 1",
+          "actual": "away",
+          "predicted": "away",
+          "raw_predicted": "away",
+          "correct": true,
+          "data_confidence": "PLAYED",
+          "prediction_confidence": "MEDIUM",
+          "home_win_probability": 0.279,
+          "draw_probability": 0.244,
+          "away_win_probability": 0.477
         }
       ]
     }
