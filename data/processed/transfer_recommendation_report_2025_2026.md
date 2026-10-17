@@ -18,13 +18,13 @@
 | 4 | GAZİANTEP FUTBOL KULÜBÜ A.Ş. | ACİL | 60.1 | 1.143 | 1.0 | 1.429 | Kaleci / istikrar |
 | 5 | TÜMOSAN KONYASPOR | ACİL | 57.2 | 0.714 | 0.571 | 1.143 | 6 numara / savunma emniyeti |
 | 6 | KASIMPAŞA A.Ş. | ACİL | 56.9 | 1.429 | 1.143 | 1.143 | Kaleci / istikrar |
-| 7 | GÖZTEPE A.Ş. | YÜKSEK | 52.4 | 0.857 | 2.143 | 2.143 | 6 numara / savunma emniyeti |
-| 8 | ERZURUMSPOR FK | YÜKSEK | 51.1 | 1.143 | 0.429 | 1.571 | Kaleci / istikrar |
-| 9 | ÇAYKUR RİZESPOR A.Ş. | YÜKSEK | 49.4 | 1.429 | 1.0 | 1.286 | Kaleci / istikrar |
+| 7 | ÇAYKUR RİZESPOR A.Ş. | YÜKSEK | 53.0 | 1.25 | 1.0 | 1.375 | Kaleci / istikrar |
+| 8 | GÖZTEPE A.Ş. | YÜKSEK | 52.4 | 0.857 | 2.143 | 2.143 | 6 numara / savunma emniyeti |
+| 9 | ERZURUMSPOR FK | YÜKSEK | 51.1 | 1.143 | 0.429 | 1.571 | Kaleci / istikrar |
 | 10 | RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ | YÜKSEK | 43.1 | 1.143 | 1.429 | 1.571 | Sol açık / çizgi kırıcı |
 | 11 | KOCAELİSPOR | YÜKSEK | 39.7 | 1.714 | 1.143 | 0.857 | Santrfor / skor yükü |
 | 12 | CORENDON ALANYASPOR | NORMAL | 34.7 | 1.714 | 1.143 | 0.857 | 8 numara / fizik motoru |
-| 13 | ÇORUM FK | NORMAL | 33.4 | 1.429 | 2.286 | 1.714 | Kaleci / istikrar |
+| 13 | ÇORUM FK | NORMAL | 29.9 | 1.625 | 2.25 | 1.625 | Kaleci / istikrar |
 | 14 | AMED SFK | STABİL | 19.4 | 2.0 | 2.429 | 1.286 | Kaleci / istikrar |
 | 15 | GALATASARAY A.Ş. | STABİL | 19.1 | 2.286 | 2.286 | 1.571 | Sol açık / çizgi kırıcı |
 | 16 | BEŞİKTAŞ A.Ş. | STABİL | 17.0 | 2.143 | 2.286 | 1.143 | Sol açık / çizgi kırıcı |
@@ -230,6 +230,35 @@ Zayıf nokta: son bölüm gol yeme riski, kart baskısı, skor üretim sorunu, d
   3. GAİUS ABRAHAM JERED MAKOUTA (CORENDON ALANYASPOR) | 29y | 1 gol | MÜZAKERE PENCERESİ | LOW | skor 23.9
      → Son bölüm gol yeme riski sorunu var; 6 numara / savunma emniyeti bu açığı kapatacak. Makouta: 1 gol, 32 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
 
+### ÇAYKUR RİZESPOR A.Ş.  [YÜKSEK]
+*1.25 puan/maç | maç başına 1.0 attı | maç başına 1.375 yedi*
+
+Zayıf nokta: savunma kırılgan, son bölüm gol yeme riski, deplasman zayıf
+
+**Kaleci / istikrar** — Savunma kırılganlığında kaleci istikrarı önceliği; GA ortalaması 1.375 — güvenilir kaleci pozisyonu kritik.
+  1. MARIO RICARDO DA SILVA VELHO (GENÇLERBİRLİĞİ) | 28y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 24.4
+     → Gol üretimi zayıf (maç başına 1.0 gol attı) - Kaleci / istikrar pozisyonunda yaratıcılık gerekiyor. Velho: 23 maç. Bu yaz serbest kalıyor (~-4ay) — bonussuz transfer fırsatı.
+  2. MAHMUT ERTUĞRUL TAŞKIRAN (ERZURUMSPOR FK) | 36y | 0 gol | MÜZAKERE PENCERESİ | LOW | skor 18.2
+     → Gol üretimi zayıf (maç başına 1.0 gol attı) - Kaleci / istikrar pozisyonunda yaratıcılık gerekiyor. Taşkiran: 20 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere. 36 yaş — deneyim katkısı, kısa dönem çözüm.
+  3. MUHAMMED ŞENGEZER (İSTANBUL BAŞAKŞEHİR FK) | 29y | 0 gol | PREMİUM TRANSFER | MEDIUM | skor 16.5
+     → Gol üretimi zayıf (maç başına 1.0 gol attı) - Kaleci / istikrar pozisyonunda yaratıcılık gerekiyor. Şengezer: 33 maç. Uzun sözleşme — yüksek bonusu göze almalı.
+
+**Stoper / hava ve temas** — Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 1.375.
+  1. JAYDEN QUINN OOSTERWOLDE (FENERBAHÇE A.Ş.) | 25y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 29.2
+     → Gol üretimi zayıf (maç başına 1.0 gol attı) - Stoper / hava ve temas pozisyonunda yaratıcılık gerekiyor. Oosterwolde: 29 maç. Bu yaz serbest kalıyor (~7ay) — bonussuz transfer fırsatı.
+  2. HELITON JORGE  TITO DOS SANTOS (GÖZTEPE A.Ş.) | 30y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 27.8
+     → Gol üretimi zayıf (maç başına 1.0 gol attı) - Stoper / hava ve temas pozisyonunda yaratıcılık gerekiyor. Santos: 32 maç. Bu yaz serbest kalıyor (~-4ay) — bonussuz transfer fırsatı.
+  3. NUNO MIGUEL REIS LIMA (CORENDON ALANYASPOR) | 25y | 1 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 25.8
+     → Gol üretimi zayıf (maç başına 1.0 gol attı) - Stoper / hava ve temas pozisyonunda yaratıcılık gerekiyor. Lima: 1 gol, 32 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
+
+**6 numara / savunma emniyeti** — Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir.
+  1. FRANCO DARYL TONGYA HEUBANG (GENÇLERBİRLİĞİ) | 24y | 6 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 27.7
+     → Gol üretimi zayıf (maç başına 1.0 gol attı) - 6 numara / savunma emniyeti pozisyonunda yaratıcılık gerekiyor. Heubang: 6 gol, 27 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
+  2. ANTHONY JUNIOR DENNIS (GÖZTEPE A.Ş.) | 22y | 3 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 27.6
+     → Gol üretimi zayıf (maç başına 1.0 gol attı) - 6 numara / savunma emniyeti pozisyonunda yaratıcılık gerekiyor. Dennis: 3 gol, 29 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere. 22 yaş, uzun vadeli yatırım profili.
+  3. GAİUS ABRAHAM JERED MAKOUTA (CORENDON ALANYASPOR) | 29y | 1 gol | MÜZAKERE PENCERESİ | LOW | skor 23.9
+     → Gol üretimi zayıf (maç başına 1.0 gol attı) - 6 numara / savunma emniyeti pozisyonunda yaratıcılık gerekiyor. Makouta: 1 gol, 32 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
+
 ### GÖZTEPE A.Ş.  [YÜKSEK]
 *0.857 puan/maç | maç başına 2.143 attı | maç başına 2.143 yedi*
 
@@ -287,35 +316,6 @@ Zayıf nokta: yeni lig takımı
      → Gol üretimi zayıf (maç başına 0.429 gol attı) - Santrfor / skor yükü pozisyonunda yaratıcılık gerekiyor. Shomurodov: 22 gol, 34 maç. Uzun sözleşme — yüksek bonusu göze almalı.
   3. VICTOR JAMES OSIMHEN (GALATASARAY A.Ş.) | 27y | 15 gol | PREMİUM TRANSFER | MEDIUM | skor 24.7
      → Gol üretimi zayıf (maç başına 0.429 gol attı) - Santrfor / skor yükü pozisyonunda yaratıcılık gerekiyor. Osimhen: 15 gol, 19 maçta sahada. Uzun sözleşme — yüksek bonusu göze almalı.
-
-### ÇAYKUR RİZESPOR A.Ş.  [YÜKSEK]
-*1.429 puan/maç | maç başına 1.0 attı | maç başına 1.286 yedi*
-
-Zayıf nokta: savunma kırılgan, son bölüm gol yeme riski, deplasman zayıf
-
-**Kaleci / istikrar** — Savunma kırılganlığında kaleci istikrarı önceliği; GA ortalaması 1.286 — güvenilir kaleci pozisyonu kritik.
-  1. MARIO RICARDO DA SILVA VELHO (GENÇLERBİRLİĞİ) | 28y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 24.4
-     → Gol üretimi zayıf (maç başına 1.0 gol attı) - Kaleci / istikrar pozisyonunda yaratıcılık gerekiyor. Velho: 23 maç. Bu yaz serbest kalıyor (~-4ay) — bonussuz transfer fırsatı.
-  2. MAHMUT ERTUĞRUL TAŞKIRAN (ERZURUMSPOR FK) | 36y | 0 gol | MÜZAKERE PENCERESİ | LOW | skor 18.2
-     → Gol üretimi zayıf (maç başına 1.0 gol attı) - Kaleci / istikrar pozisyonunda yaratıcılık gerekiyor. Taşkiran: 20 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere. 36 yaş — deneyim katkısı, kısa dönem çözüm.
-  3. MUHAMMED ŞENGEZER (İSTANBUL BAŞAKŞEHİR FK) | 29y | 0 gol | PREMİUM TRANSFER | MEDIUM | skor 16.5
-     → Gol üretimi zayıf (maç başına 1.0 gol attı) - Kaleci / istikrar pozisyonunda yaratıcılık gerekiyor. Şengezer: 33 maç. Uzun sözleşme — yüksek bonusu göze almalı.
-
-**Stoper / hava ve temas** — Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 1.286.
-  1. JAYDEN QUINN OOSTERWOLDE (FENERBAHÇE A.Ş.) | 25y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 29.2
-     → Gol üretimi zayıf (maç başına 1.0 gol attı) - Stoper / hava ve temas pozisyonunda yaratıcılık gerekiyor. Oosterwolde: 29 maç. Bu yaz serbest kalıyor (~7ay) — bonussuz transfer fırsatı.
-  2. HELITON JORGE  TITO DOS SANTOS (GÖZTEPE A.Ş.) | 30y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 27.8
-     → Gol üretimi zayıf (maç başına 1.0 gol attı) - Stoper / hava ve temas pozisyonunda yaratıcılık gerekiyor. Santos: 32 maç. Bu yaz serbest kalıyor (~-4ay) — bonussuz transfer fırsatı.
-  3. NUNO MIGUEL REIS LIMA (CORENDON ALANYASPOR) | 25y | 1 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 25.8
-     → Gol üretimi zayıf (maç başına 1.0 gol attı) - Stoper / hava ve temas pozisyonunda yaratıcılık gerekiyor. Lima: 1 gol, 32 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
-
-**6 numara / savunma emniyeti** — Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir.
-  1. FRANCO DARYL TONGYA HEUBANG (GENÇLERBİRLİĞİ) | 24y | 6 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 27.7
-     → Gol üretimi zayıf (maç başına 1.0 gol attı) - 6 numara / savunma emniyeti pozisyonunda yaratıcılık gerekiyor. Heubang: 6 gol, 27 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
-  2. ANTHONY JUNIOR DENNIS (GÖZTEPE A.Ş.) | 22y | 3 gol | MÜZAKERE PENCERESİ | MEDIUM | skor 27.6
-     → Gol üretimi zayıf (maç başına 1.0 gol attı) - 6 numara / savunma emniyeti pozisyonunda yaratıcılık gerekiyor. Dennis: 3 gol, 29 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere. 22 yaş, uzun vadeli yatırım profili.
-  3. GAİUS ABRAHAM JERED MAKOUTA (CORENDON ALANYASPOR) | 29y | 1 gol | MÜZAKERE PENCERESİ | LOW | skor 23.9
-     → Gol üretimi zayıf (maç başına 1.0 gol attı) - 6 numara / savunma emniyeti pozisyonunda yaratıcılık gerekiyor. Makouta: 1 gol, 32 maç. 1 yıllık sözleşme — bu yaz müzakere için en uygun pencere.
 
 ### RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ  [YÜKSEK]
 *1.143 puan/maç | maç başına 1.429 attı | maç başına 1.571 yedi*
@@ -397,7 +397,7 @@ Zayıf nokta: deplasman zayıf, düşük şut baskısı
      → Deplasman zayıf sorunu var; Bek / çift yönlü koridor bu açığı kapatacak. Pina: 28 maç. Uzun sözleşme — yüksek bonusu göze almalı. 23 yaş, uzun vadeli yatırım profili.
 
 ### ÇORUM FK  [NORMAL]
-*1.429 puan/maç | maç başına 2.286 attı | maç başına 1.714 yedi*
+*1.625 puan/maç | maç başına 2.25 attı | maç başına 1.625 yedi*
 
 Zayıf nokta: yeni lig takımı
 
