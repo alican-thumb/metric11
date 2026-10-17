@@ -33,8 +33,6 @@ _TR_MONTHS = ["", "Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmu
               "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"]
 _TR_DAYS = ["Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi", "Pazar"]
 
-# Takım arşiv sayfası olan slug'lar (build_dashboard --all-teams).
-_TEAM_PAGE = "{slug}_2025_2026_dashboard_chronological.html"
 
 _STYLE = """<style>
 .mp-hero{margin:8px 0 18px}.mp-hero h1{font-size:clamp(22px,4.5vw,30px);line-height:1.2;margin:0 0 6px}
@@ -179,7 +177,40 @@ def _summary_sentence(m: dict, pick: str) -> str:
     return lead + tail
 
 
-def build_match_page(m: dict, week: int, signals: dict, scorers: dict, week_matches: list[dict]) -> tuple[str, str, dict]:
+OG_WEEKS_AHEAD = 2  # paylaşım görseli yalnız yaklaşan N hafta için (repo şişmesin)
+
+
+def og_image_name(home: str, away: str) -> str:
+    return f"og_mac_{_url_slug(home)}_{_url_slug(away)}.png"
+
+
+def generate_match_og(m: dict, week: int) -> str | None:
+    """WhatsApp/Telegram/X önizlemesi için maça özel 1200x630 görsel. PIL yoksa None."""
+    from src import build_og_images as og
+
+    if not og._PIL_AVAILABLE:
+        return None
+    img, draw = og._make_base_image()
+    home, away = display_name(m["home_team"]), display_name(m["away_team"])
+    dt = _parse_dt(m.get("date_time", ""))
+    overline = f"Süper Lig · {week}. hafta" + (f" · {dt.day} {_TR_MONTHS[dt.month]} {dt:%H:%M}" if dt else "")
+    og._draw_overline(draw, overline.replace("i", "İ").replace("ı", "I"), 95)  # Türkçe büyük harf
+    og._draw_headline(draw, f"{home} - {away}", 165, size=56 if len(home + away) < 26 else 44)
+    og._draw_stat_cards(draw, [
+        (home, _pct(m.get("home_win_probability"))),
+        ("Beraberlik", _pct(m.get("draw_probability"))),
+        (away, _pct(m.get("away_win_probability"))),
+    ], 330)
+    rec = (m.get("recommended_scoreline") or {}).get("score")
+    pick = _pick_text(m, m.get("predicted") or "home")
+    font = og._load_font("Inter-SemiBold.ttf", 26)
+    draw.text((og.W // 2, 470), f"Tahmin: {pick}" + (f" · Olası skor {rec}" if rec else ""), font=font, fill=og._rgb(og.LIME), anchor="mm")
+    name = og_image_name(m["home_team"], m["away_team"])
+    img.save(str(PROCESSED_DIR / name), "PNG")
+    return name
+
+
+def build_match_page(m: dict, week: int, signals: dict, scorers: dict, week_matches: list[dict], og_image: str = "og-image.png") -> tuple[str, str, dict]:
     home_raw, away_raw = m["home_team"], m["away_team"]
     home, away = display_name(home_raw), display_name(away_raw)
     path = match_page_path(home_raw, away_raw)
@@ -274,12 +305,13 @@ def build_match_page(m: dict, week: int, signals: dict, scorers: dict, week_matc
         for x in others
     )
     team_links = "".join(
-        f'<a href="{_TEAM_PAGE.format(slug=team_slug(t))}">{escape(display_name(t))} sayfası</a>' for t in (home_raw, away_raw)
+        f'<a href="{_url_slug(t)}-mac-tahminleri-2026-27.html">{escape(display_name(t))} maç tahminleri</a>' for t in (home_raw, away_raw)
     )
     parts.append(
         f'<div class="mp-card mp-links"><h2>{week}. haftanın diğer maçları</h2>{other_links}'
         f'<p><a href="{week_page_path(week)}"><b>Süper Lig {week}. hafta tüm tahminler →</b></a></p>'
-        f'<p>{team_links}<a href="season_fixture_predictions_2026_2027.html">Tüm sezon fikstürü</a></p></div>'
+        f'<p>{team_links}<a href="season_fixture_predictions_2026_2027.html">Tüm sezon fikstürü</a>'
+        '<a href="super-lig-sampiyonluk-oranlari-2026-27.html">Şampiyonluk oranları</a></p></div>'
     )
     parts.append(_share_button(f"{BASE_URL}/{path}", f"{home} - {away} maç tahmini: {_pick_text(m, pick)} — metric11"))
     parts.append(
@@ -288,7 +320,7 @@ def build_match_page(m: dict, week: int, signals: dict, scorers: dict, week_matc
         'maç başlayana kadar her gün güncellenir. Bahis tavsiyesi değildir.</p>'
     )
 
-    html = page_html(title, "\n".join(parts), description=description, active_nav="season_fixture_predictions_2026_2027.html", og_image="og-image.png", canonical_path=path)
+    html = page_html(title, "\n".join(parts), description=description, active_nav="season_fixture_predictions_2026_2027.html", og_image=og_image, canonical_path=path)
     meta = {"path": path, "week": week, "home": home, "away": away, "date_time": m.get("date_time"), "played": played}
     return path, html, meta
 
@@ -334,7 +366,7 @@ def build_week_page(week: int, matches: list[dict]) -> tuple[str, str]:
         + summary
         + f'<div class="mp-card" style="overflow-x:auto"><table class="mp-week">{head}{"".join(rows)}</table></div>'
         + '<a class="mp-cta" href="https://tahmin.metric11.com/">🎮 Bu haftanın maçlarını sen de tahmin et</a>'
-        + f'<div class="mp-card mp-links">{"".join(nav)}<a href="season_fixture_predictions_2026_2027.html">Tüm sezon fikstürü</a><a href="weekly_evaluation_2026_2027.html">Haftalık isabet karnesi</a></div>'
+        + f'<div class="mp-card mp-links">{"".join(nav)}<a href="season_fixture_predictions_2026_2027.html">Tüm sezon fikstürü</a><a href="weekly_evaluation_2026_2027.html">Haftalık isabet karnesi</a><a href="super-lig-sampiyonluk-oranlari-2026-27.html">Şampiyonluk oranları</a></div>'
         + _share_button(f"{BASE_URL}/{path}", f"Süper Lig {week}. hafta tahminleri — metric11")
     )
     html = page_html(title, body, description=description, active_nav="season_fixture_predictions_2026_2027.html", canonical_path=path)
@@ -346,10 +378,16 @@ def main() -> None:
     signals, scorers = _load(SIGNALS_PATH), _load(SCORERS_PATH)
     index = {"generated_at": datetime.now().isoformat(), "season": SEASON_TAG, "weeks": [], "matches": []}
     written = 0
+    upcoming_weeks = [w["week"] for w in payload["weeks"] if any(not m.get("is_played") for m in w["matches"])][:OG_WEEKS_AHEAD]
     for week in payload["weeks"]:
         n, matches = week["week"], week["matches"]
         for m in matches:
-            path, html, meta = build_match_page(m, n, signals, scorers, matches)
+            og_name = "og-image.png"
+            if n in upcoming_weeks and not m.get("is_played"):
+                og_name = generate_match_og(m, n) or og_name
+            elif (PROCESSED_DIR / og_image_name(m["home_team"], m["away_team"])).exists():
+                og_name = og_image_name(m["home_team"], m["away_team"])
+            path, html, meta = build_match_page(m, n, signals, scorers, matches, og_image=og_name)
             (PROCESSED_DIR / path).write_text(html, encoding="utf-8")
             index["matches"].append(meta)
             written += 1

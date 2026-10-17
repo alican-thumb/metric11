@@ -160,6 +160,31 @@ def _send_match_posts(token: str, channel: str, posted: dict, now: datetime | No
     return sent
 
 
+def _send_simulation_post(token: str, channel: str, posted: dict) -> int:
+    """Her hafta tamamlandığında bir kez şampiyonluk/düşme olasılıkları özeti."""
+    path = PROCESSED_DIR / "season_simulation_2026_2027.json"
+    if not path.exists():
+        return 0
+    sim = json.loads(path.read_text(encoding="utf-8"))
+    week = sim.get("after_week") or 0
+    key = f"sim-week-{week}"
+    if week < 1 or key in posted:
+        return 0
+    teams = sim.get("teams", [])
+    title = sorted(teams, key=lambda r: -r["sim"]["champion"])[:5]
+    danger = sorted(teams, key=lambda r: -r["sim"]["relegated"])[:4]
+    pct = lambda x: "<%1" if 0 < x < 0.005 else f"%{round(x * 100)}"
+    lines = [f"🏆 *Şampiyonluk oranları* · {week}. hafta sonrası", ""]
+    lines += [f"{i}. {r['name']} {pct(r['sim']['champion'])}" for i, r in enumerate(title, start=1)]
+    lines += ["", "⬇️ *Düşme riski*"]
+    lines += [f"• {r['name']} {pct(r['sim']['relegated'])}" for r in danger]
+    lines += ["", f"[Tüm tablo ve takım takım olasılıklar →]({SITE_URL}/{sim.get('page_path')})"]
+    if _send(token, channel, "\n".join(lines)):
+        posted[key] = {"sent_at": datetime.now(timezone.utc).isoformat(), "status": "SIMULATION", "player": None, "to_club": None}
+        return 1
+    return 0
+
+
 def run() -> None:
     token   = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
     channel = os.environ.get("TELEGRAM_CHANNEL_ID", "").strip()
@@ -170,6 +195,7 @@ def run() -> None:
 
     posted = _load_posted()
     match_sent = _send_match_posts(token, channel, posted)
+    match_sent += _send_simulation_post(token, channel, posted)
     _save_posted(posted)
     print(f"{match_sent} maç gönderisi.")
 

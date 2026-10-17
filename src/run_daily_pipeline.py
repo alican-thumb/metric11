@@ -63,6 +63,7 @@ DEFAULT_COMMANDS = [
     ["python", "-m", "src.build_season_fixture_predictions"],
     ["python", "-m", "src.build_weekly_evaluation"],
     ["python", "-m", "src.build_match_pages"],
+    ["python", "-m", "src.build_season_simulation"],
     ["python", "-m", "src.build_match_week"],
     # build_og_images burada (match_week/weekly_evaluation'dan SONRA, build_live_feed'den
     # ÖNCE) çalışır — 2026-09-11 bulgusu: eskiden bu iki dosyadan önce çalışıyordu,

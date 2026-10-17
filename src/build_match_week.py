@@ -189,6 +189,8 @@ def render_hero_html(payload: dict | None = None) -> str:
         f'{"".join(rows)}'
         f'<a href="{week_page_path(payload["week"])}" style="display:inline-block;margin:12px 16px 0 0;'
         f'color:#116447;font-weight:700;font-size:13px;text-decoration:none;">Hafta {payload["week"]} tüm tahminler →</a>'
+        '<a href="super-lig-sampiyonluk-oranlari-2026-27.html" style="display:inline-block;margin:12px 16px 0 0;'
+        'color:#116447;font-weight:700;font-size:13px;text-decoration:none;">🏆 Şampiyonluk oranları →</a>'
         '<a href="season_fixture_predictions_2026_2027.html" style="display:inline-block;margin-top:12px;'
         'color:#116447;font-weight:700;font-size:13px;text-decoration:none;">Tüm fikstür →</a>'
         '</section>'

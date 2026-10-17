@@ -19,6 +19,7 @@ _PUBLIC_PAGES = [
     ("gundem_2025_2026.html", 1.0, "daily"),
     ("season_fixture_predictions_2026_2027.html", 1.0, "daily"),
     ("weekly_evaluation_2026_2027.html", 0.9, "daily"),
+    ("super-lig-sampiyonluk-oranlari-2026-27.html", 1.0, "daily"),
     ("european_predictions_2026_2027.html", 1.0, "daily"),
     ("worldcup_2026_predictions.html", 1.0, "daily"),
     (f"transfer_tracker_{SEASON}.html", 0.9, "daily"),
@@ -116,6 +117,12 @@ def _match_page_urls(today: str) -> list[str]:
             out.append(_url_entry(match["path"], played_on or today, "yearly", 0.5))
         else:
             out.append(_url_entry(match["path"], today, "daily", 0.8))
+    sim_path = PROCESSED_DIR / "season_simulation_2026_2027.json"
+    if sim_path.exists():
+        from src.build_season_simulation import team_page_path
+
+        for team in json.loads(sim_path.read_text(encoding="utf-8")).get("teams", []):
+            out.append(_url_entry(team_page_path(team["team"]), today, "daily", 0.9))
     return out
 
 

@@ -108,6 +108,7 @@ def _nav_link_list() -> list[tuple[str, str]]:
     ]
     if league_active():
         links.append(("📊 Haftalık Karne", "weekly_evaluation_2026_2027.html"))
+        links.append(("🏆 Şampiyonluk", "super-lig-sampiyonluk-oranlari-2026-27.html"))
     # Not (2026-09-16): "🌍 Dünya Kupası" kullanıcı geri bildirimiyle header'dan
     # kaldırıldı (gereksiz yer kaplıyordu) — artık yalnızca footer'da link olarak var
     # (bkz. page_html()'deki footer).
@@ -131,6 +132,7 @@ def _nav_link_list() -> list[tuple[str, str]]:
 _NEW_BADGE_WINDOW_DAYS = 10
 _NEW_BADGES = {
     "https://tahmin.metric11.com/taraftar": date(2026, 9, 16),
+    "super-lig-sampiyonluk-oranlari-2026-27.html": date(2026, 10, 17),
 }
 
 
@@ -224,6 +226,9 @@ def _share_button(url: str, tweet_text: str) -> str:
         f'<a class="x-share" href="{href}" target="_blank" rel="noopener">'
         '&#x1D54F; Paylaş'
         '</a>'
+        f'<a class="wa-share" href="https://wa.me/?text={quote(tweet_text + " " + url)}" target="_blank" rel="noopener" '
+        'style="display:inline-block;margin-left:8px;background:#25D366;color:#fff;font-weight:700;font-size:13px;'
+        'padding:8px 14px;border-radius:8px;text-decoration:none">WhatsApp\'ta paylaş</a>'
         '</div>'
     )
 
