@@ -4,12 +4,12 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 
 ## Genel Karne
 
-- Değerlendirilen maç: **67**
-- İsabet: **31/67** (%46)
+- Değerlendirilen maç: **68**
+- İsabet: **32/68** (%47)
 - Beraberlik yakalama: **2/14** (%14)
-- Yüksek güvenli maç isabeti: **15/26** (%58)
-- Brier score: **0.627** (düşük daha iyi; 2025-26 referans 0.600)
-- Log loss: **1.038** (düşük daha iyi; 2025-26 referans 1.005)
+- Yüksek güvenli maç isabeti: **16/27** (%59)
+- Brier score: **0.621** (düşük daha iyi; 2025-26 referans 0.600)
+- Log loss: **1.029** (düşük daha iyi; 2025-26 referans 1.005)
 
 ### Güven bandı kalibrasyonu
 
@@ -17,7 +17,7 @@ _"Beyan edilen ort. olasılık" ile "İsabet" arasındaki fark büyükse (özell
 
 | Güven bandı | Maç | İsabet | Beyan edilen ort. olasılık | Brier | Log loss | Referans (2025-26: isabet / brier / logloss) |
 | --- | --- | --- | --- | --- | --- | --- |
-| HIGH | 26 | 15/26 (%58) | %59 | 0.552 | 0.933 | %64 / 0.516 / 0.885 |
+| HIGH | 27 | 16/27 (%59) | %59 | 0.540 | 0.916 | %64 / 0.516 / 0.885 |
 | MEDIUM | 25 | 7/25 (%28) | %47 | 0.685 | 1.111 | %54 / 0.619 / 1.032 |
 | LOW | 16 | 9/16 (%56) | %39 | 0.659 | 1.092 | %48 / 0.670 / 1.103 |
 
@@ -27,11 +27,11 @@ _Model hangi tarafı seçtiğinde ne oldu? Belirli bir seçimde (ör. deplasman 
 
 | Seçim | Maç | İsabet | Gerçekleşen (Ev / X / Dep) |
 | --- | --- | --- | --- |
-| Ev | 39 | 20/39 (%51) | 20 / 7 / 12 |
+| Ev | 40 | 21/40 (%52) | 21 / 7 / 12 |
 | Beraberlik | 3 | 2/3 (%67) | 0 / 2 / 1 |
 | Deplasman | 25 | 9/25 (%36) | 11 / 5 / 9 |
 
-## Hafta 8 — 4/4 isabet (%100)
+## Hafta 8 — 5/5 isabet (%100)
 
 | Maç | Skor | Tahmin | Sonuç | Güven |
 | --- | --- | --- | --- | --- |
@@ -39,6 +39,7 @@ _Model hangi tarafı seçtiğinde ne oldu? Belirli bir seçimde (ör. deplasman 
 | ERZURUMSPOR FK - EYÜPSPOR | 2 - 0 | Ev | ✅ | HIGH |
 | AMED SPORTİF FAALİYETLER - TÜMOSAN KONYASPOR | 1 - 0 | Ev | ✅ | HIGH |
 | GENÇLERBİRLİĞİ - GALATASARAY A.Ş. | 0 - 1 | Deplasman | ✅ | MEDIUM |
+| FENERBAHÇE A.Ş. - CORENDON ALANYASPOR | 3 - 0 | Ev | ✅ | HIGH |
 
 ## Hafta 7 — 6/9 isabet (%67)
 
