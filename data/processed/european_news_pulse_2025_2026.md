@@ -1,6 +1,6 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-10-18T04:26:54.796263+00:00
+Üretim zamanı: 2026-10-18T07:15:12.898791+00:00
 Toplam ilgili haber: 26
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
@@ -19,7 +19,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Avrupa Ligi'nin 2. haftasında gol yağmuru! İşte alınan sonuçlar](https://www.takvim.com.tr/spor/besiktas/2026/10/15/avrupa-liginde-2-hafta-maclari-tamamlandi-alinan-sonuclar) — Takvim Spor · 2026-10-16T02:20:59+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş'a yan bakılmıyor! Avrupa Ligi puan durumu](https://www.takvim.com.tr/galeri/spor/uefa-avrupa-ligi-puan-durumu-2026-2027-sezonu-2-hafta) — Takvim Spor · 2026-10-16T01:38:07+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Ülke puanı güncellendi! İşte Türkiye'nin UEFA'daki sırası](https://www.takvim.com.tr/galeri/spor/ulke-puani-guncellendi-turkiye-kacinci-sirada) — Takvim Spor · 2026-10-16T00:49:01+03:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe, Beşiktaş, Trabzonspor
-- [Hoffenheim 2-3 Beşiktaş Maç Özeti | Kartal, Almanya’da kazandı](https://www.cnnturk.com/spor/futbol/live-hoffenheim-2-3-besiktas-mac-ozeti-kartal-almanyada-kazandi-3479721) — CNN Türk Spor · 2026-10-16T00:47:05+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Trabzonspor zirveye aday! Konferans Ligi puan durumu](https://www.takvim.com.tr/galeri/spor/uefa-konferans-ligi-puan-durumu-1-hafta) — Takvim Spor · 2026-10-16T00:22:42+03:00 · turnuva=ECL · kulüp=Trabzonspor
 - [Beşiktaş'ta yıldız futbolcu sakatlandı! Derbi öncesi kötü haber](https://www.takvim.com.tr/spor/besiktas/2026/10/15/besiktasta-yildiz-futbolcu-sakatlandi-derbi-oncesi-kotu-haber) — Takvim Spor · 2026-10-15T23:40:50+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Muhammed Salah adını tarihe yazdırdı! Götze ve Gakpo'dan sonra 3. isim](https://www.takvim.com.tr/spor/trabzonspor/2026/10/15/muhammed-salah-kups-kuopio-macinda-tarihe-gecti) — Takvim Spor · 2026-10-15T22:28:07+03:00 · turnuva=ECL · kulüp=Trabzonspor
@@ -28,6 +27,7 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Kartal 2'de 2 yaptı! Beşiktaş Avrupa Ligi'nde Hoffenheim'i 3-2 yendi](https://www.takvim.com.tr/spor/besiktas/2026/10/15/besiktas-avrupada-hoffenheim-deplasmaninda) — Takvim Spor · 2026-10-15T12:21:50+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Konferans Ligi'ne 3 puanla merhaba! Trabzonspor Kups Kuopio'yu 4-2 yendi](https://www.takvim.com.tr/spor/trabzonspor/2026/10/15/kups-kuopio-trabzonspor-maci) — Takvim Spor · 2026-10-15T11:19:53+03:00 · turnuva=ECL · kulüp=Trabzonspor
 - [Yazarlardan Kartal'a sert eleştiriler: "Dümendeki pısırık adam"](https://www.takvim.com.tr/spor/fenerbahce/2026/10/15/spor-yazarlari-aston-villa-fenerbahce-macini-yorumladi) — Takvim Spor · 2026-10-15T10:25:33+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Trabzonspor'un transfer gündemine gelmişti! Şampiyonlar Ligi'nde hat-trick yaptı - Haber61](https://news.google.com/rss/articles/CBMivwFBVV95cUxPUmdsVEM3Z3IzcjgyczNEU2dNcG9HSUdLcEVyQm16X0dHY3I3eUZveDRhZE1LQ3JkajFlUC1BTWxJWWRWVXdOVEFxMUVVTmJkTmdZZTVyQzU0OG5iNTNKTlY4T2dlXzFRdGN0OEFDaTZIZXFpY0hFQjBubXA2VGRpZ0RTakVScHJweEIyeU1DSFhjZ2EzeEw3dUYxdV9PRzY5UW9KT1BRWldyUF9MVXNNUWppZmxIdXBOM3k0elRYbw?oc=5) — Haber61 · 2026-10-15T08:21:11+00:00 · turnuva=CL · kulüp=Trabzonspor
 - [Geri dönüşün mimarı Arda Güler! Real Madrid Roma'yı 4-3 yendi](https://www.takvim.com.tr/spor/2026/10/14/arda-guler-romayi-2-asistle-bitirdi-real-madrid-hayat-buldu) — Takvim Spor · 2026-10-15T01:04:14+03:00 · turnuva=CL · kulüp=—
 - [Şampiyonlar Ligi puan durumu! Fenerbahçe ve Galatasaray kaçıncı?](https://www.takvim.com.tr/galeri/spor/fenerbahce-ve-galatasaray-kacinci-sampiyonlar-ligi-puan-durumu) — Takvim Spor · 2026-10-15T00:36:12+03:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe
 - [İngiltere'de büyük utanç! Fenerbahçe Aston Villa'ya 6-0 yenildi](https://www.takvim.com.tr/spor/fenerbahce/2026/10/14/aston-villa-6-0-fenerbahce-sampiyonlar-ligi-mac-sonucu) — Takvim Spor · 2026-10-14T11:06:45+03:00 · turnuva=CL · kulüp=Fenerbahçe
