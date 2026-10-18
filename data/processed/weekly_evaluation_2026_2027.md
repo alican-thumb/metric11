@@ -4,12 +4,12 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 
 ## Genel Karne
 
-- Değerlendirilen maç: **69**
-- İsabet: **33/69** (%48)
+- Değerlendirilen maç: **70**
+- İsabet: **33/70** (%47)
 - Beraberlik yakalama: **2/14** (%14)
 - Yüksek güvenli maç isabeti: **17/28** (%61)
-- Brier score: **0.616** (düşük daha iyi; 2025-26 referans 0.600)
-- Log loss: **1.022** (düşük daha iyi; 2025-26 referans 1.005)
+- Brier score: **0.618** (düşük daha iyi; 2025-26 referans 0.600)
+- Log loss: **1.026** (düşük daha iyi; 2025-26 referans 1.005)
 
 ### Güven bandı kalibrasyonu
 
@@ -19,7 +19,7 @@ _"Beyan edilen ort. olasılık" ile "İsabet" arasındaki fark büyükse (özell
 | --- | --- | --- | --- | --- | --- | --- |
 | HIGH | 28 | 17/28 (%61) | %59 | 0.531 | 0.903 | %64 / 0.516 / 0.885 |
 | MEDIUM | 25 | 7/25 (%28) | %47 | 0.685 | 1.111 | %54 / 0.619 / 1.032 |
-| LOW | 16 | 9/16 (%56) | %39 | 0.659 | 1.092 | %48 / 0.670 / 1.103 |
+| LOW | 17 | 9/17 (%53) | %38 | 0.666 | 1.102 | %48 / 0.670 / 1.103 |
 
 ### Seçilen tarafa göre isabet
 
@@ -28,10 +28,10 @@ _Model hangi tarafı seçtiğinde ne oldu? Belirli bir seçimde (ör. deplasman 
 | Seçim | Maç | İsabet | Gerçekleşen (Ev / X / Dep) |
 | --- | --- | --- | --- |
 | Ev | 41 | 22/41 (%54) | 22 / 7 / 12 |
-| Beraberlik | 3 | 2/3 (%67) | 0 / 2 / 1 |
+| Beraberlik | 4 | 2/4 (%50) | 0 / 2 / 2 |
 | Deplasman | 25 | 9/25 (%36) | 11 / 5 / 9 |
 
-## Hafta 8 — 6/6 isabet (%100)
+## Hafta 8 — 6/7 isabet (%86)
 
 | Maç | Skor | Tahmin | Sonuç | Güven |
 | --- | --- | --- | --- | --- |
@@ -41,6 +41,7 @@ _Model hangi tarafı seçtiğinde ne oldu? Belirli bir seçimde (ör. deplasman 
 | GENÇLERBİRLİĞİ - GALATASARAY A.Ş. | 0 - 1 | Deplasman | ✅ | MEDIUM |
 | FENERBAHÇE A.Ş. - CORENDON ALANYASPOR | 3 - 0 | Ev | ✅ | HIGH |
 | KASIMPAŞA A.Ş. - SAMSUNSPOR A.Ş. | 4 - 1 | Ev | ✅ | HIGH |
+| KOCAELİSPOR - GÖZTEPE A.Ş. | 1 - 2 | Beraberlik | ❌ | LOW |
 
 ## Hafta 7 — 6/9 isabet (%67)
 

@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-18T17:22:46.746246",
+  "generated_at": "2026-10-18T20:39:32.857139",
   "season": "2026-2027",
   "summary": {
-    "evaluated_matches": 69,
+    "evaluated_matches": 70,
     "correct": 33,
-    "accuracy": 0.4783,
+    "accuracy": 0.4714,
     "actual_draws": 14,
     "draws_caught": 2,
     "draw_recall": 0.1429,
     "high_conf_matches": 28,
     "high_conf_correct": 17,
     "high_conf_accuracy": 0.6071,
-    "brier_score": 0.6162,
-    "log_loss": 1.0225,
+    "brier_score": 0.6184,
+    "log_loss": 1.0258,
     "confidence_breakdown": {
       "HIGH": {
         "matches": 28,
@@ -33,13 +33,13 @@
         "log_loss": 1.1111
       },
       "LOW": {
-        "matches": 16,
+        "matches": 17,
         "correct": 9,
-        "accuracy": 0.5625,
-        "avg_stated_probability": 0.3879,
-        "calibration_gap": 0.1746,
-        "brier_score": 0.659,
-        "log_loss": 1.0923
+        "accuracy": 0.5294,
+        "avg_stated_probability": 0.3821,
+        "calibration_gap": 0.1473,
+        "brier_score": 0.6657,
+        "log_loss": 1.1017
       }
     },
     "pick_side_breakdown": {
@@ -54,13 +54,13 @@
         }
       },
       "draw": {
-        "matches": 3,
+        "matches": 4,
         "correct": 2,
-        "accuracy": 0.6667,
+        "accuracy": 0.5,
         "actual": {
           "home": 0,
           "draw": 2,
-          "away": 1
+          "away": 2
         }
       },
       "away": {
@@ -79,17 +79,17 @@
   "last_week": {
     "week": 8,
     "summary": {
-      "evaluated_matches": 6,
+      "evaluated_matches": 7,
       "correct": 6,
-      "accuracy": 1.0,
+      "accuracy": 0.8571,
       "actual_draws": 0,
       "draws_caught": 0,
       "draw_recall": null,
       "high_conf_matches": 4,
       "high_conf_correct": 4,
       "high_conf_accuracy": 1.0,
-      "brier_score": 0.2905,
-      "log_loss": 0.5743,
+      "brier_score": 0.3596,
+      "log_loss": 0.6711,
       "confidence_breakdown": {
         "HIGH": {
           "matches": 4,
@@ -110,13 +110,13 @@
           "log_loss": 0.7573
         },
         "LOW": {
-          "matches": 0,
+          "matches": 1,
           "correct": 0,
-          "accuracy": null,
-          "avg_stated_probability": null,
-          "calibration_gap": null,
-          "brier_score": null,
-          "log_loss": null
+          "accuracy": 0.0,
+          "avg_stated_probability": 0.288,
+          "calibration_gap": -0.288,
+          "brier_score": 0.7742,
+          "log_loss": 1.2518
         }
       },
       "pick_side_breakdown": {
@@ -131,13 +131,13 @@
           }
         },
         "draw": {
-          "matches": 0,
+          "matches": 1,
           "correct": 0,
-          "accuracy": null,
+          "accuracy": 0.0,
           "actual": {
             "home": 0,
             "draw": 0,
-            "away": 0
+            "away": 1
           }
         },
         "away": {
@@ -248,6 +248,22 @@
         "home_win_probability": 0.572,
         "draw_probability": 0.236,
         "away_win_probability": 0.192
+      },
+      {
+        "match_id": "317854",
+        "date_time": "18.10.2026 16:00",
+        "home_team": "KOCAELİSPOR",
+        "away_team": "GÖZTEPE A.Ş.",
+        "actual_score": "1 - 2",
+        "actual": "away",
+        "predicted": "draw",
+        "raw_predicted": "home",
+        "correct": false,
+        "data_confidence": "PLAYED",
+        "prediction_confidence": "LOW",
+        "home_win_probability": 0.426,
+        "draw_probability": 0.288,
+        "away_win_probability": 0.286
       }
     ]
   },
@@ -1816,17 +1832,17 @@
     {
       "week": 8,
       "summary": {
-        "evaluated_matches": 6,
+        "evaluated_matches": 7,
         "correct": 6,
-        "accuracy": 1.0,
+        "accuracy": 0.8571,
         "actual_draws": 0,
         "draws_caught": 0,
         "draw_recall": null,
         "high_conf_matches": 4,
         "high_conf_correct": 4,
         "high_conf_accuracy": 1.0,
-        "brier_score": 0.2905,
-        "log_loss": 0.5743,
+        "brier_score": 0.3596,
+        "log_loss": 0.6711,
         "confidence_breakdown": {
           "HIGH": {
             "matches": 4,
@@ -1847,13 +1863,13 @@
             "log_loss": 0.7573
           },
           "LOW": {
-            "matches": 0,
+            "matches": 1,
             "correct": 0,
-            "accuracy": null,
-            "avg_stated_probability": null,
-            "calibration_gap": null,
-            "brier_score": null,
-            "log_loss": null
+            "accuracy": 0.0,
+            "avg_stated_probability": 0.288,
+            "calibration_gap": -0.288,
+            "brier_score": 0.7742,
+            "log_loss": 1.2518
           }
         },
         "pick_side_breakdown": {
@@ -1868,13 +1884,13 @@
             }
           },
           "draw": {
-            "matches": 0,
+            "matches": 1,
             "correct": 0,
-            "accuracy": null,
+            "accuracy": 0.0,
             "actual": {
               "home": 0,
               "draw": 0,
-              "away": 0
+              "away": 1
             }
           },
           "away": {
@@ -1985,6 +2001,22 @@
           "home_win_probability": 0.572,
           "draw_probability": 0.236,
           "away_win_probability": 0.192
+        },
+        {
+          "match_id": "317854",
+          "date_time": "18.10.2026 16:00",
+          "home_team": "KOCAELİSPOR",
+          "away_team": "GÖZTEPE A.Ş.",
+          "actual_score": "1 - 2",
+          "actual": "away",
+          "predicted": "draw",
+          "raw_predicted": "home",
+          "correct": false,
+          "data_confidence": "PLAYED",
+          "prediction_confidence": "LOW",
+          "home_win_probability": 0.426,
+          "draw_probability": 0.288,
+          "away_win_probability": 0.286
         }
       ]
     }

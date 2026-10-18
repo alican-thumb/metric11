@@ -1,16 +1,15 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-10-18T17:22:49.647288+00:00
-Toplam ilgili haber: 33
+Üretim zamanı: 2026-10-18T20:39:37.650004+00:00
+Toplam ilgili haber: 30
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
-- [Fenerbahçe, Slavia Prag maçı hazırlıklarını sürdürdü!](https://www.fotomac.com.tr/fenerbahce/2026/10/18/fenerbahce-slavia-prag-maci-hazirliklarini-surdurdu) — Fotomaç · 2026-10-18T18:08:07+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Fenerbahçe'de Slavia Prag maçı hazırlıkları](https://www.sabah.com.tr/spor/futbol/2026/10/18/fenerbahcede-slavia-prag-maci-hazirliklari) — Sabah Spor · 2026-10-18T18:04:28+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Direniş Aslan! Galatasaray yenildi ama Barcelona'ya karşı bunu başaran ilk takım](https://www.takvim.com.tr/spor/galatasaray/2026/10/18/direnis-cimbom-galatasaray-barcelonaya-karsi-bunu-basardi) — Takvim Spor · 2026-10-18T21:02:00+03:00 · turnuva=CL · kulüp=Galatasaray
+- [Sevindiren haber! Fenerbahçe'nin milli futbolcusunda sıcak gelişme...](https://www.aksam.com.tr/spor/sevindiren--fenerbahcenin-milli-futbolcusunda-sicak-gelisme/haber-1707272) — Aksam Spor · 2026-10-18T20:54:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe'ye müjdeli haber! Yıldız futbolcu geri döndü](https://www.takvim.com.tr/spor/fenerbahce/2026/10/18/fenerbahcede-mert-muldur-antrenmanlara-basladi) — Takvim Spor · 2026-10-18T17:57:32+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Berke Özer'in Galatasaray maçı öncesi durumu netleşti! Milli kaleci için Lille'den açıklama](https://www.takvim.com.tr/spor/galatasaray/2026/10/18/lilleden-berke-ozer-icin-galatasaray-aciklamasi) — Takvim Spor · 2026-10-18T16:55:43+03:00 · turnuva=CL · kulüp=Galatasaray
-- [Galatasaray, Lille maçı hazırlıklarına başladı](https://www.fotomac.com.tr/galatasaray/2026/10/18/galatasaray-lille-maci-hazirliklarina-basladi) — Fotomaç · 2026-10-18T16:43:49+03:00 · turnuva=CL · kulüp=Galatasaray
 - [Lille'den Berke Özer açıklaması: Galatasaray maçında...](https://www.fotomac.com.tr/galatasaray/2026/10/18/lilleden-berke-ozer-aciklamasi-galatasaray-macinda) — Fotomaç · 2026-10-18T16:34:04+03:00 · turnuva=CL · kulüp=Galatasaray
 - [Galatasaray'da Lille maçının mesaisi başladı](https://www.cnnturk.com/spor/futbol/galatasarayda-lille-macinin-mesaisi-basladi-3481063) — CNN Türk Spor · 2026-10-18T16:17:06+00:00 · turnuva=CL · kulüp=Galatasaray
 - [Ferdi'li Brighton, Beşiktaş'ın rakibine 5 attı!](https://www.haberturk.com/spor/brighton-hove-albion-crystal-palace-mac-sonucu-iste-brighton-hove-albion-crystal-palace-maci-ozeti-ve-golleri-ingiltere-premier-lig-3920660) — Haberturk Spor · 2026-10-18T15:52:11+00:00 · turnuva=EL · kulüp=Beşiktaş
@@ -22,6 +21,7 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Fenerbahçe - Slavia Prag maçının hakemi belli oldu!](https://www.hurriyet.com.tr/sporarena/fenerbahce-slavia-prag-macinin-hakemi-belli-oldu-43345983) — Hürriyet Spor · 2026-10-18T08:31:17+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Trabzonspor'un yıldızı Beşiktaş derbisini kaçırabilir! Yerine oynayacak isim netleşti](https://www.takvim.com.tr/spor/trabzonspor/2026/10/17/trabzonsporda-onuachu-tehlikesi-besiktas-derbisi-zora-girdi) — Takvim Spor · 2026-10-17T17:10:40+03:00 · turnuva=ECL · kulüp=Beşiktaş, Trabzonspor
 - [Avrupa kupalarında çılgın gelir! İşte en çok kazanan 30 kulüp](https://www.takvim.com.tr/spor/2026/10/17/avrupa-kupalarinda-milyonlar-dagitiliyor-iste-gelir-liderleri) — Takvim Spor · 2026-10-17T15:47:02+03:00 · turnuva=CL · kulüp=—
+- [UEFA kulüpler sıralaması güncellendi! İlk 30'da tek Türk takımı var - Fotomaç](https://news.google.com/rss/articles/CBMirwFBVV95cUxPd2hXV19rUWhIbnZ2SllYRzgtSnhnUTBoX0F4OFM0cHJSSUVWVTNHQzBmVVBQRmlQem5wRnAzdk53ZzB4QkpvM1BsbUt5ZzdfRDBydUJGTUN5NEhMLXJMU2N3TmdsMkJrR1JjdE11QjRiUHZRakE2UUwxR1BRX2gtMUY3N0JVN0VXNE1WbWMzUFRMam5HR0N2a3g0UzRwVzBDb2RwMmVpVHNsSGZ0QTBj0gG0AUFVX3lxTFBSTElYZU9hRURVTnJYWTE0cWNTVlJMTUhIdENhdDJLMlFBQ1FnWENqTWpTamtmT1R4RXBNb3FxOXVzLVBmSVFvVWRHSWhsVHdLWWt5N3VJUGpEQ1lpRHBrY0Q3bjM5T0IzZXBQeF9Jb1RQOVhfMDZ2WFgyWnZTc05qbjBnXzVHMHJYUzVBRzQwVGNNQTdWYUhrRzA1bXd4eld3bHBVeDdwT2tjZVZ0RWQwa3gwbg?oc=5) — Fotomaç · 2026-10-16T13:23:34+00:00 · turnuva=— · kulüp=—
 - [Fenerbahçe'de Marco Asensio krizi iddiası: Aston Villa maçı öncesi rest çekti! İşte yaşananlar](https://www.takvim.com.tr/spor/fenerbahce/2026/10/16/fenerbahcede-marco-asensiodan-ismail-kartala-rest) — Takvim Spor · 2026-10-16T12:22:46+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Spor yazarlarından Beşiktaş övgüleri: "Oh oh suyundan da!"](https://www.takvim.com.tr/spor/besiktas/2026/10/16/spor-yazarlari-hoffenheim-besiktas-macini-yorumladi) — Takvim Spor · 2026-10-16T10:47:47+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Spor yazarlarından Trabzonspor ve Salah övgüleri: "Avrupa'da Konferans verdi"](https://www.takvim.com.tr/spor/trabzonspor/2026/10/16/spor-yazarlari-kups-trabzonspor-macini-degerlendirdi) — Takvim Spor · 2026-10-16T09:43:15+03:00 · turnuva=ECL · kulüp=Trabzonspor
@@ -33,9 +33,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Beşiktaş'ta yıldız futbolcu sakatlandı! Derbi öncesi kötü haber](https://www.takvim.com.tr/spor/besiktas/2026/10/15/besiktasta-yildiz-futbolcu-sakatlandi-derbi-oncesi-kotu-haber) — Takvim Spor · 2026-10-15T23:40:50+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Muhammed Salah adını tarihe yazdırdı! Götze ve Gakpo'dan sonra 3. isim](https://www.takvim.com.tr/spor/trabzonspor/2026/10/15/muhammed-salah-kups-kuopio-macinda-tarihe-gecti) — Takvim Spor · 2026-10-15T22:28:07+03:00 · turnuva=ECL · kulüp=Trabzonspor
 - [Trabzonspor'da Onuachu şoku! 10. dakikada oyundan çıktı](https://www.takvim.com.tr/spor/trabzonspor/2026/10/15/trabzonsporda-onuachu-soku-kups-kuopio-macinda-sakatlandi) — Takvim Spor · 2026-10-15T20:56:50+03:00 · turnuva=ECL · kulüp=Trabzonspor
-- [Guendouzi'den şoke eden istatistik! İşte o rakamlar](https://www.takvim.com.tr/spor/fenerbahce/2026/10/15/fenerbahcede-mateo-guendouzi-sinifta-kaldi) — Takvim Spor · 2026-10-15T15:37:52+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Kartal 2'de 2 yaptı! Beşiktaş Avrupa Ligi'nde Hoffenheim'i 3-2 yendi](https://www.takvim.com.tr/spor/besiktas/2026/10/15/besiktas-avrupada-hoffenheim-deplasmaninda) — Takvim Spor · 2026-10-15T12:21:50+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Konferans Ligi'ne 3 puanla merhaba! Trabzonspor Kups Kuopio'yu 4-2 yendi](https://www.takvim.com.tr/spor/trabzonspor/2026/10/15/kups-kuopio-trabzonspor-maci) — Takvim Spor · 2026-10-15T11:19:53+03:00 · turnuva=ECL · kulüp=Trabzonspor
-- [Yazarlardan Kartal'a sert eleştiriler: "Dümendeki pısırık adam"](https://www.takvim.com.tr/spor/fenerbahce/2026/10/15/spor-yazarlari-aston-villa-fenerbahce-macini-yorumladi) — Takvim Spor · 2026-10-15T10:25:33+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Trabzonspor'un transfer gündemine gelmişti! Şampiyonlar Ligi'nde hat-trick yaptı - Haber61](https://news.google.com/rss/articles/CBMivwFBVV95cUxPUmdsVEM3Z3IzcjgyczNEU2dNcG9HSUdLcEVyQm16X0dHY3I3eUZveDRhZE1LQ3JkajFlUC1BTWxJWWRWVXdOVEFxMUVVTmJkTmdZZTVyQzU0OG5iNTNKTlY4T2dlXzFRdGN0OEFDaTZIZXFpY0hFQjBubXA2VGRpZ0RTakVScHJweEIyeU1DSFhjZ2EzeEw3dUYxdV9PRzY5UW9KT1BRWldyUF9MVXNNUWppZmxIdXBOM3k0elRYbw?oc=5) — Haber61 · 2026-10-15T08:21:11+00:00 · turnuva=CL · kulüp=Trabzonspor
 - [Miguel Cardoso ve Elisha Owusu ile resmî sözleşme imzaladık.](https://erzurumsporfk.org/2026/08/19/miguel-cardoso-ve-elisha-owusu-ile-resmi-sozlesme-imzaladik/) — Erzurumspor FK Resmi Web · 2026-08-19T20:45:50+03:00 · turnuva=EL · kulüp=Kayserispor
