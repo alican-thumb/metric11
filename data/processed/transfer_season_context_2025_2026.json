@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-18T15:49:45.465092+00:00",
+  "generated_at": "2026-10-18T17:22:49.602917+00:00",
   "season": "2025_2026",
   "summary": {
     "free_agents_count": 94,
     "final_year_count": 337,
-    "transfer_signals_count": 17,
+    "transfer_signals_count": 15,
     "transfer_status_counts": {
       "OFFICIAL": 0,
       "CORROBORATED": 0,
-      "RUMOR": 2,
-      "REVIEW_REQUIRED": 15
+      "RUMOR": 1,
+      "REVIEW_REQUIRED": 14
     },
-    "promotion_events_count": 0,
+    "promotion_events_count": 1,
     "free_agent_total_market_value_eur": 180425000
   },
   "free_agents_top20": [
@@ -501,41 +501,82 @@
       "model_use": false
     },
     {
-      "player_name": "Darıca'nın Genç Yeteneği Salih Yavuz",
-      "from_club": null,
-      "to_club": "Kocaelispor",
-      "signal_type": "official_transfer",
+      "player_name": null,
+      "from_club": "Beşiktaş",
+      "to_club": "Fenerbahçe",
+      "signal_type": "interest",
       "window": "summer_2026",
       "confidence": "LOW",
-      "direction_quality": "HEADLINE_EXPLICIT_DIRECTION",
-      "article_id": "a66cc513fec1",
-      "title": "Darıca'nın Genç Yeteneği Salih Yavuz, Kocaelispor'a Transfer Oldu! - Gebze Gazetesi",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNbVZlYTdMTnlJbmNCNDEwdndqYlUxZXZ6Y1JPZUVXSC1mS3ltLUpTYk9nMUlBdmp0eEtYV3NkTGVEQlJycFRCRU5MZXlRekcxWms1M2VDV3RkckJVYWJJM2MxM09IbTNpRDQ3X0JudkRRc3FKdzZUTmlCbVVmc3NTZmxRdzZJVS1ydDVQMmRGZE5PZnRKZVpJTjB1aXBpMlVDRFJ3RW5naHh4QUVUeVE?oc=5",
-      "source": "Gebze Gazetesi",
-      "source_type": "google_news",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "890d9aad40f0",
+      "title": "Beşiktaş ve Fenerbahçe'nin transfer savaşı! İki dev genç yıldıza imza attırmanın peşinde",
+      "link": "https://www.takvim.com.tr/spor/2026/10/18/besiktas-ve-fenerbahce-nagida-transferinde-karsi-karsiya",
+      "source": "Takvim Spor",
+      "source_type": "rss",
       "account_type": null,
-      "query": "Kocaelispor transfer",
+      "query": null,
       "source_tier": "MEDIA",
-      "published_at": "2026-10-16T14:42:41+00:00",
+      "published_at": "2026-10-18T17:38:50+03:00",
       "first_observed_at": null,
       "summary_tr": "",
-      "entity_confidence": "MEDIUM",
-      "verification_status": "RUMOR",
-      "interpretation": "Tek kaynaklı transfer iddiası; yalnız transfer radarında izlenir.",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
       "source_count": 1,
       "sources": [
-        "Gebze Gazetesi"
+        "Takvim Spor"
       ],
       "evidence": [
         {
-          "source": "Gebze Gazetesi",
+          "source": "Takvim Spor",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Beşiktaş ve Fenerbahçe'nin transfer savaşı! İki dev genç yıldıza imza attırmanın peşinde",
+          "link": "https://www.takvim.com.tr/spor/2026/10/18/besiktas-ve-fenerbahce-nagida-transferinde-karsi-karsiya",
+          "published_at": "2026-10-18T17:38:50+03:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": null,
+      "from_club": "Beşiktaş",
+      "to_club": "Fenerbahçe",
+      "signal_type": "interest",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "f59c1a838138",
+      "title": "Fenerbahçe ve Beşiktaş transferde karşı karşıya! İlk teklife ret Avrupalılar da peşinde - Takvim",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPTGltWEl4NmE4MDRDWXhsYm5hWms3NUpYMXF1OUFFREc3Z0s2TUx6aDVlQXN3cXVib1JvQVFDaVNiNmVGWHlWOURoMkQwS2ZYbnAwUWdkVTRfa0d5ZnhaXzBXZlJ0RWo2NFA5c2NxLXVmdDhtYXZJdHp4WW1ndm52aWpRb01ENHdhcXpTNnBfX1cydXdXdHZLTnlFRVQtLWc?oc=5",
+      "source": "Takvim",
+      "source_type": "google_news",
+      "account_type": null,
+      "query": "Beşiktaş transfer",
+      "source_tier": "MEDIA",
+      "published_at": "2026-10-18T14:38:50+00:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Takvim"
+      ],
+      "evidence": [
+        {
+          "source": "Takvim",
           "source_tier": "MEDIA",
           "source_type": "google_news",
           "account_type": null,
-          "query": "Kocaelispor transfer",
-          "title": "Darıca'nın Genç Yeteneği Salih Yavuz, Kocaelispor'a Transfer Oldu! - Gebze Gazetesi",
-          "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNbVZlYTdMTnlJbmNCNDEwdndqYlUxZXZ6Y1JPZUVXSC1mS3ltLUpTYk9nMUlBdmp0eEtYV3NkTGVEQlJycFRCRU5MZXlRekcxWms1M2VDV3RkckJVYWJJM2MxM09IbTNpRDQ3X0JudkRRc3FKdzZUTmlCbVVmc3NTZmxRdzZJVS1ydDVQMmRGZE5PZnRKZVpJTjB1aXBpMlVDRFJ3RW5naHh4QUVUeVE?oc=5",
-          "published_at": "2026-10-16T14:42:41+00:00",
+          "query": "Beşiktaş transfer",
+          "title": "Fenerbahçe ve Beşiktaş transferde karşı karşıya! İlk teklife ret Avrupalılar da peşinde - Takvim",
+          "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPTGltWEl4NmE4MDRDWXhsYm5hWms3NUpYMXF1OUFFREc3Z0s2TUx6aDVlQXN3cXVib1JvQVFDaVNiNmVGWHlWOURoMkQwS2ZYbnAwUWdkVTRfa0d5ZnhaXzBXZlJ0RWo2NFA5c2NxLXVmdDhtYXZJdHp4WW1ndm52aWpRb01ENHdhcXpTNnBfX1cydXdXdHZLTnlFRVQtLWc?oc=5",
+          "published_at": "2026-10-18T14:38:50+00:00",
           "first_observed_at": null
         }
       ],
@@ -631,37 +672,25 @@
       "window": "summer_2026",
       "confidence": "LOW",
       "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "851291f95fbe",
+      "article_id": "f3ced050dcae",
       "title": "Beşiktaş ile Trabzonspor, 144. kez karşılaşacak",
-      "link": "https://www.sabah.com.tr/spor/futbol/2026/10/18/besiktas-ile-trabzonspor-144-kez-karsilasacak",
-      "source": "Sabah Spor",
+      "link": "https://www.aa.com.tr/tr/spor/besiktas-ile-trabzonspor-144-kez-karsilasacak/4092433",
+      "source": "Anadolu Ajansı Spor",
       "source_type": "rss",
       "account_type": null,
       "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-10-18T11:13:33+03:00",
+      "source_tier": "AGENCY",
+      "published_at": "2026-10-18T11:04:21+03:00",
       "first_observed_at": null,
       "summary_tr": "",
       "entity_confidence": "LOW",
       "verification_status": "REVIEW_REQUIRED",
       "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 2,
+      "source_count": 1,
       "sources": [
-        "Sabah Spor",
         "Anadolu Ajansı Spor"
       ],
       "evidence": [
-        {
-          "source": "Sabah Spor",
-          "source_tier": "MEDIA",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "Beşiktaş ile Trabzonspor, 144. kez karşılaşacak",
-          "link": "https://www.sabah.com.tr/spor/futbol/2026/10/18/besiktas-ile-trabzonspor-144-kez-karsilasacak",
-          "published_at": "2026-10-18T11:13:33+03:00",
-          "first_observed_at": null
-        },
         {
           "source": "Anadolu Ajansı Spor",
           "source_tier": "AGENCY",
@@ -714,47 +743,6 @@
           "title": "İşte Marco Asensio'nun stadyumdan ayrılış anı!",
           "link": "https://www.fotomac.com.tr/video-haber/videoizle/marco-asensio-stadyumdan-boyle-ayrildi",
           "published_at": "2026-10-18T01:01:40+03:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": null,
-      "to_club": "Galatasaray",
-      "signal_type": "transfer_fee",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "a572b94a3ad2",
-      "title": "Galatasaray'dan 70 milyon euro'luk dev hamle!",
-      "link": "https://www.fotomac.com.tr/galatasaray/2026/10/17/galatasaraydan-70-milyon-euroluk-dev-hamle",
-      "source": "Fotomaç",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-10-18T01:01:12+03:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Fotomaç"
-      ],
-      "evidence": [
-        {
-          "source": "Fotomaç",
-          "source_tier": "MEDIA",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "Galatasaray'dan 70 milyon euro'luk dev hamle!",
-          "link": "https://www.fotomac.com.tr/galatasaray/2026/10/17/galatasaraydan-70-milyon-euroluk-dev-hamle",
-          "published_at": "2026-10-18T01:01:12+03:00",
           "first_observed_at": null
         }
       ],
@@ -815,7 +803,7 @@
       "source": "Takvim",
       "source_type": "google_news",
       "account_type": null,
-      "query": "Trabzonspor transfer",
+      "query": "Galatasaray transfer",
       "source_tier": "MEDIA",
       "published_at": "2026-10-17T17:22:20+00:00",
       "first_observed_at": null,
@@ -833,7 +821,7 @@
           "source_tier": "MEDIA",
           "source_type": "google_news",
           "account_type": null,
-          "query": "Trabzonspor transfer",
+          "query": "Galatasaray transfer",
           "title": "Galatasaray’dan hücuma dünyaca ünlü yıldız transferi! Bonservis görüşmeleri başladı - Takvim",
           "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNaURuOERwY2dVVnpWcUNXeEExNzNQUW9IMlExWldSTVl4anJFclFWeUpDZTFHMjZVME1mSml6MWEzcGN6ei02c1NGSHhGTDdwZU5ZYVQ4Sk1NekpMN1Z4Mm1IaTdzNlpxNUZ5WG5JSzF1alhqV2Z0ZU9lZjFfNXlQZDVPNnE5MWtncXFpUGtZSkRtNWlBTVlBcHRWOTY3TnZCZDF5RnZUUnF5SVBjWHFiZGtYSQ?oc=5",
           "published_at": "2026-10-17T17:22:20+00:00",
@@ -880,49 +868,6 @@
           "title": "Trabzonspor’un Muhammed Salah'ın Transferi Farkını Ortaya Koydu; Teklif Üstüne Teklif Geldi - Taka Gazete",
           "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPczI0b2d5LUFjTkowWVVWamhLME1zSmVUNnBlb0lLVmtXUEhHRG5jUXhnSnNJLUtyQTNobXFPNEYwSzBPTHp6UnJEN3huQzE3MGFvMVh1UWp6blNybzdWZW9UcjF5b1VRa1ZUb2pmYVJ2bVlUdmd6RGZQZVM2UkJSZjFZb3lXVGYyWjhVckhqYlNFcUFzUExZTVR0UTNYTGhXVGJtcUNzMHQxRGhKYnlzVmlNVUZkdWMxWVE?oc=5",
           "published_at": "2026-10-17T10:51:00+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": "KAAN AYHAN",
-      "from_club": "GALATASARAY A.Ş.",
-      "to_club": null,
-      "transfer_type": "permanent",
-      "window": "summer_2026",
-      "signal_type": "transfer_fee",
-      "confidence": "LOW",
-      "tm_market_value_eur": 1000000,
-      "direction_quality": "TARGET_UNRESOLVED",
-      "article_id": "587d64666b15",
-      "title": "Galatasaray'da Kaan Ayhan'dan yönetime ayrılık mesajı! \"Bonservisimi verin gitmek istiyorum\" - A Spor",
-      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPMUdJUEktaHlRQ2FOQkZSU1hkWHJyYW9ES3BtRUlRWmhrMXF0U2Q3bVYtV1IyZGJIR25CdFhOYUYzN3BtM3Q3OEpDdktuNUk2QTVZRTlTTFp3ZExCWllVcXdjWWVGY1lGenhJMkQ0ajB1U3Z2ay1PMk9WWkdsRmhSZFk3TXVMUzZUcHJOSWF5OVhGUUZibUtsNTJ3dnhKUmF5R1I2SWxuZzNvVmtRZVRyVGFJRlp6LUZxSVBrS2dnMGNUSGFnTm00NURPd0psVnB1QXlrUNIB2gFBVV95cUxQenlFUzY0WDhDZkxEQTdMa2dvOXRqdnFrOWRORTlJcHR4UFdUQzUtZE5yVWFqNXdnS1kzVFFfa21UaGRELVlaZThsTkZ5NWw4Tmk2aERMaEVzbHl0QjhvanJtMHNMT2loR2hVOUcza0cyaE16TlBZbWRqcmtyMk8xdkZZemJiVWF5Y29xb05EelVsTzhoS1FNZHNUUDZ5QmVUOVFJV3o3N0FGQktnT181R0U3ZWVPU2NtV0JhR3h6TDN2VUpKNmNRSEh4akVCZVJVTnh3QkVxMjZYdw?oc=5",
-      "source": "A Spor",
-      "source_type": "google_news",
-      "account_type": null,
-      "query": "Galatasaray transfer",
-      "source_tier": "MEDIA",
-      "published_at": "2026-10-17T08:54:36+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "HIGH",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "A Spor"
-      ],
-      "evidence": [
-        {
-          "source": "A Spor",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Galatasaray transfer",
-          "title": "Galatasaray'da Kaan Ayhan'dan yönetime ayrılık mesajı! \"Bonservisimi verin gitmek istiyorum\" - A Spor",
-          "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPMUdJUEktaHlRQ2FOQkZSU1hkWHJyYW9ES3BtRUlRWmhrMXF0U2Q3bVYtV1IyZGJIR25CdFhOYUYzN3BtM3Q3OEpDdktuNUk2QTVZRTlTTFp3ZExCWllVcXdjWWVGY1lGenhJMkQ0ajB1U3Z2ay1PMk9WWkdsRmhSZFk3TXVMUzZUcHJOSWF5OVhGUUZibUtsNTJ3dnhKUmF5R1I2SWxuZzNvVmtRZVRyVGFJRlp6LUZxSVBrS2dnMGNUSGFnTm00NURPd0psVnB1QXlrUNIB2gFBVV95cUxQenlFUzY0WDhDZkxEQTdMa2dvOXRqdnFrOWRORTlJcHR4UFdUQzUtZE5yVWFqNXdnS1kzVFFfa21UaGRELVlaZThsTkZ5NWw4Tmk2aERMaEVzbHl0QjhvanJtMHNMT2loR2hVOUcza0cyaE16TlBZbWRqcmtyMk8xdkZZemJiVWF5Y29xb05EelVsTzhoS1FNZHNUUDZ5QmVUOVFJV3o3N0FGQktnT181R0U3ZWVPU2NtV0JhR3h6TDN2VUpKNmNRSEh4akVCZVJVTnh3QkVxMjZYdw?oc=5",
-          "published_at": "2026-10-17T08:54:36+00:00",
           "first_observed_at": null
         }
       ],
@@ -1007,47 +952,6 @@
           "title": "Fenerbahçe istemişti 2. Greenwood projesi olacak! Transfer için ilk teklif",
           "link": "https://www.takvim.com.tr/spor/fenerbahce/2026/10/15/fenerbahcenin-istedigi-jadon-sanchoya-getafe-talip",
           "published_at": "2026-10-15T19:11:46+03:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": "Galatasaray",
-      "to_club": "Fenerbahçe",
-      "signal_type": "departure",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "f9c67f7b4876",
-      "title": "Şampiyonlar Ligi puan durumu! Fenerbahçe ve Galatasaray kaçıncı?",
-      "link": "https://www.takvim.com.tr/galeri/spor/fenerbahce-ve-galatasaray-kacinci-sampiyonlar-ligi-puan-durumu",
-      "source": "Takvim Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-10-15T00:36:12+03:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Takvim Spor"
-      ],
-      "evidence": [
-        {
-          "source": "Takvim Spor",
-          "source_tier": "MEDIA",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "Şampiyonlar Ligi puan durumu! Fenerbahçe ve Galatasaray kaçıncı?",
-          "link": "https://www.takvim.com.tr/galeri/spor/fenerbahce-ve-galatasaray-kacinci-sampiyonlar-ligi-puan-durumu",
-          "published_at": "2026-10-15T00:36:12+03:00",
           "first_observed_at": null
         }
       ],

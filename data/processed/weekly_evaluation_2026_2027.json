@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-10-18T15:49:48.605129",
+  "generated_at": "2026-10-18T17:22:46.746246",
   "season": "2026-2027",
   "summary": {
-    "evaluated_matches": 68,
-    "correct": 32,
-    "accuracy": 0.4706,
+    "evaluated_matches": 69,
+    "correct": 33,
+    "accuracy": 0.4783,
     "actual_draws": 14,
     "draws_caught": 2,
     "draw_recall": 0.1429,
-    "high_conf_matches": 27,
-    "high_conf_correct": 16,
-    "high_conf_accuracy": 0.5926,
-    "brier_score": 0.6212,
-    "log_loss": 1.0294,
+    "high_conf_matches": 28,
+    "high_conf_correct": 17,
+    "high_conf_accuracy": 0.6071,
+    "brier_score": 0.6162,
+    "log_loss": 1.0225,
     "confidence_breakdown": {
       "HIGH": {
-        "matches": 27,
-        "correct": 16,
-        "accuracy": 0.5926,
-        "avg_stated_probability": 0.5914,
-        "calibration_gap": 0.0012,
-        "brier_score": 0.54,
-        "log_loss": 0.9163
+        "matches": 28,
+        "correct": 17,
+        "accuracy": 0.6071,
+        "avg_stated_probability": 0.5907,
+        "calibration_gap": 0.0164,
+        "brier_score": 0.5306,
+        "log_loss": 0.9035
       },
       "MEDIUM": {
         "matches": 25,
@@ -44,11 +44,11 @@
     },
     "pick_side_breakdown": {
       "home": {
-        "matches": 40,
-        "correct": 21,
-        "accuracy": 0.525,
+        "matches": 41,
+        "correct": 22,
+        "accuracy": 0.5366,
         "actual": {
-          "home": 21,
+          "home": 22,
           "draw": 7,
           "away": 12
         }
@@ -79,26 +79,26 @@
   "last_week": {
     "week": 8,
     "summary": {
-      "evaluated_matches": 5,
-      "correct": 5,
+      "evaluated_matches": 6,
+      "correct": 6,
       "accuracy": 1.0,
       "actual_draws": 0,
       "draws_caught": 0,
       "draw_recall": null,
-      "high_conf_matches": 3,
-      "high_conf_correct": 3,
+      "high_conf_matches": 4,
+      "high_conf_correct": 4,
       "high_conf_accuracy": 1.0,
-      "brier_score": 0.2934,
-      "log_loss": 0.5775,
+      "brier_score": 0.2905,
+      "log_loss": 0.5743,
       "confidence_breakdown": {
         "HIGH": {
-          "matches": 3,
-          "correct": 3,
+          "matches": 4,
+          "correct": 4,
           "accuracy": 1.0,
-          "avg_stated_probability": 0.6347,
-          "calibration_gap": 0.3653,
-          "brier_score": 0.2067,
-          "log_loss": 0.4576
+          "avg_stated_probability": 0.619,
+          "calibration_gap": 0.381,
+          "brier_score": 0.224,
+          "log_loss": 0.4828
         },
         "MEDIUM": {
           "matches": 2,
@@ -121,11 +121,11 @@
       },
       "pick_side_breakdown": {
         "home": {
-          "matches": 4,
-          "correct": 4,
+          "matches": 5,
+          "correct": 5,
           "accuracy": 1.0,
           "actual": {
-            "home": 4,
+            "home": 5,
             "draw": 0,
             "away": 0
           }
@@ -232,6 +232,22 @@
         "home_win_probability": 0.616,
         "draw_probability": 0.224,
         "away_win_probability": 0.16
+      },
+      {
+        "match_id": "317848",
+        "date_time": "18.10.2026 13:30",
+        "home_team": "KASIMPAŞA A.Ş.",
+        "away_team": "SAMSUNSPOR A.Ş.",
+        "actual_score": "4 - 1",
+        "actual": "home",
+        "predicted": "home",
+        "raw_predicted": "home",
+        "correct": true,
+        "data_confidence": "PLAYED",
+        "prediction_confidence": "HIGH",
+        "home_win_probability": 0.572,
+        "draw_probability": 0.236,
+        "away_win_probability": 0.192
       }
     ]
   },
@@ -1800,26 +1816,26 @@
     {
       "week": 8,
       "summary": {
-        "evaluated_matches": 5,
-        "correct": 5,
+        "evaluated_matches": 6,
+        "correct": 6,
         "accuracy": 1.0,
         "actual_draws": 0,
         "draws_caught": 0,
         "draw_recall": null,
-        "high_conf_matches": 3,
-        "high_conf_correct": 3,
+        "high_conf_matches": 4,
+        "high_conf_correct": 4,
         "high_conf_accuracy": 1.0,
-        "brier_score": 0.2934,
-        "log_loss": 0.5775,
+        "brier_score": 0.2905,
+        "log_loss": 0.5743,
         "confidence_breakdown": {
           "HIGH": {
-            "matches": 3,
-            "correct": 3,
+            "matches": 4,
+            "correct": 4,
             "accuracy": 1.0,
-            "avg_stated_probability": 0.6347,
-            "calibration_gap": 0.3653,
-            "brier_score": 0.2067,
-            "log_loss": 0.4576
+            "avg_stated_probability": 0.619,
+            "calibration_gap": 0.381,
+            "brier_score": 0.224,
+            "log_loss": 0.4828
           },
           "MEDIUM": {
             "matches": 2,
@@ -1842,11 +1858,11 @@
         },
         "pick_side_breakdown": {
           "home": {
-            "matches": 4,
-            "correct": 4,
+            "matches": 5,
+            "correct": 5,
             "accuracy": 1.0,
             "actual": {
-              "home": 4,
+              "home": 5,
               "draw": 0,
               "away": 0
             }
@@ -1953,6 +1969,22 @@
           "home_win_probability": 0.616,
           "draw_probability": 0.224,
           "away_win_probability": 0.16
+        },
+        {
+          "match_id": "317848",
+          "date_time": "18.10.2026 13:30",
+          "home_team": "KASIMPAŞA A.Ş.",
+          "away_team": "SAMSUNSPOR A.Ş.",
+          "actual_score": "4 - 1",
+          "actual": "home",
+          "predicted": "home",
+          "raw_predicted": "home",
+          "correct": true,
+          "data_confidence": "PLAYED",
+          "prediction_confidence": "HIGH",
+          "home_win_probability": 0.572,
+          "draw_probability": 0.236,
+          "away_win_probability": 0.192
         }
       ]
     }
