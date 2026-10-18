@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-17T15:59:59.862926+00:00",
+  "generated_at": "2026-10-18T08:47:13.684303+00:00",
   "source_count": 2,
-  "ok_count": 2,
+  "ok_count": 1,
   "sources": [
     {
       "name": "beIN SPORTS sakat ve cezalı listesi",
@@ -49,11 +49,11 @@
       "url": "https://www.footballtoday.net/turkey/super-lig/injured-and-suspended",
       "category": "injury_suspension_reference",
       "risk": "MEDIUM",
-      "ok": true,
-      "status_code": 200,
-      "raw_path": "/home/runner/work/metric11/metric11/data/raw/news_context/FootballToday_S_per_Lig_injuries_and_suspensions_www_footballtoday_net.html",
+      "ok": false,
+      "status_code": 429,
+      "raw_path": null,
       "signals": [],
-      "error": null
+      "error": "429 Client Error: Too Many Requests for url: https://www.footballtoday.net/turkey/super-lig/injured-and-suspended"
     }
   ],
   "team_unavailability": [
@@ -124,7 +124,9 @@
   ],
   "summary": {
     "signals": 3,
-    "injury_suspension_sources_ok": 2,
-    "errors": []
+    "injury_suspension_sources_ok": 1,
+    "errors": [
+      "FootballToday Süper Lig injuries and suspensions"
+    ]
   }
 }

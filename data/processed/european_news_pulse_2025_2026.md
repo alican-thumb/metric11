@@ -1,15 +1,22 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-10-18T07:15:12.898791+00:00
-Toplam ilgili haber: 26
+Üretim zamanı: 2026-10-18T08:50:53.708191+00:00
+Toplam ilgili haber: 33
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [Tomas Necid'den Fenerbahçe sözleri! "Sahasında çok güçlü bir takım"](https://www.aksam.com.tr/spor/tomas-necidden-fenerbahce-sozleri-sahasinda-cok-guclu-bir-takim/haber-1707138) — Aksam Spor · 2026-10-18T11:35:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe-Slavia Prag maçında İspanyol hakem Ricardo de Burgos düdük çalacak](https://www.aa.com.tr/tr/spor/fenerbahce-slavia-prag-macinda-ispanyol-hakem-ricardo-de-burgos-duduk-calacak/4092460) — Anadolu Ajansı Spor · 2026-10-18T11:31:31+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe-Slavia Prag maçının hakemi belli oldu!](https://www.sabah.com.tr/spor/futbol/2026/10/18/fenerbahce-slavia-prag-macinin-hakemi-belli-oldu) — Sabah Spor · 2026-10-18T11:30:23+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe-Slavia Prag maçına İspanyol hakem!](https://www.fotomac.com.tr/fenerbahce/2026/10/18/fenerbahce-slavia-prag-macina-ispanyol-hakem) — Fotomaç · 2026-10-18T11:19:56+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe - Slavia Prag maçının hakemi belli oldu!](https://www.hurriyet.com.tr/sporarena/fenerbahce-slavia-prag-macinin-hakemi-belli-oldu-43345983) — Hürriyet Spor · 2026-10-18T08:31:17+00:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Galatasaray'dan 70 milyon euro'luk dev hamle!](https://www.fotomac.com.tr/galatasaray/2026/10/17/galatasaraydan-70-milyon-euroluk-dev-hamle) — Fotomaç · 2026-10-18T01:01:12+03:00 · turnuva=— · kulüp=Galatasaray
+- [Aston Villa'dan Fenerbahçeli yıldıza kanca! Oynadığı futboldan sonra...](https://www.fotomac.com.tr/fenerbahce/2026/10/17/aston-villadan-fenerbahceli-yildiza-kanca-oynadigi-futboldan-sonra) — Fotomaç · 2026-10-18T01:00:30+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Galatasaray'a 2 metrelik dev golcü: Pape Moussa Fall!](https://www.fotomac.com.tr/galatasaray/2026/10/16/galatasaraya-2-metrelik-dev-golcu-pape-moussa-fall) — Fotomaç · 2026-10-18T01:00:16+03:00 · turnuva=CL · kulüp=Galatasaray
 - [G.Saray'ın rakibi Lille berabere kaldı!](https://www.haberturk.com/spor/lille-brest-mac-sonucu-iste-lille-brest-maci-ozeti-ve-golleri-fransa-ligue-1-3920558) — Haberturk Spor · 2026-10-17T20:49:47+00:00 · turnuva=CL · kulüp=Galatasaray
 - [Trabzonspor'un yıldızı Beşiktaş derbisini kaçırabilir! Yerine oynayacak isim netleşti](https://www.takvim.com.tr/spor/trabzonspor/2026/10/17/trabzonsporda-onuachu-tehlikesi-besiktas-derbisi-zora-girdi) — Takvim Spor · 2026-10-17T17:10:40+03:00 · turnuva=ECL · kulüp=Beşiktaş, Trabzonspor
 - [Avrupa kupalarında çılgın gelir! İşte en çok kazanan 30 kulüp](https://www.takvim.com.tr/spor/2026/10/17/avrupa-kupalarinda-milyonlar-dagitiliyor-iste-gelir-liderleri) — Takvim Spor · 2026-10-17T15:47:02+03:00 · turnuva=CL · kulüp=—
-- ["Hafta içi yorgunluğu maça yansıdı"](https://www.haberturk.com/spor/ugurcan-cakir-hafta-ici-yorgunlugu-maca-yansidi-3920508) — Haberturk Spor · 2026-10-17T15:44:13+00:00 · turnuva=— · kulüp=Galatasaray, Gençlerbirliği
 - [Trabzonspor’da Mohamed Salah imzası: Avrupa’da ilk golüyle Haaland’ı yakaladı](https://www.cnnturk.com/spor/futbol/trabzonsporda-mohamed-salah-imzasi-avrupada-ilk-goluyle-haalandi-yakaladi-3480647) — CNN Türk Spor · 2026-10-17T09:17:16+00:00 · turnuva=ECL · kulüp=Trabzonspor
 - [UEFA kulüpler sıralaması güncellendi! İlk 30'da tek Türk takımı var - Fotomaç](https://news.google.com/rss/articles/CBMirwFBVV95cUxPd2hXV19rUWhIbnZ2SllYRzgtSnhnUTBoX0F4OFM0cHJSSUVWVTNHQzBmVVBQRmlQem5wRnAzdk53ZzB4QkpvM1BsbUt5ZzdfRDBydUJGTUN5NEhMLXJMU2N3TmdsMkJrR1JjdE11QjRiUHZRakE2UUwxR1BRX2gtMUY3N0JVN0VXNE1WbWMzUFRMam5HR0N2a3g0UzRwVzBDb2RwMmVpVHNsSGZ0QTBj0gG0AUFVX3lxTFBSTElYZU9hRURVTnJYWTE0cWNTVlJMTUhIdENhdDJLMlFBQ1FnWENqTWpTamtmT1R4RXBNb3FxOXVzLVBmSVFvVWRHSWhsVHdLWWt5N3VJUGpEQ1lpRHBrY0Q3bjM5T0IzZXBQeF9Jb1RQOVhfMDZ2WFgyWnZTc05qbjBnXzVHMHJYUzVBRzQwVGNNQTdWYUhrRzA1bXd4eld3bHBVeDdwT2tjZVZ0RWQwa3gwbg?oc=5) — Fotomaç · 2026-10-16T13:23:34+00:00 · turnuva=— · kulüp=—
 - [Fenerbahçe'de Marco Asensio krizi iddiası: Aston Villa maçı öncesi rest çekti! İşte yaşananlar](https://www.takvim.com.tr/spor/fenerbahce/2026/10/16/fenerbahcede-marco-asensiodan-ismail-kartala-rest) — Takvim Spor · 2026-10-16T12:22:46+03:00 · turnuva=CL · kulüp=Fenerbahçe

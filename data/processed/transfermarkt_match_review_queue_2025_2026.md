@@ -1,13 +1,13 @@
 # Transfermarkt Oyuncu Eşleşme İnceleme Kuyruğu
 
-- TFF profil: 877
+- TFF profil: 878
 - Transfermarkt snapshot: 18/18 kulüp, 817 oyuncu
-- Snapshot kapsamındaki TFF profil: 587
-- Doğrulanmış snapshot eşleşmesi: 616
+- Snapshot kapsamındaki TFF profil: 588
+- Doğrulanmış snapshot eşleşmesi: 617
 - Manuel eşleme ile kullanılan profil: 4
 - Ağ teyidi bekleyen manuel eşleme: 4
 - Çözülmemiş profil: 257
-- Doğrulanmış genel eşleşme oranı: %70.2
+- Doğrulanmış genel eşleşme oranı: %70.3
 - Doğrulanmış snapshot içi eşleşme oranı: %92.7
 - Manuel eşleme dahil kullanılabilir snapshot içi kapsama: %93.4
 - Scout incelemesini bloke eden eşleşmeyen oyuncu: 0
@@ -30,7 +30,7 @@
 | Takım | TFF Profil | TM Kadro | Doğrulanmış | Manuel | Açık | Doğrulanmış Oran | Kullanılabilir Oran |
 |---|---:|---:|---:|---:|---:|---:|---:|
 | BEŞİKTAŞ A.Ş. | 47 | 50 | 43 | 2 | 2 | %91.5 | %95.7 |
-| CORENDON ALANYASPOR | 33 | 37 | 30 | 0 | 3 | %90.9 | %90.9 |
+| CORENDON ALANYASPOR | 34 | 37 | 31 | 0 | 3 | %91.2 | %91.2 |
 | FENERBAHÇE A.Ş. | 44 | 50 | 37 | 0 | 7 | %84.1 | %84.1 |
 | GALATASARAY A.Ş. | 42 | 44 | 41 | 0 | 1 | %97.6 | %97.6 |
 | GAZİANTEP FUTBOL KULÜBÜ A.Ş. | 41 | 45 | 38 | 0 | 3 | %92.7 | %92.7 |
