@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T17:01:33.468850",
+  "generated_at": "2026-10-19T22:21:52.777451",
   "season": "2026-2027",
   "source_note": "Tahminler 2025-26 sezonunun tamamı ve 2026-27'de şimdiye kadar oynanmış (71 maç) sonuçlardan türetilen güncel takım formu/Elo/transfer durumuna dayanır; sezon ilerledikçe bu sayfa her gün otomatik olarak yeniden hesaplanır, statik bir anlık görüntü değildir.",
   "total_weeks": 34,
@@ -35745,6 +35745,180 @@
           "referee_goals_per_match": null
         },
         {
+          "match_id": "317950",
+          "date_time": "31.01.2027",
+          "home_team": "GENÇLERBİRLİĞİ",
+          "away_team": "GÖZTEPE A.Ş.",
+          "is_played": false,
+          "actual_score": null,
+          "data_confidence": "MEDIUM",
+          "raw_predicted": "away",
+          "predicted": "away",
+          "expected_home_goals": 1.31,
+          "expected_away_goals": 1.58,
+          "top_scorelines": [
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.115
+            },
+            {
+              "score": "1-2",
+              "home_goals": 1,
+              "away_goals": 2,
+              "probability": 0.091
+            },
+            {
+              "score": "0-1",
+              "home_goals": 0,
+              "away_goals": 1,
+              "probability": 0.088
+            },
+            {
+              "score": "2-1",
+              "home_goals": 2,
+              "away_goals": 1,
+              "probability": 0.075
+            },
+            {
+              "score": "1-0",
+              "home_goals": 1,
+              "away_goals": 0,
+              "probability": 0.073
+            }
+          ],
+          "recommended_scoreline": {
+            "score": "1-2",
+            "home_goals": 1,
+            "away_goals": 2,
+            "probability": 0.091
+          },
+          "home_win_probability": 0.33,
+          "draw_probability": 0.215,
+          "away_win_probability": 0.455,
+          "head_to_head": {
+            "available": true,
+            "matches": 12,
+            "draw_rate": 0.083,
+            "last_meeting_date": "2026-04-04T11:30:00+00:00"
+          },
+          "transfer_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0
+            },
+            "away": {
+              "available": true,
+              "edge": -0.15,
+              "news_signal": null,
+              "squad_signal": {
+                "available": true,
+                "edge": -0.15,
+                "net_value_eur": -25950000,
+                "arrivals_value_eur": 12400000,
+                "departures_value_eur": 38350000,
+                "top_arrivals": [
+                  {
+                    "player": "ANDRE HENRIQUE",
+                    "market_value_eur": 3000000
+                  },
+                  {
+                    "player": "SINCLAIR ARMSTRONG",
+                    "market_value_eur": 2500000
+                  },
+                  {
+                    "player": "ALEX MATOS",
+                    "market_value_eur": 1500000
+                  },
+                  {
+                    "player": "RICHARD AKONNOR",
+                    "market_value_eur": 1500000
+                  },
+                  {
+                    "player": "BEKIR TURAC BOKE",
+                    "market_value_eur": 1000000
+                  }
+                ],
+                "top_departures": [
+                  {
+                    "player": "ANTHONY DENNIS",
+                    "market_value_eur": 8000000
+                  },
+                  {
+                    "player": "EMERSONN",
+                    "market_value_eur": 8000000
+                  },
+                  {
+                    "player": "JUNIOR OLAITAN",
+                    "market_value_eur": 7000000
+                  },
+                  {
+                    "player": "AMIN CHERNI",
+                    "market_value_eur": 3500000
+                  },
+                  {
+                    "player": "FILIP KRASTEV",
+                    "market_value_eur": 3000000
+                  }
+                ],
+                "pending_arrivals": [
+                  {
+                    "player": "TINO ANJORIN",
+                    "market_value_eur": 4000000
+                  }
+                ]
+              }
+            }
+          },
+          "fixture_congestion": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "days_rest": null,
+              "opponent": null
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "days_rest": null,
+              "opponent": null
+            }
+          },
+          "european_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "match_count": 0
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "match_count": 0
+            }
+          },
+          "suspension_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0
+            }
+          },
+          "home_elo": 1451.4,
+          "away_elo": 1525.0,
+          "home_points_per_match": 1.12,
+          "away_points_per_match": 1.12,
+          "strength_edge": -0.12,
+          "home_xg_efficiency": null,
+          "away_xg_efficiency": null,
+          "referee_adj": 0.0,
+          "referee_cards_per_match": null,
+          "referee_goals_per_match": null
+        },
+        {
           "match_id": "317952",
           "date_time": "31.01.2027",
           "home_team": "TÜMOSAN KONYASPOR",
@@ -36229,180 +36403,6 @@
           "home_points_per_match": 2.38,
           "away_points_per_match": 1.38,
           "strength_edge": 0.387,
-          "home_xg_efficiency": null,
-          "away_xg_efficiency": null,
-          "referee_adj": 0.0,
-          "referee_cards_per_match": null,
-          "referee_goals_per_match": null
-        },
-        {
-          "match_id": "317950",
-          "date_time": "31.01.2027",
-          "home_team": "GENÇLERBİRLİĞİ",
-          "away_team": "GÖZTEPE A.Ş.",
-          "is_played": false,
-          "actual_score": null,
-          "data_confidence": "MEDIUM",
-          "raw_predicted": "away",
-          "predicted": "away",
-          "expected_home_goals": 1.31,
-          "expected_away_goals": 1.58,
-          "top_scorelines": [
-            {
-              "score": "1-1",
-              "home_goals": 1,
-              "away_goals": 1,
-              "probability": 0.115
-            },
-            {
-              "score": "1-2",
-              "home_goals": 1,
-              "away_goals": 2,
-              "probability": 0.091
-            },
-            {
-              "score": "0-1",
-              "home_goals": 0,
-              "away_goals": 1,
-              "probability": 0.088
-            },
-            {
-              "score": "2-1",
-              "home_goals": 2,
-              "away_goals": 1,
-              "probability": 0.075
-            },
-            {
-              "score": "1-0",
-              "home_goals": 1,
-              "away_goals": 0,
-              "probability": 0.073
-            }
-          ],
-          "recommended_scoreline": {
-            "score": "1-2",
-            "home_goals": 1,
-            "away_goals": 2,
-            "probability": 0.091
-          },
-          "home_win_probability": 0.33,
-          "draw_probability": 0.215,
-          "away_win_probability": 0.455,
-          "head_to_head": {
-            "available": true,
-            "matches": 12,
-            "draw_rate": 0.083,
-            "last_meeting_date": "2026-04-04T11:30:00+00:00"
-          },
-          "transfer_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0
-            },
-            "away": {
-              "available": true,
-              "edge": -0.15,
-              "news_signal": null,
-              "squad_signal": {
-                "available": true,
-                "edge": -0.15,
-                "net_value_eur": -25950000,
-                "arrivals_value_eur": 12400000,
-                "departures_value_eur": 38350000,
-                "top_arrivals": [
-                  {
-                    "player": "ANDRE HENRIQUE",
-                    "market_value_eur": 3000000
-                  },
-                  {
-                    "player": "SINCLAIR ARMSTRONG",
-                    "market_value_eur": 2500000
-                  },
-                  {
-                    "player": "ALEX MATOS",
-                    "market_value_eur": 1500000
-                  },
-                  {
-                    "player": "RICHARD AKONNOR",
-                    "market_value_eur": 1500000
-                  },
-                  {
-                    "player": "BEKIR TURAC BOKE",
-                    "market_value_eur": 1000000
-                  }
-                ],
-                "top_departures": [
-                  {
-                    "player": "ANTHONY DENNIS",
-                    "market_value_eur": 8000000
-                  },
-                  {
-                    "player": "EMERSONN",
-                    "market_value_eur": 8000000
-                  },
-                  {
-                    "player": "JUNIOR OLAITAN",
-                    "market_value_eur": 7000000
-                  },
-                  {
-                    "player": "AMIN CHERNI",
-                    "market_value_eur": 3500000
-                  },
-                  {
-                    "player": "FILIP KRASTEV",
-                    "market_value_eur": 3000000
-                  }
-                ],
-                "pending_arrivals": [
-                  {
-                    "player": "TINO ANJORIN",
-                    "market_value_eur": 4000000
-                  }
-                ]
-              }
-            }
-          },
-          "fixture_congestion": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "days_rest": null,
-              "opponent": null
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "days_rest": null,
-              "opponent": null
-            }
-          },
-          "european_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "match_count": 0
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "match_count": 0
-            }
-          },
-          "suspension_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0
-            }
-          },
-          "home_elo": 1451.4,
-          "away_elo": 1525.0,
-          "home_points_per_match": 1.12,
-          "away_points_per_match": 1.12,
-          "strength_edge": -0.12,
           "home_xg_efficiency": null,
           "away_xg_efficiency": null,
           "referee_adj": 0.0,
@@ -38643,198 +38643,6 @@
       "week": 21,
       "matches": [
         {
-          "match_id": "317964",
-          "date_time": "14.02.2027",
-          "home_team": "GENÇLERBİRLİĞİ",
-          "away_team": "TRABZONSPOR A.Ş.",
-          "is_played": false,
-          "actual_score": null,
-          "data_confidence": "HIGH",
-          "raw_predicted": "away",
-          "predicted": "away",
-          "expected_home_goals": 0.93,
-          "expected_away_goals": 1.75,
-          "top_scorelines": [
-            {
-              "score": "0-1",
-              "home_goals": 0,
-              "away_goals": 1,
-              "probability": 0.12
-            },
-            {
-              "score": "1-1",
-              "home_goals": 1,
-              "away_goals": 1,
-              "probability": 0.112
-            },
-            {
-              "score": "0-2",
-              "home_goals": 0,
-              "away_goals": 2,
-              "probability": 0.105
-            },
-            {
-              "score": "1-2",
-              "home_goals": 1,
-              "away_goals": 2,
-              "probability": 0.098
-            },
-            {
-              "score": "0-0",
-              "home_goals": 0,
-              "away_goals": 0,
-              "probability": 0.069
-            }
-          ],
-          "recommended_scoreline": {
-            "score": "0-1",
-            "home_goals": 0,
-            "away_goals": 1,
-            "probability": 0.12
-          },
-          "home_win_probability": 0.194,
-          "draw_probability": 0.248,
-          "away_win_probability": 0.558,
-          "head_to_head": {
-            "available": true,
-            "matches": 21,
-            "draw_rate": 0.286,
-            "last_meeting_date": "2026-05-17T17:00:00+00:00"
-          },
-          "transfer_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0
-            },
-            "away": {
-              "available": true,
-              "edge": -0.0928,
-              "news_signal": null,
-              "squad_signal": {
-                "available": true,
-                "edge": -0.0928,
-                "net_value_eur": -17100000,
-                "arrivals_value_eur": 63600000,
-                "departures_value_eur": 80700000,
-                "top_arrivals": [
-                  {
-                    "player": "MOHAMED SALAH",
-                    "market_value_eur": 17000000
-                  },
-                  {
-                    "player": "ARAL SIMSIR",
-                    "market_value_eur": 15000000
-                  },
-                  {
-                    "player": "NOAH SAVIOLO",
-                    "market_value_eur": 12000000
-                  },
-                  {
-                    "player": "SIDNY LOPES CABRAL",
-                    "market_value_eur": 10000000
-                  },
-                  {
-                    "player": "CENK OZKACAR",
-                    "market_value_eur": 3000000
-                  }
-                ],
-                "top_departures": [
-                  {
-                    "player": "CHRIST INAO OULAI",
-                    "market_value_eur": 23000000
-                  },
-                  {
-                    "player": "UGURCAN CAKIR",
-                    "market_value_eur": 15000000
-                  },
-                  {
-                    "player": "FELIPE AUGUSTO",
-                    "market_value_eur": 15000000
-                  },
-                  {
-                    "player": "OLEKSANDR ZUBKOV",
-                    "market_value_eur": 6000000
-                  },
-                  {
-                    "player": "MATHIAS LOVIK",
-                    "market_value_eur": 4000000
-                  }
-                ],
-                "pending_arrivals": [
-                  {
-                    "player": "FRANCULINO",
-                    "market_value_eur": 22000000
-                  },
-                  {
-                    "player": "FABINHO",
-                    "market_value_eur": 8000000
-                  }
-                ]
-              }
-            }
-          },
-          "fixture_congestion": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "days_rest": null,
-              "opponent": null
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "days_rest": null,
-              "opponent": null
-            }
-          },
-          "european_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "match_count": 0
-            },
-            "away": {
-              "available": true,
-              "edge": 0.05,
-              "match_count": 1,
-              "record": {
-                "w": 1,
-                "d": 0,
-                "l": 0
-              },
-              "recent": [
-                {
-                  "outcome": "win",
-                  "opponent": "KuPS Kuopio",
-                  "opponent_strength": "mid",
-                  "date": "2026-10-15T16:45Z",
-                  "score": "4-2"
-                }
-              ]
-            }
-          },
-          "suspension_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0
-            }
-          },
-          "home_elo": 1451.4,
-          "away_elo": 1623.8,
-          "home_points_per_match": 1.12,
-          "away_points_per_match": 1.62,
-          "strength_edge": -0.43,
-          "home_xg_efficiency": null,
-          "away_xg_efficiency": null,
-          "referee_adj": 0.0,
-          "referee_cards_per_match": null,
-          "referee_goals_per_match": null
-        },
-        {
           "match_id": "317966",
           "date_time": "14.02.2027",
           "home_team": "GALATASARAY A.Ş.",
@@ -40231,6 +40039,198 @@
           "home_points_per_match": 0.62,
           "away_points_per_match": 1.38,
           "strength_edge": -0.16,
+          "home_xg_efficiency": null,
+          "away_xg_efficiency": null,
+          "referee_adj": 0.0,
+          "referee_cards_per_match": null,
+          "referee_goals_per_match": null
+        },
+        {
+          "match_id": "317964",
+          "date_time": "14.02.2027",
+          "home_team": "GENÇLERBİRLİĞİ",
+          "away_team": "TRABZONSPOR A.Ş.",
+          "is_played": false,
+          "actual_score": null,
+          "data_confidence": "HIGH",
+          "raw_predicted": "away",
+          "predicted": "away",
+          "expected_home_goals": 0.93,
+          "expected_away_goals": 1.75,
+          "top_scorelines": [
+            {
+              "score": "0-1",
+              "home_goals": 0,
+              "away_goals": 1,
+              "probability": 0.12
+            },
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.112
+            },
+            {
+              "score": "0-2",
+              "home_goals": 0,
+              "away_goals": 2,
+              "probability": 0.105
+            },
+            {
+              "score": "1-2",
+              "home_goals": 1,
+              "away_goals": 2,
+              "probability": 0.098
+            },
+            {
+              "score": "0-0",
+              "home_goals": 0,
+              "away_goals": 0,
+              "probability": 0.069
+            }
+          ],
+          "recommended_scoreline": {
+            "score": "0-1",
+            "home_goals": 0,
+            "away_goals": 1,
+            "probability": 0.12
+          },
+          "home_win_probability": 0.194,
+          "draw_probability": 0.248,
+          "away_win_probability": 0.558,
+          "head_to_head": {
+            "available": true,
+            "matches": 21,
+            "draw_rate": 0.286,
+            "last_meeting_date": "2026-05-17T17:00:00+00:00"
+          },
+          "transfer_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0
+            },
+            "away": {
+              "available": true,
+              "edge": -0.0928,
+              "news_signal": null,
+              "squad_signal": {
+                "available": true,
+                "edge": -0.0928,
+                "net_value_eur": -17100000,
+                "arrivals_value_eur": 63600000,
+                "departures_value_eur": 80700000,
+                "top_arrivals": [
+                  {
+                    "player": "MOHAMED SALAH",
+                    "market_value_eur": 17000000
+                  },
+                  {
+                    "player": "ARAL SIMSIR",
+                    "market_value_eur": 15000000
+                  },
+                  {
+                    "player": "NOAH SAVIOLO",
+                    "market_value_eur": 12000000
+                  },
+                  {
+                    "player": "SIDNY LOPES CABRAL",
+                    "market_value_eur": 10000000
+                  },
+                  {
+                    "player": "CENK OZKACAR",
+                    "market_value_eur": 3000000
+                  }
+                ],
+                "top_departures": [
+                  {
+                    "player": "CHRIST INAO OULAI",
+                    "market_value_eur": 23000000
+                  },
+                  {
+                    "player": "UGURCAN CAKIR",
+                    "market_value_eur": 15000000
+                  },
+                  {
+                    "player": "FELIPE AUGUSTO",
+                    "market_value_eur": 15000000
+                  },
+                  {
+                    "player": "OLEKSANDR ZUBKOV",
+                    "market_value_eur": 6000000
+                  },
+                  {
+                    "player": "MATHIAS LOVIK",
+                    "market_value_eur": 4000000
+                  }
+                ],
+                "pending_arrivals": [
+                  {
+                    "player": "FRANCULINO",
+                    "market_value_eur": 22000000
+                  },
+                  {
+                    "player": "FABINHO",
+                    "market_value_eur": 8000000
+                  }
+                ]
+              }
+            }
+          },
+          "fixture_congestion": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "days_rest": null,
+              "opponent": null
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "days_rest": null,
+              "opponent": null
+            }
+          },
+          "european_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "match_count": 0
+            },
+            "away": {
+              "available": true,
+              "edge": 0.05,
+              "match_count": 1,
+              "record": {
+                "w": 1,
+                "d": 0,
+                "l": 0
+              },
+              "recent": [
+                {
+                  "outcome": "win",
+                  "opponent": "KuPS Kuopio",
+                  "opponent_strength": "mid",
+                  "date": "2026-10-15T16:45Z",
+                  "score": "4-2"
+                }
+              ]
+            }
+          },
+          "suspension_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0
+            }
+          },
+          "home_elo": 1451.4,
+          "away_elo": 1623.8,
+          "home_points_per_match": 1.12,
+          "away_points_per_match": 1.62,
+          "strength_edge": -0.43,
           "home_xg_efficiency": null,
           "away_xg_efficiency": null,
           "referee_adj": 0.0,
@@ -48888,6 +48888,180 @@
           "referee_goals_per_match": null
         },
         {
+          "match_id": "318014",
+          "date_time": "21.03.2027",
+          "home_team": "GENÇLERBİRLİĞİ",
+          "away_team": "TÜMOSAN KONYASPOR",
+          "is_played": false,
+          "actual_score": null,
+          "data_confidence": "LOW",
+          "raw_predicted": "home",
+          "predicted": "draw",
+          "expected_home_goals": 1.08,
+          "expected_away_goals": 0.75,
+          "top_scorelines": [
+            {
+              "score": "1-0",
+              "home_goals": 1,
+              "away_goals": 0,
+              "probability": 0.173
+            },
+            {
+              "score": "0-0",
+              "home_goals": 0,
+              "away_goals": 0,
+              "probability": 0.16
+            },
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.13
+            },
+            {
+              "score": "0-1",
+              "home_goals": 0,
+              "away_goals": 1,
+              "probability": 0.12
+            },
+            {
+              "score": "2-0",
+              "home_goals": 2,
+              "away_goals": 0,
+              "probability": 0.094
+            }
+          ],
+          "recommended_scoreline": {
+            "score": "0-0",
+            "home_goals": 0,
+            "away_goals": 0,
+            "probability": 0.16
+          },
+          "home_win_probability": 0.424,
+          "draw_probability": 0.329,
+          "away_win_probability": 0.247,
+          "head_to_head": {
+            "available": true,
+            "matches": 19,
+            "draw_rate": 0.368,
+            "last_meeting_date": "2026-03-19T17:00:00+00:00"
+          },
+          "transfer_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0
+            },
+            "away": {
+              "available": true,
+              "edge": -0.1155,
+              "news_signal": null,
+              "squad_signal": {
+                "available": true,
+                "edge": -0.1155,
+                "net_value_eur": -5775000,
+                "arrivals_value_eur": 12950000,
+                "departures_value_eur": 18725000,
+                "top_arrivals": [
+                  {
+                    "player": "RAJMUND TOTH",
+                    "market_value_eur": 2500000
+                  },
+                  {
+                    "player": "CHIDOZIE AWAZIEM",
+                    "market_value_eur": 2000000
+                  },
+                  {
+                    "player": "MOSTAFA MOHAMED",
+                    "market_value_eur": 2000000
+                  },
+                  {
+                    "player": "ENIS DESTAN",
+                    "market_value_eur": 1800000
+                  },
+                  {
+                    "player": "ARTHUR MASUAKU",
+                    "market_value_eur": 1500000
+                  }
+                ],
+                "top_departures": [
+                  {
+                    "player": "KAZEEM OLAIGBE",
+                    "market_value_eur": 4000000
+                  },
+                  {
+                    "player": "ADAMO NAGALO",
+                    "market_value_eur": 2800000
+                  },
+                  {
+                    "player": "BERKAN KUTLU",
+                    "market_value_eur": 2500000
+                  },
+                  {
+                    "player": "RIECHEDLY BAZOER",
+                    "market_value_eur": 1500000
+                  },
+                  {
+                    "player": "JIN HO JO",
+                    "market_value_eur": 1000000
+                  }
+                ],
+                "pending_arrivals": [
+                  {
+                    "player": "EMIR GUNDOGDU",
+                    "market_value_eur": 0
+                  }
+                ]
+              }
+            }
+          },
+          "fixture_congestion": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "days_rest": null,
+              "opponent": null
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "days_rest": null,
+              "opponent": null
+            }
+          },
+          "european_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "match_count": 0
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "match_count": 0
+            }
+          },
+          "suspension_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0
+            }
+          },
+          "home_elo": 1451.4,
+          "away_elo": 1442.1,
+          "home_points_per_match": 1.12,
+          "away_points_per_match": 0.62,
+          "strength_edge": 0.12,
+          "home_xg_efficiency": null,
+          "away_xg_efficiency": null,
+          "referee_adj": 0.0,
+          "referee_cards_per_match": null,
+          "referee_goals_per_match": null
+        },
+        {
           "match_id": "318015",
           "date_time": "21.03.2027",
           "home_team": "FENERBAHÇE A.Ş.",
@@ -49923,180 +50097,6 @@
           "home_points_per_match": 1.38,
           "away_points_per_match": 0.38,
           "strength_edge": 0.64,
-          "home_xg_efficiency": null,
-          "away_xg_efficiency": null,
-          "referee_adj": 0.0,
-          "referee_cards_per_match": null,
-          "referee_goals_per_match": null
-        },
-        {
-          "match_id": "318014",
-          "date_time": "21.03.2027",
-          "home_team": "GENÇLERBİRLİĞİ",
-          "away_team": "TÜMOSAN KONYASPOR",
-          "is_played": false,
-          "actual_score": null,
-          "data_confidence": "LOW",
-          "raw_predicted": "home",
-          "predicted": "draw",
-          "expected_home_goals": 1.08,
-          "expected_away_goals": 0.75,
-          "top_scorelines": [
-            {
-              "score": "1-0",
-              "home_goals": 1,
-              "away_goals": 0,
-              "probability": 0.173
-            },
-            {
-              "score": "0-0",
-              "home_goals": 0,
-              "away_goals": 0,
-              "probability": 0.16
-            },
-            {
-              "score": "1-1",
-              "home_goals": 1,
-              "away_goals": 1,
-              "probability": 0.13
-            },
-            {
-              "score": "0-1",
-              "home_goals": 0,
-              "away_goals": 1,
-              "probability": 0.12
-            },
-            {
-              "score": "2-0",
-              "home_goals": 2,
-              "away_goals": 0,
-              "probability": 0.094
-            }
-          ],
-          "recommended_scoreline": {
-            "score": "0-0",
-            "home_goals": 0,
-            "away_goals": 0,
-            "probability": 0.16
-          },
-          "home_win_probability": 0.424,
-          "draw_probability": 0.329,
-          "away_win_probability": 0.247,
-          "head_to_head": {
-            "available": true,
-            "matches": 19,
-            "draw_rate": 0.368,
-            "last_meeting_date": "2026-03-19T17:00:00+00:00"
-          },
-          "transfer_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0
-            },
-            "away": {
-              "available": true,
-              "edge": -0.1155,
-              "news_signal": null,
-              "squad_signal": {
-                "available": true,
-                "edge": -0.1155,
-                "net_value_eur": -5775000,
-                "arrivals_value_eur": 12950000,
-                "departures_value_eur": 18725000,
-                "top_arrivals": [
-                  {
-                    "player": "RAJMUND TOTH",
-                    "market_value_eur": 2500000
-                  },
-                  {
-                    "player": "CHIDOZIE AWAZIEM",
-                    "market_value_eur": 2000000
-                  },
-                  {
-                    "player": "MOSTAFA MOHAMED",
-                    "market_value_eur": 2000000
-                  },
-                  {
-                    "player": "ENIS DESTAN",
-                    "market_value_eur": 1800000
-                  },
-                  {
-                    "player": "ARTHUR MASUAKU",
-                    "market_value_eur": 1500000
-                  }
-                ],
-                "top_departures": [
-                  {
-                    "player": "KAZEEM OLAIGBE",
-                    "market_value_eur": 4000000
-                  },
-                  {
-                    "player": "ADAMO NAGALO",
-                    "market_value_eur": 2800000
-                  },
-                  {
-                    "player": "BERKAN KUTLU",
-                    "market_value_eur": 2500000
-                  },
-                  {
-                    "player": "RIECHEDLY BAZOER",
-                    "market_value_eur": 1500000
-                  },
-                  {
-                    "player": "JIN HO JO",
-                    "market_value_eur": 1000000
-                  }
-                ],
-                "pending_arrivals": [
-                  {
-                    "player": "EMIR GUNDOGDU",
-                    "market_value_eur": 0
-                  }
-                ]
-              }
-            }
-          },
-          "fixture_congestion": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "days_rest": null,
-              "opponent": null
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "days_rest": null,
-              "opponent": null
-            }
-          },
-          "european_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "match_count": 0
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "match_count": 0
-            }
-          },
-          "suspension_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0
-            }
-          },
-          "home_elo": 1451.4,
-          "away_elo": 1442.1,
-          "home_points_per_match": 1.12,
-          "away_points_per_match": 0.62,
-          "strength_edge": 0.12,
           "home_xg_efficiency": null,
           "away_xg_efficiency": null,
           "referee_adj": 0.0,
@@ -53144,6 +53144,237 @@
           "referee_goals_per_match": null
         },
         {
+          "match_id": "318034",
+          "date_time": "11.04.2027",
+          "home_team": "GENÇLERBİRLİĞİ",
+          "away_team": "BEŞİKTAŞ A.Ş.",
+          "is_played": false,
+          "actual_score": null,
+          "data_confidence": "HIGH",
+          "raw_predicted": "away",
+          "predicted": "away",
+          "expected_home_goals": 0.95,
+          "expected_away_goals": 1.77,
+          "top_scorelines": [
+            {
+              "score": "0-1",
+              "home_goals": 0,
+              "away_goals": 1,
+              "probability": 0.117
+            },
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.111
+            },
+            {
+              "score": "0-2",
+              "home_goals": 0,
+              "away_goals": 2,
+              "probability": 0.103
+            },
+            {
+              "score": "1-2",
+              "home_goals": 1,
+              "away_goals": 2,
+              "probability": 0.098
+            },
+            {
+              "score": "0-0",
+              "home_goals": 0,
+              "away_goals": 0,
+              "probability": 0.066
+            }
+          ],
+          "recommended_scoreline": {
+            "score": "0-1",
+            "home_goals": 0,
+            "away_goals": 1,
+            "probability": 0.117
+          },
+          "home_win_probability": 0.204,
+          "draw_probability": 0.217,
+          "away_win_probability": 0.579,
+          "head_to_head": {
+            "available": true,
+            "matches": 23,
+            "draw_rate": 0.174,
+            "last_meeting_date": "2026-03-15T17:00:00+00:00"
+          },
+          "transfer_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0
+            },
+            "away": {
+              "available": true,
+              "edge": -0.0192,
+              "news_signal": null,
+              "squad_signal": {
+                "available": true,
+                "edge": -0.0192,
+                "net_value_eur": -5250000,
+                "arrivals_value_eur": 132000000,
+                "departures_value_eur": 137250000,
+                "top_arrivals": [
+                  {
+                    "player": "DUSAN VLAHOVIC",
+                    "market_value_eur": 32000000
+                  },
+                  {
+                    "player": "ERNEST POKU",
+                    "market_value_eur": 22000000
+                  },
+                  {
+                    "player": "LEANDRO TROSSARD",
+                    "market_value_eur": 18000000
+                  },
+                  {
+                    "player": "FABIO MIRETTI",
+                    "market_value_eur": 15000000
+                  },
+                  {
+                    "player": "KASSOUM OUATTARA",
+                    "market_value_eur": 12000000
+                  }
+                ],
+                "top_departures": [
+                  {
+                    "player": "TAMMY ABRAHAM",
+                    "market_value_eur": 18000000
+                  },
+                  {
+                    "player": "GEDSON FERNANDES",
+                    "market_value_eur": 16000000
+                  },
+                  {
+                    "player": "EL BILAL TOURE",
+                    "market_value_eur": 13000000
+                  },
+                  {
+                    "player": "KRISTJAN ASLLANI",
+                    "market_value_eur": 12000000
+                  },
+                  {
+                    "player": "ERNEST MUCI",
+                    "market_value_eur": 11000000
+                  }
+                ],
+                "pending_arrivals": [
+                  {
+                    "player": "CAN KELES",
+                    "market_value_eur": 800000
+                  },
+                  {
+                    "player": "AZEM YORTAC",
+                    "market_value_eur": 0
+                  },
+                  {
+                    "player": "OZAN SEVIM",
+                    "market_value_eur": 0
+                  }
+                ]
+              }
+            }
+          },
+          "fixture_congestion": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "days_rest": null,
+              "opponent": null
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "days_rest": null,
+              "opponent": null
+            }
+          },
+          "european_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "match_count": 0
+            },
+            "away": {
+              "available": true,
+              "edge": 0.15,
+              "match_count": 6,
+              "record": {
+                "w": 6,
+                "d": 0,
+                "l": 0
+              },
+              "recent": [
+                {
+                  "outcome": "win",
+                  "opponent": "TSG Hoffenheim",
+                  "opponent_strength": "mid",
+                  "date": "2026-10-15T19:00Z",
+                  "score": "3-2"
+                },
+                {
+                  "outcome": "win",
+                  "opponent": "Marseille",
+                  "opponent_strength": "mid",
+                  "date": "2026-09-17T19:00Z",
+                  "score": "4-1"
+                },
+                {
+                  "outcome": "win",
+                  "opponent": "Hradec Králové",
+                  "opponent_strength": "mid",
+                  "date": "2026-08-13",
+                  "score": "1-0"
+                },
+                {
+                  "outcome": "win",
+                  "opponent": "Hradec Králové",
+                  "opponent_strength": "mid",
+                  "date": "2026-08-06",
+                  "score": "1-0"
+                },
+                {
+                  "outcome": "win",
+                  "opponent": "FC Midtjylland",
+                  "opponent_strength": "strong",
+                  "date": "2026-07-30",
+                  "score": "2-0"
+                },
+                {
+                  "outcome": "win",
+                  "opponent": "FC Midtjylland",
+                  "opponent_strength": "strong",
+                  "date": "2026-07-23",
+                  "score": "1-0"
+                }
+              ]
+            }
+          },
+          "suspension_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0
+            }
+          },
+          "home_elo": 1451.4,
+          "away_elo": 1583.7,
+          "home_points_per_match": 1.12,
+          "away_points_per_match": 1.75,
+          "strength_edge": -0.54,
+          "home_xg_efficiency": null,
+          "away_xg_efficiency": null,
+          "referee_adj": 0.0,
+          "referee_cards_per_match": null,
+          "referee_goals_per_match": null
+        },
+        {
           "match_id": "318035",
           "date_time": "11.04.2027",
           "home_team": "TÜMOSAN KONYASPOR",
@@ -53925,237 +54156,6 @@
           "home_points_per_match": 2.12,
           "away_points_per_match": 2.38,
           "strength_edge": 0.092,
-          "home_xg_efficiency": null,
-          "away_xg_efficiency": null,
-          "referee_adj": 0.0,
-          "referee_cards_per_match": null,
-          "referee_goals_per_match": null
-        },
-        {
-          "match_id": "318034",
-          "date_time": "11.04.2027",
-          "home_team": "GENÇLERBİRLİĞİ",
-          "away_team": "BEŞİKTAŞ A.Ş.",
-          "is_played": false,
-          "actual_score": null,
-          "data_confidence": "HIGH",
-          "raw_predicted": "away",
-          "predicted": "away",
-          "expected_home_goals": 0.95,
-          "expected_away_goals": 1.77,
-          "top_scorelines": [
-            {
-              "score": "0-1",
-              "home_goals": 0,
-              "away_goals": 1,
-              "probability": 0.117
-            },
-            {
-              "score": "1-1",
-              "home_goals": 1,
-              "away_goals": 1,
-              "probability": 0.111
-            },
-            {
-              "score": "0-2",
-              "home_goals": 0,
-              "away_goals": 2,
-              "probability": 0.103
-            },
-            {
-              "score": "1-2",
-              "home_goals": 1,
-              "away_goals": 2,
-              "probability": 0.098
-            },
-            {
-              "score": "0-0",
-              "home_goals": 0,
-              "away_goals": 0,
-              "probability": 0.066
-            }
-          ],
-          "recommended_scoreline": {
-            "score": "0-1",
-            "home_goals": 0,
-            "away_goals": 1,
-            "probability": 0.117
-          },
-          "home_win_probability": 0.204,
-          "draw_probability": 0.217,
-          "away_win_probability": 0.579,
-          "head_to_head": {
-            "available": true,
-            "matches": 23,
-            "draw_rate": 0.174,
-            "last_meeting_date": "2026-03-15T17:00:00+00:00"
-          },
-          "transfer_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0
-            },
-            "away": {
-              "available": true,
-              "edge": -0.0192,
-              "news_signal": null,
-              "squad_signal": {
-                "available": true,
-                "edge": -0.0192,
-                "net_value_eur": -5250000,
-                "arrivals_value_eur": 132000000,
-                "departures_value_eur": 137250000,
-                "top_arrivals": [
-                  {
-                    "player": "DUSAN VLAHOVIC",
-                    "market_value_eur": 32000000
-                  },
-                  {
-                    "player": "ERNEST POKU",
-                    "market_value_eur": 22000000
-                  },
-                  {
-                    "player": "LEANDRO TROSSARD",
-                    "market_value_eur": 18000000
-                  },
-                  {
-                    "player": "FABIO MIRETTI",
-                    "market_value_eur": 15000000
-                  },
-                  {
-                    "player": "KASSOUM OUATTARA",
-                    "market_value_eur": 12000000
-                  }
-                ],
-                "top_departures": [
-                  {
-                    "player": "TAMMY ABRAHAM",
-                    "market_value_eur": 18000000
-                  },
-                  {
-                    "player": "GEDSON FERNANDES",
-                    "market_value_eur": 16000000
-                  },
-                  {
-                    "player": "EL BILAL TOURE",
-                    "market_value_eur": 13000000
-                  },
-                  {
-                    "player": "KRISTJAN ASLLANI",
-                    "market_value_eur": 12000000
-                  },
-                  {
-                    "player": "ERNEST MUCI",
-                    "market_value_eur": 11000000
-                  }
-                ],
-                "pending_arrivals": [
-                  {
-                    "player": "CAN KELES",
-                    "market_value_eur": 800000
-                  },
-                  {
-                    "player": "AZEM YORTAC",
-                    "market_value_eur": 0
-                  },
-                  {
-                    "player": "OZAN SEVIM",
-                    "market_value_eur": 0
-                  }
-                ]
-              }
-            }
-          },
-          "fixture_congestion": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "days_rest": null,
-              "opponent": null
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "days_rest": null,
-              "opponent": null
-            }
-          },
-          "european_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "match_count": 0
-            },
-            "away": {
-              "available": true,
-              "edge": 0.15,
-              "match_count": 6,
-              "record": {
-                "w": 6,
-                "d": 0,
-                "l": 0
-              },
-              "recent": [
-                {
-                  "outcome": "win",
-                  "opponent": "TSG Hoffenheim",
-                  "opponent_strength": "mid",
-                  "date": "2026-10-15T19:00Z",
-                  "score": "3-2"
-                },
-                {
-                  "outcome": "win",
-                  "opponent": "Marseille",
-                  "opponent_strength": "mid",
-                  "date": "2026-09-17T19:00Z",
-                  "score": "4-1"
-                },
-                {
-                  "outcome": "win",
-                  "opponent": "Hradec Králové",
-                  "opponent_strength": "mid",
-                  "date": "2026-08-13",
-                  "score": "1-0"
-                },
-                {
-                  "outcome": "win",
-                  "opponent": "Hradec Králové",
-                  "opponent_strength": "mid",
-                  "date": "2026-08-06",
-                  "score": "1-0"
-                },
-                {
-                  "outcome": "win",
-                  "opponent": "FC Midtjylland",
-                  "opponent_strength": "strong",
-                  "date": "2026-07-30",
-                  "score": "2-0"
-                },
-                {
-                  "outcome": "win",
-                  "opponent": "FC Midtjylland",
-                  "opponent_strength": "strong",
-                  "date": "2026-07-23",
-                  "score": "1-0"
-                }
-              ]
-            }
-          },
-          "suspension_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0
-            }
-          },
-          "home_elo": 1451.4,
-          "away_elo": 1583.7,
-          "home_points_per_match": 1.12,
-          "away_points_per_match": 1.75,
-          "strength_edge": -0.54,
           "home_xg_efficiency": null,
           "away_xg_efficiency": null,
           "referee_adj": 0.0,
@@ -57277,6 +57277,184 @@
           "referee_goals_per_match": null
         },
         {
+          "match_id": "318053",
+          "date_time": "25.04.2027",
+          "home_team": "GENÇLERBİRLİĞİ",
+          "away_team": "SAMSUNSPOR A.Ş.",
+          "is_played": false,
+          "actual_score": null,
+          "data_confidence": "MEDIUM",
+          "raw_predicted": "home",
+          "predicted": "home",
+          "expected_home_goals": 1.41,
+          "expected_away_goals": 0.88,
+          "top_scorelines": [
+            {
+              "score": "1-0",
+              "home_goals": 1,
+              "away_goals": 0,
+              "probability": 0.143
+            },
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.126
+            },
+            {
+              "score": "0-0",
+              "home_goals": 0,
+              "away_goals": 0,
+              "probability": 0.101
+            },
+            {
+              "score": "2-0",
+              "home_goals": 2,
+              "away_goals": 0,
+              "probability": 0.1
+            },
+            {
+              "score": "0-1",
+              "home_goals": 0,
+              "away_goals": 1,
+              "probability": 0.089
+            }
+          ],
+          "recommended_scoreline": {
+            "score": "1-0",
+            "home_goals": 1,
+            "away_goals": 0,
+            "probability": 0.143
+          },
+          "home_win_probability": 0.471,
+          "draw_probability": 0.304,
+          "away_win_probability": 0.225,
+          "head_to_head": {
+            "available": true,
+            "matches": 8,
+            "draw_rate": 0.5,
+            "last_meeting_date": "2026-01-18T14:00:00+00:00"
+          },
+          "transfer_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0
+            },
+            "away": {
+              "available": true,
+              "edge": -0.15,
+              "news_signal": null,
+              "squad_signal": {
+                "available": true,
+                "edge": -0.15,
+                "net_value_eur": -24900000,
+                "arrivals_value_eur": 26800000,
+                "departures_value_eur": 51700000,
+                "top_arrivals": [
+                  {
+                    "player": "STRAHINJA ERAKOVIC",
+                    "market_value_eur": 6000000
+                  },
+                  {
+                    "player": "MOHAMED BAYO",
+                    "market_value_eur": 4500000
+                  },
+                  {
+                    "player": "GABRIELE GUARINO",
+                    "market_value_eur": 4000000
+                  },
+                  {
+                    "player": "OSKAR OHLENSCHLAEGER",
+                    "market_value_eur": 3500000
+                  },
+                  {
+                    "player": "IGOR DRAPINSKI",
+                    "market_value_eur": 2500000
+                  }
+                ],
+                "top_departures": [
+                  {
+                    "player": "CARLO HOLSE",
+                    "market_value_eur": 7000000
+                  },
+                  {
+                    "player": "ANTHONY MUSABA",
+                    "market_value_eur": 7000000
+                  },
+                  {
+                    "player": "MARIUS MOUANDILMADJI",
+                    "market_value_eur": 7000000
+                  },
+                  {
+                    "player": "RICK VAN DRONGELEN",
+                    "market_value_eur": 6000000
+                  },
+                  {
+                    "player": "CHERIF NDIAYE",
+                    "market_value_eur": 5000000
+                  }
+                ],
+                "pending_arrivals": [
+                  {
+                    "player": "ANTOINE SEKONGO",
+                    "market_value_eur": 4000000
+                  },
+                  {
+                    "player": "KEREM FIDAN",
+                    "market_value_eur": 0
+                  }
+                ]
+              }
+            }
+          },
+          "fixture_congestion": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "days_rest": null,
+              "opponent": null
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "days_rest": null,
+              "opponent": null
+            }
+          },
+          "european_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "match_count": 0
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "match_count": 0
+            }
+          },
+          "suspension_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0
+            }
+          },
+          "home_elo": 1451.4,
+          "away_elo": 1478.8,
+          "home_points_per_match": 1.12,
+          "away_points_per_match": 0.62,
+          "strength_edge": 0.2,
+          "home_xg_efficiency": null,
+          "away_xg_efficiency": null,
+          "referee_adj": 0.0,
+          "referee_cards_per_match": null,
+          "referee_goals_per_match": null
+        },
+        {
           "match_id": "318045",
           "date_time": "25.04.2027",
           "home_team": "AMED SPORTİF FAALİYETLER",
@@ -57859,184 +58037,6 @@
           "home_points_per_match": 1.38,
           "away_points_per_match": 1.5,
           "strength_edge": -0.419,
-          "home_xg_efficiency": null,
-          "away_xg_efficiency": null,
-          "referee_adj": 0.0,
-          "referee_cards_per_match": null,
-          "referee_goals_per_match": null
-        },
-        {
-          "match_id": "318053",
-          "date_time": "25.04.2027",
-          "home_team": "GENÇLERBİRLİĞİ",
-          "away_team": "SAMSUNSPOR A.Ş.",
-          "is_played": false,
-          "actual_score": null,
-          "data_confidence": "MEDIUM",
-          "raw_predicted": "home",
-          "predicted": "home",
-          "expected_home_goals": 1.41,
-          "expected_away_goals": 0.88,
-          "top_scorelines": [
-            {
-              "score": "1-0",
-              "home_goals": 1,
-              "away_goals": 0,
-              "probability": 0.143
-            },
-            {
-              "score": "1-1",
-              "home_goals": 1,
-              "away_goals": 1,
-              "probability": 0.126
-            },
-            {
-              "score": "0-0",
-              "home_goals": 0,
-              "away_goals": 0,
-              "probability": 0.101
-            },
-            {
-              "score": "2-0",
-              "home_goals": 2,
-              "away_goals": 0,
-              "probability": 0.1
-            },
-            {
-              "score": "0-1",
-              "home_goals": 0,
-              "away_goals": 1,
-              "probability": 0.089
-            }
-          ],
-          "recommended_scoreline": {
-            "score": "1-0",
-            "home_goals": 1,
-            "away_goals": 0,
-            "probability": 0.143
-          },
-          "home_win_probability": 0.471,
-          "draw_probability": 0.304,
-          "away_win_probability": 0.225,
-          "head_to_head": {
-            "available": true,
-            "matches": 8,
-            "draw_rate": 0.5,
-            "last_meeting_date": "2026-01-18T14:00:00+00:00"
-          },
-          "transfer_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0
-            },
-            "away": {
-              "available": true,
-              "edge": -0.15,
-              "news_signal": null,
-              "squad_signal": {
-                "available": true,
-                "edge": -0.15,
-                "net_value_eur": -24900000,
-                "arrivals_value_eur": 26800000,
-                "departures_value_eur": 51700000,
-                "top_arrivals": [
-                  {
-                    "player": "STRAHINJA ERAKOVIC",
-                    "market_value_eur": 6000000
-                  },
-                  {
-                    "player": "MOHAMED BAYO",
-                    "market_value_eur": 4500000
-                  },
-                  {
-                    "player": "GABRIELE GUARINO",
-                    "market_value_eur": 4000000
-                  },
-                  {
-                    "player": "OSKAR OHLENSCHLAEGER",
-                    "market_value_eur": 3500000
-                  },
-                  {
-                    "player": "IGOR DRAPINSKI",
-                    "market_value_eur": 2500000
-                  }
-                ],
-                "top_departures": [
-                  {
-                    "player": "CARLO HOLSE",
-                    "market_value_eur": 7000000
-                  },
-                  {
-                    "player": "ANTHONY MUSABA",
-                    "market_value_eur": 7000000
-                  },
-                  {
-                    "player": "MARIUS MOUANDILMADJI",
-                    "market_value_eur": 7000000
-                  },
-                  {
-                    "player": "RICK VAN DRONGELEN",
-                    "market_value_eur": 6000000
-                  },
-                  {
-                    "player": "CHERIF NDIAYE",
-                    "market_value_eur": 5000000
-                  }
-                ],
-                "pending_arrivals": [
-                  {
-                    "player": "ANTOINE SEKONGO",
-                    "market_value_eur": 4000000
-                  },
-                  {
-                    "player": "KEREM FIDAN",
-                    "market_value_eur": 0
-                  }
-                ]
-              }
-            }
-          },
-          "fixture_congestion": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "days_rest": null,
-              "opponent": null
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "days_rest": null,
-              "opponent": null
-            }
-          },
-          "european_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "match_count": 0
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "match_count": 0
-            }
-          },
-          "suspension_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0
-            }
-          },
-          "home_elo": 1451.4,
-          "away_elo": 1478.8,
-          "home_points_per_match": 1.12,
-          "away_points_per_match": 0.62,
-          "strength_edge": 0.2,
           "home_xg_efficiency": null,
           "away_xg_efficiency": null,
           "referee_adj": 0.0,
@@ -64631,6 +64631,122 @@
           "referee_goals_per_match": null
         },
         {
+          "match_id": "318084",
+          "date_time": "23.05.2027",
+          "home_team": "GENÇLERBİRLİĞİ",
+          "away_team": "ÇAYKUR RİZESPOR A.Ş.",
+          "is_played": false,
+          "actual_score": null,
+          "data_confidence": "LOW",
+          "raw_predicted": "away",
+          "predicted": "draw",
+          "expected_home_goals": 0.84,
+          "expected_away_goals": 0.98,
+          "top_scorelines": [
+            {
+              "score": "0-0",
+              "home_goals": 0,
+              "away_goals": 0,
+              "probability": 0.162
+            },
+            {
+              "score": "0-1",
+              "home_goals": 0,
+              "away_goals": 1,
+              "probability": 0.159
+            },
+            {
+              "score": "1-0",
+              "home_goals": 1,
+              "away_goals": 0,
+              "probability": 0.137
+            },
+            {
+              "score": "1-1",
+              "home_goals": 1,
+              "away_goals": 1,
+              "probability": 0.133
+            },
+            {
+              "score": "0-2",
+              "home_goals": 0,
+              "away_goals": 2,
+              "probability": 0.078
+            }
+          ],
+          "recommended_scoreline": {
+            "score": "0-0",
+            "home_goals": 0,
+            "away_goals": 0,
+            "probability": 0.162
+          },
+          "home_win_probability": 0.314,
+          "draw_probability": 0.295,
+          "away_win_probability": 0.391,
+          "head_to_head": {
+            "available": true,
+            "matches": 17,
+            "draw_rate": 0.176,
+            "last_meeting_date": "2026-02-14T11:30:00+00:00"
+          },
+          "transfer_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0
+            }
+          },
+          "fixture_congestion": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "days_rest": null,
+              "opponent": null
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "days_rest": null,
+              "opponent": null
+            }
+          },
+          "european_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0,
+              "match_count": 0
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0,
+              "match_count": 0
+            }
+          },
+          "suspension_signal": {
+            "home": {
+              "available": false,
+              "edge": 0.0
+            },
+            "away": {
+              "available": false,
+              "edge": 0.0
+            }
+          },
+          "home_elo": 1451.4,
+          "away_elo": 1487.1,
+          "home_points_per_match": 1.12,
+          "away_points_per_match": 1.38,
+          "strength_edge": -0.16,
+          "home_xg_efficiency": null,
+          "away_xg_efficiency": null,
+          "referee_adj": 0.0,
+          "referee_cards_per_match": null,
+          "referee_goals_per_match": null
+        },
+        {
           "match_id": "318085",
           "date_time": "23.05.2027",
           "home_team": "BEŞİKTAŞ A.Ş.",
@@ -65277,122 +65393,6 @@
           "home_points_per_match": 1.62,
           "away_points_per_match": 1.38,
           "strength_edge": 0.39,
-          "home_xg_efficiency": null,
-          "away_xg_efficiency": null,
-          "referee_adj": 0.0,
-          "referee_cards_per_match": null,
-          "referee_goals_per_match": null
-        },
-        {
-          "match_id": "318084",
-          "date_time": "23.05.2027",
-          "home_team": "GENÇLERBİRLİĞİ",
-          "away_team": "ÇAYKUR RİZESPOR A.Ş.",
-          "is_played": false,
-          "actual_score": null,
-          "data_confidence": "LOW",
-          "raw_predicted": "away",
-          "predicted": "draw",
-          "expected_home_goals": 0.84,
-          "expected_away_goals": 0.98,
-          "top_scorelines": [
-            {
-              "score": "0-0",
-              "home_goals": 0,
-              "away_goals": 0,
-              "probability": 0.162
-            },
-            {
-              "score": "0-1",
-              "home_goals": 0,
-              "away_goals": 1,
-              "probability": 0.159
-            },
-            {
-              "score": "1-0",
-              "home_goals": 1,
-              "away_goals": 0,
-              "probability": 0.137
-            },
-            {
-              "score": "1-1",
-              "home_goals": 1,
-              "away_goals": 1,
-              "probability": 0.133
-            },
-            {
-              "score": "0-2",
-              "home_goals": 0,
-              "away_goals": 2,
-              "probability": 0.078
-            }
-          ],
-          "recommended_scoreline": {
-            "score": "0-0",
-            "home_goals": 0,
-            "away_goals": 0,
-            "probability": 0.162
-          },
-          "home_win_probability": 0.314,
-          "draw_probability": 0.295,
-          "away_win_probability": 0.391,
-          "head_to_head": {
-            "available": true,
-            "matches": 17,
-            "draw_rate": 0.176,
-            "last_meeting_date": "2026-02-14T11:30:00+00:00"
-          },
-          "transfer_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0
-            }
-          },
-          "fixture_congestion": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "days_rest": null,
-              "opponent": null
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "days_rest": null,
-              "opponent": null
-            }
-          },
-          "european_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0,
-              "match_count": 0
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0,
-              "match_count": 0
-            }
-          },
-          "suspension_signal": {
-            "home": {
-              "available": false,
-              "edge": 0.0
-            },
-            "away": {
-              "available": false,
-              "edge": 0.0
-            }
-          },
-          "home_elo": 1451.4,
-          "away_elo": 1487.1,
-          "home_points_per_match": 1.12,
-          "away_points_per_match": 1.38,
-          "strength_edge": -0.16,
           "home_xg_efficiency": null,
           "away_xg_efficiency": null,
           "referee_adj": 0.0,

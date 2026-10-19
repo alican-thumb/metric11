@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-19T17:01:38.728780+00:00",
+  "generated_at": "2026-10-19T22:21:57.561866+00:00",
   "season": "2025_2026",
   "summary": {
     "free_agents_count": 94,
     "final_year_count": 338,
-    "transfer_signals_count": 13,
+    "transfer_signals_count": 12,
     "transfer_status_counts": {
       "OFFICIAL": 0,
       "CORROBORATED": 0,
-      "RUMOR": 0,
-      "REVIEW_REQUIRED": 13
+      "RUMOR": 1,
+      "REVIEW_REQUIRED": 11
     },
     "promotion_events_count": 1,
     "free_agent_total_market_value_eur": 180425000
@@ -460,6 +460,129 @@
   ],
   "transfer_signals": [
     {
+      "player_name": "Nuno Lima Baba Oldu",
+      "from_club": null,
+      "to_club": "Alanyaspor",
+      "signal_type": "interest",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "HEADLINE_EXPLICIT_DIRECTION",
+      "article_id": "4d872bafad31",
+      "title": "Alanyaspor’da En Güzel Transfer: Nuno Lima Baba Oldu! - Manşet Alanya",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNRS04eDZQLUNwaU9yRVZ0ajUxYVdfUmxXa01MYjl6OE4zYWlXU1c0UGlNQzF1Q2hqSzVHLXBubFVZYnE5dzhKX2J4V1l0TkpYc29zenE3WFU5RGJSZ19yakFXVHZWQ09NU2ZMQzZHZjV4UFVmdFItMkZRVVRFeHZUbmNRY3FiQQ?oc=5",
+      "source": "Manşet Alanya",
+      "source_type": "google_news",
+      "account_type": null,
+      "query": "Alanyaspor transfer",
+      "source_tier": "MEDIA",
+      "published_at": "2026-10-19T15:11:00+00:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "MEDIUM",
+      "verification_status": "RUMOR",
+      "interpretation": "Tek kaynaklı transfer iddiası; yalnız transfer radarında izlenir.",
+      "source_count": 1,
+      "sources": [
+        "Manşet Alanya"
+      ],
+      "evidence": [
+        {
+          "source": "Manşet Alanya",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Alanyaspor transfer",
+          "title": "Alanyaspor’da En Güzel Transfer: Nuno Lima Baba Oldu! - Manşet Alanya",
+          "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNRS04eDZQLUNwaU9yRVZ0ajUxYVdfUmxXa01MYjl6OE4zYWlXU1c0UGlNQzF1Q2hqSzVHLXBubFVZYnE5dzhKX2J4V1l0TkpYc29zenE3WFU5RGJSZ19yakFXVHZWQ09NU2ZMQzZHZjV4UFVmdFItMkZRVVRFeHZUbmNRY3FiQQ?oc=5",
+          "published_at": "2026-10-19T15:11:00+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": null,
+      "from_club": null,
+      "to_club": "Beşiktaş",
+      "signal_type": "departure",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "895a6c39ba9d",
+      "title": "Beşiktaş'ın Anadolu kabusu! Italiano ile sıfır",
+      "link": "https://www.hurriyet.com.tr/sporarena/besiktasin-anadolu-kabusu-italiano-ile-sifir-43347836",
+      "source": "Hürriyet Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-10-19T20:06:00+00:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Hürriyet Spor"
+      ],
+      "evidence": [
+        {
+          "source": "Hürriyet Spor",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Beşiktaş'ın Anadolu kabusu! Italiano ile sıfır",
+          "link": "https://www.hurriyet.com.tr/sporarena/besiktasin-anadolu-kabusu-italiano-ile-sifir-43347836",
+          "published_at": "2026-10-19T20:06:00+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": null,
+      "from_club": null,
+      "to_club": "Trabzonspor",
+      "signal_type": "signing",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "0d927a89ca66",
+      "title": "Trabzonspor, Albayrak Finans ile forma şort arkası sponsorluk anlaşması imzaladı",
+      "link": "https://www.aa.com.tr/tr/spor/trabzonspor-albayrak-finans-ile-forma-sort-arkasi-sponsorluk-anlasmasi-imzaladi/4093807",
+      "source": "Anadolu Ajansı Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "AGENCY",
+      "published_at": "2026-10-19T20:38:07+03:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Anadolu Ajansı Spor"
+      ],
+      "evidence": [
+        {
+          "source": "Anadolu Ajansı Spor",
+          "source_tier": "AGENCY",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Trabzonspor, Albayrak Finans ile forma şort arkası sponsorluk anlaşması imzaladı",
+          "link": "https://www.aa.com.tr/tr/spor/trabzonspor-albayrak-finans-ile-forma-sort-arkasi-sponsorluk-anlasmasi-imzaladi/4093807",
+          "published_at": "2026-10-19T20:38:07+03:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
       "player_name": null,
       "from_club": null,
       "to_club": "Fenerbahçe",
@@ -536,88 +659,6 @@
           "title": "Galatasaray’da ilk imza belli oldu! Yıldız oyuncu kiralık geliyor... - Sabah",
           "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOSXJxMTZSV0JvQzF5RG83QjVaUGR2VllRaXVBc0FpeXRUUW1FSnpfYzBwR3JDUHFYZ1VlRXpMY3dRRjhiek1tYzExR29xLUFjTXh1NVBqOWE0SzN6QkEzZzJjQWNBMmxuWkVDaW5hZll2MmQwTzF3X1RQWVhoYmNob2U0NnEyMm83VXBJZ3AxeHVTWXpVQk92bXFlNy1JV1JQVjgtTlBDSmIxUdIBrAFBVV95cUxQRFZFRm9fRUsyYUtjTGhkTHdzVlNIZU1XUFo5QkNHVXIwb1pOMVFNbVJPalROTFB3ZDdPVWFMZTVMWEI3WFBSbm9nRzkzbW9NZk5WaEQxLXdxWXB4RDZpNG1BZXBpZ1I5RUt1UkplSTY2YjdHU19ZbC1JSWpFOURmelZQQzIwdTVrVmRKazJWcVJJd2tidlQ2OC1xSGZQVGVXT0JlLWdzMzgzUEJu?oc=5",
           "published_at": "2026-10-19T15:52:38+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": "Beşiktaş",
-      "to_club": "Trabzonspor",
-      "signal_type": "interest",
-      "window": "winter_2027",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "80f6599f4508",
-      "title": "SON DAKİKA! Trabzonspor – Beşiktaş | Dev maçta 11’ler belli oldu...",
-      "link": "https://www.sabah.com.tr/spor/futbol/2026/10/19/son-dakika-trabzonspor-besiktas-dev-macta-11ler-belli-oldu",
-      "source": "Sabah Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-10-19T17:24:51+03:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Sabah Spor"
-      ],
-      "evidence": [
-        {
-          "source": "Sabah Spor",
-          "source_tier": "MEDIA",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "SON DAKİKA! Trabzonspor – Beşiktaş | Dev maçta 11’ler belli oldu...",
-          "link": "https://www.sabah.com.tr/spor/futbol/2026/10/19/son-dakika-trabzonspor-besiktas-dev-macta-11ler-belli-oldu",
-          "published_at": "2026-10-19T17:24:51+03:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": null,
-      "to_club": "Galatasaray",
-      "signal_type": "transfer_fee",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "e04d19328bd9",
-      "title": "Boca Juniors'un seçim kozu Galatasaraylı yıldız: İşte teklif edilecek bonservis",
-      "link": "https://www.fotomac.com.tr/galatasaray/2026/10/19/boca-juniorsun-secim-kozu-galatasarayli-yildiz-iste-teklif-edilecek-bonservis",
-      "source": "Fotomaç",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-10-19T14:02:12+03:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Fotomaç"
-      ],
-      "evidence": [
-        {
-          "source": "Fotomaç",
-          "source_tier": "MEDIA",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "Boca Juniors'un seçim kozu Galatasaraylı yıldız: İşte teklif edilecek bonservis",
-          "link": "https://www.fotomac.com.tr/galatasaray/2026/10/19/boca-juniorsun-secim-kozu-galatasarayli-yildiz-iste-teklif-edilecek-bonservis",
-          "published_at": "2026-10-19T14:02:12+03:00",
           "first_observed_at": null
         }
       ],
@@ -790,47 +831,6 @@
     {
       "player_name": null,
       "from_club": null,
-      "to_club": "Kasımpaşa",
-      "signal_type": "departure",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "f76761ebe5d8",
-      "title": "Kasımpaşa sahasından 3 puanla ayrıldı",
-      "link": "https://www.aa.com.tr/tr/spor/kasimpasa-sahasindan-3-puanla-ayrildi/4092624",
-      "source": "Anadolu Ajansı Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "AGENCY",
-      "published_at": "2026-10-18T14:46:08+03:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Anadolu Ajansı Spor"
-      ],
-      "evidence": [
-        {
-          "source": "Anadolu Ajansı Spor",
-          "source_tier": "AGENCY",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "Kasımpaşa sahasından 3 puanla ayrıldı",
-          "link": "https://www.aa.com.tr/tr/spor/kasimpasa-sahasindan-3-puanla-ayrildi/4092624",
-          "published_at": "2026-10-18T14:46:08+03:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": null,
       "to_club": "Galatasaray",
       "signal_type": "transfer_fee",
       "window": "summer_2026",
@@ -864,47 +864,6 @@
           "title": "Galatasaray’dan hücuma dünyaca ünlü yıldız transferi! Bonservis görüşmeleri başladı - Takvim",
           "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNaURuOERwY2dVVnpWcUNXeEExNzNQUW9IMlExWldSTVl4anJFclFWeUpDZTFHMjZVME1mSml6MWEzcGN6ei02c1NGSHhGTDdwZU5ZYVQ4Sk1NekpMN1Z4Mm1IaTdzNlpxNUZ5WG5JSzF1alhqV2Z0ZU9lZjFfNXlQZDVPNnE5MWtncXFpUGtZSkRtNWlBTVlBcHRWOTY3TnZCZDF5RnZUUnF5SVBjWHFiZGtYSQ?oc=5",
           "published_at": "2026-10-17T17:22:20+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": null,
-      "to_club": "Galatasaray",
-      "signal_type": "interest",
-      "window": "winter_2027",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "ea1ff4644adf",
-      "title": "Galatasaray'a Bruno Fernandes'ten 1 iyi 1 kötü haber!",
-      "link": "https://www.takvim.com.tr/spor/galatasaray/2026/10/16/galatasaraydan-bruno-fernandes-icin-yeni-transfer-hamlesi",
-      "source": "Takvim Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-10-16T14:26:51+03:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Takvim Spor"
-      ],
-      "evidence": [
-        {
-          "source": "Takvim Spor",
-          "source_tier": "MEDIA",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "Galatasaray'a Bruno Fernandes'ten 1 iyi 1 kötü haber!",
-          "link": "https://www.takvim.com.tr/spor/galatasaray/2026/10/16/galatasaraydan-bruno-fernandes-icin-yeni-transfer-hamlesi",
-          "published_at": "2026-10-16T14:26:51+03:00",
           "first_observed_at": null
         }
       ],
