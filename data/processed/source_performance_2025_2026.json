@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-19T04:35:16.062841+00:00",
+  "generated_at": "2026-10-19T07:46:36.032567+00:00",
   "season": "2025_2026",
   "maturity_days": 14,
   "summary": {
-    "transfer_signals": 15,
+    "transfer_signals": 14,
     "official_events": 16,
     "official_events_with_timestamp": 5,
     "official_events_with_first_observed_timestamp": 16,
@@ -12,11 +12,11 @@
     "measured_lead_times": 0,
     "first_seen_lead_times": 11,
     "tracked_x_sources_waiting": 20,
-    "retained_claim_observations": 4521
+    "retained_claim_observations": 4522
   },
   "provider_coverage": {
     "google_news": {
-      "articles": 120,
+      "articles": 119,
       "queries": 30,
       "successful_queries": 30
     },
@@ -36,7 +36,7 @@
       "source": "Google News / medya",
       "source_tier": "CHANNEL",
       "source_type": "media",
-      "observations": 4518,
+      "observations": 4519,
       "scoreable_claims": 1399,
       "official_conversions": 13,
       "lead_hours": [],
@@ -56,7 +56,7 @@
       "lead_time_unavailable": 2,
       "matured_unconfirmed": 1361,
       "pending_claims": 25,
-      "unresolved_claims": 3119,
+      "unresolved_claims": 3120,
       "status": "FIRST_SEEN_BOUND",
       "score": 0.8,
       "average_lead_hours": null,
@@ -989,6 +989,26 @@
       "false_alarm_proxy_pct": 100.0
     },
     {
+      "source": "Haber61",
+      "source_tier": "MEDIA",
+      "source_type": "google_news",
+      "observations": 16,
+      "scoreable_claims": 2,
+      "official_conversions": 0,
+      "lead_hours": [],
+      "first_seen_lead_hours": [],
+      "lead_time_unavailable": 0,
+      "matured_unconfirmed": 2,
+      "pending_claims": 0,
+      "unresolved_claims": 14,
+      "status": "PARTIAL_MEASUREMENT",
+      "score": 0.0,
+      "average_lead_hours": null,
+      "average_first_seen_lead_hours": null,
+      "official_conversion_rate_pct": 0.0,
+      "false_alarm_proxy_pct": 100.0
+    },
+    {
       "source": "Yeni Şafak",
       "source_tier": "MEDIA",
       "source_type": "google_news",
@@ -1041,26 +1061,6 @@
       "matured_unconfirmed": 10,
       "pending_claims": 0,
       "unresolved_claims": 5,
-      "status": "PARTIAL_MEASUREMENT",
-      "score": 0.0,
-      "average_lead_hours": null,
-      "average_first_seen_lead_hours": null,
-      "official_conversion_rate_pct": 0.0,
-      "false_alarm_proxy_pct": 100.0
-    },
-    {
-      "source": "Haber61",
-      "source_tier": "MEDIA",
-      "source_type": "google_news",
-      "observations": 15,
-      "scoreable_claims": 2,
-      "official_conversions": 0,
-      "lead_hours": [],
-      "first_seen_lead_hours": [],
-      "lead_time_unavailable": 0,
-      "matured_unconfirmed": 2,
-      "pending_claims": 0,
-      "unresolved_claims": 13,
       "status": "PARTIAL_MEASUREMENT",
       "score": 0.0,
       "average_lead_hours": null,
