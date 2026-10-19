@@ -1,9 +1,9 @@
 # Transfermarkt Oyuncu Eşleşme İnceleme Kuyruğu
 
-- TFF profil: 878
+- TFF profil: 879
 - Transfermarkt snapshot: 18/18 kulüp, 817 oyuncu
-- Snapshot kapsamındaki TFF profil: 588
-- Doğrulanmış snapshot eşleşmesi: 617
+- Snapshot kapsamındaki TFF profil: 589
+- Doğrulanmış snapshot eşleşmesi: 618
 - Manuel eşleme ile kullanılan profil: 4
 - Ağ teyidi bekleyen manuel eşleme: 4
 - Çözülmemiş profil: 257
@@ -37,7 +37,7 @@
 | GENÇLERBİRLİĞİ | 40 | 48 | 38 | 0 | 2 | %95.0 | %95.0 |
 | GÖZTEPE A.Ş. | 36 | 36 | 30 | 1 | 5 | %83.3 | %86.1 |
 | HESAP.COM ANTALYASPOR | 0 | 48 | 0 | 0 | 0 | %0 | %0 |
-| KASIMPAŞA A.Ş. | 38 | 60 | 35 | 0 | 3 | %92.1 | %92.1 |
+| KASIMPAŞA A.Ş. | 39 | 60 | 36 | 0 | 3 | %92.3 | %92.3 |
 | KOCAELİSPOR | 35 | 39 | 33 | 0 | 2 | %94.3 | %94.3 |
 | MISIRLI.COM.TR FATİH KARAGÜMRÜK | 0 | 46 | 0 | 0 | 0 | %0 | %0 |
 | RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ | 30 | 32 | 29 | 0 | 1 | %96.7 | %96.7 |

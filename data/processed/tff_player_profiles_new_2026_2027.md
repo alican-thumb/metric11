@@ -1,12 +1,12 @@
 # TFF Oyuncu Profilleri
 
 - Takım filtresi: Yok
-- Profil sayısı: 486
+- Profil sayısı: 489
 - Hata sayısı: 0
 - Ortalama yaş: 25.8
-- Ortalama kalan sözleşme ayı: 21.1
-- 23 yaş ve altı oyuncu: 168
-- 13 ay içinde sözleşmesi bitecek oyuncu: 187
+- Ortalama kalan sözleşme ayı: 21.0
+- 23 yaş ve altı oyuncu: 169
+- 13 ay içinde sözleşmesi bitecek oyuncu: 190
 
 ## Genç Oyuncular
 
@@ -59,6 +59,7 @@
 - AHMED ILDIZ (ARCA ÇORUM FK): kalan ay=8, bitiş=2027-06-30
 - AHMED KUTUCU (ÇAYKUR RİZESPOR A.Ş.): kalan ay=8, bitiş=2027-06-30
 - AHMED MORTADHA BEN OUANES (KASIMPAŞA A.Ş.): kalan ay=8, bitiş=2027-06-30
+- AHMET OĞUZ (TÜMOSAN KONYASPOR): kalan ay=8, bitiş=2027-06-30
 - ALEX OJAHN  MATOS (GÖZTEPE A.Ş.): kalan ay=8, bitiş=2027-06-30
 - ALEXANDRE MANUEL PENETRA CORREIRA (ARCA ÇORUM FK): kalan ay=8, bitiş=2027-06-30
 - ALEXANDRU IULIAN MAXIM (GAZİANTEP FUTBOL KULÜBÜ A.Ş.): kalan ay=8, bitiş=2027-06-30
@@ -72,4 +73,3 @@
 - ANDREAS GIANNIOTIS (KASIMPAŞA A.Ş.): kalan ay=8, bitiş=2027-06-30
 - ANDREAS SKOV OLSEN (İSTANBUL BAŞAKŞEHİR FK): kalan ay=8, bitiş=2027-06-30
 - ANFERNEE JAMAL DIJKSTEEL (KOCAELİSPOR): kalan ay=8, bitiş=2027-06-30
-- ARDA KIZILDAĞ (GAZİANTEP FUTBOL KULÜBÜ A.Ş.): kalan ay=8, bitiş=2027-06-30
