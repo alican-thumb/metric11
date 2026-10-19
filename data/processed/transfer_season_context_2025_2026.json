@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-19T13:05:09.503596+00:00",
+  "generated_at": "2026-10-19T17:01:38.728780+00:00",
   "season": "2025_2026",
   "summary": {
     "free_agents_count": 94,
     "final_year_count": 338,
-    "transfer_signals_count": 15,
+    "transfer_signals_count": 13,
     "transfer_status_counts": {
       "OFFICIAL": 0,
       "CORROBORATED": 0,
-      "RUMOR": 1,
-      "REVIEW_REQUIRED": 14
+      "RUMOR": 0,
+      "REVIEW_REQUIRED": 13
     },
     "promotion_events_count": 1,
     "free_agent_total_market_value_eur": 180425000
@@ -460,41 +460,164 @@
   ],
   "transfer_signals": [
     {
-      "player_name": "Muhammed Salah",
+      "player_name": null,
       "from_club": null,
-      "to_club": "Trabzonspor",
-      "signal_type": "interest",
-      "window": "summer_2026",
+      "to_club": "Fenerbahçe",
+      "signal_type": "transfer_fee",
+      "window": "winter_2027",
       "confidence": "LOW",
-      "direction_quality": "HEADLINE_EXPLICIT_DIRECTION",
-      "article_id": "b54f99791fda",
-      "title": "Muhammed Salah'ın Trabzonspor'a Transferi Ablasına Yaradı! Trabzon'dan Teklif Üstüne Teklif Geliyor - Taka Gazete",
-      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQOUw3QXI1ZnZ1WEptOERhSDMyYjMyUXZaX3laMktiN0h6Y3cxX2R3MGdqUUJVb0RUcTNEXzV0Mm1kUDQtNGZYVjNnWHl2QzJ1ang0b1VKTGpQSzdTd2M4d1VfMngxX3NscEZyZmF0R0Q1ek9kUjl4OEk3d01NVXVpSF9jQmdpUGRFUC1Od05zQlhsNzNEVE9zSVdDcUttWWVZQzZ1aURYNWlSWmhlampCY1RHNnQydWZnU05tVTBTRDNBRFE?oc=5",
-      "source": "Taka Gazete",
-      "source_type": "google_news",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "142ebf4b0745",
+      "title": "6,7 milyon euroluk transfer şaşırttı! Fenerbahçe'den ocak ayında ayrılabilir",
+      "link": "https://www.takvim.com.tr/spor/fenerbahce/2026/10/19/fenerbahcede-tarihe-gecen-transfer-ognjen-mimovic",
+      "source": "Takvim Spor",
+      "source_type": "rss",
       "account_type": null,
-      "query": "Trabzonspor transfer",
+      "query": null,
       "source_tier": "MEDIA",
-      "published_at": "2026-10-18T07:00:00+00:00",
+      "published_at": "2026-10-19T19:24:35+03:00",
       "first_observed_at": null,
       "summary_tr": "",
-      "entity_confidence": "MEDIUM",
-      "verification_status": "RUMOR",
-      "interpretation": "Tek kaynaklı transfer iddiası; yalnız transfer radarında izlenir.",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
       "source_count": 1,
       "sources": [
-        "Taka Gazete"
+        "Takvim Spor"
       ],
       "evidence": [
         {
-          "source": "Taka Gazete",
+          "source": "Takvim Spor",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "6,7 milyon euroluk transfer şaşırttı! Fenerbahçe'den ocak ayında ayrılabilir",
+          "link": "https://www.takvim.com.tr/spor/fenerbahce/2026/10/19/fenerbahcede-tarihe-gecen-transfer-ognjen-mimovic",
+          "published_at": "2026-10-19T19:24:35+03:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": null,
+      "from_club": null,
+      "to_club": "Galatasaray",
+      "signal_type": "loan",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "ceb0197878cf",
+      "title": "Galatasaray’da ilk imza belli oldu! Yıldız oyuncu kiralık geliyor... - Sabah",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOSXJxMTZSV0JvQzF5RG83QjVaUGR2VllRaXVBc0FpeXRUUW1FSnpfYzBwR3JDUHFYZ1VlRXpMY3dRRjhiek1tYzExR29xLUFjTXh1NVBqOWE0SzN6QkEzZzJjQWNBMmxuWkVDaW5hZll2MmQwTzF3X1RQWVhoYmNob2U0NnEyMm83VXBJZ3AxeHVTWXpVQk92bXFlNy1JV1JQVjgtTlBDSmIxUdIBrAFBVV95cUxQRFZFRm9fRUsyYUtjTGhkTHdzVlNIZU1XUFo5QkNHVXIwb1pOMVFNbVJPalROTFB3ZDdPVWFMZTVMWEI3WFBSbm9nRzkzbW9NZk5WaEQxLXdxWXB4RDZpNG1BZXBpZ1I5RUt1UkplSTY2YjdHU19ZbC1JSWpFOURmelZQQzIwdTVrVmRKazJWcVJJd2tidlQ2OC1xSGZQVGVXT0JlLWdzMzgzUEJu?oc=5",
+      "source": "Sabah",
+      "source_type": "google_news",
+      "account_type": null,
+      "query": "Galatasaray transfer",
+      "source_tier": "MEDIA",
+      "published_at": "2026-10-19T15:52:38+00:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Sabah"
+      ],
+      "evidence": [
+        {
+          "source": "Sabah",
           "source_tier": "MEDIA",
           "source_type": "google_news",
           "account_type": null,
-          "query": "Trabzonspor transfer",
-          "title": "Muhammed Salah'ın Trabzonspor'a Transferi Ablasına Yaradı! Trabzon'dan Teklif Üstüne Teklif Geliyor - Taka Gazete",
-          "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQOUw3QXI1ZnZ1WEptOERhSDMyYjMyUXZaX3laMktiN0h6Y3cxX2R3MGdqUUJVb0RUcTNEXzV0Mm1kUDQtNGZYVjNnWHl2QzJ1ang0b1VKTGpQSzdTd2M4d1VfMngxX3NscEZyZmF0R0Q1ek9kUjl4OEk3d01NVXVpSF9jQmdpUGRFUC1Od05zQlhsNzNEVE9zSVdDcUttWWVZQzZ1aURYNWlSWmhlampCY1RHNnQydWZnU05tVTBTRDNBRFE?oc=5",
-          "published_at": "2026-10-18T07:00:00+00:00",
+          "query": "Galatasaray transfer",
+          "title": "Galatasaray’da ilk imza belli oldu! Yıldız oyuncu kiralık geliyor... - Sabah",
+          "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOSXJxMTZSV0JvQzF5RG83QjVaUGR2VllRaXVBc0FpeXRUUW1FSnpfYzBwR3JDUHFYZ1VlRXpMY3dRRjhiek1tYzExR29xLUFjTXh1NVBqOWE0SzN6QkEzZzJjQWNBMmxuWkVDaW5hZll2MmQwTzF3X1RQWVhoYmNob2U0NnEyMm83VXBJZ3AxeHVTWXpVQk92bXFlNy1JV1JQVjgtTlBDSmIxUdIBrAFBVV95cUxQRFZFRm9fRUsyYUtjTGhkTHdzVlNIZU1XUFo5QkNHVXIwb1pOMVFNbVJPalROTFB3ZDdPVWFMZTVMWEI3WFBSbm9nRzkzbW9NZk5WaEQxLXdxWXB4RDZpNG1BZXBpZ1I5RUt1UkplSTY2YjdHU19ZbC1JSWpFOURmelZQQzIwdTVrVmRKazJWcVJJd2tidlQ2OC1xSGZQVGVXT0JlLWdzMzgzUEJu?oc=5",
+          "published_at": "2026-10-19T15:52:38+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": null,
+      "from_club": "Beşiktaş",
+      "to_club": "Trabzonspor",
+      "signal_type": "interest",
+      "window": "winter_2027",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "80f6599f4508",
+      "title": "SON DAKİKA! Trabzonspor – Beşiktaş | Dev maçta 11’ler belli oldu...",
+      "link": "https://www.sabah.com.tr/spor/futbol/2026/10/19/son-dakika-trabzonspor-besiktas-dev-macta-11ler-belli-oldu",
+      "source": "Sabah Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-10-19T17:24:51+03:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Sabah Spor"
+      ],
+      "evidence": [
+        {
+          "source": "Sabah Spor",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "SON DAKİKA! Trabzonspor – Beşiktaş | Dev maçta 11’ler belli oldu...",
+          "link": "https://www.sabah.com.tr/spor/futbol/2026/10/19/son-dakika-trabzonspor-besiktas-dev-macta-11ler-belli-oldu",
+          "published_at": "2026-10-19T17:24:51+03:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": null,
+      "from_club": null,
+      "to_club": "Galatasaray",
+      "signal_type": "transfer_fee",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "e04d19328bd9",
+      "title": "Boca Juniors'un seçim kozu Galatasaraylı yıldız: İşte teklif edilecek bonservis",
+      "link": "https://www.fotomac.com.tr/galatasaray/2026/10/19/boca-juniorsun-secim-kozu-galatasarayli-yildiz-iste-teklif-edilecek-bonservis",
+      "source": "Fotomaç",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-10-19T14:02:12+03:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Fotomaç"
+      ],
+      "evidence": [
+        {
+          "source": "Fotomaç",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Boca Juniors'un seçim kozu Galatasaraylı yıldız: İşte teklif edilecek bonservis",
+          "link": "https://www.fotomac.com.tr/galatasaray/2026/10/19/boca-juniorsun-secim-kozu-galatasarayli-yildiz-iste-teklif-edilecek-bonservis",
+          "published_at": "2026-10-19T14:02:12+03:00",
           "first_observed_at": null
         }
       ],
@@ -536,47 +659,6 @@
           "title": "Galatasaray ile Trabzonspor aynı golcünün peşinde: Premier Lig'de kadro dışı kaldı - Nefes Gazetesi",
           "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOM3hFQkw5Q0V3WENLWk9QM0NwQ0lpTWZEbW5SbGhLOFJOQkZIbHpDR1AxOHdpOE9pUmsxemtJVTRQNlJuaFVDemtfU0ZBNE1VbWtES2E4Z3lXOWRrV09ocFYxNFMxb3FBaUxxSGxtNG1DX2xsOXBrZjVkY1QxVmNiVm5jbjhpUWhheGszb052TkxKOVp0UkxMLXF3elpYSm00VzAyV2N5LXJ2WkYxMEhhNjZB?oc=5",
           "published_at": "2026-10-19T08:16:28+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": "Beşiktaş",
-      "to_club": "Trabzonspor",
-      "signal_type": "interest",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "8b2e34f6b8e6",
-      "title": "Trabzonspor’da Thomas Reis Beşiktaş karşısında tarihi rekorun peşinde! - Haber61",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNMjdfOW5CdGtMdmwzWnpVWHVlbHFFQ08wVnpHd1V1MnZ6MjFsWGhraDlEc3hqNUJSVVVHLUZkMFpFNEJNZVFSbFhIMWlJaWxLS3JVOVQyY09vcVVzQVliMTdONWo0ancyOWxNbkQtLUNVNmdMSkhORWNRbUFXeTlsQ0Z4YS1ycTNCYzFNNDVBLXFjNVVVQW1BTm1NcW1ZUU9CWTBVRWxFWkw1cS1aT0ZwQk13?oc=5",
-      "source": "Haber61",
-      "source_type": "google_news",
-      "account_type": null,
-      "query": "Süper Lig teknik direktör",
-      "source_tier": "MEDIA",
-      "published_at": "2026-10-19T06:25:19+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Haber61"
-      ],
-      "evidence": [
-        {
-          "source": "Haber61",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Süper Lig teknik direktör",
-          "title": "Trabzonspor’da Thomas Reis Beşiktaş karşısında tarihi rekorun peşinde! - Haber61",
-          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNMjdfOW5CdGtMdmwzWnpVWHVlbHFFQ08wVnpHd1V1MnZ6MjFsWGhraDlEc3hqNUJSVVVHLUZkMFpFNEJNZVFSbFhIMWlJaWxLS3JVOVQyY09vcVVzQVliMTdONWo0ancyOWxNbkQtLUNVNmdMSkhORWNRbUFXeTlsQ0Z4YS1ycTNCYzFNNDVBLXFjNVVVQW1BTm1NcW1ZUU9CWTBVRWxFWkw1cS1aT0ZwQk13?oc=5",
-          "published_at": "2026-10-19T06:25:19+00:00",
           "first_observed_at": null
         }
       ],
@@ -707,47 +789,6 @@
     },
     {
       "player_name": null,
-      "from_club": "Beşiktaş",
-      "to_club": "Trabzonspor",
-      "signal_type": "interest",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "27a9e236578b",
-      "title": "Trabzonspor'da Thomas Reis, Beşiktaş maçında ilk peşinde",
-      "link": "https://www.cnnturk.com/spor/futbol/trabzonsporda-thomas-reis-besiktas-macinda-ilk-pesinde-3480973",
-      "source": "CNN Türk Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-10-18T12:05:02+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "CNN Türk Spor"
-      ],
-      "evidence": [
-        {
-          "source": "CNN Türk Spor",
-          "source_tier": "MEDIA",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "Trabzonspor'da Thomas Reis, Beşiktaş maçında ilk peşinde",
-          "link": "https://www.cnnturk.com/spor/futbol/trabzonsporda-thomas-reis-besiktas-macinda-ilk-pesinde-3480973",
-          "published_at": "2026-10-18T12:05:02+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
       "from_club": null,
       "to_club": "Kasımpaşa",
       "signal_type": "departure",
@@ -782,47 +823,6 @@
           "title": "Kasımpaşa sahasından 3 puanla ayrıldı",
           "link": "https://www.aa.com.tr/tr/spor/kasimpasa-sahasindan-3-puanla-ayrildi/4092624",
           "published_at": "2026-10-18T14:46:08+03:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": "Beşiktaş",
-      "to_club": "Trabzonspor",
-      "signal_type": "departure",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "f3ced050dcae",
-      "title": "Beşiktaş ile Trabzonspor, 144. kez karşılaşacak",
-      "link": "https://www.aa.com.tr/tr/spor/besiktas-ile-trabzonspor-144-kez-karsilasacak/4092433",
-      "source": "Anadolu Ajansı Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "AGENCY",
-      "published_at": "2026-10-18T11:04:21+03:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Anadolu Ajansı Spor"
-      ],
-      "evidence": [
-        {
-          "source": "Anadolu Ajansı Spor",
-          "source_tier": "AGENCY",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "Beşiktaş ile Trabzonspor, 144. kez karşılaşacak",
-          "link": "https://www.aa.com.tr/tr/spor/besiktas-ile-trabzonspor-144-kez-karsilasacak/4092433",
-          "published_at": "2026-10-18T11:04:21+03:00",
           "first_observed_at": null
         }
       ],
@@ -872,47 +872,6 @@
     {
       "player_name": null,
       "from_club": null,
-      "to_club": "Fenerbahçe",
-      "signal_type": "transfer_fee",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "9bc240806056",
-      "title": "Fenerbahçe’nin eski yıldızına dev talip! Bonservisine 40 milyon euro - Takvim",
-      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNc21remV0NDhoUDRaNlg2bC16a25wV2g5MUUtbllhODQ2cVM4SmFpLXVQanhXYVNmZGZ4VG42bElwNUxHMEQ5S08zT1RfQjZmR2lRQndQeUl5SjdzMXNuMS1zQUhMajNQRVF4R3NtVnd5TzBzRElUTHJaTEtjUkFXN0lHdGJNSzdZQjNqTGw2VnJXREJ4cFcwZ2J5ZnFxSE13cXJWeHo2bGpzRlU?oc=5",
-      "source": "Takvim",
-      "source_type": "google_news",
-      "account_type": null,
-      "query": "Fenerbahçe transfer",
-      "source_tier": "MEDIA",
-      "published_at": "2026-10-17T16:33:22+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Takvim"
-      ],
-      "evidence": [
-        {
-          "source": "Takvim",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Fenerbahçe transfer",
-          "title": "Fenerbahçe’nin eski yıldızına dev talip! Bonservisine 40 milyon euro - Takvim",
-          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNc21remV0NDhoUDRaNlg2bC16a25wV2g5MUUtbllhODQ2cVM4SmFpLXVQanhXYVNmZGZ4VG42bElwNUxHMEQ5S08zT1RfQjZmR2lRQndQeUl5SjdzMXNuMS1zQUhMajNQRVF4R3NtVnd5TzBzRElUTHJaTEtjUkFXN0lHdGJNSzdZQjNqTGw2VnJXREJ4cFcwZ2J5ZnFxSE13cXJWeHo2bGpzRlU?oc=5",
-          "published_at": "2026-10-17T16:33:22+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": null,
       "to_club": "Galatasaray",
       "signal_type": "interest",
       "window": "winter_2027",
@@ -946,49 +905,6 @@
           "title": "Galatasaray'a Bruno Fernandes'ten 1 iyi 1 kötü haber!",
           "link": "https://www.takvim.com.tr/spor/galatasaray/2026/10/16/galatasaraydan-bruno-fernandes-icin-yeni-transfer-hamlesi",
           "published_at": "2026-10-16T14:26:51+03:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": "MASON WILL JOHN GREENWOOD",
-      "from_club": "FENERBAHÇE A.Ş.",
-      "to_club": null,
-      "transfer_type": "permanent",
-      "window": "summer_2026",
-      "signal_type": "offer",
-      "confidence": "LOW",
-      "tm_market_value_eur": 40000000,
-      "direction_quality": "TARGET_UNRESOLVED",
-      "article_id": "84d1d34bdf73",
-      "title": "Fenerbahçe istemişti 2. Greenwood projesi olacak! Transfer için ilk teklif",
-      "link": "https://www.takvim.com.tr/spor/fenerbahce/2026/10/15/fenerbahcenin-istedigi-jadon-sanchoya-getafe-talip",
-      "source": "Takvim Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-10-15T19:11:46+03:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "MEDIUM",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Takvim Spor"
-      ],
-      "evidence": [
-        {
-          "source": "Takvim Spor",
-          "source_tier": "MEDIA",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "Fenerbahçe istemişti 2. Greenwood projesi olacak! Transfer için ilk teklif",
-          "link": "https://www.takvim.com.tr/spor/fenerbahce/2026/10/15/fenerbahcenin-istedigi-jadon-sanchoya-getafe-talip",
-          "published_at": "2026-10-15T19:11:46+03:00",
           "first_observed_at": null
         }
       ],
