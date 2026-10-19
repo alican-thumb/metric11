@@ -1,6 +1,6 @@
 {
   "available": true,
-  "generated_at": "2026-10-18T20:39:32.940431",
+  "generated_at": "2026-10-19T00:15:08.368312",
   "week": 8,
   "matches": [
     {
@@ -134,29 +134,18 @@
       "date": "18 Eki",
       "home_team": "İSTANBUL BAŞAKŞEHİR FK",
       "away_team": "GAZİANTEP FUTBOL KULÜBÜ A.Ş.",
-      "is_played": false,
-      "actual_score": null,
+      "is_played": true,
+      "actual_score": "2 - 1",
       "predicted": "draw",
       "pick_text": "Beraberlik",
       "home_win_probability": 0.375,
       "draw_probability": 0.281,
       "away_win_probability": 0.344,
-      "data_confidence": "LOW",
+      "data_confidence": "PLAYED",
       "recommended_scoreline": "1-1",
       "expected_home_goals": 1.2,
       "expected_away_goals": 1.14,
-      "signals": {
-        "over_2_5_probability": 0.415,
-        "btts_probability": 0.475,
-        "expected_total_cards": 4.5,
-        "red_card_risk": 0.23,
-        "home_card_data_available": true,
-        "away_card_data_available": true,
-        "no_goal_probability": 0.096,
-        "home_scores_first_probability": 0.463,
-        "away_scores_first_probability": 0.44,
-        "likely_goal_band": "76-90+"
-      }
+      "signals": null
     },
     {
       "match_id": "317847",
@@ -190,17 +179,17 @@
   ],
   "last_week": {
     "week": 8,
-    "evaluated_matches": 7,
+    "evaluated_matches": 8,
     "correct": 6,
-    "accuracy": 0.8571,
+    "accuracy": 0.75,
     "actual_draws": 0,
     "draws_caught": 0,
     "draw_recall": null,
     "high_conf_matches": 4,
     "high_conf_correct": 4,
     "high_conf_accuracy": 1.0,
-    "brier_score": 0.3596,
-    "log_loss": 0.6711,
+    "brier_score": 0.3881,
+    "log_loss": 0.7098,
     "confidence_breakdown": {
       "HIGH": {
         "matches": 4,
@@ -221,13 +210,13 @@
         "log_loss": 0.7573
       },
       "LOW": {
-        "matches": 1,
+        "matches": 2,
         "correct": 0,
         "accuracy": 0.0,
-        "avg_stated_probability": 0.288,
-        "calibration_gap": -0.288,
-        "brier_score": 0.7742,
-        "log_loss": 1.2518
+        "avg_stated_probability": 0.2845,
+        "calibration_gap": -0.2845,
+        "brier_score": 0.6811,
+        "log_loss": 1.1163
       }
     },
     "pick_side_breakdown": {
@@ -242,11 +231,11 @@
         }
       },
       "draw": {
-        "matches": 1,
+        "matches": 2,
         "correct": 0,
         "accuracy": 0.0,
         "actual": {
-          "home": 0,
+          "home": 1,
           "draw": 0,
           "away": 1
         }
