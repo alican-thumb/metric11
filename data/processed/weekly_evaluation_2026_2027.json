@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-19T22:21:53.251965",
+  "generated_at": "2026-10-20T04:44:12.428669",
   "season": "2026-2027",
   "summary": {
-    "evaluated_matches": 71,
-    "correct": 33,
-    "accuracy": 0.4648,
+    "evaluated_matches": 72,
+    "correct": 34,
+    "accuracy": 0.4722,
     "actual_draws": 14,
     "draws_caught": 2,
     "draw_recall": 0.1429,
     "high_conf_matches": 28,
     "high_conf_correct": 17,
     "high_conf_accuracy": 0.6071,
-    "brier_score": 0.618,
-    "log_loss": 1.0252,
+    "brier_score": 0.6168,
+    "log_loss": 1.0234,
     "confidence_breakdown": {
       "HIGH": {
         "matches": 28,
@@ -33,22 +33,22 @@
         "log_loss": 1.1111
       },
       "LOW": {
-        "matches": 18,
-        "correct": 9,
-        "accuracy": 0.5,
-        "avg_stated_probability": 0.3764,
-        "calibration_gap": 0.1236,
-        "brier_score": 0.6614,
-        "log_loss": 1.095
+        "matches": 19,
+        "correct": 10,
+        "accuracy": 0.5263,
+        "avg_stated_probability": 0.3781,
+        "calibration_gap": 0.1482,
+        "brier_score": 0.6545,
+        "log_loss": 1.0847
       }
     },
     "pick_side_breakdown": {
       "home": {
-        "matches": 41,
-        "correct": 22,
-        "accuracy": 0.5366,
+        "matches": 42,
+        "correct": 23,
+        "accuracy": 0.5476,
         "actual": {
-          "home": 22,
+          "home": 23,
           "draw": 7,
           "away": 12
         }
@@ -79,17 +79,17 @@
   "last_week": {
     "week": 8,
     "summary": {
-      "evaluated_matches": 8,
-      "correct": 6,
-      "accuracy": 0.75,
+      "evaluated_matches": 9,
+      "correct": 7,
+      "accuracy": 0.7778,
       "actual_draws": 0,
       "draws_caught": 0,
       "draw_recall": null,
       "high_conf_matches": 4,
       "high_conf_correct": 4,
       "high_conf_accuracy": 1.0,
-      "brier_score": 0.3881,
-      "log_loss": 0.7098,
+      "brier_score": 0.4039,
+      "log_loss": 0.7308,
       "confidence_breakdown": {
         "HIGH": {
           "matches": 4,
@@ -110,22 +110,22 @@
           "log_loss": 0.7573
         },
         "LOW": {
-          "matches": 2,
-          "correct": 0,
-          "accuracy": 0.0,
-          "avg_stated_probability": 0.2845,
-          "calibration_gap": -0.2845,
-          "brier_score": 0.6811,
-          "log_loss": 1.1163
+          "matches": 3,
+          "correct": 1,
+          "accuracy": 0.3333,
+          "avg_stated_probability": 0.3253,
+          "calibration_gap": 0.008,
+          "brier_score": 0.6309,
+          "log_loss": 1.0438
         }
       },
       "pick_side_breakdown": {
         "home": {
-          "matches": 5,
-          "correct": 5,
+          "matches": 6,
+          "correct": 6,
           "accuracy": 1.0,
           "actual": {
-            "home": 5,
+            "home": 6,
             "draw": 0,
             "away": 0
           }
@@ -280,6 +280,22 @@
         "home_win_probability": 0.375,
         "draw_probability": 0.281,
         "away_win_probability": 0.344
+      },
+      {
+        "match_id": "317847",
+        "date_time": "19.10.2026 20:00",
+        "home_team": "TRABZONSPOR A.Ş.",
+        "away_team": "BEŞİKTAŞ A.Ş.",
+        "actual_score": "2 - 0",
+        "actual": "home",
+        "predicted": "home",
+        "raw_predicted": "home",
+        "correct": true,
+        "data_confidence": "PLAYED",
+        "prediction_confidence": "LOW",
+        "home_win_probability": 0.407,
+        "draw_probability": 0.262,
+        "away_win_probability": 0.332
       }
     ]
   },
@@ -1848,17 +1864,17 @@
     {
       "week": 8,
       "summary": {
-        "evaluated_matches": 8,
-        "correct": 6,
-        "accuracy": 0.75,
+        "evaluated_matches": 9,
+        "correct": 7,
+        "accuracy": 0.7778,
         "actual_draws": 0,
         "draws_caught": 0,
         "draw_recall": null,
         "high_conf_matches": 4,
         "high_conf_correct": 4,
         "high_conf_accuracy": 1.0,
-        "brier_score": 0.3881,
-        "log_loss": 0.7098,
+        "brier_score": 0.4039,
+        "log_loss": 0.7308,
         "confidence_breakdown": {
           "HIGH": {
             "matches": 4,
@@ -1879,22 +1895,22 @@
             "log_loss": 0.7573
           },
           "LOW": {
-            "matches": 2,
-            "correct": 0,
-            "accuracy": 0.0,
-            "avg_stated_probability": 0.2845,
-            "calibration_gap": -0.2845,
-            "brier_score": 0.6811,
-            "log_loss": 1.1163
+            "matches": 3,
+            "correct": 1,
+            "accuracy": 0.3333,
+            "avg_stated_probability": 0.3253,
+            "calibration_gap": 0.008,
+            "brier_score": 0.6309,
+            "log_loss": 1.0438
           }
         },
         "pick_side_breakdown": {
           "home": {
-            "matches": 5,
-            "correct": 5,
+            "matches": 6,
+            "correct": 6,
             "accuracy": 1.0,
             "actual": {
-              "home": 5,
+              "home": 6,
               "draw": 0,
               "away": 0
             }
@@ -2049,6 +2065,22 @@
           "home_win_probability": 0.375,
           "draw_probability": 0.281,
           "away_win_probability": 0.344
+        },
+        {
+          "match_id": "317847",
+          "date_time": "19.10.2026 20:00",
+          "home_team": "TRABZONSPOR A.Ş.",
+          "away_team": "BEŞİKTAŞ A.Ş.",
+          "actual_score": "2 - 0",
+          "actual": "home",
+          "predicted": "home",
+          "raw_predicted": "home",
+          "correct": true,
+          "data_confidence": "PLAYED",
+          "prediction_confidence": "LOW",
+          "home_win_probability": 0.407,
+          "draw_probability": 0.262,
+          "away_win_probability": 0.332
         }
       ]
     }
