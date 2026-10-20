@@ -25,10 +25,10 @@
 | 11 | CORENDON ALANYASPOR | YÜKSEK | 41.8 | 1.5 | 1.0 | 1.125 | 8 numara / fizik motoru |
 | 12 | RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ | YÜKSEK | 38.4 | 1.375 | 1.5 | 1.5 | Sol açık / çizgi kırıcı |
 | 13 | ÇORUM FK | NORMAL | 29.9 | 1.625 | 2.25 | 1.625 | Kaleci / istikrar |
-| 14 | AMED SFK | STABİL | 17.4 | 2.125 | 2.25 | 1.125 | Kaleci / istikrar |
-| 15 | GALATASARAY A.Ş. | STABİL | 17.1 | 2.375 | 2.125 | 1.375 | Sol açık / çizgi kırıcı |
-| 16 | BEŞİKTAŞ A.Ş. | STABİL | 17.0 | 2.143 | 2.286 | 1.143 | Sol açık / çizgi kırıcı |
-| 17 | TRABZONSPOR A.Ş. | STABİL | 17.0 | 1.857 | 2.286 | 0.714 | Sol açık / çizgi kırıcı |
+| 14 | BEŞİKTAŞ A.Ş. | NORMAL | 24.4 | 1.875 | 2.0 | 1.25 | Sol açık / çizgi kırıcı |
+| 15 | AMED SFK | STABİL | 17.4 | 2.125 | 2.25 | 1.125 | Kaleci / istikrar |
+| 16 | GALATASARAY A.Ş. | STABİL | 17.1 | 2.375 | 2.125 | 1.375 | Sol açık / çizgi kırıcı |
+| 17 | TRABZONSPOR A.Ş. | STABİL | 14.2 | 2.0 | 2.25 | 0.625 | Sol açık / çizgi kırıcı |
 | 18 | FENERBAHÇE A.Ş. | STABİL | 11.5 | 2.0 | 2.75 | 0.75 | Sol açık / çizgi kırıcı |
 
 ## Market Alarmları
@@ -425,6 +425,27 @@ Zayıf nokta: yeni lig takımı
   3. VICTOR JAMES OSIMHEN (GALATASARAY A.Ş.) | 27y | 15 gol | PREMİUM TRANSFER | MEDIUM | skor 24.7
      → Yeni lig takımı sorunu var; Santrfor / skor yükü bu açığı kapatacak. Osimhen: 15 gol, 19 maçta sahada. Uzun sözleşme — yüksek bonusu göze almalı.
 
+### BEŞİKTAŞ A.Ş.  [NORMAL]
+*1.875 puan/maç | maç başına 2.0 attı | maç başına 1.25 yedi*
+
+Zayıf nokta: kadro derinliği sınırlı
+
+**Sol açık / çizgi kırıcı** — Büyük maç rotasyonunu besleyecek ve kanat derinliğini artıracak yaratıcı profil.
+  1. DORGELES NENE (FENERBAHÇE A.Ş.) | 23y | 10 gol | PREMİUM TRANSFER | HIGH | skor 24.2
+     → Kadro derinliği sınırlı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Nene: 10 gol, 16 maçta sahada. Uzun sözleşme — yüksek bonusu göze almalı. 23 yaş, uzun vadeli yatırım profili.
+  2. ERNEST MUÇİ (TRABZONSPOR A.Ş.) | 25y | 11 gol | PREMİUM TRANSFER | MEDIUM | skor 22.6
+     → Kadro derinliği sınırlı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Muçi̇: 11 gol, 22 maç. Uzun sözleşme — yüksek bonusu göze almalı.
+  3. BARIŞ ALPER YILMAZ (GALATASARAY A.Ş.) | 26y | 8 gol | PREMİUM TRANSFER | MEDIUM | skor 22.1
+     → Kadro derinliği sınırlı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Yilmaz: 8 gol, 27 maç. Uzun sözleşme — yüksek bonusu göze almalı.
+
+**Bek / çift yönlü koridor** — Koridor derinliğini artıracak, büyük maç baskısında rotasyon sağlayacak çift yönlü bek.
+  1. ARDA OKAN KURTULAN (GÖZTEPE A.Ş.) | 23y | 4 gol | PREMİUM TRANSFER | HIGH | skor 16.9
+     → Kadro derinliği sınırlı sorunu var; Bek / çift yönlü koridor bu açığı kapatacak. Kurtulan: 4 gol, 27 maç. Uzun sözleşme — yüksek bonusu göze almalı. 23 yaş, uzun vadeli yatırım profili.
+  2. YHOAN MANY ANDZOUANA (TÜMOSAN KONYASPOR) | 29y | 2 gol | PREMİUM TRANSFER | MEDIUM | skor 16.7
+     → Kadro derinliği sınırlı sorunu var; Bek / çift yönlü koridor bu açığı kapatacak. Andzouana: 2 gol, 29 maç. Uzun sözleşme — yüksek bonusu göze almalı.
+  3. WAGNER FABRICIO CARDOSO DE PINA (TRABZONSPOR A.Ş.) | 23y | 0 gol | PREMİUM TRANSFER | HIGH | skor 16.1
+     → Kadro derinliği sınırlı sorunu var; Bek / çift yönlü koridor bu açığı kapatacak. Pina: 28 maç. Uzun sözleşme — yüksek bonusu göze almalı. 23 yaş, uzun vadeli yatırım profili.
+
 ### AMED SFK  [STABİL]
 *2.125 puan/maç | maç başına 2.25 attı | maç başına 1.125 yedi*
 
@@ -475,29 +496,8 @@ Zayıf nokta: kadro derinliği sınırlı
   3. WAGNER FABRICIO CARDOSO DE PINA (TRABZONSPOR A.Ş.) | 23y | 0 gol | PREMİUM TRANSFER | HIGH | skor 16.1
      → Kadro derinliği sınırlı sorunu var; Bek / çift yönlü koridor bu açığı kapatacak. Pina: 28 maç. Uzun sözleşme — yüksek bonusu göze almalı. 23 yaş, uzun vadeli yatırım profili.
 
-### BEŞİKTAŞ A.Ş.  [STABİL]
-*2.143 puan/maç | maç başına 2.286 attı | maç başına 1.143 yedi*
-
-Zayıf nokta: kadro derinliği sınırlı
-
-**Sol açık / çizgi kırıcı** — Büyük maç rotasyonunu besleyecek ve kanat derinliğini artıracak yaratıcı profil.
-  1. DORGELES NENE (FENERBAHÇE A.Ş.) | 23y | 10 gol | PREMİUM TRANSFER | HIGH | skor 24.2
-     → Kadro derinliği sınırlı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Nene: 10 gol, 16 maçta sahada. Uzun sözleşme — yüksek bonusu göze almalı. 23 yaş, uzun vadeli yatırım profili.
-  2. ERNEST MUÇİ (TRABZONSPOR A.Ş.) | 25y | 11 gol | PREMİUM TRANSFER | MEDIUM | skor 22.6
-     → Kadro derinliği sınırlı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Muçi̇: 11 gol, 22 maç. Uzun sözleşme — yüksek bonusu göze almalı.
-  3. BARIŞ ALPER YILMAZ (GALATASARAY A.Ş.) | 26y | 8 gol | PREMİUM TRANSFER | MEDIUM | skor 22.1
-     → Kadro derinliği sınırlı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Yilmaz: 8 gol, 27 maç. Uzun sözleşme — yüksek bonusu göze almalı.
-
-**Bek / çift yönlü koridor** — Koridor derinliğini artıracak, büyük maç baskısında rotasyon sağlayacak çift yönlü bek.
-  1. ARDA OKAN KURTULAN (GÖZTEPE A.Ş.) | 23y | 4 gol | PREMİUM TRANSFER | HIGH | skor 16.9
-     → Kadro derinliği sınırlı sorunu var; Bek / çift yönlü koridor bu açığı kapatacak. Kurtulan: 4 gol, 27 maç. Uzun sözleşme — yüksek bonusu göze almalı. 23 yaş, uzun vadeli yatırım profili.
-  2. YHOAN MANY ANDZOUANA (TÜMOSAN KONYASPOR) | 29y | 2 gol | PREMİUM TRANSFER | MEDIUM | skor 16.7
-     → Kadro derinliği sınırlı sorunu var; Bek / çift yönlü koridor bu açığı kapatacak. Andzouana: 2 gol, 29 maç. Uzun sözleşme — yüksek bonusu göze almalı.
-  3. WAGNER FABRICIO CARDOSO DE PINA (TRABZONSPOR A.Ş.) | 23y | 0 gol | PREMİUM TRANSFER | HIGH | skor 16.1
-     → Kadro derinliği sınırlı sorunu var; Bek / çift yönlü koridor bu açığı kapatacak. Pina: 28 maç. Uzun sözleşme — yüksek bonusu göze almalı. 23 yaş, uzun vadeli yatırım profili.
-
 ### TRABZONSPOR A.Ş.  [STABİL]
-*1.857 puan/maç | maç başına 2.286 attı | maç başına 0.714 yedi*
+*2.0 puan/maç | maç başına 2.25 attı | maç başına 0.625 yedi*
 
 Zayıf nokta: kadro derinliği sınırlı
 

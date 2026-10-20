@@ -1,9 +1,9 @@
 {
   "summary": {
-    "tff_profiles": 879,
+    "tff_profiles": 880,
     "tm_clubs": 18,
     "tm_players": 817,
-    "snapshot_in_scope_tff_profiles": 589,
+    "snapshot_in_scope_tff_profiles": 590,
     "matched_profiles": 618,
     "verified_matched_profiles": 618,
     "in_scope_verified_matched_profiles": 546,
@@ -11,14 +11,14 @@
     "manual_alias_pending_network_verification": 4,
     "operationally_mapped_profiles": 622,
     "operational_in_scope_mapped_profiles": 550,
-    "unmatched_profiles": 257,
-    "overall_match_rate": 0.703,
-    "in_scope_match_rate": 0.927,
-    "operational_mapping_rate": 0.708,
-    "operational_in_scope_mapping_rate": 0.934,
+    "unmatched_profiles": 258,
+    "overall_match_rate": 0.702,
+    "in_scope_match_rate": 0.925,
+    "operational_mapping_rate": 0.707,
+    "operational_in_scope_mapping_rate": 0.932,
     "scout_blocking_unmatched": 0,
     "category_counts": {
-      "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 37,
+      "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 38,
       "SAME_CLUB_NAME_REVIEW": 1,
       "POSSIBLE_TRANSFER_OR_CLUB_MISMATCH": 1,
       "OUT_OF_SNAPSHOT_CLUB": 218
@@ -27,7 +27,7 @@
       "HIGH_USAGE_UNRESOLVED": 17,
       "ROTATION_USAGE_UNRESOLVED": 9,
       "OUT_OF_SNAPSHOT": 218,
-      "NO_MATCH_ACTIVITY": 13
+      "NO_MATCH_ACTIVITY": 14
     },
     "rule": "Doğrulanmış kapsama yalnız snapshot eşleşmesi girer; manuel alias kullanımı ayrı izlenir ve ağ teyidi tamamlanana kadar doğrulanmış sayılmaz."
   },
@@ -201,15 +201,15 @@
     },
     {
       "team": "TRABZONSPOR A.Ş.",
-      "tff_profiles": 43,
+      "tff_profiles": 44,
       "tm_players": 42,
       "matched_profiles": 39,
       "manual_alias_mapped_profiles": 1,
-      "unmatched_profiles": 3,
-      "match_rate": 0.907,
-      "operational_mapping_rate": 0.93,
+      "unmatched_profiles": 4,
+      "match_rate": 0.886,
+      "operational_mapping_rate": 0.909,
       "categories": {
-        "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 3
+        "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 4
       }
     },
     {
@@ -4435,6 +4435,32 @@
         "goals": 0
       },
       "candidate": null,
+      "action": "Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir."
+    },
+    {
+      "player_id": "2337559",
+      "tff_name": "MUSTAFA KUZEY AKÇAY",
+      "tff_club": "TRABZONSPOR A.Ş.",
+      "category": "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT",
+      "priority_rank": 4,
+      "blocks_scout_review": false,
+      "review_tier": "NO_MATCH_ACTIVITY",
+      "season_activity": {
+        "starts": 0,
+        "squad_inclusions": 0,
+        "goals": 0
+      },
+      "candidate": {
+        "tm_name": "Mustafa Eskihellaç",
+        "tm_team_name": null,
+        "tm_id": "390379",
+        "tm_position": "Left-Back",
+        "tm_market_value_eur": 4000000,
+        "score": 0.649,
+        "common_tokens": [
+          "MUSTAFA"
+        ]
+      },
       "action": "Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir."
     },
     {

@@ -1,15 +1,16 @@
 # TFF Oyuncu Profilleri
 
 - Takım filtresi: Yok
-- Profil sayısı: 489
+- Profil sayısı: 490
 - Hata sayısı: 0
 - Ortalama yaş: 25.8
 - Ortalama kalan sözleşme ayı: 21.0
-- 23 yaş ve altı oyuncu: 169
+- 23 yaş ve altı oyuncu: 170
 - 13 ay içinde sözleşmesi bitecek oyuncu: 190
 
 ## Genç Oyuncular
 
+- MUSTAFA KUZEY AKÇAY (TRABZONSPOR A.Ş.): yaş=16, sözleşme bitiş=Yok
 - ATA YANIK (TÜMOSAN KONYASPOR): yaş=17, sözleşme bitiş=2028-06-30
 - DENİZ CEYLAN (KOCAELİSPOR): yaş=17, sözleşme bitiş=Yok
 - ERK ARDA ASLAN (GENÇLERBİRLİĞİ): yaş=17, sözleşme bitiş=Yok
@@ -39,7 +40,6 @@
 - CHRIST OTINIEL SADIA (EYÜPSPOR): yaş=19, sözleşme bitiş=2028-06-30
 - EGE YILDIRIM (GÖZTEPE A.Ş.): yaş=19, sözleşme bitiş=2029-06-30
 - EGEMEN AYDIN (TÜMOSAN KONYASPOR): yaş=19, sözleşme bitiş=2027-06-30
-- EREN CEMALİ YAĞMUR (TÜMOSAN KONYASPOR): yaş=19, sözleşme bitiş=2028-06-30
 
 ## Sözleşme Fırsatları
 

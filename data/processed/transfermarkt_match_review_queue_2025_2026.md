@@ -1,18 +1,18 @@
 # Transfermarkt Oyuncu Eşleşme İnceleme Kuyruğu
 
-- TFF profil: 879
+- TFF profil: 880
 - Transfermarkt snapshot: 18/18 kulüp, 817 oyuncu
-- Snapshot kapsamındaki TFF profil: 589
+- Snapshot kapsamındaki TFF profil: 590
 - Doğrulanmış snapshot eşleşmesi: 618
 - Manuel eşleme ile kullanılan profil: 4
 - Ağ teyidi bekleyen manuel eşleme: 4
-- Çözülmemiş profil: 257
-- Doğrulanmış genel eşleşme oranı: %70.3
-- Doğrulanmış snapshot içi eşleşme oranı: %92.7
-- Manuel eşleme dahil kullanılabilir snapshot içi kapsama: %93.4
+- Çözülmemiş profil: 258
+- Doğrulanmış genel eşleşme oranı: %70.2
+- Doğrulanmış snapshot içi eşleşme oranı: %92.5
+- Manuel eşleme dahil kullanılabilir snapshot içi kapsama: %93.2
 - Scout incelemesini bloke eden eşleşmeyen oyuncu: 0
-- Sınıf dağılımı: {'NO_RELIABLE_CANDIDATE_IN_SNAPSHOT': 37, 'SAME_CLUB_NAME_REVIEW': 1, 'POSSIBLE_TRANSFER_OR_CLUB_MISMATCH': 1, 'OUT_OF_SNAPSHOT_CLUB': 218}
-- Kullanım önceliği dağılımı: {'HIGH_USAGE_UNRESOLVED': 17, 'ROTATION_USAGE_UNRESOLVED': 9, 'OUT_OF_SNAPSHOT': 218, 'NO_MATCH_ACTIVITY': 13}
+- Sınıf dağılımı: {'NO_RELIABLE_CANDIDATE_IN_SNAPSHOT': 38, 'SAME_CLUB_NAME_REVIEW': 1, 'POSSIBLE_TRANSFER_OR_CLUB_MISMATCH': 1, 'OUT_OF_SNAPSHOT_CLUB': 218}
+- Kullanım önceliği dağılımı: {'HIGH_USAGE_UNRESOLVED': 17, 'ROTATION_USAGE_UNRESOLVED': 9, 'OUT_OF_SNAPSHOT': 218, 'NO_MATCH_ACTIVITY': 14}
 - Kural: Doğrulanmış kapsama yalnız snapshot eşleşmesi girer; manuel alias kullanımı ayrı izlenir ve ağ teyidi tamamlanana kadar doğrulanmış sayılmaz.
 
 ## Scout Bloke Eden Kuyruk
@@ -42,7 +42,7 @@
 | MISIRLI.COM.TR FATİH KARAGÜMRÜK | 0 | 46 | 0 | 0 | 0 | %0 | %0 |
 | RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ | 30 | 32 | 29 | 0 | 1 | %96.7 | %96.7 |
 | SAMSUNSPOR A.Ş. | 40 | 44 | 36 | 0 | 4 | %90.0 | %90.0 |
-| TRABZONSPOR A.Ş. | 43 | 42 | 39 | 1 | 3 | %90.7 | %93.0 |
+| TRABZONSPOR A.Ş. | 44 | 42 | 39 | 1 | 4 | %88.6 | %90.9 |
 | TÜMOSAN KONYASPOR | 42 | 48 | 41 | 0 | 1 | %97.6 | %97.6 |
 | ZECORNER KAYSERİSPOR | 0 | 51 | 0 | 0 | 0 | %0 | %0 |
 | ÇAYKUR RİZESPOR A.Ş. | 35 | 35 | 35 | 0 | 0 | %100.0 | %100.0 |
@@ -448,6 +448,7 @@
 
 - FABIO HENRIQUE TAVARES (TRABZONSPOR A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=NO_MATCH_ACTIVITY, ilk11=0, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - FRANCULINO GLUDA DJU (TRABZONSPOR A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=NO_MATCH_ACTIVITY, ilk11=0, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
+- MUSTAFA KUZEY AKÇAY (TRABZONSPOR A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=NO_MATCH_ACTIVITY, ilk11=0, gol=0, scout_blok=False, aday=Mustafa Eskihellaç (TRABZONSPOR A.Ş., skor=0.649, ortak=MUSTAFA). Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - RENE MITONGO MUTEBA (TRABZONSPOR A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=NO_MATCH_ACTIVITY, ilk11=0, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 
 ### TURKA ESENLER EROKSPOR
