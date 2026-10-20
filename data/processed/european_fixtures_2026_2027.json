@@ -1,6 +1,6 @@
 {
   "season": "2026-2027",
-  "collected_at": "2026-10-20T11:30:20.435808+00:00",
+  "collected_at": "2026-10-20T16:58:49.207088+00:00",
   "competitions": {
     "CL": {
       "code": "CL",
@@ -1058,7 +1058,7 @@
           "stage": "LEAGUE_STAGE",
           "group": "",
           "utc_date": "2026-10-20T16:45:00Z",
-          "status": "TIMED",
+          "status": "IN_PLAY",
           "home": {
             "id": 10233,
             "name": "Sabah FK",
@@ -1072,13 +1072,13 @@
             "crest": "https://crests.football-data.org/4.png"
           },
           "score": {
-            "home": null,
-            "away": null,
+            "home": 0,
+            "away": 0,
             "extra_time_home": null,
             "extra_time_away": null,
             "penalties_home": null,
             "penalties_away": null,
-            "winner": null
+            "winner": "DRAW"
           }
         },
         {
@@ -1087,7 +1087,7 @@
           "stage": "LEAGUE_STAGE",
           "group": "",
           "utc_date": "2026-10-20T16:45:00Z",
-          "status": "TIMED",
+          "status": "IN_PLAY",
           "home": {
             "id": 613,
             "name": "Fenerbahçe SK",
@@ -1101,13 +1101,13 @@
             "crest": "https://crests.football-data.org/930.png"
           },
           "score": {
-            "home": null,
-            "away": null,
+            "home": 1,
+            "away": 0,
             "extra_time_home": null,
             "extra_time_away": null,
             "penalties_home": null,
             "penalties_away": null,
-            "winner": null
+            "winner": "HOME_TEAM"
           }
         },
         {
@@ -4440,8 +4440,8 @@
         }
       },
       "turkish_team_ids": [
-        "610",
-        "613"
+        "613",
+        "610"
       ],
       "note": null
     },

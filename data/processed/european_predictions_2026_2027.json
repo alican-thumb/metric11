@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T15:05:31.745585+00:00",
+  "generated_at": "2026-10-20T16:59:31.308252+00:00",
   "season": "2026-2027",
   "competitions": {
     "CL": {
@@ -1345,7 +1345,7 @@
           "group": "",
           "matchday": 3,
           "utc_date": "2026-10-20T16:45:00Z",
-          "status": "TIMED",
+          "status": "IN_PLAY",
           "home": {
             "id": 10233,
             "name": "Sabah FK",
@@ -1358,7 +1358,10 @@
             "short": "BVB",
             "crest": "https://crests.football-data.org/4.png"
           },
-          "actual_score": null,
+          "actual_score": {
+            "home": 0,
+            "away": 0
+          },
           "prediction": {
             "home_win": 0.047,
             "draw": 0.113,
@@ -1371,7 +1374,7 @@
             "lam_home": 0.68,
             "lam_away": 3.201
           },
-          "prediction_outcome": "pending"
+          "prediction_outcome": "wrong"
         },
         {
           "match_id": 575360,
@@ -1379,7 +1382,7 @@
           "group": "",
           "matchday": 3,
           "utc_date": "2026-10-20T16:45:00Z",
-          "status": "TIMED",
+          "status": "IN_PLAY",
           "home": {
             "id": 613,
             "name": "Fenerbahçe SK",
@@ -1392,7 +1395,10 @@
             "short": "SLP",
             "crest": "https://crests.football-data.org/930.png"
           },
-          "actual_score": null,
+          "actual_score": {
+            "home": 1,
+            "away": 0
+          },
           "prediction": {
             "home_win": 0.539,
             "draw": 0.25,
@@ -1405,7 +1411,7 @@
             "lam_home": 1.931,
             "lam_away": 1.128
           },
-          "prediction_outcome": "pending"
+          "prediction_outcome": "correct"
         },
         {
           "match_id": 575361,
@@ -5013,10 +5019,10 @@
         }
       ],
       "accuracy": {
-        "finished": 36,
-        "correct": 23,
-        "wrong": 13,
-        "pct": 63.9
+        "finished": 38,
+        "correct": 24,
+        "wrong": 14,
+        "pct": 63.2
       }
     },
     "EL": {
