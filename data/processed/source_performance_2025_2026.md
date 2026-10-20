@@ -1,6 +1,6 @@
 # Erken Haber Kaynak Performansı
 
-- Transfer sinyali: 12
+- Transfer sinyali: 14
 - Resmi olaya dönüşen transfer: 16
 - Yayın zamanı bulunan resmi teyit: 5/16
 - İlk görülme zamanı bulunan resmi teyit: 16/16
@@ -8,11 +8,11 @@
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 11
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 4533
+- Defterde korunan ilk iddia gözlemi: 4535
 
 ## Kanal Kapsamı
 
-- Google News: 120 haber, 30/30 başarılı sorgu.
+- Google News: 119 haber, 30/30 başarılı sorgu.
 - Telegram: 6 mesaj, 8/8 erişilebilir kanal.
 - X: durum=MISSING_CREDENTIALS, gönderi=0, yapılandırılmış hesap=45.
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 4530 | 1401 | 13 | — | 910.9 | %99.1 | 0.8 | FIRST_SEEN_BOUND |
+| Google News / medya | 4532 | 1401 | 13 | — | 910.9 | %99.1 | 0.8 | FIRST_SEEN_BOUND |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -55,11 +55,11 @@
 | DHA / Demirören Haber Ajansı | MEDIA | 12 | 6 | 1 | — | 1251.5 | %83.3 | 13.3 | FIRST_SEEN_BOUND |
 | Transfermarkt | MEDIA | 56 | 21 | 1 | — | — | %94.4 | 4.4 | PARTIAL_MEASUREMENT |
 | sondakika.com | MEDIA | 32 | 25 | 1 | — | 1251.4 | %96.0 | 3.2 | FIRST_SEEN_BOUND |
-| CNN Türk Spor | MEDIA | 147 | 29 | 1 | — | — | %96.2 | 3.1 | PARTIAL_MEASUREMENT |
+| CNN Türk Spor | MEDIA | 148 | 29 | 1 | — | — | %96.2 | 3.1 | PARTIAL_MEASUREMENT |
 | Ajansspor | MEDIA | 95 | 40 | 1 | — | 1255.5 | %97.4 | 2.1 | FIRST_SEEN_BOUND |
 | Habertürk | MEDIA | 68 | 41 | 1 | — | 1251.6 | %97.6 | 2.0 | FIRST_SEEN_BOUND |
 | Son Dakika | MEDIA | 98 | 65 | 1 | — | 1251.4 | %98.4 | 1.2 | FIRST_SEEN_BOUND |
-| Fotomaç | MEDIA | 493 | 96 | 1 | — | 1251.1 | %98.9 | 0.8 | FIRST_SEEN_BOUND |
+| Fotomaç | MEDIA | 494 | 96 | 1 | — | 1251.1 | %98.9 | 0.8 | FIRST_SEEN_BOUND |
 | Sabah | MEDIA | 316 | 65 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Hürriyet | MEDIA | 307 | 41 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Takvim | MEDIA | 307 | 30 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
