@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-21T04:40:52.870191+00:00",
+  "generated_at": "2026-10-21T07:35:37.428663+00:00",
   "season": "2025_2026",
   "summary": {
     "free_agents_count": 94,
     "final_year_count": 338,
-    "transfer_signals_count": 19,
+    "transfer_signals_count": 13,
     "transfer_status_counts": {
       "OFFICIAL": 0,
       "CORROBORATED": 0,
-      "RUMOR": 2,
-      "REVIEW_REQUIRED": 17
+      "RUMOR": 3,
+      "REVIEW_REQUIRED": 10
     },
     "promotion_events_count": 1,
     "free_agent_total_market_value_eur": 180425000
@@ -460,6 +460,47 @@
   ],
   "transfer_signals": [
     {
+      "player_name": "Rakip Crystal Palace",
+      "from_club": null,
+      "to_club": "Beşiktaş",
+      "signal_type": "interest",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "HEADLINE_EXPLICIT_DIRECTION",
+      "article_id": "c1f17692b095",
+      "title": "Beşiktaş Avrupa'da 3'te 3 peşinde: Rakip Crystal Palace",
+      "link": "https://www.aksam.com.tr/spor/besiktas-avrupada-3te-3-pesinde-rakip-crystal-palace/haber-1707910",
+      "source": "Aksam Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-10-21T10:03:00+03:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "MEDIUM",
+      "verification_status": "RUMOR",
+      "interpretation": "Tek kaynaklı transfer iddiası; yalnız transfer radarında izlenir.",
+      "source_count": 1,
+      "sources": [
+        "Aksam Spor"
+      ],
+      "evidence": [
+        {
+          "source": "Aksam Spor",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Beşiktaş Avrupa'da 3'te 3 peşinde: Rakip Crystal Palace",
+          "link": "https://www.aksam.com.tr/spor/besiktas-avrupada-3te-3-pesinde-rakip-crystal-palace/haber-1707910",
+          "published_at": "2026-10-21T10:03:00+03:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
       "player_name": "MOHAMED SALAH HAMED MAHROUS GHALY",
       "from_club": "TRABZONSPOR A.Ş.",
       "to_club": "Beşiktaş",
@@ -557,20 +598,20 @@
     {
       "player_name": null,
       "from_club": null,
-      "to_club": "Fenerbahçe",
-      "signal_type": "departure",
+      "to_club": "Beşiktaş",
+      "signal_type": "interest",
       "window": "summer_2026",
       "confidence": "LOW",
       "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "9911bc65e497",
-      "title": "Dış basından Fenerbahçe için flaş manşet: Büyük hayal kırıklığı!",
-      "link": "https://www.fotomac.com.tr/fenerbahce/2026/10/20/dis-basindan-fenerbahce-icin-flas-manset-buyuk-hayal-kirikligi",
-      "source": "Fotomaç",
+      "article_id": "361a7caf14f0",
+      "title": "Beşiktaş Avrupa Ligi'nde 3'te 3 peşinde",
+      "link": "https://www.sabah.com.tr/spor/futbol/2026/10/21/besiktas-avrupa-liginde-3te-3-pesinde",
+      "source": "Sabah Spor",
       "source_type": "rss",
       "account_type": null,
       "query": null,
       "source_tier": "MEDIA",
-      "published_at": "2026-10-21T00:22:19+03:00",
+      "published_at": "2026-10-21T10:02:42+03:00",
       "first_observed_at": null,
       "summary_tr": "",
       "entity_confidence": "LOW",
@@ -578,18 +619,18 @@
       "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
       "source_count": 1,
       "sources": [
-        "Fotomaç"
+        "Sabah Spor"
       ],
       "evidence": [
         {
-          "source": "Fotomaç",
+          "source": "Sabah Spor",
           "source_tier": "MEDIA",
           "source_type": "rss",
           "account_type": null,
           "query": null,
-          "title": "Dış basından Fenerbahçe için flaş manşet: Büyük hayal kırıklığı!",
-          "link": "https://www.fotomac.com.tr/fenerbahce/2026/10/20/dis-basindan-fenerbahce-icin-flas-manset-buyuk-hayal-kirikligi",
-          "published_at": "2026-10-21T00:22:19+03:00",
+          "title": "Beşiktaş Avrupa Ligi'nde 3'te 3 peşinde",
+          "link": "https://www.sabah.com.tr/spor/futbol/2026/10/21/besiktas-avrupa-liginde-3te-3-pesinde",
+          "published_at": "2026-10-21T10:02:42+03:00",
           "first_observed_at": null
         }
       ],
@@ -644,90 +685,6 @@
       "window": "summer_2026",
       "confidence": "LOW",
       "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "4b97d8175f68",
-      "title": "5 maçlık zorlu fikstür! İşte Fenerbahçe'nin Şampiyonlar Ligi'nde kalan maçları",
-      "link": "https://www.fotomac.com.tr/sampiyonlarligi/2026/10/20/5-maclik-zorlu-fikstur-iste-fenerbahcenin-sampiyonlar-liginde-kalan-maclari",
-      "source": "Fotomaç",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-10-20T22:23:23+03:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Fotomaç"
-      ],
-      "evidence": [
-        {
-          "source": "Fotomaç",
-          "source_tier": "MEDIA",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "5 maçlık zorlu fikstür! İşte Fenerbahçe'nin Şampiyonlar Ligi'nde kalan maçları",
-          "link": "https://www.fotomac.com.tr/sampiyonlarligi/2026/10/20/5-maclik-zorlu-fikstur-iste-fenerbahcenin-sampiyonlar-liginde-kalan-maclari",
-          "published_at": "2026-10-20T22:23:23+03:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": "MUHAMMED KEREM AKTÜRKOĞLU",
-      "from_club": "FENERBAHÇE A.Ş.",
-      "to_club": null,
-      "transfer_type": "permanent",
-      "window": "summer_2026",
-      "signal_type": "departure",
-      "confidence": "LOW",
-      "tm_market_value_eur": 18000000,
-      "direction_quality": "TARGET_UNRESOLVED",
-      "article_id": "3ae38cbfac9a",
-      "title": "Kadıköy'de Kerem Aktürkoğlu'na ıslıklı protesto!",
-      "link": "https://www.fotomac.com.tr/fenerbahce/2026/10/20/kadikoyde-kerem-akturkogluna-islikli-protesto",
-      "source": "Fotomaç",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-10-20T22:11:53+03:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "HIGH",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Fotomaç"
-      ],
-      "evidence": [
-        {
-          "source": "Fotomaç",
-          "source_tier": "MEDIA",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "Kadıköy'de Kerem Aktürkoğlu'na ıslıklı protesto!",
-          "link": "https://www.fotomac.com.tr/fenerbahce/2026/10/20/kadikoyde-kerem-akturkogluna-islikli-protesto",
-          "published_at": "2026-10-20T22:11:53+03:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": null,
-      "to_club": "Fenerbahçe",
-      "signal_type": "departure",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
       "article_id": "85a8fb2417fb",
       "title": "Fenerbahçe, galibiyeti son dakikada kaçırdı",
       "link": "https://www.aa.com.tr/tr/spor/fenerbahce-galibiyeti-son-dakikada-kacirdi/4095019",
@@ -769,15 +726,15 @@
       "window": "summer_2026",
       "confidence": "LOW",
       "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "3b7f648bf296",
-      "title": "Beşiktaş'ta flaş gelişme! Dev İtalyan kulübü Vincenzo Italiano'nun peşinde!",
-      "link": "https://www.fotomac.com.tr/besiktas/2026/10/20/besiktasta-flas-gelisme-dev-italyan-kulubu-vincenzo-italianonun-pesinde",
-      "source": "Fotomaç",
-      "source_type": "rss",
+      "article_id": "e8f19d955246",
+      "title": "Beşiktaş'ta kırmızı alarm: Dünya devi Vincenzo Italiano'nun peşinde! - A Haber",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOb1BTVHppMWExY3F2LURZMWhzdkp3TVFGeF9xLVdFcTEyX3FvemFBU1VVaURIVmc4SW1pY2xJbWN0a3BLbXpDeTMxZ2JFMVdCSHBJRnZFWFJLVUxXRGxpRUEtanMxUmtTQTQ2M0I2WklNLV84clhYMWctR3RfemVrVFNKNE1WVXlOdWhlOHJCV2hiTFFyblZ3RWQwVmxwRk1aQkpueA?oc=5",
+      "source": "A Haber",
+      "source_type": "google_news",
       "account_type": null,
-      "query": null,
+      "query": "Süper Lig teknik direktör",
       "source_tier": "MEDIA",
-      "published_at": "2026-10-20T13:02:50+03:00",
+      "published_at": "2026-10-20T17:04:08+00:00",
       "first_observed_at": null,
       "summary_tr": "",
       "entity_confidence": "LOW",
@@ -785,141 +742,18 @@
       "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
       "source_count": 1,
       "sources": [
-        "Fotomaç"
+        "A Haber"
       ],
       "evidence": [
         {
-          "source": "Fotomaç",
+          "source": "A Haber",
           "source_tier": "MEDIA",
-          "source_type": "rss",
+          "source_type": "google_news",
           "account_type": null,
-          "query": null,
-          "title": "Beşiktaş'ta flaş gelişme! Dev İtalyan kulübü Vincenzo Italiano'nun peşinde!",
-          "link": "https://www.fotomac.com.tr/besiktas/2026/10/20/besiktasta-flas-gelisme-dev-italyan-kulubu-vincenzo-italianonun-pesinde",
-          "published_at": "2026-10-20T13:02:50+03:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": "Beşiktaş",
-      "to_club": "Trabzonspor",
-      "signal_type": "departure",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "ef3166043300",
-      "title": "Spor yazarları Trabzonspor-Beşiktaş maçını değerlendirdi",
-      "link": "https://www.fotomac.com.tr/trabzonspor/2026/10/20/spor-yazarlari-trabzonspor-besiktas-macini-yorumladi",
-      "source": "Fotomaç",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-10-20T08:54:57+03:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Fotomaç"
-      ],
-      "evidence": [
-        {
-          "source": "Fotomaç",
-          "source_tier": "MEDIA",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "Spor yazarları Trabzonspor-Beşiktaş maçını değerlendirdi",
-          "link": "https://www.fotomac.com.tr/trabzonspor/2026/10/20/spor-yazarlari-trabzonspor-besiktas-macini-yorumladi",
-          "published_at": "2026-10-20T08:54:57+03:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": null,
-      "to_club": "Beşiktaş",
-      "signal_type": "departure",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "895a6c39ba9d",
-      "title": "Beşiktaş'ın Anadolu kabusu! Italiano ile sıfır",
-      "link": "https://www.hurriyet.com.tr/sporarena/besiktasin-anadolu-kabusu-italiano-ile-sifir-43347836",
-      "source": "Hürriyet Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-10-19T20:06:00+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Hürriyet Spor"
-      ],
-      "evidence": [
-        {
-          "source": "Hürriyet Spor",
-          "source_tier": "MEDIA",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "Beşiktaş'ın Anadolu kabusu! Italiano ile sıfır",
-          "link": "https://www.hurriyet.com.tr/sporarena/besiktasin-anadolu-kabusu-italiano-ile-sifir-43347836",
-          "published_at": "2026-10-19T20:06:00+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": null,
-      "to_club": "Trabzonspor",
-      "signal_type": "signing",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "0d927a89ca66",
-      "title": "Trabzonspor, Albayrak Finans ile forma şort arkası sponsorluk anlaşması imzaladı",
-      "link": "https://www.aa.com.tr/tr/spor/trabzonspor-albayrak-finans-ile-forma-sort-arkasi-sponsorluk-anlasmasi-imzaladi/4093807",
-      "source": "Anadolu Ajansı Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "AGENCY",
-      "published_at": "2026-10-19T20:38:07+03:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Anadolu Ajansı Spor"
-      ],
-      "evidence": [
-        {
-          "source": "Anadolu Ajansı Spor",
-          "source_tier": "AGENCY",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "Trabzonspor, Albayrak Finans ile forma şort arkası sponsorluk anlaşması imzaladı",
-          "link": "https://www.aa.com.tr/tr/spor/trabzonspor-albayrak-finans-ile-forma-sort-arkasi-sponsorluk-anlasmasi-imzaladi/4093807",
-          "published_at": "2026-10-19T20:38:07+03:00",
+          "query": "Süper Lig teknik direktör",
+          "title": "Beşiktaş'ta kırmızı alarm: Dünya devi Vincenzo Italiano'nun peşinde! - A Haber",
+          "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOb1BTVHppMWExY3F2LURZMWhzdkp3TVFGeF9xLVdFcTEyX3FvemFBU1VVaURIVmc4SW1pY2xJbWN0a3BLbXpDeTMxZ2JFMVdCSHBJRnZFWFJLVUxXRGxpRUEtanMxUmtTQTQ2M0I2WklNLV84clhYMWctR3RfemVrVFNKNE1WVXlOdWhlOHJCV2hiTFFyblZ3RWQwVmxwRk1aQkpueA?oc=5",
+          "published_at": "2026-10-20T17:04:08+00:00",
           "first_observed_at": null
         }
       ],
@@ -961,88 +795,6 @@
           "title": "6,7 milyon euroluk transfer şaşırttı! Fenerbahçe'den ocak ayında ayrılabilir",
           "link": "https://www.takvim.com.tr/spor/fenerbahce/2026/10/19/fenerbahcede-tarihe-gecen-transfer-ognjen-mimovic",
           "published_at": "2026-10-19T19:24:35+03:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": null,
-      "to_club": "Galatasaray",
-      "signal_type": "loan",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "ceb0197878cf",
-      "title": "Galatasaray’da ilk imza belli oldu! Yıldız oyuncu kiralık geliyor... - Sabah",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOSXJxMTZSV0JvQzF5RG83QjVaUGR2VllRaXVBc0FpeXRUUW1FSnpfYzBwR3JDUHFYZ1VlRXpMY3dRRjhiek1tYzExR29xLUFjTXh1NVBqOWE0SzN6QkEzZzJjQWNBMmxuWkVDaW5hZll2MmQwTzF3X1RQWVhoYmNob2U0NnEyMm83VXBJZ3AxeHVTWXpVQk92bXFlNy1JV1JQVjgtTlBDSmIxUdIBrAFBVV95cUxQRFZFRm9fRUsyYUtjTGhkTHdzVlNIZU1XUFo5QkNHVXIwb1pOMVFNbVJPalROTFB3ZDdPVWFMZTVMWEI3WFBSbm9nRzkzbW9NZk5WaEQxLXdxWXB4RDZpNG1BZXBpZ1I5RUt1UkplSTY2YjdHU19ZbC1JSWpFOURmelZQQzIwdTVrVmRKazJWcVJJd2tidlQ2OC1xSGZQVGVXT0JlLWdzMzgzUEJu?oc=5",
-      "source": "Sabah",
-      "source_type": "google_news",
-      "account_type": null,
-      "query": "Galatasaray transfer",
-      "source_tier": "MEDIA",
-      "published_at": "2026-10-19T15:52:38+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Sabah"
-      ],
-      "evidence": [
-        {
-          "source": "Sabah",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Galatasaray transfer",
-          "title": "Galatasaray’da ilk imza belli oldu! Yıldız oyuncu kiralık geliyor... - Sabah",
-          "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOSXJxMTZSV0JvQzF5RG83QjVaUGR2VllRaXVBc0FpeXRUUW1FSnpfYzBwR3JDUHFYZ1VlRXpMY3dRRjhiek1tYzExR29xLUFjTXh1NVBqOWE0SzN6QkEzZzJjQWNBMmxuWkVDaW5hZll2MmQwTzF3X1RQWVhoYmNob2U0NnEyMm83VXBJZ3AxeHVTWXpVQk92bXFlNy1JV1JQVjgtTlBDSmIxUdIBrAFBVV95cUxQRFZFRm9fRUsyYUtjTGhkTHdzVlNIZU1XUFo5QkNHVXIwb1pOMVFNbVJPalROTFB3ZDdPVWFMZTVMWEI3WFBSbm9nRzkzbW9NZk5WaEQxLXdxWXB4RDZpNG1BZXBpZ1I5RUt1UkplSTY2YjdHU19ZbC1JSWpFOURmelZQQzIwdTVrVmRKazJWcVJJd2tidlQ2OC1xSGZQVGVXT0JlLWdzMzgzUEJu?oc=5",
-          "published_at": "2026-10-19T15:52:38+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": "Galatasaray",
-      "to_club": "Trabzonspor",
-      "signal_type": "interest",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "0fd82f08a50e",
-      "title": "Galatasaray ile Trabzonspor aynı golcünün peşinde: Premier Lig'de kadro dışı kaldı - Nefes Gazetesi",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOM3hFQkw5Q0V3WENLWk9QM0NwQ0lpTWZEbW5SbGhLOFJOQkZIbHpDR1AxOHdpOE9pUmsxemtJVTRQNlJuaFVDemtfU0ZBNE1VbWtES2E4Z3lXOWRrV09ocFYxNFMxb3FBaUxxSGxtNG1DX2xsOXBrZjVkY1QxVmNiVm5jbjhpUWhheGszb052TkxKOVp0UkxMLXF3elpYSm00VzAyV2N5LXJ2WkYxMEhhNjZB?oc=5",
-      "source": "Nefes Gazetesi",
-      "source_type": "google_news",
-      "account_type": null,
-      "query": "Trabzonspor transfer",
-      "source_tier": "MEDIA",
-      "published_at": "2026-10-19T08:16:28+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Nefes Gazetesi"
-      ],
-      "evidence": [
-        {
-          "source": "Nefes Gazetesi",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Trabzonspor transfer",
-          "title": "Galatasaray ile Trabzonspor aynı golcünün peşinde: Premier Lig'de kadro dışı kaldı - Nefes Gazetesi",
-          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOM3hFQkw5Q0V3WENLWk9QM0NwQ0lpTWZEbW5SbGhLOFJOQkZIbHpDR1AxOHdpOE9pUmsxemtJVTRQNlJuaFVDemtfU0ZBNE1VbWtES2E4Z3lXOWRrV09ocFYxNFMxb3FBaUxxSGxtNG1DX2xsOXBrZjVkY1QxVmNiVm5jbjhpUWhheGszb052TkxKOVp0UkxMLXF3elpYSm00VzAyV2N5LXJ2WkYxMEhhNjZB?oc=5",
-          "published_at": "2026-10-19T08:16:28+00:00",
           "first_observed_at": null
         }
       ],
@@ -1132,47 +884,6 @@
     },
     {
       "player_name": null,
-      "from_club": "Beşiktaş",
-      "to_club": "Fenerbahçe",
-      "signal_type": "interest",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "f59c1a838138",
-      "title": "Fenerbahçe ve Beşiktaş transferde karşı karşıya! İlk teklife ret Avrupalılar da peşinde - Takvim",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPTGltWEl4NmE4MDRDWXhsYm5hWms3NUpYMXF1OUFFREc3Z0s2TUx6aDVlQXN3cXVib1JvQVFDaVNiNmVGWHlWOURoMkQwS2ZYbnAwUWdkVTRfa0d5ZnhaXzBXZlJ0RWo2NFA5c2NxLXVmdDhtYXZJdHp4WW1ndm52aWpRb01ENHdhcXpTNnBfX1cydXdXdHZLTnlFRVQtLWc?oc=5",
-      "source": "Takvim",
-      "source_type": "google_news",
-      "account_type": null,
-      "query": "Beşiktaş transfer",
-      "source_tier": "MEDIA",
-      "published_at": "2026-10-18T14:38:50+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Takvim"
-      ],
-      "evidence": [
-        {
-          "source": "Takvim",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Beşiktaş transfer",
-          "title": "Fenerbahçe ve Beşiktaş transferde karşı karşıya! İlk teklife ret Avrupalılar da peşinde - Takvim",
-          "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPTGltWEl4NmE4MDRDWXhsYm5hWms3NUpYMXF1OUFFREc3Z0s2TUx6aDVlQXN3cXVib1JvQVFDaVNiNmVGWHlWOURoMkQwS2ZYbnAwUWdkVTRfa0d5ZnhaXzBXZlJ0RWo2NFA5c2NxLXVmdDhtYXZJdHp4WW1ndm52aWpRb01ENHdhcXpTNnBfX1cydXdXdHZLTnlFRVQtLWc?oc=5",
-          "published_at": "2026-10-18T14:38:50+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
       "from_club": null,
       "to_club": "ÇORUM FK",
       "signal_type": "signing",
@@ -1208,6 +919,47 @@
           "link": "https://corumfk.com.tr/haberler/hos-geldin-burak-yilmaz",
           "published_at": "2026-10-14",
           "first_observed_at": "2026-10-14T09:59:12.925687+00:00"
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": null,
+      "from_club": null,
+      "to_club": "Samsunspor",
+      "signal_type": "departure",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "3fbc74cfb762",
+      "title": "Samsunspor’un yeni teknik direktörü kim olacak? Thorsten Fink ayrıldı, gözler yeni hocada! - Haberton",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOdi1Pdjl2MERNcW0wS3VtamswTjJnYUFJeml4VEczM01SUjMzX2Y2eEY5djBXUzkzWFo3R2cySno3QVJYZDlFcGM1ZEY4aUhTNUJPcmgzVGhzbUJWV1dDRjhQcDdjVEpvVHJSNlFWZEFKS3FYVzFJRUJPMlBYNFVTUnB6OXhqb1pOcDN2d1NhNWJkNlN2dVQ0dHBacUVZQ3JYOXlkZlhoSE92RjhN?oc=5",
+      "source": "Haberton",
+      "source_type": "google_news",
+      "account_type": null,
+      "query": "Süper Lig yeni teknik direktör 2026",
+      "source_tier": "MEDIA",
+      "published_at": "2026-10-13T06:40:44+00:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Haberton"
+      ],
+      "evidence": [
+        {
+          "source": "Haberton",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Süper Lig yeni teknik direktör 2026",
+          "title": "Samsunspor’un yeni teknik direktörü kim olacak? Thorsten Fink ayrıldı, gözler yeni hocada! - Haberton",
+          "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOdi1Pdjl2MERNcW0wS3VtamswTjJnYUFJeml4VEczM01SUjMzX2Y2eEY5djBXUzkzWFo3R2cySno3QVJYZDlFcGM1ZEY4aUhTNUJPcmgzVGhzbUJWV1dDRjhQcDdjVEpvVHJSNlFWZEFKS3FYVzFJRUJPMlBYNFVTUnB6OXhqb1pOcDN2d1NhNWJkNlN2dVQ0dHBacUVZQ3JYOXlkZlhoSE92RjhN?oc=5",
+          "published_at": "2026-10-13T06:40:44+00:00",
+          "first_observed_at": null
         }
       ],
       "model_use": false
