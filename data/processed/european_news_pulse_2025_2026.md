@@ -1,6 +1,6 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-10-21T09:24:58.205363+00:00
+Üretim zamanı: 2026-10-21T11:43:18.846942+00:00
 Toplam ilgili haber: 104
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
