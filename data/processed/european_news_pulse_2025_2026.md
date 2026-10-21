@@ -1,13 +1,18 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-10-20T21:37:35.794082+00:00
-Toplam ilgili haber: 86
+Üretim zamanı: 2026-10-21T00:39:03.017276+00:00
+Toplam ilgili haber: 89
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [Ümit Milli Takımı'nın Çekya maçlarının yerleri açıklandı!](https://www.sabah.com.tr/spor/futbol/2026/10/20/umit-milli-takiminin-cekya-maclarinin-yerleri-aciklandi) — Sabah Spor · 2026-10-21T00:46:41+03:00 · turnuva=— · kulüp=—
+- [UEFA Şampiyonlar Ligi'nde salı seansı sona erdi! İşte gecenin sonuçları](https://www.fotomac.com.tr/sampiyonlarligi/2026/10/20/uefa-sampiyonlar-liginde-sali-seansi-sona-erdi-iste-gecenin-sonuclari) — Fotomaç · 2026-10-21T00:43:56+03:00 · turnuva=CL · kulüp=—
+- [Dış basından Fenerbahçe için flaş manşet: Büyük hayal kırıklığı!](https://www.fotomac.com.tr/fenerbahce/2026/10/20/dis-basindan-fenerbahce-icin-flas-manset-buyuk-hayal-kirikligi) — Fotomaç · 2026-10-21T00:22:19+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [6 gollü dev maçta kazanan PSG! İşte gecenin sonuçları...](https://www.aksam.com.tr/spor/6-gollu-dev-macta-kazanan-psg-iste-gecenin-sonuclari/haber-1707844) — Aksam Spor · 2026-10-21T00:18:00+03:00 · turnuva=CL · kulüp=—
+- [7 gollü maçta kazanan Liverpool!](https://www.fotomac.com.tr/sampiyonlarligi/2026/10/20/7-gollu-macta-kazanan-liverpool) — Fotomaç · 2026-10-21T00:03:44+03:00 · turnuva=CL · kulüp=—
 - [UEFA Şampiyonlar Ligi'nin üçüncü haftası 9 maçla başladı](https://www.aa.com.tr/tr/spor/uefa-sampiyonlar-liginin-ucuncu-haftasi-9-macla-basladi/4095151) — Anadolu Ajansı Spor · 2026-10-21T00:01:00+03:00 · turnuva=CL · kulüp=—
+- [PSG evinde Barcelona'ya şans tanımadı!](https://www.fotomac.com.tr/sampiyonlarligi/2026/10/20/psg-evinde-barcelonaya-sans-tanimadi) — Fotomaç · 2026-10-21T00:00:38+03:00 · turnuva=CL · kulüp=Galatasaray
 - [Manchester City evinde farklı galip!](https://www.fotomac.com.tr/sampiyonlarligi/2026/10/20/manchester-city-evinde-farkli-galip) — Fotomaç · 2026-10-20T23:54:55+03:00 · turnuva=CL · kulüp=—
 - [Yunus Akgün: Lille maçını kazanıp bir çıkış yapmak istiyoruz](https://www.aksam.com.tr/spor/yunus-akgun-lille-macini-kazanip-bir-cikis-yapmak-istiyoruz/haber-1707839) — Aksam Spor · 2026-10-20T23:33:00+03:00 · turnuva=CL · kulüp=Galatasaray
 - [Mason Greenwood: Golümü attım ama...](https://www.fotomac.com.tr/sampiyonlarligi/2026/10/20/mason-greenwood-golumu-attim-ama) — Fotomaç · 2026-10-20T23:08:28+03:00 · turnuva=CL · kulüp=Fenerbahçe
@@ -17,12 +22,12 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Okan Buruk: "Önümüzdeki beş maç bizim için çok kritik"](https://www.sabah.com.tr/spor/futbol/2026/10/20/okan-buruk-onumuzdeki-bes-mac-bizim-icin-cok-kritik) — Sabah Spor · 2026-10-20T22:38:00+03:00 · turnuva=CL · kulüp=Galatasaray
 - [Slavia Prag Teknik Direktörü Jindrich Trpisovsky: "Harika bir maç çıkardık"](https://www.sabah.com.tr/spor/futbol/2026/10/20/slavia-prag-teknik-direktoru-jindrich-trpisovsky-harika-bir-mac-cikardik) — Sabah Spor · 2026-10-20T22:32:42+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [İsmail Kartal'dan flaş istifa yanıtı! "Keşke böyle bir şey olmasaydı"](https://www.fotomac.com.tr/sampiyonlarligi/2026/10/20/ismail-kartaldan-flas-istifa-yaniti-keske-boyle-bir-sey-olmasaydi) — Fotomaç · 2026-10-20T22:28:05+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [İsmail Kartal'dan istifa cevabı! "Biz önümüze bakıyoruz"](https://www.aksam.com.tr/spor/ismail-kartaldan-carpici-aciklama-cok-uzgunuz/haber-1707830) — Aksam Spor · 2026-10-20T22:25:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [5 maçlık zorlu fikstür! İşte Fenerbahçe'nin Şampiyonlar Ligi'nde kalan maçları](https://www.fotomac.com.tr/sampiyonlarligi/2026/10/20/5-maclik-zorlu-fikstur-iste-fenerbahcenin-sampiyonlar-liginde-kalan-maclari) — Fotomaç · 2026-10-20T22:23:23+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [UEFA ülke puanı güncellendi! İşte Türkiye'nin sıralaması](https://www.fotomac.com.tr/galeri/anasayfa/uefa-ulke-puani-guncellendi-iste-turkiyenin-siralamasi-1792528135) — Fotomaç · 2026-10-20T22:22:43+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [ÖZEL: Takvim sordu İsmail Kartal yanıtladı! İstifa için taraftara mesaj](https://www.takvim.com.tr/spor/fenerbahce/2026/10/20/fenerbahce-taraftarlarindan-ismail-kartala-istifa-tepkisi) — Takvim Spor · 2026-10-20T22:13:38+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Kadıköy'de Kerem Aktürkoğlu'na ıslıklı protesto!](https://www.fotomac.com.tr/fenerbahce/2026/10/20/kadikoyde-kerem-akturkogluna-islikli-protesto) — Fotomaç · 2026-10-20T22:11:53+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [UEFA Şampiyonlar Ligi'nde puan durumu! Fenerbahçe ve Galatasaray...](https://www.fotomac.com.tr/galeri/anasayfa/uefa-sampiyonlar-liginde-puan-durumu-fenerbahce-ve-galatasaray-1792525836) — Fotomaç · 2026-10-20T22:10:25+03:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe
+- [Lille Galatasaray maçı ne zaman?](https://www.haberturk.com/spor/foto/lille-galatasaray-maci-ne-zaman-saat-kacta-maci-hangi-kanalda-uefa-sampiyonlar-ligi-lille-3921219) — Haberturk Spor · 2026-10-20T21:55:59+00:00 · turnuva=CL · kulüp=Galatasaray
 - [PSG - BARCELONA MAÇI HANGİ KANALDA? PSG Barcelona maçı ne zaman, saat kaçta, şifresiz mi?](https://www.cnnturk.com/spor/futbol/psg-barcelona-maci-hangi-kanalda-psg-barcelona-maci-ne-zaman-saat-kacta-sifresiz-mi-3481691) — CNN Türk Spor · 2026-10-20T21:49:52+00:00 · turnuva=CL · kulüp=—
 - [Fenerbahçe tribünlerinden İsmail Kartal'a istifa çağrısı!](https://www.fotomac.com.tr/fenerbahce/2026/10/20/fenerbahce-tribunlerinden-ismail-kartala-istifa-cagrisi) — Fotomaç · 2026-10-20T21:40:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Kadıköy'de son dakika şoku! Fenerbahçe evinde Slavia Prag ile berabere kaldı](https://www.fotomac.com.tr/sampiyonlarligi/2026/10/20/kadikoyde-son-dakika-soku-fenerbahce-evinde-slavia-prag-ile-berabere-kaldi) — Fotomaç · 2026-10-20T21:38:11+03:00 · turnuva=CL · kulüp=Fenerbahçe
@@ -41,8 +46,3 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Okan Buruk'tan 5 maç vurgusu: 'Üst tur için çok kritik!'](https://www.hurriyet.com.tr/sporarena/okan-buruktan-5-mac-vurgusu-ust-tur-icin-cok-kritik-43349067) — Hürriyet Spor · 2026-10-20T19:39:36+00:00 · turnuva=CL · kulüp=Galatasaray
 - [FENERBAHÇE - PRAG MAÇI NEREDEN İZLENİR? Fenerbahçe - Slavia Prag maçı hangi kanalda, saat kaçta? Şifreli mi şifresiz mi?](https://www.cnnturk.com/spor/futbol/fenerbahce-prag-maci-nereden-izlenir-fenerbahce-slavia-prag-maci-hangi-kanalda-saat-kacta-sifreli-mi-sifresiz-mi-3482142) — CNN Türk Spor · 2026-10-20T19:38:09+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [FENERBAHÇE - SLAVIA PRAG MAÇI CANLI İZLE | Fenerbahçe Slavia Prag maçı kadrosu: FB maçı şifreli mi, şifresiz mi, nereden izlenir?](https://www.cnnturk.com/spor/futbol/fenerbahce-slavia-prag-maci-canli-izle-fenerbahce-slavia-prag-maci-kadrosu-fb-maci-sifreli-mi-sifresiz-mi-nereden-izlenir-3482074) — CNN Türk Spor · 2026-10-20T19:37:23+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- ["Singo uygun olması halinde süre alacak!"](https://www.haberturk.com/spor/lille-maci-oncesi-galatasaray-teknik-direktoru-okan-buruk-wilfried-singo-uygun-olmasi-halinde-sure-alacak-3921245) — Haberturk Spor · 2026-10-20T19:24:12+00:00 · turnuva=CL · kulüp=Galatasaray
-- ["Kazanmamız gerekiyordu"](https://www.haberturk.com/spor/mason-greenwood-kazanmamiz-gerekiyordu-3921244) — Haberturk Spor · 2026-10-20T19:22:47+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- [F.Bahçe'de sakatlık şoku!](https://www.haberturk.com/spor/fenerbahce-de-nathan-ake-den-kotu-haber-slavia-prag-karsisinda-sakatlandi-ve-maca-devam-edemedi-3921220) — Haberturk Spor · 2026-10-20T19:10:34+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- [İsmail Kartal'a istifa çağrısı!](https://www.haberturk.com/spor/fenerbahce-taraftarindan-ismail-kartal-a-istifa-cagrisi-3921240) — Haberturk Spor · 2026-10-20T19:07:06+00:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Fenerbahçe'ye son dakika şoku!](https://www.haberturk.com/spor/fenerbahce-slavia-prag-mac-sonucu-iste-fb-slavia-prag-maci-ozeti-ve-golleri-sampiyonlar-ligi-3921007) — Haberturk Spor · 2026-10-20T18:57:36+00:00 · turnuva=CL · kulüp=Fenerbahçe
