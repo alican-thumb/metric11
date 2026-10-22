@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T15:16:46.233804+00:00",
+  "generated_at": "2026-10-22T17:07:31.135292+00:00",
   "season": "2026-2027",
   "competitions": {
     "CL": {
@@ -9543,7 +9543,7 @@
           "group": "",
           "matchday": 2,
           "utc_date": "2026-10-22T14:30Z",
-          "status": "TIMED",
+          "status": "FINISHED",
           "home": {
             "id": "2528",
             "name": "Kairat Almaty",
@@ -9556,7 +9556,10 @@
             "short": "PAO",
             "crest": "https://a.espncdn.com/i/teamlogos/soccer/500/443.png"
           },
-          "actual_score": null,
+          "actual_score": {
+            "home": 1,
+            "away": 5
+          },
           "prediction": {
             "home_win": 0.386,
             "draw": 0.277,
@@ -9569,7 +9572,7 @@
             "lam_home": 1.534,
             "lam_away": 1.42
           },
-          "prediction_outcome": "pending"
+          "prediction_outcome": "wrong"
         },
         {
           "match_id": "401915844",
@@ -12599,10 +12602,10 @@
         }
       ],
       "accuracy": {
-        "finished": 18,
+        "finished": 19,
         "correct": 11,
-        "wrong": 7,
-        "pct": 61.1
+        "wrong": 8,
+        "pct": 57.9
       }
     }
   }
