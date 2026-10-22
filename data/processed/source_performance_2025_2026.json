@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-22T07:33:56.581914+00:00",
+  "generated_at": "2026-10-22T09:27:18.532261+00:00",
   "season": "2025_2026",
   "maturity_days": 14,
   "summary": {
-    "transfer_signals": 12,
+    "transfer_signals": 14,
     "official_events": 16,
     "official_events_with_timestamp": 5,
     "official_events_with_first_observed_timestamp": 16,
@@ -12,11 +12,11 @@
     "measured_lead_times": 0,
     "first_seen_lead_times": 11,
     "tracked_x_sources_waiting": 20,
-    "retained_claim_observations": 4551
+    "retained_claim_observations": 4552
   },
   "provider_coverage": {
     "google_news": {
-      "articles": 105,
+      "articles": 104,
       "queries": 30,
       "successful_queries": 30
     },
@@ -36,7 +36,7 @@
       "source": "Google News / medya",
       "source_tier": "CHANNEL",
       "source_type": "media",
-      "observations": 4548,
+      "observations": 4549,
       "scoreable_claims": 1404,
       "official_conversions": 13,
       "lead_hours": [],
@@ -56,7 +56,7 @@
       "lead_time_unavailable": 2,
       "matured_unconfirmed": 1368,
       "pending_claims": 23,
-      "unresolved_claims": 3144,
+      "unresolved_claims": 3145,
       "status": "FIRST_SEEN_BOUND",
       "score": 0.8,
       "average_lead_hours": null,
@@ -4889,6 +4889,26 @@
       "false_alarm_proxy_pct": null
     },
     {
+      "source": "Haber Global",
+      "source_tier": "MEDIA",
+      "source_type": "google_news",
+      "observations": 2,
+      "scoreable_claims": 0,
+      "official_conversions": 0,
+      "lead_hours": [],
+      "first_seen_lead_hours": [],
+      "lead_time_unavailable": 0,
+      "matured_unconfirmed": 0,
+      "pending_claims": 0,
+      "unresolved_claims": 2,
+      "status": "OBSERVING",
+      "score": null,
+      "average_lead_hours": null,
+      "average_first_seen_lead_hours": null,
+      "official_conversion_rate_pct": null,
+      "false_alarm_proxy_pct": null
+    },
+    {
       "source": "Haber3",
       "source_tier": "MEDIA",
       "source_type": "google_news",
@@ -5610,26 +5630,6 @@
     },
     {
       "source": "Haber Ekspres",
-      "source_tier": "MEDIA",
-      "source_type": "google_news",
-      "observations": 1,
-      "scoreable_claims": 0,
-      "official_conversions": 0,
-      "lead_hours": [],
-      "first_seen_lead_hours": [],
-      "lead_time_unavailable": 0,
-      "matured_unconfirmed": 0,
-      "pending_claims": 0,
-      "unresolved_claims": 1,
-      "status": "OBSERVING",
-      "score": null,
-      "average_lead_hours": null,
-      "average_first_seen_lead_hours": null,
-      "official_conversion_rate_pct": null,
-      "false_alarm_proxy_pct": null
-    },
-    {
-      "source": "Haber Global",
       "source_tier": "MEDIA",
       "source_type": "google_news",
       "observations": 1,
@@ -7371,7 +7371,7 @@
     {
       "name": "Sports Digitale",
       "google_query": "Sports Digitale transfer",
-      "indexed_results": 0,
+      "indexed_results": 1,
       "query_error": null,
       "attributed_observations": 0,
       "scoreable_claims": 0,
@@ -7380,7 +7380,7 @@
     {
       "name": "Yusuf Günaydın",
       "google_query": "Yusuf Günaydın transfer",
-      "indexed_results": 0,
+      "indexed_results": 1,
       "query_error": null,
       "attributed_observations": 0,
       "scoreable_claims": 0,
