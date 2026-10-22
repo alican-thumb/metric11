@@ -1,11 +1,18 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-10-21T21:40:16.519566+00:00
-Toplam ilgili haber: 121
+Üretim zamanı: 2026-10-22T00:43:22.206386+00:00
+Toplam ilgili haber: 127
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [Arda Güler atmaya devam ediyor! Sevilla sonrası bu kez de RB Leipzig](https://www.takvim.com.tr/spor/2026/10/21/real-madrid-rb-leipzig-sampiyonlar-ligi-maci) — Takvim Spor · 2026-10-22T01:47:37+03:00 · turnuva=CL · kulüp=—
+- [Dev maçta Bayern Münih ve Arsenal, puanları paylaştı](https://www.aksam.com.tr/spor/dev-macta-bayern-munih-ve-arsenal-puanlari-paylasti/haber-1708175) — Aksam Spor · 2026-10-22T01:47:00+03:00 · turnuva=CL · kulüp=—
+- [Arda Turan'lı Shakhtar Donetsk, Inter deplasmanında kayıp](https://www.aksam.com.tr/spor/arda-turanli-shakhtar-donetsk-inter-deplasmaninda-kayip/haber-1708172) — Aksam Spor · 2026-10-22T01:38:00+03:00 · turnuva=CL · kulüp=—
+- [Fenerbahçe'nin rakibi LASK'tan Şampiyonlar Ligi'nde flaş galibiyet](https://www.aksam.com.tr/spor/fenerbahcenin-rakibi-lasktan-sampiyonlar-liginde-flas-galibiyet/haber-1708171) — Aksam Spor · 2026-10-22T01:34:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Davide Ancelotti: Şampiyonlar Ligi'nde küçük hatalara af yok](https://www.aksam.com.tr/spor/davide-ancelotti-sampiyonlar-liginde-kucuk-hatalara-af-yok/haber-1708169) — Aksam Spor · 2026-10-22T01:19:00+03:00 · turnuva=CL · kulüp=Galatasaray
+- [Lille Teknik Direktörü Davide Ancelotti'den mağlubiyet sözleri!](https://www.fotomac.com.tr/sampiyonlarligi/2026/10/21/lille-teknik-direktoru-davide-ancelottiden-maglubiyet-sozleri) — Fotomaç · 2026-10-22T01:05:45+03:00 · turnuva=CL · kulüp=Galatasaray
+- [Vincenzo Italiano'dan sağ kanat değişikliği! Yeni transfer 11'de](https://www.takvim.com.tr/spor/besiktas/2026/10/21/besiktas-crystal-palace-avrupa-ligi-maci) — Takvim Spor · 2026-10-22T01:00:08+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Trabzonspor'da Konferans Ligi için Muhammed Salah kararı! Merkez orta saha değişecek](https://www.takvim.com.tr/spor/trabzonspor/2026/10/21/trabzonspor-hearts-konferans-ligi-maci) — Takvim Spor · 2026-10-22T00:18:35+03:00 · turnuva=ECL · kulüp=Trabzonspor
 - [İşte UEFA Şampiyonlar Ligi'nde gecenin sonuçları!](https://www.fotomac.com.tr/sampiyonlarligi/2026/10/21/iste-uefa-sampiyonlar-liginde-gecenin-sonuclari) — Fotomaç · 2026-10-22T00:18:27+03:00 · turnuva=CL · kulüp=—
 - [Victor Osimhen: Kimse bana gol atmayı öğretmesin!](https://www.fotomac.com.tr/sampiyonlarligi/2026/10/21/victor-osimhendunyanin-en-iyi-santrforlarindan-biriyim) — Fotomaç · 2026-10-22T00:10:35+03:00 · turnuva=CL · kulüp=Galatasaray
@@ -20,14 +27,12 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Halil Umut Meler Hoffenheim-Lyon maçını yönetecek](https://www.fotomac.com.tr/avrupaligi/2026/10/21/halil-umut-meler-hoffenheim-lyon-macini-yonetecek) — Fotomaç · 2026-10-21T22:57:42+03:00 · turnuva=EL · kulüp=—
 - [Trabzonspor Başkanı Ertuğrul Doğan'dan Hearts maçına ilgi gösteren taraftarlara teşekkür!](https://www.fotomac.com.tr/trabzonspor/2026/10/21/trabzonspor-baskani-ertugrul-dogandan-hearts-macina-ilgi-gosteren-taraftarlara-tesekkur) — Fotomaç · 2026-10-21T22:57:32+03:00 · turnuva=ECL · kulüp=Trabzonspor
 - [Galatasaray'ın zaferi sonrası ülke puanı güncellendi! Türkiye kaçıncı sırada?](https://www.takvim.com.tr/galeri/spor/galatasaray-kazandi-ulke-puani-guncellendi-turkiye-kacinci-sirada) — Takvim Spor · 2026-10-21T22:49:08+03:00 · turnuva=CL · kulüp=Galatasaray, Beşiktaş, Trabzonspor
-- [UEFA'dan Halil Umut Meler'e Avrupa Ligi'nde görev](https://www.aksam.com.tr/spor/uefadan-halil-umut-melere-avrupa-liginde-gorev/haber-1708153) — Aksam Spor · 2026-10-21T22:47:00+03:00 · turnuva=EL · kulüp=—
 - [UEFA'dan Halil Umut Meler'e görev](https://www.aa.com.tr/tr/spor/uefadan-halil-umut-melere-gorev/4096457) — Anadolu Ajansı Spor · 2026-10-21T22:45:50+03:00 · turnuva=EL · kulüp=—
-- [Okan Buruk'tan derbi sözleri! "Bu maçı unutmalıyız"](https://www.aksam.com.tr/spor/okan-buruktan-derbi-sozleri-bu-maci-unutmaliyiz/haber-1708151) — Aksam Spor · 2026-10-21T22:31:00+03:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe
 - [Yunus Akgün: Büyük takım refleksi gösterdik](https://www.fotomac.com.tr/sampiyonlarligi/2026/10/21/yunus-akgun-buyuk-takim-refleksi-gosterdik) — Fotomaç · 2026-10-21T22:28:12+03:00 · turnuva=CL · kulüp=Galatasaray
-- [Victor Osimhen, Şampiyonlar Ligi'nde siftah yaptı](https://www.aksam.com.tr/spor/victor-osimhen-sampiyonlar-liginde-siftah-yapti/haber-1708149) — Aksam Spor · 2026-10-21T22:12:00+03:00 · turnuva=CL · kulüp=Galatasaray
 - [Okan Buruk Lille zaferi sonrası o maçı işaret etti: Tur atlamış olarak gitmek istiyoruz](https://www.fotomac.com.tr/sampiyonlarligi/2026/10/21/okan-buruk-lille-zaferi-sonrasi-o-maci-isaret-etti-tur-atlamis-olarak-gitmek-istiyoruz) — Fotomaç · 2026-10-21T22:10:17+03:00 · turnuva=CL · kulüp=Galatasaray
 - [Galatasaray Şampiyonlar Ligi'nde Lille'i ezdi geçti! Galibiyet sonrası dev gelir](https://www.takvim.com.tr/spor/galatasaray/2026/10/21/galatasaraya-sampiyonlar-liginden-lille-zaferi-icin-21-milyon-euro) — Takvim Spor · 2026-10-21T22:09:22+03:00 · turnuva=CL · kulüp=Galatasaray
 - [Lucas Torreira: Çok zor bir maçtı!](https://www.fotomac.com.tr/sampiyonlarligi/2026/10/21/lucas-torreira-cok-zor-bir-macti) — Fotomaç · 2026-10-21T22:08:02+03:00 · turnuva=CL · kulüp=Galatasaray
+- ["İkinci yarıda bazı anları iyi yönetemedik"](https://www.haberturk.com/spor/davide-ancelotti-ikinci-yarida-bazi-anlari-iyi-yonetemedik-3921572) — Haberturk Spor · 2026-10-21T21:58:52+00:00 · turnuva=CL · kulüp=Galatasaray
 - [REAL MADRID - RB LEIPZIG MAÇI CANLI İZLE| Şampiyonlar Ligi Real Madrid - RB Leipzig maçı hangi kanalda, saat kaçta, şifresiz nereden izlenir?](https://www.cnnturk.com/spor/futbol/real-madrid-rb-leipzig-maci-canli-izle-sampiyonlar-ligi-real-madrid-rb-leipzig-maci-hangi-kanalda-saat-kacta-sifresiz-nereden-3482658) — CNN Türk Spor · 2026-10-21T21:54:13+00:00 · turnuva=CL · kulüp=Galatasaray
 - [UEFA ülke puanı güncellendi! İşte Türkiye'nin sıralaması](https://www.fotomac.com.tr/galeri/anasayfa/uefa-ulke-puani-guncellendi-iste-turkiyenin-siralamasi-1792528135) — Fotomaç · 2026-10-21T21:50:38+03:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe
 - [İşte Galatasaray'ı Şampiyonlar Ligi'nde bekleyen o fikstür!](https://www.fotomac.com.tr/sampiyonlarligi/2026/10/21/iste-galatasarayi-sampiyonlar-liginde-bekleyen-o-fikstur) — Fotomaç · 2026-10-21T21:45:02+03:00 · turnuva=CL · kulüp=Galatasaray
@@ -41,8 +46,3 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Arda Turan'lı Shakhtar, Inter'e diş geçiremedi!](https://www.haberturk.com/spor/inter-shakhtar-donetsk-mac-sonucu-iste-inter-shakhtar-donetsk-maci-ozeti-ve-golleri-uefa-sampiyonlar-ligi-3921564) — Haberturk Spor · 2026-10-21T21:02:31+00:00 · turnuva=CL · kulüp=—
 - [B. Münih ile Arsenal yenişemedi](https://www.haberturk.com/spor/bayern-munih-2-arsenal-2-mac-sonucu-3921561) — Haberturk Spor · 2026-10-21T20:57:06+00:00 · turnuva=CL · kulüp=—
 - [Galatasaray, bu sezon Şampiyonlar Ligi'ndeki ilk galibiyetini Lille karşısında aldı](https://www.aa.com.tr/tr/spor/galatasaray-bu-sezon-sampiyonlar-ligindeki-ilk-galibiyetini-lille-karsisinda-aldi/4096332) — Anadolu Ajansı Spor · 2026-10-21T20:41:08+03:00 · turnuva=CL · kulüp=Galatasaray
-- [Galatasaray penaltı bekledi! Lille maçında kritik VAR kararı](https://www.takvim.com.tr/spor/galatasaray/2026/10/21/lille-galatasaray-macinda-penalti-vardan-dondu) — Takvim Spor · 2026-10-21T20:22:35+03:00 · turnuva=CL · kulüp=Galatasaray
-- [Lille-Galatasaray maçında penaltı VAR'dan döndü! İşte pozisyon](https://www.fotomac.com.tr/sampiyonlarligi/2026/10/21/lille-galatasaray-macinda-penalti-vardan-dondu-iste-pozisyon) — Fotomaç · 2026-10-21T20:19:33+03:00 · turnuva=CL · kulüp=Galatasaray
-- [UEFA'dan Halil Umut Meler'e görev](https://www.hurriyet.com.tr/sporarena/uefadan-halil-umut-melere-gorev-43350348) — Hürriyet Spor · 2026-10-21T20:08:59+00:00 · turnuva=EL · kulüp=—
-- ["F.Bahçe derbisini dört gözle bekliyoruz"](https://www.haberturk.com/spor/lille-galatasaray-maci-sonrasi-victor-osimhen-den-fenerbahce-derbisi-sozleri-3921543) — Haberturk Spor · 2026-10-21T20:02:30+00:00 · turnuva=CL · kulüp=Galatasaray
-- [Lille-Galatasaray maçında goller peş peşe! Maçın gollerini izleyin](https://www.fotomac.com.tr/galatasaray/2026/10/21/lille-galatasaray-macinda-goller-pes-pese-macin-gollerini-izleyin) — Fotomaç · 2026-10-21T19:59:25+03:00 · turnuva=CL · kulüp=Galatasaray
