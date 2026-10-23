@@ -1,19 +1,24 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-10-23T11:33:39.973857+00:00
-Toplam ilgili haber: 71
+Üretim zamanı: 2026-10-23T15:04:26.003615+00:00
+Toplam ilgili haber: 58
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [Beşiktaş - Crystal Palace maçı İngiliz basınında](https://www.cnnturk.com/spor/futbol/besiktas-crystal-palace-maci-ingiliz-basininda-3483590) — CNN Türk Spor · 2026-10-23T14:04:55+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Manchester United'da olaylar bitmiyor! Bruno Fernandes'e hırsız şoku...](https://www.cnnturk.com/spor/futbol/manchester-unitedda-olaylar-bitmiyor-bruno-fernandese-hirsiz-soku-3483537) — CNN Türk Spor · 2026-10-23T12:02:45+00:00 · turnuva=CL · kulüp=—
-- [Beşiktaş-Crystal Palace maçı İngiliz basınında!](https://www.sabah.com.tr/spor/futbol/2026/10/23/besiktas-crystal-palace-maci-ingiliz-basininda) — Sabah Spor · 2026-10-23T11:26:01+03:00 · turnuva=EL · kulüp=Beşiktaş
+- [Miretti şoku sonrası iki ihtimal!](https://www.haberturk.com/spor/crystal-palace-macinda-sakatlanan-fabio-miretti-nin-ardindan-basaksehir-karsisinda-2-ihtimal-wilfred-ndidi-ya-da-leandro-trossard-3922024) — Haberturk Spor · 2026-10-23T11:59:43+00:00 · turnuva=EL · kulüp=Beşiktaş, Başakşehir
+- [Beşiktaş'tan Fabio Miretti açıklaması!](https://www.haberturk.com/spor/besiktas-crystal-palace-macinda-sakatlanan-fabio-miretti-nin-son-durumu-belli-oldu-4-6-hafta-yok-3922031) — Haberturk Spor · 2026-10-23T11:52:15+00:00 · turnuva=EL · kulüp=Beşiktaş
+- [Olaitan Avrupa'da bambaşka!](https://www.haberturk.com/spor/foto/besiktas-ta-junior-olaitan-avrupa-da-bambaska-3922008) — Haberturk Spor · 2026-10-23T11:36:23+00:00 · turnuva=EL · kulüp=—
 - [Spor yazarları Italiano için ikiye bölündü: "Harakiri"](https://www.takvim.com.tr/spor/besiktas/2026/10/23/spor-yazarlari-besiktas-crystal-palace-macini-degerlendirdi) — Takvim Spor · 2026-10-23T11:19:34+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Spor yazarlarından Salah ve Trabzonspor övgüsü: "Büyük usta"](https://www.takvim.com.tr/spor/trabzonspor/2026/10/23/spor-yazarlari-trabzonspor-hearts-macini-degerlendirdi) — Takvim Spor · 2026-10-23T10:21:13+03:00 · turnuva=ECL · kulüp=Trabzonspor
 - [Fenerbahçe'nin Şampiyonlar Ligi'ndeki yıldızı Oğuz Aydın'a hayran kaldılar](https://www.cnnturk.com/spor/futbol/fenerbahcenin-sampiyonlar-ligindeki-yildizi-oguz-aydina-hayran-kaldilar-3483472) — CNN Türk Spor · 2026-10-23T10:10:49+00:00 · turnuva=CL · kulüp=Fenerbahçe, Alanyaspor
+- ["Beşiktaş'ın golü oyun akışına ters"](https://www.haberturk.com/spor/ingiliz-basini-besiktas-crystal-palace-macini-degerlendirdi-besiktas-in-golu-oyun-akisina-ters-3921988) — Haberturk Spor · 2026-10-23T09:22:49+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Bruno Fernandes'in evine hırsız girdi!](https://www.haberturk.com/spor/foto/manchester-united-da-bruno-fernandes-in-evine-hirsiz-girdi-3921978) — Haberturk Spor · 2026-10-23T09:06:52+00:00 · turnuva=CL · kulüp=—
-- [İngiliz basını Beşiktaş-Crystal Palace maçını konuşuyor: 'Palace beraberlikle yetinmek zorunda kaldı!'](https://www.hurriyet.com.tr/sporarena/ingiliz-basini-besiktas-crystal-palace-macini-konusuyor-palace-beraberlikle-yetinmek-zorunda-kaldi-43351977) — Hürriyet Spor · 2026-10-23T09:04:42+00:00 · turnuva=EL · kulüp=Beşiktaş
+- [İngiliz basını Beşiktaş-Crystal Palace maçını konuşuyor: 'Palace beraberlikle yetinmek zorunda kaldı!'](https://www.hurriyet.com.tr/sporarena/ingiliz-basini-besiktas-crystal-palace-macini-konusuyor-palace-beraberlikle-yetinmek-zorunda-kaldi-43351977) — Hürriyet Spor · 2026-10-23T09:04:00+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Gözler Fenerbahçe derbisine döndü!](https://www.haberturk.com/spor/lille-galibiyeti-sonrasi-galatasaray-da-gozler-fenerbahce-derbisine-dondu-3921974) — Haberturk Spor · 2026-10-23T09:00:41+00:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe
+- [Fenerbahçe'de transfer pişmanlığı! Şampiyonlar Ligi'nde gol krallığına oynuyorlar - Fotomaç](https://news.google.com/rss/articles/CBMirAFBVV95cUxQQzZBVXdJaGJFOHpoc2lMY05kOTBNc1ZBNmtCZG9oZHNqMWdxeGJwR3BQaGFCV1J6VnFqd3FiUi1SdGFBbEtUa1pENHNLMkFkOEtBVW1BeTktOEJFWjlIMHU3M2Zxa0FFUHVic3lTcDZnS0puc0F5aUdZVnZjV05WSl9ob0lLRkRMRXZRMWFYVmdScGRnM1lBQUd3UmtBYmY0OEQxRm0tbEFYbDFG0gGyAUFVX3lxTE1OZWw0Z0pLUDd1YU0yTjNrRDBVNFM4N24zTm16OXF5bjdmV3NXa0lQd3hMVEpkTFF4QTl5RlRweGR5WUVjS2FUMFNHSWltZ3JpdHdVUVlRRThuaDVBbjdtOTRHOGVKc24yNElubHRwamNfQmNadFdQdXFuZ3RsM3ZlbWxDU01YU1IwREFkbmFTQkV0eW9ibmRvOG53XzdETUtVVl9NR0hBNTE5TkdlRlFVUHc?oc=5) — Fotomaç · 2026-10-23T08:34:59+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Trabzonspor'da Onana, Hearts maçı sonrası trafik kazası geçirdi](https://www.cnnturk.com/spor/futbol/trabzonsporda-onana-hearts-maci-sonrasi-trafik-kazasi-gecirdi-3483437) — CNN Türk Spor · 2026-10-23T08:15:12+00:00 · turnuva=ECL · kulüp=Trabzonspor
 - [3 penaltı kurtardı! Takımını finale çıkardı](https://www.haberturk.com/spor/eski-galatasarayli-fernando-muslera-3-penalti-kurtardi-estudiantes-adini-libertadores-finaline-yazdirdi-3921954) — Haberturk Spor · 2026-10-23T07:56:20+00:00 · turnuva=— · kulüp=Galatasaray
 - [Nihat Kahveci'den, Beşiktaşlı yıldıza sitem: Niye uçuyorsun?](https://www.cnnturk.com/spor/futbol/nihat-kahveciden-besiktasli-yildiza-sitem-niye-ucuyorsun-3483425) — CNN Türk Spor · 2026-10-23T07:26:12+00:00 · turnuva=EL · kulüp=Beşiktaş
@@ -41,8 +46,3 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [BEŞİKTAŞ - CRYSTAL PALACE MAÇI NE ZAMAN? UEFA Avrupa Ligi Beşiktaş Crystal Palace Maçı Hangi Kanalda, Saat Kaçta? Orkun Kökçü Oynayabilecek Mi? UEL İçin Geri Sayım Başladı](https://www.cnnturk.com/spor/futbol/besiktas-crystal-palace-maci-ne-zaman-uefa-avrupa-ligi-besiktas-crystal-palace-maci-hangi-kanalda-saat-kacta-orkun-kokcu-3482333) — CNN Türk Spor · 2026-10-22T22:49:11+00:00 · turnuva=EL · kulüp=Beşiktaş
 - ["Avrupa'da namağlup devam ediyoruz"](https://www.haberturk.com/spor/besiktas-ta-vincenzo-italiano-avrupa-da-namaglup-devam-ediyoruz-3921882) — Haberturk Spor · 2026-10-22T21:56:57+00:00 · turnuva=EL · kulüp=Beşiktaş
 - ["Beşiktaş’ı oynatmamaya çalıştık"](https://www.haberturk.com/spor/pierre-sage-besiktasi-oynatmamaya-calistik-3921881) — Haberturk Spor · 2026-10-22T21:50:52+00:00 · turnuva=EL · kulüp=Beşiktaş
-- [Beşiktaş bu sezon ilk kez berabere kaldı](https://www.haberturk.com/spor/besiktas-bu-sezon-ilk-kez-uefa-avrupa-ligi-nde-berabere-kaldi-3921880) — Haberturk Spor · 2026-10-22T21:40:22+00:00 · turnuva=EL · kulüp=Beşiktaş
-- ["İyi bir maç oldu"](https://www.haberturk.com/spor/wilfried-ndidi-iyi-bir-mac-oldu-3921879) — Haberturk Spor · 2026-10-22T21:37:59+00:00 · turnuva=EL · kulüp=Beşiktaş
-- [Beşiktaş'ta kale düştü!](https://www.haberturk.com/spor/foto/crystal-palace-ile-berabere-kalan-besiktas-ta-kale-dustu-3921874) — Haberturk Spor · 2026-10-22T21:32:57+00:00 · turnuva=EL · kulüp=Beşiktaş
-- ["Kırmızı karttan sonra 1 puana razı olduk"](https://www.haberturk.com/spor/junior-olaitan-kirmizi-karttan-sonra-1-puana-razi-olduk-3921876) — Haberturk Spor · 2026-10-22T21:29:59+00:00 · turnuva=EL · kulüp=Beşiktaş
-- [Konferans Ligi'nde gecenin sonuçları!](https://www.haberturk.com/spor/uefa-konferans-ligi-nde-gecenin-sonuclari-3921872) — Haberturk Spor · 2026-10-22T21:19:20+00:00 · turnuva=ECL · kulüp=Trabzonspor
