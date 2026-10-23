@@ -1,11 +1,12 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-10-23T17:03:37.973699+00:00
-Toplam ilgili haber: 58
+Üretim zamanı: 2026-10-23T21:24:13.448840+00:00
+Toplam ilgili haber: 55
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [Beşiktaş'tan Avrupa'da son 9 yılın en iyi başlangıcı!](https://www.sabah.com.tr/spor/futbol/2026/10/23/besiktastan-avrupada-son-9-yilin-en-iyi-baslangici) — Sabah Spor · 2026-10-23T20:32:38+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş - Crystal Palace maçı İngiliz basınında](https://www.cnnturk.com/spor/futbol/besiktas-crystal-palace-maci-ingiliz-basininda-3483590) — CNN Türk Spor · 2026-10-23T14:04:55+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Manchester United'da olaylar bitmiyor! Bruno Fernandes'e hırsız şoku...](https://www.cnnturk.com/spor/futbol/manchester-unitedda-olaylar-bitmiyor-bruno-fernandese-hirsiz-soku-3483537) — CNN Türk Spor · 2026-10-23T12:02:45+00:00 · turnuva=CL · kulüp=—
 - [Miretti şoku sonrası iki ihtimal!](https://www.haberturk.com/spor/crystal-palace-macinda-sakatlanan-fabio-miretti-nin-ardindan-basaksehir-karsisinda-2-ihtimal-wilfred-ndidi-ya-da-leandro-trossard-3922024) — Haberturk Spor · 2026-10-23T11:59:43+00:00 · turnuva=EL · kulüp=Beşiktaş, Başakşehir
@@ -22,8 +23,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Trabzonspor'da Onana, Hearts maçı sonrası trafik kazası geçirdi](https://www.cnnturk.com/spor/futbol/trabzonsporda-onana-hearts-maci-sonrasi-trafik-kazasi-gecirdi-3483437) — CNN Türk Spor · 2026-10-23T08:15:12+00:00 · turnuva=ECL · kulüp=Trabzonspor
 - [3 penaltı kurtardı! Takımını finale çıkardı](https://www.haberturk.com/spor/eski-galatasarayli-fernando-muslera-3-penalti-kurtardi-estudiantes-adini-libertadores-finaline-yazdirdi-3921954) — Haberturk Spor · 2026-10-23T07:56:20+00:00 · turnuva=— · kulüp=Galatasaray
 - [Nihat Kahveci'den, Beşiktaşlı yıldıza sitem: Niye uçuyorsun?](https://www.cnnturk.com/spor/futbol/nihat-kahveciden-besiktasli-yildiza-sitem-niye-ucuyorsun-3483425) — CNN Türk Spor · 2026-10-23T07:26:12+00:00 · turnuva=EL · kulüp=Beşiktaş
-- [Beşiktaş 2-2 Crystal Palace Maç Özeti | Temsilcimiz, İngiliz ekibiyle yenişemedi](https://www.cnnturk.com/spor/futbol/live-besiktas-2-2-crystal-palace-mac-ozeti-temsilcimiz-ingiliz-ekibiyle-yenisemedi-3483138) — CNN Türk Spor · 2026-10-23T07:20:29+00:00 · turnuva=EL · kulüp=Beşiktaş
-- [Trabzonspor - Hearts MAÇ ÖZETİ | Fırtına, Konferans Ligi'nde yine kazandı](https://www.cnnturk.com/spor/futbol/live-trabzonspor-hearts-mac-ozeti-firtina-konferans-liginde-yine-kazandi-3483114) — CNN Türk Spor · 2026-10-23T07:20:07+00:00 · turnuva=ECL · kulüp=Trabzonspor
 - ["Beşiktaş bu takımı yenmeliydi"](https://www.haberturk.com/spor/foto/spor-yazarlari-besiktas-crystal-palace-macini-degerlendirdi-besiktas-bu-takimi-yenmeliydi-3921925) — Haberturk Spor · 2026-10-23T07:10:56+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Juventus'ta Zeki Çelik yine attı](https://www.cnnturk.com/spor/futbol/juventusta-zeki-celik-yine-atti-3483424) — CNN Türk Spor · 2026-10-23T07:06:44+00:00 · turnuva=EL · kulüp=—
 - [Avrupa'da Türk haftası! UEFA ülke puanı güncellendi](https://www.hurriyet.com.tr/sporarena/avrupada-turk-haftasi-uefa-ulke-puani-guncellendi-43351884) — Hürriyet Spor · 2026-10-23T07:06:09+00:00 · turnuva=— · kulüp=—
@@ -40,9 +39,10 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Beşiktaş, Avrupa'da yoluna yenilgisiz devam etti](https://www.aa.com.tr/tr/spor/besiktas-avrupada-yoluna-yenilgisiz-devam-etti/4097852) — Anadolu Ajansı Spor · 2026-10-22T23:57:01+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş'ta bir sakatlık daha! Yıldız futbolcu maça devam edemedi](https://www.takvim.com.tr/spor/besiktas/2026/10/22/besiktasa-fabio-mirettiden-sakatlik-soku) — Takvim Spor · 2026-10-22T23:23:25+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Trabzonspor'dan 2'de 2 ile şov! Konferans Ligi puan durumu](https://www.takvim.com.tr/galeri/spor/konferans-ligi-2-hafta-puan-durumu) — Takvim Spor · 2026-10-22T22:51:50+03:00 · turnuva=ECL · kulüp=Trabzonspor
-- [BEŞİKTAŞ - CRYSTAL PALACE MAÇI NEREDEN İZLENİR? Beşiktaş - Crystal Palace maçı hangi kanalda, saat kaçta? Şifreli mi şifresiz mi?](https://www.cnnturk.com/spor/futbol/besiktas-crystal-palace-maci-nereden-izlenir-besiktas-crystal-palace-maci-hangi-kanalda-saat-kacta-sifreli-mi-sifresiz-mi-3483266) — CNN Türk Spor · 2026-10-22T22:51:08+00:00 · turnuva=EL · kulüp=Beşiktaş
-- [BEŞİKTAŞ - CRYSTAL PALACE MAÇI HANGİ KANALDA? BJK maçı ne zaman, saat kaçta, şifreli mi, şifresiz mi izlenecek? Beşiktaş - Crystal Palace maç kadrosu](https://www.cnnturk.com/spor/futbol/besiktas-crystal-palace-maci-hangi-kanalda-bjk-maci-ne-zaman-saat-kacta-sifreli-mi-sifresiz-mi-izlenecek-besiktas-crystal-3483053) — CNN Türk Spor · 2026-10-22T22:50:38+00:00 · turnuva=EL · kulüp=Beşiktaş
-- [BEŞİKTAŞ CRYSTAL PALACE MAÇI CANLI İZLE TRT 1 ŞİFRESİZ | Beşiktaş Crystal Palace TRT 1 canlı yayın bilgileri! Avrupa Ligi Beşiktaş Crystal Palace maçı şifresiz nereden izlenir?](https://www.cnnturk.com/spor/futbol/besiktas-crystal-palace-maci-canli-izle-trt-1-sifresiz-besiktas-crystal-palace-trt-1-canli-yayin-bilgileri-avrupa-ligi-besiktas-3483203) — CNN Türk Spor · 2026-10-22T22:50:07+00:00 · turnuva=EL · kulüp=Beşiktaş
-- [BEŞİKTAŞ - CRYSTAL PALACE MAÇI NE ZAMAN? UEFA Avrupa Ligi Beşiktaş Crystal Palace Maçı Hangi Kanalda, Saat Kaçta? Orkun Kökçü Oynayabilecek Mi? UEL İçin Geri Sayım Başladı](https://www.cnnturk.com/spor/futbol/besiktas-crystal-palace-maci-ne-zaman-uefa-avrupa-ligi-besiktas-crystal-palace-maci-hangi-kanalda-saat-kacta-orkun-kokcu-3482333) — CNN Türk Spor · 2026-10-22T22:49:11+00:00 · turnuva=EL · kulüp=Beşiktaş
 - ["Avrupa'da namağlup devam ediyoruz"](https://www.haberturk.com/spor/besiktas-ta-vincenzo-italiano-avrupa-da-namaglup-devam-ediyoruz-3921882) — Haberturk Spor · 2026-10-22T21:56:57+00:00 · turnuva=EL · kulüp=Beşiktaş
-- ["Beşiktaş’ı oynatmamaya çalıştık"](https://www.haberturk.com/spor/pierre-sage-besiktasi-oynatmamaya-calistik-3921881) — Haberturk Spor · 2026-10-22T21:50:52+00:00 · turnuva=EL · kulüp=Beşiktaş
+- [Beşiktaş'ta kale düştü!](https://www.haberturk.com/spor/foto/crystal-palace-ile-berabere-kalan-besiktas-ta-kale-dustu-3921874) — Haberturk Spor · 2026-10-22T21:32:57+00:00 · turnuva=EL · kulüp=Beşiktaş
+- [Trabzonspor'dan Reis ile "5'te 5"](https://www.aa.com.tr/tr/spor/trabzonspordan-reis-ile-5te-5/4097734) — Anadolu Ajansı Spor · 2026-10-22T20:56:57+03:00 · turnuva=ECL · kulüp=Trabzonspor
+- [Trabzonspor-Hearts maçı sonrası Ozan Tufan, Cenk Özkacar ve Batista Mendy konuştu: Çok iyi arkadaşlarımız var](https://www.hurriyet.com.tr/sporarena/trabzonspor-hearts-maci-sonrasi-ozan-tufan-cenk-ozkacar-ve-batista-mendy-konustu-cok-iyi-arkadaslarimiz-var-43351574) — Hürriyet Spor · 2026-10-22T19:29:00+00:00 · turnuva=ECL · kulüp=Trabzonspor
+- [Bruno Fernandes'ten Galatasaray'a müjde! Ayrılık iddiaları güçlendi: İşte o sözler](https://www.takvim.com.tr/spor/galatasaray/2026/10/22/bruno-fernandesten-galatasaraya-mujde-gibi-aciklamalar) — Takvim Spor · 2026-10-22T17:14:54+03:00 · turnuva=CL · kulüp=Galatasaray
+- [Kairat Almaty 1-5 Panathinaikos maç özeti (Konferans Ligi)](https://www.hurriyet.com.tr/sporarena/kairat-almaty-1-5-panathinaikos-mac-ozeti-konferans-ligi-43351478) — Hürriyet Spor · 2026-10-22T16:52:00+00:00 · turnuva=ECL · kulüp=—
+- [Arda Güler atmaya devam ediyor! Sevilla sonrası bu kez de RB Leipzig](https://www.takvim.com.tr/spor/2026/10/21/real-madrid-rb-leipzig-sampiyonlar-ligi-maci) — Takvim Spor · 2026-10-22T01:47:37+03:00 · turnuva=CL · kulüp=—
