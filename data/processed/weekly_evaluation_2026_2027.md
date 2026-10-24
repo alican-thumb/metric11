@@ -4,12 +4,12 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 
 ## Genel Karne
 
-- Değerlendirilen maç: **73**
-- İsabet: **34/73** (%47)
+- Değerlendirilen maç: **76**
+- İsabet: **36/76** (%47)
 - Beraberlik yakalama: **2/14** (%14)
-- Yüksek güvenli maç isabeti: **17/28** (%61)
-- Brier score: **0.618** (düşük daha iyi; 2025-26 referans 0.600)
-- Log loss: **1.025** (düşük daha iyi; 2025-26 referans 1.005)
+- Yüksek güvenli maç isabeti: **19/30** (%63)
+- Brier score: **0.610** (düşük daha iyi; 2025-26 referans 0.600)
+- Log loss: **1.015** (düşük daha iyi; 2025-26 referans 1.005)
 
 ### Güven bandı kalibrasyonu
 
@@ -17,8 +17,8 @@ _"Beyan edilen ort. olasılık" ile "İsabet" arasındaki fark büyükse (özell
 
 | Güven bandı | Maç | İsabet | Beyan edilen ort. olasılık | Brier | Log loss | Referans (2025-26: isabet / brier / logloss) |
 | --- | --- | --- | --- | --- | --- | --- |
-| HIGH | 28 | 17/28 (%61) | %59 | 0.531 | 0.903 | %64 / 0.516 / 0.885 |
-| MEDIUM | 25 | 7/25 (%28) | %47 | 0.685 | 1.111 | %54 / 0.619 / 1.032 |
+| HIGH | 30 | 19/30 (%63) | %60 | 0.506 | 0.869 | %64 / 0.516 / 0.885 |
+| MEDIUM | 26 | 7/26 (%27) | %47 | 0.694 | 1.127 | %54 / 0.619 / 1.032 |
 | LOW | 20 | 10/20 (%50) | %37 | 0.657 | 1.089 | %48 / 0.670 / 1.103 |
 
 ### Seçilen tarafa göre isabet
@@ -27,15 +27,18 @@ _Model hangi tarafı seçtiğinde ne oldu? Belirli bir seçimde (ör. deplasman 
 
 | Seçim | Maç | İsabet | Gerçekleşen (Ev / X / Dep) |
 | --- | --- | --- | --- |
-| Ev | 42 | 23/42 (%55) | 23 / 7 / 12 |
+| Ev | 43 | 23/43 (%53) | 23 / 7 / 13 |
 | Beraberlik | 6 | 2/6 (%33) | 1 / 2 / 3 |
-| Deplasman | 25 | 9/25 (%36) | 11 / 5 / 9 |
+| Deplasman | 27 | 11/27 (%41) | 11 / 5 / 11 |
 
-## Hafta 9 — 0/1 isabet (%0)
+## Hafta 9 — 2/4 isabet (%50)
 
 | Maç | Skor | Tahmin | Sonuç | Güven |
 | --- | --- | --- | --- | --- |
 | CORENDON ALANYASPOR - KOCAELİSPOR | 1 - 2 | Beraberlik | ❌ | LOW |
+| EYÜPSPOR - KASIMPAŞA A.Ş. | 0 - 1 | Deplasman | ✅ | HIGH |
+| GAZİANTEP FUTBOL KULÜBÜ A.Ş. - ERZURUMSPOR FK | 1 - 3 | Ev | ❌ | MEDIUM |
+| SAMSUNSPOR A.Ş. - AMED SPORTİF FAALİYETLER | 1 - 2 | Deplasman | ✅ | HIGH |
 
 ## Hafta 8 — 7/9 isabet (%78)
 

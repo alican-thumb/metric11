@@ -1,6 +1,6 @@
 {
   "available": true,
-  "generated_at": "2026-10-24T17:27:53.296306",
+  "generated_at": "2026-10-24T20:46:39.483598",
   "week": 9,
   "matches": [
     {
@@ -26,87 +26,54 @@
       "date": "24 Eki",
       "home_team": "EYÜPSPOR",
       "away_team": "KASIMPAŞA A.Ş.",
-      "is_played": false,
-      "actual_score": null,
+      "is_played": true,
+      "actual_score": "0 - 1",
       "predicted": "away",
       "pick_text": "KASIMPAŞA A.Ş.",
       "home_win_probability": 0.085,
       "draw_probability": 0.209,
       "away_win_probability": 0.706,
-      "data_confidence": "HIGH",
+      "data_confidence": "PLAYED",
       "recommended_scoreline": "0-1",
       "expected_home_goals": 0.45,
       "expected_away_goals": 1.81,
-      "signals": {
-        "over_2_5_probability": 0.393,
-        "btts_probability": 0.303,
-        "expected_total_cards": 4.5,
-        "red_card_risk": 0.266,
-        "home_card_data_available": true,
-        "away_card_data_available": true,
-        "no_goal_probability": 0.104,
-        "home_scores_first_probability": 0.178,
-        "away_scores_first_probability": 0.717,
-        "likely_goal_band": "76-90+"
-      }
+      "signals": null
     },
     {
       "match_id": "317856",
       "date": "24 Eki",
       "home_team": "GAZİANTEP FUTBOL KULÜBÜ A.Ş.",
       "away_team": "ERZURUMSPOR FK",
-      "is_played": false,
-      "actual_score": null,
+      "is_played": true,
+      "actual_score": "1 - 3",
       "predicted": "home",
       "pick_text": "GAZİANTEP FUTBOL KULÜBÜ A.Ş.",
       "home_win_probability": 0.476,
       "draw_probability": 0.306,
       "away_win_probability": 0.218,
-      "data_confidence": "LOW_NEW_TEAM",
+      "data_confidence": "PLAYED",
       "recommended_scoreline": "1-0",
       "expected_home_goals": 1.19,
       "expected_away_goals": 0.7,
-      "signals": {
-        "over_2_5_probability": 0.294,
-        "btts_probability": 0.35,
-        "expected_total_cards": 3.4,
-        "red_card_risk": 0.143,
-        "home_card_data_available": true,
-        "away_card_data_available": true,
-        "no_goal_probability": 0.151,
-        "home_scores_first_probability": 0.535,
-        "away_scores_first_probability": 0.314,
-        "likely_goal_band": "76-90+"
-      }
+      "signals": null
     },
     {
       "match_id": "317864",
       "date": "24 Eki",
       "home_team": "SAMSUNSPOR A.Ş.",
       "away_team": "AMED SPORTİF FAALİYETLER",
-      "is_played": false,
-      "actual_score": null,
+      "is_played": true,
+      "actual_score": "1 - 2",
       "predicted": "away",
       "pick_text": "AMED SPORTİF FAALİYETLER",
       "home_win_probability": 0.133,
       "draw_probability": 0.207,
       "away_win_probability": 0.66,
-      "data_confidence": "LOW_NEW_TEAM",
+      "data_confidence": "PLAYED",
       "recommended_scoreline": "0-1",
       "expected_home_goals": 0.74,
       "expected_away_goals": 1.96,
-      "signals": {
-        "over_2_5_probability": 0.506,
-        "btts_probability": 0.449,
-        "expected_total_cards": 3.0,
-        "red_card_risk": 0.048,
-        "home_card_data_available": true,
-        "away_card_data_available": true,
-        "no_goal_probability": 0.067,
-        "home_scores_first_probability": 0.256,
-        "away_scores_first_probability": 0.677,
-        "likely_goal_band": "76-90+"
-      }
+      "signals": null
     },
     {
       "match_id": "317861",
@@ -256,35 +223,35 @@
   ],
   "last_week": {
     "week": 9,
-    "evaluated_matches": 1,
-    "correct": 0,
-    "accuracy": 0.0,
+    "evaluated_matches": 4,
+    "correct": 2,
+    "accuracy": 0.5,
     "actual_draws": 0,
     "draws_caught": 0,
     "draw_recall": null,
-    "high_conf_matches": 0,
-    "high_conf_correct": 0,
-    "high_conf_accuracy": null,
-    "brier_score": 0.7119,
-    "log_loss": 1.1648,
+    "high_conf_matches": 2,
+    "high_conf_correct": 2,
+    "high_conf_accuracy": 1.0,
+    "brier_score": 0.4893,
+    "log_loss": 0.8629,
     "confidence_breakdown": {
       "HIGH": {
-        "matches": 0,
-        "correct": 0,
-        "accuracy": null,
-        "avg_stated_probability": null,
-        "calibration_gap": null,
-        "brier_score": null,
-        "log_loss": null
+        "matches": 2,
+        "correct": 2,
+        "accuracy": 1.0,
+        "avg_stated_probability": 0.683,
+        "calibration_gap": 0.317,
+        "brier_score": 0.1567,
+        "log_loss": 0.3818
       },
       "MEDIUM": {
-        "matches": 0,
+        "matches": 1,
         "correct": 0,
-        "accuracy": null,
-        "avg_stated_probability": null,
-        "calibration_gap": null,
-        "brier_score": null,
-        "log_loss": null
+        "accuracy": 0.0,
+        "avg_stated_probability": 0.476,
+        "calibration_gap": -0.476,
+        "brier_score": 0.9317,
+        "log_loss": 1.5233
       },
       "LOW": {
         "matches": 1,
@@ -298,13 +265,13 @@
     },
     "pick_side_breakdown": {
       "home": {
-        "matches": 0,
+        "matches": 1,
         "correct": 0,
-        "accuracy": null,
+        "accuracy": 0.0,
         "actual": {
           "home": 0,
           "draw": 0,
-          "away": 0
+          "away": 1
         }
       },
       "draw": {
@@ -318,13 +285,13 @@
         }
       },
       "away": {
-        "matches": 0,
-        "correct": 0,
-        "accuracy": null,
+        "matches": 2,
+        "correct": 2,
+        "accuracy": 1.0,
         "actual": {
           "home": 0,
           "draw": 0,
-          "away": 0
+          "away": 2
         }
       }
     }
