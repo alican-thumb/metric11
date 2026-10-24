@@ -25,9 +25,9 @@
 - Santrfor / skor yükü: Süper Lig'e yeni çıkan takım; Santrfor / skor yükü pozisyonunda deneyimli takviye kritik. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, FELIPE AUGUSTO DA SILVA
 - 6 numara / savunma emniyeti: Süper Lig'e yeni çıkan takım; 6 numara / savunma emniyeti pozisyonunda deneyimli takviye kritik. Adaylar: GAİUS ABRAHAM JERED MAKOUTA, ANDRI FANNAR BALDURSSON, ANTHONY JUNIOR DENNIS
 
-## ERZURUMSPOR FK
+## AMED SFK
 
-- Güç: None | GF: 0.625 | GA: 1.375 | kart: None
+- Güç: None | GF: 2.25 | GA: 1.125 | kart: None
 - Zafiyet: yeni lig takımı
 - Scout ipucu: Süper Lig deneyimli kaleci, stoper ve santrfor takviyesi — serbest ajan ve kiralık öncelikli.
 - Kaleci / istikrar: Süper Lig'e yeni çıkan takım; Kaleci / istikrar pozisyonunda deneyimli takviye kritik. Adaylar: MUHAMMED ŞENGEZER, YAHIA FOFANA, MARIO RICARDO DA SILVA VELHO
@@ -35,9 +35,9 @@
 - Santrfor / skor yükü: Süper Lig'e yeni çıkan takım; Santrfor / skor yükü pozisyonunda deneyimli takviye kritik. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, FELIPE AUGUSTO DA SILVA
 - 6 numara / savunma emniyeti: Süper Lig'e yeni çıkan takım; 6 numara / savunma emniyeti pozisyonunda deneyimli takviye kritik. Adaylar: GAİUS ABRAHAM JERED MAKOUTA, ANDRI FANNAR BALDURSSON, ANTHONY JUNIOR DENNIS
 
-## AMED SFK
+## ERZURUMSPOR FK
 
-- Güç: None | GF: 2.25 | GA: 1.125 | kart: None
+- Güç: None | GF: 0.625 | GA: 1.375 | kart: None
 - Zafiyet: yeni lig takımı
 - Scout ipucu: Süper Lig deneyimli kaleci, stoper ve santrfor takviyesi — serbest ajan ve kiralık öncelikli.
 - Kaleci / istikrar: Süper Lig'e yeni çıkan takım; Kaleci / istikrar pozisyonunda deneyimli takviye kritik. Adaylar: MUHAMMED ŞENGEZER, YAHIA FOFANA, MARIO RICARDO DA SILVA VELHO
@@ -67,10 +67,10 @@
 
 ## KOCAELİSPOR
 
-- Güç: 33.3 | GF: 1.125 | GA: 1.0 | kart: 2.38
+- Güç: 33.3 | GF: 1.222 | GA: 1.0 | kart: 2.38
 - Zafiyet: skor üretim sorunu, deplasman zayıf, hücum verimsizliği
 - Scout ipucu: Bireysel gol çözümü: düşük GF oranını kıracak bitirici forvet
-- Santrfor / skor yükü: Skor üretim problemi için bitirici profil; mevcut gol ortalaması 1.125. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, FELIPE AUGUSTO DA SILVA
+- Santrfor / skor yükü: Skor üretim problemi için bitirici profil; mevcut gol ortalaması 1.222. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, FELIPE AUGUSTO DA SILVA
 - Sol açık / çizgi kırıcı: Deplasman veya üretim zafiyetinde çizgi kıran/taşıyıcı hücum profili gerekir. Adaylar: KACPER SZYMON KOZLOWSKI, DORGELES NENE, ERNEST MUÇİ
 - 8 numara / fizik motoru: Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir. Adaylar: ALEXANDRU IULIAN MAXIM, QAZIM LACI, ORKUN KÖKÇÜ
 - Bek / çift yönlü koridor: Kanat savunması ve geçiş gücünü aynı anda destekleyecek çift yönlü bek profili gerekir. Adaylar: YHOAN MANY ANDZOUANA, ROLAND SALLAI, RUAN PEREIRA DUARTE
@@ -107,7 +107,7 @@
 
 ## CORENDON ALANYASPOR
 
-- Güç: 44.1 | GF: 1.0 | GA: 1.125 | kart: 2.38
+- Güç: 44.1 | GF: 1.0 | GA: 1.222 | kart: 2.38
 - Zafiyet: deplasman zayıf, düşük şut baskısı
 - Scout ipucu: Geçiş oyunu taşıyacak fiziksel orta saha/kanat
 - 8 numara / fizik motoru: Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir. Adaylar: ALEXANDRU IULIAN MAXIM, QAZIM LACI, ORKUN KÖKÇÜ

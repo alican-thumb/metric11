@@ -1,9 +1,9 @@
 {
   "summary": {
-    "tff_profiles": 880,
+    "tff_profiles": 881,
     "tm_clubs": 18,
     "tm_players": 817,
-    "snapshot_in_scope_tff_profiles": 590,
+    "snapshot_in_scope_tff_profiles": 591,
     "matched_profiles": 618,
     "verified_matched_profiles": 618,
     "in_scope_verified_matched_profiles": 546,
@@ -11,14 +11,14 @@
     "manual_alias_pending_network_verification": 4,
     "operationally_mapped_profiles": 622,
     "operational_in_scope_mapped_profiles": 550,
-    "unmatched_profiles": 258,
-    "overall_match_rate": 0.702,
-    "in_scope_match_rate": 0.925,
-    "operational_mapping_rate": 0.707,
-    "operational_in_scope_mapping_rate": 0.932,
+    "unmatched_profiles": 259,
+    "overall_match_rate": 0.701,
+    "in_scope_match_rate": 0.924,
+    "operational_mapping_rate": 0.706,
+    "operational_in_scope_mapping_rate": 0.931,
     "scout_blocking_unmatched": 0,
     "category_counts": {
-      "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 38,
+      "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 39,
       "SAME_CLUB_NAME_REVIEW": 1,
       "POSSIBLE_TRANSFER_OR_CLUB_MISMATCH": 1,
       "OUT_OF_SNAPSHOT_CLUB": 218
@@ -27,7 +27,7 @@
       "HIGH_USAGE_UNRESOLVED": 17,
       "ROTATION_USAGE_UNRESOLVED": 9,
       "OUT_OF_SNAPSHOT": 218,
-      "NO_MATCH_ACTIVITY": 14
+      "NO_MATCH_ACTIVITY": 15
     },
     "rule": "Doğrulanmış kapsama yalnız snapshot eşleşmesi girer; manuel alias kullanımı ayrı izlenir ve ağ teyidi tamamlanana kadar doğrulanmış sayılmaz."
   },
@@ -150,15 +150,15 @@
     },
     {
       "team": "KOCAELİSPOR",
-      "tff_profiles": 35,
+      "tff_profiles": 36,
       "tm_players": 39,
       "matched_profiles": 33,
       "manual_alias_mapped_profiles": 0,
-      "unmatched_profiles": 2,
-      "match_rate": 0.943,
-      "operational_mapping_rate": 0.943,
+      "unmatched_profiles": 3,
+      "match_rate": 0.917,
+      "operational_mapping_rate": 0.917,
       "categories": {
-        "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 2
+        "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 3
       }
     },
     {
@@ -4361,6 +4361,22 @@
       "player_id": "2935084",
       "tff_name": "JAKOP VESTERGAARD JESSEN",
       "tff_club": "KASIMPAŞA A.Ş.",
+      "category": "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT",
+      "priority_rank": 4,
+      "blocks_scout_review": false,
+      "review_tier": "NO_MATCH_ACTIVITY",
+      "season_activity": {
+        "starts": 0,
+        "squad_inclusions": 0,
+        "goals": 0
+      },
+      "candidate": null,
+      "action": "Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir."
+    },
+    {
+      "player_id": "1991798",
+      "tff_name": "FATİHHAN DEMİR",
+      "tff_club": "KOCAELİSPOR",
       "category": "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT",
       "priority_rank": 4,
       "blocks_scout_review": false,

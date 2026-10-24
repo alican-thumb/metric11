@@ -1,11 +1,11 @@
 # TFF Oyuncu Profilleri
 
 - Takım filtresi: Yok
-- Profil sayısı: 490
+- Profil sayısı: 491
 - Hata sayısı: 0
 - Ortalama yaş: 25.8
 - Ortalama kalan sözleşme ayı: 21.0
-- 23 yaş ve altı oyuncu: 170
+- 23 yaş ve altı oyuncu: 171
 - 13 ay içinde sözleşmesi bitecek oyuncu: 190
 
 ## Genç Oyuncular
@@ -22,6 +22,7 @@
 - CEMİLHAN ASLAN (GAZİANTEP FUTBOL KULÜBÜ A.Ş.): yaş=18, sözleşme bitiş=2027-06-30
 - EFE YİĞİT ÜSTÜN (SAMSUNSPOR A.Ş.): yaş=18, sözleşme bitiş=2028-06-30
 - EYMEN KARATAŞ (CORENDON ALANYASPOR): yaş=18, sözleşme bitiş=Yok
+- FATİHHAN DEMİR (KOCAELİSPOR): yaş=18, sözleşme bitiş=Yok
 - HULİSİ DESTİCİ (KOCAELİSPOR): yaş=18, sözleşme bitiş=2030-06-30
 - KUZEY SAPAZ (FENERBAHÇE A.Ş.): yaş=18, sözleşme bitiş=2028-06-30
 - MERVAN MÜJDECİ (GAZİANTEP FUTBOL KULÜBÜ A.Ş.): yaş=18, sözleşme bitiş=2027-06-30
@@ -39,7 +40,6 @@
 - BERK KIZILDEMİR (AMED SPORTİF FAALİYETLER): yaş=19, sözleşme bitiş=2029-06-30
 - CHRIST OTINIEL SADIA (EYÜPSPOR): yaş=19, sözleşme bitiş=2028-06-30
 - EGE YILDIRIM (GÖZTEPE A.Ş.): yaş=19, sözleşme bitiş=2029-06-30
-- EGEMEN AYDIN (TÜMOSAN KONYASPOR): yaş=19, sözleşme bitiş=2027-06-30
 
 ## Sözleşme Fırsatları
 

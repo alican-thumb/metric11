@@ -1,18 +1,18 @@
 # Transfermarkt Oyuncu Eşleşme İnceleme Kuyruğu
 
-- TFF profil: 880
+- TFF profil: 881
 - Transfermarkt snapshot: 18/18 kulüp, 817 oyuncu
-- Snapshot kapsamındaki TFF profil: 590
+- Snapshot kapsamındaki TFF profil: 591
 - Doğrulanmış snapshot eşleşmesi: 618
 - Manuel eşleme ile kullanılan profil: 4
 - Ağ teyidi bekleyen manuel eşleme: 4
-- Çözülmemiş profil: 258
-- Doğrulanmış genel eşleşme oranı: %70.2
-- Doğrulanmış snapshot içi eşleşme oranı: %92.5
-- Manuel eşleme dahil kullanılabilir snapshot içi kapsama: %93.2
+- Çözülmemiş profil: 259
+- Doğrulanmış genel eşleşme oranı: %70.1
+- Doğrulanmış snapshot içi eşleşme oranı: %92.4
+- Manuel eşleme dahil kullanılabilir snapshot içi kapsama: %93.1
 - Scout incelemesini bloke eden eşleşmeyen oyuncu: 0
-- Sınıf dağılımı: {'NO_RELIABLE_CANDIDATE_IN_SNAPSHOT': 38, 'SAME_CLUB_NAME_REVIEW': 1, 'POSSIBLE_TRANSFER_OR_CLUB_MISMATCH': 1, 'OUT_OF_SNAPSHOT_CLUB': 218}
-- Kullanım önceliği dağılımı: {'HIGH_USAGE_UNRESOLVED': 17, 'ROTATION_USAGE_UNRESOLVED': 9, 'OUT_OF_SNAPSHOT': 218, 'NO_MATCH_ACTIVITY': 14}
+- Sınıf dağılımı: {'NO_RELIABLE_CANDIDATE_IN_SNAPSHOT': 39, 'SAME_CLUB_NAME_REVIEW': 1, 'POSSIBLE_TRANSFER_OR_CLUB_MISMATCH': 1, 'OUT_OF_SNAPSHOT_CLUB': 218}
+- Kullanım önceliği dağılımı: {'HIGH_USAGE_UNRESOLVED': 17, 'ROTATION_USAGE_UNRESOLVED': 9, 'OUT_OF_SNAPSHOT': 218, 'NO_MATCH_ACTIVITY': 15}
 - Kural: Doğrulanmış kapsama yalnız snapshot eşleşmesi girer; manuel alias kullanımı ayrı izlenir ve ağ teyidi tamamlanana kadar doğrulanmış sayılmaz.
 
 ## Scout Bloke Eden Kuyruk
@@ -38,7 +38,7 @@
 | GÖZTEPE A.Ş. | 36 | 36 | 30 | 1 | 5 | %83.3 | %86.1 |
 | HESAP.COM ANTALYASPOR | 0 | 48 | 0 | 0 | 0 | %0 | %0 |
 | KASIMPAŞA A.Ş. | 39 | 60 | 36 | 0 | 3 | %92.3 | %92.3 |
-| KOCAELİSPOR | 35 | 39 | 33 | 0 | 2 | %94.3 | %94.3 |
+| KOCAELİSPOR | 36 | 39 | 33 | 0 | 3 | %91.7 | %91.7 |
 | MISIRLI.COM.TR FATİH KARAGÜMRÜK | 0 | 46 | 0 | 0 | 0 | %0 | %0 |
 | RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ | 30 | 32 | 29 | 0 | 1 | %96.7 | %96.7 |
 | SAMSUNSPOR A.Ş. | 40 | 44 | 36 | 0 | 4 | %90.0 | %90.0 |
@@ -282,6 +282,7 @@
 ### KOCAELİSPOR
 
 - DANIEL EBENEZER KWASI AGYEI (KOCAELİSPOR): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=23, gol=5, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
+- FATİHHAN DEMİR (KOCAELİSPOR): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=NO_MATCH_ACTIVITY, ilk11=0, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - HULİSİ DESTİCİ (KOCAELİSPOR): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=NO_MATCH_ACTIVITY, ilk11=0, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 
 ### KÜTAHYASPOR FUTBOL SPOR KULÜBÜ
