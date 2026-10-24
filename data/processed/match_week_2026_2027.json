@@ -1,6 +1,6 @@
 {
   "available": true,
-  "generated_at": "2026-10-24T00:40:35.981841",
+  "generated_at": "2026-10-24T04:31:47.428159",
   "week": 9,
   "matches": [
     {
@@ -8,29 +8,18 @@
       "date": "23 Eki",
       "home_team": "CORENDON ALANYASPOR",
       "away_team": "KOCAELİSPOR",
-      "is_played": false,
-      "actual_score": null,
+      "is_played": true,
+      "actual_score": "1 - 2",
       "predicted": "draw",
       "pick_text": "Beraberlik",
       "home_win_probability": 0.375,
       "draw_probability": 0.313,
       "away_win_probability": 0.312,
-      "data_confidence": "LOW",
+      "data_confidence": "PLAYED",
       "recommended_scoreline": "0-0",
       "expected_home_goals": 0.87,
       "expected_away_goals": 0.76,
-      "signals": {
-        "over_2_5_probability": 0.224,
-        "btts_probability": 0.309,
-        "expected_total_cards": 4.2,
-        "red_card_risk": 0.093,
-        "home_card_data_available": true,
-        "away_card_data_available": true,
-        "no_goal_probability": 0.196,
-        "home_scores_first_probability": 0.429,
-        "away_scores_first_probability": 0.375,
-        "likely_goal_band": "76-90+"
-      }
+      "signals": null
     },
     {
       "match_id": "317857",
@@ -266,76 +255,76 @@
     }
   ],
   "last_week": {
-    "week": 8,
-    "evaluated_matches": 9,
-    "correct": 7,
-    "accuracy": 0.7778,
+    "week": 9,
+    "evaluated_matches": 1,
+    "correct": 0,
+    "accuracy": 0.0,
     "actual_draws": 0,
     "draws_caught": 0,
     "draw_recall": null,
-    "high_conf_matches": 4,
-    "high_conf_correct": 4,
-    "high_conf_accuracy": 1.0,
-    "brier_score": 0.4039,
-    "log_loss": 0.7308,
+    "high_conf_matches": 0,
+    "high_conf_correct": 0,
+    "high_conf_accuracy": null,
+    "brier_score": 0.7119,
+    "log_loss": 1.1648,
     "confidence_breakdown": {
       "HIGH": {
-        "matches": 4,
-        "correct": 4,
-        "accuracy": 1.0,
-        "avg_stated_probability": 0.619,
-        "calibration_gap": 0.381,
-        "brier_score": 0.224,
-        "log_loss": 0.4828
+        "matches": 0,
+        "correct": 0,
+        "accuracy": null,
+        "avg_stated_probability": null,
+        "calibration_gap": null,
+        "brier_score": null,
+        "log_loss": null
       },
       "MEDIUM": {
-        "matches": 2,
-        "correct": 2,
-        "accuracy": 1.0,
-        "avg_stated_probability": 0.469,
-        "calibration_gap": 0.531,
-        "brier_score": 0.4235,
-        "log_loss": 0.7573
+        "matches": 0,
+        "correct": 0,
+        "accuracy": null,
+        "avg_stated_probability": null,
+        "calibration_gap": null,
+        "brier_score": null,
+        "log_loss": null
       },
       "LOW": {
-        "matches": 3,
-        "correct": 1,
-        "accuracy": 0.3333,
-        "avg_stated_probability": 0.3253,
-        "calibration_gap": 0.008,
-        "brier_score": 0.6309,
-        "log_loss": 1.0438
+        "matches": 1,
+        "correct": 0,
+        "accuracy": 0.0,
+        "avg_stated_probability": 0.313,
+        "calibration_gap": -0.313,
+        "brier_score": 0.7119,
+        "log_loss": 1.1648
       }
     },
     "pick_side_breakdown": {
       "home": {
-        "matches": 6,
-        "correct": 6,
-        "accuracy": 1.0,
+        "matches": 0,
+        "correct": 0,
+        "accuracy": null,
         "actual": {
-          "home": 6,
+          "home": 0,
           "draw": 0,
           "away": 0
         }
       },
       "draw": {
-        "matches": 2,
+        "matches": 1,
         "correct": 0,
         "accuracy": 0.0,
         "actual": {
-          "home": 1,
+          "home": 0,
           "draw": 0,
           "away": 1
         }
       },
       "away": {
-        "matches": 1,
-        "correct": 1,
-        "accuracy": 1.0,
+        "matches": 0,
+        "correct": 0,
+        "accuracy": null,
         "actual": {
           "home": 0,
           "draw": 0,
-          "away": 1
+          "away": 0
         }
       }
     }

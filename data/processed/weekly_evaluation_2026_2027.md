@@ -4,12 +4,12 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 
 ## Genel Karne
 
-- Değerlendirilen maç: **72**
-- İsabet: **34/72** (%47)
+- Değerlendirilen maç: **73**
+- İsabet: **34/73** (%47)
 - Beraberlik yakalama: **2/14** (%14)
 - Yüksek güvenli maç isabeti: **17/28** (%61)
-- Brier score: **0.617** (düşük daha iyi; 2025-26 referans 0.600)
-- Log loss: **1.023** (düşük daha iyi; 2025-26 referans 1.005)
+- Brier score: **0.618** (düşük daha iyi; 2025-26 referans 0.600)
+- Log loss: **1.025** (düşük daha iyi; 2025-26 referans 1.005)
 
 ### Güven bandı kalibrasyonu
 
@@ -19,7 +19,7 @@ _"Beyan edilen ort. olasılık" ile "İsabet" arasındaki fark büyükse (özell
 | --- | --- | --- | --- | --- | --- | --- |
 | HIGH | 28 | 17/28 (%61) | %59 | 0.531 | 0.903 | %64 / 0.516 / 0.885 |
 | MEDIUM | 25 | 7/25 (%28) | %47 | 0.685 | 1.111 | %54 / 0.619 / 1.032 |
-| LOW | 19 | 10/19 (%53) | %38 | 0.654 | 1.085 | %48 / 0.670 / 1.103 |
+| LOW | 20 | 10/20 (%50) | %37 | 0.657 | 1.089 | %48 / 0.670 / 1.103 |
 
 ### Seçilen tarafa göre isabet
 
@@ -28,8 +28,14 @@ _Model hangi tarafı seçtiğinde ne oldu? Belirli bir seçimde (ör. deplasman 
 | Seçim | Maç | İsabet | Gerçekleşen (Ev / X / Dep) |
 | --- | --- | --- | --- |
 | Ev | 42 | 23/42 (%55) | 23 / 7 / 12 |
-| Beraberlik | 5 | 2/5 (%40) | 1 / 2 / 2 |
+| Beraberlik | 6 | 2/6 (%33) | 1 / 2 / 3 |
 | Deplasman | 25 | 9/25 (%36) | 11 / 5 / 9 |
+
+## Hafta 9 — 0/1 isabet (%0)
+
+| Maç | Skor | Tahmin | Sonuç | Güven |
+| --- | --- | --- | --- | --- |
+| CORENDON ALANYASPOR - KOCAELİSPOR | 1 - 2 | Beraberlik | ❌ | LOW |
 
 ## Hafta 8 — 7/9 isabet (%78)
 
