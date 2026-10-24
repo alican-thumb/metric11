@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-23T21:24:13.396146+00:00",
+  "generated_at": "2026-10-24T00:40:38.365244+00:00",
   "season": "2025_2026",
   "summary": {
     "free_agents_count": 94,
     "final_year_count": 338,
-    "transfer_signals_count": 18,
+    "transfer_signals_count": 20,
     "transfer_status_counts": {
       "OFFICIAL": 0,
-      "CORROBORATED": 1,
-      "RUMOR": 2,
-      "REVIEW_REQUIRED": 15
+      "CORROBORATED": 0,
+      "RUMOR": 3,
+      "REVIEW_REQUIRED": 17
     },
     "promotion_events_count": 0,
     "free_agent_total_market_value_eur": 180425000
@@ -465,7 +465,7 @@
       "to_club": "Beşiktaş",
       "signal_type": "transfer_fee",
       "window": "summer_2026",
-      "confidence": "MEDIUM",
+      "confidence": "LOW",
       "direction_quality": "HEADLINE_EXPLICIT_DIRECTION",
       "article_id": "0f63762e32b0",
       "title": "Beşiktaş'ın hedefi Nicolas Raskin! Bonservisi belli oldu - Beşiktaş - Spor Haberleri - Milliyet",
@@ -479,12 +479,11 @@
       "first_observed_at": null,
       "summary_tr": "",
       "entity_confidence": "MEDIUM",
-      "verification_status": "CORROBORATED",
-      "interpretation": "Birden fazla kaynak aynı yönlü iddiayı taşıyor; resmi açıklama beklenir.",
-      "source_count": 2,
+      "verification_status": "RUMOR",
+      "interpretation": "Tek kaynaklı transfer iddiası; yalnız transfer radarında izlenir.",
+      "source_count": 1,
       "sources": [
-        "Milliyet",
-        "Fanatik"
+        "Milliyet"
       ],
       "evidence": [
         {
@@ -496,17 +495,6 @@
           "title": "Beşiktaş'ın hedefi Nicolas Raskin! Bonservisi belli oldu - Beşiktaş - Spor Haberleri - Milliyet",
           "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOOFdjRHpnWXRiSVZWcmdSNnJXM0x1RkZRcWhCWGlLUTRJX1lCb1FCT2QxWExSdC1HTGxQRDgtV295QjlXUURwOGNZM3RqNGNFcVVEWjEyWXB1MHl4WFVvN2JIeUhyTmxyUXl4by1rZ3lyTWZHUkhJX0tweFIzVEpfbkd1VFN0eXpMMjNVTGJlQ1U2NUxrUUpSSE9ybndHUQ?oc=5",
           "published_at": "2026-10-23T20:04:38+00:00",
-          "first_observed_at": null
-        },
-        {
-          "source": "Fanatik",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Beşiktaş transfer",
-          "title": "Beşiktaş'tan Nicolas Raskin bombası! Ödenecek bonservis belli oldu - Fanatik",
-          "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPcTVKNEd0R2pBejlUeXJVWHp6Nk9OU0ZyWGdnRUxrbGd0a2ZUQ2xfeDhHb3dhRG9jT04zUzJUNExYR21tZjRhcjlsdENoU1JLZGVHYVl6MER2YkJFWXdqWGxUa2o1eksxa1EyTzJQcm9IeHVpdnpfRll2XzdoOTRxMGZHRFJ4Z3FXTHotWmVoMnR3VTFmZXdxeFRFbnNDalIwbWpkME1lQTRlS3R1?oc=5",
-          "published_at": "2026-10-23T03:59:00+00:00",
           "first_observed_at": null
         }
       ],
@@ -643,13 +631,54 @@
       "window": "summer_2026",
       "confidence": "LOW",
       "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "d653fb9e519e",
-      "title": "Rus basını transfer gelişmesini duyurdu: Galatasaray görüşüyor, Beşiktaş da ilgileniyor",
-      "link": "https://www.hurriyet.com.tr/sporarena/rus-basini-transfer-gelismesini-duyurdu-galatasaray-gorusuyor-besiktas-da-ilgileniyor-43352799",
-      "source": "Hürriyet Spor",
+      "article_id": "9c7d7f855635",
+      "title": "Galatasaray ve Beşiktaş aynı yıldızın peşinde! 35 milyon euro'luk dev transfer yarışı",
+      "link": "https://www.fotomac.com.tr/superlig/2026/10/23/galatasaray-ve-besiktas-ayni-yildizin-pesinde-35-milyon-euroluk-dev-transfer-yarisi",
+      "source": "Fotomaç",
       "source_type": "rss",
       "account_type": null,
       "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-10-23T21:13:25+03:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Fotomaç"
+      ],
+      "evidence": [
+        {
+          "source": "Fotomaç",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Galatasaray ve Beşiktaş aynı yıldızın peşinde! 35 milyon euro'luk dev transfer yarışı",
+          "link": "https://www.fotomac.com.tr/superlig/2026/10/23/galatasaray-ve-besiktas-ayni-yildizin-pesinde-35-milyon-euroluk-dev-transfer-yarisi",
+          "published_at": "2026-10-23T21:13:25+03:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": null,
+      "from_club": "Beşiktaş",
+      "to_club": "Galatasaray",
+      "signal_type": "interest",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "25ce8653e6cd",
+      "title": "Rus basını transfer gelişmesini duyurdu: Galatasaray görüşüyor, Beşiktaş da ilgileniyor - Hürriyet",
+      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPM2dQU2Y0bXlTQ2NVaVp1WjVMLU04Wm5JS0luUjVLMHREMk4waENYWkZMUnJZUTR1QWlaQ3Q2eFg1cEgydmFPaGlXWFc4eVhQSkY3VzVESUxQWENNNUxPX0tZRnlNZ2tjR2xUOG5EbkhfTlloUkZwRUVYd3lqOWNUN3RTazB4UkNJX0dFN0U3MUVEanFBbmV0RXd3LXo2cXAzSzVJdjdrZW1lRFJILUtQQjBUbHpRbEx6cWFaZ0V4Q1liUG51ZGhTWDUzTTg?oc=5",
+      "source": "Hürriyet",
+      "source_type": "google_news",
+      "account_type": null,
+      "query": "Beşiktaş transfer",
       "source_tier": "MEDIA",
       "published_at": "2026-10-23T17:04:36+00:00",
       "first_observed_at": null,
@@ -659,21 +688,9 @@
       "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
       "source_count": 1,
       "sources": [
-        "Hürriyet Spor",
         "Hürriyet"
       ],
       "evidence": [
-        {
-          "source": "Hürriyet Spor",
-          "source_tier": "MEDIA",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "Rus basını transfer gelişmesini duyurdu: Galatasaray görüşüyor, Beşiktaş da ilgileniyor",
-          "link": "https://www.hurriyet.com.tr/sporarena/rus-basini-transfer-gelismesini-duyurdu-galatasaray-gorusuyor-besiktas-da-ilgileniyor-43352799",
-          "published_at": "2026-10-23T17:04:36+00:00",
-          "first_observed_at": null
-        },
         {
           "source": "Hürriyet",
           "source_tier": "MEDIA",
@@ -765,6 +782,88 @@
           "title": "Beşiktaş ve Fenerbahçe'nin peşinde koştuğu yıldız kararını verdi - Sözcü Gazetesi",
           "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOT1B0ZFd4b3c2WkZlUXBMekhGNG9LMEVZbUFmSFBvYUhGUnpvUWx4UnViM1VLdXRLeUtYWkpCWloyZkNKMnczSTZJVWtCNVlYbjJUWFI5emEwR3hPWlJqeHl3d3R0SWZRVEZ4N0YyWTVSX21LX29TYnNNY0xaV2tfeGd6R2xiTzZoT0Q5OVI5Z1JMcXplTG0wakNNV1JsUQ?oc=5",
           "published_at": "2026-10-23T11:53:50+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": null,
+      "from_club": null,
+      "to_club": "Galatasaray",
+      "signal_type": "interest",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "a68129e242fa",
+      "title": "Lille-Galatasaray maçına scout yağmuru! O yıldızın peşindeler",
+      "link": "https://www.fotomac.com.tr/galatasaray/2026/10/23/lille-galatasaray-macina-scout-yagmuru-o-yildizin-pesindeler",
+      "source": "Fotomaç",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-10-23T12:55:57+03:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Fotomaç"
+      ],
+      "evidence": [
+        {
+          "source": "Fotomaç",
+          "source_tier": "MEDIA",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Lille-Galatasaray maçına scout yağmuru! O yıldızın peşindeler",
+          "link": "https://www.fotomac.com.tr/galatasaray/2026/10/23/lille-galatasaray-macina-scout-yagmuru-o-yildizin-pesindeler",
+          "published_at": "2026-10-23T12:55:57+03:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": null,
+      "from_club": null,
+      "to_club": "Fenerbahçe",
+      "signal_type": "departure",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "7f18e7f143f0",
+      "title": "Fenerbahçe'de forma giymeden ayrılıyor: Devre arası yolcu - Sözcü Gazetesi",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNeTRydVhSSzg0ZVkyXzI3bWdCZl9VYl9LTzBWX0lya1JGeXM1aFIxZzlYbzUxZENnS3RvNW91bFVUdzN1LVAzNlRiNGxyb3NCMHNlcWtJMHlPcm5ESDFVdmZGOXBuYkxJZks2OWxQWXNtdm5PdzNxaFlTS3pHWFJjNk9FV1FBUFlqNk9LZ0RKVFFIcUlLVXh5ZA?oc=5",
+      "source": "Sözcü Gazetesi",
+      "source_type": "google_news",
+      "account_type": null,
+      "query": "Fenerbahçe transfer",
+      "source_tier": "MEDIA",
+      "published_at": "2026-10-23T05:51:00+00:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Sözcü Gazetesi"
+      ],
+      "evidence": [
+        {
+          "source": "Sözcü Gazetesi",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Fenerbahçe transfer",
+          "title": "Fenerbahçe'de forma giymeden ayrılıyor: Devre arası yolcu - Sözcü Gazetesi",
+          "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNeTRydVhSSzg0ZVkyXzI3bWdCZl9VYl9LTzBWX0lya1JGeXM1aFIxZzlYbzUxZENnS3RvNW91bFVUdzN1LVAzNlRiNGxyb3NCMHNlcWtJMHlPcm5ESDFVdmZGOXBuYkxJZks2OWxQWXNtdm5PdzNxaFlTS3pHWFJjNk9FV1FBUFlqNk9LZ0RKVFFIcUlLVXh5ZA?oc=5",
+          "published_at": "2026-10-23T05:51:00+00:00",
           "first_observed_at": null
         }
       ],
@@ -888,47 +987,6 @@
           "title": "Beşiktaş'ta kale düştü!",
           "link": "https://www.haberturk.com/spor/foto/crystal-palace-ile-berabere-kalan-besiktas-ta-kale-dustu-3921874",
           "published_at": "2026-10-22T21:32:57+00:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": null,
-      "from_club": null,
-      "to_club": "Beşiktaş",
-      "signal_type": "departure",
-      "window": "summer_2026",
-      "confidence": "LOW",
-      "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "d4128c2b5b93",
-      "title": "Beşiktaş-Crystal Palace maçının kahramanı Olaitan, ilke imza attı! Muhteşem gol",
-      "link": "https://www.hurriyet.com.tr/sporarena/besiktas-crystal-palace-macinin-kahramani-olaitan-ilke-imza-atti-muhtesem-gol-43351676",
-      "source": "Hürriyet Spor",
-      "source_type": "rss",
-      "account_type": null,
-      "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-10-22T21:25:00+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "LOW",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "Hürriyet Spor"
-      ],
-      "evidence": [
-        {
-          "source": "Hürriyet Spor",
-          "source_tier": "MEDIA",
-          "source_type": "rss",
-          "account_type": null,
-          "query": null,
-          "title": "Beşiktaş-Crystal Palace maçının kahramanı Olaitan, ilke imza attı! Muhteşem gol",
-          "link": "https://www.hurriyet.com.tr/sporarena/besiktas-crystal-palace-macinin-kahramani-olaitan-ilke-imza-atti-muhtesem-gol-43351676",
-          "published_at": "2026-10-22T21:25:00+00:00",
           "first_observed_at": null
         }
       ],
