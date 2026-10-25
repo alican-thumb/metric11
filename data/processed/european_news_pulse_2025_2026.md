@@ -1,18 +1,18 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-10-25T04:36:21.833050+00:00
+Üretim zamanı: 2026-10-25T07:36:08.709477+00:00
 Toplam ilgili haber: 22
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [Batrakov için İngiliz devleri devrede!](https://www.haberturk.com/spor/foto/barcelona-ve-lille-maclariyla-yildizi-parladi-aleksey-bartakor-icin-liverpool-ve-arsenal-devreye-girdi-3922361) — Haberturk Spor · 2026-10-25T06:26:27+00:00 · turnuva=CL · kulüp=Galatasaray
 - [Galatasaray sözleşme imzalamadı Fransız devi devreye girdi: Garanti şartı işi zora soktu](https://www.takvim.com.tr/spor/galatasaray/2026/10/24/galatasarayin-yedek-kalecisi-jankat-yilmaza-lille-talip) — Takvim Spor · 2026-10-24T16:37:17+03:00 · turnuva=CL · kulüp=Galatasaray
 - [FIFA Başkanı Infantino, dünya futbolunun desteğini aldığına inanıyor](https://www.aa.com.tr/tr/spor/fifa-baskani-infantino-dunya-futbolunun-destegini-aldigina-inaniyor/4099581) — Anadolu Ajansı Spor · 2026-10-24T16:06:06+03:00 · turnuva=— · kulüp=—
 - [UEFA sıralamasında Trabzonspor fırtınası](https://www.cnnturk.com/spor/futbol/uefa-siralamasinda-trabzonspor-firtinasi-3483876) — CNN Türk Spor · 2026-10-24T13:22:11+00:00 · turnuva=— · kulüp=Trabzonspor
 - [Derbinin "kaderi" kalecilerin ellerinde](https://www.aa.com.tr/tr/spor/derbinin-kaderi-kalecilerin-ellerinde/4099273) — Anadolu Ajansı Spor · 2026-10-24T11:09:35+03:00 · turnuva=CL · kulüp=Galatasaray
 - [Trabzonspor’a Venezuelalı Orta Saha! Cristian Cásseres Jr. Gündemde - Karadeniz Gazetesi](https://news.google.com/rss/articles/CBMitAFBVV95cUxQcXV4NENkZWJQTzVDS3NKSXdLZURBMm55MlNTZUl3SGFpSklmN2tjYjdSUm9na2w5eXdpd1dVeEN3c0NLNktyVEtYUVY2RzVpRmVlQVEwLTRrT3dfbkZabk4yRkxSb0NHVWI0WlVON3dXd0xKWVJQblhzb1RCSnlxMXZhRVY4Uk1iTG5KWUJsZ1dpclVLNEo3NjVkcE5Vb0tOUVZ1dkhxaWR6VTA5TUg3VHZoMHE?oc=5) — Karadeniz Gazetesi · 2026-10-24T06:54:00+00:00 · turnuva=EL · kulüp=Trabzonspor
 - [Avrupa'da en çok parayı Fenerbahçe kazandı!](https://www.hurriyet.com.tr/sporarena/avrupada-en-cok-parayi-fenerbahce-kazandi-43352834) — Hürriyet Spor · 2026-10-24T04:00:00+00:00 · turnuva=— · kulüp=Fenerbahçe
-- [Trabzonspor 25 sıra birden yükseldi!](https://www.hurriyet.com.tr/sporarena/trabzonspor-25-sira-birden-yukseldi-43352820) — Hürriyet Spor · 2026-10-24T04:00:00+00:00 · turnuva=— · kulüp=Trabzonspor
 - [Spor yazarları Italiano için ikiye bölündü: "Harakiri"](https://www.takvim.com.tr/spor/besiktas/2026/10/23/spor-yazarlari-besiktas-crystal-palace-macini-degerlendirdi) — Takvim Spor · 2026-10-23T11:19:34+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Spor yazarlarından Salah ve Trabzonspor övgüsü: "Büyük usta"](https://www.takvim.com.tr/spor/trabzonspor/2026/10/23/spor-yazarlari-trabzonspor-hearts-macini-degerlendirdi) — Takvim Spor · 2026-10-23T10:21:13+03:00 · turnuva=ECL · kulüp=Trabzonspor
 - [Avrupa Ligi ve Konferans Ligi maç sonuçları: 36 maçta 117 gol](https://www.takvim.com.tr/spor/2026/10/22/avrupa-ligi-ve-konferans-liginde-alinan-sonuclar) — Takvim Spor · 2026-10-23T02:03:09+03:00 · turnuva=EL · kulüp=Beşiktaş, Trabzonspor
