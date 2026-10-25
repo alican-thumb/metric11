@@ -1,7 +1,7 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-10-24T20:46:42.057009+00:00
-Toplam ilgili haber: 24
+Üretim zamanı: 2026-10-25T00:22:14.131580+00:00
+Toplam ilgili haber: 22
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
@@ -10,13 +10,11 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [FIFA Başkanı Infantino, dünya futbolunun desteğini aldığına inanıyor](https://www.aa.com.tr/tr/spor/fifa-baskani-infantino-dunya-futbolunun-destegini-aldigina-inaniyor/4099581) — Anadolu Ajansı Spor · 2026-10-24T16:06:06+03:00 · turnuva=— · kulüp=—
 - [UEFA sıralamasında Trabzonspor fırtınası](https://www.cnnturk.com/spor/futbol/uefa-siralamasinda-trabzonspor-firtinasi-3483876) — CNN Türk Spor · 2026-10-24T13:22:11+00:00 · turnuva=— · kulüp=Trabzonspor
 - [Derbinin "kaderi" kalecilerin ellerinde](https://www.aa.com.tr/tr/spor/derbinin-kaderi-kalecilerin-ellerinde/4099273) — Anadolu Ajansı Spor · 2026-10-24T11:09:35+03:00 · turnuva=CL · kulüp=Galatasaray
-- [Şampiyonlar Ligi ekibi, Jankat Yılmaz’a talip oldu! Transfer görüşmesi ortaya çıktı - Galatasaray - Spor Haberleri - Milliyet](https://news.google.com/rss/articles/CBMiwAFBVV95cUxQYkJ4MmRUaGpVdHc5R0dpeHZsMkg4d2s1RGJvMnpQLUl5ZVU2SEg5dzYyaFN3ZkVrWGZSNlVoVmp6SzJYVEg3WXNnaW9SRWFkR0FDN1dDN01xbVJGNEZpaXZkdGduNWVoMC1ZYkdrRW4yMzlGM1NnNW9uLTJyZ0gxdDhkeFJ2dno5bllUSGVmZjBjVDF5SFF3NTRBWnNqNzM0Y1Q5NjRNZ1RXMi1VQVdUaGhOM2k5MW1IVHMxTjB5aXo?oc=5) — Milliyet · 2026-10-24T08:48:11+00:00 · turnuva=CL · kulüp=Galatasaray
 - [Trabzonspor’a Venezuelalı Orta Saha! Cristian Cásseres Jr. Gündemde - Karadeniz Gazetesi](https://news.google.com/rss/articles/CBMitAFBVV95cUxQcXV4NENkZWJQTzVDS3NKSXdLZURBMm55MlNTZUl3SGFpSklmN2tjYjdSUm9na2w5eXdpd1dVeEN3c0NLNktyVEtYUVY2RzVpRmVlQVEwLTRrT3dfbkZabk4yRkxSb0NHVWI0WlVON3dXd0xKWVJQblhzb1RCSnlxMXZhRVY4Uk1iTG5KWUJsZ1dpclVLNEo3NjVkcE5Vb0tOUVZ1dkhxaWR6VTA5TUg3VHZoMHE?oc=5) — Karadeniz Gazetesi · 2026-10-24T06:54:00+00:00 · turnuva=EL · kulüp=Trabzonspor
 - [Avrupa'da en çok parayı Fenerbahçe kazandı!](https://www.hurriyet.com.tr/sporarena/avrupada-en-cok-parayi-fenerbahce-kazandi-43352834) — Hürriyet Spor · 2026-10-24T04:00:00+00:00 · turnuva=— · kulüp=Fenerbahçe
 - [Trabzonspor 25 sıra birden yükseldi!](https://www.hurriyet.com.tr/sporarena/trabzonspor-25-sira-birden-yukseldi-43352820) — Hürriyet Spor · 2026-10-24T04:00:00+00:00 · turnuva=— · kulüp=Trabzonspor
 - [Spor yazarları Italiano için ikiye bölündü: "Harakiri"](https://www.takvim.com.tr/spor/besiktas/2026/10/23/spor-yazarlari-besiktas-crystal-palace-macini-degerlendirdi) — Takvim Spor · 2026-10-23T11:19:34+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Spor yazarlarından Salah ve Trabzonspor övgüsü: "Büyük usta"](https://www.takvim.com.tr/spor/trabzonspor/2026/10/23/spor-yazarlari-trabzonspor-hearts-macini-degerlendirdi) — Takvim Spor · 2026-10-23T10:21:13+03:00 · turnuva=ECL · kulüp=Trabzonspor
-- [Fenerbahçe'de transfer pişmanlığı! Şampiyonlar Ligi'nde gol krallığına oynuyorlar - Fotomaç](https://news.google.com/rss/articles/CBMirAFBVV95cUxQQzZBVXdJaGJFOHpoc2lMY05kOTBNc1ZBNmtCZG9oZHNqMWdxeGJwR3BQaGFCV1J6VnFqd3FiUi1SdGFBbEtUa1pENHNLMkFkOEtBVW1BeTktOEJFWjlIMHU3M2Zxa0FFUHVic3lTcDZnS0puc0F5aUdZVnZjV05WSl9ob0lLRkRMRXZRMWFYVmdScGRnM1lBQUd3UmtBYmY0OEQxRm0tbEFYbDFG0gGyAUFVX3lxTE1OZWw0Z0pLUDd1YU0yTjNrRDBVNFM4N24zTm16OXF5bjdmV3NXa0lQd3hMVEpkTFF4QTl5RlRweGR5WUVjS2FUMFNHSWltZ3JpdHdVUVlRRThuaDVBbjdtOTRHOGVKc24yNElubHRwamNfQmNadFdQdXFuZ3RsM3ZlbWxDU01YU1IwREFkbmFTQkV0eW9ibmRvOG53XzdETUtVVl9NR0hBNTE5TkdlRlFVUHc?oc=5) — Fotomaç · 2026-10-23T08:34:59+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Avrupa Ligi ve Konferans Ligi maç sonuçları: 36 maçta 117 gol](https://www.takvim.com.tr/spor/2026/10/22/avrupa-ligi-ve-konferans-liginde-alinan-sonuclar) — Takvim Spor · 2026-10-23T02:03:09+03:00 · turnuva=EL · kulüp=Beşiktaş, Trabzonspor
 - [Beşiktaş Avrupa Ligi'nde İngilizlere takıldı! Güncel puan durumu](https://www.takvim.com.tr/galeri/spor/uefa-avrupa-ligi-3-hafta-puan-durumu) — Takvim Spor · 2026-10-23T01:37:03+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Dört büyüklerin maçları sonrası ülke puanı güncellendi! Türkiye kaçıncı sırada?](https://www.takvim.com.tr/galeri/spor/galatasaray-kazandi-ulke-puani-guncellendi-turkiye-kacinci-sirada) — Takvim Spor · 2026-10-23T00:36:49+03:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe, Beşiktaş, Trabzonspor
