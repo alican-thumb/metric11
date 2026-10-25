@@ -1,30 +1,25 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-10-25T16:11:04.249697+00:00
-Toplam ilgili haber: 22
+Üretim zamanı: 2026-10-25T20:50:00.467989+00:00
+Toplam ilgili haber: 17
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [Fenerbahçe'nin rakibi Liverpool'a yıldız futbolcusundan şok!](https://www.takvim.com.tr/spor/2026/10/25/florian-wirtz-sakatlandi-liverpoola-fenerbahce-maci-oncesi-sok) — Takvim Spor · 2026-10-25T21:28:19+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Galatasaray'dan Fenerbahçe'ye Devler Ligi tarifesi!](https://www.fotomac.com.tr/galatasaray/2026/10/25/galatasaraydan-fenerbahceye-devler-ligi-tarifesi) — Fotomaç · 2026-10-25T12:53:57+03:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe
 - [Batrakov için İngiliz devleri devrede!](https://www.haberturk.com/spor/foto/barcelona-ve-lille-maclariyla-yildizi-parladi-aleksey-batrakor-icin-liverpool-ve-arsenal-devreye-3922361) — Haberturk Spor · 2026-10-25T07:46:48+00:00 · turnuva=CL · kulüp=Galatasaray
 - [Galatasaray sözleşme imzalamadı Fransız devi devreye girdi: Garanti şartı işi zora soktu](https://www.takvim.com.tr/spor/galatasaray/2026/10/24/galatasarayin-yedek-kalecisi-jankat-yilmaza-lille-talip) — Takvim Spor · 2026-10-24T16:37:17+03:00 · turnuva=CL · kulüp=Galatasaray
 - [FIFA Başkanı Infantino, dünya futbolunun desteğini aldığına inanıyor](https://www.aa.com.tr/tr/spor/fifa-baskani-infantino-dunya-futbolunun-destegini-aldigina-inaniyor/4099581) — Anadolu Ajansı Spor · 2026-10-24T16:06:06+03:00 · turnuva=— · kulüp=—
 - [UEFA sıralamasında Trabzonspor fırtınası](https://www.cnnturk.com/spor/futbol/uefa-siralamasinda-trabzonspor-firtinasi-3483876) — CNN Türk Spor · 2026-10-24T13:22:11+00:00 · turnuva=— · kulüp=Trabzonspor
-- [Derbinin "kaderi" kalecilerin ellerinde](https://www.aa.com.tr/tr/spor/derbinin-kaderi-kalecilerin-ellerinde/4099273) — Anadolu Ajansı Spor · 2026-10-24T11:09:35+03:00 · turnuva=CL · kulüp=Galatasaray
 - [Şampiyonlar Ligi ekibi, Jankat Yılmaz’a talip oldu! Transfer görüşmesi ortaya çıktı - Galatasaray - Spor Haberleri - Milliyet](https://news.google.com/rss/articles/CBMiwAFBVV95cUxQYkJ4MmRUaGpVdHc5R0dpeHZsMkg4d2s1RGJvMnpQLUl5ZVU2SEg5dzYyaFN3ZkVrWGZSNlVoVmp6SzJYVEg3WXNnaW9SRWFkR0FDN1dDN01xbVJGNEZpaXZkdGduNWVoMC1ZYkdrRW4yMzlGM1NnNW9uLTJyZ0gxdDhkeFJ2dno5bllUSGVmZjBjVDF5SFF3NTRBWnNqNzM0Y1Q5NjRNZ1RXMi1VQVdUaGhOM2k5MW1IVHMxTjB5aXo?oc=5) — Milliyet · 2026-10-24T08:48:11+00:00 · turnuva=CL · kulüp=Galatasaray
 - [Trabzonspor’a Venezuelalı Orta Saha! Cristian Cásseres Jr. Gündemde - Karadeniz Gazetesi](https://news.google.com/rss/articles/CBMitAFBVV95cUxQcXV4NENkZWJQTzVDS3NKSXdLZURBMm55MlNTZUl3SGFpSklmN2tjYjdSUm9na2w5eXdpd1dVeEN3c0NLNktyVEtYUVY2RzVpRmVlQVEwLTRrT3dfbkZabk4yRkxSb0NHVWI0WlVON3dXd0xKWVJQblhzb1RCSnlxMXZhRVY4Uk1iTG5KWUJsZ1dpclVLNEo3NjVkcE5Vb0tOUVZ1dkhxaWR6VTA5TUg3VHZoMHE?oc=5) — Karadeniz Gazetesi · 2026-10-24T06:54:00+00:00 · turnuva=EL · kulüp=Trabzonspor
 - [Spor yazarları Italiano için ikiye bölündü: "Harakiri"](https://www.takvim.com.tr/spor/besiktas/2026/10/23/spor-yazarlari-besiktas-crystal-palace-macini-degerlendirdi) — Takvim Spor · 2026-10-23T11:19:34+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Spor yazarlarından Salah ve Trabzonspor övgüsü: "Büyük usta"](https://www.takvim.com.tr/spor/trabzonspor/2026/10/23/spor-yazarlari-trabzonspor-hearts-macini-degerlendirdi) — Takvim Spor · 2026-10-23T10:21:13+03:00 · turnuva=ECL · kulüp=Trabzonspor
-- [Avrupa Ligi ve Konferans Ligi maç sonuçları: 36 maçta 117 gol](https://www.takvim.com.tr/spor/2026/10/22/avrupa-ligi-ve-konferans-liginde-alinan-sonuclar) — Takvim Spor · 2026-10-23T02:03:09+03:00 · turnuva=EL · kulüp=Beşiktaş, Trabzonspor
 - [Beşiktaş Avrupa Ligi'nde İngilizlere takıldı! Güncel puan durumu](https://www.takvim.com.tr/galeri/spor/uefa-avrupa-ligi-3-hafta-puan-durumu) — Takvim Spor · 2026-10-23T01:37:03+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Dört büyüklerin maçları sonrası ülke puanı güncellendi! Türkiye kaçıncı sırada?](https://www.takvim.com.tr/galeri/spor/galatasaray-kazandi-ulke-puani-guncellendi-turkiye-kacinci-sirada) — Takvim Spor · 2026-10-23T00:36:49+03:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe, Beşiktaş, Trabzonspor
 - [Beşiktaş'ta bir sakatlık daha! Yıldız futbolcu maça devam edemedi](https://www.takvim.com.tr/spor/besiktas/2026/10/22/besiktasa-fabio-mirettiden-sakatlik-soku) — Takvim Spor · 2026-10-22T23:23:25+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Trabzonspor'dan 2'de 2 ile şov! Konferans Ligi puan durumu](https://www.takvim.com.tr/galeri/spor/konferans-ligi-2-hafta-puan-durumu) — Takvim Spor · 2026-10-22T22:51:50+03:00 · turnuva=ECL · kulüp=Trabzonspor
-- [Bruno Fernandes'ten Galatasaray'a müjde! Ayrılık iddiaları güçlendi: İşte o sözler](https://www.takvim.com.tr/spor/galatasaray/2026/10/22/bruno-fernandesten-galatasaraya-mujde-gibi-aciklamalar) — Takvim Spor · 2026-10-22T17:14:54+03:00 · turnuva=CL · kulüp=Galatasaray
-- [Arda Güler atmaya devam ediyor! Sevilla sonrası bu kez de RB Leipzig](https://www.takvim.com.tr/spor/2026/10/21/real-madrid-rb-leipzig-sampiyonlar-ligi-maci) — Takvim Spor · 2026-10-22T01:47:37+03:00 · turnuva=CL · kulüp=—
 - [Avrupa Ligi'nde 3'te 3'e İngiliz darbesi! Beşiktaş Crystal Palace ile 2-2 berabere kaldı](https://www.takvim.com.tr/spor/besiktas/2026/10/21/besiktas-crystal-palace-avrupa-ligi-maci) — Takvim Spor · 2026-10-22T01:00:08+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Fırtına'dan Konferans Ligi'nde 2'de 2! Trabzonspor Hearts'ı 2-0 yendi](https://www.takvim.com.tr/spor/trabzonspor/2026/10/21/trabzonspor-hearts-konferans-ligi-maci) — Takvim Spor · 2026-10-22T00:18:35+03:00 · turnuva=ECL · kulüp=Trabzonspor
-- [Fenerbahçe ve Galatasaray Şampiyonlar Ligi'nde kaçıncı sırada? Puan durumu](https://www.takvim.com.tr/galeri/spor/sampiyonlar-ligi-3-hafta-puan-durumu) — Takvim Spor · 2026-10-21T23:27:55+03:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe
-- [Aslan'dan muhteşem geri dönüş! Galatasaray Lille'i Şampiyonlar Ligi'nde 4-2 yendi](https://www.takvim.com.tr/spor/galatasaray/2026/10/21/lille-galatasaray-uefa-sampiyonlar-ligi-maci) — Takvim Spor · 2026-10-21T11:43:50+03:00 · turnuva=CL · kulüp=Galatasaray
 - [Miguel Cardoso ve Elisha Owusu ile resmî sözleşme imzaladık.](https://erzurumsporfk.org/2026/08/19/miguel-cardoso-ve-elisha-owusu-ile-resmi-sozlesme-imzaladik/) — Erzurumspor FK Resmi Web · 2026-08-19T20:45:50+03:00 · turnuva=EL · kulüp=Kayserispor
