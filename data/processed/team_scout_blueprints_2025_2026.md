@@ -7,13 +7,33 @@
 
 ## KASIMPAŞA A.Ş.
 
-- Güç: 37.3 | GF: 1.5 | GA: 1.125 | kart: 2.65
+- Güç: 37.3 | GF: 1.444 | GA: 1.0 | kart: 2.65
 - Zafiyet: son bölüm gol yeme riski, kart baskısı, skor üretim sorunu, deplasman zayıf, hücum verimsizliği
 - Scout ipucu: Maç sonu denge sağlayan fiziksel 8 numara veya savunmacı orta saha
-- Kaleci / istikrar: Savunma kırılganlığında kaleci istikrarı önceliği; GA ortalaması 1.125 — güvenilir kaleci pozisyonu kritik. Adaylar: MUHAMMED ŞENGEZER, YAHIA FOFANA, MARIO RICARDO DA SILVA VELHO
+- Kaleci / istikrar: Savunma kırılganlığında kaleci istikrarı önceliği; GA ortalaması 1.0 — güvenilir kaleci pozisyonu kritik. Adaylar: MUHAMMED ŞENGEZER, YAHIA FOFANA, MARIO RICARDO DA SILVA VELHO
 - 8 numara / fizik motoru: Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir. Adaylar: ALEXANDRU IULIAN MAXIM, QAZIM LACI, ORKUN KÖKÇÜ
 - 6 numara / savunma emniyeti: Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir. Adaylar: GAİUS ABRAHAM JERED MAKOUTA, ANTHONY JUNIOR DENNIS, MANUEL LUIS DA SILVA CAFUMANA
-- Stoper / hava ve temas: Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 1.125. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
+- Stoper / hava ve temas: Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 1.0. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
+
+## ERZURUMSPOR FK
+
+- Güç: None | GF: 0.889 | GA: 1.333 | kart: None
+- Zafiyet: yeni lig takımı
+- Scout ipucu: Süper Lig deneyimli kaleci, stoper ve santrfor takviyesi — serbest ajan ve kiralık öncelikli.
+- Kaleci / istikrar: Süper Lig'e yeni çıkan takım; Kaleci / istikrar pozisyonunda deneyimli takviye kritik. Adaylar: MUHAMMED ŞENGEZER, YAHIA FOFANA, MARIO RICARDO DA SILVA VELHO
+- Stoper / hava ve temas: Süper Lig'e yeni çıkan takım; Stoper / hava ve temas pozisyonunda deneyimli takviye kritik. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
+- Santrfor / skor yükü: Süper Lig'e yeni çıkan takım; Santrfor / skor yükü pozisyonunda deneyimli takviye kritik. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, FELIPE AUGUSTO DA SILVA
+- 6 numara / savunma emniyeti: Süper Lig'e yeni çıkan takım; 6 numara / savunma emniyeti pozisyonunda deneyimli takviye kritik. Adaylar: GAİUS ABRAHAM JERED MAKOUTA, ANDRI FANNAR BALDURSSON, ANTHONY JUNIOR DENNIS
+
+## AMED SFK
+
+- Güç: None | GF: 2.222 | GA: 1.111 | kart: None
+- Zafiyet: yeni lig takımı
+- Scout ipucu: Süper Lig deneyimli kaleci, stoper ve santrfor takviyesi — serbest ajan ve kiralık öncelikli.
+- Kaleci / istikrar: Süper Lig'e yeni çıkan takım; Kaleci / istikrar pozisyonunda deneyimli takviye kritik. Adaylar: MUHAMMED ŞENGEZER, YAHIA FOFANA, MARIO RICARDO DA SILVA VELHO
+- Stoper / hava ve temas: Süper Lig'e yeni çıkan takım; Stoper / hava ve temas pozisyonunda deneyimli takviye kritik. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
+- Santrfor / skor yükü: Süper Lig'e yeni çıkan takım; Santrfor / skor yükü pozisyonunda deneyimli takviye kritik. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, FELIPE AUGUSTO DA SILVA
+- 6 numara / savunma emniyeti: Süper Lig'e yeni çıkan takım; 6 numara / savunma emniyeti pozisyonunda deneyimli takviye kritik. Adaylar: GAİUS ABRAHAM JERED MAKOUTA, ANDRI FANNAR BALDURSSON, ANTHONY JUNIOR DENNIS
 
 ## ÇORUM FK
 
@@ -25,45 +45,25 @@
 - Santrfor / skor yükü: Süper Lig'e yeni çıkan takım; Santrfor / skor yükü pozisyonunda deneyimli takviye kritik. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, FELIPE AUGUSTO DA SILVA
 - 6 numara / savunma emniyeti: Süper Lig'e yeni çıkan takım; 6 numara / savunma emniyeti pozisyonunda deneyimli takviye kritik. Adaylar: GAİUS ABRAHAM JERED MAKOUTA, ANDRI FANNAR BALDURSSON, ANTHONY JUNIOR DENNIS
 
-## ERZURUMSPOR FK
-
-- Güç: None | GF: 0.625 | GA: 1.375 | kart: None
-- Zafiyet: yeni lig takımı
-- Scout ipucu: Süper Lig deneyimli kaleci, stoper ve santrfor takviyesi — serbest ajan ve kiralık öncelikli.
-- Kaleci / istikrar: Süper Lig'e yeni çıkan takım; Kaleci / istikrar pozisyonunda deneyimli takviye kritik. Adaylar: MUHAMMED ŞENGEZER, YAHIA FOFANA, MARIO RICARDO DA SILVA VELHO
-- Stoper / hava ve temas: Süper Lig'e yeni çıkan takım; Stoper / hava ve temas pozisyonunda deneyimli takviye kritik. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
-- Santrfor / skor yükü: Süper Lig'e yeni çıkan takım; Santrfor / skor yükü pozisyonunda deneyimli takviye kritik. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, FELIPE AUGUSTO DA SILVA
-- 6 numara / savunma emniyeti: Süper Lig'e yeni çıkan takım; 6 numara / savunma emniyeti pozisyonunda deneyimli takviye kritik. Adaylar: GAİUS ABRAHAM JERED MAKOUTA, ANDRI FANNAR BALDURSSON, ANTHONY JUNIOR DENNIS
-
-## AMED SFK
-
-- Güç: None | GF: 2.25 | GA: 1.125 | kart: None
-- Zafiyet: yeni lig takımı
-- Scout ipucu: Süper Lig deneyimli kaleci, stoper ve santrfor takviyesi — serbest ajan ve kiralık öncelikli.
-- Kaleci / istikrar: Süper Lig'e yeni çıkan takım; Kaleci / istikrar pozisyonunda deneyimli takviye kritik. Adaylar: MUHAMMED ŞENGEZER, YAHIA FOFANA, MARIO RICARDO DA SILVA VELHO
-- Stoper / hava ve temas: Süper Lig'e yeni çıkan takım; Stoper / hava ve temas pozisyonunda deneyimli takviye kritik. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
-- Santrfor / skor yükü: Süper Lig'e yeni çıkan takım; Santrfor / skor yükü pozisyonunda deneyimli takviye kritik. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, FELIPE AUGUSTO DA SILVA
-- 6 numara / savunma emniyeti: Süper Lig'e yeni çıkan takım; 6 numara / savunma emniyeti pozisyonunda deneyimli takviye kritik. Adaylar: GAİUS ABRAHAM JERED MAKOUTA, ANDRI FANNAR BALDURSSON, ANTHONY JUNIOR DENNIS
-
 ## GAZİANTEP FUTBOL KULÜBÜ A.Ş.
 
-- Güç: 30.9 | GF: 1.0 | GA: 1.5 | kart: 2.91
+- Güç: 30.9 | GF: 1.0 | GA: 1.667 | kart: 2.91
 - Zafiyet: savunma kırılgan, son bölüm gol yeme riski, kart baskısı, düşük şut baskısı
 - Scout ipucu: Güvenilir kaleci, hızlı stoper veya savunmacı 6 numara — GA ortalaması kritik eşiğin üstünde
-- Kaleci / istikrar: Savunma kırılganlığında kaleci istikrarı önceliği; GA ortalaması 1.5 — güvenilir kaleci pozisyonu kritik. Adaylar: MUHAMMED ŞENGEZER, YAHIA FOFANA, MARIO RICARDO DA SILVA VELHO
-- Stoper / hava ve temas: Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 1.5. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
+- Kaleci / istikrar: Savunma kırılganlığında kaleci istikrarı önceliği; GA ortalaması 1.667 — güvenilir kaleci pozisyonu kritik. Adaylar: MUHAMMED ŞENGEZER, YAHIA FOFANA, MARIO RICARDO DA SILVA VELHO
+- Stoper / hava ve temas: Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 1.667. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
 - 6 numara / savunma emniyeti: Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir. Adaylar: GAİUS ABRAHAM JERED MAKOUTA, ANDRI FANNAR BALDURSSON, ANTHONY JUNIOR DENNIS
 - 8 numara / fizik motoru: Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir. Adaylar: QAZIM LACI, ORKUN KÖKÇÜ, FRANCO DARYL TONGYA HEUBANG
 
 ## İKAS EYÜPSPOR
 
-- Güç: 45.0 | GF: 0.25 | GA: 2.75 | kart: 2.38
+- Güç: 45.0 | GF: 0.222 | GA: 2.556 | kart: 2.38
 - Zafiyet: son bölüm gol yeme riski, skor üretim sorunu, deplasman zayıf, hücum verimsizliği
 - Scout ipucu: Maç sonu denge sağlayan fiziksel 8 numara veya savunmacı orta saha
-- Kaleci / istikrar: Savunma kırılganlığında kaleci istikrarı önceliği; GA ortalaması 2.75 — güvenilir kaleci pozisyonu kritik. Adaylar: MUHAMMED ŞENGEZER, YAHIA FOFANA, MARIO RICARDO DA SILVA VELHO
+- Kaleci / istikrar: Savunma kırılganlığında kaleci istikrarı önceliği; GA ortalaması 2.556 — güvenilir kaleci pozisyonu kritik. Adaylar: MUHAMMED ŞENGEZER, YAHIA FOFANA, MARIO RICARDO DA SILVA VELHO
 - 8 numara / fizik motoru: Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir. Adaylar: ALEXANDRU IULIAN MAXIM, QAZIM LACI, ORKUN KÖKÇÜ
 - 6 numara / savunma emniyeti: Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir. Adaylar: GAİUS ABRAHAM JERED MAKOUTA, ANDRI FANNAR BALDURSSON, ANTHONY JUNIOR DENNIS
-- Stoper / hava ve temas: Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 2.75. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
+- Stoper / hava ve temas: Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 2.556. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
 
 ## KOCAELİSPOR
 
@@ -127,13 +127,13 @@
 
 ## SAMSUNSPOR A.Ş.
 
-- Güç: 60.9 | GF: 0.875 | GA: 2.375 | kart: 2.24
+- Güç: 60.9 | GF: 0.889 | GA: 2.333 | kart: 2.24
 - Zafiyet: son bölüm gol yeme riski
 - Scout ipucu: Maç sonu denge sağlayan fiziksel 8 numara veya savunmacı orta saha
-- Kaleci / istikrar: Savunma kırılganlığında kaleci istikrarı önceliği; GA ortalaması 2.375 — güvenilir kaleci pozisyonu kritik. Adaylar: MUHAMMED ŞENGEZER, YAHIA FOFANA, MARIO RICARDO DA SILVA VELHO
+- Kaleci / istikrar: Savunma kırılganlığında kaleci istikrarı önceliği; GA ortalaması 2.333 — güvenilir kaleci pozisyonu kritik. Adaylar: MUHAMMED ŞENGEZER, YAHIA FOFANA, MARIO RICARDO DA SILVA VELHO
 - 8 numara / fizik motoru: Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir. Adaylar: ALEXANDRU IULIAN MAXIM, QAZIM LACI, ORKUN KÖKÇÜ
 - 6 numara / savunma emniyeti: Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir. Adaylar: GAİUS ABRAHAM JERED MAKOUTA, ANDRI FANNAR BALDURSSON, ANTHONY JUNIOR DENNIS
-- Stoper / hava ve temas: Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 2.375. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
+- Stoper / hava ve temas: Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 2.333. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
 
 ## BEŞİKTAŞ A.Ş.
 
