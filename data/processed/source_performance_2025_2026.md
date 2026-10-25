@@ -1,14 +1,14 @@
 # Erken Haber Kaynak Performansı
 
-- Transfer sinyali: 19
+- Transfer sinyali: 21
 - Resmi olaya dönüşen transfer: 16
 - Yayın zamanı bulunan resmi teyit: 5/16
 - İlk görülme zamanı bulunan resmi teyit: 16/16
-- Ölçülen kaynak: 221 / gözlenen kaynak: 334
+- Ölçülen kaynak: 221 / gözlenen kaynak: 335
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 11
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 4584
+- Defterde korunan ilk iddia gözlemi: 4585
 
 ## Kanal Kapsamı
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 4581 | 1409 | 13 | — | 910.9 | %99.1 | 0.8 | FIRST_SEEN_BOUND |
+| Google News / medya | 4582 | 1409 | 13 | — | 910.9 | %99.1 | 0.7 | FIRST_SEEN_BOUND |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -33,7 +33,7 @@
 |---|---:|---:|---:|---|
 | Yağız Sabuncuoğlu | 0 | 1 | 1 | PARTIAL_MEASUREMENT |
 | Ertan Süzgün | 1 | 0 | 0 | ATTRIBUTION_PENDING |
-| Sports Digitale | 1 | 0 | 0 | ATTRIBUTION_PENDING |
+| Sports Digitale | 0 | 0 | 0 | ATTRIBUTION_PENDING |
 | Yusuf Günaydın | 0 | 0 | 0 | ATTRIBUTION_PENDING |
 | Ekrem Konur | 0 | 0 | 0 | ATTRIBUTION_PENDING |
 
@@ -321,6 +321,7 @@
 | Fenerbahçe Spor Kulübü | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Gebze Gazetesi | MEDIA | 1 | 1 | 0 | — | — | — | — | OBSERVING |
 | Gunebakış | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
+| Günebakış Trabzon | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Haber Ekspres | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Haber Gündemim | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |
 | Haber Vakti | MEDIA | 1 | 0 | 0 | — | — | — | — | OBSERVING |

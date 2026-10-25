@@ -1,14 +1,13 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-10-25T11:20:09.105603+00:00
-Toplam ilgili haber: 24
+Üretim zamanı: 2026-10-25T14:23:53.634705+00:00
+Toplam ilgili haber: 22
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [Galatasaray'dan Fenerbahçe'ye Devler Ligi tarifesi!](https://www.fotomac.com.tr/galatasaray/2026/10/25/galatasaraydan-fenerbahceye-devler-ligi-tarifesi) — Fotomaç · 2026-10-25T12:53:57+03:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe
 - [Batrakov için İngiliz devleri devrede!](https://www.haberturk.com/spor/foto/barcelona-ve-lille-maclariyla-yildizi-parladi-aleksey-batrakor-icin-liverpool-ve-arsenal-devreye-3922361) — Haberturk Spor · 2026-10-25T07:46:48+00:00 · turnuva=CL · kulüp=Galatasaray
-- [Trabzonspor'da Muhammed Salah fırtınası! Dünya basını onu konuşuyor](https://www.fotomac.com.tr/trabzonspor/2026/10/24/trabzonsporda-muhammed-salah-firtinasi-dunya-basini-onu-konusuyor) — Fotomaç · 2026-10-24T23:12:20+03:00 · turnuva=ECL · kulüp=Trabzonspor
-- [Lille-Galatasaray maçına scout yağmuru! O yıldızın peşindeler](https://www.fotomac.com.tr/galatasaray/2026/10/23/lille-galatasaray-macina-scout-yagmuru-o-yildizin-pesindeler) — Fotomaç · 2026-10-24T23:11:46+03:00 · turnuva=CL · kulüp=Galatasaray
 - [Galatasaray sözleşme imzalamadı Fransız devi devreye girdi: Garanti şartı işi zora soktu](https://www.takvim.com.tr/spor/galatasaray/2026/10/24/galatasarayin-yedek-kalecisi-jankat-yilmaza-lille-talip) — Takvim Spor · 2026-10-24T16:37:17+03:00 · turnuva=CL · kulüp=Galatasaray
 - [FIFA Başkanı Infantino, dünya futbolunun desteğini aldığına inanıyor](https://www.aa.com.tr/tr/spor/fifa-baskani-infantino-dunya-futbolunun-destegini-aldigina-inaniyor/4099581) — Anadolu Ajansı Spor · 2026-10-24T16:06:06+03:00 · turnuva=— · kulüp=—
 - [UEFA sıralamasında Trabzonspor fırtınası](https://www.cnnturk.com/spor/futbol/uefa-siralamasinda-trabzonspor-firtinasi-3483876) — CNN Türk Spor · 2026-10-24T13:22:11+00:00 · turnuva=— · kulüp=Trabzonspor
@@ -27,6 +26,5 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Avrupa Ligi'nde 3'te 3'e İngiliz darbesi! Beşiktaş Crystal Palace ile 2-2 berabere kaldı](https://www.takvim.com.tr/spor/besiktas/2026/10/21/besiktas-crystal-palace-avrupa-ligi-maci) — Takvim Spor · 2026-10-22T01:00:08+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Fırtına'dan Konferans Ligi'nde 2'de 2! Trabzonspor Hearts'ı 2-0 yendi](https://www.takvim.com.tr/spor/trabzonspor/2026/10/21/trabzonspor-hearts-konferans-ligi-maci) — Takvim Spor · 2026-10-22T00:18:35+03:00 · turnuva=ECL · kulüp=Trabzonspor
 - [Fenerbahçe ve Galatasaray Şampiyonlar Ligi'nde kaçıncı sırada? Puan durumu](https://www.takvim.com.tr/galeri/spor/sampiyonlar-ligi-3-hafta-puan-durumu) — Takvim Spor · 2026-10-21T23:27:55+03:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe
-- [Yunus Akgün'den tarihi gol! Şampiyonlar Ligi'nde Galatasaray'ın zirvesine oturdu](https://www.takvim.com.tr/spor/galatasaray/2026/10/21/yunus-akgun-tarihe-gecti-galatasarayin-en-erken-golu) — Takvim Spor · 2026-10-21T21:11:21+03:00 · turnuva=CL · kulüp=Galatasaray
 - [Aslan'dan muhteşem geri dönüş! Galatasaray Lille'i Şampiyonlar Ligi'nde 4-2 yendi](https://www.takvim.com.tr/spor/galatasaray/2026/10/21/lille-galatasaray-uefa-sampiyonlar-ligi-maci) — Takvim Spor · 2026-10-21T11:43:50+03:00 · turnuva=CL · kulüp=Galatasaray
 - [Miguel Cardoso ve Elisha Owusu ile resmî sözleşme imzaladık.](https://erzurumsporfk.org/2026/08/19/miguel-cardoso-ve-elisha-owusu-ile-resmi-sozlesme-imzaladik/) — Erzurumspor FK Resmi Web · 2026-08-19T20:45:50+03:00 · turnuva=EL · kulüp=Kayserispor
