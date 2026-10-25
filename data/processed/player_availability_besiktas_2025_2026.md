@@ -6,7 +6,7 @@
 - Otomatik ceza sinyali: 14
 - Manuel kayıt: 0
 - Güncel haber/sakat-cezalı sinyali: 2
-- Haber istihbaratı sinyali: 2
+- Haber istihbaratı sinyali: 1
 - Not: Kırmızı/çift sarı için sonraki maç cezası varsayılır. Sarı kart birikimi 4 kartta 1 maç varsayımıdır; resmi ceza listesiyle doğrulanmalıdır.
 
 ## Güncel Haber/Sakat-Cezalı Bağlamı
@@ -14,7 +14,6 @@
 - INJURED | Milot Rashica | kaynak=beIN SPORTS sakat ve cezalı listesi | güven=MEDIUM_CONTEXT
 - INJURED | Orkun Kökçü | kaynak=beIN SPORTS sakat ve cezalı listesi | güven=MEDIUM_CONTEXT
 - INJURED | ÜMİT AKDAĞ | kaynak=news_intelligence | güven=HIGH
-- INJURED | FABIO MIRETTI | kaynak=news_intelligence | güven=HIGH
 
 ## Maç Bazlı Eksikler
 
