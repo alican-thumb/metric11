@@ -1,11 +1,13 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-10-25T20:50:00.467989+00:00
-Toplam ilgili haber: 17
+Üretim zamanı: 2026-10-26T00:21:15.903393+00:00
+Toplam ilgili haber: 18
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [TÜRKİYE BELÇİKA MAÇI HANGİ KANALDA? Türkiye Belçika maçı ne zaman, saat kaçta? İşte Türkiye Belçika maç tarihi](https://www.cnnturk.com/spor/futbol/turkiye-belcika-maci-hangi-kanalda-turkiye-belcika-maci-ne-zaman-saat-kacta-iste-turkiye-belcika-mac-tarihi-3484410) — CNN Türk Spor · 2026-10-26T01:27:34+00:00 · turnuva=— · kulüp=—
+- [Liverpool'a Fenerbahçe maçı öncesi bir şok daha!](https://www.aksam.com.tr/spor/liverpoola-fenerbahce-maci-oncesi-bir-sok-daha/haber-1709134) — Aksam Spor · 2026-10-26T00:39:00+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Fenerbahçe'nin rakibi Liverpool'a yıldız futbolcusundan şok!](https://www.takvim.com.tr/spor/2026/10/25/florian-wirtz-sakatlandi-liverpoola-fenerbahce-maci-oncesi-sok) — Takvim Spor · 2026-10-25T21:28:19+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Galatasaray'dan Fenerbahçe'ye Devler Ligi tarifesi!](https://www.fotomac.com.tr/galatasaray/2026/10/25/galatasaraydan-fenerbahceye-devler-ligi-tarifesi) — Fotomaç · 2026-10-25T12:53:57+03:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe
 - [Batrakov için İngiliz devleri devrede!](https://www.haberturk.com/spor/foto/barcelona-ve-lille-maclariyla-yildizi-parladi-aleksey-batrakor-icin-liverpool-ve-arsenal-devreye-3922361) — Haberturk Spor · 2026-10-25T07:46:48+00:00 · turnuva=CL · kulüp=Galatasaray
@@ -18,7 +20,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Spor yazarlarından Salah ve Trabzonspor övgüsü: "Büyük usta"](https://www.takvim.com.tr/spor/trabzonspor/2026/10/23/spor-yazarlari-trabzonspor-hearts-macini-degerlendirdi) — Takvim Spor · 2026-10-23T10:21:13+03:00 · turnuva=ECL · kulüp=Trabzonspor
 - [Beşiktaş Avrupa Ligi'nde İngilizlere takıldı! Güncel puan durumu](https://www.takvim.com.tr/galeri/spor/uefa-avrupa-ligi-3-hafta-puan-durumu) — Takvim Spor · 2026-10-23T01:37:03+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Dört büyüklerin maçları sonrası ülke puanı güncellendi! Türkiye kaçıncı sırada?](https://www.takvim.com.tr/galeri/spor/galatasaray-kazandi-ulke-puani-guncellendi-turkiye-kacinci-sirada) — Takvim Spor · 2026-10-23T00:36:49+03:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe, Beşiktaş, Trabzonspor
-- [Beşiktaş'ta bir sakatlık daha! Yıldız futbolcu maça devam edemedi](https://www.takvim.com.tr/spor/besiktas/2026/10/22/besiktasa-fabio-mirettiden-sakatlik-soku) — Takvim Spor · 2026-10-22T23:23:25+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Trabzonspor'dan 2'de 2 ile şov! Konferans Ligi puan durumu](https://www.takvim.com.tr/galeri/spor/konferans-ligi-2-hafta-puan-durumu) — Takvim Spor · 2026-10-22T22:51:50+03:00 · turnuva=ECL · kulüp=Trabzonspor
 - [Avrupa Ligi'nde 3'te 3'e İngiliz darbesi! Beşiktaş Crystal Palace ile 2-2 berabere kaldı](https://www.takvim.com.tr/spor/besiktas/2026/10/21/besiktas-crystal-palace-avrupa-ligi-maci) — Takvim Spor · 2026-10-22T01:00:08+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Fırtına'dan Konferans Ligi'nde 2'de 2! Trabzonspor Hearts'ı 2-0 yendi](https://www.takvim.com.tr/spor/trabzonspor/2026/10/21/trabzonspor-hearts-konferans-ligi-maci) — Takvim Spor · 2026-10-22T00:18:35+03:00 · turnuva=ECL · kulüp=Trabzonspor
