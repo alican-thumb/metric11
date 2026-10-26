@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-26T00:21:13.219802",
+  "generated_at": "2026-10-26T04:41:27.676806",
   "season": "2026-2027",
   "summary": {
-    "evaluated_matches": 76,
+    "evaluated_matches": 78,
     "correct": 36,
-    "accuracy": 0.4737,
+    "accuracy": 0.4615,
     "actual_draws": 14,
     "draws_caught": 2,
     "draw_recall": 0.1429,
     "high_conf_matches": 30,
     "high_conf_correct": 19,
     "high_conf_accuracy": 0.6333,
-    "brier_score": 0.6101,
-    "log_loss": 1.015,
+    "brier_score": 0.6105,
+    "log_loss": 1.0153,
     "confidence_breakdown": {
       "HIGH": {
         "matches": 30,
@@ -33,13 +33,13 @@
         "log_loss": 1.127
       },
       "LOW": {
-        "matches": 20,
+        "matches": 22,
         "correct": 10,
-        "accuracy": 0.5,
-        "avg_stated_probability": 0.3748,
-        "calibration_gap": 0.1252,
-        "brier_score": 0.6574,
-        "log_loss": 1.0887
+        "accuracy": 0.4545,
+        "avg_stated_probability": 0.3742,
+        "calibration_gap": 0.0803,
+        "brier_score": 0.6546,
+        "log_loss": 1.0832
       }
     },
     "pick_side_breakdown": {
@@ -54,21 +54,21 @@
         }
       },
       "draw": {
-        "matches": 6,
+        "matches": 7,
         "correct": 2,
-        "accuracy": 0.3333,
+        "accuracy": 0.2857,
         "actual": {
-          "home": 1,
+          "home": 2,
           "draw": 2,
           "away": 3
         }
       },
       "away": {
-        "matches": 27,
+        "matches": 28,
         "correct": 11,
-        "accuracy": 0.4074,
+        "accuracy": 0.3929,
         "actual": {
-          "home": 11,
+          "home": 12,
           "draw": 5,
           "away": 11
         }
@@ -79,17 +79,17 @@
   "last_week": {
     "week": 9,
     "summary": {
-      "evaluated_matches": 4,
+      "evaluated_matches": 6,
       "correct": 2,
-      "accuracy": 0.5,
+      "accuracy": 0.3333,
       "actual_draws": 0,
       "draws_caught": 0,
       "draw_recall": null,
       "high_conf_matches": 2,
       "high_conf_correct": 2,
       "high_conf_accuracy": 1.0,
-      "brier_score": 0.4893,
-      "log_loss": 0.8629,
+      "brier_score": 0.5352,
+      "log_loss": 0.9182,
       "confidence_breakdown": {
         "HIGH": {
           "matches": 2,
@@ -110,13 +110,13 @@
           "log_loss": 1.5233
         },
         "LOW": {
-          "matches": 1,
+          "matches": 3,
           "correct": 0,
           "accuracy": 0.0,
-          "avg_stated_probability": 0.313,
-          "calibration_gap": -0.313,
-          "brier_score": 0.7119,
-          "log_loss": 1.1648
+          "avg_stated_probability": 0.35,
+          "calibration_gap": -0.35,
+          "brier_score": 0.6554,
+          "log_loss": 1.0741
         }
       },
       "pick_side_breakdown": {
@@ -131,21 +131,21 @@
           }
         },
         "draw": {
-          "matches": 1,
+          "matches": 2,
           "correct": 0,
           "accuracy": 0.0,
           "actual": {
-            "home": 0,
+            "home": 1,
             "draw": 0,
             "away": 1
           }
         },
         "away": {
-          "matches": 2,
+          "matches": 3,
           "correct": 2,
-          "accuracy": 1.0,
+          "accuracy": 0.6667,
           "actual": {
-            "home": 0,
+            "home": 1,
             "draw": 0,
             "away": 2
           }
@@ -216,6 +216,38 @@
         "home_win_probability": 0.133,
         "draw_probability": 0.207,
         "away_win_probability": 0.66
+      },
+      {
+        "match_id": "317861",
+        "date_time": "25.10.2026 16:00",
+        "home_team": "TÜMOSAN KONYASPOR",
+        "away_team": "GENÇLERBİRLİĞİ",
+        "actual_score": "2 - 0",
+        "actual": "home",
+        "predicted": "draw",
+        "raw_predicted": "home",
+        "correct": false,
+        "data_confidence": "PLAYED",
+        "prediction_confidence": "LOW",
+        "home_win_probability": 0.338,
+        "draw_probability": 0.335,
+        "away_win_probability": 0.327
+      },
+      {
+        "match_id": "317860",
+        "date_time": "25.10.2026 19:00",
+        "home_team": "GÖZTEPE A.Ş.",
+        "away_team": "ARCA ÇORUM FK",
+        "actual_score": "2 - 0",
+        "actual": "home",
+        "predicted": "away",
+        "raw_predicted": "away",
+        "correct": false,
+        "data_confidence": "PLAYED",
+        "prediction_confidence": "LOW",
+        "home_win_probability": 0.378,
+        "draw_probability": 0.22,
+        "away_win_probability": 0.402
       }
     ]
   },
@@ -2007,17 +2039,17 @@
     {
       "week": 9,
       "summary": {
-        "evaluated_matches": 4,
+        "evaluated_matches": 6,
         "correct": 2,
-        "accuracy": 0.5,
+        "accuracy": 0.3333,
         "actual_draws": 0,
         "draws_caught": 0,
         "draw_recall": null,
         "high_conf_matches": 2,
         "high_conf_correct": 2,
         "high_conf_accuracy": 1.0,
-        "brier_score": 0.4893,
-        "log_loss": 0.8629,
+        "brier_score": 0.5352,
+        "log_loss": 0.9182,
         "confidence_breakdown": {
           "HIGH": {
             "matches": 2,
@@ -2038,13 +2070,13 @@
             "log_loss": 1.5233
           },
           "LOW": {
-            "matches": 1,
+            "matches": 3,
             "correct": 0,
             "accuracy": 0.0,
-            "avg_stated_probability": 0.313,
-            "calibration_gap": -0.313,
-            "brier_score": 0.7119,
-            "log_loss": 1.1648
+            "avg_stated_probability": 0.35,
+            "calibration_gap": -0.35,
+            "brier_score": 0.6554,
+            "log_loss": 1.0741
           }
         },
         "pick_side_breakdown": {
@@ -2059,21 +2091,21 @@
             }
           },
           "draw": {
-            "matches": 1,
+            "matches": 2,
             "correct": 0,
             "accuracy": 0.0,
             "actual": {
-              "home": 0,
+              "home": 1,
               "draw": 0,
               "away": 1
             }
           },
           "away": {
-            "matches": 2,
+            "matches": 3,
             "correct": 2,
-            "accuracy": 1.0,
+            "accuracy": 0.6667,
             "actual": {
-              "home": 0,
+              "home": 1,
               "draw": 0,
               "away": 2
             }
@@ -2144,6 +2176,38 @@
           "home_win_probability": 0.133,
           "draw_probability": 0.207,
           "away_win_probability": 0.66
+        },
+        {
+          "match_id": "317861",
+          "date_time": "25.10.2026 16:00",
+          "home_team": "TÜMOSAN KONYASPOR",
+          "away_team": "GENÇLERBİRLİĞİ",
+          "actual_score": "2 - 0",
+          "actual": "home",
+          "predicted": "draw",
+          "raw_predicted": "home",
+          "correct": false,
+          "data_confidence": "PLAYED",
+          "prediction_confidence": "LOW",
+          "home_win_probability": 0.338,
+          "draw_probability": 0.335,
+          "away_win_probability": 0.327
+        },
+        {
+          "match_id": "317860",
+          "date_time": "25.10.2026 19:00",
+          "home_team": "GÖZTEPE A.Ş.",
+          "away_team": "ARCA ÇORUM FK",
+          "actual_score": "2 - 0",
+          "actual": "home",
+          "predicted": "away",
+          "raw_predicted": "away",
+          "correct": false,
+          "data_confidence": "PLAYED",
+          "prediction_confidence": "LOW",
+          "home_win_probability": 0.378,
+          "draw_probability": 0.22,
+          "away_win_probability": 0.402
         }
       ]
     }

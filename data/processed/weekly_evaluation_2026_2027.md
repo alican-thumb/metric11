@@ -4,11 +4,11 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 
 ## Genel Karne
 
-- Değerlendirilen maç: **76**
-- İsabet: **36/76** (%47)
+- Değerlendirilen maç: **78**
+- İsabet: **36/78** (%46)
 - Beraberlik yakalama: **2/14** (%14)
 - Yüksek güvenli maç isabeti: **19/30** (%63)
-- Brier score: **0.610** (düşük daha iyi; 2025-26 referans 0.600)
+- Brier score: **0.611** (düşük daha iyi; 2025-26 referans 0.600)
 - Log loss: **1.015** (düşük daha iyi; 2025-26 referans 1.005)
 
 ### Güven bandı kalibrasyonu
@@ -19,7 +19,7 @@ _"Beyan edilen ort. olasılık" ile "İsabet" arasındaki fark büyükse (özell
 | --- | --- | --- | --- | --- | --- | --- |
 | HIGH | 30 | 19/30 (%63) | %60 | 0.506 | 0.869 | %64 / 0.516 / 0.885 |
 | MEDIUM | 26 | 7/26 (%27) | %47 | 0.694 | 1.127 | %54 / 0.619 / 1.032 |
-| LOW | 20 | 10/20 (%50) | %37 | 0.657 | 1.089 | %48 / 0.670 / 1.103 |
+| LOW | 22 | 10/22 (%45) | %37 | 0.655 | 1.083 | %48 / 0.670 / 1.103 |
 
 ### Seçilen tarafa göre isabet
 
@@ -28,10 +28,10 @@ _Model hangi tarafı seçtiğinde ne oldu? Belirli bir seçimde (ör. deplasman 
 | Seçim | Maç | İsabet | Gerçekleşen (Ev / X / Dep) |
 | --- | --- | --- | --- |
 | Ev | 43 | 23/43 (%53) | 23 / 7 / 13 |
-| Beraberlik | 6 | 2/6 (%33) | 1 / 2 / 3 |
-| Deplasman | 27 | 11/27 (%41) | 11 / 5 / 11 |
+| Beraberlik | 7 | 2/7 (%29) | 2 / 2 / 3 |
+| Deplasman | 28 | 11/28 (%39) | 12 / 5 / 11 |
 
-## Hafta 9 — 2/4 isabet (%50)
+## Hafta 9 — 2/6 isabet (%33)
 
 | Maç | Skor | Tahmin | Sonuç | Güven |
 | --- | --- | --- | --- | --- |
@@ -39,6 +39,8 @@ _Model hangi tarafı seçtiğinde ne oldu? Belirli bir seçimde (ör. deplasman 
 | EYÜPSPOR - KASIMPAŞA A.Ş. | 0 - 1 | Deplasman | ✅ | HIGH |
 | GAZİANTEP FUTBOL KULÜBÜ A.Ş. - ERZURUMSPOR FK | 1 - 3 | Ev | ❌ | MEDIUM |
 | SAMSUNSPOR A.Ş. - AMED SPORTİF FAALİYETLER | 1 - 2 | Deplasman | ✅ | HIGH |
+| TÜMOSAN KONYASPOR - GENÇLERBİRLİĞİ | 2 - 0 | Beraberlik | ❌ | LOW |
+| GÖZTEPE A.Ş. - ARCA ÇORUM FK | 2 - 0 | Deplasman | ❌ | LOW |
 
 ## Hafta 8 — 7/9 isabet (%78)
 
