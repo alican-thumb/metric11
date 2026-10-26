@@ -1,7 +1,7 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-10-26T07:48:28.246745+00:00
-Toplam ilgili haber: 21
+Üretim zamanı: 2026-10-26T09:57:40.996994+00:00
+Toplam ilgili haber: 14
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
@@ -9,21 +9,14 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [BALLON D'OR CANLI İZLE | Ballon d'Or Saat Kaçta, Hangi Kanalda Verilecek? 2026 Ballon d'Or Altın Top Ödül Töreni Kazananları!](https://www.cnnturk.com/spor/futbol/ballon-dor-canli-izle-ballon-dor-saat-kacta-hangi-kanalda-verilecek-2026-ballon-dor-altin-top-odul-toreni-kazananlari-3484478) — CNN Türk Spor · 2026-10-26T10:27:33+00:00 · turnuva=— · kulüp=—
 - [Ziraat Türkiye Kupası'nda 3. eleme turu, yarın oynanacak maçlarla başlayacak](https://www.sabah.com.tr/spor/futbol/2026/10/26/ziraat-turkiye-kupasinda-3-eleme-turu-yarin-oynanacak-maclarla-baslayacak) — Sabah Spor · 2026-10-26T10:21:06+03:00 · turnuva=— · kulüp=—
 - [Ziraat Türkiye Kupası'nda 3. eleme turu yarın başlıyor: İşte program](https://www.cnnturk.com/spor/futbol/ziraat-turkiye-kupasinda-3-eleme-turu-yarin-basliyor-iste-program-3484507) — CNN Türk Spor · 2026-10-26T09:59:45+00:00 · turnuva=— · kulüp=—
-- [Türkiye Kupası'nda 3. eleme turu başlıyor](https://www.aksam.com.tr/spor/turkiye-kupasinda-3-eleme-turu-basliyor/haber-1709196) — Aksam Spor · 2026-10-26T09:47:00+03:00 · turnuva=— · kulüp=—
 - [Ziraat Türkiye Kupası'nda 3. eleme turu, yarın oynanacak maçlarla başlayacak](https://www.aa.com.tr/tr/spor/ziraat-turkiye-kupasinda-3-eleme-turu-yarin-oynanacak-maclarla-baslayacak/4100654) — Anadolu Ajansı Spor · 2026-10-26T09:45:20+03:00 · turnuva=— · kulüp=—
 - [TÜRKİYE BELÇİKA MAÇI HANGİ KANALDA? Türkiye Belçika maçı ne zaman, saat kaçta? İşte Türkiye Belçika maç tarihi](https://www.cnnturk.com/spor/futbol/turkiye-belcika-maci-hangi-kanalda-turkiye-belcika-maci-ne-zaman-saat-kacta-iste-turkiye-belcika-mac-tarihi-3484410) — CNN Türk Spor · 2026-10-26T01:27:34+00:00 · turnuva=— · kulüp=—
 - [Fenerbahçe'nin rakibi Liverpool'a yıldız futbolcusundan şok!](https://www.takvim.com.tr/spor/2026/10/25/florian-wirtz-sakatlandi-liverpoola-fenerbahce-maci-oncesi-sok) — Takvim Spor · 2026-10-25T21:28:19+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Galatasaray'dan Fenerbahçe'ye Devler Ligi tarifesi!](https://www.fotomac.com.tr/galatasaray/2026/10/25/galatasaraydan-fenerbahceye-devler-ligi-tarifesi) — Fotomaç · 2026-10-25T12:53:57+03:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe
 - [Batrakov için İngiliz devleri devrede!](https://www.haberturk.com/spor/foto/barcelona-ve-lille-maclariyla-yildizi-parladi-aleksey-batrakor-icin-liverpool-ve-arsenal-devreye-3922361) — Haberturk Spor · 2026-10-25T07:46:48+00:00 · turnuva=CL · kulüp=Galatasaray
 - [Galatasaray sözleşme imzalamadı Fransız devi devreye girdi: Garanti şartı işi zora soktu](https://www.takvim.com.tr/spor/galatasaray/2026/10/24/galatasarayin-yedek-kalecisi-jankat-yilmaza-lille-talip) — Takvim Spor · 2026-10-24T16:37:17+03:00 · turnuva=CL · kulüp=Galatasaray
-- [FIFA Başkanı Infantino, dünya futbolunun desteğini aldığına inanıyor](https://www.aa.com.tr/tr/spor/fifa-baskani-infantino-dunya-futbolunun-destegini-aldigina-inaniyor/4099581) — Anadolu Ajansı Spor · 2026-10-24T16:06:06+03:00 · turnuva=— · kulüp=—
 - [Şampiyonlar Ligi ekibi, Jankat Yılmaz’a talip oldu! Transfer görüşmesi ortaya çıktı - Galatasaray - Spor Haberleri - Milliyet](https://news.google.com/rss/articles/CBMiwAFBVV95cUxQYkJ4MmRUaGpVdHc5R0dpeHZsMkg4d2s1RGJvMnpQLUl5ZVU2SEg5dzYyaFN3ZkVrWGZSNlVoVmp6SzJYVEg3WXNnaW9SRWFkR0FDN1dDN01xbVJGNEZpaXZkdGduNWVoMC1ZYkdrRW4yMzlGM1NnNW9uLTJyZ0gxdDhkeFJ2dno5bllUSGVmZjBjVDF5SFF3NTRBWnNqNzM0Y1Q5NjRNZ1RXMi1VQVdUaGhOM2k5MW1IVHMxTjB5aXo?oc=5) — Milliyet · 2026-10-24T08:48:11+00:00 · turnuva=CL · kulüp=Galatasaray
 - [Trabzonspor’a Venezuelalı Orta Saha! Cristian Cásseres Jr. Gündemde - Karadeniz Gazetesi](https://news.google.com/rss/articles/CBMitAFBVV95cUxQcXV4NENkZWJQTzVDS3NKSXdLZURBMm55MlNTZUl3SGFpSklmN2tjYjdSUm9na2w5eXdpd1dVeEN3c0NLNktyVEtYUVY2RzVpRmVlQVEwLTRrT3dfbkZabk4yRkxSb0NHVWI0WlVON3dXd0xKWVJQblhzb1RCSnlxMXZhRVY4Uk1iTG5KWUJsZ1dpclVLNEo3NjVkcE5Vb0tOUVZ1dkhxaWR6VTA5TUg3VHZoMHE?oc=5) — Karadeniz Gazetesi · 2026-10-24T06:54:00+00:00 · turnuva=EL · kulüp=Trabzonspor
 - [Spor yazarları Italiano için ikiye bölündü: "Harakiri"](https://www.takvim.com.tr/spor/besiktas/2026/10/23/spor-yazarlari-besiktas-crystal-palace-macini-degerlendirdi) — Takvim Spor · 2026-10-23T11:19:34+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Spor yazarlarından Salah ve Trabzonspor övgüsü: "Büyük usta"](https://www.takvim.com.tr/spor/trabzonspor/2026/10/23/spor-yazarlari-trabzonspor-hearts-macini-degerlendirdi) — Takvim Spor · 2026-10-23T10:21:13+03:00 · turnuva=ECL · kulüp=Trabzonspor
-- [Beşiktaş Avrupa Ligi'nde İngilizlere takıldı! Güncel puan durumu](https://www.takvim.com.tr/galeri/spor/uefa-avrupa-ligi-3-hafta-puan-durumu) — Takvim Spor · 2026-10-23T01:37:03+03:00 · turnuva=EL · kulüp=Beşiktaş
-- [Dört büyüklerin maçları sonrası ülke puanı güncellendi! Türkiye kaçıncı sırada?](https://www.takvim.com.tr/galeri/spor/galatasaray-kazandi-ulke-puani-guncellendi-turkiye-kacinci-sirada) — Takvim Spor · 2026-10-23T00:36:49+03:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe, Beşiktaş, Trabzonspor
-- [Trabzonspor'dan 2'de 2 ile şov! Konferans Ligi puan durumu](https://www.takvim.com.tr/galeri/spor/konferans-ligi-2-hafta-puan-durumu) — Takvim Spor · 2026-10-22T22:51:50+03:00 · turnuva=ECL · kulüp=Trabzonspor
 - [Avrupa Ligi'nde 3'te 3'e İngiliz darbesi! Beşiktaş Crystal Palace ile 2-2 berabere kaldı](https://www.takvim.com.tr/spor/besiktas/2026/10/21/besiktas-crystal-palace-avrupa-ligi-maci) — Takvim Spor · 2026-10-22T01:00:08+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Fırtına'dan Konferans Ligi'nde 2'de 2! Trabzonspor Hearts'ı 2-0 yendi](https://www.takvim.com.tr/spor/trabzonspor/2026/10/21/trabzonspor-hearts-konferans-ligi-maci) — Takvim Spor · 2026-10-22T00:18:35+03:00 · turnuva=ECL · kulüp=Trabzonspor
-- [Miguel Cardoso ve Elisha Owusu ile resmî sözleşme imzaladık.](https://erzurumsporfk.org/2026/08/19/miguel-cardoso-ve-elisha-owusu-ile-resmi-sozlesme-imzaladik/) — Erzurumspor FK Resmi Web · 2026-08-19T20:45:50+03:00 · turnuva=EL · kulüp=Kayserispor
