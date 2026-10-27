@@ -4,12 +4,12 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 
 ## Genel Karne
 
-- Değerlendirilen maç: **78**
-- İsabet: **36/78** (%46)
+- Değerlendirilen maç: **81**
+- İsabet: **39/81** (%48)
 - Beraberlik yakalama: **2/14** (%14)
-- Yüksek güvenli maç isabeti: **19/30** (%63)
-- Brier score: **0.611** (düşük daha iyi; 2025-26 referans 0.600)
-- Log loss: **1.015** (düşük daha iyi; 2025-26 referans 1.005)
+- Yüksek güvenli maç isabeti: **21/32** (%66)
+- Brier score: **0.601** (düşük daha iyi; 2025-26 referans 0.600)
+- Log loss: **1.002** (düşük daha iyi; 2025-26 referans 1.005)
 
 ### Güven bandı kalibrasyonu
 
@@ -17,9 +17,9 @@ _"Beyan edilen ort. olasılık" ile "İsabet" arasındaki fark büyükse (özell
 
 | Güven bandı | Maç | İsabet | Beyan edilen ort. olasılık | Brier | Log loss | Referans (2025-26: isabet / brier / logloss) |
 | --- | --- | --- | --- | --- | --- | --- |
-| HIGH | 30 | 19/30 (%63) | %60 | 0.506 | 0.869 | %64 / 0.516 / 0.885 |
+| HIGH | 32 | 21/32 (%66) | %60 | 0.490 | 0.848 | %64 / 0.516 / 0.885 |
 | MEDIUM | 26 | 7/26 (%27) | %47 | 0.694 | 1.127 | %54 / 0.619 / 1.032 |
-| LOW | 22 | 10/22 (%45) | %37 | 0.655 | 1.083 | %48 / 0.670 / 1.103 |
+| LOW | 23 | 11/23 (%48) | %38 | 0.649 | 1.074 | %48 / 0.670 / 1.103 |
 
 ### Seçilen tarafa göre isabet
 
@@ -27,11 +27,11 @@ _Model hangi tarafı seçtiğinde ne oldu? Belirli bir seçimde (ör. deplasman 
 
 | Seçim | Maç | İsabet | Gerçekleşen (Ev / X / Dep) |
 | --- | --- | --- | --- |
-| Ev | 43 | 23/43 (%53) | 23 / 7 / 13 |
+| Ev | 45 | 25/45 (%56) | 25 / 7 / 13 |
 | Beraberlik | 7 | 2/7 (%29) | 2 / 2 / 3 |
-| Deplasman | 28 | 11/28 (%39) | 12 / 5 / 11 |
+| Deplasman | 29 | 12/29 (%41) | 12 / 5 / 12 |
 
-## Hafta 9 — 2/6 isabet (%33)
+## Hafta 9 — 5/9 isabet (%56)
 
 | Maç | Skor | Tahmin | Sonuç | Güven |
 | --- | --- | --- | --- | --- |
@@ -41,6 +41,9 @@ _Model hangi tarafı seçtiğinde ne oldu? Belirli bir seçimde (ör. deplasman 
 | SAMSUNSPOR A.Ş. - AMED SPORTİF FAALİYETLER | 1 - 2 | Deplasman | ✅ | HIGH |
 | TÜMOSAN KONYASPOR - GENÇLERBİRLİĞİ | 2 - 0 | Beraberlik | ❌ | LOW |
 | GÖZTEPE A.Ş. - ARCA ÇORUM FK | 2 - 0 | Deplasman | ❌ | LOW |
+| ÇAYKUR RİZESPOR A.Ş. - TRABZONSPOR A.Ş. | 3 - 4 | Deplasman | ✅ | HIGH |
+| BEŞİKTAŞ A.Ş. - İSTANBUL BAŞAKŞEHİR FK | 2 - 0 | Ev | ✅ | HIGH |
+| GALATASARAY A.Ş. - FENERBAHÇE A.Ş. | 2 - 1 | Ev | ✅ | LOW |
 
 ## Hafta 8 — 7/9 isabet (%78)
 
