@@ -1,17 +1,16 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-10-27T12:05:58.623351+00:00
-Toplam ilgili haber: 10
+Üretim zamanı: 2026-10-27T15:54:49.254295+00:00
+Toplam ilgili haber: 9
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
-- [Celtic  - Beşiktaş maçı ne zaman? İşte BJK Avrupa Ligi maç tarihi...](https://www.aksam.com.tr/pusula/celtic-besiktas-maci-ne-zaman-iste-bjk-avrupa-ligi-mac-tarihi/haber-1709546) — Aksam Spor · 2026-10-27T12:02:00+03:00 · turnuva=EL · kulüp=Beşiktaş
-- [Fenerbahçe arsaVev, Real Sociedad deplasmanında!](https://www.fotomac.com.tr/fenerbahce/2026/10/27/fenerbahce-arsavev-real-sociedad-deplasmaninda) — Fotomaç · 2026-10-27T10:19:27+03:00 · turnuva=— · kulüp=Fenerbahçe
-- [Fenerbahçe, UEFA Kadınlar Avrupa Kupası'nda Real Sociedad'a konuk olacak](https://www.sabah.com.tr/spor/futbol/2026/10/27/fenerbahce-uefa-kadinlar-avrupa-kupasinda-real-sociedada-konuk-olacak) — Sabah Spor · 2026-10-27T10:10:41+03:00 · turnuva=— · kulüp=Fenerbahçe
-- [Fenerbahçe, Real Sociedad deplasmanında!](https://www.haberturk.com/spor/fenerbahce-uefa-kadinlar-avrupa-kupasi-nda-real-sociedad-deplasmaninda-3922858) — Haberturk Spor · 2026-10-27T07:19:15+00:00 · turnuva=— · kulüp=Fenerbahçe
+- [Ziraat Türkiye Kupası 3. eleme turuna 9 maçla başlandı](https://www.aa.com.tr/tr/spor/ziraat-turkiye-kupasi-3-eleme-turuna-9-macla-baslandi/4102732) — Anadolu Ajansı Spor · 2026-10-27T18:43:43+03:00 · turnuva=— · kulüp=—
+- [Ziraat Türkiye Kupası'nda 4. Tur kura çekim tarihi belli oldu!](https://www.sabah.com.tr/spor/futbol/2026/10/27/ziraat-turkiye-kupasinda-4-tur-kura-cekim-tarihi-belli-oldu) — Sabah Spor · 2026-10-27T15:11:00+03:00 · turnuva=— · kulüp=—
+- [Ziraat Türkiye Kupası'nda 4. eleme turu kura çekimi 4 Kasım'da yapılacak](https://www.aa.com.tr/tr/spor/ziraat-turkiye-kupasinda-4-eleme-turu-kura-cekimi-4-kasimda-yapilacak/4102473) — Anadolu Ajansı Spor · 2026-10-27T15:10:24+03:00 · turnuva=— · kulüp=—
+- [Türkiye Kupası'nda kura zamanı!](https://www.haberturk.com/spor/ziraat-turkiye-kupasi-nda-4-eleme-turu-kura-cekimi-4-kasim-da-yapilacak-3922978) — Haberturk Spor · 2026-10-27T12:13:50+00:00 · turnuva=— · kulüp=—
 - [BALLON D'OR CANLI İZLE | Ballon d'Or Saat Kaçta, Hangi Kanalda Verilecek? 2026 Ballon d'Or Altın Top Ödül Töreni Kazananları!](https://www.cnnturk.com/spor/futbol/ballon-dor-canli-izle-ballon-dor-saat-kacta-hangi-kanalda-verilecek-2026-ballon-dor-altin-top-odul-toreni-kazananlari-3484478) — CNN Türk Spor · 2026-10-26T23:45:42+00:00 · turnuva=— · kulüp=—
-- [Beşiktaş'ta Junior Olaitan fırtınası devam ediyor!](https://www.hurriyet.com.tr/sporarena/besiktasta-junior-olaitan-firtinasi-devam-ediyor-43355913) — Hürriyet Spor · 2026-10-26T18:09:00+00:00 · turnuva=EL · kulüp=Beşiktaş, Başakşehir
 - [Ziraat Türkiye Kupası'nda 3. eleme turu, yarın oynanacak maçlarla başlayacak](https://www.aa.com.tr/tr/spor/ziraat-turkiye-kupasinda-3-eleme-turu-yarin-oynanacak-maclarla-baslayacak/4100654) — Anadolu Ajansı Spor · 2026-10-26T09:45:20+03:00 · turnuva=— · kulüp=—
 - [Fenerbahçe'nin rakibi Liverpool'a yıldız futbolcusundan şok!](https://www.takvim.com.tr/spor/2026/10/25/florian-wirtz-sakatlandi-liverpoola-fenerbahce-maci-oncesi-sok) — Takvim Spor · 2026-10-25T21:28:19+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Galatasaray sözleşme imzalamadı Fransız devi devreye girdi: Garanti şartı işi zora soktu](https://www.takvim.com.tr/spor/galatasaray/2026/10/24/galatasarayin-yedek-kalecisi-jankat-yilmaza-lille-talip) — Takvim Spor · 2026-10-24T16:37:17+03:00 · turnuva=CL · kulüp=Galatasaray
