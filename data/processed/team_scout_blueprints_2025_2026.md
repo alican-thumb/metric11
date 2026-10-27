@@ -15,9 +15,9 @@
 - 6 numara / savunma emniyeti: Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir. Adaylar: GAİUS ABRAHAM JERED MAKOUTA, ANTHONY JUNIOR DENNIS, MANUEL LUIS DA SILVA CAFUMANA
 - Stoper / hava ve temas: Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 1.0. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
 
-## ERZURUMSPOR FK
+## AMED SFK
 
-- Güç: None | GF: 0.889 | GA: 1.333 | kart: None
+- Güç: None | GF: 2.222 | GA: 1.111 | kart: None
 - Zafiyet: yeni lig takımı
 - Scout ipucu: Süper Lig deneyimli kaleci, stoper ve santrfor takviyesi — serbest ajan ve kiralık öncelikli.
 - Kaleci / istikrar: Süper Lig'e yeni çıkan takım; Kaleci / istikrar pozisyonunda deneyimli takviye kritik. Adaylar: MUHAMMED ŞENGEZER, YAHIA FOFANA, MARIO RICARDO DA SILVA VELHO
@@ -35,9 +35,9 @@
 - Santrfor / skor yükü: Süper Lig'e yeni çıkan takım; Santrfor / skor yükü pozisyonunda deneyimli takviye kritik. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, FELIPE AUGUSTO DA SILVA
 - 6 numara / savunma emniyeti: Süper Lig'e yeni çıkan takım; 6 numara / savunma emniyeti pozisyonunda deneyimli takviye kritik. Adaylar: GAİUS ABRAHAM JERED MAKOUTA, ANDRI FANNAR BALDURSSON, ANTHONY JUNIOR DENNIS
 
-## AMED SFK
+## ERZURUMSPOR FK
 
-- Güç: None | GF: 2.222 | GA: 1.111 | kart: None
+- Güç: None | GF: 0.889 | GA: 1.333 | kart: None
 - Zafiyet: yeni lig takımı
 - Scout ipucu: Süper Lig deneyimli kaleci, stoper ve santrfor takviyesi — serbest ajan ve kiralık öncelikli.
 - Kaleci / istikrar: Süper Lig'e yeni çıkan takım; Kaleci / istikrar pozisyonunda deneyimli takviye kritik. Adaylar: MUHAMMED ŞENGEZER, YAHIA FOFANA, MARIO RICARDO DA SILVA VELHO
@@ -77,11 +77,11 @@
 
 ## ÇAYKUR RİZESPOR A.Ş.
 
-- Güç: 42.6 | GF: 1.0 | GA: 1.375 | kart: 2.41
+- Güç: 42.6 | GF: 1.222 | GA: 1.667 | kart: 2.41
 - Zafiyet: savunma kırılgan, son bölüm gol yeme riski, deplasman zayıf
 - Scout ipucu: Güvenilir kaleci, hızlı stoper veya savunmacı 6 numara — GA ortalaması kritik eşiğin üstünde
-- Kaleci / istikrar: Savunma kırılganlığında kaleci istikrarı önceliği; GA ortalaması 1.375 — güvenilir kaleci pozisyonu kritik. Adaylar: MUHAMMED ŞENGEZER, MARIO RICARDO DA SILVA VELHO, MAHMUT ERTUĞRUL TAŞKIRAN
-- Stoper / hava ve temas: Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 1.375. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
+- Kaleci / istikrar: Savunma kırılganlığında kaleci istikrarı önceliği; GA ortalaması 1.667 — güvenilir kaleci pozisyonu kritik. Adaylar: MUHAMMED ŞENGEZER, MARIO RICARDO DA SILVA VELHO, MAHMUT ERTUĞRUL TAŞKIRAN
+- Stoper / hava ve temas: Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 1.667. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
 - 6 numara / savunma emniyeti: Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir. Adaylar: GAİUS ABRAHAM JERED MAKOUTA, ANDRI FANNAR BALDURSSON, ANTHONY JUNIOR DENNIS
 - 8 numara / fizik motoru: Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir. Adaylar: ALEXANDRU IULIAN MAXIM, ORKUN KÖKÇÜ, KACPER SZYMON KOZLOWSKI
 
@@ -137,7 +137,7 @@
 
 ## BEŞİKTAŞ A.Ş.
 
-- Güç: 62.5 | GF: 2.0 | GA: 1.25 | kart: 2.32
+- Güç: 62.5 | GF: 2.0 | GA: 1.111 | kart: 2.32
 - Zafiyet: kadro derinliği sınırlı
 - Scout ipucu: Kaliteli rotasyon: büyük maç baskısını karşılayacak kanat/bek derinliği
 - Sol açık / çizgi kırıcı: Büyük maç rotasyonunu besleyecek ve kanat derinliğini artıracak yaratıcı profil. Adaylar: KACPER SZYMON KOZLOWSKI, DORGELES NENE, ERNEST MUÇİ
@@ -145,7 +145,7 @@
 
 ## TRABZONSPOR A.Ş.
 
-- Güç: 68.6 | GF: 2.25 | GA: 0.625 | kart: 1.71
+- Güç: 68.6 | GF: 2.444 | GA: 0.889 | kart: 1.71
 - Zafiyet: kadro derinliği sınırlı
 - Scout ipucu: Kaliteli rotasyon: büyük maç baskısını karşılayacak kanat/bek derinliği
 - Sol açık / çizgi kırıcı: Büyük maç rotasyonunu besleyecek ve kanat derinliğini artıracak yaratıcı profil. Adaylar: KACPER SZYMON KOZLOWSKI, DORGELES NENE, BARIŞ ALPER YILMAZ
@@ -153,7 +153,7 @@
 
 ## RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ
 
-- Güç: 73.3 | GF: 1.5 | GA: 1.5 | kart: 2.12
+- Güç: 73.3 | GF: 1.333 | GA: 1.556 | kart: 2.12
 - Zafiyet: kadro derinliği sınırlı
 - Scout ipucu: Kaliteli rotasyon: büyük maç baskısını karşılayacak kanat/bek derinliği
 - Sol açık / çizgi kırıcı: Büyük maç rotasyonunu besleyecek ve kanat derinliğini artıracak yaratıcı profil. Adaylar: KACPER SZYMON KOZLOWSKI, DORGELES NENE, ERNEST MUÇİ
@@ -161,7 +161,7 @@
 
 ## FENERBAHÇE A.Ş.
 
-- Güç: 76.5 | GF: 2.75 | GA: 0.75 | kart: 2.47
+- Güç: 76.5 | GF: 2.556 | GA: 0.889 | kart: 2.47
 - Zafiyet: kadro derinliği sınırlı
 - Scout ipucu: Kaliteli rotasyon: büyük maç baskısını karşılayacak kanat/bek derinliği
 - Sol açık / çizgi kırıcı: Büyük maç rotasyonunu besleyecek ve kanat derinliğini artıracak yaratıcı profil. Adaylar: KACPER SZYMON KOZLOWSKI, ERNEST MUÇİ, KAZEEM ADEREMI J. OLAIGBE
@@ -169,7 +169,7 @@
 
 ## GALATASARAY A.Ş.
 
-- Güç: 84.4 | GF: 2.125 | GA: 1.375 | kart: 2.03
+- Güç: 84.4 | GF: 2.111 | GA: 1.333 | kart: 2.03
 - Zafiyet: kadro derinliği sınırlı
 - Scout ipucu: Kaliteli rotasyon: büyük maç baskısını karşılayacak kanat/bek derinliği
 - Sol açık / çizgi kırıcı: Büyük maç rotasyonunu besleyecek ve kanat derinliğini artıracak yaratıcı profil. Adaylar: KACPER SZYMON KOZLOWSKI, DORGELES NENE, ERNEST MUÇİ
