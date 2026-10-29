@@ -11,7 +11,7 @@
 
 ## Güncel Haber/Sakat-Cezalı Bağlamı
 
-- INJURED | Maestro | kaynak=beIN SPORTS sakat ve cezalı listesi | güven=MEDIUM_CONTEXT
+- INJURED | Paolo Fernandes | kaynak=beIN SPORTS sakat ve cezalı listesi | güven=MEDIUM_CONTEXT
 - INJURED | Fatih Aksoy | kaynak=beIN SPORTS sakat ve cezalı listesi | güven=MEDIUM_CONTEXT
 
 ## Maç Bazlı Eksikler
