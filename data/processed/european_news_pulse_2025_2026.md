@@ -1,18 +1,11 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-10-30T08:36:36.725980+00:00
-Toplam ilgili haber: 24
+Üretim zamanı: 2026-10-30T11:02:11.527527+00:00
+Toplam ilgili haber: 16
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
-- [Galatasaray maçı öncesi Stuttgart'ta büyük şok!](https://www.fotomac.com.tr/galatasaray/2026/10/30/galatasaray-maci-oncesi-stuttgartta-buyuk-sok) — Fotomaç · 2026-10-30T10:20:44+03:00 · turnuva=CL · kulüp=Galatasaray
-- [Ertelenen Fethiyespor-Eyüpspor karşılaşması 4 Kasım'da oynanacak!](https://www.fotomac.com.tr/turkiye-kupasi/2026/10/29/ertelenen-fethiyespor-eyupspor-karsilasmasi-4-kasimda-oynanacak) — Fotomaç · 2026-10-30T01:29:07+03:00 · turnuva=— · kulüp=Eyüpspor
-- [Gençlerbirliği, Ziraat Türkiye Kupası'nda Halil Bayram İnşaat Karaköprü Belediyespor'u mağlup etti! İşte maçın özeti](https://www.fotomac.com.tr/turkiye-kupasi/2026/10/29/genclerbirligi-ziraat-turkiye-kupasinda-halil-bayram-insaat-karakopru-belediyesporu-maglup-etti-iste-macin-ozeti) — Fotomaç · 2026-10-30T01:29:05+03:00 · turnuva=— · kulüp=Gençlerbirliği
-- [Batrakov'a Avrupa'dan 5 talip birden! Devler Ligi performansıyla damga vurmuştu](https://www.fotomac.com.tr/galatasaray/2026/10/29/batrakova-avrupadan-5-talip-birden-devler-ligi-performansiyla-damga-vurmustu) — Fotomaç · 2026-10-30T01:29:00+03:00 · turnuva=CL · kulüp=Galatasaray
-- [Celtic'e Beşiktaş maçı öncesi kötü haber!](https://www.fotomac.com.tr/besiktas/2026/10/29/celtice-besiktas-maci-oncesi-kotu-haber) — Fotomaç · 2026-10-30T01:28:19+03:00 · turnuva=EL · kulüp=Beşiktaş
-- [İstanbul'da oynanacak 2027 UEFA Konferans Ligi finalinin hazırlıkları devam ediyor](https://www.fotomac.com.tr/futbol/2026/10/29/istanbulda-oynanacak-2027-uefa-konferans-ligi-finalinin-hazirliklari-devam-ediyor) — Fotomaç · 2026-10-30T01:28:16+03:00 · turnuva=ECL · kulüp=—
-- [UEFA'dan Cumhuriyet Bayramı paylaşımı!](https://www.fotomac.com.tr/futbol/2026/10/29/uefadan-cumhuriyet-bayrami-paylasimi) — Fotomaç · 2026-10-30T01:28:10+03:00 · turnuva=— · kulüp=—
 - [GALATASARAY STUTTGART MAÇI NE ZAMAN? UEFA Şampiyonlar Ligi Galatasaray Stuttgart maçı hangi kanalda, şifreli mi şifresiz mi, saat kaçta?](https://www.cnnturk.com/spor/futbol/galatasaray-stuttgart-maci-ne-zaman-uefa-sampiyonlar-ligi-galatasaray-stuttgart-maci-hangi-kanalda-sifreli-mi-sifresiz-mi-saat-kacta-3486445) — CNN Türk Spor · 2026-10-30T01:00:20+00:00 · turnuva=CL · kulüp=Galatasaray
 - [Ziraat Türkiye Kupası'nda 3. tur sonuçları! Gözler 4. tur kura çekiminde: İşte tarihi ve saati](https://www.takvim.com.tr/spor/2026/10/29/ziraat-turkiye-kupasinda-3-tur-sonuclari-4-tur-kura-cekimi-tarihi) — Takvim Spor · 2026-10-29T22:43:18+03:00 · turnuva=— · kulüp=Kasımpaşa, Eyüpspor, Gençlerbirliği
 - [Ziraat Türkiye Kupası 3. eleme turu 4 maçla tamamlandı](https://www.aa.com.tr/tr/spor/ziraat-turkiye-kupasi-3-eleme-turu-4-macla-tamamlandi/4105439) — Anadolu Ajansı Spor · 2026-10-29T22:41:01+03:00 · turnuva=— · kulüp=—
@@ -28,5 +21,4 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - ["En önemlisi iyi oynayarak kazanmaktı!"](https://www.haberturk.com/spor/bernd-storck-en-onemlisi-iyi-oynayarak-kazanmakti-3923540) — Haberturk Spor · 2026-10-29T15:18:41+00:00 · turnuva=— · kulüp=Gençlerbirliği
 - [Beşiktaş, Basketbol Avrupa Ligi'nde yarın Virtus Bologna'ya konuk olacak](https://www.aa.com.tr/tr/spor/besiktas-basketbol-avrupa-liginde-yarin-virtus-bolognaya-konuk-olacak/4104559) — Anadolu Ajansı Spor · 2026-10-29T10:20:21+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Kasımpaşa'ya zor, hedef Celtic!](https://www.haberturk.com/spor/besiktas-ta-orkun-kokcu-kasimpasa-ya-zor-hedef-celtic-deplasmani-3923445) — Haberturk Spor · 2026-10-29T09:22:43+00:00 · turnuva=EL · kulüp=Beşiktaş, Kasımpaşa
-- [Ziraat Türkiye Kupası'ndaki Fethiyespor-Eyüpspor maçı sağanak nedeniyle ertelendi](https://www.aa.com.tr/tr/spor/ziraat-turkiye-kupasindaki-fethiyespor-eyupspor-maci-saganak-nedeniyle-ertelendi/4104011) — Anadolu Ajansı Spor · 2026-10-28T17:30:42+03:00 · turnuva=— · kulüp=Eyüpspor
 - [Miguel Cardoso ve Elisha Owusu ile resmî sözleşme imzaladık.](https://erzurumsporfk.org/2026/08/19/miguel-cardoso-ve-elisha-owusu-ile-resmi-sozlesme-imzaladik/) — Erzurumspor FK Resmi Web · 2026-08-19T20:45:50+03:00 · turnuva=EL · kulüp=Kayserispor
