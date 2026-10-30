@@ -1,6 +1,6 @@
 # 2026-27 Süper Lig Fikstürü ve Tahminleri
 
-Üretim zamanı: 2026-10-30T05:42:35.994277
+Üretim zamanı: 2026-10-30T08:36:32.701466
 Toplam hafta: 34, toplam maç: 306
 Not: Tahminler 2025-26 sezonunun tamamı ve 2026-27'de şimdiye kadar oynanmış (81 maç) sonuçlardan türetilen güncel takım formu/Elo/transfer durumuna dayanır; sezon ilerledikçe bu sayfa her gün otomatik olarak yeniden hesaplanır, statik bir anlık görüntü değildir.
 Yeni takımlar (sınırlı veri): AMED SPORTİF FAALİYETLER, ERZURUMSPOR FK, ÇORUM FK
