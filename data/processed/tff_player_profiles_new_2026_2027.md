@@ -1,7 +1,7 @@
 # TFF Oyuncu Profilleri
 
 - Takım filtresi: Yok
-- Profil sayısı: 492
+- Profil sayısı: 493
 - Hata sayısı: 0
 - Ortalama yaş: 25.8
 - Ortalama kalan sözleşme ayı: 21.1
