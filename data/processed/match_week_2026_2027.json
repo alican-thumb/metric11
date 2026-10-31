@@ -1,6 +1,6 @@
 {
   "available": true,
-  "generated_at": "2026-10-30T22:18:10.487176",
+  "generated_at": "2026-10-31T01:38:57.658161",
   "week": 10,
   "matches": [
     {
@@ -8,29 +8,18 @@
       "date": "30 Eki",
       "home_team": "TÜMOSAN KONYASPOR",
       "away_team": "GALATASARAY A.Ş.",
-      "is_played": false,
-      "actual_score": null,
+      "is_played": true,
+      "actual_score": "0 - 4",
       "predicted": "away",
       "pick_text": "GALATASARAY A.Ş.",
       "home_win_probability": 0.201,
       "draw_probability": 0.239,
       "away_win_probability": 0.561,
-      "data_confidence": "HIGH",
+      "data_confidence": "PLAYED",
       "recommended_scoreline": "0-1",
       "expected_home_goals": 0.92,
       "expected_away_goals": 1.71,
-      "signals": {
-        "over_2_5_probability": 0.489,
-        "btts_probability": 0.493,
-        "expected_total_cards": 4.2,
-        "red_card_risk": 0.22,
-        "home_card_data_available": true,
-        "away_card_data_available": true,
-        "no_goal_probability": 0.072,
-        "home_scores_first_probability": 0.325,
-        "away_scores_first_probability": 0.603,
-        "likely_goal_band": "76-90+"
-      }
+      "signals": null
     },
     {
       "match_id": "317873",
@@ -266,76 +255,76 @@
     }
   ],
   "last_week": {
-    "week": 9,
-    "evaluated_matches": 9,
-    "correct": 5,
-    "accuracy": 0.5556,
+    "week": 10,
+    "evaluated_matches": 1,
+    "correct": 1,
+    "accuracy": 1.0,
     "actual_draws": 0,
     "draws_caught": 0,
     "draw_recall": null,
-    "high_conf_matches": 4,
-    "high_conf_correct": 4,
+    "high_conf_matches": 1,
+    "high_conf_correct": 1,
     "high_conf_accuracy": 1.0,
-    "brier_score": 0.4714,
-    "log_loss": 0.8283,
+    "brier_score": 0.2902,
+    "log_loss": 0.578,
     "confidence_breakdown": {
       "HIGH": {
-        "matches": 4,
-        "correct": 4,
+        "matches": 1,
+        "correct": 1,
         "accuracy": 1.0,
-        "avg_stated_probability": 0.635,
-        "calibration_gap": 0.365,
-        "brier_score": 0.2071,
-        "log_loss": 0.4575
+        "avg_stated_probability": 0.561,
+        "calibration_gap": 0.439,
+        "brier_score": 0.2902,
+        "log_loss": 0.578
       },
       "MEDIUM": {
-        "matches": 1,
+        "matches": 0,
         "correct": 0,
-        "accuracy": 0.0,
-        "avg_stated_probability": 0.476,
-        "calibration_gap": -0.476,
-        "brier_score": 0.9317,
-        "log_loss": 1.5233
+        "accuracy": null,
+        "avg_stated_probability": null,
+        "calibration_gap": null,
+        "brier_score": null,
+        "log_loss": null
       },
       "LOW": {
-        "matches": 4,
-        "correct": 1,
-        "accuracy": 0.25,
-        "avg_stated_probability": 0.3663,
-        "calibration_gap": -0.1163,
-        "brier_score": 0.6206,
-        "log_loss": 1.0254
+        "matches": 0,
+        "correct": 0,
+        "accuracy": null,
+        "avg_stated_probability": null,
+        "calibration_gap": null,
+        "brier_score": null,
+        "log_loss": null
       }
     },
     "pick_side_breakdown": {
       "home": {
-        "matches": 3,
-        "correct": 2,
-        "accuracy": 0.6667,
+        "matches": 0,
+        "correct": 0,
+        "accuracy": null,
         "actual": {
-          "home": 2,
+          "home": 0,
           "draw": 0,
-          "away": 1
+          "away": 0
         }
       },
       "draw": {
-        "matches": 2,
+        "matches": 0,
         "correct": 0,
-        "accuracy": 0.0,
+        "accuracy": null,
         "actual": {
-          "home": 1,
+          "home": 0,
           "draw": 0,
-          "away": 1
+          "away": 0
         }
       },
       "away": {
-        "matches": 4,
-        "correct": 3,
-        "accuracy": 0.75,
+        "matches": 1,
+        "correct": 1,
+        "accuracy": 1.0,
         "actual": {
-          "home": 1,
+          "home": 0,
           "draw": 0,
-          "away": 3
+          "away": 1
         }
       }
     }
