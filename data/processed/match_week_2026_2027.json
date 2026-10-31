@@ -26,58 +26,36 @@
       "date": "31 Eki",
       "home_team": "ERZURUMSPOR FK",
       "away_team": "ARCA ÇORUM FK",
-      "is_played": false,
-      "actual_score": null,
+      "is_played": true,
+      "actual_score": "1 - 3",
       "predicted": "home",
       "pick_text": "ERZURUMSPOR FK",
       "home_win_probability": 0.373,
       "draw_probability": 0.259,
       "away_win_probability": 0.368,
-      "data_confidence": "LOW_NEW_TEAM",
+      "data_confidence": "PLAYED",
       "recommended_scoreline": "1-0",
       "expected_home_goals": 1.35,
       "expected_away_goals": 1.33,
-      "signals": {
-        "over_2_5_probability": 0.501,
-        "btts_probability": 0.545,
-        "expected_total_cards": 2.0,
-        "red_card_risk": 0.111,
-        "home_card_data_available": true,
-        "away_card_data_available": true,
-        "no_goal_probability": 0.069,
-        "home_scores_first_probability": 0.469,
-        "away_scores_first_probability": 0.462,
-        "likely_goal_band": "76-90+"
-      }
+      "signals": null
     },
     {
       "match_id": "317872",
       "date": "31 Eki",
       "home_team": "KOCAELİSPOR",
       "away_team": "ÇAYKUR RİZESPOR A.Ş.",
-      "is_played": false,
-      "actual_score": null,
+      "is_played": true,
+      "actual_score": "0 - 0",
       "predicted": "draw",
       "pick_text": "Beraberlik",
       "home_win_probability": 0.464,
       "draw_probability": 0.328,
       "away_win_probability": 0.209,
-      "data_confidence": "MEDIUM",
+      "data_confidence": "PLAYED",
       "recommended_scoreline": "0-0",
       "expected_home_goals": 1.08,
       "expected_away_goals": 0.62,
-      "signals": {
-        "over_2_5_probability": 0.243,
-        "btts_probability": 0.305,
-        "expected_total_cards": 4.3,
-        "red_card_risk": 0.156,
-        "home_card_data_available": true,
-        "away_card_data_available": true,
-        "no_goal_probability": 0.183,
-        "home_scores_first_probability": 0.519,
-        "away_scores_first_probability": 0.298,
-        "likely_goal_band": "76-90+"
-      }
+      "signals": null
     },
     {
       "match_id": "317871",
@@ -256,17 +234,17 @@
   ],
   "last_week": {
     "week": 10,
-    "evaluated_matches": 1,
-    "correct": 1,
-    "accuracy": 1.0,
-    "actual_draws": 0,
-    "draws_caught": 0,
-    "draw_recall": null,
+    "evaluated_matches": 3,
+    "correct": 2,
+    "accuracy": 0.6667,
+    "actual_draws": 1,
+    "draws_caught": 1,
+    "draw_recall": 1.0,
     "high_conf_matches": 1,
     "high_conf_correct": 1,
     "high_conf_accuracy": 1.0,
-    "brier_score": 0.2902,
-    "log_loss": 0.578,
+    "brier_score": 0.5355,
+    "log_loss": 0.8975,
     "confidence_breakdown": {
       "HIGH": {
         "matches": 1,
@@ -278,42 +256,42 @@
         "log_loss": 0.578
       },
       "MEDIUM": {
-        "matches": 0,
-        "correct": 0,
-        "accuracy": null,
-        "avg_stated_probability": null,
-        "calibration_gap": null,
-        "brier_score": null,
-        "log_loss": null
+        "matches": 1,
+        "correct": 1,
+        "accuracy": 1.0,
+        "avg_stated_probability": 0.328,
+        "calibration_gap": 0.672,
+        "brier_score": 0.7106,
+        "log_loss": 1.1147
       },
       "LOW": {
-        "matches": 0,
+        "matches": 1,
         "correct": 0,
-        "accuracy": null,
-        "avg_stated_probability": null,
-        "calibration_gap": null,
-        "brier_score": null,
-        "log_loss": null
+        "accuracy": 0.0,
+        "avg_stated_probability": 0.373,
+        "calibration_gap": -0.373,
+        "brier_score": 0.6056,
+        "log_loss": 0.9997
       }
     },
     "pick_side_breakdown": {
       "home": {
-        "matches": 0,
+        "matches": 1,
         "correct": 0,
-        "accuracy": null,
+        "accuracy": 0.0,
         "actual": {
           "home": 0,
           "draw": 0,
-          "away": 0
+          "away": 1
         }
       },
       "draw": {
-        "matches": 0,
-        "correct": 0,
-        "accuracy": null,
+        "matches": 1,
+        "correct": 1,
+        "accuracy": 1.0,
         "actual": {
           "home": 0,
-          "draw": 0,
+          "draw": 1,
           "away": 0
         }
       },
