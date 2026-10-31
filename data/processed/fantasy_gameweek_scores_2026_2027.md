@@ -1,6 +1,6 @@
 # Kadro Kur — Haftalık Puanlar
 
-- Puanlanan hafta sayısı: 9
+- Puanlanan hafta sayısı: 10
 - Toplamda puan alan oyuncu: 492
 - En yüksek puanlı 5 oyuncu:
   - ABDÜLKERİM BARDAKCI (GALATASARAY A.Ş.): 39 puan
