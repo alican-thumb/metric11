@@ -4,12 +4,12 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 
 ## Genel Karne
 
-- Değerlendirilen maç: **82**
-- İsabet: **40/82** (%49)
-- Beraberlik yakalama: **2/14** (%14)
+- Değerlendirilen maç: **84**
+- İsabet: **41/84** (%49)
+- Beraberlik yakalama: **3/15** (%20)
 - Yüksek güvenli maç isabeti: **22/33** (%67)
-- Brier score: **0.597** (düşük daha iyi; 2025-26 referans 0.600)
-- Log loss: **0.997** (düşük daha iyi; 2025-26 referans 1.005)
+- Brier score: **0.598** (düşük daha iyi; 2025-26 referans 0.600)
+- Log loss: **0.998** (düşük daha iyi; 2025-26 referans 1.005)
 
 ### Güven bandı kalibrasyonu
 
@@ -18,8 +18,8 @@ _"Beyan edilen ort. olasılık" ile "İsabet" arasındaki fark büyükse (özell
 | Güven bandı | Maç | İsabet | Beyan edilen ort. olasılık | Brier | Log loss | Referans (2025-26: isabet / brier / logloss) |
 | --- | --- | --- | --- | --- | --- | --- |
 | HIGH | 33 | 22/33 (%67) | %60 | 0.484 | 0.840 | %64 / 0.516 / 0.885 |
-| MEDIUM | 26 | 7/26 (%27) | %47 | 0.694 | 1.127 | %54 / 0.619 / 1.032 |
-| LOW | 23 | 11/23 (%48) | %38 | 0.649 | 1.074 | %48 / 0.670 / 1.103 |
+| MEDIUM | 27 | 8/27 (%30) | %46 | 0.695 | 1.127 | %54 / 0.619 / 1.032 |
+| LOW | 24 | 11/24 (%46) | %38 | 0.647 | 1.071 | %48 / 0.670 / 1.103 |
 
 ### Seçilen tarafa göre isabet
 
@@ -27,15 +27,17 @@ _Model hangi tarafı seçtiğinde ne oldu? Belirli bir seçimde (ör. deplasman 
 
 | Seçim | Maç | İsabet | Gerçekleşen (Ev / X / Dep) |
 | --- | --- | --- | --- |
-| Ev | 45 | 25/45 (%56) | 25 / 7 / 13 |
-| Beraberlik | 7 | 2/7 (%29) | 2 / 2 / 3 |
+| Ev | 46 | 25/46 (%54) | 25 / 7 / 14 |
+| Beraberlik | 8 | 3/8 (%38) | 2 / 3 / 3 |
 | Deplasman | 30 | 13/30 (%43) | 12 / 5 / 13 |
 
-## Hafta 10 — 1/1 isabet (%100)
+## Hafta 10 — 2/3 isabet (%67)
 
 | Maç | Skor | Tahmin | Sonuç | Güven |
 | --- | --- | --- | --- | --- |
 | TÜMOSAN KONYASPOR - GALATASARAY A.Ş. | 0 - 4 | Deplasman | ✅ | HIGH |
+| ERZURUMSPOR FK - ARCA ÇORUM FK | 1 - 3 | Ev | ❌ | LOW |
+| KOCAELİSPOR - ÇAYKUR RİZESPOR A.Ş. | 0 - 0 | Beraberlik | ✅ | MEDIUM |
 
 ## Hafta 9 — 5/9 isabet (%56)
 
