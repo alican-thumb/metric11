@@ -1,6 +1,6 @@
 {
   "available": true,
-  "generated_at": "2026-10-31T21:31:30.481319",
+  "generated_at": "2026-11-01T01:09:14.201847",
   "week": 10,
   "matches": [
     {
@@ -62,29 +62,18 @@
       "date": "31 Eki",
       "home_team": "FENERBAHÇE A.Ş.",
       "away_team": "GÖZTEPE A.Ş.",
-      "is_played": false,
-      "actual_score": null,
+      "is_played": true,
+      "actual_score": "1 - 2",
       "predicted": "home",
       "pick_text": "FENERBAHÇE A.Ş.",
       "home_win_probability": 0.52,
       "draw_probability": 0.258,
       "away_win_probability": 0.222,
-      "data_confidence": "HIGH",
+      "data_confidence": "PLAYED",
       "recommended_scoreline": "2-1",
       "expected_home_goals": 1.91,
       "expected_away_goals": 1.18,
-      "signals": {
-        "over_2_5_probability": 0.597,
-        "btts_probability": 0.59,
-        "expected_total_cards": 4.3,
-        "red_card_risk": 0.18,
-        "home_card_data_available": true,
-        "away_card_data_available": true,
-        "no_goal_probability": 0.046,
-        "home_scores_first_probability": 0.59,
-        "away_scores_first_probability": 0.365,
-        "likely_goal_band": "76-90+"
-      }
+      "signals": null
     },
     {
       "match_id": "317868",
@@ -234,26 +223,26 @@
   ],
   "last_week": {
     "week": 10,
-    "evaluated_matches": 3,
+    "evaluated_matches": 4,
     "correct": 2,
-    "accuracy": 0.6667,
+    "accuracy": 0.5,
     "actual_draws": 1,
     "draws_caught": 1,
     "draw_recall": 1.0,
-    "high_conf_matches": 1,
+    "high_conf_matches": 2,
     "high_conf_correct": 1,
-    "high_conf_accuracy": 1.0,
-    "brier_score": 0.5355,
-    "log_loss": 0.8975,
+    "high_conf_accuracy": 0.5,
+    "brier_score": 0.6372,
+    "log_loss": 1.0494,
     "confidence_breakdown": {
       "HIGH": {
-        "matches": 1,
+        "matches": 2,
         "correct": 1,
-        "accuracy": 1.0,
-        "avg_stated_probability": 0.561,
-        "calibration_gap": 0.439,
-        "brier_score": 0.2902,
-        "log_loss": 0.578
+        "accuracy": 0.5,
+        "avg_stated_probability": 0.5405,
+        "calibration_gap": -0.0405,
+        "brier_score": 0.6162,
+        "log_loss": 1.0416
       },
       "MEDIUM": {
         "matches": 1,
@@ -276,13 +265,13 @@
     },
     "pick_side_breakdown": {
       "home": {
-        "matches": 1,
+        "matches": 2,
         "correct": 0,
         "accuracy": 0.0,
         "actual": {
           "home": 0,
           "draw": 0,
-          "away": 1
+          "away": 2
         }
       },
       "draw": {

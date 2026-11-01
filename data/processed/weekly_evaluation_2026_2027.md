@@ -4,12 +4,12 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 
 ## Genel Karne
 
-- Değerlendirilen maç: **84**
-- İsabet: **41/84** (%49)
+- Değerlendirilen maç: **85**
+- İsabet: **41/85** (%48)
 - Beraberlik yakalama: **3/15** (%20)
-- Yüksek güvenli maç isabeti: **22/33** (%67)
-- Brier score: **0.598** (düşük daha iyi; 2025-26 referans 0.600)
-- Log loss: **0.998** (düşük daha iyi; 2025-26 referans 1.005)
+- Yüksek güvenli maç isabeti: **22/34** (%65)
+- Brier score: **0.602** (düşük daha iyi; 2025-26 referans 0.600)
+- Log loss: **1.004** (düşük daha iyi; 2025-26 referans 1.005)
 
 ### Güven bandı kalibrasyonu
 
@@ -17,7 +17,7 @@ _"Beyan edilen ort. olasılık" ile "İsabet" arasındaki fark büyükse (özell
 
 | Güven bandı | Maç | İsabet | Beyan edilen ort. olasılık | Brier | Log loss | Referans (2025-26: isabet / brier / logloss) |
 | --- | --- | --- | --- | --- | --- | --- |
-| HIGH | 33 | 22/33 (%67) | %60 | 0.484 | 0.840 | %64 / 0.516 / 0.885 |
+| HIGH | 34 | 22/34 (%65) | %59 | 0.498 | 0.859 | %64 / 0.516 / 0.885 |
 | MEDIUM | 27 | 8/27 (%30) | %46 | 0.695 | 1.127 | %54 / 0.619 / 1.032 |
 | LOW | 24 | 11/24 (%46) | %38 | 0.647 | 1.071 | %48 / 0.670 / 1.103 |
 
@@ -27,17 +27,18 @@ _Model hangi tarafı seçtiğinde ne oldu? Belirli bir seçimde (ör. deplasman 
 
 | Seçim | Maç | İsabet | Gerçekleşen (Ev / X / Dep) |
 | --- | --- | --- | --- |
-| Ev | 46 | 25/46 (%54) | 25 / 7 / 14 |
+| Ev | 47 | 25/47 (%53) | 25 / 7 / 15 |
 | Beraberlik | 8 | 3/8 (%38) | 2 / 3 / 3 |
 | Deplasman | 30 | 13/30 (%43) | 12 / 5 / 13 |
 
-## Hafta 10 — 2/3 isabet (%67)
+## Hafta 10 — 2/4 isabet (%50)
 
 | Maç | Skor | Tahmin | Sonuç | Güven |
 | --- | --- | --- | --- | --- |
 | TÜMOSAN KONYASPOR - GALATASARAY A.Ş. | 0 - 4 | Deplasman | ✅ | HIGH |
 | ERZURUMSPOR FK - ARCA ÇORUM FK | 1 - 3 | Ev | ❌ | LOW |
 | KOCAELİSPOR - ÇAYKUR RİZESPOR A.Ş. | 0 - 0 | Beraberlik | ✅ | MEDIUM |
+| FENERBAHÇE A.Ş. - GÖZTEPE A.Ş. | 1 - 2 | Ev | ❌ | HIGH |
 
 ## Hafta 9 — 5/9 isabet (%56)
 

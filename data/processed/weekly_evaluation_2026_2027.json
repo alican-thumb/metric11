@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-10-31T21:31:30.426539",
+  "generated_at": "2026-11-01T01:09:14.133030",
   "season": "2026-2027",
   "summary": {
-    "evaluated_matches": 84,
+    "evaluated_matches": 85,
     "correct": 41,
-    "accuracy": 0.4881,
+    "accuracy": 0.4824,
     "actual_draws": 15,
     "draws_caught": 3,
     "draw_recall": 0.2,
-    "high_conf_matches": 33,
+    "high_conf_matches": 34,
     "high_conf_correct": 22,
-    "high_conf_accuracy": 0.6667,
-    "brier_score": 0.5983,
-    "log_loss": 0.998,
+    "high_conf_accuracy": 0.6471,
+    "brier_score": 0.6023,
+    "log_loss": 1.004,
     "confidence_breakdown": {
       "HIGH": {
-        "matches": 33,
+        "matches": 34,
         "correct": 22,
-        "accuracy": 0.6667,
-        "avg_stated_probability": 0.5952,
-        "calibration_gap": 0.0715,
-        "brier_score": 0.4841,
-        "log_loss": 0.8396
+        "accuracy": 0.6471,
+        "avg_stated_probability": 0.593,
+        "calibration_gap": 0.0541,
+        "brier_score": 0.4976,
+        "log_loss": 0.8592
       },
       "MEDIUM": {
         "matches": 27,
@@ -44,13 +44,13 @@
     },
     "pick_side_breakdown": {
       "home": {
-        "matches": 46,
+        "matches": 47,
         "correct": 25,
-        "accuracy": 0.5435,
+        "accuracy": 0.5319,
         "actual": {
           "home": 25,
           "draw": 7,
-          "away": 14
+          "away": 15
         }
       },
       "draw": {
@@ -79,26 +79,26 @@
   "last_week": {
     "week": 10,
     "summary": {
-      "evaluated_matches": 3,
+      "evaluated_matches": 4,
       "correct": 2,
-      "accuracy": 0.6667,
+      "accuracy": 0.5,
       "actual_draws": 1,
       "draws_caught": 1,
       "draw_recall": 1.0,
-      "high_conf_matches": 1,
+      "high_conf_matches": 2,
       "high_conf_correct": 1,
-      "high_conf_accuracy": 1.0,
-      "brier_score": 0.5355,
-      "log_loss": 0.8975,
+      "high_conf_accuracy": 0.5,
+      "brier_score": 0.6372,
+      "log_loss": 1.0494,
       "confidence_breakdown": {
         "HIGH": {
-          "matches": 1,
+          "matches": 2,
           "correct": 1,
-          "accuracy": 1.0,
-          "avg_stated_probability": 0.561,
-          "calibration_gap": 0.439,
-          "brier_score": 0.2902,
-          "log_loss": 0.578
+          "accuracy": 0.5,
+          "avg_stated_probability": 0.5405,
+          "calibration_gap": -0.0405,
+          "brier_score": 0.6162,
+          "log_loss": 1.0416
         },
         "MEDIUM": {
           "matches": 1,
@@ -121,13 +121,13 @@
       },
       "pick_side_breakdown": {
         "home": {
-          "matches": 1,
+          "matches": 2,
           "correct": 0,
           "accuracy": 0.0,
           "actual": {
             "home": 0,
             "draw": 0,
-            "away": 1
+            "away": 2
           }
         },
         "draw": {
@@ -200,6 +200,22 @@
         "home_win_probability": 0.464,
         "draw_probability": 0.328,
         "away_win_probability": 0.209
+      },
+      {
+        "match_id": "317871",
+        "date_time": "31.10.2026 19:00",
+        "home_team": "FENERBAHÇE A.Ş.",
+        "away_team": "GÖZTEPE A.Ş.",
+        "actual_score": "1 - 2",
+        "actual": "away",
+        "predicted": "home",
+        "raw_predicted": "home",
+        "correct": false,
+        "data_confidence": "PLAYED",
+        "prediction_confidence": "HIGH",
+        "home_win_probability": 0.52,
+        "draw_probability": 0.258,
+        "away_win_probability": 0.222
       }
     ]
   },
@@ -2214,26 +2230,26 @@
     {
       "week": 10,
       "summary": {
-        "evaluated_matches": 3,
+        "evaluated_matches": 4,
         "correct": 2,
-        "accuracy": 0.6667,
+        "accuracy": 0.5,
         "actual_draws": 1,
         "draws_caught": 1,
         "draw_recall": 1.0,
-        "high_conf_matches": 1,
+        "high_conf_matches": 2,
         "high_conf_correct": 1,
-        "high_conf_accuracy": 1.0,
-        "brier_score": 0.5355,
-        "log_loss": 0.8975,
+        "high_conf_accuracy": 0.5,
+        "brier_score": 0.6372,
+        "log_loss": 1.0494,
         "confidence_breakdown": {
           "HIGH": {
-            "matches": 1,
+            "matches": 2,
             "correct": 1,
-            "accuracy": 1.0,
-            "avg_stated_probability": 0.561,
-            "calibration_gap": 0.439,
-            "brier_score": 0.2902,
-            "log_loss": 0.578
+            "accuracy": 0.5,
+            "avg_stated_probability": 0.5405,
+            "calibration_gap": -0.0405,
+            "brier_score": 0.6162,
+            "log_loss": 1.0416
           },
           "MEDIUM": {
             "matches": 1,
@@ -2256,13 +2272,13 @@
         },
         "pick_side_breakdown": {
           "home": {
-            "matches": 1,
+            "matches": 2,
             "correct": 0,
             "accuracy": 0.0,
             "actual": {
               "home": 0,
               "draw": 0,
-              "away": 1
+              "away": 2
             }
           },
           "draw": {
@@ -2335,6 +2351,22 @@
           "home_win_probability": 0.464,
           "draw_probability": 0.328,
           "away_win_probability": 0.209
+        },
+        {
+          "match_id": "317871",
+          "date_time": "31.10.2026 19:00",
+          "home_team": "FENERBAHÇE A.Ş.",
+          "away_team": "GÖZTEPE A.Ş.",
+          "actual_score": "1 - 2",
+          "actual": "away",
+          "predicted": "home",
+          "raw_predicted": "home",
+          "correct": false,
+          "data_confidence": "PLAYED",
+          "prediction_confidence": "HIGH",
+          "home_win_probability": 0.52,
+          "draw_probability": 0.258,
+          "away_win_probability": 0.222
         }
       ]
     }
