@@ -1,6 +1,6 @@
 # Futbol İstihbarat Platformu - Proje Durumu
 
-Son güncelleme: 2026-08-23 (site güncel değil şikayeti + artifact kotası fix)
+Son güncelleme: 2026-11-01 (kalibrasyon denetimi + kalıcı pipeline sağlık özeti)
 
 ## Amaç
 
@@ -3470,3 +3470,30 @@ Kullanıcı admin sayfasına giremiyordu (kendi çalıştırdığı sıfırlama 
 - **WhatsApp paylaş** butonu `_share_button`'a eklendi (X butonu olan her sayfada).
 - **Maça özel OG görseli** (`og_mac_<ev>_<dep>.png`, yaklaşan 2 hafta, ~32 KB): 1X2 olasılıkları + tahmin + olası skor; Telegram/WhatsApp önizlemesinde görünür. Pillow yerel venv'de yoktu, kuruldu (requirements'ta zaten var).
 - **Telegram:** her hafta tamamlanınca bir kez şampiyonluk/düşme özeti (`sim-week-<n>`).
+
+### 2026-10-17 — Günlük heartbeat: pipeline yeniden çalıştı, tahmin karnesi iyileşti
+
+- Uzun süren tazelik kesintisi sona erdi: 597 işlenmiş dosya 17 Ekim'de yenilendi; `daily_pipeline_run_latest.json` da `2026-10-17T16:28:37Z` ile yeniden güncel.
+- Tahmin örneklemi 54'ten 65 maça çıktı; doğru sonuç 29, genel isabet **%44.62** (önceki %38.89). HIGH 14/25 (**%56.0**), MEDIUM 6/24 (**%25.0**), LOW 9/16 (**%56.25**). Genel Brier **0.638**, log loss **1.0526** ile önceki 0.6662/1.0915 değerlerinden daha iyi.
+- Taraf kırılımı da toparlandı: ev 19/38 (**%50.0**), deplasman 8/24 (**%33.33**). Buna rağmen MEDIUM hâlâ ortalama %46.46 olasılık beyan edip %25 isabet ediyor (`calibration_gap=-0.2146`); beraberlik yakalama 2/14 (**%14.29**) ile ana zayıflık.
+- Scout kalitesi korunuyor: 310 bağlantıda düşük güvenli yayın adayı 0; 105 pozisyon matrisi adayının 101'i HIGH. Availability 2026-27 ve 18 aktif takım ile hizalı.
+- Kaynak snapshot'ı güncel: 332 gözlenen/220 skorlanan kaynak, Google News 122 makale/30 başarılı sorgu, Telegram 6 mesaj/8 kanal; X/Twitter 45 hesap için hâlâ `MISSING_CREDENTIALS`.
+- Ürün yayılımı ciddi biçimde genişledi: 306 maç SEO sayfası, 34 hafta sayfası, 18 takım sayfası, 20.000 koşuluk şampiyonluk simülasyonu, IndexNow, Telegram maç bildirimleri, WhatsApp paylaşımı ve yaklaşan maçlara özel OG görselleri üretildi.
+- **Sıradaki uygulanabilir adım:** Yeni sayfa sayısı ve trafik yayılımından önce beraberlik/MEDIUM kalibrasyonunu düzeltmeye odaklan; özellikle tahmini beraberliğe çevirmeden önce beraberlik olasılığının kalibrasyon eğrisini ve MEDIUM deplasman seçimlerini ayrı raporla. Yeni prediction snapshot'ları değişikliklerin ileriye dönük etkisini güvenilir biçimde ölçebilir.
+
+### 2026-10-22 — Günlük heartbeat: pipeline yeniden beş gündür bayat
+
+- 21 Ekim 00:00 sonrası yeni işlenmiş dosya yok; son veri/pipeline üretimi ve son commit 17 Ekim tarihli. Altı saatlik refresh planına göre tazelik sorunu yeniden oluşmuş durumda.
+- 17 Ekim'deki tahmin/scout/availability metrikleri değişmedi; bunun nedeni yeni örnek ve kaynak snapshot'ı üretilmemesi.
+- **Sıradaki uygulanabilir adım:** GitHub Actions run geçmişi ve dakika kotasını tekrar kontrol et. Periyodik kesinti devam ediyorsa ağır full pipeline ile hafif maç sonucu/haber refresh akışlarını ayırıp, kritik tazelik işlerini daha ucuz ve bağımsız bir workflow'a taşı.
+
+### 2026-11-01 — Kalibrasyon denetimi ve kalıcı pipeline sağlık özeti
+
+- Yerel çalışma kopyası, `PROJECT_STATE.md` notları korunarak uzak `main` ile eşitlendi. Uzakta full pipeline, dashboard refresh ve haber yenileme akışlarının 1 Kasım'da başarılı çalıştığı doğrulandı; önceki heartbeat'lerin yalnız ignore edilen yerel `daily_pipeline_run_latest.json` dosyasına bakarak bayatlık bildirdiği tespit edildi.
+- `pipeline_health_2026_2027.json` eklendi. Bu küçük ve Git tarafından takip edilen özet son başarılı rapor yenilemesini, son başarılı tam network çalışmasını, çalışma türünü, komut/hata sayılarını ve başarısız komutları saklıyor. Rapor yenilemesi son tam veri toplama zamanını ezmiyor.
+- Sistem durumu sayfası önce kalıcı sağlık özetini okuyor; çalışma türünü ve son tam veri toplama zamanını ayrıca gösteriyor. Eski ayrıntılı günlük dosyası geriye dönük fallback olarak korunuyor.
+- `prediction_calibration_audit_2026_2027` JSON/Markdown/HTML raporu eklendi: olasılık kovaları, %95 Wilson güven aralıkları, seçici yayın kapsamı ve beraberlik eşik taraması üretiyor. Aynı sezon üzerinde taranan eşikler `diagnostic_only=true`; otomatik üretim kuralına çevrilmiyor.
+- Güncel 85 maçlık tanı: genel isabet %48.2; minimum %50 model olasılığında 36 maç/%61.1 isabet, minimum %55'te 25 maç/%72.0, minimum %60'ta 14 maç/%85.7. Bunlar kapsam azaldıkça yükselen aynı-sezon tanı değerleri; ileriye dönük doğrulama olmadan başarı iddiası değildir.
+- Yayın politikası: HIGH `PUBLISH`; MEDIUM ve LOW `NO_STRONG_PICK`; beraberlik modeli `%20` yakalama nedeniyle `WEAK` ve yalnız senaryo diliyle gösterilmeli. Mevcut maç olasılıkları geriye dönük değiştirilmedi.
+- Haftalık karne yeni kalibrasyon raporuna bağlandı; sitemap güncellendi. Pipeline sırasına kalibrasyon denetimi eklendi.
+- Network'süz tam pipeline **62/62**, son test paketi **74 test + 6 alt test** başarılı.
