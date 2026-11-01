@@ -31,6 +31,8 @@ _Model hangi tarafı seçtiğinde ne oldu? Belirli bir seçimde (ör. deplasman 
 | Beraberlik | 8 | 3/8 (%38) | 2 / 3 / 3 |
 | Deplasman | 30 | 13/30 (%43) | 12 / 5 / 13 |
 
+[Olasılık kovaları ve seçici yayın politikası →](prediction_calibration_audit_2026_2027.html)
+
 ## Hafta 10 — 2/4 isabet (%50)
 
 | Maç | Skor | Tahmin | Sonuç | Güven |

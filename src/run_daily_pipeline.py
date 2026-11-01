@@ -9,6 +9,8 @@ from pathlib import Path
 
 from src.config import PROCESSED_DIR, ROOT_DIR
 
+PIPELINE_HEALTH_PATH = PROCESSED_DIR / "pipeline_health_2026_2027.json"
+
 
 DEFAULT_COMMANDS = [
     ["python", "-m", "src.enrich_tff_with_sofascore"],
@@ -62,6 +64,7 @@ DEFAULT_COMMANDS = [
     # ANA SAYFADAN ÖNCE üretilir (aksi halde ana sayfa bayat tahmin gösterir).
     ["python", "-m", "src.build_season_fixture_predictions"],
     ["python", "-m", "src.build_weekly_evaluation"],
+    ["python", "-m", "src.build_prediction_calibration_audit"],
     ["python", "-m", "src.build_match_pages"],
     ["python", "-m", "src.build_season_simulation"],
     ["python", "-m", "src.build_match_week"],
@@ -203,10 +206,12 @@ def main() -> None:
     output.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     md_path = output.with_suffix(".md")
     md_path.write_text(build_markdown(payload), encoding="utf-8")
+    write_pipeline_health(payload)
     post_report_rows = refresh_post_report_health_pages()
     if post_report_rows:
         payload["post_report_refresh"] = post_report_rows
         output.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+        write_pipeline_health(payload, post_report_rows)
     print(md_path.read_text(encoding="utf-8"))
     post_report_failed = sum(1 for row in post_report_rows if row["returncode"] != 0)
     if payload["failed_count"] or post_report_failed:
@@ -240,6 +245,48 @@ def refresh_post_report_health_pages() -> list[dict]:
         run_command(["python", "-m", "src.build_data_quality_scorecard"]),
         run_command(["python", "-m", "src.build_status_page"]),
     ]
+
+
+def write_pipeline_health(payload: dict, post_report_rows: list[dict] | None = None) -> dict:
+    """Git tarafından takip edilen küçük bir sağlık özeti yazar.
+
+    Ayrıntılı günlük dosyası bilinçli olarak ignore ediliyor. Bu özet sayesinde
+    başka çalışma kopyaları ve agent'lar son başarılı network çalışmasını yalnız
+    yerel dosya zamanına bakarak yanlış değerlendirmez.
+    """
+    previous = {}
+    if PIPELINE_HEALTH_PATH.exists():
+        try:
+            previous = json.loads(PIPELINE_HEALTH_PATH.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, OSError):
+            previous = {}
+    generated_at = payload["generated_at"]
+    post_rows = post_report_rows or []
+    failed = payload.get("failed_count", 0) + sum(1 for row in post_rows if row.get("returncode") != 0)
+    successful = failed == 0
+    health = {
+        "generated_at": generated_at,
+        "status": "SUCCESS" if successful else "FAILED",
+        "run_kind": "FULL_NETWORK" if payload.get("include_network") else "DERIVED_REFRESH",
+        "include_network": bool(payload.get("include_network")),
+        "command_count": payload.get("command_count", 0) + len(post_rows),
+        "ok_count": payload.get("ok_count", 0) + sum(1 for row in post_rows if row.get("returncode") == 0),
+        "failed_count": failed,
+        "last_success_at": generated_at if successful else previous.get("last_success_at"),
+        "last_network_success_at": (
+            generated_at if successful and payload.get("include_network") else previous.get("last_network_success_at")
+        ),
+        "last_derived_success_at": (
+            generated_at if successful and not payload.get("include_network") else previous.get("last_derived_success_at")
+        ),
+        "failing_commands": [
+            " ".join(row.get("command", []))
+            for row in [*payload.get("rows", []), *post_rows]
+            if row.get("returncode") != 0
+        ],
+    }
+    PIPELINE_HEALTH_PATH.write_text(json.dumps(health, ensure_ascii=False, indent=2), encoding="utf-8")
+    return health
 
 
 def build_markdown(payload: dict) -> str:

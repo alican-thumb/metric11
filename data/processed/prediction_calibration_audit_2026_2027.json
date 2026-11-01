@@ -1,0 +1,283 @@
+{
+  "generated_at": "2026-11-01T23:42:40.730462",
+  "season": "2026-2027",
+  "sample_size": 85,
+  "diagnostic_only": true,
+  "summary": {
+    "evaluated_matches": 85,
+    "correct": 41,
+    "accuracy": 0.4824,
+    "actual_draws": 15,
+    "draws_caught": 3,
+    "draw_recall": 0.2,
+    "high_conf_matches": 34,
+    "high_conf_correct": 22,
+    "high_conf_accuracy": 0.6471,
+    "brier_score": 0.6023,
+    "log_loss": 1.004,
+    "confidence_breakdown": {
+      "HIGH": {
+        "matches": 34,
+        "correct": 22,
+        "accuracy": 0.6471,
+        "avg_stated_probability": 0.593,
+        "calibration_gap": 0.0541,
+        "brier_score": 0.4976,
+        "log_loss": 0.8592
+      },
+      "MEDIUM": {
+        "matches": 27,
+        "correct": 8,
+        "accuracy": 0.2963,
+        "avg_stated_probability": 0.4604,
+        "calibration_gap": -0.1641,
+        "brier_score": 0.6948,
+        "log_loss": 1.1265
+      },
+      "LOW": {
+        "matches": 24,
+        "correct": 11,
+        "accuracy": 0.4583,
+        "avg_stated_probability": 0.3759,
+        "calibration_gap": 0.0824,
+        "brier_score": 0.6468,
+        "log_loss": 1.0713
+      }
+    },
+    "pick_side_breakdown": {
+      "home": {
+        "matches": 47,
+        "correct": 25,
+        "accuracy": 0.5319,
+        "actual": {
+          "home": 25,
+          "draw": 7,
+          "away": 15
+        }
+      },
+      "draw": {
+        "matches": 8,
+        "correct": 3,
+        "accuracy": 0.375,
+        "actual": {
+          "home": 2,
+          "draw": 3,
+          "away": 3
+        }
+      },
+      "away": {
+        "matches": 30,
+        "correct": 13,
+        "accuracy": 0.4333,
+        "actual": {
+          "home": 12,
+          "draw": 5,
+          "away": 13
+        }
+      }
+    }
+  },
+  "confidence_policy": {
+    "high": {
+      "status": "PUBLISH",
+      "label": "Yayınlanabilir güçlü seçim"
+    },
+    "medium": {
+      "status": "NO_STRONG_PICK",
+      "label": "Net seçim yok / kararsız maç"
+    },
+    "low": {
+      "status": "NO_STRONG_PICK",
+      "label": "Net seçim yok"
+    },
+    "draw": {
+      "status": "WEAK",
+      "label": "Beraberlik modeli zayıf; senaryo olarak göster"
+    }
+  },
+  "probability_bins": [
+    {
+      "lower": 0.0,
+      "upper": 0.4,
+      "matches": 9,
+      "correct": 3,
+      "accuracy": 0.3333,
+      "avg_top_probability": 0.3714,
+      "calibration_gap": -0.0381,
+      "accuracy_ci_95": [
+        0.1206,
+        0.6458
+      ]
+    },
+    {
+      "lower": 0.4,
+      "upper": 0.45,
+      "matches": 22,
+      "correct": 9,
+      "accuracy": 0.4091,
+      "avg_top_probability": 0.4235,
+      "calibration_gap": -0.0145,
+      "accuracy_ci_95": [
+        0.2326,
+        0.6127
+      ]
+    },
+    {
+      "lower": 0.45,
+      "upper": 0.5,
+      "matches": 18,
+      "correct": 7,
+      "accuracy": 0.3889,
+      "avg_top_probability": 0.4698,
+      "calibration_gap": -0.0809,
+      "accuracy_ci_95": [
+        0.203,
+        0.6138
+      ]
+    },
+    {
+      "lower": 0.5,
+      "upper": 0.6,
+      "matches": 22,
+      "correct": 10,
+      "accuracy": 0.4545,
+      "avg_top_probability": 0.5535,
+      "calibration_gap": -0.099,
+      "accuracy_ci_95": [
+        0.2692,
+        0.6534
+      ]
+    },
+    {
+      "lower": 0.6,
+      "upper": 1.0,
+      "matches": 14,
+      "correct": 12,
+      "accuracy": 0.8571,
+      "avg_top_probability": 0.6439,
+      "calibration_gap": 0.2133,
+      "accuracy_ci_95": [
+        0.6006,
+        0.9599
+      ]
+    }
+  ],
+  "selective_policies": [
+    {
+      "matches": 76,
+      "correct": 38,
+      "accuracy": 0.5,
+      "avg_top_probability": 0.5127,
+      "calibration_gap": -0.0127,
+      "accuracy_ci_95": [
+        0.3903,
+        0.6097
+      ],
+      "minimum_probability": 0.4,
+      "coverage": 0.8941
+    },
+    {
+      "matches": 54,
+      "correct": 29,
+      "accuracy": 0.537,
+      "avg_top_probability": 0.549,
+      "calibration_gap": -0.012,
+      "accuracy_ci_95": [
+        0.4061,
+        0.6631
+      ],
+      "minimum_probability": 0.45,
+      "coverage": 0.6353
+    },
+    {
+      "matches": 36,
+      "correct": 22,
+      "accuracy": 0.6111,
+      "avg_top_probability": 0.5887,
+      "calibration_gap": 0.0224,
+      "accuracy_ci_95": [
+        0.4486,
+        0.7522
+      ],
+      "minimum_probability": 0.5,
+      "coverage": 0.4235
+    },
+    {
+      "matches": 25,
+      "correct": 18,
+      "accuracy": 0.72,
+      "avg_top_probability": 0.6131,
+      "calibration_gap": 0.1069,
+      "accuracy_ci_95": [
+        0.5242,
+        0.8572
+      ],
+      "minimum_probability": 0.55,
+      "coverage": 0.2941
+    },
+    {
+      "matches": 14,
+      "correct": 12,
+      "accuracy": 0.8571,
+      "avg_top_probability": 0.6439,
+      "calibration_gap": 0.2133,
+      "accuracy_ci_95": [
+        0.6006,
+        0.9599
+      ],
+      "minimum_probability": 0.6,
+      "coverage": 0.1647
+    }
+  ],
+  "draw_thresholds": [
+    {
+      "minimum_draw_probability": 0.22,
+      "flagged_matches": 61,
+      "draw_hits": 10,
+      "precision": 0.1639,
+      "recall": 0.6667,
+      "f1": 0.2632
+    },
+    {
+      "minimum_draw_probability": 0.25,
+      "flagged_matches": 26,
+      "draw_hits": 6,
+      "precision": 0.2308,
+      "recall": 0.4,
+      "f1": 0.2927
+    },
+    {
+      "minimum_draw_probability": 0.28,
+      "flagged_matches": 7,
+      "draw_hits": 2,
+      "precision": 0.2857,
+      "recall": 0.1333,
+      "f1": 0.1818
+    },
+    {
+      "minimum_draw_probability": 0.3,
+      "flagged_matches": 4,
+      "draw_hits": 1,
+      "precision": 0.25,
+      "recall": 0.0667,
+      "f1": 0.1053
+    },
+    {
+      "minimum_draw_probability": 0.32,
+      "flagged_matches": 2,
+      "draw_hits": 1,
+      "precision": 0.5,
+      "recall": 0.0667,
+      "f1": 0.1176
+    },
+    {
+      "minimum_draw_probability": 0.35,
+      "flagged_matches": 0,
+      "draw_hits": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    }
+  ],
+  "method_note": "Eşik taramaları aynı sezon sonuçlarında hesaplanır; üretim kuralı seçmek için değil, ileri dönük challenger deneyini tasarlamak için kullanılır."
+}

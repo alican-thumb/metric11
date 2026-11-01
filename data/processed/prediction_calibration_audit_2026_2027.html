@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tahmin Kalibrasyon Denetimi — metric11</title>
+  <meta name="description" content="Süper Lig tahminlerinin olasılık kalibrasyonu, seçici yayın kapsamı ve beraberlik eşik denetimi.">
+  <link rel="canonical" href="https://metric11.com/prediction_calibration_audit_2026_2027.html">
+  <meta property="og:title" content="Tahmin Kalibrasyon Denetimi — metric11">
+  <meta property="og:description" content="Süper Lig tahminlerinin olasılık kalibrasyonu, seçici yayın kapsamı ve beraberlik eşik denetimi.">
+  <meta property="og:image" content="https://metric11.com/og-image.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://metric11.com/og-image.png">
+  <meta name="theme-color" content="#091810">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <style>
+    :root {
+      --bg:#f3f5f4; --panel:#fff; --ink:#132018; --muted:#627067; --line:#d7ded9;
+      --red:#bd2936; --green:#116447; --lime:#cde94e; --blue:#22618c; --dark:#091810; --soft:#e8eee9;
+    }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Inter,"Segoe UI",Arial,sans-serif; background:var(--bg); color:var(--ink); }
+    .topbar { position:sticky; top:0; z-index:5; display:flex; align-items:center; justify-content:space-between; gap:20px; min-height:58px; padding:0 clamp(16px,4vw,42px); background:var(--dark); color:white; border-bottom:2px solid #1a3023; }
+    .brand { display:flex; gap:10px; align-items:center; font-weight:800; font-size:18px; color:white; text-decoration:none; flex-shrink:0; letter-spacing:-0.2px; }
+    .brand:visited,.brand:active,.brand:hover { color:white; }
+    .brand-mark { width:28px; height:28px; display:grid; place-items:center; border-radius:6px; color:var(--dark); background:var(--lime); font-size:14px; font-weight:900; flex-shrink:0; }
+    .season { color:#6b7c72; font-size:11px; font-weight:500; margin-left:2px; border-left:1px solid #2a3d30; padding-left:8px; }
+    nav, .topnav { display:flex; gap:2px; flex-wrap:nowrap; overflow-x:auto; overflow-y:hidden; justify-content:flex-end; -webkit-overflow-scrolling:touch; scrollbar-width:none; }
+    nav::-webkit-scrollbar, .topnav::-webkit-scrollbar { display:none; }
+    nav a, .topnav a { color:#8fa89a; text-decoration:none; font-size:13px; font-weight:600; padding:8px 11px 6px; border-radius:6px 6px 0 0; white-space:nowrap; flex-shrink:0; border-bottom:2px solid transparent; transition:background .15s,color .15s,border-color .15s; }
+    nav a:visited, .topnav a:visited { color:#8fa89a; }
+    nav a:hover, .topnav a:hover { background:#162b20; color:white; }
+    nav a.active, .topnav a.active { background:#162b20; color:var(--lime); border-bottom-color:var(--lime); font-weight:800; }
+    .back-link { display:inline-flex; align-items:center; gap:6px; color:var(--green); text-decoration:none; font-size:13px; font-weight:600; margin-bottom:18px; }
+    .back-link::before { content:"←"; }
+    .report-wrap { max-width:960px; margin:0 auto; padding:32px clamp(14px,3vw,32px) 60px; }
+    .report-wrap h1 { font-size:28px; margin:0 0 6px; line-height:1.15; }
+    .report-wrap h2 { font-size:19px; margin:28px 0 10px; padding-bottom:6px; border-bottom:1px solid var(--line); }
+    .report-wrap h3 { font-size:15px; margin:20px 0 8px; color:var(--muted); font-weight:700; }
+    .report-wrap p { line-height:1.65; margin:0 0 12px; font-size:14px; }
+    .report-wrap ul { padding-left:20px; margin:0 0 14px; }
+    .report-wrap li { line-height:1.65; font-size:14px; margin-bottom:4px; }
+    .report-wrap code { background:var(--soft); padding:1px 5px; border-radius:3px; font-size:12px; font-family:monospace; }
+    .report-wrap em { font-style:italic; color:var(--muted); }
+    .report-wrap strong { font-weight:700; }
+    .md-table { width:100%; border-collapse:collapse; margin:0 0 18px; font-size:13px; overflow-x:auto; display:block; }
+    .md-table th { background:var(--soft); font-weight:700; text-align:left; padding:7px 10px; border:1px solid var(--line); white-space:nowrap; }
+    .md-table td { padding:6px 10px; border:1px solid var(--line); }
+    .md-table tr:nth-child(even) td { background:#f8faf9; }
+    @media (max-width:680px) { .topbar { position:static; flex-direction:column; align-items:stretch; padding:11px 16px 0; gap:0; min-height:unset; } .brand { padding-bottom:8px; } .season { display:none; } nav { justify-content:flex-start; border-top:1px solid #1e3228; padding:7px 0 9px; } .report-wrap h1 { font-size:22px; } }
+    @media (max-width:600px) { .md-table th,.md-table td { padding:5px 6px; font-size:11px; } }
+    .x-share { display:inline-flex; align-items:center; gap:8px; background:#000; color:#fff; text-decoration:none; font-size:14px; font-weight:700; padding:10px 18px; border-radius:8px; transition:background .15s; }
+    .x-share:hover { background:#1a1a1a; }
+    .x-share:visited { color:#fff; }
+    .share-bar { padding:16px 0 8px; border-top:1px solid var(--line); margin-top:24px; }
+  </style>
+</head>
+<body>
+  <div class="topbar"><a class="brand" href="/"><span class="brand-mark">11</span> metric11<span class="season">S&#xfc;per Lig 2026-2027</span></a><nav class="topnav"><a href="/">Gündem</a><a href="season_fixture_predictions_2026_2027.html">🗓️ Fikstür & Tahmin</a><a href="weekly_evaluation_2026_2027.html">📊 Haftalık Karne</a><a href="super-lig-sampiyonluk-oranlari-2026-27.html">🏆 Şampiyonluk</a><a href="transfer_recommendation_report_2025_2026.html">Scout</a><a href="football_intelligence_home.html">Analiz</a><a href="european_predictions_2026_2027.html">⚽ Avrupa</a><a href="/tahmin" style="color:var(--lime);font-weight:700">🎮 Tahmin Oyunu</a><a href="https://tahmin.metric11.com/kadro" style="color:var(--lime);font-weight:700">🏆 Kadro Kur</a><a href="https://tahmin.metric11.com/taraftar" style="color:var(--lime);font-weight:700">🔥 Amigo Ligi</a></nav></div>
+  <div class="report-wrap">
+    <a class="back-link" href="/">Ana sayfaya d&#xf6;n</a>
+    <div style="background:#0a1929;border:1px solid #1e3a5f;border-radius:10px;padding:14px 18px;margin:0 0 20px;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap"><div style="color:#e2e8f0;font-size:13px;font-weight:600">📣 Her gün maç önü, transfer ve tahmin analizi Telegram&#x27;da — kaçırma.</div><a href="https://t.me/metric11tr" target="_blank" rel="noopener" style="background:#cde94e;color:#091810;font-weight:800;font-size:13px;padding:8px 16px;border-radius:8px;text-decoration:none;white-space:nowrap;flex-shrink:0">Telegram&#8217;a Katıl &#8594;</a></div>
+    <h1>2026-27 Tahmin Kalibrasyon Denetimi</h1>
+
+<ul>
+<li>Örneklem: <strong>85 maç</strong></li>
+<li>Yüksek güven politikası: <strong>Yayınlanabilir güçlü seçim</strong></li>
+<li>Orta güven politikası: <strong>Net seçim yok / kararsız maç</strong></li>
+<li>Beraberlik politikası: <strong>Beraberlik modeli zayıf; senaryo olarak göster</strong></li>
+</ul>
+
+<p>&gt; Bu sayfa tanı raporudur. Aynı sezon üzerinde en iyi görünen eşik otomatik olarak üretime alınmaz.</p>
+
+<h2>Olasılık Kovaları</h2>
+
+<table class="md-table"><thead><tr>
+<th>Model olasılığı</th>
+<th>Maç</th>
+<th>İsabet</th>
+<th>Ortalama olasılık</th>
+<th>Kalibrasyon farkı</th>
+<th>%95 güven aralığı</th>
+</tr></thead><tbody>
+<tr>
+<td>%0–%40</td>
+<td>9</td>
+<td>%33.3</td>
+<td>%37.1</td>
+<td>%-3.8</td>
+<td>%12.1–%64.6</td>
+</tr>
+<tr>
+<td>%40–%45</td>
+<td>22</td>
+<td>%40.9</td>
+<td>%42.4</td>
+<td>%-1.5</td>
+<td>%23.3–%61.3</td>
+</tr>
+<tr>
+<td>%45–%50</td>
+<td>18</td>
+<td>%38.9</td>
+<td>%47.0</td>
+<td>%-8.1</td>
+<td>%20.3–%61.4</td>
+</tr>
+<tr>
+<td>%50–%60</td>
+<td>22</td>
+<td>%45.5</td>
+<td>%55.4</td>
+<td>%-9.9</td>
+<td>%26.9–%65.3</td>
+</tr>
+<tr>
+<td>%60–%100</td>
+<td>14</td>
+<td>%85.7</td>
+<td>%64.4</td>
+<td>%21.3</td>
+<td>%60.1–%96.0</td>
+</tr>
+</tbody></table>
+
+<h2>Seçici Yayın Senaryoları</h2>
+
+<table class="md-table"><thead><tr>
+<th>Minimum olasılık</th>
+<th>Kapsam</th>
+<th>Maç</th>
+<th>İsabet</th>
+<th>%95 güven aralığı</th>
+</tr></thead><tbody>
+<tr>
+<td>%40.0</td>
+<td>%89.4</td>
+<td>76</td>
+<td>%50.0</td>
+<td>%39.0–%61.0</td>
+</tr>
+<tr>
+<td>%45.0</td>
+<td>%63.5</td>
+<td>54</td>
+<td>%53.7</td>
+<td>%40.6–%66.3</td>
+</tr>
+<tr>
+<td>%50.0</td>
+<td>%42.4</td>
+<td>36</td>
+<td>%61.1</td>
+<td>%44.9–%75.2</td>
+</tr>
+<tr>
+<td>%55.0</td>
+<td>%29.4</td>
+<td>25</td>
+<td>%72.0</td>
+<td>%52.4–%85.7</td>
+</tr>
+<tr>
+<td>%60.0</td>
+<td>%16.5</td>
+<td>14</td>
+<td>%85.7</td>
+<td>%60.1–%96.0</td>
+</tr>
+</tbody></table>
+
+<h2>Beraberlik Eşik Taraması</h2>
+
+<table class="md-table"><thead><tr>
+<th>Minimum X olasılığı</th>
+<th>İşaretlenen maç</th>
+<th>Yakalanan X</th>
+<th>Uyarı isabeti</th>
+<th>Beraberlik yakalama</th>
+<th>Denge puanı (F1)</th>
+</tr></thead><tbody>
+<tr>
+<td>%22.0</td>
+<td>61</td>
+<td>10</td>
+<td>%16.4</td>
+<td>%66.7</td>
+<td>0.263</td>
+</tr>
+<tr>
+<td>%25.0</td>
+<td>26</td>
+<td>6</td>
+<td>%23.1</td>
+<td>%40.0</td>
+<td>0.293</td>
+</tr>
+<tr>
+<td>%28.0</td>
+<td>7</td>
+<td>2</td>
+<td>%28.6</td>
+<td>%13.3</td>
+<td>0.182</td>
+</tr>
+<tr>
+<td>%30.0</td>
+<td>4</td>
+<td>1</td>
+<td>%25.0</td>
+<td>%6.7</td>
+<td>0.105</td>
+</tr>
+<tr>
+<td>%32.0</td>
+<td>2</td>
+<td>1</td>
+<td>%50.0</td>
+<td>%6.7</td>
+<td>0.118</td>
+</tr>
+<tr>
+<td>%35.0</td>
+<td>0</td>
+<td>0</td>
+<td>%0.0</td>
+<td>%0.0</td>
+<td>0.000</td>
+</tr>
+</tbody></table>
+
+<p>Eşik taramaları aynı sezon sonuçlarında hesaplanır; üretim kuralı seçmek için değil, ileri dönük challenger deneyini tasarlamak için kullanılır.</p>
+
+  </div>
+  <footer style="text-align:center;padding:40px 16px 28px;color:#8a9e92;font-size:12px;border-top:1px solid #e2e8e4;margin-top:48px;">metric11 &middot; <a href="mailto:hello@metric11.com" style="color:#8a9e92;text-decoration:none;border-bottom:1px solid #c5d4ca;">hello@metric11.com</a> &middot; <a href="worldcup_2026_predictions.html" style="color:#8a9e92;text-decoration:none;border-bottom:1px solid #c5d4ca;">🌍 D&#xfc;nya Kupası Tahminleri</a></footer>
+  <script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>

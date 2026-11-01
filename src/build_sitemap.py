@@ -19,6 +19,7 @@ _PUBLIC_PAGES = [
     ("gundem_2025_2026.html", 1.0, "daily"),
     ("season_fixture_predictions_2026_2027.html", 1.0, "daily"),
     ("weekly_evaluation_2026_2027.html", 0.9, "daily"),
+    ("prediction_calibration_audit_2026_2027.html", 0.7, "daily"),
     ("super-lig-sampiyonluk-oranlari-2026-27.html", 1.0, "daily"),
     ("european_predictions_2026_2027.html", 1.0, "daily"),
     ("worldcup_2026_predictions.html", 1.0, "daily"),

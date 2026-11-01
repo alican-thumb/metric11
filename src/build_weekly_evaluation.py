@@ -299,6 +299,8 @@ def build_markdown(payload: dict) -> str:
         "",
         *_pick_side_lines(s.get("pick_side_breakdown", {})),
         "",
+        "[Olasılık kovaları ve seçici yayın politikası →](prediction_calibration_audit_2026_2027.html)",
+        "",
     ]
     if s["evaluated_matches"] == 0:
         lines += ["_Sezon henüz başlamadı; ilk maçlar oynandıkça karne otomatik dolacak._", ""]

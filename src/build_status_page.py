@@ -18,7 +18,7 @@ def main() -> None:
 
 
 def build_status() -> dict:
-    pipeline = _load(PROCESSED_DIR / "daily_pipeline_run_latest.json") or {}
+    pipeline = _load(PROCESSED_DIR / "pipeline_health_2026_2027.json") or _load(PROCESSED_DIR / "daily_pipeline_run_latest.json") or {}
     news = _load(PROCESSED_DIR / f"news_intelligence_{SEASON}.json") or {}
     league = _load(PROCESSED_DIR / f"tff_super_lig_enriched_{SEASON}.json") or []
     model = _load(PROCESSED_DIR / f"league_prediction_model_{SEASON}.json") or {}
@@ -36,6 +36,7 @@ def build_status() -> dict:
     pipeline_total = pipeline.get("command_count", 0)
     pipeline_failed = pipeline.get("failed_count", 0)
     pipeline_age_days = _age_days(pipeline.get("generated_at"))
+    network_age_days = _age_days(pipeline.get("last_network_success_at"))
     pipeline_status = "ok" if pipeline_failed == 0 else ("warn" if pipeline_failed <= 3 else "fail")
     if pipeline_age_days is not None and pipeline_age_days > 3:
         pipeline_status = "fail"
@@ -70,6 +71,9 @@ def build_status() -> dict:
             "failed": pipeline_failed,
             "total": pipeline_total,
             "status": pipeline_status,
+            "run_kind": pipeline.get("run_kind") or ("FULL_NETWORK" if pipeline.get("include_network") else "DERIVED_REFRESH"),
+            "last_network_run": _fmt_date(pipeline.get("last_network_success_at")),
+            "network_age_days": network_age_days,
         },
         "data": {
             "matches_total": len(matches),
@@ -225,6 +229,8 @@ def build_html(d: dict) -> str:
         <div class="row"><span class="row-label">Durum</span><span class="row-value">{_status_dot(p["status"])}</span></div>
         <div class="row"><span class="row-label">Son çalışma</span><span class="row-value">{escape(p["last_run"])}</span></div>
         <div class="row"><span class="row-label">Tazelik</span><span class="row-value">{escape(_freshness_label(p["age_days"]))}</span></div>
+        <div class="row"><span class="row-label">Çalışma türü</span><span class="row-value">{escape(_run_kind_label(p["run_kind"]))}</span></div>
+        <div class="row"><span class="row-label">Son tam veri toplama</span><span class="row-value">{escape(p["last_network_run"])}</span></div>
         <div class="row"><span class="row-label">Hata</span><span class="row-value" style="color:{'var(--red)' if p['failed'] > 0 else 'inherit'}">{p["failed"]} komut</span></div>
       </div>
 
@@ -310,6 +316,10 @@ def _freshness_label(age_days: int | None) -> str:
     if age_days == 0:
         return "bugün"
     return f"{age_days} gün önce"
+
+
+def _run_kind_label(run_kind: str) -> str:
+    return {"FULL_NETWORK": "Tam veri toplama", "DERIVED_REFRESH": "Rapor yenileme"}.get(run_kind, run_kind)
 
 
 if __name__ == "__main__":
