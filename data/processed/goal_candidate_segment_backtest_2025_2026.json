@@ -27,10 +27,10 @@
       "top_5": {
         "top_n": 5,
         "candidate_rows": 150,
-        "hit_rows": 26,
+        "hit_rows": 28,
         "hit_matches": 21,
         "match_hit_rate": 0.7,
-        "row_hit_rate": 0.173
+        "row_hit_rate": 0.187
       },
       "top_8": {
         "top_n": 8,
@@ -43,10 +43,10 @@
       "top_10": {
         "top_n": 10,
         "candidate_rows": 298,
-        "hit_rows": 37,
+        "hit_rows": 36,
         "hit_matches": 24,
         "match_hit_rate": 0.8,
-        "row_hit_rate": 0.124
+        "row_hit_rate": 0.121
       }
     }
   },
@@ -80,16 +80,16 @@
     },
     {
       "segment": "primary",
-      "candidate_rows": 264,
+      "candidate_rows": 262,
       "matches": 29,
-      "hit_rows": 31,
-      "hit_matches": 23,
-      "row_hit_rate": 0.117,
-      "match_hit_rate": 0.793,
-      "top5_candidate_rows": 131,
-      "top5_hit_matches": 18,
-      "top5_match_hit_rate": 0.621,
-      "avg_rank": 5.46,
+      "hit_rows": 30,
+      "hit_matches": 22,
+      "row_hit_rate": 0.115,
+      "match_hit_rate": 0.759,
+      "top5_candidate_rows": 130,
+      "top5_hit_matches": 19,
+      "top5_match_hit_rate": 0.655,
+      "avg_rank": 5.45,
       "example_hits": [
         {
           "match_external_id": "283573",
@@ -116,12 +116,6 @@
           "team_name": "BEŞİKTAŞ A.Ş."
         },
         {
-          "match_external_id": "283628",
-          "rank": 9,
-          "player_name": "DAVID JURASEK",
-          "team_name": "BEŞİKTAŞ A.Ş."
-        },
-        {
           "match_external_id": "283635",
           "rank": 3,
           "player_name": "CENGİZ ÜNDER",
@@ -138,21 +132,27 @@
           "rank": 2,
           "player_name": "KEVIN OGHENETEGA TAMARAEBI BAKUMO ABRAHAM",
           "team_name": "BEŞİKTAŞ A.Ş."
+        },
+        {
+          "match_external_id": "283664",
+          "rank": 4,
+          "player_name": "CENGİZ ÜNDER",
+          "team_name": "BEŞİKTAŞ A.Ş."
         }
       ]
     },
     {
       "segment": "impact_sub",
-      "candidate_rows": 160,
+      "candidate_rows": 162,
       "matches": 29,
       "hit_rows": 23,
       "hit_matches": 18,
-      "row_hit_rate": 0.144,
+      "row_hit_rate": 0.142,
       "match_hit_rate": 0.621,
       "top5_candidate_rows": 103,
       "top5_hit_matches": 15,
       "top5_match_hit_rate": 0.517,
-      "avg_rank": 4.49,
+      "avg_rank": 4.56,
       "example_hits": [
         {
           "match_external_id": "283610",
@@ -206,16 +206,16 @@
     },
     {
       "segment": "set_piece_defender",
-      "candidate_rows": 24,
+      "candidate_rows": 25,
       "matches": 15,
       "hit_rows": 0,
       "hit_matches": 0,
       "row_hit_rate": 0.0,
       "match_hit_rate": 0.0,
-      "top5_candidate_rows": 0,
+      "top5_candidate_rows": 1,
       "top5_hit_matches": 0,
       "top5_match_hit_rate": 0.0,
-      "avg_rank": 8.42,
+      "avg_rank": 8.16,
       "example_hits": []
     }
   ],
@@ -236,22 +236,5 @@
       "action": "Top 5'i güçlendirmek için düşük isabetli segmentleri ilk 5 yerine 6-10 bandına indir."
     }
   ],
-  "weak_candidates": [
-    {
-      "player_name": "ISHOLA JUNIOR  OLAITAN",
-      "candidate_type": "primary",
-      "rows": 8,
-      "hits": 0,
-      "top5_rows": 6,
-      "recommendation": "Top 5 sıralama etkisini düşür veya aday tipini yeniden kontrol et."
-    },
-    {
-      "player_name": "DAVID JURASEK",
-      "candidate_type": "primary+impact_sub",
-      "rows": 12,
-      "hits": 0,
-      "top5_rows": 4,
-      "recommendation": "Top 5 sıralama etkisini düşür veya aday tipini yeniden kontrol et."
-    }
-  ]
+  "weak_candidates": []
 }
