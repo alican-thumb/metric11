@@ -44,6 +44,7 @@ _STYLE = """<style>
 .mp-track{background:#eef3f0;border-radius:6px;height:12px;overflow:hidden}
 .mp-fill{background:#116447;height:100%}.mp-fill.pick{background:#7fb800}
 .mp-pick{display:inline-block;background:#116447;color:#fff;border-radius:6px;padding:4px 10px;font-weight:700;font-size:14px}
+.mp-pick.cautious{background:#9a6700}
 .mp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
 .mp-stat{background:#f6f9f7;border-radius:8px;padding:10px}.mp-stat .v{font-size:20px;font-weight:800}.mp-stat .l{font-size:12px;color:#5b6b62}
 .mp-ok{color:#116447;font-weight:700}.mp-miss{color:#b42318;font-weight:700}
@@ -141,7 +142,7 @@ def _json_ld(m: dict, dt: datetime | None, path: str, week: int) -> str:
     )
 
 
-def _prob_bars(m: dict, pick: str) -> str:
+def _prob_bars(m: dict, pick: str | None) -> str:
     rows = [
         ("home", display_name(m["home_team"]), m.get("home_win_probability")),
         ("draw", "Beraberlik", m.get("draw_probability")),
@@ -158,10 +159,21 @@ def _prob_bars(m: dict, pick: str) -> str:
     return f'<div class="mp-bars">{"".join(out)}</div>'
 
 
-def _summary_sentence(m: dict, pick: str) -> str:
+def _summary_sentence(m: dict, pick: str | None) -> str:
     home, away = display_name(m["home_team"]), display_name(m["away_team"])
     rec = (m.get("recommended_scoreline") or {}).get("score")
     probs = {"home": m.get("home_win_probability"), "draw": m.get("draw_probability"), "away": m.get("away_win_probability")}
+    if pick is None:
+        top_key = max(probs, key=lambda key: probs[key] or 0)
+        tendency = _pick_text(m, top_key)
+        lead = (
+            f"{home} - {away} maçında kalibrasyon eşiğini geçen güçlü bir seçim yok. "
+            f"Model eğilimi {tendency}, ancak olasılık farkı yayın kararı için yeterli değil"
+        )
+        tail = f" (en yüksek olasılık {_pct(probs[top_key])})."
+        if rec:
+            tail += f" En olası skor {rec}."
+        return lead + tail
     lead = {
         "home": f"metric11 modeline göre {home} - {away} maçında favori ev sahibi {home}",
         "away": f"metric11 modeline göre {home} - {away} maçında favori deplasman ekibi {away}",
@@ -202,9 +214,11 @@ def generate_match_og(m: dict, week: int) -> str | None:
         (away, _pct(m.get("away_win_probability"))),
     ], 330)
     rec = (m.get("recommended_scoreline") or {}).get("score")
-    pick = _pick_text(m, m.get("predicted") or "home")
+    published_pick = m.get("published_pick")
+    pick = _pick_text(m, published_pick) if published_pick else (m.get("publication_label") or "Net seçim yok")
     font = og._load_font("Inter-SemiBold.ttf", 26)
-    draw.text((og.W // 2, 470), f"Tahmin: {pick}" + (f" · Olası skor {rec}" if rec else ""), font=font, fill=og._rgb(og.LIME), anchor="mm")
+    prefix = "Tahmin" if published_pick else "Karar"
+    draw.text((og.W // 2, 470), f"{prefix}: {pick}" + (f" · Olası skor {rec}" if rec else ""), font=font, fill=og._rgb(og.LIME), anchor="mm")
     name = og_image_name(m["home_team"], m["away_team"])
     img.save(str(PROCESSED_DIR / name), "PNG")
     return name
@@ -215,14 +229,16 @@ def build_match_page(m: dict, week: int, signals: dict, scorers: dict, week_matc
     home, away = display_name(home_raw), display_name(away_raw)
     path = match_page_path(home_raw, away_raw)
     dt = _parse_dt(m.get("date_time", ""))
-    pick = m.get("predicted") or "home"
+    model_pick = m.get("predicted") or "home"
     played = bool(m.get("is_played"))
+    pick = model_pick if played else m.get("published_pick")
+    publication_label = m.get("publication_label") or "Net seçim yok"
     rec = (m.get("recommended_scoreline") or {}).get("score")
     title = f"{home} - {away} Maç Tahmini ve Skor Tahmini ({_date_text(dt, with_day=False)})"
     if played:
         description = (
             f"{home} {m.get('actual_score')} {away} — Süper Lig {week}. hafta. Maç öncesi metric11 tahmini: "
-            f"{_pick_text(m, pick)} ({_pct(m.get(pick + '_win_probability') if pick != 'draw' else m.get('draw_probability'))})."
+            f"{_pick_text(m, model_pick)} ({_pct(m.get(model_pick + '_win_probability') if model_pick != 'draw' else m.get('draw_probability'))})."
         )
     else:
         description = (
@@ -240,19 +256,20 @@ def build_match_page(m: dict, week: int, signals: dict, scorers: dict, week_matc
 
     if played:
         actual = _actual(m.get("actual_score"))
-        ok = actual == pick
+        ok = actual == model_pick
         verdict = '<span class="mp-ok">✓ Tahmin tuttu</span>' if ok else '<span class="mp-miss">✗ Tahmin tutmadı</span>'
         parts.append(
             f'<div class="mp-card"><h2>Sonuç: {escape(home)} {escape(m.get("actual_score") or "")} {escape(away)}</h2>'
-            f'<p>Maç öncesi tahminimiz: <span class="mp-pick">{escape(_pick_text(m, pick))}</span> &nbsp;{verdict}</p>'
+            f'<p>Maç öncesi tahminimiz: <span class="mp-pick">{escape(_pick_text(m, model_pick))}</span> &nbsp;{verdict}</p>'
             '<p class="mp-note">Aşağıdaki olasılıklar maç başlamadan önce dondurulmuş haliyle gösterilir; '
             'sonradan değiştirilmez. Tüm sonuçlar <a href="weekly_evaluation_2026_2027.html">haftalık isabet karnesinde</a>.</p></div>'
         )
     else:
-        parts.append(
-            f'<div class="mp-card"><h2>Tahmin: <span class="mp-pick">{escape(_pick_text(m, pick))}</span></h2>'
-            f'<p>{escape(_summary_sentence(m, pick))}</p></div>'
-        )
+        if pick:
+            heading = f'Tahmin: <span class="mp-pick">{escape(_pick_text(m, pick))}</span>'
+        else:
+            heading = f'Karar: <span class="mp-pick cautious">{escape(publication_label)}</span>'
+        parts.append(f'<div class="mp-card"><h2>{heading}</h2><p>{escape(_summary_sentence(m, pick))}</p></div>')
 
     parts.append(f'<div class="mp-card"><h2>1X2 olasılıkları</h2>{_prob_bars(m, pick)}</div>')
 
@@ -313,7 +330,8 @@ def build_match_page(m: dict, week: int, signals: dict, scorers: dict, week_matc
         f'<p>{team_links}<a href="season_fixture_predictions_2026_2027.html">Tüm sezon fikstürü</a>'
         '<a href="super-lig-sampiyonluk-oranlari-2026-27.html">Şampiyonluk oranları</a></p></div>'
     )
-    parts.append(_share_button(f"{BASE_URL}/{path}", f"{home} - {away} maç tahmini: {_pick_text(m, pick)} — metric11"))
+    share_pick = _pick_text(m, pick) if pick else publication_label
+    parts.append(_share_button(f"{BASE_URL}/{path}", f"{home} - {away} maç analizi: {share_pick} — metric11"))
     parts.append(
         '<p class="mp-note">Tahminler, takımların son maç formu, gol ve xG ortalamaları, Elo gücü, transfer/kadro '
         'değişimi ve Avrupa yorgunluğu sinyallerini birleştiren istatistiksel bir modelden üretilir; '
@@ -337,10 +355,11 @@ def build_week_page(week: int, matches: list[dict]) -> tuple[str, str]:
     description = f"Trendyol Süper Lig {SEASON_TAG} {week}. hafta {len(matches)} maçın tahminleri: 1X2 olasılıkları, olası skorlar ve gol beklentileri."
     rows = []
     for m in sorted(matches, key=lambda x: _parse_dt(x.get("date_time", "")) or datetime.max):
-        pick = m.get("predicted") or "home"
+        model_pick = m.get("predicted") or "home"
+        pick = model_pick if m.get("is_played") else m.get("published_pick")
         rec = (m.get("recommended_scoreline") or {}).get("score") or "—"
         if m.get("is_played"):
-            ok = _actual(m.get("actual_score")) == pick
+            ok = _actual(m.get("actual_score")) == model_pick
             res = f'{escape(m.get("actual_score") or "")} {"<span class=mp-ok>✓</span>" if ok else "<span class=mp-miss>✗</span>"}'
         else:
             res = escape(rec)
@@ -348,7 +367,9 @@ def build_week_page(week: int, matches: list[dict]) -> tuple[str, str]:
         rows.append(
             f'<tr><td>{escape(f"{dt.day} {_TR_MONTHS[dt.month][:3]} {dt:%H:%M}" if dt else "—")}</td>'
             f'<td><a href="{match_page_path(m["home_team"], m["away_team"])}">{escape(display_name(m["home_team"]))} - {escape(display_name(m["away_team"]))}</a></td>'
-            f'<td>{escape(_pick_text(m, pick))}</td><td>{res}</td></tr>'
+            f'<td>{escape(_pick_text(m, pick) if pick else (m.get("publication_label") or "Net seçim yok"))}'
+            + (f'<div class="mp-note">Eğilim: {escape(_pick_text(m, model_pick))}</div>' if not pick and not m.get("is_played") else "")
+            + f'</td><td>{res}</td></tr>'
         )
     head = "<tr><th>Tarih</th><th>Maç</th><th>Tahmin</th><th>" + ("Skor" if played else "Olası skor") + "</th></tr>"
     summary = ""

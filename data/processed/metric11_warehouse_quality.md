@@ -1,6 +1,6 @@
 # Metric11 SQLite Veri Ambarı Kalite Raporu
 
-- Dosya: `/home/runner/work/metric11/metric11/data/processed/metric11_warehouse.sqlite`
+- Dosya: `/Users/alicanakyol/Documents/analiz/data/processed/metric11_warehouse.sqlite`
 
 ## Tablo Sayıları
 

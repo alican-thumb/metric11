@@ -3497,3 +3497,14 @@ Kullanıcı admin sayfasına giremiyordu (kendi çalıştırdığı sıfırlama 
 - Yayın politikası: HIGH `PUBLISH`; MEDIUM ve LOW `NO_STRONG_PICK`; beraberlik modeli `%20` yakalama nedeniyle `WEAK` ve yalnız senaryo diliyle gösterilmeli. Mevcut maç olasılıkları geriye dönük değiştirilmedi.
 - Haftalık karne yeni kalibrasyon raporuna bağlandı; sitemap güncellendi. Pipeline sırasına kalibrasyon denetimi eklendi.
 - Network'süz tam pipeline **62/62**, son test paketi **74 test + 6 alt test** başarılı.
+
+### 2026-11-02 — Kalibrasyon politikası canlı tahmin kartlarına bağlandı
+
+- Kalibrasyon raporundaki yayın kararı artık yalnız rapor metni değil, fikstür veri sözleşmesinin parçası: `prediction_confidence`, `publication_decision`, `publication_label`, `publication_reason` ve `published_pick` alanları eklendi. Ham `predicted` alanı geçmiş performans ölçümü ve snapshot doğrulaması için aynen korunuyor; bu nedenle yeni yayın filtresi geriye dönük isabet hesabını değiştirmiyor.
+- Politika: HIGH ev/deplasman seçimi `PUBLISH`; MEDIUM ve LOW `NO_STRONG_PICK`; beraberlik seçimi `WEAK`; yeni yükselen takım içeren maçlar güven yüksek görünse bile `NO_STRONG_PICK`. Kalibrasyon dosyası yoksa aynı temkinli varsayılan politika kullanılıyor.
+- Fikstür kartı, ana sayfa "Bu Hafta" modülü, hafta tablosu, maç detay sayfası, paylaşım metni ve maça özel OG görseli bu ayrımı kullanıyor. Güçlü seçim yoksa kullanıcıya yalnız "Net seçim yok" ve altında "Model eğilimi" gösteriliyor; teknik kalibrasyon gerekçesi veri alanında tutuluyor, kullanıcı arayüzüne jargon olarak sızmıyor.
+- 2 Kasım verisi: 89 maç oynandı, 217 maç yaklaşan durumda. Yaklaşanların 76'sı güçlü seçim olarak yayınlanıyor, 141'i iddiasız gösteriliyor. Hafta 10'da kalan Gençlerbirliği-Alanyaspor maçı "Net seçim yok / eğilim: beraberlik" olarak sunuluyor.
+- Kalibrasyon güncellendi: 89 maç / 44 doğru (**%49.44**); HIGH 36/24 (**%66.67**), MEDIUM 28/9 (**%32.14**), LOW 25/11 (**%44.0**). Minimum model olasılığı %55 olan tanısal kesitte 27 maç / **%74.07**, %60 kesitte 16 maç / **%87.5**; bunlar aynı-sezon tanı değerleri, ileriye dönük başarı garantisi değil.
+- Yeni `tests/test_prediction_publication.py`: yüksek güven yayını, MEDIUM gizleme, beraberlik override, yeni takım güvenlik kuralı, dosyadan politika yükleme/fallback ve iddiasız anlatım test edildi. Toplam **80 test** başarılı; `py_compile` ve `git diff --check` temiz.
+- Network'süz günlük üretim zinciri yeni sözleşmeyle uçtan uca çalıştırıldı: **62/62 komut başarılı**, hata yok. Fikstür, kalibrasyon, 306 maç sayfası, 34 hafta sayfası, ana sayfa modülü, sitemap ve sistem durumu yeniden üretildi.
+- Responsive görsel QA: 390x844 mobil görünümde hafta ve maç detay sayfası tarayıcıyla açıldı; `documentElement.scrollWidth == innerWidth == 390`, içerik taşması yok. Maç detayında karar, model eğilimi ve 1X2 olasılıkları ayrı ve okunur görüntülendi.

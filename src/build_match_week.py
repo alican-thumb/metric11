@@ -57,13 +57,23 @@ def build_payload() -> dict:
 
     matches = []
     for m in week["matches"]:
-        pick = m.get("predicted")
-        if pick == "home":
+        model_pick = m.get("predicted")
+        published_pick = m.get("published_pick")
+        display_pick = model_pick if m.get("is_played") else published_pick
+        if display_pick == "home":
             pick_text = m["home_team"]
-        elif pick == "away":
+        elif display_pick == "away":
             pick_text = m["away_team"]
-        else:
+        elif display_pick == "draw":
             pick_text = "Beraberlik"
+        else:
+            pick_text = m.get("publication_label") or "Net seçim yok"
+        if model_pick == "home":
+            model_pick_text = m["home_team"]
+        elif model_pick == "away":
+            model_pick_text = m["away_team"]
+        else:
+            model_pick_text = "Beraberlik"
         matches.append({
             "match_id": m.get("match_id"),
             "date": _fmt_date(m.get("date_time", "")),
@@ -71,8 +81,13 @@ def build_payload() -> dict:
             "away_team": m.get("away_team"),
             "is_played": m.get("is_played"),
             "actual_score": m.get("actual_score"),
-            "predicted": pick,
+            "predicted": model_pick,
+            "published_pick": published_pick,
+            "publication_decision": m.get("publication_decision"),
+            "publication_label": m.get("publication_label"),
+            "publication_reason": m.get("publication_reason"),
             "pick_text": pick_text,
+            "model_pick_text": model_pick_text,
             "home_win_probability": m.get("home_win_probability"),
             "draw_probability": m.get("draw_probability"),
             "away_win_probability": m.get("away_win_probability"),
@@ -132,7 +147,8 @@ def render_hero_html(payload: dict | None = None) -> str:
         if m.get("is_played"):
             right = f'<span style="font-weight:800;color:#132018;">{escape(m.get("actual_score") or "")}</span><span style="font-size:11px;color:#8fa89a;margin-left:6px;">oynandı</span>'
         else:
-            color = _pick_class(m.get("predicted"))
+            published_pick = m.get("published_pick")
+            color = _pick_class(published_pick) if published_pick else "#9a6700"
             probs = (
                 f'<span style="color:#116447;">Ev %{round((m.get("home_win_probability") or 0)*100)}</span> · '
                 f'<span style="color:#627067;">X %{round((m.get("draw_probability") or 0)*100)}</span> · '
@@ -164,9 +180,14 @@ def render_hero_html(payload: dict | None = None) -> str:
             right = (
                 f'<span style="display:inline-block;font-size:12px;font-weight:700;color:#fff;'
                 f'background:{color};padding:3px 9px;border-radius:5px;">{escape(m.get("pick_text") or "")}</span>'
-                f'<div style="font-size:11px;color:#627067;margin-top:4px;">{probs}</div>'
-                f'{score_line}'
-                f'{sig_line}'
+                + (
+                    f'<div style="font-size:10px;color:#8fa89a;margin-top:3px;">Model eğilimi: '
+                    f'{escape(m.get("model_pick_text") or "")}</div>'
+                    if not published_pick else ""
+                )
+                + f'<div style="font-size:11px;color:#627067;margin-top:4px;">{probs}</div>'
+                + score_line
+                + sig_line
             )
         rows.append(
             f'<div style="display:flex;justify-content:space-between;align-items:center;gap:12px;'
