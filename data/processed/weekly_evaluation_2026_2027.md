@@ -4,12 +4,12 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 
 ## Genel Karne
 
-- Değerlendirilen maç: **89**
-- İsabet: **44/89** (%49)
+- Değerlendirilen maç: **90**
+- İsabet: **44/90** (%49)
 - Beraberlik yakalama: **3/16** (%19)
 - Yüksek güvenli maç isabeti: **24/36** (%67)
-- Brier score: **0.592** (düşük daha iyi; 2025-26 referans 0.600)
-- Log loss: **0.989** (düşük daha iyi; 2025-26 referans 1.005)
+- Brier score: **0.594** (düşük daha iyi; 2025-26 referans 0.600)
+- Log loss: **0.992** (düşük daha iyi; 2025-26 referans 1.005)
 
 ### Güven bandı kalibrasyonu
 
@@ -19,7 +19,7 @@ _"Beyan edilen ort. olasılık" ile "İsabet" arasındaki fark büyükse (özell
 | --- | --- | --- | --- | --- | --- | --- |
 | HIGH | 36 | 24/36 (%67) | %60 | 0.476 | 0.828 | %64 / 0.516 / 0.885 |
 | MEDIUM | 28 | 9/28 (%32) | %46 | 0.684 | 1.112 | %54 / 0.619 / 1.032 |
-| LOW | 25 | 11/25 (%44) | %38 | 0.654 | 1.082 | %48 / 0.670 / 1.103 |
+| LOW | 26 | 11/26 (%42) | %38 | 0.659 | 1.091 | %48 / 0.670 / 1.103 |
 
 ### Seçilen tarafa göre isabet
 
@@ -28,12 +28,12 @@ _Model hangi tarafı seçtiğinde ne oldu? Belirli bir seçimde (ör. deplasman 
 | Seçim | Maç | İsabet | Gerçekleşen (Ev / X / Dep) |
 | --- | --- | --- | --- |
 | Ev | 50 | 28/50 (%56) | 28 / 7 / 15 |
-| Beraberlik | 8 | 3/8 (%38) | 2 / 3 / 3 |
+| Beraberlik | 9 | 3/9 (%33) | 3 / 3 / 3 |
 | Deplasman | 31 | 13/31 (%42) | 12 / 6 / 13 |
 
 [Olasılık kovaları ve seçici yayın politikası →](prediction_calibration_audit_2026_2027.html)
 
-## Hafta 10 — 5/8 isabet (%62)
+## Hafta 10 — 5/9 isabet (%56)
 
 | Maç | Skor | Tahmin | Sonuç | Güven |
 | --- | --- | --- | --- | --- |
@@ -45,6 +45,7 @@ _Model hangi tarafı seçtiğinde ne oldu? Belirli bir seçimde (ör. deplasman 
 | TRABZONSPOR A.Ş. - GAZİANTEP FUTBOL KULÜBÜ A.Ş. | 2 - 0 | Ev | ✅ | HIGH |
 | İSTANBUL BAŞAKŞEHİR FK - SAMSUNSPOR A.Ş. | 5 - 2 | Ev | ✅ | MEDIUM |
 | KASIMPAŞA A.Ş. - BEŞİKTAŞ A.Ş. | 2 - 2 | Deplasman | ❌ | LOW |
+| GENÇLERBİRLİĞİ - CORENDON ALANYASPOR | 5 - 0 | Beraberlik | ❌ | LOW |
 
 ## Hafta 9 — 5/9 isabet (%56)
 

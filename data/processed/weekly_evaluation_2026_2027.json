@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-11-03T11:54:12.796876",
+  "generated_at": "2026-11-03T14:05:19.398387",
   "season": "2026-2027",
   "summary": {
-    "evaluated_matches": 89,
+    "evaluated_matches": 90,
     "correct": 44,
-    "accuracy": 0.4944,
+    "accuracy": 0.4889,
     "actual_draws": 16,
     "draws_caught": 3,
     "draw_recall": 0.1875,
     "high_conf_matches": 36,
     "high_conf_correct": 24,
     "high_conf_accuracy": 0.6667,
-    "brier_score": 0.5916,
-    "log_loss": 0.9888,
+    "brier_score": 0.5939,
+    "log_loss": 0.9923,
     "confidence_breakdown": {
       "HIGH": {
         "matches": 36,
@@ -33,13 +33,13 @@
         "log_loss": 1.1124
       },
       "LOW": {
-        "matches": 25,
+        "matches": 26,
         "correct": 11,
-        "accuracy": 0.44,
-        "avg_stated_probability": 0.3771,
-        "calibration_gap": 0.0629,
-        "brier_score": 0.6539,
-        "log_loss": 1.0823
+        "accuracy": 0.4231,
+        "avg_stated_probability": 0.3758,
+        "calibration_gap": 0.0473,
+        "brier_score": 0.6594,
+        "log_loss": 1.0909
       }
     },
     "pick_side_breakdown": {
@@ -54,11 +54,11 @@
         }
       },
       "draw": {
-        "matches": 8,
+        "matches": 9,
         "correct": 3,
-        "accuracy": 0.375,
+        "accuracy": 0.3333,
         "actual": {
-          "home": 2,
+          "home": 3,
           "draw": 3,
           "away": 3
         }
@@ -79,17 +79,17 @@
   "last_week": {
     "week": 10,
     "summary": {
-      "evaluated_matches": 8,
+      "evaluated_matches": 9,
       "correct": 5,
-      "accuracy": 0.625,
+      "accuracy": 0.5556,
       "actual_draws": 2,
       "draws_caught": 1,
       "draw_recall": 0.5,
       "high_conf_matches": 4,
       "high_conf_correct": 3,
       "high_conf_accuracy": 0.75,
-      "brier_score": 0.5001,
-      "log_loss": 0.8576,
+      "brier_score": 0.5332,
+      "log_loss": 0.9074,
       "confidence_breakdown": {
         "HIGH": {
           "matches": 4,
@@ -110,13 +110,13 @@
           "log_loss": 0.9223
         },
         "LOW": {
-          "matches": 2,
+          "matches": 3,
           "correct": 0,
           "accuracy": 0.0,
-          "avg_stated_probability": 0.3895,
-          "calibration_gap": -0.3895,
-          "brier_score": 0.7145,
-          "log_loss": 1.1734
+          "avg_stated_probability": 0.3747,
+          "calibration_gap": -0.3747,
+          "brier_score": 0.7423,
+          "log_loss": 1.2175
         }
       },
       "pick_side_breakdown": {
@@ -131,11 +131,11 @@
           }
         },
         "draw": {
-          "matches": 1,
+          "matches": 2,
           "correct": 1,
-          "accuracy": 1.0,
+          "accuracy": 0.5,
           "actual": {
-            "home": 0,
+            "home": 1,
             "draw": 1,
             "away": 0
           }
@@ -280,6 +280,22 @@
         "home_win_probability": 0.333,
         "draw_probability": 0.26,
         "away_win_probability": 0.406
+      },
+      {
+        "match_id": "317869",
+        "date_time": "02.11.2026 20:00",
+        "home_team": "GENÇLERBİRLİĞİ",
+        "away_team": "CORENDON ALANYASPOR",
+        "actual_score": "5 - 0",
+        "actual": "home",
+        "predicted": "draw",
+        "raw_predicted": "away",
+        "correct": false,
+        "data_confidence": "PLAYED",
+        "prediction_confidence": "LOW",
+        "home_win_probability": 0.271,
+        "draw_probability": 0.345,
+        "away_win_probability": 0.384
       }
     ]
   },
@@ -2294,17 +2310,17 @@
     {
       "week": 10,
       "summary": {
-        "evaluated_matches": 8,
+        "evaluated_matches": 9,
         "correct": 5,
-        "accuracy": 0.625,
+        "accuracy": 0.5556,
         "actual_draws": 2,
         "draws_caught": 1,
         "draw_recall": 0.5,
         "high_conf_matches": 4,
         "high_conf_correct": 3,
         "high_conf_accuracy": 0.75,
-        "brier_score": 0.5001,
-        "log_loss": 0.8576,
+        "brier_score": 0.5332,
+        "log_loss": 0.9074,
         "confidence_breakdown": {
           "HIGH": {
             "matches": 4,
@@ -2325,13 +2341,13 @@
             "log_loss": 0.9223
           },
           "LOW": {
-            "matches": 2,
+            "matches": 3,
             "correct": 0,
             "accuracy": 0.0,
-            "avg_stated_probability": 0.3895,
-            "calibration_gap": -0.3895,
-            "brier_score": 0.7145,
-            "log_loss": 1.1734
+            "avg_stated_probability": 0.3747,
+            "calibration_gap": -0.3747,
+            "brier_score": 0.7423,
+            "log_loss": 1.2175
           }
         },
         "pick_side_breakdown": {
@@ -2346,11 +2362,11 @@
             }
           },
           "draw": {
-            "matches": 1,
+            "matches": 2,
             "correct": 1,
-            "accuracy": 1.0,
+            "accuracy": 0.5,
             "actual": {
-              "home": 0,
+              "home": 1,
               "draw": 1,
               "away": 0
             }
@@ -2495,6 +2511,22 @@
           "home_win_probability": 0.333,
           "draw_probability": 0.26,
           "away_win_probability": 0.406
+        },
+        {
+          "match_id": "317869",
+          "date_time": "02.11.2026 20:00",
+          "home_team": "GENÇLERBİRLİĞİ",
+          "away_team": "CORENDON ALANYASPOR",
+          "actual_score": "5 - 0",
+          "actual": "home",
+          "predicted": "draw",
+          "raw_predicted": "away",
+          "correct": false,
+          "data_confidence": "PLAYED",
+          "prediction_confidence": "LOW",
+          "home_win_probability": 0.271,
+          "draw_probability": 0.345,
+          "away_win_probability": 0.384
         }
       ]
     }
