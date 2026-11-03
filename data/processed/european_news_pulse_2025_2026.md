@@ -1,14 +1,13 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-11-03T00:56:12.694254+00:00
-Toplam ilgili haber: 30
+Üretim zamanı: 2026-11-03T03:30:42.691579+00:00
+Toplam ilgili haber: 28
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
-- [Cristian Chivu: Feyenoord karşısında zor bir maç bizi bekliyor](https://www.aksam.com.tr/spor/cristian-chivu-feyenoord-karsisinda-zor-bir-mac-bizi-bekliyor/haber-1711259) — Aksam Spor · 2026-11-02T21:41:00+03:00 · turnuva=CL · kulüp=—
+- [Hoparlör paylaşımı sonrası özür dilediler!](https://www.haberturk.com/spor/stuttgart-cephesinden-galatasaray-taraftari-icin-ozur-aciklamasi-hoparlor-paylasimina-tepki-gelmisti-3924445) — Haberturk Spor · 2026-11-02T22:06:01+00:00 · turnuva=CL · kulüp=Galatasaray
 - [Stuttgart, Galatasaray maçına hazır!](https://www.sabah.com.tr/spor/futbol/2026/11/02/stuttgart-galatasaray-macina-hazir) — Sabah Spor · 2026-11-02T21:31:47+03:00 · turnuva=CL · kulüp=Galatasaray
-- [Stuttgart, Galatasaray maçı hazırlıklarını tamamladı](https://www.aksam.com.tr/spor/stuttgart-galatasaray-maci-hazirliklarini-tamamladi/haber-1711252) — Aksam Spor · 2026-11-02T20:15:00+03:00 · turnuva=CL · kulüp=Galatasaray
 - [Stuttgart'ın teknik direktörü Hoeness: Bizim için zorlu bir maç olacak](https://www.aa.com.tr/tr/spor/stuttgartin-teknik-direktoru-hoeness-bizim-icin-zorlu-bir-mac-olacak/4109039) — Anadolu Ajansı Spor · 2026-11-02T19:54:09+03:00 · turnuva=CL · kulüp=Galatasaray
 - [CELTIC BEŞİKTAŞ MAÇI NE ZAMAN? UEFA Avrupa Ligi Celtic Beşiktaş Maçı Saat Kaçta, Hangi Kanalda? Orkun Kökçü Oynayacak Mı?](https://www.cnnturk.com/spor/futbol/avrupa-ligi-celtic-besiktas-maci-ne-zaman-celtic-besiktas-uefa-avrupa-ligi-maci-saat-kacta-hangi-kanalda-orkun-kokcu-oynayacak-mi-3485734) — CNN Türk Spor · 2026-11-02T17:43:50+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [FENERBAHÇE LIVERPOOL MAÇI NE ZAMAN, HANGİ GÜN? UEFA Şampiyonlar Ligi Fenerbahçe Liverpool maçı saat kaçta başlayacak, şifresiz mi? Kadıköy'deki kritik maç öncesi son durum ne?](https://www.cnnturk.com/spor/futbol/fenerbahce-liverpool-maci-ne-zaman-hangi-gun-uefa-sampiyonlar-ligi-fenerbahce-liverpool-maci-saat-kacta-baslayacak-sifresiz-mi-3487787) — CNN Türk Spor · 2026-11-02T17:43:22+00:00 · turnuva=CL · kulüp=Fenerbahçe
@@ -33,6 +32,5 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Fenerbahçe - Liverpool maçının hakemi açıklandı!](https://www.hurriyet.com.tr/sporarena/fenerbahce-liverpool-macinin-hakemi-aciklandi-43363239) — Hürriyet Spor · 2026-11-02T09:32:00+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Galatasaray Şampiyonlar Ligi'nde Stuttgart'ı ağırlayacak](https://www.hurriyet.com.tr/sporarena/galatasaray-sampiyonlar-liginde-stuttgarti-agirlayacak-43363089) — Hürriyet Spor · 2026-11-02T08:17:00+00:00 · turnuva=CL · kulüp=Galatasaray
 - [Devler Ligi'nde kritik randevu: G.Saray-Stuttgart](https://www.haberturk.com/spor/foto/galatasaray-stuttgart-maci-ne-zaman-saat-kacta-hangi-kanalda-canli-yayinlanacak-3924253) — Haberturk Spor · 2026-11-02T07:57:50+00:00 · turnuva=CL · kulüp=Galatasaray
-- [Fenerbahçe gündem yeni teknik direktör! Şampiyonlar Ligi'nden aday var - Fotomaç](https://news.google.com/rss/articles/CBMivwFBVV95cUxOcUg4N0pQTV83cHFfZHpVOEtpMXJyMWNLTWsxZDlodVB2TjQ3UjFUUkEtX3hHZUFhZ2x2SWplYV9zNzUyNEp3RzlxeWNBLW5KNHdhcnUxVmg4UUY1aW1FNjl4Q1ZSV0xka1BLN2ZZRUVpUHhWdXRHRUgwR01LNFNmRUoyb0hoc2hoREpqWEhfQVl3ZTVIRWpxSC0zWUhjVmlPLUtDaGRqSDJoRUJPMVdLWVRsWVJ3dGgwWXd5b0JSMNIBxAFBVV95cUxNMmFGWkxhMlVDZnJtUkhreTd2X2E4d1NEUmhQcHMyODlFSGtINzUxTnMxdXQydHYxMlhpdVBCRDdWUnBfYWxiYVl2YzdVSlN5R0xfc3hmejRZMkNlbzZTb3VObi1tVW1aUkFQbVJDNFdoMjBhY3pHREpqcDlMUXJyMk4tRV8zMDVCRG41djZ3VnNaajhmalJ2ck1vUi1WdWR6S3RrMU00WnpDRmp1WVk3a29ORnhxWWlGUTNPSFhNZXNPdUg5?oc=5) — Fotomaç · 2026-11-02T07:20:58+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Galatasaray - Stuttgart maçında İngiliz hakem düdük çalacak](https://www.cnnturk.com/spor/futbol/galatasaray-stuttgart-macinda-ingiliz-hakem-duduk-calacak-3487430) — CNN Türk Spor · 2026-11-01T14:06:31+00:00 · turnuva=CL · kulüp=Galatasaray
 - [Miguel Cardoso ve Elisha Owusu ile resmî sözleşme imzaladık.](https://erzurumsporfk.org/2026/08/19/miguel-cardoso-ve-elisha-owusu-ile-resmi-sozlesme-imzaladik/) — Erzurumspor FK Resmi Web · 2026-08-19T20:45:50+03:00 · turnuva=EL · kulüp=Kayserispor
