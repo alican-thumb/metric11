@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-11-03T11:54:12.851435",
+  "generated_at": "2026-11-03T14:05:19.494997",
   "season": "2026-2027",
-  "sample_size": 89,
+  "sample_size": 90,
   "diagnostic_only": true,
   "summary": {
-    "evaluated_matches": 89,
+    "evaluated_matches": 90,
     "correct": 44,
-    "accuracy": 0.4944,
+    "accuracy": 0.4889,
     "actual_draws": 16,
     "draws_caught": 3,
     "draw_recall": 0.1875,
     "high_conf_matches": 36,
     "high_conf_correct": 24,
     "high_conf_accuracy": 0.6667,
-    "brier_score": 0.5916,
-    "log_loss": 0.9888,
+    "brier_score": 0.5939,
+    "log_loss": 0.9923,
     "confidence_breakdown": {
       "HIGH": {
         "matches": 36,
@@ -35,13 +35,13 @@
         "log_loss": 1.1124
       },
       "LOW": {
-        "matches": 25,
+        "matches": 26,
         "correct": 11,
-        "accuracy": 0.44,
-        "avg_stated_probability": 0.3771,
-        "calibration_gap": 0.0629,
-        "brier_score": 0.6539,
-        "log_loss": 1.0823
+        "accuracy": 0.4231,
+        "avg_stated_probability": 0.3758,
+        "calibration_gap": 0.0473,
+        "brier_score": 0.6594,
+        "log_loss": 1.0909
       }
     },
     "pick_side_breakdown": {
@@ -56,11 +56,11 @@
         }
       },
       "draw": {
-        "matches": 8,
+        "matches": 9,
         "correct": 3,
-        "accuracy": 0.375,
+        "accuracy": 0.3333,
         "actual": {
-          "home": 2,
+          "home": 3,
           "draw": 3,
           "away": 3
         }
@@ -99,14 +99,14 @@
     {
       "lower": 0.0,
       "upper": 0.4,
-      "matches": 9,
+      "matches": 10,
       "correct": 3,
-      "accuracy": 0.3333,
-      "avg_top_probability": 0.3714,
-      "calibration_gap": -0.0381,
+      "accuracy": 0.3,
+      "avg_top_probability": 0.3727,
+      "calibration_gap": -0.0727,
       "accuracy_ci_95": [
-        0.1206,
-        0.6458
+        0.1078,
+        0.6032
       ]
     },
     {
@@ -174,7 +174,7 @@
         0.6189
       ],
       "minimum_probability": 0.4,
-      "coverage": 0.8989
+      "coverage": 0.8889
     },
     {
       "matches": 57,
@@ -187,7 +187,7 @@
         0.6823
       ],
       "minimum_probability": 0.45,
-      "coverage": 0.6404
+      "coverage": 0.6333
     },
     {
       "matches": 38,
@@ -200,7 +200,7 @@
         0.7662
       ],
       "minimum_probability": 0.5,
-      "coverage": 0.427
+      "coverage": 0.4222
     },
     {
       "matches": 27,
@@ -213,7 +213,7 @@
         0.8683
       ],
       "minimum_probability": 0.55,
-      "coverage": 0.3034
+      "coverage": 0.3
     },
     {
       "matches": 16,
@@ -226,49 +226,49 @@
         0.965
       ],
       "minimum_probability": 0.6,
-      "coverage": 0.1798
+      "coverage": 0.1778
     }
   ],
   "draw_thresholds": [
     {
       "minimum_draw_probability": 0.22,
-      "flagged_matches": 64,
+      "flagged_matches": 65,
       "draw_hits": 11,
-      "precision": 0.1719,
+      "precision": 0.1692,
       "recall": 0.6875,
-      "f1": 0.275
+      "f1": 0.2716
     },
     {
       "minimum_draw_probability": 0.25,
-      "flagged_matches": 28,
+      "flagged_matches": 29,
       "draw_hits": 7,
-      "precision": 0.25,
+      "precision": 0.2414,
       "recall": 0.4375,
-      "f1": 0.3182
+      "f1": 0.3111
     },
     {
       "minimum_draw_probability": 0.28,
-      "flagged_matches": 8,
+      "flagged_matches": 9,
       "draw_hits": 2,
-      "precision": 0.25,
+      "precision": 0.2222,
       "recall": 0.125,
-      "f1": 0.1667
+      "f1": 0.16
     },
     {
       "minimum_draw_probability": 0.3,
-      "flagged_matches": 4,
+      "flagged_matches": 5,
       "draw_hits": 1,
-      "precision": 0.25,
+      "precision": 0.2,
       "recall": 0.0625,
-      "f1": 0.1
+      "f1": 0.0952
     },
     {
       "minimum_draw_probability": 0.32,
-      "flagged_matches": 2,
+      "flagged_matches": 3,
       "draw_hits": 1,
-      "precision": 0.5,
+      "precision": 0.3333,
       "recall": 0.0625,
-      "f1": 0.1111
+      "f1": 0.1053
     },
     {
       "minimum_draw_probability": 0.35,
