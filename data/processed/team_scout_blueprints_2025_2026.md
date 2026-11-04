@@ -87,10 +87,10 @@
 
 ## GENÇLERBİRLİĞİ
 
-- Güç: 45.6 | GF: 0.778 | GA: 2.0 | kart: 2.12
+- Güç: 45.6 | GF: 1.2 | GA: 1.8 | kart: 2.12
 - Zafiyet: skor üretim sorunu, deplasman zayıf, düşük şut baskısı
 - Scout ipucu: Ceza sahası koşusu ve bitiricilik üreten forvet/kanat
-- Santrfor / skor yükü: Skor üretim problemi için bitirici profil; mevcut gol ortalaması 0.778. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, FELIPE AUGUSTO DA SILVA
+- Santrfor / skor yükü: Skor üretim problemi için bitirici profil; mevcut gol ortalaması 1.2. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, FELIPE AUGUSTO DA SILVA
 - Sol açık / çizgi kırıcı: Deplasman veya üretim zafiyetinde çizgi kıran/taşıyıcı hücum profili gerekir. Adaylar: KACPER SZYMON KOZLOWSKI, DORGELES NENE, ERNEST MUÇİ
 - 8 numara / fizik motoru: Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir. Adaylar: ALEXANDRU IULIAN MAXIM, QAZIM LACI, ORKUN KÖKÇÜ
 - Bek / çift yönlü koridor: Kanat savunması ve geçiş gücünü aynı anda destekleyecek çift yönlü bek profili gerekir. Adaylar: YHOAN MANY ANDZOUANA, ROLAND SALLAI, RUAN PEREIRA DUARTE
@@ -107,13 +107,13 @@
 
 ## CORENDON ALANYASPOR
 
-- Güç: 44.1 | GF: 1.0 | GA: 1.222 | kart: 2.38
+- Güç: 44.1 | GF: 0.9 | GA: 1.6 | kart: 2.38
 - Zafiyet: deplasman zayıf, düşük şut baskısı
 - Scout ipucu: Geçiş oyunu taşıyacak fiziksel orta saha/kanat
 - 8 numara / fizik motoru: Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir. Adaylar: ALEXANDRU IULIAN MAXIM, QAZIM LACI, ORKUN KÖKÇÜ
 - Sol açık / çizgi kırıcı: Deplasman veya üretim zafiyetinde çizgi kıran/taşıyıcı hücum profili gerekir. Adaylar: KACPER SZYMON KOZLOWSKI, DORGELES NENE, ERNEST MUÇİ
 - Bek / çift yönlü koridor: Kanat savunması ve geçiş gücünü aynı anda destekleyecek çift yönlü bek profili gerekir. Adaylar: YHOAN MANY ANDZOUANA, ROLAND SALLAI, RIDVAN YILMAZ
-- Santrfor / skor yükü: Skor üretim problemi için bitirici profil; mevcut gol ortalaması 1.0. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, FELIPE AUGUSTO DA SILVA
+- Santrfor / skor yükü: Skor üretim problemi için bitirici profil; mevcut gol ortalaması 0.9. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, FELIPE AUGUSTO DA SILVA
 
 ## GÖZTEPE A.Ş.
 

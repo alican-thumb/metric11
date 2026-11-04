@@ -1,11 +1,11 @@
 # TFF Oyuncu Profilleri
 
 - Takım filtresi: Yok
-- Profil sayısı: 498
+- Profil sayısı: 499
 - Hata sayısı: 0
 - Ortalama yaş: 25.7
 - Ortalama kalan sözleşme ayı: 21.1
-- 23 yaş ve altı oyuncu: 176
+- 23 yaş ve altı oyuncu: 177
 - 13 ay içinde sözleşmesi bitecek oyuncu: 190
 
 ## Genç Oyuncular
@@ -21,6 +21,7 @@
 - İSMAİL DUYU (AMED SPORTİF FAALİYETLER): yaş=17, sözleşme bitiş=Yok
 - AHMET SALİH ARICI (KASIMPAŞA A.Ş.): yaş=18, sözleşme bitiş=Yok
 - ALİ OSMAN KALIN (GAZİANTEP FUTBOL KULÜBÜ A.Ş.): yaş=18, sözleşme bitiş=2027-06-30
+- BİLAL SARI (GENÇLERBİRLİĞİ): yaş=18, sözleşme bitiş=Yok
 - CEMİLHAN ASLAN (GAZİANTEP FUTBOL KULÜBÜ A.Ş.): yaş=18, sözleşme bitiş=2027-06-30
 - EFE YİĞİT ÜSTÜN (SAMSUNSPOR A.Ş.): yaş=18, sözleşme bitiş=2028-06-30
 - EYMEN KARATAŞ (CORENDON ALANYASPOR): yaş=18, sözleşme bitiş=Yok
@@ -39,7 +40,6 @@
 - ARDA ÖZYAR (KOCAELİSPOR): yaş=19, sözleşme bitiş=2031-06-30
 - ARDA ÜNYAY (GALATASARAY A.Ş.): yaş=19, sözleşme bitiş=2028-06-30
 - AROUNA KIGBAFORY SORO (CORENDON ALANYASPOR): yaş=19, sözleşme bitiş=2031-06-30
-- BERK KIZILDEMİR (AMED SPORTİF FAALİYETLER): yaş=19, sözleşme bitiş=2029-06-30
 
 ## Sözleşme Fırsatları
 
