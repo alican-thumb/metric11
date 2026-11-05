@@ -1,6 +1,6 @@
 # Erken Haber Kaynak Performansı
 
-- Transfer sinyali: 19
+- Transfer sinyali: 16
 - Resmi olaya dönüşen transfer: 16
 - Yayın zamanı bulunan resmi teyit: 5/16
 - İlk görülme zamanı bulunan resmi teyit: 16/16
@@ -8,11 +8,11 @@
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 11
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 4722
+- Defterde korunan ilk iddia gözlemi: 4723
 
 ## Kanal Kapsamı
 
-- Google News: 95 haber, 30/30 başarılı sorgu.
+- Google News: 98 haber, 30/30 başarılı sorgu.
 - Telegram: 6 mesaj, 8/8 erişilebilir kanal.
 - X: durum=MISSING_CREDENTIALS, gönderi=0, yapılandırılmış hesap=45.
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 4719 | 1429 | 13 | — | 910.9 | %99.1 | 0.7 | FIRST_SEEN_BOUND |
+| Google News / medya | 4720 | 1430 | 13 | — | 910.9 | %99.1 | 0.7 | FIRST_SEEN_BOUND |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -276,6 +276,7 @@
 | Goal.com | MEDIA | 5 | 0 | 0 | — | — | — | — | OBSERVING |
 | Günebakış Gazetesi Trabzon | MEDIA | 4 | 1 | 0 | — | — | — | — | OBSERVING |
 | sozcu.com.tr | MEDIA | 4 | 0 | 0 | — | — | — | — | OBSERVING |
+| Kuzey Ekspres | MEDIA | 3 | 1 | 0 | — | — | — | — | OBSERVING |
 | haber61.net | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
 | 24saatgazetesi.com | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | 61saat.com | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
@@ -293,7 +294,6 @@
 | Konya Yenigün Gazetesi | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Konya'nın Sesi | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Kurtalan Gazetesi | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
-| Kuzey Ekspres | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Merhaba Gazetesi | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Mücadele Gazetesi | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Patronlar Dünyası | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
