@@ -1,13 +1,13 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-11-06T19:20:18.137323+00:00
-Toplam ilgili haber: 68
+Üretim zamanı: 2026-11-06T23:07:19.335718+00:00
+Toplam ilgili haber: 60
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
-- [Portekiz'den Ronaldo kararı! 7 numara emekli edilemeyecek](https://www.aksam.com.tr/spor/portekizden-ronaldo-karari-7-numara-emekli-edilemeyecek/haber-1712501) — Aksam Spor · 2026-11-06T20:06:00+03:00 · turnuva=— · kulüp=—
-- [Trabzonspor'da Ernest Muçi'ye Uluslar Ligi daveti!](https://www.sabah.com.tr/spor/futbol/2026/11/06/trabzonsporda-ernest-muciye-uluslar-ligi-daveti) — Sabah Spor · 2026-11-06T17:20:28+03:00 · turnuva=— · kulüp=Trabzonspor
+- [Bizim Çocuklar'ın rakiplerinden Fransa'nın aday kadrosu açıklandı](https://www.aksam.com.tr/spor/bizim-cocuklarin-rakiplerinden-fransanin-aday-kadrosu-aciklandi/haber-1712547) — Aksam Spor · 2026-11-07T01:21:00+03:00 · turnuva=— · kulüp=—
+- [TÜRKİYE BELÇİKA MAÇI NE ZAMAN? Türkiye Belçika Maçı Saat Kaçta Ve Hangi Kanalda? Geri Sayım Başladı!](https://www.cnnturk.com/spor/futbol/turkiye-belcika-maci-ne-zaman-turkiye-belcika-maci-saat-kacta-ve-hangi-kanalda-geri-sayim-basladi-3490111) — CNN Türk Spor · 2026-11-07T00:02:17+00:00 · turnuva=— · kulüp=—
 - [A Milli Takım'da aday kadroya çağrılan Serhat Öztaşdelen'in sevinci kameraya yansıdı](https://www.takvim.com.tr/spor/2026/11/06/serhat-oztasdelenin-sevinci-kamerada) — Takvim Spor · 2026-11-06T17:07:07+03:00 · turnuva=— · kulüp=Kocaelispor
 - [TÜRKİYE - BELÇİKA MAÇI NE ZAMAN? Milli maç saat kaçta? A Milli Takım'ın kritik sınavı hangi gün oynanacak? UEFA Uluslar A Ligi'nde gözler ay-yıldızlılarda](https://www.cnnturk.com/spor/futbol/turkiye-belcika-maci-ne-zaman-milli-mac-saat-kacta-a-milli-takimin-kritik-sinavi-hangi-gun-oynanacak-uefa-uluslar-a-liginde-3487933) — CNN Türk Spor · 2026-11-06T15:50:08+00:00 · turnuva=— · kulüp=—
 - [SHAKHTAR DONETSK - FENERBAHÇE MAÇI NE ZAMAN? Shakhtar Donetsk - Fenerbahçe maçı nerede oynanacak?](https://www.cnnturk.com/spor/futbol/shakhtar-donetsk-fenerbahce-maci-ne-zaman-shakhtar-donetsk-fenerbahce-maci-nerede-oynanacak-3489845) — CNN Türk Spor · 2026-11-06T15:49:55+00:00 · turnuva=CL · kulüp=Fenerbahçe
@@ -25,8 +25,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Archie Brown, Iraola'nın gözüne girdi!](https://www.haberturk.com/spor/foto/liverpool-u-yikan-archie-brown-andoni-iraola-nin-gozune-girdi-3925369) — Haberturk Spor · 2026-11-06T09:07:38+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [İşte UEFA ülke puanında son durum!](https://www.haberturk.com/spor/foto/iste-uefa-ulke-puaninda-son-durum-galatasaray-ve-fenerbahce-kazandi-besiktas-ve-trabzonspor-kaybetti-3925350) — Haberturk Spor · 2026-11-06T08:07:02+00:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe, Beşiktaş, Trabzonspor
 - [Fenerbahçe ve Galatasaray'a Avrupa'dan dev gelir!](https://www.hurriyet.com.tr/sporarena/fenerbahce-ve-galatasaraya-avrupadan-dev-gelir-43367961) — Hürriyet Spor · 2026-11-06T07:53:37+00:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe
-- [Beşiktaş UEFA Avrupa Ligi'ndeki rakibinden 1.96'lık stoper alıyor - Haber Global](https://news.google.com/rss/articles/CBMinwFBVV95cUxQRnF5NElWT0RQWVdSQzcwQ0h3V1BFNjlsTUxfV0Y0eEF3UEpHb0hPSzRrZFN4WTZYQVFLYU1JdlFxRF81eWRlNmw2MzBiOW5jYVozNURYa2UyNjM3aTFsVnJWOXZjQVBzT29FclpuUG1ZM3l6bUNaaG81RUVxUmRCZU42OFNBaWw1LW80c2xkX3dNaG1kUVY0c3NGNUNnTVk?oc=5) — Haber Global · 2026-11-06T07:42:00+00:00 · turnuva=EL · kulüp=Beşiktaş
-- ["Trabzonspor her yolu denedi"](https://www.haberturk.com/spor/foto/spor-yazarlari-trabzonspor-freiburg-macini-degerlendirdi-3925339) — Haberturk Spor · 2026-11-06T07:39:49+00:00 · turnuva=ECL · kulüp=Trabzonspor
 - [UEFA ülke puanı güncellendi!](https://www.hurriyet.com.tr/sporarena/uefa-ulke-puani-guncellendi-43367882) — Hürriyet Spor · 2026-11-06T07:24:05+00:00 · turnuva=— · kulüp=—
 - [Fenerbahçe, Şampiyonlar Ligi'nde nasıl turlar? Manchester City örneği!](https://www.hurriyet.com.tr/sporarena/fenerbahce-sampiyonlar-liginde-nasil-turlar-manchester-city-ornegi-43367865) — Hürriyet Spor · 2026-11-06T07:07:58+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - ["Deplasman krizleri Avrupa'ya sıçradı"](https://www.haberturk.com/spor/foto/spor-yazarlari-besiktas-celtic-macini-degerlendirdi-deplasman-krizleri-avrupa-ya-sicradi-vincenzo-italiano-tum-dengeyi-bozdu-3925320) — Haberturk Spor · 2026-11-06T06:45:50+00:00 · turnuva=EL · kulüp=Beşiktaş
@@ -40,9 +38,11 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Beşiktaş, Avrupa Ligi'nde ilk yenilgisini yaşadı](https://www.aa.com.tr/tr/spor/besiktas-avrupa-liginde-ilk-yenilgisini-yasadi-/4113470) — Anadolu Ajansı Spor · 2026-11-05T23:53:07+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Avrupa haftasında 2 galibiyet 2 yenilgi! Türkiye kaçıncı sırada? İşte ülke puanı](https://www.takvim.com.tr/galeri/spor/ulke-puanlarinda-son-durum-turkiye-kacinci-sirada) — Takvim Spor · 2026-11-05T23:31:59+03:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe, Beşiktaş, Trabzonspor
 - [Trabzonspor'dan ilk mağlubiyet! Konferans Ligi'nde kaçıncı sırada?](https://www.takvim.com.tr/galeri/spor/konferans-ligi-3-hafta-puan-durumu) — Takvim Spor · 2026-11-05T23:14:33+03:00 · turnuva=ECL · kulüp=Trabzonspor
-- ["Değişiklikler olumlu sonuç verdi"](https://www.haberturk.com/spor/martin-o-neill-2-yaridaki-degisiklikler-olumlu-sonuc-verdi-3925286) — Haberturk Spor · 2026-11-05T23:11:21+00:00 · turnuva=EL · kulüp=Beşiktaş
 - ["Kaybetmememiz gereken bir maçı kaybettik!"](https://www.haberturk.com/spor/vincenzo-italiano-kaybetmememiz-gereken-bir-maci-kaybettik-3925285) — Haberturk Spor · 2026-11-05T23:02:24+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [CELTIC - BEŞİKTAŞ MAÇI HANGİ KANALDA? BJK-Celtic Maçı Ne Zaman, Saat Kaçta? (Celtic - Beşiktaş Maç Kadrosu-İlk 11'ler)](https://www.cnnturk.com/spor/futbol/celtic-besiktas-maci-hangi-kanalda-bjk-celtic-maci-ne-zaman-saat-kacta-celtic-besiktas-mac-kadrosu-muhtemel-11ler-3489334) — CNN Türk Spor · 2026-11-05T22:56:00+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Martin O'Neill: 'Her açıdan mükemmel bir galibiyet!'](https://www.hurriyet.com.tr/sporarena/martin-oneill-her-acidan-mukemmel-bir-galibiyet-43367734) — Hürriyet Spor · 2026-11-05T22:55:00+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Trabzonspor - Freiburg maçı Libero'da yorumlandı! Yıldız futbolcu hedef tahtasında](https://www.takvim.com.tr/spor/trabzonspor/2026/11/05/trabzonspor-freiburg-maci-liberoda) — Takvim Spor · 2026-11-05T22:48:36+03:00 · turnuva=ECL · kulüp=Trabzonspor
-- [Avrupa Ligi'nde Benfica zirvede!](https://www.haberturk.com/spor/uefa-avrupa-ligi-nde-4-hafta-tamamlandi-benfica-zirvede-3925283) — Haberturk Spor · 2026-11-05T22:41:18+00:00 · turnuva=EL · kulüp=Beşiktaş
+- [Vincenzo Italiano: '3 puanı çöpe attık, böyle hediye edemeyiz'](https://www.hurriyet.com.tr/sporarena/vincenzo-italiano-3-puani-cope-attik-boyle-hediye-edemeyiz-43367733) — Hürriyet Spor · 2026-11-05T22:34:00+00:00 · turnuva=EL · kulüp=Beşiktaş
+- [Beşiktaş'ın beklediği kırmızı kart çıkmadı! İskoçya'da çok konuşulacak karar](https://www.hurriyet.com.tr/sporarena/besiktasin-bekledigi-kirmizi-kart-cikmadi-iskocyada-cok-konusulacak-karar-43367723) — Hürriyet Spor · 2026-11-05T22:13:00+00:00 · turnuva=EL · kulüp=Beşiktaş
+- [CELTIC BEŞİKTAŞ MAÇI NE ZAMAN? UEFA Avrupa Ligi Celtic Beşiktaş Maçı Saat Kaçta, Hangi Kanalda? Orkun Kökçü Oynayacak Mı?](https://www.cnnturk.com/spor/futbol/avrupa-ligi-celtic-besiktas-maci-ne-zaman-celtic-besiktas-uefa-avrupa-ligi-maci-saat-kacta-hangi-kanalda-orkun-kokcu-oynayacak-mi-3485734) — CNN Türk Spor · 2026-11-05T21:53:47+00:00 · turnuva=EL · kulüp=Beşiktaş
+- [TRABZONSPOR - FREIBURG MAÇI CANLI İZLE | Trabzonspor - Freiburg maçı şifresiz nereden izlenir? Trabzon maçı canlı yayın izleme ekranı](https://www.cnnturk.com/spor/futbol/trabzonspor-freiburg-maci-canli-izle-trabzonspor-freiburg-maci-sifresiz-nereden-izlenir-trabzon-maci-canli-yayin-izleme-ekrani-3489480) — CNN Türk Spor · 2026-11-05T21:14:27+00:00 · turnuva=ECL · kulüp=Trabzonspor

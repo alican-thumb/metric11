@@ -4,11 +4,11 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 
 ## Genel Karne
 
-- Değerlendirilen maç: **90**
-- İsabet: **44/90** (%49)
+- Değerlendirilen maç: **91**
+- İsabet: **44/91** (%48)
 - Beraberlik yakalama: **3/16** (%19)
 - Yüksek güvenli maç isabeti: **24/36** (%67)
-- Brier score: **0.594** (düşük daha iyi; 2025-26 referans 0.600)
+- Brier score: **0.593** (düşük daha iyi; 2025-26 referans 0.600)
 - Log loss: **0.992** (düşük daha iyi; 2025-26 referans 1.005)
 
 ### Güven bandı kalibrasyonu
@@ -19,7 +19,7 @@ _"Beyan edilen ort. olasılık" ile "İsabet" arasındaki fark büyükse (özell
 | --- | --- | --- | --- | --- | --- | --- |
 | HIGH | 36 | 24/36 (%67) | %60 | 0.476 | 0.828 | %64 / 0.516 / 0.885 |
 | MEDIUM | 28 | 9/28 (%32) | %46 | 0.684 | 1.112 | %54 / 0.619 / 1.032 |
-| LOW | 26 | 11/26 (%42) | %38 | 0.659 | 1.091 | %48 / 0.670 / 1.103 |
+| LOW | 27 | 11/27 (%41) | %37 | 0.655 | 1.084 | %48 / 0.670 / 1.103 |
 
 ### Seçilen tarafa göre isabet
 
@@ -28,10 +28,16 @@ _Model hangi tarafı seçtiğinde ne oldu? Belirli bir seçimde (ör. deplasman 
 | Seçim | Maç | İsabet | Gerçekleşen (Ev / X / Dep) |
 | --- | --- | --- | --- |
 | Ev | 50 | 28/50 (%56) | 28 / 7 / 15 |
-| Beraberlik | 9 | 3/9 (%33) | 3 / 3 / 3 |
+| Beraberlik | 10 | 3/10 (%30) | 3 / 3 / 4 |
 | Deplasman | 31 | 13/31 (%42) | 12 / 6 / 13 |
 
 [Olasılık kovaları ve seçici yayın politikası →](prediction_calibration_audit_2026_2027.html)
+
+## Hafta 11 — 0/1 isabet (%0)
+
+| Maç | Skor | Tahmin | Sonuç | Güven |
+| --- | --- | --- | --- | --- |
+| GAZİANTEP FUTBOL KULÜBÜ A.Ş. - KASIMPAŞA A.Ş. | 0 - 2 | Beraberlik | ❌ | LOW |
 
 ## Hafta 10 — 5/9 isabet (%56)
 
