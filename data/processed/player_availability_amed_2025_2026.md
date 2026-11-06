@@ -12,7 +12,7 @@
 ## Güncel Haber/Sakat-Cezalı Bağlamı
 
 - INJURED | Dilhan Demir | kaynak=beIN SPORTS sakat ve cezalı listesi | güven=MEDIUM_CONTEXT
-- INJURED | Yira Sor | kaynak=beIN SPORTS sakat ve cezalı listesi | güven=MEDIUM_CONTEXT
-- SUSPENDED | Mbaye Diagne | kaynak=beIN SPORTS sakat ve cezalı listesi | güven=MEDIUM_CONTEXT
+- INJURED | Muhammed Hasan Yıldırım | kaynak=beIN SPORTS sakat ve cezalı listesi | güven=MEDIUM_CONTEXT
+- SUSPENDED | Samuel Ballet | kaynak=beIN SPORTS sakat ve cezalı listesi | güven=MEDIUM_CONTEXT
 
 ## Maç Bazlı Eksikler

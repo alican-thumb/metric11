@@ -1,12 +1,20 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-11-06T09:22:13.021892+00:00
+Üretim zamanı: 2026-11-06T12:05:26.369079+00:00
 Toplam ilgili haber: 76
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [İngiltere'nin Uluslar Ligi kadrosu açıklandı](https://www.aksam.com.tr/spor/ingilterenin-uluslar-ligi-kadrosu-aciklandi/haber-1712440) — Aksam Spor · 2026-11-06T14:41:00+03:00 · turnuva=— · kulüp=—
+- [İngiltere Milli Takımı'nın Uluslar Ligi kadrosu açıklandı!](https://www.sabah.com.tr/spor/futbol/2026/11/06/ingiltere-milli-takiminin-uluslar-ligi-kadrosu-aciklandi) — Sabah Spor · 2026-11-06T14:39:40+03:00 · turnuva=— · kulüp=—
+- [Sergen Yalçın, A Milli Futbol Takımı'nın aday kadrosunu açıkladı](https://www.aa.com.tr/tr/spor/sergen-yalcin-a-milli-futbol-takiminin-aday-kadrosunu-acikladi/4113966) — Anadolu Ajansı Spor · 2026-11-06T14:39:32+03:00 · turnuva=— · kulüp=—
+- [SON DAKİKA... A Milli Takım'da Sergen Yalçın aday kadroyu açıkladı!](https://www.cnnturk.com/spor/futbol/son-dakika-a-milli-takimda-sergen-yalcin-aday-kadroyu-acikladi-3489929) — CNN Türk Spor · 2026-11-06T14:28:50+00:00 · turnuva=— · kulüp=—
+- [A Milli Futbol Takımı'nın Belçika ile yapacağı maçın genel bilet satışı başladı](https://www.aa.com.tr/tr/spor/a-milli-futbol-takiminin-belcika-ile-yapacagi-macin-genel-bilet-satisi-basladi/4113953) — Anadolu Ajansı Spor · 2026-11-06T14:26:10+03:00 · turnuva=— · kulüp=—
+- [Sergen Yalçın Milli Takım aday kadrosunu açıkladı! Berke Özer geri döndü](https://www.takvim.com.tr/spor/2026/11/06/sergen-yalcin-milli-takimin-aday-kadrosunu-acikladi) — Takvim Spor · 2026-11-06T14:00:43+03:00 · turnuva=— · kulüp=—
+- [A Milli Takım aday kadrosu açıklandı!](https://www.haberturk.com/spor/a-milli-futbol-takimi-teknik-direktoru-sergen-yalcin-aday-kadroyu-acikladi-berke-ozer-kadroya-alindi-3925394) — Haberturk Spor · 2026-11-06T11:44:27+00:00 · turnuva=— · kulüp=—
 - [SHAKHTAR DONETSK - FENERBAHÇE MAÇI NE ZAMAN? Shakhtar Donetsk - Fenerbahçe maçı nerede oynanacak?](https://www.cnnturk.com/spor/futbol/shakhtar-donetsk-fenerbahce-maci-ne-zaman-shakhtar-donetsk-fenerbahce-maci-nerede-oynanacak-3489845) — CNN Türk Spor · 2026-11-06T11:37:19+00:00 · turnuva=CL · kulüp=Fenerbahçe
+- [İngiltere'nin Uluslar Ligi kadrosu açıklandı](https://www.haberturk.com/spor/ingiltere-nin-uefa-uluslar-ligi-kadrosu-aciklandi-3925393) — Haberturk Spor · 2026-11-06T11:03:55+00:00 · turnuva=— · kulüp=—
 - [Spor yazarlarından Beşiktaş yorumları: "Önemli bir sorun var"](https://www.takvim.com.tr/spor/besiktas/2026/11/06/spor-yazarlari-celtic-besiktas-macini-yorumladi) — Takvim Spor · 2026-11-06T10:24:36+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Spor yazarlarından Trabzonspor eleştirisi: "Sağlıklı bir oyun değil"](https://www.takvim.com.tr/spor/trabzonspor/2026/11/06/spor-yazarlari-trabzonspor-freiburg-macini-yorumladi) — Takvim Spor · 2026-11-06T09:47:05+03:00 · turnuva=ECL · kulüp=Trabzonspor
 - [TÜRKİYE - BELÇİKA MAÇI NE ZAMAN? Milli maç saat kaçta? A Milli Takım'ın kritik sınavı hangi gün oynanacak? UEFA Uluslar A Ligi'nde gözler ay-yıldızlılarda](https://www.cnnturk.com/spor/futbol/turkiye-belcika-maci-ne-zaman-milli-mac-saat-kacta-a-milli-takimin-kritik-sinavi-hangi-gun-oynanacak-uefa-uluslar-a-liginde-3487933) — CNN Türk Spor · 2026-11-06T09:09:35+00:00 · turnuva=— · kulüp=—
@@ -38,11 +46,3 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Beşiktaş'ın beklediği kırmızı kart çıkmadı! İskoçya'da çok konuşulacak karar](https://www.hurriyet.com.tr/sporarena/besiktasin-bekledigi-kirmizi-kart-cikmadi-iskocyada-cok-konusulacak-karar-43367723) — Hürriyet Spor · 2026-11-05T22:13:00+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Konferans Ligi'nde gecenin sonuçları!](https://www.haberturk.com/spor/uefa-konferans-ligi-nde-gecenin-sonuclari-3925277) — Haberturk Spor · 2026-11-05T22:11:25+00:00 · turnuva=ECL · kulüp=Trabzonspor
 - [Beşiktaş, İskoçya'da kaybetti!](https://www.haberturk.com/spor/celtic-besiktas-maci-canli-anlatim-celtic-bjk-maci-ne-zaman-saat-kacta-ve-hangi-kanalda-iste-celtic-besiktas-muhtelem-11-ler-3925071) — Haberturk Spor · 2026-11-05T22:07:16+00:00 · turnuva=EL · kulüp=Beşiktaş
-- [CELTIC BEŞİKTAŞ MAÇI NE ZAMAN? UEFA Avrupa Ligi Celtic Beşiktaş Maçı Saat Kaçta, Hangi Kanalda? Orkun Kökçü Oynayacak Mı?](https://www.cnnturk.com/spor/futbol/avrupa-ligi-celtic-besiktas-maci-ne-zaman-celtic-besiktas-uefa-avrupa-ligi-maci-saat-kacta-hangi-kanalda-orkun-kokcu-oynayacak-mi-3485734) — CNN Türk Spor · 2026-11-05T21:53:47+00:00 · turnuva=EL · kulüp=Beşiktaş
-- [Trabzonspor, Thomas Reis yönetiminde ilk yenilgisini aldı](https://www.aa.com.tr/tr/spor/trabzonspor-thomas-reis-yonetiminde-ilk-yenilgisini-aldi/4113374) — Anadolu Ajansı Spor · 2026-11-05T21:41:50+03:00 · turnuva=ECL · kulüp=Trabzonspor
-- [TRABZONSPOR - FREIBURG MAÇI CANLI İZLE | Trabzonspor - Freiburg maçı şifresiz nereden izlenir? Trabzon maçı canlı yayın izleme ekranı](https://www.cnnturk.com/spor/futbol/trabzonspor-freiburg-maci-canli-izle-trabzonspor-freiburg-maci-sifresiz-nereden-izlenir-trabzon-maci-canli-yayin-izleme-ekrani-3489480) — CNN Türk Spor · 2026-11-05T21:14:27+00:00 · turnuva=ECL · kulüp=Trabzonspor
-- [TRABZONSPOR - FREİBURG MAÇI SAAT KAÇTA, HANGİ KANALDA? TS Maçı Şifresiz Nereden İzlenir? Konferans Ligi Trabzonspor Freiburg Muhtemel 11'ler](https://www.cnnturk.com/spor/futbol/trabzonspor-freiburg-maci-saat-kacta-hangi-kanalda-ts-maci-sifresiz-nereden-izlenir-konferans-ligi-trabzonspor-freiburg-3489325) — CNN Türk Spor · 2026-11-05T21:14:01+00:00 · turnuva=ECL · kulüp=Trabzonspor
-- [Julian Schuster'den Trabzonspor'a övgü!](https://www.haberturk.com/spor/julian-schuster-trabzonspor-cok-kaliteli-ve-enerjik-bir-takim-3925261) — Haberturk Spor · 2026-11-05T20:22:19+00:00 · turnuva=ECL · kulüp=Trabzonspor
-- ["Önemli fırsatları değerlendiremedik"](https://www.haberturk.com/spor/trabzonspor-freiburg-maci-sonrasi-thomas-reis-onemli-firsatlari-degerlendiremedik-3925260) — Haberturk Spor · 2026-11-05T20:20:45+00:00 · turnuva=ECL · kulüp=Trabzonspor
-- [Trabzonspor, Thomas Reis yönetiminde bir ilki yaşadı!](https://www.hurriyet.com.tr/sporarena/trabzonspor-thomas-reis-yonetiminde-bir-ilki-yasadi-43367584) — Hürriyet Spor · 2026-11-05T20:03:31+00:00 · turnuva=ECL · kulüp=Trabzonspor
-- ["Şans yanımızda değildi"](https://www.haberturk.com/spor/trabzonspor-freiburg-maci-sonrasi-wagner-pina-sans-yanimizda-degildi-3925258) — Haberturk Spor · 2026-11-05T20:03:19+00:00 · turnuva=ECL · kulüp=Trabzonspor

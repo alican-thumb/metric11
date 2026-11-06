@@ -12,6 +12,6 @@
 ## Güncel Haber/Sakat-Cezalı Bağlamı
 
 - INJURED | Fredy | kaynak=beIN SPORTS sakat ve cezalı listesi | güven=MEDIUM_CONTEXT
-- INJURED | Çağlar Söyüncü | kaynak=beIN SPORTS sakat ve cezalı listesi | güven=MEDIUM_CONTEXT
+- INJURED | Emircan Gürlük | kaynak=beIN SPORTS sakat ve cezalı listesi | güven=MEDIUM_CONTEXT
 
 ## Maç Bazlı Eksikler
