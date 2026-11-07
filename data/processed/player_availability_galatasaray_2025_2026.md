@@ -6,12 +6,13 @@
 - Otomatik ceza sinyali: 13
 - Manuel kayıt: 0
 - Güncel haber/sakat-cezalı sinyali: 0
-- Haber istihbaratı sinyali: 1
+- Haber istihbaratı sinyali: 6
 - Not: Kırmızı/çift sarı için sonraki maç cezası varsayılır. Sarı kart birikimi 4 kartta 1 maç varsayımıdır; resmi ceza listesiyle doğrulanmalıdır.
 
 ## Güncel Haber/Sakat-Cezalı Bağlamı
 
 - INJURED | GABRIEL DAVI GOMES SARA | kaynak=news_intelligence | güven=MEDIUM
+- INJURED | VICTOR JAMES OSIMHEN | kaynak=news_intelligence | güven=MEDIUM
 
 ## Maç Bazlı Eksikler
 

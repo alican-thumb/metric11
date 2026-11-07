@@ -12,7 +12,7 @@
 ## Güncel Haber/Sakat-Cezalı Bağlamı
 
 - INJURED | Khusniddin Alikulov | kaynak=beIN SPORTS sakat ve cezalı listesi | güven=MEDIUM_CONTEXT
-- SUSPENDED | Modibo Sagnan | kaynak=beIN SPORTS sakat ve cezalı listesi | güven=MEDIUM_CONTEXT
+- SUSPENDED | Modibo Sag | kaynak=beIN SPORTS sakat ve cezalı listesi | güven=MEDIUM_CONTEXT
 - INJURED | YAKUP AYAN | kaynak=news_intelligence | güven=MEDIUM
 
 ## Maç Bazlı Eksikler
