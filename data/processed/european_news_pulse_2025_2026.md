@@ -1,7 +1,7 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-11-07T16:27:12.614182+00:00
-Toplam ilgili haber: 28
+Üretim zamanı: 2026-11-07T21:48:10.751848+00:00
+Toplam ilgili haber: 22
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
@@ -9,10 +9,8 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [TÜRKİYE BELÇİKA MAÇI NE ZAMAN? Türkiye Belçika Maçı Saat Kaçta Ve Hangi Kanalda? Geri Sayım Başladı!](https://www.cnnturk.com/spor/futbol/turkiye-belcika-maci-ne-zaman-turkiye-belcika-maci-saat-kacta-ve-hangi-kanalda-geri-sayim-basladi-3490111) — CNN Türk Spor · 2026-11-07T00:02:17+00:00 · turnuva=— · kulüp=—
 - [A Milli Takım'da aday kadroya çağrılan Serhat Öztaşdelen'in sevinci kameraya yansıdı](https://www.takvim.com.tr/spor/2026/11/06/serhat-oztasdelenin-sevinci-kamerada) — Takvim Spor · 2026-11-06T17:07:07+03:00 · turnuva=— · kulüp=Kocaelispor
 - [Sergen Yalçın Milli Takım aday kadrosunu açıkladı! Berke Özer geri döndü](https://www.takvim.com.tr/spor/2026/11/06/sergen-yalcin-milli-takimin-aday-kadrosunu-acikladi) — Takvim Spor · 2026-11-06T14:00:43+03:00 · turnuva=— · kulüp=—
-- [A Milli Takım aday kadrosu açıklandı!](https://www.haberturk.com/spor/a-milli-futbol-takimi-teknik-direktoru-sergen-yalcin-aday-kadroyu-acikladi-berke-ozer-kadroya-alindi-3925394) — Haberturk Spor · 2026-11-06T12:20:08+00:00 · turnuva=— · kulüp=—
 - [Spor yazarlarından Beşiktaş yorumları: "Önemli bir sorun var"](https://www.takvim.com.tr/spor/besiktas/2026/11/06/spor-yazarlari-celtic-besiktas-macini-yorumladi) — Takvim Spor · 2026-11-06T10:24:36+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Spor yazarlarından Trabzonspor eleştirisi: "Sağlıklı bir oyun değil"](https://www.takvim.com.tr/spor/trabzonspor/2026/11/06/spor-yazarlari-trabzonspor-freiburg-macini-yorumladi) — Takvim Spor · 2026-11-06T09:47:05+03:00 · turnuva=ECL · kulüp=Trabzonspor
-- ["Deplasman krizleri Avrupa'ya sıçradı"](https://www.haberturk.com/spor/foto/spor-yazarlari-besiktas-celtic-macini-degerlendirdi-deplasman-krizleri-avrupa-ya-sicradi-vincenzo-italiano-tum-dengeyi-bozdu-3925320) — Haberturk Spor · 2026-11-06T06:45:50+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Avrupa Ligi ve Konferans Ligi'nde büyük heyecan! İşte alınan sonuçlar](https://www.takvim.com.tr/spor/2026/11/05/avrupa-ligi-ve-konferans-liginde-buyuk-heyecan-iste-alinan-sonuclar) — Takvim Spor · 2026-11-06T02:30:16+03:00 · turnuva=EL · kulüp=Beşiktaş, Trabzonspor
 - [Beşiktaş ilk kez kaybetti! Avrupa Ligi puan durumu](https://www.takvim.com.tr/galeri/spor/uefa-avrupa-ligi-4-hafta-puan-durumu) — Takvim Spor · 2026-11-06T01:56:41+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş'ın Celtic yenilgisine Libero'da sert tepki! "Bu maçın izahı yok"](https://www.takvim.com.tr/spor/besiktas/2026/11/05/celtic-besiktas-maci-libero-tvde) — Takvim Spor · 2026-11-06T00:39:30+03:00 · turnuva=EL · kulüp=Beşiktaş
@@ -25,12 +23,8 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Thomas Reis ile seri sonu! Trabzonspor Konferans Ligi'nde Freiburg'a 1-0 yenildi](https://www.takvim.com.tr/spor/trabzonspor/2026/11/05/canli-trabzonspor-freiburg-uefa-konferans-ligi-maci) — Takvim Spor · 2026-11-05T12:32:00+03:00 · turnuva=ECL · kulüp=Trabzonspor
 - [Kartal'ın yenilmezliği sona erdi! Beşiktaş Celtic'e 3-2 yenildi](https://www.takvim.com.tr/spor/besiktas/2026/11/05/canli-celtic-besiktas-uefa-avrupa-ligi-maci) — Takvim Spor · 2026-11-05T11:39:43+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Spor yazarları Fenerbahçe'nin Liverpool galibiyetini yorumladı! O yıldızlara büyük övgü: "Kadıköy kabusu yenildi"](https://www.takvim.com.tr/spor/fenerbahce/2026/11/05/spor-yazarlari-fenerbahce-liverpool-macini-yorumladi) — Takvim Spor · 2026-11-05T10:19:47+03:00 · turnuva=CL · kulüp=Fenerbahçe
-- [Okan Buruk Şampiyonlar Ligi'nde tarihe geçti! Fatih Terim ve Lucescu'yu geride bıraktı](https://www.takvim.com.tr/spor/galatasaray/2026/11/05/okan-buruk-sampiyonlar-liginde-terim-ve-lucescuyu-geride-birakti) — Takvim Spor · 2026-11-05T06:57:30+03:00 · turnuva=CL · kulüp=Galatasaray
 - [Dirk Kuyt Liverpool zaferinin şifresini Takvim'e anlattı! Fenerbahçe'nin orta sahasında ne değişti?](https://www.takvim.com.tr/spor/fenerbahce/2026/11/04/dirk-kuyt-liverpool-zaferinin-sifresini-takvime-anlatti) — Takvim Spor · 2026-11-05T00:32:54+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Devlerin kusursuz haftası! Şampiyonlar Ligi'nde puan durumu](https://www.takvim.com.tr/galeri/spor/sampiyonlar-ligi-4-hafta-puan-durumu) — Takvim Spor · 2026-11-04T23:42:48+03:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe
-- [Fenerbahçe'nin Liverpool zaferi Libero TV'de: Kadro eleştirilerine yanıt](https://www.takvim.com.tr/spor/fenerbahce/2026/11/04/fenerbahce-liverpool-maci-liberoda) — Takvim Spor · 2026-11-04T22:44:40+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Galatasaray'da Stuttgart zaferi sonrası transfer sürprizi! 22 milyon euro](https://www.takvim.com.tr/spor/galatasaray/2026/11/04/galatasarayda-stuttgart-zaferi-sonrasi-transfer-surprizi-22-milyon-euro) — Takvim Spor · 2026-11-04T17:22:39+03:00 · turnuva=CL · kulüp=Galatasaray, Trabzonspor
-- [Ziraat Türkiye Kupası'nda 4. eleme turu eşleşmeleri belli oldu!](https://www.takvim.com.tr/spor/2026/11/04/ziraat-turkiye-kupasi-4-tur-kura-cekimi) — Takvim Spor · 2026-11-04T15:32:16+03:00 · turnuva=— · kulüp=—
 - [Kadıköy'de muhteşem geri dönüş! Fenerbahçe Liverpool'u 3-2 yendi](https://www.takvim.com.tr/spor/fenerbahce/2026/11/04/canli-fenerbahce-liverpool-uefa-sampiyonlar-ligi-maci) — Takvim Spor · 2026-11-04T11:17:42+03:00 · turnuva=CL · kulüp=Galatasaray, Fenerbahçe
-- [Spor yazarlarından Batrakov'a dev övgüler: "Alex, Sneijder, Hagi karışımı"](https://www.takvim.com.tr/spor/galatasaray/2026/11/04/spor-yazarlari-galatasaray-stuttgart-macini-yorumladi) — Takvim Spor · 2026-11-04T09:58:07+03:00 · turnuva=CL · kulüp=Galatasaray
 - [Miguel Cardoso ve Elisha Owusu ile resmî sözleşme imzaladık.](https://erzurumsporfk.org/2026/08/19/miguel-cardoso-ve-elisha-owusu-ile-resmi-sozlesme-imzaladik/) — Erzurumspor FK Resmi Web · 2026-08-19T20:45:50+03:00 · turnuva=EL · kulüp=Kayserispor
