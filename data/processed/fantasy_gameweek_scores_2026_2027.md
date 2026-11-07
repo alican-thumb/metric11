@@ -1,6 +1,6 @@
 # Kadro Kur — Haftalık Puanlar
 
-- Puanlanan hafta sayısı: 10
+- Puanlanan hafta sayısı: 11
 - Toplamda puan alan oyuncu: 499
 - En yüksek puanlı 5 oyuncu:
   - STEFAN SAVIC (TRABZONSPOR A.Ş.): 45 puan
