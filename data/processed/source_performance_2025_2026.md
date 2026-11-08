@@ -1,6 +1,6 @@
 # Erken Haber Kaynak Performansı
 
-- Transfer sinyali: 18
+- Transfer sinyali: 19
 - Resmi olaya dönüşen transfer: 16
 - Yayın zamanı bulunan resmi teyit: 5/16
 - İlk görülme zamanı bulunan resmi teyit: 16/16

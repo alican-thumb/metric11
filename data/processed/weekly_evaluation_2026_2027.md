@@ -4,12 +4,12 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 
 ## Genel Karne
 
-- Değerlendirilen maç: **91**
-- İsabet: **44/91** (%48)
+- Değerlendirilen maç: **95**
+- İsabet: **45/95** (%47)
 - Beraberlik yakalama: **3/16** (%19)
-- Yüksek güvenli maç isabeti: **24/36** (%67)
-- Brier score: **0.593** (düşük daha iyi; 2025-26 referans 0.600)
-- Log loss: **0.992** (düşük daha iyi; 2025-26 referans 1.005)
+- Yüksek güvenli maç isabeti: **25/38** (%66)
+- Brier score: **0.601** (düşük daha iyi; 2025-26 referans 0.600)
+- Log loss: **1.004** (düşük daha iyi; 2025-26 referans 1.005)
 
 ### Güven bandı kalibrasyonu
 
@@ -17,8 +17,8 @@ _"Beyan edilen ort. olasılık" ile "İsabet" arasındaki fark büyükse (özell
 
 | Güven bandı | Maç | İsabet | Beyan edilen ort. olasılık | Brier | Log loss | Referans (2025-26: isabet / brier / logloss) |
 | --- | --- | --- | --- | --- | --- | --- |
-| HIGH | 36 | 24/36 (%67) | %60 | 0.476 | 0.828 | %64 / 0.516 / 0.885 |
-| MEDIUM | 28 | 9/28 (%32) | %46 | 0.684 | 1.112 | %54 / 0.619 / 1.032 |
+| HIGH | 38 | 25/38 (%66) | %60 | 0.484 | 0.841 | %64 / 0.516 / 0.885 |
+| MEDIUM | 30 | 9/30 (%30) | %46 | 0.701 | 1.140 | %54 / 0.619 / 1.032 |
 | LOW | 27 | 11/27 (%41) | %37 | 0.655 | 1.084 | %48 / 0.670 / 1.103 |
 
 ### Seçilen tarafa göre isabet
@@ -27,17 +27,21 @@ _Model hangi tarafı seçtiğinde ne oldu? Belirli bir seçimde (ör. deplasman 
 
 | Seçim | Maç | İsabet | Gerçekleşen (Ev / X / Dep) |
 | --- | --- | --- | --- |
-| Ev | 50 | 28/50 (%56) | 28 / 7 / 15 |
-| Beraberlik | 10 | 3/10 (%30) | 3 / 3 / 4 |
-| Deplasman | 31 | 13/31 (%42) | 12 / 6 / 13 |
+| Ev | 51 | 28/51 (%55) | 28 / 7 / 16 |
+| Beraberlik | 11 | 3/11 (%27) | 4 / 3 / 4 |
+| Deplasman | 33 | 14/33 (%42) | 13 / 6 / 14 |
 
 [Olasılık kovaları ve seçici yayın politikası →](prediction_calibration_audit_2026_2027.html)
 
-## Hafta 11 — 0/1 isabet (%0)
+## Hafta 11 — 1/5 isabet (%20)
 
 | Maç | Skor | Tahmin | Sonuç | Güven |
 | --- | --- | --- | --- | --- |
 | GAZİANTEP FUTBOL KULÜBÜ A.Ş. - KASIMPAŞA A.Ş. | 0 - 2 | Beraberlik | ❌ | LOW |
+| EYÜPSPOR - KOCAELİSPOR | 0 - 2 | Deplasman | ✅ | HIGH |
+| SAMSUNSPOR A.Ş. - TÜMOSAN KONYASPOR | 1 - 0 | Beraberlik | ❌ | MEDIUM |
+| GÖZTEPE A.Ş. - İSTANBUL BAŞAKŞEHİR FK | 1 - 2 | Ev | ❌ | HIGH |
+| GALATASARAY A.Ş. - AMED SPORTİF FAALİYETLER | 4 - 3 | Deplasman | ❌ | MEDIUM |
 
 ## Hafta 10 — 5/9 isabet (%56)
 
