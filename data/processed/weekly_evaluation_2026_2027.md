@@ -40,8 +40,8 @@ _Model hangi tarafı seçtiğinde ne oldu? Belirli bir seçimde (ör. deplasman 
 | GAZİANTEP FUTBOL KULÜBÜ A.Ş. - KASIMPAŞA A.Ş. | 0 - 2 | Beraberlik | ❌ | LOW |
 | EYÜPSPOR - KOCAELİSPOR | 0 - 2 | Deplasman | ✅ | HIGH |
 | SAMSUNSPOR A.Ş. - TÜMOSAN KONYASPOR | 1 - 0 | Beraberlik | ❌ | MEDIUM |
-| GALATASARAY A.Ş. - AMED SPORTİF FAALİYETLER | 4 - 3 | Deplasman | ❌ | MEDIUM |
 | GÖZTEPE A.Ş. - İSTANBUL BAŞAKŞEHİR FK | 1 - 2 | Ev | ❌ | HIGH |
+| GALATASARAY A.Ş. - AMED SPORTİF FAALİYETLER | 4 - 3 | Deplasman | ❌ | MEDIUM |
 
 ## Hafta 10 — 5/9 isabet (%56)
 
