@@ -1,12 +1,12 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-11-08T08:59:07.094915+00:00
+Üretim zamanı: 2026-11-08T11:21:21.986948+00:00
 Toplam ilgili haber: 24
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
-- [ÇORUM FK - FENERBAHÇE MAÇI SAAT KAÇTA, HANGİ KANALDA? Çorum FK Fenerbahçe Maçı Şifresiz Mi? Emre Belözoğlu İlk Sınavında! İşte Maç Kadroları](https://www.cnnturk.com/spor/futbol/corum-fk-fenerbahce-maci-saat-kacta-hangi-kanalda-corum-fk-fenerbahce-maci-sifresiz-mi-emre-belozoglu-ilk-sinavinda-iste-mac-3490475) — CNN Türk Spor · 2026-11-08T11:12:13+00:00 · turnuva=CL · kulüp=Fenerbahçe
+- [ÇORUM FK - FENERBAHÇE MAÇI SAAT KAÇTA, HANGİ KANALDA? Çorum FK Fenerbahçe Maçı Şifresiz Mi? Emre Belözoğlu İlk Sınavında! İşte Maç Kadroları](https://www.cnnturk.com/spor/futbol/corum-fk-fenerbahce-maci-saat-kacta-hangi-kanalda-corum-fk-fenerbahce-maci-sifresiz-mi-emre-belozoglu-ilk-sinavinda-iste-mac-3490475) — CNN Türk Spor · 2026-11-08T12:25:19+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [SHAKHTAR DONETSK - FENERBAHÇE MAÇI NE ZAMAN? Shakhtar Donetsk - Fenerbahçe maçı nerede oynanacak?](https://www.cnnturk.com/spor/futbol/shakhtar-donetsk-fenerbahce-maci-ne-zaman-shakhtar-donetsk-fenerbahce-maci-nerede-oynanacak-3489845) — CNN Türk Spor · 2026-11-08T09:46:13+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [TÜRKİYE - BELÇİKA MAÇI NE ZAMAN? Milli maç saat kaçta? A Milli Takım'ın kritik sınavı hangi gün oynanacak? UEFA Uluslar A Ligi'nde gözler ay-yıldızlılarda](https://www.cnnturk.com/spor/futbol/turkiye-belcika-maci-ne-zaman-milli-mac-saat-kacta-a-milli-takimin-kritik-sinavi-hangi-gun-oynanacak-uefa-uluslar-a-liginde-3487933) — CNN Türk Spor · 2026-11-08T09:46:05+00:00 · turnuva=— · kulüp=—
 - [A Milli Takım'da aday kadroya çağrılan Serhat Öztaşdelen'in sevinci kameraya yansıdı](https://www.takvim.com.tr/spor/2026/11/06/serhat-oztasdelenin-sevinci-kamerada) — Takvim Spor · 2026-11-06T17:07:07+03:00 · turnuva=— · kulüp=Kocaelispor
