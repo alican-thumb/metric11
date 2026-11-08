@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-08T13:17:28.850952+00:00",
+  "generated_at": "2026-11-08T16:42:03.136981+00:00",
   "season": "2025_2026",
   "summary": {
     "free_agents_count": 94,
     "final_year_count": 338,
-    "transfer_signals_count": 16,
+    "transfer_signals_count": 19,
     "transfer_status_counts": {
       "OFFICIAL": 0,
       "CORROBORATED": 0,
       "RUMOR": 3,
-      "REVIEW_REQUIRED": 13
+      "REVIEW_REQUIRED": 16
     },
     "promotion_events_count": 0,
     "free_agent_total_market_value_eur": 180425000
@@ -460,6 +460,47 @@
   ],
   "transfer_signals": [
     {
+      "player_name": "Anderson Talisca",
+      "from_club": null,
+      "to_club": "Beşiktaş",
+      "signal_type": "interest",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "HEADLINE_EXPLICIT_DIRECTION",
+      "article_id": "2376665ca16b",
+      "title": "Beşiktaş'tan yılın sürprizi: Anderson Talisca - Son Dakika",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQaHBURXQ2WWN1dlFOVjVfTUw1TG1INmQ5SVowc0ItQmhHSl82TkQxR1p4MVdqSmdxdnlJOUlIQ1ZndEVOUVpJWFdadEZNY0kzRkFCcnltOVB5UlJyMllCMkU1bTlFQmg5WWR3X3oycUE4cXhsY2JRSHhPU1h4eG8zVWZTX0RSVGlzcGo2QTM2ek1hUDNn0gGTAUFVX3lxTE92T3RNSDlXY3NsTjRxLVBRZ0hyc1lZTTBfdUR2b1dfcTZBejJ4VEdmV1g3M3YxbDRuYjJhaS11WlBLcmRYbWxOMlpnMzVvNWRzaFFNR3FCWXNZMUtWUFh0WHliTGF2REQ1cEdYMVotRHhzcFpIUDF6NGxVUkY1c1djQnBRSXMydkstdDhyQWZ3Ykl3cw?oc=5",
+      "source": "Son Dakika",
+      "source_type": "google_news",
+      "account_type": null,
+      "query": "Beşiktaş transfer",
+      "source_tier": "MEDIA",
+      "published_at": "2026-11-08T14:43:44+00:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "MEDIUM",
+      "verification_status": "RUMOR",
+      "interpretation": "Tek kaynaklı transfer iddiası; yalnız transfer radarında izlenir.",
+      "source_count": 1,
+      "sources": [
+        "Son Dakika"
+      ],
+      "evidence": [
+        {
+          "source": "Son Dakika",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Beşiktaş transfer",
+          "title": "Beşiktaş'tan yılın sürprizi: Anderson Talisca - Son Dakika",
+          "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQaHBURXQ2WWN1dlFOVjVfTUw1TG1INmQ5SVowc0ItQmhHSl82TkQxR1p4MVdqSmdxdnlJOUlIQ1ZndEVOUVpJWFdadEZNY0kzRkFCcnltOVB5UlJyMllCMkU1bTlFQmg5WWR3X3oycUE4cXhsY2JRSHhPU1h4eG8zVWZTX0RSVGlzcGo2QTM2ek1hUDNn0gGTAUFVX3lxTE92T3RNSDlXY3NsTjRxLVBRZ0hyc1lZTTBfdUR2b1dfcTZBejJ4VEdmV1g3M3YxbDRuYjJhaS11WlBLcmRYbWxOMlpnMzVvNWRzaFFNR3FCWXNZMUtWUFh0WHliTGF2REQ1cEdYMVotRHhzcFpIUDF6NGxVUkY1c1djQnBRSXMydkstdDhyQWZ3Ykl3cw?oc=5",
+          "published_at": "2026-11-08T14:43:44+00:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
       "player_name": "Benjamin Bouchouari",
       "from_club": null,
       "to_club": "Trabzonspor",
@@ -542,54 +583,41 @@
       "model_use": false
     },
     {
-      "player_name": "METEHAN BALTACI",
-      "from_club": "GENÇLERBİRLİĞİ",
-      "to_club": "Galatasaray",
-      "transfer_type": "permanent",
-      "window": "summer_2026",
+      "player_name": null,
+      "from_club": null,
+      "to_club": "Fenerbahçe",
       "signal_type": "departure",
+      "window": "summer_2026",
       "confidence": "LOW",
-      "tm_market_value_eur": 1500000,
-      "direction_quality": "TARGET_IDENTIFIED",
-      "article_id": "9df9f1af6f7b",
-      "title": "Metehan Baltacı Galatasaray'dan ayrılacak mı? Gençlerbirliği'nden Galatasaray'a Metehan Baltacı hamlesi - 24 Saat Gazetesi Ankara",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOWmxDY096RlBZcGo2RlFMa3duZXNrenphSlV6dlpBeGItZVplbkZIeHVGbGJKVmxuQ3E2azMtSGZ1ZC1nRkdiWGZvVkdLY2NQUFA1Mkx6c2dJcHd6YWRpR0RlODNENnhRd19pYklDeXJBQk1qdElHeW02VWh4TFlKUTdENzhnaFFhejBvOU56QTZuX3c?oc=5",
-      "source": "24 Saat Gazetesi Ankara",
-      "source_type": "google_news",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "706dcaeddfbb",
+      "title": "Fenerbahçe Emre Belözoğlu ile siftah yaptı",
+      "link": "https://www.haberturk.com/spor/corum-fk-fenerbahce-mac-sonucu-iste-corum-fb-maci-ozeti-ve-golleri-trendyol-super-lig-3925732",
+      "source": "Haberturk Spor",
+      "source_type": "rss",
       "account_type": null,
-      "query": "Gençlerbirliği transfer",
+      "query": null,
       "source_tier": "MEDIA",
-      "published_at": "2026-11-06T10:46:00+00:00",
+      "published_at": "2026-11-08T15:21:50+00:00",
       "first_observed_at": null,
       "summary_tr": "",
-      "entity_confidence": "HIGH",
-      "verification_status": "RUMOR",
-      "interpretation": "Tek kaynaklı transfer iddiası; yalnız transfer radarında izlenir.",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
       "source_count": 1,
       "sources": [
-        "24 Saat Gazetesi Ankara"
+        "Haberturk Spor"
       ],
       "evidence": [
         {
-          "source": "24 Saat Gazetesi Ankara",
+          "source": "Haberturk Spor",
           "source_tier": "MEDIA",
-          "source_type": "google_news",
+          "source_type": "rss",
           "account_type": null,
-          "query": "Gençlerbirliği transfer",
-          "title": "Metehan Baltacı Galatasaray'dan ayrılacak mı? Gençlerbirliği'nden Galatasaray'a Metehan Baltacı hamlesi - 24 Saat Gazetesi Ankara",
-          "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOWmxDY096RlBZcGo2RlFMa3duZXNrenphSlV6dlpBeGItZVplbkZIeHVGbGJKVmxuQ3E2azMtSGZ1ZC1nRkdiWGZvVkdLY2NQUFA1Mkx6c2dJcHd6YWRpR0RlODNENnhRd19pYklDeXJBQk1qdElHeW02VWh4TFlKUTdENzhnaFFhejBvOU56QTZuX3c?oc=5",
-          "published_at": "2026-11-06T10:46:00+00:00",
-          "first_observed_at": null
-        },
-        {
-          "source": "24 Saat Gazetesi Ankara",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Gençlerbirliği transfer",
-          "title": "Metehan Baltacı için Galatasaray’a sözlü teklif: Gençlerbirliği bonservisini istiyor - 24 Saat Gazetesi Ankara",
-          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPLUw4aDRzdjBkdVhmT19LWVpTUk5nQkx0Q1FlaWxlNXgzT19RQ25abElZVWhGSVpzbnFxY0U4MFVkdEZHUGJITTJIM2FKaVpPTHV5VFpiZ01XWHdhQzBqN285TkxEYWFWOVViSGFRLV9zSTlESDdjX1V2M3BpbFQ3Ni1yUGxQbnFjMHJlZ3pZNW9JWFBBZ2dxVU1Fc095d0podG5SWFp3VlN5ZG5KZHhlejQtOA?oc=5",
-          "published_at": "2026-11-06T10:08:00+00:00",
+          "query": null,
+          "title": "Fenerbahçe Emre Belözoğlu ile siftah yaptı",
+          "link": "https://www.haberturk.com/spor/corum-fk-fenerbahce-mac-sonucu-iste-corum-fb-maci-ozeti-ve-golleri-trendyol-super-lig-3925732",
+          "published_at": "2026-11-08T15:21:50+00:00",
           "first_observed_at": null
         }
       ],
@@ -598,20 +626,20 @@
     {
       "player_name": null,
       "from_club": null,
-      "to_club": "Beşiktaş",
-      "signal_type": "interest",
+      "to_club": "Fenerbahçe",
+      "signal_type": "departure",
       "window": "summer_2026",
       "confidence": "LOW",
       "direction_quality": "PLAYER_UNRESOLVED",
-      "article_id": "8b058430287e",
-      "title": "Beşiktaş, yuvasında 6'da 6 peşinde!",
-      "link": "https://www.hurriyet.com.tr/sporarena/besiktas-yuvasinda-6da-6-pesinde-43369958",
-      "source": "Hürriyet Spor",
+      "article_id": "c6ea1a029293",
+      "title": "Fenerbahçe, deplasmandan 3 puanla ayrıldı",
+      "link": "https://www.aa.com.tr/tr/spor/-fenerbahce-deplasmandan-3-puanla-ayrildi/4116086",
+      "source": "Anadolu Ajansı Spor",
       "source_type": "rss",
       "account_type": null,
       "query": null,
-      "source_tier": "MEDIA",
-      "published_at": "2026-11-08T04:00:00+00:00",
+      "source_tier": "AGENCY",
+      "published_at": "2026-11-08T17:05:54+03:00",
       "first_observed_at": null,
       "summary_tr": "",
       "entity_confidence": "LOW",
@@ -619,18 +647,141 @@
       "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
       "source_count": 1,
       "sources": [
-        "Hürriyet Spor"
+        "Anadolu Ajansı Spor"
       ],
       "evidence": [
         {
-          "source": "Hürriyet Spor",
+          "source": "Anadolu Ajansı Spor",
+          "source_tier": "AGENCY",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Fenerbahçe, deplasmandan 3 puanla ayrıldı",
+          "link": "https://www.aa.com.tr/tr/spor/-fenerbahce-deplasmandan-3-puanla-ayrildi/4116086",
+          "published_at": "2026-11-08T17:05:54+03:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": null,
+      "from_club": "Galatasaray",
+      "to_club": "Fenerbahçe",
+      "signal_type": "interest",
+      "window": "winter_2027",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "54aa38331443",
+      "title": "Matvey Kislyak'tan transfer açıklaması! Fenerbahçe ve Galatasaray peşindeydi",
+      "link": "https://www.takvim.com.tr/spor/2026/11/08/matvey-kislyaktan-transfer-aciklamasi-fenerbahce-ve-galatasaray",
+      "source": "Takvim Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "MEDIA",
+      "published_at": "2026-11-08T17:00:35+03:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Takvim Spor"
+      ],
+      "evidence": [
+        {
+          "source": "Takvim Spor",
           "source_tier": "MEDIA",
           "source_type": "rss",
           "account_type": null,
           "query": null,
-          "title": "Beşiktaş, yuvasında 6'da 6 peşinde!",
-          "link": "https://www.hurriyet.com.tr/sporarena/besiktas-yuvasinda-6da-6-pesinde-43369958",
-          "published_at": "2026-11-08T04:00:00+00:00",
+          "title": "Matvey Kislyak'tan transfer açıklaması! Fenerbahçe ve Galatasaray peşindeydi",
+          "link": "https://www.takvim.com.tr/spor/2026/11/08/matvey-kislyaktan-transfer-aciklamasi-fenerbahce-ve-galatasaray",
+          "published_at": "2026-11-08T17:00:35+03:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": null,
+      "from_club": null,
+      "to_club": "Rizespor",
+      "signal_type": "departure",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "0325e51a29e3",
+      "title": "Rizespor, sahasından galibiyetle ayrıldı",
+      "link": "https://www.aa.com.tr/tr/spor/rizespor-sahasindan-galibiyetle-ayrildi/4116052",
+      "source": "Anadolu Ajansı Spor",
+      "source_type": "rss",
+      "account_type": null,
+      "query": null,
+      "source_tier": "AGENCY",
+      "published_at": "2026-11-08T16:00:55+03:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Anadolu Ajansı Spor"
+      ],
+      "evidence": [
+        {
+          "source": "Anadolu Ajansı Spor",
+          "source_tier": "AGENCY",
+          "source_type": "rss",
+          "account_type": null,
+          "query": null,
+          "title": "Rizespor, sahasından galibiyetle ayrıldı",
+          "link": "https://www.aa.com.tr/tr/spor/rizespor-sahasindan-galibiyetle-ayrildi/4116052",
+          "published_at": "2026-11-08T16:00:55+03:00",
+          "first_observed_at": null
+        }
+      ],
+      "model_use": false
+    },
+    {
+      "player_name": null,
+      "from_club": "Galatasaray",
+      "to_club": "Fenerbahçe",
+      "signal_type": "interest",
+      "window": "summer_2026",
+      "confidence": "LOW",
+      "direction_quality": "PLAYER_UNRESOLVED",
+      "article_id": "7c10d6ff609d",
+      "title": "Fenerbahçe ve Galatasaray'ın peşinde olduğu isim belli oldu - Manisa Meydan Gazetesi",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPODJHQnVKS3p3b25OaXFBc2ExbmJiRjExZW1jM05rSGdhZXM2WFhrajFZdUNweWs5eElzWThFSTFMSUc4Y0wyRW82YjlqMzRnSjBPZlQ0NnhtdzRZcmRWQ2pxSDZSdTdLUFN2TnJLZllsS2xjVDNFTXhWdEdETnR1clE4X2NBQkVPbkI5VnRXY3hzbG1GRUFVa3RsaTJmN2sxRzAyOWluaTV0VE14NndHbmx0SHNVaTNT?oc=5",
+      "source": "Manisa Meydan Gazetesi",
+      "source_type": "google_news",
+      "account_type": null,
+      "query": "Galatasaray transfer",
+      "source_tier": "MEDIA",
+      "published_at": "2026-11-08T11:18:01+00:00",
+      "first_observed_at": null,
+      "summary_tr": "",
+      "entity_confidence": "LOW",
+      "verification_status": "REVIEW_REQUIRED",
+      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
+      "source_count": 1,
+      "sources": [
+        "Manisa Meydan Gazetesi"
+      ],
+      "evidence": [
+        {
+          "source": "Manisa Meydan Gazetesi",
+          "source_tier": "MEDIA",
+          "source_type": "google_news",
+          "account_type": null,
+          "query": "Galatasaray transfer",
+          "title": "Fenerbahçe ve Galatasaray'ın peşinde olduğu isim belli oldu - Manisa Meydan Gazetesi",
+          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPODJHQnVKS3p3b25OaXFBc2ExbmJiRjExZW1jM05rSGdhZXM2WFhrajFZdUNweWs5eElzWThFSTFMSUc4Y0wyRW82YjlqMzRnSjBPZlQ0NnhtdzRZcmRWQ2pxSDZSdTdLUFN2TnJLZllsS2xjVDNFTXhWdEdETnR1clE4X2NBQkVPbkI5VnRXY3hzbG1GRUFVa3RsaTJmN2sxRzAyOWluaTV0VE14NndHbmx0SHNVaTNT?oc=5",
+          "published_at": "2026-11-08T11:18:01+00:00",
           "first_observed_at": null
         }
       ],
@@ -1000,49 +1151,6 @@
           "title": "Spor yazarlarından Trabzonspor eleştirisi: \"Sağlıklı bir oyun değil\"",
           "link": "https://www.takvim.com.tr/spor/trabzonspor/2026/11/06/spor-yazarlari-trabzonspor-freiburg-macini-yorumladi",
           "published_at": "2026-11-06T09:47:05+03:00",
-          "first_observed_at": null
-        }
-      ],
-      "model_use": false
-    },
-    {
-      "player_name": "METEHAN BALTACI",
-      "from_club": "GENÇLERBİRLİĞİ",
-      "to_club": null,
-      "transfer_type": "permanent",
-      "window": "summer_2026",
-      "signal_type": "transfer_fee",
-      "confidence": "LOW",
-      "tm_market_value_eur": 1500000,
-      "direction_quality": "TARGET_UNRESOLVED",
-      "article_id": "2ace0ea34fa8",
-      "title": "Gençlerbirliği, Metehan Baltacı'nın bonservisini istiyor - T24",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOcHBVZGVlOFNMaXhrV1R4OWtxUllDdDhkcVhSalJ0eWtBMGlZT09oUEthQVJUTkRfZ2hHYnZKZ09TSUJpMEw3WHJMS0ZlZUljNEhBTjZSR3E5RGVIM3JvYlNNMzNQSG1lSVNnZ1IzcE92eXozU2YyQi1VWjhqaW93Tk5lR01xYzhYbUUyOW52RQ?oc=5",
-      "source": "T24",
-      "source_type": "google_news",
-      "account_type": null,
-      "query": "Gençlerbirliği transfer",
-      "source_tier": "MEDIA",
-      "published_at": "2026-11-06T03:27:00+00:00",
-      "first_observed_at": null,
-      "summary_tr": "",
-      "entity_confidence": "HIGH",
-      "verification_status": "REVIEW_REQUIRED",
-      "interpretation": "Oyuncu veya hedef kulüp net doğrulanamadı; transfer önerisine giremez.",
-      "source_count": 1,
-      "sources": [
-        "T24"
-      ],
-      "evidence": [
-        {
-          "source": "T24",
-          "source_tier": "MEDIA",
-          "source_type": "google_news",
-          "account_type": null,
-          "query": "Gençlerbirliği transfer",
-          "title": "Gençlerbirliği, Metehan Baltacı'nın bonservisini istiyor - T24",
-          "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOcHBVZGVlOFNMaXhrV1R4OWtxUllDdDhkcVhSalJ0eWtBMGlZT09oUEthQVJUTkRfZ2hHYnZKZ09TSUJpMEw3WHJMS0ZlZUljNEhBTjZSR3E5RGVIM3JvYlNNMzNQSG1lSVNnZ1IzcE92eXozU2YyQi1VWjhqaW93Tk5lR01xYzhYbUUyOW52RQ?oc=5",
-          "published_at": "2026-11-06T03:27:00+00:00",
           "first_observed_at": null
         }
       ],
