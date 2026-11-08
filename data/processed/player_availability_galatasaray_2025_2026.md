@@ -11,8 +11,8 @@
 
 ## Güncel Haber/Sakat-Cezalı Bağlamı
 
-- INJURED | GABRIEL DAVI GOMES SARA | kaynak=news_intelligence | güven=MEDIUM
-- INJURED | VICTOR JAMES OSIMHEN | kaynak=news_intelligence | güven=MEDIUM
+- INJURED | GABRIEL DAVI GOMES SARA | kaynak=news_intelligence | güven=HIGH
+- INJURED | CİHAN AKGÜN | kaynak=news_intelligence | güven=MEDIUM
 
 ## Maç Bazlı Eksikler
 
