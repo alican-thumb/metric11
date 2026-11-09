@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-11-08T22:02:07.564479",
+  "generated_at": "2026-11-09T01:46:09.073105",
   "season": "2026-2027",
   "summary": {
-    "evaluated_matches": 95,
-    "correct": 45,
-    "accuracy": 0.4737,
+    "evaluated_matches": 97,
+    "correct": 46,
+    "accuracy": 0.4742,
     "actual_draws": 16,
     "draws_caught": 3,
     "draw_recall": 0.1875,
     "high_conf_matches": 38,
     "high_conf_correct": 25,
     "high_conf_accuracy": 0.6579,
-    "brier_score": 0.601,
-    "log_loss": 1.0045,
+    "brier_score": 0.6017,
+    "log_loss": 1.0055,
     "confidence_breakdown": {
       "HIGH": {
         "matches": 38,
@@ -33,13 +33,13 @@
         "log_loss": 1.1403
       },
       "LOW": {
-        "matches": 27,
-        "correct": 11,
-        "accuracy": 0.4074,
-        "avg_stated_probability": 0.3737,
-        "calibration_gap": 0.0337,
-        "brier_score": 0.655,
-        "log_loss": 1.0844
+        "matches": 29,
+        "correct": 12,
+        "accuracy": 0.4138,
+        "avg_stated_probability": 0.3735,
+        "calibration_gap": 0.0403,
+        "brier_score": 0.6538,
+        "log_loss": 1.0822
       }
     },
     "pick_side_breakdown": {
@@ -54,23 +54,23 @@
         }
       },
       "draw": {
-        "matches": 11,
+        "matches": 12,
         "correct": 3,
-        "accuracy": 0.2727,
+        "accuracy": 0.25,
         "actual": {
-          "home": 4,
+          "home": 5,
           "draw": 3,
           "away": 4
         }
       },
       "away": {
-        "matches": 33,
-        "correct": 14,
-        "accuracy": 0.4242,
+        "matches": 34,
+        "correct": 15,
+        "accuracy": 0.4412,
         "actual": {
           "home": 13,
           "draw": 6,
-          "away": 14
+          "away": 15
         }
       }
     }
@@ -79,17 +79,17 @@
   "last_week": {
     "week": 11,
     "summary": {
-      "evaluated_matches": 5,
-      "correct": 1,
-      "accuracy": 0.2,
+      "evaluated_matches": 7,
+      "correct": 2,
+      "accuracy": 0.2857,
       "actual_draws": 0,
       "draws_caught": 0,
       "draw_recall": null,
       "high_conf_matches": 2,
       "high_conf_correct": 1,
       "high_conf_accuracy": 0.5,
-      "brier_score": 0.7293,
-      "log_loss": 1.2241,
+      "brier_score": 0.7028,
+      "log_loss": 1.1751,
       "confidence_breakdown": {
         "HIGH": {
           "matches": 2,
@@ -110,13 +110,13 @@
           "log_loss": 1.5308
         },
         "LOW": {
-          "matches": 1,
-          "correct": 0,
-          "accuracy": 0.0,
-          "avg_stated_probability": 0.317,
-          "calibration_gap": -0.317,
-          "brier_score": 0.5411,
-          "log_loss": 0.9163
+          "matches": 3,
+          "correct": 1,
+          "accuracy": 0.3333,
+          "avg_stated_probability": 0.3533,
+          "calibration_gap": -0.02,
+          "brier_score": 0.6046,
+          "log_loss": 1.0071
         }
       },
       "pick_side_breakdown": {
@@ -131,23 +131,23 @@
           }
         },
         "draw": {
-          "matches": 2,
+          "matches": 3,
           "correct": 0,
           "accuracy": 0.0,
           "actual": {
-            "home": 1,
+            "home": 2,
             "draw": 0,
             "away": 1
           }
         },
         "away": {
-          "matches": 2,
-          "correct": 1,
-          "accuracy": 0.5,
+          "matches": 3,
+          "correct": 2,
+          "accuracy": 0.6667,
           "actual": {
             "home": 1,
             "draw": 0,
-            "away": 1
+            "away": 2
           }
         }
       }
@@ -232,6 +232,38 @@
         "home_win_probability": 0.607,
         "draw_probability": 0.227,
         "away_win_probability": 0.166
+      },
+      {
+        "match_id": "317877",
+        "date_time": "08.11.2026 13:30",
+        "home_team": "ÇAYKUR RİZESPOR A.Ş.",
+        "away_team": "ERZURUMSPOR FK",
+        "actual_score": "2 - 1",
+        "actual": "home",
+        "predicted": "draw",
+        "raw_predicted": "draw",
+        "correct": false,
+        "data_confidence": "PLAYED",
+        "prediction_confidence": "LOW",
+        "home_win_probability": 0.314,
+        "draw_probability": 0.355,
+        "away_win_probability": 0.331
+      },
+      {
+        "match_id": "317879",
+        "date_time": "08.11.2026 16:00",
+        "home_team": "ARCA ÇORUM FK",
+        "away_team": "FENERBAHÇE A.Ş.",
+        "actual_score": "0 - 5",
+        "actual": "away",
+        "predicted": "away",
+        "raw_predicted": "away",
+        "correct": true,
+        "data_confidence": "PLAYED",
+        "prediction_confidence": "LOW",
+        "home_win_probability": 0.352,
+        "draw_probability": 0.261,
+        "away_win_probability": 0.388
       }
     ]
   },
@@ -2469,17 +2501,17 @@
     {
       "week": 11,
       "summary": {
-        "evaluated_matches": 5,
-        "correct": 1,
-        "accuracy": 0.2,
+        "evaluated_matches": 7,
+        "correct": 2,
+        "accuracy": 0.2857,
         "actual_draws": 0,
         "draws_caught": 0,
         "draw_recall": null,
         "high_conf_matches": 2,
         "high_conf_correct": 1,
         "high_conf_accuracy": 0.5,
-        "brier_score": 0.7293,
-        "log_loss": 1.2241,
+        "brier_score": 0.7028,
+        "log_loss": 1.1751,
         "confidence_breakdown": {
           "HIGH": {
             "matches": 2,
@@ -2500,13 +2532,13 @@
             "log_loss": 1.5308
           },
           "LOW": {
-            "matches": 1,
-            "correct": 0,
-            "accuracy": 0.0,
-            "avg_stated_probability": 0.317,
-            "calibration_gap": -0.317,
-            "brier_score": 0.5411,
-            "log_loss": 0.9163
+            "matches": 3,
+            "correct": 1,
+            "accuracy": 0.3333,
+            "avg_stated_probability": 0.3533,
+            "calibration_gap": -0.02,
+            "brier_score": 0.6046,
+            "log_loss": 1.0071
           }
         },
         "pick_side_breakdown": {
@@ -2521,23 +2553,23 @@
             }
           },
           "draw": {
-            "matches": 2,
+            "matches": 3,
             "correct": 0,
             "accuracy": 0.0,
             "actual": {
-              "home": 1,
+              "home": 2,
               "draw": 0,
               "away": 1
             }
           },
           "away": {
-            "matches": 2,
-            "correct": 1,
-            "accuracy": 0.5,
+            "matches": 3,
+            "correct": 2,
+            "accuracy": 0.6667,
             "actual": {
               "home": 1,
               "draw": 0,
-              "away": 1
+              "away": 2
             }
           }
         }
@@ -2622,6 +2654,38 @@
           "home_win_probability": 0.607,
           "draw_probability": 0.227,
           "away_win_probability": 0.166
+        },
+        {
+          "match_id": "317877",
+          "date_time": "08.11.2026 13:30",
+          "home_team": "ÇAYKUR RİZESPOR A.Ş.",
+          "away_team": "ERZURUMSPOR FK",
+          "actual_score": "2 - 1",
+          "actual": "home",
+          "predicted": "draw",
+          "raw_predicted": "draw",
+          "correct": false,
+          "data_confidence": "PLAYED",
+          "prediction_confidence": "LOW",
+          "home_win_probability": 0.314,
+          "draw_probability": 0.355,
+          "away_win_probability": 0.331
+        },
+        {
+          "match_id": "317879",
+          "date_time": "08.11.2026 16:00",
+          "home_team": "ARCA ÇORUM FK",
+          "away_team": "FENERBAHÇE A.Ş.",
+          "actual_score": "0 - 5",
+          "actual": "away",
+          "predicted": "away",
+          "raw_predicted": "away",
+          "correct": true,
+          "data_confidence": "PLAYED",
+          "prediction_confidence": "LOW",
+          "home_win_probability": 0.352,
+          "draw_probability": 0.261,
+          "away_win_probability": 0.388
         }
       ]
     }

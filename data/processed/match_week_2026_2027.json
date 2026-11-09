@@ -1,6 +1,6 @@
 {
   "available": true,
-  "generated_at": "2026-11-08T22:02:07.649698",
+  "generated_at": "2026-11-09T01:46:09.155039",
   "week": 11,
   "matches": [
     {
@@ -123,68 +123,46 @@
       "date": "8 Kas",
       "home_team": "ÇAYKUR RİZESPOR A.Ş.",
       "away_team": "ERZURUMSPOR FK",
-      "is_played": false,
-      "actual_score": null,
+      "is_played": true,
+      "actual_score": "2 - 1",
       "predicted": "draw",
       "published_pick": null,
       "publication_decision": "NO_STRONG_PICK",
       "publication_label": "Net seçim yok",
       "publication_reason": "Net seçim yok",
-      "pick_text": "Net seçim yok",
+      "pick_text": "Beraberlik",
       "model_pick_text": "Beraberlik",
       "home_win_probability": 0.314,
       "draw_probability": 0.355,
       "away_win_probability": 0.331,
-      "data_confidence": "LOW_NEW_TEAM",
+      "data_confidence": "PLAYED",
       "recommended_scoreline": "0-0",
       "expected_home_goals": 0.78,
       "expected_away_goals": 0.81,
-      "signals": {
-        "over_2_5_probability": 0.214,
-        "btts_probability": 0.301,
-        "expected_total_cards": 3.0,
-        "red_card_risk": 0.091,
-        "home_card_data_available": true,
-        "away_card_data_available": true,
-        "no_goal_probability": 0.204,
-        "home_scores_first_probability": 0.391,
-        "away_scores_first_probability": 0.406,
-        "likely_goal_band": "76-90+"
-      }
+      "signals": null
     },
     {
       "match_id": "317879",
       "date": "8 Kas",
       "home_team": "ARCA ÇORUM FK",
       "away_team": "FENERBAHÇE A.Ş.",
-      "is_played": false,
-      "actual_score": null,
+      "is_played": true,
+      "actual_score": "0 - 5",
       "predicted": "away",
       "published_pick": null,
       "publication_decision": "NO_STRONG_PICK",
       "publication_label": "Net seçim yok",
       "publication_reason": "Net seçim yok",
-      "pick_text": "Net seçim yok",
+      "pick_text": "FENERBAHÇE A.Ş.",
       "model_pick_text": "FENERBAHÇE A.Ş.",
       "home_win_probability": 0.352,
       "draw_probability": 0.261,
       "away_win_probability": 0.388,
-      "data_confidence": "LOW",
+      "data_confidence": "PLAYED",
       "recommended_scoreline": "0-1",
       "expected_home_goals": 1.29,
       "expected_away_goals": 1.37,
-      "signals": {
-        "over_2_5_probability": 0.497,
-        "btts_probability": 0.541,
-        "expected_total_cards": 3.1,
-        "red_card_risk": 0.141,
-        "home_card_data_available": true,
-        "away_card_data_available": true,
-        "no_goal_probability": 0.07,
-        "home_scores_first_probability": 0.451,
-        "away_scores_first_probability": 0.479,
-        "likely_goal_band": "76-90+"
-      }
+      "signals": null
     },
     {
       "match_id": "317876",
@@ -257,17 +235,17 @@
   ],
   "last_week": {
     "week": 11,
-    "evaluated_matches": 5,
-    "correct": 1,
-    "accuracy": 0.2,
+    "evaluated_matches": 7,
+    "correct": 2,
+    "accuracy": 0.2857,
     "actual_draws": 0,
     "draws_caught": 0,
     "draw_recall": null,
     "high_conf_matches": 2,
     "high_conf_correct": 1,
     "high_conf_accuracy": 0.5,
-    "brier_score": 0.7293,
-    "log_loss": 1.2241,
+    "brier_score": 0.7028,
+    "log_loss": 1.1751,
     "confidence_breakdown": {
       "HIGH": {
         "matches": 2,
@@ -288,13 +266,13 @@
         "log_loss": 1.5308
       },
       "LOW": {
-        "matches": 1,
-        "correct": 0,
-        "accuracy": 0.0,
-        "avg_stated_probability": 0.317,
-        "calibration_gap": -0.317,
-        "brier_score": 0.5411,
-        "log_loss": 0.9163
+        "matches": 3,
+        "correct": 1,
+        "accuracy": 0.3333,
+        "avg_stated_probability": 0.3533,
+        "calibration_gap": -0.02,
+        "brier_score": 0.6046,
+        "log_loss": 1.0071
       }
     },
     "pick_side_breakdown": {
@@ -309,23 +287,23 @@
         }
       },
       "draw": {
-        "matches": 2,
+        "matches": 3,
         "correct": 0,
         "accuracy": 0.0,
         "actual": {
-          "home": 1,
+          "home": 2,
           "draw": 0,
           "away": 1
         }
       },
       "away": {
-        "matches": 2,
-        "correct": 1,
-        "accuracy": 0.5,
+        "matches": 3,
+        "correct": 2,
+        "accuracy": 0.6667,
         "actual": {
           "home": 1,
           "draw": 0,
-          "away": 1
+          "away": 2
         }
       }
     }
