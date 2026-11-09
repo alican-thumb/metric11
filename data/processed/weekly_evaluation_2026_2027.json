@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-11-09T01:46:09.073105",
+  "generated_at": "2026-11-09T06:17:26.307068",
   "season": "2026-2027",
   "summary": {
-    "evaluated_matches": 97,
-    "correct": 46,
-    "accuracy": 0.4742,
+    "evaluated_matches": 99,
+    "correct": 48,
+    "accuracy": 0.4848,
     "actual_draws": 16,
     "draws_caught": 3,
     "draw_recall": 0.1875,
-    "high_conf_matches": 38,
-    "high_conf_correct": 25,
-    "high_conf_accuracy": 0.6579,
-    "brier_score": 0.6017,
-    "log_loss": 1.0055,
+    "high_conf_matches": 40,
+    "high_conf_correct": 27,
+    "high_conf_accuracy": 0.675,
+    "brier_score": 0.5936,
+    "log_loss": 0.9942,
     "confidence_breakdown": {
       "HIGH": {
-        "matches": 38,
-        "correct": 25,
-        "accuracy": 0.6579,
-        "avg_stated_probability": 0.6047,
-        "calibration_gap": 0.0532,
-        "brier_score": 0.484,
-        "log_loss": 0.8405
+        "matches": 40,
+        "correct": 27,
+        "accuracy": 0.675,
+        "avg_stated_probability": 0.6066,
+        "calibration_gap": 0.0684,
+        "brier_score": 0.4697,
+        "log_loss": 0.8208
       },
       "MEDIUM": {
         "matches": 30,
@@ -44,11 +44,11 @@
     },
     "pick_side_breakdown": {
       "home": {
-        "matches": 51,
-        "correct": 28,
-        "accuracy": 0.549,
+        "matches": 52,
+        "correct": 29,
+        "accuracy": 0.5577,
         "actual": {
-          "home": 28,
+          "home": 29,
           "draw": 7,
           "away": 16
         }
@@ -64,13 +64,13 @@
         }
       },
       "away": {
-        "matches": 34,
-        "correct": 15,
-        "accuracy": 0.4412,
+        "matches": 35,
+        "correct": 16,
+        "accuracy": 0.4571,
         "actual": {
           "home": 13,
           "draw": 6,
-          "away": 15
+          "away": 16
         }
       }
     }
@@ -79,26 +79,26 @@
   "last_week": {
     "week": 11,
     "summary": {
-      "evaluated_matches": 7,
-      "correct": 2,
-      "accuracy": 0.2857,
+      "evaluated_matches": 9,
+      "correct": 4,
+      "accuracy": 0.4444,
       "actual_draws": 0,
       "draws_caught": 0,
       "draw_recall": null,
-      "high_conf_matches": 2,
-      "high_conf_correct": 1,
-      "high_conf_accuracy": 0.5,
-      "brier_score": 0.7028,
-      "log_loss": 1.1751,
+      "high_conf_matches": 4,
+      "high_conf_correct": 3,
+      "high_conf_accuracy": 0.75,
+      "brier_score": 0.5905,
+      "log_loss": 1.0128,
       "confidence_breakdown": {
         "HIGH": {
-          "matches": 2,
-          "correct": 1,
-          "accuracy": 0.5,
-          "avg_stated_probability": 0.657,
-          "calibration_gap": -0.157,
-          "brier_score": 0.625,
-          "log_loss": 1.0712
+          "matches": 4,
+          "correct": 3,
+          "accuracy": 0.75,
+          "avg_stated_probability": 0.6498,
+          "calibration_gap": 0.1002,
+          "brier_score": 0.4114,
+          "log_loss": 0.758
         },
         "MEDIUM": {
           "matches": 2,
@@ -121,11 +121,11 @@
       },
       "pick_side_breakdown": {
         "home": {
-          "matches": 1,
-          "correct": 0,
-          "accuracy": 0.0,
+          "matches": 2,
+          "correct": 1,
+          "accuracy": 0.5,
           "actual": {
-            "home": 0,
+            "home": 1,
             "draw": 0,
             "away": 1
           }
@@ -141,13 +141,13 @@
           }
         },
         "away": {
-          "matches": 3,
-          "correct": 2,
-          "accuracy": 0.6667,
+          "matches": 4,
+          "correct": 3,
+          "accuracy": 0.75,
           "actual": {
             "home": 1,
             "draw": 0,
-            "away": 2
+            "away": 3
           }
         }
       }
@@ -264,6 +264,38 @@
         "home_win_probability": 0.352,
         "draw_probability": 0.261,
         "away_win_probability": 0.388
+      },
+      {
+        "match_id": "317876",
+        "date_time": "08.11.2026 18:30",
+        "home_team": "CORENDON ALANYASPOR",
+        "away_team": "TRABZONSPOR A.Ş.",
+        "actual_score": "0 - 2",
+        "actual": "away",
+        "predicted": "away",
+        "raw_predicted": "away",
+        "correct": true,
+        "data_confidence": "PLAYED",
+        "prediction_confidence": "HIGH",
+        "home_win_probability": 0.1,
+        "draw_probability": 0.214,
+        "away_win_probability": 0.686
+      },
+      {
+        "match_id": "317881",
+        "date_time": "08.11.2026 21:00",
+        "home_team": "BEŞİKTAŞ A.Ş.",
+        "away_team": "GENÇLERBİRLİĞİ",
+        "actual_score": "3 - 0",
+        "actual": "home",
+        "predicted": "home",
+        "raw_predicted": "home",
+        "correct": true,
+        "data_confidence": "PLAYED",
+        "prediction_confidence": "HIGH",
+        "home_win_probability": 0.599,
+        "draw_probability": 0.207,
+        "away_win_probability": 0.194
       }
     ]
   },
@@ -2501,26 +2533,26 @@
     {
       "week": 11,
       "summary": {
-        "evaluated_matches": 7,
-        "correct": 2,
-        "accuracy": 0.2857,
+        "evaluated_matches": 9,
+        "correct": 4,
+        "accuracy": 0.4444,
         "actual_draws": 0,
         "draws_caught": 0,
         "draw_recall": null,
-        "high_conf_matches": 2,
-        "high_conf_correct": 1,
-        "high_conf_accuracy": 0.5,
-        "brier_score": 0.7028,
-        "log_loss": 1.1751,
+        "high_conf_matches": 4,
+        "high_conf_correct": 3,
+        "high_conf_accuracy": 0.75,
+        "brier_score": 0.5905,
+        "log_loss": 1.0128,
         "confidence_breakdown": {
           "HIGH": {
-            "matches": 2,
-            "correct": 1,
-            "accuracy": 0.5,
-            "avg_stated_probability": 0.657,
-            "calibration_gap": -0.157,
-            "brier_score": 0.625,
-            "log_loss": 1.0712
+            "matches": 4,
+            "correct": 3,
+            "accuracy": 0.75,
+            "avg_stated_probability": 0.6498,
+            "calibration_gap": 0.1002,
+            "brier_score": 0.4114,
+            "log_loss": 0.758
           },
           "MEDIUM": {
             "matches": 2,
@@ -2543,11 +2575,11 @@
         },
         "pick_side_breakdown": {
           "home": {
-            "matches": 1,
-            "correct": 0,
-            "accuracy": 0.0,
+            "matches": 2,
+            "correct": 1,
+            "accuracy": 0.5,
             "actual": {
-              "home": 0,
+              "home": 1,
               "draw": 0,
               "away": 1
             }
@@ -2563,13 +2595,13 @@
             }
           },
           "away": {
-            "matches": 3,
-            "correct": 2,
-            "accuracy": 0.6667,
+            "matches": 4,
+            "correct": 3,
+            "accuracy": 0.75,
             "actual": {
               "home": 1,
               "draw": 0,
-              "away": 2
+              "away": 3
             }
           }
         }
@@ -2686,6 +2718,38 @@
           "home_win_probability": 0.352,
           "draw_probability": 0.261,
           "away_win_probability": 0.388
+        },
+        {
+          "match_id": "317876",
+          "date_time": "08.11.2026 18:30",
+          "home_team": "CORENDON ALANYASPOR",
+          "away_team": "TRABZONSPOR A.Ş.",
+          "actual_score": "0 - 2",
+          "actual": "away",
+          "predicted": "away",
+          "raw_predicted": "away",
+          "correct": true,
+          "data_confidence": "PLAYED",
+          "prediction_confidence": "HIGH",
+          "home_win_probability": 0.1,
+          "draw_probability": 0.214,
+          "away_win_probability": 0.686
+        },
+        {
+          "match_id": "317881",
+          "date_time": "08.11.2026 21:00",
+          "home_team": "BEŞİKTAŞ A.Ş.",
+          "away_team": "GENÇLERBİRLİĞİ",
+          "actual_score": "3 - 0",
+          "actual": "home",
+          "predicted": "home",
+          "raw_predicted": "home",
+          "correct": true,
+          "data_confidence": "PLAYED",
+          "prediction_confidence": "HIGH",
+          "home_win_probability": 0.599,
+          "draw_probability": 0.207,
+          "away_win_probability": 0.194
         }
       ]
     }

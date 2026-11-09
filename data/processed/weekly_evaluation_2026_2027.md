@@ -4,12 +4,12 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 
 ## Genel Karne
 
-- Değerlendirilen maç: **97**
-- İsabet: **46/97** (%47)
+- Değerlendirilen maç: **99**
+- İsabet: **48/99** (%48)
 - Beraberlik yakalama: **3/16** (%19)
-- Yüksek güvenli maç isabeti: **25/38** (%66)
-- Brier score: **0.602** (düşük daha iyi; 2025-26 referans 0.600)
-- Log loss: **1.006** (düşük daha iyi; 2025-26 referans 1.005)
+- Yüksek güvenli maç isabeti: **27/40** (%68)
+- Brier score: **0.594** (düşük daha iyi; 2025-26 referans 0.600)
+- Log loss: **0.994** (düşük daha iyi; 2025-26 referans 1.005)
 
 ### Güven bandı kalibrasyonu
 
@@ -17,7 +17,7 @@ _"Beyan edilen ort. olasılık" ile "İsabet" arasındaki fark büyükse (özell
 
 | Güven bandı | Maç | İsabet | Beyan edilen ort. olasılık | Brier | Log loss | Referans (2025-26: isabet / brier / logloss) |
 | --- | --- | --- | --- | --- | --- | --- |
-| HIGH | 38 | 25/38 (%66) | %60 | 0.484 | 0.841 | %64 / 0.516 / 0.885 |
+| HIGH | 40 | 27/40 (%68) | %61 | 0.470 | 0.821 | %64 / 0.516 / 0.885 |
 | MEDIUM | 30 | 9/30 (%30) | %46 | 0.701 | 1.140 | %54 / 0.619 / 1.032 |
 | LOW | 29 | 12/29 (%41) | %37 | 0.654 | 1.082 | %48 / 0.670 / 1.103 |
 
@@ -27,13 +27,13 @@ _Model hangi tarafı seçtiğinde ne oldu? Belirli bir seçimde (ör. deplasman 
 
 | Seçim | Maç | İsabet | Gerçekleşen (Ev / X / Dep) |
 | --- | --- | --- | --- |
-| Ev | 51 | 28/51 (%55) | 28 / 7 / 16 |
+| Ev | 52 | 29/52 (%56) | 29 / 7 / 16 |
 | Beraberlik | 12 | 3/12 (%25) | 5 / 3 / 4 |
-| Deplasman | 34 | 15/34 (%44) | 13 / 6 / 15 |
+| Deplasman | 35 | 16/35 (%46) | 13 / 6 / 16 |
 
 [Olasılık kovaları ve seçici yayın politikası →](prediction_calibration_audit_2026_2027.html)
 
-## Hafta 11 — 2/7 isabet (%29)
+## Hafta 11 — 4/9 isabet (%44)
 
 | Maç | Skor | Tahmin | Sonuç | Güven |
 | --- | --- | --- | --- | --- |
@@ -44,6 +44,8 @@ _Model hangi tarafı seçtiğinde ne oldu? Belirli bir seçimde (ör. deplasman 
 | GÖZTEPE A.Ş. - İSTANBUL BAŞAKŞEHİR FK | 1 - 2 | Ev | ❌ | HIGH |
 | ÇAYKUR RİZESPOR A.Ş. - ERZURUMSPOR FK | 2 - 1 | Beraberlik | ❌ | LOW |
 | ARCA ÇORUM FK - FENERBAHÇE A.Ş. | 0 - 5 | Deplasman | ✅ | LOW |
+| CORENDON ALANYASPOR - TRABZONSPOR A.Ş. | 0 - 2 | Deplasman | ✅ | HIGH |
+| BEŞİKTAŞ A.Ş. - GENÇLERBİRLİĞİ | 3 - 0 | Ev | ✅ | HIGH |
 
 ## Hafta 10 — 5/9 isabet (%56)
 
