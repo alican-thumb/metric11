@@ -21,6 +21,7 @@ _PUBLIC_PAGES = [
     ("weekly_evaluation_2026_2027.html", 0.9, "daily"),
     ("prediction_calibration_audit_2026_2027.html", 0.7, "daily"),
     ("super-lig-sampiyonluk-oranlari-2026-27.html", 1.0, "daily"),
+    ("super-lig-sampiyonluk-senaryolari-2026-27.html", 1.0, "daily"),
     ("european_predictions_2026_2027.html", 1.0, "daily"),
     ("worldcup_2026_predictions.html", 1.0, "daily"),
     (f"transfer_tracker_{SEASON}.html", 0.9, "daily"),
@@ -68,15 +69,10 @@ def build_sitemap() -> str:
     today = date.today().isoformat()
     urls = []
     for path, priority, freq in _PUBLIC_PAGES:
-        full = f"{BASE_URL}/{path}"
-        urls.append(
-            f"  <url>\n"
-            f"    <loc>{full}</loc>\n"
-            f"    <lastmod>{today}</lastmod>\n"
-            f"    <changefreq>{freq}</changefreq>\n"
-            f"    <priority>{priority:.1f}</priority>\n"
-            f"  </url>"
-        )
+        # Google yalnız doğru ve doğrulanabilir lastmod değerlerini kullanır. Günlük/haftalık
+        # canlı sayfalar pipeline ile gerçekten yenilenir; donmuş arşivlerde sahte tazelik
+        # sinyali vermemek için lastmod alanı yazılmaz.
+        urls.append(_url_entry(path, today if freq in {"daily", "weekly"} else None, freq, priority))
     urls += _match_page_urls(today)
     body = "\n".join(urls)
     return (
@@ -87,11 +83,12 @@ def build_sitemap() -> str:
     )
 
 
-def _url_entry(path: str, lastmod: str, freq: str, priority: float) -> str:
+def _url_entry(path: str, lastmod: str | None, freq: str, priority: float) -> str:
+    lastmod_xml = f"    <lastmod>{lastmod}</lastmod>\n" if lastmod else ""
     return (
         f"  <url>\n"
         f"    <loc>{BASE_URL}/{path}</loc>\n"
-        f"    <lastmod>{lastmod}</lastmod>\n"
+        f"{lastmod_xml}"
         f"    <changefreq>{freq}</changefreq>\n"
         f"    <priority>{priority:.1f}</priority>\n"
         f"  </url>"

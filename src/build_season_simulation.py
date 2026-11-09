@@ -23,12 +23,24 @@ from src.config import PROCESSED_DIR
 from src.html_utils import _share_button, page_html
 
 N_SIMS = 20_000
+SCENARIO_SIMS = 8_000
 SEED = 2026
 RELEGATION_SPOTS = 3
 PAGE_PATH = "super-lig-sampiyonluk-oranlari-2026-27.html"
+SCENARIO_PAGE_PATH = "super-lig-sampiyonluk-senaryolari-2026-27.html"
 OUTPUT_JSON = PROCESSED_DIR / "season_simulation_2026_2027.json"
+SCENARIO_OUTPUT_JSON = PROCESSED_DIR / "season_scenarios_2026_2027.json"
 HISTORY_JSON = PROCESSED_DIR / "season_simulation_history_2026_2027.json"
 BASE_URL = "https://metric11.com"
+
+
+def _match_key(week_no: int, match: dict) -> str:
+    """Sağlayıcı maç kimliği yoksa da koşullu simülasyon için kararlı anahtar üretir."""
+    return str(match.get("match_id") or f'{week_no}:{match["home_team"]}:{match["away_team"]}')
+
+
+def _tr_int(value: int) -> str:
+    return f"{value:,}".replace(",", ".")
 
 
 def _goals(score: str) -> tuple[int, int]:
@@ -98,8 +110,17 @@ def _blend_with_prior(home: str, away: str, ph: float, pd: float, pa: float, mv:
     return tuple(x / total for x in mixed)
 
 
-def simulate(weeks: list[dict], table: dict[str, dict]) -> dict[str, dict]:
+def simulate(
+    weeks: list[dict],
+    table: dict[str, dict],
+    *,
+    forced_results: dict[str, str] | None = None,
+    n_sims: int = N_SIMS,
+    seed: int = SEED,
+) -> dict[str, dict]:
+    """Kalan sezonu simüle eder; istenen maçlar home/draw/away sonucuna sabitlenebilir."""
     mv = _market_values()
+    forced_results = forced_results or {}
     remaining = []
     for week in weeks:
         for m in week["matches"]:
@@ -109,16 +130,27 @@ def simulate(weeks: list[dict], table: dict[str, dict]) -> dict[str, dict]:
                 m["home_team"], m["away_team"],
                 m.get("home_win_probability") or 0, m.get("draw_probability") or 0, m.get("away_win_probability") or 0, mv,
             )
-            remaining.append((m["home_team"], m["away_team"], ph, ph + pd))
+            remaining.append((_match_key(week["week"], m), m["home_team"], m["away_team"], ph, ph + pd))
     teams = sorted(table)
     n = len(teams)
-    rng = random.Random(SEED)
+    rng = random.Random(seed)
     counts = {t: {"champion": 0, "top2": 0, "top4": 0, "relegated": 0, "pts_sum": 0, "pos_sum": 0} for t in teams}
     base_pts = {t: table[t]["pts"] for t in teams}
     gd = {t: table[t]["gf"] - table[t]["ga"] for t in teams}
-    for _ in range(N_SIMS):
+    for _ in range(n_sims):
         pts = dict(base_pts)
-        for home, away, p_home, p_home_or_draw in remaining:
+        for match_id, home, away, p_home, p_home_or_draw in remaining:
+            forced = forced_results.get(match_id)
+            if forced == "home":
+                pts[home] += 3
+                continue
+            if forced == "draw":
+                pts[home] += 1
+                pts[away] += 1
+                continue
+            if forced == "away":
+                pts[away] += 3
+                continue
             r = rng.random()
             if r < p_home:
                 pts[home] += 3
@@ -144,12 +176,12 @@ def simulate(weeks: list[dict], table: dict[str, dict]) -> dict[str, dict]:
     for team in teams:
         c = counts[team]
         out[team] = {
-            "champion": round(c["champion"] / N_SIMS, 4),
-            "top2": round(c["top2"] / N_SIMS, 4),
-            "top4": round(c["top4"] / N_SIMS, 4),
-            "relegated": round(c["relegated"] / N_SIMS, 4),
-            "avg_points": round(c["pts_sum"] / N_SIMS, 1),
-            "avg_position": round(c["pos_sum"] / N_SIMS, 1),
+            "champion": round(c["champion"] / n_sims, 4),
+            "top2": round(c["top2"] / n_sims, 4),
+            "top4": round(c["top4"] / n_sims, 4),
+            "relegated": round(c["relegated"] / n_sims, 4),
+            "avg_points": round(c["pts_sum"] / n_sims, 1),
+            "avg_position": round(c["pos_sum"] / n_sims, 1),
         }
     return out
 
@@ -218,7 +250,7 @@ def build_html(payload: dict, prev: dict | None) -> str:
     intro = (
         f"{wk}. hafta sonu itibarıyla metric11 modeline göre şampiyonluk favorisi "
         f"{leader['name']} ({_pct(leader['sim']['champion'])}). Kalan {payload['remaining_matches']} maç, "
-        f"her maçın kazanma/beraberlik olasılığıyla {N_SIMS:,} kez simüle edildi.".replace(",", ".")
+        f"her maçın kazanma/beraberlik olasılığıyla {_tr_int(N_SIMS)} kez simüle edildi."
     )
     delta_note = f" Oklar {prev['after_week']}. hafta sonrasına göre değişimi gösterir." if prev else ""
     body = (
@@ -226,6 +258,7 @@ def build_html(payload: dict, prev: dict | None) -> str:
         + f'<div class="mp-hero"><h1>Süper Lig şampiyonluk oranları</h1>'
         f'<div class="mp-meta">Trendyol Süper Lig 2026-27 · {wk}. hafta sonrası · güncelleme {escape(payload["generated_on"])}</div></div>'
         + f'<div class="mp-card"><p>{escape(intro)}</p></div>'
+        + f'<a class="mp-cta" href="{SCENARIO_PAGE_PATH}">🔀 Kazanırsa ne olur? Şampiyonluk senaryolarını gör →</a>'
         + f'<div class="mp-card"><h2>Şampiyonluk olasılığı</h2><div class="mp-bars">{bars}</div></div>'
         + f'<div class="mp-card"><h2>Küme düşme olasılığı (son 3)</h2><div class="mp-bars">{danger_bars}</div></div>'
         + '<div class="mp-card" style="overflow-x:auto"><h2>Puan durumu ve sezon sonu olasılıkları</h2>'
@@ -243,7 +276,7 @@ def build_html(payload: dict, prev: dict | None) -> str:
     title = f"Süper Lig Şampiyonluk Oranları 2026-27 ({wk}. Hafta Sonrası)"
     description = (
         f"Süper Lig 2026-27 şampiyonluk, ilk 4 ve küme düşme olasılıkları: {leader['name']} {_pct(leader['sim']['champion'])}. "
-        f"{wk}. hafta sonrası {N_SIMS:,} sezon simülasyonu.".replace(",", ".")
+        f"{wk}. hafta sonrası {_tr_int(N_SIMS)} sezon simülasyonu."
     )
     return page_html(title, body, description=description, active_nav="season_fixture_predictions_2026_2027.html", canonical_path=PAGE_PATH)
 
@@ -309,6 +342,7 @@ def build_team_page(row: dict, rank: int, weeks: list[dict]) -> str:
         '<table class="mp-week"><tr><th>H</th><th>Tarih</th><th>Rakip</th><th>Tahmin</th><th>Skor</th></tr>'
         + "".join(rows) + "</table></div>"
         + f'<div class="mp-card mp-links"><a href="{PAGE_PATH}">🏆 Şampiyonluk oranları</a>'
+        f'<a href="{SCENARIO_PAGE_PATH}">🔀 Şampiyonluk senaryoları</a>'
         f'<a href="season_fixture_predictions_2026_2027.html">Tüm fikstür</a><a href="https://tahmin.metric11.com/taraftar">🔥 {escape(name)} taraftarı mısın? Amigo Ligi</a></div>'
         + _share_button(f"{BASE_URL}/{path}", f"{name} 2026-27: şampiyonluk {_pct(s['champion'])}, beklenen puan {s['avg_points']:.0f} — metric11")
     )
@@ -318,6 +352,151 @@ def build_team_page(row: dict, rank: int, weeks: list[dict]) -> str:
         f"ilk 4 {_pct(s['top4'])}, beklenen sezon sonu puanı {s['avg_points']:.0f}."
     )
     return page_html(title, body, description=description, active_nav="season_fixture_predictions_2026_2027.html", canonical_path=path)
+
+
+def build_scenario_payload(payload: dict, weeks: list[dict], table: dict[str, dict]) -> dict:
+    """Öne çıkan takımların sıradaki maçı için kazanır/berabere/kaybeder koşullu oranları."""
+    ranked = sorted(payload["teams"], key=lambda row: (-row["sim"]["champion"], -row["sim"]["top4"]))
+    contenders = [row for row in ranked if row["sim"]["champion"] >= 0.005 or row["sim"]["top4"] >= 0.25][:6]
+    scenarios = []
+    for row in contenders:
+        team = row["team"]
+        next_match = next(
+            (
+                (week["week"], match)
+                for week in weeks
+                for match in week["matches"]
+                if not match.get("is_played") and team in (match["home_team"], match["away_team"])
+            ),
+            None,
+        )
+        if not next_match:
+            continue
+        week_no, match = next_match
+        is_home = match["home_team"] == team
+        forced_by_team_result = {
+            "win": "home" if is_home else "away",
+            "draw": "draw",
+            "loss": "away" if is_home else "home",
+        }
+        outcomes = {}
+        for label, forced in forced_by_team_result.items():
+            conditioned = simulate(
+                weeks,
+                table,
+                forced_results={_match_key(week_no, match): forced},
+                n_sims=SCENARIO_SIMS,
+                seed=SEED,
+            )[team]
+            outcomes[label] = conditioned
+        scenarios.append(
+            {
+                "team": team,
+                "name": row["name"],
+                "baseline": row["sim"],
+                "next_match": {
+                    "match_id": match.get("match_id"),
+                    "week": week_no,
+                    "home_team": match["home_team"],
+                    "away_team": match["away_team"],
+                    "opponent": match["away_team"] if is_home else match["home_team"],
+                    "is_home": is_home,
+                    "date_time": match.get("date_time"),
+                    "page_path": match_page_path(match["home_team"], match["away_team"]),
+                },
+                "outcomes": outcomes,
+                "swing": round(outcomes["win"]["champion"] - outcomes["loss"]["champion"], 4),
+            }
+        )
+    return {
+        "generated_on": payload["generated_on"],
+        "after_week": payload["after_week"],
+        "n_sims_per_outcome": SCENARIO_SIMS,
+        "page_path": SCENARIO_PAGE_PATH,
+        "scenarios": scenarios,
+    }
+
+
+def _scenario_delta(value: float, baseline: float) -> str:
+    diff = round((value - baseline) * 100)
+    if diff == 0:
+        return ""
+    cls = "#116447" if diff > 0 else "#b42318"
+    return f' <span style="color:{cls};font-size:11px;font-weight:700">({diff:+d})</span>'
+
+
+def build_scenario_html(scenario_payload: dict) -> str:
+    scenarios = scenario_payload["scenarios"]
+    rows = []
+    impact_cards = []
+    for item in scenarios:
+        baseline = item["baseline"]["champion"]
+        outcomes = item["outcomes"]
+        match = item["next_match"]
+        fixture = f'{display_name(match["home_team"])} - {display_name(match["away_team"])}'
+        rows.append(
+            f'<tr><td data-label="Takım"><b>{escape(item["name"])}</b></td>'
+            f'<td data-label="Sıradaki maç"><a href="{escape(match["page_path"])}">{escape(fixture)}</a></td>'
+            f'<td data-label="Şimdi"><span>{_pct(baseline)}</span></td>'
+            f'<td data-label="Kazanırsa"><span>{_pct(outcomes["win"]["champion"])}{_scenario_delta(outcomes["win"]["champion"], baseline)}</span></td>'
+            f'<td data-label="Berabere"><span>{_pct(outcomes["draw"]["champion"])}{_scenario_delta(outcomes["draw"]["champion"], baseline)}</span></td>'
+            f'<td data-label="Kaybederse"><span>{_pct(outcomes["loss"]["champion"])}{_scenario_delta(outcomes["loss"]["champion"], baseline)}</span></td></tr>'
+        )
+        impact_cards.append(
+            f'<div class="mp-stat"><div class="v">{_pct(item["swing"])}</div>'
+            f'<div class="l">{escape(item["name"])} · galibiyet/mağlubiyet farkı</div></div>'
+        )
+    leader = scenarios[0] if scenarios else None
+    leader_text = (
+        f'{leader["name"]} şu anda {_pct(leader["baseline"]["champion"])} ile modelin favorisi.'
+        if leader else "Şampiyonluk yarışı için yeterli senaryo verisi yok."
+    )
+    schema = {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Süper Lig şampiyonluk senaryoları 2026-27",
+        "description": "Takımlar sıradaki maçını kazanırsa, berabere kalırsa veya kaybederse şampiyonluk ihtimali nasıl değişir?",
+        "dateModified": scenario_payload["generated_on"],
+        "url": f"{BASE_URL}/{SCENARIO_PAGE_PATH}",
+    }
+    body = (
+        _STYLE
+        + '<style>@media(max-width:640px){.scenario-table thead{display:none}.scenario-table,.scenario-table tbody,'
+        '.scenario-table tr,.scenario-table td{display:block;width:100%}.scenario-table tr{padding:8px 0;border-bottom:1px solid #e5e7eb}'
+        '.scenario-table tr:last-child{border-bottom:0}.scenario-table td{display:grid;grid-template-columns:92px minmax(0,1fr);gap:8px;'
+        'align-items:start;padding:6px 4px;border:0}.scenario-table td::before{content:attr(data-label);font-size:11px;font-weight:800;'
+        'color:#5b625d;text-transform:uppercase}.scenario-table td a{overflow-wrap:anywhere}}</style>'
+        + f'<script type="application/ld+json">{json.dumps(schema, ensure_ascii=False)}</script>'
+        + '<div class="mp-hero"><h1>Süper Lig şampiyonluk senaryoları</h1>'
+        f'<div class="mp-meta">2026-27 · {scenario_payload["after_week"]}. hafta sonrası · kazanırsa ne olur?</div></div>'
+        f'<div class="mp-card"><p>{escape(leader_text)} Aşağıdaki tablo, her takımın sıradaki maçını '
+        'galibiyet, beraberlik ve mağlubiyet sonucuna sabitleyip kalan sezonu her senaryo için '
+        f'{_tr_int(SCENARIO_SIMS)} kez yeniden oynatır.</p></div>'
+        + f'<div class="mp-card"><h2>Bir sonraki maç şampiyonluk ihtimalini nasıl değiştirir?</h2>'
+        '<div style="overflow-x:auto"><table class="mp-week scenario-table"><thead><tr><th>Takım</th><th>Sıradaki maç</th>'
+        '<th>Şimdi</th><th>Kazanırsa</th><th>Berabere</th><th>Kaybederse</th></tr></thead><tbody>'
+        + "".join(rows) + '</tbody></table></div><p class="mp-note">Parantez içindeki değer, güncel orana göre yüzde puan değişimidir.</p></div>'
+        + f'<div class="mp-card"><h2>En kritik maç etkileri</h2><div class="mp-grid">{"".join(impact_cards)}</div></div>'
+        + f'<a class="mp-cta" href="{PAGE_PATH}">🏆 Güncel şampiyonluk, ilk 4 ve düşme oranlarına dön →</a>'
+        + _share_button(
+            f"{BASE_URL}/{SCENARIO_PAGE_PATH}",
+            "Süper Lig şampiyonluk senaryoları: Takımın kazanırsa ihtimali ne oluyor? — metric11",
+        )
+        + '<p class="mp-note">Yöntem: oynanmış maçların gerçek puanları korunur. Yalnız ilgili takımın sıradaki maçı seçilen sonuca sabitlenir; '
+        'diğer tüm maçlar metric11 1X2 olasılıkları ve uzun vadeli kadro gücü harmanıyla simüle edilir. Yüzdeler kesin sonuç veya bahis tavsiyesi değildir.</p>'
+    )
+    title = f'Süper Lig Şampiyonluk Senaryoları 2026-27: Kazanırsa Ne Olur?'
+    description = (
+        "Süper Lig 2026-27 şampiyonluk senaryoları: Galatasaray, Fenerbahçe, Beşiktaş, Trabzonspor ve diğer adaylar "
+        "sıradaki maçını kazanırsa, berabere kalırsa veya kaybederse ihtimaller nasıl değişiyor?"
+    )
+    return page_html(
+        title,
+        body,
+        description=description,
+        active_nav="season_fixture_predictions_2026_2027.html",
+        canonical_path=SCENARIO_PAGE_PATH,
+    )
 
 
 def payload_week_text(row: dict) -> str:
@@ -352,6 +531,9 @@ def main() -> None:
     OUTPUT_JSON.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     HISTORY_JSON.write_text(json.dumps(history, ensure_ascii=False, indent=2), encoding="utf-8")
     (PROCESSED_DIR / PAGE_PATH).write_text(build_html(payload, prev), encoding="utf-8")
+    scenario_payload = build_scenario_payload(payload, weeks, table)
+    SCENARIO_OUTPUT_JSON.write_text(json.dumps(scenario_payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    (PROCESSED_DIR / SCENARIO_PAGE_PATH).write_text(build_scenario_html(scenario_payload), encoding="utf-8")
     standings = sorted(teams, key=lambda r: (-r["pts"], -(r["gf"] - r["ga"]), -r["sim"]["avg_points"]))
     for rank, row in enumerate(standings, start=1):
         (PROCESSED_DIR / team_page_path(row["team"])).write_text(build_team_page(row, rank, weeks), encoding="utf-8")

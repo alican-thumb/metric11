@@ -1,6 +1,6 @@
 # Futbol İstihbarat Platformu - Proje Durumu
 
-Son güncelleme: 2026-11-01 (kalibrasyon denetimi + kalıcı pipeline sağlık özeti)
+Son güncelleme: 2026-11-09 (SEO odaklı şampiyonluk senaryoları + responsive yayın yüzeyi)
 
 ## Amaç
 
@@ -3516,3 +3516,17 @@ Kullanıcı admin sayfasına giremiyordu (kendi çalıştırdığı sıfırlama 
 - Kullanıcı dili `Yüksek güvenli tahmin` / `Düşük güvenli tahmin` olarak sadeleştirildi. Düşük güvenin gerekçesi maç bazında ayrılıyor: yeni yükselen takımın sınırlı Süper Lig geçmişi, beraberlik modelinin düşük geçmiş isabeti, MEDIUM bandının yetersiz performansı veya olasılık farkının yüksek güven eşiğini karşılamaması.
 - Maç detayında tahmin, 1X2 yüzdeleri, olası skor ve güven gerekçesi birlikte gösteriliyor. Hafta ve ana sayfa kartlarında model seçimi artık gizlenmiyor; düşük güven ayrıca işaretleniyor.
 - Doğrulama: `80 passed, 6 subtests passed`; ağsız günlük üretim zinciri iki kez **62/62** başarılı. 306 maç sayfası, 34 hafta sayfası, fikstür, ana sayfa modülü, kalibrasyon raporu ve paylaşım görselleri yeniden üretildi. `rg` kontrolünde `Net seçim yok` kullanıcı çıktılarında kalmadı; `git diff --check` temiz.
+
+### 2026-11-09 — SEO odaklı şampiyonluk senaryoları
+
+- Yeni kullanıcı/arama niyeti sayfası eklendi: `super-lig-sampiyonluk-senaryolari-2026-27.html`. Sayfa yalnız anahtar kelime hedefleyen ince içerik değil; her adayın sıradaki maçını ayrı ayrı galibiyet, beraberlik ve mağlubiyete sabitleyip kalan sezonu yeniden simüle eden özgün bir araçtır.
+- Koşullu Monte Carlo motoru eklendi. Ana şampiyonluk tablosu 20.000 simülasyon kullanmayı sürdürüyor; senaryo sayfası öne çıkan en fazla 6 takım için üç sonuç başına 8.000 simülasyon çalıştırıyor. Oynanan maçların gerçek puanları korunuyor, yalnız seçilen maçın sonucu sabitleniyor.
+- 11. hafta sonrası ilk üretim: Galatasaray mevcut `%46`, sıradaki galibiyette `%52`, beraberlikte `%41`, mağlubiyette `%36`; Trabzonspor `%39 / %41 / %31 / %27`. Sayfa bu değerleri kesin sonuç değil, model senaryosu olarak açıklıyor.
+- Sağlayıcı maç kimliği eksik olduğunda hafta/ev/deplasman birleşiminden kararlı senaryo anahtarı üretiliyor; bir maçın başka fikstürlere yanlışlıkla uygulanması engellendi.
+- Yeni JSON veri sözleşmesi: `data/processed/season_scenarios_2026_2027.json`. Her takım için baseline, sıradaki maç, üç koşullu sonuç, ortalama puan/sıra ve galibiyet-mağlubiyet şampiyonluk farkı tutuluyor.
+- SEO teknikleri: özgün `title`, açıklama, canonical, Open Graph alanları ve `WebPage` JSON-LD eklendi. Senaryo sayfası sitemap'e günlük ve öncelikli canlı sayfa olarak alındı. Google'ın doğrulanabilir tazelik yaklaşımına uygun olarak günlük/haftalık canlı sayfalarda doğru `lastmod` korunurken donmuş 2025-26 arşiv sayfalarından sahte günlük `lastmod` kaldırıldı.
+- İç bağlantılar güçlendirildi: ana şampiyonluk sayfası, 18 takım sezon sayfası, 306 maç detay sayfası ve 34 hafta sayfası yeni senaryo yüzeyine bağlandı. Senaryo tablosundaki sıradaki maçlar ilgili maç analizine gider.
+- Mobil arayüz özel olarak düzenlendi. Masaüstünde karşılaştırma tablosu, 640 px altında takım başına okunabilir sonuç kartı kullanılıyor. Tarayıcı QA'da 1440 px ve 390 px görünümler kontrol edildi; mobilde `scrollWidth == innerWidth == 390`, tablo/kart genişliği 328 px ve yatay sayfa taşması yok.
+- Yeni testler: zorunlu galibiyet/beraberlik puan uygulaması, kimliksiz maç anahtarı, Türkçe binlik biçimi, sitemap senaryo URL'i, canlı sayfa `lastmod` ve donmuş arşiv `lastmod` politikası. Son paket: **87 test + 6 alt test başarılı**.
+- Tam ağsız günlük üretim zinciri yeni kodla uçtan uca doğrulandı: **62/62 komut başarılı**, hata yok. Senaryo JSON/HTML çıktısı, maç/hafta/takım iç bağlantıları, ana şampiyonluk sayfası ve sitemap aynı pipeline çalışmasında yeniden üretildi.
+- Sıradaki SEO geliştirme sırası: takım bazlı şampiyonluk yarış anlatıları ve haftalık değişim sayfası; ardından yalnız yeterli veri farkı oluştuğunda “Avrupa kupalarına katılım” ve “kümede kalma senaryoları”. Seri/ince sayfa üretmek yerine her yeni URL'nin özgün hesaplama ve kullanıcı değeri taşıması zorunlu.

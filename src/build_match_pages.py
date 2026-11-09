@@ -334,7 +334,8 @@ def build_match_page(m: dict, week: int, signals: dict, scorers: dict, week_matc
         f'<div class="mp-card mp-links"><h2>{week}. haftanın diğer maçları</h2>{other_links}'
         f'<p><a href="{week_page_path(week)}"><b>Süper Lig {week}. hafta tüm tahminler →</b></a></p>'
         f'<p>{team_links}<a href="season_fixture_predictions_2026_2027.html">Tüm sezon fikstürü</a>'
-        '<a href="super-lig-sampiyonluk-oranlari-2026-27.html">Şampiyonluk oranları</a></p></div>'
+        '<a href="super-lig-sampiyonluk-oranlari-2026-27.html">Şampiyonluk oranları</a>'
+        '<a href="super-lig-sampiyonluk-senaryolari-2026-27.html">Şampiyonluk senaryoları</a></p></div>'
     )
     share_pick = _pick_text(m, pick) if pick else publication_label
     parts.append(_share_button(f"{BASE_URL}/{path}", f"{home} - {away} maç analizi: {share_pick} — metric11"))
@@ -393,7 +394,7 @@ def build_week_page(week: int, matches: list[dict]) -> tuple[str, str]:
         + summary
         + f'<div class="mp-card" style="overflow-x:auto"><table class="mp-week">{head}{"".join(rows)}</table></div>'
         + '<a class="mp-cta" href="https://tahmin.metric11.com/">🎮 Bu haftanın maçlarını sen de tahmin et</a>'
-        + f'<div class="mp-card mp-links">{"".join(nav)}<a href="season_fixture_predictions_2026_2027.html">Tüm sezon fikstürü</a><a href="weekly_evaluation_2026_2027.html">Haftalık isabet karnesi</a><a href="super-lig-sampiyonluk-oranlari-2026-27.html">Şampiyonluk oranları</a></div>'
+        + f'<div class="mp-card mp-links">{"".join(nav)}<a href="season_fixture_predictions_2026_2027.html">Tüm sezon fikstürü</a><a href="weekly_evaluation_2026_2027.html">Haftalık isabet karnesi</a><a href="super-lig-sampiyonluk-oranlari-2026-27.html">Şampiyonluk oranları</a><a href="super-lig-sampiyonluk-senaryolari-2026-27.html">Şampiyonluk senaryoları</a></div>'
         + _share_button(f"{BASE_URL}/{path}", f"Süper Lig {week}. hafta tahminleri — metric11")
     )
     html = page_html(title, body, description=description, active_nav="season_fixture_predictions_2026_2027.html", canonical_path=path)
