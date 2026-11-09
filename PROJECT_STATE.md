@@ -3508,3 +3508,11 @@ Kullanıcı admin sayfasına giremiyordu (kendi çalıştırdığı sıfırlama 
 - Yeni `tests/test_prediction_publication.py`: yüksek güven yayını, MEDIUM gizleme, beraberlik override, yeni takım güvenlik kuralı, dosyadan politika yükleme/fallback ve iddiasız anlatım test edildi. Toplam **80 test** başarılı; `py_compile` ve `git diff --check` temiz.
 - Network'süz günlük üretim zinciri yeni sözleşmeyle uçtan uca çalıştırıldı: **62/62 komut başarılı**, hata yok. Fikstür, kalibrasyon, 306 maç sayfası, 34 hafta sayfası, ana sayfa modülü, sitemap ve sistem durumu yeniden üretildi.
 - Responsive görsel QA: 390x844 mobil görünümde hafta ve maç detay sayfası tarayıcıyla açıldı; `documentElement.scrollWidth == innerWidth == 390`, içerik taşması yok. Maç detayında karar, model eğilimi ve 1X2 olasılıkları ayrı ve okunur görüntülendi.
+
+### 2026-11-09 — Her maçta açık model tahmini ve anlaşılır güven açıklaması
+
+- Kullanıcı geri bildirimiyle `Net seçim yok` ifadesi tüm kullanıcı yüzeylerinden kaldırıldı. Model zaten her maç için ev/beraberlik/deplasman tahmini üretiyordu; önceki sunum katmanı MEDIUM/LOW tahminleri gizleyerek sistem tahmin yapamıyormuş izlenimi veriyordu.
+- `predicted` artık fikstür kartı, ana sayfa haftalık modülü, maç detay sayfası, hafta tablosu, Markdown raporu ve maça özel OG görselinde her zaman **Model tahmini** olarak gösteriliyor. `published_pick` kaldırılmadı; yalnız yüksek güven eşiğini geçen tahminleri ayıran iç/analitik alan olarak korunuyor. Böylece kalibrasyon ve geçmiş karne ölçümü değişmedi.
+- Kullanıcı dili `Yüksek güvenli tahmin` / `Düşük güvenli tahmin` olarak sadeleştirildi. Düşük güvenin gerekçesi maç bazında ayrılıyor: yeni yükselen takımın sınırlı Süper Lig geçmişi, beraberlik modelinin düşük geçmiş isabeti, MEDIUM bandının yetersiz performansı veya olasılık farkının yüksek güven eşiğini karşılamaması.
+- Maç detayında tahmin, 1X2 yüzdeleri, olası skor ve güven gerekçesi birlikte gösteriliyor. Hafta ve ana sayfa kartlarında model seçimi artık gizlenmiyor; düşük güven ayrıca işaretleniyor.
+- Doğrulama: `80 passed, 6 subtests passed`; ağsız günlük üretim zinciri iki kez **62/62** başarılı. 306 maç sayfası, 34 hafta sayfası, fikstür, ana sayfa modülü, kalibrasyon raporu ve paylaşım görselleri yeniden üretildi. `rg` kontrolünde `Net seçim yok` kullanıcı çıktılarında kalmadı; `git diff --check` temiz.

@@ -35,10 +35,10 @@ SNAPSHOT_PATH = PROCESSED_DIR / "prediction_snapshots_2026_2027.json"
 CALIBRATION_AUDIT_PATH = PROCESSED_DIR / "prediction_calibration_audit_2026_2027.json"
 
 DEFAULT_PUBLICATION_POLICY = {
-    "high": {"status": "PUBLISH", "label": "Yayınlanabilir güçlü seçim"},
-    "medium": {"status": "NO_STRONG_PICK", "label": "Net seçim yok / kararsız maç"},
-    "low": {"status": "NO_STRONG_PICK", "label": "Net seçim yok"},
-    "draw": {"status": "WEAK", "label": "Beraberlik modeli zayıf; senaryo olarak göster"},
+    "high": {"status": "PUBLISH", "label": "Yüksek güvenli tahmin"},
+    "medium": {"status": "NO_STRONG_PICK", "label": "Düşük güvenli tahmin"},
+    "low": {"status": "NO_STRONG_PICK", "label": "Düşük güvenli tahmin"},
+    "draw": {"status": "WEAK", "label": "Düşük güvenli beraberlik tahmini"},
 }
 
 # 2025-26 -> 2026-27 sponsor/isim değişiklikleri (aynı kulüp, farklı resmi ad).
@@ -81,11 +81,21 @@ def publication_metadata(
     if is_new_team:
         decision = DEFAULT_PUBLICATION_POLICY["low"]
     status = decision.get("status", "NO_STRONG_PICK")
+    if is_new_team:
+        reason = "Yeni yükselen takımın Süper Lig geçmişi sınırlı olduğu için tahmin güveni düşürüldü."
+    elif predicted == "draw":
+        reason = "Beraberlik tahminlerinin bu sezonki geçmiş isabeti sınırlı."
+    elif status == "PUBLISH":
+        reason = "Modelin yüksek güven eşiği karşılandı."
+    elif band == "MEDIUM":
+        reason = "Modelin orta güven bandındaki geçmiş isabeti henüz yeterli değil."
+    else:
+        reason = "Olasılık farkı yüksek güven eşiğini karşılamıyor."
     return {
         "prediction_confidence": band,
         "publication_decision": status,
-        "publication_label": "Güçlü seçim" if status == "PUBLISH" else "Net seçim yok",
-        "publication_reason": decision.get("label", "Kalibrasyon eşiği karşılanmadı"),
+        "publication_label": "Yüksek güvenli tahmin" if status == "PUBLISH" else "Düşük güvenli tahmin",
+        "publication_reason": reason,
         "published_pick": predicted if status == "PUBLISH" else None,
     }
 
@@ -286,14 +296,13 @@ def build_markdown(payload: dict) -> str:
             if m["is_played"]:
                 lines.append(f"- {m['date_time']} | {m['home_team']} {m['actual_score']} {m['away_team']} | OYNANDI")
                 continue
-            public_pick = m.get("published_pick")
-            public_text = labels[public_pick] if public_pick else m.get("publication_label", "Net seçim yok")
             model_text = labels[m["predicted"]]
             lines.append(
                 f"- {m['date_time']} | {m['home_team']} - {m['away_team']} | "
-                f"yayın={public_text}; model eğilimi={model_text} (Ev %{round(m['home_win_probability']*100)} · "
+                f"model tahmini={model_text}; güven={m.get('publication_label', 'Düşük güvenli tahmin')} "
+                f"(Ev %{round(m['home_win_probability']*100)} · "
                 f"X %{round(m['draw_probability']*100)} · Dep %{round(m['away_win_probability']*100)}) | "
-                f"güven={m['data_confidence']}"
+                f"veri güveni={m['data_confidence']}"
             )
         lines.append("")
     return "\n".join(lines) + "\n"
@@ -373,19 +382,24 @@ def _match_card(m: dict, signals: dict | None = None, scorers: dict | None = Non
 </div>"""
     labels = {"home": "Ev Sahibi", "draw": "Beraberlik", "away": "Deplasman"}
     model_pick = m["predicted"]
-    pick = m.get("published_pick")
-    pick_text = m.get("publication_label", "Net seçim yok")
+    strong_pick = m.get("published_pick")
+    pick = model_pick
     if pick in {"home", "away"}:
         pick_text = m["home_team"] if pick == "home" else m["away_team"]
-    elif pick == "draw":
+    else:
         pick_text = "Beraberlik"
-    pick_class = pick or "no-pick"
+    pick_class = pick
     model_pick_text = labels[model_pick]
     if model_pick == "home":
         model_pick_text = m["home_team"]
     elif model_pick == "away":
         model_pick_text = m["away_team"]
-    tendency_html = "" if pick else f'<div class="mc-tendency">Model eğilimi: {escape(model_pick_text)}</div>'
+    confidence_reason = m.get("publication_reason") or "Modelin bu güven bandındaki geçmiş isabeti sınırlı."
+    confidence_html = (
+        '<div class="mc-tendency">Güven: Yüksek</div>'
+        if strong_pick
+        else f'<div class="mc-tendency">Güven: Düşük · {escape(confidence_reason)}</div>'
+    )
     # Kesin skor tahmini + beklenen gol (xG) — model zaten üretiyor, kartta gösterilir.
     rec = m.get("recommended_scoreline") or {}
     score = rec.get("score")
@@ -467,8 +481,8 @@ def _match_card(m: dict, signals: dict | None = None, scorers: dict | None = Non
     card_html = f"""<div class="match-card">
   <div class="mc-date">{escape(_fmt_date(m['date_time']))}</div>
   <div class="mc-teams"><span>{escape(m['home_team'])}</span><span class="vs">vs</span><span>{escape(m['away_team'])}</span></div>
-  <div class="mc-pick {pick_class}">{escape(pick_text)}</div>
-  {tendency_html}
+  <div class="mc-pick {pick_class}">Model tahmini: {escape(pick_text)}</div>
+  {confidence_html}
   <div class="mc-probs"><span style="color:#4ade80">Ev %{round(m['home_win_probability']*100)}</span><span>X %{round(m['draw_probability']*100)}</span><span style="color:#f87171">Dep %{round(m['away_win_probability']*100)}</span></div>
   {scoreline_html}
   {signals_html}

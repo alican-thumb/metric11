@@ -123,9 +123,9 @@ def confidence_policy(summary: dict) -> dict:
         },
         "medium": {
             "status": "NO_STRONG_PICK" if medium_unreliable else "CAUTION",
-            "label": "Net seçim yok / kararsız maç" if medium_unreliable else "Temkinli seçim",
+            "label": "Düşük güvenli tahmin" if medium_unreliable else "Orta güvenli tahmin",
         },
-        "low": {"status": "NO_STRONG_PICK", "label": "Net seçim yok"},
+        "low": {"status": "NO_STRONG_PICK", "label": "Düşük güvenli tahmin"},
         "draw": {
             "status": "WEAK" if draw_recall < 0.35 else "MONITOR",
             "label": "Beraberlik modeli zayıf; senaryo olarak göster" if draw_recall < 0.35 else "Beraberlik sinyalini izle",

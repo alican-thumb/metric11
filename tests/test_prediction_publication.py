@@ -40,8 +40,8 @@ class PredictionPublicationTests(unittest.TestCase):
         )
         self.assertEqual(result["prediction_confidence"], "MEDIUM")
         self.assertEqual(result["publication_decision"], "NO_STRONG_PICK")
-        self.assertEqual(result["publication_label"], "Net seçim yok")
-        self.assertIn("kararsız", result["publication_reason"])
+        self.assertEqual(result["publication_label"], "Düşük güvenli tahmin")
+        self.assertIn("orta güven bandındaki", result["publication_reason"])
         self.assertIsNone(result["published_pick"])
 
     def test_draw_policy_overrides_high_confidence_band(self):
@@ -63,6 +63,7 @@ class PredictionPublicationTests(unittest.TestCase):
             policy=DEFAULT_PUBLICATION_POLICY,
         )
         self.assertEqual(result["publication_decision"], "NO_STRONG_PICK")
+        self.assertIn("Yeni yükselen takım", result["publication_reason"])
         self.assertIsNone(result["published_pick"])
 
     def test_stored_policy_is_loaded_with_safe_fallbacks(self):
@@ -77,7 +78,7 @@ class PredictionPublicationTests(unittest.TestCase):
         self.assertEqual(policy["high"]["status"], "PUBLISH")
         self.assertEqual(policy["low"]["status"], "NO_STRONG_PICK")
 
-    def test_no_pick_summary_explains_model_tendency_without_claiming_favorite(self):
+    def test_low_confidence_summary_still_states_model_prediction(self):
         match = {
             "home_team": "BEŞİKTAŞ A.Ş.",
             "away_team": "GÖZTEPE A.Ş.",
@@ -86,10 +87,9 @@ class PredictionPublicationTests(unittest.TestCase):
             "away_win_probability": 0.27,
             "recommended_scoreline": {"score": "1-1"},
         }
-        summary = _summary_sentence(match, None)
-        self.assertIn("güçlü bir seçim yok", summary)
-        self.assertIn("Model eğilimi", summary)
-        self.assertNotIn("favori", summary)
+        summary = _summary_sentence(match, "home")
+        self.assertIn("favori ev sahibi", summary)
+        self.assertIn("%44", summary)
 
 
 if __name__ == "__main__":

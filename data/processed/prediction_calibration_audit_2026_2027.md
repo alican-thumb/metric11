@@ -2,7 +2,7 @@
 
 - Örneklem: **89 maç**
 - Yüksek güven politikası: **Yayınlanabilir güçlü seçim**
-- Orta güven politikası: **Net seçim yok / kararsız maç**
+- Orta güven politikası: **Düşük güvenli tahmin**
 - Beraberlik politikası: **Beraberlik modeli zayıf; senaryo olarak göster**
 
 > Bu sayfa tanı raporudur. Aynı sezon üzerinde en iyi görünen eşik otomatik olarak üretime alınmaz.

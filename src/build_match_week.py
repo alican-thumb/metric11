@@ -59,7 +59,7 @@ def build_payload() -> dict:
     for m in week["matches"]:
         model_pick = m.get("predicted")
         published_pick = m.get("published_pick")
-        display_pick = model_pick if m.get("is_played") else published_pick
+        display_pick = model_pick
         if display_pick == "home":
             pick_text = m["home_team"]
         elif display_pick == "away":
@@ -67,7 +67,7 @@ def build_payload() -> dict:
         elif display_pick == "draw":
             pick_text = "Beraberlik"
         else:
-            pick_text = m.get("publication_label") or "Net seçim yok"
+            pick_text = "Tahmin üretilemedi"
         if model_pick == "home":
             model_pick_text = m["home_team"]
         elif model_pick == "away":
@@ -148,7 +148,8 @@ def render_hero_html(payload: dict | None = None) -> str:
             right = f'<span style="font-weight:800;color:#132018;">{escape(m.get("actual_score") or "")}</span><span style="font-size:11px;color:#8fa89a;margin-left:6px;">oynandı</span>'
         else:
             published_pick = m.get("published_pick")
-            color = _pick_class(published_pick) if published_pick else "#9a6700"
+            model_pick = m.get("predicted")
+            color = _pick_class(model_pick)
             probs = (
                 f'<span style="color:#116447;">Ev %{round((m.get("home_win_probability") or 0)*100)}</span> · '
                 f'<span style="color:#627067;">X %{round((m.get("draw_probability") or 0)*100)}</span> · '
@@ -179,10 +180,9 @@ def render_hero_html(payload: dict | None = None) -> str:
                 )
             right = (
                 f'<span style="display:inline-block;font-size:12px;font-weight:700;color:#fff;'
-                f'background:{color};padding:3px 9px;border-radius:5px;">{escape(m.get("pick_text") or "")}</span>'
+                f'background:{color};padding:3px 9px;border-radius:5px;">Model tahmini: {escape(m.get("pick_text") or "")}</span>'
                 + (
-                    f'<div style="font-size:10px;color:#8fa89a;margin-top:3px;">Model eğilimi: '
-                    f'{escape(m.get("model_pick_text") or "")}</div>'
+                    f'<div style="font-size:10px;color:#9a6700;margin-top:3px;">Güven: Düşük</div>'
                     if not published_pick else ""
                 )
                 + f'<div style="font-size:11px;color:#627067;margin-top:4px;">{probs}</div>'

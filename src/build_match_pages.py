@@ -167,8 +167,8 @@ def _summary_sentence(m: dict, pick: str | None) -> str:
         top_key = max(probs, key=lambda key: probs[key] or 0)
         tendency = _pick_text(m, top_key)
         lead = (
-            f"{home} - {away} maçında kalibrasyon eşiğini geçen güçlü bir seçim yok. "
-            f"Model eğilimi {tendency}, ancak olasılık farkı yayın kararı için yeterli değil"
+            f"{home} - {away} maçı için model tahmini {tendency}. "
+            "Tahmin güveni düşük; olasılıklar birbirine yakın veya bu güven bandındaki geçmiş isabet sınırlı"
         )
         tail = f" (en yüksek olasılık {_pct(probs[top_key])})."
         if rec:
@@ -214,11 +214,10 @@ def generate_match_og(m: dict, week: int) -> str | None:
         (away, _pct(m.get("away_win_probability"))),
     ], 330)
     rec = (m.get("recommended_scoreline") or {}).get("score")
-    published_pick = m.get("published_pick")
-    pick = _pick_text(m, published_pick) if published_pick else (m.get("publication_label") or "Net seçim yok")
+    model_pick = m.get("predicted") or "home"
+    pick = _pick_text(m, model_pick)
     font = og._load_font("Inter-SemiBold.ttf", 26)
-    prefix = "Tahmin" if published_pick else "Karar"
-    draw.text((og.W // 2, 470), f"{prefix}: {pick}" + (f" · Olası skor {rec}" if rec else ""), font=font, fill=og._rgb(og.LIME), anchor="mm")
+    draw.text((og.W // 2, 470), f"Model tahmini: {pick}" + (f" · Olası skor {rec}" if rec else ""), font=font, fill=og._rgb(og.LIME), anchor="mm")
     name = og_image_name(m["home_team"], m["away_team"])
     img.save(str(PROCESSED_DIR / name), "PNG")
     return name
@@ -231,8 +230,9 @@ def build_match_page(m: dict, week: int, signals: dict, scorers: dict, week_matc
     dt = _parse_dt(m.get("date_time", ""))
     model_pick = m.get("predicted") or "home"
     played = bool(m.get("is_played"))
-    pick = model_pick if played else m.get("published_pick")
-    publication_label = m.get("publication_label") or "Net seçim yok"
+    strong_pick = m.get("published_pick")
+    pick = model_pick
+    publication_label = m.get("publication_label") or "Düşük güvenli tahmin"
     rec = (m.get("recommended_scoreline") or {}).get("score")
     title = f"{home} - {away} Maç Tahmini ve Skor Tahmini ({_date_text(dt, with_day=False)})"
     if played:
@@ -265,11 +265,17 @@ def build_match_page(m: dict, week: int, signals: dict, scorers: dict, week_matc
             'sonradan değiştirilmez. Tüm sonuçlar <a href="weekly_evaluation_2026_2027.html">haftalık isabet karnesinde</a>.</p></div>'
         )
     else:
-        if pick:
-            heading = f'Tahmin: <span class="mp-pick">{escape(_pick_text(m, pick))}</span>'
-        else:
-            heading = f'Karar: <span class="mp-pick cautious">{escape(publication_label)}</span>'
-        parts.append(f'<div class="mp-card"><h2>{heading}</h2><p>{escape(_summary_sentence(m, pick))}</p></div>')
+        heading = f'Model tahmini: <span class="mp-pick">{escape(_pick_text(m, pick))}</span>'
+        confidence = "Yüksek" if strong_pick else "Düşük"
+        reason = m.get("publication_reason") or (
+            "Modelin yüksek güven eşiği karşılandı."
+            if strong_pick
+            else "Modelin bu güven bandındaki geçmiş isabeti sınırlı."
+        )
+        parts.append(
+            f'<div class="mp-card"><h2>{heading}</h2><p><b>Tahmin güveni: {confidence}.</b> {escape(reason)}</p>'
+            f'<p>{escape(_summary_sentence(m, pick))}</p></div>'
+        )
 
     parts.append(f'<div class="mp-card"><h2>1X2 olasılıkları</h2>{_prob_bars(m, pick)}</div>')
 
@@ -356,7 +362,7 @@ def build_week_page(week: int, matches: list[dict]) -> tuple[str, str]:
     rows = []
     for m in sorted(matches, key=lambda x: _parse_dt(x.get("date_time", "")) or datetime.max):
         model_pick = m.get("predicted") or "home"
-        pick = model_pick if m.get("is_played") else m.get("published_pick")
+        pick = model_pick
         rec = (m.get("recommended_scoreline") or {}).get("score") or "—"
         if m.get("is_played"):
             ok = _actual(m.get("actual_score")) == model_pick
@@ -367,8 +373,8 @@ def build_week_page(week: int, matches: list[dict]) -> tuple[str, str]:
         rows.append(
             f'<tr><td>{escape(f"{dt.day} {_TR_MONTHS[dt.month][:3]} {dt:%H:%M}" if dt else "—")}</td>'
             f'<td><a href="{match_page_path(m["home_team"], m["away_team"])}">{escape(display_name(m["home_team"]))} - {escape(display_name(m["away_team"]))}</a></td>'
-            f'<td>{escape(_pick_text(m, pick) if pick else (m.get("publication_label") or "Net seçim yok"))}'
-            + (f'<div class="mp-note">Eğilim: {escape(_pick_text(m, model_pick))}</div>' if not pick and not m.get("is_played") else "")
+            f'<td>{escape(_pick_text(m, pick))}'
+            + (f'<div class="mp-note">Güven: Düşük</div>' if not m.get("published_pick") and not m.get("is_played") else "")
             + f'</td><td>{res}</td></tr>'
         )
     head = "<tr><th>Tarih</th><th>Maç</th><th>Tahmin</th><th>" + ("Skor" if played else "Olası skor") + "</th></tr>"
