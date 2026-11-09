@@ -68,12 +68,12 @@
 <h2>Genel Karne</h2>
 
 <ul>
-<li>Değerlendirilen maç: <strong>89</strong></li>
-<li>İsabet: <strong>44/89</strong> (%49)</li>
+<li>Değerlendirilen maç: <strong>99</strong></li>
+<li>İsabet: <strong>48/99</strong> (%48)</li>
 <li>Beraberlik yakalama: <strong>3/16</strong> (%19)</li>
-<li>Yüksek güvenli maç isabeti: <strong>24/36</strong> (%67)</li>
-<li>Brier score: <strong>0.592</strong> (düşük daha iyi; 2025-26 referans 0.600)</li>
-<li>Log loss: <strong>0.989</strong> (düşük daha iyi; 2025-26 referans 1.005)</li>
+<li>Yüksek güvenli maç isabeti: <strong>27/40</strong> (%68)</li>
+<li>Brier score: <strong>0.594</strong> (düşük daha iyi; 2025-26 referans 0.600)</li>
+<li>Log loss: <strong>0.994</strong> (düşük daha iyi; 2025-26 referans 1.005)</li>
 </ul>
 
 <h3>Güven bandı kalibrasyonu</h3>
@@ -91,27 +91,27 @@
 </tr></thead><tbody>
 <tr>
 <td>HIGH</td>
-<td>36</td>
-<td>24/36 (%67)</td>
-<td>%60</td>
-<td>0.476</td>
-<td>0.828</td>
+<td>40</td>
+<td>27/40 (%68)</td>
+<td>%61</td>
+<td>0.470</td>
+<td>0.821</td>
 <td>%64 / 0.516 / 0.885</td>
 </tr>
 <tr>
 <td>MEDIUM</td>
-<td>28</td>
-<td>9/28 (%32)</td>
+<td>30</td>
+<td>9/30 (%30)</td>
 <td>%46</td>
-<td>0.684</td>
-<td>1.112</td>
+<td>0.701</td>
+<td>1.140</td>
 <td>%54 / 0.619 / 1.032</td>
 </tr>
 <tr>
 <td>LOW</td>
-<td>25</td>
-<td>11/25 (%44)</td>
-<td>%38</td>
+<td>29</td>
+<td>12/29 (%41)</td>
+<td>%37</td>
 <td>0.654</td>
 <td>1.082</td>
 <td>%48 / 0.670 / 1.103</td>
@@ -130,27 +130,101 @@
 </tr></thead><tbody>
 <tr>
 <td>Ev</td>
-<td>50</td>
-<td>28/50 (%56)</td>
-<td>28 / 7 / 15</td>
+<td>52</td>
+<td>29/52 (%56)</td>
+<td>29 / 7 / 16</td>
 </tr>
 <tr>
 <td>Beraberlik</td>
-<td>8</td>
-<td>3/8 (%38)</td>
-<td>2 / 3 / 3</td>
+<td>12</td>
+<td>3/12 (%25)</td>
+<td>5 / 3 / 4</td>
 </tr>
 <tr>
 <td>Deplasman</td>
-<td>31</td>
-<td>13/31 (%42)</td>
-<td>12 / 6 / 13</td>
+<td>35</td>
+<td>16/35 (%46)</td>
+<td>13 / 6 / 16</td>
 </tr>
 </tbody></table>
 
 <p><a href="prediction_calibration_audit_2026_2027.html">Olasılık kovaları ve seçici yayın politikası →</a></p>
 
-<h2>Hafta 10 — 5/8 isabet (%62)</h2>
+<h2>Hafta 11 — 4/9 isabet (%44)</h2>
+
+<table class="md-table"><thead><tr>
+<th>Maç</th>
+<th>Skor</th>
+<th>Tahmin</th>
+<th>Sonuç</th>
+<th>Güven</th>
+</tr></thead><tbody>
+<tr>
+<td>GAZİANTEP FUTBOL KULÜBÜ A.Ş. - KASIMPAŞA A.Ş.</td>
+<td>0 - 2</td>
+<td>Beraberlik</td>
+<td>❌</td>
+<td>LOW</td>
+</tr>
+<tr>
+<td>EYÜPSPOR - KOCAELİSPOR</td>
+<td>0 - 2</td>
+<td>Deplasman</td>
+<td>✅</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>SAMSUNSPOR A.Ş. - TÜMOSAN KONYASPOR</td>
+<td>1 - 0</td>
+<td>Beraberlik</td>
+<td>❌</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
+<td>GALATASARAY A.Ş. - AMED SPORTİF FAALİYETLER</td>
+<td>4 - 3</td>
+<td>Deplasman</td>
+<td>❌</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
+<td>GÖZTEPE A.Ş. - İSTANBUL BAŞAKŞEHİR FK</td>
+<td>1 - 2</td>
+<td>Ev</td>
+<td>❌</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>ÇAYKUR RİZESPOR A.Ş. - ERZURUMSPOR FK</td>
+<td>2 - 1</td>
+<td>Beraberlik</td>
+<td>❌</td>
+<td>LOW</td>
+</tr>
+<tr>
+<td>ARCA ÇORUM FK - FENERBAHÇE A.Ş.</td>
+<td>0 - 5</td>
+<td>Deplasman</td>
+<td>✅</td>
+<td>LOW</td>
+</tr>
+<tr>
+<td>CORENDON ALANYASPOR - TRABZONSPOR A.Ş.</td>
+<td>0 - 2</td>
+<td>Deplasman</td>
+<td>✅</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>BEŞİKTAŞ A.Ş. - GENÇLERBİRLİĞİ</td>
+<td>3 - 0</td>
+<td>Ev</td>
+<td>✅</td>
+<td>HIGH</td>
+</tr>
+</tbody></table>
+
+<h2>Hafta 10 — 5/9 isabet (%56)</h2>
 
 <table class="md-table"><thead><tr>
 <th>Maç</th>
@@ -212,6 +286,13 @@
 <td>KASIMPAŞA A.Ş. - BEŞİKTAŞ A.Ş.</td>
 <td>2 - 2</td>
 <td>Deplasman</td>
+<td>❌</td>
+<td>LOW</td>
+</tr>
+<tr>
+<td>GENÇLERBİRLİĞİ - CORENDON ALANYASPOR</td>
+<td>5 - 0</td>
+<td>Beraberlik</td>
 <td>❌</td>
 <td>LOW</td>
 </tr>

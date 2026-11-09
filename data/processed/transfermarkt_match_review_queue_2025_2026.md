@@ -1,18 +1,18 @@
 # Transfermarkt Oyuncu Eşleşme İnceleme Kuyruğu
 
-- TFF profil: 882
+- TFF profil: 886
 - Transfermarkt snapshot: 18/18 kulüp, 817 oyuncu
-- Snapshot kapsamındaki TFF profil: 592
-- Doğrulanmış snapshot eşleşmesi: 619
+- Snapshot kapsamındaki TFF profil: 596
+- Doğrulanmış snapshot eşleşmesi: 620
 - Manuel eşleme ile kullanılan profil: 4
 - Ağ teyidi bekleyen manuel eşleme: 4
-- Çözülmemiş profil: 259
-- Doğrulanmış genel eşleşme oranı: %70.2
-- Doğrulanmış snapshot içi eşleşme oranı: %92.4
-- Manuel eşleme dahil kullanılabilir snapshot içi kapsama: %93.1
+- Çözülmemiş profil: 262
+- Doğrulanmış genel eşleşme oranı: %70.0
+- Doğrulanmış snapshot içi eşleşme oranı: %91.9
+- Manuel eşleme dahil kullanılabilir snapshot içi kapsama: %92.6
 - Scout incelemesini bloke eden eşleşmeyen oyuncu: 0
-- Sınıf dağılımı: {'NO_RELIABLE_CANDIDATE_IN_SNAPSHOT': 39, 'SAME_CLUB_NAME_REVIEW': 1, 'POSSIBLE_TRANSFER_OR_CLUB_MISMATCH': 1, 'OUT_OF_SNAPSHOT_CLUB': 218}
-- Kullanım önceliği dağılımı: {'HIGH_USAGE_UNRESOLVED': 17, 'ROTATION_USAGE_UNRESOLVED': 9, 'OUT_OF_SNAPSHOT': 218, 'NO_MATCH_ACTIVITY': 15}
+- Sınıf dağılımı: {'NO_RELIABLE_CANDIDATE_IN_SNAPSHOT': 42, 'SAME_CLUB_NAME_REVIEW': 1, 'POSSIBLE_TRANSFER_OR_CLUB_MISMATCH': 1, 'OUT_OF_SNAPSHOT_CLUB': 218}
+- Kullanım önceliği dağılımı: {'HIGH_USAGE_UNRESOLVED': 17, 'ROTATION_USAGE_UNRESOLVED': 9, 'OUT_OF_SNAPSHOT': 218, 'NO_MATCH_ACTIVITY': 18}
 - Kural: Doğrulanmış kapsama yalnız snapshot eşleşmesi girer; manuel alias kullanımı ayrı izlenir ve ağ teyidi tamamlanana kadar doğrulanmış sayılmaz.
 
 ## Scout Bloke Eden Kuyruk
@@ -33,15 +33,15 @@
 | CORENDON ALANYASPOR | 34 | 37 | 31 | 0 | 3 | %91.2 | %91.2 |
 | FENERBAHÇE A.Ş. | 45 | 50 | 38 | 0 | 7 | %84.4 | %84.4 |
 | GALATASARAY A.Ş. | 42 | 44 | 41 | 0 | 1 | %97.6 | %97.6 |
-| GAZİANTEP FUTBOL KULÜBÜ A.Ş. | 41 | 45 | 38 | 0 | 3 | %92.7 | %92.7 |
-| GENÇLERBİRLİĞİ | 40 | 48 | 38 | 0 | 2 | %95.0 | %95.0 |
+| GAZİANTEP FUTBOL KULÜBÜ A.Ş. | 43 | 45 | 38 | 0 | 5 | %88.4 | %88.4 |
+| GENÇLERBİRLİĞİ | 41 | 48 | 39 | 0 | 2 | %95.1 | %95.1 |
 | GÖZTEPE A.Ş. | 36 | 36 | 30 | 1 | 5 | %83.3 | %86.1 |
 | HESAP.COM ANTALYASPOR | 0 | 48 | 0 | 0 | 0 | %0 | %0 |
 | KASIMPAŞA A.Ş. | 39 | 60 | 36 | 0 | 3 | %92.3 | %92.3 |
 | KOCAELİSPOR | 36 | 39 | 33 | 0 | 3 | %91.7 | %91.7 |
 | MISIRLI.COM.TR FATİH KARAGÜMRÜK | 0 | 46 | 0 | 0 | 0 | %0 | %0 |
 | RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ | 30 | 32 | 29 | 0 | 1 | %96.7 | %96.7 |
-| SAMSUNSPOR A.Ş. | 40 | 44 | 36 | 0 | 4 | %90.0 | %90.0 |
+| SAMSUNSPOR A.Ş. | 41 | 44 | 36 | 0 | 5 | %87.8 | %87.8 |
 | TRABZONSPOR A.Ş. | 44 | 42 | 39 | 1 | 4 | %88.6 | %90.9 |
 | TÜMOSAN KONYASPOR | 42 | 48 | 41 | 0 | 1 | %97.6 | %97.6 |
 | ZECORNER KAYSERİSPOR | 0 | 51 | 0 | 0 | 0 | %0 | %0 |
@@ -244,7 +244,9 @@
 ### GAZİANTEP FUTBOL KULÜBÜ A.Ş.
 
 - PAPA ALIOUNE NDIAYE (GAZİANTEP FUTBOL KULÜBÜ A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=3, gol=0, scout_blok=False, aday=Badou Ndiaye (GAZİANTEP FUTBOL KULÜBÜ A.Ş., skor=0.645, ortak=NDIAYE). Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
+- AHMET EREN SIRMA (GAZİANTEP FUTBOL KULÜBÜ A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=NO_MATCH_ACTIVITY, ilk11=0, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - FLORIN BOGDAN ŞTEFAN (GAZİANTEP FUTBOL KULÜBÜ A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=NO_MATCH_ACTIVITY, ilk11=0, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
+- MEHMET ALİ GENÇ (GAZİANTEP FUTBOL KULÜBÜ A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=NO_MATCH_ACTIVITY, ilk11=0, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - MISJONNE JUNIFFER NAIGELINO HANSEN (GAZİANTEP FUTBOL KULÜBÜ A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=NO_MATCH_ACTIVITY, ilk11=0, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 
 ### GENÇLERBİRLİĞİ
@@ -416,6 +418,7 @@
 - JOSAFAT WOODING MENDES (SAMSUNSPOR A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=11, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - NANY DIMATA (SAMSUNSPOR A.Ş.): sınıf=SAME_CLUB_NAME_REVIEW, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=2, gol=0, scout_blok=False, aday=Landry Dimata (SAMSUNSPOR A.Ş., skor=0.833, ortak=DIMATA). Aynı kulüpte güçlü ad varyantı adayı var; manuel onay sonrası alias kaydı eklenebilir.
 - YIRIGUE FOUNGOGNAN SEKONGO (SAMSUNSPOR A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=NO_MATCH_ACTIVITY, ilk11=0, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
+- YUSUFEFE YURTSEVER (SAMSUNSPOR A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=NO_MATCH_ACTIVITY, ilk11=0, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 
 ### SEBAT SPOR KULÜBÜ
 

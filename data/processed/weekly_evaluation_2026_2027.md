@@ -4,12 +4,12 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 
 ## Genel Karne
 
-- Değerlendirilen maç: **89**
-- İsabet: **44/89** (%49)
+- Değerlendirilen maç: **99**
+- İsabet: **48/99** (%48)
 - Beraberlik yakalama: **3/16** (%19)
-- Yüksek güvenli maç isabeti: **24/36** (%67)
-- Brier score: **0.592** (düşük daha iyi; 2025-26 referans 0.600)
-- Log loss: **0.989** (düşük daha iyi; 2025-26 referans 1.005)
+- Yüksek güvenli maç isabeti: **27/40** (%68)
+- Brier score: **0.594** (düşük daha iyi; 2025-26 referans 0.600)
+- Log loss: **0.994** (düşük daha iyi; 2025-26 referans 1.005)
 
 ### Güven bandı kalibrasyonu
 
@@ -17,9 +17,9 @@ _"Beyan edilen ort. olasılık" ile "İsabet" arasındaki fark büyükse (özell
 
 | Güven bandı | Maç | İsabet | Beyan edilen ort. olasılık | Brier | Log loss | Referans (2025-26: isabet / brier / logloss) |
 | --- | --- | --- | --- | --- | --- | --- |
-| HIGH | 36 | 24/36 (%67) | %60 | 0.476 | 0.828 | %64 / 0.516 / 0.885 |
-| MEDIUM | 28 | 9/28 (%32) | %46 | 0.684 | 1.112 | %54 / 0.619 / 1.032 |
-| LOW | 25 | 11/25 (%44) | %38 | 0.654 | 1.082 | %48 / 0.670 / 1.103 |
+| HIGH | 40 | 27/40 (%68) | %61 | 0.470 | 0.821 | %64 / 0.516 / 0.885 |
+| MEDIUM | 30 | 9/30 (%30) | %46 | 0.701 | 1.140 | %54 / 0.619 / 1.032 |
+| LOW | 29 | 12/29 (%41) | %37 | 0.654 | 1.082 | %48 / 0.670 / 1.103 |
 
 ### Seçilen tarafa göre isabet
 
@@ -27,13 +27,27 @@ _Model hangi tarafı seçtiğinde ne oldu? Belirli bir seçimde (ör. deplasman 
 
 | Seçim | Maç | İsabet | Gerçekleşen (Ev / X / Dep) |
 | --- | --- | --- | --- |
-| Ev | 50 | 28/50 (%56) | 28 / 7 / 15 |
-| Beraberlik | 8 | 3/8 (%38) | 2 / 3 / 3 |
-| Deplasman | 31 | 13/31 (%42) | 12 / 6 / 13 |
+| Ev | 52 | 29/52 (%56) | 29 / 7 / 16 |
+| Beraberlik | 12 | 3/12 (%25) | 5 / 3 / 4 |
+| Deplasman | 35 | 16/35 (%46) | 13 / 6 / 16 |
 
 [Olasılık kovaları ve seçici yayın politikası →](prediction_calibration_audit_2026_2027.html)
 
-## Hafta 10 — 5/8 isabet (%62)
+## Hafta 11 — 4/9 isabet (%44)
+
+| Maç | Skor | Tahmin | Sonuç | Güven |
+| --- | --- | --- | --- | --- |
+| GAZİANTEP FUTBOL KULÜBÜ A.Ş. - KASIMPAŞA A.Ş. | 0 - 2 | Beraberlik | ❌ | LOW |
+| EYÜPSPOR - KOCAELİSPOR | 0 - 2 | Deplasman | ✅ | HIGH |
+| SAMSUNSPOR A.Ş. - TÜMOSAN KONYASPOR | 1 - 0 | Beraberlik | ❌ | MEDIUM |
+| GALATASARAY A.Ş. - AMED SPORTİF FAALİYETLER | 4 - 3 | Deplasman | ❌ | MEDIUM |
+| GÖZTEPE A.Ş. - İSTANBUL BAŞAKŞEHİR FK | 1 - 2 | Ev | ❌ | HIGH |
+| ÇAYKUR RİZESPOR A.Ş. - ERZURUMSPOR FK | 2 - 1 | Beraberlik | ❌ | LOW |
+| ARCA ÇORUM FK - FENERBAHÇE A.Ş. | 0 - 5 | Deplasman | ✅ | LOW |
+| CORENDON ALANYASPOR - TRABZONSPOR A.Ş. | 0 - 2 | Deplasman | ✅ | HIGH |
+| BEŞİKTAŞ A.Ş. - GENÇLERBİRLİĞİ | 3 - 0 | Ev | ✅ | HIGH |
+
+## Hafta 10 — 5/9 isabet (%56)
 
 | Maç | Skor | Tahmin | Sonuç | Güven |
 | --- | --- | --- | --- | --- |
@@ -45,6 +59,7 @@ _Model hangi tarafı seçtiğinde ne oldu? Belirli bir seçimde (ör. deplasman 
 | TRABZONSPOR A.Ş. - GAZİANTEP FUTBOL KULÜBÜ A.Ş. | 2 - 0 | Ev | ✅ | HIGH |
 | İSTANBUL BAŞAKŞEHİR FK - SAMSUNSPOR A.Ş. | 5 - 2 | Ev | ✅ | MEDIUM |
 | KASIMPAŞA A.Ş. - BEŞİKTAŞ A.Ş. | 2 - 2 | Deplasman | ❌ | LOW |
+| GENÇLERBİRLİĞİ - CORENDON ALANYASPOR | 5 - 0 | Beraberlik | ❌ | LOW |
 
 ## Hafta 9 — 5/9 isabet (%56)
 

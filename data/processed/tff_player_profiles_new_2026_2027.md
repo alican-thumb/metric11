@@ -1,24 +1,27 @@
 # TFF Oyuncu Profilleri
 
 - Takım filtresi: Yok
-- Profil sayısı: 494
+- Profil sayısı: 499
 - Hata sayısı: 0
-- Ortalama yaş: 25.8
+- Ortalama yaş: 25.7
 - Ortalama kalan sözleşme ayı: 21.1
-- 23 yaş ve altı oyuncu: 172
+- 23 yaş ve altı oyuncu: 177
 - 13 ay içinde sözleşmesi bitecek oyuncu: 190
 
 ## Genç Oyuncular
 
 - MUSTAFA KUZEY AKÇAY (TRABZONSPOR A.Ş.): yaş=16, sözleşme bitiş=Yok
+- AHMET EREN SIRMA (GAZİANTEP FUTBOL KULÜBÜ A.Ş.): yaş=17, sözleşme bitiş=Yok
 - ATA YANIK (TÜMOSAN KONYASPOR): yaş=17, sözleşme bitiş=2028-06-30
 - DENİZ CEYLAN (KOCAELİSPOR): yaş=17, sözleşme bitiş=Yok
 - ERK ARDA ASLAN (GENÇLERBİRLİĞİ): yaş=17, sözleşme bitiş=Yok
 - FURKAN AYAZ ÖZCAN (GENÇLERBİRLİĞİ): yaş=17, sözleşme bitiş=2028-06-30
+- MEHMET ALİ GENÇ (GAZİANTEP FUTBOL KULÜBÜ A.Ş.): yaş=17, sözleşme bitiş=Yok
 - MUSTAFA COŞKUN TOSUN (ÇAYKUR RİZESPOR A.Ş.): yaş=17, sözleşme bitiş=2029-06-30
 - İSMAİL DUYU (AMED SPORTİF FAALİYETLER): yaş=17, sözleşme bitiş=Yok
 - AHMET SALİH ARICI (KASIMPAŞA A.Ş.): yaş=18, sözleşme bitiş=Yok
 - ALİ OSMAN KALIN (GAZİANTEP FUTBOL KULÜBÜ A.Ş.): yaş=18, sözleşme bitiş=2027-06-30
+- BİLAL SARI (GENÇLERBİRLİĞİ): yaş=18, sözleşme bitiş=Yok
 - CEMİLHAN ASLAN (GAZİANTEP FUTBOL KULÜBÜ A.Ş.): yaş=18, sözleşme bitiş=2027-06-30
 - EFE YİĞİT ÜSTÜN (SAMSUNSPOR A.Ş.): yaş=18, sözleşme bitiş=2028-06-30
 - EYMEN KARATAŞ (CORENDON ALANYASPOR): yaş=18, sözleşme bitiş=Yok
@@ -37,9 +40,6 @@
 - ARDA ÖZYAR (KOCAELİSPOR): yaş=19, sözleşme bitiş=2031-06-30
 - ARDA ÜNYAY (GALATASARAY A.Ş.): yaş=19, sözleşme bitiş=2028-06-30
 - AROUNA KIGBAFORY SORO (CORENDON ALANYASPOR): yaş=19, sözleşme bitiş=2031-06-30
-- BERK KIZILDEMİR (AMED SPORTİF FAALİYETLER): yaş=19, sözleşme bitiş=2029-06-30
-- CHRIST OTINIEL SADIA (EYÜPSPOR): yaş=19, sözleşme bitiş=2028-06-30
-- EGE YILDIRIM (GÖZTEPE A.Ş.): yaş=19, sözleşme bitiş=2029-06-30
 
 ## Sözleşme Fırsatları
 
