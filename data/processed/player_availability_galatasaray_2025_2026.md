@@ -11,7 +11,6 @@
 
 ## Güncel Haber/Sakat-Cezalı Bağlamı
 
-- INJURED | RAFAEL ALEXANDRE DA CONCEIÇÃO LEÃO | kaynak=news_intelligence | güven=HIGH
 - INJURED | GABRIEL DAVI GOMES SARA | kaynak=news_intelligence | güven=MEDIUM
 
 ## Maç Bazlı Eksikler

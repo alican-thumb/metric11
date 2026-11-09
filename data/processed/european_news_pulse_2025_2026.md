@@ -1,20 +1,17 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-11-09T09:45:45.614672+00:00
-Toplam ilgili haber: 20
+Üretim zamanı: 2026-11-09T12:48:03.588524+00:00
+Toplam ilgili haber: 17
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
-- [Türkiye-Belçika maçı ne zaman, saat kaçta ve hangi kanalda? UEFA Uluslar Ligi…](https://www.aksam.com.tr/trend/turkiye-belcika-maci-ne-zaman-saat-kacta-ve-hangi-kanalda-uefa-uluslar-ligi/haber-1713083) — Aksam Spor · 2026-11-09T11:56:00+03:00 · turnuva=— · kulüp=—
-- [Beşiktaş, iki milli ara arasında sadece 1 deplasman galibiyeti aldı](https://www.aksam.com.tr/spor/besiktas-iki-milli-ara-arasinda-sadece-1-deplasman-galibiyeti-aldi/haber-1713081) — Aksam Spor · 2026-11-09T11:51:00+03:00 · turnuva=EL · kulüp=Beşiktaş
+- [Beşiktaş, milli ara sonrası deplasmanda sadece 1 kez güldü](https://www.cnnturk.com/spor/futbol/besiktas-milli-ara-sonrasi-deplasmanda-sadece-1-kez-guldu-3490906) — CNN Türk Spor · 2026-11-09T13:15:44+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [MİLLİ ARA NE ZAMAN BİTECEK? Milli Ara Başladı Mı? A Milli Takım Belçika ve Fransa Maçları Ne Zaman? Türkiye Uluslar Ligi A Grubu Maç Takvimi](https://www.cnnturk.com/spor/futbol/milli-ara-ne-zaman-bitecek-milli-ara-basladi-mi-a-milli-takim-belcika-ve-fransa-maclari-ne-zaman-turkiye-uluslar-ligi-a-grubu-3490857) — CNN Türk Spor · 2026-11-09T11:21:49+00:00 · turnuva=— · kulüp=—
 - [Milli ara ne zaman başlayacak ve bitecek? 2026 - 2027 Milli ara tarihleri](https://www.cnnturk.com/spor/milli-ara-ne-zaman-baslayacak-ve-bitecek-2026-2027-milli-ara-tarihleri-3490659) — CNN Türk Spor · 2026-11-09T09:08:44+00:00 · turnuva=— · kulüp=—
 - [TÜRKİYE - BELÇİKA MAÇI NE ZAMAN? Milli maç saat kaçta? A Milli Takım'ın kritik sınavı hangi gün oynanacak? UEFA Uluslar A Ligi'nde gözler ay-yıldızlılarda](https://www.cnnturk.com/spor/futbol/turkiye-belcika-maci-ne-zaman-milli-mac-saat-kacta-a-milli-takimin-kritik-sinavi-hangi-gun-oynanacak-uefa-uluslar-a-liginde-3487933) — CNN Türk Spor · 2026-11-09T09:07:24+00:00 · turnuva=— · kulüp=—
 - [SHAKHTAR DONETSK - FENERBAHÇE MAÇI NE ZAMAN? Shakhtar Donetsk - Fenerbahçe maçı nerede oynanacak?](https://www.cnnturk.com/spor/futbol/shakhtar-donetsk-fenerbahce-maci-ne-zaman-shakhtar-donetsk-fenerbahce-maci-nerede-oynanacak-3489845) — CNN Türk Spor · 2026-11-09T09:07:16+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [BEŞİKTAŞ GENÇLERBİRLİĞİ ŞİFRESİZ CANLI İZLE| Beşiktaş Gençlerbirliği Maçı Saat Kaçta, Hangi Kanalda, Şifresiz Mi? Milli Ara Öncesi Son Puanlar! İşte Maç Kadroları](https://www.cnnturk.com/spor/futbol/besiktas-genclerbirligi-canli-izle-sifresiz-besiktas-genclerbirligi-maci-saat-kacta-hangi-kanalda-sifresiz-mi-milli-ara-oncesi-3490563) — CNN Türk Spor · 2026-11-08T20:24:11+00:00 · turnuva=EL · kulüp=Beşiktaş, Gençlerbirliği
-- [ALANYASPOR TRABZONSPOR CANLI İZLE ŞİFRESİZ| Corendon Alanyaspor Trabzonspor Maçı Saat Kaçta, Hangi Kanalda, Şifresiz Mi? İşte Maç Kadroları](https://www.cnnturk.com/spor/futbol/alanyaspor-trabzonspor-canli-izle-sifresiz-corendon-alanyaspor-trabzonspor-maci-saat-kacta-hangi-kanalda-sifresiz-mi-iste-mac-3490538) — CNN Türk Spor · 2026-11-08T18:55:24+00:00 · turnuva=ECL · kulüp=Trabzonspor, Alanyaspor
-- [ÇORUM FK - FENERBAHÇE MAÇI SAAT KAÇTA, HANGİ KANALDA? Çorum FK Fenerbahçe Maçı Şifresiz Mi? Emre Belözoğlu İlk Sınavında! İşte Maç Kadroları](https://www.cnnturk.com/spor/futbol/corum-fk-fenerbahce-maci-saat-kacta-hangi-kanalda-corum-fk-fenerbahce-maci-sifresiz-mi-emre-belozoglu-ilk-sinavinda-iste-mac-3490475) — CNN Türk Spor · 2026-11-08T16:02:28+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [A Milli Takım'da aday kadroya çağrılan Serhat Öztaşdelen'in sevinci kameraya yansıdı](https://www.takvim.com.tr/spor/2026/11/06/serhat-oztasdelenin-sevinci-kamerada) — Takvim Spor · 2026-11-06T17:07:07+03:00 · turnuva=— · kulüp=Kocaelispor
 - [Sergen Yalçın Milli Takım aday kadrosunu açıkladı! Berke Özer geri döndü](https://www.takvim.com.tr/spor/2026/11/06/sergen-yalcin-milli-takimin-aday-kadrosunu-acikladi) — Takvim Spor · 2026-11-06T14:00:43+03:00 · turnuva=— · kulüp=—
 - [Spor yazarlarından Beşiktaş yorumları: "Önemli bir sorun var"](https://www.takvim.com.tr/spor/besiktas/2026/11/06/spor-yazarlari-celtic-besiktas-macini-yorumladi) — Takvim Spor · 2026-11-06T10:24:36+03:00 · turnuva=EL · kulüp=Beşiktaş
