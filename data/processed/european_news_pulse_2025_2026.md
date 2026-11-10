@@ -1,11 +1,17 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-11-10T12:23:32.847167+00:00
-Toplam ilgili haber: 20
+Üretim zamanı: 2026-11-10T14:50:23.496887+00:00
+Toplam ilgili haber: 24
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [TFF'den Süper Lig ve 1. Lig'de Çoklu Top Sistemi kararı: 14 top kullanılacak, top toplayıcılar top veremeyecek](https://www.takvim.com.tr/spor/2026/11/10/tff-duyurdu-iste-coklu-top-siteminin-detaylari) — Takvim Spor · 2026-11-10T17:05:53+03:00 · turnuva=— · kulüp=—
+- [Ümit Akdağ'a 2 maç ceza! Hapoel Beer Sheva maçında da yok](https://www.takvim.com.tr/spor/besiktas/2026/11/10/umit-akdaga-2-mac-ceza-hapoel-beer-sheva-macinda-da-yok) — Takvim Spor · 2026-11-10T16:36:32+03:00 · turnuva=EL · kulüp=Beşiktaş
+- [Emre Belözoğlu ve Arda Turan aynı safta! Önce namaz sonra salep](https://www.takvim.com.tr/spor/superlig/2026/11/10/emre-belozoglu-ve-arda-turan-ayni-safta-namaz-kildi) — Takvim Spor · 2026-11-10T16:26:56+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [A Milli Kadın Futbol Takımı, Kamerun ile 2 hazırlık maçı yapacak](https://www.aa.com.tr/tr/spor/a-milli-kadin-futbol-takimi-kamerun-ile-2-hazirlik-maci-yapacak/4118917) — Anadolu Ajansı Spor · 2026-11-10T16:08:42+03:00 · turnuva=— · kulüp=—
+- [UEFA'dan Ümit Akdağ’a kötü haber](https://www.cnnturk.com/spor/futbol/uefadan-umit-akdaga-kotu-haber-3491554) — CNN Türk Spor · 2026-11-10T15:17:06+00:00 · turnuva=EL · kulüp=—
+- [Zaniolo Milli Takım kampından ayrıldı!](https://www.haberturk.com/spor/nicolo-zaniolo-italya-milli-takimi-kampindan-ayrildi-3926312) — Haberturk Spor · 2026-11-10T13:05:19+00:00 · turnuva=— · kulüp=—
 - [Türkiye - Belçika maçını Sandro Scharer yönetecek!](https://www.sabah.com.tr/spor/futbol/2026/11/10/turkiye-belcika-macini-sandro-scharer-yonetecek) — Sabah Spor · 2026-11-10T12:54:56+03:00 · turnuva=— · kulüp=—
 - [GALATASARAY - ASTON VILLA MAÇI NE ZAMAN? UCL Galatasaray Aston Villa Maçı Hangi Kanalda, Saat Kaçta, Şifresiz Mi? Galatasaray'da Eksik Var Mı?](https://www.cnnturk.com/spor/futbol/galatasaray-aston-villa-maci-ne-zaman-ucl-galatasaray-aston-villa-maci-hangi-kanalda-saat-kacta-sifresiz-mi-galatasarayda-3491442) — CNN Türk Spor · 2026-11-10T12:43:05+00:00 · turnuva=CL · kulüp=Galatasaray
 - [MİLLİ ARA NE ZAMAN BİTECEK? Milli Ara Başladı Mı? A Milli Takım Belçika ve Fransa Maçları Ne Zaman? Türkiye Uluslar Ligi A Grubu Maç Takvimi](https://www.cnnturk.com/spor/futbol/milli-ara-ne-zaman-bitecek-milli-ara-basladi-mi-a-milli-takim-belcika-ve-fransa-maclari-ne-zaman-turkiye-uluslar-ligi-a-grubu-3490857) — CNN Türk Spor · 2026-11-10T12:36:35+00:00 · turnuva=— · kulüp=—
@@ -23,6 +29,4 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Ümit Milli Takım'da Çekya mesaisi!](https://www.haberturk.com/spor/umit-milli-takim-da-cekya-mesaisi-3926126) — Haberturk Spor · 2026-11-09T21:08:20+00:00 · turnuva=— · kulüp=—
 - [Sergen Yalçın, A Milli Takım ile ilk idmanına çıktı!](https://www.hurriyet.com.tr/sporarena/sergen-yalcin-a-milli-takim-ile-ilk-idmanina-cikti-43372139) — Hürriyet Spor · 2026-11-09T20:26:18+00:00 · turnuva=— · kulüp=—
 - [Bizim Çocuklar Turkuvaz Medya'da! Uluslar Ligi'ndeki 21 maç nefes kesecek](https://www.takvim.com.tr/spor/2026/11/09/uluslar-ligi-maclari-turkuvaz-medyada) — Takvim Spor · 2026-11-09T16:29:04+03:00 · turnuva=— · kulüp=—
-- [Beşiktaş, milli ara sonrası deplasmanda sadece 1 kez güldü](https://www.cnnturk.com/spor/futbol/besiktas-milli-ara-sonrasi-deplasmanda-sadece-1-kez-guldu-3490906) — CNN Türk Spor · 2026-11-09T13:15:44+00:00 · turnuva=EL · kulüp=Beşiktaş
-- [Fenerbahçe gündem yeni teknik direktör! Şampiyonlar Ligi'nden aday var - Fotomaç](https://news.google.com/rss/articles/CBMivwFBVV95cUxOcUg4N0pQTV83cHFfZHpVOEtpMXJyMWNLTWsxZDlodVB2TjQ3UjFUUkEtX3hHZUFhZ2x2SWplYV9zNzUyNEp3RzlxeWNBLW5KNHdhcnUxVmg4UUY1aW1FNjl4Q1ZSV0xka1BLN2ZZRUVpUHhWdXRHRUgwR01LNFNmRUoyb0hoc2hoREpqWEhfQVl3ZTVIRWpxSC0zWUhjVmlPLUtDaGRqSDJoRUJPMVdLWVRsWVJ3dGgwWXd5b0JSMNIBxAFBVV95cUxNMmFGWkxhMlVDZnJtUkhreTd2X2E4d1NEUmhQcHMyODlFSGtINzUxTnMxdXQydHYxMlhpdVBCRDdWUnBfYWxiYVl2YzdVSlN5R0xfc3hmejRZMkNlbzZTb3VObi1tVW1aUkFQbVJDNFdoMjBhY3pHREpqcDlMUXJyMk4tRV8zMDVCRG41djZ3VnNaajhmalJ2ck1vUi1WdWR6S3RrMU00WnpDRmp1WVk3a29ORnhxWWlGUTNPSFhNZXNPdUg5?oc=5) — Fotomaç · 2026-11-02T07:20:58+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Miguel Cardoso ve Elisha Owusu ile resmî sözleşme imzaladık.](https://erzurumsporfk.org/2026/08/19/miguel-cardoso-ve-elisha-owusu-ile-resmi-sozlesme-imzaladik/) — Erzurumspor FK Resmi Web · 2026-08-19T20:45:50+03:00 · turnuva=EL · kulüp=Kayserispor
