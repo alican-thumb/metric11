@@ -33,23 +33,26 @@
 - SABA KHAREBASHVILI (İSTANBUL BAŞAKŞEHİR FK): yaş=18, sözleşme bitiş=2030-06-30
 - SAIKUBA JARJU (SAMSUNSPOR A.Ş.): yaş=18, sözleşme bitiş=2029-06-30
 - YİĞİT HAMZA AYDAR (GENÇLERBİRLİĞİ): yaş=18, sözleşme bitiş=2028-06-30
-- ÖMER ARDA KARA (ERZURUMSPOR FK): yaş=18, sözleşme bitiş=2027-06-30
 - AHMET DOĞAN YILDIRIM (TRABZONSPOR A.Ş.): yaş=19, sözleşme bitiş=2029-06-30
 - ALBERT-IUSTIN DOICARU (ÇAYKUR RİZESPOR A.Ş.): yaş=19, sözleşme bitiş=2031-06-30
 - ALI BADRA DIABATE (SAMSUNSPOR A.Ş.): yaş=19, sözleşme bitiş=2029-06-30
 - ARDA ÖZYAR (KOCAELİSPOR): yaş=19, sözleşme bitiş=2031-06-30
 - ARDA ÜNYAY (GALATASARAY A.Ş.): yaş=19, sözleşme bitiş=2028-06-30
 - AROUNA KIGBAFORY SORO (CORENDON ALANYASPOR): yaş=19, sözleşme bitiş=2031-06-30
+- BERK KIZILDEMİR (AMED SPORTİF FAALİYETLER): yaş=19, sözleşme bitiş=2029-06-30
 
 ## Sözleşme Fırsatları
 
 - YASİN ÖZCAN (BEŞİKTAŞ A.Ş.): kalan ay=3, bitiş=2027-01-27
 - AMIR HADZIAHMETOVIC (BEŞİKTAŞ A.Ş.): kalan ay=7, bitiş=2027-05-31
 - BARIŞ ALPER YILMAZ (GALATASARAY A.Ş.): kalan ay=7, bitiş=2027-05-31
+- CİHAN ÇANAK (TRABZONSPOR A.Ş.): kalan ay=7, bitiş=2027-06-30
 - ENES ALBAK (SAMSUNSPOR A.Ş.): kalan ay=7, bitiş=2027-05-31
 - KAZIMCAN KARATAŞ (GALATASARAY A.Ş.): kalan ay=7, bitiş=2027-05-31
+- MERT HAKAN YANDAŞ (FENERBAHÇE A.Ş.): kalan ay=7, bitiş=2027-06-30
 - YAKUP KIRTAY (ERZURUMSPOR FK): kalan ay=7, bitiş=2027-05-31
 - YUNUS EMRE ÇİFT (SAMSUNSPOR A.Ş.): kalan ay=7, bitiş=2027-05-31
+- ÖMER ARDA KARA (ERZURUMSPOR FK): kalan ay=7, bitiş=2027-06-30
 - İSMAİL YÜKSEK (FENERBAHÇE A.Ş.): kalan ay=7, bitiş=2027-05-31
 - ABDELHAMID SABIRI (EYÜPSPOR): kalan ay=8, bitiş=2027-06-30
 - ABDURRAHİM DURSUN (GENÇLERBİRLİĞİ): kalan ay=8, bitiş=2027-06-30
@@ -70,6 +73,3 @@
 - ALİ YAVUZ KOL (KASIMPAŞA A.Ş.): kalan ay=8, bitiş=2027-06-30
 - AMAR GERXHALIU (ERZURUMSPOR FK): kalan ay=8, bitiş=2027-06-30
 - ANDRE ONANA ONANA (TRABZONSPOR A.Ş.): kalan ay=8, bitiş=2027-06-30
-- ANDREAS GIANNIOTIS (KASIMPAŞA A.Ş.): kalan ay=8, bitiş=2027-06-30
-- ANDREAS SKOV OLSEN (İSTANBUL BAŞAKŞEHİR FK): kalan ay=8, bitiş=2027-06-30
-- ANFERNEE JAMAL DIJKSTEEL (KOCAELİSPOR): kalan ay=8, bitiş=2027-06-30
