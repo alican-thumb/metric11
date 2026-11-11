@@ -14,6 +14,7 @@ MANUAL_DIR = Path("data/manual")
 OUTPUT_JSON = PROCESSED_DIR / "growth_measurement_2026_2027.json"
 OUTPUT_MD = PROCESSED_DIR / "growth_measurement_2026_2027.md"
 OUTPUT_HTML = PROCESSED_DIR / "growth_measurement_2026_2027.html"
+VERCEL_ANALYTICS_PATH = PROCESSED_DIR / "vercel_web_analytics_latest.json"
 
 
 def _load_snapshots(directory: Path = MANUAL_DIR) -> list[dict]:
@@ -49,7 +50,14 @@ def _delta(current: dict, previous: dict | None) -> dict:
     }
 
 
-def build_report(snapshots: list[dict]) -> dict:
+def _load_vercel_analytics(path: Path = VERCEL_ANALYTICS_PATH) -> dict | None:
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return None
+
+
+def build_report(snapshots: list[dict], analytics: dict | None = None) -> dict:
     if not snapshots:
         return {
             "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -94,9 +102,13 @@ def build_report(snapshots: list[dict]) -> dict:
         actions.append("Keşfedilip indekslenmeyen URL yığını yüksek. Noindex temizliğinin etkisini sonraki GSC güncellemesinde ölç.")
     if zero_click_queries:
         actions.append(f"İlk içerik fırsatı: '{zero_click_queries[0]['query']}' sorgusu için mevcut hedef sayfayı güçlendir.")
-    vercel = current.get("vercel_analytics", {})
+    vercel = analytics or current.get("vercel_analytics", {})
     if vercel.get("status") != "connected":
-        actions.append("Vercel Web Analytics interaktif onayı tamamlanmadan sosyal UTM oturumları ölçülemez.")
+        actions.append("Vercel Web Analytics verisi henüz otomatik alınamıyor; API bağlantısını ve CI kimlik bilgilerini kontrol et.")
+    else:
+        prediction = next((row for row in vercel.get("projects", []) if row.get("key") == "prediction_game"), None)
+        if prediction and prediction.get("pageviews", 0) == 0:
+            actions.append("Tahmin oyunu Analytics ölçümü yeni başladı; ilk ziyaretler gelene kadar dağıtım bağlantılarını ana sayfada görünür tut.")
 
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -125,6 +137,15 @@ def _pct(value: float | None) -> str:
     return "—" if value is None else f"%{value * 100:.1f}".replace(".", ",")
 
 
+def _date(value: str | None) -> str:
+    if not value:
+        return "—"
+    try:
+        return datetime.fromisoformat(value.replace("Z", "+00:00")).strftime("%d.%m.%Y")
+    except ValueError:
+        return value
+
+
 def build_markdown(report: dict) -> str:
     if report.get("status") != "ready":
         return "# Büyüme Ölçümü\n\nHenüz Search Console snapshot'ı yok.\n"
@@ -144,6 +165,11 @@ def build_markdown(report: dict) -> str:
         "",
     ]
     lines.extend(f"- {action}" for action in report["actions"])
+    vercel = report.get("vercel_analytics", {})
+    lines.extend(["", "## Site Trafiği", "", "| Proje | Ziyaretçi | Sayfa görüntüleme | Rapor aralığı başlangıcı |", "|---|---:|---:|---|"])
+    for row in vercel.get("projects", []):
+        measurement = row.get("measurement", {})
+        lines.append(f"| {row.get('domain', '—')} | {row.get('visitors', '—')} | {row.get('pageviews', '—')} | {_date(measurement.get('since'))} |")
     lines.extend(["", "## En Çok Trafik Alan Sayfalar", "", "| Sayfa | Tıklama | Gösterim | CTR |", "|---|---:|---:|---:|"])
     for row in report["pages"][:10]:
         lines.append(f"| {row['label']} | {row['clicks']} | {row['impressions']} | {_pct(row['ctr'])} |")
@@ -157,6 +183,13 @@ def build_html(report: dict) -> str:
     i = report["indexing"]
     reasons = i.get("reasons", {})
     vercel = report.get("vercel_analytics", {})
+    analytics_rows = "".join(
+        f"<tr><td>{escape(row.get('domain', '—'))}</td><td>{row.get('visitors', '—')}</td><td>{row.get('pageviews', '—')}</td><td>{escape(_date(row.get('measurement', {}).get('since')))}</td></tr>"
+        for row in vercel.get("projects", [])
+    )
+    analytics_status = {"connected": "Bağlı", "partial": "Kısmen bağlı", "unavailable": "Kullanılamıyor"}.get(
+        vercel.get("status"), "Bilinmiyor"
+    )
     cards = [
         ("Tıklama", str(p.get("clicks", 0)), report["snapshot"]["period"].get("label", "")),
         ("Gösterim", str(p.get("impressions", 0)), "Arama görünürlüğü"),
@@ -197,7 +230,7 @@ def build_html(report: dict) -> str:
 <section class="gm-panel gm-warn"><h2>Öncelikli aksiyonlar</h2><ol class="gm-actions">{action_html}</ol></section>
 <section class="gm-panel"><h2>Aramada trafik alan sayfalar</h2><div class="gm-table-wrap"><table><thead><tr><th>Sayfa</th><th>Tıklama</th><th>Gösterim</th><th>CTR</th></tr></thead><tbody>{page_rows}</tbody></table></div></section>
 <section class="gm-panel"><h2>Arama sorguları</h2><div class="gm-table-wrap"><table><thead><tr><th>Sorgu</th><th>Tıklama</th><th>Gösterim</th><th>CTR</th></tr></thead><tbody>{query_rows}</tbody></table></div></section>
-<section class="gm-panel"><h2>Sosyal trafik ölçümü</h2><p>Vercel Analytics durumu: <strong>{escape(vercel.get('status', 'bilinmiyor'))}</strong>.</p><p>{escape(vercel.get('note', ''))}</p></section>
+<section class="gm-panel"><h2>Site trafiği</h2><p>Vercel Analytics durumu: <strong>{escape(analytics_status)}</strong>.</p><div class="gm-table-wrap"><table><thead><tr><th>Proje</th><th>Ziyaretçi</th><th>Sayfa görüntüleme</th><th>Rapor aralığı başlangıcı</th></tr></thead><tbody>{analytics_rows}</tbody></table></div><p>{escape(vercel.get('plan_note') or vercel.get('note', ''))}</p></section>
 """
     return page_html(
         "Büyüme Ölçümü",
@@ -209,7 +242,7 @@ def build_html(report: dict) -> str:
 
 
 def main() -> None:
-    report = build_report(_load_snapshots())
+    report = build_report(_load_snapshots(), _load_vercel_analytics())
     OUTPUT_JSON.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
     OUTPUT_MD.write_text(build_markdown(report), encoding="utf-8")
     OUTPUT_HTML.write_text(build_html(report), encoding="utf-8")

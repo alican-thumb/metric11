@@ -25,7 +25,20 @@ class GrowthMeasurementReportTests(unittest.TestCase):
         self.assertEqual(report["status"], "ready")
         self.assertIsNone(report["vercel_analytics"].get("pageviews"))
         self.assertIn("tahmini kadro", report["actions"][3])
-        self.assertTrue(any("interaktif" in action for action in report["actions"]))
+        self.assertTrue(any("API bağlantısını" in action for action in report["actions"]))
+
+    def test_uses_connected_vercel_metrics(self):
+        analytics = {
+            "status": "connected",
+            "projects": [
+                {"key": "main", "domain": "metric11.com", "visitors": 1318, "pageviews": 2873},
+                {"key": "prediction_game", "domain": "tahmin.metric11.com", "visitors": 0, "pageviews": 0},
+            ],
+        }
+        report = build_report([snapshot()], analytics)
+
+        self.assertEqual(report["vercel_analytics"]["projects"][0]["pageviews"], 2873)
+        self.assertTrue(any("Tahmin oyunu" in action for action in report["actions"]))
 
     def test_calculates_snapshot_delta(self):
         earlier = snapshot(clicks=10, impressions=100, indexed=20)

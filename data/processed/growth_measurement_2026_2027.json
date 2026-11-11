@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T11:14:26.472986+00:00",
+  "generated_at": "2026-11-11T11:40:44.796390+00:00",
   "status": "ready",
   "snapshot": {
     "captured_at": "2026-11-11T12:36:00+03:00",
@@ -30,10 +30,34 @@
     }
   },
   "vercel_analytics": {
-    "status": "confirmation_required",
-    "pageviews": null,
-    "visitors": null,
-    "note": "Web Analytics proje ayarı kullanıcı tarafından interaktif olarak etkinleştirilmeli."
+    "generated_at": "2026-11-11T11:39:19.274811+00:00",
+    "status": "connected",
+    "source": "vercel_web_analytics_api",
+    "plan_note": "Kaynak ve kampanya (UTM) kırılımı ücretli Vercel planı gerektirir; bu rapor doğrulanmış toplam ziyaret ve görüntülemeleri kullanır.",
+    "projects": [
+      {
+        "key": "main",
+        "domain": "metric11.com",
+        "status": "connected",
+        "measurement": {
+          "since": "2026-05-25T00:00:00.000Z",
+          "until": "2026-11-12T00:00:00.000Z"
+        },
+        "visitors": 1318,
+        "pageviews": 2873
+      },
+      {
+        "key": "prediction_game",
+        "domain": "tahmin.metric11.com",
+        "status": "connected",
+        "measurement": {
+          "since": "2026-09-04T00:00:00.000Z",
+          "until": "2026-11-12T00:00:00.000Z"
+        },
+        "visitors": 0,
+        "pageviews": 0
+      }
+    ]
   },
   "delta": {
     "available": false
@@ -184,6 +208,6 @@
     "CTR sağlıklı; başlıkları topluca değiştirme. Öncelik daha fazla sorguda görünmek olmalı.",
     "Keşfedilip indekslenmeyen URL yığını yüksek. Noindex temizliğinin etkisini sonraki GSC güncellemesinde ölç.",
     "İlk içerik fırsatı: 'tahmini kadro' sorgusu için mevcut hedef sayfayı güçlendir.",
-    "Vercel Web Analytics interaktif onayı tamamlanmadan sosyal UTM oturumları ölçülemez."
+    "Tahmin oyunu Analytics ölçümü yeni başladı; ilk ziyaretler gelene kadar dağıtım bağlantılarını ana sayfada görünür tut."
   ]
 }

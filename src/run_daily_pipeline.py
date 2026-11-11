@@ -88,6 +88,7 @@ DEFAULT_COMMANDS = [
 ]
 
 NETWORK_COMMANDS = [
+    ["python", "-m", "src.collect_vercel_web_analytics"],
     # collect_tff_league_season / collect_besiktas_season / collect_sofascore_stats
     # (with --skip-existing) all default to the finished 2025-2026 season. Once a
     # season is over, TFF/Sofascore's own site navigation from the hardcoded

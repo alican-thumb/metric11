@@ -13,7 +13,14 @@
 - CTR sağlıklı; başlıkları topluca değiştirme. Öncelik daha fazla sorguda görünmek olmalı.
 - Keşfedilip indekslenmeyen URL yığını yüksek. Noindex temizliğinin etkisini sonraki GSC güncellemesinde ölç.
 - İlk içerik fırsatı: 'tahmini kadro' sorgusu için mevcut hedef sayfayı güçlendir.
-- Vercel Web Analytics interaktif onayı tamamlanmadan sosyal UTM oturumları ölçülemez.
+- Tahmin oyunu Analytics ölçümü yeni başladı; ilk ziyaretler gelene kadar dağıtım bağlantılarını ana sayfada görünür tut.
+
+## Site Trafiği
+
+| Proje | Ziyaretçi | Sayfa görüntüleme | Rapor aralığı başlangıcı |
+|---|---:|---:|---|
+| metric11.com | 1318 | 2873 | 25.05.2026 |
+| tahmin.metric11.com | 0 | 0 | 04.09.2026 |
 
 ## En Çok Trafik Alan Sayfalar
 
