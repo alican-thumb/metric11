@@ -104,8 +104,12 @@ def _match_page_urls(today: str) -> list[str]:
     index = json.loads(index_path.read_text(encoding="utf-8"))
     out = []
     for week in index.get("weeks", []):
+        if not week.get("indexable", True):
+            continue
         out.append(_url_entry(week["path"], today, "monthly" if week["played"] else "daily", 0.6 if week["played"] else 0.9))
     for match in index.get("matches", []):
+        if not match.get("indexable", True):
+            continue
         played_on = None
         try:
             played_on = datetime.strptime(match["date_time"].replace(" - ", " ").strip(), "%d.%m.%Y %H:%M").date().isoformat()

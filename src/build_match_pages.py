@@ -230,6 +230,7 @@ def build_match_page(m: dict, week: int, signals: dict, scorers: dict, week_matc
     dt = _parse_dt(m.get("date_time", ""))
     model_pick = m.get("predicted") or "home"
     played = bool(m.get("is_played"))
+    indexable = played or dt is not None
     strong_pick = m.get("published_pick")
     pick = model_pick
     publication_label = m.get("publication_label") or "Düşük güvenli tahmin"
@@ -345,12 +346,29 @@ def build_match_page(m: dict, week: int, signals: dict, scorers: dict, week_matc
         'maç başlayana kadar her gün güncellenir. Bahis tavsiyesi değildir.</p>'
     )
 
-    html = page_html(title, "\n".join(parts), description=description, active_nav="season_fixture_predictions_2026_2027.html", og_image=og_image, canonical_path=path)
-    meta = {"path": path, "week": week, "home": home, "away": away, "date_time": m.get("date_time"), "played": played}
+    html = page_html(
+        title,
+        "\n".join(parts),
+        description=description,
+        active_nav="season_fixture_predictions_2026_2027.html",
+        og_image=og_image,
+        noindex=not indexable,
+        canonical_path=path,
+    )
+    meta = {
+        "path": path,
+        "week": week,
+        "home": home,
+        "away": away,
+        "date_time": m.get("date_time"),
+        "played": played,
+        "indexable": indexable,
+        "indexing_reason": "played" if played else "scheduled" if dt else "date_not_announced",
+    }
     return path, html, meta
 
 
-def build_week_page(week: int, matches: list[dict]) -> tuple[str, str]:
+def build_week_page(week: int, matches: list[dict]) -> tuple[str, str, bool]:
     path = week_page_path(week)
     dts = [d for d in (_parse_dt(m.get("date_time", "")) for m in matches) if d]
     span = ""
@@ -397,8 +415,16 @@ def build_week_page(week: int, matches: list[dict]) -> tuple[str, str]:
         + f'<div class="mp-card mp-links">{"".join(nav)}<a href="season_fixture_predictions_2026_2027.html">Tüm sezon fikstürü</a><a href="weekly_evaluation_2026_2027.html">Haftalık isabet karnesi</a><a href="super-lig-sampiyonluk-oranlari-2026-27.html">Şampiyonluk oranları</a><a href="super-lig-sampiyonluk-senaryolari-2026-27.html">Şampiyonluk senaryoları</a></div>'
         + _share_button(f"{BASE_URL}/{path}", f"Süper Lig {week}. hafta tahminleri — metric11")
     )
-    html = page_html(title, body, description=description, active_nav="season_fixture_predictions_2026_2027.html", canonical_path=path)
-    return path, html
+    indexable = bool(played or dts)
+    html = page_html(
+        title,
+        body,
+        description=description,
+        active_nav="season_fixture_predictions_2026_2027.html",
+        noindex=not indexable,
+        canonical_path=path,
+    )
+    return path, html, indexable
 
 
 def main() -> None:
@@ -419,9 +445,15 @@ def main() -> None:
             (PROCESSED_DIR / path).write_text(html, encoding="utf-8")
             index["matches"].append(meta)
             written += 1
-        path, html = build_week_page(n, matches)
+        path, html, indexable = build_week_page(n, matches)
         (PROCESSED_DIR / path).write_text(html, encoding="utf-8")
-        index["weeks"].append({"week": n, "path": path, "played": all(m.get("is_played") for m in matches)})
+        index["weeks"].append({
+            "week": n,
+            "path": path,
+            "played": all(m.get("is_played") for m in matches),
+            "indexable": indexable,
+            "indexing_reason": "played_or_scheduled" if indexable else "dates_not_announced",
+        })
     INDEX_JSON.write_text(json.dumps(index, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"Maç sayfaları: {written}, hafta sayfaları: {len(index['weeks'])}")
 

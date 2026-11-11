@@ -178,9 +178,13 @@ def page_html(title: str, body_html: str, description: str = "Süper Lig maç ta
     _t = escape(title)
     _d = escape(description)
     _og = f"https://metric11.com/{og_image}"
-    _robots = '  <meta name="robots" content="noindex,nofollow">\n' if noindex else ""
+    # İç bağlantılar taranabilsin; yalnız sayfanın arama sonucuna girmesini engelle.
+    # Özellikle tarihi henüz açıklanmamış fikstür sayfaları tarih geldiğinde otomatik
+    # olarak indexlenebilir hale gelir ve mevcut link otoritesini kaybetmez.
+    _robots = '  <meta name="robots" content="noindex,follow">\n' if noindex else ""
     _canonical = f'  <link rel="canonical" href="https://metric11.com/{canonical_path}">\n' if canonical_path else ""
     _cta = telegram_cta_html() if not noindex else ""
+    _cta_line = f"    {_cta}\n" if _cta else ""
     return (
         "<!doctype html>\n"
         '<html lang="tr">\n'
@@ -205,7 +209,7 @@ def page_html(title: str, body_html: str, description: str = "Süper Lig maç ta
         f"  {_build_nav(active_nav)}\n"
         '  <div class="report-wrap">\n'
         f'    <a class="back-link" href="/">Ana sayfaya d&#xf6;n</a>\n'
-        f"    {_cta}\n"
+        f"{_cta_line}"
         f"    {body_html}\n"
         "  </div>\n"
         '  <footer style="text-align:center;padding:40px 16px 28px;color:#8a9e92;font-size:12px;border-top:1px solid #e2e8e4;margin-top:48px;">metric11 &middot; <a href="mailto:hello@metric11.com" style="color:#8a9e92;text-decoration:none;border-bottom:1px solid #c5d4ca;">hello@metric11.com</a> &middot; <a href="worldcup_2026_predictions.html" style="color:#8a9e92;text-decoration:none;border-bottom:1px solid #c5d4ca;">🌍 D&#xfc;nya Kupası Tahminleri</a></footer>\n'
