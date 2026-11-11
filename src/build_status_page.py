@@ -26,6 +26,7 @@ def build_status() -> dict:
     data_quality = _load(PROCESSED_DIR / f"data_quality_scorecard_{SEASON}.json") or {}
     source_watchlist = _load(PROCESSED_DIR / f"source_watchlist_{SEASON}.json") or {}
     squads_2627 = _load(PROCESSED_DIR / "transfermarkt_super_lig_squads_2026_2027.json") or {}
+    growth = _load(PROCESSED_DIR / "growth_measurement_2026_2027.json") or {}
 
     matches = league if isinstance(league, list) else []
     scored = [m for m in matches if m.get("home_team", {}).get("score") is not None]
@@ -109,6 +110,14 @@ def build_status() -> dict:
             "data_age_days": squad_data_age_days,
             "last_run_at": _fmt_date(squads_2627.get("run_at")),
         },
+        "growth": {
+            "status": growth.get("status", "missing_snapshot"),
+            "clicks": growth.get("performance", {}).get("clicks"),
+            "impressions": growth.get("performance", {}).get("impressions"),
+            "ctr": growth.get("performance", {}).get("ctr"),
+            "indexed": growth.get("indexing", {}).get("indexed"),
+            "captured_at": _fmt_date(growth.get("snapshot", {}).get("captured_at")),
+        },
     }
 
 
@@ -157,6 +166,7 @@ def build_html(d: dict) -> str:
     news = d["news"]
     sources = d["sources"]
     squads = d["squads"]
+    growth = d["growth"]
 
     pipeline_bar_pct = round(p["ok"] / max(p["total"], 1) * 100)
     pipeline_bar_color = "#116447" if p["failed"] == 0 else ("#c98000" if p["failed"] <= 3 else "#bd2936")
@@ -281,11 +291,15 @@ def build_html(d: dict) -> str:
         <div class="row"><span class="row-label">Liste güncelleme</span><span class="row-value">{escape(str(sources["updated_at"]))}</span></div>
       </div>
       <div class="card">
-        <div class="card-title">Ziyaretçi Analitiği</div>
-        <p style="font-size:13px;color:var(--muted);margin:0 0 14px;">Vercel Analytics ile sayfa görüntüleme, benzersiz ziyaretçi, en çok ziyaret edilen sayfalar ve coğrafi dağılım takibi.</p>
-        <a class="ext-link" href="https://vercel.com/alicans-projects-02042cb7/metric11/analytics" target="_blank">
-          Vercel Analytics'i Aç →
-        </a>
+        <div class="card-title">Organik Büyüme</div>
+        <div class="big-num">{growth["clicks"] if growth["clicks"] is not None else "—"}</div>
+        <div class="big-label">Search Console tıklaması</div>
+        <div style="height:10px;"></div>
+        <div class="row"><span class="row-label">Gösterim</span><span class="row-value">{growth["impressions"] if growth["impressions"] is not None else "—"}</span></div>
+        <div class="row"><span class="row-label">CTR</span><span class="row-value">{f'%{growth["ctr"] * 100:.1f}'.replace('.', ',') if growth["ctr"] is not None else '—'}</span></div>
+        <div class="row"><span class="row-label">İndeksli</span><span class="row-value">{growth["indexed"] if growth["indexed"] is not None else "—"}</span></div>
+        <div class="row"><span class="row-label">Snapshot</span><span class="row-value">{escape(growth["captured_at"])}</span></div>
+        <a class="ext-link" href="growth_measurement_2026_2027.html" style="margin-top:12px;">Büyüme raporunu aç →</a>
       </div>
     </div>
 
