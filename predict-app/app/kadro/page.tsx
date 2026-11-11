@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { auth } from "@clerk/nextjs/server";
 import { eq, and } from "drizzle-orm";
 import { getDb } from "@/db";
@@ -9,6 +10,41 @@ import { getCurrentFantasyGameweek } from "@/lib/fantasy-week";
 import { squadCost, BUDGET } from "@/lib/fantasy-rules";
 import { syncFantasyResults } from "@/lib/sync-fantasy-results";
 import { Pitch, PlayerChip, groupByPosition } from "@/components/fantasy/pitch";
+
+const PAGE_URL = "https://tahmin.metric11.com/kadro";
+const PAGE_TITLE = "Süper Lig Tahmini Kadro Kur | Fantasy Futbol Oyunu";
+const PAGE_DESCRIPTION =
+  "Süper Lig oyuncularından 15 kişilik tahmini kadronu ücretsiz kur; ilk 11, kaptan ve transferlerini seçerek gerçek maçlardan puan topla.";
+
+export const metadata: Metadata = {
+  title: PAGE_TITLE,
+  description: PAGE_DESCRIPTION,
+  alternates: { canonical: PAGE_URL },
+  keywords: ["tahmini kadro", "Süper Lig kadro kur", "fantasy futbol", "ilk 11 kur", "Süper Lig fantasy"],
+  openGraph: {
+    title: PAGE_TITLE,
+    description: PAGE_DESCRIPTION,
+    url: PAGE_URL,
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: PAGE_TITLE,
+    description: PAGE_DESCRIPTION,
+  },
+};
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  name: "metric11 Süper Lig Kadro Kur",
+  url: PAGE_URL,
+  applicationCategory: "GameApplication",
+  operatingSystem: "Web",
+  inLanguage: "tr-TR",
+  description: PAGE_DESCRIPTION,
+  offers: { "@type": "Offer", price: "0", priceCurrency: "TRY" },
+};
 
 export default async function FantasyHubPage() {
   const { userId } = await auth();
@@ -110,19 +146,22 @@ export default async function FantasyHubPage() {
 
 function HeroBanner() {
   return (
-    <div className="overflow-hidden rounded-2xl border border-emerald-800/50 bg-gradient-to-br from-emerald-900/40 via-slate-900 to-slate-950 px-5 py-4">
-      <div className="flex items-center justify-between gap-3">
-        <div>
-          <h1 className="text-xl font-black tracking-tight">
-            Kadro <span className="text-lime-300">Kur</span>
-          </h1>
-          <p className="text-xs text-slate-400">Süper Lig&apos;in gerçek maçlarıyla puan topla.</p>
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+      <div className="overflow-hidden rounded-2xl border border-emerald-800/50 bg-gradient-to-br from-emerald-900/40 via-slate-900 to-slate-950 px-5 py-4">
+        <div className="flex flex-col items-start justify-between gap-3 sm:flex-row sm:items-center">
+          <div>
+            <h1 className="text-xl font-black tracking-tight">
+              Süper Lig Tahmini Kadro <span className="text-lime-300">Kur</span>
+            </h1>
+            <p className="text-xs text-slate-400">15 kişilik kadronu seç, gerçek Süper Lig maçlarıyla puan topla.</p>
+          </div>
+          <span className="shrink-0 rounded-full bg-lime-300/10 px-3 py-1 text-xs font-semibold text-lime-300 ring-1 ring-lime-300/30">
+            Fantasy Manager
+          </span>
         </div>
-        <span className="rounded-full bg-lime-300/10 px-3 py-1 text-xs font-semibold text-lime-300 ring-1 ring-lime-300/30">
-          Fantasy Manager
-        </span>
       </div>
-    </div>
+    </>
   );
 }
 
