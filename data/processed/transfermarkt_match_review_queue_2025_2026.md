@@ -2,17 +2,17 @@
 
 - TFF profil: 886
 - Transfermarkt snapshot: 18/18 kulüp, 817 oyuncu
-- Snapshot kapsamındaki TFF profil: 596
-- Doğrulanmış snapshot eşleşmesi: 620
+- Snapshot kapsamındaki TFF profil: 594
+- Doğrulanmış snapshot eşleşmesi: 618
 - Manuel eşleme ile kullanılan profil: 4
 - Ağ teyidi bekleyen manuel eşleme: 4
-- Çözülmemiş profil: 262
-- Doğrulanmış genel eşleşme oranı: %70.0
+- Çözülmemiş profil: 264
+- Doğrulanmış genel eşleşme oranı: %69.8
 - Doğrulanmış snapshot içi eşleşme oranı: %91.9
 - Manuel eşleme dahil kullanılabilir snapshot içi kapsama: %92.6
 - Scout incelemesini bloke eden eşleşmeyen oyuncu: 0
-- Sınıf dağılımı: {'NO_RELIABLE_CANDIDATE_IN_SNAPSHOT': 42, 'SAME_CLUB_NAME_REVIEW': 1, 'POSSIBLE_TRANSFER_OR_CLUB_MISMATCH': 1, 'OUT_OF_SNAPSHOT_CLUB': 218}
-- Kullanım önceliği dağılımı: {'HIGH_USAGE_UNRESOLVED': 17, 'ROTATION_USAGE_UNRESOLVED': 9, 'OUT_OF_SNAPSHOT': 218, 'NO_MATCH_ACTIVITY': 18}
+- Sınıf dağılımı: {'NO_RELIABLE_CANDIDATE_IN_SNAPSHOT': 42, 'SAME_CLUB_NAME_REVIEW': 1, 'POSSIBLE_TRANSFER_OR_CLUB_MISMATCH': 1, 'OUT_OF_SNAPSHOT_CLUB': 220}
+- Kullanım önceliği dağılımı: {'HIGH_USAGE_UNRESOLVED': 17, 'ROTATION_USAGE_UNRESOLVED': 9, 'OUT_OF_SNAPSHOT': 220, 'NO_MATCH_ACTIVITY': 18}
 - Kural: Doğrulanmış kapsama yalnız snapshot eşleşmesi girer; manuel alias kullanımı ayrı izlenir ve ağ teyidi tamamlanana kadar doğrulanmış sayılmaz.
 
 ## Scout Bloke Eden Kuyruk
@@ -30,10 +30,10 @@
 | Takım | TFF Profil | TM Kadro | Doğrulanmış | Manuel | Açık | Doğrulanmış Oran | Kullanılabilir Oran |
 |---|---:|---:|---:|---:|---:|---:|---:|
 | BEŞİKTAŞ A.Ş. | 47 | 50 | 43 | 2 | 2 | %91.5 | %95.7 |
-| CORENDON ALANYASPOR | 34 | 37 | 31 | 0 | 3 | %91.2 | %91.2 |
+| CORENDON ALANYASPOR | 33 | 37 | 30 | 0 | 3 | %90.9 | %90.9 |
 | FENERBAHÇE A.Ş. | 45 | 50 | 38 | 0 | 7 | %84.4 | %84.4 |
 | GALATASARAY A.Ş. | 42 | 44 | 41 | 0 | 1 | %97.6 | %97.6 |
-| GAZİANTEP FUTBOL KULÜBÜ A.Ş. | 43 | 45 | 38 | 0 | 5 | %88.4 | %88.4 |
+| GAZİANTEP FUTBOL KULÜBÜ A.Ş. | 42 | 45 | 37 | 0 | 5 | %88.1 | %88.1 |
 | GENÇLERBİRLİĞİ | 41 | 48 | 39 | 0 | 2 | %95.1 | %95.1 |
 | GÖZTEPE A.Ş. | 36 | 36 | 30 | 1 | 5 | %83.3 | %86.1 |
 | HESAP.COM ANTALYASPOR | 0 | 48 | 0 | 0 | 0 | %0 | %0 |
@@ -489,6 +489,10 @@
 - AHMET KUSAY DAĞDEVİR (YENİ MERSİN İDMANYURDU FUTBOL A.Ş.): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 - AHMET TIRPANCI (YENİ MERSİN İDMANYURDU FUTBOL A.Ş.): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 
+### YENİŞEHİR BELEDİYESPOR
+
+- MUHAMMET TAHA GÜNEŞ (YENİŞEHİR BELEDİYESPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
+
 ### ZONGULDAK SPOR FUTBOL KULÜBÜ A.Ş.
 
 - OSMAN YAĞIZ TOPÇU (ZONGULDAK SPOR FUTBOL KULÜBÜ A.Ş.): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
@@ -515,3 +519,7 @@
 - EMRECAN UZUNHAN (İSTANBULSPOR A.Ş.): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 - TURAN DENİZ TUNCER (İSTANBULSPOR A.Ş.): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 - YAKUPHAN SARIALİOĞLU (İSTANBULSPOR A.Ş.): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
+
+### İZTON TORBALI SPOR
+
+- MEHMET ÖZ (İZTON TORBALI SPOR): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.

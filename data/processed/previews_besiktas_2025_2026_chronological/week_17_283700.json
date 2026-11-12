@@ -608,7 +608,7 @@
       {
         "player_id": "2820579",
         "name": "DAVID JURASEK",
-        "goal_threat_score": 5.93,
+        "goal_threat_score": 4.63,
         "candidate_type": "primary+impact_sub",
         "recent_starts": 1,
         "season_goals_before_match": 1,
@@ -620,7 +620,12 @@
         "penalty_goals_before_match": 0,
         "recent_bench": 7,
         "cards_before_match": 0,
-        "recent_cards": 0
+        "recent_cards": 0,
+        "quality_adjustment": {
+          "multiplier": 0.78,
+          "reason": "Top 5 sıralama etkisini düşür veya aday tipini yeniden kontrol et.",
+          "source": "goal_candidate_segment_backtest"
+        }
       },
       {
         "player_id": "1523763",
@@ -900,9 +905,9 @@
         "current_team": "GAZİANTEP FUTBOL KULÜBÜ A.Ş.",
         "target_role": "Kanat / çizgi kırıcı",
         "role_key": "LW_CREATOR",
-        "role_fit_score": 107.89,
+        "role_fit_score": 107.6,
         "position_confidence": "HIGH",
-        "age": 22,
+        "age": 23,
         "economy_score": 28.0,
         "current_expected_goals_for": 2.1,
         "current_expected_goals_against": 1.39,
@@ -929,7 +934,7 @@
         "current_team": "FENERBAHÇE A.Ş.",
         "target_role": "Kanat / çizgi kırıcı",
         "role_key": "LW_CREATOR",
-        "role_fit_score": 95.84,
+        "role_fit_score": 95.83,
         "position_confidence": "HIGH",
         "age": 23,
         "economy_score": 22.0,
@@ -952,6 +957,35 @@
         "impact_label": "LOW_POSITIVE",
         "why": "Poz. grup: FWD (HIGH). İlk 11: 16, Gol: 10, Kart: 3. Resale potansiyeli yüksek.",
         "commercial_note": "Al-sat değeri yüksek."
+      },
+      {
+        "player_name": "BARIŞ ALPER YILMAZ",
+        "current_team": "GALATASARAY A.Ş.",
+        "target_role": "Kanat / çizgi kırıcı",
+        "role_key": "LW_CREATOR",
+        "role_fit_score": 92.79,
+        "position_confidence": "HIGH",
+        "age": 26,
+        "economy_score": 18.0,
+        "current_expected_goals_for": 2.1,
+        "current_expected_goals_against": 1.39,
+        "simulated_expected_goals_for": 2.31,
+        "simulated_expected_goals_against": 1.37,
+        "xg_for_delta": 0.21,
+        "xg_against_delta": 0.02,
+        "goal_edge_delta": 0.23,
+        "simulated_target_win_probability": 0.584,
+        "simulated_draw_probability": 0.196,
+        "simulated_opponent_win_probability": 0.22,
+        "simulated_scoreline": {
+          "target_goals": 2,
+          "opponent_goals": 1,
+          "score": "2-1",
+          "probability": 0.092
+        },
+        "impact_label": "LOW_POSITIVE",
+        "why": "Poz. grup: FWD (HIGH). İlk 11: 27, Gol: 8, Kart: 7. Sözleşme fırsatı: HIGH.",
+        "commercial_note": "Serbest kalma yakın; bonservis düşük olabilir."
       },
       {
         "player_name": "ERNEST MUÇİ",
@@ -1010,35 +1044,6 @@
         "impact_label": "LOW_POSITIVE",
         "why": "Poz. grup: FWD (HIGH). İlk 11: 26, Gol: 0, Kart: 1. Sözleşme fırsatı: HIGH. Resale potansiyeli yüksek.",
         "commercial_note": "Al-sat değeri yüksek."
-      },
-      {
-        "player_name": "BARIŞ ALPER YILMAZ",
-        "current_team": "GALATASARAY A.Ş.",
-        "target_role": "Kanat / çizgi kırıcı",
-        "role_key": "LW_CREATOR",
-        "role_fit_score": 88.0,
-        "position_confidence": "HIGH",
-        "age": 26,
-        "economy_score": 14.0,
-        "current_expected_goals_for": 2.1,
-        "current_expected_goals_against": 1.39,
-        "simulated_expected_goals_for": 2.31,
-        "simulated_expected_goals_against": 1.37,
-        "xg_for_delta": 0.2,
-        "xg_against_delta": 0.02,
-        "goal_edge_delta": 0.23,
-        "simulated_target_win_probability": 0.584,
-        "simulated_draw_probability": 0.196,
-        "simulated_opponent_win_probability": 0.22,
-        "simulated_scoreline": {
-          "target_goals": 2,
-          "opponent_goals": 1,
-          "score": "2-1",
-          "probability": 0.092
-        },
-        "impact_label": "LOW_POSITIVE",
-        "why": "Poz. grup: FWD (HIGH). İlk 11: 27, Gol: 8, Kart: 7. Sözleşme fırsatı: MEDIUM.",
-        "commercial_note": "Maliyet/katkı dengesi piyasa değeriyle doğrulanmalı."
       },
       {
         "player_name": "GÖKTAN GÜRPÜZ",

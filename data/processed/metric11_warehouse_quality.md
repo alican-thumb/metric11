@@ -51,11 +51,11 @@
 - {'role_label': 'Bek / çift yönlü koridor', 'candidate_name': 'RUAN PEREIRA DUARTE', 'candidate_team': 'CORENDON ALANYASPOR', 'fit_score': 100.9, 'position_confidence': 'MEDIUM_DERIVED_ROLE'}
 - {'role_label': 'Bek / çift yönlü koridor', 'candidate_name': 'ARDA OKAN KURTULAN', 'candidate_team': 'GÖZTEPE A.Ş.', 'fit_score': 88.8, 'position_confidence': 'HIGH'}
 - {'role_label': 'Bek / çift yönlü koridor', 'candidate_name': 'WAGNER FABRICIO CARDOSO DE PINA', 'candidate_team': 'TRABZONSPOR A.Ş.', 'fit_score': 86.09, 'position_confidence': 'HIGH'}
-- {'role_label': 'Sol açık / çizgi kırıcı', 'candidate_name': 'KACPER SZYMON KOZLOWSKI', 'candidate_team': 'GAZİANTEP FUTBOL KULÜBÜ A.Ş.', 'fit_score': 107.89, 'position_confidence': 'HIGH'}
-- {'role_label': 'Sol açık / çizgi kırıcı', 'candidate_name': 'DORGELES NENE', 'candidate_team': 'FENERBAHÇE A.Ş.', 'fit_score': 95.84, 'position_confidence': 'HIGH'}
+- {'role_label': 'Sol açık / çizgi kırıcı', 'candidate_name': 'KACPER SZYMON KOZLOWSKI', 'candidate_team': 'GAZİANTEP FUTBOL KULÜBÜ A.Ş.', 'fit_score': 107.6, 'position_confidence': 'HIGH'}
+- {'role_label': 'Sol açık / çizgi kırıcı', 'candidate_name': 'DORGELES NENE', 'candidate_team': 'FENERBAHÇE A.Ş.', 'fit_score': 95.83, 'position_confidence': 'HIGH'}
+- {'role_label': 'Sol açık / çizgi kırıcı', 'candidate_name': 'BARIŞ ALPER YILMAZ', 'candidate_team': 'GALATASARAY A.Ş.', 'fit_score': 92.79, 'position_confidence': 'HIGH'}
 - {'role_label': 'Sol açık / çizgi kırıcı', 'candidate_name': 'ERNEST MUÇİ', 'candidate_team': 'TRABZONSPOR A.Ş.', 'fit_score': 92.53, 'position_confidence': 'HIGH'}
 - {'role_label': 'Sol açık / çizgi kırıcı', 'candidate_name': 'KAZEEM ADEREMI J. OLAIGBE', 'candidate_team': 'TRABZONSPOR A.Ş.', 'fit_score': 91.83, 'position_confidence': 'HIGH'}
-- {'role_label': 'Sol açık / çizgi kırıcı', 'candidate_name': 'BARIŞ ALPER YILMAZ', 'candidate_team': 'GALATASARAY A.Ş.', 'fit_score': 88.0, 'position_confidence': 'HIGH'}
 
 ### card_heavy_referees
 - {'referee_name': 'FATİH TOKAİL', 'cards_per_match': 9.0, 'tempo_label': 'KARTLI'}
