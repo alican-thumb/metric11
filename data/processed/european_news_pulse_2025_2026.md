@@ -1,19 +1,26 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-11-11T17:55:46.076224+00:00
-Toplam ilgili haber: 41
+Üretim zamanı: 2026-11-12T00:39:08.946946+00:00
+Toplam ilgili haber: 44
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [Beşiktaş'ta stoper operasyonu: Rota İtalya](https://www.aksam.com.tr/spor/besiktasta-stoper-operasyonu-rota-italya/haber-1713910) — Aksam Spor · 2026-11-12T01:48:00+03:00 · turnuva=EL · kulüp=Beşiktaş
+- [U-17 Milli Takım, San Marino'yu 4 golle yendi](https://www.aksam.com.tr/spor/u-17-milli-takim-san-marinoyu-4-golle-yendi/haber-1713899) — Aksam Spor · 2026-11-12T00:37:00+03:00 · turnuva=— · kulüp=—
+- [Bir teselli ver](https://www.aksam.com.tr/spor/bir-teselli-ver/haber-1713898) — Aksam Spor · 2026-11-12T00:33:00+03:00 · turnuva=— · kulüp=—
+- [Fenerbahçe Kadın Futbol Takımı, Avrupa’ya veda etti](https://www.cnnturk.com/spor/futbol/fenerbahce-kadin-futbol-takimi-avrupaya-veda-etti-3492117) — CNN Türk Spor · 2026-11-11T23:42:39+00:00 · turnuva=— · kulüp=Fenerbahçe
+- [Mark van Bommel'den Türkiye - Belçika karşılaşması için Lukaku açıklaması! O maçta sahada](https://www.takvim.com.tr/uluslar-ligi/2026/11/11/mark-van-bommel-turkiye-belcika-maci-basin-toplantisi) — Takvim Spor · 2026-11-11T22:15:39+03:00 · turnuva=— · kulüp=Fenerbahçe
+- [Fenerbahçe, Avrupa'ya veda etti!](https://www.sabah.com.tr/spor/futbol/2026/11/11/fenerbahce-avrupaya-veda-etti) — Sabah Spor · 2026-11-11T22:03:53+03:00 · turnuva=— · kulüp=Fenerbahçe
+- [Mark van Bommel'den Romelu Lukaku sözleri!](https://www.sabah.com.tr/spor/futbol/2026/11/11/mark-van-bommelden-romelu-lukaku-sozleri) — Sabah Spor · 2026-11-11T21:48:59+03:00 · turnuva=— · kulüp=—
+- [Fenerbahçe arsaVev'den UEFA Avrupa Ligi'ne veda!](https://www.hurriyet.com.tr/sporarena/fenerbahce-arsavevden-uefa-avrupa-ligine-veda-43374960) — Hürriyet Spor · 2026-11-11T20:32:00+00:00 · turnuva=EL · kulüp=Fenerbahçe
+- [F.Bahçe arsaVev, Avrupa'ya veda etti!](https://www.haberturk.com/spor/fenerbahce-arsavev-real-sociedad-mac-sonucu-iste-fenerbahce-arsavev-real-sociedad-maci-ozeti-ve-golleri-uefa-avrupa-ligi-3926651) — Haberturk Spor · 2026-11-11T19:18:41+00:00 · turnuva=EL · kulüp=Fenerbahçe
 - [A Milli Futbol Takımı Teknik Direktörü Sergen Yalçın: Bütün planımızı kazanmak üzerine yaptık](https://www.aa.com.tr/tr/spor/a-milli-futbol-takimi-teknik-direktoru-sergen-yalcin-butun-planimizi-kazanmak-uzerine-yaptik/4121136) — Anadolu Ajansı Spor · 2026-11-11T19:17:24+03:00 · turnuva=— · kulüp=—
 - [Dört takım dört dev maç! Uluslar Ligi'ndeki grubumuzda son durum](https://www.takvim.com.tr/uluslar-ligi/2026/11/11/uluslar-liginde-kritik-viraj-turkiyenin-son-durumu-nasil) — Takvim Spor · 2026-11-11T18:59:55+03:00 · turnuva=— · kulüp=—
 - [MİLLİ MAÇ SAATİ VE KANALI: Türkiye - Belçika Maçı Ne Zaman, Saat Kaçta, Hangi Kanalda? Maç Şifresiz Mi? Sergen Yalçın İlk Resmi Maçına Çıkıyor!](https://www.cnnturk.com/spor/futbol/milli-mac-saati-ve-kanali-turkiye-belcika-maci-ne-zaman-saat-kacta-hangi-kanalda-mac-sifresiz-mi-sergen-yalcin-ilk-resmi-3491981) — CNN Türk Spor · 2026-11-11T18:30:38+00:00 · turnuva=— · kulüp=—
 - [Sergen Yalçın'dan Belçika maçı öncesi forvet açıklaması: İstediniz getirdik](https://www.takvim.com.tr/uluslar-ligi/2026/11/11/sergen-yalcin-ve-enes-unal-basin-toplantisi) — Takvim Spor · 2026-11-11T18:09:20+03:00 · turnuva=— · kulüp=—
 - [MİLLİ ARA NE ZAMAN BİTECEK? Milli Ara Ne Zaman Başladı? A Milli Takım Belçika ve Fransa Maçları Ne Zaman? Türkiye Uluslar Ligi A Grubu Maç Takvimi](https://www.cnnturk.com/spor/futbol/milli-ara-ne-zaman-bitecek-milli-ara-basladi-mi-a-milli-takim-belcika-ve-fransa-maclari-ne-zaman-turkiye-uluslar-ligi-a-grubu-3490857) — CNN Türk Spor · 2026-11-11T17:43:27+00:00 · turnuva=— · kulüp=—
 - [GALATASARAY - ASTON VILLA MAÇI NE ZAMAN? UCL Galatasaray Aston Villa Maçı Hangi Kanalda, Saat Kaçta, Şifresiz Mi? Galatasaray'da Eksik Var Mı?](https://www.cnnturk.com/spor/futbol/galatasaray-aston-villa-maci-ne-zaman-ucl-galatasaray-aston-villa-maci-hangi-kanalda-saat-kacta-sifresiz-mi-galatasarayda-3491442) — CNN Türk Spor · 2026-11-11T17:43:20+00:00 · turnuva=CL · kulüp=Galatasaray
-- [Emirhan İlkhan: Tarihi bir an olabilir!](https://www.sabah.com.tr/spor/futbol/2026/11/11/emirhan-ilkhan-tarihi-bir-an-olabilir) — Sabah Spor · 2026-11-11T17:12:12+03:00 · turnuva=— · kulüp=—
-- [A Milli Futbol Takımı, İzmir'e ulaştı!](https://www.sabah.com.tr/spor/futbol/2026/11/11/a-milli-futbol-takimi-izmire-ulasti) — Sabah Spor · 2026-11-11T17:09:00+03:00 · turnuva=— · kulüp=—
 - [A Milli Futbol Takımı, Belçika maçı için İzmir'de](https://www.aa.com.tr/tr/spor/a-milli-futbol-takimi-belcika-maci-icin-izmirde/4120799) — Anadolu Ajansı Spor · 2026-11-11T16:57:30+03:00 · turnuva=— · kulüp=—
 - ["Hiçbir zaman mücadeleden vazgeçmedim"](https://www.haberturk.com/spor/turkiye-belcika-maci-oncesi-enes-unal-hicbir-zaman-mucadeleden-vazgecmedim-3926619) — Haberturk Spor · 2026-11-11T16:38:23+00:00 · turnuva=— · kulüp=—
 - [Belçika maçı öncesi kadrodan çıkarıldı! A Milli Takım'da Aral Şimşir şoku](https://www.takvim.com.tr/spor/2026/11/11/kadrodan-cikarildi-a-milli-takimda-aral-simsir-soku) — Takvim Spor · 2026-11-11T15:59:27+03:00 · turnuva=— · kulüp=Trabzonspor
@@ -22,7 +29,7 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Temsilcilerimiz, Kadınlar Conference Cup’ta 2. Eleme Turunda!](https://www.haberturk.com/spor/galatasaray-zena-ve-goztepe-spor-kulubu-kadinlar-conference-cupta-2-eleme-turunda-3926555) — Haberturk Spor · 2026-11-11T11:27:29+00:00 · turnuva=— · kulüp=Galatasaray, Göztepe
 - [Türkiye-Belçika maçı öncesi Aral Şimşir kadrodan çıkarıldı](https://www.hurriyet.com.tr/sporarena/turkiye-belcika-maci-oncesi-aral-simsir-kadrodan-cikarildi-c) — Hürriyet Spor · 2026-11-11T11:25:00+00:00 · turnuva=— · kulüp=—
 - [Milliler, Belçika maçına hazır!](https://www.haberturk.com/spor/a-milli-takim-belcika-macina-hazir-3926527) — Haberturk Spor · 2026-11-11T11:23:18+00:00 · turnuva=— · kulüp=—
-- [Türkiye ile Belçika, yarın 13. kez karşı karşıya gelecek](https://www.aa.com.tr/tr/spor/turkiye-ile-belcika-yarin-13-kez-karsi-karsiya-gelecek/4119816) — Anadolu Ajansı Spor · 2026-11-11T11:06:52+03:00 · turnuva=— · kulüp=—
+- [Türkiye ile Belçika, bugün 13. kez karşı karşıya gelecek](https://www.aa.com.tr/tr/spor/turkiye-ile-belcika-bugun-13-kez-karsi-karsiya-gelecek/4119816) — Anadolu Ajansı Spor · 2026-11-11T11:06:52+03:00 · turnuva=— · kulüp=—
 - [A Milli Futbol Takımı, 659. maçına Belçika karşısında çıkacak](https://www.aa.com.tr/tr/spor/a-milli-futbol-takimi-659-macina-belcika-karsisinda-cikacak/4119803) — Anadolu Ajansı Spor · 2026-11-11T11:02:53+03:00 · turnuva=— · kulüp=—
 - [Türkiye, Sergen Yalçın yönetiminde ilk maçında Belçika karşısında](https://www.aa.com.tr/tr/spor/turkiye-sergen-yalcin-yonetiminde-ilk-macinda-belcika-karsisinda/4119705) — Anadolu Ajansı Spor · 2026-11-11T10:09:18+03:00 · turnuva=— · kulüp=—
 - [Fenerbahçe'nin Avrupa'da çeyrek final umudu İstanbul'daki rövanşta!](https://www.hurriyet.com.tr/sporarena/fenerbahcenin-avrupada-ceyrek-final-umudu-istanbuldaki-rovansta-43374038) — Hürriyet Spor · 2026-11-11T09:35:00+00:00 · turnuva=— · kulüp=Fenerbahçe
@@ -32,7 +39,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [İşte Sergen Yalçın'ın Belçika reçetesi! Yarınki zorlu maçın stratejisi belirlendi](https://www.hurriyet.com.tr/sporarena/iste-sergen-yalcinin-belcika-recetesi-43373600) — Hürriyet Spor · 2026-11-11T04:00:00+00:00 · turnuva=— · kulüp=—
 - [Fenerbahçe Tarfin, Avrupa Ligi'nde Paris Basketbol'a konuk olacak](https://www.aa.com.tr/tr/spor/fenerbahce-tarfin-avrupa-liginde-paris-basketbola-konuk-olacak/4119514) — Anadolu Ajansı Spor · 2026-11-10T23:05:11+03:00 · turnuva=EL · kulüp=Fenerbahçe
 - [Türkiye maçı öncesi Fransa'da şoke eden sakatlık haberleri! 3 eksik](https://www.hurriyet.com.tr/sporarena/turkiye-maci-oncesi-fransada-soke-eden-sakatlik-haberleri-3-eksik-43373614) — Hürriyet Spor · 2026-11-10T22:54:31+00:00 · turnuva=— · kulüp=—
-- [Freiburg'in başarı hikayesi!](https://www.haberturk.com/spor/freiburg-in-basari-hikayesi-teknik-direktor-istikrarindan-avrupa-ligi-finaline-3926364) — Haberturk Spor · 2026-11-10T17:51:16+00:00 · turnuva=EL · kulüp=—
 - [TFF'den Süper Lig ve 1. Lig'de Çoklu Top Sistemi kararı: 14 top kullanılacak, top toplayıcılar top veremeyecek](https://www.takvim.com.tr/spor/2026/11/10/tff-duyurdu-iste-coklu-top-siteminin-detaylari) — Takvim Spor · 2026-11-10T17:05:53+03:00 · turnuva=— · kulüp=—
 - [Ümit Akdağ'a 2 maç ceza! Hapoel Beer Sheva maçında da yok](https://www.takvim.com.tr/spor/besiktas/2026/11/10/umit-akdaga-2-mac-ceza-hapoel-beer-sheva-macinda-da-yok) — Takvim Spor · 2026-11-10T16:36:32+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Emre Belözoğlu ve Arda Turan aynı safta! Önce namaz sonra salep](https://www.takvim.com.tr/spor/superlig/2026/11/10/emre-belozoglu-ve-arda-turan-ayni-safta-namaz-kildi) — Takvim Spor · 2026-11-10T16:26:56+03:00 · turnuva=CL · kulüp=Fenerbahçe
@@ -40,9 +46,3 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [UEFA'dan Ümit Akdağ’a kötü haber](https://www.cnnturk.com/spor/futbol/uefadan-umit-akdaga-kotu-haber-3491554) — CNN Türk Spor · 2026-11-10T15:17:06+00:00 · turnuva=EL · kulüp=—
 - [SHAKHTAR DONETSK - FENERBAHÇE MAÇI NE ZAMAN? Shakhtar Donetsk - Fenerbahçe maçı nerede oynanacak?](https://www.cnnturk.com/spor/futbol/shakhtar-donetsk-fenerbahce-maci-ne-zaman-shakhtar-donetsk-fenerbahce-maci-nerede-oynanacak-3489845) — CNN Türk Spor · 2026-11-10T12:35:58+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [UEFA açıkladı! Türkiye - Belçika maçının hakemi Sandro Scharer](https://www.takvim.com.tr/uluslar-ligi/2026/11/10/turkiye-belcika-macinin-hakemi-sandro-scharer) — Takvim Spor · 2026-11-10T12:31:12+03:00 · turnuva=— · kulüp=—
-- [Türkiye-Belçika maçını, İsviçreli hakem Sandro Scharer yönetecek](https://www.aa.com.tr/tr/spor/turkiye-belcika-macini-isvicreli-hakem-sandro-scharer-yonetecek/4118514) — Anadolu Ajansı Spor · 2026-11-10T12:28:35+03:00 · turnuva=— · kulüp=—
-- [Türkiye - Belçika maçına İsviçreli hakem](https://www.cnnturk.com/spor/futbol/turkiye-belcika-macina-isvicreli-hakem-3491439) — CNN Türk Spor · 2026-11-10T12:25:29+00:00 · turnuva=— · kulüp=—
-- [Basketbol Avrupa Ligi'nde 11. hafta heyecanı bugün başlayacak](https://www.aa.com.tr/tr/spor/basketbol-avrupa-liginde-11-hafta-heyecani-bugun-baslayacak/4118445) — Anadolu Ajansı Spor · 2026-11-10T12:11:25+03:00 · turnuva=EL · kulüp=Fenerbahçe
-- [Türkiye-Belçika maçının hakemi açıklandı](https://www.hurriyet.com.tr/sporarena/turkiye-belcika-macinin-hakemi-aciklandi-43372765) — Hürriyet Spor · 2026-11-10T09:32:53+00:00 · turnuva=— · kulüp=—
-- [A Milli Takım kalan 2 maçın hazırlıklarına başladı! Sergen Yalçın ile ilk idman](https://www.takvim.com.tr/spor/2026/11/09/a-milli-takim-belcika-ve-fransa-hazirliklarina-basladi) — Takvim Spor · 2026-11-09T23:31:13+03:00 · turnuva=— · kulüp=—
-- [Bizim Çocuklar Turkuvaz Medya'da! Uluslar Ligi'ndeki 21 maç nefes kesecek](https://www.takvim.com.tr/spor/2026/11/09/uluslar-ligi-maclari-turkuvaz-medyada) — Takvim Spor · 2026-11-09T16:29:04+03:00 · turnuva=— · kulüp=—
