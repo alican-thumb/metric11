@@ -17,11 +17,11 @@
 - Transfermarkt Süper Lig oyuncusu: 817
 - Transfermarkt Süper Lig toplam değer: €1,741,910,000
 - Transfermarkt oyuncu profil detayı/tam adı: 854/21
-- TFF / Transfermarkt doğrulanmış snapshot eşleşmesi: 618/886 (%70)
-- TFF / Transfermarkt doğrulanmış lig snapshot içi kapsama: 618/594 (%91.9)
+- TFF / Transfermarkt doğrulanmış snapshot eşleşmesi: 617/886 (%70)
+- TFF / Transfermarkt doğrulanmış lig snapshot içi kapsama: 617/593 (%91.9)
 - TFF / Transfermarkt manuel eşleme: 4 profil; ağ teyidi bekleyen 4
-- TFF / Transfermarkt manuel dahil kullanılabilir lig içi kapsama: 550/594 (%92.6)
-- TFF / Transfermarkt çözülmemiş kuyruğu: 264 profil; scout bloke eden 0
+- TFF / Transfermarkt manuel dahil kullanılabilir lig içi kapsama: 549/593 (%92.6)
+- TFF / Transfermarkt çözülmemiş kuyruğu: 265 profil; scout bloke eden 0
 - TFF / Transfermarkt yüksek kullanımlı çözülmemiş: 17 profil
 - Beşiktaş maç önü raporu: 29
 - Tüm takım maç önü raporu: 522 (18 takım)
@@ -67,10 +67,10 @@
 - Haber/sakat-cezalı başarılı kaynak: 2
 - Haber/sakat-cezalı sinyal: 3
 - Haber/sakat-cezalı yapılandırılmış oyuncu: 11
-- RSS haber kaydı: 237
+- RSS haber kaydı: 236
 - Resmi kulüp web duyurusu: 23 | erişilebilir site=18/21 | durum=PARTIAL_SUCCESS
-- Haber analizine alınan içerik: 222
-- Transfer haber iddiası: 18 | resmi=0, çoklu kaynak=0, söylenti=4, inceleme gerekli=14
+- Haber analizine alınan içerik: 218
+- Transfer haber iddiası: 19 | resmi=0, çoklu kaynak=0, söylenti=2, inceleme gerekli=17
 - X gönderi snapshot'ı: 0 | başarılı hesap=0 | kaynak=x_api | durum=MISSING_CREDENTIALS
 - API-Football 2024 başarılı endpoint: 0
 - API-Football 2024 fikstür: 0
@@ -92,7 +92,7 @@
 - TFF oyuncu profilleri / public='Resmi federasyon oyuncu profili' (SCRAPING, risk=MEDIUM, license=VERIFY_TERMS): İşlenen lig profil havuzu 886 profil; lig snapshot içi eşleşme ayrıca ölçülür
 - Transfermarkt kadro sayfası / public='Piyasa değeri ve kadro profili' (SCRAPING, risk=HIGH, license=VERIFY_TERMS_BEFORE_COMMERCIAL_USE): Süper Lig 2025/26: 18 kulüp kadrosu, pozisyon ve piyasa değeri
 - Oyuncu uygunluk sinyalleri / public='Model türetilmiş uygunluk sinyali' (DERIVED+MANUAL, risk=MEDIUM, license=DERIVED_FROM_INTERNAL_DATA_AND_MANUAL_VERIFICATION): Beşiktaş 2025/26 kart cezası çıkarımı + manuel sakat/cezalı override dosyası
-- Türk spor haber RSS akışı / public='Güncel spor haber bağlamı' (RSS_NEWS, risk=MEDIUM, license=VERIFY_TERMS_AND_QUOTE_LIMITS): 237 ham haber; 222 ilgili analiz; 18 transfer iddiası
+- Türk spor haber RSS akışı / public='Güncel spor haber bağlamı' (RSS_NEWS, risk=MEDIUM, license=VERIFY_TERMS_AND_QUOTE_LIMITS): 236 ham haber; 218 ilgili analiz; 19 transfer iddiası
 - Süper Lig resmi kulüp web duyuruları / public='Resmi kulüp duyuruları' (OFFICIAL_CLUB_NEWS, risk=LOW_MEDIUM, license=VERIFY_TERMS_AND_LINK_DERIVED_DISPLAY): 23 duyuru; 18/21 kulüp sitesi erişilebilir; durum=PARTIAL_SUCCESS
 - X resmi kulüp ve futbol haber hesapları / public='Resmi kulüp ve sosyal haber duyuruları' (X_SOCIAL_SIGNAL, risk=MEDIUM, license=PLATFORM_TERMS_AND_DISPLAY_REQUIREMENTS): Collector çalıştı (x_api/MISSING_CREDENTIALS); kullanılabilir gönderi snapshot'ı yok
 - FM/FIFA tarzı oyuncu attribute kaynakları / public='Oyuncu attribute ve potansiyel veri seti' (OPEN_DATASET_OR_VERIFIED_EXPORT, risk=LOW_TO_HIGH_BY_LICENSE, license=SOURCE_SPECIFIC): 4 aday kaynak kaydı; normalize import varsa 691 oyuncu

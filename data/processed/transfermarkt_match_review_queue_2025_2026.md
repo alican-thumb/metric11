@@ -2,17 +2,17 @@
 
 - TFF profil: 886
 - Transfermarkt snapshot: 18/18 kulüp, 817 oyuncu
-- Snapshot kapsamındaki TFF profil: 594
-- Doğrulanmış snapshot eşleşmesi: 618
+- Snapshot kapsamındaki TFF profil: 593
+- Doğrulanmış snapshot eşleşmesi: 617
 - Manuel eşleme ile kullanılan profil: 4
 - Ağ teyidi bekleyen manuel eşleme: 4
-- Çözülmemiş profil: 264
-- Doğrulanmış genel eşleşme oranı: %69.8
+- Çözülmemiş profil: 265
+- Doğrulanmış genel eşleşme oranı: %69.6
 - Doğrulanmış snapshot içi eşleşme oranı: %91.9
 - Manuel eşleme dahil kullanılabilir snapshot içi kapsama: %92.6
 - Scout incelemesini bloke eden eşleşmeyen oyuncu: 0
-- Sınıf dağılımı: {'NO_RELIABLE_CANDIDATE_IN_SNAPSHOT': 42, 'SAME_CLUB_NAME_REVIEW': 1, 'POSSIBLE_TRANSFER_OR_CLUB_MISMATCH': 1, 'OUT_OF_SNAPSHOT_CLUB': 220}
-- Kullanım önceliği dağılımı: {'HIGH_USAGE_UNRESOLVED': 17, 'ROTATION_USAGE_UNRESOLVED': 9, 'OUT_OF_SNAPSHOT': 220, 'NO_MATCH_ACTIVITY': 18}
+- Sınıf dağılımı: {'NO_RELIABLE_CANDIDATE_IN_SNAPSHOT': 42, 'SAME_CLUB_NAME_REVIEW': 1, 'POSSIBLE_TRANSFER_OR_CLUB_MISMATCH': 1, 'OUT_OF_SNAPSHOT_CLUB': 221}
+- Kullanım önceliği dağılımı: {'HIGH_USAGE_UNRESOLVED': 17, 'ROTATION_USAGE_UNRESOLVED': 9, 'OUT_OF_SNAPSHOT': 221, 'NO_MATCH_ACTIVITY': 18}
 - Kural: Doğrulanmış kapsama yalnız snapshot eşleşmesi girer; manuel alias kullanımı ayrı izlenir ve ağ teyidi tamamlanana kadar doğrulanmış sayılmaz.
 
 ## Scout Bloke Eden Kuyruk
@@ -43,7 +43,7 @@
 | RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ | 30 | 32 | 29 | 0 | 1 | %96.7 | %96.7 |
 | SAMSUNSPOR A.Ş. | 41 | 44 | 36 | 0 | 5 | %87.8 | %87.8 |
 | TRABZONSPOR A.Ş. | 44 | 42 | 39 | 1 | 4 | %88.6 | %90.9 |
-| TÜMOSAN KONYASPOR | 42 | 48 | 41 | 0 | 1 | %97.6 | %97.6 |
+| TÜMOSAN KONYASPOR | 41 | 48 | 40 | 0 | 1 | %97.6 | %97.6 |
 | ZECORNER KAYSERİSPOR | 0 | 51 | 0 | 0 | 0 | %0 | %0 |
 | ÇAYKUR RİZESPOR A.Ş. | 35 | 35 | 35 | 0 | 0 | %100.0 | %100.0 |
 | İKAS EYÜPSPOR | 41 | 62 | 39 | 0 | 2 | %95.1 | %95.1 |
@@ -261,6 +261,10 @@
 - GUILERME LUIZ OLIVEIRA DA SILVA (GÖZTEPE A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=2, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - EMERSONN CORREIRA DA SILVA (GÖZTEPE A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=1, gol=1, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - FAUSTINO ADEBOLA RASHEED ANJORIN (GÖZTEPE A.Ş.): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=NO_MATCH_ACTIVITY, ilk11=0, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
+
+### KARAMAN FUTBOL KULÜBÜ
+
+- ENES İLYAS SEVEN (KARAMAN FUTBOL KULÜBÜ): sınıf=OUT_OF_SNAPSHOT_CLUB, öncelik=OUT_OF_SNAPSHOT, ilk11=0, gol=0, scout_blok=False, aday=-. TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı.
 
 ### KASIMPAŞA A.Ş.
 

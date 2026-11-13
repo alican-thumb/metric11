@@ -3,30 +3,30 @@
     "tff_profiles": 886,
     "tm_clubs": 18,
     "tm_players": 817,
-    "snapshot_in_scope_tff_profiles": 594,
-    "matched_profiles": 618,
-    "verified_matched_profiles": 618,
-    "in_scope_verified_matched_profiles": 546,
+    "snapshot_in_scope_tff_profiles": 593,
+    "matched_profiles": 617,
+    "verified_matched_profiles": 617,
+    "in_scope_verified_matched_profiles": 545,
     "manual_alias_mapped_profiles": 4,
     "manual_alias_pending_network_verification": 4,
-    "operationally_mapped_profiles": 622,
-    "operational_in_scope_mapped_profiles": 550,
-    "unmatched_profiles": 264,
-    "overall_match_rate": 0.698,
+    "operationally_mapped_profiles": 621,
+    "operational_in_scope_mapped_profiles": 549,
+    "unmatched_profiles": 265,
+    "overall_match_rate": 0.696,
     "in_scope_match_rate": 0.919,
-    "operational_mapping_rate": 0.702,
+    "operational_mapping_rate": 0.701,
     "operational_in_scope_mapping_rate": 0.926,
     "scout_blocking_unmatched": 0,
     "category_counts": {
       "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 42,
       "SAME_CLUB_NAME_REVIEW": 1,
       "POSSIBLE_TRANSFER_OR_CLUB_MISMATCH": 1,
-      "OUT_OF_SNAPSHOT_CLUB": 220
+      "OUT_OF_SNAPSHOT_CLUB": 221
     },
     "review_tier_counts": {
       "HIGH_USAGE_UNRESOLVED": 17,
       "ROTATION_USAGE_UNRESOLVED": 9,
-      "OUT_OF_SNAPSHOT": 220,
+      "OUT_OF_SNAPSHOT": 221,
       "NO_MATCH_ACTIVITY": 18
     },
     "rule": "Doğrulanmış kapsama yalnız snapshot eşleşmesi girer; manuel alias kullanımı ayrı izlenir ve ağ teyidi tamamlanana kadar doğrulanmış sayılmaz."
@@ -214,9 +214,9 @@
     },
     {
       "team": "TÜMOSAN KONYASPOR",
-      "tff_profiles": 42,
+      "tff_profiles": 41,
       "tm_players": 48,
-      "matched_profiles": 41,
+      "matched_profiles": 40,
       "manual_alias_mapped_profiles": 0,
       "unmatched_profiles": 1,
       "match_rate": 0.976,
@@ -3342,6 +3342,22 @@
       "season_activity": {
         "starts": 0,
         "squad_inclusions": 4,
+        "goals": 0
+      },
+      "candidate": null,
+      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
+    },
+    {
+      "player_id": "1933579",
+      "tff_name": "ENES İLYAS SEVEN",
+      "tff_club": "KARAMAN FUTBOL KULÜBÜ",
+      "category": "OUT_OF_SNAPSHOT_CLUB",
+      "priority_rank": 5,
+      "blocks_scout_review": false,
+      "review_tier": "OUT_OF_SNAPSHOT",
+      "season_activity": {
+        "starts": 0,
+        "squad_inclusions": 1,
         "goals": 0
       },
       "candidate": null,
