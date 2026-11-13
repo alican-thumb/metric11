@@ -592,9 +592,21 @@
         "actual_scorer": false
       },
       {
+        "player_id": "2824343",
+        "name": "VACLAV CERNY",
+        "goal_threat_score": 8.02,
+        "candidate_type": "primary",
+        "recent_starts": 6,
+        "season_goals_before_match": 1,
+        "recent_goals": 1,
+        "big_match_goals_before_match": 0,
+        "opponent_defense_multiplier": 1.22,
+        "actual_scorer": false
+      },
+      {
         "player_id": "2820579",
         "name": "DAVID JURASEK",
-        "goal_threat_score": 8.31,
+        "goal_threat_score": 6.48,
         "candidate_type": "primary+impact_sub",
         "recent_starts": 4,
         "season_goals_before_match": 1,
@@ -606,19 +618,12 @@
         "penalty_goals_before_match": 0,
         "recent_bench": 4,
         "cards_before_match": 0,
-        "recent_cards": 0
-      },
-      {
-        "player_id": "2824343",
-        "name": "VACLAV CERNY",
-        "goal_threat_score": 8.02,
-        "candidate_type": "primary",
-        "recent_starts": 6,
-        "season_goals_before_match": 1,
-        "recent_goals": 1,
-        "big_match_goals_before_match": 0,
-        "opponent_defense_multiplier": 1.22,
-        "actual_scorer": false
+        "recent_cards": 0,
+        "quality_adjustment": {
+          "multiplier": 0.78,
+          "reason": "Top 5 sıralama etkisini düşür veya aday tipini yeniden kontrol et.",
+          "source": "goal_candidate_segment_backtest"
+        }
       },
       {
         "player_id": "773485",

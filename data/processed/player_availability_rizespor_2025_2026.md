@@ -6,7 +6,7 @@
 - Otomatik ceza sinyali: 15
 - Manuel kayıt: 0
 - Güncel haber/sakat-cezalı sinyali: 2
-- Haber istihbaratı sinyali: 2
+- Haber istihbaratı sinyali: 1
 - Not: Kırmızı/çift sarı için sonraki maç cezası varsayılır. Sarı kart birikimi 4 kartta 1 maç varsayımıdır; resmi ceza listesiyle doğrulanmalıdır.
 
 ## Güncel Haber/Sakat-Cezalı Bağlamı
@@ -14,7 +14,6 @@
 - INJURED | Khusniddin Alikulov | kaynak=beIN SPORTS sakat ve cezalı listesi | güven=MEDIUM_CONTEXT
 - SUSPENDED | Modibo Sag | kaynak=beIN SPORTS sakat ve cezalı listesi | güven=MEDIUM_CONTEXT
 - INJURED | YAKUP AYAN | kaynak=news_intelligence | güven=MEDIUM
-- SUSPENDED | MİTHAT PALA | kaynak=news_intelligence | güven=MEDIUM
 
 ## Maç Bazlı Eksikler
 
