@@ -1,29 +1,35 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-11-14T06:13:57.402993+00:00
-Toplam ilgili haber: 65
+Üretim zamanı: 2026-11-14T08:59:02.792119+00:00
+Toplam ilgili haber: 62
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [A Milli Futbol Takımı, Fransa deplasmanında!](https://www.sabah.com.tr/spor/futbol/2026/11/14/a-milli-futbol-takimi-fransa-deplasmaninda) — Sabah Spor · 2026-11-14T11:41:36+03:00 · turnuva=— · kulüp=—
+- [Türkiye ile Fransa 8. kez karşı karşıya](https://www.aksam.com.tr/spor/turkiye-ile-fransa-8-kez-karsi-karsiya/haber-1714560) — Aksam Spor · 2026-11-14T11:41:00+03:00 · turnuva=— · kulüp=—
+- [A Milli Takım'ın rakibi Fransa! İşte maç öncesi son durum...](https://www.aksam.com.tr/spor/a-milli-takimin-rakibi-fransa-iste-mac-oncesi-son-durum/haber-1714556) — Aksam Spor · 2026-11-14T11:19:00+03:00 · turnuva=— · kulüp=—
+- [Bir ihtimal daha var: A Milli Takım, Uluslar A Ligi’nde kalabilir](https://www.cnnturk.com/spor/futbol/bir-ihtimal-daha-var-a-milli-takim-uluslar-a-liginde-kalabilir-3493125) — CNN Türk Spor · 2026-11-14T11:12:50+00:00 · turnuva=— · kulüp=—
+- [A Milli Takım, Fransa karşısında 8. maçına çıkacak](https://www.cnnturk.com/spor/futbol/a-milli-takim-fransa-karsisinda-8-macina-cikacak-3493124) — CNN Türk Spor · 2026-11-14T11:08:00+00:00 · turnuva=— · kulüp=—
+- [Futbolda Türkiye ile Fransa 8. kez karşı karşıya](https://www.aa.com.tr/tr/spor/futbolda-turkiye-ile-fransa-8-kez-karsi-karsiya/4124924) — Anadolu Ajansı Spor · 2026-11-14T11:06:35+03:00 · turnuva=— · kulüp=—
+- [A Milli Futbol Takımı, 660. maçına Fransa karşısında çıkacak](https://www.aa.com.tr/tr/spor/a-milli-futbol-takimi-660-macina-fransa-karsisinda-cikacak/4124922) — Anadolu Ajansı Spor · 2026-11-14T11:05:02+03:00 · turnuva=— · kulüp=—
+- [A Milli Futbol Takımı Fransa deplasmanında](https://www.aa.com.tr/tr/spor/a-milli-futbol-takimi-fransa-deplasmaninda-/4124901) — Anadolu Ajansı Spor · 2026-11-14T10:31:25+03:00 · turnuva=— · kulüp=—
+- [ÖZET | Hollanda'dan, Yunanistan'a farklı tarife](https://www.cnnturk.com/spor/futbol/ozet-hollandadan-yunanistana-farkli-tarife-3493041) — CNN Türk Spor · 2026-11-14T09:09:28+00:00 · turnuva=— · kulüp=—
+- [Uluslar Ligi'nde rakip Fransa!](https://www.haberturk.com/spor/foto/fransa-turkiye-maci-ne-zaman-saat-kacta-hangi-kanalda-canli-yayinlanacak-uefa-uluslar-ligi-3927294) — Haberturk Spor · 2026-11-14T08:22:58+00:00 · turnuva=— · kulüp=—
+- [A Milli Futbol Takımı, Fransa deplasmanında](https://www.hurriyet.com.tr/sporarena/a-milli-futbol-takimi-fransa-deplasmaninda-43377915) — Hürriyet Spor · 2026-11-14T08:12:10+00:00 · turnuva=— · kulüp=—
+- [Uluslar Ligi’nin heyecanı canlı sohbet ile Misli’de yaşanıyor!](https://www.hurriyet.com.tr/sporarena/uluslar-liginin-heyecani-canli-sohbet-ile-mislide-yasaniyor-43377888) — Hürriyet Spor · 2026-11-14T08:05:21+00:00 · turnuva=— · kulüp=—
 - [UEFA Uluslar Ligi'nde gecenin sonuçları](https://www.sabah.com.tr/spor/futbol/2026/11/13/uefa-uluslar-liginde-gecenin-sonuclari) — Sabah Spor · 2026-11-14T02:05:25+03:00 · turnuva=— · kulüp=—
-- [Almanya, Sırbistan karşısında 3 puanı kaptı](https://www.aksam.com.tr/spor/almanya-sirbistan-karsisinda-3-puani-kapti/haber-1714487) — Aksam Spor · 2026-11-14T01:51:00+03:00 · turnuva=— · kulüp=—
-- [Hollanda, Yunanistan'ı darmaduman etti!](https://www.aksam.com.tr/spor/hollanda-yunanistani-darmaduman-etti/haber-1714486) — Aksam Spor · 2026-11-14T01:49:00+03:00 · turnuva=— · kulüp=—
-- [İşte UEFA Uluslar Ligi'nde günün sonuçları...](https://www.aksam.com.tr/spor/iste-uefa-uluslar-liginde-gunun-sonuclari/haber-1714483) — Aksam Spor · 2026-11-14T01:42:00+03:00 · turnuva=— · kulüp=—
 - [UEFA Uluslar Ligi'nin 5. haftasında 10 maç oynandı](https://www.aa.com.tr/tr/spor/uefa-uluslar-liginin-5-haftasinda-10-mac-oynandi/4124797) — Anadolu Ajansı Spor · 2026-11-14T00:59:15+03:00 · turnuva=— · kulüp=—
-- [Almanya, Sırbistan engelini 3 golle geçti! İşte maçın golleri](https://www.sabah.com.tr/spor/futbol/2026/11/13/uluslar-liginde-dev-mucadele-sirbistan-almanya-maci-a-sporda) — Sabah Spor · 2026-11-13T22:16:52+03:00 · turnuva=— · kulüp=—
-- [Slovenya - İsviçre maçında gol sesi çıkmadı!](https://www.sabah.com.tr/spor/futbol/2026/11/13/uluslar-liginde-zorlu-randevu-slovenya-isvicre-maci-a-parada) — Sabah Spor · 2026-11-13T22:14:28+03:00 · turnuva=— · kulüp=—
 - [Uluslar Ligi'nde gecenin sonuçları!](https://www.haberturk.com/spor/uefa-uluslar-ligi-nde-gecenin-sonuclari-3927260) — Haberturk Spor · 2026-11-13T22:00:46+00:00 · turnuva=— · kulüp=—
-- [Ümit Milli Takımımız, ilk maçta Çekya'ya kaybetti!](https://www.sabah.com.tr/spor/futbol/2026/11/13/umit-milli-takimimiz-ilk-macta-cekyaya-kaybetti) — Sabah Spor · 2026-11-13T21:06:21+03:00 · turnuva=— · kulüp=—
 - ["Çocukluk hayalimi yaşıyorum"](https://www.haberturk.com/spor/foto/besiktas-ta-orkun-kokcu-cocukluk-hayalimi-yasiyorum-3927252) — Haberturk Spor · 2026-11-13T20:59:30+00:00 · turnuva=— · kulüp=Beşiktaş
 - [Ümit Milli Takım, Çekya'ya mağlup!](https://www.hurriyet.com.tr/sporarena/umit-milli-takim-cekyaya-maglup-43377673) — Hürriyet Spor · 2026-11-13T20:15:44+00:00 · turnuva=— · kulüp=—
 - [Orkun Kökçü'den Beşiktaş açıklaması: 'Haksızlıkmış gibi algılıyorum!'](https://www.hurriyet.com.tr/sporarena/orkun-kokcuden-besiktas-aciklamasi-haksizlikmis-gibi-algiliyorum-43377671) — Hürriyet Spor · 2026-11-13T19:55:53+00:00 · turnuva=— · kulüp=Beşiktaş
 - [Fransa'da Türkiye alarmı! İtalya yenilgisi sonrası Zidane'a eleştiri yağmuru: 'Balayı sona erdi!'](https://www.hurriyet.com.tr/sporarena/fransada-turkiye-alarmi-italya-yenilgisi-sonrasi-zidanea-elestiri-yagmuru-balayi-sona-erdi-43377658) — Hürriyet Spor · 2026-11-13T19:10:00+00:00 · turnuva=— · kulüp=—
 - [Ümit Milliler Çekya'ya mağlup!](https://www.haberturk.com/spor/turkiye-0-cekya-1-mac-sonucu-ozeti-ve-golleri-3927242) — Haberturk Spor · 2026-11-13T18:19:58+00:00 · turnuva=— · kulüp=—
 - [UEFA Uluslar Ligi'nde tarihi hezimet! Hollanda, Yunanistan'a gol yağdırdı: Tam 7 gol](https://www.takvim.com.tr/uluslar-ligi/2026/11/13/hollanda-yunanistan-uefa-uluslar-ligi-maci) — Takvim Spor · 2026-11-13T17:59:42+03:00 · turnuva=— · kulüp=—
-- [UEFA Uluslar Ligi'nde Almanya fırtınası! Sırbistan'ı 3-1 devirdi, zirve takibini sürdürdü](https://www.takvim.com.tr/uluslar-ligi/2026/11/13/sirbistan-almanya-uefa-uluslar-ligi-maci) — Takvim Spor · 2026-11-13T17:56:57+03:00 · turnuva=— · kulüp=—
+- [UEFA Uluslar Ligi'nde Almanya fırtınası: Sırbistan'ı 3-1 devirdi! Zirve takibini sürdürdü](https://www.takvim.com.tr/uluslar-ligi/2026/11/13/sirbistan-almanya-uefa-uluslar-ligi-maci) — Takvim Spor · 2026-11-13T17:56:57+03:00 · turnuva=— · kulüp=—
 - [Amsterdam’da gol yağmuru! Hollanda’dan Yunanistan’a tarihi fark...](https://www.sabah.com.tr/spor/futbol/2026/11/13/hollanda-yunanistan-macinin-heyecani-a-haberde-yasanacak) — Sabah Spor · 2026-11-13T17:49:34+03:00 · turnuva=— · kulüp=—
-- [Slovenya ve İsviçre'den golsüz maç! Mücadele 0-0 sona erdi: İşte maç sonucu](https://www.takvim.com.tr/uluslar-ligi/2026/11/13/slovenya-isvicre-uefa-uluslar-ligi-maci) — Takvim Spor · 2026-11-13T17:44:16+03:00 · turnuva=— · kulüp=—
+- [Slovenya ve İsviçre'den golsüz maç! Mücadele 0-0 sona erdi](https://www.takvim.com.tr/uluslar-ligi/2026/11/13/slovenya-isvicre-uefa-uluslar-ligi-maci) — Takvim Spor · 2026-11-13T17:44:16+03:00 · turnuva=— · kulüp=—
 - [Kupada 4. eleme turunun programı!](https://www.haberturk.com/spor/ziraat-turkiye-kupasi-4-eleme-turunun-programi-aciklandi-3927213) — Haberturk Spor · 2026-11-13T15:28:32+00:00 · turnuva=— · kulüp=—
 - [A Milli Futbol Takımı, İzmir'den Fransa'ya gitti](https://www.hurriyet.com.tr/sporarena/a-milli-futbol-takimi-izmirden-fransaya-gitti-43377390) — Hürriyet Spor · 2026-11-13T14:22:22+00:00 · turnuva=— · kulüp=—
 - [Fransa - Türkiye maçında İngiliz hakem düdük çalacak](https://www.cnnturk.com/spor/futbol/fransa-turkiye-macinda-ingiliz-hakem-duduk-calacak-3492813) — CNN Türk Spor · 2026-11-13T13:10:27+00:00 · turnuva=— · kulüp=—
@@ -32,7 +38,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Muçi ve Manaj attı, Arnavutluk kazandı](https://www.cnnturk.com/spor/futbol/muci-ve-manaj-atti-arnavutluk-kazandi-3492779) — CNN Türk Spor · 2026-11-13T12:12:34+00:00 · turnuva=— · kulüp=—
 - [Türkiye 1-2 Belçika Maç Özeti | Bizim Çocuklar, yine mağlup](https://www.cnnturk.com/spor/futbol/live-turkiye-1-2-belcika-mac-ozeti-bizim-cocuklar-yine-maglup-3492485) — CNN Türk Spor · 2026-11-13T10:41:41+00:00 · turnuva=— · kulüp=—
 - [Milli Takım, Uluslar A Ligi'nde nasıl kalır?](https://www.haberturk.com/spor/foto/milli-takim-uluslar-a-ligi-nde-nasil-kalir-iste-o-ihtimal-3927080) — Haberturk Spor · 2026-11-13T09:51:28+00:00 · turnuva=— · kulüp=—
-- [Fransa-Türkiye maçına İngiliz hakem](https://www.haberturk.com/spor/fransa-turkiye-macini-chris-kavanagh-yonetecek-3927071) — Haberturk Spor · 2026-11-13T09:30:41+00:00 · turnuva=— · kulüp=—
 - [Fransa - Türkiye maçının hakemi açıklandı!](https://www.hurriyet.com.tr/sporarena/fransa-turkiye-macinin-hakemi-aciklandi-43376857) — Hürriyet Spor · 2026-11-13T09:20:00+00:00 · turnuva=— · kulüp=—
 - [A Milli Takım'ın mağlubiyeti Belçika basınında: 'Çılgın 4 dakika! Acı içinde gelen mutluluk'](https://www.hurriyet.com.tr/sporarena/a-milli-takimin-maglubiyeti-belcika-basininda-cilgin-4-dakika-aci-icinde-gelen-mutluluk-43376658) — Hürriyet Spor · 2026-11-13T08:16:39+00:00 · turnuva=— · kulüp=—
 - [ÖZET | İngiltere, Hırvatistan'la karşılaştı, Harry Kane rekor kırdı](https://www.cnnturk.com/spor/futbol/ozet-ingiltere-hirvatistanla-karsilasti-harry-kane-rekor-kirdi-3492615) — CNN Türk Spor · 2026-11-13T08:07:13+00:00 · turnuva=— · kulüp=—
@@ -41,8 +46,3 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [ÖZET | İtalya, Fransa'nın bileğini büktü](https://www.cnnturk.com/spor/futbol/ozet-italya-fransanin-bilegini-buktu-3492606) — CNN Türk Spor · 2026-11-13T07:06:02+00:00 · turnuva=— · kulüp=—
 - [Şampiyonlar Ligi rakibinden Galatasaray'a transfer kancası! Sezon sonunda kontratı bitiyor - A Spor](https://news.google.com/rss/articles/CBMi0gFBVV95cUxQNXlnX3RoRlFKV1dLNmNGVGFna2dzVUVQbHFfNkRYS0lsRWpyQ1hBbm1FZ0dwaEdzcEdCV3pkazd5ckMzMUlibTNQY1gwWUE4N3FZY1VPaXN2dFBoOXRvM25UYWp3c0VYMURueFUzMFhfUlhDR0EwTWRMV1NnWnVlcFpFWC16SkZnVVdEeVJNekdMQzNDSi1ORkdUajVHOWtRdFU3bFNLdENReVljZlJpb2RtQ1ZnODBKN3I4a09iOF95ZkpaLVRtYThqdE9BX281V0HSAdcBQVVfeXFMT1doZHVDU01fTHBlQXRTSkJPWUY1clVfbnRDRy1pdDYyY2RMU3NuYm9rajV0bnpXbmo4NUo2SlJjUS1wNEgteldlZlhVMVAwbXNwcjQ0dVU2S3haNHdBX0NuamJCX25oeHhhb081Z0dhVkMwc2E1LTBkbXIyelpCdkVnd2U0TjhpY2NWLVVOM3NIYUJ2am4xQVdaNEtrOW0tMzVTdHMybjJLNjhhTGhpQ1Y3d2tORm8tRzJGSF83UzdfVGNjemhYdWlNUHAwYnctMTlxUUJqMzA?oc=5) — A Spor · 2026-11-13T06:59:14+00:00 · turnuva=CL · kulüp=Galatasaray
 - [Türkiye - Belçika maçı sonrası Nihat Kahveci'den sert sözler: 'A Ligi bize zor geldi!'](https://www.hurriyet.com.tr/sporarena/turkiye-belcika-maci-sonrasi-nihat-kahveciden-sert-sozler-a-ligi-bize-zor-geldi-43376501) — Hürriyet Spor · 2026-11-13T06:35:36+00:00 · turnuva=— · kulüp=—
-- [A Milli Takım'ın Belçika yenilgisi sonrası sert eleştiri! '70 dakika kenardan izledi! Büyük bir hataydı'](https://www.hurriyet.com.tr/sporarena/a-milli-takimin-belcika-yenilgisi-sonrasi-sert-elestiri-70-dakika-kenardan-izledi-buyuk-bir-hataydi-43376463) — Hürriyet Spor · 2026-11-13T05:00:00+00:00 · turnuva=— · kulüp=—
-- [Uluslar Ligi'nde 8 maç oynandı! İşte alınan sonuçar](https://www.takvim.com.tr/uluslar-ligi/2026/11/12/uluslar-liginde-8-mac-oynandi-iste-alinan-sonucar) — Takvim Spor · 2026-11-13T01:05:05+03:00 · turnuva=— · kulüp=—
-- [UEFA Uluslar Ligi'nin 5. haftası 8 maçla başladı](https://www.aa.com.tr/tr/spor/uefa-uluslar-liginin-5-haftasi-8-macla-basladi/4123521) — Anadolu Ajansı Spor · 2026-11-13T00:53:35+03:00 · turnuva=— · kulüp=—
-- [İngiltere, UEFA Uluslar Ligi'nde Hırvatistan'ı iki golle geçti](https://www.aa.com.tr/tr/spor/ingiltere-uefa-uluslar-liginde-hirvatistani-iki-golle-gecti-/4123518) — Anadolu Ajansı Spor · 2026-11-13T00:53:27+03:00 · turnuva=— · kulüp=—
-- [Fransa - Türkiye maçı ne zaman? Fransa Türkiye maçı saat kaçta, hangi kanalda? Milli maç tarihi](https://www.cnnturk.com/spor/futbol/fransa-turkiye-maci-ne-zaman-fransa-turkiye-maci-saat-kacta-hangi-kanalda-milli-mac-tarihi-3492600) — CNN Türk Spor · 2026-11-13T00:34:41+00:00 · turnuva=— · kulüp=—
