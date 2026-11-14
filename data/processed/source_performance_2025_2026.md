@@ -8,7 +8,7 @@
 - Hesaplanabilir erken haber süresi: 0
 - İlk görülmeye göre üst-sınır süre: 11
 - X verisi bekleyen izlenen kaynak: 20
-- Defterde korunan ilk iddia gözlemi: 4848
+- Defterde korunan ilk iddia gözlemi: 4855
 
 ## Kanal Kapsamı
 
@@ -20,7 +20,7 @@
 
 | Kanal | Gözlem | Ölçülebilir İddia | Resmiye Dönüşen | Ort. Erken Saat | İlk Görülme Üst-Sınırı | Vekil Yanlış Alarm | Skor | Durum |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| Google News / medya | 4845 | 1453 | 13 | — | 910.9 | %99.1 | 0.7 | FIRST_SEEN_BOUND |
+| Google News / medya | 4852 | 1454 | 13 | — | 910.9 | %99.1 | 0.7 | FIRST_SEEN_BOUND |
 | Muhabire atıflı medya | 1 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Telegram | 2 | 1 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | X | 0 | 0 | 0 | — | — | — | — | X_DATA_UNAVAILABLE |
@@ -61,13 +61,13 @@
 | Son Dakika | MEDIA | 103 | 68 | 1 | — | 1251.4 | %98.5 | 1.2 | FIRST_SEEN_BOUND |
 | Fotomaç | MEDIA | 518 | 97 | 1 | — | 1251.1 | %99.0 | 0.8 | FIRST_SEEN_BOUND |
 | Takvim | MEDIA | 355 | 31 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
-| Sabah | MEDIA | 335 | 65 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Sabah | MEDIA | 336 | 66 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Hürriyet | MEDIA | 334 | 43 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
-| Aksam Spor | MEDIA | 207 | 18 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Aksam Spor | MEDIA | 209 | 18 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Haberturk Spor | MEDIA | 194 | 15 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| GZT | MEDIA | 119 | 33 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Fanatik | MEDIA | 117 | 38 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
-| GZT | MEDIA | 117 | 33 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
-| Milliyet | MEDIA | 113 | 27 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
+| Milliyet | MEDIA | 114 | 27 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | NTVSpor | MEDIA | 111 | 27 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Sporx.com | MEDIA | 108 | 84 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
 | Anadolu Ajansı Spor | AGENCY | 97 | 20 | 0 | — | — | %100.0 | 0.0 | PARTIAL_MEASUREMENT |
@@ -277,6 +277,7 @@
 | Günebakış Gazetesi Trabzon | MEDIA | 4 | 1 | 0 | — | — | — | — | OBSERVING |
 | Kuzey Ekspres | MEDIA | 4 | 1 | 0 | — | — | — | — | OBSERVING |
 | sozcu.com.tr | MEDIA | 4 | 0 | 0 | — | — | — | — | OBSERVING |
+| Bursa Saati Gazetesi | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
 | Duhuliye | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
 | Gazete Arena | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
 | haber61.net | MEDIA | 3 | 0 | 0 | — | — | — | — | OBSERVING |
@@ -284,7 +285,6 @@
 | 61saat.com | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Afyon Şehir | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Anadolu'da Bugün | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
-| Bursa Saati Gazetesi | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | GALATASARAY.ORG | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Gazete Oksijen | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
 | Gaziantep Oluşum Gazetesi | MEDIA | 2 | 0 | 0 | — | — | — | — | OBSERVING |
