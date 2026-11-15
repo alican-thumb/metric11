@@ -13,8 +13,8 @@ _Kanat üretimi ve açık alan tehdidi için Süper Lig aday havuzu._
 - ERNEST MUÇİ (TRABZONSPOR A.Ş.) — fit=92.52, yaş=25, gol=11, ilk11=22
 - KAZEEM ADEREMI J. OLAIGBE (TRABZONSPOR A.Ş.) — fit=91.82, yaş=23, gol=0, ilk11=26
 - GÖKTAN GÜRPÜZ (GENÇLERBİRLİĞİ) — fit=86.35, yaş=23, gol=0, ilk11=25
+- RUAN PEREIRA DUARTE (CORENDON ALANYASPOR) — fit=83.96, yaş=21, gol=1, ilk11=26
 - ANTHONY TİTE EMMANUEL MUSABA (SAMSUNSPOR A.Ş.) — fit=79.84, yaş=25, gol=5, ilk11=24
-- MUHAMMED KEREM AKTÜRKOĞLU (FENERBAHÇE A.Ş.) — fit=78.77, yaş=28, gol=8, ilk11=24
 
 ## Santrfor / skor yükü
 _Dar maçlarda gol olasılığını artıracak direkt skor profili._
@@ -56,13 +56,13 @@ _Savunma önü denge ve kart/tempo yönetimi için güvenli profil._
 _Kanat savunması ve bindirme sürekliliği için ekonomik bek profili._
 
 - ARDA OKAN KURTULAN (GÖZTEPE A.Ş.) — fit=88.8, yaş=23, gol=4, ilk11=27
-- RUAN PEREIRA DUARTE (CORENDON ALANYASPOR) — fit=83.96, yaş=21, gol=1, ilk11=26
 - MOHAMMED AMIN CHERNI (GÖZTEPE A.Ş.) — fit=79.81, yaş=25, gol=0, ilk11=34
 - WAGNER FABRICIO CARDOSO DE PINA (TRABZONSPOR A.Ş.) — fit=74.0, yaş=24, gol=0, ilk11=28
 - MİTHAT PALA (ÇAYKUR RİZESPOR A.Ş.) — fit=68.83, yaş=26, gol=2, ilk11=21
 - GODFRİED AYESU OWUSU FRİMPONG (KASIMPAŞA A.Ş.) — fit=68.36, yaş=27, gol=0, ilk11=25
 - RIDVAN YILMAZ (BEŞİKTAŞ A.Ş.) — fit=66.08, yaş=25, gol=0, ilk11=23
 - CASPER SOMMER HOJER (ÇAYKUR RİZESPOR A.Ş.) — fit=65.35, yaş=31, gol=0, ilk11=32
+- LOGI TOMASSON (SAMSUNSPOR A.Ş.) — fit=65.32, yaş=26, gol=1, ilk11=26
 
 ## Stoper / hava ve temas
 _Duran top, hava topu ve temas yoğunluğu için savunma profili._

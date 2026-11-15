@@ -4,7 +4,7 @@
 - Toplam pozisyon ihtiyacı: 49
 - Toplam oyuncu önerisi: 147
 - Acil transfer ihtiyacı olan takım: 5
-- Serbest transfer fırsatı: 13 oyuncu
+- Serbest transfer fırsatı: 12 oyuncu
 - Müzakere penceresi (1 yıl kalan): 0 oyuncu
 - Yayın kuralı: Rol önerileri yalnızca dış profil pozisyonu rol ile eşleşen oyuncuları içerir.
 
@@ -40,11 +40,11 @@ Bu liste sözleşme izlemesidir; takım/rol uygunluğu ayrıca doğrulanmış ö
 - **KACPER SZYMON KOZLOWSKI** (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 23y | 6 gol / 30 maç | sözleşme ~7ay
 - **ALEXANDRU IULIAN MAXIM** (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 36y | 5 gol / 32 maç | sözleşme ~7ay
 - **FRANCO DARYL TONGYA HEUBANG** (GENÇLERBİRLİĞİ) | 24y | 6 gol / 27 maç | sözleşme ~7ay
-- **UI JO HWANG** (CORENDON ALANYASPOR) | 34y | 4 gol / 30 maç | sözleşme ~7ay
 - **ANTHONY JUNIOR DENNIS** (GÖZTEPE A.Ş.) | 22y | 3 gol / 29 maç | sözleşme ~7ay
 - **GAİUS ABRAHAM JERED MAKOUTA** (CORENDON ALANYASPOR) | 29y | 1 gol / 32 maç | sözleşme ~7ay
 - **NUNO MIGUEL REIS LIMA** (CORENDON ALANYASPOR) | 25y | 1 gol / 32 maç | sözleşme ~7ay
 - **JEROME OPOKU** (İSTANBUL BAŞAKŞEHİR FK) | 28y | 1 gol / 31 maç | sözleşme ~7ay
+- **HELITON JORGE  TITO DOS SANTOS** (GÖZTEPE A.Ş.) | 30y | 0 gol / 32 maç | sözleşme ~-5ay
 
 ### Müzakere Penceresi (1 Yıl Kalan)
 
@@ -166,8 +166,8 @@ Zayıf nokta: skor üretim sorunu, deplasman zayıf, düşük şut baskısı
      → Skor üretim sorunu sorunu var; 8 numara / fizik motoru bu açığı kapatacak. Kozlowski: 6 gol, 30 maç. Bu yaz serbest kalıyor (~7ay) — bonussuz transfer fırsatı. 23 yaş, uzun vadeli yatırım profili.
   2. ALEXANDRU IULIAN MAXIM (GAZİANTEP FUTBOL KULÜBÜ A.Ş.) | 36y | 5 gol | SERBEST TRANSFER FIRSATI | FREE | skor 30.9
      → Skor üretim sorunu sorunu var; 8 numara / fizik motoru bu açığı kapatacak. Maxim: 5 gol, 32 maç. Bu yaz serbest kalıyor (~7ay) — bonussuz transfer fırsatı. 36 yaş — deneyim katkısı, kısa dönem çözüm.
-  3. UI JO HWANG (CORENDON ALANYASPOR) | 34y | 4 gol | SERBEST TRANSFER FIRSATI | FREE | skor 28.7
-     → Skor üretim sorunu sorunu var; 8 numara / fizik motoru bu açığı kapatacak. Hwang: 4 gol, 30 maç. Bu yaz serbest kalıyor (~7ay) — bonussuz transfer fırsatı. 34 yaş — deneyim katkısı, kısa dönem çözüm.
+  3. ORKUN KÖKÇÜ (BEŞİKTAŞ A.Ş.) | 25y | 8 gol | PREMİUM TRANSFER | MEDIUM | skor 24.9
+     → Skor üretim sorunu sorunu var; 8 numara / fizik motoru bu açığı kapatacak. Kökçü: 8 gol, 29 maç. Uzun sözleşme — yüksek bonusu göze almalı.
 
 ### TÜMOSAN KONYASPOR  [ACİL]
 *0.727 puan/maç | maç başına 0.545 attı | maç başına 1.273 yedi*
@@ -415,12 +415,12 @@ Zayıf nokta: kadro derinliği sınırlı
      → Kadro derinliği sınırlı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Yilmaz: 8 gol, 27 maç. Uzun sözleşme — yüksek bonusu göze almalı.
 
 **Bek / çift yönlü koridor** — Koridor derinliğini artıracak, büyük maç baskısında rotasyon sağlayacak çift yönlü bek.
-  1. ARDA OKAN KURTULAN (GÖZTEPE A.Ş.) | 23y | 4 gol | PREMİUM TRANSFER | HIGH | skor 16.9
+  1. CHRİSTOPHER TEA DOMORAUD OPERI (İSTANBUL BAŞAKŞEHİR FK) | 29y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 23.8
+     → Kadro derinliği sınırlı sorunu var; Bek / çift yönlü koridor bu açığı kapatacak. Operi: 22 maç. Bu yaz serbest kalıyor (~7ay) — bonussuz transfer fırsatı.
+  2. ARDA OKAN KURTULAN (GÖZTEPE A.Ş.) | 23y | 4 gol | PREMİUM TRANSFER | HIGH | skor 16.9
      → Kadro derinliği sınırlı sorunu var; Bek / çift yönlü koridor bu açığı kapatacak. Kurtulan: 4 gol, 27 maç. Uzun sözleşme — yüksek bonusu göze almalı. 23 yaş, uzun vadeli yatırım profili.
-  2. YHOAN MANY ANDZOUANA (TÜMOSAN KONYASPOR) | 29y | 2 gol | PREMİUM TRANSFER | MEDIUM | skor 16.7
+  3. YHOAN MANY ANDZOUANA (TÜMOSAN KONYASPOR) | 29y | 2 gol | PREMİUM TRANSFER | MEDIUM | skor 16.7
      → Kadro derinliği sınırlı sorunu var; Bek / çift yönlü koridor bu açığı kapatacak. Andzouana: 2 gol, 29 maç. Uzun sözleşme — yüksek bonusu göze almalı.
-  3. ROLAND SALLAI (GALATASARAY A.Ş.) | 29y | 1 gol | PREMİUM TRANSFER | MEDIUM | skor 14.9
-     → Kadro derinliği sınırlı sorunu var; Bek / çift yönlü koridor bu açığı kapatacak. Sallai: 1 gol, 26 maç. Uzun sözleşme — yüksek bonusu göze almalı.
 
 ### BEŞİKTAŞ A.Ş.  [NORMAL]
 *2.0 puan/maç | maç başına 2.091 attı | maç başına 1.091 yedi*
@@ -457,12 +457,12 @@ Zayıf nokta: kadro derinliği sınırlı
      → Kadro derinliği sınırlı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Kozlowski: 6 gol, 30 maç. Uzun sözleşme — yüksek bonusu göze almalı. 23 yaş, uzun vadeli yatırım profili.
 
 **Bek / çift yönlü koridor** — Koridor derinliğini artıracak, büyük maç baskısında rotasyon sağlayacak çift yönlü bek.
-  1. ARDA OKAN KURTULAN (GÖZTEPE A.Ş.) | 23y | 4 gol | PREMİUM TRANSFER | HIGH | skor 16.9
+  1. CHRİSTOPHER TEA DOMORAUD OPERI (İSTANBUL BAŞAKŞEHİR FK) | 29y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 23.8
+     → Kadro derinliği sınırlı sorunu var; Bek / çift yönlü koridor bu açığı kapatacak. Operi: 22 maç. Bu yaz serbest kalıyor (~7ay) — bonussuz transfer fırsatı.
+  2. ARDA OKAN KURTULAN (GÖZTEPE A.Ş.) | 23y | 4 gol | PREMİUM TRANSFER | HIGH | skor 16.9
      → Kadro derinliği sınırlı sorunu var; Bek / çift yönlü koridor bu açığı kapatacak. Kurtulan: 4 gol, 27 maç. Uzun sözleşme — yüksek bonusu göze almalı. 23 yaş, uzun vadeli yatırım profili.
-  2. YHOAN MANY ANDZOUANA (TÜMOSAN KONYASPOR) | 29y | 2 gol | PREMİUM TRANSFER | MEDIUM | skor 16.7
+  3. YHOAN MANY ANDZOUANA (TÜMOSAN KONYASPOR) | 29y | 2 gol | PREMİUM TRANSFER | MEDIUM | skor 16.7
      → Kadro derinliği sınırlı sorunu var; Bek / çift yönlü koridor bu açığı kapatacak. Andzouana: 2 gol, 29 maç. Uzun sözleşme — yüksek bonusu göze almalı.
-  3. ROLAND SALLAI (GALATASARAY A.Ş.) | 29y | 1 gol | PREMİUM TRANSFER | MEDIUM | skor 14.9
-     → Kadro derinliği sınırlı sorunu var; Bek / çift yönlü koridor bu açığı kapatacak. Sallai: 1 gol, 26 maç. Uzun sözleşme — yüksek bonusu göze almalı.
 
 ### AMED SFK  [STABİL]
 *2.091 puan/maç | maç başına 2.545 attı | maç başına 1.364 yedi*
@@ -528,9 +528,9 @@ Zayıf nokta: kadro derinliği sınırlı
      → Kadro derinliği sınırlı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Kozlowski: 6 gol, 30 maç. Uzun sözleşme — yüksek bonusu göze almalı. 23 yaş, uzun vadeli yatırım profili.
 
 **Bek / çift yönlü koridor** — Koridor derinliğini artıracak, büyük maç baskısında rotasyon sağlayacak çift yönlü bek.
-  1. ARDA OKAN KURTULAN (GÖZTEPE A.Ş.) | 23y | 4 gol | PREMİUM TRANSFER | HIGH | skor 16.9
+  1. CHRİSTOPHER TEA DOMORAUD OPERI (İSTANBUL BAŞAKŞEHİR FK) | 29y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 23.8
+     → Kadro derinliği sınırlı sorunu var; Bek / çift yönlü koridor bu açığı kapatacak. Operi: 22 maç. Bu yaz serbest kalıyor (~7ay) — bonussuz transfer fırsatı.
+  2. ARDA OKAN KURTULAN (GÖZTEPE A.Ş.) | 23y | 4 gol | PREMİUM TRANSFER | HIGH | skor 16.9
      → Kadro derinliği sınırlı sorunu var; Bek / çift yönlü koridor bu açığı kapatacak. Kurtulan: 4 gol, 27 maç. Uzun sözleşme — yüksek bonusu göze almalı. 23 yaş, uzun vadeli yatırım profili.
-  2. YHOAN MANY ANDZOUANA (TÜMOSAN KONYASPOR) | 29y | 2 gol | PREMİUM TRANSFER | MEDIUM | skor 16.7
+  3. YHOAN MANY ANDZOUANA (TÜMOSAN KONYASPOR) | 29y | 2 gol | PREMİUM TRANSFER | MEDIUM | skor 16.7
      → Kadro derinliği sınırlı sorunu var; Bek / çift yönlü koridor bu açığı kapatacak. Andzouana: 2 gol, 29 maç. Uzun sözleşme — yüksek bonusu göze almalı.
-  3. ROLAND SALLAI (GALATASARAY A.Ş.) | 29y | 1 gol | PREMİUM TRANSFER | MEDIUM | skor 14.9
-     → Kadro derinliği sınırlı sorunu var; Bek / çift yönlü koridor bu açığı kapatacak. Sallai: 1 gol, 26 maç. Uzun sözleşme — yüksek bonusu göze almalı.

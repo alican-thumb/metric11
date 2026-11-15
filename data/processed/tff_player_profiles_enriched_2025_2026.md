@@ -2,27 +2,27 @@
 
 - Toplam TFF oyuncu: 886
 - Lig snapshot kapsamında TFF oyuncu: 670
-- Kulüp içi canonical eşleşme: 399
+- Kulüp içi canonical eşleşme: 398
 - Kulüp içi profil tam-ad eşleşme: 2
-- Kulüp içi token eşleşme: 216
+- Kulüp içi token eşleşme: 218
 - Manuel eşleme (ağ teyidi bekleyen): 4
-- Eşleşmedi: 265
-- Doğrulanmış tüm profil kapsamı: %69.6
-- Doğrulanmış lig snapshot içi kapsama: %92.1
-- Manuel eşleme dahil kullanılabilir lig snapshot içi kapsama: %92.7
+- Eşleşmedi: 264
+- Doğrulanmış tüm profil kapsamı: %69.8
+- Doğrulanmış lig snapshot içi kapsama: %92.2
+- Manuel eşleme dahil kullanılabilir lig snapshot içi kapsama: %92.8
 
 ## En Yüksek Piyasa Değeri (Eşleşen Oyuncular)
 
-- VICTOR JAMES OSIMHEN (GALATASARAY A.Ş.) — €65.0M | Sözleşme: 30/06/2029 | Pozisyon: Centre-Forward
-- MASON WILL JOHN GREENWOOD (FENERBAHÇE A.Ş.) — €40.0M | Sözleşme: 30/06/2030 | Pozisyon: Right Winger
-- RAFAEL ALEXANDRE DA CONCEIÇÃO LEÃO (GALATASARAY A.Ş.) — €40.0M | Sözleşme: 30/06/2030 | Pozisyon: Left Winger
-- DUSAN VLAHOVIC (BEŞİKTAŞ A.Ş.) — €32.0M | Sözleşme: 30/06/2029 | Pozisyon: Centre-Forward
-- BARIŞ ALPER YILMAZ (GALATASARAY A.Ş.) — €30.0M | Sözleşme: 30/06/2028 | Pozisyon: Left Winger
-- ORKUN KÖKÇÜ (BEŞİKTAŞ A.Ş.) — €28.0M | Sözleşme: 30/06/2030 | Pozisyon: Central Midfield
-- MATTEO ELIAS KENZO GUENDOUZI OLIE (FENERBAHÇE A.Ş.) — €27.0M | Sözleşme: 30/06/2030 | Pozisyon: Central Midfield
-- GABRIEL DAVI GOMES SARA (GALATASARAY A.Ş.) — €27.0M | Sözleşme: 30/06/2029 | Pozisyon: Central Midfield
 - CHRIST RAVYNEL INAO OULAI (TRABZONSPOR A.Ş.) — €23.0M | Sözleşme: 2030-06-30 | Pozisyon: Central Midfield
-- ERNEST POKU (BEŞİKTAŞ A.Ş.) — €22.0M | Sözleşme: 30/06/2027 | Pozisyon: Right Winger
+- NOA NOËLL LANG (GALATASARAY A.Ş.) — €22.0M | Sözleşme: 2026-06-30 | Pozisyon: Left Winger
+- SIDIKI CHERIF (FENERBAHÇE A.Ş.) — €18.0M | Sözleşme: 2030-06-30 | Pozisyon: Centre-Forward
+- YOUSSEF EN NESYRI (FENERBAHÇE A.Ş.) — €17.0M | Sözleşme: 2029-06-30 | Pozisyon: Centre-Forward
+- EDSON OMAR ALVAREZ VELAZQUEZ (FENERBAHÇE A.Ş.) — €15.0M | Sözleşme: 2026-06-30 | Pozisyon: Defensive Midfield
+- JHON JADER DURAN PALACIOS (FENERBAHÇE A.Ş.) — €15.0M | Sözleşme: 2026-06-30 | Pozisyon: Centre-Forward
+- NICOLO ZANIOLO (GALATASARAY A.Ş.) — €15.0M | Sözleşme: 2027-05-31 | Pozisyon: Second Striker
+- FELIPE AUGUSTO DA SILVA (TRABZONSPOR A.Ş.) — €15.0M | Sözleşme: 2029-06-30 | Pozisyon: Centre-Forward
+- YUSUF AKÇİÇEK (FENERBAHÇE A.Ş.) — €14.0M | Sözleşme: 2026-06-30 | Pozisyon: Centre-Back
+- YASER ESNEYDER ASPRILLA MARTINEZ (GALATASARAY A.Ş.) — €14.0M | Sözleşme: 2026-06-30 | Pozisyon: Right Winger
 
 ## Eşleşmeyen Oyuncular (İlk 20)
 

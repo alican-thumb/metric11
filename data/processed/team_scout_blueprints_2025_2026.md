@@ -15,9 +15,9 @@
 - 6 numara / savunma emniyeti: Savunma önü emniyet ve kart baskısını düşürecek denge profili gerekir. Adaylar: GAİUS ABRAHAM JERED MAKOUTA, ANTHONY JUNIOR DENNIS, MANUEL LUIS DA SILVA CAFUMANA
 - Stoper / hava ve temas: Savunma kırılganlığı için temas/hava üstünlüğü; mevcut GA 1.0. Adaylar: HELITON JORGE  TITO DOS SANTOS, JAYDEN QUINN OOSTERWOLDE, JEROME OPOKU
 
-## ÇORUM FK
+## AMED SFK
 
-- Güç: None | GF: 1.909 | GA: 1.909 | kart: None
+- Güç: None | GF: 2.545 | GA: 1.364 | kart: None
 - Zafiyet: yeni lig takımı
 - Scout ipucu: Süper Lig deneyimli kaleci, stoper ve santrfor takviyesi — serbest ajan ve kiralık öncelikli.
 - Kaleci / istikrar: Süper Lig'e yeni çıkan takım; Kaleci / istikrar pozisyonunda deneyimli takviye kritik. Adaylar: MUHAMMED ŞENGEZER, YAHIA FOFANA, MARIO RICARDO DA SILVA VELHO
@@ -25,9 +25,9 @@
 - Santrfor / skor yükü: Süper Lig'e yeni çıkan takım; Santrfor / skor yükü pozisyonunda deneyimli takviye kritik. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, FELIPE AUGUSTO DA SILVA
 - 6 numara / savunma emniyeti: Süper Lig'e yeni çıkan takım; 6 numara / savunma emniyeti pozisyonunda deneyimli takviye kritik. Adaylar: GAİUS ABRAHAM JERED MAKOUTA, ANDRI FANNAR BALDURSSON, ANTHONY JUNIOR DENNIS
 
-## AMED SFK
+## ÇORUM FK
 
-- Güç: None | GF: 2.545 | GA: 1.364 | kart: None
+- Güç: None | GF: 1.909 | GA: 1.909 | kart: None
 - Zafiyet: yeni lig takımı
 - Scout ipucu: Süper Lig deneyimli kaleci, stoper ve santrfor takviyesi — serbest ajan ve kiralık öncelikli.
 - Kaleci / istikrar: Süper Lig'e yeni çıkan takım; Kaleci / istikrar pozisyonunda deneyimli takviye kritik. Adaylar: MUHAMMED ŞENGEZER, YAHIA FOFANA, MARIO RICARDO DA SILVA VELHO
@@ -73,7 +73,7 @@
 - Santrfor / skor yükü: Skor üretim problemi için bitirici profil; mevcut gol ortalaması 1.182. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, FELIPE AUGUSTO DA SILVA
 - Sol açık / çizgi kırıcı: Deplasman veya üretim zafiyetinde çizgi kıran/taşıyıcı hücum profili gerekir. Adaylar: KACPER SZYMON KOZLOWSKI, DORGELES NENE, BARIŞ ALPER YILMAZ
 - 8 numara / fizik motoru: Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir. Adaylar: ALEXANDRU IULIAN MAXIM, QAZIM LACI, ORKUN KÖKÇÜ
-- Bek / çift yönlü koridor: Kanat savunması ve geçiş gücünü aynı anda destekleyecek çift yönlü bek profili gerekir. Adaylar: YHOAN MANY ANDZOUANA, ROLAND SALLAI, RUAN PEREIRA DUARTE
+- Bek / çift yönlü koridor: Kanat savunması ve geçiş gücünü aynı anda destekleyecek çift yönlü bek profili gerekir. Adaylar: YHOAN MANY ANDZOUANA, ROLAND SALLAI, RIDVAN YILMAZ
 
 ## ÇAYKUR RİZESPOR A.Ş.
 
@@ -93,7 +93,7 @@
 - Santrfor / skor yükü: Skor üretim problemi için bitirici profil; mevcut gol ortalaması 1.091. Adaylar: ELDOR SHOMURODOV, EBERE PAUL ONUACHU, FELIPE AUGUSTO DA SILVA
 - Sol açık / çizgi kırıcı: Deplasman veya üretim zafiyetinde çizgi kıran/taşıyıcı hücum profili gerekir. Adaylar: KACPER SZYMON KOZLOWSKI, DORGELES NENE, BARIŞ ALPER YILMAZ
 - 8 numara / fizik motoru: Son bölüm gol yeme ve deplasman kırılganlığı için tempo taşıyan merkez oyuncu gerekir. Adaylar: ALEXANDRU IULIAN MAXIM, QAZIM LACI, ORKUN KÖKÇÜ
-- Bek / çift yönlü koridor: Kanat savunması ve geçiş gücünü aynı anda destekleyecek çift yönlü bek profili gerekir. Adaylar: YHOAN MANY ANDZOUANA, ROLAND SALLAI, RUAN PEREIRA DUARTE
+- Bek / çift yönlü koridor: Kanat savunması ve geçiş gücünü aynı anda destekleyecek çift yönlü bek profili gerekir. Adaylar: YHOAN MANY ANDZOUANA, ROLAND SALLAI, RIDVAN YILMAZ
 
 ## TÜMOSAN KONYASPOR
 
@@ -141,7 +141,7 @@
 - Zafiyet: kadro derinliği sınırlı
 - Scout ipucu: Kaliteli rotasyon: büyük maç baskısını karşılayacak kanat/bek derinliği
 - Sol açık / çizgi kırıcı: Büyük maç rotasyonunu besleyecek ve kanat derinliğini artıracak yaratıcı profil. Adaylar: KACPER SZYMON KOZLOWSKI, DORGELES NENE, BARIŞ ALPER YILMAZ
-- Bek / çift yönlü koridor: Koridor derinliğini artıracak, büyük maç baskısında rotasyon sağlayacak çift yönlü bek. Adaylar: YHOAN MANY ANDZOUANA, ROLAND SALLAI, RUAN PEREIRA DUARTE
+- Bek / çift yönlü koridor: Koridor derinliğini artıracak, büyük maç baskısında rotasyon sağlayacak çift yönlü bek. Adaylar: YHOAN MANY ANDZOUANA, ROLAND SALLAI, ARDA OKAN KURTULAN
 
 ## TRABZONSPOR A.Ş.
 
@@ -149,7 +149,7 @@
 - Zafiyet: kadro derinliği sınırlı
 - Scout ipucu: Kaliteli rotasyon: büyük maç baskısını karşılayacak kanat/bek derinliği
 - Sol açık / çizgi kırıcı: Büyük maç rotasyonunu besleyecek ve kanat derinliğini artıracak yaratıcı profil. Adaylar: KACPER SZYMON KOZLOWSKI, DORGELES NENE, BARIŞ ALPER YILMAZ
-- Bek / çift yönlü koridor: Koridor derinliğini artıracak, büyük maç baskısında rotasyon sağlayacak çift yönlü bek. Adaylar: YHOAN MANY ANDZOUANA, ROLAND SALLAI, RUAN PEREIRA DUARTE
+- Bek / çift yönlü koridor: Koridor derinliğini artıracak, büyük maç baskısında rotasyon sağlayacak çift yönlü bek. Adaylar: YHOAN MANY ANDZOUANA, ROLAND SALLAI, RIDVAN YILMAZ
 
 ## RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ
 
@@ -157,7 +157,7 @@
 - Zafiyet: kadro derinliği sınırlı
 - Scout ipucu: Kaliteli rotasyon: büyük maç baskısını karşılayacak kanat/bek derinliği
 - Sol açık / çizgi kırıcı: Büyük maç rotasyonunu besleyecek ve kanat derinliğini artıracak yaratıcı profil. Adaylar: KACPER SZYMON KOZLOWSKI, DORGELES NENE, BARIŞ ALPER YILMAZ
-- Bek / çift yönlü koridor: Koridor derinliğini artıracak, büyük maç baskısında rotasyon sağlayacak çift yönlü bek. Adaylar: YHOAN MANY ANDZOUANA, ROLAND SALLAI, RUAN PEREIRA DUARTE
+- Bek / çift yönlü koridor: Koridor derinliğini artıracak, büyük maç baskısında rotasyon sağlayacak çift yönlü bek. Adaylar: YHOAN MANY ANDZOUANA, ROLAND SALLAI, RIDVAN YILMAZ
 
 ## FENERBAHÇE A.Ş.
 
@@ -165,7 +165,7 @@
 - Zafiyet: kadro derinliği sınırlı
 - Scout ipucu: Kaliteli rotasyon: büyük maç baskısını karşılayacak kanat/bek derinliği
 - Sol açık / çizgi kırıcı: Büyük maç rotasyonunu besleyecek ve kanat derinliğini artıracak yaratıcı profil. Adaylar: KACPER SZYMON KOZLOWSKI, BARIŞ ALPER YILMAZ, ERNEST MUÇİ
-- Bek / çift yönlü koridor: Koridor derinliğini artıracak, büyük maç baskısında rotasyon sağlayacak çift yönlü bek. Adaylar: YHOAN MANY ANDZOUANA, ROLAND SALLAI, RUAN PEREIRA DUARTE
+- Bek / çift yönlü koridor: Koridor derinliğini artıracak, büyük maç baskısında rotasyon sağlayacak çift yönlü bek. Adaylar: YHOAN MANY ANDZOUANA, ROLAND SALLAI, RIDVAN YILMAZ
 
 ## GALATASARAY A.Ş.
 
@@ -173,4 +173,4 @@
 - Zafiyet: kadro derinliği sınırlı
 - Scout ipucu: Kaliteli rotasyon: büyük maç baskısını karşılayacak kanat/bek derinliği
 - Sol açık / çizgi kırıcı: Büyük maç rotasyonunu besleyecek ve kanat derinliğini artıracak yaratıcı profil. Adaylar: KACPER SZYMON KOZLOWSKI, DORGELES NENE, ERNEST MUÇİ
-- Bek / çift yönlü koridor: Koridor derinliğini artıracak, büyük maç baskısında rotasyon sağlayacak çift yönlü bek. Adaylar: YHOAN MANY ANDZOUANA, RUAN PEREIRA DUARTE, RIDVAN YILMAZ
+- Bek / çift yönlü koridor: Koridor derinliğini artıracak, büyük maç baskısında rotasyon sağlayacak çift yönlü bek. Adaylar: YHOAN MANY ANDZOUANA, RIDVAN YILMAZ, ARDA OKAN KURTULAN
