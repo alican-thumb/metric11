@@ -2,7 +2,7 @@
 
 - Takım filtresi: Yok
 - Profil sayısı: 499
-- Hata sayısı: 1
+- Hata sayısı: 0
 - Ortalama yaş: 25.8
 - Ortalama kalan sözleşme ayı: 20.1
 - 23 yaş ve altı oyuncu: 172
