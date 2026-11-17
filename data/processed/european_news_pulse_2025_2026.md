@@ -1,22 +1,27 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-11-16T21:58:40.732732+00:00
-Toplam ilgili haber: 62
+Üretim zamanı: 2026-11-17T04:30:09.852193+00:00
+Toplam ilgili haber: 68
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [A Milli Futbol Takımı, Uluslar Ligi'nde küme düştü](https://www.cnnturk.com/spor/futbol/a-milli-futbol-takimi-uluslar-liginde-kume-dustu-3494109) — CNN Türk Spor · 2026-11-17T07:09:38+00:00 · turnuva=— · kulüp=—
+- [UEFA Uluslar Ligi'nin 6. haftasına 10 maçla devam edildi](https://www.aa.com.tr/tr/spor/uefa-uluslar-liginin-6-haftasina-10-macla-devam-edildi/4127188) — Anadolu Ajansı Spor · 2026-11-17T02:28:25+03:00 · turnuva=— · kulüp=—
+- [A Milli Futbol Takımı, UEFA Uluslar B Ligi'ne düştü](https://www.aa.com.tr/tr/spor/a-milli-futbol-takimi-uefa-uluslar-b-ligine-dustu/4127184) — Anadolu Ajansı Spor · 2026-11-17T02:26:53+03:00 · turnuva=— · kulüp=—
+- [İşte UEFA Uluslar Ligi'nde gecenin sonuçları...](https://www.aksam.com.tr/spor/iste-uefa-uluslar-liginde-gecenin-sonuclari/haber-1715146) — Aksam Spor · 2026-11-17T01:39:00+03:00 · turnuva=— · kulüp=—
+- [Puansız veda! Bizim Çocuklar, B Ligi'ne düştü](https://www.aksam.com.tr/spor/puansiz-veda-bizim-cocuklar-b-ligine-dustu/haber-1715139) — Aksam Spor · 2026-11-17T00:38:00+03:00 · turnuva=— · kulüp=—
 - [YUNANİSTAN- SIRBİSTAN MAÇI HANGİ KANALDA? Yunanistan-Sırbistan maçı ne zaman, saat kaçta? Milli takım için kritik karşılaşma!](https://www.cnnturk.com/spor/futbol/yunanistan-sirbistan-maci-hangi-kanalda-yunanistan-sirbistan-maci-ne-zaman-saat-kacta-milli-takim-icin-kritik-karsilasma-3493907) — CNN Türk Spor · 2026-11-16T22:22:32+00:00 · turnuva=— · kulüp=—
 - [YUNANİSTAN - SIRBİSTAN MAÇI CANLI İZLE ŞİFRESİZ| Yunanistan Sırbistan Maçı Nereden İzlenir, Şifresiz Mi?](https://www.cnnturk.com/spor/futbol/yunanistan-sirbistan-maci-canli-izle-sifresiz-yunanistan-sirbistan-maci-nereden-izlenir-sifresiz-mi-3494032) — CNN Türk Spor · 2026-11-16T22:22:06+00:00 · turnuva=— · kulüp=—
-- [UEFA Uluslar Ligi maçı: İsviçre - İskoçya | CANLI İZLE](https://www.takvim.com.tr/uluslar-ligi/2026/11/16/isvicre-iskocya-uefa-uluslar-ligi-maci) — Takvim Spor · 2026-11-16T22:02:10+03:00 · turnuva=— · kulüp=—
-- [UEFA Uluslar Ligi maçı: Almanya - Hollanda | CANLI İZLE](https://www.takvim.com.tr/uluslar-ligi/2026/11/16/almanya-hollanda-uefa-uluslar-ligi-maci) — Takvim Spor · 2026-11-16T21:48:32+03:00 · turnuva=— · kulüp=—
-- [UEFA Uluslar Ligi maçı: Yunanistan - Sırbistan | CANLI YAYIN](https://www.takvim.com.tr/uluslar-ligi/2026/11/16/yunanistan-sirbistan-uefa-uluslar-ligi-maci) — Takvim Spor · 2026-11-16T21:41:31+03:00 · turnuva=— · kulüp=—
-- [UEFA'dan Halil Umut Meler'e Uluslar Ligi'nde görev](https://www.aksam.com.tr/spor/uefadan-halil-umut-melere-uluslar-liginde-gorev1/haber-1715114) — Aksam Spor · 2026-11-16T21:23:00+03:00 · turnuva=— · kulüp=—
+- [İsviçre - İskoçya maç sonucu: Ev sahibi 4-0 kazandı! Uluslar Ligi'nde grubu lider bitirdi](https://www.takvim.com.tr/uluslar-ligi/2026/11/16/isvicre-iskocya-uefa-uluslar-ligi-maci) — Takvim Spor · 2026-11-16T22:02:10+03:00 · turnuva=— · kulüp=—
+- [A Milli Takım, B Ligi'ne düştü!](https://www.haberturk.com/spor/a-milli-takim-b-ligi-ne-dustu-3927822) — Haberturk Spor · 2026-11-16T21:53:07+00:00 · turnuva=— · kulüp=—
+- [Panzerler gol oldu yağdı! Almanya Hollanda'yı 5-0 yendi](https://www.takvim.com.tr/uluslar-ligi/2026/11/16/almanya-hollanda-uefa-uluslar-ligi-maci) — Takvim Spor · 2026-11-16T21:48:32+03:00 · turnuva=— · kulüp=—
+- [Yunanistan sahasında ağırladığı Sırbistan'ı 1-0 mağlup ederek puanını 11'e çıkardı](https://www.takvim.com.tr/uluslar-ligi/2026/11/16/yunanistan-sirbistan-uefa-uluslar-ligi-maci) — Takvim Spor · 2026-11-16T21:41:31+03:00 · turnuva=— · kulüp=—
 - [Halil Umut Meler, UEFA Uluslar Ligi maçına atandı](https://www.cnnturk.com/spor/futbol/halil-umut-meler-uefa-uluslar-ligi-macina-atandi-3494074) — CNN Türk Spor · 2026-11-16T20:42:26+00:00 · turnuva=— · kulüp=—
 - [UEFA, FIFA Başkanlığı için Gianni Infantino'ya rakip aday çıkardı!](https://www.sabah.com.tr/spor/futbol/2026/11/16/uefa-fifa-baskanligi-icin-gianni-infantinoya-rakip-aday-cikardi) — Sabah Spor · 2026-11-16T20:22:43+03:00 · turnuva=— · kulüp=—
-- [A Haber Canlı İzle | Uluslar Ligi’nde Almanya - Hollanda maçı!](https://www.sabah.com.tr/spor/futbol/2026/11/16/a-haber-canli-izle-uluslar-liginde-almanya-hollanda-maci-ne-zaman-saat-kacta-sifresiz-izle) — Sabah Spor · 2026-11-16T18:57:08+03:00 · turnuva=— · kulüp=—
-- [A Spor Canlı İzle | Uluslar Ligi’nde Yunanistan - Sırbistan maçı!](https://www.sabah.com.tr/spor/futbol/2026/11/16/a-spor-canli-izle-uluslar-liginde-yunanistan-sirbistan-maci-ne-zaman-saat-kacta-sifresiz-izle) — Sabah Spor · 2026-11-16T18:54:10+03:00 · turnuva=— · kulüp=—
-- [A Para Canlı İzle | Uluslar Ligi’nde İsviçre - İskoçya maçı!](https://www.sabah.com.tr/spor/futbol/2026/11/16/a-para-canli-izle-uluslar-liginde-isvicre-iskocya-maci-ne-zaman-saat-kacta-sifresiz-izle) — Sabah Spor · 2026-11-16T18:47:10+03:00 · turnuva=— · kulüp=—
+- [Maç Özeti İzle | Almanya, Hollanda karşısında şov yaptı! Liderlikle turladı](https://www.sabah.com.tr/spor/futbol/2026/11/16/mac-ozeti-izle-almanya-hollanda-karsisinda-sov-yapti-liderlikle-turladi) — Sabah Spor · 2026-11-16T18:57:08+03:00 · turnuva=— · kulüp=—
+- [Maç Özeti İzle | Yunanistan, Sırbistan engeline takılmadı! 11 puan yetmedi](https://www.sabah.com.tr/spor/futbol/2026/11/16/mac-ozeti-izle-yunanistan-sirbistan-engeline-takilmadi-11-puan-yetmedi) — Sabah Spor · 2026-11-16T18:54:10+03:00 · turnuva=— · kulüp=—
+- [Maç Özeti İzle | İsviçre, İskoçya karşısında güç gösterisi yaptı!](https://www.sabah.com.tr/spor/futbol/2026/11/16/mac-ozeti-izle-isvicre-iskocya-karsisinda-guc-gosterisi-yapti) — Sabah Spor · 2026-11-16T18:47:10+03:00 · turnuva=— · kulüp=—
 - [UEFA'dan Infantino'ya karşı aday!](https://www.haberturk.com/spor/uefa-gianni-infantino-ya-karsi-aday-cikardi-philippe-diallo-3927786) — Haberturk Spor · 2026-11-16T17:36:20+00:00 · turnuva=— · kulüp=—
 - [UEFA'dan Halil Umut Meler'e görev](https://www.haberturk.com/spor/halil-umut-meler-danimarka-norvec-macini-yonetecek-3927784) — Haberturk Spor · 2026-11-16T17:31:40+00:00 · turnuva=— · kulüp=—
 - [UEFA'dan Halil Umut Meler'e görev!](https://www.hurriyet.com.tr/sporarena/uefadan-halil-umut-melere-gorev-43380583) — Hürriyet Spor · 2026-11-16T17:24:45+00:00 · turnuva=— · kulüp=—
@@ -41,8 +46,3 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Fransa-Türkiye maçı sonrası Nihat Kahveci'den sert sözler: 'Emeği geçen herkesi tebrik ediyorum!'](https://www.hurriyet.com.tr/sporarena/fransa-turkiye-maci-sonrasi-nihat-kahveciden-sert-sozler-emegi-gecen-herkesi-tebrik-ediyorum-43379675) — Hürriyet Spor · 2026-11-16T06:44:52+00:00 · turnuva=— · kulüp=—
 - [Fransa-Türkiye maçını yazdı: Bu kadar oynanırdı! 'Şanssızlığı, çıkıntı sözleri'](https://www.hurriyet.com.tr/sporarena/fransa-turkiye-macini-yazdi-bu-kadar-oynanirdi-sanssizligi-cikinti-sozleri-43379614) — Hürriyet Spor · 2026-11-16T04:31:00+00:00 · turnuva=— · kulüp=—
 - [Türkiye A Ligi'nde nasıl kalır? Kritik ülke Sırbistan](https://www.takvim.com.tr/uluslar-ligi/2026/11/15/turkiye-a-liginde-nasil-kalir-kritik-ulke-sirbistan) — Takvim Spor · 2026-11-16T03:24:52+03:00 · turnuva=— · kulüp=—
-- [UEFA Uluslar Ligi'nin 6. haftası 8 maçla başladı](https://www.aa.com.tr/tr/spor/uefa-uluslar-liginin-6-haftasi-8-macla-basladi/4126067) — Anadolu Ajansı Spor · 2026-11-16T01:18:22+03:00 · turnuva=— · kulüp=—
-- [Türkiye, UEFA Uluslar Ligi'ni puansız tamamladı](https://www.aa.com.tr/tr/spor/turkiye-uefa-uluslar-ligini-puansiz-tamamladi/4126057) — Anadolu Ajansı Spor · 2026-11-16T00:39:22+03:00 · turnuva=— · kulüp=—
-- [Zinedine Zidane'dan Türkiye itirafı: 'Zor duruma düşürüldük!'](https://www.hurriyet.com.tr/sporarena/zinedine-zidanedan-turkiye-itirafi-zor-duruma-dusurulduk-43379599) — Hürriyet Spor · 2026-11-15T23:23:00+00:00 · turnuva=— · kulüp=—
-- ["Türkiye, bizi zor duruma düşürdü"](https://www.haberturk.com/spor/zinedine-zidane-turkiye-bizi-zor-duruma-dusurdu-3927562) — Haberturk Spor · 2026-11-15T23:01:37+00:00 · turnuva=— · kulüp=—
-- ["Son dakikaya kadar mücadele ettik"](https://www.haberturk.com/spor/merih-demiral-son-dakikaya-kadar-mucadele-ettik-3927561) — Haberturk Spor · 2026-11-15T22:49:52+00:00 · turnuva=— · kulüp=—
