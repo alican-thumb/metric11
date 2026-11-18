@@ -10,18 +10,18 @@
 | Bucket | Aday satırı | İsabet satırı | İsabetli maç | Maç hit rate | Satır hit rate |
 |---|---:|---:|---:|---:|---:|
 | top_3 | 90 | 20 | 17 | %56.7 | %22.2 |
-| top_5 | 150 | 26 | 21 | %70.0 | %17.3 |
+| top_5 | 150 | 28 | 21 | %70.0 | %18.7 |
 | top_8 | 240 | 32 | 23 | %76.7 | %13.3 |
-| top_10 | 298 | 37 | 24 | %80.0 | %12.4 |
+| top_10 | 298 | 36 | 24 | %80.0 | %12.1 |
 
 ## Segment Tablosu
 
 | Segment | Aday satırı | Maç | İsabet satırı | İsabetli maç | Maç hit rate | Satır hit rate | Top 5 maç hit rate | Ortalama sıra |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | unknown | 8 | 1 | 2 | 1 | %100.0 | %25.0 | %100.0 | 4.5 |
-| primary | 264 | 29 | 31 | 23 | %79.3 | %11.7 | %62.1 | 5.46 |
-| impact_sub | 160 | 29 | 23 | 18 | %62.1 | %14.4 | %51.7 | 4.49 |
-| set_piece_defender | 24 | 15 | 0 | 0 | %0.0 | %0.0 | %0.0 | 8.42 |
+| primary | 262 | 29 | 30 | 22 | %75.9 | %11.5 | %65.5 | 5.45 |
+| impact_sub | 162 | 29 | 23 | 18 | %62.1 | %14.2 | %51.7 | 4.56 |
+| set_piece_defender | 25 | 15 | 0 | 0 | %0.0 | %0.0 | %0.0 | 8.16 |
 
 ## Öncelikli Aksiyonlar
 
@@ -31,5 +31,4 @@
 
 ## Top 5 Zayıf Aday Kuyruğu
 
-- ISHOLA JUNIOR  OLAITAN | primary | top5=6 | satır=8 | isabet=0 | Top 5 sıralama etkisini düşür veya aday tipini yeniden kontrol et.
-- DAVID JURASEK | primary+impact_sub | top5=4 | satır=12 | isabet=0 | Top 5 sıralama etkisini düşür veya aday tipini yeniden kontrol et.
+- Top 5 içinde tekrar eden sıfır isabetli aday yok.
