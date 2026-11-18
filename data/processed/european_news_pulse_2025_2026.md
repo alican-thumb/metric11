@@ -1,14 +1,14 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-11-18T12:55:53.972634+00:00
-Toplam ilgili haber: 34
+Üretim zamanı: 2026-11-18T18:53:16.555218+00:00
+Toplam ilgili haber: 26
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [A Milli Futbol Takımı dünya sıralamasında geriledi!](https://www.sabah.com.tr/spor/futbol/2026/11/18/a-milli-futbol-takimi-dunya-siralamasinda-geriledi) — Sabah Spor · 2026-11-18T21:25:28+03:00 · turnuva=— · kulüp=—
+- [EURO 2028 ELEMELERİ KURA ÇEKİMİ NE ZAMAN, HANGİ TARİHTE? A Milli Takım'ın torbası ve muhtemel rakipleri belli oldu! 2028 AVRUPA FUTBOL ŞAMPİYONASI](https://www.cnnturk.com/spor/futbol/euro-2028-elemeleri-kura-cekimi-ne-zaman-hangi-tarihte-a-milli-takimin-torbasi-ve-muhtemel-rakipleri-belli-oldu-2028-avrupa-3494687) — CNN Türk Spor · 2026-11-18T16:02:24+00:00 · turnuva=— · kulüp=—
 - [SÜPER LİG 12. HAFTA MAÇ TAKVİMİ: Açılış Maçı Ne Zaman, Maç Kimin? Milli Ara Sonrası 12. Haftada Kimlerin Maçı Var?](https://www.cnnturk.com/spor/futbol/lig-12-hafta-mac-takvimi-super-lig-acilis-maci-ne-zaman-mac-kimin-milli-ara-sonrasi-12-haftada-kimlerin-maci-var-3494626) — CNN Türk Spor · 2026-11-18T14:38:50+00:00 · turnuva=— · kulüp=—
-- [2028 AVRUPA FUTBOL ŞAMPİYONASI | EURO 2028 Elemeleri kura çekimi ne zaman, hangi tarihte? A Milli Takım'ın torbası ve muhtemel rakipleri belli oldu!](https://www.cnnturk.com/spor/futbol/2028-avrupa-futbol-sampiyonasi-euro-2028-elemeleri-kura-cekimi-ne-zaman-hangi-tarihte-a-milli-takimin-torbasi-ve-muhtemel-3494687) — CNN Türk Spor · 2026-11-18T13:19:46+00:00 · turnuva=— · kulüp=—
-- [UEFA Uluslar Ligi’nde grup aşaması tamamlandı](https://www.sabah.com.tr/spor/futbol/2026/11/18/uefa-uluslar-liginde-grup-asamasi-tamamlandi) — Sabah Spor · 2026-11-18T10:56:24+03:00 · turnuva=— · kulüp=—
 - [Fenerbahçe Tarfin, Basketbol Avrupa Ligi'nde yarın Armani Olimpia Milan'a konuk olacak](https://www.aa.com.tr/tr/spor/fenerbahce-tarfin-basketbol-avrupa-liginde-yarin-armani-olimpia-milana-konuk-olacak/4128571) — Anadolu Ajansı Spor · 2026-11-18T09:57:58+03:00 · turnuva=EL · kulüp=Fenerbahçe
 - [SÜPER LİG NE ZAMAN BAŞLIYOR? Bu Hafta Hangi Maçlar Var? Milli Ara Sonrası 12. Hafta Heyecanı Başlıyor](https://www.cnnturk.com/spor/futbol/super-lig-ne-zaman-basliyor-bu-hafta-hangi-maclar-var-milli-ara-sonrasi-12-hafta-heyecani-basliyor-3493913) — CNN Türk Spor · 2026-11-18T09:12:59+00:00 · turnuva=— · kulüp=Galatasaray, Fenerbahçe, Beşiktaş, Trabzonspor
 - [TÜRKİYE KÜME Mİ DÜŞTÜ? A Milli Takım Uluslar Ligi'nde B Grubuna Mı Düştü, Elendi Mi? Yunanistan Sırbistan Maçı Sonrası A Milli Takım Play Off Oynayacak Mı?](https://www.cnnturk.com/spor/futbol/turkiye-uluslar-liginden-elendi-mi-a-milli-takim-b-grubuna-mi-dustu-fransa-maci-sonrasi-a-milli-takim-play-off-mu-oynayacak-3493772) — CNN Türk Spor · 2026-11-18T09:12:01+00:00 · turnuva=— · kulüp=—
@@ -17,7 +17,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [UEFA Uluslar Ligi'nde tur atlayan ülkeler belli oldu](https://www.cnnturk.com/spor/futbol/uefa-uluslar-liginde-tur-atlayan-ulkeler-belli-oldu-3494569) — CNN Türk Spor · 2026-11-18T07:15:00+00:00 · turnuva=— · kulüp=—
 - [Galatasaray'da Roland Sallai endişesi! Milli takımda sakatlandı](https://www.takvim.com.tr/spor/galatasaray/2026/11/17/galatasarayda-roland-sallai-endisesi-milli-takimda-sakatlandi) — Takvim Spor · 2026-11-17T23:38:29+03:00 · turnuva=— · kulüp=Galatasaray
 - [Galler - Portekiz maçı hangi kanalda? Galler Portekiz maçı saat kaçta, nereden izlenir?](https://www.cnnturk.com/spor/futbol/galler-portekiz-maci-hangi-kanalda-galler-portekiz-maci-saat-kacta-nereden-izlenir-3494511) — CNN Türk Spor · 2026-11-17T22:52:53+00:00 · turnuva=— · kulüp=—
-- [Roland Sallai'den kötü haber!](https://www.haberturk.com/spor/roland-sallai-den-galatasaray-a-kotu-haber-macaristan-milli-takimi-nda-sakatlandi-3928079) — Haberturk Spor · 2026-11-17T22:06:14+00:00 · turnuva=— · kulüp=Galatasaray
 - [Ümit Milli Takım Çekya duvarına takıldı! Avrupa Şampiyonası hayalleri suya düştü](https://www.takvim.com.tr/spor/2026/11/17/cekya-turkiye-u21-maci) — Takvim Spor · 2026-11-17T21:29:17+03:00 · turnuva=— · kulüp=—
 - [Ümit Milliler, 2027 Avrupa Şampiyonası finallerine katılamadı!](https://www.hurriyet.com.tr/sporarena/umit-milliler-2027-avrupa-sampiyonasi-finallerine-katilamadi-43381777) — Hürriyet Spor · 2026-11-17T19:03:30+00:00 · turnuva=— · kulüp=—
 - [Süper Lig'in yıldızı sahnede! Polonya ile İsveç 1-1 berabere kaldı](https://www.takvim.com.tr/uluslar-ligi/2026/11/17/polonya-isvec-uluslar-ligi-maci) — Takvim Spor · 2026-11-17T18:50:44+03:00 · turnuva=— · kulüp=—
@@ -26,17 +25,10 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Türkiye 11-2 Lihtenştayn maç özeti (UEFA Avrupa U19 Şampiyonası)](https://www.hurriyet.com.tr/sporarena/turkiye-11-2-lihtenstayn-mac-ozeti-uefa-avrupa-u19-sampiyonasi-43381586) — Hürriyet Spor · 2026-11-17T14:40:02+00:00 · turnuva=— · kulüp=—
 - [GÜNÜN MAÇLARI 17 KASIM 2026: Bugünkü Maçlar Neler? Bugün Kimlerin Maçı Var? 17 Kasım Salı Günün Maçları](https://www.cnnturk.com/spor/gunun-maclari-17-kasim-2026-bugunku-maclar-neler-bugun-kimlerin-maci-var-17-kasim-sali-gunun-maclari-3494363) — CNN Türk Spor · 2026-11-17T14:00:17+00:00 · turnuva=— · kulüp=—
 - [Aston Villa maçı öncesi UEFA'ya başvuru! Galatasaray'da zemin yoğun çalışma sürüyor](https://www.hurriyet.com.tr/sporarena/aston-villa-maci-oncesi-uefaya-basvuru-galatasarayda-zemin-yogun-calisma-suruyor-43381434) — Hürriyet Spor · 2026-11-17T12:28:00+00:00 · turnuva=— · kulüp=Galatasaray
-- [Beşiktaş Erkek Basketbol Takımı, Avrupa Ligi'nde bugün Real Madrid'i ağırlayacak](https://www.aa.com.tr/tr/spor/besiktas-erkek-basketbol-takimi-avrupa-liginde-bugun-real-madridi-agirlayacak/4127347) — Anadolu Ajansı Spor · 2026-11-17T10:39:33+03:00 · turnuva=EL · kulüp=Beşiktaş
 - ["Türk dehası"](https://www.haberturk.com/spor/foto/ispanya-da-gundem-arda-guler-turk-dehasi-3927877) — Haberturk Spor · 2026-11-17T07:21:45+00:00 · turnuva=— · kulüp=—
-- [UEFA Uluslar Ligi'nin 6. haftasına 10 maçla devam edildi](https://www.aa.com.tr/tr/spor/uefa-uluslar-liginin-6-haftasina-10-macla-devam-edildi/4127188) — Anadolu Ajansı Spor · 2026-11-17T02:28:25+03:00 · turnuva=— · kulüp=—
-- [A Milli Futbol Takımı, UEFA Uluslar B Ligi'ne düştü](https://www.aa.com.tr/tr/spor/a-milli-futbol-takimi-uefa-uluslar-b-ligine-dustu/4127184) — Anadolu Ajansı Spor · 2026-11-17T02:26:53+03:00 · turnuva=— · kulüp=—
 - [İsviçre - İskoçya maç sonucu: Ev sahibi 4-0 kazandı! Uluslar Ligi'nde grubu lider bitirdi](https://www.takvim.com.tr/uluslar-ligi/2026/11/16/isvicre-iskocya-uefa-uluslar-ligi-maci) — Takvim Spor · 2026-11-16T22:02:10+03:00 · turnuva=— · kulüp=—
 - [Panzerler gol oldu yağdı! Almanya Hollanda'yı 5-0 yendi](https://www.takvim.com.tr/uluslar-ligi/2026/11/16/almanya-hollanda-uefa-uluslar-ligi-maci) — Takvim Spor · 2026-11-16T21:48:32+03:00 · turnuva=— · kulüp=—
 - [Yunanistan sahasında ağırladığı Sırbistan'ı 1-0 mağlup ederek puanını 11'e çıkardı](https://www.takvim.com.tr/uluslar-ligi/2026/11/16/yunanistan-sirbistan-uefa-uluslar-ligi-maci) — Takvim Spor · 2026-11-16T21:41:31+03:00 · turnuva=— · kulüp=—
 - [Beşiktaş'ta transfer Galatasaray'a bağlı! Italiano'nun raporu hazır](https://www.takvim.com.tr/spor/besiktas/2026/11/16/besiktasta-transfer-plani-galatasaray-derbisine-bagli) — Takvim Spor · 2026-11-16T16:45:49+03:00 · turnuva=EL · kulüp=Galatasaray, Beşiktaş
 - [Spor yazarlarından 4 yıldıza eleştiri: "Çok etkisizlerdi"](https://www.takvim.com.tr/spor/2026/11/16/spor-yazarlari-fransa-turkiye-macini-yorumladi) — Takvim Spor · 2026-11-16T09:10:36+03:00 · turnuva=— · kulüp=—
-- [Kırmızı Şeytanlar çeyrek finalde! Belçika İtalya'yı 4-1 yendi](https://www.takvim.com.tr/uluslar-ligi/2026/11/15/belcika-italya-uluslar-ligi-maci) — Takvim Spor · 2026-11-15T13:26:07+03:00 · turnuva=— · kulüp=—
-- [Hırvatistan 3 puanla kapattı! Çekya yine kazanamadı](https://www.takvim.com.tr/uluslar-ligi/2026/11/15/hirvatistan-cekya-uluslar-ligi-maci) — Takvim Spor · 2026-11-15T12:51:17+03:00 · turnuva=— · kulüp=—
-- [10 kişiyle tarihi zafer! İngiltere İspanya'yı 3-2 yendi](https://www.takvim.com.tr/uluslar-ligi/2026/11/15/ispanya-ingiltere-uluslar-ligi-maci) — Takvim Spor · 2026-11-15T12:06:12+03:00 · turnuva=— · kulüp=—
-- [Uluslar Ligi'nde 0 çektik! Türkiye Fransa'ya 2-1 yenildi](https://www.takvim.com.tr/uluslar-ligi/2026/11/15/fransa-turkiye-uluslar-ligi-maci) — Takvim Spor · 2026-11-15T09:40:05+03:00 · turnuva=— · kulüp=—
 - [Miguel Cardoso ve Elisha Owusu ile resmî sözleşme imzaladık.](https://erzurumsporfk.org/2026/08/19/miguel-cardoso-ve-elisha-owusu-ile-resmi-sozlesme-imzaladik/) — Erzurumspor FK Resmi Web · 2026-08-19T20:45:50+03:00 · turnuva=EL · kulüp=Kayserispor
