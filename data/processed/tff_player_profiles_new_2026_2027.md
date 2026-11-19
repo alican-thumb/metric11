@@ -10,10 +10,9 @@
 
 ## Genç Oyuncular
 
-- MUSTAFA KUZEY AKÇAY (TRABZONSPOR A.Ş.): yaş=16, sözleşme bitiş=Yok
+- MUSTAFA KUZEY AKÇAY (TRABZONSPOR A.Ş.): yaş=16, sözleşme bitiş=2029-06-30
 - AHMET EREN SIRMA (GAZİANTEP FUTBOL KULÜBÜ A.Ş.): yaş=17, sözleşme bitiş=Yok
 - ATA YANIK (TÜMOSAN KONYASPOR): yaş=17, sözleşme bitiş=2028-06-30
-- DENİZ CEYLAN (KOCAELİSPOR): yaş=17, sözleşme bitiş=Yok
 - FURKAN AYAZ ÖZCAN (GENÇLERBİRLİĞİ): yaş=17, sözleşme bitiş=2028-06-30
 - MEHMET ALİ GENÇ (GAZİANTEP FUTBOL KULÜBÜ A.Ş.): yaş=17, sözleşme bitiş=Yok
 - MUSTAFA COŞKUN TOSUN (ÇAYKUR RİZESPOR A.Ş.): yaş=17, sözleşme bitiş=2029-06-30
@@ -22,6 +21,7 @@
 - ALİ OSMAN KALIN (GAZİANTEP FUTBOL KULÜBÜ A.Ş.): yaş=18, sözleşme bitiş=2027-06-30
 - BİLAL SARI (GENÇLERBİRLİĞİ): yaş=18, sözleşme bitiş=Yok
 - CEMİLHAN ASLAN (GAZİANTEP FUTBOL KULÜBÜ A.Ş.): yaş=18, sözleşme bitiş=2027-06-30
+- DENİZ CEYLAN (KOCAELİSPOR): yaş=18, sözleşme bitiş=Yok
 - EFE YİĞİT ÜSTÜN (SAMSUNSPOR A.Ş.): yaş=18, sözleşme bitiş=2028-06-30
 - ERK ARDA ASLAN (GENÇLERBİRLİĞİ): yaş=18, sözleşme bitiş=Yok
 - EYMEN KARATAŞ (CORENDON ALANYASPOR): yaş=18, sözleşme bitiş=Yok
