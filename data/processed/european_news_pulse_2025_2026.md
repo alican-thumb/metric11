@@ -1,16 +1,14 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-11-19T20:30:51.199340+00:00
-Toplam ilgili haber: 13
+Üretim zamanı: 2026-11-20T00:38:06.303067+00:00
+Toplam ilgili haber: 11
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
-- [Hırvatistan Federasyonu ve UEFA temsilcilerinden Beşiktaş'a ziyaret](https://www.aksam.com.tr/spor/hirvatistan-federasyonu-ve-uefa-temsilcilerinden-besiktasa-ziyaret/haber-1715858) — Aksam Spor · 2026-11-19T18:04:00+03:00 · turnuva=— · kulüp=Beşiktaş
-- [Beşiktaş'a UEFA ve Hırvatistan Futbol Federasyonu'ndan ziyaret!](https://www.sabah.com.tr/spor/futbol/2026/11/19/besiktasa-uefa-ve-hirvatistan-futbol-federasyonundan-ziyaret) — Sabah Spor · 2026-11-19T17:21:09+03:00 · turnuva=— · kulüp=Beşiktaş
 - [SÜPER LİG NE ZAMAN BAŞLIYOR? Bu Hafta Hangi Maçlar Var? Milli Ara Sonrası 12. Hafta Heyecanı Başlıyor](https://www.cnnturk.com/spor/futbol/super-lig-ne-zaman-basliyor-bu-hafta-hangi-maclar-var-milli-ara-sonrasi-12-hafta-heyecani-basliyor-3493913) — CNN Türk Spor · 2026-11-19T14:38:47+00:00 · turnuva=— · kulüp=Galatasaray, Fenerbahçe, Beşiktaş, Trabzonspor
 - [SÜPER LİG 12. HAFTA MAÇ TAKVİMİ: Açılış Maçı Ne Zaman, Maç Kimin? Milli Ara Sonrası 12. Haftada Kimlerin Maçı Var?](https://www.cnnturk.com/spor/futbol/lig-12-hafta-mac-takvimi-super-lig-acilis-maci-ne-zaman-mac-kimin-milli-ara-sonrasi-12-haftada-kimlerin-maci-var-3494626) — CNN Türk Spor · 2026-11-19T14:38:06+00:00 · turnuva=— · kulüp=—
-- [Beşiktaş Fuzul, Basketbol Avrupa Ligi'nde yarın Partizan deplasmanında](https://www.aa.com.tr/tr/spor/besiktas-fuzul-basketbol-avrupa-liginde-yarin-partizan-deplasmaninda/4130022) — Anadolu Ajansı Spor · 2026-11-19T09:54:46+03:00 · turnuva=EL · kulüp=Beşiktaş
+- [Beşiktaş Fuzul, Basketbol Avrupa Ligi'nde bugün Partizan deplasmanında](https://www.aa.com.tr/tr/spor/besiktas-fuzul-basketbol-avrupa-liginde-bugun-partizan-deplasmaninda/4130022) — Anadolu Ajansı Spor · 2026-11-19T09:54:46+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Acun Ilıcalı: Süper Lig'i de alabilirim](https://www.cnnturk.com/spor/futbol/acun-ilicali-super-ligi-de-alabilirim-3495137) — CNN Türk Spor · 2026-11-19T07:44:28+00:00 · turnuva=— · kulüp=—
 - [Acun Ilıcalı: 'Süper Lig'e talip olabilirim'](https://www.hurriyet.com.tr/sporarena/acun-ilicali-super-lige-talip-olabilirim-43383165) — Hürriyet Spor · 2026-11-19T04:00:00+00:00 · turnuva=— · kulüp=—
 - [Galatasaray MCT Technic 88-81 Legia Varşova (Basketbol Şampiyonlar Ligi)](https://www.hurriyet.com.tr/sporarena/galatasaray-mct-technic-88-81-legia-varsova-basketbol-sampiyonlar-ligi-43383089) — Hürriyet Spor · 2026-11-18T19:45:00+00:00 · turnuva=CL · kulüp=Galatasaray
