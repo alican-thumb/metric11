@@ -4,12 +4,12 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 
 ## Genel Karne
 
-- Değerlendirilen maç: **99**
-- İsabet: **48/99** (%48)
-- Beraberlik yakalama: **3/16** (%19)
-- Yüksek güvenli maç isabeti: **27/40** (%68)
-- Brier score: **0.594** (düşük daha iyi; 2025-26 referans 0.600)
-- Log loss: **0.994** (düşük daha iyi; 2025-26 referans 1.005)
+- Değerlendirilen maç: **103**
+- İsabet: **49/103** (%48)
+- Beraberlik yakalama: **3/17** (%18)
+- Yüksek güvenli maç isabeti: **28/42** (%67)
+- Brier score: **0.599** (düşük daha iyi; 2025-26 referans 0.600)
+- Log loss: **1.004** (düşük daha iyi; 2025-26 referans 1.005)
 
 ### Güven bandı kalibrasyonu
 
@@ -17,9 +17,9 @@ _"Beyan edilen ort. olasılık" ile "İsabet" arasındaki fark büyükse (özell
 
 | Güven bandı | Maç | İsabet | Beyan edilen ort. olasılık | Brier | Log loss | Referans (2025-26: isabet / brier / logloss) |
 | --- | --- | --- | --- | --- | --- | --- |
-| HIGH | 40 | 27/40 (%68) | %61 | 0.470 | 0.821 | %64 / 0.516 / 0.885 |
-| MEDIUM | 30 | 9/30 (%30) | %46 | 0.701 | 1.140 | %54 / 0.619 / 1.032 |
-| LOW | 29 | 12/29 (%41) | %37 | 0.654 | 1.082 | %48 / 0.670 / 1.103 |
+| HIGH | 42 | 28/42 (%67) | %61 | 0.484 | 0.847 | %64 / 0.516 / 0.885 |
+| MEDIUM | 31 | 9/31 (%29) | %46 | 0.705 | 1.145 | %54 / 0.619 / 1.032 |
+| LOW | 30 | 12/30 (%40) | %37 | 0.650 | 1.076 | %48 / 0.670 / 1.103 |
 
 ### Seçilen tarafa göre isabet
 
@@ -27,11 +27,20 @@ _Model hangi tarafı seçtiğinde ne oldu? Belirli bir seçimde (ör. deplasman 
 
 | Seçim | Maç | İsabet | Gerçekleşen (Ev / X / Dep) |
 | --- | --- | --- | --- |
-| Ev | 52 | 29/52 (%56) | 29 / 7 / 16 |
-| Beraberlik | 12 | 3/12 (%25) | 5 / 3 / 4 |
-| Deplasman | 35 | 16/35 (%46) | 13 / 6 / 16 |
+| Ev | 54 | 30/54 (%56) | 30 / 7 / 17 |
+| Beraberlik | 13 | 3/13 (%23) | 6 / 3 / 4 |
+| Deplasman | 36 | 16/36 (%44) | 13 / 7 / 16 |
 
 [Olasılık kovaları ve seçici yayın politikası →](prediction_calibration_audit_2026_2027.html)
+
+## Hafta 12 — 1/4 isabet (%25)
+
+| Maç | Skor | Tahmin | Sonuç | Güven |
+| --- | --- | --- | --- | --- |
+| GENÇLERBİRLİĞİ - GAZİANTEP FUTBOL KULÜBÜ A.Ş. | 1 - 0 | Beraberlik | ❌ | LOW |
+| AMED SPORTİF FAALİYETLER - ÇAYKUR RİZESPOR A.Ş. | 0 - 2 | Ev | ❌ | HIGH |
+| GALATASARAY A.Ş. - SAMSUNSPOR A.Ş. | 2 - 1 | Ev | ✅ | HIGH |
+| KOCAELİSPOR - FENERBAHÇE A.Ş. | 2 - 2 | Deplasman | ❌ | MEDIUM |
 
 ## Hafta 11 — 4/9 isabet (%44)
 

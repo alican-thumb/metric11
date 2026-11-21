@@ -1,11 +1,12 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-11-21T19:10:15.006505+00:00
-Toplam ilgili haber: 5
+Üretim zamanı: 2026-11-21T23:12:03.106819+00:00
+Toplam ilgili haber: 6
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [Aston Villa, Galatasaray maçı öncesi ligde yara aldı](https://www.aksam.com.tr/spor/aston-villa-galatasaray-maci-oncesi-ligde-yara-aldi/haber-1716353) — Aksam Spor · 2026-11-21T23:59:00+03:00 · turnuva=CL · kulüp=Galatasaray
 - [Beşiktaş’ın yoğun maratonu Konya deplasmanıyla başlıyor](https://www.cnnturk.com/spor/futbol/besiktasin-yogun-maratonu-konya-deplasmaniyla-basliyor-3496102) — CNN Türk Spor · 2026-11-21T10:10:14+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [UEFA Uluslar Ligi'nde çeyrek final ve play-off eşleşmeleri belli oldu](https://www.aa.com.tr/tr/spor/uefa-uluslar-liginde-ceyrek-final-ve-play-off-eslesmeleri-belli-oldu/4132234) — Anadolu Ajansı Spor · 2026-11-20T16:37:42+03:00 · turnuva=— · kulüp=—
 - [Galatasaray'da ayrılık yakın! İşte yeni adresi](https://www.takvim.com.tr/spor/galatasaray/2026/11/20/galatasarayda-kaan-ayhan-icin-wolfsburg-iddiasi) — Takvim Spor · 2026-11-20T16:11:06+03:00 · turnuva=CL · kulüp=Galatasaray
