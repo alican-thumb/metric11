@@ -1,77 +1,77 @@
 {
-  "generated_at": "2026-11-21T19:10:06.125288",
+  "generated_at": "2026-11-22T06:40:18.803438",
   "season": "2026-2027",
-  "sample_size": 99,
+  "sample_size": 103,
   "diagnostic_only": true,
   "summary": {
-    "evaluated_matches": 99,
-    "correct": 48,
-    "accuracy": 0.4848,
-    "actual_draws": 16,
+    "evaluated_matches": 103,
+    "correct": 49,
+    "accuracy": 0.4757,
+    "actual_draws": 17,
     "draws_caught": 3,
-    "draw_recall": 0.1875,
-    "high_conf_matches": 40,
-    "high_conf_correct": 27,
-    "high_conf_accuracy": 0.675,
-    "brier_score": 0.5936,
-    "log_loss": 0.9942,
+    "draw_recall": 0.1765,
+    "high_conf_matches": 42,
+    "high_conf_correct": 28,
+    "high_conf_accuracy": 0.6667,
+    "brier_score": 0.5985,
+    "log_loss": 1.0035,
     "confidence_breakdown": {
       "HIGH": {
-        "matches": 40,
-        "correct": 27,
-        "accuracy": 0.675,
-        "avg_stated_probability": 0.6066,
-        "calibration_gap": 0.0684,
-        "brier_score": 0.4697,
-        "log_loss": 0.8208
+        "matches": 42,
+        "correct": 28,
+        "accuracy": 0.6667,
+        "avg_stated_probability": 0.6096,
+        "calibration_gap": 0.0571,
+        "brier_score": 0.4838,
+        "log_loss": 0.8474
       },
       "MEDIUM": {
-        "matches": 30,
+        "matches": 31,
         "correct": 9,
-        "accuracy": 0.3,
-        "avg_stated_probability": 0.4582,
-        "calibration_gap": -0.1582,
-        "brier_score": 0.7006,
-        "log_loss": 1.1403
+        "accuracy": 0.2903,
+        "avg_stated_probability": 0.4598,
+        "calibration_gap": -0.1695,
+        "brier_score": 0.7045,
+        "log_loss": 1.1446
       },
       "LOW": {
-        "matches": 29,
+        "matches": 30,
         "correct": 12,
-        "accuracy": 0.4138,
-        "avg_stated_probability": 0.3735,
-        "calibration_gap": 0.0403,
-        "brier_score": 0.6538,
-        "log_loss": 1.0822
+        "accuracy": 0.4,
+        "avg_stated_probability": 0.3713,
+        "calibration_gap": 0.0287,
+        "brier_score": 0.6497,
+        "log_loss": 1.0764
       }
     },
     "pick_side_breakdown": {
       "home": {
-        "matches": 52,
-        "correct": 29,
-        "accuracy": 0.5577,
+        "matches": 54,
+        "correct": 30,
+        "accuracy": 0.5556,
         "actual": {
-          "home": 29,
+          "home": 30,
           "draw": 7,
-          "away": 16
+          "away": 17
         }
       },
       "draw": {
-        "matches": 12,
+        "matches": 13,
         "correct": 3,
-        "accuracy": 0.25,
+        "accuracy": 0.2308,
         "actual": {
-          "home": 5,
+          "home": 6,
           "draw": 3,
           "away": 4
         }
       },
       "away": {
-        "matches": 35,
+        "matches": 36,
         "correct": 16,
-        "accuracy": 0.4571,
+        "accuracy": 0.4444,
         "actual": {
           "home": 13,
-          "draw": 6,
+          "draw": 7,
           "away": 16
         }
       }
@@ -112,14 +112,14 @@
     {
       "lower": 0.4,
       "upper": 0.45,
-      "matches": 24,
+      "matches": 25,
       "correct": 9,
-      "accuracy": 0.375,
-      "avg_top_probability": 0.4218,
-      "calibration_gap": -0.0468,
+      "accuracy": 0.36,
+      "avg_top_probability": 0.4211,
+      "calibration_gap": -0.0611,
       "accuracy_ci_95": [
-        0.2116,
-        0.5729
+        0.2025,
+        0.5548
       ]
     },
     {
@@ -138,137 +138,137 @@
     {
       "lower": 0.5,
       "upper": 0.6,
-      "matches": 23,
+      "matches": 24,
       "correct": 11,
-      "accuracy": 0.4783,
-      "avg_top_probability": 0.5555,
-      "calibration_gap": -0.0773,
+      "accuracy": 0.4583,
+      "avg_top_probability": 0.5535,
+      "calibration_gap": -0.0951,
       "accuracy_ci_95": [
-        0.2924,
-        0.6704
+        0.2789,
+        0.6493
       ]
     },
     {
       "lower": 0.6,
       "upper": 1.0,
-      "matches": 19,
-      "correct": 16,
-      "accuracy": 0.8421,
-      "avg_top_probability": 0.6588,
-      "calibration_gap": 0.1833,
+      "matches": 21,
+      "correct": 17,
+      "accuracy": 0.8095,
+      "avg_top_probability": 0.6599,
+      "calibration_gap": 0.1496,
       "accuracy_ci_95": [
-        0.6243,
-        0.9448
+        0.6,
+        0.9233
       ]
     }
   ],
   "selective_policies": [
     {
-      "matches": 87,
-      "correct": 44,
-      "accuracy": 0.5057,
-      "avg_top_probability": 0.5209,
-      "calibration_gap": -0.0152,
+      "matches": 91,
+      "correct": 45,
+      "accuracy": 0.4945,
+      "avg_top_probability": 0.5228,
+      "calibration_gap": -0.0283,
       "accuracy_ci_95": [
-        0.4027,
-        0.6083
+        0.3941,
+        0.5954
       ],
       "minimum_probability": 0.4,
-      "coverage": 0.8788
+      "coverage": 0.8835
     },
     {
-      "matches": 63,
-      "correct": 35,
-      "accuracy": 0.5556,
-      "avg_top_probability": 0.5587,
-      "calibration_gap": -0.0031,
+      "matches": 66,
+      "correct": 36,
+      "accuracy": 0.5455,
+      "avg_top_probability": 0.5613,
+      "calibration_gap": -0.0158,
       "accuracy_ci_95": [
-        0.4332,
-        0.6715
+        0.4261,
+        0.6598
       ],
       "minimum_probability": 0.45,
-      "coverage": 0.6364
+      "coverage": 0.6408
     },
     {
-      "matches": 42,
-      "correct": 27,
-      "accuracy": 0.6429,
-      "avg_top_probability": 0.6023,
-      "calibration_gap": 0.0406,
+      "matches": 45,
+      "correct": 28,
+      "accuracy": 0.6222,
+      "avg_top_probability": 0.6031,
+      "calibration_gap": 0.0191,
       "accuracy_ci_95": [
-        0.4917,
-        0.7701
+        0.4763,
+        0.7489
       ],
       "minimum_probability": 0.5,
-      "coverage": 0.4242
+      "coverage": 0.4369
     },
     {
-      "matches": 31,
-      "correct": 23,
-      "accuracy": 0.7419,
-      "avg_top_probability": 0.6268,
-      "calibration_gap": 0.1151,
+      "matches": 33,
+      "correct": 24,
+      "accuracy": 0.7273,
+      "avg_top_probability": 0.6294,
+      "calibration_gap": 0.0978,
       "accuracy_ci_95": [
-        0.5675,
-        0.863
+        0.5578,
+        0.8493
       ],
       "minimum_probability": 0.55,
-      "coverage": 0.3131
+      "coverage": 0.3204
     },
     {
-      "matches": 19,
-      "correct": 16,
-      "accuracy": 0.8421,
-      "avg_top_probability": 0.6588,
-      "calibration_gap": 0.1833,
+      "matches": 21,
+      "correct": 17,
+      "accuracy": 0.8095,
+      "avg_top_probability": 0.6599,
+      "calibration_gap": 0.1496,
       "accuracy_ci_95": [
-        0.6243,
-        0.9448
+        0.6,
+        0.9233
       ],
       "minimum_probability": 0.6,
-      "coverage": 0.1919
+      "coverage": 0.2039
     }
   ],
   "draw_thresholds": [
     {
       "minimum_draw_probability": 0.22,
-      "flagged_matches": 71,
-      "draw_hits": 11,
-      "precision": 0.1549,
-      "recall": 0.6875,
-      "f1": 0.2529
+      "flagged_matches": 74,
+      "draw_hits": 12,
+      "precision": 0.1622,
+      "recall": 0.7059,
+      "f1": 0.2637
     },
     {
       "minimum_draw_probability": 0.25,
-      "flagged_matches": 33,
-      "draw_hits": 7,
-      "precision": 0.2121,
-      "recall": 0.4375,
-      "f1": 0.2857
+      "flagged_matches": 35,
+      "draw_hits": 8,
+      "precision": 0.2286,
+      "recall": 0.4706,
+      "f1": 0.3077
     },
     {
       "minimum_draw_probability": 0.28,
-      "flagged_matches": 12,
+      "flagged_matches": 13,
       "draw_hits": 2,
-      "precision": 0.1667,
-      "recall": 0.125,
-      "f1": 0.1429
+      "precision": 0.1538,
+      "recall": 0.1176,
+      "f1": 0.1333
     },
     {
       "minimum_draw_probability": 0.3,
-      "flagged_matches": 8,
+      "flagged_matches": 9,
       "draw_hits": 1,
-      "precision": 0.125,
-      "recall": 0.0625,
-      "f1": 0.0833
+      "precision": 0.1111,
+      "recall": 0.0588,
+      "f1": 0.0769
     },
     {
       "minimum_draw_probability": 0.32,
       "flagged_matches": 5,
       "draw_hits": 1,
       "precision": 0.2,
-      "recall": 0.0625,
-      "f1": 0.0952
+      "recall": 0.0588,
+      "f1": 0.0909
     },
     {
       "minimum_draw_probability": 0.35,

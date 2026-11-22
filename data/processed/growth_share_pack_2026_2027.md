@@ -1,27 +1,27 @@
 # metric11 Haftalık Dağıtım Paketi
 
 - Hafta: 12
-- Üretim: 2026-11-21T19:10:13.861682+00:00
+- Üretim: 2026-11-22T06:40:26.327939+00:00
 - Yayın modu: Editör kontrolünden sonra manuel paylaşım
 
 ## Kazanırsa şampiyonluk ihtimali ne oluyor?
 
 ### X
-Süper Lig şampiyonluk yarışında yeni tablo: Trabzonspor %69, Amedspor %18. Sıradaki maçını kazanırsa %70, kaybederse %54. En büyük değişim: Galatasaray 42 puan düştü.
+Süper Lig şampiyonluk yarışında yeni tablo: Trabzonspor %77, Galatasaray %11. Sıradaki maçını kazanırsa %78, kaybederse %63. En büyük değişim: Trabzonspor 43 puan yükseldi.
 
 https://metric11.com/super-lig-sampiyonluk-senaryolari-2026-27.html?utm_source=x&utm_medium=social&utm_campaign=super_lig_week_12&utm_content=championship_race
 
 ### Telegram
 🏆 <b>Şampiyonluk yarışı güncellendi</b>
 
-Süper Lig şampiyonluk yarışında yeni tablo: Trabzonspor %69, Amedspor %18. Sıradaki maçını kazanırsa %70, kaybederse %54. En büyük değişim: Galatasaray 42 puan düştü.
+Süper Lig şampiyonluk yarışında yeni tablo: Trabzonspor %77, Galatasaray %11. Sıradaki maçını kazanırsa %78, kaybederse %63. En büyük değişim: Trabzonspor 43 puan yükseldi.
 
 Detaylı senaryolar: https://metric11.com/super-lig-sampiyonluk-senaryolari-2026-27.html?utm_source=telegram&utm_medium=social&utm_campaign=super_lig_week_12&utm_content=championship_race
 
 ### Instagram
 🏆 Şampiyonluk yarışı güncellendi
 
-Süper Lig şampiyonluk yarışında yeni tablo: Trabzonspor %69, Amedspor %18. Sıradaki maçını kazanırsa %70, kaybederse %54. En büyük değişim: Galatasaray 42 puan düştü.
+Süper Lig şampiyonluk yarışında yeni tablo: Trabzonspor %77, Galatasaray %11. Sıradaki maçını kazanırsa %78, kaybederse %63. En büyük değişim: Trabzonspor 43 puan yükseldi.
 
 Tüm senaryolar metric11.com'da.
 
@@ -51,20 +51,20 @@ Maç analizi: https://metric11.com/mac-tahmini-trabzonspor-eyupspor-2026-27.html
 ## Tahmin karnemiz açık
 
 ### X
-Model karnesini saklamıyoruz: 11. haftada 9 maçta 4 doğru tahmin, %44 isabet. Doğrular ve hatalar tek tek yayında.
+Model karnesini saklamıyoruz: 12. haftada 4 maçta 1 doğru tahmin, %25 isabet. Doğrular ve hatalar tek tek yayında.
 
 https://metric11.com/weekly_evaluation_2026_2027.html?utm_source=x&utm_medium=social&utm_campaign=super_lig_week_12&utm_content=scorecard
 
 ### Telegram
 📊 <b>Haftalık tahmin karnesi</b>
 
-Model karnesini saklamıyoruz: 11. haftada 9 maçta 4 doğru tahmin, %44 isabet. Doğrular ve hatalar tek tek yayında.
+Model karnesini saklamıyoruz: 12. haftada 4 maçta 1 doğru tahmin, %25 isabet. Doğrular ve hatalar tek tek yayında.
 
 Karne: https://metric11.com/weekly_evaluation_2026_2027.html?utm_source=telegram&utm_medium=social&utm_campaign=super_lig_week_12&utm_content=scorecard
 
 ### Instagram
 📊 Tahmin karnemiz açık
 
-Model karnesini saklamıyoruz: 11. haftada 9 maçta 4 doğru tahmin, %44 isabet. Doğrular ve hatalar tek tek yayında.
+Model karnesini saklamıyoruz: 12. haftada 4 maçta 1 doğru tahmin, %25 isabet. Doğrular ve hatalar tek tek yayında.
 
 #FutbolAnaliz #SüperLig #Veri
