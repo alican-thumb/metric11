@@ -1,18 +1,18 @@
 # Transfermarkt Oyuncu Eşleşme İnceleme Kuyruğu
 
-- TFF profil: 886
+- TFF profil: 888
 - Transfermarkt snapshot: 18/18 kulüp, 817 oyuncu
-- Snapshot kapsamındaki TFF profil: 593
-- Doğrulanmış snapshot eşleşmesi: 618
+- Snapshot kapsamındaki TFF profil: 594
+- Doğrulanmış snapshot eşleşmesi: 619
 - Manuel eşleme ile kullanılan profil: 4
 - Ağ teyidi bekleyen manuel eşleme: 4
-- Çözülmemiş profil: 264
-- Doğrulanmış genel eşleşme oranı: %69.8
-- Doğrulanmış snapshot içi eşleşme oranı: %92.1
-- Manuel eşleme dahil kullanılabilir snapshot içi kapsama: %92.7
+- Çözülmemiş profil: 265
+- Doğrulanmış genel eşleşme oranı: %69.7
+- Doğrulanmış snapshot içi eşleşme oranı: %91.9
+- Manuel eşleme dahil kullanılabilir snapshot içi kapsama: %92.6
 - Scout incelemesini bloke eden eşleşmeyen oyuncu: 0
-- Sınıf dağılımı: {'NO_RELIABLE_CANDIDATE_IN_SNAPSHOT': 41, 'SAME_CLUB_NAME_REVIEW': 1, 'POSSIBLE_TRANSFER_OR_CLUB_MISMATCH': 1, 'OUT_OF_SNAPSHOT_CLUB': 221}
-- Kullanım önceliği dağılımı: {'HIGH_USAGE_UNRESOLVED': 17, 'ROTATION_USAGE_UNRESOLVED': 9, 'OUT_OF_SNAPSHOT': 221, 'NO_MATCH_ACTIVITY': 17}
+- Sınıf dağılımı: {'NO_RELIABLE_CANDIDATE_IN_SNAPSHOT': 42, 'SAME_CLUB_NAME_REVIEW': 1, 'POSSIBLE_TRANSFER_OR_CLUB_MISMATCH': 1, 'OUT_OF_SNAPSHOT_CLUB': 221}
+- Kullanım önceliği dağılımı: {'HIGH_USAGE_UNRESOLVED': 17, 'ROTATION_USAGE_UNRESOLVED': 9, 'OUT_OF_SNAPSHOT': 221, 'NO_MATCH_ACTIVITY': 18}
 - Kural: Doğrulanmış kapsama yalnız snapshot eşleşmesi girer; manuel alias kullanımı ayrı izlenir ve ağ teyidi tamamlanana kadar doğrulanmış sayılmaz.
 
 ## Scout Bloke Eden Kuyruk
@@ -34,7 +34,7 @@
 | FENERBAHÇE A.Ş. | 45 | 50 | 38 | 0 | 7 | %84.4 | %84.4 |
 | GALATASARAY A.Ş. | 42 | 44 | 41 | 0 | 1 | %97.6 | %97.6 |
 | GAZİANTEP FUTBOL KULÜBÜ A.Ş. | 42 | 45 | 37 | 0 | 5 | %88.1 | %88.1 |
-| GENÇLERBİRLİĞİ | 41 | 48 | 40 | 0 | 1 | %97.6 | %97.6 |
+| GENÇLERBİRLİĞİ | 42 | 48 | 40 | 0 | 2 | %95.2 | %95.2 |
 | GÖZTEPE A.Ş. | 36 | 36 | 30 | 1 | 5 | %83.3 | %86.1 |
 | HESAP.COM ANTALYASPOR | 0 | 48 | 0 | 0 | 0 | %0 | %0 |
 | KASIMPAŞA A.Ş. | 39 | 60 | 36 | 0 | 3 | %92.3 | %92.3 |
@@ -252,6 +252,7 @@
 ### GENÇLERBİRLİĞİ
 
 - THALISSON KELVEN DA SILVA (GENÇLERBİRLİĞİ): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=28, gol=2, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
+- EMİR ARSLAN (GENÇLERBİRLİĞİ): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=NO_MATCH_ACTIVITY, ilk11=0, gol=0, scout_blok=False, aday=Erk Aslan (GENÇLERBİRLİĞİ, skor=0.8, ortak=-). Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 
 ### GÖZTEPE A.Ş.
 

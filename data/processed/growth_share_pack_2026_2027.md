@@ -1,7 +1,7 @@
 # metric11 Haftalık Dağıtım Paketi
 
 - Hafta: 12
-- Üretim: 2026-11-22T06:40:26.327939+00:00
+- Üretim: 2026-11-22T12:35:10.483830+00:00
 - Yayın modu: Editör kontrolünden sonra manuel paylaşım
 
 ## Kazanırsa şampiyonluk ihtimali ne oluyor?
