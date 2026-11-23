@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-11-23T07:28:43.874237",
+  "generated_at": "2026-11-23T10:44:42.534368",
   "season": "2026-2027",
   "summary": {
-    "evaluated_matches": 103,
-    "correct": 49,
-    "accuracy": 0.4757,
+    "evaluated_matches": 107,
+    "correct": 51,
+    "accuracy": 0.4766,
     "actual_draws": 17,
     "draws_caught": 3,
     "draw_recall": 0.1765,
-    "high_conf_matches": 42,
-    "high_conf_correct": 28,
-    "high_conf_accuracy": 0.6667,
-    "brier_score": 0.5985,
-    "log_loss": 1.0035,
+    "high_conf_matches": 44,
+    "high_conf_correct": 30,
+    "high_conf_accuracy": 0.6818,
+    "brier_score": 0.5902,
+    "log_loss": 0.9908,
     "confidence_breakdown": {
       "HIGH": {
-        "matches": 42,
-        "correct": 28,
-        "accuracy": 0.6667,
-        "avg_stated_probability": 0.6096,
-        "calibration_gap": 0.0571,
-        "brier_score": 0.4838,
-        "log_loss": 0.8474
+        "matches": 44,
+        "correct": 30,
+        "accuracy": 0.6818,
+        "avg_stated_probability": 0.6163,
+        "calibration_gap": 0.0655,
+        "brier_score": 0.4681,
+        "log_loss": 0.8229
       },
       "MEDIUM": {
         "matches": 31,
@@ -33,34 +33,34 @@
         "log_loss": 1.1446
       },
       "LOW": {
-        "matches": 30,
+        "matches": 32,
         "correct": 12,
-        "accuracy": 0.4,
-        "avg_stated_probability": 0.3713,
-        "calibration_gap": 0.0287,
-        "brier_score": 0.6497,
-        "log_loss": 1.0764
+        "accuracy": 0.375,
+        "avg_stated_probability": 0.3667,
+        "calibration_gap": 0.0083,
+        "brier_score": 0.6473,
+        "log_loss": 1.0725
       }
     },
     "pick_side_breakdown": {
       "home": {
-        "matches": 54,
-        "correct": 30,
-        "accuracy": 0.5556,
+        "matches": 56,
+        "correct": 32,
+        "accuracy": 0.5714,
         "actual": {
-          "home": 30,
+          "home": 32,
           "draw": 7,
           "away": 17
         }
       },
       "draw": {
-        "matches": 13,
+        "matches": 15,
         "correct": 3,
-        "accuracy": 0.2308,
+        "accuracy": 0.2,
         "actual": {
           "home": 6,
           "draw": 3,
-          "away": 4
+          "away": 6
         }
       },
       "away": {
@@ -79,26 +79,26 @@
   "last_week": {
     "week": 12,
     "summary": {
-      "evaluated_matches": 4,
-      "correct": 1,
-      "accuracy": 0.25,
+      "evaluated_matches": 8,
+      "correct": 3,
+      "accuracy": 0.375,
       "actual_draws": 1,
       "draws_caught": 0,
       "draw_recall": 0.0,
-      "high_conf_matches": 2,
-      "high_conf_correct": 1,
-      "high_conf_accuracy": 0.5,
-      "brier_score": 0.7213,
-      "log_loss": 1.2357,
+      "high_conf_matches": 4,
+      "high_conf_correct": 3,
+      "high_conf_accuracy": 0.75,
+      "brier_score": 0.5483,
+      "log_loss": 0.9485,
       "confidence_breakdown": {
         "HIGH": {
-          "matches": 2,
-          "correct": 1,
-          "accuracy": 0.5,
-          "avg_stated_probability": 0.67,
-          "calibration_gap": -0.17,
-          "brier_score": 0.7652,
-          "log_loss": 1.3799
+          "matches": 4,
+          "correct": 3,
+          "accuracy": 0.75,
+          "avg_stated_probability": 0.7135,
+          "calibration_gap": 0.0365,
+          "brier_score": 0.4524,
+          "log_loss": 0.8438
         },
         "MEDIUM": {
           "matches": 1,
@@ -110,34 +110,34 @@
           "log_loss": 1.2765
         },
         "LOW": {
-          "matches": 1,
+          "matches": 3,
           "correct": 0,
           "accuracy": 0.0,
-          "avg_stated_probability": 0.308,
-          "calibration_gap": -0.308,
-          "brier_score": 0.533,
-          "log_loss": 0.9063
+          "avg_stated_probability": 0.3007,
+          "calibration_gap": -0.3007,
+          "brier_score": 0.5851,
+          "log_loss": 0.9786
         }
       },
       "pick_side_breakdown": {
         "home": {
-          "matches": 2,
-          "correct": 1,
-          "accuracy": 0.5,
+          "matches": 4,
+          "correct": 3,
+          "accuracy": 0.75,
           "actual": {
-            "home": 1,
+            "home": 3,
             "draw": 0,
             "away": 1
           }
         },
         "draw": {
-          "matches": 1,
+          "matches": 3,
           "correct": 0,
           "accuracy": 0.0,
           "actual": {
             "home": 1,
             "draw": 0,
-            "away": 0
+            "away": 2
           }
         },
         "away": {
@@ -216,6 +216,70 @@
         "home_win_probability": 0.214,
         "draw_probability": 0.279,
         "away_win_probability": 0.506
+      },
+      {
+        "match_id": "317891",
+        "date_time": "22.11.2026 13:30",
+        "home_team": "ERZURUMSPOR FK",
+        "away_team": "GÖZTEPE A.Ş.",
+        "actual_score": "0 - 1",
+        "actual": "away",
+        "predicted": "draw",
+        "raw_predicted": "away",
+        "correct": false,
+        "data_confidence": "PLAYED",
+        "prediction_confidence": "LOW",
+        "home_win_probability": 0.358,
+        "draw_probability": 0.282,
+        "away_win_probability": 0.36
+      },
+      {
+        "match_id": "317884",
+        "date_time": "22.11.2026 16:00",
+        "home_team": "KASIMPAŞA A.Ş.",
+        "away_team": "CORENDON ALANYASPOR",
+        "actual_score": "2 - 1",
+        "actual": "home",
+        "predicted": "home",
+        "raw_predicted": "home",
+        "correct": true,
+        "data_confidence": "PLAYED",
+        "prediction_confidence": "HIGH",
+        "home_win_probability": 0.576,
+        "draw_probability": 0.248,
+        "away_win_probability": 0.176
+      },
+      {
+        "match_id": "317888",
+        "date_time": "22.11.2026 16:00",
+        "home_team": "TÜMOSAN KONYASPOR",
+        "away_team": "BEŞİKTAŞ A.Ş.",
+        "actual_score": "2 - 4",
+        "actual": "away",
+        "predicted": "draw",
+        "raw_predicted": "away",
+        "correct": false,
+        "data_confidence": "PLAYED",
+        "prediction_confidence": "LOW",
+        "home_win_probability": 0.323,
+        "draw_probability": 0.312,
+        "away_win_probability": 0.365
+      },
+      {
+        "match_id": "317883",
+        "date_time": "22.11.2026 19:00",
+        "home_team": "TRABZONSPOR A.Ş.",
+        "away_team": "EYÜPSPOR",
+        "actual_score": "1 - 0",
+        "actual": "home",
+        "predicted": "home",
+        "raw_predicted": "home",
+        "correct": true,
+        "data_confidence": "PLAYED",
+        "prediction_confidence": "HIGH",
+        "home_win_probability": 0.938,
+        "draw_probability": 0.055,
+        "away_win_probability": 0.007
       }
     ]
   },
@@ -2676,26 +2740,26 @@
     {
       "week": 12,
       "summary": {
-        "evaluated_matches": 4,
-        "correct": 1,
-        "accuracy": 0.25,
+        "evaluated_matches": 8,
+        "correct": 3,
+        "accuracy": 0.375,
         "actual_draws": 1,
         "draws_caught": 0,
         "draw_recall": 0.0,
-        "high_conf_matches": 2,
-        "high_conf_correct": 1,
-        "high_conf_accuracy": 0.5,
-        "brier_score": 0.7213,
-        "log_loss": 1.2357,
+        "high_conf_matches": 4,
+        "high_conf_correct": 3,
+        "high_conf_accuracy": 0.75,
+        "brier_score": 0.5483,
+        "log_loss": 0.9485,
         "confidence_breakdown": {
           "HIGH": {
-            "matches": 2,
-            "correct": 1,
-            "accuracy": 0.5,
-            "avg_stated_probability": 0.67,
-            "calibration_gap": -0.17,
-            "brier_score": 0.7652,
-            "log_loss": 1.3799
+            "matches": 4,
+            "correct": 3,
+            "accuracy": 0.75,
+            "avg_stated_probability": 0.7135,
+            "calibration_gap": 0.0365,
+            "brier_score": 0.4524,
+            "log_loss": 0.8438
           },
           "MEDIUM": {
             "matches": 1,
@@ -2707,34 +2771,34 @@
             "log_loss": 1.2765
           },
           "LOW": {
-            "matches": 1,
+            "matches": 3,
             "correct": 0,
             "accuracy": 0.0,
-            "avg_stated_probability": 0.308,
-            "calibration_gap": -0.308,
-            "brier_score": 0.533,
-            "log_loss": 0.9063
+            "avg_stated_probability": 0.3007,
+            "calibration_gap": -0.3007,
+            "brier_score": 0.5851,
+            "log_loss": 0.9786
           }
         },
         "pick_side_breakdown": {
           "home": {
-            "matches": 2,
-            "correct": 1,
-            "accuracy": 0.5,
+            "matches": 4,
+            "correct": 3,
+            "accuracy": 0.75,
             "actual": {
-              "home": 1,
+              "home": 3,
               "draw": 0,
               "away": 1
             }
           },
           "draw": {
-            "matches": 1,
+            "matches": 3,
             "correct": 0,
             "accuracy": 0.0,
             "actual": {
               "home": 1,
               "draw": 0,
-              "away": 0
+              "away": 2
             }
           },
           "away": {
@@ -2813,6 +2877,70 @@
           "home_win_probability": 0.214,
           "draw_probability": 0.279,
           "away_win_probability": 0.506
+        },
+        {
+          "match_id": "317891",
+          "date_time": "22.11.2026 13:30",
+          "home_team": "ERZURUMSPOR FK",
+          "away_team": "GÖZTEPE A.Ş.",
+          "actual_score": "0 - 1",
+          "actual": "away",
+          "predicted": "draw",
+          "raw_predicted": "away",
+          "correct": false,
+          "data_confidence": "PLAYED",
+          "prediction_confidence": "LOW",
+          "home_win_probability": 0.358,
+          "draw_probability": 0.282,
+          "away_win_probability": 0.36
+        },
+        {
+          "match_id": "317884",
+          "date_time": "22.11.2026 16:00",
+          "home_team": "KASIMPAŞA A.Ş.",
+          "away_team": "CORENDON ALANYASPOR",
+          "actual_score": "2 - 1",
+          "actual": "home",
+          "predicted": "home",
+          "raw_predicted": "home",
+          "correct": true,
+          "data_confidence": "PLAYED",
+          "prediction_confidence": "HIGH",
+          "home_win_probability": 0.576,
+          "draw_probability": 0.248,
+          "away_win_probability": 0.176
+        },
+        {
+          "match_id": "317888",
+          "date_time": "22.11.2026 16:00",
+          "home_team": "TÜMOSAN KONYASPOR",
+          "away_team": "BEŞİKTAŞ A.Ş.",
+          "actual_score": "2 - 4",
+          "actual": "away",
+          "predicted": "draw",
+          "raw_predicted": "away",
+          "correct": false,
+          "data_confidence": "PLAYED",
+          "prediction_confidence": "LOW",
+          "home_win_probability": 0.323,
+          "draw_probability": 0.312,
+          "away_win_probability": 0.365
+        },
+        {
+          "match_id": "317883",
+          "date_time": "22.11.2026 19:00",
+          "home_team": "TRABZONSPOR A.Ş.",
+          "away_team": "EYÜPSPOR",
+          "actual_score": "1 - 0",
+          "actual": "home",
+          "predicted": "home",
+          "raw_predicted": "home",
+          "correct": true,
+          "data_confidence": "PLAYED",
+          "prediction_confidence": "HIGH",
+          "home_win_probability": 0.938,
+          "draw_probability": 0.055,
+          "away_win_probability": 0.007
         }
       ]
     }
