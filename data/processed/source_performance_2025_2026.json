@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-23T10:44:44.965330+00:00",
+  "generated_at": "2026-11-23T14:19:18.879295+00:00",
   "season": "2025_2026",
   "maturity_days": 14,
   "summary": {
-    "transfer_signals": 25,
+    "transfer_signals": 22,
     "official_events": 16,
     "official_events_with_timestamp": 5,
     "official_events_with_first_observed_timestamp": 16,
@@ -12,13 +12,13 @@
     "measured_lead_times": 0,
     "first_seen_lead_times": 11,
     "tracked_x_sources_waiting": 20,
-    "retained_claim_observations": 5013
+    "retained_claim_observations": 5015
   },
   "provider_coverage": {
     "google_news": {
-      "articles": 100,
+      "articles": 92,
       "queries": 30,
-      "successful_queries": 30
+      "successful_queries": 28
     },
     "telegram": {
       "messages": 6,
@@ -36,7 +36,7 @@
       "source": "Google News / medya",
       "source_tier": "CHANNEL",
       "source_type": "media",
-      "observations": 5010,
+      "observations": 5012,
       "scoreable_claims": 1484,
       "official_conversions": 13,
       "lead_hours": [],
@@ -54,9 +54,9 @@
         1251.1
       ],
       "lead_time_unavailable": 2,
-      "matured_unconfirmed": 1428,
-      "pending_claims": 43,
-      "unresolved_claims": 3526,
+      "matured_unconfirmed": 1429,
+      "pending_claims": 42,
+      "unresolved_claims": 3528,
       "status": "FIRST_SEEN_BOUND",
       "score": 0.7,
       "average_lead_hours": null,
@@ -390,7 +390,7 @@
       "source": "Fotomaç",
       "source_tier": "MEDIA",
       "source_type": "rss",
-      "observations": 523,
+      "observations": 524,
       "scoreable_claims": 97,
       "official_conversions": 1,
       "lead_hours": [],
@@ -400,7 +400,7 @@
       "lead_time_unavailable": 0,
       "matured_unconfirmed": 96,
       "pending_claims": 0,
-      "unresolved_claims": 426,
+      "unresolved_claims": 427,
       "status": "FIRST_SEEN_BOUND",
       "score": 0.8,
       "average_lead_hours": null,
@@ -638,8 +638,8 @@
       "lead_hours": [],
       "first_seen_lead_hours": [],
       "lead_time_unavailable": 0,
-      "matured_unconfirmed": 21,
-      "pending_claims": 4,
+      "matured_unconfirmed": 22,
+      "pending_claims": 3,
       "unresolved_claims": 63,
       "status": "PARTIAL_MEASUREMENT",
       "score": 0.0,
@@ -4829,6 +4829,26 @@
       "false_alarm_proxy_pct": null
     },
     {
+      "source": "Haber Global",
+      "source_tier": "MEDIA",
+      "source_type": "google_news",
+      "observations": 3,
+      "scoreable_claims": 0,
+      "official_conversions": 0,
+      "lead_hours": [],
+      "first_seen_lead_hours": [],
+      "lead_time_unavailable": 0,
+      "matured_unconfirmed": 0,
+      "pending_claims": 0,
+      "unresolved_claims": 3,
+      "status": "OBSERVING",
+      "score": null,
+      "average_lead_hours": null,
+      "average_first_seen_lead_hours": null,
+      "official_conversion_rate_pct": null,
+      "false_alarm_proxy_pct": null
+    },
+    {
       "source": "haber61.net",
       "source_tier": "MEDIA",
       "source_type": "google_news",
@@ -4970,26 +4990,6 @@
     },
     {
       "source": "Gaziantep Oluşum Gazetesi",
-      "source_tier": "MEDIA",
-      "source_type": "google_news",
-      "observations": 2,
-      "scoreable_claims": 0,
-      "official_conversions": 0,
-      "lead_hours": [],
-      "first_seen_lead_hours": [],
-      "lead_time_unavailable": 0,
-      "matured_unconfirmed": 0,
-      "pending_claims": 0,
-      "unresolved_claims": 2,
-      "status": "OBSERVING",
-      "score": null,
-      "average_lead_hours": null,
-      "average_first_seen_lead_hours": null,
-      "official_conversion_rate_pct": null,
-      "false_alarm_proxy_pct": null
-    },
-    {
-      "source": "Haber Global",
       "source_tier": "MEDIA",
       "source_type": "google_news",
       "observations": 2,

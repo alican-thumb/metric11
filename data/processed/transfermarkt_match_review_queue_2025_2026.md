@@ -1,18 +1,18 @@
 # Transfermarkt Oyuncu Eşleşme İnceleme Kuyruğu
 
-- TFF profil: 888
+- TFF profil: 889
 - Transfermarkt snapshot: 18/18 kulüp, 817 oyuncu
-- Snapshot kapsamındaki TFF profil: 594
+- Snapshot kapsamındaki TFF profil: 595
 - Doğrulanmış snapshot eşleşmesi: 619
 - Manuel eşleme ile kullanılan profil: 4
 - Ağ teyidi bekleyen manuel eşleme: 4
-- Çözülmemiş profil: 265
-- Doğrulanmış genel eşleşme oranı: %69.7
-- Doğrulanmış snapshot içi eşleşme oranı: %91.9
-- Manuel eşleme dahil kullanılabilir snapshot içi kapsama: %92.6
+- Çözülmemiş profil: 266
+- Doğrulanmış genel eşleşme oranı: %69.6
+- Doğrulanmış snapshot içi eşleşme oranı: %91.8
+- Manuel eşleme dahil kullanılabilir snapshot içi kapsama: %92.4
 - Scout incelemesini bloke eden eşleşmeyen oyuncu: 0
-- Sınıf dağılımı: {'NO_RELIABLE_CANDIDATE_IN_SNAPSHOT': 42, 'SAME_CLUB_NAME_REVIEW': 1, 'POSSIBLE_TRANSFER_OR_CLUB_MISMATCH': 1, 'OUT_OF_SNAPSHOT_CLUB': 221}
-- Kullanım önceliği dağılımı: {'HIGH_USAGE_UNRESOLVED': 17, 'ROTATION_USAGE_UNRESOLVED': 9, 'OUT_OF_SNAPSHOT': 221, 'NO_MATCH_ACTIVITY': 18}
+- Sınıf dağılımı: {'NO_RELIABLE_CANDIDATE_IN_SNAPSHOT': 43, 'SAME_CLUB_NAME_REVIEW': 1, 'POSSIBLE_TRANSFER_OR_CLUB_MISMATCH': 1, 'OUT_OF_SNAPSHOT_CLUB': 221}
+- Kullanım önceliği dağılımı: {'HIGH_USAGE_UNRESOLVED': 17, 'ROTATION_USAGE_UNRESOLVED': 9, 'OUT_OF_SNAPSHOT': 221, 'NO_MATCH_ACTIVITY': 19}
 - Kural: Doğrulanmış kapsama yalnız snapshot eşleşmesi girer; manuel alias kullanımı ayrı izlenir ve ağ teyidi tamamlanana kadar doğrulanmış sayılmaz.
 
 ## Scout Bloke Eden Kuyruk
@@ -46,7 +46,7 @@
 | TÜMOSAN KONYASPOR | 41 | 48 | 40 | 0 | 1 | %97.6 | %97.6 |
 | ZECORNER KAYSERİSPOR | 0 | 51 | 0 | 0 | 0 | %0 | %0 |
 | ÇAYKUR RİZESPOR A.Ş. | 35 | 35 | 35 | 0 | 0 | %100.0 | %100.0 |
-| İKAS EYÜPSPOR | 41 | 62 | 39 | 0 | 2 | %95.1 | %95.1 |
+| İKAS EYÜPSPOR | 42 | 62 | 39 | 0 | 3 | %92.9 | %92.9 |
 
 ## Tüm Eşleşmeyen Kayıtlar (Takım Bazında)
 
@@ -515,6 +515,7 @@
 
 - LUCAS FELIPE CALEGARI (İKAS EYÜPSPOR): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=19, gol=1, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 - SAMUEL SAIZ ALONSO (İKAS EYÜPSPOR): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=ROTATION_USAGE_UNRESOLVED, ilk11=0, gol=0, scout_blok=False, aday=Samu Saiz (İKAS EYÜPSPOR, skor=0.667, ortak=SAIZ). Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
+- HALİL İBRAHİM BALTA (İKAS EYÜPSPOR): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=NO_MATCH_ACTIVITY, ilk11=0, gol=0, scout_blok=False, aday=Halil Yeral (İKAS EYÜPSPOR, skor=0.6, ortak=HALIL). Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 
 ### İSTANBULSPOR A.Ş.
 

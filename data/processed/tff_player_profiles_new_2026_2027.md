@@ -1,11 +1,11 @@
 # TFF Oyuncu Profilleri
 
 - Takım filtresi: Yok
-- Profil sayısı: 501
+- Profil sayısı: 503
 - Hata sayısı: 0
 - Ortalama yaş: 25.8
 - Ortalama kalan sözleşme ayı: 20.2
-- 23 yaş ve altı oyuncu: 174
+- 23 yaş ve altı oyuncu: 176
 - 13 ay içinde sözleşmesi bitecek oyuncu: 190
 
 ## Genç Oyuncular
@@ -27,6 +27,7 @@
 - ERK ARDA ASLAN (GENÇLERBİRLİĞİ): yaş=18, sözleşme bitiş=Yok
 - EYMEN KARATAŞ (CORENDON ALANYASPOR): yaş=18, sözleşme bitiş=Yok
 - FATİHHAN DEMİR (KOCAELİSPOR): yaş=18, sözleşme bitiş=Yok
+- HALİL İBRAHİM BALTA (EYÜPSPOR): yaş=18, sözleşme bitiş=Yok
 - HULİSİ DESTİCİ (KOCAELİSPOR): yaş=18, sözleşme bitiş=2030-06-30
 - KUZEY SAPAZ (FENERBAHÇE A.Ş.): yaş=18, sözleşme bitiş=2028-06-30
 - MERVAN MÜJDECİ (GAZİANTEP FUTBOL KULÜBÜ A.Ş.): yaş=18, sözleşme bitiş=2027-06-30
@@ -34,12 +35,11 @@
 - SABA KHAREBASHVILI (İSTANBUL BAŞAKŞEHİR FK): yaş=18, sözleşme bitiş=2030-06-30
 - SAIKUBA JARJU (SAMSUNSPOR A.Ş.): yaş=18, sözleşme bitiş=2029-06-30
 - YİĞİT HAMZA AYDAR (GENÇLERBİRLİĞİ): yaş=18, sözleşme bitiş=2028-06-30
+- YİĞİTHAN ÇUBUKCU (TRABZONSPOR A.Ş.): yaş=18, sözleşme bitiş=2029-06-30
 - ALBERT-IUSTIN DOICARU (ÇAYKUR RİZESPOR A.Ş.): yaş=19, sözleşme bitiş=2031-06-30
 - ALI BADRA DIABATE (SAMSUNSPOR A.Ş.): yaş=19, sözleşme bitiş=2029-06-30
 - ARDA ÖZYAR (KOCAELİSPOR): yaş=19, sözleşme bitiş=2031-06-30
 - ARDA ÜNYAY (GALATASARAY A.Ş.): yaş=19, sözleşme bitiş=2028-06-30
-- AROUNA KIGBAFORY SORO (CORENDON ALANYASPOR): yaş=19, sözleşme bitiş=2031-06-30
-- BERK KIZILDEMİR (AMED SPORTİF FAALİYETLER): yaş=19, sözleşme bitiş=2029-06-30
 
 ## Sözleşme Fırsatları
 
