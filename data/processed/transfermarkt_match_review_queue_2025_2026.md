@@ -1,18 +1,18 @@
 # Transfermarkt Oyuncu Eşleşme İnceleme Kuyruğu
 
-- TFF profil: 889
+- TFF profil: 891
 - Transfermarkt snapshot: 18/18 kulüp, 817 oyuncu
-- Snapshot kapsamındaki TFF profil: 595
-- Doğrulanmış snapshot eşleşmesi: 619
+- Snapshot kapsamındaki TFF profil: 596
+- Doğrulanmış snapshot eşleşmesi: 620
 - Manuel eşleme ile kullanılan profil: 4
 - Ağ teyidi bekleyen manuel eşleme: 4
-- Çözülmemiş profil: 266
+- Çözülmemiş profil: 267
 - Doğrulanmış genel eşleşme oranı: %69.6
-- Doğrulanmış snapshot içi eşleşme oranı: %91.8
-- Manuel eşleme dahil kullanılabilir snapshot içi kapsama: %92.4
+- Doğrulanmış snapshot içi eşleşme oranı: %91.6
+- Manuel eşleme dahil kullanılabilir snapshot içi kapsama: %92.3
 - Scout incelemesini bloke eden eşleşmeyen oyuncu: 0
-- Sınıf dağılımı: {'NO_RELIABLE_CANDIDATE_IN_SNAPSHOT': 43, 'SAME_CLUB_NAME_REVIEW': 1, 'POSSIBLE_TRANSFER_OR_CLUB_MISMATCH': 1, 'OUT_OF_SNAPSHOT_CLUB': 221}
-- Kullanım önceliği dağılımı: {'HIGH_USAGE_UNRESOLVED': 17, 'ROTATION_USAGE_UNRESOLVED': 9, 'OUT_OF_SNAPSHOT': 221, 'NO_MATCH_ACTIVITY': 19}
+- Sınıf dağılımı: {'NO_RELIABLE_CANDIDATE_IN_SNAPSHOT': 44, 'SAME_CLUB_NAME_REVIEW': 1, 'POSSIBLE_TRANSFER_OR_CLUB_MISMATCH': 1, 'OUT_OF_SNAPSHOT_CLUB': 221}
+- Kullanım önceliği dağılımı: {'HIGH_USAGE_UNRESOLVED': 17, 'ROTATION_USAGE_UNRESOLVED': 9, 'OUT_OF_SNAPSHOT': 221, 'NO_MATCH_ACTIVITY': 20}
 - Kural: Doğrulanmış kapsama yalnız snapshot eşleşmesi girer; manuel alias kullanımı ayrı izlenir ve ağ teyidi tamamlanana kadar doğrulanmış sayılmaz.
 
 ## Scout Bloke Eden Kuyruk
@@ -40,7 +40,7 @@
 | KASIMPAŞA A.Ş. | 39 | 60 | 36 | 0 | 3 | %92.3 | %92.3 |
 | KOCAELİSPOR | 36 | 39 | 33 | 0 | 3 | %91.7 | %91.7 |
 | MISIRLI.COM.TR FATİH KARAGÜMRÜK | 0 | 46 | 0 | 0 | 0 | %0 | %0 |
-| RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ | 30 | 32 | 29 | 0 | 1 | %96.7 | %96.7 |
+| RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ | 31 | 32 | 29 | 0 | 2 | %93.5 | %93.5 |
 | SAMSUNSPOR A.Ş. | 41 | 44 | 36 | 0 | 5 | %87.8 | %87.8 |
 | TRABZONSPOR A.Ş. | 44 | 42 | 39 | 1 | 4 | %88.6 | %90.9 |
 | TÜMOSAN KONYASPOR | 41 | 48 | 40 | 0 | 1 | %97.6 | %97.6 |
@@ -410,6 +410,7 @@
 ### RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ
 
 - LEONARDO CAMPOS DUARTE DA SILVA (RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=HIGH_USAGE_UNRESOLVED, ilk11=26, gol=0, scout_blok=False, aday=-. Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
+- ÖMER DOĞAN (RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ): sınıf=NO_RELIABLE_CANDIDATE_IN_SNAPSHOT, öncelik=NO_MATCH_ACTIVITY, ilk11=0, gol=0, scout_blok=False, aday=Ömer Beyaz (RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ, skor=0.6, ortak=OMER). Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir.
 
 ### SAKARYASPOR A.Ş.
 

@@ -1,11 +1,11 @@
 # TFF Oyuncu Profilleri
 
 - Takım filtresi: Yok
-- Profil sayısı: 503
-- Hata sayısı: 0
-- Ortalama yaş: 25.8
+- Profil sayısı: 505
+- Hata sayısı: 1
+- Ortalama yaş: 25.7
 - Ortalama kalan sözleşme ayı: 20.2
-- 23 yaş ve altı oyuncu: 176
+- 23 yaş ve altı oyuncu: 177
 - 13 ay içinde sözleşmesi bitecek oyuncu: 190
 
 ## Genç Oyuncular
@@ -36,10 +36,10 @@
 - SAIKUBA JARJU (SAMSUNSPOR A.Ş.): yaş=18, sözleşme bitiş=2029-06-30
 - YİĞİT HAMZA AYDAR (GENÇLERBİRLİĞİ): yaş=18, sözleşme bitiş=2028-06-30
 - YİĞİTHAN ÇUBUKCU (TRABZONSPOR A.Ş.): yaş=18, sözleşme bitiş=2029-06-30
+- ÖMER DOĞAN (İSTANBUL BAŞAKŞEHİR FK): yaş=18, sözleşme bitiş=2029-06-30
 - ALBERT-IUSTIN DOICARU (ÇAYKUR RİZESPOR A.Ş.): yaş=19, sözleşme bitiş=2031-06-30
 - ALI BADRA DIABATE (SAMSUNSPOR A.Ş.): yaş=19, sözleşme bitiş=2029-06-30
 - ARDA ÖZYAR (KOCAELİSPOR): yaş=19, sözleşme bitiş=2031-06-30
-- ARDA ÜNYAY (GALATASARAY A.Ş.): yaş=19, sözleşme bitiş=2028-06-30
 
 ## Sözleşme Fırsatları
 

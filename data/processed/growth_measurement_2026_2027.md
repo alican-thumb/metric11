@@ -19,7 +19,7 @@
 
 | Proje | Ziyaretçi | Sayfa görüntüleme | Rapor aralığı başlangıcı |
 |---|---:|---:|---|
-| metric11.com | 1334 | 2893 | 25.05.2026 |
+| metric11.com | 1339 | 2904 | 25.05.2026 |
 | tahmin.metric11.com | — | — | — |
 
 ## En Çok Trafik Alan Sayfalar

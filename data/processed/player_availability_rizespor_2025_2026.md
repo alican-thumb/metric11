@@ -5,12 +5,16 @@
 - Eksik sinyali olan maç: 10
 - Otomatik ceza sinyali: 15
 - Manuel kayıt: 0
-- Güncel haber/sakat-cezalı sinyali: 0
+- Güncel haber/sakat-cezalı sinyali: 4
 - Haber istihbaratı sinyali: 1
 - Not: Kırmızı/çift sarı için sonraki maç cezası varsayılır. Sarı kart birikimi 4 kartta 1 maç varsayımıdır; resmi ceza listesiyle doğrulanmalıdır.
 
 ## Güncel Haber/Sakat-Cezalı Bağlamı
 
+- INJURED | Can Bozdogan | kaynak=beIN SPORTS sakat ve cezalı listesi | güven=MEDIUM_CONTEXT
+- INJURED | Valentin Mihăila | kaynak=beIN SPORTS sakat ve cezalı listesi | güven=MEDIUM_CONTEXT
+- INJURED | Yahia Fofana | kaynak=beIN SPORTS sakat ve cezalı listesi | güven=MEDIUM_CONTEXT
+- INJURED | Taha Şahin | kaynak=beIN SPORTS sakat ve cezalı listesi | güven=MEDIUM_CONTEXT
 - INJURED | YAKUP AYAN | kaynak=news_intelligence | güven=MEDIUM
 
 ## Maç Bazlı Eksikler

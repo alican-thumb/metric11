@@ -21,10 +21,10 @@
 | 7 | ÇAYKUR RİZESPOR A.Ş. | YÜKSEK | 48.1 | 1.417 | 1.25 | 1.333 | Kaleci / istikrar |
 | 8 | ERZURUMSPOR FK | YÜKSEK | 46.8 | 1.167 | 0.833 | 1.5 | Kaleci / istikrar |
 | 9 | KASIMPAŞA A.Ş. | YÜKSEK | 44.6 | 1.917 | 1.583 | 1.0 | Kaleci / istikrar |
-| 10 | KOCAELİSPOR | YÜKSEK | 40.2 | 1.667 | 1.25 | 0.917 | Santrfor / skor yükü |
-| 11 | GÖZTEPE A.Ş. | YÜKSEK | 39.0 | 1.5 | 1.917 | 1.583 | 6 numara / savunma emniyeti |
-| 12 | ÇORUM FK | YÜKSEK | 38.0 | 1.455 | 1.909 | 1.909 | Kaleci / istikrar |
-| 13 | RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ | NORMAL | 34.5 | 1.545 | 1.727 | 1.545 | Sol açık / çizgi kırıcı |
+| 10 | ÇORUM FK | YÜKSEK | 41.5 | 1.333 | 1.917 | 2.083 | Kaleci / istikrar |
+| 11 | KOCAELİSPOR | YÜKSEK | 40.2 | 1.667 | 1.25 | 0.917 | Santrfor / skor yükü |
+| 12 | GÖZTEPE A.Ş. | YÜKSEK | 39.0 | 1.5 | 1.917 | 1.583 | 6 numara / savunma emniyeti |
+| 13 | RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ | NORMAL | 31.5 | 1.667 | 1.917 | 1.583 | Sol açık / çizgi kırıcı |
 | 14 | AMED SFK | NORMAL | 22.8 | 1.917 | 2.333 | 1.417 | Kaleci / istikrar |
 | 15 | FENERBAHÇE A.Ş. | NORMAL | 20.3 | 1.667 | 2.583 | 1.0 | Sol açık / çizgi kırıcı |
 | 16 | BEŞİKTAŞ A.Ş. | STABİL | 18.4 | 2.083 | 2.25 | 1.167 | Sol açık / çizgi kırıcı |
@@ -314,6 +314,35 @@ Zayıf nokta: son bölüm gol yeme riski, kart baskısı, skor üretim sorunu, d
   3. GAİUS ABRAHAM JERED MAKOUTA (CORENDON ALANYASPOR) | 29y | 1 gol | SERBEST TRANSFER FIRSATI | FREE | skor 28.4
      → Son bölüm gol yeme riski sorunu var; 6 numara / savunma emniyeti bu açığı kapatacak. Makouta: 1 gol, 32 maç. Bu yaz serbest kalıyor (~7ay) — bonussuz transfer fırsatı.
 
+### ÇORUM FK  [YÜKSEK]
+*1.333 puan/maç | maç başına 1.917 attı | maç başına 2.083 yedi*
+
+Zayıf nokta: yeni lig takımı
+
+**Kaleci / istikrar** — Süper Lig'e yeni çıkan takım; Kaleci / istikrar pozisyonunda deneyimli takviye kritik.
+  1. MARIO RICARDO DA SILVA VELHO (GENÇLERBİRLİĞİ) | 28y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 24.4
+     → Yeni lig takımı sorunu var; Kaleci / istikrar bu açığı kapatacak. Velho: 23 maç. Bu yaz serbest kalıyor (~-5ay) — bonussuz transfer fırsatı.
+  2. MUHAMMED ŞENGEZER (İSTANBUL BAŞAKŞEHİR FK) | 29y | 0 gol | PREMİUM TRANSFER | MEDIUM | skor 16.5
+     → Yeni lig takımı sorunu var; Kaleci / istikrar bu açığı kapatacak. Şengezer: 33 maç. Uzun sözleşme — yüksek bonusu göze almalı.
+  3. YAHIA FOFANA (ÇAYKUR RİZESPOR A.Ş.) | 26y | 0 gol | PREMİUM TRANSFER | MEDIUM | skor 15.3
+     → Yeni lig takımı sorunu var; Kaleci / istikrar bu açığı kapatacak. Fofana: 27 maç. Uzun sözleşme — yüksek bonusu göze almalı.
+
+**Stoper / hava ve temas** — Süper Lig'e yeni çıkan takım; Stoper / hava ve temas pozisyonunda deneyimli takviye kritik.
+  1. NUNO MIGUEL REIS LIMA (CORENDON ALANYASPOR) | 25y | 1 gol | SERBEST TRANSFER FIRSATI | FREE | skor 30.3
+     → Yeni lig takımı sorunu var; Stoper / hava ve temas bu açığı kapatacak. Lima: 1 gol, 32 maç. Bu yaz serbest kalıyor (~7ay) — bonussuz transfer fırsatı.
+  2. JAYDEN QUINN OOSTERWOLDE (FENERBAHÇE A.Ş.) | 25y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 29.2
+     → Yeni lig takımı sorunu var; Stoper / hava ve temas bu açığı kapatacak. Oosterwolde: 29 maç. Bu yaz serbest kalıyor (~6ay) — bonussuz transfer fırsatı.
+  3. JEROME OPOKU (İSTANBUL BAŞAKŞEHİR FK) | 28y | 1 gol | SERBEST TRANSFER FIRSATI | FREE | skor 28.8
+     → Yeni lig takımı sorunu var; Stoper / hava ve temas bu açığı kapatacak. Opoku: 1 gol, 31 maç. Bu yaz serbest kalıyor (~7ay) — bonussuz transfer fırsatı.
+
+**Santrfor / skor yükü** — Süper Lig'e yeni çıkan takım; Santrfor / skor yükü pozisyonunda deneyimli takviye kritik.
+  1. FELIPE AUGUSTO DA SILVA (TRABZONSPOR A.Ş.) | 22y | 13 gol | PREMİUM TRANSFER | HIGH | skor 27.2
+     → Yeni lig takımı sorunu var; Santrfor / skor yükü bu açığı kapatacak. Silva: 13 gol, 26 maç. Uzun sözleşme — yüksek bonusu göze almalı. 22 yaş, uzun vadeli yatırım profili.
+  2. ELDOR SHOMURODOV (RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ) | 31y | 22 gol | PREMİUM TRANSFER | MEDIUM | skor 25.2
+     → Yeni lig takımı sorunu var; Santrfor / skor yükü bu açığı kapatacak. Shomurodov: 22 gol, 34 maç. Uzun sözleşme — yüksek bonusu göze almalı.
+  3. VICTOR JAMES OSIMHEN (GALATASARAY A.Ş.) | 27y | 15 gol | PREMİUM TRANSFER | MEDIUM | skor 24.7
+     → Yeni lig takımı sorunu var; Santrfor / skor yükü bu açığı kapatacak. Osimhen: 15 gol, 19 maçta sahada. Uzun sözleşme — yüksek bonusu göze almalı.
+
 ### KOCAELİSPOR  [YÜKSEK]
 *1.667 puan/maç | maç başına 1.25 attı | maç başına 0.917 yedi*
 
@@ -372,37 +401,8 @@ Zayıf nokta: kart baskısı, düşük şut baskısı
   3. BARIŞ ALPER YILMAZ (GALATASARAY A.Ş.) | 26y | 8 gol | PREMİUM TRANSFER | MEDIUM | skor 22.3
      → Kart baskısı sorunu var; Sol açık / çizgi kırıcı bu açığı kapatacak. Yilmaz: 8 gol, 27 maç. Uzun sözleşme — yüksek bonusu göze almalı.
 
-### ÇORUM FK  [YÜKSEK]
-*1.455 puan/maç | maç başına 1.909 attı | maç başına 1.909 yedi*
-
-Zayıf nokta: yeni lig takımı
-
-**Kaleci / istikrar** — Süper Lig'e yeni çıkan takım; Kaleci / istikrar pozisyonunda deneyimli takviye kritik.
-  1. MARIO RICARDO DA SILVA VELHO (GENÇLERBİRLİĞİ) | 28y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 24.4
-     → Yeni lig takımı sorunu var; Kaleci / istikrar bu açığı kapatacak. Velho: 23 maç. Bu yaz serbest kalıyor (~-5ay) — bonussuz transfer fırsatı.
-  2. MUHAMMED ŞENGEZER (İSTANBUL BAŞAKŞEHİR FK) | 29y | 0 gol | PREMİUM TRANSFER | MEDIUM | skor 16.5
-     → Yeni lig takımı sorunu var; Kaleci / istikrar bu açığı kapatacak. Şengezer: 33 maç. Uzun sözleşme — yüksek bonusu göze almalı.
-  3. YAHIA FOFANA (ÇAYKUR RİZESPOR A.Ş.) | 26y | 0 gol | PREMİUM TRANSFER | MEDIUM | skor 15.3
-     → Yeni lig takımı sorunu var; Kaleci / istikrar bu açığı kapatacak. Fofana: 27 maç. Uzun sözleşme — yüksek bonusu göze almalı.
-
-**Stoper / hava ve temas** — Süper Lig'e yeni çıkan takım; Stoper / hava ve temas pozisyonunda deneyimli takviye kritik.
-  1. NUNO MIGUEL REIS LIMA (CORENDON ALANYASPOR) | 25y | 1 gol | SERBEST TRANSFER FIRSATI | FREE | skor 30.3
-     → Yeni lig takımı sorunu var; Stoper / hava ve temas bu açığı kapatacak. Lima: 1 gol, 32 maç. Bu yaz serbest kalıyor (~7ay) — bonussuz transfer fırsatı.
-  2. JAYDEN QUINN OOSTERWOLDE (FENERBAHÇE A.Ş.) | 25y | 0 gol | SERBEST TRANSFER FIRSATI | FREE | skor 29.2
-     → Yeni lig takımı sorunu var; Stoper / hava ve temas bu açığı kapatacak. Oosterwolde: 29 maç. Bu yaz serbest kalıyor (~6ay) — bonussuz transfer fırsatı.
-  3. JEROME OPOKU (İSTANBUL BAŞAKŞEHİR FK) | 28y | 1 gol | SERBEST TRANSFER FIRSATI | FREE | skor 28.8
-     → Yeni lig takımı sorunu var; Stoper / hava ve temas bu açığı kapatacak. Opoku: 1 gol, 31 maç. Bu yaz serbest kalıyor (~7ay) — bonussuz transfer fırsatı.
-
-**Santrfor / skor yükü** — Süper Lig'e yeni çıkan takım; Santrfor / skor yükü pozisyonunda deneyimli takviye kritik.
-  1. FELIPE AUGUSTO DA SILVA (TRABZONSPOR A.Ş.) | 22y | 13 gol | PREMİUM TRANSFER | HIGH | skor 27.2
-     → Yeni lig takımı sorunu var; Santrfor / skor yükü bu açığı kapatacak. Silva: 13 gol, 26 maç. Uzun sözleşme — yüksek bonusu göze almalı. 22 yaş, uzun vadeli yatırım profili.
-  2. ELDOR SHOMURODOV (RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ) | 31y | 22 gol | PREMİUM TRANSFER | MEDIUM | skor 25.2
-     → Yeni lig takımı sorunu var; Santrfor / skor yükü bu açığı kapatacak. Shomurodov: 22 gol, 34 maç. Uzun sözleşme — yüksek bonusu göze almalı.
-  3. VICTOR JAMES OSIMHEN (GALATASARAY A.Ş.) | 27y | 15 gol | PREMİUM TRANSFER | MEDIUM | skor 24.7
-     → Yeni lig takımı sorunu var; Santrfor / skor yükü bu açığı kapatacak. Osimhen: 15 gol, 19 maçta sahada. Uzun sözleşme — yüksek bonusu göze almalı.
-
 ### RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ  [NORMAL]
-*1.545 puan/maç | maç başına 1.727 attı | maç başına 1.545 yedi*
+*1.667 puan/maç | maç başına 1.917 attı | maç başına 1.583 yedi*
 
 Zayıf nokta: kadro derinliği sınırlı
 

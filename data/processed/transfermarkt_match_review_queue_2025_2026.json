@@ -1,24 +1,24 @@
 {
   "summary": {
-    "tff_profiles": 889,
+    "tff_profiles": 891,
     "tm_clubs": 18,
     "tm_players": 817,
-    "snapshot_in_scope_tff_profiles": 595,
-    "matched_profiles": 619,
-    "verified_matched_profiles": 619,
+    "snapshot_in_scope_tff_profiles": 596,
+    "matched_profiles": 620,
+    "verified_matched_profiles": 620,
     "in_scope_verified_matched_profiles": 546,
     "manual_alias_mapped_profiles": 4,
     "manual_alias_pending_network_verification": 4,
-    "operationally_mapped_profiles": 623,
+    "operationally_mapped_profiles": 624,
     "operational_in_scope_mapped_profiles": 550,
-    "unmatched_profiles": 266,
+    "unmatched_profiles": 267,
     "overall_match_rate": 0.696,
-    "in_scope_match_rate": 0.918,
-    "operational_mapping_rate": 0.701,
-    "operational_in_scope_mapping_rate": 0.924,
+    "in_scope_match_rate": 0.916,
+    "operational_mapping_rate": 0.7,
+    "operational_in_scope_mapping_rate": 0.923,
     "scout_blocking_unmatched": 0,
     "category_counts": {
-      "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 43,
+      "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 44,
       "SAME_CLUB_NAME_REVIEW": 1,
       "POSSIBLE_TRANSFER_OR_CLUB_MISMATCH": 1,
       "OUT_OF_SNAPSHOT_CLUB": 221
@@ -27,7 +27,7 @@
       "HIGH_USAGE_UNRESOLVED": 17,
       "ROTATION_USAGE_UNRESOLVED": 9,
       "OUT_OF_SNAPSHOT": 221,
-      "NO_MATCH_ACTIVITY": 19
+      "NO_MATCH_ACTIVITY": 20
     },
     "rule": "Doğrulanmış kapsama yalnız snapshot eşleşmesi girer; manuel alias kullanımı ayrı izlenir ve ağ teyidi tamamlanana kadar doğrulanmış sayılmaz."
   },
@@ -174,15 +174,15 @@
     },
     {
       "team": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ",
-      "tff_profiles": 30,
+      "tff_profiles": 31,
       "tm_players": 32,
       "matched_profiles": 29,
       "manual_alias_mapped_profiles": 0,
-      "unmatched_profiles": 1,
-      "match_rate": 0.967,
-      "operational_mapping_rate": 0.967,
+      "unmatched_profiles": 2,
+      "match_rate": 0.935,
+      "operational_mapping_rate": 0.935,
       "categories": {
-        "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 1
+        "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 2
       }
     },
     {
@@ -4481,6 +4481,32 @@
         "goals": 0
       },
       "candidate": null,
+      "action": "Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir."
+    },
+    {
+      "player_id": "2084513",
+      "tff_name": "ÖMER DOĞAN",
+      "tff_club": "RAMS BAŞAKŞEHİR FUTBOL KULÜBÜ",
+      "category": "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT",
+      "priority_rank": 4,
+      "blocks_scout_review": false,
+      "review_tier": "NO_MATCH_ACTIVITY",
+      "season_activity": {
+        "starts": 0,
+        "squad_inclusions": 0,
+        "goals": 0
+      },
+      "candidate": {
+        "tm_name": "Ömer Beyaz",
+        "tm_team_name": null,
+        "tm_id": "588020",
+        "tm_position": "Attacking Midfield",
+        "tm_market_value_eur": 550000,
+        "score": 0.6,
+        "common_tokens": [
+          "OMER"
+        ]
+      },
       "action": "Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir."
     },
     {

@@ -1,27 +1,27 @@
 # metric11 Haftalık Dağıtım Paketi
 
 - Hafta: 13
-- Üretim: 2026-11-24T09:49:07.541315+00:00
+- Üretim: 2026-11-24T14:51:11.527695+00:00
 - Yayın modu: Editör kontrolünden sonra manuel paylaşım
 
 ## Kazanırsa şampiyonluk ihtimali ne oluyor?
 
 ### X
-Süper Lig şampiyonluk yarışında yeni tablo: Trabzonspor %59, Galatasaray %19. Sıradaki maçını kazanırsa %68, kaybederse %51. En büyük değişim: Trabzonspor 1 puan yükseldi.
+Süper Lig şampiyonluk yarışında yeni tablo: Galatasaray %56, Trabzonspor %35. Sıradaki maçını kazanırsa %73, kaybederse %43. En büyük değişim: Galatasaray 36 puan yükseldi.
 
 https://metric11.com/super-lig-sampiyonluk-senaryolari-2026-27.html?utm_source=x&utm_medium=social&utm_campaign=super_lig_week_13&utm_content=championship_race
 
 ### Telegram
 🏆 <b>Şampiyonluk yarışı güncellendi</b>
 
-Süper Lig şampiyonluk yarışında yeni tablo: Trabzonspor %59, Galatasaray %19. Sıradaki maçını kazanırsa %68, kaybederse %51. En büyük değişim: Trabzonspor 1 puan yükseldi.
+Süper Lig şampiyonluk yarışında yeni tablo: Galatasaray %56, Trabzonspor %35. Sıradaki maçını kazanırsa %73, kaybederse %43. En büyük değişim: Galatasaray 36 puan yükseldi.
 
 Detaylı senaryolar: https://metric11.com/super-lig-sampiyonluk-senaryolari-2026-27.html?utm_source=telegram&utm_medium=social&utm_campaign=super_lig_week_13&utm_content=championship_race
 
 ### Instagram
 🏆 Şampiyonluk yarışı güncellendi
 
-Süper Lig şampiyonluk yarışında yeni tablo: Trabzonspor %59, Galatasaray %19. Sıradaki maçını kazanırsa %68, kaybederse %51. En büyük değişim: Trabzonspor 1 puan yükseldi.
+Süper Lig şampiyonluk yarışında yeni tablo: Galatasaray %56, Trabzonspor %35. Sıradaki maçını kazanırsa %73, kaybederse %43. En büyük değişim: Galatasaray 36 puan yükseldi.
 
 Tüm senaryolar metric11.com'da.
 
