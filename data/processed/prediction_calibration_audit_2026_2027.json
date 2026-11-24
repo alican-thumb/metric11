@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-11-23T23:50:09.460424",
+  "generated_at": "2026-11-24T09:48:59.165725",
   "season": "2026-2027",
-  "sample_size": 107,
+  "sample_size": 108,
   "diagnostic_only": true,
   "summary": {
-    "evaluated_matches": 107,
+    "evaluated_matches": 108,
     "correct": 51,
-    "accuracy": 0.4766,
+    "accuracy": 0.4722,
     "actual_draws": 17,
     "draws_caught": 3,
     "draw_recall": 0.1765,
     "high_conf_matches": 44,
     "high_conf_correct": 30,
     "high_conf_accuracy": 0.6818,
-    "brier_score": 0.5902,
-    "log_loss": 0.9908,
+    "brier_score": 0.5934,
+    "log_loss": 0.9957,
     "confidence_breakdown": {
       "HIGH": {
         "matches": 44,
@@ -26,13 +26,13 @@
         "log_loss": 0.8229
       },
       "MEDIUM": {
-        "matches": 31,
+        "matches": 32,
         "correct": 9,
-        "accuracy": 0.2903,
-        "avg_stated_probability": 0.4598,
-        "calibration_gap": -0.1695,
-        "brier_score": 0.7045,
-        "log_loss": 1.1446
+        "accuracy": 0.2812,
+        "avg_stated_probability": 0.4605,
+        "calibration_gap": -0.1793,
+        "brier_score": 0.7117,
+        "log_loss": 1.1566
       },
       "LOW": {
         "matches": 32,
@@ -66,11 +66,11 @@
         }
       },
       "away": {
-        "matches": 36,
+        "matches": 37,
         "correct": 16,
-        "accuracy": 0.4444,
+        "accuracy": 0.4324,
         "actual": {
-          "home": 13,
+          "home": 14,
           "draw": 7,
           "away": 16
         }
@@ -125,14 +125,14 @@
     {
       "lower": 0.45,
       "upper": 0.5,
-      "matches": 21,
+      "matches": 22,
       "correct": 8,
-      "accuracy": 0.381,
-      "avg_top_probability": 0.4715,
-      "calibration_gap": -0.0906,
+      "accuracy": 0.3636,
+      "avg_top_probability": 0.472,
+      "calibration_gap": -0.1084,
       "accuracy_ci_95": [
-        0.2075,
-        0.5912
+        0.1973,
+        0.5705
       ]
     },
     {
@@ -164,30 +164,30 @@
   ],
   "selective_policies": [
     {
-      "matches": 93,
+      "matches": 94,
       "correct": 47,
-      "accuracy": 0.5054,
-      "avg_top_probability": 0.5278,
-      "calibration_gap": -0.0224,
+      "accuracy": 0.5,
+      "avg_top_probability": 0.5273,
+      "calibration_gap": -0.0273,
       "accuracy_ci_95": [
-        0.4056,
-        0.6047
+        0.4009,
+        0.5991
       ],
       "minimum_probability": 0.4,
-      "coverage": 0.8692
+      "coverage": 0.8704
     },
     {
-      "matches": 68,
+      "matches": 69,
       "correct": 38,
-      "accuracy": 0.5588,
-      "avg_top_probability": 0.567,
-      "calibration_gap": -0.0082,
+      "accuracy": 0.5507,
+      "avg_top_probability": 0.5658,
+      "calibration_gap": -0.0151,
       "accuracy_ci_95": [
-        0.4408,
-        0.6705
+        0.4338,
+        0.6623
       ],
       "minimum_probability": 0.45,
-      "coverage": 0.6355
+      "coverage": 0.6389
     },
     {
       "matches": 47,
@@ -200,7 +200,7 @@
         0.7603
       ],
       "minimum_probability": 0.5,
-      "coverage": 0.4393
+      "coverage": 0.4352
     },
     {
       "matches": 35,
@@ -213,7 +213,7 @@
         0.8584
       ],
       "minimum_probability": 0.55,
-      "coverage": 0.3271
+      "coverage": 0.3241
     },
     {
       "matches": 22,
@@ -226,41 +226,41 @@
         0.9269
       ],
       "minimum_probability": 0.6,
-      "coverage": 0.2056
+      "coverage": 0.2037
     }
   ],
   "draw_thresholds": [
     {
       "minimum_draw_probability": 0.22,
-      "flagged_matches": 77,
+      "flagged_matches": 78,
       "draw_hits": 12,
-      "precision": 0.1558,
+      "precision": 0.1538,
       "recall": 0.7059,
-      "f1": 0.2553
+      "f1": 0.2526
     },
     {
       "minimum_draw_probability": 0.25,
-      "flagged_matches": 37,
+      "flagged_matches": 38,
       "draw_hits": 8,
-      "precision": 0.2162,
+      "precision": 0.2105,
       "recall": 0.4706,
-      "f1": 0.2963
+      "f1": 0.2909
     },
     {
       "minimum_draw_probability": 0.28,
-      "flagged_matches": 15,
+      "flagged_matches": 16,
       "draw_hits": 2,
-      "precision": 0.1333,
+      "precision": 0.125,
       "recall": 0.1176,
-      "f1": 0.125
+      "f1": 0.1212
     },
     {
       "minimum_draw_probability": 0.3,
-      "flagged_matches": 10,
+      "flagged_matches": 11,
       "draw_hits": 1,
-      "precision": 0.1,
+      "precision": 0.0909,
       "recall": 0.0588,
-      "f1": 0.0741
+      "f1": 0.0714
     },
     {
       "minimum_draw_probability": 0.32,

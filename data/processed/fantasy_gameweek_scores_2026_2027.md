@@ -1,7 +1,7 @@
 # Kadro Kur — Haftalık Puanlar
 
 - Puanlanan hafta sayısı: 12
-- Toplamda puan alan oyuncu: 503
+- Toplamda puan alan oyuncu: 505
 - En yüksek puanlı 5 oyuncu:
   - STEFAN SAVIC (TRABZONSPOR A.Ş.): 57 puan
   - MILAN SKRINIAR (FENERBAHÇE A.Ş.): 45 puan
