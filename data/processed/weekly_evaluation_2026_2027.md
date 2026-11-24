@@ -4,14 +4,14 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 
 ## Genel Karne
 
-- Değerlendirilen maç: **108**
-- İsabet: **51/108** (%47)
-- Beraberlik yakalama: **3/17** (%18)
-- Yüksek güvenli maç isabeti: **30/44** (%68)
-- Güçlü seçim tanı metriği: **24/35** (%69), kapsam %32
+- Değerlendirilen maç: **0**
+- İsabet: **0/0** (%0)
+- Beraberlik yakalama: **0/0** (—)
+- Yüksek güvenli maç isabeti: **0/0** (—)
+- Güçlü seçim tanı metriği: **0/0** (—), kapsam —
 - İleriye dönük kilitli güçlü seçim: **0/0** (—), kapsam —
-- Brier score: **0.593** (düşük daha iyi; 2025-26 referans 0.600)
-- Log loss: **0.996** (düşük daha iyi; 2025-26 referans 1.005)
+- Brier score: **—** (düşük daha iyi; 2025-26 referans 0.600)
+- Log loss: **—** (düşük daha iyi; 2025-26 referans 1.005)
 
 _Tanı metriği bugünkü yayın politikasını geçmiş maçlara uygular ve ürün iddiası değildir. İleriye dönük metrik, karar maçtan önce snapshot'a kilitlendikten sonra birikir._
 
@@ -21,9 +21,9 @@ _"Beyan edilen ort. olasılık" ile "İsabet" arasındaki fark büyükse (özell
 
 | Güven bandı | Maç | İsabet | Beyan edilen ort. olasılık | Brier | Log loss | Referans (2025-26: isabet / brier / logloss) |
 | --- | --- | --- | --- | --- | --- | --- |
-| HIGH | 44 | 30/44 (%68) | %62 | 0.468 | 0.823 | %64 / 0.516 / 0.885 |
-| MEDIUM | 32 | 9/32 (%28) | %46 | 0.712 | 1.157 | %54 / 0.619 / 1.032 |
-| LOW | 32 | 12/32 (%38) | %37 | 0.647 | 1.073 | %48 / 0.670 / 1.103 |
+| HIGH | 0 | — | — | — | — | %64 / 0.516 / 0.885 |
+| MEDIUM | 0 | — | — | — | — | %54 / 0.619 / 1.032 |
+| LOW | 0 | — | — | — | — | %48 / 0.670 / 1.103 |
 
 ### Seçilen tarafa göre isabet
 
@@ -31,177 +31,8 @@ _Model hangi tarafı seçtiğinde ne oldu? Belirli bir seçimde (ör. deplasman 
 
 | Seçim | Maç | İsabet | Gerçekleşen (Ev / X / Dep) |
 | --- | --- | --- | --- |
-| Ev | 56 | 32/56 (%57) | 32 / 7 / 17 |
-| Beraberlik | 15 | 3/15 (%20) | 6 / 3 / 6 |
-| Deplasman | 37 | 16/37 (%43) | 14 / 7 / 16 |
 
 [Olasılık kovaları ve seçici yayın politikası →](prediction_calibration_audit_2026_2027.html)
 
-## Hafta 12 — 3/9 isabet (%33)
-
-| Maç | Skor | Tahmin | Sonuç | Güven |
-| --- | --- | --- | --- | --- |
-| GENÇLERBİRLİĞİ - GAZİANTEP FUTBOL KULÜBÜ A.Ş. | 1 - 0 | Beraberlik | ❌ | LOW |
-| AMED SPORTİF FAALİYETLER - ÇAYKUR RİZESPOR A.Ş. | 0 - 2 | Ev | ❌ | HIGH |
-| GALATASARAY A.Ş. - SAMSUNSPOR A.Ş. | 2 - 1 | Ev | ✅ | HIGH |
-| KOCAELİSPOR - FENERBAHÇE A.Ş. | 2 - 2 | Deplasman | ❌ | MEDIUM |
-| ERZURUMSPOR FK - GÖZTEPE A.Ş. | 0 - 1 | Beraberlik | ❌ | LOW |
-| KASIMPAŞA A.Ş. - CORENDON ALANYASPOR | 2 - 1 | Ev | ✅ | HIGH |
-| TÜMOSAN KONYASPOR - BEŞİKTAŞ A.Ş. | 2 - 4 | Beraberlik | ❌ | LOW |
-| TRABZONSPOR A.Ş. - EYÜPSPOR | 1 - 0 | Ev | ✅ | HIGH |
-| İSTANBUL BAŞAKŞEHİR FK - ARCA ÇORUM FK | 4 - 2 | Deplasman | ❌ | MEDIUM |
-
-## Hafta 11 — 4/9 isabet (%44)
-
-| Maç | Skor | Tahmin | Sonuç | Güven |
-| --- | --- | --- | --- | --- |
-| GAZİANTEP FUTBOL KULÜBÜ A.Ş. - KASIMPAŞA A.Ş. | 0 - 2 | Beraberlik | ❌ | LOW |
-| EYÜPSPOR - KOCAELİSPOR | 0 - 2 | Deplasman | ✅ | HIGH |
-| SAMSUNSPOR A.Ş. - TÜMOSAN KONYASPOR | 1 - 0 | Beraberlik | ❌ | MEDIUM |
-| GALATASARAY A.Ş. - AMED SPORTİF FAALİYETLER | 4 - 3 | Deplasman | ❌ | MEDIUM |
-| GÖZTEPE A.Ş. - İSTANBUL BAŞAKŞEHİR FK | 1 - 2 | Ev | ❌ | HIGH |
-| ÇAYKUR RİZESPOR A.Ş. - ERZURUMSPOR FK | 2 - 1 | Beraberlik | ❌ | LOW |
-| ARCA ÇORUM FK - FENERBAHÇE A.Ş. | 0 - 5 | Deplasman | ✅ | LOW |
-| CORENDON ALANYASPOR - TRABZONSPOR A.Ş. | 0 - 2 | Deplasman | ✅ | HIGH |
-| BEŞİKTAŞ A.Ş. - GENÇLERBİRLİĞİ | 3 - 0 | Ev | ✅ | HIGH |
-
-## Hafta 10 — 5/9 isabet (%56)
-
-| Maç | Skor | Tahmin | Sonuç | Güven |
-| --- | --- | --- | --- | --- |
-| TÜMOSAN KONYASPOR - GALATASARAY A.Ş. | 0 - 4 | Deplasman | ✅ | HIGH |
-| ERZURUMSPOR FK - ARCA ÇORUM FK | 1 - 3 | Ev | ❌ | LOW |
-| KOCAELİSPOR - ÇAYKUR RİZESPOR A.Ş. | 0 - 0 | Beraberlik | ✅ | MEDIUM |
-| FENERBAHÇE A.Ş. - GÖZTEPE A.Ş. | 1 - 2 | Ev | ❌ | HIGH |
-| AMED SPORTİF FAALİYETLER - EYÜPSPOR | 5 - 1 | Ev | ✅ | HIGH |
-| TRABZONSPOR A.Ş. - GAZİANTEP FUTBOL KULÜBÜ A.Ş. | 2 - 0 | Ev | ✅ | HIGH |
-| İSTANBUL BAŞAKŞEHİR FK - SAMSUNSPOR A.Ş. | 5 - 2 | Ev | ✅ | MEDIUM |
-| KASIMPAŞA A.Ş. - BEŞİKTAŞ A.Ş. | 2 - 2 | Deplasman | ❌ | LOW |
-| GENÇLERBİRLİĞİ - CORENDON ALANYASPOR | 5 - 0 | Beraberlik | ❌ | LOW |
-
-## Hafta 9 — 5/9 isabet (%56)
-
-| Maç | Skor | Tahmin | Sonuç | Güven |
-| --- | --- | --- | --- | --- |
-| CORENDON ALANYASPOR - KOCAELİSPOR | 1 - 2 | Beraberlik | ❌ | LOW |
-| EYÜPSPOR - KASIMPAŞA A.Ş. | 0 - 1 | Deplasman | ✅ | HIGH |
-| GAZİANTEP FUTBOL KULÜBÜ A.Ş. - ERZURUMSPOR FK | 1 - 3 | Ev | ❌ | MEDIUM |
-| SAMSUNSPOR A.Ş. - AMED SPORTİF FAALİYETLER | 1 - 2 | Deplasman | ✅ | HIGH |
-| TÜMOSAN KONYASPOR - GENÇLERBİRLİĞİ | 2 - 0 | Beraberlik | ❌ | LOW |
-| GÖZTEPE A.Ş. - ARCA ÇORUM FK | 2 - 0 | Deplasman | ❌ | LOW |
-| ÇAYKUR RİZESPOR A.Ş. - TRABZONSPOR A.Ş. | 3 - 4 | Deplasman | ✅ | HIGH |
-| BEŞİKTAŞ A.Ş. - İSTANBUL BAŞAKŞEHİR FK | 2 - 0 | Ev | ✅ | HIGH |
-| GALATASARAY A.Ş. - FENERBAHÇE A.Ş. | 2 - 1 | Ev | ✅ | LOW |
-
-## Hafta 8 — 7/9 isabet (%78)
-
-| Maç | Skor | Tahmin | Sonuç | Güven |
-| --- | --- | --- | --- | --- |
-| ARCA ÇORUM FK - ÇAYKUR RİZESPOR A.Ş. | 2 - 1 | Ev | ✅ | MEDIUM |
-| ERZURUMSPOR FK - EYÜPSPOR | 2 - 0 | Ev | ✅ | HIGH |
-| AMED SPORTİF FAALİYETLER - TÜMOSAN KONYASPOR | 1 - 0 | Ev | ✅ | HIGH |
-| GENÇLERBİRLİĞİ - GALATASARAY A.Ş. | 0 - 1 | Deplasman | ✅ | MEDIUM |
-| FENERBAHÇE A.Ş. - CORENDON ALANYASPOR | 3 - 0 | Ev | ✅ | HIGH |
-| KASIMPAŞA A.Ş. - SAMSUNSPOR A.Ş. | 4 - 1 | Ev | ✅ | HIGH |
-| KOCAELİSPOR - GÖZTEPE A.Ş. | 1 - 2 | Beraberlik | ❌ | LOW |
-| İSTANBUL BAŞAKŞEHİR FK - GAZİANTEP FUTBOL KULÜBÜ A.Ş. | 2 - 1 | Beraberlik | ❌ | LOW |
-| TRABZONSPOR A.Ş. - BEŞİKTAŞ A.Ş. | 2 - 0 | Ev | ✅ | LOW |
-
-## Hafta 7 — 6/9 isabet (%67)
-
-| Maç | Skor | Tahmin | Sonuç | Güven |
-| --- | --- | --- | --- | --- |
-| GALATASARAY A.Ş. - KASIMPAŞA A.Ş. | 3 - 1 | Ev | ✅ | HIGH |
-| GENÇLERBİRLİĞİ - AMED SPORTİF FAALİYETLER | 2 - 2 | Deplasman | ❌ | MEDIUM |
-| CORENDON ALANYASPOR - ERZURUMSPOR FK | 0 - 0 | Ev | ❌ | HIGH |
-| SAMSUNSPOR A.Ş. - TRABZONSPOR A.Ş. | 0 - 3 | Deplasman | ✅ | HIGH |
-| ÇAYKUR RİZESPOR A.Ş. - FENERBAHÇE A.Ş. | 0 - 3 | Deplasman | ✅ | HIGH |
-| TÜMOSAN KONYASPOR - İSTANBUL BAŞAKŞEHİR FK | 0 - 0 | Deplasman | ❌ | MEDIUM |
-| GAZİANTEP FUTBOL KULÜBÜ A.Ş. - ARCA ÇORUM FK | 0 - 3 | Deplasman | ✅ | MEDIUM |
-| BEŞİKTAŞ A.Ş. - KOCAELİSPOR | 2 - 1 | Ev | ✅ | HIGH |
-| EYÜPSPOR - GÖZTEPE A.Ş. | 0 - 4 | Deplasman | ✅ | LOW |
-
-## Hafta 6 — 4/9 isabet (%44)
-
-| Maç | Skor | Tahmin | Sonuç | Güven |
-| --- | --- | --- | --- | --- |
-| KASIMPAŞA A.Ş. - TÜMOSAN KONYASPOR | 0 - 0 | Ev | ❌ | HIGH |
-| ARCA ÇORUM FK - CORENDON ALANYASPOR | 1 - 2 | Ev | ❌ | HIGH |
-| KOCAELİSPOR - GAZİANTEP FUTBOL KULÜBÜ A.Ş. | 2 - 0 | Ev | ✅ | MEDIUM |
-| TRABZONSPOR A.Ş. - GALATASARAY A.Ş. | 4 - 0 | Deplasman | ❌ | HIGH |
-| İSTANBUL BAŞAKŞEHİR FK - GENÇLERBİRLİĞİ | 4 - 0 | Ev | ✅ | LOW |
-| FENERBAHÇE A.Ş. - EYÜPSPOR | 8 - 0 | Ev | ✅ | HIGH |
-| ERZURUMSPOR FK - SAMSUNSPOR A.Ş. | 1 - 0 | Deplasman | ❌ | MEDIUM |
-| AMED SPORTİF FAALİYETLER - BEŞİKTAŞ A.Ş. | 3 - 2 | Ev | ✅ | MEDIUM |
-| GÖZTEPE A.Ş. - ÇAYKUR RİZESPOR A.Ş. | 2 - 2 | Ev | ❌ | LOW |
-
-## Hafta 5 — 3/9 isabet (%33)
-
-| Maç | Skor | Tahmin | Sonuç | Güven |
-| --- | --- | --- | --- | --- |
-| BEŞİKTAŞ A.Ş. - ERZURUMSPOR FK | 3 - 0 | Ev | ✅ | HIGH |
-| EYÜPSPOR - ÇAYKUR RİZESPOR A.Ş. | 0 - 2 | Ev | ❌ | MEDIUM |
-| SAMSUNSPOR A.Ş. - ARCA ÇORUM FK | 1 - 5 | Ev | ❌ | MEDIUM |
-| CORENDON ALANYASPOR - GÖZTEPE A.Ş. | 2 - 2 | Beraberlik | ✅ | LOW |
-| TÜMOSAN KONYASPOR - TRABZONSPOR A.Ş. | 1 - 0 | Deplasman | ❌ | MEDIUM |
-| GENÇLERBİRLİĞİ - KASIMPAŞA A.Ş. | 1 - 2 | Ev | ❌ | HIGH |
-| AMED SPORTİF FAALİYETLER - İSTANBUL BAŞAKŞEHİR FK | 5 - 0 | Deplasman | ❌ | MEDIUM |
-| GALATASARAY A.Ş. - KOCAELİSPOR | 1 - 0 | Ev | ✅ | HIGH |
-| GAZİANTEP FUTBOL KULÜBÜ A.Ş. - FENERBAHÇE A.Ş. | 0 - 0 | Deplasman | ❌ | HIGH |
-
-## Hafta 4 — 2/9 isabet (%22)
-
-| Maç | Skor | Tahmin | Sonuç | Güven |
-| --- | --- | --- | --- | --- |
-| İSTANBUL BAŞAKŞEHİR FK - GALATASARAY A.Ş. | 2 - 3 | Deplasman | ✅ | LOW |
-| ERZURUMSPOR FK - TÜMOSAN KONYASPOR | 1 - 0 | Deplasman | ❌ | LOW |
-| FENERBAHÇE A.Ş. - BEŞİKTAŞ A.Ş. | 1 - 2 | Ev | ❌ | MEDIUM |
-| KASIMPAŞA A.Ş. - AMED SPORTİF FAALİYETLER | 2 - 2 | Deplasman | ❌ | LOW |
-| ARCA ÇORUM FK - EYÜPSPOR | 3 - 0 | Deplasman | ❌ | MEDIUM |
-| TRABZONSPOR A.Ş. - GENÇLERBİRLİĞİ | 5 - 0 | Deplasman | ❌ | MEDIUM |
-| KOCAELİSPOR - SAMSUNSPOR A.Ş. | 1 - 0 | Ev | ✅ | LOW |
-| ÇAYKUR RİZESPOR A.Ş. - CORENDON ALANYASPOR | 0 - 1 | Beraberlik | ❌ | LOW |
-| GÖZTEPE A.Ş. - GAZİANTEP FUTBOL KULÜBÜ A.Ş. | 2 - 4 | Ev | ❌ | MEDIUM |
-
-## Hafta 3 — 6/9 isabet (%67)
-
-| Maç | Skor | Tahmin | Sonuç | Güven |
-| --- | --- | --- | --- | --- |
-| GENÇLERBİRLİĞİ - ERZURUMSPOR FK | 1 - 1 | Ev | ❌ | HIGH |
-| TÜMOSAN KONYASPOR - KOCAELİSPOR | 1 - 2 | Ev | ❌ | LOW |
-| GAZİANTEP FUTBOL KULÜBÜ A.Ş. - ÇAYKUR RİZESPOR A.Ş. | 1 - 2 | Deplasman | ✅ | LOW |
-| GALATASARAY A.Ş. - GÖZTEPE A.Ş. | 3 - 2 | Ev | ✅ | HIGH |
-| EYÜPSPOR - CORENDON ALANYASPOR | 2 - 1 | Ev | ✅ | MEDIUM |
-| İSTANBUL BAŞAKŞEHİR FK - KASIMPAŞA A.Ş. | 1 - 1 | Ev | ❌ | HIGH |
-| SAMSUNSPOR A.Ş. - FENERBAHÇE A.Ş. | 0 - 2 | Deplasman | ✅ | LOW |
-| AMED SPORTİF FAALİYETLER - TRABZONSPOR A.Ş. | 2 - 1 | Ev | ✅ | MEDIUM |
-| BEŞİKTAŞ A.Ş. - ARCA ÇORUM FK | 6 - 2 | Ev | ✅ | HIGH |
-
-## Hafta 2 — 2/9 isabet (%22)
-
-| Maç | Skor | Tahmin | Sonuç | Güven |
-| --- | --- | --- | --- | --- |
-| ERZURUMSPOR FK - GALATASARAY A.Ş. | 0 - 4 | Deplasman | ✅ | HIGH |
-| ÇAYKUR RİZESPOR A.Ş. - SAMSUNSPOR A.Ş. | 0 - 2 | Ev | ❌ | LOW |
-| ARCA ÇORUM FK - KASIMPAŞA A.Ş. | 0 - 1 | Ev | ❌ | MEDIUM |
-| FENERBAHÇE A.Ş. - TÜMOSAN KONYASPOR | 4 - 2 | Ev | ✅ | HIGH |
-| TRABZONSPOR A.Ş. - İSTANBUL BAŞAKŞEHİR FK | 2 - 1 | Deplasman | ❌ | HIGH |
-| EYÜPSPOR - GAZİANTEP FUTBOL KULÜBÜ A.Ş. | 0 - 1 | Ev | ❌ | MEDIUM |
-| CORENDON ALANYASPOR - BEŞİKTAŞ A.Ş. | 1 - 0 | Deplasman | ❌ | MEDIUM |
-| GÖZTEPE A.Ş. - GENÇLERBİRLİĞİ | 0 - 1 | Ev | ❌ | MEDIUM |
-| KOCAELİSPOR - AMED SPORTİF FAALİYETLER | 2 - 0 | Deplasman | ❌ | MEDIUM |
-
-## Hafta 1 — 4/9 isabet (%44)
-
-| Maç | Skor | Tahmin | Sonuç | Güven |
-| --- | --- | --- | --- | --- |
-| GALATASARAY A.Ş. - ARCA ÇORUM FK | 2 - 2 | Ev | ❌ | HIGH |
-| KASIMPAŞA A.Ş. - TRABZONSPOR A.Ş. | 1 - 1 | Beraberlik | ✅ | LOW |
-| TÜMOSAN KONYASPOR - ÇAYKUR RİZESPOR A.Ş. | 0 - 1 | Ev | ❌ | MEDIUM |
-| GAZİANTEP FUTBOL KULÜBÜ A.Ş. - CORENDON ALANYASPOR | 1 - 1 | Deplasman | ❌ | MEDIUM |
-| GENÇLERBİRLİĞİ - FENERBAHÇE A.Ş. | 2 - 1 | Deplasman | ❌ | HIGH |
-| İSTANBUL BAŞAKŞEHİR FK - KOCAELİSPOR | 2 - 0 | Ev | ✅ | HIGH |
-| AMED SPORTİF FAALİYETLER - ERZURUMSPOR FK | 3 - 0 | Ev | ✅ | LOW |
-| BEŞİKTAŞ A.Ş. - EYÜPSPOR | 1 - 0 | Ev | ✅ | HIGH |
-| SAMSUNSPOR A.Ş. - GÖZTEPE A.Ş. | 3 - 3 | Ev | ❌ | LOW |
+_Sezon henüz başlamadı; ilk maçlar oynandıkça karne otomatik dolacak._
 
