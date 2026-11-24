@@ -1,19 +1,18 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-11-23T23:50:20.488349+00:00
-Toplam ilgili haber: 33
+Üretim zamanı: 2026-11-24T01:41:28.668117+00:00
+Toplam ilgili haber: 31
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
+- [Fenerbahçe, Shakhtar Donetsk maçının hazırlıklarını sürdürdü](https://www.sabah.com.tr/spor/futbol/2026/11/23/fenerbahce-shakhtar-donetsk-macinin-hazirliklarini-surdurdu) — Sabah Spor · 2026-11-23T21:17:42+03:00 · turnuva=CL · kulüp=Fenerbahçe
+- [GALATASARAY ASTON VILLA MAÇI NEREDE OYNANACAK? UCL GS Aston Villa Maçı Hangi Statta Oynanacak, RAMS Park'ta Mı? Şampiyonlar Ligi Maçının Adresi Açıklandı](https://www.cnnturk.com/spor/futbol/galatasaray-aston-villa-maci-nerede-oynanacak-ucl-gs-aston-villa-maci-hangi-statta-oynanacak-rams-parkta-mi-sampiyonlar-ligi-3497045) — CNN Türk Spor · 2026-11-23T17:37:13+00:00 · turnuva=CL · kulüp=Galatasaray
+- [OSIMHEN ASTON VILLA MAÇINDA OYNAYACAK MI? Şampiyonlar Ligi Galatasaray Aston Villa Maçı Ne Zaman? Victor Osimhen'in Sağlık Durumu Nasıl?](https://www.cnnturk.com/spor/futbol/osimhen-aston-villa-macinda-oynayacak-mi-sampiyonlar-ligi-galatasaray-aston-villa-maci-ne-zaman-victor-osimhenin-saglik-durumu-nasil-3496886) — CNN Türk Spor · 2026-11-23T17:36:49+00:00 · turnuva=CL · kulüp=Galatasaray
+- [SHAKHTAR DONETSK FENERBAHÇE MAÇI NE ZAMAN? UCL Shakhtar Donetsk Fenerbahçe maçı saat kaçta, hangi kanalda? Şampiyonlar Ligi'nde iki Türk karşı karşıya: Arda Turan mı Emre Belözoğlu mu?](https://www.cnnturk.com/spor/futbol/shakhtar-donetsk-fenerbahce-maci-ne-zaman-ucl-shakhtar-donetsk-fenerbahce-maci-saat-kacta-hangi-kanalda-sampiyonlar-liginde-iki-3497063) — CNN Türk Spor · 2026-11-23T17:34:02+00:00 · turnuva=CL · kulüp=Fenerbahçe
+- [Fenerbahçe'de Shakhtar maçı mesaisi!](https://www.hurriyet.com.tr/sporarena/fenerbahcede-shakhtar-maci-mesaisi-43388482) — Hürriyet Spor · 2026-11-23T17:15:51+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [UEFA'dan Halil Umut Meler'e görev](https://www.aa.com.tr/tr/spor/uefadan-halil-umut-melere-gorev-/4134723) — Anadolu Ajansı Spor · 2026-11-23T16:59:35+03:00 · turnuva=CL · kulüp=—
-- [GALATASARAY ASTON VILLA MAÇI NEREDE OYNANACAK? UCL GS Aston Villa Maçı Hangi Statta Oynanacak, RAMS Park'ta Mı? Şampiyonlar Ligi Maçının Adresi Açıklandı](https://www.cnnturk.com/spor/futbol/galatasaray-aston-villa-maci-nerede-oynanacak-ucl-gs-aston-villa-maci-hangi-statta-oynanacak-rams-parkta-mi-sampiyonlar-ligi-3497045) — CNN Türk Spor · 2026-11-23T16:47:48+00:00 · turnuva=CL · kulüp=Galatasaray
-- [Trabzonspor'da CSKA Sofya maçı hazırlıkları başladı!](https://www.sabah.com.tr/spor/futbol/2026/11/23/trabzonsporda-cska-sofya-maci-hazirliklari-basladi) — Sabah Spor · 2026-11-23T16:39:59+03:00 · turnuva=ECL · kulüp=Trabzonspor
 - [GALATASARAY - ASTON VILLA MAÇI NE ZAMAN? GS Aston Villa maçı hangi kanalda, saat kaçta? Galatasaray-Aston Villa maç kadrosu](https://www.cnnturk.com/spor/futbol/galatasaray-aston-villa-maci-ne-zaman-gs-aston-villa-maci-hangi-kanalda-saat-kacta-galatasaray-aston-villa-mac-kadrosu-3496891) — CNN Türk Spor · 2026-11-23T16:05:50+00:00 · turnuva=CL · kulüp=Galatasaray
-- [UEFA'dan Halil Umut Meler'e görev](https://www.aksam.com.tr/spor/uefadan-halil-umut-melere-gorev/haber-1716743) — Aksam Spor · 2026-11-23T15:58:00+03:00 · turnuva=CL · kulüp=—
-- [UEFA'dan Halil Umut Meler'e görev!](https://www.sabah.com.tr/spor/futbol/2026/11/23/uefadan-halil-umut-melere-gorev) — Sabah Spor · 2026-11-23T15:56:50+03:00 · turnuva=CL · kulüp=—
-- [OSIMHEN ASTON VILLA MAÇINDA OYNAYACAK MI? Şampiyonlar Ligi Galatasaray Aston Villa Maçı Ne Zaman? Victor Osimhen'in Sağlık Durumu Nasıl?](https://www.cnnturk.com/spor/futbol/osimhen-aston-villa-macinda-oynayacak-mi-sampiyonlar-ligi-galatasaray-aston-villa-maci-ne-zaman-victor-osimhenin-saglik-durumu-nasil-3496886) — CNN Türk Spor · 2026-11-23T15:44:48+00:00 · turnuva=CL · kulüp=Galatasaray
-- [Galatasaray, Aston Villa maçına hazır!](https://www.sabah.com.tr/spor/futbol/2026/11/23/galatasaray-aston-villa-macina-hazir) — Sabah Spor · 2026-11-23T15:15:44+03:00 · turnuva=CL · kulüp=Galatasaray
 - [UEFA'dan Halil Umut Meler'e görev!](https://www.haberturk.com/spor/uefa-dan-halil-umut-meler-e-gorev-3929483) — Haberturk Spor · 2026-11-23T13:27:26+00:00 · turnuva=CL · kulüp=—
 - [Unai Emery: 'Zeminin durumu bir mazeret değil'](https://www.hurriyet.com.tr/sporarena/unai-emery-zeminin-durumu-bir-mazeret-degil-43388212) — Hürriyet Spor · 2026-11-23T13:11:00+00:00 · turnuva=CL · kulüp=Galatasaray
 - [Londra'da oynanacak Shakhtar - Fenerbahçe maçına İngiliz hakem](https://www.cnnturk.com/spor/futbol/londra-oynanacak-shakhtar-fenerbahce-macina-ingiliz-hakem-3496894) — CNN Türk Spor · 2026-11-23T13:08:09+00:00 · turnuva=CL · kulüp=Fenerbahçe
@@ -34,7 +33,6 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Galatasaray, Şampiyonlar Ligi'nde yarın Aston Villa'yı ağırlayacak](https://www.aa.com.tr/tr/spor/galatasaray-sampiyonlar-liginde-yarin-aston-villayi-agirlayacak/4133951) — Anadolu Ajansı Spor · 2026-11-23T09:10:06+03:00 · turnuva=CL · kulüp=Galatasaray
 - [İşte Galatasaray-Aston Villa maçı öncesi zeminin son durumu](https://www.hurriyet.com.tr/sporarena/iste-galatasaray-aston-villa-maci-oncesi-zeminin-son-durumu-42667267) — Hürriyet Spor · 2026-11-23T09:04:00+00:00 · turnuva=CL · kulüp=Galatasaray
 - [G.Saray, İngilizler'e karşı 29. randevuda!](https://www.haberturk.com/spor/galatasaray-ingiltere-ekiplerine-karsi-29-macina-cikacak-3929378) — Haberturk Spor · 2026-11-23T08:29:46+00:00 · turnuva=CL · kulüp=Galatasaray
-- [Devler Ligi'nde 5. hafta heyecanı](https://www.haberturk.com/spor/sampiyonlar-ligi-nde-5-hafta-heyecani-3929355) — Haberturk Spor · 2026-11-23T07:29:21+00:00 · turnuva=CL · kulüp=Galatasaray
 - [Galatasaray'da Aston Villa maçı öncesi son durum! 3 eksik var, 1 ismin durumu şüpheli](https://www.hurriyet.com.tr/sporarena/galatasarayda-aston-villa-maci-oncesi-son-durum-3-eksik-var-1-ismin-durumu-supheli-43387571) — Hürriyet Spor · 2026-11-23T06:57:00+00:00 · turnuva=CL · kulüp=Galatasaray
 - [Shakhtar Donetsk'te 8 oyuncu, Fenerbahçe maçı öncesi takımla Londra'ya gidemedi](https://www.aa.com.tr/tr/spor/shakhtar-donetskte-8-oyuncu-fenerbahce-maci-oncesi-takimla-londraya-gidemedi/4133661) — Anadolu Ajansı Spor · 2026-11-22T17:59:12+03:00 · turnuva=CL · kulüp=Fenerbahçe
 - [UEFA Uluslar Ligi'nde dev maç! Eşleşmeler belli oldu](https://www.takvim.com.tr/uluslar-ligi/2026/11/20/uefa-uluslar-liginde-kura-cekimi-gerceklestirildi) — Takvim Spor · 2026-11-20T13:55:54+03:00 · turnuva=— · kulüp=—

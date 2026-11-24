@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-11-23T23:50:09.369194",
+  "generated_at": "2026-11-24T01:41:25.091410",
   "season": "2026-2027",
   "summary": {
-    "evaluated_matches": 107,
+    "evaluated_matches": 108,
     "correct": 51,
-    "accuracy": 0.4766,
+    "accuracy": 0.4722,
     "actual_draws": 17,
     "draws_caught": 3,
     "draw_recall": 0.1765,
     "high_conf_matches": 44,
     "high_conf_correct": 30,
     "high_conf_accuracy": 0.6818,
-    "brier_score": 0.5902,
-    "log_loss": 0.9908,
+    "brier_score": 0.5934,
+    "log_loss": 0.9957,
     "confidence_breakdown": {
       "HIGH": {
         "matches": 44,
@@ -24,13 +24,13 @@
         "log_loss": 0.8229
       },
       "MEDIUM": {
-        "matches": 31,
+        "matches": 32,
         "correct": 9,
-        "accuracy": 0.2903,
-        "avg_stated_probability": 0.4598,
-        "calibration_gap": -0.1695,
-        "brier_score": 0.7045,
-        "log_loss": 1.1446
+        "accuracy": 0.2812,
+        "avg_stated_probability": 0.4605,
+        "calibration_gap": -0.1793,
+        "brier_score": 0.7117,
+        "log_loss": 1.1566
       },
       "LOW": {
         "matches": 32,
@@ -64,11 +64,11 @@
         }
       },
       "away": {
-        "matches": 36,
+        "matches": 37,
         "correct": 16,
-        "accuracy": 0.4444,
+        "accuracy": 0.4324,
         "actual": {
-          "home": 13,
+          "home": 14,
           "draw": 7,
           "away": 16
         }
@@ -79,17 +79,17 @@
   "last_week": {
     "week": 12,
     "summary": {
-      "evaluated_matches": 8,
+      "evaluated_matches": 9,
       "correct": 3,
-      "accuracy": 0.375,
+      "accuracy": 0.3333,
       "actual_draws": 1,
       "draws_caught": 0,
       "draw_recall": 0.0,
       "high_conf_matches": 4,
       "high_conf_correct": 3,
       "high_conf_accuracy": 0.75,
-      "brier_score": 0.5483,
-      "log_loss": 0.9485,
+      "brier_score": 0.5914,
+      "log_loss": 1.0128,
       "confidence_breakdown": {
         "HIGH": {
           "matches": 4,
@@ -101,13 +101,13 @@
           "log_loss": 0.8438
         },
         "MEDIUM": {
-          "matches": 1,
+          "matches": 2,
           "correct": 0,
           "accuracy": 0.0,
-          "avg_stated_probability": 0.506,
-          "calibration_gap": -0.506,
-          "brier_score": 0.8217,
-          "log_loss": 1.2765
+          "avg_stated_probability": 0.494,
+          "calibration_gap": -0.494,
+          "brier_score": 0.8788,
+          "log_loss": 1.4022
         },
         "LOW": {
           "matches": 3,
@@ -141,11 +141,11 @@
           }
         },
         "away": {
-          "matches": 1,
+          "matches": 2,
           "correct": 0,
           "accuracy": 0.0,
           "actual": {
-            "home": 0,
+            "home": 1,
             "draw": 1,
             "away": 0
           }
@@ -280,6 +280,22 @@
         "home_win_probability": 0.938,
         "draw_probability": 0.055,
         "away_win_probability": 0.007
+      },
+      {
+        "match_id": "317885",
+        "date_time": "23.11.2026 20:00",
+        "home_team": "İSTANBUL BAŞAKŞEHİR FK",
+        "away_team": "ARCA ÇORUM FK",
+        "actual_score": "4 - 2",
+        "actual": "home",
+        "predicted": "away",
+        "raw_predicted": "away",
+        "correct": false,
+        "data_confidence": "PLAYED",
+        "prediction_confidence": "MEDIUM",
+        "home_win_probability": 0.217,
+        "draw_probability": 0.301,
+        "away_win_probability": 0.482
       }
     ]
   },
@@ -2740,17 +2756,17 @@
     {
       "week": 12,
       "summary": {
-        "evaluated_matches": 8,
+        "evaluated_matches": 9,
         "correct": 3,
-        "accuracy": 0.375,
+        "accuracy": 0.3333,
         "actual_draws": 1,
         "draws_caught": 0,
         "draw_recall": 0.0,
         "high_conf_matches": 4,
         "high_conf_correct": 3,
         "high_conf_accuracy": 0.75,
-        "brier_score": 0.5483,
-        "log_loss": 0.9485,
+        "brier_score": 0.5914,
+        "log_loss": 1.0128,
         "confidence_breakdown": {
           "HIGH": {
             "matches": 4,
@@ -2762,13 +2778,13 @@
             "log_loss": 0.8438
           },
           "MEDIUM": {
-            "matches": 1,
+            "matches": 2,
             "correct": 0,
             "accuracy": 0.0,
-            "avg_stated_probability": 0.506,
-            "calibration_gap": -0.506,
-            "brier_score": 0.8217,
-            "log_loss": 1.2765
+            "avg_stated_probability": 0.494,
+            "calibration_gap": -0.494,
+            "brier_score": 0.8788,
+            "log_loss": 1.4022
           },
           "LOW": {
             "matches": 3,
@@ -2802,11 +2818,11 @@
             }
           },
           "away": {
-            "matches": 1,
+            "matches": 2,
             "correct": 0,
             "accuracy": 0.0,
             "actual": {
-              "home": 0,
+              "home": 1,
               "draw": 1,
               "away": 0
             }
@@ -2941,6 +2957,22 @@
           "home_win_probability": 0.938,
           "draw_probability": 0.055,
           "away_win_probability": 0.007
+        },
+        {
+          "match_id": "317885",
+          "date_time": "23.11.2026 20:00",
+          "home_team": "İSTANBUL BAŞAKŞEHİR FK",
+          "away_team": "ARCA ÇORUM FK",
+          "actual_score": "4 - 2",
+          "actual": "home",
+          "predicted": "away",
+          "raw_predicted": "away",
+          "correct": false,
+          "data_confidence": "PLAYED",
+          "prediction_confidence": "MEDIUM",
+          "home_win_probability": 0.217,
+          "draw_probability": 0.301,
+          "away_win_probability": 0.482
         }
       ]
     }

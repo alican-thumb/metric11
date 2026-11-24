@@ -4,12 +4,12 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 
 ## Genel Karne
 
-- Değerlendirilen maç: **107**
-- İsabet: **51/107** (%48)
+- Değerlendirilen maç: **108**
+- İsabet: **51/108** (%47)
 - Beraberlik yakalama: **3/17** (%18)
 - Yüksek güvenli maç isabeti: **30/44** (%68)
-- Brier score: **0.590** (düşük daha iyi; 2025-26 referans 0.600)
-- Log loss: **0.991** (düşük daha iyi; 2025-26 referans 1.005)
+- Brier score: **0.593** (düşük daha iyi; 2025-26 referans 0.600)
+- Log loss: **0.996** (düşük daha iyi; 2025-26 referans 1.005)
 
 ### Güven bandı kalibrasyonu
 
@@ -18,7 +18,7 @@ _"Beyan edilen ort. olasılık" ile "İsabet" arasındaki fark büyükse (özell
 | Güven bandı | Maç | İsabet | Beyan edilen ort. olasılık | Brier | Log loss | Referans (2025-26: isabet / brier / logloss) |
 | --- | --- | --- | --- | --- | --- | --- |
 | HIGH | 44 | 30/44 (%68) | %62 | 0.468 | 0.823 | %64 / 0.516 / 0.885 |
-| MEDIUM | 31 | 9/31 (%29) | %46 | 0.705 | 1.145 | %54 / 0.619 / 1.032 |
+| MEDIUM | 32 | 9/32 (%28) | %46 | 0.712 | 1.157 | %54 / 0.619 / 1.032 |
 | LOW | 32 | 12/32 (%38) | %37 | 0.647 | 1.073 | %48 / 0.670 / 1.103 |
 
 ### Seçilen tarafa göre isabet
@@ -29,11 +29,11 @@ _Model hangi tarafı seçtiğinde ne oldu? Belirli bir seçimde (ör. deplasman 
 | --- | --- | --- | --- |
 | Ev | 56 | 32/56 (%57) | 32 / 7 / 17 |
 | Beraberlik | 15 | 3/15 (%20) | 6 / 3 / 6 |
-| Deplasman | 36 | 16/36 (%44) | 13 / 7 / 16 |
+| Deplasman | 37 | 16/37 (%43) | 14 / 7 / 16 |
 
 [Olasılık kovaları ve seçici yayın politikası →](prediction_calibration_audit_2026_2027.html)
 
-## Hafta 12 — 3/8 isabet (%38)
+## Hafta 12 — 3/9 isabet (%33)
 
 | Maç | Skor | Tahmin | Sonuç | Güven |
 | --- | --- | --- | --- | --- |
@@ -45,6 +45,7 @@ _Model hangi tarafı seçtiğinde ne oldu? Belirli bir seçimde (ör. deplasman 
 | KASIMPAŞA A.Ş. - CORENDON ALANYASPOR | 2 - 1 | Ev | ✅ | HIGH |
 | TÜMOSAN KONYASPOR - BEŞİKTAŞ A.Ş. | 2 - 4 | Beraberlik | ❌ | LOW |
 | TRABZONSPOR A.Ş. - EYÜPSPOR | 1 - 0 | Ev | ✅ | HIGH |
+| İSTANBUL BAŞAKŞEHİR FK - ARCA ÇORUM FK | 4 - 2 | Deplasman | ❌ | MEDIUM |
 
 ## Hafta 11 — 4/9 isabet (%44)
 
