@@ -8,8 +8,12 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 - İsabet: **51/108** (%47)
 - Beraberlik yakalama: **3/17** (%18)
 - Yüksek güvenli maç isabeti: **30/44** (%68)
+- Güçlü seçim tanı metriği: **24/35** (%69), kapsam %32
+- İleriye dönük kilitli güçlü seçim: **0/0** (—), kapsam —
 - Brier score: **0.593** (düşük daha iyi; 2025-26 referans 0.600)
 - Log loss: **0.996** (düşük daha iyi; 2025-26 referans 1.005)
+
+_Tanı metriği bugünkü yayın politikasını geçmiş maçlara uygular ve ürün iddiası değildir. İleriye dönük metrik, karar maçtan önce snapshot'a kilitlendikten sonra birikir._
 
 ### Güven bandı kalibrasyonu
 

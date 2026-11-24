@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T14:51:11.581005+00:00",
+  "generated_at": "2026-11-24T15:29:06.927412+00:00",
   "status": "ready",
   "snapshot": {
     "captured_at": "2026-11-11T12:36:00+03:00",
@@ -30,8 +30,8 @@
     }
   },
   "vercel_analytics": {
-    "generated_at": "2026-11-24T14:29:28.558068+00:00",
-    "status": "partial",
+    "generated_at": "2026-11-24T15:29:03.294702+00:00",
+    "status": "connected",
     "source": "vercel_web_analytics_api",
     "plan_note": "Kaynak ve kampanya (UTM) kırılımı ücretli Vercel planı gerektirir; bu rapor doğrulanmış toplam ziyaret ve görüntülemeleri kullanır.",
     "projects": [
@@ -49,9 +49,13 @@
       {
         "key": "prediction_game",
         "domain": "tahmin.metric11.com",
-        "project_id": "prj_y8N95iyHMm3nTxNOH66Onx3KU9DQ",
-        "status": "error",
-        "error": "HTTP Error 404: Not Found"
+        "status": "connected",
+        "measurement": {
+          "since": "2026-09-04T00:00:00.000Z",
+          "until": "2026-11-25T00:00:00.000Z"
+        },
+        "visitors": 4,
+        "pageviews": 9
       }
     ]
   },
@@ -203,7 +207,6 @@
     "Birincil darboğaz gösterim hacmi: yeni seri sayfa yerine mevcut güçlü sayfalara dağıtım ve referans bağlantı sağla.",
     "CTR sağlıklı; başlıkları topluca değiştirme. Öncelik daha fazla sorguda görünmek olmalı.",
     "Keşfedilip indekslenmeyen URL yığını yüksek. Noindex temizliğinin etkisini sonraki GSC güncellemesinde ölç.",
-    "İlk içerik fırsatı: 'tahmini kadro' sorgusu için mevcut hedef sayfayı güçlendir.",
-    "Vercel Web Analytics verisi henüz otomatik alınamıyor; API bağlantısını ve CI kimlik bilgilerini kontrol et."
+    "İlk içerik fırsatı: 'tahmini kadro' sorgusu için mevcut hedef sayfayı güçlendir."
   ]
 }

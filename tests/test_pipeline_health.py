@@ -30,6 +30,17 @@ class PipelineHealthTests(unittest.TestCase):
         self.assertEqual(health["last_derived_success_at"], "2026-11-01T12:00:00+00:00")
         self.assertEqual(health["run_kind"], "DERIVED_REFRESH")
 
+    def test_network_profiles_split_expensive_collectors_from_daily_core(self):
+        core = {" ".join(command) for command in run_daily_pipeline.network_commands("core")}
+        heavy = {" ".join(command) for command in run_daily_pipeline.network_commands("heavy")}
+        full = {" ".join(command) for command in run_daily_pipeline.network_commands("full")}
+
+        self.assertFalse(any("collect_tff_player_profiles" in command for command in core))
+        self.assertTrue(any("collect_tff_player_profiles" in command for command in heavy))
+        self.assertTrue(any("collect_tff_season_fixture" in command for command in core))
+        self.assertEqual(core | heavy, full)
+        self.assertFalse(core & heavy)
+
     def test_failed_run_keeps_previous_success_timestamp(self):
         with tempfile.TemporaryDirectory() as temp_dir:
             health_path = Path(temp_dir) / "pipeline_health.json"

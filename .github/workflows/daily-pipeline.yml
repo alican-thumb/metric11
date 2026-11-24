@@ -47,8 +47,9 @@ jobs:
           X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
           ADMIN_CREDENTIALS_HASH: ${{ secrets.ADMIN_CREDENTIALS_HASH }}
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_PREDICTION_TOKEN: ${{ secrets.VERCEL_PREDICTION_TOKEN }}
           VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-        run: python -m src.run_daily_pipeline --include-network
+        run: python -m src.run_daily_pipeline --include-network --network-profile core
 
       - name: Run pipeline (network yok)
         if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.include_network == 'false' }}

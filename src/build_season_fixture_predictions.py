@@ -192,6 +192,8 @@ def build_predictions() -> dict:
 
             match_id_key = str(m["match_id"])
             frozen = snapshots.get(match_id_key)
+            frozen_publication = None
+            newly_frozen = False
             if frozen is not None:
                 # Bu maç daha önce oynanmış HALDE bulunmuş ve dondurulmuş: aynı tahmini
                 # tekrar kullan, YENİDEN HESAPLAMA. Aksi halde her pipeline çalışmasında
@@ -203,6 +205,7 @@ def build_predictions() -> dict:
                 prediction = frozen["prediction"]
                 raw_predicted = frozen["raw_predicted"]
                 predicted = frozen["predicted"]
+                frozen_publication = frozen.get("publication")
             else:
                 try:
                     match_dt = parse_tff_datetime(m["date_time"])
@@ -227,22 +230,22 @@ def build_predictions() -> dict:
                 predicted = draw_calibrated_prediction(
                     probs["home"], probs["draw"], probs["away"], prediction.get("strength_edge", 0.0)
                 )
-                if is_played:
-                    # İlk kez oynanmış görülüyor: pre-kickoff kalitesindeki (bu haftanın
-                    # kendi sonucunu görmeyen `settled` state'inden türetilen) tahmini
-                    # kalıcı olarak dondur.
-                    snapshots[match_id_key] = {
-                        "frozen_at": datetime.now().isoformat(),
-                        "prediction": prediction,
-                        "raw_predicted": raw_predicted,
-                        "predicted": predicted,
-                    }
-            publication = publication_metadata(
-                prediction,
-                predicted,
-                is_new_team=is_new,
-                policy=publication_policy,
+                newly_frozen = is_played
+            publication = frozen_publication or publication_metadata(
+                prediction, predicted, is_new_team=is_new, policy=publication_policy
             )
+            publication_is_prospective = frozen_publication is not None or newly_frozen
+            if newly_frozen:
+                # Tahminle birlikte o anda geçerli yayın kararını da kilitle. Böylece
+                # gelecekte politika değişse bile "güçlü seçim" karnesi geçmişe dönük
+                # iyileşmiş/kötüleşmiş görünmez.
+                snapshots[match_id_key] = {
+                    "frozen_at": datetime.now().isoformat(),
+                    "prediction": prediction,
+                    "raw_predicted": raw_predicted,
+                    "predicted": predicted,
+                    "publication": publication,
+                }
             week_matches.append({
                 "match_id": m["match_id"],
                 "date_time": m["date_time"],
@@ -253,6 +256,7 @@ def build_predictions() -> dict:
                 "data_confidence": "PLAYED" if is_played else ("LOW_NEW_TEAM" if is_new else confidence_label(prediction)),
                 "raw_predicted": raw_predicted,
                 "predicted": predicted,
+                "publication_is_prospective": publication_is_prospective,
                 **publication,
                 **prediction,
             })

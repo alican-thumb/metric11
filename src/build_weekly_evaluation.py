@@ -83,6 +83,9 @@ def _evaluate_match(m: dict) -> dict | None:
         "correct": predicted == actual,
         "data_confidence": m.get("data_confidence"),
         "prediction_confidence": _prediction_confidence(m),
+        "publication_decision": m.get("publication_decision"),
+        "published_pick": m.get("published_pick"),
+        "publication_is_prospective": bool(m.get("publication_is_prospective")),
         "home_win_probability": m.get("home_win_probability"),
         "draw_probability": m.get("draw_probability"),
         "away_win_probability": m.get("away_win_probability"),
@@ -154,6 +157,23 @@ def _pick_side_breakdown(evaluations: list[dict]) -> dict:
     return out
 
 
+def _selective_publication_summary(evaluations: list[dict], *, prospective_only: bool) -> dict:
+    population = [e for e in evaluations if e.get("publication_is_prospective")] if prospective_only else evaluations
+    published = [
+        e for e in population
+        if e.get("publication_decision") == "PUBLISH" and e.get("published_pick")
+    ]
+    correct = sum(1 for e in published if e.get("published_pick") == e.get("actual"))
+    return {
+        "population_matches": len(population),
+        "published_matches": len(published),
+        "correct": correct,
+        "accuracy": round(correct / len(published), 4) if published else None,
+        "coverage": round(len(published) / len(population), 4) if population else None,
+        "prospective_only": prospective_only,
+    }
+
+
 def _summarize(evaluations: list[dict]) -> dict:
     total = len(evaluations)
     correct = sum(1 for e in evaluations if e["correct"])
@@ -175,6 +195,15 @@ def _summarize(evaluations: list[dict]) -> dict:
         "log_loss": round(sum(log_loss(e) for e in evaluations) / total, 4) if total else None,
         "confidence_breakdown": _confidence_breakdown(evaluations),
         "pick_side_breakdown": _pick_side_breakdown(evaluations),
+        # Diagnostic mevcut politikanın geçmiş maçlara uygulanmış görünümüdür.
+        # Prospective ise yalnız kararın maç oynanmadan önce snapshot'a kilitlendiği
+        # yeni maçları ölçer ve ürün iddialarında kullanılacak asıl metriktir.
+        "selective_publication_diagnostic": _selective_publication_summary(
+            evaluations, prospective_only=False
+        ),
+        "selective_publication_prospective": _selective_publication_summary(
+            evaluations, prospective_only=True
+        ),
     }
 
 
@@ -266,6 +295,8 @@ def _pick_side_lines(breakdown: dict) -> list[str]:
 
 def build_markdown(payload: dict) -> str:
     s = payload["summary"]
+    diagnostic = s.get("selective_publication_diagnostic", {})
+    prospective = s.get("selective_publication_prospective", {})
     lines = [
         "# 2026-27 Süper Lig — Haftalık Tahmin Karnesi",
         "",
@@ -277,8 +308,15 @@ def build_markdown(payload: dict) -> str:
         f"- İsabet: **{s['correct']}/{s['evaluated_matches']}** ({_pct(s['accuracy'])})",
         f"- Beraberlik yakalama: **{s['draws_caught']}/{s['actual_draws']}** ({_pct(s['draw_recall'])})",
         f"- Yüksek güvenli maç isabeti: **{s['high_conf_correct']}/{s['high_conf_matches']}** ({_pct(s['high_conf_accuracy'])})",
+        f"- Güçlü seçim tanı metriği: **{diagnostic.get('correct', 0)}/{diagnostic.get('published_matches', 0)}** "
+        f"({_pct(diagnostic.get('accuracy'))}), kapsam {_pct(diagnostic.get('coverage'))}",
+        f"- İleriye dönük kilitli güçlü seçim: **{prospective.get('correct', 0)}/{prospective.get('published_matches', 0)}** "
+        f"({_pct(prospective.get('accuracy'))}), kapsam {_pct(prospective.get('coverage'))}",
         f"- Brier score: **{_fmt_score(s.get('brier_score'))}** (düşük daha iyi; 2025-26 referans 0.600)",
         f"- Log loss: **{_fmt_score(s.get('log_loss'))}** (düşük daha iyi; 2025-26 referans 1.005)",
+        "",
+        "_Tanı metriği bugünkü yayın politikasını geçmiş maçlara uygular ve ürün iddiası değildir. "
+        "İleriye dönük metrik, karar maçtan önce snapshot'a kilitlendikten sonra birikir._",
         "",
         "### Güven bandı kalibrasyonu",
         "",

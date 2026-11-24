@@ -9,6 +9,7 @@ from src.build_season_fixture_predictions import (
     load_publication_policy,
     publication_metadata,
 )
+from src.build_weekly_evaluation import _selective_publication_summary
 
 
 def prediction(home: float, draw: float, away: float) -> dict:
@@ -20,6 +21,24 @@ def prediction(home: float, draw: float, away: float) -> dict:
 
 
 class PredictionPublicationTests(unittest.TestCase):
+    def test_prospective_publication_metric_excludes_retrospective_rows(self):
+        rows = [
+            {
+                "actual": "home", "published_pick": "home", "publication_decision": "PUBLISH",
+                "publication_is_prospective": True,
+            },
+            {
+                "actual": "away", "published_pick": "home", "publication_decision": "PUBLISH",
+                "publication_is_prospective": False,
+            },
+        ]
+
+        result = _selective_publication_summary(rows, prospective_only=True)
+
+        self.assertEqual(result["population_matches"], 1)
+        self.assertEqual(result["published_matches"], 1)
+        self.assertEqual(result["accuracy"], 1.0)
+
     def test_high_confidence_pick_is_published(self):
         result = publication_metadata(
             prediction(0.62, 0.22, 0.16),

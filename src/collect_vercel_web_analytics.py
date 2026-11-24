@@ -21,11 +21,13 @@ PROJECTS = (
         "key": "main",
         "domain": "metric11.com",
         "project_id": "prj_tGK6hRB5fb69R3ut2FIKsIhzQO5A",
+        "token_env": "VERCEL_TOKEN",
     },
     {
         "key": "prediction_game",
         "domain": "tahmin.metric11.com",
         "project_id": "prj_y8N95iyHMm3nTxNOH66Onx3KU9DQ",
+        "token_env": "VERCEL_PREDICTION_TOKEN",
     },
 )
 
@@ -70,19 +72,61 @@ def normalize_project(project: dict, response: dict) -> dict:
     }
 
 
-def collect(team_id: str, token: str | None = None, use_cli: bool = False) -> dict:
+def _public_error(project: dict, exc: Exception) -> dict:
+    status_code = getattr(exc, "code", None)
+    if status_code == 404:
+        message = "Analytics projesi bu token/team kapsamında görünmüyor; proje veya token erişimini kontrol edin."
+    elif status_code in (401, 403):
+        message = "Analytics tokenı bu projeyi okumaya yetkili değil."
+    else:
+        message = str(exc)[:300]
+    return {
+        "key": project["key"],
+        "domain": project["domain"],
+        "status": "error",
+        "error_code": status_code,
+        "error": message,
+    }
+
+
+def _previous_project(previous: dict | None, key: str) -> dict | None:
+    return next((row for row in (previous or {}).get("projects", []) if row.get("key") == key), None)
+
+
+def collect(
+    team_id: str,
+    token: str | None = None,
+    use_cli: bool = False,
+    *,
+    project_tokens: dict[str, str] | None = None,
+    previous: dict | None = None,
+) -> dict:
     rows = []
     for project in PROJECTS:
         url = _query_url(team_id, project["project_id"])
         try:
-            response = fetch_with_cli(url) if use_cli else fetch_with_token(url, token or "")
+            project_token = (project_tokens or {}).get(project["key"]) or token or ""
+            response = fetch_with_cli(url) if use_cli else fetch_with_token(url, project_token)
             rows.append(normalize_project(project, response))
         except (OSError, RuntimeError, ValueError, json.JSONDecodeError, urllib.error.URLError) as exc:
-            rows.append({**project, "status": "error", "error": str(exc)[:300]})
+            error = _public_error(project, exc)
+            stale = _previous_project(previous, project["key"])
+            if stale and stale.get("status") in {"connected", "stale"}:
+                error.update(
+                    {
+                        "status": "stale",
+                        "measurement": stale.get("measurement"),
+                        "visitors": stale.get("visitors", 0),
+                        "pageviews": stale.get("pageviews", 0),
+                        "last_successful_at": (previous or {}).get("generated_at"),
+                    }
+                )
+            rows.append(error)
     connected = [row for row in rows if row["status"] == "connected"]
+    usable = [row for row in rows if row["status"] in {"connected", "stale"}]
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "status": "connected" if len(connected) == len(rows) else "partial" if connected else "unavailable",
+        "status": "connected" if len(connected) == len(rows) else "partial" if usable else "unavailable",
         "source": "vercel_web_analytics_api",
         "plan_note": "Kaynak ve kampanya (UTM) kırılımı ücretli Vercel planı gerektirir; bu rapor doğrulanmış toplam ziyaret ve görüntülemeleri kullanır.",
         "projects": rows,
@@ -97,8 +141,20 @@ def main() -> None:
     token = os.getenv("VERCEL_TOKEN")
     if not token and not args.use_vercel_cli:
         raise SystemExit("VERCEL_TOKEN yok. Yerelde --use-vercel-cli kullanabilirsiniz.")
-    payload = collect(os.getenv("VERCEL_ORG_ID", DEFAULT_TEAM_ID), token=token, use_cli=args.use_vercel_cli)
     output = Path(args.output)
+    try:
+        previous = json.loads(output.read_text(encoding="utf-8")) if output.exists() else None
+    except (json.JSONDecodeError, OSError):
+        previous = None
+    prediction_token = os.getenv("VERCEL_PREDICTION_TOKEN")
+    project_tokens = {"prediction_game": prediction_token} if prediction_token else None
+    payload = collect(
+        os.getenv("VERCEL_ORG_ID", DEFAULT_TEAM_ID),
+        token=token,
+        use_cli=args.use_vercel_cli,
+        project_tokens=project_tokens,
+        previous=previous,
+    )
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"Vercel Analytics: {payload['status']} -> {output}")

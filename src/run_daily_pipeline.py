@@ -178,17 +178,59 @@ NETWORK_COMMANDS = [
     ["python", "-m", "src.analyze_news_with_claude", "--only-relevant"],
 ]
 
+# Günlük akışta fikstür, kadro değişikliği, maç günü ve haber kaynakları taze
+# kalmalı. Buna karşılık yüzlerce oyuncu profilini yeniden tarayan işler her gün
+# çalıştırıldığında hem kaynakları gereksiz yorar hem de tüm veri hattını kırılgan
+# hale getirir. Tam liste geriye dönük uyumluluk için NETWORK_COMMANDS olarak
+# korunur; çalışma profilleri bu listeden deterministik biçimde türetilir.
+HEAVY_NETWORK_MODULES = {
+    "src.collect_tff_player_profiles",
+    "src.collect_transfermarkt_squad",
+    "src.collect_transfermarkt_player_profiles",
+    "src.collect_head_to_head_history",
+    "src.collect_national_team_form",
+}
+
+
+def _command_module(command: list[str]) -> str | None:
+    try:
+        return command[command.index("-m") + 1]
+    except (ValueError, IndexError):
+        return None
+
+
+HEAVY_NETWORK_COMMANDS = [
+    command for command in NETWORK_COMMANDS if _command_module(command) in HEAVY_NETWORK_MODULES
+]
+CORE_NETWORK_COMMANDS = [
+    command for command in NETWORK_COMMANDS if _command_module(command) not in HEAVY_NETWORK_MODULES
+]
+
+
+def network_commands(profile: str) -> list[list[str]]:
+    if profile == "core":
+        return CORE_NETWORK_COMMANDS
+    if profile == "heavy":
+        return HEAVY_NETWORK_COMMANDS
+    return NETWORK_COMMANDS
+
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="metric11 günlük veri/analiz pipeline runner.")
     parser.add_argument("--include-network", action="store_true", help="Scraper/API collector komutlarını da çalıştırır.")
+    parser.add_argument(
+        "--network-profile",
+        choices=("core", "heavy", "full"),
+        default="full",
+        help="core=günlük kritik kaynaklar, heavy=haftalık profil taramaları, full=ikisi birlikte.",
+    )
     parser.add_argument("--stop-on-error", action="store_true")
     parser.add_argument("--output", default=str(PROCESSED_DIR / "daily_pipeline_run_latest.json"))
     args = parser.parse_args()
 
     commands = []
     if args.include_network:
-        commands.extend(NETWORK_COMMANDS)
+        commands.extend(network_commands(args.network_profile))
     commands.extend(DEFAULT_COMMANDS)
 
     rows = []
@@ -200,6 +242,7 @@ def main() -> None:
     payload = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "include_network": args.include_network,
+        "network_profile": args.network_profile if args.include_network else None,
         "command_count": len(commands),
         "ok_count": sum(1 for row in rows if row["returncode"] == 0),
         "failed_count": sum(1 for row in rows if row["returncode"] != 0),
@@ -270,7 +313,11 @@ def write_pipeline_health(payload: dict, post_report_rows: list[dict] | None = N
     health = {
         "generated_at": generated_at,
         "status": "SUCCESS" if successful else "FAILED",
-        "run_kind": "FULL_NETWORK" if payload.get("include_network") else "DERIVED_REFRESH",
+        "run_kind": (
+            f"{str(payload.get('network_profile') or 'full').upper()}_NETWORK"
+            if payload.get("include_network")
+            else "DERIVED_REFRESH"
+        ),
         "include_network": bool(payload.get("include_network")),
         "command_count": payload.get("command_count", 0) + len(post_rows),
         "ok_count": payload.get("ok_count", 0) + sum(1 for row in post_rows if row.get("returncode") == 0),
@@ -298,6 +345,7 @@ def build_markdown(payload: dict) -> str:
         "",
         f"- Zaman: {payload['generated_at']}",
         f"- Network dahil: {payload['include_network']}",
+        f"- Network profili: {payload.get('network_profile') or 'yok'}",
         f"- Komut: {payload['command_count']}",
         f"- Başarılı: {payload['ok_count']}",
         f"- Hatalı: {payload['failed_count']}",
