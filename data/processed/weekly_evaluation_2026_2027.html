@@ -68,14 +68,14 @@
 <h2>Genel Karne</h2>
 
 <ul>
-<li>Değerlendirilen maç: <strong>0</strong></li>
-<li>İsabet: <strong>0/0</strong> (%0)</li>
-<li>Beraberlik yakalama: <strong>0/0</strong> (—)</li>
-<li>Yüksek güvenli maç isabeti: <strong>0/0</strong> (—)</li>
-<li>Güçlü seçim tanı metriği: <strong>0/0</strong> (—), kapsam —</li>
+<li>Değerlendirilen maç: <strong>108</strong></li>
+<li>İsabet: <strong>51/108</strong> (%47)</li>
+<li>Beraberlik yakalama: <strong>3/17</strong> (%18)</li>
+<li>Yüksek güvenli maç isabeti: <strong>30/44</strong> (%68)</li>
+<li>Güçlü seçim tanı metriği: <strong>0/0</strong> (—), kapsam %0</li>
 <li>İleriye dönük kilitli güçlü seçim: <strong>0/0</strong> (—), kapsam —</li>
-<li>Brier score: <strong>—</strong> (düşük daha iyi; 2025-26 referans 0.600)</li>
-<li>Log loss: <strong>—</strong> (düşük daha iyi; 2025-26 referans 1.005)</li>
+<li>Brier score: <strong>0.593</strong> (düşük daha iyi; 2025-26 referans 0.600)</li>
+<li>Log loss: <strong>0.996</strong> (düşük daha iyi; 2025-26 referans 1.005)</li>
 </ul>
 
 <p><em>Tanı metriği bugünkü yayın politikasını geçmiş maçlara uygular ve ürün iddiası değildir. İleriye dönük metrik, karar maçtan önce snapshot&#x27;a kilitlendikten sonra birikir.</em></p>
@@ -95,29 +95,29 @@
 </tr></thead><tbody>
 <tr>
 <td>HIGH</td>
-<td>0</td>
-<td>—</td>
-<td>—</td>
-<td>—</td>
-<td>—</td>
+<td>44</td>
+<td>30/44 (%68)</td>
+<td>%62</td>
+<td>0.468</td>
+<td>0.823</td>
 <td>%64 / 0.516 / 0.885</td>
 </tr>
 <tr>
 <td>MEDIUM</td>
-<td>0</td>
-<td>—</td>
-<td>—</td>
-<td>—</td>
-<td>—</td>
+<td>32</td>
+<td>9/32 (%28)</td>
+<td>%46</td>
+<td>0.712</td>
+<td>1.157</td>
 <td>%54 / 0.619 / 1.032</td>
 </tr>
 <tr>
 <td>LOW</td>
-<td>0</td>
-<td>—</td>
-<td>—</td>
-<td>—</td>
-<td>—</td>
+<td>32</td>
+<td>12/32 (%38)</td>
+<td>%37</td>
+<td>0.647</td>
+<td>1.073</td>
 <td>%48 / 0.670 / 1.103</td>
 </tr>
 </tbody></table>
@@ -132,11 +132,915 @@
 <th>İsabet</th>
 <th>Gerçekleşen (Ev / X / Dep)</th>
 </tr></thead><tbody>
+<tr>
+<td>Ev</td>
+<td>56</td>
+<td>32/56 (%57)</td>
+<td>32 / 7 / 17</td>
+</tr>
+<tr>
+<td>Beraberlik</td>
+<td>15</td>
+<td>3/15 (%20)</td>
+<td>6 / 3 / 6</td>
+</tr>
+<tr>
+<td>Deplasman</td>
+<td>37</td>
+<td>16/37 (%43)</td>
+<td>14 / 7 / 16</td>
+</tr>
 </tbody></table>
 
 <p><a href="prediction_calibration_audit_2026_2027.html">Olasılık kovaları ve seçici yayın politikası →</a></p>
 
-<p><em>Sezon henüz başlamadı; ilk maçlar oynandıkça karne otomatik dolacak.</em></p>
+<h2>Hafta 12 — 3/9 isabet (%33)</h2>
+
+<table class="md-table"><thead><tr>
+<th>Maç</th>
+<th>Skor</th>
+<th>Tahmin</th>
+<th>Sonuç</th>
+<th>Güven</th>
+</tr></thead><tbody>
+<tr>
+<td>GENÇLERBİRLİĞİ - GAZİANTEP FUTBOL KULÜBÜ A.Ş.</td>
+<td>1 - 0</td>
+<td>Beraberlik</td>
+<td>❌</td>
+<td>LOW</td>
+</tr>
+<tr>
+<td>AMED SPORTİF FAALİYETLER - ÇAYKUR RİZESPOR A.Ş.</td>
+<td>0 - 2</td>
+<td>Ev</td>
+<td>❌</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>GALATASARAY A.Ş. - SAMSUNSPOR A.Ş.</td>
+<td>2 - 1</td>
+<td>Ev</td>
+<td>✅</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>KOCAELİSPOR - FENERBAHÇE A.Ş.</td>
+<td>2 - 2</td>
+<td>Deplasman</td>
+<td>❌</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
+<td>ERZURUMSPOR FK - GÖZTEPE A.Ş.</td>
+<td>0 - 1</td>
+<td>Beraberlik</td>
+<td>❌</td>
+<td>LOW</td>
+</tr>
+<tr>
+<td>KASIMPAŞA A.Ş. - CORENDON ALANYASPOR</td>
+<td>2 - 1</td>
+<td>Ev</td>
+<td>✅</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>TÜMOSAN KONYASPOR - BEŞİKTAŞ A.Ş.</td>
+<td>2 - 4</td>
+<td>Beraberlik</td>
+<td>❌</td>
+<td>LOW</td>
+</tr>
+<tr>
+<td>TRABZONSPOR A.Ş. - EYÜPSPOR</td>
+<td>1 - 0</td>
+<td>Ev</td>
+<td>✅</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>İSTANBUL BAŞAKŞEHİR FK - ARCA ÇORUM FK</td>
+<td>4 - 2</td>
+<td>Deplasman</td>
+<td>❌</td>
+<td>MEDIUM</td>
+</tr>
+</tbody></table>
+
+<h2>Hafta 11 — 4/9 isabet (%44)</h2>
+
+<table class="md-table"><thead><tr>
+<th>Maç</th>
+<th>Skor</th>
+<th>Tahmin</th>
+<th>Sonuç</th>
+<th>Güven</th>
+</tr></thead><tbody>
+<tr>
+<td>GAZİANTEP FUTBOL KULÜBÜ A.Ş. - KASIMPAŞA A.Ş.</td>
+<td>0 - 2</td>
+<td>Beraberlik</td>
+<td>❌</td>
+<td>LOW</td>
+</tr>
+<tr>
+<td>EYÜPSPOR - KOCAELİSPOR</td>
+<td>0 - 2</td>
+<td>Deplasman</td>
+<td>✅</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>SAMSUNSPOR A.Ş. - TÜMOSAN KONYASPOR</td>
+<td>1 - 0</td>
+<td>Beraberlik</td>
+<td>❌</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
+<td>GALATASARAY A.Ş. - AMED SPORTİF FAALİYETLER</td>
+<td>4 - 3</td>
+<td>Deplasman</td>
+<td>❌</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
+<td>GÖZTEPE A.Ş. - İSTANBUL BAŞAKŞEHİR FK</td>
+<td>1 - 2</td>
+<td>Ev</td>
+<td>❌</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>ÇAYKUR RİZESPOR A.Ş. - ERZURUMSPOR FK</td>
+<td>2 - 1</td>
+<td>Beraberlik</td>
+<td>❌</td>
+<td>LOW</td>
+</tr>
+<tr>
+<td>ARCA ÇORUM FK - FENERBAHÇE A.Ş.</td>
+<td>0 - 5</td>
+<td>Deplasman</td>
+<td>✅</td>
+<td>LOW</td>
+</tr>
+<tr>
+<td>CORENDON ALANYASPOR - TRABZONSPOR A.Ş.</td>
+<td>0 - 2</td>
+<td>Deplasman</td>
+<td>✅</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>BEŞİKTAŞ A.Ş. - GENÇLERBİRLİĞİ</td>
+<td>3 - 0</td>
+<td>Ev</td>
+<td>✅</td>
+<td>HIGH</td>
+</tr>
+</tbody></table>
+
+<h2>Hafta 10 — 5/9 isabet (%56)</h2>
+
+<table class="md-table"><thead><tr>
+<th>Maç</th>
+<th>Skor</th>
+<th>Tahmin</th>
+<th>Sonuç</th>
+<th>Güven</th>
+</tr></thead><tbody>
+<tr>
+<td>TÜMOSAN KONYASPOR - GALATASARAY A.Ş.</td>
+<td>0 - 4</td>
+<td>Deplasman</td>
+<td>✅</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>ERZURUMSPOR FK - ARCA ÇORUM FK</td>
+<td>1 - 3</td>
+<td>Ev</td>
+<td>❌</td>
+<td>LOW</td>
+</tr>
+<tr>
+<td>KOCAELİSPOR - ÇAYKUR RİZESPOR A.Ş.</td>
+<td>0 - 0</td>
+<td>Beraberlik</td>
+<td>✅</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
+<td>FENERBAHÇE A.Ş. - GÖZTEPE A.Ş.</td>
+<td>1 - 2</td>
+<td>Ev</td>
+<td>❌</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>AMED SPORTİF FAALİYETLER - EYÜPSPOR</td>
+<td>5 - 1</td>
+<td>Ev</td>
+<td>✅</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>TRABZONSPOR A.Ş. - GAZİANTEP FUTBOL KULÜBÜ A.Ş.</td>
+<td>2 - 0</td>
+<td>Ev</td>
+<td>✅</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>İSTANBUL BAŞAKŞEHİR FK - SAMSUNSPOR A.Ş.</td>
+<td>5 - 2</td>
+<td>Ev</td>
+<td>✅</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
+<td>KASIMPAŞA A.Ş. - BEŞİKTAŞ A.Ş.</td>
+<td>2 - 2</td>
+<td>Deplasman</td>
+<td>❌</td>
+<td>LOW</td>
+</tr>
+<tr>
+<td>GENÇLERBİRLİĞİ - CORENDON ALANYASPOR</td>
+<td>5 - 0</td>
+<td>Beraberlik</td>
+<td>❌</td>
+<td>LOW</td>
+</tr>
+</tbody></table>
+
+<h2>Hafta 9 — 5/9 isabet (%56)</h2>
+
+<table class="md-table"><thead><tr>
+<th>Maç</th>
+<th>Skor</th>
+<th>Tahmin</th>
+<th>Sonuç</th>
+<th>Güven</th>
+</tr></thead><tbody>
+<tr>
+<td>CORENDON ALANYASPOR - KOCAELİSPOR</td>
+<td>1 - 2</td>
+<td>Beraberlik</td>
+<td>❌</td>
+<td>LOW</td>
+</tr>
+<tr>
+<td>EYÜPSPOR - KASIMPAŞA A.Ş.</td>
+<td>0 - 1</td>
+<td>Deplasman</td>
+<td>✅</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>GAZİANTEP FUTBOL KULÜBÜ A.Ş. - ERZURUMSPOR FK</td>
+<td>1 - 3</td>
+<td>Ev</td>
+<td>❌</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
+<td>SAMSUNSPOR A.Ş. - AMED SPORTİF FAALİYETLER</td>
+<td>1 - 2</td>
+<td>Deplasman</td>
+<td>✅</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>TÜMOSAN KONYASPOR - GENÇLERBİRLİĞİ</td>
+<td>2 - 0</td>
+<td>Beraberlik</td>
+<td>❌</td>
+<td>LOW</td>
+</tr>
+<tr>
+<td>GÖZTEPE A.Ş. - ARCA ÇORUM FK</td>
+<td>2 - 0</td>
+<td>Deplasman</td>
+<td>❌</td>
+<td>LOW</td>
+</tr>
+<tr>
+<td>ÇAYKUR RİZESPOR A.Ş. - TRABZONSPOR A.Ş.</td>
+<td>3 - 4</td>
+<td>Deplasman</td>
+<td>✅</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>BEŞİKTAŞ A.Ş. - İSTANBUL BAŞAKŞEHİR FK</td>
+<td>2 - 0</td>
+<td>Ev</td>
+<td>✅</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>GALATASARAY A.Ş. - FENERBAHÇE A.Ş.</td>
+<td>2 - 1</td>
+<td>Ev</td>
+<td>✅</td>
+<td>LOW</td>
+</tr>
+</tbody></table>
+
+<h2>Hafta 8 — 7/9 isabet (%78)</h2>
+
+<table class="md-table"><thead><tr>
+<th>Maç</th>
+<th>Skor</th>
+<th>Tahmin</th>
+<th>Sonuç</th>
+<th>Güven</th>
+</tr></thead><tbody>
+<tr>
+<td>ARCA ÇORUM FK - ÇAYKUR RİZESPOR A.Ş.</td>
+<td>2 - 1</td>
+<td>Ev</td>
+<td>✅</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
+<td>ERZURUMSPOR FK - EYÜPSPOR</td>
+<td>2 - 0</td>
+<td>Ev</td>
+<td>✅</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>AMED SPORTİF FAALİYETLER - TÜMOSAN KONYASPOR</td>
+<td>1 - 0</td>
+<td>Ev</td>
+<td>✅</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>GENÇLERBİRLİĞİ - GALATASARAY A.Ş.</td>
+<td>0 - 1</td>
+<td>Deplasman</td>
+<td>✅</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
+<td>FENERBAHÇE A.Ş. - CORENDON ALANYASPOR</td>
+<td>3 - 0</td>
+<td>Ev</td>
+<td>✅</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>KASIMPAŞA A.Ş. - SAMSUNSPOR A.Ş.</td>
+<td>4 - 1</td>
+<td>Ev</td>
+<td>✅</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>KOCAELİSPOR - GÖZTEPE A.Ş.</td>
+<td>1 - 2</td>
+<td>Beraberlik</td>
+<td>❌</td>
+<td>LOW</td>
+</tr>
+<tr>
+<td>İSTANBUL BAŞAKŞEHİR FK - GAZİANTEP FUTBOL KULÜBÜ A.Ş.</td>
+<td>2 - 1</td>
+<td>Beraberlik</td>
+<td>❌</td>
+<td>LOW</td>
+</tr>
+<tr>
+<td>TRABZONSPOR A.Ş. - BEŞİKTAŞ A.Ş.</td>
+<td>2 - 0</td>
+<td>Ev</td>
+<td>✅</td>
+<td>LOW</td>
+</tr>
+</tbody></table>
+
+<h2>Hafta 7 — 6/9 isabet (%67)</h2>
+
+<table class="md-table"><thead><tr>
+<th>Maç</th>
+<th>Skor</th>
+<th>Tahmin</th>
+<th>Sonuç</th>
+<th>Güven</th>
+</tr></thead><tbody>
+<tr>
+<td>GALATASARAY A.Ş. - KASIMPAŞA A.Ş.</td>
+<td>3 - 1</td>
+<td>Ev</td>
+<td>✅</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>GENÇLERBİRLİĞİ - AMED SPORTİF FAALİYETLER</td>
+<td>2 - 2</td>
+<td>Deplasman</td>
+<td>❌</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
+<td>CORENDON ALANYASPOR - ERZURUMSPOR FK</td>
+<td>0 - 0</td>
+<td>Ev</td>
+<td>❌</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>SAMSUNSPOR A.Ş. - TRABZONSPOR A.Ş.</td>
+<td>0 - 3</td>
+<td>Deplasman</td>
+<td>✅</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>ÇAYKUR RİZESPOR A.Ş. - FENERBAHÇE A.Ş.</td>
+<td>0 - 3</td>
+<td>Deplasman</td>
+<td>✅</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>TÜMOSAN KONYASPOR - İSTANBUL BAŞAKŞEHİR FK</td>
+<td>0 - 0</td>
+<td>Deplasman</td>
+<td>❌</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
+<td>GAZİANTEP FUTBOL KULÜBÜ A.Ş. - ARCA ÇORUM FK</td>
+<td>0 - 3</td>
+<td>Deplasman</td>
+<td>✅</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
+<td>BEŞİKTAŞ A.Ş. - KOCAELİSPOR</td>
+<td>2 - 1</td>
+<td>Ev</td>
+<td>✅</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>EYÜPSPOR - GÖZTEPE A.Ş.</td>
+<td>0 - 4</td>
+<td>Deplasman</td>
+<td>✅</td>
+<td>LOW</td>
+</tr>
+</tbody></table>
+
+<h2>Hafta 6 — 4/9 isabet (%44)</h2>
+
+<table class="md-table"><thead><tr>
+<th>Maç</th>
+<th>Skor</th>
+<th>Tahmin</th>
+<th>Sonuç</th>
+<th>Güven</th>
+</tr></thead><tbody>
+<tr>
+<td>KASIMPAŞA A.Ş. - TÜMOSAN KONYASPOR</td>
+<td>0 - 0</td>
+<td>Ev</td>
+<td>❌</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>ARCA ÇORUM FK - CORENDON ALANYASPOR</td>
+<td>1 - 2</td>
+<td>Ev</td>
+<td>❌</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>KOCAELİSPOR - GAZİANTEP FUTBOL KULÜBÜ A.Ş.</td>
+<td>2 - 0</td>
+<td>Ev</td>
+<td>✅</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
+<td>TRABZONSPOR A.Ş. - GALATASARAY A.Ş.</td>
+<td>4 - 0</td>
+<td>Deplasman</td>
+<td>❌</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>İSTANBUL BAŞAKŞEHİR FK - GENÇLERBİRLİĞİ</td>
+<td>4 - 0</td>
+<td>Ev</td>
+<td>✅</td>
+<td>LOW</td>
+</tr>
+<tr>
+<td>FENERBAHÇE A.Ş. - EYÜPSPOR</td>
+<td>8 - 0</td>
+<td>Ev</td>
+<td>✅</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>ERZURUMSPOR FK - SAMSUNSPOR A.Ş.</td>
+<td>1 - 0</td>
+<td>Deplasman</td>
+<td>❌</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
+<td>AMED SPORTİF FAALİYETLER - BEŞİKTAŞ A.Ş.</td>
+<td>3 - 2</td>
+<td>Ev</td>
+<td>✅</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
+<td>GÖZTEPE A.Ş. - ÇAYKUR RİZESPOR A.Ş.</td>
+<td>2 - 2</td>
+<td>Ev</td>
+<td>❌</td>
+<td>LOW</td>
+</tr>
+</tbody></table>
+
+<h2>Hafta 5 — 3/9 isabet (%33)</h2>
+
+<table class="md-table"><thead><tr>
+<th>Maç</th>
+<th>Skor</th>
+<th>Tahmin</th>
+<th>Sonuç</th>
+<th>Güven</th>
+</tr></thead><tbody>
+<tr>
+<td>BEŞİKTAŞ A.Ş. - ERZURUMSPOR FK</td>
+<td>3 - 0</td>
+<td>Ev</td>
+<td>✅</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>EYÜPSPOR - ÇAYKUR RİZESPOR A.Ş.</td>
+<td>0 - 2</td>
+<td>Ev</td>
+<td>❌</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
+<td>SAMSUNSPOR A.Ş. - ARCA ÇORUM FK</td>
+<td>1 - 5</td>
+<td>Ev</td>
+<td>❌</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
+<td>CORENDON ALANYASPOR - GÖZTEPE A.Ş.</td>
+<td>2 - 2</td>
+<td>Beraberlik</td>
+<td>✅</td>
+<td>LOW</td>
+</tr>
+<tr>
+<td>TÜMOSAN KONYASPOR - TRABZONSPOR A.Ş.</td>
+<td>1 - 0</td>
+<td>Deplasman</td>
+<td>❌</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
+<td>GENÇLERBİRLİĞİ - KASIMPAŞA A.Ş.</td>
+<td>1 - 2</td>
+<td>Ev</td>
+<td>❌</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>AMED SPORTİF FAALİYETLER - İSTANBUL BAŞAKŞEHİR FK</td>
+<td>5 - 0</td>
+<td>Deplasman</td>
+<td>❌</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
+<td>GALATASARAY A.Ş. - KOCAELİSPOR</td>
+<td>1 - 0</td>
+<td>Ev</td>
+<td>✅</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>GAZİANTEP FUTBOL KULÜBÜ A.Ş. - FENERBAHÇE A.Ş.</td>
+<td>0 - 0</td>
+<td>Deplasman</td>
+<td>❌</td>
+<td>HIGH</td>
+</tr>
+</tbody></table>
+
+<h2>Hafta 4 — 2/9 isabet (%22)</h2>
+
+<table class="md-table"><thead><tr>
+<th>Maç</th>
+<th>Skor</th>
+<th>Tahmin</th>
+<th>Sonuç</th>
+<th>Güven</th>
+</tr></thead><tbody>
+<tr>
+<td>İSTANBUL BAŞAKŞEHİR FK - GALATASARAY A.Ş.</td>
+<td>2 - 3</td>
+<td>Deplasman</td>
+<td>✅</td>
+<td>LOW</td>
+</tr>
+<tr>
+<td>ERZURUMSPOR FK - TÜMOSAN KONYASPOR</td>
+<td>1 - 0</td>
+<td>Deplasman</td>
+<td>❌</td>
+<td>LOW</td>
+</tr>
+<tr>
+<td>FENERBAHÇE A.Ş. - BEŞİKTAŞ A.Ş.</td>
+<td>1 - 2</td>
+<td>Ev</td>
+<td>❌</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
+<td>KASIMPAŞA A.Ş. - AMED SPORTİF FAALİYETLER</td>
+<td>2 - 2</td>
+<td>Deplasman</td>
+<td>❌</td>
+<td>LOW</td>
+</tr>
+<tr>
+<td>ARCA ÇORUM FK - EYÜPSPOR</td>
+<td>3 - 0</td>
+<td>Deplasman</td>
+<td>❌</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
+<td>TRABZONSPOR A.Ş. - GENÇLERBİRLİĞİ</td>
+<td>5 - 0</td>
+<td>Deplasman</td>
+<td>❌</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
+<td>KOCAELİSPOR - SAMSUNSPOR A.Ş.</td>
+<td>1 - 0</td>
+<td>Ev</td>
+<td>✅</td>
+<td>LOW</td>
+</tr>
+<tr>
+<td>ÇAYKUR RİZESPOR A.Ş. - CORENDON ALANYASPOR</td>
+<td>0 - 1</td>
+<td>Beraberlik</td>
+<td>❌</td>
+<td>LOW</td>
+</tr>
+<tr>
+<td>GÖZTEPE A.Ş. - GAZİANTEP FUTBOL KULÜBÜ A.Ş.</td>
+<td>2 - 4</td>
+<td>Ev</td>
+<td>❌</td>
+<td>MEDIUM</td>
+</tr>
+</tbody></table>
+
+<h2>Hafta 3 — 6/9 isabet (%67)</h2>
+
+<table class="md-table"><thead><tr>
+<th>Maç</th>
+<th>Skor</th>
+<th>Tahmin</th>
+<th>Sonuç</th>
+<th>Güven</th>
+</tr></thead><tbody>
+<tr>
+<td>GENÇLERBİRLİĞİ - ERZURUMSPOR FK</td>
+<td>1 - 1</td>
+<td>Ev</td>
+<td>❌</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>TÜMOSAN KONYASPOR - KOCAELİSPOR</td>
+<td>1 - 2</td>
+<td>Ev</td>
+<td>❌</td>
+<td>LOW</td>
+</tr>
+<tr>
+<td>GAZİANTEP FUTBOL KULÜBÜ A.Ş. - ÇAYKUR RİZESPOR A.Ş.</td>
+<td>1 - 2</td>
+<td>Deplasman</td>
+<td>✅</td>
+<td>LOW</td>
+</tr>
+<tr>
+<td>GALATASARAY A.Ş. - GÖZTEPE A.Ş.</td>
+<td>3 - 2</td>
+<td>Ev</td>
+<td>✅</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>EYÜPSPOR - CORENDON ALANYASPOR</td>
+<td>2 - 1</td>
+<td>Ev</td>
+<td>✅</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
+<td>İSTANBUL BAŞAKŞEHİR FK - KASIMPAŞA A.Ş.</td>
+<td>1 - 1</td>
+<td>Ev</td>
+<td>❌</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>SAMSUNSPOR A.Ş. - FENERBAHÇE A.Ş.</td>
+<td>0 - 2</td>
+<td>Deplasman</td>
+<td>✅</td>
+<td>LOW</td>
+</tr>
+<tr>
+<td>AMED SPORTİF FAALİYETLER - TRABZONSPOR A.Ş.</td>
+<td>2 - 1</td>
+<td>Ev</td>
+<td>✅</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
+<td>BEŞİKTAŞ A.Ş. - ARCA ÇORUM FK</td>
+<td>6 - 2</td>
+<td>Ev</td>
+<td>✅</td>
+<td>HIGH</td>
+</tr>
+</tbody></table>
+
+<h2>Hafta 2 — 2/9 isabet (%22)</h2>
+
+<table class="md-table"><thead><tr>
+<th>Maç</th>
+<th>Skor</th>
+<th>Tahmin</th>
+<th>Sonuç</th>
+<th>Güven</th>
+</tr></thead><tbody>
+<tr>
+<td>ERZURUMSPOR FK - GALATASARAY A.Ş.</td>
+<td>0 - 4</td>
+<td>Deplasman</td>
+<td>✅</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>ÇAYKUR RİZESPOR A.Ş. - SAMSUNSPOR A.Ş.</td>
+<td>0 - 2</td>
+<td>Ev</td>
+<td>❌</td>
+<td>LOW</td>
+</tr>
+<tr>
+<td>ARCA ÇORUM FK - KASIMPAŞA A.Ş.</td>
+<td>0 - 1</td>
+<td>Ev</td>
+<td>❌</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
+<td>FENERBAHÇE A.Ş. - TÜMOSAN KONYASPOR</td>
+<td>4 - 2</td>
+<td>Ev</td>
+<td>✅</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>TRABZONSPOR A.Ş. - İSTANBUL BAŞAKŞEHİR FK</td>
+<td>2 - 1</td>
+<td>Deplasman</td>
+<td>❌</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>EYÜPSPOR - GAZİANTEP FUTBOL KULÜBÜ A.Ş.</td>
+<td>0 - 1</td>
+<td>Ev</td>
+<td>❌</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
+<td>CORENDON ALANYASPOR - BEŞİKTAŞ A.Ş.</td>
+<td>1 - 0</td>
+<td>Deplasman</td>
+<td>❌</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
+<td>GÖZTEPE A.Ş. - GENÇLERBİRLİĞİ</td>
+<td>0 - 1</td>
+<td>Ev</td>
+<td>❌</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
+<td>KOCAELİSPOR - AMED SPORTİF FAALİYETLER</td>
+<td>2 - 0</td>
+<td>Deplasman</td>
+<td>❌</td>
+<td>MEDIUM</td>
+</tr>
+</tbody></table>
+
+<h2>Hafta 1 — 4/9 isabet (%44)</h2>
+
+<table class="md-table"><thead><tr>
+<th>Maç</th>
+<th>Skor</th>
+<th>Tahmin</th>
+<th>Sonuç</th>
+<th>Güven</th>
+</tr></thead><tbody>
+<tr>
+<td>GALATASARAY A.Ş. - ARCA ÇORUM FK</td>
+<td>2 - 2</td>
+<td>Ev</td>
+<td>❌</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>KASIMPAŞA A.Ş. - TRABZONSPOR A.Ş.</td>
+<td>1 - 1</td>
+<td>Beraberlik</td>
+<td>✅</td>
+<td>LOW</td>
+</tr>
+<tr>
+<td>TÜMOSAN KONYASPOR - ÇAYKUR RİZESPOR A.Ş.</td>
+<td>0 - 1</td>
+<td>Ev</td>
+<td>❌</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
+<td>GAZİANTEP FUTBOL KULÜBÜ A.Ş. - CORENDON ALANYASPOR</td>
+<td>1 - 1</td>
+<td>Deplasman</td>
+<td>❌</td>
+<td>MEDIUM</td>
+</tr>
+<tr>
+<td>GENÇLERBİRLİĞİ - FENERBAHÇE A.Ş.</td>
+<td>2 - 1</td>
+<td>Deplasman</td>
+<td>❌</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>İSTANBUL BAŞAKŞEHİR FK - KOCAELİSPOR</td>
+<td>2 - 0</td>
+<td>Ev</td>
+<td>✅</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>AMED SPORTİF FAALİYETLER - ERZURUMSPOR FK</td>
+<td>3 - 0</td>
+<td>Ev</td>
+<td>✅</td>
+<td>LOW</td>
+</tr>
+<tr>
+<td>BEŞİKTAŞ A.Ş. - EYÜPSPOR</td>
+<td>1 - 0</td>
+<td>Ev</td>
+<td>✅</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>SAMSUNSPOR A.Ş. - GÖZTEPE A.Ş.</td>
+<td>3 - 3</td>
+<td>Ev</td>
+<td>❌</td>
+<td>LOW</td>
+</tr>
+</tbody></table>
 
 
   </div>

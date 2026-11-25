@@ -1,7 +1,43 @@
 # 2026-27 Süper Lig Fikstürü ve Tahminleri
 
-Üretim zamanı: 2026-11-24T23:30:53.459204
-Toplam hafta: 0, toplam maç: 0
-Not: Tahminler 2025-26 sezonunun tamamı ve 2026-27'de şimdiye kadar oynanmış (0 maç) sonuçlardan türetilen güncel takım formu/Elo/transfer durumuna dayanır; sezon ilerledikçe bu sayfa her gün otomatik olarak yeniden hesaplanır, statik bir anlık görüntü değildir.
+Üretim zamanı: 2026-11-25T08:24:09.919549
+Toplam hafta: 34, toplam maç: 306
+Not: Tahminler 2025-26 sezonunun tamamı ve 2026-27'de şimdiye kadar oynanmış (108 maç) sonuçlardan türetilen güncel takım formu/Elo/transfer durumuna dayanır; sezon ilerledikçe bu sayfa her gün otomatik olarak yeniden hesaplanır, statik bir anlık görüntü değildir.
 Yeni takımlar (sınırlı veri): AMED SPORTİF FAALİYETLER, ERZURUMSPOR FK, ÇORUM FK
+
+## Hafta 1
+
+- 14.08.2026 21:30 | GALATASARAY A.Ş. 2 - 2 ARCA ÇORUM FK | OYNANDI
+- 15.08.2026 19:00 | KASIMPAŞA A.Ş. 1 - 1 TRABZONSPOR A.Ş. | OYNANDI
+- 15.08.2026 19:00 | TÜMOSAN KONYASPOR 0 - 1 ÇAYKUR RİZESPOR A.Ş. | OYNANDI
+- 15.08.2026 21:30 | GAZİANTEP FUTBOL KULÜBÜ A.Ş. 1 - 1 CORENDON ALANYASPOR | OYNANDI
+- 15.08.2026 21:30 | GENÇLERBİRLİĞİ 2 - 1 FENERBAHÇE A.Ş. | OYNANDI
+- 16.08.2026 19:00 | İSTANBUL BAŞAKŞEHİR FK 2 - 0 KOCAELİSPOR | OYNANDI
+- 16.08.2026 21:30 | AMED SPORTİF FAALİYETLER 3 - 0 ERZURUMSPOR FK | OYNANDI
+- 16.08.2026 21:30 | BEŞİKTAŞ A.Ş. 1 - 0 EYÜPSPOR | OYNANDI
+- 17.08.2026 21:30 | SAMSUNSPOR A.Ş. 3 - 3 GÖZTEPE A.Ş. | OYNANDI
+
+## Hafta 2
+
+- 21.08.2026 21:30 | ERZURUMSPOR FK 0 - 4 GALATASARAY A.Ş. | OYNANDI
+- 22.08.2026 19:00 | ÇAYKUR RİZESPOR A.Ş. 0 - 2 SAMSUNSPOR A.Ş. | OYNANDI
+- 22.08.2026 19:00 | ARCA ÇORUM FK 0 - 1 KASIMPAŞA A.Ş. | OYNANDI
+- 22.08.2026 21:30 | FENERBAHÇE A.Ş. 4 - 2 TÜMOSAN KONYASPOR | OYNANDI
+- 23.08.2026 19:00 | TRABZONSPOR A.Ş. 2 - 1 İSTANBUL BAŞAKŞEHİR FK | OYNANDI
+- 23.08.2026 19:00 | EYÜPSPOR 0 - 1 GAZİANTEP FUTBOL KULÜBÜ A.Ş. | OYNANDI
+- 23.08.2026 21:30 | CORENDON ALANYASPOR 1 - 0 BEŞİKTAŞ A.Ş. | OYNANDI
+- 23.08.2026 21:30 | GÖZTEPE A.Ş. 0 - 1 GENÇLERBİRLİĞİ | OYNANDI
+- 24.08.2026 21:30 | KOCAELİSPOR 2 - 0 AMED SPORTİF FAALİYETLER | OYNANDI
+
+## Hafta 3
+
+- 28.08.2026 21:30 | GENÇLERBİRLİĞİ 1 - 1 ERZURUMSPOR FK | OYNANDI
+- 29.08.2026 19:00 | TÜMOSAN KONYASPOR 1 - 2 KOCAELİSPOR | OYNANDI
+- 29.08.2026 21:30 | GAZİANTEP FUTBOL KULÜBÜ A.Ş. 1 - 2 ÇAYKUR RİZESPOR A.Ş. | OYNANDI
+- 29.08.2026 21:33 | GALATASARAY A.Ş. 3 - 2 GÖZTEPE A.Ş. | OYNANDI
+- 30.08.2026 19:00 | EYÜPSPOR 2 - 1 CORENDON ALANYASPOR | OYNANDI
+- 30.08.2026 21:30 | İSTANBUL BAŞAKŞEHİR FK 1 - 1 KASIMPAŞA A.Ş. | OYNANDI
+- 30.08.2026 21:30 | SAMSUNSPOR A.Ş. 0 - 2 FENERBAHÇE A.Ş. | OYNANDI
+- 31.08.2026 21:30 | AMED SPORTİF FAALİYETLER 2 - 1 TRABZONSPOR A.Ş. | OYNANDI
+- 31.08.2026 21:30 | BEŞİKTAŞ A.Ş. 6 - 2 ARCA ÇORUM FK | OYNANDI
 

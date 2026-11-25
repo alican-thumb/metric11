@@ -1,87 +1,87 @@
 {
-  "generated_at": "2026-11-24T22:21:34.855160",
+  "generated_at": "2026-11-25T08:24:10.452372",
   "season": "2026-2027",
-  "sample_size": 0,
+  "sample_size": 108,
   "diagnostic_only": true,
   "summary": {
-    "evaluated_matches": 0,
-    "correct": 0,
-    "accuracy": 0.0,
-    "actual_draws": 0,
-    "draws_caught": 0,
-    "draw_recall": null,
-    "high_conf_matches": 0,
-    "high_conf_correct": 0,
-    "high_conf_accuracy": null,
-    "brier_score": null,
-    "log_loss": null,
+    "evaluated_matches": 108,
+    "correct": 51,
+    "accuracy": 0.4722,
+    "actual_draws": 17,
+    "draws_caught": 3,
+    "draw_recall": 0.1765,
+    "high_conf_matches": 44,
+    "high_conf_correct": 30,
+    "high_conf_accuracy": 0.6818,
+    "brier_score": 0.5934,
+    "log_loss": 0.9957,
     "confidence_breakdown": {
       "HIGH": {
-        "matches": 0,
-        "correct": 0,
-        "accuracy": null,
-        "avg_stated_probability": null,
-        "calibration_gap": null,
-        "brier_score": null,
-        "log_loss": null
+        "matches": 44,
+        "correct": 30,
+        "accuracy": 0.6818,
+        "avg_stated_probability": 0.6163,
+        "calibration_gap": 0.0655,
+        "brier_score": 0.4681,
+        "log_loss": 0.8229
       },
       "MEDIUM": {
-        "matches": 0,
-        "correct": 0,
-        "accuracy": null,
-        "avg_stated_probability": null,
-        "calibration_gap": null,
-        "brier_score": null,
-        "log_loss": null
+        "matches": 32,
+        "correct": 9,
+        "accuracy": 0.2812,
+        "avg_stated_probability": 0.4605,
+        "calibration_gap": -0.1793,
+        "brier_score": 0.7117,
+        "log_loss": 1.1566
       },
       "LOW": {
-        "matches": 0,
-        "correct": 0,
-        "accuracy": null,
-        "avg_stated_probability": null,
-        "calibration_gap": null,
-        "brier_score": null,
-        "log_loss": null
+        "matches": 32,
+        "correct": 12,
+        "accuracy": 0.375,
+        "avg_stated_probability": 0.3667,
+        "calibration_gap": 0.0083,
+        "brier_score": 0.6473,
+        "log_loss": 1.0725
       }
     },
     "pick_side_breakdown": {
       "home": {
-        "matches": 0,
-        "correct": 0,
-        "accuracy": null,
+        "matches": 56,
+        "correct": 32,
+        "accuracy": 0.5714,
         "actual": {
-          "home": 0,
-          "draw": 0,
-          "away": 0
+          "home": 32,
+          "draw": 7,
+          "away": 17
         }
       },
       "draw": {
-        "matches": 0,
-        "correct": 0,
-        "accuracy": null,
+        "matches": 15,
+        "correct": 3,
+        "accuracy": 0.2,
         "actual": {
-          "home": 0,
-          "draw": 0,
-          "away": 0
+          "home": 6,
+          "draw": 3,
+          "away": 6
         }
       },
       "away": {
-        "matches": 0,
-        "correct": 0,
-        "accuracy": null,
+        "matches": 37,
+        "correct": 16,
+        "accuracy": 0.4324,
         "actual": {
-          "home": 0,
-          "draw": 0,
-          "away": 0
+          "home": 14,
+          "draw": 7,
+          "away": 16
         }
       }
     },
     "selective_publication_diagnostic": {
-      "population_matches": 0,
+      "population_matches": 108,
       "published_matches": 0,
       "correct": 0,
       "accuracy": null,
-      "coverage": null,
+      "coverage": 0.0,
       "prospective_only": false
     },
     "selective_publication_prospective": {
@@ -95,12 +95,12 @@
   },
   "confidence_policy": {
     "high": {
-      "status": "CAUTION",
-      "label": "Temkinli güçlü seçim"
+      "status": "PUBLISH",
+      "label": "Yayınlanabilir güçlü seçim"
     },
     "medium": {
-      "status": "CAUTION",
-      "label": "Orta güvenli tahmin"
+      "status": "NO_STRONG_PICK",
+      "label": "Düşük güvenli tahmin"
     },
     "low": {
       "status": "NO_STRONG_PICK",
@@ -115,180 +115,180 @@
     {
       "lower": 0.0,
       "upper": 0.4,
-      "matches": 0,
-      "correct": 0,
-      "accuracy": null,
-      "avg_top_probability": null,
-      "calibration_gap": null,
+      "matches": 14,
+      "correct": 4,
+      "accuracy": 0.2857,
+      "avg_top_probability": 0.3711,
+      "calibration_gap": -0.0854,
       "accuracy_ci_95": [
-        null,
-        null
+        0.1172,
+        0.5465
       ]
     },
     {
       "lower": 0.4,
       "upper": 0.45,
-      "matches": 0,
-      "correct": 0,
-      "accuracy": null,
-      "avg_top_probability": null,
-      "calibration_gap": null,
+      "matches": 25,
+      "correct": 9,
+      "accuracy": 0.36,
+      "avg_top_probability": 0.4211,
+      "calibration_gap": -0.0611,
       "accuracy_ci_95": [
-        null,
-        null
+        0.2025,
+        0.5548
       ]
     },
     {
       "lower": 0.45,
       "upper": 0.5,
-      "matches": 0,
-      "correct": 0,
-      "accuracy": null,
-      "avg_top_probability": null,
-      "calibration_gap": null,
+      "matches": 22,
+      "correct": 8,
+      "accuracy": 0.3636,
+      "avg_top_probability": 0.472,
+      "calibration_gap": -0.1084,
       "accuracy_ci_95": [
-        null,
-        null
+        0.1973,
+        0.5705
       ]
     },
     {
       "lower": 0.5,
       "upper": 0.6,
-      "matches": 0,
-      "correct": 0,
-      "accuracy": null,
-      "avg_top_probability": null,
-      "calibration_gap": null,
+      "matches": 25,
+      "correct": 12,
+      "accuracy": 0.48,
+      "avg_top_probability": 0.5544,
+      "calibration_gap": -0.0744,
       "accuracy_ci_95": [
-        null,
-        null
+        0.3003,
+        0.665
       ]
     },
     {
       "lower": 0.6,
       "upper": 1.0,
-      "matches": 0,
-      "correct": 0,
-      "accuracy": null,
-      "avg_top_probability": null,
-      "calibration_gap": null,
+      "matches": 22,
+      "correct": 18,
+      "accuracy": 0.8182,
+      "avg_top_probability": 0.6725,
+      "calibration_gap": 0.1456,
       "accuracy_ci_95": [
-        null,
-        null
+        0.6148,
+        0.9269
       ]
     }
   ],
   "selective_policies": [
     {
-      "matches": 0,
-      "correct": 0,
-      "accuracy": null,
-      "avg_top_probability": null,
-      "calibration_gap": null,
+      "matches": 94,
+      "correct": 47,
+      "accuracy": 0.5,
+      "avg_top_probability": 0.5273,
+      "calibration_gap": -0.0273,
       "accuracy_ci_95": [
-        null,
-        null
+        0.4009,
+        0.5991
       ],
       "minimum_probability": 0.4,
-      "coverage": 0.0
+      "coverage": 0.8704
     },
     {
-      "matches": 0,
-      "correct": 0,
-      "accuracy": null,
-      "avg_top_probability": null,
-      "calibration_gap": null,
+      "matches": 69,
+      "correct": 38,
+      "accuracy": 0.5507,
+      "avg_top_probability": 0.5658,
+      "calibration_gap": -0.0151,
       "accuracy_ci_95": [
-        null,
-        null
+        0.4338,
+        0.6623
       ],
       "minimum_probability": 0.45,
-      "coverage": 0.0
+      "coverage": 0.6389
     },
     {
-      "matches": 0,
-      "correct": 0,
-      "accuracy": null,
-      "avg_top_probability": null,
-      "calibration_gap": null,
+      "matches": 47,
+      "correct": 30,
+      "accuracy": 0.6383,
+      "avg_top_probability": 0.6097,
+      "calibration_gap": 0.0286,
       "accuracy_ci_95": [
-        null,
-        null
+        0.4954,
+        0.7603
       ],
       "minimum_probability": 0.5,
-      "coverage": 0.0
+      "coverage": 0.4352
     },
     {
-      "matches": 0,
-      "correct": 0,
-      "accuracy": null,
-      "avg_top_probability": null,
-      "calibration_gap": null,
+      "matches": 35,
+      "correct": 26,
+      "accuracy": 0.7429,
+      "avg_top_probability": 0.6367,
+      "calibration_gap": 0.1061,
       "accuracy_ci_95": [
-        null,
-        null
+        0.5793,
+        0.8584
       ],
       "minimum_probability": 0.55,
-      "coverage": 0.0
+      "coverage": 0.3241
     },
     {
-      "matches": 0,
-      "correct": 0,
-      "accuracy": null,
-      "avg_top_probability": null,
-      "calibration_gap": null,
+      "matches": 22,
+      "correct": 18,
+      "accuracy": 0.8182,
+      "avg_top_probability": 0.6725,
+      "calibration_gap": 0.1456,
       "accuracy_ci_95": [
-        null,
-        null
+        0.6148,
+        0.9269
       ],
       "minimum_probability": 0.6,
-      "coverage": 0.0
+      "coverage": 0.2037
     }
   ],
   "draw_thresholds": [
     {
       "minimum_draw_probability": 0.22,
-      "flagged_matches": 0,
-      "draw_hits": 0,
-      "precision": 0.0,
-      "recall": 0.0,
-      "f1": 0.0
+      "flagged_matches": 78,
+      "draw_hits": 12,
+      "precision": 0.1538,
+      "recall": 0.7059,
+      "f1": 0.2526
     },
     {
       "minimum_draw_probability": 0.25,
-      "flagged_matches": 0,
-      "draw_hits": 0,
-      "precision": 0.0,
-      "recall": 0.0,
-      "f1": 0.0
+      "flagged_matches": 38,
+      "draw_hits": 8,
+      "precision": 0.2105,
+      "recall": 0.4706,
+      "f1": 0.2909
     },
     {
       "minimum_draw_probability": 0.28,
-      "flagged_matches": 0,
-      "draw_hits": 0,
-      "precision": 0.0,
-      "recall": 0.0,
-      "f1": 0.0
+      "flagged_matches": 16,
+      "draw_hits": 2,
+      "precision": 0.125,
+      "recall": 0.1176,
+      "f1": 0.1212
     },
     {
       "minimum_draw_probability": 0.3,
-      "flagged_matches": 0,
-      "draw_hits": 0,
-      "precision": 0.0,
-      "recall": 0.0,
-      "f1": 0.0
+      "flagged_matches": 11,
+      "draw_hits": 1,
+      "precision": 0.0909,
+      "recall": 0.0588,
+      "f1": 0.0714
     },
     {
       "minimum_draw_probability": 0.32,
-      "flagged_matches": 0,
-      "draw_hits": 0,
-      "precision": 0.0,
-      "recall": 0.0,
-      "f1": 0.0
+      "flagged_matches": 5,
+      "draw_hits": 1,
+      "precision": 0.2,
+      "recall": 0.0588,
+      "f1": 0.0909
     },
     {
       "minimum_draw_probability": 0.35,
-      "flagged_matches": 0,
+      "flagged_matches": 2,
       "draw_hits": 0,
       "precision": 0.0,
       "recall": 0.0,
