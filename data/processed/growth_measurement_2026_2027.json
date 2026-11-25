@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T08:24:19.127184+00:00",
+  "generated_at": "2026-11-25T13:56:40.966590+00:00",
   "status": "ready",
   "snapshot": {
     "captured_at": "2026-11-11T12:36:00+03:00",
@@ -30,8 +30,8 @@
     }
   },
   "vercel_analytics": {
-    "generated_at": "2026-11-24T15:29:03.294702+00:00",
-    "status": "connected",
+    "generated_at": "2026-11-25T13:48:58.034380+00:00",
+    "status": "partial",
     "source": "vercel_web_analytics_api",
     "plan_note": "Kaynak ve kampanya (UTM) kırılımı ücretli Vercel planı gerektirir; bu rapor doğrulanmış toplam ziyaret ve görüntülemeleri kullanır.",
     "projects": [
@@ -41,21 +41,24 @@
         "status": "connected",
         "measurement": {
           "since": "2026-05-25T00:00:00.000Z",
-          "until": "2026-11-25T00:00:00.000Z"
+          "until": "2026-11-26T00:00:00.000Z"
         },
-        "visitors": 1339,
-        "pageviews": 2904
+        "visitors": 1342,
+        "pageviews": 2907
       },
       {
         "key": "prediction_game",
         "domain": "tahmin.metric11.com",
-        "status": "connected",
+        "status": "stale",
+        "error_code": 404,
+        "error": "Analytics projesi bu token/team kapsamında görünmüyor; proje veya token erişimini kontrol edin.",
         "measurement": {
           "since": "2026-09-04T00:00:00.000Z",
           "until": "2026-11-25T00:00:00.000Z"
         },
         "visitors": 4,
-        "pageviews": 9
+        "pageviews": 9,
+        "last_successful_at": "2026-11-24T15:29:03.294702+00:00"
       }
     ]
   },
@@ -207,6 +210,7 @@
     "Birincil darboğaz gösterim hacmi: yeni seri sayfa yerine mevcut güçlü sayfalara dağıtım ve referans bağlantı sağla.",
     "CTR sağlıklı; başlıkları topluca değiştirme. Öncelik daha fazla sorguda görünmek olmalı.",
     "Keşfedilip indekslenmeyen URL yığını yüksek. Noindex temizliğinin etkisini sonraki GSC güncellemesinde ölç.",
-    "İlk içerik fırsatı: 'tahmini kadro' sorgusu için mevcut hedef sayfayı güçlendir."
+    "İlk içerik fırsatı: 'tahmini kadro' sorgusu için mevcut hedef sayfayı güçlendir.",
+    "Vercel Web Analytics verisi henüz otomatik alınamıyor; API bağlantısını ve CI kimlik bilgilerini kontrol et."
   ]
 }
