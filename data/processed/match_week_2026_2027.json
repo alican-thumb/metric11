@@ -1,6 +1,6 @@
 {
   "available": true,
-  "generated_at": "2026-11-25T08:24:19.199717",
+  "generated_at": "2026-11-25T11:15:07.636491",
   "week": 13,
   "matches": [
     {
@@ -12,7 +12,7 @@
       "actual_score": null,
       "predicted": "away",
       "published_pick": null,
-      "publication_decision": "CAUTION",
+      "publication_decision": "NO_STRONG_PICK",
       "publication_label": "Düşük güvenli tahmin",
       "publication_reason": "Modelin orta güven bandındaki geçmiş isabeti henüz yeterli değil.",
       "pick_text": "TÜMOSAN KONYASPOR",
@@ -181,10 +181,10 @@
       "is_played": false,
       "actual_score": null,
       "predicted": "away",
-      "published_pick": null,
-      "publication_decision": "CAUTION",
-      "publication_label": "Düşük güvenli tahmin",
-      "publication_reason": "Olasılık farkı yüksek güven eşiğini karşılamıyor.",
+      "published_pick": "away",
+      "publication_decision": "PUBLISH",
+      "publication_label": "Yüksek güvenli tahmin",
+      "publication_reason": "Modelin yüksek güven eşiği karşılandı.",
       "pick_text": "İSTANBUL BAŞAKŞEHİR FK",
       "model_pick_text": "İSTANBUL BAŞAKŞEHİR FK",
       "home_win_probability": 0.12,
@@ -386,10 +386,10 @@
     },
     "selective_publication_diagnostic": {
       "population_matches": 9,
-      "published_matches": 0,
-      "correct": 0,
-      "accuracy": null,
-      "coverage": 0.0,
+      "published_matches": 3,
+      "correct": 3,
+      "accuracy": 1.0,
+      "coverage": 0.3333,
       "prospective_only": false
     },
     "selective_publication_prospective": {
