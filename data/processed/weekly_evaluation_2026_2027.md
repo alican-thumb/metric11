@@ -4,14 +4,14 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 
 ## Genel Karne
 
-- Değerlendirilen maç: **108**
-- İsabet: **51/108** (%47)
+- Değerlendirilen maç: **110**
+- İsabet: **52/110** (%47)
 - Beraberlik yakalama: **3/17** (%18)
 - Yüksek güvenli maç isabeti: **30/44** (%68)
 - Güçlü seçim tanı metriği: **24/35** (%69), kapsam %32
-- İleriye dönük kilitli güçlü seçim: **0/0** (—), kapsam —
-- Brier score: **0.593** (düşük daha iyi; 2025-26 referans 0.600)
-- Log loss: **0.996** (düşük daha iyi; 2025-26 referans 1.005)
+- İleriye dönük kilitli güçlü seçim: **0/0** (—), kapsam %0
+- Brier score: **0.592** (düşük daha iyi; 2025-26 referans 0.600)
+- Log loss: **0.994** (düşük daha iyi; 2025-26 referans 1.005)
 
 _Tanı metriği bugünkü yayın politikasını geçmiş maçlara uygular ve ürün iddiası değildir. İleriye dönük metrik, karar maçtan önce snapshot'a kilitlendikten sonra birikir._
 
@@ -22,8 +22,8 @@ _"Beyan edilen ort. olasılık" ile "İsabet" arasındaki fark büyükse (özell
 | Güven bandı | Maç | İsabet | Beyan edilen ort. olasılık | Brier | Log loss | Referans (2025-26: isabet / brier / logloss) |
 | --- | --- | --- | --- | --- | --- | --- |
 | HIGH | 44 | 30/44 (%68) | %62 | 0.468 | 0.823 | %64 / 0.516 / 0.885 |
-| MEDIUM | 32 | 9/32 (%28) | %46 | 0.712 | 1.157 | %54 / 0.619 / 1.032 |
-| LOW | 32 | 12/32 (%38) | %37 | 0.647 | 1.073 | %48 / 0.670 / 1.103 |
+| MEDIUM | 33 | 10/33 (%30) | %46 | 0.704 | 1.146 | %54 / 0.619 / 1.032 |
+| LOW | 33 | 12/33 (%36) | %37 | 0.645 | 1.069 | %48 / 0.670 / 1.103 |
 
 ### Seçilen tarafa göre isabet
 
@@ -32,10 +32,17 @@ _Model hangi tarafı seçtiğinde ne oldu? Belirli bir seçimde (ör. deplasman 
 | Seçim | Maç | İsabet | Gerçekleşen (Ev / X / Dep) |
 | --- | --- | --- | --- |
 | Ev | 56 | 32/56 (%57) | 32 / 7 / 17 |
-| Beraberlik | 15 | 3/15 (%20) | 6 / 3 / 6 |
-| Deplasman | 37 | 16/37 (%43) | 14 / 7 / 16 |
+| Beraberlik | 16 | 3/16 (%19) | 7 / 3 / 6 |
+| Deplasman | 38 | 17/38 (%45) | 14 / 7 / 17 |
 
 [Olasılık kovaları ve seçici yayın politikası →](prediction_calibration_audit_2026_2027.html)
+
+## Hafta 13 — 1/2 isabet (%50)
+
+| Maç | Skor | Tahmin | Sonuç | Güven |
+| --- | --- | --- | --- | --- |
+| CORENDON ALANYASPOR - TÜMOSAN KONYASPOR | 1 - 2 | Deplasman | ✅ | MEDIUM |
+| ÇAYKUR RİZESPOR A.Ş. - KASIMPAŞA A.Ş. | 3 - 2 | Beraberlik | ❌ | LOW |
 
 ## Hafta 12 — 3/9 isabet (%33)
 

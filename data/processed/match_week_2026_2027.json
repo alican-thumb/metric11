@@ -1,6 +1,6 @@
 {
   "available": true,
-  "generated_at": "2026-11-27T13:33:34.313545",
+  "generated_at": "2026-11-27T21:11:50.366244",
   "week": 13,
   "matches": [
     {
@@ -8,8 +8,8 @@
       "date": "27 Kas",
       "home_team": "CORENDON ALANYASPOR",
       "away_team": "TÜMOSAN KONYASPOR",
-      "is_played": false,
-      "actual_score": null,
+      "is_played": true,
+      "actual_score": "1 - 2",
       "predicted": "away",
       "published_pick": null,
       "publication_decision": "NO_STRONG_PICK",
@@ -20,30 +20,19 @@
       "home_win_probability": 0.279,
       "draw_probability": 0.275,
       "away_win_probability": 0.446,
-      "data_confidence": "MEDIUM",
+      "data_confidence": "PLAYED",
       "recommended_scoreline": "0-1",
       "expected_home_goals": 0.77,
       "expected_away_goals": 1.06,
-      "signals": {
-        "over_2_5_probability": 0.277,
-        "btts_probability": 0.351,
-        "expected_total_cards": 4.3,
-        "red_card_risk": 0.107,
-        "home_card_data_available": true,
-        "away_card_data_available": true,
-        "no_goal_probability": 0.16,
-        "home_scores_first_probability": 0.353,
-        "away_scores_first_probability": 0.486,
-        "likely_goal_band": "76-90+"
-      }
+      "signals": null
     },
     {
       "match_id": "317895",
       "date": "27 Kas",
       "home_team": "ÇAYKUR RİZESPOR A.Ş.",
       "away_team": "KASIMPAŞA A.Ş.",
-      "is_played": false,
-      "actual_score": null,
+      "is_played": true,
+      "actual_score": "3 - 2",
       "predicted": "draw",
       "published_pick": null,
       "publication_decision": "WEAK",
@@ -54,22 +43,11 @@
       "home_win_probability": 0.385,
       "draw_probability": 0.321,
       "away_win_probability": 0.294,
-      "data_confidence": "LOW",
+      "data_confidence": "PLAYED",
       "recommended_scoreline": "0-0",
       "expected_home_goals": 0.91,
       "expected_away_goals": 0.76,
-      "signals": {
-        "over_2_5_probability": 0.235,
-        "btts_probability": 0.318,
-        "expected_total_cards": 4.5,
-        "red_card_risk": 0.226,
-        "home_card_data_available": true,
-        "away_card_data_available": true,
-        "no_goal_probability": 0.188,
-        "home_scores_first_probability": 0.442,
-        "away_scores_first_probability": 0.369,
-        "likely_goal_band": "76-90+"
-      }
+      "signals": null
     },
     {
       "match_id": "317900",
@@ -311,93 +289,93 @@
     }
   ],
   "last_week": {
-    "week": 12,
-    "evaluated_matches": 9,
-    "correct": 3,
-    "accuracy": 0.3333,
-    "actual_draws": 1,
+    "week": 13,
+    "evaluated_matches": 2,
+    "correct": 1,
+    "accuracy": 0.5,
+    "actual_draws": 0,
     "draws_caught": 0,
-    "draw_recall": 0.0,
-    "high_conf_matches": 4,
-    "high_conf_correct": 3,
-    "high_conf_accuracy": 0.75,
-    "brier_score": 0.5914,
-    "log_loss": 1.0128,
+    "draw_recall": null,
+    "high_conf_matches": 0,
+    "high_conf_correct": 0,
+    "high_conf_accuracy": null,
+    "brier_score": 0.514,
+    "log_loss": 0.881,
     "confidence_breakdown": {
       "HIGH": {
-        "matches": 4,
-        "correct": 3,
-        "accuracy": 0.75,
-        "avg_stated_probability": 0.7135,
-        "calibration_gap": 0.0365,
-        "brier_score": 0.4524,
-        "log_loss": 0.8438
+        "matches": 0,
+        "correct": 0,
+        "accuracy": null,
+        "avg_stated_probability": null,
+        "calibration_gap": null,
+        "brier_score": null,
+        "log_loss": null
       },
       "MEDIUM": {
-        "matches": 2,
-        "correct": 0,
-        "accuracy": 0.0,
-        "avg_stated_probability": 0.494,
-        "calibration_gap": -0.494,
-        "brier_score": 0.8788,
-        "log_loss": 1.4022
+        "matches": 1,
+        "correct": 1,
+        "accuracy": 1.0,
+        "avg_stated_probability": 0.446,
+        "calibration_gap": 0.554,
+        "brier_score": 0.4604,
+        "log_loss": 0.8074
       },
       "LOW": {
-        "matches": 3,
+        "matches": 1,
         "correct": 0,
         "accuracy": 0.0,
-        "avg_stated_probability": 0.3007,
-        "calibration_gap": -0.3007,
-        "brier_score": 0.5851,
-        "log_loss": 0.9786
+        "avg_stated_probability": 0.321,
+        "calibration_gap": -0.321,
+        "brier_score": 0.5677,
+        "log_loss": 0.9545
       }
     },
     "pick_side_breakdown": {
       "home": {
-        "matches": 4,
-        "correct": 3,
-        "accuracy": 0.75,
+        "matches": 0,
+        "correct": 0,
+        "accuracy": null,
         "actual": {
-          "home": 3,
+          "home": 0,
           "draw": 0,
-          "away": 1
+          "away": 0
         }
       },
       "draw": {
-        "matches": 3,
+        "matches": 1,
         "correct": 0,
         "accuracy": 0.0,
         "actual": {
           "home": 1,
           "draw": 0,
-          "away": 2
+          "away": 0
         }
       },
       "away": {
-        "matches": 2,
-        "correct": 0,
-        "accuracy": 0.0,
+        "matches": 1,
+        "correct": 1,
+        "accuracy": 1.0,
         "actual": {
-          "home": 1,
-          "draw": 1,
-          "away": 0
+          "home": 0,
+          "draw": 0,
+          "away": 1
         }
       }
     },
     "selective_publication_diagnostic": {
-      "population_matches": 9,
-      "published_matches": 3,
-      "correct": 3,
-      "accuracy": 1.0,
-      "coverage": 0.3333,
-      "prospective_only": false
-    },
-    "selective_publication_prospective": {
-      "population_matches": 0,
+      "population_matches": 2,
       "published_matches": 0,
       "correct": 0,
       "accuracy": null,
-      "coverage": null,
+      "coverage": 0.0,
+      "prospective_only": false
+    },
+    "selective_publication_prospective": {
+      "population_matches": 2,
+      "published_matches": 0,
+      "correct": 0,
+      "accuracy": null,
+      "coverage": 0.0,
       "prospective_only": true
     }
   }
