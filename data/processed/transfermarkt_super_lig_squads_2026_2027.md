@@ -7,7 +7,7 @@
 - Oyuncu: 524
 - Toplam piyasa değeri: €0
 - Ortalama piyasa değeri: Yok
-- Pozisyon grupları: {'GK': 68, 'DEF': 169, 'MID': 131, 'FWD': 156, 'UNKNOWN': 0}
+- Pozisyon grupları: {'GK': 68, 'DEF': 165, 'MID': 134, 'FWD': 157, 'UNKNOWN': 0}
 
 ## Kulüpler
 
@@ -24,15 +24,11 @@
 - GAZİANTEP FUTBOL KULÜBÜ A.Ş.: oyuncu=31, değer=€0, verified=True, mode=live, url=https://www.transfermarkt.com/gaziantep-fk/kader/verein/2832/saison_id/2026
 - KASIMPAŞA A.Ş.: oyuncu=32, değer=€0, verified=True, mode=live, url=https://www.transfermarkt.com/kasimpasa/kader/verein/10484/saison_id/2026
 - KOCAELİSPOR: oyuncu=29, değer=€0, verified=True, mode=live, url=https://www.transfermarkt.com/kocaelispor/kader/verein/120/saison_id/2026
-- İKAS EYÜPSPOR: oyuncu=28, değer=€0, verified=True, mode=live, url=https://www.transfermarkt.com/eyupspor/kader/verein/7160/saison_id/2026
+- İKAS EYÜPSPOR: oyuncu=29, değer=€0, verified=True, mode=live, url=https://www.transfermarkt.com/eyupspor/kader/verein/7160/saison_id/2026
 - GENÇLERBİRLİĞİ: oyuncu=29, değer=€0, verified=True, mode=live, url=https://www.transfermarkt.com/genclerbirligi-ankara/kader/verein/820/saison_id/2026
 - ÇORUM FK: oyuncu=29, değer=€0, verified=True, mode=live, url=https://www.transfermarkt.com/corum-fk/kader/verein/37951/saison_id/2026
 - ERZURUMSPOR FK: oyuncu=27, değer=€0, verified=True, mode=live, url=https://www.transfermarkt.com/erzurumspor-fk/kader/verein/39722/saison_id/2026
-- AMED SFK: oyuncu=28, değer=€0, verified=True, mode=live, url=https://www.transfermarkt.com/amed-sk/kader/verein/12382/saison_id/2026
-
-## Stale Koruma
-
-- Sebep: collector_produced_no_nonempty_clubs
+- AMED SFK: oyuncu=27, değer=€0, verified=True, mode=live, url=https://www.transfermarkt.com/amed-sk/kader/verein/12382/saison_id/2026
 
 ## Beşiktaş Tekil Rapor Formatı
 
@@ -72,7 +68,7 @@
 - Ernest Poku: Right Winger (FWD), yaş=22, sözleşme=30/06/2027, değer=€22.00M
 - Vaclav Cerny: Right Winger (FWD), yaş=29, sözleşme=30/06/2028, değer=€7.00M
 - Milot Rashica: Right Winger (FWD), yaş=30, sözleşme=30/06/2027, değer=€2.50M
-- Can Keleş: Right Winger (FWD), yaş=25, sözleşme=30/06/2028, değer=€800.0K
+- Can Keles: Right Winger (FWD), yaş=25, sözleşme=30/06/2028, değer=€800.0K
 - Dušan Vlahović: Centre-Forward (FWD), yaş=26, sözleşme=30/06/2029, değer=€32.00M
 - Hyeon-gyu Oh: Centre-Forward (FWD), yaş=25, sözleşme=30/06/2029, değer=€15.00M
 - Semih Kılıçsoy: Centre-Forward (FWD), yaş=21, sözleşme=30/06/2028, değer=€8.00M

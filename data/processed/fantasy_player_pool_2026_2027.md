@@ -2,5 +2,5 @@
 
 - Toplam oyuncu: 524
 - TFF (gerçek maç verisi) ile eşleşen: 285
-- Pozisyon dağılımı: {'GK': 68, 'DEF': 169, 'MID': 131, 'FWD': 156}
+- Pozisyon dağılımı: {'GK': 68, 'DEF': 165, 'MID': 134, 'FWD': 157}
 - Varsayılan bütçe: 100.0

@@ -6,28 +6,28 @@
     "snapshot_in_scope_tff_profiles": 596,
     "matched_profiles": 620,
     "verified_matched_profiles": 620,
-    "in_scope_verified_matched_profiles": 546,
+    "in_scope_verified_matched_profiles": 547,
     "manual_alias_mapped_profiles": 4,
     "manual_alias_pending_network_verification": 4,
     "operationally_mapped_profiles": 624,
-    "operational_in_scope_mapped_profiles": 550,
+    "operational_in_scope_mapped_profiles": 551,
     "unmatched_profiles": 267,
     "overall_match_rate": 0.696,
-    "in_scope_match_rate": 0.916,
+    "in_scope_match_rate": 0.918,
     "operational_mapping_rate": 0.7,
-    "operational_in_scope_mapping_rate": 0.923,
+    "operational_in_scope_mapping_rate": 0.924,
     "scout_blocking_unmatched": 0,
     "category_counts": {
-      "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 44,
+      "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 43,
       "SAME_CLUB_NAME_REVIEW": 1,
       "POSSIBLE_TRANSFER_OR_CLUB_MISMATCH": 1,
-      "OUT_OF_SNAPSHOT_CLUB": 221
+      "OUT_OF_SNAPSHOT_CLUB": 222
     },
     "review_tier_counts": {
       "HIGH_USAGE_UNRESOLVED": 17,
       "ROTATION_USAGE_UNRESOLVED": 9,
-      "OUT_OF_SNAPSHOT": 221,
-      "NO_MATCH_ACTIVITY": 20
+      "OUT_OF_SNAPSHOT": 222,
+      "NO_MATCH_ACTIVITY": 19
     },
     "rule": "Doğrulanmış kapsama yalnız snapshot eşleşmesi girer; manuel alias kullanımı ayrı izlenir ve ağ teyidi tamamlanana kadar doğrulanmış sayılmaz."
   },
@@ -251,13 +251,13 @@
       "team": "İKAS EYÜPSPOR",
       "tff_profiles": 42,
       "tm_players": 62,
-      "matched_profiles": 39,
+      "matched_profiles": 40,
       "manual_alias_mapped_profiles": 0,
-      "unmatched_profiles": 3,
-      "match_rate": 0.929,
-      "operational_mapping_rate": 0.929,
+      "unmatched_profiles": 2,
+      "match_rate": 0.952,
+      "operational_mapping_rate": 0.952,
       "categories": {
-        "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 3
+        "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT": 2
       }
     }
   ],
@@ -2852,6 +2852,22 @@
       "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
     },
     {
+      "player_id": "2067517",
+      "tff_name": "MBAYE DIAGNE",
+      "tff_club": "AMED SFK",
+      "category": "OUT_OF_SNAPSHOT_CLUB",
+      "priority_rank": 5,
+      "blocks_scout_review": false,
+      "review_tier": "OUT_OF_SNAPSHOT",
+      "season_activity": {
+        "starts": 0,
+        "squad_inclusions": 0,
+        "goals": 0
+      },
+      "candidate": null,
+      "action": "TFF kulübü mevcut 18 kulüp Transfermarkt snapshot'ında yok; önce transfer/kulüp kapsamı doğrulanmalı."
+    },
+    {
       "player_id": "2464102",
       "tff_name": "İSMAİL DUYU",
       "tff_club": "AMED SFK",
@@ -4613,32 +4629,6 @@
         "goals": 0
       },
       "candidate": null,
-      "action": "Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir."
-    },
-    {
-      "player_id": "2040321",
-      "tff_name": "HALİL İBRAHİM BALTA",
-      "tff_club": "İKAS EYÜPSPOR",
-      "category": "NO_RELIABLE_CANDIDATE_IN_SNAPSHOT",
-      "priority_rank": 4,
-      "blocks_scout_review": false,
-      "review_tier": "NO_MATCH_ACTIVITY",
-      "season_activity": {
-        "starts": 0,
-        "squad_inclusions": 0,
-        "goals": 0
-      },
-      "candidate": {
-        "tm_name": "Halil Yeral",
-        "tm_team_name": null,
-        "tm_id": "511119",
-        "tm_position": "Goalkeeper",
-        "tm_market_value_eur": 100000,
-        "score": 0.6,
-        "common_tokens": [
-          "HALIL"
-        ]
-      },
       "action": "Mevcut snapshot içinde güvenilir isim adayı yok; kaynak/alias incelemesi gerekir."
     }
   ],
