@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T21:11:37.535598+00:00",
+  "generated_at": "2026-11-27T22:43:07.684359+00:00",
   "season": "2025_2026",
   "maturity_days": 14,
   "summary": {
@@ -12,13 +12,13 @@
     "measured_lead_times": 0,
     "first_seen_lead_times": 11,
     "tracked_x_sources_waiting": 20,
-    "retained_claim_observations": 5063
+    "retained_claim_observations": 5064
   },
   "provider_coverage": {
     "google_news": {
-      "articles": 111,
+      "articles": 126,
       "queries": 30,
-      "successful_queries": 28
+      "successful_queries": 30
     },
     "telegram": {
       "messages": 6,
@@ -36,7 +36,7 @@
       "source": "Google News / medya",
       "source_tier": "CHANNEL",
       "source_type": "media",
-      "observations": 5060,
+      "observations": 5061,
       "scoreable_claims": 1490,
       "official_conversions": 13,
       "lead_hours": [],
@@ -54,9 +54,9 @@
         1251.1
       ],
       "lead_time_unavailable": 2,
-      "matured_unconfirmed": 1440,
-      "pending_claims": 37,
-      "unresolved_claims": 3570,
+      "matured_unconfirmed": 1441,
+      "pending_claims": 36,
+      "unresolved_claims": 3571,
       "status": "FIRST_SEEN_BOUND",
       "score": 0.7,
       "average_lead_hours": null,
@@ -458,8 +458,8 @@
       "lead_hours": [],
       "first_seen_lead_hours": [],
       "lead_time_unavailable": 0,
-      "matured_unconfirmed": 65,
-      "pending_claims": 2,
+      "matured_unconfirmed": 66,
+      "pending_claims": 1,
       "unresolved_claims": 275,
       "status": "PARTIAL_MEASUREMENT",
       "score": 0.0,
@@ -2049,6 +2049,26 @@
       "false_alarm_proxy_pct": 100.0
     },
     {
+      "source": "SuperHaber",
+      "source_tier": "MEDIA",
+      "source_type": "google_news",
+      "observations": 4,
+      "scoreable_claims": 1,
+      "official_conversions": 0,
+      "lead_hours": [],
+      "first_seen_lead_hours": [],
+      "lead_time_unavailable": 0,
+      "matured_unconfirmed": 1,
+      "pending_claims": 0,
+      "unresolved_claims": 3,
+      "status": "PARTIAL_MEASUREMENT",
+      "score": 0.0,
+      "average_lead_hours": null,
+      "average_first_seen_lead_hours": null,
+      "official_conversion_rate_pct": 0.0,
+      "false_alarm_proxy_pct": 100.0
+    },
+    {
       "source": "aa.com.tr",
       "source_tier": "MEDIA",
       "source_type": "google_news",
@@ -2470,26 +2490,6 @@
     },
     {
       "source": "Son Dakika Samsun Haberleri",
-      "source_tier": "MEDIA",
-      "source_type": "google_news",
-      "observations": 3,
-      "scoreable_claims": 1,
-      "official_conversions": 0,
-      "lead_hours": [],
-      "first_seen_lead_hours": [],
-      "lead_time_unavailable": 0,
-      "matured_unconfirmed": 1,
-      "pending_claims": 0,
-      "unresolved_claims": 2,
-      "status": "PARTIAL_MEASUREMENT",
-      "score": 0.0,
-      "average_lead_hours": null,
-      "average_first_seen_lead_hours": null,
-      "official_conversion_rate_pct": 0.0,
-      "false_alarm_proxy_pct": 100.0
-    },
-    {
-      "source": "SuperHaber",
       "source_tier": "MEDIA",
       "source_type": "google_news",
       "observations": 3,
@@ -7721,7 +7721,7 @@
       "name": "Yusuf Günaydın",
       "google_query": "Yusuf Günaydın transfer",
       "indexed_results": 0,
-      "query_error": "429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=Yusuf%20G%C3%BCnayd%C4%B1n%20transfer&hl=tr&gl=TR&ceid=TR:tr",
+      "query_error": null,
       "attributed_observations": 0,
       "scoreable_claims": 0,
       "performance_status": "ATTRIBUTION_PENDING"
