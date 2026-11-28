@@ -5,11 +5,13 @@ Oynanan her maçın sonucu, tahmin motorunun takım formu/Elo durumunu ilerletir
 ## Genel Karne
 
 - Değerlendirilen maç: **110**
-- İsabet: **52/110** (%47)
+- Maç sonucu (ev / beraberlik / deplasman): **52/110** (%47)
+- Tam skor: **7/110** (%6); karşılaştırılamayan maç: 0.
 - Beraberlik yakalama: **3/17** (%18)
 - Yüksek güvenli maç isabeti: **30/44** (%68)
 - Güçlü seçim tanı metriği: **24/35** (%69), kapsam %32
-- İleriye dönük kilitli güçlü seçim: **0/0** (—), kapsam %0
+- İleriye dönük kilitli güçlü seçim: **0/0** (—), kapsam —
+- Maç öncesinde kaydı doğrulanabilen: **0/110 maç**. Geri kalan maçlar ileriye dönük isabete dahil değildir.
 - Brier score: **0.592** (düşük daha iyi; 2025-26 referans 0.600)
 - Log loss: **0.994** (düşük daha iyi; 2025-26 referans 1.005)
 

@@ -1,5 +1,9 @@
 # Futbol İstihbarat Platformu - Proje Durumu
 
+28 Kasım 2026, uygulama: Maç öncesi kayıt hatası yerelde düzeltildi. İstanbul fikstür saati UTC'ye çevrilir; sonuçsuz bir maçta başlama anından önceki son 24 saat içinde ilk hesaplanan seçim, olasılıklar ve yayın kararı sürümle kilitlenir. Saat veya takımlar değişirse eski kilit geçerli değildir. Skor geldikten sonra ilk kez kaydedilen tahmin, tarihsel analizde kalır; ileriye dönük sayılmaz. Haftalık karne sonuç ve tam skor isabetini ayrı gösterir. Yerel 108 maçlık dosyada 51 sonuç, 7 tam skor doğru; bu bir ileriye dönük başarı iddiası değildir. 103 test ve 6 alt test geçti. Üretimdeki ilk maçta zaman damgası ve rapor kapsamı ayrıca doğrulanmalı. Sonraki adım: golcü karnesinde oynama süresi, aday sayısı ve maç kapsamını ayırmak.
+
+28 Kasım 2026: Rakip incelemesi, canlı ürün denetimi, 90 günlük sıra ve kabul ölçütleri [ürün stratejisinde](docs/urun_stratejisi_2026_11_28.md). İlk açık: maç sonucu geldikten sonra oluşturulan kayıt ileriye dönük sayılmamalı. Bu çalışma planlamadır; üretim kodu değiştirilmedi.
+
 Son güncelleme: 2026-11-09 (SEO odaklı şampiyonluk senaryoları + responsive yayın yüzeyi)
 
 ## Amaç

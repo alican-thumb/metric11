@@ -10,7 +10,8 @@ güncel state ile yeniden tahmin edilerek gösterilir.
 from __future__ import annotations
 
 import json
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
+from zoneinfo import ZoneInfo
 from html import escape
 from pathlib import Path
 
@@ -136,6 +137,28 @@ def _rekeyed_2026_27_matches() -> list[dict]:
     return rekeyed
 
 
+def kickoff_utc(value: str | None) -> datetime | None:
+    try:
+        return parse_tff_datetime(value or "").replace(tzinfo=ZoneInfo("Europe/Istanbul")).astimezone(timezone.utc)
+    except ValueError:
+        return None
+
+
+def valid_prematch_lock(record: dict, kickoff: datetime | None, teams: list[str]) -> bool:
+    if not kickoff or record.get("kickoff_utc") != kickoff.isoformat() or record.get("teams") != teams:
+        return False
+    try:
+        locked = datetime.fromisoformat(record["frozen_at"])
+        return bool(record.get("model_version") and record.get("publication")
+                    and kickoff - timedelta(days=1) <= locked < kickoff)
+    except (KeyError, TypeError, ValueError):
+        return False
+
+
+def _utc_now() -> datetime:
+    return datetime.now(timezone.utc)
+
+
 def build_predictions() -> dict:
     fixture_payload = json.loads(FIXTURE_PATH.read_text(encoding="utf-8"))
     history_matches = normalize_matches(
@@ -166,7 +189,7 @@ def build_predictions() -> dict:
         week_dts = []
         for m in week["matches"]:
             try:
-                week_dts.append(parse_tff_datetime(m["date_time"]))
+                week_dts.append(parse_tff_datetime(m.get("date_time") or ""))
             except ValueError:
                 pass
         week_start = min(week_dts) if week_dts else None
@@ -192,8 +215,12 @@ def build_predictions() -> dict:
 
             match_id_key = str(m["match_id"])
             frozen = snapshots.get(match_id_key)
+            kickoff = kickoff_utc(m.get("date_time"))
+            teams = [home_key, away_key]
+            if frozen and "kickoff_utc" in frozen and not valid_prematch_lock(frozen, kickoff, teams):
+                del snapshots[match_id_key]
+                frozen = None
             frozen_publication = None
-            newly_frozen = False
             if frozen is not None:
                 # Bu maç daha önce oynanmış HALDE bulunmuş ve dondurulmuş: aynı tahmini
                 # tekrar kullan, YENİDEN HESAPLAMA. Aksi halde her pipeline çalışmasında
@@ -208,7 +235,7 @@ def build_predictions() -> dict:
                 frozen_publication = frozen.get("publication")
             else:
                 try:
-                    match_dt = parse_tff_datetime(m["date_time"])
+                    match_dt = parse_tff_datetime(m.get("date_time") or "")
                 except ValueError:
                     match_dt = None
                 prediction = predict_match(
@@ -230,17 +257,18 @@ def build_predictions() -> dict:
                 predicted = draw_calibrated_prediction(
                     probs["home"], probs["draw"], probs["away"], prediction.get("strength_edge", 0.0)
                 )
-                newly_frozen = is_played
             publication = frozen_publication or publication_metadata(
                 prediction, predicted, is_new_team=is_new, policy=publication_policy
             )
-            publication_is_prospective = frozen_publication is not None or newly_frozen
-            if newly_frozen:
+            now = _utc_now()
+            in_window = not is_played and kickoff is not None and kickoff - timedelta(days=1) <= now < kickoff
+            if frozen is None and (is_played or in_window):
                 # Tahminle birlikte o anda geçerli yayın kararını da kilitle. Böylece
                 # gelecekte politika değişse bile "güçlü seçim" karnesi geçmişe dönük
                 # iyileşmiş/kötüleşmiş görünmez.
-                snapshots[match_id_key] = {
-                    "frozen_at": datetime.now().isoformat(),
+                frozen = snapshots[match_id_key] = {
+                    "frozen_at": now.isoformat(),
+                    **({"kickoff_utc": kickoff.isoformat(), "teams": teams, "model_version": "poisson-elo-2026-11-v1"} if in_window else {}),
                     "prediction": prediction,
                     "raw_predicted": raw_predicted,
                     "predicted": predicted,
@@ -248,7 +276,7 @@ def build_predictions() -> dict:
                 }
             week_matches.append({
                 "match_id": m["match_id"],
-                "date_time": m["date_time"],
+                "date_time": m.get("date_time") or "",
                 "home_team": home_name,
                 "away_team": away_name,
                 "is_played": is_played,
@@ -256,7 +284,7 @@ def build_predictions() -> dict:
                 "data_confidence": "PLAYED" if is_played else ("LOW_NEW_TEAM" if is_new else confidence_label(prediction)),
                 "raw_predicted": raw_predicted,
                 "predicted": predicted,
-                "publication_is_prospective": publication_is_prospective,
+                "publication_is_prospective": valid_prematch_lock(frozen or {}, kickoff, teams),
                 **publication,
                 **prediction,
             })

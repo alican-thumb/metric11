@@ -2,6 +2,9 @@ import json
 import tempfile
 import unittest
 from pathlib import Path
+from datetime import datetime, timedelta, timezone
+from unittest.mock import patch
+from src import build_season_fixture_predictions as fixtures
 
 from src.build_match_pages import _summary_sentence
 from src.build_season_fixture_predictions import (
@@ -9,7 +12,7 @@ from src.build_season_fixture_predictions import (
     load_publication_policy,
     publication_metadata,
 )
-from src.build_weekly_evaluation import _selective_publication_summary
+from src.build_weekly_evaluation import _evaluate_match, _selective_publication_summary, _summarize
 
 
 def prediction(home: float, draw: float, away: float) -> dict:
@@ -21,6 +24,46 @@ def prediction(home: float, draw: float, away: float) -> dict:
 
 
 class PredictionPublicationTests(unittest.TestCase):
+    def test_result_hit_is_not_an_exact_score_hit(self):
+        match = {"actual_score": "1 - 0", "predicted": "home", "is_played": True, **prediction(.6, .2, .2)}
+        rows = [_evaluate_match({**match, "recommended_scoreline": {"score": score}})
+                for score in ("2-1", "1-0", "")]
+        summary = _summarize(rows)
+        self.assertEqual(summary["correct"], 3)
+        self.assertEqual(summary["exact_score"], {"evaluated": 2, "correct": 1, "missing": 1, "accuracy": .5})
+
+    def test_prematch_lock_lifecycle(self):
+        now = datetime(2026, 11, 28, 12, tzinfo=timezone.utc)
+        match = {"match_id": 1, "home_team": "A", "away_team": "B", "score": "-", "date_time": "28.11.2026 - 17:00"}
+        with tempfile.TemporaryDirectory() as folder, patch.object(fixtures, "_utc_now") as clock:
+            folder = Path(folder)
+            history = folder / "history"
+            history.write_text("[]")
+            schedule = folder / "fixture"
+            clock.return_value = now
+            with patch.multiple(fixtures, FIXTURE_PATH=schedule, SNAPSHOT_PATH=folder / "locks",
+                                HISTORY_INPUT_PATH=history, PLAYED_2026_2027_PATH=folder / "none"), \
+                 patch.object(fixtures, "predict_match", return_value=prediction(.60, .20, .20)) as model:
+                def run():
+                    schedule.write_text(json.dumps({"weeks": [{"week": 1, "matches": [match]}]}))
+                    return fixtures.build_predictions()["weeks"][0]["matches"][0]
+
+                self.assertTrue(run()["publication_is_prospective"])
+                self.assertTrue(run()["publication_is_prospective"])
+                self.assertEqual(model.call_count, 1)
+                match["score"] = "1-0"
+                clock.return_value = now + timedelta(hours=4)
+                self.assertTrue(run()["publication_is_prospective"])
+                self.assertEqual(model.call_count, 1)
+                match["score"] = "-"
+                match["date_time"] = "30.11.2026 - 17:00"
+                self.assertFalse(run()["publication_is_prospective"])
+                clock.return_value = now + timedelta(days=2, hours=2)
+                self.assertFalse(run()["publication_is_prospective"])  # kickoff, even with no score
+                match["score"] = "1-0"
+                self.assertFalse(run()["publication_is_prospective"])
+                self.assertFalse(run()["publication_is_prospective"])
+
     def test_prospective_publication_metric_excludes_retrospective_rows(self):
         rows = [
             {

@@ -71,6 +71,9 @@ def _evaluate_match(m: dict) -> dict | None:
     if actual is None:
         return None
     predicted = m.get("predicted")
+    score_pick = (m.get("recommended_scoreline") or {}).get("score") or ""
+    pick = re.fullmatch(r"\s*(\d+)\s*-\s*(\d+)\s*", score_pick)
+    result = re.fullmatch(r"\s*(\d+)\s*-\s*(\d+)\s*", m["actual_score"])
     return {
         "match_id": m.get("match_id"),
         "date_time": m.get("date_time"),
@@ -81,6 +84,7 @@ def _evaluate_match(m: dict) -> dict | None:
         "predicted": predicted,
         "raw_predicted": m.get("raw_predicted"),
         "correct": predicted == actual,
+        "exact_score_correct": tuple(map(int, pick.groups())) == tuple(map(int, result.groups())) if pick and result else None,
         "data_confidence": m.get("data_confidence"),
         "prediction_confidence": _prediction_confidence(m),
         "publication_decision": m.get("publication_decision"),
@@ -177,12 +181,15 @@ def _selective_publication_summary(evaluations: list[dict], *, prospective_only:
 def _summarize(evaluations: list[dict]) -> dict:
     total = len(evaluations)
     correct = sum(1 for e in evaluations if e["correct"])
+    scores = [e["exact_score_correct"] for e in evaluations if e.get("exact_score_correct") is not None]
     actual_draws = [e for e in evaluations if e["actual"] == "draw"]
     draws_caught = sum(1 for e in actual_draws if e["predicted"] == "draw")
     high_conf = [e for e in evaluations if e.get("prediction_confidence") == "HIGH"]
     high_conf_correct = sum(1 for e in high_conf if e["correct"])
     return {
         "evaluated_matches": total,
+        "exact_score": {"evaluated": len(scores), "correct": sum(scores), "missing": total - len(scores),
+                        "accuracy": round(sum(scores) / len(scores), 4) if scores else None},
         "correct": correct,
         "accuracy": round(correct / total, 4) if total else 0.0,
         "actual_draws": len(actual_draws),
@@ -305,13 +312,17 @@ def build_markdown(payload: dict) -> str:
         "## Genel Karne",
         "",
         f"- Değerlendirilen maç: **{s['evaluated_matches']}**",
-        f"- İsabet: **{s['correct']}/{s['evaluated_matches']}** ({_pct(s['accuracy'])})",
+        f"- Maç sonucu (ev / beraberlik / deplasman): **{s['correct']}/{s['evaluated_matches']}** ({_pct(s['accuracy'])})",
+        f"- Tam skor: **{s['exact_score']['correct']}/{s['exact_score']['evaluated']}** "
+        f"({_pct(s['exact_score']['accuracy'])}); karşılaştırılamayan maç: {s['exact_score']['missing']}.",
         f"- Beraberlik yakalama: **{s['draws_caught']}/{s['actual_draws']}** ({_pct(s['draw_recall'])})",
         f"- Yüksek güvenli maç isabeti: **{s['high_conf_correct']}/{s['high_conf_matches']}** ({_pct(s['high_conf_accuracy'])})",
         f"- Güçlü seçim tanı metriği: **{diagnostic.get('correct', 0)}/{diagnostic.get('published_matches', 0)}** "
         f"({_pct(diagnostic.get('accuracy'))}), kapsam {_pct(diagnostic.get('coverage'))}",
         f"- İleriye dönük kilitli güçlü seçim: **{prospective.get('correct', 0)}/{prospective.get('published_matches', 0)}** "
         f"({_pct(prospective.get('accuracy'))}), kapsam {_pct(prospective.get('coverage'))}",
+        f"- Maç öncesinde kaydı doğrulanabilen: **{prospective.get('population_matches', 0)}/{s['evaluated_matches']} maç**. "
+        "Geri kalan maçlar ileriye dönük isabete dahil değildir.",
         f"- Brier score: **{_fmt_score(s.get('brier_score'))}** (düşük daha iyi; 2025-26 referans 0.600)",
         f"- Log loss: **{_fmt_score(s.get('log_loss'))}** (düşük daha iyi; 2025-26 referans 1.005)",
         "",
