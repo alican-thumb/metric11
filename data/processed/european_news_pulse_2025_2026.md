@@ -1,12 +1,14 @@
 # Avrupa Kupası Ön Eleme Haber Nabzı
 
-Üretim zamanı: 2026-11-28T10:21:23.819990+00:00
-Toplam ilgili haber: 51
+Üretim zamanı: 2026-11-28T12:47:33.805063+00:00
+Toplam ilgili haber: 50
 
 Not: football-data.org UEFA nitelendirme fikstürlerini kapsamadığı için bu liste
 gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kaynaklı sinyaldir.
 
-- [OSIMHEN BEŞİKTAŞ MAÇINDA OYNAYACAK MI? Victor Osimhen Derbide Oynayacak Mı? Beşiktaş Derbisinde Forma Giyebilecek Mi? Galatasaray'da Osimhen ve Sallai Mesaisi](https://www.cnnturk.com/spor/futbol/osimhen-besiktas-macinda-oynayacak-mi-victor-osimhen-derbide-oynayacak-mi-besiktas-derbisinde-forma-giyebilecek-mi-3499092) — CNN Türk Spor · 2026-11-28T12:02:37+00:00 · turnuva=CL · kulüp=Galatasaray, Beşiktaş
+- [Hapoel taraftarından provokasyon! Beşiktaşlı taraftarların arasında atkı açınca tansiyon yükseldi](https://www.sabah.com.tr/spor/futbol/2026/11/28/hapoel-taraftarindan-provokasyon-besiktasli-taraftarlarin-arasinda-atki-acinca-tansiyon-yukseldi) — Sabah Spor · 2026-11-28T15:27:49+03:00 · turnuva=EL · kulüp=Beşiktaş
+- [OSIMHEN BEŞİKTAŞ MAÇINDA OYNAYACAK MI? Victor Osimhen Derbide Oynayacak Mı? Beşiktaş Derbisinde Forma Giyebilecek Mi? Galatasaray'da Osimhen ve Sallai Mesaisi](https://www.cnnturk.com/spor/futbol/osimhen-besiktas-macinda-oynayacak-mi-victor-osimhen-derbide-oynayacak-mi-besiktas-derbisinde-forma-giyebilecek-mi-3499092) — CNN Türk Spor · 2026-11-28T14:20:39+00:00 · turnuva=CL · kulüp=Galatasaray, Beşiktaş
+- [Fenerbahçe aradığı çift yönlü orta sahayı buldu! Şampiyonlar Ligi'nde tribünden izlendi](https://www.hurriyet.com.tr/sporarena/fenerbahce-aradigi-cift-yonlu-orta-sahayi-buldu-sampiyonlar-liginde-tribunden-izlendi-43394330) — Hürriyet Spor · 2026-11-28T11:59:37+00:00 · turnuva=CL · kulüp=Fenerbahçe
 - [Beşiktaş’ta Doğan Alemdar tam not aldı](https://www.cnnturk.com/spor/futbol/besiktasta-dogan-alemdar-tam-not-aldi-3499048) — CNN Türk Spor · 2026-11-28T09:39:41+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Taraftarlar Batum'daki olayları anlattı](https://www.haberturk.com/spor/foto/yaralanan-6-besiktas-taraftari-batum-daki-yasadiklarin-anlatti-3930781) — Haberturk Spor · 2026-11-28T07:51:47+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [UEFA'dan Fenerbahçe'ye özür ve teşekkür! İşte o mesaj](https://www.takvim.com.tr/spor/fenerbahce/2026/11/28/uefadan-fenerbahceye-ozur-mektubu-hatasini-kabul-etti) — Takvim Spor · 2026-11-28T07:46:34+03:00 · turnuva=— · kulüp=Fenerbahçe
@@ -31,11 +33,9 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Beşiktaş taraftarına Gürcistan’da polis müdahalesi | CNN TÜRK Spor Direktörü Cem Yılmaz'dan UEFA’ya çifte standart tepkisi](https://www.cnnturk.com/video/spor/futbol/besiktas-taraftarina-gurcistanda-polis-mudahalesi-cnn-turk-spor-direktoru-cem-yilmazdan-uefaya-cifte-standart-tepkisi-3498865) — CNN Türk Spor · 2026-11-27T12:43:04+00:00 · turnuva=— · kulüp=Beşiktaş
 - [Trabzonspor'da Salah etkisi](https://www.cnnturk.com/spor/futbol/trabzonsporda-salah-etkisi-3498872) — CNN Türk Spor · 2026-11-27T12:12:19+00:00 · turnuva=ECL · kulüp=Trabzonspor
 - [Derbideki kozu Dolmabahçe!](https://www.haberturk.com/spor/besiktas-galatasaray-karsisinda-ic-saha-performansina-guveniyor-3930543) — Haberturk Spor · 2026-11-27T11:54:43+00:00 · turnuva=EL · kulüp=Galatasaray, Beşiktaş
-- [Gürcü polisi Türk taraftarlara saldırdı! UEFA'DAN CEZA GELİR Mİ?](https://www.cnnturk.com/video/spor/gurcu-polisi-turk-taraftarlara-saldirdi-uefadan-ceza-gelir-mi-3498831) — CNN Türk Spor · 2026-11-27T11:51:08+00:00 · turnuva=— · kulüp=Beşiktaş
 - [SON DAKİKA - Batum’da gözaltına alınan 16 Beşiktaş taraftarı serbest bırakıldı](https://www.cnnturk.com/spor/futbol/son-dakika-batumda-gozaltina-alinan-16-besiktas-taraftari-serbest-birakildi-3498862) — CNN Türk Spor · 2026-11-27T11:45:30+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Beşiktaş'ın Gürcistan çilesi dönüş yolunda da devam etti! Giderken yıldırım, dönerken rüzgara takıldı](https://www.hurriyet.com.tr/sporarena/besiktasin-gurcistan-cilesi-donus-yolunda-da-devam-etti-giderken-yildirim-donerken-ruzgara-takildi-43393249) — Hürriyet Spor · 2026-11-27T11:39:00+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Galatasaray Fenerbahçe'ye yaklaşıyor! UEFA kulüpler sıralaması güncellendi](https://www.takvim.com.tr/spor/2026/11/27/uefa-kulupler-siralamasi-guncellendi) — Takvim Spor · 2026-11-27T11:31:59+03:00 · turnuva=— · kulüp=Galatasaray, Fenerbahçe, Beşiktaş, Trabzonspor
-- [UEFA'dan Beşiktaş maçı sonrası skandal açıklama: Herhangi bir kontrolümüz yoktu](https://www.cnnturk.com/spor/futbol/uefadan-besiktas-maci-sonrasi-skandal-aciklama-herhangi-bir-kontrolumuz-yoktu-3498846) — CNN Türk Spor · 2026-11-27T10:59:54+00:00 · turnuva=EL · kulüp=Beşiktaş
 - [Spor yazarlarından Trabzonspor yorumları! 3 isme eleştiri: "El frenleri"](https://www.takvim.com.tr/spor/trabzonspor/2026/11/27/spor-yazarlari-cska-sofya-trabzonspor-macini-degerlendirdi) — Takvim Spor · 2026-11-27T10:29:11+03:00 · turnuva=ECL · kulüp=Trabzonspor
 - [Trabzonspor'da Thomas Reis, 35 yıl sonra ilki başardı](https://www.hurriyet.com.tr/sporarena/trabzonsporda-thomas-reis-35-yil-sonra-ilki-basardi-43393155) — Hürriyet Spor · 2026-11-27T10:25:39+00:00 · turnuva=ECL · kulüp=Trabzonspor
 - [Spor yazarlarından Beşiktaş'a övgü UEFA'ya çok sert sözler: "Dik duruşun zaferi"](https://www.takvim.com.tr/spor/besiktas/2026/11/27/spor-yazarlari-besiktas-hapoel-beer-sheva-macini-yorumladi) — Takvim Spor · 2026-11-27T09:27:02+03:00 · turnuva=EL · kulüp=Beşiktaş
@@ -45,4 +45,4 @@ gerçek fikstür yerine toplanan haber kaynaklarından çıkarılan gerçek, kay
 - [Fırtına ilk 8 için savaşıyor! Konferans Ligi puan durumu](https://www.takvim.com.tr/galeri/spor/konferans-ligi-4-hafta-puan-durumu) — Takvim Spor · 2026-11-27T03:07:57+03:00 · turnuva=ECL · kulüp=Trabzonspor
 - [Beşiktaş Hapoel'i 2-1 yendi, ilk 8'e girdi! UEFA Avrupa Ligi 5. hafta puan durumu](https://www.takvim.com.tr/galeri/spor/uefa-avrupa-ligi-5-hafta-puan-durumu) — Takvim Spor · 2026-11-27T01:49:44+03:00 · turnuva=EL · kulüp=Beşiktaş
 - [Avrupa'da 4'te 4 yaptık! Türkiye kaçıncı sırada?](https://www.takvim.com.tr/galeri/spor/ulke-puaninda-son-durum-turkiye-kacinci-sirada-1795563400) — Takvim Spor · 2026-11-26T23:48:01+03:00 · turnuva=EL · kulüp=Galatasaray, Fenerbahçe, Beşiktaş, Trabzonspor
-- ["İnanılmaz mücadele verdik"](https://www.haberturk.com/spor/noah-saviolo-inanilmaz-mucadele-verdik-3930466) — Haberturk Spor · 2026-11-26T22:57:11+00:00 · turnuva=ECL · kulüp=Trabzonspor
+- ["Zor bir maçtan önemli bir galibiyet aldık"](https://www.haberturk.com/spor/cska-sofya-galibiyeti-sonrasi-trabzonspor-teknik-direktoru-thomas-reis-zor-bir-mactan-onemli-bir-galibiyet-aldik-3930464) — Haberturk Spor · 2026-11-26T22:56:24+00:00 · turnuva=ECL · kulüp=Trabzonspor

@@ -23701,5 +23701,193 @@
       "publication_reason": "Yeni yükselen takımın Süper Lig geçmişi sınırlı olduğu için tahmin güveni düşürüldü.",
       "published_pick": null
     }
+  },
+  "317897": {
+    "frozen_at": "2026-11-28T12:47:19.281594+00:00",
+    "kickoff_utc": "2026-11-29T10:30:00+00:00",
+    "teams": [
+      "ÇORUM FK",
+      "KOCAELİSPOR"
+    ],
+    "model_version": "poisson-elo-2026-11-v1",
+    "prediction": {
+      "expected_home_goals": 1.11,
+      "expected_away_goals": 0.98,
+      "top_scorelines": [
+        {
+          "score": "1-0",
+          "home_goals": 1,
+          "away_goals": 0,
+          "probability": 0.138
+        },
+        {
+          "score": "1-1",
+          "home_goals": 1,
+          "away_goals": 1,
+          "probability": 0.135
+        },
+        {
+          "score": "0-0",
+          "home_goals": 0,
+          "away_goals": 0,
+          "probability": 0.124
+        },
+        {
+          "score": "0-1",
+          "home_goals": 0,
+          "away_goals": 1,
+          "probability": 0.121
+        },
+        {
+          "score": "2-0",
+          "home_goals": 2,
+          "away_goals": 0,
+          "probability": 0.076
+        }
+      ],
+      "recommended_scoreline": {
+        "score": "1-1",
+        "home_goals": 1,
+        "away_goals": 1,
+        "probability": 0.135
+      },
+      "home_win_probability": 0.385,
+      "draw_probability": 0.3,
+      "away_win_probability": 0.316,
+      "head_to_head": {
+        "available": false,
+        "matches": 0,
+        "draw_rate": null
+      },
+      "transfer_signal": {
+        "home": {
+          "available": false,
+          "edge": 0.0
+        },
+        "away": {
+          "available": true,
+          "edge": -0.15,
+          "news_signal": null,
+          "squad_signal": {
+            "available": true,
+            "edge": -0.15,
+            "net_value_eur": -18050000,
+            "arrivals_value_eur": 0,
+            "departures_value_eur": 18050000,
+            "top_arrivals": [
+              {
+                "player": "ONURCAN PIRI",
+                "market_value_eur": 0
+              },
+              {
+                "player": "TANGUY ZOUKROU",
+                "market_value_eur": 0
+              },
+              {
+                "player": "MATEJ MAGLICA",
+                "market_value_eur": 0
+              },
+              {
+                "player": "EMIR ORTAKAYA",
+                "market_value_eur": 0
+              },
+              {
+                "player": "UGUR KAAN YILDIZ",
+                "market_value_eur": 0
+              }
+            ],
+            "top_departures": [
+              {
+                "player": "BOTOND BALOGH",
+                "market_value_eur": 2500000
+              },
+              {
+                "player": "HABIB KEITA",
+                "market_value_eur": 2500000
+              },
+              {
+                "player": "HRVOJE SMOLCIC",
+                "market_value_eur": 2000000
+              },
+              {
+                "player": "JOSEPH NONGE",
+                "market_value_eur": 2000000
+              },
+              {
+                "player": "DARKO CHURLINOV",
+                "market_value_eur": 1500000
+              }
+            ],
+            "pending_arrivals": [
+              {
+                "player": "TALHA POLAT",
+                "market_value_eur": 0
+              },
+              {
+                "player": "HULUSI DESTICI",
+                "market_value_eur": 0
+              }
+            ]
+          }
+        }
+      },
+      "fixture_congestion": {
+        "home": {
+          "available": false,
+          "edge": 0.0,
+          "days_rest": null,
+          "opponent": null
+        },
+        "away": {
+          "available": false,
+          "edge": 0.0,
+          "days_rest": null,
+          "opponent": null
+        }
+      },
+      "european_signal": {
+        "home": {
+          "available": false,
+          "edge": 0.0,
+          "match_count": 0
+        },
+        "away": {
+          "available": false,
+          "edge": 0.0,
+          "match_count": 0
+        }
+      },
+      "suspension_signal": {
+        "home": {
+          "available": true,
+          "edge": 0.0,
+          "suspended_players": []
+        },
+        "away": {
+          "available": true,
+          "edge": 0.0,
+          "suspended_players": []
+        }
+      },
+      "home_elo": 1483.5,
+      "away_elo": 1486.5,
+      "home_points_per_match": 1.12,
+      "away_points_per_match": 1.25,
+      "strength_edge": -0.13,
+      "home_xg_efficiency": null,
+      "away_xg_efficiency": null,
+      "referee_adj": 0.0,
+      "referee_cards_per_match": null,
+      "referee_goals_per_match": null
+    },
+    "raw_predicted": "home",
+    "predicted": "draw",
+    "publication": {
+      "prediction_confidence": "LOW",
+      "publication_decision": "WEAK",
+      "publication_label": "Düşük güvenli tahmin",
+      "publication_reason": "Beraberlik tahminlerinin bu sezonki geçmiş isabeti sınırlı.",
+      "published_pick": null
+    }
   }
 }

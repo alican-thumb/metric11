@@ -356,16 +356,16 @@
     "squad_xg_adjustment": -0.17,
     "squad_adjustment_breakdown": [
       {
-        "player_id": "2685818",
-        "name": "MALCOM NARCISSE BOKELE MPUTU",
-        "xg_penalty": 0.12,
-        "start_rate": 0.867
-      },
-      {
         "player_id": "2617511",
         "name": "HELITON JORGE  TITO DOS SANTOS",
         "xg_penalty": 0.05,
         "start_rate": 0.933
+      },
+      {
+        "player_id": "2685818",
+        "name": "MALCOM NARCISSE BOKELE MPUTU",
+        "xg_penalty": 0.12,
+        "start_rate": 0.867
       }
     ]
   },
@@ -622,23 +622,6 @@
         "recent_cards": 1
       },
       {
-        "player_id": "2820847",
-        "name": "ISHOLA JUNIOR  OLAITAN",
-        "goal_threat_score": 4.92,
-        "candidate_type": "primary+impact_sub",
-        "recent_starts": 2,
-        "season_goals_before_match": 1,
-        "recent_goals": 0,
-        "big_match_goals_before_match": 0,
-        "opponent_defense_multiplier": 1.08,
-        "actual_scorer": false,
-        "header_goals_before_match": 0,
-        "penalty_goals_before_match": 0,
-        "recent_bench": 5,
-        "cards_before_match": 1,
-        "recent_cards": 0
-      },
-      {
         "player_id": "2820755",
         "name": "IBRAHIM MOHAMMED ABDALLAH SABRA",
         "goal_threat_score": 4.54,
@@ -654,6 +637,28 @@
         "recent_cards": 0,
         "opponent_defense_multiplier": 1.08,
         "actual_scorer": false
+      },
+      {
+        "player_id": "2820847",
+        "name": "ISHOLA JUNIOR  OLAITAN",
+        "goal_threat_score": 3.35,
+        "candidate_type": "primary+impact_sub",
+        "recent_starts": 2,
+        "season_goals_before_match": 1,
+        "recent_goals": 0,
+        "big_match_goals_before_match": 0,
+        "opponent_defense_multiplier": 1.08,
+        "actual_scorer": false,
+        "header_goals_before_match": 0,
+        "penalty_goals_before_match": 0,
+        "recent_bench": 5,
+        "cards_before_match": 1,
+        "recent_cards": 0,
+        "quality_adjustment": {
+          "multiplier": 0.68,
+          "reason": "Top 5 sıralama etkisini düşür veya aday tipini yeniden kontrol et.",
+          "source": "goal_candidate_segment_backtest"
+        }
       }
     ],
     "specialist_candidate_count": 10,
@@ -855,9 +860,9 @@
   },
   "coach_lineup_audit": {
     "verdict": "TARTIŞMALI",
-    "actual_lineup_score": 77.67,
+    "actual_lineup_score": 76.96,
     "recommended_lineup_score": 117.03,
-    "alignment_rate": 0.664,
+    "alignment_rate": 0.658,
     "actual_starters": [
       "MATEUSZ LIS",
       "ARDA OKAN KURTULAN",
@@ -900,7 +905,7 @@
         "name": "ISHOLA JUNIOR  OLAITAN",
         "reason": "Model çekirdek 11 veya hücum önceliğinde değil; son pencere ilk 11/gol tehdidi düşük.",
         "recent_starts": 0,
-        "goal_threat_score": 4.92
+        "goal_threat_score": 3.35
       },
       {
         "name": "GUILERME LUIZ OLIVEIRA DA SILVA",
